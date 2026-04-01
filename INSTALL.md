@@ -1,42 +1,40 @@
 # Guida all'Installazione su Foundry VTT 🛡️
 
-Essendo questo un repository **Privato**, l'installazione tramite il link del manifest (`module.json`) richiede alcuni passaggi manuali o l'uso di un token di accesso. Ecco i due metodi consigliati:
+Essendo questo un repository **Privato**, l'installazione tramite il tasto "Install Module" (Manifest URL) di Foundry non è supportata nativamente poiché richiede autenticazione.
 
-## Metodo 1: Installazione Manuale (Consigliato)
+Per i collaboratori del progetto, ecco i due metodi migliori per installare il compendio:
 
-Questo è il metodo più semplice per repository privati.
+## Metodo 1: Download Manuale (Il più semplice)
 
-1.  **Scarica il Progetto**:
-    - Accedi alla pagina principale del repository su GitHub.
-    - Clicca sul tasto verde **Code**.
-    - Seleziona **Download ZIP**.
-2.  **Prepara la Cartella**:
-    - Estrai il contenuto del file ZIP.
-    - Assicurati che la cartella estratta si chiami esattamente `witcher-compendium` (all'interno deve esserci direttamente il file `module.json`).
-3.  **Copia in Foundry**:
-    - Sposta la cartella `witcher-compendium` nel percorso dei moduli di Foundry VTT:
-      - **Windows**: `%AppData%\FoundryVTT\Data\modules\`
-      - **macOS**: `~/Library/Application Support/FoundryVTT/Data/modules/`
-      - **Linux**: `~/.local/share/FoundryVTT/Data/modules/`
-4.  **Attiva il Modulo**:
-    - Avvia Foundry VTT.
-    - Entra nel tuo Mondo.
-    - Vai in **Configurazioni Impostazioni** -> **Gestisci Moduli**.
-    - Cerca "Witcher RPG Compendium" e attivalo.
+1.  Accedi a GitHub e vai nella pagina del repository `Anim86/witcher-compendium`.
+2.  Clicca sul tasto verde **Code** e seleziona **Download ZIP**.
+3.  Estrai il contenuto nella cartella dei moduli di Foundry:
+    - **Percorso**: `Data/modules/witcher-compendium`
+    - *Nota: Assicurati che la cartella si chiami esattamente `witcher-compendium` e contenga subito il file `module.json`.*
+4.  Riavvia Foundry e attiva il modulo.
 
-## Metodo 2: Installazione tramite Manifest (Solo se Pubblico)
+## Metodo 2: Git Clone (Per Collaboratori/Sviluppatori)
 
-Se decidi di rendere il repository **Pubblico** in futuro:
+Se hai Git installato sul tuo PC, questo è il metodo più "professionale" perché ti permette di aggiornare il compendio con un semplice comando.
 
-1.  Copia l'URL diretto al file `module.json` (cliccando su "Raw" su GitHub).
-2.  In Foundry VTT, nella scheda **Add-on Modules**, clicca su **Install Module**.
-3.  Incolla l'URL nel campo **Manifest URL** in basso e clicca su **Install**.
+1.  Apri il terminale (o Git Bash) nella cartella `Data/modules/` di Foundry.
+2.  Esegui il comando:
+    ```bash
+    git clone https://github.com/Anim86/witcher-compendium.git
+    ```
+3.  Da questo momento, per scaricare gli aggiornamenti futuri, basterà entrare nella cartella e scrivere:
+    ```bash
+    git pull
+    ```
 
 ---
 
-### Note Importanti:
-- **Struttura**: Il file `module.json` deve trovarsi nella radice della cartella `modules/witcher-compendium/`.
-- **Compatibilità**: Questo modulo è verificato per **Foundry VTT v13**.
-- **Supporto**: Se riscontri problemi con il Drag & Drop, verifica che il sistema `TheWitcherTRPG` sia aggiornato alla versione più recente.
+## FAQ per Collaboratori
+
+### Perché non posso usare il link del Manifest?
+Foundry VTT non supporta l'inserimento di credenziali o "Token" nell'interfaccia di installazione dei moduli. Trattandosi di un repository privato, GitHub blocca l'accesso anonimo al file `module.json`.
+
+### Come faccio a vedere il compendio in gioco?
+Una volta attivato il modulo (v1.0.0), troverai 14 nuovi pack nella scheda **Compendium Packs** (l'icona del libro in Foundry). Sono tutti pronti per il Drag & Drop sulle tue schede Personaggio o sulla Mappa.
 
 *Buona caccia, Strigo!* ⚔️🐺
