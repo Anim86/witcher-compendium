@@ -1,0 +1,36 @@
+{
+  "name": "Medico",
+  "type": "profession",
+  "img": "modules/witcher-compendium/images/professions/medico.png",
+  "system": {
+    "description": "<p>Sul campo di battaglia o nelle strade pestilenziali, un Medico è l'unica cosa che separa un uomo dalla fossa. Conoscono l'anatomia, le erbe e la sottile linea tra la vita e la morte. Spesso sono visti con sospetto, ma tutti li chiamano quando il sangue inizia a scorrere.</p>",
+    "source": "MB 45",
+    "definingSkill": {
+      "name": "Guarigione Miracolosa",
+      "definition": "I Medici possono trattare ferite critiche e stabilizzare persone morenti con un'efficacia sovrumana, salvando vite dove altri fallirebbero."
+    },
+    "skills": [
+      "Primo Soccorso",
+      "Alchimia",
+      "Istruzione",
+      "Resistere a Coercizione",
+      "Coraggio",
+      "Empatia"
+    ],
+    "equipment": [
+      "Borsa medica",
+      "Bende e unguenti",
+      "Strumenti chirurgici",
+      "Fiala di alcol forte",
+      "Libro di medicina"
+    ]
+  },
+  "effects": [],
+  "flags": {},
+  "folders": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_id": "profdoctor000001"
+}

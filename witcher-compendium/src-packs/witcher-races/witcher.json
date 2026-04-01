@@ -1,0 +1,36 @@
+{
+  "name": "Witcher",
+  "type": "race",
+  "img": "modules/witcher-compendium/images/races/witcher.png",
+  "system": {
+    "description": "<p>I witcher sono umani mutati tramite addestramento pesante e la Prova delle Erbe per diventare armi viventi contro i mostri. Hanno occhi felini brillanti e sentimenti attenuati.</p><p>Rinati per un solo scopo: ammazzar mostri. Il problema è che sono mutanti, e la gente li teme e li odia, vedendoli come freddi assassini senza cuore.</p>",
+    "source": "MB 24",
+    "perks": [
+      {
+        "name": "Sensi Acuiti",
+        "description": "Non subiscono penalità nelle aree di luce fioca e guadagnano +1 innato all’abilità Accortezza, oltre alla facoltà di seguire tracce con l’olfatto."
+      },
+      {
+        "name": "Mutazione Resiliente",
+        "description": "Immuni alle malattie e in grado di usare i mutageni."
+      },
+      {
+        "name": "Emozioni Attenuate",
+        "description": "Subiscono -4 alla statistica Empatia (minimo 1, massimo 6). Non sono tenuti a effettuare prove di coraggio contro Intimidire."
+      },
+      {
+        "name": "Riflessi Fulminei",
+        "description": "Ottengono +1 permanente a Riflessi e Destrezza, che può portare queste statistiche sopra 10."
+      }
+    ],
+    "social": "Temuto"
+  },
+  "effects": [],
+  "flags": {},
+  "folders": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_id": "racewitcher00001"
+}

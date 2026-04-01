@@ -1,0 +1,32 @@
+{
+  "name": "Nano",
+  "type": "race",
+  "img": "modules/witcher-compendium/images/races/nano.png",
+  "system": {
+    "description": "<p>I fiumi si prosciugano, le montagne si spianano, ma i nani restano. Sono bassi rispetto a elfi e umani, ma più robusti, con spalle larghe. Vivono nelle montagne e la loro abilità nel forgiare l'acciaio è leggendaria.</p><p>I nani badano agli affari loro e sono amichevoli quanto basta, finché non vengono provocati.</p>",
+    "source": "MB 25",
+    "perks": [
+      {
+        "name": "Coriaceo",
+        "description": "La pelle dei nani ha una naturale capacità di blocco di 2 (PR). Questa PR non può essere ridotta da attacchi di armi o danno ablativo ed è cumulativa alle normali armature."
+      },
+      {
+        "name": "Forte",
+        "description": "Ottengono +1 all’abilità Prestanza e aumentano il valore d’Ingombro di 25."
+      },
+      {
+        "name": "Occhio da Artigiano",
+        "description": "Grazie al loro occhio per i dettagli e le valutazioni, ottengono +1 all’abilità Commercio."
+      }
+    ],
+    "social": "Tollerato"
+  },
+  "effects": [],
+  "flags": {},
+  "folders": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_id": "racedwarf0000001"
+}

@@ -120,6 +120,20 @@
       "path": "packs/witcher-monsters-chaos.db",
       "type": "Actor",
       "system": "TheWitcherTRPG"
+    },
+    {
+      "name": "witcher-races",
+      "label": "Compendio delle Razze",
+      "path": "packs/witcher-races.db",
+      "type": "Item",
+      "system": "TheWitcherTRPG"
+    },
+    {
+      "name": "witcher-professions",
+      "label": "Compendio delle Professioni",
+      "path": "packs/witcher-professions.db",
+      "type": "Item",
+      "system": "TheWitcherTRPG"
     }
   ],
   "languages": [

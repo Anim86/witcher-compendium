@@ -1,0 +1,37 @@
+{
+  "name": "Armigero",
+  "type": "profession",
+  "img": "modules/witcher-compendium/images/professions/armigero.png",
+  "system": {
+    "description": "<p>I veri soldati pensano secondo la tattica. Un Armigero vive di combattimenti e respira conflitti. Quando non è in guerra, lavora come guardia del corpo o mercenario a pagamento. Sul campo di battaglia sono delle belve, armi in pugno e neanche un briciolo di paura in corpo.</p>",
+    "source": "MB 40",
+    "definingSkill": {
+      "name": "Duro come una Roccia",
+      "definition": "Quando un Armigero scende a 0 Punti Salute o meno, può tirare Duro come una Roccia con una CD pari alla quantità di Punti Salute negativi moltiplicati per 2, per continuare a combattere."
+    },
+    "skills": [
+      "5 Abilità di Combattimento a scelta",
+      "Sopravvivenza",
+      "Coraggio",
+      "Prestanza",
+      "Intimidire",
+      "Eludere"
+    ],
+    "equipment": [
+      "Sacca da viaggio",
+      "Camaglio",
+      "Brigantina",
+      "Brache corazzate",
+      "Balestra e dardi ×20",
+      "Brocchiero d’acciaio"
+    ]
+  },
+  "effects": [],
+  "flags": {},
+  "folders": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_id": "profmanatarms001"
+}

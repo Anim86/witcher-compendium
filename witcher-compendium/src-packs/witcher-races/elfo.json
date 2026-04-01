@@ -1,0 +1,32 @@
+{
+  "name": "Elfo",
+  "type": "race",
+  "img": "modules/witcher-compendium/images/races/elfo.png",
+  "system": {
+    "description": "<p>Gli elfi, o gli Aen Seidhe, sono arrivati nel mondo su grandi navi bianche venute da chissà dove. Sono alti, magri e inclini a guardare gli altri dall’alto in basso. Hanno orecchie a punta, vita eterna e un profondo legame con la terra.</p><p>Gli elfi sono una cosa sola con la natura e sono probabilmente i migliori arcieri che ti capiterà di vedere.</p>",
+    "source": "MB 25",
+    "perks": [
+      {
+        "name": "Artistico",
+        "description": "Gli elfi hanno occhio per la bellezza e un talento naturale per le espressioni artistiche. Ottengono +1 innato all’abilità Belle Arti."
+      },
+      {
+        "name": "Tiratore",
+        "description": "Anni di tradizione e di pratica pongono gli elfi tra i migliori arcieri al mondo. Ricevono un +2 innato all’abilità Archi e possono estrarre e incordare un arco senza impiegare un’azione."
+      },
+      {
+        "name": "Sintonia Naturale",
+        "description": "Gli elfi hanno un profondo legame magico con la natura. Non infastidiscono gli animali e ogni bestia che incontrano li considera amichevoli. Trovano automaticamente sostanze vegetali comuni se presenti nell'ambiente."
+      }
+    ],
+    "social": "Odiato"
+  },
+  "effects": [],
+  "flags": {},
+  "folders": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_id": "raceelf00000001"
+}

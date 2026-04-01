@@ -1,0 +1,32 @@
+{
+  "name": "Vran",
+  "type": "race",
+  "img": "modules/witcher-compendium/images/races/vran.png",
+  "system": {
+    "description": "<p>I Vran sono una razza rettilianoide quasi estinta, originaria delle zone paludose e delle giungle più profonde. Malgrado gli umani li considerino mostri, possiedono una cultura antica e un senso del onore molto profondo. Sono guerrieri formidabili, con una pelle coriacea che funge da armatura naturale.</p><p>Possiedono una visione termica che permette loro di cacciare nell'oscurità più totale.</p>",
+    "source": "SM 25",
+    "perks": [
+      {
+        "name": "Sangue Freddo",
+        "description": "Grazie alla loro natura non-emotiva, i Vran sono immuni all'effetto Paura e ottengono +2 alle prove di Coraggio."
+      },
+      {
+        "name": "Pelle a Scaglie",
+        "description": "La pelle corazzata dei Vran fornisce un valore di blocco (PR) naturale di 2 su tutto il corpo."
+      },
+      {
+        "name": "Visione Termica",
+        "description": "I Vran possono vedere attraverso le fonti di calore, annullando le penalità per l'oscurità e la nebbia fitta."
+      }
+    ],
+    "social": "Odiato e Temuto"
+  },
+  "effects": [],
+  "flags": {},
+  "folders": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_id": "racevran000000001"
+}

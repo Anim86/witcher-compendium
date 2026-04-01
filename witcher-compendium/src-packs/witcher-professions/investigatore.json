@@ -1,0 +1,36 @@
+{
+  "name": "Investigatore",
+  "type": "profession",
+  "img": "modules/witcher-compendium/images/professions/investigatore.png",
+  "system": {
+    "description": "<p>Dalle rapine nelle banche di Vivaldi agli omicidi misteriosi nelle fogne di Wizima, l'Investigatore è colui che vede ciò che gli altri ignorano. Possiedono una mente analitica addestrata a collegare indizi disparati e a far parlare i testimoni più reticenti.</p>",
+    "source": "SM 33",
+    "definingSkill": {
+      "name": "Analisi delle Prove",
+      "definition": "L'Investigatore può esaminare una scena o un oggetto per ricostruire eventi passati o ottenere informazioni critiche che richiederebbero normalmente giorni di ricerca."
+    },
+    "skills": [
+      "Accortezza",
+      "Deduzione",
+      "Interrogare",
+      "Furtività",
+      "Conoscenza Sociale",
+      "Istruzione"
+    ],
+    "equipment": [
+      "Lente d'ingrandimento",
+      "Taccuino per appunti",
+      "Lanterna coperta",
+      "Ferri da scasso",
+      "Certificato di incarico"
+    ]
+  },
+  "effects": [],
+  "flags": {},
+  "folders": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_id": "profinvestigate001"
+}

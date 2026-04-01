@@ -1,0 +1,36 @@
+{
+  "name": "Bardo",
+  "type": "profession",
+  "img": "modules/witcher-compendium/images/professions/bardo.png",
+  "system": {
+    "description": "<p>Il mondo è un posto freddo e buio per chi non ha una storia da raccontare. Un Bardo è molto più di un musicista: è un cronista, un diplomatico e spesso una spina nel fianco per i potenti. Con una canzone possono scatenare una rivolta o conquistare il cuore di una regina.</p>",
+    "source": "MB 42",
+    "definingSkill": {
+      "name": "Ascendente sul Pubblico",
+      "definition": "Un Bardo può convincere una folla a cambiare umore, incitare alla lealtà o seminare il malcontento attraverso la propria esibizione."
+    },
+    "skills": [
+      "Esibirsi",
+      "Persuasione",
+      "Carisma",
+      "Conoscenza Sociale",
+      "Empatia",
+      "Inganno"
+    ],
+    "equipment": [
+      "Liuto o strumento musicale",
+      "Abbiti eleganti",
+      "Taccuino e penna",
+      "Pugnale",
+      "Bottiglia di vino pregiato"
+    ]
+  },
+  "effects": [],
+  "flags": {},
+  "folders": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_id": "profbard00000001"
+}

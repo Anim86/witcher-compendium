@@ -1,0 +1,36 @@
+{
+  "name": "Criminale",
+  "type": "profession",
+  "img": "modules/witcher-compendium/images/professions/criminale.png",
+  "system": {
+    "description": "<p>In città come Novigrad, la legge è solo un suggerimento per chi sa come muoversi nell'ombra. Un Criminale sa che l'oro vale più dell'onore e che un pugnale alla schiena risolve più problemi di un editto reale.</p>",
+    "source": "MB 43",
+    "definingSkill": {
+      "name": "Pratica del Mestiere",
+      "definition": "Un Criminale può individuare trappole, scassinare serrature e muoversi furtivamente con una precisione che pochi altri possono eguagliare."
+    },
+    "skills": [
+      "Furtività",
+      "Scassinare",
+      "Piccola Lama",
+      "Criminalità",
+      "Intimidire",
+      "Eludere"
+    ],
+    "equipment": [
+      "Ferri da scasso",
+      "Cappa scura",
+      "Pugnale",
+      "Sacchetto di monete contraffatte",
+      "Maschera di tela"
+    ]
+  },
+  "effects": [],
+  "flags": {},
+  "folders": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_id": "profcriminal0001"
+}

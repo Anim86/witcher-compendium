@@ -1,0 +1,44 @@
+{
+  "name": "Druido",
+  "type": "profession",
+  "img": "modules/witcher-compendium/images/professions/druido.png",
+  "system": {
+    "description": "<p>Un Druido è un guardiano della natura che preserva l'equilibrio di tutto ciò che vive. Ottengono il loro potere dal legame con il mondo naturale, fermando bracconieri, proteggendo animali e curando le foreste. Molti sono saggi che fungono da guide spirituali, mentre altri sono militanti pronti a difendere i boschi sacri con la forza.</p>",
+    "source": "TC 67",
+    "definingSkill": {
+      "name": "Rito della Quercia e del Vischio",
+      "definition": "Un Druido impara presto come raccogliere piante per farne un potente Focus, che lo collega alla terra. Può costruire un Bastone che solo lui può usare, il cui valore di Focus aumenta con questa Abilità."
+    },
+    "skills": [
+      "Accortezza",
+      "Bestiario",
+      "Insegnamento",
+      "Intessere Fatture",
+      "Lanciare Incantesimi",
+      "Officiare Rituali",
+      "Persuasione",
+      "Pronto Soccorso",
+      "Sopravvivenza",
+      "Tempra"
+    ],
+    "equipment": [
+      "100 Corone in componenti",
+      "Abiti per Climi Freddi",
+      "Bastone",
+      "Borsello",
+      "Candele (×5)",
+      "Erbe Anestetiche (×3)",
+      "Falce da Druido",
+      "Giaciglio",
+      "Pipa e Tabacco"
+    ]
+  },
+  "effects": [],
+  "flags": {},
+  "folders": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_id": "profdruid0000001"
+}

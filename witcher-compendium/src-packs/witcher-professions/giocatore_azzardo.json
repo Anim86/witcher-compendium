@@ -1,0 +1,36 @@
+{
+  "name": "Giocatore d'Azzardo",
+  "type": "profession",
+  "img": "modules/witcher-compendium/images/professions/giocatore_azzardo.png",
+  "system": {
+    "description": "<p>La vita è una scommessa, e nessuno lo sa meglio di un Giocatore d'Azzardo. Che si tratti di dadi, carte o una scommessa sulla vita di qualcuno, loro sanno come manipolare le probabilità. Spesso si trovano nelle taverne più infime o nei casinò più lussuosi, sempre alla ricerca del prossimo grande colpo.</p>",
+    "source": "SM 30",
+    "definingSkill": {
+      "name": "Barare",
+      "definition": "Un Giocatore d'Azzardo può manipolare i risultati di giochi d'azzardo o situazioni che coinvolgono il caso, riducendo la probabilità di essere scoperto."
+    },
+    "skills": [
+      "Gioco d'Azzardo",
+      "Inganno",
+      "Persuasione",
+      "Conoscenza Sociale",
+      "Accortezza",
+      "Sleight of Hand"
+    ],
+    "equipment": [
+      "Mazzo di carte truccate",
+      "Dadi pesati",
+      "Borsello di monete",
+      "Veste elegante",
+      "Pugnale nascosto"
+    ]
+  },
+  "effects": [],
+  "flags": {},
+  "folders": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_id": "profgambler000001"
+}

@@ -1,0 +1,32 @@
+{
+  "name": "Werebbubb",
+  "type": "race",
+  "img": "modules/witcher-compendium/images/races/werebbubb.png",
+  "system": {
+    "description": "<p>I Werebbubb, o Bobolak, sono creature umanoidi ricoperte di una folta pelliccia, simili a castori o tassi antropomorfi. Vivono in comunità isolate nelle montagne o vicino ai fiumi, dove costruiscono ingegnose tane sotterranee o dighe. Malgrado la loro apparenza, sono combattenti coraggiosi e artigiani eccellenti.</p><p>Hanno una resistenza fisica notevole e sensi molto sviluppati, che li rendono difficili da sorprendere.</p>",
+    "source": "SM 26",
+    "perks": [
+      {
+        "name": "Resilienza",
+        "description": "I Werebbubb sono estremamente resistenti alla fatica e al dolore. Ottengono un bonus di +1 a tutte le prove di Resistenza e Fisico."
+      },
+      {
+        "name": "Sensi Acuiti",
+        "description": "Grazie al loro udito e olfatto fini, i Werebbubb ottengono +1 innato all’abilità Accortezza."
+      },
+      {
+        "name": "Fellino",
+        "description": "La loro densa pelliccia e agilità naturale fornisce un valore di blocco (PR) innato di 1 su tutto il corpo e +1 a Eludere."
+      }
+    ],
+    "social": "Odiato"
+  },
+  "effects": [],
+  "flags": {},
+  "folders": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_id": "racewerebbub0001"
+}
