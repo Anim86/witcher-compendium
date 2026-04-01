@@ -1,0 +1,32 @@
+{
+    "_id": "f829e6505e604b6c",
+    "name": "Porta di Cenere",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag083_Incantesimi da Mago_01.png",
+    "system": {
+        "description": "<p>Essenza della Pozione Laccio Spettrale Sciame di Javed Tocco Fulminante Tocco del Fabbro Invaerne Manto Portale Trappola Rafforzare Incantesimi da Maestro Rubare Incantesimo Modellare Terra Gwyntog Fuoco Vivente Estrazione di Ainfra Specchio Oscuro di Bekker Stasi Cristallina Mano della Tempesta Vampata del Korath Piena di Ys</p>",
+        "weight": 0,
+        "cost": 12,
+        "range": "2m",
+        "duration": "Attiva (3 RES)",
+        "defense": "Nessuna",
+        "tier": "Maestro",
+        "subtype": "Misto",
+        "category": "Mago",
+        "effect": "<p>Porta di Cenere incanala la magia del fuoco in una struttura infiammabile, consumandola in modo silenzioso e sicuro dall'interno. Una volta lanciato l'incantesimo, un riparo, del volume massimo di 2 metri cubi e che il mago sta toccando, subisce 4d6 danni da ablazione. Questo effetto può essere mantenuto, concentrandosi per ulteriori Round e pagando il costo di Attivazione, così da causare altri 4d6 danni ablativi per Round. Quando il riparo non ha più PR viene ridotto in cenere.</p>",
+        "sourcebook": "TC 89",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

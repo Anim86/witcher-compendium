@@ -1,0 +1,11 @@
+<div class="edit-stats">
+    {{#if (eq type 'stats')}}
+        {{#with system.stats as |stats|}}
+            {{> 'systems/TheWitcherTRPG/templates/sheets/actor/configuration/app/partials/stats-block.hbs' stats=stats reputation=../system.reputation}}
+        {{/with}}
+    {{else if (eq type 'derivedStats')}}
+        {{#with system.derivedStats as |stats|}}
+            {{> 'systems/TheWitcherTRPG/templates/sheets/actor/configuration/app/partials/stats-block.hbs' stats=stats}}
+        {{/with}}
+    {{/if}}
+</div>

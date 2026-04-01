@@ -1,0 +1,32 @@
+{
+    "_id": "87dbddf5a0f54ca4",
+    "name": "Tocco Fulminante",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag083_Incantesimi da Mago_01.png",
+    "system": {
+        "description": "<p>Tocco del Fabbro Invaerne Manto Portale Trappola Rafforzare Incantesimi da Maestro Rubare Incantesimo Modellare Terra Gwyntog Fuoco Vivente Estrazione di Ainfra Specchio Oscuro di Bekker Stasi Cristallina Mano della Tempesta Vampata del Korath Piena di Ys</p>",
+        "weight": 0,
+        "cost": 8,
+        "range": "2m",
+        "duration": "Attiva (5 RES)",
+        "defense": "Nessuna",
+        "tier": "Maestro",
+        "subtype": "Misto",
+        "category": "Mago",
+        "effect": "<p>Tocco Fulminante carica d'elettricità un oggetto metallico immobile. Questo diventa una trappola elettrica, che infligge 1d6 danni alla prima creatura che vi entra in contatto (nella Locazione con cui la tocca). È possibile infondere ulteriore energia concentrandosi, nella misura di +1d6 danni (massimo 8d6) per ogni Round in cui si paga il costo d'Attivazione. Se viene spostato prima che una creatura vi entri in contatto o dopo ventiquattr'ore, l'oggetto si scarica. Occorre una prova di Accortezza CD 20 per notare che un oggetto è sotto l'effetto di questo incantesimo.</p>",
+        "sourcebook": "TC 89",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

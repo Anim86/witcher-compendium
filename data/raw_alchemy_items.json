@@ -1,0 +1,178 @@
+[
+    {
+        "name": "Allucinogeno",
+        "availability": "C",
+        "weight": 0.1,
+        "cost": 25,
+        "description": "Mi sa che somiglia molto a quella pozione da witcher, il gabbiano bianco. Ti fa vedere della roba strana. Non è al- trettanto potente, ma non è velenoso.",
+        "mechanical_effect": "L’Allucinogeno può essere lanciato contro un bersaglio entro 3 m o versato in una bevanda. Se il bersaglio fallisce una prova di Tempra CD 15 è in preda alle allucinazioni per 1d10 round."
+    },
+    {
+        "name": "Inchiostro",
+        "availability": "C",
+        "weight": 0.1,
+        "cost": 15,
+        "description": "Invisibile In realtà ho usato l’inchiostro invisibile più di qualche volta. Fare il contrabbandiere significa dover lasciare parecchi ap- punti invisibili e note celate.",
+        "mechanical_effect": "L’Inchiostro Invisibile permette di scrivere messaggi leggibili solo se esposti a una fonte di calore per 1 round."
+    },
+    {
+        "name": "Amico dell’Avvelenatore",
+        "availability": "C",
+        "weight": 0.1,
+        "cost": 36,
+        "description": "Il veleno nero e altre sostanze possono avere un sapore pa- recchio riconoscibile. L’amico dell’avvelenatore è ottimo per mascherarlo. Migliora anche il sapore delle vivande, ma lo sappiamo che non è a quello che serve.",
+        "mechanical_effect": "D per individuare veleni. 0,1 16\nIl Cloroformio costringe chi lo respira a superare un tiro salvezza su Grinta a -2 o perdere i sensi finché non supera il tiro. Occorre un attacco di Mischia con un pezzo di stoffa imbevuto nel Cloroformio per poterlo utilizzare. Può anche essere versato in un contenitore. Una bottiglia contiene 25 dosi.\nCloroformio C"
+    },
+    {
+        "name": "Lacrime di",
+        "availability": "d",
+        "weight": 0.5,
+        "cost": 79,
+        "description": "Talgar Si basa su uno degli antichi rimasugli di tecnologia chiamato Inverno di Talgar. Versalo su qualcosa e si congela all’istante.",
+        "mechanical_effect": "i Talgar congelano immediatamente qualsiasi bersaglio colpito. Se usate su armi, armature od oggetti, queste subiscono doppi danni ablativi. Lanciare è un tiro di Atletica con gittata pari a FIS ×2 del lanciatore e il liquido schizza in un cono di 2m generato dal punto d’impatto, congelando tutto ciò che tocca.\nLacrime di Talgar S"
+    },
+    {
+        "name": "Polvere",
+        "availability": "c",
+        "weight": 0.1,
+        "cost": 18,
+        "description": "Coagulante Quando sanguini a tutto spiano e un medico ha qualche problema a badare a te, un po’ di polvere coagulante a por- tata di mano fa al caso tuo. Argina il flusso per un po’.",
+        "mechanical_effect": "orso, tengo molto materiale in magazzino. Ogni mese faccio qualche viaggio da Mahakam fino a Vizima ed Ellander. Quei po- veri bastardi hanno bisogno di ac- ciaio di quello buono e, con i Neri che aumentano, non c’è nessuno ab- bastanza stupido da superare le linee d’assedio e raggiungerli. Be’, nessuno tranne il sottoscritto, eh. Porto con me anche un sacco di rifornimenti medici. Specie la Polvere Coagulante. Credimi, amico, è davvero dura pensare da lucidi quando perdi sangue a fiotti. Quand’ero ri- cognitore nella Prima Guerra avevamo quel povero bastardo di Aldi. Si beccò una punta larga nella coscia dagli arcieri Neri. Il resto del distaccamento rispedì via i Neri, ma Aldi era lì a tener- si la gamba, c’era sangue ovunque e non gli restava molto tempo. Il massimo che sono risucito a fare è stato di legargli della stoffa alla coscia, ma il sangue non si ferma- va. Aldi era sempre più pallido e la terra sotto di lui era impregnata di sangue. Alla fine uno degli altri ri- cognitori è riuscito a recuperare un po’ di Polvere Coagulante. Ha sal- vato la vita ad Aldi, per un soffio. - Rodolf Kazmer\nLa Polvere Basica contrasta gli effetti dell’acido, negando una dose di soluzione acida per ogni dose di polvere basica utilizzata. La Polvere Basica può anche negare il danno causato dalla ferita critica Stomaco Lacerato."
+    },
+    {
+        "name": "Cloroformio",
+        "availability": "C",
+        "weight": 0.1,
+        "cost": 36,
+        "description": "Il cloroformio è per chi rapisce gente e per chi deve calmare persone terrorizzate. È più facile che lo usino i rapinatori, ma ogni tanto mi piace essere positivo, eh.",
+        "mechanical_effect": "loroformio costringe chi lo respira a superare un tiro salvezza su Grinta a -2 o perdere i sensi finché non supera il tiro. Occorre un attacco di Mischia con un pezzo di stoffa imbevuto nel Cloroformio per poterlo utilizzare. Può anche essere versato in un contenitore. Una bottiglia contiene 25 dosi.\nCloroformio C"
+    },
+    {
+        "name": "Polvere",
+        "availability": "c",
+        "weight": 0.1,
+        "cost": 18,
+        "description": "Coagulante Quando sanguini a tutto spiano e un medico ha qualche problema a badare a te, un po’ di polvere coagulante a por- tata di mano fa al caso tuo. Argina il flusso per un po’.",
+        "mechanical_effect": "orso, tengo molto materiale in magazzino. Ogni mese faccio qualche viaggio da Mahakam fino a Vizima ed Ellander. Quei po- veri bastardi hanno bisogno di ac- ciaio di quello buono e, con i Neri che aumentano, non c’è nessuno ab- bastanza stupido da superare le linee d’assedio e raggiungerli. Be’, nessuno tranne il sottoscritto, eh. Porto con me anche un sacco di rifornimenti medici. Specie la Polvere Coagulante. Credimi, amico, è davvero dura pensare da lucidi quando perdi sangue a fiotti. Quand’ero ri- cognitore nella Prima Guerra avevamo quel povero bastardo di Aldi. Si beccò una punta larga nella coscia dagli arcieri Neri. Il resto del distaccamento rispedì via i Neri, ma Aldi era lì a tener- si la gamba, c’era sangue ovunque e non gli restava molto tempo. Il massimo che sono risucito a fare è stato di legargli della stoffa alla coscia, ma il sangue non si ferma- va. Aldi era sempre più pallido e la terra sotto di lui era impregnata di sangue. Alla fine uno degli altri ri- cognitori è riuscito a recuperare un po’ di Polvere Coagulante. Ha sal- vato la vita ad Aldi, per un soffio. - Rodolf Kazmer\nLa Polvere Basica contrasta gli effetti dell’acido, negando una dose di soluzione acida per ogni dose di polvere basica utilizzata. La Polvere Basica può anche negare il danno causato dalla ferita critica Stomaco Lacerato."
+    },
+    {
+        "name": "Colla",
+        "availability": "C",
+        "weight": 0.1,
+        "cost": 28,
+        "description": "Alchemica Da quel che ricordo, è stato qualche tipo sveglio di Oxenfurt a tirar fuori questa roba per sostituire i chiodi. Ovviamente non è andata così bene, ma è ottima per riparazioni veloci e cose simili.",
+        "mechanical_effect": "olla Alchemica può essere lanciata o versata in un punto o su una persona. Dopo 2 round la soluzione si indurisce, incollando permanentemente insieme oggetti e persone. Per separarli è necessaria una prova di Prestanza con CD 16. Lanciare è una prova di Atletica con gittata pari a FIS×2 m del lanciatore.\nROMPERE BOTTIGLIE Tutti gli oggetti alchemici pre- sentati si vendono in bottigliette di vetro o di creta, alcune del- le quali pensate per rompersi all’impatto. Se uno di questi contenitori subisce più di 5 dan- ni, si spacca e versa il suo con- tenuto, attivando qualsiasi arma alchemica da lancio racchiusa.\nColla Alchemica C"
+    },
+    {
+        "name": "Pozione di",
+        "availability": "S",
+        "weight": 0.1,
+        "cost": 56,
+        "description": "Lacrime di Mogli Questa pozione è in voga nelle grandi città dove ci sono tante taverne. Certi alchimisti hanno creato insieme questa formula per contrastare i mariti ubriaconi che si trascinano per strada dopo qualche boccale di troppo.",
+        "mechanical_effect": "Bere una Pozione di Lacrime di Mogli nega gli effetti dell’ebbrezza. Il bersaglio torna sobrio appena bevuta la pozione."
+    },
+    {
+        "name": "Elisir di",
+        "availability": "S",
+        "weight": 0.1,
+        "cost": 12,
+        "description": "Pantagran Pantagram di Lyria era un noto alchimista del Nord. Creò questo elisir, che ti fa sentire veramente felice. Ha senso, per un lyriano. Eh, brutto posto dove vivere.",
+        "mechanical_effect": "eduzione, infliggendo -2 a Resistere a Coercizioni.\n0,5 67\nElisir di Pantagran S\nUtilizzate per trattare una ferita, le Erbe Anestetiche danno sollievo, riducendo di 2 le penalità per ferite critiche. Le Erbe Anestetiche riducono anche di 2 le penalità per trovarsi vicini alla morte. Le Erbe Anestetiche hanno effetto per 2d10 round, dopodiché può essere applicata un’altra dose.\nErbe Anestetiche D"
+    },
+    {
+        "name": "Pozione",
+        "availability": "S",
+        "weight": 0.1,
+        "cost": 56,
+        "description": "Profumo Si dice che la pozione profumo sia stata creata da un alchi- mista per rabbonire sua moglie arrabbiata. È un precursore del profumo, ma se la bevi ti sbronzi in un attimo. Molto in voga tra rapitori e tipi altolocati, eh.",
+        "mechanical_effect": "Bere una Pozione di Lacrime di Mogli nega gli effetti dell’ebbrezza. Il bersaglio torna sobrio appena bevuta la pozione."
+    },
+    {
+        "name": "Erbe",
+        "availability": "D",
+        "weight": 0.1,
+        "cost": 12,
+        "description": "Anestetiche Può capitare di non poter andare subito da un medico. Avere qualcosa che calmi il dolore è utile.",
+        "mechanical_effect": ""
+    },
+    {
+        "name": "Fisstech",
+        "availability": "C",
+        "weight": 0.1,
+        "cost": 25,
+        "description": "Gli elfi chiamano questa roba “la Morte Bianca”. La droga più diffusa al mondo e, lascia che te lo dica, niente con cui ti conviene avere a che fare. Un drogato di fisstech fa spavento: non ha un briciolo di paura né di dignità quando ha bisogno di una dose.",
+        "mechanical_effect": "H Un consumatore deve superare una prova di Tempra CD 16 o rimanere stordito fino a mezz’o- ra. Può tentare questa prova ogni round, ma un risultato inferiore a 10 in una di queste prove fa perdere i sensi per 5 round.\nL’alchimia ha cambiato drasticamente il mondo. Tra le ricette degli antichi popoli e le formule intro- dotte dagli scienziati, esistono migliaia di preparati e di misture da utilizzare, in pace e in guerra.\nGli oggetti alchemici si possono sempre nascondere nelle tasche o nei borselli. I prodotti alchemici si esauriscono dopo un singolo uso, eccetto dove indicato diversamente.\nNome Disp. Effetto Peso Costo\nAllucinogeno C L’Allucinogeno può essere lanciato contro un bersaglio entro 3 m o versato in una bevanda. Se il bersaglio fallisce una prova di Tempra CD 15 è in preda alle allucinazioni per 1d10 round."
+    },
+    {
+        "name": "Respiro di",
+        "availability": "C",
+        "weight": 0.1,
+        "cost": 20,
+        "description": "Succube Piace parecchio ai bardi. Il respirito di succube fa venire una gran voglia di avventure, se capisci cosa intendo. Di mio, mai usato. Mai stato costretto, eh.",
+        "mechanical_effect": "oercizione. Come per il Veleno Nero, è necessaria una prova di Accortezza con CD 16 per accorgersi che la bevanda contiene il Respiro di Succube.\nRespiro di Succube C"
+    },
+    {
+        "name": "Fluido",
+        "availability": "C",
+        "weight": 0.1,
+        "cost": 45,
+        "description": "Sterilizzante Mai capito granché delle infezioni. Sapere curare lo lascio ai dottori, io vendo solo merce. I fluidi sterilizzanti di solito sono molto richiesti.",
+        "mechanical_effect": "Una dose di Fuoco Rapido versata su una persona, superficie od oggetto, asciuga molto rapidamente e rende il materiale estremamente infiammabile. Esiste il 50% di probabilità che prenda fuoco se esposto a fiamme libere o scintille."
+    },
+    {
+        "name": "Sali da",
+        "availability": "C",
+        "weight": 0.1,
+        "cost": 25,
+        "description": "Fiuto Se i tuoi compagni han preso una botta in testa o sono stati messi fuori combattimento dal cloroformio, annusare i sali li rimette in sesto in un battibaleno.",
+        "mechanical_effect": "I Sali da Fiuto posti sotto il naso di una creatura priva di sensi o stordita ne annullano gli effetti facendola riprendere. I Sali da Fiuto sono utilizzabili 25 volte."
+    },
+    {
+        "name": "Fuoco",
+        "availability": "S",
+        "weight": 0.5,
+        "cost": 65,
+        "description": "Zerrikaniano Non pasticcio col fuoco zerrikaniano. Mai dovuto farlo, mai lo farò. È troppo pericoloso. A contatto con l’aria, questa roba divampa in un orrendo fuoco verde. Viene utilizzata una ver- sione di questa sostanza negli scorpioni di fuoco zerrikaniani.",
+        "mechanical_effect": "Il Fuoco Zerrikaniano appicca immediatamente fuoco a qualsiasi cosa colpisca. Lanciare è un tiro di Atletica con gittata pari a FIS ×2 del lanciatore e il liquido schizza in un cono di 2m generato dal punto d’impatto, appiccando il fuoco a qualsiasi cosa o persona nell’area."
+    },
+    {
+        "name": "Soluzione",
+        "availability": "C",
+        "weight": 0.1,
+        "cost": 28,
+        "description": "Acida Non mi capita di usare molto l’acido. Almeno non tutti i giorni. Ma questa roba è ottima se devi far saltare una serratura o ti serve un’arma improvvisata.",
+        "mechanical_effect": "D 16. Lanciare è una prova di Atletica con gittata pari a FIS×2 m del lanciatore.\nROMPERE BOTTIGLIE Tutti gli oggetti alchemici pre- sentati si vendono in bottigliette di vetro o di creta, alcune del- le quali pensate per rompersi all’impatto. Se uno di questi contenitori subisce più di 5 dan- ni, si spacca e versa il suo con- tenuto, attivando qualsiasi arma alchemica da lancio racchiusa.\nColla Alchemica C"
+    },
+    {
+        "name": "Fuoco",
+        "availability": "S",
+        "weight": 0.5,
+        "cost": 65,
+        "description": "Zerrikaniano Non pasticcio col fuoco zerrikaniano. Mai dovuto farlo, mai lo farò. È troppo pericoloso. A contatto con l’aria, questa roba divampa in un orrendo fuoco verde. Viene utilizzata una ver- sione di questa sostanza negli scorpioni di fuoco zerrikaniani.",
+        "mechanical_effect": "Il Fuoco Zerrikaniano appicca immediatamente fuoco a qualsiasi cosa colpisca. Lanciare è un tiro di Atletica con gittata pari a FIS ×2 del lanciatore e il liquido schizza in un cono di 2m generato dal punto d’impatto, appiccando il fuoco a qualsiasi cosa o persona nell’area."
+    },
+    {
+        "name": "Tomba d’Adda",
+        "availability": "d",
+        "weight": 0.1,
+        "cost": 45,
+        "description": "Non so se sia una strana coincidenza o se si riferisca davvero alla Principessa Adda. In ogni caso è ottima per mantenere intatte le prove e conservare il cibo. Però gli lascia uno strano retrogusto.",
+        "mechanical_effect": "’Adda può essere versata su alimenti deperibili o anche sui cadaveri. Il bersaglio trattato non marcisce e non si guasta per 1d10 giorni. Per preservare un corpo di taglia umana occorrono 2 dosi.\n0,1 18\nTomba d’Adda C\nIl Veleno Nero avvelena immediatamente un bersaglio se penetra nel sangue o viene ingerito. Una prova di Tempra con CD 16 termina l’effetto, ma il bersaglio può essere nuovamente avvelenato se assume altro Veleno Nero o se subisce una ferita da un’arma avvelenata.\nVeleno Nero C"
+    },
+    {
+        "name": "Veleno nero",
+        "availability": "C",
+        "weight": 0.1,
+        "cost": 16,
+        "description": "Ci sono molti veleni al mondo, ma il veleno nero è proba- bilmente il più comune. Di sicuro lo è al sud. Annerisce le vene e causa dolori terribili.",
+        "mechanical_effect": "D 16 per accorgersi che è avvelenata.\nAmico dell'Avvelenatore C L’Amico dell’Avvelenatore è un liquido limpido che può essere versato su cibi e bevande, dando loro un gusto molto dolce o saporito. Questo aumenta a 20 la CD per individuare veleni."
+    },
+    {
+        "name": "Furia di",
+        "availability": "R",
+        "weight": 0.1,
+        "cost": 95,
+        "description": "Bredan Bredan, il Chimico Pazzo di Gheso. Eh, non ti danno un nome come quello per aver inventato un nuovo concime. Ho sentito che Bredan è scomparso dopo aver creato quest’esplosi- vo. A me pare che si sia dimostrato utile per l’Impero.",
+        "mechanical_effect": "La Furia di Bredan esplode a contatto con l’aria, infliggendo 2d6 danni a ogni parte del corpo di ogni creatura entro 2m. Lanciare è un attacco su Atletica con gittata pari a FIS ×2 del lanciatore."
+    }
+]

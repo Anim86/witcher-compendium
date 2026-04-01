@@ -1,0 +1,32 @@
+{
+    "_id": "e404ad7bbaa849d2",
+    "name": "Estrazione di Ainfra",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag092_Incantesimi da Mago_01.png",
+    "system": {
+        "description": "<p>Specchio Oscuro di Bekker Stasi Cristallina Mano della Tempesta Vampata del Korath Piena di Ys</p>",
+        "weight": 0,
+        "cost": 22,
+        "range": "8m",
+        "duration": "Istantanea",
+        "defense": "Resistere alla Magia",
+        "tier": "Maestro",
+        "subtype": "Misto",
+        "category": "Mago",
+        "effect": "<p>opera del famoso Ainfra di Mag Turga, questo incantesimo estrae tutta l'acqua dal corpo della vittima e permette al mago di utilizzarla a proprio piacimento. Se fallisce nel difendersi, la vittima perde 8d6 RES e il mago può immediatamente lanciare Getto d'Acqua, Lastra di Ghiaccio o Rhewi, senza spendere RES.</p>",
+        "sourcebook": "TC 92",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "_id": "24d41ae23b544f47",
+    "name": "Frana di Bekker",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag088_Incantesimi da Mago_01.png",
+    "system": {
+        "description": "<p>Nastro Invisibile Porta di Cenere Essenza della Pozione Laccio Spettrale Sciame di Javed Tocco Fulminante Tocco del Fabbro Invaerne Manto Portale Trappola Rafforzare Incantesimi da Maestro Rubare Incantesimo Modellare Terra Gwyntog Fuoco Vivente Estrazione di Ainfra Specchio Oscuro di Bekker Stasi Cristallina Mano della Tempesta Vampata del Korath Piena di Ys</p>",
+        "weight": 0,
+        "cost": 13,
+        "range": "10m",
+        "duration": "Istantanea",
+        "defense": "Schivare (Riposizionarsi)",
+        "tier": "Maestro",
+        "subtype": "Misto",
+        "category": "Mago",
+        "effect": "<p>Frana di Bekker estrae un grosso macigno dal suolo e lo scaglia contro il bersaglio. La vittima effettua una prova per Riposizionarsi contrapposta a quella di Lanciare Incantesimi del mago. Se fallisce, subisce 6d6 danni al Torso e viene gettata Prona. All'impatto il macigno esplode e chi si trova nel raggio di 6m deve superare una prova di Atletica per non subire 4d6 danni al Torso ed essere gettato Prono.</p>",
+        "sourcebook": "TC 88",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

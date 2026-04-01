@@ -1,0 +1,28 @@
+{
+    "_id": "08d246528229495a",
+    "name": "Stretta di Cadfan",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>La Stretta di Cadfan, che prende il nome dal mago e fabbro Cadfan di Ebbing, consente di surriscal- dare un oggetto metallico, costringendo chi lo impugna a lasciarlo cadere o subire 2d6 danni. L’incantesimo può anche arroventare un’arma, per conferirgli +2d6 ai danni e il 50% di probabilità d’infliggere l’effetto A Fuoco al bersaglio.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "8m",
+        "duration": "1d6 Round",
+        "effect": "<p>La Stretta di Cadfan, che prende il nome dal mago e fabbro Cadfan di Ebbing, consente di surriscaldare un oggetto metallico, costringendo chi lo impugna a lasciarlo cadere o subire 2d6 danni. L'incantesimo può anche arroventare un'arma, per conferirgli +2d6 ai danni e il 50% di probabilità d'infliggere l'effetto A Fuoco al bersaglio.</p>",
+        "sourcebook": "MB 106",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

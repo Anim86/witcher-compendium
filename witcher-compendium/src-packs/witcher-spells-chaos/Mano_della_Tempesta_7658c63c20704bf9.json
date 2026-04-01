@@ -1,0 +1,32 @@
+{
+    "_id": "7658c63c20704bf9",
+    "name": "Mano della Tempesta",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag083_Incantesimi da Mago_01.png",
+    "system": {
+        "description": "<p>Vampata del Korath Piena di Ys</p>",
+        "weight": 0,
+        "cost": 25,
+        "range": "20m",
+        "duration": "Attiva (6 RES)",
+        "defense": "Nessuna",
+        "tier": "Maestro",
+        "subtype": "Misto",
+        "category": "Mago",
+        "effect": "<p>il mago evoca un vento terribile scegliendo una di tre modi diversi. Con una corrente ascensionale, una vittima che fallisce una prova di Riposizionarsi o un oggetto del peso massimo di 1000kg viene scagliato a 14m d'altezza. Quando ricade, il bersaglio e ciò che si trova sotto di lui subiscono 7d6 danni e sono gettati Proni. In alternativa, il mago può spazzare un cono di 14m con una potente raffica. Chi fallisce nel Riposizionarsi o non può lasciare l'area viene sbalzato indietro di 14m e, se urta qualcosa, subisce danni da impatto. Infine, il mago può manipolare un oggetto del peso massimo di 1000kg come se lo stringesse in mano.</p>",
+        "sourcebook": "TC 91",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

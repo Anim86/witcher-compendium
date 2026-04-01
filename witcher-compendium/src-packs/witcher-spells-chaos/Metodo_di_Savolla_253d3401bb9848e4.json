@@ -1,0 +1,32 @@
+{
+    "_id": "253d3401bb9848e4",
+    "name": "Metodo di Savolla",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag083_Incantesimi da Mago_01.png",
+    "system": {
+        "description": "<p>Pilastro di Terra Velo di Polvere Velo di Fuoco Respiro di Aurora Morte di Fergus Recupero Alchemico Riaprire Portale Schermo Magico Incantesimi da Esperto Camera di Dormyn Bastione di Elgan Fulmine Globulare Forgia del Mago Arrugginire Compromettere Focus Frana di Bekker Nastro Invisibile Porta di Cenere Essenza della Pozione Laccio Spettrale Sciame di Javed Tocco Fulminante Tocco del Fabbro Invaerne Manto Portale Trappola Rafforzare Incantesimi da Maestro Rubare Incantesimo Modellare Terra Gwyntog Fuoco Vivente Estrazione di Ainfra Specchio Oscuro di Bekker Stasi Cristallina Mano della Tempesta Vampata del Korath Piena di Ys</p>",
+        "weight": 0,
+        "cost": 5,
+        "range": "2m",
+        "duration": "Istantanea",
+        "defense": "Nessuna",
+        "tier": "Maestro",
+        "subtype": "Misto",
+        "category": "Mago",
+        "effect": "<p>creato come miglioramento di tecniche più antiche, il Metodo di Savolla rimuove tessuti e mucose da un cadavere, rendendo più facile recuperare le componenti mutagene. Lanciando questo incantesimo, il Mutageno si stacca dal corpo e brilla debolmente, permettendo di recuperarlo con una prova di Alchimia o Arte del Witcher CD 14.</p>",
+        "sourcebook": "TC 83",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

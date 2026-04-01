@@ -1,0 +1,33 @@
+{
+    "_id": "08c8bc3916a44ba5",
+    "name": "Pugnale",
+    "type": "weapon",
+    "img": "icons/svg/sword.svg",
+    "system": {
+        "description": "<p>Simbolo sacro Strumenti chirurgici Davide Mesina 355175</p>",
+        "weight": 0.5,
+        "cost": 50,
+        "damage": "1d6+2",
+        "reliability": {
+            "value": 10,
+            "max": 10
+        },
+        "accuracy": 0,
+        "hands": 1,
+        "reach": "N/A",
+        "effects": "N/A",
+        "sourcebook": "MB 20"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

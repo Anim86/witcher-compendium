@@ -1,0 +1,32 @@
+{
+    "_id": "d3dcf86aabc94f22",
+    "name": "Portale Trappola",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag083_Incantesimi da Mago_01.png",
+    "system": {
+        "description": "<p>Rafforzare Incantesimi da Maestro Rubare Incantesimo Modellare Terra Gwyntog Fuoco Vivente Estrazione di Ainfra Specchio Oscuro di Bekker Stasi Cristallina Mano della Tempesta Vampata del Korath Piena di Ys</p>",
+        "weight": 0,
+        "cost": 12,
+        "range": "4m",
+        "duration": "1 mese",
+        "defense": "Nessuna",
+        "tier": "Maestro",
+        "subtype": "Misto",
+        "category": "Mago",
+        "effect": "<p>questo incantesimo permette di collocare una trappola magica in un portale, cambiando la destinazione. Una volta lanciato, il mago scopre la normale destinazione del portale e può spostarla in qualsiasi luogo entro 1,6km dalla posizione originale. Ciò altera il portale e chi supera una prova di Arte del Mago CD 16 o Istruzione CD 20 se ne accorge. Chiunque possieda almeno un livello di Arte del Mago esegue automaticamente la prova quando vede il portale. Appena una creatura supera la soglia, la trappola si disperde, ma le tracce della manipolazione restano visibili per un mese.</p>",
+        "sourcebook": "TC 83",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

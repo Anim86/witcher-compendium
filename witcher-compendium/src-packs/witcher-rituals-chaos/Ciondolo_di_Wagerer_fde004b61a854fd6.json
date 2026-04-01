@@ -1,0 +1,30 @@
+{
+    "_id": "fde004b61a854fd6",
+    "name": "Ciondolo di Wagerer",
+    "type": "ritual",
+    "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag104_Rituali_01.png",
+    "system": {
+        "description": "<p>Creare Teschio di Cristallo Infondere Trofeo Tiromanzia Rituali da Esperto Animare Armatura Faro dell’Innaturale Nebbia del Passato Registro Magico degli Ospiti Rituali da Maestro Creare Luogo di Potere Incantare Amuleto</p>",
+        "weight": 0,
+        "cost": 6,
+        "prepTime": "10 Round",
+        "difficulty": "14",
+        "duration": "1 settimana",
+        "components": "Aconito (×2), Acquaforte (×5), Ceneri (×2), Cuoio (×2), Gessetto (×2), Ossa di Bestia (×1)",
+        "effect": "<p>legando una scheggia di vetro inciso a un ciondolo fatto con aconito, ossa di bestia e strisce di cuoio, il ritualista crea una \"calamita\" di magia oscura. Il monile assorbe e trattiene temporaneamente il Caos delle Fatture e chi lo indossa è libero dai loro effetti, almeno finché lo porta su di sé. Inoltre, se questa persona non riesce a liberarsi da tutte le Fatture che l'affliggono entro la durata del Rituale, il Ciondolo si spezza, liberando un flusso di magia oscura. In questo caso, chi lo indossa e tutti coloro che si trovano entro 2m vengono colpiti da un numero di Fatture deciso dal GM.</p>",
+        "sourcebook": "TC 104",
+        "source": "TC 104"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

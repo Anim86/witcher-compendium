@@ -1,0 +1,28 @@
+{
+    "_id": "03ece2e114a5498b",
+    "name": "Cripte del Sapere",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Cripte del Sapere permette al predicatore di tornare con la mente al passato e di accedere a ogni nozione o ricordo a lui noto, come se l’avesse appena appresa o vissuto.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "Personale",
+        "duration": "",
+        "effect": "<p>Cripte del Sapere permette al predicatore di tornare con la mente al passato e di accedere a ogni nozione o ricordo a lui noto, come se l'avesse appena appresa o vissuto.</p>",
+        "sourcebook": "MB 111",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

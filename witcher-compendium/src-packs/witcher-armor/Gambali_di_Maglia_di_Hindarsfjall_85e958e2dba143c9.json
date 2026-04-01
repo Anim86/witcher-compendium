@@ -1,0 +1,29 @@
+{
+    "_id": "85e958e2dba143c9",
+    "name": "Gambali di Maglia di Hindarsfjall",
+    "type": "armor",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag082_Armature_01.png",
+    "system": {
+        "description": "<p>25 R 3 1 5 650 Schinieri Nilfgaardiani 30 R 2 1 6 850 PALVESE NILFGAARDIANO Un pavese nilfgaardiano è costruito in modo tale da poter essere puntellato senza l'uso delle mani o di altri oggetti. Con un'azione, il personaggio può piantare il palvese nilfgaardiano rivolto in una specifica direzione. Se subisce più della metà della Pr in danni, cade. Dal momento che non è impugnato, un palvese puntellato non può essere usato per bloccare, ma solo come riparo. SCUDI Nome Aff. Disp. Effetto VI Peso Costo Scudi Leggeri Scudo di Cuoio 4 D 0 0,5 50 Brocchiero d'Acciaio 6 C 0 1 150 Scudo Temeriano 8 C 0 1,5 225 Scudi Medi Scudo da Razziatore Skellige 10 S 0 2 325 Scudo Kaedweni 14 S 0 2,5 400 Scudo d'Acciaio a Goccia 16 C 0 3 400 Scudi Pesanti Palvese 20 S Riparo Completo 1 4 500 Palvese Nilfgaardiano 25 R Riparo Completo 1 5 650</p>",
+        "weight": 5,
+        "cost": 650,
+        "stoppingPower": 0,
+        "reliability": {
+            "value": 0,
+            "max": 0
+        },
+        "sourcebook": "MB 82"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

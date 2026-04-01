@@ -1,0 +1,28 @@
+{
+    "_id": "0d6f29d041714da3",
+    "name": "Igni (Fuoco)",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Igni scaglia un’ondata di fuoco e scintille che infligge 1d6 danni per punto di RES speso e ha il 50% di probabilità d’infliggere l’effetto A Fuoco a tutto ciò che colpisce. Igni infligge sempre danno al Busto a meno che non venga usato a portata Vicina, in tal caso può essere mirato a una parte del corpo.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "Cono di 2m",
+        "duration": "",
+        "effect": "<p>Igni scaglia un'ondata di fuoco e scintille che infligge 1d6 danni per punto di RES speso e ha il 50% di probabilità d'infliggere l'effetto A Fuoco a tutto ciò che colpisce. Igni infligge sempre danno al Busto a meno che non venga usato a portata Vicina, in tal caso può essere mirato a una parte del corpo.</p>",
+        "sourcebook": "MB 116",
+        "source": "Fire"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

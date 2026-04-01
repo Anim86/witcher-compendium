@@ -1,0 +1,28 @@
+{
+    "_id": "26c7b27bc18d4a2b",
+    "name": "Soffocare",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>L’incantesimo soffoca un bersaglio infliggendo 1d10 danni per turno. Il soffocamento termina se l’in- cantatore viene colpito da un’arma o interrompe la con- centrazione. Mentre soffoca, il bersaglio è considerato vacillante.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "10m",
+        "duration": "Attiva (4 RES)",
+        "effect": "<p>L'incantesimo soffoca un bersaglio infliggendo 1d10 danni per turno. Il soffocamento termina se l'incantatore viene colpito da un'arma o interrompe la concentrazione. Mentre soffoca, il bersaglio è considerato vacillante.</p>",
+        "sourcebook": "MB 108",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "_id": "cb1c424c00734c1c",
+    "name": "Luce Sacra",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Luce Sacra illumina un’area come se il predica- tore impugnasse una torcia. La luce non emana calore e non può essere usata per incendiare altri oggetti come farebbe una torcia.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "Personale",
+        "duration": "",
+        "effect": "<p>Luce Sacra illumina un'area come se il predicatore impugnasse una torcia. La luce non emana calore e non può essere usata per incendiare altri oggetti come farebbe una torcia.</p>",
+        "sourcebook": "MB 111",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "_id": "111649d616ff4496",
+    "name": "Evoca Bordone",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Evoca Bordone consente all’incantatore di smaterializzare il proprio bastone e trasportarlo in un luogo in cui è stato, al più tardi, il giorno precedente. Lanciando l’incantesimo una seconda volta, può ripor- tare a sé il bastone.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "N/A",
+        "duration": "Istantanea",
+        "effect": "<p>Evoca Bordone consente all'incantatore di smaterializzare il proprio bastone e trasportarlo in un luogo in cui è stato, al più tardi, il giorno precedente. Lanciando l'incantesimo una seconda volta, può riportare a sé il bastone.</p>",
+        "sourcebook": "MB 103",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

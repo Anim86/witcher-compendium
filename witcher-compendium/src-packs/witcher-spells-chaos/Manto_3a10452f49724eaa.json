@@ -1,0 +1,32 @@
+{
+    "_id": "3a10452f49724eaa",
+    "name": "Manto",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag083_Incantesimi da Mago_01.png",
+    "system": {
+        "description": "<p>Portale Trappola Rafforzare Incantesimi da Maestro Rubare Incantesimo Modellare Terra Gwyntog Fuoco Vivente Estrazione di Ainfra Specchio Oscuro di Bekker Stasi Cristallina Mano della Tempesta Vampata del Korath Piena di Ys</p>",
+        "weight": 0,
+        "cost": 16,
+        "range": "Personale",
+        "duration": "Attiva (2 RES)",
+        "defense": "Nessuna",
+        "tier": "Maestro",
+        "subtype": "Misto",
+        "category": "Mago",
+        "effect": "<p>Manto rende invisibile il mago e tutto ciò che ha con sé. Ciò gli conferisce un bonus di +10 a Nascondersi e +5 ad Attacchi e Difese. Quest'ultimo viene ridotto a +3 contro le creature che superano una prova di Accortezza per individuare la sua posizione. Il Segno Yrden e le Bombe Polvere Lunare rendono il mago parzialmente visibile, riducendo a +5 il bonus a Nascondersi e a +3 quello ad Attacchi e Difese. Se si viene colpiti, l'incantesimo ha subito termine.</p>",
+        "sourcebook": "TC 83",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

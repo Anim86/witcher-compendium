@@ -1,0 +1,517 @@
+[
+    {
+        "name": "AMALGAMA DI CORPI",
+        "stats": {
+            "INT": "1",
+            "RIF": "8",
+            "DES": "6",
+            "FIS": "12",
+            "VEL": "6",
+            "EMP": "1",
+            "MAN": "1",
+            "VOL": "8",
+            "GRI": "10",
+            "COR": "18",
+            "BAL": "4",
+            "RES": "50",
+            "ING": "120",
+            "REC": "10",
+            "PS": "100"
+        },
+        "meta": {
+            "Armatura": "0",
+            "Rigenerazione": "—",
+            "Altezza": "Varia",
+            "Peso": "Circa 680 kg",
+            "Ambiente": "Vicino a cripte e torri dei maghi",
+            "Organizzazione": "Solitario",
+            "Ricompensa": "800 Corone"
+        },
+        "skills": {
+            "Accortezza": "10",
+            "Difficile": "Arduo",
+            "Atletica": "11",
+            "Coraggio": "—",
+            "Intimidire": "16",
+            "Nascondersi": "10",
+            "Prestanza": "20",
+            "Sensi": "—",
+            "Resistere a Coercizioni": "—",
+            "Resistere alla Magia": "17",
+            "Rissa": "16",
+            "Sopravvivenza": "7"
+        },
+        "resistances": "MAN 1 Contundente, Perforante VOL 8",
+        "immunities": "Ammaliamento, Atterramento, Coercizione, Paura, Sanguinamento, Stordimento, Veleno",
+        "vulnerabilities": "RES 50 Unguento Anti-Spettri",
+        "attacks": [
+            {
+                "name": "Pugni",
+                "base": "16",
+                "type": "C",
+                "damage": "5d6",
+                "reliability": "10",
+                "effects": "— Forza Distruttiva, Portata",
+                "num_attacks": "2"
+            }
+        ],
+        "capacities": [
+            {
+                "name": "Orrido Lamento",
+                "description": "Come Azione, un amalgama di corpi può emettere dalle sue molte bocche uno spaventoso coro di lamenti. Chi si trova entro 10m deve superare una Prova di Resistere alla Magia CD 16 per non subire Vacillante. Essendo formato da carne morta, un amalgama di corpi non guarisce naturalmente, né può beneficiare degli effetti di incantesimi e oggetti che ripristinano Punti Salute."
+            },
+            {
+                "name": "Forma Amalgamata",
+                "description": "Capacità: Spiriti Prigionieri Un amalgama di corpi è animato da numerosi spiriti, costretti su questo piano d’esistenza dalla necromanzia. Nessuna parte del costrutto è fondamentale per la sua sopravvivenza, ma rimuoverne una o più è pericoloso. Ogni volta che la creatura subisce una Ferita Critica, l’attacco causa solo danno normale ma uno dei corpi viene rimosso dall’insieme, liberando lo spirito che lo controllava. Ciò infligge 10 danni aggiuntivi all’amalgama e libera un wraith furibondo, che combatte insieme al costrutto ed esegue gli ordini del necromante che lo ha evocato. Capacità: Momento di Lucidità Un amalgama di corpi è formato da numerosi cadaveri assemblati con la magia e non ha organi vitali. Gli attacchi che colpiscono la Testa o altri punti dove occorre moltiplicare il danno causano soltanto il loro danno base. Senza bisogno di usare Azioni, l’amalgama può rendere dominante uno degli spiriti al suo interno, ottenendo un barlume di coscienza. Appena lo fa, il GM lancia 1d10, tirando di nuovo se ottiene 1. Per 10 Round, la creatura guadagna INT e MAN pari al risultato. Mentre questa Capacità è attiva, l’amalgama diventa Senziente, pur rimanendo sotto il controllo del suo creatore, e prova ancora un terribile dolore. Non può parlare ma è capace di prendere decisioni tattiche e di compiere azioni complesse, come brandire armi, aprire porte, risolvere enigmi, ecc. Se, mentre è lucido, l’amalgama deve effettuare una prova di un’Abilità che non possiede, il GM tira 1d6 per determinare il livello."
+            },
+            {
+                "name": "Vista a 360°",
+                "description": "L’amalgama ha occhi ovunque. Vede in tutte le direzioni contemporaneamente e il suo Campo Visivo è di 360°."
+            }
+        ],
+        "loot": [
+            "AMALGAMA DI CORPI",
+            "Essenza di Wraith (1d6)",
+            "Frammenti Lunari (1)"
+        ],
+        "page": "198",
+        "source": "Tomo del Caos"
+    },
+    {
+        "name": "ARMATURA VIVENTE",
+        "stats": {
+            "INT": "1",
+            "RIF": "8",
+            "DES": "6",
+            "FIS": "8",
+            "VEL": "4",
+            "EMP": "1",
+            "MAN": "1",
+            "VOL": "4",
+            "COR": "12",
+            "BAL": "2",
+            "ING": "80",
+            "REC": "6",
+            "PS": "60"
+        },
+        "meta": {
+            "Armatura": "Vivente_01.png, Pag200_Armatura Vivente_02.png, Pag200_Armatura Vivente_03.png, Pag200_Armatura Vivente_04.png, Pag200_Armatura Vivente_05.png, Pag200_Armatura Vivente_06.png]",
+            "Rigenerazione": "—",
+            "Altezza": "In Base all’Armatura Usata",
+            "Peso": "In Base all’Armatura Usata",
+            "Ambiente": "Vicino a rovine e torri dei maghi",
+            "Organizzazione": "Solitario o coppia",
+            "Ricompensa": "400 Corone"
+        },
+        "skills": {
+            "Accortezza": "14",
+            "Atletica": "10",
+            "Coraggio": "—",
+            "Intimidire": "10",
+            "Nascondersi": "10",
+            "Prestanza": "16",
+            "Resistere a Coercizioni": "—",
+            "Resistere alla Magia": "14",
+            "Rissa": "16",
+            "Sopravvivenza": "13"
+        },
+        "resistances": "In Base all’Armatura Usata",
+        "immunities": "COR 12 Ammaliamento, Coercizione, Paura, Sanguinamento, Stordimento, Veleno BAL 2 RES —",
+        "vulnerabilities": "ING 80 Unguento Anti-Elementali, Bombe al Dimeritium Altezza In Base all’Armatura Usata",
+        "attacks": [
+            {
+                "name": "Pugni",
+                "base": "16",
+                "type": "C",
+                "damage": "1d6+2",
+                "reliability": "15",
+                "effects": "— —",
+                "num_attacks": "2"
+            }
+        ],
+        "capacities": [
+            {
+                "name": "Maestro d’Armi",
+                "description": "Un’armatura vivente è in grado di maneggiare ogni tipo di arma e ha Base 16 in tutte le Abilità relative. Quando usa un’arma a una mano attacca con N°Att 2, con quelle a due mani ha N°Att 1. Quando viene colpita da una Bomba al Dimeritium, un’armatura vivente diventa lenta e scoordinata. Finché resta nell’area d’effetto, non può usare la Capacità Strafare e subisce -2 a tutti i tiri. Punto Debole: Cuore di Golem"
+            },
+            {
+                "name": "Strafare",
+                "description": "Un’armatura vivente è mantenuta coesa da un cuore di golem sospeso all’interno del torace con la magia. Questo non può essere bersagliato finché la corazza del Torso non viene ridotta a PR 0. Una volta fatto, un ulteriore attacco contro il Torso distrugge il cuore e porta subito l’armatura a 0 PS. Un’armatura vivente può sacrificare 10 PS per effettuare un attacco aggiuntivo con l’arma che impugna. Se ciò la riduce a 0 PS, l’armatura va in pezzi dopo avere effettuato l’attacco."
+            },
+            {
+                "name": "Armatura Vivente",
+                "description": "Un’armatura vivente è composta da tre pezzi di armatura, che conservano il loro normale valore di PR. Il costrutto non può indossare altre corazze, ma può essere potenziato con i glifi, come di norma. Eventuali danni alla PR non vengono recuperati con la guarigione, ma vanno riparati come per le comuni armature. Inoltre, l’armatura vivente non subisce l’effetto Visuale Limitata. Se un arto viene ridotto a PR 0 è considerato mozzato o inutilizzabile."
+            }
+        ],
+        "loot": [
+            "Polvere Infusa (1d6/3)",
+            "Queste non si vedono più tanto spesso. Immagino sia perché il costo della manovalanza è sceso o quello delle armature decenti è salito. Eh, a pensarci bene, entrambi! Qualche decennio fa le arma- ture viventi erano di moda. I maghi si facevano delle guardie del corpo usando le migliori armature e poi si pavoneggiavano per tutta la città. Questi aggeggi, però, non sono dei buoni combattenti: non pensano, al contrario di un soldato in carne e ossa. Il trucco è centrarle con una Bomba al Dimeritium. Così la magia svanisce e gli puoi strappare il cuore di golem. — Rodolf Kazmer",
+            "Quintessenza (1d6/3)",
+            "Armatura Originale",
+            "Eventuali Armi e Oggetti Impugnati"
+        ],
+        "page": "200",
+        "source": "Tomo del Caos"
+    },
+    {
+        "name": "BES",
+        "stats": {
+            "INT": "5",
+            "RIF": "12",
+            "DES": "12",
+            "FIS": "10",
+            "VEL": "7",
+            "EMP": "2",
+            "MAN": "2",
+            "VOL": "10",
+            "GRI": "10",
+            "COR": "21",
+            "BAL": "5",
+            "RES": "50",
+            "ING": "100",
+            "REC": "10",
+            "PS": "100"
+        },
+        "meta": {
+            "Armatura": "0",
+            "Rigenerazione": "—",
+            "Altezza": "2,5 m",
+            "Peso": "162 kg",
+            "Ambiente": "Ovunque venga evocato",
+            "Organizzazione": "Solitario",
+            "Ricompensa": "1500 Corone"
+        },
+        "skills": {
+            "Accortezza": "10",
+            "Atletica": "20",
+            "Coraggio": "—",
+            "Intimidire": "19",
+            "Lanciare Incantesimi": "18",
+            "Nascondersi": "12",
+            "Prestanza": "20",
+            "Resistere alla Magia": "20",
+            "Rissa": "20",
+            "Sopravvivenza": "12"
+        },
+        "resistances": "MAN 2 — VOL 10",
+        "immunities": "Fuoco, Malattie, Paura, Sanguinamento, Veleno",
+        "vulnerabilities": "BAL 5 Unguento Anti-Spettri, Bombe al Dimeritium RES 50",
+        "attacks": [],
+        "capacities": [
+            {
+                "name": "Possessione",
+                "description": "Capacità: Sangue Bollente Quando una creatura posseduta da un bes subisce danni da un’arma Perforante o Tagliente, l’attaccante viene colpito da un getto di sangue surriscaldato, che causa 5 danni al Torso e rimuove 1 punto di armatura, a prescindere dal fatto che la superi o no. Come Azione, il bes può tentare di possedere una creatura con cui è in mischia, effettuando una prova contrapposta di Lanciare Incantesimi contro Resistere alla Magia. Se ha successo, il demone prende il controllo del corpo della vittima, che ottiene i valori di RIF e DES del bes. Ciò non altera le Statistiche Derivate. La vittima ottiene anche la Capacità Sangue Bollente. Finché è posseduto dal bes, lo sfortunato non ha il controllo del proprio corpo, ma rimane consapevole di quanto gli accade intorno. Ci sono tre modi per scacciare il demone: ridurre la vittima sotto la sua Soglia di Ferite; un Mago, Prete o Druido deve compiere un esorcismo spendendo 10 RES e superando una Prova di Lanciare Incantesimi CD 20; oppure la vittima deve bere un Elisir Cerebrale. Un bes non può usare questa Capacità quando si trova nell’area dell’effetto di una Bomba al Dimeritium. Il bes non subisce danno dagli attacchi contro la creatura posseduta. Forma Alternativa: Bes Maggiore Gli Artigli di un bes maggiore hanno N°Att 3; inoltre la creatura ha RIF e DES 14 e la sua Capacità Sangue Bollente rimuove 3 punti di armatura, invece di 1."
+            }
+        ],
+        "loot": [
+            "BES",
+            "Ceneri (2d10)",
+            "Corna di Bes (1d6/3)"
+        ],
+        "page": "202",
+        "source": "Tomo del Caos"
+    },
+    {
+        "name": "CASGLYDD",
+        "stats": {
+            "INT": "10",
+            "RIF": "9",
+            "DES": "6",
+            "FIS": "5",
+            "VEL": "6",
+            "EMP": "4",
+            "MAN": "8",
+            "VOL": "12",
+            "GRI": "8",
+            "COR": "18",
+            "BAL": "4",
+            "RES": "40",
+            "ING": "50",
+            "REC": "8",
+            "PS": "80"
+        },
+        "meta": {
+            "Armatura": "15",
+            "Rigenerazione": "—",
+            "Altezza": "Circa 2,5 m",
+            "Peso": "136 kg",
+            "Ambiente": "Ovunque venga evocato",
+            "Organizzazione": "Solitario",
+            "Ricompensa": "1500 Corone"
+        },
+        "skills": {
+            "Accortezza": "19",
+            "Atletica": "12",
+            "Coraggio": "—",
+            "Intimidire": "14",
+            "Lanciare Incantesimi": "20",
+            "Nascondersi": "16",
+            "Persuasione": "12",
+            "Prestanza": "15",
+            "Resistere a Coercizioni": "18",
+            "Resistere alla Magia": "22"
+        },
+        "resistances": "—",
+        "immunities": "COR 18 Accecamento, Fuoco BAL 4",
+        "vulnerabilities": "RES 40 Unguento Anti-Spettri, Bombe al Dimeritium",
+        "attacks": [],
+        "capacities": [
+            {
+                "name": "Movimento nell’Ombra",
+                "description": "Capacità: Tocco Drenante Quando si trova nel suo reame d’ombra, un casglydd può spendere un intero Round per effettuare un numero di attacchi di Rissa pari a uno più la quantità di creature sue prigioniere, bersagliando chiunque si trovi nella sacca dimensionale. Chi viene colpito si ritrova afferrato da una mano d’oscurità che emerge dal nulla. Il casglydd drena immediatamente 2 punti di INT a chi viene colpito e può ripetere l’Azione, senza bisogno di alcun tiro, contro chi è già afferrato all’inizio del suo Turno. Causare 5 danni a una mano libera del mostro. Chi arriva a INT 0 resta intrappolato nella sacca, perde la memoria ed è considerato Stordito finché non torna ad almeno INT 1. Passando un’ora nel mondo reale, la vittima recupera tutta l’INT perduta. Chi, invece, rimane nel reame d’ombra recupera un punto INT ogni settimana. I ricordi ritornano solo una volta riavuta tutta la INT persa. Come Movimento, un casglydd può teletrasportarsi da una zona di oscurità a un’altra entro 20m. Nel farlo può portare con sé oggetti ma non esseri viventi. Non può usare questa Capacità se si trova nell’area d’effetto di una Bomba al Dimeritium."
+            },
+            {
+                "name": "Pozzo di Conoscenza",
+                "description": "Un casglydd ha Base 20 in tutte le prove per apprendere, ricordare o insegnare informazioni."
+            },
+            {
+                "name": "Trascinare nell’Ombra",
+                "description": "Forma Alternativa: Casglydd Maggiore Se colpisce con gli artigli, il casglydd può trascinare la vittima nel proprio reame d’ombra. Si tratta di una sacca dimensionale di 20m di diametro, alta 5m e priva di alcun elemento, eccetto persone e oggetti (scelti dal GM) che il demone ha trascinato qui e alcune fonti di luce che li illuminano. Quando la vittima arriva, il casglydd le appare di fronte. Il demone esiste contemporaneamente anche nel mondo materiale e le due manifestazioni condividono Punti Salute e Armatura, ma ognuna ha un Turno indipendente. Nel reame d’ombra, il casglydd ottiene la Capacità Tocco Drenante. Per lasciare questa prigione occorre venire liberati dal demone, oppure ucciderlo. Alla sua morte, tutte le creature che si trovano nel reame d’ombra ritornano nel mondo reale. Il casglydd non può usare questa Capacità se si trova nell’area d’effetto di una Bomba al Dimeritium. Un casglydd maggiore ha una Base di 25 in Pozzo di Conoscenza e 30 Punti Salute."
+            }
+        ],
+        "loot": [
+            "Essenza di Wraith (1d6)"
+        ],
+        "page": "204",
+        "source": "Tomo del Caos"
+    },
+    {
+        "name": "GRANDE ORSO",
+        "stats": {
+            "INT": "1",
+            "RIF": "7",
+            "DES": "6",
+            "FIS": "12",
+            "VEL": "7",
+            "EMP": "1",
+            "MAN": "1",
+            "VOL": "5",
+            "GRI": "8",
+            "COR": "21",
+            "BAL": "4",
+            "RES": "40",
+            "ING": "120",
+            "REC": "8",
+            "PS": "80"
+        },
+        "meta": {
+            "Armatura": "14",
+            "Rigenerazione": "—",
+            "Altezza": "1,75 m",
+            "Peso": "600 kg",
+            "Ambiente": "Foreste",
+            "Organizzazione": "Solitario o coppia",
+            "Ricompensa": "Ambiente Foreste"
+        },
+        "skills": {
+            "Accortezza": "10",
+            "Atletica": "10",
+            "Coraggio": "14",
+            "Intimidire": "14",
+            "Nascondersi": "8",
+            "Prestanza": "20",
+            "Resistere alla Magia": "13",
+            "Rissa": "13",
+            "Sopravvivenza": "12",
+            "Tempra": "16"
+        },
+        "resistances": "EMP 1 Contundente, Perforante, Tagliente MAN 1 VOL 5",
+        "immunities": "—",
+        "vulnerabilities": "COR 21 Unguento Anti-Bestie BAL 4 RES 40 Schivare Base 12",
+        "attacks": [
+            {
+                "name": "Morso",
+                "base": "17",
+                "type": "P",
+                "damage": "8d6",
+                "reliability": "15",
+                "effects": "— Forza Distruttiva, Sanguinamento (75%)",
+                "num_attacks": "1"
+            },
+            {
+                "name": "Artigli",
+                "base": "17",
+                "type": "T",
+                "damage": "4d6+5",
+                "reliability": "15",
+                "effects": "— Forza Distruttiva",
+                "num_attacks": "2"
+            }
+        ],
+        "capacities": [
+            {
+                "name": "Alzarsi sulle Zampe",
+                "description": "Usando un intero Round, un orso può alzarsi sulle zampe posteriori e colpire con entrambi gli artigli un avversario in mischia, con una base di 12. La vittima subisce 6d6 danni al torso, cade prona e l’orso la blocca a terra. Chi riesce a parare questo attacco, annulla il danno ma viene comunque gettato prono e bloccato a terra, a meno che vinca una Prova Contrapposta di Prestanza contro l’animale. Se la vittima ha successo riesce ad allontanare l’orso e annulla gli effetti di questa capacità. L’Impero ha affrontato spesso gli isolani delle Skellige e abbiamo incontrato grandi guerrieri e temibili razziatori. Tuttavia non ho mai visto con i miei occhi un Berserker o un Grande Orso lanciato contro le forze Nilfgaardiane, immagino perché tali animali non sono adatti agli scontri navali. Un mio vecchio conoscente, inviato dal precedente Imperatore a stabilire una presenza sull’isola di Eyne, sosteneva di aver affrontato un Berseker in singolar tenzone. Molti di noi credevano che fosse stato semplicemente disattento nell’avvicinarsi a una tana di orsi, ma è difficile sapere la verità. Molte delle isole sono rocciose, ricoperte di foreste e vi sono numerosi luoghi dove potrebbe nascondersi un culto che venera gli orsi. — Glynnis var Treharne"
+            }
+        ],
+        "loot": [
+            "Carne Cruda (3d6)",
+            "GRANDE ORSO",
+            "Grasso d’Orso (1d6)",
+            "Pelle d’Orso (1d6/2)"
+        ],
+        "page": "206",
+        "source": "Tomo del Caos"
+    },
+    {
+        "name": "MARI LWYD",
+        "stats": {
+            "INT": "5",
+            "RIF": "10",
+            "DES": "10",
+            "FIS": "10",
+            "VEL": "5",
+            "EMP": "3",
+            "MAN": "3",
+            "VOL": "8",
+            "GRI": "9",
+            "COR": "15",
+            "BAL": "3",
+            "RES": "45",
+            "ING": "100",
+            "REC": "9",
+            "PS": "90"
+        },
+        "meta": {
+            "Armatura": "5",
+            "Rigenerazione": "—",
+            "Altezza": "2,5 m",
+            "Peso": "135 kg",
+            "Ambiente": "Ovunque venga evocato",
+            "Organizzazione": "Solitario",
+            "Ricompensa": "1500 Corone"
+        },
+        "skills": {
+            "Accortezza": "16",
+            "Atletica": "18",
+            "Coraggio": "—",
+            "Inganno": "16",
+            "Intimidire": "16",
+            "Nascondersi": "16",
+            "Prestanza": "18",
+            "Resistere alla Magia": "20",
+            "Rissa": "18",
+            "Sopravvivenza": "16"
+        },
+        "resistances": "MAN 3 — VOL 8",
+        "immunities": "Congelamento, Individuazione Magica, Paura, Sanguinamento, Veleno",
+        "vulnerabilities": "RES 45 Unguento Anti-Spettri, Bombe al Dimeritium, Bombe Polvere Lunare",
+        "attacks": [
+            {
+                "name": "Morso",
+                "base": "18",
+                "type": "P",
+                "damage": "5d6+4",
+                "reliability": "10",
+                "effects": "100m Congelamento (100%), Trapassare Migliorato",
+                "num_attacks": "1"
+            },
+            {
+                "name": "Frusta Spinale",
+                "base": "18",
+                "type": "C",
+                "damage": "4d6+4",
+                "reliability": "20",
+                "effects": "100m Vacillante (30%)",
+                "num_attacks": "3"
+            },
+            {
+                "name": "Schianto",
+                "base": "18",
+                "type": "C",
+                "damage": "4d6+4",
+                "reliability": "15",
+                "effects": "— Vacillante (50%)",
+                "num_attacks": "1"
+            }
+        ],
+        "capacities": [
+            {
+                "name": "Collo Retrattile",
+                "description": "Se la Frusta Spinale viene parata o ridotta ad Aff 0, il collo del mari lwyd si spezza privandolo della possibilità di usare Frusta Spinale o Mutaforma. Testa e corpo agiscono separatamente alla medesima Iniziativa e il collo si ritrae nel torace. La testa può usare il Morso (ma solo in mischia) e fluttua alla normale VEL del mostro. Il corpo impiega lo Schianto. Un colpo contro la testa subisce le normali penalità per un attacco mirato. Le due metà del demone condividono la riserva di PS e possono usare la capacità Aura Gelida in maniera indipendente. Se le due parti sono adiacenti, il demone può utilizzare un Round per riattaccarsi la testa con un nastro di seta, riportando la Frusta Spinale ad Aff 20. Quando effettua un Movimento, un mari lwyd può estendere il proprio collo per 10m in ogni direzione, a prescindere dalla posizione del corpo. Inoltre, quando impiega Morso o Frusta Spinale per colpire a distanza, il collo si allunga quanto necessario e la testa rimane vicina al bersaglio. Se questa è ancora attaccata, il mari lwyd può usare un’Azione per ritrarla fino al proprio corpo. Per fare ciò mentre qualcuno è in Lotta con la testa o il collo, il demone deve vincere una prova contrapposta di Prestanza. In caso di fallimento non può ritirarla."
+            },
+            {
+                "name": "Aura Gelida",
+                "description": "Capacità: Mutaforma Un mari lwyd emana un’aura di gelo soprannaturale. Chi inizia il proprio Turno in mischia con il demone ha una probabilità del 50% di restare Congelato. Inoltre, se all’inizio del proprio Turno, il mari lwyd sta andando A Fuoco, le fiamme si spengono automaticamente, senza causargli danni. Questa Capacità non funziona nell’area d’effetto di una Bomba al Dimeritium. Un mari lwyd può imitare alla perfezione ogni voce. Inoltre, finché ha più di 50 PS, è in grado di assumere la forma di un umanoide che ha ucciso, senza usare alcuna Azione. Mentre è camuffato può usare solo lo Schianto e riesce a sopprimere la sua Aura Gelida. Se ridotto a 50 PS o meno, il mari lwyd è costretto a tornare alla sua vera forma. Questa Capacità non funziona nell’area d’effetto di una Bomba al Dimeritium. Forma Alternativa: Mari Lwyd Maggiore Un mari lwyd maggiore ha 40 Punti Salute, la sua Frusta Spinale ha N°Att 4 e l’Aura Gelida una probabilità del 100% di Congelare."
+            }
+        ],
+        "loot": [
+            "SUPERSTIZIONE COMUNE (ISTRUZIONE CD 16)",
+            "Essenza di Wraith (2d6)",
+            "Se, nel cuore della notte, sentite un coro inquietante fuori dalla vostra porta, sbarratela e tappatevi le orecchie. Giuro, è il miglior consiglio che posso darvi, eh. I mari lwyd sono demoni che divorano chi nega loro ospitalità. Vagano, chiedendo cibo e birra, un posto accanto al fuoco o robe simili. Se aprite e poi li cacciate, allora vi marchieranno. Il peggio è che hanno ‘sta capacità di possedere la gente. Se non li fate entrare, allora prenderanno il controllo di uno dei vostri vicini e vi implore- ranno di accoglierli. — Rodolf Kazmer",
+            "Ossa di Bestia (1d10)",
+            "Polvere Infusa (1d10)",
+            "Polvere di Spettro (1d6)",
+            "Seta (1d10)",
+            "Teschio di Mari Lwyd (1)",
+            "Runa Zoria (1)"
+        ],
+        "page": "208",
+        "source": "Tomo del Caos"
+    },
+    {
+        "name": "PENITENTE",
+        "stats": {
+            "INT": "6",
+            "RIF": "8",
+            "DES": "8",
+            "FIS": "8",
+            "VEL": "6",
+            "EMP": "1",
+            "MAN": "1",
+            "VOL": "8",
+            "GRI": "8",
+            "COR": "18",
+            "BAL": "3",
+            "RES": "40",
+            "ING": "80",
+            "REC": "8",
+            "PS": "80"
+        },
+        "meta": {
+            "Armatura": "0",
+            "Rigenerazione": "—",
+            "Altezza": "2,2 m",
+            "Peso": "90 kg",
+            "Ambiente": "Ovunque venga evocato",
+            "Organizzazione": "Solitario",
+            "Ricompensa": "800 Corone"
+        },
+        "skills": {
+            "Accortezza": "16",
+            "Atletica": "14",
+            "Coraggio": "—",
+            "Intimidire": "17",
+            "Lanciare Incantesimi": "17",
+            "Nascondersi": "17",
+            "Prestanza": "15",
+            "Resistere alla Magia": "15",
+            "Rissa": "15",
+            "Sopravvivenza": "12"
+        },
+        "resistances": "MAN 1 — VOL 8",
+        "immunities": "Ammaliamento, Coercizione, Malattie, Paura, Sanguinamento, Veleno",
+        "vulnerabilities": "RES 40 Unguento Anti-Spettri, Bombe Polvere Lunare, Segno Yrden",
+        "attacks": [],
+        "capacities": [
+            {
+                "name": "Nebbia Sovrannaturale",
+                "description": "Capacità: Suddividersi Come Azione, un penitente può suddividersi in quattro wraith, con PS pieni, che appaiono entro 10m dalla sua posizione. Queste copie agiscono all’Iniziativa del penitente, che le controlla. Il penitente non subisce danni dagli attacchi contro i wraith, ma quando tutti e quattro vengono uccisi deve ritornare alla sua forma originale e, se la nebbia è stata dispersa, subisce 20 danni. Una volta costretto a riformarsi, il penitente non può suddividersi per 3 Round. Questa Capacità non può essere usata nell’area d’effetto di una Bomba al Dimeritium. Quando il penitente appare, un’area del raggio di 50m attorno alla sua preda o al luogo del crimine viene coperta da una fitta nebbia sovrannaturale. Chi si trova all’interno, eccetto il penitente e i suoi wraith, non vede nulla a più di 4m di distanza. Finché resta nella nebbia, il penitente non subisce alcun danno. L’unico modo per dissipare la nube è che la preda vi accenda un gran fuoco all’interno. Finché le fiamme ardono e la vittima rimane nei pressi, la nebbia non si riforma."
+            },
+            {
+                "name": "Sfocato",
+                "description": "Capacità: Teletrasporto Un penitente può usare Lanciare Incantesimi per difendersi da un attacco e divenire incorporeo. Se ha successo nega l’attacco e nessun effetto fisico può toccarlo fino al suo Turno successivo. Questa Capacità non può essere usata nell’area d’effetto di una Bomba Polvere Lunare o del Segno Yrden. Un penitente può usare la propria Azione di Movimento per teletrasportarsi istantaneamente di 10m. Questa Capacità non può essere usata nell’area d’effetto di una Bomba al Dimeritium o di una Bomba Polvere Lunare."
+            }
+        ],
+        "loot": [
+            "SUPERSTIZIONE COMUNE (ISTRUZIONE CD 18)",
+            "Essenza di Wraith (1d6)",
+            "Un penitente è un cacchio di demone che perseguita chi ha commesso un crimine. Eh, la gente dice che se ammazzi qualcuno a sangue freddo o fai altre stronzate vicino a una fonte di magia, tipo un luogo di potere, sarai inseguito da uno di questi bastardi. Quando appare, il penitente ricopre tutto di nebbia e ombre, così non puoi scappare, e poi ti strappa l’anima. Secondo le vecchie leggen- de elfiche nascondono le anime che hanno preso nelle lanterne e, un po’ alla volta, le consumano, succhiano il loro potere, insomma le divorano. Eh, quel che so è che quando cala la nebbia è meglio avere una Bomba al Dimeritium pronta, oppure sei fottuto. — Rodolf Kazmer",
+            "Polvere Infusa (1d6)",
+            "Polvere di Spettro (1d6)",
+            "Runa Casuale (1)"
+        ],
+        "page": "210",
+        "source": "Tomo del Caos"
+    }
+]

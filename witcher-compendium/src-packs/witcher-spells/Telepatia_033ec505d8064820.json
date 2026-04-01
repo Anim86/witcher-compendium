@@ -1,0 +1,28 @@
+{
+    "_id": "033ec505d8064820",
+    "name": "Telepatia",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Telepatia consente all’incantatore di comunica- re telepaticamente con un singolo soggetto per la durata dell’incantesimo. La telepatia non è ostacolata da barrie- re linguistiche.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "10m",
+        "duration": "Attiva (1 RES)",
+        "effect": "<p>Telepatia consente all'incantatore di comunicare telepaticamente con un singolo soggetto per la durata dell'incantesimo. La telepatia non è ostacolata da barriere linguistiche.</p>",
+        "sourcebook": "MB 15",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

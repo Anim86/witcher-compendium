@@ -1,0 +1,33 @@
+{
+    "_id": "1d38b8f9c55f420d",
+    "name": "Costoliere",
+    "type": "weapon",
+    "img": "icons/svg/sword.svg",
+    "system": {
+        "description": "<p>Farsetto protettivo halfling Brache a doppia trama Liuto Confondersi 6 Libro in codice delle amanti Acqua di colonia Superalcolici Abiti eleganti Diffondere la Parola 7 Adattarsi 6 Occorrente per scrivere Diario Mazzo di Gwent (Il Nord) Tasca segreta Avvelenare il Pozzo 9 Bandoliera Inchiostro invisibile Kit per il trucco Specchietto Pungolare 8 Dadi truccati Arnesi da scasso Mappa del Continente Acciarino Tu Quoque Brute 7</p>",
+        "weight": 1.0,
+        "cost": 350,
+        "damage": "2d6+2",
+        "reliability": {
+            "value": 10,
+            "max": 10
+        },
+        "accuracy": 1,
+        "hands": 1,
+        "reach": "N/A",
+        "effects": "Sanguinamento (25%)",
+        "sourcebook": "MB 16"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

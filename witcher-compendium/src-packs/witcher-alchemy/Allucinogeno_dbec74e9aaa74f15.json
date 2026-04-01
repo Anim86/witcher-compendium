@@ -1,0 +1,28 @@
+{
+    "_id": "dbec74e9aaa74f15",
+    "name": "Allucinogeno",
+    "type": "alchemical",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag145_Sostanze Alchemiche_01.png",
+    "system": {
+        "description": "<p>Mi sa che somiglia molto a quella pozione da witcher, il gabbiano bianco. Ti fa vedere della roba strana. Non è al- trettanto potente, ma non è velenoso.</p>",
+        "weight": 0.1,
+        "cost": 25,
+        "toxicity": "0%",
+        "duration": "N/A",
+        "effect": "<p>Aard scaglia un'ondata di forza telecinetica che rende vacillanti le creature e ha il 10% di possibilità che i bersagli cadano a terra. La percentuale aumenta del 10% per ogni punto RES speso.</p>",
+        "sourcebook": "MB 89",
+        "source": "MB 89"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

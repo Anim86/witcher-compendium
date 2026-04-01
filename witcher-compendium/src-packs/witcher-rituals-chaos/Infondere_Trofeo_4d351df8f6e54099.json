@@ -1,0 +1,30 @@
+{
+    "_id": "4d351df8f6e54099",
+    "name": "Infondere Trofeo",
+    "type": "ritual",
+    "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag104_Rituali_01.png",
+    "system": {
+        "description": "<p>. Se ha già ottenuto questo risultato deve tirare di nuovo. 4 Alchimia Zerrikaniana Il PG studia l’alchimia praticata dagli studiosi Zerrikaniani. Inizia la partita conoscendo la formula del Fuoco di Zerrikania. 5 Segni e Presagi Osservando il futuro, il PG scopre un evento che deve ostacolare o favorire. Giocatore e GM decidono di cosa si tratta. La visione è simbolica e metaforica. 6 Enciclopedia Arcana Il PG passa il decennio a studiare le leggi del Caos, la sua evoluzione e i vari utilizzi. Ottiene +2 ad Arte del Mago. Se ha già ottenuto questo risultato deve tirare di nuovo. 7 Studio delle Linee Geomantiche Per dieci anni, il PG esamina le Linee Geomantiche del Continente. Ottiene un bonus di +2 quando tenta di trarre potere da una di esse e inizia la partita con l’Incantesimo Individuare Linee Geomantiche. 8 Assistente del Professore Il PG lavora come aiutante di un professore o del suo mentore. Grazie a tale esperienza, dimezza il numero di prove che deve eseguire per insegnare un Incantesimo a un altro mago. 9 Apprendista Alchimista Il PG studia i più grandi misteri dell’alchimia. Ottiene due Formule Alchemiche da Novizio e +1 ad Alchimia. 10 Esperto Divinatore Il PG si è tuffato nello studio di divinazione e chiromanzia. Ottiene uno dei seguenti Rituali: Idromanzia, Oniromanzia, Piromanzia o Tiromanzia.</p>",
+        "weight": 0,
+        "cost": 3,
+        "prepTime": "10 Round",
+        "difficulty": "14",
+        "duration": "Istantanea",
+        "components": "Trofeo di Mostro (×1), Cerume di Orco (×1), Erbe da Concia (×10), Grasso di Estere (×2), Polvere Infusa (×1), Quintessenza (×1)",
+        "effect": "<p>una volta preparati e impagliati adeguatamente i resti di un mostro, questo rituale permette di sfruttare la fisiologia aliena per incanalare la magia. Così facendo, diventa un trofeo magico, che fornisce i benefici indicati a pag. 124, ma solo alle persone che hanno contribuito a uccidere la creatura.</p>",
+        "sourcebook": "TC 105",
+        "source": "TC 105"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

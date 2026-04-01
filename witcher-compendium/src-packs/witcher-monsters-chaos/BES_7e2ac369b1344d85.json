@@ -1,0 +1,146 @@
+{
+    "_id": "7e2ac369b1344d85",
+    "name": "BES",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag202_Bes_01.png",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "ref": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "dex": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "body": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "spd": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "emp": {
+                "value": 2,
+                "max": 2,
+                "unmodifiedMax": 2
+            },
+            "cra": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "will": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 10
+            },
+            "atletica": {
+                "value": 20
+            },
+            "coraggio": {
+                "value": 0
+            },
+            "intimidire": {
+                "value": 19
+            },
+            "lanciareincantesimi": {
+                "value": 18
+            },
+            "nascondersi": {
+                "value": 12
+            },
+            "prestanza": {
+                "value": 20
+            },
+            "resistereallamagia": {
+                "value": 20
+            },
+            "rissa": {
+                "value": 20
+            },
+            "sopravvivenza": {
+                "value": 12
+            }
+        },
+        "details": {
+            "biography": "<p>Ovunque venga evocato</p><h3>Capacità Speciali</h3><p><strong>Possessione:</strong> Capacità: Sangue Bollente Quando una creatura posseduta da un bes subisce danni da un’arma Perforante o Tagliente, l’attaccante viene colpito da un getto di sangue surriscaldato, che causa 5 danni al Torso e rimuove 1 punto di armatura, a prescindere dal fatto che la superi o no. Come Azione, il bes può tentare di possedere una creatura con cui è in mischia, effettuando una prova contrapposta di Lanciare Incantesimi contro Resistere alla Magia. Se ha successo, il demone prende il controllo del corpo della vittima, che ottiene i valori di RIF e DES del bes. Ciò non altera le Statistiche Derivate. La vittima ottiene anche la Capacità Sangue Bollente. Finché è posseduto dal bes, lo sfortunato non ha il controllo del proprio corpo, ma rimane consapevole di quanto gli accade intorno. Ci sono tre modi per scacciare il demone: ridurre la vittima sotto la sua Soglia di Ferite; un Mago, Prete o Druido deve compiere un esorcismo spendendo 10 RES e superando una Prova di Lanciare Incantesimi CD 20; oppure la vittima deve bere un Elisir Cerebrale. Un bes non può usare questa Capacità quando si trova nell’area dell’effetto di una Bomba al Dimeritium. Il bes non subisce danno dagli attacchi contro la creatura posseduta. Forma Alternativa: Bes Maggiore Gli Artigli di un bes maggiore hanno N°Att 3; inoltre la creatura ha RIF e DES 14 e la sua Capacità Sangue Bollente rimuove 3 punti di armatura, invece di 1.</p>",
+            "threat": "Arduo",
+            "reward": 1500
+        },
+        "derivedStats": {
+            "health": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "stamina": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "vigor": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "rec": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "resolve": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "stun": {
+                "value": 1,
+                "max": 1
+            },
+            "woundTreshold": {
+                "value": 0,
+                "max": 0
+            }
+        },
+        "description": "<p>Ceneri (2d10)</p>",
+        "notes": [
+            {
+                "title": "Descrizione",
+                "details": "<p>Un amalgama di corpi è un golem non-senziente formato da cadaveri parzialmente rianimati. Molti necromanti li usano come guardie del corpo, altri come assistenti. In combattimento, un amalgama colpisce tutto ciò che vede con le sue molte braccia, fermandosi solo di tanto in tanto per emettere un terribile lamento, che stordisce le vittime. Essendo non-morti, non possono guarire, ma sono immuni a veleno, sanguinamento e ogni tipo di effetto mentale. Inoltre, a causa delle dimensioni e dei molteplici arti, non è possibile gettarli a terra. Per assurdo, il loro punto di forza è anche il modo più facile per ucciderli. Infliggere colpi critici e rimuovere parte dei corpi dall'amalgama, indebolisce rapidamente la creatura, ma l'anima che abita un corpo rimosso si manifesta subito come un wraith rabbioso, che attacca il suo liberatore. Una volta eliminato l'amalgama, i wraith possono rivelarsi un pericolo ben più grande. Infine, occorre ricordare che l'amalgama può, per pochi attimi, recuperare l'intelligenza di una delle anime intrappolate al suo interno. Quando si trova di fronte a porte chiuse, enigmi o un avversario che non può raggiungere, l'amalgama riesce a recuperare</p>"
+            }
+        ],
+        "sourcebook": "TC 197"
+    },
+    "items": [],
+    "effects": [],
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

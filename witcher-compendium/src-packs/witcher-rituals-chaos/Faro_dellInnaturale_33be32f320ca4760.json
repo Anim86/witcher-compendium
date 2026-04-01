@@ -1,0 +1,30 @@
+{
+    "_id": "33be32f320ca4760",
+    "name": "Faro dell’Innaturale",
+    "type": "ritual",
+    "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag104_Rituali_01.png",
+    "system": {
+        "description": "<p>Nebbia del Passato Registro Magico degli Ospiti Rituali da Maestro Creare Luogo di Potere Incantare Amuleto</p>",
+        "weight": 0,
+        "cost": 12,
+        "prepTime": "15 Round",
+        "difficulty": "18",
+        "duration": "finché il totem non è distrutto",
+        "components": "Mutageno (×1), Legname Indurito (×4), Ossa di Bestia (×5), Quintessenza (×1)",
+        "effect": "<p>il ritualista costruisce un macabro totem, contenente un mutageno infuso di Quintessenza che diviene un'esca per i mostri. Al termine del Rituale, il Faro dell'Innaturale richiama tutti i mostri nel raggio di 1,6km, che faranno il nido nei pressi. Il richiamo diventa più forte con il tempo, aumentando il raggio di altri 1,6km ogni anno. Il Faro è alto 2m e ha 20 Punti Salute.</p>",
+        "sourcebook": "TC 105",
+        "source": "TC 105"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

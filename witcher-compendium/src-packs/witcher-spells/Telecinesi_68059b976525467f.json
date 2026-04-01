@@ -1,0 +1,28 @@
+{
+    "_id": "68059b976525467f",
+    "name": "Telecinesi",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Telecinesi permette all’incantatore di sollevare e maneggiare un oggetto (fino a 5 ING per ogni punto posseduto in Lanciare Incantesimi) come se lo tenesse in mano.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "5m",
+        "duration": "Attiva (2 RES)",
+        "effect": "<p>Telecinesi permette all'incantatore di sollevare e maneggiare un oggetto (fino a 5 ING per ogni punto posseduto in Lanciare Incantesimi) come se lo tenesse in mano.</p>",
+        "sourcebook": "MB 105",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "_id": "ab2205cf68c1454b",
+    "name": "Manipolazione Mentale",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Manipolazione Mentale costringe un bersaglio a provare una delle seguenti emozioni per tutta la durata dell’incantesimo: odio, amore, depressione o euforia.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "5m",
+        "duration": "1d10 Round",
+        "effect": "<p>Manipolazione Mentale costringe un bersaglio a provare una delle seguenti emozioni per tutta la durata dell'incantesimo: odio, amore, depressione o euforia.</p>",
+        "sourcebook": "MB 103",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

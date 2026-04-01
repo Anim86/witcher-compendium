@@ -1,0 +1,28 @@
+{
+    "_id": "90697777a5c649bd",
+    "name": "Tempesta di Fulmini",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Questo incantesimo consente all’incantatore di creare una tempesta di fulmini nell’area. Esiste il 35% di probabilità che chiunque si trovi nella zona sia colpito da un fulmine (eccetto l’incantatore). Chi vie- ne colpito deve superare una prova di Eludere o subire 8d6 danni al torso con il 75% di probabilità di subire l’effetto A Fuoco.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "",
+        "duration": "Attiva (6 RES)",
+        "effect": "<p>Questo incantesimo consente all'incantatore di creare una tempesta di fulmini nell'area. Esiste il 35% di probabilità che chiunque si trovi nella zona sia colpito da un fulmine (eccetto l'incantatore). Chi viene colpito deve superare una prova di Eludere o subire 8d6 danni al torso con il 75% di probabilità di subire l'effetto A Fuoco.</p>",
+        "sourcebook": "MB 109",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

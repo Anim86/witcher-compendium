@@ -1,0 +1,28 @@
+{
+    "_id": "8b218f777b894a5f",
+    "name": "Fortificazione Sacra",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Fortificazione Sacra rinforza la volontà del ber- saglio e gli consente di effettuare una nuova prova contro l’effetto di qualsiasi incantesimo che lo influenza.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "10m",
+        "duration": "",
+        "effect": "<p>Fortificazione Sacra rinforza la volontà del bersaglio e gli consente di effettuare una nuova prova contro l'effetto di qualsiasi incantesimo che lo influenza.</p>",
+        "sourcebook": "MB 111",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

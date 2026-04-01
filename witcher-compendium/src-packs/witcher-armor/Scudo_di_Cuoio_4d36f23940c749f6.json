@@ -1,0 +1,29 @@
+{
+    "_id": "4d36f23940c749f6",
+    "name": "Scudo di Cuoio",
+    "type": "armor",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag082_Armature_01.png",
+    "system": {
+        "description": "<p>4 D 0 0,5 50 Brocchiero d'Acciaio 6 C 0 1 150 Scudo Temeriano 8 C 0 1,5 225 Scudi Medi Scudo da Razziatore Skellige 10 S 0 2 325 Scudo Kaedweni 14 S 0 2,5 400 Scudo d'Acciaio a Goccia 16 C 0 3 400 Scudi Pesanti Palvese 20 S Riparo Completo 1 4 500 Palvese Nilfgaardiano 25 R Riparo Completo 1 5 650</p>",
+        "weight": 0.5,
+        "cost": 50,
+        "stoppingPower": 0,
+        "reliability": {
+            "value": 4,
+            "max": 4
+        },
+        "sourcebook": "MB 82"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

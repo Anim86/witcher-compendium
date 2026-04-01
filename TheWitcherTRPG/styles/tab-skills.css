@@ -1,0 +1,154 @@
+.grow>div {
+    flex-grow: 1;
+}
+
+.skills-stats-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.skill-column {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid darkgray;
+    width: 100%;
+
+    h1 {
+        border: none;
+    }
+
+    summary {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        border-bottom: 2px solid var(--color-underline-header);
+
+        span {
+            font-size: 24px;
+        }
+    }
+}
+
+
+.char-skill {
+    padding: 0em;
+}
+
+.table-skills {
+    min-width: 175px;
+
+    border: none;
+    background: none;
+}
+
+.char-skill a {
+    font-size: 12px;
+    display: flex;
+    background-color: darkred;
+    border-radius: 12px;
+    color: white;
+    padding: 4px;
+    border-style: solid;
+    height: 30px;
+}
+
+.char-skill:hover {
+    outline: none;
+    border-color: #9ecaed;
+    box-shadow: 0 0 10px #9ecaed;
+}
+
+.char-input-skill {
+    width: 10px;
+}
+
+.char-input-skill-icon {
+    width: 10px;
+}
+
+.char-input-skill input {
+    font-weight: bold;
+    width: 30px;
+    text-align: center;
+}
+
+.skill-info {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.tab.skill-info {
+    display: none;
+}
+
+.tab.skill-info.active {
+    display: flex;
+}
+
+.skill-ip {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: light-dark(#22222210, #e7d1b110);
+    border: 1px solid light-dark(#22222240, #e7d1b140);
+    border-radius: 10px;
+    padding: 10px;
+    color: light-dark(black, white);
+    flex: 1;
+    width: 100%;
+
+    .current-ip {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    span {
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+    }
+
+    .IP-value {
+        font-weight: bold;
+        width: 5ch;
+        text-align: center;
+    }
+
+    .skillTraining {
+        display: flex;
+        gap: 5px;
+    }
+
+    .extra-skill-value {
+        font-weight: bold;
+        width: 8ch;
+        text-align: center;
+        min-width: 30px;
+    }
+}
+
+.total-skills {
+    width: 5ch;
+    font-weight: bold;
+    text-align: center;
+}
+
+.learned-skilled a {
+    background-color: darkolivegreen
+}
+
+.not-skilled a {
+    background-color: saddlebrown
+}
+
+input[type="checkbox"].skill-checkbox {
+    height: 15px;
+    width: 15px;
+    margin-left: 0px;
+}

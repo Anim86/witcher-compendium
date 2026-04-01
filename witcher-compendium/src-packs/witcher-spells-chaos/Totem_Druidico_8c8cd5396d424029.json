@@ -1,0 +1,32 @@
+{
+    "_id": "8c8cd5396d424029",
+    "name": "Totem Druidico",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag101_Invocazioni da Druido_01.png",
+    "system": {
+        "description": "<p>Costo in RES: 14 Effetto: usando questa invocazione, il Druido trasfor- ma il suo bastone in un totem che lo collega al mon- do naturale. Durante il lancio, occorre conficcare nel terreno il focus ottenuto con Rito della Quercia e del Vischio. Questo diviene un totem alto 2m, con 20 Punti Salute e simile alla vegetazione locale. Finché si trova entro 1,6km da esso, il Druido è sempre conside- rato avere con sé un Focus (4) e tutti gli animali sono amichevoli verso di lui e i suoi alleati. Inoltre ottiene ulteriori benefici in base al tipo di terreno in cui sorge il totem, come indicato sotto. Si può mantenere un solo totem alla volta e crearne uno nuovo rende il preceden- te una comune pianta. ◆ Campo: la VEL del Druido diventa 12. ◆ Costa: il Druido può respirare sott’acqua e non subi- sce penalità in tale ambiente. ◆ Deserto: il Druido è immune al Caldo Estremo e ri- esce sempre a trovare fonti d’acqua. Una volta al gior- no, bere dell’acqua raccolta nell’area del totem gli fa recuperare tutta la RES persa. ◆ Foresta: consumare i frutti cresciuti entro 1,6 km dal totem conferisce per un’ora Rigenerazione 3 al Druido. ◆ Montagna: il Druido è Resistente ai danni contun- denti, perforanti e taglienti. ◆ Palude: il Druido è immune agli effetti Avvelenato e Malato. ◆ Sottoterra: il Druido ottiene Vista Notturna Superiore (annulla le penalità per l’oscurità) e +4 alle prove di Nascondersi. ◆ Tundra: il Druido è immune a Ghiaccio e Neve e non può andare A Fuoco o essere Congelato. Ottiene Resistenza ai danni da fuoco e ghiaccio. Portata: 2m Durata: Istantanea Difese: Nessuna</p>",
+        "weight": 0,
+        "cost": 14,
+        "range": "2m",
+        "duration": "Istantanea",
+        "defense": "Nessuna",
+        "tier": "Novizio",
+        "subtype": "Misto",
+        "category": "Druido",
+        "effect": "<p>usando questa invocazione, il Druido trasforma il suo bastone in un totem che lo collega al mondo naturale. Durante il lancio, occorre conficcare nel terreno il focus ottenuto con Rito della Quercia e del Vischio. Questo diviene un totem alto 2m, con 20 Punti Salute e simile alla vegetazione locale. Finché si trova entro 1,6km da esso, il Druido è sempre considerato avere con sé un Focus (4) e tutti gli animali sono amichevoli verso di lui e i suoi alleati. Inoltre ottiene ulteriori benefici in base al tipo di terreno in cui sorge il totem, come indicato sotto. Si può mantenere un solo totem alla volta e crearne uno nuovo rende il precedente una comune pianta. ◆ Campo: la VEL del Druido diventa 12. ◆ Costa: il Druido può respirare sott'acqua e non subisce penalità in tale ambiente. ◆ Deserto: il Druido è immune al Caldo Estremo e riesce sempre a trovare fonti d'acqua. Una volta al giorno, bere dell'acqua raccolta nell'area del totem gli fa recuperare tutta la RES persa. ◆ Foresta: consumare i frutti cresciuti entro 1,6 km dal totem conferisce per un'ora Rigenerazione 3 al Druido. ◆ Montagna: il Druido è Resistente ai danni contundenti, perforanti e taglienti. ◆ Palude: il Druido è immune agli effetti Avvelenato e Malato. ◆ Sottoterra: il Druido ottiene Vista Notturna Superiore (annulla le penalità per l'oscurità) e +4 alle prove di Nascondersi. ◆ Tundra: il Druido è immune a Ghiaccio e Neve e non può andare A Fuoco o essere Congelato. Ottiene Resistenza ai danni da fuoco e ghiaccio.</p>",
+        "sourcebook": "TC 98",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

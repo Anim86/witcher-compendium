@@ -1,0 +1,32 @@
+{
+    "_id": "c779b560b13d4b17",
+    "name": "Venti della Taiga (Gwyn Carn)",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag083_Incantesimi da Mago_01.png",
+    "system": {
+        "description": "<p>Costo in RES: 16 Effetto: questa invocazione richiama i venti invernali dell’Estremo Nord, creando una tempesta che proteg- ge il Druido, getta Neve e Ghiaccio nell’area d’effetto e causa Accecato a chiunque altro. Un qualsiasi nu- mero di creature scelte dal Druido non vengono col- pite da questi effetti, anzi i loro attacchi infliggono Congelamento con una probabilità del 50%. Portata: 1,6km di raggio Durata: 1 ora Difese: Nessuna Santuario del Bosco Nero (Caed Myrkvid) Costo in RES: 16 Effetto: Santuario del Bosco Nero consente al Druido e a un qualsiasi numero di alleati da lui scelti di entrare in contatto con gli alberi nel raggio di 1,6km. Il Druido può toccare un albero e vedere attraverso tutti gli altri presenti nell’area, simultaneamente o concentrandosi su un punto specifico. Inoltre tutte le creature designate possono teletrasportarsi da un albero all’altro all’interno dell’area. Gli alleati non possono vedere cosa c’è intorno al punto d’arrivo ma possono sceglierlo liberamente. Portata: 1,6km di raggio Durata: 1 ora Difese: Nessuna</p>",
+        "weight": 0,
+        "cost": 16,
+        "range": "1,6km di raggio",
+        "duration": "1 ora",
+        "defense": "Nessuna",
+        "tier": "Novizio",
+        "subtype": "Misto",
+        "category": "Druido",
+        "effect": "<p>questa invocazione richiama i venti invernali dell'Estremo Nord, creando una tempesta che protegge il Druido, getta Neve e Ghiaccio nell'area d'effetto e causa Accecato a chiunque altro. Un qualsiasi numero di creature scelte dal Druido non vengono colpite da questi effetti, anzi i loro attacchi infliggono Congelamento con una probabilità del 50%.</p>",
+        "sourcebook": "TC 102",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

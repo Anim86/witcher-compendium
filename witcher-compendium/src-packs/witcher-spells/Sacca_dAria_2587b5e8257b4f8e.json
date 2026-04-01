@@ -1,0 +1,28 @@
+{
+    "_id": "2587b5e8257b4f8e",
+    "name": "Sacca d’Aria",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Sacca d’Aria consente di creare una sacca d’aria fresca sott’acqua o in un’area dove normalmente non si trova aria pura. Questa sacca ha un raggio di 1m per la durata dell’incantesimo.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "12m",
+        "duration": "2d10 Round",
+        "effect": "<p>Sacca d'Aria consente di creare una sacca d'aria fresca sott'acqua o in un'area dove normalmente non si trova aria pura. Questa sacca ha un raggio di 1m per la durata dell'incantesimo.</p>",
+        "sourcebook": "MB 105",
+        "source": "Air"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

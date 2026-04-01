@@ -1,0 +1,28 @@
+{
+    "_id": "c55cae8b727e4361",
+    "name": "Petali di Mirto Bianco",
+    "type": "alchemical",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag145_Sostanze Alchemiche_02.png",
+    "system": {
+        "description": "<p>C Campi 1d10 Unità 12 0,1 8</p>",
+        "weight": 0.1,
+        "cost": 8,
+        "toxicity": "0%",
+        "duration": "N/A",
+        "effect": "<p>Aard scaglia un'ondata di forza telecinetica che rende vacillanti le creature e ha il 10% di possibilità che i bersagli cadano a terra. La percentuale aumenta del 10% per ogni punto RES speso.</p>",
+        "sourcebook": "MB 147",
+        "source": "MB 147"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

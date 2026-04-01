@@ -1,0 +1,28 @@
+{
+    "_id": "b78e0c561c15484d",
+    "name": "Tecnica di Eilhart",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Orribile incantesimo, che prende il nome dalla sua creatrice Philippa Eilhart, consente di scavare nel- la mente del bersaglio e strapparne informazioni. Se il tiro di Lanciare Incantesimi ha successo, l’incantatore ricava un’informazione dal bersaglio. Se il tiro di difesa del bersaglio è un Disastro la sua INT è ridotta perma- nentemente di 1.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "3m",
+        "duration": "Istantanea",
+        "effect": "<p>Orribile incantesimo, che prende il nome dalla sua creatrice Philippa Eilhart, consente di scavare nella mente del bersaglio e strapparne informazioni. Se il tiro di Lanciare Incantesimi ha successo, l'incantatore ricava un'informazione dal bersaglio. Se il tiro di difesa del bersaglio è un Disastro la sua INT è ridotta permanentemente di 1.</p>",
+        "sourcebook": "MB 103",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

@@ -1,0 +1,20 @@
+<section class="{{item.type}} scrollable">
+    {{>"systems/TheWitcherTRPG/templates/partials/item-header.hbs"}}
+
+    <textarea rows="5" name="system.description">{{item.system.description}}</textarea>
+
+    <table>
+        <tr>
+            <th>{{localize "WITCHER.Mount.Dex"}}</th>
+            <th>{{localize "WITCHER.Mount.ControlMod"}}</th>
+            <th>{{localize "WITCHER.Mount.Speed"}}</th>
+            <th>{{localize "WITCHER.Mount.Hp"}}</th>
+        </tr>
+        <tr>
+            <td><input type="text" name="system.dex" value="{{item.system.dex}}" /></td>
+            <td><input type="text" name="system.control" value="{{item.system.control}}" /></td>
+            <td><input type="text" name="system.speed" value="{{item.system.speed}}" /></td>
+            <td><input type="text" name="system.hp" value="{{item.system.hp}}" data-dtype="Number" /></td>
+        </tr>
+    </table>
+</section>

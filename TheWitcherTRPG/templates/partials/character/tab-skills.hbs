@@ -1,0 +1,108 @@
+<section class="tab {{tabs.skills.cssClass}} scrollable standard-form" data-group="primary" data-tab="skills">
+    <nav class="sheet-tabs tabs">
+        {{#each skillTabs as |tab|}}
+            <a class="{{tab.cssClass}}" data-action="tab" data-group="skillTabs"
+                data-tab="{{tab.id}}">{{localize tab.label}}</a>
+        {{/each}}
+    </nav>
+
+    <section class="tab {{skillTabs.all.cssClass}}" data-group="skillTabs" data-tab="all">
+        {{#each system.skills as |skillsGroup skillKey|}}
+            <div class="skill-column">
+                <details open>
+                    <summary>
+                        <span>{{localize (concat "WITCHER.St" (capitalize skillKey) )}}</span>
+                        <a data-action="openModifiers" data-type="skill" data-skill-key="{{skillKey}}"><i
+                                class="fas fa-edit"></i></a>
+                    </summary>
+                    <div class="skills-stats-list">
+                        {{#each skillsGroup as |skill name|}}
+                            {{> "systems/TheWitcherTRPG/templates/partials/character/skill-display.hbs" 
+                        skill=skill name=name stat=skillKey}}
+                        {{/each}}
+
+                        {{#each (lookup ../customSkills skillKey)}}
+                            {{> "systems/TheWitcherTRPG/templates/partials/character/custom-skill-display.hbs"}}
+                        {{/each}}
+                    </div>
+                </details>
+            </div>
+        {{/each}}
+    </section>
+
+    {{#each system.skills as |skillsGroup skillKey|}}
+        <section class="tab skill-column {{lookup (lookup ../skillTabs skillKey) 'cssClass'}}" data-group="skillTabs"
+            data-tab="{{skillKey}}">
+            <details open>
+                <summary>
+                    <span>{{localize (concat "WITCHER.St" (capitalize skillKey) )}}</span>
+                    <a data-action="openModifiers" data-type="skill" data-skill-key="{{skillKey}}"><i
+                            class="fas fa-edit"></i></a>
+                </summary>
+                <div class="skills-stats-list">
+                    {{#each skillsGroup as |skill name|}}
+                        {{> "systems/TheWitcherTRPG/templates/partials/character/skill-display.hbs" 
+                    skill=skill name=name stat=skillKey}}
+                    {{/each}}
+
+                    {{#each (lookup ../customSkills skillKey)}}
+                        {{> "systems/TheWitcherTRPG/templates/partials/character/custom-skill-display.hbs"}}
+                    {{/each}}
+                </div>
+            </details>
+        </section>
+    {{/each}}
+
+    <section class="tab skill-info {{skillTabs.ip.cssClass}}" data-group="skillTabs" data-tab="ip">
+        <div class="skill-ip">
+            <span>
+                <span>{{localize "WITCHER.Actor.ImprovementPoints"}}</span>
+                <a class="open-rewards"><i class="fa-solid fa-clipboard-list"></i></a>
+            </span>
+            <div class="current-ip">
+                <label>{{localize "WITCHER.Actor.CurrentIP"}}</label>
+                <input class="IP-value" name="system.improvementPoints" type="number"
+                    value="{{system.improvementPoints}}" placeholder="0" data-dtype="Number" />
+                <a class="manualIpReward"><i class="fa-solid fa-plus"></i></a>
+            </div>
+            <div class="skillTraining">
+                <input class="extra-skill-name" name="system.skillTraining1.name" type="text"
+                    value="{{system.skillTraining1.name}}" placeholder='{{localize "WITCHER.Actor.SkillName"}}' />
+                <input class="extra-skill-value" name="system.skillTraining1.value" type="number"
+                    value="{{system.skillTraining1.value}}" placeholder="0" />
+                <a class="saveIpSpending"><i class="fa-solid fa-minus"></i></a>
+            </div>
+            <div class="skillTraining">
+                <input class="extra-skill-name" name="system.skillTraining2.name" type="text"
+                    value="{{system.skillTraining2.name}}" placeholder='{{localize "WITCHER.Actor.SkillName"}}' />
+                <input class="extra-skill-value" name="system.skillTraining2.value" type="number"
+                    value="{{system.skillTraining2.value}}" placeholder="0" />
+                <a class="saveIpSpending"><i class="fa-solid fa-minus"></i></a>
+            </div>
+            <div class="skillTraining">
+                <input class="extra-skill-name" name="system.skillTraining3.name" type="text"
+                    value="{{system.skillTraining3.name}}" placeholder='{{localize "WITCHER.Actor.SkillName"}}' />
+                <input class="extra-skill-value" name="system.skillTraining3.value" type="number"
+                    value="{{system.skillTraining3.value}}" placeholder="0" />
+                <a class="saveIpSpending"><i class="fa-solid fa-minus"></i></a>
+            </div>
+            <div class="skillTraining">
+                <input class="extra-skill-name" name="system.skillTraining4.name" type="text"
+                    value="{{system.skillTraining4.name}}" placeholder='{{localize "WITCHER.Actor.SkillName"}}' />
+                <input class="extra-skill-value" name="system.skillTraining4.value" type="number"
+                    value="{{system.skillTraining4.value}}" placeholder="0" />
+                <a class="saveIpSpending"><i class="fa-solid fa-minus"></i></a>
+            </div>
+        </div>
+
+        <div class="skill-column">
+            <div>
+                <b>{{localize "WITCHER.Actor.TotalSkill"}} <input class="total-skills" name="totalSkills" type="number"
+                        value="{{totalSkills}}" placeholder="0" readonly disabled /> </b>
+                <br />
+                <b>{{localize "WITCHER.Actor.TotalProfSkill"}} <input class="total-skills" name="totalProfSkills"
+                        type="number" value="{{totalProfSkills}}" placeholder="0" readonly disabled /> </b>
+            </div>
+        </div>
+    </section>
+</section>

@@ -1,0 +1,28 @@
+{
+    "_id": "290769e2377c4bcf",
+    "name": "Rhwystr Graig",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Rhwystr Graig permette di creare una parete di roccia di 2m per 3m, con 30 punti Pr, ovunque entro 3m dall’incantatore, orientato in qualsiasi direzione. Il muro permane fino alla sua distruzione.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "20m",
+        "duration": "Istantanea",
+        "effect": "<p>Rhwystr Graig permette di creare una parete di roccia di 2m per 3m, con 30 punti Pr, ovunque entro 3m dall'incantatore, orientato in qualsiasi direzione. Il muro permane fino alla sua distruzione.</p>",
+        "sourcebook": "MB 107",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "_id": "953a4fc785604a92",
+    "name": "Luce della Verità",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Luce della Verità consente al predicatore di cre- are una brillante luce bianca che costringe il bersaglio a parlare con sincerità. Il bersaglio deve effettuare una nuova prova ogni round. Se fallisce, deve rispondere sin- ceramente a qualsiasi domanda.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "5m",
+        "duration": "",
+        "effect": "<p>Luce della Verità consente al predicatore di creare una brillante luce bianca che costringe il bersaglio a parlare con sincerità. Il bersaglio deve effettuare una nuova prova ogni round. Se fallisce, deve rispondere sinceramente a qualsiasi domanda.</p>",
+        "sourcebook": "MB 111",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

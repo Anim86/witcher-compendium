@@ -1,0 +1,32 @@
+{
+    "_id": "307cd0f8d5814ff8",
+    "name": "Voce del Consigliere",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag083_Incantesimi da Mago_01.png",
+    "system": {
+        "description": "<p>Bleobheris Ombra di Bleobheris Gedyneith Pozzo di Conoscenza Invocazioni da Esperto Caed Myrkvid Santuario del Bosco Nero Impurità di Bigelow Sangue del Monte Gwyn Carn Venti della Taiga Sigillo della Caccia Invocazioni da Maestro Ira della Natura Totem Druidico</p>",
+        "weight": 0,
+        "cost": 3,
+        "range": "10m",
+        "duration": "10 minuti",
+        "defense": "Nessuna",
+        "tier": "Novizio",
+        "subtype": "Misto",
+        "category": "Druido",
+        "effect": "<p>Voce del Consigliere conferisce un tono ispirato alle parole del Druido. Per la durata dell'Invocazione, l'incantatore può far sì che la sua voce sia tanto stentorea da poter essere sentita a grande distanza, oppure che giunga come un sussurro all'orecchio di una sola creatura entro portata. Inoltre, ciò garantisce +4 alle prove d'Autorità.</p>",
+        "sourcebook": "TC 98",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

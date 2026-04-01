@@ -1,0 +1,28 @@
+{
+    "_id": "35f6f3d166f54604",
+    "name": "Benedizione d’Amore",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Benedizione d’Amore conferisce all’incantatore +3 a Carisma e Seduzione per la durata dell’invocazione.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "5m",
+        "duration": "",
+        "effect": "<p>Benedizione d'Amore conferisce all'incantatore +3 a Carisma e Seduzione per la durata dell'invocazione.</p>",
+        "sourcebook": "MB 111",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

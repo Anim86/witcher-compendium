@@ -1,0 +1,28 @@
+{
+    "_id": "d53f0fc6bdc740c1",
+    "name": "Grandinata di Carys",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Quest’incantesimo, che prende il nome dalla sua creatrice Carys di Cintra, scaglia chicchi di ghiac- cio a gran velocità contro un bersaglio. Per ogni punto con cui il tiro Lanciare Incantesimi supera Schivare o Bloccare del bersaglio (massimo 5), infligge 1d6 danni e ha il 35% di probabilità di congelarlo.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "5m",
+        "duration": "Istantanea",
+        "effect": "<p>Quest'incantesimo, che prende il nome dalla sua creatrice Carys di Cintra, scaglia chicchi di ghiaccio a gran velocità contro un bersaglio. Per ogni punto con cui il tiro Lanciare Incantesimi supera Schivare o Bloccare del bersaglio (massimo 5), infligge 1d6 danni e ha il 35% di probabilità di congelarlo.</p>",
+        "sourcebook": "MB 106",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

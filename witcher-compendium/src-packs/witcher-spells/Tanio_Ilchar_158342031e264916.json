@@ -1,0 +1,28 @@
+{
+    "_id": "158342031e264916",
+    "name": "Tanio Ilchar",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Tanio Ilchar crea uno scoppio di fuoco in un’a- rea di 2m x 2m e ha il 100% di probabilità d’infliggere l’effetto A Fuoco ai bersagli nell’area.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "8m",
+        "duration": "Istantanea",
+        "effect": "<p>Tanio Ilchar crea uno scoppio di fuoco in un'area di 2m x 2m e ha il 100% di probabilità d'infliggere l'effetto A Fuoco ai bersagli nell'area.</p>",
+        "sourcebook": "MB 18",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

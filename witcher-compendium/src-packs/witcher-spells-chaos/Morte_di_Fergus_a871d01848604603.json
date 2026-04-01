@@ -1,0 +1,32 @@
+{
+    "_id": "a871d01848604603",
+    "name": "Morte di Fergus",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag083_Incantesimi da Mago_01.png",
+    "system": {
+        "description": "<p>Recupero Alchemico Riaprire Portale Schermo Magico Incantesimi da Esperto Camera di Dormyn Bastione di Elgan Fulmine Globulare Forgia del Mago Arrugginire Compromettere Focus Frana di Bekker Nastro Invisibile Porta di Cenere Essenza della Pozione Laccio Spettrale Sciame di Javed Tocco Fulminante Tocco del Fabbro Invaerne Manto Portale Trappola Rafforzare Incantesimi da Maestro Rubare Incantesimo Modellare Terra Gwyntog Fuoco Vivente Estrazione di Ainfra Specchio Oscuro di Bekker Stasi Cristallina Mano della Tempesta Vampata del Korath Piena di Ys</p>",
+        "weight": 0,
+        "cost": 5,
+        "range": "2m",
+        "duration": "1 ora",
+        "defense": "Nessuna",
+        "tier": "Maestro",
+        "subtype": "Acqua",
+        "category": "Mago",
+        "effect": "<p>nessuno sa chi creò questo incantesimo, ma divenne famigerato per essere stato usato sull'Imperatore Fergus var Emreis quando fu detronizzato. Morte di Fergus evoca una serie di aghi magici che, seguendo gli ordini del mago, torturano la vittima. Per la durata dell'incantesimo, il mago può condurre interrogatori usando Lanciare Incantesimi invece di Intimidire.</p>",
+        "sourcebook": "TC 83",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "_id": "09ccebf23dd44e97",
+    "name": "Stiletto",
+    "type": "weapon",
+    "img": "icons/svg/sword.svg",
+    "system": {
+        "description": "<p>nilfgaardiano Tirapugni Coltelli da lancio ×5 Cloroformio Sacca da viaggio</p>",
+        "weight": 0.5,
+        "cost": 275,
+        "damage": "1d6",
+        "reliability": {
+            "value": 5,
+            "max": 5
+        },
+        "accuracy": 2,
+        "hands": 1,
+        "reach": "N/A",
+        "effects": "Occultabile",
+        "sourcebook": "MB 43"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

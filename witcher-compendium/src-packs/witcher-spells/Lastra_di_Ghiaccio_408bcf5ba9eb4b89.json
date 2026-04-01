@@ -1,0 +1,28 @@
+{
+    "_id": "408bcf5ba9eb4b89",
+    "name": "Lastra di Ghiaccio",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Lastra di Ghiaccio permette di creare un’area di ghiaccio di 2 metri quadrati. Chi mette piede in quest’a- rea deve superare una prova di Atletica con CD pari al risultato di Lanciare Incantesimi per non scivolare sul ghiaccio.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "10m",
+        "duration": "2d10 Round",
+        "effect": "<p>Lastra di Ghiaccio permette di creare un'area di ghiaccio di 2 metri quadrati. Chi mette piede in quest'area deve superare una prova di Atletica con CD pari al risultato di Lanciare Incantesimi per non scivolare sul ghiaccio.</p>",
+        "sourcebook": "MB 106",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

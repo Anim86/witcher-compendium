@@ -1,0 +1,32 @@
+{
+    "_id": "60f9c006bcff4a2d",
+    "name": "Tocco del Fabbro",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag083_Incantesimi da Mago_01.png",
+    "system": {
+        "description": "<p>Invaerne Manto Portale Trappola Rafforzare Incantesimi da Maestro Rubare Incantesimo Modellare Terra Gwyntog Fuoco Vivente Estrazione di Ainfra Specchio Oscuro di Bekker Stasi Cristallina Mano della Tempesta Vampata del Korath Piena di Ys</p>",
+        "weight": 0,
+        "cost": 10,
+        "range": "2m",
+        "duration": "Attiva (10 RES)",
+        "defense": "Schivare",
+        "tier": "Maestro",
+        "subtype": "Misto",
+        "category": "Mago",
+        "effect": "<p>Tocco del Fabbro focalizza la magia del fuoco nel metallo, così da poterlo manipolare a mani nude. Finché l'incantesimo è attivo, il mago può piegare e scolpire il metallo come fosse argilla. Inoltre, effettuando un attacco di Lotta, infligge 3d6 danni ablativi a un'armatura o all'Affidabilità di un'arma. Questo incantesimo non ha effetto sul Dimeritium.</p>",
+        "sourcebook": "TC 89",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

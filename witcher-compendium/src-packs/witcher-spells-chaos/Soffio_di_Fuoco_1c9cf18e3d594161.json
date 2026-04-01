@@ -1,0 +1,32 @@
+{
+    "_id": "1c9cf18e3d594161",
+    "name": "Soffio di Fuoco",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag086_Incantesimi da Mago_01.png",
+    "system": {
+        "description": "<p>Ragnatela di Ghiaccio Metodo di Savolla Pilastro di Terra Velo di Polvere Velo di Fuoco Respiro di Aurora Morte di Fergus Recupero Alchemico Riaprire Portale Schermo Magico Incantesimi da Esperto Camera di Dormyn Bastione di Elgan Fulmine Globulare Forgia del Mago Arrugginire Compromettere Focus Frana di Bekker Nastro Invisibile Porta di Cenere Essenza della Pozione Laccio Spettrale Sciame di Javed Tocco Fulminante Tocco del Fabbro Invaerne Manto Portale Trappola Rafforzare Incantesimi da Maestro Rubare Incantesimo Modellare Terra Gwyntog Fuoco Vivente Estrazione di Ainfra Specchio Oscuro di Bekker Stasi Cristallina Mano della Tempesta Vampata del Korath Piena di Ys</p>",
+        "weight": 0,
+        "cost": 4,
+        "range": "4m",
+        "duration": "Istantanea",
+        "defense": "Schivare o Bloccare",
+        "tier": "Maestro",
+        "subtype": "Fuoco",
+        "category": "Mago",
+        "effect": "<p>imperfetto tentativo del mago Afan di Guleta di replicare il soffio di un vero drago, questo incantesimo permette di esalare un getto di fuoco magico contro un bersaglio. Se fallisce nel difendersi, la vittima subisce 3d6 danni e ha una probabilità del 100% di andare A Fuoco.</p>",
+        "sourcebook": "TC 86",
+        "source": "Fire"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

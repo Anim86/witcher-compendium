@@ -1,0 +1,32 @@
+{
+    "_id": "6c600355fece4654",
+    "name": "Laccio Spettrale",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag083_Incantesimi da Mago_01.png",
+    "system": {
+        "description": "<p>Sciame di Javed Tocco Fulminante Tocco del Fabbro Invaerne Manto Portale Trappola Rafforzare Incantesimi da Maestro Rubare Incantesimo Modellare Terra Gwyntog Fuoco Vivente Estrazione di Ainfra Specchio Oscuro di Bekker Stasi Cristallina Mano della Tempesta Vampata del Korath Piena di Ys</p>",
+        "weight": 0,
+        "cost": 8,
+        "range": "10m",
+        "duration": "Attiva (4 RES)",
+        "defense": "Resistere alla Magia",
+        "tier": "Maestro",
+        "subtype": "Misto",
+        "category": "Mago",
+        "effect": "<p>Laccio Spettrale crea un cappio magico attorno al bersaglio, costringendolo nella sua forma fisica. Mentre è sotto l'effetto di questo incantesimo, la vittima non può diventare incorporea, invisibile, teletrasportarsi in alcun modo o allontanarsi più di 10m dal mago. A ogni suo Turno può usare la propria Azione per tentare una nuova difesa, contrapposta a un'altra prova di Lanciare Incantesimi, per porre fine all'effetto.</p>",
+        "sourcebook": "TC 83",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

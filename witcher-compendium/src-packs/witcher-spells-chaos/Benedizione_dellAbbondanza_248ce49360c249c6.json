@@ -1,0 +1,32 @@
+{
+    "_id": "248ce49360c249c6",
+    "name": "Benedizione dell’Abbondanza",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag095_Invocazioni da Prete_01.png",
+    "system": {
+        "description": "<p>Profeta Lebioda Miracolo di Lebioda Cercare dei Cercatori Marchio dell’Avvizzimento Nehaleni Presagi di Sventura Invocazioni da Maestro Svalblod Sangue del Berserker Penna Divina Morrigan Vendetta del Corvo Sagitta Aurea</p>",
+        "weight": 0,
+        "cost": 6,
+        "range": "Personale",
+        "duration": "1 giorno",
+        "defense": "Nessuna",
+        "tier": "Novizio",
+        "subtype": "Misto",
+        "category": "Prete",
+        "effect": "<p>chi invoca la Benedizione dell'Abbondanza è protetto dalla divina provvidenza e può trovare più facilmente cose utili. La prima volta che il Giocatore o il GM deve tirare per il Bottino, i dadi vengono lanciati due volte, usando il risultato migliore. Ciò si applica a un intero Bottino. Per esempio, nel caso di un mostro si tira due volte per ogni oggetto o componente.</p>",
+        "sourcebook": "TC 93",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

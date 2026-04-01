@@ -1,0 +1,33 @@
+<div class="repair">
+    <header class="item-header">
+        <h1 class="itemname">{{localize "WITCHER.Repair.action" }} {{data.item.name}}</h1>
+        <general>
+            <itemimage>
+                <img class="profile-img" src="{{data.item.img}}" title="{{data.item.name}}" />
+            </itemimage>
+
+            <table class="information repair-info">
+                <tr class="item-header-tablerow">
+                    <td>
+                        <label>{{ localize "WITCHER.Repair.params.repairDC" }}</label>
+                    </td>
+                    <td>
+                        {{data.repairDC}}
+                    </td>
+                </tr>
+                {{#each data.damagedLocations}}
+                    <tr class="item-header-tablerow">
+                        <td>
+                            <label>{{label}}</label>
+                        </td>
+                        <td>
+                            {{reliabilityValue}}/{{maxReliabilityValue}}
+                        </td>
+                    </tr>
+                {{/each}}
+            </table>
+        </general>
+    </header>
+    {{>"systems/TheWitcherTRPG/templates/partials/components-list.hbs" components=components showCost=isRequest
+    canEditCost=canEditCost totalPrice=data.repairPrice}}
+</div>

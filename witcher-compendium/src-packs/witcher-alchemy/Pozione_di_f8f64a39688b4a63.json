@@ -1,0 +1,28 @@
+{
+    "_id": "f8f64a39688b4a63",
+    "name": "Pozione di",
+    "type": "alchemical",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag145_Sostanze Alchemiche_01.png",
+    "system": {
+        "description": "<p>Lacrime di Mogli Questa pozione è in voga nelle grandi città dove ci sono tante taverne. Certi alchimisti hanno creato insieme questa formula per contrastare i mariti ubriaconi che si trascinano per strada dopo qualche boccale di troppo.</p>",
+        "weight": 0.1,
+        "cost": 56,
+        "toxicity": "0%",
+        "duration": "N/A",
+        "effect": "<p>Bussola Magica consente all'incantatore di intuire immediatamente la direzione verso un luogo che ha visitato in precedenza. In alternativa, l'incantesimo indica la posizione del nord.</p>",
+        "sourcebook": "MB 90",
+        "source": "MB 90"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

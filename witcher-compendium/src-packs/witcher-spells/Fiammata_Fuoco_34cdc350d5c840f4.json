@@ -1,0 +1,28 @@
+{
+    "_id": "34cdc350d5c840f4",
+    "name": "Fiammata (Fuoco)",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Igni ora emette dalla mano dell’incantatore un getto costante di fiamme e scintille, che infligge 1d6 danni per punto di RES speso e ha il 75% di probabilità d’infliggere l’effetto A Fuoco al bersaglio. La Fiammata deve essere mantenuta ogni round con una spesa in RES pari a metà della spesa di RES iniziale. L’incantatore puà cambiare bersaglio al proprio turno.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "3m",
+        "duration": "",
+        "effect": "<p>Fiammata erutta in una direzione un cono di fuoco di 3m e infligge 2d6 danni ad ogni bersaglio nell'area che non riesca a schivarlo o bloccarlo e ha il 50% di probabilità d'infliggere l'effetto A Fuoco al bersaglio.</p>",
+        "sourcebook": "MB 14",
+        "source": "Fire"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

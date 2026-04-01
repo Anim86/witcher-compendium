@@ -1,0 +1,33 @@
+{
+    "_id": "087b1a38130b4e14",
+    "name": "Balestrino",
+    "type": "weapon",
+    "img": "icons/svg/sword.svg",
+    "system": {
+        "description": "<p>Arte del Witcher (INT) Gambesone a doppia trama Un witcher trascorre la maggior parte della sua vita tra le mura della sua rocca, studiando enormi tomi polverosi e seguendo un infernale addestramento di battaglia. Molti sostengono che la migliore arma dei witcher sia la loro conoscenza dei mostri e il loro sapersi adattare a ogni situazione. Quando un witcher si trova in un ambiente ostile o su terreno accidentato, può diminuire le penalità di metà del suo valore di Arte del Witcher (minimo 1). Arte del Witcher può essere utilizzata al posto dell'abilità Bestiario. Coltelli da lancio ×5 Speciale Medaglione dei witcher Spada d'acciaio dei witcher Spada d'argento dei witcher Formula per pozioni ×2 Formula per unguenti ×2 Formula per decotto</p>",
+        "weight": 0.5,
+        "cost": 285,
+        "damage": "2d6+2",
+        "reliability": {
+            "value": 5,
+            "max": 5
+        },
+        "accuracy": 1,
+        "hands": 1,
+        "reach": "50m",
+        "effects": "Ricarica Lenta",
+        "sourcebook": "MB 48"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

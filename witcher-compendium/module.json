@@ -1,0 +1,135 @@
+{
+  "id": "witcher-compendium",
+  "title": "Witcher RPG Compendium",
+  "description": "Compendio completo per The Witcher RPG (v13). Include 674 voci da Manuale Base e Tomo del Caos: Mostri, Magie, Alchimia, Equipaggiamento, Schemi e Rituali. Tutte le descrizioni sono state ripristinate fedelmente dai manuali originali.",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Manuel",
+      "role": "Project Manager & QA"
+    },
+    {
+      "name": "Perplexity",
+      "role": "Data Mining Assistance"
+    },
+    {
+      "name": "Antigravity",
+      "role": "Automation & Integration"
+    }
+  ],
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13.x.x"
+  },
+  "systems": ["TheWitcherTRPG"],
+  "packs": [
+    {
+      "name": "witcher-weapons",
+      "label": "Manuale Base - Armi",
+      "path": "packs/witcher-weapons.db",
+      "type": "Item",
+      "system": "TheWitcherTRPG"
+    },
+    {
+      "name": "witcher-armor",
+      "label": "Manuale Base - Armature",
+      "path": "packs/witcher-armor.db",
+      "type": "Item",
+      "system": "TheWitcherTRPG"
+    },
+    {
+      "name": "witcher-equipment",
+      "label": "Manuale Base - Equipaggiamento",
+      "path": "packs/witcher-equipment.db",
+      "type": "Item",
+      "system": "TheWitcherTRPG"
+    },
+    {
+      "name": "witcher-spells",
+      "label": "Manuale Base - Incantesimi",
+      "path": "packs/witcher-spells.db",
+      "type": "Item",
+      "system": "TheWitcherTRPG"
+    },
+    {
+      "name": "witcher-rituals",
+      "label": "Manuale Base - Rituali",
+      "path": "packs/witcher-rituals.db",
+      "type": "Item",
+      "system": "TheWitcherTRPG"
+    },
+    {
+      "name": "witcher-components",
+      "label": "Manuale Base - Componenti Artigianali",
+      "path": "packs/witcher-components.db",
+      "type": "Item",
+      "system": "TheWitcherTRPG"
+    },
+    {
+      "name": "witcher-schematics",
+      "label": "Manuale Base - Schemi Artigianali",
+      "path": "packs/witcher-schematics.db",
+      "type": "Item",
+      "system": "TheWitcherTRPG"
+    },
+    {
+      "name": "witcher-alchemy",
+      "label": "Manuale Base - Alchimia",
+      "path": "packs/witcher-alchemy.db",
+      "type": "Item",
+      "system": "TheWitcherTRPG"
+    },
+    {
+      "name": "witcher-special",
+      "label": "Manuale Base - Oggetti Speciali",
+      "path": "packs/witcher-special.db",
+      "type": "Item",
+      "system": "TheWitcherTRPG"
+    },
+    {
+      "name": "witcher-monsters",
+      "label": "Manuale Base - Bestiario",
+      "path": "packs/witcher-monsters.db",
+      "type": "Actor",
+      "system": "TheWitcherTRPG"
+    },
+    {
+      "name": "witcher-spells-chaos",
+      "label": "Tomo del Caos - Incantesimi",
+      "path": "packs/witcher-spells-chaos.db",
+      "type": "Item",
+      "system": "TheWitcherTRPG"
+    },
+    {
+      "name": "witcher-special-chaos",
+      "label": "Tomo del Caos - Oggetti Speciali",
+      "path": "packs/witcher-special-chaos.db",
+      "type": "Item",
+      "system": "TheWitcherTRPG"
+    },
+    {
+      "name": "witcher-rituals-chaos",
+      "label": "Tomo del Caos - Rituali",
+      "path": "packs/witcher-rituals-chaos.db",
+      "type": "Item",
+      "system": "TheWitcherTRPG"
+    },
+    {
+      "name": "witcher-monsters-chaos",
+      "label": "Tomo del Caos - Bestiario",
+      "path": "packs/witcher-monsters-chaos.db",
+      "type": "Actor",
+      "system": "TheWitcherTRPG"
+    }
+  ],
+  "languages": [
+    {
+      "lang": "it",
+      "name": "Italiano",
+      "path": "languages/it.json"
+    }
+  ],
+  "url": "",
+  "manifest": "",
+  "download": ""
+}

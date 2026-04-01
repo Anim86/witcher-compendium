@@ -1,0 +1,28 @@
+{
+    "_id": "c103820acd304c54",
+    "name": "Fisstech",
+    "type": "alchemical",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag145_Sostanze Alchemiche_01.png",
+    "system": {
+        "description": "<p>Gli elfi chiamano questa roba “la Morte Bianca”. La droga più diffusa al mondo e, lascia che te lo dica, niente con cui ti conviene avere a che fare. Un drogato di fisstech fa spavento: non ha un briciolo di paura né di dignità quando ha bisogno di una dose.</p>",
+        "weight": 0.1,
+        "cost": 25,
+        "toxicity": "0%",
+        "duration": "N/A",
+        "effect": "<p>Bussola Magica consente all'incantatore di intuire immediatamente la direzione verso un luogo che ha visitato in precedenza. In alternativa, l'incantesimo indica la posizione del nord.</p>",
+        "sourcebook": "MB 89",
+        "source": "MB 89"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

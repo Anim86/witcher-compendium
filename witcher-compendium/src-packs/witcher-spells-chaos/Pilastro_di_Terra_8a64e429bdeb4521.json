@@ -1,0 +1,32 @@
+{
+    "_id": "8a64e429bdeb4521",
+    "name": "Pilastro di Terra",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag083_Incantesimi da Mago_01.png",
+    "system": {
+        "description": "<p>Velo di Polvere Velo di Fuoco Respiro di Aurora Morte di Fergus Recupero Alchemico Riaprire Portale Schermo Magico Incantesimi da Esperto Camera di Dormyn Bastione di Elgan Fulmine Globulare Forgia del Mago Arrugginire Compromettere Focus Frana di Bekker Nastro Invisibile Porta di Cenere Essenza della Pozione Laccio Spettrale Sciame di Javed Tocco Fulminante Tocco del Fabbro Invaerne Manto Portale Trappola Rafforzare Incantesimi da Maestro Rubare Incantesimo Modellare Terra Gwyntog Fuoco Vivente Estrazione di Ainfra Specchio Oscuro di Bekker Stasi Cristallina Mano della Tempesta Vampata del Korath Piena di Ys</p>",
+        "weight": 0,
+        "cost": 4,
+        "range": "10m",
+        "duration": "Istantanea",
+        "defense": "Nessuna",
+        "tier": "Maestro",
+        "subtype": "Terra",
+        "category": "Mago",
+        "effect": "<p>Pilastro di Terra fa emergere dal suolo un cubo di terra di 2m di lato. Si tratta di un riparo con PR 10, che permane finché non viene distrutto.</p>",
+        "sourcebook": "TC 85",
+        "source": "Earth"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

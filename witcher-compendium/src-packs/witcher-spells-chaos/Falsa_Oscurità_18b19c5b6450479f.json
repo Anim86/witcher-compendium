@@ -1,0 +1,32 @@
+{
+    "_id": "18b19c5b6450479f",
+    "name": "Falsa Oscurità",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag094_Invocazioni da Prete_01.png",
+    "system": {
+        "description": "<p>Dana Meadbh Banchetto dell’Abbondanza Ispirazione Divina Luce di Penitenza Veyopatis Campione del Fiume Presenza del Divino Lilvani Luce Argentea Invocazioni da Esperto Epona Mandria Benedetta Benedizione dell’Abbondanza Profeta Lebioda Miracolo di Lebioda Cercare dei Cercatori Marchio dell’Avvizzimento Nehaleni Presagi di Sventura Invocazioni da Maestro Svalblod Sangue del Berserker Penna Divina Morrigan Vendetta del Corvo Sagitta Aurea</p>",
+        "weight": 0,
+        "cost": 2,
+        "range": "2m",
+        "duration": "1 ora",
+        "defense": "Nessuna",
+        "tier": "Novizio",
+        "subtype": "Misto",
+        "category": "Prete",
+        "effect": "<p>Falsa Oscurità nasconde la mente del bersaglio dietro un velo di falsi pensieri. Questi ottiene +2 alle prove di Inganno, non può essere costretto a dire il vero con la magia né spiato con Telepatia. Chi prova a esaminarlo magicamente si accorge di questa protezione solo superando una prova di Accortezza CD 20.</p>",
+        "sourcebook": "TC 93",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

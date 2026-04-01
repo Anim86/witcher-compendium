@@ -1,0 +1,28 @@
+{
+    "_id": "017f9a4e6361438f",
+    "name": "Bussola Magica",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Bussola Magica consente all’incantatore di in- tuire immediatamente la direzione verso un luogo che ha visitato in precedenza. In alternativa, l’incantesimo indica la posizione del nord.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "Personale",
+        "duration": "1d6 Ore",
+        "effect": "<p>Bussola Magica consente all'incantatore di intuire immediatamente la direzione verso un luogo che ha visitato in precedenza. In alternativa, l'incantesimo indica la posizione del nord.</p>",
+        "sourcebook": "MB 103",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

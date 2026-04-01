@@ -1,0 +1,28 @@
+{
+    "_id": "04944ab27aff4ea5",
+    "name": "Lingua di Strega dei Sepolcri",
+    "type": "alchemical",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag145_Sostanze Alchemiche_02.png",
+    "system": {
+        "description": "<p>SUPERSTIZIONE COMUNE (Istruzione CD 18) Onestamente, il tipico popolano non sa granché delle streghe dei sepolcri. Eh, sono come incu- bi, abbastanza intelligenti da parlare, costrui- re trappole e adescare i bambini. Una volta ho sentito che sono quello che resta dei maghi che perdono il controllo. Ne dubito, ma… chissà. Le streghe sono tra i pochi mostri che, mi dicono, possano usare la magia. O qualcosa di simile. – Rodolf Kazmer È possibile ragionare con le streghe, ma sono testarde e tendono ad aggredire senza provocazione. Se bisogna affrontarne una nella sua tana è meglio controllare se è presente un circolo di teschi o altri necrofagi suoi schiavi e affrontarli per primi. Vulnerabilità Unguento Anti-necrofagi Lingua a Frusta Se un personaggio para con successo l’attacco con la lingua della strega, usando un’arma da taglio, l’appendice viene mozzata. Questo causa 5 danni alla Strega, che non potrà più usare questo attacco ABILITÀ Accortezza +8 Atletica +6 Capacità Coraggio +9 Circolo di Teschi Una strega può, in 1 ora, creare un circolo di teschi. Finché rimane entro 100m da esso ottiene +3 a tutte le azioni. Eludere +8 CONOSCENZA DEI WITCHER (Arte del Witcher CD 14) Le streghe dei sepolcri sono tra i pochi necro- fagi totalmente senzienti e ciò le rende mol- to pericolose. Pur possedendo la magia, non hanno nulla a che fare con i maghi e sono solo un’altra specie, frutto della Congiunzione. È interessante che siano tutte d’aspetto femmi- nile. In molti testi si sostiene che, come altri mostri, rapiscono le bambine dai villaggi per renderle loro simili, mentre altri, rari, suggeri- scono che non siano femmine, ma ermafroditi. Ciò che si sa è che le streghe sono predatori da imboscata, vivono nei pressi dei cimiteri e altre fonti di cadaveri. Si accontentano di cadaveri freschi, ma aggrediscono i vivi se ne hanno la possibilità. Una strega attacca con incredibile velocità, colpendo con artigli simili a falci. Se la vittima arretra per recuperare, la strega usa la sua lingua avvelenata come una frusta per indebolirla. Questa lingua può essere recisa se si riesce a parare con un’arma da taglio. Il metodo più sicuro per affrontare una strega è a distanza o usando dell’unguento anti-necrofagi e attaccandola protetti da un incantesimo o dal segno Quen. Mischia +8 Nascondersi +8 Resistere a Coercizione +10 Resistere alla Magia +10 Comandare i Non-morti Invece di attaccare, una strega può dare un ordine ad ogni necrofago entro 20m da lei. Seguiranno le istruzioni ricevute, invece di agire normalmente. Questi ordini non possono essere più complessi di ‘prendi quell’oggetto e portalo qui’ o ‘vai laggiù e aspetta’. Rissa +6 Sopravvivenza +6 Tempra +7 Bottino Denti di strega (×1d6/2) Estratto di Veleno (×1d6) Oggetti Insoliti (×1d6) Vista Notturna Una strega può agire in zone di luce fioca senza penalità. Orecchio di Strega dei Sepolcri (×2) Runa casuale Armi Nome DAN Effetti N°Att Artigli 5d6 Sanguinamento (50%) 2 Morso 6d6 Veleno (75%) 1 Lingua 3d6+2 Veleno (100%) Gittata: 4m 1</p>",
+        "weight": 0.5,
+        "cost": 80,
+        "toxicity": "0%",
+        "duration": "N/A",
+        "effect": "<p>gli incantesimi ad area d'effetto riempiono una determinata area, influenzando tutto ciò che si trova al suo interno. Questi incantesimi agiscono come gli effetti diretti, ma tutti coloro che si trovano nella loro area devono effettuare un tiro difensivo contrapposto al tiro di Lanciare Incantesimi. Se l'incantesimo non ha una difesa, è necessario tirare Lanciare Incantesimi, ma non un eventuale Disastro. • Personali: gli incantesimi personali hanno effetto solo su chi li lancia. Per lanciarli è necessario tirare Lanciare Incantesimi, ma non un eventuale Disastro. ESSERE INTERROTTI Se l'incantatore è interrotto prima che abbia ultimato il rituale, deve superare un tiro di Officiare Rituali per non distrarsi e proseguire. La CD è 15 se è stato scosso, urtato, gli hanno urlato contro o gli hanno tirato qualcosa addosso. Se viene attaccato e ferito fisicamente, la CD per proseguire il rituale è 18. Se viene allontanato fisicamente dall'area del rituale, può continuare se rientra nell'area entro 1 round e supera una prova di Officiare Rituali CD 16. RITUALI DI GRUPPO L'incantatore può essere aiutato da terzi a officiare un rituale. Non occorre che questi siano dotati di potenziale magico, ma devono essere in grado di aiutare a tracciare cerchi con il gesso, posizionare gli oggetti rituali o recitare testi. Ogni persona che aiuta l'incantatore (massimo 4) riduce di 1 la CD del rituale. FATTURE Le fatture funzionano in modo leggermente diverso da incantesimi/invocazioni e dai rituali. Per intessere una fattura bisogna trarre una certa quantità di magia ma anche nutrire un odio personale per la vittima o il luogo da colpire. Fallire il lancio di una fattura non provoca effetti. In caso di Disastro c'è una possibilità del 50% che la fattura colpisca l'incantatore; questo sostituisce i normali effetti elementali e danni provocati da un Disastro magico. Alessandro Pacifico 355698</p>",
+        "sourcebook": "MB 145",
+        "source": "MB 145"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

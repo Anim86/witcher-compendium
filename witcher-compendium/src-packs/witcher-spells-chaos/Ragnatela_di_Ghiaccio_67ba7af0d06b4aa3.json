@@ -1,0 +1,32 @@
+{
+    "_id": "67ba7af0d06b4aa3",
+    "name": "Ragnatela di Ghiaccio",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag086_Incantesimi da Mago_01.png",
+    "system": {
+        "description": "<p>Metodo di Savolla Pilastro di Terra Velo di Polvere Velo di Fuoco Respiro di Aurora Morte di Fergus Recupero Alchemico Riaprire Portale Schermo Magico Incantesimi da Esperto Camera di Dormyn Bastione di Elgan Fulmine Globulare Forgia del Mago Arrugginire Compromettere Focus Frana di Bekker Nastro Invisibile Porta di Cenere Essenza della Pozione Laccio Spettrale Sciame di Javed Tocco Fulminante Tocco del Fabbro Invaerne Manto Portale Trappola Rafforzare Incantesimi da Maestro Rubare Incantesimo Modellare Terra Gwyntog Fuoco Vivente Estrazione di Ainfra Specchio Oscuro di Bekker Stasi Cristallina Mano della Tempesta Vampata del Korath Piena di Ys</p>",
+        "weight": 0,
+        "cost": 2,
+        "range": "2m",
+        "duration": "1 giorno",
+        "defense": "Nessuna",
+        "tier": "Maestro",
+        "subtype": "Misto",
+        "category": "Mago",
+        "effect": "<p>Ragnatela di Ghiaccio copre una superficie con una delicata struttura di ghiaccio, collegata a un duplicato in possesso del mago. Quando una creatura interagisce con la superficie originale, il duplicato si rompe. In alternativa, spezzare il duplicato fa sciogliere la ragnatela principale. Notare la presenza del ghiaccio richiede una prova di Accortezza CD 18.</p>",
+        "sourcebook": "TC 86",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

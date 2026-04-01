@@ -1,0 +1,28 @@
+{
+    "_id": "02701420cd554a85",
+    "name": "Cenlly Graig",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Cenlly Graig scaglia pietre aguzze contro un avversario. Per ogni punto con cui il tiro di Lanciare Incantesimi supera il tiro di difesa del bersaglio (massi- mo 10), l’incantesimo infligge 1d6 danni.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "5m",
+        "duration": "Istantanea",
+        "effect": "<p>Cenlly Graig scaglia pietre aguzze contro un avversario. Per ogni punto con cui il tiro di Lanciare Incantesimi supera il tiro di difesa del bersaglio (massimo 10), l'incantesimo infligge 1d6 danni.</p>",
+        "sourcebook": "MB 104",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

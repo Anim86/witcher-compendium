@@ -1,0 +1,285 @@
+{
+    "_id": "95fff1bac8bd4592",
+    "name": "Demoni",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag303_Demoni_01.png",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "ref": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "dex": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "body": {
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
+            },
+            "spd": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "emp": {
+                "value": 2,
+                "max": 2,
+                "unmodifiedMax": 2
+            },
+            "cra": {
+                "value": 2,
+                "max": 2,
+                "unmodifiedMax": 2
+            },
+            "will": {
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 10
+            },
+            "atletica": {
+                "value": 5
+            },
+            "coraggio": {
+                "value": 10
+            },
+            "eludere": {
+                "value": 7
+            },
+            "mischia": {
+                "value": 9
+            },
+            "nascondersi": {
+                "value": 1
+            },
+            "prestanza": {
+                "value": 10
+            },
+            "rissa": {
+                "value": 8
+            },
+            "sopravvivenza": {
+                "value": 6
+            },
+            "tempra": {
+                "value": 7
+            }
+        },
+        "details": {
+            "biography": "[Immagini presenti in questa pagina: Pag303_Demoni_01.png, Pag303_Demoni_02.png, Pag303_Demoni_03.png, Pag303_Demoni_04.png, Pag303_Demoni_05.png, Pag303_Demoni_06.png, Pag303_Demoni_07.png, Pag303_Demoni_08.png, Pag303_Demoni_09.png, Pag303_Demoni_10.png, Pag303_Demoni_11.png, Pag303_Demoni_12.png]<br><br>301 DEMONI<br>SUPERSTIZIONE COMUNE (Istruzione CD 18) Pochi sanno dell’esistenza di questi figli di put- tana. Eh, da quanto ho sentito, di solito se ne restano sui monti. Quello che si racconta, però, è parecchio interessante. Queste bestiacce sono dia- voli portatori di sventura, che si nutrono della malvagità degli uomini. Se ne incontri uno, ti farà cadere in trance per nutrirsi dei tuoi segreti più oscuri. Poi, dopo averti svuotato la mente, ti farà a pezzi e divorerà il tuo cadavere. Per stare sicuri ci si deve fare un medaglione contro il ma- locchio con vetro e inchiostro. Uno che assorba la magia della bestia e simili. – Rodolf Kazmer<br>I demoni non sono realmente esseri infer- nali, ma creature ancestrali. Si dibatte sulla loro reale intelligenza, dato che sembrano imparen- tati con le succubi, assai colte e astute. I demo- ni, però, sembrano non essere più intelligenti di un comune orso o capaci di pensieri complessi. Quando si affronta un demonio bisogna muo- versi e schivare. È possibile pararne i colpi, ma è meglio evitarli. L’unguento anti-ancestrali è di grandissimo aiuto, così come la bomba Polvere Lunare, che inibisce la rigenerazione per un breve periodo, e quelle al dimeritium, che bloc- cano i poteri ipnotici del mostro. Un demonio è anche estremamente sensibile ai rumori forti, percuotere uno scudo o un’esplosione può farlo barcollare.",
+            "threat": "Facile Complesso",
+            "reward": 10
+        },
+        "derivedStats": {
+            "health": {
+                "value": 15,
+                "max": 15,
+                "unmodifiedMax": 15
+            },
+            "stamina": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "vigor": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "rec": {
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
+            },
+            "resolve": {
+                "value": 30,
+                "max": 30,
+                "unmodifiedMax": 30
+            },
+            "stun": {
+                "value": 3,
+                "max": 3
+            },
+            "woundTreshold": {
+                "value": 3,
+                "max": 3
+            }
+        },
+        "description": "<p>SUPERSTIZIONE COMUNE (Istruzione CD 18) Pochi sanno dell’esistenza di questi figli di put- tana. Eh, da quanto ho sentito, di solito se ne restano sui monti. Quello che si racconta, però, è parecchio interessante. Queste bestiacce sono dia- voli portatori di sventura, che si nutrono della malvagità degli uomini. Se ne incontri uno, ti farà cadere in trance per nutrirsi dei tuoi segreti più oscuri. Poi, dopo averti svuotato la mente, ti farà a pezzi e divorerà il tuo cadavere. Per stare sicuri ci si deve fare un medaglione contro il ma- locchio con vetro e inchiostro. Uno che assorba la magia della bestia e simili. – Rodolf Kazmer I demoni non sono realmente esseri infer- nali, ma creature ancestrali. Si dibatte sulla loro reale intelligenza, dato che sembrano imparen- tati con le succubi, assai colte e astute. I demo- ni, però, sembrano non essere più intelligenti di un comune orso o capaci di pensieri complessi. Quando si affronta un demonio bisogna muo- versi e schivare. È possibile pararne i colpi, ma è meglio evitarli. L’unguento anti-ancestrali è di grandissimo aiuto, così come la bomba Polvere Lunare, che inibisce la rigenerazione per un breve periodo, e quelle al dimeritium, che bloc- cano i poteri ipnotici del mostro. Un demonio è anche estremamente sensibile ai rumori forti, percuotere uno scudo o un’esplosione può farlo barcollare. Vulnerabilità Unguento Anti-ancestrali Bombe Polvere Lunare Quando si trova nell’area di una bomba Polvere Lunare, un demonio non può rigenerarsi per la durata dell’effetto. Udito Sensibile Quando viene colpito da una bomba o sente un rumore molto forte, un demonio diventa vacillante. Capacità Carica Se un avversario si allontana di oltre 10m, un demonio può caricarlo, effettuando un poderoso attacco con le corna. Questo subisce -4 Precisione, ma infligge 10d6 e scaraventa indietro la vittima di 8m. Se colpisce un oggetto a causa di questo movimento, il bersaglio subisce danni da impatto pari a quelli provocati da un cavallo. CONOSCENZA DEI WITCHER (Arte del Witcher CD 16) I demoni sono tra i relitti più pericolosi che si incontrano nel Continente. Sono creature terrificanti simili ad alci, tanto colossali che neppure i membri della Scuola del Grifone ri- escono a stordirli con il segno Aard. Quando caricano con le corna basse bisogna togliersi subito dalla loro strada, perché solo un muro di pietra può fermarli. Non sono una minac- cia terribile soltanto a causa della loro tremen- da forza, guariscono quasi istantaneamente e possono ipnotizzare con uno sguardo. Al contrario di quanto affermato dai superstizio- si, un medaglione contro il malocchio non è una protezione. L’effetto ipnotico avvolge la vittima in un mondo d’oscurità, dove l’unico elemento visibile è il terzo occhio luminoso del demonio. Di solito è a questo punto che il mostro carica. ABILITÀ Accortezza +10 Atletica +5 Coraggio +10 Eludere +7 Mischia +9 Lanciare Incantesimi +15 Colossale Un demonio è immune al segno Aard e a tutti gli effetti che potrebbero gettarlo al suolo. Nascondersi +1 Prestanza +10 Resistere alla Magia +10 Ferale Grazie ai suoi istinti un demonio possiede INT 8 ai fini delle prove di Accortezza e Sopravvivenza. Rissa +8 Sopravvivenza +6 Tempra +7 Ipnosi Un demonio può usare il suo turno per ipnotizzare i propri avversari. Chiunque lo osservi deve superare un tiro di Resistere alla Magia contrapposto al tiro di Lanciare Incantesimi del mostro. Se il bersaglio fallisce subisce -4 agli attacchi e alle difese contro il demonio e non sarà in grado di vedere il terreno circostante per 5 round. Bottino Occhio di Demonio (×3) Quintessenza (×1d10) Sterco di Demonio (×1d6) Armi Nome DAN Effetti N°Att Artigli 6d6+2 N/A 2 Corna 8d6 -1 PA 1 Rigenerazione Un demonio rigenera 5 PS per round. Morso 7d6 Sanguinamento (50%) 1</p>",
+        "notes": [
+            {
+                "title": "Descrizione",
+                "details": "<p>Un amalgama di corpi è un golem non-senziente formato da cadaveri parzialmente rianimati. Molti necromanti li usano come guardie del corpo, altri come assistenti. In combattimento, un amalgama colpisce tutto ciò che vede con le sue molte braccia, fermandosi solo di tanto in tanto per emettere un terribile lamento, che stordisce le vittime. Essendo non-morti, non possono guarire, ma sono immuni a veleno, sanguinamento e ogni tipo di effetto mentale. Inoltre, a causa delle dimensioni e dei molteplici arti, non è possibile gettarli a terra. Per assurdo, il loro punto di forza è anche il modo più facile per ucciderli. Infliggere colpi critici e rimuovere parte dei corpi dall'amalgama, indebolisce rapidamente la creatura, ma l'anima che abita un corpo rimosso si manifesta subito come un wraith rabbioso, che attacca il suo liberatore. Una volta eliminato l'amalgama, i wraith possono rivelarsi un pericolo ben più grande. Infine, occorre ricordare che l'amalgama può, per pochi attimi, recuperare l'intelligenza di una delle anime intrappolate al suo interno. Quando si trova di fronte a porte chiuse, enigmi o un avversario che non può raggiungere, l'amalgama riesce a recuperare</p>"
+            }
+        ],
+        "sourcebook": "TC 143"
+    },
+    "items": [
+        {
+            "_id": "b2f3f56b1a334b27",
+            "name": "Artigli",
+            "type": "weapon",
+            "img": "icons/svg/sword.svg",
+            "system": {
+                "description": "",
+                "weight": 0,
+                "cost": 0,
+                "damage": "6d6+2",
+                "reliability": {
+                    "value": 10,
+                    "max": 10
+                },
+                "accuracy": 0,
+                "hands": 1,
+                "reach": "N/A",
+                "effects": "N/A"
+            },
+            "effects": [],
+            "folder": null,
+            "sort": 0,
+            "ownership": {
+                "default": 0
+            },
+            "flags": {},
+            "_stats": {
+                "systemId": "TheWitcherTRPG",
+                "systemVersion": "1.0.0",
+                "coreVersion": "13"
+            }
+        },
+        {
+            "_id": "856af64331f741a8",
+            "name": "Corna",
+            "type": "weapon",
+            "img": "icons/svg/sword.svg",
+            "system": {
+                "description": "",
+                "weight": 0,
+                "cost": 0,
+                "damage": "8d6",
+                "reliability": {
+                    "value": 10,
+                    "max": 10
+                },
+                "accuracy": 0,
+                "hands": 1,
+                "reach": "N/A",
+                "effects": "-1 PA"
+            },
+            "effects": [],
+            "folder": null,
+            "sort": 0,
+            "ownership": {
+                "default": 0
+            },
+            "flags": {},
+            "_stats": {
+                "systemId": "TheWitcherTRPG",
+                "systemVersion": "1.0.0",
+                "coreVersion": "13"
+            }
+        },
+        {
+            "_id": "f72486a559084f27",
+            "name": "Morso",
+            "type": "weapon",
+            "img": "icons/svg/sword.svg",
+            "system": {
+                "description": "",
+                "weight": 0,
+                "cost": 0,
+                "damage": "7d6",
+                "reliability": {
+                    "value": 10,
+                    "max": 10
+                },
+                "accuracy": 0,
+                "hands": 1,
+                "reach": "N/A",
+                "effects": "Sanguinamento (50%)"
+            },
+            "effects": [],
+            "folder": null,
+            "sort": 0,
+            "ownership": {
+                "default": 0
+            },
+            "flags": {},
+            "_stats": {
+                "systemId": "TheWitcherTRPG",
+                "systemVersion": "1.0.0",
+                "coreVersion": "13"
+            }
+        },
+        {
+            "_id": "39a49219d7ed4a70",
+            "name": "[Vulnerabilità] Unguento",
+            "type": "note",
+            "img": "icons/svg/book.svg",
+            "system": {
+                "description": "<p>Anti-ancestrali</p>"
+            },
+            "effects": [],
+            "folder": null,
+            "sort": 0,
+            "ownership": {
+                "default": 0
+            },
+            "flags": {},
+            "_stats": {
+                "systemId": "TheWitcherTRPG",
+                "systemVersion": "1.0.0",
+                "coreVersion": "13"
+            }
+        },
+        {
+            "_id": "0ba1a530a53c4cfc",
+            "name": "[Capacità] Carica Se",
+            "type": "note",
+            "img": "icons/svg/book.svg",
+            "system": {
+                "description": "<p>un avversario si allontana di oltre 10m, un demonio può caricarlo, effettuando un poderoso attacco con le corna. Questo subisce -4 Precisione, ma infligge 10d6 e scaraventa indietro la vittima di 8m. Se colpisce un oggetto a causa di questo movimento, il bersaglio subisce danni da impatto pari a quelli provocati da un cavallo.</p>"
+            },
+            "effects": [],
+            "folder": null,
+            "sort": 0,
+            "ownership": {
+                "default": 0
+            },
+            "flags": {},
+            "_stats": {
+                "systemId": "TheWitcherTRPG",
+                "systemVersion": "1.0.0",
+                "coreVersion": "13"
+            }
+        }
+    ],
+    "effects": [],
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

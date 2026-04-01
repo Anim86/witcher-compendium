@@ -1,0 +1,28 @@
+{
+    "_id": "a7ac0cb43b894853",
+    "name": "Acque di Limpidezza",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Acque di Limpidezza rende immediatamente sobrio il bersaglio. Questo incantamento contrasta l’al- col e le soluzioni alchemiche che causano ebbrezza.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "5m",
+        "duration": "",
+        "effect": "<p>Acque di Limpidezza rende immediatamente sobrio il bersaglio. Questo incantamento contrasta l'alcol e le soluzioni alchemiche che causano ebbrezza.</p>",
+        "sourcebook": "MB 111",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

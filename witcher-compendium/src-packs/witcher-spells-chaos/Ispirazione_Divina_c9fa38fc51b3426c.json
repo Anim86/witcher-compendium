@@ -1,0 +1,32 @@
+{
+    "_id": "c9fa38fc51b3426c",
+    "name": "Ispirazione Divina",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag094_Invocazioni da Prete_01.png",
+    "system": {
+        "description": "<p>Luce di Penitenza Veyopatis Campione del Fiume Presenza del Divino Lilvani Luce Argentea Invocazioni da Esperto Epona Mandria Benedetta Benedizione dell’Abbondanza Profeta Lebioda Miracolo di Lebioda Cercare dei Cercatori Marchio dell’Avvizzimento Nehaleni Presagi di Sventura Invocazioni da Maestro Svalblod Sangue del Berserker Penna Divina Morrigan Vendetta del Corvo Sagitta Aurea</p>",
+        "weight": 0,
+        "cost": 2,
+        "range": "8m",
+        "duration": "10 minuti",
+        "defense": "Nessuna",
+        "tier": "Novizio",
+        "subtype": "Misto",
+        "category": "Prete",
+        "effect": "<p>diffusa tra inquisitori e artisti, Ispirazione Divina conferisce al bersaglio grande perspicacia. Una volta lanciata l'invocazione, questi ottiene un bonus di +2 a una singola Abilità in cui possieda almeno un livello. Si può beneficiare di questo bonus solo una volta al giorno.</p>",
+        "sourcebook": "TC 93",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

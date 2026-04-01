@@ -1,0 +1,28 @@
+{
+    "_id": "40dbcd89a1d6480b",
+    "name": "Piromanzia",
+    "type": "ritual",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag118_Rituali_01.png",
+    "system": {
+        "description": "<p>La Piromanzia permette al ritualista di fissare lo sguardo in un fuoco ardente e di scorgervi un evento che avviene in quel momento. La Piromanzia è più pericolosa Alessandro Pacifico - 355698 --- Pagina 120 --- [Immagini presenti in questa pagina: Pag120_Rituali_01.png, Pag120_Rituali_02.png, Pag120_Rituali_03.png, Pag120_Rituali_04.png, Pag120_Rituali_05.png, Pag120_Rituali_06.png] 118 Rituale della Vita Costo in RES: 5 Effetto: Questo rituale crea un cerchio magico che in- fluisce sulle capacità di guarigione di un soggetto al suo interno. Il cerchio consente di rigenerare 3 Punti Salute per turno. La rigenerazione dura per 10 round e solo fin- ché il bersaglio rimane nel circolo; se esce dal cerchio, quest’ultimo svanisce.</p>",
+        "weight": 0,
+        "cost": 5,
+        "range": "N/A",
+        "duration": "Un utilizzo",
+        "effect": "<p>La Piromanzia permette al ritualista di fissare lo sguardo in un fuoco ardente e di scorgervi un evento che avviene in quel momento. La Piromanzia è più pericolosa Alessandro Pacifico 355698</p>",
+        "sourcebook": "MB 118",
+        "source": "MB 118"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

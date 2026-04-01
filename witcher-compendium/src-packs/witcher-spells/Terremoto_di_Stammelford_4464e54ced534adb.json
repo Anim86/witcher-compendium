@@ -1,0 +1,28 @@
+{
+    "_id": "4464e54ced534adb",
+    "name": "Terremoto di Stammelford",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Terremoto di Stammelford consente di dissesta- re il suolo in un’area di 10m, creando un terreno frasta- gliato e franoso che impone ad ogni bersaglio nell’area -2 Riflessi e -3 MAN. Piccole costruzioni sul terreno infranto hanno il 10% di probabilità di crollare. Ogni round, ogni bersaglio nell’area deve superare un tiro di Atletica o sprofondare nel terreno instabile, e iniziare a soffocare finché non riesce ad uscire superando un’altra prova di Atletica. Esaurita la durata dell’incantesimo, il terreno cessa di franare, ma resta dissestato.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "30m",
+        "duration": "1d10 Round",
+        "effect": "<p>Terremoto di Stammelford consente di dissestare il suolo in un'area di 10m, creando un terreno frastagliato e franoso che impone ad ogni bersaglio nell'area -2 Riflessi e -3 MAN. Piccole costruzioni sul terreno infranto hanno il 10% di probabilità di crollare. Ogni round, ogni bersaglio nell'area deve superare un tiro di Atletica o sprofondare nel terreno instabile, e iniziare a soffocare finché non riesce ad uscire superando un'altra prova di Atletica. Esaurita la durata dell'incantesimo, il terreno cessa di franare, ma resta dissestato.</p>",
+        "sourcebook": "MB 15",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

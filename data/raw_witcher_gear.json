@@ -1,0 +1,150 @@
+[
+    {
+        "name": "Nome Effetti Durata",
+        "type": "Potion",
+        "subtype": "Witcher Potion",
+        "effect": "Toss.\nBufera di Neve +4 RIF dopo aver ucciso un nemico. Ulteriori uccisioni non aggiungono bonus.",
+        "duration": "10 round",
+        "toxicity": "75%"
+    },
+    {
+        "name": "Gatto",
+        "type": "Potion",
+        "subtype": "Witcher Potion",
+        "effect": "Nessuna penalità a causa di oscurità o penombra. Il witcher diventa immune all’ipnosi e ottiene un bonus di +2 per vedere oltre le illusioni.",
+        "duration": "2 ore",
+        "toxicity": "25%"
+    },
+    {
+        "name": "Gufo Fulvo",
+        "type": "Potion",
+        "subtype": "Witcher Potion",
+        "effect": "Ogni volta che il witcher usa un’azione di Recupero per ottenere RES, ne ottiene 2 punti aggiuntivi.",
+        "duration": "20 round",
+        "toxicity": "50%"
+    },
+    {
+        "name": "Luna",
+        "type": "Potion",
+        "subtype": "Witcher Potion",
+        "effect": "Piena +30 PS temporanei per la durata. Usi multipli non sono cumulativi.",
+        "duration": "½ ora",
+        "toxicity": "75%"
+    },
+    {
+        "name": "Miele Bianco",
+        "type": "Potion",
+        "subtype": "Witcher Potion",
+        "effect": "Rimuove tutta la tossicità e gli effetti di ogni altra pozione. N/A N/A\nOrca Assassina Aumenta la capacità di trattenere il fiato del 50% e nega le penalità alla vista sott’acqua.",
+        "duration": "½ ora",
+        "toxicity": "25%"
+    },
+    {
+        "name": "Rigogolo Dorato",
+        "type": "Potion",
+        "subtype": "Witcher Potion",
+        "effect": "Immunità ai veleni e neutralizza ogni veleno nel corpo del witcher.",
+        "duration": "½ ora",
+        "toxicity": "50%"
+    },
+    {
+        "name": "Rondine",
+        "type": "Potion",
+        "subtype": "Witcher Potion",
+        "effect": "Il witcher rigenera 3 PS a round. Non rigenera nei round in cui viene colpito. Usi multipli non sono cumulativi.",
+        "duration": "20 round",
+        "toxicity": "50%"
+    },
+    {
+        "name": "Sangue Nero",
+        "type": "Potion",
+        "subtype": "Witcher Potion",
+        "effect": "Il sangue del witcher diventa velenoso e chi lo beve subisce 3 danni a round finché non supera una prova di Tempra CD 20. La creatura viene anche costretta ad allontanarsi di 2 m.",
+        "duration": "20 round",
+        "toxicity": "25%"
+    },
+    {
+        "name": "Anti-Ancestrali",
+        "type": "Oil",
+        "subtype": "Witcher Oil",
+        "effect": "+5 danni contro le creature ancestrali",
+        "duration": "30 minuti"
+    },
+    {
+        "name": "Anti-Bestie",
+        "type": "Oil",
+        "subtype": "Witcher Oil",
+        "effect": "+5 danni contro le bestie",
+        "duration": "30 minuti"
+    },
+    {
+        "name": "Anti-Costrutti",
+        "type": "Oil",
+        "subtype": "Witcher Oil",
+        "effect": "+5 danni contro i costrutti",
+        "duration": "30 minuti"
+    },
+    {
+        "name": "Anti-Dragonidi",
+        "type": "Oil",
+        "subtype": "Witcher Oil",
+        "effect": "+5 danni contro i dragonidi",
+        "duration": "30 minuti"
+    },
+    {
+        "name": "Anti-Ibridi",
+        "type": "Oil",
+        "subtype": "Witcher Oil",
+        "effect": "+5 danni contro gli ibridi",
+        "duration": "30 minuti"
+    },
+    {
+        "name": "Anti-Insettoidi",
+        "type": "Oil",
+        "subtype": "Witcher Oil",
+        "effect": "+5 danni contro gli insettoidi",
+        "duration": "30 minuti"
+    },
+    {
+        "name": "Anti-Maledetti",
+        "type": "Oil",
+        "subtype": "Witcher Oil",
+        "effect": "+5 danni contro le creature maledette",
+        "duration": "30 minuti"
+    },
+    {
+        "name": "Anti-Necrofagi",
+        "type": "Oil",
+        "subtype": "Witcher Oil",
+        "effect": "+5 danni contro i necrofagi",
+        "duration": "30 minuti"
+    },
+    {
+        "name": "Anti-Orchi",
+        "type": "Oil",
+        "subtype": "Witcher Oil",
+        "effect": "+5 danni contro gli orchi",
+        "duration": "30 minuti"
+    },
+    {
+        "name": "Anti-Spettri",
+        "type": "Oil",
+        "subtype": "Witcher Oil",
+        "effect": "+5 danni contro gli spettri",
+        "duration": "30 minuti"
+    },
+    {
+        "name": "Anti-Vampiri",
+        "type": "Oil",
+        "subtype": "Witcher Oil",
+        "effect": "+5 danni contro i vampiri",
+        "duration": "30 minuti"
+    },
+    {
+        "name": "Veleno dell’Impiccato",
+        "type": "Oil",
+        "subtype": "Witcher Oil",
+        "effect": "+5 danni contro gli umanoidi",
+        "duration": "30 minuti"
+    }
+]

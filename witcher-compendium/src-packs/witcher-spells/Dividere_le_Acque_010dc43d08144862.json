@@ -1,0 +1,28 @@
+{
+    "_id": "010dc43d08144862",
+    "name": "Dividere le Acque",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Dividere le Acque consente all’incantatore di creare uno spazio aperto in una massa d’acqua, fino a 10m x 100m ×10m. Pesci, mostri e altre creature nell’ac- qua vengono spostate insieme ad essa. L’incantatore può entrare e uscire dalle pareti d’acqua come se fosse un normale specchio d’acqua, senza disturbare le pareti. Se usato in acqua, l’incantesimo sposta anche l’incantatore. L’area può essere evocata con qualsiasi orientamento, an- che in verticale.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "Raggio di 10m",
+        "duration": "Attiva (6 RES)",
+        "effect": "<p>Dividere le Acque consente all'incantatore di creare uno spazio aperto in una massa d'acqua, fino a 10m x 100m ×10m. Pesci, mostri e altre creature nell'acqua vengono spostate insieme ad essa. L'incantatore può entrare e uscire dalle pareti d'acqua come se fosse un normale specchio d'acqua, senza disturbare le pareti. Se usato in acqua, l'incantesimo sposta anche l'incantatore. L'area può essere evocata con qualsiasi orientamento, anche in verticale.</p>",
+        "sourcebook": "MB 110",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "_id": "920337b6d6274fe3",
+    "name": "Nastro Invisibile",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag083_Incantesimi da Mago_01.png",
+    "system": {
+        "description": "<p>Porta di Cenere Essenza della Pozione Laccio Spettrale Sciame di Javed Tocco Fulminante Tocco del Fabbro Invaerne Manto Portale Trappola Rafforzare Incantesimi da Maestro Rubare Incantesimo Modellare Terra Gwyntog Fuoco Vivente Estrazione di Ainfra Specchio Oscuro di Bekker Stasi Cristallina Mano della Tempesta Vampata del Korath Piena di Ys</p>",
+        "weight": 0,
+        "cost": 15,
+        "range": "10m",
+        "duration": "Istantanea",
+        "defense": "Schivare o Bloccare",
+        "tier": "Maestro",
+        "subtype": "Misto",
+        "category": "Mago",
+        "effect": "<p>con un sussurro, Nastro Invisibile permette al mago di trasformare un refolo d'aria in una lama affilata e invisibile, che sibila verso il bersaglio. Questi deve difendersi contro il risultato della prova di Lanciare Incantesimi. Se fallisce, subisce 3d6 danni. Dato che la lama è invisibile, dopo che il colpo è andato a segno, i presenti devono superare una prova di Accortezza CD 20 per capire da dove è arrivato l'attacco.</p>",
+        "sourcebook": "TC 89",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

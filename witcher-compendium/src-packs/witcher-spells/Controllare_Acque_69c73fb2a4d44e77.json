@@ -1,0 +1,28 @@
+{
+    "_id": "69c73fb2a4d44e77",
+    "name": "Controllare Acque",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Controllare Acque consente all’incantatore di controllare la velocità di movimento di una massa d’ac- qua e la direzione in cui si sposta, per la durata dell’in- cantesimo. Può servire a rallentare un bersaglio che sta nuotando dimezzandone la velocità, raddoppiare la velo- cità di una nave o rallentarla fino ad arrestare le correnti fluviali.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "10m",
+        "duration": "Attiva (2 RES)",
+        "effect": "<p>Controllare Acque consente all'incantatore di controllare la velocità di movimento di una massa d'acqua e la direzione in cui si sposta, per la durata dell'incantesimo. Può servire a rallentare un bersaglio che sta nuotando dimezzandone la velocità, raddoppiare la velocità di una nave o rallentarla fino ad arrestare le correnti fluviali.</p>",
+        "sourcebook": "MB 106",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "_id": "5f833da91e34474a",
+    "name": "Balestra da Cacciatore di Mostri",
+    "type": "weapon",
+    "img": "icons/svg/sword.svg",
+    "system": {
+        "description": "<p>P 1 R 6d6 15 2 200m Ricarica Lenta Trapassare N/A 1 4 1125 MUNIZIONI Nome Tipo Disp. Aff. Effetto Occ. Peso Costo Normali (×10) P D 10 G 0,5 10 Smussate C C 10 Non-Letale G 0,1 5 Punta larga P C 10 Sanguinamento (100%) G 0,1 10 Bodkin P C 10 Trapassare G 0,1 15</p>",
+        "weight": 4.0,
+        "cost": 1125,
+        "damage": "6d6",
+        "reliability": {
+            "value": 15,
+            "max": 15
+        },
+        "accuracy": 1,
+        "hands": 2,
+        "reach": "200m",
+        "effects": "Ricarica Lenta Trapassare",
+        "sourcebook": "MB 76"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

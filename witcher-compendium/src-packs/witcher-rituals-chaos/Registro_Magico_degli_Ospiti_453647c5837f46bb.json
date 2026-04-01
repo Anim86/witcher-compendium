@@ -1,0 +1,30 @@
+{
+    "_id": "453647c5837f46bb",
+    "name": "Registro Magico degli Ospiti",
+    "type": "ritual",
+    "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag104_Rituali_01.png",
+    "system": {
+        "description": "<p>Rituali da Maestro Creare Luogo di Potere Incantare Amuleto</p>",
+        "weight": 0,
+        "cost": 10,
+        "prepTime": "10 Round",
+        "difficulty": "18",
+        "duration": "1 giorno",
+        "components": "Argilla (×1), Carbone (×2), Gessetto (×2), Quintessenza (×1)",
+        "effect": "<p>tracciando simboli con gessetto e carbone sul telaio di una porta e ponendo una piccola icona d'argilla infusa di quintessenza sull'architrave, il ritualista crea una cortina invisibile nel passaggio. Questa registra i volti di tutti coloro che entrano, allertando il creatore, se questi si trova entro 100m. La registrazione rimane disponibile per tutta la durata dell'effetto, dopo di che viene salvata nell'icona e può essere visionata da chiunque abbia almeno Vigore 1, finché l'icona rimane intatta. Mentre la cortina è attiva, il ritualista può consultare le registrazioni telepaticamente, se si trova entro 100m dalla porta.</p>",
+        "sourcebook": "TC 104",
+        "source": "TC 104"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

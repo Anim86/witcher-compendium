@@ -1,0 +1,32 @@
+{
+    "_id": "4b0ef976f239497b",
+    "name": "Corrente",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag086_Incantesimi da Mago_01.png",
+    "system": {
+        "description": "<p>Individuare Linee Geomantiche Ammorbidire Terra Intensificare Odore Fumo di Vahila Getto d’Acqua Macchia Cryfhau Piedi Leggeri Soffio di Fuoco Ragnatela di Ghiaccio Metodo di Savolla Pilastro di Terra Velo di Polvere Velo di Fuoco Respiro di Aurora Morte di Fergus Recupero Alchemico Riaprire Portale Schermo Magico Incantesimi da Esperto Camera di Dormyn Bastione di Elgan Fulmine Globulare Forgia del Mago Arrugginire Compromettere Focus Frana di Bekker Nastro Invisibile Porta di Cenere Essenza della Pozione Laccio Spettrale Sciame di Javed Tocco Fulminante Tocco del Fabbro Invaerne Manto Portale Trappola Rafforzare Incantesimi da Maestro Rubare Incantesimo Modellare Terra Gwyntog Fuoco Vivente Estrazione di Ainfra Specchio Oscuro di Bekker Stasi Cristallina Mano della Tempesta Vampata del Korath Piena di Ys</p>",
+        "weight": 0,
+        "cost": 5,
+        "range": "Personale",
+        "duration": "10 minuti",
+        "defense": "Nessuna",
+        "tier": "Maestro",
+        "subtype": "Misto",
+        "category": "Mago",
+        "effect": "<p>questo incantesimo crea una corrente che spinge il mago attraverso l'acqua nella direzione da lui voluta. Mentre nuota sotto l'effetto di questa magia, la sua VEL è 12 e non subisce le normali penalità per essere sott'acqua.</p>",
+        "sourcebook": "TC 86",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

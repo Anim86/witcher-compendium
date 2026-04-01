@@ -1,0 +1,69 @@
+<div class='char-header-center'>
+    <h1><input class='charname' name='name' type='text' value='{{actor.name}}'
+            placeholder='{{localize "WITCHER.Actor.Name"}}' /></h1>
+    <div class='char-general'>
+        <span>
+            {{race.name}}
+            -
+        </span>
+        <span>
+            {{profession.name}}
+            -
+        </span>
+        <span>
+            {{system.gender}}
+            -
+        </span>
+        <span>
+            {{system.general.age}}
+            -
+        </span>
+        <span>
+            {{#unless homeland}}
+                {{#if (eq system.general.homeland.value 'other')}}
+                    {{system.general.homeland.otherValue}}
+                    -
+                {{else}}
+                    {{localize (concat 'WITCHER.Homelands.' system.general.homeland.value)}}
+                    -
+                {{/if}}
+            {{/unless}}
+            {{#if homeland}}
+                {{#if (eq homeland.system.value 'other')}}
+                    {{homeland.system.otherValue}}
+                    -
+                {{else}}
+                    {{localize (concat 'WITCHER.Homelands.' homeland.system.value)}}
+                    -
+                {{/if}}
+            {{/if}}
+        </span>
+        <span>
+            {{localize (concat 'WITCHER.socialStanding.' system.general.socialStanding)}}
+        </span>
+    </div>
+    <div class="char-actions">
+        <div class='char-button-list'>
+            <a class='button-roll init-roll' data-tooltip="{{localize 'WITCHER.Actor.Initiative'}}"><i class="fa-solid fa-user-ninja"></i></a>
+            <a class='button-roll recover-sta' data-tooltip="{{localize 'WITCHER.Actor.RecoveryStamina'}}"><i class="fa-solid fa-bolt"></i></a>
+            <a class='button-roll death-roll' data-tooltip="{{localize 'WITCHER.Actor.SavingThrow'}}"><i class="fa-solid fa-heart-circle-exclamation"></i></a>
+            <a class='button-roll crit-roll' data-tooltip="{{localize 'WITCHER.Actor.Crit/Fumble'}}"><i class="fa-solid fa-dice"></i></a>
+            <a class='button-roll heal-button' data-tooltip="{{localize 'WITCHER.Heal.button'}}"><i class="fa-solid fa-briefcase-medical"></i></a>
+            {{#if useVerbalCombat}}
+                <a class='button-roll verbal-button' data-tooltip="{{localize 'WITCHER.verbalCombat.Title'}}"><i class="fa-solid fa-comment"></i></a>
+            {{/if}}
+        </div>
+        <div class="improvement-points action">
+            <h3>{{localize 'WITCHER.rewards.dialog.ip'}} {{system.improvementPoints}}</h3>
+            <a class="open-rewards"><i class="fa-solid fa-clipboard-list"></i>
+        </div>
+        <div class='death-section action'>
+            <a class='death-minus' data-tooltip="Reset"><i class='fa-solid fa-rotate-left'></i></a>
+            <div class='death-counter'>
+                <i class='fas fa-skull'></i>
+                <h3>{{system.deathSaves}}</h3>
+            </div>
+            <a class='death-plus' data-tooltip="Add"><i class='fas fa-plus'></i></a>
+        </div>
+    </div>
+</div>

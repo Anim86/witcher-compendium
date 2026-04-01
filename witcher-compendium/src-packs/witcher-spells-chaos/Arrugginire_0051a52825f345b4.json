@@ -1,0 +1,32 @@
+{
+    "_id": "0051a52825f345b4",
+    "name": "Arrugginire",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag090_Incantesimi da Mago_01.png",
+    "system": {
+        "description": "<p>Compromettere Focus Frana di Bekker Nastro Invisibile Porta di Cenere Essenza della Pozione Laccio Spettrale Sciame di Javed Tocco Fulminante Tocco del Fabbro Invaerne Manto Portale Trappola Rafforzare Incantesimi da Maestro Rubare Incantesimo Modellare Terra Gwyntog Fuoco Vivente Estrazione di Ainfra Specchio Oscuro di Bekker Stasi Cristallina Mano della Tempesta Vampata del Korath Piena di Ys</p>",
+        "weight": 0,
+        "cost": 14,
+        "range": "4m",
+        "duration": "Permanente",
+        "defense": "Schivare o Bloccare",
+        "tier": "Maestro",
+        "subtype": "Acqua",
+        "category": "Mago",
+        "effect": "<p>Arrugginire permette di scagliare un getto di acqua che ossida immediatamente gli oggetti di metallo. Un'armatura così colpita subisce 2d6 danni ablativi e chi la indossa ha una penalità di -2 a RIF, DES e VEL. Se usato su un'arma, l'incantesimo ne riduce l'Affidabilità di 2d6 e impone una penalità di -2 agli attacchi. È possibile bloccare l'incantesimo con uno scudo, ma questo perde 2d6 Affidabilità nel farlo. Spendendo un'ora e superando una prova di Manifattura CD 14, è possibile ripulire fino a dieci oggetti dalla ruggine così creata.</p>",
+        "sourcebook": "TC 90",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

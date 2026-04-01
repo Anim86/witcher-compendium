@@ -1,0 +1,29 @@
+{
+    "_id": "1d9b657ce3bc488e",
+    "name": "Palvese",
+    "type": "armor",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag082_Armature_01.png",
+    "system": {
+        "description": "<p>20 S Riparo Completo 1 4 500 Palvese Nilfgaardiano 25 R Riparo Completo 1 5 650</p>",
+        "weight": 4,
+        "cost": 500,
+        "stoppingPower": 0,
+        "reliability": {
+            "value": 20,
+            "max": 20
+        },
+        "sourcebook": "MB 82"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

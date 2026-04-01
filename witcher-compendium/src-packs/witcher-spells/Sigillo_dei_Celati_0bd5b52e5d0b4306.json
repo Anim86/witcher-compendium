@@ -1,0 +1,28 @@
+{
+    "_id": "0bd5b52e5d0b4306",
+    "name": "Sigillo dei Celati",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Tracciare il Sigillo dei Celati ricopre un’area di 3m con rami, foglie e altri elementi naturali, che copro- no completamente la visuale. Ciò conferisce al druido +5 a Nascondersi, ma lo immobilizza e deve essere lanciato nuovamente per poterne uscire. Il fogliame si può tagliar via infliggendo 10 danni.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "Personale",
+        "duration": "",
+        "effect": "<p>Tracciare il Sigillo dei Celati ricopre un'area di 3m con rami, foglie e altri elementi naturali, che coprono completamente la visuale. Ciò conferisce al druido +5 a Nascondersi, ma lo immobilizza e deve essere lanciato nuovamente per poterne uscire. Il fogliame si può tagliar via infliggendo 10 danni.</p>",
+        "sourcebook": "MB 111",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

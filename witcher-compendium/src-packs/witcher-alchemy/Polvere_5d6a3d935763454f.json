@@ -1,0 +1,28 @@
+{
+    "_id": "5d6a3d935763454f",
+    "name": "Polvere",
+    "type": "alchemical",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag145_Sostanze Alchemiche_01.png",
+    "system": {
+        "description": "<p>Coagulante Quando sanguini a tutto spiano e un medico ha qualche problema a badare a te, un po’ di polvere coagulante a por- tata di mano fa al caso tuo. Argina il flusso per un po’.</p>",
+        "weight": 0.1,
+        "cost": 18,
+        "toxicity": "0%",
+        "duration": "N/A",
+        "effect": "<p>Velo di Polvere solleva il pulviscolo presente nell'area per formare una nube di 10 metri cubi che, per un Round, evidenza la sagome di eventuali creature invisibili al suo interno. Il mago sceglie un bersaglio nell'area e, se questi fallisce nel difendersi, la polvere gli aderisce addosso negando i benefici dell'invisibilità.</p>",
+        "sourcebook": "MB 45",
+        "source": "MB 45"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

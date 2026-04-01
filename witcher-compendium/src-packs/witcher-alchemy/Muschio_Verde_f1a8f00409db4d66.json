@@ -1,0 +1,28 @@
+{
+    "_id": "f1a8f00409db4d66",
+    "name": "Muschio Verde",
+    "type": "alchemical",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag145_Sostanze Alchemiche_02.png",
+    "system": {
+        "description": "<p>C Caverne 1d10 Unità 12 0,1 8</p>",
+        "weight": 0.1,
+        "cost": 8,
+        "toxicity": "0%",
+        "duration": "N/A",
+        "effect": "<p>Aard scaglia un'ondata di forza telecinetica che rende vacillanti le creature e ha il 10% di possibilità che i bersagli cadano a terra. La percentuale aumenta del 10% per ogni punto RES speso.</p>",
+        "sourcebook": "MB 145",
+        "source": "MB 145"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

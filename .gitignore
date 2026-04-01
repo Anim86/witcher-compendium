@@ -1,0 +1,18 @@
+# Source materials
+Tomo Base/
+Tomo del Caos/
+DocumentoLavoro/
+*.pdf
+*.txt
+*.log
+
+# Python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Foundry specific (if any)
+*.lock

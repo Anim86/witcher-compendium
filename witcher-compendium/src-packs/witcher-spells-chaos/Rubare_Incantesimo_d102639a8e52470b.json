@@ -1,0 +1,32 @@
+{
+    "_id": "d102639a8e52470b",
+    "name": "Rubare Incantesimo",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag083_Incantesimi da Mago_01.png",
+    "system": {
+        "description": "<p>Modellare Terra Gwyntog Fuoco Vivente Estrazione di Ainfra Specchio Oscuro di Bekker Stasi Cristallina Mano della Tempesta Vampata del Korath Piena di Ys</p>",
+        "weight": 0,
+        "cost": 20,
+        "range": "10m",
+        "duration": "Istantanea",
+        "defense": "Nessuna",
+        "tier": "Maestro",
+        "subtype": "Misto",
+        "category": "Mago",
+        "effect": "<p>Rubare Incantesimo permette di prendere il controllo di una magia altrui e dirigerla contro un nuovo bersaglio. Quando assiste al lancio di un incantesimo non da Maestro, il mago può immediatamente costringere l'avversario a effettuare una prova contrapposta di Lanciare Incantesimi. Se il mago vince, può dirigere l'incantesimo contro un bersaglio che si trova entro la normale gittata, calcolata dalla posizione dell'incantatore originale o dalla sua. Se l'incantesimo richiede un tiro di attacco, il risultato della prova contrapposta viene usato anche a questo scopo. Se l'incantesimo è Attivo, il mago ne conserva il controllo e deve pagarne il costo.</p>",
+        "sourcebook": "TC 83",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

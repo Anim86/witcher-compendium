@@ -1,0 +1,28 @@
+{
+    "_id": "3e0388492f2041d9",
+    "name": "Spazzata Aard (Aria)",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Aard ora genera uno scoppio di forza tele- cinetica attorno all’incantatore. Per ogni punto di RES speso, ogni bersaglio colpito dall’esplosione ha il 10% di probabilità di essere gettato a terra ed es- sere vacillante. Lo scoppio si estende in ogni direzione come una sfera. Le creature volanti colpite da Spazzata Aard cadono a terra normalmente.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "Raggio di 4m",
+        "duration": "",
+        "effect": "<p>Aard ora genera uno scoppio di forza telecinetica attorno all'incantatore. Per ogni punto di RES speso, ogni bersaglio colpito dall'esplosione ha il 10% di probabilità di essere gettato a terra ed essere vacillante. Lo scoppio si estende in ogni direzione come una sfera. Le creature volanti colpite da Spazzata Aard cadono a terra normalmente.</p>",
+        "sourcebook": "MB 14",
+        "source": "Air"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

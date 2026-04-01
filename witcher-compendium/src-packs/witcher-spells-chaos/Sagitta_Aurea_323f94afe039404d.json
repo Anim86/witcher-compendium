@@ -1,0 +1,32 @@
+{
+    "_id": "323f94afe039404d",
+    "name": "Sagitta Aurea",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag095_Invocazioni da Prete_01.png",
+    "system": {
+        "description": "<p>Costo in RES: 14 Effetto: Sagitta Aurea richiama il potere della divinità sotto forma di una lancia di luce dorata. Il bersaglio deve difendersi contro la prova di Lanciare Incantesimi del Prete, oppure subire 7d6 danni. Sagitta Aurea può viaggiare in linea retta, colpendo più bersagli e costrin- gendo ciascuno a una prova di Difesa. Se qualcuno è posseduto da un demone, anche questi subisce danno ed è costretto ad abbandonare il corpo, oltre a non po- ter usare le proprie capacità nel Round seguente. Portata: 20m Durata: Istantanea Difese: Schivare</p>",
+        "weight": 0,
+        "cost": 14,
+        "range": "20m",
+        "duration": "Istantanea",
+        "defense": "Schivare",
+        "tier": "Novizio",
+        "subtype": "Misto",
+        "category": "Prete",
+        "effect": "<p>Sagitta Aurea richiama il potere della divinità sotto forma di una lancia di luce dorata. Il bersaglio deve difendersi contro la prova di Lanciare Incantesimi del Prete, oppure subire 7d6 danni. Sagitta Aurea può viaggiare in linea retta, colpendo più bersagli e costringendo ciascuno a una prova di Difesa. Se qualcuno è posseduto da un demone, anche questi subisce danno ed è costretto ad abbandonare il corpo, oltre a non poter usare le proprie capacità nel Round seguente.</p>",
+        "sourcebook": "TC 93",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "_id": "e72a7cd973694464",
+    "name": "Schermo Magico",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag083_Incantesimi da Mago_01.png",
+    "system": {
+        "description": "<p>Incantesimi da Esperto Camera di Dormyn Bastione di Elgan Fulmine Globulare Forgia del Mago Arrugginire Compromettere Focus Frana di Bekker Nastro Invisibile Porta di Cenere Essenza della Pozione Laccio Spettrale Sciame di Javed Tocco Fulminante Tocco del Fabbro Invaerne Manto Portale Trappola Rafforzare Incantesimi da Maestro Rubare Incantesimo Modellare Terra Gwyntog Fuoco Vivente Estrazione di Ainfra Specchio Oscuro di Bekker Stasi Cristallina Mano della Tempesta Vampata del Korath Piena di Ys</p>",
+        "weight": 0,
+        "cost": 3,
+        "range": "4m",
+        "duration": "Istantanea",
+        "defense": "Resistere alla Magia",
+        "tier": "Maestro",
+        "subtype": "Misto",
+        "category": "Mago",
+        "effect": "<p>Schermo Magico crea un'illusione molto specifica che copre un volume di 2 metri cubi. Quando lancia l'incantesimo, il mago può nascondere ogni oggetto presente nell'area, oppure alterarne l'aspetto. La modifica è solo visiva e permane finché la magia non viene dispersa o l'oggetto allontanato dall'area d'effetto. Chi arriva entro 4m dal punto in cui è stato lanciato Schermo Magico può effettuare una prova di Resistere alla Magia per vedere oltre l'illusione.</p>",
+        "sourcebook": "TC 83",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

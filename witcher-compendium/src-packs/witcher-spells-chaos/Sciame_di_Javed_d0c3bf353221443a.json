@@ -1,0 +1,32 @@
+{
+    "_id": "d0c3bf353221443a",
+    "name": "Sciame di Javed",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag088_Incantesimi da Mago_01.png",
+    "system": {
+        "description": "<p>Tocco Fulminante Tocco del Fabbro Invaerne Manto Portale Trappola Rafforzare Incantesimi da Maestro Rubare Incantesimo Modellare Terra Gwyntog Fuoco Vivente Estrazione di Ainfra Specchio Oscuro di Bekker Stasi Cristallina Mano della Tempesta Vampata del Korath Piena di Ys</p>",
+        "weight": 0,
+        "cost": 10,
+        "range": "6m",
+        "duration": "10 minuti",
+        "defense": "Nessuna",
+        "tier": "Maestro",
+        "subtype": "Misto",
+        "category": "Mago",
+        "effect": "<p>Sciame di Javed conferisce il dominio sugli insetti presenti nelle vicinanze. Una volta lanciato, gli insetti strisciano fuori da buchi e crepe, formando uno sciame con VEL 7, che ingloba un singolo bersaglio eseguendo un attacco con Base 14. La vittima subisce l'effetto Avvelenato (100%) e 1d6 danni al Torso, ignorando le armature. Lo sciame ha 15 PS e Base di Eludere 14.</p>",
+        "sourcebook": "TC 88",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

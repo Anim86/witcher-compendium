@@ -1,0 +1,28 @@
+{
+    "_id": "76393b2c41644a1a",
+    "name": "Fortuna del Padre",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Con il potere conferitogli da Kreve, il Padre di Tutti, il prete attira a sé la divina provvidenza. Per tut- ta la durata dell’incantesimo può spendere un numero di punti FOR pari al triplo del suo valore di Lanciare Incantesimi. Può migliorare qualsiasi tiro da lui esegui- to, ma può anche imporre penalità o conferire bonus al tiro di un bersaglio entro 10m da lui.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "Personale/10m",
+        "duration": "",
+        "effect": "<p>Con il potere conferitogli da Kreve, il Padre di Tutti, il prete attira a sé la divina provvidenza. Per tutta la durata dell'incantesimo può spendere un numero di punti FOR pari al triplo del suo valore di Lanciare Incantesimi. Può migliorare qualsiasi tiro da lui eseguito, ma può anche imporre penalità o conferire bonus al tiro di un bersaglio entro 10m da lui.</p>",
+        "sourcebook": "MB 115",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

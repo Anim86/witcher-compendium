@@ -1,0 +1,28 @@
+{
+    "_id": "1e50b5373f534d66",
+    "name": "Aine Verseos",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Aine Verseos crea un’area di luce splendente in un raggio di 4m centrato sull’incantatore.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "Raggio di 4m",
+        "duration": "Attiva (2 RES)",
+        "effect": "<p>Aine Verseos crea un'area di luce splendente in un raggio di 4m centrato sull'incantatore.</p>",
+        "sourcebook": "MB 105",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

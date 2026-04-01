@@ -1,0 +1,28 @@
+{
+    "_id": "c25716562fd847fb",
+    "name": "Benedizione di Guarigione",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Benedizione di Guarigione incrementa la guari- gione del bersaglio, permettendogli di guarire al ritmo di 3 Punti Salute per round. Questa benedizione può essere impiegata più volte per risanare una ferita critica.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "2m",
+        "duration": "",
+        "effect": "<p>Benedizione di Guarigione incrementa la guarigione del bersaglio, permettendogli di guarire al ritmo di 3 Punti Salute per round. Questa benedizione può essere impiegata più volte per risanare una ferita critica.</p>",
+        "sourcebook": "MB 111",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

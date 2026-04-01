@@ -1,0 +1,28 @@
+{
+    "_id": "9021932acfa045c1",
+    "name": "Soffio di Korath",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Soffio di Korath spezza una pietra o una superfi- cie di terra, spruzzando sabbia ardente in un cono di 3m generato dall’incantatore. I bersagli nell’area che fallisco- no il tiro di difesa sono accecati per 1d6 round.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "Cono di 3m",
+        "duration": "Istantanea",
+        "effect": "<p>Soffio di Korath spezza una pietra o una superficie di terra, spruzzando sabbia ardente in un cono di 3m generato dall'incantatore. I bersagli nell'area che falliscono il tiro di difesa sono accecati per 1d6 round.</p>",
+        "sourcebook": "MB 105",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

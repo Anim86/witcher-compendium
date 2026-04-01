@@ -1,0 +1,28 @@
+{
+    "_id": "08816405b9304d1e",
+    "name": "Vortice Fiammeggiante",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Vortice Fiammeggiante crea un tornado di fiamme largo 2m. L’incantatore può dirigere il torna- do spostandolo di un numero di metri per turno pari al valore dell’Abilità Lanciare Incantesimi. Se travolge un bersaglio, l’incantatore effettua un tiro di Lanciare Incantesimi contrapposto al tiro di Eludere del bersaglio. Se ha successo, il bersaglio subisce 5d6 danni e ha il 50% di probabilità di subire l’effetto A Fuoco. Il vortice non si sposta oltre il raggio dell’incantesimo.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "Raggio di 10m",
+        "duration": "Attiva (4 RES)",
+        "effect": "<p>Vortice Fiammeggiante crea un tornado di fiamme largo 2m. L'incantatore può dirigere il tornado spostandolo di un numero di metri per turno pari al valore dell'Abilità Lanciare Incantesimi. Se travolge un bersaglio, l'incantatore effettua un tiro di Lanciare Incantesimi contrapposto al tiro di Eludere del bersaglio. Se ha successo, il bersaglio subisce 5d6 danni e ha il 50% di probabilità di subire l'effetto A Fuoco. Il vortice non si sposta oltre il raggio dell'incantesimo.</p>",
+        "sourcebook": "MB 108",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

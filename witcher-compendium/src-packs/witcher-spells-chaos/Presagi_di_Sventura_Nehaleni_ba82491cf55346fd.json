@@ -1,0 +1,32 @@
+{
+    "_id": "ba82491cf55346fd",
+    "name": "Presagi di Sventura (Nehaleni)",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag097_Invocazioni da Prete_01.png",
+    "system": {
+        "description": "<p>Costo in RES: 16 Effetto: il Prete lascia che Nehaleni riempia la sua mente con migliaia di barlumi di possibili futuri, non imme- diatamente comprensibili. Il Giocatore lancia 1d10 più volte, fino a ottenere tre risultati diversi da 1 o 10, che deve segnarsi. Per la durata dell’invocazione, se una cre- atura entro 20m dal Prete ottiene uno di questi risultati tirando 1d10, questi riconosce la scena e può, senza biso- gno di un’Azione, trasformare il risultato in un Disastro. Portata: Personale Durata: 1 giorno Difese: Nessuna Vendetta del Corvo (Morrigan) Costo in RES: 16 Effetto: con il potere di Morrigan, Signora dei Corvi, il Prete interrompe il collegamento con i piani elementali, annullando tutta la magia presente. All’interno dell’area di questa invocazione, tutta la magia (rune, glifi, focus, maledizioni, trofei, reliquie, oggetti magici, ecc.) diventa inerte e solo gli individui scelti dal Prete o chi riesce a difendersi possono lanciare incantesimi. Questa invoca- zione non può essere dissipata. Portata: 20m Durata: Attiva (5 RES) Difese: Resistere alla Magia</p>",
+        "weight": 0,
+        "cost": 16,
+        "range": "Personale",
+        "duration": "1 giorno",
+        "defense": "Nessuna",
+        "tier": "Novizio",
+        "subtype": "Misto",
+        "category": "Prete",
+        "effect": "<p>il Prete lascia che Nehaleni riempia la sua mente con migliaia di barlumi di possibili futuri, non immediatamente comprensibili. Il Giocatore lancia 1d10 più volte, fino a ottenere tre risultati diversi da 1 o 10, che deve segnarsi. Per la durata dell'invocazione, se una creatura entro 20m dal Prete ottiene uno di questi risultati tirando 1d10, questi riconosce la scena e può, senza bisogno di un'Azione, trasformare il risultato in un Disastro.</p>",
+        "sourcebook": "TC 97",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

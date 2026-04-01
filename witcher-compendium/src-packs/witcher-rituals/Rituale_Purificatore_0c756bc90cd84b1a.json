@@ -1,0 +1,28 @@
+{
+    "_id": "0c756bc90cd84b1a",
+    "name": "Rituale Purificatore",
+    "type": "ritual",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag118_Rituali_01.png",
+    "system": {
+        "description": "<p>Questo rituale purifica il corpo del bersaglio da veleni o malattie. Quando è attivato, il ritualista effettua una prova di Officiare Rituali contro una specifica CD per purificare il soggetto. Alcol e droghe sono relativa- mente semplici, con CD 12. Pozioni e unguenti sono più complessi, con CD 15. Le malattie gravi sono molto dif- ficili da epurare, con CD 18. Il Rituale Purificatore non è in grado di curare pestilenze come la peste Catriona.</p>",
+        "weight": 0,
+        "cost": 3,
+        "range": "N/A",
+        "duration": "Istantanea",
+        "effect": "<p>Questo rituale purifica il corpo del bersaglio da veleni o malattie. Quando è attivato, il ritualista effettua una prova di Officiare Rituali contro una specifica CD per purificare il soggetto. Alcol e droghe sono relativamente semplici, con CD 12. Pozioni e unguenti sono più complessi, con CD 15. Le malattie gravi sono molto difficili da epurare, con CD 18. Il Rituale Purificatore non è in grado di curare pestilenze come la peste Catriona.</p>",
+        "sourcebook": "MB 119",
+        "source": "MB 119"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

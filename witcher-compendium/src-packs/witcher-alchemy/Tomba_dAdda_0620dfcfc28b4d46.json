@@ -1,0 +1,28 @@
+{
+    "_id": "0620dfcfc28b4d46",
+    "name": "Tomba d’Adda",
+    "type": "alchemical",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag145_Sostanze Alchemiche_01.png",
+    "system": {
+        "description": "<p>Non so se sia una strana coincidenza o se si riferisca davvero alla Principessa Adda. In ogni caso è ottima per mantenere intatte le prove e conservare il cibo. Però gli lascia uno strano retrogusto.</p>",
+        "weight": 0.1,
+        "cost": 45,
+        "toxicity": "0%",
+        "duration": "N/A",
+        "effect": "<p>Aard scaglia un'ondata di forza telecinetica che rende vacillanti le creature e ha il 10% di possibilità che i bersagli cadano a terra. La percentuale aumenta del 10% per ogni punto RES speso.</p>",
+        "sourcebook": "MB 90",
+        "source": "MB 90"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

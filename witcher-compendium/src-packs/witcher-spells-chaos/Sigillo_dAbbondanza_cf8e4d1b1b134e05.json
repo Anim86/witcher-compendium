@@ -1,0 +1,32 @@
+{
+    "_id": "cf8e4d1b1b134e05",
+    "name": "Sigillo d’Abbondanza",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag083_Incantesimi da Mago_01.png",
+    "system": {
+        "description": "<p>Voce del Consigliere Bleobheris Ombra di Bleobheris Gedyneith Pozzo di Conoscenza Invocazioni da Esperto Caed Myrkvid Santuario del Bosco Nero Impurità di Bigelow Sangue del Monte Gwyn Carn Venti della Taiga Sigillo della Caccia Invocazioni da Maestro Ira della Natura Totem Druidico</p>",
+        "weight": 0,
+        "cost": 1,
+        "range": "2m",
+        "duration": "10 minuti",
+        "defense": "Nessuna",
+        "tier": "Novizio",
+        "subtype": "Misto",
+        "category": "Druido",
+        "effect": "<p>spesso usato dai Druidi che fanno da consiglieri ai villaggi rurali, Sigillo d'Abbondanza rinvigorisce un aspetto della natura in tre modi possibili. Se usato su cibi o bevande andati a male li rende di nuovo freschi e deliziosi; su una pianta fa sì che questa produca il doppio (anche in termini di componenti); infine, usarlo su un appezzamento di terreno assicura che ogni pianta che vi è coltivata raggiunga il doppio delle dimensioni in metà del tempo.</p>",
+        "sourcebook": "TC 98",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

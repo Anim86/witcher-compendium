@@ -1,0 +1,28 @@
+{
+    "_id": "3fc32242754d4748",
+    "name": "Polvere Accecante",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Polvere Accecante permette all’incantatore di scagliare polvere magica negli occhi di un bersaglio, ac- cecandolo per la durata dell’incantesimo.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "4m",
+        "duration": "1d10 Round",
+        "effect": "<p>Polvere Accecante permette all'incantatore di scagliare polvere magica negli occhi di un bersaglio, accecandolo per la durata dell'incantesimo.</p>",
+        "sourcebook": "MB 103",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "_id": "4375d03295e24907",
+    "name": "Incantesimo Diagnostico",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Incantesimo Diagnostico consente all’incanta- tore di valutare rapidamente la salute di un bersaglio e di determinare quanti Punti Salute possiede, eventuali ferite critiche, malattie o avvelenamenti.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "5m",
+        "duration": "Istantanea",
+        "effect": "<p>Incantesimo Diagnostico consente all'incantatore di valutare rapidamente la salute di un bersaglio e di determinare quanti Punti Salute possiede, eventuali ferite critiche, malattie o avvelenamenti.</p>",
+        "sourcebook": "MB 18",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

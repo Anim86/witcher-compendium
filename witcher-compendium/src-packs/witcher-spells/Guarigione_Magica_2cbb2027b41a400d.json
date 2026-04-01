@@ -1,0 +1,28 @@
+{
+    "_id": "2cbb2027b41a400d",
+    "name": "Guarigione Magica",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Guarigione Magica stimola la guarigione natu- rale del bersaglio, guarendolo al ritmo di 3 Punti Salute per turno. L’effetto perdura fino al termine dell’incante- simo. In alternativa, l’incantesimo può essere usato ripe- tutamente per curare una ferita critica.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "2m",
+        "duration": "1d10 Round",
+        "effect": "<p>Guarigione Magica stimola la guarigione naturale del bersaglio, guarendolo al ritmo di 3 Punti Salute per turno. L'effetto perdura fino al termine dell'incantesimo. In alternativa, l'incantesimo può essere usato ripetutamente per curare una ferita critica.</p>",
+        "sourcebook": "MB 104",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

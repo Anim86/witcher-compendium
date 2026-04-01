@@ -1,0 +1,28 @@
+{
+    "_id": "318bd5f6a93a480e",
+    "name": "Amico delle Bestie",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Amico delle Bestie conferisce al druido +3 alle prove per influenzare animali. In alternativa può calma- re un animale, se supera VOL ×3 del bersaglio con il tiro di Lanciare Incantesimi.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "8m",
+        "duration": "",
+        "effect": "<p>Amico delle Bestie conferisce al druido +3 alle prove per influenzare animali. In alternativa può calmare un animale, se supera VOL ×3 del bersaglio con il tiro di Lanciare Incantesimi.</p>",
+        "sourcebook": "MB 111",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

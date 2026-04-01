@@ -1,0 +1,28 @@
+{
+    "_id": "3adef612679c4741",
+    "name": "Seirff Haul",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Seirff Haul crea vari serpenti fatti di fuoco magi- co che si avventano su un bersaglio. Il soggetto è in lotta e A Fuoco finché non supera una prova di Eludere contrap- posta al tiro di Lanciare Incantesimi dell’incantatore. Per ogni round in cui il soggetto fallisce il tiro di Eludere, i serpenti stringono la presa e la CD aumenta di 1.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "10m",
+        "duration": "2d10 Round",
+        "effect": "<p>Seirff Haul crea vari serpenti fatti di fuoco magico che si avventano su un bersaglio. Il soggetto è in lotta e A Fuoco finché non supera una prova di Eludere contrapposta al tiro di Lanciare Incantesimi dell'incantatore. Per ogni round in cui il soggetto fallisce il tiro di Eludere, i serpenti stringono la presa e la CD aumenta di 1.</p>",
+        "sourcebook": "MB 108",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "_id": "c70915dff74c445f",
+    "name": "Fegato di Troll",
+    "type": "alchemical",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag145_Sostanze Alchemiche_02.png",
+    "system": {
+        "description": "<p>R Reperibile sui troll delle rocce N/A N/A 1 87</p>",
+        "weight": 1,
+        "cost": 87,
+        "toxicity": "0%",
+        "duration": "N/A",
+        "effect": "<p>Aard scaglia un'ondata di forza telecinetica che rende vacillanti le creature e ha il 10% di possibilità che i bersagli cadano a terra. La percentuale aumenta del 10% per ogni punto RES speso.</p>",
+        "sourcebook": "MB 146",
+        "source": "MB 146"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

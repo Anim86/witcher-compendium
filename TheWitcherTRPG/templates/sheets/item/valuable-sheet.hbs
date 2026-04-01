@@ -1,0 +1,31 @@
+<section class="scrollable">
+    {{>"systems/TheWitcherTRPG/templates/partials/item-header.hbs"}}
+    <table class="item-table">
+        <tr>
+            <th>{{localize "WITCHER.Type"}}</th>
+            <th>{{localize "WITCHER.Item.Short.Availability"}}</th>
+            <th>{{localize "WITCHER.Valuable.Conceal"}}</th>
+        </tr>
+        <tr>
+            <td>
+                <select name="system.type" id="type-select">
+                    {{selectOptions selects.type selected=item.system.type localize=true}}
+                </select>
+            </td>
+            <td>
+                <select name="system.avail">
+                    {{selectOptions config.Availability selected=item.system.avail localize=true}}
+                </select>
+            </td>
+            <td>
+                <select name="system.conceal">
+                    {{selectOptions config.Concealment selected=item.system.conceal localize=true}}
+                </select>
+            </td>
+        </tr>
+    </table>
+    <div class="grid">
+        <label>{{localize "WITCHER.Item.Description"}}</label>
+        <textarea rows="5" name="system.description">{{item.system.description}}</textarea>
+    </div>
+</section>

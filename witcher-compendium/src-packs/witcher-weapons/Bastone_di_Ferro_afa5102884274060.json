@@ -1,0 +1,33 @@
+{
+    "_id": "afa5102884274060",
+    "name": "Bastone di Ferro",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag130_Componenti per la Manifattura_01.png",
+    "system": {
+        "description": "<p>Amuleto con Gemma Torrwr Magia Ampliata 10 Brigantina Brache Corazzate Potenziamenti Nanici per Armature Malelingue 6 Lanterna Pipa e Tabacco Spirito Mutare 5 Elisir Marciatore Elisir Steroidi Anabolizzanti Corda Magica Elfica Risorse 7 Plancia da Poker con Dadi Borsello Razioni da Viaggio (1 giorno) Sintonia 10 Davide Mesina 355175</p>",
+        "weight": 4,
+        "cost": 675,
+        "damage": "3d6",
+        "reliability": {
+            "value": 15,
+            "max": 15
+        },
+        "accuracy": 0,
+        "hands": 2,
+        "reach": "N/A",
+        "effects": "Portata Focus (2)",
+        "sourcebook": "MB 76"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

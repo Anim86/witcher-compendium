@@ -1,0 +1,28 @@
+{
+    "_id": "2381446e422f4843",
+    "name": "Vista della Natura",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Vista della Natura consente al druido di vedere creature che non fanno parte di questo reame naturale. Gli consente d’individuare mostri entro 50m, anche at- traverso gli ostacoli. I mostri così individuati appaiono come versioni scintillanti di loro stessi.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "Personale",
+        "duration": "",
+        "effect": "<p>Vista della Natura consente al druido di vedere creature che non fanno parte di questo reame naturale. Gli consente d'individuare mostri entro 50m, anche attraverso gli ostacoli. I mostri così individuati appaiono come versioni scintillanti di loro stessi.</p>",
+        "sourcebook": "MB 111",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

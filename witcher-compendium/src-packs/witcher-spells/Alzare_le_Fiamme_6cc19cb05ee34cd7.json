@@ -1,0 +1,28 @@
+{
+    "_id": "6cc19cb05ee34cd7",
+    "name": "Alzare le Fiamme",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Alzare le Fiamme consente all’incantatore di diffondere un fuoco già esistente alla velocità di 2m per round in una direzione qualsiasi, di smorzarlo fino a una debole fiammella (riducendo il danno da fuoco di 1) o di intensificare le fiamme (aumentando il danno da fuoco di 1).</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "10m",
+        "duration": "Attiva (2 RES)",
+        "effect": "<p>Alzare le Fiamme consente all'incantatore di diffondere un fuoco già esistente alla velocità di 2m per round in una direzione qualsiasi, di smorzarlo fino a una debole fiammella (riducendo il danno da fuoco di 1) o di intensificare le fiamme (aumentando il danno da fuoco di 1).</p>",
+        "sourcebook": "MB 105",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

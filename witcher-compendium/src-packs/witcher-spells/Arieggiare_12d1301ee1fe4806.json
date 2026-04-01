@@ -1,0 +1,28 @@
+{
+    "_id": "12d1301ee1fe4806",
+    "name": "Arieggiare",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Arieggiare consente di ripulire un’area di 4m di raggio (centrata sull’incantatore) da ogni fumo, ve- leno o altra contaminazione dell’aria, per tutta la durata dell’incantesimo.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "Raggio di 4m",
+        "duration": "Attiva (2 RES)",
+        "effect": "<p>Arieggiare consente di ripulire un'area di 4m di raggio (centrata sull'incantatore) da ogni fumo, veleno o altra contaminazione dell'aria, per tutta la durata dell'incantesimo.</p>",
+        "sourcebook": "MB 105",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

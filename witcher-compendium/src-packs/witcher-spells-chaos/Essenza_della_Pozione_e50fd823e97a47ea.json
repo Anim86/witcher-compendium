@@ -1,0 +1,32 @@
+{
+    "_id": "e50fd823e97a47ea",
+    "name": "Essenza della Pozione",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag090_Incantesimi da Mago_01.png",
+    "system": {
+        "description": "<p>Laccio Spettrale Sciame di Javed Tocco Fulminante Tocco del Fabbro Invaerne Manto Portale Trappola Rafforzare Incantesimi da Maestro Rubare Incantesimo Modellare Terra Gwyntog Fuoco Vivente Estrazione di Ainfra Specchio Oscuro di Bekker Stasi Cristallina Mano della Tempesta Vampata del Korath Piena di Ys</p>",
+        "weight": 0,
+        "cost": 12,
+        "range": "2m",
+        "duration": "Permanente",
+        "defense": "Nessuna",
+        "tier": "Maestro",
+        "subtype": "Misto",
+        "category": "Mago",
+        "effect": "<p>Essenza della Pozione trasferisce a un'Unità di Essenza Acquatica le proprietà di una singola dose di un Decotto, Pozione o Elisir, che non sia mai stato influenzato da questo incantesimo. L'Essenza diventa una copia della sostanza scelta.</p>",
+        "sourcebook": "TC 90",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

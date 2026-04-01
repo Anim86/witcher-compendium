@@ -1,0 +1,33 @@
+{
+    "_id": "4382864124ce4ea9",
+    "name": "Ascia da Berserker",
+    "type": "weapon",
+    "img": "icons/svg/sword.svg",
+    "system": {
+        "description": "<p>Pugnale Krigsverd Malelingue 6 Munizioni a Punta Larga (×10) Amuleto con Gemma (×2) Trofeo di Viverna Mutare 0 Corda e Rampino Mazzo di Gwent (Skellige) Borraccia Risorse 8 Abiti per Climi Freddi Pietra del Sole Simbolo Sacro (Freya) Sintonia 10 Davide Mesina 355175</p>",
+        "weight": 3.0,
+        "cost": 960,
+        "damage": "6d6",
+        "reliability": {
+            "value": 15,
+            "max": 15
+        },
+        "accuracy": 0,
+        "hands": 2,
+        "reach": "N/A",
+        "effects": "Ablativa Sanguinamento (25%)",
+        "sourcebook": "MB 75"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

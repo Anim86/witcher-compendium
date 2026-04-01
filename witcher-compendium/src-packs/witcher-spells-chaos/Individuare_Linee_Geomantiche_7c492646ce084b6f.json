@@ -1,0 +1,32 @@
+{
+    "_id": "7c492646ce084b6f",
+    "name": "Individuare Linee Geomantiche",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag083_Incantesimi da Mago_01.png",
+    "system": {
+        "description": "<p>. 8 Assistente del Professore Il PG lavora come aiutante di un professore o del suo mentore. Grazie a tale esperienza, dimezza il numero di prove che deve eseguire per insegnare un Incantesimo a un altro mago. 9 Apprendista Alchimista Il PG studia i più grandi misteri dell’alchimia. Ottiene due Formule Alchemiche da Novizio e +1 ad Alchimia. 10 Esperto Divinatore Il PG si è tuffato nello studio di divinazione e chiromanzia. Ottiene uno dei seguenti Rituali: Idromanzia, Oniromanzia, Piromanzia o Tiromanzia.</p>",
+        "weight": 0,
+        "cost": 5,
+        "range": "1,6km",
+        "duration": "Istantanea",
+        "defense": "Nessuna",
+        "tier": "Maestro",
+        "subtype": "Misto",
+        "category": "Mago",
+        "effect": "<p>questo incantesimo permette al mago di localizzare la Linea Geomantica più vicina, lanciando un impulso magico. Quando lancia la magia, la sua mano punta da sola verso la Linea e ne percepisce l'elemento.</p>",
+        "sourcebook": "TC 83",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

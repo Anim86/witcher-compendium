@@ -1,0 +1,28 @@
+{
+    "_id": "4f1e5eaee19947fb",
+    "name": "Sangue Bollente",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Sangue Bollente scatena la furia di un anima- le o un mostro non senziente entro portata contro un bersaglio. La creatura cercherà di attaccare il bersaglio prescelto per tutta la durata della magia.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "8m",
+        "duration": "",
+        "effect": "<p>Sangue Bollente scatena la furia di un animale o un mostro non senziente entro portata contro un bersaglio. La creatura cercherà di attaccare il bersaglio prescelto per tutta la durata della magia.</p>",
+        "sourcebook": "MB 111",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "_id": "3d56bf4caf2545a7",
+    "name": "Fuoco Purificatore",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Fuoco Purificatore incendia un bersaglio, inflig- gendo 3d6 danni e infliggendo l’effetto A Fuoco.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "10m",
+        "duration": "",
+        "effect": "<p>Fuoco Purificatore incendia un bersaglio, infliggendo 3d6 danni e infliggendo l'effetto A Fuoco.</p>",
+        "sourcebook": "MB 111",
+        "source": "Fire"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

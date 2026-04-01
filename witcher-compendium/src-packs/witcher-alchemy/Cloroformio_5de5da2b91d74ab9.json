@@ -1,0 +1,28 @@
+{
+    "_id": "5de5da2b91d74ab9",
+    "name": "Cloroformio",
+    "type": "alchemical",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag145_Sostanze Alchemiche_01.png",
+    "system": {
+        "description": "<p>Il cloroformio è per chi rapisce gente e per chi deve calmare persone terrorizzate. È più facile che lo usino i rapinatori, ma ogni tanto mi piace essere positivo, eh.</p>",
+        "weight": 0.1,
+        "cost": 36,
+        "toxicity": "0%",
+        "duration": "N/A",
+        "effect": "<p>Aard scaglia un'ondata di forza telecinetica che rende vacillanti le creature e ha il 10% di possibilità che i bersagli cadano a terra. La percentuale aumenta del 10% per ogni punto RES speso.</p>",
+        "sourcebook": "MB 43",
+        "source": "MB 43"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

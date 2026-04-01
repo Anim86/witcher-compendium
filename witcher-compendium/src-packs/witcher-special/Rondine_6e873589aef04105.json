@@ -1,0 +1,28 @@
+{
+    "_id": "6e873589aef04105",
+    "name": "Rondine",
+    "type": "alchemical",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag089_Prodotti Alchemici_08.png",
+    "system": {
+        "description": "<p>Il witcher rigenera 3 PS a round. Non rigenera nei round in cui viene colpito. Usi multipli non sono cumulativi.</p>",
+        "weight": 0,
+        "cost": 0,
+        "toxicity": "50%",
+        "duration": "20 round",
+        "effect": "<p>Aard scaglia un'ondata di forza telecinetica che rende vacillanti le creature e ha il 10% di possibilità che i bersagli cadano a terra. La percentuale aumenta del 10% per ogni punto RES speso.</p>",
+        "sourcebook": "MB 249",
+        "source": "MB 249"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

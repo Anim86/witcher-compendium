@@ -1,0 +1,28 @@
+{
+    "_id": "5d3f49217af34e78",
+    "name": "Tryferi Gaeaf",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Tryferi Gaeaf permette all’incantatore di sca- gliare una quantità di spuntoni di ghiaccio pari a metà del proprio valore dell’Abilità Lanciare Incantesimi, contro quanti bersagli desidera entro la portata dell’in- cantesimo. Questi spuntoni infliggono 5d6 danni e, se il danno supera l’armatura, congelano l’avversario inflig- gendo 2 danni per round finché non vengono spezzati superando una prova di Prestanza con CD 20 o inflig- gendo loro 20 danni. Gli spuntoni altrimenti perdurano fino alla fine dell’incantesimo. Ogni attacco si risolve separatamente.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "20m",
+        "duration": "1d10 Round",
+        "effect": "<p>Tryferi Gaeaf permette all'incantatore di scagliare una quantità di spuntoni di ghiaccio pari a metà del proprio valore dell'Abilità Lanciare Incantesimi, contro quanti bersagli desidera entro la portata dell'incantesimo. Questi spuntoni infliggono 5d6 danni e, se il danno supera l'armatura, congelano l'avversario infliggendo 2 danni per round finché non vengono spezzati superando una prova di Prestanza con CD 20 o infliggendo loro 20 danni. Gli spuntoni altrimenti perdurano fino alla fine dell'incantesimo. Ogni attacco si risolve separatamente.</p>",
+        "sourcebook": "MB 110",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

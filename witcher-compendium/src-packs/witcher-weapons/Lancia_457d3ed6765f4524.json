@@ -1,0 +1,33 @@
+{
+    "_id": "457d3ed6765f4524",
+    "name": "Lancia",
+    "type": "weapon",
+    "img": "icons/svg/sword.svg",
+    "system": {
+        "description": "<p>Ascia da battaglia Coltelli da lancio ×5 Sacca da viaggio Camaglio Brigantina Brache corazzate Balestra e dardi ×20 Brocchiero d'acciaio</p>",
+        "weight": 3.5,
+        "cost": 375,
+        "damage": "3d6",
+        "reliability": {
+            "value": 10,
+            "max": 10
+        },
+        "accuracy": 0,
+        "hands": 2,
+        "reach": "N/A",
+        "effects": "Portata",
+        "sourcebook": "MB 40"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

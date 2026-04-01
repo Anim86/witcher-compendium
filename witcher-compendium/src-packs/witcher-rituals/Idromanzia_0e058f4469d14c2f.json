@@ -1,0 +1,28 @@
+{
+    "_id": "0e058f4469d14c2f",
+    "name": "Idromanzia",
+    "type": "ritual",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag118_Rituali_01.png",
+    "system": {
+        "description": "<p>L’Idromanzia permette al ritualista di fissare in un piccolo specchio d’acqua e di scorgervi un evento av- venuto negli ultimi due giorni, o che si sta svolgendo in quel momento. Osservare un evento passato usa la CD base. Se il ritualista cerca di scorgere un evento che sta avendo luogo, la CD aumenta di 3. Se il ritualista osserva un evento corrente, a cui partecipa un mago questo può percepire la divinazione con un tiro di Arte del Mago contrapposto al tiro di Officiare Rituali.</p>",
+        "weight": 0,
+        "cost": 5,
+        "range": "N/A",
+        "duration": "Attiva (2 RES)",
+        "effect": "<p>L'Idromanzia permette al ritualista di fissare in un piccolo specchio d'acqua e di scorgervi un evento avvenuto negli ultimi due giorni, o che si sta svolgendo in quel momento. Osservare un evento passato usa la CD base. Se il ritualista cerca di scorgere un evento che sta avendo luogo, la CD aumenta di 3. Se il ritualista osserva un evento corrente, a cui partecipa un mago questo può percepire la divinazione con un tiro di Arte del Mago contrapposto al tiro di Officiare Rituali.</p>",
+        "sourcebook": "MB 18",
+        "source": "MB 18"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

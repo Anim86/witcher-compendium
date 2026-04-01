@@ -1,0 +1,28 @@
+{
+    "_id": "2c1043ef3c944ebc",
+    "name": "Benedizione della Morte",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Evocando il potere del Ragno Leonino, il prete trancia i legami della vita che tengono il bersaglio in que- sto mondo. Il bersaglio deve superare un tiro di Resistere alla Magia o cadere Moribondo come se avesse subito danno normalmente. Tuttavia, se curato con un tiro di Pronto Soccorso o Mani Guaritrici con CD 16, torna immediatamente al suo precedente punteggio di Punti Salute.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "10m",
+        "duration": "",
+        "effect": "<p>Evocando il potere del Ragno Leonino, il prete trancia i legami della vita che tengono il bersaglio in questo mondo. Il bersaglio deve superare un tiro di Resistere alla Magia o cadere Moribondo come se avesse subito danno normalmente. Tuttavia, se curato con un tiro di Pronto Soccorso o Mani Guaritrici con CD 16, torna immediatamente al suo precedente punteggio di Punti Salute.</p>",
+        "sourcebook": "MB 115",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

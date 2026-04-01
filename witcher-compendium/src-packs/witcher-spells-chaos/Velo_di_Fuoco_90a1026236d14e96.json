@@ -1,0 +1,32 @@
+{
+    "_id": "90a1026236d14e96",
+    "name": "Velo di Fuoco",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag086_Incantesimi da Mago_01.png",
+    "system": {
+        "description": "<p>Respiro di Aurora Morte di Fergus Recupero Alchemico Riaprire Portale Schermo Magico Incantesimi da Esperto Camera di Dormyn Bastione di Elgan Fulmine Globulare Forgia del Mago Arrugginire Compromettere Focus Frana di Bekker Nastro Invisibile Porta di Cenere Essenza della Pozione Laccio Spettrale Sciame di Javed Tocco Fulminante Tocco del Fabbro Invaerne Manto Portale Trappola Rafforzare Incantesimi da Maestro Rubare Incantesimo Modellare Terra Gwyntog Fuoco Vivente Estrazione di Ainfra Specchio Oscuro di Bekker Stasi Cristallina Mano della Tempesta Vampata del Korath Piena di Ys</p>",
+        "weight": 0,
+        "cost": 3,
+        "range": "2m",
+        "duration": "1 ora",
+        "defense": "Schivare",
+        "tier": "Maestro",
+        "subtype": "Fuoco",
+        "category": "Mago",
+        "effect": "<p>Velo di Fuoco permea impercettibilmente un oggetto di magia, rendendolo altamente infiammabile. Per la durata dell'effetto, l'oggetto divampa appena esposto a una fiamma libera. Se lanciato su una creatura, questa va automaticamente A Fuoco appena possibile.</p>",
+        "sourcebook": "TC 86",
+        "source": "Fire"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

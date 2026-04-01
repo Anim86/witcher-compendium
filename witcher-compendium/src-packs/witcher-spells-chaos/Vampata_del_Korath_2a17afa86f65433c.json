@@ -1,0 +1,32 @@
+{
+    "_id": "2a17afa86f65433c",
+    "name": "Vampata del Korath",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag092_Incantesimi da Mago_01.png",
+    "system": {
+        "description": "<p>Piena di Ys</p>",
+        "weight": 0,
+        "cost": 24,
+        "range": "100m",
+        "duration": "Attiva (4 RES)",
+        "defense": "Nessuna",
+        "tier": "Maestro",
+        "subtype": "Misto",
+        "category": "Mago",
+        "effect": "<p>Vampata del Korath genera attorno al mago un'aura di calore, con un raggio massimo di 40m, che fiacca la Resistenza altrui. Ogni creatura presente nell'area al momento del lancio riduce la propria RES di 2d6, e finché rimane all'interno non può usare l'Azione Recupero. Ogni volta che qualcuno inizia il suo Turno nell'area o vi entra perde altri 2d6 RES. Chi viene ridotto a RES 0 da questo incantesimo sviene e non si riprende finché non torna a RES 20 e supera un tiro di Grinta.</p>",
+        "sourcebook": "TC 92",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

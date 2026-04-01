@@ -1,0 +1,28 @@
+{
+    "_id": "879a887b1c984099",
+    "name": "Quen (Terra)",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Quen crea uno scudo con 5 Punti Salute per punto di Resistenza speso. Se l’incantatore fallisce o sceglie di fallire la difesa, oppure non è in grado di di- fendersi da un attacco o altro effetto che causa danno, il danno è applicato prima allo scudo. Danno letale e non letale riducono i PS dello scudo allo stesso modo. Se lo scudo viene ridotto a 0 PS, il danno rimanente è ap- plicato all’incantatore come di norma, e deve penetrare armatura e resistenza al danno come un normale attacco. Quen può essere usato per difendersi da qualsiasi incan- tesimo che può essere Bloccato, ma è inefficace contro quelli che non possono essere Bloccati o contro danni causati dall’essere già Avvelenato, Soffocato o ammalato. Non si può lanciare Quen di nuovo fino a quando l’at- tuale scudo non è esaurito o la sua durata terminata.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "Personale",
+        "duration": "",
+        "effect": "<p>Quen crea uno scudo con 5 Punti Salute per punto di Resistenza speso. Se l'incantatore fallisce o sceglie di fallire la difesa, oppure non è in grado di difendersi da un attacco o altro effetto che causa danno, il danno è applicato prima allo scudo. Danno letale e non letale riducono i PS dello scudo allo stesso modo. Se lo scudo viene ridotto a 0 PS, il danno rimanente è applicato all'incantatore come di norma, e deve penetrare armatura e resistenza al danno come un normale attacco. Quen può essere usato per difendersi da qualsiasi incantesimo che può essere Bloccato, ma è inefficace contro quelli che non possono essere Bloccati o contro danni causati dall'essere già Avvelenato, Soffocato o ammalato. Non si può lanciare Quen di nuovo fino a quando l'attuale scudo non è esaurito o la sua durata terminata.</p>",
+        "sourcebook": "MB 116",
+        "source": "Earth"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

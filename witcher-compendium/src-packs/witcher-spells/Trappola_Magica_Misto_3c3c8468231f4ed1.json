@@ -1,0 +1,28 @@
+{
+    "_id": "3c3c8468231f4ed1",
+    "name": "Trappola Magica (Misto)",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Yrden ora crea una trappola magica che va pre- parata in un round. Questa trappola attacca utilizzando Lanciare Incantesimi e VOL dell’incantatore e infligge 3d6 danni ai nemici. La trappola effettua un singolo at- tacco contro il nemico più vicino ogni round.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "Raggio di 3m",
+        "duration": "",
+        "effect": "<p>Yrden ora crea una trappola magica che va preparata in un round. Questa trappola attacca utilizzando Lanciare Incantesimi e VOL dell'incantatore e infligge 3d6 danni ai nemici. La trappola effettua un singolo attacco contro il nemico più vicino ogni round.</p>",
+        "sourcebook": "MB 14",
+        "source": "Mixed"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

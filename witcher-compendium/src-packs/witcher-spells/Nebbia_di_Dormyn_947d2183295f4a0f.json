@@ -1,0 +1,28 @@
+{
+    "_id": "947d2183295f4a0f",
+    "name": "Nebbia di Dormyn",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Creato da Dormyn di Gemmera, la Nebbia di Dormyn crea un’area di fitta nebbia con un raggio di 10m, centrata sull’incantatore, che impone una penalità di -3 ad Accortezza e riduce la visuale a 4m.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "Raggio di 10m",
+        "duration": "Attiva (2 RES)",
+        "effect": "<p>Creato da Dormyn di Gemmera, la Nebbia di Dormyn crea un'area di fitta nebbia con un raggio di 10m, centrata sull'incantatore, che impone una penalità di -3 ad Accortezza e riduce la visuale a 4m.</p>",
+        "sourcebook": "MB 106",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

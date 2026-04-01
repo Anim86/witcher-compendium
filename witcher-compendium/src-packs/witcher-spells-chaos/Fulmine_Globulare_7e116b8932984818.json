@@ -1,0 +1,32 @@
+{
+    "_id": "7e116b8932984818",
+    "name": "Fulmine Globulare",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag083_Incantesimi da Mago_01.png",
+    "system": {
+        "description": "<p>Forgia del Mago Arrugginire Compromettere Focus Frana di Bekker Nastro Invisibile Porta di Cenere Essenza della Pozione Laccio Spettrale Sciame di Javed Tocco Fulminante Tocco del Fabbro Invaerne Manto Portale Trappola Rafforzare Incantesimi da Maestro Rubare Incantesimo Modellare Terra Gwyntog Fuoco Vivente Estrazione di Ainfra Specchio Oscuro di Bekker Stasi Cristallina Mano della Tempesta Vampata del Korath Piena di Ys</p>",
+        "weight": 0,
+        "cost": 14,
+        "range": "20m",
+        "duration": "5 Round",
+        "defense": "Schivare",
+        "tier": "Maestro",
+        "subtype": "Fuoco",
+        "category": "Mago",
+        "effect": "<p>incantesimo preferito dai maghi che devono affrontare avversari agili, Fulmine Globulare crea una sfera di elettricità che vola seguendo gli ordini del mago. Una volta creata, la sfera può essere diretta contro un singolo bersaglio, che deve difendersi contro il risultato della prova di Lanciare Incantesimi. Chi fallisce subisce 3d6 danni al Torso e l'effetto della Ferita Critica Commozione Cerebrale per 10 minuti. Anche evitandola, la sfera rimane nei pressi e, nei Turni successivi, il mago potrà dirigerla di nuovo eseguendo un'altra prova di Lanciare Incantesimi. La sfera si disperde dopo il primo colpo a segno.</p>",
+        "sourcebook": "TC 89",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "_id": "11395cac30f940c3",
+    "name": "Canto dei Cieli",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Canto dei Cieli modifica il tempo atmosferi- co dell’area intorno al druido. Può cambiare il tempo in: cielo sgombro (nessun modificatore), nuvoloso (luce scarsa), temporale (spegne i fuochi), bufera (-2 DES per attacchi a distanza) o tempesta di fulmini (35% di pro- babilità di essere colpiti da un fulmine, come da incante- simo Tempesta di Fulmini).</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "50m",
+        "duration": "",
+        "effect": "<p>Canto dei Cieli modifica il tempo atmosferico dell'area intorno al druido. Può cambiare il tempo in: cielo sgombro (nessun modificatore), nuvoloso (luce scarsa), temporale (spegne i fuochi), bufera (-2 DES per attacchi a distanza) o tempesta di fulmini (35% di probabilità di essere colpiti da un fulmine, come da incantesimo Tempesta di Fulmini).</p>",
+        "sourcebook": "MB 111",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

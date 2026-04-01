@@ -1,0 +1,28 @@
+{
+    "_id": "3e06c3b756614349",
+    "name": "Inchiostro",
+    "type": "alchemical",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag145_Sostanze Alchemiche_01.png",
+    "system": {
+        "description": "<p>Invisibile In realtà ho usato l’inchiostro invisibile più di qualche volta. Fare il contrabbandiere significa dover lasciare parecchi ap- punti invisibili e note celate.</p>",
+        "weight": 0.1,
+        "cost": 15,
+        "toxicity": "0%",
+        "duration": "N/A",
+        "effect": "<p>con un'Azione, il personaggio crea un'illusione di un metro cubo di volume entro 4m da sé. È solo visiva e deve essere semplice. Effetti Collaterali: il personaggio subisce una penalità di -3 alle prove per determinare se un'illusione sia reale o no. Aura di Paura CD di Lanciare Incantesimi: N/A Costo in RES: 1 Effetto: con un'Azione, il personaggio emette un'aura di paura quasi tangibile. Chi si trova entro 4m da lui deve superare una Prova di Resistere alla Magia CD 12 per non rimanere atterrito, subendo una penalità di -2 a tutte le azioni dirette contro il personaggio per ventiquattr'ore. Effetti Collaterali: il personaggio è considerato un livello più in basso sulla Tabella della Posizione Sociale (il minimo è Odiato) e per i membri della sua razza è Tollerato, invece di Eguale. Piedi Rapidi CD di Lanciare Incantesimi: N/A Costo in RES: 1 Effetto: con un'Azione, il personaggio raddoppia la sua distanza di Balzo per un Round. Effetti Collaterali: quando viene gettato a terra, il personaggio scivola per 4m, aumentando la possibilità di urtare qualcosa. Calmare Animali CD di Lanciare Incantesimi: N/A Costo in RES: 1 Effetto: con un'Azione, il personaggio calma una Bestia con Livello di Minaccia Facile. La creatura considera il personaggio e i suoi alleati come amici e non lo attacca se non viene provocata. Effetti Collaterali: le Bestie con Livello di Minaccia Medio o Difficile si infuriano in presenza del personaggio e, se possibile, lo attaccano ignorando altri avversari. Davide Mesina 355175</p>",
+        "sourcebook": "MB 90",
+        "source": "MB 90"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

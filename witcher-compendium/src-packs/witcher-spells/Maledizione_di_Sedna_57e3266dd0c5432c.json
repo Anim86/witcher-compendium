@@ -1,0 +1,28 @@
+{
+    "_id": "57e3266dd0c5432c",
+    "name": "Maledizione di Sedna",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Questo incantesimo prende il nome dal tumul- tuoso Abisso di Sedna, in cui avventurarsi è considerato un viaggio senza ritorno per le navi. Crea un potente vor- tice nell’acqua, in un’area di 4 metri. Ogni bersaglio entro 5m deve superare una prova di Nuotare pari alla prova di Lanciare Incantesimi dell’incantatore o finire risucchia- tosott’acqua. Si deve effettuare una prova, ogni round, o rimanere sott’acqua, con il rischio di affogare.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "12m",
+        "duration": "Attiva (2 RES)",
+        "effect": "<p>Questo incantesimo prende il nome dal tumultuoso Abisso di Sedna, in cui avventurarsi è considerato un viaggio senza ritorno per le navi. Crea un potente vortice nell'acqua, in un'area di 4 metri. Ogni bersaglio entro 5m deve superare una prova di Nuotare pari alla prova di Lanciare Incantesimi dell'incantatore o finire risucchiatosott'acqua. Si deve effettuare una prova, ogni round, o rimanere sott'acqua, con il rischio di affogare.</p>",
+        "sourcebook": "MB 106",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

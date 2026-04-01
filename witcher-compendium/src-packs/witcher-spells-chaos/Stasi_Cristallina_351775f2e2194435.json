@@ -1,0 +1,32 @@
+{
+    "_id": "351775f2e2194435",
+    "name": "Stasi Cristallina",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag083_Incantesimi da Mago_01.png",
+    "system": {
+        "description": "<p>Mano della Tempesta Vampata del Korath Piena di Ys</p>",
+        "weight": 0,
+        "cost": 25,
+        "range": "6m",
+        "duration": "Attivo (6 RES)",
+        "defense": "Resistere alla Magia o Schivare",
+        "tier": "Maestro",
+        "subtype": "Misto",
+        "category": "Mago",
+        "effect": "<p>Stasi Cristallina ricopre il bersaglio di cristalli, ponendolo in una sorta di coma che ne blocca l'invecchiamento. La crescita è rapida, ma non istantanea, e l'effetto deve essere mantenuto Attivo per 3 Round. Al suo Turno seguente, la vittima diventa lenta e rigida, subendo una penalità di -3 ad Attacchi, Difese e alla VEL. Nel secondo Turno, il corpo viene ricoperto di cristallo e la vittima non può più spostarsi. Al terzo Turno, la vittima perde i sensi e viene completamente inglobata. Se il mago è costretto a interrompere l'incantesimo prima del terzo Turno gli effetti si invertono, altrimenti l'unico modo per porvi fine è l'incantesimo Dissipazione.</p>",
+        "sourcebook": "TC 91",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

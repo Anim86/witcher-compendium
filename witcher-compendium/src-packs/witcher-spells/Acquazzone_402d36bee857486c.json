@@ -1,0 +1,28 @@
+{
+    "_id": "402d36bee857486c",
+    "name": "Acquazzone",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Acquazzone crea una pioggia torrenzia- le in un’area del raggio di 3m che spegne ogni fuoco. L’incantesimo contrasta gli effetti del fuoco.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "8m",
+        "duration": "Attiva (2 RES)",
+        "effect": "<p>Acquazzone crea una pioggia torrenziale in un'area del raggio di 3m che spegne ogni fuoco. L'incantesimo contrasta gli effetti del fuoco.</p>",
+        "sourcebook": "MB 106",
+        "source": "Water"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

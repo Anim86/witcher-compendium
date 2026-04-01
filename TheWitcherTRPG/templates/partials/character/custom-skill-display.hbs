@@ -1,0 +1,23 @@
+<a class="char-stat-button skill" data-action="rollSkill" data-skill="{{name}}" data-stat={{stat}}>
+    <div class="label">
+        <span>{{localize skill.label}}</span>
+        {{#if (gte skill.value 0)}}
+            <span>+{{skill.value}}</span>
+        {{else}}
+            <span>{{skill.value}}</span>
+        {{/if}}
+    </div>
+    {{#if (or skill.isProfession skill.isPickup skill.isLearned)}}
+        <div class="skill-icons">
+            {{#if skill.isProfession}}
+                <span><i>{{localize 'WITCHER.skills.profession'}}</i></span>
+            {{/if}}
+            {{#if skill.isPickup}}
+                <span><i>{{localize 'WITCHER.skills.pickup'}}</i></span>
+            {{/if}}
+            {{#if skill.isLearned}}
+                <span><i>{{localize 'WITCHER.skills.learn'}}</i></span>
+            {{/if}}
+        </div>
+    {{/if}}
+</a>

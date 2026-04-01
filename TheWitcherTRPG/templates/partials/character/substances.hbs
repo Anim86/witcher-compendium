@@ -1,0 +1,106 @@
+<div class="substances-section">
+    <div class="section-header valuable-header">
+        <div></div>
+        <h2>{{localize "WITCHER.Inventory.Substances"}}</h2>
+    </div>
+    <div class="substances-menu">
+        <div class="substances-item {{#if system.pannels.vitriolIsOpen}}sub-open{{/if}}">
+            <input 
+                class="substance-img item-substance-display substance"
+                type="image" data-subtype="vitriol"
+                src="systems/TheWitcherTRPG/assets/images/vitriol.png"
+                data-tooltip="{{localize "WITCHER.Inventory.Vitriol"}}" />
+            <span>{{vitriolCount}}</span>
+        </div>
+        <div class="substances-item {{#if system.pannels.rebisIsOpen}}sub-open{{/if}}">
+            <input
+                class="substance-img item-substance-display substance"
+                type="image" data-subtype="rebis"
+                src="systems/TheWitcherTRPG/assets/images/rebis.png"
+                data-tooltip="{{localize "WITCHER.Inventory.Rebis"}}" />
+            <span>{{rebisCount}}</span>
+        </div>
+        <div class="substances-item {{#if system.pannels.aetherIsOpen}}sub-open{{/if}}">
+            <input
+                class="substance-img item-substance-display substance"
+                type="image" data-subtype="aether"
+                src="systems/TheWitcherTRPG/assets/images/aether.png"
+                data-tooltip="{{localize "WITCHER.Inventory.Aether"}}" />
+            <span>{{aetherCount}}</span>
+        </div>
+        <div class="substances-item {{#if system.pannels.quebrithIsOpen}}sub-open{{/if}}">
+            <input
+                class="substance-img item-substance-display substance"
+                type="image" data-subtype="quebrith"
+                src="systems/TheWitcherTRPG/assets/images/quebrith.png"
+                data-tooltip="{{localize "WITCHER.Inventory.Quebrith"}}" />
+            <span>{{quebrithCount}}</span>
+        </div>
+        <div class="substances-item {{#if system.pannels.hydragenumIsOpen}}sub-open{{/if}}">
+            <input
+                class="substance-img item-substance-display substance"
+                type="image" data-subtype="hydragenum"
+                src="systems/TheWitcherTRPG/assets/images/hydragenum.png"
+                data-tooltip="{{localize "WITCHER.Inventory.Hydragenum"}}" />
+            <span>{{hydragenumCount}}</span>
+        </div>
+        <div class="substances-item {{#if system.pannels.vermilionIsOpen}}sub-open{{/if}}">
+            <input
+                class="substance-img item-substance-display substance"type="image" data-subtype="vermilion"
+                src="systems/TheWitcherTRPG/assets/images/vermilion.png"
+                data-tooltip="{{localize "WITCHER.Inventory.Vermilion"}}" />
+            <span>{{vermilionCount}}</span>
+        </div>
+        <div class="substances-item {{#if system.pannels.solIsOpen}}sub-open{{/if}}">
+            <input
+                class="substance-img item-substance-display substance"
+                type="image" data-subtype="sol"
+                src="systems/TheWitcherTRPG/assets/images/sol.png"
+                data-tooltip="{{localize "WITCHER.Inventory.Sol"}}" />
+            <span>{{solCount}}</span>
+        </div>
+        <div class="substances-item {{#if system.pannels.caelumIsOpen}}sub-open{{/if}}">
+            <input
+                class="substance-img item-substance-display substance"
+                type="image" data-subtype="caelum"
+                src="systems/TheWitcherTRPG/assets/images/caelum.png"
+                data-tooltip="{{localize "WITCHER.Inventory.Caelum"}}" />
+            <span>{{caelumCount}}</span>
+        </div>
+        <div class="substances-item {{#if system.pannels.fulgurIsOpen}}sub-open{{/if}}">
+            <input
+                class="substance-img item-substance-display substance"
+                type="image" data-subtype="fulgur"
+                src="systems/TheWitcherTRPG/assets/images/fulgur.png"
+                data-tooltip="{{localize "WITCHER.Inventory.Fulgur"}}" />
+            <span>{{fulgurCount}}</span>
+        </div>
+    </div>
+    {{#if system.pannels.vitriolIsOpen}}
+        {{> "systems/TheWitcherTRPG/templates/sheets/actor/partials/character/inventory/tab-inventory-components.hbs" components=substancesVitriol itemType="component" subtype="vitriol" header=(localize "WITCHER.Inventory.Vitriol") hasQuantity=true}}
+    {{/if}}
+    {{#if system.pannels.rebisIsOpen}}
+        {{> "systems/TheWitcherTRPG/templates/sheets/actor/partials/character/inventory/tab-inventory-components.hbs" components=substancesRebis itemType="component" subtype="rebis" header=(localize "WITCHER.Inventory.Rebis") hasQuantity=true}}
+    {{/if}}
+    {{#if system.pannels.aetherIsOpen}}
+        {{> "systems/TheWitcherTRPG/templates/sheets/actor/partials/character/inventory/tab-inventory-components.hbs" components=substancesAether itemType="component" subtype="aether" header=(localize "WITCHER.Inventory.Aether") hasQuantity=true}}
+    {{/if}}
+    {{#if system.pannels.quebrithIsOpen}}
+        {{> "systems/TheWitcherTRPG/templates/sheets/actor/partials/character/inventory/tab-inventory-components.hbs" components=substancesQuebrith itemType="component" subtype="quebrith" header=(localize "WITCHER.Inventory.Quebrith") hasQuantity=true}}
+    {{/if}}
+    {{#if system.pannels.hydragenumIsOpen}}
+        {{> "systems/TheWitcherTRPG/templates/sheets/actor/partials/character/inventory/tab-inventory-components.hbs" components=substancesHydragenum itemType="component" subtype="hydragenum" header=(localize "WITCHER.Inventory.Hydragenum") hasQuantity=true}}
+    {{/if}}
+    {{#if system.pannels.vermilionIsOpen}}
+        {{> "systems/TheWitcherTRPG/templates/sheets/actor/partials/character/inventory/tab-inventory-components.hbs" components=substancesVermilion itemType="component" subtype="vermilion" header=(localize "WITCHER.Inventory.Vermilion") hasQuantity=true}}
+    {{/if}}
+    {{#if system.pannels.solIsOpen}}
+        {{> "systems/TheWitcherTRPG/templates/sheets/actor/partials/character/inventory/tab-inventory-components.hbs" components=substancesSol itemType="component" subtype="sol" header=(localize "WITCHER.Inventory.Sol") hasQuantity=true}}
+    {{/if}}
+    {{#if system.pannels.caelumIsOpen}}
+        {{> "systems/TheWitcherTRPG/templates/sheets/actor/partials/character/inventory/tab-inventory-components.hbs" components=substancesCaelum itemType="component" subtype="caelum" header=(localize "WITCHER.Inventory.Caelum") hasQuantity=true}}
+    {{/if}}
+    {{#if system.pannels.fulgurIsOpen}}
+        {{> "systems/TheWitcherTRPG/templates/sheets/actor/partials/character/inventory/tab-inventory-components.hbs" components=substancesFulgur itemType="component" subtype="fulgur" header=(localize "WITCHER.Inventory.Fulgur") hasQuantity=true}}
+    {{/if}}
+</div>

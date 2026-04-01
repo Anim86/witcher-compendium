@@ -1,0 +1,28 @@
+{
+    "_id": "2610ca8655c14bd5",
+    "name": "Benedizione della Buona Sorte",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Benedizione della Buona Sorte conferisce al ber- saglio punti FOR pari a metà di quanto è stata superata la CD 12 (massimo 5).</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "10m",
+        "duration": "",
+        "effect": "<p>Benedizione della Buona Sorte conferisce al bersaglio punti FOR pari a metà di quanto è stata superata la CD 12 (massimo 5).</p>",
+        "sourcebook": "MB 111",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

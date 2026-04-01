@@ -1,0 +1,28 @@
+{
+    "_id": "77825124528445ab",
+    "name": "Zefiro",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Zefiro consente all’incantatore di scagliare una folata di vento che investe ogni bersaglio entro 2m, spin- gendoli indietro di 6 m. Tale attacco infligge solo 1d6 danni ma, se il bersaglio colpisce un ostacolo, subisce dan- no da impatto.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "Raggio di 2m",
+        "duration": "Istantanea",
+        "effect": "<p>Zefiro consente all'incantatore di scagliare una folata di vento che investe ogni bersaglio entro 2m, spingendoli indietro di 6 m. Tale attacco infligge solo 1d6 danni ma, se il bersaglio colpisce un ostacolo, subisce danno da impatto.</p>",
+        "sourcebook": "MB 105",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

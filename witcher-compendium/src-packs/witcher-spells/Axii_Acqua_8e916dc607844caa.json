@@ -1,0 +1,28 @@
+{
+    "_id": "8e916dc607844caa",
+    "name": "Axii (Acqua)",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Axii stordisce un avversario, finché non supera un tiro salvezza di Grinta a -1. Per ogni 2 punti di RES spesi dopo il primo, il tiro salvezza di Grinta diventa più difficile di 1.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "8m",
+        "duration": "",
+        "effect": "<p>Axii stordisce un avversario, finché non supera un tiro salvezza di Grinta a -1. Per ogni 2 punti di RES spesi dopo il primo, il tiro salvezza di Grinta diventa più difficile di 1.</p>",
+        "sourcebook": "MB 116",
+        "source": "Water"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

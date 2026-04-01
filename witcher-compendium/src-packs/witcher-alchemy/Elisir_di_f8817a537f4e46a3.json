@@ -1,0 +1,28 @@
+{
+    "_id": "f8817a537f4e46a3",
+    "name": "Elisir di",
+    "type": "alchemical",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag145_Sostanze Alchemiche_01.png",
+    "system": {
+        "description": "<p>Pantagran Pantagram di Lyria era un noto alchimista del Nord. Creò questo elisir, che ti fa sentire veramente felice. Ha senso, per un lyriano. Eh, brutto posto dove vivere.</p>",
+        "weight": 0.1,
+        "cost": 12,
+        "toxicity": "0%",
+        "duration": "N/A",
+        "effect": "<p>Bussola Magica consente all'incantatore di intuire immediatamente la direzione verso un luogo che ha visitato in precedenza. In alternativa, l'incantesimo indica la posizione del nord.</p>",
+        "sourcebook": "MB 89",
+        "source": "MB 89"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

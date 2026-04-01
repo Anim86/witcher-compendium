@@ -1,0 +1,28 @@
+{
+    "_id": "c9c21208248246fb",
+    "name": "Prigione di Talfryn",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Prigione di Talfryn prende il nome da Talfryn di Nazair, un cavaliere traditore che fu intrappolato per tre giorni nel giardino del mago Drystan, L’incantesimo immobilizza il bersaglio con delle radici, per reciderle occorre infliggere 15 danni. In alternativa, per liberar- si occorre una prova di Eludere con CD pari al tiro di Lanciare Incantesimi.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "10m",
+        "duration": "Finché non viene distrutto",
+        "effect": "<p>Prigione di Talfryn prende il nome da Talfryn di Nazair, un cavaliere traditore che fu intrappolato per tre giorni nel giardino del mago Drystan, L'incantesimo immobilizza il bersaglio con delle radici, per reciderle occorre infliggere 15 danni. In alternativa, per liberarsi occorre una prova di Eludere con CD pari al tiro di Lanciare Incantesimi.</p>",
+        "sourcebook": "MB 105",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

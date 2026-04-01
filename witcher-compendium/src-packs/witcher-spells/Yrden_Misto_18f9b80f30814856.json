@@ -1,0 +1,28 @@
+{
+    "_id": "18f9b80f30814856",
+    "name": "Yrden (Misto)",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Yrden crea un grande cerchio magico al suolo attorno all’incantatore. Qualsiasi cosa metta piede nel cerchio subisce una penalità a VEL e RIF, pari a 1 più 1 ogni 2 punti di RES spesi dopo il primo, fino a una penalità massima di -4. La penalità dura finché non si esce dal circolo. Una creatura incorporea che entra nel cerchio diviene corporea.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "Raggio di 3m",
+        "duration": "",
+        "effect": "<p>Yrden crea un grande cerchio magico al suolo attorno all'incantatore. Qualsiasi cosa metta piede nel cerchio subisce una penalità a VEL e RIF, pari a 1 più 1 ogni 2 punti di RES spesi dopo il primo, fino a una penalità massima di -4. La penalità dura finché non si esce dal circolo. Una creatura incorporea che entra nel cerchio diviene corporea.</p>",
+        "sourcebook": "MB 116",
+        "source": "Mixed"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

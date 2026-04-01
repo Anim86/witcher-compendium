@@ -1,0 +1,32 @@
+{
+    "_id": "21d3cff617a04cf5",
+    "name": "Invaerne",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag090_Incantesimi da Mago_01.png",
+    "system": {
+        "description": "<p>Manto Portale Trappola Rafforzare Incantesimi da Maestro Rubare Incantesimo Modellare Terra Gwyntog Fuoco Vivente Estrazione di Ainfra Specchio Oscuro di Bekker Stasi Cristallina Mano della Tempesta Vampata del Korath Piena di Ys</p>",
+        "weight": 0,
+        "cost": 14,
+        "range": "50m",
+        "duration": "1 ora",
+        "defense": "Nessuna",
+        "tier": "Maestro",
+        "subtype": "Misto",
+        "category": "Mago",
+        "effect": "<p>Invaerne evoca una terribile tempesta di neve che copre un'area di 30m di raggio, causando l'effetto Ghiaccio e Neve. Se usato in un clima freddo, questo incantesimo dura una settimana.</p>",
+        "sourcebook": "TC 90",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

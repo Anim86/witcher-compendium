@@ -1,0 +1,28 @@
+{
+    "_id": "0ba6ff15662a4c09",
+    "name": "Marchio a Fuoco",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Marchio di Fuoco permette all’incantatore di marchiare il bersaglio con un semplice simbolo o parola in un punto esposto del corpo del bersaglio, a sua scelta. Infligge 1d6 danni e lascia un grande sfregio indelebile.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "8m",
+        "duration": "Istantanea",
+        "effect": "<p>Marchio di Fuoco permette all'incantatore di marchiare il bersaglio con un semplice simbolo o parola in un punto esposto del corpo del bersaglio, a sua scelta. Infligge 1d6 danni e lascia un grande sfregio indelebile.</p>",
+        "sourcebook": "MB 106",
+        "source": "Fire"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

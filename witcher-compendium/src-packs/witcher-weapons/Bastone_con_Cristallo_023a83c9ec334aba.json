@@ -1,0 +1,33 @@
+{
+    "_id": "023a83c9ec334aba",
+    "name": "Bastone con Cristallo",
+    "type": "weapon",
+    "img": "icons/svg/sword.svg",
+    "system": {
+        "description": "<p>Amuleto con Gemma Jambiya Magia Ampliata 3 Farsetto Protettivo Halfling Brache a Doppia Trama Tomba d'Adda (×3) Malelingue 6 Cloroformio (×3) Polvere Coagulante (×3) Fisstech Mutare 7 Fluido Sterilizzante (×3) Strumenti Chirurgici Attrezzatura Alchemica Risorse 4 Borsello Megascopio Ceppi Sintonia 8 Davide Mesina 355175</p>",
+        "weight": 2.5,
+        "cost": 835,
+        "damage": "2d6+2",
+        "reliability": {
+            "value": 5,
+            "max": 5
+        },
+        "accuracy": 0,
+        "hands": 2,
+        "reach": "N/A",
+        "effects": "Portata Focus (3) Focus",
+        "sourcebook": "MB 15"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "_id": "64f29c5d063c4b19",
+    "name": "Filo",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag132_Schemi di Manifattura_10.png",
+    "system": {
+        "description": "<p>C Acquistato o fabbricato N/A N/A 0,1 3 Legname D Foreste 2d6 Unità 8 1 3 PROCACCIARSI I COMPONENTI Il personaggio può effettuare una prova di Sopravvivenza con CD pari alla CD per Procacciare un elemento per cercare di trovarlo in mezzo alla natura selvaggia. Deve trovarsi in un luogo dove sia reperibile. Se ha successo, trova tante unità di quel componente in numero pari al quantitativo indicato. Il tempo richiesto per Procacciare è deciso dal GM in base alla rarità del componente e all'ambiente in cui sta procacciando. Legname Indurito S Acquistato o fabbricato N/A N/A 16 Lino C Acquistato o fabbricato N/A N/A 0,1 9 Lino a Doppia Trama S Acquistato o fabbricato N/A N/A 0,1 22 Olio C Acquistato o fabbricato N/A N/A 0,1 3 Resina C Foreste 1d6 Unità 10 0,1 2 Seta S Acquistato N/A N/A 0,1 50 Vetro S Acquistato N/A N/A 0,5 5 PELLI E PARTI ANIMALI Nome Rarità Ubicazione Quantità CD Per Procacciarlo Peso Costo Cuoio C Acquistato o fabbricato N/A N/A 2 28 Cuoio Indurito S Acquistato o fabbricato N/A N/A 3 48 Cuoio Lyriano S Acquistato o fabbricato N/A N/A 2 60 Ossa di Bestia C Reperibile da mostri e bestie Variabile N/A 4 8 Pelle di Dragonide R Acquistato o fabbricato N/A N/A 5 58 Pelle di Lupo C Acquistato o fabbricato 3 Unità N/A 3 14 Pelle di Mucca C Acquistato N/A N/A 5 10 Piume D Reperibile sugli uccelli 1d6 Unità N/A 0,1 4 Scaglie di Dragonide R Reperibile sulle viverne 1d6 Unità N/A 5 30</p>",
+        "weight": 0,
+        "cost": 21,
+        "components": [
+            "Filo 10 15 minuti Cotone (×2) 2 4",
+            "Legname Indurito 12 ½ ora Legname (×2), Resina (×4) 11 21"
+        ],
+        "difficulty": 10,
+        "time": "15 minuti",
+        "sourcebook": "MB 130"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

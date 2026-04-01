@@ -1,0 +1,32 @@
+{
+    "_id": "f497b90779e14315",
+    "name": "Rafforzare",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag083_Incantesimi da Mago_01.png",
+    "system": {
+        "description": "<p>i propri poteri, ma farlo in modo eccessivo o improprio è assai pericoloso. Inoltre, occorre conoscere il fun- zionamento degli elementi per agire in modo sicuro. Ogni Linea si comporta diversamente a seconda dell’elemento a cui è legata. COME TROVARE LE LINEE GEOMANTICHE? Nonostante siano larghe circa 6m e lunghe centinaia di chilo- metri, le Linee Geomantiche sono assai difficili da individuare, essendo per natura invisibili e non del tutto tangibili. Per for- tuna, esistono due modi efficaci per localizzarle. Il primo è cercarne l’impronta magica. Ogni Linea Geo- mantica ha la propria e chi è affine alla magia la può percepire facilmente. Ogni personaggio legato alla magia (ossia chi ha un punteggio di Vigore) sente un crampo all’anulare quando si trova entro 10m da una Linea. Dopo di che, un Mago può impiegare Arte del Mago per definire con precisione posizione e direzione della Linea. Per i non adepti vi sono mezzi meno accademici per indivi- duare una Linea Geomantica, dato che la sua presenza provoca piccoli cambiamenti nel territorio circostante. Se vi trovate in un luogo con rocce disposte in modi strani, frequenti mulinelli di polvere o umidità innaturale, probabilmente siete incappati in una Linea Geomantica. TRARRE POTERE DALLE LINEE GEOMANTICHE Una volta entrato in contatto fisico con una Linea Geomantica, un mago, un prete o un druido può impiegare un’Azione per trarne potere, superando una Prova di Lanciare Incantesimi CD 16. In caso di successo, l’incantatore sblocca il potere della Linea e può sfruttarlo finché resta in contatto fisico con essa. Tuttavia, così facendo, subisce anche Sovraffaticamento e Disastri basati sull’elemento della Linea. Se si allontana, la connessione si interrompe e occorre ripristinarla una volta ri- entrati in contatto. Chi fallisce nel trarre potere da una Linea Geomantica subisce immediatamente un Disastro Elementale del tipo appropriato, ma senza danni aggiuntivi. Mentre è connesso a una Linea, un Mago può impiegare solo Incantesimi dell’elemento della stessa; Preti e Druidi, in- vece, possono usare le loro Invocazioni liberamente, a prescin- dere dall’elemento della linea.</p>",
+        "weight": 0,
+        "cost": 12,
+        "range": "Personale",
+        "duration": "1 minuto",
+        "defense": "Nessuna",
+        "tier": "Maestro",
+        "subtype": "Misto",
+        "category": "Mago",
+        "effect": "<p>Rafforzare consente di incanalare ulteriore energia nei propri incantesimi, creando una pericolosa confluenza di Caos. Il prossimo incantesimo lanciato dal mago ottiene uno dei seguenti benefici: la probabilità di attivazione di un suo effetto diventa del 100%, il mago ottiene un bonus di +2 alla prova di lancio o, se può già causare danni, l'incantesimo provoca 2d6 danni aggiuntivi. Tuttavia, se il mago tira 1 sulla prova di Lanciare Incantesimi subisce automaticamente un Disastro Magico di livello 10.</p>",
+        "sourcebook": "TC 83",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

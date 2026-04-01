@@ -1,0 +1,29 @@
+{
+    "_id": "7221111161434cd2",
+    "name": "Alabarda Rossa",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag132_Schemi di Manifattura_10.png",
+    "system": {
+        "description": "<p>T/P/C 0 S 6d6+3 10 2 N/A Portata N/A 1 4 865</p>",
+        "weight": 0,
+        "cost": 1296,
+        "components": [
+            "Legname Indurito (×6), Filo (×8), Cera (×4), Resina (×4), Grasso di Estere (×3), Acciaio Nero (×4), Cuoio Indurito (×1), Olio di Papero (×2)"
+        ],
+        "difficulty": 22,
+        "time": "11 ore",
+        "sourcebook": "MB 75"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

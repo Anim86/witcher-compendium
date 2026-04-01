@@ -1,0 +1,32 @@
+{
+    "_id": "0c505bd413194ca2",
+    "name": "Santuario del Bosco Nero (Caed Myrkvid)",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag083_Incantesimi da Mago_01.png",
+    "system": {
+        "description": "<p>Costo in RES: 16 Effetto: Santuario del Bosco Nero consente al Druido e a un qualsiasi numero di alleati da lui scelti di entrare in contatto con gli alberi nel raggio di 1,6km. Il Druido può toccare un albero e vedere attraverso tutti gli altri presenti nell’area, simultaneamente o concentrandosi su un punto specifico. Inoltre tutte le creature designate possono teletrasportarsi da un albero all’altro all’interno dell’area. Gli alleati non possono vedere cosa c’è intorno al punto d’arrivo ma possono sceglierlo liberamente. Portata: 1,6km di raggio Durata: 1 ora Difese: Nessuna</p>",
+        "weight": 0,
+        "cost": 16,
+        "range": "1,6km di raggio",
+        "duration": "1 ora",
+        "defense": "Nessuna",
+        "tier": "Novizio",
+        "subtype": "Misto",
+        "category": "Druido",
+        "effect": "<p>Santuario del Bosco Nero consente al Druido e a un qualsiasi numero di alleati da lui scelti di entrare in contatto con gli alberi nel raggio di 1,6km. Il Druido può toccare un albero e vedere attraverso tutti gli altri presenti nell'area, simultaneamente o concentrandosi su un punto specifico. Inoltre tutte le creature designate possono teletrasportarsi da un albero all'altro all'interno dell'area. Gli alleati non possono vedere cosa c'è intorno al punto d'arrivo ma possono sceglierlo liberamente.</p>",
+        "sourcebook": "TC 102",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

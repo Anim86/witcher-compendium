@@ -1,0 +1,28 @@
+{
+    "_id": "67f468d5e4054225",
+    "name": "Trasmutazione",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Trasmutazione consente all’incantatore di mo- dificare le proprietà di un metallo o di un minerale. Può mutare un’unità di metallo in un qualsiasi altro metallo, o trasformare una gemma imperfetta in una perfetta, utile per la magia. Il dimeritium o altri metalli derivati dal dimeritium, non possono essere creati o modificati con questo incantesimo.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "2m",
+        "duration": "Permanente",
+        "effect": "<p>Aard scaglia un'ondata di forza telecinetica che rende vacillanti le creature e ha il 10% di possibilità che i bersagli cadano a terra. La percentuale aumenta del 10% per ogni punto RES speso.</p>",
+        "sourcebook": "MB 14",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

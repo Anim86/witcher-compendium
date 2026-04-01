@@ -1,0 +1,28 @@
+{
+    "_id": "2b695655fadb4810",
+    "name": "Tempesta Statica",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Tempesta Statica consente all’incantatore di sa- turare d’elettricità un raggio di 5m centrato su di lui. Ogni bersaglio nell’area (eccetto l’incantatore), se indos- sa un’armatura di metallo o porta armi di metallo, subi- sce 2 danni per round.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "Raggio di 5m",
+        "duration": "2d6 Round",
+        "effect": "<p>Tempesta Statica consente all'incantatore di saturare d'elettricità un raggio di 5m centrato su di lui. Ogni bersaglio nell'area (eccetto l'incantatore), se indossa un'armatura di metallo o porta armi di metallo, subisce 2 danni per round.</p>",
+        "sourcebook": "MB 105",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

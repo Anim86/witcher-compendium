@@ -1,0 +1,30 @@
+{
+    "_id": "ce287cc381384cf0",
+    "name": "Animare Armatura",
+    "type": "ritual",
+    "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag104_Rituali_01.png",
+    "system": {
+        "description": "<p>Faro dell’Innaturale Nebbia del Passato Registro Magico degli Ospiti Rituali da Maestro Creare Luogo di Potere Incantare Amuleto</p>",
+        "weight": 0,
+        "cost": 14,
+        "prepTime": "10 Round",
+        "difficulty": "18",
+        "duration": "Permanente",
+        "components": "Armatura per la Testa (×1), Armatura per il Torso (×1), Armatura per le Gambe (×1), Cuore di Golem (×1), Polvere Infusa (×3), Quintessenza (×3)",
+        "effect": "<p>inserendo un Cuore di Golem al centro di un'armatura completa e infondendolo di magia è possibile trasformare la corazza in un fedele servitore. Una volta concluso il Rituale, l'armatura si anima e ha il profilo indicato a pag. 198, eccetto per la PR che è uguale a quella dei componenti utilizzati. L'armatura vivente non è senziente e rimane fedele in eterno al suo creatore, eseguendo ogni ordine alla lettera.</p>",
+        "sourcebook": "TC 104",
+        "source": "TC 104"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

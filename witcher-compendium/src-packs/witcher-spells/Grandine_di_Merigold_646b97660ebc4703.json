@@ -1,0 +1,28 @@
+{
+    "_id": "646b97660ebc4703",
+    "name": "Grandine di Merigold",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
+    "system": {
+        "description": "<p>Prende il nome dalla sua creatrice Triss Merigold, ex consigliera di Re Foltest di Temeria e crea una tempe- sta di grandine in tutta l’area dell’incantesimo. Chiunque si trovi nell’area deve superare, ogni round, una prova di Eludere con CD pari alla prova di Lanciare Incantesimi dell’incantatore o subire 2d6 danni in una parte del corpo scelta casualmente.</p>",
+        "weight": 0,
+        "cost": 0,
+        "range": "Raggio di 30m",
+        "duration": "Attiva (4 RES)",
+        "effect": "<p>Prende il nome dalla sua creatrice Triss Merigold, ex consigliera di Re Foltest di Temeria e crea una tempesta di grandine in tutta l'area dell'incantesimo. Chiunque si trovi nell'area deve superare, ogni round, una prova di Eludere con CD pari alla prova di Lanciare Incantesimi dell'incantatore o subire 2d6 danni in una parte del corpo scelta casualmente.</p>",
+        "sourcebook": "MB 18",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

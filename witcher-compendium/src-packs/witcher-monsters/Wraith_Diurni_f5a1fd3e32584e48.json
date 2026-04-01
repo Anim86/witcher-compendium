@@ -1,0 +1,214 @@
+{
+    "_id": "f5a1fd3e32584e48",
+    "name": "Wraith Diurni",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/Immagini/Pag287_Wraith Diurni_01.png",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "ref": {
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
+            },
+            "dex": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "body": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "spd": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "emp": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "cra": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "will": {
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 10
+            },
+            "atletica": {
+                "value": 4
+            },
+            "eludere": {
+                "value": 9
+            },
+            "mischia": {
+                "value": 8
+            },
+            "nascondersi": {
+                "value": 10
+            },
+            "rissa": {
+                "value": 7
+            },
+            "sopravvivenza": {
+                "value": 5
+            },
+            "tempra": {
+                "value": 7
+            }
+        },
+        "details": {
+            "biography": "[Immagini presenti in questa pagina: Pag287_Wraith Diurni_01.png, Pag287_Wraith Diurni_02.png, Pag287_Wraith Diurni_03.png, Pag287_Wraith Diurni_04.png, Pag287_Wraith Diurni_05.png, Pag287_Wraith Diurni_06.png, Pag287_Wraith Diurni_07.png, Pag287_Wraith Diurni_08.png, Pag287_Wraith Diurni_09.png, Pag287_Wraith Diurni_10.png, Pag287_Wraith Diurni_11.png, Pag287_Wraith Diurni_12.png]<br><br>285 WRAITH DIURNI<br>SUPERSTIZIONE COMUNE (Istruzione CD 14) Dicono che i wraith diurni siano le anime di gio- vani donne uccise poco prima del matrimonio, che ritornano come orrori vestiti di bianco a infestare i campi quando il sole è alto. Pare siano intelli- genti, ma folli per il dolore e la rabbia, per cui ammazzano tutto quello che vedono. E manco lo fanno con zanne o artigli o altro. Secondo la leg- genda usano magie oscure per farti danzare con loro. Uno può fermarsi solo al tramonto, ma per allora sarà già morto. – Rodolf Kazmer<br>Bisogna distruggere le copie prima che traggano troppa energia dalla vittima. Il modo migliore per affrontare un wraith diurno è ricoprire la lama di unguento anti-spettro e tentare di evocarlo di notte. Bruciando un og- getto di grande valore per il wraith, quando era in vita, lo si evocherà nel 90% dei casi e la luce della luna renderà più facile ucciderlo. Una volta eliminato, i ceppi che lo tratteneva- no nel mondo saranno rimossi e potrà andar- sene oltre il velo della morte. È un obiettivo romantico, ma complesso.",
+            "threat": "Facile Semplice",
+            "reward": 10
+        },
+        "derivedStats": {
+            "health": {
+                "value": 20,
+                "max": 20,
+                "unmodifiedMax": 20
+            },
+            "stamina": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "vigor": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "rec": {
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
+            },
+            "resolve": {
+                "value": 50,
+                "max": 50,
+                "unmodifiedMax": 50
+            },
+            "stun": {
+                "value": 4,
+                "max": 4
+            },
+            "woundTreshold": {
+                "value": 4,
+                "max": 4
+            }
+        },
+        "description": "<p>SUPERSTIZIONE COMUNE (Istruzione CD 14) Dicono che i wraith diurni siano le anime di gio- vani donne uccise poco prima del matrimonio, che ritornano come orrori vestiti di bianco a infestare i campi quando il sole è alto. Pare siano intelli- genti, ma folli per il dolore e la rabbia, per cui ammazzano tutto quello che vedono. E manco lo fanno con zanne o artigli o altro. Secondo la leg- genda usano magie oscure per farti danzare con loro. Uno può fermarsi solo al tramonto, ma per allora sarà già morto. – Rodolf Kazmer Bisogna distruggere le copie prima che traggano troppa energia dalla vittima. Il modo migliore per affrontare un wraith diurno è ricoprire la lama di unguento anti-spettro e tentare di evocarlo di notte. Bruciando un og- getto di grande valore per il wraith, quando era in vita, lo si evocherà nel 90% dei casi e la luce della luna renderà più facile ucciderlo. Una volta eliminato, i ceppi che lo tratteneva- no nel mondo saranno rimossi e potrà andar- sene oltre il velo della morte. È un obiettivo romantico, ma complesso. Vulnerabilità Unguento Anti-spettri Polvere Lunare e Yrden Un wraith che si trovi all’interno dell’area di una bomba Polvere Lunare o del segno Yrden non può teletrasportarsi o divenire incorporeo. Debolezza Celeste Alla luce della luna, un wraith diurno subisce una penalità di -2 a tutte le azioni. Capacità ABILITÀ Alimentato dalla Rabbia Tecnicamente, un wraith è intelligente quanto lo era in vita, ma è accecato da una furia incontrollabile. È impossibile ragionarci o intimidirlo. CONOSCENZA DEI WITCHER (Arte del Witcher CD 14) A volte le giovani fidanzate che muoiono di morte violenta prima del matrimonio ritornano come wraith diurni, creature potenti, vendicati- ve e pericolose. Le anime di queste donne sono folli per il dolore e la rabbia che le spinge a in- festare i campi vicini alla loro tomba, alla ricerca del proprio assassino. Questo potrebbe anche non essere un problema, ma hanno la tendenza a uccidere chiunque altro si avvicini. Quando si affronta un wraith diurno biso- gna agire rapidamente: di solito sono incorpo- rei, ma è possibile intrappolarli con il segno Yrden o una bomba Polvere Lunare. Questa è l’unica finestra di attacco possibile. Inoltre è meglio combatterli al tramonto, perché la luce lunare li indebolisce. Di solito un wraith diurno attacca con gli artigli ma, a volte, usa la magia per provocare un turbine di sabbia e accecare gli avversari. Se ha subito troppi danni darà inizio alla dan- za di mezzogiorno, creando copie di sé che risucchiano la salute del bersaglio per curarsi. Accortezza +10 Atletica +4 Eludere +9 Lanciare Incantesimi +8 Mischia +8 Danza di Mezzogiorno Un wraith diurno può creare 3 copie danzanti di se stesso ad almeno 5m dal bersaglio. Questi duplicati non attaccano, ma hanno le stesse capacità difensive del wraith diurno. Finché almeno una copia è attiva, questo effetto drena 3 PS dal bersaglio ogni round, e il wraith diurno guarisce di un pari ammontare. Un singolo colpo è sufficiente a distruggere una copia. Nascondersi +10 Resistere alla Magia +7 Rissa +7 Sopravvivenza +5 Tempra +7 Bottino Essenza di Wraith (×1d6) Essenza Luminosa (×1d6/2) Polvere di Spettro (×1d6) Polvere Infusa (×1d6) Incorporeo Un wraith diurno è sem- pre incorporeo. Questo lo rende immune agli attacchi fisici, al sanguinamento e all’avvelenato. Armi Nome DAN Effetti N°Att Artigli 5d6 N/A 2 Vortice di Sabbia Un wraith diurno può usare la magia per scagliare un vortice di sabbia e terriccio in faccia al bersaglio. Questo attacco si effettua con Lanciare Incantesimi e, se colpisce, acceca il bersaglio per 1d6 round. Il bersaglio deve essere entro 5m.</p>",
+        "notes": [
+            {
+                "title": "Descrizione",
+                "details": "<p>SUPERSTIZIONE COMUNE (Istruzione CD 14) Dicono che i wraith diurni siano le anime di gio- vani donne uccise poco prima del matrimonio, che ritornano come orrori vestiti di bianco a infestare i campi quando il sole è alto. Pare siano intelli- genti, ma folli per il dolore e la rabbia, per cui ammazzano tutto quello che vedono. E manco lo fanno con zanne o artigli o altro. Secondo la leg- genda usano magie oscure per farti danzare con loro. Uno può fermarsi solo al tramonto, ma per allora sarà già morto. – Rodolf Kazmer Bisogna distruggere le copie prima che traggano troppa energia dalla vittima. Il modo migliore per affrontare un wraith diurno è ricoprire la lama di unguento anti-spettro e tentare di evocarlo di notte. Bruciando un og- getto di grande valore per il wraith, quando era in vita, lo si evocherà nel 90% dei casi e la luce della luna renderà più facile ucciderlo. Una volta eliminato, i ceppi che lo tratteneva- no nel mondo saranno rimossi e potrà andar- sene oltre il velo della morte. È un obiettivo romantico, ma complesso. Vulnerabilità Unguento Anti-spettri Polvere Lunare e Yrden Un wraith che si trovi all’interno dell’area di una bomba Polvere Lunare o del segno Yrden non può teletrasportarsi o divenire incorporeo. Debolezza Celeste Alla luce della luna, un wraith diurno subisce una penalità di -2 a tutte le azioni. Capacità ABILITÀ Alimentato dalla Rabbia Tecnicamente, un wraith è intelligente quanto lo era in vita, ma è accecato da una furia incontrollabile. È impossibile ragionarci o intimidirlo. CONOSCENZA DEI WITCHER (Arte del Witcher CD 14) A volte le giovani fidanzate che muoiono di morte violenta prima del matrimonio ritornano come wraith diurni, creature potenti, vendicati- ve e pericolose. Le anime di queste donne sono folli per il dolore e la rabbia che le spinge a in- festare i campi vicini alla loro tomba, alla ricerca del proprio assassino. Questo potrebbe anche non essere un problema, ma hanno la tendenza a uccidere chiunque altro si avvicini. Quando si affronta un wraith diurno biso- gna agire rapidamente: di solito sono incorpo- rei, ma è possibile intrappolarli con il segno Yrden o una bomba Polvere Lunare. Questa è l’unica finestra di attacco possibile. Inoltre è meglio combatterli al tramonto, perché la luce lunare li indebolisce. Di solito un wraith diurno attacca con gli artigli ma, a volte, usa la magia per provocare un turbine di sabbia e accecare gli avversari. Se ha subito troppi danni darà inizio alla dan- za di mezzogiorno, creando copie di sé che risucchiano la salute del bersaglio per curarsi. Accortezza +10 Atletica +4 Eludere +9 Lanciare Incantesimi +8 Mischia +8 Danza di Mezzogiorno Un wraith diurno può creare 3 copie danzanti di se stesso ad almeno 5m dal bersaglio. Questi duplicati non attaccano, ma hanno le stesse capacità difensive del wraith diurno. Finché almeno una copia è attiva, questo effetto drena 3 PS dal bersaglio ogni round, e il wraith diurno guarisce di un pari ammontare. Un singolo colpo è sufficiente a distruggere una copia. Nascondersi +10 Resistere alla Magia +7 Rissa +7 Sopravvivenza +5 Tempra +7 Bottino Essenza di Wraith (×1d6) Essenza Luminosa (×1d6/2) Polvere di Spettro (×1d6) Polvere Infusa (×1d6) Incorporeo Un wraith diurno è sem- pre incorporeo. Questo lo rende immune agli attacchi fisici, al sanguinamento e all’avvelenato. Armi Nome DAN Effetti N°Att Artigli 5d6 N/A 2 Vortice di Sabbia Un wraith diurno può usare la magia per scagliare un vortice di sabbia e terriccio in faccia al bersaglio. Questo attacco si effettua con Lanciare Incantesimi e, se colpisce, acceca il bersaglio per 1d6 round. Il bersaglio deve essere entro 5m.</p>"
+            }
+        ]
+    },
+    "items": [
+        {
+            "_id": "c8cf668d56da43c5",
+            "name": "Artigli",
+            "type": "weapon",
+            "img": "icons/svg/sword.svg",
+            "system": {
+                "description": "",
+                "weight": 0,
+                "cost": 0,
+                "damage": "5d6",
+                "reliability": {
+                    "value": 10,
+                    "max": 10
+                },
+                "accuracy": 0,
+                "hands": 1,
+                "reach": "N/A",
+                "effects": "N/A"
+            },
+            "effects": [],
+            "folder": null,
+            "sort": 0,
+            "ownership": {
+                "default": 0
+            },
+            "flags": {},
+            "_stats": {
+                "systemId": "TheWitcherTRPG",
+                "systemVersion": "1.0.0",
+                "coreVersion": "13"
+            }
+        },
+        {
+            "_id": "53fc3181393e42a5",
+            "name": "[Vulnerabilità] Unguento",
+            "type": "note",
+            "img": "icons/svg/book.svg",
+            "system": {
+                "description": "<p>Anti-spettri</p>"
+            },
+            "effects": [],
+            "folder": null,
+            "sort": 0,
+            "ownership": {
+                "default": 0
+            },
+            "flags": {},
+            "_stats": {
+                "systemId": "TheWitcherTRPG",
+                "systemVersion": "1.0.0",
+                "coreVersion": "13"
+            }
+        },
+        {
+            "_id": "21411460b99a48ba",
+            "name": "Capacità",
+            "type": "note",
+            "img": "icons/svg/book.svg",
+            "system": {
+                "description": "<p>ABILITÀ</p>"
+            },
+            "effects": [],
+            "folder": null,
+            "sort": 0,
+            "ownership": {
+                "default": 0
+            },
+            "flags": {},
+            "_stats": {
+                "systemId": "TheWitcherTRPG",
+                "systemVersion": "1.0.0",
+                "coreVersion": "13"
+            }
+        }
+    ],
+    "effects": [],
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

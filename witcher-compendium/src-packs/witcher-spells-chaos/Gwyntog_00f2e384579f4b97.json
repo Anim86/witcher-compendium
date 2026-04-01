@@ -1,0 +1,32 @@
+{
+    "_id": "00f2e384579f4b97",
+    "name": "Gwyntog",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag083_Incantesimi da Mago_01.png",
+    "system": {
+        "description": "<p>Fuoco Vivente Estrazione di Ainfra Specchio Oscuro di Bekker Stasi Cristallina Mano della Tempesta Vampata del Korath Piena di Ys</p>",
+        "weight": 0,
+        "cost": 24,
+        "range": "20m",
+        "duration": "Istantanea",
+        "defense": "Schivare",
+        "tier": "Maestro",
+        "subtype": "Aria",
+        "category": "Mago",
+        "effect": "<p>Gwyntog crea una bufera localizzata, con un raggio massimo di 40m. Per la durata dell'effetto, l'area è spazzata da forte vento, che rende impossibile volare e ostacola ogni altro movimento. Le creature volanti vengono scagliate al suolo e subiscono i normali danni. Gli attacchi a distanza mancano il bersaglio e atterrano in un punto scelto dal GM. Infine, chi si trova nell'area deve superare una prova di Atletica CD 20 per poter effettuare un'Azione di Movimento o Correre nel proprio Turno.</p>",
+        "sourcebook": "TC 91",
+        "source": ""
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}
