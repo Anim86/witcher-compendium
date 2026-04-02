@@ -3,34 +3,23 @@
   "type": "profession",
   "img": "modules/witcher-compendium/images/professions/artigiano.png",
   "system": {
-    "description": "<p>Nel mondo di The Witcher, l'acciaio e l'argento sono vitali. Un Artigiano è colui che trasforma i sogni del guerriero in realtà, forgiando lame che non si spezzano e corazze che salvano la vita. Sono persone pratiche, abituate al caldo della forgia e al peso del martello.</p>",
-    "source": "MB 41",
-    "definingSkill": {
-      "name": "Riparazione sul Campo",
-      "definition": "Gli Artigiani possono riparare equipaggiamento danneggiato al volo, anche durante il combattimento o in viaggio, con una penalità ridotta."
+    "description": "Gli artigiani sono il cuore pulsante dell'economia del Continente. Sanno come riparare, creare e inventare oggetti che altri possono solo sognare.",
+    "source": "Manuale Base, p.41",
+    "innate": {
+      "name": "Manifattura Impeccabile",
+      "description": "Un Artigiano può tirare Manifattura Impeccabile (MAN) ogni volta che prova a riparare o creare un oggetto."
     },
-    "skills": [
-      "Manifattura",
-      "Alchimia",
-      "Valutazione",
-      "Piccola Lama",
-      "Fisico",
-      "Resistenza"
-    ],
-    "equipment": [
-      "Martello da fabbro",
-      "Utensili da artigiano",
-      "Pelle di daino",
-      "Grembiule di cuoio",
-      "Incudine portatile"
-    ]
+    "vigor": 0,
+    "magic_talents": "Nessuna",
+    "skills": ["Alchimia", "Manifattura", "Commercio", "Istruzione", "Sopravvivenza", "Mischia", "Persuasione", "Sensibilità", "Etichetta", "Atletica"],
+    "equipment": ["Kit del piccolo chimico", "Kit del falegname", "Kit del fabbro", "Pietra per affilare", "Pugnale", "Sacca da viaggio", "Cassetta degli attrezzi", "Incudine portatile", "Grembiule in cuoio", "150 corone in componenti"],
+    "skill_trees": {
+      "branch1": { "name": "L'Armaiolo", "skills": ["..."] },
+      "branch2": { "name": "L'Alchimista", "skills": ["..."] },
+      "branch3": { "name": "L'Inventore", "skills": ["..."] }
+    }
   },
   "effects": [],
   "flags": {},
-  "folders": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0
-  },
   "_id": "profcraftsman001"
 }

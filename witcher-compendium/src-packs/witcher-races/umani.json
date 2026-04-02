@@ -1,10 +1,11 @@
 {
-  "name": "Umano",
+  "name": "Umani",
   "type": "race",
   "img": "modules/witcher-compendium/images/races/humano.png",
   "system": {
     "description": "<p>Gli umani sono la specie dominante del Continente. Sono una razza parecchio adattabile, ma tendono anche a infervorarsi in fretta per una causa o a farsela sotto. Hanno praticamente distrutto le razze antiche e costruito le loro città sopra a quelle dei popoli antichi.</p><p>Quasi tutti i maghi sono umani, e quelli possono sconvolgere un regno e far piombare il mondo nel caos, ma hanno anche reso il mondo migliore con Magia e Scienza.</p>",
-    "source": "MB 26",
+    "source": "Manuale Base, p.26",
+    "social": "Eguale",
     "perks": [
       {
         "name": "Affidabile",
@@ -19,14 +20,13 @@
         "description": "Un umano può fare appello a tutto il suo coraggio e ritirare un fallimento in Resistere a Coercizione o Coraggio 3 volte per sessione di gioco. Deve scegliere il risultato più alto dei due tiri."
       }
     ],
-    "social": "Eguale"
+    "bonuses": {
+      "skills": {
+        "deduction": 1
+      }
+    }
   },
   "effects": [],
   "flags": {},
-  "folders": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0
-  },
   "_id": "racehuman0000001"
 }

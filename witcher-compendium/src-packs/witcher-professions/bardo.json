@@ -3,34 +3,23 @@
   "type": "profession",
   "img": "modules/witcher-compendium/images/professions/bardo.png",
   "system": {
-    "description": "<p>Il mondo è un posto freddo e buio per chi non ha una storia da raccontare. Un Bardo è molto più di un musicista: è un cronista, un diplomatico e spesso una spina nel fianco per i potenti. Con una canzone possono scatenare una rivolta o conquistare il cuore di una regina.</p>",
-    "source": "MB 42",
-    "definingSkill": {
-      "name": "Ascendente sul Pubblico",
-      "definition": "Un Bardo può convincere una folla a cambiare umore, incitare alla lealtà o seminare il malcontento attraverso la propria esibizione."
+    "description": "I bardi sono narratori, spie e intrattenitori. La loro lingua è affilata quanto una spada e la loro musica può placare i cuori o scatenare sommosse.",
+    "source": "Manuale Base, p.42",
+    "innate": {
+      "name": "Una Faccia tra la Folla",
+      "description": "Un Bardo è un esperto nel passare inosservato o, al contrario, attirare tutta l'attenzione."
     },
-    "skills": [
-      "Esibirsi",
-      "Persuasione",
-      "Carisma",
-      "Conoscenza Sociale",
-      "Empatia",
-      "Inganno"
-    ],
-    "equipment": [
-      "Liuto o strumento musicale",
-      "Abbiti eleganti",
-      "Taccuino e penna",
-      "Pugnale",
-      "Bottiglia di vino pregiato"
-    ]
+    "vigor": 0,
+    "magic_talents": "Nessuna",
+    "skills": ["Carisma", "Inganno", "Esibirsi", "Belle Arti", "Seduzione", "Persuasione", "Etichetta", "Scaltrezza", "Istruzione", "Accortezza"],
+    "equipment": ["Liuto", "Flauto", "Vino di Toussaint", "Kit per il trucco", "Kit da scrittura", "Sacca da viaggio", "Diario", "Specchio", "Vestiti eleganti", "Pugnale"],
+    "skill_trees": {
+      "branch1": { "name": "Il Menestrello", "skills": ["..."] },
+      "branch2": { "name": "L'Informatore", "skills": ["..."] },
+      "branch3": { "name": "Il Manipolatore", "skills": ["..."] }
+    }
   },
   "effects": [],
   "flags": {},
-  "folders": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0
-  },
   "_id": "profbard00000001"
 }

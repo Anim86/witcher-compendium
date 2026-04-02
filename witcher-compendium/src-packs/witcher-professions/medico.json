@@ -3,34 +3,23 @@
   "type": "profession",
   "img": "modules/witcher-compendium/images/professions/medico.png",
   "system": {
-    "description": "<p>Sul campo di battaglia o nelle strade pestilenziali, un Medico è l'unica cosa che separa un uomo dalla fossa. Conoscono l'anatomia, le erbe e la sottile linea tra la vita e la morte. Spesso sono visti con sospetto, ma tutti li chiamano quando il sangue inizia a scorrere.</p>",
-    "source": "MB 45",
-    "definingSkill": {
-      "name": "Guarigione Miracolosa",
-      "definition": "I Medici possono trattare ferite critiche e stabilizzare persone morenti con un'efficacia sovrumana, salvando vite dove altri fallirebbero."
+    "description": "In un mondo di guerra e malattie, i medici sono l'unico baluardo tra la vita e la morte.",
+    "source": "Manuale Base, p.45",
+    "innate": {
+      "name": "Mani Guaritrici",
+      "description": "Un Medico può tirare Mani Guaritrici (MAN) per curare ferite critiche o stabilizzare moribondi."
     },
-    "skills": [
-      "Primo Soccorso",
-      "Alchimia",
-      "Istruzione",
-      "Resistere a Coercizione",
-      "Coraggio",
-      "Empatia"
-    ],
-    "equipment": [
-      "Borsa medica",
-      "Bende e unguenti",
-      "Strumenti chirurgici",
-      "Fiala di alcol forte",
-      "Libro di medicina"
-    ]
+    "vigor": 0,
+    "magic_talents": "Nessuna",
+    "skills": ["Pronto Soccorso", "Alchimia", "Sopravvivenza", "Sensibilità", "Istruzione", "Accortezza", "Mischia", "Persuasione", "Inganno", "Deduzione"],
+    "equipment": ["Kit da chirurgo", "Erbe officinali", "Alcol forte", "Teli puliti", "Sacca da viaggio", "Pugnale", "Diario clinico", "Boccette vuote", "Zaino", "Pietra per affilare"],
+    "skill_trees": {
+      "branch1": { "name": "Il Chirurgo", "skills": ["..."] },
+      "branch2": { "name": "L'Erborista", "skills": ["..."] },
+      "branch3": { "name": "L'Anatomista", "skills": ["..."] }
+    }
   },
   "effects": [],
   "flags": {},
-  "folders": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0
-  },
   "_id": "profdoctor000001"
 }

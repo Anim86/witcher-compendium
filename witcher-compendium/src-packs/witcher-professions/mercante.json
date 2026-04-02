@@ -1,0 +1,25 @@
+{
+  "name": "Mercante",
+  "type": "profession",
+  "img": "modules/witcher-compendium/images/professions/mercante_gilde.png",
+  "system": {
+    "description": "I mercanti muovono il mondo. Sanno dove trovare qualsiasi cosa e, soprattutto, a che prezzo venderla.",
+    "source": "Manuale Base, p.46",
+    "innate": {
+      "name": "Ben Collegato",
+      "description": "Un Mercante può tirare Ben Collegato (EMP) per trovare oggetti rari o ottenere sconti."
+    },
+    "vigor": 0,
+    "magic_talents": "Nessuna",
+    "skills": ["Commercio", "Persuasione", "Inganno", "Sensibilità", "Etichetta", "Scaltrezza", "Istruzione", "Accortezza", "Lingua (2)", "Gioco d’Azzardo"],
+    "equipment": ["Carretto", "Asino", "Libro mastro", "Bilancia da mercante", "Sacca da viaggio", "Pugnale", "Vestiti da mercante", "Lanterna", "Protezioni leggere", "200 Corone extra"],
+    "skill_trees": {
+      "branch1": { "name": "L'Affarista", "skills": ["..."] },
+      "branch2": { "name": "Il Contrabbandiere", "skills": ["..."] },
+      "branch3": { "name": "Il Magnate", "skills": ["..."] }
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "profmerchant0001"
+}

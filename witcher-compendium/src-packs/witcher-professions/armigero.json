@@ -3,35 +3,23 @@
   "type": "profession",
   "img": "modules/witcher-compendium/images/professions/armigero.png",
   "system": {
-    "description": "<p>I veri soldati pensano secondo la tattica. Un Armigero vive di combattimenti e respira conflitti. Quando non è in guerra, lavora come guardia del corpo o mercenario a pagamento. Sul campo di battaglia sono delle belve, armi in pugno e neanche un briciolo di paura in corpo.</p>",
-    "source": "MB 40",
-    "definingSkill": {
+    "description": "Un armigero vive di combattimenti e respira conflitti. Sul campo di battaglia sono delle belve, armi in pugno e neanche un briciolo di paura in corpo.",
+    "source": "Manuale Base, p.40",
+    "innate": {
       "name": "Duro come una Roccia",
-      "definition": "Quando un Armigero scende a 0 Punti Salute o meno, può tirare Duro come una Roccia con una CD pari alla quantità di Punti Salute negativi moltiplicati per 2, per continuare a combattere."
+      "description": "Quando un Armigero scende a 0 Punti Salute o meno, può tirare Duro come una Roccia (FIS) con una CD pari alla quantità di Punti Salute negativi moltiplicati per 2, per continuare a combattere."
     },
-    "skills": [
-      "5 Abilità di Combattimento a scelta",
-      "Sopravvivenza",
-      "Coraggio",
-      "Prestanza",
-      "Intimidire",
-      "Eludere"
-    ],
-    "equipment": [
-      "Sacca da viaggio",
-      "Camaglio",
-      "Brigantina",
-      "Brache corazzate",
-      "Balestra e dardi ×20",
-      "Brocchiero d’acciaio"
-    ]
+    "vigor": 0,
+    "magic_talents": "Nessuna",
+    "skills": ["5 Abilità di Combattimento", "Sopravvivenza", "Coraggio", "Prestanza", "Intimidire", "Eludere"],
+    "equipment": ["Kord", "Lancia", "Ascia da battaglia", "Coltelli da lancio x5", "Sacca da viaggio", "Camaglio", "Brigantina", "Brache corazzate", "Balestra e dardi x20", "Brocchiero d'acciaio"],
+    "skill_trees": {
+      "branch1": { "name": "Il Guerriero", "skills": ["..."] },
+      "branch2": { "name": "Il Tattico", "skills": ["..."] },
+      "branch3": { "name": "Il Cacciatore", "skills": ["..."] }
+    }
   },
   "effects": [],
   "flags": {},
-  "folders": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0
-  },
-  "_id": "profmanatarms001"
+  "_id": "profmanatarms01"
 }

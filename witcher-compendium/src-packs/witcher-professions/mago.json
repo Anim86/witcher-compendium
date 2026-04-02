@@ -1,0 +1,28 @@
+{
+  "name": "Mago",
+  "type": "profession",
+  "img": "modules/witcher-compendium/images/professions/mago.png",
+  "system": {
+    "description": "I maghi sono i signori del Caos. Consiglieri di re o reietti, possiedono il potere di cambiare il mondo.",
+    "source": "Manuale Base, p.44",
+    "innate": {
+      "name": "Arte del Mago",
+      "description": "Un Mago può tirare Arte del Mago (INT) per identificare fenomeni magici o rispondere a domande sulla magia."
+    },
+    "vigor": 5,
+    "magic_talents": "5 Incantesimi Novizio, 1 Rituale Novizio, 1 Fattura Bassa",
+    "skills": ["Lanciare Incantesimi", "Officiare Rituali", "Intessere Fatture", "Resistere alla Magia", "Istruzione", "Etichetta", "Seduzione", "Sensibilità", "Armi in Asta", "Eleganza"],
+    "equipment": ["Bastone", "Pugnale", "Diario magico", "Specchio", "100 Corone in componenti", "Kit per il trucco", "Clessidra", "Kit da scrittura", "Borsello", "Vestiti lussuosi"],
+    "skill_trees": {
+      "branch1": { "name": "Il Consigliere", "skills": ["..."] },
+      "branch2": { "name": "Il Mago Combattente", "skills": ["..."] },
+      "branch3": { "name": "Lo Scienziato", "skills": ["..."] }
+    },
+    "requirements": {
+      "race": ["Umani", "Elfi"]
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "profmage00000001"
+}

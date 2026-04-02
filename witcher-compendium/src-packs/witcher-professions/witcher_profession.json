@@ -1,0 +1,28 @@
+{
+  "name": "Witcher",
+  "type": "profession",
+  "img": "modules/witcher-compendium/images/professions/armigero.png",
+  "system": {
+    "description": "Creati per uccidere mostri, i witcher sono spadaccini formidabili e maestri dei Segni magici.",
+    "source": "Manuale Base, p.48",
+    "innate": {
+      "name": "Sensi del Witcher",
+      "description": "Un Witcher può tirare Sensi del Witcher (INT) per individuare mostri, tracce o minacce invisibili. Questa abilità sostituisce Accortezza per tutte le prove sensoriali."
+    },
+    "vigor": 2,
+    "magic_talents": "Tutti i Segni Base",
+    "skills": ["Scherma", "Atletica", "Eludere", "Sopravvivenza", "Alchimia", "Lanciare Incantesimi", "Bestiario", "Accortezza", "Rissa", "Furtività"],
+    "equipment": ["Spada d'acciaio", "Spada d'argento", "Medaglione", "Pozione (Rondine)", "Sacca da viaggio", "Attrezzi per riparare armi", "Guanti borchiati", "Balestra", "Borsello", "Olio per lame"],
+    "skill_trees": {
+      "branch1": { "name": "Il Guerriero Magico", "skills": ["..."] },
+      "branch2": { "name": "Il Mutante", "skills": ["..."] },
+      "branch3": { "name": "Lo Sterminatore", "skills": ["..."] }
+    },
+    "requirements": {
+      "race": ["Witcher"]
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "profwitcher00001"
+}

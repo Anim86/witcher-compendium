@@ -3,42 +3,23 @@
   "type": "profession",
   "img": "modules/witcher-compendium/images/professions/druido.png",
   "system": {
-    "description": "<p>Un Druido è un guardiano della natura che preserva l'equilibrio di tutto ciò che vive. Ottengono il loro potere dal legame con il mondo naturale, fermando bracconieri, proteggendo animali e curando le foreste. Molti sono saggi che fungono da guide spirituali, mentre altri sono militanti pronti a difendere i boschi sacri con la forza.</p>",
-    "source": "TC 67",
-    "definingSkill": {
-      "name": "Rito della Quercia e del Vischio",
-      "definition": "Un Druido impara presto come raccogliere piante per farne un potente Focus, che lo collega alla terra. Può costruire un Bastone che solo lui può usare, il cui valore di Focus aumenta con questa Abilità."
+    "description": "I druidi sono i custodi della natura, in grado di manipolare le forze meteorologiche e gli animali.",
+    "source": "Tomo del Caos, p.69",
+    "innate": {
+      "name": "Gerarchia Druidica",
+      "description": "Un Druido può tirare Gerarchia Druidica (EMP) per farsi ascoltare dagli animali o comandare la natura."
     },
-    "skills": [
-      "Accortezza",
-      "Bestiario",
-      "Insegnamento",
-      "Intessere Fatture",
-      "Lanciare Incantesimi",
-      "Officiare Rituali",
-      "Persuasione",
-      "Pronto Soccorso",
-      "Sopravvivenza",
-      "Tempra"
-    ],
-    "equipment": [
-      "100 Corone in componenti",
-      "Abiti per Climi Freddi",
-      "Bastone",
-      "Borsello",
-      "Candele (×5)",
-      "Erbe Anestetiche (×3)",
-      "Falce da Druido",
-      "Giaciglio",
-      "Pipa e Tabacco"
-    ]
+    "vigor": 4,
+    "magic_talents": "4 Invocazioni Druidiche, 2 Rituali Novizio",
+    "skills": ["Officiare Rituali", "Lanciare Incantesimi", "Sopravvivenza", "Bestiario", "Pronto Soccorso", "Alchimia", "Sensibilità", "Persuasione", "Atletica", "Archi"],
+    "equipment": ["Falce", "Bastone di quercia", "Vesti semplici", "Sacca di semi", "Kit erboristico", "Sacca da viaggio", "Borraccia di cuoio", "Protezioni in cuoio bollito", "Amuleto naturale", "Componenti per rituali"],
+    "skill_trees": {
+      "branch1": { "name": "Il Signore delle Bestie", "skills": ["..."] },
+      "branch2": { "name": "Il Guardiano", "skills": ["..."] },
+      "branch3": { "name": "Lo Sciamanista", "skills": ["..."] }
+    }
   },
   "effects": [],
   "flags": {},
-  "folders": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0
-  },
   "_id": "profdruid0000001"
 }

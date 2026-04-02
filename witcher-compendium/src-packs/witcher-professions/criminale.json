@@ -3,34 +3,23 @@
   "type": "profession",
   "img": "modules/witcher-compendium/images/professions/criminale.png",
   "system": {
-    "description": "<p>In città come Novigrad, la legge è solo un suggerimento per chi sa come muoversi nell'ombra. Un Criminale sa che l'oro vale più dell'onore e che un pugnale alla schiena risolve più problemi di un editto reale.</p>",
-    "source": "MB 43",
-    "definingSkill": {
-      "name": "Pratica del Mestiere",
-      "definition": "Un Criminale può individuare trappole, scassinare serrature e muoversi furtivamente con una precisione che pochi altri possono eguagliare."
+    "description": "Nelle ombre delle grandi città, i criminali prosperano. Tagliaborse, sicari o semplici bari, conoscono il sottobosco della società come nessun altro.",
+    "source": "Manuale Base, p.43",
+    "innate": {
+      "name": "Paranoia",
+      "description": "Un Criminale è sempre all'erta. Può tirare Paranoia (INT) per individuare imboscate o trappole."
     },
-    "skills": [
-      "Furtività",
-      "Scassinare",
-      "Piccola Lama",
-      "Criminalità",
-      "Intimidire",
-      "Eludere"
-    ],
-    "equipment": [
-      "Ferri da scasso",
-      "Cappa scura",
-      "Pugnale",
-      "Sacchetto di monete contraffatte",
-      "Maschera di tela"
-    ]
+    "vigor": 0,
+    "magic_talents": "Nessuna",
+    "skills": ["Scaltrezza", "Nascondersi", "Rapidità di mano", "Inganno", "Scassinare", "Lame Corte", "Rissa", "Intimidire", "Persuasione", "Accortezza"],
+    "equipment": ["Grimaldelli", "Pugnale", "Dado truccato", "Fiala di veleno", "Corda e rampino", "Sacca da viaggio", "Kit per il camuffamento", "Mantello con cappuccio", "Borsello nascosto", "Tirapugni"],
+    "skill_trees": {
+      "branch1": { "name": "Il Ladro", "skills": ["..."] },
+      "branch2": { "name": "L'Assassino", "skills": ["..."] },
+      "branch3": { "name": "Il Capobanda", "skills": ["..."] }
+    }
   },
   "effects": [],
   "flags": {},
-  "folders": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0
-  },
   "_id": "profcriminal0001"
 }

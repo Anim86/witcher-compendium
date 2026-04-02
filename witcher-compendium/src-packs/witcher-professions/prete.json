@@ -1,0 +1,28 @@
+{
+  "name": "Prete",
+  "type": "profession",
+  "img": "modules/witcher-compendium/images/professions/nobile.png",
+  "system": {
+    "description": "I preti sono le guide spirituali del popolo. Possono essere fanatici seguaci del Fuoco Eterno o compassionevoli guaritori di Melitele.",
+    "source": "Manuale Base, p.47",
+    "innate": {
+      "name": "Iniziazione",
+      "description": "Un Prete può tirare Iniziazione (EMP) per ottenere ospitalità in templi, influenzare i fedeli o eseguire riti religiosi ufficiali."
+    },
+    "vigor": 2,
+    "magic_talents": "2 Invocazioni Novizio, 1 Rituale Novizio, 1 Fattura Bassa",
+    "skills": ["Officiare Rituali", "Lanciare Incantesimi", "Istruzione", "Accortezza", "Etichetta", "Seduzione", "Persuasione", "Sensibilità", "Falsificare"],
+    "equipment": ["Simbolo sacro", "Vesti sacerdotali", "Pugnale", "Censo", "Sacca da viaggio", "Acqua santa", "Diario spirituale", "Candele", "Kit da sutura", "Libro delle preghiere"],
+    "skill_trees": {
+      "branch1": { "name": "Il Fanatico", "skills": ["..."] },
+      "branch2": { "name": "L'Eremita", "skills": ["..."] },
+      "branch3": { "name": "Il Saggio", "skills": ["..."] }
+    },
+    "requirements": {
+      "race": ["Umani", "Elfi"]
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "profpriest000001"
+}

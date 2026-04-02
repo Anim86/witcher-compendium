@@ -21,8 +21,23 @@
     "minimum": "13",
     "verified": "13.x.x"
   },
+  "esmodules": ["scripts/witcher-compendium.js"],
   "systems": ["TheWitcherTRPG"],
   "packs": [
+    {
+      "name": "witcher-races",
+      "label": "Razze",
+      "path": "packs/witcher-races.db",
+      "type": "Item",
+      "system": "TheWitcherTRPG"
+    },
+    {
+      "name": "witcher-professions",
+      "label": "Professioni",
+      "path": "packs/witcher-professions.db",
+      "type": "Item",
+      "system": "TheWitcherTRPG"
+    },
     {
       "name": "witcher-weapons",
       "label": "Manuale Base - Armi",
@@ -119,20 +134,6 @@
       "label": "Tomo del Caos - Bestiario",
       "path": "packs/witcher-monsters-chaos.db",
       "type": "Actor",
-      "system": "TheWitcherTRPG"
-    },
-    {
-      "name": "witcher-races",
-      "label": "Compendio delle Razze",
-      "path": "packs/witcher-races.db",
-      "type": "Item",
-      "system": "TheWitcherTRPG"
-    },
-    {
-      "name": "witcher-professions",
-      "label": "Compendio delle Professioni",
-      "path": "packs/witcher-professions.db",
-      "type": "Item",
       "system": "TheWitcherTRPG"
     }
   ],

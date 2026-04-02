@@ -1,10 +1,11 @@
 {
-  "name": "Nano",
+  "name": "Nani",
   "type": "race",
   "img": "modules/witcher-compendium/images/races/nano.png",
   "system": {
     "description": "<p>I fiumi si prosciugano, le montagne si spianano, ma i nani restano. Sono bassi rispetto a elfi e umani, ma più robusti, con spalle larghe. Vivono nelle montagne e la loro abilità nel forgiare l'acciaio è leggendaria.</p><p>I nani badano agli affari loro e sono amichevoli quanto basta, finché non vengono provocati.</p>",
-    "source": "MB 25",
+    "source": "Manuale Base, p.25",
+    "social": "Tollerato",
     "perks": [
       {
         "name": "Coriaceo",
@@ -19,14 +20,21 @@
         "description": "Grazie al loro occhio per i dettagli e le valutazioni, ottengono +1 all’abilità Commercio."
       }
     ],
-    "social": "Tollerato"
+    "bonuses": {
+      "skills": {
+        "physique": 1,
+        "business": 1
+      },
+      "encumbrance": 25,
+      "armor": {
+        "head": 2,
+        "torso": 2,
+        "arms": 2,
+        "legs": 2
+      }
+    }
   },
   "effects": [],
   "flags": {},
-  "folders": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0
-  },
   "_id": "racedwarf0000001"
 }
