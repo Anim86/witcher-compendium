@@ -2,7 +2,7 @@
   "id": "witcher-compendium",
   "title": "Witcher RPG Compendium (Premium IT)",
   "description": "Compendio premium per The Witcher TRPG (v14). Include Razze e Professioni con descrizioni complete e coerenti con lo schema di sistema.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "authors": [
     {
       "name": "Zolt"
@@ -15,9 +15,13 @@
     "minimum": "14",
     "verified": "14.359"
   },
-  "esmodules": ["scripts/witcher-compendium.js"],
+  "esmodules": [
+    "scripts/witcher-compendium.js"
+  ],
   "relationships": {
-    "systems": ["TheWitcherItaNewSystem"],
+    "systems": [
+      "TheWitcherItaNewSystem"
+    ],
     "requires": [
       {
         "id": "TheWitcherItaNewSystem",
