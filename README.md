@@ -1,56 +1,76 @@
 # Witcher TRPG Compendium (Italian Edition) 🐺✨
 
-Benvenuto nel compendio italiano definitivo per **The Witcher TRPG** su Foundry VTT! Questo repository contiene sia il sistema di gioco personalizzato che un modulo compendio ricco di contenuti tradotti e pronti all'uso.
+[![Foundry VTT Version](https://img.shields.io/badge/Foundry-v14-orange)](https://foundryvtt.com/)
+[![System Version](https://img.shields.io/badge/System-v14.0.5-blue)](https://github.com/Anim86/witcher-compendium)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+
+Benvenuto nel compendio italiano definitivo per **The Witcher TRPG** su Foundry VTT! Questo repository offre un'esperienza premium, completamente tradotta e ottimizzata per la versione 14 di Foundry.
 
 ---
 
-## 🛠️ Struttura del Progetto
+## 🛠️ Architettura del Progetto
 
-Il progetto è diviso in due componenti principali:
+Il progetto è strutturato in due componenti sinergiche:
 
-1.  **[TheWitcherItaNewSystem](./TheWitcherItaNewSystem)**: Il cuore del sistema di gioco, basato sulla versione della community ma ottimizzato e reso unico per evitare conflitti con altre installazioni.
-2.  **[witcher-compendium](./witcher-compendium)**: Un modulo compendio che aggiunge Razze, Professioni, Armi, Magie e Bestiario (inclusi contenuti dal *Tomo del Caos*) completamente in italiano.
+1.  **[TheWitcherItaNewSystem](./TheWitcherItaNewSystem)** ⚔️
+    *   Il cuore pulsante del gioco.
+    *   Ottimizzato per evitare conflitti con altre versioni del sistema.
+    *   Interfaccia pulita e supporto completo alle regole italiane.
 
----
-
-## 📦 Installazione su Forge VTT / Foundry VTT
-
-Grazie al fatto che questo repository è pubblico, puoi installare il sistema e il modulo direttamente tramite i loro **Manifest URL**.
-
-### 1. Installazione del Sistema (Core)
-In Foundry VTT, vai nella sezione **Game Systems** -> **Install System** e incolla il seguente URL:
-`https://raw.githubusercontent.com/Anim86/witcher-compendium/main/TheWitcherItaNewSystem/system.json`
-
-### 2. Installazione del Modulo (Compendium)
-In Foundry VTT, vai nella sezione **Add-on Modules** -> **Install Module** e incolla il seguente URL:
-`https://raw.githubusercontent.com/Anim86/witcher-compendium/main/witcher-compendium/module.json`
+2.  **[witcher-compendium](./witcher-compendium)** 📚
+    *   Oltre **670 voci** di contenuti tradotti.
+    *   Include Razze, Professioni, Armi, Magie e Bestiario.
+    *   Integrazioni esclusive dal *Tomo del Caos*.
 
 ---
 
-## 🏗️ Caratteristiche Principali
+## 📦 Installazione Rapida
 
-*   **Lingua**: Italiano e Inglese supportati.
-*   **Contenuti**:
-    *   Sostituzione completa dei compendi ufficiali con versioni italiane curate.
-    *   Inclusione di Actor (Mostri) e Item (Equipaggiamento/Magie) coerenti.
-    *   ID univoci per evitare sovrascritture da parte del Bazaar di Forge.
+Puoi installare tutto direttamente in Foundry VTT utilizzando i seguenti **Manifest URL**:
 
----
+### 1. Sistema di Gioco (Core)
+Vai in **Game Systems** -> **Install System** e usa:
+```
+https://raw.githubusercontent.com/Anim86/witcher-compendium/main/TheWitcherItaNewSystem/system.json
+```
 
-## 👥 Autori e Collaboratori
-
-*   **Zolt** - Sviluppo e Content Curation.
-*   **Anim** - Sviluppo e Architettura Forge.
-*   **Antigravity** - Automazione e Integrazione.
-
-*Basato sul lavoro originale di Stexinator e einToastbrot.*
+### 2. Modulo Compendio (Contenuti)
+Vai in **Add-on Modules** -> **Install Module** e usa:
+```
+https://raw.githubusercontent.com/Anim86/witcher-compendium/main/witcher-compendium/module.json
+```
 
 ---
 
-## 📂 Note per lo Sviluppo
+## 🌟 Caratteristiche Premium
 
-Se desideri clonare il repository e apportare modifiche locali, ricordati di aggiornare i puntamenti nei file `system.json` e `module.json` se decidi di cambiare l'ID del pacchetto.
+*   🇮🇹 **Sempre in Italiano**: Traduzione curata di ogni singola voce e descrizione.
+*   📖 **Riferimenti Manuali**: Ogni oggetto o mostro include il riferimento alla pagina del manuale originale (MB/TC).
+*   🚀 **Ottimizzato per v14**: Sfrutta le ultime performance di Foundry VTT per caricamenti istantanei.
+*   🖼️ **Asset Personalizzati**: Icone e banner ridisegnati per un look moderno e immersivo.
 
 ---
 
-*Witcher TRPG Compendium - Per una caccia ai mostri più epica e in lingua italiana!* 🗡️👹
+## 📂 Per gli Sviluppatori
+
+Se desideri contribuire o personalizzare il sistema, i tool necessari si trovano nella cartella **[_tools](./_tools)**:
+*   **`raw-data`**: Dati JSON grezzi estratti dai manuali.
+*   **`src-packs`**: Sorgenti dei pacchetti per la ricompilazione.
+*   **`scripts`**: Script di utilità per il mining e la formattazione dei dati.
+
+> [!TIP]
+> Ricordati di aggiornare i puntamenti nei file `system.json` e `module.json` se decidi di forkarlo o cambiare l'ID del pacchetto.
+
+---
+
+## 👥 Crediti
+
+*   **Zolt** - Sviluppo Core e Content Curation.
+*   **Anim** - Architettura Forge e Packaging.
+*   **Antigravity** - Automazione e Integrazione AI.
+
+*Un ringraziamento speciale ai creatori originali Stexinator e einToastbrot su cui questo lavoro si basa.*
+
+---
+
+*Witcher TRPG Compendium - Per una caccia ai mostri più epica!* 🗡️👹
