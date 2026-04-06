@@ -5,24 +5,58 @@
     "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
     "system": {
         "description": "<p>Comando Mentale consente d’impiantare un ordine nella mente di un bersaglio. Il comando deve es- sere eseguito alla lettera. Se il comando è qualcosa che il bersaglio non farebbe mai, questo riceve +5 alla prova di Resistere alla Magia.</p>",
+        "quantity": "1",
         "weight": 0,
         "cost": 0,
+        "sourcebook": "MB 15",
+        "class": "Spells",
+        "level": "master",
+        "source": "mixedElements",
+        "stamina": 25,
+        "staminaIsVar": false,
+        "effect": "Comando Mentale consente d’impiantare un ordine nella mente di un bersaglio. Il comando deve es- sere eseguito alla lettera. Se il comando è qualcosa che il bersaglio non farebbe mai, questo riceve +5 alla prova di Resistere alla Magia.",
         "range": "10m",
         "duration": "Fino al completamento dell’incarico",
-        "effect": "<p>Comando Mentale consente d'impiantare un ordine nella mente di un bersaglio. Il comando deve essere eseguito alla lettera. Se il comando è qualcosa che il bersaglio non farebbe mai, questo riceve +5 alla prova di Resistere alla Magia.</p>",
-        "sourcebook": "MB 15",
-        "source": ""
+        "defence": "Resistere alla Magia",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast"
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherTRPG",
-        "systemVersion": "1.0.0",
+        "systemVersion": "v13.13.0",
         "coreVersion": "13"
     }
 }

@@ -5,24 +5,58 @@
     "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
     "system": {
         "description": "<p>Teoria di Elgan fu scoperta da Elgan di Verdem, che viaggiò verso il cuore di Mahakam e studiò per anni la magia della terra. L’incantesimo permette di magne- tizzare un oggetto metallico entro 8m. Ogni metallo en- tro 2m è attratto dal magnete e si attacca ad esso. È necessaria una prova di Prestanza con CD 18 per stac- care un oggetto. Tutto il metallo che si attacca alle armi o all’armatura va conteggiato nell’ING di chi porta o indossa l’oggetto magnetizzato.</p>",
+        "quantity": "1",
         "weight": 0,
         "cost": 0,
+        "sourcebook": "MB 107",
+        "class": "Spells",
+        "level": "journeyman",
+        "source": "earth",
+        "stamina": 10,
+        "staminaIsVar": false,
+        "effect": "Teoria di Elgan fu scoperta da Elgan di Verdem, che viaggiò verso il cuore di Mahakam e studiò per anni la magia della terra. L’incantesimo permette di magne- tizzare un oggetto metallico entro 8m. Ogni metallo en- tro 2m è attratto dal magnete e si attacca ad esso. È necessaria una prova di Prestanza con CD 18 per stac- care un oggetto. Tutto il metallo che si attacca alle armi o all’armatura va conteggiato nell’ING di chi porta o indossa l’oggetto magnetizzato.",
         "range": "8m",
         "duration": "2d10 Round",
-        "effect": "<p>Teoria di Elgan fu scoperta da Elgan di Verdem, che viaggiò verso il cuore di Mahakam e studiò per anni la magia della terra. L'incantesimo permette di magnetizzare un oggetto metallico entro 8m. Ogni metallo entro 2m è attratto dal magnete e si attacca ad esso. È necessaria una prova di Prestanza con CD 18 per staccare un oggetto. Tutto il metallo che si attacca alle armi o all'armatura va conteggiato nell'ING di chi porta o indossa l'oggetto magnetizzato.</p>",
-        "sourcebook": "MB 107",
-        "source": ""
+        "defence": "Nessuna",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast"
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherTRPG",
-        "systemVersion": "1.0.0",
+        "systemVersion": "v13.13.0",
         "coreVersion": "13"
     }
 }

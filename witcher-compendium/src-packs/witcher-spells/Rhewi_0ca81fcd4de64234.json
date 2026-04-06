@@ -5,24 +5,58 @@
     "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
     "system": {
         "description": "<p>Rhewi crea uno spesso strato di ghiaccio attorno al bersaglio per la durata dell’incantesimo. Il bersaglio è considerato congelato. Se utilizzato su un bersaglio non vivente, questo non può essere manipolato o spostato.</p>",
+        "quantity": "1",
         "weight": 0,
         "cost": 0,
+        "sourcebook": "MB 106",
+        "class": "Spells",
+        "level": "novice",
+        "source": "fire",
+        "stamina": 2,
+        "staminaIsVar": false,
+        "effect": "Rhewi crea uno spesso strato di ghiaccio attorno al bersaglio per la durata dell’incantesimo. Il bersaglio è considerato congelato. Se utilizzato su un bersaglio non vivente, questo non può essere manipolato o spostato.",
         "range": "8m",
         "duration": "1d10 Round",
-        "effect": "<p>Rhewi crea uno spesso strato di ghiaccio attorno al bersaglio per la durata dell'incantesimo. Il bersaglio è considerato congelato. Se utilizzato su un bersaglio non vivente, questo non può essere manipolato o spostato.</p>",
-        "sourcebook": "MB 106",
-        "source": ""
+        "defence": "Schivare",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast"
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherTRPG",
-        "systemVersion": "1.0.0",
+        "systemVersion": "v13.13.0",
         "coreVersion": "13"
     }
 }

@@ -5,26 +5,58 @@
     "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag104_Rituali_01.png",
     "system": {
         "description": "<p>Registro Magico degli Ospiti Rituali da Maestro Creare Luogo di Potere Incantare Amuleto</p>",
+        "quantity": "1",
         "weight": 0,
-        "cost": 10,
-        "prepTime": "10 Round",
-        "difficulty": "18",
-        "duration": "20 minuti",
-        "components": "Candele (×5), Essenza di Wraith (×2), Frammenti Lunari (×1), Vetro (×5)",
-        "effect": "<p>costruendo un circolo di candele, una piramide di vetro con una scheggia lunare al centro e riempiendola di essenza di Wraith, il ritualista crea un proiettore magico, che rivela visioni del passato. Una volta fatto, l'oggetto mostra l'evento emotivamente più importante mai avvenuto nell'area. La proiezione dura fino a cinque minuti e si ripete a ciclo continuo per la durata dell'effetto.</p>",
+        "cost": 0,
         "sourcebook": "TC 106",
-        "source": "TC 106"
+        "class": "ritual",
+        "level": "master",
+        "source": "",
+        "stamina": 0,
+        "staminaIsVar": false,
+        "effect": "costruendo un circolo di candele, una piramide di vetro con una scheggia lunare al centro e riempiendola di essenza di Wraith, il ritualista crea un proiettore ma- gico, che rivela visioni del passato. Una volta fatto, l’og- getto mostra l’evento emotivamente più importante mai avvenuto nell’area. La proiezione dura fino a cinque mi- nuti e si ripete a ciclo continuo per la durata dell’effetto.",
+        "range": "",
+        "duration": "20 minuti",
+        "defence": "",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "ritcraft"
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherTRPG",
-        "systemVersion": "1.0.0",
+        "systemVersion": "v13.13.0",
         "coreVersion": "13"
     }
 }

@@ -5,24 +5,61 @@
     "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
     "system": {
         "description": "<p>L’incantesimo soffoca un bersaglio infliggendo 1d10 danni per turno. Il soffocamento termina se l’in- cantatore viene colpito da un’arma o interrompe la con- centrazione. Mentre soffoca, il bersaglio è considerato vacillante.</p>",
+        "quantity": "1",
         "weight": 0,
         "cost": 0,
+        "sourcebook": "MB 108",
+        "class": "Spells",
+        "level": "journeyman",
+        "source": "fire",
+        "stamina": 14,
+        "staminaIsVar": false,
+        "effect": "L’incantesimo soffoca un bersaglio infliggendo 1d10 danni per turno. Il soffocamento termina se l’in- cantatore viene colpito da un’arma o interrompe la con- centrazione. Mentre soffoca, il bersaglio è considerato vacillante.",
         "range": "10m",
         "duration": "Attiva (4 RES)",
-        "effect": "<p>L'incantesimo soffoca un bersaglio infliggendo 1d10 danni per turno. Il soffocamento termina se l'incantatore viene colpito da un'arma o interrompe la concentrazione. Mentre soffoca, il bersaglio è considerato vacillante.</p>",
-        "sourcebook": "MB 108",
-        "source": ""
+        "defence": "Resistere alla Magia",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast",
+        "causeDamages": true,
+        "damage": "1d10",
+        "damageType": "elemental"
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherTRPG",
-        "systemVersion": "1.0.0",
+        "systemVersion": "v13.13.0",
         "coreVersion": "13"
     }
 }

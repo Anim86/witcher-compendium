@@ -5,28 +5,58 @@
     "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag088_Incantesimi da Mago_01.png",
     "system": {
         "description": "<p>Fulmine Globulare Forgia del Mago Arrugginire Compromettere Focus Frana di Bekker Nastro Invisibile Porta di Cenere Essenza della Pozione Laccio Spettrale Sciame di Javed Tocco Fulminante Tocco del Fabbro Invaerne Manto Portale Trappola Rafforzare Incantesimi da Maestro Rubare Incantesimo Modellare Terra Gwyntog Fuoco Vivente Estrazione di Ainfra Specchio Oscuro di Bekker Stasi Cristallina Mano della Tempesta Vampata del Korath Piena di Ys</p>",
+        "quantity": "1",
         "weight": 0,
-        "cost": 14,
+        "cost": 0,
+        "sourcebook": "TC 88",
+        "class": "Spells",
+        "level": "master",
+        "source": "earth",
+        "stamina": 0,
+        "staminaIsVar": false,
+        "effect": "creato dal famoso Elgan di Verden, questo in- cantesimo usa le tracce di metalli presenti nelle rocce per sollevarle magneticamente e creare uno scudo pro- tettivo attorno al mago. Si tratta di un riparo con PR 30, che blocca attacchi da tutte le direzioni. Mentre è così protetto, il mago ha VEL massima 2 e, nel suo Turno, non può fare altro che compiere una singola Azione di Movimento.",
         "range": "Personale",
         "duration": "Attiva (4 RES)",
-        "defense": "Nessuna",
-        "tier": "Maestro",
-        "subtype": "Terra",
-        "category": "Mago",
-        "effect": "<p>creato dal famoso Elgan di Verden, questo incantesimo usa le tracce di metalli presenti nelle rocce per sollevarle magneticamente e creare uno scudo protettivo attorno al mago. Si tratta di un riparo con PR 30, che blocca attacchi da tutte le direzioni. Mentre è così protetto, il mago ha VEL massima 2 e, nel suo Turno, non può fare altro che compiere una singola Azione di Movimento.</p>",
-        "sourcebook": "TC 88",
-        "source": ""
+        "defence": "Nessuna",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast"
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherTRPG",
-        "systemVersion": "1.0.0",
+        "systemVersion": "v13.13.0",
         "coreVersion": "13"
     }
 }

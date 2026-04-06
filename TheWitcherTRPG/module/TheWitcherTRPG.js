@@ -22,10 +22,9 @@ import { preloadHandlebarsTemplates, registerHandelbarHelpers } from './setup/ha
 import Rewards from './app/reward/reward.js';
 import { registerQueries } from './setup/queries.js';
 
-registerHooks();
-
 Hooks.once('init', function () {
     console.log('TheWitcherTRPG | init system');
+    registerHooks();
 
     CONFIG.WITCHER = WITCHER;
     CONFIG.statusEffects = CONFIG.WITCHER.statusEffects;

@@ -5,24 +5,58 @@
     "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
     "system": {
         "description": "<p>Rhwystr Graig permette di creare una parete di roccia di 2m per 3m, con 30 punti Pr, ovunque entro 3m dall’incantatore, orientato in qualsiasi direzione. Il muro permane fino alla sua distruzione.</p>",
+        "quantity": "1",
         "weight": 0,
         "cost": 0,
+        "sourcebook": "MB 107",
+        "class": "Spells",
+        "level": "journeyman",
+        "source": "earth",
+        "stamina": 15,
+        "staminaIsVar": false,
+        "effect": "Rhwystr Graig permette di creare una parete di roccia di 2m per 3m, con 30 punti Pr, ovunque entro 3m dall’incantatore, orientato in qualsiasi direzione. Il muro permane fino alla sua distruzione.",
         "range": "20m",
         "duration": "Istantanea",
-        "effect": "<p>Rhwystr Graig permette di creare una parete di roccia di 2m per 3m, con 30 punti Pr, ovunque entro 3m dall'incantatore, orientato in qualsiasi direzione. Il muro permane fino alla sua distruzione.</p>",
-        "sourcebook": "MB 107",
-        "source": ""
+        "defence": "Nessuna",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast"
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherTRPG",
-        "systemVersion": "1.0.0",
+        "systemVersion": "v13.13.0",
         "coreVersion": "13"
     }
 }

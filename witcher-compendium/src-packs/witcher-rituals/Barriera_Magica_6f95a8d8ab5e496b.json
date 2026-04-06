@@ -5,24 +5,58 @@
     "img": "modules/witcher-compendium/assets/Immagini/Pag118_Rituali_01.png",
     "system": {
         "description": "<p>Questo rituale crea una barriera circolare di 10m di diametro di forza pura. La barriera può subire 50 danni prima di essere distrutta. Nel suo turno, il ritualista può spendere un ulteriore punto di RES oltre al costo di man- tenimento, per ripristinare i Punti Salute della barriera al ritmo di 5 Punti Salute per punto di RES. Lo scudo è concreto e non può essere oltrepassato da og- getti solidi. Una volta eretto lo scudo nulla può oltrepas- sarlo. Al suo interno c’è ricambio d’aria, permettendo a chi si trova dentro la barriera di respirare. Se il ritualista lo desidera, può interrompere il ricambio, lasciando così solo 20 round d’aria. Ogni ulteriore persona nello scudo, riduce i round d’aria di 1. Le creature eteree possono oltre- passare la barriera e il ritualista può teletrasportarsi fuori.</p>",
+        "quantity": "1",
         "weight": 0,
-        "cost": 10,
+        "cost": 0,
+        "sourcebook": "MB 15",
+        "class": "ritual",
+        "level": "novice",
+        "source": "",
+        "stamina": 0,
+        "staminaIsVar": false,
+        "effect": "Questo rituale crea una barriera circolare di 10m di diametro di forza pura. La barriera può subire 50 danni prima di essere distrutta. Nel suo turno, il ritualista può spendere un ulteriore punto di RES oltre al costo di man- tenimento, per ripristinare i Punti Salute della barriera al ritmo di 5 Punti Salute per punto di RES. Lo scudo è concreto e non può essere oltrepassato da og- getti solidi. Una volta eretto lo scudo nulla può oltrepas- sarlo. Al suo interno c’è ricambio d’aria, permettendo a chi si trova dentro la barriera di respirare. Se il ritualista lo desidera, può interrompere il ricambio, lasciando così solo 20 round d’aria. Ogni ulteriore persona nello scudo, riduce i round d’aria di 1. Le creature eteree possono oltre- passare la barriera e il ritualista può teletrasportarsi fuori.",
         "range": "N/A",
         "duration": "Attiva (2 RES)",
-        "effect": "<p>Questo rituale crea una barriera circolare di 10m di diametro di forza pura. La barriera può subire 50 danni prima di essere distrutta. Nel suo turno, il ritualista può spendere un ulteriore punto di RES oltre al costo di mantenimento, per ripristinare i Punti Salute della barriera al ritmo di 5 Punti Salute per punto di RES. Lo scudo è concreto e non può essere oltrepassato da oggetti solidi. Una volta eretto lo scudo nulla può oltrepassarlo. Al suo interno c'è ricambio d'aria, permettendo a chi si trova dentro la barriera di respirare. Se il ritualista lo desidera, può interrompere il ricambio, lasciando così solo 20 round d'aria. Ogni ulteriore persona nello scudo, riduce i round d'aria di 1. Le creature eteree possono oltrepassare la barriera e il ritualista può teletrasportarsi fuori.</p>",
-        "sourcebook": "MB 15",
-        "source": "MB 15"
+        "defence": "",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "ritcraft"
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherTRPG",
-        "systemVersion": "1.0.0",
+        "systemVersion": "v13.13.0",
         "coreVersion": "13"
     }
 }

@@ -5,24 +5,58 @@
     "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
     "system": {
         "description": "<p>Fascino consente all’incantatore di creare un’il- lusione su se stesso che lo renda affascinante. Questo in- cantesimo conferisce +3 a Seduzione, Carisma e Autorità.</p>",
+        "quantity": "1",
         "weight": 0,
         "cost": 0,
+        "sourcebook": "MB 15",
+        "class": "Spells",
+        "level": "novice",
+        "source": "earth",
+        "stamina": 5,
+        "staminaIsVar": false,
+        "effect": "Fascino consente all’incantatore di creare un’il- lusione su se stesso che lo renda affascinante. Questo in- cantesimo conferisce +3 a Seduzione, Carisma e Autorità.",
         "range": "Personale",
         "duration": "1d6 Ore",
-        "effect": "<p>Fascino consente all'incantatore di creare un'illusione su se stesso che lo renda affascinante. Questo incantesimo conferisce +3 a Seduzione, Carisma e Autorità.</p>",
-        "sourcebook": "MB 15",
-        "source": ""
+        "defence": "Nessuna",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast"
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherTRPG",
-        "systemVersion": "1.0.0",
+        "systemVersion": "v13.13.0",
         "coreVersion": "13"
     }
 }

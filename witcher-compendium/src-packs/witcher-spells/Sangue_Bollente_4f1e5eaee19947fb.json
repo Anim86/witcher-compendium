@@ -5,24 +5,58 @@
     "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
     "system": {
         "description": "<p>Sangue Bollente scatena la furia di un anima- le o un mostro non senziente entro portata contro un bersaglio. La creatura cercherà di attaccare il bersaglio prescelto per tutta la durata della magia.</p>",
+        "quantity": "1",
         "weight": 0,
         "cost": 0,
+        "sourcebook": "MB 111",
+        "class": "Invocations",
+        "level": "novice",
+        "source": "fire",
+        "stamina": 3,
+        "staminaIsVar": false,
+        "effect": "Sangue Bollente scatena la furia di un anima- le o un mostro non senziente entro portata contro un bersaglio. La creatura cercherà di attaccare il bersaglio prescelto per tutta la durata della magia.",
         "range": "8m",
         "duration": "",
-        "effect": "<p>Sangue Bollente scatena la furia di un animale o un mostro non senziente entro portata contro un bersaglio. La creatura cercherà di attaccare il bersaglio prescelto per tutta la durata della magia.</p>",
-        "sourcebook": "MB 111",
-        "source": ""
+        "defence": "",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast"
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherTRPG",
-        "systemVersion": "1.0.0",
+        "systemVersion": "v13.13.0",
         "coreVersion": "13"
     }
 }

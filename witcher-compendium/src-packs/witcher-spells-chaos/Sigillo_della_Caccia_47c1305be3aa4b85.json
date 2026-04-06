@@ -5,28 +5,58 @@
     "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag083_Incantesimi da Mago_01.png",
     "system": {
         "description": "<p>Invocazioni da Maestro Ira della Natura Totem Druidico</p>",
+        "quantity": "1",
         "weight": 0,
-        "cost": 5,
+        "cost": 0,
+        "sourcebook": "TC 98",
+        "class": "Spells",
+        "level": "novice",
+        "source": "mixedElements",
+        "stamina": 0,
+        "staminaIsVar": false,
+        "effect": "tracciare il Sigillo della Caccia su un bersaglio cambia il modo in cui animali e mostri reagiscono alla sua presenza. Al momento del lancio, il Druido può marcare fino a sei bersagli come “protetto” o “preda”. La presenza di un “protetto” non disturba gli animali, che anzi sono inizialmente amichevoli, mentre i mostri si comportano in modo neutrale. Una “preda”, invece, è percepita come tale da tutti i predatori e mostri, che attaccano a vista. I due marchi appaiono identici, ma chi supera una prova di Istruzione CD 16 si accorge di piccole differenze.",
         "range": "2m",
         "duration": "1 giorno",
-        "defense": "Resistere alla Magia",
-        "tier": "Novizio",
-        "subtype": "Misto",
-        "category": "Druido",
-        "effect": "<p>tracciare il Sigillo della Caccia su un bersaglio cambia il modo in cui animali e mostri reagiscono alla sua presenza. Al momento del lancio, il Druido può marcare fino a sei bersagli come \"protetto\" o \"preda\". La presenza di un \"protetto\" non disturba gli animali, che anzi sono inizialmente amichevoli, mentre i mostri si comportano in modo neutrale. Una \"preda\", invece, è percepita come tale da tutti i predatori e mostri, che attaccano a vista. I due marchi appaiono identici, ma chi supera una prova di Istruzione CD 16 si accorge di piccole differenze.</p>",
-        "sourcebook": "TC 98",
-        "source": ""
+        "defence": "Resistere alla Magia",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast"
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherTRPG",
-        "systemVersion": "1.0.0",
+        "systemVersion": "v13.13.0",
         "coreVersion": "13"
     }
 }

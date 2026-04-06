@@ -523,13 +523,15 @@ export default class WitcherActor extends Actor {
     async addItem(addItem, numberOfItem, forcecreate = false) {
         let foundItem = this.items.find(item => item.name == addItem.name && item.type == addItem.type);
         if (foundItem && !forcecreate && !foundItem.system.isStored) {
-            await foundItem.update({ 'system.quantity': Number(foundItem.system.quantity) + Number(numberOfItem) });
+            await foundItem.update({
+                'system.quantity': String(Number(foundItem.system.quantity) + Number(numberOfItem))
+            });
         } else {
             //if toObject cannot be called, we dont have a source => we dont need to call toObject
             let newItem = addItem.toObject ? addItem.toObject(false) : addItem;
 
             if (numberOfItem) {
-                newItem.system.quantity = Number(numberOfItem);
+                newItem.system.quantity = String(numberOfItem);
             }
 
             await this.createEmbeddedDocuments('Item', [newItem]);

@@ -1,28 +1,81 @@
 {
   "name": "Prete",
   "type": "profession",
-  "img": "modules/witcher-compendium/images/professions/nobile.png",
+  "img": "modules/witcher-compendium/images/professions/prete.png",
   "system": {
-    "description": "I preti sono le guide spirituali del popolo. Possono essere fanatici seguaci del Fuoco Eterno o compassionevoli guaritori di Melitele.",
-    "source": "Manuale Base, p.47",
-    "innate": {
-      "name": "Iniziazione",
-      "description": "Un Prete può tirare Iniziazione (EMP) per ottenere ospitalità in templi, influenzare i fedeli o eseguire riti religiosi ufficiali."
+    "sourcebook": "Manuale Base, p.47",
+    "definingSkill": {
+      "skillName": "Richiesta Divina",
+      "stat": "will",
+      "level": 1,
+      "definition": "<p>Un Prete può invocare l'intervento della propria divinità. Effettuando una prova di <strong>Richiesta Divina (VOL)</strong> può ottenere una guida spirituale, benedire un'area o tentare di allontanare presenze maligne minori.</p>"
     },
-    "vigor": 2,
-    "magic_talents": "2 Invocazioni Novizio, 1 Rituale Novizio, 1 Fattura Bassa",
-    "skills": ["Officiare Rituali", "Lanciare Incantesimi", "Istruzione", "Accortezza", "Etichetta", "Seduzione", "Persuasione", "Sensibilità", "Falsificare"],
-    "equipment": ["Simbolo sacro", "Vesti sacerdotali", "Pugnale", "Censo", "Sacca da viaggio", "Acqua santa", "Diario spirituale", "Candele", "Kit da sutura", "Libro delle preghiere"],
-    "skill_trees": {
-      "branch1": { "name": "Il Fanatico", "skills": ["..."] },
-      "branch2": { "name": "L'Eremita", "skills": ["..."] },
-      "branch3": { "name": "Il Saggio", "skills": ["..."] }
+    "skillPath1": {
+      "pathName": "Il Carismatico",
+      "skill1": {
+        "skillName": "Sermone",
+        "stat": "emp",
+        "level": 0,
+        "definition": "<p>Discorso ispirato che galvanizza le masse, potendo incitare alla rivolta o alla calma assoluta.</p>"
+      },
+      "skill2": {
+        "skillName": "Confessione",
+        "stat": "emp",
+        "level": 0,
+        "definition": "<p>Abilità nel far rivelare i propri peccati o segreti alle persone attraverso il conforto e la fiducia.</p>"
+      },
+      "skill3": {
+        "skillName": "Guida Spirituale",
+        "stat": "emp",
+        "level": 0,
+        "definition": "<p>Fornisce consigli basati sulla fede che migliorano la determinazione degli alleati nelle situazioni disperate.</p>"
+      }
     },
-    "requirements": {
-      "race": ["Umani", "Elfi"]
-    }
+    "skillPath2": {
+      "pathName": "L'Esorcista",
+      "skill1": {
+        "skillName": "Riconoscere il Male",
+        "stat": "int",
+        "level": 0,
+        "definition": "<p>Percepisce la presenza di resti di magia nera, maledizioni o infestazioni spettrali nelle vicinanze.</p>"
+      },
+      "skill2": {
+        "skillName": "Parole Sacre",
+        "stat": "will",
+        "level": 0,
+        "definition": "<p>Invocazioni che stordiscono o scacciano temporaneamente creature demoniache o spettri.</p>"
+      },
+      "skill3": {
+        "skillName": "Spezzafatture",
+        "stat": "will",
+        "level": 0,
+        "definition": "<p>Capacità superiore di rimuovere maledizioni e fatture gettate da maghi o creature maligne.</p>"
+      }
+    },
+    "skillPath3": {
+      "pathName": "Lo Zelota",
+      "skill1": {
+        "skillName": "Furore Religioso",
+        "stat": "will",
+        "level": 0,
+        "definition": "<p>Aumenta la potenza dei colpi in combattimento ignorando il dolore fisico attraverso la fede incrollabile.</p>"
+      },
+      "skill2": {
+        "skillName": "Martirio",
+        "stat": "body",
+        "level": 0,
+        "definition": "<p>Capacità di subire danni al posto di un alleato vicino, proteggendolo con il proprio corpo e la propria grazia divina.</p>"
+      },
+      "skill3": {
+        "skillName": "Inquisitore",
+        "stat": "will",
+        "level": 0,
+        "definition": "<p>Metodi di interrogatorio implacabili che rendono quasi impossibile mentire al prete senza subire forte stress mentale.</p>"
+      }
+    },
+    "professionSkills": "Officiare Rituali, Lanciare Incantesimi, Intessere Fatture, Coraggio, Istruzione, Autorità, Persuasione, Pronto Soccorso, Accortezza, Armi in Asta"
   },
   "effects": [],
   "flags": {},
-  "_id": "profpriest000001"
+  "_id": "profpriest00000001"
 }

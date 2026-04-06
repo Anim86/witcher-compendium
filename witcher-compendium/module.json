@@ -1,16 +1,12 @@
 {
   "id": "witcher-compendium",
-  "title": "Witcher RPG Compendium",
-  "description": "Compendio completo per The Witcher RPG (v13). Include 674 voci da Manuale Base e Tomo del Caos: Mostri, Magie, Alchimia, Equipaggiamento, Schemi e Rituali. Tutte le descrizioni sono state ripristinate fedelmente dai manuali originali.",
-  "version": "1.0.0",
+  "title": "Witcher RPG Compendium (Premium IT)",
+  "description": "Compendio premium per The Witcher TRPG (v13). Include Razze e Professioni con descrizioni complete e coerenti con lo schema di sistema.",
+  "version": "1.1.0",
   "authors": [
     {
       "name": "Manuel",
       "role": "Project Manager & QA"
-    },
-    {
-      "name": "Perplexity",
-      "role": "Data Mining Assistance"
     },
     {
       "name": "Antigravity",
@@ -134,6 +130,13 @@
       "label": "Tomo del Caos - Bestiario",
       "path": "packs/witcher-monsters-chaos.db",
       "type": "Actor",
+      "system": "TheWitcherTRPG"
+    },
+    {
+      "name": "witcher-skills",
+      "label": "Abilità Witcher",
+      "path": "packs/witcher-skills.db",
+      "type": "Item",
       "system": "TheWitcherTRPG"
     }
   ],

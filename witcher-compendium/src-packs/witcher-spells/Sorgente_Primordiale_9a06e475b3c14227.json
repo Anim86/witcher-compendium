@@ -5,24 +5,58 @@
     "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
     "system": {
         "description": "<p>Sorgente Primordiale consente al druido di at- tingere alla potenza primordiale di un bersaglio e risve- gliarla. Conferisce, per la durata dell’incantesimo, +2 al Danno da Mischia, ma -2 a INT.</p>",
+        "quantity": "1",
         "weight": 0,
         "cost": 0,
+        "sourcebook": "MB 111",
+        "class": "Invocations",
+        "level": "novice",
+        "source": "fire",
+        "stamina": 6,
+        "staminaIsVar": false,
+        "effect": "Sorgente Primordiale consente al druido di at- tingere alla potenza primordiale di un bersaglio e risve- gliarla. Conferisce, per la durata dell’incantesimo, +2 al Danno da Mischia, ma -2 a INT.",
         "range": "5m",
         "duration": "",
-        "effect": "<p>Sorgente Primordiale consente al druido di attingere alla potenza primordiale di un bersaglio e risvegliarla. Conferisce, per la durata dell'incantesimo, +2 al Danno da Mischia, ma -2 a INT.</p>",
-        "sourcebook": "MB 111",
-        "source": ""
+        "defence": "",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast"
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherTRPG",
-        "systemVersion": "1.0.0",
+        "systemVersion": "v13.13.0",
         "coreVersion": "13"
     }
 }

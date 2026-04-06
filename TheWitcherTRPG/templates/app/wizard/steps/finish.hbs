@@ -1,0 +1,62 @@
+<div class="wizard-step step-finish">
+    <h2>{{localize "WITCHER.Wizard.Step.Finish.Title"}}</h2>
+    <p>{{localize "WITCHER.Wizard.Step.Finish.Description"}}</p>
+
+    <div class="character-preview-grid">
+        <div class="preview-sidebar">
+            <div class="avatar-selection" data-action="selectAvatar">
+                <img src="{{character.img}}" alt="{{character.name}}" class="wizard-avatar">
+                <div class="avatar-overlay">
+                    <i class="fa-solid fa-camera"></i>
+                    <span>{{localize "WITCHER.Wizard.ChangeAvatar"}}</span>
+                </div>
+            </div>
+            <div class="form-group character-name-selection">
+                <label>{{localize "WITCHER.Actor.Name"}}</label>
+                <input type="text" name="name" value="{{character.name}}" placeholder="{{localize "WITCHER.Wizard.NamePlaceholder"}}" class="wizard-name-input">
+            </div>
+        </div>
+
+        <div class="preview-main">
+            <div class="summary-card">
+                <h3>{{localize "WITCHER.Wizard.Summary.Details"}}</h3>
+                <div class="summary-line">
+                    <strong>{{localize "WITCHER.Wizard.Race"}}:</strong> {{character.race.name}}
+                </div>
+                <div class="summary-line">
+                    <strong>{{localize "WITCHER.Wizard.Profession"}}:</strong> {{character.profession.name}}
+                </div>
+                <div class="summary-line">
+                    <strong>{{localize "WITCHER.Wizard.Background"}}:</strong> {{character.homeland}} - {{character.background.socialStatus}}
+                </div>
+            </div>
+
+            <div class="summary-card">
+                <h3>{{localize "WITCHER.Wizard.Stats.Summary"}}</h3>
+                <div class="stats-pills">
+                    {{#each character.stats}}
+                    <div class="stat-pill">
+                        <span class="stat-abbr">{{@key}}</span>
+                        <span class="stat-value">{{this}}</span>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+            
+            <div class="summary-card full-width">
+                <h3>{{localize "WITCHER.Wizard.Skills.Summary"}}</h3>
+                <div class="skills-list">
+                    {{#each character.skills}}
+                    {{#if (gt this 0)}}
+                    <span class="skill-tag">{{@key}}: {{this}}</span>
+                    {{/if}}
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="finish-callout">
+        <p>{{localize "WITCHER.Wizard.Finish.Callout"}}</p>
+    </div>
+</div>

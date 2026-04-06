@@ -1,28 +1,26 @@
 {
     "_id": "592e623fd2804202",
     "name": "Foglie di Balissa",
-    "type": "alchemical",
+    "type": "component",
     "img": "modules/witcher-compendium/assets/Immagini/Pag145_Sostanze Alchemiche_02.png",
     "system": {
         "description": "<p>C Campi 1d10 Unità 12 0,1 8</p>",
+        "quantity": "1",
         "weight": 0.1,
         "cost": 8,
-        "toxicity": "0%",
-        "duration": "N/A",
-        "effect": "<p>Restaurare Cadavere impiega la magia per creare copie spettrali di muscoli, pelle e capelli di un corpo. Il bersaglio diventa una versione traslucida di ciò che era in vita, con le ferite subite nel momento della morte, che possono essere toccate ed esaminate come se fossero vere. È possibile evocare solo le \"parti molli\" di un cadavere e possono essere staccate e spostate fino a una distanza massima di 4m.</p>",
         "sourcebook": "MB 146",
-        "source": "MB 146"
+        "type": "alchemical",
+        "rarity": "C",
+        "location": "Campi 1d10 Unità 12",
+        "quantityObtainable": "",
+        "forage": "",
+        "substanceType": "quebrith"
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherTRPG",
-        "systemVersion": "1.0.0",
+        "systemVersion": "v13.13.0",
         "coreVersion": "13"
     }
 }

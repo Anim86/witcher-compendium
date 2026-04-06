@@ -3,21 +3,77 @@
   "type": "profession",
   "img": "modules/witcher-compendium/images/professions/criminale.png",
   "system": {
-    "description": "Nelle ombre delle grandi città, i criminali prosperano. Tagliaborse, sicari o semplici bari, conoscono il sottobosco della società come nessun altro.",
-    "source": "Manuale Base, p.43",
-    "innate": {
-      "name": "Paranoia",
-      "description": "Un Criminale è sempre all'erta. Può tirare Paranoia (INT) per individuare imboscate o trappole."
+    "sourcebook": "Manuale Base, p.43",
+    "definingSkill": {
+      "skillName": "Pratica Criminale",
+      "stat": "int",
+      "level": 1,
+      "definition": "<p>Un Criminale sa come funziona il mondo sotterraneo. Può effettuare una prova di <strong>Pratica Criminale (INT)</strong> per localizzare mercati neri o trovare contatti validi nella malavita locale.</p>"
     },
-    "vigor": 0,
-    "magic_talents": "Nessuna",
-    "skills": ["Scaltrezza", "Nascondersi", "Rapidità di mano", "Inganno", "Scassinare", "Lame Corte", "Rissa", "Intimidire", "Persuasione", "Accortezza"],
-    "equipment": ["Grimaldelli", "Pugnale", "Dado truccato", "Fiala di veleno", "Corda e rampino", "Sacca da viaggio", "Kit per il camuffamento", "Mantello con cappuccio", "Borsello nascosto", "Tirapugni"],
-    "skill_trees": {
-      "branch1": { "name": "Il Ladro", "skills": ["..."] },
-      "branch2": { "name": "L'Assassino", "skills": ["..."] },
-      "branch3": { "name": "Il Capobanda", "skills": ["..."] }
-    }
+    "skillPath1": {
+      "pathName": "Il Ladro",
+      "skill1": {
+        "skillName": "Scassinare Serrature",
+        "stat": "cra",
+        "level": 0,
+        "definition": "<p>Massima competenza nel forzare forzieri e porte blindate senza lasciare tracce evidenti.</p>"
+      },
+      "skill2": {
+        "skillName": "Sensibilità alle Trappole",
+        "stat": "int",
+        "level": 0,
+        "definition": "<p>Un sesto senso affinato nel percepire fili tesi, piastre a pressione o strani meccanismi nascosti.</p>"
+      },
+      "skill3": {
+        "skillName": "Acrobatica",
+        "stat": "dex",
+        "level": 0,
+        "definition": "<p>Migliora la coordinazione per scalare pareti e saltare tra i tetti, riducendo le penalità e i danni da caduta.</p>"
+      }
+    },
+    "skillPath2": {
+      "pathName": "L'Assassino",
+      "skill1": {
+        "skillName": "Colpo Silenzioso",
+        "stat": "dex",
+        "level": 0,
+        "definition": "<p>Permette di sferrare un colpo letale contro bersagli ignari. Aggiunge un moltiplicatore al danno se in furtività.</p>"
+      },
+      "skill2": {
+        "skillName": "Maestro Veleni",
+        "stat": "int",
+        "level": 0,
+        "definition": "<p>Aumenta considerevolmente l'efficacia dei veleni applicati alle lame e garantisce l'immunità accidentale.</p>"
+      },
+      "skill3": {
+        "skillName": "Scomparire",
+        "stat": "dex",
+        "level": 0,
+        "definition": "<p>Capacità di svanire improvvisamente tra la folla o dietro ostacoli, rendendo quasi impossibile l'inseguimento.</p>"
+      }
+    },
+    "skillPath3": {
+      "pathName": "Il Boss",
+      "skill1": {
+        "skillName": "Estorsione",
+        "stat": "will",
+        "level": 0,
+        "definition": "<p>Abilità nell'intimidire popolani e piccoli commercianti per estorcere denaro o favori.</p>"
+      },
+      "skill2": {
+        "skillName": "Autorità Criminale",
+        "stat": "emp",
+        "level": 0,
+        "definition": "<p>Consente di comandare piccoli gruppi di sgherri, mantenendo l'ordine all'interno di una gang.</p>"
+      },
+      "skill3": {
+        "skillName": "Falsificazione",
+        "stat": "cra",
+        "level": 0,
+        "definition": "<p>Crea copie identiche di sigilli reali e pergamene, estremamente complicate da smascherare.</p>"
+      }
+    },
+    "professionSkills": "Inganno, Etichetta, Streetwise, Scassinare, Trappole, Nascondersi, Rapidità di Mano, Sensibilità, Accortezza, Lame Corte"
   },
   "effects": [],
   "flags": {},

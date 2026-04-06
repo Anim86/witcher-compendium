@@ -1,0 +1,73 @@
+<div class="wizard-step step-skills">
+    <h2>{{localize "WITCHER.Wizard.Step.Skills.Title"}}</h2>
+    <p>{{localize "WITCHER.Wizard.Step.Skills.Description"}}</p>
+
+    <div class="skills-container tabs" data-group="skill-tabs">
+        <nav class="sheet-tabs tabs" data-group="skill-tabs">
+            <a class="item active" data-tab="profession-skills">
+                {{localize "WITCHER.Wizard.Skills.Profession"}}
+                <span class="badge {{#if (lt professionPointsRemaining 0)}}negative{{/if}}">{{professionPointsRemaining}}</span>
+            </a>
+            <a class="item" data-tab="pickup-skills">
+                {{localize "WITCHER.Wizard.Skills.Pickup"}}
+                <span class="badge {{#if (lt pickupPointsRemaining 0)}}negative{{/if}}">{{pickupPointsRemaining}}</span>
+            </a>
+        </nav>
+
+        <section class="content">
+            <div class="tab active" data-group="skill-tabs" data-tab="profession-skills">
+                <div class="skills-grid">
+                    {{#each professionSkills}}
+                    <div class="skill-row" data-skill="{{@key}}">
+                        <label>{{localize label}} {{#if (eq cost 2)}}(2){{/if}}</label>
+                        <div class="skill-controls">
+                            <button type="button" data-action="adjustSkill" data-skill="{{@key}}" data-type="profession" data-delta="-1">
+                                <i class="fa-solid fa-minus"></i>
+                            </button>
+                            <input type="number" 
+                                   data-action="adjustSkill" 
+                                   data-skill="{{@key}}" 
+                                   name="skills.{{@key}}" 
+                                   value="{{value}}" 
+                                   min="0" 
+                                   max="10">
+                            <button type="button" data-action="adjustSkill" data-skill="{{@key}}" data-type="profession" data-delta="1">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+
+            <div class="tab" data-group="skill-tabs" data-tab="pickup-skills">
+                <div class="skills-search">
+                    <input type="text" id="skill-filter" placeholder="{{localize "WITCHER.Wizard.Skills.Filter"}}">
+                </div>
+                <div class="skills-grid pickup-grid">
+                    {{#each pickupSkills}}
+                    <div class="skill-row {{#if isProfession}}disabled{{/if}}" data-skill="{{@key}}">
+                        <label>{{localize label}} {{#if (eq cost 2)}}(2){{/if}}</label>
+                        <div class="skill-controls">
+                            <button type="button" data-action="adjustSkill" data-skill="{{@key}}" data-type="pickup" data-delta="-1" {{#if isProfession}}disabled{{/if}}>
+                                <i class="fa-solid fa-minus"></i>
+                            </button>
+                            <input type="number" 
+                                   data-action="adjustSkill" 
+                                   data-skill="{{@key}}" 
+                                   name="skills.{{@key}}" 
+                                   value="{{value}}" 
+                                   min="0" 
+                                   max="10" 
+                                   {{#if isProfession}}disabled{{/if}}>
+                            <button type="button" data-action="adjustSkill" data-skill="{{@key}}" data-type="pickup" data-delta="1" {{#if isProfession}}disabled{{/if}}>
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

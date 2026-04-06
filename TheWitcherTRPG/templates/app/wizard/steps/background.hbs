@@ -1,0 +1,66 @@
+<div class="wizard-step step-background">
+    <h2>{{localize "WITCHER.Wizard.Step.Background.Title"}}</h2>
+    <p>{{localize "WITCHER.Wizard.Step.Background.Description"}}</p>
+
+    <div class="background-container">
+        <div class="grid grid-2col">
+            <div class="background-section">
+                <h3>{{localize "WITCHER.Wizard.Background.Origin"}}</h3>
+                
+                <div class="form-group">
+                    <label>{{localize "WITCHER.Wizard.Background.Homeland"}}</label>
+                    <select name="homeland" data-action="updateHomeland">
+                        <option value="">{{localize "WITCHER.Wizard.Background.SelectHomeland"}}</option>
+                        {{#each homelands}}
+                        <option value="{{this.value}}" {{#if (eq ../character.homeland this.value)}}selected{{/if}}>{{localize this.label}}</option>
+                        {{/each}}
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>{{localize "WITCHER.Wizard.Background.SocialStatus"}}</label>
+                    <div class="input-with-roll">
+                        <select name="background.socialStatus" data-action="updateBackground">
+                            <option value="">{{localize "WITCHER.Wizard.Background.SelectHomeland"}}</option>
+                            {{#each socialStandings}}
+                            <option value="{{this.value}}" {{#if (eq ../character.background.socialStatus this.value)}}selected{{/if}}>{{localize this.label}}</option>
+                            {{/each}}
+                        </select>
+                        <button type="button" data-action="rollBackground" title="Tira Posizione Sociale">
+                            <i class="fa-solid fa-dice-d10"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>{{localize "WITCHER.Wizard.Background.Age"}}</label>
+                    <input type="number" name="age" value="{{character.age}}" min="10" max="500" data-action="updateAge">
+                </div>
+            </div>
+
+            <div class="background-section">
+                <h3>{{localize "WITCHER.Wizard.Background.Family"}}</h3>
+                <div class="form-group">
+                    <label>{{localize "WITCHER.Wizard.Background.FamilyFate"}}</label>
+                    <input type="text" name="background.familyFate" value="{{character.background.familyFate}}" readonly>
+                </div>
+
+                <h3>{{localize "WITCHER.Wizard.Background.LifeEvents"}}</h3>
+                <div class="events-list scrollable">
+                    {{#each character.background.events}}
+                    <div class="event-item">
+                        <span class="event-age"><strong>{{age}} {{localize "WITCHER.Wizard.Background.Years"}}</strong></span>
+                        <span class="event-text">{{text}}</span>
+                    </div>
+                    {{else}}
+                    <p class="no-events">Ancora nessun evento registrato.</p>
+                    {{/each}}
+                </div>
+                <button type="button" class="btn-roll-events" data-action="rollLifeEvents">
+                    <i class="fa-solid fa-dice-d10"></i>
+                    {{localize "WITCHER.Wizard.Background.RollNextEvent"}}
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

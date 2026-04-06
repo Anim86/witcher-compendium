@@ -5,24 +5,61 @@
     "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
     "system": {
         "description": "<p>Marchio di Fuoco permette all’incantatore di marchiare il bersaglio con un semplice simbolo o parola in un punto esposto del corpo del bersaglio, a sua scelta. Infligge 1d6 danni e lascia un grande sfregio indelebile.</p>",
+        "quantity": "1",
         "weight": 0,
         "cost": 0,
+        "sourcebook": "MB 106",
+        "class": "Spells",
+        "level": "novice",
+        "source": "fire",
+        "stamina": 4,
+        "staminaIsVar": false,
+        "effect": "Marchio di Fuoco permette all’incantatore di marchiare il bersaglio con un semplice simbolo o parola in un punto esposto del corpo del bersaglio, a sua scelta. Infligge 1d6 danni e lascia un grande sfregio indelebile.",
         "range": "8m",
         "duration": "Istantanea",
-        "effect": "<p>Marchio di Fuoco permette all'incantatore di marchiare il bersaglio con un semplice simbolo o parola in un punto esposto del corpo del bersaglio, a sua scelta. Infligge 1d6 danni e lascia un grande sfregio indelebile.</p>",
-        "sourcebook": "MB 106",
-        "source": "Fire"
+        "defence": "Nessuna",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast",
+        "causeDamages": true,
+        "damage": "1d6",
+        "damageType": "elemental"
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherTRPG",
-        "systemVersion": "1.0.0",
+        "systemVersion": "v13.13.0",
         "coreVersion": "13"
     }
 }

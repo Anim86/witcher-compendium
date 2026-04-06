@@ -5,24 +5,58 @@
     "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
     "system": {
         "description": "<p>Polimorfismo consente all’incantatore di assu- mere la forma di un serpente, di un gatto, di un uccello o di un cane. Mentre si trova in questo stato possiede le statistiche fisiche di quell’animale (vedi Bestiario, pag.310). Ogni oggetto indossato o trasportato si tra- sforma con lui. Per tornare nella sua forma normale deve lanciare nuovamente l’incantesimo.</p>",
+        "quantity": "1",
         "weight": 0,
         "cost": 0,
+        "sourcebook": "MB 109",
+        "class": "Spells",
+        "level": "master",
+        "source": "fire",
+        "stamina": 22,
+        "staminaIsVar": false,
+        "effect": "Polimorfismo consente all’incantatore di assu- mere la forma di un serpente, di un gatto, di un uccello o di un cane. Mentre si trova in questo stato possiede le statistiche fisiche di quell’animale (vedi Bestiario, pag.310). Ogni oggetto indossato o trasportato si tra- sforma con lui. Per tornare nella sua forma normale deve lanciare nuovamente l’incantesimo.",
         "range": "Personale",
         "duration": "Finché non viene rilanciato",
-        "effect": "<p>Polimorfismo consente all'incantatore di assumere la forma di un serpente, di un gatto, di un uccello o di un cane. Mentre si trova in questo stato possiede le statistiche fisiche di quell'animale (vedi Bestiario, pag.310). Ogni oggetto indossato o trasportato si trasforma con lui. Per tornare nella sua forma normale deve lanciare nuovamente l'incantesimo.</p>",
-        "sourcebook": "MB 109",
-        "source": ""
+        "defence": "Nessuna",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast"
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherTRPG",
-        "systemVersion": "1.0.0",
+        "systemVersion": "v13.13.0",
         "coreVersion": "13"
     }
 }

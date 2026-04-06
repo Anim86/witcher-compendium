@@ -1,28 +1,26 @@
 {
     "_id": "eabbe225735745f0",
     "name": "Saliva di Lupo Mannaro",
-    "type": "alchemical",
+    "type": "component",
     "img": "modules/witcher-compendium/assets/Immagini/Pag145_Sostanze Alchemiche_02.png",
     "system": {
         "description": "<p>R Reperibile sui lupi mannari N/A N/A 0,1 60</p>",
+        "quantity": "1",
         "weight": 0.1,
         "cost": 60,
-        "toxicity": "0%",
-        "duration": "N/A",
-        "effect": "<p>Aard scaglia un'ondata di forza telecinetica che rende vacillanti le creature e ha il 10% di possibilità che i bersagli cadano a terra. La percentuale aumenta del 10% per ogni punto RES speso.</p>",
         "sourcebook": "MB 146",
-        "source": "MB 146"
+        "type": "alchemical",
+        "rarity": "R",
+        "location": "Reperibile sui lupi mannari N/A N/A",
+        "quantityObtainable": "",
+        "forage": "",
+        "substanceType": "hydragenum"
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherTRPG",
-        "systemVersion": "1.0.0",
+        "systemVersion": "v13.13.0",
         "coreVersion": "13"
     }
 }

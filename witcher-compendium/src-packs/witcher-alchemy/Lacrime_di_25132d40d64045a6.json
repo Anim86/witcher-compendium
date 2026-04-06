@@ -1,28 +1,26 @@
 {
     "_id": "25132d40d64045a6",
     "name": "Lacrime di",
-    "type": "alchemical",
+    "type": "component",
     "img": "modules/witcher-compendium/assets/Immagini/Pag145_Sostanze Alchemiche_01.png",
     "system": {
         "description": "<p>Talgar Si basa su uno degli antichi rimasugli di tecnologia chiamato Inverno di Talgar. Versalo su qualcosa e si congela all’istante.</p>",
+        "quantity": "1",
         "weight": 0.5,
         "cost": 79,
-        "toxicity": "0%",
-        "duration": "N/A",
-        "effect": "<p>Bussola Magica consente all'incantatore di intuire immediatamente la direzione verso un luogo che ha visitato in precedenza. In alternativa, l'incantesimo indica la posizione del nord.</p>",
         "sourcebook": "MB 18",
-        "source": "MB 18"
+        "type": "alchemical",
+        "rarity": "",
+        "location": "",
+        "quantityObtainable": "",
+        "forage": "",
+        "substanceType": ""
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherTRPG",
-        "systemVersion": "1.0.0",
+        "systemVersion": "v13.13.0",
         "coreVersion": "13"
     }
 }

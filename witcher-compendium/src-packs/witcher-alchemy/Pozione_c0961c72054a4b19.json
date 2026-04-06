@@ -1,28 +1,26 @@
 {
     "_id": "c0961c72054a4b19",
     "name": "Pozione",
-    "type": "alchemical",
+    "type": "component",
     "img": "modules/witcher-compendium/assets/Immagini/Pag145_Sostanze Alchemiche_01.png",
     "system": {
         "description": "<p>Profumo Si dice che la pozione profumo sia stata creata da un alchi- mista per rabbonire sua moglie arrabbiata. È un precursore del profumo, ma se la bevi ti sbronzi in un attimo. Molto in voga tra rapitori e tipi altolocati, eh.</p>",
+        "quantity": "1",
         "weight": 0.1,
         "cost": 56,
-        "toxicity": "0%",
-        "duration": "N/A",
-        "effect": "<p>Essenza della Pozione trasferisce a un'Unità di Essenza Acquatica le proprietà di una singola dose di un Decotto, Pozione o Elisir, che non sia mai stato influenzato da questo incantesimo. L'Essenza diventa una copia della sostanza scelta.</p>",
         "sourcebook": "MB 14",
-        "source": "MB 14"
+        "type": "alchemical",
+        "rarity": "",
+        "location": "",
+        "quantityObtainable": "",
+        "forage": "",
+        "substanceType": ""
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherTRPG",
-        "systemVersion": "1.0.0",
+        "systemVersion": "v13.13.0",
         "coreVersion": "13"
     }
 }

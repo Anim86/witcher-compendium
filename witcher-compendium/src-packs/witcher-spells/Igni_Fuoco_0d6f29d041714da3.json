@@ -5,24 +5,61 @@
     "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
     "system": {
         "description": "<p>Igni scaglia un’ondata di fuoco e scintille che infligge 1d6 danni per punto di RES speso e ha il 50% di probabilità d’infliggere l’effetto A Fuoco a tutto ciò che colpisce. Igni infligge sempre danno al Busto a meno che non venga usato a portata Vicina, in tal caso può essere mirato a una parte del corpo.</p>",
+        "quantity": "1",
         "weight": 0,
         "cost": 0,
+        "sourcebook": "MB 116",
+        "class": "Witcher",
+        "level": "novice",
+        "source": "fire",
+        "stamina": 0,
+        "staminaIsVar": true,
+        "effect": "Igni scaglia un’ondata di fuoco e scintille che infligge 1d6 danni per punto di RES speso e ha il 50% di probabilità d’infliggere l’effetto A Fuoco a tutto ciò che colpisce. Igni infligge sempre danno al Busto a meno che non venga usato a portata Vicina, in tal caso può essere mirato a una parte del corpo.",
         "range": "Cono di 2m",
         "duration": "",
-        "effect": "<p>Igni scaglia un'ondata di fuoco e scintille che infligge 1d6 danni per punto di RES speso e ha il 50% di probabilità d'infliggere l'effetto A Fuoco a tutto ciò che colpisce. Igni infligge sempre danno al Busto a meno che non venga usato a portata Vicina, in tal caso può essere mirato a una parte del corpo.</p>",
-        "sourcebook": "MB 116",
-        "source": "Fire"
+        "defence": "",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast",
+        "causeDamages": true,
+        "damage": "1d6",
+        "damageType": "elemental"
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherTRPG",
-        "systemVersion": "1.0.0",
+        "systemVersion": "v13.13.0",
         "coreVersion": "13"
     }
 }

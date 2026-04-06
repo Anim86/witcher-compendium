@@ -5,28 +5,58 @@
     "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag083_Incantesimi da Mago_01.png",
     "system": {
         "description": "<p>Recupero Alchemico Riaprire Portale Schermo Magico Incantesimi da Esperto Camera di Dormyn Bastione di Elgan Fulmine Globulare Forgia del Mago Arrugginire Compromettere Focus Frana di Bekker Nastro Invisibile Porta di Cenere Essenza della Pozione Laccio Spettrale Sciame di Javed Tocco Fulminante Tocco del Fabbro Invaerne Manto Portale Trappola Rafforzare Incantesimi da Maestro Rubare Incantesimo Modellare Terra Gwyntog Fuoco Vivente Estrazione di Ainfra Specchio Oscuro di Bekker Stasi Cristallina Mano della Tempesta Vampata del Korath Piena di Ys</p>",
+        "quantity": "1",
         "weight": 0,
-        "cost": 5,
+        "cost": 0,
+        "sourcebook": "TC 83",
+        "class": "Spells",
+        "level": "master",
+        "source": "Water",
+        "stamina": 0,
+        "staminaIsVar": false,
+        "effect": "nessuno sa chi creò questo incantesimo, ma divenne famigerato per essere stato usato sull’Impera- tore Fergus var Emreis quando fu detronizzato. Morte di Fergus evoca una serie di aghi magici che, seguendo gli ordini del mago, torturano la vittima. Per la durata dell’incantesimo, il mago può condurre interrogatori usando Lanciare Incantesimi invece di Intimidire.",
         "range": "2m",
         "duration": "1 ora",
-        "defense": "Nessuna",
-        "tier": "Maestro",
-        "subtype": "Acqua",
-        "category": "Mago",
-        "effect": "<p>nessuno sa chi creò questo incantesimo, ma divenne famigerato per essere stato usato sull'Imperatore Fergus var Emreis quando fu detronizzato. Morte di Fergus evoca una serie di aghi magici che, seguendo gli ordini del mago, torturano la vittima. Per la durata dell'incantesimo, il mago può condurre interrogatori usando Lanciare Incantesimi invece di Intimidire.</p>",
-        "sourcebook": "TC 83",
-        "source": ""
+        "defence": "Nessuna",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast"
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherTRPG",
-        "systemVersion": "1.0.0",
+        "systemVersion": "v13.13.0",
         "coreVersion": "13"
     }
 }

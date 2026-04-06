@@ -5,26 +5,61 @@
     "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag104_Rituali_01.png",
     "system": {
         "description": "<p>Incantare Amuleto</p>",
+        "quantity": "1",
         "weight": 0,
-        "cost": 18,
-        "prepTime": "20 Round",
-        "difficulty": "20",
-        "duration": "Permanente",
-        "components": "Sasso (×20), Utensili da Incisore Runico",
-        "effect": "<p>incidendo complessi sigilli su un menhir posto alla confluenza di due Linee Geomantiche del medesimo elemento, è possibile creare un Luogo di Potere, che rimarrà attivo per sempre. Ottenere un disastro nell'esecuzione del Rituale causa un effetto di livello 10 e tutte le rocce utilizzate esploderanno come un bomba, causando 7d6 danni a ciò che si trova nel raggio di 6m.</p>",
+        "cost": 0,
         "sourcebook": "TC 104",
-        "source": "TC 104"
+        "class": "ritual",
+        "level": "master",
+        "source": "",
+        "stamina": 0,
+        "staminaIsVar": false,
+        "effect": "incidendo complessi sigilli su un menhir posto alla confluenza di due Linee Geomantiche del medesi- mo elemento, è possibile creare un Luogo di Potere, che rimarrà attivo per sempre. Ottenere un disastro nell’ese- cuzione del Rituale causa un effetto di livello 10 e tutte le rocce utilizzate esploderanno come un bomba, causando 7d6 danni a ciò che si trova nel raggio di 6m.",
+        "range": "",
+        "duration": "Permanente",
+        "defence": "",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "ritcraft",
+        "causeDamages": true,
+        "damage": "7d6",
+        "damageType": "elemental"
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherTRPG",
-        "systemVersion": "1.0.0",
+        "systemVersion": "v13.13.0",
         "coreVersion": "13"
     }
 }

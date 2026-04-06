@@ -5,26 +5,58 @@
     "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag104_Rituali_01.png",
     "system": {
         "description": "<p>Infondere Trofeo Tiromanzia Rituali da Esperto Animare Armatura Faro dell’Innaturale Nebbia del Passato Registro Magico degli Ospiti Rituali da Maestro Creare Luogo di Potere Incantare Amuleto</p>",
+        "quantity": "1",
         "weight": 0,
-        "cost": 5,
-        "prepTime": "10 Round",
-        "difficulty": "14",
-        "duration": "Istantanea",
-        "components": "Quintessenza (×5), Teschio Animale (×1)",
-        "effect": "<p>infondendo di quintessenza il teschio di un cane, gatto, uccello o serpente, il ritualista crea un teschio di cristallo, che può essere usato per ricreare l'animale (vedere pag. 119). Se la creatura così generata muore, il teschio diventa inattivo, ma può essere ricaricato ripetendo il rituale con solo 2 Unità di Quintessenza.</p>",
+        "cost": 0,
         "sourcebook": "TC 105",
-        "source": "TC 105"
+        "class": "ritual",
+        "level": "master",
+        "source": "",
+        "stamina": 0,
+        "staminaIsVar": false,
+        "effect": "infondendo di quintessenza il teschio di un cane, gatto, uccello o serpente, il ritualista crea un te- schio di cristallo, che può essere usato per ricreare l’ani- male (vedere pag. 119). Se la creatura così generata muo- re, il teschio diventa inattivo, ma può essere ricaricato ripetendo il rituale con solo 2 Unità di Quintessenza.",
+        "range": "",
+        "duration": "Istantanea",
+        "defence": "",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "ritcraft"
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherTRPG",
-        "systemVersion": "1.0.0",
+        "systemVersion": "v13.13.0",
         "coreVersion": "13"
     }
 }

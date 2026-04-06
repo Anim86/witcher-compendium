@@ -5,20 +5,22 @@
     "img": "modules/witcher-compendium/assets/Immagini/Pag131_Componenti per la Manifattura_10.png",
     "system": {
         "description": "<p>R Reperibile sulle viverne 1d6 Unità N/A 5 30</p>",
+        "quantity": "1",
         "weight": 5,
         "cost": 30,
-        "sourcebook": "MB 130"
+        "sourcebook": "MB 130",
+        "type": "crafting-material",
+        "rarity": "",
+        "location": "",
+        "quantityObtainable": "",
+        "forage": "",
+        "substanceType": ""
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherTRPG",
-        "systemVersion": "1.0.0",
+        "systemVersion": "v13.13.0",
         "coreVersion": "13"
     }
 }

@@ -1,0 +1,24 @@
+<div class="wizard-step step-profession">
+    <h2>{{localize "WITCHER.Wizard.Step.Profession.Title"}}</h2>
+    <p>{{localize "WITCHER.Wizard.Step.Profession.Description"}}</p>
+
+    <div class="profession-selection">
+        {{#each professions}}
+        <div class="profession-card {{#if (eq ../character.profession._id id)}}selected{{/if}}" data-action="selectProfession" data-prof-id="{{id}}">
+            <img src="{{img}}" alt="{{name}}">
+            <h3>{{name}}</h3>
+            <div class="profession-perks">
+                {{{system.description}}}
+                <div class="prof-skills">
+                    <strong>{{localize "WITCHER.Wizard.Skills.Summary"}}:</strong>
+                    <ul>
+                        {{#each system.skills}}
+                        <li>{{this.label}}</li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>

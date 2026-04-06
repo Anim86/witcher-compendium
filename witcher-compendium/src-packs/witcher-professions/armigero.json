@@ -3,21 +3,77 @@
   "type": "profession",
   "img": "modules/witcher-compendium/images/professions/armigero.png",
   "system": {
-    "description": "Un armigero vive di combattimenti e respira conflitti. Sul campo di battaglia sono delle belve, armi in pugno e neanche un briciolo di paura in corpo.",
-    "source": "Manuale Base, p.40",
-    "innate": {
-      "name": "Duro come una Roccia",
-      "description": "Quando un Armigero scende a 0 Punti Salute o meno, può tirare Duro come una Roccia (FIS) con una CD pari alla quantità di Punti Salute negativi moltiplicati per 2, per continuare a combattere."
+    "sourcebook": "Manuale Base, p.40",
+    "definingSkill": {
+      "skillName": "Duro come una Roccia",
+      "stat": "body",
+      "level": 1,
+      "definition": "<p>Quando scende a 0 PS o meno, un Armigero può effettuare un tiro di <strong>Duro come una Roccia (FIS)</strong> con CD pari ai PS negativi x2. In caso di successo, può continuare a combattere senza le penalità di Moribondo fino al termine dello scontro o finché non fallisce un nuovo tiro.</p>"
     },
-    "vigor": 0,
-    "magic_talents": "Nessuna",
-    "skills": ["5 Abilità di Combattimento", "Sopravvivenza", "Coraggio", "Prestanza", "Intimidire", "Eludere"],
-    "equipment": ["Kord", "Lancia", "Ascia da battaglia", "Coltelli da lancio x5", "Sacca da viaggio", "Camaglio", "Brigantina", "Brache corazzate", "Balestra e dardi x20", "Brocchiero d'acciaio"],
-    "skill_trees": {
-      "branch1": { "name": "Il Guerriero", "skills": ["..."] },
-      "branch2": { "name": "Il Tattico", "skills": ["..."] },
-      "branch3": { "name": "Il Cacciatore", "skills": ["..."] }
-    }
+    "skillPath1": {
+      "pathName": "Il Guerriero",
+      "skill1": {
+        "skillName": "Carica",
+        "stat": "dex",
+        "level": 0,
+        "definition": "<p>Permette di effettuare una carica devastante contro un nemico. Se l'attacco colpisce dopo un movimento di almeno 4 metri, aggiunge un bonus al danno in base al livello.</p>"
+      },
+      "skill2": {
+        "skillName": "Colpo Potente",
+        "stat": "ref",
+        "level": 0,
+        "definition": "<p>Migliora la forza bruta degli attacchi ravvicinati, permettendo di ignorare parte della PR nemica o infliggere danni da impatto maggiori.</p>"
+      },
+      "skill3": {
+        "skillName": "Turbine",
+        "stat": "ref",
+        "level": 0,
+        "definition": "<p>Un attacco rotante che colpisce tutti i nemici entro la gittata di mischia. Richiede un singolo tiro per colpire contrapposto a tutte le difese dei bersagli.</p>"
+      }
+    },
+    "skillPath2": {
+      "pathName": "Il Tattico",
+      "skill1": {
+        "skillName": "Comando",
+        "stat": "int",
+        "level": 0,
+        "definition": "<p>Capacità di dirigere gli alleati con ordini precisi, fornendo bonus ai tiri per colpire o alla difesa dei compagni entro portata uditiva.</p>"
+      },
+      "skill2": {
+        "skillName": "Analisi",
+        "stat": "int",
+        "level": 0,
+        "definition": "<p>Studio rapido dello stile di combattimento nemico. Permette di individuare punti deboli nell'armatura o falle nella guardia dell'avversario.</p>"
+      },
+      "skill3": {
+        "skillName": "Manovra",
+        "stat": "spd",
+        "level": 0,
+        "definition": "<p>Migliora la mobilità sul campo di battaglia, permettendo di evitare attacchi di opportunità o riposizionarsi strategicamente senza consumare azioni extra.</p>"
+      }
+    },
+    "skillPath3": {
+      "pathName": "Il Cacciatore",
+      "skill1": {
+        "skillName": "Tracciare",
+        "stat": "int",
+        "level": 0,
+        "definition": "<p>Abilità specializzata nel seguire orme e segni di passaggio in qualsiasi tipo di terreno, sia per prede animali che per fuggiaschi umani.</p>"
+      },
+      "skill2": {
+        "skillName": "Trappole",
+        "stat": "cra",
+        "level": 0,
+        "definition": "<p>Competenza nell'ideazione, costruzione e occultamento di trappole meccaniche o ambientali per immobilizzare o ferire i nemici.</p>"
+      },
+      "skill3": {
+        "skillName": "Cecchino",
+        "stat": "dex",
+        "level": 0,
+        "definition": "<p>Massimizza la precisione con le armi a distanza, riducendo le penalità per gittata estrema o per mirare a locazioni specifiche.</p>"
+      }
+    },
+    "professionSkills": "Scherma, Mischia, Archi, Balestre, Coraggio, Sopravvivenza, Intimidire, Eludere, Atletica, Accortezza"
   },
   "effects": [],
   "flags": {},

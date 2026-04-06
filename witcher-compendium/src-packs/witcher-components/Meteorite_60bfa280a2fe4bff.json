@@ -5,20 +5,22 @@
     "img": "modules/witcher-compendium/assets/Immagini/Pag131_Componenti per la Manifattura_10.png",
     "system": {
         "description": "<p>OCCULTABILITÀ (OCC.) L'Occultabilità descrive dove è possibile nascondere l'arma: Minuta (M): può essere nascosta in una tasca. Piccola (P): può essere nascosta sotto una giubba. Grande (G): può essere nascosta sotto una cappa. Enorme (N/A): impossibile nasconderla addosso. Non-Letale L'arma può essere usata per infliggere danno non-letale senza penalità. DISPONIBILITÀ (DISP.) La Disponibilità indica quanto è facile trovare l'arma nei negozi e quanto frequentemente si possono incontrare in combattimento. Diffusa (D): si può trovare anche nelle città più piccole. Comune (C): si trova nella maggior parte dei mercati cittadini. Scarsa (S): armi tipiche di una regione o esclusive dell'esercito, che si costruiscono solo in determinati posti. Rara (R): molto difficile da trovare, in genere in un unico luogo o venduta da un solo tipo di commerciante. Occultabile L'arma è facile da nascondere. I tentativi di occultarla ottengono +2. Portata L'arma può essere utilizzata contro nemici situati fino a 2m di distanza. Presa L'arma può essere usata per afferrare e sbilanciare gli avversari a portata. Ricarica Lenta Per ricaricare l'arma occorre 1 azione. POTENZIAMENTI (POT) I Potenziamenti mostrano quanti alloggiamenti per le rune possiede l'arma. Quest'arma utilizza l'abilità Rissa, e aggiunge il suo danno al danno a quello degli attacchi a mani nude. Rissa PESO Il Peso indica quanti chili pesa l'arma. Se l'arma infligge danni può causare sanguinamento. La probabilità è espressa tra parentesi. Vedere pag. 161 per Effetti del Sanguinamento. DANNO (DAN) Il Danno indica quanto sono gravi le ferite inflitte dall'arma quando colpisce. Il danno dipende dalla massa dell'arma, dall'affilatura, dal peso e dal bilanciamento. Sanguinamento (X) COSTO Il Costo indica il tipico valore dell'arma, espresso in corone redaniane. Quando l'arma colpisce un bersaglio alla testa o al torso, questi deve superare un tiro salvezza di Grinta con la penalità indicata tra parentesi o essere Stordito. Stordimento (X) AFFIDABILITÀ (AFF.) L'Affidabilità indica quanto è robusta l'arma. Questo valore indica quante volte l'arma può essere usata per bloccare un colpo prima di rompersi. L'arma ignora le Resistenze delle armature. Trapassare Migliorato dimezza anche il loro valore di Pr. Trapassare</p>",
+        "quantity": "1",
         "weight": 1,
         "cost": 98,
-        "sourcebook": "MB 74"
+        "sourcebook": "MB 74",
+        "type": "crafting-material",
+        "rarity": "",
+        "location": "",
+        "quantityObtainable": "",
+        "forage": "",
+        "substanceType": ""
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherTRPG",
-        "systemVersion": "1.0.0",
+        "systemVersion": "v13.13.0",
         "coreVersion": "13"
     }
 }

@@ -5,28 +5,61 @@
     "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag094_Invocazioni da Prete_01.png",
     "system": {
         "description": "<p>Veyopatis Campione del Fiume Presenza del Divino Lilvani Luce Argentea Invocazioni da Esperto Epona Mandria Benedetta Benedizione dell’Abbondanza Profeta Lebioda Miracolo di Lebioda Cercare dei Cercatori Marchio dell’Avvizzimento Nehaleni Presagi di Sventura Invocazioni da Maestro Svalblod Sangue del Berserker Penna Divina Morrigan Vendetta del Corvo Sagitta Aurea</p>",
+        "quantity": "1",
         "weight": 0,
-        "cost": 3,
+        "cost": 0,
+        "sourcebook": "TC 93",
+        "class": "Spells",
+        "level": "novice",
+        "source": "mixedElements",
+        "stamina": 0,
+        "staminaIsVar": false,
+        "effect": "sviluppato nel Cuore di Nilfgaard dalla famosa Incandescente Anika var Myricks, questa invocazione richiama il potere della divinità per punire un indegno, annullando la sua volontà di resistere. La vittima perde 2d6 RES, più altri 2d6 se ha Vigore pari o superiore a 1.",
         "range": "6m",
         "duration": "Istantanea",
-        "defense": "Resistere alla Magia",
-        "tier": "Novizio",
-        "subtype": "Misto",
-        "category": "Prete",
-        "effect": "<p>sviluppato nel Cuore di Nilfgaard dalla famosa Incandescente Anika var Myricks, questa invocazione richiama il potere della divinità per punire un indegno, annullando la sua volontà di resistere. La vittima perde 2d6 RES, più altri 2d6 se ha Vigore pari o superiore a 1.</p>",
-        "sourcebook": "TC 93",
-        "source": ""
+        "defence": "Resistere alla Magia",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast",
+        "causeDamages": true,
+        "damage": "2d6",
+        "damageType": "elemental"
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherTRPG",
-        "systemVersion": "1.0.0",
+        "systemVersion": "v13.13.0",
         "coreVersion": "13"
     }
 }

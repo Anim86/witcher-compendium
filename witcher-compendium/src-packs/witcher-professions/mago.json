@@ -3,24 +3,77 @@
   "type": "profession",
   "img": "modules/witcher-compendium/images/professions/mago.png",
   "system": {
-    "description": "I maghi sono i signori del Caos. Consiglieri di re o reietti, possiedono il potere di cambiare il mondo.",
-    "source": "Manuale Base, p.44",
-    "innate": {
-      "name": "Arte del Mago",
-      "description": "Un Mago può tirare Arte del Mago (INT) per identificare fenomeni magici o rispondere a domande sulla magia."
+    "sourcebook": "Manuale Base, p.44",
+    "definingSkill": {
+      "skillName": "Arte del Mago",
+      "stat": "int",
+      "level": 1,
+      "definition": "<p>Un Mago può tirare Arte del Mago (INT) per identificare fenomeni magici, rispondere a domande sul Caos o percepire la presenza di aure magiche attive entro 10 metri. La CD è determinata dal GM in base alla rarità del fenomeno.</p>"
     },
-    "vigor": 5,
-    "magic_talents": "5 Incantesimi Novizio, 1 Rituale Novizio, 1 Fattura Bassa",
-    "skills": ["Lanciare Incantesimi", "Officiare Rituali", "Intessere Fatture", "Resistere alla Magia", "Istruzione", "Etichetta", "Seduzione", "Sensibilità", "Armi in Asta", "Eleganza"],
-    "equipment": ["Bastone", "Pugnale", "Diario magico", "Specchio", "100 Corone in componenti", "Kit per il trucco", "Clessidra", "Kit da scrittura", "Borsello", "Vestiti lussuosi"],
-    "skill_trees": {
-      "branch1": { "name": "Il Consigliere", "skills": ["..."] },
-      "branch2": { "name": "Il Mago Combattente", "skills": ["..."] },
-      "branch3": { "name": "Lo Scienziato", "skills": ["..."] }
+    "skillPath1": {
+      "pathName": "Il Consigliere",
+      "skill1": {
+        "skillName": "Politica",
+        "stat": "int",
+        "level": 0,
+        "definition": "<p>Permette di navigare tra gli intrighi di corte e comprendere le alleanze politiche. Fornisce un bonus alle prove di Etichetta e Persuasione in contesti nobiliari.</p>"
+      },
+      "skill2": {
+        "skillName": "Etichetta",
+        "stat": "int",
+        "level": 0,
+        "definition": "<p>Conoscenza approfondita delle norme sociali e dei protocolli di ogni regno. Riduce le penalità sociali nei territori stranieri.</p>"
+      },
+      "skill3": {
+        "skillName": "Carisma",
+        "stat": "emp",
+        "level": 0,
+        "definition": "<p>Migliora la capacità di influenzare le decisioni dei potenti attraverso la parola e la presenza scenica.</p>"
+      }
     },
-    "requirements": {
-      "race": ["Umani", "Elfi"]
-    }
+    "skillPath2": {
+      "pathName": "Il Mago Combattente",
+      "skill1": {
+        "skillName": "Scudo Magico",
+        "stat": "will",
+        "level": 0,
+        "definition": "<p>Capacità di erigere barriere di energia pura. Può essere usato come azione di parata contro attacchi fisici usando Volontà.</p>"
+      },
+      "skill2": {
+        "skillName": "Distruzione",
+        "stat": "will",
+        "level": 0,
+        "definition": "<p>Aumenta l'efficacia distruttiva degli incantesimi elementali, aggiungendo bonus al danno in base al livello.</p>"
+      },
+      "skill3": {
+        "skillName": "Resistenza",
+        "stat": "will",
+        "level": 0,
+        "definition": "<p>Fortifica la mente e lo spirito per resistere ai tentativi di controllo mentale o debilitazione magica.</p>"
+      }
+    },
+    "skillPath3": {
+      "pathName": "Lo Scienziato",
+      "skill1": {
+        "skillName": "Ricerca",
+        "stat": "int",
+        "level": 0,
+        "definition": "<p>Abilità nello studiare antichi tomi, decifrare codici e scoprire segreti arcani sepolti nel tempo.</p>"
+      },
+      "skill2": {
+        "skillName": "Alchimia",
+        "stat": "cra",
+        "level": 0,
+        "definition": "<p>Specializzazione nella creazione di pozioni ed elisir di altissima complessità, riducendo i tempi di produzione.</p>"
+      },
+      "skill3": {
+        "skillName": "Invenzione",
+        "stat": "cra",
+        "level": 0,
+        "definition": "<p>Capacità di ideare e forgiare nuovi oggetti magici o strumenti tecnologici avanzati.</p>"
+      }
+    },
+    "professionSkills": "Lanciare Incantesimi, Officiare Rituali, Intessere Fatture, Resistere alla Magia, Istruzione, Etichetta, Seduzione, Sensibilità, Armi in Asta, Eleganza"
   },
   "effects": [],
   "flags": {},

@@ -5,28 +5,61 @@
     "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag086_Incantesimi da Mago_01.png",
     "system": {
         "description": "<p>Macchia Cryfhau Piedi Leggeri Soffio di Fuoco Ragnatela di Ghiaccio Metodo di Savolla Pilastro di Terra Velo di Polvere Velo di Fuoco Respiro di Aurora Morte di Fergus Recupero Alchemico Riaprire Portale Schermo Magico Incantesimi da Esperto Camera di Dormyn Bastione di Elgan Fulmine Globulare Forgia del Mago Arrugginire Compromettere Focus Frana di Bekker Nastro Invisibile Porta di Cenere Essenza della Pozione Laccio Spettrale Sciame di Javed Tocco Fulminante Tocco del Fabbro Invaerne Manto Portale Trappola Rafforzare Incantesimi da Maestro Rubare Incantesimo Modellare Terra Gwyntog Fuoco Vivente Estrazione di Ainfra Specchio Oscuro di Bekker Stasi Cristallina Mano della Tempesta Vampata del Korath Piena di Ys</p>",
+        "quantity": "1",
         "weight": 0,
-        "cost": 5,
+        "cost": 0,
+        "sourcebook": "TC 86",
+        "class": "Spells",
+        "level": "master",
+        "source": "Water",
+        "stamina": 0,
+        "staminaIsVar": false,
+        "effect": "Getto d’Acqua crea un geyser da una qualun- que fonte e colpisce un bersaglio causando danni ta- glienti, perforanti o contundenti, a scelta del mago. Chi fallisce nel difendersi subisce 4d6 danni e cade Prono.",
         "range": "8m",
         "duration": "Istantanea",
-        "defense": "Schivare",
-        "tier": "Maestro",
-        "subtype": "Acqua",
-        "category": "Mago",
-        "effect": "<p>Getto d'Acqua crea un geyser da una qualunque fonte e colpisce un bersaglio causando danni taglienti, perforanti o contundenti, a scelta del mago. Chi fallisce nel difendersi subisce 4d6 danni e cade Prono.</p>",
-        "sourcebook": "TC 86",
-        "source": "Water"
+        "defence": "Schivare",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast",
+        "causeDamages": true,
+        "damage": "4d6",
+        "damageType": "elemental"
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherTRPG",
-        "systemVersion": "1.0.0",
+        "systemVersion": "v13.13.0",
         "coreVersion": "13"
     }
 }

@@ -5,24 +5,58 @@
     "img": "modules/witcher-compendium/assets/Immagini/Pag118_Rituali_01.png",
     "system": {
         "description": "<p>Oniromanzia porta al ritualista un sogno che disvela segreti e avvenimenti del passato e del presente. L’incantatore deve officiare il rituale da solo, come per Idromanzia. Occorre una prova di Officiare Rituali per assistere ad avvenimenti del passato con CD superiore a quella per assistere a eventi che si verificano nel momen- to presente. L’Oniromanzia può essere individuata come l’Idromanzia. L’Oniromanzia è però anche in grado di guidare un nu- mero di persone pari al valore di Officiare Rituali del ritualista a condividere i suoi sogni rivelatori. Per farlo, l’oniromante deve stringere un legame con le persone che vuole condividano la visione. Ciò richiede che il parte- cipante risponda a varie domande di carattere personale, con la massima sincerità possibile. Il sogno dura per tutta la durata del rituale.</p>",
+        "quantity": "1",
         "weight": 0,
-        "cost": 8,
+        "cost": 0,
+        "sourcebook": "MB 120",
+        "class": "ritual",
+        "level": "novice",
+        "source": "",
+        "stamina": 0,
+        "staminaIsVar": false,
+        "effect": "Oniromanzia porta al ritualista un sogno che disvela segreti e avvenimenti del passato e del presente. L’incantatore deve officiare il rituale da solo, come per Idromanzia. Occorre una prova di Officiare Rituali per assistere ad avvenimenti del passato con CD superiore a quella per assistere a eventi che si verificano nel momen- to presente. L’Oniromanzia può essere individuata come l’Idromanzia. L’Oniromanzia è però anche in grado di guidare un nu- mero di persone pari al valore di Officiare Rituali del ritualista a condividere i suoi sogni rivelatori. Per farlo, l’oniromante deve stringere un legame con le persone che vuole condividano la visione. Ciò richiede che il parte- cipante risponda a varie domande di carattere personale, con la massima sincerità possibile. Il sogno dura per tutta la durata del rituale.",
         "range": "N/A",
         "duration": "1d10 Round",
-        "effect": "<p>Oniromanzia porta al ritualista un sogno che disvela segreti e avvenimenti del passato e del presente. L'incantatore deve officiare il rituale da solo, come per Idromanzia. Occorre una prova di Officiare Rituali per assistere ad avvenimenti del passato con CD superiore a quella per assistere a eventi che si verificano nel momento presente. L'Oniromanzia può essere individuata come l'Idromanzia. L'Oniromanzia è però anche in grado di guidare un numero di persone pari al valore di Officiare Rituali del ritualista a condividere i suoi sogni rivelatori. Per farlo, l'oniromante deve stringere un legame con le persone che vuole condividano la visione. Ciò richiede che il partecipante risponda a varie domande di carattere personale, con la massima sincerità possibile. Il sogno dura per tutta la durata del rituale.</p>",
-        "sourcebook": "MB 120",
-        "source": "MB 120"
+        "defence": "",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "ritcraft"
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherTRPG",
-        "systemVersion": "1.0.0",
+        "systemVersion": "v13.13.0",
         "coreVersion": "13"
     }
 }

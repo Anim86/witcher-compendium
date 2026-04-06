@@ -5,24 +5,58 @@
     "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
     "system": {
         "description": "<p>Moto di Demetia Crest consente all’incan- tatore di creare attorno a sé uno scudo di puro fuoco magico, in grado di bloccare una quantità d’incantesimi d’acqua pari al doppio del valore dell’Abilità Lanciare Incantesimi dell’incantatore. I proiettili che colpiscono lo scudo vengono distrutti e le creature viventi non pos- sono entrare nell’area.</p>",
+        "quantity": "1",
         "weight": 0,
         "cost": 0,
+        "sourcebook": "MB 108",
+        "class": "Spells",
+        "level": "journeyman",
+        "source": "fire",
+        "stamina": 12,
+        "staminaIsVar": false,
+        "effect": "Moto di Demetia Crest consente all’incan- tatore di creare attorno a sé uno scudo di puro fuoco magico, in grado di bloccare una quantità d’incantesimi d’acqua pari al doppio del valore dell’Abilità Lanciare Incantesimi dell’incantatore. I proiettili che colpiscono lo scudo vengono distrutti e le creature viventi non pos- sono entrare nell’area.",
         "range": "10m",
         "duration": "Attiva (4 RES)",
-        "effect": "<p>Moto di Demetia Crest consente all'incantatore di creare attorno a sé uno scudo di puro fuoco magico, in grado di bloccare una quantità d'incantesimi d'acqua pari al doppio del valore dell'Abilità Lanciare Incantesimi dell'incantatore. I proiettili che colpiscono lo scudo vengono distrutti e le creature viventi non possono entrare nell'area.</p>",
-        "sourcebook": "MB 108",
-        "source": ""
+        "defence": "Nessuna",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast"
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherTRPG",
-        "systemVersion": "1.0.0",
+        "systemVersion": "v13.13.0",
         "coreVersion": "13"
     }
 }

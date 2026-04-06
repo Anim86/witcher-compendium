@@ -75,4 +75,13 @@ export const registerSettings = function () {
         type: Boolean,
         default: true
     });
+
+    game.settings.register('TheWitcherTRPG', 'allowPlayerWizard', {
+        name: 'WITCHER.Settings.allowPlayerWizard',
+        hint: 'WITCHER.Settings.allowPlayerWizardHint',
+        scope: 'world',
+        config: true,
+        type: Boolean,
+        default: true
+    });
 };

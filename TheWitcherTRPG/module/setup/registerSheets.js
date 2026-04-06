@@ -1,6 +1,5 @@
 import WitcherCharacterSheet from '../actor/sheets/WitcherCharacterSheet.js';
 import WitcherMonsterSheet from '../actor/sheets/WitcherMonsterSheet.js';
-import WitcherActorSheetV2 from '../actor/sheets/WitcherActorSheetV2.js';
 import WitcherLootSheet from '../actor/sheets/WitcherLootSheet.js';
 
 import WitcherWeaponSheet from '../item/sheets/WitcherWeaponSheet.js';
@@ -98,9 +97,13 @@ export const registerSheets = () => {
         types: ['weapon']
     });
 
-    Actors.registerSheet('witcher', WitcherActorSheetV2, {
+    Actors.registerSheet('witcher', WitcherCharacterSheet, {
         makeDefault: true,
-        types: ['character', 'monster']
+        types: ['character']
+    });
+    Actors.registerSheet('witcher', WitcherMonsterSheet, {
+        makeDefault: true,
+        types: ['monster']
     });
     Actors.registerSheet('witcher', WitcherLootSheet, {
         makeDefault: true,

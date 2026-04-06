@@ -5,24 +5,58 @@
     "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
     "system": {
         "description": "<p>Seirff Haul crea vari serpenti fatti di fuoco magi- co che si avventano su un bersaglio. Il soggetto è in lotta e A Fuoco finché non supera una prova di Eludere contrap- posta al tiro di Lanciare Incantesimi dell’incantatore. Per ogni round in cui il soggetto fallisce il tiro di Eludere, i serpenti stringono la presa e la CD aumenta di 1.</p>",
+        "quantity": "1",
         "weight": 0,
         "cost": 0,
+        "sourcebook": "MB 108",
+        "class": "Spells",
+        "level": "journeyman",
+        "source": "Water",
+        "stamina": 10,
+        "staminaIsVar": false,
+        "effect": "Seirff Haul crea vari serpenti fatti di fuoco magi- co che si avventano su un bersaglio. Il soggetto è in lotta e A Fuoco finché non supera una prova di Eludere contrap- posta al tiro di Lanciare Incantesimi dell’incantatore. Per ogni round in cui il soggetto fallisce il tiro di Eludere, i serpenti stringono la presa e la CD aumenta di 1.",
         "range": "10m",
         "duration": "2d10 Round",
-        "effect": "<p>Seirff Haul crea vari serpenti fatti di fuoco magico che si avventano su un bersaglio. Il soggetto è in lotta e A Fuoco finché non supera una prova di Eludere contrapposta al tiro di Lanciare Incantesimi dell'incantatore. Per ogni round in cui il soggetto fallisce il tiro di Eludere, i serpenti stringono la presa e la CD aumenta di 1.</p>",
-        "sourcebook": "MB 108",
-        "source": ""
+        "defence": "Schivare",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast"
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherTRPG",
-        "systemVersion": "1.0.0",
+        "systemVersion": "v13.13.0",
         "coreVersion": "13"
     }
 }

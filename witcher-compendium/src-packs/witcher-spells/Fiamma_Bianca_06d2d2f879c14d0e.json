@@ -5,24 +5,58 @@
     "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
     "system": {
         "description": "<p>Evocando il potere del Grande Sole, il prete crea una splendente aura di Fuoco Bianco che illumina la zona circostante a livello di luce splendente. Queste fiamme non bruciano chi le tocca e, nell’area d’effetto, disgela qualsiasi bersaglio e disperde gli incantesimi basati sull’acqua. Gli incantesimi basati sull’acqua pos- sono essere lanciati nell’area d’effetto solo se la prova di Lanciare Incantesimi dell’incantatore supera quella del Prete del Grande Sole. Infine ogni mostro nell’area, vulnerabile alla luce solare, subisce il doppio delle nor- mali penalità.</p>",
+        "quantity": "1",
         "weight": 0,
         "cost": 0,
+        "sourcebook": "MB 115",
+        "class": "Invocations",
+        "level": "journeyman",
+        "source": "fire",
+        "stamina": 16,
+        "staminaIsVar": false,
+        "effect": "Evocando il potere del Grande Sole, il prete crea una splendente aura di Fuoco Bianco che illumina la zona circostante a livello di luce splendente. Queste fiamme non bruciano chi le tocca e, nell’area d’effetto, disgela qualsiasi bersaglio e disperde gli incantesimi basati sull’acqua. Gli incantesimi basati sull’acqua pos- sono essere lanciati nell’area d’effetto solo se la prova di Lanciare Incantesimi dell’incantatore supera quella del Prete del Grande Sole. Infine ogni mostro nell’area, vulnerabile alla luce solare, subisce il doppio delle nor- mali penalità.",
         "range": "Raggio di 10m",
         "duration": "",
-        "effect": "<p>Evocando il potere del Grande Sole, il prete crea una splendente aura di Fuoco Bianco che illumina la zona circostante a livello di luce splendente. Queste fiamme non bruciano chi le tocca e, nell'area d'effetto, disgela qualsiasi bersaglio e disperde gli incantesimi basati sull'acqua. Gli incantesimi basati sull'acqua possono essere lanciati nell'area d'effetto solo se la prova di Lanciare Incantesimi dell'incantatore supera quella del Prete del Grande Sole. Infine ogni mostro nell'area, vulnerabile alla luce solare, subisce il doppio delle normali penalità.</p>",
-        "sourcebook": "MB 115",
-        "source": ""
+        "defence": "",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast"
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherTRPG",
-        "systemVersion": "1.0.0",
+        "systemVersion": "v13.13.0",
         "coreVersion": "13"
     }
 }

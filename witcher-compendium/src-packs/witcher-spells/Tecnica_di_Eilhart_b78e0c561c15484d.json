@@ -5,24 +5,58 @@
     "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
     "system": {
         "description": "<p>Orribile incantesimo, che prende il nome dalla sua creatrice Philippa Eilhart, consente di scavare nel- la mente del bersaglio e strapparne informazioni. Se il tiro di Lanciare Incantesimi ha successo, l’incantatore ricava un’informazione dal bersaglio. Se il tiro di difesa del bersaglio è un Disastro la sua INT è ridotta perma- nentemente di 1.</p>",
+        "quantity": "1",
         "weight": 0,
         "cost": 0,
+        "sourcebook": "MB 103",
+        "class": "Spells",
+        "level": "journeyman",
+        "source": "mixedElements",
+        "stamina": 12,
+        "staminaIsVar": false,
+        "effect": "Orribile incantesimo, che prende il nome dalla sua creatrice Philippa Eilhart, consente di scavare nel- la mente del bersaglio e strapparne informazioni. Se il tiro di Lanciare Incantesimi ha successo, l’incantatore ricava un’informazione dal bersaglio. Se il tiro di difesa del bersaglio è un Disastro la sua INT è ridotta perma- nentemente di 1.",
         "range": "3m",
         "duration": "Istantanea",
-        "effect": "<p>Orribile incantesimo, che prende il nome dalla sua creatrice Philippa Eilhart, consente di scavare nella mente del bersaglio e strapparne informazioni. Se il tiro di Lanciare Incantesimi ha successo, l'incantatore ricava un'informazione dal bersaglio. Se il tiro di difesa del bersaglio è un Disastro la sua INT è ridotta permanentemente di 1.</p>",
-        "sourcebook": "MB 103",
-        "source": ""
+        "defence": "Resistere alla Magia",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast"
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherTRPG",
-        "systemVersion": "1.0.0",
+        "systemVersion": "v13.13.0",
         "coreVersion": "13"
     }
 }

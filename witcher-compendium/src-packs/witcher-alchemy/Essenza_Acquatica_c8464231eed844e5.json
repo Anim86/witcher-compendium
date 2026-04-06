@@ -1,28 +1,26 @@
 {
     "_id": "c8464231eed844e5",
     "name": "Essenza Acquatica",
-    "type": "alchemical",
+    "type": "component",
     "img": "modules/witcher-compendium/assets/Immagini/Pag145_Sostanze Alchemiche_02.png",
     "system": {
         "description": "<p>R Reperibile su drowner e sirene N/A N/A 0,1 46</p>",
+        "quantity": "1",
         "weight": 0.1,
         "cost": 46,
-        "toxicity": "0%",
-        "duration": "N/A",
-        "effect": "<p>Invaerne evoca una terribile tempesta di neve che copre un'area di 30m di raggio, causando l'effetto Ghiaccio e Neve. Se usato in un clima freddo, questo incantesimo dura una settimana.</p>",
         "sourcebook": "MB 146",
-        "source": "MB 146"
+        "type": "alchemical",
+        "rarity": "R",
+        "location": "Reperibile su drowner e sirene N/A N/A",
+        "quantityObtainable": "",
+        "forage": "",
+        "substanceType": "hydragenum"
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherTRPG",
-        "systemVersion": "1.0.0",
+        "systemVersion": "v13.13.0",
         "coreVersion": "13"
     }
 }

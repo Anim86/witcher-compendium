@@ -1,28 +1,26 @@
 {
     "_id": "77e3aa635aaf41c4",
     "name": "Veleno nero",
-    "type": "alchemical",
+    "type": "component",
     "img": "modules/witcher-compendium/assets/Immagini/Pag145_Sostanze Alchemiche_01.png",
     "system": {
         "description": "<p>Ci sono molti veleni al mondo, ma il veleno nero è proba- bilmente il più comune. Di sicuro lo è al sud. Annerisce le vene e causa dolori terribili.</p>",
+        "quantity": "1",
         "weight": 0.1,
         "cost": 16,
-        "toxicity": "0%",
-        "duration": "N/A",
-        "effect": "<p>Aard scaglia un'ondata di forza telecinetica che rende vacillanti le creature e ha il 10% di possibilità che i bersagli cadano a terra. La percentuale aumenta del 10% per ogni punto RES speso.</p>",
         "sourcebook": "MB 21",
-        "source": "MB 21"
+        "type": "alchemical",
+        "rarity": "",
+        "location": "",
+        "quantityObtainable": "",
+        "forage": "",
+        "substanceType": ""
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherTRPG",
-        "systemVersion": "1.0.0",
+        "systemVersion": "v13.13.0",
         "coreVersion": "13"
     }
 }

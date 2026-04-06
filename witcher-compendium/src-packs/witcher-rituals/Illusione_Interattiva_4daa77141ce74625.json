@@ -5,24 +5,58 @@
     "img": "modules/witcher-compendium/assets/Immagini/Pag118_Rituali_01.png",
     "system": {
         "description": "<p>Questo rituale crea un’illusione percepibile alla vista, all’udito, all’olfatto e al tatto. Niente dell’illusione è reale, ma sembra tale per chiunque entri nella sua area. L’illusione riempie un raggio di 20m e il ritualista la con- trolla attivamente e le dà forma. Se l’illusione simula un pericolo che attacca gli intrusi, il bersaglio deve tirare su Resistere alla Magia o su Tempra con CD 12. Chi supera la prova si rende conto che quanto accade non è reale e non subisce danno. Chi fallisce crede che i danni siano reali e deve superare un tiro salvezza di Grinta. Il danno non può uccidere, ma può stordire.</p>",
+        "quantity": "1",
         "weight": 0,
-        "cost": 12,
+        "cost": 0,
+        "sourcebook": "MB 121",
+        "class": "ritual",
+        "level": "novice",
+        "source": "",
+        "stamina": 0,
+        "staminaIsVar": false,
+        "effect": "Questo rituale crea un’illusione percepibile alla vista, all’udito, all’olfatto e al tatto. Niente dell’illusione è reale, ma sembra tale per chiunque entri nella sua area. L’illusione riempie un raggio di 20m e il ritualista la con- trolla attivamente e le dà forma. Se l’illusione simula un pericolo che attacca gli intrusi, il bersaglio deve tirare su Resistere alla Magia o su Tempra con CD 12. Chi supera la prova si rende conto che quanto accade non è reale e non subisce danno. Chi fallisce crede che i danni siano reali e deve superare un tiro salvezza di Grinta. Il danno non può uccidere, ma può stordire.",
         "range": "N/A",
         "duration": "Finché non viene Dissipato",
-        "effect": "<p>Questo rituale crea un'illusione percepibile alla vista, all'udito, all'olfatto e al tatto. Niente dell'illusione è reale, ma sembra tale per chiunque entri nella sua area. L'illusione riempie un raggio di 20m e il ritualista la controlla attivamente e le dà forma. Se l'illusione simula un pericolo che attacca gli intrusi, il bersaglio deve tirare su Resistere alla Magia o su Tempra con CD 12. Chi supera la prova si rende conto che quanto accade non è reale e non subisce danno. Chi fallisce crede che i danni siano reali e deve superare un tiro salvezza di Grinta. Il danno non può uccidere, ma può stordire.</p>",
-        "sourcebook": "MB 121",
-        "source": "MB 121"
+        "defence": "",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "ritcraft"
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherTRPG",
-        "systemVersion": "1.0.0",
+        "systemVersion": "v13.13.0",
         "coreVersion": "13"
     }
 }

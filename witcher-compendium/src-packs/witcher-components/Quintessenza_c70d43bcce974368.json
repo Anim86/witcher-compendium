@@ -5,20 +5,22 @@
     "img": "modules/witcher-compendium/assets/Immagini/Pag131_Componenti per la Manifattura_10.png",
     "system": {
         "description": "<p>(1d6) Davide Mesina 355175</p>",
+        "quantity": "1",
         "weight": 0.1,
         "cost": 82,
-        "sourcebook": "MB 131"
+        "sourcebook": "MB 131",
+        "type": "crafting-material",
+        "rarity": "",
+        "location": "",
+        "quantityObtainable": "",
+        "forage": "",
+        "substanceType": ""
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherTRPG",
-        "systemVersion": "1.0.0",
+        "systemVersion": "v13.13.0",
         "coreVersion": "13"
     }
 }

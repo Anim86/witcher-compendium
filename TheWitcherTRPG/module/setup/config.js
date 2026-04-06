@@ -314,25 +314,29 @@ WITCHER.skillMap = {
         attribute: WITCHER.statMap.int,
         label: 'WITCHER.skills.commonSpeech.label',
         rollLabel: 'WITCHER.skills.commonSpeech.rollLabel',
-        name: 'commonsp'
+        name: 'commonsp',
+        cost: 2
     },
     eldersp: {
         attribute: WITCHER.statMap.int,
         label: 'WITCHER.skills.elderSpeech.label',
         rollLabel: 'WITCHER.skills.elderSpeech.rollLabel',
-        name: 'eldersp'
+        name: 'eldersp',
+        cost: 2
     },
     dwarven: {
         attribute: WITCHER.statMap.int,
         label: 'WITCHER.skills.dwarvenSpeech.label',
         rollLabel: 'WITCHER.skills.dwarvenSpeech.rollLabel',
-        name: 'dwarven'
+        name: 'dwarven',
+        cost: 2
     },
     monster: {
         attribute: WITCHER.statMap.int,
         label: 'WITCHER.skills.monsterLore.label',
         rollLabel: 'WITCHER.skills.monsterLore.rollLabel',
-        name: 'monster'
+        name: 'monster',
+        cost: 2
     },
     socialetq: {
         attribute: WITCHER.statMap.int,
@@ -348,7 +352,8 @@ WITCHER.skillMap = {
         attribute: WITCHER.statMap.int,
         label: 'WITCHER.skills.tactics.label',
         rollLabel: 'WITCHER.skills.tactics.rollLabel',
-        name: 'tactics'
+        name: 'tactics',
+        cost: 2
     },
     teaching: {
         attribute: WITCHER.statMap.int,
@@ -410,7 +415,8 @@ WITCHER.skillMap = {
         attribute: WITCHER.statMap.will,
         label: 'WITCHER.skills.hexWeaving.label',
         rollLabel: 'WITCHER.skills.hexWeaving.rollLabel',
-        name: 'hexweave'
+        name: 'hexweave',
+        cost: 2
     },
     intimidation: {
         attribute: WITCHER.statMap.will,
@@ -421,13 +427,15 @@ WITCHER.skillMap = {
         attribute: WITCHER.statMap.will,
         label: 'WITCHER.skills.spellCasting.label',
         rollLabel: 'WITCHER.skills.spellCasting.rollLabel',
-        name: 'spellcast'
+        name: 'spellcast',
+        cost: 2
     },
     resistmagic: {
         attribute: WITCHER.statMap.will,
         label: 'WITCHER.skills.resistMagic.label',
         rollLabel: 'WITCHER.skills.resistMagic.rollLabel',
-        name: 'resistmagic'
+        name: 'resistmagic',
+        cost: 2
     },
     resistcoerc: {
         attribute: WITCHER.statMap.will,
@@ -438,7 +446,8 @@ WITCHER.skillMap = {
         attribute: WITCHER.statMap.will,
         label: 'WITCHER.skills.ritualCrafting.label',
         rollLabel: 'WITCHER.skills.ritualCrafting.rollLabel',
-        name: 'ritcraft'
+        name: 'ritcraft',
+        cost: 2
     },
 
     archery: {
@@ -471,13 +480,15 @@ WITCHER.skillMap = {
         attribute: WITCHER.statMap.cra,
         label: 'WITCHER.skills.alchemy.label',
         rollLabel: 'WITCHER.skills.alchemy.rollLabel',
-        name: 'alchemy'
+        name: 'alchemy',
+        cost: 2
     },
     crafting: {
         attribute: WITCHER.statMap.cra,
         label: 'WITCHER.skills.crafting.label',
         rollLabel: 'WITCHER.skills.crafting.rollLabel',
-        name: 'crafting'
+        name: 'crafting',
+        cost: 2
     },
     disguise: {
         attribute: WITCHER.statMap.cra,
@@ -503,7 +514,8 @@ WITCHER.skillMap = {
         attribute: WITCHER.statMap.cra,
         label: 'WITCHER.skills.trapCrafting.label',
         rollLabel: 'WITCHER.skills.trapCrafting.rollLabel',
-        name: 'trapcraft'
+        name: 'trapcraft',
+        cost: 2
     },
 
     physique: {

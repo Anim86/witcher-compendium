@@ -5,22 +5,58 @@
     "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag104_Rituali_01.png",
     "system": {
         "description": "<p>Ossa di Vetro FATTURE DI PERICOLOSITÀ BASSA Fattura Odiosa Costo in RES: 4 Effetto: la Fattura Odiosa si avvolge attorno alla vit- tima rendendola repellente e abbassando di un grado la sua Posizione Sociale, a meno che fosse già Odiata. Questo effetto colpisce anche i membri della stessa spe- cie della vittima. Pericolosità: Bassa Occorrente per Rimuoverla: la vittima deve costruire un’effigie di sé stessa usando una Unità di Fibra di Han, una di Prezzemolo Selvatico e una di Orzo. Dopo di che deve insultare l’effigie come se stesse insultando sé stesso, finché non riesce più a immaginare altre offese. Infine, deve bruciarla per liberarsi della Fattura. Maledizione della Temperanza Costo in RES: 4 Effetto: la Maledizione della Temperanza rende lo stomaco più sensibile all’alcol, esacerbando gli effetti dell’ubriachezza. Bevendo qualsiasi sostanza alcolica, la vittima subisce automaticamente Nausea ed Ebbrezza, mentre la testa inizia a girare e lo stomaco a rivoltarsi. Pericolosità: Bassa Occorrente per Rimuoverla: la vittima deve procu- rarsi l’equivalente di 40 Corone di alcol e usarle per riempire un secchio. Dopo di che occorre immergervi la testa finché non inizia a Soffocare. Quando emergerà la Fattura sarà rimossa.</p>",
+        "quantity": "1",
         "weight": 0,
-        "cost": 12,
-        "difficulty": "",
+        "cost": 0,
+        "sourcebook": "TC 107",
+        "class": "hex",
+        "level": "novice",
+        "source": "",
+        "stamina": 0,
+        "staminaIsVar": false,
         "effect": "<p>la Fattura della Dimenticanza avvolge la mente della vittima in una spessa nebbia magica, che rende difficile conservare i ricordi. La vittima non ottiene più PI grazie a studio, insegnamento o pratica e non può imparare nuovi incantesimi. Inoltre una volta al giorno il GM può chiederle di effettuare una prova di Resistere alla Magia CD 20 per non dimenticare un fatto, ricetta, incantesimo, invocazione, rituale o segno, a scelta dal GM. Queste informazioni ritornano quando la Fattura è rimossa. Pericolosità: Alta Occorrente per Rimuoverla: la vittima deve rasarsi completamente la testa, mescolare due Unità d'Essenza Acquatica con due di Argilla, usarle per tracciare alcuni simboli speciali in testa e tenere un'Unità di Optima Mater sotto la lingua. Dopo di che occorre restare in assoluto silenzio per un giorno e una notte, mentre l'argilla si secca. Al termine vanno rimossi sia i sigilli che l'Optima Mater. Se quest'ultima sarà grigio cenere la Fattura è spezzata. L'Optima Mater è alterata in modo permanente e diventa un Focus (2) utilizzabile solo per Fatture, Goezia e Necromanzia. Ossa di Vetro Costo in RES: 12 Effetto: Ossa di Vetro rende le ossa della vittima cave e facili da spezzare. Al posto della Ferita Critica Costole Incrinate subisce Costole Rotte, una Frattura a Braccio/ Gamba diventa una Frattura Scomposta a Braccio/ Gamba, una Ferita alla Testa diventa una Frattura Cranica. Inoltre, le prove per stabilizzare e trattare queste Ferite Critiche subiscono una penalità di -3. Pericolosità: Alta Occorrente per Rimuoverla: la vittima deve procurarsi un cavallo di guerra, un Fegato di Troll, la carne di un lupo, tre unità di Foglie di Balissa e una bottiglia di spirito. Una volta fatto, il cavallo va dissanguato, raccogliendo il sangue in una pentola e aggiungendo fegato, carne e foglie per formare un orribile stufato, da cuocere per tre ore. Infine, lo stufato va consumato completamente entro un'ora dalla cottura, seguito dall'intera bottiglia bevuta tutta d'un fiato. A questo punto la Fattura è rimossa. Davide Mesina 355175</p>",
-        "sourcebook": "TC 107"
+        "range": "",
+        "duration": "",
+        "defence": "",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "hexweave"
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherTRPG",
-        "systemVersion": "1.0.0",
+        "systemVersion": "v13.13.0",
         "coreVersion": "13"
     }
 }

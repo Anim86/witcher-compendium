@@ -5,23 +5,58 @@
     "img": "modules/witcher-compendium/assets/Immagini/Pag118_Rituali_01.png",
     "system": {
         "description": "<p>La Fortuna del Diavolo perseguita la vittima con continui colpi di sfortuna. In situazioni di forte ten- sione, come in combattimento, quando effettua compiti con una scadenza o con CD superiore a 15, il soggetto commette un Disastro con il risultato di 1 o 2 naturale.</p>",
+        "quantity": "1",
         "weight": 0,
-        "cost": 8,
+        "cost": 0,
+        "sourcebook": "MB 123",
+        "class": "hex",
+        "level": "novice",
+        "source": "",
+        "stamina": 0,
+        "staminaIsVar": false,
+        "effect": "La Fortuna del Diavolo perseguita la vittima con continui colpi di sfortuna. In situazioni di forte ten- sione, come in combattimento, quando effettua compiti con una scadenza o con CD superiore a 15, il soggetto commette un Disastro con il risultato di 1 o 2 naturale.",
         "range": "N/A",
         "duration": "N/A",
-        "effect": "<p>La Fortuna del Diavolo perseguita la vittima con continui colpi di sfortuna. In situazioni di forte tensione, come in combattimento, quando effettua compiti con una scadenza o con CD superiore a 15, il soggetto commette un Disastro con il risultato di 1 o 2 naturale. Pericolosità: Media Occorrente per Toglierla: Il soggetto deve piantare un chiodo d'argento nello stipite della porta e appendervi 2 unità di aconito legate con una ciocca di capelli di vergine. Infine, restando sotto il chiodo d'argento, deve dar fuoco al mazzetto di aconito e capelli di vergine e respirare profondamente. La Fattura della Bestia Costo in RES: 12 Effetto: La Fattura della Bestia rende il bersaglio la nemesi di animali e bestie. Ogni volta che la vittima si trova entro 10m da un animale, questo reagirà con aggressività, imponendo -3 alle prove relative a calmarlo. Esiste una probabilità del 50% che l'animale attacchi. Pericolosità: Alta Occorrente per Toglierla: La vittima deve avere un piccolo animale vivo, 2 unità di vischio, 1 unità di fosforo, 2 di occhio di corvo e 3 unità di radice di mandragora. Il soggetto deve tagliare la gola all'animale e berne il sangue sotto la luna piena. Poi il corpo dell'animale va avvolto in fasce di vischio, occhio di corvo e radice di mandragora e gettato in un falò. Quando le squame o il pelo dell'animale cominciano a bruciare, bisogna aggiungere il fosforo. Quando il fuoco si è spento, il soggetto deve recuperare le ossa dell'animale e tenerle addosso per un giorno intero. L'Incubo Costo in RES: 8 Effetto: L'Incubo costringe la vittima a rivivere lo stesso terribile incubo. Ogni notte la vittima deve superare una prova di Resistere a Coercizioni con CD pari al tiro di Alessandro Pacifico 355698</p>",
-        "sourcebook": "MB 123"
+        "defence": "",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "hexweave"
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherTRPG",
-        "systemVersion": "1.0.0",
+        "systemVersion": "v13.13.0",
         "coreVersion": "13"
     }
 }

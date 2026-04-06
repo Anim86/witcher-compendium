@@ -5,24 +5,58 @@
     "img": "modules/witcher-compendium/assets/Immagini/Pag118_Rituali_01.png",
     "system": {
         "description": "<p>L’Idromanzia permette al ritualista di fissare in un piccolo specchio d’acqua e di scorgervi un evento av- venuto negli ultimi due giorni, o che si sta svolgendo in quel momento. Osservare un evento passato usa la CD base. Se il ritualista cerca di scorgere un evento che sta avendo luogo, la CD aumenta di 3. Se il ritualista osserva un evento corrente, a cui partecipa un mago questo può percepire la divinazione con un tiro di Arte del Mago contrapposto al tiro di Officiare Rituali.</p>",
+        "quantity": "1",
         "weight": 0,
-        "cost": 5,
+        "cost": 0,
+        "sourcebook": "MB 18",
+        "class": "ritual",
+        "level": "novice",
+        "source": "",
+        "stamina": 0,
+        "staminaIsVar": false,
+        "effect": "L’Idromanzia permette al ritualista di fissare in un piccolo specchio d’acqua e di scorgervi un evento av- venuto negli ultimi due giorni, o che si sta svolgendo in quel momento. Osservare un evento passato usa la CD base. Se il ritualista cerca di scorgere un evento che sta avendo luogo, la CD aumenta di 3. Se il ritualista osserva un evento corrente, a cui partecipa un mago questo può percepire la divinazione con un tiro di Arte del Mago contrapposto al tiro di Officiare Rituali.",
         "range": "N/A",
         "duration": "Attiva (2 RES)",
-        "effect": "<p>L'Idromanzia permette al ritualista di fissare in un piccolo specchio d'acqua e di scorgervi un evento avvenuto negli ultimi due giorni, o che si sta svolgendo in quel momento. Osservare un evento passato usa la CD base. Se il ritualista cerca di scorgere un evento che sta avendo luogo, la CD aumenta di 3. Se il ritualista osserva un evento corrente, a cui partecipa un mago questo può percepire la divinazione con un tiro di Arte del Mago contrapposto al tiro di Officiare Rituali.</p>",
-        "sourcebook": "MB 18",
-        "source": "MB 18"
+        "defence": "",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "ritcraft"
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherTRPG",
-        "systemVersion": "1.0.0",
+        "systemVersion": "v13.13.0",
         "coreVersion": "13"
     }
 }

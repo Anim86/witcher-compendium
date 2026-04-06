@@ -3,35 +3,29 @@
   "type": "race",
   "img": "modules/witcher-compendium/images/races/nano.png",
   "system": {
-    "description": "<p>I fiumi si prosciugano, le montagne si spianano, ma i nani restano. Sono bassi rispetto a elfi e umani, ma più robusti, con spalle larghe. Vivono nelle montagne e la loro abilità nel forgiare l'acciaio è leggendaria.</p><p>I nani badano agli affari loro e sono amichevoli quanto basta, finché non vengono provocati.</p>",
-    "source": "Manuale Base, p.25",
-    "social": "Tollerato",
-    "perks": [
-      {
-        "name": "Coriaceo",
-        "description": "La pelle dei nani ha una naturale capacità di blocco di 2 (PR). Questa PR non può essere ridotta da attacchi di armi o danno ablativo ed è cumulativa alle normali armature."
-      },
-      {
-        "name": "Forte",
-        "description": "Ottengono +1 all’abilità Prestanza e aumentano il valore d’Ingombro di 25."
-      },
-      {
-        "name": "Occhio da Artigiano",
-        "description": "Grazie al loro occhio per i dettagli e le valutazioni, ottengono +1 all’abilità Commercio."
-      }
-    ],
-    "bonuses": {
-      "skills": {
-        "physique": 1,
-        "business": 1
-      },
-      "encumbrance": 25,
-      "armor": {
-        "head": 2,
-        "torso": 2,
-        "arms": 2,
-        "legs": 2
-      }
+    "sourcebook": "Manuale Base, p.25",
+    "perk1": {
+      "name": "Coriaceo",
+      "description": "<p>La pelle e la tempra dei nani sono incredibilmente resistenti. Possiedono una <strong>capacità di blocco naturale di 2 (PR)</strong> in ogni locazione del corpo, che non può essere ridotta da normali attacchi ed è cumulabile con le armature indossate.</p>"
+    },
+    "perk2": {
+      "name": "Forte",
+      "description": "<p>Grazie alla loro struttura massiccia, i nani ottengono un <strong>bonus di +1 innato all'abilità Prestanza</strong> e aumentano il loro valore di <strong>Ingombro massimo di +25</strong>.</p>"
+    },
+    "perk3": {
+      "name": "Occhio da Artigiano",
+      "description": "<p>Nati tra il commercio e la manifattura, i nani sanno valutare la qualità. Ottengono un <strong>bonus di +1 innato all'abilità Commercio</strong>.</p>"
+    },
+    "perk4": {
+      "name": "-",
+      "description": "-"
+    },
+    "socialStanding": {
+      "north": "tolerated",
+      "nilfgaard": "tolerated",
+      "skellige": "tolerated",
+      "dolBlathanna": "tolerated",
+      "mahakam": "equal"
     }
   },
   "effects": [],

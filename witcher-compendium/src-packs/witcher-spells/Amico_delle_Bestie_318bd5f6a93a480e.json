@@ -5,24 +5,58 @@
     "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
     "system": {
         "description": "<p>Amico delle Bestie conferisce al druido +3 alle prove per influenzare animali. In alternativa può calma- re un animale, se supera VOL ×3 del bersaglio con il tiro di Lanciare Incantesimi.</p>",
+        "quantity": "1",
         "weight": 0,
         "cost": 0,
+        "sourcebook": "MB 111",
+        "class": "Invocations",
+        "level": "novice",
+        "source": "fire",
+        "stamina": 1,
+        "staminaIsVar": false,
+        "effect": "Amico delle Bestie conferisce al druido +3 alle prove per influenzare animali. In alternativa può calma- re un animale, se supera VOL ×3 del bersaglio con il tiro di Lanciare Incantesimi.",
         "range": "8m",
         "duration": "",
-        "effect": "<p>Amico delle Bestie conferisce al druido +3 alle prove per influenzare animali. In alternativa può calmare un animale, se supera VOL ×3 del bersaglio con il tiro di Lanciare Incantesimi.</p>",
-        "sourcebook": "MB 111",
-        "source": ""
+        "defence": "",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast"
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherTRPG",
-        "systemVersion": "1.0.0",
+        "systemVersion": "v13.13.0",
         "coreVersion": "13"
     }
 }

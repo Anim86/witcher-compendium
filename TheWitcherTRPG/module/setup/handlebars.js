@@ -69,7 +69,19 @@ export async function preloadHandlebarsTemplates() {
         'systems/TheWitcherTRPG/templates/chat/item/partials/item-description/spell-description.hbs',
         'systems/TheWitcherTRPG/templates/chat/item/partials/item-description/tags.hbs',
 
-        'systems/TheWitcherTRPG/templates/partials/components-list.hbs'
+        'systems/TheWitcherTRPG/templates/partials/components-list.hbs',
+        
+        // Character Wizard
+        'systems/TheWitcherTRPG/templates/app/wizard/navigation.hbs',
+        'systems/TheWitcherTRPG/templates/app/wizard/content.hbs',
+        'systems/TheWitcherTRPG/templates/app/wizard/footer.hbs',
+        'systems/TheWitcherTRPG/templates/app/wizard/steps/race.hbs',
+        'systems/TheWitcherTRPG/templates/app/wizard/steps/background.hbs',
+        'systems/TheWitcherTRPG/templates/app/wizard/steps/profession.hbs',
+        'systems/TheWitcherTRPG/templates/app/wizard/steps/stats.hbs',
+        'systems/TheWitcherTRPG/templates/app/wizard/steps/skills.hbs',
+        'systems/TheWitcherTRPG/templates/app/wizard/steps/gear.hbs',
+        'systems/TheWitcherTRPG/templates/app/wizard/steps/finish.hbs'
     ];
     return foundry.applications.handlebars.loadTemplates(templatePath);
 }

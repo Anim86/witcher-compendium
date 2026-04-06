@@ -5,26 +5,61 @@
     "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag104_Rituali_01.png",
     "system": {
         "description": "<p>.</p>",
+        "quantity": "1",
         "weight": 0,
-        "cost": 2,
-        "prepTime": "5 Round",
-        "difficulty": "13 +/- 1d6",
-        "duration": "Istantanea",
-        "components": "Formaggio (×2)",
-        "effect": "<p>invecchiando magicamente del formaggio o fondendolo, la Tiromanzia permette di scoprire se un determinato corso d'azione avrà un esito positivo o negativo. Durante il rituale, il GM tira in segreto 1d6, il cui risultato sarà sommato o sottratto a 13 per determinare la CD. Se il formaggio è di qualità comune (10 Corone per Unità) allora il risultato si somma, se è di alta qualità (30 Corone per Unità) si sottrae. Dopo di che si effettua la prova di Officiare Rituali e il ritualista chiede al GM se un determinato corso d'azione avrà esito positivo o negativo. Con un successo la risposta deve essere veritiera, in caso di situazioni incerte si prende in esame il primo esito possibile. Con un fallimento, il GM fornisce una risposta falsa basata sul precedente tiro di 1d6: dispari negativo, pari positivo.</p>",
+        "cost": 0,
         "sourcebook": "TC 104",
-        "source": "TC 104"
+        "class": "ritual",
+        "level": "master",
+        "source": "",
+        "stamina": 0,
+        "staminaIsVar": false,
+        "effect": "invecchiando magicamente del formaggio o fondendolo, la Tiromanzia permette di scoprire se un determinato corso d’azione avrà un esito positivo o nega- tivo. Durante il rituale, il GM tira in segreto 1d6, il cui risultato sarà sommato o sottratto a 13 per determinare la CD. Se il formaggio è di qualità comune (10 Corone per Unità) allora il risultato si somma, se è di alta qualità (30 Corone per Unità) si sottrae. Dopo di che si effettua la prova di Officiare Rituali e il ritualista chiede al GM se un determinato corso d’azione avrà esito positivo o ne- gativo. Con un successo la risposta deve essere veritiera, in caso di situazioni incerte si prende in esame il primo esito possibile. Con un fallimento, il GM fornisce una risposta falsa basata sul precedente tiro di 1d6: dispari negativo, pari positivo.",
+        "range": "",
+        "duration": "Istantanea",
+        "defence": "",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "ritcraft",
+        "causeDamages": true,
+        "damage": "1d6",
+        "damageType": "elemental"
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherTRPG",
-        "systemVersion": "1.0.0",
+        "systemVersion": "v13.13.0",
         "coreVersion": "13"
     }
 }

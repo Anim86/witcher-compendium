@@ -1,28 +1,26 @@
 {
     "_id": "7a7f92dad11d483f",
     "name": "Fibre di Han",
-    "type": "alchemical",
+    "type": "component",
     "img": "modules/witcher-compendium/assets/Immagini/Pag145_Sostanze Alchemiche_02.png",
     "system": {
         "description": "<p>S Campi 1d6 Unità 15 0,1 17</p>",
+        "quantity": "1",
         "weight": 0.1,
         "cost": 17,
-        "toxicity": "0%",
-        "duration": "N/A",
-        "effect": "<p>Aard scaglia un'ondata di forza telecinetica che rende vacillanti le creature e ha il 10% di possibilità che i bersagli cadano a terra. La percentuale aumenta del 10% per ogni punto RES speso.</p>",
         "sourcebook": "MB 146",
-        "source": "MB 146"
+        "type": "alchemical",
+        "rarity": "S",
+        "location": "Campi 1d6 Unità 15",
+        "quantityObtainable": "",
+        "forage": "",
+        "substanceType": "rebis"
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherTRPG",
-        "systemVersion": "1.0.0",
+        "systemVersion": "v13.13.0",
         "coreVersion": "13"
     }
 }

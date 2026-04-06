@@ -5,20 +5,22 @@
     "img": "modules/witcher-compendium/assets/Immagini/Pag131_Componenti per la Manifattura_10.png",
     "system": {
         "description": "<p>S Acquistato o fabbricato N/A N/A 1 64 Argento R Montagne e sottoterra 1d6/2 Unità 16 1 72 Argilla S Fiumi o sponde 1d6 Unità 14 1,5 5 Dimeritium R Acquistato o fabbricato N/A N/A 1 240 Dimeritium Mahakaman R Acquistato o fabbricato N/A N/A 1 300 Ferro S Montagne e sottoterra 1d6/2 Unità 16 1,5 30 Ferro Nero R Montagne e sottoterra 1d6 Unità 18 1,5 52 Gemma R Montagne e sottoterra 1d6/2 Unità 24 0,1 100 Minerale Luccicante R Montagne e sottoterra 1d6/2 Unità 20 1 80 Meteorite R Ovunque in superficie 1d6/2 Unità 24 1 98 Oro R Montagne e sottoterra 1d6/2 Unità 18 1 85 Polvere Zerrikaniana S Montagne e sottoterra 1d6/2 Unità 18 0,1 30 Sasso D Ovunque 2d6 Unità 8 2 4</p>",
+        "quantity": "1",
         "weight": 1,
         "cost": 64,
-        "sourcebook": "MB 131"
+        "sourcebook": "MB 131",
+        "type": "crafting-material",
+        "rarity": "",
+        "location": "",
+        "quantityObtainable": "",
+        "forage": "",
+        "substanceType": ""
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherTRPG",
-        "systemVersion": "1.0.0",
+        "systemVersion": "v13.13.0",
         "coreVersion": "13"
     }
 }

@@ -5,24 +5,61 @@
     "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
     "system": {
         "description": "<p>Il Teletrasporto consente all’incantatore di te- letrasportarsi istantaneamente in un luogo conosciuto. Non può portare nessuno con sé e può trasportare solo ciò che indossa o tiene in mano. Tentare di teletraspor- tarsi con qualcun altro trasporta solamente l’incantatore, lasciando l’altro dove si trova. Per teletrasportarsi occorre un tiro di Lanciare Incantesimo con CD 15. Se il tiro fallisce, l’incantatore si ritrova in un punto casuale a 1d6 km dalla destinazione.</p>",
+        "quantity": "1",
         "weight": 0,
         "cost": 0,
+        "sourcebook": "MB 15",
+        "class": "Spells",
+        "level": "journeyman",
+        "source": "mixedElements",
+        "stamina": 10,
+        "staminaIsVar": false,
+        "effect": "Il Teletrasporto consente all’incantatore di te- letrasportarsi istantaneamente in un luogo conosciuto. Non può portare nessuno con sé e può trasportare solo ciò che indossa o tiene in mano. Tentare di teletraspor- tarsi con qualcun altro trasporta solamente l’incantatore, lasciando l’altro dove si trova. Per teletrasportarsi occorre un tiro di Lanciare Incantesimo con CD 15. Se il tiro fallisce, l’incantatore si ritrova in un punto casuale a 1d6 km dalla destinazione.",
         "range": "N/A",
         "duration": "Istantanea",
-        "effect": "<p>Il Teletrasporto consente all'incantatore di teletrasportarsi istantaneamente in un luogo conosciuto. Non può portare nessuno con sé e può trasportare solo ciò che indossa o tiene in mano. Tentare di teletrasportarsi con qualcun altro trasporta solamente l'incantatore, lasciando l'altro dove si trova. Per teletrasportarsi occorre un tiro di Lanciare Incantesimo con CD 15. Se il tiro fallisce, l'incantatore si ritrova in un punto casuale a 1d6 km dalla destinazione.</p>",
-        "sourcebook": "MB 15",
-        "source": ""
+        "defence": "Nessuna",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast",
+        "causeDamages": true,
+        "damage": "1d6",
+        "damageType": "elemental"
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherTRPG",
-        "systemVersion": "1.0.0",
+        "systemVersion": "v13.13.0",
         "coreVersion": "13"
     }
 }

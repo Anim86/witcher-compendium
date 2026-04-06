@@ -5,28 +5,61 @@
     "img": "modules/witcher-compendium/assets/Immagini_Chaos/Pag083_Incantesimi da Mago_01.png",
     "system": {
         "description": "<p>Stasi Cristallina Mano della Tempesta Vampata del Korath Piena di Ys</p>",
+        "quantity": "1",
         "weight": 0,
-        "cost": 25,
+        "cost": 0,
+        "sourcebook": "TC 83",
+        "class": "Spells",
+        "level": "master",
+        "source": "mixedElements",
+        "stamina": 0,
+        "staminaIsVar": false,
+        "effect": "Specchio Oscuro di Bekker intrappola il riflesso di una creatura in una superficie riflettente, indebolen- do così l’originale. Quando lancia questo incantesimo, il mago sceglie due Statistiche del bersaglio e le riduce entrambe di 1d6, alterando anche le Statistiche Derivate. Questa riduzione permane per tutta la durata dell’incan- tesimo o finché la superficie del riflesso non viene com- pletamente distrutta. Inoltre, finché ciò non avviene, la vittima non si riflette negli specchi. Le creature prive di riflesso sono immuni a questo incantesimo.",
         "range": "10m",
         "duration": "1 mese",
-        "defense": "Resistere alla Magia",
-        "tier": "Maestro",
-        "subtype": "Misto",
-        "category": "Mago",
-        "effect": "<p>Specchio Oscuro di Bekker intrappola il riflesso di una creatura in una superficie riflettente, indebolendo così l'originale. Quando lancia questo incantesimo, il mago sceglie due Statistiche del bersaglio e le riduce entrambe di 1d6, alterando anche le Statistiche Derivate. Questa riduzione permane per tutta la durata dell'incantesimo o finché la superficie del riflesso non viene completamente distrutta. Inoltre, finché ciò non avviene, la vittima non si riflette negli specchi. Le creature prive di riflesso sono immuni a questo incantesimo.</p>",
-        "sourcebook": "TC 83",
-        "source": ""
+        "defence": "Resistere alla Magia",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast",
+        "causeDamages": true,
+        "damage": "1d6",
+        "damageType": "elemental"
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherTRPG",
-        "systemVersion": "1.0.0",
+        "systemVersion": "v13.13.0",
         "coreVersion": "13"
     }
 }

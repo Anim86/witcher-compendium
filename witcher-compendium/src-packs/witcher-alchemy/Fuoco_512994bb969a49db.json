@@ -1,28 +1,26 @@
 {
     "_id": "512994bb969a49db",
     "name": "Fuoco",
-    "type": "alchemical",
+    "type": "component",
     "img": "modules/witcher-compendium/assets/Immagini/Pag210_Fuoco Eterno_01.png",
     "system": {
         "description": "<p>Zerrikaniano Non pasticcio col fuoco zerrikaniano. Mai dovuto farlo, mai lo farò. È troppo pericoloso. A contatto con l’aria, questa roba divampa in un orrendo fuoco verde. Viene utilizzata una ver- sione di questa sostanza negli scorpioni di fuoco zerrikaniani.</p>",
+        "quantity": "1",
         "weight": 0.5,
         "cost": 65,
-        "toxicity": "0%",
-        "duration": "N/A",
-        "effect": "<p>richiamando il potere della Signora della Valle, il Prete benedice un banchetto per almeno venti commensali, che deve essere composto di prodotti locali. Chi vi partecipa recupera 6d6 Punti Salute, viene immediatamente curato da tutte le Ferite Critiche, le malattie e l'effetto Avvelenato. Questa invocazione agisce su tante creature quante partecipano al banchetto.</p>",
         "sourcebook": "MB 89",
-        "source": "MB 89"
+        "type": "alchemical",
+        "rarity": "",
+        "location": "",
+        "quantityObtainable": "",
+        "forage": "",
+        "substanceType": ""
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherTRPG",
-        "systemVersion": "1.0.0",
+        "systemVersion": "v13.13.0",
         "coreVersion": "13"
     }
 }

@@ -1,28 +1,26 @@
 {
     "_id": "edc16b8540d84b62",
     "name": "Prezzemolo Selvatico",
-    "type": "alchemical",
+    "type": "component",
     "img": "modules/witcher-compendium/assets/Immagini/Pag145_Sostanze Alchemiche_02.png",
     "system": {
         "description": "<p>D Campi 2d6 Unità 10 0,1 2</p>",
+        "quantity": "1",
         "weight": 0.1,
         "cost": 2,
-        "toxicity": "0%",
-        "duration": "N/A",
-        "effect": "<p>la Maledizione della Temperanza rende lo stomaco più sensibile all'alcol, esacerbando gli effetti dell'ubriachezza. Bevendo qualsiasi sostanza alcolica, la vittima subisce automaticamente Nausea ed Ebbrezza, mentre la testa inizia a girare e lo stomaco a rivoltarsi. Pericolosità: Bassa Occorrente per Rimuoverla: la vittima deve procurarsi l'equivalente di 40 Corone di alcol e usarle per riempire un secchio. Dopo di che occorre immergervi la testa finché non inizia a Soffocare. Quando emergerà la Fattura sarà rimossa. Davide Mesina 355175</p>",
         "sourcebook": "MB 146",
-        "source": "MB 146"
+        "type": "alchemical",
+        "rarity": "D",
+        "location": "Campi 2d6 Unità 10",
+        "quantityObtainable": "",
+        "forage": "",
+        "substanceType": "quebrith"
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherTRPG",
-        "systemVersion": "1.0.0",
+        "systemVersion": "v13.13.0",
         "coreVersion": "13"
     }
 }

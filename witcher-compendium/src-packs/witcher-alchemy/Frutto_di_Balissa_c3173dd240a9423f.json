@@ -1,28 +1,26 @@
 {
     "_id": "c3173dd240a9423f",
     "name": "Frutto di Balissa",
-    "type": "alchemical",
+    "type": "component",
     "img": "modules/witcher-compendium/assets/Immagini/Pag145_Sostanze Alchemiche_02.png",
     "system": {
         "description": "<p>C Campi 1d10 Unità 12 0,1 8</p>",
+        "quantity": "1",
         "weight": 0.1,
         "cost": 8,
-        "toxicity": "0%",
-        "duration": "N/A",
-        "effect": "<p>gli incantesimi ad area d'effetto riempiono una determinata area, influenzando tutto ciò che si trova al suo interno. Questi incantesimi agiscono come gli effetti diretti, ma tutti coloro che si trovano nella loro area devono effettuare un tiro difensivo contrapposto al tiro di Lanciare Incantesimi. Se l'incantesimo non ha una difesa, è necessario tirare Lanciare Incantesimi, ma non un eventuale Disastro. • Personali: gli incantesimi personali hanno effetto solo su chi li lancia. Per lanciarli è necessario tirare Lanciare Incantesimi, ma non un eventuale Disastro. ESSERE INTERROTTI Se l'incantatore è interrotto prima che abbia ultimato il rituale, deve superare un tiro di Officiare Rituali per non distrarsi e proseguire. La CD è 15 se è stato scosso, urtato, gli hanno urlato contro o gli hanno tirato qualcosa addosso. Se viene attaccato e ferito fisicamente, la CD per proseguire il rituale è 18. Se viene allontanato fisicamente dall'area del rituale, può continuare se rientra nell'area entro 1 round e supera una prova di Officiare Rituali CD 16. RITUALI DI GRUPPO L'incantatore può essere aiutato da terzi a officiare un rituale. Non occorre che questi siano dotati di potenziale magico, ma devono essere in grado di aiutare a tracciare cerchi con il gesso, posizionare gli oggetti rituali o recitare testi. Ogni persona che aiuta l'incantatore (massimo 4) riduce di 1 la CD del rituale. FATTURE Le fatture funzionano in modo leggermente diverso da incantesimi/invocazioni e dai rituali. Per intessere una fattura bisogna trarre una certa quantità di magia ma anche nutrire un odio personale per la vittima o il luogo da colpire. Fallire il lancio di una fattura non provoca effetti. In caso di Disastro c'è una possibilità del 50% che la fattura colpisca l'incantatore; questo sostituisce i normali effetti elementali e danni provocati da un Disastro magico. Alessandro Pacifico 355698</p>",
         "sourcebook": "MB 147",
-        "source": "MB 147"
+        "type": "alchemical",
+        "rarity": "C",
+        "location": "Campi 1d10 Unità 12",
+        "quantityObtainable": "",
+        "forage": "",
+        "substanceType": "vitriol"
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherTRPG",
-        "systemVersion": "1.0.0",
+        "systemVersion": "v13.13.0",
         "coreVersion": "13"
     }
 }

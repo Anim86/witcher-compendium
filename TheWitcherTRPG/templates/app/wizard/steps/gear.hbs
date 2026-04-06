@@ -1,0 +1,59 @@
+<div class="wizard-step step-gear">
+    <h2>{{localize "WITCHER.Wizard.Step.Gear.Title"}}</h2>
+    <p>{{localize "WITCHER.Wizard.Step.Gear.Description"}}</p>
+
+    <div class="gear-container">
+        <div class="gear-categories">
+            <div class="gear-category">
+                <h3>{{localize "WITCHER.Loot.Weapons"}}</h3>
+                <div class="gear-list">
+                    {{#each allGear.weapons}}
+                    <div class="gear-item {{#if selected}}selected{{/if}}" 
+                         data-action="toggleGear" data-item-id="{{_id}}" data-item-type="weapon">
+                        <img src="{{img}}" alt="{{name}}">
+                        <span class="name">{{name}}</span>
+                        <span class="cost">{{system.cost}} crowns</span>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+
+            <div class="gear-category">
+                <h3>{{localize "WITCHER.Loot.Armors"}}</h3>
+                <div class="gear-list">
+                    {{#each allGear.armor}}
+                    <div class="gear-item {{#if selected}}selected{{/if}}" 
+                         data-action="toggleGear" data-item-id="{{_id}}" data-item-type="armor">
+                        <img src="{{img}}" alt="{{name}}">
+                        <span class="name">{{name}}</span>
+                        <span class="cost">{{system.cost}} crowns</span>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+
+            <div class="gear-category">
+                <h3>{{localize "WITCHER.Loot.Valuables"}}</h3>
+                <div class="gear-list">
+                    {{#each allGear.equipment}}
+                    <div class="gear-item {{#if selected}}selected{{/if}}" 
+                         data-action="toggleGear" data-item-id="{{_id}}" data-item-type="equipment">
+                        <img src="{{img}}" alt="{{name}}">
+                        <span class="name">{{name}}</span>
+                        <span class="cost">{{system.cost}} crowns</span>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+
+        <div class="gear-summary">
+            <h3>{{localize "WITCHER.Wizard.Gear.Selected"}}</h3>
+            <ul>
+                {{#each character.gear}}
+                <li>{{name}}</li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</div>

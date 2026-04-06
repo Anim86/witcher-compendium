@@ -5,24 +5,61 @@
     "img": "modules/witcher-compendium/assets/Immagini/Pag101_La Magia in The Witcher_01.png",
     "system": {
         "description": "<p>Rete di Menzogne consente al predicatore di confondere le informazioni nella testa del bersaglio, fa- cendolo dubitare di ogni nozione o ricordo. Questo stor- disce il bersaglio. Durante il proprio turno, il bersaglio può tirare 1d10. Se il risultato è inferiore al suo valore di INT l’effetto termina.</p>",
+        "quantity": "1",
         "weight": 0,
         "cost": 0,
+        "sourcebook": "MB 111",
+        "class": "Invocations",
+        "level": "novice",
+        "source": "fire",
+        "stamina": 3,
+        "staminaIsVar": false,
+        "effect": "Rete di Menzogne consente al predicatore di confondere le informazioni nella testa del bersaglio, fa- cendolo dubitare di ogni nozione o ricordo. Questo stor- disce il bersaglio. Durante il proprio turno, il bersaglio può tirare 1d10. Se il risultato è inferiore al suo valore di INT l’effetto termina.",
         "range": "8m",
         "duration": "",
-        "effect": "<p>Rete di Menzogne consente al predicatore di confondere le informazioni nella testa del bersaglio, facendolo dubitare di ogni nozione o ricordo. Questo stordisce il bersaglio. Durante il proprio turno, il bersaglio può tirare 1d10. Se il risultato è inferiore al suo valore di INT l'effetto termina.</p>",
-        "sourcebook": "MB 111",
-        "source": ""
+        "defence": "",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast",
+        "causeDamages": true,
+        "damage": "1d10",
+        "damageType": "elemental"
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherTRPG",
-        "systemVersion": "1.0.0",
+        "systemVersion": "v13.13.0",
         "coreVersion": "13"
     }
 }
