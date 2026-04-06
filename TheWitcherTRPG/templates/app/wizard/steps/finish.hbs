@@ -34,10 +34,10 @@
             <div class="summary-card">
                 <h3>{{localize "WITCHER.Wizard.Stats.Summary"}}</h3>
                 <div class="stats-pills">
-                    {{#each character.stats}}
+                    {{#each summary.stats}}
                     <div class="stat-pill">
-                        <span class="stat-abbr">{{@key}}</span>
-                        <span class="stat-value">{{this}}</span>
+                        <span class="stat-abbr">{{localize label}}</span>
+                        <span class="stat-value">{{value}}</span>
                     </div>
                     {{/each}}
                 </div>
@@ -46,10 +46,8 @@
             <div class="summary-card full-width">
                 <h3>{{localize "WITCHER.Wizard.Skills.Summary"}}</h3>
                 <div class="skills-list">
-                    {{#each character.skills}}
-                    {{#if (gt this 0)}}
-                    <span class="skill-tag">{{@key}}: {{this}}</span>
-                    {{/if}}
+                    {{#each summary.skills}}
+                    <span class="skill-tag">{{localize label}}: {{value}}</span>
                     {{/each}}
                 </div>
             </div>

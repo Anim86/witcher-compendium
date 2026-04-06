@@ -35,7 +35,7 @@ export function registerHooks() {
                     icon: "fa-solid fa-wand-magic-sparkles",
                     callback: () => {
                         console.log("TheWitcherTRPG | Launching Character Wizard from header button");
-                        new WitcherCharacterWizard().render(true);
+                        new WitcherCharacterWizard().render({ force: true });
                     }
                 });
             }
@@ -61,7 +61,7 @@ function _addWizardButton(html) {
     button.click(ev => {
         ev.preventDefault();
         console.log("TheWitcherTRPG | Wizard button clicked");
-        new WitcherCharacterWizard().render(true);
+        new WitcherCharacterWizard().render({ force: true });
     });
 
     // Try multiple insertion points

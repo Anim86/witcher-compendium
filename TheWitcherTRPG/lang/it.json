@@ -110,10 +110,20 @@
           "Description": "Dai un nome al tuo eroe e completa la creazione."
         }
       },
+      "StatsPrefix": "Punti Rimanenti",
+      "DerivedPreview": "Anteprima Statistiche Derivate",
       "Stats": {
-        "PointsRemaining": "Punti Rimanenti",
-        "DerivedPreview": "Anteprima Statistiche Derivate"
+        "Summary": "Riepilogo Statistiche",
+        "PointsRemaining": "Punti Rimanenti"
       },
+      "Summary": {
+        "Details": "Dettagli Personaggio"
+      },
+      "Race": "Razza",
+      "Profession": "Professione",
+      "BackgroundLabel": "Background",
+      "ChangeAvatar": "Cambia Avatar",
+      "NamePlaceholder": "Nome dell'eroe...",
       "Skills": {
         "Profession": "Abilità Professionali",
         "Pickup": "Abilità Opzionali",
