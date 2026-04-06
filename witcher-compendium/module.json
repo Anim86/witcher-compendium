@@ -18,126 +18,126 @@
     "verified": "14"
   },
   "esmodules": ["scripts/witcher-compendium.js"],
-  "systems": ["TheWitcherTRPG"],
+  "systems": ["TheWitcherItaNewSystem"],
   "packs": [
     {
       "name": "witcher-races",
       "label": "Razze",
       "path": "packs/witcher-races.db",
       "type": "Item",
-      "system": "TheWitcherTRPG"
+      "system": "TheWitcherItaNewSystem"
     },
     {
       "name": "witcher-professions",
       "label": "Professioni",
       "path": "packs/witcher-professions.db",
       "type": "Item",
-      "system": "TheWitcherTRPG"
+      "system": "TheWitcherItaNewSystem"
     },
     {
       "name": "witcher-weapons",
       "label": "Manuale Base - Armi",
       "path": "packs/witcher-weapons.db",
       "type": "Item",
-      "system": "TheWitcherTRPG"
+      "system": "TheWitcherItaNewSystem"
     },
     {
       "name": "witcher-armor",
       "label": "Manuale Base - Armature",
       "path": "packs/witcher-armor.db",
       "type": "Item",
-      "system": "TheWitcherTRPG"
+      "system": "TheWitcherItaNewSystem"
     },
     {
       "name": "witcher-equipment",
       "label": "Manuale Base - Equipaggiamento",
       "path": "packs/witcher-equipment.db",
       "type": "Item",
-      "system": "TheWitcherTRPG"
+      "system": "TheWitcherItaNewSystem"
     },
     {
       "name": "witcher-spells",
       "label": "Manuale Base - Incantesimi",
       "path": "packs/witcher-spells.db",
       "type": "Item",
-      "system": "TheWitcherTRPG"
+      "system": "TheWitcherItaNewSystem"
     },
     {
       "name": "witcher-rituals",
       "label": "Manuale Base - Rituali",
       "path": "packs/witcher-rituals.db",
       "type": "Item",
-      "system": "TheWitcherTRPG"
+      "system": "TheWitcherItaNewSystem"
     },
     {
       "name": "witcher-components",
       "label": "Manuale Base - Componenti Artigianali",
       "path": "packs/witcher-components.db",
       "type": "Item",
-      "system": "TheWitcherTRPG"
+      "system": "TheWitcherItaNewSystem"
     },
     {
       "name": "witcher-schematics",
       "label": "Manuale Base - Schemi Artigianali",
       "path": "packs/witcher-schematics.db",
       "type": "Item",
-      "system": "TheWitcherTRPG"
+      "system": "TheWitcherItaNewSystem"
     },
     {
       "name": "witcher-alchemy",
       "label": "Manuale Base - Alchimia",
       "path": "packs/witcher-alchemy.db",
       "type": "Item",
-      "system": "TheWitcherTRPG"
+      "system": "TheWitcherItaNewSystem"
     },
     {
       "name": "witcher-special",
       "label": "Manuale Base - Oggetti Speciali",
       "path": "packs/witcher-special.db",
       "type": "Item",
-      "system": "TheWitcherTRPG"
+      "system": "TheWitcherItaNewSystem"
     },
     {
       "name": "witcher-monsters",
       "label": "Manuale Base - Bestiario",
       "path": "packs/witcher-monsters.db",
       "type": "Actor",
-      "system": "TheWitcherTRPG"
+      "system": "TheWitcherItaNewSystem"
     },
     {
       "name": "witcher-spells-chaos",
       "label": "Tomo del Caos - Incantesimi",
       "path": "packs/witcher-spells-chaos.db",
       "type": "Item",
-      "system": "TheWitcherTRPG"
+      "system": "TheWitcherItaNewSystem"
     },
     {
       "name": "witcher-special-chaos",
       "label": "Tomo del Caos - Oggetti Speciali",
       "path": "packs/witcher-special-chaos.db",
       "type": "Item",
-      "system": "TheWitcherTRPG"
+      "system": "TheWitcherItaNewSystem"
     },
     {
       "name": "witcher-rituals-chaos",
       "label": "Tomo del Caos - Rituali",
       "path": "packs/witcher-rituals-chaos.db",
       "type": "Item",
-      "system": "TheWitcherTRPG"
+      "system": "TheWitcherItaNewSystem"
     },
     {
       "name": "witcher-monsters-chaos",
       "label": "Tomo del Caos - Bestiario",
       "path": "packs/witcher-monsters-chaos.db",
       "type": "Actor",
-      "system": "TheWitcherTRPG"
+      "system": "TheWitcherItaNewSystem"
     },
     {
       "name": "witcher-skills",
       "label": "Abilità Witcher",
       "path": "packs/witcher-skills.db",
       "type": "Item",
-      "system": "TheWitcherTRPG"
+      "system": "TheWitcherItaNewSystem"
     }
   ],
   "languages": [
