@@ -1,0 +1,53 @@
+﻿=== RAZZE nel DB ===
+  Elfi | _id: raceelf00000001
+  Nani | _id: racedwarf0000001
+  Umani | _id: racehuman0000001
+  Witcher | _id: racewitcher00001
+
+=== PROFESSIONI nel DB ===
+  Armigero | _id: profmanatarms01
+  Artigiano | _id: profcraftsman001
+  Bardo | _id: profbard00000001
+  Criminale | _id: profcriminal0001
+  Druido | _id: profdruid00000001
+  Mago | _id: profmage00000001
+  Medico | _id: profdoctor0000001
+  Mercante | _id: profmerchant00001
+  Prete | _id: profpriest00000001
+  Witcher | _id: profwitcher000001
+
+=== FILE SORGENTE RAZZE ===
+  elfi.json -> name=Elfi | _id=raceelf00000001
+  nani.json -> name=Nani | _id=racedwarf0000001
+  umani.json -> name=Umani | _id=racehuman0000001
+  witcher_race.json -> name=Witcher | _id=racewitcher00001
+
+=== FILE SORGENTE PROFESSIONI ===
+  armigero.json -> name=Armigero | _id=profmanatarms01
+  artigiano.json -> name=Artigiano | _id=profcraftsman001
+  bardo.json -> name=Bardo | _id=profbard00000001
+  criminale.json -> name=Criminale | _id=profcriminal0001
+  druido.json -> name=Druido | _id=profdruid00000001
+  mago.json -> name=Mago | _id=profmage00000001
+  medico.json -> name=Medico | _id=profdoctor0000001
+  mercante.json -> name=Mercante | _id=profmerchant00001
+  prete.json -> name=Prete | _id=profpriest00000001
+  witcher_profession.json -> name=Witcher | _id=profwitcher000001
+
+=== LISTA TUTTE LE PACKS DIR ===
+  FILE: witcher-alchemy.db
+  FILE: witcher-armor.db
+  FILE: witcher-components.db
+  FILE: witcher-equipment.db
+  FILE: witcher-monsters-chaos.db
+  FILE: witcher-monsters.db
+  FILE: witcher-professions.db
+  FILE: witcher-races.db
+  FILE: witcher-rituals-chaos.db
+  FILE: witcher-rituals.db
+  FILE: witcher-schematics.db
+  FILE: witcher-special-chaos.db
+  FILE: witcher-special.db
+  FILE: witcher-spells-chaos.db
+  FILE: witcher-spells.db
+  FILE: witcher-weapons.db
