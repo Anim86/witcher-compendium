@@ -2,6 +2,7 @@
   "id": "witcher-compendium",
   "title": "Witcher RPG Compendium (Premium IT)",
   "description": "Compendio premium per The Witcher TRPG (v14). Include Razze e Professioni con descrizioni complete e coerenti con lo schema di sistema.",
+  "version": "1.2.7",
   "authors": [
     {
       "name": "Zolt"
@@ -158,8 +159,7 @@
       "path": "languages/it.json"
     }
   ],
-  "version": "1.2.7",
   "url": "https://github.com/Anim86/witcher-compendium",
   "manifest": "https://raw.githubusercontent.com/Anim86/witcher-compendium/main/witcher-compendium/module.json",
-  "download": "https://github.com/Anim86/witcher-compendium/releases/download/v14.0.4/module.zip"
+  "download": "https://github.com/Anim86/witcher-compendium/archive/refs/heads/main.zip"
 }
