@@ -3,8 +3,8 @@
     "title": "The Witcher TRPG (Italian Edition)",
     "description": "The Witcher TRPG System",
     "compatibility": {
-        "minimum": "11",
-        "verified": "12"
+        "minimum": "14",
+        "verified": "14.359"
     },
     "version": "v14.0.0",
     "authors": [
@@ -46,37 +46,37 @@
         {
             "name": "Combat",
             "label": "Combat",
-            "path": "packs/combat.db",
+            "path": "packs/combat",
             "type": "RollTable"
         },
         {
             "name": "Character-gen",
             "label": "Character Generator",
-            "path": "packs/character-generator.db",
+            "path": "packs/character-generator",
             "type": "RollTable"
         },
         {
             "name": "Character-gen_Sub-tables",
             "label": "Character Generator Sub-tables",
-            "path": "packs/character-generator-sub-tables.db",
+            "path": "packs/character-generator-sub-tables",
             "type": "RollTable"
         },
         {
             "name": "Witcher_Lifepath_and_BG_Sub-tables",
             "label": "Witcher Lifepath and BG Sub-tables",
-            "path": "packs/witcher-lifepath.db",
+            "path": "packs/witcher-lifepath",
             "type": "RollTable"
         },
         {
             "name": "Life_Event_Sub-tables",
             "label": "Life Event Sub-tables",
-            "path": "packs/lifepath.db",
+            "path": "packs/lifepath",
             "type": "RollTable"
         },
         {
             "name": "Style_and_Values_Sub-tables",
             "label": "Style and Values Sub-tables",
-            "path": "packs/style.db",
+            "path": "packs/style",
             "type": "RollTable"
         }
     ],
