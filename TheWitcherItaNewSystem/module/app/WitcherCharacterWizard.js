@@ -143,13 +143,33 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 }
             }
 
+            let filteredProfessions = this.professions;
+            if (this.characterData.race) {
+                const raceName = (this.characterData.race.name || "").toLowerCase();
+                filteredProfessions = this.professions.filter(p => {
+                    const pName = (p.name || "").toLowerCase();
+                    
+                    // Filter Mago/Prete/Sacerdote
+                    if (pName.includes("mago") || pName.includes("prete") || pName.includes("sacerdote")) {
+                        return raceName.includes("umani") || raceName.includes("elfi") || raceName.includes("umano") || raceName.includes("elfo");
+                    }
+                    
+                    // Filter Witcher
+                    if (pName.includes("witcher")) {
+                        return raceName.includes("witcher");
+                    }
+                    
+                    return true;
+                });
+            }
+
             return {
                 step: this.step,
                 maxSteps: this.maxSteps,
                 steps: this._getStepList(),
                 character: this.characterData,
                 races: this.races,
-                professions: this.professions,
+                professions: filteredProfessions,
                 stats: stats,
                 homelands: Object.entries(CONFIG.WITCHER.homelands || {}).map(([v, l]) => ({ value: v, label: l })),
                 socialStandings: Object.entries(CONFIG.WITCHER.socialStanding || {}).map(([v, l]) => ({ value: v, label: l })),
@@ -384,26 +404,30 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         console.log("TheWitcherItaNewSystem | Wizard | Creating Actor:", actorData);
         const actor = await Actor.create(actorData);
         
-        // 5. Add Embedded Items (Race, Profession, Gear)
-        const itemsToCreate = [];
+        // 5. Add Embedded Items (Order matters for validation hooks)
+        // We create Race first, then Profession, then Gear
         if (this.characterData.race) {
             const r = foundry.utils.deepClone(this.characterData.race);
-            delete r._id; delete r.id; itemsToCreate.push(r);
+            delete r._id; delete r.id; 
+            await actor.createEmbeddedDocuments("Item", [r]);
+            console.log("TheWitcherItaNewSystem | Wizard | Race created");
         }
+
         if (this.characterData.profession) {
             const p = foundry.utils.deepClone(this.characterData.profession);
-            delete p._id; delete p.id; itemsToCreate.push(p);
+            delete p._id; delete p.id; 
+            await actor.createEmbeddedDocuments("Item", [p]);
+            console.log("TheWitcherItaNewSystem | Wizard | Profession created");
         }
+
         if (this.characterData.gear.length > 0) {
-            itemsToCreate.push(...this.characterData.gear.map(g => {
+            const gearToCreate = this.characterData.gear.map(g => {
                 const item = foundry.utils.deepClone(g);
                 delete item._id; delete item.id;
                 return item;
-            }));
-        }
-
-        if (itemsToCreate.length > 0) {
-            await actor.createEmbeddedDocuments("Item", itemsToCreate);
+            });
+            await actor.createEmbeddedDocuments("Item", gearToCreate);
+            console.log("TheWitcherItaNewSystem | Wizard | Gear created");
         }
 
         ui.notifications.info(`${name} creato con successo!`);
