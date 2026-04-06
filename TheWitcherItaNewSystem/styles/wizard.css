@@ -9,8 +9,8 @@
 }
 
 .witcher-wizard .window-content {
-    background: url('../assets/images/parchment_bg.png') repeat !important;
-    background-color: var(--wizard-bg-light) !important;
+    background: url('../assets/images/wizard_bg_mago.png') center/cover no-repeat !important;
+    background-color: #000 !important;
     color: var(--wizard-text-dark);
     font-family: 'Outfit', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 0;
@@ -77,22 +77,20 @@
 }
 
 /* Content Area (High Specificity Fix for V14) */
-form.witcher-wizard div[data-part="content"] {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    min-height: 0;
-    overflow: hidden;
-}
-
 form.witcher-wizard .wizard-content {
-    padding: 20px;
+    padding: 25px;
     flex: 1;
     overflow-y: auto !important;
     overflow-x: hidden;
     min-height: 0;
     scrollbar-width: thin;
-    scrollbar-color: var(--wizard-border) transparent;
+    scrollbar-color: var(--wizard-accent) transparent;
+    background: rgba(255, 255, 255, 0.85); /* Frost effect */
+    backdrop-filter: blur(8px);
+    margin: 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
 }
 
 .witcher-wizard h2 {

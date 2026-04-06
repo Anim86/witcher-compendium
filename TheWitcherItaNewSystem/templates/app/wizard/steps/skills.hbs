@@ -41,15 +41,26 @@
             </div>
 
             <div class="tab" data-group="skill-tabs" data-tab="pickup-skills">
-                <div class="skills-search">
-                    <input type="text" id="skill-filter" placeholder="{{localize "WITCHER.Wizard.Skills.Filter"}}">
+                <div class="skills-picker">
+                    <div class="controls-row">
+                        <select name="new-pickup-skill">
+                            <option value="">-- {{localize "WITCHER.Wizard.Skills.Add"}} --</option>
+                            {{#each availablePickupSkills}}
+                            <option value="{{key}}">{{label}} {{#if (eq cost 2)}}(x2){{/if}}</option>
+                            {{/each}}
+                        </select>
+                        <button type="button" data-action="addPickupSkill" class="btn-add">
+                            <i class="fa-solid fa-plus"></i> {{localize "WITCHER.Wizard.Skills.AddButton"}}
+                        </button>
+                    </div>
                 </div>
+
                 <div class="skills-grid pickup-grid">
                     {{#each pickupSkills}}
-                    <div class="skill-row {{#if isProfession}}disabled{{/if}}" data-skill="{{key}}">
-                        <label>{{localize label}} {{#if (eq cost 2)}}(2){{/if}}</label>
+                    <div class="skill-row" data-skill="{{key}}">
+                        <label>{{label}} {{#if (eq cost 2)}}<span class="cost-tag">x2</span>{{/if}}</label>
                         <div class="skill-controls">
-                            <button type="button" data-action="adjustSkill" data-skill="{{key}}" data-type="pickup" data-delta="-1" {{#if isProfession}}disabled{{/if}}>
+                            <button type="button" data-action="adjustSkill" data-skill="{{key}}" data-delta="-1">
                                 <i class="fa-solid fa-minus"></i>
                             </button>
                             <input type="number" 
@@ -58,9 +69,8 @@
                                    name="skills.{{key}}" 
                                    value="{{value}}" 
                                    min="0" 
-                                   max="10" 
-                                   {{#if isProfession}}disabled{{/if}}>
-                            <button type="button" data-action="adjustSkill" data-skill="{{key}}" data-type="pickup" data-delta="1" {{#if isProfession}}disabled{{/if}}>
+                                   max="10">
+                            <button type="button" data-action="adjustSkill" data-skill="{{key}}" data-delta="1">
                                 <i class="fa-solid fa-plus"></i>
                             </button>
                         </div>

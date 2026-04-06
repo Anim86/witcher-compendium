@@ -93,10 +93,7 @@
           "Title": "Professione",
           "Description": "Scegli come ti guadagni da vivere e il tuo addestramento."
         },
-        "Stats": {
-          "Title": "Statistiche",
-          "Description": "Distribuisci i tuoi punti (max 10 per ogni statistica)."
-        },
+        "StatsStep": "Statistiche",
         "Skills": {
           "Title": "Abilità",
           "Description": "Assegna i punti alle tue abilità professionali e personali."
@@ -110,11 +107,12 @@
           "Description": "Dai un nome al tuo eroe e completa la creazione."
         }
       },
-      "StatsPrefix": "Punti Rimanenti",
-      "DerivedPreview": "Anteprima Statistiche Derivate",
       "Stats": {
+        "Title": "Statistiche",
+        "Description": "Distribuisci i tuoi punti (max 10 per ogni statistica).",
         "Summary": "Riepilogo Statistiche",
-        "PointsRemaining": "Punti Rimanenti"
+        "PointsRemaining": "Punti Rimanenti",
+        "DerivedPreview": "Anteprima Statistiche Derivate"
       },
       "Summary": {
         "Details": "Dettagli Personaggio"
@@ -127,6 +125,8 @@
       "Skills": {
         "Profession": "Abilità Professionali",
         "Pickup": "Abilità Opzionali",
+        "Add": "Scegli abilità",
+        "AddButton": "Aggiungi",
         "Filter": "Cerca abilità...",
         "Summary": "Abilità Selezionate"
       },

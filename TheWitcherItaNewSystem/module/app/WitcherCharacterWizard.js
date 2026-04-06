@@ -28,6 +28,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 int: 3, ref: 3, dex: 3, body: 3, spd: 3, emp: 3, cra: 3, will: 3, luck: 3
             },
             skills: {},
+            selectedPickupSkills: ["awareness", "education", "dodge", "athletics", "stealth", "humanPerception", "persuasion"], // Standard starter set
             gear: [],
             money: 0
         };
@@ -67,6 +68,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         toggleGear: function(event, target) { this._toggleGear(event, target); },
         selectAvatar: function(event, target) { this._selectAvatar(event, target); },
         goToStep: function(event, target) { this._goToStep(event, target); },
+        addPickupSkill: function(event, target) { this._addPickupSkill(event, target); },
         finish: function(event, target) { this._finish(event, target); }
     };
 
@@ -177,6 +179,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 derived: this._calculateDerivedStats(),
                 professionSkills: this._getProfessionSkills(),
                 pickupSkills: this._getPickupSkills(),
+                availablePickupSkills: this._getAvailablePickupSkills(),
                 professionPointsRemaining: this._calculateSkillPoints("profession"),
                 pickupPointsRemaining: this._calculateSkillPoints("pickup"),
                 isFirstStep: this.step === 1,
@@ -222,9 +225,24 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
 
     _getPickupSkills() {
         const profKeys = this.characterData.profession?.system?.skills ? Object.keys(this.characterData.profession.system.skills) : [];
-        return Object.entries(CONFIG.WITCHER.skillMap).filter(([k]) => !profKeys.includes(k)).map(([k, c]) => {
-            return { key: k, label: c.label || k, value: this.characterData.skills[k] || 0, cost: c.cost || 1, isProfession: false };
-        });
+        return Object.entries(CONFIG.WITCHER.skillMap)
+            .filter(([k]) => !profKeys.includes(k) && this.characterData.selectedPickupSkills.includes(k))
+            .map(([k, c]) => {
+                const labelKey = c.label.replace('WITCHER.skills.', '').replace('.label', '');
+                const label = game.i18n.localize(`WITCHER.Wizard.skills.${labelKey}.label`) || game.i18n.localize(c.label);
+                return { key: k, label: label, value: this.characterData.skills[k] || 0, cost: c.cost || 1, isProfession: false };
+            });
+    }
+
+    _getAvailablePickupSkills() {
+        const profKeys = this.characterData.profession?.system?.skills ? Object.keys(this.characterData.profession.system.skills) : [];
+        return Object.entries(CONFIG.WITCHER.skillMap)
+            .filter(([k]) => !profKeys.includes(k) && !this.characterData.selectedPickupSkills.includes(k))
+            .map(([k, c]) => {
+                const labelKey = c.label.replace('WITCHER.skills.', '').replace('.label', '');
+                const label = game.i18n.localize(`WITCHER.Wizard.skills.${labelKey}.label`) || game.i18n.localize(c.label);
+                return { key: k, label: label, cost: c.cost || 1 };
+            }).sort((a,b) => a.label.localeCompare(b.label));
     }
 
     _calculateSkillPoints(type) {
@@ -284,8 +302,21 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         const prof = this.professions.find(p => p.id === id);
         if (prof) {
             this.characterData.profession = prof;
-            this.characterData.skills = {};
-            if (prof.system?.skills) Object.keys(prof.system.skills).forEach(s => this.characterData.skills[s] = 1);
+            // Preset profession skills to 1
+            if (prof.system?.skills) {
+                Object.keys(prof.system.skills).forEach(s => {
+                    this.characterData.skills[s] = 1;
+                });
+            }
+            this.render(true);
+        }
+    }
+
+    async _addPickupSkill(event, target) {
+        const skillKey = this.element.querySelector("select[name='new-pickup-skill']")?.value;
+        if (skillKey && !this.characterData.selectedPickupSkills.includes(skillKey)) {
+            this.characterData.selectedPickupSkills.push(skillKey);
+            this.characterData.skills[skillKey] = 0;
             this.render(true);
         }
     }
@@ -305,14 +336,38 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         const delta = parseInt(target.dataset.delta || 0);
         let val = (this.characterData.skills[skill] || 0) + delta;
         if (event.type === "change") val = parseInt(target.value);
-        this.characterData.skills[skill] = Math.max(0, Math.min(10, val));
+        val = Math.max(0, Math.min(10, val));
+        
+        // Validation: Verify if we have points
+        const config = CONFIG.WITCHER.skillMap[skill];
+        const isProg = this.characterData.profession?.system?.skills?.[skill] !== undefined;
+        const type = isProg ? "profession" : "pickup";
+        
+        const oldVal = this.characterData.skills[skill] || 0;
+        this.characterData.skills[skill] = val;
+        
+        const remaining = this._calculateSkillPoints(type);
+        if (remaining < 0) {
+            this.characterData.skills[skill] = oldVal;
+            ui.notifications.warn("Non hai abbastanza punti per aumentare questa abilità.");
+        }
+        
         this.render(true);
     }
 
     _calculateDerivedStats() {
         const s = this.characterData.stats;
         const res = Math.max(10, Math.floor(((Number(s.body)||0) + (Number(s.will)||0)) / 2) * 5);
-        return { hp: res, sta: res, rec: Math.floor(res / 5), run: (Number(s.spd)||0) * 3, leap: Math.floor((Number(s.spd)||0) * 3 / 5), enc: (Number(s.body)||0) * 10 };
+        const stun = Math.floor(((Number(s.body)||0) + (Number(s.will)||0)) / 2);
+        return { 
+            hp: res, 
+            sta: res, 
+            rec: Math.floor(res / 5), 
+            stun: stun,
+            run: (Number(s.spd)||0) * 3, 
+            leap: Math.floor((Number(s.spd)||0) * 3 / 5), 
+            enc: (Number(s.body)||0) * 10 
+        };
     }
 
     async _rollBackground() {
