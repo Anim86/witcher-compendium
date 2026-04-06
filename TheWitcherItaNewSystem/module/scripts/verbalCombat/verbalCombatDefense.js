@@ -20,7 +20,7 @@ async function executeDefense(actor, messageId, totalAttack) {
     if (!actor) return;
 
     const dialogTemplate = await foundry.applications.handlebars.renderTemplate(
-        'systems/TheWitcherTRPG/templates/dialog/verbal-combat-defense.hbs',
+        'systems/TheWitcherItaNewSystem/templates/dialog/verbal-combat-defense.hbs',
         {
             defenses: CONFIG.WITCHER.verbalCombat.Defenses
         }
@@ -42,7 +42,7 @@ async function executeDefense(actor, messageId, totalAttack) {
 }
 
 async function executeDefenseCallback(actor, totalAttack, html) {
-    let displayRollDetails = game.settings.get('TheWitcherTRPG', 'displayRollsDetails');
+    let displayRollDetails = game.settings.get('TheWitcherItaNewSystem', 'displayRollsDetails');
 
     let checkedBox = document.querySelector('input[name="verbalCombat"]:checked');
     if (!checkedBox) return;

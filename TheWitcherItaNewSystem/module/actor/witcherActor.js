@@ -294,12 +294,12 @@ export default class WitcherActor extends Actor {
         let skillLabel = game.i18n.localize(skillMapEntry.rollLabel ?? skillMapEntry.label);
         let skillValue = this.system.skills[attribute.name][skillName].value;
 
-        let displayRollDetails = game.settings.get('TheWitcherTRPG', 'displayRollsDetails');
+        let displayRollDetails = game.settings.get('TheWitcherItaNewSystem', 'displayRollsDetails');
 
         let messageData = new ChatMessageData(this, `${attributeLabel}: ${skillLabel} Check`);
 
         let rollFormula = '1d10 +';
-        if (game.settings.get('TheWitcherTRPG', 'woundsAffectSkillBase')) {
+        if (game.settings.get('TheWitcherItaNewSystem', 'woundsAffectSkillBase')) {
             rollFormula += '(';
         }
         if (!this.system.dontAddAttr) {
@@ -349,7 +349,7 @@ export default class WitcherActor extends Actor {
     }
 
     addSocialStanding(attribute, skillName) {
-        let displayRollDetails = game.settings.get('TheWitcherTRPG', 'displayRollsDetails');
+        let displayRollDetails = game.settings.get('TheWitcherItaNewSystem', 'displayRollsDetails');
 
         const tolerated = ['tolerated', 'toleratedFeared'];
         const feared = ['feared', 'toleratedFeared', 'hatedFeared'];
@@ -407,7 +407,7 @@ export default class WitcherActor extends Actor {
         let skillLabel = customSkill.name;
         let skillValue = customSkill.system.value;
 
-        let displayRollDetails = game.settings.get('TheWitcherTRPG', 'displayRollsDetails');
+        let displayRollDetails = game.settings.get('TheWitcherItaNewSystem', 'displayRollsDetails');
 
         let messageData = new ChatMessageData(this, `${attributeLabel}: ${skillLabel} Check`);
 

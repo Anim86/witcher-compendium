@@ -72,7 +72,7 @@ export let temporaryEffectMixin = {
         });
         weapon.createEmbeddedDocuments('ActiveEffect', temps);
 
-        const messageTemplate = 'systems/TheWitcherTRPG/templates/chat/item/appliedTemporaryItemImprovements.hbs';
+        const messageTemplate = 'systems/TheWitcherItaNewSystem/templates/chat/item/appliedTemporaryItemImprovements.hbs';
 
         const content = await foundry.applications.handlebars.renderTemplate(messageTemplate, {
             item: weapon,

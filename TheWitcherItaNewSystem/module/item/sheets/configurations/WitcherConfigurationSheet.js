@@ -26,18 +26,18 @@ export default class WitcherConfigurationSheet extends HandlebarsApplicationMixi
 
     static PARTS = {
         header: {
-            template: `systems/TheWitcherTRPG/templates/sheets/item/configuration/tabs/header.hbs`
+            template: `systems/TheWitcherItaNewSystem/templates/sheets/item/configuration/tabs/header.hbs`
         },
         tabs: {
             // Foundry-provided generic template
             template: 'templates/generic/tab-navigation.hbs'
         },
         general: {
-            template: 'systems/TheWitcherTRPG/templates/sheets/item/configuration/tabs/general.hbs',
+            template: 'systems/TheWitcherItaNewSystem/templates/sheets/item/configuration/tabs/general.hbs',
             scrollable: ['']
         },
         activeEffects: {
-            template: 'systems/TheWitcherTRPG/templates/sheets/item/configuration/tabs/activeEffectConfiguration.hbs',
+            template: 'systems/TheWitcherItaNewSystem/templates/sheets/item/configuration/tabs/activeEffectConfiguration.hbs',
             scrollable: ['']
         }
     };

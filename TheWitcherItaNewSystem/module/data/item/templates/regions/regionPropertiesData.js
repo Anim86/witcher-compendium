@@ -56,7 +56,7 @@ export default class RegionProperties extends foundry.abstract.DataModel {
                     shapes: [shape],
                     behaviors: behaviors,
                     flags: {
-                        TheWitcherTRPG: {
+                        TheWitcherItaNewSystem: {
                             roll: roll,
                             item: item,
                             itemUuid: item.uuid,

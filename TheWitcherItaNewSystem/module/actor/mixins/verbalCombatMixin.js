@@ -4,9 +4,9 @@ import { extendedRoll } from '../../scripts/rolls/extendedRoll.js';
 
 export let verbalCombatMixin = {
     async verbalCombat() {
-        let displayRollDetails = game.settings.get('TheWitcherTRPG', 'displayRollsDetails');
+        let displayRollDetails = game.settings.get('TheWitcherItaNewSystem', 'displayRollsDetails');
         const dialogTemplate = await foundry.applications.handlebars.renderTemplate(
-            'systems/TheWitcherTRPG/templates/dialog/verbal-combat.hbs',
+            'systems/TheWitcherItaNewSystem/templates/dialog/verbal-combat.hbs',
             {
                 verbalCombat: CONFIG.WITCHER.verbalCombat
             }
@@ -47,7 +47,7 @@ export let verbalCombatMixin = {
                         let rollFormula = `1d10`;
 
                         if (verbalCombat.skill) {
-                            rollFormula += game.settings.get('TheWitcherTRPG', 'woundsAffectSkillBase') ? ' +(' : ' +';
+                            rollFormula += game.settings.get('TheWitcherItaNewSystem', 'woundsAffectSkillBase') ? ' +(' : ' +';
                             rollFormula += !displayRollDetails
                                 ? `${vcStat} +${vcSkill}`
                                 : `${vcStat}[${game.i18n.localize(vcStatName)}] +${vcSkill}[${game.i18n.localize(vcSkillName)}]`;

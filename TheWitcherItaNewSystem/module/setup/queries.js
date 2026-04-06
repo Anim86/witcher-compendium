@@ -1,4 +1,4 @@
-const system = 'TheWitcherTRPG';
+const system = 'TheWitcherItaNewSystem';
 
 async function addTemporaryHpToActor(queryData, { timeout }) {
     let actor = fromUuidSync(queryData.actorUuid);

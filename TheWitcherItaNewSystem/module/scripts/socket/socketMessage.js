@@ -17,5 +17,5 @@ export async function emitForGM(type, data) {
     if (!game.users.activeGM) return console.error('No active GM user! One GM must be active for this action to work.');
 
     const message = _createMessage(type, data);
-    await game.socket.emit('system.TheWitcherTRPG', message);
+    await game.socket.emit('system.TheWitcherItaNewSystem', message);
 }

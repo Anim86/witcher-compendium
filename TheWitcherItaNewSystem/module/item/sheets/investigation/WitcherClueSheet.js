@@ -16,7 +16,7 @@ export default class WitcherClueSheet extends foundry.appv1.sheets.ItemSheet {
     }
 
     get template() {
-        return `systems/TheWitcherTRPG/templates/sheets/investigation/clue-sheet.hbs`;
+        return `systems/TheWitcherItaNewSystem/templates/sheets/investigation/clue-sheet.hbs`;
     }
 
     /** @override */

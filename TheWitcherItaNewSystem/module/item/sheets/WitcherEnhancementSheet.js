@@ -3,7 +3,7 @@ import WitcherItemSheet from './WitcherItemSheet.js';
 export default class WitcherEnhancementSheet extends WitcherItemSheet {
     static PARTS = {
         main: {
-            template: `systems/TheWitcherTRPG/templates/sheets/item/enhancement-sheet.hbs`,
+            template: `systems/TheWitcherItaNewSystem/templates/sheets/item/enhancement-sheet.hbs`,
             scrollable: ['']
         }
     };

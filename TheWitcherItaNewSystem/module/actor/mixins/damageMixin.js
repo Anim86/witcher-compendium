@@ -75,7 +75,7 @@ export let damageMixin = {
 
         let totalAppliedDamage = results.reduce((acc, result) => acc + Math.floor(result.totalDamage), 0);
 
-        const messageTemplate = 'systems/TheWitcherTRPG/templates/chat/damage/damageToAllLocations.hbs';
+        const messageTemplate = 'systems/TheWitcherItaNewSystem/templates/chat/damage/damageToAllLocations.hbs';
         const templateContext = {
             results,
             totalAppliedDamage
@@ -133,7 +133,7 @@ export let damageMixin = {
 
         let silverDamage = 0;
 
-        if (game.settings.get('TheWitcherTRPG', 'silverTrait')) {
+        if (game.settings.get('TheWitcherItaNewSystem', 'silverTrait')) {
             if (properties?.silverTrait) {
                 silverDamage = totalDamage;
                 totalDamage = 0;
@@ -197,7 +197,7 @@ export let damageMixin = {
 
         //Enemy is not suspectible to silver
         if (
-            game.settings.get('TheWitcherTRPG', 'silverTrait') &&
+            game.settings.get('TheWitcherItaNewSystem', 'silverTrait') &&
             !enemyData?.resistNonSilver &&
             properties.silverTrait
         ) {
@@ -250,7 +250,7 @@ export let damageMixin = {
     },
 
     async createDamageResultMessage(damageResult) {
-        const messageTemplate = 'systems/TheWitcherTRPG/templates/chat/damage/damageToLocation.hbs';
+        const messageTemplate = 'systems/TheWitcherItaNewSystem/templates/chat/damage/damageToLocation.hbs';
 
         const content = await foundry.applications.handlebars.renderTemplate(messageTemplate, damageResult);
         const chatData = {

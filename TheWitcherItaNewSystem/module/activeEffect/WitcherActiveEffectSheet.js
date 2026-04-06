@@ -18,10 +18,10 @@ export class WitcherActiveEffectConfig extends foundry.applications.sheets.Activ
     static PARTS = {
         header: { template: 'templates/sheets/active-effect/header.hbs' },
         tabs: { template: 'templates/generic/tab-navigation.hbs' },
-        details: { template: 'systems/TheWitcherTRPG/templates/sheets/activeEffect/details.hbs', scrollable: [''] },
+        details: { template: 'systems/TheWitcherItaNewSystem/templates/sheets/activeEffect/details.hbs', scrollable: [''] },
         duration: { template: 'templates/sheets/active-effect/duration.hbs' },
         changes: {
-            template: 'systems/TheWitcherTRPG/templates/sheets/activeEffect/active-effect-changes.hbs',
+            template: 'systems/TheWitcherItaNewSystem/templates/sheets/activeEffect/active-effect-changes.hbs',
             scrollable: ['ol[data-changes]']
         }
     };
@@ -46,7 +46,7 @@ export class WitcherActiveEffectConfig extends foundry.applications.sheets.Activ
         }
 
         const dialogTemplate = await foundry.applications.handlebars.renderTemplate(
-            'systems/TheWitcherTRPG/templates/dialog/activeEffects/wizard.hbs',
+            'systems/TheWitcherItaNewSystem/templates/dialog/activeEffects/wizard.hbs',
             {
                 selects: selects
             }

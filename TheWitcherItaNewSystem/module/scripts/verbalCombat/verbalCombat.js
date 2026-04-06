@@ -36,8 +36,8 @@ export const chatMessageListeners = async (message, html) => {
 };
 
 function onDamage(message) {
-    let verbalCombat = message.getFlag('TheWitcherTRPG', 'verbalCombat');
-    let damage = message.getFlag('TheWitcherTRPG', 'damage');
+    let verbalCombat = message.getFlag('TheWitcherItaNewSystem', 'verbalCombat');
+    let damage = message.getFlag('TheWitcherItaNewSystem', 'damage');
     rollDamage(verbalCombat, damage);
 }
 
@@ -46,7 +46,7 @@ export async function rollDamage(verbalCombat, damage) {
     messageData.flavor = `<div class="verbalcombat-damage-message" <h1>${game.i18n.localize('WITCHER.table.Damage')}: ${game.i18n.localize(verbalCombat.name)} </h1>`;
 
     let message = await (await new Roll(damage.formula).evaluate()).toMessage(messageData);
-    message.setFlag('TheWitcherTRPG', 'damage', damage);
+    message.setFlag('TheWitcherItaNewSystem', 'damage', damage);
 }
 
 export async function applyVerbalCombatDamage(targetActor, totalDamage, messageId) {

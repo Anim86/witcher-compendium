@@ -6,7 +6,7 @@ export default class WitcherAlchemicalSheet extends WitcherItemSheet {
 
     static PARTS = {
         main: {
-            template: `systems/TheWitcherTRPG/templates/sheets/item/alchemical-sheet.hbs`,
+            template: `systems/TheWitcherItaNewSystem/templates/sheets/item/alchemical-sheet.hbs`,
             scrollable: ['']
         }
     };

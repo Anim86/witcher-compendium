@@ -32,10 +32,10 @@ export default class WitcherModifiersConfiguration extends HandlebarsApplication
 
     static PARTS = {
         stats: {
-            template: 'systems/TheWitcherTRPG/templates/sheets/actor/configuration/app/edit-stats.hbs'
+            template: 'systems/TheWitcherItaNewSystem/templates/sheets/actor/configuration/app/edit-stats.hbs'
         },
         skills: {
-            template: 'systems/TheWitcherTRPG/templates/sheets/actor/configuration/app/edit-skills.hbs'
+            template: 'systems/TheWitcherItaNewSystem/templates/sheets/actor/configuration/app/edit-skills.hbs'
         }
     };
 

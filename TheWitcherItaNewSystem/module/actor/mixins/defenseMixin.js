@@ -128,7 +128,7 @@ export let defenseMixin = {
         defenseItemId,
         skillOverride
     ) {
-        let displayRollDetails = game.settings.get('TheWitcherTRPG', 'displayRollsDetails');
+        let displayRollDetails = game.settings.get('TheWitcherItaNewSystem', 'displayRollsDetails');
 
         if (!this.handleExtraDefense(extraDefense)) {
             return;
@@ -142,7 +142,7 @@ export let defenseMixin = {
         let displayFormula = `1d10 + ${game.i18n.localize(skillMapEntry.attribute.labelShort)} + ${game.i18n.localize(skillMapEntry.label)}`;
 
         let rollFormula = '1d10+';
-        if (game.settings.get('TheWitcherTRPG', 'woundsAffectSkillBase')) {
+        if (game.settings.get('TheWitcherItaNewSystem', 'woundsAffectSkillBase')) {
             rollFormula += '(';
         }
         rollFormula += !displayRollDetails
@@ -188,7 +188,7 @@ export let defenseMixin = {
         }
 
         const chatMessage = await foundry.applications.handlebars.renderTemplate(
-            'systems/TheWitcherTRPG/templates/chat/combat/defense/defense.hbs',
+            'systems/TheWitcherItaNewSystem/templates/chat/combat/defense/defense.hbs',
             {
                 defenseName: skillOverride ? skillMapEntry.label : defenseAction.label,
                 displayFormula
@@ -214,7 +214,7 @@ export let defenseMixin = {
 
         const chatMessageCrit = crit
             ? await foundry.applications.handlebars.renderTemplate(
-                  'systems/TheWitcherTRPG/templates/chat/combat/defense/defenseCrit.hbs',
+                  'systems/TheWitcherItaNewSystem/templates/chat/combat/defense/defenseCrit.hbs',
                   {
                       crit: { severity: CONFIG.WITCHER.CritGravity[crit.severity] }
                   }
@@ -225,7 +225,7 @@ export let defenseMixin = {
         let stun = this.checkForStun(attackDamageObject);
         const chatMessageStun = stun
             ? await foundry.applications.handlebars.renderTemplate(
-                  'systems/TheWitcherTRPG/templates/chat/combat/defense/defenseStun.hbs',
+                  'systems/TheWitcherItaNewSystem/templates/chat/combat/defense/defenseStun.hbs',
                   {
                       stun
                   }

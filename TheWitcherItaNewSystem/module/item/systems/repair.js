@@ -212,7 +212,7 @@ class Repair {
         });
 
         return await foundry.applications.handlebars.renderTemplate(
-            'systems/TheWitcherTRPG/templates/dialog/repair-dialog.hbs',
+            'systems/TheWitcherItaNewSystem/templates/dialog/repair-dialog.hbs',
             templateData
         );
     }
@@ -262,7 +262,7 @@ class Repair {
 
         const skill = data.executor.system.skills.cra.crafting.value;
 
-        const displayRollDetails = game.settings.get('TheWitcherTRPG', 'displayRollsDetails');
+        const displayRollDetails = game.settings.get('TheWitcherItaNewSystem', 'displayRollsDetails');
 
         let rollFormula = displayRollDetails
             ? `1d10+${stat}[${statName}]+${skill}[${data.skillName}]`
@@ -298,7 +298,7 @@ class Repair {
 
     async renderChatTemplate(data, isRequest) {
         return await foundry.applications.handlebars.renderTemplate(
-            'systems/TheWitcherTRPG/templates/chat/item/repair.hbs',
+            'systems/TheWitcherItaNewSystem/templates/chat/item/repair.hbs',
             {
                 data: data,
                 isRequest: isRequest,

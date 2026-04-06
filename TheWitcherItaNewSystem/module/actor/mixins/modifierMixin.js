@@ -46,7 +46,7 @@ export let modifierMixin = {
     addAllModifiers(skillName) {
         let modifierFormula = '';
         modifierFormula += this.addSkillModifiers(skillName);
-        if (game.settings.get('TheWitcherTRPG', 'woundsAffectSkillBase')) {
+        if (game.settings.get('TheWitcherItaNewSystem', 'woundsAffectSkillBase')) {
             modifierFormula += ')';
         }
         modifierFormula += this.addWoundsModifier(skillName);
@@ -54,7 +54,7 @@ export let modifierMixin = {
     },
 
     addSkillModifiers(skillName) {
-        let displayRollDetails = game.settings.get('TheWitcherTRPG', 'displayRollsDetails');
+        let displayRollDetails = game.settings.get('TheWitcherItaNewSystem', 'displayRollsDetails');
         let skill = CONFIG.WITCHER.skillMap[skillName];
 
         let formula = '';
@@ -105,7 +105,7 @@ export let modifierMixin = {
     },
 
     addWoundsModifier(skillName) {
-        let displayRollDetails = game.settings.get('TheWitcherTRPG', 'displayRollsDetails');
+        let displayRollDetails = game.settings.get('TheWitcherItaNewSystem', 'displayRollsDetails');
         let wounds = this.system.critWounds;
 
         let formula = '';

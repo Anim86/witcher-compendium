@@ -7,7 +7,7 @@ export default class WitcherWeaponSheet extends WitcherItemSheet {
 
     static PARTS = {
         main: {
-            template: `systems/TheWitcherTRPG/templates/sheets/item/weapon-sheet.hbs`,
+            template: `systems/TheWitcherItaNewSystem/templates/sheets/item/weapon-sheet.hbs`,
             scrollable: ['']
         }
     };

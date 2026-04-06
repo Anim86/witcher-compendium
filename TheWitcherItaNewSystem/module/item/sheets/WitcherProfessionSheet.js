@@ -12,7 +12,7 @@ export default class WitcheProfessionSheet extends WitcherItemSheet {
 
     static PARTS = {
         main: {
-            template: `systems/TheWitcherTRPG/templates/sheets/item/profession-sheet.hbs`,
+            template: `systems/TheWitcherItaNewSystem/templates/sheets/item/profession-sheet.hbs`,
             scrollable: ['']
         }
     };

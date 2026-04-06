@@ -20,18 +20,18 @@ export default class RewardsSheet extends HandlebarsApplicationMixin(ActorSheetV
 
     static PARTS = {
         header: {
-            template: `systems/TheWitcherTRPG/templates/sheets/actor/rewards/header.hbs`
+            template: `systems/TheWitcherItaNewSystem/templates/sheets/actor/rewards/header.hbs`
         },
         tabs: {
             // Foundry-provided generic template
             template: 'templates/generic/tab-navigation.hbs'
         },
         ip: {
-            template: `systems/TheWitcherTRPG/templates/sheets/actor/rewards/ip.hbs`,
+            template: `systems/TheWitcherItaNewSystem/templates/sheets/actor/rewards/ip.hbs`,
             scrollable: ['']
         },
         currency: {
-            template: 'systems/TheWitcherTRPG/templates/sheets/actor/rewards/currency.hbs',
+            template: 'systems/TheWitcherItaNewSystem/templates/sheets/actor/rewards/currency.hbs',
             scrollable: ['']
         }
     };

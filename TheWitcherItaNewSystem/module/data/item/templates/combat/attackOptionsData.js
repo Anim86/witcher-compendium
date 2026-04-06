@@ -4,7 +4,7 @@ export default function attackOptions() {
     return {
         attackOptions: new fields.SetField(new fields.StringField({ required: true, blank: false }), {
             initial: source => {
-                console.log("TheWitcherTRPG | attackOptions initial | source:", source);
+                console.log("TheWitcherItaNewSystem | attackOptions initial | source:", source);
                 let options = [];
                 if (!source) return options;
 

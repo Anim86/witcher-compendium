@@ -1,5 +1,5 @@
 export default class ChatMessageData {
-    constructor(actor, flavor, type = 'base', system = {}, flags = { TheWitcherTRPG: {} }) {
+    constructor(actor, flavor, type = 'base', system = {}, flags = { TheWitcherItaNewSystem: {} }) {
         this.speaker = ChatMessage.getSpeaker({ actor: actor });
         this.flavor = flavor;
         this.type = type;

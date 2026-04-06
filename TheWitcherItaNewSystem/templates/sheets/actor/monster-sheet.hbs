@@ -137,29 +137,29 @@
             </div>
             <div class="img-view">
                 {{#if (eq system.category "Humanoid")}}
-                    <img src="systems/TheWitcherTRPG/assets/images/Monsters/Humanoids.png" class="cat-img" />
+                    <img src="systems/TheWitcherItaNewSystem/assets/images/Monsters/Humanoids.png" class="cat-img" />
                 {{else if (eq system.category "Necrophage")}}
-                    <img src="systems/TheWitcherTRPG/assets/images/Monsters/Necrophages.png" class="cat-img" />
+                    <img src="systems/TheWitcherItaNewSystem/assets/images/Monsters/Necrophages.png" class="cat-img" />
                 {{else if (eq system.category "Specter")}}
-                    <img src="systems/TheWitcherTRPG/assets/images/Monsters/Specters.png" class="cat-img" />
+                    <img src="systems/TheWitcherItaNewSystem/assets/images/Monsters/Specters.png" class="cat-img" />
                 {{else if (eq system.category "Beast")}}
-                    <img src="systems/TheWitcherTRPG/assets/images/Monsters/Beasts.png" class="cat-img" />
+                    <img src="systems/TheWitcherItaNewSystem/assets/images/Monsters/Beasts.png" class="cat-img" />
                 {{else if (eq system.category "CursedOne")}}
-                    <img src="systems/TheWitcherTRPG/assets/images/Monsters/CursedOnes.png" class="cat-img" />
+                    <img src="systems/TheWitcherItaNewSystem/assets/images/Monsters/CursedOnes.png" class="cat-img" />
                 {{else if (eq system.category "Hybrid")}}
-                    <img src="systems/TheWitcherTRPG/assets/images/Monsters/Hybrids.png" class="cat-img" />
+                    <img src="systems/TheWitcherItaNewSystem/assets/images/Monsters/Hybrids.png" class="cat-img" />
                 {{else if (eq system.category "Insectoid")}}
-                    <img src="systems/TheWitcherTRPG/assets/images/Monsters/Insectoids.png" class="cat-img" />
+                    <img src="systems/TheWitcherItaNewSystem/assets/images/Monsters/Insectoids.png" class="cat-img" />
                 {{else if (eq system.category "Elementa")}}
-                    <img src="systems/TheWitcherTRPG/assets/images/Monsters/Elementa.png" class="cat-img" />
+                    <img src="systems/TheWitcherItaNewSystem/assets/images/Monsters/Elementa.png" class="cat-img" />
                 {{else if (eq system.category "Relict")}}
-                    <img src="systems/TheWitcherTRPG/assets/images/Monsters/Relicts.png" class="cat-img" />
+                    <img src="systems/TheWitcherItaNewSystem/assets/images/Monsters/Relicts.png" class="cat-img" />
                 {{else if (eq system.category "Ogroid")}}
-                    <img src="systems/TheWitcherTRPG/assets/images/Monsters/Ogroids.png" class="cat-img" />
+                    <img src="systems/TheWitcherItaNewSystem/assets/images/Monsters/Ogroids.png" class="cat-img" />
                 {{else if (eq system.category "Draconid")}}
-                    <img src="systems/TheWitcherTRPG/assets/images/Monsters/Draconids.png" class="cat-img" />
+                    <img src="systems/TheWitcherItaNewSystem/assets/images/Monsters/Draconids.png" class="cat-img" />
                 {{else if (eq system.category "Vampire")}}
-                    <img src="systems/TheWitcherTRPG/assets/images/Monsters/Vampires.png" class="cat-img" />
+                    <img src="systems/TheWitcherItaNewSystem/assets/images/Monsters/Vampires.png" class="cat-img" />
                 {{/if}}
                 <table class="monster-info">
                     <tr>
@@ -204,35 +204,35 @@
                     <div class="monster-right-row">
                         <div class="right-element" title="{{localize 'WITCHER.Actor.Hp'}}">
                             {{#if system.deathStateApplied}}
-                                <img class="right-image" src="systems/TheWitcherTRPG/assets/images/health-dead.png" />
+                                <img class="right-image" src="systems/TheWitcherItaNewSystem/assets/images/health-dead.png" />
                             {{/if}}
                             {{#if system.woundTresholdApplied}}
                                 {{#unless system.deathStateApplied}}
                                     <img class="right-image"
-                                        src="systems/TheWitcherTRPG/assets/images/health-down.png" />
+                                        src="systems/TheWitcherItaNewSystem/assets/images/health-down.png" />
                                 {{/unless}}
                             {{else}}
                                 {{#unless system.deathStateApplied}}
-                                    <img class="right-image" src="systems/TheWitcherTRPG/assets/images/health.png" />
+                                    <img class="right-image" src="systems/TheWitcherItaNewSystem/assets/images/health.png" />
                                 {{/unless}}
                             {{/if}}
                             <input class="right-value hp-value" type="number" value="{{system.derivedStats.hp.value}}"
                                 max="99" placeholder="0" data-dtype="Number" disabled readonly />
                         </div>
                         <div class="right-element" title="{{localize 'WITCHER.Actor.Stamina'}}">
-                            <img class="right-image" src="systems/TheWitcherTRPG/assets/images/stamina.png" />
+                            <img class="right-image" src="systems/TheWitcherItaNewSystem/assets/images/stamina.png" />
                             <input class="right-value" type="number" value="{{system.derivedStats.sta.value}}" max="99"
                                 placeholder="0" data-dtype="Number" disabled readonly />
                         </div>
                         {{#if useVerbalCombat}}
                             <div class="right-element" title="{{localize 'WITCHER.Actor.DerStat.Resolve'}}">
-                                <img class="right-image" src="systems/TheWitcherTRPG/assets/images/resolve.png" />
+                                <img class="right-image" src="systems/TheWitcherItaNewSystem/assets/images/resolve.png" />
                                 <input class="right-value" type="number" value="{{system.derivedStats.resolve.value}}"
                                     max="99" placeholder="0" data-dtype="Number" disabled readonly />
                             </div>
                         {{/if}}
                         <div class="right-element" title="{{localize 'WITCHER.Actor.DerStat.Vigor'}}">
-                            <img class="right-image" src="systems/TheWitcherTRPG/assets/images/focus.png" />
+                            <img class="right-image" src="systems/TheWitcherItaNewSystem/assets/images/focus.png" />
                             <input class="right-value" type="number" value="{{system.derivedStats.vigor.value}}"
                                 max="99" placeholder="0" data-dtype="Number" disabled readonly />
                         </div>
@@ -303,24 +303,24 @@
             {{! Sheet Body }}
             <section class="sheet-body">
                 <div class="tab" data-group="primary" data-tab="skills">
-                    {{> "systems/TheWitcherTRPG/templates/partials/monster/monster-skill-tab.hbs"}}
+                    {{> "systems/TheWitcherItaNewSystem/templates/partials/monster/monster-skill-tab.hbs"}}
                 </div>
                 {{#if (eq system.category "Humanoid")}}
                     <div class="tab" data-group="primary" data-tab="profession">
-                        {{> "systems/TheWitcherTRPG/templates/partials/monster/monster-profession-skill-display.hbs"}}
+                        {{> "systems/TheWitcherItaNewSystem/templates/partials/monster/monster-profession-skill-display.hbs"}}
                     </div>
                 {{/if}}
                 <div class="tab" data-group="primary" data-tab="inventory">
-                    {{>"systems/TheWitcherTRPG/templates/partials/monster/monster-inventory-tab.hbs"}}
+                    {{>"systems/TheWitcherItaNewSystem/templates/partials/monster/monster-inventory-tab.hbs"}}
                 </div>
                 <div class="tab" data-group="primary" data-tab="details">
-                    {{>"systems/TheWitcherTRPG/templates/partials/monster/monster-details-tab.hbs"}}
+                    {{>"systems/TheWitcherItaNewSystem/templates/partials/monster/monster-details-tab.hbs"}}
                 </div>
                 <div class="tab" data-group="primary" data-tab="spells">
-                    {{> "systems/TheWitcherTRPG/templates/partials/monster/monster-spell-tab.hbs"}}
+                    {{> "systems/TheWitcherItaNewSystem/templates/partials/monster/monster-spell-tab.hbs"}}
                 </div>
                 <div class="sheet-body tab effects" data-group="primary" data-tab="effects">
-                    {{> systems/TheWitcherTRPG/templates/partials/effect-part.hbs}}
+                    {{> systems/TheWitcherItaNewSystem/templates/partials/effect-part.hbs}}
                 </div>
             </section>
         </div>

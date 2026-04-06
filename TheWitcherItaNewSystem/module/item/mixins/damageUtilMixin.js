@@ -75,12 +75,12 @@ export let damageUtilMixin = {
         }
 
         let message = await (await new Roll(damageFormula).evaluate()).toMessage(messageData);
-        message.setFlag('TheWitcherTRPG', 'damage', damage);
+        message.setFlag('TheWitcherItaNewSystem', 'damage', damage);
     },
 
     async createVariableDamageDialog(damageFormula) {
         const dialogTemplate = await foundry.applications.handlebars.renderTemplate(
-            'systems/TheWitcherTRPG/templates/dialog/combat/variableDamage.hbs',
+            'systems/TheWitcherItaNewSystem/templates/dialog/combat/variableDamage.hbs',
             {
                 currentDamage: damageFormula
             }

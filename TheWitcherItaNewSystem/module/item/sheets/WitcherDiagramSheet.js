@@ -3,7 +3,7 @@ import WitcherItemSheet from './WitcherItemSheet.js';
 export default class WitcherDiagramSheet extends WitcherItemSheet {
     static PARTS = {
         main: {
-            template: `systems/TheWitcherTRPG/templates/sheets/item/diagrams-sheet.hbs`,
+            template: `systems/TheWitcherItaNewSystem/templates/sheets/item/diagrams-sheet.hbs`,
             scrollable: ['']
         }
     };

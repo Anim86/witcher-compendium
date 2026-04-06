@@ -4,7 +4,7 @@ export default class WitcherSpellConfigurationSheet extends WitcherPropertiesCon
     static PARTS = {
         ...super.PARTS,
         general: {
-            template: 'systems/TheWitcherTRPG/templates/sheets/item/configuration/tabs/spellGeneral.hbs',
+            template: 'systems/TheWitcherItaNewSystem/templates/sheets/item/configuration/tabs/spellGeneral.hbs',
             scrollable: ['']
         }
     };

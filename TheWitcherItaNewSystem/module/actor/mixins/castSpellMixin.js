@@ -11,7 +11,7 @@ const DialogV2 = foundry.applications.api.DialogV2;
 
 export let castSpellMixin = {
     async castSpell(spellItem) {
-        let displayRollDetails = game.settings.get('TheWitcherTRPG', 'displayRollsDetails');
+        let displayRollDetails = game.settings.get('TheWitcherItaNewSystem', 'displayRollsDetails');
 
         let damage = spellItem.createBaseDamageObject();
 
@@ -20,7 +20,7 @@ export let castSpellMixin = {
         };
 
         let rollFormula = '1d10+';
-        if (game.settings.get('TheWitcherTRPG', 'woundsAffectSkillBase')) {
+        if (game.settings.get('TheWitcherItaNewSystem', 'woundsAffectSkillBase')) {
             rollFormula += '(';
         }
         rollFormula += !displayRollDetails
@@ -89,7 +89,7 @@ export let castSpellMixin = {
         };
 
         const dialogTemplate = await foundry.applications.handlebars.renderTemplate(
-            'systems/TheWitcherTRPG/templates/dialog/combat/spell-attack.hbs',
+            'systems/TheWitcherItaNewSystem/templates/dialog/combat/spell-attack.hbs',
             data
         );
 
@@ -244,7 +244,7 @@ export let castSpellMixin = {
         }
 
         const chatMessage = await foundry.applications.handlebars.renderTemplate(
-            'systems/TheWitcherTRPG/templates/chat/combat/spellItem.hbs',
+            'systems/TheWitcherItaNewSystem/templates/chat/combat/spellItem.hbs',
             {
                 spellItem,
                 templateInfo,

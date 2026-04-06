@@ -63,7 +63,7 @@ export async function applyActiveEffectToActor(actorUuid, activeEffects, duratio
 
 async function applyTemporaryItemImprovements(actor, activeEffects) {
     if (!actor.isOwner) {
-        getActorOwner(actor).query('TheWitcherTRPG.applyTemporaryItemImprovements', {
+        getActorOwner(actor).query('TheWitcherItaNewSystem.applyTemporaryItemImprovements', {
             actorUuid: actor.uuid,
             effects: activeEffects
         });

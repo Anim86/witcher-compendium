@@ -16,7 +16,7 @@ export default class WitcherContainerSheet extends WitcherItemSheet {
 
     static PARTS = {
         main: {
-            template: `systems/TheWitcherTRPG/templates/sheets/item/container-sheet.hbs`,
+            template: `systems/TheWitcherItaNewSystem/templates/sheets/item/container-sheet.hbs`,
             scrollable: ['']
         }
     };

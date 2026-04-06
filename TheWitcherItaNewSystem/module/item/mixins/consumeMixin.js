@@ -28,7 +28,7 @@ export let consumeMixin = {
     },
 
     async createConsumeMessage(messageInfos) {
-        const messageTemplate = 'systems/TheWitcherTRPG/templates/chat/item/consume.hbs';
+        const messageTemplate = 'systems/TheWitcherItaNewSystem/templates/chat/item/consume.hbs';
 
         let statusEffects = this.system.consumeProperties.effects.map(effect => {
             return {

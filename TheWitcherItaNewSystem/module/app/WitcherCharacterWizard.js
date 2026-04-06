@@ -71,9 +71,9 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
     };
 
     static PARTS = {
-        navigation: { template: "systems/TheWitcherTRPG/templates/app/wizard/navigation.hbs" },
-        content: { template: "systems/TheWitcherTRPG/templates/app/wizard/content.hbs" },
-        footer: { template: "systems/TheWitcherTRPG/templates/app/wizard/footer.hbs" }
+        navigation: { template: "systems/TheWitcherItaNewSystem/templates/app/wizard/navigation.hbs" },
+        content: { template: "systems/TheWitcherItaNewSystem/templates/app/wizard/content.hbs" },
+        footer: { template: "systems/TheWitcherItaNewSystem/templates/app/wizard/footer.hbs" }
     };
 
     /* -------------------------------------------- */
@@ -170,7 +170,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 summary: this._getSummaryContext()
             };
         } catch (error) {
-            console.error("TheWitcherTRPG | Wizard Error:", error);
+            console.error("TheWitcherItaNewSystem | Wizard Error:", error);
             return { error: true, message: error.message };
         }
     }
@@ -227,7 +227,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
 
     _getTemplateForStep(step) {
         const t = { 1:"race", 2:"background", 3:"profession", 4:"stats", 5:"skills", 6:"gear", 7:"finish" };
-        return `systems/TheWitcherTRPG/templates/app/wizard/steps/${t[step]}.hbs`;
+        return `systems/TheWitcherItaNewSystem/templates/app/wizard/steps/${t[step]}.hbs`;
     }
 
     _onRender(context, options) {
@@ -380,7 +380,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         }
 
         // 4. Create Actor
-        console.log("TheWitcherTRPG | Wizard | Creating Actor:", actorData);
+        console.log("TheWitcherItaNewSystem | Wizard | Creating Actor:", actorData);
         const actor = await Actor.create(actorData);
         
         // 5. Add Embedded Items (Race, Profession, Gear)

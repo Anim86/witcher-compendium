@@ -17,7 +17,7 @@ export default class WitcherSkillItemSheet extends HandlebarsApplicationMixin(It
 
     static PARTS = {
         main: {
-            template: `systems/TheWitcherTRPG/templates/sheets/item/skill-item-sheet.hbs`
+            template: `systems/TheWitcherItaNewSystem/templates/sheets/item/skill-item-sheet.hbs`
         }
     };
 

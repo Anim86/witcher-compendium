@@ -17,18 +17,18 @@ export default class WitcherMonsterConfigurationSheet extends HandlebarsApplicat
 
     static PARTS = {
         header: {
-            template: `systems/TheWitcherTRPG/templates/sheets/actor/configuration/monster/header.hbs`
+            template: `systems/TheWitcherItaNewSystem/templates/sheets/actor/configuration/monster/header.hbs`
         },
         tabs: {
             // Foundry-provided generic template
             template: 'templates/generic/tab-navigation.hbs'
         },
         general: {
-            template: `systems/TheWitcherTRPG/templates/sheets/actor/configuration/monster/general.hbs`,
+            template: `systems/TheWitcherItaNewSystem/templates/sheets/actor/configuration/monster/general.hbs`,
             scrollable: ['']
         },
         skills: {
-            template: 'systems/TheWitcherTRPG/templates/sheets/actor/configuration/partials/skillConfiguration.hbs',
+            template: 'systems/TheWitcherItaNewSystem/templates/sheets/actor/configuration/partials/skillConfiguration.hbs',
             scrollable: ['']
         }
     };

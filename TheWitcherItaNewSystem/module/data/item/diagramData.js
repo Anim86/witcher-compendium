@@ -69,7 +69,7 @@ export default class DiagramData extends CommonItemData {
     /** @inheritdoc */
     static migrateData(source) {
         if ('associatedItem' in source) {
-            source.associatedItemUuid = 'Compendium.TheWitcherTRPG.gear.Item.' + source.associatedItem._id;
+            source.associatedItemUuid = 'Compendium.TheWitcherItaNewSystem.gear.Item.' + source.associatedItem._id;
         }
 
         if (source.alchemyDC > 0) {

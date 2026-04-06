@@ -70,7 +70,7 @@ export default class Rewards {
         }
 
         const content = await foundry.applications.handlebars.renderTemplate(
-            'systems/TheWitcherTRPG/templates/chat/rewards.hbs',
+            'systems/TheWitcherItaNewSystem/templates/chat/rewards.hbs',
             {
                 actors: choosenActors,
                 label: label,
@@ -158,7 +158,7 @@ export default class Rewards {
         }
 
         const content = await foundry.applications.handlebars.renderTemplate(
-            'systems/TheWitcherTRPG/templates/chat/rewards.hbs',
+            'systems/TheWitcherItaNewSystem/templates/chat/rewards.hbs',
             {
                 actors: choosenActors,
                 label: label,

@@ -27,41 +27,41 @@ export default class WitcherCharacterSheet extends WitcherActorSheet {
 
     static PARTS = {
         sidebar: {
-            template: 'systems/TheWitcherTRPG/templates/partials/character/sidebar.hbs'
+            template: 'systems/TheWitcherItaNewSystem/templates/partials/character/sidebar.hbs'
         },
         header: {
-            template: 'systems/TheWitcherTRPG/templates/partials/character-header.hbs'
+            template: 'systems/TheWitcherItaNewSystem/templates/partials/character-header.hbs'
         },
         tabs: {
             // Foundry-provided generic template
             template: 'templates/generic/tab-navigation.hbs'
         },
         stats: {
-            template: 'systems/TheWitcherTRPG/templates/partials/character/tab-stats.hbs',
+            template: 'systems/TheWitcherItaNewSystem/templates/partials/character/tab-stats.hbs',
             scrollable: ['']
         },
         skills: {
-            template: 'systems/TheWitcherTRPG/templates/partials/character/tab-skills.hbs',
+            template: 'systems/TheWitcherItaNewSystem/templates/partials/character/tab-skills.hbs',
             scrollable: ['']
         },
         profession: {
-            template: 'systems/TheWitcherTRPG/templates/partials/character/tab-profession.hbs',
+            template: 'systems/TheWitcherItaNewSystem/templates/partials/character/tab-profession.hbs',
             scrollable: ['']
         },
         inventory: {
-            template: 'systems/TheWitcherTRPG/templates/partials/character/tab-inventory.hbs',
+            template: 'systems/TheWitcherItaNewSystem/templates/partials/character/tab-inventory.hbs',
             scrollable: ['']
         },
         magic: {
-            template: 'systems/TheWitcherTRPG/templates/partials/character/tab-magic.hbs',
+            template: 'systems/TheWitcherItaNewSystem/templates/partials/character/tab-magic.hbs',
             scrollable: ['']
         },
         background: {
-            template: 'systems/TheWitcherTRPG/templates/partials/character/tab-background.hbs',
+            template: 'systems/TheWitcherItaNewSystem/templates/partials/character/tab-background.hbs',
             scrollable: ['']
         },
         effects: {
-            template: 'systems/TheWitcherTRPG/templates/sheets/actor/partials/character/tab-effects.hbs',
+            template: 'systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/tab-effects.hbs',
             scrollable: ['']
         }
     };
@@ -256,7 +256,7 @@ export default class WitcherCharacterSheet extends WitcherActorSheet {
     }
 
     async _alchemyCraft(event) {
-        let displayRollDetails = game.settings.get('TheWitcherTRPG', 'displayRollsDetails');
+        let displayRollDetails = game.settings.get('TheWitcherItaNewSystem', 'displayRollsDetails');
         let itemId = event.currentTarget.closest('.item').dataset.itemId;
         let item = this.actor.items.get(itemId);
 
@@ -352,7 +352,7 @@ export default class WitcherCharacterSheet extends WitcherActorSheet {
     }
 
     async _craftingCraft(event) {
-        let displayRollDetails = game.settings.get('TheWitcherTRPG', 'displayRollsDetails');
+        let displayRollDetails = game.settings.get('TheWitcherItaNewSystem', 'displayRollsDetails');
         let itemId = event.currentTarget.closest('.item').dataset.itemId;
         let item = this.actor.items.get(itemId);
 
@@ -399,7 +399,7 @@ export default class WitcherCharacterSheet extends WitcherActorSheet {
                             (messageData.flavor += `${game.i18n.localize('WITCHER.Diagram.craftingDC')} ${item.system.craftingDC}`);
 
                         let rollFormula = '1d10 +';
-                        if (game.settings.get('TheWitcherTRPG', 'woundsAffectSkillBase')) {
+                        if (game.settings.get('TheWitcherItaNewSystem', 'woundsAffectSkillBase')) {
                             rollFormula += '(';
                         }
 

@@ -26,7 +26,7 @@ export default class WitcherMysterySheet extends HandlebarsApplicationMixin(Acto
 
     static PARTS = {
         header: {
-            template: 'systems/TheWitcherTRPG/templates/sheets/investigation/mystery-sheet.hbs'
+            template: 'systems/TheWitcherItaNewSystem/templates/sheets/investigation/mystery-sheet.hbs'
         }
     };
 

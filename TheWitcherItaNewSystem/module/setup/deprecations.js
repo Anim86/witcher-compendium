@@ -19,7 +19,7 @@ async function lifepathModifiers() {
 
     if (affectedActors.length > 0) {
         const dialogTemplate = await foundry.applications.handlebars.renderTemplate(
-            'systems/TheWitcherTRPG/templates/dialog/deprecations/lifepathModifiers.hbs',
+            'systems/TheWitcherItaNewSystem/templates/dialog/deprecations/lifepathModifiers.hbs',
             { affectedActors }
         );
         DialogV2.prompt({
@@ -45,7 +45,7 @@ async function statSkillModifiers() {
 
     if (affectedActors.length > 0) {
         const dialogTemplate = await foundry.applications.handlebars.renderTemplate(
-            'systems/TheWitcherTRPG/templates/dialog/deprecations/statSkillModifiers.hbs',
+            'systems/TheWitcherItaNewSystem/templates/dialog/deprecations/statSkillModifiers.hbs',
             { affectedActors }
         );
         DialogV2.prompt({

@@ -6,7 +6,7 @@
             {{#if skill.skillAttack.isAttack}}
                 {{formGroup skillFields.fields.skillAttack.fields.usesWeapon value=skill.skillAttack.usesWeapon localize=true}}
                 {{formGroup skillFields.fields.skillAttack.fields.damageFormulaOverride value=skill.skillAttack.damageFormulaOverride localize=true}}
-                {{>"systems/TheWitcherTRPG/templates/sheets/item/configuration/partials/profession/profAttackOptionsPart.hbs" systemFields=skillFields.fields.skillAttack.fields system=skill.skillAttack}}
+                {{>"systems/TheWitcherItaNewSystem/templates/sheets/item/configuration/partials/profession/profAttackOptionsPart.hbs" systemFields=skillFields.fields.skillAttack.fields system=skill.skillAttack}}
                 {{formGroup skillFields.fields.skillAttack.fields.defenseOptions value=skill.skillAttack.defenseOptions localize=true}}
                 <details>
                     {{formGroup skillFields.fields.skillAttack.fields.damageProperties.fields.armorPiercing value=skill.skillAttack.damageProperties.armorPiercing localize=true}}

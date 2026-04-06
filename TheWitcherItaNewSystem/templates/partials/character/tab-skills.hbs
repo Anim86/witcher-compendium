@@ -17,12 +17,12 @@
                     </summary>
                     <div class="skills-stats-list">
                         {{#each skillsGroup as |skill name|}}
-                            {{> "systems/TheWitcherTRPG/templates/partials/character/skill-display.hbs" 
+                            {{> "systems/TheWitcherItaNewSystem/templates/partials/character/skill-display.hbs" 
                         skill=skill name=name stat=skillKey}}
                         {{/each}}
 
                         {{#each (lookup ../customSkills skillKey)}}
-                            {{> "systems/TheWitcherTRPG/templates/partials/character/custom-skill-display.hbs"}}
+                            {{> "systems/TheWitcherItaNewSystem/templates/partials/character/custom-skill-display.hbs"}}
                         {{/each}}
                     </div>
                 </details>
@@ -41,12 +41,12 @@
                 </summary>
                 <div class="skills-stats-list">
                     {{#each skillsGroup as |skill name|}}
-                        {{> "systems/TheWitcherTRPG/templates/partials/character/skill-display.hbs" 
+                        {{> "systems/TheWitcherItaNewSystem/templates/partials/character/skill-display.hbs" 
                     skill=skill name=name stat=skillKey}}
                     {{/each}}
 
                     {{#each (lookup ../customSkills skillKey)}}
-                        {{> "systems/TheWitcherTRPG/templates/partials/character/custom-skill-display.hbs"}}
+                        {{> "systems/TheWitcherItaNewSystem/templates/partials/character/custom-skill-display.hbs"}}
                     {{/each}}
                 </div>
             </details>

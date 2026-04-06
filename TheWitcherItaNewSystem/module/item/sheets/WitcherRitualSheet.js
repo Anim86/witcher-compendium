@@ -3,7 +3,7 @@ import WitcherItemSheet from './WitcherItemSheet.js';
 export default class WitcherRitualSheet extends WitcherItemSheet {
     static PARTS = {
         main: {
-            template: `systems/TheWitcherTRPG/templates/sheets/item/ritual-sheet.hbs`,
+            template: `systems/TheWitcherItaNewSystem/templates/sheets/item/ritual-sheet.hbs`,
             scrollable: ['']
         }
     };

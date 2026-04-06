@@ -5,7 +5,7 @@ import {
 import { applyStatusEffectToActor } from '../scripts/statusEffects/applyStatusEffect.js';
 
 export const registerSocketListeners = function () {
-    let SYSTEM_SOCKET = 'system.TheWitcherTRPG';
+    let SYSTEM_SOCKET = 'system.TheWitcherItaNewSystem';
 
     let callableFunctions = {
         applyStatusEffectToActor,

@@ -8,7 +8,7 @@ export default class WitcherHomelandSheet extends WitcherItemSheet {
     };
     static PARTS = {
         main: {
-            template: `systems/TheWitcherTRPG/templates/sheets/item/homeland-sheet.hbs`,
+            template: `systems/TheWitcherItaNewSystem/templates/sheets/item/homeland-sheet.hbs`,
             scrollable: ['']
         }
     };

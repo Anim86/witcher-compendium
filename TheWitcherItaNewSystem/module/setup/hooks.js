@@ -3,7 +3,7 @@ import { applyGeneralCombatHooks } from '../scripts/combat/generalCombatHook.js'
 import { countdownDurationOfRegions } from '../scripts/regions/regionHooks.js';
 import WitcherCharacterWizard from '../app/WitcherCharacterWizard.js';
 
-console.log("TheWitcherTRPG | hooks.js loaded");
+console.log("TheWitcherItaNewSystem | hooks.js loaded");
 
 export function registerHooks() {
     Hooks.on('updateCombat', (combat, update, options, userId) => {
@@ -25,7 +25,7 @@ export function registerHooks() {
         if (app?.constructor?.name === "ActorDirectory") {
             let allowPlayer = true;
             try {
-                allowPlayer = game.settings.get("TheWitcherTRPG", "allowPlayerWizard");
+                allowPlayer = game.settings.get("TheWitcherItaNewSystem", "allowPlayerWizard");
             } catch (e) {}
 
             if (game.user.isGM || allowPlayer) {
@@ -34,7 +34,7 @@ export function registerHooks() {
                     title: game.i18n.localize("WITCHER.Wizard.Button.Launch"),
                     icon: "fa-solid fa-wand-magic-sparkles",
                     callback: () => {
-                        console.log("TheWitcherTRPG | Launching Character Wizard from header button");
+                        console.log("TheWitcherItaNewSystem | Launching Character Wizard from header button");
                         new WitcherCharacterWizard().render({ force: true });
                     }
                 });
@@ -47,11 +47,11 @@ function _addWizardButton(html) {
     const $html = (html instanceof HTMLElement) ? $(html) : html;
     if ($html.find(".wizard-button").length > 0) return;
     
-    console.log("TheWitcherTRPG | Attempting to add Wizard button to Actor Directory");
+    console.log("TheWitcherItaNewSystem | Attempting to add Wizard button to Actor Directory");
     
     let allowPlayer = true;
     try {
-        allowPlayer = game.settings.get("TheWitcherTRPG", "allowPlayerWizard");
+        allowPlayer = game.settings.get("TheWitcherItaNewSystem", "allowPlayerWizard");
     } catch (e) {}
 
     if (!game.user.isGM && !allowPlayer) return;
@@ -60,7 +60,7 @@ function _addWizardButton(html) {
     
     button.click(ev => {
         ev.preventDefault();
-        console.log("TheWitcherTRPG | Wizard button clicked");
+        console.log("TheWitcherItaNewSystem | Wizard button clicked");
         new WitcherCharacterWizard().render({ force: true });
     });
 
@@ -68,15 +68,15 @@ function _addWizardButton(html) {
     const footer = $html.find(".directory-footer");
     if (footer.length) {
         footer.append(button);
-        console.log("TheWitcherTRPG | Button added to footer");
+        console.log("TheWitcherItaNewSystem | Button added to footer");
     } else {
         const header = $html.find(".directory-header .header-actions");
         if (header.length) {
             header.append(button);
-            console.log("TheWitcherTRPG | Button added to header-actions");
+            console.log("TheWitcherItaNewSystem | Button added to header-actions");
         } else {
             $html.append(button); // Extreme fallback
-            console.log("TheWitcherTRPG | Button added to root of sidebar (emergency fallback)");
+            console.log("TheWitcherItaNewSystem | Button added to root of sidebar (emergency fallback)");
         }
     }
 }

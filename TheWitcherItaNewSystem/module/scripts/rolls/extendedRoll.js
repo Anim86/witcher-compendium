@@ -81,7 +81,7 @@ export async function extendedRoll(rollFormula, messageData, config = new RollCo
             : `<div class="dice-fail"><i>${game.i18n.localize('WITCHER.Chat.Fail')}${successHeader}</i></br>${config.messageOnFailure}</div>`;
 
         messageData.flags = {
-            TheWitcherTRPG: success ? config.flagsOnSuccess : config.flagsOnFailure
+            TheWitcherItaNewSystem: success ? config.flagsOnSuccess : config.flagsOnFailure
         };
     }
 
@@ -89,9 +89,9 @@ export async function extendedRoll(rollFormula, messageData, config = new RollCo
         let message = await roll.toMessage(messageData);
         if (flags) {
             if (Array.isArray(flags)) {
-                flags.forEach(flag => message.setFlag('TheWitcherTRPG', flag.key, flag.value));
+                flags.forEach(flag => message.setFlag('TheWitcherItaNewSystem', flag.key, flag.value));
             } else {
-                message.setFlag('TheWitcherTRPG', flags.key, flags.value);
+                message.setFlag('TheWitcherItaNewSystem', flags.key, flags.value);
             }
         }
     } else {

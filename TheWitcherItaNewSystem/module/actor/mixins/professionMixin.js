@@ -46,7 +46,7 @@ export let professionMixin = {
             return this.doProfessionWeaponAttackRoll(skill);
         }
 
-        let displayRollDetails = game.settings.get('TheWitcherTRPG', 'displayRollsDetails');
+        let displayRollDetails = game.settings.get('TheWitcherItaNewSystem', 'displayRollsDetails');
 
         let displayDmgFormula = `${skillAttack.damageFormulaOverride}`;
         let damageFormula = !displayRollDetails
@@ -84,7 +84,7 @@ export let professionMixin = {
         };
 
         const dialogTemplate = await foundry.applications.handlebars.renderTemplate(
-            'systems/TheWitcherTRPG/templates/dialog/combat/profession-attack.hbs',
+            'systems/TheWitcherItaNewSystem/templates/dialog/combat/profession-attack.hbs',
             data
         );
 
@@ -257,7 +257,7 @@ export let professionMixin = {
     },
 
     async doProfessionSkillRoll(skill, { threshold, showResult } = { threshold: 0, showResult: true }) {
-        let displayRollDetails = game.settings.get('TheWitcherTRPG', 'displayRollsDetails');
+        let displayRollDetails = game.settings.get('TheWitcherItaNewSystem', 'displayRollsDetails');
         let stat = skill.stat;
         let level = skill.level || 0;
 
@@ -342,7 +342,7 @@ export let professionMixin = {
                 if (target.hasPlayerOwner) {
                     owner = game.users.find(e => target.testUserPermission(e, 'OWNER') && !e.isGM);
                 }
-                owner.query('TheWitcherTRPG.addTemporaryHpToActor', queryData);
+                owner.query('TheWitcherItaNewSystem.addTemporaryHpToActor', queryData);
             }
         }
     },

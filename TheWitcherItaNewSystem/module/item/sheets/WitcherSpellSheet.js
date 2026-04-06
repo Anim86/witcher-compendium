@@ -7,7 +7,7 @@ export default class WitcherSpellSheet extends WitcherItemSheet {
 
     static PARTS = {
         main: {
-            template: `systems/TheWitcherTRPG/templates/sheets/item/spell-sheet.hbs`,
+            template: `systems/TheWitcherItaNewSystem/templates/sheets/item/spell-sheet.hbs`,
             scrollable: ['']
         }
     };

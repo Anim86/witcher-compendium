@@ -22,7 +22,7 @@ export let healMixin = {
         await new DialogV2({
             window: { title: game.i18n.localize('WITCHER.Heal.dialogTitle') },
             content: await foundry.applications.handlebars.renderTemplate(
-                'systems/TheWitcherTRPG/templates/dialog/heal/heal-rest.hbs',
+                'systems/TheWitcherItaNewSystem/templates/dialog/heal/heal-rest.hbs',
                 dialogData
             ),
             modal: false,
@@ -114,7 +114,7 @@ export let healMixin = {
 
         ChatMessage.create({
             content: await foundry.applications.handlebars.renderTemplate(
-                'systems/TheWitcherTRPG/templates/chat/heal/resting-status.hbs',
+                'systems/TheWitcherItaNewSystem/templates/chat/heal/resting-status.hbs',
                 dialogData
             ),
             speaker: ChatMessage.getSpeaker({ actor: game.actors.getName(this.actor.name) }),

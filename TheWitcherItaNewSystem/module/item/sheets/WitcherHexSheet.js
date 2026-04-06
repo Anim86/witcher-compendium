@@ -3,7 +3,7 @@ import WitcherItemSheet from './WitcherItemSheet.js';
 export default class WitcherHexSheet extends WitcherItemSheet {
     static PARTS = {
         main: {
-            template: `systems/TheWitcherTRPG/templates/sheets/item/hex-sheet.hbs`,
+            template: `systems/TheWitcherItaNewSystem/templates/sheets/item/hex-sheet.hbs`,
             scrollable: ['']
         }
     };

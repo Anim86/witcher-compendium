@@ -14,7 +14,7 @@ async function applyMonsterRegeneration(actor) {
     if (actor.statuses.has('dead')) return;
 
     const content = await foundry.applications.handlebars.renderTemplate(
-        'systems/TheWitcherTRPG/templates/chat/combat/regeneration.hbs',
+        'systems/TheWitcherItaNewSystem/templates/chat/combat/regeneration.hbs',
         {
             actor: actor
         }
@@ -47,7 +47,7 @@ async function applyCombatEffects(actor) {
 async function applyCombatEffect(actor, status) {
     if (!status.heal?.amount && !status.damage?.amount) return;
     const content = await foundry.applications.handlebars.renderTemplate(
-        'systems/TheWitcherTRPG/templates/chat/combat/statusEffect.hbs',
+        'systems/TheWitcherItaNewSystem/templates/chat/combat/statusEffect.hbs',
         status
     );
     const chatData = {

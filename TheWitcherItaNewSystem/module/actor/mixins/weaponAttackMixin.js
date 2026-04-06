@@ -5,7 +5,7 @@ const DialogV2 = foundry.applications.api.DialogV2;
 
 export let weaponAttackMixin = {
     async weaponAttack(weapon, options = {}) {
-        let displayRollDetails = game.settings.get('TheWitcherTRPG', 'displayRollsDetails');
+        let displayRollDetails = game.settings.get('TheWitcherItaNewSystem', 'displayRollsDetails');
 
         let displayDmgFormula = `${weapon.system.damage}`;
         let damageFormula = !displayRollDetails
@@ -67,7 +67,7 @@ export let weaponAttackMixin = {
         };
 
         const dialogTemplate = await foundry.applications.handlebars.renderTemplate(
-            'systems/TheWitcherTRPG/templates/dialog/combat/weapon-attack.hbs',
+            'systems/TheWitcherItaNewSystem/templates/dialog/combat/weapon-attack.hbs',
             data
         );
 
@@ -177,7 +177,7 @@ export let weaponAttackMixin = {
         for (let i = 0; i < attacknumber; i++) {
             let attFormula = '1d10+';
             let skill = CONFIG.WITCHER.skillMap[attack.skill];
-            if (game.settings.get('TheWitcherTRPG', 'woundsAffectSkillBase')) {
+            if (game.settings.get('TheWitcherItaNewSystem', 'woundsAffectSkillBase')) {
                 attFormula += '(';
             }
             if (options.skillReplacement) {
@@ -314,7 +314,7 @@ export let weaponAttackMixin = {
     },
 
     constructBaseAttackFormula(skill) {
-        let displayRollDetails = game.settings.get('TheWitcherTRPG', 'displayRollsDetails');
+        let displayRollDetails = game.settings.get('TheWitcherItaNewSystem', 'displayRollsDetails');
 
         let attFormula = !displayRollDetails
             ? `${this.system.stats[skill.attribute.name].value}+${this.system.skills[skill.attribute.name][skill.name].value}`

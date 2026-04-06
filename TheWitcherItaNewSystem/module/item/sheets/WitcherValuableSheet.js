@@ -6,7 +6,7 @@ export default class WitcherValuableSheet extends WitcherItemSheet {
 
     static PARTS = {
         main: {
-            template: `systems/TheWitcherTRPG/templates/sheets/item/valuable-sheet.hbs`,
+            template: `systems/TheWitcherItaNewSystem/templates/sheets/item/valuable-sheet.hbs`,
             scrollable: ['']
         }
     };

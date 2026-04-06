@@ -3,7 +3,7 @@ import WitcherItemSheet from './WitcherItemSheet.js';
 export default class WitcherMutagenSheet extends WitcherItemSheet {
     static PARTS = {
         main: {
-            template: `systems/TheWitcherTRPG/templates/sheets/item/mutagen-sheet.hbs`,
+            template: `systems/TheWitcherItaNewSystem/templates/sheets/item/mutagen-sheet.hbs`,
             scrollable: ['']
         }
     };

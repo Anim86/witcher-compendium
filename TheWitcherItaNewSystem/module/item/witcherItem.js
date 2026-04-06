@@ -97,7 +97,7 @@ export default class WitcherItem extends Item {
             new AlchemyComponent(
                 'vitriol',
                 game.i18n.localize('WITCHER.Inventory.Vitriol'),
-                `<img src="systems/TheWitcherTRPG/assets/images/vitriol.png" class="substance-img" /> <b>${this.system.alchemyComponents.vitriol}</b>`,
+                `<img src="systems/TheWitcherItaNewSystem/assets/images/vitriol.png" class="substance-img" /> <b>${this.system.alchemyComponents.vitriol}</b>`,
                 this.system.alchemyComponents.vitriol > 0 ? this.system.alchemyComponents.vitriol : 0
             )
         );
@@ -105,7 +105,7 @@ export default class WitcherItem extends Item {
             new AlchemyComponent(
                 'rebis',
                 game.i18n.localize('WITCHER.Inventory.Rebis'),
-                `<img src="systems/TheWitcherTRPG/assets/images/rebis.png" class="substance-img" /> <b>${this.system.alchemyComponents.rebis}</b>`,
+                `<img src="systems/TheWitcherItaNewSystem/assets/images/rebis.png" class="substance-img" /> <b>${this.system.alchemyComponents.rebis}</b>`,
                 this.system.alchemyComponents.rebis > 0 ? this.system.alchemyComponents.rebis : 0
             )
         );
@@ -113,7 +113,7 @@ export default class WitcherItem extends Item {
             new AlchemyComponent(
                 'aether',
                 game.i18n.localize('WITCHER.Inventory.Aether'),
-                `<img src="systems/TheWitcherTRPG/assets/images/aether.png" class="substance-img" /> <b>${this.system.alchemyComponents.aether}</b>`,
+                `<img src="systems/TheWitcherItaNewSystem/assets/images/aether.png" class="substance-img" /> <b>${this.system.alchemyComponents.aether}</b>`,
                 this.system.alchemyComponents.aether > 0 ? this.system.alchemyComponents.aether : 0
             )
         );
@@ -121,7 +121,7 @@ export default class WitcherItem extends Item {
             new AlchemyComponent(
                 'quebrith',
                 game.i18n.localize('WITCHER.Inventory.Quebrith'),
-                `<img src="systems/TheWitcherTRPG/assets/images/quebrith.png" class="substance-img" /> <b>${this.system.alchemyComponents.quebrith}</b>`,
+                `<img src="systems/TheWitcherItaNewSystem/assets/images/quebrith.png" class="substance-img" /> <b>${this.system.alchemyComponents.quebrith}</b>`,
                 this.system.alchemyComponents.quebrith > 0 ? this.system.alchemyComponents.quebrith : 0
             )
         );
@@ -129,7 +129,7 @@ export default class WitcherItem extends Item {
             new AlchemyComponent(
                 'hydragenum',
                 game.i18n.localize('WITCHER.Inventory.Hydragenum'),
-                `<img src="systems/TheWitcherTRPG/assets/images/hydragenum.png" class="substance-img" /> <b>${this.system.alchemyComponents.hydragenum}</b>`,
+                `<img src="systems/TheWitcherItaNewSystem/assets/images/hydragenum.png" class="substance-img" /> <b>${this.system.alchemyComponents.hydragenum}</b>`,
                 this.system.alchemyComponents.hydragenum > 0 ? this.system.alchemyComponents.hydragenum : 0
             )
         );
@@ -137,7 +137,7 @@ export default class WitcherItem extends Item {
             new AlchemyComponent(
                 'vermilion',
                 game.i18n.localize('WITCHER.Inventory.Vermilion'),
-                `<img src="systems/TheWitcherTRPG/assets/images/vermilion.png" class="substance-img" /> <b>${this.system.alchemyComponents.vermilion}</b>`,
+                `<img src="systems/TheWitcherItaNewSystem/assets/images/vermilion.png" class="substance-img" /> <b>${this.system.alchemyComponents.vermilion}</b>`,
                 this.system.alchemyComponents.vermilion > 0 ? this.system.alchemyComponents.vermilion : 0
             )
         );
@@ -145,7 +145,7 @@ export default class WitcherItem extends Item {
             new AlchemyComponent(
                 'sol',
                 game.i18n.localize('WITCHER.Inventory.Sol'),
-                `<img src="systems/TheWitcherTRPG/assets/images/sol.png" class="substance-img" /> <b>${this.system.alchemyComponents.sol}</b>`,
+                `<img src="systems/TheWitcherItaNewSystem/assets/images/sol.png" class="substance-img" /> <b>${this.system.alchemyComponents.sol}</b>`,
                 this.system.alchemyComponents.sol > 0 ? this.system.alchemyComponents.sol : 0
             )
         );
@@ -153,7 +153,7 @@ export default class WitcherItem extends Item {
             new AlchemyComponent(
                 'caelum',
                 game.i18n.localize('WITCHER.Inventory.Caelum'),
-                `<img src="systems/TheWitcherTRPG/assets/images/caelum.png" class="substance-img" /> <b>${this.system.alchemyComponents.caelum}</b>`,
+                `<img src="systems/TheWitcherItaNewSystem/assets/images/caelum.png" class="substance-img" /> <b>${this.system.alchemyComponents.caelum}</b>`,
                 this.system.alchemyComponents.caelum > 0 ? this.system.alchemyComponents.caelum : 0
             )
         );
@@ -161,7 +161,7 @@ export default class WitcherItem extends Item {
             new AlchemyComponent(
                 'fulgur',
                 game.i18n.localize('WITCHER.Inventory.Fulgur'),
-                `<img src="systems/TheWitcherTRPG/assets/images/fulgur.png" class="substance-img" /> <b>${this.system.alchemyComponents.fulgur}</b>`,
+                `<img src="systems/TheWitcherItaNewSystem/assets/images/fulgur.png" class="substance-img" /> <b>${this.system.alchemyComponents.fulgur}</b>`,
                 this.system.alchemyComponents.fulgur > 0 ? this.system.alchemyComponents.fulgur : 0
             )
         );

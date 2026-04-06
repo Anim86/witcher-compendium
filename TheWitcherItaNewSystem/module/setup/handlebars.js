@@ -1,87 +1,87 @@
 export async function preloadHandlebarsTemplates() {
     const templatePath = [
-        'systems/TheWitcherTRPG/templates/sheets/actor/monster-sheet.hbs',
-        'systems/TheWitcherTRPG/templates/sheets/actor/loot-sheet.hbs',
+        'systems/TheWitcherItaNewSystem/templates/sheets/actor/monster-sheet.hbs',
+        'systems/TheWitcherItaNewSystem/templates/sheets/actor/loot-sheet.hbs',
 
-        'systems/TheWitcherTRPG/templates/partials/character-header.hbs',
+        'systems/TheWitcherItaNewSystem/templates/partials/character-header.hbs',
 
-        'systems/TheWitcherTRPG/templates/partials/character/tab-skills.hbs',
-        'systems/TheWitcherTRPG/templates/partials/character/skill-display.hbs',
-        'systems/TheWitcherTRPG/templates/partials/character/custom-skill-display.hbs',
-        'systems/TheWitcherTRPG/templates/partials/character/tab-profession.hbs',
-        'systems/TheWitcherTRPG/templates/partials/character/tab-background.hbs',
-        'systems/TheWitcherTRPG/templates/partials/character/tab-inventory.hbs',
-        'systems/TheWitcherTRPG/templates/partials/character/substances.hbs',
-        'systems/TheWitcherTRPG/templates/partials/character/tab-magic.hbs',
-        'systems/TheWitcherTRPG/templates/sheets/actor/partials/character/tab-effects.hbs',
+        'systems/TheWitcherItaNewSystem/templates/partials/character/tab-skills.hbs',
+        'systems/TheWitcherItaNewSystem/templates/partials/character/skill-display.hbs',
+        'systems/TheWitcherItaNewSystem/templates/partials/character/custom-skill-display.hbs',
+        'systems/TheWitcherItaNewSystem/templates/partials/character/tab-profession.hbs',
+        'systems/TheWitcherItaNewSystem/templates/partials/character/tab-background.hbs',
+        'systems/TheWitcherItaNewSystem/templates/partials/character/tab-inventory.hbs',
+        'systems/TheWitcherItaNewSystem/templates/partials/character/substances.hbs',
+        'systems/TheWitcherItaNewSystem/templates/partials/character/tab-magic.hbs',
+        'systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/tab-effects.hbs',
 
-        'systems/TheWitcherTRPG/templates/sheets/actor/partials/character/inventory/tab-inventory-alchemical.hbs',
-        'systems/TheWitcherTRPG/templates/sheets/actor/partials/character/inventory/tab-inventory-components.hbs',
-        'systems/TheWitcherTRPG/templates/sheets/actor/partials/character/inventory/tab-inventory-weapons.hbs',
-        'systems/TheWitcherTRPG/templates/sheets/actor/partials/character/inventory/tab-inventory-armors.hbs',
-        'systems/TheWitcherTRPG/templates/sheets/actor/partials/character/inventory/tab-inventory-diagrams.hbs',
-        'systems/TheWitcherTRPG/templates/sheets/actor/partials/character/inventory/tab-inventory-valuables.hbs',
-        'systems/TheWitcherTRPG/templates/sheets/actor/partials/character/inventory/tab-inventory-mounts.hbs',
-        'systems/TheWitcherTRPG/templates/sheets/actor/partials/character/inventory/tab-inventory-runes-glyphs.hbs',
-        'systems/TheWitcherTRPG/templates/sheets/actor/partials/character/inventory/inventory-items-summary.hbs',
+        'systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/inventory/tab-inventory-alchemical.hbs',
+        'systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/inventory/tab-inventory-components.hbs',
+        'systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/inventory/tab-inventory-weapons.hbs',
+        'systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/inventory/tab-inventory-armors.hbs',
+        'systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/inventory/tab-inventory-diagrams.hbs',
+        'systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/inventory/tab-inventory-valuables.hbs',
+        'systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/inventory/tab-inventory-mounts.hbs',
+        'systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/inventory/tab-inventory-runes-glyphs.hbs',
+        'systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/inventory/inventory-items-summary.hbs',
 
-        'systems/TheWitcherTRPG/templates/sheets/actor/partials/character/spell-type-list.hbs',
+        'systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/spell-type-list.hbs',
 
-        'systems/TheWitcherTRPG/templates/partials/crit-wounds-table.hbs',
+        'systems/TheWitcherItaNewSystem/templates/partials/crit-wounds-table.hbs',
 
-        'systems/TheWitcherTRPG/templates/partials/monster/monster-skill-tab.hbs',
-        'systems/TheWitcherTRPG/templates/partials/monster/monster-inventory-tab.hbs',
-        'systems/TheWitcherTRPG/templates/partials/monster/monster-details-tab.hbs',
-        'systems/TheWitcherTRPG/templates/partials/monster/monster-spell-tab.hbs',
-        'systems/TheWitcherTRPG/templates/partials/monster/monster-skill-display.hbs',
-        'systems/TheWitcherTRPG/templates/partials/monster/monster-custom-skill-display.hbs',
-        'systems/TheWitcherTRPG/templates/partials/monster/monster-profession-skill-display.hbs',
-        'systems/TheWitcherTRPG/templates/sheets/actor/configuration/partials/skillConfiguration.hbs',
+        'systems/TheWitcherItaNewSystem/templates/partials/monster/monster-skill-tab.hbs',
+        'systems/TheWitcherItaNewSystem/templates/partials/monster/monster-inventory-tab.hbs',
+        'systems/TheWitcherItaNewSystem/templates/partials/monster/monster-details-tab.hbs',
+        'systems/TheWitcherItaNewSystem/templates/partials/monster/monster-spell-tab.hbs',
+        'systems/TheWitcherItaNewSystem/templates/partials/monster/monster-skill-display.hbs',
+        'systems/TheWitcherItaNewSystem/templates/partials/monster/monster-custom-skill-display.hbs',
+        'systems/TheWitcherItaNewSystem/templates/partials/monster/monster-profession-skill-display.hbs',
+        'systems/TheWitcherItaNewSystem/templates/sheets/actor/configuration/partials/skillConfiguration.hbs',
 
-        'systems/TheWitcherTRPG/templates/sheets/actor/configuration/app/partials/stats-block.hbs',
+        'systems/TheWitcherItaNewSystem/templates/sheets/actor/configuration/app/partials/stats-block.hbs',
 
-        'systems/TheWitcherTRPG/templates/sheets/actor/partials/loot/loot-item-display.hbs',
+        'systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/loot/loot-item-display.hbs',
 
-        'systems/TheWitcherTRPG/templates/partials/item-header.hbs',
-        'systems/TheWitcherTRPG/templates/partials/spell-header.hbs',
-        'systems/TheWitcherTRPG/templates/partials/item-image.hbs',
-        'systems/TheWitcherTRPG/templates/partials/associated-item.hbs',
-        'systems/TheWitcherTRPG/templates/partials/associated-diagram.hbs',
-        'systems/TheWitcherTRPG/templates/partials/effect-part.hbs',
+        'systems/TheWitcherItaNewSystem/templates/partials/item-header.hbs',
+        'systems/TheWitcherItaNewSystem/templates/partials/spell-header.hbs',
+        'systems/TheWitcherItaNewSystem/templates/partials/item-image.hbs',
+        'systems/TheWitcherItaNewSystem/templates/partials/associated-item.hbs',
+        'systems/TheWitcherItaNewSystem/templates/partials/associated-diagram.hbs',
+        'systems/TheWitcherItaNewSystem/templates/partials/effect-part.hbs',
 
-        'systems/TheWitcherTRPG/templates/sheets/item/configuration/partials/attackOptionsPart.hbs',
-        'systems/TheWitcherTRPG/templates/sheets/item/configuration/partials/profession/skillPathSkillPart.hbs',
-        'systems/TheWitcherTRPG/templates/sheets/item/configuration/partials/profession/profAttackOptionsPart.hbs',
+        'systems/TheWitcherItaNewSystem/templates/sheets/item/configuration/partials/attackOptionsPart.hbs',
+        'systems/TheWitcherItaNewSystem/templates/sheets/item/configuration/partials/profession/skillPathSkillPart.hbs',
+        'systems/TheWitcherItaNewSystem/templates/sheets/item/configuration/partials/profession/profAttackOptionsPart.hbs',
 
-        'systems/TheWitcherTRPG/templates/sheets/investigation/mystery-sheet.hbs',
-        'systems/TheWitcherTRPG/templates/sheets/investigation/partials/clue-display.hbs',
-        'systems/TheWitcherTRPG/templates/sheets/investigation/partials/obstacle-display.hbs',
+        'systems/TheWitcherItaNewSystem/templates/sheets/investigation/mystery-sheet.hbs',
+        'systems/TheWitcherItaNewSystem/templates/sheets/investigation/partials/clue-display.hbs',
+        'systems/TheWitcherItaNewSystem/templates/sheets/investigation/partials/obstacle-display.hbs',
 
-        'systems/TheWitcherTRPG/templates/dialog/verbal-combat.hbs',
-        'systems/TheWitcherTRPG/templates/dialog/repair-dialog.hbs',
+        'systems/TheWitcherItaNewSystem/templates/dialog/verbal-combat.hbs',
+        'systems/TheWitcherItaNewSystem/templates/dialog/repair-dialog.hbs',
 
-        'systems/TheWitcherTRPG/templates/chat/damage/damageToLocation.hbs',
-        'systems/TheWitcherTRPG/templates/chat/item/repair.hbs',
+        'systems/TheWitcherItaNewSystem/templates/chat/damage/damageToLocation.hbs',
+        'systems/TheWitcherItaNewSystem/templates/chat/item/repair.hbs',
 
-        'systems/TheWitcherTRPG/templates/chat/item/partials/item-description/alchemicals.hbs',
-        'systems/TheWitcherTRPG/templates/chat/item/partials/item-description/crafting-items.hbs',
-        'systems/TheWitcherTRPG/templates/chat/item/partials/item-description/description.hbs',
-        'systems/TheWitcherTRPG/templates/chat/item/partials/item-description/spell-description.hbs',
-        'systems/TheWitcherTRPG/templates/chat/item/partials/item-description/tags.hbs',
+        'systems/TheWitcherItaNewSystem/templates/chat/item/partials/item-description/alchemicals.hbs',
+        'systems/TheWitcherItaNewSystem/templates/chat/item/partials/item-description/crafting-items.hbs',
+        'systems/TheWitcherItaNewSystem/templates/chat/item/partials/item-description/description.hbs',
+        'systems/TheWitcherItaNewSystem/templates/chat/item/partials/item-description/spell-description.hbs',
+        'systems/TheWitcherItaNewSystem/templates/chat/item/partials/item-description/tags.hbs',
 
-        'systems/TheWitcherTRPG/templates/partials/components-list.hbs',
+        'systems/TheWitcherItaNewSystem/templates/partials/components-list.hbs',
         
         // Character Wizard
-        'systems/TheWitcherTRPG/templates/app/wizard/navigation.hbs',
-        'systems/TheWitcherTRPG/templates/app/wizard/content.hbs',
-        'systems/TheWitcherTRPG/templates/app/wizard/footer.hbs',
-        'systems/TheWitcherTRPG/templates/app/wizard/steps/race.hbs',
-        'systems/TheWitcherTRPG/templates/app/wizard/steps/background.hbs',
-        'systems/TheWitcherTRPG/templates/app/wizard/steps/profession.hbs',
-        'systems/TheWitcherTRPG/templates/app/wizard/steps/stats.hbs',
-        'systems/TheWitcherTRPG/templates/app/wizard/steps/skills.hbs',
-        'systems/TheWitcherTRPG/templates/app/wizard/steps/gear.hbs',
-        'systems/TheWitcherTRPG/templates/app/wizard/steps/finish.hbs'
+        'systems/TheWitcherItaNewSystem/templates/app/wizard/navigation.hbs',
+        'systems/TheWitcherItaNewSystem/templates/app/wizard/content.hbs',
+        'systems/TheWitcherItaNewSystem/templates/app/wizard/footer.hbs',
+        'systems/TheWitcherItaNewSystem/templates/app/wizard/steps/race.hbs',
+        'systems/TheWitcherItaNewSystem/templates/app/wizard/steps/background.hbs',
+        'systems/TheWitcherItaNewSystem/templates/app/wizard/steps/profession.hbs',
+        'systems/TheWitcherItaNewSystem/templates/app/wizard/steps/stats.hbs',
+        'systems/TheWitcherItaNewSystem/templates/app/wizard/steps/skills.hbs',
+        'systems/TheWitcherItaNewSystem/templates/app/wizard/steps/gear.hbs',
+        'systems/TheWitcherItaNewSystem/templates/app/wizard/steps/finish.hbs'
     ];
     return foundry.applications.handlebars.loadTemplates(templatePath);
 }
@@ -99,7 +99,7 @@ export async function registerHandelbarHelpers() {
     });
 
     Handlebars.registerHelper('getSetting', function (setting) {
-        return game.settings.get('TheWitcherTRPG', setting);
+        return game.settings.get('TheWitcherItaNewSystem', setting);
     });
 
     Handlebars.registerHelper('window', function (...props) {

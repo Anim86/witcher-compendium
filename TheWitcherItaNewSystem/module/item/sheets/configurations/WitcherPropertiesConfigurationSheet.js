@@ -13,17 +13,17 @@ export default class WitcherPropertiesConfigurationSheet extends WitcherConfigur
         ...super.PARTS,
         damageProperties: {
             template:
-                'systems/TheWitcherTRPG/templates/sheets/item/configuration/tabs/damagePropertiesConfiguration.hbs',
+                'systems/TheWitcherItaNewSystem/templates/sheets/item/configuration/tabs/damagePropertiesConfiguration.hbs',
             scrollable: ['']
         },
         defenseProperties: {
             template:
-                'systems/TheWitcherTRPG/templates/sheets/item/configuration/tabs/defensePropertiesConfiguration.hbs',
+                'systems/TheWitcherItaNewSystem/templates/sheets/item/configuration/tabs/defensePropertiesConfiguration.hbs',
             scrollable: ['']
         },
         regionProperties: {
             template:
-                'systems/TheWitcherTRPG/templates/sheets/item/configuration/tabs/regionPropertiesConfiguration.hbs',
+                'systems/TheWitcherItaNewSystem/templates/sheets/item/configuration/tabs/regionPropertiesConfiguration.hbs',
             scrollable: ['']
         }
     };
@@ -45,7 +45,7 @@ export default class WitcherPropertiesConfigurationSheet extends WitcherConfigur
     async _prepareContext(options) {
         const context = await super._prepareContext(options);
         context.settings = {
-            silverTrait: game.settings.get('TheWitcherTRPG', 'silverTrait')
+            silverTrait: game.settings.get('TheWitcherItaNewSystem', 'silverTrait')
         };
 
         return context;

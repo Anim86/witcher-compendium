@@ -58,10 +58,10 @@ export default class WitcherActorSheet extends HandlebarsApplicationMixin(ActorS
     async _prepareContext(options) {
         let context = await super._prepareContext(options);
 
-        context.useAdrenaline = game.settings.get('TheWitcherTRPG', 'useOptionalAdrenaline');
-        context.displayRollDetails = game.settings.get('TheWitcherTRPG', 'displayRollsDetails');
-        context.useVerbalCombat = game.settings.get('TheWitcherTRPG', 'useOptionalVerbalCombat');
-        context.displayRep = game.settings.get('TheWitcherTRPG', 'displayRep');
+        context.useAdrenaline = game.settings.get('TheWitcherItaNewSystem', 'useOptionalAdrenaline');
+        context.displayRollDetails = game.settings.get('TheWitcherItaNewSystem', 'displayRollsDetails');
+        context.useVerbalCombat = game.settings.get('TheWitcherItaNewSystem', 'useOptionalVerbalCombat');
+        context.displayRep = game.settings.get('TheWitcherItaNewSystem', 'displayRep');
 
         context.config = CONFIG.WITCHER;
         CONFIG.Combat.initiative.formula = '1d10 + @stats.ref.value' + (context.displayRollDetails ? '[REF]' : '');

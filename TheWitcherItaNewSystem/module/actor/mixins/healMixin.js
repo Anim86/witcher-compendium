@@ -10,7 +10,7 @@ export let healMixin = {
     },
 
     async createHealMessage(heal) {
-        const messageTemplate = 'systems/TheWitcherTRPG/templates/chat/combat/heal.hbs';
+        const messageTemplate = 'systems/TheWitcherItaNewSystem/templates/chat/combat/heal.hbs';
 
         const content = await foundry.applications.handlebars.renderTemplate(messageTemplate, { actor: this, heal });
         const chatData = {
@@ -42,7 +42,7 @@ export let healMixin = {
             });
 
             if (!skipMessage) {
-                const messageTemplate = 'systems/TheWitcherTRPG/templates/chat/heal/temporaryHealth.hbs';
+                const messageTemplate = 'systems/TheWitcherItaNewSystem/templates/chat/heal/temporaryHealth.hbs';
 
                 const content = await foundry.applications.handlebars.renderTemplate(messageTemplate, {
                     temporaryHp: {

@@ -8,7 +8,7 @@ export default class WitcherComponentSheet extends WitcherItemSheet {
     };
     static PARTS = {
         main: {
-            template: `systems/TheWitcherTRPG/templates/sheets/item/component-sheet.hbs`,
+            template: `systems/TheWitcherItaNewSystem/templates/sheets/item/component-sheet.hbs`,
             scrollable: ['']
         }
     };
