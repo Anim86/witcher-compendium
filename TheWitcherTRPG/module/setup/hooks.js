@@ -15,14 +15,14 @@ export function registerHooks() {
     });
 
     Hooks.on('renderSidebarTab', (app, html, data) => {
-        if (app instanceof ActorDirectory) {
+        if (app?.constructor?.name === "ActorDirectory") {
             _addWizardButton(html);
         }
     });
 
-    // Modern V12/V13 way to add buttons to sidebar header
+    // Modern V12/V13/V14 way to add buttons to sidebar header
     Hooks.on('getSidebarTabControlButtons', (app, buttons) => {
-        if (app instanceof ActorDirectory) {
+        if (app?.constructor?.name === "ActorDirectory") {
             let allowPlayer = true;
             try {
                 allowPlayer = game.settings.get("TheWitcherTRPG", "allowPlayerWizard");
@@ -44,7 +44,7 @@ export function registerHooks() {
 }
 
 function _addWizardButton(html) {
-    const $html = html instanceof jQuery ? html : $(html);
+    const $html = (html instanceof HTMLElement) ? $(html) : html;
     if ($html.find(".wizard-button").length > 0) return;
     
     console.log("TheWitcherTRPG | Attempting to add Wizard button to Actor Directory");

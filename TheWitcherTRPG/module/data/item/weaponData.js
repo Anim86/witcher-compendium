@@ -23,8 +23,8 @@ export default class WeaponData extends CommonItemData {
             hands: new fields.StringField({ initial: 'none' }),
             equipped: new fields.BooleanField({ initial: false }),
 
-            reliable: new fields.NumberField({ initial: 0 }),
-            maxReliability: new fields.NumberField({ initial: 0 }),
+            reliability: new fields.NumberField({ initial: 0 }),
+            reliabilityMax: new fields.NumberField({ initial: 0 }),
 
             damage: new fields.StringField({ initial: '' }),
             range: new fields.StringField({ initial: '' }),
@@ -99,6 +99,15 @@ export default class WeaponData extends CommonItemData {
         }
 
         this.effects?.forEach(effect => (effect.percentage = parseInt(effect.percentage)));
+
+        if ('reliable' in source) {
+            source.reliability = source.reliability ?? source.reliable;
+            delete source.reliable;
+        }
+        if ('maxReliability' in source) {
+            source.reliabilityMax = source.reliabilityMax ?? source.maxReliability;
+            delete source.maxReliability;
+        }
 
         migrateDamageProperties(source);
 

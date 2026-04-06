@@ -463,14 +463,14 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         if (socialTable) {
             const roll = await socialTable.roll();
             const result = roll.results[0];
-            this.characterData.background.socialStatus = result.text || result.name;
+            this.characterData.background.socialStatus = result.name || result.text;
             message += `<p><strong>${game.i18n.localize("WITCHER.Wizard.Background.SocialStatus")}:</strong> ${this.characterData.background.socialStatus}</p>`;
         }
         
         if (familyTable) {
             const roll = await familyTable.roll();
             const result = roll.results[0];
-            this.characterData.background.familyFate = result.text || result.name;
+            this.characterData.background.familyFate = result.name || result.text;
             message += `<p><strong>${game.i18n.localize("WITCHER.Wizard.Background.FamilyFate")}:</strong> ${this.characterData.background.familyFate}</p>`;
         }
 
@@ -511,7 +511,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             for (let i = 0; i < yearsToRoll; i++) {
                 const roll = await table.roll();
                 const result = roll.results[0];
-                const rawText = result.text || result.name;
+                const rawText = result.name || result.text;
                 const eventData = {
                     age: 10 + (i * 10),
                     text: translate(rawText)
