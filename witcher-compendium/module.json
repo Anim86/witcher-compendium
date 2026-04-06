@@ -16,7 +16,15 @@
     "verified": "14.359"
   },
   "esmodules": ["scripts/witcher-compendium.js"],
-  "systems": ["TheWitcherItaNewSystem"],
+  "relationships": {
+    "systems": ["TheWitcherItaNewSystem"],
+    "requires": [
+      {
+        "id": "TheWitcherItaNewSystem",
+        "type": "system"
+      }
+    ]
+  },
   "packs": [
     {
       "name": "witcher-races",
