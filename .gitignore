@@ -14,15 +14,13 @@ __pycache__/
 .DS_Store
 Thumbs.db
 
-# Foundry specific (if any)
-*.lock
-LOCK
-LOG
-LOG.old
-*.shm
-*.wal
-CURRENT
-MANIFEST-*
+# Foundry LevelDB (Allowing in packs, ignoring elsewhere)
+!witcher-compendium/packs/**/LOCK
+!witcher-compendium/packs/**/LOG
+!witcher-compendium/packs/**/CURRENT
+!witcher-compendium/packs/**/MANIFEST-*
+!witcher-compendium/packs/**/*.ldb
+!witcher-compendium/packs/**/*.log
 # Witcher Compendium Assets (Ignoring raw, allowing optimized)
 witcher-compendium/assets/
 !witcher-compendium/assets/optimized/
