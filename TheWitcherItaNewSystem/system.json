@@ -6,7 +6,19 @@
         "minimum": "14",
         "verified": "14.359"
     },
-    "version": "v14.0.0",
+    "version": "v14.0.1",
+    "icon": "assets/images/icon.png",
+    "banner": "assets/images/banner.png",
+    "media": [
+        {
+            "type": "icon",
+            "url": "assets/images/icon.png"
+        },
+        {
+            "type": "banner",
+            "url": "assets/images/banner.png"
+        }
+    ],
     "authors": [
         {
             "name": "Zolt"
