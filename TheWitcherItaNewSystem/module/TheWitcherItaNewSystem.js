@@ -95,7 +95,7 @@ Hooks.once('ready', async function () {
         }
     });
 
-    if (game.settings.get('TheWitcherTRPG', 'useWitcherFont')) {
+    if (game.settings.get('TheWitcherItaNewSystem', 'useWitcherFont')) {
         let els = document.getElementsByClassName('game');
         Array.prototype.forEach.call(els, function (el) {
             if (el) {
