@@ -60,10 +60,7 @@ async function rebuildPack(packName) {
         schemaVersion: 12
     });
 
-    // 2. Folders key (Required for V12+)
-    await db.put('!folders!', []);
-
-    // 3. Document entries
+    // 2. Document entries
     for (const record of records) {
         const key = `${prefix}${record._id}`;
         await db.put(key, record);
