@@ -250,6 +250,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
 
     async _nextStep() { if (this.step < this.maxSteps) { this.step++; this.render(true); } }
     async _prevStep() { if (this.step > 1) { this.step--; this.render(true); } }
+    async _updateHomeland(event, target) { this.characterData.homeland = target.value; this.render(true); }
     async _goToStep(event, target) { this.step = parseInt(target.dataset.step); this.render(true); }
 
     async _selectRace(event, target) {

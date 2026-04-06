@@ -23,7 +23,7 @@ import Rewards from './app/reward/reward.js';
 import { registerQueries } from './setup/queries.js';
 
 Hooks.once('init', function () {
-    console.log('TheWitcherTRPG | init system');
+    console.log('TheWitcherItaNewSystem | init system');
     registerHooks();
 
     CONFIG.WITCHER = WITCHER;
