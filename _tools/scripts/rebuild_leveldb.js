@@ -7,9 +7,9 @@ const { ClassicLevel } = require('classic-level');
 const path = require('path');
 const fs = require('fs');
 
-const BASE = 'e:/AntigravitiProgetti/CompendioTheWitcher/witcher-compendium';
-const SRC = path.join(BASE, 'src-packs');
-const PACKS = path.join(BASE, 'packs');
+const BASE = 'e:/AntigravitiProgetti/CompendioTheWitcher';
+const SRC = path.join(BASE, '_tools', 'src-packs');
+const PACKS = path.join(BASE, 'witcher-compendium', 'packs');
 
 async function rebuildPack(packName) {
     const srcDir = path.join(SRC, packName);
