@@ -37,9 +37,10 @@ async function readPack(packPath, packName) {
     }
 }
 
-const baseDir = 'e:/AntigravitiProgetti/CompendioTheWitcher/witcher-compendium/packs';
+const baseDir = 'e:/AntigravitiProgetti/CompendioTheWitcher/../../witcher-compendium/packs';
 
 (async () => {
     await readPack(path.join(baseDir, 'witcher-races'), 'witcher-races');
     await readPack(path.join(baseDir, 'witcher-professions'), 'witcher-professions');
 })();
+

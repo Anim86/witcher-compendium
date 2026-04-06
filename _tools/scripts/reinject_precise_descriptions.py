@@ -3,7 +3,7 @@ import os
 import re
 
 # Paths
-SRC_ROOT = "witcher-compendium/src-packs"
+SRC_ROOT = "../src-packs"
 TXT_DIRS = [
     "Tomo del Caos/Testi",
     "Tomo Base/Testi"
@@ -132,3 +132,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

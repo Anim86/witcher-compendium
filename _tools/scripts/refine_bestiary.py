@@ -3,8 +3,8 @@ import os
 import re
 import uuid
 
-SRC_PACKS_BASE = "e:/AntigravitiProgetti/CompendioTheWitcher/witcher-compendium/src-packs/witcher-monsters"
-SRC_PACKS_CHAOS = "e:/AntigravitiProgetti/CompendioTheWitcher/witcher-compendium/src-packs/witcher-monsters-chaos"
+SRC_PACKS_BASE = "e:/AntigravitiProgetti/CompendioTheWitcher/../src-packs/witcher-monsters"
+SRC_PACKS_CHAOS = "e:/AntigravitiProgetti/CompendioTheWitcher/../src-packs/witcher-monsters-chaos"
 TEXTI_BASE = "e:/AntigravitiProgetti/CompendioTheWitcher/Tomo Base/Testi"
 TEXTI_CHAOS = "e:/AntigravitiProgetti/CompendioTheWitcher/Tomo del Caos/Testi"
 
@@ -200,3 +200,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

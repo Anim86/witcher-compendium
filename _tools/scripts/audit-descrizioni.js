@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const PACKS_DIR = 'witcher-compendium/packs';
+const PACKS_DIR = '../../witcher-compendium/packs';
 
 function auditDescriptions() {
     const packs = fs.readdirSync(PACKS_DIR).filter(f => f.endsWith('.db'));
@@ -49,3 +49,4 @@ function auditDescriptions() {
 }
 
 auditDescriptions();
+

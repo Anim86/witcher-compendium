@@ -3,7 +3,7 @@ import os
 import re
 
 # Paths
-SRC_ROOT = "witcher-compendium/src-packs"
+SRC_ROOT = "../src-packs"
 
 SPELL_ELEMENTS = {
     "igni": "Fire",
@@ -87,3 +87,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

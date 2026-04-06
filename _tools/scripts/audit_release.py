@@ -2,7 +2,7 @@ import json
 import os
 
 # Paths
-SRC_ROOT = "witcher-compendium/src-packs"
+SRC_ROOT = "../src-packs"
 
 def audit_record(data):
     errors = []
@@ -59,3 +59,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+

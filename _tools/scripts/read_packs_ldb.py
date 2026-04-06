@@ -39,8 +39,8 @@ def read_ldb_raw(folder):
             print(f"  Errore leggendo {fname}: {e}")
     return records
 
-races_dir = 'e:/AntigravitiProgetti/CompendioTheWitcher/witcher-compendium/packs/witcher-races'
-profs_dir = 'e:/AntigravitiProgetti/CompendioTheWitcher/witcher-compendium/packs/witcher-professions'
+races_dir = 'e:/AntigravitiProgetti/CompendioTheWitcher/../../witcher-compendium/packs/witcher-races'
+profs_dir = 'e:/AntigravitiProgetti/CompendioTheWitcher/../../witcher-compendium/packs/witcher-professions'
 
 print("=== Contenuto LevelDB witcher-races ===")
 print(f"File in cartella:")
@@ -70,3 +70,4 @@ profs_records = read_ldb_raw(profs_dir)
 print(f"Record trovati: {len(profs_records)}")
 for r in profs_records:
     print(f"  [{r['_source']}] {r['_data'].get('name','?')} | type={r['_data'].get('type','?')} | _id={r['_data'].get('_id','N/A')}")
+

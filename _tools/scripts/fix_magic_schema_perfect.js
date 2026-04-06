@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const BASE = 'e:/AntigravitiProgetti/CompendioTheWitcher';
-const SRC_DIR = path.join(BASE, 'witcher-compendium/src-packs');
+const SRC_DIR = path.join(BASE, '../src-packs');
 const DATA_DIR = path.join(BASE, 'data');
 
 const packsToFix = [
@@ -55,17 +55,6 @@ function mapClass(typeField) {
     return 'Spells';
 }
 
-function mapSource(subtype) {
-    if (!subtype) return "";
-    const s = subtype.toLowerCase();
-    if (s.includes('aria') || s.includes('air')) return "air";
-    if (s.includes('terra') || s.includes('earth')) return "earth";
-    if (s.includes('fuoco') || s.includes('fire')) return "fire";
-    if (s.includes('acqua') || s.includes('water')) return "Water"; // Capitalized W in castSpellMixin.js
-    if (s.includes('misto') || s.includes('mixed')) return "mixedElements";
-    return "";
-}
-
 const defaultDamageProperties = {
     armorPiercing: false,
     improvedArmorPiercing: false,
@@ -107,77 +96,63 @@ for (const pack of packsToFix) {
     const dir = path.join(SRC_DIR, pack);
     if (!fs.existsSync(dir)) continue;
 
-    console.log(`Nuclear cleaning items in ${pack}...`);
+    console.log(`Deep cleaning items in ${pack}...`);
     const files = fs.readdirSync(dir).filter(f => f.endsWith('.json'));
 
     for (const file of files) {
         const filePath = path.join(dir, file);
-        const oldData = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+        const data = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
         
-        let raw = rawData.find(r => r.name === oldData.name);
+        let raw = rawData.find(r => r.name === data.name);
         if (!raw) {
-            raw = rawData.find(r => oldData.name.startsWith(r.name) || r.name.startsWith(oldData.name));
+            raw = rawData.find(r => data.name.startsWith(r.name) || r.name.startsWith(data.name));
         }
 
+        const system = data.system;
         const clazz = raw ? mapClass(raw.type) : (pack.includes('rituals') ? 'ritual' : 'Spells');
         const level = raw ? mapTier(raw.tier) : 'novice';
-        const source = raw ? mapSource(raw.subtype) : (oldData.system.source || "");
 
-        // NUCLEAR: Minimum viable structure
-        const newData = {
-            _id: oldData._id,
-            name: oldData.name,
-            type: "spell", // overwritten below
-            img: oldData.img,
-            system: {
-                description: oldData.system.description || "",
-                quantity: "1", // STRING, mandatory in CommonItemData
-                weight: 0,
-                cost: 0,
-                sourcebook: oldData.system.sourcebook || "",
-                class: clazz,
-                level: level,
-                source: source,
-                stamina: (raw ? parseInt(raw.res) : 0) || 0,
-                staminaIsVar: (raw && raw.res === 'Variabile'),
-                effect: raw?.effect || oldData.system.effect || "",
-                range: raw?.range || oldData.system.range || "",
-                duration: raw?.duration || oldData.system.duration || "",
-                defence: raw?.defense || oldData.system.defence || "",
-                damageProperties: JSON.parse(JSON.stringify(defaultDamageProperties)),
-                regionProperties: JSON.parse(JSON.stringify(defaultRegionProperties)),
-                attackOptions: ["spell"],
-                spellAttackSkill: "spellcast"
-            },
-            effects: [],
-            flags: {},
-            _stats: {
-                systemId: "TheWitcherTRPG",
-                systemVersion: "v13.13.0",
-                coreVersion: "13"
-            }
-        };
-
-        // Type mapping
+        // Set mandatory properties
+        system.class = clazz;
+        system.level = level;
+        system.stamina = (raw ? parseInt(raw.res) : 0) || 0;
+        system.staminaIsVar = (raw && raw.res === 'Variabile');
+        
+        // Extended schema properties
+        system.source = raw?.subtype || system.source || "";
+        system.effect = raw?.effect || system.effect || "";
+        system.range = raw?.range || system.range || "";
+        system.duration = raw?.duration || system.duration || "";
+        system.defence = raw?.defense || system.defence || "";
+        
+        // Complex sub-objects
+        system.damageProperties = JSON.parse(JSON.stringify(defaultDamageProperties));
+        system.regionProperties = JSON.parse(JSON.stringify(defaultRegionProperties));
+        system.attackOptions = ["spell"];
+        
+        // Attack skills based on class
         if (clazz === 'ritual') {
-            newData.type = 'ritual';
-            newData.system.spellAttackSkill = 'ritcraft';
+            data.type = 'ritual';
+            system.spellAttackSkill = 'ritcraft';
         } else if (clazz === 'hex') {
-            newData.type = 'hex';
-            newData.system.spellAttackSkill = 'hexweave';
+            data.type = 'hex';
+            system.spellAttackSkill = 'hexweave';
         } else {
-            newData.type = 'spell';
+            data.type = 'spell';
+            system.spellAttackSkill = 'spellcast';
         }
 
-        const dmg = extractDamage(newData.system.effect);
+        // Damage detection
+        const dmg = extractDamage(system.effect);
         if (dmg) {
-            newData.system.causeDamages = true;
-            newData.system.damage = dmg;
-            newData.system.damageType = 'elemental';
+            system.causeDamages = true;
+            system.damage = dmg;
+            system.damageType = 'elemental';
         }
 
-        fs.writeFileSync(filePath, JSON.stringify(newData, null, 4));
+        fs.writeFileSync(filePath, JSON.stringify(data, null, 4));
     }
 }
 
-console.log("Done generating ULTIMATE clean schema for all magic items!");
+console.log("Done generating perfect schema for all magic items!");
+

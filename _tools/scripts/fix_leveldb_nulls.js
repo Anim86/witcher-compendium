@@ -35,10 +35,11 @@ async function fixPack(packPath, packName) {
     await db.close();
 }
 
-const baseDir = 'e:/AntigravitiProgetti/CompendioTheWitcher/witcher-compendium/packs';
+const baseDir = 'e:/AntigravitiProgetti/CompendioTheWitcher/../../witcher-compendium/packs';
 
 (async () => {
     await fixPack(path.join(baseDir, 'witcher-races'), 'witcher-races');
     await fixPack(path.join(baseDir, 'witcher-professions'), 'witcher-professions');
     console.log('\nFatto! Riavvia Foundry per vedere i risultati.');
 })();
+

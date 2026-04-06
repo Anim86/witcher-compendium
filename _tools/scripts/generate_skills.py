@@ -68,7 +68,7 @@ skills_data = [
     {"name": "Creare Rituali", "attr": "will", "cost": 2},
 ]
 
-output_dir = "e:/AntigravitiProgetti/CompendioTheWitcher/witcher-compendium/src-packs/witcher-skills"
+output_dir = "e:/AntigravitiProgetti/CompendioTheWitcher/../src-packs/witcher-skills"
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
 
@@ -116,3 +116,4 @@ for skill in skills_data:
         json.dump(item_data, f, ensure_ascii=False, indent=4)
 
 print(f"Generated {len(skills_data)} skill JSON files.")
+

@@ -3,10 +3,7 @@ import os
 import glob
 
 def refactor_races():
-    base_dir = "e:/AntigravitiProgetti/CompendioTheWitcher/witcher-compendium/src-packs/ag-witcher-races"
-    if not os.path.exists(base_dir):
-        print(f"Directory {base_dir} non trovata!")
-        return
+    base_dir = "e:/AntigravitiProgetti/CompendioTheWitcher/../src-packs/witcher-races"
     for file_path in glob.glob(os.path.join(base_dir, "*.json")):
         with open(file_path, "r", encoding="utf-8") as f:
             data = json.load(f)
@@ -17,16 +14,12 @@ def refactor_races():
             if perk_key in system:
                 if "value" in system[perk_key]:
                     system[perk_key]["description"] = system[perk_key].pop("value")
-                    print(f"Fixato {perk_key} in {file_path}")
         
         with open(file_path, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
 
 def refactor_professions():
-    base_dir = "e:/AntigravitiProgetti/CompendioTheWitcher/witcher-compendium/src-packs/ag-witcher-professions"
-    if not os.path.exists(base_dir):
-        print(f"Directory {base_dir} non trovata!")
-        return
+    base_dir = "e:/AntigravitiProgetti/CompendioTheWitcher/../src-packs/witcher-professions"
     for file_path in glob.glob(os.path.join(base_dir, "*.json")):
         with open(file_path, "r", encoding="utf-8") as f:
             data = json.load(f)
@@ -34,7 +27,6 @@ def refactor_professions():
         system = data.get("system", {})
         if "definingSkill" in system and "value" in system["definingSkill"]:
             system["definingSkill"]["definition"] = system["definingSkill"].pop("value")
-            print(f"Fixato definingSkill in {file_path}")
             
         for i in range(1, 4):
             path_key = f"skillPath{i}"
@@ -43,13 +35,13 @@ def refactor_professions():
                     skill_key = f"skill{j}"
                     if skill_key in system[path_key] and "value" in system[path_key][skill_key]:
                         system[path_key][skill_key]["definition"] = system[path_key][skill_key].pop("value")
-                        print(f"Fixato {path_key}.{skill_key} in {file_path}")
                         
         with open(file_path, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
 
-print("Iniziando il refactoring v2.6...")
+print("Iniziando il refactoring...")
 refactor_races()
 print("Razze completate.")
 refactor_professions()
 print("Professioni completate.")
+

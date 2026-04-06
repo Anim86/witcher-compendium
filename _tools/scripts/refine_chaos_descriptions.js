@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const SRC_PACKS = 'witcher-compendium/src-packs';
+const SRC_PACKS = '../src-packs';
 const CHAOS_TEXTI = 'Tomo del Caos/Testi';
 
 const chaosPacks = [
@@ -80,3 +80,4 @@ async function refinePacks() {
 }
 
 refinePacks().then(() => console.log('Refinement Complete.'));
+

@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const BASE = 'e:/AntigravitiProgetti/CompendioTheWitcher';
-const SRC_DIR = path.join(BASE, 'witcher-compendium/src-packs');
+const SRC_DIR = path.join(BASE, '../src-packs');
 const DATA_DIR = path.join(BASE, 'data');
 
 const packsToFix = [
@@ -130,3 +130,4 @@ for (const pack of packsToFix) {
 }
 
 console.log("Comprehensive fix complete!");
+

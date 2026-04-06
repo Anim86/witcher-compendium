@@ -47,7 +47,7 @@ def extract_strings_from_log(filepath):
     return results
 
 # Controlla le cartelle LevelDB delle razze e professioni
-packs_dir = 'e:/AntigravitiProgetti/CompendioTheWitcher/witcher-compendium/packs'
+packs_dir = 'e:/AntigravitiProgetti/CompendioTheWitcher/../../witcher-compendium/packs'
 
 for pack_name in ['witcher-races', 'witcher-professions']:
     pack_dir = os.path.join(packs_dir, pack_name)
@@ -87,3 +87,4 @@ for pack_name in ['witcher-races', 'witcher-professions']:
         print(f"  Totale record LevelDB: {len(all_found)}")
     else:
         print("  CARTELLA NON ESISTE (buono!)")
+

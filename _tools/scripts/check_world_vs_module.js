@@ -3,7 +3,7 @@ const path = require('path');
 const os = require('os');
 
 const WORLD_DIR = path.join(os.homedir(), 'AppData', 'Local', 'FoundryVTT', 'Data', 'worlds', 'test-witcher', 'data', 'items');
-const PACKS_DIR = 'e:/AntigravitiProgetti/CompendioTheWitcher/witcher-compendium/packs';
+const PACKS_DIR = 'e:/AntigravitiProgetti/CompendioTheWitcher/../../witcher-compendium/packs';
 
 async function readAll(dbPath, label) {
     console.log(`\n=== ${label} ===`);
@@ -32,3 +32,4 @@ async function readAll(dbPath, label) {
     await readAll(path.join(PACKS_DIR, 'witcher-races'), 'MODULO - witcher-races');
     await readAll(path.join(PACKS_DIR, 'witcher-professions'), 'MODULO - witcher-professions');
 })();
+

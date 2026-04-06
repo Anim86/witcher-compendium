@@ -2,7 +2,7 @@ import json
 import os
 import re
 
-SRC_ROOT = "witcher-compendium/src-packs"
+SRC_ROOT = "../src-packs"
 TEXT_DIRS = ["Tomo Base/Testi", "Tomo del Caos/Testi"]
 
 def clean_text(text):
@@ -76,3 +76,4 @@ def reinject():
 
 if __name__ == "__main__":
     reinject()
+
