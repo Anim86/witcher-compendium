@@ -1,6 +1,11 @@
 <div class="wizard-step step-gear">
     <h2>{{localize "WITCHER.Wizard.Step.Gear.Title"}}</h2>
     <p>{{localize "WITCHER.Wizard.Step.Gear.Description"}}</p>
+    
+    <div class="money-selection">
+        <label>{{localize "WITCHER.Wizard.Gear.MoneyLabel"}}:</label>
+        <input type="number" name="money" value="{{character.money}}" data-action="updateMoney">
+    </div>
 
     <div class="gear-container">
         <div class="gear-categories">

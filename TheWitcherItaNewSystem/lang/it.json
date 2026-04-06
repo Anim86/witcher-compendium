@@ -98,6 +98,10 @@
           "Title": "Abilità",
           "Description": "Assegna i punti alle tue abilità professionali e personali."
         },
+        "Stats": {
+          "Title": "Statistiche",
+          "Description": "Distribuisci i tuoi punti (max 10 per ogni statistica)."
+        },
         "Gear": {
           "Title": "Equipaggiamento",
           "Description": "Ottieni i tuoi averi iniziali basati sulla professione."
@@ -106,6 +110,9 @@
           "Title": "Riepilogo",
           "Description": "Dai un nome al tuo eroe e completa la creazione."
         }
+      },
+      "Finish": {
+        "Callout": "Tutto pronto! Clicca su 'Crea Personaggio' per terminare."
       },
       "Stats": {
         "Title": "Statistiche",
@@ -129,6 +136,10 @@
         "AddButton": "Aggiungi",
         "Filter": "Cerca abilità...",
         "Summary": "Abilità Selezionate"
+      },
+      "Gear": {
+        "Selected": "Equipaggiamento Selezionato",
+        "MoneyLabel": "Corone Iniziali"
       },
       "Background": {
         "Origin": "Origine",

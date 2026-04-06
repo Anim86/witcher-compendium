@@ -9,7 +9,7 @@
 }
 
 .witcher-wizard .window-content {
-    background: url('../assets/images/wizard_bg_mago.png') center/cover no-repeat !important;
+    background: url('../assets/wizard_bg_mago.png') center/cover no-repeat !important;
     background-color: #000 !important;
     color: var(--wizard-text-dark);
     font-family: 'Outfit', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -101,10 +101,42 @@ form.witcher-wizard .wizard-content {
     text-shadow: none;
 }
 
+.witcher-wizard .step-background h3,
+.witcher-wizard .derived-stats-preview h3 {
+    color: #444 !important;
+}
+
 .witcher-wizard p {
     color: var(--wizard-text-dark);
     line-height: 1.4;
     margin-bottom: 20px;
+}
+
+.witcher-wizard .money-selection {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.4);
+    padding: 10px 15px;
+    border-radius: 6px;
+    border: 1px solid var(--wizard-border);
+    max-width: fit-content;
+}
+
+.witcher-wizard .money-selection label {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #444;
+}
+
+.witcher-wizard .money-selection input {
+    width: 100px;
+    padding: 5px;
+    border: 1px solid var(--wizard-border);
+    border-radius: 3px;
+    font-weight: bold;
+    text-align: center;
 }
 
 /* Horizontal Stats Layout */

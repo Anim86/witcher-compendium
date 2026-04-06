@@ -62,6 +62,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         adjustStat: function(event, target) { this._adjustStat(event, target); },
         adjustSkill: function(event, target) { this._adjustSkill(event, target); },
         updateAge: function(event, target) { this._updateAge(event, target); },
+        updateMoney: function(event, target) { this._updateMoney(event, target); },
         updateHomeland: function(event, target) { this._updateHomeland(event, target); },
         rollBackground: function(event, target) { this._rollBackground(event, target); },
         rollLifeEvents: function(event, target) { this._rollLifeEvents(event, target); },
@@ -271,7 +272,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
     _onRender(context, options) {
         super._onRender(context, options);
         const html = $(this.element);
-        const saveScroll = () => { this._scrollPos = this.element.querySelector(".witcher-wizard-content")?.scrollTop || 0; };
+        const saveScroll = () => { this._scrollPos = this.element.querySelector(".wizard-content")?.scrollTop || 0; };
         html.find("[data-action]").not("select, input").on("click", (event) => {
             const action = event.currentTarget.dataset.action;
             if (this.constructor.ACTIONS[action]) { saveScroll(); this.constructor.ACTIONS[action].call(this, event, event.currentTarget); }
@@ -281,7 +282,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             if (this.constructor.ACTIONS[action]) { saveScroll(); this.constructor.ACTIONS[action].call(this, event, event.currentTarget); }
         });
         if (this._scrollPos) { 
-            const c = this.element.querySelector(".witcher-wizard-content"); 
+            const c = this.element.querySelector(".wizard-content"); 
             if (c) requestAnimationFrame(() => c.scrollTop = this._scrollPos); 
         }
     }
@@ -289,6 +290,8 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
     async _nextStep() { if (this.step < this.maxSteps) { this.step++; this.render(true); } }
     async _prevStep() { if (this.step > 1) { this.step--; this.render(true); } }
     async _updateHomeland(event, target) { this.characterData.homeland = target.value; this.render(true); }
+    async _updateAge(event, target) { this.characterData.age = parseInt(target.value); this.render(true); }
+    async _updateMoney(event, target) { this.characterData.money = parseInt(target.value); this.render(true); }
     async _goToStep(event, target) { this.step = parseInt(target.dataset.step); this.render(true); }
 
     async _selectRace(event, target) {
