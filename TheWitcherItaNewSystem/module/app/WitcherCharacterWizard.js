@@ -263,21 +263,35 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
     }
 
     _getStepList() {
-        return [
-            { id: 1, label: "WITCHER.Wizard.Step.Race.Title", active: this.step === 1, complete: this.step > 1 },
-            { id: 2, label: "WITCHER.Wizard.Step.Background.Title", active: this.step === 2, complete: this.step > 2 },
-            { id: 3, label: "WITCHER.Wizard.Step.Profession.Title", active: this.step === 3, complete: this.step > 3 },
-            { id: 4, label: "WITCHER.Wizard.Step.Stats.Title", active: this.step === 4, complete: this.step > 4 },
-            { id: 5, label: "WITCHER.Wizard.Step.Skills.Title", active: this.step === 5, complete: this.step > 5 },
-            { id: 6, label: "WITCHER.Wizard.Step.Gear.Title", active: this.step === 6, complete: this.step > 6 },
-            { id: 7, label: "WITCHER.Wizard.Step.Finish.Title", active: this.step === 7, complete: this.step > 7 },
-            { id: 8, label: "WITCHER.Wizard.Step.Finalize.Title", active: this.step === 8, complete: this.step > 8 }
+        const labels = [
+            "WITCHER.Wizard.Step.Race.Title",
+            "WITCHER.Wizard.Step.Background.Title",
+            "WITCHER.Wizard.Step.Profession.Title",
+            "WITCHER.Wizard.Step.Stats.Title",
+            "WITCHER.Wizard.Step.Skills.Title",
+            "WITCHER.Wizard.Step.Gear.Title",
+            "WITCHER.Wizard.Step.Finalize.Title"
         ];
+        return labels.map((l, i) => ({
+            id: i + 1,
+            number: i + 1,
+            label: l,
+            active: this.step === i + 1,
+            complete: this.step > i + 1
+        }));
     }
 
     _getTemplateForStep(step) {
-        const t = { 1:"race", 2:"background", 3:"profession", 4:"stats", 5:"skills", 6:"gear", 7:"summary", 8:"finish" };
-        return `systems/TheWitcherItaNewSystem/templates/app/wizard/steps/${t[step]}.hbs`;
+        const t = { 
+            1: "race", 
+            2: "background", 
+            3: "profession", 
+            4: "stats", 
+            5: "skills", 
+            6: "gear", 
+            7: "finish" 
+        };
+        return "systems/TheWitcherItaNewSystem/templates/app/wizard/steps/" + t[step] + ".hbs";
     }
 
     _onRender(context, options) {
@@ -321,36 +335,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
     async _nextStep() { if (this.step < this.maxSteps) { this.step++; this.render(true); } }
     async _prevStep() { if (this.step > 1) { this.step--; this.render(true); } }
 
-    _getTemplateForStep(step) {
-        const t = { 
-            1: "race", 
-            2: "background", 
-            3: "profession", 
-            4: "stats", 
-            5: "skills", 
-            6: "gear", 
-            7: "finish" 
-        };
-        return "systems/TheWitcherItaNewSystem/templates/app/wizard/steps/" + t[step] + ".hbs";
-    }
 
-    _getStepList() {
-        const labels = [
-            "WITCHER.Wizard.Step.Race.Title",
-            "WITCHER.Wizard.Step.Background.Title",
-            "WITCHER.Wizard.Step.Profession.Title",
-            "WITCHER.Wizard.Step.Stats.Title",
-            "WITCHER.Wizard.Step.Skills.Title",
-            "WITCHER.Wizard.Step.Gear.Title",
-            "WITCHER.Wizard.Step.Finalize.Title"
-        ];
-        return labels.map((l, i) => ({
-            number: i + 1,
-            label: l,
-            active: this.step === i + 1,
-            completed: this.step > i + 1
-        }));
-    }
     async _updateHomeland(event, target) { this.characterData.homeland = target.value; this.render(true); }
     async _updateAge(event, target) { this.characterData.age = parseInt(target.value); this.render(true); }
     async _updateMoney(event, target) { this.characterData.money = parseInt(target.value); this.render(true); }
