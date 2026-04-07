@@ -9,11 +9,11 @@
 }
 
 /* ── Global override: nessun testo giallo nel wizard ──────────────────── */
-.witcher-wizard .wizard-content label,
+.witcher-wizard .wizard-content label:not(.points-display):not(.stat-pill):not(.gear-tag),
 .witcher-wizard .wizard-content h3,
 .witcher-wizard .wizard-content h4,
 .witcher-wizard .wizard-content p,
-.witcher-wizard .wizard-content span:not(.badge):not(.stat-pill):not(.step-num):not(.step-label),
+.witcher-wizard .wizard-content span:not(.badge):not(.stat-pill):not(.step-num):not(.step-label):not(.points-value):not(.stat-abbr):not(.stat-value):not(.gear-tag),
 .witcher-wizard .wizard-content .form-group label,
 .witcher-wizard .wizard-content .background-section h3,
 .witcher-wizard .wizard-content .background-section label {
@@ -724,7 +724,7 @@ form.witcher-wizard .gear-item img {
 
 /* Migliora la leggibilità sulla pergamena scura */
 form.witcher-wizard .wizard-content {
-    background: rgba(255, 255, 255, 0.94) !important;
+    background: rgba(255, 255, 255, 0.98) !important;
     color: #1a1a1a !important;
     box-shadow: 0 4px 20px rgba(0,0,0,0.5);
 }
