@@ -1,4 +1,11 @@
-const { ApplicationV2, HandlebarsApplicationMixin } = foundry.applications.api;
+const fs = require('fs');
+const filepath = 'e:/AntigravitiProgetti/CompendioTheWitcher/TheWitcherItaNewSystem/module/app/WitcherCharacterWizard.js';
+let js = fs.readFileSync(filepath, 'utf8');
+
+// The rewrite script below replaces chunks of the JS. Let's do a complete rewrite.
+// Rather than complex replace strings, let's just write the whole file since it's only 560 lines.
+
+const fullCode = `const { ApplicationV2, HandlebarsApplicationMixin } = foundry.applications.api;
 
 /**
  * Character Creation Wizard for The Witcher TRPG.
@@ -30,8 +37,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             skills: {},
             selectedPickupSkills: [], // We'll populate this dynamically
             gear: [],
-            money: 0,
-            selectedProfessionGear: []
+            money: 0
         };
 
         // Cache for compendium data
@@ -62,23 +68,6 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         }
     };
 
-    
-    static PROFESSION_GEAR_MAP = {
-        "Armigero": { choose: 5, items: ["Kord", "Lancia", "Ascia da Battaglia", "Coltello da Lancio", "Sacco", "Camaglio", "Brigantina", "Brache Corazzate", "Balestra", "Brocchiero d'Acciaio"] },
-        "Artigiano": { choose: 5, items: ["Utensili da armaiolo", "Utensili da mercante", "Spada di Ferro", "Liuto", "Attrezzatura alchemica", "Clessidra", "Scrigno piccolo", "Mazza", "50 corone in componenti", "Lucchetto"] },
-        "Bardo": { choose: 5, items: ["Plancia da poker con dadi", "Mazzo di Gwent", "Specchietto", "Liuto", "Superalcolici", "Pugnale", "Profumo/colonia", "Borsello", "Fodero da giarrettiera", "Diario"] },
-        "Criminale": { choose: 5, items: ["Dadi truccati", "Lanterna", "Tasca segreta", "Arnesi da scasso", "Fodero da manica", "Stiletto", "Tirapugni", "Coltello da Lancio", "Cloroformio", "Sacco"] },
-        "Mago": { choose: 5, items: ["Clessidra", "Kit per il trucco", "Borsello", "Cronista", "Specchietto", "Pugnale", "Bastone", "Fodero da giarrettiera", "Diario", "100 corone in componenti"] },
-        "Medico": { choose: 5, items: ["Polvere coagulante", "Fluido sterilizzante", "Erbe anestetiche", "Strumenti chirurgici", "Cronista", "Clessidra", "Candele", "Coperta", "Tenda", "Pugnale"] },
-        "Mercante": { choose: 3, items: ["Cronista", "Utensili da mercante", "Tenda", "Diario", "Balestra", "Pugnale", "Carro", "Mulo"] },
-        "Prete": { choose: 5, items: ["Simbolo sacro", "Fluido sterilizzante", "Attrezzatura alchemica", "Strumenti chirurgici", "Borsello", "Pugnale", "Bastone", "Polvere coagulante", "Erbe anestetiche", "100 corone in componenti"] },
-        "Witcher": { 
-            always: ["Medaglione dei witcher", "Spada d'Arme", "Spada d'Argento", "Formula per pozioni", "Formula per unguenti", "Formula per decotto", "Gambesone a Doppia Trama", "Coltello da Lancio"],
-            choose: 2, 
-            items: ["Attrezzatura alchemica", "Cavallo", "Balestrino"] 
-        }
-    };
-
     static ACTIONS = {
         nextStep: function(event, target) { this._nextStep(event, target); },
         prevStep: function(event, target) { this._prevStep(event, target); },
@@ -96,8 +85,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         goToStep: function(event, target) { this._goToStep(event, target); },
         addPickupSkill: function(event, target) { this._addPickupSkill(event, target); },
         finish: function(event, target) { this._finish(event, target); },
-        switchSkillTab: function(event, target) { this._switchSkillTab(event, target); },
-        toggleProfessionGear: function(event, target) { this._toggleProfessionGear(event, target); }
+        switchSkillTab: function(event, target) { this._switchSkillTab(event, target); }
     };
 
     static PARTS = {
@@ -151,48 +139,6 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             }, 0);
             const isOverBudget = gearCost > (Number(this.characterData.money) || 0);
             
-            
-            // 2.1 Profession Gear Logic
-            const profName = this.characterData.profession?.name;
-            const gearConfig = this.constructor.PROFESSION_GEAR_MAP[profName];
-            let professionGearList = [];
-            let professionGearRemaining = 0;
-
-            if (gearConfig) {
-                const searchPacks = [...(this.weapons || []), ...(this.armor || []), ...(this.gear || [])];
-                
-                // Helper to find item by names (fuzzy or exact)
-                const findItem = (name) => {
-                    const cleanName = name.toLowerCase().replace(/[^a-z0-9]/g, '');
-                    return searchPacks.find(i => {
-                        const iName = i.name.toLowerCase().replace(/[^a-z0-9]/g, '');
-                        return iName.includes(cleanName) || cleanName.includes(iName);
-                    });
-                };
-
-                // Fixed items (Witcher only for now)
-                const fixedItems = (gearConfig.always || []).map(name => {
-                    const item = findItem(name);
-                    return item ? sanitizeItem(item) : { name, missing: true };
-                });
-
-                // Chooseable items
-                const chooseableItems = gearConfig.items.map(name => {
-                    const item = findItem(name);
-                    const itemDoc = item ? sanitizeItem(item) : { name, missing: true };
-                    const id = item?.id || name;
-                    return {
-                        ...itemDoc,
-                        id: id,
-                        selected: this.characterData.selectedProfessionGear.includes(id)
-                    };
-                });
-
-                professionGearList = [...fixedItems, ...chooseableItems];
-                const selectedCount = this.characterData.selectedProfessionGear.length;
-                professionGearRemaining = Math.max(0, (gearConfig.choose || 0) - selectedCount);
-            }
-
             // 2. Load Gear
             if (!this.weapons) {
                 const weaponPack = game.packs.get("witcher-compendium.witcher-weapons");
@@ -273,9 +219,6 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                     equipment: (this.gear || []).map(sanitizeItem)
                 },
                 gearCost: gearCost,
-                professionGearList: professionGearList,
-                professionGearRemaining: professionGearRemaining,
-                professionGearChoose: gearConfig?.choose || 0,
                 isOverBudget: isOverBudget,
                 professionGear: this.characterData.profession?.system?.notes || "",
                 summary: this._getSummaryContext()
@@ -449,26 +392,6 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
     async _updateAge(event, target) { this.characterData.age = parseInt(target.value); this.render(true); }
     async _updateMoney(event, target) { this.characterData.money = parseInt(target.value); this.render(true); }
     async _goToStep(event, target) { this.step = parseInt(target.dataset.step); this.render(true); }
-    
-    _toggleProfessionGear(event, target) {
-        const id = target.dataset.itemId;
-        const profName = this.characterData.profession?.name;
-        const gearConfig = this.constructor.PROFESSION_GEAR_MAP[profName];
-        if (!gearConfig) return;
-
-        const idx = this.characterData.selectedProfessionGear.indexOf(id);
-        if (idx > -1) {
-            this.characterData.selectedProfessionGear.splice(idx, 1);
-        } else {
-            if (this.characterData.selectedProfessionGear.length < (gearConfig.choose || 0)) {
-                this.characterData.selectedProfessionGear.push(id);
-            } else {
-                ui.notifications.warn(`Puoi scegliere solo ${gearConfig.choose} oggetti per la tua dotazione.`);
-            }
-        }
-        this.render(true);
-    }
-
     _switchSkillTab(event, target) { 
         this.activeSkillTab = target.dataset.tab; 
         this.render(true);
@@ -486,28 +409,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         if (prof) {
             // Reset old profession skills to 0
             this.characterData.skills = {};
-            this.characterData.selectedProfessionGear = [];
-            
-            // Reset old profession gear
-            this.characterData.selectedProfessionGear = [];
-            
-            // Pre-select first 5 (or choose amount) for non-Witcher
-            const gearConfig = this.constructor.PROFESSION_GEAR_MAP[prof.name];
-            if (gearConfig && prof.name !== "Witcher") {
-                const searchPacks = [...(this.weapons || []), ...(this.armor || []), ...(this.gear || [])];
-                const findItem = (name) => {
-                    const cleanName = name.toLowerCase().replace(/[^a-z0-9]/g, '');
-                    const item = searchPacks.find(i => i.name.toLowerCase().replace(/[^a-z0-9]/g, '').includes(cleanName));
-                    return item;
-                };
-                
-                for (let i = 0; i < Math.min(gearConfig.choose || 0, gearConfig.items.length); i++) {
-                    const item = findItem(gearConfig.items[i]);
-                    if (item) this.characterData.selectedProfessionGear.push(item.id);
-                    else this.characterData.selectedProfessionGear.push(gearConfig.items[i]);
-                }
-            }
-
+            this.characterData.selectedPickupSkills = [];
             this.characterData.profession = prof;
             if (prof.img) this.characterData.img = prof.img;
             
@@ -678,38 +580,6 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 return item;
             });
             itemsToCreate.push(...gearArr);
-
-        
-        // Add selected profession gear
-        const profName = this.characterData.profession?.name;
-        const gearConfig = this.constructor.PROFESSION_GEAR_MAP[profName];
-        if (gearConfig) {
-            const searchPacks = [...(this.weapons || []), ...(this.armor || []), ...(this.gear || [])];
-            const findItem = (nameOrId) => {
-                return searchPacks.find(i => i.id === nameOrId || i.name === nameOrId);
-            };
-
-            // Fixed items
-            for (const name of (gearConfig.always || [])) {
-                const item = findItem(name);
-                if (item) {
-                    const cloned = foundry.utils.deepClone(item.toObject ? item.toObject() : item);
-                    delete cloned._id; delete cloned.id;
-                    itemsToCreate.push(cloned);
-                }
-            }
-
-            // Selected items
-            for (const id of this.characterData.selectedProfessionGear) {
-                const item = findItem(id);
-                if (item) {
-                    const cloned = foundry.utils.deepClone(item.toObject ? item.toObject() : item);
-                    delete cloned._id; delete cloned.id;
-                    itemsToCreate.push(cloned);
-                }
-            }
-        }
-
         }
 
         // Collect exact skills from allSkills
@@ -733,8 +603,12 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             await actor.createEmbeddedDocuments("Item", itemsToCreate);
         }
 
-        ui.notifications.info(`${name} creato con successo!`);
+        ui.notifications.info(\`\${name} creato con successo!\`);
         this.close();
         if (actor.sheet) actor.sheet.render(true);
     }
 }
+`;
+
+fs.writeFileSync(filepath, fullCode);
+console.log('Done script');

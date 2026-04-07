@@ -1,4 +1,7 @@
-<div class="wizard-step step-gear">
+const fs = require('fs');
+const filepath = 'e:/AntigravitiProgetti/CompendioTheWitcher/TheWitcherItaNewSystem/templates/app/wizard/steps/gear.hbs';
+
+const fullHbs = `<div class="wizard-step step-gear">
     <h2>{{localize "WITCHER.Wizard.Step.Gear.Title"}}</h2>
     <p>{{localize "WITCHER.Wizard.Step.Gear.Description"}}</p>
     
@@ -105,3 +108,7 @@
         </div>
     </div>
 </div>
+`;
+
+fs.writeFileSync(filepath, fullHbs);
+console.log('Done hbs');
