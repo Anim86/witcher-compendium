@@ -47,6 +47,17 @@
             </div>
 
             <div class="summary-card">
+                <h3>{{localize "WITCHER.Wizard.Gear.InitialGear"}}</h3>
+                <div class="profession-gear-list">
+                    {{#each summary.professionGear}}
+                    <span class="gear-tag">{{name}}</span>
+                    {{else}}
+                    <p><em>Nessun oggetto professionale scelto.</em></p>
+                    {{/each}}
+                </div>
+            </div>
+
+            <div class="summary-card">
                 <h3>{{localize "WITCHER.Wizard.Gear.PurchasedGear"}}</h3>
                 <div class="purchased-gear-list">
                     {{#each character.gear}}

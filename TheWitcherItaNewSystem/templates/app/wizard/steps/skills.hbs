@@ -17,12 +17,11 @@
         <section class="content">
             <!-- TAB: Abilità Professionali -->
             <div class="tab {{#if (eq activeSkillTab 'profession-skills')}}active{{/if}}" data-group="skill-tabs" data-tab="profession-skills">
-                <div class="skills-pool-info">
-                    <span class="pool-label">{{localize "WITCHER.Wizard.Skills.ProfessionPool"}}: </span>
-                    <span class="pool-value {{#if (lt professionPointsRemaining 0)}}negative{{/if}}">
-                        <strong>{{professionPointsRemaining}}</strong> / 44
+                <div class="points-display">
+                    <span class="points-label">{{localize "WITCHER.Wizard.Skills.ProfessionPool"}}: </span>
+                    <span class="points-value {{#if (lt professionPointsRemaining 0)}}negative{{/if}}">
+                        {{professionPointsRemaining}} / 44
                     </span>
-                    <span class="pool-hint">{{localize "WITCHER.Wizard.Skills.CapHint"}}</span>
                 </div>
                 <div class="skills-grid compact-skills">
                     {{#each professionSkills}}

@@ -299,15 +299,34 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 skills.push({ label: s ? s.name : key, value });
             }
         }
-        return { stats, skills };
+
+        // Professional gear (Fix 6)
+        const profGear = [];
+        const profName = this.characterData.profession?.name;
+        const gearConfig = this.constructor.PROFESSION_GEAR_MAP[profName];
+        if (gearConfig) {
+            const searchPacks = [...(this.weapons || []), ...(this.armor || []), ...(this.gear || [])];
+            const findItem = (nameOrId) => searchPacks.find(i => i.id === nameOrId || i.name === nameOrId);
+            
+            for (const name of (gearConfig.always || [])) {
+                const item = findItem(name);
+                if (item) profGear.push({ name: item.name });
+            }
+            for (const id of this.characterData.selectedProfessionGear) {
+                const item = findItem(id);
+                if (item) profGear.push({ name: item.name });
+            }
+        }
+
+        return { stats, skills, professionGear: profGear };
     }
 
     _getProfessionSkillNames() {
         if (!this.characterData.profession) return [];
-        const profSkills = typeof this.characterData.profession.system?.professionSkills === "string"
-            ? this.characterData.profession.system.professionSkills.split(",").map(s => s.trim()).filter(Boolean)
-            : [];
-        return profSkills;
+        const raw = this.characterData.profession.system?.professionSkills;
+        if (Array.isArray(raw)) return raw;
+        if (typeof raw === "string") return raw.split(",").map(s => s.trim()).filter(Boolean);
+        return [];
     }
 
     _getProfessionSkills() {
@@ -682,9 +701,9 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 return item;
             });
             itemsToCreate.push(...gearArr);
+        }
 
-        
-        // Add selected profession gear
+        // 5. Add selected profession gear (Fix 8: decoupled)
         const profName = this.characterData.profession?.name;
         const gearConfig = this.constructor.PROFESSION_GEAR_MAP[profName];
         if (gearConfig) {
@@ -712,8 +731,6 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                     itemsToCreate.push(cloned);
                 }
             }
-        }
-
         }
 
         // Collect exact skills from allSkills

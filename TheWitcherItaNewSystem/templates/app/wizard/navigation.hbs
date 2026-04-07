@@ -2,7 +2,8 @@
     {{#each steps}}
     <div class="nav-item {{#if active}}active{{/if}} {{#if complete}}completed{{/if}}" 
          data-action="goToStep" data-step="{{id}}">
-        <span class="step-label">Step {{number}}</span>
+        <span class="step-num">Step {{number}}</span>
+        <span class="step-label">{{localize label}}</span>
     </div>
     {{/each}}
 </nav>

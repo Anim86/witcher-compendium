@@ -22,11 +22,6 @@ Hooks.on("preCreateItem", (item, data, options, userId) => {
         const race = actor.items.find(i => i.type === "race")?.name || "";
         const profName = item.name.toLowerCase();
 
-        if ((profName.includes("mago") || profName.includes("prete") || profName.includes("sacerdote")) && 
-            !(race.includes("Umani") || race.includes("Elfi"))) {
-            ui.notifications.error("Restrizione: I Maghi e i Preti possono essere solo Umani o Elfi.");
-            return false;
-        }
 
         if (profName.includes("witcher") && !race.includes("Witcher")) {
             ui.notifications.error("Restrizione: La professione Witcher richiede la razza Witcher.");
