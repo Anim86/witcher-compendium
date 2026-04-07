@@ -200,7 +200,8 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 },
                 gearCost: gearCost,
                 isOverBudget: isOverBudget,
-                professionGear: this.characterData.profession?.system?.gear || "",
+                // system.gear doesn't exist in ProfessionData schema; use notes (HTML field) instead
+                professionGear: this.characterData.profession?.system?.notes || "",
                 summary: this._getSummaryContext()
             };
         } catch (error) {
@@ -351,6 +352,13 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         const id = target.dataset.profId;
         const prof = this.professions.find(p => p.id === id);
         if (prof) {
+            // Reset old profession skills to 0 before switching
+            const oldProf = this.characterData.profession;
+            if (oldProf?.system?.skills) {
+                Object.keys(oldProf.system.skills).forEach(s => {
+                    this.characterData.skills[s] = 0;
+                });
+            }
             this.characterData.profession = prof;
             // Default image of the profession
             if (prof.img) this.characterData.img = prof.img;
@@ -388,22 +396,26 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         const delta = parseInt(target.dataset.delta || 0);
         let val = (this.characterData.skills[skill] || 0) + delta;
         if (event.type === "change") val = parseInt(target.value);
-        val = Math.max(0, Math.min(10, val));
-        
-        // Validation: Verify if we have points
-        const config = CONFIG.WITCHER.skillMap[skill];
+
+        // Determine if this is a profession skill and apply correct cap
         const isProg = this.characterData.profession?.system?.skills?.[skill] !== undefined;
+        const CAP = isProg ? 6 : 10;
+        val = Math.max(0, Math.min(CAP, val));
+
+        // Profession skills cannot go below 1 (they start at 1 by default)
+        if (isProg) val = Math.max(1, val);
+
         const type = isProg ? "profession" : "pickup";
-        
         const oldVal = this.characterData.skills[skill] || 0;
         this.characterData.skills[skill] = val;
-        
+
+        // Validation: ensure we still have points remaining
         const remaining = this._calculateSkillPoints(type);
         if (remaining < 0) {
             this.characterData.skills[skill] = oldVal;
             ui.notifications.warn("Non hai abbastanza punti per aumentare questa abilità.");
         }
-        
+
         this.render(true);
     }
 
