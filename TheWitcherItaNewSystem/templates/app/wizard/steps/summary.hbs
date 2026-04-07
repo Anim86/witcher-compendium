@@ -29,7 +29,9 @@
             {{#each character.gear}}
             <li>
                 <span>{{name}}</span>
-                <span class="cost">{{system.cost.value}} corone</span>
+                <span class="cost">
+                    {{#if system.cost.value}}{{system.cost.value}}{{else}}{{system.cost}}{{/if}} corone
+                </span>
             </li>
             {{/each}}
         </ul>

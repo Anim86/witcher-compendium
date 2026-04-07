@@ -676,32 +676,33 @@ form.witcher-wizard .gear-item img {
     text-decoration: underline wavy;
 }
 
- 
- / *    % %  O v e r r i d e s   F e e d b a c k   U t e n t e   1 4 . 0 . 8    % % % % % % % % % % % % % % % % % % % %  * / 
- . w i t c h e r - w i z a r d   . p o i n t s - d i s p l a y ,   
- . w i t c h e r - w i z a r d   . p o i n t s - d i s p l a y   l a b e l ,   
- . w i t c h e r - w i z a r d   . p o i n t s - d i s p l a y   . p o i n t s - v a l u e , 
- . w i t c h e r - w i z a r d   . p o i n t s - d i s p l a y   s p a n   { 
-         c o l o r :   # f f f f f f   ! i m p o r t a n t ; 
- } 
- 
- . w i t c h e r - w i z a r d   . s t a t - p i l l , 
- . w i t c h e r - w i z a r d   . s t a t - p i l l   . s t a t - a b b r , 
- . w i t c h e r - w i z a r d   . s t a t - p i l l   . s t a t - v a l u e , 
- . w i t c h e r - w i z a r d   . s t a t - p i l l   s p a n   { 
-         c o l o r :   # f f f f f f   ! i m p o r t a n t ; 
- } 
- 
- . w i t c h e r - w i z a r d   . m o n e y - s u m m a r y . o v e r b u d g e t   { 
-         b a c k g r o u n d :   r g b a ( 2 3 0 ,   5 7 ,   7 0 ,   0 . 1 ) ; 
-         b o r d e r :   1 p x   s o l i d   # e 6 3 9 4 6 ; 
-         p a d d i n g :   1 0 p x ; 
-         b o r d e r - r a d i u s :   4 p x ; 
-         m a r g i n - t o p :   1 0 p x ; 
- } 
- 
- . w i t c h e r - w i z a r d   . m o n e y - s u m m a r y . o v e r b u d g e t   . b u d g e t - w a r n i n g   { 
-         c o l o r :   # e 6 3 9 4 6 ; 
- } 
-  
- 
+
+
+/* -- Overrides Feedback Utente 14.0.9 -------------------- */
+.witcher-wizard .points-display, 
+.witcher-wizard .points-display label, 
+.witcher-wizard .points-display .points-value,
+.witcher-wizard .points-display span,
+.witcher-wizard .stats-outer-container .points-display .points-value {
+    color: #ffffff !important;
+}
+
+.witcher-wizard .stat-pill,
+.witcher-wizard .stat-pill .stat-abbr,
+.witcher-wizard .stat-pill .stat-value,
+.witcher-wizard .stat-pill span {
+    color: #ffffff !important;
+}
+
+.witcher-wizard .money-summary.overbudget {
+    background: rgba(230, 57, 70, 0.1);
+    border: 1px solid #e63946;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.witcher-wizard .money-summary.overbudget .budget-warning {
+    color: #e63946;
+}
+

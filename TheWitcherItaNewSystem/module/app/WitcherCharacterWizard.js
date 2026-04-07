@@ -200,6 +200,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 },
                 gearCost: gearCost,
                 isOverBudget: isOverBudget,
+                professionChoiceRequired: false, // Placeholder for future logic
                 summary: this._getSummaryContext()
             };
         } catch (error) {
