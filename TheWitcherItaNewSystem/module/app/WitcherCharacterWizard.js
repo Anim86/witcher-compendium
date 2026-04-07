@@ -11,7 +11,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
 
         // Wizard State
         this.step = 1;
-        this.maxSteps = 7;
+        this.maxSteps = 8;
         
         // Character Data
         this.characterData = {
@@ -113,6 +113,13 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 });
             }
             
+            // 1.1 Calculate Budget and Gear Cost
+            const gearCost = this.characterData.gear.reduce((acc, item) => {
+                const cost = Number(item.system?.cost?.value || item.system?.cost || 0);
+                return acc + cost;
+            }, 0);
+            const isOverBudget = gearCost > (Number(this.characterData.money) || 0);
+            
             // 2. Load Gear
             if (!this.weapons) {
                 const weaponPack = game.packs.get("witcher-compendium.witcher-weapons");
@@ -191,6 +198,8 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                     armor: (this.armor || []).map(sanitizeItem),
                     equipment: (this.gear || []).map(sanitizeItem)
                 },
+                gearCost: gearCost,
+                isOverBudget: isOverBudget,
                 summary: this._getSummaryContext()
             };
         } catch (error) {
@@ -260,12 +269,13 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             { id: 4, label: "WITCHER.Wizard.Step.Stats.Title", active: this.step === 4, complete: this.step > 4 },
             { id: 5, label: "WITCHER.Wizard.Step.Skills.Title", active: this.step === 5, complete: this.step > 5 },
             { id: 6, label: "WITCHER.Wizard.Step.Gear.Title", active: this.step === 6, complete: this.step > 6 },
-            { id: 7, label: "WITCHER.Wizard.Step.Finish.Title", active: this.step === 7, complete: this.step > 7 }
+            { id: 7, label: "WITCHER.Wizard.Step.Finish.Title", active: this.step === 7, complete: this.step > 7 },
+            { id: 8, label: "WITCHER.Wizard.Step.Finalize.Title", active: this.step === 8, complete: this.step > 8 }
         ];
     }
 
     _getTemplateForStep(step) {
-        const t = { 1:"race", 2:"background", 3:"profession", 4:"stats", 5:"skills", 6:"gear", 7:"finish" };
+        const t = { 1:"race", 2:"background", 3:"profession", 4:"stats", 5:"skills", 6:"gear", 7:"summary", 8:"finish" };
         return `systems/TheWitcherItaNewSystem/templates/app/wizard/steps/${t[step]}.hbs`;
     }
 
@@ -325,6 +335,8 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         const prof = this.professions.find(p => p.id === id);
         if (prof) {
             this.characterData.profession = prof;
+            // Default image of the profession
+            if (prof.img) this.characterData.img = prof.img;
             // Preset profession skills to 1
             if (prof.system?.skills) {
                 Object.keys(prof.system.skills).forEach(s => {

@@ -63,10 +63,17 @@
                 <li>{{name}} <span class="cost">{{system.cost}} ♛</span></li>
                 {{/each}}
             </ul>
-            <div class="money-total">
-                <strong>💰 {{localize "WITCHER.Wizard.Gear.MoneyLabel"}}:</strong>
-                <span class="money-value">{{character.money}} crowns</span>
+            <div class="money-total {{#if isOverBudget}}overbudget{{/if}}">
+                <span>{{localize "WITCHER.Wizard.Gear.TotalCost"}}:</span>
+                <span class="money-value {{#if isOverBudget}}overbudget{{/if}}">{{gearCost}}</span>
             </div>
+            
+            {{#if isOverBudget}}
+            <div class="budget-warning">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                {{localize "WITCHER.Wizard.Gear.OverBudget"}}
+            </div>
+            {{/if}}
         </div>
     </div>
 </div>

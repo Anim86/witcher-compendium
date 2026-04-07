@@ -113,8 +113,12 @@
           "Description": "Ottieni i tuoi averi iniziali basati sulla professione."
         },
         "Finish": {
-          "Title": "Riepilogo",
-          "Description": "Dai un nome al tuo eroe e completa la creazione."
+          "Title": "Riepilogo Avanzato",
+          "Description": "Controlla l'equipaggiamento iniziale e le scelte della tua professione."
+        },
+        "Finalize": {
+          "Title": "Finalizzazione",
+          "Description": "Dai un nome al tuo eroe e scegli un avatar per completare l'avventura."
         }
       },
       "Finish": {
@@ -146,7 +150,14 @@
       "Gear": {
         "Selected": "Equipaggiamento Selezionato",
         "MoneyLabel": "Corone Iniziali",
-        "MoneyHint": "Le corone disponibili per acquistare equipaggiamento"
+        "MoneyHint": "Le corone disponibili per acquistare equipaggiamento",
+        "OverBudget": "Attenzione: Hai superato il budget di corone disponibili!",
+        "TotalCost": "Costo Totale",
+        "InitialGear": "Equipaggiamento Professionale",
+        "PurchasedGear": "Equipaggiamento Acquistato",
+        "ChoiceHint": "Seleziona gli oggetti gratuiti previsti dalla tua professione:",
+        "NoProfession": "Seleziona prima una professione per vedere l'equipaggiamento iniziale.",
+        "StandardPack": "Dotazione Standard di Classe (Zaino, Sacco, ecc.)"
       },
       "Background": {
         "Origin": "Origine",

@@ -26,3 +26,6 @@ witcher-compendium/assets/*
 !witcher-compendium/assets/optimized/
 witcher-compendium/images/
 !witcher-compendium/assets/optimized/images/
+
+# Zip files for releases (should not be in repo)
+*.zip
