@@ -81,6 +81,7 @@ export async function preloadHandlebarsTemplates() {
         'systems/TheWitcherItaNewSystem/templates/app/wizard/steps/stats.hbs',
         'systems/TheWitcherItaNewSystem/templates/app/wizard/steps/skills.hbs',
         'systems/TheWitcherItaNewSystem/templates/app/wizard/steps/gear.hbs',
+        'systems/TheWitcherItaNewSystem/templates/app/wizard/steps/summary.hbs',
         'systems/TheWitcherItaNewSystem/templates/app/wizard/steps/finish.hbs'
     ];
     return foundry.applications.handlebars.loadTemplates(templatePath);
