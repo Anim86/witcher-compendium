@@ -151,6 +151,19 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             }, 0);
             const isOverBudget = gearCost > (Number(this.characterData.money) || 0);
             
+            const sanitizeItem = (i) => {
+                const obj = i.toObject ? i.toObject() : i;
+                obj._id = obj._id || obj.id || i.id;
+                obj.id = obj._id;
+                if (obj.system && (obj.system.reliability === null || obj.system.reliability === undefined)) {
+                    obj.system.reliability = 0;
+                }
+                return {
+                    ...obj,
+                    selected: this.characterData.gear.some(g => (g._id === obj.id || g.id === obj.id))
+                };
+            };
+            
             
             // 2.1 Profession Gear Logic
             const profName = this.characterData.profession?.name;
@@ -201,19 +214,6 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 this.armor = armorPack ? await armorPack.getDocuments() : [];
                 const gearPack = game.packs.get("witcher-compendium.witcher-equipment");
                 this.gear = gearPack ? await gearPack.getDocuments() : [];
-            }
-
-            function sanitizeItem(i) {
-                const obj = i.toObject ? i.toObject() : i;
-                obj._id = obj._id || obj.id || i.id;
-                obj.id = obj._id;
-                if (obj.system && (obj.system.reliability === null || obj.system.reliability === undefined)) {
-                    obj.system.reliability = 0;
-                }
-                return {
-                    ...obj,
-                    selected: this.characterData.gear.some(g => (g._id === obj.id || g.id === obj.id))
-                };
             }
 
             const statsTotal = Object.values(this.characterData.stats).reduce((a, b) => a + Number(b), 0);
