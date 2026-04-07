@@ -203,7 +203,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 this.gear = gearPack ? await gearPack.getDocuments() : [];
             }
 
-            const sanitizeItem = (i) => {
+            function sanitizeItem(i) {
                 const obj = i.toObject ? i.toObject() : i;
                 obj._id = obj._id || obj.id || i.id;
                 obj.id = obj._id;
@@ -214,7 +214,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                     ...obj,
                     selected: this.characterData.gear.some(g => (g._id === obj.id || g.id === obj.id))
                 };
-            };
+            }
 
             const statsTotal = Object.values(this.characterData.stats).reduce((a, b) => a + Number(b), 0);
             const statsRemaining = 60 - statsTotal;
@@ -304,8 +304,10 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
 
     _getProfessionSkillNames() {
         if (!this.characterData.profession) return [];
-        const profSkillsStr = this.characterData.profession.system?.professionSkills || "";
-        return profSkillsStr.split(",").map(s => s.trim()).filter(s => s);
+        const profSkills = typeof this.characterData.profession.system?.professionSkills === "string"
+            ? this.characterData.profession.system.professionSkills.split(",").map(s => s.trim()).filter(Boolean)
+            : [];
+        return profSkills;
     }
 
     _getProfessionSkills() {
@@ -513,7 +515,9 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             
             // Reinitialize new profession skills logic handled in _getProfessionSkills normally
             // But we must prepopulate characterData.skills keys here:
-            const names = (prof.system?.professionSkills || "").split(",").map(s => s.trim()).filter(Boolean);
+            const names = typeof prof.system?.professionSkills === "string"
+                ? prof.system.professionSkills.split(",").map(s => s.trim()).filter(Boolean)
+                : [];
             names.forEach(name => {
                 const s = this.allSkills.find(sk => sk.name.toLowerCase() === name.toLowerCase());
                 if (s) this.characterData.skills[s._id] = 1;
