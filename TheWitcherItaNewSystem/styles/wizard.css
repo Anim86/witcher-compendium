@@ -8,6 +8,18 @@
     --wizard-shadow: rgba(0, 0, 0, 0.3);
 }
 
+/* ── Global override: nessun testo giallo nel wizard ──────────────────── */
+.witcher-wizard .wizard-content label,
+.witcher-wizard .wizard-content h3,
+.witcher-wizard .wizard-content h4,
+.witcher-wizard .wizard-content p,
+.witcher-wizard .wizard-content span:not(.badge):not(.stat-pill):not(.step-num):not(.step-label),
+.witcher-wizard .wizard-content .form-group label,
+.witcher-wizard .wizard-content .background-section h3,
+.witcher-wizard .wizard-content .background-section label {
+    color: var(--wizard-text-dark) !important;
+}
+
 .witcher-wizard .window-content {
     background: url('../assets/wizard_bg_mago.png') center/cover no-repeat !important;
     background-color: #000 !important;
@@ -116,27 +128,42 @@ form.witcher-wizard .wizard-content {
     display: flex;
     align-items: center;
     gap: 15px;
-    margin-bottom: 20px;
-    background: rgba(255, 255, 255, 0.4);
-    padding: 10px 15px;
-    border-radius: 6px;
-    border: 1px solid var(--wizard-border);
+    margin-bottom: 24px;
+    background: rgba(139, 0, 0, 0.06);
+    padding: 14px 20px;
+    border-radius: 8px;
+    border: 2px solid var(--wizard-border);
     max-width: fit-content;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.witcher-wizard .money-selection .money-icon {
+    font-size: 1.5rem;
+    color: #b8860b;
 }
 
 .witcher-wizard .money-selection label {
     font-weight: bold;
     font-size: 1rem;
-    color: #444;
+    color: var(--wizard-text-dark) !important;
+}
+
+.witcher-wizard .money-selection .money-hint {
+    font-size: 0.8rem;
+    color: var(--wizard-text-muted) !important;
+    font-style: italic;
 }
 
 .witcher-wizard .money-selection input {
-    width: 100px;
-    padding: 5px;
-    border: 1px solid var(--wizard-border);
-    border-radius: 3px;
+    width: 110px;
+    padding: 7px 10px;
+    border: 2px solid var(--wizard-border);
+    border-radius: 5px;
     font-weight: bold;
+    font-size: 1.1rem;
     text-align: center;
+    background: white;
+    color: var(--wizard-text-dark) !important;
 }
 
 /* Horizontal Stats Layout */
@@ -603,4 +630,22 @@ form.witcher-wizard .gear-item img {
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     display: flex;
     justify-content: space-between;
+}
+
+.witcher-wizard .gear-summary .money-total {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 2px solid var(--wizard-border);
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    color: var(--wizard-text-dark) !important;
+}
+
+.witcher-wizard .gear-summary .money-value {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #b8860b !important;
 }

@@ -3,8 +3,12 @@
     <p>{{localize "WITCHER.Wizard.Step.Gear.Description"}}</p>
     
     <div class="money-selection">
-        <label>{{localize "WITCHER.Wizard.Gear.MoneyLabel"}}:</label>
-        <input type="number" name="money" value="{{character.money}}" data-action="updateMoney">
+        <i class="money-icon fa-solid fa-coins"></i>
+        <div>
+            <label>{{localize "WITCHER.Wizard.Gear.MoneyLabel"}}:</label>
+            <div class="money-hint">{{localize "WITCHER.Wizard.Gear.MoneyHint"}}</div>
+        </div>
+        <input type="number" name="money" value="{{character.money}}" min="0" data-action="updateMoney">
     </div>
 
     <div class="gear-container">
@@ -56,9 +60,13 @@
             <h3>{{localize "WITCHER.Wizard.Gear.Selected"}}</h3>
             <ul>
                 {{#each character.gear}}
-                <li>{{name}}</li>
+                <li>{{name}} <span class="cost">{{system.cost}} ♛</span></li>
                 {{/each}}
             </ul>
+            <div class="money-total">
+                <strong>💰 {{localize "WITCHER.Wizard.Gear.MoneyLabel"}}:</strong>
+                <span class="money-value">{{character.money}} crowns</span>
+            </div>
         </div>
     </div>
 </div>

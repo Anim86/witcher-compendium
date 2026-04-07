@@ -272,18 +272,38 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
     _onRender(context, options) {
         super._onRender(context, options);
         const html = $(this.element);
-        const saveScroll = () => { this._scrollPos = this.element.querySelector(".wizard-content")?.scrollTop || 0; };
+
+        const saveScroll = () => {
+            const c = this.element.querySelector(".wizard-content");
+            if (c) this._scrollPos = c.scrollTop;
+        };
+
         html.find("[data-action]").not("select, input").on("click", (event) => {
             const action = event.currentTarget.dataset.action;
-            if (this.constructor.ACTIONS[action]) { saveScroll(); this.constructor.ACTIONS[action].call(this, event, event.currentTarget); }
+            if (this.constructor.ACTIONS[action]) {
+                saveScroll();
+                this.constructor.ACTIONS[action].call(this, event, event.currentTarget);
+            }
         });
+
         html.find("select[data-action], input[data-action]").on("change", (event) => {
             const action = event.currentTarget.dataset.action;
-            if (this.constructor.ACTIONS[action]) { saveScroll(); this.constructor.ACTIONS[action].call(this, event, event.currentTarget); }
+            if (this.constructor.ACTIONS[action]) {
+                saveScroll();
+                this.constructor.ACTIONS[action].call(this, event, event.currentTarget);
+            }
         });
-        if (this._scrollPos) { 
-            const c = this.element.querySelector(".wizard-content"); 
-            if (c) requestAnimationFrame(() => c.scrollTop = this._scrollPos); 
+
+        // Restore scroll after Foundry's own post-render cycle finishes
+        if (this._scrollPos) {
+            const pos = this._scrollPos;
+            // Double RAF ensures we run after Foundry's own scroll manipulation
+            requestAnimationFrame(() => {
+                requestAnimationFrame(() => {
+                    const c = this.element.querySelector(".wizard-content");
+                    if (c) c.scrollTop = pos;
+                });
+            });
         }
     }
 
@@ -426,6 +446,9 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                     profession: this.characterData.profession?.name || "",
                     homeland: this.characterData.homeland || "",
                     age: this.characterData.age || 20
+                },
+                currency: {
+                    crowns: Number(this.characterData.money) || 0
                 }
             }
         };

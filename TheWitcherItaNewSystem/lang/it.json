@@ -39,7 +39,13 @@
     "Inventory": "Inventario",
     "Magic": "Magia",
     "Background": "Background",
+    "Loot": {
+      "Weapons": "Armi",
+      "Armors": "Armature",
+      "Valuables": "Equipaggiamento"
+    },
     "Actor": {
+      "Name": "Nome del Personaggio",
       "Stat": {
         "Int": "INT",
         "Ref": "RIF",
@@ -139,7 +145,8 @@
       },
       "Gear": {
         "Selected": "Equipaggiamento Selezionato",
-        "MoneyLabel": "Corone Iniziali"
+        "MoneyLabel": "Corone Iniziali",
+        "MoneyHint": "Le corone disponibili per acquistare equipaggiamento"
       },
       "Background": {
         "Origin": "Origine",
