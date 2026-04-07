@@ -21,7 +21,7 @@
 }
 
 .witcher-wizard .window-content {
-    background: url('../assets/images/parchment_bg.png') center/cover no-repeat !important;
+    background: url('../assets/images/Tomo del Caos/Immagini/Pag021_La Vita di un Mago_02.png') center/cover no-repeat !important;
     background-color: #000 !important;
     color: var(--wizard-text-dark);
     font-family: 'Outfit', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -678,31 +678,54 @@ form.witcher-wizard .gear-item img {
 
 
 
-/* -- Overrides Feedback Utente 14.0.9 -------------------- */
+/* ── Fix Contrasto Globale v14.1.1 ──────────────────── */
+/* Forza il testo bianco su tutti gli sfondi rossi critici */
 .witcher-wizard .points-display, 
 .witcher-wizard .points-display label, 
 .witcher-wizard .points-display .points-value,
 .witcher-wizard .points-display span,
-.witcher-wizard .stats-outer-container .points-display .points-value {
-    color: #ffffff !important;
-}
-
+.witcher-wizard .stats-outer-container .points-display .points-value,
 .witcher-wizard .stat-pill,
 .witcher-wizard .stat-pill .stat-abbr,
 .witcher-wizard .stat-pill .stat-value,
-.witcher-wizard .stat-pill span {
+.witcher-wizard .stat-pill span,
+.witcher-wizard .skill-tag,
+.witcher-wizard .gear-tag,
+.witcher-wizard .badge.red,
+.witcher-wizard .negative {
     color: #ffffff !important;
 }
 
-.witcher-wizard .money-summary.overbudget {
-    background: rgba(230, 57, 70, 0.1);
-    border: 1px solid #e63946;
-    padding: 10px;
+/* Stilizzazione Dotazione e Tag */
+.witcher-wizard .profession-dotazione {
+    background: rgba(139, 0, 0, 0.05); /* Rosso leggero per contrasto */
+    border-left: 4px solid #8b0000;
+    padding: 12px 15px;
+    margin-bottom: 25px;
     border-radius: 4px;
-    margin-top: 10px;
 }
 
-.witcher-wizard .money-summary.overbudget .budget-warning {
-    color: #e63946;
+.witcher-wizard .dotazione-text {
+    font-size: 0.85rem;
+    line-height: 1.4;
+    color: #1a1a1a;
+}
+
+.witcher-wizard .gear-tag {
+    display: inline-block;
+    background: #8b0000;
+    color: white !important;
+    padding: 2px 8px;
+    margin: 2px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* Migliora la leggibilità sulla pergamena scura */
+form.witcher-wizard .wizard-content {
+    background: rgba(255, 255, 255, 0.94) !important;
+    color: #1a1a1a !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
 }
 

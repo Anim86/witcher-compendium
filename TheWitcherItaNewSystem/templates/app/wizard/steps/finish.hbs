@@ -45,6 +45,17 @@
                     {{/each}}
                 </div>
             </div>
+
+            <div class="summary-card">
+                <h3>{{localize "WITCHER.Wizard.Gear.PurchasedGear"}}</h3>
+                <div class="purchased-gear-list">
+                    {{#each character.gear}}
+                    <span class="gear-tag">{{name}}</span>
+                    {{else}}
+                    <p><em>Nessun oggetto acquistato.</em></p>
+                    {{/each}}
+                </div>
+            </div>
         </div>
     </div>
 

@@ -11,7 +11,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
 
         // Wizard State
         this.step = 1;
-        this.maxSteps = 8;
+        this.maxSteps = 7;
         
         // Character Data
         this.characterData = {
@@ -200,7 +200,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 },
                 gearCost: gearCost,
                 isOverBudget: isOverBudget,
-                professionChoiceRequired: false, // Placeholder for future logic
+                professionGear: this.characterData.profession?.system?.gear || "",
                 summary: this._getSummaryContext()
             };
         } catch (error) {
@@ -320,6 +320,37 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
 
     async _nextStep() { if (this.step < this.maxSteps) { this.step++; this.render(true); } }
     async _prevStep() { if (this.step > 1) { this.step--; this.render(true); } }
+
+    _getTemplateForStep(step) {
+        const t = { 
+            1: "race", 
+            2: "background", 
+            3: "profession", 
+            4: "stats", 
+            5: "skills", 
+            6: "gear", 
+            7: "finish" 
+        };
+        return "systems/TheWitcherItaNewSystem/templates/app/wizard/steps/" + t[step] + ".hbs";
+    }
+
+    _getStepList() {
+        const labels = [
+            "WITCHER.Wizard.Step.Race.Title",
+            "WITCHER.Wizard.Step.Background.Title",
+            "WITCHER.Wizard.Step.Profession.Title",
+            "WITCHER.Wizard.Step.Stats.Title",
+            "WITCHER.Wizard.Step.Skills.Title",
+            "WITCHER.Wizard.Step.Gear.Title",
+            "WITCHER.Wizard.Step.Finalize.Title"
+        ];
+        return labels.map((l, i) => ({
+            number: i + 1,
+            label: l,
+            active: this.step === i + 1,
+            completed: this.step > i + 1
+        }));
+    }
     async _updateHomeland(event, target) { this.characterData.homeland = target.value; this.render(true); }
     async _updateAge(event, target) { this.characterData.age = parseInt(target.value); this.render(true); }
     async _updateMoney(event, target) { this.characterData.money = parseInt(target.value); this.render(true); }
