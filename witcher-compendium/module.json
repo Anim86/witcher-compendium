@@ -2,7 +2,7 @@
   "id": "witcher-compendium",
   "title": "Witcher RPG Compendium (Premium IT)",
   "description": "Compendio premium per The Witcher TRPG (v14). Include Razze e Professioni con descrizioni complete e coerenti con lo schema di sistema.",
-  "version": "v14.1.19",
+  "version": "v14.1.20",
   "authors": [
     {
       "name": "Zolt"
@@ -156,6 +156,7 @@
     {
       "name": "Witcher Compendio Ita",
       "sorting": "m",
+      "color": "#6b0f0f",
       "packs": [
         "witcher-races"
       ],
@@ -165,6 +166,7 @@
           "sorting": "m",
           "color": "#8b0000",
           "packs": [
+            "witcher-races",
             "witcher-professions",
             "witcher-skills"
           ]
@@ -173,6 +175,7 @@
           "name": "EQUIPAGGIAMENTO",
           "sorting": "m",
           "color": "#5a3e1b",
+          "packs": [],
           "folders": [
             {
               "name": "Tomo Base",
@@ -197,6 +200,7 @@
           "name": "MAGIA",
           "sorting": "m",
           "color": "#1a1a6e",
+          "packs": [],
           "folders": [
             {
               "name": "Tomo Base",
@@ -220,6 +224,7 @@
           "name": "CREAZIONE",
           "sorting": "m",
           "color": "#2d5a1b",
+          "packs": [],
           "folders": [
             {
               "name": "Tomo Base",
@@ -236,6 +241,7 @@
           "name": "BESTIARIO / PNG",
           "sorting": "m",
           "color": "#4a0e0e",
+          "packs": [],
           "folders": [
             {
               "name": "Tomo Base",
@@ -265,5 +271,5 @@
   ],
   "url": "https://github.com/Anim86/witcher-compendium",
   "manifest": "https://raw.githubusercontent.com/Anim86/witcher-compendium/main/witcher-compendium/module.json",
-  "download": "https://github.com/Anim86/witcher-compendium/releases/download/v14.1.19/module.zip"
+  "download": "https://github.com/Anim86/witcher-compendium/releases/download/v14.1.20/module.zip"
 }
