@@ -54,36 +54,40 @@ Hooks.once("ready", async () => {
 
   // Mappa pack → cartella
   const assegnazioni = [
-    // CORE
-    { pack: "witcher-compendium.witcher-races",          folder: core.id },
-    { pack: "witcher-compendium.witcher-professions",    folder: core.id },
-    { pack: "witcher-compendium.witcher-skills",         folder: core.id },
-    // EQUIPAGGIAMENTO - Tomo Base
-    { pack: "witcher-compendium.witcher-weapons",        folder: tomoBaseEquip.id },
-    { pack: "witcher-compendium.witcher-armor",          folder: tomoBaseEquip.id },
-    { pack: "witcher-compendium.witcher-equipment",      folder: tomoBaseEquip.id },
-    { pack: "witcher-compendium.witcher-special",        folder: tomoBaseEquip.id },
-    // EQUIPAGGIAMENTO - Tomo del Caos
-    { pack: "witcher-compendium.witcher-special-chaos",  folder: tomoCaosEquip.id },
-    // MAGIA - Tomo Base
-    { pack: "witcher-compendium.witcher-spells",         folder: tomoBaseMagia.id },
-    { pack: "witcher-compendium.witcher-rituals",        folder: tomoBaseMagia.id },
-    // MAGIA - Tomo del Caos
-    { pack: "witcher-compendium.witcher-spells-chaos",   folder: tomoCaosMagia.id },
-    { pack: "witcher-compendium.witcher-rituals-chaos",  folder: tomoCaosMagia.id },
-    // CREAZIONE - Tomo Base
-    { pack: "witcher-compendium.witcher-components",     folder: tomoBaseCreaz.id },
-    { pack: "witcher-compendium.witcher-schematics",     folder: tomoBaseCreaz.id },
-    { pack: "witcher-compendium.witcher-alchemy",        folder: tomoBaseCreaz.id },
-    // BESTIARIO - Tomo Base
-    { pack: "witcher-compendium.witcher-monsters",       folder: tomoBaseBest.id },
-    // BESTIARIO - Tomo del Caos
-    { pack: "witcher-compendium.witcher-monsters-chaos", folder: tomoCaosBest.id },
+    { packName: "witcher-races",          folderId: core.id },
+    { packName: "witcher-professions",    folderId: core.id },
+    { packName: "witcher-skills",         folderId: core.id },
+    { packName: "witcher-weapons",        folderId: tomoBaseEquip?.id },
+    { packName: "witcher-armor",          folderId: tomoBaseEquip?.id },
+    { packName: "witcher-equipment",      folderId: tomoBaseEquip?.id },
+    { packName: "witcher-special",        folderId: tomoBaseEquip?.id },
+    { packName: "witcher-special-chaos",  folderId: tomoCaosEquip?.id },
+    { packName: "witcher-spells",         folderId: tomoBaseMagia?.id },
+    { packName: "witcher-rituals",        folderId: tomoBaseMagia?.id },
+    { packName: "witcher-spells-chaos",   folderId: tomoCaosMagia?.id },
+    { packName: "witcher-rituals-chaos",  folderId: tomoCaosMagia?.id },
+    { packName: "witcher-components",     folderId: tomoBaseCreaz?.id },
+    { packName: "witcher-schematics",     folderId: tomoBaseCreaz?.id },
+    { packName: "witcher-alchemy",        folderId: tomoBaseCreaz?.id },
+    { packName: "witcher-monsters",       folderId: tomoBaseBest?.id },
+    { packName: "witcher-monsters-chaos", folderId: tomoCaosBest?.id }
   ];
 
-  for (const { pack, folder } of assegnazioni) {
-    const p = game.packs.get(pack);
-    if (p) await p.setFolder(folder);
+  console.log("Witcher Compendio: Inizio assegnazione pack...");
+
+  for (const { packName, folderId } of assegnazioni) {
+    if (!folderId) {
+        console.warn(`Witcher Compendio: Cartella non trovata per ${packName}`);
+        continue;
+    }
+    // Cerca il pack nel nostro modulo
+    const p = game.packs.find(p => p.metadata.name === packName && p.metadata.packageName === "witcher-compendium");
+    if (p) {
+        await p.setFolder(folderId);
+        console.log(`Witcher Compendio: Pack ${packName} assegnato a ${folderId}`);
+    } else {
+        console.error(`Witcher Compendio: Pack NON trovato -> ${packName}`);
+    }
   }
 
   // Marca come completato
