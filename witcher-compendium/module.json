@@ -2,7 +2,7 @@
   "id": "witcher-compendium",
   "title": "Witcher RPG Compendium (Premium IT)",
   "description": "Compendio premium per The Witcher TRPG (v14). Include Razze e Professioni con descrizioni complete e coerenti con lo schema di sistema.",
-  "version": "v14.1.11",
+  "version": "v14.1.12",
   "authors": [
     {
       "name": "Zolt"
@@ -33,213 +33,223 @@
   },
   "packs": [
     {
+      "name": "witcher-races",
+      "label": "Razze",
+      "path": "packs/CORE/witcher-races",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-professions",
+      "label": "Professioni",
+      "path": "packs/CORE/witcher-professions",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-skills",
+      "label": "Abilità",
+      "path": "packs/CORE/witcher-skills",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-weapons",
+      "label": "Armi",
+      "path": "packs/EQUIPAGGIAMENTO/base/witcher-weapons",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-armor",
+      "label": "Armature",
+      "path": "packs/EQUIPAGGIAMENTO/base/witcher-armor",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-equipment",
+      "label": "Oggetti Vari",
+      "path": "packs/EQUIPAGGIAMENTO/base/witcher-equipment",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-special",
+      "label": "Oggetti Witcher",
+      "path": "packs/EQUIPAGGIAMENTO/base/witcher-special",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-special-chaos",
+      "label": "Oggetti Chaos",
+      "path": "packs/EQUIPAGGIAMENTO/caos/witcher-special-chaos",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-spells",
+      "label": "Incantesimi Base",
+      "path": "packs/MAGIA/base/witcher-spells",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-rituals",
+      "label": "Rituali Base",
+      "path": "packs/MAGIA/base/witcher-rituals",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-spells-chaos",
+      "label": "Incantesimi Chaos",
+      "path": "packs/MAGIA/caos/witcher-spells-chaos",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-rituals-chaos",
+      "label": "Rituali Chaos",
+      "path": "packs/MAGIA/caos/witcher-rituals-chaos",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-components",
+      "label": "Componenti",
+      "path": "packs/CREAZIONE/base/witcher-components",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-schematics",
+      "label": "Schemi",
+      "path": "packs/CREAZIONE/base/witcher-schematics",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-alchemy",
+      "label": "Alchimia",
+      "path": "packs/CREAZIONE/base/witcher-alchemy",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-monsters",
+      "label": "Bestiario Base",
+      "path": "packs/BESTIARIO/PNG/base/witcher-monsters",
+      "type": "Actor",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-monsters-chaos",
+      "label": "Bestiario Chaos",
+      "path": "packs/BESTIARIO/PNG/caos/witcher-monsters-chaos",
+      "type": "Actor",
+      "system": "TheWitcherItaNewSystem"
+    }
+  ],
+  "packFolders": [
+    {
       "name": "CORE",
-      "label": "🛡️ CORE",
-      "type": "folder",
+      "sorting": "m",
+      "color": "#8b0000",
       "packs": [
-        {
-          "name": "witcher-races",
-          "label": "Razze",
-          "path": "packs/CORE/witcher-races",
-          "type": "Item",
-          "system": "TheWitcherItaNewSystem"
-        },
-        {
-          "name": "witcher-professions",
-          "label": "Professioni",
-          "path": "packs/CORE/witcher-professions",
-          "type": "Item",
-          "system": "TheWitcherItaNewSystem"
-        },
-        {
-          "name": "witcher-skills",
-          "label": "Abilità Witcher",
-          "path": "packs/CORE/witcher-skills",
-          "type": "Item",
-          "system": "TheWitcherItaNewSystem"
-        }
+        "witcher-races",
+        "witcher-professions",
+        "witcher-skills"
       ]
     },
     {
       "name": "EQUIPAGGIAMENTO",
-      "label": "⚔️ EQUIPAGGIAMENTO",
-      "type": "folder",
-      "packs": [
+      "sorting": "m",
+      "color": "#5a3e1b",
+      "packs": [],
+      "folders": [
         {
-          "name": "EQUIP_BASE",
-          "label": "Manuale Base",
-          "type": "folder",
+          "name": "Tomo Base",
+          "sorting": "m",
           "packs": [
-            {
-              "name": "witcher-weapons",
-              "label": "Armi",
-              "path": "packs/EQUIPAGGIAMENTO/base/witcher-weapons",
-              "type": "Item",
-              "system": "TheWitcherItaNewSystem"
-            },
-            {
-              "name": "witcher-armor",
-              "label": "Armature",
-              "path": "packs/EQUIPAGGIAMENTO/base/witcher-armor",
-              "type": "Item",
-              "system": "TheWitcherItaNewSystem"
-            },
-            {
-              "name": "witcher-equipment",
-              "label": "Equipaggiamento",
-              "path": "packs/EQUIPAGGIAMENTO/base/witcher-equipment",
-              "type": "Item",
-              "system": "TheWitcherItaNewSystem"
-            },
-            {
-              "name": "witcher-special",
-              "label": "Oggetti Speciali",
-              "path": "packs/EQUIPAGGIAMENTO/base/witcher-special",
-              "type": "Item",
-              "system": "TheWitcherItaNewSystem"
-            }
+            "witcher-weapons",
+            "witcher-armor",
+            "witcher-equipment",
+            "witcher-special"
           ]
         },
         {
-          "name": "EQUIP_CAOS",
-          "label": "Tomo del Caos",
-          "type": "folder",
+          "name": "Tomo del Caos",
+          "sorting": "m",
           "packs": [
-            {
-              "name": "witcher-special-chaos",
-              "label": "Oggetti Speciali",
-              "path": "packs/EQUIPAGGIAMENTO/caos/witcher-special-chaos",
-              "type": "Item",
-              "system": "TheWitcherItaNewSystem"
-            }
+            "witcher-special-chaos"
           ]
         }
       ]
     },
     {
       "name": "MAGIA",
-      "label": "✨ MAGIA",
-      "type": "folder",
-      "packs": [
+      "sorting": "m",
+      "color": "#1a1a6e",
+      "packs": [],
+      "folders": [
         {
-          "name": "MAGIA_BASE",
-          "label": "Manuale Base",
-          "type": "folder",
+          "name": "Tomo Base",
+          "sorting": "m",
           "packs": [
-            {
-              "name": "witcher-spells",
-              "label": "Incantesimi",
-              "path": "packs/MAGIA/base/witcher-spells",
-              "type": "Item",
-              "system": "TheWitcherItaNewSystem"
-            },
-            {
-              "name": "witcher-rituals",
-              "label": "Rituali",
-              "path": "packs/MAGIA/base/witcher-rituals",
-              "type": "Item",
-              "system": "TheWitcherItaNewSystem"
-            }
+            "witcher-spells",
+            "witcher-rituals"
           ]
         },
         {
-          "name": "MAGIA_CAOS",
-          "label": "Tomo del Caos",
-          "type": "folder",
+          "name": "Tomo del Caos",
+          "sorting": "m",
           "packs": [
-            {
-              "name": "witcher-spells-chaos",
-              "label": "Incantesimi",
-              "path": "packs/MAGIA/caos/witcher-spells-chaos",
-              "type": "Item",
-              "system": "TheWitcherItaNewSystem"
-            },
-            {
-              "name": "witcher-rituals-chaos",
-              "label": "Rituali",
-              "path": "packs/MAGIA/caos/witcher-rituals-chaos",
-              "type": "Item",
-              "system": "TheWitcherItaNewSystem"
-            }
+            "witcher-spells-chaos",
+            "witcher-rituals-chaos"
           ]
         }
       ]
     },
     {
       "name": "CREAZIONE",
-      "label": "🛠️ CREAZIONE",
-      "type": "folder",
-      "packs": [
+      "sorting": "m",
+      "color": "#2d5a1b",
+      "packs": [],
+      "folders": [
         {
-          "name": "CREAZIONE_BASE",
-          "label": "Manuale Base",
-          "type": "folder",
+          "name": "Tomo Base",
+          "sorting": "m",
           "packs": [
-            {
-              "name": "witcher-components",
-              "label": "Componenti Artigianali",
-              "path": "packs/CREAZIONE/base/witcher-components",
-              "type": "Item",
-              "system": "TheWitcherItaNewSystem"
-            },
-            {
-              "name": "witcher-schematics",
-              "label": "Schemi Artigianali",
-              "path": "packs/CREAZIONE/base/witcher-schematics",
-              "type": "Item",
-              "system": "TheWitcherItaNewSystem"
-            },
-            {
-              "name": "witcher-alchemy",
-              "label": "Alchimia",
-              "path": "packs/CREAZIONE/base/witcher-alchemy",
-              "type": "Item",
-              "system": "TheWitcherItaNewSystem"
-            }
+            "witcher-components",
+            "witcher-schematics",
+            "witcher-alchemy"
           ]
         }
       ]
     },
     {
-      "name": "BESTIARIO",
-      "label": "🐉 BESTIARIO/PNG",
-      "type": "folder",
-      "packs": [
+      "name": "BESTIARIO / PNG",
+      "sorting": "m",
+      "color": "#4a0e0e",
+      "packs": [],
+      "folders": [
         {
-          "name": "BESTIARIO_BASE",
-          "label": "Manuale Base",
-          "type": "folder",
+          "name": "Tomo Base",
+          "sorting": "m",
           "packs": [
-            {
-              "name": "witcher-monsters",
-              "label": "Bestiario",
-              "path": "packs/BESTIARIO/PNG/base/witcher-monsters",
-              "type": "Actor",
-              "system": "TheWitcherItaNewSystem"
-            }
+            "witcher-monsters"
           ]
         },
         {
-          "name": "BESTIARIO_CAOS",
-          "label": "Tomo del Caos",
-          "type": "folder",
+          "name": "Tomo del Caos",
+          "sorting": "m",
           "packs": [
-            {
-              "name": "witcher-monsters-chaos",
-              "label": "Bestiario",
-              "path": "packs/BESTIARIO/PNG/caos/witcher-monsters-chaos",
-              "type": "Actor",
-              "system": "TheWitcherItaNewSystem"
-            }
+            "witcher-monsters-chaos"
           ]
         }
       ]
-    },
-    {
-      "name": "SUPPORTI",
-      "label": "📂 SUPPORTI",
-      "type": "folder",
-      "packs": []
     }
   ],
   "languages": [
@@ -251,5 +261,5 @@
   ],
   "url": "https://github.com/Anim86/witcher-compendium",
   "manifest": "https://raw.githubusercontent.com/Anim86/witcher-compendium/main/witcher-compendium/module.json",
-  "download": "https://github.com/Anim86/witcher-compendium/releases/download/v14.1.11/module.zip"
+  "download": "https://github.com/Anim86/witcher-compendium/releases/download/v14.1.12/module.zip"
 }
