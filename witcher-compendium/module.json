@@ -2,7 +2,7 @@
   "id": "witcher-compendium",
   "title": "Witcher RPG Compendium (Premium IT)",
   "description": "Compendio premium per The Witcher TRPG (v14). Include Razze e Professioni con descrizioni complete e coerenti con lo schema di sistema.",
-  "version": "v14.1.20",
+  "version": "v14.1.21",
   "authors": [
     {
       "name": "Zolt"
@@ -16,7 +16,8 @@
     "verified": "14.359"
   },
   "esmodules": [
-    "scripts/witcher-compendium.js"
+    "scripts/witcher-compendium.js",
+    "scripts/setup-folders.js"
   ],
   "relationships": {
     "systems": [
@@ -152,116 +153,6 @@
       "system": "TheWitcherItaNewSystem"
     }
   ],
-  "packFolders": [
-    {
-      "name": "Witcher Compendio Ita",
-      "sorting": "m",
-      "color": "#6b0f0f",
-      "packs": [
-        "witcher-races"
-      ],
-      "folders": [
-        {
-          "name": "CORE",
-          "sorting": "m",
-          "color": "#8b0000",
-          "packs": [
-            "witcher-races",
-            "witcher-professions",
-            "witcher-skills"
-          ]
-        },
-        {
-          "name": "EQUIPAGGIAMENTO",
-          "sorting": "m",
-          "color": "#5a3e1b",
-          "packs": [],
-          "folders": [
-            {
-              "name": "Tomo Base",
-              "sorting": "m",
-              "packs": [
-                "witcher-weapons",
-                "witcher-armor",
-                "witcher-equipment",
-                "witcher-special"
-              ]
-            },
-            {
-              "name": "Tomo del Caos",
-              "sorting": "m",
-              "packs": [
-                "witcher-special-chaos"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "MAGIA",
-          "sorting": "m",
-          "color": "#1a1a6e",
-          "packs": [],
-          "folders": [
-            {
-              "name": "Tomo Base",
-              "sorting": "m",
-              "packs": [
-                "witcher-spells",
-                "witcher-rituals"
-              ]
-            },
-            {
-              "name": "Tomo del Caos",
-              "sorting": "m",
-              "packs": [
-                "witcher-spells-chaos",
-                "witcher-rituals-chaos"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "CREAZIONE",
-          "sorting": "m",
-          "color": "#2d5a1b",
-          "packs": [],
-          "folders": [
-            {
-              "name": "Tomo Base",
-              "sorting": "m",
-              "packs": [
-                "witcher-components",
-                "witcher-schematics",
-                "witcher-alchemy"
-              ]
-            }
-          ]
-        },
-        {
-          "name": "BESTIARIO / PNG",
-          "sorting": "m",
-          "color": "#4a0e0e",
-          "packs": [],
-          "folders": [
-            {
-              "name": "Tomo Base",
-              "sorting": "m",
-              "packs": [
-                "witcher-monsters"
-              ]
-            },
-            {
-              "name": "Tomo del Caos",
-              "sorting": "m",
-              "packs": [
-                "witcher-monsters-chaos"
-              ]
-            }
-          ]
-        }
-      ]
-    }
-  ],
   "languages": [
     {
       "lang": "it",
@@ -271,5 +162,5 @@
   ],
   "url": "https://github.com/Anim86/witcher-compendium",
   "manifest": "https://raw.githubusercontent.com/Anim86/witcher-compendium/main/witcher-compendium/module.json",
-  "download": "https://github.com/Anim86/witcher-compendium/releases/download/v14.1.20/module.zip"
+  "download": "https://github.com/Anim86/witcher-compendium/releases/download/v14.1.21/module.zip"
 }

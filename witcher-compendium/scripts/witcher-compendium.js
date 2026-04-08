@@ -1,3 +1,12 @@
+Hooks.once("init", () => {
+    game.settings.register("witcher-compendium", "foldersCreated", {
+        scope: "world",
+        config: false,
+        type: Boolean,
+        default: false
+    });
+});
+
 /**
  * Logica avanzata Drag & Drop per Witcher RPG Compendium (v2.4)
  * Gestisce canone, restrizioni e automazione bonus/perks.
