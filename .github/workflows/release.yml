@@ -16,14 +16,13 @@ jobs:
 
       - name: Package System
         run: |
-          cd TheWitcherItaNewSystem
-          zip -r ../system.zip .
+          zip -r ../system.zip . -x "*.zip"
           cd ..
 
       - name: Package Module
         run: |
           cd witcher-compendium
-          zip -r ../module.zip .
+          zip -r ../witcher-compendium-${{ github.ref_name }}.zip . -x "*.zip"
           cd ..
 
       - name: Create Release
@@ -31,7 +30,7 @@ jobs:
         with:
           files: |
             system.zip
-            module.zip
+            witcher-compendium-${{ github.ref_name }}.zip
           draft: false
           prerelease: false
           generate_release_notes: true
