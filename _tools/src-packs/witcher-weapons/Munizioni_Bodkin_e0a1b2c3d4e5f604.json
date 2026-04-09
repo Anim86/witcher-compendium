@@ -1,0 +1,35 @@
+{
+    "_id": "e0a1b2c3d4e5f604",
+    "name": "Munizioni Bodkin",
+    "type": "weapon",
+    "img": "icons/weapons/ammunition/arrows-quiver-simple-brown.webp",
+    "system": {
+        "description": "<p>I dardi smussati e a punta cava sono ottimi se miri contro qualcuno che non ha armatura. Eh, il problema è che i più hanno abbastanza buon senso da mettersi qualche armatu- ra e a te tocca fare i salti mortali per cercare di trapassarle. Ed è qui che entrano in gioco i bodkin. Prendi un lungo puntale rastremato, lo tempri nel fuoco ed eccolo che perfora cuoio e acciaio.</p>",
+        "weight": 0.1,
+        "cost": 15,
+        "quantity": 10,
+        "isAmmo": true,
+        "type": {
+            "text": "Munizione",
+            "piercing": true
+        },
+        "reliability": {
+            "value": 10,
+            "max": 10
+        },
+        "effects": "Trapassare",
+        "sourcebook": "MB 74"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}
