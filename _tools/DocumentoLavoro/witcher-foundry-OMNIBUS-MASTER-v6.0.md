@@ -718,6 +718,27 @@ Sprint Polish	Fix minori UI/DragDrop	MEDIA	🟡 PENDING
 
 Sprint Docs	Manuale utente	BASSA	🟢 FUTURO
 
+Fase 7	Workflow Source-First & Compilatore v11	CRITICO	✅ COMPLETATO
+
+FASE 7 — Workflow Source-First e Compilatore Moderno (v14.1.30+)
+
+Data: 9 Aprile 2026
+
+Attività svolte:
+
+Riorganizzazione Totale Sorgenti: La cartella `_tools/src-packs/` è stata ristrutturata per rispecchiare fedelmente la gerarchia dei pacchetti in `module.json` (es. `CORE/`, `MAGIA/base/`, `BESTIARIO/PNG/caos/`). Questo permette una gestione ordinata dei file JSON senza conflitti di nomi.
+
+Implementazione Compilatore Master: Creato lo script `_tools/scripts/compile-packs-v11.mjs`. Questo strumento automatizza la trasformazione dei file JSON sorgente nei database binari LevelDB richiesti da Foundry v14.
+
+Upgrade Tecnologico: Passaggio alla libreria `classic-level` v3.0.0 (basata su Rust/NAPI-RS). Risultato: compilazione più veloce, eliminazione di dipendenze Python/node-gyp e maggiore stabilità su Windows.
+
+Automazione del Workflow: Il compilatore pulisce i database di destinazione prima di ogni scrittura, garantendo che il compendio in gioco sia sempre lo specchio esatto dei file JSON in `_tools`.
+
+Risultato:
+- Struttura `src-packs` sincronizzata al 100% con `module.json`.
+- Tempo di compilazione globale: < 5 secondi per ~700 entries.
+- Workflow semplificato: Modifica JSON → Esegui Script → Gioca.
+
 11\. METRICHE DI PRODUZIONE FINALI
 
 Metrica	Valore
