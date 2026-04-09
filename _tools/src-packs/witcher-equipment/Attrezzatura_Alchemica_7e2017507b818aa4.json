@@ -1,0 +1,25 @@
+{
+    "_id": "7e2017507b818aa4",
+    "name": "Attrezzatura Alchemica",
+    "type": "item",
+    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag095_Oggetti Vari_01.webp",
+    "system": {
+        "description": "<p>Consente di preparare oggetti alchemici. Un'attrezzatura alchemica comprende svariate fiale e bottigliette per contenere le pozioni create.</p>",
+        "weight": 3,
+        "cost": 80,
+        "quantity": 1,
+        "sourcebook": "MB 94"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

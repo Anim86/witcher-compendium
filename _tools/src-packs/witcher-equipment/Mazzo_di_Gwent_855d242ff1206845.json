@@ -1,0 +1,25 @@
+{
+    "_id": "855d242ff1206845",
+    "name": "Mazzo di Gwent",
+    "type": "item",
+    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag095_Oggetti Vari_01.webp",
+    "system": {
+        "description": "<p>Un gioco di strategia che imperversa nelle taverne. Comprende carte basate sulle fazioni: Regni Settentrionali, Nilfgaard, Scoia'tael, Mostri e Skellige.</p>",
+        "weight": 0.2,
+        "cost": 5,
+        "quantity": 1,
+        "sourcebook": "MB 95"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

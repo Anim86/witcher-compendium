@@ -1,0 +1,25 @@
+{
+    "_id": "a31b8d623c375e13",
+    "name": "Strumenti Chirurgici",
+    "type": "item",
+    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag095_Oggetti Vari_01.webp",
+    "system": {
+        "description": "<p>Ferri del mestiere per medici e cerusici. Consente di effettuare operazioni chirurgiche e trattare ferite gravi.</p>",
+        "weight": 1,
+        "cost": 83,
+        "quantity": 1,
+        "sourcebook": "MB 94"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

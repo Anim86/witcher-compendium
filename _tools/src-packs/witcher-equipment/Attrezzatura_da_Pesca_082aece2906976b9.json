@@ -1,0 +1,25 @@
+{
+    "_id": "082aece2906976b9",
+    "name": "Attrezzatura da Pesca",
+    "type": "item",
+    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag095_Oggetti Vari_01.webp",
+    "system": {
+        "description": "<p>Include canna, ami e esche. Conferisce un bonus di +2 alle prove di Sopravvivenza effettuate per pescare.</p>",
+        "weight": 0.5,
+        "cost": 27,
+        "quantity": 1,
+        "sourcebook": "MB 94"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

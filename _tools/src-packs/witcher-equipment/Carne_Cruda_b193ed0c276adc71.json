@@ -1,0 +1,25 @@
+{
+    "_id": "b193ed0c276adc71",
+    "name": "Carne Cruda",
+    "type": "item",
+    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag095_Oggetti Vari_01.webp",
+    "system": {
+        "description": "<p>Carne fresca di pollo, manzo o maiale pronta per essere cucinata.</p>",
+        "weight": 1,
+        "cost": 8,
+        "quantity": 1,
+        "sourcebook": "MB 95"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

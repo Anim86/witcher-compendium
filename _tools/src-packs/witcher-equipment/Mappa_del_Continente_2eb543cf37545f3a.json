@@ -1,0 +1,25 @@
+{
+    "_id": "2eb543cf37545f3a",
+    "name": "Mappa del Continente",
+    "type": "item",
+    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag095_Oggetti Vari_01.webp",
+    "system": {
+        "description": "<p>Mappa affidabile che copre dalle Montagne del Drago a Nilfgaard. Conferisce un bonus di +3 per orientarsi.</p>",
+        "weight": 0.1,
+        "cost": 18,
+        "quantity": 1,
+        "sourcebook": "MB 95"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "_id": "0fecb247b05c8e55",
+    "name": "Plancia da Poker con Dadi",
+    "type": "item",
+    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag095_Oggetti Vari_01.webp",
+    "system": {
+        "description": "<p>Comprende la plancia di gioco e dieci dadi. Un passatempo comune in tutto il Continente.</p>",
+        "weight": 0.5,
+        "cost": 25,
+        "quantity": 1,
+        "sourcebook": "MB 95"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "1.0.0",
+        "coreVersion": "13"
+    }
+}
