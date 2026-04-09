@@ -21,11 +21,10 @@ Thumbs.db
 !**/packs/**/MANIFEST-*
 !**/packs/**/*.ldb
 !**/packs/**/*.log
-# Witcher Compendium Assets (Ignoring raw, allowing optimized)
-witcher-compendium/assets/*
-!witcher-compendium/assets/optimized/
+# Witcher Compendium Assets (Ignoring raw, allowing optimized ONLY)
 witcher-compendium/images/
-!witcher-compendium/assets/optimized/images/
+witcher-compendium/assets/**
+!witcher-compendium/assets/optimized/**
 
 # Zip files for releases (should not be in repo)
 *.zip
