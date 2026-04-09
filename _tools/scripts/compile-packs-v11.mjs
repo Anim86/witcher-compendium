@@ -2,7 +2,12 @@ import { ClassicLevel } from 'classic-level';
 import fs from 'fs';
 import path from 'path';
 
-const REPO_ROOT = path.resolve('../..');
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const REPO_ROOT = path.resolve(__dirname, '../../');
 const MODULE_ROOT = path.join(REPO_ROOT, 'witcher-compendium');
 const SRC_ROOT = path.join(REPO_ROOT, '_tools', 'src-packs');
 const MODULE_JSON_PATH = path.join(MODULE_ROOT, 'module.json');
