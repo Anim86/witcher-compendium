@@ -1,0 +1,27 @@
+{
+    "_id": "b73e91086953f829",
+    "name": "Olio di Papero",
+    "type": "component",
+    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag131_Componenti per la Manifattura_10.webp",
+    "system": {
+        "description": "<p>Olio fine estratto dai volatili acquatici, usato per trattamenti di precisione.</p>",
+        "category": "trattamento",
+        "quantity": "1",
+        "weight": 0.1,
+        "cost": 45,
+        "sourcebook": "MB 131",
+        "type": "crafting-material",
+        "rarity": "S",
+        "location": "Fiumi e coste",
+        "quantityObtainable": "",
+        "forage": "",
+        "substanceType": ""
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherTRPG",
+        "systemVersion": "v14.1.34",
+        "coreVersion": "13"
+    }
+}
