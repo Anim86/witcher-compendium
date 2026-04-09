@@ -6,10 +6,7 @@
         "minimum": "14",
         "verified": "14.359"
     },
-    "version": "v14.1.30",
-    "icon": "assets/images/icon.png",
-    "logo": "assets/images/icon.png",
-    "banner": "assets/images/banner.png",
+    "version": "v14.1.31",
     "media": [
         {
             "type": "icon",
@@ -36,6 +33,54 @@
         "styles/witcher-styles.css",
         "styles/wizard.css"
     ],
+    "documentTypes": {
+        "Actor": {
+            "character": {},
+            "monster": {},
+            "loot": {},
+            "mystery": {}
+        },
+        "Item": {
+            "alchemical": {},
+            "armor": {},
+            "component": {},
+            "container": {},
+            "diagrams": {},
+            "enhancement": {},
+            "mount": {},
+            "mutagen": {},
+            "note": {},
+            "profession": {
+                "htmlFields": [
+                    "notes",
+                    "definingSkill.definition",
+                    "*.*.definition"
+                ]
+            },
+            "homeland": {},
+            "race": {
+                "htmlFields": [
+                    "description",
+                    "*.description"
+                ]
+            },
+            "spell": {},
+            "hex": {},
+            "ritual": {},
+            "valuable": {},
+            "weapon": {},
+            "clue": {},
+            "obstacle": {},
+            "skill": {}
+        },
+        "ChatMessage": {
+            "attack": {},
+            "defense": {}
+        },
+        "ActiveEffect": {
+            "temporaryItemImprovement": {}
+        }
+    },
     "packFolders": [
         {
             "name": "Witcher TRPG System",
@@ -125,5 +170,5 @@
     "secondaryTokenAttribute": "resources.power",
     "url": "https://github.com/Anim86/witcher-compendium",
     "manifest": "https://raw.githubusercontent.com/Anim86/witcher-compendium/main/TheWitcherItaNewSystem/system.json",
-    "download": "https://github.com/Anim86/witcher-compendium/releases/download/v14.1.30/system.zip"
+    "download": "https://github.com/Anim86/witcher-compendium/releases/download/v14.1.31/system.zip"
 }
