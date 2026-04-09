@@ -1,81 +1,86 @@
 {
-  "name": "Medico",
-  "type": "profession",
-  "img": "modules/witcher-compendium/assets/optimized/images/professions/medico.webp",
-  "system": {
-    "sourcebook": "Manuale Base, p.45",
-    "definingSkill": {
-      "skillName": "Guarigione",
-      "stat": "cra",
-      "level": 1,
-      "definition": "<p>Un Medico è essenziale per la sopravvivenza del gruppo. Con la sua abilità di <strong>Guarigione (MAN)</strong> può stabilizzare ferite critiche, curare malattie e riportare in salute i compagni molto più velocemente del normale.</p>"
+    "name": "Medico",
+    "type": "profession",
+    "img": "modules/witcher-compendium/assets/optimized/images/professions/medico.webp",
+    "system": {
+        "sourcebook": "Manuale Base, p.45",
+        "definingSkill": {
+            "skillName": "Guarigione",
+            "stat": "cra",
+            "level": 1,
+            "definition": "<p>Un Medico è essenziale per la sopravvivenza del gruppo. Con la sua abilità di <strong>Guarigione (MAN)</strong> può stabilizzare ferite critiche, curare malattie e riportare in salute i compagni molto più velocemente del normale.</p>"
+        },
+        "skillPath1": {
+            "pathName": "Il Chirurgo",
+            "skill1": {
+                "skillName": "Amputazione Salvifica",
+                "stat": "cra",
+                "level": 0,
+                "definition": "<p>Rimuove arti irrimediabilmente danneggiati per salvare la vita del paziente, minimizzando il trauma.</p>"
+            },
+            "skill2": {
+                "skillName": "Cucitura Veloce",
+                "stat": "cra",
+                "level": 0,
+                "definition": "<p>Permette di suturare ferite aperte in pochi secondi, bloccando immediatamente lo stato di Sanguinamento.</p>"
+            },
+            "skill3": {
+                "skillName": "Ricomposizione Ossa",
+                "stat": "cra",
+                "level": 0,
+                "definition": "<p>Tecnica avanzata per rimettere in asse fratture composte e scomposte, riducendo i tempi di immobilizzazione.</p>"
+            }
+        },
+        "skillPath2": {
+            "pathName": "L'Erborista",
+            "skill1": {
+                "skillName": "Conoscenza Erbe",
+                "stat": "int",
+                "level": 0,
+                "definition": "<p>Identifica istantaneamente ogni tipo di flora e ne conosce gli usi medicinali o i pericoli tossici.</p>"
+            },
+            "skill2": {
+                "skillName": "Unguenti Curativi",
+                "stat": "cra",
+                "level": 0,
+                "definition": "<p>Produzione di creme che accelerano la rigenerazione tissutale e leniscono i dolori delle ustioni.</p>"
+            },
+            "skill3": {
+                "skillName": "Antidoti Complessi",
+                "stat": "int",
+                "level": 0,
+                "definition": "<p>Capacità di preparare sieri mirati contro veleni di mostri specifici (es. Viverne o Ragni).</p>"
+            }
+        },
+        "skillPath3": {
+            "pathName": "L'Anatomista",
+            "skill1": {
+                "skillName": "Colpo Chirurgico",
+                "stat": "int",
+                "level": 0,
+                "definition": "<p>Conoscenza dei punti vitali degli umanoidi. Permette di ignorare parte della PR del bersaglio mirando alle giunture.</p>"
+            },
+            "skill2": {
+                "skillName": "Analisi Cadaveri",
+                "stat": "int",
+                "level": 0,
+                "definition": "<p>Permette di determinare con esattezza la causa della morte, l'ora del decesso e il tipo di arma o mostro coinvolto.</p>"
+            },
+            "skill3": {
+                "skillName": "Biologia Mostruosa",
+                "stat": "int",
+                "level": 0,
+                "definition": "<p>Studio delle debolezze fisiologiche dei mostri, fornendo bonus ai danni contro categorie specifiche.</p>"
+            }
+        },
+        "professionSkills": "Pronto Soccorso, Alchimia, Istruzione, Deduzione, Persuasione, Commercio, Sensibilità, Accortezza, Belle Arti, Lame Corte"
     },
-    "skillPath1": {
-      "pathName": "Il Chirurgo",
-      "skill1": {
-        "skillName": "Amputazione Salvifica",
-        "stat": "cra",
-        "level": 0,
-        "definition": "<p>Rimuove arti irrimediabilmente danneggiati per salvare la vita del paziente, minimizzando il trauma.</p>"
-      },
-      "skill2": {
-        "skillName": "Cucitura Veloce",
-        "stat": "cra",
-        "level": 0,
-        "definition": "<p>Permette di suturare ferite aperte in pochi secondi, bloccando immediatamente lo stato di Sanguinamento.</p>"
-      },
-      "skill3": {
-        "skillName": "Ricomposizione Ossa",
-        "stat": "cra",
-        "level": 0,
-        "definition": "<p>Tecnica avanzata per rimettere in asse fratture composte e scomposte, riducendo i tempi di immobilizzazione.</p>"
-      }
-    },
-    "skillPath2": {
-      "pathName": "L'Erborista",
-      "skill1": {
-        "skillName": "Conoscenza Erbe",
-        "stat": "int",
-        "level": 0,
-        "definition": "<p>Identifica istantaneamente ogni tipo di flora e ne conosce gli usi medicinali o i pericoli tossici.</p>"
-      },
-      "skill2": {
-        "skillName": "Unguenti Curativi",
-        "stat": "cra",
-        "level": 0,
-        "definition": "<p>Produzione di creme che accelerano la rigenerazione tissutale e leniscono i dolori delle ustioni.</p>"
-      },
-      "skill3": {
-        "skillName": "Antidoti Complessi",
-        "stat": "int",
-        "level": 0,
-        "definition": "<p>Capacità di preparare sieri mirati contro veleni di mostri specifici (es. Viverne o Ragni).</p>"
-      }
-    },
-    "skillPath3": {
-      "pathName": "L'Anatomista",
-      "skill1": {
-        "skillName": "Colpo Chirurgico",
-        "stat": "int",
-        "level": 0,
-        "definition": "<p>Conoscenza dei punti vitali degli umanoidi. Permette di ignorare parte della PR del bersaglio mirando alle giunture.</p>"
-      },
-      "skill2": {
-        "skillName": "Analisi Cadaveri",
-        "stat": "int",
-        "level": 0,
-        "definition": "<p>Permette di determinare con esattezza la causa della morte, l'ora del decesso e il tipo di arma o mostro coinvolto.</p>"
-      },
-      "skill3": {
-        "skillName": "Biologia Mostruosa",
-        "stat": "int",
-        "level": 0,
-        "definition": "<p>Studio delle debolezze fisiologiche dei mostri, fornendo bonus ai danni contro categorie specifiche.</p>"
-      }
-    },
-    "professionSkills": "Pronto Soccorso, Alchimia, Istruzione, Deduzione, Persuasione, Commercio, Sensibilità, Accortezza, Belle Arti, Lame Corte"
-  },
-  "effects": [],
-  "flags": {},
-  "_id": "rofdoctor0000001"
+    "effects": [],
+    "flags": {},
+    "_id": "rofdoctor0000001",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "systemVersion": "v14.1.33",
+        "coreVersion": "14"
+    }
 }

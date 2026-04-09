@@ -1,34 +1,39 @@
 {
-  "name": "Witcher",
-  "type": "race",
-  "img": "modules/witcher-compendium/assets/optimized/images/races/witcher.webp",
-  "system": {
-    "sourcebook": "Manuale Base, p.24",
-    "perk1": {
-      "name": "Sensi Acuiti",
-      "description": "<p>I Witcher possiedono una vista e un olfatto sovrumani. Non subiscono penalità in condizioni di luce fioca, guadagnano un <strong>+1 innato ad Accortezza</strong> e possono seguire tracce usando l'olfatto con l'abilità Sopravvivenza.</p>"
+    "name": "Witcher",
+    "type": "race",
+    "img": "modules/witcher-compendium/assets/optimized/images/races/witcher.webp",
+    "system": {
+        "sourcebook": "Manuale Base, p.24",
+        "perk1": {
+            "name": "Sensi Acuiti",
+            "description": "<p>I Witcher possiedono una vista e un olfatto sovrumani. Non subiscono penalità in condizioni di luce fioca, guadagnano un <strong>+1 innato ad Accortezza</strong> e possono seguire tracce usando l'olfatto con l'abilità Sopravvivenza.</p>"
+        },
+        "perk2": {
+            "name": "Mutazione Resiliente",
+            "description": "<p>Il corpo mutato dei Witcher è immune a tutte le malattie naturali e può ingerire i mutageni senza rischi letali improvvisi.</p>"
+        },
+        "perk3": {
+            "name": "Emozioni Attenuate",
+            "description": "<p>A causa delle mutazioni, i Witcher subiscono una <strong>penalità di -4 ad Empatia</strong> (minimo 1). Tuttavia, sono <strong>immuni ai test di Coraggio contro Intimidire</strong>.</p>"
+        },
+        "perk4": {
+            "name": "Riflessi Fulminei",
+            "description": "<p>Le mutazioni ai nervi forniscono un <strong>bonus permanente di +1 a Riflessi e Destrezza</strong>, che può superare il valore di 10 durante la creazione.</p>"
+        },
+        "socialStanding": {
+            "north": "hatedFeared",
+            "nilfgaard": "hatedFeared",
+            "skellige": "hatedFeared",
+            "dolBlathanna": "hatedFeared",
+            "mahakam": "hatedFeared"
+        }
     },
-    "perk2": {
-      "name": "Mutazione Resiliente",
-      "description": "<p>Il corpo mutato dei Witcher è immune a tutte le malattie naturali e può ingerire i mutageni senza rischi letali improvvisi.</p>"
-    },
-    "perk3": {
-      "name": "Emozioni Attenuate",
-      "description": "<p>A causa delle mutazioni, i Witcher subiscono una <strong>penalità di -4 ad Empatia</strong> (minimo 1). Tuttavia, sono <strong>immuni ai test di Coraggio contro Intimidire</strong>.</p>"
-    },
-    "perk4": {
-      "name": "Riflessi Fulminei",
-      "description": "<p>Le mutazioni ai nervi forniscono un <strong>bonus permanente di +1 a Riflessi e Destrezza</strong>, che può superare il valore di 10 durante la creazione.</p>"
-    },
-    "socialStanding": {
-      "north": "hatedFeared",
-      "nilfgaard": "hatedFeared",
-      "skellige": "hatedFeared",
-      "dolBlathanna": "hatedFeared",
-      "mahakam": "hatedFeared"
+    "effects": [],
+    "flags": {},
+    "_id": "racewitcher00001",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "systemVersion": "v14.1.33",
+        "coreVersion": "14"
     }
-  },
-  "effects": [],
-  "flags": {},
-  "_id": "racewitcher00001"
 }

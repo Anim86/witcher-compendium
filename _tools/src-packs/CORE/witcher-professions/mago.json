@@ -1,81 +1,86 @@
 {
-  "name": "Mago",
-  "type": "profession",
-  "img": "modules/witcher-compendium/assets/optimized/images/professions/mago.webp",
-  "system": {
-    "sourcebook": "Manuale Base, p.44",
-    "definingSkill": {
-      "skillName": "Arte del Mago",
-      "stat": "int",
-      "level": 1,
-      "definition": "<p>Un Mago può tirare Arte del Mago (INT) per identificare fenomeni magici, rispondere a domande sul Caos o percepire la presenza di aure magiche attive entro 10 metri. La CD è determinata dal GM in base alla rarità del fenomeno.</p>"
+    "name": "Mago",
+    "type": "profession",
+    "img": "modules/witcher-compendium/assets/optimized/images/professions/mago.webp",
+    "system": {
+        "sourcebook": "Manuale Base, p.44",
+        "definingSkill": {
+            "skillName": "Arte del Mago",
+            "stat": "int",
+            "level": 1,
+            "definition": "<p>Un Mago può tirare Arte del Mago (INT) per identificare fenomeni magici, rispondere a domande sul Caos o percepire la presenza di aure magiche attive entro 10 metri. La CD è determinata dal GM in base alla rarità del fenomeno.</p>"
+        },
+        "skillPath1": {
+            "pathName": "Il Consigliere",
+            "skill1": {
+                "skillName": "Politica",
+                "stat": "int",
+                "level": 0,
+                "definition": "<p>Permette di navigare tra gli intrighi di corte e comprendere le alleanze politiche. Fornisce un bonus alle prove di Etichetta e Persuasione in contesti nobiliari.</p>"
+            },
+            "skill2": {
+                "skillName": "Etichetta",
+                "stat": "int",
+                "level": 0,
+                "definition": "<p>Conoscenza approfondita delle norme sociali e dei protocolli di ogni regno. Riduce le penalità sociali nei territori stranieri.</p>"
+            },
+            "skill3": {
+                "skillName": "Carisma",
+                "stat": "emp",
+                "level": 0,
+                "definition": "<p>Migliora la capacità di influenzare le decisioni dei potenti attraverso la parola e la presenza scenica.</p>"
+            }
+        },
+        "skillPath2": {
+            "pathName": "Il Mago Combattente",
+            "skill1": {
+                "skillName": "Scudo Magico",
+                "stat": "will",
+                "level": 0,
+                "definition": "<p>Capacità di erigere barriere di energia pura. Può essere usato come azione di parata contro attacchi fisici usando Volontà.</p>"
+            },
+            "skill2": {
+                "skillName": "Distruzione",
+                "stat": "will",
+                "level": 0,
+                "definition": "<p>Aumenta l'efficacia distruttiva degli incantesimi elementali, aggiungendo bonus al danno in base al livello.</p>"
+            },
+            "skill3": {
+                "skillName": "Resistenza",
+                "stat": "will",
+                "level": 0,
+                "definition": "<p>Fortifica la mente e lo spirito per resistere ai tentativi di controllo mentale o debilitazione magica.</p>"
+            }
+        },
+        "skillPath3": {
+            "pathName": "Lo Scienziato",
+            "skill1": {
+                "skillName": "Ricerca",
+                "stat": "int",
+                "level": 0,
+                "definition": "<p>Abilità nello studiare antichi tomi, decifrare codici e scoprire segreti arcani sepolti nel tempo.</p>"
+            },
+            "skill2": {
+                "skillName": "Alchimia",
+                "stat": "cra",
+                "level": 0,
+                "definition": "<p>Specializzazione nella creazione di pozioni ed elisir di altissima complessità, riducendo i tempi di produzione.</p>"
+            },
+            "skill3": {
+                "skillName": "Invenzione",
+                "stat": "cra",
+                "level": 0,
+                "definition": "<p>Capacità di ideare e forgiare nuovi oggetti magici o strumenti tecnologici avanzati.</p>"
+            }
+        },
+        "professionSkills": "Lanciare Incantesimi, Officiare Rituali, Intessere Fatture, Resistere alla Magia, Istruzione, Etichetta, Seduzione, Sensibilità, Armi in Asta, Eleganza"
     },
-    "skillPath1": {
-      "pathName": "Il Consigliere",
-      "skill1": {
-        "skillName": "Politica",
-        "stat": "int",
-        "level": 0,
-        "definition": "<p>Permette di navigare tra gli intrighi di corte e comprendere le alleanze politiche. Fornisce un bonus alle prove di Etichetta e Persuasione in contesti nobiliari.</p>"
-      },
-      "skill2": {
-        "skillName": "Etichetta",
-        "stat": "int",
-        "level": 0,
-        "definition": "<p>Conoscenza approfondita delle norme sociali e dei protocolli di ogni regno. Riduce le penalità sociali nei territori stranieri.</p>"
-      },
-      "skill3": {
-        "skillName": "Carisma",
-        "stat": "emp",
-        "level": 0,
-        "definition": "<p>Migliora la capacità di influenzare le decisioni dei potenti attraverso la parola e la presenza scenica.</p>"
-      }
-    },
-    "skillPath2": {
-      "pathName": "Il Mago Combattente",
-      "skill1": {
-        "skillName": "Scudo Magico",
-        "stat": "will",
-        "level": 0,
-        "definition": "<p>Capacità di erigere barriere di energia pura. Può essere usato come azione di parata contro attacchi fisici usando Volontà.</p>"
-      },
-      "skill2": {
-        "skillName": "Distruzione",
-        "stat": "will",
-        "level": 0,
-        "definition": "<p>Aumenta l'efficacia distruttiva degli incantesimi elementali, aggiungendo bonus al danno in base al livello.</p>"
-      },
-      "skill3": {
-        "skillName": "Resistenza",
-        "stat": "will",
-        "level": 0,
-        "definition": "<p>Fortifica la mente e lo spirito per resistere ai tentativi di controllo mentale o debilitazione magica.</p>"
-      }
-    },
-    "skillPath3": {
-      "pathName": "Lo Scienziato",
-      "skill1": {
-        "skillName": "Ricerca",
-        "stat": "int",
-        "level": 0,
-        "definition": "<p>Abilità nello studiare antichi tomi, decifrare codici e scoprire segreti arcani sepolti nel tempo.</p>"
-      },
-      "skill2": {
-        "skillName": "Alchimia",
-        "stat": "cra",
-        "level": 0,
-        "definition": "<p>Specializzazione nella creazione di pozioni ed elisir di altissima complessità, riducendo i tempi di produzione.</p>"
-      },
-      "skill3": {
-        "skillName": "Invenzione",
-        "stat": "cra",
-        "level": 0,
-        "definition": "<p>Capacità di ideare e forgiare nuovi oggetti magici o strumenti tecnologici avanzati.</p>"
-      }
-    },
-    "professionSkills": "Lanciare Incantesimi, Officiare Rituali, Intessere Fatture, Resistere alla Magia, Istruzione, Etichetta, Seduzione, Sensibilità, Armi in Asta, Eleganza"
-  },
-  "effects": [],
-  "flags": {},
-  "_id": "profmage00000001"
+    "effects": [],
+    "flags": {},
+    "_id": "profmage00000001",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "systemVersion": "v14.1.33",
+        "coreVersion": "14"
+    }
 }

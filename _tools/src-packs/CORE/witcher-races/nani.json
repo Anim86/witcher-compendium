@@ -1,34 +1,39 @@
 {
-  "name": "Nani",
-  "type": "race",
-  "img": "modules/witcher-compendium/assets/optimized/images/races/nano.webp",
-  "system": {
-    "sourcebook": "Manuale Base, p.25",
-    "perk1": {
-      "name": "Coriaceo",
-      "description": "<p>La pelle e la tempra dei nani sono incredibilmente resistenti. Possiedono una <strong>capacità di blocco naturale di 2 (PR)</strong> in ogni locazione del corpo, che non può essere ridotta da normali attacchi ed è cumulabile con le armature indossate.</p>"
+    "name": "Nani",
+    "type": "race",
+    "img": "modules/witcher-compendium/assets/optimized/images/races/nano.webp",
+    "system": {
+        "sourcebook": "Manuale Base, p.25",
+        "perk1": {
+            "name": "Coriaceo",
+            "description": "<p>La pelle e la tempra dei nani sono incredibilmente resistenti. Possiedono una <strong>capacità di blocco naturale di 2 (PR)</strong> in ogni locazione del corpo, che non può essere ridotta da normali attacchi ed è cumulabile con le armature indossate.</p>"
+        },
+        "perk2": {
+            "name": "Forte",
+            "description": "<p>Grazie alla loro struttura massiccia, i nani ottengono un <strong>bonus di +1 innato all'abilità Prestanza</strong> e aumentano il loro valore di <strong>Ingombro massimo di +25</strong>.</p>"
+        },
+        "perk3": {
+            "name": "Occhio da Artigiano",
+            "description": "<p>Nati tra il commercio e la manifattura, i nani sanno valutare la qualità. Ottengono un <strong>bonus di +1 innato all'abilità Commercio</strong>.</p>"
+        },
+        "perk4": {
+            "name": "-",
+            "description": "-"
+        },
+        "socialStanding": {
+            "north": "tolerated",
+            "nilfgaard": "tolerated",
+            "skellige": "tolerated",
+            "dolBlathanna": "tolerated",
+            "mahakam": "equal"
+        }
     },
-    "perk2": {
-      "name": "Forte",
-      "description": "<p>Grazie alla loro struttura massiccia, i nani ottengono un <strong>bonus di +1 innato all'abilità Prestanza</strong> e aumentano il loro valore di <strong>Ingombro massimo di +25</strong>.</p>"
-    },
-    "perk3": {
-      "name": "Occhio da Artigiano",
-      "description": "<p>Nati tra il commercio e la manifattura, i nani sanno valutare la qualità. Ottengono un <strong>bonus di +1 innato all'abilità Commercio</strong>.</p>"
-    },
-    "perk4": {
-      "name": "-",
-      "description": "-"
-    },
-    "socialStanding": {
-      "north": "tolerated",
-      "nilfgaard": "tolerated",
-      "skellige": "tolerated",
-      "dolBlathanna": "tolerated",
-      "mahakam": "equal"
+    "effects": [],
+    "flags": {},
+    "_id": "racedwarf0000001",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "systemVersion": "v14.1.33",
+        "coreVersion": "14"
     }
-  },
-  "effects": [],
-  "flags": {},
-  "_id": "racedwarf0000001"
 }

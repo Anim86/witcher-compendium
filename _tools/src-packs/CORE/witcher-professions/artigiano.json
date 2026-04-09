@@ -1,81 +1,86 @@
 {
-  "name": "Artigiano",
-  "type": "profession",
-  "img": "modules/witcher-compendium/assets/optimized/images/professions/artigiano.webp",
-  "system": {
-    "sourcebook": "Manuale Base, p.41",
-    "definingSkill": {
-      "skillName": "Manifattura Impeccabile",
-      "stat": "cra",
-      "level": 1,
-      "definition": "<p>Un Artigiano può riparare oggetti danneggiati o crearne di nuovi con un'efficienza superiore. Può effettuare una prova di <strong>Manifattura Impeccabile (MAN)</strong> per dimezzare il tempo di creazione o ridurre il costo dei componenti del 10%.</p>"
+    "name": "Artigiano",
+    "type": "profession",
+    "img": "modules/witcher-compendium/assets/optimized/images/professions/artigiano.webp",
+    "system": {
+        "sourcebook": "Manuale Base, p.41",
+        "definingSkill": {
+            "skillName": "Manifattura Impeccabile",
+            "stat": "cra",
+            "level": 1,
+            "definition": "<p>Un Artigiano può riparare oggetti danneggiati o crearne di nuovi con un'efficienza superiore. Può effettuare una prova di <strong>Manifattura Impeccabile (MAN)</strong> per dimezzare il tempo di creazione o ridurre il costo dei componenti del 10%.</p>"
+        },
+        "skillPath1": {
+            "pathName": "L'Armaiolo",
+            "skill1": {
+                "skillName": "Forgia Interiore",
+                "stat": "cra",
+                "level": 0,
+                "definition": "<p>Conoscenza profonda dei metalli. Permette di forgiare lame con <strong>+1 alla precisione</strong> o armature con <strong>+2 alla Resistenza (PR)</strong>.</p>"
+            },
+            "skill2": {
+                "skillName": "Rinforzo",
+                "stat": "cra",
+                "level": 0,
+                "definition": "<p>Tecnica specializzata per aumentare l'Affidabilità di un'arma o di uno scudo, rendendolo molto più resistente all'usura.</p>"
+            },
+            "skill3": {
+                "skillName": "Incisore di Rune",
+                "stat": "int",
+                "level": 0,
+                "definition": "<p>Abilità nell'incastonare rune e glifi magici, massimizzando il loro effetto e riducendo il rischio di fallimento.</p>"
+            }
+        },
+        "skillPath2": {
+            "pathName": "L'Alchimista",
+            "skill1": {
+                "skillName": "Distillazione",
+                "stat": "cra",
+                "level": 0,
+                "definition": "<p>Permette di estrarre sostanze più concentrate dai componenti alchemici, aumentando il numero di dosi prodotte.</p>"
+            },
+            "skill2": {
+                "skillName": "Analisi Sostanze",
+                "stat": "int",
+                "level": 0,
+                "definition": "<p>Consente di identificare istantaneamente veleni, droghe e pozioni sconosciute, conoscendone l'antidoto.</p>"
+            },
+            "skill3": {
+                "skillName": "Fuoco Greco",
+                "stat": "cra",
+                "level": 0,
+                "definition": "<p>Abilità nella creazione di composti esplosivi e incendiari più stabili e distruttivi.</p>"
+            }
+        },
+        "skillPath3": {
+            "pathName": "L'Ingegnere",
+            "skill1": {
+                "skillName": "Architettura",
+                "stat": "int",
+                "level": 0,
+                "definition": "<p>Comprensione delle strutture architettoniche. Permette di individuare passaggi segreti o punti deboli in mura e fortificazioni.</p>"
+            },
+            "skill2": {
+                "skillName": "Meccanismi",
+                "stat": "cra",
+                "level": 0,
+                "definition": "<p>Competenza superiore nel creare, riparare o disattivare serrature e congegni complessi.</p>"
+            },
+            "skill3": {
+                "skillName": "Assedio",
+                "stat": "int",
+                "level": 0,
+                "definition": "<p>Specializzazione nell'uso e nella costruzione di macchine d'assedio pesanti.</p>"
+            }
+        },
+        "professionSkills": "Belle Arti, Istruzione, Alchimia, Manifattura, Scassinare, Persuasione, Sensibilità, Accortezza, Rissa, Lame Corte"
     },
-    "skillPath1": {
-      "pathName": "L'Armaiolo",
-      "skill1": {
-        "skillName": "Forgia Interiore",
-        "stat": "cra",
-        "level": 0,
-        "definition": "<p>Conoscenza profonda dei metalli. Permette di forgiare lame con <strong>+1 alla precisione</strong> o armature con <strong>+2 alla Resistenza (PR)</strong>.</p>"
-      },
-      "skill2": {
-        "skillName": "Rinforzo",
-        "stat": "cra",
-        "level": 0,
-        "definition": "<p>Tecnica specializzata per aumentare l'Affidabilità di un'arma o di uno scudo, rendendolo molto più resistente all'usura.</p>"
-      },
-      "skill3": {
-        "skillName": "Incisore di Rune",
-        "stat": "int",
-        "level": 0,
-        "definition": "<p>Abilità nell'incastonare rune e glifi magici, massimizzando il loro effetto e riducendo il rischio di fallimento.</p>"
-      }
-    },
-    "skillPath2": {
-      "pathName": "L'Alchimista",
-      "skill1": {
-        "skillName": "Distillazione",
-        "stat": "cra",
-        "level": 0,
-        "definition": "<p>Permette di estrarre sostanze più concentrate dai componenti alchemici, aumentando il numero di dosi prodotte.</p>"
-      },
-      "skill2": {
-        "skillName": "Analisi Sostanze",
-        "stat": "int",
-        "level": 0,
-        "definition": "<p>Consente di identificare istantaneamente veleni, droghe e pozioni sconosciute, conoscendone l'antidoto.</p>"
-      },
-      "skill3": {
-        "skillName": "Fuoco Greco",
-        "stat": "cra",
-        "level": 0,
-        "definition": "<p>Abilità nella creazione di composti esplosivi e incendiari più stabili e distruttivi.</p>"
-      }
-    },
-    "skillPath3": {
-      "pathName": "L'Ingegnere",
-      "skill1": {
-        "skillName": "Architettura",
-        "stat": "int",
-        "level": 0,
-        "definition": "<p>Comprensione delle strutture architettoniche. Permette di individuare passaggi segreti o punti deboli in mura e fortificazioni.</p>"
-      },
-      "skill2": {
-        "skillName": "Meccanismi",
-        "stat": "cra",
-        "level": 0,
-        "definition": "<p>Competenza superiore nel creare, riparare o disattivare serrature e congegni complessi.</p>"
-      },
-      "skill3": {
-        "skillName": "Assedio",
-        "stat": "int",
-        "level": 0,
-        "definition": "<p>Specializzazione nell'uso e nella costruzione di macchine d'assedio pesanti.</p>"
-      }
-    },
-    "professionSkills": "Belle Arti, Istruzione, Alchimia, Manifattura, Scassinare, Persuasione, Sensibilità, Accortezza, Rissa, Lame Corte"
-  },
-  "effects": [],
-  "flags": {},
-  "_id": "profcraftsman001"
+    "effects": [],
+    "flags": {},
+    "_id": "profcraftsman001",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "systemVersion": "v14.1.33",
+        "coreVersion": "14"
+    }
 }

@@ -1,81 +1,86 @@
 {
-  "name": "Druido",
-  "type": "profession",
-  "img": "modules/witcher-compendium/assets/optimized/images/professions/druido.webp",
-  "system": {
-    "sourcebook": "Tomo del Caos, p.50",
-    "definingSkill": {
-      "skillName": "Intuizione Naturale",
-      "stat": "int",
-      "level": 1,
-      "definition": "<p>Un Druido può effettuare una prova di <strong>Intuizione Naturale (INT)</strong> per interpretare il comportamento degli animali, prevedere il meteo o identificare zone contaminate dal punto di vista ecologico o magico.</p>"
+    "name": "Druido",
+    "type": "profession",
+    "img": "modules/witcher-compendium/assets/optimized/images/professions/druido.webp",
+    "system": {
+        "sourcebook": "Tomo del Caos, p.50",
+        "definingSkill": {
+            "skillName": "Intuizione Naturale",
+            "stat": "int",
+            "level": 1,
+            "definition": "<p>Un Druido può effettuare una prova di <strong>Intuizione Naturale (INT)</strong> per interpretare il comportamento degli animali, prevedere il meteo o identificare zone contaminate dal punto di vista ecologico o magico.</p>"
+        },
+        "skillPath1": {
+            "pathName": "L'Eremita",
+            "skill1": {
+                "skillName": "Parlare con gli Animali",
+                "stat": "emp",
+                "level": 0,
+                "definition": "<p>Permette di comunicare concetti semplici con creature non senzienti della foresta.</p>"
+            },
+            "skill2": {
+                "skillName": "Vigore della Terra",
+                "stat": "body",
+                "level": 0,
+                "definition": "<p>Aumenta la Resistenza fisica e il Recupero quando si trova in ambienti naturali incontaminati.</p>"
+            },
+            "skill3": {
+                "skillName": "Pelle di Quercia",
+                "stat": "body",
+                "level": 0,
+                "definition": "<p>Capacità di indurire la pelle temporaneamente, fornendo una PR naturale contro colpi fisici.</p>"
+            }
+        },
+        "skillPath2": {
+            "pathName": "Lo Ierofante",
+            "skill1": {
+                "skillName": "Guarigione Naturale",
+                "stat": "cra",
+                "level": 0,
+                "definition": "<p>Uso di impiastri di erbe rare per accelerare drammaticamente la chiusura delle ferite.</p>"
+            },
+            "skill2": {
+                "skillName": "Antidoto Universale",
+                "stat": "int",
+                "level": 0,
+                "definition": "<p>Capacità di creare un antidoto capace di neutralizzare la maggior parte dei veleni animali o minerali.</p>"
+            },
+            "skill3": {
+                "skillName": "Rito della Rinascita",
+                "stat": "will",
+                "level": 0,
+                "definition": "<p>Un rituale potente che può riportare un alleato dal limitare della morte ristabilendone i sensi.</p>"
+            }
+        },
+        "skillPath3": {
+            "pathName": "L'Animista",
+            "skill1": {
+                "skillName": "Senso della Preda",
+                "stat": "int",
+                "level": 0,
+                "definition": "<p>Localizza creature viventi entro un ampio raggio percependo i battiti cardiaci e il calore.</p>"
+            },
+            "skill2": {
+                "skillName": "Colpo di Zanna",
+                "stat": "ref",
+                "level": 0,
+                "definition": "<p>Aumenta l'efficacia degli attacchi senz'armi o con bastoni, simulando l'aggressività delle fiere.</p>"
+            },
+            "skill3": {
+                "skillName": "Amico delle Foreste",
+                "stat": "emp",
+                "level": 0,
+                "definition": "<p>Garantisce il passaggio sicuro in zone protette da spiriti della natura o mostri relict.</p>"
+            }
+        },
+        "professionSkills": "Sopravvivenza, Accortezza, Sensibilità, Istruzione, Alchimia, Officiare Rituali, Lanciare Incantesimi, Pronto Soccorso, Belle Arti, Armi in Asta"
     },
-    "skillPath1": {
-      "pathName": "L'Eremita",
-      "skill1": {
-        "skillName": "Parlare con gli Animali",
-        "stat": "emp",
-        "level": 0,
-        "definition": "<p>Permette di comunicare concetti semplici con creature non senzienti della foresta.</p>"
-      },
-      "skill2": {
-        "skillName": "Vigore della Terra",
-        "stat": "body",
-        "level": 0,
-        "definition": "<p>Aumenta la Resistenza fisica e il Recupero quando si trova in ambienti naturali incontaminati.</p>"
-      },
-      "skill3": {
-        "skillName": "Pelle di Quercia",
-        "stat": "body",
-        "level": 0,
-        "definition": "<p>Capacità di indurire la pelle temporaneamente, fornendo una PR naturale contro colpi fisici.</p>"
-      }
-    },
-    "skillPath2": {
-      "pathName": "Lo Ierofante",
-      "skill1": {
-        "skillName": "Guarigione Naturale",
-        "stat": "cra",
-        "level": 0,
-        "definition": "<p>Uso di impiastri di erbe rare per accelerare drammaticamente la chiusura delle ferite.</p>"
-      },
-      "skill2": {
-        "skillName": "Antidoto Universale",
-        "stat": "int",
-        "level": 0,
-        "definition": "<p>Capacità di creare un antidoto capace di neutralizzare la maggior parte dei veleni animali o minerali.</p>"
-      },
-      "skill3": {
-        "skillName": "Rito della Rinascita",
-        "stat": "will",
-        "level": 0,
-        "definition": "<p>Un rituale potente che può riportare un alleato dal limitare della morte ristabilendone i sensi.</p>"
-      }
-    },
-    "skillPath3": {
-      "pathName": "L'Animista",
-      "skill1": {
-        "skillName": "Senso della Preda",
-        "stat": "int",
-        "level": 0,
-        "definition": "<p>Localizza creature viventi entro un ampio raggio percependo i battiti cardiaci e il calore.</p>"
-      },
-      "skill2": {
-        "skillName": "Colpo di Zanna",
-        "stat": "ref",
-        "level": 0,
-        "definition": "<p>Aumenta l'efficacia degli attacchi senz'armi o con bastoni, simulando l'aggressività delle fiere.</p>"
-      },
-      "skill3": {
-        "skillName": "Amico delle Foreste",
-        "stat": "emp",
-        "level": 0,
-        "definition": "<p>Garantisce il passaggio sicuro in zone protette da spiriti della natura o mostri relict.</p>"
-      }
-    },
-    "professionSkills": "Sopravvivenza, Accortezza, Sensibilità, Istruzione, Alchimia, Officiare Rituali, Lanciare Incantesimi, Pronto Soccorso, Belle Arti, Armi in Asta"
-  },
-  "effects": [],
-  "flags": {},
-  "_id": "rofdruid00000001"
+    "effects": [],
+    "flags": {},
+    "_id": "rofdruid00000001",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "systemVersion": "v14.1.33",
+        "coreVersion": "14"
+    }
 }

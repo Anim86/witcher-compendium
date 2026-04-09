@@ -1,34 +1,39 @@
 {
-  "name": "Umani",
-  "type": "race",
-  "img": "modules/witcher-compendium/assets/optimized/images/races/humano.webp",
-  "system": {
-    "sourcebook": "Manuale Base, p.26",
-    "perk1": {
-      "name": "Affidabile",
-      "description": "<p>In un mondo che diffida dei non-umani, gli esseri umani appaiono più affidabili. Ottengono un <strong>bonus di +1 a tutte le prove di Carisma, Seduzione e Persuasione</strong> effettuate contro altri umani.</p>"
+    "name": "Umani",
+    "type": "race",
+    "img": "modules/witcher-compendium/assets/optimized/images/races/humano.webp",
+    "system": {
+        "sourcebook": "Manuale Base, p.26",
+        "perk1": {
+            "name": "Affidabile",
+            "description": "<p>In un mondo che diffida dei non-umani, gli esseri umani appaiono più affidabili. Ottengono un <strong>bonus di +1 a tutte le prove di Carisma, Seduzione e Persuasione</strong> effettuate contro altri umani.</p>"
+        },
+        "perk2": {
+            "name": "Ingegno",
+            "description": "<p>Gli umani sono spesso capaci di trovare soluzioni brillanti a problemi complessi. Ottengono un <strong>bonus di +1 innato all'abilità Deduzione</strong>.</p>"
+        },
+        "perk3": {
+            "name": "Cocciuto",
+            "description": "<p>Un umano può attingere alle proprie riserve di coraggio per resistere. Può <strong>ripetere un tiro fallito di Coraggio o Resistere a Coercizione</strong> per un massimo di 3 volte per sessione, scegliendo il risultato migliore.</p>"
+        },
+        "perk4": {
+            "name": "-",
+            "description": "-"
+        },
+        "socialStanding": {
+            "north": "equal",
+            "nilfgaard": "equal",
+            "skellige": "equal",
+            "dolBlathanna": "equal",
+            "mahakam": "equal"
+        }
     },
-    "perk2": {
-      "name": "Ingegno",
-      "description": "<p>Gli umani sono spesso capaci di trovare soluzioni brillanti a problemi complessi. Ottengono un <strong>bonus di +1 innato all'abilità Deduzione</strong>.</p>"
-    },
-    "perk3": {
-      "name": "Cocciuto",
-      "description": "<p>Un umano può attingere alle proprie riserve di coraggio per resistere. Può <strong>ripetere un tiro fallito di Coraggio o Resistere a Coercizione</strong> per un massimo di 3 volte per sessione, scegliendo il risultato migliore.</p>"
-    },
-    "perk4": {
-      "name": "-",
-      "description": "-"
-    },
-    "socialStanding": {
-      "north": "equal",
-      "nilfgaard": "equal",
-      "skellige": "equal",
-      "dolBlathanna": "equal",
-      "mahakam": "equal"
+    "effects": [],
+    "flags": {},
+    "_id": "racehuman0000001",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "systemVersion": "v14.1.33",
+        "coreVersion": "14"
     }
-  },
-  "effects": [],
-  "flags": {},
-  "_id": "racehuman0000001"
 }

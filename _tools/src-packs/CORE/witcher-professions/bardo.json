@@ -1,81 +1,86 @@
 {
-  "name": "Bardo",
-  "type": "profession",
-  "img": "modules/witcher-compendium/assets/optimized/images/professions/bardo.webp",
-  "system": {
-    "sourcebook": "Manuale Base, p.42",
-    "definingSkill": {
-      "skillName": "Lingua Sciolta",
-      "stat": "emp",
-      "level": 1,
-      "definition": "<p>Un Bardo può effettuare una prova di <strong>Lingua Sciolta (EMP)</strong> per diffondere dicerie, guadagnare il favore di una folla o estorcere informazioni senza che il bersaglio si senta minacciato.</p>"
+    "name": "Bardo",
+    "type": "profession",
+    "img": "modules/witcher-compendium/assets/optimized/images/professions/bardo.webp",
+    "system": {
+        "sourcebook": "Manuale Base, p.42",
+        "definingSkill": {
+            "skillName": "Lingua Sciolta",
+            "stat": "emp",
+            "level": 1,
+            "definition": "<p>Un Bardo può effettuare una prova di <strong>Lingua Sciolta (EMP)</strong> per diffondere dicerie, guadagnare il favore di una folla o estorcere informazioni senza che il bersaglio si senta minacciato.</p>"
+        },
+        "skillPath1": {
+            "pathName": "L'Ospite",
+            "skill1": {
+                "skillName": "Etichetta Regale",
+                "stat": "int",
+                "level": 0,
+                "definition": "<p>Padronanza assoluta dei costumi dell'alta nobiltà. Permette di ottenere accesso a banchetti e udienze private.</p>"
+            },
+            "skill2": {
+                "skillName": "Intreccio di Notizie",
+                "stat": "int",
+                "level": 0,
+                "definition": "<p>Capacità di raccogliere segreti e pettegolezzi semplicemente ascoltando le conversazioni giuste o ponendo domande sagaci.</p>"
+            },
+            "skill3": {
+                "skillName": "Diplomatico",
+                "stat": "emp",
+                "level": 0,
+                "definition": "<p>Migliora la capacità di negoziare accordi, trattati di pace o tregue tra fazioni in conflitto.</p>"
+            }
+        },
+        "skillPath2": {
+            "pathName": "Il Menestrello",
+            "skill1": {
+                "skillName": "Ballata Ispiratrice",
+                "stat": "emp",
+                "level": 0,
+                "definition": "<p>Le canzoni del bardo infondono determinazione negli alleati, fornendo bonus morali ai tiri salvezza.</p>"
+            },
+            "skill2": {
+                "skillName": "Satira Pungente",
+                "stat": "emp",
+                "level": 0,
+                "definition": "<p>Umilia pubblicamente un avversario, infliggendo una penalità ai suoi tiri di Empatia e Volontà per la vergogna.</p>"
+            },
+            "skill3": {
+                "skillName": "Fama Leggendaria",
+                "stat": "emp",
+                "level": 0,
+                "definition": "<p>Aumenta la Reputazione globale del bardo, rendendo più facile ottenere sconti o udienze.</p>"
+            }
+        },
+        "skillPath3": {
+            "pathName": "L'Infiltrato",
+            "skill1": {
+                "skillName": "Camuffamento",
+                "stat": "cra",
+                "level": 0,
+                "definition": "<p>Abilità nell'uso di trucco e costumi per assumere un'identità fittizia e passare inosservato.</p>"
+            },
+            "skill2": {
+                "skillName": "Recitazione",
+                "stat": "emp",
+                "level": 0,
+                "definition": "<p>Capacità di simulare emozioni, ferite o stati d'animo per ingannare guardie o inseguitori.</p>"
+            },
+            "skill3": {
+                "skillName": "Ventiloquo",
+                "stat": "emp",
+                "level": 0,
+                "definition": "<p>Tecnica per proiettare la propria voce, creando distrazioni ideali per fughe o infiltrazioni.</p>"
+            }
+        },
+        "professionSkills": "Carisma, Seduzione, Persuasione, Sensibilità, Istruzione, Etichetta, Streetwise, Belle Arti, Gioco d'Azzardo, Intrattenere"
     },
-    "skillPath1": {
-      "pathName": "L'Ospite",
-      "skill1": {
-        "skillName": "Etichetta Regale",
-        "stat": "int",
-        "level": 0,
-        "definition": "<p>Padronanza assoluta dei costumi dell'alta nobiltà. Permette di ottenere accesso a banchetti e udienze private.</p>"
-      },
-      "skill2": {
-        "skillName": "Intreccio di Notizie",
-        "stat": "int",
-        "level": 0,
-        "definition": "<p>Capacità di raccogliere segreti e pettegolezzi semplicemente ascoltando le conversazioni giuste o ponendo domande sagaci.</p>"
-      },
-      "skill3": {
-        "skillName": "Diplomatico",
-        "stat": "emp",
-        "level": 0,
-        "definition": "<p>Migliora la capacità di negoziare accordi, trattati di pace o tregue tra fazioni in conflitto.</p>"
-      }
-    },
-    "skillPath2": {
-      "pathName": "Il Menestrello",
-      "skill1": {
-        "skillName": "Ballata Ispiratrice",
-        "stat": "emp",
-        "level": 0,
-        "definition": "<p>Le canzoni del bardo infondono determinazione negli alleati, fornendo bonus morali ai tiri salvezza.</p>"
-      },
-      "skill2": {
-        "skillName": "Satira Pungente",
-        "stat": "emp",
-        "level": 0,
-        "definition": "<p>Umilia pubblicamente un avversario, infliggendo una penalità ai suoi tiri di Empatia e Volontà per la vergogna.</p>"
-      },
-      "skill3": {
-        "skillName": "Fama Leggendaria",
-        "stat": "emp",
-        "level": 0,
-        "definition": "<p>Aumenta la Reputazione globale del bardo, rendendo più facile ottenere sconti o udienze.</p>"
-      }
-    },
-    "skillPath3": {
-      "pathName": "L'Infiltrato",
-      "skill1": {
-        "skillName": "Camuffamento",
-        "stat": "cra",
-        "level": 0,
-        "definition": "<p>Abilità nell'uso di trucco e costumi per assumere un'identità fittizia e passare inosservato.</p>"
-      },
-      "skill2": {
-        "skillName": "Recitazione",
-        "stat": "emp",
-        "level": 0,
-        "definition": "<p>Capacità di simulare emozioni, ferite o stati d'animo per ingannare guardie o inseguitori.</p>"
-      },
-      "skill3": {
-        "skillName": "Ventiloquo",
-        "stat": "emp",
-        "level": 0,
-        "definition": "<p>Tecnica per proiettare la propria voce, creando distrazioni ideali per fughe o infiltrazioni.</p>"
-      }
-    },
-    "professionSkills": "Carisma, Seduzione, Persuasione, Sensibilità, Istruzione, Etichetta, Streetwise, Belle Arti, Gioco d'Azzardo, Intrattenere"
-  },
-  "effects": [],
-  "flags": {},
-  "_id": "profbard00000001"
+    "effects": [],
+    "flags": {},
+    "_id": "profbard00000001",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "systemVersion": "v14.1.33",
+        "coreVersion": "14"
+    }
 }
