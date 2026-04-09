@@ -1,0 +1,23 @@
+{
+    "_id": "71d4f56b19a21c1e",
+    "name": "Elisir di Pantagran",
+    "type": "component",
+    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag089_Prodotti Alchemici_08.webp",
+    "system": {
+        "description": "<p>Mistura magica che induce uno stato di euforia totale.</p><p><b>Effetti:</b> Felicità delirante, -2 a Resistere a Coercizioni.</p><p><b>Durata:</b> 1d6/2 ore</p><p><b>Tossicità:</b> 10%</p>",
+        "quantity": "1",
+        "weight": 0.5,
+        "cost": 67,
+        "sourcebook": "MB 89",
+        "type": "alchemical",
+        "rarity": "S",
+        "location": "",
+        "substanceType": ""
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": "14"
+    }
+}

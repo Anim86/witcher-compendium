@@ -1,0 +1,23 @@
+{
+    "_id": "9e045ea661d4b8c2",
+    "name": "Lingua di Drowner",
+    "type": "component",
+    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag145_Sostanze Alchemiche_01.webp",
+    "system": {
+        "description": "<p>Organo muscoloso e viscido estratto da un drowner.</p><p><b>Rarità:</b> R | <b>Ubicazione:</b> Drowner</p>",
+        "quantity": "1",
+        "weight": 0.5,
+        "cost": 86,
+        "sourcebook": "MB 145",
+        "type": "alchemical",
+        "rarity": "R",
+        "location": "Drowner",
+        "substanceType": "caelum"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": "14"
+    }
+}

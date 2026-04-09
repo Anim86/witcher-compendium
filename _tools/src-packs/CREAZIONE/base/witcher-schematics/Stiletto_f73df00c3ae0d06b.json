@@ -1,0 +1,34 @@
+{
+    "_id": "f73df00c3ae0d06b",
+    "name": "Stiletto",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag132_Schemi di Manifattura_10.webp",
+    "system": {
+        "description": "<p>Schema per la fabbricazione di: <b>Stiletto</b>.</p><p><b>Componenti richiesti:</b> Legname (×1), Resina (×1), Acciaio (×1), Cera (×2), Olio Scurente (×1), Cote (×2), Carbone (×5)</p><p><b>Difficoltà Manifattura:</b> CD 16</p><p><b>Tempo:</b> 4 ore</p>",
+        "weight": 0,
+        "cost": 0,
+        "components": [
+            "Legname (×1)",
+            "Resina (×1)",
+            "Acciaio (×1)",
+            "Cera (×2)",
+            "Olio Scurente (×1)",
+            "Cote (×2)",
+            "Carbone (×5)"
+        ],
+        "difficulty": 16,
+        "time": "4 ore",
+        "sourcebook": "MB 134"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": "14"
+    }
+}

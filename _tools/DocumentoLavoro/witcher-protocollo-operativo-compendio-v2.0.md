@@ -1,6 +1,6 @@
 # WITCHER COMPENDIUM — PROTOCOLLO OPERATIVO COMPLETO
 ## Documento di riferimento per LLM / AI Builder
-### Versione: 1.0 — Data: 9 Aprile 2026
+### Versione: 2.0 — Data: 10 Aprile 2026
 ### Autore: Perplexity (Strategist) per il team Manuel + Antigravity
 
 ---
@@ -10,7 +10,7 @@
 Stiamo costruendo un modulo compendio completo per **The Witcher TTRPG** su **Foundry VTT v14**.
 Il modulo si chiama `witcher-compendium` e gira sul sistema `TheWitcherItaNewSystem`.
 Tutto il contenuto e' in italiano e si basa su due manuali fisici:
-- **Tomo Base (TB)** — manuale principale
+- **Tomo Base (MB)** — manuale principale
 - **Tomo del Caos (TC)** — espansione
 
 Il compendio contiene ~700 entries divise in 17 pack LevelDB.
@@ -40,10 +40,10 @@ Perplexity analizza → prepara prossimo brief
 ### 2.1 Dove vivono i testi originali
 I testi del manuale sono stati estratti dal PDF in file TXT, uno per sezione.
 
-Tomo Base:   Tomo Base/Testi/PagXXX_NomeSezione.txt
+Tomo Base:    Tomo Base/Testi/PagXXX_NomeSezione.txt
 Tomo del Caos: Tomo del Caos/Testi/PagXXX_NomeSezione.txt
 
-### 2.2 File TXT rilevanti per l'equipaggiamento (VERIFICATI il 9 Apr 2026)
+### 2.2 File TXT rilevanti (VERIFICATI il 9-10 Apr 2026)
 
 | Pack Foundry | File TXT sorgente | Pagine manuale |
 |---|---|---|
@@ -52,7 +52,9 @@ Tomo del Caos: Tomo del Caos/Testi/PagXXX_NomeSezione.txt
 | witcher-equipment | Pag073_Equipaggiamento.txt + Pag094_Utensili.txt + Pag095_Oggetti Vari.txt | 71, 93-97 |
 | witcher-special | Pag248_Equipaggiamento da Witcher.txt | 246-250 |
 | witcher-special-chaos | Pag119_Oggetti Magici.txt + Pag125_Acquistare Oggetti Magici.txt | 119-128 |
-| witcher-components (chaos) | Pag212_Componenti e Mutageni.txt | 212+ |
+| witcher-components | Pag212_Componenti e Mutageni.txt | 212+ |
+| witcher-schematics | TXT Schemi (MB + TC) | Varie |
+| witcher-alchemy | TXT Alchimia (MB + TC) | Varie |
 
 ### 2.3 File TXT per sprint futuri
 | File TXT | Contenuto | Sprint |
@@ -90,41 +92,51 @@ _tools/src-packs/EQUIPAGGIAMENTO/base/witcher-armor/Gambesone.json
     "reach": "200m",
     "effects": "N/A",
     "sourcebook": "MB 76"
+  },
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": "14"
   }
 }
 ```
 
-### 3.3 Struttura JSON esempio — MUNIZIONE
+### 3.3 Struttura JSON esempio — SCHEMA
 ```json
 {
   "_id": "UUID16CARATTERI",
-  "name": "Munizioni Normali",
-  "type": "weapon",
-  "img": "icons/weapons/ammunition/arrows-quiver-simple-brown.webp",
-  "system": {
-    "description": "<p>Testo narrativo...</p>",
-    "weight": 0.1,
-    "cost": 10,
-    "quantity": 10,
-    "isAmmo": true,
-    "type": { "text": "Munizione", "piercing": true },
-    "sourcebook": "MB 74"
-  }
-}
-```
-
-### 3.4 Struttura JSON esempio — OGGETTO GENERICO
-```json
-{
-  "_id": "UUID16CARATTERI",
-  "name": "Nome Oggetto",
-  "type": "item",
+  "name": "Schema: Spada Lunga",
+  "type": "schematic",
   "img": "percorso/immagine.webp",
   "system": {
+    "description": "<p>Testo narrativo. Componenti: X, Y, Z. CD Manifattura: 15. Tempo: 3 giorni.</p>",
+    "weight": 0,
+    "cost": 0,
+    "sourcebook": "MB 74"
+  },
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": "14"
+  }
+}
+```
+
+### 3.4 Struttura JSON esempio — INGREDIENTE ALCHEMICO
+```json
+{
+  "_id": "UUID16CARATTERI",
+  "name": "Arenaria",
+  "type": "component",
+  "img": "assets/alchemy/pianta.webp",
+  "system": {
     "description": "<p>Testo narrativo...</p>",
-    "weight": 1,
-    "cost": 50,
+    "weight": 0.5,
+    "cost": 10,
+    "substanceType": "Vetriolo",
     "sourcebook": "MB 95"
+  },
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": "14"
   }
 }
 ```
@@ -137,6 +149,31 @@ _tools/src-packs/EQUIPAGGIAMENTO/base/witcher-armor/Gambesone.json
 - **`system.type`**: usa booleani (piercing/bludgeoning/elemental: true)
 - **NON ESISTE** il campo `weaponType` come stringa
 - **NON USARE** struttura `system.cost.value` — e' il vecchio formato v13
+
+### 3.6 Campo _stats — OBBLIGATORIO su TUTTI i file (v14)
+```json
+"_stats": {
+  "systemId": "TheWitcherItaNewSystem",
+  "coreVersion": "14"
+}
+```
+⚠️ `systemVersion` e' stato rimosso definitivamente. NON va incluso.
+⚠️ Questo campo va aggiunto su OGNI file creato o modificato, senza eccezioni.
+
+### 3.7 Regole specifiche per pack
+
+**witcher-schematics:**
+- `cost: 0` e `weight: 0` su tutti gli schemi (lo schema e' conoscenza, non oggetto fisico)
+- Il costo dell'oggetto finito appartiene al JSON dell'oggetto nel pack relativo
+- Nella `description`: lista componenti, CD Manifattura, tempo di lavorazione
+
+**witcher-alchemy — sistema icone a 2 livelli:**
+- 🌿 Ingredienti vegetali → icona pianta (es. Pag145_Sostanze Alchemiche_02.webp)
+- 🦴 Ingredienti mostruosi → icona parte di mostro (es. Pag145_Sostanze Alchemiche_01.webp)
+- 🧪 Pozioni, Elisir, Oli → icona ampolla (es. Pag089_..._08.webp)
+- Se gli asset differenziati NON esistono → icona generica per tutti (no blocchi al workflow)
+- `substanceType` obbligatorio su tutti gli ingredienti (Vetriolo, Rebis, Etere, ecc.)
+- Nella `description`: sostanza base, effetti, durata, tossicita'
 
 ---
 
@@ -172,7 +209,7 @@ const normalizza = (s) => s.replace(/[\u2018\u2019]/g, "'").toLowerCase().trim()
 ```
 
 ### 4.4 Quando il testo non si trova nel TXT principale
-1. Controlla TXT delle pagine adiacenti (es. desc dell'arma puo' essere a Pag 75-76 non Pag 74)
+1. Controlla TXT delle pagine adiacenti
 2. Interroga NotebookLM (vedi sezione 5)
 3. Se ancora non trovato: lascia campo vuoto con flag nel log: "DESCRIZIONE MANCANTE"
    ESEMPIO REALE: munizioni speciali erano a Pag 256, non a Pag 074 dove ci si aspettava
@@ -209,7 +246,7 @@ Verifica: costo Y Corone, effetto Z. E' corretto?"
 - PRIMA di ogni nuovo pack: chiedere lista completa voci + pagine di riferimento
 - Quando il TXT ha dati corrotti o mancanti
 - Per verificare stats che sembrano incongruenti
-- Per trovare voci in pagine non ovvie (es. munizioni speciali a Pag 256 invece di Pag 074)
+- Per trovare voci in pagine non ovvie
 
 ---
 
@@ -229,20 +266,25 @@ STEP 6  Perplexity analizza, prepara query NotebookLM se necessario
 STEP 7  Perplexity prepara Brief Fix completo
 STEP 8  Manuel passa Brief Fix ad Antigravity
 STEP 9  Antigravity implementa fix:
+        - In caso di corruzione sistematica: TABULA RASA + rigenerazione totale
         - Corregge descrizioni errate
         - Crea JSON per voci mancanti
-        - Esegue: node _tools/scripts/compile-packs-v11.mjs
-        - Produce log-fix-[pack]-[data].md
+        - NESSUNA compilazione DB durante il fix (solo src-packs)
+        - Produce audit-fix-[pack]-[data].md
 STEP 10 Manuel valida in Foundry
         OK  → commit + release GitHub + prossimo pack
         KO  → segnala anomalie → torna a STEP 7
 ```
 
+⚠️ **NOTA IMPORTANTE (appresa il 10 Apr 2026):**
+La compilazione DB (node compile-packs-v11.mjs) si esegue UNA SOLA VOLTA alla fine,
+dopo che TUTTI i src-packs sono stati bonificati. NON compilare dopo ogni singolo pack.
+
 ---
 
 ## 7. BUILD E DEPLOY
 
-### 7.1 Compilatore ufficiale (Fase 7 — 9 Aprile 2026)
+### 7.1 Compilatore ufficiale
 ```powershell
 node _tools/scripts/compile-packs-v11.mjs
 ```
@@ -253,14 +295,22 @@ node _tools/scripts/compile-packs-v11.mjs
 - NON usare compile_packs.py (NeDB obsoleto)
 - NON usare rebuild_leveldb.js (sostituito)
 
-### 7.2 Bump versione — OBBLIGATORIO prima di ogni deploy
+### 7.2 Check pre-compilazione OBBLIGATORI
+Prima di lanciare il build finale:
+1. **Grep globale `_stats`**: verifica che `TheWitcherItaNewSystem` sia in tutti i JSON
+   e che non ci siano residui con `systemVersion`
+2. **UUID univocita'**: nessun UUID a 16 char duplicato tra pack diversi
+3. **Pack non rigenerati** (weapons, armor, special, special-chaos): verificare che abbiano
+   gia' i `_stats` aggiornati (sistemati manualmente da Manuel nelle sessioni precedenti)
+
+### 7.3 Bump versione — OBBLIGATORIO prima di ogni deploy
 ```json
 In module.json: "version": "14.1.XX"
 ```
 REGOLA ASSOLUTA: la versione va sempre AUMENTATA, mai diminuita.
 Versione al 9 Aprile sera: v14.1.25 — verificare sempre prima del bump.
 
-### 7.3 Deploy con manifest remoto (metodo Manuel)
+### 7.4 Deploy con manifest remoto (metodo Manuel)
 Manuel usa URL manifest GitHub. Foundry NON legge file locali.
 ```
 1. git add .
@@ -272,7 +322,7 @@ Manuel usa URL manifest GitHub. Foundry NON legge file locali.
 7. Foundry → Gestione Moduli → Controlla aggiornamenti
 ```
 
-### 7.4 Deploy alternativo per test rapido locale
+### 7.5 Deploy alternativo per test rapido locale
 ```
 Copia: [repo]\witcher-compendium\
   → AppData\Local\FoundryVTT\Data\modules\witcher-compendium\
@@ -288,24 +338,29 @@ Dopo ogni deploy, Manuel verifica a campione:
 - 1 armatura: descrizione corretta (NO testo estraneo come "chiese e preti")
 - 1 munizione: appare nel pack, isAmmo presente, costo corretto
 - 1 oggetto equipment: descrizione presente, costo corretto
+- 1 schema: cost 0, weight 0, componenti leggibili nella description
+- 1 ingrediente alchemico: substanceType corretto, icona giusta
 - Console F12: ZERO errori bloccanti
 
 ---
 
-## 9. STATO PACK — 9 APRILE 2026 ORE 22:59
+## 9. STATO PACK — 10 APRILE 2026 ORE 00:21 ✅ COMPLETO
 
-| Pack | Entries | Stato |
-|---|---|---|
-| witcher-weapons | 44 (35+9 munizioni) | Fix applicati, in attesa test Foundry |
-| witcher-armor | 35 | Fix applicati, in attesa test Foundry |
-| witcher-equipment | 36 | Audit in corso (Brief inviato) |
-| witcher-special | 20 | In coda — prossimo dopo equipment |
-| witcher-special-chaos | 53 | In coda |
-| witcher-components | 46 | In coda |
-| witcher-schematics | 120 | In coda |
-| witcher-alchemy | 90 | In coda |
+| Pack | Entries | Stato | Note |
+|---|---|---|---|
+| witcher-weapons | 44 | ✅ COMPLETO | 35 armi + 9 munizioni |
+| witcher-armor | 35 | ✅ COMPLETO | |
+| witcher-equipment | 100 | ✅ COMPLETO | Rigenerazione totale |
+| witcher-special | 37 | ✅ COMPLETO | |
+| witcher-special-chaos | 19 | ✅ COMPLETO | |
+| witcher-components | 52 | ✅ COMPLETO | |
+| witcher-schematics | 109 | ✅ COMPLETO | Rigenerazione totale, cost/weight 0 |
+| witcher-alchemy | 96 | ✅ COMPLETO | Rigenerazione totale, icone 2 livelli |
+| **TOTALE** | **~492** | **🏁 PRONTI PER BUILD** | |
 
-Versione modulo corrente: v14.1.25
+**Prossimo step:** grep globale verifica → compilazione DB finale → release GitHub
+
+Versione modulo corrente: v14.1.25 (verificare prima del bump)
 
 ---
 
@@ -322,55 +377,44 @@ Versione modulo corrente: v14.1.25
 | Apostrofi rompono il matching | TXT usa apostrofo tipografico, JSON usa standard | Normalizzare sempre prima del confronto |
 | Voci speciali in pagine diverse | Munizioni speciali a Pag 256 non Pag 074 | Interrogare NotebookLM per voci in pagine non ovvie |
 | Gambesone descriveva chiese | Testo OCR estratto dalla pagina sbagliata | Verificare sempre che il testo corrisponda alla voce |
+| systemVersion nel campo _stats | Campo inesistente in v14 | Usare SOLO systemId + coreVersion, mai systemVersion |
+| Compilazione dopo ogni pack | Workflow non ottimale | Compilare UNA SOLA VOLTA alla fine, dopo tutti i fix |
+| Costo schemi ereditato dall'oggetto | Schema != oggetto fisico | Schemi: cost 0 e weight 0 sempre |
+| Icone alchemy tutte uguali | Default non differenziato | 2 livelli: vegetali/mostruosi/pozioni se asset disponibili |
 
 ---
 
 ## 11. TEMPLATE BRIEF — COPIA E INCOLLA
 
-### TEMPLATE AUDIT
+### TEMPLATE AUDIT + FIX (metodo consolidato 10 Apr 2026)
 ```
-BRIEF ANTIGRAVITY — Audit Pack [NOME]
-Data: [DATA]
+BRIEF ANTIGRAVITY — Audit + Fix Pack [NOME]
+Obiettivo: audit e fix JSON in src-packs. NESSUNA compilazione DB.
 
-File TXT sorgente:
-- Tomo Base\Testi\[file1.txt]
-- Tomo Base\Testi\[file2.txt]  (se necessario)
+Step 1 — Trova i TXT sorgente:
+Get-ChildItem "[Tomo]\Testi" | Where-Object {$_.Name -match "[keyword]"}
 
-Step 1 — Lista voci attuali nel pack:
-Get-ChildItem "_tools\src-packs\[PERCORSO]\*.json" | Select-Object Name
+Step 2 — Lista voci attuali:
+Get-ChildItem "_tools\src-packs\**\[NOME-PACK]\*.json" -Recurse | Select-Object Name
 
-Step 2 — Leggi i TXT e produci report:
-- Lista voci TXT con stato: OK / MANCANTE / ERRATA
-- Per ERRATA: mostra prima riga descrizione attuale
-- Per MANCANTE: nome + pagina manuale
+Step 3 — Audit completo:
+- Lista voci TXT: OK / MANCANTE / ERRATA
+- Per ERRATA: prima riga descrizione attuale
+- Per MANCANTE: nome + pagina
 
-Output: audit-[pack]-[data].md
-Nessuna modifica ancora, solo analisi.
-```
+Step 4 — Fix diretto:
+- Correggi descrizioni errate (<p>, no OCR)
+- Crea JSON mancanti (flat, UUID 16 char)
+- sourcebook: "MB [pag]" o "TC [pag]" secondo origine
 
-### TEMPLATE FIX
-```
-BRIEF ANTIGRAVITY — Fix Pack [NOME]
-Data: [DATA]
+Campo _stats OBBLIGATORIO su tutti i file creati o modificati:
+"_stats": {
+  "systemId": "TheWitcherItaNewSystem",
+  "coreVersion": "14"
+}
 
-Azioni richieste:
-
-1. Correggi descrizioni ERRATE per: [lista voci]
-   Fonte: [file TXT]
-   - Estrai testo narrativo, scarta tabelle e OCR
-   - Wrappa in <p>...</p>
-   - Preserva intatti: _id, img, tutte le stats
-
-2. Crea JSON per voci MANCANTI: [lista voci]
-   Struttura flat (vedi sezione 3 di questo documento)
-   UUID a 16 caratteri univoci
-   sourcebook: "MB [pagina]"
-
-3. Build:
-   node _tools/scripts/compile-packs-v11.mjs
-
-4. Output: log-fix-[pack]-[data].md
-   Nessun commit ancora, revisione Manuel prima.
+Output: audit-fix-[pack]-[data].md
+NESSUNA compilazione DB
 ```
 
 ### TEMPLATE RIPRISTINO CRASH
@@ -379,7 +423,7 @@ RIPRISTINO SESSIONE — [DATA ORA]
 
 Progetto: witcher-compendium per Foundry VTT v14 (TheWitcherItaNewSystem)
 Versione corrente modulo: v14.1.25
-Documento di riferimento: witcher-protocollo-operativo-v1.0.md
+Documento di riferimento: witcher-protocollo-operativo-v2.0.md
 
 Task in corso al crash: [DESCRIZIONE PRECISA]
 Punto di interruzione: [DOVE ERA ARRIVATO]
@@ -393,5 +437,6 @@ Prossima azione richiesta:
 
 ---
 
-*Documento creato da Perplexity — 9 Aprile 2026*
+*Documento aggiornato da Perplexity — 10 Aprile 2026 — v2.0*
+*Precedente versione: v1.0 del 9 Aprile 2026*
 *Aggiornare ad ogni nuova lezione appresa o cambio di workflow*

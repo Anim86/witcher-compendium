@@ -1,0 +1,23 @@
+{
+    "_id": "6b5787685979186e",
+    "name": "Verbena",
+    "type": "component",
+    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag145_Sostanze Alchemiche_02.webp",
+    "system": {
+        "description": "<p>Fiore profumato usato per purificare e innalzare gli spiriti.</p><p><b>Rarità:</b> S | <b>Ubicazione:</b> Campi</p>",
+        "quantity": "1",
+        "weight": 0.1,
+        "cost": 18,
+        "sourcebook": "MB 147",
+        "type": "alchemical",
+        "rarity": "S",
+        "location": "Campi",
+        "substanceType": "sol"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": "14"
+    }
+}

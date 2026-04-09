@@ -1,0 +1,35 @@
+{
+    "_id": "260e52b328cf437e",
+    "name": "Schinieri Nilfgaardiani",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag132_Schemi di Manifattura_10.webp",
+    "system": {
+        "description": "<p>Schema per la fabbricazione di: <b>Schinieri Nilfgaardiani</b>.</p><p><b>Componenti richiesti:</b> Acciaio Nero (×5), Cuoio Indurito (×1), Cuoio (×1), Olio Scurente (×1), Olio di Papero (×2), Lino (×1), Ceneri (×10), Olio (×5)</p><p><b>Difficoltà Manifattura:</b> CD 24</p><p><b>Tempo:</b> 12 ore</p>",
+        "weight": 0,
+        "cost": 0,
+        "components": [
+            "Acciaio Nero (×5)",
+            "Cuoio Indurito (×1)",
+            "Cuoio (×1)",
+            "Olio Scurente (×1)",
+            "Olio di Papero (×2)",
+            "Lino (×1)",
+            "Ceneri (×10)",
+            "Olio (×5)"
+        ],
+        "difficulty": 24,
+        "time": "12 ore",
+        "sourcebook": "MB 137"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": "14"
+    }
+}

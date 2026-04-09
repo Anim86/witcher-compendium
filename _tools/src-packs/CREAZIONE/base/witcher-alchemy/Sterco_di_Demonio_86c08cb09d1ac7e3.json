@@ -1,0 +1,23 @@
+{
+    "_id": "86c08cb09d1ac7e3",
+    "name": "Sterco di Demonio",
+    "type": "component",
+    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag145_Sostanze Alchemiche_01.webp",
+    "system": {
+        "description": "<p>Residui organici di un potente demone, carichi di energia caotica.</p><p><b>Rarità:</b> R | <b>Ubicazione:</b> Territorio dei demoni o sui demoni</p>",
+        "quantity": "1",
+        "weight": 1,
+        "cost": 106,
+        "sourcebook": "MB 145",
+        "type": "alchemical",
+        "rarity": "R",
+        "location": "Territorio dei demoni o sui demoni",
+        "substanceType": "caelum"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": "14"
+    }
+}
