@@ -1,28 +1,38 @@
 {
-  "_id": "e0f1a2b3c4d5e6f7",
-  "name": "Ogh'r",
-  "type": "weapon",
-  "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Placeholder.webp",
-  "system": {
-    "description": "<p>Martello da Guerra Reliquia. Creato dal nano Yorath per sconfiggere il troll Rogar Testadura in un bizzarro duello di testate (vinto grazie alla 'testa' del martello).</p><p><strong>Statistiche:</strong> 10d6 DAN, Stordimento (4), Bilanciata. 3 Slot.</p>",
-    "quantity": "1",
-    "weight": 5,
-    "cost": 0,
-    "sourcebook": "MB 262",
-    "class": "simple",
-    "category": "relic",
-    "damage": "10d6",
-    "damageType": "bludgeoning",
-    "reliability": { "value": 15, "max": 15 },
-    "hands": 2,
-    "range": "N/A",
-    "enhancementSlots": 3,
-    "isMeteorite": false,
-    "damageProperties": {
-      "effects": ["Stordimento (4)", "Bilanciata"]
+    "_id": "e0f1a2b3c4d5e6f7",
+    "name": "Ogh'r",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Placeholder.webp",
+    "system": {
+        "description": "<p>Martello da Guerra Reliquia. Creato dal nano Yorath per sconfiggere il troll Rogar Testadura in un bizzarro duello di testate (vinto grazie alla 'testa' del martello).</p><p><strong>Statistiche:</strong> 10d6 DAN, Stordimento (4), Bilanciata. 3 Slot.</p>",
+        "quantity": "1",
+        "weight": 5,
+        "cost": 0,
+        "sourcebook": "MB 262",
+        "class": "simple",
+        "category": "relic",
+        "damage": "10d6",
+        "damageType": "bludgeoning",
+        "reliability": {
+            "value": 15,
+            "max": 15
+        },
+        "hands": 2,
+        "range": "N/A",
+        "enhancementSlots": 3,
+        "isMeteorite": false,
+        "damageProperties": {
+            "effects": [
+                "Stordimento (4)",
+                "Bilanciata"
+            ]
+        }
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": "14",
+        "systemVersion": "v14.1.44"
     }
-  },
-  "effects": [],
-  "flags": {},
-  "_stats": { "systemId": "TheWitcherItaNewSystem", "coreVersion": 14 }
 }
