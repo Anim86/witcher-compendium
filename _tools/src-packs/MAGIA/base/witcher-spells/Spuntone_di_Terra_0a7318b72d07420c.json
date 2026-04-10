@@ -1,65 +1,70 @@
-{
-    "_id": "0a7318b72d07420c",
-    "name": "Spuntone di Terra",
-    "type": "spell",
-    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag101_La Magia in The Witcher_01.webp",
-    "system": {
-        "description": "<p>Spuntone di Terra crea una stalattite acuminata che trafigge il bersaglio. Lo spuntone infligge 5d6 danni e permane finché non è distrutto, dopo aver subito 20 danni.</p>",
-        "quantity": "1",
-        "weight": 0,
-        "cost": 0,
-        "sourcebook": "MB 105",
-        "class": "Spells",
-        "level": "novice",
-        "source": "Earth",
-        "stamina": 5,
-        "staminaIsVar": false,
-        "effect": "Spuntone di Terra crea una stalattite acuminata che trafigge il bersaglio. Lo spuntone infligge 5d6 danni e permane finché non è distrutto, dopo aver subito 20 danni.",
-        "range": "6m",
-        "duration": "Istantanea",
-        "defence": "Schivare o Bloccare",
-        "damageProperties": {
-            "armorPiercing": false,
-            "improvedArmorPiercing": false,
-            "ablating": false,
-            "crushingForce": false,
-            "damageIsAblation": false,
-            "stun": 0,
-            "damageToAllLocations": false,
-            "bypassesWornArmor": false,
-            "bypassesNaturalArmor": false,
-            "defenseDifferenceMultiplier": false,
-            "defenseMultiplierCap": 5,
-            "variableDamage": false,
-            "effects": [],
-            "oilEffect": "",
-            "silverTrait": false,
-            "silverDamage": "",
-            "isMeteorite": false,
-            "isNonLethal": false
-        },
-        "regionProperties": {
-            "createRegionFromTemplate": false,
-            "behaviours": {
-                "tokenEnter": null,
-                "tokenTurnStart": null,
-                "tokenMoveWithin": null,
-                "tokenExit": null
-            }
-        },
-        "attackOptions": [
-            "spell"
-        ],
-        "spellAttackSkill": "spellcast",
-        "causeDamages": true,
-        "damage": "5d6",
-        "damageType": "elemental"
-    },
-    "effects": [],
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
-    }
+﻿{
+    "_id":  "0a7318b72d07420c",
+    "name":  "Spuntone di Terra",
+    "type":  "spell",
+    "img":  "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag101_La Magia in The Witcher_01.webp",
+    "system":  {
+                   "description":  "\u003cp\u003eàSàpàuànàtàoànàeà àdàià àTàeàràràaà àcàràeàaà àuànàaà àsàtàaàlàaàtàtàiàtàeà àaàcàuàmàiànàaàtàaà àcàhàeà àtàràaàfàiàgàgàeà àiàlà àbàeàràsàaàgàlàiàoà.à àLàoà àsàpàuànàtàoànàeà àiànàfàlàiàgàgàeà à5àdà6à àdàaànànàià àeà àpàeàràmàaànàeà àfàiànàcàhàÃà©à ànàoànà àÃà¨à àdàiàsàtàràuàtàtàoà,à àdàoàpàoà àaàvàeàrà àsàuàbàiàtàoà à2à0à àdàaànànàià.à\u003c/p\u003e",
+                   "quantity":  "1",
+                   "weight":  0,
+                   "cost":  0,
+                   "sourcebook":  "MB 103",
+                   "class":  "Mage",
+                   "level":  "novice",
+                   "source":  "Earth",
+                   "stamina":  5,
+                   "staminaIsVar":  false,
+                   "effect":  "Spuntone di Terra crea una stalattite acuminata che trafigge il bersaglio. Lo spuntone infligge 5d6 danni e permane finchÃ© non Ã¨ distrutto, dopo aver subito 20 danni.",
+                   "range":  "6m",
+                   "duration":  "Istantanea",
+                   "defence":  "Schivare o Bloccare",
+                   "damageProperties":  {
+                                            "armorPiercing":  false,
+                                            "improvedArmorPiercing":  false,
+                                            "ablating":  false,
+                                            "crushingForce":  false,
+                                            "damageIsAblation":  false,
+                                            "stun":  0,
+                                            "damageToAllLocations":  false,
+                                            "bypassesWornArmor":  false,
+                                            "bypassesNaturalArmor":  false,
+                                            "defenseDifferenceMultiplier":  false,
+                                            "defenseMultiplierCap":  5,
+                                            "variableDamage":  false,
+                                            "effects":  [
+
+                                                        ],
+                                            "oilEffect":  "",
+                                            "silverTrait":  false,
+                                            "silverDamage":  "",
+                                            "isMeteorite":  false,
+                                            "isNonLethal":  false
+                                        },
+                   "regionProperties":  {
+                                            "createRegionFromTemplate":  false,
+                                            "behaviours":  {
+                                                               "tokenEnter":  null,
+                                                               "tokenTurnStart":  null,
+                                                               "tokenMoveWithin":  null,
+                                                               "tokenExit":  null
+                                                           }
+                                        },
+                   "attackOptions":  [
+                                         "spell"
+                                     ],
+                   "spellAttackSkill":  "spellcast",
+                   "causeDamages":  true,
+                   "damage":  "5d6",
+                   "damageType":  "elemental"
+               },
+    "effects":  [
+
+                ],
+    "flags":  {
+
+              },
+    "_stats":  {
+                   "systemId":  "TheWitcherItaNewSystem",
+                   "coreVersion":  14
+               }
 }

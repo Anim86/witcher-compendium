@@ -1,10 +1,12 @@
 {
     "_id": "f8cd878e2f47c613",
-    "name": "Creare Rituali",
+    "name": "Officiare Rituali",
     "type": "skill",
     "img": "icons/svg/skill.svg",
     "system": {
         "attribute": "will",
+        "description": "<p>Magia rituale. Permette di compiere rituali con abilità e disinvoltura, anche sotto pressione, ottenendo il risultato desiderato. (Costo x2)</p>",
+        "sourcebook": "MB 58",
         "value": 0,
         "label": "",
         "isOpened": false,
@@ -23,7 +25,6 @@
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
+        "coreVersion": 14
     }
 }

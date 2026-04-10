@@ -1,10 +1,12 @@
 {
     "_id": "620f203ff79edc3b",
-    "name": "Cura e Stile",
+    "name": "Eleganza",
     "type": "skill",
     "img": "icons/svg/skill.svg",
     "system": {
         "attribute": "emp",
+        "description": "<p>Curare il proprio aspetto e il proprio abbigliamento per fare una buona impressione. Permette di apparire affascinanti e raffinati nelle occasioni sociali.</p>",
+        "sourcebook": "MB 56",
         "value": 0,
         "label": "",
         "isOpened": false,
@@ -23,7 +25,6 @@
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
+        "coreVersion": 14
     }
 }

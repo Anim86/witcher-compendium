@@ -1,62 +1,67 @@
-{
-    "_id": "2f5840066dfd4d3e",
-    "name": "Polimorfismo",
-    "type": "spell",
-    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag101_La Magia in The Witcher_01.webp",
-    "system": {
-        "description": "<p>Polimorfismo consente all’incantatore di assu- mere la forma di un serpente, di un gatto, di un uccello o di un cane. Mentre si trova in questo stato possiede le statistiche fisiche di quell’animale (vedi Bestiario, pag.310). Ogni oggetto indossato o trasportato si tra- sforma con lui. Per tornare nella sua forma normale deve lanciare nuovamente l’incantesimo.</p>",
-        "quantity": "1",
-        "weight": 0,
-        "cost": 0,
-        "sourcebook": "MB 109",
-        "class": "Spells",
-        "level": "master",
-        "source": "fire",
-        "stamina": 22,
-        "staminaIsVar": false,
-        "effect": "Polimorfismo consente all’incantatore di assu- mere la forma di un serpente, di un gatto, di un uccello o di un cane. Mentre si trova in questo stato possiede le statistiche fisiche di quell’animale (vedi Bestiario, pag.310). Ogni oggetto indossato o trasportato si tra- sforma con lui. Per tornare nella sua forma normale deve lanciare nuovamente l’incantesimo.",
-        "range": "Personale",
-        "duration": "Finché non viene rilanciato",
-        "defence": "Nessuna",
-        "damageProperties": {
-            "armorPiercing": false,
-            "improvedArmorPiercing": false,
-            "ablating": false,
-            "crushingForce": false,
-            "damageIsAblation": false,
-            "stun": 0,
-            "damageToAllLocations": false,
-            "bypassesWornArmor": false,
-            "bypassesNaturalArmor": false,
-            "defenseDifferenceMultiplier": false,
-            "defenseMultiplierCap": 5,
-            "variableDamage": false,
-            "effects": [],
-            "oilEffect": "",
-            "silverTrait": false,
-            "silverDamage": "",
-            "isMeteorite": false,
-            "isNonLethal": false
-        },
-        "regionProperties": {
-            "createRegionFromTemplate": false,
-            "behaviours": {
-                "tokenEnter": null,
-                "tokenTurnStart": null,
-                "tokenMoveWithin": null,
-                "tokenExit": null
-            }
-        },
-        "attackOptions": [
-            "spell"
-        ],
-        "spellAttackSkill": "spellcast"
-    },
-    "effects": [],
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
-    }
+﻿{
+    "_id":  "2f5840066dfd4d3e",
+    "name":  "Polimorfismo",
+    "type":  "spell",
+    "img":  "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag101_La Magia in The Witcher_01.webp",
+    "system":  {
+                   "description":  "\u003cp\u003eàPàoàlàiàmàoàràfàiàsàmàoà àcàoànàsàeànàtàeà àaàlàlàâà€à™àiànàcàaànàtàaàtàoàràeà àdàià àaàsàsàuà-à àmàeàràeà àlàaà àfàoàràmàaà àdàià àuànà àsàeàràpàeànàtàeà,à àdàià àuànà àgàaàtàtàoà,à àdàià àuànà àuàcàcàeàlàlàoà àoà àdàià àuànà àcàaànàeà.à àMàeànàtàràeà àsàià àtàràoàvàaà àiànà àqàuàeàsàtàoà àsàtàaàtàoà àpàoàsàsàiàeàdàeà àlàeà àsàtàaàtàiàsàtàiàcàhàeà àfàiàsàiàcàhàeà àdàià àqàuàeàlàlàâà€à™àaànàiàmàaàlàeà à(àvàeàdàià àBàeàsàtàiàaàràiàoà,à àpàaàgà.à3à1à0à)à.à àOàgànàià àoàgàgàeàtàtàoà àiànàdàoàsàsàaàtàoà àoà àtàràaàsàpàoàràtàaàtàoà àsàià àtàràaà-à àsàfàoàràmàaà àcàoànà àlàuàià.à àPàeàrà àtàoàrànàaàràeà ànàeàlàlàaà àsàuàaà àfàoàràmàaà ànàoàràmàaàlàeà àdàeàvàeà àlàaànàcàiàaàràeà ànàuàoàvàaàmàeànàtàeà àlàâà€à™àiànàcàaànàtàeàsàiàmàoà.à\u003c/p\u003e",
+                   "quantity":  "1",
+                   "weight":  0,
+                   "cost":  0,
+                   "sourcebook":  "MB 103",
+                   "class":  "Mage",
+                   "level":  "master",
+                   "source":  "fire",
+                   "stamina":  22,
+                   "staminaIsVar":  false,
+                   "effect":  "Polimorfismo consente allâ€™incantatore di assu- mere la forma di un serpente, di un gatto, di un uccello o di un cane. Mentre si trova in questo stato possiede le statistiche fisiche di quellâ€™animale (vedi Bestiario, pag.310). Ogni oggetto indossato o trasportato si tra- sforma con lui. Per tornare nella sua forma normale deve lanciare nuovamente lâ€™incantesimo.",
+                   "range":  "Personale",
+                   "duration":  "FinchÃ© non viene rilanciato",
+                   "defence":  "Nessuna",
+                   "damageProperties":  {
+                                            "armorPiercing":  false,
+                                            "improvedArmorPiercing":  false,
+                                            "ablating":  false,
+                                            "crushingForce":  false,
+                                            "damageIsAblation":  false,
+                                            "stun":  0,
+                                            "damageToAllLocations":  false,
+                                            "bypassesWornArmor":  false,
+                                            "bypassesNaturalArmor":  false,
+                                            "defenseDifferenceMultiplier":  false,
+                                            "defenseMultiplierCap":  5,
+                                            "variableDamage":  false,
+                                            "effects":  [
+
+                                                        ],
+                                            "oilEffect":  "",
+                                            "silverTrait":  false,
+                                            "silverDamage":  "",
+                                            "isMeteorite":  false,
+                                            "isNonLethal":  false
+                                        },
+                   "regionProperties":  {
+                                            "createRegionFromTemplate":  false,
+                                            "behaviours":  {
+                                                               "tokenEnter":  null,
+                                                               "tokenTurnStart":  null,
+                                                               "tokenMoveWithin":  null,
+                                                               "tokenExit":  null
+                                                           }
+                                        },
+                   "attackOptions":  [
+                                         "spell"
+                                     ],
+                   "spellAttackSkill":  "spellcast"
+               },
+    "effects":  [
+
+                ],
+    "flags":  {
+
+              },
+    "_stats":  {
+                   "systemId":  "TheWitcherItaNewSystem",
+                   "coreVersion":  14
+               }
 }

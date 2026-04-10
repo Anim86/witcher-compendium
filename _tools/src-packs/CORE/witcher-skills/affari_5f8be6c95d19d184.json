@@ -1,10 +1,12 @@
 {
     "_id": "5f8be6c95d19d184",
-    "name": "Affari",
+    "name": "Commercio",
     "type": "skill",
     "img": "icons/svg/skill.svg",
     "system": {
         "attribute": "int",
+        "description": "<p>Aprire e condurre un’attività commerciale. Permette di gestire affari, condurre trattative mercantili e mandare avanti attività redditizie o imperi commerciali.</p>",
+        "sourcebook": "MB 52",
         "value": 0,
         "label": "",
         "isOpened": false,
@@ -23,7 +25,6 @@
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
+        "coreVersion": 14
     }
 }

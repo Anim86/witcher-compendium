@@ -3,84 +3,84 @@
     "type": "profession",
     "img": "modules/witcher-compendium/assets/optimized/images/professions/druido.webp",
     "system": {
-        "sourcebook": "Tomo del Caos, p.50",
+        "sourcebook": "TC 69",
         "definingSkill": {
-            "skillName": "Intuizione Naturale",
+            "skillName": "Rito della Quercia e del Vischio",
             "stat": "int",
             "level": 1,
-            "definition": "<p>Un Druido può effettuare una prova di <strong>Intuizione Naturale (INT)</strong> per interpretare il comportamento degli animali, prevedere il meteo o identificare zone contaminate dal punto di vista ecologico o magico.</p>"
+            "definition": "<p>Un Druido può tirare <strong>Rito della Quercia e del Vischio (INT)</strong> per interpretare il comportamento animale, prevedere il meteo (fino a 1d6 giorni) o identificare zone contaminate ecologicamente o magiche. Se ha successo, ottiene informazioni precise sulla salute della natura circostante.</p>"
         },
         "skillPath1": {
-            "pathName": "L'Eremita",
+            "pathName": "Iniziato",
             "skill1": {
-                "skillName": "Parlare con gli Animali",
-                "stat": "emp",
+                "skillName": "Sintonia con la Natura",
+                "stat": "body",
                 "level": 0,
-                "definition": "<p>Permette di comunicare concetti semplici con creature non senzienti della foresta.</p>"
+                "definition": "<p>Permette al Druido di entrare in comunione con la natura. Ogni livello aumenta il Vigore di +1 (fino a 9). Al livello 10, il Vigore massimo del Druido arriva a 12 (compreso il vigore iniziale). Si somma con altre eventuali abilità di vigore.</p>"
             },
             "skill2": {
-                "skillName": "Vigore della Terra",
-                "stat": "body",
+                "skillName": "Leggere la Natura",
+                "stat": "int",
                 "level": 0,
-                "definition": "<p>Aumenta la Resistenza fisica e il Recupero quando si trova in ambienti naturali incontaminati.</p>"
+                "definition": "<p>In un ambiente naturale, permette di leggere i segni per scoprire chi sia passato e cosa sia accaduto (CD GM). Fornisce un quadro circoscritto degli eventi recenti ma non serve a seguire tracce.</p>"
             },
             "skill3": {
-                "skillName": "Pelle di Quercia",
-                "stat": "body",
+                "skillName": "Patto Animale",
+                "stat": "will",
                 "level": 0,
-                "definition": "<p>Capacità di indurire la pelle temporaneamente, fornendo una PR naturale contro colpi fisici.</p>"
+                "definition": "<p>Somma il valore ai tiri di Sopravvivenza con gli animali. Spendendo un round ed effettuando una prova (VOL), rende una Bestia o animale alleato per un numero di ore pari al valore dell'abilità. Non ha effetto sui mostri.</p>"
             }
         },
         "skillPath2": {
-            "pathName": "Lo Ierofante",
+            "pathName": "Saggio",
             "skill1": {
-                "skillName": "Guarigione Naturale",
-                "stat": "cra",
-                "level": 0,
-                "definition": "<p>Uso di impiastri di erbe rare per accelerare drammaticamente la chiusura delle ferite.</p>"
-            },
-            "skill2": {
-                "skillName": "Antidoto Universale",
+                "skillName": "Custode del Sapere",
                 "stat": "int",
                 "level": 0,
-                "definition": "<p>Capacità di creare un antidoto capace di neutralizzare la maggior parte dei veleni animali o minerali.</p>"
+                "definition": "<p>Permette di memorizzare nuovi Rituali o Invocazioni oltre il limite normale. Con una prova (CD 15 +1 ogni 5 magie extra), il Druido può espandere la sua conoscenza oltre i limiti accademici.</p>"
             },
-            "skill3": {
-                "skillName": "Rito della Rinascita",
+            "skill2": {
+                "skillName": "Sangue e Ossa",
                 "stat": "will",
                 "level": 0,
-                "definition": "<p>Un rituale potente che può riportare un alleato dal limitare della morte ristabilendone i sensi.</p>"
+                "definition": "<p>Permette di curare ferite medie o gravi infondendo energia naturale tramite il tocco. Superando una prova (VOL) contro la CD del Medico, accelera la guarigione o stabilizza un bersaglio Moribondo.</p>"
+            },
+            "skill3": {
+                "skillName": "Forma Bestiale",
+                "stat": "will",
+                "level": 0,
+                "definition": "<p>Con un'azione complessa e spendendo Resistenza, il Druido muta in una forma animale (Lupo, Corvo, Gatto, etc.). Le statistiche fisiche mutano in quelle dell'animale mentre mantiene quelle mentali e i PS.</p>"
             }
         },
         "skillPath3": {
-            "pathName": "L'Animista",
+            "pathName": "Militante",
             "skill1": {
-                "skillName": "Senso della Preda",
-                "stat": "int",
-                "level": 0,
-                "definition": "<p>Localizza creature viventi entro un ampio raggio percependo i battiti cardiaci e il calore.</p>"
-            },
-            "skill2": {
-                "skillName": "Colpo di Zanna",
-                "stat": "ref",
-                "level": 0,
-                "definition": "<p>Aumenta l'efficacia degli attacchi senz'armi o con bastoni, simulando l'aggressività delle fiere.</p>"
-            },
-            "skill3": {
-                "skillName": "Amico delle Foreste",
+                "skillName": "Guaritore di Bestie",
                 "stat": "emp",
                 "level": 0,
-                "definition": "<p>Garantisce il passaggio sicuro in zone protette da spiriti della natura o mostri relict.</p>"
+                "definition": "<p>Permette di curare le creature della foresta tramite l'empatia e l'energia naturale. Somma il proprio valore ai tiri di Pronto Soccorso e Mani Guaritrici quando applicati ad animali o bestie.</p>"
+            },
+            "skill2": {
+                "skillName": "Bosco Sacro",
+                "stat": "will",
+                "level": 0,
+                "definition": "<p>Il Druido può consacrare un'area naturale. Entro i confini del Bosco Sacro, il Druido e i suoi alleati ottengono un bonus alla Resistenza e i nemici naturali possono essere scacciati o calmati con facilità.</p>"
+            },
+            "skill3": {
+                "skillName": "Guardiano del Bosco",
+                "stat": "will",
+                "level": 0,
+                "definition": "<p>Permette al Druido di evocare i difensori della natura. Spendendo Resistenza, può far apparire Spine, Radici Impiglianti o nebbia fitta per ostacolare chi minaccia l'equilibrio naturale.</p>"
             }
         },
-        "professionSkills": "Sopravvivenza, Accortezza, Sensibilità, Istruzione, Alchimia, Officiare Rituali, Lanciare Incantesimi, Pronto Soccorso, Belle Arti, Armi in Asta"
+        "professionSkills": "Sopravvivenza, Accortezza, Sensibilità, Istruzione, Alchimia, Officiare Rituali, Lanciare Incantesimi, Pronto Soccorso, Belle Arti, Armi in Asta",
+        "notes": "<p>I druidi vivono in armonia con la natura e ne proteggono l'equilibrio sacro. Diversi dai maghi e dai preti, attingono la loro magia dalla terra stessa e dagli spiriti dei boschi. Sono i custodi dei circoli sacri, capaci di parlare agli animali, mutare forma e scatenare le forze della natura contro i trasgressori.</p>"
     },
     "effects": [],
     "flags": {},
     "_id": "rofdruid00000001",
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
+        "coreVersion": 14
     }
 }

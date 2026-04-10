@@ -1,62 +1,67 @@
-{
-    "_id": "c4bbce96c85045ed",
-    "name": "Illusione",
-    "type": "spell",
-    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag101_La Magia in The Witcher_01.webp",
-    "system": {
-        "description": "<p>Illusione consente all’incantatore di creare qualsiasi illusione visiva desideri entro 20m. Chiunque fallisca la prova di Resistenza alla Magia e può vedere l’illusione, crede che sia reale. L’illusione non può tutta- via essere toccata, udita o annusata.</p>",
-        "quantity": "1",
-        "weight": 0,
-        "cost": 0,
-        "sourcebook": "MB 103",
-        "class": "Spells",
-        "level": "journeyman",
-        "source": "mixedElements",
-        "stamina": 8,
-        "staminaIsVar": false,
-        "effect": "Illusione consente all’incantatore di creare qualsiasi illusione visiva desideri entro 20m. Chiunque fallisca la prova di Resistenza alla Magia e può vedere l’illusione, crede che sia reale. L’illusione non può tutta- via essere toccata, udita o annusata.",
-        "range": "20m",
-        "duration": "Attiva (4 RES)",
-        "defence": "Resistere alla Magia",
-        "damageProperties": {
-            "armorPiercing": false,
-            "improvedArmorPiercing": false,
-            "ablating": false,
-            "crushingForce": false,
-            "damageIsAblation": false,
-            "stun": 0,
-            "damageToAllLocations": false,
-            "bypassesWornArmor": false,
-            "bypassesNaturalArmor": false,
-            "defenseDifferenceMultiplier": false,
-            "defenseMultiplierCap": 5,
-            "variableDamage": false,
-            "effects": [],
-            "oilEffect": "",
-            "silverTrait": false,
-            "silverDamage": "",
-            "isMeteorite": false,
-            "isNonLethal": false
-        },
-        "regionProperties": {
-            "createRegionFromTemplate": false,
-            "behaviours": {
-                "tokenEnter": null,
-                "tokenTurnStart": null,
-                "tokenMoveWithin": null,
-                "tokenExit": null
-            }
-        },
-        "attackOptions": [
-            "spell"
-        ],
-        "spellAttackSkill": "spellcast"
-    },
-    "effects": [],
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
-    }
+﻿{
+    "_id":  "c4bbce96c85045ed",
+    "name":  "Illusione",
+    "type":  "spell",
+    "img":  "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag101_La Magia in The Witcher_01.webp",
+    "system":  {
+                   "description":  "\u003cp\u003eàIàlàlàuàsàiàoànàeà àcàoànàsàeànàtàeà àaàlàlàâà€à™àiànàcàaànàtàaàtàoàràeà àdàià àcàràeàaàràeà àqàuàaàlàsàiàaàsàià àiàlàlàuàsàiàoànàeà àvàiàsàiàvàaà àdàeàsàiàdàeàràià àeànàtàràoà à2à0àmà.à àCàhàiàuànàqàuàeà àfàaàlàlàiàsàcàaà àlàaà àpàràoàvàaà àdàià àRàeàsàiàsàtàeànàzàaà àaàlàlàaà àMàaàgàiàaà àeà àpàuàÃà²à àvàeàdàeàràeà àlàâà€à™àiàlàlàuàsàiàoànàeà,à àcàràeàdàeà àcàhàeà àsàiàaà àràeàaàlàeà.à àLàâà€à™àiàlàlàuàsàiàoànàeà ànàoànà àpàuàÃà²à àtàuàtàtàaà-à àvàiàaà àeàsàsàeàràeà àtàoàcàcàaàtàaà,à àuàdàiàtàaà àoà àaànànàuàsàaàtàaà.à\u003c/p\u003e",
+                   "quantity":  "1",
+                   "weight":  0,
+                   "cost":  0,
+                   "sourcebook":  "MB 103",
+                   "class":  "Mage",
+                   "level":  "journeyman",
+                   "source":  "mixedElements",
+                   "stamina":  8,
+                   "staminaIsVar":  false,
+                   "effect":  "Illusione consente allâ€™incantatore di creare qualsiasi illusione visiva desideri entro 20m. Chiunque fallisca la prova di Resistenza alla Magia e puÃ² vedere lâ€™illusione, crede che sia reale. Lâ€™illusione non puÃ² tutta- via essere toccata, udita o annusata.",
+                   "range":  "20m",
+                   "duration":  "Attiva (4 RES)",
+                   "defence":  "Resistere alla Magia",
+                   "damageProperties":  {
+                                            "armorPiercing":  false,
+                                            "improvedArmorPiercing":  false,
+                                            "ablating":  false,
+                                            "crushingForce":  false,
+                                            "damageIsAblation":  false,
+                                            "stun":  0,
+                                            "damageToAllLocations":  false,
+                                            "bypassesWornArmor":  false,
+                                            "bypassesNaturalArmor":  false,
+                                            "defenseDifferenceMultiplier":  false,
+                                            "defenseMultiplierCap":  5,
+                                            "variableDamage":  false,
+                                            "effects":  [
+
+                                                        ],
+                                            "oilEffect":  "",
+                                            "silverTrait":  false,
+                                            "silverDamage":  "",
+                                            "isMeteorite":  false,
+                                            "isNonLethal":  false
+                                        },
+                   "regionProperties":  {
+                                            "createRegionFromTemplate":  false,
+                                            "behaviours":  {
+                                                               "tokenEnter":  null,
+                                                               "tokenTurnStart":  null,
+                                                               "tokenMoveWithin":  null,
+                                                               "tokenExit":  null
+                                                           }
+                                        },
+                   "attackOptions":  [
+                                         "spell"
+                                     ],
+                   "spellAttackSkill":  "spellcast"
+               },
+    "effects":  [
+
+                ],
+    "flags":  {
+
+              },
+    "_stats":  {
+                   "systemId":  "TheWitcherItaNewSystem",
+                   "coreVersion":  14
+               }
 }

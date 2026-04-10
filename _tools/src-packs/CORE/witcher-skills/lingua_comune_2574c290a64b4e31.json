@@ -1,10 +1,12 @@
 {
     "_id": "2574c290a64b4e31",
-    "name": "Lingua Comune",
+    "name": "Linguaggio: Lingua Comune",
     "type": "skill",
     "img": "icons/svg/skill.svg",
     "system": {
         "attribute": "int",
+        "description": "<p>Saper parlare, leggere e scrivere la lingua universale del Continente. (Costo x2)</p>",
+        "sourcebook": "MB 51",
         "value": 0,
         "label": "",
         "isOpened": false,
@@ -23,7 +25,6 @@
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
+        "coreVersion": 14
     }
 }

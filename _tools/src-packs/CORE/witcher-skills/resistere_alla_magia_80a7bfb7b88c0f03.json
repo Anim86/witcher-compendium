@@ -5,6 +5,8 @@
     "img": "icons/svg/skill.svg",
     "system": {
         "attribute": "will",
+        "description": "<p>Resistere alle influenze magiche. Permette di accorgersi quando si è sotto l'effetto di una magia e di fortificare la mente contro gli stregoni. (Costo x2)</p>",
+        "sourcebook": "MB 58",
         "value": 0,
         "label": "",
         "isOpened": false,
@@ -23,7 +25,6 @@
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
+        "coreVersion": 14
     }
 }

@@ -1,10 +1,12 @@
 {
     "_id": "73c79deb0ee6329a",
-    "name": "Consapevolezza",
+    "name": "Accortezza",
     "type": "skill",
     "img": "icons/svg/skill.svg",
     "system": {
         "attribute": "int",
+        "description": "<p>Permette di accorgersi o notare qualcosa d’insolito nell’ambiente circostante. Alti livelli permettono di individuare cambiamenti minimi e persino esseri invisibili.</p>",
+        "sourcebook": "MB 52",
         "value": 0,
         "label": "",
         "isOpened": false,
@@ -23,7 +25,6 @@
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
+        "coreVersion": 14
     }
 }

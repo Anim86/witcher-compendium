@@ -1,0 +1,30 @@
+{
+    "_id": "f2a3b4c5d6e7f8a9",
+    "name": "Rituali di Sangue",
+    "type": "skill",
+    "img": "icons/svg/skill.svg",
+    "system": {
+        "attribute": "will",
+        "description": "<p>L’abilità di officiare rituali sacrificando sangue invece delle normali componenti alchemiche. Il sangue può provenire dal Prete o da altri.</p>",
+        "sourcebook": "TC 52",
+        "value": 0,
+        "label": "",
+        "isOpened": false,
+        "modifiers": [],
+        "activeEffectModifiers": 0,
+        "isProfession": true,
+        "isPickup": false,
+        "isLearned": false
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

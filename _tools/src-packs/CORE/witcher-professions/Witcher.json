@@ -1,0 +1,86 @@
+{
+    "name": "Witcher",
+    "type": "profession",
+    "img": "modules/witcher-compendium/assets/optimized/images/professions/witcher.webp",
+    "system": {
+        "sourcebook": "MB 48",
+        "definingSkill": {
+            "skillName": "Arte del Witcher",
+            "stat": "int",
+            "level": 1,
+            "definition": "<p>Un Witcher trascorre la vita studiando mostri e addestrandosi. Quando si trova in un ambiente ostile o terreno accidentato, può diminuire le penalità di metà del proprio valore di <strong>Arte del Witcher (INT)</strong>. Può essere utilizzata anche al posto dell'abilità Bestiario.</p>"
+        },
+        "skillPath1": {
+            "pathName": "Il Guerriero Magico",
+            "skill1": {
+                "skillName": "Meditazione",
+                "stat": "will",
+                "level": 0,
+                "definition": "<p>Permette di entrare in uno stato di trance che conferisce i benefici del sonno rimanendo vigili. Il Witcher è considerato sveglio per accorgersi di ciò che accade in un raggio (in metri) pari al doppio del valore dell'abilità.</p>"
+            },
+            "skill2": {
+                "skillName": "Fonte Magica",
+                "stat": "will",
+                "level": 0,
+                "definition": "<p>Abitua il corpo allo sforzo dei Segni. Il Witcher guadagna 1 punto di Vigore ogni 2 punti in Fonte Magica. Al livello 10, il Vigore massimo del Witcher aumenta di +5 (per un totale di 7, considerando il vigore iniziale).</p>"
+            },
+            "skill3": {
+                "skillName": "Eliotropo",
+                "stat": "will",
+                "level": 0,
+                "definition": "<p>Permette di negare gli effetti di incantesimi, invocazioni o fatture diretti al Witcher. Richiede il superamento della prova nemica e il consumo di metà della Resistenza usata dall'avversario per lanciare la magia.</p>"
+            }
+        },
+        "skillPath2": {
+            "pathName": "Il Mutante",
+            "skill1": {
+                "skillName": "Stomaco di Ferro",
+                "stat": "body",
+                "level": 0,
+                "definition": "<p>Permette al corpo di tollerare meglio le tossine. Aumenta la Soglia di Tossicità massima del 5% al primo livello e di un ulteriore 5% ogni altri due livelli. Al livello 10, la tossicità massima tollerabile è del 150%.</p>"
+            },
+            "skill2": {
+                "skillName": "Frenesia",
+                "stat": "will",
+                "level": 0,
+                "definition": "<p>Quando è avvelenato, il Witcher entra in uno stato di furia che infligge +1 danno in mischia extra per livello di Frenesia. L'effetto termina con il veleno o con una prova di Tempra CD 15.</p>"
+            },
+            "skill3": {
+                "skillName": "Trasmutazione",
+                "stat": "body",
+                "level": 0,
+                "definition": "<p>Quando assume un decotto (CD 18), il Witcher può assimilarne una dose superiore guadagnando un bonus unico basato sul mostro (es. saliva velenosa, balzo migliorato, etc.). L'effetto dura metà del normale.</p>"
+            }
+        },
+        "skillPath3": {
+            "pathName": "Lo Sterminatore",
+            "skill1": {
+                "skillName": "Parare Frecce",
+                "stat": "dex",
+                "level": 0,
+                "definition": "<p>Permette di deflettere proiettili fisici con una penalità di -3. Può scegliere un bersaglio entro 10m che dovrà difendersi contro il tiro del Witcher o diventare Vacillante a causa del proiettile deflesso.</p>"
+            },
+            "skill2": {
+                "skillName": "Colpo Repentino",
+                "stat": "ref",
+                "level": 0,
+                "definition": "<p>Dopo aver concluso il turno, spendendo 5 RES, il Witcher può effettuare un ulteriore singolo attacco contro lo stesso avversario superando una prova di RIF x3 del bersaglio.</p>"
+            },
+            "skill3": {
+                "skillName": "Turbine",
+                "stat": "ref",
+                "level": 0,
+                "definition": "<p>Spendendo 5 RES per round, il Witcher può roteare in un turbine ed effettuare un attacco contro ogni bersaglio a portata. Richiede di mantenere l'azione, schivare o muoversi di soli 2m.</p>"
+            }
+        },
+        "professionSkills": "Scherma, Armi in Asta, Lame Corte, Atletica, Accortezza, Sopravvivenza, Alchimia, Resistere alla Magia, Tempra, Intimidire",
+        "notes": "<p>I witcher sono mutanti creati per un solo scopo: uccidere mostri. Sottoposti a prove e mutazioni atroci fin da bambini, hanno acquisito sensi sovraumani e la capacità di usare i Segni. Freddi e risoluti, sono i guardiani dell'umanità contro le creature del Caos, anche se per questo sono spesso odiati e temuti dai comuni mortali.</p>"
+    },
+    "effects": [],
+    "flags": {},
+    "_id": "profwitcher000001",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

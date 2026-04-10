@@ -5,6 +5,8 @@
     "img": "icons/svg/skill.svg",
     "system": {
         "attribute": "int",
+        "description": "<p>Sopravvivere all’aperto e seguire le tracce di una preda. Permette di accendere fuochi, identificare piante e sapersi adattare a qualsiasi ambiente naturale.</p>",
+        "sourcebook": "MB 53",
         "value": 0,
         "label": "",
         "isOpened": false,
@@ -23,7 +25,6 @@
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
+        "coreVersion": 14
     }
 }

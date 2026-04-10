@@ -3,29 +3,29 @@
     "type": "race",
     "img": "modules/witcher-compendium/assets/optimized/images/races/witcher.webp",
     "system": {
-        "sourcebook": "Manuale Base, p.24",
+        "sourcebook": "MB 23",
         "perk1": {
             "name": "Sensi Acuiti",
-            "description": "<p>I Witcher possiedono una vista e un olfatto sovrumani. Non subiscono penalità in condizioni di luce fioca, guadagnano un <strong>+1 innato ad Accortezza</strong> e possono seguire tracce usando l'olfatto con l'abilità Sopravvivenza.</p>"
+            "description": "<p>Grazie ai loro sensi intensificati, i witcher non subiscono penalità nelle aree di luce fioca e guadagnano un bonus di <strong>+1 innato all’abilità Accortezza</strong>, oltre alla facoltà di seguire tracce anche solo con l’olfatto.</p>"
         },
         "perk2": {
-            "name": "Mutazione Resiliente",
-            "description": "<p>Il corpo mutato dei Witcher è immune a tutte le malattie naturali e può ingerire i mutageni senza rischi letali improvvisi.</p>"
+            "name": "Emozioni Attenuate",
+            "description": "<p>A causa dei traumi e delle mutazioni, i witcher provano emozioni meno intense. Non sono tenuti a effettuare prove di coraggio contro Intimidire, ma subiscono un <strong>-4 all'Empatia</strong> (minimo 1). Inoltre, non possono alzare l'Empatia sopra il 6.</p>"
         },
         "perk3": {
-            "name": "Emozioni Attenuate",
-            "description": "<p>A causa delle mutazioni, i Witcher subiscono una <strong>penalità di -4 ad Empatia</strong> (minimo 1). Tuttavia, sono <strong>immuni ai test di Coraggio contro Intimidire</strong>.</p>"
+            "name": "Mutazione Resiliente",
+            "description": "<p>Per via delle mutazioni necessarie per diventare un witcher, questi sono <strong>immuni alle malattie</strong> e sono in grado di usare i mutageni.</p>"
         },
         "perk4": {
             "name": "Riflessi Fulminei",
-            "description": "<p>Le mutazioni ai nervi forniscono un <strong>bonus permanente di +1 a Riflessi e Destrezza</strong>, che può superare il valore di 10 durante la creazione.</p>"
+            "description": "<p>Dopo un intenso addestramento e a causa delle mutazioni, i witcher sono molto più rapidi e agili degli umani. Ottengono un <strong>+1 permanente a Riflessi e Destrezza</strong>, che può portare queste statistiche sopra 10.</p>"
         },
         "socialStanding": {
             "north": "hatedFeared",
             "nilfgaard": "hatedFeared",
-            "skellige": "hatedFeared",
-            "dolBlathanna": "hatedFeared",
-            "mahakam": "hatedFeared"
+            "skellige": "tolerated",
+            "dolBlathanna": "tolerated",
+            "mahakam": "tolerated"
         }
     },
     "effects": [],
@@ -33,7 +33,6 @@
     "_id": "racewitcher00001",
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
+        "coreVersion": 14
     }
 }

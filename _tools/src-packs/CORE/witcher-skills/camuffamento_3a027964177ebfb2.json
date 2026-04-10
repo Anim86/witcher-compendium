@@ -1,0 +1,30 @@
+{
+    "_id": "3a027964177ebfb2",
+    "name": "Camuffare",
+    "type": "skill",
+    "img": "icons/svg/skill.svg",
+    "system": {
+        "attribute": "cra",
+        "description": "<p>L’abilità di mutare il proprio aspetto per non essere riconosciuti o per impersonare qualcun altro attraverso l'uso di trucco, parrucche e abbigliamento.</p>",
+        "sourcebook": "MB 57",
+        "value": 0,
+        "label": "",
+        "isOpened": false,
+        "modifiers": [],
+        "activeEffectModifiers": 0,
+        "isProfession": false,
+        "isPickup": false,
+        "isLearned": false
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

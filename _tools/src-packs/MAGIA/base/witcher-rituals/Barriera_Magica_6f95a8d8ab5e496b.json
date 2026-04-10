@@ -1,62 +1,67 @@
-{
-    "_id": "6f95a8d8ab5e496b",
-    "name": "Barriera Magica",
-    "type": "ritual",
-    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag118_Rituali_01.webp",
-    "system": {
-        "description": "<p>Questo rituale crea una barriera circolare di 10m di diametro di forza pura. La barriera può subire 50 danni prima di essere distrutta. Nel suo turno, il ritualista può spendere un ulteriore punto di RES oltre al costo di man- tenimento, per ripristinare i Punti Salute della barriera al ritmo di 5 Punti Salute per punto di RES. Lo scudo è concreto e non può essere oltrepassato da og- getti solidi. Una volta eretto lo scudo nulla può oltrepas- sarlo. Al suo interno c’è ricambio d’aria, permettendo a chi si trova dentro la barriera di respirare. Se il ritualista lo desidera, può interrompere il ricambio, lasciando così solo 20 round d’aria. Ogni ulteriore persona nello scudo, riduce i round d’aria di 1. Le creature eteree possono oltre- passare la barriera e il ritualista può teletrasportarsi fuori.</p>",
-        "quantity": "1",
-        "weight": 0,
-        "cost": 0,
-        "sourcebook": "MB 15",
-        "class": "ritual",
-        "level": "novice",
-        "source": "",
-        "stamina": 0,
-        "staminaIsVar": false,
-        "effect": "Questo rituale crea una barriera circolare di 10m di diametro di forza pura. La barriera può subire 50 danni prima di essere distrutta. Nel suo turno, il ritualista può spendere un ulteriore punto di RES oltre al costo di man- tenimento, per ripristinare i Punti Salute della barriera al ritmo di 5 Punti Salute per punto di RES. Lo scudo è concreto e non può essere oltrepassato da og- getti solidi. Una volta eretto lo scudo nulla può oltrepas- sarlo. Al suo interno c’è ricambio d’aria, permettendo a chi si trova dentro la barriera di respirare. Se il ritualista lo desidera, può interrompere il ricambio, lasciando così solo 20 round d’aria. Ogni ulteriore persona nello scudo, riduce i round d’aria di 1. Le creature eteree possono oltre- passare la barriera e il ritualista può teletrasportarsi fuori.",
-        "range": "N/A",
-        "duration": "Attiva (2 RES)",
-        "defence": "",
-        "damageProperties": {
-            "armorPiercing": false,
-            "improvedArmorPiercing": false,
-            "ablating": false,
-            "crushingForce": false,
-            "damageIsAblation": false,
-            "stun": 0,
-            "damageToAllLocations": false,
-            "bypassesWornArmor": false,
-            "bypassesNaturalArmor": false,
-            "defenseDifferenceMultiplier": false,
-            "defenseMultiplierCap": 5,
-            "variableDamage": false,
-            "effects": [],
-            "oilEffect": "",
-            "silverTrait": false,
-            "silverDamage": "",
-            "isMeteorite": false,
-            "isNonLethal": false
-        },
-        "regionProperties": {
-            "createRegionFromTemplate": false,
-            "behaviours": {
-                "tokenEnter": null,
-                "tokenTurnStart": null,
-                "tokenMoveWithin": null,
-                "tokenExit": null
-            }
-        },
-        "attackOptions": [
-            "spell"
-        ],
-        "spellAttackSkill": "ritcraft"
-    },
-    "effects": [],
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
-    }
+﻿{
+    "_id":  "6f95a8d8ab5e496b",
+    "name":  "Barriera Magica",
+    "type":  "ritual",
+    "img":  "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag118_Rituali_01.webp",
+    "system":  {
+                   "description":  "\u003cp\u003eQuesto rituale crea una barriera circolare di 10m di diametro di forza pura. La barriera puÃ² subire 50 danni prima di essere distrutta. Nel suo turno, il ritualista puÃ² spendere un ulteriore punto di RES oltre al costo di man- tenimento, per ripristinare i Punti Salute della barriera al ritmo di 5 Punti Salute per punto di RES. Lo scudo Ã¨ concreto e non puÃ² essere oltrepassato da og- getti solidi. Una volta eretto lo scudo nulla puÃ² oltrepas- sarlo. Al suo interno câ€™Ã¨ ricambio dâ€™aria, permettendo a chi si trova dentro la barriera di respirare. Se il ritualista lo desidera, puÃ² interrompere il ricambio, lasciando cosÃ¬ solo 20 round dâ€™aria. Ogni ulteriore persona nello scudo, riduce i round dâ€™aria di 1. Le creature eteree possono oltre- passare la barriera e il ritualista puÃ² teletrasportarsi fuori.\u003c/p\u003e",
+                   "quantity":  "1",
+                   "weight":  0,
+                   "cost":  0,
+                   "sourcebook":  "MB 118",
+                   "class":  "ritual",
+                   "level":  "novice",
+                   "source":  "",
+                   "stamina":  0,
+                   "staminaIsVar":  false,
+                   "effect":  "Questo rituale crea una barriera circolare di 10m di diametro di forza pura. La barriera puÃ² subire 50 danni prima di essere distrutta. Nel suo turno, il ritualista puÃ² spendere un ulteriore punto di RES oltre al costo di man- tenimento, per ripristinare i Punti Salute della barriera al ritmo di 5 Punti Salute per punto di RES. Lo scudo Ã¨ concreto e non puÃ² essere oltrepassato da og- getti solidi. Una volta eretto lo scudo nulla puÃ² oltrepas- sarlo. Al suo interno câ€™Ã¨ ricambio dâ€™aria, permettendo a chi si trova dentro la barriera di respirare. Se il ritualista lo desidera, puÃ² interrompere il ricambio, lasciando cosÃ¬ solo 20 round dâ€™aria. Ogni ulteriore persona nello scudo, riduce i round dâ€™aria di 1. Le creature eteree possono oltre- passare la barriera e il ritualista puÃ² teletrasportarsi fuori.",
+                   "range":  "N/A",
+                   "duration":  "Attiva (2 RES)",
+                   "defence":  "",
+                   "damageProperties":  {
+                                            "armorPiercing":  false,
+                                            "improvedArmorPiercing":  false,
+                                            "ablating":  false,
+                                            "crushingForce":  false,
+                                            "damageIsAblation":  false,
+                                            "stun":  0,
+                                            "damageToAllLocations":  false,
+                                            "bypassesWornArmor":  false,
+                                            "bypassesNaturalArmor":  false,
+                                            "defenseDifferenceMultiplier":  false,
+                                            "defenseMultiplierCap":  5,
+                                            "variableDamage":  false,
+                                            "effects":  [
+
+                                                        ],
+                                            "oilEffect":  "",
+                                            "silverTrait":  false,
+                                            "silverDamage":  "",
+                                            "isMeteorite":  false,
+                                            "isNonLethal":  false
+                                        },
+                   "regionProperties":  {
+                                            "createRegionFromTemplate":  false,
+                                            "behaviours":  {
+                                                               "tokenEnter":  null,
+                                                               "tokenTurnStart":  null,
+                                                               "tokenMoveWithin":  null,
+                                                               "tokenExit":  null
+                                                           }
+                                        },
+                   "attackOptions":  [
+                                         "spell"
+                                     ],
+                   "spellAttackSkill":  "ritcraft"
+               },
+    "effects":  [
+
+                ],
+    "flags":  {
+
+              },
+    "_stats":  {
+                   "coreVersion":  14,
+                   "systemId":  "TheWitcherItaNewSystem"
+               }
 }

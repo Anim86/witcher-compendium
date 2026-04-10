@@ -1,65 +1,70 @@
-{
-    "_id": "90697777a5c649bd",
-    "name": "Tempesta di Fulmini",
-    "type": "spell",
-    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag101_La Magia in The Witcher_01.webp",
-    "system": {
-        "description": "<p>Questo incantesimo consente all’incantatore di creare una tempesta di fulmini nell’area. Esiste il 35% di probabilità che chiunque si trovi nella zona sia colpito da un fulmine (eccetto l’incantatore). Chi vie- ne colpito deve superare una prova di Eludere o subire 8d6 danni al torso con il 75% di probabilità di subire l’effetto A Fuoco.</p>",
-        "quantity": "1",
-        "weight": 0,
-        "cost": 0,
-        "sourcebook": "MB 109",
-        "class": "Spells",
-        "level": "master",
-        "source": "earth",
-        "stamina": 25,
-        "staminaIsVar": false,
-        "effect": "Questo incantesimo consente all’incantatore di creare una tempesta di fulmini nell’area. Esiste il 35% di probabilità che chiunque si trovi nella zona sia colpito da un fulmine (eccetto l’incantatore). Chi vie- ne colpito deve superare una prova di Eludere o subire 8d6 danni al torso con il 75% di probabilità di subire l’effetto A Fuoco.",
-        "range": "",
-        "duration": "Attiva (6 RES)",
-        "defence": "Schivare o Scudo Magico",
-        "damageProperties": {
-            "armorPiercing": false,
-            "improvedArmorPiercing": false,
-            "ablating": false,
-            "crushingForce": false,
-            "damageIsAblation": false,
-            "stun": 0,
-            "damageToAllLocations": false,
-            "bypassesWornArmor": false,
-            "bypassesNaturalArmor": false,
-            "defenseDifferenceMultiplier": false,
-            "defenseMultiplierCap": 5,
-            "variableDamage": false,
-            "effects": [],
-            "oilEffect": "",
-            "silverTrait": false,
-            "silverDamage": "",
-            "isMeteorite": false,
-            "isNonLethal": false
-        },
-        "regionProperties": {
-            "createRegionFromTemplate": false,
-            "behaviours": {
-                "tokenEnter": null,
-                "tokenTurnStart": null,
-                "tokenMoveWithin": null,
-                "tokenExit": null
-            }
-        },
-        "attackOptions": [
-            "spell"
-        ],
-        "spellAttackSkill": "spellcast",
-        "causeDamages": true,
-        "damage": "8d6",
-        "damageType": "elemental"
-    },
-    "effects": [],
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
-    }
+﻿{
+    "_id":  "90697777a5c649bd",
+    "name":  "Tempesta di Fulmini",
+    "type":  "spell",
+    "img":  "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag101_La Magia in The Witcher_01.webp",
+    "system":  {
+                   "description":  "\u003cp\u003eàQàuàeàsàtàoà àiànàcàaànàtàeàsàiàmàoà àcàoànàsàeànàtàeà àaàlàlàâà€à™àiànàcàaànàtàaàtàoàràeà àdàià àcàràeàaàràeà àuànàaà àtàeàmàpàeàsàtàaà àdàià àfàuàlàmàiànàià ànàeàlàlàâà€à™àaàràeàaà.à àEàsàiàsàtàeà àiàlà à3à5à%à àdàià àpàràoàbàaàbàiàlàiàtàÃà à àcàhàeà àcàhàiàuànàqàuàeà àsàià àtàràoàvàià ànàeàlàlàaà àzàoànàaà àsàiàaà àcàoàlàpàiàtàoà àdàaà àuànà àfàuàlàmàiànàeà à(àeàcàcàeàtàtàoà àlàâà€à™àiànàcàaànàtàaàtàoàràeà)à.à àCàhàià àvàiàeà-à ànàeà àcàoàlàpàiàtàoà àdàeàvàeà àsàuàpàeàràaàràeà àuànàaà àpàràoàvàaà àdàià àEàlàuàdàeàràeà àoà àsàuàbàiàràeà à8àdà6à àdàaànànàià àaàlà àtàoàràsàoà àcàoànà àiàlà à7à5à%à àdàià àpàràoàbàaàbàiàlàiàtàÃà à àdàià àsàuàbàiàràeà àlàâà€à™àeàfàfàeàtàtàoà àAà àFàuàoàcàoà.à\u003c/p\u003e",
+                   "quantity":  "1",
+                   "weight":  0,
+                   "cost":  0,
+                   "sourcebook":  "MB 103",
+                   "class":  "Mage",
+                   "level":  "master",
+                   "source":  "earth",
+                   "stamina":  25,
+                   "staminaIsVar":  false,
+                   "effect":  "Questo incantesimo consente allâ€™incantatore di creare una tempesta di fulmini nellâ€™area. Esiste il 35% di probabilitÃ  che chiunque si trovi nella zona sia colpito da un fulmine (eccetto lâ€™incantatore). Chi vie- ne colpito deve superare una prova di Eludere o subire 8d6 danni al torso con il 75% di probabilitÃ  di subire lâ€™effetto A Fuoco.",
+                   "range":  "",
+                   "duration":  "Attiva (6 RES)",
+                   "defence":  "Schivare o Scudo Magico",
+                   "damageProperties":  {
+                                            "armorPiercing":  false,
+                                            "improvedArmorPiercing":  false,
+                                            "ablating":  false,
+                                            "crushingForce":  false,
+                                            "damageIsAblation":  false,
+                                            "stun":  0,
+                                            "damageToAllLocations":  false,
+                                            "bypassesWornArmor":  false,
+                                            "bypassesNaturalArmor":  false,
+                                            "defenseDifferenceMultiplier":  false,
+                                            "defenseMultiplierCap":  5,
+                                            "variableDamage":  false,
+                                            "effects":  [
+
+                                                        ],
+                                            "oilEffect":  "",
+                                            "silverTrait":  false,
+                                            "silverDamage":  "",
+                                            "isMeteorite":  false,
+                                            "isNonLethal":  false
+                                        },
+                   "regionProperties":  {
+                                            "createRegionFromTemplate":  false,
+                                            "behaviours":  {
+                                                               "tokenEnter":  null,
+                                                               "tokenTurnStart":  null,
+                                                               "tokenMoveWithin":  null,
+                                                               "tokenExit":  null
+                                                           }
+                                        },
+                   "attackOptions":  [
+                                         "spell"
+                                     ],
+                   "spellAttackSkill":  "spellcast",
+                   "causeDamages":  true,
+                   "damage":  "8d6",
+                   "damageType":  "elemental"
+               },
+    "effects":  [
+
+                ],
+    "flags":  {
+
+              },
+    "_stats":  {
+                   "systemId":  "TheWitcherItaNewSystem",
+                   "coreVersion":  14
+               }
 }

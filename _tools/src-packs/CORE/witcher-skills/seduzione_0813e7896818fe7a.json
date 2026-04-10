@@ -5,6 +5,8 @@
     "img": "icons/svg/skill.svg",
     "system": {
         "attribute": "emp",
+        "description": "<p>L’abilità di affascinare e sedurre gli altri. Permette di ammaliare potenziali partner o di trarre vantaggio dal proprio fascino personale nelle interazioni sociali.</p>",
+        "sourcebook": "MB 56",
         "value": 0,
         "label": "",
         "isOpened": false,
@@ -23,7 +25,6 @@
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
+        "coreVersion": 14
     }
 }

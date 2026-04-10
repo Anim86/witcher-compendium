@@ -1,62 +1,67 @@
-{
-    "_id": "2b695655fadb4810",
-    "name": "Tempesta Statica",
-    "type": "spell",
-    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag101_La Magia in The Witcher_01.webp",
-    "system": {
-        "description": "<p>Tempesta Statica consente all’incantatore di sa- turare d’elettricità un raggio di 5m centrato su di lui. Ogni bersaglio nell’area (eccetto l’incantatore), se indos- sa un’armatura di metallo o porta armi di metallo, subi- sce 2 danni per round.</p>",
-        "quantity": "1",
-        "weight": 0,
-        "cost": 0,
-        "sourcebook": "MB 105",
-        "class": "Spells",
-        "level": "novice",
-        "source": "earth",
-        "stamina": 5,
-        "staminaIsVar": false,
-        "effect": "Tempesta Statica consente all’incantatore di sa- turare d’elettricità un raggio di 5m centrato su di lui. Ogni bersaglio nell’area (eccetto l’incantatore), se indos- sa un’armatura di metallo o porta armi di metallo, subi- sce 2 danni per round.",
-        "range": "Raggio di 5m",
-        "duration": "2d6 Round",
-        "defence": "Nessuna",
-        "damageProperties": {
-            "armorPiercing": false,
-            "improvedArmorPiercing": false,
-            "ablating": false,
-            "crushingForce": false,
-            "damageIsAblation": false,
-            "stun": 0,
-            "damageToAllLocations": false,
-            "bypassesWornArmor": false,
-            "bypassesNaturalArmor": false,
-            "defenseDifferenceMultiplier": false,
-            "defenseMultiplierCap": 5,
-            "variableDamage": false,
-            "effects": [],
-            "oilEffect": "",
-            "silverTrait": false,
-            "silverDamage": "",
-            "isMeteorite": false,
-            "isNonLethal": false
-        },
-        "regionProperties": {
-            "createRegionFromTemplate": false,
-            "behaviours": {
-                "tokenEnter": null,
-                "tokenTurnStart": null,
-                "tokenMoveWithin": null,
-                "tokenExit": null
-            }
-        },
-        "attackOptions": [
-            "spell"
-        ],
-        "spellAttackSkill": "spellcast"
-    },
-    "effects": [],
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
-    }
+﻿{
+    "_id":  "2b695655fadb4810",
+    "name":  "Tempesta Statica",
+    "type":  "spell",
+    "img":  "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag101_La Magia in The Witcher_01.webp",
+    "system":  {
+                   "description":  "\u003cp\u003eàTàeàmàpàeàsàtàaà àSàtàaàtàiàcàaà àcàoànàsàeànàtàeà àaàlàlàâà€à™àiànàcàaànàtàaàtàoàràeà àdàià àsàaà-à àtàuàràaàràeà àdàâà€à™àeàlàeàtàtàràiàcàiàtàÃà à àuànà àràaàgàgàiàoà àdàià à5àmà àcàeànàtàràaàtàoà àsàuà àdàià àlàuàià.à àOàgànàià àbàeàràsàaàgàlàiàoà ànàeàlàlàâà€à™àaàràeàaà à(àeàcàcàeàtàtàoà àlàâà€à™àiànàcàaànàtàaàtàoàràeà)à,à àsàeà àiànàdàoàsà-à àsàaà àuànàâà€à™àaàràmàaàtàuàràaà àdàià àmàeàtàaàlàlàoà àoà àpàoàràtàaà àaàràmàià àdàià àmàeàtàaàlàlàoà,à àsàuàbàià-à àsàcàeà à2à àdàaànànàià àpàeàrà àràoàuànàdà.à\u003c/p\u003e",
+                   "quantity":  "1",
+                   "weight":  0,
+                   "cost":  0,
+                   "sourcebook":  "MB 103",
+                   "class":  "Mage",
+                   "level":  "novice",
+                   "source":  "earth",
+                   "stamina":  5,
+                   "staminaIsVar":  false,
+                   "effect":  "Tempesta Statica consente allâ€™incantatore di sa- turare dâ€™elettricitÃ  un raggio di 5m centrato su di lui. Ogni bersaglio nellâ€™area (eccetto lâ€™incantatore), se indos- sa unâ€™armatura di metallo o porta armi di metallo, subi- sce 2 danni per round.",
+                   "range":  "Raggio di 5m",
+                   "duration":  "2d6 Round",
+                   "defence":  "Nessuna",
+                   "damageProperties":  {
+                                            "armorPiercing":  false,
+                                            "improvedArmorPiercing":  false,
+                                            "ablating":  false,
+                                            "crushingForce":  false,
+                                            "damageIsAblation":  false,
+                                            "stun":  0,
+                                            "damageToAllLocations":  false,
+                                            "bypassesWornArmor":  false,
+                                            "bypassesNaturalArmor":  false,
+                                            "defenseDifferenceMultiplier":  false,
+                                            "defenseMultiplierCap":  5,
+                                            "variableDamage":  false,
+                                            "effects":  [
+
+                                                        ],
+                                            "oilEffect":  "",
+                                            "silverTrait":  false,
+                                            "silverDamage":  "",
+                                            "isMeteorite":  false,
+                                            "isNonLethal":  false
+                                        },
+                   "regionProperties":  {
+                                            "createRegionFromTemplate":  false,
+                                            "behaviours":  {
+                                                               "tokenEnter":  null,
+                                                               "tokenTurnStart":  null,
+                                                               "tokenMoveWithin":  null,
+                                                               "tokenExit":  null
+                                                           }
+                                        },
+                   "attackOptions":  [
+                                         "spell"
+                                     ],
+                   "spellAttackSkill":  "spellcast"
+               },
+    "effects":  [
+
+                ],
+    "flags":  {
+
+              },
+    "_stats":  {
+                   "systemId":  "TheWitcherItaNewSystem",
+                   "coreVersion":  14
+               }
 }

@@ -1,10 +1,12 @@
 {
     "_id": "cab8e29ce1231d1c",
-    "name": "Lame Piccole",
+    "name": "Lame Corte",
     "type": "skill",
     "img": "icons/svg/skill.svg",
     "system": {
         "attribute": "ref",
+        "description": "<p>Saper usare pugnali, coltelli e lame di piccole dimensioni.</p>",
+        "sourcebook": "MB 54",
         "value": 0,
         "label": "",
         "isOpened": false,
@@ -23,7 +25,6 @@
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
+        "coreVersion": 14
     }
 }

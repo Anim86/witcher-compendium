@@ -5,6 +5,8 @@
     "img": "icons/svg/skill.svg",
     "system": {
         "attribute": "int",
+        "description": "<p>Pianificazione di una battaglia o di uno scontro su larga scala. Permette di anticipare le mosse del nemico e di organizzare le manovre belliche. (Costo x2)</p>",
+        "sourcebook": "MB 52",
         "value": 0,
         "label": "",
         "isOpened": false,
@@ -23,7 +25,6 @@
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
+        "coreVersion": 14
     }
 }

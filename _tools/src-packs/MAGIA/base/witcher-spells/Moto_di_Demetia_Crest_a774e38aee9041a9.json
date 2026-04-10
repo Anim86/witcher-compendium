@@ -1,62 +1,67 @@
-{
-    "_id": "a774e38aee9041a9",
-    "name": "Moto di Demetia Crest",
-    "type": "spell",
-    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag101_La Magia in The Witcher_01.webp",
-    "system": {
-        "description": "<p>Moto di Demetia Crest consente all’incan- tatore di creare attorno a sé uno scudo di puro fuoco magico, in grado di bloccare una quantità d’incantesimi d’acqua pari al doppio del valore dell’Abilità Lanciare Incantesimi dell’incantatore. I proiettili che colpiscono lo scudo vengono distrutti e le creature viventi non pos- sono entrare nell’area.</p>",
-        "quantity": "1",
-        "weight": 0,
-        "cost": 0,
-        "sourcebook": "MB 108",
-        "class": "Spells",
-        "level": "journeyman",
-        "source": "fire",
-        "stamina": 12,
-        "staminaIsVar": false,
-        "effect": "Moto di Demetia Crest consente all’incan- tatore di creare attorno a sé uno scudo di puro fuoco magico, in grado di bloccare una quantità d’incantesimi d’acqua pari al doppio del valore dell’Abilità Lanciare Incantesimi dell’incantatore. I proiettili che colpiscono lo scudo vengono distrutti e le creature viventi non pos- sono entrare nell’area.",
-        "range": "10m",
-        "duration": "Attiva (4 RES)",
-        "defence": "Nessuna",
-        "damageProperties": {
-            "armorPiercing": false,
-            "improvedArmorPiercing": false,
-            "ablating": false,
-            "crushingForce": false,
-            "damageIsAblation": false,
-            "stun": 0,
-            "damageToAllLocations": false,
-            "bypassesWornArmor": false,
-            "bypassesNaturalArmor": false,
-            "defenseDifferenceMultiplier": false,
-            "defenseMultiplierCap": 5,
-            "variableDamage": false,
-            "effects": [],
-            "oilEffect": "",
-            "silverTrait": false,
-            "silverDamage": "",
-            "isMeteorite": false,
-            "isNonLethal": false
-        },
-        "regionProperties": {
-            "createRegionFromTemplate": false,
-            "behaviours": {
-                "tokenEnter": null,
-                "tokenTurnStart": null,
-                "tokenMoveWithin": null,
-                "tokenExit": null
-            }
-        },
-        "attackOptions": [
-            "spell"
-        ],
-        "spellAttackSkill": "spellcast"
-    },
-    "effects": [],
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
-    }
+﻿{
+    "_id":  "a774e38aee9041a9",
+    "name":  "Moto di Demetia Crest",
+    "type":  "spell",
+    "img":  "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag101_La Magia in The Witcher_01.webp",
+    "system":  {
+                   "description":  "\u003cp\u003eàMàoàtàoà àdàià àDàeàmàeàtàiàaà àCàràeàsàtà àcàoànàsàeànàtàeà àaàlàlàâà€à™àiànàcàaànà-à àtàaàtàoàràeà àdàià àcàràeàaàràeà àaàtàtàoàrànàoà àaà àsàÃà©à àuànàoà àsàcàuàdàoà àdàià àpàuàràoà àfàuàoàcàoà àmàaàgàiàcàoà,à àiànà àgàràaàdàoà àdàià àbàlàoàcàcàaàràeà àuànàaà àqàuàaànàtàiàtàÃà à àdàâà€à™àiànàcàaànàtàeàsàiàmàià àdàâà€à™àaàcàqàuàaà àpàaàràià àaàlà àdàoàpàpàiàoà àdàeàlà àvàaàlàoàràeà àdàeàlàlàâà€à™àAàbàiàlàiàtàÃà à àLàaànàcàiàaàràeà àIànàcàaànàtàeàsàiàmàià àdàeàlàlàâà€à™àiànàcàaànàtàaàtàoàràeà.à àIà àpàràoàiàeàtàtàiàlàià àcàhàeà àcàoàlàpàiàsàcàoànàoà àlàoà àsàcàuàdàoà àvàeànàgàoànàoà àdàiàsàtàràuàtàtàià àeà àlàeà àcàràeàaàtàuàràeà àvàiàvàeànàtàià ànàoànà àpàoàsà-à àsàoànàoà àeànàtàràaàràeà ànàeàlàlàâà€à™àaàràeàaà.à\u003c/p\u003e",
+                   "quantity":  "1",
+                   "weight":  0,
+                   "cost":  0,
+                   "sourcebook":  "MB 103",
+                   "class":  "Mage",
+                   "level":  "journeyman",
+                   "source":  "fire",
+                   "stamina":  12,
+                   "staminaIsVar":  false,
+                   "effect":  "Moto di Demetia Crest consente allâ€™incan- tatore di creare attorno a sÃ© uno scudo di puro fuoco magico, in grado di bloccare una quantitÃ  dâ€™incantesimi dâ€™acqua pari al doppio del valore dellâ€™AbilitÃ  Lanciare Incantesimi dellâ€™incantatore. I proiettili che colpiscono lo scudo vengono distrutti e le creature viventi non pos- sono entrare nellâ€™area.",
+                   "range":  "10m",
+                   "duration":  "Attiva (4 RES)",
+                   "defence":  "Nessuna",
+                   "damageProperties":  {
+                                            "armorPiercing":  false,
+                                            "improvedArmorPiercing":  false,
+                                            "ablating":  false,
+                                            "crushingForce":  false,
+                                            "damageIsAblation":  false,
+                                            "stun":  0,
+                                            "damageToAllLocations":  false,
+                                            "bypassesWornArmor":  false,
+                                            "bypassesNaturalArmor":  false,
+                                            "defenseDifferenceMultiplier":  false,
+                                            "defenseMultiplierCap":  5,
+                                            "variableDamage":  false,
+                                            "effects":  [
+
+                                                        ],
+                                            "oilEffect":  "",
+                                            "silverTrait":  false,
+                                            "silverDamage":  "",
+                                            "isMeteorite":  false,
+                                            "isNonLethal":  false
+                                        },
+                   "regionProperties":  {
+                                            "createRegionFromTemplate":  false,
+                                            "behaviours":  {
+                                                               "tokenEnter":  null,
+                                                               "tokenTurnStart":  null,
+                                                               "tokenMoveWithin":  null,
+                                                               "tokenExit":  null
+                                                           }
+                                        },
+                   "attackOptions":  [
+                                         "spell"
+                                     ],
+                   "spellAttackSkill":  "spellcast"
+               },
+    "effects":  [
+
+                ],
+    "flags":  {
+
+              },
+    "_stats":  {
+                   "systemId":  "TheWitcherItaNewSystem",
+                   "coreVersion":  14
+               }
 }

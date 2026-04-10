@@ -1,10 +1,12 @@
 {
     "_id": "3dafd1145ae258d4",
-    "name": "Balestra",
+    "name": "Balestre",
     "type": "skill",
     "img": "icons/svg/skill.svg",
     "system": {
         "attribute": "dex",
+        "description": "<p>Tirare con le balestre. Permette di incoccare e tirare con una balestra con grande precisione, colpendo bersagli difficili o distanti.</p>",
+        "sourcebook": "MB 55",
         "value": 0,
         "label": "",
         "isOpened": false,
@@ -23,7 +25,6 @@
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
+        "coreVersion": 14
     }
 }

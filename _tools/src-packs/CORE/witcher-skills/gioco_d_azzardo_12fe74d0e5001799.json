@@ -1,10 +1,12 @@
 {
     "_id": "12fe74d0e5001799",
-    "name": "Gioco d'Azzardo",
+    "name": "Gioco d’Azzardo",
     "type": "skill",
     "img": "icons/svg/skill.svg",
     "system": {
         "attribute": "emp",
+        "description": "<p>Conoscenza e abilità nei giochi d’azzardo, dal gwent alle scommesse clandestine. Permette di giocare con competenza e individuare chi bara.</p>",
+        "sourcebook": "MB 56",
         "value": 0,
         "label": "",
         "isOpened": false,
@@ -23,7 +25,6 @@
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
+        "coreVersion": 14
     }
 }

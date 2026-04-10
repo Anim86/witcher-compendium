@@ -1,62 +1,67 @@
-{
-    "_id": "0984857645344e5c",
-    "name": "Codi Bywyd",
-    "type": "spell",
-    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag101_La Magia in The Witcher_01.webp",
-    "system": {
-        "description": "<p>Codi Bywyd può far crescere una pianta adulta da un seme in un solo turno. Ciò permette di coltiva- re erbe e piante alchemiche, ma non piante più grandi come, ad esempio, un albero.</p>",
-        "quantity": "1",
-        "weight": 0,
-        "cost": 0,
-        "sourcebook": "MB 104",
-        "class": "Spells",
-        "level": "novice",
-        "source": "earth",
-        "stamina": 2,
-        "staminaIsVar": false,
-        "effect": "Codi Bywyd può far crescere una pianta adulta da un seme in un solo turno. Ciò permette di coltiva- re erbe e piante alchemiche, ma non piante più grandi come, ad esempio, un albero.",
-        "range": "4m",
-        "duration": "Istantanea",
-        "defence": "Nessuna",
-        "damageProperties": {
-            "armorPiercing": false,
-            "improvedArmorPiercing": false,
-            "ablating": false,
-            "crushingForce": false,
-            "damageIsAblation": false,
-            "stun": 0,
-            "damageToAllLocations": false,
-            "bypassesWornArmor": false,
-            "bypassesNaturalArmor": false,
-            "defenseDifferenceMultiplier": false,
-            "defenseMultiplierCap": 5,
-            "variableDamage": false,
-            "effects": [],
-            "oilEffect": "",
-            "silverTrait": false,
-            "silverDamage": "",
-            "isMeteorite": false,
-            "isNonLethal": false
-        },
-        "regionProperties": {
-            "createRegionFromTemplate": false,
-            "behaviours": {
-                "tokenEnter": null,
-                "tokenTurnStart": null,
-                "tokenMoveWithin": null,
-                "tokenExit": null
-            }
-        },
-        "attackOptions": [
-            "spell"
-        ],
-        "spellAttackSkill": "spellcast"
-    },
-    "effects": [],
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
-    }
+﻿{
+    "_id":  "0984857645344e5c",
+    "name":  "Codi Bywyd",
+    "type":  "spell",
+    "img":  "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag101_La Magia in The Witcher_01.webp",
+    "system":  {
+                   "description":  "\u003cp\u003eàCàoàdàià àBàyàwàyàdà àpàuàÃà²à àfàaàrà àcàràeàsàcàeàràeà àuànàaà àpàiàaànàtàaà àaàdàuàlàtàaà àdàaà àuànà àsàeàmàeà àiànà àuànà àsàoàlàoà àtàuàrànàoà.à àCàiàÃà²à àpàeàràmàeàtàtàeà àdàià àcàoàlàtàiàvàaà-à àràeà àeàràbàeà àeà àpàiàaànàtàeà àaàlàcàhàeàmàiàcàhàeà,à àmàaà ànàoànà àpàiàaànàtàeà àpàiàÃà¹à àgàràaànàdàià àcàoàmàeà,à àaàdà àeàsàeàmàpàiàoà,à àuànà àaàlàbàeàràoà.à\u003c/p\u003e",
+                   "quantity":  "1",
+                   "weight":  0,
+                   "cost":  0,
+                   "sourcebook":  "MB 103",
+                   "class":  "Mage",
+                   "level":  "novice",
+                   "source":  "earth",
+                   "stamina":  2,
+                   "staminaIsVar":  false,
+                   "effect":  "Codi Bywyd puÃ² far crescere una pianta adulta da un seme in un solo turno. CiÃ² permette di coltiva- re erbe e piante alchemiche, ma non piante piÃ¹ grandi come, ad esempio, un albero.",
+                   "range":  "4m",
+                   "duration":  "Istantanea",
+                   "defence":  "Nessuna",
+                   "damageProperties":  {
+                                            "armorPiercing":  false,
+                                            "improvedArmorPiercing":  false,
+                                            "ablating":  false,
+                                            "crushingForce":  false,
+                                            "damageIsAblation":  false,
+                                            "stun":  0,
+                                            "damageToAllLocations":  false,
+                                            "bypassesWornArmor":  false,
+                                            "bypassesNaturalArmor":  false,
+                                            "defenseDifferenceMultiplier":  false,
+                                            "defenseMultiplierCap":  5,
+                                            "variableDamage":  false,
+                                            "effects":  [
+
+                                                        ],
+                                            "oilEffect":  "",
+                                            "silverTrait":  false,
+                                            "silverDamage":  "",
+                                            "isMeteorite":  false,
+                                            "isNonLethal":  false
+                                        },
+                   "regionProperties":  {
+                                            "createRegionFromTemplate":  false,
+                                            "behaviours":  {
+                                                               "tokenEnter":  null,
+                                                               "tokenTurnStart":  null,
+                                                               "tokenMoveWithin":  null,
+                                                               "tokenExit":  null
+                                                           }
+                                        },
+                   "attackOptions":  [
+                                         "spell"
+                                     ],
+                   "spellAttackSkill":  "spellcast"
+               },
+    "effects":  [
+
+                ],
+    "flags":  {
+
+              },
+    "_stats":  {
+                   "systemId":  "TheWitcherItaNewSystem",
+                   "coreVersion":  14
+               }
 }

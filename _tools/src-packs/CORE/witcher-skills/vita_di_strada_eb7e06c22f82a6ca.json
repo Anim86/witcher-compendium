@@ -1,10 +1,12 @@
 {
     "_id": "eb7e06c22f82a6ca",
-    "name": "Vita di Strada",
+    "name": "Scaltrezza",
     "type": "skill",
     "img": "icons/svg/skill.svg",
     "system": {
         "attribute": "int",
+        "description": "<p>Conoscenza del mondo criminale, dei covi, del gergo della malavita e di come muoversi nelle zone più malfamate delle città.</p>",
+        "sourcebook": "MB 52",
         "value": 0,
         "label": "",
         "isOpened": false,
@@ -23,7 +25,6 @@
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
+        "coreVersion": 14
     }
 }

@@ -1,0 +1,30 @@
+{
+    "_id": "c64070fc0d72f10b",
+    "name": "Manifattura",
+    "type": "skill",
+    "img": "icons/svg/skill.svg",
+    "system": {
+        "attribute": "cra",
+        "description": "<p>Costruire e riparare armi e armature. Permette di forgiare spade, scudi e cotte di maglia, fino alla creazione di autentici capolavori. (Costo x2)</p>",
+        "sourcebook": "MB 57",
+        "value": 0,
+        "label": "",
+        "isOpened": false,
+        "modifiers": [],
+        "activeEffectModifiers": 0,
+        "isProfession": false,
+        "isPickup": false,
+        "isLearned": false
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

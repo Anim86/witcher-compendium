@@ -1,65 +1,70 @@
-{
-    "_id": "7e116b8932984818",
-    "name": "Fulmine Globulare",
-    "type": "spell",
-    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini_Chaos/Pag083_Incantesimi da Mago_01.webp",
-    "system": {
-        "description": "<p>Forgia del Mago Arrugginire Compromettere Focus Frana di Bekker Nastro Invisibile Porta di Cenere Essenza della Pozione Laccio Spettrale Sciame di Javed Tocco Fulminante Tocco del Fabbro Invaerne Manto Portale Trappola Rafforzare Incantesimi da Maestro Rubare Incantesimo Modellare Terra Gwyntog Fuoco Vivente Estrazione di Ainfra Specchio Oscuro di Bekker Stasi Cristallina Mano della Tempesta Vampata del Korath Piena di Ys</p>",
-        "quantity": "1",
-        "weight": 0,
-        "cost": 0,
-        "sourcebook": "TC 89",
-        "class": "Spells",
-        "level": "master",
-        "source": "fire",
-        "stamina": 0,
-        "staminaIsVar": false,
-        "effect": "incantesimo preferito dai maghi che devono affrontare avversari agili, Fulmine Globulare crea una sfera di elettricità che vola seguendo gli ordini del mago. Una volta creata, la sfera può essere diretta contro un singolo bersaglio, che deve difendersi contro il risulta- to della prova di Lanciare Incantesimi. Chi fallisce su- bisce 3d6 danni al Torso e l’effetto della Ferita Critica Commozione Cerebrale per 10 minuti. Anche evitando- la, la sfera rimane nei pressi e, nei Turni successivi, il mago potrà dirigerla di nuovo eseguendo un’altra prova di Lanciare Incantesimi. La sfera si disperde dopo il pri- mo colpo a segno.",
-        "range": "20m",
-        "duration": "5 Round",
-        "defence": "Schivare",
-        "damageProperties": {
-            "armorPiercing": false,
-            "improvedArmorPiercing": false,
-            "ablating": false,
-            "crushingForce": false,
-            "damageIsAblation": false,
-            "stun": 0,
-            "damageToAllLocations": false,
-            "bypassesWornArmor": false,
-            "bypassesNaturalArmor": false,
-            "defenseDifferenceMultiplier": false,
-            "defenseMultiplierCap": 5,
-            "variableDamage": false,
-            "effects": [],
-            "oilEffect": "",
-            "silverTrait": false,
-            "silverDamage": "",
-            "isMeteorite": false,
-            "isNonLethal": false
-        },
-        "regionProperties": {
-            "createRegionFromTemplate": false,
-            "behaviours": {
-                "tokenEnter": null,
-                "tokenTurnStart": null,
-                "tokenMoveWithin": null,
-                "tokenExit": null
-            }
-        },
-        "attackOptions": [
-            "spell"
-        ],
-        "spellAttackSkill": "spellcast",
-        "causeDamages": true,
-        "damage": "3d6",
-        "damageType": "elemental"
-    },
-    "effects": [],
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
-    }
+﻿{
+    "_id":  "7e116b8932984818",
+    "name":  "Fulmine Globulare",
+    "type":  "spell",
+    "img":  "modules/witcher-compendium/assets/optimized/assets/Immagini_Chaos/Pag083_Incantesimi da Mago_01.webp",
+    "system":  {
+                   "description":  "\u003cp\u003eincantesimo preferito dai maghi che devono affrontare avversari agili, Fulmine Globulare crea una sfera di elettricitÃ  che vola seguendo gli ordini del mago. Una volta creata, la sfera puÃ² essere diretta contro un singolo bersaglio, che deve difendersi contro il risulta- to della prova di Lanciare Incantesimi. Chi fallisce su- bisce 3d6 danni al Torso e lâ€™effetto della Ferita Critica Commozione Cerebrale per 10 minuti. Anche evitando- la, la sfera rimane nei pressi e, nei Turni successivi, il mago potrÃ  dirigerla di nuovo eseguendo unâ€™altra prova di Lanciare Incantesimi. La sfera si disperde dopo il pri- mo colpo a segno.\u003c/p\u003e",
+                   "quantity":  "1",
+                   "weight":  0,
+                   "cost":  0,
+                   "sourcebook":  "TC 83",
+                   "class":  "Mage",
+                   "level":  "master",
+                   "source":  "fire",
+                   "stamina":  0,
+                   "staminaIsVar":  false,
+                   "effect":  "incantesimo preferito dai maghi che devono affrontare avversari agili, Fulmine Globulare crea una sfera di elettricitÃ  che vola seguendo gli ordini del mago. Una volta creata, la sfera puÃ² essere diretta contro un singolo bersaglio, che deve difendersi contro il risulta- to della prova di Lanciare Incantesimi. Chi fallisce su- bisce 3d6 danni al Torso e lâ€™effetto della Ferita Critica Commozione Cerebrale per 10 minuti. Anche evitando- la, la sfera rimane nei pressi e, nei Turni successivi, il mago potrÃ  dirigerla di nuovo eseguendo unâ€™altra prova di Lanciare Incantesimi. La sfera si disperde dopo il pri- mo colpo a segno.",
+                   "range":  "20m",
+                   "duration":  "5 Round",
+                   "defence":  "Schivare",
+                   "damageProperties":  {
+                                            "armorPiercing":  false,
+                                            "improvedArmorPiercing":  false,
+                                            "ablating":  false,
+                                            "crushingForce":  false,
+                                            "damageIsAblation":  false,
+                                            "stun":  0,
+                                            "damageToAllLocations":  false,
+                                            "bypassesWornArmor":  false,
+                                            "bypassesNaturalArmor":  false,
+                                            "defenseDifferenceMultiplier":  false,
+                                            "defenseMultiplierCap":  5,
+                                            "variableDamage":  false,
+                                            "effects":  [
+
+                                                        ],
+                                            "oilEffect":  "",
+                                            "silverTrait":  false,
+                                            "silverDamage":  "",
+                                            "isMeteorite":  false,
+                                            "isNonLethal":  false
+                                        },
+                   "regionProperties":  {
+                                            "createRegionFromTemplate":  false,
+                                            "behaviours":  {
+                                                               "tokenEnter":  null,
+                                                               "tokenTurnStart":  null,
+                                                               "tokenMoveWithin":  null,
+                                                               "tokenExit":  null
+                                                           }
+                                        },
+                   "attackOptions":  [
+                                         "spell"
+                                     ],
+                   "spellAttackSkill":  "spellcast",
+                   "causeDamages":  true,
+                   "damage":  "3d6",
+                   "damageType":  "elemental"
+               },
+    "effects":  [
+
+                ],
+    "flags":  {
+
+              },
+    "_stats":  {
+                   "coreVersion":  14,
+                   "systemId":  "TheWitcherItaNewSystem"
+               }
 }

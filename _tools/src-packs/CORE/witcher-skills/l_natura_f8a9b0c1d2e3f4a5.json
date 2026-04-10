@@ -1,0 +1,30 @@
+{
+    "_id": "f8a9b0c1d2e3f4a5",
+    "name": "Leggere la Natura",
+    "type": "skill",
+    "img": "icons/svg/skill.svg",
+    "system": {
+        "attribute": "int",
+        "description": "<p>L’abilità di leggere i segni dell’ambiente naturale. Permette di scoprire chi è passato in un’area e cosa è accaduto di recente.</p>",
+        "sourcebook": "TC 70",
+        "value": 0,
+        "label": "",
+        "isOpened": false,
+        "modifiers": [],
+        "activeEffectModifiers": 0,
+        "isProfession": true,
+        "isPickup": false,
+        "isLearned": false
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

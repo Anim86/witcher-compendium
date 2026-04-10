@@ -1,0 +1,21 @@
+﻿{
+    "name":  "Rituale della Magia",
+    "_id":  "55e57065785e426b",
+    "system":  {
+                   "stamina":  5,
+                   "description":  "\u003cp\u003eLâ€™Idromanzia permette al ritualista di fissare in un piccolo specchio dâ€™acqua e di scorgervi un evento av- venuto negli ultimi due giorni, o che si sta svolgendo in quel momento. Osservare un evento passato usa la CD base. Se il ritualista cerca di scorgere un evento che sta avendo luogo, la CD aumenta di 3. Se il ritualista osserva un evento corrente, a cui partecipa un mago questo puÃ² percepire la divinazione con un tiro di Arte del Mago contrapposto al tiro di Officiare Rituali. Tempo di\u003c/p\u003e",
+                   "cost":  5,
+                   "sourcebook":  "MB 118",
+                   "preparationTime":  "5 Round DifficoltÃ  della",
+                   "components":  "Un piccolo specchio dâ€™acqua o una cio- tola dâ€™acqua, Quintessenza (Ã—2), Petali di Mirto Bianco (Ã—2), Perla (Ã—2), Frammento Lunare (Ã—1), Frutto di Berbercane (Ã—1)\r\ndellâ€™Idromanzia, il che la rende piÃ¹ faticosa da mante- nere, e non permette di scrutare il passato. Tuttavia Ã¨ piÃ¹ facile vedere gli avvenimenti contemporanei. Come per lâ€™Idromanzia, un mago osservato dal ritualista puÃ² percepire la divinazione con un tiro di Arte del Mago contrapposto al tiro di Officiare Rituali. Tempo di",
+                   "class":  "ritual",
+                   "duration":  "Attiva (2 RES)",
+                   "difficultyCheck":  ""
+               },
+    "type":  "ritual",
+    "img":  "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag118_Rituali_01.webp",
+    "_stats":  {
+                   "coreVersion":  14,
+                   "systemId":  "TheWitcherItaNewSystem"
+               }
+}

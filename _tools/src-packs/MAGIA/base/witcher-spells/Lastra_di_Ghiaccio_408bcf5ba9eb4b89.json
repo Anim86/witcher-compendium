@@ -1,62 +1,67 @@
-{
-    "_id": "408bcf5ba9eb4b89",
-    "name": "Lastra di Ghiaccio",
-    "type": "spell",
-    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag101_La Magia in The Witcher_01.webp",
-    "system": {
-        "description": "<p>Lastra di Ghiaccio permette di creare un’area di ghiaccio di 2 metri quadrati. Chi mette piede in quest’a- rea deve superare una prova di Atletica con CD pari al risultato di Lanciare Incantesimi per non scivolare sul ghiaccio.</p>",
-        "quantity": "1",
-        "weight": 0,
-        "cost": 0,
-        "sourcebook": "MB 106",
-        "class": "Spells",
-        "level": "novice",
-        "source": "fire",
-        "stamina": 2,
-        "staminaIsVar": false,
-        "effect": "Lastra di Ghiaccio permette di creare un’area di ghiaccio di 2 metri quadrati. Chi mette piede in quest’a- rea deve superare una prova di Atletica con CD pari al risultato di Lanciare Incantesimi per non scivolare sul ghiaccio.",
-        "range": "10m",
-        "duration": "2d10 Round",
-        "defence": "Schivare",
-        "damageProperties": {
-            "armorPiercing": false,
-            "improvedArmorPiercing": false,
-            "ablating": false,
-            "crushingForce": false,
-            "damageIsAblation": false,
-            "stun": 0,
-            "damageToAllLocations": false,
-            "bypassesWornArmor": false,
-            "bypassesNaturalArmor": false,
-            "defenseDifferenceMultiplier": false,
-            "defenseMultiplierCap": 5,
-            "variableDamage": false,
-            "effects": [],
-            "oilEffect": "",
-            "silverTrait": false,
-            "silverDamage": "",
-            "isMeteorite": false,
-            "isNonLethal": false
-        },
-        "regionProperties": {
-            "createRegionFromTemplate": false,
-            "behaviours": {
-                "tokenEnter": null,
-                "tokenTurnStart": null,
-                "tokenMoveWithin": null,
-                "tokenExit": null
-            }
-        },
-        "attackOptions": [
-            "spell"
-        ],
-        "spellAttackSkill": "spellcast"
-    },
-    "effects": [],
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
-    }
+﻿{
+    "_id":  "408bcf5ba9eb4b89",
+    "name":  "Lastra di Ghiaccio",
+    "type":  "spell",
+    "img":  "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag101_La Magia in The Witcher_01.webp",
+    "system":  {
+                   "description":  "\u003cp\u003eàLàaàsàtàràaà àdàià àGàhàiàaàcàcàiàoà àpàeàràmàeàtàtàeà àdàià àcàràeàaàràeà àuànàâà€à™àaàràeàaà àdàià àgàhàiàaàcàcàiàoà àdàià à2à àmàeàtàràià àqàuàaàdàràaàtàià.à àCàhàià àmàeàtàtàeà àpàiàeàdàeà àiànà àqàuàeàsàtàâà€à™àaà-à àràeàaà àdàeàvàeà àsàuàpàeàràaàràeà àuànàaà àpàràoàvàaà àdàià àAàtàlàeàtàiàcàaà àcàoànà àCàDà àpàaàràià àaàlà àràiàsàuàlàtàaàtàoà àdàià àLàaànàcàiàaàràeà àIànàcàaànàtàeàsàiàmàià àpàeàrà ànàoànà àsàcàiàvàoàlàaàràeà àsàuàlà àgàhàiàaàcàcàiàoà.à\u003c/p\u003e",
+                   "quantity":  "1",
+                   "weight":  0,
+                   "cost":  0,
+                   "sourcebook":  "MB 103",
+                   "class":  "Mage",
+                   "level":  "novice",
+                   "source":  "fire",
+                   "stamina":  2,
+                   "staminaIsVar":  false,
+                   "effect":  "Lastra di Ghiaccio permette di creare unâ€™area di ghiaccio di 2 metri quadrati. Chi mette piede in questâ€™a- rea deve superare una prova di Atletica con CD pari al risultato di Lanciare Incantesimi per non scivolare sul ghiaccio.",
+                   "range":  "10m",
+                   "duration":  "2d10 Round",
+                   "defence":  "Schivare",
+                   "damageProperties":  {
+                                            "armorPiercing":  false,
+                                            "improvedArmorPiercing":  false,
+                                            "ablating":  false,
+                                            "crushingForce":  false,
+                                            "damageIsAblation":  false,
+                                            "stun":  0,
+                                            "damageToAllLocations":  false,
+                                            "bypassesWornArmor":  false,
+                                            "bypassesNaturalArmor":  false,
+                                            "defenseDifferenceMultiplier":  false,
+                                            "defenseMultiplierCap":  5,
+                                            "variableDamage":  false,
+                                            "effects":  [
+
+                                                        ],
+                                            "oilEffect":  "",
+                                            "silverTrait":  false,
+                                            "silverDamage":  "",
+                                            "isMeteorite":  false,
+                                            "isNonLethal":  false
+                                        },
+                   "regionProperties":  {
+                                            "createRegionFromTemplate":  false,
+                                            "behaviours":  {
+                                                               "tokenEnter":  null,
+                                                               "tokenTurnStart":  null,
+                                                               "tokenMoveWithin":  null,
+                                                               "tokenExit":  null
+                                                           }
+                                        },
+                   "attackOptions":  [
+                                         "spell"
+                                     ],
+                   "spellAttackSkill":  "spellcast"
+               },
+    "effects":  [
+
+                ],
+    "flags":  {
+
+              },
+    "_stats":  {
+                   "systemId":  "TheWitcherItaNewSystem",
+                   "coreVersion":  14
+               }
 }

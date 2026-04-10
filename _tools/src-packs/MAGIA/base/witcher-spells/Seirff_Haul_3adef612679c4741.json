@@ -1,62 +1,67 @@
-{
-    "_id": "3adef612679c4741",
-    "name": "Seirff Haul",
-    "type": "spell",
-    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag101_La Magia in The Witcher_01.webp",
-    "system": {
-        "description": "<p>Seirff Haul crea vari serpenti fatti di fuoco magi- co che si avventano su un bersaglio. Il soggetto è in lotta e A Fuoco finché non supera una prova di Eludere contrap- posta al tiro di Lanciare Incantesimi dell’incantatore. Per ogni round in cui il soggetto fallisce il tiro di Eludere, i serpenti stringono la presa e la CD aumenta di 1.</p>",
-        "quantity": "1",
-        "weight": 0,
-        "cost": 0,
-        "sourcebook": "MB 108",
-        "class": "Spells",
-        "level": "journeyman",
-        "source": "Water",
-        "stamina": 10,
-        "staminaIsVar": false,
-        "effect": "Seirff Haul crea vari serpenti fatti di fuoco magi- co che si avventano su un bersaglio. Il soggetto è in lotta e A Fuoco finché non supera una prova di Eludere contrap- posta al tiro di Lanciare Incantesimi dell’incantatore. Per ogni round in cui il soggetto fallisce il tiro di Eludere, i serpenti stringono la presa e la CD aumenta di 1.",
-        "range": "10m",
-        "duration": "2d10 Round",
-        "defence": "Schivare",
-        "damageProperties": {
-            "armorPiercing": false,
-            "improvedArmorPiercing": false,
-            "ablating": false,
-            "crushingForce": false,
-            "damageIsAblation": false,
-            "stun": 0,
-            "damageToAllLocations": false,
-            "bypassesWornArmor": false,
-            "bypassesNaturalArmor": false,
-            "defenseDifferenceMultiplier": false,
-            "defenseMultiplierCap": 5,
-            "variableDamage": false,
-            "effects": [],
-            "oilEffect": "",
-            "silverTrait": false,
-            "silverDamage": "",
-            "isMeteorite": false,
-            "isNonLethal": false
-        },
-        "regionProperties": {
-            "createRegionFromTemplate": false,
-            "behaviours": {
-                "tokenEnter": null,
-                "tokenTurnStart": null,
-                "tokenMoveWithin": null,
-                "tokenExit": null
-            }
-        },
-        "attackOptions": [
-            "spell"
-        ],
-        "spellAttackSkill": "spellcast"
-    },
-    "effects": [],
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
-    }
+﻿{
+    "_id":  "3adef612679c4741",
+    "name":  "Seirff Haul",
+    "type":  "spell",
+    "img":  "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag101_La Magia in The Witcher_01.webp",
+    "system":  {
+                   "description":  "\u003cp\u003eàSàeàiàràfàfà àHàaàuàlà àcàràeàaà àvàaàràià àsàeàràpàeànàtàià àfàaàtàtàià àdàià àfàuàoàcàoà àmàaàgàià-à àcàoà àcàhàeà àsàià àaàvàvàeànàtàaànàoà àsàuà àuànà àbàeàràsàaàgàlàiàoà.à àIàlà àsàoàgàgàeàtàtàoà àÃà¨à àiànà àlàoàtàtàaà àeà àAà àFàuàoàcàoà àfàiànàcàhàÃà©à ànàoànà àsàuàpàeàràaà àuànàaà àpàràoàvàaà àdàià àEàlàuàdàeàràeà àcàoànàtàràaàpà-à àpàoàsàtàaà àaàlà àtàiàràoà àdàià àLàaànàcàiàaàràeà àIànàcàaànàtàeàsàiàmàià àdàeàlàlàâà€à™àiànàcàaànàtàaàtàoàràeà.à àPàeàrà àoàgànàià àràoàuànàdà àiànà àcàuàià àiàlà àsàoàgàgàeàtàtàoà àfàaàlàlàiàsàcàeà àiàlà àtàiàràoà àdàià àEàlàuàdàeàràeà,à àià àsàeàràpàeànàtàià àsàtàràiànàgàoànàoà àlàaà àpàràeàsàaà àeà àlàaà àCàDà àaàuàmàeànàtàaà àdàià à1à.à\u003c/p\u003e",
+                   "quantity":  "1",
+                   "weight":  0,
+                   "cost":  0,
+                   "sourcebook":  "MB 103",
+                   "class":  "Mage",
+                   "level":  "journeyman",
+                   "source":  "Water",
+                   "stamina":  10,
+                   "staminaIsVar":  false,
+                   "effect":  "Seirff Haul crea vari serpenti fatti di fuoco magi- co che si avventano su un bersaglio. Il soggetto Ã¨ in lotta e A Fuoco finchÃ© non supera una prova di Eludere contrap- posta al tiro di Lanciare Incantesimi dellâ€™incantatore. Per ogni round in cui il soggetto fallisce il tiro di Eludere, i serpenti stringono la presa e la CD aumenta di 1.",
+                   "range":  "10m",
+                   "duration":  "2d10 Round",
+                   "defence":  "Schivare",
+                   "damageProperties":  {
+                                            "armorPiercing":  false,
+                                            "improvedArmorPiercing":  false,
+                                            "ablating":  false,
+                                            "crushingForce":  false,
+                                            "damageIsAblation":  false,
+                                            "stun":  0,
+                                            "damageToAllLocations":  false,
+                                            "bypassesWornArmor":  false,
+                                            "bypassesNaturalArmor":  false,
+                                            "defenseDifferenceMultiplier":  false,
+                                            "defenseMultiplierCap":  5,
+                                            "variableDamage":  false,
+                                            "effects":  [
+
+                                                        ],
+                                            "oilEffect":  "",
+                                            "silverTrait":  false,
+                                            "silverDamage":  "",
+                                            "isMeteorite":  false,
+                                            "isNonLethal":  false
+                                        },
+                   "regionProperties":  {
+                                            "createRegionFromTemplate":  false,
+                                            "behaviours":  {
+                                                               "tokenEnter":  null,
+                                                               "tokenTurnStart":  null,
+                                                               "tokenMoveWithin":  null,
+                                                               "tokenExit":  null
+                                                           }
+                                        },
+                   "attackOptions":  [
+                                         "spell"
+                                     ],
+                   "spellAttackSkill":  "spellcast"
+               },
+    "effects":  [
+
+                ],
+    "flags":  {
+
+              },
+    "_stats":  {
+                   "systemId":  "TheWitcherItaNewSystem",
+                   "coreVersion":  14
+               }
 }

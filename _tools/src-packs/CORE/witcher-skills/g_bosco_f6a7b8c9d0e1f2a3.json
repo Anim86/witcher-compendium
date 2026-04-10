@@ -1,0 +1,30 @@
+{
+    "_id": "f6a7b8c9d0e1f2a3",
+    "name": "Guardiano del Bosco",
+    "type": "skill",
+    "img": "icons/svg/skill.svg",
+    "system": {
+        "attribute": "will",
+        "description": "<p>L’abilità di conferire potere a una creatura naturale tramite un antico rituale. La creatura raddoppia in dimensioni e ottiene bonus a fisicità e danni.</p>",
+        "sourcebook": "TC 70",
+        "value": 0,
+        "label": "",
+        "isOpened": false,
+        "modifiers": [],
+        "activeEffectModifiers": 0,
+        "isProfession": true,
+        "isPickup": false,
+        "isLearned": false
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

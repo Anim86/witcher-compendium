@@ -67,6 +67,7 @@ Hooks.once("ready", async () => {
     { packName: "witcher-spells",         folderId: tomoBaseMagia?.id },
     { packName: "witcher-rituals",        folderId: tomoBaseMagia?.id },
     { packName: "witcher-runes",          folderId: tomoBaseMagia?.id },
+    { packName: "witcher-hexes-base",     folderId: tomoBaseMagia?.id },
     { packName: "witcher-signs",          folderId: tomoBaseMagia?.id },
     { packName: "witcher-spells-chaos",   folderId: tomoCaosMagia?.id },
     { packName: "witcher-rituals-chaos",  folderId: tomoCaosMagia?.id },

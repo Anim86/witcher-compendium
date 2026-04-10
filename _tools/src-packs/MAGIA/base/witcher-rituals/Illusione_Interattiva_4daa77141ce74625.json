@@ -1,62 +1,67 @@
-{
-    "_id": "4daa77141ce74625",
-    "name": "Illusione Interattiva",
-    "type": "ritual",
-    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag118_Rituali_01.webp",
-    "system": {
-        "description": "<p>Questo rituale crea un’illusione percepibile alla vista, all’udito, all’olfatto e al tatto. Niente dell’illusione è reale, ma sembra tale per chiunque entri nella sua area. L’illusione riempie un raggio di 20m e il ritualista la con- trolla attivamente e le dà forma. Se l’illusione simula un pericolo che attacca gli intrusi, il bersaglio deve tirare su Resistere alla Magia o su Tempra con CD 12. Chi supera la prova si rende conto che quanto accade non è reale e non subisce danno. Chi fallisce crede che i danni siano reali e deve superare un tiro salvezza di Grinta. Il danno non può uccidere, ma può stordire.</p>",
-        "quantity": "1",
-        "weight": 0,
-        "cost": 0,
-        "sourcebook": "MB 121",
-        "class": "ritual",
-        "level": "novice",
-        "source": "",
-        "stamina": 0,
-        "staminaIsVar": false,
-        "effect": "Questo rituale crea un’illusione percepibile alla vista, all’udito, all’olfatto e al tatto. Niente dell’illusione è reale, ma sembra tale per chiunque entri nella sua area. L’illusione riempie un raggio di 20m e il ritualista la con- trolla attivamente e le dà forma. Se l’illusione simula un pericolo che attacca gli intrusi, il bersaglio deve tirare su Resistere alla Magia o su Tempra con CD 12. Chi supera la prova si rende conto che quanto accade non è reale e non subisce danno. Chi fallisce crede che i danni siano reali e deve superare un tiro salvezza di Grinta. Il danno non può uccidere, ma può stordire.",
-        "range": "N/A",
-        "duration": "Finché non viene Dissipato",
-        "defence": "",
-        "damageProperties": {
-            "armorPiercing": false,
-            "improvedArmorPiercing": false,
-            "ablating": false,
-            "crushingForce": false,
-            "damageIsAblation": false,
-            "stun": 0,
-            "damageToAllLocations": false,
-            "bypassesWornArmor": false,
-            "bypassesNaturalArmor": false,
-            "defenseDifferenceMultiplier": false,
-            "defenseMultiplierCap": 5,
-            "variableDamage": false,
-            "effects": [],
-            "oilEffect": "",
-            "silverTrait": false,
-            "silverDamage": "",
-            "isMeteorite": false,
-            "isNonLethal": false
-        },
-        "regionProperties": {
-            "createRegionFromTemplate": false,
-            "behaviours": {
-                "tokenEnter": null,
-                "tokenTurnStart": null,
-                "tokenMoveWithin": null,
-                "tokenExit": null
-            }
-        },
-        "attackOptions": [
-            "spell"
-        ],
-        "spellAttackSkill": "ritcraft"
-    },
-    "effects": [],
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
-    }
+﻿{
+    "_id":  "4daa77141ce74625",
+    "name":  "Illusione Interattiva",
+    "type":  "ritual",
+    "img":  "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag118_Rituali_01.webp",
+    "system":  {
+                   "description":  "\u003cp\u003eQuesto rituale crea unâ€™illusione percepibile alla vista, allâ€™udito, allâ€™olfatto e al tatto. Niente dellâ€™illusione Ã¨ reale, ma sembra tale per chiunque entri nella sua area. Lâ€™illusione riempie un raggio di 20m e il ritualista la con- trolla attivamente e le dÃ  forma. Se lâ€™illusione simula un pericolo che attacca gli intrusi, il bersaglio deve tirare su Resistere alla Magia o su Tempra con CD 12. Chi supera la prova si rende conto che quanto accade non Ã¨ reale e non subisce danno. Chi fallisce crede che i danni siano reali e deve superare un tiro salvezza di Grinta. Il danno non puÃ² uccidere, ma puÃ² stordire.\u003c/p\u003e",
+                   "quantity":  "1",
+                   "weight":  0,
+                   "cost":  0,
+                   "sourcebook":  "MB 118",
+                   "class":  "ritual",
+                   "level":  "novice",
+                   "source":  "",
+                   "stamina":  0,
+                   "staminaIsVar":  false,
+                   "effect":  "Questo rituale crea unâ€™illusione percepibile alla vista, allâ€™udito, allâ€™olfatto e al tatto. Niente dellâ€™illusione Ã¨ reale, ma sembra tale per chiunque entri nella sua area. Lâ€™illusione riempie un raggio di 20m e il ritualista la con- trolla attivamente e le dÃ  forma. Se lâ€™illusione simula un pericolo che attacca gli intrusi, il bersaglio deve tirare su Resistere alla Magia o su Tempra con CD 12. Chi supera la prova si rende conto che quanto accade non Ã¨ reale e non subisce danno. Chi fallisce crede che i danni siano reali e deve superare un tiro salvezza di Grinta. Il danno non puÃ² uccidere, ma puÃ² stordire.",
+                   "range":  "N/A",
+                   "duration":  "FinchÃ© non viene Dissipato",
+                   "defence":  "",
+                   "damageProperties":  {
+                                            "armorPiercing":  false,
+                                            "improvedArmorPiercing":  false,
+                                            "ablating":  false,
+                                            "crushingForce":  false,
+                                            "damageIsAblation":  false,
+                                            "stun":  0,
+                                            "damageToAllLocations":  false,
+                                            "bypassesWornArmor":  false,
+                                            "bypassesNaturalArmor":  false,
+                                            "defenseDifferenceMultiplier":  false,
+                                            "defenseMultiplierCap":  5,
+                                            "variableDamage":  false,
+                                            "effects":  [
+
+                                                        ],
+                                            "oilEffect":  "",
+                                            "silverTrait":  false,
+                                            "silverDamage":  "",
+                                            "isMeteorite":  false,
+                                            "isNonLethal":  false
+                                        },
+                   "regionProperties":  {
+                                            "createRegionFromTemplate":  false,
+                                            "behaviours":  {
+                                                               "tokenEnter":  null,
+                                                               "tokenTurnStart":  null,
+                                                               "tokenMoveWithin":  null,
+                                                               "tokenExit":  null
+                                                           }
+                                        },
+                   "attackOptions":  [
+                                         "spell"
+                                     ],
+                   "spellAttackSkill":  "ritcraft"
+               },
+    "effects":  [
+
+                ],
+    "flags":  {
+
+              },
+    "_stats":  {
+                   "coreVersion":  14,
+                   "systemId":  "TheWitcherItaNewSystem"
+               }
 }

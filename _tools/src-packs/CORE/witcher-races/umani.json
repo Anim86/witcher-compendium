@@ -3,18 +3,18 @@
     "type": "race",
     "img": "modules/witcher-compendium/assets/optimized/images/races/humano.webp",
     "system": {
-        "sourcebook": "Manuale Base, p.26",
+        "sourcebook": "MB 23",
         "perk1": {
             "name": "Affidabile",
-            "description": "<p>In un mondo che diffida dei non-umani, gli esseri umani appaiono più affidabili. Ottengono un <strong>bonus di +1 a tutte le prove di Carisma, Seduzione e Persuasione</strong> effettuate contro altri umani.</p>"
+            "description": "<p>In un mondo che non si fida dei non-umani, gli umani sembrano più affidabili. Ottengono un bonus di <strong>+1 alle prove di Carisma, Seduzione e Persuasione</strong> effettuate nei confronti di altri umani.</p>"
         },
         "perk2": {
             "name": "Ingegno",
-            "description": "<p>Gli umani sono spesso capaci di trovare soluzioni brillanti a problemi complessi. Ottengono un <strong>bonus di +1 innato all'abilità Deduzione</strong>.</p>"
+            "description": "<p>Gli umani sono intelligenti e spesso trovano soluzioni brillanti a problemi complicati. Ottengono un bonus di <strong>+1 a Deduzione</strong>.</p>"
         },
         "perk3": {
             "name": "Cocciuto",
-            "description": "<p>Un umano può attingere alle proprie riserve di coraggio per resistere. Può <strong>ripetere un tiro fallito di Coraggio o Resistere a Coercizione</strong> per un massimo di 3 volte per sessione, scegliendo il risultato migliore.</p>"
+            "description": "<p>Parte della forza superiore degli umani risiede nella loro propensione a gettarsi sempre a testa bassa, anche in situazioni dove si rischia seriamente la vita. Un umano può far appello a tutto il suo coraggio e <strong>ritirare un fallimento</strong> in una prova di Resistere a Coercizione o Coraggio (3 volte per sessione). Deve scegliere il risultato più alto dei due tiri, ma se è comunque un fallimento non può utilizzare nuovamente questa facoltà per ritirare ancora lo stesso tiro.</p>"
         },
         "perk4": {
             "name": "-",
@@ -24,8 +24,8 @@
             "north": "equal",
             "nilfgaard": "equal",
             "skellige": "equal",
-            "dolBlathanna": "equal",
-            "mahakam": "equal"
+            "dolBlathanna": "hated",
+            "mahakam": "tolerated"
         }
     },
     "effects": [],
@@ -33,7 +33,6 @@
     "_id": "racehuman0000001",
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
+        "coreVersion": 14
     }
 }

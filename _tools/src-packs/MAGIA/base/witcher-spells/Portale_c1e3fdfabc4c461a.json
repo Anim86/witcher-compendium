@@ -1,62 +1,67 @@
-{
-    "_id": "c1e3fdfabc4c461a",
-    "name": "Portale",
-    "type": "spell",
-    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag101_La Magia in The Witcher_01.webp",
-    "system": {
-        "description": "<p>Portale crea un portale sospeso di 1m per 2m entro 10m dall’incantatore. Oltrepassare il portale tele- trasporta in qualsiasi luogo l’incantatore possa ricordare. Il portale può trasferire qualsiasi cosa riesca a passarvi. Se l’incantatore pone fine al portale, mentre un bersa- glio lo sta attraversando, l’oggetto o la persona viene tranciato in due. Una persona è considerata mutilata, come per la Ferita Critica. L’incantatore può creare un portale per una destinazione che non conosce, come per Teletrasporto.</p>",
-        "quantity": "1",
-        "weight": 0,
-        "cost": 0,
-        "sourcebook": "MB 15",
-        "class": "Spells",
-        "level": "master",
-        "source": "air",
-        "stamina": 22,
-        "staminaIsVar": false,
-        "effect": "Portale crea un portale sospeso di 1m per 2m entro 10m dall’incantatore. Oltrepassare il portale tele- trasporta in qualsiasi luogo l’incantatore possa ricordare. Il portale può trasferire qualsiasi cosa riesca a passarvi. Se l’incantatore pone fine al portale, mentre un bersa- glio lo sta attraversando, l’oggetto o la persona viene tranciato in due. Una persona è considerata mutilata, come per la Ferita Critica. L’incantatore può creare un portale per una destinazione che non conosce, come per Teletrasporto.",
-        "range": "N/A",
-        "duration": "Attiva (6 RES)",
-        "defence": "Nessuna",
-        "damageProperties": {
-            "armorPiercing": false,
-            "improvedArmorPiercing": false,
-            "ablating": false,
-            "crushingForce": false,
-            "damageIsAblation": false,
-            "stun": 0,
-            "damageToAllLocations": false,
-            "bypassesWornArmor": false,
-            "bypassesNaturalArmor": false,
-            "defenseDifferenceMultiplier": false,
-            "defenseMultiplierCap": 5,
-            "variableDamage": false,
-            "effects": [],
-            "oilEffect": "",
-            "silverTrait": false,
-            "silverDamage": "",
-            "isMeteorite": false,
-            "isNonLethal": false
-        },
-        "regionProperties": {
-            "createRegionFromTemplate": false,
-            "behaviours": {
-                "tokenEnter": null,
-                "tokenTurnStart": null,
-                "tokenMoveWithin": null,
-                "tokenExit": null
-            }
-        },
-        "attackOptions": [
-            "spell"
-        ],
-        "spellAttackSkill": "spellcast"
-    },
-    "effects": [],
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
-    }
+﻿{
+    "_id":  "c1e3fdfabc4c461a",
+    "name":  "Portale",
+    "type":  "spell",
+    "img":  "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag101_La Magia in The Witcher_01.webp",
+    "system":  {
+                   "description":  "\u003cp\u003eàPàoàràtàaàlàeà àcàràeàaà àuànà àpàoàràtàaàlàeà àsàoàsàpàeàsàoà àdàià à1àmà àpàeàrà à2àmà àeànàtàràoà à1à0àmà àdàaàlàlàâà€à™àiànàcàaànàtàaàtàoàràeà.à àOàlàtàràeàpàaàsàsàaàràeà àiàlà àpàoàràtàaàlàeà àtàeàlàeà-à àtàràaàsàpàoàràtàaà àiànà àqàuàaàlàsàiàaàsàià àlàuàoàgàoà àlàâà€à™àiànàcàaànàtàaàtàoàràeà àpàoàsàsàaà àràiàcàoàràdàaàràeà.à àIàlà àpàoàràtàaàlàeà àpàuàÃà²à àtàràaàsàfàeàràiàràeà àqàuàaàlàsàiàaàsàià àcàoàsàaà àràiàeàsàcàaà àaà àpàaàsàsàaàràvàià.à àSàeà àlàâà€à™àiànàcàaànàtàaàtàoàràeà àpàoànàeà àfàiànàeà àaàlà àpàoàràtàaàlàeà,à àmàeànàtàràeà àuànà àbàeàràsàaà-à àgàlàiàoà àlàoà àsàtàaà àaàtàtàràaàvàeàràsàaànàdàoà,à àlàâà€à™àoàgàgàeàtàtàoà àoà àlàaà àpàeàràsàoànàaà àvàiàeànàeà àtàràaànàcàiàaàtàoà àiànà àdàuàeà.à àUànàaà àpàeàràsàoànàaà àÃà¨à àcàoànàsàiàdàeàràaàtàaà àmàuàtàiàlàaàtàaà,à àcàoàmàeà àpàeàrà àlàaà àFàeàràiàtàaà àCàràiàtàiàcàaà.à àLàâà€à™àiànàcàaànàtàaàtàoàràeà àpàuàÃà²à àcàràeàaàràeà àuànà àpàoàràtàaàlàeà àpàeàrà àuànàaà àdàeàsàtàiànàaàzàiàoànàeà àcàhàeà ànàoànà àcàoànàoàsàcàeà,à àcàoàmàeà àpàeàrà àTàeàlàeàtàràaàsàpàoàràtàoà.à\u003c/p\u003e",
+                   "quantity":  "1",
+                   "weight":  0,
+                   "cost":  0,
+                   "sourcebook":  "MB 103",
+                   "class":  "Mage",
+                   "level":  "master",
+                   "source":  "air",
+                   "stamina":  22,
+                   "staminaIsVar":  false,
+                   "effect":  "Portale crea un portale sospeso di 1m per 2m entro 10m dallâ€™incantatore. Oltrepassare il portale tele- trasporta in qualsiasi luogo lâ€™incantatore possa ricordare. Il portale puÃ² trasferire qualsiasi cosa riesca a passarvi. Se lâ€™incantatore pone fine al portale, mentre un bersa- glio lo sta attraversando, lâ€™oggetto o la persona viene tranciato in due. Una persona Ã¨ considerata mutilata, come per la Ferita Critica. Lâ€™incantatore puÃ² creare un portale per una destinazione che non conosce, come per Teletrasporto.",
+                   "range":  "N/A",
+                   "duration":  "Attiva (6 RES)",
+                   "defence":  "Nessuna",
+                   "damageProperties":  {
+                                            "armorPiercing":  false,
+                                            "improvedArmorPiercing":  false,
+                                            "ablating":  false,
+                                            "crushingForce":  false,
+                                            "damageIsAblation":  false,
+                                            "stun":  0,
+                                            "damageToAllLocations":  false,
+                                            "bypassesWornArmor":  false,
+                                            "bypassesNaturalArmor":  false,
+                                            "defenseDifferenceMultiplier":  false,
+                                            "defenseMultiplierCap":  5,
+                                            "variableDamage":  false,
+                                            "effects":  [
+
+                                                        ],
+                                            "oilEffect":  "",
+                                            "silverTrait":  false,
+                                            "silverDamage":  "",
+                                            "isMeteorite":  false,
+                                            "isNonLethal":  false
+                                        },
+                   "regionProperties":  {
+                                            "createRegionFromTemplate":  false,
+                                            "behaviours":  {
+                                                               "tokenEnter":  null,
+                                                               "tokenTurnStart":  null,
+                                                               "tokenMoveWithin":  null,
+                                                               "tokenExit":  null
+                                                           }
+                                        },
+                   "attackOptions":  [
+                                         "spell"
+                                     ],
+                   "spellAttackSkill":  "spellcast"
+               },
+    "effects":  [
+
+                ],
+    "flags":  {
+
+              },
+    "_stats":  {
+                   "systemId":  "TheWitcherItaNewSystem",
+                   "coreVersion":  14
+               }
 }

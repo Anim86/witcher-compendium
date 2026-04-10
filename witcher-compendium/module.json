@@ -1,236 +1,243 @@
 {
-  "id": "witcher-compendium",
-  "title": "Witcher RPG Compendium (Premium IT)",
-  "description": "Compendio premium per The Witcher TRPG (v14). Include Razze e Professioni con descrizioni complete e coerenti con lo schema di sistema.",
-  "version": "v14.1.43",
-  "authors": [
-    {
-      "name": "Zolt"
-    },
-    {
-      "name": "Anim"
-    }
-  ],
-  "compatibility": {
-    "minimum": "14",
-    "verified": "14.359"
-  },
-  "esmodules": [
-    "scripts/witcher-compendium.js",
-    "scripts/setup-folders.js"
-  ],
-  "relationships": {
-    "systems": [
-      {
-        "id": "TheWitcherItaNewSystem"
-      }
-    ],
-    "requires": [
-      {
-        "id": "TheWitcherItaNewSystem",
-        "type": "system"
-      }
-    ]
-  },
-  "packs": [
-    {
-      "name": "witcher-races",
-      "label": "Razze",
-      "path": "packs/CORE/witcher-races",
-      "type": "Item",
-      "system": "TheWitcherItaNewSystem"
-    },
-    {
-      "name": "witcher-professions",
-      "label": "Professioni",
-      "path": "packs/CORE/witcher-professions",
-      "type": "Item",
-      "system": "TheWitcherItaNewSystem"
-    },
-    {
-      "name": "witcher-skills",
-      "label": "Abilità",
-      "path": "packs/CORE/witcher-skills",
-      "type": "Item",
-      "system": "TheWitcherItaNewSystem"
-    },
-    {
-      "name": "witcher-weapons",
-      "label": "Armi",
-      "path": "packs/EQUIPAGGIAMENTO/base/witcher-weapons",
-      "type": "Item",
-      "system": "TheWitcherItaNewSystem"
-    },
-    {
-      "name": "witcher-armor",
-      "label": "Armature",
-      "path": "packs/EQUIPAGGIAMENTO/base/witcher-armor",
-      "type": "Item",
-      "system": "TheWitcherItaNewSystem"
-    },
-    {
-      "name": "witcher-equipment",
-      "label": "Oggetti Vari",
-      "path": "packs/EQUIPAGGIAMENTO/base/witcher-equipment",
-      "type": "Item",
-      "system": "TheWitcherItaNewSystem"
-    },
-    {
-      "name": "witcher-special",
-      "label": "Oggetti Witcher",
-      "path": "packs/EQUIPAGGIAMENTO/base/witcher-special",
-      "type": "Item",
-      "system": "TheWitcherItaNewSystem"
-    },
-    {
-      "name": "witcher-special-chaos",
-      "label": "Oggetti Chaos",
-      "path": "packs/EQUIPAGGIAMENTO/caos/witcher-special-chaos",
-      "type": "Item",
-      "system": "TheWitcherItaNewSystem"
-    },
-    {
-      "name": "witcher-spells",
-      "label": "Incantesimi Base",
-      "path": "packs/MAGIA/base/witcher-spells",
-      "type": "Item",
-      "system": "TheWitcherItaNewSystem"
-    },
-    {
-      "name": "witcher-rituals",
-      "label": "Rituali Base",
-      "path": "packs/MAGIA/base/witcher-rituals",
-      "type": "Item",
-      "system": "TheWitcherItaNewSystem"
-    },
-    {
-      "name": "witcher-signs",
-      "label": "Segni Witcher",
-      "path": "packs/MAGIA/base/witcher-signs",
-      "type": "Item",
-      "system": "TheWitcherItaNewSystem"
-    },
-    {
-      "name": "witcher-spells-chaos",
-      "label": "Incantesimi Chaos",
-      "path": "packs/MAGIA/caos/witcher-spells-chaos",
-      "type": "Item",
-      "system": "TheWitcherItaNewSystem"
-    },
-    {
-      "name": "witcher-rituals-chaos",
-      "label": "Rituali Chaos",
-      "path": "packs/MAGIA/caos/witcher-rituals-chaos",
-      "type": "Item",
-      "system": "TheWitcherItaNewSystem"
-    },
-    {
-      "name": "witcher-signs-chaos",
-      "label": "Segni Chaos",
-      "path": "packs/MAGIA/caos/witcher-signs-chaos",
-      "type": "Item",
-      "system": "TheWitcherItaNewSystem"
-    },
-    {
-      "name": "witcher-runes",
-      "label": "Rune, Glifi e Reliquie",
-      "path": "packs/MAGIA/base/witcher-runes",
-      "type": "Item",
-      "system": "TheWitcherItaNewSystem"
-    },
-    {
-      "name": "witcher-hexes",
-      "label": "Fatture Chaos",
-      "path": "packs/MAGIA/caos/witcher-hexes",
-      "type": "Item",
-      "system": "TheWitcherItaNewSystem"
-    },
-    {
-      "name": "witcher-invocations",
-      "label": "Invocazioni Chaos",
-      "path": "packs/MAGIA/caos/witcher-invocations",
-      "type": "Item",
-      "system": "TheWitcherItaNewSystem"
-    },
-    {
-      "name": "witcher-gifts",
-      "label": "Doni Magici",
-      "path": "packs/MAGIA/caos/witcher-gifts",
-      "type": "Item",
-      "system": "TheWitcherItaNewSystem"
-    },
-    {
-      "name": "witcher-goetia",
-      "label": "Goezia",
-      "path": "packs/MAGIA/caos/witcher-goetia",
-      "type": "Item",
-      "system": "TheWitcherItaNewSystem"
-    },
-    {
-      "name": "witcher-components",
-      "label": "Componenti",
-      "path": "packs/CRAFTING/base/witcher-components",
-      "type": "Item",
-      "system": "TheWitcherItaNewSystem"
-    },
-    {
-      "name": "witcher-schematics",
-      "label": "Schemi",
-      "path": "packs/CRAFTING/base/witcher-schematics",
-      "type": "Item",
-      "system": "TheWitcherItaNewSystem"
-    },
-    {
-      "name": "witcher-alchemy",
-      "label": "Alchimia",
-      "path": "packs/CRAFTING/base/witcher-alchemy",
-      "type": "Item",
-      "system": "TheWitcherItaNewSystem"
-    },
-    {
-      "name": "witcher-mutations",
-      "label": "Mutageni",
-      "path": "packs/CRAFTING/base/witcher-mutations",
-      "type": "Item",
-      "system": "TheWitcherItaNewSystem"
-    },
-    {
-      "name": "witcher-monsters",
-      "label": "Bestiario Base",
-      "path": "packs/BESTIARIO/PNG/base/witcher-monsters",
-      "type": "Actor",
-      "system": "TheWitcherItaNewSystem"
-    },
-    {
-      "name": "witcher-monsters-chaos",
-      "label": "Bestiario Chaos",
-      "path": "packs/BESTIARIO/PNG/caos/witcher-monsters-chaos",
-      "type": "Actor",
-      "system": "TheWitcherItaNewSystem"
-    },
-    {
-      "name": "witcher-transports",
-      "label": "Trasporti",
-      "path": "packs/EQUIPAGGIAMENTO/base/witcher-transports",
-      "type": "Item",
-      "system": "TheWitcherItaNewSystem"
-    },
-    {
-      "name": "witcher-trophies",
-      "label": "Trofei",
-      "path": "packs/EQUIPAGGIAMENTO/caos/witcher-trophies",
-      "type": "Item",
-      "system": "TheWitcherItaNewSystem"
-    }
-  ],
-  "languages": [
-    {
-      "lang": "it",
-      "name": "Italiano",
-      "path": "languages/it.json"
-    }
-  ],
-  "url": "https://github.com/Anim86/witcher-compendium",
-  "manifest": "https://raw.githubusercontent.com/Anim86/witcher-compendium/main/witcher-compendium/module.json",
-  "download": "https://github.com/Anim86/witcher-compendium/releases/download/v14.1.43/witcher-compendium-v14.1.43.zip"
+    "id":  "witcher-compendium",
+    "title":  "Witcher RPG Compendium (Premium IT)",
+    "description":  "Compendio premium per The Witcher TRPG (v14). Include Razze e Professioni con descrizioni complete e coerenti con lo schema di sistema.",
+    "version":  "14.1.44",
+    "authors":  [
+                    {
+                        "name":  "Zolt"
+                    },
+                    {
+                        "name":  "Anim"
+                    }
+                ],
+    "compatibility":  {
+                          "minimum":  "14",
+                          "verified":  "14.359"
+                      },
+    "esmodules":  [
+                      "scripts/witcher-compendium.js",
+                      "scripts/setup-folders.js"
+                  ],
+    "relationships":  {
+                          "systems":  [
+                                          {
+                                              "id":  "TheWitcherItaNewSystem"
+                                          }
+                                      ],
+                          "requires":  [
+                                           {
+                                               "id":  "TheWitcherItaNewSystem",
+                                               "type":  "system"
+                                           }
+                                       ]
+                      },
+    "packs":  [
+                  {
+                      "name":  "witcher-races",
+                      "label":  "Razze",
+                      "path":  "packs/CORE/witcher-races",
+                      "type":  "Item",
+                      "system":  "TheWitcherItaNewSystem"
+                  },
+                  {
+                      "name":  "witcher-professions",
+                      "label":  "Professioni",
+                      "path":  "packs/CORE/witcher-professions",
+                      "type":  "Item",
+                      "system":  "TheWitcherItaNewSystem"
+                  },
+                  {
+                      "name":  "witcher-skills",
+                      "label":  "Abilità",
+                      "path":  "packs/CORE/witcher-skills",
+                      "type":  "Item",
+                      "system":  "TheWitcherItaNewSystem"
+                  },
+                  {
+                      "name":  "witcher-weapons",
+                      "label":  "Armi",
+                      "path":  "packs/EQUIPAGGIAMENTO/base/witcher-weapons",
+                      "type":  "Item",
+                      "system":  "TheWitcherItaNewSystem"
+                  },
+                  {
+                      "name":  "witcher-armor",
+                      "label":  "Armature",
+                      "path":  "packs/EQUIPAGGIAMENTO/base/witcher-armor",
+                      "type":  "Item",
+                      "system":  "TheWitcherItaNewSystem"
+                  },
+                  {
+                      "name":  "witcher-equipment",
+                      "label":  "Oggetti Vari",
+                      "path":  "packs/EQUIPAGGIAMENTO/base/witcher-equipment",
+                      "type":  "Item",
+                      "system":  "TheWitcherItaNewSystem"
+                  },
+                  {
+                      "name":  "witcher-special",
+                      "label":  "Oggetti Witcher",
+                      "path":  "packs/EQUIPAGGIAMENTO/base/witcher-special",
+                      "type":  "Item",
+                      "system":  "TheWitcherItaNewSystem"
+                  },
+                  {
+                      "name":  "witcher-special-chaos",
+                      "label":  "Oggetti Chaos",
+                      "path":  "packs/EQUIPAGGIAMENTO/caos/witcher-special-chaos",
+                      "type":  "Item",
+                      "system":  "TheWitcherItaNewSystem"
+                  },
+                  {
+                      "name":  "witcher-spells",
+                      "label":  "Incantesimi Base",
+                      "path":  "packs/MAGIA/base/witcher-spells",
+                      "type":  "Item",
+                      "system":  "TheWitcherItaNewSystem"
+                  },
+                  {
+                      "name":  "witcher-rituals",
+                      "label":  "Rituali Base",
+                      "path":  "packs/MAGIA/base/witcher-rituals",
+                      "type":  "Item",
+                      "system":  "TheWitcherItaNewSystem"
+                  },
+                  {
+                      "name":  "witcher-signs",
+                      "label":  "Segni Witcher",
+                      "path":  "packs/MAGIA/base/witcher-signs",
+                      "type":  "Item",
+                      "system":  "TheWitcherItaNewSystem"
+                  },
+                  {
+                      "name":  "witcher-spells-chaos",
+                      "label":  "Incantesimi Chaos",
+                      "path":  "packs/MAGIA/caos/witcher-spells-chaos",
+                      "type":  "Item",
+                      "system":  "TheWitcherItaNewSystem"
+                  },
+                  {
+                      "name":  "witcher-rituals-chaos",
+                      "label":  "Rituali Chaos",
+                      "path":  "packs/MAGIA/caos/witcher-rituals-chaos",
+                      "type":  "Item",
+                      "system":  "TheWitcherItaNewSystem"
+                  },
+                  {
+                      "name":  "witcher-signs-chaos",
+                      "label":  "Segni Chaos",
+                      "path":  "packs/MAGIA/caos/witcher-signs-chaos",
+                      "type":  "Item",
+                      "system":  "TheWitcherItaNewSystem"
+                  },
+                  {
+                      "name":  "witcher-runes",
+                      "label":  "Rune, Glifi e Reliquie",
+                      "path":  "packs/MAGIA/base/witcher-runes",
+                      "type":  "Item",
+                      "system":  "TheWitcherItaNewSystem"
+                  },
+                  {
+                      "name":  "witcher-hexes-base",
+                      "label":  "Fatture Base",
+                      "path":  "packs/MAGIA/base/witcher-hexes-base",
+                      "type":  "Item",
+                      "system":  "TheWitcherItaNewSystem"
+                  },
+                  {
+                      "name":  "witcher-hexes",
+                      "label":  "Fatture Chaos",
+                      "path":  "packs/MAGIA/caos/witcher-hexes",
+                      "type":  "Item",
+                      "system":  "TheWitcherItaNewSystem"
+                  },
+                  {
+                      "name":  "witcher-invocations",
+                      "label":  "Invocazioni Chaos",
+                      "path":  "packs/MAGIA/caos/witcher-invocations",
+                      "type":  "Item",
+                      "system":  "TheWitcherItaNewSystem"
+                  },
+                  {
+                      "name":  "witcher-gifts",
+                      "label":  "Doni Magici",
+                      "path":  "packs/MAGIA/caos/witcher-gifts",
+                      "type":  "Item",
+                      "system":  "TheWitcherItaNewSystem"
+                  },
+                  {
+                      "name":  "witcher-goetia",
+                      "label":  "Goezia",
+                      "path":  "packs/MAGIA/caos/witcher-goetia",
+                      "type":  "Item",
+                      "system":  "TheWitcherItaNewSystem"
+                  },
+                  {
+                      "name":  "witcher-components",
+                      "label":  "Componenti",
+                      "path":  "packs/CRAFTING/base/witcher-components",
+                      "type":  "Item",
+                      "system":  "TheWitcherItaNewSystem"
+                  },
+                  {
+                      "name":  "witcher-schematics",
+                      "label":  "Schemi",
+                      "path":  "packs/CRAFTING/base/witcher-schematics",
+                      "type":  "Item",
+                      "system":  "TheWitcherItaNewSystem"
+                  },
+                  {
+                      "name":  "witcher-alchemy",
+                      "label":  "Alchimia",
+                      "path":  "packs/CRAFTING/base/witcher-alchemy",
+                      "type":  "Item",
+                      "system":  "TheWitcherItaNewSystem"
+                  },
+                  {
+                      "name":  "witcher-mutations",
+                      "label":  "Mutageni",
+                      "path":  "packs/CRAFTING/base/witcher-mutations",
+                      "type":  "Item",
+                      "system":  "TheWitcherItaNewSystem"
+                  },
+                  {
+                      "name":  "witcher-monsters",
+                      "label":  "Bestiario Base",
+                      "path":  "packs/BESTIARIO/PNG/base/witcher-monsters",
+                      "type":  "Actor",
+                      "system":  "TheWitcherItaNewSystem"
+                  },
+                  {
+                      "name":  "witcher-monsters-chaos",
+                      "label":  "Bestiario Chaos",
+                      "path":  "packs/BESTIARIO/PNG/caos/witcher-monsters-chaos",
+                      "type":  "Actor",
+                      "system":  "TheWitcherItaNewSystem"
+                  },
+                  {
+                      "name":  "witcher-transports",
+                      "label":  "Trasporti",
+                      "path":  "packs/EQUIPAGGIAMENTO/base/witcher-transports",
+                      "type":  "Item",
+                      "system":  "TheWitcherItaNewSystem"
+                  },
+                  {
+                      "name":  "witcher-trophies",
+                      "label":  "Trofei",
+                      "path":  "packs/EQUIPAGGIAMENTO/caos/witcher-trophies",
+                      "type":  "Item",
+                      "system":  "TheWitcherItaNewSystem"
+                  }
+              ],
+    "languages":  [
+                      {
+                          "lang":  "it",
+                          "name":  "Italiano",
+                          "path":  "languages/it.json"
+                      }
+                  ],
+    "url":  "https://github.com/Anim86/witcher-compendium",
+    "manifest":  "https://raw.githubusercontent.com/Anim86/witcher-compendium/main/witcher-compendium/module.json",
+    "download":  "https://github.com/Anim86/witcher-compendium/releases/download/v14.1.43/witcher-compendium-v14.1.43.zip"
 }

@@ -1,62 +1,67 @@
-{
-    "_id": "722238936d204bf7",
-    "name": "Dissipazione",
-    "type": "spell",
-    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag101_La Magia in The Witcher_01.webp",
-    "system": {
-        "description": "<p>Dissipazione permette di porre fine a un incan- tesimo/rituale/fattura entro il raggio dell’incantesimo. Quest’incantesimo può cancellare la magia che abbia una durata e può essere lanciato come Azione Difensiva per bloccare attacchi magici, con o senza componenti fi- siche. Per cancellare un effetto magico, l’incantatore deve spendere metà dei punti di Resistenza spesi per lanciare la magia ed effettuare una prova di Lanciare Incantesimi superiore al tiro ottenuto dall’altro incantatore.</p>",
-        "quantity": "1",
-        "weight": 0,
-        "cost": 0,
-        "sourcebook": "MB 15",
-        "class": "Spells",
-        "level": "novice",
-        "source": "earth",
-        "stamina": 0,
-        "staminaIsVar": true,
-        "effect": "Dissipazione permette di porre fine a un incan- tesimo/rituale/fattura entro il raggio dell’incantesimo. Quest’incantesimo può cancellare la magia che abbia una durata e può essere lanciato come Azione Difensiva per bloccare attacchi magici, con o senza componenti fi- siche. Per cancellare un effetto magico, l’incantatore deve spendere metà dei punti di Resistenza spesi per lanciare la magia ed effettuare una prova di Lanciare Incantesimi superiore al tiro ottenuto dall’altro incantatore.",
-        "range": "10m",
-        "duration": "Istantanea",
-        "defence": "Lanciare Incantesimi",
-        "damageProperties": {
-            "armorPiercing": false,
-            "improvedArmorPiercing": false,
-            "ablating": false,
-            "crushingForce": false,
-            "damageIsAblation": false,
-            "stun": 0,
-            "damageToAllLocations": false,
-            "bypassesWornArmor": false,
-            "bypassesNaturalArmor": false,
-            "defenseDifferenceMultiplier": false,
-            "defenseMultiplierCap": 5,
-            "variableDamage": false,
-            "effects": [],
-            "oilEffect": "",
-            "silverTrait": false,
-            "silverDamage": "",
-            "isMeteorite": false,
-            "isNonLethal": false
-        },
-        "regionProperties": {
-            "createRegionFromTemplate": false,
-            "behaviours": {
-                "tokenEnter": null,
-                "tokenTurnStart": null,
-                "tokenMoveWithin": null,
-                "tokenExit": null
-            }
-        },
-        "attackOptions": [
-            "spell"
-        ],
-        "spellAttackSkill": "spellcast"
-    },
-    "effects": [],
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
-    }
+﻿{
+    "_id":  "722238936d204bf7",
+    "name":  "Dissipazione",
+    "type":  "spell",
+    "img":  "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag101_La Magia in The Witcher_01.webp",
+    "system":  {
+                   "description":  "\u003cp\u003eàDàiàsàsàiàpàaàzàiàoànàeà àpàeàràmàeàtàtàeà àdàià àpàoàràràeà àfàiànàeà àaà àuànà àiànàcàaànà-à àtàeàsàiàmàoà/àràiàtàuàaàlàeà/àfàaàtàtàuàràaà àeànàtàràoà àiàlà àràaàgàgàiàoà àdàeàlàlàâà€à™àiànàcàaànàtàeàsàiàmàoà.à àQàuàeàsàtàâà€à™àiànàcàaànàtàeàsàiàmàoà àpàuàÃà²à àcàaànàcàeàlàlàaàràeà àlàaà àmàaàgàiàaà àcàhàeà àaàbàbàiàaà àuànàaà àdàuàràaàtàaà àeà àpàuàÃà²à àeàsàsàeàràeà àlàaànàcàiàaàtàoà àcàoàmàeà àAàzàiàoànàeà àDàiàfàeànàsàiàvàaà àpàeàrà àbàlàoàcàcàaàràeà àaàtàtàaàcàcàhàià àmàaàgàiàcàià,à àcàoànà àoà àsàeànàzàaà àcàoàmàpàoànàeànàtàià àfàià-à àsàiàcàhàeà.à àPàeàrà àcàaànàcàeàlàlàaàràeà àuànà àeàfàfàeàtàtàoà àmàaàgàiàcàoà,à àlàâà€à™àiànàcàaànàtàaàtàoàràeà àdàeàvàeà àsàpàeànàdàeàràeà àmàeàtàÃà à àdàeàià àpàuànàtàià àdàià àRàeàsàiàsàtàeànàzàaà àsàpàeàsàià àpàeàrà àlàaànàcàiàaàràeà àlàaà àmàaàgàiàaà àeàdà àeàfàfàeàtàtàuàaàràeà àuànàaà àpàràoàvàaà àdàià àLàaànàcàiàaàràeà àIànàcàaànàtàeàsàiàmàià àsàuàpàeàràiàoàràeà àaàlà àtàiàràoà àoàtàtàeànàuàtàoà àdàaàlàlàâà€à™àaàlàtàràoà àiànàcàaànàtàaàtàoàràeà.à\u003c/p\u003e",
+                   "quantity":  "1",
+                   "weight":  0,
+                   "cost":  0,
+                   "sourcebook":  "MB 103",
+                   "class":  "Mage",
+                   "level":  "novice",
+                   "source":  "earth",
+                   "stamina":  0,
+                   "staminaIsVar":  true,
+                   "effect":  "Dissipazione permette di porre fine a un incan- tesimo/rituale/fattura entro il raggio dellâ€™incantesimo. Questâ€™incantesimo puÃ² cancellare la magia che abbia una durata e puÃ² essere lanciato come Azione Difensiva per bloccare attacchi magici, con o senza componenti fi- siche. Per cancellare un effetto magico, lâ€™incantatore deve spendere metÃ  dei punti di Resistenza spesi per lanciare la magia ed effettuare una prova di Lanciare Incantesimi superiore al tiro ottenuto dallâ€™altro incantatore.",
+                   "range":  "10m",
+                   "duration":  "Istantanea",
+                   "defence":  "Lanciare Incantesimi",
+                   "damageProperties":  {
+                                            "armorPiercing":  false,
+                                            "improvedArmorPiercing":  false,
+                                            "ablating":  false,
+                                            "crushingForce":  false,
+                                            "damageIsAblation":  false,
+                                            "stun":  0,
+                                            "damageToAllLocations":  false,
+                                            "bypassesWornArmor":  false,
+                                            "bypassesNaturalArmor":  false,
+                                            "defenseDifferenceMultiplier":  false,
+                                            "defenseMultiplierCap":  5,
+                                            "variableDamage":  false,
+                                            "effects":  [
+
+                                                        ],
+                                            "oilEffect":  "",
+                                            "silverTrait":  false,
+                                            "silverDamage":  "",
+                                            "isMeteorite":  false,
+                                            "isNonLethal":  false
+                                        },
+                   "regionProperties":  {
+                                            "createRegionFromTemplate":  false,
+                                            "behaviours":  {
+                                                               "tokenEnter":  null,
+                                                               "tokenTurnStart":  null,
+                                                               "tokenMoveWithin":  null,
+                                                               "tokenExit":  null
+                                                           }
+                                        },
+                   "attackOptions":  [
+                                         "spell"
+                                     ],
+                   "spellAttackSkill":  "spellcast"
+               },
+    "effects":  [
+
+                ],
+    "flags":  {
+
+              },
+    "_stats":  {
+                   "systemId":  "TheWitcherItaNewSystem",
+                   "coreVersion":  14
+               }
 }

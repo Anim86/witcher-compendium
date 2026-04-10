@@ -1,62 +1,67 @@
-{
-    "_id": "4464e54ced534adb",
-    "name": "Terremoto di Stammelford",
-    "type": "spell",
-    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag101_La Magia in The Witcher_01.webp",
-    "system": {
-        "description": "<p>Terremoto di Stammelford consente di dissesta- re il suolo in un’area di 10m, creando un terreno frasta- gliato e franoso che impone ad ogni bersaglio nell’area -2 Riflessi e -3 MAN. Piccole costruzioni sul terreno infranto hanno il 10% di probabilità di crollare. Ogni round, ogni bersaglio nell’area deve superare un tiro di Atletica o sprofondare nel terreno instabile, e iniziare a soffocare finché non riesce ad uscire superando un’altra prova di Atletica. Esaurita la durata dell’incantesimo, il terreno cessa di franare, ma resta dissestato.</p>",
-        "quantity": "1",
-        "weight": 0,
-        "cost": 0,
-        "sourcebook": "MB 15",
-        "class": "Spells",
-        "level": "journeyman",
-        "source": "mixedElements",
-        "stamina": 12,
-        "staminaIsVar": false,
-        "effect": "Terremoto di Stammelford consente di dissesta- re il suolo in un’area di 10m, creando un terreno frasta- gliato e franoso che impone ad ogni bersaglio nell’area -2 Riflessi e -3 MAN. Piccole costruzioni sul terreno infranto hanno il 10% di probabilità di crollare. Ogni round, ogni bersaglio nell’area deve superare un tiro di Atletica o sprofondare nel terreno instabile, e iniziare a soffocare finché non riesce ad uscire superando un’altra prova di Atletica. Esaurita la durata dell’incantesimo, il terreno cessa di franare, ma resta dissestato.",
-        "range": "30m",
-        "duration": "1d10 Round",
-        "defence": "Schivare",
-        "damageProperties": {
-            "armorPiercing": false,
-            "improvedArmorPiercing": false,
-            "ablating": false,
-            "crushingForce": false,
-            "damageIsAblation": false,
-            "stun": 0,
-            "damageToAllLocations": false,
-            "bypassesWornArmor": false,
-            "bypassesNaturalArmor": false,
-            "defenseDifferenceMultiplier": false,
-            "defenseMultiplierCap": 5,
-            "variableDamage": false,
-            "effects": [],
-            "oilEffect": "",
-            "silverTrait": false,
-            "silverDamage": "",
-            "isMeteorite": false,
-            "isNonLethal": false
-        },
-        "regionProperties": {
-            "createRegionFromTemplate": false,
-            "behaviours": {
-                "tokenEnter": null,
-                "tokenTurnStart": null,
-                "tokenMoveWithin": null,
-                "tokenExit": null
-            }
-        },
-        "attackOptions": [
-            "spell"
-        ],
-        "spellAttackSkill": "spellcast"
-    },
-    "effects": [],
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
-    }
+﻿{
+    "_id":  "4464e54ced534adb",
+    "name":  "Terremoto di Stammelford",
+    "type":  "spell",
+    "img":  "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag101_La Magia in The Witcher_01.webp",
+    "system":  {
+                   "description":  "\u003cp\u003eàTàeàràràeàmàoàtàoà àdàià àSàtàaàmàmàeàlàfàoàràdà àcàoànàsàeànàtàeà àdàià àdàiàsàsàeàsàtàaà-à àràeà àiàlà àsàuàoàlàoà àiànà àuànàâà€à™àaàràeàaà àdàià à1à0àmà,à àcàràeàaànàdàoà àuànà àtàeàràràeànàoà àfàràaàsàtàaà-à àgàlàiàaàtàoà àeà àfàràaànàoàsàoà àcàhàeà àiàmàpàoànàeà àaàdà àoàgànàià àbàeàràsàaàgàlàiàoà ànàeàlàlàâà€à™àaàràeàaà à-à2à àRàiàfàlàeàsàsàià àeà à-à3à àMàAàNà.à àPàiàcàcàoàlàeà àcàoàsàtàràuàzàiàoànàià àsàuàlà àtàeàràràeànàoà àiànàfàràaànàtàoà àhàaànànàoà àiàlà à1à0à%à àdàià àpàràoàbàaàbàiàlàiàtàÃà à àdàià àcàràoàlàlàaàràeà.à àOàgànàià àràoàuànàdà,à àoàgànàià àbàeàràsàaàgàlàiàoà ànàeàlàlàâà€à™àaàràeàaà àdàeàvàeà àsàuàpàeàràaàràeà àuànà àtàiàràoà àdàià àAàtàlàeàtàiàcàaà àoà àsàpàràoàfàoànàdàaàràeà ànàeàlà àtàeàràràeànàoà àiànàsàtàaàbàiàlàeà,à àeà àiànàiàzàiàaàràeà àaà àsàoàfàfàoàcàaàràeà àfàiànàcàhàÃà©à ànàoànà àràiàeàsàcàeà àaàdà àuàsàcàiàràeà àsàuàpàeàràaànàdàoà àuànàâà€à™àaàlàtàràaà àpàràoàvàaà àdàià àAàtàlàeàtàiàcàaà.à àEàsàaàuàràiàtàaà àlàaà àdàuàràaàtàaà àdàeàlàlàâà€à™àiànàcàaànàtàeàsàiàmàoà,à àiàlà àtàeàràràeànàoà àcàeàsàsàaà àdàià àfàràaànàaàràeà,à àmàaà àràeàsàtàaà àdàiàsàsàeàsàtàaàtàoà.à\u003c/p\u003e",
+                   "quantity":  "1",
+                   "weight":  0,
+                   "cost":  0,
+                   "sourcebook":  "MB 103",
+                   "class":  "Mage",
+                   "level":  "journeyman",
+                   "source":  "mixedElements",
+                   "stamina":  12,
+                   "staminaIsVar":  false,
+                   "effect":  "Terremoto di Stammelford consente di dissesta- re il suolo in unâ€™area di 10m, creando un terreno frasta- gliato e franoso che impone ad ogni bersaglio nellâ€™area -2 Riflessi e -3 MAN. Piccole costruzioni sul terreno infranto hanno il 10% di probabilitÃ  di crollare. Ogni round, ogni bersaglio nellâ€™area deve superare un tiro di Atletica o sprofondare nel terreno instabile, e iniziare a soffocare finchÃ© non riesce ad uscire superando unâ€™altra prova di Atletica. Esaurita la durata dellâ€™incantesimo, il terreno cessa di franare, ma resta dissestato.",
+                   "range":  "30m",
+                   "duration":  "1d10 Round",
+                   "defence":  "Schivare",
+                   "damageProperties":  {
+                                            "armorPiercing":  false,
+                                            "improvedArmorPiercing":  false,
+                                            "ablating":  false,
+                                            "crushingForce":  false,
+                                            "damageIsAblation":  false,
+                                            "stun":  0,
+                                            "damageToAllLocations":  false,
+                                            "bypassesWornArmor":  false,
+                                            "bypassesNaturalArmor":  false,
+                                            "defenseDifferenceMultiplier":  false,
+                                            "defenseMultiplierCap":  5,
+                                            "variableDamage":  false,
+                                            "effects":  [
+
+                                                        ],
+                                            "oilEffect":  "",
+                                            "silverTrait":  false,
+                                            "silverDamage":  "",
+                                            "isMeteorite":  false,
+                                            "isNonLethal":  false
+                                        },
+                   "regionProperties":  {
+                                            "createRegionFromTemplate":  false,
+                                            "behaviours":  {
+                                                               "tokenEnter":  null,
+                                                               "tokenTurnStart":  null,
+                                                               "tokenMoveWithin":  null,
+                                                               "tokenExit":  null
+                                                           }
+                                        },
+                   "attackOptions":  [
+                                         "spell"
+                                     ],
+                   "spellAttackSkill":  "spellcast"
+               },
+    "effects":  [
+
+                ],
+    "flags":  {
+
+              },
+    "_stats":  {
+                   "systemId":  "TheWitcherItaNewSystem",
+                   "coreVersion":  14
+               }
 }

@@ -1,10 +1,12 @@
 {
     "_id": "7649b4cf0388b8eb",
-    "name": "Tiro con l'Arco",
+    "name": "Archi",
     "type": "skill",
     "img": "icons/svg/skill.svg",
     "system": {
         "attribute": "dex",
+        "description": "<p>Tirare con l’arco. Permette di incoccare bene e scagliare frecce con grande mira contro bersagli anche distanti.</p>",
+        "sourcebook": "MB 55",
         "value": 0,
         "label": "",
         "isOpened": false,
@@ -23,7 +25,6 @@
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
+        "coreVersion": 14
     }
 }

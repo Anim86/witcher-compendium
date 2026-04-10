@@ -3,18 +3,18 @@
     "type": "race",
     "img": "modules/witcher-compendium/assets/optimized/images/races/nano.webp",
     "system": {
-        "sourcebook": "Manuale Base, p.25",
+        "sourcebook": "MB 23",
         "perk1": {
             "name": "Coriaceo",
-            "description": "<p>La pelle e la tempra dei nani sono incredibilmente resistenti. Possiedono una <strong>capacità di blocco naturale di 2 (PR)</strong> in ogni locazione del corpo, che non può essere ridotta da normali attacchi ed è cumulabile con le armature indossate.</p>"
+            "description": "<p>Trascorrendo molto tempo nelle miniere e nelle montagne, i nani hanno una pelle coriacea di natura. Pertanto la loro pelle ha una naturale <strong>capacità di blocco (PR) di 2</strong>. Questa PR non può essere ridotta da attacchi di armi o danno ablativo ed è cumulativa alle normali armature.</p>"
         },
         "perk2": {
             "name": "Forte",
-            "description": "<p>Grazie alla loro struttura massiccia, i nani ottengono un <strong>bonus di +1 innato all'abilità Prestanza</strong> e aumentano il loro valore di <strong>Ingombro massimo di +25</strong>.</p>"
+            "description": "<p>Grazie alla loro tozza struttura e alla propensione a lavori duri e faticosi, i nani ottengono un bonus di <strong>+1 all’abilità Prestanza</strong> e aumentano il valore d’<strong>Ingombro di 25</strong>.</p>"
         },
         "perk3": {
             "name": "Occhio da Artigiano",
-            "description": "<p>Nati tra il commercio e la manifattura, i nani sanno valutare la qualità. Ottengono un <strong>bonus di +1 innato all'abilità Commercio</strong>.</p>"
+            "description": "<p>Grazie al loro occhio per i dettagli e le valutazioni, è difficile gabbare un nano. Ottengono un bonus di <strong>+1 all’abilità Commercio</strong>.</p>"
         },
         "perk4": {
             "name": "-",
@@ -22,9 +22,9 @@
         },
         "socialStanding": {
             "north": "tolerated",
-            "nilfgaard": "tolerated",
-            "skellige": "tolerated",
-            "dolBlathanna": "tolerated",
+            "nilfgaard": "equal",
+            "skellige": "equal",
+            "dolBlathanna": "equal",
             "mahakam": "equal"
         }
     },
@@ -33,7 +33,6 @@
     "_id": "racedwarf0000001",
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
+        "coreVersion": 14
     }
 }

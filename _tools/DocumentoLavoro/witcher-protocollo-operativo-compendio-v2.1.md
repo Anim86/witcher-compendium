@@ -1,6 +1,6 @@
 # WITCHER COMPENDIUM — PROTOCOLLO OPERATIVO COMPLETO
 ## Documento di riferimento per LLM / AI Builder
-### Versione: 2.2 — Data: 10 Aprile 2026 ore 14:20
+### Versione: 2.3 — Data: 10 Aprile 2026 ore 16:15
 ### Autore: Perplexity (Strategist) per il team Manuel + Antigravity
 
 ---
@@ -402,36 +402,35 @@ Dopo ogni deploy, Manuel verifica a campione:
 
 | Pack | Entries | Stato | Note |
 |---|---|---|---|
-| witcher-weapons | 44 | ✅ COMPLETO | 35 armi + 9 munizioni |
+| witcher-weapons | 44 | ✅ COMPLETO | |
 | witcher-armor | 35 | ✅ COMPLETO | |
-| witcher-equipment | 100 | ✅ COMPLETO | Rigenerazione totale |
+| witcher-equipment | 100 | ✅ COMPLETO | |
 | witcher-special | 37 | ✅ COMPLETO | |
 | witcher-special-chaos | 19 | ✅ COMPLETO | |
 | witcher-components | 52 | ✅ COMPLETO | |
-| witcher-schematics | 109 | ✅ COMPLETO | cost/weight 0 |
-| witcher-alchemy | 96 | ✅ COMPLETO | Icone 2 livelli |
-| witcher-monsters | 19 | ✅ COMPLETO | Stats corrette vs MB, sourcebook fixato |
-| witcher-monsters-chaos | 7 | ✅ COMPLETO | Stats corrette vs TC |
-| witcher-npc | 24 | ✅ COMPLETO | 8 PNG Base + 16 PNG Caos, stats a 0 |
-| witcher-trophies | 35 | ✅ COMPLETO | MB 126-127 |
-| witcher-transports | 18 | ✅ COMPLETO | 9 trasporti + 9 equipaggiamenti, MB 93 |
-| witcher-races | 6 | ⏳ DA AUDITARE | |
-| witcher-professions | 11 | ⏳ DA AUDITARE | |
-| witcher-skills | ~20 | ⏳ DA AUDITARE | |
-| witcher-spells | 101 | ⏳ DA AUDITARE | |
-| witcher-rituals | 15 | ⏳ DA AUDITARE | |
-| witcher-spells-chaos | 82 | ⏳ DA AUDITARE | |
-| witcher-rituals-chaos | 16 | ⏳ DA AUDITARE | |
-| **NUOVI PACK OGGI** | | | **Creati il 10/04/2026** |
+| witcher-schematics | 109 | ✅ COMPLETO | |
+| witcher-alchemy | 96 | ✅ COMPLETO | |
+| witcher-monsters | 19 | ✅ COMPLETO | |
+| witcher-monsters-chaos | 7 | ✅ COMPLETO | |
+| witcher-npc | 24 | ✅ COMPLETO | |
+| witcher-trophies | 35 | ✅ COMPLETO | |
+| witcher-transports | 18 | ✅ COMPLETO | |
 | witcher-signs | 10 | ✅ COMPLETO | MB 114-115 |
 | witcher-signs-chaos | 2 | ✅ COMPLETO | TC 101 |
 | witcher-hexes | 6 | ✅ COMPLETO | TC 105-106 |
+| witcher-hexes-base | 6 | ✅ COMPLETO | NUOVO — MB 122-124 |
 | witcher-invocations | 33 | ✅ COMPLETO | MB+TC |
-| witcher-mutations | 14 | ✅ COMPLETO | MB 251-252 + TC 134-138 |
-| witcher-gifts | 14 | ✅ COMPLETO | TC 74-75 |
-| witcher-goetia | 5 | ✅ COMPLETO | TC 139-149 |
-| witcher-runes | 32 | ✅ COMPLETO | MB 253-266 |
-| **TOTALE ODRIERN** | **116** | ✅ | **Puntata 10 Apr 2026** |
+| witcher-mutations | 14 | ✅ COMPLETO | |
+| witcher-gifts | 14 | ✅ COMPLETO | |
+| witcher-goetia | 5 | ✅ COMPLETO | |
+| witcher-runes | 32 | ✅ COMPLETO | |
+| witcher-spells | 65 | ✅ COMPLETO | era 103, rimossi duplicati |
+| witcher-spells-chaos | 52 | ✅ COMPLETO | era 85, rimossi duplicati |
+| witcher-rituals | 15 | ✅ COMPLETO | era 10, +5 aggiunti MB |
+| witcher-rituals-chaos | 10 | ✅ COMPLETO | bonifica + tabula rasa |
+| witcher-races | 4 | ✅ COMPLETO | solo razze giocabili MB |
+| witcher-professions | 10 | ✅ COMPLETO | +Druido TC, Prete upgrade TC |
+| witcher-skills | ~60 | ✅ COMPLETO | +20 nuove abilità TC |
 
 **Versione modulo corrente: v14.1.25** — verificare prima del bump
 
@@ -550,13 +549,14 @@ Documentazione dettagliata dei processi di creazione e verifica:
 
 ## 13. PROSSIMI STEP
 
-1. ⏳ **BUILD + DEPLOY** — Compilare e testare i 116 nuovi entries in Foundry VTT per validare la struttura JSON.
-2. 🔴 **AUDIT PACK ESISTENTI** — Verificare e correggere i 7 pack già presenti nel compendio sviluppati per v13 (Races, Professions, Skills, Spells, Rituals).
-3. 🔴 **IMMAGINI** — Assegnare immagini specifiche alle voci che usano ancora Placeholder.webp.
-4. 🔴 **RELIQUIE** — Valutare se creare un type dedicato o una categoria separata per le 17 Reliquie dopo la build.
+1. ⏳ IDENTIFICARE src-packs rimanenti da sistemare
+2. 🔴 BUILD + DEPLOY — Compilare tutti i pack e testare in Foundry VTT
+3. 🔴 IMMAGINI — Assegnare immagini specifiche alle voci con Placeholder.webp
+4. 🔴 RELIQUIE — Valutare type dedicato dopo la build
+5. 🟡 NOBILE + ESPLORATORE — Sprint futuro quando disponibili TXT sorgente
 
 ---
 
-*Documento aggiornato da Antigravity — 10 Aprile 2026 — v2.2*
-*Precedente versione: v2.1 del 10 Aprile 2026 ore 11:30*
-*Modifiche v2.2: aggiornato stato pack con 116 nuovi entries completati, aggiunta sezione report di audit e roadmap prossimi step.*
+*Documento aggiornato da Antigravity — 10 Aprile 2026 — v2.3*
+*Precedente versione: v2.2 del 10 Aprile 2026 ore 14:20*
+*Modifiche v2.3: aggiornato stato pack con il completamento di Magia (Spells, Rituals), Razze, Professioni e Abilità.*

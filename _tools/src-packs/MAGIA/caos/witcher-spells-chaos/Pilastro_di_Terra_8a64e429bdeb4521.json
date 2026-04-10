@@ -1,62 +1,67 @@
-{
-    "_id": "8a64e429bdeb4521",
-    "name": "Pilastro di Terra",
-    "type": "spell",
-    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini_Chaos/Pag083_Incantesimi da Mago_01.webp",
-    "system": {
-        "description": "<p>Velo di Polvere Velo di Fuoco Respiro di Aurora Morte di Fergus Recupero Alchemico Riaprire Portale Schermo Magico Incantesimi da Esperto Camera di Dormyn Bastione di Elgan Fulmine Globulare Forgia del Mago Arrugginire Compromettere Focus Frana di Bekker Nastro Invisibile Porta di Cenere Essenza della Pozione Laccio Spettrale Sciame di Javed Tocco Fulminante Tocco del Fabbro Invaerne Manto Portale Trappola Rafforzare Incantesimi da Maestro Rubare Incantesimo Modellare Terra Gwyntog Fuoco Vivente Estrazione di Ainfra Specchio Oscuro di Bekker Stasi Cristallina Mano della Tempesta Vampata del Korath Piena di Ys</p>",
-        "quantity": "1",
-        "weight": 0,
-        "cost": 0,
-        "sourcebook": "TC 85",
-        "class": "Spells",
-        "level": "master",
-        "source": "Earth",
-        "stamina": 0,
-        "staminaIsVar": false,
-        "effect": "Pilastro di Terra fa emergere dal suolo un cubo di terra di 2m di lato. Si tratta di un riparo con PR 10, che permane finché non viene distrutto.",
-        "range": "10m",
-        "duration": "Istantanea",
-        "defence": "Nessuna",
-        "damageProperties": {
-            "armorPiercing": false,
-            "improvedArmorPiercing": false,
-            "ablating": false,
-            "crushingForce": false,
-            "damageIsAblation": false,
-            "stun": 0,
-            "damageToAllLocations": false,
-            "bypassesWornArmor": false,
-            "bypassesNaturalArmor": false,
-            "defenseDifferenceMultiplier": false,
-            "defenseMultiplierCap": 5,
-            "variableDamage": false,
-            "effects": [],
-            "oilEffect": "",
-            "silverTrait": false,
-            "silverDamage": "",
-            "isMeteorite": false,
-            "isNonLethal": false
-        },
-        "regionProperties": {
-            "createRegionFromTemplate": false,
-            "behaviours": {
-                "tokenEnter": null,
-                "tokenTurnStart": null,
-                "tokenMoveWithin": null,
-                "tokenExit": null
-            }
-        },
-        "attackOptions": [
-            "spell"
-        ],
-        "spellAttackSkill": "spellcast"
-    },
-    "effects": [],
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
-    }
+﻿{
+    "_id":  "8a64e429bdeb4521",
+    "name":  "Pilastro di Terra",
+    "type":  "spell",
+    "img":  "modules/witcher-compendium/assets/optimized/assets/Immagini_Chaos/Pag083_Incantesimi da Mago_01.webp",
+    "system":  {
+                   "description":  "\u003cp\u003ePilastro di Terra fa emergere dal suolo un cubo di terra di 2m di lato. Si tratta di un riparo con PR 10, che permane finchÃ© non viene distrutto.\u003c/p\u003e",
+                   "quantity":  "1",
+                   "weight":  0,
+                   "cost":  0,
+                   "sourcebook":  "TC 83",
+                   "class":  "Mage",
+                   "level":  "master",
+                   "source":  "Earth",
+                   "stamina":  0,
+                   "staminaIsVar":  false,
+                   "effect":  "Pilastro di Terra fa emergere dal suolo un cubo di terra di 2m di lato. Si tratta di un riparo con PR 10, che permane finchÃ© non viene distrutto.",
+                   "range":  "10m",
+                   "duration":  "Istantanea",
+                   "defence":  "Nessuna",
+                   "damageProperties":  {
+                                            "armorPiercing":  false,
+                                            "improvedArmorPiercing":  false,
+                                            "ablating":  false,
+                                            "crushingForce":  false,
+                                            "damageIsAblation":  false,
+                                            "stun":  0,
+                                            "damageToAllLocations":  false,
+                                            "bypassesWornArmor":  false,
+                                            "bypassesNaturalArmor":  false,
+                                            "defenseDifferenceMultiplier":  false,
+                                            "defenseMultiplierCap":  5,
+                                            "variableDamage":  false,
+                                            "effects":  [
+
+                                                        ],
+                                            "oilEffect":  "",
+                                            "silverTrait":  false,
+                                            "silverDamage":  "",
+                                            "isMeteorite":  false,
+                                            "isNonLethal":  false
+                                        },
+                   "regionProperties":  {
+                                            "createRegionFromTemplate":  false,
+                                            "behaviours":  {
+                                                               "tokenEnter":  null,
+                                                               "tokenTurnStart":  null,
+                                                               "tokenMoveWithin":  null,
+                                                               "tokenExit":  null
+                                                           }
+                                        },
+                   "attackOptions":  [
+                                         "spell"
+                                     ],
+                   "spellAttackSkill":  "spellcast"
+               },
+    "effects":  [
+
+                ],
+    "flags":  {
+
+              },
+    "_stats":  {
+                   "coreVersion":  14,
+                   "systemId":  "TheWitcherItaNewSystem"
+               }
 }

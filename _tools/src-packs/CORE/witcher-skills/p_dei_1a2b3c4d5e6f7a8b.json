@@ -1,0 +1,30 @@
+{
+    "_id": "1a2b3c4d5e6f7a8b",
+    "name": "Iniziato degli Dei",
+    "type": "skill",
+    "img": "icons/svg/skill.svg",
+    "system": {
+        "attribute": "emp",
+        "description": "<p>L’abilità di ricevere aiuto e servizi dai santuari del proprio culto o di culti alleati. Permette di ottenere alloggio gratuito o guarigione.</p>",
+        "sourcebook": "TC 51",
+        "value": 0,
+        "label": "",
+        "isOpened": false,
+        "modifiers": [],
+        "activeEffectModifiers": 0,
+        "isProfession": true,
+        "isPickup": false,
+        "isLearned": false
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

@@ -3,84 +3,84 @@
     "type": "profession",
     "img": "modules/witcher-compendium/assets/optimized/images/professions/armigero.webp",
     "system": {
-        "sourcebook": "Manuale Base, p.40",
+        "sourcebook": "MB 40",
         "definingSkill": {
             "skillName": "Duro come una Roccia",
             "stat": "body",
             "level": 1,
-            "definition": "<p>Quando scende a 0 PS o meno, un Armigero può effettuare un tiro di <strong>Duro come una Roccia (FIS)</strong> con CD pari ai PS negativi x2. In caso di successo, può continuare a combattere senza le penalità di Moribondo fino al termine dello scontro o finché non fallisce un nuovo tiro.</p>"
+            "definition": "<p>Quando un Armigero scende a 0 PS o meno, può effettuare un tiro di <strong>Duro come una Roccia (FIS)</strong> con CD pari ai PS negativi x2. In caso di successo, può continuare a combattere senza le penalità di Moribondo (come se fosse solo alla Soglia di Ferite) fino al termine dello scontro o finché non fallisce un nuovo tiro.</p>"
         },
         "skillPath1": {
-            "pathName": "Il Guerriero",
+            "pathName": "Il Tiratore",
             "skill1": {
-                "skillName": "Carica",
+                "skillName": "Gittata Superiore",
                 "stat": "dex",
                 "level": 0,
-                "definition": "<p>Permette di effettuare una carica devastante contro un nemico. Se l'attacco colpisce dopo un movimento di almeno 4 metri, aggiunge un bonus al danno in base al livello.</p>"
+                "definition": "<p>Riduce della metà del proprio valore le penalità per la gittata. Inoltre, con una prova con CD 16, permette di attaccare bersagli fino a 3 volte la gittata dell'arma con penalità di -10 (ridotta da questa capacità).</p>"
             },
             "skill2": {
-                "skillName": "Colpo Potente",
-                "stat": "ref",
+                "skillName": "Tiro Doppio",
+                "stat": "dex",
                 "level": 0,
-                "definition": "<p>Migliora la forza bruta degli attacchi ravvicinati, permettendo di ignorare parte della PR nemica o infliggere danni da impatto maggiori.</p>"
+                "definition": "<p>Permette di scoccare due proiettili con un singolo attacco. Se ha successo, colpisce due parti del corpo casuali (anche se il colpo era mirato, il secondo è casuale). Parare questo attacco impone una penalità di -6.</p>"
             },
             "skill3": {
-                "skillName": "Turbine",
-                "stat": "ref",
+                "skillName": "Mira Precisa",
+                "stat": "dex",
                 "level": 0,
-                "definition": "<p>Un attacco rotante che colpisce tutti i nemici entro la gittata di mischia. Richiede un singolo tiro per colpire contrapposto a tutte le difese dei bersagli.</p>"
+                "definition": "<p>Permette di aggiungere il proprio valore al tiro per determinare l'entità di una Ferita Critica inflitta con un'arma a distanza, superando una prova con CD pari alla DES x3 del bersaglio.</p>"
             }
         },
         "skillPath2": {
-            "pathName": "Il Tattico",
+            "pathName": "Il Cacciatore di Taglie",
             "skill1": {
-                "skillName": "Comando",
+                "skillName": "Segugio",
                 "stat": "int",
                 "level": 0,
-                "definition": "<p>Capacità di dirigere gli alleati con ordini precisi, fornendo bonus ai tiri per colpire o alla difesa dei compagni entro portata uditiva.</p>"
+                "definition": "<p>Aggiunge il proprio valore ai tiri di Sopravvivenza per seguire tracce. Se si perde la pista, permette di effettuare un tiro con CD stabilita dal GM per ritrovarla immediatamente.</p>"
             },
             "skill2": {
-                "skillName": "Analisi",
-                "stat": "int",
+                "skillName": "Tranelli",
+                "stat": "cra",
                 "level": 0,
-                "definition": "<p>Studio rapido dello stile di combattimento nemico. Permette di individuare punti deboli nell'armatura o falle nella guardia dell'avversario.</p>"
+                "definition": "<p>Permette di costruire trappole improvvisate (Calappio, Disarmante, Accecante, Inciampo, Sanguinamento, Stordente) con un raggio d'innesco di 2m. La CD di individuazione è pari al tiro effettuato per costruirla.</p>"
             },
             "skill3": {
-                "skillName": "Manovra",
-                "stat": "spd",
+                "skillName": "Accortezza Tattica",
+                "stat": "int",
                 "level": 0,
-                "definition": "<p>Migliora la mobilità sul campo di battaglia, permettendo di evitare attacchi di opportunità o riposizionarsi strategicamente senza consumare azioni extra.</p>"
+                "definition": "<p>Invece di muoversi, l'Armigero può tirare per intuire le mosse nemiche. Ottiene +3 ad attacco e difesa per 1 round contro ogni nemico entro 10m la cui DES x3 sia inferiore al risultato del tiro.</p>"
             }
         },
         "skillPath3": {
-            "pathName": "Il Cacciatore",
+            "pathName": "Il Massacratore",
             "skill1": {
-                "skillName": "Tracciare",
-                "stat": "int",
+                "skillName": "Furia",
+                "stat": "will",
                 "level": 0,
-                "definition": "<p>Abilità specializzata nel seguire orme e segni di passaggio in qualsiasi tipo di terreno, sia per prede animali che per fuggiaschi umani.</p>"
+                "definition": "<p>Superando una prova con CD pari alla propria EMP x3, l'Armigero diventa immune alla paura, agli incantesimi mentali e al combattimento verbale per un numero di round pari al doppio del punteggio dell'abilità.</p>"
             },
             "skill2": {
-                "skillName": "Trappole",
-                "stat": "cra",
+                "skillName": "Zweihand",
+                "stat": "body",
                 "level": 0,
-                "definition": "<p>Competenza nell'ideazione, costruzione e occultamento di trappole meccaniche o ambientali per immobilizzare o ferire i nemici.</p>"
+                "definition": "<p>Spendendo 10 Resistenza, permette di effettuare un attacco che infligge danni doppi e guadagna l'effetto Trapassare (o migliora quello esistente con +3d6 danni). Richiede un tiro con penalità di -3.</p>"
             },
             "skill3": {
-                "skillName": "Cecchino",
-                "stat": "dex",
+                "skillName": "Irriducibile",
+                "stat": "body",
                 "level": 0,
-                "definition": "<p>Massimizza la precisione con le armi a distanza, riducendo le penalità per gittata estrema o per mirare a locazioni specifiche.</p>"
+                "definition": "<p>Spendendo 10 Resistenza, permette di tirare per negare una Ferita Critica subita. Se il tiro supera quello dell'attacco nemico, il danno viene subito come se non fosse un critico. Usabile volte al giorno pari al FIS.</p>"
             }
         },
-        "professionSkills": "Scherma, Mischia, Archi, Balestre, Coraggio, Sopravvivenza, Intimidire, Eludere, Atletica, Accortezza"
+        "professionSkills": "5 Abilità di Combattimento a scelta (Archi, Armi in Asta, Atletica, Balestre, Cavalcare, Lame Corte, Mischia, Rissa, Scherma, Tattica), Sopravvivenza, Coraggio, Prestanza, Intimidire, Eludere",
+        "notes": "<p>I soldati pensano secondo la tattica. Sanno quando colpire, quando indietreggiare, quando caricare e quando tenere la posizione. I veri armigeri sono soldati incalliti che non rinunciano o si arrendono mai. Un armigero vive di combattimenti e respira conflitti.</p>"
     },
     "effects": [],
     "flags": {},
     "_id": "0profmanatarms01",
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
+        "coreVersion": 14
     }
 }

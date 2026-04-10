@@ -1,65 +1,70 @@
-{
-    "_id": "d0c3bf353221443a",
-    "name": "Sciame di Javed",
-    "type": "spell",
-    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini_Chaos/Pag088_Incantesimi da Mago_01.webp",
-    "system": {
-        "description": "<p>Tocco Fulminante Tocco del Fabbro Invaerne Manto Portale Trappola Rafforzare Incantesimi da Maestro Rubare Incantesimo Modellare Terra Gwyntog Fuoco Vivente Estrazione di Ainfra Specchio Oscuro di Bekker Stasi Cristallina Mano della Tempesta Vampata del Korath Piena di Ys</p>",
-        "quantity": "1",
-        "weight": 0,
-        "cost": 0,
-        "sourcebook": "TC 88",
-        "class": "Spells",
-        "level": "master",
-        "source": "mixedElements",
-        "stamina": 0,
-        "staminaIsVar": false,
-        "effect": "Sciame di Javed conferisce il dominio sugli insetti presenti nelle vicinanze. Una volta lanciato, gli insetti strisciano fuori da buchi e crepe, formando uno sciame con VEL 7, che ingloba un singolo bersaglio eseguendo un attacco con Base 14. La vittima subi- sce l’effetto Avvelenato (100%) e 1d6 danni al Torso, ignorando le armature. Lo sciame ha 15 PS e Base di Eludere 14.",
-        "range": "6m",
-        "duration": "10 minuti",
-        "defence": "Nessuna",
-        "damageProperties": {
-            "armorPiercing": false,
-            "improvedArmorPiercing": false,
-            "ablating": false,
-            "crushingForce": false,
-            "damageIsAblation": false,
-            "stun": 0,
-            "damageToAllLocations": false,
-            "bypassesWornArmor": false,
-            "bypassesNaturalArmor": false,
-            "defenseDifferenceMultiplier": false,
-            "defenseMultiplierCap": 5,
-            "variableDamage": false,
-            "effects": [],
-            "oilEffect": "",
-            "silverTrait": false,
-            "silverDamage": "",
-            "isMeteorite": false,
-            "isNonLethal": false
-        },
-        "regionProperties": {
-            "createRegionFromTemplate": false,
-            "behaviours": {
-                "tokenEnter": null,
-                "tokenTurnStart": null,
-                "tokenMoveWithin": null,
-                "tokenExit": null
-            }
-        },
-        "attackOptions": [
-            "spell"
-        ],
-        "spellAttackSkill": "spellcast",
-        "causeDamages": true,
-        "damage": "1d6",
-        "damageType": "elemental"
-    },
-    "effects": [],
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
-    }
+﻿{
+    "_id":  "d0c3bf353221443a",
+    "name":  "Sciame di Javed",
+    "type":  "spell",
+    "img":  "modules/witcher-compendium/assets/optimized/assets/Immagini_Chaos/Pag088_Incantesimi da Mago_01.webp",
+    "system":  {
+                   "description":  "\u003cp\u003eSciame di Javed conferisce il dominio sugli insetti presenti nelle vicinanze. Una volta lanciato, gli insetti strisciano fuori da buchi e crepe, formando uno sciame con VEL 7, che ingloba un singolo bersaglio eseguendo un attacco con Base 14. La vittima subi- sce lâ€™effetto Avvelenato (100%) e 1d6 danni al Torso, ignorando le armature. Lo sciame ha 15 PS e Base di Eludere 14.\u003c/p\u003e",
+                   "quantity":  "1",
+                   "weight":  0,
+                   "cost":  0,
+                   "sourcebook":  "TC 83",
+                   "class":  "Mage",
+                   "level":  "master",
+                   "source":  "mixedElements",
+                   "stamina":  0,
+                   "staminaIsVar":  false,
+                   "effect":  "Sciame di Javed conferisce il dominio sugli insetti presenti nelle vicinanze. Una volta lanciato, gli insetti strisciano fuori da buchi e crepe, formando uno sciame con VEL 7, che ingloba un singolo bersaglio eseguendo un attacco con Base 14. La vittima subi- sce lâ€™effetto Avvelenato (100%) e 1d6 danni al Torso, ignorando le armature. Lo sciame ha 15 PS e Base di Eludere 14.",
+                   "range":  "6m",
+                   "duration":  "10 minuti",
+                   "defence":  "Nessuna",
+                   "damageProperties":  {
+                                            "armorPiercing":  false,
+                                            "improvedArmorPiercing":  false,
+                                            "ablating":  false,
+                                            "crushingForce":  false,
+                                            "damageIsAblation":  false,
+                                            "stun":  0,
+                                            "damageToAllLocations":  false,
+                                            "bypassesWornArmor":  false,
+                                            "bypassesNaturalArmor":  false,
+                                            "defenseDifferenceMultiplier":  false,
+                                            "defenseMultiplierCap":  5,
+                                            "variableDamage":  false,
+                                            "effects":  [
+
+                                                        ],
+                                            "oilEffect":  "",
+                                            "silverTrait":  false,
+                                            "silverDamage":  "",
+                                            "isMeteorite":  false,
+                                            "isNonLethal":  false
+                                        },
+                   "regionProperties":  {
+                                            "createRegionFromTemplate":  false,
+                                            "behaviours":  {
+                                                               "tokenEnter":  null,
+                                                               "tokenTurnStart":  null,
+                                                               "tokenMoveWithin":  null,
+                                                               "tokenExit":  null
+                                                           }
+                                        },
+                   "attackOptions":  [
+                                         "spell"
+                                     ],
+                   "spellAttackSkill":  "spellcast",
+                   "causeDamages":  true,
+                   "damage":  "1d6",
+                   "damageType":  "elemental"
+               },
+    "effects":  [
+
+                ],
+    "flags":  {
+
+              },
+    "_stats":  {
+                   "coreVersion":  14,
+                   "systemId":  "TheWitcherItaNewSystem"
+               }
 }

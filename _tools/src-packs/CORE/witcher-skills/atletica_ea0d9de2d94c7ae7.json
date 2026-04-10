@@ -5,6 +5,8 @@
     "img": "icons/svg/skill.svg",
     "system": {
         "attribute": "dex",
+        "description": "<p>Saper correre, arrampicarsi e saltare con agilità. Permette di muoversi agilmente in vari ambienti e di superare ostacoli fisici con facilità.</p>",
+        "sourcebook": "MB 55",
         "value": 0,
         "label": "",
         "isOpened": false,
@@ -23,7 +25,6 @@
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
+        "coreVersion": 14
     }
 }

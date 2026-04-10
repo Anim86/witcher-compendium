@@ -3,84 +3,84 @@
     "type": "profession",
     "img": "modules/witcher-compendium/assets/optimized/images/professions/mercante.webp",
     "system": {
-        "sourcebook": "Manuale Base, p.46",
+        "sourcebook": "MB 46",
         "definingSkill": {
-            "skillName": "Naso per l'Affare",
+            "skillName": "Cosmopolita",
             "stat": "int",
             "level": 1,
-            "definition": "<p>Un Mercante sa sempre quando qualcuno sta cercando di imbrogliarlo. Può effettuare una prova di <strong>Naso per l'Affare (INT)</strong> per scoprire il prezzo reale di un oggetto o percepire se un partner commerciale è onesto.</p>"
+            "definition": "<p>Un Mercante può tirare <strong>Cosmopolita (INT)</strong> ogni volta che vuole conoscere un fatto su un oggetto specifico, una cultura o un'area. Se ha successo, trova la risposta ricordando un aneddoto del suo ultimo viaggio nella zona.</p>"
         },
         "skillPath1": {
-            "pathName": "Il Rivenditore",
+            "pathName": "Il Sensale",
             "skill1": {
-                "skillName": "Massimizzare Profitti",
+                "skillName": "Opzioni",
                 "stat": "int",
                 "level": 0,
-                "definition": "<p>Abilità di vendere merci comuni a prezzi maggiorati identificando il cliente più disperato.</p>"
+                "definition": "<p>Permette di trovare un oggetto al prezzo più basso. Con un successo (CD variabile per rarità), il mercante trova un venditore che offre lo stesso oggetto a metà prezzo. Non funziona su oggetti rari/reliquie.</p>"
             },
             "skill2": {
-                "skillName": "Logistica",
-                "stat": "int",
-                "level": 0,
-                "definition": "<p>Ottimizzazione del carico. Permette di trasportare il 20% di merci in più senza affaticare i cavalli o i carri.</p>"
-            },
-            "skill3": {
-                "skillName": "Monopolio locali",
+                "skillName": "Cattivo Affare",
                 "stat": "emp",
                 "level": 0,
-                "definition": "<p>Capacità di stringere accordi che impediscono la vendita di determinati prodotti a concorrenti esteri.</p>"
+                "definition": "<p>Permette di corrompere qualcuno con oggetti comuni del valore di almeno 5 corone invece che con denaro. Il successo fornisce +3 alla Persuasione per convincere il bersaglio (CD pari a VOL x3).</p>"
+            },
+            "skill3": {
+                "skillName": "Promessa",
+                "stat": "emp",
+                "level": 0,
+                "definition": "<p>Permette di acquistare un oggetto con la promessa di pagare in seguito. Superando una prova di EMP x3 del venditore, questi accetta il dilazionamento vincolandolo per un numero di settimane pari al valore dell'abilità.</p>"
             }
         },
         "skillPath2": {
-            "pathName": "Lo Scalatore Sociale",
+            "pathName": "Il Contatto",
             "skill1": {
-                "skillName": "Contatti Importanti",
+                "skillName": "Uccellini",
                 "stat": "emp",
                 "level": 0,
-                "definition": "<p>Abilità nel farsi presentare a personaggi di spicco della società, ottenendo inviti a eventi esclusivi.</p>"
+                "definition": "<p>Permette di ottenere l'aiuto di monelli di strada o vagabondi (1 per ogni punto sopra la CD). Ogni 'uccellino' conferisce +1 ai tiri di Scaltrezza se pagato con 1 corona ad utilizzo.</p>"
             },
             "skill2": {
-                "skillName": "Fascino del Ricco",
-                "stat": "emp",
+                "skillName": "Informatore",
+                "stat": "int",
                 "level": 0,
-                "definition": "<p>Uso dell'ostentazione per intimidire o affascinare chi ha meno risorse economiche.</p>"
+                "definition": "<p>Permette di convincere una persona a spiare per il mercante (pagando 10 corone). Contrapposto a Resistere a Coercizione, un successo garantisce spionaggio per un numero di giorni pari al valore dell'abilità.</p>"
             },
             "skill3": {
-                "skillName": "Mecenatismo",
-                "stat": "emp",
+                "skillName": "Mappa del Tesoro",
+                "stat": "int",
                 "level": 0,
-                "definition": "<p>Finanziare artisti o cavalieri per guadagnare gloria riflessa e favori politici.</p>"
+                "definition": "<p>Una volta per sessione, permette di ricordare l'ubicazione di una reliquia o rovine utili in luoghi remoti. Raggiungere tale luogo costituisce un'impresa che solitamente richiede un'intera sessione di gioco.</p>"
             }
         },
         "skillPath3": {
-            "pathName": "L'Usuraio",
+            "pathName": "Lo Havekar",
             "skill1": {
-                "skillName": "Valutazione Crediti",
-                "stat": "int",
-                "level": 0,
-                "definition": "<p>Identifica istantaneamente se una persona è in grado di ripagare un debito analizzandone lo stile di vita.</p>"
-            },
-            "skill2": {
-                "skillName": "Recupero Crediti",
+                "skillName": "Ammanicato",
                 "stat": "will",
                 "level": 0,
-                "definition": "<p>Tecniche di pressione psicologica e intimidazione per costringere i debitori a pagare gli arretrati.</p>"
+                "definition": "<p>Spargendo voci del proprio arrivo in un insediamento (CD basata sulla dimensione), il mercante aumenta la propria reputazione di 1 per ogni 2 punti sopra la CD, per 1d6 settimane.</p>"
             },
-            "skill3": {
-                "skillName": "Giro di Affari",
+            "skill2": {
+                "skillName": "Ricettazione",
                 "stat": "int",
                 "level": 0,
-                "definition": "<p>Capacità di reinvestire il denaro per generare piccoli guadagni settimanali passivi.</p>"
+                "definition": "<p>Permette di vendere oggetti sospetti o rubati a prezzo di mercato senza attirare le guardie. Superando una prova con CD stabilita dal GM, il mercante trova un acquirente che non farà troppe domande.</p>"
+            },
+            "skill3": {
+                "skillName": "Debito del Guerriero",
+                "stat": "emp",
+                "level": 0,
+                "definition": "<p>Permette di riscuotere un favore da un guerriero in debito. Il guerriero lavorerà per il mercante per un numero di giorni pari al valore dell'abilità, obbedendo a ordini ragionevoli (secondo la tabella apposita).</p>"
             }
         },
-        "professionSkills": "Commercio, Seduzione, Persuasione, Intimidire, Sensibilità, Accortezza, Etichetta, Streetwise, Istruzione, Gioco d'Azzardo"
+        "professionSkills": "Carisma, Lame Corte, Istruzione, Linguaggio (2 a scelta), Scaltrezza, Commercio, Persuasione, Sensibilità, Gioco d’Azzardo, Resistere a Coercizione",
+        "notes": "<p>I mercanti portano alla gente ciò di cui ha bisogno, che si tratti di spade redaniane a Metinna o di avorio zerrikaniano nei Reami Settentrionali. Hanno contatti ovunque, sanno come fare affari scandalosi e riconoscono il potere del denaro. Un bravo mercante campa con i suoi contatti, le sue conoscenze e le sue merci.</p>"
     },
     "effects": [],
     "flags": {},
-    "_id": "rofmerchant00001",
+    "_id": "profmerch0000001",
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
+        "coreVersion": 14
     }
 }

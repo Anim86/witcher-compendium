@@ -5,6 +5,8 @@
     "img": "icons/svg/skill.svg",
     "system": {
         "attribute": "ref",
+        "description": "<p>Saper usare armi contundenti (mazze, martelli), asce e fruste. Permette di maneggiare con sicurezza queste armi in combattimento.</p>",
+        "sourcebook": "MB 53",
         "value": 0,
         "label": "",
         "isOpened": false,
@@ -23,7 +25,6 @@
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
+        "coreVersion": 14
     }
 }

@@ -1,62 +1,67 @@
-{
-    "_id": "4375d03295e24907",
-    "name": "Incantesimo Diagnostico",
-    "type": "spell",
-    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag101_La Magia in The Witcher_01.webp",
-    "system": {
-        "description": "<p>Incantesimo Diagnostico consente all’incanta- tore di valutare rapidamente la salute di un bersaglio e di determinare quanti Punti Salute possiede, eventuali ferite critiche, malattie o avvelenamenti.</p>",
-        "quantity": "1",
-        "weight": 0,
-        "cost": 0,
-        "sourcebook": "MB 18",
-        "class": "Spells",
-        "level": "novice",
-        "source": "earth",
-        "stamina": 3,
-        "staminaIsVar": false,
-        "effect": "Incantesimo Diagnostico consente all’incanta- tore di valutare rapidamente la salute di un bersaglio e di determinare quanti Punti Salute possiede, eventuali ferite critiche, malattie o avvelenamenti.",
-        "range": "5m",
-        "duration": "Istantanea",
-        "defence": "Nessuna",
-        "damageProperties": {
-            "armorPiercing": false,
-            "improvedArmorPiercing": false,
-            "ablating": false,
-            "crushingForce": false,
-            "damageIsAblation": false,
-            "stun": 0,
-            "damageToAllLocations": false,
-            "bypassesWornArmor": false,
-            "bypassesNaturalArmor": false,
-            "defenseDifferenceMultiplier": false,
-            "defenseMultiplierCap": 5,
-            "variableDamage": false,
-            "effects": [],
-            "oilEffect": "",
-            "silverTrait": false,
-            "silverDamage": "",
-            "isMeteorite": false,
-            "isNonLethal": false
-        },
-        "regionProperties": {
-            "createRegionFromTemplate": false,
-            "behaviours": {
-                "tokenEnter": null,
-                "tokenTurnStart": null,
-                "tokenMoveWithin": null,
-                "tokenExit": null
-            }
-        },
-        "attackOptions": [
-            "spell"
-        ],
-        "spellAttackSkill": "spellcast"
-    },
-    "effects": [],
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
-    }
+﻿{
+    "_id":  "4375d03295e24907",
+    "name":  "Incantesimo Diagnostico",
+    "type":  "spell",
+    "img":  "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag101_La Magia in The Witcher_01.webp",
+    "system":  {
+                   "description":  "\u003cp\u003eàIànàcàaànàtàeàsàiàmàoà àDàiàaàgànàoàsàtàiàcàoà àcàoànàsàeànàtàeà àaàlàlàâà€à™àiànàcàaànàtàaà-à àtàoàràeà àdàià àvàaàlàuàtàaàràeà àràaàpàiàdàaàmàeànàtàeà àlàaà àsàaàlàuàtàeà àdàià àuànà àbàeàràsàaàgàlàiàoà àeà àdàià àdàeàtàeàràmàiànàaàràeà àqàuàaànàtàià àPàuànàtàià àSàaàlàuàtàeà àpàoàsàsàiàeàdàeà,à àeàvàeànàtàuàaàlàià àfàeàràiàtàeà àcàràiàtàiàcàhàeà,à àmàaàlàaàtàtàiàeà àoà àaàvàvàeàlàeànàaàmàeànàtàià.à\u003c/p\u003e",
+                   "quantity":  "1",
+                   "weight":  0,
+                   "cost":  0,
+                   "sourcebook":  "MB 103",
+                   "class":  "Mage",
+                   "level":  "novice",
+                   "source":  "earth",
+                   "stamina":  3,
+                   "staminaIsVar":  false,
+                   "effect":  "Incantesimo Diagnostico consente allâ€™incanta- tore di valutare rapidamente la salute di un bersaglio e di determinare quanti Punti Salute possiede, eventuali ferite critiche, malattie o avvelenamenti.",
+                   "range":  "5m",
+                   "duration":  "Istantanea",
+                   "defence":  "Nessuna",
+                   "damageProperties":  {
+                                            "armorPiercing":  false,
+                                            "improvedArmorPiercing":  false,
+                                            "ablating":  false,
+                                            "crushingForce":  false,
+                                            "damageIsAblation":  false,
+                                            "stun":  0,
+                                            "damageToAllLocations":  false,
+                                            "bypassesWornArmor":  false,
+                                            "bypassesNaturalArmor":  false,
+                                            "defenseDifferenceMultiplier":  false,
+                                            "defenseMultiplierCap":  5,
+                                            "variableDamage":  false,
+                                            "effects":  [
+
+                                                        ],
+                                            "oilEffect":  "",
+                                            "silverTrait":  false,
+                                            "silverDamage":  "",
+                                            "isMeteorite":  false,
+                                            "isNonLethal":  false
+                                        },
+                   "regionProperties":  {
+                                            "createRegionFromTemplate":  false,
+                                            "behaviours":  {
+                                                               "tokenEnter":  null,
+                                                               "tokenTurnStart":  null,
+                                                               "tokenMoveWithin":  null,
+                                                               "tokenExit":  null
+                                                           }
+                                        },
+                   "attackOptions":  [
+                                         "spell"
+                                     ],
+                   "spellAttackSkill":  "spellcast"
+               },
+    "effects":  [
+
+                ],
+    "flags":  {
+
+              },
+    "_stats":  {
+                   "systemId":  "TheWitcherItaNewSystem",
+                   "coreVersion":  14
+               }
 }

@@ -5,6 +5,8 @@
     "img": "icons/svg/skill.svg",
     "system": {
         "attribute": "int",
+        "description": "<p>Il livello d’istruzione formale ricevuto dal personaggio. Dalle nozioni di base impartite dai genitori a una vasta cultura accademica acquisita a Oxenfurt o in altre università.</p>",
+        "sourcebook": "MB 53",
         "value": 0,
         "label": "",
         "isOpened": false,
@@ -23,7 +25,6 @@
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
+        "coreVersion": 14
     }
 }

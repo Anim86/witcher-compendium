@@ -1,65 +1,70 @@
-{
-    "_id": "87dbddf5a0f54ca4",
-    "name": "Tocco Fulminante",
-    "type": "spell",
-    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini_Chaos/Pag083_Incantesimi da Mago_01.webp",
-    "system": {
-        "description": "<p>Tocco del Fabbro Invaerne Manto Portale Trappola Rafforzare Incantesimi da Maestro Rubare Incantesimo Modellare Terra Gwyntog Fuoco Vivente Estrazione di Ainfra Specchio Oscuro di Bekker Stasi Cristallina Mano della Tempesta Vampata del Korath Piena di Ys</p>",
-        "quantity": "1",
-        "weight": 0,
-        "cost": 0,
-        "sourcebook": "TC 89",
-        "class": "Spells",
-        "level": "master",
-        "source": "mixedElements",
-        "stamina": 0,
-        "staminaIsVar": false,
-        "effect": "Tocco Fulminante carica d’elettricità un og- getto metallico immobile. Questo diventa una trappola elettrica, che infligge 1d6 danni alla prima creatura che vi entra in contatto (nella Locazione con cui la tocca). È possibile infondere ulteriore energia concentrando- si, nella misura di +1d6 danni (massimo 8d6) per ogni Round in cui si paga il costo d’Attivazione. Se viene spo- stato prima che una creatura vi entri in contatto o dopo ventiquattr’ore, l’oggetto si scarica. Occorre una prova di Accortezza CD 20 per notare che un oggetto è sotto l’effetto di questo incantesimo.",
-        "range": "2m",
-        "duration": "Attiva (5 RES)",
-        "defence": "Nessuna",
-        "damageProperties": {
-            "armorPiercing": false,
-            "improvedArmorPiercing": false,
-            "ablating": false,
-            "crushingForce": false,
-            "damageIsAblation": false,
-            "stun": 0,
-            "damageToAllLocations": false,
-            "bypassesWornArmor": false,
-            "bypassesNaturalArmor": false,
-            "defenseDifferenceMultiplier": false,
-            "defenseMultiplierCap": 5,
-            "variableDamage": false,
-            "effects": [],
-            "oilEffect": "",
-            "silverTrait": false,
-            "silverDamage": "",
-            "isMeteorite": false,
-            "isNonLethal": false
-        },
-        "regionProperties": {
-            "createRegionFromTemplate": false,
-            "behaviours": {
-                "tokenEnter": null,
-                "tokenTurnStart": null,
-                "tokenMoveWithin": null,
-                "tokenExit": null
-            }
-        },
-        "attackOptions": [
-            "spell"
-        ],
-        "spellAttackSkill": "spellcast",
-        "causeDamages": true,
-        "damage": "1d6",
-        "damageType": "elemental"
-    },
-    "effects": [],
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
-    }
+﻿{
+    "_id":  "87dbddf5a0f54ca4",
+    "name":  "Tocco Fulminante",
+    "type":  "spell",
+    "img":  "modules/witcher-compendium/assets/optimized/assets/Immagini_Chaos/Pag083_Incantesimi da Mago_01.webp",
+    "system":  {
+                   "description":  "\u003cp\u003eTocco Fulminante carica dâ€™elettricitÃ  un og- getto metallico immobile. Questo diventa una trappola elettrica, che infligge 1d6 danni alla prima creatura che vi entra in contatto (nella Locazione con cui la tocca). Ãˆ possibile infondere ulteriore energia concentrando- si, nella misura di +1d6 danni (massimo 8d6) per ogni Round in cui si paga il costo dâ€™Attivazione. Se viene spo- stato prima che una creatura vi entri in contatto o dopo ventiquattrâ€™ore, lâ€™oggetto si scarica. Occorre una prova di Accortezza CD 20 per notare che un oggetto Ã¨ sotto lâ€™effetto di questo incantesimo.\u003c/p\u003e",
+                   "quantity":  "1",
+                   "weight":  0,
+                   "cost":  0,
+                   "sourcebook":  "TC 83",
+                   "class":  "Mage",
+                   "level":  "master",
+                   "source":  "mixedElements",
+                   "stamina":  0,
+                   "staminaIsVar":  false,
+                   "effect":  "Tocco Fulminante carica dâ€™elettricitÃ  un og- getto metallico immobile. Questo diventa una trappola elettrica, che infligge 1d6 danni alla prima creatura che vi entra in contatto (nella Locazione con cui la tocca). Ãˆ possibile infondere ulteriore energia concentrando- si, nella misura di +1d6 danni (massimo 8d6) per ogni Round in cui si paga il costo dâ€™Attivazione. Se viene spo- stato prima che una creatura vi entri in contatto o dopo ventiquattrâ€™ore, lâ€™oggetto si scarica. Occorre una prova di Accortezza CD 20 per notare che un oggetto Ã¨ sotto lâ€™effetto di questo incantesimo.",
+                   "range":  "2m",
+                   "duration":  "Attiva (5 RES)",
+                   "defence":  "Nessuna",
+                   "damageProperties":  {
+                                            "armorPiercing":  false,
+                                            "improvedArmorPiercing":  false,
+                                            "ablating":  false,
+                                            "crushingForce":  false,
+                                            "damageIsAblation":  false,
+                                            "stun":  0,
+                                            "damageToAllLocations":  false,
+                                            "bypassesWornArmor":  false,
+                                            "bypassesNaturalArmor":  false,
+                                            "defenseDifferenceMultiplier":  false,
+                                            "defenseMultiplierCap":  5,
+                                            "variableDamage":  false,
+                                            "effects":  [
+
+                                                        ],
+                                            "oilEffect":  "",
+                                            "silverTrait":  false,
+                                            "silverDamage":  "",
+                                            "isMeteorite":  false,
+                                            "isNonLethal":  false
+                                        },
+                   "regionProperties":  {
+                                            "createRegionFromTemplate":  false,
+                                            "behaviours":  {
+                                                               "tokenEnter":  null,
+                                                               "tokenTurnStart":  null,
+                                                               "tokenMoveWithin":  null,
+                                                               "tokenExit":  null
+                                                           }
+                                        },
+                   "attackOptions":  [
+                                         "spell"
+                                     ],
+                   "spellAttackSkill":  "spellcast",
+                   "causeDamages":  true,
+                   "damage":  "1d6",
+                   "damageType":  "elemental"
+               },
+    "effects":  [
+
+                ],
+    "flags":  {
+
+              },
+    "_stats":  {
+                   "coreVersion":  14,
+                   "systemId":  "TheWitcherItaNewSystem"
+               }
 }

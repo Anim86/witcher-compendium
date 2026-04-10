@@ -3,7 +3,7 @@
     "type": "race",
     "img": "modules/witcher-compendium/assets/optimized/images/races/elfo.webp",
     "system": {
-        "sourcebook": "Manuale Base, p.25",
+        "sourcebook": "MB 23",
         "perk1": {
             "name": "Artistico",
             "description": "<p>Gli elfi hanno un occhio innato per la bellezza e un talento naturale per le espressioni artistiche. Ottengono un bonus di <strong>+1 innato all’abilità Belle Arti</strong>.</p>"
@@ -14,7 +14,7 @@
         },
         "perk3": {
             "name": "Sintonia Naturale",
-            "description": "<p>Gli elfi possiedono un legame magico con la natura. Gli animali li considerano amichevoli e non vengono disturbati dalla loro presenza. Inoltre, gli elfi trovano automaticamente sostanze vegetali comuni se presenti nell'ambiente.</p>"
+            "description": "<p>Gli elfi possiedono un legame magico con la natura. Gli animali li considerano amichevoli e non vengono disturbati dalla loro presenza. Inoltre, gli elfi trovano automaticamente sostanze vegetali <strong>comuni</strong> (o inferiori) se presenti nell'ambiente.</p>"
         },
         "perk4": {
             "name": "-",
@@ -22,10 +22,10 @@
         },
         "socialStanding": {
             "north": "hated",
-            "nilfgaard": "tolerated",
-            "skellige": "hated",
+            "nilfgaard": "equal",
+            "skellige": "equal",
             "dolBlathanna": "equal",
-            "mahakam": "tolerated"
+            "mahakam": "equal"
         }
     },
     "effects": [],
@@ -33,7 +33,6 @@
     "_id": "0raceelf00000001",
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
+        "coreVersion": 14
     }
 }

@@ -1,0 +1,30 @@
+{
+    "_id": "070c79e701918341",
+    "name": "Falsificare",
+    "type": "skill",
+    "img": "icons/svg/skill.svg",
+    "system": {
+        "attribute": "cra",
+        "description": "<p>Contraffare documenti, carte ufficiali e monete. Permette di riprodurre sigilli specifici e creare falsi eccezionali in grado di sconvolgere l'economia.</p>",
+        "sourcebook": "MB 57",
+        "value": 0,
+        "label": "",
+        "isOpened": false,
+        "modifiers": [],
+        "activeEffectModifiers": 0,
+        "isProfession": false,
+        "isPickup": false,
+        "isLearned": false
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

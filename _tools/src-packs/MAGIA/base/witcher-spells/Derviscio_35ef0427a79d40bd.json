@@ -1,62 +1,67 @@
-{
-    "_id": "35ef0427a79d40bd",
-    "name": "Derviscio",
-    "type": "spell",
-    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag101_La Magia in The Witcher_01.webp",
-    "system": {
-        "description": "<p>Creato da un misterioso mago di Ofir, Derviscio consente all’incantatore di creare intorno a sé un tornado di 2m. Il tornado devia gli attacchi a distanza come per Gwynt Troelli e agisce come l’incantesimo Zefiro contro ogni bersaglio entro 2m dal mago. L’incantatore all’in- terno del tornado non può correre, né effettuare attacchi verso l’esterno ma, se si muove entro 2m da un bersaglio questo subisce gli effetti dell’incantesimo Zefiro.</p>",
-        "quantity": "1",
-        "weight": 0,
-        "cost": 0,
-        "sourcebook": "MB 109",
-        "class": "Spells",
-        "level": "master",
-        "source": "air",
-        "stamina": 22,
-        "staminaIsVar": false,
-        "effect": "Creato da un misterioso mago di Ofir, Derviscio consente all’incantatore di creare intorno a sé un tornado di 2m. Il tornado devia gli attacchi a distanza come per Gwynt Troelli e agisce come l’incantesimo Zefiro contro ogni bersaglio entro 2m dal mago. L’incantatore all’in- terno del tornado non può correre, né effettuare attacchi verso l’esterno ma, se si muove entro 2m da un bersaglio questo subisce gli effetti dell’incantesimo Zefiro.",
-        "range": "Raggio di 2m",
-        "duration": "Attiva (6 RES)",
-        "defence": "Schivare",
-        "damageProperties": {
-            "armorPiercing": false,
-            "improvedArmorPiercing": false,
-            "ablating": false,
-            "crushingForce": false,
-            "damageIsAblation": false,
-            "stun": 0,
-            "damageToAllLocations": false,
-            "bypassesWornArmor": false,
-            "bypassesNaturalArmor": false,
-            "defenseDifferenceMultiplier": false,
-            "defenseMultiplierCap": 5,
-            "variableDamage": false,
-            "effects": [],
-            "oilEffect": "",
-            "silverTrait": false,
-            "silverDamage": "",
-            "isMeteorite": false,
-            "isNonLethal": false
-        },
-        "regionProperties": {
-            "createRegionFromTemplate": false,
-            "behaviours": {
-                "tokenEnter": null,
-                "tokenTurnStart": null,
-                "tokenMoveWithin": null,
-                "tokenExit": null
-            }
-        },
-        "attackOptions": [
-            "spell"
-        ],
-        "spellAttackSkill": "spellcast"
-    },
-    "effects": [],
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
-    }
+﻿{
+    "_id":  "35ef0427a79d40bd",
+    "name":  "Derviscio",
+    "type":  "spell",
+    "img":  "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag101_La Magia in The Witcher_01.webp",
+    "system":  {
+                   "description":  "\u003cp\u003eàCàràeàaàtàoà àdàaà àuànà àmàiàsàtàeàràiàoàsàoà àmàaàgàoà àdàià àOàfàiàrà,à àDàeàràvàiàsàcàiàoà àcàoànàsàeànàtàeà àaàlàlàâà€à™àiànàcàaànàtàaàtàoàràeà àdàià àcàràeàaàràeà àiànàtàoàrànàoà àaà àsàÃà©à àuànà àtàoàrànàaàdàoà àdàià à2àmà.à àIàlà àtàoàrànàaàdàoà àdàeàvàiàaà àgàlàià àaàtàtàaàcàcàhàià àaà àdàiàsàtàaànàzàaà àcàoàmàeà àpàeàrà àGàwàyànàtà àTàràoàeàlàlàià àeà àaàgàiàsàcàeà àcàoàmàeà àlàâà€à™àiànàcàaànàtàeàsàiàmàoà àZàeàfàiàràoà àcàoànàtàràoà àoàgànàià àbàeàràsàaàgàlàiàoà àeànàtàràoà à2àmà àdàaàlà àmàaàgàoà.à àLàâà€à™àiànàcàaànàtàaàtàoàràeà àaàlàlàâà€à™àiànà-à àtàeàrànàoà àdàeàlà àtàoàrànàaàdàoà ànàoànà àpàuàÃà²à àcàoàràràeàràeà,à ànàÃà©à àeàfàfàeàtàtàuàaàràeà àaàtàtàaàcàcàhàià àvàeàràsàoà àlàâà€à™àeàsàtàeàrànàoà àmàaà,à àsàeà àsàià àmàuàoàvàeà àeànàtàràoà à2àmà àdàaà àuànà àbàeàràsàaàgàlàiàoà àqàuàeàsàtàoà àsàuàbàiàsàcàeà àgàlàià àeàfàfàeàtàtàià àdàeàlàlàâà€à™àiànàcàaànàtàeàsàiàmàoà àZàeàfàiàràoà.à\u003c/p\u003e",
+                   "quantity":  "1",
+                   "weight":  0,
+                   "cost":  0,
+                   "sourcebook":  "MB 103",
+                   "class":  "Mage",
+                   "level":  "master",
+                   "source":  "air",
+                   "stamina":  22,
+                   "staminaIsVar":  false,
+                   "effect":  "Creato da un misterioso mago di Ofir, Derviscio consente allâ€™incantatore di creare intorno a sÃ© un tornado di 2m. Il tornado devia gli attacchi a distanza come per Gwynt Troelli e agisce come lâ€™incantesimo Zefiro contro ogni bersaglio entro 2m dal mago. Lâ€™incantatore allâ€™in- terno del tornado non puÃ² correre, nÃ© effettuare attacchi verso lâ€™esterno ma, se si muove entro 2m da un bersaglio questo subisce gli effetti dellâ€™incantesimo Zefiro.",
+                   "range":  "Raggio di 2m",
+                   "duration":  "Attiva (6 RES)",
+                   "defence":  "Schivare",
+                   "damageProperties":  {
+                                            "armorPiercing":  false,
+                                            "improvedArmorPiercing":  false,
+                                            "ablating":  false,
+                                            "crushingForce":  false,
+                                            "damageIsAblation":  false,
+                                            "stun":  0,
+                                            "damageToAllLocations":  false,
+                                            "bypassesWornArmor":  false,
+                                            "bypassesNaturalArmor":  false,
+                                            "defenseDifferenceMultiplier":  false,
+                                            "defenseMultiplierCap":  5,
+                                            "variableDamage":  false,
+                                            "effects":  [
+
+                                                        ],
+                                            "oilEffect":  "",
+                                            "silverTrait":  false,
+                                            "silverDamage":  "",
+                                            "isMeteorite":  false,
+                                            "isNonLethal":  false
+                                        },
+                   "regionProperties":  {
+                                            "createRegionFromTemplate":  false,
+                                            "behaviours":  {
+                                                               "tokenEnter":  null,
+                                                               "tokenTurnStart":  null,
+                                                               "tokenMoveWithin":  null,
+                                                               "tokenExit":  null
+                                                           }
+                                        },
+                   "attackOptions":  [
+                                         "spell"
+                                     ],
+                   "spellAttackSkill":  "spellcast"
+               },
+    "effects":  [
+
+                ],
+    "flags":  {
+
+              },
+    "_stats":  {
+                   "systemId":  "TheWitcherItaNewSystem",
+                   "coreVersion":  14
+               }
 }

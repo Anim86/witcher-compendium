@@ -1,0 +1,17 @@
+﻿{
+    "name":  "Tiromanzia",
+    "_id":  "7f6be1a2142c4af5",
+    "system":  {
+                   "stamina":  2,
+                   "cost":  2,
+                   "description":  "\u003cp\u003einvecchiando magicamente del formaggio o fondendolo, la Tiromanzia permette di scoprire se un determinato corso dâ€™azione avrÃ  un esito positivo o nega- tivo. Durante il rituale, il GM tira in segreto 1d6, il cui risultato sarÃ  sommato o sottratto a 13 per determinare la CD. Se il formaggio Ã¨ di qualitÃ  comune (10 Corone per UnitÃ ) allora il risultato si somma, se Ã¨ di alta qualitÃ  (30 Corone per UnitÃ ) si sottrae. Dopo di che si effettua la prova di Officiare Rituali e il ritualista chiede al GM se un determinato corso dâ€™azione avrÃ  esito positivo o ne- gativo. Con un successo la risposta deve essere veritiera, in caso di situazioni incerte si prende in esame il primo esito possibile. Con un fallimento, il GM fornisce una risposta falsa basata sul precedente tiro di 1d6: dispari negativo, pari positivo.\u003c/p\u003e",
+                   "class":  "ritual",
+                   "sourcebook":  "TC 104"
+               },
+    "type":  "ritual",
+    "img":  "modules/witcher-compendium/assets/optimized/assets/Immagini/Placeholder.webp",
+    "_stats":  {
+                   "coreVersion":  14,
+                   "systemId":  "TheWitcherItaNewSystem"
+               }
+}

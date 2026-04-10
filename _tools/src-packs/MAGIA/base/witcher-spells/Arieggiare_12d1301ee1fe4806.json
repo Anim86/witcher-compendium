@@ -1,62 +1,67 @@
-{
-    "_id": "12d1301ee1fe4806",
-    "name": "Arieggiare",
-    "type": "spell",
-    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag101_La Magia in The Witcher_01.webp",
-    "system": {
-        "description": "<p>Arieggiare consente di ripulire un’area di 4m di raggio (centrata sull’incantatore) da ogni fumo, ve- leno o altra contaminazione dell’aria, per tutta la durata dell’incantesimo.</p>",
-        "quantity": "1",
-        "weight": 0,
-        "cost": 0,
-        "sourcebook": "MB 105",
-        "class": "Spells",
-        "level": "novice",
-        "source": "fire",
-        "stamina": 2,
-        "staminaIsVar": false,
-        "effect": "Arieggiare consente di ripulire un’area di 4m di raggio (centrata sull’incantatore) da ogni fumo, ve- leno o altra contaminazione dell’aria, per tutta la durata dell’incantesimo.",
-        "range": "Raggio di 4m",
-        "duration": "Attiva (2 RES)",
-        "defence": "Nessuna",
-        "damageProperties": {
-            "armorPiercing": false,
-            "improvedArmorPiercing": false,
-            "ablating": false,
-            "crushingForce": false,
-            "damageIsAblation": false,
-            "stun": 0,
-            "damageToAllLocations": false,
-            "bypassesWornArmor": false,
-            "bypassesNaturalArmor": false,
-            "defenseDifferenceMultiplier": false,
-            "defenseMultiplierCap": 5,
-            "variableDamage": false,
-            "effects": [],
-            "oilEffect": "",
-            "silverTrait": false,
-            "silverDamage": "",
-            "isMeteorite": false,
-            "isNonLethal": false
-        },
-        "regionProperties": {
-            "createRegionFromTemplate": false,
-            "behaviours": {
-                "tokenEnter": null,
-                "tokenTurnStart": null,
-                "tokenMoveWithin": null,
-                "tokenExit": null
-            }
-        },
-        "attackOptions": [
-            "spell"
-        ],
-        "spellAttackSkill": "spellcast"
-    },
-    "effects": [],
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
-    }
+﻿{
+    "_id":  "12d1301ee1fe4806",
+    "name":  "Arieggiare",
+    "type":  "spell",
+    "img":  "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag101_La Magia in The Witcher_01.webp",
+    "system":  {
+                   "description":  "\u003cp\u003eàAàràiàeàgàgàiàaàràeà àcàoànàsàeànàtàeà àdàià àràiàpàuàlàiàràeà àuànàâà€à™àaàràeàaà àdàià à4àmà àdàià àràaàgàgàiàoà à(àcàeànàtàràaàtàaà àsàuàlàlàâà€à™àiànàcàaànàtàaàtàoàràeà)à àdàaà àoàgànàià àfàuàmàoà,à àvàeà-à àlàeànàoà àoà àaàlàtàràaà àcàoànàtàaàmàiànàaàzàiàoànàeà àdàeàlàlàâà€à™àaàràiàaà,à àpàeàrà àtàuàtàtàaà àlàaà àdàuàràaàtàaà àdàeàlàlàâà€à™àiànàcàaànàtàeàsàiàmàoà.à\u003c/p\u003e",
+                   "quantity":  "1",
+                   "weight":  0,
+                   "cost":  0,
+                   "sourcebook":  "MB 103",
+                   "class":  "Mage",
+                   "level":  "novice",
+                   "source":  "fire",
+                   "stamina":  2,
+                   "staminaIsVar":  false,
+                   "effect":  "Arieggiare consente di ripulire unâ€™area di 4m di raggio (centrata sullâ€™incantatore) da ogni fumo, ve- leno o altra contaminazione dellâ€™aria, per tutta la durata dellâ€™incantesimo.",
+                   "range":  "Raggio di 4m",
+                   "duration":  "Attiva (2 RES)",
+                   "defence":  "Nessuna",
+                   "damageProperties":  {
+                                            "armorPiercing":  false,
+                                            "improvedArmorPiercing":  false,
+                                            "ablating":  false,
+                                            "crushingForce":  false,
+                                            "damageIsAblation":  false,
+                                            "stun":  0,
+                                            "damageToAllLocations":  false,
+                                            "bypassesWornArmor":  false,
+                                            "bypassesNaturalArmor":  false,
+                                            "defenseDifferenceMultiplier":  false,
+                                            "defenseMultiplierCap":  5,
+                                            "variableDamage":  false,
+                                            "effects":  [
+
+                                                        ],
+                                            "oilEffect":  "",
+                                            "silverTrait":  false,
+                                            "silverDamage":  "",
+                                            "isMeteorite":  false,
+                                            "isNonLethal":  false
+                                        },
+                   "regionProperties":  {
+                                            "createRegionFromTemplate":  false,
+                                            "behaviours":  {
+                                                               "tokenEnter":  null,
+                                                               "tokenTurnStart":  null,
+                                                               "tokenMoveWithin":  null,
+                                                               "tokenExit":  null
+                                                           }
+                                        },
+                   "attackOptions":  [
+                                         "spell"
+                                     ],
+                   "spellAttackSkill":  "spellcast"
+               },
+    "effects":  [
+
+                ],
+    "flags":  {
+
+              },
+    "_stats":  {
+                   "systemId":  "TheWitcherItaNewSystem",
+                   "coreVersion":  14
+               }
 }

@@ -1,0 +1,30 @@
+{
+    "_id": "e6f7a8b9c0d1e2f3",
+    "name": "Sangue e Ossa",
+    "type": "skill",
+    "img": "icons/svg/skill.svg",
+    "system": {
+        "attribute": "will",
+        "description": "<p>L’abilità di alterare la sorte di una persona gettando ossa in una ciotola piena del suo sangue. Conferisce bonus alle prove future.</p>",
+        "sourcebook": "TC 70",
+        "value": 0,
+        "label": "",
+        "isOpened": false,
+        "modifiers": [],
+        "activeEffectModifiers": 0,
+        "isProfession": true,
+        "isPickup": false,
+        "isLearned": false
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}
