@@ -1,0 +1,21 @@
+{
+  "name": "Braccio Fratturato",
+  "type": "criticalWound",
+  "system": {
+    "severity": "complex",
+    "description": "<p>Il colpo ha fratturato il braccio della vittima.</p><p><b>Uscita:</b> La vittima subisce -3 alle azioni effettuate con quel braccio.</p><p><b>Stabilizzato:</b> La vittima subisce -2 alle azioni effettuate con quel braccio.</p><p><b>Curato:</b> La vittima subisce -1 alle azioni effettuate con quel braccio.</p>",
+    "sourcebook": "MB 160"
+  },
+  "img": "icons/svg/hazard.svg",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "systemVersion": "1.0.0",
+    "coreVersion": "14",
+    "createdTime": 1712760000000,
+    "modifiedTime": 1712760000000,
+    "lastModifiedBy": "antigravity"
+  },
+  "_id": "critw006braccio"
+}

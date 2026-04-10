@@ -1,0 +1,23 @@
+{
+  "name": "Maledizione del Vagabondo",
+  "type": "hex",
+  "system": {
+    "danger": "Alta",
+    "stamina": 0,
+    "liftRequirement": "Sofferenza Estrema",
+    "description": "<p>La Maledizione del Vagabondo è una della più crudeli. Pur non causando danni diretti, toglie alla vittima amici, compagni e famigliari.</p><p>Lentamente, le persone attorno alla vittima verranno allontanate da incomprensioni, litigi, eventi naturali, rapimenti o (se resistono oltre un mese) il fato sembrerà cospirare attivamente per ucciderle.</p>",
+    "sourcebook": "MB 230"
+  },
+  "img": "icons/svg/skull.svg",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "systemVersion": "1.0.0",
+    "coreVersion": "14",
+    "createdTime": 1712760000000,
+    "modifiedTime": 1712760000000,
+    "lastModifiedBy": "antigravity"
+  },
+  "_id": "hex004vagabon"
+}

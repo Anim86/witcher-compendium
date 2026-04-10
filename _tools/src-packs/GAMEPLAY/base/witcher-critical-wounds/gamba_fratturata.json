@@ -1,0 +1,21 @@
+{
+  "name": "Gamba Fratturata",
+  "type": "criticalWound",
+  "system": {
+    "severity": "complex",
+    "description": "<p>Il colpo ha fratturato la gamba della vittima.</p><p><b>Uscita:</b> La vittima subisce -3 a VEL, Eludere e Atletica.</p><p><b>Stabilizzato:</b> La vittima subisce -2 a VEL, Eludere e Atletica.</p><p><b>Curato:</b> La vittima subisce -1 a VEL, Eludere e Atletica.</p>",
+    "sourcebook": "MB 160"
+  },
+  "img": "icons/svg/hazard.svg",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "systemVersion": "1.0.0",
+    "coreVersion": "14",
+    "createdTime": 1712760000000,
+    "modifiedTime": 1712760000000,
+    "lastModifiedBy": "antigravity"
+  },
+  "_id": "critw007gamba"
+}

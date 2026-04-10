@@ -1,0 +1,21 @@
+{
+  "name": "Pneumotorace",
+  "type": "criticalWound",
+  "system": {
+    "severity": "difficult",
+    "description": "<p>La ferita lacera un polmone e il torace si riempie d’aria, schiacciando gli organi interni.</p><p><b>Uscita:</b> La vittima subisce -3 a FIS e VEL e inizia inoltre a soffocare.</p><p><b>Stabilizzato:</b> La vittima subisce -2 a FIS e VEL.</p><p><b>Curato:</b> La vittima subisce -1 a FIS e VEL.</p>",
+    "sourcebook": "MB 161"
+  },
+  "img": "icons/svg/hazard.svg",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "systemVersion": "1.0.0",
+    "coreVersion": "14",
+    "createdTime": 1712760000000,
+    "modifiedTime": 1712760000000,
+    "lastModifiedBy": "antigravity"
+  },
+  "_id": "critw009pneumo"
+}

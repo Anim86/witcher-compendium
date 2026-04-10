@@ -1,0 +1,21 @@
+{
+  "name": "Costole Incrinate",
+  "type": "criticalWound",
+  "system": {
+    "severity": "simple",
+    "description": "<p>Il colpo ha incrinato le costole della vittima, rendendo doloroso respirare e fare sforzi fisici.</p><p><b>Uscita:</b> La vittima subisce -2 a FIS. Non ha effetto sui Punti Salute.</p><p><b>Stabilizzato:</b> La vittima subisce -1 a FIS.</p><p><b>Curato:</b> La vittima subisce -10 all'Ingombro massimo.</p>",
+    "sourcebook": "MB 159"
+  },
+  "img": "icons/svg/hazard.svg",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "systemVersion": "1.0.0",
+    "coreVersion": "14",
+    "createdTime": 1712760000000,
+    "modifiedTime": 1712760000000,
+    "lastModifiedBy": "antigravity"
+  },
+  "_id": "critw003costole"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Decapitazione",
+  "type": "criticalWound",
+  "system": {
+    "severity": "deadly",
+    "description": "<p>Il colpo stacca la testa dal torso. La morte è istantanea.</p><p><b>Uscita:</b> Morte istantanea.</p><p><b>Stabilizzato:</b> Questa ferita non può essere stabilizzata.</p><p><b>Curato:</b> Questa ferita non può essere curata.</p>",
+    "sourcebook": "MB 161"
+  },
+  "img": "icons/svg/hazard.svg",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "systemVersion": "1.0.0",
+    "coreVersion": "14",
+    "createdTime": 1712760000000,
+    "modifiedTime": 1712760000000,
+    "lastModifiedBy": "antigravity"
+  },
+  "_id": "critw011decap"
+}

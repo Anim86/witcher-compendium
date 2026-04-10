@@ -1,6 +1,6 @@
 # WITCHER COMPENDIUM — PROTOCOLLO OPERATIVO COMPLETO
 ## Documento di riferimento per LLM / AI Builder
-### Versione: 2.3 — Data: 10 Aprile 2026 ore 16:15
+### Versione: 2.4 — Data: 10 Aprile 2026 ore 22:40
 ### Autore: Perplexity (Strategist) per il team Manuel + Antigravity
 
 ---
@@ -116,7 +116,13 @@ _tools/src-packs/
 │   └── base/
 │       ├── witcher-spells/
 │       └── witcher-rituals/
-└── [altri pack...]
+├── GAMEPLAY/                          ← NUOVO 10 Apr
+│   └── base/
+│       ├── witcher-critical-wounds/
+│       └── witcher-curses/
+└── LORE/                              ← NUOVO 10 Apr
+    └── base/
+        └── witcher-lore/
 ```
 
 ### 3.2 Struttura JSON esempio — ARMA
@@ -431,6 +437,9 @@ Dopo ogni deploy, Manuel verifica a campione:
 | witcher-races | 4 | ✅ COMPLETO | solo razze giocabili MB |
 | witcher-professions | 10 | ✅ COMPLETO | +Druido TC, Prete upgrade TC |
 | witcher-skills | ~60 | ✅ COMPLETO | +20 nuove abilità TC |
+| witcher-critical-wounds | 14 | ✅ COMPLETO | MB 159-161 |
+| witcher-curses | 5 | ✅ COMPLETO | MB 230-232 |
+| witcher-lore | 39 | ✅ COMPLETO | MB 179-182, 207-211 |
 
 **Versione modulo corrente: v14.1.25** — verificare prima del bump
 
@@ -557,6 +566,6 @@ Documentazione dettagliata dei processi di creazione e verifica:
 
 ---
 
-*Documento aggiornato da Antigravity — 10 Aprile 2026 — v2.3*
-*Precedente versione: v2.2 del 10 Aprile 2026 ore 14:20*
-*Modifiche v2.3: aggiornato stato pack con il completamento di Magia (Spells, Rituals), Razze, Professioni e Abilità.*
+*Documento aggiornato da Antigravity — 10 Aprile 2026 — v2.4*
+*Precedente versione: v2.3 del 10 Aprile 2026 ore 16:15*
+*Modifiche v2.4: aggiunti pack witcher-critical-wounds (severity/desc), witcher-curses (GM curses) e witcher-lore (note).*

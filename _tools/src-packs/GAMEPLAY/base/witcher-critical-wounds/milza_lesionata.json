@@ -1,0 +1,21 @@
+{
+  "name": "Milza Lesionata",
+  "type": "criticalWound",
+  "system": {
+    "severity": "complex",
+    "description": "<p>Una lesione alla milza sanguina copiosamente, frastornando la vittima.</p><p><b>Uscita:</b> La vittima deve effettuare un tiro salvezza su Grinta ogni 5 round. La ferita causa sanguinamento.</p><p><b>Stabilizzato:</b> La vittima deve effettuare un tiro salvezza su Grinta ogni 10 round.</p><p><b>Curato:</b> La vittima subisce -2 Grinta.</p>",
+    "sourcebook": "MB 160"
+  },
+  "img": "icons/svg/hazard.svg",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "systemVersion": "1.0.0",
+    "coreVersion": "14",
+    "createdTime": 1712760000000,
+    "modifiedTime": 1712760000000,
+    "lastModifiedBy": "antigravity"
+  },
+  "_id": "critw004milza"
+}

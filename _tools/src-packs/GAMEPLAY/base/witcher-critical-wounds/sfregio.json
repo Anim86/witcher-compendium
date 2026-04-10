@@ -1,0 +1,21 @@
+{
+  "name": "Sfregio",
+  "type": "criticalWound",
+  "system": {
+    "severity": "simple",
+    "description": "<p>Il colpo ha sfigurato il volto della vittima. È grottesca ed è difficile guardarla in viso.</p><p><b>Uscita:</b> La vittima subisce -3 allo Scontro Verbale empatico (Carisma, Persuasione, Seduzione, Inganno, Etichetta e Intimidire).</p><p><b>Stabilizzato:</b> La vittima subisce -1 a Scontro Verbale.</p><p><b>Curato:</b> La vittima subisce -1 a Seduzione.</p>",
+    "sourcebook": "MB 159"
+  },
+  "img": "icons/svg/hazard.svg",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "systemVersion": "1.0.0",
+    "coreVersion": "14",
+    "createdTime": 1712760000000,
+    "modifiedTime": 1712760000000,
+    "lastModifiedBy": "antigravity"
+  },
+  "_id": "critw002sfregio"
+}
