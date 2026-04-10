@@ -73,6 +73,12 @@ async function compilePack(packMetadata) {
         }).filter(op => op !== null);
 
         await db.batch(writeOps);
+        
+        // --- NUOVO: Forza la compattazione per creare i file .ldb ---
+        if (typeof db.compactRange === 'function') {
+            await db.compactRange('\x00', '\xff');
+        }
+        
         console.log(`   ✅ Inserite ${writeOps.length} voci con successo.`);
 
     } catch (e) {
