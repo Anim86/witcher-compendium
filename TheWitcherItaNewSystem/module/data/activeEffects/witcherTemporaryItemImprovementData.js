@@ -15,7 +15,8 @@ export default class WitcherTemporaryItemImprovementData extends foundry.abstrac
                 initial: false,
                 label: 'WITCHER.Effect.applyOnTarget'
             }),
-            isTransferred: new fields.BooleanField({ initial: false })
+            isTransferred: new fields.BooleanField({ initial: false }),
+            changes: new fields.ArrayField(new fields.ObjectField(), { initial: [] })
         };
     }
 }

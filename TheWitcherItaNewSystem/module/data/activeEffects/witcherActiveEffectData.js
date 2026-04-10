@@ -18,7 +18,8 @@ export default class WitcherActiveEffectData extends foundry.abstract.TypeDataMo
             applyOnDamage: new fields.BooleanField({
                 initial: false,
                 label: 'WITCHER.Effect.applyOnDamage'
-            })
+            }),
+            changes: new fields.ArrayField(new fields.ObjectField(), { initial: [] })
         };
     }
 }
