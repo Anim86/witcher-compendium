@@ -1,7 +1,7 @@
 <section class="scrollable">
     {{>"systems/TheWitcherItaNewSystem/templates/partials/item-header.hbs"}}
     <div class="description">
-        <textarea rows=5 name="system.description">{{data.description}}</textarea>
+        {{editor item.system.description target="system.description" button=true owner=owner editable=editable engine="prosemirror"}}
     </div>
     <div class='storedWeight'>
         <input type="text" value="{{data.storedWeight}}" disabled />
@@ -30,7 +30,7 @@
                 </div>
                 {{#if storedItem.description}}
                     <description>
-                        <textarea rows=5 disabled>{{storedItem.description}}</textarea>
+                        <div class="disabled-description">{{{storedItem.description}}}</div>
                     </description>
                 {{/if}}
             </item-content>

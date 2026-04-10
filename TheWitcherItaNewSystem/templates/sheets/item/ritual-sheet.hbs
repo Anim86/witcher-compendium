@@ -77,14 +77,12 @@
     </table>
     <div>
         <label>{{localize "WITCHER.Item.Effect"}}</label>
-        <textarea rows="10" name="system.effect">{{item.system.effect}}</textarea>
+        {{editor item.system.effect target="system.effect" button=true owner=owner editable=editable engine="prosemirror"}}
     </div>
     {{#unless item.system.ritualComponents}}
         <div>
             <label>{{localize "WITCHER.Spell.Ritual.components"}}</label>
-            {{#if item.system.components}}
-                <textarea rows="4" name="system.components">{{item.system.components}}</textarea>
-            {{/if}}
+                {{editor item.system.components target="system.components" button=true owner=owner editable=editable engine="prosemirror"}}
         </div>
     {{/unless}}
 

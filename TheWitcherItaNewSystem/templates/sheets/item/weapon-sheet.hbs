@@ -1,8 +1,8 @@
 <section class="scrollable">
     {{>"systems/TheWitcherItaNewSystem/templates/partials/item-header.hbs"}}
-    <details class="description">
+    <details class="description" open>
         <summary>{{localize "WITCHER.Item.Description"}}</summary>
-        <textarea rows=5 name="system.description">{{item.system.description}}</textarea>
+        {{editor item.system.description target="system.description" button=true owner=owner editable=editable engine="prosemirror"}}
     </details>
     <div class="item-options">
         <div class="item-column">

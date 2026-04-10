@@ -6,7 +6,7 @@
         "minimum": "14",
         "verified": "14.359"
     },
-    "version": "v14.1.44",
+    "version": "v14.1.45",
     "media": [
         {
             "type": "icon",
@@ -41,15 +41,27 @@
             "mystery": {}
         },
         "Item": {
-            "alchemical": {},
-            "armor": {},
+            "alchemical": {
+                "htmlFields": ["effect"]
+            },
+            "armor": {
+                "htmlFields": ["description"]
+            },
             "component": {},
-            "container": {},
+            "container": {
+                "htmlFields": ["description"]
+            },
             "diagrams": {},
             "enhancement": {},
-            "mount": {},
-            "mutagen": {},
-            "note": {},
+            "mount": {
+                "htmlFields": ["description"]
+            },
+            "mutagen": {
+                "htmlFields": ["description", "effect"]
+            },
+            "note": {
+                "htmlFields": ["description"]
+            },
             "profession": {
                 "htmlFields": [
                     "notes",
@@ -64,11 +76,21 @@
                     "*.description"
                 ]
             },
-            "spell": {},
-            "hex": {},
-            "ritual": {},
-            "valuable": {},
-            "weapon": {},
+            "spell": {
+                "htmlFields": ["effect", "sideEffect"]
+            },
+            "hex": {
+                "htmlFields": ["effect", "liftRequirement"]
+            },
+            "ritual": {
+                "htmlFields": ["effect", "components"]
+            },
+            "valuable": {
+                "htmlFields": ["description"]
+            },
+            "weapon": {
+                "htmlFields": ["description"]
+            },
             "clue": {},
             "obstacle": {},
             "skill": {}
@@ -81,63 +103,6 @@
             "temporaryItemImprovement": {}
         }
     },
-    "packFolders": [
-        {
-            "name": "Witcher TRPG System",
-            "sorting": "m",
-            "folders": [
-                {
-                    "name": "Character Generation",
-                    "sorting": "a",
-                    "packs": [
-                        "Character-gen",
-                        "Character-gen_Sub-tables",
-                        "Witcher_Lifepath_and_BG_Sub-tables",
-                        "Life_Event_Sub-tables",
-                        "Style_and_Values_Sub-tables"
-                    ]
-                }
-            ]
-        }
-    ],
-    "packs": [
-        {
-            "name": "Combat",
-            "label": "Combat",
-            "path": "packs/combat",
-            "type": "RollTable"
-        },
-        {
-            "name": "Character-gen",
-            "label": "Character Generator",
-            "path": "packs/character-generator",
-            "type": "RollTable"
-        },
-        {
-            "name": "Character-gen_Sub-tables",
-            "label": "Character Generator Sub-tables",
-            "path": "packs/character-generator-sub-tables",
-            "type": "RollTable"
-        },
-        {
-            "name": "Witcher_Lifepath_and_BG_Sub-tables",
-            "label": "Witcher Lifepath and BG Sub-tables",
-            "path": "packs/witcher-lifepath",
-            "type": "RollTable"
-        },
-        {
-            "name": "Life_Event_Sub-tables",
-            "label": "Life Event Sub-tables",
-            "path": "packs/lifepath",
-            "type": "RollTable"
-        },
-        {
-            "name": "Style_and_Values_Sub-tables",
-            "label": "Style and Values Sub-tables",
-            "path": "packs/style",
-            "type": "RollTable"
-        }
-    ],
     "languages": [
         {
             "lang": "en",
@@ -170,5 +135,5 @@
     "secondaryTokenAttribute": "resources.power",
     "url": "https://github.com/Anim86/witcher-compendium",
     "manifest": "https://raw.githubusercontent.com/Anim86/witcher-compendium/main/TheWitcherItaNewSystem/system.json",
-    "download": "https://github.com/Anim86/witcher-compendium/releases/download/v14.1.44/system.zip"
+    "download": "https://github.com/Anim86/witcher-compendium/releases/download/v14.1.45/system.zip"
 }

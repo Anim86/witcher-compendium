@@ -13,8 +13,8 @@ const MODULE_JSON_PATH = path.join(MODULE_ROOT, 'module.json');
 
 async function compilePack(packMetadata) {
     const packName = packMetadata.name;
-    const packRelPath = packMetadata.path; 
-    
+    const packRelPath = packMetadata.path;
+
     const srcSubPath = packRelPath.replace(/^packs\//, '');
     const srcDir = path.join(SRC_ROOT, srcSubPath);
     const destDir = path.join(MODULE_ROOT, packRelPath);
@@ -31,7 +31,8 @@ async function compilePack(packMetadata) {
     const entries = [];
     for (const file of files) {
         try {
-            const content = fs.readFileSync(path.join(srcDir, file), 'utf8');
+            let content = fs.readFileSync(path.join(srcDir, file), 'utf8');
+            content = content.replace(/^\uFEFF/, '');
             const data = JSON.parse(content);
             entries.push(data);
         } catch (e) {
@@ -56,32 +57,52 @@ async function compilePack(packMetadata) {
     }
 
     // 3. Crea il database con opzioni di massima compatibilità
-    const db = new ClassicLevel(destDir, { 
+    const db = new ClassicLevel(destDir, {
         valueEncoding: 'json',
-        compression: false // Disabilitata per evitare problemi con Foundry
+        compression: false
     });
 
     try {
         await db.open();
-        
-        // Creazione operazioni batch
-        const ops = entries.map(e => ({ type: 'put', key: e._id, value: e }));
+
+        // --- INIZIO FIX FOUNDRY V14 ---
+        // Determina la collection basandoti sul 'type' dichiarato nel module.json
+        // Esempi: 'Item' -> 'items', 'Actor' -> 'actors', 'JournalEntry' -> 'journal'
+        let collectionType = 'items';
+        if (packMetadata.type) {
+            if (packMetadata.type === 'JournalEntry') {
+                collectionType = 'journal';
+            } else if (packMetadata.type === 'RollTable') {
+                collectionType = 'tables';
+            } else {
+                collectionType = packMetadata.type.toLowerCase() + 's';
+            }
+        }
+
+        // Creazione operazioni batch con la CHIAVE FORMATTATA (!collection!_id)
+        const ops = entries.map(e => ({
+            type: 'put',
+            key: `!${collectionType}!${e._id}`,
+            value: e
+        }));
+        // --- FINE FIX FOUNDRY V14 ---
+
         await db.batch(ops);
-        
-        // Forza la scrittura dei file .ldb (compattazione forzata)
+
+        // Forza la scrittura dei file .ldb
         await db.compactRange('\x00', '\xff');
-        
+
         await db.close();
-        console.log(`   ✅ Inserite ${entries.length} voci con successo.`);
+        console.log(`   ✅ Inserite ${entries.length} voci con successo nel formato !${collectionType}!.`);
     } catch (e) {
         console.error(`   ❌ Errore durante la scrittura del database ${packName}: ${e.message}`);
-        try { await db.close(); } catch(err) {}
+        try { await db.close(); } catch (err) { }
     }
 }
 
 async function main() {
     console.log("🚀 Inizio compilazione globale dei pacchetti Witcher Compendium (ULTRA-COMPATIBILITY MODE)...");
-    
+
     if (!fs.existsSync(MODULE_JSON_PATH)) {
         console.error("❌ Errore: module.json non trovato.");
         process.exit(1);
