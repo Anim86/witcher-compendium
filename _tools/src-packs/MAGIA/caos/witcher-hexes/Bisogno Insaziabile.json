@@ -1,0 +1,59 @@
+﻿{
+  "_id": "690b79154deccbf9",
+  "name": "Bisogno Insaziabile",
+  "type": "hex",
+  "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag118_Rituali_01.webp",
+  "system": {
+    "description": "<p>Fattura di pericolosità Media. Rende la vittima bersaglio di gola e accidia, aumentandone innaturalmente il bisogno di nutrirsi e dormire. La vittima è obbligata a dormire ininterrottamente per dieci ore ogni notte: in caso contrario subisce una penalità di -3 a tutte le prove a causa della mancanza di riposo. Deve inoltre consumare obbligatoriamente cinque pasti completi al giorno: in caso contrario la sua Resistenza (RES) massima sarà dimezzata per l'intera giornata successiva. Come tutte le fatture, i suoi effetti sono permanenti finché la vittima non soddisfa i requisiti di uno specifico rituale di rimozione.</p>",
+    "quantity": "1",
+    "weight": 0,
+    "cost": 0,
+    "sourcebook": "TC 105",
+    "class": "hex",
+    "level": "medium",
+    "source": "",
+    "stamina": 8,
+    "staminaIsVar": false,
+    "effect": "Rende la vittima bersaglio di gola e accidia, aumentandone innaturalmente il bisogno di nutrirsi e dormire. La vittima deve dormire ininterrottamente per 10 ore ogni notte, altrimenti subisce -3 a tutte le prove. Deve inoltre consumare 5 pasti completi al giorno, altrimenti la RES massima sarà dimezzata per l'intera giornata successiva.",
+    "range": "Contatto",
+    "duration": "Permanente (fino a rimozione rituale)",
+    "defence": "",
+    "damageProperties": {
+      "armorPiercing": false,
+      "improvedArmorPiercing": false,
+      "ablating": false,
+      "crushingForce": false,
+      "damageIsAblation": false,
+      "stun": 0,
+      "damageToAllLocations": false,
+      "bypassesWornArmor": false,
+      "bypassesNaturalArmor": false,
+      "defenseDifferenceMultiplier": false,
+      "defenseMultiplierCap": 5,
+      "variableDamage": false,
+      "effects": [],
+      "oilEffect": "",
+      "silverTrait": false,
+      "silverDamage": "",
+      "isMeteorite": false,
+      "isNonLethal": false
+    },
+    "regionProperties": {
+      "createRegionFromTemplate": false,
+      "behaviours": {
+        "tokenEnter": null,
+        "tokenTurnStart": null,
+        "tokenMoveWithin": null,
+        "tokenExit": null
+      }
+    },
+    "attackOptions": ["spell"],
+    "spellAttackSkill": "hexweave"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
+}

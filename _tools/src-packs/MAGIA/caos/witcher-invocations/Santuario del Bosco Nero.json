@@ -1,0 +1,59 @@
+﻿{
+  "_id": "779ebc0c98030c74",
+  "name": "Santuario del Bosco Nero",
+  "type": "spell",
+  "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag101_La Magia in The Witcher_01.webp",
+  "system": {
+    "description": "<p>Invocazione da Ierofante/Flaminika (Caed Myrkvid). Consente al Druido e alleati di entrare in contatto con gli alberi: è possibile vedere attraverso ogni tronco nell'area e teletrasportarsi istantaneamente tra gli alberi designati.</p>",
+    "quantity": "1",
+    "weight": 0,
+    "cost": 0,
+    "sourcebook": "TC 100",
+    "class": "Invocations",
+    "level": "master",
+    "source": "Druid",
+    "stamina": 16,
+    "staminaIsVar": false,
+    "effect": "Permette al Druido e alleati di vedere attraverso gli alberi e teletrasportarsi tra loro nell'area.",
+    "range": "Raggio di 1,6km",
+    "duration": "1 ora",
+    "defence": "Nessuna",
+    "damageProperties": {
+      "armorPiercing": false,
+      "improvedArmorPiercing": false,
+      "ablating": false,
+      "crushingForce": false,
+      "damageIsAblation": false,
+      "stun": 0,
+      "damageToAllLocations": false,
+      "bypassesWornArmor": false,
+      "bypassesNaturalArmor": false,
+      "defenseDifferenceMultiplier": false,
+      "defenseMultiplierCap": 5,
+      "variableDamage": false,
+      "effects": [],
+      "oilEffect": "",
+      "silverTrait": false,
+      "silverDamage": "",
+      "isMeteorite": false,
+      "isNonLethal": false
+    },
+    "regionProperties": {
+      "createRegionFromTemplate": false,
+      "behaviours": {
+        "tokenEnter": null,
+        "tokenTurnStart": null,
+        "tokenMoveWithin": null,
+        "tokenExit": null
+      }
+    },
+    "attackOptions": ["spell"],
+    "spellAttackSkill": "spellcast"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
+}

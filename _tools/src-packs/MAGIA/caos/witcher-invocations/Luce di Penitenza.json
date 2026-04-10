@@ -1,0 +1,59 @@
+﻿{
+  "_id": "e39533c5de3f4a91",
+  "name": "Luce di Penitenza",
+  "type": "spell",
+  "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag101_La Magia in The Witcher_01.webp",
+  "system": {
+    "description": "<p>Invocazione da Prete di livello Novizio. Punisce un indegno annullando la sua volontà: la vittima perde istantaneamente 2d6 punti di Resistenza (RES), più altri 2d6 RES aggiuntivi se possiede un Vigore pari o superiore a 1.</p>",
+    "quantity": "1",
+    "weight": 0,
+    "cost": 0,
+    "sourcebook": "TC 92",
+    "class": "Invocations",
+    "level": "novice",
+    "source": "Priest",
+    "stamina": 3,
+    "staminaIsVar": false,
+    "effect": "Punisce un indegno annullando la sua volontà: la vittima perde istantaneamente 2d6 punti di RES, più altri 2d6 RES aggiuntivi se possiede un Vigore pari o superiore a 1.",
+    "range": "6m",
+    "duration": "Istantanea",
+    "defence": "Resistere alla Magia",
+    "damageProperties": {
+      "armorPiercing": false,
+      "improvedArmorPiercing": false,
+      "ablating": false,
+      "crushingForce": false,
+      "damageIsAblation": false,
+      "stun": 0,
+      "damageToAllLocations": false,
+      "bypassesWornArmor": false,
+      "bypassesNaturalArmor": false,
+      "defenseDifferenceMultiplier": false,
+      "defenseMultiplierCap": 5,
+      "variableDamage": false,
+      "effects": [],
+      "oilEffect": "",
+      "silverTrait": false,
+      "silverDamage": "",
+      "isMeteorite": false,
+      "isNonLethal": false
+    },
+    "regionProperties": {
+      "createRegionFromTemplate": false,
+      "behaviours": {
+        "tokenEnter": null,
+        "tokenTurnStart": null,
+        "tokenMoveWithin": null,
+        "tokenExit": null
+      }
+    },
+    "attackOptions": ["spell"],
+    "spellAttackSkill": "spellcast"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
+}

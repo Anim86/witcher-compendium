@@ -1,0 +1,59 @@
+﻿{
+  "_id": "5677182fe501ce6e",
+  "name": "Ossa di Vetro",
+  "type": "hex",
+  "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag118_Rituali_01.webp",
+  "system": {
+    "description": "<p>Fattura di pericolosità Alta. Ossa di Vetro rende le ossa della vittima cave e facili da spezzare. Al posto della Ferita Critica 'Costole Incrinate' subisce 'Costole Rotte', una 'Frattura' a Braccio/Gamba diventa una 'Frattura Scomposta', una 'Ferita alla Testa' diventa una 'Frattura Cranica'. Inoltre, tutte le prove per stabilizzare e trattare queste Ferite Critiche subiscono una penalità di -3. Come tutte le fatture, i suoi effetti sono permanenti finché la vittima non soddisfa i requisiti di uno specifico rituale di rimozione.</p>",
+    "quantity": "1",
+    "weight": 0,
+    "cost": 0,
+    "sourcebook": "TC 106",
+    "class": "hex",
+    "level": "high",
+    "source": "",
+    "stamina": 12,
+    "staminaIsVar": false,
+    "effect": "Rende le ossa della vittima cave e facili da spezzare. Al posto della Ferita Critica Costole Incrinate subisce Costole Rotte, una Frattura diventa una Frattura Scomposta, una Ferita alla Testa diventa una Frattura Cranica. Inoltre, le prove per stabilizzare e trattare queste Ferite Critiche subiscono una penalità di -3.",
+    "range": "Contatto",
+    "duration": "Permanente (fino a rimozione rituale)",
+    "defence": "",
+    "damageProperties": {
+      "armorPiercing": false,
+      "improvedArmorPiercing": false,
+      "ablating": false,
+      "crushingForce": false,
+      "damageIsAblation": false,
+      "stun": 0,
+      "damageToAllLocations": false,
+      "bypassesWornArmor": false,
+      "bypassesNaturalArmor": false,
+      "defenseDifferenceMultiplier": false,
+      "defenseMultiplierCap": 5,
+      "variableDamage": false,
+      "effects": [],
+      "oilEffect": "",
+      "silverTrait": false,
+      "silverDamage": "",
+      "isMeteorite": false,
+      "isNonLethal": false
+    },
+    "regionProperties": {
+      "createRegionFromTemplate": false,
+      "behaviours": {
+        "tokenEnter": null,
+        "tokenTurnStart": null,
+        "tokenMoveWithin": null,
+        "tokenExit": null
+      }
+    },
+    "attackOptions": ["spell"],
+    "spellAttackSkill": "hexweave"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
+}

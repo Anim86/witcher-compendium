@@ -1,0 +1,59 @@
+﻿{
+  "_id": "9445945550c76016",
+  "name": "Fattura Odiosa",
+  "type": "hex",
+  "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag118_Rituali_01.webp",
+  "system": {
+    "description": "<p>Fattura di pericolosità Bassa. La magia si avvolge attorno alla vittima rendendola repellente agli occhi degli altri, abbassando automaticamente di un grado la sua Posizione Sociale — a meno che non sia già considerata Odiata. Tale discriminazione ha effetto persino nei confronti dei membri della sua stessa razza o specie. Come tutte le fatture, i suoi effetti sono permanenti finché la vittima non soddisfa i requisiti di uno specifico rituale di rimozione.</p>",
+    "quantity": "1",
+    "weight": 0,
+    "cost": 0,
+    "sourcebook": "TC 105",
+    "class": "hex",
+    "level": "low",
+    "source": "",
+    "stamina": 4,
+    "staminaIsVar": false,
+    "effect": "La magia si avvolge attorno alla vittima rendendola repellente agli occhi degli altri. Abbassa automaticamente di un grado la sua Posizione Sociale (a meno che non sia già considerata Odiata). La discriminazione ha effetto persino nei confronti dei membri della sua stessa razza o specie.",
+    "range": "Contatto",
+    "duration": "Permanente (fino a rimozione rituale)",
+    "defence": "",
+    "damageProperties": {
+      "armorPiercing": false,
+      "improvedArmorPiercing": false,
+      "ablating": false,
+      "crushingForce": false,
+      "damageIsAblation": false,
+      "stun": 0,
+      "damageToAllLocations": false,
+      "bypassesWornArmor": false,
+      "bypassesNaturalArmor": false,
+      "defenseDifferenceMultiplier": false,
+      "defenseMultiplierCap": 5,
+      "variableDamage": false,
+      "effects": [],
+      "oilEffect": "",
+      "silverTrait": false,
+      "silverDamage": "",
+      "isMeteorite": false,
+      "isNonLethal": false
+    },
+    "regionProperties": {
+      "createRegionFromTemplate": false,
+      "behaviours": {
+        "tokenEnter": null,
+        "tokenTurnStart": null,
+        "tokenMoveWithin": null,
+        "tokenExit": null
+      }
+    },
+    "attackOptions": ["spell"],
+    "spellAttackSkill": "hexweave"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
+}

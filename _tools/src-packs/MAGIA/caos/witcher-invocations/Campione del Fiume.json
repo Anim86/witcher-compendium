@@ -1,0 +1,59 @@
+﻿{
+  "_id": "24945b9cb2f32b12",
+  "name": "Campione del Fiume",
+  "type": "spell",
+  "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag101_La Magia in The Witcher_01.webp",
+  "system": {
+    "description": "<p>Invocazione da Arciprete (Veyopatis). Rende il bersaglio un campione infondendogli forza sovrumana: ottiene Resistenza a ogni tipo di danno e un bonus di +5 a tutti i tiri. Il mantenimento costa 5 RES per round.</p>",
+    "quantity": "1",
+    "weight": 0,
+    "cost": 0,
+    "sourcebook": "TC 95",
+    "class": "Invocations",
+    "level": "master",
+    "source": "Priest",
+    "stamina": 16,
+    "staminaIsVar": false,
+    "effect": "Rende il bersaglio un campione infondendogli forza sovrumana: ottiene Resistenza a ogni tipo di danno e +5 a tutti i tiri.",
+    "range": "10m",
+    "duration": "Attiva (5 RES)",
+    "defence": "Nessuna",
+    "damageProperties": {
+      "armorPiercing": false,
+      "improvedArmorPiercing": false,
+      "ablating": false,
+      "crushingForce": false,
+      "damageIsAblation": false,
+      "stun": 0,
+      "damageToAllLocations": false,
+      "bypassesWornArmor": false,
+      "bypassesNaturalArmor": false,
+      "defenseDifferenceMultiplier": false,
+      "defenseMultiplierCap": 5,
+      "variableDamage": false,
+      "effects": [],
+      "oilEffect": "",
+      "silverTrait": false,
+      "silverDamage": "",
+      "isMeteorite": false,
+      "isNonLethal": false
+    },
+    "regionProperties": {
+      "createRegionFromTemplate": false,
+      "behaviours": {
+        "tokenEnter": null,
+        "tokenTurnStart": null,
+        "tokenMoveWithin": null,
+        "tokenExit": null
+      }
+    },
+    "attackOptions": ["spell"],
+    "spellAttackSkill": "spellcast"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
+}

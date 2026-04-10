@@ -1,0 +1,31 @@
+﻿{
+  "_id": "2b279ceee360465c",
+  "name": "Rituale del Vincolo",
+  "type": "ritual",
+  "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag118_Rituali_01.webp",
+  "system": {
+    "description": "<p>Rituale Goetico di livello Maestro — l'apice della Goezia. Si prepara come l'Evocazione Controllata, aggiungendo il Vero Nome del demone scritto col sangue e una barriera d'argento all'interno del circolo. Il demone evocato rimane intrappolato nella gabbia magica e incapace di attaccare. L'evocatore deve tormentarlo usando il Vero Bastone del Vincolo e affrontarlo in uno Scontro Verbale: se vince, il demone è obbligato a servirlo.</p><p>Il demone tenterà di liberarsi ogni due settimane con una prova contrapposta: se riesce, il vincolo si spezza e la creatura attaccherà il suo ex-padrone.</p><p><strong>Preparazione:</strong> 30 Round. <strong>CD Artigianato Rituale:</strong> 20 (CD 27 per un Demone Maggiore). <strong>Componenti:</strong> Componenti dell'Evocazione Controllata + Vero Nome scritto col sangue + barriera d'argento + Vero Bastone del Vincolo.</p>",
+    "quantity": "1",
+    "weight": 0,
+    "cost": 0,
+    "sourcebook": "TC 143",
+    "class": "ritual",
+    "level": "master",
+    "source": "",
+    "stamina": 0,
+    "staminaIsVar": false,
+    "effect": "Apice della goezia. Il demone evocato rimane intrappolato nella gabbia magica. Se l'evocatore vince lo scontro verbale col Bastone del Vincolo, il demone è obbligato a servirlo.",
+    "range": "N/A",
+    "duration": "24 ore (rinnovo ogni 2 settimane)",
+    "preparationTime": "30 Round",
+    "difficultyCheck": "20 (CD 27 per Demone Maggiore)",
+    "components": "Tutti i componenti dell'Evocazione Controllata; Vero Nome scritto col sangue; barriera d'argento; Vero Bastone del Vincolo (Investimento: 1288)",
+    "spellAttackSkill": "ritcraft"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
+}

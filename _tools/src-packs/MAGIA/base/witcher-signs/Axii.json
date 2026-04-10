@@ -1,0 +1,59 @@
+﻿{
+  "_id": "d56b94a8539ed257",
+  "name": "Axii",
+  "type": "spell",
+  "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag101_La Magia in The Witcher_01.webp",
+  "system": {
+    "description": "<p>I Segni Witcher sono forme di magia semplici apprese durante l'addestramento. Axii stordisce l'avversario finché questi non supera un tiro salvezza di Grinta con una penalità di -1. Per ogni 2 punti RES spesi oltre il primo, la difficoltà per superare il tiro salvezza aumenta di 1. Il costo in Resistenza è sempre variabile: il witcher può investirvi i punti che desidera (fino a un massimo di 7), a patto di non superare la propria Soglia di Vigore.</p>",
+    "quantity": "1",
+    "weight": 0,
+    "cost": 0,
+    "sourcebook": "MB 114",
+    "class": "Witcher",
+    "level": "novice",
+    "source": "Water",
+    "stamina": 0,
+    "staminaIsVar": true,
+    "effect": "Stordisce l'avversario finché questi non supera un tiro salvezza di Grinta con una penalità di -1. Per ogni 2 punti RES spesi oltre il primo, la difficoltà per superare il tiro salvezza aumenta di 1.",
+    "range": "8m",
+    "duration": "Finché l'effetto non viene superato",
+    "defence": "Resistere alla Magia",
+    "damageProperties": {
+      "armorPiercing": false,
+      "improvedArmorPiercing": false,
+      "ablating": false,
+      "crushingForce": false,
+      "damageIsAblation": false,
+      "stun": 0,
+      "damageToAllLocations": false,
+      "bypassesWornArmor": false,
+      "bypassesNaturalArmor": false,
+      "defenseDifferenceMultiplier": false,
+      "defenseMultiplierCap": 5,
+      "variableDamage": false,
+      "effects": [],
+      "oilEffect": "",
+      "silverTrait": false,
+      "silverDamage": "",
+      "isMeteorite": false,
+      "isNonLethal": false
+    },
+    "regionProperties": {
+      "createRegionFromTemplate": false,
+      "behaviours": {
+        "tokenEnter": null,
+        "tokenTurnStart": null,
+        "tokenMoveWithin": null,
+        "tokenExit": null
+      }
+    },
+    "attackOptions": ["spell"],
+    "spellAttackSkill": "spellcast"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
+}

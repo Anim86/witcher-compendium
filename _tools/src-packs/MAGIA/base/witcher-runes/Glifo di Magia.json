@@ -1,0 +1,27 @@
+﻿{
+  "_id": "9d24fcb36cc2c3a0",
+  "name": "Glifo di Magia",
+  "type": "enhancement",
+  "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag130_Componenti per la Manifattura_01.webp",
+  "system": {
+    "description": "<p>Glifo per Armature. Potenzia le magie a elementi misti del portatore, aumentando le CD degli incantesimi misti di 3 oppure il loro danno di 1d6. Costo: 575 Corone.</p>",
+    "quantity": "1",
+    "weight": 0.1,
+    "cost": 575,
+    "sourcebook": "MB 256",
+    "isHidden": false,
+    "isStored": false,
+    "isCarried": true,
+    "type": "Glyph",
+    "avail": "Rare",
+    "applied": false,
+    "stopping": 0,
+    "bludgeoning": false,
+    "slashing": false,
+    "piercing": false,
+    "effects": []
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": { "systemId": "TheWitcherItaNewSystem", "coreVersion": 14 }
+}
