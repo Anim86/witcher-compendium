@@ -1,7 +1,6 @@
 import { ClassicLevel } from 'classic-level';
 import fs from 'fs';
 import path from 'path';
-
 import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -48,48 +47,40 @@ async function compilePack(packMetadata) {
     // 2. Prepara la destinazione (PULIZIA TOTALE)
     try {
         if (fs.existsSync(destDir)) {
-            // Eliminiamo la cartella per assicurarci un database pulito
-            // Nota: Se Foundry è aperto e il pack è in uso, questo fallirà.
             fs.rmSync(destDir, { recursive: true, force: true });
         }
         fs.mkdirSync(destDir, { recursive: true });
     } catch (e) {
-        console.error(`   ❌ Impossibile pulire la cartella di destinazione (forse è aperta in Foundry?): ${e.message}`);
+        console.error(`   ❌ Impossibile pulire la cartella di destinazione: ${e.message}`);
         return;
     }
 
-    // 3. Scrittura Database
-    const db = new ClassicLevel(destDir, { valueEncoding: 'json' });
-    await db.open();
+    // 3. Crea il database con opzioni di massima compatibilità
+    const db = new ClassicLevel(destDir, { 
+        valueEncoding: 'json',
+        compression: false // Disabilitata per evitare problemi con Foundry
+    });
 
     try {
-        const writeOps = entries.map(entry => {
-            const key = entry._id;
-            if (!key) {
-                console.warn(`   ⚠️ L'entry "${entry.name}" non ha un _id. Verrà saltata.`);
-                return null;
-            }
-            return { type: 'put', key, value: entry };
-        }).filter(op => op !== null);
-
-        await db.batch(writeOps);
+        await db.open();
         
-        // --- NUOVO: Forza la compattazione per creare i file .ldb ---
-        if (typeof db.compactRange === 'function') {
-            await db.compactRange('\x00', '\xff');
-        }
+        // Creazione operazioni batch
+        const ops = entries.map(e => ({ type: 'put', key: e._id, value: e }));
+        await db.batch(ops);
         
-        console.log(`   ✅ Inserite ${writeOps.length} voci con successo.`);
-
-    } catch (e) {
-        console.error(`   ❌ Errore durante la scrittura del database: ${e.message}`);
-    } finally {
+        // Forza la scrittura dei file .ldb (compattazione forzata)
+        await db.compactRange('\x00', '\xff');
+        
         await db.close();
+        console.log(`   ✅ Inserite ${entries.length} voci con successo.`);
+    } catch (e) {
+        console.error(`   ❌ Errore durante la scrittura del database ${packName}: ${e.message}`);
+        try { await db.close(); } catch(err) {}
     }
 }
 
 async function main() {
-    console.log("🚀 Inizio compilazione globale dei pacchetti Witcher Compendium...");
+    console.log("🚀 Inizio compilazione globale dei pacchetti Witcher Compendium (ULTRA-COMPATIBILITY MODE)...");
     
     if (!fs.existsSync(MODULE_JSON_PATH)) {
         console.error("❌ Errore: module.json non trovato.");

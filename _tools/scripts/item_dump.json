@@ -1,0 +1,29 @@
+{
+  "_id": "0ab9221d175b467a",
+  "name": "Gambesone a Doppia Trama",
+  "type": "armor",
+  "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag081_Armature_01.webp",
+  "system": {
+    "description": "<p>Come il cappuccio intessuto allo stesso modo, il gambesone a doppia trama è un buon articolo per quel che costa. Blocca una spada da poco o il dardo di un balestrino e non pesa neanche tanto. Di solito ne indosso uno, in viaggio e in città. Meglio stare al sicuro senza dare troppo nell’occhio. SCUDI</p>",
+    "weight": 2.5,
+    "cost": 250,
+    "stoppingPower": 0,
+    "reliability": {
+      "value": 0,
+      "max": 0
+    },
+    "sourcebook": "MB 48"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "systemVersion": "v14.1.35",
+    "coreVersion": "14"
+  }
+}
