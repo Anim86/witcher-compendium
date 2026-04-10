@@ -7,7 +7,7 @@ const __dirname = path.dirname(__filename);
 
 const SRC_DIR = path.resolve(__dirname, '../../_tools/src-packs');
 const SYSTEM_ID = 'TheWitcherItaNewSystem';
-const SYSTEM_VERSION = 'v14.1.35';
+const SYSTEM_VERSION = 'v14.1.44';
 const CORE_VERSION = '14';
 
 function walk(dir) {

@@ -57,10 +57,10 @@
     </table>
     <div class="grid">
         <label>{{localize "WITCHER.Item.Effect"}}</label>
-        <textarea rows="10" name="system.effect">{{item.system.effect}}</textarea>
+        {{editor item.system.effect target="system.effect" button=true owner=owner editable=editable engine="prosemirror"}}
     </div>
     <div class="grid">
         <label>{{localize "WITCHER.Spell.Requirements"}}</label>
-        <textarea rows="5" name="system.liftRequirement">{{item.system.liftRequirement}}</textarea>
+        {{editor item.system.liftRequirement target="system.liftRequirement" button=true owner=owner editable=editable engine="prosemirror"}}
     </div>
 </section>

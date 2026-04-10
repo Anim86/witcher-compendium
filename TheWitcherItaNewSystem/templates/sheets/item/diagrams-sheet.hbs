@@ -48,7 +48,7 @@
     {{>"systems/TheWitcherItaNewSystem/templates/partials/associated-item.hbs"}}
     <div class="description">
         <label class="label-info"><b>{{localize "WITCHER.Item.Description"}}</b></label>
-        {{editor item.system.description target="system.description" button=true editable=editable}}
+        {{editor item.system.description target="system.description" button=true owner=owner editable=editable engine="prosemirror"}}
     </div>
     {{#if item.system.isFormulae}}
         <table class="item-table">

@@ -1,28 +1,38 @@
 {
-  "_id": "d9e0f1a2b3c4d5e6",
-  "name": "Morte Rossa",
-  "type": "weapon",
-  "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Placeholder.webp",
-  "system": {
-    "description": "<p>Balestra Reliquia. Usata dal Boia di Gwendieth per 'ripulire' la città dalla Peste Catriona, incamerando negli anni la sofferenza e gli incubi dei malati uccisi.</p><p><strong>Statistiche:</strong> 10d6 DAN, 300m Gittata, Avvelenato (100%), +3 a Gettate Fatture e Resistere alla Magia. 3 Slot.</p>",
-    "quantity": "1",
-    "weight": 2.5,
-    "cost": 0,
-    "sourcebook": "MB 261",
-    "class": "simple",
-    "category": "relic",
-    "damage": "10d6",
-    "damageType": "piercing",
-    "reliability": { "value": 15, "max": 15 },
-    "hands": 2,
-    "range": "300m",
-    "enhancementSlots": 3,
-    "isMeteorite": false,
-    "damageProperties": {
-      "effects": ["Avvelenato (100%)", "+3 a Gettate Fatture e Resistere alla Magia"]
+    "_id": "d9e0f1a2b3c4d5e6",
+    "name": "Morte Rossa",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Placeholder.webp",
+    "system": {
+        "description": "<p>Balestra Reliquia. Usata dal Boia di Gwendieth per 'ripulire' la città dalla Peste Catriona, incamerando negli anni la sofferenza e gli incubi dei malati uccisi.</p><p><strong>Statistiche:</strong> 10d6 DAN, 300m Gittata, Avvelenato (100%), +3 a Gettate Fatture e Resistere alla Magia. 3 Slot.</p>",
+        "quantity": "1",
+        "weight": 2.5,
+        "cost": 0,
+        "sourcebook": "MB 261",
+        "class": "simple",
+        "category": "relic",
+        "damage": "10d6",
+        "damageType": "piercing",
+        "reliability": {
+            "value": 15,
+            "max": 15
+        },
+        "hands": 2,
+        "range": "300m",
+        "enhancementSlots": 3,
+        "isMeteorite": false,
+        "damageProperties": {
+            "effects": [
+                "Avvelenato (100%)",
+                "+3 a Gettate Fatture e Resistere alla Magia"
+            ]
+        }
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": "14",
+        "systemVersion": "v14.1.44"
     }
-  },
-  "effects": [],
-  "flags": {},
-  "_stats": { "systemId": "TheWitcherItaNewSystem", "coreVersion": 14 }
 }

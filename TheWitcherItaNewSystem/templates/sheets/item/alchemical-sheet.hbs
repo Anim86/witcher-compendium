@@ -29,7 +29,7 @@
         <tr>
             <td colspan="4" class="effect-text-area">
                     <label>{{localize "WITCHER.Item.Effect"}}</label>
-                    <textarea rows=10 name="system.effect">{{item.system.effect}}</textarea>
+                    {{editor item.system.effect target="system.effect" button=true owner=owner editable=editable engine="prosemirror"}}
             </td>
         </tr>
     </table>

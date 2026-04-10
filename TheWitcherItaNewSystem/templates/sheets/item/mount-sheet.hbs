@@ -1,7 +1,7 @@
 <section class="{{item.type}} scrollable">
     {{>"systems/TheWitcherItaNewSystem/templates/partials/item-header.hbs"}}
 
-    <textarea rows="5" name="system.description">{{item.system.description}}</textarea>
+    {{editor item.system.description target="system.description" button=true owner=owner editable=editable engine="prosemirror"}}
 
     <table>
         <tr>

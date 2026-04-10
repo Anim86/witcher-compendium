@@ -1,28 +1,40 @@
 {
-  "_id": "f5a6b7c8d9e0f1a2",
-  "name": "Devine",
-  "type": "weapon",
-  "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Placeholder.webp",
-  "system": {
-    "description": "<p>Spada Lunga Reliquia. Conosciuta come la Lama dei Venti, commissionata da Lord Cedric di Cintra e infusa (ingannevolmente) dal potere di un djinn.</p><p><strong>Statistiche:</strong> 10d6 DAN, Focus Superiore (Aria), Stordimento (2), Trapassare, Meteorite. 3 Slot.</p>",
-    "quantity": "1",
-    "weight": 2,
-    "cost": 0,
-    "sourcebook": "MB 259",
-    "class": "simple",
-    "category": "relic",
-    "damage": "10d6",
-    "damageType": "slashing",
-    "reliability": { "value": 20, "max": 20 },
-    "hands": 2,
-    "range": "N/A",
-    "enhancementSlots": 3,
-    "isMeteorite": true,
-    "damageProperties": {
-      "effects": ["Focus Superiore (Aria)", "Stordimento (2)", "Trapassare", "Meteorite"]
+    "_id": "f5a6b7c8d9e0f1a2",
+    "name": "Devine",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Placeholder.webp",
+    "system": {
+        "description": "<p>Spada Lunga Reliquia. Conosciuta come la Lama dei Venti, commissionata da Lord Cedric di Cintra e infusa (ingannevolmente) dal potere di un djinn.</p><p><strong>Statistiche:</strong> 10d6 DAN, Focus Superiore (Aria), Stordimento (2), Trapassare, Meteorite. 3 Slot.</p>",
+        "quantity": "1",
+        "weight": 2,
+        "cost": 0,
+        "sourcebook": "MB 259",
+        "class": "simple",
+        "category": "relic",
+        "damage": "10d6",
+        "damageType": "slashing",
+        "reliability": {
+            "value": 20,
+            "max": 20
+        },
+        "hands": 2,
+        "range": "N/A",
+        "enhancementSlots": 3,
+        "isMeteorite": true,
+        "damageProperties": {
+            "effects": [
+                "Focus Superiore (Aria)",
+                "Stordimento (2)",
+                "Trapassare",
+                "Meteorite"
+            ]
+        }
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": "14",
+        "systemVersion": "v14.1.44"
     }
-  },
-  "effects": [],
-  "flags": {},
-  "_stats": { "systemId": "TheWitcherItaNewSystem", "coreVersion": 14 }
 }

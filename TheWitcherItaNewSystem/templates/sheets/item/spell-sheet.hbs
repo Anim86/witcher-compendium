@@ -40,12 +40,12 @@
     </table>
     <div class="grid">
         <label>{{localize "WITCHER.Item.Effect"}}</label>
-        <textarea rows="10" name="system.effect">{{item.system.effect}}</textarea>
+        {{editor item.system.effect target="system.effect" button=true owner=owner editable=editable engine="prosemirror"}}
     </div>
     <div class="grid">
         {{#if (eq item.system.class "MagicalGift")}}
             <label>{{localize "WITCHER.Spell.SideEffect"}}</label>
-            <textarea rows="5" name="system.sideEffect">{{item.system.sideEffect}}</textarea>
+            {{editor item.system.sideEffect target="system.sideEffect" button=true owner=owner editable=editable engine="prosemirror"}}
         {{/if}}
     </div>
     <div class="flex">
