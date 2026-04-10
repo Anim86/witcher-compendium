@@ -1,4 +1,4 @@
-{
+﻿{
     "_id": "fbbeb3e855404782",
     "name": "Katakan",
     "type": "monster",
@@ -21,9 +21,9 @@
                 "unmodifiedMax": 10
             },
             "body": {
-                "value": 10,
-                "max": 10,
-                "unmodifiedMax": 10
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
             },
             "spd": {
                 "value": 8,
@@ -31,59 +31,24 @@
                 "unmodifiedMax": 8
             },
             "emp": {
-                "value": 3,
-                "max": 3,
-                "unmodifiedMax": 3
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
             },
             "cra": {
-                "value": 3,
-                "max": 3,
-                "unmodifiedMax": 3
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
             },
             "will": {
-                "value": 10,
-                "max": 10,
-                "unmodifiedMax": 10
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
             },
             "luck": {
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
-            }
-        },
-        "derivedStats": {
-            "health": {
-                "value": 100,
-                "max": 100,
-                "unmodifiedMax": 100
-            },
-            "stamina": {
-                "value": 50,
-                "max": 50,
-                "unmodifiedMax": 50
-            },
-            "vigor": {
-                "value": 50,
-                "max": 50,
-                "unmodifiedMax": 50
-            },
-            "rec": {
-                "value": 10,
-                "max": 10,
-                "unmodifiedMax": 10
-            },
-            "resolve": {
-                "value": 150,
-                "max": 150,
-                "unmodifiedMax": 150
-            },
-            "stun": {
-                "value": 10,
-                "max": 10
-            },
-            "woundTreshold": {
-                "value": 10,
-                "max": 10
             }
         },
         "skills": {
@@ -119,18 +84,47 @@
             }
         },
         "details": {
-            "biography": "<p>I katakan sono un buon punto intermedio tra i bestiali vampiri inferiori e i geniali vampiri superiori. Sono intelligenti, spesso più delle persone comuni, e hanno grandi qualità magiche, tanto da essere in grado di nascondersi a molte forme di rilevazione, compresi i medaglioni dei witcher e la divinazione, e di comunicare telepaticamente con le proprie prede. Tuttavia non possono mutare forma.</p>",
-            "threat": "Difficile Complesso",
+            "biography": "<p>I katakan si trasformano per sedurre le donne più belle e berne il sangue. Se ti capita tieni a portata di mano una testa d’aglio... Tra l’altro, vendo tutta questa roba a prezzi davvero ragionevoli. – Rodolf Kazmer</p><p>I katakan sono un buon punto intermedio tra i bestiali vampiri inferiori e i geniali vampiri superiori. Sono intelligenti, spesso più delle persone comuni, e hanno grandi qualità magiche. Sono in grado di nascondersi a molte forme di rilevazione, compresi i medaglioni dei witcher, e di comunicare telepaticamente con le proprie prede.</p>",
+            "threat": "Ardua",
             "reward": 1500
         },
-        "description": "<p>SUPERSTIZIONE COMUNE (Istruzione CD 18) Viaggiando per il Continente, ho sentito un sac- co di storie sui vampiri. Dicono che possano tra- sformarsi in lupi o pipistrelli e simili, che volino senza ali, guariscano da ogni ferita e possano fare a pezzi l’acciaio con gli artigli. Eh, ho sentito che i katakan si trasformano per sedurre le donne più belle e berne il sangue. A me sembra un bel ma- cello, del tipo in cui non vorrei restare coinvolto, ma se ti capita tieni a portata di mano una testa d’aglio, il simbolo del tuo dio preferito e un paletto da piantare nel cuore della bestia per ammazzar- la. Tra l’altro, vendo tutta questa roba a prezzi davvero ragionevoli. – Rodolf Kazmer Le comuni forme di protezione non fun- zionano contro i katakan, al massimo li in- fastidiscono, eccetto per il paletto nel cuore. Quando ne si affronta uno, l’arma migliore è il fuoco, perché sono assai infiammabili. Anche la pozione Sangue Nero può essere utile. In alternativa, ogni droga o alcolico in circolo nel sangue della vittima, farà effetto anche sul katakan. Vulnerabilità Unguento Anti-vampiri Pozione Sangue Nero Debolezza Celeste Alla luce del sole, la rigenerazione di un katakan è ridotta a 3 PS. Fuoco Un Katakan subisce danni doppi dal fuoco o dall’essere A Fuoco. ABILITÀ Trasferimento Ematico Un katakan subisce gli effetti di qualsiasi sostanza presente nel sangue che beve. Accortezza +10 Atletica +10 Coraggio +8 Eludere +10 Capacità Intimidire +8 Invisibile alla Magia Un katakan non può essere rilavato dai medaglioni dei witcher, mentre un mago deve superare una prova di Arte del Mago contrapposto al tiro di Resistere alla Magia del katakan per percepirlo. Mischia +8 CONOSCENZA DEI WITCHER (Arte del Witcher CD 17) Tra tutte le famiglie di mostri, la differenza di potere più incredibile è tra i vampiri. Quelli inferiori sono più rapidi, agili e forti di un comune essere umano, furtivi come ombre e pericolosi, ma anche più simili a bestie e a ma- lapena senzienti. All’estremo opposto, i poteri di un autentico nosferatu sono tanto grandi da risultare quasi incomparabili. I katakan sono un buon punto intermedio tra i bestiali vam- piri inferiori e i geniali vampiri superiori. Sono intelligenti, spesso più delle persone comuni, e hanno grandi qualità magiche, tanto da es- sere in grado di nascondersi a molte forme di rilevazione, compresi i medaglioni dei witcher e la divinazione, e di comunicare telepatica- mente con le proprie prede. Tuttavia non pos- sono mutare forma. In combattimento, si na- scondono divenendo invisibili, mentre fanno impazzire la preda grazie alla telepatia. I katakan sono difficili da uccidere, essendo rapidi a muoversi e capaci di rigenerarsi. Sono, però ancora piuttosto bestiali, rispetto ai loro cugini superiori, e spesso si fermano a leccare il sangue caduto dopo che hanno sbudellato una preda. Nascondersi +10 Resistere a Coercizione +10 Resistere alla Magia +8 Rissa +7 Sopravvivenza +8 Invisibilità Un katakan può diventare invisibile, ottenendo +10 Nascondersi e +5 agli attacchi. Se attacca ritorna visibile. Persino se una creature supera la prova di Accortezza per individuarlo, subirà -3 a tutti gli attacchi contro il vampiro. Il segno Yrden rende automaticamente visibile un katakan. Tempra +8 Bottino Oggetti Comuni (×1d6) Runa Casuale Saliva di Vampiro (×1d6) Zanne di Vampiro (×1d6/2) Armi Rigenerazione Un katakan rigenera 5 PS per round. Nome DAN Effetti N°Att Artigli 6d6 Sanguinamento (50%) 2 Telepatia Un katakan può comunicare telepaticamente con qualsiasi creatura entro 20m come azione gratuita. Morso 7d6+2 Sanguinamento (100%) 1 Vista Notturna Un katakan può agire in zone di luce fioca senza penalità.</p>",
-        "notes": [
-            {
-                "title": "Descrizione",
-                "details": "<p>Un amalgama di corpi è un golem non-senziente formato da cadaveri parzialmente rianimati. Molti necromanti li usano come guardie del corpo, altri come assistenti. In combattimento, un amalgama colpisce tutto ciò che vede con le sue molte braccia, fermandosi solo di tanto in tanto per emettere un terribile lamento, che stordisce le vittime. Essendo non-morti, non possono guarire, ma sono immuni a veleno, sanguinamento e ogni tipo di effetto mentale. Inoltre, a causa delle dimensioni e dei molteplici arti, non è possibile gettarli a terra. Per assurdo, il loro punto di forza è anche il modo più facile per ucciderli. Infliggere colpi critici e rimuovere parte dei corpi dall'amalgama, indebolisce rapidamente la creatura, ma l'anima che abita un corpo rimosso si manifesta subito come un wraith rabbioso, che attacca il suo liberatore. Una volta eliminato l'amalgama, i wraith possono rivelarsi un pericolo ben più grande. Infine, occorre ricordare che l'amalgama può, per pochi attimi, recuperare l'intelligenza di una delle anime intrappolate al suo interno. Quando si trova di fronte a porte chiuse, enigmi o un avversario che non può raggiungere, l'amalgama riesce a recuperare</p>"
+        "derivedStats": {
+            "health": {
+                "value": 45,
+                "max": 45,
+                "unmodifiedMax": 45
+            },
+            "stamina": {
+                "value": 35,
+                "max": 35,
+                "unmodifiedMax": 35
+            },
+            "vigor": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "rec": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "resolve": {
+                "value": 35,
+                "max": 35,
+                "unmodifiedMax": 35
+            },
+            "stun": {
+                "value": 7,
+                "max": 7
+            },
+            "woundTreshold": {
+                "value": 8,
+                "max": 8
             }
-        ],
-        "sourcebook": "MB 72"
+        },
+        "description": "<p>I katakan si trasformano per sedurre le donne più belle e berne il sangue. Se ti capita tieni a portata di mano una testa d’aglio... Tra l’altro, vendo tutta questa roba a prezzi davvero ragionevoli. – Rodolf Kazmer</p><p>I katakan sono un buon punto intermedio tra i bestiali vampiri inferiori e i geniali vampiri superiori. Sono intelligenti, spesso più delle persone comuni, e hanno grandi qualità magiche. Sono in grado di nascondersi a molte forme di rilevazione, compresi i medaglioni dei witcher, e di comunicare telepaticamente con le proprie prede.</p>",
+        "sourcebook": "MB 309"
     },
     "items": [
         {
@@ -141,7 +135,12 @@
             "system": {
                 "description": "",
                 "damage": "6d6",
+                "accuracy": 0,
                 "effects": "Sanguinamento (50%)"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
             }
         },
         {
@@ -152,7 +151,38 @@
             "system": {
                 "description": "",
                 "damage": "7d6+2",
+                "accuracy": 0,
                 "effects": "Sanguinamento (100%)"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "k3",
+            "name": "[Capacità] Invisibilità",
+            "type": "note",
+            "img": "icons/svg/book.svg",
+            "system": {
+                "description": "<p>Un katakan può diventare invisibile, ottenendo +10 Nascondersi e +5 agli attacchi. Se attacca ritorna visibile.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "k4",
+            "name": "[Capacità] Rigenerazione",
+            "type": "note",
+            "img": "icons/svg/book.svg",
+            "system": {
+                "description": "<p>Un katakan rigenera 5 PS per round (ridotto a 3 PS alla luce del sole).</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
             }
         }
     ],
@@ -160,7 +190,6 @@
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
+        "coreVersion": 14
     }
 }

@@ -1,0 +1,31 @@
+﻿{
+    "_id": "7861727468697369",
+    "name": "Xarthisius",
+    "type": "Actor",
+    "img": "modules/witcher-compendium/assets/images/NPC/Xarthisius.webp",
+    "system": {
+        "stats": {
+            "int": { "value": 0, "max": 0 },
+            "ref": { "value": 0, "max": 0 },
+            "dex": { "value": 0, "max": 0 },
+            "body": { "value": 0, "max": 0 },
+            "spd": { "value": 0, "max": 0 },
+            "emp": { "value": 0, "max": 0 },
+            "cra": { "value": 0, "max": 0 },
+            "will": { "value": 0, "max": 0 },
+            "luck": { "value": 0, "max": 0 }
+        },
+        "details": {
+            "biography": "<p>Xarthisius ha grandi capacità divinatorie, ma tale pratica è per sua natura ingannevole. Sembrava un uomo onesto, con una fede toccante nella guida delle stelle. – Glynnis var Treharne</p><p>Xarthisius è un rinomato astrologo e divinatore nilfgaardiano che ha servito lealmente l'Imperatore Emhyr var Emreis. Grazie alle sue letture delle stelle, ha guidato Emhyr durante i suoi anni di esilio nel Nord, predicendo correttamente molti eventi futuri. Nonostante la sua integrità accademica, è caduto in disgrazia agli occhi dell'Imperatore a causa dell'imprecisione di alcune divinazioni cruciali, finendo imprigionato per ordine del sovrano che un tempo aveva aiutato a salire al trono.</p>",
+            "sourcebook": "TC 171"
+        },
+        "description": "<p>Xarthisius ha grandi capacità divinatorie, ma tale pratica è per sua natura ingannevole. Sembrava un uomo onesto, con una fede toccante nella guida delle stelle. – Glynnis var Treharne</p><p>Xarthisius è un rinomato astrologo e divinatore nilfgaardiano che ha servito lealmente l'Imperatore Emhyr var Emreis. Grazie alle sue letture delle stelle, ha guidato Emhyr durante i suoi anni di esilio nel Nord, predicendo correttamente molti eventi futuri. Nonostante la sua integrità accademica, è caduto in disgrazia agli occhi dell'Imperatore a causa dell'imprecisione di alcune divinazioni cruciali, finendo imprigionato per ordine del sovrano che un tempo aveva aiutato a salire al trono.</p>"
+    },
+    "items": [],
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

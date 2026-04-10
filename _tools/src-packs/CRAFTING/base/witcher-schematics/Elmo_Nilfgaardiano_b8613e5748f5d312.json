@@ -1,0 +1,34 @@
+﻿{
+    "_id": "b8613e5748f5d312",
+    "name": "Elmo Nilfgaardiano",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag132_Schemi di Manifattura_10.webp",
+    "system": {
+        "description": "<p>Schema per la fabbricazione di: <b>Elmo Nilfgaardiano</b>.</p><p><b>Componenti richiesti:</b> Acciaio Nero (×4), Cuoio Indurito (×1), Lino (×1), Olio Scurente (×2), Olio di Papero (×2), Ceneri (×10), Olio (×1)</p><p><b>Difficoltà Manifattura:</b> CD 24</p><p><b>Tempo:</b> 6 ore</p>",
+        "weight": 0,
+        "cost": 0,
+        "components": [
+            "Acciaio Nero (×4)",
+            "Cuoio Indurito (×1)",
+            "Lino (×1)",
+            "Olio Scurente (×2)",
+            "Olio di Papero (×2)",
+            "Ceneri (×10)",
+            "Olio (×1)"
+        ],
+        "difficulty": 24,
+        "time": "6 ore",
+        "sourcebook": "MB 137"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

@@ -1,6 +1,6 @@
 {
     "_id": "428856c3bd17449e",
-    "name": "GRANDE ORSO",
+    "name": "Grande Orso",
     "type": "monster",
     "img": "modules/witcher-compendium/assets/optimized/assets/Immagini_Chaos/Pag206_Grande Orso_01.webp",
     "system": {
@@ -84,9 +84,9 @@
             }
         },
         "details": {
-            "biography": "[Immagini presenti in questa pagina: Pag206_Grande Orso_01.png, Pag206_Grande Orso_02.png, Pag206_Grande Orso_03.png, Pag206_Grande Orso_04.png, Pag206_Grande Orso_05.png, Pag206_Grande Orso_06.png]<br><br>204",
-            "threat": "Arduo",
-            "reward": 0
+            "biography": "<p>Senti sempre parlare di quei grossi mostri schifosi con alito di fuoco... e finisci per dimenticarti delle fottute macchine assassine di madre natura. – Rodolf Kazmer</p><p>Ogni anno gli orsi fanno più vittime dei mostri. È più facile sopravvivere al morso di una viverna che a quello di un grande orso. In combattimento, la loro imponenza fisica è letale: bloccare una zampata con uno scudo serve solo a rompere lo scudo.</p>",
+            "threat": "Media",
+            "reward": 450
         },
         "derivedStats": {
             "health": {
@@ -95,9 +95,9 @@
                 "unmodifiedMax": 80
             },
             "stamina": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 40,
+                "max": 40,
+                "unmodifiedMax": 40
             },
             "vigor": {
                 "value": 0,
@@ -110,9 +110,9 @@
                 "unmodifiedMax": 8
             },
             "resolve": {
-                "value": 120,
-                "max": 120,
-                "unmodifiedMax": 120
+                "value": 40,
+                "max": 40,
+                "unmodifiedMax": 40
             },
             "stun": {
                 "value": 8,
@@ -123,123 +123,60 @@
                 "max": 8
             }
         },
-        "description": "<p>Grasso d’Orso (1d6)</p>",
-        "notes": [
-            {
-                "title": "Descrizione",
-                "details": "<p>Un amalgama di corpi è un golem non-senziente formato da cadaveri parzialmente rianimati. Molti necromanti li usano come guardie del corpo, altri come assistenti. In combattimento, un amalgama colpisce tutto ciò che vede con le sue molte braccia, fermandosi solo di tanto in tanto per emettere un terribile lamento, che stordisce le vittime. Essendo non-morti, non possono guarire, ma sono immuni a veleno, sanguinamento e ogni tipo di effetto mentale. Inoltre, a causa delle dimensioni e dei molteplici arti, non è possibile gettarli a terra. Per assurdo, il loro punto di forza è anche il modo più facile per ucciderli. Infliggere colpi critici e rimuovere parte dei corpi dall'amalgama, indebolisce rapidamente la creatura, ma l'anima che abita un corpo rimosso si manifesta subito come un wraith rabbioso, che attacca il suo liberatore. Una volta eliminato l'amalgama, i wraith possono rivelarsi un pericolo ben più grande. Infine, occorre ricordare che l'amalgama può, per pochi attimi, recuperare l'intelligenza di una delle anime intrappolate al suo interno. Quando si trova di fronte a porte chiuse, enigmi o un avversario che non può raggiungere, l'amalgama riesce a recuperare</p>"
-            }
-        ],
-        "sourcebook": "TC 197"
+        "description": "<p>Senti sempre parlare di quei grossi mostri schifosi con alito di fuoco... e finisci per dimenticarti delle fottute macchine assassine di madre natura. – Rodolf Kazmer</p><p>Ogni anno gli orsi fanno più vittime dei mostri. È più facile sopravvivere al morso di una viverna che a quello di un grande orso. In combattimento, la loro imponenza fisica è letale: bloccare una zampata con uno scudo serve solo a rompere lo scudo.</p>",
+        "sourcebook": "TC 204"
     },
     "items": [
         {
-            "_id": "25e5c383f1c1475c",
+            "_id": "o1",
             "name": "Morso",
             "type": "weapon",
             "img": "icons/svg/sword.svg",
             "system": {
                 "description": "",
-                "weight": 0,
-                "cost": 0,
                 "damage": "8d6",
-                "reliability": {
-                    "value": 15,
-                    "max": 15
-                }
+                "accuracy": 0,
+                "effects": "Forza Distruttiva, Sanguinamento (75%)"
             },
-            "effects": [],
-            "folder": null,
-            "sort": 0,
-            "ownership": {
-                "default": 0
-            },
-            "flags": {},
             "_stats": {
-                "systemId": "TheWitcherTRPG",
-                "systemVersion": "1.0.0",
-                "coreVersion": "13"
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": "14"
             }
         },
         {
-            "_id": "be16166dd0024b4f",
+            "_id": "o2",
             "name": "Artigli",
             "type": "weapon",
             "img": "icons/svg/sword.svg",
             "system": {
                 "description": "",
-                "weight": 0,
-                "cost": 0,
                 "damage": "4d6+5",
-                "reliability": {
-                    "value": 15,
-                    "max": 15
-                }
+                "accuracy": 0,
+                "effects": "Forza Distruttiva"
             },
-            "effects": [],
-            "folder": null,
-            "sort": 0,
-            "ownership": {
-                "default": 0
-            },
-            "flags": {},
             "_stats": {
-                "systemId": "TheWitcherTRPG",
-                "systemVersion": "1.0.0",
-                "coreVersion": "13"
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": "14"
             }
         },
         {
-            "_id": "ef2a1df6003145c3",
-            "name": "Vulnerabilità",
+            "_id": "o3",
+            "name": "[Capacità] Alzarsi sulle Zampe",
             "type": "note",
             "img": "icons/svg/book.svg",
             "system": {
-                "description": "<p>COR 21</p>"
+                "description": "<p>Usa un intero round per colpire con entrambi gli artigli. 6d6 danni al torso, getta prono e blocca a terra.</p>"
             },
-            "effects": [],
-            "folder": null,
-            "sort": 0,
-            "ownership": {
-                "default": 0
-            },
-            "flags": {},
             "_stats": {
-                "systemId": "TheWitcherTRPG",
-                "systemVersion": "1.0.0",
-                "coreVersion": "13"
-            }
-        },
-        {
-            "_id": "26089b89d5b04217",
-            "name": "Resistenze",
-            "type": "note",
-            "img": "icons/svg/book.svg",
-            "system": {
-                "description": "<p>EMP 1</p>"
-            },
-            "effects": [],
-            "folder": null,
-            "sort": 0,
-            "ownership": {
-                "default": 0
-            },
-            "flags": {},
-            "_stats": {
-                "systemId": "TheWitcherTRPG",
-                "systemVersion": "1.0.0",
-                "coreVersion": "13"
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": "14"
             }
         }
     ],
     "effects": [],
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
         "coreVersion": "14"
     }
 }

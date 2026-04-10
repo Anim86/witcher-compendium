@@ -1,0 +1,31 @@
+﻿{
+    "_id": "63616466616e6562",
+    "name": "Cadfan di Ebbing",
+    "type": "Actor",
+    "img": "modules/witcher-compendium/assets/images/NPC/Cadfan_di_Ebbing.webp",
+    "system": {
+        "stats": {
+            "int": { "value": 0, "max": 0 },
+            "ref": { "value": 0, "max": 0 },
+            "dex": { "value": 0, "max": 0 },
+            "body": { "value": 0, "max": 0 },
+            "spd": { "value": 0, "max": 0 },
+            "emp": { "value": 0, "max": 0 },
+            "cra": { "value": 0, "max": 0 },
+            "will": { "value": 0, "max": 0 },
+            "luck": { "value": 0, "max": 0 }
+        },
+        "details": {
+            "biography": "<p>A una prima occhiata, Cadfan è l’immagine del classico mago malvagio delle favole. Sotto il travestimento teatrale, però, si cela un uomo capace di grande teatralità e un necromente abile e pericoloso. – Glynnis var Treharne</p><p>Cadfan è un mago nilfgaardiano noto per la sua torre nelle paludi dell'Ebbing. Sebbene si presenti come un cupo necromante con un bastone sormontato da un teschio, è in realtà un raffinato conoscitore di vini e un abile oratore. Tuttavia, la sua ospitalità può rivelarsi letale per chi non è pronto a difendersi, poiché non esita a usare gli ignari per i suoi esperimenti oscuri.</p>",
+            "sourcebook": "TC 158"
+        },
+        "description": "<p>A una prima occhiata, Cadfan è l’immagine del classico mago malvagio delle favole. Sotto il travestimento teatrale, però, si cela un uomo capace di grande teatralità e un necromente abile e pericoloso. – Glynnis var Treharne</p><p>Cadfan è un mago nilfgaardiano noto per la sua torre nelle paludi dell'Ebbing. Sebbene si presenti come un cupo necromante con un bastone sormontato da un teschio, è in realtà un raffinato conoscitore di vini e un abile oratore. Tuttavia, la sua ospitalità può rivelarsi letale per chi non è pronto a difendersi, poiché non esita a usare gli ignari per i suoi esperimenti oscuri.</p>"
+    },
+    "items": [],
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

@@ -1,0 +1,29 @@
+﻿{
+    "_id": "3f30d65d10324e8a",
+    "name": "Mazzapicchio Nanico",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag132_Schemi di Manifattura_10.webp",
+    "system": {
+        "description": "<p>C/P 0 R 5d6+2 15 2 N/A Portata, Stordimento (-2) N/A 1 4 835 Falcione Elfico T/P/C 2 R 4d6+3 10 2 N/A Portata, Sanguinamento (25%) N/A 2 3 925 Bastoni Bastone Gnomesco C 1 R 3d6+2 15 2 N/A Portata, Focus (3) G 2 2,5 910 Bastone da Passeggio Elfico C 1 R 3d6 10 2 N/A Portata, Focus (3), Focus Superiore N/A 2 1,5 975 Archi Arco da Viaggio Elfico P 1 R 4d6 10 2 200m G 1 1 575 Zefhar Elfico P 2 R 6d6 10 2 350m Trapassare Migliorato N/A 2 2,5 1100 Balestre Balestrino Gnomesco P 3 R 2d6 10 1 100m Ricarica Lenta P 1 1 425 Balestra Pesante Nanica P 3 R 5d6 15 2 300m Ricarica Lenta N/A 2 3,5 850</p>",
+        "weight": 0,
+        "cost": 1660,
+        "components": [
+            "Mazzapicchio Nanico 25 13 ore Legname Indurito (×6), Acciaio Mahakaman (×3), Cuoio Indurito (×3), Cote (×1), Cerume di Orco (×1) 624 1248",
+            "Legname Indurito (×8), Filo (×8), Cerume di Orco (×8), Quintessenza (×2), Cuoio (×2), Piume (×4), Ossa di Bestia (×4), Acciaio Nero (×3), Grasso di Estere (×9), Acquaforte (×6)"
+        ],
+        "difficulty": 25,
+        "time": "13 ore",
+        "sourcebook": "MB 85"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

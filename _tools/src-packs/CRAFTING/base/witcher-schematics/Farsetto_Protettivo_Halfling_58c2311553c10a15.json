@@ -1,0 +1,31 @@
+﻿{
+    "_id": "58c2311553c10a15",
+    "name": "Farsetto Protettivo Halfling",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag132_Schemi di Manifattura_10.webp",
+    "system": {
+        "description": "<p>Schema per la fabbricazione di: <b>Farsetto Protettivo Halfling</b>.</p><p><b>Componenti richiesti:</b> Seta (×4), Lino a Doppia Trama (×1), Filo (×10), Cotone (×7)</p><p><b>Difficoltà Manifattura:</b> CD 18</p><p><b>Tempo:</b> 9 ore</p>",
+        "weight": 0,
+        "cost": 0,
+        "components": [
+            "Seta (×4)",
+            "Lino a Doppia Trama (×1)",
+            "Filo (×10)",
+            "Cotone (×7)"
+        ],
+        "difficulty": 18,
+        "time": "9 ore",
+        "sourcebook": "MB 140"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

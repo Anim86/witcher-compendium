@@ -20,11 +20,11 @@ Hooks.once("ready", async () => {
   });
 
   // Crea categorie principali
-  const [core, equip, magia, creazione, bestiario] = await Folder.create([
+  const [core, equip, magia, crafting, bestiario] = await Folder.create([
     { name: "CORE", type: "Compendium", sorting: "m", color: "#8b0000", folder: root.id },
     { name: "EQUIPAGGIAMENTO", type: "Compendium", sorting: "m", color: "#5a3e1b", folder: root.id },
     { name: "MAGIA", type: "Compendium", sorting: "m", color: "#1a1a6e", folder: root.id },
-    { name: "CREAZIONE", type: "Compendium", sorting: "m", color: "#2d5a1b", folder: root.id },
+    { name: "CRAFTING", type: "Compendium", sorting: "m", color: "#2d5a1b", folder: root.id },
     { name: "BESTIARIO / PNG", type: "Compendium", sorting: "m", color: "#4a0e0e", folder: root.id }
   ]);
 
@@ -34,9 +34,10 @@ Hooks.once("ready", async () => {
     { name: "Tomo del Caos", type: "Compendium", sorting: "m", folder: equip.id },
     { name: "Tomo Base", type: "Compendium", sorting: "m", folder: magia.id },
     { name: "Tomo del Caos", type: "Compendium", sorting: "m", folder: magia.id },
-    { name: "Tomo Base", type: "Compendium", sorting: "m", folder: creazione.id },
+    { name: "Tomo Base", type: "Compendium", sorting: "m", folder: crafting.id },
     { name: "Tomo Base", type: "Compendium", sorting: "m", folder: bestiario.id },
-    { name: "Tomo del Caos", type: "Compendium", sorting: "m", folder: bestiario.id }
+    { name: "Tomo del Caos", type: "Compendium", sorting: "m", folder: bestiario.id },
+    { name: "Trofei", type: "Compendium", sorting: "m", folder: tomoCaosEquip?.id }
   ]);
 
   // Recupera le sottocartelle appena create per nome+parent
@@ -48,9 +49,10 @@ Hooks.once("ready", async () => {
   const tomoCaosEquip    = getFolder("Tomo del Caos", equip.id);
   const tomoBaseMagia    = getFolder("Tomo Base", magia.id);
   const tomoCaosMagia    = getFolder("Tomo del Caos", magia.id);
-  const tomoBaseCreaz    = getFolder("Tomo Base", creazione.id);
+  const tomoBaseCreaz    = getFolder("Tomo Base", crafting.id);
   const tomoBaseBest     = getFolder("Tomo Base", bestiario.id);
   const tomoCaosBest     = getFolder("Tomo del Caos", bestiario.id);
+  const tomoCaosTrofei   = getFolder("Trofei", tomoCaosEquip?.id);
 
   // Mappa pack → cartella
   const assegnazioni = [
@@ -70,7 +72,9 @@ Hooks.once("ready", async () => {
     { packName: "witcher-schematics",     folderId: tomoBaseCreaz?.id },
     { packName: "witcher-alchemy",        folderId: tomoBaseCreaz?.id },
     { packName: "witcher-monsters",       folderId: tomoBaseBest?.id },
-    { packName: "witcher-monsters-chaos", folderId: tomoCaosBest?.id }
+    { packName: "witcher-monsters-chaos", folderId: tomoCaosBest?.id },
+    { packName: "witcher-transports",     folderId: tomoBaseEquip?.id },
+    { packName: "witcher-trophies",       folderId: tomoCaosTrofei?.id }
   ];
 
   console.log("Witcher Compendio: Inizio assegnazione pack...");

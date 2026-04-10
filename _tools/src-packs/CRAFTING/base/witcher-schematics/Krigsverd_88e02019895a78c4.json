@@ -1,0 +1,34 @@
+﻿{
+    "_id": "88e02019895a78c4",
+    "name": "Krigsverd",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag132_Schemi di Manifattura_10.webp",
+    "system": {
+        "description": "<p>Schema per la fabbricazione di: <b>Krigsverd</b>.</p><p><b>Componenti richiesti:</b> Legname Indurito (×2), Acciaio Nero (×3), Cuoio Indurito (×2), Resina (×4), Ossa di Bestia (×7), Acciaio (×3), Ceneri (×2)</p><p><b>Difficoltà Manifattura:</b> CD 16</p><p><b>Tempo:</b> 8 ore</p>",
+        "weight": 0,
+        "cost": 0,
+        "components": [
+            "Legname Indurito (×2)",
+            "Acciaio Nero (×3)",
+            "Cuoio Indurito (×2)",
+            "Resina (×4)",
+            "Ossa di Bestia (×7)",
+            "Acciaio (×3)",
+            "Ceneri (×2)"
+        ],
+        "difficulty": 16,
+        "time": "8 ore",
+        "sourcebook": "MB 134"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

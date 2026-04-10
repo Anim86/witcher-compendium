@@ -1,0 +1,17 @@
+﻿{
+    "name":  "Barca a Vela",
+    "_id":  "ddc6e01ba5218463",
+    "system":  {
+                   "weight":  130,
+                   "description":  "\u003cp\u003eUna piccola imbarcazione dotata di una sola vela, ideale per spostarsi lungo fiumi e coste.\u003c/p\u003e",
+                   "quantity":  1,
+                   "cost":  230,
+                   "sourcebook":  "MB 93"
+               },
+    "type":  "item",
+    "img":  "icons/svg/item-bag.svg",
+    "_stats":  {
+                   "coreVersion":  14,
+                   "systemId":  "TheWitcherItaNewSystem"
+               }
+}

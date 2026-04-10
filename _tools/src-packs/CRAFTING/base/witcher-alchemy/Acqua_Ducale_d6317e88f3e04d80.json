@@ -1,0 +1,25 @@
+﻿{
+    "_id": "d6317e88f3e04d80",
+    "name": "Acqua Ducale",
+    "type": "component",
+    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag145_Sostanze Alchemiche_02.webp",
+    "system": {
+        "description": "<p>C Montagne e sottoterra 1d10 Unità 12 0,1 20</p>",
+        "quantity": "1",
+        "weight": 0.1,
+        "cost": 20,
+        "sourcebook": "MB 146",
+        "type": "alchemical",
+        "rarity": "C",
+        "location": "Montagne e sottoterra 1d10 Unità 12",
+        "quantityObtainable": "",
+        "forage": "",
+        "substanceType": "quebrith"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

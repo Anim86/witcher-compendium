@@ -1,0 +1,30 @@
+﻿{
+    "_id": "bf14f32d56dc2f4c",
+    "name": "Cuoio Lyriano",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag132_Schemi di Manifattura_10.webp",
+    "system": {
+        "description": "<p>Schema per la fabbricazione di: <b>Cuoio Lyriano</b>.</p><p><b>Componenti richiesti:</b> Cuoio (×1), Cerume di Orco (×1), Carbone (×12)</p><p><b>Difficoltà Manifattura:</b> CD 17</p><p><b>Tempo:</b> 1 ora</p>",
+        "weight": 0,
+        "cost": 0,
+        "components": [
+            "Cuoio (×1)",
+            "Cerume di Orco (×1)",
+            "Carbone (×12)"
+        ],
+        "difficulty": 17,
+        "time": "1 ora",
+        "sourcebook": "MB 132"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

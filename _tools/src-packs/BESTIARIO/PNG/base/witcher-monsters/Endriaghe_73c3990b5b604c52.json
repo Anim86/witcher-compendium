@@ -1,4 +1,4 @@
-{
+﻿{
     "_id": "73c3990b5b604c52",
     "name": "Endriaghe",
     "type": "monster",
@@ -6,29 +6,29 @@
     "system": {
         "stats": {
             "int": {
-                "value": 6,
-                "max": 6,
-                "unmodifiedMax": 6
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
             },
             "ref": {
-                "value": 9,
-                "max": 9,
-                "unmodifiedMax": 9
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
             },
             "dex": {
-                "value": 6,
-                "max": 6,
-                "unmodifiedMax": 6
-            },
-            "body": {
-                "value": 13,
-                "max": 13,
-                "unmodifiedMax": 13
-            },
-            "spd": {
                 "value": 5,
                 "max": 5,
                 "unmodifiedMax": 5
+            },
+            "body": {
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
+            },
+            "spd": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
             },
             "emp": {
                 "value": 1,
@@ -81,20 +81,20 @@
             }
         },
         "details": {
-            "biography": "[Immagini presenti in questa pagina: Pag297_Endriaghe_01.png, Pag297_Endriaghe_02.png, Pag297_Endriaghe_03.png, Pag297_Endriaghe_04.png, Pag297_Endriaghe_05.png, Pag297_Endriaghe_06.png, Pag297_Endriaghe_07.png, Pag297_Endriaghe_08.png, Pag297_Endriaghe_09.png, Pag297_Endriaghe_10.png, Pag297_Endriaghe_11.png, Pag297_Endriaghe_12.png, Pag297_Endriaghe_13.png]<br><br>295 ENDRIAGHE<br>SUPERSTIZIONE COMUNE (Istruzione CD 12) Dicono che le endriaghe siano come ogni altro in- setto, eh, solo un’infestazione di cui bisogna liberar- si. Secondo la tradizione basta ridurre in polvere qualche peperoncino o della cannella e spargerla attorno a casa e poi aggiungere un po’ di aceto a qualsiasi fonte d’acqua nei pressi. Quando si deve passare nei boschi, strofinarsi la pelle con un mez- zo limone. Infine, marinare la carne di ogni preda nell’aceto per uccidere le uova di endriaga. La gente immagina delle soluzioni davvero creative. – Rodolf Kazmer<br>All’ingresso del nido si incontrano i droni, il cui scopo è difendere e fecondare la regina. Sono in assoluto la sottospecie più aggressiva e attaccano senza provocazione lanciando raf- fiche di aculei velenosi dall’addome, per poi avventarsi e colpire con le chele. Dato che solo i droni più forti possono fe- condare la regina, queste creature sono sem- pre alla ricerca di uno scontro. Superati tutti questi pericoli, si trova la regina e le uova. Chi arriva a questo punto dovrà affrontare ogni endriaga rimasta nell’area, perché la regina le convocherà tutte a difesa.",
-            "threat": "Difficile Complesso",
+            "biography": "<p>Dicono che le endriaghe siano come ogni altro insetto, solo un’infestazione di cui bisogna liberarsi. La gente immagina delle soluzioni davvero creative. – Rodolf Kazmer</p><p>Superati tutti i pericoli, si trova la regina e le uova. Chi arriva a questo punto dovrà affrontare ogni endriaga rimasta nell’area, perché la regina le convocherà tutte a difesa. La regina è tecnicamente un insetto, allo stesso modo in cui un leone è un gatto.</p>",
+            "threat": "Ardua",
             "reward": 1000
         },
         "derivedStats": {
             "health": {
-                "value": 90,
-                "max": 90,
-                "unmodifiedMax": 90
+                "value": 25,
+                "max": 25,
+                "unmodifiedMax": 25
             },
             "stamina": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 25,
+                "max": 25,
+                "unmodifiedMax": 25
             },
             "vigor": {
                 "value": 0,
@@ -102,31 +102,26 @@
                 "unmodifiedMax": 0
             },
             "rec": {
-                "value": 9,
-                "max": 9,
-                "unmodifiedMax": 9
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
             },
             "resolve": {
-                "value": 130,
-                "max": 130,
-                "unmodifiedMax": 130
+                "value": 25,
+                "max": 25,
+                "unmodifiedMax": 25
             },
             "stun": {
-                "value": 9,
-                "max": 9
+                "value": 5,
+                "max": 5
             },
             "woundTreshold": {
-                "value": 9,
-                "max": 9
+                "value": 5,
+                "max": 5
             }
         },
-        "description": "<p>SUPERSTIZIONE COMUNE (Istruzione CD 12) Dicono che le endriaghe siano come ogni altro in- setto, eh, solo un’infestazione di cui bisogna liberar- si. Secondo la tradizione basta ridurre in polvere qualche peperoncino o della cannella e spargerla attorno a casa e poi aggiungere un po’ di aceto a qualsiasi fonte d’acqua nei pressi. Quando si deve passare nei boschi, strofinarsi la pelle con un mez- zo limone. Infine, marinare la carne di ogni preda nell’aceto per uccidere le uova di endriaga. La gente immagina delle soluzioni davvero creative. – Rodolf Kazmer All’ingresso del nido si incontrano i droni, il cui scopo è difendere e fecondare la regina. Sono in assoluto la sottospecie più aggressiva e attaccano senza provocazione lanciando raf- fiche di aculei velenosi dall’addome, per poi avventarsi e colpire con le chele. Dato che solo i droni più forti possono fe- condare la regina, queste creature sono sem- pre alla ricerca di uno scontro. Superati tutti questi pericoli, si trova la regina e le uova. Chi arriva a questo punto dovrà affrontare ogni endriaga rimasta nell’area, perché la regina le convocherà tutte a difesa. Vulnerabilità Unguento Anti-insettoidi Capacità Avventarsi Una endriaga non ha bisogno della rincorsa per balzare. Ferale Grazie ai suoi istinti una endriaga possiede INT 6 ai fini delle prove d’Accortezza e Sopravvivenza. Immunità ai Veleni Una endriaga non subisce danni dall’effetto veleno. CONOSCENZA DEI WITCHER (Arte del Witcher CD 10) Le endriaghe sono tecnicamente insetti, allo stesso modo in cui un leone è un gatto. Chi si avventura nelle paludi o nelle pianure alluvionali corre sempre il rischio di incontrarne un gruppo. Quando le si affronta è bene ricordare che un’en- driaga è capace di saltare fino a 4 metri da ferma, perciò un crepaccio non è una difesa. A causa della loro natura tossica, le endria- ghe sono immuni al veleno e i loro duri cara- paci le rendono resistenti alle armi da taglio. Prima di dare loro la caccia è bene fare prov- vista di antitossine, come la pozione Rigogolo Dorato. Nelle vicinanze di un nido è probabi- le incontrare prima i lavoratori, la sottospecie più comune. Sono affrontabili singolarmente, ma terrificanti quando circondano la preda in 5 o 6. Dopo averne eliminati 8 o 9 arriveran- no i guerrieri. Questi sono i cugini più cattivi e pericolosi dei lavoratori, estremamente ag- gressivi, attaccano con le code velenose verso la preda. Resistenze Una endriaga subisce danni dimezzati da sanguinamento e attacchi taglienti. ABILITÀ Accortezza +5 Atletica +5 Coraggio +5 Sottospecie Eludere +6 Aculei del Drone Un drone endriaga può scagliare i suoi aculei in un cerchio di 5m attorno a sé. È possibile bloccarli o schivarli (CD 15). Per ogni punto sotto la CD il bersaglio subisce 1d6 danni ed è avvelenato. Mischia +6 Nascondersi +7 Resistere alla Magia +6 Rissa +5 Sopravvivenza +6 Tempra +6 Chele del Lavoratore Le chele di un lavoratore endriaga hanno il 25% di probabilità di infliggere lo stato avvelenato. Bottino Estratto di Veleno (×1d6/2) Chitina (×1d6/2) Coda del Guerriero Un guerriero endriaga ha un’enorme coda che provoca 4d6+2 danni e può infliggere lo stato avvelenato (50%). Saliva di Endriaga (×1d6/2) Armi Nome DAN Effetti N°Att Chele 3d6 N/A 1</p>",
-        "notes": [
-            {
-                "title": "Descrizione",
-                "details": "<p>SUPERSTIZIONE COMUNE (Istruzione CD 12) Dicono che le endriaghe siano come ogni altro in- setto, eh, solo un’infestazione di cui bisogna liberar- si. Secondo la tradizione basta ridurre in polvere qualche peperoncino o della cannella e spargerla attorno a casa e poi aggiungere un po’ di aceto a qualsiasi fonte d’acqua nei pressi. Quando si deve passare nei boschi, strofinarsi la pelle con un mez- zo limone. Infine, marinare la carne di ogni preda nell’aceto per uccidere le uova di endriaga. La gente immagina delle soluzioni davvero creative. – Rodolf Kazmer All’ingresso del nido si incontrano i droni, il cui scopo è difendere e fecondare la regina. Sono in assoluto la sottospecie più aggressiva e attaccano senza provocazione lanciando raf- fiche di aculei velenosi dall’addome, per poi avventarsi e colpire con le chele. Dato che solo i droni più forti possono fe- condare la regina, queste creature sono sem- pre alla ricerca di uno scontro. Superati tutti questi pericoli, si trova la regina e le uova. Chi arriva a questo punto dovrà affrontare ogni endriaga rimasta nell’area, perché la regina le convocherà tutte a difesa. Vulnerabilità Unguento Anti-insettoidi Capacità Avventarsi Una endriaga non ha bisogno della rincorsa per balzare. Ferale Grazie ai suoi istinti una endriaga possiede INT 6 ai fini delle prove d’Accortezza e Sopravvivenza. Immunità ai Veleni Una endriaga non subisce danni dall’effetto veleno. CONOSCENZA DEI WITCHER (Arte del Witcher CD 10) Le endriaghe sono tecnicamente insetti, allo stesso modo in cui un leone è un gatto. Chi si avventura nelle paludi o nelle pianure alluvionali corre sempre il rischio di incontrarne un gruppo. Quando le si affronta è bene ricordare che un’en- driaga è capace di saltare fino a 4 metri da ferma, perciò un crepaccio non è una difesa. A causa della loro natura tossica, le endria- ghe sono immuni al veleno e i loro duri cara- paci le rendono resistenti alle armi da taglio. Prima di dare loro la caccia è bene fare prov- vista di antitossine, come la pozione Rigogolo Dorato. Nelle vicinanze di un nido è probabi- le incontrare prima i lavoratori, la sottospecie più comune. Sono affrontabili singolarmente, ma terrificanti quando circondano la preda in 5 o 6. Dopo averne eliminati 8 o 9 arriveran- no i guerrieri. Questi sono i cugini più cattivi e pericolosi dei lavoratori, estremamente ag- gressivi, attaccano con le code velenose verso la preda. Resistenze Una endriaga subisce danni dimezzati da sanguinamento e attacchi taglienti. ABILITÀ Accortezza +5 Atletica +5 Coraggio +5 Sottospecie Eludere +6 Aculei del Drone Un drone endriaga può scagliare i suoi aculei in un cerchio di 5m attorno a sé. È possibile bloccarli o schivarli (CD 15). Per ogni punto sotto la CD il bersaglio subisce 1d6 danni ed è avvelenato. Mischia +6 Nascondersi +7 Resistere alla Magia +6 Rissa +5 Sopravvivenza +6 Tempra +6 Chele del Lavoratore Le chele di un lavoratore endriaga hanno il 25% di probabilità di infliggere lo stato avvelenato. Bottino Estratto di Veleno (×1d6/2) Chitina (×1d6/2) Coda del Guerriero Un guerriero endriaga ha un’enorme coda che provoca 4d6+2 danni e può infliggere lo stato avvelenato (50%). Saliva di Endriaga (×1d6/2) Armi Nome DAN Effetti N°Att Chele 3d6 N/A 1</p>"
-            }
-        ]
+        "description": "<p>Dicono che le endriaghe siano come ogni altro insetto, solo un’infestazione di cui bisogna liberarsi. La gente immagina delle soluzioni davvero creative. – Rodolf Kazmer</p><p>Superati tutti i pericoli, si trova la regina e le uova. Chi arriva a questo punto dovrà affrontare ogni endriaga rimasta nell’area, perché la regina le convocherà tutte a difesa. La regina è tecnicamente un insetto, allo stesso modo in cui un leone è un gatto.</p>",
+        "sourcebook": "MB 295"
     },
     "items": [
         {
@@ -136,71 +131,39 @@
             "img": "icons/svg/sword.svg",
             "system": {
                 "description": "",
-                "weight": 0,
-                "cost": 0,
-                "damage": "3d6",
-                "reliability": {
-                    "value": 10,
-                    "max": 10
-                },
+                "damage": "4d6+2",
                 "accuracy": 0,
-                "hands": 1,
-                "reach": "N/A",
-                "effects": "N/A"
+                "effects": "Veleno (50%)"
             },
-            "effects": [],
-            "folder": null,
-            "sort": 0,
-            "ownership": {
-                "default": 0
-            },
-            "flags": {},
             "_stats": {
-                "systemId": "TheWitcherTRPG",
-                "systemVersion": "1.0.0",
-                "coreVersion": "13"
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
             }
         },
         {
-            "_id": "7fcd5dbe45d44f19",
-            "name": "[Vulnerabilità] Unguento",
+            "_id": "e1",
+            "name": "[Capacità] Avventarsi",
             "type": "note",
             "img": "icons/svg/book.svg",
             "system": {
-                "description": "<p>Anti-insettoidi</p>"
+                "description": "<p>Un’endriaga non ha bisogno della rincorsa per balzare (fino a 4m da ferma).</p>"
             },
-            "effects": [],
-            "folder": null,
-            "sort": 0,
-            "ownership": {
-                "default": 0
-            },
-            "flags": {},
             "_stats": {
-                "systemId": "TheWitcherTRPG",
-                "systemVersion": "1.0.0",
-                "coreVersion": "13"
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
             }
         },
         {
-            "_id": "d3e711208fb44e98",
-            "name": "[Capacità] Avventarsi Una",
+            "_id": "e2",
+            "name": "[Capacità] Aculei del Drone",
             "type": "note",
             "img": "icons/svg/book.svg",
             "system": {
-                "description": "<p>endriaga non ha bisogno della rincorsa per balzare.</p>"
+                "description": "<p>Può scagliare aculei in un cerchio di 5m. Schivata CD 15. Subisce 1d6 danni ed è avvelenato per ogni punto sotto la CD.</p>"
             },
-            "effects": [],
-            "folder": null,
-            "sort": 0,
-            "ownership": {
-                "default": 0
-            },
-            "flags": {},
             "_stats": {
-                "systemId": "TheWitcherTRPG",
-                "systemVersion": "1.0.0",
-                "coreVersion": "13"
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
             }
         }
     ],
@@ -211,7 +174,6 @@
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
+        "coreVersion": 14
     }
 }

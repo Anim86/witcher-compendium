@@ -1,0 +1,23 @@
+﻿{
+    "_id": "0ddba784e460e45c",
+    "name": "Tempesta",
+    "type": "component",
+    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag089_Prodotti Alchemici_08.webp",
+    "system": {
+        "description": "<p>Elisir che incanala la magia ambientale per potenziare gli effetti elementali.</p><p><b>Effetti:</b> +10% probabilità di infliggere A Fuoco, Congelamento o Prono.</p><p><b>Durata:</b> 1 ora</p><p><b>Tossicità:</b> 50%</p>",
+        "quantity": "1",
+        "weight": 0.1,
+        "cost": 52,
+        "sourcebook": "TC 117",
+        "type": "alchemical",
+        "rarity": "R",
+        "location": "",
+        "substanceType": ""
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

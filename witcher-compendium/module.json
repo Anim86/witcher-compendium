@@ -120,21 +120,21 @@
     {
       "name": "witcher-components",
       "label": "Componenti",
-      "path": "packs/CREAZIONE/base/witcher-components",
+      "path": "packs/CRAFTING/base/witcher-components",
       "type": "Item",
       "system": "TheWitcherItaNewSystem"
     },
     {
       "name": "witcher-schematics",
       "label": "Schemi",
-      "path": "packs/CREAZIONE/base/witcher-schematics",
+      "path": "packs/CRAFTING/base/witcher-schematics",
       "type": "Item",
       "system": "TheWitcherItaNewSystem"
     },
     {
       "name": "witcher-alchemy",
       "label": "Alchimia",
-      "path": "packs/CREAZIONE/base/witcher-alchemy",
+      "path": "packs/CRAFTING/base/witcher-alchemy",
       "type": "Item",
       "system": "TheWitcherItaNewSystem"
     },
@@ -150,6 +150,20 @@
       "label": "Bestiario Chaos",
       "path": "packs/BESTIARIO/PNG/caos/witcher-monsters-chaos",
       "type": "Actor",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-transports",
+      "label": "Trasporti",
+      "path": "packs/EQUIPAGGIAMENTO/base/witcher-transports",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-trophies",
+      "label": "Trofei",
+      "path": "packs/EQUIPAGGIAMENTO/caos/witcher-trophies",
+      "type": "Item",
       "system": "TheWitcherItaNewSystem"
     }
   ],

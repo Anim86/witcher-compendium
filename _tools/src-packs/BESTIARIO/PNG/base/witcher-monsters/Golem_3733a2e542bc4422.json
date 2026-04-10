@@ -1,4 +1,4 @@
-{
+﻿{
     "_id": "3733a2e542bc4422",
     "name": "Golem",
     "type": "monster",
@@ -11,14 +11,14 @@
                 "unmodifiedMax": 1
             },
             "ref": {
-                "value": 13,
-                "max": 13,
-                "unmodifiedMax": 13
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
             },
             "dex": {
-                "value": 10,
-                "max": 10,
-                "unmodifiedMax": 10
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
             },
             "body": {
                 "value": 15,
@@ -26,9 +26,9 @@
                 "unmodifiedMax": 15
             },
             "spd": {
-                "value": 7,
-                "max": 7,
-                "unmodifiedMax": 7
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
             },
             "emp": {
                 "value": 1,
@@ -41,9 +41,9 @@
                 "unmodifiedMax": 1
             },
             "will": {
-                "value": 9,
-                "max": 9,
-                "unmodifiedMax": 9
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
             },
             "luck": {
                 "value": 0,
@@ -75,20 +75,20 @@
             }
         },
         "details": {
-            "biography": "[Immagini presenti in questa pagina: Pag301_Golem_01.png, Pag301_Golem_02.png, Pag301_Golem_03.png, Pag301_Golem_04.png, Pag301_Golem_05.png, Pag301_Golem_06.png, Pag301_Golem_07.png, Pag301_Golem_08.png, Pag301_Golem_09.png, Pag301_Golem_10.png, Pag301_Golem_11.png, Pag301_Golem_12.png]<br><br>299 GOLEM<br>SUPERSTIZIONE COMUNE (Istruzione CD 16) I golem sono gli unici mostri artificiali che cono- sco. Dicono che siano costruiti con il potere degli elementi e animati con le anime dei morti. Eh, mi sembra difficile, visto che la necromanzia è illegale in tutto il Continente, ma chissà? Quello che so è che non è possibile fermarne uno senza un witcher o un’intera guarnigione. Si dice che quando un golem carica possa attraversare una casa senza neppure aprire la porta. – Rodolf Kazmer<br>Se è necessario combattere un golem è bene fare scorta di bombe al dimeritium. Sebbene non possano “spegnere” un golem, lo rallenteranno. Anche l’unguento anti-costrutti e gli incantesimi a base elettrica sono utili. Quando viene colpito dall’elettricità, un golem si immobilizza, mentre la magia che lo anima cerca di riattivarsi. Non bisogna mai provare a parare i colpi di un go- lem, i suoi pugni sono tanto potenti da spezzare qualsiasi arma. Essendo un costrutto è immune a fuoco, veleni, sanguinamento e incantesimi di controllo mentale. Ultimo, ma non meno im- portante: quando un golem carica… è calda- mente consigliato levarsi subito di torno.",
-            "threat": "Difficile Arduo",
+            "biography": "<p>I golem sono gli unici mostri artificiali che conosco. Dicono che siano costruiti con il potere degli elementi e animati con le anime dei morti. – Rodolf Kazmer</p><p>I golem sono creature estremamente semplici, eppure incredibilmente pericolose. Il tipico esemplare è stato creato da un mago per proteggersi, come forza lavoro o per sorvegliare qualcosa d’importante. I golem seguono gli ordini alla lettera… per sempre.</p>",
+            "threat": "Ardua",
             "reward": 1500
         },
         "derivedStats": {
             "health": {
-                "value": 110,
-                "max": 110,
-                "unmodifiedMax": 110
+                "value": 50,
+                "max": 50,
+                "unmodifiedMax": 50
             },
             "stamina": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 50,
+                "max": 50,
+                "unmodifiedMax": 50
             },
             "vigor": {
                 "value": 0,
@@ -96,74 +96,68 @@
                 "unmodifiedMax": 0
             },
             "rec": {
-                "value": 11,
-                "max": 11,
-                "unmodifiedMax": 11
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
             },
             "resolve": {
-                "value": 150,
-                "max": 150,
-                "unmodifiedMax": 150
+                "value": 50,
+                "max": 50,
+                "unmodifiedMax": 50
             },
             "stun": {
                 "value": 10,
                 "max": 10
             },
             "woundTreshold": {
-                "value": 12,
-                "max": 12
+                "value": 10,
+                "max": 10
             }
         },
-        "description": "<p>SUPERSTIZIONE COMUNE (Istruzione CD 16) I golem sono gli unici mostri artificiali che cono- sco. Dicono che siano costruiti con il potere degli elementi e animati con le anime dei morti. Eh, mi sembra difficile, visto che la necromanzia è illegale in tutto il Continente, ma chissà? Quello che so è che non è possibile fermarne uno senza un witcher o un’intera guarnigione. Si dice che quando un golem carica possa attraversare una casa senza neppure aprire la porta. – Rodolf Kazmer Se è necessario combattere un golem è bene fare scorta di bombe al dimeritium. Sebbene non possano “spegnere” un golem, lo rallenteranno. Anche l’unguento anti-costrutti e gli incantesimi a base elettrica sono utili. Quando viene colpito dall’elettricità, un golem si immobilizza, mentre la magia che lo anima cerca di riattivarsi. Non bisogna mai provare a parare i colpi di un go- lem, i suoi pugni sono tanto potenti da spezzare qualsiasi arma. Essendo un costrutto è immune a fuoco, veleni, sanguinamento e incantesimi di controllo mentale. Ultimo, ma non meno im- portante: quando un golem carica… è calda- mente consigliato levarsi subito di torno. Vulnerabilità Unguento Anti-costrutti Bombe al Dimeritium Quando si trova nell’area di una bomba al Dimeritium, un golem diventa lento. Perde l’uso della capacità forza distruttiva e carica e subisce -2 a tutte le Statistiche per la durata della bomba. Vulnerabile all’Elettricità L’elettricità può disattivare un golem. Se subisce più di 10 danni elettrici dovrà superare un tiro salvezza Grinta -7. CONOSCENZA DEI WITCHER (Arte del Witcher CD 16) I golem sono creature estremamente semplici, eppure incredibilmente pericolose. Il tipico esemplare è stato creato da un mago per pro- teggersi, come forza lavoro o per sorvegliare qualcosa d’importante. I golem seguono gli ordini alla lettera… per sempre. Se gli viene or- dinato di proteggere un certo vaso lo farà fino alla sua distruzione secoli – o forse millenni – dopo. Questo significa che se a un golem viene ordinato di portare acqua continuerà a farlo, un secchio alla volta, finché non verrà fermato. I golem non sono creativi, ma sono inarrestabili. Esistono tre motivi per cui si potrebbe affronta- re un golem. Primo: si è alla ricerca di qualcosa che un potente mago sta conservando. In tal caso il golem sarà stazionario e si avrà tempo per organizzarsi. Secondo: si sta affrontando un mago, che ha un golem a difesa. Di nuovo ci sarà tempo per prepararsi. Terzo: il mago ha creato un golem allo scopo di uccidere. Questa è la situazione peggiore, perché il mostro inse- guirà il suo bersaglio fino alla morte. Potrebbe persino dissotterrare il cadavere e rompergli di nuovo le ossa, giusto per sicurezza. Capacità ABILITÀ Carica Se un avversario si allontana di oltre 10m, un golem può caricarlo, effettuando un poderoso attacco. Questo subisce una penalità di -4 alla precisione, ma infligge 10d6 e scaraventa indietro la vittima di 8m. Se colpisce un oggetto a causa di questo movimento, il bersaglio subisce danni da impatto pari a quelli provocati da un cavallo. Accortezza +8 Atletica +2 Eludere +4 Nascondersi +2 Resistere alla Magia +10 Rissa +5 Sopravvivenza +4 Tempra +10 Costrutto Un golem è immune a sanguinamento, avvelenato, A fuoco e tutti gli incantesimi che colpiscono la mente o le emozioni. Inoltre è impossibile ragionarci e non esaurisce mai la RES. Bottino Cuore di Golem Polvere Infusa (×1d6) Runa Casuale Armi Forza Distruttiva A causa della sua incredibile forza, i colpi di un golem non possono essere parati e causano doppio danno ablativo ad armi, scudi e armature. Nome DAN Effetti N°Att Pugni 8d6 Ablativo 1 Resistenze Un golem subisce danni dimezzati da attacchi taglienti o perforanti.</p>",
-        "notes": [
-            {
-                "title": "Descrizione",
-                "details": "<p>Un amalgama di corpi è un golem non-senziente formato da cadaveri parzialmente rianimati. Molti necromanti li usano come guardie del corpo, altri come assistenti. In combattimento, un amalgama colpisce tutto ciò che vede con le sue molte braccia, fermandosi solo di tanto in tanto per emettere un terribile lamento, che stordisce le vittime. Essendo non-morti, non possono guarire, ma sono immuni a veleno, sanguinamento e ogni tipo di effetto mentale. Inoltre, a causa delle dimensioni e dei molteplici arti, non è possibile gettarli a terra. Per assurdo, il loro punto di forza è anche il modo più facile per ucciderli. Infliggere colpi critici e rimuovere parte dei corpi dall'amalgama, indebolisce rapidamente la creatura, ma l'anima che abita un corpo rimosso si manifesta subito come un wraith rabbioso, che attacca il suo liberatore. Una volta eliminato l'amalgama, i wraith possono rivelarsi un pericolo ben più grande. Infine, occorre ricordare che l'amalgama può, per pochi attimi, recuperare l'intelligenza di una delle anime intrappolate al suo interno. Quando si trova di fronte a porte chiuse, enigmi o un avversario che non può raggiungere, l'amalgama riesce a recuperare</p>"
-            }
-        ],
-        "sourcebook": "MB 222"
+        "description": "<p>I golem sono gli unici mostri artificiali che conosco. Dicono che siano costruiti con il potere degli elementi e animati con le anime dei morti. – Rodolf Kazmer</p><p>I golem sono creature estremamente semplici, eppure incredibilmente pericolose. Il tipico esemplare è stato creato da un mago per proteggersi, come forza lavoro o per sorvegliare qualcosa d’importante. I golem seguono gli ordini alla lettera… per sempre.</p>",
+        "sourcebook": "MB 299"
     },
     "items": [
         {
-            "_id": "784f367244824803",
-            "name": "[Vulnerabilità] Unguento",
-            "type": "note",
-            "img": "icons/svg/book.svg",
+            "_id": "g1",
+            "name": "Pugni",
+            "type": "weapon",
+            "img": "icons/svg/sword.svg",
             "system": {
-                "description": "<p>Anti-costrutti</p>"
+                "description": "",
+                "damage": "8d6",
+                "accuracy": 0,
+                "effects": "Ablativo"
             },
-            "effects": [],
-            "folder": null,
-            "sort": 0,
-            "ownership": {
-                "default": 0
-            },
-            "flags": {},
             "_stats": {
-                "systemId": "TheWitcherTRPG",
-                "systemVersion": "1.0.0",
-                "coreVersion": "13"
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
             }
         },
         {
-            "_id": "46d034368f324f3e",
-            "name": "Capacità",
+            "_id": "g2",
+            "name": "[Capacità] Forza Distruttiva",
             "type": "note",
             "img": "icons/svg/book.svg",
             "system": {
-                "description": "<p>ABILITÀ</p>"
+                "description": "<p>I colpi non possono essere parati e causano doppio danno ablativo.</p>"
             },
-            "effects": [],
-            "folder": null,
-            "sort": 0,
-            "ownership": {
-                "default": 0
-            },
-            "flags": {},
             "_stats": {
-                "systemId": "TheWitcherTRPG",
-                "systemVersion": "1.0.0",
-                "coreVersion": "13"
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "g3",
+            "name": "[Capacità] Carica",
+            "type": "note",
+            "img": "icons/svg/book.svg",
+            "system": {
+                "description": "<p>Può caricare se l'avversario è oltre 10m. -4 precisione, 10d6 danni, sbalzo 8m.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
             }
         }
     ],
@@ -174,7 +168,6 @@
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
+        "coreVersion": 14
     }
 }

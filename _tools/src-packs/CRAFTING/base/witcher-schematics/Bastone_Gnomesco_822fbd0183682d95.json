@@ -1,0 +1,32 @@
+﻿{
+    "_id": "822fbd0183682d95",
+    "name": "Bastone Gnomesco",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag132_Schemi di Manifattura_10.webp",
+    "system": {
+        "description": "<p>Schema per la fabbricazione di: <b>Bastone Gnomesco</b>.</p><p><b>Componenti richiesti:</b> Legname Indurito (×6), Quintessenza (×5), Olio Scurente (×3), Acciaio Nero (×1), Lino a Doppia Trama (×1)</p><p><b>Difficoltà Manifattura:</b> CD 22</p><p><b>Tempo:</b> 11 ore</p>",
+        "weight": 0,
+        "cost": 0,
+        "components": [
+            "Legname Indurito (×6)",
+            "Quintessenza (×5)",
+            "Olio Scurente (×3)",
+            "Acciaio Nero (×1)",
+            "Lino a Doppia Trama (×1)"
+        ],
+        "difficulty": 22,
+        "time": "11 ore",
+        "sourcebook": "MB 138"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

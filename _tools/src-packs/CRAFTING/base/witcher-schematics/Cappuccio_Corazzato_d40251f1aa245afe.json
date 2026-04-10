@@ -1,0 +1,32 @@
+﻿{
+    "_id": "d40251f1aa245afe",
+    "name": "Cappuccio Corazzato",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag132_Schemi di Manifattura_10.webp",
+    "system": {
+        "description": "<p>Schema per la fabbricazione di: <b>Cappuccio Corazzato</b>.</p><p><b>Componenti richiesti:</b> Cuoio (×1), Cuoio Indurito (×3), Lino a Doppia Trama (×3), Filo (×4), Cerume di Orco (×1)</p><p><b>Difficoltà Manifattura:</b> CD 12</p><p><b>Tempo:</b> 6 ore</p>",
+        "weight": 0,
+        "cost": 0,
+        "components": [
+            "Cuoio (×1)",
+            "Cuoio Indurito (×3)",
+            "Lino a Doppia Trama (×3)",
+            "Filo (×4)",
+            "Cerume di Orco (×1)"
+        ],
+        "difficulty": 12,
+        "time": "6 ore",
+        "sourcebook": "MB 136"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

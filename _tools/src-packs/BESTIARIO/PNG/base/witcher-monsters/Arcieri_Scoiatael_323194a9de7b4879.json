@@ -1,4 +1,4 @@
-{
+﻿{
     "_id": "323194a9de7b4879",
     "name": "Arcieri Scoia’tael",
     "type": "monster",
@@ -6,19 +6,19 @@
     "system": {
         "stats": {
             "int": {
-                "value": 1,
-                "max": 1,
-                "unmodifiedMax": 1
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
             },
             "ref": {
-                "value": 7,
-                "max": 7,
-                "unmodifiedMax": 7
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
             },
             "dex": {
-                "value": 7,
-                "max": 7,
-                "unmodifiedMax": 7
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
             },
             "body": {
                 "value": 6,
@@ -26,24 +26,24 @@
                 "unmodifiedMax": 6
             },
             "spd": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "emp": {
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
+            },
+            "cra": {
                 "value": 6,
                 "max": 6,
                 "unmodifiedMax": 6
             },
-            "emp": {
-                "value": 1,
-                "max": 1,
-                "unmodifiedMax": 1
-            },
-            "cra": {
-                "value": 1,
-                "max": 1,
-                "unmodifiedMax": 1
-            },
             "will": {
-                "value": 4,
-                "max": 4,
-                "unmodifiedMax": 4
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
             },
             "luck": {
                 "value": 0,
@@ -84,20 +84,20 @@
             }
         },
         "details": {
-            "biography": "[Immagini presenti in questa pagina: Pag277_Arcieri Scoia’tael_01.png, Pag277_Arcieri Scoia’tael_02.png, Pag277_Arcieri Scoia’tael_03.png, Pag277_Arcieri Scoia’tael_04.png, Pag277_Arcieri Scoia’tael_05.png, Pag277_Arcieri Scoia’tael_06.png, Pag277_Arcieri Scoia’tael_07.png, Pag277_Arcieri Scoia’tael_08.png, Pag277_Arcieri Scoia’tael_09.png, Pag277_Arcieri Scoia’tael_10.png, Pag277_Arcieri Scoia’tael_11.png, Pag277_Arcieri Scoia’tael_12.png]<br><br>275 ARCIERI SCOIA’TAEL<br>SUPERSTIZIONE COMUNE (Istruzione CD 10) Essendo un ‘nano lealista’ ho qualcosa da dire sugli Scoia’tael. Probabilmente mi chiamerebbero cane degli umani, ma preferisco essere un cane fedele che una cagna con la rabbia che corre verso la morte. Una volta avevano uno scopo, eh, combat- tevano per la libertà delle razze antiche nel Nord. Adesso sono solo dei pazzi vendicativi, che voglio- no morire in una fiammata di gloria, uccidendo più umani possibile. Troverete gli ultimi – che sono soprattutto elfi – nei boschi, nascosti nelle ca- verne e impegnati a tendere imboscate a mercanti e colonne militari. Voi umani fareste bene a essere pronti a combattere. – Rodolf Kazmer<br>all’intero) per costringerli a uscire allo scoper- to. È essenziale evitare di scoprirsi e affrontare prima gli avversari in mischia. Il negoziato è sconsigliabile.",
-            "threat": "Facile Semplice",
+            "biography": "<p>Essendo un ‘nano lealista’ ho qualcosa da dire sugli Scoia’tael. Adesso sono solo dei pazzi vendicativi... Troverete gli ultimi – che sono soprattutto elfi – nei boschi, nascosti nelle caverne e impegnati a tendere imboscate. – Rodolf Kazmer</p><p>Sono guerriglieri addestrati, che si muovono in gruppi detti “commando” e tendono imboscate. Spesso i commando seguono una preda per ore, in attesa di trovare il luogo migliore per l’imboscata. Iniziano l’attacco con raffiche di frecce dagli alberi.</p>",
+            "threat": "Facile",
             "reward": 10
         },
         "derivedStats": {
             "health": {
-                "value": 25,
-                "max": 25,
-                "unmodifiedMax": 25
+                "value": 30,
+                "max": 30,
+                "unmodifiedMax": 30
             },
             "stamina": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 30,
+                "max": 30,
+                "unmodifiedMax": 30
             },
             "vigor": {
                 "value": 0,
@@ -105,31 +105,26 @@
                 "unmodifiedMax": 0
             },
             "rec": {
-                "value": 5,
-                "max": 5,
-                "unmodifiedMax": 5
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
             },
             "resolve": {
-                "value": 60,
-                "max": 60,
-                "unmodifiedMax": 60
+                "value": 30,
+                "max": 30,
+                "unmodifiedMax": 30
             },
             "stun": {
-                "value": 5,
-                "max": 5
+                "value": 6,
+                "max": 6
             },
             "woundTreshold": {
-                "value": 5,
-                "max": 5
+                "value": 6,
+                "max": 6
             }
         },
-        "description": "<p>SUPERSTIZIONE COMUNE (Istruzione CD 10) Essendo un ‘nano lealista’ ho qualcosa da dire sugli Scoia’tael. Probabilmente mi chiamerebbero cane degli umani, ma preferisco essere un cane fedele che una cagna con la rabbia che corre verso la morte. Una volta avevano uno scopo, eh, combat- tevano per la libertà delle razze antiche nel Nord. Adesso sono solo dei pazzi vendicativi, che voglio- no morire in una fiammata di gloria, uccidendo più umani possibile. Troverete gli ultimi – che sono soprattutto elfi – nei boschi, nascosti nelle ca- verne e impegnati a tendere imboscate a mercanti e colonne militari. Voi umani fareste bene a essere pronti a combattere. – Rodolf Kazmer all’intero) per costringerli a uscire allo scoper- to. È essenziale evitare di scoprirsi e affrontare prima gli avversari in mischia. Il negoziato è sconsigliabile. Vulnerabilità Veleno dell’Impiccato Capacità Specialista dell’Imboscata Quando un gruppo di arcieri Scoia’tael effettua una prova di Nascondersi per non farsi individuare da potenziali bersagli, l’intero gruppo usa il singolo tiro più alto tra tutti i membri. ABILITÀ Accortezza +9 Archi +8 Atletica +7 Coraggio +6 Eludere +7 Lame Corte +6 MUNIZIONI DELL’ODIO Di solito, gli Scoia’tael usano prima le proprie frecce norma- li e tentano di eliminare tutti i bersagli rapidamente. Le frecce sventratrici elfiche sono riserva- te a quei nemici particolarmente odiati e ai fuggitivi che intendo- no rintracciare in seguito. Nascondersi +8 Resistere a Coercizioni +6 Resistere alla Magia +4 Rissa +4 CONOSCENZA ACCADEMICA (Istruzione CD 14) Affrontare gli Scoia’tael è complesso perché di rado caricano attaccando a caso. Sono guerri- glieri addestrati, che si muovono in gruppi det- ti “commando” e tendono imboscate. Quando si attraversa una densa foresta del Nord biso- gna sempre stare attenti. Spesso i commando seguono una preda per ore, in attesa di trovare il luogo migliore per l’imboscata. Gli Scoia’tael iniziano l’attacco con raffiche di frecce dagli alberi. Dopo la prima scarica, metà dell’unità impugna i falcioni e carica al grido di “Aelirren!” o “Sherrawedd!”, in ri- cordo della grande eroina elfica Aelirren e del Palazzo di Sherrawedd, dove morì. Mentre i compagni impegnano gli avversari in mischia, il resto del commando rimane in posizione ti- rando verso lo scontro. Coloro che si trovano troppo lontani per la mischia, ma entro una decina di metri, impiegano coltelli da lancio contro il bersaglio più vicino. Il modo miglio- re per affrontare gli Scoia’tael è avere copertu- ra. Se c’è un carro meglio ripararsi dietro (o Scherma +6 Sopravvivenza +10 Tempra +7 Bottino Brache Imbottite Cappuccio a Doppia Trama Corone (×1d10) Munizioni Normali (×30) Gambesone Aedirniano Oggetti Comuni (×1d6) Sventratrici Elfiche (×10) Armi Nome DAN Effetti N°Att Arco Lungo 4d6 Gittata: 200m 1 Coltelli da Lancio 1d6 Gittata: 20m 1 Falchion da Cacciatore 3d6 N/A 1 Pugnale 1d6+2 N/A 1</p>",
-        "notes": [
-            {
-                "title": "Descrizione",
-                "details": "<p>SUPERSTIZIONE COMUNE (Istruzione CD 10) Essendo un ‘nano lealista’ ho qualcosa da dire sugli Scoia’tael. Probabilmente mi chiamerebbero cane degli umani, ma preferisco essere un cane fedele che una cagna con la rabbia che corre verso la morte. Una volta avevano uno scopo, eh, combat- tevano per la libertà delle razze antiche nel Nord. Adesso sono solo dei pazzi vendicativi, che voglio- no morire in una fiammata di gloria, uccidendo più umani possibile. Troverete gli ultimi – che sono soprattutto elfi – nei boschi, nascosti nelle ca- verne e impegnati a tendere imboscate a mercanti e colonne militari. Voi umani fareste bene a essere pronti a combattere. – Rodolf Kazmer all’intero) per costringerli a uscire allo scoper- to. È essenziale evitare di scoprirsi e affrontare prima gli avversari in mischia. Il negoziato è sconsigliabile. Vulnerabilità Veleno dell’Impiccato Capacità Specialista dell’Imboscata Quando un gruppo di arcieri Scoia’tael effettua una prova di Nascondersi per non farsi individuare da potenziali bersagli, l’intero gruppo usa il singolo tiro più alto tra tutti i membri. ABILITÀ Accortezza +9 Archi +8 Atletica +7 Coraggio +6 Eludere +7 Lame Corte +6 MUNIZIONI DELL’ODIO Di solito, gli Scoia’tael usano prima le proprie frecce norma- li e tentano di eliminare tutti i bersagli rapidamente. Le frecce sventratrici elfiche sono riserva- te a quei nemici particolarmente odiati e ai fuggitivi che intendo- no rintracciare in seguito. Nascondersi +8 Resistere a Coercizioni +6 Resistere alla Magia +4 Rissa +4 CONOSCENZA ACCADEMICA (Istruzione CD 14) Affrontare gli Scoia’tael è complesso perché di rado caricano attaccando a caso. Sono guerri- glieri addestrati, che si muovono in gruppi det- ti “commando” e tendono imboscate. Quando si attraversa una densa foresta del Nord biso- gna sempre stare attenti. Spesso i commando seguono una preda per ore, in attesa di trovare il luogo migliore per l’imboscata. Gli Scoia’tael iniziano l’attacco con raffiche di frecce dagli alberi. Dopo la prima scarica, metà dell’unità impugna i falcioni e carica al grido di “Aelirren!” o “Sherrawedd!”, in ri- cordo della grande eroina elfica Aelirren e del Palazzo di Sherrawedd, dove morì. Mentre i compagni impegnano gli avversari in mischia, il resto del commando rimane in posizione ti- rando verso lo scontro. Coloro che si trovano troppo lontani per la mischia, ma entro una decina di metri, impiegano coltelli da lancio contro il bersaglio più vicino. Il modo miglio- re per affrontare gli Scoia’tael è avere copertu- ra. Se c’è un carro meglio ripararsi dietro (o Scherma +6 Sopravvivenza +10 Tempra +7 Bottino Brache Imbottite Cappuccio a Doppia Trama Corone (×1d10) Munizioni Normali (×30) Gambesone Aedirniano Oggetti Comuni (×1d6) Sventratrici Elfiche (×10) Armi Nome DAN Effetti N°Att Arco Lungo 4d6 Gittata: 200m 1 Coltelli da Lancio 1d6 Gittata: 20m 1 Falchion da Cacciatore 3d6 N/A 1 Pugnale 1d6+2 N/A 1</p>"
-            }
-        ]
+        "description": "<p>Essendo un ‘nano lealista’ ho qualcosa da dire sugli Scoia’tael. Adesso sono solo dei pazzi vendicativi... Troverete gli ultimi – che sono soprattutto elfi – nei boschi, nascosti nelle caverne e impegnati a tendere imboscate. – Rodolf Kazmer</p><p>Sono guerriglieri addestrati, che si muovono in gruppi detti “commando” e tendono imboscate. Spesso i commando seguono una preda per ore, in attesa di trovare il luogo migliore per l’imboscata. Iniziano l’attacco con raffiche di frecce dagli alberi.</p>",
+        "sourcebook": "MB 276"
     },
     "items": [
         {
@@ -139,29 +134,15 @@
             "img": "icons/svg/sword.svg",
             "system": {
                 "description": "",
-                "weight": 0,
-                "cost": 0,
                 "damage": "4d6",
-                "reliability": {
-                    "value": 10,
-                    "max": 10
-                },
                 "accuracy": 0,
-                "hands": 1,
-                "reach": "N/A",
-                "effects": "Gittata: 200m"
+                "hands": 2,
+                "range": "200m",
+                "effects": ""
             },
-            "effects": [],
-            "folder": null,
-            "sort": 0,
-            "ownership": {
-                "default": 0
-            },
-            "flags": {},
             "_stats": {
-                "systemId": "TheWitcherTRPG",
-                "systemVersion": "1.0.0",
-                "coreVersion": "13"
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
             }
         },
         {
@@ -171,29 +152,15 @@
             "img": "icons/svg/sword.svg",
             "system": {
                 "description": "",
-                "weight": 0,
-                "cost": 0,
                 "damage": "1d6",
-                "reliability": {
-                    "value": 10,
-                    "max": 10
-                },
                 "accuracy": 0,
                 "hands": 1,
-                "reach": "N/A",
-                "effects": "Gittata: 20m"
+                "range": "20m",
+                "effects": ""
             },
-            "effects": [],
-            "folder": null,
-            "sort": 0,
-            "ownership": {
-                "default": 0
-            },
-            "flags": {},
             "_stats": {
-                "systemId": "TheWitcherTRPG",
-                "systemVersion": "1.0.0",
-                "coreVersion": "13"
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
             }
         },
         {
@@ -203,29 +170,14 @@
             "img": "icons/svg/sword.svg",
             "system": {
                 "description": "",
-                "weight": 0,
-                "cost": 0,
                 "damage": "3d6",
-                "reliability": {
-                    "value": 10,
-                    "max": 10
-                },
                 "accuracy": 0,
                 "hands": 1,
-                "reach": "N/A",
-                "effects": "N/A"
+                "effects": ""
             },
-            "effects": [],
-            "folder": null,
-            "sort": 0,
-            "ownership": {
-                "default": 0
-            },
-            "flags": {},
             "_stats": {
-                "systemId": "TheWitcherTRPG",
-                "systemVersion": "1.0.0",
-                "coreVersion": "13"
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
             }
         },
         {
@@ -235,82 +187,34 @@
             "img": "icons/svg/sword.svg",
             "system": {
                 "description": "",
-                "weight": 0,
-                "cost": 0,
                 "damage": "1d6+2",
-                "reliability": {
-                    "value": 10,
-                    "max": 10
-                },
                 "accuracy": 0,
                 "hands": 1,
-                "reach": "N/A",
-                "effects": "N/A"
+                "effects": ""
             },
-            "effects": [],
-            "folder": null,
-            "sort": 0,
-            "ownership": {
-                "default": 0
-            },
-            "flags": {},
             "_stats": {
-                "systemId": "TheWitcherTRPG",
-                "systemVersion": "1.0.0",
-                "coreVersion": "13"
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
             }
         },
         {
             "_id": "acc21c54bbb24a98",
-            "name": "[Vulnerabilità] Veleno",
+            "name": "[Capacità] Specialista Imboscata",
             "type": "note",
             "img": "icons/svg/book.svg",
             "system": {
-                "description": "<p>dell’Impiccato</p>"
+                "description": "<p>Quando un gruppo di arcieri Scoia’tael effettua una prova di Nascondersi, l’intero gruppo usa il singolo tiro più alto tra tutti i membri.</p>"
             },
-            "effects": [],
-            "folder": null,
-            "sort": 0,
-            "ownership": {
-                "default": 0
-            },
-            "flags": {},
             "_stats": {
-                "systemId": "TheWitcherTRPG",
-                "systemVersion": "1.0.0",
-                "coreVersion": "13"
-            }
-        },
-        {
-            "_id": "bdddc67edd94434a",
-            "name": "[Capacità] Specialista",
-            "type": "note",
-            "img": "icons/svg/book.svg",
-            "system": {
-                "description": "<p>dell’Imboscata Quando un gruppo di arcieri Scoia’tael effettua una prova di Nascondersi per non farsi individuare da potenziali bersagli, l’intero gruppo usa il singolo tiro più alto tra tutti i membri.</p>"
-            },
-            "effects": [],
-            "folder": null,
-            "sort": 0,
-            "ownership": {
-                "default": 0
-            },
-            "flags": {},
-            "_stats": {
-                "systemId": "TheWitcherTRPG",
-                "systemVersion": "1.0.0",
-                "coreVersion": "13"
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
             }
         }
     ],
     "effects": [],
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
+        "coreVersion": 14
     }
 }

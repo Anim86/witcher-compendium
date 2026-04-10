@@ -1,4 +1,4 @@
-{
+﻿{
     "_id": "035913ab7f634834",
     "name": "Lupi Mannari",
     "type": "monster",
@@ -6,24 +6,24 @@
     "system": {
         "stats": {
             "int": {
-                "value": 3,
-                "max": 3,
-                "unmodifiedMax": 3
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
             },
             "ref": {
-                "value": 7,
-                "max": 7,
-                "unmodifiedMax": 7
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
             },
             "dex": {
-                "value": 7,
-                "max": 7,
-                "unmodifiedMax": 7
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
             },
             "body": {
-                "value": 6,
-                "max": 6,
-                "unmodifiedMax": 6
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
             },
             "spd": {
                 "value": 8,
@@ -31,19 +31,19 @@
                 "unmodifiedMax": 8
             },
             "emp": {
-                "value": 3,
-                "max": 3,
-                "unmodifiedMax": 3
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
             },
             "cra": {
-                "value": 3,
-                "max": 3,
-                "unmodifiedMax": 3
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
             },
             "will": {
-                "value": 8,
-                "max": 8,
-                "unmodifiedMax": 8
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
             },
             "luck": {
                 "value": 0,
@@ -78,35 +78,23 @@
             },
             "tempra": {
                 "value": 8
-            },
-            "empatia": {
-                "value": -5
-            },
-            "fisico": {
-                "value": 3
-            },
-            "riflessi": {
-                "value": 2
-            },
-            "velocità": {
-                "value": 4
             }
         },
         "details": {
-            "biography": "[Immagini presenti in questa pagina: Pag291_Lupi Mannari_01.png, Pag291_Lupi Mannari_02.png, Pag291_Lupi Mannari_03.png, Pag291_Lupi Mannari_04.png, Pag291_Lupi Mannari_05.png, Pag291_Lupi Mannari_06.png, Pag291_Lupi Mannari_07.png, Pag291_Lupi Mannari_08.png, Pag291_Lupi Mannari_09.png, Pag291_Lupi Mannari_10.png, Pag291_Lupi Mannari_11.png, Pag291_Lupi Mannari_12.png, Pag291_Lupi Mannari_13.png]<br><br>289 LUPI MANNARI<br>SUPERSTIZIONE COMUNE (Istruzione CD 14) La leggenda dice che sono tipi normali finché non vengono illuminati dalla luna e allora si trasfor- mano in mostri folli. Non fanno altro che sbranare gente e bere sangue fino all’alba, quando tornano normali. Il peggio è che se ti mordono, sei condan- nato a trasformarti anche tu. Alcuni pensano di poter curare un lupo mannaro facendogli bere un tè di aconito tre volte al giorno per cinque giorni. Altri dicono che bisogna farlo cadere senza fiato e poi rimproverarlo. Io preferisco usare una balestra. – Rodolf Kazmer<br>Chi affronta un lupo mannaro dovrebbe ignorare tutti i rimedi popolari e trovare una lama d’argento, quindi concentrarsi su schi- vare e rispondere con essa o degli incantesimi. Fuggire è sconsigliabile, perché i licantropi sono molto veloci e possono seguire le tracce con il fiuto. Chi ha un amico affetto da lican- tropia dovrebbe legarlo ogni notte, finché la maledizione non sarà spezzata. Determinare cosa ha provocato un caso di licantropia può essere complicato. Di solito si tratta di una punizione per atti violenti e be- stiali. Spezzare la maledizione richiede sempre grande sofferenza e sacrifici.",
-            "threat": "Facile Complesso",
-            "reward": 20
+            "biography": "<p>La leggenda dice che sono tipi normali finché non vengono illuminati dalla luna e allora si trasformano in mostri folli. – Rodolf Kazmer</p><p>I lupi mannari sono belve orribili e pericolose che possono nascondersi dentro individui perfettamente normali. Questi colossi somigliano a un incrocio tra un umano e un lupo gigante. Sono spietati e guidati dalla sete di sangue. Nascono da persone comuni, vittime di una maledizione.</p>",
+            "threat": "Ardua",
+            "reward": 2000
         },
         "derivedStats": {
             "health": {
-                "value": 35,
-                "max": 35,
-                "unmodifiedMax": 35
+                "value": 50,
+                "max": 50,
+                "unmodifiedMax": 50
             },
             "stamina": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 50,
+                "max": 50,
+                "unmodifiedMax": 50
             },
             "vigor": {
                 "value": 0,
@@ -114,84 +102,78 @@
                 "unmodifiedMax": 0
             },
             "rec": {
-                "value": 7,
-                "max": 7,
-                "unmodifiedMax": 7
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
             },
             "resolve": {
-                "value": 60,
-                "max": 60,
-                "unmodifiedMax": 60
+                "value": 50,
+                "max": 50,
+                "unmodifiedMax": 50
             },
             "stun": {
-                "value": 7,
-                "max": 7
+                "value": 8,
+                "max": 8
             },
             "woundTreshold": {
-                "value": 7,
-                "max": 7
+                "value": 10,
+                "max": 10
             }
         },
-        "description": "<p>SUPERSTIZIONE COMUNE (Istruzione CD 14) La leggenda dice che sono tipi normali finché non vengono illuminati dalla luna e allora si trasfor- mano in mostri folli. Non fanno altro che sbranare gente e bere sangue fino all’alba, quando tornano normali. Il peggio è che se ti mordono, sei condan- nato a trasformarti anche tu. Alcuni pensano di poter curare un lupo mannaro facendogli bere un tè di aconito tre volte al giorno per cinque giorni. Altri dicono che bisogna farlo cadere senza fiato e poi rimproverarlo. Io preferisco usare una balestra. – Rodolf Kazmer Chi affronta un lupo mannaro dovrebbe ignorare tutti i rimedi popolari e trovare una lama d’argento, quindi concentrarsi su schi- vare e rispondere con essa o degli incantesimi. Fuggire è sconsigliabile, perché i licantropi sono molto veloci e possono seguire le tracce con il fiuto. Chi ha un amico affetto da lican- tropia dovrebbe legarlo ogni notte, finché la maledizione non sarà spezzata. Determinare cosa ha provocato un caso di licantropia può essere complicato. Di solito si tratta di una punizione per atti violenti e be- stiali. Spezzare la maledizione richiede sempre grande sofferenza e sacrifici. Vulnerabilità Unguento Anti-maledetti Bombe Polvere Lunare Un lupo mannaro non può rigenerarsi mentre si trova nell’area di una bomba Polvere Lunare. Capacità Fiuto Un lupo mannaro può seguire le tracce di una creatura senza bisogno di segnali visivi o uditivi senza alcuna penalità Rigenerazione Un lupo mannaro rigenera 5 PS per round. CONOSCENZA DEI WITCHER (Arte del Witcher CD 14) I lupi mannari sono belve orribili e pericolose che possono nascondersi dentro individui per- fettamente normali. Questi colossi somigliano a un incrocio tra un umano e un lupo gigante. Sono spietati, privi di compassione e guidati dalla sete di sangue. Il peggio è che nascono da persone comuni, vittime di una maledizione, come una manifestazione di tutte la sua cru- deltà e malignità. Di solito il processo s’inne- sca al sorgere della luna, quando il licantropo perde ogni spoglia di umanità, ma conserva la propria intelligenza e i suoi bisogni più oscuri. Questi esseri sono molto difficili da af- frontare, a causa dell’intelligenza e delle loro capacità di rigenerazione, che possono essere interrotte solo da una bomba Polvere Lunare. Per fortuna possono essere creati solo da una maledizione, un morso provoca “soltanto” un copioso sanguinamento. ABILITÀ Vista Notturna Un lupo mannaro può agire in zone di luce fioca senza penalità. Accortezza +10 Atletica +8 Coraggio +10 Eludere +8 DIVENIRE UN LUPO MANNARO Un personaggio affetto dalla li- cantropia ha una probabilità del 30% di trasformarsi ogni notte al sorgere della luna. Come lupo mannaro diventa un feroce pre- datore dotato di astuzia umana e un irrefrenabile bisogno di uccidere. Se la vittima è un PG, il GM ne prenderà il controllo fino al sorgere del sole. In forma bestiale il lupo mannaro ottiene tutte le capacità, armi e arma- ture indicate nella descrizione e aggiunge un bonus alle caratte- ristiche indicate qui di seguito. Mischia +9 Nascondersi +9 Resistere a Coercizione +10 Resistere alla Magia +9 Rissa +8 Sopravvivenza +9 Tempra +8 Bottino Oggetti Casuali (×1d6) Pelle di Lupo Saliva di Lupo Mannaro (×1d6) Armi BONUS DEL LICANTROPO Nome DAN Effetti N°Att Artigli 4d6+2 Sanguinamento (25%) 2 Empatia -5 Morso 5d6 Sanguinamento (75%) 1 Fisico +3 Riflessi +2 Velocità +4</p>",
-        "notes": [
-            {
-                "title": "Descrizione",
-                "details": "<p>SUPERSTIZIONE COMUNE (Istruzione CD 14) La leggenda dice che sono tipi normali finché non vengono illuminati dalla luna e allora si trasfor- mano in mostri folli. Non fanno altro che sbranare gente e bere sangue fino all’alba, quando tornano normali. Il peggio è che se ti mordono, sei condan- nato a trasformarti anche tu. Alcuni pensano di poter curare un lupo mannaro facendogli bere un tè di aconito tre volte al giorno per cinque giorni. Altri dicono che bisogna farlo cadere senza fiato e poi rimproverarlo. Io preferisco usare una balestra. – Rodolf Kazmer Chi affronta un lupo mannaro dovrebbe ignorare tutti i rimedi popolari e trovare una lama d’argento, quindi concentrarsi su schi- vare e rispondere con essa o degli incantesimi. Fuggire è sconsigliabile, perché i licantropi sono molto veloci e possono seguire le tracce con il fiuto. Chi ha un amico affetto da lican- tropia dovrebbe legarlo ogni notte, finché la maledizione non sarà spezzata. Determinare cosa ha provocato un caso di licantropia può essere complicato. Di solito si tratta di una punizione per atti violenti e be- stiali. Spezzare la maledizione richiede sempre grande sofferenza e sacrifici. Vulnerabilità Unguento Anti-maledetti Bombe Polvere Lunare Un lupo mannaro non può rigenerarsi mentre si trova nell’area di una bomba Polvere Lunare. Capacità Fiuto Un lupo mannaro può seguire le tracce di una creatura senza bisogno di segnali visivi o uditivi senza alcuna penalità Rigenerazione Un lupo mannaro rigenera 5 PS per round. CONOSCENZA DEI WITCHER (Arte del Witcher CD 14) I lupi mannari sono belve orribili e pericolose che possono nascondersi dentro individui per- fettamente normali. Questi colossi somigliano a un incrocio tra un umano e un lupo gigante. Sono spietati, privi di compassione e guidati dalla sete di sangue. Il peggio è che nascono da persone comuni, vittime di una maledizione, come una manifestazione di tutte la sua cru- deltà e malignità. Di solito il processo s’inne- sca al sorgere della luna, quando il licantropo perde ogni spoglia di umanità, ma conserva la propria intelligenza e i suoi bisogni più oscuri. Questi esseri sono molto difficili da af- frontare, a causa dell’intelligenza e delle loro capacità di rigenerazione, che possono essere interrotte solo da una bomba Polvere Lunare. Per fortuna possono essere creati solo da una maledizione, un morso provoca “soltanto” un copioso sanguinamento. ABILITÀ Vista Notturna Un lupo mannaro può agire in zone di luce fioca senza penalità. Accortezza +10 Atletica +8 Coraggio +10 Eludere +8 DIVENIRE UN LUPO MANNARO Un personaggio affetto dalla li- cantropia ha una probabilità del 30% di trasformarsi ogni notte al sorgere della luna. Come lupo mannaro diventa un feroce pre- datore dotato di astuzia umana e un irrefrenabile bisogno di uccidere. Se la vittima è un PG, il GM ne prenderà il controllo fino al sorgere del sole. In forma bestiale il lupo mannaro ottiene tutte le capacità, armi e arma- ture indicate nella descrizione e aggiunge un bonus alle caratte- ristiche indicate qui di seguito. Mischia +9 Nascondersi +9 Resistere a Coercizione +10 Resistere alla Magia +9 Rissa +8 Sopravvivenza +9 Tempra +8 Bottino Oggetti Casuali (×1d6) Pelle di Lupo Saliva di Lupo Mannaro (×1d6) Armi BONUS DEL LICANTROPO Nome DAN Effetti N°Att Artigli 4d6+2 Sanguinamento (25%) 2 Empatia -5 Morso 5d6 Sanguinamento (75%) 1 Fisico +3 Riflessi +2 Velocità +4</p>"
-            }
-        ]
+        "description": "<p>La leggenda dice che sono tipi normali finché non vengono illuminati dalla luna e allora si trasformano in mostri folli. – Rodolf Kazmer</p><p>I lupi mannari sono belve orribili e pericolose che possono nascondersi dentro individui perfettamente normali. Questi colossi somigliano a un incrocio tra un umano e un lupo gigante. Sono spietati e guidati dalla sete di sangue. Nascono da persone comuni, vittime di una maledizione.</p>",
+        "sourcebook": "MB 289"
     },
     "items": [
         {
             "_id": "0dcdc4b3c3494bf4",
-            "name": "[Vulnerabilità] Unguento",
-            "type": "note",
-            "img": "icons/svg/book.svg",
+            "name": "Artigli",
+            "type": "weapon",
+            "img": "icons/svg/sword.svg",
             "system": {
-                "description": "<p>Anti-maledetti</p>"
+                "description": "",
+                "damage": "4d6+2",
+                "accuracy": 0,
+                "effects": "Sanguinamento (25%)"
             },
-            "effects": [],
-            "folder": null,
-            "sort": 0,
-            "ownership": {
-                "default": 0
-            },
-            "flags": {},
             "_stats": {
-                "systemId": "TheWitcherTRPG",
-                "systemVersion": "1.0.0",
-                "coreVersion": "13"
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "6b6eecc2d7be407c",
+            "name": "Morso",
+            "type": "weapon",
+            "img": "icons/svg/sword.svg",
+            "system": {
+                "description": "",
+                "damage": "5d6",
+                "accuracy": 0,
+                "effects": "Sanguinamento (75%)"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
             }
         },
         {
             "_id": "f14e599975544884",
-            "name": "[Capacità] Fiuto Un",
+            "name": "[Capacità] Rigenerazione",
             "type": "note",
             "img": "icons/svg/book.svg",
             "system": {
-                "description": "<p>lupo mannaro può seguire le tracce di una creatura senza bisogno di segnali visivi o uditivi senza alcuna penalità</p>"
+                "description": "<p>Un lupo mannaro rigenera 5 PS per round.</p>"
             },
-            "effects": [],
-            "folder": null,
-            "sort": 0,
-            "ownership": {
-                "default": 0
-            },
-            "flags": {},
             "_stats": {
-                "systemId": "TheWitcherTRPG",
-                "systemVersion": "1.0.0",
-                "coreVersion": "13"
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
             }
         }
     ],
     "effects": [],
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
+        "coreVersion": 14
     }
 }

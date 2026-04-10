@@ -1,4 +1,4 @@
-{
+﻿{
     "_id": "0dc8836ecea5468a",
     "name": "Banditi",
     "type": "monster",
@@ -6,19 +6,19 @@
     "system": {
         "stats": {
             "int": {
-                "value": 7,
-                "max": 7,
-                "unmodifiedMax": 7
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
             },
             "ref": {
-                "value": 7,
-                "max": 7,
-                "unmodifiedMax": 7
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
             },
             "dex": {
-                "value": 6,
-                "max": 6,
-                "unmodifiedMax": 6
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
             },
             "body": {
                 "value": 5,
@@ -36,14 +36,14 @@
                 "unmodifiedMax": 4
             },
             "cra": {
-                "value": 5,
-                "max": 5,
-                "unmodifiedMax": 5
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
             },
             "will": {
-                "value": 8,
-                "max": 8,
-                "unmodifiedMax": 8
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
             },
             "luck": {
                 "value": 0,
@@ -84,52 +84,47 @@
             }
         },
         "details": {
-            "biography": "[Immagini presenti in questa pagina: Pag273_Banditi_01.png, Pag273_Banditi_02.png, Pag273_Banditi_03.png, Pag273_Banditi_04.png, Pag273_Banditi_05.png, Pag273_Banditi_06.png, Pag273_Banditi_07.png, Pag273_Banditi_08.png, Pag273_Banditi_09.png, Pag273_Banditi_10.png]<br><br>271 BANDITI<br>OPINIONE COMUNE (Istruzione CD 8) Eh, banditi, disertori, rinnegati, figli di putta- na, comunque li volete chiamare. Dicono che la gente si dà al crimine per denaro o potere, ma di solito è perché ha fame o paura. Tutti sanno che il crimine va alle stelle quando c’è una guerra. È successo con le ultime due e succederà di nuovo, ma non vuol dire che la gente comune sia malva- gia. Eh, non ditelo mai davanti a un assassino, ma il tipico figlio di cagna considera i banditi al livello dei maledetti ghoul. Si nascondono negli angoli più lerci del mondo, in attesa di chi lavo- ra duro per togliergli il salario. – Rodolf Kazmer",
-            "threat": "Media Semplice",
+            "biography": "<p>Banditi, disertori, rinnegati... Di solito la gente si dà al crimine per fame o paura. Il crimine va alle stelle quando c’è una guerra. – Rodolf Kazmer</p><p>I banditi sono una delle minacce più comuni lungo le strade. La maggioranza è formata da soldati senza un esercito, mercenari senza contratto o disertori. Sono individui semplici: i ranghi frontali caricano spada in pugno e chi non può tira con la balestra.</p>",
+            "threat": "Media",
             "reward": 100
         },
         "derivedStats": {
             "health": {
-                "value": 30,
-                "max": 30,
-                "unmodifiedMax": 30
+                "value": 25,
+                "max": 25,
+                "unmodifiedMax": 25
             },
             "stamina": {
-                "value": 10,
-                "max": 10,
-                "unmodifiedMax": 10
+                "value": 25,
+                "max": 25,
+                "unmodifiedMax": 25
             },
             "vigor": {
-                "value": 10,
-                "max": 10,
-                "unmodifiedMax": 10
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
             },
             "rec": {
-                "value": 7,
-                "max": 7,
-                "unmodifiedMax": 7
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
             },
             "resolve": {
-                "value": 50,
-                "max": 50,
-                "unmodifiedMax": 50
+                "value": 25,
+                "max": 25,
+                "unmodifiedMax": 25
             },
             "stun": {
-                "value": 6,
-                "max": 6
+                "value": 5,
+                "max": 5
             },
             "woundTreshold": {
-                "value": 6,
-                "max": 6
+                "value": 5,
+                "max": 5
             }
         },
-        "description": "<p>OPINIONE COMUNE (Istruzione CD 8) Eh, banditi, disertori, rinnegati, figli di putta- na, comunque li volete chiamare. Dicono che la gente si dà al crimine per denaro o potere, ma di solito è perché ha fame o paura. Tutti sanno che il crimine va alle stelle quando c’è una guerra. È successo con le ultime due e succederà di nuovo, ma non vuol dire che la gente comune sia malva- gia. Eh, non ditelo mai davanti a un assassino, ma il tipico figlio di cagna considera i banditi al livello dei maledetti ghoul. Si nascondono negli angoli più lerci del mondo, in attesa di chi lavo- ra duro per togliergli il salario. – Rodolf Kazmer ABILITÀ Vulnerabilità Accortezza +6 Veleno dell’Impiccato Atletica +4 Capacità Balestra +4 Nessuna Coraggio +7 Eludere +4 Lame Corte +5 LIVELLI DEI BANDITI Esistono banditi con livelli di abilità assai differenti. Quello presentato è un comune sca- gnozzo, il tipo di avversario che sorveglia i magazzini di altri cri- minali o tende imboscate sulle strade. È possibile alterare le ca- ratteristiche dei banditi per ren- derli più o meno pericolosi. Per simulare un comune contadino o uno scagnozzo di basso livello, ridurre RIF e DES a 3 e i PS a 15. Questi non saranno mai una vera minaccia per personaggi orientati al combattimento. Se, invece, si volesse simulare un veterano, aumentare RIF e DES a 7 o 8 e i PS a 35. Oltre alle caratteristiche di combattimen- to si possono modificare i livelli della abilità e l’equipaggiamento per potenziare i banditi. Nascondersi +3 Resistere a Coercizioni +5 Resistere alla Magia +4 Rissa +6 Scherma +6 Sopravvivenza +5 Tempra +5 CONOSCENZA ACCADEMICA (Istruzione CD 10) I banditi sono una delle minacce più comu- ni lungo le strade, ma non la più pericolosa. È molto più difficile liberarsi di un ghoul, che uccidere alcuni banditi. Tuttavia, possono dive- nire una minaccia in grandi gruppi. La maggio- ranza dei banditi è formata da soldati senza un esercito, mercenari senza contratto o disertori. Sono individui semplici: i ranghi frontali cari- cano spada in pugno e chi non può tira con la balestra. Di solito desiderano tre cose: sicurez- za, denaro e qualcosa su cui sfogarsi. Non sono esattamente semplici da affrontare ma, a diffe- renze dei mostri, ci si può ragionare e convin- cerli a non uccidere. Dato che non agiscono per puro istinto, spesso si arrendono se subiscono abbastanza danni. Alcuni, membri di gruppi più affiatati, potrebbero, invece, combattere con maggior accanimento dopo che i loro compagni sono caduti. Nelle zone di guerra del Nord è me- glio stare attenti: la carenza di cibo ha spinto alcuni banditi al cannibalismo. Questi spesso impazziscono e attaccano selvaggiamente, ri- fiutandosi di ritirarsi anche quando sono mez- zi morti. Se non si vuole combattere è meglio tenere d’occhio la strada. Bottino Brache Imbottite Cappuccio a Doppia Trama Corone (×3d10) Munizioni Normali (×20) Gambesone Aedirniano Oggetti Comuni (×1d6) Armi Nome DAN Effetti N°Att Balestrino 2d6+2 Gittata: 50m Ricarica Lenta PA +1 1 Pugnale 1d6 N/A 1 Spada di Ferro 2d6+2 N/A 1</p>",
-        "notes": [
-            {
-                "title": "Descrizione",
-                "details": "<p>Un amalgama di corpi è un golem non-senziente formato da cadaveri parzialmente rianimati. Molti necromanti li usano come guardie del corpo, altri come assistenti. In combattimento, un amalgama colpisce tutto ciò che vede con le sue molte braccia, fermandosi solo di tanto in tanto per emettere un terribile lamento, che stordisce le vittime. Essendo non-morti, non possono guarire, ma sono immuni a veleno, sanguinamento e ogni tipo di effetto mentale. Inoltre, a causa delle dimensioni e dei molteplici arti, non è possibile gettarli a terra. Per assurdo, il loro punto di forza è anche il modo più facile per ucciderli. Infliggere colpi critici e rimuovere parte dei corpi dall'amalgama, indebolisce rapidamente la creatura, ma l'anima che abita un corpo rimosso si manifesta subito come un wraith rabbioso, che attacca il suo liberatore. Una volta eliminato l'amalgama, i wraith possono rivelarsi un pericolo ben più grande. Infine, occorre ricordare che l'amalgama può, per pochi attimi, recuperare l'intelligenza di una delle anime intrappolate al suo interno. Quando si trova di fronte a porte chiuse, enigmi o un avversario che non può raggiungere, l'amalgama riesce a recuperare</p>"
-            }
-        ]
+        "description": "<p>Banditi, disertori, rinnegati... Di solito la gente si dà al crimine per fame o paura. Il crimine va alle stelle quando c’è una guerra. – Rodolf Kazmer</p><p>I banditi sono una delle minacce più comuni lungo le strade. La maggioranza è formata da soldati senza un esercito, mercenari senza contratto o disertori. Sono individui semplici: i ranghi frontali caricano spada in pugno e chi non può tira con la balestra.</p>",
+        "sourcebook": "MB 271"
     },
     "items": [
         {
@@ -139,29 +134,14 @@
             "img": "icons/svg/sword.svg",
             "system": {
                 "description": "",
-                "weight": 0,
-                "cost": 0,
                 "damage": "2d6+2",
-                "reliability": {
-                    "value": 10,
-                    "max": 10
-                },
                 "accuracy": 0,
-                "hands": 1,
-                "reach": "N/A",
-                "effects": "Gittata: 50m Ricarica Lenta PA +1"
+                "range": "50m",
+                "effects": "Ricarica Lenta, PA +1"
             },
-            "effects": [],
-            "folder": null,
-            "sort": 0,
-            "ownership": {
-                "default": 0
-            },
-            "flags": {},
             "_stats": {
-                "systemId": "TheWitcherTRPG",
-                "systemVersion": "1.0.0",
-                "coreVersion": "13"
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
             }
         },
         {
@@ -171,29 +151,13 @@
             "img": "icons/svg/sword.svg",
             "system": {
                 "description": "",
-                "weight": 0,
-                "cost": 0,
                 "damage": "1d6",
-                "reliability": {
-                    "value": 10,
-                    "max": 10
-                },
                 "accuracy": 0,
-                "hands": 1,
-                "reach": "N/A",
-                "effects": "N/A"
+                "effects": ""
             },
-            "effects": [],
-            "folder": null,
-            "sort": 0,
-            "ownership": {
-                "default": 0
-            },
-            "flags": {},
             "_stats": {
-                "systemId": "TheWitcherTRPG",
-                "systemVersion": "1.0.0",
-                "coreVersion": "13"
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
             }
         },
         {
@@ -203,71 +167,13 @@
             "img": "icons/svg/sword.svg",
             "system": {
                 "description": "",
-                "weight": 0,
-                "cost": 0,
                 "damage": "2d6+2",
-                "reliability": {
-                    "value": 10,
-                    "max": 10
-                },
                 "accuracy": 0,
-                "hands": 1,
-                "reach": "N/A",
-                "effects": "N/A"
+                "effects": ""
             },
-            "effects": [],
-            "folder": null,
-            "sort": 0,
-            "ownership": {
-                "default": 0
-            },
-            "flags": {},
             "_stats": {
-                "systemId": "TheWitcherTRPG",
-                "systemVersion": "1.0.0",
-                "coreVersion": "13"
-            }
-        },
-        {
-            "_id": "70201f8fe8bf41be",
-            "name": "[Vulnerabilità] Accortezza",
-            "type": "note",
-            "img": "icons/svg/book.svg",
-            "system": {
-                "description": "<p>+6</p>"
-            },
-            "effects": [],
-            "folder": null,
-            "sort": 0,
-            "ownership": {
-                "default": 0
-            },
-            "flags": {},
-            "_stats": {
-                "systemId": "TheWitcherTRPG",
-                "systemVersion": "1.0.0",
-                "coreVersion": "13"
-            }
-        },
-        {
-            "_id": "c631f231fbc846df",
-            "name": "[Capacità] Balestra",
-            "type": "note",
-            "img": "icons/svg/book.svg",
-            "system": {
-                "description": "<p>+4</p>"
-            },
-            "effects": [],
-            "folder": null,
-            "sort": 0,
-            "ownership": {
-                "default": 0
-            },
-            "flags": {},
-            "_stats": {
-                "systemId": "TheWitcherTRPG",
-                "systemVersion": "1.0.0",
-                "coreVersion": "13"
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
             }
         }
     ],
@@ -278,7 +184,6 @@
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
+        "coreVersion": 14
     }
 }

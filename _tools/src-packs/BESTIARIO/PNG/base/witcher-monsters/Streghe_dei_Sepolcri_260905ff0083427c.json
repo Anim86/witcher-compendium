@@ -1,4 +1,4 @@
-{
+﻿{
     "_id": "260905ff0083427c",
     "name": "Streghe dei Sepolcri",
     "type": "monster",
@@ -11,24 +11,24 @@
                 "unmodifiedMax": 4
             },
             "ref": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "dex": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "body": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "spd": {
                 "value": 6,
                 "max": 6,
                 "unmodifiedMax": 6
-            },
-            "dex": {
-                "value": 5,
-                "max": 5,
-                "unmodifiedMax": 5
-            },
-            "body": {
-                "value": 5,
-                "max": 5,
-                "unmodifiedMax": 5
-            },
-            "spd": {
-                "value": 5,
-                "max": 5,
-                "unmodifiedMax": 5
             },
             "emp": {
                 "value": 1,
@@ -41,9 +41,9 @@
                 "unmodifiedMax": 1
             },
             "will": {
-                "value": 6,
-                "max": 6,
-                "unmodifiedMax": 6
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
             },
             "luck": {
                 "value": 0,
@@ -81,20 +81,20 @@
             }
         },
         "details": {
-            "biography": "[Immagini presenti in questa pagina: Pag283_Streghe dei Sepolcri_01.png, Pag283_Streghe dei Sepolcri_02.png, Pag283_Streghe dei Sepolcri_03.png, Pag283_Streghe dei Sepolcri_04.png, Pag283_Streghe dei Sepolcri_05.png, Pag283_Streghe dei Sepolcri_06.png, Pag283_Streghe dei Sepolcri_07.png, Pag283_Streghe dei Sepolcri_08.png, Pag283_Streghe dei Sepolcri_09.png, Pag283_Streghe dei Sepolcri_10.png, Pag283_Streghe dei Sepolcri_11.png, Pag283_Streghe dei Sepolcri_12.png]<br><br>281 STREGHE DEI SEPOLCRI<br>SUPERSTIZIONE COMUNE (Istruzione CD 18) Onestamente, il tipico popolano non sa granché delle streghe dei sepolcri. Eh, sono come incu- bi, abbastanza intelligenti da parlare, costrui- re trappole e adescare i bambini. Una volta ho sentito che sono quello che resta dei maghi che perdono il controllo. Ne dubito, ma… chissà. Le streghe sono tra i pochi mostri che, mi dicono, possano usare la magia. O qualcosa di simile. – Rodolf Kazmer<br>È possibile ragionare con le streghe, ma sono testarde e tendono ad aggredire senza provocazione. Se bisogna affrontarne una nella sua tana è meglio controllare se è presente un circolo di teschi o altri necrofagi suoi schiavi e affrontarli per primi.",
-            "threat": "Facile Arduo",
-            "reward": 30
+            "biography": "<p>Onestamente, il tipico popolano non sa granché delle streghe dei sepolcri. Eh, sono come incubi, abbastanza intelligenti da parlare, costruire trappole e adescare i bambini. – Rodolf Kazmer</p><p>Le streghe dei sepolcri sono tra i pochi necrofagi totalmente senzienti. Pur possedendo la magia, non hanno nulla a che fare con i maghi. Vivono nei pressi dei cimiteri e altre fonti di cadaveri.</p>",
+            "threat": "Ardua",
+            "reward": 1500
         },
         "derivedStats": {
             "health": {
-                "value": 25,
-                "max": 25,
-                "unmodifiedMax": 25
+                "value": 80,
+                "max": 80,
+                "unmodifiedMax": 80
             },
             "stamina": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 40,
+                "max": 40,
+                "unmodifiedMax": 40
             },
             "vigor": {
                 "value": 0,
@@ -102,31 +102,26 @@
                 "unmodifiedMax": 0
             },
             "rec": {
-                "value": 5,
-                "max": 5,
-                "unmodifiedMax": 5
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
             },
             "resolve": {
-                "value": 50,
-                "max": 50,
-                "unmodifiedMax": 50
+                "value": 40,
+                "max": 40,
+                "unmodifiedMax": 40
             },
             "stun": {
-                "value": 5,
-                "max": 5
+                "value": 8,
+                "max": 8
             },
             "woundTreshold": {
-                "value": 5,
-                "max": 5
+                "value": 10,
+                "max": 10
             }
         },
-        "description": "<p>SUPERSTIZIONE COMUNE (Istruzione CD 18) Onestamente, il tipico popolano non sa granché delle streghe dei sepolcri. Eh, sono come incu- bi, abbastanza intelligenti da parlare, costrui- re trappole e adescare i bambini. Una volta ho sentito che sono quello che resta dei maghi che perdono il controllo. Ne dubito, ma… chissà. Le streghe sono tra i pochi mostri che, mi dicono, possano usare la magia. O qualcosa di simile. – Rodolf Kazmer È possibile ragionare con le streghe, ma sono testarde e tendono ad aggredire senza provocazione. Se bisogna affrontarne una nella sua tana è meglio controllare se è presente un circolo di teschi o altri necrofagi suoi schiavi e affrontarli per primi. Vulnerabilità Unguento Anti-necrofagi Lingua a Frusta Se un personaggio para con successo l’attacco con la lingua della strega, usando un’arma da taglio, l’appendice viene mozzata. Questo causa 5 danni alla Strega, che non potrà più usare questo attacco ABILITÀ Accortezza +8 Atletica +6 Capacità Coraggio +9 Circolo di Teschi Una strega può, in 1 ora, creare un circolo di teschi. Finché rimane entro 100m da esso ottiene +3 a tutte le azioni. Eludere +8 CONOSCENZA DEI WITCHER (Arte del Witcher CD 14) Le streghe dei sepolcri sono tra i pochi necro- fagi totalmente senzienti e ciò le rende mol- to pericolose. Pur possedendo la magia, non hanno nulla a che fare con i maghi e sono solo un’altra specie, frutto della Congiunzione. È interessante che siano tutte d’aspetto femmi- nile. In molti testi si sostiene che, come altri mostri, rapiscono le bambine dai villaggi per renderle loro simili, mentre altri, rari, suggeri- scono che non siano femmine, ma ermafroditi. Ciò che si sa è che le streghe sono predatori da imboscata, vivono nei pressi dei cimiteri e altre fonti di cadaveri. Si accontentano di cadaveri freschi, ma aggrediscono i vivi se ne hanno la possibilità. Una strega attacca con incredibile velocità, colpendo con artigli simili a falci. Se la vittima arretra per recuperare, la strega usa la sua lingua avvelenata come una frusta per indebolirla. Questa lingua può essere recisa se si riesce a parare con un’arma da taglio. Il metodo più sicuro per affrontare una strega è a distanza o usando dell’unguento anti-necrofagi e attaccandola protetti da un incantesimo o dal segno Quen. Mischia +8 Nascondersi +8 Resistere a Coercizione +10 Resistere alla Magia +10 Comandare i Non-morti Invece di attaccare, una strega può dare un ordine ad ogni necrofago entro 20m da lei. Seguiranno le istruzioni ricevute, invece di agire normalmente. Questi ordini non possono essere più complessi di ‘prendi quell’oggetto e portalo qui’ o ‘vai laggiù e aspetta’. Rissa +6 Sopravvivenza +6 Tempra +7 Bottino Denti di strega (×1d6/2) Estratto di Veleno (×1d6) Oggetti Insoliti (×1d6) Vista Notturna Una strega può agire in zone di luce fioca senza penalità. Orecchio di Strega dei Sepolcri (×2) Runa casuale Armi Nome DAN Effetti N°Att Artigli 5d6 Sanguinamento (50%) 2 Morso 6d6 Veleno (75%) 1 Lingua 3d6+2 Veleno (100%) Gittata: 4m 1</p>",
-        "notes": [
-            {
-                "title": "Descrizione",
-                "details": "<p>SUPERSTIZIONE COMUNE (Istruzione CD 18) Onestamente, il tipico popolano non sa granché delle streghe dei sepolcri. Eh, sono come incu- bi, abbastanza intelligenti da parlare, costrui- re trappole e adescare i bambini. Una volta ho sentito che sono quello che resta dei maghi che perdono il controllo. Ne dubito, ma… chissà. Le streghe sono tra i pochi mostri che, mi dicono, possano usare la magia. O qualcosa di simile. – Rodolf Kazmer È possibile ragionare con le streghe, ma sono testarde e tendono ad aggredire senza provocazione. Se bisogna affrontarne una nella sua tana è meglio controllare se è presente un circolo di teschi o altri necrofagi suoi schiavi e affrontarli per primi. Vulnerabilità Unguento Anti-necrofagi Lingua a Frusta Se un personaggio para con successo l’attacco con la lingua della strega, usando un’arma da taglio, l’appendice viene mozzata. Questo causa 5 danni alla Strega, che non potrà più usare questo attacco ABILITÀ Accortezza +8 Atletica +6 Capacità Coraggio +9 Circolo di Teschi Una strega può, in 1 ora, creare un circolo di teschi. Finché rimane entro 100m da esso ottiene +3 a tutte le azioni. Eludere +8 CONOSCENZA DEI WITCHER (Arte del Witcher CD 14) Le streghe dei sepolcri sono tra i pochi necro- fagi totalmente senzienti e ciò le rende mol- to pericolose. Pur possedendo la magia, non hanno nulla a che fare con i maghi e sono solo un’altra specie, frutto della Congiunzione. È interessante che siano tutte d’aspetto femmi- nile. In molti testi si sostiene che, come altri mostri, rapiscono le bambine dai villaggi per renderle loro simili, mentre altri, rari, suggeri- scono che non siano femmine, ma ermafroditi. Ciò che si sa è che le streghe sono predatori da imboscata, vivono nei pressi dei cimiteri e altre fonti di cadaveri. Si accontentano di cadaveri freschi, ma aggrediscono i vivi se ne hanno la possibilità. Una strega attacca con incredibile velocità, colpendo con artigli simili a falci. Se la vittima arretra per recuperare, la strega usa la sua lingua avvelenata come una frusta per indebolirla. Questa lingua può essere recisa se si riesce a parare con un’arma da taglio. Il metodo più sicuro per affrontare una strega è a distanza o usando dell’unguento anti-necrofagi e attaccandola protetti da un incantesimo o dal segno Quen. Mischia +8 Nascondersi +8 Resistere a Coercizione +10 Resistere alla Magia +10 Comandare i Non-morti Invece di attaccare, una strega può dare un ordine ad ogni necrofago entro 20m da lei. Seguiranno le istruzioni ricevute, invece di agire normalmente. Questi ordini non possono essere più complessi di ‘prendi quell’oggetto e portalo qui’ o ‘vai laggiù e aspetta’. Rissa +6 Sopravvivenza +6 Tempra +7 Bottino Denti di strega (×1d6/2) Estratto di Veleno (×1d6) Oggetti Insoliti (×1d6) Vista Notturna Una strega può agire in zone di luce fioca senza penalità. Orecchio di Strega dei Sepolcri (×2) Runa casuale Armi Nome DAN Effetti N°Att Artigli 5d6 Sanguinamento (50%) 2 Morso 6d6 Veleno (75%) 1 Lingua 3d6+2 Veleno (100%) Gittata: 4m 1</p>"
-            }
-        ]
+        "description": "<p>Onestamente, il tipico popolano non sa granché delle streghe dei sepolcri. Eh, sono come incubi, abbastanza intelligenti da parlare, costruire trappole e adescare i bambini. – Rodolf Kazmer</p><p>Le streghe dei sepolcri sono tra i pochi necrofagi totalmente senzienti. Pur possedendo la magia, non hanno nulla a che fare con i maghi. Vivono nei pressi dei cimiteri e altre fonti di cadaveri.</p>",
+        "sourcebook": "MB 281"
     },
     "items": [
         {
@@ -136,29 +131,13 @@
             "img": "icons/svg/sword.svg",
             "system": {
                 "description": "",
-                "weight": 0,
-                "cost": 0,
                 "damage": "5d6",
-                "reliability": {
-                    "value": 10,
-                    "max": 10
-                },
                 "accuracy": 0,
-                "hands": 1,
-                "reach": "N/A",
                 "effects": "Sanguinamento (50%)"
             },
-            "effects": [],
-            "folder": null,
-            "sort": 0,
-            "ownership": {
-                "default": 0
-            },
-            "flags": {},
             "_stats": {
-                "systemId": "TheWitcherTRPG",
-                "systemVersion": "1.0.0",
-                "coreVersion": "13"
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
             }
         },
         {
@@ -168,29 +147,13 @@
             "img": "icons/svg/sword.svg",
             "system": {
                 "description": "",
-                "weight": 0,
-                "cost": 0,
                 "damage": "6d6",
-                "reliability": {
-                    "value": 10,
-                    "max": 10
-                },
                 "accuracy": 0,
-                "hands": 1,
-                "reach": "N/A",
                 "effects": "Veleno (75%)"
             },
-            "effects": [],
-            "folder": null,
-            "sort": 0,
-            "ownership": {
-                "default": 0
-            },
-            "flags": {},
             "_stats": {
-                "systemId": "TheWitcherTRPG",
-                "systemVersion": "1.0.0",
-                "coreVersion": "13"
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
             }
         },
         {
@@ -200,82 +163,33 @@
             "img": "icons/svg/sword.svg",
             "system": {
                 "description": "",
-                "weight": 0,
-                "cost": 0,
                 "damage": "3d6+2",
-                "reliability": {
-                    "value": 10,
-                    "max": 10
-                },
                 "accuracy": 0,
-                "hands": 1,
-                "reach": "N/A",
                 "effects": "Veleno (100%) Gittata: 4m"
             },
-            "effects": [],
-            "folder": null,
-            "sort": 0,
-            "ownership": {
-                "default": 0
-            },
-            "flags": {},
             "_stats": {
-                "systemId": "TheWitcherTRPG",
-                "systemVersion": "1.0.0",
-                "coreVersion": "13"
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
             }
         },
         {
-            "_id": "4d5e7d74e54e45e1",
-            "name": "[Vulnerabilità] Unguento",
+            "_id": "g1",
+            "name": "[Capacità] Circolo di Teschi",
             "type": "note",
             "img": "icons/svg/book.svg",
             "system": {
-                "description": "<p>Anti-necrofagi</p>"
+                "description": "<p>Finché rimane entro 100m da un circolo di teschi creato in 1 ora, ottiene +3 a tutte le azioni.</p>"
             },
-            "effects": [],
-            "folder": null,
-            "sort": 0,
-            "ownership": {
-                "default": 0
-            },
-            "flags": {},
             "_stats": {
-                "systemId": "TheWitcherTRPG",
-                "systemVersion": "1.0.0",
-                "coreVersion": "13"
-            }
-        },
-        {
-            "_id": "cc0f56d41c704968",
-            "name": "[Capacità] Coraggio",
-            "type": "note",
-            "img": "icons/svg/book.svg",
-            "system": {
-                "description": "<p>+9</p>"
-            },
-            "effects": [],
-            "folder": null,
-            "sort": 0,
-            "ownership": {
-                "default": 0
-            },
-            "flags": {},
-            "_stats": {
-                "systemId": "TheWitcherTRPG",
-                "systemVersion": "1.0.0",
-                "coreVersion": "13"
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
             }
         }
     ],
     "effects": [],
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
+        "coreVersion": 14
     }
 }

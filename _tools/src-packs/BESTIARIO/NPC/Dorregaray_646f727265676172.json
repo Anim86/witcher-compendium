@@ -1,0 +1,31 @@
+﻿{
+    "_id": "646f727265676172",
+    "name": "Dorregaray di Vole",
+    "type": "Actor",
+    "img": "modules/witcher-compendium/assets/images/NPC/Dorregaray.webp",
+    "system": {
+        "stats": {
+            "int": { "value": 0, "max": 0 },
+            "ref": { "value": 0, "max": 0 },
+            "dex": { "value": 0, "max": 0 },
+            "body": { "value": 0, "max": 0 },
+            "spd": { "value": 0, "max": 0 },
+            "emp": { "value": 0, "max": 0 },
+            "cra": { "value": 0, "max": 0 },
+            "will": { "value": 0, "max": 0 },
+            "luck": { "value": 0, "max": 0 }
+        },
+        "details": {
+            "biography": "<p>Dorregaray sembra incapace di finire una conversazione senza sostenere che troppe specie stanno venendo cacciate fino all’estinzione. – Brandon di Oxenfurt</p><p>Dorregaray di Vole è uno dei più anziani maghi sopravvissuti al golpe di Thanedd. Rettore dell'accademia di Ban Ard, è noto per la sua bizzarra ma nobile ossessione per la protezione delle specie rare e in pericolo. Sebbene non sia considerato una minaccia politica, la sua profonda conoscenza della natura e delle creature magiche lo rende un esperto insuperabile nel suo campo.</p>",
+            "sourcebook": "TC 160"
+        },
+        "description": "<p>Dorregaray sembra incapace di finire una conversazione senza sostenere che troppe specie stanno venendo cacciate fino all’estinzione. – Brandon di Oxenfurt</p><p>Dorregaray di Vole è uno dei più anziani maghi sopravvissuti al golpe di Thanedd. Rettore dell'accademia di Ban Ard, è noto per la sua bizzarra ma nobile ossessione per la protezione delle specie rare e in pericolo. Sebbene non sia considerato una minaccia politica, la sua profonda conoscenza della natura e delle creature magiche lo rende un esperto insuperabile nel suo campo.</p>"
+    },
+    "items": [],
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

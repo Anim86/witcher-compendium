@@ -1,4 +1,4 @@
-{
+﻿{
     "_id": "9597d81f6d124efa",
     "name": "Drowner",
     "type": "monster",
@@ -6,14 +6,14 @@
     "system": {
         "stats": {
             "int": {
-                "value": 7,
-                "max": 7,
-                "unmodifiedMax": 7
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
             },
             "ref": {
-                "value": 6,
-                "max": 6,
-                "unmodifiedMax": 6
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
             },
             "dex": {
                 "value": 7,
@@ -41,9 +41,9 @@
                 "unmodifiedMax": 1
             },
             "will": {
-                "value": 5,
-                "max": 5,
-                "unmodifiedMax": 5
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
             },
             "luck": {
                 "value": 0,
@@ -81,20 +81,20 @@
             }
         },
         "details": {
-            "biography": "[Immagini presenti in questa pagina: Pag279_Drowner_01.png, Pag279_Drowner_02.png, Pag279_Drowner_03.png, Pag279_Drowner_04.png, Pag279_Drowner_05.png, Pag279_Drowner_06.png, Pag279_Drowner_07.png, Pag279_Drowner_08.png, Pag279_Drowner_09.png, Pag279_Drowner_10.png, Pag279_Drowner_11.png, Pag279_Drowner_12.png]<br><br>277 DROWNER<br>SUPERSTIZIONE COMUNE (Istruzione CD 14) La gente non sa un cavolo dei drowner. Le favole raccontano che quando un figlio di puttana abba- stanza cattivo muore e il suo corpo finisce in un fiume o lago risorge come drowner. Sono bestiacce senza alcun cervello, che vivono per affogare dei poveri bastardi e mangiarsi i cadaveri. Non sono tra le cose più pericolose al mondo, ma attaccano in gruppo. Se ne vedete uno, ce ne sono almeno altri due o tre nascosti nell’acqua. – Rodolf Kazmer<br>Agiscono spinti solo dall’istinto ed è im- possibile ragionarci. Sono persino immuni agli incantesimi che colpiscono la mente o le emozioni. Questo significa che non formu- lano mai piani più complessi di “attacco” e possono essere distratti da oggetti luccicanti, purché non abbiano ancora sentito il sapore del sangue. Essendo tanto stupidi, continuano a combattere persino mentre vanno a fuoco e non tentano di spegnerlo finché non sono quasi morti (sotto 10 PS).",
-            "threat": "Facile Complesso",
+            "biography": "<p>La gente non sa un cavolo dei drowner. Le favole raccontano che quando un figlio di puttana abbastanza cattivo muore e il suo corpo finisce in un fiume o lago risorge come drowner. Sono bestiacce senza alcun cervello, che vivono per affogare dei poveri bastardi e mangiarsi i cadaveri. – Rodolf Kazmer</p><p>I drowner non sono malfattori morti. Come tutti i necrofagi, i drowner sono creature di un altro piano giunte molti secoli fa in seguito alla Congiunzione delle Sfere. Preferiscono vivere sulle coste, nei fiumi o negli acquitrini. Sono anfibi e trascorrono buona parte del tempo in acqua.</p>",
+            "threat": "Facile",
             "reward": 30
         },
         "derivedStats": {
             "health": {
-                "value": 25,
-                "max": 25,
-                "unmodifiedMax": 25
+                "value": 30,
+                "max": 30,
+                "unmodifiedMax": 30
             },
             "stamina": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 30,
+                "max": 30,
+                "unmodifiedMax": 30
             },
             "vigor": {
                 "value": 0,
@@ -102,32 +102,26 @@
                 "unmodifiedMax": 0
             },
             "rec": {
-                "value": 5,
-                "max": 5,
-                "unmodifiedMax": 5
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
             },
             "resolve": {
-                "value": 60,
-                "max": 60,
-                "unmodifiedMax": 60
+                "value": 30,
+                "max": 30,
+                "unmodifiedMax": 30
             },
             "stun": {
-                "value": 5,
-                "max": 5
+                "value": 6,
+                "max": 6
             },
             "woundTreshold": {
-                "value": 5,
-                "max": 5
+                "value": 6,
+                "max": 6
             }
         },
-        "description": "<p>SUPERSTIZIONE COMUNE (Istruzione CD 14) La gente non sa un cavolo dei drowner. Le favole raccontano che quando un figlio di puttana abba- stanza cattivo muore e il suo corpo finisce in un fiume o lago risorge come drowner. Sono bestiacce senza alcun cervello, che vivono per affogare dei poveri bastardi e mangiarsi i cadaveri. Non sono tra le cose più pericolose al mondo, ma attaccano in gruppo. Se ne vedete uno, ce ne sono almeno altri due o tre nascosti nell’acqua. – Rodolf Kazmer Agiscono spinti solo dall’istinto ed è im- possibile ragionarci. Sono persino immuni agli incantesimi che colpiscono la mente o le emozioni. Questo significa che non formu- lano mai piani più complessi di “attacco” e possono essere distratti da oggetti luccicanti, purché non abbiano ancora sentito il sapore del sangue. Essendo tanto stupidi, continuano a combattere persino mentre vanno a fuoco e non tentano di spegnerlo finché non sono quasi morti (sotto 10 PS). Vulnerabilità Unguento Anti-necrofagi Fuoco I drowner sono vulnerabili al danno da fuoco, compreso quello provocato dall’essere A Fuoco. Capacità Anfibio Un drowner può sopravvivere sott’acqua senza limiti di tempo. Non può affogare, né subisce penalità per agire sotto la superficie. ABILITÀ CONOSCENZA DEI WITCHER (Arte del Witcher CD 10) I drowner non sono malfattori morti. Molti lo credono a causa dei tanti racconti popolari e libri sull’argomento. Come tutti i necrofagi, i drowner sono creature di un altro piano giun- te molti secoli fa in seguito alla Congiunzione delle Sfere. Privi di una nicchia ecologica, sono divenuti un flagello. Preferiscono vivere sulle coste, nei fiumi o negli acquitrini. Sono anfibi e trascorrono buona parte del tempo in acqua. Quando emergono, di solito, sono spinti dalla fame e afferrano la prima vittima vicina all’ac- qua, oppure si spingono verso l’entroterra. Quando trovano una preda la circondano e le balzano addosso in un turbine di artigli. Un grande gruppo di drowner può esse- re un inferno. Attaccano singoli avversari da ogni direzione, forti del numero. Sono immu- ni ai veleni, grazie alle acque fangose e tossiche in cui vivono, e ci vuole parecchio per scorag- giarli. Tuttavia, sono anche tremendamente stupidi. I pochi studi in materia concordano sul fatto che non sono più intelligenti di un comune pesce predatore. Accortezza +8 Ferale Grazie ai suoi istinti un drowner possiede INT 7 ai fini delle prove d’Accortezza e Sopravvivenza. Atletica +6 Coraggio +8 Eludere +5 Mischia +6 Immunità ai Veleni Un drowner non subisce danni dall’effetto avvelenato. Nascondersi +5 Resistere alla Magia +4 Impenetrabilmente Ottuso Un drowner è tanto stupido da risultare immune a tutti gli effetti magici che colpiscono pensiero ed emozioni. Rissa +6 Sopravvivenza +6 Tempra +6 Bottino Cervello di Drowner Essenza Acquatica (×1d6/2) Lingua di Drowner Armi Nome DAN Effetti N°Att Artigli 3d6 N/A 1</p>",
-        "notes": [
-            {
-                "title": "Descrizione",
-                "details": "<p>Un amalgama di corpi è un golem non-senziente formato da cadaveri parzialmente rianimati. Molti necromanti li usano come guardie del corpo, altri come assistenti. In combattimento, un amalgama colpisce tutto ciò che vede con le sue molte braccia, fermandosi solo di tanto in tanto per emettere un terribile lamento, che stordisce le vittime. Essendo non-morti, non possono guarire, ma sono immuni a veleno, sanguinamento e ogni tipo di effetto mentale. Inoltre, a causa delle dimensioni e dei molteplici arti, non è possibile gettarli a terra. Per assurdo, il loro punto di forza è anche il modo più facile per ucciderli. Infliggere colpi critici e rimuovere parte dei corpi dall'amalgama, indebolisce rapidamente la creatura, ma l'anima che abita un corpo rimosso si manifesta subito come un wraith rabbioso, che attacca il suo liberatore. Una volta eliminato l'amalgama, i wraith possono rivelarsi un pericolo ben più grande. Infine, occorre ricordare che l'amalgama può, per pochi attimi, recuperare l'intelligenza di una delle anime intrappolate al suo interno. Quando si trova di fronte a porte chiuse, enigmi o un avversario che non può raggiungere, l'amalgama riesce a recuperare</p>"
-            }
-        ],
-        "sourcebook": "MB 222"
+        "description": "<p>La gente non sa un cavolo dei drowner. Le favole raccontano che quando un figlio di puttana abbastanza cattivo muore e il suo corpo finisce in un fiume o lago risorge come drowner. Sono bestiacce senza alcun cervello, che vivono per affogare dei poveri bastardi e mangiarsi i cadaveri. – Rodolf Kazmer</p><p>I drowner non sono malfattori morti. Come tutti i necrofagi, i drowner sono creature di un altro piano giunte molti secoli fa in seguito alla Congiunzione delle Sfere. Preferiscono vivere sulle coste, nei fiumi o negli acquitrini. Sono anfibi e trascorrono buona parte del tempo in acqua.</p>",
+        "sourcebook": "MB 277"
     },
     "items": [
         {
@@ -137,82 +131,33 @@
             "img": "icons/svg/sword.svg",
             "system": {
                 "description": "",
-                "weight": 0,
-                "cost": 0,
                 "damage": "3d6",
-                "reliability": {
-                    "value": 10,
-                    "max": 10
-                },
                 "accuracy": 0,
-                "hands": 1,
-                "reach": "N/A",
-                "effects": "N/A"
+                "effects": ""
             },
-            "effects": [],
-            "folder": null,
-            "sort": 0,
-            "ownership": {
-                "default": 0
-            },
-            "flags": {},
             "_stats": {
-                "systemId": "TheWitcherTRPG",
-                "systemVersion": "1.0.0",
-                "coreVersion": "13"
-            }
-        },
-        {
-            "_id": "87b56a37d40641b0",
-            "name": "[Vulnerabilità] Unguento",
-            "type": "note",
-            "img": "icons/svg/book.svg",
-            "system": {
-                "description": "<p>Anti-necrofagi</p>"
-            },
-            "effects": [],
-            "folder": null,
-            "sort": 0,
-            "ownership": {
-                "default": 0
-            },
-            "flags": {},
-            "_stats": {
-                "systemId": "TheWitcherTRPG",
-                "systemVersion": "1.0.0",
-                "coreVersion": "13"
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
             }
         },
         {
             "_id": "b818db18b1a54ac9",
-            "name": "[Capacità] Anfibio Un",
+            "name": "[Capacità] Anfibio",
             "type": "note",
             "img": "icons/svg/book.svg",
             "system": {
-                "description": "<p>drowner può sopravvivere sott’acqua senza limiti di tempo. Non può affogare, né subisce penalità per agire sotto la superficie.</p>"
+                "description": "<p>Un drowner può sopravvivere sott’acqua senza limiti di tempo. Non può affogare, né subisce penalità per agire sotto la superficie.</p>"
             },
-            "effects": [],
-            "folder": null,
-            "sort": 0,
-            "ownership": {
-                "default": 0
-            },
-            "flags": {},
             "_stats": {
-                "systemId": "TheWitcherTRPG",
-                "systemVersion": "1.0.0",
-                "coreVersion": "13"
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
             }
         }
     ],
     "effects": [],
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
+        "coreVersion": 14
     }
 }

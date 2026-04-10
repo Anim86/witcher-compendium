@@ -1,4 +1,4 @@
-{
+﻿{
     "_id": "12a2486818104394",
     "name": "Ghoul",
     "type": "monster",
@@ -6,19 +6,19 @@
     "system": {
         "stats": {
             "int": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "ref": {
                 "value": 6,
                 "max": 6,
                 "unmodifiedMax": 6
             },
-            "ref": {
-                "value": 10,
-                "max": 10,
-                "unmodifiedMax": 10
-            },
             "dex": {
-                "value": 10,
-                "max": 10,
-                "unmodifiedMax": 10
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
             },
             "body": {
                 "value": 7,
@@ -31,19 +31,19 @@
                 "unmodifiedMax": 7
             },
             "emp": {
-                "value": 3,
-                "max": 3,
-                "unmodifiedMax": 3
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
             },
             "cra": {
-                "value": 3,
-                "max": 3,
-                "unmodifiedMax": 3
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
             },
             "will": {
-                "value": 6,
-                "max": 6,
-                "unmodifiedMax": 6
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
             },
             "luck": {
                 "value": 0,
@@ -81,20 +81,20 @@
             }
         },
         "details": {
-            "biography": "[Immagini presenti in questa pagina: Pag281_Ghoul_01.png, Pag281_Ghoul_02.png, Pag281_Ghoul_03.png, Pag281_Ghoul_04.png, Pag281_Ghoul_05.png, Pag281_Ghoul_06.png, Pag281_Ghoul_07.png, Pag281_Ghoul_08.png, Pag281_Ghoul_09.png, Pag281_Ghoul_10.png, Pag281_Ghoul_11.png, Pag281_Ghoul_12.png]<br><br>279 GHOUL<br>SUPERSTIZIONE COMUNE (Istruzione CD 14) Di questi tempi si vedono un sacco di ghoul nel Nord. Eh, mi ricordo che una volta potevi passare una vita intera senza vederne uno, ma con tutti i corpi che marciscono nei campi, il sangue nei fiumi e nelle valli, i ghoul sono dappertutto. Molti pensano che siano corpi mutati e rianimati con la magia. Sono luridi demoni, che si nutrono dei morti e attaccano chiunque si avvicini. Si muovo- no in branchi e aggrediscono come i lupi: circon- dano la preda e l’attaccano tenendola sbilanciata. – Rodolf Kazmer<br>Un ghoul ridotto a meno di 10 PS andrà in Furia. In questo stato, attaccherà come un cane rabbioso e le sue ferite si chiuderanno rapidamente. Ucciderlo è l’unico modo per impedire questa rigenerazione. Inoltre, è im- portante cambiare spesso posizione, per impe- dire ai ghoul di attaccare in gruppo e ottenere bonus. Se si è in gruppo, la cosa migliore è af- frontarli schiena contro schiena, così che non possano attaccare alle spalle. Se è necessario attrarre un gruppo di ghoul, l’esca migliore sono corpi riesumati. Una volta dissepolti dovrebbero essere trascinati via per attirare i mostri.",
-            "threat": "Medio Complesso",
+            "biography": "<p>Di questi tempi si vedono un sacco di ghoul nel Nord. Eh, mi ricordo che una volta potevi passare una vita intera senza vederne uno, ma con tutti i corpi che marciscono nei campi, il sangue nei fiumi e nelle valli, i ghoul sono dappertutto. – Rodolf Kazmer</p><p>Como per altri necrofagi, i ghoul sono una specie proveniente da un’altra dimensione, che agisce in maniera simile ad alcuni animali. Sono spazzini, che si nutrono dei corpi lasciati sui campi di battaglia, ma attaccano anche prede vive, se queste si avvicinano troppo. Di solito si muovono in piccoli branchi.</p>",
+            "threat": "Medio",
             "reward": 500
         },
         "derivedStats": {
             "health": {
-                "value": 60,
-                "max": 60,
-                "unmodifiedMax": 60
+                "value": 30,
+                "max": 30,
+                "unmodifiedMax": 30
             },
             "stamina": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 30,
+                "max": 30,
+                "unmodifiedMax": 30
             },
             "vigor": {
                 "value": 0,
@@ -107,9 +107,9 @@
                 "unmodifiedMax": 6
             },
             "resolve": {
-                "value": 70,
-                "max": 70,
-                "unmodifiedMax": 70
+                "value": 30,
+                "max": 30,
+                "unmodifiedMax": 30
             },
             "stun": {
                 "value": 6,
@@ -120,13 +120,8 @@
                 "max": 6
             }
         },
-        "description": "<p>SUPERSTIZIONE COMUNE (Istruzione CD 14) Di questi tempi si vedono un sacco di ghoul nel Nord. Eh, mi ricordo che una volta potevi passare una vita intera senza vederne uno, ma con tutti i corpi che marciscono nei campi, il sangue nei fiumi e nelle valli, i ghoul sono dappertutto. Molti pensano che siano corpi mutati e rianimati con la magia. Sono luridi demoni, che si nutrono dei morti e attaccano chiunque si avvicini. Si muovo- no in branchi e aggrediscono come i lupi: circon- dano la preda e l’attaccano tenendola sbilanciata. – Rodolf Kazmer Un ghoul ridotto a meno di 10 PS andrà in Furia. In questo stato, attaccherà come un cane rabbioso e le sue ferite si chiuderanno rapidamente. Ucciderlo è l’unico modo per impedire questa rigenerazione. Inoltre, è im- portante cambiare spesso posizione, per impe- dire ai ghoul di attaccare in gruppo e ottenere bonus. Se si è in gruppo, la cosa migliore è af- frontarli schiena contro schiena, così che non possano attaccare alle spalle. Se è necessario attrarre un gruppo di ghoul, l’esca migliore sono corpi riesumati. Una volta dissepolti dovrebbero essere trascinati via per attirare i mostri. Vulnerabilità Unguento Anti-necrofagi Capacità Avventarsi Un ghoul non ha bisogno della rincorsa per balzare. Ferale Grazie ai suoi istinti un ghoul possiede INT 6 ai fini delle prove d’Accortezza e Sopravvivenza. Furia Quando un ghoul viene ridotto a 10 PS o meno entra automaticamente in furia. In questo stato deve muoversi e attaccare a ogni round e rigenera 3 PS per turno. CONOSCENZA DEI WITCHER (Arte del Witcher CD 10) Come per altri necrofagi, la gente comune crede che i ghoul siano cadaveri rianimati. In realtà si tratta di una specie proveniente da un’altra dimensione, che agisce in maniera si- mile ad alcuni animali. Sono spazzini, che si nutrono dei corpi lasciati sui campi di batta- glia, ma attaccano anche prede vive, se queste si avvicinano troppo. Di solito si muovono in piccoli branchi e spesso litigano tra loro per il cibo, se non sono in pericolo. Quando si affrontano i ghoul bisogna sempre guardarsi le spalle, perché attaccano in gruppo, cercan- do di circondare la preda e tenerla sbilanciata, colpendo ai fianchi e scappando. Per ridurli di numero è meglio sceglierne uno e attaccarlo senza posa. I ghoul possono saltare fino a 5m di distanza e voragini e muretti non li rallen- tano quanto altri necrofagi. In mischia i ghoul colpiscono con gli artigli, ma se riescono ad afferrare un avversario (o questi è in qualche modo rallentato) possono mordere, provocan- do ferite che sanguinano copiosamente. ABILITÀ Accortezza +7 Vista Notturna Un ghoul può agire in zone di luce fioca senza penalità. Atletica +7 Coraggio +7 Eludere +6 Mischia +6 Nascondersi +4 Resistere alla Magia +4 Rissa +6 Sopravvivenza +6 Tempra +6 Bottino Artiglio di Ghoul (×2) Estratto di Veleno (×1d6/2) Midollo di Ghoul (×1d6/2) Armi Nome DAN Effetti N°Att Artigli 3d6 N/A 1 Morso 3d6+2 Sanguinamento (25%), -1 PA 1</p>",
-        "notes": [
-            {
-                "title": "Descrizione",
-                "details": "<p>SUPERSTIZIONE COMUNE (Istruzione CD 14) Di questi tempi si vedono un sacco di ghoul nel Nord. Eh, mi ricordo che una volta potevi passare una vita intera senza vederne uno, ma con tutti i corpi che marciscono nei campi, il sangue nei fiumi e nelle valli, i ghoul sono dappertutto. Molti pensano che siano corpi mutati e rianimati con la magia. Sono luridi demoni, che si nutrono dei morti e attaccano chiunque si avvicini. Si muovo- no in branchi e aggrediscono come i lupi: circon- dano la preda e l’attaccano tenendola sbilanciata. – Rodolf Kazmer Un ghoul ridotto a meno di 10 PS andrà in Furia. In questo stato, attaccherà come un cane rabbioso e le sue ferite si chiuderanno rapidamente. Ucciderlo è l’unico modo per impedire questa rigenerazione. Inoltre, è im- portante cambiare spesso posizione, per impe- dire ai ghoul di attaccare in gruppo e ottenere bonus. Se si è in gruppo, la cosa migliore è af- frontarli schiena contro schiena, così che non possano attaccare alle spalle. Se è necessario attrarre un gruppo di ghoul, l’esca migliore sono corpi riesumati. Una volta dissepolti dovrebbero essere trascinati via per attirare i mostri. Vulnerabilità Unguento Anti-necrofagi Capacità Avventarsi Un ghoul non ha bisogno della rincorsa per balzare. Ferale Grazie ai suoi istinti un ghoul possiede INT 6 ai fini delle prove d’Accortezza e Sopravvivenza. Furia Quando un ghoul viene ridotto a 10 PS o meno entra automaticamente in furia. In questo stato deve muoversi e attaccare a ogni round e rigenera 3 PS per turno. CONOSCENZA DEI WITCHER (Arte del Witcher CD 10) Come per altri necrofagi, la gente comune crede che i ghoul siano cadaveri rianimati. In realtà si tratta di una specie proveniente da un’altra dimensione, che agisce in maniera si- mile ad alcuni animali. Sono spazzini, che si nutrono dei corpi lasciati sui campi di batta- glia, ma attaccano anche prede vive, se queste si avvicinano troppo. Di solito si muovono in piccoli branchi e spesso litigano tra loro per il cibo, se non sono in pericolo. Quando si affrontano i ghoul bisogna sempre guardarsi le spalle, perché attaccano in gruppo, cercan- do di circondare la preda e tenerla sbilanciata, colpendo ai fianchi e scappando. Per ridurli di numero è meglio sceglierne uno e attaccarlo senza posa. I ghoul possono saltare fino a 5m di distanza e voragini e muretti non li rallen- tano quanto altri necrofagi. In mischia i ghoul colpiscono con gli artigli, ma se riescono ad afferrare un avversario (o questi è in qualche modo rallentato) possono mordere, provocan- do ferite che sanguinano copiosamente. ABILITÀ Accortezza +7 Vista Notturna Un ghoul può agire in zone di luce fioca senza penalità. Atletica +7 Coraggio +7 Eludere +6 Mischia +6 Nascondersi +4 Resistere alla Magia +4 Rissa +6 Sopravvivenza +6 Tempra +6 Bottino Artiglio di Ghoul (×2) Estratto di Veleno (×1d6/2) Midollo di Ghoul (×1d6/2) Armi Nome DAN Effetti N°Att Artigli 3d6 N/A 1 Morso 3d6+2 Sanguinamento (25%), -1 PA 1</p>"
-            }
-        ]
+        "description": "<p>Di questi tempi si vedono un sacco di ghoul nel Nord. Eh, mi ricordo che una volta potevi passare una vita intera senza vederne uno, ma con tutti i corpi che marciscono nei campi, il sangue nei fiumi e nelle valli, i ghoul sono dappertutto. – Rodolf Kazmer</p><p>Como per altri necrofagi, i ghoul sono una specie proveniente da un’altra dimensione, che agisce in maniera simile ad alcuni animali. Sono spazzini, che si nutrono dei corpi lasciati sui campi di battaglia, ma attaccano anche prede vive, se queste si avvicinano troppo. Di solito si muovono in piccoli branchi.</p>",
+        "sourcebook": "MB 279"
     },
     "items": [
         {
@@ -136,29 +131,13 @@
             "img": "icons/svg/sword.svg",
             "system": {
                 "description": "",
-                "weight": 0,
-                "cost": 0,
                 "damage": "3d6",
-                "reliability": {
-                    "value": 10,
-                    "max": 10
-                },
                 "accuracy": 0,
-                "hands": 1,
-                "reach": "N/A",
-                "effects": "N/A"
+                "effects": ""
             },
-            "effects": [],
-            "folder": null,
-            "sort": 0,
-            "ownership": {
-                "default": 0
-            },
-            "flags": {},
             "_stats": {
-                "systemId": "TheWitcherTRPG",
-                "systemVersion": "1.0.0",
-                "coreVersion": "13"
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
             }
         },
         {
@@ -168,82 +147,33 @@
             "img": "icons/svg/sword.svg",
             "system": {
                 "description": "",
-                "weight": 0,
-                "cost": 0,
                 "damage": "3d6+2",
-                "reliability": {
-                    "value": 10,
-                    "max": 10
-                },
                 "accuracy": 0,
-                "hands": 1,
-                "reach": "N/A",
                 "effects": "Sanguinamento (25%), -1 PA"
             },
-            "effects": [],
-            "folder": null,
-            "sort": 0,
-            "ownership": {
-                "default": 0
-            },
-            "flags": {},
             "_stats": {
-                "systemId": "TheWitcherTRPG",
-                "systemVersion": "1.0.0",
-                "coreVersion": "13"
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
             }
         },
         {
-            "_id": "fe9ec09e4be44218",
-            "name": "[Vulnerabilità] Unguento",
+            "_id": "g1",
+            "name": "[Capacità] Furia",
             "type": "note",
             "img": "icons/svg/book.svg",
             "system": {
-                "description": "<p>Anti-necrofagi</p>"
+                "description": "<p>Sotto i 10 PS entra in furia: attacca ogni round e rigenera 3 PS per turno.</p>"
             },
-            "effects": [],
-            "folder": null,
-            "sort": 0,
-            "ownership": {
-                "default": 0
-            },
-            "flags": {},
             "_stats": {
-                "systemId": "TheWitcherTRPG",
-                "systemVersion": "1.0.0",
-                "coreVersion": "13"
-            }
-        },
-        {
-            "_id": "e15d207e168541fc",
-            "name": "[Capacità] Avventarsi Un",
-            "type": "note",
-            "img": "icons/svg/book.svg",
-            "system": {
-                "description": "<p>ghoul non ha bisogno della rincorsa per balzare.</p>"
-            },
-            "effects": [],
-            "folder": null,
-            "sort": 0,
-            "ownership": {
-                "default": 0
-            },
-            "flags": {},
-            "_stats": {
-                "systemId": "TheWitcherTRPG",
-                "systemVersion": "1.0.0",
-                "coreVersion": "13"
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
             }
         }
     ],
     "effects": [],
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
+        "coreVersion": 14
     }
 }

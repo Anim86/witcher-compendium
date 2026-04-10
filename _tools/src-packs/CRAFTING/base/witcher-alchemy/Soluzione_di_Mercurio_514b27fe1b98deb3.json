@@ -1,0 +1,23 @@
+﻿{
+    "_id": "514b27fe1b98deb3",
+    "name": "Soluzione di Mercurio",
+    "type": "component",
+    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag145_Sostanze Alchemiche_02.webp",
+    "system": {
+        "description": "<p>Metallo liquido instabile, essenziale per la trasmutazione dell'Etere.</p><p><b>Rarità:</b> R | <b>Ubicazione:</b> Montagne o sottoterra</p>",
+        "quantity": "1",
+        "weight": 0.1,
+        "cost": 77,
+        "sourcebook": "MB 145",
+        "type": "alchemical",
+        "rarity": "R",
+        "location": "Montagne o sottoterra",
+        "substanceType": "etere"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

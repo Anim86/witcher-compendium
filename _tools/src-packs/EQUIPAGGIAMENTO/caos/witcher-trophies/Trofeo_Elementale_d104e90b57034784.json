@@ -1,0 +1,28 @@
+﻿{
+    "_id":  "d104e90b57034784",
+    "name":  "Trofeo: Elementale",
+    "type":  "item",
+    "img":  "modules/witcher-compendium/assets/optimized/assets/Immagini_Chaos/Pag119_Oggetti Magici_01.webp",
+    "system":  {
+                   "description":  "\u003cp\u003edi Terra Gli attacchi del personaggio causano doppia ablazione ad armi, armature e scudi.\u003c/p\u003e",
+                   "weight":  0,
+                   "cost":  0,
+                   "quantity":  1,
+                   "sourcebook":  "TC 126"
+               },
+    "effects":  [
+
+                ],
+    "folder":  null,
+    "sort":  0,
+    "ownership":  {
+                      "default":  0
+                  },
+    "flags":  {
+
+              },
+    "_stats":  {
+                   "coreVersion":  14,
+                   "systemId":  "TheWitcherItaNewSystem"
+               }
+}

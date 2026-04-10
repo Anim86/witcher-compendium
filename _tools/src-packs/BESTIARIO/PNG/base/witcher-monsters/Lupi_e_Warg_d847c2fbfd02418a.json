@@ -1,4 +1,4 @@
-{
+﻿{
     "_id": "d847c2fbfd02418a",
     "name": "Lupi e Warg",
     "type": "monster",
@@ -6,14 +6,14 @@
     "system": {
         "stats": {
             "int": {
-                "value": 2,
-                "max": 2,
-                "unmodifiedMax": 2
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
             },
             "ref": {
-                "value": 5,
-                "max": 5,
-                "unmodifiedMax": 5
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
             },
             "dex": {
                 "value": 7,
@@ -21,9 +21,9 @@
                 "unmodifiedMax": 7
             },
             "body": {
-                "value": 6,
-                "max": 6,
-                "unmodifiedMax": 6
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
             },
             "spd": {
                 "value": 8,
@@ -41,9 +41,9 @@
                 "unmodifiedMax": 1
             },
             "will": {
-                "value": 6,
-                "max": 6,
-                "unmodifiedMax": 6
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
             },
             "luck": {
                 "value": 0,
@@ -81,20 +81,20 @@
             }
         },
         "details": {
-            "biography": "[Immagini presenti in questa pagina: Pag289_Lupi e Warg_01.png, Pag289_Lupi e Warg_02.png, Pag289_Lupi e Warg_03.png, Pag289_Lupi e Warg_04.png, Pag289_Lupi e Warg_05.png, Pag289_Lupi e Warg_06.png, Pag289_Lupi e Warg_07.png, Pag289_Lupi e Warg_08.png, Pag289_Lupi e Warg_09.png, Pag289_Lupi e Warg_10.png, Pag289_Lupi e Warg_11.png, Pag289_Lupi e Warg_12.png, Pag289_Lupi e Warg_13.png, Pag289_Lupi e Warg_14.png]<br><br>287 LUPI E WARG<br>SUPERSTIZIONE COMUNE (Istruzione CD 8) Non c’è molto da dire sui lupi. Eh, sono dei male- detti bastardi che vivono nelle foreste e attaccano i viaggiatori. Di solito agiscono in branchi di 5 o 6 e hanno paura del fuoco. Se dovete combatterli fate in modo che non possano circondarvi, perché vi salteranno addosso da tutte le parti. Non è un bel modo di morire, secondo me. Le cose vanno sempre peggio dall’inizio della guerra, con tutti quei ca- daveri in giro i lupi sono sempre più spavaldi. Eh, tanti credono che siano pure un segno di sventura. Non mi ricordo più quante profezie iniziano con un lupo. Seriamente, sono bestiacce maledette. – Rodolf Kazmer",
-            "threat": "Media Complesso",
+            "biography": "<p>Non c’è molto da dire sui lupi. Eh, sono dei maledetti bastardi che vivono nelle foreste e attaccano i viaggiatori. – Rodolf Kazmer</p><p>Pur essendoci molti strani racconti e miti sui lupi, tutti sono concordi nell’affermare che non sono creature magiche. I warg, d’altro canto, sono assai più misteriosi. Quando un branco diventa abbastanza grande, può capitare che tra loro ci sia un warg: lupi molto grossi e robusti.</p>",
+            "threat": "Media",
             "reward": 500
         },
         "derivedStats": {
             "health": {
-                "value": 30,
-                "max": 30,
-                "unmodifiedMax": 30
+                "value": 45,
+                "max": 45,
+                "unmodifiedMax": 45
             },
             "stamina": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 35,
+                "max": 35,
+                "unmodifiedMax": 35
             },
             "vigor": {
                 "value": 0,
@@ -102,31 +102,26 @@
                 "unmodifiedMax": 0
             },
             "rec": {
-                "value": 6,
-                "max": 6,
-                "unmodifiedMax": 6
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
             },
             "resolve": {
-                "value": 70,
-                "max": 70,
-                "unmodifiedMax": 70
+                "value": 35,
+                "max": 35,
+                "unmodifiedMax": 35
             },
             "stun": {
-                "value": 6,
-                "max": 6
+                "value": 7,
+                "max": 7
             },
             "woundTreshold": {
-                "value": 6,
-                "max": 6
+                "value": 7,
+                "max": 7
             }
         },
-        "description": "<p>SUPERSTIZIONE COMUNE (Istruzione CD 8) Non c’è molto da dire sui lupi. Eh, sono dei male- detti bastardi che vivono nelle foreste e attaccano i viaggiatori. Di solito agiscono in branchi di 5 o 6 e hanno paura del fuoco. Se dovete combatterli fate in modo che non possano circondarvi, perché vi salteranno addosso da tutte le parti. Non è un bel modo di morire, secondo me. Le cose vanno sempre peggio dall’inizio della guerra, con tutti quei ca- daveri in giro i lupi sono sempre più spavaldi. Eh, tanti credono che siano pure un segno di sventura. Non mi ricordo più quante profezie iniziano con un lupo. Seriamente, sono bestiacce maledette. – Rodolf Kazmer ABILITÀ Vulnerabilità Accortezza +6 Unguento Anti-bestie Atletica +6 Capacità Coraggio +6 Capobranco Spesso, un branco di lupi è guidato da un warg. Finché questi è vivo tutti i lupi ottengono un bonus di +4 al Coraggio. Inoltre, il warg è in grado di dare ordini al resto del branco. Questi non possono essere più complessi di ‘vai laggiù’, ‘attacca alle spalle’ o ‘aspetta’. Eludere +6 Mischia +6 Nascondersi +6 Resistere alla Magia +2 Rissa +6 Sopravvivenza +9 Tempra +5 Fiuto Un lupo può seguire le tracce di una creatura senza bisogno di segnali visivi o uditivi senza alcuna penalità Bottino Fegato di Lupo Grasso di Cane (×1d6) CONOSCENZA DEI WITCHER (Arte del Witcher CD 14) Pur essendoci molti strani racconti e miti sui lupi, tutti sono concordi nell’affermare che non sono creature magiche. I warg, d’altro canto, sono assai più misteriosi per la popola- zione. Quando un branco diventa abbastanza grande o controlla un territorio sufficiente- mente vasto, può capitare che tra loro ci sia un warg. Sono lupi molto grossi e robusti (di solito con una ruvida pelliccia marrone) che assurgono al ruolo di capobranco. Persino i witcher più eruditi non sono certi di cosa in- neschi la trasformazione da lupo a warg o se i branchi più grandi attirino automaticamente i warg, ma la loro esistenza è indiscutibile. Sebbene i warg si comportino come nor- mali lupi, hanno acquisito una fama sinistra a causa degli occhi rossi e dell’innegabile astuzia. Quando si affronta un branco è bene eliminare subito il warg al comando. Finché resta in vita i lupi agiranno con maggior co- ordinazione e strategia. I warg sono capaci di ordinare ai propri simili di circondare la pre- da, colpire bersagli specifici per indebolire il gruppo o ostacolare gli avversari più pericolosi per permettere al capobranco di ucciderli più facilmente. Spesso i warg restano nelle retrovie finché la preda non è stata indebolita, quin- di è meglio affrontarli con armi a distanza. L’argento non è efficace, ma del buon acciaio sì. Usando dell’unguento anti-bestie, elimina- re un warg non è troppo complesso, è solo un lupo molto grosso e robusto. Ossa di Bestia (×1d6) Vista Notturna Un lupo può agire in zone di luce fioca senza penalità. Pelle di Lupo Armi Nome DAN Effetti N°Att Morso 2d6 N/A 1 Warg I warg sono più grossi dei lupi comuni, han- no la pelliccia marrone-rossicio e occhi rossi luminescenti. Dal modo in cui cacciano, sembrano anche più intelligenti dei loro cugini comuni. INT 2 GRI 6 RIF 5 COR 24 DES 7 BAL 4 FIS 6 RES 30 VEL 8 INC 60 EMP 1 REC 6 MAN 1 PS 30 VOL 6 VIGORE 0 FOR 0</p>",
-        "notes": [
-            {
-                "title": "Descrizione",
-                "details": "<p>SUPERSTIZIONE COMUNE (Istruzione CD 8) Non c’è molto da dire sui lupi. Eh, sono dei male- detti bastardi che vivono nelle foreste e attaccano i viaggiatori. Di solito agiscono in branchi di 5 o 6 e hanno paura del fuoco. Se dovete combatterli fate in modo che non possano circondarvi, perché vi salteranno addosso da tutte le parti. Non è un bel modo di morire, secondo me. Le cose vanno sempre peggio dall’inizio della guerra, con tutti quei ca- daveri in giro i lupi sono sempre più spavaldi. Eh, tanti credono che siano pure un segno di sventura. Non mi ricordo più quante profezie iniziano con un lupo. Seriamente, sono bestiacce maledette. – Rodolf Kazmer ABILITÀ Vulnerabilità Accortezza +6 Unguento Anti-bestie Atletica +6 Capacità Coraggio +6 Capobranco Spesso, un branco di lupi è guidato da un warg. Finché questi è vivo tutti i lupi ottengono un bonus di +4 al Coraggio. Inoltre, il warg è in grado di dare ordini al resto del branco. Questi non possono essere più complessi di ‘vai laggiù’, ‘attacca alle spalle’ o ‘aspetta’. Eludere +6 Mischia +6 Nascondersi +6 Resistere alla Magia +2 Rissa +6 Sopravvivenza +9 Tempra +5 Fiuto Un lupo può seguire le tracce di una creatura senza bisogno di segnali visivi o uditivi senza alcuna penalità Bottino Fegato di Lupo Grasso di Cane (×1d6) CONOSCENZA DEI WITCHER (Arte del Witcher CD 14) Pur essendoci molti strani racconti e miti sui lupi, tutti sono concordi nell’affermare che non sono creature magiche. I warg, d’altro canto, sono assai più misteriosi per la popola- zione. Quando un branco diventa abbastanza grande o controlla un territorio sufficiente- mente vasto, può capitare che tra loro ci sia un warg. Sono lupi molto grossi e robusti (di solito con una ruvida pelliccia marrone) che assurgono al ruolo di capobranco. Persino i witcher più eruditi non sono certi di cosa in- neschi la trasformazione da lupo a warg o se i branchi più grandi attirino automaticamente i warg, ma la loro esistenza è indiscutibile. Sebbene i warg si comportino come nor- mali lupi, hanno acquisito una fama sinistra a causa degli occhi rossi e dell’innegabile astuzia. Quando si affronta un branco è bene eliminare subito il warg al comando. Finché resta in vita i lupi agiranno con maggior co- ordinazione e strategia. I warg sono capaci di ordinare ai propri simili di circondare la pre- da, colpire bersagli specifici per indebolire il gruppo o ostacolare gli avversari più pericolosi per permettere al capobranco di ucciderli più facilmente. Spesso i warg restano nelle retrovie finché la preda non è stata indebolita, quin- di è meglio affrontarli con armi a distanza. L’argento non è efficace, ma del buon acciaio sì. Usando dell’unguento anti-bestie, elimina- re un warg non è troppo complesso, è solo un lupo molto grosso e robusto. Ossa di Bestia (×1d6) Vista Notturna Un lupo può agire in zone di luce fioca senza penalità. Pelle di Lupo Armi Nome DAN Effetti N°Att Morso 2d6 N/A 1 Warg I warg sono più grossi dei lupi comuni, han- no la pelliccia marrone-rossicio e occhi rossi luminescenti. Dal modo in cui cacciano, sembrano anche più intelligenti dei loro cugini comuni. INT 2 GRI 6 RIF 5 COR 24 DES 7 BAL 4 FIS 6 RES 30 VEL 8 INC 60 EMP 1 REC 6 MAN 1 PS 30 VOL 6 VIGORE 0 FOR 0</p>"
-            }
-        ]
+        "description": "<p>Non c’è molto da dire sui lupi. Eh, sono dei maledetti bastardi che vivono nelle foreste e attaccano i viaggiatori. – Rodolf Kazmer</p><p>Pur essendoci molti strani racconti e miti sui lupi, tutti sono concordi nell’affermare che non sono creature magiche. I warg, d’altro canto, sono assai più misteriosi. Quando un branco diventa abbastanza grande, può capitare che tra loro ci sia un warg: lupi molto grossi e robusti.</p>",
+        "sourcebook": "MB 287"
     },
     "items": [
         {
@@ -136,82 +131,46 @@
             "img": "icons/svg/sword.svg",
             "system": {
                 "description": "",
-                "weight": 0,
-                "cost": 0,
                 "damage": "2d6",
-                "reliability": {
-                    "value": 10,
-                    "max": 10
-                },
                 "accuracy": 0,
-                "hands": 1,
-                "reach": "N/A",
-                "effects": "N/A"
+                "effects": ""
             },
-            "effects": [],
-            "folder": null,
-            "sort": 0,
-            "ownership": {
-                "default": 0
-            },
-            "flags": {},
             "_stats": {
-                "systemId": "TheWitcherTRPG",
-                "systemVersion": "1.0.0",
-                "coreVersion": "13"
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
             }
         },
         {
-            "_id": "6b6eecc2d7be407c",
-            "name": "[Vulnerabilità] Accortezza",
+            "_id": "w1",
+            "name": "[Capacità] Fiuto",
             "type": "note",
             "img": "icons/svg/book.svg",
             "system": {
-                "description": "<p>+6</p>"
+                "description": "<p>Può seguire le tracce senza bisogno di segnali visivi o uditivi.</p>"
             },
-            "effects": [],
-            "folder": null,
-            "sort": 0,
-            "ownership": {
-                "default": 0
-            },
-            "flags": {},
             "_stats": {
-                "systemId": "TheWitcherTRPG",
-                "systemVersion": "1.0.0",
-                "coreVersion": "13"
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
             }
         },
         {
-            "_id": "a6d66cda7e874791",
-            "name": "[Capacità] Coraggio",
+            "_id": "w2",
+            "name": "[Capacità] Capobranco",
             "type": "note",
             "img": "icons/svg/book.svg",
             "system": {
-                "description": "<p>+6</p>"
+                "description": "<p>Bonus di +4 al Coraggio per i lupi del branco finché il warg è vivo.</p>"
             },
-            "effects": [],
-            "folder": null,
-            "sort": 0,
-            "ownership": {
-                "default": 0
-            },
-            "flags": {},
             "_stats": {
-                "systemId": "TheWitcherTRPG",
-                "systemVersion": "1.0.0",
-                "coreVersion": "13"
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
             }
         }
     ],
     "effects": [],
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
+        "coreVersion": 14
     }
 }

@@ -1,0 +1,37 @@
+﻿{
+    "_id": "ae20d541324e3369",
+    "name": "Arco da Viaggio Elfico",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag132_Schemi di Manifattura_10.webp",
+    "system": {
+        "description": "<p>Schema per la fabbricazione di: <b>Arco da Viaggio Elfico</b>.</p><p><b>Componenti richiesti:</b> Legname Indurito (×4), Filo (×4), Cera (×4), Quintessenza (×1), Cuoio (×1), Piume (×3), Ossa di Bestia (×2), Acciaio Nero (×2), Grasso di Estere (×5), Acquaforte (×3)</p><p><b>Difficoltà Manifattura:</b> CD 22</p><p><b>Tempo:</b> 11 ore</p>",
+        "weight": 0,
+        "cost": 0,
+        "components": [
+            "Legname Indurito (×4)",
+            "Filo (×4)",
+            "Cera (×4)",
+            "Quintessenza (×1)",
+            "Cuoio (×1)",
+            "Piume (×3)",
+            "Ossa di Bestia (×2)",
+            "Acciaio Nero (×2)",
+            "Grasso di Estere (×5)",
+            "Acquaforte (×3)"
+        ],
+        "difficulty": 22,
+        "time": "11 ore",
+        "sourcebook": "MB 138"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

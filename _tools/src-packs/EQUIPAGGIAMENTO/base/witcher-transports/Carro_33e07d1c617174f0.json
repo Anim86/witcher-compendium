@@ -1,0 +1,17 @@
+﻿{
+    "name":  "Carro",
+    "_id":  "33e07d1c617174f0",
+    "system":  {
+                   "weight":  600,
+                   "description":  "\u003cp\u003eUn veicolo robusto a quattro ruote progettato per il trasporto di merci pesanti, solitamente trainato da buoi o cavalli.\u003c/p\u003e",
+                   "quantity":  1,
+                   "cost":  660,
+                   "sourcebook":  "MB 93"
+               },
+    "type":  "item",
+    "img":  "icons/svg/item-bag.svg",
+    "_stats":  {
+                   "coreVersion":  14,
+                   "systemId":  "TheWitcherItaNewSystem"
+               }
+}

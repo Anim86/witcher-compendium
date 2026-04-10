@@ -1,0 +1,23 @@
+﻿{
+    "_id": "34e7f5bbea146f84",
+    "name": "Muschio Verde",
+    "type": "component",
+    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag145_Sostanze Alchemiche_02.webp",
+    "system": {
+        "description": "<p>Muschio che cresce in assenza di luce, ricco di essenza Caelum.</p><p><b>Rarità:</b> C | <b>Ubicazione:</b> Caverne</p>",
+        "quantity": "1",
+        "weight": 0.1,
+        "cost": 8,
+        "sourcebook": "MB 145",
+        "type": "alchemical",
+        "rarity": "C",
+        "location": "Caverne",
+        "substanceType": "caelum"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

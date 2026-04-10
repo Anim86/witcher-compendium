@@ -1,0 +1,23 @@
+﻿{
+    "_id": "12e61a61030946ba",
+    "name": "Prezzemolo Selvatico",
+    "type": "component",
+    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag145_Sostanze Alchemiche_02.webp",
+    "system": {
+        "description": "<p>Erba infestante, facile da trovare ma debolmente reattiva.</p><p><b>Rarità:</b> D | <b>Ubicazione:</b> Campi</p>",
+        "quantity": "1",
+        "weight": 0.1,
+        "cost": 2,
+        "sourcebook": "MB 146",
+        "type": "alchemical",
+        "rarity": "D",
+        "location": "Campi",
+        "substanceType": "quebrith"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

@@ -1,4 +1,4 @@
-{
+﻿{
     "_id": "78ef677ff12f4842",
     "name": "Grifoni",
     "type": "monster",
@@ -6,29 +6,29 @@
     "system": {
         "stats": {
             "int": {
-                "value": 8,
-                "max": 8,
-                "unmodifiedMax": 8
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
             },
             "ref": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "dex": {
                 "value": 6,
                 "max": 6,
                 "unmodifiedMax": 6
             },
-            "dex": {
-                "value": 7,
-                "max": 7,
-                "unmodifiedMax": 7
-            },
             "body": {
-                "value": 8,
-                "max": 8,
-                "unmodifiedMax": 8
+                "value": 12,
+                "max": 12,
+                "unmodifiedMax": 12
             },
             "spd": {
-                "value": 7,
-                "max": 7,
-                "unmodifiedMax": 7
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
             },
             "emp": {
                 "value": 1,
@@ -81,20 +81,20 @@
             }
         },
         "details": {
-            "biography": "[Immagini presenti in questa pagina: Pag295_Grifoni_01.png, Pag295_Grifoni_02.png, Pag295_Grifoni_03.png, Pag295_Grifoni_04.png, Pag295_Grifoni_05.png, Pag295_Grifoni_06.png, Pag295_Grifoni_07.png, Pag295_Grifoni_08.png, Pag295_Grifoni_09.png, Pag295_Grifoni_10.png, Pag295_Grifoni_11.png, Pag295_Grifoni_12.png]<br><br>293 GRIFONI<br>SUPERSTIZIONE COMUNE (Istruzione CD 14) Puoi immaginarti qualcosa di più maestoso d’un grifone? Eh, quella è un’idea pericolosa, te lo dico io. Molti nobili pensano che i grifoni siano come quelli che si fanno disegnare su scudi, tabarri e altra pac- cottiglia. Eh, i contadini, invece, ne sono spaventati a morte. Cosa faresti quando 900 chili di pelo, piu- me e artigli atterra nel tuo campo per portarsi via una mucca? Nulla, ecco cosa! Pochi conoscono bene i grifoni, molti si limitano a evitarli. – Rodolf Kazmer<br>Al suolo bisogna comunque stare attenti ai loro artigli affilati come rasoi, che possono fare a pezzi un uomo o causare profonde ferite san- guinanti. Se un avversario si allontana troppo, il grifone gli salterà addosso con una carica, un attacco spaventosamente potente, ma meno preciso e abbastanza facile da evitare, che può però uccidere un uomo sul colpo. L’ultima cosa a cui bisogna stare attenti è l’urlo, chi non riesce a resistervi sarà una facile preda.",
-            "threat": "Facile Arduo",
-            "reward": 30
+            "biography": "<p>Puoi immaginarti qualcosa di più maestoso d’un grifone? Pochi li conoscono bene, molti si limitano a evitarli. Cosa faresti quando 900 chili di pelo, piume e artigli atterrano nel tuo campo per portarsi via una mucca? – Rodolf Kazmer</p><p>I grifoni sono super-predatori, rapidi al suolo quanto in aria. Localizzano una preda nascosta grazie alla loro vista d’aquila. Afferrano prede grandi come un cavallo e lasciano precipitare da oltre 100 metri d’altezza.</p>",
+            "threat": "Difficile",
+            "reward": 1200
         },
         "derivedStats": {
             "health": {
-                "value": 35,
-                "max": 35,
-                "unmodifiedMax": 35
+                "value": 60,
+                "max": 60,
+                "unmodifiedMax": 60
             },
             "stamina": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 60,
+                "max": 60,
+                "unmodifiedMax": 60
             },
             "vigor": {
                 "value": 0,
@@ -102,31 +102,26 @@
                 "unmodifiedMax": 0
             },
             "rec": {
-                "value": 7,
-                "max": 7,
-                "unmodifiedMax": 7
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
             },
             "resolve": {
-                "value": 80,
-                "max": 80,
-                "unmodifiedMax": 80
+                "value": 60,
+                "max": 60,
+                "unmodifiedMax": 60
             },
             "stun": {
-                "value": 7,
-                "max": 7
+                "value": 10,
+                "max": 10
             },
             "woundTreshold": {
-                "value": 7,
-                "max": 7
+                "value": 10,
+                "max": 10
             }
         },
-        "description": "<p>SUPERSTIZIONE COMUNE (Istruzione CD 14) Puoi immaginarti qualcosa di più maestoso d’un grifone? Eh, quella è un’idea pericolosa, te lo dico io. Molti nobili pensano che i grifoni siano come quelli che si fanno disegnare su scudi, tabarri e altra pac- cottiglia. Eh, i contadini, invece, ne sono spaventati a morte. Cosa faresti quando 900 chili di pelo, piu- me e artigli atterra nel tuo campo per portarsi via una mucca? Nulla, ecco cosa! Pochi conoscono bene i grifoni, molti si limitano a evitarli. – Rodolf Kazmer Al suolo bisogna comunque stare attenti ai loro artigli affilati come rasoi, che possono fare a pezzi un uomo o causare profonde ferite san- guinanti. Se un avversario si allontana troppo, il grifone gli salterà addosso con una carica, un attacco spaventosamente potente, ma meno preciso e abbastanza facile da evitare, che può però uccidere un uomo sul colpo. L’ultima cosa a cui bisogna stare attenti è l’urlo, chi non riesce a resistervi sarà una facile preda. Vulnerabilità Unguento Anti-ibridi Capacità Carica Se un avversario si allontana di oltre 10m, un grifone può caricarlo, effettuando un poderoso attacco con gli artigli. Questo subisce -4 Precisione, ma infligge 10d6 danni e scaraventa indietro la vittima di 8m. Se il bersaglio colpisce un ostacolo a causa di questo movimento, subisce danni da impatto pari a quelli provocati da un cavallo. ABILITÀ Accortezza +10 CONOSCENZA DEI WITCHER (Arte del Witcher CD 14) I grifoni sono creature molto semplici, che agiscono come una combinazione tra i due animali di cui condividono l’aspetto: aqui- le e leoni. Purtroppo questo li rende dei su- per-predatori, rapidi al suolo quanto in aria. Sono capaci di superare gli ostacoli volando e localizzare una preda nascosta grazie alla loro vista d’aquila. Per non parlare poi di come af- ferrino prede grandi come un cavallo e le la- scino precipitare dal oltre 100 metri d’altezza. Per fortuna, di solito attaccano solo chi si in- troduce nel loro territorio. Il problema è che, con la guerra e le montagne di cadaveri nelle valli, i grifoni si stanno spostando dai picchi alle colline. Improvvisamente, molti piccoli villaggi ai piedi delle montagne si sono ritro- vati nel loro territorio senza saperlo. In caso si debba affrontare un grifone è meglio fare scorta di munizioni e unguento anti-ibridi. I proiettili sono necessari perché i grifoni attaccano in picchiata dal cielo. Un colpo diretto di un dardo, freccia o lancia può costringerli a cambiare traiettoria e pos- sono precipitare, subendo danni e restando vulnerabili. Atletica +7 Coraggio +10 Ferale Grazie ai suoi istinti un grifone possiede INT 8 ai fini delle prove d’Accortezza e Sopravvivenza. Eludere +7 Mischia +9 Nascondersi +4 Resistere alla Magia +9 Urlo Un grifone può usare il suo turno per lanciare un grido che costringe tutti coloro che si trovano entro 10m a effettuare un tiro salvezza Grinta -1. Rissa +7 Sopravvivenza +8 Tempra +3 Bottino Volo Come azione di movimento un grifone può volare. L’unico modo per abbatterlo è stordirlo o causargli più di 10 danni con un singolo attacco. Se precipita deve superare un tiro di Atletica con CD 16 o subire danno da impatto pari al numero di metri di caduta. Piume di Grifone (×1d10) Polvere Infusa (×1d6/2) Uovo di Grifone (×1d6/2) Armi Nome DAN Effetti N°Att Artigli 6d6 N/A 2 Morso 7d6+2 Sanguinamento (50%) 1</p>",
-        "notes": [
-            {
-                "title": "Descrizione",
-                "details": "<p>SUPERSTIZIONE COMUNE (Istruzione CD 14) Puoi immaginarti qualcosa di più maestoso d’un grifone? Eh, quella è un’idea pericolosa, te lo dico io. Molti nobili pensano che i grifoni siano come quelli che si fanno disegnare su scudi, tabarri e altra pac- cottiglia. Eh, i contadini, invece, ne sono spaventati a morte. Cosa faresti quando 900 chili di pelo, piu- me e artigli atterra nel tuo campo per portarsi via una mucca? Nulla, ecco cosa! Pochi conoscono bene i grifoni, molti si limitano a evitarli. – Rodolf Kazmer Al suolo bisogna comunque stare attenti ai loro artigli affilati come rasoi, che possono fare a pezzi un uomo o causare profonde ferite san- guinanti. Se un avversario si allontana troppo, il grifone gli salterà addosso con una carica, un attacco spaventosamente potente, ma meno preciso e abbastanza facile da evitare, che può però uccidere un uomo sul colpo. L’ultima cosa a cui bisogna stare attenti è l’urlo, chi non riesce a resistervi sarà una facile preda. Vulnerabilità Unguento Anti-ibridi Capacità Carica Se un avversario si allontana di oltre 10m, un grifone può caricarlo, effettuando un poderoso attacco con gli artigli. Questo subisce -4 Precisione, ma infligge 10d6 danni e scaraventa indietro la vittima di 8m. Se il bersaglio colpisce un ostacolo a causa di questo movimento, subisce danni da impatto pari a quelli provocati da un cavallo. ABILITÀ Accortezza +10 CONOSCENZA DEI WITCHER (Arte del Witcher CD 14) I grifoni sono creature molto semplici, che agiscono come una combinazione tra i due animali di cui condividono l’aspetto: aqui- le e leoni. Purtroppo questo li rende dei su- per-predatori, rapidi al suolo quanto in aria. Sono capaci di superare gli ostacoli volando e localizzare una preda nascosta grazie alla loro vista d’aquila. Per non parlare poi di come af- ferrino prede grandi come un cavallo e le la- scino precipitare dal oltre 100 metri d’altezza. Per fortuna, di solito attaccano solo chi si in- troduce nel loro territorio. Il problema è che, con la guerra e le montagne di cadaveri nelle valli, i grifoni si stanno spostando dai picchi alle colline. Improvvisamente, molti piccoli villaggi ai piedi delle montagne si sono ritro- vati nel loro territorio senza saperlo. In caso si debba affrontare un grifone è meglio fare scorta di munizioni e unguento anti-ibridi. I proiettili sono necessari perché i grifoni attaccano in picchiata dal cielo. Un colpo diretto di un dardo, freccia o lancia può costringerli a cambiare traiettoria e pos- sono precipitare, subendo danni e restando vulnerabili. Atletica +7 Coraggio +10 Ferale Grazie ai suoi istinti un grifone possiede INT 8 ai fini delle prove d’Accortezza e Sopravvivenza. Eludere +7 Mischia +9 Nascondersi +4 Resistere alla Magia +9 Urlo Un grifone può usare il suo turno per lanciare un grido che costringe tutti coloro che si trovano entro 10m a effettuare un tiro salvezza Grinta -1. Rissa +7 Sopravvivenza +8 Tempra +3 Bottino Volo Come azione di movimento un grifone può volare. L’unico modo per abbatterlo è stordirlo o causargli più di 10 danni con un singolo attacco. Se precipita deve superare un tiro di Atletica con CD 16 o subire danno da impatto pari al numero di metri di caduta. Piume di Grifone (×1d10) Polvere Infusa (×1d6/2) Uovo di Grifone (×1d6/2) Armi Nome DAN Effetti N°Att Artigli 6d6 N/A 2 Morso 7d6+2 Sanguinamento (50%) 1</p>"
-            }
-        ]
+        "description": "<p>Puoi immaginarti qualcosa di più maestoso d’un grifone? Pochi li conoscono bene, molti si limitano a evitarli. Cosa faresti quando 900 chili di pelo, piume e artigli atterrano nel tuo campo per portarsi via una mucca? – Rodolf Kazmer</p><p>I grifoni sono super-predatori, rapidi al suolo quanto in aria. Localizzano una preda nascosta grazie alla loro vista d’aquila. Afferrano prede grandi come un cavallo e lasciano precipitare da oltre 100 metri d’altezza.</p>",
+        "sourcebook": "MB 293"
     },
     "items": [
         {
@@ -136,29 +131,13 @@
             "img": "icons/svg/sword.svg",
             "system": {
                 "description": "",
-                "weight": 0,
-                "cost": 0,
                 "damage": "6d6",
-                "reliability": {
-                    "value": 10,
-                    "max": 10
-                },
                 "accuracy": 0,
-                "hands": 1,
-                "reach": "N/A",
-                "effects": "N/A"
+                "effects": ""
             },
-            "effects": [],
-            "folder": null,
-            "sort": 0,
-            "ownership": {
-                "default": 0
-            },
-            "flags": {},
             "_stats": {
-                "systemId": "TheWitcherTRPG",
-                "systemVersion": "1.0.0",
-                "coreVersion": "13"
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
             }
         },
         {
@@ -168,82 +147,46 @@
             "img": "icons/svg/sword.svg",
             "system": {
                 "description": "",
-                "weight": 0,
-                "cost": 0,
                 "damage": "7d6+2",
-                "reliability": {
-                    "value": 10,
-                    "max": 10
-                },
                 "accuracy": 0,
-                "hands": 1,
-                "reach": "N/A",
                 "effects": "Sanguinamento (50%)"
             },
-            "effects": [],
-            "folder": null,
-            "sort": 0,
-            "ownership": {
-                "default": 0
-            },
-            "flags": {},
             "_stats": {
-                "systemId": "TheWitcherTRPG",
-                "systemVersion": "1.0.0",
-                "coreVersion": "13"
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
             }
         },
         {
-            "_id": "30442ea528c44d59",
-            "name": "[Vulnerabilità] Unguento",
+            "_id": "g1",
+            "name": "[Capacità] Carica",
             "type": "note",
             "img": "icons/svg/book.svg",
             "system": {
-                "description": "<p>Anti-ibridi</p>"
+                "description": "<p>Può caricare un nemico oltre i 10m. -4 Pres, 10d6 danni e scaraventa indietro di 8m.</p>"
             },
-            "effects": [],
-            "folder": null,
-            "sort": 0,
-            "ownership": {
-                "default": 0
-            },
-            "flags": {},
             "_stats": {
-                "systemId": "TheWitcherTRPG",
-                "systemVersion": "1.0.0",
-                "coreVersion": "13"
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
             }
         },
         {
-            "_id": "9527704075684ef8",
-            "name": "[Capacità] Carica Se",
+            "_id": "g2",
+            "name": "[Capacità] Urlo",
             "type": "note",
             "img": "icons/svg/book.svg",
             "system": {
-                "description": "<p>un avversario si allontana di oltre 10m, un grifone può caricarlo, effettuando un poderoso attacco con gli artigli. Questo subisce -4 Precisione, ma infligge 10d6 danni e scaraventa indietro la vittima di 8m. Se il bersaglio colpisce un ostacolo a causa di questo movimento, subisce danni da impatto pari a quelli provocati da un cavallo.</p>"
+                "description": "<p>Urlo entro 10m: tiro salvezza Grinta con penalità -1.</p>"
             },
-            "effects": [],
-            "folder": null,
-            "sort": 0,
-            "ownership": {
-                "default": 0
-            },
-            "flags": {},
             "_stats": {
-                "systemId": "TheWitcherTRPG",
-                "systemVersion": "1.0.0",
-                "coreVersion": "13"
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
             }
         }
     ],
     "effects": [],
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
+        "coreVersion": 14
     }
 }

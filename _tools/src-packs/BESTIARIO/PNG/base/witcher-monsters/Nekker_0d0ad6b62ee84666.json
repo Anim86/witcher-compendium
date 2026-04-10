@@ -1,4 +1,4 @@
-{
+﻿{
     "_id": "0d0ad6b62ee84666",
     "name": "Nekker",
     "type": "monster",
@@ -11,24 +11,24 @@
                 "unmodifiedMax": 2
             },
             "ref": {
-                "value": 6,
-                "max": 6,
-                "unmodifiedMax": 6
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
             },
             "dex": {
-                "value": 8,
-                "max": 8,
-                "unmodifiedMax": 8
-            },
-            "body": {
-                "value": 4,
-                "max": 4,
-                "unmodifiedMax": 4
-            },
-            "spd": {
                 "value": 7,
                 "max": 7,
                 "unmodifiedMax": 7
+            },
+            "body": {
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
+            },
+            "spd": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
             },
             "emp": {
                 "value": 2,
@@ -41,9 +41,9 @@
                 "unmodifiedMax": 2
             },
             "will": {
-                "value": 5,
-                "max": 5,
-                "unmodifiedMax": 5
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
             },
             "luck": {
                 "value": 0,
@@ -81,20 +81,20 @@
             }
         },
         "details": {
-            "biography": "[Immagini presenti in questa pagina: Pag305_Nekker_01.png, Pag305_Nekker_02.png, Pag305_Nekker_03.png, Pag305_Nekker_04.png, Pag305_Nekker_05.png, Pag305_Nekker_06.png, Pag305_Nekker_07.png, Pag305_Nekker_08.png, Pag305_Nekker_09.png, Pag305_Nekker_10.png, Pag305_Nekker_11.png, Pag305_Nekker_12.png, Pag305_Nekker_13.png, Pag305_Nekker_14.png]<br><br>303 NEKKER<br>SUPERSTIZIONE COMUNE (Istruzione CD 16) I nekker sono piccole bestie orribili. Eh, dicono che vivano sotto i ponti e attacchino i viaggiatori che si sono persi. Sono arnesi piccoli, orrendi e simili ai troll, che vanno a caccia in branco. Se ne metti assieme abbastanza possono spolpare un cavallo in pochi minuti. Se ne incontrate un gruppo è meglio spronare il cavallo più in fretta possibile. Se siete a piedi, allora avete un grosso problema. Meglio accendere una torcia e correre verso la città. Con un po’ di fortuna, il fuoco li terrà a bada abba- stanza a lungo. – Rodolf Kazmer",
-            "threat": "Media Complesso",
-            "reward": 800
+            "biography": "<p>I nekker sono piccole bestie orribili. Eh, dicono che vivano sotto i ponti e attacchino i viaggiatori che si sono persi. Sono arnesi piccoli, orrendi e simili ai troll, che vanno a caccia in branco. – Rodolf Kazmer</p><p>Grotte o buche, i nekker si nascondono quasi ovunque. Recenti scoperte suggeriscono che siano decisamente più intelligenti di quanto si creda: agiscono in bande guidate da un capo e decorano le proprie caverne con dipinti primitivi.</p>",
+            "threat": "Media",
+            "reward": 100
         },
         "derivedStats": {
             "health": {
-                "value": 20,
-                "max": 20,
-                "unmodifiedMax": 20
+                "value": 15,
+                "max": 15,
+                "unmodifiedMax": 15
             },
             "stamina": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 15,
+                "max": 15,
+                "unmodifiedMax": 15
             },
             "vigor": {
                 "value": 0,
@@ -102,32 +102,26 @@
                 "unmodifiedMax": 0
             },
             "rec": {
-                "value": 4,
-                "max": 4,
-                "unmodifiedMax": 4
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
             },
             "resolve": {
-                "value": 120,
-                "max": 120,
-                "unmodifiedMax": 120
+                "value": 15,
+                "max": 15,
+                "unmodifiedMax": 15
             },
             "stun": {
-                "value": 4,
-                "max": 4
+                "value": 3,
+                "max": 3
             },
             "woundTreshold": {
-                "value": 4,
-                "max": 4
+                "value": 3,
+                "max": 3
             }
         },
-        "description": "<p>SUPERSTIZIONE COMUNE (Istruzione CD 16) I nekker sono piccole bestie orribili. Eh, dicono che vivano sotto i ponti e attacchino i viaggiatori che si sono persi. Sono arnesi piccoli, orrendi e simili ai troll, che vanno a caccia in branco. Se ne metti assieme abbastanza possono spolpare un cavallo in pochi minuti. Se ne incontrate un gruppo è meglio spronare il cavallo più in fretta possibile. Se siete a piedi, allora avete un grosso problema. Meglio accendere una torcia e correre verso la città. Con un po’ di fortuna, il fuoco li terrà a bada abba- stanza a lungo. – Rodolf Kazmer ABILITÀ Vulnerabilità Accortezza +8 Unguento Anti-orchi Atletica +7 Capacità Coraggio +6 Capo Spesso, un gruppo di nekker è guidato da un capo. Finché questi è vivo tutti i membri ottengono un bonus di +4 Coraggio. Inoltre, il capo è in grado di dare ordini, anche piuttosto complessi, al resto della banda. Eludere +6 Mischia +5 Nascondersi +8 Resistere a Coercizione +9 Resistere alla Magia +4 Rissa +5 Sopravvivenza +8 Vista Notturna Un nekker può agire in zone di luce fioca senza penalità. Tempra +6 Bottino CONOSCENZA DEI WITCHER (Arte del Witcher CD 10) Per alcuni witcher, i nekker sono un enigma, collocato in una zona grigia tra i veri mostri e le razze senzienti. Sono creature basse, or- ride e pelate, che si nascondono in buche e grotte quasi ovunque. Danno la caccia a qual- siasi cosa abbia carne e un battito cardiaco e la divorano completamente. Questo li rende un pericolo per tutti e, di conseguenza, molti witcher li uccidono senza pensarci due volte. Tuttavia, recenti scoperte suggeriscono che i nekker siano decisamente più intelligenti di quanto si creda: agiscono in bande guidate da un capo, indossano perizoma e copricapi, a volte impiegano bastoni e, addirittura, deco- rano le proprie caverne con dipinti primitivi che raffigurano battaglie o cacce a cui hanno partecipato. Tuttavia, restano una minaccia per tutte le specie senzienti. Quando si affronta un gruppo di nekker (una situazione comune lungo le strade devastate dei Regni Settentrionali) bisogna ricordarsi che agi- scono in branchi seguendo le istruzioni del capo: eliminarlo è la priorità. Questi di solito indossa un copricapo e porta un bastone. I nekker ten- dono ad attaccare in massa, quindi è necessario continuare a muoversi. Attacchi ad area, come bombe e incantesimi, sono ottimi per sfoltire i ranghi. Se possibile, è una buona idea usare dell’unguento anti-orchi. Tecnicamente i nekker sono intelligenti e con enormi sforzi si potrebbe riuscire a convincerli ad andarsene, specie indi- cando loro un’altra preda più interessante. In ge- nere, però, è meglio non affidarsi alla diplomazia. Artiglio di Nekker (×2) Cuore di Nekker Denti di Nekker (×1d6/2) Armi Nome DAN Effetti N°Att Artigli 2d6 N/A 1 Capo Nekker I capi nekker sono leggermente più grossi dei loro simili. Alcuni pensano che si tratti di una sottospecie, ma è più probabile che (come tra gli umani) gli esemplari più grandi e forti assu- mano posizioni di comando. Hanno spesso la pelle rossastra, a causa delle pitture di guerra. INT 2 GRI 4 RIF 6 COR 21 DES 8 BAL 4 FIS 4 RES 20 VEL 7 INC 40 EMP 2 REC 4 MAN 2 PS 20 VOL 5 VIGORE 0 FOR 0</p>",
-        "notes": [
-            {
-                "title": "Descrizione",
-                "details": "<p>SUPERSTIZIONE COMUNE (Istruzione CD 16) I nekker sono piccole bestie orribili. Eh, dicono che vivano sotto i ponti e attacchino i viaggiatori che si sono persi. Sono arnesi piccoli, orrendi e simili ai troll, che vanno a caccia in branco. Se ne metti assieme abbastanza possono spolpare un cavallo in pochi minuti. Se ne incontrate un gruppo è meglio spronare il cavallo più in fretta possibile. Se siete a piedi, allora avete un grosso problema. Meglio accendere una torcia e correre verso la città. Con un po’ di fortuna, il fuoco li terrà a bada abba- stanza a lungo. – Rodolf Kazmer ABILITÀ Vulnerabilità Accortezza +8 Unguento Anti-orchi Atletica +7 Capacità Coraggio +6 Capo Spesso, un gruppo di nekker è guidato da un capo. Finché questi è vivo tutti i membri ottengono un bonus di +4 Coraggio. Inoltre, il capo è in grado di dare ordini, anche piuttosto complessi, al resto della banda. Eludere +6 Mischia +5 Nascondersi +8 Resistere a Coercizione +9 Resistere alla Magia +4 Rissa +5 Sopravvivenza +8 Vista Notturna Un nekker può agire in zone di luce fioca senza penalità. Tempra +6 Bottino CONOSCENZA DEI WITCHER (Arte del Witcher CD 10) Per alcuni witcher, i nekker sono un enigma, collocato in una zona grigia tra i veri mostri e le razze senzienti. Sono creature basse, or- ride e pelate, che si nascondono in buche e grotte quasi ovunque. Danno la caccia a qual- siasi cosa abbia carne e un battito cardiaco e la divorano completamente. Questo li rende un pericolo per tutti e, di conseguenza, molti witcher li uccidono senza pensarci due volte. Tuttavia, recenti scoperte suggeriscono che i nekker siano decisamente più intelligenti di quanto si creda: agiscono in bande guidate da un capo, indossano perizoma e copricapi, a volte impiegano bastoni e, addirittura, deco- rano le proprie caverne con dipinti primitivi che raffigurano battaglie o cacce a cui hanno partecipato. Tuttavia, restano una minaccia per tutte le specie senzienti. Quando si affronta un gruppo di nekker (una situazione comune lungo le strade devastate dei Regni Settentrionali) bisogna ricordarsi che agi- scono in branchi seguendo le istruzioni del capo: eliminarlo è la priorità. Questi di solito indossa un copricapo e porta un bastone. I nekker ten- dono ad attaccare in massa, quindi è necessario continuare a muoversi. Attacchi ad area, come bombe e incantesimi, sono ottimi per sfoltire i ranghi. Se possibile, è una buona idea usare dell’unguento anti-orchi. Tecnicamente i nekker sono intelligenti e con enormi sforzi si potrebbe riuscire a convincerli ad andarsene, specie indi- cando loro un’altra preda più interessante. In ge- nere, però, è meglio non affidarsi alla diplomazia. Artiglio di Nekker (×2) Cuore di Nekker Denti di Nekker (×1d6/2) Armi Nome DAN Effetti N°Att Artigli 2d6 N/A 1 Capo Nekker I capi nekker sono leggermente più grossi dei loro simili. Alcuni pensano che si tratti di una sottospecie, ma è più probabile che (come tra gli umani) gli esemplari più grandi e forti assu- mano posizioni di comando. Hanno spesso la pelle rossastra, a causa delle pitture di guerra. INT 2 GRI 4 RIF 6 COR 21 DES 8 BAL 4 FIS 4 RES 20 VEL 7 INC 40 EMP 2 REC 4 MAN 2 PS 20 VOL 5 VIGORE 0 FOR 0</p>"
-            }
-        ],
-        "sourcebook": "MB 72"
+        "description": "<p>I nekker sono piccole bestie orribili. Eh, dicono che vivano sotto i ponti e attacchino i viaggiatori che si sono persi. Sono arnesi piccoli, orrendi e simili ai troll, che vanno a caccia in branco. – Rodolf Kazmer</p><p>Grotte o buche, i nekker si nascondono quasi ovunque. Recenti scoperte suggeriscono che siano decisamente più intelligenti di quanto si creda: agiscono in bande guidate da un capo e decorano le proprie caverne con dipinti primitivi.</p>",
+        "sourcebook": "MB 303"
     },
     "items": [
         {
@@ -137,71 +131,39 @@
             "img": "icons/svg/sword.svg",
             "system": {
                 "description": "",
-                "weight": 0,
-                "cost": 0,
                 "damage": "2d6",
-                "reliability": {
-                    "value": 10,
-                    "max": 10
-                },
                 "accuracy": 0,
-                "hands": 1,
-                "reach": "N/A",
-                "effects": "N/A"
+                "effects": ""
             },
-            "effects": [],
-            "folder": null,
-            "sort": 0,
-            "ownership": {
-                "default": 0
-            },
-            "flags": {},
             "_stats": {
-                "systemId": "TheWitcherTRPG",
-                "systemVersion": "1.0.0",
-                "coreVersion": "13"
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
             }
         },
         {
-            "_id": "dbc99d6fe1ee48d7",
-            "name": "[Vulnerabilità] Accortezza",
+            "_id": "n1",
+            "name": "[Capacità] Capo",
             "type": "note",
             "img": "icons/svg/book.svg",
             "system": {
-                "description": "<p>+8</p>"
+                "description": "<p>Finché il capo è vivo tutti i membri ottengono +4 Coraggio.</p>"
             },
-            "effects": [],
-            "folder": null,
-            "sort": 0,
-            "ownership": {
-                "default": 0
-            },
-            "flags": {},
             "_stats": {
-                "systemId": "TheWitcherTRPG",
-                "systemVersion": "1.0.0",
-                "coreVersion": "13"
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
             }
         },
         {
-            "_id": "0e60b5f66ad54b6e",
-            "name": "[Capacità] Coraggio",
+            "_id": "n2",
+            "name": "[Capacità] Vista Notturna",
             "type": "note",
             "img": "icons/svg/book.svg",
             "system": {
-                "description": "<p>+6</p>"
+                "description": "<p>Può agire in zone di luce fioca senza penalità.</p>"
             },
-            "effects": [],
-            "folder": null,
-            "sort": 0,
-            "ownership": {
-                "default": 0
-            },
-            "flags": {},
             "_stats": {
-                "systemId": "TheWitcherTRPG",
-                "systemVersion": "1.0.0",
-                "coreVersion": "13"
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
             }
         }
     ],
@@ -212,7 +174,6 @@
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
-        "systemVersion": "v14.1.35",
-        "coreVersion": "14"
+        "coreVersion": 14
     }
 }

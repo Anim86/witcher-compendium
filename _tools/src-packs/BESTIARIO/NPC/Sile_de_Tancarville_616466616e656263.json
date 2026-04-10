@@ -1,0 +1,31 @@
+﻿{
+    "_id": "616466616e656263",
+    "name": "Sile de Tancarville",
+    "type": "Actor",
+    "img": "modules/witcher-compendium/assets/images/NPC/Sile.webp",
+    "system": {
+        "stats": {
+            "int": { "value": 0, "max": 0 },
+            "ref": { "value": 0, "max": 0 },
+            "dex": { "value": 0, "max": 0 },
+            "body": { "value": 0, "max": 0 },
+            "spd": { "value": 0, "max": 0 },
+            "emp": { "value": 0, "max": 0 },
+            "cra": { "value": 0, "max": 0 },
+            "will": { "value": 0, "max": 0 },
+            "luck": { "value": 0, "max": 0 }
+        },
+        "details": {
+            "biography": "<p>Sile de Tancarville è nota per due cose: far parte della Loggia delle Maghe ed essere un’eremita. – Brandon di Oxenfurt</p><p>Sile è una maga di Kovir, austera e dedita esclusivamente alla ricerca magica e alla politica d'oro. Nota per la sua partecipazione alla Loggia delle Maghe, è un'esperta nell'uccisione di mostri giganteschi tramite la magia, come dimostrato a Flotsam. La sua pragmatica freddezza e il suo disprezzo per le distrazioni umane la rendono un'alleata efficiente ma estremamente pericolosa.</p>",
+            "sourcebook": "TC 169"
+        },
+        "description": "<p>Sile de Tancarville è nota per due cose: far parte della Loggia delle Maghe ed essere un’eremita. – Brandon di Oxenfurt</p><p>Sile è una maga di Kovir, austera e dedita esclusivamente alla ricerca magica e alla politica d'oro. Nota per la sua partecipazione alla Loggia delle Maghe, è un'esperta nell'uccisione di mostri giganteschi tramite la magia, come dimostrato a Flotsam. La sua pragmatica freddezza e il suo disprezzo per le distrazioni umane la rendono un'alleata efficiente ma estremamente pericolosa.</p>"
+    },
+    "items": [],
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

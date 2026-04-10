@@ -1,0 +1,23 @@
+﻿{
+    "_id": "4fdeed830f7b35f5",
+    "name": "Polvere Coagulante",
+    "type": "component",
+    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag089_Prodotti Alchemici_08.webp",
+    "system": {
+        "description": "<p>Polvere emostatica per emergenze sul campo di battaglia.</p><p><b>Effetti:</b> Arresta sanguinamento per 2d10 round.</p><p><b>Durata:</b> 2d10 round</p><p><b>Tossicità:</b> 0%</p>",
+        "quantity": "1",
+        "weight": 0.1,
+        "cost": 20,
+        "sourcebook": "MB 90",
+        "type": "alchemical",
+        "rarity": "C",
+        "location": "",
+        "substanceType": ""
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

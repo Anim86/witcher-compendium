@@ -1,0 +1,36 @@
+﻿{
+    "_id": "d4ac7a6bba552d35",
+    "name": "Armatura Gnomesca da Dragone",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag132_Schemi di Manifattura_10.webp",
+    "system": {
+        "description": "<p>Schema per la fabbricazione di: <b>Armatura Gnomesca da Dragone</b>.</p><p><b>Componenti richiesti:</b> Acciaio Nero (×12), Dimeritium Mahakaman (×2), Grasso di Estere (×10), Acquaforte (×14), Lino a Doppia Trama (×5), Olio Scurente (×4), Olio di Papero (×2), Meteorite (×1), Filo (×15)</p><p><b>Difficoltà Manifattura:</b> CD 25</p><p><b>Tempo:</b> 25 ore</p>",
+        "weight": 0,
+        "cost": 0,
+        "components": [
+            "Acciaio Nero (×12)",
+            "Dimeritium Mahakaman (×2)",
+            "Grasso di Estere (×10)",
+            "Acquaforte (×14)",
+            "Lino a Doppia Trama (×5)",
+            "Olio Scurente (×4)",
+            "Olio di Papero (×2)",
+            "Meteorite (×1)",
+            "Filo (×15)"
+        ],
+        "difficulty": 25,
+        "time": "25 ore",
+        "sourcebook": "MB 140"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}
