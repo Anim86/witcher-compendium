@@ -29,21 +29,23 @@ jobs:
       - name: Set Version Variables
         id: vars
         run: |
-          # Usa l'input se presente (manuale), altrimenti il tag (push)
           V_VERSION=${{ inputs.version || github.ref_name }}
           VERSION=${V_VERSION#v}
-          echo "V_VERSION=$V_VERSION" >> $GITHUB_ENV
-          echo "VERSION=$VERSION" >> $GITHUB_ENV
+          echo "v_version=$V_VERSION" >> $GITHUB_OUTPUT
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
 
       - name: Update Manifest Files
         run: |
-          jq --arg ver "$V_VERSION" \
-             --arg dl "https://github.com/Anim86/witcher-compendium/releases/download/$V_VERSION/system.zip" \
+          V_VER="${{ steps.vars.outputs.v_version }}"
+          VER="${{ steps.vars.outputs.version }}"
+          
+          jq --arg ver "$V_VER" \
+             --arg dl "https://github.com/Anim86/witcher-compendium/releases/download/$V_VER/system.zip" \
              '.version = $ver | .download = $dl' \
              TheWitcherItaNewSystem/system.json > system.json.tmp && mv system.json.tmp TheWitcherItaNewSystem/system.json
              
-          jq --arg ver "$VERSION" \
-             --arg dl "https://github.com/Anim86/witcher-compendium/releases/download/$V_VERSION/witcher-compendium-$V_VERSION.zip" \
+          jq --arg ver "$VER" \
+             --arg dl "https://github.com/Anim86/witcher-compendium/releases/download/$V_VER/witcher-compendium-$V_VER.zip" \
              '.version = $ver | .download = $dl' \
              witcher-compendium/module.json > module.json.tmp && mv module.json.tmp witcher-compendium/module.json
 
@@ -65,8 +67,9 @@ jobs:
 
       - name: Package Module
         run: |
+          V_VER="${{ steps.vars.outputs.v_version }}"
           cd witcher-compendium
-          zip -r ../witcher-compendium-${{ env.V_VERSION }}.zip . -x "*.zip" -x ".git*" -x "node_modules*"
+          zip -r ../witcher-compendium-${V_VER}.zip . -x "*.zip" -x ".git*" -x "node_modules*"
           cd ..
 
       - name: Upload Artifacts
@@ -83,7 +86,7 @@ jobs:
         with:
           files: |
             system.zip
-            witcher-compendium-${{ env.V_VERSION }}.zip
+            witcher-compendium-${{ steps.vars.outputs.v_version }}.zip
             TheWitcherItaNewSystem/system.json
             witcher-compendium/module.json
           draft: false
@@ -95,8 +98,9 @@ jobs:
       - name: Update Repository Manifests
         if: startsWith(github.ref, 'refs/tags/')
         run: |
+          V_VER="${{ steps.vars.outputs.v_version }}"
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add TheWitcherItaNewSystem/system.json witcher-compendium/module.json
-          git commit -m "chore: update manifests to ${{ env.V_VERSION }} [skip ci]" || echo "No changes"
+          git commit -m "chore: update manifests to ${V_VER} [skip ci]" || echo "No changes"
           git push origin HEAD:main
