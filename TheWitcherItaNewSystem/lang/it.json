@@ -6,9 +6,11 @@
       "clue": "Indizio",
       "component": "Componente",
       "container": "Contenitore",
+      "criticalWound": "Ferita Critica",
       "diagrams": "Diagramma",
       "enhancement": "Potenziamento",
-      "hex": "Fattura",
+      "hex": "Maledizione",
+      "homeland": "Patria",
       "mount": "Cavalcatura",
       "mutagen": "Mutageno",
       "note": "Nota",
@@ -26,26 +28,165 @@
       "monster": "Mostro",
       "loot": "Bottino",
       "mystery": "Mistero"
+    },
+    "ActiveEffect": {
+      "temporaryItemImprovement": "Miglioramento Temporaneo"
+    }
+  },
+  "EFFECT": {
+    "TABS": {
+      "systemSpecific": "Specifico di Sistema"
     }
   },
   "WITCHER": {
     "Name": "Nome",
     "Type": "Tipo",
-    "Cost": "Costo",
-    "Weight": "Peso",
-    "Description": "Descrizione",
-    "Stats": "Statistiche",
-    "Skills": "Abilità",
-    "Inventory": "Inventario",
-    "Magic": "Magia",
-    "Background": "Background",
-    "Loot": {
-      "Weapons": "Armi",
-      "Armors": "Armature",
-      "Valuables": "Equipaggiamento"
+    "Percentage": "Percentuale",
+    "NoEffects": "Nessun Effetto",
+    "DC": "CD",
+    "Attack": {
+      "name": "Attacco",
+      "attackOptions": {
+        "label": "L'attacco è:",
+        "hint": "Configure the attack options",
+        "melee": "Mischia",
+        "ranged": "A Distanza",
+        "spell": "Incantesimo",
+        "itemUse": "Uso Oggetto"
+      },
+      "meleeAttackSkill": {
+        "label": "Abilità Attacco in Mischia",
+        "hint": ""
+      },
+      "rangedAttackSkill": {
+        "label": "Abilità Attacco a Distanza",
+        "hint": ""
+      },
+      "spellAttackSkill": {
+        "label": "Abilità Attacco Magico",
+        "hint": ""
+      },
+      "itemUseAttackSkill": {
+        "label": "Abilità Uso Oggetto",
+        "hint": ""
+      }
+    },
+    "Defense": {
+      "name": "Difesa",
+      "Crit": "Hai subito un critico",
+      "critStun": "Tiro salvezza stordimento per critico",
+      "defenseOptions": {
+        "name": "Opzioni di Difesa",
+        "dodge": "Schivata",
+        "reposition": "Riposizionamento",
+        "parry": "Parata",
+        "block": "Blocco",
+        "parryThrown": "Parata arma da lancio",
+        "magicResist": "Resistenza Magica"
+      },
+      "stun": {
+        "button": "Stordimento"
+      }
     },
     "Actor": {
-      "Name": "Nome del Personaggio",
+      "tabs": {
+        "stats": "Statistiche",
+        "skills": "Abilità",
+        "profession": "Professione & Razza",
+        "inventory": "Inventario",
+        "magic": "Magia",
+        "background": "Background",
+        "effects": "Effetti Attivi"
+      },
+      "Name": "Nome Personaggio",
+      "Race": "Razza",
+      "Gender": "Genere",
+      "Age": "Età",
+      "Perks": "Talenti",
+      "Adda.Profession": "Aggiungi una Professione",
+      "Adda.Race": "Aggiungi una Razza",
+      "woundState": "Stato Ferite",
+      "TotalStats": "Statistiche Totali",
+      "Stat.Int": "INT",
+      "Stat.Ref": "RIF",
+      "Stat.Dex": "DES",
+      "Stat.Body": "FIS",
+      "Stat.Spd": "VEL",
+      "Stat.Emp": "EMP",
+      "Stat.Cra": "TEC",
+      "Stat.Will": "VOL",
+      "Stat.Luck": "FOR",
+      "Stat.Toxicity": "Tossicità",
+      "StatTitle.LableLeft": "Statistiche",
+      "StatTitle.ModMax": "Mod / Max",
+      "StatTitle.Derived": "Derivate",
+      "DerStat.Stun": "STORD.",
+      "DerStat.Run": "CORSA",
+      "DerStat.Leap": "SALTO",
+      "DerStat.Enc": "INGOM.",
+      "DerStat.Rec": "REC.",
+      "DerStat.woundTreshold": "SF",
+      "DerStat.Vigor": "Vigore",
+      "DerStat.HP": "PS Max",
+      "DerStat.Shield": "Scudo",
+      "DerStat.Sta": "STA",
+      "DerStat.Resolve": "Risolutezza",
+      "DerStat.Focus": "Focus",
+      "DerStat.Punch": "Pugno",
+      "DerStat.Kick": "Calcio",
+      "Initiative": "Iniziativa",
+      "SavingThrow": "Tiro Salvezza",
+      "Crit/Fumble": "Critico/Maldestro",
+      "Adrenaline": "Adrenalina",
+      "Stamina": "Stamina",
+      "RecoveryStamina": "Recupero Stamina",
+      "Resolve": "Risolutezza",
+      "Hp": "PV",
+      "Shield": "Scudo",
+      "Skill.Intelligence": "Intelligenza",
+      "Skill.Reflex": "Riflessi",
+      "Skill.Willpower": "Volontà",
+      "Skill.Dexterity": "Destrezza",
+      "Skill.Crafting": "Tecnica",
+      "Skill.Body": "Fisico",
+      "Skill.Empathy": "Empatia",
+      "Profession.Level": "Livello",
+      "ImprovementPoints": "Punti Miglioramento",
+      "CurrentIP": "PM Attuali:",
+      "SkillName": "Nome abilità...",
+      "TotalSkill": "Abilità Totali",
+      "TotalProfSkill": "Abilità Profess. Totali",
+      "SpecialSkillModifier": "Modificatori Abilità Speciali",
+      "focus": {
+        "name": "Focus",
+        "first": "Primo",
+        "second": "Secondo",
+        "third": "Terzo",
+        "fourth": "Quarto"
+      },
+      "Lifepath": {
+        "Bonus": "Bonus Percorso Vitale",
+        "strongStrikeAttackBonus": "Bonus Attacco Colpo Forte",
+        "jointStrikeAttackBonus": "Bonus Attacco Colpo Combinato",
+        "shieldParryBonus": "Bonus Parata con Scudo",
+        "shieldParryThrownBonus": "Bonus Parata Armi da Lancio",
+        "ignoredArmorEncumbrance": "Ingombro Armatura Ignorato",
+        "ignoredEvWhenCasting": "VIn Ignorato per Lancio"
+      },
+      "attackStats": {
+        "critLocationModifier": "Modificatore Locazione Critica",
+        "critEffectModifier": "Modificatore Effetto Critico"
+      },
+      "settings": {
+        "actor": "Impostazioni Attore",
+        "general": "Generali",
+        "skills": "Abilità"
+      },
+      "rewards": {
+        "heading": "Ricompense",
+        "currency": "Valuta",
+        "ip": "PM"
+      },
       "Stat": {
         "Int": "INT",
         "Ref": "RIF",
@@ -53,181 +194,1570 @@
         "Body": "FIS",
         "Spd": "VEL",
         "Emp": "EMP",
-        "Cra": "ART",
+        "Cra": "TEC",
         "Will": "VOL",
         "Luck": "FOR",
         "Desc": {
-          "int": "Riflette la tua capacità di pensare, analizzare e ricordare informazioni.",
-          "ref": "Riflette la tua velocità di reazione e coordinazione occhio-mano.",
-          "dex": "Riflette la tua grazia, equilibrio e precisione nei movimenti.",
-          "body": "Riflette la tua forza fisica, salute e resistenza.",
-          "spd": "Riflette la rapidità con cui puoi spostarti a piedi.",
-          "emp": "Riflette la tua capacità di comprendere ed essere compreso dagli altri.",
-          "cra": "Riflette la tua abilità manuale e creatività tecnica.",
-          "will": "Riflette la tua forza mentale e determinazione.",
-          "luck": "Riflette la tua fortuna e il favore del destino."
+          "int": "Misura l'istruzione, la memoria e il ragionamento logico.",
+          "ref": "Misura la coordinazione occhio-mano e l'equilibrio.",
+          "dex": "Misura l'agilità, la velocità di movimento e la coordinazione.",
+          "body": "Misura la forza fisica bruta e la resistenza ai danni.",
+          "spd": "Misura quanto velocemente puoi correre.",
+          "emp": "Misura la tua capacità di relazionarti con gli altri.",
+          "cra": "Misura la tua abilità nel creare, riparare e manipolare oggetti.",
+          "will": "Misura la tua forza mentale e la determinazione.",
+          "luck": "Misura quanto il destino ti è favorevole."
         }
       },
       "DerStat": {
-        "HP": "Punti Vita",
+        "HP": "Salute",
         "Sta": "Stamina",
         "Rec": "Recupero",
         "Stun": "Stordimento",
         "Run": "Corsa",
-        "Leap": "Salto"
+        "Leap": "Salto",
+        "Enc": "Ingombro",
+        "Resolve": "Risoluzione",
+        "Focus": "Focus",
+        "Vigor": "Vigore",
+        "woundTreshold": "Soglia Ferita"
       }
+    },
+    "Alchemy": {
+      "Duration": "Dur.",
+      "Toxicity": "Toss.",
+      "Alchemical": "Alchemico",
+      "Potion": "Pozione",
+      "Decoction": "Decotto",
+      "Oil": "Olio"
+    },
+    "Armor": {
+      "ArmorEnhancement": "Potenziamento Armatura",
+      "Reliable": "Aff",
+      "EncumbranceValue": "Valore di Ingombro",
+      "Resistances": "Resistenze",
+      "Res": "Res",
+      "Type": "Tipo",
+      "StoppingPower": "Potere d'Arresto Attuale",
+      "MaxStoppingPower": "Potere d'Arresto Massimo",
+      "Short.ArmorEnhancement": "PA",
+      "Short.EncumbranceValue": "VIn",
+      "Short.StoppingPower": "PdA",
+      "Short.MaxStoppingPower": "PdA Max",
+      "Light": "Armatura Leggera",
+      "Medium": "Armatura Media",
+      "Heavy": "Armatura Pesante",
+      "Natural": "Armatura Naturale",
+      "LayerBonus": "Bonus Stratificazione",
+      "LocationHead": "Testa",
+      "LocationTorso": "Torso",
+      "LocationLeg": "Gamba",
+      "LocationArm": "Braccio",
+      "LocationFull": "Copertura Totale",
+      "LocationShield": "Scudo",
+      "LocationLeft": "S.",
+      "LocationRight": "D.",
+      "Location": "Locazione",
+      "tooMuch": "Troppe armature equipaggiate dello stesso tipo"
+    },
+    "Item": {
+      "Equipped": "Equipaggiato",
+      "NotEquipped": "Non Equipaggiato",
+      "sendToChat": "Invia in Chat",
+      "ClickableImage": "Ingrandibile",
+      "Short.Availability": "Disp.",
+      "Weight": "Peso",
+      "Cost": "Costo",
+      "Carried": "Trasportato",
+      "notCarried": "Non Trasportato",
+      "isConsumable": "È Consumabile",
+      "Effect": "Effetti",
+      "statusEffect": "Effetto di Stato",
+      "Quantity": "Quantità",
+      "SourceBook": "Manuale di Riferimento",
+      "Description": "Descrizione",
+      "Attribute": "Attributi",
+      "ROF": "RdF",
+      "openDescription": "Clicca per aprire la descrizione",
+      "equipEnhancement": "Equipaggia un potenziamento",
+      "Availability": "Disponibilità",
+      "AddEffect": "Aggiungi Effetto",
+      "AddComponent": "Aggiungi Componente",
+      "AddAssociatedItem": "Aggiungi Oggetto Associato",
+      "RemoveAssociatedItem": "Rimuovi Oggetto Associato",
+      "RemoveEffect": "Rimuovi Effetto",
+      "RemoveComponent": "Rimuovi Componente",
+      "CraftingMaterial": "Materiale da Artigianato",
+      "Hides&AnimalParts": "Pelli e Parti Animali",
+      "AlchemicalTreatments": "Trattamenti Alchemici",
+      "Ingots&Minerals": "Lingotti e Minerali",
+      "AvailabilityEverywhere": "O",
+      "AvailabilityCommon": "C",
+      "AvailabilityPoor": "S",
+      "AvailabilityRare": "R",
+      "AvailabilityWitcher": "W",
+      "Tiny": "M",
+      "Small": "P",
+      "Large": "G",
+      "CantHide": "NA",
+      "containerItems": "Contenuto",
+      "ConsumeProperties": {
+        "doesHeal": "Applies heal",
+        "heal": "Heals for",
+        "addsTempHp": "Add temporary health",
+        "temporaryHp": {
+          "value": "Amount",
+          "duration": "Duration"
+        },
+        "Chat": {
+          "healedFor": "healed for",
+          "tempHpAdded": "Added temporary health",
+          "consumeEffects": "applied these effects"
+        }
+      },
+      "DamageProperties": {
+        "damageIsAblation": "Treat damage as ablation (not functional)",
+        "stun": "Stun(x)",
+        "damageToAllLocations": "Damages all locations",
+        "bypassesWornArmor": "Bypasses worn armor",
+        "bypassesNaturalArmor": "Bypasses natural armor",
+        "variableDamage": "Variable Damage",
+        "silverTrait": "has Silver Trait",
+        "silverDamage": "Silver Damage Formula",
+        "isMeteorite": "Meteorite Weapon",
+        "isNonLethal": "Non-Lethal Weapon",
+        "defenseDifferenceMultiplier": "Damage is multiplied by difference of defense (not functional)",
+        "defenseMultiplierCap": "Multiplier is capped at (not functional)"
+      },
+      "DefenseProperties": {
+        "parrying": "Negates parry penalty",
+        "defendsAgainst": {
+          "label": "Defends against",
+          "hint": "against which attack type does this defends"
+        },
+        "modifier": "Modifier"
+      },
+      "RegionProperties": {
+        "createRegionFromTemplate": "Create Region from Template",
+        "tokenEnter": "Apply Macro on Enter",
+        "tokenTurnStart": "Apply Macro on Turn start",
+        "tokenPreMove": "Apply Macro before Token moves",
+        "tokenExit": "Apply Macro on Exit"
+      },
+      "ContextMenu": {
+        "edit": "Edit",
+        "Consume": "Consume",
+        "NotConsumable": "The item is not configured as consumable",
+        "RemoveEnhancement": "Remove Enhancement",
+        "Gift": "Gift",
+        "dismantle": "Dismantle",
+        "delete": "Delete"
+      },
+      "dismantle": {
+        "addedItems": "The following items where added to the actor",
+        "notFound": "These items are not linked and could not be automatically added."
+      },
+      "Settings": {
+        "settings": "Settings",
+        "general": "General Settings",
+        "damageProperties": "Damage Properties",
+        "defenseProperties": "Defense Properties",
+        "consumableProperties": "Consumable Properties",
+        "regionProperties": "Region Properties",
+        "attacks": {
+          "defendWith": {
+            "label": "Defend against with:",
+            "hint": "Configure how the target can defend against this"
+          }
+        },
+        "castProperties": {
+          "selfProperties": "Apply to caster",
+          "targetProperties": "Apply to target"
+        },
+        "activeEffects": "Active Effect"
+      }
+    },
+    "Damage": {
+      "RemoveSP": "Remove SP before applying location modifier.",
+      "damageType": "What type of damage",
+      "ChangeLocation": "Change The Location",
+      "CurrentLocation": "Current location",
+      "resistNonSilver": "Apply Resistance to non-silver",
+      "resistNonMeteorite": "Apply Resistance to non-meteorite",
+      "initial": "Initial Damage",
+      "totalSP": "Total Stopping Power",
+      "improvedArmorPiercing": "(After Improved Armor Piercing)",
+      "afterSPReduct": "Damage after sp reduction",
+      "armorPiercing": "(Ignored due to Armor Piercing)",
+      "afterLocationModifier": "Damage after location modifier",
+      "afterResistances": "Damage after resistances/vulnerabilities",
+      "totalApplied": "Total Damage Applied",
+      "ablated": "Armor was ablated for ",
+      "crushingForce": "Armor was double ablated for ",
+      "NotEnough": "Not enough damage to pierce the armor",
+      "ToMuchShield": "All damage was absorbed by shield or cover",
+      "isVulnerable": "Vulnerable to the attack",
+      "oilDmg": "Add Oil Damages (+5)",
+      "shield": "Shield",
+      "silverDmg": "Add Silver Damages",
+      "silver": "Silver",
+      "oil": "Oil",
+      "activeEffect": "Active Effect"
+    },
+    "Dialog": {
+      "NoComponents": "Componenti insufficienti per la creazione",
+      "CraftingDiagram": "Hai un diagramma in mano",
+      "RealCrafting": "Creazione reale",
+      "Crafting": "Creazione di un",
+      "CraftingTitle": "Esecuzione di un'azione di creazione",
+      "AlchemyTitle": "Esecuzione di un'azione alchemica",
+      "ButtonCraft": "Crea",
+      "CraftingAlchemycal": "Creazione di un alchemico",
+      "CraftingItem": "Creazione di un oggetto",
+      "Diagram": "Diagramma",
+      "after": "Dopo",
+      "DefenseExtra": "Difesa extra",
+      "DefenseWith": "Difesa con",
+      "DefenseTitle": "Esecuzione di un'azione di difesa",
+      "attack": "Umano Casuale",
+      "attackRandomHuman": "Umano Casuale",
+      "attackRandomMonster": "Mostro Casuale",
+      "attackHead": "Testa",
+      "attackTorso": "Torso",
+      "attackRArm": "Braccio D.",
+      "attackLArm": "Braccio S.",
+      "attackRLeg": "Gamba D.",
+      "attackLLeg": "Gamba S.",
+      "attackLimb": "Arto",
+      "attackTail": "Coda/Ala",
+      "attackOutsideLOS": "Fuori dal campo visivo del nemico",
+      "attackIsFastDraw": "Estrazione Rapida",
+      "attackIsProne": "Sei prono",
+      "attackIsPinned": "Bersaglio immobilizzato",
+      "attackIsActivelyDodging": "Bersaglio che schiva attivamente",
+      "attackIsMoving": "Bersaglio in movimento RIF > 10",
+      "attackTargetOutsideLOS": "Il bersaglio è fuori dal tuo campo visivo",
+      "attackIsAmbush": "Imboscata",
+      "attackIsRicochet": "Rimbalzo",
+      "attackIsBlinded": "Sei accecato",
+      "attackIsSilhouetted": "Sagoma visibile",
+      "attackIsAiming": "Turni di mira",
+      "sizeMedium": "Medio",
+      "sizeSmall": "Piccolo",
+      "sizeLarge": "Grande",
+      "sizeHuge": "Enorme",
+      "rangeNone": "Nessuna",
+      "rangePointBlank": "Bruciapelo (<2m)",
+      "rangeClose": "Ravvicinata (1/4 Gittata)",
+      "rangeMedium": "Media (1/2 Gittata)",
+      "rangeLong": "Lunga (Gittata Piena)",
+      "rangeExtreme": "Estrema (2x Gittata)",
+      "attackUse": "L'attacco userà",
+      "attackExtra": "Attacco extra",
+      "attackLocation": "Locazione Colpo",
+      "damageType": "Tipo di Danno",
+      "attackModifiers": "Modificatori Attacco",
+      "attackSize": "Modificatori Taglia Avversario",
+      "attackRange": "Modificatori Gittata",
+      "attackCustom": "Modificatori Attacco Personalizzati",
+      "attackStrike": "Tipo di Colpo",
+      "attackDamage": "danno",
+      "attackMeleeBonus": "Bonus Mischia",
+      "attackCustomDmg": "Modificatori Danno Personalizzati",
+      "attackWith": "Esecuzione di un Attacco con",
+      "chooseAmmunition": "Scegli Munizione",
+      "NoAmmunition": "Nessuna munizione disponibile",
+      "NoThrowable": "Nessun oggetto lanciabile disponibile",
+      "Ammunition": "Munizione",
+      "Throwable": "Lanciabile",
+      "ButtonRoll": "Tira",
+      "Enhancement": "Potenziamento",
+      "Apply": "Applica",
+      "Skill": "Esecuzione di un Test di Abilità",
+      "profession.skill": "Esecuzione di un'abilità professionale",
+      "staDialog": "Come vuoi recuperare stamina?",
+      "recoveryAction": "Azione di Recupero",
+      "fullRecovery": "Recupero Completo",
+      "fullStaInfo": "La tua stamina è già piena",
+      "defense": {
+        "custom": "Modificatori Difesa Personalizzati"
+      }
+    },
+    "DamageType": {
+      "name": "Tipo di Danno",
+      "bludgeoning": "Contundente",
+      "slashing": "Tagliente",
+      "piercing": "Perforante",
+      "elemental": "Elementale",
+      "electricity": "Elettricità",
+      "fire": "Fuoco",
+      "ice": "Ghiaccio"
+    },
+    "profession": {
+      "skillPath": {
+        "skill": {
+          "skillAttack": {
+            "isAttack": "Is Attack",
+            "usesWeapon": "Uses Weapon",
+            "damageFormulaOverrides": "Overrides Damage Formula"
+          },
+          "skillDefense": {
+            "isDefense": "Is Defense"
+          },
+          "skillUsage": {
+            "hasCustomEffect": "Has custom effect",
+            "temporaryHealth": {
+              "addTemporaryHealth": "Adds temporary health",
+              "difficultyCheck": {
+                "multiplier": "Stat Multiplier",
+                "stat": "Stat",
+                "maxRollOver": "Maximum points rolled over"
+              },
+              "temporaryHp": {
+                "value": "Value per point",
+                "duration": "Duration"
+              }
+            }
+          },
+          "thresholds": {
+            "hasThresholds": "Has thresholds",
+            "name": "Name",
+            "thresholdValue": "Threshold"
+          }
+        }
+      },
+      "professionSkills": {
+        "label": "Profession Skills",
+        "hint": "Add the skills that will be marked as profession skills"
+      },
+      "error": {
+        "noTarget": "This skill needs a target"
+      }
+    },
+    "Weapon": {
+      "Type": "Tipo",
+      "Short.WeaponAccuracy": "PA",
+      "Short.Damage": "DAN",
+      "Short.Reliability": "Aff.",
+      "Short.MaxReliability": "Aff. Max",
+      "Hands": {
+        "title": "Mani",
+        "none": "Nessuna",
+        "left": "Sinistra",
+        "right": "Destra",
+        "both": "Entrambe"
+      },
+      "Short.Concealment": "Occult.",
+      "Short.Enhancements": "POT",
+      "Range": "Gittata",
+      "ElderFolk": "Pop.Ant.",
+      "Short.RateOfFire": "RdF",
+      "WeaponAccuracy": "Precisione Arma",
+      "Enhancements": "Potenziamenti",
+      "Reliability": "Affidabilità Attuale",
+      "MaxReliability": "Affidabilità Massima",
+      "RateOfFire": "Rateo di Fuoco",
+      "Damage": "Danno",
+      "Concealment": "Occultabilità",
+      "AttackSkill": "Abilità di Attacco",
+      "MeleeBonus": "Bonus Mischia",
+      "rangedMeleeBonus": "Bonus Mischia a Distanza",
+      "rangedMeleeBonusHint": "Alcune armi a distanza applicano anche il bonus mischia",
+      "isAmmunition": "È una munizione",
+      "Ammunition": "Munizione",
+      "isThrowable": "È arma da lancio",
+      "Broken": "La tua arma è ora rotta",
+      "onlyDmg": "Tira solo i Danni",
+      "useAmmo": "Usa Munizioni",
+      "armorPiercing": "Perforante",
+      "improvedArmorPiercing": "Perforante Migliorato",
+      "ablating": "Ablativo",
+      "crushingForce": "Forza Devastante",
+      "error": {
+        "noAttackSkill": "Nessuna abilità di attacco configurata"
+      },
+      "attacks": {
+        "normal": "Colpo Normale",
+        "fast": "Colpo Rapido",
+        "strong": "Colpo Forte",
+        "joint": "Colpo Combinato",
+        "half": "Danno Dimezzato"
+      }
+    },
+    "Location": {
+      "Random": "Casuale",
+      "All": "non specificato",
+      "Left": "Sinistra",
+      "Right": "Destra",
+      "Head": "Testa",
+      "Torso": "Torso",
+      "rightArm": "Braccio D.",
+      "leftArm": "Braccio S.",
+      "rightLeg": "Gamba D.",
+      "leftLeg": "Gamba S."
+    },
+    "Component": {
+      "Rarity": "Rarity",
+      "Location": "Location",
+      "Quantity": "Quantity",
+      "Forage": "Forage DC"
+    },
+    "criticalWound": {
+      "followUp": "Item that will replace this after treatment",
+      "followUpHint": "leave empty to only remove critical wound",
+      "header": "Crit Wounds",
+      "healingTime.label": "Days Until Healed",
+      "criticalLevel": {
+        "label": "Critical Level",
+        "Simple": "Simple",
+        "Complex": "Complex",
+        "Difficult": "Difficult",
+        "Deadly": "Deadly",
+        "None": "None"
+      },
+      "treatment": {
+        "label": "Treatment",
+        "Stabilized": "Stabilized",
+        "Treated": "Treated"
+      },
+      "location": {
+        "label": "Location"
+      },
+      "lesserEffect": {
+        "label": "Lesser Effect",
+        "hint": "used by aimed criticals"
+      },
+      "treat": "Treat"
+    },
+    "Enhancement": {
+      "Stopping": "Stopping",
+      "Bludgeoning": "B",
+      "Slashing": "S",
+      "Piercing": "P",
+      "Elemental": "E",
+      "Armor": "Armor",
+      "Rune": "Rune",
+      "Glyph": "Glyph",
+      "ChooseTitle": "Choose an Enhancement",
+      "NoEnhancement": "No Enhancement available"
+    },
+    "Diagram": {
+      "alchemyDC": "CD Alchimia",
+      "craftingDC": "CD Creazione",
+      "craftingTime": "Tempo",
+      "components": "Componenti",
+      "otherComponents": "Altri Componenti",
+      "investment": "Investimento",
+      "Learned": "Appreso",
+      "notLearned": "Non Appreso",
+      "Formulae": "Formule",
+      "Ingredient": "Ingrediente",
+      "Weapon": "Arma",
+      "Armor": "Armatura",
+      "ArmorEnhancement": "Potenziamento Armatura",
+      "ElderFolkWeapon": "Arma Popolo Antico",
+      "ElderFolkArmor": "Armatura Popolo Antico",
+      "Ammunition": "Munizione",
+      "Bomb": "Bomba",
+      "Traps": "Trappole",
+      "Level": "Livello",
+      "Novice": "Novizio",
+      "Journeyman": "Apprendista",
+      "Master": "Maestro",
+      "GrandMaster": "Gran Maestro",
+      "Witcher": "Witcher"
+    },
+    "Valuable": {
+      "Conceal": "Occultare",
+      "Quality": "Qualità",
+      "Toolkit": "Kit di Attrezzi",
+      "General": "Generico",
+      "Containers": "Contenitori",
+      "Food&Drinks": "Cibo e Bevande",
+      "Clothings": "Abbigliamento",
+      "AlchemicalItem": "Oggetto Alchemico",
+      "Service": "Servizio",
+      "Loging": "Alloggio",
+      "MountAccessories": "Accessori Cavalcatura",
+      "QuestItem": "Oggetto Missione"
+    },
+    "StInt": "Intelligenza",
+    "StRef": "Riflessi",
+    "StDex": "Destrezza",
+    "StBody": "Fisico",
+    "StEmp": "Empatia",
+    "StCra": "Tecnica",
+    "StWill": "Volontà",
+    "StLuck": "Fortuna",
+    "StSpd": "Velocità",
+    "StVigor": "Vigor",
+    "StReputation": "Rep",
+    "CritWound": {
+      "Header": "Crit Wounds",
+      "HealingTime.Label": "Days Until Healed",
+      "Simple": "Simple",
+      "Complex": "Complex",
+      "Difficult": "Difficult",
+      "Deadly": "Deadly",
+      "None": "None",
+      "Stabilized": "Stabilized",
+      "Treated": "Treated",
+      "Name": {
+        "SimpleCrackedJaw": "Cracked Jaw",
+        "SimpleDisfiguringScar": "Disfiguring Scar",
+        "SimpleCrackedRibs": "Cracked Ribs",
+        "SimpleForeignObject": "Foreign Object",
+        "SimpleSprainedArm": "Sprained Arm",
+        "SimpleSprainedLeg": "Sprained Leg",
+        "ComplexMinorHeadWound": "Minor Head Wound",
+        "ComplexLostTeeth": "Lost Teeth",
+        "ComplexRupturedSpleen": "Ruptured Spleen",
+        "ComplexBrokenRibs": "Broken Ribs",
+        "ComplexFracturedArm": "Fractured Arm",
+        "ComplexFracturedLeg": "Fractured Leg",
+        "DifficultSkullFracture": "Skull Fracture",
+        "DifficultConcussion": "Concussion",
+        "DifficultTornStomach": "Torn Stomach",
+        "DifficultSuckingChestWound": "Sucking Chest Wound",
+        "DifficultCompoundArmFracture": "Compound Arm Fracture",
+        "DifficultCompoundLegFracture": "Compound Leg Fracture",
+        "DeadlyDecapitated": "Decapitated",
+        "DeadlyDamagedEye": "Damaged Eye",
+        "DeadlyHeartDamage": "Heart Damage",
+        "DeadlySepticShock": "Septic Shock",
+        "DeadlyDismemberedArm": "Dismembered Arm",
+        "DeadlyDismemberedLeg": "Dismembered Leg"
+      },
+      "SimpleCrackedJaw": "The blow cracked your jaw, making it hard to speak clearly.",
+      "SimpleDisfiguringScar": "The blow mangled your face in some way. You are grotesque and difficult to look at.",
+      "SimpleCrackedRibs": "The blow cracked your ribs, making it painful to breathe and exert strength.",
+      "SimpleForeignObject": "The blow lodged a piece of clothing or armor in your wound, causing an infection.",
+      "SimpleSprainedArm": "The blow sprained your arm, making it difficult to manoeuvre.",
+      "SimpleSprainedLeg": "The blow sprained your leg, making it difficult to walk and manoeuvre.",
+      "ComplexMinorHeadWound": "The blow rattled your brain and caused some internal bleeding. It's hard to think straight.",
+      "ComplexLostTeeth": "The blow knocked out some teeth. Roll [[1d10]] to see how many teeth are lost.",
+      "ComplexRupturedSpleen": "A tear in your spleen begins bleeding profusely, making you woozy.",
+      "ComplexBrokenRibs": "The blow breaks your ribs, causing immense pain when you bend and strain.",
+      "ComplexFracturedArm": "The blow fractures your arm.",
+      "ComplexFracturedLeg": "The blow fractures your leg.",
+      "DifficultSkullFracture": "The blow fractures a part of your skull, weakening your head and causing bleeding.",
+      "DifficultConcussion": "The blow caused a minor concussion.",
+      "DifficultTornStomach": "The blow rips through your stomach, pouring its contents into your gut.",
+      "DifficultSuckingChestWound": "The wound tears your lung, which fills your chest with air, crushing organs.",
+      "DifficultCompoundArmFracture": "The blow crushes your arm. Bone sticks out of the skin.",
+      "DifficultCompoundLegFracture": "The blow snaps your leg, rendering it useless.",
+      "DeadlyDecapitated": "The blow either snaps your neck or separates your head from your shoulders.",
+      "DeadlyDamagedEye": "The blow cuts into or indents your eyeball.",
+      "DeadlyHeartDamage": "The blow damages your heart.",
+      "DeadlySepticShock": "The blow damages your intestines, letting waste enter your blood stream.",
+      "DeadlyDismemberedArm": "The blow renders your arm from your body or damages it beyond repair.",
+      "DeadlyDismemberedLeg": "The blow tears your leg from your body or damages it beyond repair.",
+      "Mod": {
+        "SimpleCrackedJaw.None": "You are at a -2 to Magical Skills & Verbal Combat (Charisma, Persuasion, Seduction, Leadership, Deceit, Social Etiquette and Intimidation).",
+        "SimpleCrackedJaw.Stabilized": "You are at a -1 to Magical Skills & Verbal Combat.",
+        "SimpleCrackedJaw.Treated": "You are at a -1 to Magical Skills.",
+        "SimpleDisfiguringScar.None": "You take a -3 to empathic Verbal Combat (Charisma, Persuasion, Deceit, Social Etiquette, and Leadership).",
+        "SimpleDisfiguringScar.Stabilized": "You take a -1 to emphatic Verbal Combat.",
+        "SimpleDisfiguringScar.Treated": "You take a -1 to Seduction.",
+        "SimpleCrackedRibs.None": "You take a -2 to BODY. This does not affect health points.",
+        "SimpleCrackedRibs.Stabilized": "You are at a -1 to BODY.",
+        "SimpleCrackedRibs.Treated": "You take a -10 to Encumbrance.",
+        "SimpleForeignObject.None": "Your Recovery and Critical Healing are affected.",
+        "SimpleForeignObject.Stabilized": "Your Recovery & Critical Healing are halved.",
+        "SimpleForeignObject.Treated": "You take a -2 to Recovery and a -1 to your Critical Healing.",
+        "SimpleSprainedArm.None": "You take a -2 to actions that use the arm.",
+        "SimpleSprainedArm.Stabilized": "You are at a -1 to actions with that arm.",
+        "SimpleSprainedArm.Treated": "You take a -1 to Physique.",
+        "SimpleSprainedLeg.None": "You take a -2 to SPD, Dodge/Escape, and Athletics.",
+        "SimpleSprainedLeg.Stabilized": "You take a -1 to SPD, Dodge/Escape, and Athletics.",
+        "SimpleSprainedLeg.Treated": "You take a -1 to SPD.",
+        "ComplexMinorHeadWound.None": "You take a -1 to INT, WILL and STUN.",
+        "ComplexMinorHeadWound.Stabilized": "You are at a -1 to INT and WILL.",
+        "ComplexMinorHeadWound.Treated": "You are at a -1 to WILL.",
+        "ComplexLostTeeth.None": "You take a -3 to magical skills and Verbal Combat.",
+        "ComplexLostTeeth.Stabilized": "You take a -2 to magical skills and Verbal Combat.",
+        "ComplexLostTeeth.Treated": "You take a -1 to magical skills and Verbal Combat.",
+        "ComplexRupturedSpleen.None": "Make a Stun save every 5 rounds. This wound induced bleeding.",
+        "ComplexRupturedSpleen.Stabilized": "You must make a Stun save every 10 Rounds.",
+        "ComplexRupturedSpleen.Treated": "You take a -2 to Stun.",
+        "ComplexBrokenRibs.None": "Take a -2 to BODY and a -1 to REF and DEX.",
+        "ComplexBrokenRibs.Stabilized": "You are at a -1 to BODY and REF.",
+        "ComplexBrokenRibs.Treated": "You are at a -1 to BODY.",
+        "ComplexFracturedArm.None": "You take a -3 to actions with that arm.",
+        "ComplexFracturedArm.Stabilized": "You take a -2 to actions with that arm.",
+        "ComplexFracturedArm.Treated": "You take a -1 to actions with that arm.",
+        "ComplexFracturedLeg.None": "You take a -3 to SPD, Dodge/Escape, and Athletics.",
+        "ComplexFracturedLeg.Stabilized": "You take a -2 to SPD, Dodge/Escape, and Athletics.",
+        "ComplexFracturedLeg.Treated": "-1 to SPD, Dodge/Escape, and Athletics.",
+        "DifficultSkullFracture.None": "You take a -1 to INT and DEX, and take quadruple damage from head wounds.",
+        "DifficultSkullFracture.Stabilized": "Take a -1 to INT and DEX and quadruple damage from head wounds.",
+        "DifficultSkullFracture.Treated": "You take quadruple damage from head wounds.",
+        "DifficultConcussion.None": "Make a Stun save every 1d6 rounds and take a -2 to INT, REF, and DEX.",
+        "DifficultConcussion.Stabilized": "You take a -1 to INT, REF, and DEX.",
+        "DifficultConcussion.Treated": "You take a -1 to INT and DEX.",
+        "DifficultTornStomach.None": "You take a -2 to all actions and 4 points of acid damage per round.",
+        "DifficultTornStomach.Stabilized": "You take a -2 to all actions.",
+        "DifficultTornStomach.Treated": "You take a -1 to all actions.",
+        "DifficultSuckingChestWound.None": "You take a -3 to BODY and SPD. You also start suffocating.",
+        "DifficultSuckingChestWound.Stabilized": "You take a -2 to BODY and SPD.",
+        "DifficultSuckingChestWound.Treated": "You take a -1 to BODY and SPD.",
+        "DifficultCompoundArmFracture.None": "The arm is rendered useless and you start bleeding.",
+        "DifficultCompoundArmFracture.Stabilized": "That arm is useless.",
+        "DifficultCompoundArmFracture.Treated": "That arm must remain in a sling, but it can hold things.",
+        "DifficultCompoundLegFracture.None": "Quarter SPD, Dodge/Escape, and Athletics. This induces bleeding.",
+        "DifficultCompoundLegFracture.Stabilized": "Halves SPD, Dodge/Escape, and Athletics.",
+        "DifficultCompoundLegFracture.Treated": "-2 to SPD, Dodge/Escape, and Athletics.",
+        "DeadlyDecapitated.None": "You die immediately.",
+        "DeadlyDecapitated.Stabilized": "This wound cannot be stabilized.",
+        "DeadlyDecapitated.Treated": "This wound cannot be treated.",
+        "DeadlyDamagedEye.None": "You take a -5 to sight-based Awareness and -4 to DEX. This wounds begins bleeding.",
+        "DeadlyDamagedEye.Stabilized": "You take a -3 to sight-based Awareness and -2 to DEX.",
+        "DeadlyDamagedEye.Treated": "Permanent -1 to sight-based Awareness and DEX.",
+        "DeadlyHeartDamage.None": "Make an immediate Death save. If you survive, the wound is bleeding and you must quarter your Stamina, SPD, and BODY.",
+        "DeadlyHeartDamage.Stabilized": "You halve your Stamina, SPD, and BODY.",
+        "DeadlyHeartDamage.Treated": "You take a +2 damage from bleeding permanently.",
+        "DeadlySepticShock.None": "Quarter your Stamina, take a -3 INT, WILL, REF, and DEX. You are poisoned.",
+        "DeadlySepticShock.Stabilized": "Your Stamina is halved and you take a -1 to INT, WILL, REF, and DEX.",
+        "DeadlySepticShock.Treated": "You take a -5 to Stamina permanently.",
+        "DeadlyDismemberedArm.None": "The arm cannot be used and you start bleeding.",
+        "DeadlyDismemberedArm.Stabilized": "That arm is useless.",
+        "DeadlyDismemberedArm.Treated": "That arm can be replaced with a prosthetic.",
+        "DeadlyDismemberedLeg.None": "Quarter your SPD, Dodge/Escape, and Athletics. This wound begins bleeding.",
+        "DeadlyDismemberedLeg.Stabilized": "You quarter your SPD, Dodge/Escape, and Athletics.",
+        "DeadlyDismemberedLeg.Treated": "The leg can be replaced with a prosthetic."
+      }
+    },
+    "Homeland": "Patria",
+    "Homelands": {
+      "aedirn": "Aedirn",
+      "angren": "Angren",
+      "cidaris": "Cidaris",
+      "cintra": "Cintra",
+      "dolblathanna": "Dol Blathanna",
+      "ebbing": "Ebbing",
+      "etolia": "Etolia",
+      "gemmeria": "Gemmeria",
+      "gheso": "Gheso",
+      "kaedwen": "Kaedwen",
+      "kovir": "Kovir",
+      "lyria": "Lyria",
+      "maecht": "Maecht",
+      "magturga": "Mag Turga",
+      "mahakam": "Mahakam",
+      "mettina": "Mettina",
+      "nazair": "Nazair",
+      "nilfgaard": "Nilfgaard",
+      "poviss": "Poviss",
+      "redania": "Redania",
+      "rivia": "Rivia",
+      "skellige": "Skellige",
+      "temeria": "Temeria",
+      "verden": "Verden",
+      "vicovaro": "Vicovaro"
+    },
+    "MinValue": "Valore Minimo",
+    "MaxValue": "Valore Massimo",
+    "Value": "Valore",
+    "ValuedPerson": "Persona Cara",
+    "Affectations": "Affettazioni",
+    "Hair": "Acconciatura",
+    "Personality": "Personalità",
+    "Clothing": "Abbigliamento",
+    "FeelingsOnPeople": "Sentimenti verso la Gente",
+    "LifeEvents": "Eventi della Vita",
+    "Decade": "Decennio",
+    "Event": "Evento",
+    "DeathSave": "Tiro Stordimento/Morte",
+    "BeforeCrit": "Prima del Critico",
+    "Crit": "Critico",
+    "Fumble": "Maldestro",
+    "CritTotal": "Per un totale di",
+    "table": {
+      "Quantity": "Qty",
+      "Range": "Range",
+      "Damage": "Damage",
+      "Reliability": "Rel.",
+      "Name": "Name",
+      "StoppingPower": "Stp",
+      "ResBludgeon": "B",
+      "ResSlashing": "S",
+      "ResPiercing": "P",
+      "Equipped": "Eq"
+    },
+    "Monster": {
+      "HeadArmor": "Armor Head",
+      "UpperArmor": "Armor Upper",
+      "LowerArmor": "Armor Lower",
+      "WingTailArmor": "Ar. Wing/Tail",
+      "regeneration": "Regeneration",
+      "CustomHP/STA": "Custom HP/STA",
+      "Easy": "Easy",
+      "Normal": "Normal",
+      "Hard": "Hard",
+      "Exceptional": "Exceptional",
+      "Simple": "Simple",
+      "Complex": "Complex",
+      "Difficult": "Difficult",
+      "Difficulty": "Difficulty",
+      "Complexity": "Complexity",
+      "Bounty": "Bounty",
+      "Height": "Height",
+      "Weight": "Weight",
+      "Environment": "Environment",
+      "Intelligence": "Intelligence",
+      "Organization": "Organization",
+      "CommonerSuperstition": "Commoner Superstition (Education DC): ",
+      "AcademicKnowledge": "Academic Knowledge (Education DC): ",
+      "WitcherKnowledge": "Witcher Knowledge (Monster Lore DC): ",
+      "dontAddAttr": "Do not add attributes to skill value",
+      "addMeleeBonus": "Add Melee Bonus",
+      "hasTailWing": "Monster has tail or wing",
+      "SkillTab": "Skills",
+      "InventoryTab": "Att/Loot",
+      "DetailsTab": "Details",
+      "SpellsTab": "Spells",
+      "SkillList": "Display specific skills",
+      "Type": {
+        "Lable": "Type",
+        "Humanoid": "Humanoid",
+        "Necrophage": "Necrophage",
+        "Specter": "Specter",
+        "Beast": "Beast",
+        "CursedOne": "CursedOne",
+        "Hybrid": "Hybrid",
+        "Insectoid": "Insectoid",
+        "Elementa": "Elementa",
+        "Relict": "Relict",
+        "Ogroid": "Ogroid",
+        "Draconid": "Draconid",
+        "Vampire": "Vampire"
+      },
+      "Resistances": "Resistances",
+      "resistantNonSilver": "Resistant to non-silver damage",
+      "resistantNonMeteorite": "Resistant to non-meteorite damage",
+      "Immunities": "Immunities",
+      "ImmunitiesStatusEffects": "Immunities to Status Effects",
+      "Susceptibilities": "Susceptibilities",
+      "Senses": "Senses",
+      "exportLoot": "Export To loot",
+      "exportLootGenerated": "Item was successfully generated with help of roll table. It was added to the Loot sheet",
+      "exportLootInvalidItemError": "Item doesn't exists in the compendium. Use standard loot generator instead",
+      "exportLootToManyRollTablesError": "Too many roll tables for the item found in the compendium. Use standard loot generator instead"
+    },
+    "Mount": {
+      "Dex": "Dex + Atl",
+      "Dexterity": "Dex",
+      "ControlMod": "Control Mod",
+      "Control": "Control",
+      "Speed": "Speed",
+      "Hp": "HP"
+    },
+    "Mutagen": {
+      "MutSource": "Mutagen Source",
+      "AlchemyDC": "Alchemy DC",
+      "MinorMutation": "Minor Mutation",
+      "Type": "Type",
+      "Source": "Source",
+      "Red": "Red",
+      "Green": "Green",
+      "Blue": "Blue"
+    },
+    "Loot": {
+      "Name": "Loot",
+      "TotalWeight": "Total Weight",
+      "MaxWeight": "Max Weight",
+      "TotalCost": "Total Cost",
+      "Weapons": "Weapons",
+      "Armors": "Armors",
+      "Valuables": "Valuables",
+      "Diagrams": "Diagrams",
+      "Components": "Components",
+      "Runes": "Runes",
+      "Glyphs": "Glyphs",
+      "NotEnough": "Not Enough Coins",
+      "InitialCost": "Initial Cost",
+      "HowMany": "How Many Items",
+      "ItemCost": "Cost by item",
+      "Percent": "Apply Percent",
+      "MultipleExport": "Export How Many Times?",
+      "BuyTitle": "Buy/Sell Items"
+    },
+    "Inventory": {
+      "Armor": "Armature Equipaggiate",
+      "Weapons": "Armi Equipaggiate",
+      "Valuables": "Oggetti di Valore",
+      "Mounts": "Cavalcature",
+      "Crafting": "Artigianato",
+      "CraftingMaterials": "Materiali da Artigianato",
+      "HidesAndAnimalParts": "Pelli e Parti Animali",
+      "IngotsAndMinerals": "Lingotti e Minerali",
+      "Enhancements": "Potenziamenti",
+      "Alchemy": "Alchimia",
+      "AlchemicalItems": "Oggetti Alchemici",
+      "AlchemicalTreatments": "Trattamenti Alchemici",
+      "WitcherPotionsAndDecoctions": "Pozioni e Decotti Witcher",
+      "Oils": "Oli per Lama",
+      "Mutagens": "Mutageni",
+      "Substances": "Sostanze",
+      "Components": "Componenti",
+      "Diagrams": "Diagrammi e Formule",
+      "RunesAndGlyphs": "Rune e Glifi",
+      "Runes": "Rune",
+      "Glyphs": "Glifi",
+      "AlchemicalItemDiagrams": "Formule Oggetti Alchemici",
+      "PotionDiagrams": "Formule Pozioni Witcher",
+      "DecoctionDiagrams": "Formule Decotti Witcher",
+      "OilDiagrams": "Formule Oli",
+      "IngredientDiagrams": "Diagrammi Componenti",
+      "WeaponDiagrams": "Diagrammi Armi",
+      "ArmorDiagrams": "Diagrammi Armature",
+      "enhancementDiagrams": "Diagrammi Potenziamenti",
+      "ElderfolkWeaponDiagrams": "Diagrammi Armi Pop. Antico",
+      "ElderfolkArmorDiagrams": "Diagrammi Armature Pop. Antico",
+      "AmmunitionDiagrams": "Diagrammi Munizioni",
+      "BombDiagrams": "Diagrammi Bombe",
+      "TrapDiagrams": "Diagrammi Trappole",
+      "Substance": "Sostanza",
+      "Vitriol": "Vetriolo",
+      "Rebis": "Rebis",
+      "Aether": "Etere",
+      "Quebrith": "Quebrith",
+      "Hydragenum": "Idrogenum",
+      "Vermilion": "Vermiglio",
+      "Sol": "Sol",
+      "Caelum": "Caelum",
+      "Fulgur": "Fulgur"
+    },
+    "Button": {
+      "Cancel": "Annulla",
+      "Confirm": "Conferma",
+      "Continue": "Continua",
+      "All": "Tutti"
+    },
+    "Spell": {
+      "type": "Tipo",
+      "Spells": "Incantesimi",
+      "Ritual": {
+        "name": "Rituale",
+        "components": "Componenti",
+        "alternateComponents": "Componenti Alternati"
+      },
+      "Invocations": "Invocazioni",
+      "Witcher": "Segni del Witcher",
+      "Rituals": "Rituali",
+      "Hexes": "Maledizioni",
+      "MagicalGift": "Dono Magico",
+      "Danger": "Pericolo",
+      "DangerLow": "Basso",
+      "DangerMedium": "Medio",
+      "DangerHigh": "Alto",
+      "Novice": "Novizio",
+      "Journeyman": "Apprendista",
+      "Master": "Maestro",
+      "Mixed": "Elementi Misti",
+      "Earth": "Terra",
+      "Air": "Aria",
+      "Fire": "Fuoco",
+      "Water": "Acqua",
+      "Druid": "Druido",
+      "Preacher": "Predicatore",
+      "Archpriest": "Arciprete",
+      "Basic": "Base",
+      "Alt": "Alternativo",
+      "Duration": "Durata",
+      "Range": "Raggio",
+      "Defence": "Difesa",
+      "PrepTime": "Tempo Prep.",
+      "DC": "Prova di Difficoltà",
+      "Requirements": "Requisiti per Annullare",
+      "Effect": "Effetto",
+      "SideEffect": "Effetto Collaterale",
+      "Signs": "Segni",
+      "Sign": "Segno",
+      "Element": "Elemento",
+      "MinorGift": "Dono Minore",
+      "MajorGift": "Dono Maggiore",
+      "StaCost": "Costo Stamina",
+      "Variable": "Stamina Variabile",
+      "variableEffect": "Effetto Stamina Variabile",
+      "staminaDialog": "Quanta stamina vuoi usare?",
+      "notEnoughSta": "Stamina insufficiente.",
+      "MagicCost": "Costi Magici",
+      "ChooseFocus": "Usa un focus",
+      "ChooseExpandedFocus": "Usa un focus di Magia Espansa",
+      "CreateTemplate": "Crea un Modello",
+      "meters": "m",
+      "Size": "Dimensione",
+      "Type": "Tipo",
+      "VisualEffectDuration": "Durata Visiva (sec)",
+      "Square": "Quadrato",
+      "Circle": "Cerchio",
+      "Cone": "Cono",
+      "Ray": "Raggio",
+      "Damage": "Causa Danni",
+      "createsShield": "Crea Scudo",
+      "doesHeal": "Applica Cura",
+      "Short": {
+        "StaCost": "Costo STA",
+        "Variable": "V.STA",
+        "Shield": "Scudo",
+        "Heal": "Cura"
+      }
+    },
+    "Chat": {
+      "SaveText": "Per riuscire devi tirare sotto",
+      "FullDmg": "Danno Pieno",
+      "Success": "Successo",
+      "Fail": "Fallimento",
+      "Resting": "ha passato il giorno riposando e recupera:",
+      "Active": "ha passato il giorno in attività e recupera:",
+      "WoundHealing": "sulla Soglia Guarigione Critica",
+      "fullStamina": "Stamina Piena"
+    },
+    "Currency": {
+      "bizant": "Bisante",
+      "ducat": "Ducato",
+      "lintar": "Lintar",
+      "floren": "Florino",
+      "crown": "Corona",
+      "oren": "Oren",
+      "falsecoin": "Moneta Falsa"
+    },
+    "currencyConverter": {
+      "title": "Currency Converter",
+      "open": "Open Currency Converter",
+      "amount": "Amount",
+      "from": "From",
+      "to": "To",
+      "convert": "Convert",
+      "fee": "Fee (%)",
+      "result": "Result",
+      "errors": {
+        "insufficient": "Not enough {currency}"
+      }
+    },
+    "Settings": {
+      "criticalWoundsPack": "Critical Wounds Compendium",
+      "criticalWoundsPackDetails": "Compendium queried for critical wounds options",
+      "Adrenaline": "Usa la Regola Opzionale dell'Adrenalina",
+      "AdrenalineDetails": "L'adrenalina è la forza di volontà per andare avanti e combattere più duramente",
+      "WoundsAffectSkillBase": "Le ferite influenzano la base dell'abilità",
+      "WoundsAffectSkillBaseDetails": "Le ferite influenzano la base dell'abilità invece del solo valore. Rende le ferite più impattanti.",
+      "useVerbalCombatRule": "Usa la Regola del Combattimento Verbale",
+      "useVerbalCombatRuleHint": "Permette ai giocatori di vedere il valore di Risolutezza e tirare per azioni di combattimento verbale",
+      "silverTrait": "Use Silver Trait rule",
+      "silverTraitHint": "Instead of silver dice, silver is a damage property",
+      "displayRollDetails": "Mostra i dettagli dei tiri",
+      "displayRollDetailsHint": "Mostra i dettagli dei tiri di dado: 1d10+2[stat]+4[abilità]-3[parata]",
+      "Custom": "Personalizzato",
+      "displayReputation": "Mostra la Reputazione ai giocatori",
+      "displayReputationHint": "Permette ai giocatori di vedere e modificare la propria reputazione",
+      "clickableImageItemTypes": "Show 'Zoomable' checkbox on item sheet",
+      "clickableImageItemTypesHint": "A comma-separated list of item types, where a checkbox can be set. If it is checked, the players can click on the item image from their inventory to see a larger version of it. Possible types are 'valuable', 'weapon', 'armor', 'alchemical', 'diagrams', 'component'.",
+      "clickableImageCheckboxForGMOnly": "Show 'Zoomable' checkbox to GM only",
+      "specialFont": "Usa il font speciale witcher"
+    },
+    "background.other": "Altro",
+    "Resources.modifiers": "Modificatori Risorse",
+    "Notes": "Note",
+    "skills": {
+      "name": "Abilità",
+      "profession": "Prof",
+      "pickup": "Pick",
+      "learn": "App.",
+      "skillGroups": {
+        "name": "Gruppi di Abilità",
+        "allSkills": "Tutte le Abilità",
+        "meleeSkills": "Abilità in Mischia",
+        "rangedSkills": "Abilità a Distanza",
+        "magicSkills": "Abilità Magiche",
+        "verbalCombatSkills": "Abilità Combattimento Verbale",
+        "empatheticVerbalCombatSkills": "Abilità Comb. Verbale Empatico"
+      },
+      "awareness": {
+        "label": "Percezione"
+      },
+      "business": {
+        "label": "Mercanteggiare"
+      },
+      "deduction": {
+        "label": "Deduzione"
+      },
+      "education": {
+        "label": "Istruzione"
+      },
+      "commonSpeech": {
+        "label": "Lingua Comune (2)",
+        "rollLabel": "Lingua Comune"
+      },
+      "elderSpeech": {
+        "label": "Linguaggio Antico (2)",
+        "rollLabel": "Linguaggio Antico"
+      },
+      "dwarvenSpeech": {
+        "label": "Lingua Nanica (2)",
+        "rollLabel": "Lingua Nanica"
+      },
+      "monsterLore": {
+        "label": "Conoscenza Mostri (2)",
+        "rollLabel": "Conoscenza Mostri"
+      },
+      "socialEtiquette": {
+        "label": "Etichetta Sociale"
+      },
+      "streetwise": {
+        "label": "Vita di Strada"
+      },
+      "tactics": {
+        "label": "Tattica (2)",
+        "rollLabel": "Tattica"
+      },
+      "teaching": {
+        "label": "Insegnamento"
+      },
+      "wildernessSurvival": {
+        "label": "Sopravvivenza"
+      },
+      "brawling": {
+        "label": "Rissa"
+      },
+      "dodgeEscape": {
+        "label": "Schivata/Fuga"
+      },
+      "melee": {
+        "label": "Mischia"
+      },
+      "riding": {
+        "label": "Cavalcare"
+      },
+      "sailing": {
+        "label": "Navigazione"
+      },
+      "smallblades": {
+        "label": "Lame Corte"
+      },
+      "staffspear": {
+        "label": "Bastone/Lancia"
+      },
+      "swordsmanship": {
+        "label": "Scherma"
+      },
+      "archery": {
+        "label": "Arco"
+      },
+      "athletics": {
+        "label": "Atletica"
+      },
+      "crossbow": {
+        "label": "Balestra"
+      },
+      "sleightOfHand": {
+        "label": "Giochi di Mano"
+      },
+      "stealth": {
+        "label": "Furtività"
+      },
+      "physique": {
+        "label": "Prestanza Fisica"
+      },
+      "endurance": {
+        "label": "Resistenza"
+      },
+      "charisma": {
+        "label": "Carisma"
+      },
+      "deceit": {
+        "label": "Inganno"
+      },
+      "fineArts": {
+        "label": "Belle Arti"
+      },
+      "gambling": {
+        "label": "Gioco d'Azzardo"
+      },
+      "groomingAndStyle": {
+        "label": "Cura e Stile"
+      },
+      "humanPerception": {
+        "label": "Percezione Umana"
+      },
+      "leadership": {
+        "label": "Comando"
+      },
+      "persuasion": {
+        "label": "Persuasione"
+      },
+      "performance": {
+        "label": "Esibizione"
+      },
+      "seduction": {
+        "label": "Seduzione"
+      },
+      "alchemy": {
+        "label": "Alchimia (2)",
+        "rollLabel": "Alchimia"
+      },
+      "crafting": {
+        "label": "Artigianato (2)",
+        "rollLabel": "Artigianato"
+      },
+      "disguise": {
+        "label": "Travestimento"
+      },
+      "firstAid": {
+        "label": "Primo Soccorso"
+      },
+      "forgery": {
+        "label": "Falsificazione"
+      },
+      "pickLock": {
+        "label": "Scassinare"
+      },
+      "trapCrafting": {
+        "label": "Creare Trappole (2)",
+        "rollLabel": "Creare Trappole"
+      },
+      "courage": {
+        "label": "Coraggio"
+      },
+      "hexWeaving": {
+        "label": "Tessere Maledizioni (2)",
+        "rollLabel": "Tessere Maledizioni"
+      },
+      "intimidation": {
+        "label": "Intimidazione"
+      },
+      "spellCasting": {
+        "label": "Lancio Incantesimi (2)",
+        "rollLabel": "Lancio Incantesimi"
+      },
+      "resistMagic": {
+        "label": "Resistere alla Magia (2)",
+        "rollLabel": "Resistere alla Magia"
+      },
+      "resistCoercion": {
+        "label": "Resistere alla Coercizione"
+      },
+      "ritualCrafting": {
+        "label": "Creazione Rituali (2)",
+        "rollLabel": "Creazione Rituali"
+      }
+    },
+    "Stats": {
+      "stats": {
+        "Name": "Stats"
+      },
+      "derivedStats": {
+        "Name": "Derived Stats"
+      }
+    },
+    "SocialStanding": "Posizione Sociale",
+    "Profession": "Professione",
+    "Reputation": "Reputazione",
+    "NoDamageSpecified": "Danno non specificato",
+    "Shield.Broken": "Il tuo scudo è ora rotto",
+    "Items.transferTitle": "Trasferimento Oggetti",
+    "Items.transferMany": "Quanti oggetti trasferire",
+    "Combat": {
+      "shieldApplied": "gained shield:",
+      "healed": "healed {target} for {heal}",
+      "healedFor": "healed for"
+    },
+    "Context": {
+      "applyDmg": "Apply Damage",
+      "applyNonLethal": "Apply Non-lethal Damage",
+      "Defense": "Defense",
+      "Blocked": "Blocked",
+      "SelectActor": "At least one actor must be selected",
+      "Result": "Result",
+      "unavailable": "N/A",
+      "applyCritDmg": "Apply Critical Wound Damage",
+      "applyBonusCritDmg": "Apply Critical Wound Bonus Damage",
+      "applyCritWound": "Apply Critical Wound",
+      "fumble": "Fumble"
+    },
+    "Heal": {
+      "button": "Cura",
+      "dialogTitle": "Cura dopo il Riposo",
+      "title": "Circostanze di Guarigione",
+      "resting": "Giorno di Riposo",
+      "sterilized": "Ricevuto Fluido Sterilizzante",
+      "healinghand": "Ricevuto Mani Guaritrici",
+      "healingTent": "Ricevuto Tenda Medica",
+      "resetTempHealth": "Reimposta salute temporanea",
+      "recovered": " si è ripreso da un giorno",
+      "restful": "riposante",
+      "active": "attivo",
+      "day": "giorno",
+      "totalRecover": "Recupero Totale:",
+      "criticalWounds": "Le ferite critiche guariranno 2 giorni prima"
+    },
+    "Apply.Mod": "Applica un modificatore",
+    "ReputationTitle": "Esecuzione di un tiro di reputazione",
+    "ReputationButton.Save": "Salvare",
+    "ReputationButton.FaceDown": "Confronto",
+    "ReputationSave.Title": "Salvare",
+    "ReputationFaceDown.Title": "Confronto di Reputazione",
+    "verbalCombat": {
+      "Title": "Combattimento Verbale",
+      "DialogTitle": "Esecuzione di un'azione di combattimento verbale",
+      "EmpatheticAttacks": "Attacchi Empatici",
+      "AntagonisticAttacks": "Attacchi Antagonistici",
+      "Defenses": "Difese",
+      "EmpatheticTools": "Strumenti Empatici",
+      "AntagonisticTools": "Strumenti Antagonistici",
+      "Seduce": "Seduce",
+      "SeduceEffect": "Defender is a little hot under the collar and takes a cumulative +2 damage from each Seduction for the combat.",
+      "Persuade": "Persuade",
+      "PersuadeEffect": "If you end a combat with a successful Persuasion check, you have convinced them to agree with you.",
+      "Appeal": "Appeal",
+      "AppealEffect": "The defender thinks you probably have the right idea and takes a cumulative +1 damage from empathetic attacks for each time you succeed at Appeal.",
+      "Befriend": "Befriend",
+      "BefriendEffect": "If you end a combat with a successful Befriend attack, you have made a friend of your opponent.",
+      "Deceive": "Deceive",
+      "DeceiveEffect": "If you end a combat with a successful Deceit check, you have convinced the defender of the lie.",
+      "Ridicule": "Ridicule",
+      "RidiculeEffect": "If you successfully Ridicule a person in public, you also lower their Reputation with those people by 2 for each successful Ridicule. This penalty lasts for one day.",
+      "Intimidate": "Intimidate",
+      "IntimidateEffect": "Anyone you intimidate is afraid of you and takes a cumulative +4 damage from Intimidation for the combat.",
+      "Ignore": "Ignore",
+      "Counterargue": "Counterargue",
+      "CounterargueDmg": "See Attack",
+      "CounterargueEffect": "Instead of taking a defensive action you can make an attack that negates the first attack. If you beat the opponent’s roll, their attack is negated and your’s does damage.",
+      "ChangeSubject": "Change Subject",
+      "Disengage": "Disengage",
+      "DisengageEffect": "Ends the argument",
+      "Romance": "Romance",
+      "RomanceEffect": "The Romanced party falls in love with the Romancer. This gives them a -3 against the Romancer in Verbal Combat, but only as long as the attacker continues to convince the defender they are in love and treats them well. If the romance ends poorly, the defender gets a permanent +3 against the attacker’s empathetic attacks.",
+      "Study": "Study",
+      "StudyEffect": "Studying allows you to look for or probe weaknesses in your opponent’s mental armor. Roll against their INTx3. If you succeed, you get +2 to Verbal Combat for one round.",
+      "ImplyPersuade": "Imply with Persuasion",
+      "ImplyDeceit": "Imply With Deceit",
+      "ImplyEffect": "Implying allows you to suggest something good or bad about your current argument. If you succeed, you lower your opponent’s defenses by -4. You can only use Imply once per combat",
+      "Bribe": "Bribe",
+      "BribeEffect": "For every 50 Crowns you offer, you gain +1 to your empathetic Verbal Combat rolls for the rest of the fight if you succeed on your Gambling roll.",
+      "None": "NONE"
+    },
+    "Effect": {
+      "Rolled": "Rolled",
+      "Applied": "Applied",
+      "Failed": "Failed",
+      "applySelf": "Apply this active effect on self when used",
+      "applyOnTarget": "Apply this active effect on target when used",
+      "applyOnHit": "Apply this active effect on hit when used",
+      "applyOnDamage": "Apply this active effect on damage when used",
+      "Error": {
+        "belongsToItem": "This effect belongs to an item"
+      },
+      "wizard": {
+        "lifepath": "Lifepath",
+        "other": "Other",
+        "resistances": "Resistances",
+        "flat": "Flat Bonus",
+        "multi": "Multiplication",
+        "applyAP": "Apply AP to Multi",
+        "Item": {
+          "damage": "Damage"
+        }
+      }
+    },
+    "activeEffect": {
+      "tab": "Effetto Attivo",
+      "source": "Fonte",
+      "toggle": "Attiva/Disattiva",
+      "temporary": "Temporaneo",
+      "passive": "Passivo",
+      "inactive": "Inattivo",
+      "temporaryItemImprovement": "Miglioramento Temporaneo Oggetto"
+    },
+    "character.socialStanding": "Posizione Sociale",
+    "socialStanding": {
+      "equal": "Uguale",
+      "tolerated": "Tollerato",
+      "hated": "Odiato",
+      "feared": "Temuto",
+      "hatedFeared": "Odiato e Temuto",
+      "toleratedFeared": "Tollerato e Temuto",
+      "north": "Il Nord",
+      "nilfgaard": "Nilfgaard",
+      "skellige": "Skellige",
+      "dolBlathanna": "Dol Blathanna",
+      "mahakam": "Mahakam"
+    },
+    "craft": {
+      "InsufficientComponents": "Not enough components to perform real craft",
+      "ItemsSuccessfullyDeleted": "Items were successfully deleted from actor",
+      "ItemsSuccessfullyCrafted": "Item was successfully crafted by",
+      "ItemsNotCrafted": "Item wasn't successfully crafted by",
+      "SuccessfulCraftForNothing": "You should have specified associated item to allow its craft. Your components are in place.",
+      "SkipRemovalOfComponent": "Skip removal of component",
+      "AssociatedItemMissing": "No associated item provided"
+    },
+    "err": {
+      "CraftItemDeletion": "Incorrect amount of items were deleted from the actor",
+      "craftItemAvailable": "Not all necessary items are available",
+      "NoItemsOfSpecificType": "No items of specific type are available for actor"
+    },
+    "Investigation": {
+      "clues": "Clues",
+      "obstacles": "Obstacles",
+      "skillsUsed": "Skills used",
+      "timeIncrement": "Time",
+      "timeBonus": "Time Bonus",
+      "damage": "Damage",
+      "obfuscation": "Obfuscation",
+      "penalty": "Penalty",
+      "focusDamage": "Damage to Focus",
+      "successDamage": "Success Damage",
+      "failDamage": "Fail Damage",
+      "evidence": {
+        "chooseSkill": "Choose your skill"
+      }
+    },
+    "statusEffects": {
+      "applyCombat": "Applying combat effect for ",
+      "healing": "Healing",
+      "buffed": "Buffed",
+      "fire": "Fire",
+      "stun": "Stun",
+      "poison": "Poison",
+      "disease": "Disease",
+      "prone": "Prone",
+      "bleed": "Bleed",
+      "freeze": "Freeze",
+      "staggered": "Staggered",
+      "intoxication": "Intoxication",
+      "hallucination": "Hallucination",
+      "nausea": "Nausea",
+      "suffocation": "Suffocation",
+      "blinded": "Blinded",
+      "shielded": "Shielded",
+      "invisible": "Invisible",
+      "unconscious": "Unconscious",
+      "grappled": "Grappled",
+      "flying": "Flying",
+      "frightened": "Frightened",
+      "aiming": "Aiming",
+      "deaf": "Deaf",
+      "reducedVision": "Reduced Vision",
+      "holdAction": "Hold Action",
+      "dead": "Dead"
+    },
+    "armorEffects": {
+      "fireResistance": "Fire Resistance",
+      "poisonResistance": "Poison Resistance",
+      "bleedResistance": "Bleed Resistance"
+    },
+    "fumbleResults": {
+      "name": "Fumble Result",
+      "nothing": "Nothing happened",
+      "magic": {
+        "1-6": "Magic sparks and crackles and you take 1 point of damage for every point you fumbled by, but the spell still goes off.",
+        "7-9": "The magic that is already partially through you ignites inside you. Not only does the spell fail but you suffer an elemental fumble effect as noted below.",
+        ">9": "Your magic explodes with a catastrophic effect. Not only do you suffer an elemental fumble effect, but any focusing item you are carrying explodes as if it were a bomb (doing [[1d10]] damage) with a 2 meter radius"
+      },
+      "meleeAttack": {
+        "6": "Your weapon glances off and you are staggered.",
+        "7": "Your weapon lodges in a nearby object and it takes 1 round to free.",
+        "8": "You damage your weapon severely. Your weapon takes [[1d10]] points of reliability damage.",
+        "9": "You manage to wound yourself. Roll for location.",
+        ">9": "You wound a nearby ally. Roll location on a random ally within range."
+      },
+      "armedDefense": {
+        "6": "Your weapon takes [[1d6]] extra points of reliability damage.",
+        "7": "Your weapon is knocked from your hand and flies [[1d6]] meters away in a random direction (see Scatter table).",
+        "8": "You are knocked to the ground. You are now prone and must make a Stun save.",
+        "9": "Your weapon takes [[2d6]] extra points of reliability damage.",
+        ">9": "Your weapon ricochets back and hits you. Roll for location."
+      },
+      "rangedAttack": {
+        "6-7": "The ammunition you fired, or weapon you threw, hits something hard, breaking.",
+        "8-9": "Your bowstring comes partially undone, your crossbow jams, or you drop your thrown weapon. It takes 1 round to undo this.",
+        ">9": "You strike one of your allies with a ricochet. Roll location on a random ally within range"
+      },
+      "unarmed": {
+        "6": "You are knocked off balance and are staggered.",
+        "7": "You trip on something and fall prone.",
+        "8": "You trip and fall prone. You must make a Stun save.",
+        "9": "You trip and hit your head. You are knocked prone, take [[1d6]] points of non-lethal damage to the head, and must make a Stun save.",
+        ">9": "You fail horribly and not only fall prone but also take [[1d6]] lethal damage to the head and must make a Stun save."
+      }
+    },
+    "deprecations": {
+      "lifepathModifiers": {
+        "title": "Lifepath Modifiers",
+        "text": "Lifepath Modifiers attack boni where changed. This MUST be done before switching to v14. Re-add them via the active effect wizard for the following actors"
+      },
+      "statSkillModifiers": {
+        "title": "Stat or Skill Modifiers",
+        "text": "Stat and Skill Modifiers are deprecated. This MUST be done before switching to v14. Move them to active effects for the following actors"
+      },
+      "oldCriticalWounds": {
+        "title": "Critical Wounds deprecation",
+        "text": "Critical Wounds were moved to items. This MUST be done before switching to v14. Replace the wounds of these actors."
+      }
+    },
+    "AssociatedDiagram": {
+      "actions": {
+        "add": "Add crafting diagram",
+        "remove": "Remove crafting diagram"
+      },
+      "missing": "Associated crafting diagram is missing (drag it here to add)",
+      "title": "Crafting diagram"
+    },
+    "Repair": {
+      "action": "Repairing",
+      "buttons": {
+        "repair": "Repair",
+        "simulate": "Simulate repair",
+        "request": "Request repair",
+        "gmRepair": "GM repair"
+      },
+      "result": {
+        "success": "Repair successfull!",
+        "failure": "Repair failed"
+      },
+      "params": {
+        "craftingDC": "Crafting DC",
+        "repairDC": "Repair DC",
+        "repairMod": "Repair modifier",
+        "enchants": "Enchants modifier",
+        "damagedLocations": "Damaged locations",
+        "components": "Components"
+      },
+      "damagedLocations": {
+        "weapon": "Weapon reliability",
+        "shield": "Shield reliability"
+      },
+      "chat": {
+        "requestTitle": "is requesting to repair"
+      },
+      "alerts": {
+        "notEnoughComponents": "Not enough components to repair this item",
+        "itemIsAlreadyRepaired": "This item is already fully repaired",
+        "noDiagram": "No associated diagram found for this item",
+        "invalidDiagram": "The type of this diagram is not valid for this item"
+      }
+    },
+    "ComponentsList": {
+      "component": "Component",
+      "quantity": "Quantity",
+      "required": "Required",
+      "cost": "Cost",
+      "totalPrice": "Total price"
+    },
+    "rewards": {
+      "dialog": {
+        "title": "Seleziona attori per la ricompensa",
+        "label": "Etichetta: ",
+        "ip": "PM: ",
+        "magicIp": "PM Magici: ",
+        "currency": "Importo Valuta",
+        "currencyType": "Tipo di Valuta",
+        "confirm": "Conferma"
+      },
+      "chat": {
+        "title": "Ricompense",
+        "ip": "PM",
+        "currency": "Valuta"
+      }
+    },
+    "magic": {
+      "magicImprovementPoints": "PM Magici"
     },
     "Wizard": {
       "Title": "Creazione del Personaggio",
-      "Button": {
-        "Launch": "Wizard Creazione",
-        "Next": "Avanti",
-        "Prev": "Indietro",
-        "Finish": "Crea Personaggio"
+      "Next": "Avanti",
+      "Back": "Indietro",
+      "FinishBtn": "Completa",
+      "ChangeAvatar": "Cambia Avatar",
+      "NamePlaceholder": "Inserisci nome...",
+      "Race": "Razza",
+      "Profession": "Professione",
+      "BackgroundLabel": "Background",
+      "Navigation": {
+        "Step": "Passo"
       },
       "Step": {
-        "Title": "Passaggio",
         "Race": {
           "Title": "Razza",
-          "Description": "Scegli la tua razza. Determina doti naturali e doti fisiche."
-        },
-        "Background": {
-          "Title": "Background",
-          "Description": "Determina le tue origini, la tua famiglia e gli eventi passati."
+          "Description": "Scegli la tua stirpe e le tue doti naturali."
         },
         "Profession": {
           "Title": "Professione",
-          "Description": "Scegli come ti guadagni da vivere e il tuo addestramento."
-        },
-        "StatsStep": "Statistiche",
-        "Skills": {
-          "Title": "Abilità",
-          "Description": "Assegna i punti alle tue abilità professionali e personali."
+          "Description": "Definisci il tuo ruolo nel mondo e il tuo addestramento."
         },
         "Stats": {
           "Title": "Statistiche",
-          "Description": "Distribuisci i tuoi punti (max 10 per ogni statistica)."
+          "Description": "Assegna i punti per definire il tuo potenziale fisico e mentale."
+        },
+        "Skills": {
+          "Title": "Abilità",
+          "Description": "Sviluppa le tue competenze professionali e personali."
+        },
+        "Background": {
+          "Title": "Percorso Vitale",
+          "Description": "Scrivi la tua storia attraverso gli eventi del passato."
         },
         "Gear": {
           "Title": "Equipaggiamento",
-          "Description": "Ottieni i tuoi averi iniziali (Dotazione) e acquista nuovi oggetti con le tue corone."
+          "Description": "Scegli la tua dotazione e acquista ciò che ti serve."
         },
         "Finalize": {
-          "Title": "Finalizzazione",
-          "Description": "Dai un nome al tuo eroe, scegli un avatar e rivedi l'acquisto finale."
+          "Title": "Riepilogo",
+          "Description": "Ultimi ritocchi prima di iniziare l'avventura."
         }
       },
-      "Finish": {
-        "Callout": "Tutto pronto! Clicca su 'Crea Personaggio' per terminare."
-      },
       "Stats": {
-        "Title": "Statistiche",
-        "Description": "Distribuisci i tuoi punti (max 10 per ogni statistica).",
-        "Summary": "Riepilogo Statistiche",
-        "PointsRemaining": "Punti Rimanenti",
-        "DerivedPreview": "Anteprima Statistiche Derivate"
+        "Points": "Punti Statistica",
+        "Remaining": "Rimanenti",
+        "DerivedPreview": "Statistiche Derivate",
+        "Summary": "Riepilogo Statistiche"
+      },
+      "Skills": {
+        "Points": "Punti Abilità",
+        "Professional": "Abilità Professionali",
+        "Pickup": "Abilità Pick-up",
+        "Add": "Aggiungi",
+        "AddButton": "Conferma",
+        "PickupHint": "Basato su INT e RIF",
+        "ProfessionPool": "Punti Professionali"
+      },
+      "Background": {
+        "Origin": "Origine",
+        "Homeland": "Patria",
+        "SelectHomeland": "-- Seleziona --",
+        "SocialStatus": "Rango Sociale",
+        "Age": "Età",
+        "Family": "Famiglia",
+        "FamilyFate": "Destino Familiare",
+        "LifeEvents": "Eventi Salienti",
+        "Years": "anni",
+        "RollNextEvent": "Tira Prossimo Evento"
+      },
+      "Gear": {
+        "Money": "Corone",
+        "Budget": "Budget",
+        "OverBudget": "Budget Superato!",
+        "Selected": "Selezionati",
+        "MoneyLabel": "Oro Iniziale",
+        "MoneyHint": "Monete disponibili dall'estrazione",
+        "TotalCost": "Costo Totale",
+        "InitialGear": "Dotazione di Classe",
+        "NoProfession": "Seleziona una professione per vedere gli oggetti.",
+        "PurchasedGear": "Oggetti Acquistati"
       },
       "Summary": {
         "Details": "Dettagli Personaggio"
       },
-      "Race": "Razza",
-      "Profession": "Professione",
-      "BackgroundLabel": "Background",
-      "ChangeAvatar": "Cambia Avatar",
-      "NamePlaceholder": "Nome dell'eroe...",
-      "Skills": {
-        "Profession": "Abilità Professionali",
-        "Pickup": "Abilità Opzionali",
-        "Add": "Scegli abilità",
-        "AddButton": "Aggiungi",
-        "Filter": "Cerca abilità...",
-        "Summary": "Abilità Selezionate",
-        "ProfessionPool": "Punti Abilità Professionali",
-        "CapHint": "(Max 6 punti per abilità in creazione)",
-        "PickupPool": "Punti Abilità Pick-up",
-        "PickupHint": "(INT + RIF - Max 10 punti)"
+      "Finish": {
+        "Callout": "Il tuo eroe è pronto per entrare nel Continente!"
       },
-      "Gear": {
-        "Selected": "Equipaggiamento Selezionato",
-        "MoneyLabel": "Corone Iniziali",
-        "MoneyHint": "Le corone disponibili per acquistare equipaggiamento",
-        "OverBudget": "Attenzione: Hai superato il budget di corone disponibili!",
-        "TotalCost": "Costo Totale",
-        "InitialGear": "Equipaggiamento Professionale",
-        "PurchasedGear": "Equipaggiamento Acquistato",
-        "ChoiceHint": "Seleziona gli oggetti gratuiti previsti dalla tua professione:",
-        "NoProfession": "Seleziona prima una professione per vedere l'equipaggiamento iniziale.",
-        "StandardPack": "Dotazione Standard di Classe (Zaino, Sacco, ecc.)"
-      },
-      "Background": {
-        "Origin": "Origine",
-        "Homeland": "Paese d'Origine",
-        "SocialStatus": "Posizione Sociale",
-        "Family": "Famiglia",
-        "FamilyFate": "Destino della Famiglia",
-        "LifeEvents": "Eventi della Vita",
-        "Age": "Età",
-        "Years": "anni",
-        "RollNextEvent": "Tira Prossimo Evento",
-        "SelectHomeland": "-- Seleziona --"
-      },
-      "skills": {
-        "awareness": { "label": "Consapevolezza" },
-        "business": { "label": "Affari" },
-        "deduction": { "label": "Deduzione" },
-        "education": { "label": "Istruzione" },
-        "commonSpeech": { "label": "Lingua Comune" },
-        "elderSpeech": { "label": "Lingua Antica" },
-        "dwarvenSpeech": { "label": "Lingua Nanica" },
-        "monsterLore": { "label": "Conoscenza Mostri" },
-        "socialEtiquette": { "label": "Etichetta Sociale" },
-        "streetwise": { "label": "Vita di Strada" },
-        "tactics": { "label": "Tattica" },
-        "teaching": { "label": "Insegnare" },
-        "wildernessSurvival": { "label": "Sopravvivenza" },
-        "brawling": { "label": "Rissa" },
-        "dodgeEscape": { "label": "Schivare/Fuggire" },
-        "melee": { "label": "Mischia" },
-        "riding": { "label": "Equitazione" },
-        "sailing": { "label": "Navigazione" },
-        "smallblades": { "label": "Lame Piccole" },
-        "staffspear": { "label": "Asta/Lancia" },
-        "swordsmanship": { "label": "Scherma" },
-        "archery": { "label": "Tiro con l'Arco" },
-        "athletics": { "label": "Atletica" },
-        "crossbow": { "label": "Balestra" },
-        "sleightOfHand": { "label": "Prestigiditazione" },
-        "stealth": { "label": "Furtività" },
-        "physique": { "label": "Fisicità" },
-        "endurance": { "label": "Resistenza" },
-        "charisma": { "label": "Carisma" },
-        "deceit": { "label": "Inganno" },
-        "fineArts": { "label": "Belle Arti" },
-        "gambling": { "label": "Gioco d'Azzardo" },
-        "groomingAndStyle": { "label": "Cura e Stile" },
-        "humanPerception": { "label": "Percezione Umana" },
-        "leadership": { "label": "Autorità" },
-        "persuasion": { "label": "Persuasione" },
-        "performance": { "label": "Recitazione" },
-        "seduction": { "label": "Seduzione" },
-        "alchemy": { "label": "Alchimia" },
-        "crafting": { "label": "Artigianato" },
-        "disguise": { "label": "Camuffamento" },
-        "firstAid": { "label": "Pronto Soccorso" },
-        "forgery": { "label": "Contraffazione" },
-        "pickLock": { "label": "Scassinare" },
-        "trapCrafting": { "label": "Fabbricare Trappole" },
-        "courage": { "label": "Coraggio" },
-        "hexWeaving": { "label": "Tessere Fatture" },
-        "intimidation": { "label": "Intimidazione" },
-        "spellCasting": { "label": "Lanciare Incantesimi" },
-        "resistMagic": { "label": "Resistere alla Magia" },
-        "resistCoercion": { "label": "Resistere alla Coercizione" },
-        "ritualCrafting": { "label": "Creare Rituali" }
+      "Button": {
+        "Launch": "Crea Personaggio"
       }
     }
   },
-  "Spell.Ray": "Raggio",
   "Settings.allowPlayerWizard": "Consenti ai Giocatori di usare il Wizard",
   "Settings.allowPlayerWizardHint": "Se attivo, i giocatori vedranno il pulsante per lanciare il wizard."
 }

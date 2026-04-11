@@ -16,7 +16,7 @@ Hooks.once("ready", async () => {
   }
 
   // 2. Trova o Crea categorie principali
-  const categories = ["CORE", "EQUIPAGGIAMENTO", "MAGIA", "CRAFTING", "BESTIARIO / PNG"];
+  const categories = ["CORE", "EQUIPAGGIAMENTO", "MAGIA", "CRAFTING", "BESTIARIO / PNG", "GAMEPLAY", "LORE"];
   const folderMap = {};
 
   for (const cat of categories) {
@@ -47,6 +47,8 @@ Hooks.once("ready", async () => {
   const magia = folderMap["MAGIA"];
   const crafting = folderMap["CRAFTING"];
   const bestiario = folderMap["BESTIARIO / PNG"];
+  const gameplay = folderMap["GAMEPLAY"];
+  const loreCat = folderMap["LORE"];
 
   const tomoBaseEquip = await getSubfolder("Tomo Base", equip);
   const tomoCaosEquip = await getSubfolder("Tomo del Caos", equip);
@@ -86,7 +88,10 @@ Hooks.once("ready", async () => {
     { pack: "witcher-monsters",       folder: tomoBaseBest },
     { pack: "witcher-monsters-chaos", folder: tomoCaosBest },
     { pack: "witcher-transports",     folder: tomoBaseEquip },
-    { pack: "witcher-trophies",       folder: tomoCaosTrofei }
+    { pack: "witcher-trophies",       folder: tomoCaosTrofei },
+    { pack: "witcher-lore",           folder: loreCat },
+    { pack: "witcher-critical-wounds",folder: gameplay },
+    { pack: "witcher-curses",         folder: gameplay }
   ];
 
   console.log("Witcher Compendio: Inizio assegnazione pack...");

@@ -4,7 +4,7 @@
     "type": "spell",
     "img": "modules/witcher-compendium/assets/MAGIA/base/witcher-spells/Pag101_La Magia in The Witcher_01.webp",
     "system": {
-        "description": "<p>àVàoàràtàiàcàeà àFàiàaàmàmàeàgàgàiàaànàtàeà àcàràeàaà àuànà àtàoàrànàaàdàoà àdàià àfàiàaàmàmàeà àlàaàràgàoà à2àmà.à àLàâà€à™àiànàcàaànàtàaàtàoàràeà àpàuàÃà²à àdàiàràiàgàeàràeà àiàlà àtàoàrànàaà-à àdàoà àsàpàoàsàtàaànàdàoàlàoà àdàià àuànà ànàuàmàeàràoà àdàià àmàeàtàràià àpàeàrà àtàuàrànàoà àpàaàràià àaàlà àvàaàlàoàràeà àdàeàlàlàâà€à™àAàbàiàlàiàtàÃà à àLàaànàcàiàaàràeà àIànàcàaànàtàeàsàiàmàià.à àSàeà àtàràaàvàoàlàgàeà àuànà àbàeàràsàaàgàlàiàoà,à àlàâà€à™àiànàcàaànàtàaàtàoàràeà àeàfàfàeàtàtàuàaà àuànà àtàiàràoà àdàià àLàaànàcàiàaàràeà àIànàcàaànàtàeàsàiàmàià àcàoànàtàràaàpàpàoàsàtàoà àaàlà àtàiàràoà àdàià àEàlàuàdàeàràeà àdàeàlà àbàeàràsàaàgàlàiàoà.à àSàeà àhàaà àsàuàcàcàeàsàsàoà,à àiàlà àbàeàràsàaàgàlàiàoà àsàuàbàiàsàcàeà à5àdà6à àdàaànànàià àeà àhàaà àiàlà à5à0à%à àdàià àpàràoàbàaàbàiàlàiàtàÃà à àdàià àsàuàbàiàràeà àlàâà€à™àeàfàfàeàtàtàoà àAà àFàuàoàcàoà.à àIàlà àvàoàràtàiàcàeà ànàoànà àsàià àsàpàoàsàtàaà àoàlàtàràeà àiàlà àràaàgàgàiàoà àdàeàlàlàâà€à™àiànàcàaànàtàeàsàiàmàoà.à</p>",
+        "description": "<p>Vortice Fiammeggiante crea un tornado di fiamme largo 2m. L’incantatore può dirigere il torna- do spostandolo di un numero di metri per turno pari al valore dell’Abilit Lanciare Incantesimi. Se travolge un bersaglio, l’incantatore effettua un tiro di Lanciare Incantesimi contrapposto al tiro di Eludere del bersaglio. Se ha successo, il bersaglio subisce 5d6 danni e ha il 50% di probabilit di subire l’effetto A Fuoco. Il vortice non si sposta oltre il raggio dell’incantesimo.</p>",
         "quantity": "1",
         "weight": 0,
         "cost": 0,
@@ -14,7 +14,7 @@
         "source": "fire",
         "stamina": 15,
         "staminaIsVar": false,
-        "effect": "Vortice Fiammeggiante crea un tornado di fiamme largo 2m. Lâ€™incantatore puÃ² dirigere il torna- do spostandolo di un numero di metri per turno pari al valore dellâ€™AbilitÃ  Lanciare Incantesimi. Se travolge un bersaglio, lâ€™incantatore effettua un tiro di Lanciare Incantesimi contrapposto al tiro di Eludere del bersaglio. Se ha successo, il bersaglio subisce 5d6 danni e ha il 50% di probabilitÃ  di subire lâ€™effetto A Fuoco. Il vortice non si sposta oltre il raggio dellâ€™incantesimo.",
+        "effect": "Vortice Fiammeggiante crea un tornado di fiamme largo 2m. L’incantatore può dirigere il torna- do spostandolo di un numero di metri per turno pari al valore dell’Abilit Lanciare Incantesimi. Se travolge un bersaglio, l’incantatore effettua un tiro di Lanciare Incantesimi contrapposto al tiro di Eludere del bersaglio. Se ha successo, il bersaglio subisce 5d6 danni e ha il 50% di probabilit di subire l’effetto A Fuoco. Il vortice non si sposta oltre il raggio dell’incantesimo.",
         "range": "Raggio di 10m",
         "duration": "Attiva (4 RES)",
         "defence": "Schivare",

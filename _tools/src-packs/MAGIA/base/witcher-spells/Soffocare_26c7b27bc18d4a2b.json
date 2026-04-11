@@ -4,7 +4,7 @@
     "type": "spell",
     "img": "modules/witcher-compendium/assets/MAGIA/base/witcher-spells/Pag101_La Magia in The Witcher_01.webp",
     "system": {
-        "description": "<p>àLàâà€à™àiànàcàaànàtàeàsàiàmàoà àsàoàfàfàoàcàaà àuànà àbàeàràsàaàgàlàiàoà àiànàfàlàiàgàgàeànàdàoà à1àdà1à0à àdàaànànàià àpàeàrà àtàuàrànàoà.à àIàlà àsàoàfàfàoàcàaàmàeànàtàoà àtàeàràmàiànàaà àsàeà àlàâà€à™àiànà-à àcàaànàtàaàtàoàràeà àvàiàeànàeà àcàoàlàpàiàtàoà àdàaà àuànàâà€à™àaàràmàaà àoà àiànàtàeàràràoàmàpàeà àlàaà àcàoànà-à àcàeànàtàràaàzàiàoànàeà.à àMàeànàtàràeà àsàoàfàfàoàcàaà,à àiàlà àbàeàràsàaàgàlàiàoà àÃà¨à àcàoànàsàiàdàeàràaàtàoà àvàaàcàiàlàlàaànàtàeà.à</p>",
+        "description": "<p>L’incantesimo soffoca un bersaglio infliggendo 1d10 danni per turno. Il soffocamento termina se l’in- cantatore viene colpito da un’arma o interrompe la con- centrazione. Mentre soffoca, il bersaglio è considerato vacillante.</p>",
         "quantity": "1",
         "weight": 0,
         "cost": 0,
@@ -14,7 +14,7 @@
         "source": "fire",
         "stamina": 14,
         "staminaIsVar": false,
-        "effect": "Lâ€™incantesimo soffoca un bersaglio infliggendo 1d10 danni per turno. Il soffocamento termina se lâ€™in- cantatore viene colpito da unâ€™arma o interrompe la con- centrazione. Mentre soffoca, il bersaglio Ã¨ considerato vacillante.",
+        "effect": "L’incantesimo soffoca un bersaglio infliggendo 1d10 danni per turno. Il soffocamento termina se l’in- cantatore viene colpito da un’arma o interrompe la con- centrazione. Mentre soffoca, il bersaglio è considerato vacillante.",
         "range": "10m",
         "duration": "Attiva (4 RES)",
         "defence": "Resistere alla Magia",

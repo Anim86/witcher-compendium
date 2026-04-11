@@ -250,4 +250,13 @@ export async function registerHandelbarHelpers() {
         if (typeof str !== 'string') return '';
         return str.charAt(0).toUpperCase() + str.slice(1);
     });
+
+    Handlebars.registerHelper('toUpper', function (str) {
+        if (typeof str !== 'string') return '';
+        return str.toUpperCase();
+    });
+
+    Handlebars.registerHelper('multiply', function (v1, v2) {
+        return (Number(v1) || 0) * (Number(v2) || 0);
+    });
 }

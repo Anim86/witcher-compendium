@@ -1,9 +1,13 @@
+/* =====================================================
+   CHARACTER SHEET – Main Layout Grid
+   ===================================================== */
 .application.sheet.witcher.actor:not(.extended-sheet) {
     .window-content {
         display: grid;
-        grid-template-columns: 130px 1fr;
-        grid-template-rows: 130px 70px 1fr;
-        gap: 10px 30px;
+        grid-template-columns: 150px 1fr;
+        grid-template-rows: auto auto 1fr;
+        gap: 8px 24px;
+        padding: 12px;
 
         .char-sidebar {
             grid-row: 1 / span 3;
@@ -24,4 +28,618 @@
             grid-row: 3;
         }
     }
+}
+
+/* =====================================================
+   SIDEBAR – Polish & Spacing
+   ===================================================== */
+.char-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 150px;
+}
+
+/* Character Image */
+.char-image {
+    position: relative;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+
+    .witcher-actor-img {
+        height: 150px !important;
+        width: 150px !important;
+        border-radius: 6px;
+        object-fit: cover;
+        transition: filter 0.3s ease;
+    }
+
+    .witcher-actor-img:hover {
+        filter: brightness(1.1);
+    }
+
+    .wound-state {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4px;
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        right: 4px;
+        bottom: 4px;
+        background: rgba(0, 0, 0, 0.55);
+        backdrop-filter: blur(6px);
+        border-radius: 6px;
+        font-size: 22px;
+    }
+}
+
+/* =====================================================
+   SIDEBAR – STATUS BARS (HP, Stamina, Toxicity, Focus)
+   ===================================================== */
+.status-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+    gap: 4px;
+}
+
+.progress-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    position: relative;
+    width: 150px;
+    filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.3));
+}
+
+.progress-container > h3 {
+    border-bottom: none;
+    margin: 0;
+}
+
+.progress-header {
+    padding: 3px 8px;
+    border-radius: 4px 4px 0 0;
+    font-size: 11px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.progress-header.hp { background: linear-gradient(135deg, #6b0000, #8b0000); }
+.progress-header.stamina { background: linear-gradient(135deg, #073142, #0c4f6a); }
+.progress-header.toxicity { background: linear-gradient(135deg, #0f3b08, #1a5c0f); }
+.progress-header.focus { background: linear-gradient(135deg, #1c0538, #3a0a6e); }
+.progress-header.resolve { background: linear-gradient(135deg, #3b1542, #6b2073); }
+
+.hp-bar,
+.sta-bar,
+.toxicity-bar,
+.focus-bar,
+.resolve-bar {
+    height: 22px;
+    width: 150px;
+    border-radius: 0 0 4px 4px;
+}
+
+/* HP Bar */
+.hp-bar, .hp-bar::-webkit-progress-bar {
+    border: none;
+    background-color: rgba(139, 0, 0, 0.15);
+    border-radius: 0 0 4px 4px;
+}
+.hp-bar::-webkit-progress-value {
+    background: linear-gradient(90deg, #b30000, #e30000);
+    border-radius: 0 0 4px 4px;
+    transition: width 0.4s ease;
+}
+.hp-bar::-moz-progress-bar {
+    background: linear-gradient(90deg, #b30000, #e30000);
+    border-radius: 0 0 4px 4px;
+}
+
+/* Stamina Bar */
+.sta-bar, .sta-bar::-webkit-progress-bar {
+    border: none;
+    background-color: rgba(20, 100, 171, 0.15);
+    border-radius: 0 0 4px 4px;
+}
+.sta-bar::-webkit-progress-value {
+    background: linear-gradient(90deg, #0a7bb8, #14abec);
+    border-radius: 0 0 4px 4px;
+    transition: width 0.4s ease;
+}
+.sta-bar::-moz-progress-bar {
+    background: linear-gradient(90deg, #0a7bb8, #14abec);
+    border-radius: 0 0 4px 4px;
+}
+
+/* Toxicity Bar */
+.toxicity-bar, .toxicity-bar::-webkit-progress-bar {
+    border: none;
+    background-color: rgba(26, 92, 15, 0.15);
+    border-radius: 0 0 4px 4px;
+}
+.toxicity-bar::-webkit-progress-value {
+    background: linear-gradient(90deg, #1a8b0c, #2eb917);
+    border-radius: 0 0 4px 4px;
+    transition: width 0.4s ease;
+}
+.toxicity-bar::-moz-progress-bar {
+    background: linear-gradient(90deg, #1a8b0c, #2eb917);
+    border-radius: 0 0 4px 4px;
+}
+
+/* Focus Bar */
+.focus-bar, .focus-bar::-webkit-progress-bar {
+    border: none;
+    background-color: rgba(124, 20, 236, 0.1);
+    border-radius: 0 0 4px 4px;
+}
+.focus-bar::-webkit-progress-value {
+    background: linear-gradient(90deg, #5a0db8, #7C14EC);
+    border-radius: 0 0 4px 4px;
+    transition: width 0.4s ease;
+}
+.focus-bar::-moz-progress-bar {
+    background: linear-gradient(90deg, #5a0db8, #7C14EC);
+    border-radius: 0 0 4px 4px;
+}
+
+/* Resolve Bar */
+.resolve-bar, .resolve-bar::-webkit-progress-bar {
+    border: none;
+    background-color: rgba(107, 32, 115, 0.1);
+    border-radius: 0 0 4px 4px;
+}
+.resolve-bar::-webkit-progress-value {
+    background: linear-gradient(90deg, #c06cb8, #f2a4ea);
+    border-radius: 0 0 4px 4px;
+    transition: width 0.4s ease;
+}
+.resolve-bar::-moz-progress-bar {
+    background: linear-gradient(90deg, #c06cb8, #f2a4ea);
+    border-radius: 0 0 4px 4px;
+}
+
+/* Progress Text Overlay */
+.progress-text {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 100%;
+    height: 22px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    font-weight: 700;
+    color: white;
+    font-size: 14px;
+    margin: 0;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+input.progress-input,
+.progress-total {
+    background-color: transparent;
+    line-height: 22px;
+    width: 45px;
+    height: 22px;
+    border: none;
+    font-weight: 700;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+/* =====================================================
+   SIDEBAR – Optional Stats (Vigor, Shield, Luck, etc.)
+   ===================================================== */
+.optional-stats-section {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    max-width: 150px;
+    margin-top: 8px;
+
+    .optional-stat {
+        border-radius: 6px;
+        overflow: hidden;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+
+        .optional-name {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 6px;
+            background: light-dark(rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.5));
+            height: 24px;
+            padding: 0 8px;
+            font-weight: 700;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+            border: none;
+            border-radius: 6px 6px 0 0;
+
+            .optional-icon {
+                font-size: 12px;
+            }
+        }
+
+        .optional-info {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            place-content: center;
+            border-radius: 0 0 6px 6px;
+            height: 32px;
+            border: 1px solid light-dark(rgba(0, 0, 0, 0.15), rgba(255, 255, 255, 0.1));
+            border-top: none;
+            text-align: center;
+            gap: 4px;
+            background: light-dark(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.03));
+        }
+
+        .optional-name,
+        .optional-info {
+            h4, h3 {
+                margin: 0;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.optional-buttons {
+    place-content: center;
+    align-content: center;
+    width: 20px;
+    height: 24px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+}
+.optional-buttons:hover {
+    opacity: 1;
+}
+
+/* =====================================================
+   SIDEBAR – Resource Modifiers Collapsible
+   ===================================================== */
+.char-resource-modifier {
+    border: 1px solid light-dark(rgba(0, 0, 0, 0.15), rgba(255, 255, 255, 0.1));
+    color: light-dark(black, white);
+    border-radius: 6px;
+    margin-top: 4px;
+    font-size: 12px;
+    overflow: hidden;
+
+    summary {
+        padding: 4px 8px;
+        font-size: 11px;
+        font-weight: 600;
+        cursor: pointer;
+        background: light-dark(rgba(0, 0, 0, 0.05), rgba(255, 255, 255, 0.05));
+    }
+
+    .resource-modifiers {
+        overflow-y: auto;
+        max-height: 120px;
+        padding: 4px;
+
+        input.list-mod-edit.medium {
+            width: 70px;
+            font-size: 11px;
+        }
+
+        input.list-mod-edit {
+            font-size: 11px;
+        }
+    }
+}
+
+/* =====================================================
+   HEADER – Character Name, Info & Actions
+   ===================================================== */
+.char-header-center {
+    flex-grow: 1;
+    height: fit-content;
+
+    h1 {
+        margin-bottom: 0;
+        border-bottom: none;
+    }
+}
+
+input.charname {
+    height: auto;
+    border: none;
+    font-size: 24px;
+    font-weight: 700;
+    background: transparent;
+    padding: 0;
+}
+
+.char-general {
+    margin-top: 2px;
+    margin-bottom: 6px;
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+.char-general > span > * {
+    border: none;
+}
+
+.char-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 8px;
+    flex-wrap: wrap;
+
+    .action {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid light-dark(rgba(0, 0, 0, 0.15), rgba(255, 255, 255, 0.12));
+        border-radius: 6px;
+        padding: 4px 10px;
+        min-width: 100px;
+        background: light-dark(rgba(0, 0, 0, 0.03), rgba(255, 255, 255, 0.03));
+
+        h3 {
+            margin: 0;
+            font-weight: 500;
+            font-size: 13px;
+        }
+
+        .death-counter {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 4px;
+
+            h3 {
+                margin: 0;
+                font-weight: 500;
+                font-size: 13px;
+            }
+        }
+    }
+}
+
+.improvement-points.action h3 {
+    font-size: 12px !important;
+    white-space: nowrap;
+}
+
+/* Action Buttons */
+.char-button-list {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.button-roll {
+    display: flex;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 15px;
+    text-align: center;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+a.button-roll:hover {
+    text-shadow: none;
+    transform: scale(1.1);
+}
+
+.init-roll { background: linear-gradient(135deg, #8b8bef, #a4a7f2); color: #2a1a4e; }
+.init-roll:hover { background: linear-gradient(135deg, #6e6ed4, #8b8bef); }
+.death-roll { background: linear-gradient(135deg, #e88a8a, #f2a4a4); color: #4a1a1a; }
+.death-roll:hover { background: linear-gradient(135deg, #d06060, #e88a8a); }
+.heal-button { background: linear-gradient(135deg, #88d880, #aff2a4); color: #1a4a24; }
+.heal-button:hover { background: linear-gradient(135deg, #60c050, #88d880); }
+.crit-roll { background: linear-gradient(135deg, #dbb880, #f2d3a4); color: #4a3018; }
+.crit-roll:hover { background: linear-gradient(135deg, #c0a060, #dbb880); }
+.recover-sta { background: linear-gradient(135deg, #70a8d8, #a4ccf2); color: #142838; }
+.recover-sta:hover { background: linear-gradient(135deg, #5090c0, #70a8d8); }
+.verbal-button { background: linear-gradient(135deg, #d880d0, #f2a4ea); color: #3a1838; }
+.verbal-button:hover { background: linear-gradient(135deg, #c060b8, #d880d0); }
+
+/* =====================================================
+   TABS – Navigation Styling
+   ===================================================== */
+.witcher.sheet nav.sheet-tabs {
+    height: fit-content;
+    padding: 6px 10px;
+    text-align: center;
+    background-color: light-dark(rgba(34, 34, 34, 0.04), rgba(231, 209, 177, 0.06));
+    border: 1px solid light-dark(rgba(34, 34, 34, 0.08), rgba(231, 209, 177, 0.08));
+    border-radius: 8px;
+
+    a {
+        color: light-dark(black, white);
+        text-shadow: none;
+        padding: 3px 8px;
+        transition: all 0.2s ease;
+        border-radius: 4px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    a:hover {
+        background-color: light-dark(rgba(34, 34, 34, 0.08), rgba(231, 209, 177, 0.08));
+    }
+
+    a.active {
+        background-color: light-dark(rgba(34, 34, 34, 0.15), rgba(231, 209, 177, 0.2));
+        font-weight: 700;
+    }
+}
+
+/* =====================================================
+   STAT GRID & DERIVED STATS
+   ===================================================== */
+.stat-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.char-stat-title {
+    font-weight: 700;
+    margin-bottom: 6px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.char-stat-button,
+.char-derived-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid light-dark(rgba(34, 34, 34, 0.12), rgba(231, 209, 177, 0.15));
+    color: light-dark(black, white);
+    transition: all 0.2s ease;
+    min-width: 140px;
+    min-height: 48px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+    border-radius: 6px;
+    padding: 4px 10px;
+    text-shadow: none;
+    background: light-dark(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.02));
+
+    .label {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .mod {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        font-size: 12px;
+        width: 56px;
+
+        .max, .stat-mod-zero {
+            color: light-dark(#174FC8, #7099F0);
+        }
+
+        .stat-mod-plus {
+            color: light-dark(#1d8a38, #56C574);
+        }
+
+        .stat-mod-minus {
+            color: light-dark(#c42020, #E86363);
+        }
+    }
+
+    .skill-icons {
+        display: flex;
+        gap: 8px;
+        font-size: 12px;
+        margin: 3px 0;
+        color: light-dark(black, white);
+    }
+}
+
+.char-stat-button:hover {
+    background: light-dark(rgba(34, 34, 34, 0.08), rgba(231, 209, 177, 0.12));
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px);
+}
+
+.char-stat-button.skill {
+    .label, .skill-icons {
+        font-size: 12px;
+    }
+}
+
+.char-stat-button.skill.profession {
+    background: rgba(85, 107, 47, 0.25);
+    border-color: rgba(85, 107, 47, 0.3);
+}
+.char-stat-button.skill.profession:hover {
+    background: rgba(107, 142, 35, 0.35);
+}
+
+.char-stat-button.skill.learned {
+    background: rgba(32, 95, 171, 0.25);
+    border-color: rgba(32, 95, 171, 0.3);
+}
+.char-stat-button.skill.learned:hover {
+    background: rgba(60, 130, 210, 0.35);
+}
+
+.char-stat-button.skill.pickup {
+    background: rgba(175, 50, 50, 0.25);
+    border-color: rgba(175, 50, 50, 0.3);
+}
+.char-stat-button.skill.pickup:hover {
+    background: rgba(210, 70, 70, 0.35);
+}
+
+/* Total Stats */
+.total-stats {
+    display: flex;
+    gap: 16px;
+    border: 1px solid light-dark(rgba(34, 34, 34, 0.12), rgba(231, 209, 177, 0.15));
+    border-radius: 6px;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    min-width: 140px;
+    padding: 0 10px;
+    background: light-dark(rgba(0, 0, 0, 0.02), rgba(255, 255, 255, 0.02));
+}
+
+.total-stats > h4 {
+    margin-bottom: 0;
+    border-bottom: none;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+/* Reputation */
+.reputation-button {
+    width: 105px;
+    text-transform: uppercase;
+}
+
+/* Derived Stats section */
+.core-stats-list {
+    margin: 12px 0;
+}
+
+/* =====================================================
+   WINDOW HEADER 
+   ===================================================== */
+.actor .window-header {
+    flex: 0 0 30px;
+    overflow: hidden;
+    padding: 0 10px;
+    line-height: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #14556e, #1c6888);
+    border-radius: 6px 6px 0 0;
+    font-size: 12px;
 }

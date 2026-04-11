@@ -1,19 +1,21 @@
 {
   "id": "witcher-compendium",
   "title": "Witcher RPG Compendium (Premium IT)",
-  "description": "Compendio premium per The Witcher TRPG (v14). Include Razze e Professioni con descrizioni complete e coerenti con lo schema di sistema.",
-  "version": "14.1.49",
+  "description": "Compendio premium per The Witcher TRPG (v14).",
+  "version": "14.1.50",
   "authors": [
     {
-      "name": "Zolt"
+      "name": "Zolt",
+      "flags": {}
     },
     {
-      "name": "Anim"
+      "name": "Anim",
+      "flags": {}
     }
   ],
   "compatibility": {
     "minimum": "14",
-    "verified": "14.359"
+    "verified": "14.360"
   },
   "esmodules": [
     "scripts/witcher-compendium.js",
@@ -49,7 +51,7 @@
     },
     {
       "name": "witcher-skills",
-      "label": "Abilità",
+      "label": "Abilit",
       "path": "packs/CORE/witcher-skills",
       "type": "Item",
       "system": "TheWitcherItaNewSystem"
@@ -256,9 +258,14 @@
       "lang": "it",
       "name": "Italiano",
       "path": "languages/it.json"
+    },
+    {
+      "lang": "it-IT",
+      "name": "Italiano",
+      "path": "languages/it.json"
     }
   ],
   "url": "https://github.com/Anim86/witcher-compendium",
   "manifest": "https://raw.githubusercontent.com/Anim86/witcher-compendium/main/witcher-compendium/module.json",
-  "download": "https://github.com/Anim86/witcher-compendium/releases/download/v14.1.49/witcher-compendium-v14.1.49.zip"
+  "download": "https://github.com/Anim86/witcher-compendium/releases/download/14.1.50/witcher-compendium.zip"
 }

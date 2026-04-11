@@ -2,10 +2,12 @@
     --wizard-accent: #8b0000;
     --wizard-accent-hover: #a00000;
     --wizard-text-dark: #1a1a1a;
-    --wizard-text-muted: #444444;
+    --wizard-text-muted: #4b4b4b;
     --wizard-border: #665544;
     --wizard-bg-light: #f4e8d1;
-    --wizard-shadow: rgba(0, 0, 0, 0.3);
+    --wizard-shadow: rgba(0, 0, 0, 0.4);
+    --wizard-parchment: #e8dcc4;
+    --wizard-gold: #b8860b;
 }
 
 /* ── Global override: nessun testo giallo nel wizard ──────────────────── */
@@ -21,7 +23,7 @@
 }
 
 .witcher-wizard .window-content {
-    background: url('/modules/witcher-compendium/assets/wizard/bgmago.webp') center/cover no-repeat !important;
+    background: url('/systems/TheWitcherItaNewSystem/assets/images/setup_bg.jpg') center/cover no-repeat !important;
     background-color: #000 !important;
     color: var(--wizard-text-dark);
     font-family: 'Outfit', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -32,98 +34,189 @@
     height: 100%;
 }
 
-/* Horizontal Step Navigation */
+/* ── Step Navigation Path ────────────────────────────────────────── */
 .witcher-wizard .wizard-navigation {
     display: flex;
     flex-direction: row;
-    background: rgba(0, 0, 0, 0.05);
-    border-bottom: 2px solid var(--wizard-border);
-    padding: 10px;
-    gap: 5px;
-    justify-content: space-around;
+    background: rgba(0, 0, 0, 0.8);
+    background: linear-gradient(to bottom, #1a1a1a, #000);
+    border-bottom: 3px solid var(--wizard-gold);
+    padding: 15px 40px;
+    gap: 0;
+    justify-content: space-between;
     align-items: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    z-index: 20;
 }
 
-
 .witcher-wizard .nav-item {
-    flex: 1;
-    text-align: center;
-    padding: 8px 5px;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    color: var(--wizard-text-muted);
     display: flex;
     flex-direction: column;
     align-items: center;
-    line-height: 1.1;
-    min-height: 45px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    z-index: 2;
+    padding: 10px;
+    min-width: 80px;
+}
+
+.witcher-wizard .nav-icon-container {
+    width: 45px;
+    height: 45px;
+    background: #222;
+    border: 2px solid var(--wizard-border);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
     justify-content: center;
+    font-size: 1.2rem;
+    color: var(--wizard-text-muted);
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin-bottom: 8px;
+}
+
+.witcher-wizard .nav-label-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
 }
 
 .witcher-wizard .nav-item .step-num {
-    font-size: 0.75rem;
+    font-size: 0.65rem;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
+    color: var(--wizard-gold);
+    font-weight: bold;
     margin-bottom: 2px;
 }
 
 .witcher-wizard .nav-item .step-label {
-    font-size: 0.85rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #ccc;
+    white-space: nowrap;
+}
+
+/* Hover State */
+.witcher-wizard .nav-item:hover .nav-icon-container {
+    border-color: var(--wizard-gold);
+    color: var(--wizard-gold);
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(184, 134, 11, 0.4);
+}
+
+.witcher-wizard .nav-item:hover .nav-label-container {
+    opacity: 1;
+}
+
+/* Active State */
+.witcher-wizard .nav-item.active .nav-icon-container {
+    background: var(--wizard-accent);
+    border-color: var(--wizard-gold);
+    color: #fff;
+    transform: scale(1.15);
+    box-shadow: 0 0 20px rgba(139, 0, 0, 0.6), 0 0 5px var(--wizard-gold);
+}
+
+.witcher-wizard .nav-item.active .nav-label-container {
+    opacity: 1;
+}
+
+.witcher-wizard .nav-item.active .step-label {
+    color: #fff;
     font-weight: 800;
 }
 
-.witcher-wizard .nav-item:hover {
-    background: rgba(139, 0, 0, 0.1);
-    color: var(--wizard-accent);
+/* Completed State */
+.witcher-wizard .nav-item.completed .nav-icon-container {
+    border-color: #4a4;
+    color: #4a4;
 }
 
-.witcher-wizard .nav-item.active {
-    background: var(--wizard-accent);
-    color: white;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.witcher-wizard .nav-item.completed {
-    color: var(--wizard-text-dark);
-}
-
-.witcher-wizard .nav-item.completed::after {
+.witcher-wizard .nav-item.completed .nav-icon-container::after {
     content: '\f00c';
     font-family: 'Font Awesome 6 Free';
-    font-size: 0.7rem;
-    margin-top: 2px;
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    background: #000;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #4a4;
 }
 
-/* Content Area (High Specificity Fix for V14) */
+/* Enhanced Navigation Connectors */
+.witcher-wizard .nav-connector {
+    flex: 1;
+    height: 4px;
+    background: rgba(0, 0, 0, 0.4);
+    margin: 0 -15px;
+    transform: translateY(-28px);
+    z-index: 1;
+    position: relative;
+    border-radius: 2px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.5);
+    transition: all 0.3s ease;
+}
+
+.witcher-wizard .nav-item.completed + .nav-connector,
+.witcher-wizard .nav-item.active + .nav-connector {
+    background: linear-gradient(90deg, var(--wizard-gold), #ffd700);
+    box-shadow: 0 0 8px rgba(184, 134, 11, 0.5), inset 0 1px 1px rgba(255,255,255,0.3);
+}
+
+.witcher-wizard .nav-item.completed + .nav-connector {
+    background: #4a4;
+    box-shadow: 0 0 8px rgba(68, 170, 68, 0.4);
+}
+
+/* ── Content Area: Professional Parchment ────────────────────────── */
 form.witcher-wizard .wizard-content {
-    padding: 25px;
+    padding: 35px;
     flex: 1;
     overflow-y: auto !important;
     overflow-x: hidden;
     min-height: 0;
     scrollbar-width: thin;
     scrollbar-color: var(--wizard-accent) transparent;
-    background: rgba(255, 255, 255, 0.85); /* Frost effect */
-    backdrop-filter: blur(8px);
-    margin: 15px;
-    border-radius: 8px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    
+    /* Elegant Parchment Texture */
+    background: var(--wizard-parchment) url('/systems/TheWitcherItaNewSystem/assets/images/scroll-unfurled.png');
+    background-blend-mode: multiply;
+    background-size: cover;
+    
+    margin: 20px 40px;
+    border-radius: 6px;
+    border: 1px solid var(--wizard-border);
+    box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.7),
+        inset 0 0 40px rgba(102, 85, 68, 0.3);
+    
+    position: relative;
 }
+
+/* Decorative corner ornaments removed to avoid 404s */
 
 .witcher-wizard h2 {
-    color: var(--wizard-accent);
+    color: var(--wizard-accent) !important;
     border-bottom: 2px solid var(--wizard-accent);
-    margin-bottom: 15px;
+    margin-top: 0;
+    margin-bottom: 25px;
     font-family: 'MedievalSharp', serif;
-    text-shadow: none;
-}
-
-.witcher-wizard .step-background h3,
-.witcher-wizard .derived-stats-preview h3 {
-    color: #444 !important;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
 }
 
 .witcher-wizard p {
@@ -132,115 +225,214 @@ form.witcher-wizard .wizard-content {
     margin-bottom: 20px;
 }
 
-.witcher-wizard .money-selection {
+/* Points Reservoir Stylized */
+.witcher-wizard .points-reservoir {
     display: flex;
     align-items: center;
     gap: 15px;
-    margin-bottom: 24px;
-    background: rgba(139, 0, 0, 0.06);
-    padding: 14px 20px;
-    border-radius: 8px;
+    background: rgba(139, 0, 0, 0.08);
     border: 2px solid var(--wizard-border);
+    border-radius: 12px;
+    padding: 12px 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
     max-width: fit-content;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.witcher-wizard .money-selection .money-icon {
-    font-size: 1.5rem;
-    color: #b8860b;
+.witcher-wizard .points-reservoir.overbudget {
+    background: rgba(139, 0, 0, 0.2);
+    border-color: #f44;
+    animation: pulse-border 1.5s infinite;
 }
 
-.witcher-wizard .money-selection label {
+.witcher-wizard .points-reservoir .points-icon {
+    font-size: 1.8rem;
+    color: var(--wizard-accent);
+}
+
+.witcher-wizard .points-reservoir .points-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.witcher-wizard .points-reservoir .label {
+    text-transform: uppercase;
+    font-size: 0.7rem;
     font-weight: bold;
-    font-size: 1rem;
-    color: var(--wizard-text-dark) !important;
+    letter-spacing: 1px;
+    color: var(--wizard-text-muted);
 }
 
-.witcher-wizard .money-selection .money-hint {
-    font-size: 0.8rem;
-    color: var(--wizard-text-muted) !important;
-    font-style: italic;
+.witcher-wizard .points-reservoir .value {
+    font-family: 'MedievalSharp', serif;
+    font-size: 1.8rem;
+    line-height: 1;
+    color: var(--wizard-text-dark);
 }
 
-.witcher-wizard .money-selection input {
-    width: 110px;
-    padding: 7px 10px;
-    border: 2px solid var(--wizard-border);
-    border-radius: 5px;
-    font-weight: bold;
-    font-size: 1.1rem;
-    text-align: center;
-    background: white;
-    color: var(--wizard-text-dark) !important;
-}
-
-/* Horizontal Stats Layout */
 .witcher-wizard .stats-grid {
     display: flex;
     flex-direction: column;
-    gap: 8px; /* Tighter spacing */
+    gap: 12px;
+    margin-bottom: 30px;
 }
 
-.witcher-wizard .stat-row {
+/* Stat Vial Row */
+.witcher-wizard .stat-vial-row {
     display: grid;
-    grid-template-columns: 80px 120px 1fr; /* Label + Controls + Description */
+    grid-template-columns: 140px 1fr 140px 30px;
     align-items: center;
-    gap: 15px;
-    padding: 8px 12px;
-    background: rgba(255, 255, 255, 0.4);
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-    transition: background 0.2s;
+    gap: 20px;
+    padding: 10px 18px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid var(--wizard-border);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+    transition: all 0.2s ease;
 }
 
-.witcher-wizard .stat-row:hover {
-    background: rgba(255, 255, 255, 0.6);
+.witcher-wizard .stat-vial-row:hover {
+    background: rgba(255, 255, 255, 0.82);
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
-.witcher-wizard .stat-row label {
-    font-weight: bold;
+.witcher-wizard .stat-identity {
+    display: flex;
+    flex-direction: column;
+}
+
+.witcher-wizard .stat-label {
+    font-weight: 800;
     color: var(--wizard-text-dark);
+    font-size: 0.95rem;
+}
+
+.witcher-wizard .stat-short {
+    font-size: 0.75rem;
     text-transform: uppercase;
-    font-size: 0.9rem;
+    color: var(--wizard-accent);
+    font-weight: bold;
+}
+
+.witcher-wizard .vial-frame {
+    height: 12px;
+    background: #e0e0e0;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.witcher-wizard .vial-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #8b0000, #c00);
+    border-radius: 10px;
+    transition: width 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 0 10px rgba(139, 0, 0, 0.3);
 }
 
 .witcher-wizard .stat-controls {
     display: flex;
     align-items: center;
-    gap: 5px;
-    justify-content: center;
+    gap: 8px;
 }
 
-.witcher-wizard .stat-controls input {
-    width: 40px;
-    height: 30px;
-    text-align: center;
-    font-weight: bold;
-    background: white;
-    color: #000 !important; /* Darker numeric text */
-    border: 1px solid var(--wizard-border);
-    border-radius: 3px;
-    font-size: 1.1rem;
-}
-
-.witcher-wizard .stat-controls button {
-    width: 28px;
-    height: 28px;
-    padding: 0;
+.witcher-wizard .ctrl-btn {
+    width: 26px;
+    height: 26px;
+    background: #444;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--wizard-accent);
-    color: white;
-    border: none;
-    border-radius: 3px;
 }
 
-.witcher-wizard .stat-description {
-    font-size: 0.85rem;
+.witcher-wizard .ctrl-btn:hover {
+    background: var(--wizard-accent);
+    transform: translateY(-1px);
+}
+
+.witcher-wizard .stat-input {
+    width: 45px;
+    height: 32px !important;
+    background: white !important;
+    border: 1px solid var(--wizard-border) !important;
+    border-radius: 4px;
+    text-align: center;
+    font-family: 'MedievalSharp', serif;
+    font-size: 1.2rem !important;
+    font-weight: bold;
+    color: var(--wizard-text-dark) !important;
+    padding: 0 !important;
+}
+
+.witcher-wizard .stat-info-tip {
+    color: var(--wizard-gold);
+    cursor: help;
+    text-align: center;
+    font-size: 1.1rem;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+}
+
+.witcher-wizard .stat-vial-row:hover .stat-info-tip {
+    opacity: 1;
+}
+
+/* Derived Pills */
+.witcher-wizard .derived-stats-preview {
+    background: rgba(0, 0, 0, 0.03);
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px dashed var(--wizard-border);
+}
+
+.witcher-wizard .derived-stats-preview h3 {
+    font-family: 'MedievalSharp', serif;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: var(--wizard-accent) !important;
+    border-bottom: 1px solid rgba(139, 0, 0, 0.2);
+    padding-bottom: 8px;
+}
+
+.witcher-wizard .derived-pills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.witcher-wizard .derived-pill {
+    background: white;
+    border: 1px solid var(--wizard-border);
+    border-radius: 6px;
+    padding: 8px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.witcher-wizard .derived-pill .label {
+    font-size: 0.75rem;
+    font-variant: small-caps;
+    font-weight: bold;
     color: var(--wizard-text-muted);
-    font-style: italic;
-    line-height: 1.2;
+}
+
+.witcher-wizard .derived-pill .value {
+    font-weight: 800;
+    color: var(--wizard-accent);
 }
 
 /* Skills Layout */
@@ -265,22 +457,46 @@ form.witcher-wizard .wizard-content {
     font-weight: bold;
 }
 
+/* ── Points Display: Thematic Coins/Vials ───────────────────────── */
 .witcher-wizard .points-display {
-    background: var(--wizard-accent);
-    color: #ffffff !important;
-    text-shadow: none !important;
-    padding: 10px 15px;
-    border-radius: 4px;
+    background: linear-gradient(135deg, #441111 0%, #8b0000 100%);
+    border: 2px solid var(--wizard-gold);
+    color: #fff !important;
+    padding: 12px 20px;
+    border-radius: 8px;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     text-align: center;
-    font-size: 1.1rem;
-    box-shadow: 0 2px 4px var(--wizard-shadow);
+    font-size: 1.2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-family: 'MedievalSharp', serif;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.witcher-wizard .points-value {
+    background: var(--wizard-gold);
+    color: #000 !important;
+    padding: 2px 10px;
+    border-radius: 4px;
+    min-width: 40px;
+    display: inline-block;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
 }
 
 .witcher-wizard .points-value.negative {
-    color: #ff9999;
-    text-decoration: underline;
+    background: #e63946;
+    color: #fff !important;
+    animation: pulse-red 2s infinite;
+}
+
+@keyframes pulse-red {
+    0% { box-shadow: 0 0 0 0 rgba(230, 57, 70, 0.7); }
+    70% { box-shadow: 0 0 0 10px rgba(230, 57, 70, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(230, 57, 70, 0); }
 }
 
 /* Footer Controls */
@@ -471,6 +687,103 @@ form.witcher-wizard .wizard-content {
     box-shadow: 0 2px 5px var(--wizard-shadow);
     width: 180px;
     min-height: 220px;
+}
+
+/* Background Step Enhancements */
+.witcher-wizard .step-background .background-section {
+    background: rgba(255, 255, 255, 0.45);
+    border: 1px solid var(--wizard-border);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.witcher-wizard .step-background h3 {
+    font-family: 'MedievalSharp', serif;
+    color: var(--wizard-accent) !important;
+    border-bottom: 2px solid rgba(139, 0, 0, 0.15);
+    padding-bottom: 6px;
+    margin-top: 0;
+    margin-bottom: 18px;
+    font-size: 1.3rem;
+}
+
+.witcher-wizard .step-background .events-list {
+    background: rgba(0, 0, 0, 0.04);
+    border-radius: 6px;
+    padding: 10px;
+    border: 1px inset rgba(0,0,0,0.1);
+    max-height: 250px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+}
+
+.witcher-wizard .step-background .event-item {
+    padding: 8px 12px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    display: flex;
+    gap: 12px;
+    font-size: 0.85rem;
+}
+
+.witcher-wizard .step-background .event-age {
+    color: var(--wizard-accent);
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+.witcher-wizard .btn-roll-events {
+    width: 100%;
+    padding: 10px;
+    background: var(--wizard-accent);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 0 4px 10px rgba(139, 0, 0, 0.2);
+}
+
+.witcher-wizard .btn-roll-events:hover {
+    background: #a00;
+    transform: translateY(-2px);
+}
+
+/* Sidebar Wizard Button Scaling */
+.wizard-button {
+    background: linear-gradient(to right, #2a2a2a, #3a3a3a) !important;
+    color: #ffd700 !important;
+    border: 1px solid #b8860b !important;
+    border-radius: 4px !important;
+    padding: 8px !important;
+    margin: 4px 0 !important;
+    font-family: 'MedievalSharp', serif !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.4) !important;
+    transition: all 0.2s !important;
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 10px !important;
+}
+
+.wizard-button i {
+    color: #ffd700 !important;
+    font-size: 1.1rem !important;
+}
+
+.wizard-button:hover {
+    background: linear-gradient(to right, #3a3a3a, #4a4a4a) !important;
+    border-color: #ffd700 !important;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3) !important;
 }
 
 .witcher-wizard .profession-card img,

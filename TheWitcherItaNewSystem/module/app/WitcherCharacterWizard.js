@@ -395,19 +395,20 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
     }
 
     _getStepList() {
-        const labels = [
-            "WITCHER.Wizard.Step.Race.Title",
-            "WITCHER.Wizard.Step.Background.Title",
-            "WITCHER.Wizard.Step.Profession.Title",
-            "WITCHER.Wizard.Step.Stats.Title",
-            "WITCHER.Wizard.Step.Skills.Title",
-            "WITCHER.Wizard.Step.Gear.Title",
-            "WITCHER.Wizard.Step.Finalize.Title"
+        const steps = [
+            { label: "WITCHER.Wizard.Step.Race.Title", icon: "fa-solid fa-person-rays" },
+            { label: "WITCHER.Wizard.Step.Background.Title", icon: "fa-solid fa-scroll" },
+            { label: "WITCHER.Wizard.Step.Profession.Title", icon: "fa-solid fa-sword" },
+            { label: "WITCHER.Wizard.Step.Stats.Title", icon: "fa-solid fa-chart-simple" },
+            { label: "WITCHER.Wizard.Step.Skills.Title", icon: "fa-solid fa-book-open-reader" },
+            { label: "WITCHER.Wizard.Step.Gear.Title", icon: "fa-solid fa-bag-shopping" },
+            { label: "WITCHER.Wizard.Step.Finalize.Title", icon: "fa-solid fa-check-double" }
         ];
-        return labels.map((l, i) => ({
+        return steps.map((s, i) => ({
             id: i + 1,
             number: i + 1,
-            label: l,
+            label: s.label,
+            icon: s.icon,
             active: this.step === i + 1,
             complete: this.step > i + 1
         }));

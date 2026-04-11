@@ -24,6 +24,8 @@ import { registerQueries } from './setup/queries.js';
 
 Hooks.once('init', function () {
     console.log('TheWitcherItaNewSystem | init system');
+    console.log('TheWitcherItaNewSystem | Supported Languages:', CONFIG.supportedLanguages);
+    console.log('TheWitcherItaNewSystem | Current Lang:', game.i18n.lang);
     registerHooks();
 
     CONFIG.WITCHER = WITCHER;

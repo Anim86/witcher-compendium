@@ -4,7 +4,7 @@
     "type": "spell",
     "img": "modules/witcher-compendium/assets/MAGIA/base/witcher-spells/Pag101_La Magia in The Witcher_01.webp",
     "system": {
-        "description": "<p>àPàoàlàiàmàoàràfàiàsàmàoà àcàoànàsàeànàtàeà àaàlàlàâà€à™àiànàcàaànàtàaàtàoàràeà àdàià àaàsàsàuà-à àmàeàràeà àlàaà àfàoàràmàaà àdàià àuànà àsàeàràpàeànàtàeà,à àdàià àuànà àgàaàtàtàoà,à àdàià àuànà àuàcàcàeàlàlàoà àoà àdàià àuànà àcàaànàeà.à àMàeànàtàràeà àsàià àtàràoàvàaà àiànà àqàuàeàsàtàoà àsàtàaàtàoà àpàoàsàsàiàeàdàeà àlàeà àsàtàaàtàiàsàtàiàcàhàeà àfàiàsàiàcàhàeà àdàià àqàuàeàlàlàâà€à™àaànàiàmàaàlàeà à(àvàeàdàià àBàeàsàtàiàaàràiàoà,à àpàaàgà.à3à1à0à)à.à àOàgànàià àoàgàgàeàtàtàoà àiànàdàoàsàsàaàtàoà àoà àtàràaàsàpàoàràtàaàtàoà àsàià àtàràaà-à àsàfàoàràmàaà àcàoànà àlàuàià.à àPàeàrà àtàoàrànàaàràeà ànàeàlàlàaà àsàuàaà àfàoàràmàaà ànàoàràmàaàlàeà àdàeàvàeà àlàaànàcàiàaàràeà ànàuàoàvàaàmàeànàtàeà àlàâà€à™àiànàcàaànàtàeàsàiàmàoà.à</p>",
+        "description": "<p>Polimorfismo consente all’incantatore di assu- mere la forma di un serpente, di un gatto, di un uccello o di un cane. Mentre si trova in questo stato possiede le statistiche fisiche di quell’animale (vedi Bestiario, pag.310). Ogni oggetto indossato o trasportato si tra- sforma con lui. Per tornare nella sua forma normale deve lanciare nuovamente l’incantesimo.</p>",
         "quantity": "1",
         "weight": 0,
         "cost": 0,
@@ -14,9 +14,9 @@
         "source": "fire",
         "stamina": 22,
         "staminaIsVar": false,
-        "effect": "Polimorfismo consente allâ€™incantatore di assu- mere la forma di un serpente, di un gatto, di un uccello o di un cane. Mentre si trova in questo stato possiede le statistiche fisiche di quellâ€™animale (vedi Bestiario, pag.310). Ogni oggetto indossato o trasportato si tra- sforma con lui. Per tornare nella sua forma normale deve lanciare nuovamente lâ€™incantesimo.",
+        "effect": "Polimorfismo consente all’incantatore di assu- mere la forma di un serpente, di un gatto, di un uccello o di un cane. Mentre si trova in questo stato possiede le statistiche fisiche di quell’animale (vedi Bestiario, pag.310). Ogni oggetto indossato o trasportato si tra- sforma con lui. Per tornare nella sua forma normale deve lanciare nuovamente l’incantesimo.",
         "range": "Personale",
-        "duration": "FinchÃ© non viene rilanciato",
+        "duration": "Finché non viene rilanciato",
         "defence": "Nessuna",
         "damageProperties": {
             "armorPiercing": false,
