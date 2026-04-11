@@ -1,10 +1,16 @@
 name: Release Foundry Packages
+run-name: Release ${{ inputs.version || github.ref_name }} by @${{ github.actor }}
 
 on:
   push:
     tags:
       - 'v*'
   workflow_dispatch:
+    inputs:
+      version:
+        description: 'Versione da rilasciare (es. v14.1.47)'
+        required: true
+        default: 'v14.1.47'
 
 permissions:
   contents: write
@@ -23,7 +29,8 @@ jobs:
       - name: Set Version Variables
         id: vars
         run: |
-          V_VERSION=${GITHUB_REF_NAME}
+          # Usa l'input se presente (manuale), altrimenti il tag (push)
+          V_VERSION=${{ inputs.version || github.ref_name }}
           VERSION=${V_VERSION#v}
           echo "V_VERSION=$V_VERSION" >> $GITHUB_ENV
           echo "VERSION=$VERSION" >> $GITHUB_ENV
