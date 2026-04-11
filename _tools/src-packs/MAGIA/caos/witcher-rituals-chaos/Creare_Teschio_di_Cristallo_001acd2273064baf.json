@@ -1,17 +1,17 @@
-﻿{
-    "name":  "Creare Teschio di Cristallo",
-    "_id":  "001acd2273064baf",
-    "system":  {
-                   "stamina":  5,
-                   "cost":  5,
-                   "description":  "\u003cp\u003einfondendo di quintessenza il teschio di un cane, gatto, uccello o serpente, il ritualista crea un te- schio di cristallo, che puÃ² essere usato per ricreare lâ€™ani- male (vedere pag. 119). Se la creatura cosÃ¬ generata muo- re, il teschio diventa inattivo, ma puÃ² essere ricaricato ripetendo il rituale con solo 2 UnitÃ  di Quintessenza.\u003c/p\u003e",
-                   "class":  "ritual",
-                   "sourcebook":  "TC 104"
-               },
-    "type":  "ritual",
-    "img":  "modules/witcher-compendium/assets/optimized/assets/Immagini/Placeholder.webp",
-    "_stats":  {
-                   "coreVersion":  14,
-                   "systemId":  "TheWitcherItaNewSystem"
-               }
+{
+    "name": "Creare Teschio di Cristallo",
+    "_id": "001acd2273064baf",
+    "system": {
+        "stamina": 5,
+        "cost": 5,
+        "description": "<p>infondendo di quintessenza il teschio di un cane, gatto, uccello o serpente, il ritualista crea un te- schio di cristallo, che puÃ² essere usato per ricreare lâ€™ani- male (vedere pag. 119). Se la creatura cosÃ¬ generata muo- re, il teschio diventa inattivo, ma puÃ² essere ricaricato ripetendo il rituale con solo 2 UnitÃ  di Quintessenza.</p>",
+        "class": "ritual",
+        "sourcebook": "TC 104"
+    },
+    "type": "ritual",
+    "img": "modules/witcher-compendium/assets/MAGIA/caos/witcher-rituals-chaos/Placeholder.webp",
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
 }

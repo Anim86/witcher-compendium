@@ -1,67 +1,61 @@
-﻿{
-    "_id":  "0ca81fcd4de64234",
-    "name":  "Rhewi",
-    "type":  "spell",
-    "img":  "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag101_La Magia in The Witcher_01.webp",
-    "system":  {
-                   "description":  "\u003cp\u003eàRàhàeàwàià àcàràeàaà àuànàoà àsàpàeàsàsàoà àsàtàràaàtàoà àdàià àgàhàiàaàcàcàiàoà àaàtàtàoàrànàoà àaàlà àbàeàràsàaàgàlàiàoà àpàeàrà àlàaà àdàuàràaàtàaà àdàeàlàlàâà€à™àiànàcàaànàtàeàsàiàmàoà.à àIàlà àbàeàràsàaàgàlàiàoà àÃà¨à àcàoànàsàiàdàeàràaàtàoà àcàoànàgàeàlàaàtàoà.à àSàeà àuàtàiàlàiàzàzàaàtàoà àsàuà àuànà àbàeàràsàaàgàlàiàoà ànàoànà àvàiàvàeànàtàeà,à àqàuàeàsàtàoà ànàoànà àpàuàÃà²à àeàsàsàeàràeà àmàaànàiàpàoàlàaàtàoà àoà àsàpàoàsàtàaàtàoà.à\u003c/p\u003e",
-                   "quantity":  "1",
-                   "weight":  0,
-                   "cost":  0,
-                   "sourcebook":  "MB 103",
-                   "class":  "Mage",
-                   "level":  "novice",
-                   "source":  "fire",
-                   "stamina":  2,
-                   "staminaIsVar":  false,
-                   "effect":  "Rhewi crea uno spesso strato di ghiaccio attorno al bersaglio per la durata dellâ€™incantesimo. Il bersaglio Ã¨ considerato congelato. Se utilizzato su un bersaglio non vivente, questo non puÃ² essere manipolato o spostato.",
-                   "range":  "8m",
-                   "duration":  "1d10 Round",
-                   "defence":  "Schivare",
-                   "damageProperties":  {
-                                            "armorPiercing":  false,
-                                            "improvedArmorPiercing":  false,
-                                            "ablating":  false,
-                                            "crushingForce":  false,
-                                            "damageIsAblation":  false,
-                                            "stun":  0,
-                                            "damageToAllLocations":  false,
-                                            "bypassesWornArmor":  false,
-                                            "bypassesNaturalArmor":  false,
-                                            "defenseDifferenceMultiplier":  false,
-                                            "defenseMultiplierCap":  5,
-                                            "variableDamage":  false,
-                                            "effects":  [
-
-                                                        ],
-                                            "oilEffect":  "",
-                                            "silverTrait":  false,
-                                            "silverDamage":  "",
-                                            "isMeteorite":  false,
-                                            "isNonLethal":  false
-                                        },
-                   "regionProperties":  {
-                                            "createRegionFromTemplate":  false,
-                                            "behaviours":  {
-                                                               "tokenEnter":  null,
-                                                               "tokenTurnStart":  null,
-                                                               "tokenMoveWithin":  null,
-                                                               "tokenExit":  null
-                                                           }
-                                        },
-                   "attackOptions":  [
-                                         "spell"
-                                     ],
-                   "spellAttackSkill":  "spellcast"
-               },
-    "effects":  [
-
-                ],
-    "flags":  {
-
-              },
-    "_stats":  {
-                   "systemId":  "TheWitcherItaNewSystem",
-                   "coreVersion":  14
-               }
+{
+    "_id": "0ca81fcd4de64234",
+    "name": "Rhewi",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA/base/witcher-spells/Pag101_La Magia in The Witcher_01.webp",
+    "system": {
+        "description": "<p>àRàhàeàwàià àcàràeàaà àuànàoà àsàpàeàsàsàoà àsàtàràaàtàoà àdàià àgàhàiàaàcàcàiàoà àaàtàtàoàrànàoà àaàlà àbàeàràsàaàgàlàiàoà àpàeàrà àlàaà àdàuàràaàtàaà àdàeàlàlàâà€à™àiànàcàaànàtàeàsàiàmàoà.à àIàlà àbàeàràsàaàgàlàiàoà àÃà¨à àcàoànàsàiàdàeàràaàtàoà àcàoànàgàeàlàaàtàoà.à àSàeà àuàtàiàlàiàzàzàaàtàoà àsàuà àuànà àbàeàràsàaàgàlàiàoà ànàoànà àvàiàvàeànàtàeà,à àqàuàeàsàtàoà ànàoànà àpàuàÃà²à àeàsàsàeàràeà àmàaànàiàpàoàlàaàtàoà àoà àsàpàoàsàtàaàtàoà.à</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "MB 103",
+        "class": "Mage",
+        "level": "novice",
+        "source": "fire",
+        "stamina": 2,
+        "staminaIsVar": false,
+        "effect": "Rhewi crea uno spesso strato di ghiaccio attorno al bersaglio per la durata dellâ€™incantesimo. Il bersaglio Ã¨ considerato congelato. Se utilizzato su un bersaglio non vivente, questo non puÃ² essere manipolato o spostato.",
+        "range": "8m",
+        "duration": "1d10 Round",
+        "defence": "Schivare",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
 }

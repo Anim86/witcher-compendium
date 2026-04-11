@@ -1,67 +1,61 @@
-﻿{
-    "_id":  "57e3266dd0c5432c",
-    "name":  "Maledizione di Sedna",
-    "type":  "spell",
-    "img":  "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag101_La Magia in The Witcher_01.webp",
-    "system":  {
-                   "description":  "\u003cp\u003eàQàuàeàsàtàoà àiànàcàaànàtàeàsàiàmàoà àpàràeànàdàeà àiàlà ànàoàmàeà àdàaàlà àtàuàmàuàlà-à àtàuàoàsàoà àAàbàiàsàsàoà àdàià àSàeàdànàaà,à àiànà àcàuàià àaàvàvàeànàtàuàràaàràsàià àÃà¨à àcàoànàsàiàdàeàràaàtàoà àuànà àvàiàaàgàgàiàoà àsàeànàzàaà àràiàtàoàrànàoà àpàeàrà àlàeà ànàaàvàià.à àCàràeàaà àuànà àpàoàtàeànàtàeà àvàoàrà-à àtàiàcàeà ànàeàlàlàâà€à™àaàcàqàuàaà,à àiànà àuànàâà€à™àaàràeàaà àdàià à4à àmàeàtàràià.à àOàgànàià àbàeàràsàaàgàlàiàoà àeànàtàràoà à5àmà àdàeàvàeà àsàuàpàeàràaàràeà àuànàaà àpàràoàvàaà àdàià àNàuàoàtàaàràeà àpàaàràià àaàlàlàaà àpàràoàvàaà àdàià àLàaànàcàiàaàràeà àIànàcàaànàtàeàsàiàmàià àdàeàlàlàâà€à™àiànàcàaànàtàaàtàoàràeà àoà àfàiànàiàràeà àràiàsàuàcàcàhàiàaà-à àtàoàsàoàtàtàâà€à™àaàcàqàuàaà.à àSàià àdàeàvàeà àeàfàfàeàtàtàuàaàràeà àuànàaà àpàràoàvàaà,à àoàgànàià àràoàuànàdà,à àoà àràiàmàaànàeàràeà àsàoàtàtàâà€à™àaàcàqàuàaà,à àcàoànà àiàlà àràiàsàcàhàiàoà àdàià àaàfàfàoàgàaàràeà.à\u003c/p\u003e",
-                   "quantity":  "1",
-                   "weight":  0,
-                   "cost":  0,
-                   "sourcebook":  "MB 103",
-                   "class":  "Mage",
-                   "level":  "novice",
-                   "source":  "fire",
-                   "stamina":  5,
-                   "staminaIsVar":  false,
-                   "effect":  "Questo incantesimo prende il nome dal tumul- tuoso Abisso di Sedna, in cui avventurarsi Ã¨ considerato un viaggio senza ritorno per le navi. Crea un potente vor- tice nellâ€™acqua, in unâ€™area di 4 metri. Ogni bersaglio entro 5m deve superare una prova di Nuotare pari alla prova di Lanciare Incantesimi dellâ€™incantatore o finire risucchia- tosottâ€™acqua. Si deve effettuare una prova, ogni round, o rimanere sottâ€™acqua, con il rischio di affogare.",
-                   "range":  "12m",
-                   "duration":  "Attiva (2 RES)",
-                   "defence":  "Schivare",
-                   "damageProperties":  {
-                                            "armorPiercing":  false,
-                                            "improvedArmorPiercing":  false,
-                                            "ablating":  false,
-                                            "crushingForce":  false,
-                                            "damageIsAblation":  false,
-                                            "stun":  0,
-                                            "damageToAllLocations":  false,
-                                            "bypassesWornArmor":  false,
-                                            "bypassesNaturalArmor":  false,
-                                            "defenseDifferenceMultiplier":  false,
-                                            "defenseMultiplierCap":  5,
-                                            "variableDamage":  false,
-                                            "effects":  [
-
-                                                        ],
-                                            "oilEffect":  "",
-                                            "silverTrait":  false,
-                                            "silverDamage":  "",
-                                            "isMeteorite":  false,
-                                            "isNonLethal":  false
-                                        },
-                   "regionProperties":  {
-                                            "createRegionFromTemplate":  false,
-                                            "behaviours":  {
-                                                               "tokenEnter":  null,
-                                                               "tokenTurnStart":  null,
-                                                               "tokenMoveWithin":  null,
-                                                               "tokenExit":  null
-                                                           }
-                                        },
-                   "attackOptions":  [
-                                         "spell"
-                                     ],
-                   "spellAttackSkill":  "spellcast"
-               },
-    "effects":  [
-
-                ],
-    "flags":  {
-
-              },
-    "_stats":  {
-                   "systemId":  "TheWitcherItaNewSystem",
-                   "coreVersion":  14
-               }
+{
+    "_id": "57e3266dd0c5432c",
+    "name": "Maledizione di Sedna",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA/base/witcher-spells/Pag101_La Magia in The Witcher_01.webp",
+    "system": {
+        "description": "<p>àQàuàeàsàtàoà àiànàcàaànàtàeàsàiàmàoà àpàràeànàdàeà àiàlà ànàoàmàeà àdàaàlà àtàuàmàuàlà-à àtàuàoàsàoà àAàbàiàsàsàoà àdàià àSàeàdànàaà,à àiànà àcàuàià àaàvàvàeànàtàuàràaàràsàià àÃà¨à àcàoànàsàiàdàeàràaàtàoà àuànà àvàiàaàgàgàiàoà àsàeànàzàaà àràiàtàoàrànàoà àpàeàrà àlàeà ànàaàvàià.à àCàràeàaà àuànà àpàoàtàeànàtàeà àvàoàrà-à àtàiàcàeà ànàeàlàlàâà€à™àaàcàqàuàaà,à àiànà àuànàâà€à™àaàràeàaà àdàià à4à àmàeàtàràià.à àOàgànàià àbàeàràsàaàgàlàiàoà àeànàtàràoà à5àmà àdàeàvàeà àsàuàpàeàràaàràeà àuànàaà àpàràoàvàaà àdàià àNàuàoàtàaàràeà àpàaàràià àaàlàlàaà àpàràoàvàaà àdàià àLàaànàcàiàaàràeà àIànàcàaànàtàeàsàiàmàià àdàeàlàlàâà€à™àiànàcàaànàtàaàtàoàràeà àoà àfàiànàiàràeà àràiàsàuàcàcàhàiàaà-à àtàoàsàoàtàtàâà€à™àaàcàqàuàaà.à àSàià àdàeàvàeà àeàfàfàeàtàtàuàaàràeà àuànàaà àpàràoàvàaà,à àoàgànàià àràoàuànàdà,à àoà àràiàmàaànàeàràeà àsàoàtàtàâà€à™àaàcàqàuàaà,à àcàoànà àiàlà àràiàsàcàhàiàoà àdàià àaàfàfàoàgàaàràeà.à</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "MB 103",
+        "class": "Mage",
+        "level": "novice",
+        "source": "fire",
+        "stamina": 5,
+        "staminaIsVar": false,
+        "effect": "Questo incantesimo prende il nome dal tumul- tuoso Abisso di Sedna, in cui avventurarsi Ã¨ considerato un viaggio senza ritorno per le navi. Crea un potente vor- tice nellâ€™acqua, in unâ€™area di 4 metri. Ogni bersaglio entro 5m deve superare una prova di Nuotare pari alla prova di Lanciare Incantesimi dellâ€™incantatore o finire risucchia- tosottâ€™acqua. Si deve effettuare una prova, ogni round, o rimanere sottâ€™acqua, con il rischio di affogare.",
+        "range": "12m",
+        "duration": "Attiva (2 RES)",
+        "defence": "Schivare",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
 }

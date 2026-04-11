@@ -1,59 +1,61 @@
-﻿{
-  "_id": "ad4bc5848b3a15ad",
-  "name": "Penna del Divino",
-  "type": "spell",
-  "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag101_La Magia in The Witcher_01.webp",
-  "system": {
-    "description": "<p>Invocazione da Prete di livello Maestro. Riscrive i ricordi di una vittima: spendendo 14 RES si nasconde un ricordo causando un'amnesia retroattiva, mentre con 16 RES si impianta un falso ricordo permanente. Se la vittima ha già subito l'effetto in passato, ottiene +5 per difendersi dai successivi tentativi di impianto.</p>",
-    "quantity": "1",
-    "weight": 0,
-    "cost": 0,
-    "sourcebook": "TC 94",
-    "class": "Invocations",
-    "level": "master",
-    "source": "Priest",
-    "stamina": 14,
-    "staminaIsVar": true,
-    "effect": "Riscrive i ricordi di una vittima. Spendendo 14 RES si nasconde un ricordo causando un'amnesia retroattiva; con 16 RES si impianta un falso ricordo.",
-    "range": "2m",
-    "duration": "Permanente",
-    "defence": "Resistere alla Magia",
-    "damageProperties": {
-      "armorPiercing": false,
-      "improvedArmorPiercing": false,
-      "ablating": false,
-      "crushingForce": false,
-      "damageIsAblation": false,
-      "stun": 0,
-      "damageToAllLocations": false,
-      "bypassesWornArmor": false,
-      "bypassesNaturalArmor": false,
-      "defenseDifferenceMultiplier": false,
-      "defenseMultiplierCap": 5,
-      "variableDamage": false,
-      "effects": [],
-      "oilEffect": "",
-      "silverTrait": false,
-      "silverDamage": "",
-      "isMeteorite": false,
-      "isNonLethal": false
+{
+    "_id": "ad4bc5848b3a15ad",
+    "name": "Penna del Divino",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA/caos/witcher-invocations/Pag101_La Magia in The Witcher_01.webp",
+    "system": {
+        "description": "<p>Invocazione da Prete di livello Maestro. Riscrive i ricordi di una vittima: spendendo 14 RES si nasconde un ricordo causando un'amnesia retroattiva, mentre con 16 RES si impianta un falso ricordo permanente. Se la vittima ha già subito l'effetto in passato, ottiene +5 per difendersi dai successivi tentativi di impianto.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "TC 94",
+        "class": "Invocations",
+        "level": "master",
+        "source": "Priest",
+        "stamina": 14,
+        "staminaIsVar": true,
+        "effect": "Riscrive i ricordi di una vittima. Spendendo 14 RES si nasconde un ricordo causando un'amnesia retroattiva; con 16 RES si impianta un falso ricordo.",
+        "range": "2m",
+        "duration": "Permanente",
+        "defence": "Resistere alla Magia",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast"
     },
-    "regionProperties": {
-      "createRegionFromTemplate": false,
-      "behaviours": {
-        "tokenEnter": null,
-        "tokenTurnStart": null,
-        "tokenMoveWithin": null,
-        "tokenExit": null
-      }
-    },
-    "attackOptions": ["spell"],
-    "spellAttackSkill": "spellcast"
-  },
-  "effects": [],
-  "flags": {},
-  "_stats": {
-    "systemId": "TheWitcherItaNewSystem",
-    "coreVersion": 14
-  }
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
 }

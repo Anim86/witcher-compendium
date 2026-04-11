@@ -1,28 +1,24 @@
-﻿{
-    "_id":  "6e71f47e4eaeb3cc",
-    "name":  "Trofeo: Pesta",
-    "type":  "item",
-    "img":  "modules/witcher-compendium/assets/optimized/assets/Immagini_Chaos/Pag119_Oggetti Magici_01.webp",
-    "system":  {
-                   "description":  "\u003cp\u003eIl personaggio è circondato da una nube di mosche. Gli avversari in mischia subiscono -2 alle proprie azioni e hanno una probabilità del 10% di divenire Malati. Tuttavia, le mosche causano una penalità di -2 a Eleganza, Persuasione e Seduzione.\u003c/p\u003e",
-                   "weight":  0,
-                   "cost":  0,
-                   "quantity":  1,
-                   "sourcebook":  "TC 127"
-               },
-    "effects":  [
-
-                ],
-    "folder":  null,
-    "sort":  0,
-    "ownership":  {
-                      "default":  0
-                  },
-    "flags":  {
-
-              },
-    "_stats":  {
-                   "coreVersion":  14,
-                   "systemId":  "TheWitcherItaNewSystem"
-               }
+{
+    "_id": "6e71f47e4eaeb3cc",
+    "name": "Trofeo: Pesta",
+    "type": "item",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/caos/witcher-trophies/Pag119_Oggetti Magici_01.webp",
+    "system": {
+        "description": "<p>Il personaggio è circondato da una nube di mosche. Gli avversari in mischia subiscono -2 alle proprie azioni e hanno una probabilità del 10% di divenire Malati. Tuttavia, le mosche causano una penalità di -2 a Eleganza, Persuasione e Seduzione.</p>",
+        "weight": 0,
+        "cost": 0,
+        "quantity": 1,
+        "sourcebook": "TC 127"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
 }

@@ -1,70 +1,64 @@
-﻿{
-    "_id":  "2a17afa86f65433c",
-    "name":  "Vampata del Korath",
-    "type":  "spell",
-    "img":  "modules/witcher-compendium/assets/optimized/assets/Immagini_Chaos/Pag092_Incantesimi da Mago_01.webp",
-    "system":  {
-                   "description":  "\u003cp\u003eVampata del Korath genera attorno al mago unâ€™aura di calore, con un raggio massimo di 40m, che fiacca la Resistenza altrui. Ogni creatura presente nellâ€™area al momento del lancio riduce la propria RES di 2d6, e finchÃ© rimane allâ€™interno non puÃ² usare lâ€™A- zione Recupero. Ogni volta che qualcuno inizia il suo Turno nellâ€™area o vi entra perde altri 2d6 RES. Chi viene ridotto a RES 0 da questo incantesimo sviene e non si riprende finchÃ© non torna a RES 20 e supera un tiro di Grinta.\u003c/p\u003e",
-                   "quantity":  "1",
-                   "weight":  0,
-                   "cost":  0,
-                   "sourcebook":  "TC 83",
-                   "class":  "Mage",
-                   "level":  "master",
-                   "source":  "mixedElements",
-                   "stamina":  0,
-                   "staminaIsVar":  false,
-                   "effect":  "Vampata del Korath genera attorno al mago unâ€™aura di calore, con un raggio massimo di 40m, che fiacca la Resistenza altrui. Ogni creatura presente nellâ€™area al momento del lancio riduce la propria RES di 2d6, e finchÃ© rimane allâ€™interno non puÃ² usare lâ€™A- zione Recupero. Ogni volta che qualcuno inizia il suo Turno nellâ€™area o vi entra perde altri 2d6 RES. Chi viene ridotto a RES 0 da questo incantesimo sviene e non si riprende finchÃ© non torna a RES 20 e supera un tiro di Grinta.",
-                   "range":  "100m",
-                   "duration":  "Attiva (4 RES)",
-                   "defence":  "Nessuna",
-                   "damageProperties":  {
-                                            "armorPiercing":  false,
-                                            "improvedArmorPiercing":  false,
-                                            "ablating":  false,
-                                            "crushingForce":  false,
-                                            "damageIsAblation":  false,
-                                            "stun":  0,
-                                            "damageToAllLocations":  false,
-                                            "bypassesWornArmor":  false,
-                                            "bypassesNaturalArmor":  false,
-                                            "defenseDifferenceMultiplier":  false,
-                                            "defenseMultiplierCap":  5,
-                                            "variableDamage":  false,
-                                            "effects":  [
-
-                                                        ],
-                                            "oilEffect":  "",
-                                            "silverTrait":  false,
-                                            "silverDamage":  "",
-                                            "isMeteorite":  false,
-                                            "isNonLethal":  false
-                                        },
-                   "regionProperties":  {
-                                            "createRegionFromTemplate":  false,
-                                            "behaviours":  {
-                                                               "tokenEnter":  null,
-                                                               "tokenTurnStart":  null,
-                                                               "tokenMoveWithin":  null,
-                                                               "tokenExit":  null
-                                                           }
-                                        },
-                   "attackOptions":  [
-                                         "spell"
-                                     ],
-                   "spellAttackSkill":  "spellcast",
-                   "causeDamages":  true,
-                   "damage":  "2d6",
-                   "damageType":  "elemental"
-               },
-    "effects":  [
-
-                ],
-    "flags":  {
-
-              },
-    "_stats":  {
-                   "coreVersion":  14,
-                   "systemId":  "TheWitcherItaNewSystem"
-               }
+{
+    "_id": "2a17afa86f65433c",
+    "name": "Vampata del Korath",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA/caos/witcher-spells-chaos/Pag092_Incantesimi da Mago_01.webp",
+    "system": {
+        "description": "<p>Vampata del Korath genera attorno al mago unâ€™aura di calore, con un raggio massimo di 40m, che fiacca la Resistenza altrui. Ogni creatura presente nellâ€™area al momento del lancio riduce la propria RES di 2d6, e finchÃ© rimane allâ€™interno non puÃ² usare lâ€™A- zione Recupero. Ogni volta che qualcuno inizia il suo Turno nellâ€™area o vi entra perde altri 2d6 RES. Chi viene ridotto a RES 0 da questo incantesimo sviene e non si riprende finchÃ© non torna a RES 20 e supera un tiro di Grinta.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "TC 83",
+        "class": "Mage",
+        "level": "master",
+        "source": "mixedElements",
+        "stamina": 0,
+        "staminaIsVar": false,
+        "effect": "Vampata del Korath genera attorno al mago unâ€™aura di calore, con un raggio massimo di 40m, che fiacca la Resistenza altrui. Ogni creatura presente nellâ€™area al momento del lancio riduce la propria RES di 2d6, e finchÃ© rimane allâ€™interno non puÃ² usare lâ€™A- zione Recupero. Ogni volta che qualcuno inizia il suo Turno nellâ€™area o vi entra perde altri 2d6 RES. Chi viene ridotto a RES 0 da questo incantesimo sviene e non si riprende finchÃ© non torna a RES 20 e supera un tiro di Grinta.",
+        "range": "100m",
+        "duration": "Attiva (4 RES)",
+        "defence": "Nessuna",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast",
+        "causeDamages": true,
+        "damage": "2d6",
+        "damageType": "elemental"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
 }

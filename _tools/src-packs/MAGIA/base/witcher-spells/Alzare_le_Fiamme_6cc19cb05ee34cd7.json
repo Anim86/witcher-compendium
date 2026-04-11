@@ -1,67 +1,61 @@
-﻿{
-    "_id":  "6cc19cb05ee34cd7",
-    "name":  "Alzare le Fiamme",
-    "type":  "spell",
-    "img":  "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag101_La Magia in The Witcher_01.webp",
-    "system":  {
-                   "description":  "\u003cp\u003eàAàlàzàaàràeà àlàeà àFàiàaàmàmàeà àcàoànàsàeànàtàeà àaàlàlàâà€à™àiànàcàaànàtàaàtàoàràeà àdàià àdàiàfàfàoànàdàeàràeà àuànà àfàuàoàcàoà àgàiàÃà à àeàsàiàsàtàeànàtàeà àaàlàlàaà àvàeàlàoàcàiàtàÃà à àdàià à2àmà àpàeàrà àràoàuànàdà àiànà àuànàaà àdàiàràeàzàiàoànàeà àqàuàaàlàsàiàaàsàià,à àdàià àsàmàoàràzàaàràlàoà àfàiànàoà àaà àuànàaà àdàeàbàoàlàeà àfàiàaàmàmàeàlàlàaà à(àràiàdàuàcàeànàdàoà àiàlà àdàaànànàoà àdàaà àfàuàoàcàoà àdàià à1à)à àoà àdàià àiànàtàeànàsàiàfàiàcàaàràeà àlàeà àfàiàaàmàmàeà à(àaàuàmàeànàtàaànàdàoà àiàlà àdàaànànàoà àdàaà àfàuàoàcàoà àdàià à1à)à.à\u003c/p\u003e",
-                   "quantity":  "1",
-                   "weight":  0,
-                   "cost":  0,
-                   "sourcebook":  "MB 103",
-                   "class":  "Mage",
-                   "level":  "novice",
-                   "source":  "fire",
-                   "stamina":  3,
-                   "staminaIsVar":  false,
-                   "effect":  "Alzare le Fiamme consente allâ€™incantatore di diffondere un fuoco giÃ  esistente alla velocitÃ  di 2m per round in una direzione qualsiasi, di smorzarlo fino a una debole fiammella (riducendo il danno da fuoco di 1) o di intensificare le fiamme (aumentando il danno da fuoco di 1).",
-                   "range":  "10m",
-                   "duration":  "Attiva (2 RES)",
-                   "defence":  "Nessuna",
-                   "damageProperties":  {
-                                            "armorPiercing":  false,
-                                            "improvedArmorPiercing":  false,
-                                            "ablating":  false,
-                                            "crushingForce":  false,
-                                            "damageIsAblation":  false,
-                                            "stun":  0,
-                                            "damageToAllLocations":  false,
-                                            "bypassesWornArmor":  false,
-                                            "bypassesNaturalArmor":  false,
-                                            "defenseDifferenceMultiplier":  false,
-                                            "defenseMultiplierCap":  5,
-                                            "variableDamage":  false,
-                                            "effects":  [
-
-                                                        ],
-                                            "oilEffect":  "",
-                                            "silverTrait":  false,
-                                            "silverDamage":  "",
-                                            "isMeteorite":  false,
-                                            "isNonLethal":  false
-                                        },
-                   "regionProperties":  {
-                                            "createRegionFromTemplate":  false,
-                                            "behaviours":  {
-                                                               "tokenEnter":  null,
-                                                               "tokenTurnStart":  null,
-                                                               "tokenMoveWithin":  null,
-                                                               "tokenExit":  null
-                                                           }
-                                        },
-                   "attackOptions":  [
-                                         "spell"
-                                     ],
-                   "spellAttackSkill":  "spellcast"
-               },
-    "effects":  [
-
-                ],
-    "flags":  {
-
-              },
-    "_stats":  {
-                   "systemId":  "TheWitcherItaNewSystem",
-                   "coreVersion":  14
-               }
+{
+    "_id": "6cc19cb05ee34cd7",
+    "name": "Alzare le Fiamme",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA/base/witcher-spells/Pag101_La Magia in The Witcher_01.webp",
+    "system": {
+        "description": "<p>àAàlàzàaàràeà àlàeà àFàiàaàmàmàeà àcàoànàsàeànàtàeà àaàlàlàâà€à™àiànàcàaànàtàaàtàoàràeà àdàià àdàiàfàfàoànàdàeàràeà àuànà àfàuàoàcàoà àgàiàÃà à àeàsàiàsàtàeànàtàeà àaàlàlàaà àvàeàlàoàcàiàtàÃà à àdàià à2àmà àpàeàrà àràoàuànàdà àiànà àuànàaà àdàiàràeàzàiàoànàeà àqàuàaàlàsàiàaàsàià,à àdàià àsàmàoàràzàaàràlàoà àfàiànàoà àaà àuànàaà àdàeàbàoàlàeà àfàiàaàmàmàeàlàlàaà à(àràiàdàuàcàeànàdàoà àiàlà àdàaànànàoà àdàaà àfàuàoàcàoà àdàià à1à)à àoà àdàià àiànàtàeànàsàiàfàiàcàaàràeà àlàeà àfàiàaàmàmàeà à(àaàuàmàeànàtàaànàdàoà àiàlà àdàaànànàoà àdàaà àfàuàoàcàoà àdàià à1à)à.à</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "MB 103",
+        "class": "Mage",
+        "level": "novice",
+        "source": "fire",
+        "stamina": 3,
+        "staminaIsVar": false,
+        "effect": "Alzare le Fiamme consente allâ€™incantatore di diffondere un fuoco giÃ  esistente alla velocitÃ  di 2m per round in una direzione qualsiasi, di smorzarlo fino a una debole fiammella (riducendo il danno da fuoco di 1) o di intensificare le fiamme (aumentando il danno da fuoco di 1).",
+        "range": "10m",
+        "duration": "Attiva (2 RES)",
+        "defence": "Nessuna",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
 }

@@ -1,0 +1,23 @@
+﻿{
+    "_id": "cd39cc2750da80c2",
+    "name": "Occhio di Corvo",
+    "type": "component",
+    "img": "modules/witcher-compendium/assets/CRAFTING/witcher-alchemy/Pag145_Sostanze Alchemiche_02.webp",
+    "system": {
+        "description": "<p>Pianta dalle bacche scure simili a occhi di uccello.</p><p><b>RaritÃ :</b> S | <b>Ubicazione:</b> Campi e foreste</p>",
+        "quantity": "1",
+        "weight": 0.1,
+        "cost": 17,
+        "sourcebook": "MB 147",
+        "type": "alchemical",
+        "rarity": "S",
+        "location": "Campi e foreste",
+        "substanceType": "vetriolo"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

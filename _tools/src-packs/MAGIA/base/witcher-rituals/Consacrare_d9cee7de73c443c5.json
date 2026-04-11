@@ -1,70 +1,64 @@
-﻿{
-    "_id":  "d9cee7de73c443c5",
-    "name":  "Consacrare",
-    "type":  "ritual",
-    "img":  "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag118_Rituali_01.webp",
-    "system":  {
-                   "description":  "\u003cp\u003eConsacrare crea un cerchio magico che respinge temporaneamente i mostri. PuÃ² avere fino a 10m di rag- gio e obbliga ogni mostro che cerca dâ€™entrare nellâ€™area a superare una prova di Resistere alla Magia con CD pari al risultato di Officiare Rituali del ritualista. Gli effetti dâ€™incantesimi generati da mostri non possono varcare il cerchio, ma i proiettili non magici scagliati lo ignorano. Un mostro che supera il tiro per entrare nel cerchio puÃ² rimanervi, ma deve effettuare un altro tiro per poterne Alessandro Pacifico - 355698 --- Pagina 121 --- [Immagini presenti in questa pagina: Pag121_Rituali_01.png, Pag121_Rituali_02.png, Pag121_Rituali_03.png, Pag121_Rituali_04.png, Pag121_Rituali_05.png, Pag121_Rituali_06.png, Pag121_Rituali_07.png, Pag121_Rituali_08.png] 119 RITUALI DA MAESTRO IL DURO LAVORO DEI GOLEM Non bisogna mai sottovalutare quanto i golem lavorino sodo. Non si stancano mai, non si ri- bellano e non si annoiano. Se si ordina a un golem di uccidere qualcuno, inseguirÃ  la sua vittima fino alla fine del mondo, conti- nuando a cercarla anche dopo che gli Ã¨ scappata. Se si ordina a un golem di scavare verso il basso, non smetterÃ  di scavare neanche se raggiungesse il cuore del piane- ta e si sciogliesse, continuando a scavare anche in quel caso. Compressione in Manufatto Costo in RES: 16 Effetto: Questo rituale rimpicciolisce una creatura ber- saglio a 1/10 della sua taglia originale, rinchiudendolo nella giada. Mentre si trova in questa statuetta, la vitti- ma Ã¨ priva di sensi. La trasformazione Ã¨ estremamente dolorosa per la vittima, che deve superare una prova di Tempra con CD 15 o subire 6d6 danni al torso. Una vittima puÃ² essere mantenuta in questo stato per un tempo indefinito: il suo corpo Ã¨ in uno stato di sospen- sione e non invecchia. In questa forma ridotta, la vittima ha 1/5 dei suoi normali Punti Salute, arrotondati per ec- cesso. Se questi punti si esauriscono, la vittima muore. Se un arto viene rotto, con una prova di Prestanza con CD 14 o infliggendo 5 danni, la vittima Ã¨ considerata avere lâ€™arto mutilato. Se asportata la testa, la vittima muore. Incollare i pezzi di una statuina non riattacca lâ€™arto. Una volta decompresso, il bersaglio rimane stordito finchÃ© non supera un tiro salvezza di Grinta.\u003c/p\u003e",
-                   "quantity":  "1",
-                   "weight":  0,
-                   "cost":  0,
-                   "sourcebook":  "MB 118",
-                   "class":  "ritual",
-                   "level":  "novice",
-                   "source":  "",
-                   "stamina":  0,
-                   "staminaIsVar":  false,
-                   "effect":  "Consacrare crea un cerchio magico che respinge temporaneamente i mostri. PuÃ² avere fino a 10m di rag- gio e obbliga ogni mostro che cerca dâ€™entrare nellâ€™area a superare una prova di Resistere alla Magia con CD pari al risultato di Officiare Rituali del ritualista. Gli effetti dâ€™incantesimi generati da mostri non possono varcare il cerchio, ma i proiettili non magici scagliati lo ignorano. Un mostro che supera il tiro per entrare nel cerchio puÃ² rimanervi, ma deve effettuare un altro tiro per poterne\nAlessandro Pacifico - 355698\n\n--- Pagina 121 ---\n[Immagini presenti in questa pagina: Pag121_Rituali_01.png, Pag121_Rituali_02.png, Pag121_Rituali_03.png, Pag121_Rituali_04.png, Pag121_Rituali_05.png, Pag121_Rituali_06.png, Pag121_Rituali_07.png, Pag121_Rituali_08.png]\n\n119\nRITUALI DA MAESTRO\nIL DURO LAVORO DEI GOLEM Non bisogna mai sottovalutare quanto i golem lavorino sodo. Non si stancano mai, non si ri- bellano e non si annoiano. Se si ordina a un golem di uccidere qualcuno, inseguirÃ  la sua vittima fino alla fine del mondo, conti- nuando a cercarla anche dopo che gli Ã¨ scappata. Se si ordina a un golem di scavare verso il basso, non smetterÃ  di scavare neanche se raggiungesse il cuore del piane- ta e si sciogliesse, continuando a scavare anche in quel caso.\nCompressione in Manufatto Costo in RES: 16 Effetto: Questo rituale rimpicciolisce una creatura ber- saglio a 1/10 della sua taglia originale, rinchiudendolo nella giada. Mentre si trova in questa statuetta, la vitti- ma Ã¨ priva di sensi. La trasformazione Ã¨ estremamente dolorosa per la vittima, che deve superare una prova di Tempra con CD 15 o subire 6d6 danni al torso. Una vittima puÃ² essere mantenuta in questo stato per un tempo indefinito: il suo corpo Ã¨ in uno stato di sospen- sione e non invecchia. In questa forma ridotta, la vittima ha 1/5 dei suoi normali Punti Salute, arrotondati per ec- cesso. Se questi punti si esauriscono, la vittima muore. Se un arto viene rotto, con una prova di Prestanza con CD 14 o infliggendo 5 danni, la vittima Ã¨ considerata avere lâ€™arto mutilato. Se asportata la testa, la vittima muore. Incollare i pezzi di una statuina non riattacca lâ€™arto. Una volta decompresso, il bersaglio rimane stordito finchÃ© non supera un tiro salvezza di Grinta.",
-                   "range":  "N/A",
-                   "duration":  "FinchÃ© non viene Invertito",
-                   "defence":  "",
-                   "damageProperties":  {
-                                            "armorPiercing":  false,
-                                            "improvedArmorPiercing":  false,
-                                            "ablating":  false,
-                                            "crushingForce":  false,
-                                            "damageIsAblation":  false,
-                                            "stun":  0,
-                                            "damageToAllLocations":  false,
-                                            "bypassesWornArmor":  false,
-                                            "bypassesNaturalArmor":  false,
-                                            "defenseDifferenceMultiplier":  false,
-                                            "defenseMultiplierCap":  5,
-                                            "variableDamage":  false,
-                                            "effects":  [
-
-                                                        ],
-                                            "oilEffect":  "",
-                                            "silverTrait":  false,
-                                            "silverDamage":  "",
-                                            "isMeteorite":  false,
-                                            "isNonLethal":  false
-                                        },
-                   "regionProperties":  {
-                                            "createRegionFromTemplate":  false,
-                                            "behaviours":  {
-                                                               "tokenEnter":  null,
-                                                               "tokenTurnStart":  null,
-                                                               "tokenMoveWithin":  null,
-                                                               "tokenExit":  null
-                                                           }
-                                        },
-                   "attackOptions":  [
-                                         "spell"
-                                     ],
-                   "spellAttackSkill":  "ritcraft",
-                   "causeDamages":  true,
-                   "damage":  "6d6",
-                   "damageType":  "elemental"
-               },
-    "effects":  [
-
-                ],
-    "flags":  {
-
-              },
-    "_stats":  {
-                   "coreVersion":  14,
-                   "systemId":  "TheWitcherItaNewSystem"
-               }
+{
+    "_id": "d9cee7de73c443c5",
+    "name": "Consacrare",
+    "type": "ritual",
+    "img": "modules/witcher-compendium/assets/MAGIA/base/witcher-rituals/Pag118_Rituali_01.webp",
+    "system": {
+        "description": "<p>Consacrare crea un cerchio magico che respinge temporaneamente i mostri. PuÃ² avere fino a 10m di rag- gio e obbliga ogni mostro che cerca dâ€™entrare nellâ€™area a superare una prova di Resistere alla Magia con CD pari al risultato di Officiare Rituali del ritualista. Gli effetti dâ€™incantesimi generati da mostri non possono varcare il cerchio, ma i proiettili non magici scagliati lo ignorano. Un mostro che supera il tiro per entrare nel cerchio puÃ² rimanervi, ma deve effettuare un altro tiro per poterne Alessandro Pacifico - 355698 --- Pagina 121 --- [Immagini presenti in questa pagina: Pag121_Rituali_01.png, Pag121_Rituali_02.png, Pag121_Rituali_03.png, Pag121_Rituali_04.png, Pag121_Rituali_05.png, Pag121_Rituali_06.png, Pag121_Rituali_07.png, Pag121_Rituali_08.png] 119 RITUALI DA MAESTRO IL DURO LAVORO DEI GOLEM Non bisogna mai sottovalutare quanto i golem lavorino sodo. Non si stancano mai, non si ri- bellano e non si annoiano. Se si ordina a un golem di uccidere qualcuno, inseguirÃ  la sua vittima fino alla fine del mondo, conti- nuando a cercarla anche dopo che gli Ã¨ scappata. Se si ordina a un golem di scavare verso il basso, non smetterÃ  di scavare neanche se raggiungesse il cuore del piane- ta e si sciogliesse, continuando a scavare anche in quel caso. Compressione in Manufatto Costo in RES: 16 Effetto: Questo rituale rimpicciolisce una creatura ber- saglio a 1/10 della sua taglia originale, rinchiudendolo nella giada. Mentre si trova in questa statuetta, la vitti- ma Ã¨ priva di sensi. La trasformazione Ã¨ estremamente dolorosa per la vittima, che deve superare una prova di Tempra con CD 15 o subire 6d6 danni al torso. Una vittima puÃ² essere mantenuta in questo stato per un tempo indefinito: il suo corpo Ã¨ in uno stato di sospen- sione e non invecchia. In questa forma ridotta, la vittima ha 1/5 dei suoi normali Punti Salute, arrotondati per ec- cesso. Se questi punti si esauriscono, la vittima muore. Se un arto viene rotto, con una prova di Prestanza con CD 14 o infliggendo 5 danni, la vittima Ã¨ considerata avere lâ€™arto mutilato. Se asportata la testa, la vittima muore. Incollare i pezzi di una statuina non riattacca lâ€™arto. Una volta decompresso, il bersaglio rimane stordito finchÃ© non supera un tiro salvezza di Grinta.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "MB 118",
+        "class": "ritual",
+        "level": "novice",
+        "source": "",
+        "stamina": 0,
+        "staminaIsVar": false,
+        "effect": "Consacrare crea un cerchio magico che respinge temporaneamente i mostri. PuÃ² avere fino a 10m di rag- gio e obbliga ogni mostro che cerca dâ€™entrare nellâ€™area a superare una prova di Resistere alla Magia con CD pari al risultato di Officiare Rituali del ritualista. Gli effetti dâ€™incantesimi generati da mostri non possono varcare il cerchio, ma i proiettili non magici scagliati lo ignorano. Un mostro che supera il tiro per entrare nel cerchio puÃ² rimanervi, ma deve effettuare un altro tiro per poterne\nAlessandro Pacifico - 355698\n\n--- Pagina 121 ---\n[Immagini presenti in questa pagina: Pag121_Rituali_01.png, Pag121_Rituali_02.png, Pag121_Rituali_03.png, Pag121_Rituali_04.png, Pag121_Rituali_05.png, Pag121_Rituali_06.png, Pag121_Rituali_07.png, Pag121_Rituali_08.png]\n\n119\nRITUALI DA MAESTRO\nIL DURO LAVORO DEI GOLEM Non bisogna mai sottovalutare quanto i golem lavorino sodo. Non si stancano mai, non si ri- bellano e non si annoiano. Se si ordina a un golem di uccidere qualcuno, inseguirÃ  la sua vittima fino alla fine del mondo, conti- nuando a cercarla anche dopo che gli Ã¨ scappata. Se si ordina a un golem di scavare verso il basso, non smetterÃ  di scavare neanche se raggiungesse il cuore del piane- ta e si sciogliesse, continuando a scavare anche in quel caso.\nCompressione in Manufatto Costo in RES: 16 Effetto: Questo rituale rimpicciolisce una creatura ber- saglio a 1/10 della sua taglia originale, rinchiudendolo nella giada. Mentre si trova in questa statuetta, la vitti- ma Ã¨ priva di sensi. La trasformazione Ã¨ estremamente dolorosa per la vittima, che deve superare una prova di Tempra con CD 15 o subire 6d6 danni al torso. Una vittima puÃ² essere mantenuta in questo stato per un tempo indefinito: il suo corpo Ã¨ in uno stato di sospen- sione e non invecchia. In questa forma ridotta, la vittima ha 1/5 dei suoi normali Punti Salute, arrotondati per ec- cesso. Se questi punti si esauriscono, la vittima muore. Se un arto viene rotto, con una prova di Prestanza con CD 14 o infliggendo 5 danni, la vittima Ã¨ considerata avere lâ€™arto mutilato. Se asportata la testa, la vittima muore. Incollare i pezzi di una statuina non riattacca lâ€™arto. Una volta decompresso, il bersaglio rimane stordito finchÃ© non supera un tiro salvezza di Grinta.",
+        "range": "N/A",
+        "duration": "FinchÃ© non viene Invertito",
+        "defence": "",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "ritcraft",
+        "causeDamages": true,
+        "damage": "6d6",
+        "damageType": "elemental"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
 }

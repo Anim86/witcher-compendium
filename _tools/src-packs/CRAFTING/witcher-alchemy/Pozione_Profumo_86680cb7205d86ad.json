@@ -1,0 +1,23 @@
+﻿{
+    "_id": "86680cb7205d86ad",
+    "name": "Pozione Profumo",
+    "type": "component",
+    "img": "modules/witcher-compendium/assets/CRAFTING/witcher-alchemy/Pag089_Prodotti Alchemici_08.webp",
+    "system": {
+        "description": "<p>Profumo inebriante che stordisce se ingerito.</p><p><b>Effetti:</b> Tempra CD 16 o ebbrezza per 1d10 ore.</p><p><b>Durata:</b> 1d10 ore</p><p><b>TossicitÃ :</b> 25%</p>",
+        "quantity": "1",
+        "weight": 0.5,
+        "cost": 76,
+        "sourcebook": "MB 90",
+        "type": "alchemical",
+        "rarity": "S",
+        "location": "",
+        "substanceType": ""
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

@@ -1,70 +1,64 @@
-﻿{
-    "_id":  "599c536b937548ba",
-    "name":  "Anialwch",
-    "type":  "spell",
-    "img":  "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag101_La Magia in The Witcher_01.webp",
-    "system":  {
-                   "description":  "\u003cp\u003eàAànàiàaàlàwàcàhà àpàeàràmàeàtàtàeà àdàià àràiàsàuàcàcàhàiàaàràeà àpàaàràtàeà àdàeàià àlàià-à àqàuàiàdàià àpàràeàsàeànàtàià ànàeàlà àcàoàràpàoà àdàià àuànà àbàeàràsàaàgàlàiàoà,à àdàaànànàeàgàgàiàaànàdàoàlàoà àeà àsàfàiànàeànàdàoàlàoà.à àLàâà€à™àiànàcàaànàtàeàsàiàmàoà àiànàfàlàiàgàgàeà à4àdà6à àdàaànànàià àcàhàeà ànàoànà àpàoàsàsàoànàoà àeàsàsàeàràeà àbàlàoàcàcàaàtàià àdàaà àaàràmàaàtàuàràeà àoà àsàcàuàdàià.à àLàaà àgàràaàvàeà àdàià-à àsàiàdàràaàtàaàzàiàoànàeà àcàaàuàsàaà àaànàcàhàeà àaàfàfàaàtàiàcàaàmàeànàtàoà àcàhàeà àràiàdàuàcàeà àdàià à4àdà6à àlàaà àRàEàSà àdàeàlà àbàeàràsàaàgàlàiàoà.à\u003c/p\u003e",
-                   "quantity":  "1",
-                   "weight":  0,
-                   "cost":  0,
-                   "sourcebook":  "MB 103",
-                   "class":  "Mage",
-                   "level":  "journeyman",
-                   "source":  "Water",
-                   "stamina":  8,
-                   "staminaIsVar":  false,
-                   "effect":  "Anialwch permette di risucchiare parte dei li- quidi presenti nel corpo di un bersaglio, danneggiandolo e sfinendolo. Lâ€™incantesimo infligge 4d6 danni che non possono essere bloccati da armature o scudi. La grave di- sidratazione causa anche affaticamento che riduce di 4d6 la RES del bersaglio.",
-                   "range":  "10m",
-                   "duration":  "Istantanea",
-                   "defence":  "Resistere alla Magia",
-                   "damageProperties":  {
-                                            "armorPiercing":  false,
-                                            "improvedArmorPiercing":  false,
-                                            "ablating":  false,
-                                            "crushingForce":  false,
-                                            "damageIsAblation":  false,
-                                            "stun":  0,
-                                            "damageToAllLocations":  false,
-                                            "bypassesWornArmor":  false,
-                                            "bypassesNaturalArmor":  false,
-                                            "defenseDifferenceMultiplier":  false,
-                                            "defenseMultiplierCap":  5,
-                                            "variableDamage":  false,
-                                            "effects":  [
-
-                                                        ],
-                                            "oilEffect":  "",
-                                            "silverTrait":  false,
-                                            "silverDamage":  "",
-                                            "isMeteorite":  false,
-                                            "isNonLethal":  false
-                                        },
-                   "regionProperties":  {
-                                            "createRegionFromTemplate":  false,
-                                            "behaviours":  {
-                                                               "tokenEnter":  null,
-                                                               "tokenTurnStart":  null,
-                                                               "tokenMoveWithin":  null,
-                                                               "tokenExit":  null
-                                                           }
-                                        },
-                   "attackOptions":  [
-                                         "spell"
-                                     ],
-                   "spellAttackSkill":  "spellcast",
-                   "causeDamages":  true,
-                   "damage":  "4d6",
-                   "damageType":  "elemental"
-               },
-    "effects":  [
-
-                ],
-    "flags":  {
-
-              },
-    "_stats":  {
-                   "systemId":  "TheWitcherItaNewSystem",
-                   "coreVersion":  14
-               }
+{
+    "_id": "599c536b937548ba",
+    "name": "Anialwch",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA/base/witcher-spells/Pag101_La Magia in The Witcher_01.webp",
+    "system": {
+        "description": "<p>àAànàiàaàlàwàcàhà àpàeàràmàeàtàtàeà àdàià àràiàsàuàcàcàhàiàaàràeà àpàaàràtàeà àdàeàià àlàià-à àqàuàiàdàià àpàràeàsàeànàtàià ànàeàlà àcàoàràpàoà àdàià àuànà àbàeàràsàaàgàlàiàoà,à àdàaànànàeàgàgàiàaànàdàoàlàoà àeà àsàfàiànàeànàdàoàlàoà.à àLàâà€à™àiànàcàaànàtàeàsàiàmàoà àiànàfàlàiàgàgàeà à4àdà6à àdàaànànàià àcàhàeà ànàoànà àpàoàsàsàoànàoà àeàsàsàeàràeà àbàlàoàcàcàaàtàià àdàaà àaàràmàaàtàuàràeà àoà àsàcàuàdàià.à àLàaà àgàràaàvàeà àdàià-à àsàiàdàràaàtàaàzàiàoànàeà àcàaàuàsàaà àaànàcàhàeà àaàfàfàaàtàiàcàaàmàeànàtàoà àcàhàeà àràiàdàuàcàeà àdàià à4àdà6à àlàaà àRàEàSà àdàeàlà àbàeàràsàaàgàlàiàoà.à</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "MB 103",
+        "class": "Mage",
+        "level": "journeyman",
+        "source": "Water",
+        "stamina": 8,
+        "staminaIsVar": false,
+        "effect": "Anialwch permette di risucchiare parte dei li- quidi presenti nel corpo di un bersaglio, danneggiandolo e sfinendolo. Lâ€™incantesimo infligge 4d6 danni che non possono essere bloccati da armature o scudi. La grave di- sidratazione causa anche affaticamento che riduce di 4d6 la RES del bersaglio.",
+        "range": "10m",
+        "duration": "Istantanea",
+        "defence": "Resistere alla Magia",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast",
+        "causeDamages": true,
+        "damage": "4d6",
+        "damageType": "elemental"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
 }

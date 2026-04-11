@@ -1,70 +1,64 @@
-﻿{
-    "_id":  "715c4de0d12141ec",
-    "name":  "Folata di Bronwyn",
-    "type":  "spell",
-    "img":  "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag101_La Magia in The Witcher_01.webp",
-    "system":  {
-                   "description":  "\u003cp\u003eàFàoàlàaàtàaà àdàià àBàràoànàwàyànà àpàràeànàdàeà àiàlà ànàoàmàeà àdàaàlàlàaà àmàaàgàaà àràaàzàzàiàaàtàràiàcàeà àdàià àSàkàeàlàlàiàgàeà,à àBàràoànàwàyànà àOàcàcàhàiàoàfàiànàoà.à àLàâà€à™àiànàcàaànàtàeàsàiàmàoà àcàoànàsàeànàtàeà àdàià àràeàsàpàiànàgàeàràeà àiàlà àbàeàràsàaàgàlàiàoà àdàià àuànà ànàuàmàeàràoà àdàià àmàeàtàràià àpàaàràià àaàlàlàaà àdàiàfàfàeàràeànàzàaà àcàoànà àcàuàià àiàlà àtàiàràoà àdàià àLàaànàcàiàaàràeà àIànàcàaànàtàeàsàiàmàià àsàuàpàeàràaà àlàaà àdàiàfàeàsàaà àdàeàlà àbàeàràsàaàgàlàiàoà.à àTàaàlàeà àaàtàtàaàcàcàoà àiànàfàlàiàgàgàeà àsàoàlàoà à1àdà6à àdàaànànàià,à àmàaà,à àsàeà àiàlà àbàeàràsàaàgàlàiàoà àcàoàlàpàià-à àsàcàeà àuànà àoàsàtàaàcàoàlàoà,à àsàuàbàiàsàcàeà àdàaànànàoà àdàaà àiàmàpàaàtàtàoà.à\u003c/p\u003e",
-                   "quantity":  "1",
-                   "weight":  0,
-                   "cost":  0,
-                   "sourcebook":  "MB 103",
-                   "class":  "Mage",
-                   "level":  "novice",
-                   "source":  "fire",
-                   "stamina":  2,
-                   "staminaIsVar":  false,
-                   "effect":  "Folata di Bronwyn prende il nome dalla maga razziatrice di Skellige, Bronwyn Occhiofino. Lâ€™incantesimo consente di respingere il bersaglio di un numero di metri pari alla differenza con cui il tiro di Lanciare Incantesimi supera la difesa del bersaglio. Tale attacco infligge solo 1d6 danni, ma, se il bersaglio colpi- sce un ostacolo, subisce danno da impatto.",
-                   "range":  "2m",
-                   "duration":  "Istantanea",
-                   "defence":  "Schivare",
-                   "damageProperties":  {
-                                            "armorPiercing":  false,
-                                            "improvedArmorPiercing":  false,
-                                            "ablating":  false,
-                                            "crushingForce":  false,
-                                            "damageIsAblation":  false,
-                                            "stun":  0,
-                                            "damageToAllLocations":  false,
-                                            "bypassesWornArmor":  false,
-                                            "bypassesNaturalArmor":  false,
-                                            "defenseDifferenceMultiplier":  false,
-                                            "defenseMultiplierCap":  5,
-                                            "variableDamage":  false,
-                                            "effects":  [
-
-                                                        ],
-                                            "oilEffect":  "",
-                                            "silverTrait":  false,
-                                            "silverDamage":  "",
-                                            "isMeteorite":  false,
-                                            "isNonLethal":  false
-                                        },
-                   "regionProperties":  {
-                                            "createRegionFromTemplate":  false,
-                                            "behaviours":  {
-                                                               "tokenEnter":  null,
-                                                               "tokenTurnStart":  null,
-                                                               "tokenMoveWithin":  null,
-                                                               "tokenExit":  null
-                                                           }
-                                        },
-                   "attackOptions":  [
-                                         "spell"
-                                     ],
-                   "spellAttackSkill":  "spellcast",
-                   "causeDamages":  true,
-                   "damage":  "1d6",
-                   "damageType":  "elemental"
-               },
-    "effects":  [
-
-                ],
-    "flags":  {
-
-              },
-    "_stats":  {
-                   "systemId":  "TheWitcherItaNewSystem",
-                   "coreVersion":  14
-               }
+{
+    "_id": "715c4de0d12141ec",
+    "name": "Folata di Bronwyn",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA/base/witcher-spells/Pag101_La Magia in The Witcher_01.webp",
+    "system": {
+        "description": "<p>àFàoàlàaàtàaà àdàià àBàràoànàwàyànà àpàràeànàdàeà àiàlà ànàoàmàeà àdàaàlàlàaà àmàaàgàaà àràaàzàzàiàaàtàràiàcàeà àdàià àSàkàeàlàlàiàgàeà,à àBàràoànàwàyànà àOàcàcàhàiàoàfàiànàoà.à àLàâà€à™àiànàcàaànàtàeàsàiàmàoà àcàoànàsàeànàtàeà àdàià àràeàsàpàiànàgàeàràeà àiàlà àbàeàràsàaàgàlàiàoà àdàià àuànà ànàuàmàeàràoà àdàià àmàeàtàràià àpàaàràià àaàlàlàaà àdàiàfàfàeàràeànàzàaà àcàoànà àcàuàià àiàlà àtàiàràoà àdàià àLàaànàcàiàaàràeà àIànàcàaànàtàeàsàiàmàià àsàuàpàeàràaà àlàaà àdàiàfàeàsàaà àdàeàlà àbàeàràsàaàgàlàiàoà.à àTàaàlàeà àaàtàtàaàcàcàoà àiànàfàlàiàgàgàeà àsàoàlàoà à1àdà6à àdàaànànàià,à àmàaà,à àsàeà àiàlà àbàeàràsàaàgàlàiàoà àcàoàlàpàià-à àsàcàeà àuànà àoàsàtàaàcàoàlàoà,à àsàuàbàiàsàcàeà àdàaànànàoà àdàaà àiàmàpàaàtàtàoà.à</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "MB 103",
+        "class": "Mage",
+        "level": "novice",
+        "source": "fire",
+        "stamina": 2,
+        "staminaIsVar": false,
+        "effect": "Folata di Bronwyn prende il nome dalla maga razziatrice di Skellige, Bronwyn Occhiofino. Lâ€™incantesimo consente di respingere il bersaglio di un numero di metri pari alla differenza con cui il tiro di Lanciare Incantesimi supera la difesa del bersaglio. Tale attacco infligge solo 1d6 danni, ma, se il bersaglio colpi- sce un ostacolo, subisce danno da impatto.",
+        "range": "2m",
+        "duration": "Istantanea",
+        "defence": "Schivare",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast",
+        "causeDamages": true,
+        "damage": "1d6",
+        "damageType": "elemental"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
 }

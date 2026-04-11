@@ -1,0 +1,23 @@
+﻿{
+    "_id": "f5b764141ceb2b11",
+    "name": "Lingua di Strega dei Sepolcri",
+    "type": "component",
+    "img": "modules/witcher-compendium/assets/CRAFTING/witcher-alchemy/Pag145_Sostanze Alchemiche_01.webp",
+    "system": {
+        "description": "<p>Lingua biforcuta e magica di una creatura necrofaga.</p><p><b>RaritÃ :</b> R | <b>Ubicazione:</b> Streghe dei sepolcri</p>",
+        "quantity": "1",
+        "weight": 0.5,
+        "cost": 80,
+        "sourcebook": "MB 145",
+        "type": "alchemical",
+        "rarity": "R",
+        "location": "Streghe dei sepolcri",
+        "substanceType": "caelum"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

@@ -1,59 +1,61 @@
-﻿{
-  "_id": "880cc00a475fd07f",
-  "name": "Yrden",
-  "type": "spell",
-  "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag101_La Magia in The Witcher_01.webp",
-  "system": {
-    "description": "<p>I Segni Witcher sono forme di magia semplici apprese durante l'addestramento. Yrden genera un cerchio magico al suolo. Ogni nemico che vi entra subisce una penalità a Velocità (VEL) e Riflessi (RIF) pari a 1, aumentata di +1 per ogni 2 punti RES spesi oltre il primo, fino a un malus massimo di -4. Sostare nel cerchio costringe inoltre le creature incorporee ad assumere forma corporea, rendendole vulnerabili agli attacchi normali. Il costo in Resistenza è sempre variabile: il witcher può investirvi i punti che desidera (fino a un massimo di 7), a patto di non superare la propria Soglia di Vigore.</p>",
-    "quantity": "1",
-    "weight": 0,
-    "cost": 0,
-    "sourcebook": "MB 115",
-    "class": "Witcher",
-    "level": "novice",
-    "source": "Mixed",
-    "stamina": 0,
-    "staminaIsVar": true,
-    "effect": "Genera un cerchio magico al suolo. Ogni nemico che vi entra subisce una penalità a VEL e RIF pari a 1, aumentata di +1 per ogni 2 punti RES spesi oltre il primo (malus massimo -4). Le creature incorporee che sostano nel cerchio assumono forma corporea.",
-    "range": "Raggio di 3m",
-    "duration": "5 round",
-    "defence": "Nessuna",
-    "damageProperties": {
-      "armorPiercing": false,
-      "improvedArmorPiercing": false,
-      "ablating": false,
-      "crushingForce": false,
-      "damageIsAblation": false,
-      "stun": 0,
-      "damageToAllLocations": false,
-      "bypassesWornArmor": false,
-      "bypassesNaturalArmor": false,
-      "defenseDifferenceMultiplier": false,
-      "defenseMultiplierCap": 5,
-      "variableDamage": false,
-      "effects": [],
-      "oilEffect": "",
-      "silverTrait": false,
-      "silverDamage": "",
-      "isMeteorite": false,
-      "isNonLethal": false
+{
+    "_id": "880cc00a475fd07f",
+    "name": "Yrden",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA/base/witcher-signs/Pag101_La Magia in The Witcher_01.webp",
+    "system": {
+        "description": "<p>I Segni Witcher sono forme di magia semplici apprese durante l'addestramento. Yrden genera un cerchio magico al suolo. Ogni nemico che vi entra subisce una penalità a Velocità (VEL) e Riflessi (RIF) pari a 1, aumentata di +1 per ogni 2 punti RES spesi oltre il primo, fino a un malus massimo di -4. Sostare nel cerchio costringe inoltre le creature incorporee ad assumere forma corporea, rendendole vulnerabili agli attacchi normali. Il costo in Resistenza è sempre variabile: il witcher può investirvi i punti che desidera (fino a un massimo di 7), a patto di non superare la propria Soglia di Vigore.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "MB 115",
+        "class": "Witcher",
+        "level": "novice",
+        "source": "Mixed",
+        "stamina": 0,
+        "staminaIsVar": true,
+        "effect": "Genera un cerchio magico al suolo. Ogni nemico che vi entra subisce una penalità a VEL e RIF pari a 1, aumentata di +1 per ogni 2 punti RES spesi oltre il primo (malus massimo -4). Le creature incorporee che sostano nel cerchio assumono forma corporea.",
+        "range": "Raggio di 3m",
+        "duration": "5 round",
+        "defence": "Nessuna",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast"
     },
-    "regionProperties": {
-      "createRegionFromTemplate": false,
-      "behaviours": {
-        "tokenEnter": null,
-        "tokenTurnStart": null,
-        "tokenMoveWithin": null,
-        "tokenExit": null
-      }
-    },
-    "attackOptions": ["spell"],
-    "spellAttackSkill": "spellcast"
-  },
-  "effects": [],
-  "flags": {},
-  "_stats": {
-    "systemId": "TheWitcherItaNewSystem",
-    "coreVersion": 14
-  }
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
 }

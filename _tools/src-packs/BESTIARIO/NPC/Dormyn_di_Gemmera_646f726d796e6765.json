@@ -1,19 +1,46 @@
-﻿{
+{
     "_id": "646f726d796e6765",
     "name": "Dormyn di Gemmera",
     "type": "Actor",
-    "img": "modules/witcher-compendium/assets/images/NPC/Dormyn_di_Gemmera.webp",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/NPC/Dormyn_di_Gemmera.webp",
     "system": {
         "stats": {
-            "int": { "value": 0, "max": 0 },
-            "ref": { "value": 0, "max": 0 },
-            "dex": { "value": 0, "max": 0 },
-            "body": { "value": 0, "max": 0 },
-            "spd": { "value": 0, "max": 0 },
-            "emp": { "value": 0, "max": 0 },
-            "cra": { "value": 0, "max": 0 },
-            "will": { "value": 0, "max": 0 },
-            "luck": { "value": 0, "max": 0 }
+            "int": {
+                "value": 0,
+                "max": 0
+            },
+            "ref": {
+                "value": 0,
+                "max": 0
+            },
+            "dex": {
+                "value": 0,
+                "max": 0
+            },
+            "body": {
+                "value": 0,
+                "max": 0
+            },
+            "spd": {
+                "value": 0,
+                "max": 0
+            },
+            "emp": {
+                "value": 0,
+                "max": 0
+            },
+            "cra": {
+                "value": 0,
+                "max": 0
+            },
+            "will": {
+                "value": 0,
+                "max": 0
+            },
+            "luck": {
+                "value": 0,
+                "max": 0
+            }
         },
         "details": {
             "biography": "<p>Dormyn è un abile mago da guerra con una personalità simile a una valanga. Ha aiutato la resistenza di Gemmera contro l’invasione imperiale. – Glynnis var Treharne</p><p>Originario di Gemmera, Dormyn è un mago potente che preferisce l'azione diretta. Noto per la sua magia da guerra e la sua Camera di Dormyn, ha combattuto valorosamente prima di rifugiarsi sui monti di Tir Tochair. Vive ora in solitudine tra le caverne, rispettato dagli gnomi e temuto dai suoi nemici per la sua forza fisica e magica, paragonata a quella della roccia stessa.</p>",

@@ -1,17 +1,17 @@
-﻿{
-    "name":  "Animare Armatura",
-    "_id":  "ba5d67e658aa46b7",
-    "system":  {
-                   "stamina":  14,
-                   "cost":  14,
-                   "description":  "\u003cp\u003einserendo un Cuore di Golem al centro di unâ€™ar- matura completa e infondendolo di magia Ã¨ possibile trasformare la corazza in un fedele servitore. Una volta concluso il Rituale, lâ€™armatura si anima e ha il profilo indicato a pag. 198, eccetto per la PR che Ã¨ uguale a quella dei componenti utilizzati. Lâ€™armatura vivente non Ã¨ senziente e rimane fedele in eterno al suo creatore, ese- guendo ogni ordine alla lettera.\u003c/p\u003e",
-                   "class":  "ritual",
-                   "sourcebook":  "TC 104"
-               },
-    "type":  "ritual",
-    "img":  "modules/witcher-compendium/assets/optimized/assets/Immagini/Placeholder.webp",
-    "_stats":  {
-                   "coreVersion":  14,
-                   "systemId":  "TheWitcherItaNewSystem"
-               }
+{
+    "name": "Animare Armatura",
+    "_id": "ba5d67e658aa46b7",
+    "system": {
+        "stamina": 14,
+        "cost": 14,
+        "description": "<p>inserendo un Cuore di Golem al centro di unâ€™ar- matura completa e infondendolo di magia Ã¨ possibile trasformare la corazza in un fedele servitore. Una volta concluso il Rituale, lâ€™armatura si anima e ha il profilo indicato a pag. 198, eccetto per la PR che Ã¨ uguale a quella dei componenti utilizzati. Lâ€™armatura vivente non Ã¨ senziente e rimane fedele in eterno al suo creatore, ese- guendo ogni ordine alla lettera.</p>",
+        "class": "ritual",
+        "sourcebook": "TC 104"
+    },
+    "type": "ritual",
+    "img": "modules/witcher-compendium/assets/MAGIA/caos/witcher-rituals-chaos/Placeholder.webp",
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
 }

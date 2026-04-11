@@ -1,59 +1,61 @@
-﻿{
-  "_id": "99b20c07a03c8876",
-  "name": "Erboristeria",
-  "type": "spell",
-  "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag101_La Magia in The Witcher_01.webp",
-  "system": {
-    "description": "<p>Invocazione da Druido di livello Novizio. Se tutti gli ingredienti sono vegetali, il Druido può usare Lanciare Incantesimi al posto di Alchimia per produrre elisir, anche durante una fase di Recupero.</p>",
-    "quantity": "1",
-    "weight": 0,
-    "cost": 0,
-    "sourcebook": "TC 91",
-    "class": "Invocations",
-    "level": "novice",
-    "source": "Druid",
-    "stamina": 2,
-    "staminaIsVar": false,
-    "effect": "Permette di usare Lanciare Incantesimi invece di Alchimia per produrre elisir vegetali, anche durante il recupero.",
-    "range": "2m",
-    "duration": "Istantanea",
-    "defence": "Nessuna",
-    "damageProperties": {
-      "armorPiercing": false,
-      "improvedArmorPiercing": false,
-      "ablating": false,
-      "crushingForce": false,
-      "damageIsAblation": false,
-      "stun": 0,
-      "damageToAllLocations": false,
-      "bypassesWornArmor": false,
-      "bypassesNaturalArmor": false,
-      "defenseDifferenceMultiplier": false,
-      "defenseMultiplierCap": 5,
-      "variableDamage": false,
-      "effects": [],
-      "oilEffect": "",
-      "silverTrait": false,
-      "silverDamage": "",
-      "isMeteorite": false,
-      "isNonLethal": false
+{
+    "_id": "99b20c07a03c8876",
+    "name": "Erboristeria",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA/caos/witcher-invocations/Pag101_La Magia in The Witcher_01.webp",
+    "system": {
+        "description": "<p>Invocazione da Druido di livello Novizio. Se tutti gli ingredienti sono vegetali, il Druido può usare Lanciare Incantesimi al posto di Alchimia per produrre elisir, anche durante una fase di Recupero.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "TC 91",
+        "class": "Invocations",
+        "level": "novice",
+        "source": "Druid",
+        "stamina": 2,
+        "staminaIsVar": false,
+        "effect": "Permette di usare Lanciare Incantesimi invece di Alchimia per produrre elisir vegetali, anche durante il recupero.",
+        "range": "2m",
+        "duration": "Istantanea",
+        "defence": "Nessuna",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast"
     },
-    "regionProperties": {
-      "createRegionFromTemplate": false,
-      "behaviours": {
-        "tokenEnter": null,
-        "tokenTurnStart": null,
-        "tokenMoveWithin": null,
-        "tokenExit": null
-      }
-    },
-    "attackOptions": ["spell"],
-    "spellAttackSkill": "spellcast"
-  },
-  "effects": [],
-  "flags": {},
-  "_stats": {
-    "systemId": "TheWitcherItaNewSystem",
-    "coreVersion": 14
-  }
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
 }

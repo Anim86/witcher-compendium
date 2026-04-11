@@ -1,70 +1,64 @@
-﻿{
-    "_id":  "2810f6f48d3244c0",
-    "name":  "Fiammata",
-    "type":  "spell",
-    "img":  "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag101_La Magia in The Witcher_01.webp",
-    "system":  {
-                   "description":  "\u003cp\u003eàFàiàaàmàmàaàtàaà àeàràuàtàtàaà àiànà àuànàaà àdàiàràeàzàiàoànàeà àuànà àcàoànàoà àdàià àfàuàoàcàoà àdàià à3àmà àeà àiànàfàlàiàgàgàeà à2àdà6à àdàaànànàià àaàdà àoàgànàià àbàeàràsàaàgàlàiàoà ànàeàlàlàâà€à™àaà-à àràeàaà àcàhàeà ànàoànà àràiàeàsàcàaà àaà àsàcàhàiàvàaàràlàoà àoà àbàlàoàcàcàaàràlàoà àeà àhàaà àiàlà à5à0à%à àdàià àpàràoàbàaàbàiàlàiàtàÃà à àdàâà€à™àiànàfàlàiàgàgàeàràeà àlàâà€à™àeàfàfàeàtàtàoà àAà àFàuàoàcàoà àaàlà àbàeàràsàaàgàlàiàoà.à\u003c/p\u003e",
-                   "quantity":  "1",
-                   "weight":  0,
-                   "cost":  0,
-                   "sourcebook":  "MB 103",
-                   "class":  "Mage",
-                   "level":  "novice",
-                   "source":  "air",
-                   "stamina":  4,
-                   "staminaIsVar":  false,
-                   "effect":  "Fiammata erutta in una direzione un cono di fuoco di 3m e infligge 2d6 danni ad ogni bersaglio nellâ€™a- rea che non riesca a schivarlo o bloccarlo e ha il 50% di probabilitÃ  dâ€™infliggere lâ€™effetto A Fuoco al bersaglio.",
-                   "range":  "Cono di 3m",
-                   "duration":  "Istantanea",
-                   "defence":  "Schivare o Bloccare",
-                   "damageProperties":  {
-                                            "armorPiercing":  false,
-                                            "improvedArmorPiercing":  false,
-                                            "ablating":  false,
-                                            "crushingForce":  false,
-                                            "damageIsAblation":  false,
-                                            "stun":  0,
-                                            "damageToAllLocations":  false,
-                                            "bypassesWornArmor":  false,
-                                            "bypassesNaturalArmor":  false,
-                                            "defenseDifferenceMultiplier":  false,
-                                            "defenseMultiplierCap":  5,
-                                            "variableDamage":  false,
-                                            "effects":  [
-
-                                                        ],
-                                            "oilEffect":  "",
-                                            "silverTrait":  false,
-                                            "silverDamage":  "",
-                                            "isMeteorite":  false,
-                                            "isNonLethal":  false
-                                        },
-                   "regionProperties":  {
-                                            "createRegionFromTemplate":  false,
-                                            "behaviours":  {
-                                                               "tokenEnter":  null,
-                                                               "tokenTurnStart":  null,
-                                                               "tokenMoveWithin":  null,
-                                                               "tokenExit":  null
-                                                           }
-                                        },
-                   "attackOptions":  [
-                                         "spell"
-                                     ],
-                   "spellAttackSkill":  "spellcast",
-                   "causeDamages":  true,
-                   "damage":  "2d6",
-                   "damageType":  "elemental"
-               },
-    "effects":  [
-
-                ],
-    "flags":  {
-
-              },
-    "_stats":  {
-                   "systemId":  "TheWitcherItaNewSystem",
-                   "coreVersion":  14
-               }
+{
+    "_id": "2810f6f48d3244c0",
+    "name": "Fiammata",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA/base/witcher-spells/Pag101_La Magia in The Witcher_01.webp",
+    "system": {
+        "description": "<p>àFàiàaàmàmàaàtàaà àeàràuàtàtàaà àiànà àuànàaà àdàiàràeàzàiàoànàeà àuànà àcàoànàoà àdàià àfàuàoàcàoà àdàià à3àmà àeà àiànàfàlàiàgàgàeà à2àdà6à àdàaànànàià àaàdà àoàgànàià àbàeàràsàaàgàlàiàoà ànàeàlàlàâà€à™àaà-à àràeàaà àcàhàeà ànàoànà àràiàeàsàcàaà àaà àsàcàhàiàvàaàràlàoà àoà àbàlàoàcàcàaàràlàoà àeà àhàaà àiàlà à5à0à%à àdàià àpàràoàbàaàbàiàlàiàtàÃà à àdàâà€à™àiànàfàlàiàgàgàeàràeà àlàâà€à™àeàfàfàeàtàtàoà àAà àFàuàoàcàoà àaàlà àbàeàràsàaàgàlàiàoà.à</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "MB 103",
+        "class": "Mage",
+        "level": "novice",
+        "source": "air",
+        "stamina": 4,
+        "staminaIsVar": false,
+        "effect": "Fiammata erutta in una direzione un cono di fuoco di 3m e infligge 2d6 danni ad ogni bersaglio nellâ€™a- rea che non riesca a schivarlo o bloccarlo e ha il 50% di probabilitÃ  dâ€™infliggere lâ€™effetto A Fuoco al bersaglio.",
+        "range": "Cono di 3m",
+        "duration": "Istantanea",
+        "defence": "Schivare o Bloccare",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast",
+        "causeDamages": true,
+        "damage": "2d6",
+        "damageType": "elemental"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
 }

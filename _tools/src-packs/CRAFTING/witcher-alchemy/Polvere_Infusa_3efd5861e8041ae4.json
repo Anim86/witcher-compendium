@@ -1,0 +1,23 @@
+﻿{
+    "_id": "3efd5861e8041ae4",
+    "name": "Polvere Infusa",
+    "type": "component",
+    "img": "modules/witcher-compendium/assets/CRAFTING/witcher-alchemy/Pag145_Sostanze Alchemiche_01.webp",
+    "system": {
+        "description": "<p>Polvere intrisa di magia residua da creature superiori.</p><p><b>RaritÃ :</b> R | <b>Ubicazione:</b> Wraith, wraith diurne, grifoni e golem</p>",
+        "quantity": "1",
+        "weight": 0.1,
+        "cost": 146,
+        "sourcebook": "MB 146",
+        "type": "alchemical",
+        "rarity": "R",
+        "location": "Wraith, wraith diurne, grifoni e golem",
+        "substanceType": "hydragenum"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

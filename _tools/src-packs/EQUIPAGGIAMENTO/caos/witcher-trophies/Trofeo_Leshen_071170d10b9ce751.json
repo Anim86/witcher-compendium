@@ -1,28 +1,24 @@
-﻿{
-    "_id":  "071170d10b9ce751",
-    "name":  "Trofeo: Leshen",
-    "type":  "item",
-    "img":  "modules/witcher-compendium/assets/optimized/assets/Immagini_Chaos/Pag119_Oggetti Magici_01.webp",
-    "system":  {
-                   "description":  "\u003cp\u003eIl personaggio può conversare con animali e bestie, che lo capiscono e gli ubbidiscono, ma non compiono azioni chiaramente autolesionistiche (come buttarsi da una scogliera).\u003c/p\u003e",
-                   "weight":  0,
-                   "cost":  0,
-                   "quantity":  1,
-                   "sourcebook":  "TC 127"
-               },
-    "effects":  [
-
-                ],
-    "folder":  null,
-    "sort":  0,
-    "ownership":  {
-                      "default":  0
-                  },
-    "flags":  {
-
-              },
-    "_stats":  {
-                   "coreVersion":  14,
-                   "systemId":  "TheWitcherItaNewSystem"
-               }
+{
+    "_id": "071170d10b9ce751",
+    "name": "Trofeo: Leshen",
+    "type": "item",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/caos/witcher-trophies/Pag119_Oggetti Magici_01.webp",
+    "system": {
+        "description": "<p>Il personaggio può conversare con animali e bestie, che lo capiscono e gli ubbidiscono, ma non compiono azioni chiaramente autolesionistiche (come buttarsi da una scogliera).</p>",
+        "weight": 0,
+        "cost": 0,
+        "quantity": 1,
+        "sourcebook": "TC 127"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
 }

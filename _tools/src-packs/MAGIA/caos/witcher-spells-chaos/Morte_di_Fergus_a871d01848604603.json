@@ -1,67 +1,61 @@
-﻿{
-    "_id":  "a871d01848604603",
-    "name":  "Morte di Fergus",
-    "type":  "spell",
-    "img":  "modules/witcher-compendium/assets/optimized/assets/Immagini_Chaos/Pag083_Incantesimi da Mago_01.webp",
-    "system":  {
-                   "description":  "\u003cp\u003enessuno sa chi creÃ² questo incantesimo, ma divenne famigerato per essere stato usato sullâ€™Impera- tore Fergus var Emreis quando fu detronizzato. Morte di Fergus evoca una serie di aghi magici che, seguendo gli ordini del mago, torturano la vittima. Per la durata dellâ€™incantesimo, il mago puÃ² condurre interrogatori usando Lanciare Incantesimi invece di Intimidire.\u003c/p\u003e",
-                   "quantity":  "1",
-                   "weight":  0,
-                   "cost":  0,
-                   "sourcebook":  "TC 83",
-                   "class":  "Mage",
-                   "level":  "master",
-                   "source":  "Water",
-                   "stamina":  0,
-                   "staminaIsVar":  false,
-                   "effect":  "nessuno sa chi creÃ² questo incantesimo, ma divenne famigerato per essere stato usato sullâ€™Impera- tore Fergus var Emreis quando fu detronizzato. Morte di Fergus evoca una serie di aghi magici che, seguendo gli ordini del mago, torturano la vittima. Per la durata dellâ€™incantesimo, il mago puÃ² condurre interrogatori usando Lanciare Incantesimi invece di Intimidire.",
-                   "range":  "2m",
-                   "duration":  "1 ora",
-                   "defence":  "Nessuna",
-                   "damageProperties":  {
-                                            "armorPiercing":  false,
-                                            "improvedArmorPiercing":  false,
-                                            "ablating":  false,
-                                            "crushingForce":  false,
-                                            "damageIsAblation":  false,
-                                            "stun":  0,
-                                            "damageToAllLocations":  false,
-                                            "bypassesWornArmor":  false,
-                                            "bypassesNaturalArmor":  false,
-                                            "defenseDifferenceMultiplier":  false,
-                                            "defenseMultiplierCap":  5,
-                                            "variableDamage":  false,
-                                            "effects":  [
-
-                                                        ],
-                                            "oilEffect":  "",
-                                            "silverTrait":  false,
-                                            "silverDamage":  "",
-                                            "isMeteorite":  false,
-                                            "isNonLethal":  false
-                                        },
-                   "regionProperties":  {
-                                            "createRegionFromTemplate":  false,
-                                            "behaviours":  {
-                                                               "tokenEnter":  null,
-                                                               "tokenTurnStart":  null,
-                                                               "tokenMoveWithin":  null,
-                                                               "tokenExit":  null
-                                                           }
-                                        },
-                   "attackOptions":  [
-                                         "spell"
-                                     ],
-                   "spellAttackSkill":  "spellcast"
-               },
-    "effects":  [
-
-                ],
-    "flags":  {
-
-              },
-    "_stats":  {
-                   "coreVersion":  14,
-                   "systemId":  "TheWitcherItaNewSystem"
-               }
+{
+    "_id": "a871d01848604603",
+    "name": "Morte di Fergus",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA/caos/witcher-spells-chaos/Pag083_Incantesimi da Mago_01.webp",
+    "system": {
+        "description": "<p>nessuno sa chi creÃ² questo incantesimo, ma divenne famigerato per essere stato usato sullâ€™Impera- tore Fergus var Emreis quando fu detronizzato. Morte di Fergus evoca una serie di aghi magici che, seguendo gli ordini del mago, torturano la vittima. Per la durata dellâ€™incantesimo, il mago puÃ² condurre interrogatori usando Lanciare Incantesimi invece di Intimidire.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "TC 83",
+        "class": "Mage",
+        "level": "master",
+        "source": "Water",
+        "stamina": 0,
+        "staminaIsVar": false,
+        "effect": "nessuno sa chi creÃ² questo incantesimo, ma divenne famigerato per essere stato usato sullâ€™Impera- tore Fergus var Emreis quando fu detronizzato. Morte di Fergus evoca una serie di aghi magici che, seguendo gli ordini del mago, torturano la vittima. Per la durata dellâ€™incantesimo, il mago puÃ² condurre interrogatori usando Lanciare Incantesimi invece di Intimidire.",
+        "range": "2m",
+        "duration": "1 ora",
+        "defence": "Nessuna",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
 }

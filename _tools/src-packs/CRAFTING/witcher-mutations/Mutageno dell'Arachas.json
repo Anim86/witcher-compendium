@@ -1,0 +1,39 @@
+﻿{
+    "_id": "89093aa34c487626",
+    "name": "Mutageno dell'Arachas",
+    "type": "mutagen",
+    "img": "modules/witcher-compendium/assets/CRAFTING/witcher-mutations/Pag089_Prodotti Alchemici_08.webp",
+    "system": {
+        "description": "<p>Mutageno Verde estratto dall'Arachas. Una volta applicato tramite il processo di mutazione, conferisce al portatore +5 Punti Salute. Come mutazione minore, il corpo del portatore produce secrezioni verdi. CD Alchimia per processarlo: 18.</p>",
+        "quantity": "1",
+        "weight": 0.5,
+        "cost": 0,
+        "sourcebook": "MB 251",
+        "isHidden": false,
+        "isStored": false,
+        "isCarried": true,
+        "type": "Green",
+        "source": "Arachas",
+        "effect": "+5 PS (Punti Salute)",
+        "alchemyDC": 18,
+        "minorMutation": "Secrezioni verdi",
+        "isConsumable": false,
+        "consumeProperties": {
+            "doesHeal": false,
+            "heal": "",
+            "addsTempHp": false,
+            "temporaryHp": {
+                "value": "",
+                "duration": 0
+            },
+            "effects": [],
+            "removesEffects": []
+        }
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

@@ -2,7 +2,7 @@
     "id":  "witcher-compendium",
     "title":  "Witcher RPG Compendium (Premium IT)",
     "description":  "Compendio premium per The Witcher TRPG (v14). Include Razze e Professioni con descrizioni complete e coerenti con lo schema di sistema.",
-    "version":  "14.1.45",
+    "version":  "14.1.46",
     "authors":  [
                     {
                         "name":  "Zolt"
@@ -176,28 +176,28 @@
                   {
                       "name":  "witcher-components",
                       "label":  "Componenti",
-                      "path":  "packs/CRAFTING/base/witcher-components",
+                      "path":  "packs/CRAFTING/witcher-components",
                       "type":  "Item",
                       "system":  "TheWitcherItaNewSystem"
                   },
                   {
                       "name":  "witcher-schematics",
                       "label":  "Schemi",
-                      "path":  "packs/CRAFTING/base/witcher-schematics",
+                      "path":  "packs/CRAFTING/witcher-schematics",
                       "type":  "Item",
                       "system":  "TheWitcherItaNewSystem"
                   },
                   {
                       "name":  "witcher-alchemy",
                       "label":  "Alchimia",
-                      "path":  "packs/CRAFTING/base/witcher-alchemy",
+                      "path":  "packs/CRAFTING/witcher-alchemy",
                       "type":  "Item",
                       "system":  "TheWitcherItaNewSystem"
                   },
                   {
                       "name":  "witcher-mutations",
                       "label":  "Mutageni",
-                      "path":  "packs/CRAFTING/base/witcher-mutations",
+                      "path":  "packs/CRAFTING/witcher-mutations",
                       "type":  "Item",
                       "system":  "TheWitcherItaNewSystem"
                   },
@@ -260,5 +260,5 @@
                   ],
     "url":  "https://github.com/Anim86/witcher-compendium",
     "manifest":  "https://raw.githubusercontent.com/Anim86/witcher-compendium/main/witcher-compendium/module.json",
-    "download":  "https://github.com/Anim86/witcher-compendium/releases/download/v14.1.45/witcher-compendium-v14.1.45.zip"
+    "download":  "https://github.com/Anim86/witcher-compendium/releases/download/v14.1.46/witcher-compendium-v14.1.46.zip"
 }

@@ -1,0 +1,29 @@
+﻿{
+    "_id": "65ccf5ea153d4740",
+    "name": "Cotta Gnomesca",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/CRAFTING/witcher-schematics/Pag132_Schemi di Manifattura_10.webp",
+    "system": {
+        "description": "<p>10 R 1 Resistenza: Taglienti Testa, Torso, Braccia e Gambe 0 5 975 ARMATURA DA SCOIA'TAEL L'armatura da Scoia'tael incorpora anche foglie del luogo e pellicce. Quando viaggia in aree naturali, chi la indossa ottiene +2 alle prove di Nascondersi. Armature Medie Cappa Nanica 16 R 1 Testa, Torso, Braccia e Gambe 0 5 1400 Armatura da Scoia'tael 20 R 2 Vedi barra laterale Testa, Torso, Braccia e Gambe 1 12 2325 ARMATURA DA DRAGONE L'Armatura Gnomesca da Dragone Ã¨ costruita in modo da permettere a chi la indossa di stare piÃ¹ facilmente in sella. Quando Ã¨ in sella, chi indossa un'armatura gnomesca ottiene +2 alle prove di Cavalcare. Armature Pesanti Testa, Torso, Braccia e Gambe 2 20 2850 Armatura Gnomesca da Dragone 25 R 2 Resistenza: Taglienti Resistenza: Perforanti Vedi barra laterale Testa, Torso, Braccia e Gambe 2 30 3525 Armatura a Piastre Mahakaman 30 R 3 Resistenza: Taglienti Resistenza: Contundenti Resistenza: Perforanti PALVESE DEI MAHAKAM Esattamente come la sua controparte nilfgaardiana, il palvese dei Mahakam puÃ² essere piantato al suolo, davanti al portatore. SCUDI Nome Aff. Disp. Effetto VI Peso Costo Scudo Leggero Brocchiero Gnomesco 15 R 0 1 450 Scudo Medio Scudo Elfico 25 R 0 3 700 Scudo Pesante Palvese Mahakaman 35 R Vedi barra laterale 1 5,5 1050</p>",
+        "weight": 0,
+        "cost": 0,
+        "components": [
+            "Cotta Gnomesca 24 24 ore Acciaio Nero (Ã—8), Cuoio (Ã—2), Olio Scurente (Ã—1) 736 1462",
+            "Legname Indurito (Ã—10), Cuoio Indurito (Ã—5), Cerume di Orco (Ã—11), Acciaio Mahakaman (Ã—2), Grasso di Estere (Ã—2), Acquaforte (Ã—3), Filo (Ã—1)"
+        ],
+        "difficulty": 24,
+        "time": "24 ore",
+        "sourcebook": "MB 86"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

@@ -1,28 +1,24 @@
-﻿{
-    "_id":  "fa46041ec51c5b71",
-    "name":  "Trofeo: Garkain",
-    "type":  "item",
-    "img":  "modules/witcher-compendium/assets/optimized/assets/Immagini_Chaos/Pag119_Oggetti Magici_01.webp",
-    "system":  {
-                   "description":  "\u003cp\u003eLe penalità ai tiri salvezza Grinta sono ridotte di 1. In caso non vi siano penalità, il personaggio ottiene +1 a Grinta.\u003c/p\u003e",
-                   "weight":  0,
-                   "cost":  0,
-                   "quantity":  1,
-                   "sourcebook":  "TC 127"
-               },
-    "effects":  [
-
-                ],
-    "folder":  null,
-    "sort":  0,
-    "ownership":  {
-                      "default":  0
-                  },
-    "flags":  {
-
-              },
-    "_stats":  {
-                   "coreVersion":  14,
-                   "systemId":  "TheWitcherItaNewSystem"
-               }
+{
+    "_id": "fa46041ec51c5b71",
+    "name": "Trofeo: Garkain",
+    "type": "item",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/caos/witcher-trophies/Pag119_Oggetti Magici_01.webp",
+    "system": {
+        "description": "<p>Le penalità ai tiri salvezza Grinta sono ridotte di 1. In caso non vi siano penalità, il personaggio ottiene +1 a Grinta.</p>",
+        "weight": 0,
+        "cost": 0,
+        "quantity": 1,
+        "sourcebook": "TC 127"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
 }

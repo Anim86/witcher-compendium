@@ -1,0 +1,23 @@
+﻿{
+    "_id": "da4b0cee05611532",
+    "name": "Saliva di Vampiro",
+    "type": "component",
+    "img": "modules/witcher-compendium/assets/CRAFTING/witcher-alchemy/Pag145_Sostanze Alchemiche_01.webp",
+    "system": {
+        "description": "<p>Bava vischiosa che previene la coagulazione del sangue.</p><p><b>RaritÃ :</b> R | <b>Ubicazione:</b> Katakan</p>",
+        "quantity": "1",
+        "weight": 0.5,
+        "cost": 155,
+        "sourcebook": "MB 147",
+        "type": "alchemical",
+        "rarity": "R",
+        "location": "Katakan",
+        "substanceType": "sol"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

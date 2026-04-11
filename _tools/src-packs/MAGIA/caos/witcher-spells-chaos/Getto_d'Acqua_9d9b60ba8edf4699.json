@@ -1,17 +1,17 @@
-﻿{
-    "name":  "Getto d\u0027Acqua",
-    "_id":  "9d9b60ba8edf4699",
-    "system":  {
-                   "stamina":  0,
-                   "cost":  0,
-                   "description":  "\u003cp\u003eDescrizione mancante nel Tomo del Caos.\u003c/p\u003e",
-                   "class":  "Mage",
-                   "sourcebook":  "TC 84"
-               },
-    "type":  "spell",
-    "img":  "modules/witcher-compendium/assets/optimized/assets/Immagini/Placeholder.webp",
-    "_stats":  {
-                   "coreVersion":  14,
-                   "systemId":  "TheWitcherItaNewSystem"
-               }
+{
+    "name": "Getto d'Acqua",
+    "_id": "9d9b60ba8edf4699",
+    "system": {
+        "stamina": 0,
+        "cost": 0,
+        "description": "<p>Descrizione mancante nel Tomo del Caos.</p>",
+        "class": "Mage",
+        "sourcebook": "TC 84"
+    },
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA/caos/witcher-spells-chaos/Placeholder.webp",
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
 }

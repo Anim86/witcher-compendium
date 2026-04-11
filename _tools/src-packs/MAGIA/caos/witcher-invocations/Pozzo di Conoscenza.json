@@ -1,59 +1,61 @@
-﻿{
-  "_id": "9f7c1b8f48f5735a",
-  "name": "Pozzo di Conoscenza",
-  "type": "spell",
-  "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag101_La Magia in The Witcher_01.webp",
-  "system": {
-    "description": "<p>Invocazione da Ierofante (Circolo di Gedyneith). Produce linfa magica nel cavo di un albero: le prime 20 persone a berne ottengono per un giorno +4 in Accortezza e Iniziativa, la capacità di percepire oltre le illusioni, immunità a Allucinazione, Stordito e Vacillante.</p>",
-    "quantity": "1",
-    "weight": 0,
-    "cost": 0,
-    "sourcebook": "TC 97",
-    "class": "Invocations",
-    "level": "master",
-    "source": "Druid",
-    "stamina": 16,
-    "staminaIsVar": false,
-    "effect": "Produce linfa magica: +4 Accortezza/Iniziativa, percezione oltre le illusioni, immunità a Allucinazione/Stordito.",
-    "range": "2m",
-    "duration": "1 giorno",
-    "defence": "Nessuna",
-    "damageProperties": {
-      "armorPiercing": false,
-      "improvedArmorPiercing": false,
-      "ablating": false,
-      "crushingForce": false,
-      "damageIsAblation": false,
-      "stun": 0,
-      "damageToAllLocations": false,
-      "bypassesWornArmor": false,
-      "bypassesNaturalArmor": false,
-      "defenseDifferenceMultiplier": false,
-      "defenseMultiplierCap": 5,
-      "variableDamage": false,
-      "effects": [],
-      "oilEffect": "",
-      "silverTrait": false,
-      "silverDamage": "",
-      "isMeteorite": false,
-      "isNonLethal": false
+{
+    "_id": "9f7c1b8f48f5735a",
+    "name": "Pozzo di Conoscenza",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA/caos/witcher-invocations/Pag101_La Magia in The Witcher_01.webp",
+    "system": {
+        "description": "<p>Invocazione da Ierofante (Circolo di Gedyneith). Produce linfa magica nel cavo di un albero: le prime 20 persone a berne ottengono per un giorno +4 in Accortezza e Iniziativa, la capacità di percepire oltre le illusioni, immunità a Allucinazione, Stordito e Vacillante.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "TC 97",
+        "class": "Invocations",
+        "level": "master",
+        "source": "Druid",
+        "stamina": 16,
+        "staminaIsVar": false,
+        "effect": "Produce linfa magica: +4 Accortezza/Iniziativa, percezione oltre le illusioni, immunità a Allucinazione/Stordito.",
+        "range": "2m",
+        "duration": "1 giorno",
+        "defence": "Nessuna",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast"
     },
-    "regionProperties": {
-      "createRegionFromTemplate": false,
-      "behaviours": {
-        "tokenEnter": null,
-        "tokenTurnStart": null,
-        "tokenMoveWithin": null,
-        "tokenExit": null
-      }
-    },
-    "attackOptions": ["spell"],
-    "spellAttackSkill": "spellcast"
-  },
-  "effects": [],
-  "flags": {},
-  "_stats": {
-    "systemId": "TheWitcherItaNewSystem",
-    "coreVersion": 14
-  }
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
 }

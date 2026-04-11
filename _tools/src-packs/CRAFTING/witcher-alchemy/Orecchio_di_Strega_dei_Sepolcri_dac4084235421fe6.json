@@ -1,0 +1,23 @@
+﻿{
+    "_id": "dac4084235421fe6",
+    "name": "Orecchio di Strega dei Sepolcri",
+    "type": "component",
+    "img": "modules/witcher-compendium/assets/CRAFTING/witcher-alchemy/Pag145_Sostanze Alchemiche_01.webp",
+    "system": {
+        "description": "<p>Organo sensoriale di una strega dei sepolcri, usato per incanalare il Fulgur.</p><p><b>RaritÃ :</b> R | <b>Ubicazione:</b> Streghe dei sepolcri</p>",
+        "quantity": "1",
+        "weight": 0.1,
+        "cost": 134,
+        "sourcebook": "MB 145",
+        "type": "alchemical",
+        "rarity": "R",
+        "location": "Streghe dei sepolcri",
+        "substanceType": "fulgur"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

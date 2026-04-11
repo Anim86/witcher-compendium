@@ -1,0 +1,23 @@
+﻿{
+    "_id": "0e0f4e61077fc7bd",
+    "name": "Perla",
+    "type": "component",
+    "img": "modules/witcher-compendium/assets/CRAFTING/witcher-alchemy/Pag145_Sostanze Alchemiche_02.webp",
+    "system": {
+        "description": "<p>Gemma organica formata all'interno dei molluschi, usata come condensatore alchemico.</p><p><b>RaritÃ :</b> R | <b>Ubicazione:</b> Fondali oceanici e coste</p>",
+        "quantity": "1",
+        "weight": 0.1,
+        "cost": 100,
+        "sourcebook": "MB 145",
+        "type": "alchemical",
+        "rarity": "R",
+        "location": "Fondali oceanici e coste",
+        "substanceType": "etere"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

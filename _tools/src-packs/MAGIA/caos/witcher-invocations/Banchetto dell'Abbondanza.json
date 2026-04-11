@@ -1,59 +1,61 @@
-﻿{
-  "_id": "ed764b8d9de13010",
-  "name": "Banchetto dell'Abbondanza",
-  "type": "spell",
-  "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag101_La Magia in The Witcher_01.webp",
-  "system": {
-    "description": "<p>Invocazione da Arciprete (Dana Meadbh). Benedice un banchetto di prodotti locali per almeno venti persone: chi vi partecipa recupera 6d6 Punti Salute e viene subito curato da Avvelenamento, malattie e Ferite Critiche.</p>",
-    "quantity": "1",
-    "weight": 0,
-    "cost": 0,
-    "sourcebook": "TC 95",
-    "class": "Invocations",
-    "level": "master",
-    "source": "Priest",
-    "stamina": 16,
-    "staminaIsVar": false,
-    "effect": "Benedice un banchetto di prodotti locali per almeno venti persone. Chi vi partecipa recupera 6d6 Punti Salute e viene subito curato da Avvelenamento, malattie e Ferite Critiche.",
-    "range": "2m",
-    "duration": "Istantanea",
-    "defence": "Nessuna",
-    "damageProperties": {
-      "armorPiercing": false,
-      "improvedArmorPiercing": false,
-      "ablating": false,
-      "crushingForce": false,
-      "damageIsAblation": false,
-      "stun": 0,
-      "damageToAllLocations": false,
-      "bypassesWornArmor": false,
-      "bypassesNaturalArmor": false,
-      "defenseDifferenceMultiplier": false,
-      "defenseMultiplierCap": 5,
-      "variableDamage": false,
-      "effects": [],
-      "oilEffect": "",
-      "silverTrait": false,
-      "silverDamage": "",
-      "isMeteorite": false,
-      "isNonLethal": false
+{
+    "_id": "ed764b8d9de13010",
+    "name": "Banchetto dell'Abbondanza",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA/caos/witcher-invocations/Pag101_La Magia in The Witcher_01.webp",
+    "system": {
+        "description": "<p>Invocazione da Arciprete (Dana Meadbh). Benedice un banchetto di prodotti locali per almeno venti persone: chi vi partecipa recupera 6d6 Punti Salute e viene subito curato da Avvelenamento, malattie e Ferite Critiche.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "TC 95",
+        "class": "Invocations",
+        "level": "master",
+        "source": "Priest",
+        "stamina": 16,
+        "staminaIsVar": false,
+        "effect": "Benedice un banchetto di prodotti locali per almeno venti persone. Chi vi partecipa recupera 6d6 Punti Salute e viene subito curato da Avvelenamento, malattie e Ferite Critiche.",
+        "range": "2m",
+        "duration": "Istantanea",
+        "defence": "Nessuna",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast"
     },
-    "regionProperties": {
-      "createRegionFromTemplate": false,
-      "behaviours": {
-        "tokenEnter": null,
-        "tokenTurnStart": null,
-        "tokenMoveWithin": null,
-        "tokenExit": null
-      }
-    },
-    "attackOptions": ["spell"],
-    "spellAttackSkill": "spellcast"
-  },
-  "effects": [],
-  "flags": {},
-  "_stats": {
-    "systemId": "TheWitcherItaNewSystem",
-    "coreVersion": 14
-  }
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
 }

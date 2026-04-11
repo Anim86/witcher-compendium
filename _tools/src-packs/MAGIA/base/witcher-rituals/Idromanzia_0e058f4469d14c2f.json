@@ -1,67 +1,61 @@
-﻿{
-    "_id":  "0e058f4469d14c2f",
-    "name":  "Idromanzia",
-    "type":  "ritual",
-    "img":  "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag118_Rituali_01.webp",
-    "system":  {
-                   "description":  "\u003cp\u003eLâ€™Idromanzia permette al ritualista di fissare in un piccolo specchio dâ€™acqua e di scorgervi un evento av- venuto negli ultimi due giorni, o che si sta svolgendo in quel momento. Osservare un evento passato usa la CD base. Se il ritualista cerca di scorgere un evento che sta avendo luogo, la CD aumenta di 3. Se il ritualista osserva un evento corrente, a cui partecipa un mago questo puÃ² percepire la divinazione con un tiro di Arte del Mago contrapposto al tiro di Officiare Rituali.\u003c/p\u003e",
-                   "quantity":  "1",
-                   "weight":  0,
-                   "cost":  0,
-                   "sourcebook":  "MB 118",
-                   "class":  "ritual",
-                   "level":  "novice",
-                   "source":  "",
-                   "stamina":  0,
-                   "staminaIsVar":  false,
-                   "effect":  "Lâ€™Idromanzia permette al ritualista di fissare in un piccolo specchio dâ€™acqua e di scorgervi un evento av- venuto negli ultimi due giorni, o che si sta svolgendo in quel momento. Osservare un evento passato usa la CD base. Se il ritualista cerca di scorgere un evento che sta avendo luogo, la CD aumenta di 3. Se il ritualista osserva un evento corrente, a cui partecipa un mago questo puÃ² percepire la divinazione con un tiro di Arte del Mago contrapposto al tiro di Officiare Rituali.",
-                   "range":  "N/A",
-                   "duration":  "Attiva (2 RES)",
-                   "defence":  "",
-                   "damageProperties":  {
-                                            "armorPiercing":  false,
-                                            "improvedArmorPiercing":  false,
-                                            "ablating":  false,
-                                            "crushingForce":  false,
-                                            "damageIsAblation":  false,
-                                            "stun":  0,
-                                            "damageToAllLocations":  false,
-                                            "bypassesWornArmor":  false,
-                                            "bypassesNaturalArmor":  false,
-                                            "defenseDifferenceMultiplier":  false,
-                                            "defenseMultiplierCap":  5,
-                                            "variableDamage":  false,
-                                            "effects":  [
-
-                                                        ],
-                                            "oilEffect":  "",
-                                            "silverTrait":  false,
-                                            "silverDamage":  "",
-                                            "isMeteorite":  false,
-                                            "isNonLethal":  false
-                                        },
-                   "regionProperties":  {
-                                            "createRegionFromTemplate":  false,
-                                            "behaviours":  {
-                                                               "tokenEnter":  null,
-                                                               "tokenTurnStart":  null,
-                                                               "tokenMoveWithin":  null,
-                                                               "tokenExit":  null
-                                                           }
-                                        },
-                   "attackOptions":  [
-                                         "spell"
-                                     ],
-                   "spellAttackSkill":  "ritcraft"
-               },
-    "effects":  [
-
-                ],
-    "flags":  {
-
-              },
-    "_stats":  {
-                   "coreVersion":  14,
-                   "systemId":  "TheWitcherItaNewSystem"
-               }
+{
+    "_id": "0e058f4469d14c2f",
+    "name": "Idromanzia",
+    "type": "ritual",
+    "img": "modules/witcher-compendium/assets/MAGIA/base/witcher-rituals/Pag118_Rituali_01.webp",
+    "system": {
+        "description": "<p>Lâ€™Idromanzia permette al ritualista di fissare in un piccolo specchio dâ€™acqua e di scorgervi un evento av- venuto negli ultimi due giorni, o che si sta svolgendo in quel momento. Osservare un evento passato usa la CD base. Se il ritualista cerca di scorgere un evento che sta avendo luogo, la CD aumenta di 3. Se il ritualista osserva un evento corrente, a cui partecipa un mago questo puÃ² percepire la divinazione con un tiro di Arte del Mago contrapposto al tiro di Officiare Rituali.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "MB 118",
+        "class": "ritual",
+        "level": "novice",
+        "source": "",
+        "stamina": 0,
+        "staminaIsVar": false,
+        "effect": "Lâ€™Idromanzia permette al ritualista di fissare in un piccolo specchio dâ€™acqua e di scorgervi un evento av- venuto negli ultimi due giorni, o che si sta svolgendo in quel momento. Osservare un evento passato usa la CD base. Se il ritualista cerca di scorgere un evento che sta avendo luogo, la CD aumenta di 3. Se il ritualista osserva un evento corrente, a cui partecipa un mago questo puÃ² percepire la divinazione con un tiro di Arte del Mago contrapposto al tiro di Officiare Rituali.",
+        "range": "N/A",
+        "duration": "Attiva (2 RES)",
+        "defence": "",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "ritcraft"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
 }

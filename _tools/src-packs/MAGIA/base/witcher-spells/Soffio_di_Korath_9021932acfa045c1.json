@@ -1,70 +1,64 @@
-﻿{
-    "_id":  "9021932acfa045c1",
-    "name":  "Soffio di Korath",
-    "type":  "spell",
-    "img":  "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag101_La Magia in The Witcher_01.webp",
-    "system":  {
-                   "description":  "\u003cp\u003eàSàoàfàfàiàoà àdàià àKàoàràaàtàhà àsàpàeàzàzàaà àuànàaà àpàiàeàtàràaà àoà àuànàaà àsàuàpàeàràfàià-à àcàiàeà àdàià àtàeàràràaà,à àsàpàràuàzàzàaànàdàoà àsàaàbàbàiàaà àaàràdàeànàtàeà àiànà àuànà àcàoànàoà àdàià à3àmà àgàeànàeàràaàtàoà àdàaàlàlàâà€à™àiànàcàaànàtàaàtàoàràeà.à àIà àbàeàràsàaàgàlàià ànàeàlàlàâà€à™àaàràeàaà àcàhàeà àfàaàlàlàiàsàcàoà-à ànàoà àiàlà àtàiàràoà àdàià àdàiàfàeàsàaà àsàoànàoà àaàcàcàeàcàaàtàià àpàeàrà à1àdà6à àràoàuànàdà.à\u003c/p\u003e",
-                   "quantity":  "1",
-                   "weight":  0,
-                   "cost":  0,
-                   "sourcebook":  "MB 105",
-                   "class":  "Mage",
-                   "level":  "novice",
-                   "source":  "air",
-                   "stamina":  2,
-                   "staminaIsVar":  false,
-                   "effect":  "Soffio di Korath spezza una pietra o una superfi- cie di terra, spruzzando sabbia ardente in un cono di 3m generato dallâ€™incantatore. I bersagli nellâ€™area che fallisco- no il tiro di difesa sono accecati per 1d6 round.",
-                   "range":  "Cono di 3m",
-                   "duration":  "Istantanea",
-                   "defence":  "Schivare o Bloccare",
-                   "damageProperties":  {
-                                            "armorPiercing":  false,
-                                            "improvedArmorPiercing":  false,
-                                            "ablating":  false,
-                                            "crushingForce":  false,
-                                            "damageIsAblation":  false,
-                                            "stun":  0,
-                                            "damageToAllLocations":  false,
-                                            "bypassesWornArmor":  false,
-                                            "bypassesNaturalArmor":  false,
-                                            "defenseDifferenceMultiplier":  false,
-                                            "defenseMultiplierCap":  5,
-                                            "variableDamage":  false,
-                                            "effects":  [
-
-                                                        ],
-                                            "oilEffect":  "",
-                                            "silverTrait":  false,
-                                            "silverDamage":  "",
-                                            "isMeteorite":  false,
-                                            "isNonLethal":  false
-                                        },
-                   "regionProperties":  {
-                                            "createRegionFromTemplate":  false,
-                                            "behaviours":  {
-                                                               "tokenEnter":  null,
-                                                               "tokenTurnStart":  null,
-                                                               "tokenMoveWithin":  null,
-                                                               "tokenExit":  null
-                                                           }
-                                        },
-                   "attackOptions":  [
-                                         "spell"
-                                     ],
-                   "spellAttackSkill":  "spellcast",
-                   "causeDamages":  true,
-                   "damage":  "1d6",
-                   "damageType":  "elemental"
-               },
-    "effects":  [
-
-                ],
-    "flags":  {
-
-              },
-    "_stats":  {
-                   "systemId":  "TheWitcherItaNewSystem",
-                   "coreVersion":  14
-               }
+{
+    "_id": "9021932acfa045c1",
+    "name": "Soffio di Korath",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA/base/witcher-spells/Pag101_La Magia in The Witcher_01.webp",
+    "system": {
+        "description": "<p>àSàoàfàfàiàoà àdàià àKàoàràaàtàhà àsàpàeàzàzàaà àuànàaà àpàiàeàtàràaà àoà àuànàaà àsàuàpàeàràfàià-à àcàiàeà àdàià àtàeàràràaà,à àsàpàràuàzàzàaànàdàoà àsàaàbàbàiàaà àaàràdàeànàtàeà àiànà àuànà àcàoànàoà àdàià à3àmà àgàeànàeàràaàtàoà àdàaàlàlàâà€à™àiànàcàaànàtàaàtàoàràeà.à àIà àbàeàràsàaàgàlàià ànàeàlàlàâà€à™àaàràeàaà àcàhàeà àfàaàlàlàiàsàcàoà-à ànàoà àiàlà àtàiàràoà àdàià àdàiàfàeàsàaà àsàoànàoà àaàcàcàeàcàaàtàià àpàeàrà à1àdà6à àràoàuànàdà.à</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "MB 105",
+        "class": "Mage",
+        "level": "novice",
+        "source": "air",
+        "stamina": 2,
+        "staminaIsVar": false,
+        "effect": "Soffio di Korath spezza una pietra o una superfi- cie di terra, spruzzando sabbia ardente in un cono di 3m generato dallâ€™incantatore. I bersagli nellâ€™area che fallisco- no il tiro di difesa sono accecati per 1d6 round.",
+        "range": "Cono di 3m",
+        "duration": "Istantanea",
+        "defence": "Schivare o Bloccare",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast",
+        "causeDamages": true,
+        "damage": "1d6",
+        "damageType": "elemental"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
 }

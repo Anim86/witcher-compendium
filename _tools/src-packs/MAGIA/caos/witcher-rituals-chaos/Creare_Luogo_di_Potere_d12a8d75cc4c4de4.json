@@ -1,17 +1,17 @@
-﻿{
-    "name":  "Creare Luogo di Potere",
-    "_id":  "d12a8d75cc4c4de4",
-    "system":  {
-                   "stamina":  18,
-                   "cost":  18,
-                   "description":  "\u003cp\u003eincidendo complessi sigilli su un menhir posto alla confluenza di due Linee Geomantiche del medesi- mo elemento, Ã¨ possibile creare un Luogo di Potere, che rimarrÃ  attivo per sempre. Ottenere un disastro nellâ€™ese- cuzione del Rituale causa un effetto di livello 10 e tutte le rocce utilizzate esploderanno come un bomba, causando 7d6 danni a ciÃ² che si trova nel raggio di 6m.\u003c/p\u003e",
-                   "class":  "ritual",
-                   "sourcebook":  "TC 104"
-               },
-    "type":  "ritual",
-    "img":  "modules/witcher-compendium/assets/optimized/assets/Immagini/Placeholder.webp",
-    "_stats":  {
-                   "coreVersion":  14,
-                   "systemId":  "TheWitcherItaNewSystem"
-               }
+{
+    "name": "Creare Luogo di Potere",
+    "_id": "d12a8d75cc4c4de4",
+    "system": {
+        "stamina": 18,
+        "cost": 18,
+        "description": "<p>incidendo complessi sigilli su un menhir posto alla confluenza di due Linee Geomantiche del medesi- mo elemento, Ã¨ possibile creare un Luogo di Potere, che rimarrÃ  attivo per sempre. Ottenere un disastro nellâ€™ese- cuzione del Rituale causa un effetto di livello 10 e tutte le rocce utilizzate esploderanno come un bomba, causando 7d6 danni a ciÃ² che si trova nel raggio di 6m.</p>",
+        "class": "ritual",
+        "sourcebook": "TC 104"
+    },
+    "type": "ritual",
+    "img": "modules/witcher-compendium/assets/MAGIA/caos/witcher-rituals-chaos/Placeholder.webp",
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
 }

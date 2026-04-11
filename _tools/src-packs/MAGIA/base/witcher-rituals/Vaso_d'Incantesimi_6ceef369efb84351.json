@@ -1,21 +1,21 @@
-﻿{
-    "name":  "Vaso d\u0027Incantesimi",
-    "_id":  "6ceef369efb84351",
-    "system":  {
-                   "stamina":  0,
-                   "description":  "\u003cp\u003e\u003c/p\u003e",
-                   "cost":  0,
-                   "sourcebook":  "MB 118",
-                   "preparationTime":  "",
-                   "components":  "",
-                   "class":  "ritual",
-                   "duration":  "",
-                   "difficultyCheck":  ""
-               },
-    "type":  "ritual",
-    "img":  "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag118_Rituali_01.webp",
-    "_stats":  {
-                   "coreVersion":  14,
-                   "systemId":  "TheWitcherItaNewSystem"
-               }
+{
+    "name": "Vaso d'Incantesimi",
+    "_id": "6ceef369efb84351",
+    "system": {
+        "stamina": 0,
+        "description": "<p></p>",
+        "cost": 0,
+        "sourcebook": "MB 118",
+        "preparationTime": "",
+        "components": "",
+        "class": "ritual",
+        "duration": "",
+        "difficultyCheck": ""
+    },
+    "type": "ritual",
+    "img": "modules/witcher-compendium/assets/MAGIA/base/witcher-rituals/Pag118_Rituali_01.webp",
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
 }

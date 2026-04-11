@@ -1,0 +1,26 @@
+﻿{
+    "_id": "c89ec502e878b3f3",
+    "name": "Resina",
+    "type": "component",
+    "img": "modules/witcher-compendium/assets/CRAFTING/witcher-components/Pag131_Componenti per la Manifattura_10.webp",
+    "system": {
+        "description": "<p>Sostanza appiccicosa secreta dalle piante, usata come adesivo naturale.</p>",
+        "category": "componente",
+        "quantity": "1",
+        "weight": 0.1,
+        "cost": 2,
+        "sourcebook": "MB 130",
+        "type": "crafting-material",
+        "rarity": "C",
+        "location": "Foreste",
+        "quantityObtainable": "",
+        "forage": "",
+        "substanceType": ""
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

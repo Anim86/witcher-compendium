@@ -1,67 +1,61 @@
-﻿{
-    "_id":  "5750cd6d5a9640c6",
-    "name":  "Adenydd",
-    "type":  "spell",
-    "img":  "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag101_La Magia in The Witcher_01.webp",
-    "system":  {
-                   "description":  "\u003cp\u003eàAàdàeànàyàdàdà àràeànàdàeà àlàâà€à™àiànàcàaànàtàaàtàoàràeà àpàiàÃà¹à àlàeàgàgàeàràoà,à àpàeàrà-à àmàeàtàtàeànàdàoàgàlàià àdàià àpàlàaànàaàràeà àmàeànàtàràeà àcàaàdàeà.à àCàiàÃà²à àsàiàgànàiàfàiàcàaà àcàhàeà àpàeàrà àoàgànàià à2àmà àdàià àcàaàdàuàtàaà àpàuàÃà²à àsàpàoàsàtàaàràsàià àdàià à2àmà àiànà àuànàaà àqàuàaàlàsàià-à àaàsàià àdàiàràeàzàiàoànàeà.à àSàeà àtàoàcàcàaà àtàeàràràaà àeànàtàràoà àlàaà àdàuàràaàtàaà àdàeàlàlàâà€à™àiànàcàaànàtàeà-à àsàiàmàoà,à ànàoànà àsàuàbàiàsàcàeà àaàlàcàuànà àdàaànànàoà.à\u003c/p\u003e",
-                   "quantity":  "1",
-                   "weight":  0,
-                   "cost":  0,
-                   "sourcebook":  "MB 103",
-                   "class":  "Mage",
-                   "level":  "novice",
-                   "source":  "air",
-                   "stamina":  4,
-                   "staminaIsVar":  false,
-                   "effect":  "Adenydd rende lâ€™incantatore piÃ¹ leggero, per- mettendogli di planare mentre cade. CiÃ² significa che per ogni 2m di caduta puÃ² spostarsi di 2m in una qualsi- asi direzione. Se tocca terra entro la durata dellâ€™incante- simo, non subisce alcun danno.",
-                   "range":  "Personale",
-                   "duration":  "Attiva (2 RES)",
-                   "defence":  "Nessuna",
-                   "damageProperties":  {
-                                            "armorPiercing":  false,
-                                            "improvedArmorPiercing":  false,
-                                            "ablating":  false,
-                                            "crushingForce":  false,
-                                            "damageIsAblation":  false,
-                                            "stun":  0,
-                                            "damageToAllLocations":  false,
-                                            "bypassesWornArmor":  false,
-                                            "bypassesNaturalArmor":  false,
-                                            "defenseDifferenceMultiplier":  false,
-                                            "defenseMultiplierCap":  5,
-                                            "variableDamage":  false,
-                                            "effects":  [
-
-                                                        ],
-                                            "oilEffect":  "",
-                                            "silverTrait":  false,
-                                            "silverDamage":  "",
-                                            "isMeteorite":  false,
-                                            "isNonLethal":  false
-                                        },
-                   "regionProperties":  {
-                                            "createRegionFromTemplate":  false,
-                                            "behaviours":  {
-                                                               "tokenEnter":  null,
-                                                               "tokenTurnStart":  null,
-                                                               "tokenMoveWithin":  null,
-                                                               "tokenExit":  null
-                                                           }
-                                        },
-                   "attackOptions":  [
-                                         "spell"
-                                     ],
-                   "spellAttackSkill":  "spellcast"
-               },
-    "effects":  [
-
-                ],
-    "flags":  {
-
-              },
-    "_stats":  {
-                   "systemId":  "TheWitcherItaNewSystem",
-                   "coreVersion":  14
-               }
+{
+    "_id": "5750cd6d5a9640c6",
+    "name": "Adenydd",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA/base/witcher-spells/Pag101_La Magia in The Witcher_01.webp",
+    "system": {
+        "description": "<p>àAàdàeànàyàdàdà àràeànàdàeà àlàâà€à™àiànàcàaànàtàaàtàoàràeà àpàiàÃà¹à àlàeàgàgàeàràoà,à àpàeàrà-à àmàeàtàtàeànàdàoàgàlàià àdàià àpàlàaànàaàràeà àmàeànàtàràeà àcàaàdàeà.à àCàiàÃà²à àsàiàgànàiàfàiàcàaà àcàhàeà àpàeàrà àoàgànàià à2àmà àdàià àcàaàdàuàtàaà àpàuàÃà²à àsàpàoàsàtàaàràsàià àdàià à2àmà àiànà àuànàaà àqàuàaàlàsàià-à àaàsàià àdàiàràeàzàiàoànàeà.à àSàeà àtàoàcàcàaà àtàeàràràaà àeànàtàràoà àlàaà àdàuàràaàtàaà àdàeàlàlàâà€à™àiànàcàaànàtàeà-à àsàiàmàoà,à ànàoànà àsàuàbàiàsàcàeà àaàlàcàuànà àdàaànànàoà.à</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "MB 103",
+        "class": "Mage",
+        "level": "novice",
+        "source": "air",
+        "stamina": 4,
+        "staminaIsVar": false,
+        "effect": "Adenydd rende lâ€™incantatore piÃ¹ leggero, per- mettendogli di planare mentre cade. CiÃ² significa che per ogni 2m di caduta puÃ² spostarsi di 2m in una qualsi- asi direzione. Se tocca terra entro la durata dellâ€™incante- simo, non subisce alcun danno.",
+        "range": "Personale",
+        "duration": "Attiva (2 RES)",
+        "defence": "Nessuna",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
 }

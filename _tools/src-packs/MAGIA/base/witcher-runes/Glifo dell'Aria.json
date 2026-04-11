@@ -1,27 +1,30 @@
-﻿{
-  "_id": "0734f78558e6e553",
-  "name": "Glifo dell'Aria",
-  "type": "enhancement",
-  "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag130_Componenti per la Manifattura_01.webp",
-  "system": {
-    "description": "<p>Glifo per Armature. Potenzia le magie d'aria del portatore, aumentando le CD degli incantesimi d'aria di 3 oppure il loro danno di 1d6. Costo: 575 Corone.</p>",
-    "quantity": "1",
-    "weight": 0.1,
-    "cost": 575,
-    "sourcebook": "MB 256",
-    "isHidden": false,
-    "isStored": false,
-    "isCarried": true,
-    "type": "Glyph",
-    "avail": "Rare",
-    "applied": false,
-    "stopping": 0,
-    "bludgeoning": false,
-    "slashing": false,
-    "piercing": false,
-    "effects": []
-  },
-  "effects": [],
-  "flags": {},
-  "_stats": { "systemId": "TheWitcherItaNewSystem", "coreVersion": 14 }
+{
+    "_id": "0734f78558e6e553",
+    "name": "Glifo dell'Aria",
+    "type": "enhancement",
+    "img": "modules/witcher-compendium/assets/MAGIA/base/witcher-runes/Pag130_Componenti per la Manifattura_01.webp",
+    "system": {
+        "description": "<p>Glifo per Armature. Potenzia le magie d'aria del portatore, aumentando le CD degli incantesimi d'aria di 3 oppure il loro danno di 1d6. Costo: 575 Corone.</p>",
+        "quantity": "1",
+        "weight": 0.1,
+        "cost": 575,
+        "sourcebook": "MB 256",
+        "isHidden": false,
+        "isStored": false,
+        "isCarried": true,
+        "type": "Glyph",
+        "avail": "Rare",
+        "applied": false,
+        "stopping": 0,
+        "bludgeoning": false,
+        "slashing": false,
+        "piercing": false,
+        "effects": []
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
 }

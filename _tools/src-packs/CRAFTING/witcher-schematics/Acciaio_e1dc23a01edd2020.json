@@ -1,0 +1,29 @@
+﻿{
+    "_id": "e1dc23a01edd2020",
+    "name": "Acciaio",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/CRAFTING/witcher-schematics/Pag132_Schemi di Manifattura_10.webp",
+    "system": {
+        "description": "<p>Schema per la fabbricazione di: <b>Acciaio</b>.</p><p><b>Componenti richiesti:</b> Ferro (Ã—1), Carbone (Ã—5)</p><p><b>DifficoltÃ  Manifattura:</b> CD 15</p><p><b>Tempo:</b> 1 ora</p>",
+        "weight": 0,
+        "cost": 0,
+        "components": [
+            "Ferro (Ã—1)",
+            "Carbone (Ã—5)"
+        ],
+        "difficulty": 15,
+        "time": "1 ora",
+        "sourcebook": "MB 132"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

@@ -1,19 +1,46 @@
-﻿{
+{
     "_id": "79656e6e65666572",
     "name": "Yennefer di Vengerberg",
     "type": "Actor",
-    "img": "modules/witcher-compendium/assets/images/NPC/Yennefer.webp",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/NPC/Yennefer.webp",
     "system": {
         "stats": {
-            "int": { "value": 0, "max": 0 },
-            "ref": { "value": 0, "max": 0 },
-            "dex": { "value": 0, "max": 0 },
-            "body": { "value": 0, "max": 0 },
-            "spd": { "value": 0, "max": 0 },
-            "emp": { "value": 0, "max": 0 },
-            "cra": { "value": 0, "max": 0 },
-            "will": { "value": 0, "max": 0 },
-            "luck": { "value": 0, "max": 0 }
+            "int": {
+                "value": 0,
+                "max": 0
+            },
+            "ref": {
+                "value": 0,
+                "max": 0
+            },
+            "dex": {
+                "value": 0,
+                "max": 0
+            },
+            "body": {
+                "value": 0,
+                "max": 0
+            },
+            "spd": {
+                "value": 0,
+                "max": 0
+            },
+            "emp": {
+                "value": 0,
+                "max": 0
+            },
+            "cra": {
+                "value": 0,
+                "max": 0
+            },
+            "will": {
+                "value": 0,
+                "max": 0
+            },
+            "luck": {
+                "value": 0,
+                "max": 0
+            }
         },
         "details": {
             "biography": "<p>Non so se ho mai incontrato qualcuno a cui piacesse Yennefer di Vengerberg. Ma non è che ci sia bisogno di piacere alla gente per fare ciò che va fatto o per avere il loro rispetto. – Rodolf Kazmer</p><p>Yennefer è una delle più potenti e carismatiche maghe del Continente. Nota per la sua volontà di ferro e il suo fascino gelido, ha servito come consigliera di re ed è stata un membro chiave della Loggia delle Maghe. È legata a Geralt di Rivia da un destino turbolento e funge da figura materna per Ciri.</p>",

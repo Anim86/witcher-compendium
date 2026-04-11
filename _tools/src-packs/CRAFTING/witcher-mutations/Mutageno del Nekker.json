@@ -1,0 +1,39 @@
+﻿{
+    "_id": "ecb0e84a5695156f",
+    "name": "Mutageno del Nekker",
+    "type": "mutagen",
+    "img": "modules/witcher-compendium/assets/CRAFTING/witcher-mutations/Pag089_Prodotti Alchemici_08.webp",
+    "system": {
+        "description": "<p>Mutageno Rosso estratto dal Nekker. Una volta applicato tramite il processo di mutazione, conferisce al portatore +1 ai danni in mischia. Come mutazione minore, il portatore sviluppa calvizie e la pelle diventa grigia. CD Alchimia per processarlo: 15.</p>",
+        "quantity": "1",
+        "weight": 0.5,
+        "cost": 0,
+        "sourcebook": "MB 251",
+        "isHidden": false,
+        "isStored": false,
+        "isCarried": true,
+        "type": "Red",
+        "source": "Nekker",
+        "effect": "+1 danno in mischia",
+        "alchemyDC": 15,
+        "minorMutation": "Calvizie e pelle grigia",
+        "isConsumable": false,
+        "consumeProperties": {
+            "doesHeal": false,
+            "heal": "",
+            "addsTempHp": false,
+            "temporaryHp": {
+                "value": "",
+                "duration": 0
+            },
+            "effects": [],
+            "removesEffects": []
+        }
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

@@ -1,0 +1,23 @@
+﻿{
+    "_id": "340b9390ba7f61d4",
+    "name": "Polvere Basica",
+    "type": "component",
+    "img": "modules/witcher-compendium/assets/CRAFTING/witcher-alchemy/Pag089_Prodotti Alchemici_08.webp",
+    "system": {
+        "description": "<p>Soluzione alcalina per contrastare attacchi acidi.</p><p><b>Effetti:</b> Neutralizza l'acido e nega danno da Stomaco Lacerato.</p><p><b>Durata:</b> Istantaneo</p><p><b>TossicitÃ :</b> 0%</p>",
+        "quantity": "1",
+        "weight": 0.1,
+        "cost": 18,
+        "sourcebook": "MB 90",
+        "type": "alchemical",
+        "rarity": "C",
+        "location": "",
+        "substanceType": ""
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

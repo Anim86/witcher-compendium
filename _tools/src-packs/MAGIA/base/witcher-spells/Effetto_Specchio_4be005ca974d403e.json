@@ -1,70 +1,64 @@
-﻿{
-    "_id":  "4be005ca974d403e",
-    "name":  "Effetto Specchio",
-    "type":  "spell",
-    "img":  "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag101_La Magia in The Witcher_01.webp",
-    "system":  {
-                   "description":  "\u003cp\u003eàEàfàfàeàtàtàoà àSàpàeàcàcàhàiàoà àcàràeàaà àuànà àràaàgàgàiàoà àdàià àlàuàcàeà àaàcàcàeà-à àcàaànàtàeà àcàhàeà àiànàfàlàiàgàgàeà à1à0àdà6à àdàaànànàià.à àQàuàeàsàtàoà àràaàgàgàiàoà àpàuàÃà²à àeàsàsàeàràeà àsàcàhàiàvàaàtàoà àoà àbàlàoàcàcàaàtàoà à(àdàiàsàtàràuàgàgàeànàdàoà àqàuàaàlàsàiàaàsàià àcàoàsàaà àuàtàiàlàiàzà-à àzàaàtàaà àpàeàrà àbàlàoàcàcàaàràeà)à,à àmàaà ànàoànà àpàuàÃà²à àeàsàsàeàràeà àdàeàvàiàaàtàoà àdàaàlà àvàeànàtàoà àeà àpàuàÃà²à àeàsàsàeàràeà àpàaàràaàtàoà àsàoàlàoà àdàaà àuànàaà àsàuàpàeàràfàiàcàiàeà àràiàfàlàeàtàtàeànàtàeà,à àcàhàeà àsàuàbàiàsàcàeà àcàoàmàuànàqàuàeà àiàlà àdàaànànàoà.à àIàlà àlàaàsàeàrà àràiàfàlàeàsàsàoà àÃà¨à àdàeàvàiàaàtàoà àiànà àuànàaà àdàiàràeàzàiàoànàeà àcàaàsàuàaàlàeà.à àQàuàeàsàtàoà àiànàcàaànàtàeàsàiàmàoà àuàtàiàlàiàzàzàaà àià àràaàgà-à àgàià àdàeàlà àsàoàlàeà àeà ànàoànà àpàuàÃà²à àeàsàsàeàràeà àuàtàiàlàiàzàzàaàtàoà àiànà àmàaànàcàaànàzàaà àdàià àlàuàcàeà àsàoàlàaàràeà.à àCàoànà àlàaà àlàuàcàeà àdàeàlàlàaà àlàuànàaà àoà àcàoàlà àcàiàeàlàoà àcàoàpàeàràtàoà àdàaà ànàuàbàià,à àiànàfàlàiàgàgàeà àmàeàtàÃà à àdàeàià àdàaànànàià.à\u003c/p\u003e",
-                   "quantity":  "1",
-                   "weight":  0,
-                   "cost":  0,
-                   "sourcebook":  "MB 103",
-                   "class":  "Mage",
-                   "level":  "master",
-                   "source":  "Water",
-                   "stamina":  25,
-                   "staminaIsVar":  false,
-                   "effect":  "Effetto Specchio crea un raggio di luce acce- cante che infligge 10d6 danni. Questo raggio puÃ² essere schivato o bloccato (distruggendo qualsiasi cosa utiliz- zata per bloccare), ma non puÃ² essere deviato dal vento e puÃ² essere parato solo da una superficie riflettente, che subisce comunque il danno. Il laser riflesso Ã¨ deviato in una direzione casuale. Questo incantesimo utilizza i rag- gi del sole e non puÃ² essere utilizzato in mancanza di luce solare. Con la luce della luna o col cielo coperto da nubi, infligge metÃ  dei danni.",
-                   "range":  "20m",
-                   "duration":  "2d6 Round",
-                   "defence":  "Schivare o Bloccare",
-                   "damageProperties":  {
-                                            "armorPiercing":  false,
-                                            "improvedArmorPiercing":  false,
-                                            "ablating":  false,
-                                            "crushingForce":  false,
-                                            "damageIsAblation":  false,
-                                            "stun":  0,
-                                            "damageToAllLocations":  false,
-                                            "bypassesWornArmor":  false,
-                                            "bypassesNaturalArmor":  false,
-                                            "defenseDifferenceMultiplier":  false,
-                                            "defenseMultiplierCap":  5,
-                                            "variableDamage":  false,
-                                            "effects":  [
-
-                                                        ],
-                                            "oilEffect":  "",
-                                            "silverTrait":  false,
-                                            "silverDamage":  "",
-                                            "isMeteorite":  false,
-                                            "isNonLethal":  false
-                                        },
-                   "regionProperties":  {
-                                            "createRegionFromTemplate":  false,
-                                            "behaviours":  {
-                                                               "tokenEnter":  null,
-                                                               "tokenTurnStart":  null,
-                                                               "tokenMoveWithin":  null,
-                                                               "tokenExit":  null
-                                                           }
-                                        },
-                   "attackOptions":  [
-                                         "spell"
-                                     ],
-                   "spellAttackSkill":  "spellcast",
-                   "causeDamages":  true,
-                   "damage":  "10d6",
-                   "damageType":  "elemental"
-               },
-    "effects":  [
-
-                ],
-    "flags":  {
-
-              },
-    "_stats":  {
-                   "systemId":  "TheWitcherItaNewSystem",
-                   "coreVersion":  14
-               }
+{
+    "_id": "4be005ca974d403e",
+    "name": "Effetto Specchio",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA/base/witcher-spells/Pag101_La Magia in The Witcher_01.webp",
+    "system": {
+        "description": "<p>àEàfàfàeàtàtàoà àSàpàeàcàcàhàiàoà àcàràeàaà àuànà àràaàgàgàiàoà àdàià àlàuàcàeà àaàcàcàeà-à àcàaànàtàeà àcàhàeà àiànàfàlàiàgàgàeà à1à0àdà6à àdàaànànàià.à àQàuàeàsàtàoà àràaàgàgàiàoà àpàuàÃà²à àeàsàsàeàràeà àsàcàhàiàvàaàtàoà àoà àbàlàoàcàcàaàtàoà à(àdàiàsàtàràuàgàgàeànàdàoà àqàuàaàlàsàiàaàsàià àcàoàsàaà àuàtàiàlàiàzà-à àzàaàtàaà àpàeàrà àbàlàoàcàcàaàràeà)à,à àmàaà ànàoànà àpàuàÃà²à àeàsàsàeàràeà àdàeàvàiàaàtàoà àdàaàlà àvàeànàtàoà àeà àpàuàÃà²à àeàsàsàeàràeà àpàaàràaàtàoà àsàoàlàoà àdàaà àuànàaà àsàuàpàeàràfàiàcàiàeà àràiàfàlàeàtàtàeànàtàeà,à àcàhàeà àsàuàbàiàsàcàeà àcàoàmàuànàqàuàeà àiàlà àdàaànànàoà.à àIàlà àlàaàsàeàrà àràiàfàlàeàsàsàoà àÃà¨à àdàeàvàiàaàtàoà àiànà àuànàaà àdàiàràeàzàiàoànàeà àcàaàsàuàaàlàeà.à àQàuàeàsàtàoà àiànàcàaànàtàeàsàiàmàoà àuàtàiàlàiàzàzàaà àià àràaàgà-à àgàià àdàeàlà àsàoàlàeà àeà ànàoànà àpàuàÃà²à àeàsàsàeàràeà àuàtàiàlàiàzàzàaàtàoà àiànà àmàaànàcàaànàzàaà àdàià àlàuàcàeà àsàoàlàaàràeà.à àCàoànà àlàaà àlàuàcàeà àdàeàlàlàaà àlàuànàaà àoà àcàoàlà àcàiàeàlàoà àcàoàpàeàràtàoà àdàaà ànàuàbàià,à àiànàfàlàiàgàgàeà àmàeàtàÃà à àdàeàià àdàaànànàià.à</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "MB 103",
+        "class": "Mage",
+        "level": "master",
+        "source": "Water",
+        "stamina": 25,
+        "staminaIsVar": false,
+        "effect": "Effetto Specchio crea un raggio di luce acce- cante che infligge 10d6 danni. Questo raggio puÃ² essere schivato o bloccato (distruggendo qualsiasi cosa utiliz- zata per bloccare), ma non puÃ² essere deviato dal vento e puÃ² essere parato solo da una superficie riflettente, che subisce comunque il danno. Il laser riflesso Ã¨ deviato in una direzione casuale. Questo incantesimo utilizza i rag- gi del sole e non puÃ² essere utilizzato in mancanza di luce solare. Con la luce della luna o col cielo coperto da nubi, infligge metÃ  dei danni.",
+        "range": "20m",
+        "duration": "2d6 Round",
+        "defence": "Schivare o Bloccare",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast",
+        "causeDamages": true,
+        "damage": "10d6",
+        "damageType": "elemental"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
 }

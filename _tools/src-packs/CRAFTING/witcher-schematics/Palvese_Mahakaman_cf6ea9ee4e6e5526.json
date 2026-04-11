@@ -1,0 +1,34 @@
+﻿{
+    "_id": "cf6ea9ee4e6e5526",
+    "name": "Palvese Mahakaman",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/CRAFTING/witcher-schematics/Pag132_Schemi di Manifattura_10.webp",
+    "system": {
+        "description": "<p>Schema per la fabbricazione di: <b>Palvese Mahakaman</b>.</p><p><b>Componenti richiesti:</b> Legname Indurito (Ã—10), Cuoio Indurito (Ã—5), Cerume di Orco (Ã—11), Acciaio Mahakaman (Ã—2), Grasso di Estere (Ã—2), Acquaforte (Ã—3), Filo (Ã—1)</p><p><b>DifficoltÃ  Manifattura:</b> CD 26</p><p><b>Tempo:</b> 7 ore</p>",
+        "weight": 0,
+        "cost": 0,
+        "components": [
+            "Legname Indurito (Ã—10)",
+            "Cuoio Indurito (Ã—5)",
+            "Cerume di Orco (Ã—11)",
+            "Acciaio Mahakaman (Ã—2)",
+            "Grasso di Estere (Ã—2)",
+            "Acquaforte (Ã—3)",
+            "Filo (Ã—1)"
+        ],
+        "difficulty": 26,
+        "time": "7 ore",
+        "sourcebook": "MB 140"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

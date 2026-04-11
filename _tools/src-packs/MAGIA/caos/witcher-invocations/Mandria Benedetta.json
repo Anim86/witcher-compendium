@@ -1,59 +1,61 @@
-﻿{
-  "_id": "c49f876526fd21f6",
-  "name": "Mandria Benedetta",
-  "type": "spell",
-  "img": "modules/witcher-compendium/assets/optimized/assets/Immagini/Pag101_La Magia in The Witcher_01.webp",
-  "system": {
-    "description": "<p>Invocazione da Arciprete (Epona). Richiama fino a dieci cavalli selvatici rinforzati che possono diventare rapidi (VEL 24, Atletica 20) o vigorosi (Armatura PR 20, +2 Controllo). Cavalcarli fornisce un bonus di +5 a Cavalcare per tutta la durata di una settimana.</p>",
-    "quantity": "1",
-    "weight": 0,
-    "cost": 0,
-    "sourcebook": "TC 96",
-    "class": "Invocations",
-    "level": "master",
-    "source": "Priest",
-    "stamina": 16,
-    "staminaIsVar": false,
-    "effect": "Richiama fino a dieci cavalli selvatici rinforzati. Possono diventare rapidi (VEL 24, Atletica 20) o vigorosi (Armatura PR 20, +2 Controllo).",
-    "range": "N/A",
-    "duration": "1 settimana",
-    "defence": "Nessuna",
-    "damageProperties": {
-      "armorPiercing": false,
-      "improvedArmorPiercing": false,
-      "ablating": false,
-      "crushingForce": false,
-      "damageIsAblation": false,
-      "stun": 0,
-      "damageToAllLocations": false,
-      "bypassesWornArmor": false,
-      "bypassesNaturalArmor": false,
-      "defenseDifferenceMultiplier": false,
-      "defenseMultiplierCap": 5,
-      "variableDamage": false,
-      "effects": [],
-      "oilEffect": "",
-      "silverTrait": false,
-      "silverDamage": "",
-      "isMeteorite": false,
-      "isNonLethal": false
+{
+    "_id": "c49f876526fd21f6",
+    "name": "Mandria Benedetta",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA/caos/witcher-invocations/Pag101_La Magia in The Witcher_01.webp",
+    "system": {
+        "description": "<p>Invocazione da Arciprete (Epona). Richiama fino a dieci cavalli selvatici rinforzati che possono diventare rapidi (VEL 24, Atletica 20) o vigorosi (Armatura PR 20, +2 Controllo). Cavalcarli fornisce un bonus di +5 a Cavalcare per tutta la durata di una settimana.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "TC 96",
+        "class": "Invocations",
+        "level": "master",
+        "source": "Priest",
+        "stamina": 16,
+        "staminaIsVar": false,
+        "effect": "Richiama fino a dieci cavalli selvatici rinforzati. Possono diventare rapidi (VEL 24, Atletica 20) o vigorosi (Armatura PR 20, +2 Controllo).",
+        "range": "N/A",
+        "duration": "1 settimana",
+        "defence": "Nessuna",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast"
     },
-    "regionProperties": {
-      "createRegionFromTemplate": false,
-      "behaviours": {
-        "tokenEnter": null,
-        "tokenTurnStart": null,
-        "tokenMoveWithin": null,
-        "tokenExit": null
-      }
-    },
-    "attackOptions": ["spell"],
-    "spellAttackSkill": "spellcast"
-  },
-  "effects": [],
-  "flags": {},
-  "_stats": {
-    "systemId": "TheWitcherItaNewSystem",
-    "coreVersion": 14
-  }
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
 }

@@ -1,17 +1,17 @@
-﻿{
-    "name":  "Ciondolo di Wagerer",
-    "_id":  "71019f819cc849db",
-    "system":  {
-                   "stamina":  6,
-                   "cost":  6,
-                   "description":  "\u003cp\u003elegando una scheggia di vetro inciso a un cion- dolo fatto con aconito, ossa di bestia e strisce di cuoio, il ritualista crea una â€œcalamitaâ€ di magia oscura. Il mo- nile assorbe e trattiene temporaneamente il Caos delle Fatture e chi lo indossa Ã¨ libero dai loro effetti, almeno finchÃ© lo porta su di sÃ©. Inoltre, se questa persona non riesce a liberarsi da tutte le Fatture che lâ€™affliggono entro la durata del Rituale, il Ciondolo si spezza, liberando un flusso di magia oscura. In questo caso, chi lo indossa e tutti coloro che si trovano entro 2m vengono colpiti da un numero di Fatture deciso dal GM.\u003c/p\u003e",
-                   "class":  "ritual",
-                   "sourcebook":  "TC 104"
-               },
-    "type":  "ritual",
-    "img":  "modules/witcher-compendium/assets/optimized/assets/Immagini/Placeholder.webp",
-    "_stats":  {
-                   "coreVersion":  14,
-                   "systemId":  "TheWitcherItaNewSystem"
-               }
+{
+    "name": "Ciondolo di Wagerer",
+    "_id": "71019f819cc849db",
+    "system": {
+        "stamina": 6,
+        "cost": 6,
+        "description": "<p>legando una scheggia di vetro inciso a un cion- dolo fatto con aconito, ossa di bestia e strisce di cuoio, il ritualista crea una â€œcalamitaâ€ di magia oscura. Il mo- nile assorbe e trattiene temporaneamente il Caos delle Fatture e chi lo indossa Ã¨ libero dai loro effetti, almeno finchÃ© lo porta su di sÃ©. Inoltre, se questa persona non riesce a liberarsi da tutte le Fatture che lâ€™affliggono entro la durata del Rituale, il Ciondolo si spezza, liberando un flusso di magia oscura. In questo caso, chi lo indossa e tutti coloro che si trovano entro 2m vengono colpiti da un numero di Fatture deciso dal GM.</p>",
+        "class": "ritual",
+        "sourcebook": "TC 104"
+    },
+    "type": "ritual",
+    "img": "modules/witcher-compendium/assets/MAGIA/caos/witcher-rituals-chaos/Placeholder.webp",
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
 }

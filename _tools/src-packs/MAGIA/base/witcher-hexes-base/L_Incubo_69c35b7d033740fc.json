@@ -1,18 +1,18 @@
-﻿{
-    "name":  "L\u0027Incubo",
-    "_id":  "69c35b7d033740fc",
-    "system":  {
-                   "description":  "\u003cp\u003e\u003c/p\u003e",
-                   "class":  "hex",
-                   "removal":  "",
-                   "danger":  "",
-                   "cost":  0,
-                   "sourcebook":  "MB 123"
-               },
-    "type":  "hex",
-    "img":  "modules/witcher-compendium/assets/optimized/assets/Immagini/Placeholder.webp",
-    "_stats":  {
-                   "coreVersion":  14,
-                   "systemId":  "TheWitcherItaNewSystem"
-               }
+{
+    "name": "L'Incubo",
+    "_id": "69c35b7d033740fc",
+    "system": {
+        "description": "<p></p>",
+        "class": "hex",
+        "removal": "",
+        "danger": "",
+        "cost": 0,
+        "sourcebook": "MB 123"
+    },
+    "type": "hex",
+    "img": "modules/witcher-compendium/assets/MAGIA/base/witcher-hexes-base/Placeholder.webp",
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
 }
