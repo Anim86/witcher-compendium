@@ -1,139 +1,165 @@
 {
-    "id": "TheWitcherItaNewSystem",
-    "title": "The Witcher TRPG (Italian Edition)",
-    "description": "The Witcher TRPG System",
-    "compatibility": {
-        "minimum": "14",
-        "verified": "14.359"
+  "id": "TheWitcherItaNewSystem",
+  "title": "The Witcher TRPG (Italian Edition)",
+  "description": "The Witcher TRPG System",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14.359"
+  },
+  "version": "v14.1.47",
+  "media": [
+    {
+      "type": "icon",
+      "url": "assets/images/icon.png"
     },
-    "version": "v14.1.47",
-    "media": [
-        {
-            "type": "icon",
-            "url": "assets/images/icon.png"
-        },
-        {
-            "type": "banner",
-            "url": "assets/images/banner.png"
-        }
-    ],
-    "authors": [
-        {
-            "name": "Zolt"
-        },
-        {
-            "name": "Anim"
-        }
-    ],
-    "scripts": [],
-    "esmodules": [
-        "module/TheWitcherItaNewSystem.js"
-    ],
-    "styles": [
-        "styles/witcher-styles.css",
-        "styles/wizard.css"
-    ],
-    "documentTypes": {
-        "Actor": {
-            "character": {},
-            "monster": {},
-            "loot": {},
-            "mystery": {}
-        },
-        "Item": {
-            "alchemical": {
-                "htmlFields": ["effect"]
-            },
-            "armor": {
-                "htmlFields": ["description"]
-            },
-            "component": {},
-            "container": {
-                "htmlFields": ["description"]
-            },
-            "diagrams": {},
-            "enhancement": {},
-            "mount": {
-                "htmlFields": ["description"]
-            },
-            "mutagen": {
-                "htmlFields": ["description", "effect"]
-            },
-            "note": {
-                "htmlFields": ["description"]
-            },
-            "profession": {
-                "htmlFields": [
-                    "notes",
-                    "definingSkill.definition",
-                    "*.*.definition"
-                ]
-            },
-            "homeland": {},
-            "race": {
-                "htmlFields": [
-                    "description",
-                    "*.description"
-                ]
-            },
-            "spell": {
-                "htmlFields": ["effect", "sideEffect"]
-            },
-            "hex": {
-                "htmlFields": ["effect", "liftRequirement"]
-            },
-            "ritual": {
-                "htmlFields": ["effect", "components"]
-            },
-            "valuable": {
-                "htmlFields": ["description"]
-            },
-            "weapon": {
-                "htmlFields": ["description"]
-            },
-            "clue": {},
-            "obstacle": {},
-            "skill": {}
-        },
-        "ChatMessage": {
-            "attack": {},
-            "defense": {}
-        },
-        "ActiveEffect": {
-            "temporaryItemImprovement": {}
-        }
+    {
+      "type": "banner",
+      "url": "assets/images/banner.png"
+    }
+  ],
+  "authors": [
+    {
+      "name": "Zolt"
     },
-    "languages": [
-        {
-            "lang": "en",
-            "name": "English",
-            "path": "lang/en.json"
-        },
-        {
-            "lang": "it",
-            "name": "Italian",
-            "path": "lang/it.json"
-        }
-    ],
-    "relationships": {
-        "requires": [],
-        "recommends": [
-            {
-                "id": "statuscounter",
-                "type": "module",
-                "compatibility": {}
-            }
+    {
+      "name": "Anim"
+    }
+  ],
+  "scripts": [],
+  "esmodules": [
+    "module/TheWitcherItaNewSystem.js"
+  ],
+  "styles": [
+    "styles/witcher-styles.css",
+    "styles/wizard.css"
+  ],
+  "documentTypes": {
+    "Actor": {
+      "character": {},
+      "monster": {},
+      "loot": {},
+      "mystery": {}
+    },
+    "Item": {
+      "alchemical": {
+        "htmlFields": [
+          "effect"
         ]
+      },
+      "armor": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "component": {},
+      "container": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "diagrams": {},
+      "enhancement": {},
+      "mount": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "mutagen": {
+        "htmlFields": [
+          "description",
+          "effect"
+        ]
+      },
+      "note": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "profession": {
+        "htmlFields": [
+          "notes",
+          "definingSkill.definition",
+          "*.*.definition"
+        ]
+      },
+      "homeland": {},
+      "race": {
+        "htmlFields": [
+          "description",
+          "*.description"
+        ]
+      },
+      "spell": {
+        "htmlFields": [
+          "effect",
+          "sideEffect"
+        ]
+      },
+      "hex": {
+        "htmlFields": [
+          "effect",
+          "liftRequirement"
+        ]
+      },
+      "ritual": {
+        "htmlFields": [
+          "effect",
+          "components"
+        ]
+      },
+      "valuable": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "weapon": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "clue": {},
+      "obstacle": {},
+      "skill": {}
     },
-    "socket": true,
-    "initiative": "1d10",
-    "grid": {
-        "distance": 2,
-        "units": "m"
+    "ChatMessage": {
+      "attack": {},
+      "defense": {}
     },
-    "primaryTokenAttribute": "resources.health",
-    "secondaryTokenAttribute": "resources.power",
-    "url": "https://github.com/Anim86/witcher-compendium",
-    "manifest": "https://raw.githubusercontent.com/Anim86/witcher-compendium/main/TheWitcherItaNewSystem/system.json",
-    "download": "https://github.com/Anim86/witcher-compendium/releases/download/v14.1.47/system.zip"
+    "ActiveEffect": {
+      "temporaryItemImprovement": {}
+    }
+  },
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "it",
+      "name": "Italian",
+      "path": "lang/it.json"
+    }
+  ],
+  "relationships": {
+    "requires": [],
+    "recommends": [
+      {
+        "id": "statuscounter",
+        "type": "module",
+        "compatibility": {}
+      }
+    ]
+  },
+  "socket": true,
+  "initiative": "1d10",
+  "grid": {
+    "distance": 2,
+    "units": "m"
+  },
+  "primaryTokenAttribute": "resources.health",
+  "secondaryTokenAttribute": "resources.power",
+  "url": "https://github.com/Anim86/witcher-compendium",
+  "manifest": "https://raw.githubusercontent.com/Anim86/witcher-compendium/main/TheWitcherItaNewSystem/system.json",
+  "download": "https://github.com/Anim86/witcher-compendium/releases/download/v14.1.47/system.zip"
 }
