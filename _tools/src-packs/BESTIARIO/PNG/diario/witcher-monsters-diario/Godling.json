@@ -1,0 +1,53 @@
+{
+  "name": "Godling",
+  "type": "monster",
+  "img": "modules/witcher-compendium/assets/images/placeholder.webp",
+  "system": {
+    "stats": {
+      "int": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "ref": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "dex": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "body": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "spd": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "emp": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "cra": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "will": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "luck": { "value": 0, "max": 0, "unmodifiedMax": 0 }
+    },
+    "skills": {
+      "accortezza": { "value": 0 },
+      "atletica": { "value": 0 },
+      "carisma": { "value": 0 },
+      "nascondersi": { "value": 0 },
+      "persuasione": { "value": 0 },
+      "prestanza": { "value": 0 },
+      "rapiditàDiMano": { "value": 0 },
+      "resistereACoercizione": { "value": 0 },
+      "resistereAllaMagia": { "value": 0 },
+      "rissa": { "value": 0 },
+      "sensibilità": { "value": 0 },
+      "sopravvivenza": { "value": 0 },
+      "tempra": { "value": 0 }
+    },
+    "details": {
+      "biography": "<p>Sono spiriti della natura, custodi delle case o roba simile. Il punto è che tendono a restare vicini ai villaggi e si prendono cura della gente. Riparano scar- pe, tetti e roba del genere. Però, mi hanno detto, quando si costruiscono vere città, i godling diventano gelosi e si rivoltano. Conducono ratti della peste nei negozi, rovinano le fondamenta e divorano gli animali domestici. – Rodolf Kazmer</p>",
+      "threat": "Facile Semplice",
+      "reward": 20
+    },
+    "derivedStats": {
+      "health": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "stamina": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "rec": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "stun": { "value": 0, "max": 0 },
+      "woundTreshold": { "value": 0, "max": 0 }
+    },
+    "description": "<p>I godling sono innocui se non vengono offesi e, a differenza di molti altri mostri, parlano la lingua comune. Se trattato con rispetto, un godling può diventare un membro utile di un piccolo villaggio, aiutando con gli animali. Tuttavia, un godling offeso può causare incubi e spingere gli animali ad attaccare le persone senza mai farsi vedere.</p>",
+    "sourcebook": "DW 86"
+  },
+  "items": [],
+  "_id": "ea0b462d9f5871c3",
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
+}

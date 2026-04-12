@@ -1,0 +1,24 @@
+{
+    "_id": "7370656c6c6c7230303031",
+    "name": "Procedura di Preece",
+    "type": "spell",
+    "img": "icons/svg/book.svg",
+    "system": {
+        "description": "<p>Ideata da Catrin Preece per districarsi nell’alta società, la Procedura permette di bloccare un’emozione nel bersaglio. Finché l’incantesimo rimane attivo, il bersaglio non può provare quell’emozione. Questo può essere utilizzato per calmare qualcuno in preda all’ira o per rendere qualcuno insensibile alla paura o al dolore.</p>",
+        "sourcebook": "LR 168",
+        "class": "Mage",
+        "level": "master",
+        "source": "Mixed",
+        "stamina": 10,
+        "staminaIsVar": false,
+        "range": "3m",
+        "duration": "8 ore",
+        "defence": "Resistere alla Magia"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

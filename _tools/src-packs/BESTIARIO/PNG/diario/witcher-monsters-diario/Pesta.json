@@ -1,0 +1,48 @@
+{
+  "name": "Pesta",
+  "type": "monster",
+  "img": "modules/witcher-compendium/assets/images/placeholder.webp",
+  "system": {
+    "stats": {
+      "int": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "ref": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "dex": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "body": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "spd": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "emp": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "cra": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "will": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "luck": { "value": 0, "max": 0, "unmodifiedMax": 0 }
+    },
+    "skills": {
+      "accortezza": { "value": 0 },
+      "atletica": { "value": 0 },
+      "intimidire": { "value": 0 },
+      "nascondersi": { "value": 0 },
+      "prestanza": { "value": 0 },
+      "resistereAllaMagia": { "value": 0 },
+      "rissa": { "value": 0 },
+      "sopravvivenza": { "value": 0 }
+    },
+    "details": {
+      "biography": "<p>Per me le pestilenze sono un faccenda delicata... Eh, vedi, ho passato un bel pezzo della mia vita nell’esercito Temeriano e ho visto la mia parte di vittime della Catriona. Ugh… mai visto un paziente? Il gonfiore, la pelle marcia, il dolore negli occhi. Ce n’è abbastanza da spingerti a lavarti ogni notte per un anno. Le pesta sono portatrici di malattie. Ovunque vadano si portano dietro insetti e ratti infetti che mordono chiunque incontrino. – Rodolf Kazmer</p>",
+      "threat": "Difficile Arduo",
+      "reward": 900
+    },
+    "derivedStats": {
+      "health": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "stamina": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "rec": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "stun": { "value": 0, "max": 0 },
+      "woundTreshold": { "value": 0, "max": 0 }
+    },
+    "description": "<p>Le pesta, note anche come “fanciulle della pestilenza”, sono un raro tipo di spettri che compaion nelle regioni devastate da un’epidemia. Le informazioni al riguardo sono scarse, perché i sopravvissuti tendono a morire molto presto per malattia. Come molti altri spettri, sono incorporee, cosa che rende impossibile affrontarle senza il Segno Yrden o una scorta di Bombe Polvere Lunare.</p><p>'Una pesta è uno spettro che va eliminato in fretta. Un wraith diurno o un penitente possono causare molta sofferenza a una persona o a un villaggio, ma una pesta che vive troppo a lungo è l’araldo di mali che devastano intere nazioni. Quando andate a caccia di una pesta non perdete tempo.' – Erland di Larvik</p>",
+    "sourcebook": "DW 30"
+  },
+  "items": [],
+  "_id": "463e78129a5b0dcf",
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
+}

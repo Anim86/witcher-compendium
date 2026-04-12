@@ -1,0 +1,39 @@
+{
+  "name": "Gnomo",
+  "type": "race",
+  "img": "modules/witcher-compendium/assets/images/races/placeholder.webp",
+  "system": {
+    "sourcebook": "LR 169",
+    "perk1": {
+      "name": "Comportamento Piacevole",
+      "description": "<p>Gli gnomi sono noti in tutto il Continente per il carattere gioioso e scherzoso. Gli umani li considerano spesso i più piacevoli tra i non-umani. Gli gnomi ottengono <strong>+1 innato a Carisma</strong>.</p>"
+    },
+    "perk2": {
+      "name": "Attenzione per i Dettagli",
+      "description": "<p>Elfi e nani possono essere tra i più grandi artigiani del mondo, ma gli gnomi hanno un’attenzione per i dettagli davvero impareggiabile, cosa che li rende capaci di eccellere in molti campi. Non è insolito che si guadagnino da vivere dedicandosi al taglio delle gemme, alla forgiatura di spade e all’alchimia allo stesso tempo. Gli gnomi ottengono <strong>+2 innato a tre Abilità di Manualità a scelta</strong>. Questo bonus ignora il modificatore per le Abilità Difficili.</p>"
+    },
+    "perk3": {
+      "name": "Fiuto",
+      "description": "<p>L’incredibile acutezza si estende a tutti i sensi degli gnomi, compreso l’olfatto. Gli gnomi ottengono <strong>+1 innato ad Accortezza</strong> e possono seguire le tracce usando solo l’olfatto.</p>"
+    },
+    "perk4": {
+      "name": "Bassa Statura",
+      "description": "<p>Con un’altezza media di 1m, gli gnomi sono la specie più piccola del Continente. Pur essendo resistenti, risultano spesso più deboli delle altre razze. Subiscono una <strong>penalità innata di -5 a Prestanza</strong> e calcolano il danno a mani nude, il danno bonus in mischia e l’Ingombro come se il loro FIS fosse più basso di 3 punti. Tuttavia, la bassa statura permette loro di entrare senza problemi in aperture di appena 50cm e nascondersi dietro qualsiasi creatura alta almeno 1m.</p>"
+    },
+    "socialStanding": {
+      "north": "tolerated",
+      "nilfgaard": "equal",
+      "skellige": "equal",
+      "dolBlathanna": "equal",
+      "mahakam": "equal"
+    },
+    "description": "<p>Gli gnomi sono i più raffinati artigiani del Continente, nonché esperti di alchimia, metallurgia e ingegneria. Formano comunità democratiche, simili a quelle dei nani ma meno autoritarie. Hanno una lunga storia di amicizia con i nani di Mahakam e sono generalmente amichevoli, scherzosi e amanti delle feste.</p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "racegnome0000001",
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
+}

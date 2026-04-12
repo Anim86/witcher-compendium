@@ -1,0 +1,130 @@
+{
+    "name":  "Armatura Marionetta",
+    "type":  "monster",
+    "img":  "modules/witcher-compendium/assets/images/placeholder.webp",
+    "system":  {
+                   "stats":  {
+                                 "int":  {
+                                             "value":  0,
+                                             "max":  0
+                                         },
+                                 "ref":  {
+                                             "value":  0,
+                                             "max":  0
+                                         },
+                                 "dex":  {
+                                             "value":  0,
+                                             "max":  0
+                                         },
+                                 "body":  {
+                                              "value":  0,
+                                              "max":  0
+                                          },
+                                 "spd":  {
+                                             "value":  0,
+                                             "max":  0
+                                         },
+                                 "emp":  {
+                                             "value":  0,
+                                             "max":  0
+                                         },
+                                 "cra":  {
+                                             "value":  0,
+                                             "max":  0
+                                         },
+                                 "will":  {
+                                              "value":  0,
+                                              "max":  0
+                                          },
+                                 "luck":  {
+                                              "value":  0,
+                                              "max":  0
+                                          }
+                             },
+                   "skills":  {
+                                  "accortezza":  {
+                                                     "value":  0
+                                                 },
+                                  "atletica":  {
+                                                   "value":  0
+                                               },
+                                  "coraggio":  {
+                                                   "value":  0
+                                               },
+                                  "eludere":  {
+                                                  "value":  0
+                                              },
+                                  "resistereAllaMagia":  {
+                                                             "value":  0
+                                                         },
+                                  "rissa":  {
+                                                "value":  0
+                                            },
+                                  "scherma":  {
+                                                  "value":  0
+                                              },
+                                  "tempra":  {
+                                                 "value":  0
+                                             }
+                              },
+                   "details":  {
+                                   "biography":  "\u003cp\u003eControllate dai crini malevoli della Damigella come marionette dai fili, queste armature danzano un valzer di morte. Nonostante la perfetta sincronia, sono ignare delle finezze della scherma.\u003c/p\u003e",
+                                   "threat":  "Medio",
+                                   "reward":  0
+                               },
+                   "derivedStats":  {
+                                        "health":  {
+                                                       "value":  0,
+                                                       "max":  0
+                                                   },
+                                        "stamina":  {
+                                                        "value":  0,
+                                                        "max":  0
+                                                    },
+                                        "rec":  {
+                                                    "value":  0,
+                                                    "max":  0
+                                                },
+                                        "stun":  {
+                                                     "value":  0
+                                                 },
+                                        "woundTreshold":  {
+                                                              "value":  0
+                                                          }
+                                    },
+                   "description":  "\u003cp\u003eControllate dai crini malevoli della Damigella come marionette dai fili, queste armature danzano un valzer di morte. Nonostante la perfetta sincronia, sono ignare delle finezze della scherma.\u003c/p\u003e",
+                   "sourcebook":  "LR 154"
+               },
+    "items":  [
+                  {
+                      "name":  "Gleddyf Decorativo",
+                      "type":  "weapon",
+                      "img":  "icons/svg/sword.svg",
+                      "system":  {
+                                     "damage":  "2d6+2",
+                                     "accuracy":  0,
+                                     "effects":  ""
+                                 }
+                  },
+                  {
+                      "name":  "[Capacità] Costrutto",
+                      "type":  "note",
+                      "img":  "icons/svg/book.svg",
+                      "system":  {
+                                     "description":  "\u003cp\u003eUn’Armatura Marionetta è immune a Sanguinamento, Veleno, Fuoco e agli incantesimi che colpiscono la mente o le emozioni. È impossibile ragionarci e non finiscono mai la RES.\u003c/p\u003e"
+                                 }
+                  },
+                  {
+                      "name":  "[Capacità] Punto Debole: Tagliare i Fili",
+                      "type":  "note",
+                      "img":  "icons/svg/book.svg",
+                      "system":  {
+                                     "description":  "\u003cp\u003eSe la “Testa” subisce più di 9 danni da un singolo attacco con un’arma tagliente, questo recide i fili e distrugge il costrutto.\u003c/p\u003e"
+                                 }
+                  }
+              ],
+    "_stats":  {
+                   "systemId": "TheWitcherItaNewSystem",
+                   "coreVersion":  14
+               }
+}

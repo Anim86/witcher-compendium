@@ -1,0 +1,49 @@
+{
+  "name": "Frightener",
+  "type": "monster",
+  "img": "modules/witcher-compendium/assets/images/placeholder.webp",
+  "system": {
+    "stats": {
+      "int": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "ref": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "dex": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "body": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "spd": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "emp": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "cra": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "will": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "luck": { "value": 0, "max": 0, "unmodifiedMax": 0 }
+    },
+    "skills": {
+      "accortezza": { "value": 0 },
+      "atletica": { "value": 0 },
+      "intimidire": { "value": 0 },
+      "nascondersi": { "value": 0 },
+      "prestanza": { "value": 0 },
+      "resistereAllaMagia": { "value": 0 },
+      "rissa": { "value": 0 },
+      "sopravvivenza": { "value": 0 },
+      "tempra": { "value": 0 }
+    },
+    "details": {
+      "biography": "<p>Quella del frightener è una storia di tracotanza arcana. Qualche secolo fa c’era ‘sto mago, Dagobert Sulla, che voleva costruire una specie di macchina da guerra e realizzò il frightener: un insetto cazzo enorme. Secondo la leggenda il mago provò a distruggere ‘sta cosa, ma la bestiaccia fuggì sui monti e si riprodusse. Il guscio li rende quasi invincibili, quindi non provare neppure a dargli fuoco! – Rodolf Kazmer</p>",
+      "threat": "Difficile Arduo",
+      "reward": 2000
+    },
+    "derivedStats": {
+      "health": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "stamina": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "rec": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "stun": { "value": 0, "max": 0 },
+      "woundTreshold": { "value": 0, "max": 0 }
+    },
+    "description": "<p>Il primo frightener venne creato da un mago ribelle, Dagobert Sulla. Venne ideato per non avere punti deboli, ma rumori forti e prolungati possono stordire il mostro. A differenza di molti altri insettoidi, non è resistente all’acciaio, anche se perforarne il carapace rimane un’impresa ardua. Per eliminarlo occorrono strumenti che abbiano una grande portata e capacità di trapassare la sua pesantissima armatura naturale.</p><p>“Non ho conosciuto personalmente Dagobert Sulla, ma ne ho sentito parlare. Non ho dubbi che la bestia che creò rappresenti una vera sfida per un witcher solitario. È un peccato che dopo aver cambiato idea non abbia distrutto i propri appunti.” – Erland di Larvik</p>",
+    "sourcebook": "DW 68"
+  },
+  "items": [],
+  "_id": "4fb21c96538da7e0",
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
+}

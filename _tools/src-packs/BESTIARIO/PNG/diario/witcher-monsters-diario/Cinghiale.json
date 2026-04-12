@@ -1,0 +1,50 @@
+{
+  "name": "Cinghiale",
+  "type": "monster",
+  "img": "modules/witcher-compendium/assets/images/placeholder.webp",
+  "system": {
+    "stats": {
+      "int": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "ref": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "dex": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "body": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "spd": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "emp": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "cra": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "will": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "luck": { "value": 0, "max": 0, "unmodifiedMax": 0 }
+    },
+    "skills": {
+      "accortezza": { "value": 0 },
+      "atletica": { "value": 0 },
+      "coraggio": { "value": 0 },
+      "intimidire": { "value": 0 },
+      "nascondersi": { "value": 0 },
+      "prestanza": { "value": 0 },
+      "resistereAllaMagia": { "value": 0 },
+      "rissa": { "value": 0 },
+      "sopravvivenza": { "value": 0 },
+      "tempra": { "value": 0 }
+    },
+    "details": {
+      "biography": "<p>Ho sempre pensato ai cinghiali selvatici come spiriti affini! Eh sì, robusti, bassi e decisamente intrattabili se si alzano con il piede sbagliato! Ho passato un po’ di tempo a cacciarli a Mahakam e posso dirti che con loro non conviene giocare. Se ti caricano la cosa migliore è buttarsi dietro un riparo perché quelle zanne possono sfondare una brigantina se gli dai la possibilità. – Rodolf Kazmer</p>",
+      "threat": "Facile Arduo",
+      "reward": 10
+    },
+    "derivedStats": {
+      "health": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "stamina": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "rec": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "stun": { "value": 0, "max": 0 },
+      "woundTreshold": { "value": 0, "max": 0 }
+    },
+    "description": "<p>I cinghiali sono animali testardi. Dare loro la caccia è molto pericoloso, ma remunerativo. Un solo adulto di taglia media può fornire cibo a una famiglia intera per diversi giorni. Durante la caccia bisogna usare una lancia, per restare lontani dal pericolo. L’Unguento Anti- Bestie è d’aiuto per chi agisce da solo, ma non è necessario se si hanno abbastanza amici con sé.</p><p>'I cinghiali da guerra sono un’antica tradizione di Skellige. Ricordo vagamente di averne visto uno da bambino ed essere rimasto scioc- cato dal fatto che fosse più alto di me. Forse non era così strano, visto che non ero molto sopra il metro. Ho visto un cinghiale da guerra in azione solo una o due volte ed è uno spettacolo incredibile.' – Erland di Larvik</p>",
+    "sourcebook": "DW 36"
+  },
+  "items": [],
+  "_id": "9163caeb805d4f72",
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
+}

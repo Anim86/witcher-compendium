@@ -1,0 +1,71 @@
+{
+  "name": "Annegina di Maribor",
+  "type": "character",
+  "img": "modules/witcher-compendium/assets/images/placeholder.webp",
+  "system": {
+    "stats": {
+      "int": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "ref": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "dex": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "body": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "spd": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "emp": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "cra": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "will": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "luck": { "value": 0, "max": 0, "unmodifiedMax": 0 }
+    },
+    "skills": {
+      "accortezza": { "value": 0 },
+      "atletica": { "value": 0 },
+      "coraggio": { "value": 0 },
+      "eludere": { "value": 0 },
+      "inganno": { "value": 0 },
+      "lameCorte": { "value": 0 },
+      "nascondersi": { "value": 0 },
+      "prontoSoccorso": { "value": 0 },
+      "resistereACoercizione": { "value": 0 },
+      "resistereAllaMagia": { "value": 0 },
+      "sensibilita": { "value": 0 },
+      "sopravvivenza": { "value": 0 },
+      "tempra": { "value": 0 }
+    },
+    "details": {
+      "biography": "<p>Sacerdotessa di Melitele a Maribor e medico eccezionale, Annegina nasconde un passato di traumi e un presente oscuro. È la vera autrice degli omicidi compiuti nelle fogne della città, spinta dal desiderio di scacciare l'occupazione Nilfgaardiana che minaccia il suo tempio.</p>",
+      "threat": "Difficile",
+      "reward": 0
+    },
+    "derivedStats": {
+      "health": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "stamina": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "rec": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "stun": { "value": 0, "max": 0 },
+      "woundTreshold": { "value": 0, "max": 0 }
+    },
+    "description": "<p>Sacerdotessa di Melitele a Maribor e medico eccezionale, Annegina nasconde un passato di traumi e un presente oscuro. (Stats reali: INT 7, RIF 7, DES 6, COR 18, VEL 6, EMP 7, VOL 9. Abilità principali: Medicina 11, Lame Corte 13, Sensibilità 14).</p>",
+    "sourcebook": "LR 85"
+  },
+  "items": [
+    {
+      "name": "Jambiya",
+      "type": "weapon",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "damage": "2d6+2",
+        "accuracy": 0,
+        "effects": "Sanguinamento (100%), Trapassare (2)"
+      }
+    },
+    {
+      "name": "[Capacità] Anatomista",
+      "type": "note",
+      "img": "icons/svg/book.svg",
+      "system": {
+        "description": "<p>Le Ferite Critiche inflitte da Annegina impiegano il doppio del tempo a guarire. (Meccanica: 100% Sanguinamento con lame).</p>"
+      }
+    }
+  ],
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
+}

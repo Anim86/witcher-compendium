@@ -1,0 +1,49 @@
+{
+  "name": "Elementale di Fuoco",
+  "type": "monster",
+  "img": "modules/witcher-compendium/assets/images/placeholder.webp",
+  "system": {
+    "stats": {
+      "int": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "ref": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "dex": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "body": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "spd": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "emp": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "cra": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "will": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "luck": { "value": 0, "max": 0, "unmodifiedMax": 0 }
+    },
+    "skills": {
+      "accortezza": { "value": 0 },
+      "atletica": { "value": 0 },
+      "intimidire": { "value": 0 },
+      "nascondersi": { "value": 0 },
+      "prestanza": { "value": 0 },
+      "resistereAllaMagia": { "value": 0 },
+      "rissa": { "value": 0 },
+      "sopravvivenza": { "value": 0 },
+      "tempra": { "value": 0 }
+    },
+    "details": {
+      "biography": "<p>Ho visto con i miei occhi quella cosa sfondare la testa di un cavallo in corsa con un solo colpo del suo grande pugno con gli spuntoni! Il cadavere della povera bestia fu ridotto in cenere! Ho sentito da qual- che parte che gli elementali di fuoco bruciano le anime per ricaricare la propria magia. Ogni persona che uccidono viene intrappolata nel loro torace, come legna in una fornace. – Rodolf Kazmer</p>",
+      "threat": "Difficile Complesso",
+      "reward": 1600
+    },
+    "derivedStats": {
+      "health": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "stamina": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "rec": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "stun": { "value": 0, "max": 0 },
+      "woundTreshold": { "value": 0, "max": 0 }
+    },
+    "description": "<p>Questi elementali sono aggressivi e vengono evocati per distruggere i nemici dai maghi più abili. È possibile incontrare esemplari selvatici presso le pendici di un vulcano o nel cuore del deserto, ma è molto raro. In combattimento sono rapidi e circondati da un'aura di intenso calore che può incenerire gli avversari in pochi istanti. Possono anche evocare eruzioni di fiamme dal suolo o anelli di fuoco attorno a sé.</p><p>“L'elementale del fuoco è un'incarnazione di pura distruzione arcana. Non conosce paura né pietà e continuerà a bruciare finché non resterà che cenere o finché non verrà ricacciato nella propria sfera.” – Erland di Larvik</p>",
+    "sourcebook": "DW 76"
+  },
+  "items": [],
+  "_id": "0b1a8754f3c2e96d",
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
+}

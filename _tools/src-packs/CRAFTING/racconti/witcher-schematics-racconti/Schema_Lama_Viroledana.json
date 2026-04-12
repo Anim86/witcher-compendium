@@ -1,0 +1,23 @@
+{
+    "_id": "6c72736368656d3033",
+    "name": "Schema: Lama Viroledana",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/CRAFTING/racconti/witcher-schematics-racconti/placeholder.webp",
+    "system": {
+        "description": "<p>Artigiani e manifatturieri possono utilizzare questo schema per creare una Lama Viroledana.</p>",
+        "difficulty": 25,
+        "time": "12 ore",
+        "components": [
+            "Acciaio Nero (x5), Cote(x2), Cuoio Indurito (x1), Estratto di Veleno (x3), Legname Indurito (x1), Olio di Papero (x1), Olio Scurente (x2)"
+        ],
+        "sourcebook": "LR 169",
+        "weight": 0,
+        "cost": 0
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "_id": "7370656c6c6c7230303032",
+    "name": "Akhan Daal",
+    "type": "spell",
+    "img": "icons/svg/wind.svg",
+    "system": {
+        "description": "<p>Il mago crea una violenta raffica d'aria compressa che colpisce un'area circolare. Tutti i bersagli nell'area devono superare una prova di Difesa o essere scagliati indietro di 2 metri e cadere proni, subendo 2d6 danni da impatto.</p>",
+        "sourcebook": "LR 168",
+        "class": "Mage",
+        "level": "master",
+        "source": "Air",
+        "stamina": 12,
+        "staminaIsVar": false,
+        "range": "4m (2m raggio)",
+        "duration": "Istantanea",
+        "defence": "Schivare"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

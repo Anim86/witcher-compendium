@@ -57,7 +57,14 @@ Hooks.once("ready", async () => {
   const tomoBaseCreaz = await getSubfolder("Tomo Base", crafting);
   const tomoBaseBest = await getSubfolder("Tomo Base", bestiario);
   const tomoCaosBest = await getSubfolder("Tomo del Caos", bestiario);
-  const tomoCaosTrofei = await getSubfolder("Trofei", tomoCaosEquip);
+
+  const tomoRaccontiEquip = await getSubfolder("Libro dei Racconti", equip);
+  const tomoRaccontiMagia = await getSubfolder("Libro dei Racconti", magia);
+  const tomoRaccontiCreaz = await getSubfolder("Libro dei Racconti", crafting);
+  const tomoRaccontiBest = await getSubfolder("Libro dei Racconti", bestiario);
+
+  const tomoDiarioCreaz = await getSubfolder("Diario di un Witcher", crafting);
+  const tomoDiarioBest = await getSubfolder("Diario di un Witcher", bestiario);
 
   // Mappa pack → cartella
   const assegnazioni = [
@@ -88,10 +95,18 @@ Hooks.once("ready", async () => {
     { pack: "witcher-monsters",       folder: tomoBaseBest },
     { pack: "witcher-monsters-chaos", folder: tomoCaosBest },
     { pack: "witcher-transports",     folder: tomoBaseEquip },
-    { pack: "witcher-trophies",       folder: tomoCaosTrofei },
+    { pack: "witcher-trophies",       folder: tomoCaosEquip },
     { pack: "witcher-lore",           folder: loreCat },
     { pack: "witcher-critical-wounds",folder: gameplay },
-    { pack: "witcher-curses",         folder: gameplay }
+    { pack: "witcher-curses",         folder: gameplay },
+    { pack: "witcher-weapons-racconti",    folder: tomoRaccontiEquip },
+    { pack: "witcher-spells-racconti",     folder: tomoRaccontiMagia },
+    { pack: "witcher-components-racconti", folder: tomoRaccontiCreaz },
+    { pack: "witcher-schematics-racconti", folder: tomoRaccontiCreaz },
+    { pack: "witcher-monsters-racconti",   folder: tomoRaccontiBest },
+    { pack: "witcher-npc-racconti",        folder: tomoRaccontiBest },
+    { pack: "witcher-monsters-diario",   folder: tomoDiarioBest },
+    { pack: "witcher-components-diario", folder: tomoDiarioCreaz }
   ];
 
   console.log("Witcher Compendio: Inizio assegnazione pack...");

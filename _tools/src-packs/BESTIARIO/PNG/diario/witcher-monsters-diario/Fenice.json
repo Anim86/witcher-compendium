@@ -1,0 +1,52 @@
+{
+  "name": "Fenice",
+  "type": "monster",
+  "img": "modules/witcher-compendium/assets/images/placeholder.webp",
+  "system": {
+    "stats": {
+      "int": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "ref": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "dex": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "body": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "spd": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "emp": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "cra": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "will": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "luck": { "value": 0, "max": 0, "unmodifiedMax": 0 }
+    },
+    "skills": {
+      "accortezza": { "value": 0 },
+      "atletica": { "value": 0 },
+      "coraggio": { "value": 0 },
+      "intimidire": { "value": 0 },
+      "nascondersi": { "value": 0 },
+      "persuasione": { "value": 0 },
+      "prestanza": { "value": 0 },
+      "resistereACoercizione": { "value": 0 },
+      "resistereAllaMagia": { "value": 0 },
+      "rissa": { "value": 0 },
+      "sopravvivenza": { "value": 0 },
+      "tempra": { "value": 0 }
+    },
+    "details": {
+      "biography": "<p>L’unica cosa che avevo sentito sulle fenici è che erano uccelli mitologici fatti di fuoco e cenere. Una gran bella vista, specie di notte. Alcuni pensano che siano attirate dai più potenti maghi del fuoco. Ti consiglio di parlarci. Da quel che ho sentito sono abbastanza intelligenti… almeno per un enorme uccello di fuoco. – Rodolf Kazmer</p>",
+      "threat": "Medio Arduo",
+      "reward": 1200
+    },
+    "derivedStats": {
+      "health": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "stamina": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "rec": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "stun": { "value": 0, "max": 0 },
+      "woundTreshold": { "value": 0, "max": 0 }
+    },
+    "description": "<p>Le fenici sono tra i mostri più rari del Continente. Sebbene non parlino, è possibile ragionarci. Possiedono molte armi magiche basate sul fuoco, inclusi soffi di braci e fiamme. Quando una fenice viene uccisa, il suo corpo esplode lasciando solo ceneri e un uovo o un pulcino: la medesima creatura rinata che conserva i propri ricordi ma deve ricrescere.</p>",
+    "sourcebook": "DW 108"
+  },
+  "items": [],
+  "_id": "395027d6cbea148f",
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "name": "Vero Drago",
+  "type": "monster",
+  "img": "modules/witcher-compendium/assets/images/placeholder.webp",
+  "system": {
+    "stats": {
+      "int": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "ref": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "dex": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "body": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "spd": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "emp": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "cra": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "will": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "luck": { "value": 0, "max": 0, "unmodifiedMax": 0 }
+    },
+    "skills": {
+      "accortezza": { "value": 0 },
+      "atletica": { "value": 0 },
+      "carisma": { "value": 0 },
+      "coraggio": { "value": 0 },
+      "inganno": { "value": 0 },
+      "intimidire": { "value": 0 },
+      "istruzione": { "value": 0 },
+      "nascondersi": { "value": 0 },
+      "persuasione": { "value": 0 },
+      "prestanza": { "value": 0 },
+      "resistereACoercizione": { "value": 0 },
+      "resistereAllaMagia": { "value": 0 },
+      "rissa": { "value": 0 },
+      "sensibilità": { "value": 0 },
+      "sopravvivenza": { "value": 0 },
+      "tempra": { "value": 0 }
+    },
+    "details": {
+      "biography": "<p>Ho saputo, da fonte attendibile, che la famosa Vergine di Aedirn, Saskia, era un drago! Questi affari possono assumere forma umana, soffiano fuoco tanto caldo da sciogliere la pietra e abbattono le mura dei castelli con gli artigli! Sono certo che i re del Nord terranno i loro preziosi ben nascosti. D’altronde i draghi vivono solo per due cose: ammazzare cavalieri e accumulare bottino. – Rodolf Kazmer</p>",
+      "threat": "Eccezionale Complesso",
+      "reward": 5000
+    },
+    "derivedStats": {
+      "health": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "stamina": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "rec": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "stun": { "value": 0, "max": 0 },
+      "woundTreshold": { "value": 0, "max": 0 }
+    },
+    "description": "<p>I veri draghi sono tra le creature più potenti e senzienti del mondo. Possono comunicare telepaticamente e sono maestri del combattimento sia fisico che magico. Il loro soffio di fuoco può incenerire interi eserciti e le loro scaglie sono quasi impenetrabili. Vivono isolati nei regni montani e sono noti per la loro saggezza millenaria quanto per la loro ferocia protettiva del proprio territorio.</p><p>“Ho dovuto affrontare un drago solo una volta. Fetanahuir aveva reclamato il passo e chiunque si avvicinava veniva sommariamente ucciso. Non mi affrettai allo scontro. Passai due settimane a studiarlo prima di agire.” – Erland di Larvik</p>",
+    "sourcebook": "DW 130"
+  },
+  "items": [],
+  "_id": "b3a1d9c72e4f0a6d",
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
+}

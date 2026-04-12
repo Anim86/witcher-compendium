@@ -1,0 +1,50 @@
+{
+  "name": "Plumard",
+  "type": "monster",
+  "img": "modules/witcher-compendium/assets/images/placeholder.webp",
+  "system": {
+    "stats": {
+      "int": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "ref": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "dex": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "body": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "spd": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "emp": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "cra": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "will": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "luck": { "value": 0, "max": 0, "unmodifiedMax": 0 }
+    },
+    "skills": {
+      "accortezza": { "value": 0 },
+      "atletica": { "value": 0 },
+      "coraggio": { "value": 0 },
+      "intimidire": { "value": 0 },
+      "nascondersi": { "value": 0 },
+      "prestanza": { "value": 0 },
+      "resistereAllaMagia": { "value": 0 },
+      "rissa": { "value": 0 },
+      "sopravvivenza": { "value": 0 },
+      "tempra": { "value": 0 }
+    },
+    "details": {
+      "biography": "<p>I plumard infestano tutta Angren e lo Yaruga e sono delle pesti! Escono di notte in stormi e ti sciamano addosso, mordendo e stridendo! Dicono che indossare il simbolo di un dio fatto con giunchi li tiene lontani, ma sono solo chiacchiere da vecchia. – Rodolf Kazmer</p>",
+      "threat": "Facile Semplice",
+      "reward": 15
+    },
+    "derivedStats": {
+      "health": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "stamina": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "rec": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "stun": { "value": 0, "max": 0 },
+      "woundTreshold": { "value": 0, "max": 0 }
+    },
+    "description": "<p>Ad Angren i plumard sono una continua minaccia per il bestiame. Pur essendo classificati come vampiri, sono più simili a parassiti che a predatori. Un singolo plumard è facile da eliminare, ma interi stormi possono rivelarsi fatali, attaccando da tutte le direzioni bersagli non corazzati. Sono estremamente vulnerabili alla luce solare e al fuoco.</p>",
+    "sourcebook": "DW 120"
+  },
+  "items": [],
+  "_id": "d2b7c4a0398f6e15",
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
+}

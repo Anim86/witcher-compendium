@@ -1,0 +1,51 @@
+{
+  "name": "Ciclope",
+  "type": "monster",
+  "img": "modules/witcher-compendium/assets/images/placeholder.webp",
+  "system": {
+    "stats": {
+      "int": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "ref": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "dex": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "body": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "spd": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "emp": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "cra": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "will": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "luck": { "value": 0, "max": 0, "unmodifiedMax": 0 }
+    },
+    "skills": {
+      "accortezza": { "value": 0 },
+      "atletica": { "value": 0 },
+      "coraggio": { "value": 0 },
+      "intimidire": { "value": 0 },
+      "nascondersi": { "value": 0 },
+      "prestanza": { "value": 0 },
+      "resistereACoercizione": { "value": 0 },
+      "resistereAllaMagia": { "value": 0 },
+      "rissa": { "value": 0 },
+      "sopravvivenza": { "value": 0 },
+      "tempra": { "value": 0 }
+    },
+    "details": {
+      "biography": "<p>Per me i ciclopi sono proprio strani. Sembrano umani, indossano abiti, alcuni portano armi, ma la gente li considera mostri. Eh, penso sia perché urlano e cercano di schiacciare tutti quelli che gli passano accanto. Non sono troppo svegli: se ne stanno soli in un posto e cercano di schiacciare tutto quello che passa di lì. – Rodolf Kazmer</p>",
+      "threat": "Difficile Semplice",
+      "reward": 1200
+    },
+    "derivedStats": {
+      "health": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "stamina": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "rec": { "value": 0, "max": 0, "unmodifiedMax": 0 },
+      "stun": { "value": 0, "max": 0 },
+      "woundTreshold": { "value": 0, "max": 0 }
+    },
+    "description": "<p>I ciclopi sono una delle molte specie di orchi che sembrano senzienti, sebbene non intelligenti. Quando un ciclope carica urlando selvaggiamente, è meglio togliersi di torno rapidamente. I loro colpi sono micidiali e le braccia lunghe permettono loro di colpire più avversari contemporaneamente. Sono capaci di una furia tremenda se storditi o feriti.</p>",
+    "sourcebook": "DW 98"
+  },
+  "items": [],
+  "_id": "a2894b75360efc1d",
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
+}

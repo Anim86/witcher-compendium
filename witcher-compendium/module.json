@@ -2,7 +2,7 @@
   "id": "witcher-compendium",
   "title": "Witcher RPG Compendium (Premium IT)",
   "description": "Compendio premium per The Witcher TRPG (v14).",
-  "version": "14.1.53",
+  "version": "14.1.26",
   "authors": [
     {
       "name": "Zolt",
@@ -51,7 +51,7 @@
     },
     {
       "name": "witcher-skills",
-      "label": "Abilit",
+      "label": "Abilità",
       "path": "packs/CORE/witcher-skills",
       "type": "Item",
       "system": "TheWitcherItaNewSystem"
@@ -60,6 +60,13 @@
       "name": "witcher-weapons",
       "label": "Armi",
       "path": "packs/EQUIPAGGIAMENTO/base/witcher-weapons",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-weapons-racconti",
+      "label": "Armi (Racconti)",
+      "path": "packs/EQUIPAGGIAMENTO/racconti/witcher-weapons-racconti",
       "type": "Item",
       "system": "TheWitcherItaNewSystem"
     },
@@ -95,6 +102,13 @@
       "name": "witcher-spells",
       "label": "Incantesimi Base",
       "path": "packs/MAGIA/base/witcher-spells",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-spells-racconti",
+      "label": "Incantesimi (Racconti)",
+      "path": "packs/MAGIA/racconti/witcher-spells-racconti",
       "type": "Item",
       "system": "TheWitcherItaNewSystem"
     },
@@ -183,9 +197,30 @@
       "system": "TheWitcherItaNewSystem"
     },
     {
+      "name": "witcher-components-diario",
+      "label": "Componenti (Diario)",
+      "path": "packs/CRAFTING/diario/witcher-components-diario",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-components-racconti",
+      "label": "Componenti (Racconti)",
+      "path": "packs/CRAFTING/racconti/witcher-components-racconti",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
       "name": "witcher-schematics",
       "label": "Schemi",
       "path": "packs/CRAFTING/witcher-schematics",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-schematics-racconti",
+      "label": "Schemi (Racconti)",
+      "path": "packs/CRAFTING/racconti/witcher-schematics-racconti",
       "type": "Item",
       "system": "TheWitcherItaNewSystem"
     },
@@ -207,6 +242,27 @@
       "name": "witcher-monsters",
       "label": "Bestiario Base",
       "path": "packs/BESTIARIO/PNG/base/witcher-monsters",
+      "type": "Actor",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-monsters-racconti",
+      "label": "Bestiario (Racconti)",
+      "path": "packs/BESTIARIO/PNG/racconti/witcher-monsters-racconti",
+      "type": "Actor",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-npc-racconti",
+      "label": "PNG (Racconti)",
+      "path": "packs/BESTIARIO/NPC/racconti/witcher-npc-racconti",
+      "type": "Actor",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-monsters-diario",
+      "label": "Bestiario (Diario)",
+      "path": "packs/BESTIARIO/PNG/diario/witcher-monsters-diario",
       "type": "Actor",
       "system": "TheWitcherItaNewSystem"
     },
@@ -267,5 +323,5 @@
   ],
   "url": "https://github.com/Anim86/witcher-compendium",
   "manifest": "https://raw.githubusercontent.com/Anim86/witcher-compendium/main/witcher-compendium/module.json",
-  "download": "https://github.com/Anim86/witcher-compendium/releases/download/v14.1.53/witcher-compendium-v14.1.53.zip"
+  "download": "https://github.com/Anim86/witcher-compendium/releases/download/v14.1.26/witcher-compendium-v14.1.26.zip"
 }

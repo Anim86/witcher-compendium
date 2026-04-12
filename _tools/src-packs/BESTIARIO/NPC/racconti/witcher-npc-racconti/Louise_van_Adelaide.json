@@ -1,0 +1,128 @@
+{
+    "name":  "Louise van Adelaide",
+    "type":  "character",
+    "img":  "modules/witcher-compendium/assets/images/placeholder.webp",
+    "system":  {
+                   "stats":  {
+                                 "int":  {
+                                             "value":  0,
+                                             "max":  0
+                                         },
+                                 "ref":  {
+                                             "value":  0,
+                                             "max":  0
+                                         },
+                                 "dex":  {
+                                             "value":  0,
+                                             "max":  0
+                                         },
+                                 "body":  {
+                                              "value":  0,
+                                              "max":  0
+                                          },
+                                 "spd":  {
+                                             "value":  0,
+                                             "max":  0
+                                         },
+                                 "emp":  {
+                                             "value":  0,
+                                             "max":  0
+                                         },
+                                 "cra":  {
+                                             "value":  0,
+                                             "max":  0
+                                         },
+                                 "will":  {
+                                              "value":  0,
+                                              "max":  0
+                                          },
+                                 "luck":  {
+                                              "value":  0,
+                                              "max":  0
+                                          }
+                             },
+                   "skills":  {
+                                  "autorita":  {
+                                                   "value":  0
+                                               },
+                                  "eleganza":  {
+                                                   "value":  0
+                                               },
+                                  "sensibilita":  {
+                                                      "value":  0
+                                                  },
+                                  "accortezza":  {
+                                                     "value":  0
+                                                 },
+                                  "lanciareIncantesimi":  {
+                                                              "value":  0
+                                                          },
+                                  "officiareRituali":  {
+                                                           "value":  0
+                                                       },
+                                  "intessereFatture":  {
+                                                           "value":  0
+                                                       },
+                                  "resistereAllaMagia":  {
+                                                             "value":  0
+                                                         },
+                                  "tempra":  {
+                                                 "value":  0
+                                             },
+                                  "istruzione":  {
+                                                     "value":  0
+                                                 }
+                              },
+                   "details":  {
+                                   "biography":  "\u003cp\u003eLouise van Adelaide è la volitiva leader della Società delle Maghe dell\u0027Alto Monte. Perfezionista e testarda, ha fondato la Società ad Altaguardia per proteggere gli studiosi di magia e rivivere i giorni dorati di Aretuza.\u003c/p\u003e",
+                                   "threat":  "Difficile",
+                                   "reward":  0
+                               },
+                   "derivedStats":  {
+                                        "health":  {
+                                                       "value":  0,
+                                                       "max":  0
+                                                   },
+                                        "stamina":  {
+                                                        "value":  0,
+                                                        "max":  0
+                                                    },
+                                        "rec":  {
+                                                    "value":  0,
+                                                    "max":  0
+                                                },
+                                        "stun":  {
+                                                     "value":  0
+                                                 },
+                                        "woundTreshold":  {
+                                                              "value":  0
+                                                          }
+                                    },
+                   "description":  "\u003cp\u003eLouise van Adelaide è la volitiva leader della Società delle Maghe dell\u0027Alto Monte. Perfezionista e testarda, ha fondato la Società ad Altaguardia per proteggere gli studiosi di magia e rivivere i giorni dorati di Aretuza.\u003c/p\u003e",
+                   "sourcebook":  "LR 18"
+               },
+    "items":  [
+                  {
+                      "name":  "Bastone di Louise",
+                      "type":  "weapon",
+                      "img":  "icons/svg/sword.svg",
+                      "system":  {
+                                     "damage":  "2d6+2",
+                                     "accuracy":  0,
+                                     "effects":  "Focus (3)"
+                                 }
+                  },
+                  {
+                      "name":  "[Incantesimo] Bufera di van Adelaide",
+                      "type":  "spell",
+                      "img":  "icons/svg/lightning.svg",
+                      "system":  {
+                                     "description":  "\u003cp\u003eCrea un potente vento che scaglia l\u0027incantatore fino a 30m.\u003c/p\u003e"
+                                 }
+                  }
+              ],
+    "_stats":  {
+                   "systemId": "TheWitcherItaNewSystem",
+                   "coreVersion":  14
+               }
+}
