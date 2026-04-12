@@ -3,9 +3,8 @@ import { emitForGM } from '../socket/socketMessage.js';
 
 export function addStatusEffectChatListeners(html) {
     // setup chat listener messages for each message as some need the message context instead of chatlog context.
-    html.querySelector('.chat-message').each(async (index, element) => {
-        element = $(element);
-        const id = element.data('messageId');
+    html.querySelectorAll('.chat-message').forEach(async (element) => {
+        const id = element.dataset.messageId;
         const message = game.messages?.get(id);
         if (!message) return;
 

@@ -68,8 +68,8 @@
                     {{selectOptions config.Availability blank='' selected=item.system.avail localize=true}}
                 </select>
             </td>
-            <td><input type="number" name="system.reliable" value="{{item.system.reliable}}" data-dtype="Number" /></td>
-            <td><input type="number" name="system.maxReliability" value="{{item.system.maxReliability}}"
+            <td><input type="number" name="system.reliability" value="{{item.system.reliability}}" data-dtype="Number" /></td>
+            <td><input type="number" name="system.reliabilityMax" value="{{item.system.reliabilityMax}}"
                     data-dtype="Number" /></td>
             {{#unless item.system.isAmmo}}
                 <td>

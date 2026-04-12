@@ -32,21 +32,16 @@ export default class WitcherItem extends Item {
             shift: false
         }
     ) {
-        if (!this.system.attackOptions) {
+        if (!this.system.attackOptions || this.system.attackOptions.size === 0) {
             return {
                 attackOption: 'none',
                 itemUuid: this.uuid
             };
         }
 
-        let mapKeyToNumber;
-        if (Object.values(options).every(key => !key) || this.system.attackOptions.size < 2) {
-            mapKeyToNumber = 0;
-        } else {
+        let mapKeyToNumber = 0;
+        if (Object.values(options).some(key => key)) {
             switch (true) {
-                case options.ctrl:
-                    mapKeyToNumber = 3;
-                    break;
                 case options.alt:
                     mapKeyToNumber = 2;
                     break;
@@ -59,6 +54,13 @@ export default class WitcherItem extends Item {
         }
 
         let attackOption = [...this.system.attackOptions][mapKeyToNumber];
+
+        if (!attackOption) {
+            return {
+                attackOption: 'none',
+                itemUuid: this.uuid
+            };
+        }
 
         let attackSkill = this.system[attackOption + 'AttackSkill'];
         return {

@@ -50,7 +50,7 @@ Hooks.once('init', function () {
     registerQueries();
 });
 
-Hooks.on('renderChatMessageHTML', (message, html, data) => {
+Hooks.on('renderChatMessageHTML', (message, html, context) => {
     Combat.attackChatMessageListeners(message, html);
     Combat.defenseChatMessageListeners(message, html);
     VerbalCombat.chatMessageListeners(message, html);

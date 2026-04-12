@@ -109,6 +109,54 @@ export default class WeaponData extends CommonItemData {
             delete source.maxReliability;
         }
 
+        // Migration for reach -> range
+        if ('reach' in source) {
+            source.range = source.range || source.reach;
+        }
+
+        // Migration for reliability object
+        if (source.reliability && typeof source.reliability === 'object') {
+            source.reliabilityMax = source.reliability.max;
+            source.reliability = source.reliability.value;
+        }
+
+        // Migration for attackSkill and guessing defaults
+        if (source.attackSkill && !source.attackOptions) {
+            const skill = source.attackSkill;
+            source.attackOptions = source.attackOptions || [];
+            if (CONFIG.WITCHER.meleeSkills.includes(skill)) {
+                source.attackOptions.push('melee');
+                source.meleeAttackSkill = source.meleeAttackSkill || skill;
+            }
+            if (CONFIG.WITCHER.rangedSkills.includes(skill)) {
+                source.attackOptions.push('ranged');
+                source.rangedAttackSkill = source.rangedAttackSkill || skill;
+            }
+        }
+
+        // Guessing defaults for items that have NO skill info at all
+        if (
+            !source.attackSkill &&
+            (!source.attackOptions || (source.attackOptions instanceof Array && source.attackOptions.length === 0))
+        ) {
+            const nameU = (source.name || '').toUpperCase();
+            if (
+                nameU.includes('ARCO') ||
+                nameU.includes('BALESTRA') ||
+                nameU.includes('BOW') ||
+                nameU.includes('CROSSBOW') ||
+                (source.range && source.range !== 'N/A' && source.range !== '')
+            ) {
+                source.attackOptions = ['ranged'];
+                source.rangedAttackSkill =
+                    nameU.includes('BALESTRA') || nameU.includes('CROSSBOW') ? 'crossbow' : 'archery';
+            } else {
+                // Default to melee for weapons
+                source.attackOptions = ['melee'];
+                source.meleeAttackSkill = 'swordsmanship'; // Most common fallback
+            }
+        }
+
         migrateDamageProperties(source);
 
         return super.migrateData(source);
