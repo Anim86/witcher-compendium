@@ -1,161 +1,161 @@
 {
-    "id": "TheWitcherItaNewSystem",
-    "title": "The Witcher TRPG (Italian Edition)",
-    "description": "The Witcher TRPG System Localizzato",
-    "version": "14.1.51",
-    "compatibility": {
-        "minimum": "14",
-        "verified": "14.360"
+  "id": "TheWitcherItaNewSystem",
+  "title": "The Witcher TRPG (Italian Edition)",
+  "description": "The Witcher TRPG System Localizzato",
+  "version": "v14.1.51",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14.360"
+  },
+  "url": "https://github.com/Anim86/witcher-compendium",
+  "manifest": "https://raw.githubusercontent.com/Anim86/witcher-compendium/main/TheWitcherItaNewSystem/system.json",
+  "download": "https://github.com/Anim86/witcher-compendium/releases/download/v14.1.51/system.zip",
+  "authors": [
+    {
+      "name": "Zolt",
+      "flags": {}
     },
-    "url": "https://github.com/Anim86/witcher-compendium",
-    "manifest": "https://raw.githubusercontent.com/Anim86/witcher-compendium/main/TheWitcherItaNewSystem/system.json",
-    "download": "https://github.com/Anim86/witcher-compendium/releases/download/v14.1.51/system.zip",
-    "authors": [
-        {
-            "name": "Zolt",
-            "flags": {}
-        },
-        {
-            "name": "Anim",
-            "flags": {}
-        }
-    ],
-    "esmodules": [
-        "module/TheWitcherItaNewSystem.js"
-    ],
-    "styles": [
-        "styles/witcher-styles.css",
-        "styles/wizard.css"
-    ],
-    "background": "systems/TheWitcherItaNewSystem/assets/images/setup_bg.jpg",
-    "documentTypes": {
-        "Actor": {
-            "character": {},
-            "monster": {},
-            "loot": {},
-            "mystery": {}
-        },
-        "Item": {
-            "alchemical": {
-                "htmlFields": [
-                    "effect"
-                ]
-            },
-            "armor": {
-                "htmlFields": [
-                    "description"
-                ]
-            },
-            "component": {},
-            "container": {
-                "htmlFields": [
-                    "description"
-                ]
-            },
-            "diagrams": {},
-            "enhancement": {},
-            "mount": {
-                "htmlFields": [
-                    "description"
-                ]
-            },
-            "mutagen": {
-                "htmlFields": [
-                    "description",
-                    "effect"
-                ]
-            },
-            "note": {
-                "htmlFields": [
-                    "description"
-                ]
-            },
-            "profession": {
-                "htmlFields": [
-                    "notes",
-                    "definingSkill.definition",
-                    "*.*.definition"
-                ]
-            },
-            "homeland": {},
-            "race": {
-                "htmlFields": [
-                    "description",
-                    "*.description"
-                ]
-            },
-            "spell": {
-                "htmlFields": [
-                    "effect",
-                    "sideEffect"
-                ]
-            },
-            "hex": {
-                "htmlFields": [
-                    "effect",
-                    "liftRequirement"
-                ]
-            },
-            "ritual": {
-                "htmlFields": [
-                    "effect",
-                    "components"
-                ]
-            },
-            "valuable": {
-                "htmlFields": [
-                    "description"
-                ]
-            },
-            "weapon": {
-                "htmlFields": [
-                    "description"
-                ]
-            },
-            "clue": {},
-            "obstacle": {},
-            "skill": {}
-        },
-        "ChatMessage": {
-            "attack": {},
-            "defense": {}
-        },
-        "ActiveEffect": {
-            "temporaryItemImprovement": {}
-        }
+    {
+      "name": "Anim",
+      "flags": {}
+    }
+  ],
+  "esmodules": [
+    "module/TheWitcherItaNewSystem.js"
+  ],
+  "styles": [
+    "styles/witcher-styles.css",
+    "styles/wizard.css"
+  ],
+  "background": "systems/TheWitcherItaNewSystem/assets/images/setup_bg.jpg",
+  "documentTypes": {
+    "Actor": {
+      "character": {},
+      "monster": {},
+      "loot": {},
+      "mystery": {}
     },
-    "socket": true,
-    "initiative": "1d10",
-    "grid": {
-        "distance": 2,
-        "units": "m"
+    "Item": {
+      "alchemical": {
+        "htmlFields": [
+          "effect"
+        ]
+      },
+      "armor": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "component": {},
+      "container": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "diagrams": {},
+      "enhancement": {},
+      "mount": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "mutagen": {
+        "htmlFields": [
+          "description",
+          "effect"
+        ]
+      },
+      "note": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "profession": {
+        "htmlFields": [
+          "notes",
+          "definingSkill.definition",
+          "*.*.definition"
+        ]
+      },
+      "homeland": {},
+      "race": {
+        "htmlFields": [
+          "description",
+          "*.description"
+        ]
+      },
+      "spell": {
+        "htmlFields": [
+          "effect",
+          "sideEffect"
+        ]
+      },
+      "hex": {
+        "htmlFields": [
+          "effect",
+          "liftRequirement"
+        ]
+      },
+      "ritual": {
+        "htmlFields": [
+          "effect",
+          "components"
+        ]
+      },
+      "valuable": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "weapon": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "clue": {},
+      "obstacle": {},
+      "skill": {}
     },
-    "primaryTokenAttribute": "resources.health",
-    "secondaryTokenAttribute": "resources.power",
-    "languages": [
-        {
-            "lang": "en",
-            "name": "English",
-            "path": "lang/en.json"
-        },
-        {
-            "lang": "it",
-            "name": "Italiano",
-            "path": "lang/it.json"
-        }
-    ],
-    "media": [
-        {
-            "type": "icon",
-            "url": "systems/TheWitcherItaNewSystem/assets/images/icon.png"
-        },
-        {
-            "type": "banner",
-            "url": "systems/TheWitcherItaNewSystem/assets/images/icon.png"
-        },
-        {
-            "type": "setup",
-            "url": "systems/TheWitcherItaNewSystem/assets/images/setup_bg.jpg"
-        }
-    ]
+    "ChatMessage": {
+      "attack": {},
+      "defense": {}
+    },
+    "ActiveEffect": {
+      "temporaryItemImprovement": {}
+    }
+  },
+  "socket": true,
+  "initiative": "1d10",
+  "grid": {
+    "distance": 2,
+    "units": "m"
+  },
+  "primaryTokenAttribute": "resources.health",
+  "secondaryTokenAttribute": "resources.power",
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "it",
+      "name": "Italiano",
+      "path": "lang/it.json"
+    }
+  ],
+  "media": [
+    {
+      "type": "icon",
+      "url": "systems/TheWitcherItaNewSystem/assets/images/icon.png"
+    },
+    {
+      "type": "banner",
+      "url": "systems/TheWitcherItaNewSystem/assets/images/icon.png"
+    },
+    {
+      "type": "setup",
+      "url": "systems/TheWitcherItaNewSystem/assets/images/setup_bg.jpg"
+    }
+  ]
 }
