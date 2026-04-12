@@ -1,8 +1,10 @@
+/* ── Editor box ── */
 .editor {
-    border-radius: 5px;
-    background: light-dark(#22222210, #e7d1b110);
+    border-radius: 7px;
+    background: light-dark(rgba(28,104,136,0.06), rgba(14,50,70,0.45));
+    border: 1px solid light-dark(rgba(28,104,136,0.18), rgba(44,136,175,0.22));
     height: 250px;
-    padding: 5px;
+    padding: 6px;
 }
 
 .tox.tox-tinymce {
@@ -10,107 +12,114 @@
     min-width: 200px;
 }
 
-.life-events, .character-notes {
+/* ── Background tab grids ── */
+.life-events,
+.character-notes {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
 }
 
-.life-events-header, .notes-header {
+/* ── Section headers ── */
+.life-events-header,
+.notes-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px;
-    border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.05);
-    border: 1px solid darkgray;
-    margin-top: 20px;
-    margin-bottom: 5px;
+    padding: 6px 10px;
+    border-radius: 7px;
+    background: light-dark(rgba(28,104,136,0.09), rgba(14,50,70,0.5));
+    border: 1px solid light-dark(rgba(28,104,136,0.2), rgba(44,136,175,0.22));
+    margin-top: 18px;
+    margin-bottom: 6px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.1);
 
-    span {
-        font-size: 24px;
-    }
+    span { font-size: 20px; color: light-dark(rgba(28,104,136,0.8), rgba(44,136,175,0.9)); }
 }
 
-.life-events-card {
-    border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.05);
-    border: 1px solid darkgray;
-}
-
-.life-events-header > h2, .notes-header > h2 {
+.life-events-header > h2,
+.notes-header > h2 {
     margin: 0;
     border-bottom: none;
-    opacity: 0.8;
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    opacity: 0.85;
 }
 
+/* ── Event cards ── */
+.life-events-card {
+    border-radius: 7px;
+    background: light-dark(rgba(255,255,255,0.45), rgba(14,26,36,0.5));
+    border: 1px solid light-dark(rgba(28,104,136,0.18), rgba(44,136,175,0.2));
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.life-events-card:hover {
+    border-color: light-dark(rgba(28,104,136,0.35), rgba(44,136,175,0.38));
+    box-shadow: 0 2px 10px rgba(0,0,0,0.18);
+}
+
+/* ── Card header ── */
 .life-events-card-header {
     display: grid;
     grid-template-columns: 10% 80% 10%;
-    padding: 8px 4px;
+    padding: 7px 5px;
     align-items: center;
 
-    span {
-        font-size: 18px;
-    }
+    span { font-size: 16px; color: light-dark(rgba(28,104,136,0.8), rgba(44,136,175,0.9)); }
 }
 
-.padding {
-    padding: 5px 10px;
-}
+.padding { padding: 5px 10px; }
 
-.life-events-controls {
-    justify-self: center;
-}
+.life-events-controls { justify-self: center; }
 
 .life-events-decades {
     display: flex;
     text-align: end;
 }
 
-.add-item {
-    margin-right: 5px;
-}
+.add-item { margin-right: 5px; }
 
+/* ── Note box ── */
 .bg-note {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    border-radius: 5px;
-    padding: 5px;
-    background-color: rgba(0, 0, 0, 0.05);
-    border: 1px solid darkgray;
+    border-radius: 7px;
+    padding: 6px;
+    background: light-dark(rgba(255,255,255,0.45), rgba(14,26,36,0.45));
+    border: 1px solid light-dark(rgba(28,104,136,0.18), rgba(44,136,175,0.2));
+    transition: border-color 0.2s;
 }
 
-.note-header {
-    display: flex;
-    flex-direction: row;
+.bg-note:hover {
+    border-color: light-dark(rgba(28,104,136,0.35), rgba(44,136,175,0.38));
 }
 
-.note-header > a {
-    display: none;
-}
-
+.note-header { display: flex; flex-direction: row; }
+.note-header > a { display: none; }
 .note-header:hover > a {
     display: inline-block;
     text-align: center;
     text-shadow: none;
-    color: #d02323;
+    color: #c03030;
+    transition: color 0.2s;
 }
+.note-header:hover > a:hover { color: #e04040; }
 
-.item-delete {
-    margin: 5px;
-    width: 15px;
-}
+/* ── Item delete ── */
+.item-delete { margin: 5px; width: 15px; }
 
-.modifier-display {
-    min-width: 100px;
-}
+.modifier-display { min-width: 100px; }
 
+/* ── Background info layout ── */
 .background-info {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 18px;
 }
 
 .general-section {
@@ -119,25 +128,23 @@
     gap: 10px;
 }
 
-.general-homeland, .general-info {
+.general-homeland,
+.general-info {
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    padding: 10px;
+    gap: 8px;
+    padding: 12px;
     border-radius: 10px;
-    background-color: light-dark(#22222210, #e7d1b110);
-    border: 1px solid light-dark(#22222240, #e7d1b140);
+    background: light-dark(rgba(28,104,136,0.07), rgba(14,50,70,0.45));
+    border: 1px solid light-dark(rgba(28,104,136,0.18), rgba(44,136,175,0.22));
+    box-shadow: 0 1px 6px rgba(0,0,0,0.1);
 }
 
-.homeland-select {
-    display: flex;
-    gap: 5px;
-}
+.homeland-select { display: flex; gap: 5px; }
 
-.background-description {
-    overflow-y: auto;
-}
+.background-description { overflow-y: auto; }
 
+/* ── Input fields ── */
 textarea.life-events-details,
 textarea.inline-edit {
     resize: vertical;
@@ -157,7 +164,9 @@ input.life-events-decades,
 textarea.inline-edit,
 input.inline-edit {
     border: none;
-    transition: box-shadow 0.1s ease;
+    border-bottom: 1px solid light-dark(rgba(28,104,136,0.15), rgba(44,136,175,0.15));
+    background: transparent;
+    transition: border-color 0.18s ease, box-shadow 0.18s ease;
     flex-grow: 1;
 }
 
@@ -168,5 +177,6 @@ textarea.life-events-details:hover,
 input.life-events-decades:hover,
 textarea.inline-edit:hover,
 input.inline-edit:hover {
-    box-shadow: 0 0 5px var(--color-shadow-primary);
+    border-color: light-dark(rgba(28,104,136,0.45), rgba(44,136,175,0.55));
+    box-shadow: 0 2px 0 0 light-dark(rgba(28,104,136,0.3), rgba(44,136,175,0.35));
 }
