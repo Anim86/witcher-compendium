@@ -1,17 +1,32 @@
 <div class="char-header-center">
     <!-- Character Info Bar -->
     <div class="header-details-bar">
-        <div class="header-main-info">
-            <h1 class="charname">
-                <input name="name" type="text" value="{{actor.name}}" placeholder="{{localize 'WITCHER.Name'}}" />
-            </h1>
-            <div class="header-tags">
-                <span class="tag race" data-tooltip="{{localize 'WITCHER.Actor.Race'}}">
-                    <i class="fas fa-dna"></i> {{#if race}}{{localize race.name}}{{else}}{{localize 'WITCHER.Actor.Race'}}{{/if}}
-                </span>
-                <span class="tag profession" data-tooltip="{{localize 'WITCHER.Actor.tabs.profession'}}">
-                    <i class="fas fa-briefcase"></i> {{#if profession}}{{localize profession.name}}{{else}}{{localize 'WITCHER.Actor.tabs.profession'}}{{/if}}
-                </span>
+        <div class="header-top-row">
+            <div class="header-main-info">
+                <h1 class="charname">
+                    <input name="name" type="text" value="{{actor.name}}" placeholder="{{localize 'WITCHER.Name'}}" />
+                </h1>
+                <div class="header-tags">
+                    <span class="tag race" data-tooltip="{{localize 'WITCHER.Actor.Race'}}">
+                        <i class="fas fa-dna"></i> {{#if race}}{{localize race.name}}{{else}}{{localize 'WITCHER.Actor.Race'}}{{/if}}
+                    </span>
+                    <span class="tag profession" data-tooltip="{{localize 'WITCHER.Actor.tabs.profession'}}">
+                        <i class="fas fa-briefcase"></i> {{#if profession}}{{localize profession.name}}{{else}}{{localize 'WITCHER.Actor.tabs.profession'}}{{/if}}
+                    </span>
+                </div>
+            </div>
+
+            <div class="reputation-badge" data-action="editReputation" data-tooltip="{{localize 'WITCHER.Reputation'}}: {{localize (concat 'WITCHER.reputationLevels.' system.reputation.value)}}">
+                <div class="badge-icon">
+                    <i class="fas fa-award"></i>
+                </div>
+                <div class="badge-content">
+                    <span class="badge-label">{{localize 'WITCHER.Reputation'}}</span>
+                    <span class="badge-value">{{system.reputation.value}}</span>
+                </div>
+                <div class="badge-edit">
+                    <i class="fas fa-cog"></i>
+                </div>
             </div>
         </div>
 
@@ -46,6 +61,10 @@
                 <div class="header-stat-item" data-tooltip="{{localize 'WITCHER.Actor.Gender.name'}}">
                     <i class="fas fa-venus-mars"></i>
                     <span>{{#if system.gender}}{{localize (lookup config.genders system.gender)}}{{else}}---{{/if}}</span>
+                </div>
+                <div class="header-stat-item encumbrance-item {{#if (gt totalWeight system.derivedStats.enc.value)}}overweight{{/if}}" data-tooltip="{{localize 'WITCHER.Actor.DerStat.Enc'}}">
+                    <i class="fas fa-weight-hanging"></i>
+                    <span>{{totalWeight}} / {{system.derivedStats.enc.value}}</span>
                 </div>
             </div>
 

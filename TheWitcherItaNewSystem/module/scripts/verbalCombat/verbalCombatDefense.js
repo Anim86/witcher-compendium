@@ -26,25 +26,33 @@ async function executeDefense(actor, messageId, totalAttack) {
         }
     );
 
-    new Dialog({
-        title: `${game.i18n.localize('WITCHER.Dialog.DefenseTitle')}`,
+    const dialog = new foundry.applications.api.DialogV2({
+        window: { 
+            title: game.i18n.localize('WITCHER.verbalCombat.Title'),
+            classList: ["verbal-combat-dialog"]
+        },
+        classes: ["verbal-combat-dialog"],
         content: dialogTemplate,
-        buttons: {
-            t1: {
-                label: `${game.i18n.localize('WITCHER.Dialog.ButtonRoll')}`,
-                callback: executeDefenseCallback.bind(this, actor, totalAttack)
+        buttons: [
+            {
+                action: "roll",
+                label: game.i18n.localize('WITCHER.Dialog.ButtonRoll'),
+                default: true,
+                callback: (event, button, instance) => executeDefenseCallback(actor, totalAttack, instance.element)
             },
-            t2: {
-                label: `${game.i18n.localize('WITCHER.Button.Cancel')}`
+            {
+                action: "cancel",
+                label: game.i18n.localize('WITCHER.Button.Cancel')
             }
-        }
-    }).render(true);
+        ]
+    });
+    dialog.render(true);
 }
 
 async function executeDefenseCallback(actor, totalAttack, html) {
     let displayRollDetails = game.settings.get('TheWitcherItaNewSystem', 'displayRollsDetails');
 
-    let checkedBox = document.querySelector('input[name="verbalCombat"]:checked');
+    let checkedBox = html.querySelector('input[name="verbalCombat"]:checked');
     if (!checkedBox) return;
     let verbal = checkedBox.value;
 
@@ -95,12 +103,12 @@ async function executeDefenseCallback(actor, totalAttack, html) {
     messageData.flavor = `
             <div class="verbal-combat-attack-message">
               <h2>${game.i18n.localize('WITCHER.verbalCombat.Title')}: ${game.i18n.localize(vcName)}</h2>
-              <b>${game.i18n.localize('WITCHER.Weapon.Damage')}</b>: ${vcDmg} <br />
+              <b>${game.i18n.localize('WITCHER.verbalCombat.ResolveDamage')}</b>: ${vcDmg} <br />
               ${game.i18n.localize(effect)}
               <hr />
               </div>`;
     messageData.flavor += vcDmg.includes('d')
-        ? `<button class="vcDamage" > ${game.i18n.localize('WITCHER.table.Damage')}</button>`
+        ? `<button class="vcDamage" > ${game.i18n.localize('WITCHER.verbalCombat.RollResolveDamage')}</button>`
         : '';
 
     let config = createRollConfig(vcSkill, totalAttack);

@@ -51,23 +51,6 @@
                     </div>
                 </div>
             </div>
-
-            {{#if (or isGM displayRep)}}
-                <a class='stat-display char-stat-button reputation-button reputation-roll'
-                    data-type='reputation' data-stat='reputation'>
-                     <div class="stat-icon"><i class="fa-solid fa-star"></i></div>
-                     <div class="stat-content">
-                        <div class="label">
-                            <span>{{localize 'WITCHER.Reputation'}}</span>
-                            <span class="current-val">{{#if (gte system.reputation.value 0)}}+{{/if}}{{system.reputation.value}}</span>
-                        </div>
-                        <div class="mod">
-                             <span class="max">{{#if (gte system.reputation.value 0)}}+{{/if}}{{system.reputation.value}}</span>
-                             <span class="stat-mod stat-mod-zero">+0</span>
-                        </div>
-                     </div>
-                </a>
-            {{/if}}
         </div>
     </div>
 

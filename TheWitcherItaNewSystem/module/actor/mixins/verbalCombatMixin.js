@@ -11,14 +11,23 @@ export let verbalCombatMixin = {
                 verbalCombat: CONFIG.WITCHER.verbalCombat
             }
         );
-        new Dialog({
-            title: game.i18n.localize('WITCHER.verbalCombat.DialogTitle'),
+        const dialog = new foundry.applications.api.DialogV2({
+            window: { 
+                title: game.i18n.localize('WITCHER.verbalCombat.DialogTitle'),
+                classList: ["verbal-combat-dialog"]
+            },
+            classes: ["verbal-combat-dialog"],
             content: dialogTemplate,
-            buttons: {
-                t1: {
-                    label: `${game.i18n.localize('WITCHER.Dialog.ButtonRoll')}`,
-                    callback: async html => {
-                        let checkedBox = document.querySelector('input[name="verbalCombat"]:checked');
+            buttons: [
+                {
+                    action: 'roll',
+                    label: game.i18n.localize('WITCHER.Dialog.ButtonRoll'),
+                    default: true,
+                    callback: async (event, button, instance) => {
+                        const html = $(instance.element);
+                        let checkedBox = instance.element.querySelector('input[name="verbalCombat"]:checked');
+                        if (!checkedBox) return;
+
                         let group = checkedBox.dataset.group;
                         let verbal = checkedBox.value;
 
@@ -70,12 +79,12 @@ export let verbalCombatMixin = {
                         messageData.flavor = `
             <div class="verbal-combat-attack-message">
               <h2>${game.i18n.localize('WITCHER.verbalCombat.Title')}: ${game.i18n.localize(vcName)}</h2>
-              <b>${game.i18n.localize('WITCHER.Weapon.Damage')}</b>: ${vcDmg} <br />
+              <b>${game.i18n.localize('WITCHER.verbalCombat.ResolveDamage')}</b>: ${vcDmg} <br />
               ${game.i18n.localize(effect)}
               <hr />
               </div>`;
                         messageData.flavor += vcDmg.includes('d')
-                            ? `<button class="vcDamage" > ${game.i18n.localize('WITCHER.table.Damage')}</button>`
+                            ? `<button class="vcDamage" > ${game.i18n.localize('WITCHER.verbalCombat.RollResolveDamage')}</button>`
                             : '';
 
                         let config = new RollConfig();
@@ -88,11 +97,13 @@ export let verbalCombatMixin = {
                         );
                     }
                 },
-                t2: {
-                    label: `${game.i18n.localize('WITCHER.Button.Cancel')}`
+                {
+                    action: 'cancel',
+                    label: game.i18n.localize('WITCHER.Button.Cancel')
                 }
-            }
-        }).render(true);
+            ]
+        });
+        dialog.render(true);
     },
 
     createVerbalCombatFlags(verbalCombat, vcDamage) {

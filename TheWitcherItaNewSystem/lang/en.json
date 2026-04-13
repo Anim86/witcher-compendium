@@ -1424,10 +1424,23 @@
       "criticalWounds": "Critical wounds will heal 2 additional days faster"
     },
     "Apply.Mod": "Apply a modifier",
+    "reputationLevels": {
+      "1": "Anyone present at the time",
+      "2": "Stories have circulated, but only within certain circles",
+      "3": "All acquaintances, colleagues, and friends know",
+      "4": "Stories are told throughout the region",
+      "5": "Name is known even outside the region",
+      "6": "People recognize them on sight, even outside their region",
+      "7": "Certain bards have traveled the realms telling stories about them",
+      "8": "Every bard knows their story",
+      "9": "Name is known even to the monarchs of the Northern Kingdoms and the Emperor of Nilfgaard",
+      "10": "Name is legend"
+    },
     "ReputationTitle": "Executing a reputation roll",
-    "ReputationButton.Save": "Save",
-    "ReputationButton.FaceDown": "Face-Down",
-    "ReputationSave.Title": "Save",
+    "ReputationButton.UpdateLevel": "Save Level",
+    "ReputationButton.Save": "Save (1d10)",
+    "ReputationButton.FaceDown": "Face-Down (Contest)",
+    "ReputationSave.Title": "Reputation Save",
     "ReputationFaceDown.Title": "Reputation Face-Down",
     "verbalCombat": {
       "Title": "Verbal Combat",
