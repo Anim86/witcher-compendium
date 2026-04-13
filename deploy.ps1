@@ -1,14 +1,18 @@
 # Deploy Script for Witcher TRPG Project
 
 # Destination paths
-$moduleDest = "C:\Users\apaci\AppData\Local\FoundryVTT\Data\modules\witcher-compendium"
-$systemDest = "C:\Users\apaci\AppData\Local\FoundryVTT\Data\systems\TheWitcherItaNewSystem"
+$moduleDest = "E:\FoundryVTT_Data\Data\modules\witcher-compendium"
+$systemDest = "E:\FoundryVTT_Data\Data\systems\TheWitcherItaNewSystem"
 
 # Source paths (relative to script location)
 $moduleSrc = ".\witcher-compendium"
 $systemSrc = ".\TheWitcherItaNewSystem"
 
 Write-Host "Starting deployment to Foundry VTT..." -ForegroundColor Cyan
+
+# Stop FoundryVTT service (if running)
+Write-Host "Stopping FoundryVTT service..." -ForegroundColor Yellow
+Stop-Service -Name "FoundryVTT" -ErrorAction SilentlyContinue
 
 # Deploy Module
 if (Test-Path $moduleSrc) {
@@ -31,3 +35,7 @@ if (Test-Path $systemSrc) {
 }
 
 Write-Host "Deployment complete!" -ForegroundColor Cyan
+
+# Restart service (if it was intended to be on)
+Write-Host "Restarting FoundryVTT service..." -ForegroundColor Yellow
+Start-Service -Name "FoundryVTT" -ErrorAction SilentlyContinue

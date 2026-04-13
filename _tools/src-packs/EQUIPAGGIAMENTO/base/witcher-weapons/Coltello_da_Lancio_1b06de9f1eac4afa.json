@@ -9,14 +9,31 @@
         "cost": 50,
         "damage": "1d6",
         "reliability": {
-            "value": 5,
-            "max": 5
+            "value": 10,
+            "max": 10
         },
         "accuracy": 0,
-        "hands": 1,
+        "hands": "1",
         "reach": "FIS ×4m",
         "effects": "N/A",
-        "sourcebook": "MB 76"
+        "sourcebook": "MB 76",
+        "range": "FISx4m",
+        "type": {
+            "text": "",
+            "slashing": false,
+            "piercing": true,
+            "bludgeoning": false,
+            "elemental": false
+        },
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "isMeteorite": false,
+            "isNonLethal": false,
+            "effects": []
+        }
     },
     "effects": [],
     "folder": null,

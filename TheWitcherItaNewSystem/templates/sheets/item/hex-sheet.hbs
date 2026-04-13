@@ -1,7 +1,7 @@
 <section class="scrollable">
     <header class="item-header">
         <h1 class="itemname">
-            <input name="name" type="text" value="{{item.name}}" placeholder="Name" />
+            <input name="name" type="text" value="{{item.name}}" placeholder="{{localize 'WITCHER.Name'}}" />
             {{#if showConfig}}
                 <a class="configure-item" data-action="configureItem"><i class="fas fa-gear"></i></a>
             {{/if}}
@@ -9,58 +9,54 @@
         <general>
             <itemimage>
                 {{#if (and (includes (getSetting "clickableImageItemTypes") item.type)  (or (window "game" "user" "isGM") (eq (getSetting "clickableImageCheckboxForGMOnly") false)) )}}
-                    <div class="item-header-wrapper">
-                        <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" />
-                        <div>
-                            <input type="checkbox" id="clickable-image-{{item._id}}" name="system.clickableImage"
-                                {{checked item.system.clickableImage}}>
-                            <label for="clickable-image-{{item._id}}">{{localize "WITCHER.Item.ClickableImage"}}</label>
-                        </div>
+                    <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" />
+                    <div>
+                        <input type="checkbox" id="clickable-image-{{item._id}}" name="system.clickableImage"
+                            {{checked item.system.clickableImage}}>
+                        <label for="clickable-image-{{item._id}}">{{localize "WITCHER.Item.ClickableImage"}}</label>
                     </div>
                 {{else}}
                     <img class="profile-img" src="{{item.img}}" data-edit="img" title="{{item.name}}" />
                 {{/if}}
             </itemimage>
-            <table class="information">
-                <tr class="item-header-tablerow">
-                    <td>
-                        <label>{{localize "WITCHER.Spell.type"}}</label>
-                    </td>
-                    <td>
-                        <label>{{localize "WITCHER.Spell.Hexes"}}</label>
-                    </td>
-                </tr>
-                <tr class="item-header-tablerow">
-                    <td>
-                        <label>{{localize "WITCHER.Item.SourceBook"}}</label>
-                    </td>
-                    <td>
-                        <input type="text" name="system.sourcebook" value="{{item.system.sourcebook}}" />
-                    </td>
-                </tr>
-            </table>
+            
+            <div class="information-grid">
+                <div class="info-item">
+                    <label>{{localize "WITCHER.Spell.type"}}</label>
+                    <span>{{localize "WITCHER.Spell.Hexes"}}</span>
+                </div>
+                <div class="info-item">
+                    <label>{{localize "WITCHER.Item.SourceBook"}}</label>
+                    <input type="text" name="system.sourcebook" value="{{item.system.sourcebook}}" />
+                </div>
+            </div>
         </general>
     </header>
-    <table class="item-table">
-        <tr>
-            <th title="{{localize "WITCHER.Spell.StaCost"}}">{{localize "WITCHER.Spell.Short.StaCost"}}</th>
-            <th>{{localize "WITCHER.Spell.Danger"}}</th>
-        </tr>
-        <tr>
-            <td><input name="system.stamina" type="text" value="{{item.system.stamina}}" /></td>
-            <td>
-                <select name="system.danger" id="level-select">
-                    {{selectOptions selects.danger selected=item.system.danger localize=true}}
-                </select>
-            </td>
-        </tr>
-    </table>
-    <div class="grid">
-        <label>{{localize "WITCHER.Item.Effect"}}</label>
+
+    <div class="properties-grid main-stats">
+        <div class="property-card highlight">
+            <label>{{localize "WITCHER.Spell.Short.StaCost"}}</label>
+            <input name="system.stamina" type="text" value="{{item.system.stamina}}" />
+        </div>
+        <div class="property-card">
+            <label>{{localize "WITCHER.Spell.Danger"}}</label>
+            <select name="system.danger" id="level-select">
+                {{selectOptions selects.danger selected=item.system.danger localize=true}}
+            </select>
+        </div>
+    </div>
+
+    <div class="item-description-container">
+        <div class="section-title">
+            <i class="fas fa-scroll"></i> {{localize "WITCHER.Item.Effect"}}
+        </div>
         {{editor item.system.effect target="system.effect" button=true owner=owner editable=editable engine="prosemirror"}}
     </div>
-    <div class="grid">
-        <label>{{localize "WITCHER.Spell.Requirements"}}</label>
+
+    <div class="item-description-container">
+        <div class="section-title">
+            <i class="fas fa-hand-sparkles"></i> {{localize "WITCHER.Spell.Requirements"}}
+        </div>
         {{editor item.system.liftRequirement target="system.liftRequirement" button=true owner=owner editable=editable engine="prosemirror"}}
     </div>
-</section>
+</section>

@@ -13,10 +13,35 @@
             "max": 15
         },
         "accuracy": 1,
-        "hands": 2,
+        "hands": "2",
         "reach": "200m",
         "effects": "Ricarica Lenta Trapassare",
-        "sourcebook": "MB 76"
+        "sourcebook": "MB 76",
+        "range": "200m",
+        "type": {
+            "text": "",
+            "slashing": false,
+            "piercing": true,
+            "bludgeoning": false,
+            "elemental": false
+        },
+        "damageProperties": {
+            "armorPiercing": true,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "isMeteorite": false,
+            "isNonLethal": false,
+            "effects": [
+                {
+                    "id": "000abcfa249abfc3",
+                    "name": "Ricarica Lenta",
+                    "statusEffect": null,
+                    "percentage": 100,
+                    "varEffect": false
+                }
+            ]
+        }
     },
     "effects": [],
     "folder": null,

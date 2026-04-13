@@ -1,21 +1,21 @@
 {
-  "name": "Scuola del Gatto",
-  "type": "note",
-  "system": {
-    "category": "fazione",
-    "parentFaction": "Scuola dei Witcher",
-    "description": "<p>La Scuola del Gatto è insolita per avere una sede mobile, la carovana Dyn Narw. I witcher del Gatto sono famosi per la loro agilità e per la mutazione che li ha resi emotivamente instabili e inclini alla crudeltà.</p><p>A differenza di altre scuole, i Gatti sono stati spesso assoldati come assassini e sicari, guadagnandosi un'infamia terribile persino tra gli altri witcher. Sono immuni ai tentativi di affascinare non magici.</p>",
-    "sourcebook": "MB 239"
-  },
-  "img": "icons/svg/book.svg",
-  "effects": [],
-  "flags": {},
-  "_stats": {
-    "systemId": "TheWitcherItaNewSystem",
-    "coreVersion": 14,
-    "createdTime": 1712760000000,
-    "modifiedTime": 1712760000000,
-    "lastModifiedBy": "antigravity"
-  },
-  "_id": "lore022gatto"
+    "name": "Scuola del Gatto",
+    "type": "note",
+    "system": {
+        "category": "fazione",
+        "parentFaction": "Scuola dei Witcher",
+        "description": "<p>La Scuola del Gatto è insolita per avere una sede mobile, la carovana Dyn Narw. I witcher del Gatto sono famosi per la loro agilità e per la mutazione che li ha resi emotivamente instabili e inclini alla crudeltà.</p><p>A differenza di altre scuole, i Gatti sono stati spesso assoldati come assassini e sicari, guadagnandosi un'infamia terribile persino tra gli altri witcher. Sono immuni ai tentativi di affascinare non magici.</p>",
+        "sourcebook": "MB 239"
+    },
+    "img": "modules/witcher-compendium/assets/LORE/base/witcher-lore/book.svg",
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14,
+        "createdTime": 1712760000000,
+        "modifiedTime": 1712760000000,
+        "lastModifiedBy": "antigravity"
+    },
+    "_id": "lore022gatto"
 }

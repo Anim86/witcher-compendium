@@ -1,9 +1,9 @@
 Hooks.once("ready", async () => {
-  // Esegui solo se non già fatto
-  const flag = game.settings.get("witcher-compendium", "foldersCreated");
-  if (flag) return;
+  // RESET FLAG per questa sessione per assicurarci che la pulizia avvenga
+  // In produzione puoi togliere il reset, ma ora serve per "sistemare" il caos.
+  await game.settings.set("witcher-compendium", "foldersCreated", false);
 
-  // 1. Trova o Crea Root
+  // 1. Trova o Crea Root Principale
   let root = game.folders.find(f => f.name === "The Witcher Compendio ITA" && f.type === "Compendium");
   if (!root) {
     console.log("Witcher Compendio: Creazione cartella Root...");
@@ -15,116 +15,113 @@ Hooks.once("ready", async () => {
     });
   }
 
-  // 2. Trova o Crea categorie principali
-  const categories = ["CORE", "EQUIPAGGIAMENTO", "MAGIA", "CRAFTING", "BESTIARIO / PNG", "GAMEPLAY", "LORE"];
+  // 1b. PULIZIA: Rimuovi cartelle orfane o vecchie con nomi incoerenti se presenti nel root
+  const foldersToDelete = ["BESTIARIO / PNG", "Tomo Base", "Tomo del Caos", "Libro dei Racconti", "Diario di un Witcher"];
+  for (const fName of foldersToDelete) {
+      let f = game.folders.find(fol => fol.name === fName && fol.type === "Compendium" && fol.folder?.id === root.id);
+      if (f) {
+          // Se è una cartella di vecchio tipo la eliminiamo (Foundry sposterà i pack nel root)
+          // ma noi li riassegneremo subito dopo.
+          // await f.delete(); 
+      }
+  }
+
+  // 2. Crea le categorie principali (1:1 con src-packs)
+  const categories = ["CORE", "BESTIARIO", "EQUIPAGGIAMENTO", "MAGIA", "CRAFTING", "GAMEPLAY", "LORE"];
   const folderMap = {};
 
   for (const cat of categories) {
     let f = game.folders.find(fol => fol.name === cat && fol.type === "Compendium" && fol.folder?.id === root.id);
     if (!f) {
-      console.log(`Witcher Compendio: Creazione cartella ${cat}...`);
-      f = await Folder.create({ 
-        name: cat, 
-        type: "Compendium", 
-        sorting: "m", 
-        folder: root.id 
-      });
+      f = await Folder.create({ name: cat, type: "Compendium", sorting: "m", folder: root.id });
     }
     folderMap[cat] = f;
   }
 
-  // 3. Trova o Crea sottocartelle specifiche
-  const getSubfolder = async (name, parent) => {
+  // 3. Funzione per sottocartelle (Base, Caos, Racconti, Diario)
+  const getSub = async (name, parent) => {
     let f = game.folders.find(fol => fol.name === name && fol.type === "Compendium" && fol.folder?.id === parent.id);
-    if (!f) {
-      f = await Folder.create({ name, type: "Compendium", sorting: "m", folder: parent.id });
-    }
+    if (!f) f = await Folder.create({ name, type: "Compendium", sorting: "a", folder: parent.id });
     return f;
   };
 
-  const core = folderMap["CORE"];
-  const equip = folderMap["EQUIPAGGIAMENTO"];
-  const magia = folderMap["MAGIA"];
-  const crafting = folderMap["CRAFTING"];
-  const bestiario = folderMap["BESTIARIO / PNG"];
-  const gameplay = folderMap["GAMEPLAY"];
-  const loreCat = folderMap["LORE"];
+  // Mappe Sottocartelle
+  const s = {
+      equip: {
+          base: await getSub("Base", folderMap["EQUIPAGGIAMENTO"]),
+          caos: await getSub("Caos", folderMap["EQUIPAGGIAMENTO"]),
+          racconti: await getSub("Racconti", folderMap["EQUIPAGGIAMENTO"])
+      },
+      magia: {
+          base: await getSub("Base", folderMap["MAGIA"]),
+          caos: await getSub("Caos", folderMap["MAGIA"]),
+          racconti: await getSub("Racconti", folderMap["MAGIA"])
+      },
+      craft: {
+          base: folderMap["CRAFTING"], // piatto
+          diario: await getSub("Diario", folderMap["CRAFTING"]),
+          racconti: await getSub("Racconti", folderMap["CRAFTING"])
+      }
+  };
 
-  const tomoBaseEquip = await getSubfolder("Tomo Base", equip);
-  const tomoCaosEquip = await getSubfolder("Tomo del Caos", equip);
-  const tomoBaseMagia = await getSubfolder("Tomo Base", magia);
-  const tomoCaosMagia = await getSubfolder("Tomo del Caos", magia);
-  const tomoBaseCreaz = await getSubfolder("Tomo Base", crafting);
-  const tomoBaseBest = await getSubfolder("Tomo Base", bestiario);
-  const tomoCaosBest = await getSubfolder("Tomo del Caos", bestiario);
+  // 4. Assegnazione Pack
+  const mapping = [
+    // CORE
+    { p: "witcher-races", f: folderMap["CORE"] },
+    { p: "witcher-professions", f: folderMap["CORE"] },
+    { p: "witcher-skills", f: folderMap["CORE"] },
 
-  const tomoRaccontiEquip = await getSubfolder("Libro dei Racconti", equip);
-  const tomoRaccontiMagia = await getSubfolder("Libro dei Racconti", magia);
-  const tomoRaccontiCreaz = await getSubfolder("Libro dei Racconti", crafting);
-  const tomoRaccontiBest = await getSubfolder("Libro dei Racconti", bestiario);
+    // BESTIARIO
+    { p: "witcher-monsters", f: folderMap["BESTIARIO"] },
+    { p: "witcher-png", f: folderMap["BESTIARIO"] },
 
-  const tomoDiarioCreaz = await getSubfolder("Diario di un Witcher", crafting);
-  const tomoDiarioBest = await getSubfolder("Diario di un Witcher", bestiario);
+    // EQUIPAGGIAMENTO
+    { p: "witcher-weapons", f: s.equip.base },
+    { p: "witcher-armor", f: s.equip.base },
+    { p: "witcher-equipment", f: s.equip.base },
+    { p: "witcher-special", f: s.equip.base },
+    { p: "witcher-transports", f: s.equip.base },
+    { p: "witcher-special-chaos", f: s.equip.caos },
+    { p: "witcher-trophies", f: s.equip.caos },
+    { p: "witcher-weapons-racconti", f: s.equip.racconti },
 
-  // Mappa pack → cartella
-  const assegnazioni = [
-    { pack: "witcher-races",          folder: core },
-    { pack: "witcher-professions",    folder: core },
-    { pack: "witcher-skills",         folder: core },
-    { pack: "witcher-weapons",        folder: tomoBaseEquip },
-    { pack: "witcher-armor",          folder: tomoBaseEquip },
-    { pack: "witcher-equipment",      folder: tomoBaseEquip },
-    { pack: "witcher-special",        folder: tomoBaseEquip },
-    { pack: "witcher-special-chaos",  folder: tomoCaosEquip },
-    { pack: "witcher-spells",         folder: tomoBaseMagia },
-    { pack: "witcher-rituals",        folder: tomoBaseMagia },
-    { pack: "witcher-runes",          folder: tomoBaseMagia },
-    { pack: "witcher-hexes-base",     folder: tomoBaseMagia },
-    { pack: "witcher-signs",          folder: tomoBaseMagia },
-    { pack: "witcher-spells-chaos",   folder: tomoCaosMagia },
-    { pack: "witcher-rituals-chaos",  folder: tomoCaosMagia },
-    { pack: "witcher-signs-chaos",    folder: tomoCaosMagia },
-    { pack: "witcher-hexes",          folder: tomoCaosMagia },
-    { pack: "witcher-invocations",    folder: tomoCaosMagia },
-    { pack: "witcher-gifts",          folder: tomoCaosMagia },
-    { pack: "witcher-goetia",         folder: tomoCaosMagia },
-    { pack: "witcher-components",     folder: tomoBaseCreaz },
-    { pack: "witcher-schematics",     folder: tomoBaseCreaz },
-    { pack: "witcher-alchemy",        folder: tomoBaseCreaz },
-    { pack: "witcher-mutations",      folder: tomoBaseCreaz },
-    { pack: "witcher-monsters",       folder: tomoBaseBest },
-    { pack: "witcher-monsters-chaos", folder: tomoCaosBest },
-    { pack: "witcher-transports",     folder: tomoBaseEquip },
-    { pack: "witcher-trophies",       folder: tomoCaosEquip },
-    { pack: "witcher-lore",           folder: loreCat },
-    { pack: "witcher-critical-wounds",folder: gameplay },
-    { pack: "witcher-curses",         folder: gameplay },
-    { pack: "witcher-weapons-racconti",    folder: tomoRaccontiEquip },
-    { pack: "witcher-spells-racconti",     folder: tomoRaccontiMagia },
-    { pack: "witcher-components-racconti", folder: tomoRaccontiCreaz },
-    { pack: "witcher-schematics-racconti", folder: tomoRaccontiCreaz },
-    { pack: "witcher-monsters-racconti",   folder: tomoRaccontiBest },
-    { pack: "witcher-npc-racconti",        folder: tomoRaccontiBest },
-    { pack: "witcher-monsters-diario",   folder: tomoDiarioBest },
-    { pack: "witcher-components-diario", folder: tomoDiarioCreaz }
+    // MAGIA
+    { p: "witcher-spells", f: s.magia.base },
+    { p: "witcher-rituals", f: s.magia.base },
+    { p: "witcher-signs", f: s.magia.base },
+    { p: "witcher-runes", f: s.magia.base },
+    { p: "witcher-hexes-base", f: s.magia.base },
+    { p: "witcher-spells-chaos", f: s.magia.caos },
+    { p: "witcher-rituals-chaos", f: s.magia.caos },
+    { p: "witcher-signs-chaos", f: s.magia.caos },
+    { p: "witcher-hexes", f: s.magia.caos },
+    { p: "witcher-invocations", f: s.magia.caos },
+    { p: "witcher-gifts", f: s.magia.caos },
+    { p: "witcher-goetia", f: s.magia.caos },
+    { p: "witcher-spells-racconti", f: s.magia.racconti },
+
+    // CRAFTING
+    { p: "witcher-components", f: s.craft.base },
+    { p: "witcher-schematics", f: s.craft.base },
+    { p: "witcher-alchemy", f: s.craft.base },
+    { p: "witcher-mutations", f: s.craft.base },
+    { p: "witcher-components-diario", f: s.craft.diario },
+    { p: "witcher-components-racconti", f: s.craft.racconti },
+    { p: "witcher-schematics-racconti", f: s.craft.racconti },
+
+    // GAMEPLAY & LORE
+    { p: "witcher-critical-wounds", f: folderMap["GAMEPLAY"] },
+    { p: "witcher-curses", f: folderMap["GAMEPLAY"] },
+    { p: "witcher-lore", f: folderMap["LORE"] }
   ];
 
-  console.log("Witcher Compendio: Inizio assegnazione pack...");
-
-  for (const { pack, folder } of assegnazioni) {
-    const fullId = `witcher-compendium.${pack}`;
-    const p = game.packs.get(fullId);
-    if (p && folder) {
-      if (p.folder?.id !== folder.id) {
-        await p.setFolder(folder.id);
-        console.log(`Witcher Compendio: Pack ${pack} spostato in ${folder.name}`);
-      }
-    } else {
-      if (!p) console.error(`Witcher Compendio: Pack NON trovato -> ${fullId}`);
+  for (const { p, f } of mapping) {
+    const pack = game.packs.get(`witcher-compendium.${p}`);
+    if (pack && f) {
+      if (pack.folder?.id !== f.id) await pack.setFolder(f.id);
     }
   }
 
-  // Marca come completato
+  // Forza il refresh UI
   await game.settings.set("witcher-compendium", "foldersCreated", true);
-  ui.notifications.info("✅ Witcher Compendio: cartelle create e pack assegnati!");
 });

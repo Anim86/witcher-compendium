@@ -1,0 +1,195 @@
+{
+    "_id": "260905ff0083427c",
+    "name": "Streghe dei Sepolcri",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/MOSTRI/Pag283_Streghe dei Sepolcri_01.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
+            },
+            "ref": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "dex": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "body": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "spd": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "emp": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "cra": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "will": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 8
+            },
+            "atletica": {
+                "value": 6
+            },
+            "coraggio": {
+                "value": 9
+            },
+            "eludere": {
+                "value": 8
+            },
+            "mischia": {
+                "value": 8
+            },
+            "nascondersi": {
+                "value": 8
+            },
+            "rissa": {
+                "value": 6
+            },
+            "sopravvivenza": {
+                "value": 6
+            },
+            "tempra": {
+                "value": 7
+            }
+        },
+        "details": {
+            "biography": "<p>Onestamente, il tipico popolano non sa granché delle streghe dei sepolcri. Eh, sono come incubi, abbastanza intelligenti da parlare, costruire trappole e adescare i bambini. – Rodolf Kazmer</p><p>Le streghe dei sepolcri sono tra i pochi necrofagi totalmente senzienti. Pur possedendo la magia, non hanno nulla a che fare con i maghi. Vivono nei pressi dei cimiteri e altre fonti di cadaveri.</p>",
+            "threat": "Ardua",
+            "reward": 1500
+        },
+        "derivedStats": {
+            "health": {
+                "value": 80,
+                "max": 80,
+                "unmodifiedMax": 80
+            },
+            "stamina": {
+                "value": 40,
+                "max": 40,
+                "unmodifiedMax": 40
+            },
+            "vigor": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "rec": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "resolve": {
+                "value": 40,
+                "max": 40,
+                "unmodifiedMax": 40
+            },
+            "stun": {
+                "value": 8,
+                "max": 8
+            },
+            "woundTreshold": {
+                "value": 10,
+                "max": 10
+            }
+        },
+        "description": "<p>Onestamente, il tipico popolano non sa granché delle streghe dei sepolcri. Eh, sono come incubi, abbastanza intelligenti da parlare, costruire trappole e adescare i bambini. – Rodolf Kazmer</p><p>Le streghe dei sepolcri sono tra i pochi necrofagi totalmente senzienti. Pur possedendo la magia, non hanno nulla a che fare con i maghi. Vivono nei pressi dei cimiteri e altre fonti di cadaveri.</p>",
+        "sourcebook": "MB 281"
+    },
+    "items": [
+        {
+            "_id": "01805f63a5b54775",
+            "name": "Artigli",
+            "type": "weapon",
+            "img": "icons/svg/sword.svg",
+            "system": {
+                "description": "",
+                "damage": "5d6",
+                "accuracy": 0,
+                "effects": "Sanguinamento (50%)"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "8d9a199d99d94db4",
+            "name": "Morso",
+            "type": "weapon",
+            "img": "icons/svg/sword.svg",
+            "system": {
+                "description": "",
+                "damage": "6d6",
+                "accuracy": 0,
+                "effects": "Veleno (75%)"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "59c1e8c46b4646cb",
+            "name": "Lingua",
+            "type": "weapon",
+            "img": "icons/svg/sword.svg",
+            "system": {
+                "description": "",
+                "damage": "3d6+2",
+                "accuracy": 0,
+                "effects": "Veleno (100%) Gittata: 4m"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "g1",
+            "name": "[Capacità] Circolo di Teschi",
+            "type": "note",
+            "img": "icons/svg/book.svg",
+            "system": {
+                "description": "<p>Finché rimane entro 100m da un circolo di teschi creato in 1 ora, ottiene +3 a tutte le azioni.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        }
+    ],
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

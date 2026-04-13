@@ -13,10 +13,42 @@
             "max": 10
         },
         "accuracy": 0,
-        "hands": 2,
+        "hands": "2",
         "reach": "N/A",
         "effects": "Portata Focus (1) Presa",
-        "sourcebook": "MB 76"
+        "sourcebook": "MB 76",
+        "range": "Portata",
+        "type": {
+            "text": "",
+            "slashing": false,
+            "piercing": true,
+            "bludgeoning": true,
+            "elemental": false
+        },
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "isMeteorite": false,
+            "isNonLethal": false,
+            "effects": [
+                {
+                    "id": "007d5e05f337ae38",
+                    "name": "Focus (1)",
+                    "statusEffect": null,
+                    "percentage": 100,
+                    "varEffect": false
+                },
+                {
+                    "id": "00f73e24ae7a9aa8",
+                    "name": "presa",
+                    "statusEffect": null,
+                    "percentage": 100,
+                    "varEffect": false
+                }
+            ]
+        }
     },
     "effects": [],
     "folder": null,

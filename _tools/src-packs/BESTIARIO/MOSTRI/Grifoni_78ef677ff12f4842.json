@@ -1,0 +1,192 @@
+{
+    "_id": "78ef677ff12f4842",
+    "name": "Grifoni",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/MOSTRI/Pag295_Grifoni_01.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "ref": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "dex": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "body": {
+                "value": 12,
+                "max": 12,
+                "unmodifiedMax": 12
+            },
+            "spd": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "emp": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "cra": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "will": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 10
+            },
+            "atletica": {
+                "value": 7
+            },
+            "coraggio": {
+                "value": 10
+            },
+            "eludere": {
+                "value": 7
+            },
+            "mischia": {
+                "value": 9
+            },
+            "nascondersi": {
+                "value": 4
+            },
+            "rissa": {
+                "value": 7
+            },
+            "sopravvivenza": {
+                "value": 8
+            },
+            "tempra": {
+                "value": 3
+            }
+        },
+        "details": {
+            "biography": "<p>Puoi immaginarti qualcosa di più maestoso d’un grifone? Pochi li conoscono bene, molti si limitano a evitarli. Cosa faresti quando 900 chili di pelo, piume e artigli atterrano nel tuo campo per portarsi via una mucca? – Rodolf Kazmer</p><p>I grifoni sono super-predatori, rapidi al suolo quanto in aria. Localizzano una preda nascosta grazie alla loro vista d’aquila. Afferrano prede grandi come un cavallo e lasciano precipitare da oltre 100 metri d’altezza.</p>",
+            "threat": "Difficile",
+            "reward": 1200
+        },
+        "derivedStats": {
+            "health": {
+                "value": 60,
+                "max": 60,
+                "unmodifiedMax": 60
+            },
+            "stamina": {
+                "value": 60,
+                "max": 60,
+                "unmodifiedMax": 60
+            },
+            "vigor": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "rec": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "resolve": {
+                "value": 60,
+                "max": 60,
+                "unmodifiedMax": 60
+            },
+            "stun": {
+                "value": 10,
+                "max": 10
+            },
+            "woundTreshold": {
+                "value": 10,
+                "max": 10
+            }
+        },
+        "description": "<p>Puoi immaginarti qualcosa di più maestoso d’un grifone? Pochi li conoscono bene, molti si limitano a evitarli. Cosa faresti quando 900 chili di pelo, piume e artigli atterrano nel tuo campo per portarsi via una mucca? – Rodolf Kazmer</p><p>I grifoni sono super-predatori, rapidi al suolo quanto in aria. Localizzano una preda nascosta grazie alla loro vista d’aquila. Afferrano prede grandi come un cavallo e lasciano precipitare da oltre 100 metri d’altezza.</p>",
+        "sourcebook": "MB 293"
+    },
+    "items": [
+        {
+            "_id": "2fb632fb74ed4875",
+            "name": "Artigli",
+            "type": "weapon",
+            "img": "icons/svg/sword.svg",
+            "system": {
+                "description": "",
+                "damage": "6d6",
+                "accuracy": 0,
+                "effects": ""
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "817bbb956b2d4cca",
+            "name": "Morso",
+            "type": "weapon",
+            "img": "icons/svg/sword.svg",
+            "system": {
+                "description": "",
+                "damage": "7d6+2",
+                "accuracy": 0,
+                "effects": "Sanguinamento (50%)"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "g1",
+            "name": "[Capacità] Carica",
+            "type": "note",
+            "img": "icons/svg/book.svg",
+            "system": {
+                "description": "<p>Può caricare un nemico oltre i 10m. -4 Pres, 10d6 danni e scaraventa indietro di 8m.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "g2",
+            "name": "[Capacità] Urlo",
+            "type": "note",
+            "img": "icons/svg/book.svg",
+            "system": {
+                "description": "<p>Urlo entro 10m: tiro salvezza Grinta con penalità -1.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        }
+    ],
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

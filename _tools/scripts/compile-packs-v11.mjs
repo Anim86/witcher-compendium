@@ -15,8 +15,8 @@ async function compilePack(packMetadata) {
     const packName = packMetadata.name;
     const packRelPath = packMetadata.path;
 
-    const srcSubPath = packRelPath.replace(/^packs\//, '');
-    const srcDir = path.join(SRC_ROOT, srcSubPath);
+    let srcSubPath = packRelPath.replace(/^packs\//, '');
+    let srcDir = path.join(SRC_ROOT, srcSubPath);
     const destDir = path.join(MODULE_ROOT, packRelPath);
 
     console.log(`\n📦 Compilazione pacchetto: ${packName}`);

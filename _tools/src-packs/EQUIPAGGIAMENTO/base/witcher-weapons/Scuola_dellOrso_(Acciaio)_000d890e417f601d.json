@@ -1,0 +1,41 @@
+{
+    "_id": "000d890e417f601d",
+    "name": "Scuola dell'Orso (Acciaio)",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/base/witcher-weapons/Armatura_a_Piastre.webp",
+    "system": {
+        "description": "",
+        "weight": 1,
+        "cost": 100,
+        "sourcebook": "TRPG",
+        "damage": "6d6+2",
+        "accuracy": 0,
+        "reliability": {
+            "value": 15,
+            "max": 15
+        },
+        "hands": "2",
+        "type": {
+            "text": "",
+            "slashing": true,
+            "piercing": true,
+            "bludgeoning": false,
+            "elemental": false
+        },
+        "damageProperties": {
+            "armorPiercing": true,
+            "improvedArmorPiercing": false,
+            "ablating": true,
+            "crushingForce": false,
+            "isMeteorite": true,
+            "isNonLethal": false,
+            "effects": []
+        }
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

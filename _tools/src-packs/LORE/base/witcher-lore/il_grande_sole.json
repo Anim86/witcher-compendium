@@ -1,20 +1,20 @@
 {
-  "name": "Il Grande Sole",
-  "type": "note",
-  "system": {
-    "category": "religione",
-    "description": "<p>Il culto del Grande Sole è l'unica religione ufficiale dell'Impero di Nilfgaard. Lega l'Imperatore alla natura e, di conseguenza, al popolo, che spesso lo vede come il Sole incarnato o il suo intermediario.</p><p>Vengono tributati sacrifici (non umani) durante solstizi ed equinozi. La Chiesa del Grande Sole funge spesso da elemento stabilizzante nell'Impero, fungendo da \"carota\" rispetto al \"bastone\" della Volontà Imperiale, promuovendo valori come famiglia, lavoro e lealtà.</p>",
-    "sourcebook": "MB 209"
-  },
-  "img": "icons/svg/book.svg",
-  "effects": [],
-  "flags": {},
-  "_stats": {
-    "systemId": "TheWitcherItaNewSystem",
-    "coreVersion": 14,
-    "createdTime": 1712760000000,
-    "modifiedTime": 1712760000000,
-    "lastModifiedBy": "antigravity"
-  },
-  "_id": "lore010grandes"
+    "name": "Il Grande Sole",
+    "type": "note",
+    "system": {
+        "category": "religione",
+        "description": "<p>Il culto del Grande Sole è l'unica religione ufficiale dell'Impero di Nilfgaard. Lega l'Imperatore alla natura e, di conseguenza, al popolo, che spesso lo vede come il Sole incarnato o il suo intermediario.</p><p>Vengono tributati sacrifici (non umani) durante solstizi ed equinozi. La Chiesa del Grande Sole funge spesso da elemento stabilizzante nell'Impero, fungendo da \"carota\" rispetto al \"bastone\" della Volontà Imperiale, promuovendo valori come famiglia, lavoro e lealtà.</p>",
+        "sourcebook": "MB 209"
+    },
+    "img": "modules/witcher-compendium/assets/LORE/base/witcher-lore/book.svg",
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14,
+        "createdTime": 1712760000000,
+        "modifiedTime": 1712760000000,
+        "lastModifiedBy": "antigravity"
+    },
+    "_id": "lore010grandes"
 }

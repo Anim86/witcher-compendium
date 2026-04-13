@@ -6,8 +6,8 @@
             <h3 class="header-source">{{localize "EFFECT.TABS.duration"}}</h3>
             {{#unless (and (eq section.type 'temporaryItemImprovement') (not ../document.system.canHaveTemporaryItemImprovement) )}}
                 <div class="item-controls header-controls flexrow">
-                    <a class="effect-control" data-action="create" title="{{localize 'DOCUMENT.Create' type="Effect"}}">
-                        <i class="fas fa-plus"></i> {{localize "DOCUMENT.New" type="Effect"}}
+                    <a class="effect-control" data-action="create" title="{{localize 'WITCHER.activeEffect.new'}}">
+                        <i class="fas fa-plus"></i> {{localize "WITCHER.activeEffect.new"}}
                     </a>
                 </div>
             {{/unless}}

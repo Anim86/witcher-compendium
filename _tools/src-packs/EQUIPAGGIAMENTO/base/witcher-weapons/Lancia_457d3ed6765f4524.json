@@ -13,10 +13,27 @@
             "max": 10
         },
         "accuracy": 0,
-        "hands": 2,
+        "hands": "2",
         "reach": "N/A",
         "effects": "Portata",
-        "sourcebook": "MB 40"
+        "sourcebook": "MB 40",
+        "range": "Portata",
+        "type": {
+            "text": "",
+            "slashing": false,
+            "piercing": true,
+            "bludgeoning": true,
+            "elemental": false
+        },
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "isMeteorite": false,
+            "isNonLethal": false,
+            "effects": []
+        }
     },
     "effects": [],
     "folder": null,

@@ -1,17 +1,17 @@
-﻿{
-    "name":  "Sella da Cavalleria",
-    "_id":  "e9c783549f6bb94b",
-    "system":  {
-                   "weight":  6,
-                   "description":  "\u003cp\u003eSella progettata per il combattimento, offre un migliore controllo e include un pratico fodero per l\u0027arma.\u003c/p\u003e",
-                   "quantity":  1,
-                   "cost":  325,
-                   "sourcebook":  "MB 93"
-               },
-    "type":  "item",
-    "img":  "icons/svg/item-bag.svg",
-    "_stats":  {
-                   "coreVersion":  14,
-                   "systemId": "TheWitcherItaNewSystem"
-               }
+{
+    "name": "Sella da Cavalleria",
+    "_id": "e9c783549f6bb94b",
+    "system": {
+        "weight": 6,
+        "description": "<p>Sella progettata per il combattimento, offre un migliore controllo e include un pratico fodero per l'arma.</p>",
+        "quantity": 1,
+        "cost": 325,
+        "sourcebook": "MB 93"
+    },
+    "type": "item",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/base/witcher-transports/item-bag.svg",
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
 }

@@ -1,21 +1,21 @@
 {
-  "name": "Scuola del Lupo",
-  "type": "note",
-  "system": {
-    "category": "fazione",
-    "parentFaction": "Scuola dei Witcher",
-    "description": "<p>La Scuola del Lupo ha sede a Kaer Morhen, nei Monti Blu. È la scuola più bilanciata e conosciuta, che addestra i propri membri a essere versatili spadaccini e cacciatori di mostri.</p><p>Gli appartenenti a questa scuola sono addestrati a colpire con forza e rapidità. Kaer Morhen è stata teatro di numerosi assedi e oggi ospita solo un pugno di witcher, tra cui il leggendario Vesemir e Geralt di Rivia.</p>",
-    "sourcebook": "MB 239"
-  },
-  "img": "icons/svg/book.svg",
-  "effects": [],
-  "flags": {},
-  "_stats": {
-    "systemId": "TheWitcherItaNewSystem",
-    "coreVersion": 14,
-    "createdTime": 1712760000000,
-    "modifiedTime": 1712760000000,
-    "lastModifiedBy": "antigravity"
-  },
-  "_id": "lore020lupo"
+    "name": "Scuola del Lupo",
+    "type": "note",
+    "system": {
+        "category": "fazione",
+        "parentFaction": "Scuola dei Witcher",
+        "description": "<p>La Scuola del Lupo ha sede a Kaer Morhen, nei Monti Blu. È la scuola più bilanciata e conosciuta, che addestra i propri membri a essere versatili spadaccini e cacciatori di mostri.</p><p>Gli appartenenti a questa scuola sono addestrati a colpire con forza e rapidità. Kaer Morhen è stata teatro di numerosi assedi e oggi ospita solo un pugno di witcher, tra cui il leggendario Vesemir e Geralt di Rivia.</p>",
+        "sourcebook": "MB 239"
+    },
+    "img": "modules/witcher-compendium/assets/LORE/base/witcher-lore/book.svg",
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14,
+        "createdTime": 1712760000000,
+        "modifiedTime": 1712760000000,
+        "lastModifiedBy": "antigravity"
+    },
+    "_id": "lore020lupo"
 }

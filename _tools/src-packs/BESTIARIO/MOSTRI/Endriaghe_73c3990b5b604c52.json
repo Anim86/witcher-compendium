@@ -1,0 +1,179 @@
+{
+    "_id": "73c3990b5b604c52",
+    "name": "Endriaghe",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/MOSTRI/Pag297_Endriaghe_01.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "ref": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "dex": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "body": {
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
+            },
+            "spd": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "emp": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "cra": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "will": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 5
+            },
+            "atletica": {
+                "value": 5
+            },
+            "coraggio": {
+                "value": 5
+            },
+            "eludere": {
+                "value": 6
+            },
+            "mischia": {
+                "value": 6
+            },
+            "nascondersi": {
+                "value": 7
+            },
+            "rissa": {
+                "value": 5
+            },
+            "sopravvivenza": {
+                "value": 6
+            },
+            "tempra": {
+                "value": 6
+            }
+        },
+        "details": {
+            "biography": "<p>Dicono che le endriaghe siano come ogni altro insetto, solo un’infestazione di cui bisogna liberarsi. La gente immagina delle soluzioni davvero creative. – Rodolf Kazmer</p><p>Superati tutti i pericoli, si trova la regina e le uova. Chi arriva a questo punto dovrà affrontare ogni endriaga rimasta nell’area, perché la regina le convocherà tutte a difesa. La regina è tecnicamente un insetto, allo stesso modo in cui un leone è un gatto.</p>",
+            "threat": "Ardua",
+            "reward": 1000
+        },
+        "derivedStats": {
+            "health": {
+                "value": 25,
+                "max": 25,
+                "unmodifiedMax": 25
+            },
+            "stamina": {
+                "value": 25,
+                "max": 25,
+                "unmodifiedMax": 25
+            },
+            "vigor": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "rec": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "resolve": {
+                "value": 25,
+                "max": 25,
+                "unmodifiedMax": 25
+            },
+            "stun": {
+                "value": 5,
+                "max": 5
+            },
+            "woundTreshold": {
+                "value": 5,
+                "max": 5
+            }
+        },
+        "description": "<p>Dicono che le endriaghe siano come ogni altro insetto, solo un’infestazione di cui bisogna liberarsi. La gente immagina delle soluzioni davvero creative. – Rodolf Kazmer</p><p>Superati tutti i pericoli, si trova la regina e le uova. Chi arriva a questo punto dovrà affrontare ogni endriaga rimasta nell’area, perché la regina le convocherà tutte a difesa. La regina è tecnicamente un insetto, allo stesso modo in cui un leone è un gatto.</p>",
+        "sourcebook": "MB 295"
+    },
+    "items": [
+        {
+            "_id": "068bd1383e1244d2",
+            "name": "Chele",
+            "type": "weapon",
+            "img": "icons/svg/sword.svg",
+            "system": {
+                "description": "",
+                "damage": "4d6+2",
+                "accuracy": 0,
+                "effects": "Veleno (50%)"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "e1",
+            "name": "[Capacità] Avventarsi",
+            "type": "note",
+            "img": "icons/svg/book.svg",
+            "system": {
+                "description": "<p>Un’endriaga non ha bisogno della rincorsa per balzare (fino a 4m da ferma).</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "e2",
+            "name": "[Capacità] Aculei del Drone",
+            "type": "note",
+            "img": "icons/svg/book.svg",
+            "system": {
+                "description": "<p>Può scagliare aculei in un cerchio di 5m. Schivata CD 15. Subisce 1d6 danni ed è avvelenato per ogni punto sotto la CD.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        }
+    ],
+    "effects": [],
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

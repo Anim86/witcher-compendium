@@ -1,0 +1,41 @@
+{
+    "_id": "006f87a98ae4f9f8",
+    "name": "Ascia Nera Gnomesca",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/base/witcher-weapons/Armatura_a_Piastre.webp",
+    "system": {
+        "description": "",
+        "weight": 1,
+        "cost": 100,
+        "sourcebook": "TRPG",
+        "damage": "6d6+2",
+        "accuracy": 2,
+        "reliability": {
+            "value": 15,
+            "max": 15
+        },
+        "hands": "2",
+        "type": {
+            "text": "",
+            "slashing": true,
+            "piercing": false,
+            "bludgeoning": false,
+            "elemental": false
+        },
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "isMeteorite": false,
+            "isNonLethal": false,
+            "effects": []
+        }
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

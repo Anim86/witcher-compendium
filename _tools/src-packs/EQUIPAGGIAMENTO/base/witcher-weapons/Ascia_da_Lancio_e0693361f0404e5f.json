@@ -13,10 +13,27 @@
             "max": 10
         },
         "accuracy": 0,
-        "hands": 1,
+        "hands": "1",
         "reach": "FIS ×2m",
         "effects": "N/A",
-        "sourcebook": "MB 76"
+        "sourcebook": "MB 76",
+        "range": "FISx2m",
+        "type": {
+            "text": "",
+            "slashing": true,
+            "piercing": false,
+            "bludgeoning": false,
+            "elemental": false
+        },
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "isMeteorite": false,
+            "isNonLethal": false,
+            "effects": []
+        }
     },
     "effects": [],
     "folder": null,

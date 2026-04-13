@@ -1,62 +1,77 @@
 <section class="scrollable">
     {{>"systems/TheWitcherItaNewSystem/templates/partials/item-header.hbs"}}
-    <div class="item-options">
-        <div class="item-column">
-            <label>{{localize "WITCHER.Type"}}:</label>
+    
+    <div class="properties-grid main-stats">
+        <div class="property-card highlight">
+            <label>{{localize "WITCHER.Type"}}</label>
             <select name="system.type" id="type-select">
                 {{selectOptions selects.enhancementTypes selected=item.system.type localize=true}}
             </select>
         </div>
-    </div>
-    {{#if (eq item.system.type "armor")}}
-        <table>
-            <tr>
-                <th>{{localize "WITCHER.Item.Short.Availability"}}</th>
-                <th>{{localize "WITCHER.Enhancement.Stopping"}}</th>
-                <th>{{localize "WITCHER.Enhancement.Bludgeoning"}}</th>
-                <th>{{localize "WITCHER.Enhancement.Slashing"}}</th>
-                <th>{{localize "WITCHER.Enhancement.Piercing"}}</th>
-            </tr>
-            <tr>
-                <td>
-                    <select name="system.avail" id="avail-select">
-                        {{selectOptions config.Availability selected=item.system.avail localize=true}}
-                    </select>
-                </td>
-                <td><input type="text" name="system.stopping" value="{{item.system.stopping}}" data-dtype="Number" />
-                </td>
-                <td><input type="checkbox" name="system.bludgeoning" {{checked item.system.bludgeoning}} /></td>
-                <td><input type="checkbox" name="system.slashing" {{checked item.system.slashing}} /></td>
-                <td><input type="checkbox" name="system.piercing" {{checked item.system.piercing}} /></td>
-            </tr>
-            <tr>
-                <td colspan="5">
-                </td>
-            </tr>
-        </table>
-    {{/if}}
-    <div class="flex">
-        <b>{{localize "WITCHER.Item.Effect"}} </b><a data-action="addEffect"><i class="fas fa-plus"></i></a>
-    </div>
-    {{#each item.system.effects as |effect name|}}
-        <div class="flex list-item" data-id="{{effect.id}}">
-            <a data-action="removeEffect"><i class="fas fa-minus"></i></a>
-            <textarea data-action="editEffect" rows=3 data-field="name">{{effect.name}}</textarea>
-            {{#if (or (eq ../item.system.type "weapon") (eq ../item.system.type "rune"))}}
-                <select class="item-effect" data-action="editEffect" data-field="statusEffect">
-                    {{selectOptions ../config.statusEffects blank='' selected=effect.statusEffect nameAttr='id' valueAttr="id" labelAttr="name" localize=true}}
-                </select>
-            {{else}}
-                <select class="item-effect" data-action="editEffect" data-field="statusEffect">
-                    {{selectOptions ../config.armorEffects blank='' selected=effect.statusEffect nameAttr='id' valueAttr="id" labelAttr="name" localize=true}}
-                </select>
-            {{/if}}
-            <div class="flex">
-                <label>{{localize "WITCHER.Percentage"}}:</label>
-                <input data-action="editEffect" data-field="percentage" type="text" value="{{effect.percentage}}"
-                    data-dtype="Number" />
-                %
-            </div>
+        {{#if (eq item.system.type "armor")}}
+        <div class="property-card">
+            <label>{{localize "WITCHER.Item.Short.Availability"}}</label>
+            <select name="system.avail" id="avail-select">
+                {{selectOptions config.Availability selected=item.system.avail localize=true}}
+            </select>
         </div>
-    {{/each}}
+        <div class="property-card highlight">
+            <label>{{localize "WITCHER.Enhancement.Stopping"}}</label>
+            <input type="text" name="system.stopping" value="{{item.system.stopping}}" data-dtype="Number" />
+        </div>
+        {{/if}}
+    </div>
+
+    {{#if (eq item.system.type "armor")}}
+    <div class="item-description-container">
+        <div class="section-title">
+            <i class="fas fa-shield-alt"></i> {{localize "WITCHER.Armor.Resistances"}}
+        </div>
+        <div class="checkbox-chip-group">
+            <label class="checkbox-chip {{#if item.system.bludgeoning}}active{{/if}}">
+                <input type="checkbox" name="system.bludgeoning" {{checked item.system.bludgeoning}} />
+                <span>{{localize "WITCHER.Enhancement.Bludgeoning"}}</span>
+            </label>
+            <label class="checkbox-chip {{#if item.system.slashing}}active{{/if}}">
+                <input type="checkbox" name="system.slashing" {{checked item.system.slashing}} />
+                <span>{{localize "WITCHER.Enhancement.Slashing"}}</span>
+            </label>
+            <label class="checkbox-chip {{#if item.system.piercing}}active{{/if}}">
+                <input type="checkbox" name="system.piercing" {{checked item.system.piercing}} />
+                <span>{{localize "WITCHER.Enhancement.Piercing"}}</span>
+            </label>
+        </div>
+    </div>
+    {{/if}}
+
+    <div class="effects-section">
+        <div class="section-title">
+            <i class="fas fa-magic"></i> {{localize "WITCHER.Item.Effect"}}
+            <a class="add-effect" data-action="addEffect"><i class="fas fa-plus-circle"></i></a>
+        </div>
+        
+        <div class="effects-list">
+            {{#each item.system.effects as |effect name|}}
+                <div class="effect-row list-item" data-id="{{effect.id}}">
+                    <textarea class="item-effect" data-action="editEffect" data-field="name" placeholder="{{localize 'WITCHER.table.Description'}}" rows="1">{{effect.name}}</textarea>
+                    
+                    <select class="item-effect" data-action="editEffect" data-field="statusEffect">
+                        {{#if (or (eq ../item.system.type "weapon") (eq ../item.system.type "rune"))}}
+                            {{selectOptions ../config.statusEffects blank='' selected=effect.statusEffect nameAttr='id' valueAttr="id" labelAttr="name" localize=true}}
+                        {{else}}
+                            {{selectOptions ../config.armorEffects blank='' selected=effect.statusEffect nameAttr='id' valueAttr="id" labelAttr="name" localize=true}}
+                        {{/if}}
+                    </select>
+
+                    <div class="effect-percentage">
+                        <input data-action="editEffect" data-field="percentage" type="text" value="{{effect.percentage}}" data-dtype="Number" />
+                        <span>%</span>
+                    </div>
+
+                    <a class="remove-effect" data-action="removeEffect"><i class="fas fa-times"></i></a>
+                </div>
+            {{/each}}
+        </div>
+    </div>
 </section>
+

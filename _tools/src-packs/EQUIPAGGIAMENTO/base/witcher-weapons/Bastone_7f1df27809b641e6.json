@@ -13,10 +13,35 @@
             "max": 10
         },
         "accuracy": 0,
-        "hands": 2,
+        "hands": "2",
         "reach": "N/A",
         "effects": "Portata Focus (1)",
-        "sourcebook": "MB 15"
+        "sourcebook": "MB 15",
+        "range": "Portata",
+        "type": {
+            "text": "",
+            "slashing": false,
+            "piercing": false,
+            "bludgeoning": true,
+            "elemental": false
+        },
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "isMeteorite": false,
+            "isNonLethal": false,
+            "effects": [
+                {
+                    "id": "00dd5d3c1456c928",
+                    "name": "Focus (1)",
+                    "statusEffect": null,
+                    "percentage": 100,
+                    "varEffect": false
+                }
+            ]
+        }
     },
     "effects": [],
     "folder": null,

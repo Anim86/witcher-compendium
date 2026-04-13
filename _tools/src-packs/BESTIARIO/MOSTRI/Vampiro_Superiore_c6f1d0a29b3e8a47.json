@@ -1,0 +1,142 @@
+{
+    "name": "Vampiro Superiore",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/MOSTRI/placeholder.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "ref": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "dex": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "body": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "spd": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "emp": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "cra": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "will": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 0
+            },
+            "atletica": {
+                "value": 0
+            },
+            "carisma": {
+                "value": 0
+            },
+            "coraggio": {
+                "value": 0
+            },
+            "etichetta": {
+                "value": 0
+            },
+            "inganno": {
+                "value": 0
+            },
+            "intimidire": {
+                "value": 0
+            },
+            "nascondersi": {
+                "value": 0
+            },
+            "persuasione": {
+                "value": 0
+            },
+            "prestanza": {
+                "value": 0
+            },
+            "resistereACoercizione": {
+                "value": 0
+            },
+            "resistereAllaMagia": {
+                "value": 0
+            },
+            "rissa": {
+                "value": 0
+            },
+            "seduzione": {
+                "value": 0
+            },
+            "sopravvivenza": {
+                "value": 0
+            },
+            "tempra": {
+                "value": 0
+            }
+        },
+        "details": {
+            "biography": "<p>Nel sud c’è gente convinta che esista un gruppo segreto di potenti vampiri che opera in tutto il Continente, una sorta di ragnatela che tira le fila. I vampiri possono essere più forti e veloci di noi mortali e possono guarire ogni ferita, ma un paletto d’argento nel cuore li rispedisce nella tomba! O almeno così si spera. – Rodolf Kazmer</p>",
+            "threat": "Eccezionale Complesso",
+            "reward": 5000
+        },
+        "derivedStats": {
+            "health": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "stamina": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "rec": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "stun": {
+                "value": 0,
+                "max": 0
+            },
+            "woundTreshold": {
+                "value": 0,
+                "max": 0
+            }
+        },
+        "description": "<p>I vampiri superiori sono creature leggendarie di immensa potenza, capaci di rigenerare quasi ogni ferita, persino di ritornare dalla morte. Possono assumere forma umana, di nube di fumo o di pipistrello gigante. Sono immuni ai metodi tradizionali di localizzazione magica e non proiettano ombre né riflessi negli specchi. La loro capacità di influenzare la mente altrui li rende manipolatori temibili.</p>",
+        "sourcebook": "DW 138"
+    },
+    "items": [],
+    "_id": "c6f1d0a29b3e8a47",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

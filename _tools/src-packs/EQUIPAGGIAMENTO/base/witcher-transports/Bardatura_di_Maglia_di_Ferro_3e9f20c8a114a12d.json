@@ -1,17 +1,17 @@
-﻿{
-    "name":  "Bardatura di Maglia di Ferro",
-    "_id":  "3e9f20c8a114a12d",
-    "system":  {
-                   "weight":  25,
-                   "description":  "\u003cp\u003ePesante protezione in maglia di ferro che garantisce un\u0027ottima difesa alla cavalcatura in battaglia.\u003c/p\u003e",
-                   "quantity":  1,
-                   "cost":  1050,
-                   "sourcebook":  "MB 93"
-               },
-    "type":  "item",
-    "img":  "icons/svg/item-bag.svg",
-    "_stats":  {
-                   "coreVersion":  14,
-                   "systemId": "TheWitcherItaNewSystem"
-               }
+{
+    "name": "Bardatura di Maglia di Ferro",
+    "_id": "3e9f20c8a114a12d",
+    "system": {
+        "weight": 25,
+        "description": "<p>Pesante protezione in maglia di ferro che garantisce un'ottima difesa alla cavalcatura in battaglia.</p>",
+        "quantity": 1,
+        "cost": 1050,
+        "sourcebook": "MB 93"
+    },
+    "type": "item",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/base/witcher-transports/item-bag.svg",
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
 }

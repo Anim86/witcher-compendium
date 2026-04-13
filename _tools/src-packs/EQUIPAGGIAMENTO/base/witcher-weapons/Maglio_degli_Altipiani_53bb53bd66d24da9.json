@@ -13,10 +13,27 @@
             "max": 20
         },
         "accuracy": 0,
-        "hands": 2,
+        "hands": "2",
         "reach": "N/A",
         "effects": "Stordimento (-2) Meteorite",
-        "sourcebook": "MB 75"
+        "sourcebook": "MB 75",
+        "type": {
+            "text": "",
+            "slashing": false,
+            "piercing": false,
+            "bludgeoning": true,
+            "elemental": false
+        },
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "isMeteorite": true,
+            "isNonLethal": false,
+            "stun": -2,
+            "effects": []
+        }
     },
     "effects": [],
     "folder": null,

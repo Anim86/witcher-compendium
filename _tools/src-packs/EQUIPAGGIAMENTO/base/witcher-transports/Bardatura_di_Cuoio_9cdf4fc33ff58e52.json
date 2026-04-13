@@ -1,17 +1,17 @@
-﻿{
-    "name":  "Bardatura di Cuoio",
-    "_id":  "9cdf4fc33ff58e52",
-    "system":  {
-                   "weight":  10,
-                   "description":  "\u003cp\u003eArmatura leggera in cuoio bollito per proteggere la cavalcatura senza appesantirla eccessivamente.\u003c/p\u003e",
-                   "quantity":  1,
-                   "cost":  550,
-                   "sourcebook":  "MB 93"
-               },
-    "type":  "item",
-    "img":  "icons/svg/item-bag.svg",
-    "_stats":  {
-                   "coreVersion":  14,
-                   "systemId": "TheWitcherItaNewSystem"
-               }
+{
+    "name": "Bardatura di Cuoio",
+    "_id": "9cdf4fc33ff58e52",
+    "system": {
+        "weight": 10,
+        "description": "<p>Armatura leggera in cuoio bollito per proteggere la cavalcatura senza appesantirla eccessivamente.</p>",
+        "quantity": 1,
+        "cost": 550,
+        "sourcebook": "MB 93"
+    },
+    "type": "item",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/base/witcher-transports/item-bag.svg",
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
 }

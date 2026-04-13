@@ -1,0 +1,124 @@
+{
+    "name": "Pantera",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/MOSTRI/placeholder.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "ref": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "dex": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "body": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "spd": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "emp": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "cra": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "will": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 0
+            },
+            "atletica": {
+                "value": 0
+            },
+            "coraggio": {
+                "value": 0
+            },
+            "intimidire": {
+                "value": 0
+            },
+            "nascondersi": {
+                "value": 0
+            },
+            "prestanza": {
+                "value": 0
+            },
+            "resistereAllaMagia": {
+                "value": 0
+            },
+            "rissa": {
+                "value": 0
+            },
+            "sopravvivenza": {
+                "value": 0
+            },
+            "tempra": {
+                "value": 0
+            }
+        },
+        "details": {
+            "biography": "<p>Ah, le pantere, che bestiacce esotiche! Ho sentito che le donne selvagge e le streghe del sud le tengono come famigli. Se vedete una pantera con gli occhi che brillano alla luce della luna, c’è un mago che vi sta spiando! Ne ho viste solo due in vita mia, mentre passavo per Mag Turga per… ehm… affari. Molto impressio- nanti, dico io, non vorrei diventare la loro vittima! – Rodolf Kazmer</p>",
+            "threat": "Medio Semplice",
+            "reward": 20
+        },
+        "derivedStats": {
+            "health": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "stamina": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "rec": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "stun": {
+                "value": 0,
+                "max": 0
+            },
+            "woundTreshold": {
+                "value": 0,
+                "max": 0
+            }
+        },
+        "description": "<p>In tutto il Continente, pantere, puma e altri grossi felini sono una costante minaccia per i viag- giatori. Seguono silenziosamente la preda, in attesa del momento giusto per colpire, di solito attaccando la persona meno corazzata. L’incredibile rapidità e la capacità di arrampicarsi per- mettono loro di colpire e dileguarsi rapide come saette.</p><p>'Ho sentito racconti su enormi felini striati che vivono nelle giungle di Ofier. Nylah riuscì persino a realizzarne un dipinto dettagliato durante uno dei nostri viaggi. Non ho mai visto nulla di simile sul Continente per taglia o imponenza, ma non era troppo dissimile dalle pantere e dai grandi felini del sud. Si tratta di bestie pericolose, sebbene prediligano tendere imboscate.' – Erland di Larvik</p>",
+        "sourcebook": "DW 40"
+    },
+    "items": [],
+    "_id": "b541e097ad83c2f6",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

@@ -1,21 +1,21 @@
 {
-  "name": "Scuola del Grifone",
-  "type": "note",
-  "system": {
-    "category": "fazione",
-    "parentFaction": "Scuola dei Witcher",
-    "description": "<p>La Scuola del Grifone ha sede a Kaer Y Seren, lungo la costiera dei Monti del Drago. Si concentra sull'uso della magia e sull'affrontare avversari multipli.</p><p>I witcher del Grifone sono famosi per la loro nobiltà e il loro rigoroso codice d'onore. Purtroppo, Kaer Y Seren è stata distrutta da una valanga provocata da maghi ostili, lasciando la scuola quasi estinta.</p>",
-    "sourcebook": "MB 239"
-  },
-  "img": "icons/svg/book.svg",
-  "effects": [],
-  "flags": {},
-  "_stats": {
-    "systemId": "TheWitcherItaNewSystem",
-    "coreVersion": 14,
-    "createdTime": 1712760000000,
-    "modifiedTime": 1712760000000,
-    "lastModifiedBy": "antigravity"
-  },
-  "_id": "lore021grifone"
+    "name": "Scuola del Grifone",
+    "type": "note",
+    "system": {
+        "category": "fazione",
+        "parentFaction": "Scuola dei Witcher",
+        "description": "<p>La Scuola del Grifone ha sede a Kaer Y Seren, lungo la costiera dei Monti del Drago. Si concentra sull'uso della magia e sull'affrontare avversari multipli.</p><p>I witcher del Grifone sono famosi per la loro nobiltà e il loro rigoroso codice d'onore. Purtroppo, Kaer Y Seren è stata distrutta da una valanga provocata da maghi ostili, lasciando la scuola quasi estinta.</p>",
+        "sourcebook": "MB 239"
+    },
+    "img": "modules/witcher-compendium/assets/LORE/base/witcher-lore/book.svg",
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14,
+        "createdTime": 1712760000000,
+        "modifiedTime": 1712760000000,
+        "lastModifiedBy": "antigravity"
+    },
+    "_id": "lore021grifone"
 }

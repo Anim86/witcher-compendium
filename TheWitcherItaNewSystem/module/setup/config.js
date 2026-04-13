@@ -18,55 +18,55 @@ WITCHER.statMap = {
     int: {
         origin: 'stats',
         name: 'int',
-        label: 'WITCHER.StInt',
+        label: 'WITCHER.Actor.St.Int',
         labelShort: 'WITCHER.Actor.Stat.Int'
     },
     ref: {
         origin: 'stats',
         name: 'ref',
-        label: 'WITCHER.StRef',
+        label: 'WITCHER.Actor.St.Ref',
         labelShort: 'WITCHER.Actor.Stat.Ref'
     },
     dex: {
         origin: 'stats',
         name: 'dex',
-        label: 'WITCHER.StDex',
+        label: 'WITCHER.Actor.St.Dex',
         labelShort: 'WITCHER.Actor.Stat.Dex'
     },
     body: {
         origin: 'stats',
         name: 'body',
-        label: 'WITCHER.StBody',
+        label: 'WITCHER.Actor.St.Body',
         labelShort: 'WITCHER.Actor.Stat.Body'
     },
     spd: {
         origin: 'stats',
         name: 'spd',
-        label: 'WITCHER.StSpd',
+        label: 'WITCHER.Actor.St.Spd',
         labelShort: 'WITCHER.Actor.Stat.Spd'
     },
     emp: {
         origin: 'stats',
         name: 'emp',
-        label: 'WITCHER.StEmp',
+        label: 'WITCHER.Actor.St.Emp',
         labelShort: 'WITCHER.Actor.Stat.Emp'
     },
     cra: {
         origin: 'stats',
         name: 'cra',
-        label: 'WITCHER.StCra',
+        label: 'WITCHER.Actor.St.Cra',
         labelShort: 'WITCHER.Actor.Stat.Cra'
     },
     will: {
         origin: 'stats',
         name: 'will',
-        label: 'WITCHER.StWill',
+        label: 'WITCHER.Actor.St.Will',
         labelShort: 'WITCHER.Actor.Stat.Will'
     },
     luck: {
         origin: 'stats',
         name: 'luck',
-        label: 'WITCHER.StLuck',
+        label: 'WITCHER.Actor.St.Luck',
         labelShort: 'WITCHER.Actor.Stat.Luck'
     },
 

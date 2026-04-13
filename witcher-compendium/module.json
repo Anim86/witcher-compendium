@@ -2,7 +2,7 @@
   "id": "witcher-compendium",
   "title": "Witcher RPG Compendium (Premium IT)",
   "description": "Compendio premium per The Witcher TRPG (v14).",
-  "version": "14.1.56",
+  "version": "v14.1.57",
   "authors": [
     {
       "name": "Zolt",
@@ -240,36 +240,15 @@
     },
     {
       "name": "witcher-monsters",
-      "label": "Bestiario Base",
-      "path": "packs/BESTIARIO/PNG/base/witcher-monsters",
+      "label": "Bestiario (Mostri)",
+      "path": "packs/BESTIARIO/MOSTRI",
       "type": "Actor",
       "system": "TheWitcherItaNewSystem"
     },
     {
-      "name": "witcher-monsters-racconti",
-      "label": "Bestiario (Racconti)",
-      "path": "packs/BESTIARIO/PNG/racconti/witcher-monsters-racconti",
-      "type": "Actor",
-      "system": "TheWitcherItaNewSystem"
-    },
-    {
-      "name": "witcher-npc-racconti",
-      "label": "PNG (Racconti)",
-      "path": "packs/BESTIARIO/NPC/racconti/witcher-npc-racconti",
-      "type": "Actor",
-      "system": "TheWitcherItaNewSystem"
-    },
-    {
-      "name": "witcher-monsters-diario",
-      "label": "Bestiario (Diario)",
-      "path": "packs/BESTIARIO/PNG/diario/witcher-monsters-diario",
-      "type": "Actor",
-      "system": "TheWitcherItaNewSystem"
-    },
-    {
-      "name": "witcher-monsters-chaos",
-      "label": "Bestiario Chaos",
-      "path": "packs/BESTIARIO/PNG/caos/witcher-monsters-chaos",
+      "name": "witcher-png",
+      "label": "Bestiario (Personaggi)",
+      "path": "packs/BESTIARIO/PNG",
       "type": "Actor",
       "system": "TheWitcherItaNewSystem"
     },
@@ -323,5 +302,5 @@
   ],
   "url": "https://github.com/Anim86/witcher-compendium",
   "manifest": "https://raw.githubusercontent.com/Anim86/witcher-compendium/main/witcher-compendium/module.json",
-  "download": "https://github.com/Anim86/witcher-compendium/releases/download/v14.1.56/witcher-compendium-v14.1.56.zip"
+  "download": "https://github.com/Anim86/witcher-compendium/releases/download/v14.1.57/witcher-compendium-v14.1.57.zip"
 }

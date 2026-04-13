@@ -1,23 +1,14 @@
-<a class="char-stat-button skill {{#if skill.isProfession}}profession{{else if skill.isPickup}}pickup{{else if skill.isLearned}}learned{{/if}}" data-action="rollSkill" data-skill="{{name}}" data-stat={{stat}}>
-    <div class="label">
-        <span>{{localize skill.label}}</span>
-        {{#if (gte skill.value 0)}}
-            <span>+{{skill.value}}</span>
-        {{else}}
-            <span>{{skill.value}}</span>
-        {{/if}}
-    </div>
-    {{#if (or skill.isProfession skill.isPickup skill.isLearned)}}
-        <div class="skill-icons">
-            {{#if skill.isProfession}}
-                <span><i>{{localize 'WITCHER.skills.profession'}}</i></span>
-            {{/if}}
-            {{#if skill.isPickup}}
-                <span><i>{{localize 'WITCHER.skills.pickup'}}</i></span>
-            {{/if}}
-            {{#if skill.isLearned}}
-                <span><i>{{localize 'WITCHER.skills.learn'}}</i></span>
-            {{/if}}
+<a class="skill-card {{#if skill.isProfession}}is-profession{{else if skill.isPickup}}is-pickup{{else if skill.isLearned}}is-learned{{/if}}" 
+   data-action="rollSkill" data-skill="{{name}}" data-stat={{stat}} data-tooltip="{{localize skill.label}}">
+    <div class="skill-main">
+        <span class="skill-label">{{localize skill.label}}</span>
+        <div class="skill-status-icons">
+            {{#if skill.isProfession}}<i class="fa-solid fa-briefcase" data-tooltip="{{localize 'WITCHER.skills.profession'}}"></i>{{/if}}
+            {{#if skill.isPickup}}<i class="fa-solid fa-hand-holding-hand" data-tooltip="{{localize 'WITCHER.skills.pickup'}}"></i>{{/if}}
+            {{#if skill.isLearned}}<i class="fa-solid fa-graduation-cap" data-tooltip="{{localize 'WITCHER.skills.learn'}}"></i>{{/if}}
         </div>
-    {{/if}}
+    </div>
+    <div class="skill-value-badge">
+        {{#if (gte skill.value 0)}}+{{/if}}{{skill.value}}
+    </div>
 </a>

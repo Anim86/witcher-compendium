@@ -1,17 +1,17 @@
-﻿{
-    "name":  "Paraocchi da Corsa",
-    "_id":  "25c1c9e6f2029e8d",
-    "system":  {
-                   "weight":  0.1,
-                   "description":  "\u003cp\u003eParaocchi specializzati che massimizzano la concentrazione della cavalcatura durante la corsa.\u003c/p\u003e",
-                   "quantity":  1,
-                   "cost":  125,
-                   "sourcebook":  "MB 93"
-               },
-    "type":  "item",
-    "img":  "icons/svg/item-bag.svg",
-    "_stats":  {
-                   "coreVersion":  14,
-                   "systemId": "TheWitcherItaNewSystem"
-               }
+{
+    "name": "Paraocchi da Corsa",
+    "_id": "25c1c9e6f2029e8d",
+    "system": {
+        "weight": 0.1,
+        "description": "<p>Paraocchi specializzati che massimizzano la concentrazione della cavalcatura durante la corsa.</p>",
+        "quantity": 1,
+        "cost": 125,
+        "sourcebook": "MB 93"
+    },
+    "type": "item",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/base/witcher-transports/item-bag.svg",
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
 }

@@ -1,17 +1,17 @@
-﻿{
-    "name":  "Cutter (barca)",
-    "_id":  "8a0762370e4fa73f",
-    "system":  {
-                   "weight":  610,
-                   "description":  "\u003cp\u003eUn\u0027imbarcazione snella e veloce, utilizzata per trasporti rapidi o per piccole spedizioni marittime.\u003c/p\u003e",
-                   "quantity":  1,
-                   "cost":  1670,
-                   "sourcebook":  "MB 93"
-               },
-    "type":  "item",
-    "img":  "icons/svg/item-bag.svg",
-    "_stats":  {
-                   "coreVersion":  14,
-                   "systemId": "TheWitcherItaNewSystem"
-               }
+{
+    "name": "Cutter (barca)",
+    "_id": "8a0762370e4fa73f",
+    "system": {
+        "weight": 610,
+        "description": "<p>Un'imbarcazione snella e veloce, utilizzata per trasporti rapidi o per piccole spedizioni marittime.</p>",
+        "quantity": 1,
+        "cost": 1670,
+        "sourcebook": "MB 93"
+    },
+    "type": "item",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/base/witcher-transports/item-bag.svg",
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
 }

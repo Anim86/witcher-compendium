@@ -1,0 +1,124 @@
+{
+    "name": "Hym",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/MOSTRI/placeholder.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "ref": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "dex": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "body": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "spd": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "emp": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "cra": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "will": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 0
+            },
+            "atletica": {
+                "value": 0
+            },
+            "coraggio": {
+                "value": 0
+            },
+            "intimidire": {
+                "value": 0
+            },
+            "nascondersi": {
+                "value": 0
+            },
+            "prestanza": {
+                "value": 0
+            },
+            "resistereACoercizione": {
+                "value": 0
+            },
+            "resistereAllaMagia": {
+                "value": 0
+            },
+            "rissa": {
+                "value": 0
+            },
+            "sopravvivenza": {
+                "value": 0
+            }
+        },
+        "details": {
+            "biography": "<p>Non posso dire di conoscere qualcosa su un qualcosa che si chiama hym. Ho sentito voci su ombre e spettri del senso di colpa o roba simile. Forse intendi questi. Eh, una volta, tra una pinta e l’altra, ho parlato con un razziatore di An Skellig. Il povero bastardo era mezzo matto e chissà perché aveva voglia di dirmi come mai era al porto. Diceva di vedere l’ombra di un suo fratello di scudo con cui aveva navigato. La loro nave era affondata lungo la costa di Nazair e il ragazzo aveva dovuto lasciare annegare l’amico. – Rodolf Kazmer</p>",
+            "threat": "Difficile Arduo",
+            "reward": 1500
+        },
+        "derivedStats": {
+            "health": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "stamina": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "rec": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "stun": {
+                "value": 0,
+                "max": 0
+            },
+            "woundTreshold": {
+                "value": 0,
+                "max": 0
+            }
+        },
+        "description": "<p>Anche se viene classificato come spettro, un hym è in realtà un demone che vive nelle sfere esterne. Raggiunge questo mondo per nutrirsi di emozioni negative, soprattutto di sensi di colpa, attaccandosi per lo più a individui spregevoli. L’hym tormenta l’ospite con allucinazioni di giorno e incubi durante il sonno. È noto che spinge le vittime a ritirarsi in solitudine e a farsi del male da sole fino a impazzire.</p>",
+        "sourcebook": "DW 28"
+    },
+    "items": [],
+    "_id": "e5df03bc61479a82",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

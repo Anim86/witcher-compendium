@@ -1,0 +1,5 @@
+$acl = Get-Service FoundryVTT | Get-Acl
+$permission = "apaci","Stop,Start","Allow"
+$accessRule = New-Object System.ServiceProcess.ServiceAccessRule($permission)
+$acl.AddAccessRule($accessRule)
+Set-Acl -Path "HKLM:\System\CurrentControlSet\Services\FoundryVTT" -AclObject $acl

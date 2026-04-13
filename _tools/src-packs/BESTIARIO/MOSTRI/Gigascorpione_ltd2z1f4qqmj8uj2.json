@@ -1,0 +1,150 @@
+{
+    "_id": "ltd2z1f4qqmj8uj2",
+    "name": "Gigascorpione",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/MOSTRI/placeholder.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 0,
+                "max": 0
+            },
+            "ref": {
+                "value": 0,
+                "max": 0
+            },
+            "dex": {
+                "value": 0,
+                "max": 0
+            },
+            "body": {
+                "value": 0,
+                "max": 0
+            },
+            "spd": {
+                "value": 0,
+                "max": 0
+            },
+            "emp": {
+                "value": 0,
+                "max": 0
+            },
+            "cra": {
+                "value": 0,
+                "max": 0
+            },
+            "will": {
+                "value": 0,
+                "max": 0
+            },
+            "luck": {
+                "value": 0,
+                "max": 0
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 0
+            },
+            "atletica": {
+                "value": 0
+            },
+            "coraggio": {
+                "value": 0
+            },
+            "eludere": {
+                "value": 0
+            },
+            "intimidire": {
+                "value": 0
+            },
+            "nascondersi": {
+                "value": 0
+            },
+            "prestanza": {
+                "value": 0
+            },
+            "resistereAllaMagia": {
+                "value": 0
+            },
+            "rissa": {
+                "value": 0
+            },
+            "sopravvivenza": {
+                "value": 0
+            },
+            "tempra": {
+                "value": 0
+            }
+        },
+        "details": {
+            "biography": "<p>I Gigascorpioni sono predatori da imboscata, che minacciano le carovane che attraversano il deserto di Korath. La loro spessa chitina li rende immuni a molti attacchi e il loro pungiglione contiene un veleno letale.</p>",
+            "threat": "Difficile",
+            "reward": 700
+        },
+        "derivedStats": {
+            "health": {
+                "value": 0,
+                "max": 0
+            },
+            "stamina": {
+                "value": 0,
+                "max": 0
+            },
+            "rec": {
+                "value": 0,
+                "max": 0
+            },
+            "stun": {
+                "value": 0
+            },
+            "woundTreshold": {
+                "value": 0
+            }
+        },
+        "description": "<p>I Gigascorpioni sono predatori da imboscata, che minacciano le carovane che attraversano il deserto di Korath. La loro spessa chitina li rende immuni a molti attacchi e il loro pungiglione contiene un veleno letale.</p>",
+        "sourcebook": "LR 112"
+    },
+    "items": [
+        {
+            "name": "Chele",
+            "type": "weapon",
+            "img": "icons/svg/sword.svg",
+            "system": {
+                "damage": "4d6+3",
+                "accuracy": 0,
+                "effects": ""
+            }
+        },
+        {
+            "name": "Pungiglione",
+            "type": "weapon",
+            "img": "icons/svg/sword.svg",
+            "system": {
+                "damage": "6d6+3",
+                "accuracy": 0,
+                "effects": "Portata, Sanguinamento (30%), Veleno (100%)"
+            }
+        },
+        {
+            "name": "[Capacità] Chitina",
+            "type": "note",
+            "img": "icons/svg/book.svg",
+            "system": {
+                "description": "<p>L'armatura di chitina del Gigascorpione fornisce Protezione 15.</p>"
+            }
+        },
+        {
+            "name": "[Capacità] Camuffamento",
+            "type": "note",
+            "img": "icons/svg/book.svg",
+            "system": {
+                "description": "<p>Finché resta immobile, il Gigascorpione ha un bonus di +10 a Nascondersi in terreni rocciosi o desertici.</p>"
+            }
+        }
+    ],
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

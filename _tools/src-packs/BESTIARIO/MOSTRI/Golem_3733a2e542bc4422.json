@@ -1,0 +1,173 @@
+{
+    "_id": "3733a2e542bc4422",
+    "name": "Golem",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/MOSTRI/Pag301_Golem_01.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "ref": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "dex": {
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
+            },
+            "body": {
+                "value": 15,
+                "max": 15,
+                "unmodifiedMax": 15
+            },
+            "spd": {
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
+            },
+            "emp": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "cra": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "will": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 8
+            },
+            "atletica": {
+                "value": 2
+            },
+            "eludere": {
+                "value": 4
+            },
+            "nascondersi": {
+                "value": 2
+            },
+            "rissa": {
+                "value": 5
+            },
+            "sopravvivenza": {
+                "value": 4
+            },
+            "tempra": {
+                "value": 10
+            }
+        },
+        "details": {
+            "biography": "<p>I golem sono gli unici mostri artificiali che conosco. Dicono che siano costruiti con il potere degli elementi e animati con le anime dei morti. – Rodolf Kazmer</p><p>I golem sono creature estremamente semplici, eppure incredibilmente pericolose. Il tipico esemplare è stato creato da un mago per proteggersi, come forza lavoro o per sorvegliare qualcosa d’importante. I golem seguono gli ordini alla lettera… per sempre.</p>",
+            "threat": "Ardua",
+            "reward": 1500
+        },
+        "derivedStats": {
+            "health": {
+                "value": 50,
+                "max": 50,
+                "unmodifiedMax": 50
+            },
+            "stamina": {
+                "value": 50,
+                "max": 50,
+                "unmodifiedMax": 50
+            },
+            "vigor": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "rec": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "resolve": {
+                "value": 50,
+                "max": 50,
+                "unmodifiedMax": 50
+            },
+            "stun": {
+                "value": 10,
+                "max": 10
+            },
+            "woundTreshold": {
+                "value": 10,
+                "max": 10
+            }
+        },
+        "description": "<p>I golem sono gli unici mostri artificiali che conosco. Dicono che siano costruiti con il potere degli elementi e animati con le anime dei morti. – Rodolf Kazmer</p><p>I golem sono creature estremamente semplici, eppure incredibilmente pericolose. Il tipico esemplare è stato creato da un mago per proteggersi, come forza lavoro o per sorvegliare qualcosa d’importante. I golem seguono gli ordini alla lettera… per sempre.</p>",
+        "sourcebook": "MB 299"
+    },
+    "items": [
+        {
+            "_id": "g1",
+            "name": "Pugni",
+            "type": "weapon",
+            "img": "icons/svg/sword.svg",
+            "system": {
+                "description": "",
+                "damage": "8d6",
+                "accuracy": 0,
+                "effects": "Ablativo"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "g2",
+            "name": "[Capacità] Forza Distruttiva",
+            "type": "note",
+            "img": "icons/svg/book.svg",
+            "system": {
+                "description": "<p>I colpi non possono essere parati e causano doppio danno ablativo.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "g3",
+            "name": "[Capacità] Carica",
+            "type": "note",
+            "img": "icons/svg/book.svg",
+            "system": {
+                "description": "<p>Può caricare se l'avversario è oltre 10m. -4 precisione, 10d6 danni, sbalzo 8m.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        }
+    ],
+    "effects": [],
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

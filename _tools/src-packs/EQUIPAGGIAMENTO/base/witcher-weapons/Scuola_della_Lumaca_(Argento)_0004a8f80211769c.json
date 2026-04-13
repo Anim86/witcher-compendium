@@ -1,0 +1,44 @@
+{
+    "_id": "0004a8f80211769c",
+    "name": "Scuola della Lumaca (Argento)",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/base/witcher-weapons/Armatura_a_Piastre.webp",
+    "system": {
+        "description": "",
+        "weight": 1,
+        "cost": 100,
+        "sourcebook": "TRPG",
+        "damage": "5d6",
+        "accuracy": -6,
+        "reliability": {
+            "value": 15,
+            "max": 15
+        },
+        "hands": "2",
+        "type": {
+            "text": "",
+            "slashing": true,
+            "piercing": true,
+            "bludgeoning": false,
+            "elemental": false
+        },
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": true,
+            "crushingForce": true,
+            "isMeteorite": false,
+            "isNonLethal": false,
+            "stun": -2,
+            "silverTrait": true,
+            "silverDamage": "3d6",
+            "effects": []
+        }
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

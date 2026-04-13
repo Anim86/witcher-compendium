@@ -1,7 +1,7 @@
 import { ClassicLevel } from 'classic-level';
 import fs from 'fs';
 
-const PACK_PATH = 'C:\\Users\\apaci\\AppData\\Local\\FoundryVTT\\Data\\modules\\witcher-compendium\\packs\\EQUIPAGGIAMENTO\\base\\witcher-armor';
+const PACK_PATH = 'E:\\FoundryVTT_Data\\Data\\modules\\witcher-compendium\\packs\\EQUIPAGGIAMENTO\\base\\witcher-armor';
 
 async function dumpFirstItem() {
     const db = new ClassicLevel(PACK_PATH, { valueEncoding: 'json' });

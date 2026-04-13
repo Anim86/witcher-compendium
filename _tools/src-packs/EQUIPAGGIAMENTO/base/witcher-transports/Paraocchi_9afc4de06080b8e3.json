@@ -1,17 +1,17 @@
-﻿{
-    "name":  "Paraocchi",
-    "_id":  "9afc4de06080b8e3",
-    "system":  {
-                   "weight":  0.1,
-                   "description":  "\u003cp\u003eSchermi laterali per gli occhi che aiutano a mantenere la calma della cavalcatura prevenendo distrazioni.\u003c/p\u003e",
-                   "quantity":  1,
-                   "cost":  100,
-                   "sourcebook":  "MB 93"
-               },
-    "type":  "item",
-    "img":  "icons/svg/item-bag.svg",
-    "_stats":  {
-                   "coreVersion":  14,
-                   "systemId": "TheWitcherItaNewSystem"
-               }
+{
+    "name": "Paraocchi",
+    "_id": "9afc4de06080b8e3",
+    "system": {
+        "weight": 0.1,
+        "description": "<p>Schermi laterali per gli occhi che aiutano a mantenere la calma della cavalcatura prevenendo distrazioni.</p>",
+        "quantity": 1,
+        "cost": 100,
+        "sourcebook": "MB 93"
+    },
+    "type": "item",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/base/witcher-transports/item-bag.svg",
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
 }

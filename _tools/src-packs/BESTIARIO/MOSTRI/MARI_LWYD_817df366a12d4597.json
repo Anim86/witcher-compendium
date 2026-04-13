@@ -1,0 +1,198 @@
+{
+    "_id": "817df366a12d4597",
+    "name": "Mari Lwyd",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/MOSTRI/Mari_Lwyd.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "ref": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "dex": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "body": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "spd": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "emp": {
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
+            },
+            "cra": {
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
+            },
+            "will": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 16
+            },
+            "atletica": {
+                "value": 18
+            },
+            "inganno": {
+                "value": 16
+            },
+            "intimidire": {
+                "value": 16
+            },
+            "nascondersi": {
+                "value": 16
+            },
+            "prestanza": {
+                "value": 18
+            },
+            "resistereallamagia": {
+                "value": 20
+            },
+            "rissa": {
+                "value": 18
+            },
+            "sopravvivenza": {
+                "value": 16
+            },
+            "tempra": {
+                "value": 18
+            }
+        },
+        "details": {
+            "biography": "<p>Se, nel cuore della notte, sentite un coro inquietante fuori dalla vostra porta, sbarratela e tappatevi le orecchie. – Rodolf Kazmer</p><p>I mari lwyd sono demoni dell’avidità che vagano chiedendo ospitalità. Se rifiutati, marchiano le vittime o possiedono i vicini per farsi aprire. In combattimento usano il loro lungo collo come una frusta e la testa scheletrica per sbranare le prede, emanando un'aura di gelo soprannaturale.</p>",
+            "threat": "Arduo",
+            "reward": 1500
+        },
+        "derivedStats": {
+            "health": {
+                "value": 90,
+                "max": 90,
+                "unmodifiedMax": 90
+            },
+            "stamina": {
+                "value": 45,
+                "max": 45,
+                "unmodifiedMax": 45
+            },
+            "vigor": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "rec": {
+                "value": 9,
+                "max": 9,
+                "unmodifiedMax": 9
+            },
+            "resolve": {
+                "value": 45,
+                "max": 45,
+                "unmodifiedMax": 45
+            },
+            "stun": {
+                "value": 9,
+                "max": 9
+            },
+            "woundTreshold": {
+                "value": 9,
+                "max": 9
+            }
+        },
+        "description": "<p>Se, nel cuore della notte, sentite un coro inquietante fuori dalla vostra porta, sbarratela e tappatevi le orecchie. – Rodolf Kazmer</p><p>I mari lwyd sono demoni dell’avidità che vagano chiedendo ospitalità. Se rifiutati, marchiano le vittime o possiedono i vicini per farsi aprire. In combattimento usano il loro lungo collo come una frusta e la testa scheletrica per sbranare le prede, emanando un'aura di gelo soprannaturale.</p>",
+        "sourcebook": "TC 206"
+    },
+    "items": [
+        {
+            "_id": "m1",
+            "name": "Morso",
+            "type": "weapon",
+            "img": "icons/svg/sword.svg",
+            "system": {
+                "description": "",
+                "damage": "5d6+4",
+                "accuracy": 0,
+                "effects": "Congelamento (100%), Trapassare Migliorato"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "m2",
+            "name": "Frusta Spinale",
+            "type": "weapon",
+            "img": "icons/svg/sword.svg",
+            "system": {
+                "description": "",
+                "damage": "4d6+4",
+                "accuracy": 0,
+                "effects": "Vacillante (30%)"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "m3",
+            "name": "Schianto",
+            "type": "weapon",
+            "img": "icons/svg/sword.svg",
+            "system": {
+                "description": "",
+                "damage": "4d6+4",
+                "accuracy": 0,
+                "effects": "Vacillante (50%)"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "m4",
+            "name": "[Capacità] Aura Gelida",
+            "type": "note",
+            "img": "icons/svg/book.svg",
+            "system": {
+                "description": "<p>Probabilità del 50% di restare Congelato ogni Turno in mischia. Spegne automaticamente fiamme.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        }
+    ],
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

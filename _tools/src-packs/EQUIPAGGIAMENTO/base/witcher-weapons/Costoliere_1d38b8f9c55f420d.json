@@ -13,10 +13,34 @@
             "max": 10
         },
         "accuracy": 1,
-        "hands": 1,
+        "hands": "1",
         "reach": "N/A",
         "effects": "Sanguinamento (25%)",
-        "sourcebook": "MB 16"
+        "sourcebook": "MB 16",
+        "type": {
+            "text": "",
+            "slashing": true,
+            "piercing": true,
+            "bludgeoning": false,
+            "elemental": false
+        },
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "isMeteorite": false,
+            "isNonLethal": false,
+            "effects": [
+                {
+                    "id": "00096a6b21a1fcf1",
+                    "name": "sanguinamento",
+                    "statusEffect": null,
+                    "percentage": 25,
+                    "varEffect": false
+                }
+            ]
+        }
     },
     "effects": [],
     "folder": null,

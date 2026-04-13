@@ -1,124 +1,117 @@
 <section class="scrollable">
     {{>"systems/TheWitcherItaNewSystem/templates/partials/spell-header.hbs"}}
-    <table class="item-table">
-        <tr>
-            <th title="{{localize "WITCHER.Spell.Variable"}}">{{localize "WITCHER.Spell.Short.Variable"}}</th>
-            {{#unless (eq item.system.staminaIsVar true)}}
-                <th title="{{localize "WITCHER.Spell.StaCost"}}">{{localize "WITCHER.Spell.Short.StaCost"}}</th>
-            {{/unless}}
-            {{#unless (eq item.system.class "MagicalGift")}}
-                <th>{{localize "WITCHER.Spell.Range"}}</th>
-            {{/unless}}
-            <th>{{localize "WITCHER.Spell.Duration"}}</th>
-            {{#unless (eq item.system.class "MagicalGift")}}
-                <th>{{localize "WITCHER.Spell.Defence"}}</th>
-            {{/unless}}
-            {{#if (eq item.system.class "Witcher")}}
-                <th>{{localize "WITCHER.Spell.Sign"}} {{localize "WITCHER.Spell.Type"}}</th>
-            {{/if}}
-        </tr>
-        <tr>
-            <td><input type="checkbox" name="system.staminaIsVar" {{checked item.system.staminaIsVar}} /></td>
-            {{#unless (eq item.system.staminaIsVar true)}}
-                <td><input name="system.stamina" type="text" value="{{item.system.stamina}}" /></td>
-            {{/unless}}
-            {{#unless (eq item.system.class "MagicalGift")}}
-                <td><input name="system.range" type="text" value="{{item.system.range}}" /></td>
-            {{/unless}}
-            <td><input name="system.duration" type="text" value="{{item.system.duration}}" /></td>
-            {{#unless (eq item.system.class "MagicalGift")}}
-                <td><input name="system.defence" type="text" value="{{item.system.defence}}" /></td>
-            {{/unless}}
-            {{#if (eq item.system.class "Witcher")}}
-                <td>
-                    <select name="system.domain">
-                        {{selectOptions selects.domain selected=item.system.domain localize=true}}
-                    </select>
-                </td>
-            {{/if}}
-        </tr>
-    </table>
-    <div class="grid">
-        <label>{{localize "WITCHER.Item.Effect"}}</label>
+    
+    <div class="item-description-container">
+        <div class="section-title">
+            <i class="fas fa-scroll"></i> {{localize "WITCHER.Item.Effect"}}
+        </div>
         {{editor item.system.effect target="system.effect" button=true owner=owner editable=editable engine="prosemirror"}}
     </div>
-    <div class="grid">
-        {{#if (eq item.system.class "MagicalGift")}}
-            <label>{{localize "WITCHER.Spell.SideEffect"}}</label>
-            {{editor item.system.sideEffect target="system.sideEffect" button=true owner=owner editable=editable engine="prosemirror"}}
+
+    {{#if (eq item.system.class "MagicalGift")}}
+    <div class="item-description-container">
+        <div class="section-title">
+            <i class="fas fa-exclamation-triangle"></i> {{localize "WITCHER.Spell.SideEffect"}}
+        </div>
+        {{editor item.system.sideEffect target="system.effect" button=true owner=owner editable=editable engine="prosemirror"}}
+    </div>
+    {{/if}}
+
+    <div class="properties-grid main-stats">
+        <div class="property-card">
+            <label>{{localize "WITCHER.Spell.Short.Variable"}}</label>
+            <input type="checkbox" name="system.staminaIsVar" {{checked item.system.staminaIsVar}} />
+        </div>
+        {{#unless item.system.staminaIsVar}}
+        <div class="property-card highlight">
+            <label>{{localize "WITCHER.Spell.Short.StaCost"}}</label>
+            <input name="system.stamina" type="text" value="{{item.system.stamina}}" />
+        </div>
+        {{/unless}}
+        {{#unless (eq item.system.class "MagicalGift")}}
+        <div class="property-card">
+            <label>{{localize "WITCHER.Spell.Range"}}</label>
+            <input name="system.range" type="text" value="{{item.system.range}}" />
+        </div>
+        {{/unless}}
+        <div class="property-card">
+            <label>{{localize "WITCHER.Spell.Duration"}}</label>
+            <input name="system.duration" type="text" value="{{item.system.duration}}" />
+        </div>
+        {{#unless (eq item.system.class "MagicalGift")}}
+        <div class="property-card">
+            <label>{{localize "WITCHER.Spell.Defence"}}</label>
+            <input name="system.defence" type="text" value="{{item.system.defence}}" />
+        </div>
+        {{/unless}}
+        {{#if (eq item.system.class "Witcher")}}
+        <div class="property-card">
+            <label>{{localize "WITCHER.Spell.Sign"}} {{localize "WITCHER.Spell.Type"}}</label>
+            <select name="system.domain">
+                {{selectOptions selects.domain selected=item.system.domain localize=true}}
+            </select>
+        </div>
         {{/if}}
     </div>
-    <div class="flex">
-        <div class="spell-template-damage">
-            <div>
-                <label>{{localize "WITCHER.Spell.CreateTemplate"}}</label>
-                <input type="checkbox" name="system.createTemplate" {{checked item.system.createTemplate}} />
-            </div>
-            <div>
-                <label>{{localize "WITCHER.Spell.Damage"}}</label>
-                <input type="checkbox" name="system.causeDamages" {{checked item.system.causeDamages}} />
-            </div>
-            <div>
-                <label>{{localize "WITCHER.Spell.createsShield"}}</label>
-                <input type="checkbox" name="system.createsShield" {{checked item.system.createsShield}} />
-            </div>
-            <div>
-                <label>{{localize "WITCHER.Spell.doesHeal"}}</label>
-                <input type="checkbox" name="system.doesHeal" {{checked item.system.doesHeal}} />
+
+    <div class="item-settings-grid">
+        <div class="settings-column">
+            <div class="section-title"><i class="fas fa-bullseye"></i> {{localize "WITCHER.Spell.CreateTemplate"}}</div>
+            <div class="checkbox-group">
+                 <label class="checkbox-row">
+                    <input type="checkbox" name="system.createTemplate" {{checked item.system.createTemplate}} />
+                    <span>{{localize "WITCHER.Spell.CreateTemplate"}}</span>
+                </label>
+                {{#if item.system.createTemplate}}
+                <div class="property-row">
+                    <label>{{localize "WITCHER.Spell.Size"}} (m)</label>
+                    <input type="text" name="system.templateSize" value="{{item.system.templateSize}}" />
+                </div>
+                <div class="property-row">
+                    <label>{{localize "WITCHER.Spell.Type"}}</label>
+                    <select name="system.templateType">
+                        {{selectOptions selects.templateType selected=item.system.templateType localize=true}}
+                    </select>
+                </div>
+                {{/if}}
             </div>
         </div>
-        <table class="item-table">
-            <tr>
-                {{#if (eq item.system.createTemplate true)}}
-                    <th>{{localize "WITCHER.Spell.Size"}} ({{localize "WITCHER.Spell.meters"}})</th>
-                    <th>{{localize "WITCHER.Spell.Type"}}</th>
-                    <th>{{localize "WITCHER.Spell.VisualEffectDuration"}}</th>
+
+        <div class="settings-column">
+            <div class="section-title"><i class="fas fa-fire"></i> {{localize "WITCHER.Item.Settings.settings"}}</div>
+            <div class="checkbox-group">
+                <label class="checkbox-row">
+                    <input type="checkbox" name="system.causeDamages" {{checked item.system.causeDamages}} />
+                    <span>{{localize "WITCHER.Spell.Damage"}}</span>
+                </label>
+                 {{#if item.system.causeDamages}}
+                <div class="property-row">
+                    <label>{{localize "WITCHER.Weapon.Short.Damage"}}</label>
+                    <input name="system.damage" type="text" value="{{#unless item.system.damage}}1d6+0{{else}}{{item.system.damage}}{{/unless}}" />
+                </div>
                 {{/if}}
-                {{#if (eq item.system.causeDamages true)}}
-                    <th>{{localize "WITCHER.Weapon.Short.Damage"}}</th>
+                <label class="checkbox-row">
+                    <input type="checkbox" name="system.createsShield" {{checked item.system.createsShield}} />
+                    <span>{{localize "WITCHER.Spell.createsShield"}}</span>
+                </label>
+                {{#if item.system.createsShield}}
+                <div class="property-row">
+                    <label>{{localize "WITCHER.Spell.Short.Shield"}}</label>
+                    <input name="system.shield" type="text" value="{{#unless item.system.shield}}1d6+0{{else}}{{item.system.shield}}{{/unless}}" />
+                </div>
                 {{/if}}
-                {{#if (eq item.system.createsShield true)}}
-                    <th>{{localize "WITCHER.Spell.Short.Shield"}}</th>
+                <label class="checkbox-row">
+                    <input type="checkbox" name="system.doesHeal" {{checked item.system.doesHeal}} />
+                    <span>{{localize "WITCHER.Spell.doesHeal"}}</span>
+                </label>
+                {{#if item.system.doesHeal}}
+                <div class="property-row">
+                    <label>{{localize "WITCHER.Spell.Short.Heal"}}</label>
+                    <input name="system.heal" type="text" value="{{#unless item.system.heal}}1d6+0{{else}}{{item.system.heal}}{{/unless}}" />
+                </div>
                 {{/if}}
-                {{#if (eq item.system.doesHeal true)}}
-                    <th>{{localize "WITCHER.Spell.Short.Heal"}}</th>
-                {{/if}}
-            </tr>
-            <tr>
-                {{#if (eq item.system.createTemplate true)}}
-                    <td>
-                        <input class="medium" placeholder="0" name="system.templateSize" type="text"
-                            value="{{item.system.templateSize}}" />
-                    </td>
-                    <td>
-                        <select name="system.templateType">
-                            {{selectOptions selects.templateType selected=item.system.templateType localize=true}}
-                        </select>
-                    </td>
-                    <td>
-                        <input class="medium" placeholder="0" name="system.visualEffectDuration" type="number"
-                            value="{{item.system.visualEffectDuration}}" />
-                    </td>
-                {{/if}}
-                {{#if (eq item.system.causeDamages true)}}
-                    <td>
-                        <input class="medium" name="system.damage" type="text"
-                            value="{{#unless item.system.damage}}1d6+0{{else}}{{item.system.damage}}{{/unless}}" />
-                    </td>
-                {{/if}}
-                {{#if (eq item.system.createsShield true)}}
-                    <td>
-                        <input class="medium" name="system.shield" type="text"
-                            value="{{#unless item.system.shield}}1d6+0{{else}}{{item.system.shield}}{{/unless}}" />
-                    </td>
-                {{/if}}
-                {{#if (eq item.system.doesHeal true)}}
-                    <td>
-                        <input class="medium" name="system.heal" type="text"
-                            value="{{#unless item.system.heal}}1d6+0{{else}}{{item.system.heal}}{{/unless}}" />
-                    </td>
-                {{/if}}
-            </tr>
-        </table>
+            </div>
+        </div>
     </div>
 </section>
+

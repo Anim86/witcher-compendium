@@ -1,0 +1,142 @@
+{
+    "name": "Succube & Incubo",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/MOSTRI/placeholder.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "ref": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "dex": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "body": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "spd": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "emp": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "cra": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "will": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 0
+            },
+            "atletica": {
+                "value": 0
+            },
+            "camuffamento": {
+                "value": 0
+            },
+            "carisma": {
+                "value": 0
+            },
+            "coraggio": {
+                "value": 0
+            },
+            "intimidire": {
+                "value": 0
+            },
+            "nascondersi": {
+                "value": 0
+            },
+            "persuasione": {
+                "value": 0
+            },
+            "prestanza": {
+                "value": 0
+            },
+            "rapiditàDiMano": {
+                "value": 0
+            },
+            "resistereACoercizione": {
+                "value": 0
+            },
+            "resistereAllaMagia": {
+                "value": 0
+            },
+            "rissa": {
+                "value": 0
+            },
+            "seduzione": {
+                "value": 0
+            },
+            "sopravvivenza": {
+                "value": 0
+            },
+            "tempra": {
+                "value": 0
+            }
+        },
+        "details": {
+            "biography": "<p>Eh, ho avuto il piacere di incontrare un paio di volte una succube. Mai a letto, ovviamente! Penso che le succubi non siano troppo male. Una volta ci ho avuto una bella conversazione. Onestamente, a volte le preferisco agli umani, eh! La verità è che hanno bisogno di dormire con certa gente e… assorbirne la forza vitale, immagino. Ho sentito che molti di quei ‘fortunati’ non vedono il mattino dopo. – Rodolf Kazmer</p>",
+            "threat": "Medio Semplice",
+            "reward": 400
+        },
+        "derivedStats": {
+            "health": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "stamina": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "rec": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "stun": {
+                "value": 0,
+                "max": 0
+            },
+            "woundTreshold": {
+                "value": 0,
+                "max": 0
+            }
+        },
+        "description": "<p>Nonostante le superstizioni, le succubi non sono demoni, ma appartengono a una tipologia di mostri diversa. Pur nutrendosi di cibo e bevande, la loro lussuria è insaziabile e le porta a cercare i piaceri della carne. La loro forza sovrumana può però essere fatale per i partner sfiancati. I maschi della specie, detti incubi, sono rari e appaiono, si dice, durante la festa di Saovine.</p><p>'Succubi e incubi sono gli ibridi con cui è più facile negoziare. Sono senzienti e condividono molti desideri e impulsi umani. Ciò detto, conosco numerosi witcher che hanno avuto incidenti ‘ecci- tanti’ duranti simili trattative.' – Erland di Larvik</p>",
+        "sourcebook": "DW 60"
+    },
+    "items": [],
+    "_id": "7ed094f23185bc6a",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

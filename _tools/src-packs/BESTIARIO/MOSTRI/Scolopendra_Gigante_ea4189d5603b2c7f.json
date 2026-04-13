@@ -1,0 +1,124 @@
+{
+    "name": "Scolopendra Gigante",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/MOSTRI/placeholder.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "ref": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "dex": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "body": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "spd": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "emp": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "cra": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "will": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 0
+            },
+            "atletica": {
+                "value": 0
+            },
+            "coraggio": {
+                "value": 0
+            },
+            "intimidire": {
+                "value": 0
+            },
+            "nascondersi": {
+                "value": 0
+            },
+            "prestanza": {
+                "value": 0
+            },
+            "resistereAllaMagia": {
+                "value": 0
+            },
+            "rissa": {
+                "value": 0
+            },
+            "sopravvivenza": {
+                "value": 0
+            },
+            "tempra": {
+                "value": 0
+            }
+        },
+        "details": {
+            "biography": "<p>Ugh, non so se odio di più le endriaghe o le scolopendre giganti. Sono sempre grossi insetti che girano in gruppo e tendono imboscate. Almeno le scolopendre hanno un ventre molle dove piazzare un dardo; ma almeno con le endriaghe, se gli arrivi addosso, non devi preoccuparti che si infilino nel terreno e ti sbuchino alle spalle. – Rodolf Kazmer</p>",
+            "threat": "Facile Complesso",
+            "reward": 20
+        },
+        "derivedStats": {
+            "health": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "stamina": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "rec": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "stun": {
+                "value": 0,
+                "max": 0
+            },
+            "woundTreshold": {
+                "value": 0,
+                "max": 0
+            }
+        },
+        "description": "<p>Le scolopendre giganti sono creature ferali e cieche, che percepiscono anche la minima vi- brazione del suolo. Usano questa capacità per tendere imboscate, restando sepolte finché non sentono dei passi. In combattimento mordono gli avversari vicini e sputano acido verso quelli più lontani. Hanno il ventre morbido e vulnerabile, ma se attaccate si raggomitolano immediatamente per proteggersi, sferrando colpi rapidi tutto intorno.</p>",
+        "sourcebook": "DW 70"
+    },
+    "items": [],
+    "_id": "ea4189d5603b2c7f",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

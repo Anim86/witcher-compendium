@@ -1,20 +1,20 @@
 {
-  "name": "San Gregory",
-  "type": "note",
-  "system": {
-    "category": "religione",
-    "description": "<p>San Gregory è una figura leggendaria venerata dai fedeli del Nord, in particolare nel culto di Kreve. È ricordato per la sua straordinaria carità e devozione.</p><p>Secondo la leggenda, usò metà del suo enorme patrimonio personale per acquistare cibo a Nazair durante una terribile carestia, salvando Novigrad dalla fame. Rappresenta l'ideale di altruismo che i sacerdoti di Kreve cercano (spesso invano) di promuovere tra i sovrani.</p>",
-    "sourcebook": "MB 207"
-  },
-  "img": "icons/svg/book.svg",
-  "effects": [],
-  "flags": {},
-  "_stats": {
-    "systemId": "TheWitcherItaNewSystem",
-    "coreVersion": 14,
-    "createdTime": 1712760000000,
-    "modifiedTime": 1712760000000,
-    "lastModifiedBy": "antigravity"
-  },
-  "_id": "lore039sangre"
+    "name": "San Gregory",
+    "type": "note",
+    "system": {
+        "category": "religione",
+        "description": "<p>San Gregory è una figura leggendaria venerata dai fedeli del Nord, in particolare nel culto di Kreve. È ricordato per la sua straordinaria carità e devozione.</p><p>Secondo la leggenda, usò metà del suo enorme patrimonio personale per acquistare cibo a Nazair durante una terribile carestia, salvando Novigrad dalla fame. Rappresenta l'ideale di altruismo che i sacerdoti di Kreve cercano (spesso invano) di promuovere tra i sovrani.</p>",
+        "sourcebook": "MB 207"
+    },
+    "img": "modules/witcher-compendium/assets/LORE/base/witcher-lore/book.svg",
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14,
+        "createdTime": 1712760000000,
+        "modifiedTime": 1712760000000,
+        "lastModifiedBy": "antigravity"
+    },
+    "_id": "lore039sangre"
 }

@@ -1,0 +1,70 @@
+{
+    "_id": "7a8b9c0d1e2f3a4b",
+    "name": "Arco Lunare",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/base/witcher-weapons/Placeholder.webp",
+    "system": {
+        "description": "<p>Arco Longo Reliquia. Creato dall'elfa Aderyn (Custode delle Selve) con il dono della Dama dei Campi. È progettato per dare pace agli spettri.</p><p><strong>Statistiche:</strong> 8d6+2 DAN, 200m Gittata, Congelamento (75%), Bilanciato, +3 Danni vs Spettri. 3 Slot.</p>",
+        "quantity": "1",
+        "weight": 2,
+        "cost": 0,
+        "sourcebook": "MB 257",
+        "class": "simple",
+        "category": "relic",
+        "damage": "8d6+2",
+        "damageType": "piercing",
+        "reliability": {
+            "value": 10,
+            "max": 10
+        },
+        "hands": "2",
+        "range": "Arco Lungo",
+        "enhancementSlots": 3,
+        "isMeteorite": false,
+        "damageProperties": {
+            "effects": [
+                {
+                    "id": "001e6dd8490bb9b8",
+                    "name": "congelamento",
+                    "statusEffect": null,
+                    "percentage": 75,
+                    "varEffect": false
+                },
+                {
+                    "id": "0063f128f08e0f78",
+                    "name": "bilanciata",
+                    "statusEffect": null,
+                    "percentage": 100,
+                    "varEffect": false
+                },
+                {
+                    "id": "00096996bd60b4b7",
+                    "name": "+3 Danni contro gli Spettri",
+                    "statusEffect": null,
+                    "percentage": 100,
+                    "varEffect": false
+                }
+            ],
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "accuracy": 1,
+        "type": {
+            "text": "",
+            "slashing": false,
+            "piercing": true,
+            "bludgeoning": false,
+            "elemental": false
+        }
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

@@ -1,20 +1,20 @@
 {
-  "name": "Luoghi di Potere",
-  "type": "note",
-  "system": {
-    "category": "luogo",
-    "description": "<p>I Luoghi di Potere sono potenti rovine magiche lasciate dagli antichi stregoni elfici, costruite sopra incroci di linee magiche (linee ley). Chi è ricettivo alla magia può concentrarsi in questi luoghi per attingere all'energia elementale.</p><p>Esistono luoghi legati ad Aria, Acqua, Terra e Fuoco, situati dove l'elemento corrispondente è più forte. Utilizzare un Luogo di Potere conferisce bonus temporanei al Vigore e alla potenza magica, ma abusarne è estremamente pericoloso e può causare danni fisici e mentali.</p>",
-    "sourcebook": "MB 122"
-  },
-  "img": "icons/svg/book.svg",
-  "effects": [],
-  "flags": {},
-  "_stats": {
-    "systemId": "TheWitcherItaNewSystem",
-    "coreVersion": 14,
-    "createdTime": 1712760000000,
-    "modifiedTime": 1712760000000,
-    "lastModifiedBy": "antigravity"
-  },
-  "_id": "lore026luopót"
+    "name": "Luoghi di Potere",
+    "type": "note",
+    "system": {
+        "category": "luogo",
+        "description": "<p>I Luoghi di Potere sono potenti rovine magiche lasciate dagli antichi stregoni elfici, costruite sopra incroci di linee magiche (linee ley). Chi è ricettivo alla magia può concentrarsi in questi luoghi per attingere all'energia elementale.</p><p>Esistono luoghi legati ad Aria, Acqua, Terra e Fuoco, situati dove l'elemento corrispondente è più forte. Utilizzare un Luogo di Potere conferisce bonus temporanei al Vigore e alla potenza magica, ma abusarne è estremamente pericoloso e può causare danni fisici e mentali.</p>",
+        "sourcebook": "MB 122"
+    },
+    "img": "modules/witcher-compendium/assets/LORE/base/witcher-lore/book.svg",
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14,
+        "createdTime": 1712760000000,
+        "modifiedTime": 1712760000000,
+        "lastModifiedBy": "antigravity"
+    },
+    "_id": "lore026luopót"
 }

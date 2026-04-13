@@ -1,20 +1,20 @@
 {
-  "name": "Redania",
-  "type": "note",
-  "system": {
-    "category": "regno",
-    "description": "<p>La Redania è la potenza commerciale del Nord, controllando Novigrad e il delta del Pontar. Re Sambuk controllava originariamente quest'area, ma fu suo nipote Radovid I, detto il Grande, a stabilire le basi del paese moderno.</p><p>Radovid, per scaramuccia verso il fratello Troydan, gli concesse il dominio della lontana e fredda provincia di Kovir, ignorando che nascondesse vasti giacimenti d'oro e dimeritium.</p>",
-    "sourcebook": "MB 180"
-  },
-  "img": "icons/svg/book.svg",
-  "effects": [],
-  "flags": {},
-  "_stats": {
-    "systemId": "TheWitcherItaNewSystem",
-    "coreVersion": 14,
-    "createdTime": 1712760000000,
-    "modifiedTime": 1712760000000,
-    "lastModifiedBy": "antigravity"
-  },
-  "_id": "lore002redania"
+    "name": "Redania",
+    "type": "note",
+    "system": {
+        "category": "regno",
+        "description": "<p>La Redania è la potenza commerciale del Nord, controllando Novigrad e il delta del Pontar. Re Sambuk controllava originariamente quest'area, ma fu suo nipote Radovid I, detto il Grande, a stabilire le basi del paese moderno.</p><p>Radovid, per scaramuccia verso il fratello Troydan, gli concesse il dominio della lontana e fredda provincia di Kovir, ignorando che nascondesse vasti giacimenti d'oro e dimeritium.</p>",
+        "sourcebook": "MB 180"
+    },
+    "img": "modules/witcher-compendium/assets/LORE/base/witcher-lore/book.svg",
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14,
+        "createdTime": 1712760000000,
+        "modifiedTime": 1712760000000,
+        "lastModifiedBy": "antigravity"
+    },
+    "_id": "lore002redania"
 }

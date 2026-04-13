@@ -1,0 +1,121 @@
+{
+    "name": "Elementale di Terra",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/MOSTRI/placeholder.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "ref": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "dex": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "body": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "spd": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "emp": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "cra": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "will": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 0
+            },
+            "atletica": {
+                "value": 0
+            },
+            "intimidire": {
+                "value": 0
+            },
+            "nascondersi": {
+                "value": 0
+            },
+            "prestanza": {
+                "value": 0
+            },
+            "resistereAllaMagia": {
+                "value": 0
+            },
+            "rissa": {
+                "value": 0
+            },
+            "sopravvivenza": {
+                "value": 0
+            },
+            "tempra": {
+                "value": 0
+            }
+        },
+        "details": {
+            "biography": "<p>Un elementale di terra è un grumo di magia della terra che indossa pezzi di roccia come armatura. Non sono proprio furbi. Ho sentito che controllano il terreno e possono creare spuntoni di roccia, muri e altre robe simili! Non penso proverei a piantare qualcosa nel corpo di un simile bestione se dovesse capitare! – Rodolf Kazmer</p>",
+            "threat": "Difficile Complesso",
+            "reward": 1500
+        },
+        "derivedStats": {
+            "health": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "stamina": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "rec": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "stun": {
+                "value": 0,
+                "max": 0
+            },
+            "woundTreshold": {
+                "value": 0,
+                "max": 0
+            }
+        },
+        "description": "<p>Gli elementali di terra sono i costrutti che si incontrano più facilmente al servizio dei maghi, ma possono apparire spontaneamente vicino a luoghi di potere. Essendo fatti di roccia sono corazzati e i loro pugni possono schiacciare facilmente una persona. Compensano la loro lentezza colpendo il terreno per scagliare grosse schegge di roccia o creando anelli difensivi e muri intorno a sé.</p><p>“L'ultima volta che affrontai un elementale di terra fu nelle pro- fondità di una rovina elfica a Verden. Scoprii che il silvano che stavo cacciando conosceva le difese delle rovine meglio di me.” – Erland di Larvik</p>",
+        "sourcebook": "DW 80"
+    },
+    "items": [],
+    "_id": "279c64d03ebf1a85",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

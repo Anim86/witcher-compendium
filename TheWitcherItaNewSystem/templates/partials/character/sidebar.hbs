@@ -2,152 +2,167 @@
     <div class="char-image">
         <img class='witcher-actor-img' src='{{actor.img}}' alt="actor image" data-action="editImage" data-edit='img'
             title='{{actor.name}}' />
+        <div class="encumbrance-indicator {{#if (gt system.derivedStats.enc.value system.derivedStats.enc.max)}}overweight{{/if}}" 
+             data-tooltip="{{localize 'WITCHER.Actor.DerStat.Enc'}}">
+            <i class="fa-solid fa-weight-hanging"></i>
+            <span>{{system.derivedStats.enc.value}}/{{system.derivedStats.enc.max}}</span>
+        </div>
         <div class='wound-state' data-tooltip="{{localize 'WITCHER.Actor.woundState'}}">
             {{#if (gte system.derivedStats.hp.value system.derivedStats.hp.unmodifiedMax)}}
-                <i class='fa-solid fa-heart' style='color: green;'></i>
+                <i class='fa-solid fa-heart' style='color: #2ecc71;'></i>
             {{else if (gte system.derivedStats.hp.value system.derivedStats.woundTreshold.value)}}
-                <i class='fa-solid fa-heart-crack' style='color: green;'></i>
+                <i class='fa-solid fa-heart-crack' style='color: #2ecc71;'></i>
             {{else}}
-                <i class='fa-solid fa-heart-crack' style='color: orange;'></i>
+                <i class='fa-solid fa-heart-crack' style='color: #e67e22;'></i>
             {{/if}}
         </div>
     </div>
+
     <div class='status-section'>
-        <div class='progress-container'>
-            <h3 class="progress-header hp">{{localize 'WITCHER.Actor.Hp'}}</h3>
-            <progress class='hp-bar' value='{{system.derivedStats.hp.value}}'
-                max='{{system.derivedStats.hp.max}}'></progress>
-            <h3 class='progress-text'>
-                <input class='progress-input' name='system.derivedStats.hp.value' type='number'
-                    value='{{system.derivedStats.hp.value}}' max='99' placeholder='0' data-dtype='Number' />
+        {{!-- HP --}}
+        <div class='progress-container hp'>
+            <div class="progress-header">
+                <i class="fa-solid fa-heart"></i>
+                <span>{{localize 'WITCHER.Actor.Hp'}}</span>
+            </div>
+            <progress class='hp-bar' value='{{system.derivedStats.hp.value}}' max='{{system.derivedStats.hp.max}}'></progress>
+            <div class='progress-text'>
+                <input class='progress-input' name='system.derivedStats.hp.value' type='number' value='{{system.derivedStats.hp.value}}' data-dtype='Number' />
                 {{#if (gte system.combatEffects.temporaryEffects.temporaryHpSum 1)}}
-                    <span> + {{system.combatEffects.temporaryEffects.temporaryHpSum}}</span>
+                    <span class="temp-hp">+ {{system.combatEffects.temporaryEffects.temporaryHpSum}}</span>
                 {{/if}}
-                <span>|</span>
+                <span class="sep">/</span>
                 <span class='progress-total'>{{system.derivedStats.hp.max}}</span>
-            </h3>
+            </div>
         </div>
-        <div class='progress-container'>
-            <h3 class="progress-header stamina">{{localize 'WITCHER.Actor.Stamina'}}</h3>
-            <progress class='sta-bar' value='{{system.derivedStats.sta.value}}'
-                max='{{system.derivedStats.sta.max}}'></progress>
-            <h3 class='progress-text'>
-                <input class='progress-input' name='system.derivedStats.sta.value' type='number'
-                    value='{{system.derivedStats.sta.value}}' max='99' placeholder='0' data-dtype='Number' />
-                <span>|</span>
+
+        {{!-- Stamina --}}
+        <div class='progress-container stamina'>
+            <div class="progress-header">
+                <i class="fa-solid fa-bolt"></i>
+                <span>{{localize 'WITCHER.Actor.Stamina'}}</span>
+            </div>
+            <progress class='sta-bar' value='{{system.derivedStats.sta.value}}' max='{{system.derivedStats.sta.max}}'></progress>
+            <div class='progress-text'>
+                <input class='progress-input' name='system.derivedStats.sta.value' type='number' value='{{system.derivedStats.sta.value}}' data-dtype='Number' />
+                <span class="sep">/</span>
                 <span class='progress-total'>{{system.derivedStats.sta.max}}</span>
-            </h3>
+            </div>
         </div>
-        <div class='progress-container'>
-            <h3 class="progress-header toxicity">{{localize 'WITCHER.Actor.Stat.Toxicity'}}</h3>
-            <progress class='toxicity-bar' value='{{system.stats.toxicity.value}}'
-                max='{{system.stats.toxicity.max}}'></progress>
-            <h3 class='progress-text'>
-                <input class='progress-input' name='system.stats.toxicity.value' type='number'
-                    value='{{system.stats.toxicity.value}}' max='{{system.stats.toxicity.max}}' placeholder='0'
-                    data-dtype='Number' />
-                <span>|</span>
+
+        {{!-- Toxicity --}}
+        <div class='progress-container toxicity'>
+            <div class="progress-header">
+                <i class="fa-solid fa-skull-crossbones"></i>
+                <span>{{localize 'WITCHER.Actor.Stat.Toxicity'}}</span>
+            </div>
+            <progress class='toxicity-bar' value='{{system.stats.toxicity.value}}' max='{{system.stats.toxicity.max}}'></progress>
+            <div class='progress-text'>
+                <input class='progress-input' name='system.stats.toxicity.value' type='number' value='{{system.stats.toxicity.value}}' data-dtype='Number' />
+                <span class="sep">/</span>
                 <span class='progress-total'>{{system.stats.toxicity.max}}</span>
-            </h3>
+            </div>
         </div>
-        <div class='progress-container'>
-            <h3 class="progress-header focus">{{localize system.derivedStats.focus.label}}</h3>
-            <progress class='focus-bar' value='{{system.derivedStats.focus.value}}'
-                max='{{system.derivedStats.focus.max}}'></progress>
-            <h3 class='progress-text'>
-                <input class='progress-input' name='system.derivedStats.focus.value' type='number'
-                    value='{{system.derivedStats.focus.value}}' max='{{system.derivedStats.focus.max}}' placeholder='0'
-                    data-dtype='Number' />
-                <span>|</span>
+
+        {{!-- Focus --}}
+        <div class='progress-container focus'>
+            <div class="progress-header">
+                <i class="fa-solid fa-eye"></i>
+                <span>{{localize system.derivedStats.focus.label}}</span>
+            </div>
+            <progress class='focus-bar' value='{{system.derivedStats.focus.value}}' max='{{system.derivedStats.focus.max}}'></progress>
+            <div class='progress-text'>
+                <input class='progress-input' name='system.derivedStats.focus.value' type='number' value='{{system.derivedStats.focus.value}}' data-dtype='Number' />
+                <span class="sep">/</span>
                 <span class='progress-total'>{{system.derivedStats.focus.max}}</span>
-            </h3>
+            </div>
         </div>
+
+        {{!-- Resolve --}}
         {{#if useVerbalCombat}}
-            <div class='progress-container'>
-                <h3 class="progress-header resolve">{{localize system.derivedStats.resolve.label}}</h3>
-                <progress class='resolve-bar' value='{{system.derivedStats.resolve.value}}'
-                    max='{{system.derivedStats.resolve.max}}'></progress>
-                <h3 class='progress-text'>
-                    <input class='progress-input' name='system.derivedStats.resolve.value' type='number'
-                        value='{{system.derivedStats.resolve.value}}' max='{{system.derivedStats.resolve.max}}'
-                        placeholder='0' data-dtype='Number' />
-                    <span>|</span>
+            <div class='progress-container resolve'>
+                <div class="progress-header">
+                    <i class="fa-solid fa-shield-heart"></i>
+                    <span>{{localize system.derivedStats.resolve.label}}</span>
+                </div>
+                <progress class='resolve-bar' value='{{system.derivedStats.resolve.value}}' max='{{system.derivedStats.resolve.max}}'></progress>
+                <div class='progress-text'>
+                    <input class='progress-input' name='system.derivedStats.resolve.value' type='number' value='{{system.derivedStats.resolve.value}}' data-dtype='Number' />
+                    <span class="sep">/</span>
                     <span class='progress-total'>{{system.derivedStats.resolve.max}}</span>
-                </h3>
+                </div>
             </div>
         {{/if}}
     </div>
+
     <div class="optional-stats-section">
-        <div class='optional-stat vigor-display'>
-            <div class='optional-name'>
-                <i class='fa-solid fa-circle-notch optional-icon'></i>
-                <span class=''>{{localize 'WITCHER.Actor.DerStat.Vigor'}}</span>
+        {{!-- Vigor --}}
+        <div class='side-stat-card vigor-display'>
+             <div class='card-label'>
+                <i class='fa-solid fa-circle-notch'></i>
+                <span>{{localize 'WITCHER.Actor.DerStat.Vigor'}}</span>
             </div>
-            <div class='optional-info'>
+            <div class='card-value'>
                 <h3>{{system.derivedStats.vigor.max}}</h3>
             </div>
         </div>
-        <div class='optional-stat shield-display'>
-            <div class='optional-name'>
+
+        {{!-- Shield --}}
+        <div class='side-stat-card shield-display'>
+             <div class='card-label'>
                 <i class='fa-solid fa-shield-halved'></i>
-                <span class=''>{{localize 'WITCHER.Actor.Shield'}}</span>
+                <span>{{localize 'WITCHER.Actor.Shield'}}</span>
             </div>
-            <div class='optional-info'>
-                <h3>
-                    <input class='small' type='number' name='system.derivedStats.shield.value'
-                        value='{{system.derivedStats.shield.value}}' data-dtype='Number' />
-                </h3>
+            <div class='card-value'>
+               <input type='number' name='system.derivedStats.shield.value' value='{{system.derivedStats.shield.value}}' data-dtype='Number' />
             </div>
         </div>
-        <div class='optional-stat luck-display'>
-            <div class='optional-name'>
+
+        {{!-- Luck --}}
+        <div class='side-stat-card luck-display'>
+             <div class='card-label'>
                 <i class='fa-solid fa-clover'></i>
-                <span class=''>{{localize 'WITCHER.StLuck'}}</span>
+                <span>{{localize 'WITCHER.StLuck'}}</span>
             </div>
-            <div class='optional-info'>
-                <a class='optional-buttons luck-minus'><i class='fa-solid fa-minus'></i></a>
-                <h3>
-                    <input class='small' type='number' name='system.stats.luck.value'
-                        value='{{system.stats.luck.value}}' data-dtype='Number' />
-                </h3>
-                <a class='optional-buttons luck-reset'><i class='fa-solid fa-rotate-left'></i></a>
+            <div class='card-actions'>
+                <a class='luck-minus' data-tooltip="{{localize 'WITCHER.Button.Decrease'}}"><i class='fa-solid fa-minus'></i></a>
+                <input type='number' name='system.stats.luck.value' value='{{system.stats.luck.value}}' data-dtype='Number' />
+                <a class='luck-reset' data-tooltip="{{localize 'WITCHER.Button.Reset'}}"><i class='fa-solid fa-rotate-left'></i></a>
             </div>
         </div>
+
+        {{!-- Adrenaline --}}
         {{#if useAdrenaline}}
-            <div class='optional-stat adrenaline-display'>
-                <div class='optional-name'>
+            <div class='side-stat-card adrenaline-display'>
+                 <div class='card-label'>
                     <i class='fa-solid fa-burst'></i>
-                    <span class=''>{{localize 'WITCHER.Actor.Adrenaline'}}</span>
+                    <span>{{localize 'WITCHER.Actor.Adrenaline'}}</span>
                 </div>
-                <div class='optional-info'>
-                    <a class='optional-buttons adrenaline-minus'><i class='fa-solid fa-minus'></i></a>
-                    <h3>
-                        <input class='small' type='number' name='system.adrenaline.value'
-                            value='{{system.adrenaline.value}}' data-dtype='Number' />
-                    </h3>
-                    <a class='optional-buttons adrenaline-plus'><i class='fa-solid fa-plus'></i></a>
+                <div class='card-actions'>
+                    <a class='adrenaline-minus' data-tooltip="{{localize 'WITCHER.Button.Decrease'}}"><i class='fa-solid fa-minus'></i></a>
+                    <input type='number' name='system.adrenaline.value' value='{{system.adrenaline.value}}' data-dtype='Number' />
+                    <a class='adrenaline-plus' data-tooltip="{{localize 'WITCHER.Button.Increase'}}"><i class='fa-solid fa-plus'></i></a>
                 </div>
             </div>
         {{/if}}
-        <div class='char-resource-modifier'>
+
+        <div class='char-resource-modifier modern-details'>
             <details>
                 <summary>
+                    <i class="fa-solid fa-sliders"></i>
                     <span>{{localize 'WITCHER.Resources.modifiers'}}</span>
                 </summary>
-                <div class='resource-modifiers'>
+                <div class='resource-modifiers-list'>
                     {{#each system.derivedStats as |details derivedStats|}}
                         {{#unless (eq derivedStats 'vigor')}}
                             {{#if details.modifiers}}
-                                <div class='stat-display' data-type='derivedStat' data-stat='{{derivedStats}}'>
-                                    <div class='flex'><label>{{localize details.label}} </label></div>
+                                <div class='modifier-group'>
+                                    <label>{{localize details.label}}</label>
                                     {{#each details.modifiers as |modifier value|}}
-                                        <div class='list-modifiers' data-id='{{modifier.id}}'>
-                                            <input class='medium list-mod-edit' data-field='name' type='text'
-                                                value='{{modifier.name}}' />
-                                            <input class='small list-mod-edit' data-field='value' type='number'
-                                                value='{{modifier.value}}' />
-                                            <a class='delete-stat'><i class='fas fa-trash-alt'
-                                                    data-id='{{modifier.id}}'></i></a>
+                                        <div class='mod-row' data-id='{{modifier.id}}'>
+                                            <input class='mod-name' data-field='name' type='text' value='{{modifier.name}}' />
+                                            <input class='mod-val' data-field='value' type='number' value='{{modifier.value}}' />
+                                            <a class='delete-stat' data-tooltip="{{localize 'WITCHER.Button.Delete'}}"><i class='fas fa-trash-alt' data-id='{{modifier.id}}'></i></a>
                                         </div>
                                     {{/each}}
                                 </div>
@@ -158,4 +173,4 @@
             </details>
         </div>
     </div>
-</div>
+</div>

@@ -1,0 +1,110 @@
+{
+    "_id": "ec4te28ge93kxzy1",
+    "name": "Francine Marchand",
+    "type": "character",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/PNG/placeholder.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 0,
+                "max": 0
+            },
+            "ref": {
+                "value": 0,
+                "max": 0
+            },
+            "dex": {
+                "value": 0,
+                "max": 0
+            },
+            "body": {
+                "value": 0,
+                "max": 0
+            },
+            "spd": {
+                "value": 0,
+                "max": 0
+            },
+            "emp": {
+                "value": 0,
+                "max": 0
+            },
+            "cra": {
+                "value": 0,
+                "max": 0
+            },
+            "will": {
+                "value": 0,
+                "max": 0
+            },
+            "luck": {
+                "value": 0,
+                "max": 0
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 0
+            },
+            "atletica": {
+                "value": 0
+            },
+            "belleArti": {
+                "value": 0
+            },
+            "cavalcare": {
+                "value": 0
+            },
+            "commercio": {
+                "value": 0
+            },
+            "coraggio": {
+                "value": 0
+            },
+            "eleganza": {
+                "value": 0
+            },
+            "eludere": {
+                "value": 0
+            },
+            "etichetta": {
+                "value": 0
+            },
+            "istruzione": {
+                "value": 0
+            }
+        },
+        "details": {
+            "biography": "<p>Unica figlia di un ricco mercante di Toussaint, Francine è vittima di una terribile maledizione che ha trasformato i suoi capelli in una forza maligna senziente. Vive prigioniera nella Torre di Roger da due anni, sopravvivendo in condizioni miserevoli.</p>",
+            "threat": "Facile",
+            "reward": 0
+        },
+        "derivedStats": {
+            "health": {
+                "value": 0,
+                "max": 0
+            },
+            "stamina": {
+                "value": 0,
+                "max": 0
+            },
+            "rec": {
+                "value": 0,
+                "max": 0
+            },
+            "stun": {
+                "value": 0
+            },
+            "woundTreshold": {
+                "value": 0
+            }
+        },
+        "description": "<p>Unica figlia di un ricco mercante di Toussaint, Francine è vittima di una terribile maledizione che ha trasformato i suoi capelli in una forza maligna senziente.</p>",
+        "sourcebook": "LR 147"
+    },
+    "items": [],
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

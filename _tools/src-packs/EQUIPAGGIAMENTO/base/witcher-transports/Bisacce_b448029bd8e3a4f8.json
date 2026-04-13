@@ -1,17 +1,17 @@
-﻿{
-    "name":  "Bisacce",
-    "_id":  "b448029bd8e3a4f8",
-    "system":  {
-                   "weight":  1.5,
-                   "description":  "\u003cp\u003eRobuste borse da sella per il trasporto di oggetti personali o provviste.\u003c/p\u003e",
-                   "quantity":  1,
-                   "cost":  100,
-                   "sourcebook":  "MB 93"
-               },
-    "type":  "item",
-    "img":  "icons/svg/item-bag.svg",
-    "_stats":  {
-                   "coreVersion":  14,
-                   "systemId": "TheWitcherItaNewSystem"
-               }
+{
+    "name": "Bisacce",
+    "_id": "b448029bd8e3a4f8",
+    "system": {
+        "weight": 1.5,
+        "description": "<p>Robuste borse da sella per il trasporto di oggetti personali o provviste.</p>",
+        "quantity": 1,
+        "cost": 100,
+        "sourcebook": "MB 93"
+    },
+    "type": "item",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/base/witcher-transports/item-bag.svg",
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
 }

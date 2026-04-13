@@ -1,0 +1,134 @@
+{
+    "_id": "os69cw31143304up",
+    "name": "Hym",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/MOSTRI/placeholder.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 0,
+                "max": 0
+            },
+            "ref": {
+                "value": 0,
+                "max": 0
+            },
+            "dex": {
+                "value": 0,
+                "max": 0
+            },
+            "body": {
+                "value": 0,
+                "max": 0
+            },
+            "spd": {
+                "value": 0,
+                "max": 0
+            },
+            "emp": {
+                "value": 0,
+                "max": 0
+            },
+            "cra": {
+                "value": 0,
+                "max": 0
+            },
+            "will": {
+                "value": 0,
+                "max": 0
+            },
+            "luck": {
+                "value": 0,
+                "max": 0
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 0
+            },
+            "atletica": {
+                "value": 0
+            },
+            "coraggio": {
+                "value": 0
+            },
+            "eludere": {
+                "value": 0
+            },
+            "intimidire": {
+                "value": 0
+            },
+            "nascondersi": {
+                "value": 0
+            },
+            "resistereAllaMagia": {
+                "value": 0
+            },
+            "sopravvivenza": {
+                "value": 0
+            },
+            "tempra": {
+                "value": 0
+            }
+        },
+        "details": {
+            "biography": "<p>L'Hym è un terribile spettro che si nutre della colpa e del rimorso delle sue vittime. Appare come un'ombra antropomorfa, spesso con corna e lunghi artigli, che infesta la casa di colui che ha commesso un terribile peccato.</p>",
+            "threat": "Medio",
+            "reward": 800
+        },
+        "derivedStats": {
+            "health": {
+                "value": 0,
+                "max": 0
+            },
+            "stamina": {
+                "value": 0,
+                "max": 0
+            },
+            "rec": {
+                "value": 0,
+                "max": 0
+            },
+            "stun": {
+                "value": 0
+            },
+            "woundTreshold": {
+                "value": 0
+            }
+        },
+        "description": "<p>L'Hym è un terribile spettro che si nutre della colpa e del rimorso delle sue vittime. Appare come un'ombra antropomorfa, spesso con corna e lunghi artigli, che infesta la casa di colui che ha commesso un terribile peccato.</p>",
+        "sourcebook": "DJ 28"
+    },
+    "items": [
+        {
+            "name": "Artigli d'Ombra",
+            "type": "weapon",
+            "img": "icons/svg/sword.svg",
+            "system": {
+                "damage": "4d6",
+                "accuracy": 0,
+                "effects": "Sanguinamento (100%), Vacillante (25%)"
+            }
+        },
+        {
+            "name": "[Capacità] Nutrirsi di Colpa",
+            "type": "note",
+            "img": "icons/svg/book.svg",
+            "system": {
+                "description": "<p>L'Hym recupera 5 Punti Salute ogni volta che la sua vittima prova rimorso o colpa intensa durante il suo turno.</p>"
+            }
+        },
+        {
+            "name": "[Capacità] Incorporeo",
+            "type": "note",
+            "img": "icons/svg/book.svg",
+            "system": {
+                "description": "<p>L'Hym subisce solo metà danni dagli attacchi fisici non magici. Gli attacchi d'argento e magici infliggono danni normali.</p>"
+            }
+        }
+    ],
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

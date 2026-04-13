@@ -13,10 +13,26 @@
             "max": 10
         },
         "accuracy": 1,
-        "hands": 1,
+        "hands": "1",
         "reach": "N/A",
         "effects": "N/A",
-        "sourcebook": "MB 75"
+        "sourcebook": "MB 75",
+        "type": {
+            "text": "",
+            "slashing": true,
+            "piercing": true,
+            "bludgeoning": false,
+            "elemental": false
+        },
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "isMeteorite": false,
+            "isNonLethal": false,
+            "effects": []
+        }
     },
     "effects": [],
     "folder": null,

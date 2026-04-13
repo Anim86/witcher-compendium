@@ -1,17 +1,17 @@
-﻿{
-    "name":  "Mulo",
-    "_id":  "a2528405116aa117",
-    "system":  {
-                   "weight":  150,
-                   "description":  "\u003cp\u003eTestardo ma infaticabile, il mulo Ã¨ eccellente per trasportare carichi in territori montuosi o impervi.\u003c/p\u003e",
-                   "quantity":  1,
-                   "cost":  200,
-                   "sourcebook":  "MB 93"
-               },
-    "type":  "item",
-    "img":  "icons/svg/item-bag.svg",
-    "_stats":  {
-                   "coreVersion":  14,
-                   "systemId": "TheWitcherItaNewSystem"
-               }
+{
+    "name": "Mulo",
+    "_id": "a2528405116aa117",
+    "system": {
+        "weight": 150,
+        "description": "<p>Testardo ma infaticabile, il mulo Ã¨ eccellente per trasportare carichi in territori montuosi o impervi.</p>",
+        "quantity": 1,
+        "cost": 200,
+        "sourcebook": "MB 93"
+    },
+    "type": "item",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/base/witcher-transports/item-bag.svg",
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
 }

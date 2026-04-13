@@ -1,0 +1,119 @@
+{
+    "_id": "7onqxtnaj34e2k7j",
+    "name": "Catrin Preece",
+    "type": "character",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/PNG/placeholder.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 0,
+                "max": 0
+            },
+            "ref": {
+                "value": 0,
+                "max": 0
+            },
+            "dex": {
+                "value": 0,
+                "max": 0
+            },
+            "body": {
+                "value": 0,
+                "max": 0
+            },
+            "spd": {
+                "value": 0,
+                "max": 0
+            },
+            "emp": {
+                "value": 0,
+                "max": 0
+            },
+            "cra": {
+                "value": 0,
+                "max": 0
+            },
+            "will": {
+                "value": 0,
+                "max": 0
+            },
+            "luck": {
+                "value": 0,
+                "max": 0
+            }
+        },
+        "skills": {
+            "eleganza": {
+                "value": 0
+            },
+            "etichetta": {
+                "value": 0
+            },
+            "inganno": {
+                "value": 0
+            },
+            "accortezza": {
+                "value": 0
+            },
+            "lanciareIncantesimi": {
+                "value": 0
+            },
+            "officiareRituali": {
+                "value": 0
+            },
+            "intessereFatture": {
+                "value": 0
+            },
+            "resistereAllaMagia": {
+                "value": 0
+            },
+            "tempra": {
+                "value": 0
+            },
+            "commercio": {
+                "value": 0
+            }
+        },
+        "details": {
+            "biography": "<p>Primogenita di una nobile famiglia di Kovir, Catrin è la finanziatrice della Società. Sostiene Altaguardia con l'immensa fortuna ereditata e usa la sua magia per districarsi nell'alta società, bloccando le emozioni altrui con la sua Procedura.</p>",
+            "threat": "Difficile",
+            "reward": 0
+        },
+        "derivedStats": {
+            "health": {
+                "value": 0,
+                "max": 0
+            },
+            "stamina": {
+                "value": 0,
+                "max": 0
+            },
+            "rec": {
+                "value": 0,
+                "max": 0
+            },
+            "stun": {
+                "value": 0
+            },
+            "woundTreshold": {
+                "value": 0
+            }
+        },
+        "description": "<p>Primogenita di una nobile famiglia di Kovir, Catrin è la finanziatrice della Società. Sostiene Altaguardia con l'immensa fortuna ereditata e usa la sua magia per districarsi nell'alta società, bloccando le emozioni altrui con la sua Procedura.</p>",
+        "sourcebook": "LR 18"
+    },
+    "items": [
+        {
+            "name": "[Incantesimo] Procedura di Preece",
+            "type": "spell",
+            "img": "icons/svg/lightning.svg",
+            "system": {
+                "description": "<p>Permette di bloccare un'emozione (odio, amore, depressione, euforia) nel bersaglio per 8 ore.</p>"
+            }
+        }
+    ],
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

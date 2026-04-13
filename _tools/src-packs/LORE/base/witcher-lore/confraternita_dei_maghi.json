@@ -1,20 +1,20 @@
 {
-  "name": "Confraternita dei Maghi",
-  "type": "note",
-  "system": {
-    "category": "fazione",
-    "description": "<p>La Confraternita dei Maghi è stata per secoli la massima autorità accademica e politica dei maghi nei Regni Settentrionali. Aveva il compito di regolamentare l'uso della magia e di fornire consiglieri ai sovrani.</p><p>La Confraternita è crollata in seguito al colpo di stato di Thanedd, dove molti dei suoi membri sono stati uccisi o sono fuggiti. Al suo posto sono sorte altre entità come la Loggia delle Maghe o il rigido controllo statale in alcune nazioni.</p>",
-    "sourcebook": "MB 181"
-  },
-  "img": "icons/svg/book.svg",
-  "effects": [],
-  "flags": {},
-  "_stats": {
-    "systemId": "TheWitcherItaNewSystem",
-    "coreVersion": 14,
-    "createdTime": 1712760000000,
-    "modifiedTime": 1712760000000,
-    "lastModifiedBy": "antigravity"
-  },
-  "_id": "lore018confrat"
+    "name": "Confraternita dei Maghi",
+    "type": "note",
+    "system": {
+        "category": "fazione",
+        "description": "<p>La Confraternita dei Maghi è stata per secoli la massima autorità accademica e politica dei maghi nei Regni Settentrionali. Aveva il compito di regolamentare l'uso della magia e di fornire consiglieri ai sovrani.</p><p>La Confraternita è crollata in seguito al colpo di stato di Thanedd, dove molti dei suoi membri sono stati uccisi o sono fuggiti. Al suo posto sono sorte altre entità come la Loggia delle Maghe o il rigido controllo statale in alcune nazioni.</p>",
+        "sourcebook": "MB 181"
+    },
+    "img": "modules/witcher-compendium/assets/LORE/base/witcher-lore/book.svg",
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14,
+        "createdTime": 1712760000000,
+        "modifiedTime": 1712760000000,
+        "lastModifiedBy": "antigravity"
+    },
+    "_id": "lore018confrat"
 }

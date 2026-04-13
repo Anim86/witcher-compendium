@@ -1,0 +1,58 @@
+{
+    "_id": "a2b3c4d5e6f7a8b9",
+    "name": "Spada Lunare",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/base/witcher-weapons/Placeholder.webp",
+    "system": {
+        "description": "<p>Spada d'Argento Reliquia. Forgiata sotto la benedizione della dea Lilvani per il witcher Olek (Scuola del Lupo), per purificare Ellander da una possessione demoniaca.</p><p><strong>Statistiche:</strong> 7d6+4 DAN (Argento), Focus Superiore. 3 Slot.</p>",
+        "quantity": "1",
+        "weight": 4,
+        "cost": 0,
+        "sourcebook": "MB 263",
+        "class": "simple",
+        "category": "relic",
+        "damage": "3d6",
+        "damageType": "silver",
+        "reliability": {
+            "value": 10,
+            "max": 10
+        },
+        "hands": "2",
+        "range": "N/A",
+        "enhancementSlots": 3,
+        "isMeteorite": false,
+        "damageProperties": {
+            "effects": [
+                {
+                    "id": "000358ed599bb199",
+                    "name": "Focus Sup.",
+                    "statusEffect": null,
+                    "percentage": 100,
+                    "varEffect": false
+                }
+            ],
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "isMeteorite": false,
+            "isNonLethal": false,
+            "silverTrait": true,
+            "silverDamage": "7d6+4"
+        },
+        "accuracy": 1,
+        "type": {
+            "text": "",
+            "slashing": true,
+            "piercing": true,
+            "bludgeoning": false,
+            "elemental": false
+        }
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}
