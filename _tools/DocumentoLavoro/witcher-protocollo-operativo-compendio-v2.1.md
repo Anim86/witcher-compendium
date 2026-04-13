@@ -1,7 +1,7 @@
 # WITCHER COMPENDIUM — PROTOCOLLO OPERATIVO COMPLETO
 ## Documento di riferimento per LLM / AI Builder
-### Versione: 2.4 — Data: 10 Aprile 2026 ore 22:40
-### Autore: Perplexity (Strategist) per il team Manuel + Antigravity
+### Versione: 2.5 — Data: 13 Aprile 2026 ore 10:45
+### Autore: Antigravity per il team Manuel
 
 ---
 
@@ -83,46 +83,67 @@ Tomo del Caos: Tomo del Caos/Testi/PagXXX_NomeSezione.txt
 
 ### 3.1 Dove vivono i JSON sorgente
 ```
-_tools/src-packs/[CATEGORIA]/[sottocartella]/[NomeVoce].json
+_tools/src-packs/[CATEGORIA]/[sottocartella]/[NomePack]/[NomeVoce].json
 ```
 
-**Struttura cartelle aggiornata al 10 Apr 2026:**
+**Struttura cartelle REALE (Allineamento 1:1 — 13 Apr 2026):**
 ```
 _tools/src-packs/
+├── BESTIARIO/
+│   ├── MOSTRI/                        ← Pack: witcher-monsters
+│   └── PNG/                           ← Pack: witcher-png
+├── CORE/
+│   ├── witcher-professions/
+│   ├── witcher-races/
+│   └── witcher-skills/
+├── CRAFTING/
+│   ├── diario/
+│   │   └── witcher-components-diario/
+│   ├── racconti/
+│   │   ├── witcher-components-racconti/
+│   │   └── witcher-schematics-racconti/
+│   ├── witcher-alchemy/
+│   ├── witcher-components/
+│   ├── witcher-mutations/
+│   └── witcher-schematics/
 ├── EQUIPAGGIAMENTO/
 │   ├── base/
-│   │   ├── witcher-weapons/
 │   │   ├── witcher-armor/
 │   │   ├── witcher-equipment/
 │   │   ├── witcher-special/
-│   │   └── witcher-transports/        ← NUOVO 10 Apr
-│   └── caos/
-│       ├── witcher-special-chaos/
-│       └── witcher-trophies/          ← NUOVO 10 Apr (da _DA_RICOLLOCARE)
-├── CRAFTING/                          ← RINOMINATA da CREAZIONE il 10 Apr
-│   └── base/
-│       ├── witcher-components/
-│       ├── witcher-schematics/
-│       └── witcher-alchemy/
-├── BESTIARIO/
-│   ├── PNG/
-│   │   ├── base/
-│   │   │   └── witcher-monsters/
-│   │   └── caos/
-│   │       └── witcher-monsters-chaos/
-│   └── NPC/                           ← NUOVO 10 Apr
-│       └── witcher-npc/
-├── MAGIA/
-│   └── base/
-│       ├── witcher-spells/
-│       └── witcher-rituals/
-├── GAMEPLAY/                          ← NUOVO 10 Apr
+│   │   ├── witcher-transports/
+│   │   └── witcher-weapons/
+│   ├── caos/
+│   │   ├── witcher-special-chaos/
+│   │   └── witcher-trophies/
+│   └── racconti/
+│       └── witcher-weapons-racconti/
+├── GAMEPLAY/
 │   └── base/
 │       ├── witcher-critical-wounds/
 │       └── witcher-curses/
-└── LORE/                              ← NUOVO 10 Apr
-    └── base/
-        └── witcher-lore/
+├── LORE/
+│   └── base/
+│       └── witcher-lore/
+├── MAGIA/
+│   ├── base/
+│   │   ├── witcher-hexes-base/
+│   │   ├── witcher-rituals/
+│   │   ├── witcher-runes/
+│   │   ├── witcher-signs/
+│   │   └── witcher-spells/
+│   ├── caos/
+│   │   ├── witcher-gifts/
+│   │   ├── witcher-goetia/
+│   │   ├── witcher-hexes/
+│   │   ├── witcher-invocations/
+│   │   ├── witcher-rituals-chaos/
+│   │   ├── witcher-signs-chaos/
+│   │   └── witcher-spells-chaos/
+│   └── racconti/
+│       └── witcher-spells-racconti/
+└── _DA_RICOLLOCARE/
+    └── trofei/                        ← Mappato su witcher-trophies
 ```
 
 ### 3.2 Struttura JSON esempio — ARMA
@@ -140,9 +161,9 @@ _tools/src-packs/
     "accuracy": 0,
     "hands": 2,
     "reach": "200m",
-    "effects": "N/A",
     "sourcebook": "MB 76"
   },
+  "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/base/witcher-weapons/Arco_Lungo.webp",
   "_stats": {
     "systemId": "TheWitcherItaNewSystem",
     "coreVersion": 14
@@ -229,31 +250,17 @@ _tools/src-packs/
 ⚠️ `systemVersion` è stato rimosso definitivamente. NON va incluso.
 ⚠️ Questo campo va aggiunto su OGNI file creato o modificato, senza eccezioni.
 
-### 3.8 Regole specifiche per pack
-
-**witcher-schematics:**
-- `cost: 0` e `weight: 0` su tutti gli schemi
-- Nella `description`: lista componenti, CD Manifattura, tempo di lavorazione
-
-**witcher-alchemy — sistema icone a 2 livelli:**
-- 🌿 Ingredienti vegetali → icona pianta
-- 🦴 Ingredienti mostruosi → icona parte di mostro
-- 🧪 Pozioni, Elisir, Oli → icona ampolla
-- `substanceType` obbligatorio su tutti gli ingredienti
-
-**witcher-npc:**
-- Tipo: `Actor`
-- Stats inizializzate a 0 (da completare in sprint dedicato)
-- Path immagini: `modules/witcher-compendium/assets/images/NPC/NomeNPC.webp`
+**witcher-monsters & witcher-png (UNIFICATI):**
+- I vecchi pack frammentati (base, caos, diario, racconti) sono stati UNIFICATI.
+- **witcher-monsters**: contiene tutti i mostri (MB + TC + Espansioni).
+- **witcher-png**: contiene tutti i personaggi non giocanti.
+- Folder Master: `_tools/src-packs/BESTIARIO/MOSTRI/` e `_tools/src-packs/BESTIARIO/PNG/`.
 
 **witcher-trophies:**
-- Provenienza: Tomo del Caos, TC 126-127
-- Folder: `EQUIPAGGIAMENTO/caos/witcher-trophies/`
+- Folder: `_tools/src-packs/_DA_RICOLLOCARE/trofei/` (mappato su `witcher-trophies`)
 
 **witcher-transports:**
-- Tipo: `Item` (come equipaggiamento)
-- 18 voci: 9 trasporti + 9 equipaggiamenti da monta
-- Folder: `EQUIPAGGIAMENTO/base/witcher-transports/`
+- Folder: `_tools/src-packs/EQUIPAGGIAMENTO/base/witcher-transports/`
 
 ---
 
@@ -342,31 +349,40 @@ STEP 10 Manuel valida in Foundry
 
 ---
 
-## 7. BUILD E DEPLOY
+### 7.1 Architettura 1:1:1 (Regola d'Oro)
+Dalla versione 2.5, vige l'allineamento perfetto tra:
+1. **Master (`src-packs`)**: Cartelle fisiche organizzate per Categoria/Sottocategoria.
+2. **Assets (`assets`)**: Mirroring esatto delle cartelle Master (gestito da `mirror_structure.py`).
+3. **Packs (`packs`)**: Ogni cartella terminale del Master genera esattamente UN pack LevelDB con lo stesso nome.
 
-### 7.1 Compilatore ufficiale
+### 7.2 Compilatore (compile-packs-v11.mjs)
 ```powershell
 node _tools/scripts/compile-packs-v11.mjs
 ```
-- Basato su classic-level v3.0.0 (Rust/NAPI-RS)
-- Pulisce i DB LevelDB prima di scrivere
-- Compila tutti i JSON di src-packs nei DB in `witcher-compendium/packs/`
-- Tempo: < 5 secondi per ~700 entries
-- NON usare `compile_packs.py` (NeDB obsoleto)
-- NON usare `rebuild_leveldb.js` (sostituito)
+- **Semplificato**: Non usa più filtri logici o metadati interni per decidere dove mettere i file.
+- **Mappatura cartelle**: Legge il percorso fisico (es. `BESTIARIO/MOSTRI/*.json`) e scrive nel pack `witcher-monsters`.
+- **Pulizia**: I file JSON vengono normalizzati e le virgole rimosse prima della scrittura.
 
-### 7.2 Check pre-compilazione OBBLIGATORI
-1. **Grep globale `_stats`**: `TheWitcherItaNewSystem` presente in tutti i JSON, zero `systemVersion`
-2. **`coreVersion` intero**: nessuna stringa `"14"` residua
-3. **UUID univocità**: nessun duplicato tra pack diversi
-4. **module.json aggiornato**: tutti i nuovi pack registrati correttamente
+### 7.3 Pipeline di Deploy (Automazione)
+Il comando cumulativo per il rilascio locale è:
+1. **Mirroring**: `py _tools/scratch/mirror_structure.py` (allinea cartelle assets e percorsi `img` nei JSON).
+2. **Cleanup**: `py _tools/scratch/cleanup_assets.py` (rimuove file obsoleti in assets).
+3. **Compile**: `node _tools/scripts/compile-packs-v11.mjs` (genera i DB).
+4. **Deploy**: `./deploy.ps1` (copia in Foundry locale).
 
-### 7.3 Bump versione — OBBLIGATORIO prima di ogni deploy
+### 7.4 Gestione Folder UI (setup-folders.js)
+Le cartelle nella sidebar di Foundry non sono più statiche.
+- Lo script `setup-folders.js` legge la posizione dei pack nel filesystem e crea la gerarchia UI (`Categoria > Sottocartella > Pack`).
+- Per forzare il ricalcolo delle cartelle (es. dopo aver aggiunto pack), impostare nel codice del modulo:
+  `await game.settings.set("witcher-compendium", "foldersCreated", false);`
+
+### 7.5 Bump versione — OBBLIGATORIO prima di ogni deploy
 ```json
-"version": "14.1.XX"
+"version": "v14.1.XX"
 ```
 REGOLA ASSOLUTA: versione sempre CRESCENTE.
-Ultima versione nota: **v14.1.25** (9 Aprile sera) — verificare prima del bump.
+Ultima versione nota: **v14.1.57** (13 Aprile) — verificare prima del bump.
+Il tag git deve corrispondere esattamente (es. `v14.1.57`).
 
 ### 7.4 Deploy con manifest remoto (metodo Manuel)
 ```
@@ -416,9 +432,8 @@ Dopo ogni deploy, Manuel verifica a campione:
 | witcher-components | 52 | ✅ COMPLETO | |
 | witcher-schematics | 109 | ✅ COMPLETO | |
 | witcher-alchemy | 96 | ✅ COMPLETO | |
-| witcher-monsters | 19 | ✅ COMPLETO | |
-| witcher-monsters-chaos | 7 | ✅ COMPLETO | |
-| witcher-npc | 24 | ✅ COMPLETO | |
+| witcher-monsters | 68 | ✅ UNIFICATO | Include Base + TC + Diario |
+| witcher-png | 34 | ✅ UNIFICATO | Include tutti gli NPC |
 | witcher-trophies | 35 | ✅ COMPLETO | |
 | witcher-transports | 18 | ✅ COMPLETO | |
 | witcher-signs | 10 | ✅ COMPLETO | MB 114-115 |
@@ -558,14 +573,12 @@ Documentazione dettagliata dei processi di creazione e verifica:
 
 ## 13. PROSSIMI STEP
 
-1. ⏳ IDENTIFICARE src-packs rimanenti da sistemare
-2. 🔴 BUILD + DEPLOY — Compilare tutti i pack e testare in Foundry VTT
-3. 🔴 IMMAGINI — Assegnare immagini specifiche alle voci con Placeholder.webp
-4. 🔴 RELIQUIE — Valutare type dedicato dopo la build
-5. 🟡 NOBILE + ESPLORATORE — Sprint futuro quando disponibili TXT sorgente
+1. ⏳ Ripristino file corrotti (14 file zero-byte in witcher-gifts)
+2. 🔴 Pulizia finale residui cartelle NeDB in `witcher-compendium/packs/`
+3. 🔴 Completamento schede Actor (Stats/Abilità)
 
 ---
 
-*Documento aggiornato da Antigravity — 10 Aprile 2026 — v2.4*
-*Precedente versione: v2.3 del 10 Aprile 2026 ore 16:15*
-*Modifiche v2.4: aggiunti pack witcher-critical-wounds (severity/desc), witcher-curses (GM curses) e witcher-lore (note).*
+*Documento aggiornato da Antigravity — 13 Aprile 2026 — v2.5*
+*Precedente versione: v2.4 del 10 Aprile 2026*
+*Modifiche v2.5: Implementata architettura 1:1 Master/Assets/Packs. Unificati pack Bestiario. Introdotta gestione UI procedurale via setup-folders.js.*
