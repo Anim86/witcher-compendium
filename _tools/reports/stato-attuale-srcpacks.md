@@ -1,5 +1,5 @@
 # Stato Attuale src-packs
-Data Audit: 13/04/2026, 15:49:25
+Data Audit: 13/04/2026, 16:41:16
 
 ## 1. Struttura Cartelle
 | Cartella | File JSON | Sourcebook Predom. |
@@ -19,6 +19,23 @@ Data Audit: 13/04/2026, 15:49:25
 | CRAFTING\witcher-components | 52 | MB |
 | CRAFTING\witcher-mutations | 14 | MB |
 | CRAFTING\witcher-schematics | 228 | MB |
+| DLC\arnesi\witcher-dlc-ap-alchemy | 14 | AP |
+| DLC\arnesi\witcher-dlc-ap-equipment | 16 | AP |
+| DLC\carri-e-viaggi\witcher-dlc-sr-equipment | 9 | SR |
+| DLC\carri-e-viaggi\witcher-dlc-sr-lore | 4 | SR |
+| DLC\disabilita-protesi\witcher-dlc-dp-equipment | 8 | DP |
+| DLC\disabilita-protesi\witcher-dlc-dp-png | 1 | DP |
+| DLC\mostri-strada\witcher-dlc-ms-components | 6 | MS |
+| DLC\mostri-strada\witcher-dlc-ms-monsters | 3 | MS |
+| DLC\nuove-professioni\witcher-dlc-np-professions | 4 | NP |
+| DLC\scuola-lumaca\witcher-dlc-sl-equipment | 5 | SL |
+| DLC\scuola-lumaca\witcher-dlc-sl-schematics | 3 | SL |
+| DLC\scuole-witcher\witcher-dlc-sw-equipment | 20 | SW |
+| DLC\scuole-witcher\witcher-dlc-sw-schematics | 23 | SW |
+| DLC\toussaint\witcher-dlc-ts-alchemy | 1 | TS |
+| DLC\toussaint\witcher-dlc-ts-equipment | 8 | TS |
+| DLC\toussaint\witcher-dlc-ts-png | 1 | TS |
+| DLC\toussaint\witcher-dlc-ts-schematics | 1 | TS |
 | EQUIPAGGIAMENTO\base\witcher-armor | 45 | MB |
 | EQUIPAGGIAMENTO\base\witcher-equipment | 100 | MB |
 | EQUIPAGGIAMENTO\base\witcher-special | 37 | MB |
@@ -32,6 +49,7 @@ Data Audit: 13/04/2026, 15:49:25
 | GAMEPLAY\base\witcher-investigations | 24 | DW |
 | GAMEPLAY\base\witcher-trophies | 68 | TC |
 | LORE\base\witcher-lore | 36 | MB |
+| LORE\base\witcher-lore-racconti | 2 | LR |
 | LORE\caos\witcher-lore-chaos | 9 | TC |
 | MAGIA\base\witcher-hexes-base | 6 | MB |
 | MAGIA\base\witcher-rituals | 15 | MB |
@@ -89,7 +107,7 @@ Data Audit: 13/04/2026, 15:49:25
 | witcher-lore | 36 | MB |
 
 ## 3. Voci Aggiunte o Modificate di Recente (dal 6 Aprile)
-Totale modifiche: 1505
+Totale modifiche: 1634
 
 | File | Data modifica | Pack |
 |---|---|---|
@@ -843,6 +861,133 @@ Totale modifiche: 1505
 | Torrwr_1ea8c069e2664c58.json | 13/04/2026, 14:01:39 | CRAFTING\witcher-schematics |
 | Zefhar_Elfico_6141565791624361.json | 13/04/2026, 14:01:39 | CRAFTING\witcher-schematics |
 | Zefhar_Elfico_d5f12ed396e4a676.json | 13/04/2026, 14:01:39 | CRAFTING\witcher-schematics |
+| aiuto_dell_investigatore_6826b81513b34670.json | 13/04/2026, 16:39:47 | DLC\arnesi\witcher-dlc-ap-alchemy |
+| elisir_adrenalinico_e95ac0d602ebf7e8.json | 13/04/2026, 16:39:47 | DLC\arnesi\witcher-dlc-ap-alchemy |
+| puro_caelum_3d98f156a74e1451.json | 13/04/2026, 16:39:47 | DLC\arnesi\witcher-dlc-ap-alchemy |
+| puro_etere_cb61a49e08c04de4.json | 13/04/2026, 16:39:47 | DLC\arnesi\witcher-dlc-ap-alchemy |
+| puro_fulgur_d4ecf5b0096e25be.json | 13/04/2026, 16:39:47 | DLC\arnesi\witcher-dlc-ap-alchemy |
+| puro_hydragenum_f2444c384cad712c.json | 13/04/2026, 16:39:47 | DLC\arnesi\witcher-dlc-ap-alchemy |
+| puro_quebrith_0b2873a7d3ed701f.json | 13/04/2026, 16:39:47 | DLC\arnesi\witcher-dlc-ap-alchemy |
+| puro_rebis_cc05a685ff08e83d.json | 13/04/2026, 16:39:47 | DLC\arnesi\witcher-dlc-ap-alchemy |
+| puro_sol_20e068d5fa5fbb36.json | 13/04/2026, 16:39:47 | DLC\arnesi\witcher-dlc-ap-alchemy |
+| puro_vermiglio_6d608e7720919161.json | 13/04/2026, 16:39:47 | DLC\arnesi\witcher-dlc-ap-alchemy |
+| puro_vetriolo_4b1566886954c974.json | 13/04/2026, 16:39:47 | DLC\arnesi\witcher-dlc-ap-alchemy |
+| rossetto_velenoso_250ad7a4e25e9c89.json | 13/04/2026, 16:39:47 | DLC\arnesi\witcher-dlc-ap-alchemy |
+| unguento_cinereo_b547eb6a4cf94d05.json | 13/04/2026, 16:39:47 | DLC\arnesi\witcher-dlc-ap-alchemy |
+| veleno_di_cappuccio_di_monaco_1664e85ed6aa5b08.json | 13/04/2026, 16:39:47 | DLC\arnesi\witcher-dlc-ap-alchemy |
+| amplificatore_d8a48ffcdc782700.json | 13/04/2026, 16:39:47 | DLC\arnesi\witcher-dlc-ap-equipment |
+| anello_del_favore_65abbe35f68e927b.json | 13/04/2026, 16:39:47 | DLC\arnesi\witcher-dlc-ap-equipment |
+| bambola_da_magia_nera_846c89e88640a65f.json | 13/04/2026, 16:39:47 | DLC\arnesi\witcher-dlc-ap-equipment |
+| baule_nascosto_a832e21feedfead1.json | 13/04/2026, 16:39:47 | DLC\arnesi\witcher-dlc-ap-equipment |
+| camera_di_distillazione_3e6ac8889dcb2a9d.json | 13/04/2026, 16:39:47 | DLC\arnesi\witcher-dlc-ap-equipment |
+| coppia_di_puntelli_39d78141a5ce2eba.json | 13/04/2026, 16:39:47 | DLC\arnesi\witcher-dlc-ap-equipment |
+| cote_nanica_8280185b7297a766.json | 13/04/2026, 16:39:47 | DLC\arnesi\witcher-dlc-ap-equipment |
+| guida_del_raccoglitore_5ddc695a439bd829.json | 13/04/2026, 16:39:47 | DLC\arnesi\witcher-dlc-ap-equipment |
+| incensiere_medico_9605c6aaebfa54e8.json | 13/04/2026, 16:39:47 | DLC\arnesi\witcher-dlc-ap-equipment |
+| libro_di_racconti_fe8996d26439bfe2.json | 13/04/2026, 16:39:47 | DLC\arnesi\witcher-dlc-ap-equipment |
+| mantello_mimetico_861d6c1695f4dba3.json | 13/04/2026, 16:39:47 | DLC\arnesi\witcher-dlc-ap-equipment |
+| potestaquisitor_f4152c9fa740c99a.json | 13/04/2026, 16:39:47 | DLC\arnesi\witcher-dlc-ap-equipment |
+| serratura_con_trappola_6a43c8cfadbad0eb.json | 13/04/2026, 16:39:47 | DLC\arnesi\witcher-dlc-ap-equipment |
+| strumento_musicale_elfico_ed012abf1f6bd68c.json | 13/04/2026, 16:39:47 | DLC\arnesi\witcher-dlc-ap-equipment |
+| taglia_monete_f559fde75a4ea17c.json | 13/04/2026, 16:39:47 | DLC\arnesi\witcher-dlc-ap-equipment |
+| tavolo_strategico_portatile_f23e1fe1f390ea99.json | 13/04/2026, 16:39:47 | DLC\arnesi\witcher-dlc-ap-equipment |
+| assali_rinforzati_cff3d40b30948e8d.json | 13/04/2026, 16:40:44 | DLC\carri-e-viaggi\witcher-dlc-sr-equipment |
+| carro_base_097e6250a64ebe0f.json | 13/04/2026, 16:40:44 | DLC\carri-e-viaggi\witcher-dlc-sr-equipment |
+| carro_da_guerra_610f3d4c792147d1.json | 13/04/2026, 16:40:44 | DLC\carri-e-viaggi\witcher-dlc-sr-equipment |
+| carro_di_qualità_049ced3ff6db47d6.json | 13/04/2026, 16:40:44 | DLC\carri-e-viaggi\witcher-dlc-sr-equipment |
+| carro_d_appoggio_47b302995832102f.json | 13/04/2026, 16:40:44 | DLC\carri-e-viaggi\witcher-dlc-sr-equipment |
+| cinghie_da_carico_61c3733ac9eb332d.json | 13/04/2026, 16:40:44 | DLC\carri-e-viaggi\witcher-dlc-sr-equipment |
+| compartimento_segreto_7f4ce47e20b440aa.json | 13/04/2026, 16:40:44 | DLC\carri-e-viaggi\witcher-dlc-sr-equipment |
+| lanterne_da_carro_90846e53e0379196.json | 13/04/2026, 16:40:44 | DLC\carri-e-viaggi\witcher-dlc-sr-equipment |
+| ruote_di_scorta_896f7103ebc2fc8e.json | 13/04/2026, 16:40:44 | DLC\carri-e-viaggi\witcher-dlc-sr-equipment |
+| locanda_la_spada_canterina_7e210ead16f0ba2e.json | 13/04/2026, 16:40:44 | DLC\carri-e-viaggi\witcher-dlc-sr-lore |
+| peculiarità_delle_locande_ecf4e1ed4c22662c.json | 13/04/2026, 16:40:44 | DLC\carri-e-viaggi\witcher-dlc-sr-lore |
+| strade_e_distanze_del_continente_d20c35e5d99f191e.json | 13/04/2026, 16:40:44 | DLC\carri-e-viaggi\witcher-dlc-sr-lore |
+| tipi_di_locali_e_taverne_519dd197ce334269.json | 13/04/2026, 16:40:44 | DLC\carri-e-viaggi\witcher-dlc-sr-lore |
+| protesi_base_0b709752cee02d09.json | 13/04/2026, 16:39:08 | DLC\disabilita-protesi\witcher-dlc-dp-equipment |
+| protesi_da_witcher_9a9e7d71ce65b06f.json | 13/04/2026, 16:39:08 | DLC\disabilita-protesi\witcher-dlc-dp-equipment |
+| protesi_focus_60c4c1c56df263e4.json | 13/04/2026, 16:39:08 | DLC\disabilita-protesi\witcher-dlc-dp-equipment |
+| protesi_magica_bc8ac7c314fe7f1c.json | 13/04/2026, 16:39:08 | DLC\disabilita-protesi\witcher-dlc-dp-equipment |
+| schema_sedia_a_rotelle_base_8f51534120b94d11.json | 13/04/2026, 16:39:08 | DLC\disabilita-protesi\witcher-dlc-dp-equipment |
+| schema_sedia_a_rotelle_di_qualità_1486d3ed19571314.json | 13/04/2026, 16:39:08 | DLC\disabilita-protesi\witcher-dlc-dp-equipment |
+| sedia_a_rotelle_base_1887c6d8030f3544.json | 13/04/2026, 16:39:08 | DLC\disabilita-protesi\witcher-dlc-dp-equipment |
+| sedia_a_rotelle_di_qualità_d5b63c89b64cdbf5.json | 13/04/2026, 16:39:08 | DLC\disabilita-protesi\witcher-dlc-dp-equipment |
+| voren_di_dillingen_b9ad6f5d216c9289.json | 13/04/2026, 16:39:08 | DLC\disabilita-protesi\witcher-dlc-dp-png |
+| denti_di_gatto_mannaro_919d7a0a2dfe49df.json | 13/04/2026, 16:39:08 | DLC\mostri-strada\witcher-dlc-ms-components |
+| mutageno_alp_blu__c12e979a60afeb14.json | 13/04/2026, 16:39:08 | DLC\mostri-strada\witcher-dlc-ms-components |
+| mutageno_gatto_mannaro_rosso__1927c23f510e9d36.json | 13/04/2026, 16:39:08 | DLC\mostri-strada\witcher-dlc-ms-components |
+| mutageno_glustyworp_verde__24f92a4b90eb9f15.json | 13/04/2026, 16:39:08 | DLC\mostri-strada\witcher-dlc-ms-components |
+| saliva_di_alp_ec383db7dcb23e3d.json | 13/04/2026, 16:39:08 | DLC\mostri-strada\witcher-dlc-ms-components |
+| stomaco_di_glustyworp_b09c83c2eb84888e.json | 13/04/2026, 16:39:08 | DLC\mostri-strada\witcher-dlc-ms-components |
+| alp_98a5d96883ceea1f.json | 13/04/2026, 16:39:08 | DLC\mostri-strada\witcher-dlc-ms-monsters |
+| gatto_mannaro_b15180fc4f723850.json | 13/04/2026, 16:39:08 | DLC\mostri-strada\witcher-dlc-ms-monsters |
+| glustyworp_0275fca75d31b216.json | 13/04/2026, 16:39:08 | DLC\mostri-strada\witcher-dlc-ms-monsters |
+| contrabbandiere_87aad37ce63d1f93.json | 13/04/2026, 16:39:47 | DLC\nuove-professioni\witcher-dlc-np-professions |
+| corriere_40470c166116b8d3.json | 13/04/2026, 16:39:47 | DLC\nuove-professioni\witcher-dlc-np-professions |
+| scout_5407084121f4938f.json | 13/04/2026, 16:39:47 | DLC\nuove-professioni\witcher-dlc-np-professions |
+| villico_0651944f5f66f3fb.json | 13/04/2026, 16:39:47 | DLC\nuove-professioni\witcher-dlc-np-professions |
+| broderick_il_bisteccone_16d1cd86bd95fcf2.json | 13/04/2026, 16:40:44 | DLC\scuola-lumaca\witcher-dlc-sl-equipment |
+| capacità_muco_d740acc19b0ae03f.json | 13/04/2026, 16:40:44 | DLC\scuola-lumaca\witcher-dlc-sl-equipment |
+| elias_von_drexel_bfc34788c345a119.json | 13/04/2026, 16:40:44 | DLC\scuola-lumaca\witcher-dlc-sl-equipment |
+| spada_d_acciaio_della_lumaca_2c4e9b97934fac2d.json | 13/04/2026, 16:40:44 | DLC\scuola-lumaca\witcher-dlc-sl-equipment |
+| spada_d_argento_della_lumaca_7c44ab7e72a15d6b.json | 13/04/2026, 16:40:44 | DLC\scuola-lumaca\witcher-dlc-sl-equipment |
+| schema_armatura_della_lumaca_c5b2337b0e663674.json | 13/04/2026, 16:40:44 | DLC\scuola-lumaca\witcher-dlc-sl-schematics |
+| schema_spada_d_acciaio_della_lumaca_8740d6ca0ec69f89.json | 13/04/2026, 16:40:44 | DLC\scuola-lumaca\witcher-dlc-sl-schematics |
+| schema_spada_d_argento_della_lumaca_542bee0e7a3953eb.json | 13/04/2026, 16:40:44 | DLC\scuola-lumaca\witcher-dlc-sl-schematics |
+| armatura_del_manticora_1ea6704fc274cba2.json | 13/04/2026, 16:39:08 | DLC\scuole-witcher\witcher-dlc-sw-equipment |
+| armatura_del_orso_7817efe6ffb84fbe.json | 13/04/2026, 16:39:08 | DLC\scuole-witcher\witcher-dlc-sw-equipment |
+| armatura_del_vipera_1d2862cf6d9aa6f7.json | 13/04/2026, 16:39:08 | DLC\scuole-witcher\witcher-dlc-sw-equipment |
+| balestra_del_gatto_b08cca06247d1f80.json | 13/04/2026, 16:39:08 | DLC\scuole-witcher\witcher-dlc-sw-equipment |
+| balestra_del_grifone_98858e9eccdaea1c.json | 13/04/2026, 16:39:08 | DLC\scuole-witcher\witcher-dlc-sw-equipment |
+| balestra_del_orso_e2c45d03f675ac5c.json | 13/04/2026, 16:39:08 | DLC\scuole-witcher\witcher-dlc-sw-equipment |
+| scudo_del_manticora_26835e76228868ec.json | 13/04/2026, 16:39:08 | DLC\scuole-witcher\witcher-dlc-sw-equipment |
+| spada_d_acciaio_del_gatto_1adb0e1294d7217d.json | 13/04/2026, 16:39:08 | DLC\scuole-witcher\witcher-dlc-sw-equipment |
+| spada_d_acciaio_del_grifone_21c0a39d1bc814db.json | 13/04/2026, 16:39:08 | DLC\scuole-witcher\witcher-dlc-sw-equipment |
+| spada_d_acciaio_del_lupo_354a710adc3110be.json | 13/04/2026, 16:39:08 | DLC\scuole-witcher\witcher-dlc-sw-equipment |
+| spada_d_acciaio_del_manticora_dff7bafa4619032a.json | 13/04/2026, 16:39:08 | DLC\scuole-witcher\witcher-dlc-sw-equipment |
+| spada_d_acciaio_del_orso_c76043256396f90e.json | 13/04/2026, 16:39:08 | DLC\scuole-witcher\witcher-dlc-sw-equipment |
+| spada_d_acciaio_del_vipera_f8ce387de862d64f.json | 13/04/2026, 16:39:08 | DLC\scuole-witcher\witcher-dlc-sw-equipment |
+| spada_d_argento_del_gatto_2b1115ea3067ebfb.json | 13/04/2026, 16:39:08 | DLC\scuole-witcher\witcher-dlc-sw-equipment |
+| spada_d_argento_del_grifone_8c896d549fee59a7.json | 13/04/2026, 16:39:08 | DLC\scuole-witcher\witcher-dlc-sw-equipment |
+| spada_d_argento_del_lupo_bacb0480e1046f76.json | 13/04/2026, 16:39:08 | DLC\scuole-witcher\witcher-dlc-sw-equipment |
+| spada_d_argento_del_manticora_4789a37890f364ff.json | 13/04/2026, 16:39:08 | DLC\scuole-witcher\witcher-dlc-sw-equipment |
+| spada_d_argento_del_orso_1468fd49a992bbdd.json | 13/04/2026, 16:39:08 | DLC\scuole-witcher\witcher-dlc-sw-equipment |
+| spada_d_argento_del_vipera_db2efd30f049d15d.json | 13/04/2026, 16:39:08 | DLC\scuole-witcher\witcher-dlc-sw-equipment |
+| zanna_del_vipera_e8d1f81b32f1adeb.json | 13/04/2026, 16:39:08 | DLC\scuole-witcher\witcher-dlc-sw-equipment |
+| schema_armatura_del_gatto_e856cd522c2b65c9.json | 13/04/2026, 16:39:08 | DLC\scuole-witcher\witcher-dlc-sw-schematics |
+| schema_armatura_del_grifone_417dfb3b4fcdda5f.json | 13/04/2026, 16:39:08 | DLC\scuole-witcher\witcher-dlc-sw-schematics |
+| schema_armatura_del_lupo_caf7c265416b63c7.json | 13/04/2026, 16:39:08 | DLC\scuole-witcher\witcher-dlc-sw-schematics |
+| schema_armatura_del_manticora_aedd6699267138f5.json | 13/04/2026, 16:39:08 | DLC\scuole-witcher\witcher-dlc-sw-schematics |
+| schema_armatura_del_orso_4faf34eb649331cd.json | 13/04/2026, 16:39:08 | DLC\scuole-witcher\witcher-dlc-sw-schematics |
+| schema_armatura_del_vipera_7820eaeccdca5b0d.json | 13/04/2026, 16:39:08 | DLC\scuole-witcher\witcher-dlc-sw-schematics |
+| schema_balestra_del_gatto_7caa5c5f6eb87dc9.json | 13/04/2026, 16:39:08 | DLC\scuole-witcher\witcher-dlc-sw-schematics |
+| schema_balestra_del_grifone_a2b15b1251f52e72.json | 13/04/2026, 16:39:08 | DLC\scuole-witcher\witcher-dlc-sw-schematics |
+| schema_balestra_del_orso_9407a5179b6438cb.json | 13/04/2026, 16:39:08 | DLC\scuole-witcher\witcher-dlc-sw-schematics |
+| schema_scudo_del_manticora_409dc7f8f730ae6e.json | 13/04/2026, 16:39:08 | DLC\scuole-witcher\witcher-dlc-sw-schematics |
+| schema_spada_d_acciaio_del_gatto_46cfed86ca7d9b3a.json | 13/04/2026, 16:39:08 | DLC\scuole-witcher\witcher-dlc-sw-schematics |
+| schema_spada_d_acciaio_del_grifone_a44bb4f798676e69.json | 13/04/2026, 16:39:08 | DLC\scuole-witcher\witcher-dlc-sw-schematics |
+| schema_spada_d_acciaio_del_lupo_7e212d7c7abb7550.json | 13/04/2026, 16:39:08 | DLC\scuole-witcher\witcher-dlc-sw-schematics |
+| schema_spada_d_acciaio_del_manticora_c96248758b2c1bce.json | 13/04/2026, 16:39:08 | DLC\scuole-witcher\witcher-dlc-sw-schematics |
+| schema_spada_d_acciaio_del_orso_09658d766401261d.json | 13/04/2026, 16:39:08 | DLC\scuole-witcher\witcher-dlc-sw-schematics |
+| schema_spada_d_acciaio_del_vipera_2b285bd6d0b28320.json | 13/04/2026, 16:39:08 | DLC\scuole-witcher\witcher-dlc-sw-schematics |
+| schema_spada_d_argento_del_gatto_1a300f6f3080d37e.json | 13/04/2026, 16:39:08 | DLC\scuole-witcher\witcher-dlc-sw-schematics |
+| schema_spada_d_argento_del_grifone_194ea9f9d9c7d479.json | 13/04/2026, 16:39:08 | DLC\scuole-witcher\witcher-dlc-sw-schematics |
+| schema_spada_d_argento_del_lupo_bb049103886bdafc.json | 13/04/2026, 16:39:08 | DLC\scuole-witcher\witcher-dlc-sw-schematics |
+| schema_spada_d_argento_del_manticora_f19cb95d6b19abfe.json | 13/04/2026, 16:39:08 | DLC\scuole-witcher\witcher-dlc-sw-schematics |
+| schema_spada_d_argento_del_orso_1e19004d01539483.json | 13/04/2026, 16:39:08 | DLC\scuole-witcher\witcher-dlc-sw-schematics |
+| schema_spada_d_argento_del_vipera_6cc6acfeb594bd07.json | 13/04/2026, 16:39:08 | DLC\scuole-witcher\witcher-dlc-sw-schematics |
+| schema_zanna_del_vipera_d9748aefddd55105.json | 13/04/2026, 16:39:08 | DLC\scuole-witcher\witcher-dlc-sw-schematics |
+| pozione_di_toussaint_79522b70478f66fa.json | 13/04/2026, 16:39:47 | DLC\toussaint\witcher-dlc-ts-alchemy |
+| borsa_di_biglie_a03bf5fab9fa7cc8.json | 13/04/2026, 16:39:47 | DLC\toussaint\witcher-dlc-ts-equipment |
+| bottiglia_cbd7e12d68d26267.json | 13/04/2026, 16:39:47 | DLC\toussaint\witcher-dlc-ts-equipment |
+| bussola_bba9894df0a6f5ce.json | 13/04/2026, 16:39:47 | DLC\toussaint\witcher-dlc-ts-equipment |
+| corno_da_segnalazione_0c618d4cb56a898a.json | 13/04/2026, 16:39:47 | DLC\toussaint\witcher-dlc-ts-equipment |
+| fischietto_da_segnalazione_9e8b761951508914.json | 13/04/2026, 16:39:47 | DLC\toussaint\witcher-dlc-ts-equipment |
+| migliorie_per_balestre_4f0e4f21db0bae40.json | 13/04/2026, 16:39:47 | DLC\toussaint\witcher-dlc-ts-equipment |
+| otre_2e6ebf676b4ff447.json | 13/04/2026, 16:39:47 | DLC\toussaint\witcher-dlc-ts-equipment |
+| pietra_solare_2729c45923e54cad.json | 13/04/2026, 16:39:47 | DLC\toussaint\witcher-dlc-ts-equipment |
+| rodolf_kazmer_288ee308a5318712.json | 13/04/2026, 16:39:47 | DLC\toussaint\witcher-dlc-ts-png |
+| schema_armi_di_toussaint_24886ddd935af3d9.json | 13/04/2026, 16:39:47 | DLC\toussaint\witcher-dlc-ts-schematics |
 | Armatura dei Montanari.json | 13/04/2026, 10:53:35 | EQUIPAGGIAMENTO\base\witcher-armor |
 | Armatura di Corvo.json | 13/04/2026, 14:32:48 | EQUIPAGGIAMENTO\base\witcher-armor |
 | Armatura di Draugr.json | 13/04/2026, 14:32:48 | EQUIPAGGIAMENTO\base\witcher-armor |
@@ -1343,6 +1488,8 @@ Totale modifiche: 1505
 | temeria.json | 13/04/2026, 14:32:48 | LORE\base\witcher-lore |
 | valle_del_pontar.json | 13/04/2026, 14:32:48 | LORE\base\witcher-lore |
 | veyopatis.json | 13/04/2026, 14:32:48 | LORE\base\witcher-lore |
+| glossario_dialetto_skellige_12b8284314397886.json | 13/04/2026, 15:49:53 | LORE\base\witcher-lore-racconti |
+| societa_delle_maghe_dell_alto_monte_a0144e178fce23f5.json | 13/04/2026, 15:49:53 | LORE\base\witcher-lore-racconti |
 | lore__linee_geomantiche___definizione_eb145f9ad6ee28ab.json | 13/04/2026, 15:32:03 | LORE\caos\witcher-lore-chaos |
 | lore__linee_geomantiche___elemento_acqua_d70fc75101163b31.json | 13/04/2026, 15:32:03 | LORE\caos\witcher-lore-chaos |
 | lore__linee_geomantiche___elemento_aria_8ce2e2491e3e4854.json | 13/04/2026, 15:32:03 | LORE\caos\witcher-lore-chaos |
@@ -1609,7 +1756,25 @@ Totale modifiche: 1505
 | BESTIARIO/witcher-png-racconti | Da verificare se pack mancante o cartella di servizio |
 | CRAFTING/base/witcher-components-mutageni-dw | Da verificare se pack mancante o cartella di servizio |
 | CRAFTING/caos/witcher-mutazioni-tc | Da verificare se pack mancante o cartella di servizio |
+| DLC/arnesi/witcher-dlc-ap-alchemy | Da verificare se pack mancante o cartella di servizio |
+| DLC/arnesi/witcher-dlc-ap-equipment | Da verificare se pack mancante o cartella di servizio |
+| DLC/carri-e-viaggi/witcher-dlc-sr-equipment | Da verificare se pack mancante o cartella di servizio |
+| DLC/carri-e-viaggi/witcher-dlc-sr-lore | Da verificare se pack mancante o cartella di servizio |
+| DLC/disabilita-protesi/witcher-dlc-dp-equipment | Da verificare se pack mancante o cartella di servizio |
+| DLC/disabilita-protesi/witcher-dlc-dp-png | Da verificare se pack mancante o cartella di servizio |
+| DLC/mostri-strada/witcher-dlc-ms-components | Da verificare se pack mancante o cartella di servizio |
+| DLC/mostri-strada/witcher-dlc-ms-monsters | Da verificare se pack mancante o cartella di servizio |
+| DLC/nuove-professioni/witcher-dlc-np-professions | Da verificare se pack mancante o cartella di servizio |
+| DLC/scuola-lumaca/witcher-dlc-sl-equipment | Da verificare se pack mancante o cartella di servizio |
+| DLC/scuola-lumaca/witcher-dlc-sl-schematics | Da verificare se pack mancante o cartella di servizio |
+| DLC/scuole-witcher/witcher-dlc-sw-equipment | Da verificare se pack mancante o cartella di servizio |
+| DLC/scuole-witcher/witcher-dlc-sw-schematics | Da verificare se pack mancante o cartella di servizio |
+| DLC/toussaint/witcher-dlc-ts-alchemy | Da verificare se pack mancante o cartella di servizio |
+| DLC/toussaint/witcher-dlc-ts-equipment | Da verificare se pack mancante o cartella di servizio |
+| DLC/toussaint/witcher-dlc-ts-png | Da verificare se pack mancante o cartella di servizio |
+| DLC/toussaint/witcher-dlc-ts-schematics | Da verificare se pack mancante o cartella di servizio |
 | EQUIPAGGIAMENTO/caos/witcher-magic-items | Da verificare se pack mancante o cartella di servizio |
 | GAMEPLAY/base/witcher-investigations | Da verificare se pack mancante o cartella di servizio |
+| LORE/base/witcher-lore-racconti | Da verificare se pack mancante o cartella di servizio |
 | LORE/caos/witcher-lore-chaos | Da verificare se pack mancante o cartella di servizio |
 | MAGIA/caos/witcher-necromanzia | Da verificare se pack mancante o cartella di servizio |

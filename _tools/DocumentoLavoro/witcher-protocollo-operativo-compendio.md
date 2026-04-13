@@ -1,6 +1,6 @@
 # WITCHER COMPENDIUM — PROTOCOLLO OPERATIVO COMPLETO
 ## Documento di riferimento per LLM / AI Builder
-### Versione: 3.5 — Data: 13 Aprile 2026 (Sync Post-Unificazione)
+### Documento Statico (Aggiornato In-Place)
 ### Autore: Antigravity per il team Manuel
 
 ---
@@ -185,5 +185,5 @@ Nessuna sessione si chiude senza:
 
 ---
 
-*Documento aggiornato da Antigravity — 13 Aprile 2026 — v3.5*
-*Modifiche v3.5: Correzione totale dell'alberatura BESTIARIO (unificati Mostri e PNG). Integrazione pipeline di mirroring e deploy 1:1:1.*
+*Documento mantenuto costantemente aggiornato da Antigravity e dal Team.*
+*Ogni modifica sovrascrive direttamente questo file per mantenere una singola fonte di verità.*
