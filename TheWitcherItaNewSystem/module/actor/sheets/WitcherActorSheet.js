@@ -59,7 +59,7 @@ export default class WitcherActorSheet extends HandlebarsApplicationMixin(ActorS
         let context = await super._prepareContext(options);
 
         // Fix broken or old image paths for Actors
-        let imgPath = context.actor.img || "";
+        let imgPath = this.document.img || "";
         if (imgPath.includes('assets/optimized/')) {
             imgPath = imgPath.replace('assets/optimized/images/monsters/', 'assets/BESTIARIO/MOSTRI/');
             imgPath = imgPath.replace('assets/optimized/images/characters/', 'assets/CORE/characters/'); // Assumption

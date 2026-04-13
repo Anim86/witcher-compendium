@@ -52,7 +52,7 @@ export default class WitcherItemSheet extends HandlebarsApplicationMixin(ItemShe
         context.enrichedText = await this.document.system.enrichedText?.();
 
         // Fix broken or old image paths
-        let imgPath = context.item.img || "";
+        let imgPath = this.document.img || "";
         
         // 1. Handle old 'optimized' paths
         if (imgPath.includes('assets/optimized/')) {
