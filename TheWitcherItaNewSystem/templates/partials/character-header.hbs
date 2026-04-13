@@ -2,7 +2,7 @@
     <!-- Character Info Bar -->
     <div class="header-details-bar">
         <div class="header-top-row">
-            <div class="header-main-info">
+            <div class="header-main-info" style="flex: 1;">
                 <h1 class="charname">
                     <input name="name" type="text" value="{{actor.name}}" placeholder="{{localize 'WITCHER.Name'}}" />
                 </h1>
@@ -16,15 +16,16 @@
                 </div>
             </div>
 
-            <div class="reputation-badge" data-action="editReputation" data-tooltip="{{localize 'WITCHER.Reputation'}}: {{localize (concat 'WITCHER.reputationLevels.' system.reputation.value)}}">
-                <div class="badge-icon">
+            <!-- Reputation Badge -->
+            <div class="reputation-badge" data-action="editReputation" data-tooltip="{{localize 'WITCHER.Reputation'}}: {{localize (concat 'WITCHER.reputationLevels.' system.reputation.value)}}" data-tooltip-direction="UP">
+                <div class="rep-icon">
                     <i class="fas fa-award"></i>
                 </div>
-                <div class="badge-content">
-                    <span class="badge-label">{{localize 'WITCHER.Reputation'}}</span>
-                    <span class="badge-value">{{system.reputation.value}}</span>
+                <div class="rep-details">
+                    <span class="rep-label">{{localize 'WITCHER.Reputation'}}</span>
+                    <span class="rep-value">{{#if system.reputation.value}}{{system.reputation.value}}{{else}}0{{/if}}</span>
                 </div>
-                <div class="badge-edit">
+                <div class="rep-edit-hint">
                     <i class="fas fa-cog"></i>
                 </div>
             </div>
@@ -66,22 +67,6 @@
                     <i class="fas fa-weight-hanging"></i>
                     <span>{{totalWeight}} / {{system.derivedStats.enc.value}}</span>
                 </div>
-            </div>
-
-            <!-- Action Buttons -->
-            <div class="header-actions char-button-list">
-                <a class="button-roll config-roll configure-actor" title="{{localize 'WITCHER.Actor.settings.actor'}}">
-                    <i class="fas fa-cog"></i>
-                </a>
-                <a class="button-roll init-roll" title="{{localize 'WITCHER.Actor.Initiative'}}">
-                    <i class="fas fa-running"></i>
-                </a>
-                <a class="button-roll verbal-roll verbal-button" title="{{localize 'WITCHER.verbalCombat.Title'}}">
-                    <i class="fas fa-comments"></i>
-                </a>
-                <a class="button-roll crit-roll" title="{{localize 'WITCHER.Actor.Crit/Fumble'}}">
-                    <i class="fas fa-skull"></i>
-                </a>
             </div>
         </div>
     </div>

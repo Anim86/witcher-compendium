@@ -64,8 +64,7 @@ table th {
 .item-enhancement { height: 30px; width: 30px; }
 .no-margin { margin: 0; }
 
-/* ── Currency ── */
-.currency { flex: 1; display: flex; flex-direction: column; }
+/* ── Items ── */
 
 .wrapper { position: relative; }
 
@@ -135,23 +134,127 @@ table th {
 .currency-section {
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    background: light-dark(rgba(201,168,76,0.08), rgba(120,90,20,0.25));
-    border: 1px solid light-dark(rgba(160,120,30,0.3), rgba(201,168,76,0.28));
-    border-radius: 10px;
-    padding: 10px;
-    color: light-dark(#1a2530, #e8e0d4);
-    flex: 1;
-    box-shadow: 0 1px 6px rgba(0,0,0,0.12);
+    gap: 8px;
+    background: light-dark(rgba(201, 168, 76, 0.08), rgba(60, 45, 10, 0.4));
+    border: 1px solid light-dark(rgba(160, 120, 30, 0.3), rgba(201, 168, 76, 0.15));
+    border-radius: 8px;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
 
-    span {
+    .currency-header {
         display: flex;
         justify-content: space-between;
-        font-size: 18px;
-        font-weight: 700;
+        align-items: center;
+        border-bottom: 1px solid rgba(201, 168, 76, 0.2);
+        padding-bottom: 4px;
+        margin-bottom: 4px;
+
+        .header-title {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--w-gold);
+            font-family: 'Goudy Old Style', serif;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .open-rewards {
+            color: rgba(255,255,255,0.6);
+            transition: color 0.2s, transform 0.2s;
+            cursor: pointer;
+            font-size: 14px;
+
+            &:hover {
+                color: var(--w-gold);
+                transform: scale(1.1);
+            }
+        }
     }
 
-    .currency-list { display: flex; gap: 5px; }
+    .currency-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(85px, 1fr));
+        gap: 8px;
+        padding: 4px 0;
+    }
+
+    .currency-item {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 2px;
+        background: rgba(0,0,0,0.2);
+        padding: 4px 6px 2px 6px;
+        border-radius: 4px;
+        border: 1px solid rgba(255,255,255,0.05);
+        transition: border-color 0.2s, background 0.2s;
+
+        .coin-label {
+            font-size: 8px;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.4);
+            text-align: center;
+            line-height: 1;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-weight: bold;
+            letter-spacing: 0.3px;
+        }
+
+        .coin-row {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        &:hover {
+            border-color: rgba(201, 168, 76, 0.4);
+            background: rgba(0,0,0,0.3);
+        }
+
+        .coin-icon {
+            font-size: 10px; /* Small circle */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            box-shadow: 0 0 5px rgba(0,0,0,0.5);
+
+            &.gold { color: #ffd700; text-shadow: 0 0 3px #aa8800; }
+            &.silver { color: #e0e0e0; text-shadow: 0 0 3px #888888; }
+            &.copper { color: #cd7f32; text-shadow: 0 0 3px #884411; }
+            &.false { color: #666666; text-shadow: 0 0 3px #000000; opacity: 0.7; }
+        }
+
+        input {
+            width: 100%;
+            height: 24px !important;
+            background: transparent !important;
+            border: none !important;
+            color: #eee !important;
+            font-size: 13px !important;
+            font-weight: bold !important;
+            padding: 0 !important;
+            text-align: right;
+            outline: none !important;
+            box-shadow: none !important;
+
+            /* Hide arrows */
+            &::-webkit-inner-spin-button,
+            &::-webkit-outer-spin-button {
+                -webkit-appearance: none;
+                margin: 0;
+            }
+            -moz-appearance: textfield;
+        }
+    }
 }
 
 /* ── Weight bar ── */

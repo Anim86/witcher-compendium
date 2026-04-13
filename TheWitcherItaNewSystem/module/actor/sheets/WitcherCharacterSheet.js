@@ -491,7 +491,7 @@ export default class WitcherCharacterSheet extends WitcherActorSheet {
         const currentRep = actor.system.reputation.value || 0;
         
         let optionsHtml = '';
-        for (let i = 1; i <= 10; i++) {
+        for (let i = 0; i <= 10; i++) {
             const label = game.i18n.localize(`WITCHER.reputationLevels.${i}`);
             const selected = i === currentRep ? 'selected' : '';
             optionsHtml += `<option value="${i}" ${selected}>Livello ${i}: ${label.substring(0, 40)}${label.length > 40 ? '...' : ''}</option>`;
@@ -500,27 +500,27 @@ export default class WitcherCharacterSheet extends WitcherActorSheet {
         const content = `
             <div class="reputation-dialog-container" style="display: flex; flex-direction: column; gap: 15px; padding: 10px;">
                 <div class="rep-select-group">
-                    <label style="font-weight: bold; display: block; margin-bottom: 5px;">${game.i18n.localize('WITCHER.Reputation')} (Grado 1-10):</label>
-                    <select name="repLevel" class="gold-select" style="width: 100%; height: 32px; background: rgba(0,0,0,0.2); color: white; border: 1px solid var(--w-gold);">
+                    <label style="font-weight: bold; display: block; margin-bottom: 8px; color: var(--w-gold); text-transform: uppercase; font-size: 11px; letter-spacing: 0.5px;">${game.i18n.localize('WITCHER.Reputation')} (Grado 0-10):</label>
+                    <select name="repLevel" style="width: 100%; height: 36px; padding: 0 10px; background: rgba(0,0,0,0.4); color: white; border: 1px solid var(--w-gold); border-radius: 4px; font-family: 'Goudy Old Style', serif; font-size: 15px; cursor: pointer; outline: none;">
                         ${optionsHtml}
                     </select>
                 </div>
                 
-                <div class="rep-description-box" style="background: rgba(28, 104, 136, 0.1); border-left: 4px solid var(--w-gold); padding: 15px; border-radius: 4px; min-height: 100px; display: flex; flex-direction: column; justify-content: center;">
-                    <h4 style="margin: 0 0 8px 0; font-size: 11px; text-transform: uppercase; color: var(--w-gold); letter-spacing: 1px;">Chi ti conosce:</h4>
-                    <p class="rep-preview-text" style="margin: 0; font-size: 14px; font-style: italic; line-height: 1.4;">
-                        ${game.i18n.localize(`WITCHER.reputationLevels.${currentRep || 1}`)}
+                <div class="rep-description-box" style="background: rgba(28, 104, 136, 0.1); border-left: 4px solid var(--w-gold); padding: 15px; border-radius: 4px; min-height: 100px; display: flex; flex-direction: column; justify-content: center; box-shadow: inset 0 0 10px rgba(0,0,0,0.2);">
+                    <h4 style="margin: 0 0 8px 0; font-size: 11px; text-transform: uppercase; color: var(--w-gold); letter-spacing: 1px; opacity: 0.8;">Chi ti conosce:</h4>
+                    <p class="rep-preview-text" style="margin: 0; font-size: 14px; font-style: italic; line-height: 1.4; color: #ddd;">
+                        ${game.i18n.localize(`WITCHER.reputationLevels.${currentRep}`)}
                     </p>
                 </div>
 
                 ${actor.system.reputation.modifiers.length > 0 ? `
                 <div class="rep-modifiers">
-                    <label style="font-weight: bold; margin-bottom: 8px; display: block;">${game.i18n.localize('WITCHER.Apply.Mod')}:</label>
-                    <div class="mod-list" style="display: flex; flex-direction: column; gap: 5px; max-height: 100px; overflow-y: auto;">
+                    <label style="font-weight: bold; margin-bottom: 8px; display: block; color: var(--w-gold); font-size: 11px; text-transform: uppercase;">${game.i18n.localize('WITCHER.Apply.Mod')}:</label>
+                    <div class="mod-list" style="display: flex; flex-direction: column; gap: 6px; max-height: 120px; overflow-y: auto; padding-right: 5px;">
                         ${actor.system.reputation.modifiers.map(mod => `
-                            <label class="checkbox-label" style="display: flex; align-items: center; gap: 10px; cursor: pointer; padding: 4px; background: rgba(255,255,255,0.05); border-radius: 4px;">
-                                <input class="rep-mod-checkbox" id="${mod.name.replace(/\s/g, '')}" type="checkbox" data-mod-value="${mod.value}" style="width: 16px; height: 16px;" />
-                                <span>${mod.name} (${mod.value})</span>
+                            <label class="checkbox-label" style="display: flex; align-items: center; gap: 12px; cursor: pointer; padding: 6px 10px; background: rgba(255,255,255,0.05); border-radius: 4px; transition: background 0.2s;">
+                                <input class="rep-mod-checkbox" id="${mod.name.replace(/\s/g, '')}" type="checkbox" data-mod-value="${mod.value}" style="width: 16px; height: 16px; accent-color: var(--w-gold);" />
+                                <span style="font-size: 13px;">${mod.name} <strong style="color: var(--w-gold);">(${mod.value})</strong></span>
                             </label>
                         `).join('')}
                     </div>
@@ -537,20 +537,20 @@ export default class WitcherCharacterSheet extends WitcherActorSheet {
             content,
             buttons: [
                 {
-                    action: "saveRep",
+                    action: "repUpdate",
                     label: game.i18n.localize('WITCHER.ReputationButton.UpdateLevel'),
                     class: "standard-button gold",
-                    callback: async (event, button, instance) => {
-                        const newLevel = parseInt(instance.element.querySelector('[name="repLevel"]').value);
-                        await actor.update({ "system.reputation.value": newLevel });
+                    callback: async (event, button, dialog) => {
+                        const newLevel = parseInt(dialog.element.querySelector('[name="repLevel"]').value);
+                        await actor.update({ "system.reputation.max": newLevel });
                     }
                 },
                 {
-                    action: "rollRep",
+                    action: "repSave",
                     label: game.i18n.localize('WITCHER.ReputationButton.Save'),
                     class: "standard-button blue",
-                    callback: async (event, button, instance) => {
-                        const html = instance.element;
+                    callback: async (event, button, dialog) => {
+                        const html = dialog.element;
                         let statValue = parseInt(html.querySelector('[name="repLevel"]').value);
                         
                         html.querySelectorAll('.rep-mod-checkbox').forEach(checkbox => {
@@ -576,11 +576,11 @@ export default class WitcherCharacterSheet extends WitcherActorSheet {
                     }
                 },
                 {
-                    action: "faceDown",
+                    action: "repFaceDown",
                     label: game.i18n.localize('WITCHER.ReputationButton.FaceDown'),
                     class: "standard-button red",
-                    callback: async (event, button, instance) => {
-                        const html = instance.element;
+                    callback: async (event, button, dialog) => {
+                        const html = dialog.element;
                         let repValue = parseInt(html.querySelector('[name="repLevel"]').value);
                         
                         html.querySelectorAll('.rep-mod-checkbox').forEach(checkbox => {
@@ -608,6 +608,20 @@ export default class WitcherCharacterSheet extends WitcherActorSheet {
                 select.addEventListener('change', (e) => {
                     preview.innerText = game.i18n.localize(`WITCHER.reputationLevels.${e.target.value}`);
                 });
+
+                // Add tooltips to buttons in the footer (after a small delay to ensure rendering)
+                setTimeout(() => {
+                    const footer = instance.element.closest('.window-content')?.parentElement.querySelector('footer.window-footer');
+                    if (footer) {
+                        const btnUpdate = footer.querySelector('[data-button-action="repUpdate"]');
+                        const btnSave = footer.querySelector('[data-button-action="repSave"]');
+                        const btnFaceDown = footer.querySelector('[data-button-action="repFaceDown"]');
+
+                        if (btnUpdate) btnUpdate.dataset.tooltip = game.i18n.localize('WITCHER.ReputationButton.UpdateLevelTooltip');
+                        if (btnSave) btnSave.dataset.tooltip = game.i18n.localize('WITCHER.ReputationButton.SaveTooltip');
+                        if (btnFaceDown) btnFaceDown.dataset.tooltip = game.i18n.localize('WITCHER.ReputationButton.FaceDownTooltip');
+                    }
+                }, 100);
             }
         });
         dialog.render(true);

@@ -1408,6 +1408,7 @@
     "Apply.Mod": "Applica un modificatore",
     "verbalCombatTitle": "Combattimento Verbale",
     "reputationLevels": {
+      "0": "Nessuna reputazione",
       "1": "Circolo ristretto di persone",
       "2": "Sono circolate alcune storie, ma solo all’interno di alcuni ambiti",
       "3": "Tutte le tue conoscenze, i colleghi e gli amici ti conoscono",
@@ -1421,8 +1422,11 @@
     },
     "ReputationTitle": "Esecuzione di un tiro di reputazione",
     "ReputationButton.UpdateLevel": "Salva Grado",
+    "ReputationButton.UpdateLevelTooltip": "Aggiorna permanentemente il grado di reputazione del personaggio.",
     "ReputationButton.Save": "Tiro Salvezza (1d10)",
+    "ReputationButton.SaveTooltip": "Effettua un tiro di 1d10 contro il tuo valore di Reputazione. Se il risultato è inferiore o uguale, la prova è superata.",
     "ReputationButton.FaceDown": "Sguardo d'Intesa (Confronto)",
+    "ReputationButton.FaceDownTooltip": "Effettua un tiro contrapposto (1d10 + Reputazione + Volontà) contro un avversario per intimidirlo o impressionarlo.",
     "ReputationSave.Title": "Salvataggio di Reputazione",
     "ReputationFaceDown.Title": "Sguardo d'Intesa (Confronto)",
     "verbalCombat": {

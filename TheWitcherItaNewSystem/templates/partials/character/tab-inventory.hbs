@@ -8,45 +8,64 @@
     </div>
 
     <div class="currency-section">
-        <span>
-            <span>{{localize 'WITCHER.Actor.rewards.currency'}}</span>
-            <a class="open-rewards"><i class="fa-solid fa-clipboard-list"></i></a>
-        </span>
-        <div class="currency-list">
-            <div class="currency">
-                <label>{{localize "WITCHER.Currency.bizant"}}</label>
-                <input class="small-medium" name="system.currency.bizant" type="number"
-                    value="{{system.currency.bizant}}" placeholder="0" data-dtype="Number" />
+        <div class="currency-header">
+            <div class="header-title">
+                <i class="fas fa-coins"></i>
+                <span>{{localize 'WITCHER.Actor.rewards.currency'}}</span>
             </div>
-            <div class="currency">
-                <label>{{localize "WITCHER.Currency.ducat"}}</label>
-                <input class="small-medium" name="system.currency.ducat" type="number"
-                    value="{{system.currency.ducat}}" placeholder="0" data-dtype="Number" />
+            <a class="open-rewards" data-tooltip="Visualizza Registro Ricompense">
+                <i class="fa-solid fa-clipboard-list"></i>
+            </a>
+        </div>
+        <div class="currency-grid">
+            <div class="currency-item" data-tooltip="{{localize "WITCHER.Currency.bizant"}}">
+                <span class="coin-label">{{localize "WITCHER.Currency.bizant"}}</span>
+                <div class="coin-row">
+                    <div class="coin-icon gold"><i class="fas fa-circle"></i></div>
+                    <input name="system.currency.bizant" type="number" value="{{system.currency.bizant}}" placeholder="0" data-dtype="Number" />
+                </div>
             </div>
-            <div class="currency">
-                <label>{{localize "WITCHER.Currency.lintar"}}</label>
-                <input class="small-medium" name="system.currency.lintar" type="number"
-                    value="{{system.currency.lintar}}" placeholder="0" data-dtype="Number" />
+            <div class="currency-item" data-tooltip="{{localize "WITCHER.Currency.ducat"}}">
+                <span class="coin-label">{{localize "WITCHER.Currency.ducat"}}</span>
+                <div class="coin-row">
+                    <div class="coin-icon gold"><i class="fas fa-circle"></i></div>
+                    <input name="system.currency.ducat" type="number" value="{{system.currency.ducat}}" placeholder="0" data-dtype="Number" />
+                </div>
             </div>
-            <div class="currency">
-                <label>{{localize "WITCHER.Currency.floren"}}</label>
-                <input class="small-medium" name="system.currency.floren" type="number"
-                    value="{{system.currency.floren}}" placeholder="0" data-dtype="Number" />
+            <div class="currency-item" data-tooltip="{{localize "WITCHER.Currency.lintar"}}">
+                <span class="coin-label">{{localize "WITCHER.Currency.lintar"}}</span>
+                <div class="coin-row">
+                    <div class="coin-icon silver"><i class="fas fa-circle"></i></div>
+                    <input name="system.currency.lintar" type="number" value="{{system.currency.lintar}}" placeholder="0" data-dtype="Number" />
+                </div>
             </div>
-            <div class="currency">
-                <label>{{localize "WITCHER.Currency.crown"}}</label>
-                <input class="small-medium" name="system.currency.crown" type="number"
-                    value="{{system.currency.crown}}" placeholder="0" data-dtype="Number" />
+            <div class="currency-item" data-tooltip="{{localize "WITCHER.Currency.floren"}}">
+                <span class="coin-label">{{localize "WITCHER.Currency.floren"}}</span>
+                <div class="coin-row">
+                    <div class="coin-icon gold"><i class="fas fa-circle"></i></div>
+                    <input name="system.currency.floren" type="number" value="{{system.currency.floren}}" placeholder="0" data-dtype="Number" />
+                </div>
             </div>
-            <div class="currency">
-                <label>{{localize "WITCHER.Currency.oren"}}</label>
-                <input class="small-medium" name="system.currency.oren" type="number"
-                    value="{{system.currency.oren}}" placeholder="0" data-dtype="Number" />
+            <div class="currency-item" data-tooltip="{{localize "WITCHER.Currency.crown"}}">
+                <span class="coin-label">{{localize "WITCHER.Currency.crown"}}</span>
+                <div class="coin-row">
+                    <div class="coin-icon copper"><i class="fas fa-circle"></i></div>
+                    <input name="system.currency.crown" type="number" value="{{system.currency.crown}}" placeholder="0" data-dtype="Number" />
+                </div>
             </div>
-            <div class="currency">
-                <label>{{localize "WITCHER.Currency.falsecoin"}}</label>
-                <input class="small-medium" name="system.currency.falsecoin" type="number"
-                    value="{{system.currency.falsecoin}}" placeholder="0" data-dtype="Number" />
+            <div class="currency-item" data-tooltip="{{localize "WITCHER.Currency.oren"}}">
+                <span class="coin-label">{{localize "WITCHER.Currency.oren"}}</span>
+                <div class="coin-row">
+                    <div class="coin-icon silver"><i class="fas fa-circle"></i></div>
+                    <input name="system.currency.oren" type="number" value="{{system.currency.oren}}" placeholder="0" data-dtype="Number" />
+                </div>
+            </div>
+            <div class="currency-item" data-tooltip="{{localize "WITCHER.Currency.falsecoin"}}">
+                <span class="coin-label">{{localize "WITCHER.Currency.falsecoin"}}</span>
+                <div class="coin-row">
+                    <div class="coin-icon false"><i class="fas fa-circle"></i></div>
+                    <input name="system.currency.falsecoin" type="number" value="{{system.currency.falsecoin}}" placeholder="0" data-dtype="Number" />
+                </div>
             </div>
         </div>
     </div>

@@ -725,6 +725,10 @@ a.button-roll:hover {
     gap: 8px;
 }
 
+.core-stats-list .stat-grid {
+    grid-template-columns: repeat(4, 1fr);
+}
+
 /* ── Stat / Derived common box ── */
 .char-stat-button,
 .char-derived-button {
@@ -805,18 +809,17 @@ a.button-roll:hover {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        gap: 4px;
+        gap: 3px;
         width: 100%;
-        font-size: 11px;
+        font-size: 10px;
         font-weight: 600;
         font-variant-numeric: tabular-nums;
         margin-top: 1px;
-        opacity: 0.8;
+        opacity: 0.9;
 
-        .divider { color: var(--w-text-muted); opacity: 0.5; }
-        .max, .stat-mod-zero { color: light-dark(#1555b8, #7099F0); }
-        .stat-mod-plus       { color: light-dark(#1a7a30, #56C574); }
-        .stat-mod-minus      { color: light-dark(#b82020, #E86363); }
+        .divider { color: var(--w-text-muted); opacity: 0.4; }
+        .max { color: var(--w-text-muted); opacity: 0.8; }
+        .current-display { color: var(--w-teal-light); }
     }
 
     .skill-icons {
@@ -841,6 +844,7 @@ a.button-roll:hover {
     
     .stat-icon i { color: var(--w-gold); }
     .label .current-val { color: var(--w-gold); }
+    .mod .current-display { color: var(--w-gold); }
 }
 
 .char-stat-button:hover {
@@ -1042,6 +1046,86 @@ a.button-roll:hover {
     &.is-learned { border-left: 3px solid #2ecc71; }
     &.custom { border-left: 3px solid #e67e22; }
 }
+
+/* ── Quick Actions Bar ── */
+.quick-actions-container {
+    margin-bottom: 25px;
+    background: light-dark(rgba(0,0,0,0.03), rgba(255,255,255,0.02));
+    border-radius: var(--w-radius-lg);
+    padding: 15px;
+    border: 1px solid var(--w-border);
+}
+
+.quick-actions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.action-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 10px;
+    background: var(--w-surface);
+    border: 1px solid var(--w-border);
+    border-radius: var(--w-radius);
+    color: var(--w-text);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    text-align: center;
+    gap: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+.action-btn i {
+    font-size: 20px;
+    color: var(--w-teal-light);
+    transition: transform 0.3s ease;
+}
+
+.action-btn .action-label {
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--w-text-muted);
+}
+
+.action-btn:hover {
+    background: var(--w-surface-hover);
+    border-color: var(--w-teal-light);
+    transform: translateY(-2px);
+    box-shadow: var(--w-shadow-md);
+}
+
+.action-btn:hover i {
+    transform: scale(1.15);
+    color: var(--w-teal);
+}
+
+.action-btn:active {
+    transform: translateY(0);
+}
+
+/* Special button highlights */
+.action-btn.init-roll:hover { border-color: #3498db; }
+.action-btn.init-roll:hover i { color: #3498db; }
+
+.action-btn.death-roll:hover { border-color: #e74c3c; }
+.action-btn.death-roll:hover i { color: #e74c3c; }
+
+.action-btn.crit-roll:hover { border-color: #f1c40f; }
+.action-btn.crit-roll:hover i { color: #f1c40f; }
+
+.action-btn.recover-sta:hover { border-color: #2ecc71; }
+.action-btn.recover-sta:hover i { color: #2ecc71; }
+
+.action-btn.verbal-button:hover { border-color: #9b59b6; }
+.action-btn.verbal-button:hover i { color: #9b59b6; }
 
 .skill-column details {
     border: 1px solid var(--w-border);

@@ -1,4 +1,36 @@
 <section class="tab {{tabs.stats.cssClass}} standard-form" data-group="primary" data-tab="stats">
+    <!-- Quick Actions Bar -->
+    <div class="quick-actions-container">
+        <div class="char-stat-title">
+            <i class="fa-solid fa-bolt-lightning"></i>
+            <span class="sheet-label-box">{{localize 'WITCHER.Actor.settings.general'}}</span>
+        </div>
+        <div class="quick-actions-grid">
+            <a class="action-btn init-roll" data-tooltip="{{localize 'WITCHER.Actor.Initiative'}}">
+                <i class="fas fa-running"></i>
+                <span class="action-label">{{localize 'WITCHER.Actor.Initiative'}}</span>
+            </a>
+            <a class="action-btn death-roll" data-tooltip="{{localize 'WITCHER.Actor.SavingThrow'}}">
+                <i class="fas fa-shield-heart"></i>
+                <span class="action-label">{{localize 'WITCHER.Actor.SavingThrow'}}</span>
+            </a>
+            <a class="action-btn crit-roll" data-tooltip="{{localize 'WITCHER.Actor.Crit/Fumble'}}">
+                <i class="fas fa-dice-d20"></i>
+                <span class="action-label">{{localize 'WITCHER.Actor.Crit/Fumble'}}</span>
+            </a>
+            <a class="action-btn recover-sta" data-tooltip="{{localize 'WITCHER.Actor.RecoveryStamina'}}">
+                <i class="fas fa-battery-quarter"></i>
+                <span class="action-label">{{localize 'WITCHER.Actor.RecoveryStamina'}}</span>
+            </a>
+            {{#if useVerbalCombat}}
+            <a class="action-btn verbal-button" data-tooltip="{{localize 'WITCHER.verbalCombat.Title'}}">
+                <i class="fas fa-comments"></i>
+                <span class="action-label">{{localize 'WITCHER.verbalCombat.Title'}}</span>
+            </a>
+            {{/if}}
+        </div>
+    </div>
+
     <div class='character-statistics'>
         <div class='char-stat-title'>
             <i class="fa-solid fa-trophy"></i>
@@ -25,14 +57,12 @@
                         <div class="stat-content">
                             <div class="label">
                                 <span>{{localize details.label}}</span>
-                                <span class="current-val">{{#if (gte details.value 0)}}+{{/if}}{{details.value}}</span>
+                                <span class="current-val">{{details.value}}</span>
                             </div>
                             <div class="mod" data-tooltip="{{localize 'WITCHER.Actor.StatTitle.ModMax'}}">
-                                <span class="max">{{details.max}}</span>
+                                <span class="current-display">{{details.value}}</span>
                                 <span class="divider">/</span>
-                                <span class="stat-mod {{#if (gt details.value details.max)}}stat-mod-plus{{else if (eq details.value details.max)}}stat-mod-zero{{else}}stat-mod-minus{{/if}}">
-                                    {{#if (gte (formatModLabel details.value details.max) 0)}}+{{/if}}{{formatModLabel details.value details.max}}
-                                </span>
+                                <span class="max">{{details.max}}</span>
                             </div>
                         </div>
                     </a>
@@ -65,28 +95,28 @@
                 <div class='stat-display char-derived-button der-card-{{derStat}}' data-type='derStat' data-stat='{{derStat}}'
                     data-tooltip="{{#if (localize (concat 'WITCHER.Actor.DerStat.Desc.' derStat))}}{{localize (concat 'WITCHER.Actor.DerStat.Desc.' derStat)}}{{else}}{{localize details.label}}{{/if}}">
                     <div class="stat-icon">
-                        {{#if (eq derStat 'stun')}}<i class="fa-solid fa-fainting-face"></i>{{/if}}
+                        {{#if (eq derStat 'stun')}}<i class="fa-solid fa-dizzy"></i>{{/if}}
                         {{#if (eq derStat 'run')}}<i class="fa-solid fa-wind"></i>{{/if}}
                         {{#if (eq derStat 'leap')}}<i class="fa-solid fa-up-long"></i>{{/if}}
                         {{#if (eq derStat 'hp')}}<i class="fa-solid fa-heart"></i>{{/if}}
                         {{#if (eq derStat 'sta')}}<i class="fa-solid fa-bolt"></i>{{/if}}
                         {{#if (eq derStat 'vigor')}}<i class="fa-solid fa-hand-holding-hand"></i>{{/if}}
                         {{#if (eq derStat 'enc')}}<i class="fa-solid fa-weight-hanging"></i>{{/if}}
-                        {{#if (eq derStat 'rec')}}<i class="fa-solid fa-medkit"></i>{{/if}}
+                        {{#if (eq derStat 'rec')}}<i class="fa-solid fa-suitcase-medical"></i>{{/if}}
                         {{#if (eq derStat 'resolve')}}<i class="fa-solid fa-shield-heart"></i>{{/if}}
                         {{#if (eq derStat 'focus')}}<i class="fa-solid fa-eye"></i>{{/if}}
+                        {{#if (eq derStat 'shield')}}<i class="fa-solid fa-shield-halved"></i>{{/if}}
+                        {{#if (eq derStat 'woundTreshold')}}<i class="fa-solid fa-droplet-slash"></i>{{/if}}
                     </div>
                     <div class="stat-content">
                         <div class="label">
                             <span>{{localize details.label}}</span>
-                            <span class="current-val">{{#if (gte details.value 0)}}+{{/if}}{{details.value}}</span>
+                            <span class="current-val">{{details.value}}</span>
                         </div>
                         <div class="mod" data-tooltip="{{localize 'WITCHER.Actor.StatTitle.ModMax'}}">
-                            <span class="max">{{details.max}}</span>
+                            <span class="current-display">{{details.value}}</span>
                             <span class="divider">/</span>
-                            <span class="stat-mod {{#if (gt details.value details.max)}}stat-mod-plus{{else if (eq details.value details.max)}}stat-mod-zero{{else}}stat-mod-minus{{/if}}">
-                                {{#if (gte (formatModLabel details.value details.max) 0)}}+{{/if}}{{formatModLabel details.value details.max}}
-                            </span>
+                            <span class="max">{{details.max}}</span>
                         </div>
                     </div>
                 </div>

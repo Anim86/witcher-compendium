@@ -1425,6 +1425,7 @@
     },
     "Apply.Mod": "Apply a modifier",
     "reputationLevels": {
+      "0": "No reputation",
       "1": "Anyone present at the time",
       "2": "Stories have circulated, but only within certain circles",
       "3": "All acquaintances, colleagues, and friends know",
@@ -1438,8 +1439,11 @@
     },
     "ReputationTitle": "Executing a reputation roll",
     "ReputationButton.UpdateLevel": "Save Level",
+    "ReputationButton.UpdateLevelTooltip": "Permanently updates the character's reputation rank.",
     "ReputationButton.Save": "Save (1d10)",
+    "ReputationButton.SaveTooltip": "Roll 1d10 against your Reputation value. If the result is lower or equal, the check is successful.",
     "ReputationButton.FaceDown": "Face-Down (Contest)",
+    "ReputationButton.FaceDownTooltip": "Roll a contested check (1d10 + Reputation + Will) against an opponent to intimidate or impress them.",
     "ReputationSave.Title": "Reputation Save",
     "ReputationFaceDown.Title": "Reputation Face-Down",
     "verbalCombat": {
