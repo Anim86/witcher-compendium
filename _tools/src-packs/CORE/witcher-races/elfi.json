@@ -1,38 +1,38 @@
 {
-    "name": "Elfi",
-    "type": "race",
-    "img": "modules/witcher-compendium/assets/CORE/witcher-races/elfo.webp",
-    "system": {
-        "sourcebook": "MB 23",
-        "perk1": {
-            "name": "Artistico",
-            "description": "<p>Gli elfi hanno un occhio innato per la bellezza e un talento naturale per le espressioni artistiche. Ottengono un bonus di <strong>+1 innato all’abilità Belle Arti</strong>.</p>"
-        },
-        "perk2": {
-            "name": "Tiratore",
-            "description": "<p>Anni di tradizione e pratica rendono gli elfi i migliori arcieri del Continente. Ottengono un <strong>+2 innato all’abilità Archi</strong> e possono incordare o estrarre un arco senza consumare un'azione.</p>"
-        },
-        "perk3": {
-            "name": "Sintonia Naturale",
-            "description": "<p>Gli elfi possiedono un legame magico con la natura. Gli animali li considerano amichevoli e non vengono disturbati dalla loro presenza. Inoltre, gli elfi trovano automaticamente sostanze vegetali <strong>comuni</strong> (o inferiori) se presenti nell'ambiente.</p>"
-        },
-        "perk4": {
-            "name": "-",
-            "description": "-"
-        },
-        "socialStanding": {
-            "north": "hated",
-            "nilfgaard": "equal",
-            "skellige": "equal",
-            "dolBlathanna": "equal",
-            "mahakam": "equal"
-        }
+  "name": "Elfi",
+  "type": "race",
+  "img": "modules/witcher-compendium/assets/CORE/witcher-races/elfo.webp",
+  "system": {
+    "sourcebook": "MB 23",
+    "perk1": {
+      "name": "Artistico",
+      "description": "<p>Gli elfi hanno un occhio innato per la bellezza e un talento naturale per le espressioni artistiche. Ottengono un bonus di <strong>+1 innato all’abilità Belle Arti</strong>.</p>"
     },
-    "effects": [],
-    "flags": {},
-    "_id": "0raceelf00000001",
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
+    "perk2": {
+      "name": "Tiratore",
+      "description": "<p>Anni di tradizione e pratica rendono gli elfi i migliori arcieri del Continente. Ottengono un <strong>+2 innato all’abilità Archi</strong> e possono incordare o estrarre un arco senza consumare un'azione.</p>"
+    },
+    "perk3": {
+      "name": "Sintonia Naturale",
+      "description": "<p>Gli elfi possiedono un legame magico con la natura. Gli animali li considerano amichevoli e non vengono disturbati dalla loro presenza. Inoltre, gli elfi trovano automaticamente sostanze vegetali <strong>comuni</strong> (o inferiori) se presenti nell'ambiente.</p>"
+    },
+    "perk4": {
+      "name": "-",
+      "description": "-"
+    },
+    "socialStanding": {
+      "north": "hated",
+      "nilfgaard": "equal",
+      "skellige": "equal",
+      "dolBlathanna": "equal",
+      "mahakam": "equal"
     }
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "24e63ac513a0d5e3",
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

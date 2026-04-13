@@ -1,38 +1,38 @@
 {
-    "name": "Umani",
-    "type": "race",
-    "img": "modules/witcher-compendium/assets/CORE/witcher-races/humano.webp",
-    "system": {
-        "sourcebook": "MB 23",
-        "perk1": {
-            "name": "Affidabile",
-            "description": "<p>In un mondo che non si fida dei non-umani, gli umani sembrano più affidabili. Ottengono un bonus di <strong>+1 alle prove di Carisma, Seduzione e Persuasione</strong> effettuate nei confronti di altri umani.</p>"
-        },
-        "perk2": {
-            "name": "Ingegno",
-            "description": "<p>Gli umani sono intelligenti e spesso trovano soluzioni brillanti a problemi complicati. Ottengono un bonus di <strong>+1 a Deduzione</strong>.</p>"
-        },
-        "perk3": {
-            "name": "Cocciuto",
-            "description": "<p>Parte della forza superiore degli umani risiede nella loro propensione a gettarsi sempre a testa bassa, anche in situazioni dove si rischia seriamente la vita. Un umano può far appello a tutto il suo coraggio e <strong>ritirare un fallimento</strong> in una prova di Resistere a Coercizione o Coraggio (3 volte per sessione). Deve scegliere il risultato più alto dei due tiri, ma se è comunque un fallimento non può utilizzare nuovamente questa facoltà per ritirare ancora lo stesso tiro.</p>"
-        },
-        "perk4": {
-            "name": "-",
-            "description": "-"
-        },
-        "socialStanding": {
-            "north": "equal",
-            "nilfgaard": "equal",
-            "skellige": "equal",
-            "dolBlathanna": "hated",
-            "mahakam": "tolerated"
-        }
+  "name": "Umani",
+  "type": "race",
+  "img": "modules/witcher-compendium/assets/CORE/witcher-races/humano.webp",
+  "system": {
+    "sourcebook": "MB 23",
+    "perk1": {
+      "name": "Affidabile",
+      "description": "<p>In un mondo che non si fida dei non-umani, gli umani sembrano più affidabili. Ottengono un bonus di <strong>+1 alle prove di Carisma, Seduzione e Persuasione</strong> effettuate nei confronti di altri umani.</p>"
     },
-    "effects": [],
-    "flags": {},
-    "_id": "racehuman0000001",
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
+    "perk2": {
+      "name": "Ingegno",
+      "description": "<p>Gli umani sono intelligenti e spesso trovano soluzioni brillanti a problemi complicati. Ottengono un bonus di <strong>+1 a Deduzione</strong>.</p>"
+    },
+    "perk3": {
+      "name": "Cocciuto",
+      "description": "<p>Parte della forza superiore degli umani risiede nella loro propensione a gettarsi sempre a testa bassa, anche in situazioni dove si rischia seriamente la vita. Un umano può far appello a tutto il suo coraggio e <strong>ritirare un fallimento</strong> in una prova di Resistere a Coercizione o Coraggio (3 volte per sessione). Deve scegliere il risultato più alto dei due tiri, ma se è comunque un fallimento non può utilizzare nuovamente questa facoltà per ritirare ancora lo stesso tiro.</p>"
+    },
+    "perk4": {
+      "name": "-",
+      "description": "-"
+    },
+    "socialStanding": {
+      "north": "equal",
+      "nilfgaard": "equal",
+      "skellige": "equal",
+      "dolBlathanna": "hated",
+      "mahakam": "tolerated"
     }
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "7d704613492c7519",
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

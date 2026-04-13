@@ -1,24 +1,24 @@
 {
-    "_id": "7370656c6c6c7230303033",
-    "name": "Bufera di van Adelaide",
-    "type": "spell",
-    "img": "modules/witcher-compendium/assets/MAGIA/racconti/witcher-spells-racconti/wind.svg",
-    "system": {
-        "description": "<p>Viene creata una nube di aria gelida e turbolenta attorno al mago che rende difficile colpirlo. Tutte le prove di attacco a distanza contro il mago subiscono una penalità di -2 finché l'incantesimo è attivo. Inoltre, chiunque entri in contatto con la bufera subisce 1d6 danni da freddo.</p>",
-        "sourcebook": "LR 168",
-        "class": "Mage",
-        "level": "master",
-        "source": "Air",
-        "stamina": 12,
-        "staminaIsVar": false,
-        "range": "Personale",
-        "duration": "Istantanea",
-        "defence": "Nessuna"
-    },
-    "effects": [],
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-    }
+  "_id": "207eb5086bb2f388",
+  "name": "Bufera di van Adelaide",
+  "type": "spell",
+  "img": "modules/witcher-compendium/assets/MAGIA/racconti/witcher-spells-racconti/wind.svg",
+  "system": {
+    "description": "<p>Viene creata una nube di aria gelida e turbolenta attorno al mago che rende difficile colpirlo. Tutte le prove di attacco a distanza contro il mago subiscono una penalità di -2 finché l'incantesimo è attivo. Inoltre, chiunque entri in contatto con la bufera subisce 1d6 danni da freddo.</p>",
+    "sourcebook": "LR 168",
+    "class": "Mage",
+    "level": "master",
+    "source": "Air",
+    "stamina": 12,
+    "staminaIsVar": false,
+    "range": "Personale",
+    "duration": "Istantanea",
+    "defence": "Nessuna"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

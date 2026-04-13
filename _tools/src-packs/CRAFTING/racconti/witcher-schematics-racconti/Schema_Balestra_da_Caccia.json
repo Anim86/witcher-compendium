@@ -1,23 +1,23 @@
 {
-    "_id": "6c72736368656d3031",
-    "name": "Schema: Balestra da Caccia",
-    "type": "diagrams",
-    "img": "modules/witcher-compendium/assets/CRAFTING/racconti/witcher-schematics-racconti/placeholder.webp",
-    "system": {
-        "description": "<p>Artigiani e manifatturieri possono utilizzare questo schema per creare una Balestra da Caccia.</p>",
-        "difficulty": 18,
-        "time": "9 ore",
-        "components": [
-            "Acciaio Mahakaman (x3), Cerume di Orco (x1), Cuoio Indurito (x1), Filo (x4), Legname Indurito (x3)"
-        ],
-        "sourcebook": "LR 169",
-        "weight": 0,
-        "cost": 0
-    },
-    "effects": [],
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-    }
+  "_id": "b6ae0de44fb9264b",
+  "name": "Schema: Balestra da Caccia",
+  "type": "diagrams",
+  "img": "modules/witcher-compendium/assets/CRAFTING/racconti/witcher-schematics-racconti/placeholder.webp",
+  "system": {
+    "description": "<p>Artigiani e manifatturieri possono utilizzare questo schema per creare una Balestra da Caccia.</p>",
+    "difficulty": 18,
+    "time": "9 ore",
+    "components": [
+      "Acciaio Mahakaman (x3), Cerume di Orco (x1), Cuoio Indurito (x1), Filo (x4), Legname Indurito (x3)"
+    ],
+    "sourcebook": "LR 169",
+    "weight": 0,
+    "cost": 0
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

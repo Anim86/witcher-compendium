@@ -1,86 +1,86 @@
 {
-    "name": "Medico",
-    "type": "profession",
-    "img": "modules/witcher-compendium/assets/CORE/witcher-professions/medico.webp",
-    "system": {
-        "sourcebook": "MB 45",
-        "definingSkill": {
-            "skillName": "Mani Guaritrici",
-            "stat": "cra",
-            "level": 1,
-            "definition": "<p>Un Medico possiede una preparazione che gli permette di eseguire complesse operazioni chirurgiche. Solo un Medico con <strong>Mani Guaritrici (CRA)</strong> è in grado di curare una Ferita Critica (con un numero di tiri e CD basati sulla gravità). Può essere utilizzata anche al posto di Pronto Soccorso.</p>"
-        },
-        "skillPath1": {
-            "pathName": "Il Chirurgo",
-            "skill1": {
-                "skillName": "Diagnosi",
-                "stat": "int",
-                "level": 0,
-                "definition": "<p>Esaminando un soggetto ferito, il Medico valuta le Ferite Critiche e apprende quanti PS restano al bersaglio. Questa valutazione conferisce un bonus di +2 alle prove di Mani Guaritrici per curare tali ferite.</p>"
-            },
-            "skill2": {
-                "skillName": "Analisi",
-                "stat": "int",
-                "level": 0,
-                "definition": "<p>Impiegando un turno extra per studiare le ferite, il chirurgo riduce il tempo necessario per la cura. Per ogni 2 punti sopra la CD (gravità della ferita), il Medico impiega 1 turno in meno a curarle (minimo 1).</p>"
-            },
-            "skill3": {
-                "skillName": "Chirurgia Efficace",
-                "stat": "cra",
-                "level": 0,
-                "definition": "<p>Superando una prova con CD pari a quella di Mani Guaritrici, la lesione viene curata con tale maestria da guarire in metà del tempo normale. Questa capacità si applica sia alle ferite critiche che a quelle normali.</p>"
-            }
-        },
-        "skillPath2": {
-            "pathName": "L'Erborista",
-            "skill1": {
-                "skillName": "Tenda Sanatorio",
-                "stat": "cra",
-                "level": 0,
-                "definition": "<p>Permette di allestire un'area medica in un'ora. L'ambiente conferisce +3 ai tiri di cura e aumenta di +2 il ritmo di guarigione di chi vi alloggia, per un numero di giorni pari al punteggio dell'abilità.</p>"
-            },
-            "skill2": {
-                "skillName": "Improvvisare",
-                "stat": "int",
-                "level": 0,
-                "definition": "<p>Permette di sostituire l'effetto di un oggetto alchemico medico usando ciò che si ha a portata di mano (CD dell'oggetto). Richiede 1 round e funziona solo per la specifica ferita trattata.</p>"
-            },
-            "skill3": {
-                "skillName": "Rimedio Erboristico",
-                "stat": "cra",
-                "level": 0,
-                "definition": "<p>Mescolando sostanze alchemiche, il Medico crea rimedi masticabili o da bruciare con effetti speciali (es. +15 PS, +3 Riflessi, annullamento dolore). Ogni rimedio dura 3 giorni ed è monouso.</p>"
-            }
-        },
-        "skillPath3": {
-            "pathName": "L'Anatomista",
-            "skill1": {
-                "skillName": "Ferita Sanguinante",
-                "stat": "int",
-                "level": 0,
-                "definition": "<p>Un attacco con arma tagliente (CD 15) che causa emorragia. Il bersaglio perde 1 PS per round per ogni 2 punti sopra la CD. L'emorragia può essere arrestata solo con Pronto Soccorso (CD pari al tiro del medico).</p>"
-            },
-            "skill2": {
-                "skillName": "Macello Pratico",
-                "stat": "int",
-                "level": 0,
-                "definition": "<p>Superando una prova con CD FIS x3 dell'avversario, le sue ferite guariranno in tempi doppi. L'effetto può essere contrastato solo da altri medici con Chirurgia Efficace o oggetti specifici.</p>"
-            },
-            "skill3": {
-                "skillName": "Menomare",
-                "stat": "int",
-                "level": 0,
-                "definition": "<p>Attacco mirato (penalità -6) che impone una penalità alle statistiche (RIF, FIS o VEL) pari a 1 per ogni 3 punti sopra la difesa nemica. La penalità permane finché non viene curata con Chirurgia Efficace.</p>"
-            }
-        },
-        "professionSkills": "Resistere a Coercizione, Carisma, Etichetta, Coraggio, Sensibilità, Sopravvivenza, Commercio, Deduzione, Lame Corte, Alchimia",
-        "notes": "<p>In un mondo dilaniato dalla guerra e dai mostri, il medico è una figura essenziale. Dagli accademici di Oxenfurt ai medici da campo, queste figure conoscono i segreti del corpo umano. Sanno come riportare indietro chi ha già un piede nella fossa, ma anche come usare la loro conoscenza anatomica per infliggere ferite debilitanti.</p>"
+  "name": "Medico",
+  "type": "profession",
+  "img": "modules/witcher-compendium/assets/CORE/witcher-professions/medico.webp",
+  "system": {
+    "sourcebook": "MB 45",
+    "definingSkill": {
+      "skillName": "Mani Guaritrici",
+      "stat": "cra",
+      "level": 1,
+      "definition": "<p>Un Medico possiede una preparazione che gli permette di eseguire complesse operazioni chirurgiche. Solo un Medico con <strong>Mani Guaritrici (CRA)</strong> è in grado di curare una Ferita Critica (con un numero di tiri e CD basati sulla gravità). Può essere utilizzata anche al posto di Pronto Soccorso.</p>"
     },
-    "effects": [],
-    "flags": {},
-    "_id": "rofdoctor0000001",
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-    }
+    "skillPath1": {
+      "pathName": "Il Chirurgo",
+      "skill1": {
+        "skillName": "Diagnosi",
+        "stat": "int",
+        "level": 0,
+        "definition": "<p>Esaminando un soggetto ferito, il Medico valuta le Ferite Critiche e apprende quanti PS restano al bersaglio. Questa valutazione conferisce un bonus di +2 alle prove di Mani Guaritrici per curare tali ferite.</p>"
+      },
+      "skill2": {
+        "skillName": "Analisi",
+        "stat": "int",
+        "level": 0,
+        "definition": "<p>Impiegando un turno extra per studiare le ferite, il chirurgo riduce il tempo necessario per la cura. Per ogni 2 punti sopra la CD (gravità della ferita), il Medico impiega 1 turno in meno a curarle (minimo 1).</p>"
+      },
+      "skill3": {
+        "skillName": "Chirurgia Efficace",
+        "stat": "cra",
+        "level": 0,
+        "definition": "<p>Superando una prova con CD pari a quella di Mani Guaritrici, la lesione viene curata con tale maestria da guarire in metà del tempo normale. Questa capacità si applica sia alle ferite critiche che a quelle normali.</p>"
+      }
+    },
+    "skillPath2": {
+      "pathName": "L'Erborista",
+      "skill1": {
+        "skillName": "Tenda Sanatorio",
+        "stat": "cra",
+        "level": 0,
+        "definition": "<p>Permette di allestire un'area medica in un'ora. L'ambiente conferisce +3 ai tiri di cura e aumenta di +2 il ritmo di guarigione di chi vi alloggia, per un numero di giorni pari al punteggio dell'abilità.</p>"
+      },
+      "skill2": {
+        "skillName": "Improvvisare",
+        "stat": "int",
+        "level": 0,
+        "definition": "<p>Permette di sostituire l'effetto di un oggetto alchemico medico usando ciò che si ha a portata di mano (CD dell'oggetto). Richiede 1 round e funziona solo per la specifica ferita trattata.</p>"
+      },
+      "skill3": {
+        "skillName": "Rimedio Erboristico",
+        "stat": "cra",
+        "level": 0,
+        "definition": "<p>Mescolando sostanze alchemiche, il Medico crea rimedi masticabili o da bruciare con effetti speciali (es. +15 PS, +3 Riflessi, annullamento dolore). Ogni rimedio dura 3 giorni ed è monouso.</p>"
+      }
+    },
+    "skillPath3": {
+      "pathName": "L'Anatomista",
+      "skill1": {
+        "skillName": "Ferita Sanguinante",
+        "stat": "int",
+        "level": 0,
+        "definition": "<p>Un attacco con arma tagliente (CD 15) che causa emorragia. Il bersaglio perde 1 PS per round per ogni 2 punti sopra la CD. L'emorragia può essere arrestata solo con Pronto Soccorso (CD pari al tiro del medico).</p>"
+      },
+      "skill2": {
+        "skillName": "Macello Pratico",
+        "stat": "int",
+        "level": 0,
+        "definition": "<p>Superando una prova con CD FIS x3 dell'avversario, le sue ferite guariranno in tempi doppi. L'effetto può essere contrastato solo da altri medici con Chirurgia Efficace o oggetti specifici.</p>"
+      },
+      "skill3": {
+        "skillName": "Menomare",
+        "stat": "int",
+        "level": 0,
+        "definition": "<p>Attacco mirato (penalità -6) che impone una penalità alle statistiche (RIF, FIS o VEL) pari a 1 per ogni 3 punti sopra la difesa nemica. La penalità permane finché non viene curata con Chirurgia Efficace.</p>"
+      }
+    },
+    "professionSkills": "Resistere a Coercizione, Carisma, Etichetta, Coraggio, Sensibilità, Sopravvivenza, Commercio, Deduzione, Lame Corte, Alchimia",
+    "notes": "<p>In un mondo dilaniato dalla guerra e dai mostri, il medico è una figura essenziale. Dagli accademici di Oxenfurt ai medici da campo, queste figure conoscono i segreti del corpo umano. Sanno come riportare indietro chi ha già un piede nella fossa, ma anche come usare la loro conoscenza anatomica per infliggere ferite debilitanti.</p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "7b5c75e2c888e21c",
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

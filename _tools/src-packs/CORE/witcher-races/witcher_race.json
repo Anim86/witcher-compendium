@@ -1,38 +1,38 @@
 {
-    "name": "Witcher",
-    "type": "race",
-    "img": "modules/witcher-compendium/assets/CORE/witcher-races/witcher.webp",
-    "system": {
-        "sourcebook": "MB 23",
-        "perk1": {
-            "name": "Sensi Acuiti",
-            "description": "<p>Grazie ai loro sensi intensificati, i witcher non subiscono penalità nelle aree di luce fioca e guadagnano un bonus di <strong>+1 innato all’abilità Accortezza</strong>, oltre alla facoltà di seguire tracce anche solo con l’olfatto.</p>"
-        },
-        "perk2": {
-            "name": "Emozioni Attenuate",
-            "description": "<p>A causa dei traumi e delle mutazioni, i witcher provano emozioni meno intense. Non sono tenuti a effettuare prove di coraggio contro Intimidire, ma subiscono un <strong>-4 all'Empatia</strong> (minimo 1). Inoltre, non possono alzare l'Empatia sopra il 6.</p>"
-        },
-        "perk3": {
-            "name": "Mutazione Resiliente",
-            "description": "<p>Per via delle mutazioni necessarie per diventare un witcher, questi sono <strong>immuni alle malattie</strong> e sono in grado di usare i mutageni.</p>"
-        },
-        "perk4": {
-            "name": "Riflessi Fulminei",
-            "description": "<p>Dopo un intenso addestramento e a causa delle mutazioni, i witcher sono molto più rapidi e agili degli umani. Ottengono un <strong>+1 permanente a Riflessi e Destrezza</strong>, che può portare queste statistiche sopra 10.</p>"
-        },
-        "socialStanding": {
-            "north": "hatedFeared",
-            "nilfgaard": "hatedFeared",
-            "skellige": "tolerated",
-            "dolBlathanna": "tolerated",
-            "mahakam": "tolerated"
-        }
+  "name": "Witcher",
+  "type": "race",
+  "img": "modules/witcher-compendium/assets/CORE/witcher-races/witcher.webp",
+  "system": {
+    "sourcebook": "MB 23",
+    "perk1": {
+      "name": "Sensi Acuiti",
+      "description": "<p>Grazie ai loro sensi intensificati, i witcher non subiscono penalità nelle aree di luce fioca e guadagnano un bonus di <strong>+1 innato all’abilità Accortezza</strong>, oltre alla facoltà di seguire tracce anche solo con l’olfatto.</p>"
     },
-    "effects": [],
-    "flags": {},
-    "_id": "racewitcher00001",
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
+    "perk2": {
+      "name": "Emozioni Attenuate",
+      "description": "<p>A causa dei traumi e delle mutazioni, i witcher provano emozioni meno intense. Non sono tenuti a effettuare prove di coraggio contro Intimidire, ma subiscono un <strong>-4 all'Empatia</strong> (minimo 1). Inoltre, non possono alzare l'Empatia sopra il 6.</p>"
+    },
+    "perk3": {
+      "name": "Mutazione Resiliente",
+      "description": "<p>Per via delle mutazioni necessarie per diventare un witcher, questi sono <strong>immuni alle malattie</strong> e sono in grado di usare i mutageni.</p>"
+    },
+    "perk4": {
+      "name": "Riflessi Fulminei",
+      "description": "<p>Dopo un intenso addestramento e a causa delle mutazioni, i witcher sono molto più rapidi e agili degli umani. Ottengono un <strong>+1 permanente a Riflessi e Destrezza</strong>, che può portare queste statistiche sopra 10.</p>"
+    },
+    "socialStanding": {
+      "north": "hatedFeared",
+      "nilfgaard": "hatedFeared",
+      "skellige": "tolerated",
+      "dolBlathanna": "tolerated",
+      "mahakam": "tolerated"
     }
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "faec413b522374b8",
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

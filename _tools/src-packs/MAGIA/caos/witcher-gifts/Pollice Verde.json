@@ -1,1 +1,17 @@
-﻿
+{
+    "name": "Pollice Verde",
+    "type": "item",
+    "img": "modules/witcher-compendium/assets/MAGIA/caos/witcher-gifts/Pollice_Verde.webp",
+    "system": {
+        "sourcebook": "TC 75",
+        "description": "<p><strong>Effetto:</strong> con un’Azione, il personaggio può far crescere un seme fino a divenire una pianta adulta. Questo effetto funziona per erbe e piante medicinali, non per alberi.</p><p><strong>Effetti Collaterali:</strong> se il personaggio consuma un composto alchemico a base vegetale creato da lui stesso subisce la condizione Avvelenato, oltre al normale effetto.</p>",
+        "stats": {
+            "cost": "1 RES (Azione)"
+        }
+    },
+    "_id": "db5f4d52cc1aa355",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

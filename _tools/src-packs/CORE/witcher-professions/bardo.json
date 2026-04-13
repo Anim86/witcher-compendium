@@ -1,86 +1,86 @@
 {
-    "name": "Bardo",
-    "type": "profession",
-    "img": "modules/witcher-compendium/assets/CORE/witcher-professions/bardo.webp",
-    "system": {
-        "sourcebook": "MB 42",
-        "definingSkill": {
-            "skillName": "Artista di Strada",
-            "stat": "emp",
-            "level": 1,
-            "definition": "<p>Un Bardo può impiegare un’ora ed effettuare una prova di <strong>Artista di Strada (EMP)</strong> nel più vicino centro cittadino per racimolare denaro. Il risultato del tiro è il totale di Corone guadagnate. Un disastro può portare a un totale negativo, causando insulti dalla folla e un -2 al Carisma verso gli abitanti del luogo fino al giorno dopo.</p>"
-        },
-        "skillPath1": {
-            "pathName": "L'Ammaliatore",
-            "skill1": {
-                "skillName": "Grande Ritorno",
-                "stat": "emp",
-                "level": 0,
-                "definition": "<p>Permette di scoprire se il bardo ha già suonato in quella città. Con un successo, il bardo si è fatto un nome: il ricavo di Artista di Strada è raddoppiato e ottiene +2 al Carisma verso gli abitanti.</p>"
-            },
-            "skill2": {
-                "skillName": "Attrarre la Folla",
-                "stat": "emp",
-                "level": 0,
-                "definition": "<p>Spendendo un intero round, il Bardo attira l'attenzione di chiunque entro 20m. Chi fallisce la difesa (Resistere a Coercizione) non può fare altro che osservare l'esibizione (finché non viene attaccato).</p>"
-            },
-            "skill3": {
-                "skillName": "Buon Amico",
-                "stat": "emp",
-                "level": 0,
-                "definition": "<p>Permette di trovare un vecchio amico disposto a fare un favore ragionevole. Il risultato del tiro determina quanto l'amico è importante o utile (secondo l'apposita tabella).</p>"
-            }
-        },
-        "skillPath2": {
-            "pathName": "L'Informatore",
-            "skill1": {
-                "skillName": "Confondersi",
-                "stat": "int",
-                "level": 0,
-                "definition": "<p>Permette al bardo di sparire dalla vista o di nascondersi in piena vista (intrufolandosi in conversazioni o spostando l'attenzione), contrapponendo il tiro all'Accortezza dei presenti.</p>"
-            },
-            "skill2": {
-                "skillName": "Diffondere la Parola",
-                "stat": "int",
-                "level": 0,
-                "definition": "<p>Se il bardo vince una prova di Inganno, può tentare di far diffondere la menzogna dal bersaglio. Se ha successo, ottiene +2 ai futuri tiri di Inganno per quella specifica menzogna in quell'area.</p>"
-            },
-            "skill3": {
-                "skillName": "Adattarsi",
-                "stat": "int",
-                "level": 0,
-                "definition": "<p>Permette al bardo di sembrare uno del posto in un insediamento. Con un successo, non è più trattato come un forestiero e ottiene +2 a Carisma e Persuasione con la gente del luogo.</p>"
-            }
-        },
-        "skillPath3": {
-            "pathName": "Il Manipolatore",
-            "skill1": {
-                "skillName": "Avvelenare il Pozzo",
-                "stat": "emp",
-                "level": 0,
-                "definition": "<p>Un commento pungente impone una penalità (-1 per ogni punto sopra la CD) ai tiri sociali del bersaglio (Seduzione, Persuasione, Autorità, etc.). La CD è pari alla EMP x3 del bersaglio.</p>"
-            },
-            "skill2": {
-                "skillName": "Pungolare",
-                "stat": "emp",
-                "level": 0,
-                "definition": "<p>Il Bardo schernisce il bersaglio finché questi non lo attacca. Il bersaglio subisce una penalità ad attacco/difesa pari a metà del livello di Pungolare per un numero di round pari al valore dell'abilità.</p>"
-            },
-            "skill3": {
-                "skillName": "Tu Quoque Brute",
-                "stat": "emp",
-                "level": 0,
-                "definition": "<p>Permette di far rivoltare un bersaglio contro un alleato tramite bugie e mezze verità. L'effetto dura un numero di giorni pari al valore dell'abilità o finché il bersaglio non supera un tiro di Resistere a Coercizione.</p>"
-            }
-        },
-        "professionSkills": "Carisma, Inganno, Esibirsi, Linguaggio (1 a scelta), Sensibilità, Persuasione, Scaltrezza, Belle Arti, Seduzione, Etichetta",
-        "notes": "<p>Non si sa mai cosa aspettarsi da un bardo. Possono essere poeti erranti che cantano di eroi e leggende, o scaltre spie che manipolano le folle e le menti per ottenere segreti. Il loro talento nel trafficare con la testa della gente è pari solo alla loro abilità nel raccontare storie.</p>"
+  "name": "Bardo",
+  "type": "profession",
+  "img": "modules/witcher-compendium/assets/CORE/witcher-professions/bardo.webp",
+  "system": {
+    "sourcebook": "MB 42",
+    "definingSkill": {
+      "skillName": "Artista di Strada",
+      "stat": "emp",
+      "level": 1,
+      "definition": "<p>Un Bardo può impiegare un’ora ed effettuare una prova di <strong>Artista di Strada (EMP)</strong> nel più vicino centro cittadino per racimolare denaro. Il risultato del tiro è il totale di Corone guadagnate. Un disastro può portare a un totale negativo, causando insulti dalla folla e un -2 al Carisma verso gli abitanti del luogo fino al giorno dopo.</p>"
     },
-    "effects": [],
-    "flags": {},
-    "_id": "profbard00000001",
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-    }
+    "skillPath1": {
+      "pathName": "L'Ammaliatore",
+      "skill1": {
+        "skillName": "Grande Ritorno",
+        "stat": "emp",
+        "level": 0,
+        "definition": "<p>Permette di scoprire se il bardo ha già suonato in quella città. Con un successo, il bardo si è fatto un nome: il ricavo di Artista di Strada è raddoppiato e ottiene +2 al Carisma verso gli abitanti.</p>"
+      },
+      "skill2": {
+        "skillName": "Attrarre la Folla",
+        "stat": "emp",
+        "level": 0,
+        "definition": "<p>Spendendo un intero round, il Bardo attira l'attenzione di chiunque entro 20m. Chi fallisce la difesa (Resistere a Coercizione) non può fare altro che osservare l'esibizione (finché non viene attaccato).</p>"
+      },
+      "skill3": {
+        "skillName": "Buon Amico",
+        "stat": "emp",
+        "level": 0,
+        "definition": "<p>Permette di trovare un vecchio amico disposto a fare un favore ragionevole. Il risultato del tiro determina quanto l'amico è importante o utile (secondo l'apposita tabella).</p>"
+      }
+    },
+    "skillPath2": {
+      "pathName": "L'Informatore",
+      "skill1": {
+        "skillName": "Confondersi",
+        "stat": "int",
+        "level": 0,
+        "definition": "<p>Permette al bardo di sparire dalla vista o di nascondersi in piena vista (intrufolandosi in conversazioni o spostando l'attenzione), contrapponendo il tiro all'Accortezza dei presenti.</p>"
+      },
+      "skill2": {
+        "skillName": "Diffondere la Parola",
+        "stat": "int",
+        "level": 0,
+        "definition": "<p>Se il bardo vince una prova di Inganno, può tentare di far diffondere la menzogna dal bersaglio. Se ha successo, ottiene +2 ai futuri tiri di Inganno per quella specifica menzogna in quell'area.</p>"
+      },
+      "skill3": {
+        "skillName": "Adattarsi",
+        "stat": "int",
+        "level": 0,
+        "definition": "<p>Permette al bardo di sembrare uno del posto in un insediamento. Con un successo, non è più trattato come un forestiero e ottiene +2 a Carisma e Persuasione con la gente del luogo.</p>"
+      }
+    },
+    "skillPath3": {
+      "pathName": "Il Manipolatore",
+      "skill1": {
+        "skillName": "Avvelenare il Pozzo",
+        "stat": "emp",
+        "level": 0,
+        "definition": "<p>Un commento pungente impone una penalità (-1 per ogni punto sopra la CD) ai tiri sociali del bersaglio (Seduzione, Persuasione, Autorità, etc.). La CD è pari alla EMP x3 del bersaglio.</p>"
+      },
+      "skill2": {
+        "skillName": "Pungolare",
+        "stat": "emp",
+        "level": 0,
+        "definition": "<p>Il Bardo schernisce il bersaglio finché questi non lo attacca. Il bersaglio subisce una penalità ad attacco/difesa pari a metà del livello di Pungolare per un numero di round pari al valore dell'abilità.</p>"
+      },
+      "skill3": {
+        "skillName": "Tu Quoque Brute",
+        "stat": "emp",
+        "level": 0,
+        "definition": "<p>Permette di far rivoltare un bersaglio contro un alleato tramite bugie e mezze verità. L'effetto dura un numero di giorni pari al valore dell'abilità o finché il bersaglio non supera un tiro di Resistere a Coercizione.</p>"
+      }
+    },
+    "professionSkills": "Carisma, Inganno, Esibirsi, Linguaggio (1 a scelta), Sensibilità, Persuasione, Scaltrezza, Belle Arti, Seduzione, Etichetta",
+    "notes": "<p>Non si sa mai cosa aspettarsi da un bardo. Possono essere poeti erranti che cantano di eroi e leggende, o scaltre spie che manipolano le folle e le menti per ottenere segreti. Il loro talento nel trafficare con la testa della gente è pari solo alla loro abilità nel raccontare storie.</p>"
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "76962a12e6dc0694",
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

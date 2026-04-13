@@ -1,20 +1,20 @@
 {
-    "name": "Shock Settico",
-    "type": "criticalWound",
-    "system": {
-        "severity": "deadly",
-        "description": "<p>Il colpo danneggia gli intestini, immettendo escrementi nel flusso sanguigno.</p><p><b>Uscita:</b> Il bersaglio riduce a un quarto il suo valore di Resistenza e subisce -3 INT, VOL, RIF e DES. È avvelenato.</p><p><b>Stabilizzato:</b> La vittima dimezza il suo valore di Resistenza e subisce -1 INT, VOL, RIF e DES.</p><p><b>Curato:</b> La vittima subisce -5 permanentemente alla Resistenza.</p>",
-        "sourcebook": "MB 161"
-    },
-    "img": "modules/witcher-compendium/assets/GAMEPLAY/base/witcher-critical-wounds/hazard.svg",
-    "effects": [],
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14,
-        "createdTime": 1712760000000,
-        "modifiedTime": 1712760000000,
-        "lastModifiedBy": "antigravity"
-    },
-    "_id": "critw014septi"
+  "name": "Shock Settico",
+  "type": "criticalWound",
+  "system": {
+    "severity": "deadly",
+    "description": "<p>Il colpo danneggia gli intestini, immettendo escrementi nel flusso sanguigno.</p><p><b>Uscita:</b> Il bersaglio riduce a un quarto il suo valore di Resistenza e subisce -3 INT, VOL, RIF e DES. È avvelenato.</p><p><b>Stabilizzato:</b> La vittima dimezza il suo valore di Resistenza e subisce -1 INT, VOL, RIF e DES.</p><p><b>Curato:</b> La vittima subisce -5 permanentemente alla Resistenza.</p>",
+    "sourcebook": "MB 161"
+  },
+  "img": "modules/witcher-compendium/assets/GAMEPLAY/base/witcher-critical-wounds/hazard.svg",
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14,
+    "createdTime": 1712760000000,
+    "modifiedTime": 1712760000000,
+    "lastModifiedBy": "antigravity"
+  },
+  "_id": "e7ea9dfa3a6292a0"
 }

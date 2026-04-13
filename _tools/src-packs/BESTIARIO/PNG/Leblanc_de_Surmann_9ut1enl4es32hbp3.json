@@ -1,148 +1,148 @@
 {
-    "_id": "9ut1enl4es32hbp3",
-    "name": "Leblanc de Surmann",
-    "type": "character",
-    "img": "modules/witcher-compendium/assets/BESTIARIO/PNG/placeholder.webp",
-    "system": {
-        "stats": {
-            "int": {
-                "value": 0,
-                "max": 0
-            },
-            "ref": {
-                "value": 0,
-                "max": 0
-            },
-            "dex": {
-                "value": 0,
-                "max": 0
-            },
-            "body": {
-                "value": 0,
-                "max": 0
-            },
-            "spd": {
-                "value": 0,
-                "max": 0
-            },
-            "emp": {
-                "value": 0,
-                "max": 0
-            },
-            "cra": {
-                "value": 0,
-                "max": 0
-            },
-            "will": {
-                "value": 0,
-                "max": 0
-            },
-            "luck": {
-                "value": 0,
-                "max": 0
-            }
-        },
-        "skills": {
-            "accortezza": {
-                "value": 0
-            },
-            "armiInAsta": {
-                "value": 0
-            },
-            "atletica": {
-                "value": 0
-            },
-            "cavalcare": {
-                "value": 0
-            },
-            "coraggio": {
-                "value": 0
-            },
-            "eleganza": {
-                "value": 0
-            },
-            "eludere": {
-                "value": 0
-            },
-            "etichetta": {
-                "value": 0
-            },
-            "istruzione": {
-                "value": 0
-            },
-            "resistereAllaMagia": {
-                "value": 0
-            },
-            "rissa": {
-                "value": 0
-            },
-            "scherma": {
-                "value": 0
-            },
-            "tempra": {
-                "value": 0
-            }
-        },
-        "details": {
-            "biography": "<p>Cavaliere errante di Toussaint e unico figlio del Camerlengo Ducale. È un giovane valoroso ma forse un po' troppo ingenuo, spinto da una profezia che lo vuole salvatore della damigella circondata di farfalle. Indossa una pesante armatura di piastre e impugna una partigiana.</p>",
-            "threat": "Medio",
-            "reward": 0
-        },
-        "derivedStats": {
-            "health": {
-                "value": 0,
-                "max": 0
-            },
-            "stamina": {
-                "value": 0,
-                "max": 0
-            },
-            "rec": {
-                "value": 0,
-                "max": 0
-            },
-            "stun": {
-                "value": 0
-            },
-            "woundTreshold": {
-                "value": 0
-            }
-        },
-        "description": "<p>Cavaliere errante di Toussaint e unico figlio del Camerlengo Ducale. È un giovane valoroso ma forse un po' troppo ingenuo, spinto da una profezia che lo vuole salvatore della damigella circondata di farfalle.</p>",
-        "sourcebook": "LR 146"
+  "_id": "cbd55d1ebe04bef8",
+  "name": "Leblanc de Surmann",
+  "type": "character",
+  "img": "modules/witcher-compendium/assets/BESTIARIO/PNG/placeholder.webp",
+  "system": {
+    "stats": {
+      "int": {
+        "value": 0,
+        "max": 0
+      },
+      "ref": {
+        "value": 0,
+        "max": 0
+      },
+      "dex": {
+        "value": 0,
+        "max": 0
+      },
+      "body": {
+        "value": 0,
+        "max": 0
+      },
+      "spd": {
+        "value": 0,
+        "max": 0
+      },
+      "emp": {
+        "value": 0,
+        "max": 0
+      },
+      "cra": {
+        "value": 0,
+        "max": 0
+      },
+      "will": {
+        "value": 0,
+        "max": 0
+      },
+      "luck": {
+        "value": 0,
+        "max": 0
+      }
     },
-    "items": [
-        {
-            "name": "Partigiana",
-            "type": "weapon",
-            "img": "icons/svg/sword.svg",
-            "system": {
-                "damage": "4d6+2",
-                "accuracy": 0,
-                "effects": "Portata, Sanguinamento (25%)"
-            }
-        },
-        {
-            "name": "Grande Elmo",
-            "type": "armor",
-            "img": "icons/svg/armor.svg",
-            "system": {
-                "stoppingPower": 20,
-                "location": "head"
-            }
-        },
-        {
-            "name": "Armatura di Piastre",
-            "type": "armor",
-            "img": "icons/svg/armor.svg",
-            "system": {
-                "stoppingPower": 20,
-                "location": "torso"
-            }
-        }
-    ],
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
+    "skills": {
+      "accortezza": {
+        "value": 0
+      },
+      "armiInAsta": {
+        "value": 0
+      },
+      "atletica": {
+        "value": 0
+      },
+      "cavalcare": {
+        "value": 0
+      },
+      "coraggio": {
+        "value": 0
+      },
+      "eleganza": {
+        "value": 0
+      },
+      "eludere": {
+        "value": 0
+      },
+      "etichetta": {
+        "value": 0
+      },
+      "istruzione": {
+        "value": 0
+      },
+      "resistereAllaMagia": {
+        "value": 0
+      },
+      "rissa": {
+        "value": 0
+      },
+      "scherma": {
+        "value": 0
+      },
+      "tempra": {
+        "value": 0
+      }
+    },
+    "details": {
+      "biography": "<p>Cavaliere errante di Toussaint e unico figlio del Camerlengo Ducale. È un giovane valoroso ma forse un po' troppo ingenuo, spinto da una profezia che lo vuole salvatore della damigella circondata di farfalle. Indossa una pesante armatura di piastre e impugna una partigiana.</p>",
+      "threat": "Medio",
+      "reward": 0
+    },
+    "derivedStats": {
+      "health": {
+        "value": 0,
+        "max": 0
+      },
+      "stamina": {
+        "value": 0,
+        "max": 0
+      },
+      "rec": {
+        "value": 0,
+        "max": 0
+      },
+      "stun": {
+        "value": 0
+      },
+      "woundTreshold": {
+        "value": 0
+      }
+    },
+    "description": "<p>Cavaliere errante di Toussaint e unico figlio del Camerlengo Ducale. È un giovane valoroso ma forse un po' troppo ingenuo, spinto da una profezia che lo vuole salvatore della damigella circondata di farfalle.</p>",
+    "sourcebook": "LR 146"
+  },
+  "items": [
+    {
+      "name": "Partigiana",
+      "type": "weapon",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "damage": "4d6+2",
+        "accuracy": 0,
+        "effects": "Portata, Sanguinamento (25%)"
+      }
+    },
+    {
+      "name": "Grande Elmo",
+      "type": "armor",
+      "img": "icons/svg/armor.svg",
+      "system": {
+        "stoppingPower": 20,
+        "location": "head"
+      }
+    },
+    {
+      "name": "Armatura di Piastre",
+      "type": "armor",
+      "img": "icons/svg/armor.svg",
+      "system": {
+        "stoppingPower": 20,
+        "location": "torso"
+      }
     }
+  ],
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

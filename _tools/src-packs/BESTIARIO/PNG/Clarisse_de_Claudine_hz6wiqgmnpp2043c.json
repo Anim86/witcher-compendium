@@ -1,116 +1,116 @@
 {
-    "_id": "hz6wiqgmnpp2043c",
-    "name": "Clarisse de Claudine",
-    "type": "character",
-    "img": "modules/witcher-compendium/assets/BESTIARIO/PNG/placeholder.webp",
-    "system": {
-        "stats": {
-            "int": {
-                "value": 0,
-                "max": 0
-            },
-            "ref": {
-                "value": 0,
-                "max": 0
-            },
-            "dex": {
-                "value": 0,
-                "max": 0
-            },
-            "body": {
-                "value": 0,
-                "max": 0
-            },
-            "spd": {
-                "value": 0,
-                "max": 0
-            },
-            "emp": {
-                "value": 0,
-                "max": 0
-            },
-            "cra": {
-                "value": 0,
-                "max": 0
-            },
-            "will": {
-                "value": 0,
-                "max": 0
-            },
-            "luck": {
-                "value": 0,
-                "max": 0
-            }
-        },
-        "skills": {
-            "alchimia": {
-                "value": 0
-            },
-            "eleganza": {
-                "value": 0
-            },
-            "insegnamento": {
-                "value": 0
-            },
-            "accortezza": {
-                "value": 0
-            },
-            "lanciareIncantesimi": {
-                "value": 0
-            },
-            "officiareRituali": {
-                "value": 0
-            },
-            "intessereFatture": {
-                "value": 0
-            },
-            "resistereAllaMagia": {
-                "value": 0
-            },
-            "tempra": {
-                "value": 0
-            }
-        },
-        "details": {
-            "biography": "<p>Terzo membro della Società, Clarisse è un'esperta alchimista che preferisce la solitudine del suo laboratorio. Si è unita a Louise e Catrin per i vantaggi della ricerca magica e condivide con loro segreti alchemici unici.</p>",
-            "threat": "Difficile",
-            "reward": 0
-        },
-        "derivedStats": {
-            "health": {
-                "value": 0,
-                "max": 0
-            },
-            "stamina": {
-                "value": 0,
-                "max": 0
-            },
-            "rec": {
-                "value": 0,
-                "max": 0
-            },
-            "stun": {
-                "value": 0
-            },
-            "woundTreshold": {
-                "value": 0
-            }
-        },
-        "description": "<p>Terzo membro della Società, Clarisse è un'esperta alchimista che preferisce la solitudine del suo laboratorio. Si è unita a Louise e Catrin per i vantaggi della ricerca magica e condivide con loro segreti alchemici unici.</p>",
-        "sourcebook": "LR 19"
+  "_id": "4b8cc64c249a436a",
+  "name": "Clarisse de Claudine",
+  "type": "character",
+  "img": "modules/witcher-compendium/assets/BESTIARIO/PNG/placeholder.webp",
+  "system": {
+    "stats": {
+      "int": {
+        "value": 0,
+        "max": 0
+      },
+      "ref": {
+        "value": 0,
+        "max": 0
+      },
+      "dex": {
+        "value": 0,
+        "max": 0
+      },
+      "body": {
+        "value": 0,
+        "max": 0
+      },
+      "spd": {
+        "value": 0,
+        "max": 0
+      },
+      "emp": {
+        "value": 0,
+        "max": 0
+      },
+      "cra": {
+        "value": 0,
+        "max": 0
+      },
+      "will": {
+        "value": 0,
+        "max": 0
+      },
+      "luck": {
+        "value": 0,
+        "max": 0
+      }
     },
-    "items": [
-        {
-            "name": "[Incantesimo] Sostituzione di de Claudine",
-            "type": "spell",
-            "img": "icons/svg/lightning.svg",
-            "system": {
-                "description": "<p>Permette di rimpiazzare un'unità di una Sostanza Alchemica con un'altra.</p>"
-            }
-        }
-    ],
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
+    "skills": {
+      "alchimia": {
+        "value": 0
+      },
+      "eleganza": {
+        "value": 0
+      },
+      "insegnamento": {
+        "value": 0
+      },
+      "accortezza": {
+        "value": 0
+      },
+      "lanciareIncantesimi": {
+        "value": 0
+      },
+      "officiareRituali": {
+        "value": 0
+      },
+      "intessereFatture": {
+        "value": 0
+      },
+      "resistereAllaMagia": {
+        "value": 0
+      },
+      "tempra": {
+        "value": 0
+      }
+    },
+    "details": {
+      "biography": "<p>Terzo membro della Società, Clarisse è un'esperta alchimista che preferisce la solitudine del suo laboratorio. Si è unita a Louise e Catrin per i vantaggi della ricerca magica e condivide con loro segreti alchemici unici.</p>",
+      "threat": "Difficile",
+      "reward": 0
+    },
+    "derivedStats": {
+      "health": {
+        "value": 0,
+        "max": 0
+      },
+      "stamina": {
+        "value": 0,
+        "max": 0
+      },
+      "rec": {
+        "value": 0,
+        "max": 0
+      },
+      "stun": {
+        "value": 0
+      },
+      "woundTreshold": {
+        "value": 0
+      }
+    },
+    "description": "<p>Terzo membro della Società, Clarisse è un'esperta alchimista che preferisce la solitudine del suo laboratorio. Si è unita a Louise e Catrin per i vantaggi della ricerca magica e condivide con loro segreti alchemici unici.</p>",
+    "sourcebook": "LR 19"
+  },
+  "items": [
+    {
+      "name": "[Incantesimo] Sostituzione di de Claudine",
+      "type": "spell",
+      "img": "icons/svg/lightning.svg",
+      "system": {
+        "description": "<p>Permette di rimpiazzare un'unità di una Sostanza Alchemica con un'altra.</p>"
+      }
     }
+  ],
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

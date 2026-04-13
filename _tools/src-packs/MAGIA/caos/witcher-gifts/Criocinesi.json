@@ -1,1 +1,17 @@
-﻿
+{
+    "name": "Criocinesi",
+    "type": "item",
+    "img": "modules/witcher-compendium/assets/MAGIA/caos/witcher-gifts/Criocinesi.webp",
+    "system": {
+        "sourcebook": "TC 75",
+        "description": "<p><strong>Effetto:</strong> utilizzando un Round, il personaggio può congelare fino a due metri cubi di liquido o un singolo bersaglio entro 8m.</p><p><strong>Effetti Collaterali:</strong> Quando il personaggio è bersaglio di un effetto che lo renderebbe Congelato, non può resistere, ma invece delle normali penalità ciò riduce la sua VEL a 6 e i RIF a 4.</p>",
+        "stats": {
+            "cost": "2 RES (Prova CD 9)"
+        }
+    },
+    "_id": "a85157a813714c79",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

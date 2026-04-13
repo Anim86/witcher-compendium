@@ -1,38 +1,38 @@
 {
-    "name": "Nani",
-    "type": "race",
-    "img": "modules/witcher-compendium/assets/CORE/witcher-races/nano.webp",
-    "system": {
-        "sourcebook": "MB 23",
-        "perk1": {
-            "name": "Coriaceo",
-            "description": "<p>Trascorrendo molto tempo nelle miniere e nelle montagne, i nani hanno una pelle coriacea di natura. Pertanto la loro pelle ha una naturale <strong>capacità di blocco (PR) di 2</strong>. Questa PR non può essere ridotta da attacchi di armi o danno ablativo ed è cumulativa alle normali armature.</p>"
-        },
-        "perk2": {
-            "name": "Forte",
-            "description": "<p>Grazie alla loro tozza struttura e alla propensione a lavori duri e faticosi, i nani ottengono un bonus di <strong>+1 all’abilità Prestanza</strong> e aumentano il valore d’<strong>Ingombro di 25</strong>.</p>"
-        },
-        "perk3": {
-            "name": "Occhio da Artigiano",
-            "description": "<p>Grazie al loro occhio per i dettagli e le valutazioni, è difficile gabbare un nano. Ottengono un bonus di <strong>+1 all’abilità Commercio</strong>.</p>"
-        },
-        "perk4": {
-            "name": "-",
-            "description": "-"
-        },
-        "socialStanding": {
-            "north": "tolerated",
-            "nilfgaard": "equal",
-            "skellige": "equal",
-            "dolBlathanna": "equal",
-            "mahakam": "equal"
-        }
+  "name": "Nani",
+  "type": "race",
+  "img": "modules/witcher-compendium/assets/CORE/witcher-races/nano.webp",
+  "system": {
+    "sourcebook": "MB 23",
+    "perk1": {
+      "name": "Coriaceo",
+      "description": "<p>Trascorrendo molto tempo nelle miniere e nelle montagne, i nani hanno una pelle coriacea di natura. Pertanto la loro pelle ha una naturale <strong>capacità di blocco (PR) di 2</strong>. Questa PR non può essere ridotta da attacchi di armi o danno ablativo ed è cumulativa alle normali armature.</p>"
     },
-    "effects": [],
-    "flags": {},
-    "_id": "racedwarf0000001",
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
+    "perk2": {
+      "name": "Forte",
+      "description": "<p>Grazie alla loro tozza struttura e alla propensione a lavori duri e faticosi, i nani ottengono un bonus di <strong>+1 all’abilità Prestanza</strong> e aumentano il valore d’<strong>Ingombro di 25</strong>.</p>"
+    },
+    "perk3": {
+      "name": "Occhio da Artigiano",
+      "description": "<p>Grazie al loro occhio per i dettagli e le valutazioni, è difficile gabbare un nano. Ottengono un bonus di <strong>+1 all’abilità Commercio</strong>.</p>"
+    },
+    "perk4": {
+      "name": "-",
+      "description": "-"
+    },
+    "socialStanding": {
+      "north": "tolerated",
+      "nilfgaard": "equal",
+      "skellige": "equal",
+      "dolBlathanna": "equal",
+      "mahakam": "equal"
     }
+  },
+  "effects": [],
+  "flags": {},
+  "_id": "dbf30463fcf83a5d",
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }
