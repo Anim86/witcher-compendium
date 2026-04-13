@@ -405,6 +405,62 @@
       "path": "packs/DLC/scuola-lumaca/witcher-dlc-sl-schematics",
       "type": "Item",
       "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-png-racconti",
+      "label": "Bestiario (Personaggi Racconti)",
+      "path": "packs/BESTIARIO/witcher-png-racconti",
+      "type": "Actor",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-components-mutageni-dw",
+      "label": "Componenti e Mutageni (DW)",
+      "path": "packs/CRAFTING/base/witcher-components-mutageni-dw",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-mutazioni-tc",
+      "label": "Mutazioni (TC)",
+      "path": "packs/CRAFTING/caos/witcher-mutazioni-tc",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-magic-items",
+      "label": "Oggetti Magici (TC)",
+      "path": "packs/EQUIPAGGIAMENTO/caos/witcher-magic-items",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-investigations",
+      "label": "Indagini (DW)",
+      "path": "packs/GAMEPLAY/base/witcher-investigations",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-lore-racconti",
+      "label": "Lore (Racconti)",
+      "path": "packs/LORE/base/witcher-lore-racconti",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-lore-chaos",
+      "label": "Lore Chaos (TC)",
+      "path": "packs/LORE/caos/witcher-lore-chaos",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-necromanzia",
+      "label": "Necromanzia (TC)",
+      "path": "packs/MAGIA/caos/witcher-necromanzia",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
     }
   ],
   "languages": [
