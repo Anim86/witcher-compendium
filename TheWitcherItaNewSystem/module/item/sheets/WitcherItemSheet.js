@@ -51,6 +51,31 @@ export default class WitcherItemSheet extends HandlebarsApplicationMixin(ItemShe
         context.systemFields = this.document.system.schema.fields;
         context.enrichedText = await this.document.system.enrichedText?.();
 
+        // Fix broken or old image paths
+        let imgPath = context.item.img || "";
+        
+        // 1. Handle old 'optimized' paths
+        if (imgPath.includes('assets/optimized/')) {
+            imgPath = imgPath.replace('assets/optimized/images/professions/', 'assets/CORE/witcher-professions/');
+            imgPath = imgPath.replace('assets/optimized/images/races/', 'assets/CORE/witcher-races/');
+            imgPath = imgPath.replace('assets/optimized/assets/Immagini/', 'assets/EQUIPAGGIAMENTO/base/armi/'); // Heuristic fallback
+            
+            // If still contains optimized, try a generic cleanup
+            if (imgPath.includes('optimized/')) {
+                imgPath = imgPath.replace('/optimized/', '/CORE/'); // Last resort fallback
+            }
+        }
+
+        // 2. Handle filename-only paths (previous fix)
+        if (imgPath && !imgPath.includes('/')) {
+            if (context.item.type === 'profession') {
+                imgPath = `modules/witcher-compendium/assets/CORE/witcher-professions/${imgPath}`;
+            } else if (context.item.type === 'race') {
+                imgPath = `modules/witcher-compendium/assets/CORE/witcher-races/${imgPath}`;
+            }
+        }
+
+        context.itemImg = imgPath;
         context.data = context.item.system;
 
         context.showConfig = !!this.configuration;

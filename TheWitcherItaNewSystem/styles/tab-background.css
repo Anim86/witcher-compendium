@@ -124,23 +124,91 @@
 
 .general-section {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 5px;
 }
 
 .general-homeland,
 .general-info {
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    padding: 12px;
-    border-radius: 10px;
-    background: light-dark(rgba(28,104,136,0.07), rgba(14,50,70,0.45));
-    border: 1px solid light-dark(rgba(28,104,136,0.18), rgba(44,136,175,0.22));
-    box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+    gap: 10px;
+    padding: 15px;
+    min-height: 90px;
+    background: rgba(26, 46, 56, 0.4);
+    border: 1px solid rgba(44, 136, 175, 0.25);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
 }
 
-.homeland-select { display: flex; gap: 5px; }
+.general-homeland:hover,
+.general-info:hover {
+    border-color: var(--w-teal-light);
+    background: rgba(26, 46, 56, 0.6);
+    transform: translateY(-2px);
+}
+
+.general-homeland::before,
+.general-info::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--w-teal-light), transparent);
+    opacity: 0.3;
+}
+
+.general-homeland > label,
+.general-info > label,
+.general-homeland,
+.general-info {
+    font-size: 13px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--w-teal-light);
+}
+
+.homeland-select { 
+    display: flex; 
+    gap: 5px; 
+    width: 100%;
+}
+
+/* ── Styled Selects and Inputs ── */
+select.details,
+.general-section select,
+input.details {
+    background: rgba(0, 0, 0, 0.5) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 6px !important;
+    color: #fff !important;
+    padding: 8px 12px !important;
+    width: 100% !important;
+    cursor: pointer;
+    font-size: 13px;
+    transition: all 0.2s ease;
+}
+
+select.details:hover,
+.general-section select:hover,
+input.details:hover {
+    border-color: var(--w-teal-light) !important;
+    box-shadow: 0 0 10px rgba(44, 136, 175, 0.2) !important;
+}
+
+option {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 10px;
+}
 
 .background-description { overflow-y: auto; }
 

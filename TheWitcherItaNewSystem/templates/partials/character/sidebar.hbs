@@ -1,6 +1,6 @@
 <div class='char-sidebar'>
     <div class="char-image">
-        <img class='witcher-actor-img' src='{{actor.img}}' alt="actor image" data-action="editImage" data-edit='img'
+        <img class='witcher-actor-img' src='{{actorImg}}' alt="actor image" data-action="editImage" data-edit='img'
             title='{{actor.name}}' />
         <div class="encumbrance-indicator {{#if (gt system.derivedStats.enc.value system.derivedStats.enc.max)}}overweight{{/if}}" 
              data-tooltip="{{localize 'WITCHER.Actor.DerStat.Enc'}}">

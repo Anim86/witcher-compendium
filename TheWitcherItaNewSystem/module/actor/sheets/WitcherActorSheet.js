@@ -58,6 +58,18 @@ export default class WitcherActorSheet extends HandlebarsApplicationMixin(ActorS
     async _prepareContext(options) {
         let context = await super._prepareContext(options);
 
+        // Fix broken or old image paths for Actors
+        let imgPath = context.actor.img || "";
+        if (imgPath.includes('assets/optimized/')) {
+            imgPath = imgPath.replace('assets/optimized/images/monsters/', 'assets/BESTIARIO/MOSTRI/');
+            imgPath = imgPath.replace('assets/optimized/images/characters/', 'assets/CORE/characters/'); // Assumption
+            
+            if (imgPath.includes('optimized/')) {
+                imgPath = imgPath.replace('/optimized/', '/CORE/'); 
+            }
+        }
+        context.actorImg = imgPath;
+
         context.useAdrenaline = game.settings.get('TheWitcherItaNewSystem', 'useOptionalAdrenaline');
         context.displayRollDetails = game.settings.get('TheWitcherItaNewSystem', 'displayRollsDetails');
         context.useVerbalCombat = game.settings.get('TheWitcherItaNewSystem', 'useOptionalVerbalCombat');

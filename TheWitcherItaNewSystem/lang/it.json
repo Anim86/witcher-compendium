@@ -40,6 +40,7 @@
     }
   },
   "WITCHER": {
+    "homeland": "Patria",
     "Name": "Nome",
     "Type": "Tipo",
     "Percentage": "Percentuale",
@@ -49,7 +50,7 @@
       "name": "Attacco",
       "attackOptions": {
         "label": "L'attacco è:",
-        "hint": "Configure the attack options",
+        "hint": "Configura le opzioni di attacco",
         "melee": "Mischia",
         "ranged": "A Distanza",
         "spell": "Incantesimo",
@@ -99,9 +100,15 @@
         "background": "Background",
         "effects": "Effetti Attivi"
       },
+      "homeland": "Patria",
       "Name": "Nome Personaggio",
       "Race": "Razza",
-      "Gender": "Genere",
+      "Gender": {
+        "name": "Genere",
+        "Male": "Maschio",
+        "Female": "Femmina",
+        "Other": "Altro"
+      },
       "Age": "Età",
       "Perks": "Talenti",
       "Adda": {
@@ -130,13 +137,14 @@
           "emp": "Misura la tua capacità di relazionarti con gli altri.",
           "cra": "Misura la tua abilità nel creare, riparare e manipolare oggetti.",
           "will": "Misura la tua forza mentale e la determinazione.",
-          "luck": "Misura quanto il destino ti è favorevole."
+          "luck": "Misura quanto il destino ti è favorevole.",
+          "TotalStats": "Somma totale dei punti statistica spesi."
         }
       },
       "StatTitle": {
         "LableLeft": "Statistiche",
         "ModMax": "Mod / Max",
-        "Derived": "Derivate",
+        "DerStat": "Statistiche Derivate",
         "Attributes": "Attributi"
       },
       "DerStat": {
@@ -153,7 +161,23 @@
         "Vigor": "Vigore",
         "woundTreshold": "Soglia Ferita",
         "Punch": "Pugno",
-        "Kick": "Calcio"
+        "Kick": "Calcio",
+        "Desc": {
+          "hp": "Punti Ferita totali del personaggio.",
+          "sta": "Energia utilizzata per azioni fisiche e magie.",
+          "stun": "Soglia per non svenire quando si subiscono danni.",
+          "run": "Velocità di corsa espressa in metri per turno.",
+          "leap": "Distanza di salto espressa in metri.",
+          "enc": "Peso massimo che il personaggio può trasportare.",
+          "rec": "Recupero di Stamina per ogni azione di recupero.",
+          "resolve": "Resistenza mentale e forza di volontà.",
+          "focus": "Capacità di concentrazione e precisione magica.",
+          "vigor": "Capacità di gestire il Caos magico senza subire danni.",
+          "shield": "Capacità di parata dello scudo equipaggiato.",
+          "woundTreshold": "Il valore di salute sotto cui il personaggio subisce ferite gravi e penalità.",
+          "punch": "Danno base del pugno (Fisico + Bonus).",
+          "kick": "Danno base del calcio (Fisico + Bonus)."
+        }
       },
       "St": {
         "Int": "INT",
@@ -176,6 +200,13 @@
         "Body": "Fisico",
         "Empathy": "Empatia"
       },
+      "SavingThrow": "Tiro Salvezza",
+      "Crit/Fumble": "Critico/Fumble",
+      "Adrenaline": "Adrenalina",
+      "Stamina": "Stamina",
+      "RecoveryStamina": "Recupera Stamina",
+      "Hp": "Salute",
+      "Shield": "Scudo",
       "Profession": {
         "Level": "Livello"
       },
@@ -415,16 +446,6 @@
           "targetProperties": "Applica al bersaglio"
         }
       }
-    },
-    "activeEffect": {
-      "tab": "Effetto Attivo",
-      "temporary": "Temporaneo",
-      "passive": "Passivo",
-      "inactive": "Inattivo",
-      "temporaryItemImprovement": "Miglioramento Temporaneo Oggetto",
-      "source": "Fonte",
-      "toggle": "Attiva/Disattiva",
-      "new": "Nuovo Effetto"
     },
     "Damage": {
       "RemoveSP": "Rimuovi SP prima di applicare il modificatore di locazione.",
@@ -1357,17 +1378,17 @@
       "healedFor": "healed for"
     },
     "Context": {
-      "applyDmg": "Apply Damage",
-      "applyNonLethal": "Apply Non-lethal Damage",
-      "Defense": "Defense",
-      "Blocked": "Blocked",
-      "SelectActor": "At least one actor must be selected",
-      "Result": "Result",
-      "unavailable": "N/A",
-      "applyCritDmg": "Apply Critical Wound Damage",
-      "applyBonusCritDmg": "Apply Critical Wound Bonus Damage",
-      "applyCritWound": "Apply Critical Wound",
-      "fumble": "Fumble"
+      "applyDmg": "Applica Danno",
+      "applyNonLethal": "Applica Danno Non Letale",
+      "Defense": "Difesa",
+      "Blocked": "Bloccato",
+      "SelectActor": "Devi selezionare almeno un attore",
+      "Result": "Risultato",
+      "unavailable": "N/D",
+      "applyCritDmg": "Applica Danno Ferita Critica",
+      "applyBonusCritDmg": "Applica Danno Bonus Ferita Critica",
+      "applyCritWound": "Applica Ferita Critica",
+      "fumble": "Fallimento Critico"
     },
     "Heal": {
       "button": "Cura",
@@ -1386,6 +1407,7 @@
       "criticalWounds": "Le ferite critiche guariranno 2 giorni prima"
     },
     "Apply.Mod": "Applica un modificatore",
+    "verbalCombatTitle": "Combattimento Verbale",
     "ReputationTitle": "Esecuzione di un tiro di reputazione",
     "ReputationButton.Save": "Salvare",
     "ReputationButton.FaceDown": "Confronto",
@@ -1435,10 +1457,10 @@
       "Rolled": "Rolled",
       "Applied": "Applied",
       "Failed": "Failed",
-      "applySelf": "Apply this active effect on self when used",
-      "applyOnTarget": "Apply this active effect on target when used",
-      "applyOnHit": "Apply this active effect on hit when used",
-      "applyOnDamage": "Apply this active effect on damage when used",
+      "applySelf": "Applica l'effetto su se stessi quando usato",
+      "applyOnTarget": "Applica l'effetto sul bersaglio quando usato",
+      "applyOnHit": "Applica l'colpo su se stessi quando usato",
+      "applyOnDamage": "Applica l'effetto al danno quando usato",
       "Error": {
         "belongsToItem": "This effect belongs to an item"
       },
@@ -1448,20 +1470,21 @@
         "resistances": "Resistances",
         "flat": "Flat Bonus",
         "multi": "Multiplication",
-        "applyAP": "Apply AP to Multi",
+        "applyAP": "Applica AP al Moltiplicatore",
         "Item": {
-          "damage": "Damage"
+          "damage": "Danno"
         }
       }
     },
-    "craft": {
-      "InsufficientComponents": "Not enough components to perform real craft",
-      "ItemsSuccessfullyDeleted": "Items were successfully deleted from actor",
-      "ItemsSuccessfullyCrafted": "Item was successfully crafted by",
-      "ItemsNotCrafted": "Item wasn't successfully crafted by",
-      "SuccessfulCraftForNothing": "You should have specified associated item to allow its craft. Your components are in place.",
-      "SkipRemovalOfComponent": "Skip removal of component",
-      "AssociatedItemMissing": "No associated item provided"
+    "activeEffect": {
+      "tab": "Effetti Attivi",
+      "source": "Origine",
+      "toggle": "Attiva/Disattiva",
+      "temporary": "Temporaneo",
+      "passive": "Passivo",
+      "inactive": "Inattivo",
+      "new": "Nuovo Effetto",
+      "temporaryItemImprovement": "Miglioramento Temporaneo dell'Oggetto"
     },
     "err": {
       "CraftItemDeletion": "Incorrect amount of items were deleted from the actor",

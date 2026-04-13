@@ -100,7 +100,12 @@
       },
       "Name": "Character Name",
       "Race": "Race",
-      "Gender": "Gender",
+      "Gender": {
+        "name": "Gender",
+        "Male": "Male",
+        "Female": "Female",
+        "Other": "Other"
+      },
       "Age": "Age",
       "Perks": "Perks",
       "Adda": {

@@ -8,7 +8,7 @@
     <general>
         <itemimage>
             {{#if (and (includes (getSetting "clickableImageItemTypes") item.type)  (or (window "game" "user" "isGM") (eq (getSetting "clickableImageCheckboxForGMOnly") false)) )}}
-                <img class="profile-img" src="{{item.img}}" data-action="editImage" data-edit="img"
+                <img class="profile-img" src="{{itemImg}}" data-action="editImage" data-edit="img"
                     title="{{item.name}}" />
                 <div>
                     <input type="checkbox" id="clickable-image-{{item._id}}" name="system.clickableImage"
@@ -16,7 +16,7 @@
                     <label for="clickable-image-{{item._id}}">{{localize "WITCHER.Item.ClickableImage"}}</label>
                 </div>
             {{else}}
-                <img class="profile-img" src="{{item.img}}" data-action="editImage" data-edit="img"
+                <img class="profile-img" src="{{itemImg}}" data-action="editImage" data-edit="img"
                     title="{{item.name}}" />
             {{/if}}
         </itemimage>

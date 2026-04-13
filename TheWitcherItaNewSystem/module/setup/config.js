@@ -620,6 +620,12 @@ WITCHER.socialStanding = {
     hatedFeared: 'WITCHER.socialStanding.hatedFeared'
 };
 
+WITCHER.genders = {
+    male: 'WITCHER.Actor.Gender.Male',
+    female: 'WITCHER.Actor.Gender.Female',
+    other: 'WITCHER.Actor.Gender.Other'
+};
+
 //Items
 WITCHER.currency = {
     bizant: 'WITCHER.Currency.bizant',

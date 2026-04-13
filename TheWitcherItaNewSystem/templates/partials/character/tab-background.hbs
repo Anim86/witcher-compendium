@@ -32,9 +32,10 @@
                     </div>
                 {{/each}}
                 <div class="general-info">
-                    {{localize 'WITCHER.Actor.Gender'}}
-                    <input class='details gender' name='system.gender' type='text' value='{{system.gender}}'
-                        placeholder='' />
+                    {{localize 'WITCHER.Actor.Gender.name'}}
+                    <select name='system.gender' class="details">
+                        {{selectOptions config.genders selected=system.gender localize=true}}
+                    </select>
                 </div>
                 <div class="general-info">
                     {{localize 'WITCHER.Actor.Age'}}

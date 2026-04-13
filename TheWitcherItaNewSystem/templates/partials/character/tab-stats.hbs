@@ -2,14 +2,15 @@
     <div class='character-statistics'>
         <div class='char-stat-title'>
             <i class="fa-solid fa-trophy"></i>
-            <label>{{localize 'WITCHER.Actor.StatTitle.Attributes'}}</label>
+            <span class="sheet-label-box">{{localize 'WITCHER.Actor.StatTitle.Attributes'}}</span>
             <a data-action="openModifiers" data-type="stats" data-tooltip="{{localize 'WITCHER.Resources.modifiers'}}"><i class="fas fa-edit"></i></a>
         </div>
         
         <div class='stat-grid'>
             {{#each system.stats as |details stat|}}
                 {{#unless (eq (localize details.label) (localize 'WITCHER.Actor.Stat.Toxicity'))}}
-                    <a class='stat-display char-stat-button stat-roll stat-card-{{stat}}' data-stat='{{stat}}'>
+                    <a class='stat-display char-stat-button stat-roll stat-card-{{stat}}' data-stat='{{stat}}'
+                        data-tooltip="{{localize (concat 'WITCHER.Actor.Stat.Desc.' stat)}}">
                         <div class="stat-icon">
                              {{#if (eq stat 'int')}}<i class="fa-solid fa-brain"></i>{{/if}}
                              {{#if (eq stat 'ref')}}<i class="fa-solid fa-person-running"></i>{{/if}}
@@ -26,10 +27,9 @@
                                 <span>{{localize details.label}}</span>
                                 <span class="current-val">{{#if (gte details.value 0)}}+{{/if}}{{details.value}}</span>
                             </div>
-                            <div class="mod">
-                                <span class="max" data-tooltip="{{localize 'WITCHER.Actor.StatTitle.ModMax'}}">
-                                    {{#if (gte details.max 0)}}+{{/if}}{{details.max}}
-                                </span>
+                            <div class="mod" data-tooltip="{{localize 'WITCHER.Actor.StatTitle.ModMax'}}">
+                                <span class="max">{{details.max}}</span>
+                                <span class="divider">/</span>
                                 <span class="stat-mod {{#if (gt details.value details.max)}}stat-mod-plus{{else if (eq details.value details.max)}}stat-mod-zero{{else}}stat-mod-minus{{/if}}">
                                     {{#if (gte (formatModLabel details.value details.max) 0)}}+{{/if}}{{formatModLabel details.value details.max}}
                                 </span>
@@ -39,9 +39,17 @@
                 {{/unless}}
             {{/each}}
 
-             <div class='total-stats' data-tooltip="{{localize 'WITCHER.Actor.TotalStats'}}">
-                <i class="fa-solid fa-chart-line"></i>
-                <h4 class='total-stats-label'>{{totalStats}}</h4>
+
+             <div class='stat-display char-stat-button total-stats' data-tooltip="{{localize 'WITCHER.Actor.Stat.Desc.TotalStats'}}">
+                <div class="stat-icon">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                <div class="stat-content">
+                    <div class="label">
+                        <span>{{localize 'WITCHER.Actor.TotalStats'}}</span>
+                        <span class="current-val">{{totalStats}}</span>
+                    </div>
+                </div>
             </div>
 
             {{#if (or isGM displayRep)}}
@@ -66,12 +74,13 @@
     <div class='core-stats-list'>
         <div class='char-stat-title'>
             <i class="fa-solid fa-microchip"></i>
-            <label>{{localize 'WITCHER.Actor.StatTitle.Derived'}}</label>
+            <span class="sheet-label-box">{{localize 'WITCHER.Actor.StatTitle.DerStat'}}</span>
             <a data-action="openModifiers" data-type="derivedStats" data-tooltip="{{localize 'WITCHER.Resources.modifiers'}}"><i class="fas fa-edit"></i></a>
         </div>
         <div class='stat-grid'>
             {{#each system.derivedStats as |details derStat|}}
-                <div class='stat-display char-derived-button der-card-{{derStat}}' data-type='derStat' data-stat='{{derStat}}'>
+                <div class='stat-display char-derived-button der-card-{{derStat}}' data-type='derStat' data-stat='{{derStat}}'
+                    data-tooltip="{{#if (localize (concat 'WITCHER.Actor.DerStat.Desc.' derStat))}}{{localize (concat 'WITCHER.Actor.DerStat.Desc.' derStat)}}{{else}}{{localize details.label}}{{/if}}">
                     <div class="stat-icon">
                         {{#if (eq derStat 'stun')}}<i class="fa-solid fa-fainting-face"></i>{{/if}}
                         {{#if (eq derStat 'run')}}<i class="fa-solid fa-wind"></i>{{/if}}
@@ -89,8 +98,9 @@
                             <span>{{localize details.label}}</span>
                             <span class="current-val">{{#if (gte details.value 0)}}+{{/if}}{{details.value}}</span>
                         </div>
-                        <div class="mod">
-                            <span class="max">{{#if (gte details.max 0)}}+{{/if}}{{details.max}}</span>
+                        <div class="mod" data-tooltip="{{localize 'WITCHER.Actor.StatTitle.ModMax'}}">
+                            <span class="max">{{details.max}}</span>
+                            <span class="divider">/</span>
                             <span class="stat-mod {{#if (gt details.value details.max)}}stat-mod-plus{{else if (eq details.value details.max)}}stat-mod-zero{{else}}stat-mod-minus{{/if}}">
                                 {{#if (gte (formatModLabel details.value details.max) 0)}}+{{/if}}{{formatModLabel details.value details.max}}
                             </span>

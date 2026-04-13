@@ -1,4 +1,4 @@
-<div class="character-header-center">
+<div class="char-header-center">
     <!-- Character Info Bar -->
     <div class="header-details-bar">
         <div class="header-main-info">
@@ -20,17 +20,31 @@
                 <i class="fas fa-users"></i>
                 <span>{{#if system.general.socialStanding}}{{localize (concat 'WITCHER.socialStanding.' system.general.socialStanding)}}{{else}}---{{/if}}</span>
             </div>
-            <div class="header-stat-item" data-tooltip="{{localize 'WITCHER.homeland'}}">
-                <i class="fas fa-map-marked-alt"></i>
-                <span>{{#if homeland}}{{localize homeland.name}}{{else}}---{{/if}}</span>
+            <div class="header-stat-item" data-tooltip="{{localize 'WITCHER.Actor.homeland'}}">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>
+                    {{#if system.general.homeland.value}}
+                        {{#if (eq system.general.homeland.value "other")}}
+                            {{system.general.homeland.otherValue}}
+                        {{else if (lookup config.homelands system.general.homeland.value)}}
+                            {{localize (lookup config.homelands system.general.homeland.value)}}
+                        {{else}}
+                            {{system.general.homeland.value}}
+                        {{/if}}
+                    {{else if homeland.name}}
+                        {{localize homeland.name}}
+                    {{else}}
+                        ---
+                    {{/if}}
+                </span>
             </div>
             <div class="header-stat-item" data-tooltip="{{localize 'WITCHER.Actor.Age'}}">
                 <i class="fas fa-hourglass-half"></i>
                 <span>{{system.general.age}}</span>
             </div>
-            <div class="header-stat-item" data-tooltip="{{localize 'WITCHER.Actor.Gender'}}">
+            <div class="header-stat-item" data-tooltip="{{localize 'WITCHER.Actor.Gender.name'}}">
                 <i class="fas fa-venus-mars"></i>
-                <span>{{system.general.gender}}</span>
+                <span>{{#if system.gender}}{{localize (lookup config.genders system.gender)}}{{else}}---{{/if}}</span>
             </div>
         </div>
     </div>
@@ -43,13 +57,13 @@
             <a class="button-roll config-roll configure-actor" title="{{localize 'WITCHER.Actor.settings.actor'}}">
                 <i class="fas fa-cog"></i>
             </a>
-            <a class="button-roll init-roll" title="{{localize 'WITCHER.Initiative'}}">
+            <a class="button-roll init-roll" title="{{localize 'WITCHER.Actor.Initiative'}}">
                 <i class="fas fa-running"></i>
             </a>
-            <a class="button-roll verbal-roll verbal-button" title="{{localize 'WITCHER.verbalCombat'}}">
+            <a class="button-roll verbal-roll verbal-button" title="{{localize 'WITCHER.verbalCombat.Title'}}">
                 <i class="fas fa-comments"></i>
             </a>
-            <a class="button-roll crit-roll" title="{{localize 'WITCHER.Crit/Fumble'}}">
+            <a class="button-roll crit-roll" title="{{localize 'WITCHER.Actor.Crit/Fumble'}}">
                 <i class="fas fa-skull"></i>
             </a>
         </div>
