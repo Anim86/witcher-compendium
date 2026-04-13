@@ -422,7 +422,7 @@
     height: fit-content;
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 4px;
 }
 
 /* ── Character Info Bar ── */
@@ -440,9 +440,6 @@
 .header-main-info {
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid var(--w-border);
-    padding-bottom: 8px;
-    margin-bottom: 2px;
     
     h1.charname {
         margin: 0;
@@ -503,9 +500,6 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
-    margin-top: 10px;
-    padding-top: 10px;
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .header-stats-grid {
@@ -526,6 +520,26 @@
             font-size: 14px;
         }
     }
+
+    .encumbrance-item {
+        transition: all 0.2s ease;
+        padding: 2px 6px;
+        border-radius: 4px;
+
+        &.overweight {
+            color: #E86363 !important;
+            background: rgba(232, 99, 99, 0.1);
+            animation: pulse-encumbrance 2s infinite;
+            
+            i { color: #E86363 !important; }
+        }
+    }
+}
+
+@keyframes pulse-encumbrance {
+    0% { box-shadow: 0 0 0 0 rgba(232, 99, 99, 0.4); }
+    70% { box-shadow: 0 0 0 6px rgba(232, 99, 99, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(232, 99, 99, 0); }
 }
 
 .char-actions {
@@ -1065,3 +1079,84 @@ a.button-roll:hover {
 .config-roll:hover { background: linear-gradient(135deg, #444, #666); }
 .verbal-roll    { background: linear-gradient(135deg, #c860c0, #f0a0e8); color: #300830; }
 .verbal-roll:hover { background: linear-gradient(135deg, #a040a0, #c860c0); }
+
+/* =====================================================
+   REPUTATION BADGE
+   ===================================================== */
+.header-top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.reputation-badge {
+    display: flex;
+    align-items: center;
+    background: var(--w-surface);
+    border: 1px solid var(--w-border-gold);
+    border-radius: var(--w-radius-lg);
+    padding: 6px 14px;
+    gap: 12px;
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: var(--w-shadow-sm);
+    min-width: 140px;
+    position: relative;
+    overflow: hidden;
+}
+
+.reputation-badge::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(135deg, rgba(201,168,76,0.1), transparent);
+    pointer-events: none;
+}
+
+.reputation-badge:hover {
+    background: var(--w-surface-hover);
+    border-color: var(--w-gold);
+    transform: translateY(-2px);
+    box-shadow: var(--w-shadow-md);
+}
+
+.reputation-badge .badge-icon {
+    font-size: 22px;
+    color: var(--w-gold);
+    filter: drop-shadow(0 0 5px rgba(201,168,76,0.4));
+}
+
+.reputation-badge .badge-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.reputation-badge .badge-label {
+    font-size: 9px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    color: var(--w-text-muted);
+}
+
+.reputation-badge .badge-value {
+    font-size: 22px;
+    font-weight: 900;
+    color: var(--w-gold-light);
+    line-height: 1.1;
+    font-family: 'Thewitcher', serif;
+}
+
+.reputation-badge .badge-edit {
+    font-size: 12px;
+    color: var(--w-text-muted);
+    opacity: 0.4;
+    transition: opacity 0.2s;
+}
+
+.reputation-badge:hover .badge-edit {
+    opacity: 0.8;
+    color: var(--w-gold);
+}

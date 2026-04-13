@@ -102,14 +102,17 @@ export let statMixin = {
                     (dialogTemplate += `<div><input id="${mod.name.replace(/\s/g, '')}" type="checkbox" unchecked/> ${mod.name}(${mod.value})</div>`)
             );
         }
-        new Dialog({
-            title: game.i18n.localize('WITCHER.ReputationTitle'),
+
+        const dialog = new foundry.applications.api.DialogV2({
+            window: { title: game.i18n.localize('WITCHER.ReputationTitle') },
             content: dialogTemplate,
-            buttons: {
-                t1: {
+            buttons: [
+                {
+                    action: 'save',
                     label: `${game.i18n.localize('WITCHER.ReputationButton.Save')}`,
-                    callback: async html => {
+                    callback: async (event, button, instance) => {
                         let statValue = this.actor.system.reputation.value;
+                        const html = $(instance.element);
 
                         this.actor.system.reputation.modifiers.forEach(mod => {
                             const noSpacesName = mod.name.replace(/\s/g, '');
@@ -134,10 +137,12 @@ export let statMixin = {
                         await extendedRoll(`1d10`, messageData, config);
                     }
                 },
-                t2: {
+                {
+                    action: 'facedown',
                     label: `${game.i18n.localize('WITCHER.ReputationButton.FaceDown')}`,
-                    callback: async html => {
+                    callback: async (event, button, instance) => {
                         let repValue = this.actor.system.reputation.value;
+                        const html = $(instance.element);
 
                         this.actor.system.reputation.modifiers.forEach(mod => {
                             const noSpacesName = mod.name.replace(/\s/g, '');
@@ -158,8 +163,9 @@ export let statMixin = {
                         await extendedRoll(rollFormula, messageData, new RollConfig());
                     }
                 }
-            }
-        }).render(true);
+            ]
+        });
+        dialog.render(true);
     },
 
     calc_total_stats(context) {

@@ -21,7 +21,8 @@ export default class WitcherCharacterSheet extends WitcherActorSheet {
         actions: {
             openAttributeDialog: this.#openAttributeDialog,
             openDerivedDialog: this.#openDerivedDialog,
-            openModifiers: this.#openModifiers
+            openModifiers: this.#openModifiers,
+            editReputation: this.#editReputation
         }
     };
 
@@ -286,69 +287,71 @@ export default class WitcherCharacterSheet extends WitcherActorSheet {
         content += `<label>${game.i18n.localize('WITCHER.Dialog.CraftingDiagram')}: <input type="checkbox" name="hasDiagram"></label> <br />`;
         content += `<label>${game.i18n.localize('WITCHER.Dialog.RealCrafting')}: <input type="checkbox" name="realCraft"></label> <br />`;
 
-        new Dialog({
-            title: `${game.i18n.localize('WITCHER.Dialog.AlchemyTitle')}`,
+        const dialog = new foundry.applications.api.DialogV2({
+            window: { title: game.i18n.localize('WITCHER.Dialog.AlchemyTitle') },
             content,
-            buttons: {
-                Craft: {
-                    label: `${game.i18n.localize('WITCHER.Dialog.ButtonCraft')}`,
-                    callback: async html => {
-                        let stat = this.actor.system.stats.cra.value;
-                        let statName = game.i18n.localize(this.actor.system.stats.cra.label);
-                        let skill = this.actor.system.skills.cra.alchemy.value;
-                        let skillName = game.i18n.localize(this.actor.system.skills.cra.alchemy.label);
-                        let hasDiagram = html.find('[name=hasDiagram]').prop('checked');
-                        let realCraft = html.find('[name=realCraft]').prop('checked');
-                        skillName = skillName.replace(' (2)', '');
-                        (messageData.flavor = `<h1>${game.i18n.localize('WITCHER.Dialog.CraftingAlchemycal')}</h1>`),
-                            (messageData.flavor += `<label>${game.i18n.localize('WITCHER.Dialog.Crafting')}:</label> <b>${item.name}</b> <br />`),
-                            (messageData.flavor += `<label>${game.i18n.localize('WITCHER.Dialog.after')}:</label> <b>${item.system.craftingTime}</b> <br />`),
-                            (messageData.flavor += `${game.i18n.localize('WITCHER.Diagram.alchemyDC')} ${item.system.alchemyDC}`);
+            buttons: [{
+                action: "craft",
+                label: game.i18n.localize('WITCHER.Dialog.ButtonCraft'),
+                default: true,
+                callback: async (event, button, instance) => {
+                    const html = instance.element;
+                    let stat = this.actor.system.stats.cra.value;
+                    let statName = game.i18n.localize(this.actor.system.stats.cra.label);
+                    let skill = this.actor.system.skills.cra.alchemy.value;
+                    let skillName = game.i18n.localize(this.actor.system.skills.cra.alchemy.label);
+                    let hasDiagram = html.querySelector('[name=hasDiagram]').checked;
+                    let realCraft = html.querySelector('[name=realCraft]').checked;
+                    skillName = skillName.replace(' (2)', '');
+                    (messageData.flavor = `<h1>${game.i18n.localize('WITCHER.Dialog.CraftingAlchemycal')}</h1>`),
+                        (messageData.flavor += `<label>${game.i18n.localize('WITCHER.Dialog.Crafting')}:</label> <b>${item.name}</b> <br />`),
+                        (messageData.flavor += `<label>${game.i18n.localize('WITCHER.Dialog.after')}:</label> <b>${item.system.craftingTime}</b> <br />`),
+                        (messageData.flavor += `${game.i18n.localize('WITCHER.Diagram.alchemyDC')} ${item.system.alchemyDC}`);
 
-                        if (!item.isAlchemicalCraft()) {
-                            stat = this.actor.system.stats.cra.value;
-                            skill = this.actor.system.skills.cra.crafting.value;
-                            messageData.flavor = `${game.i18n.localize('WITCHER.Diagram.craftingDC')} ${item.system.craftingDC}`;
-                        }
+                    if (!item.isAlchemicalCraft()) {
+                        stat = this.actor.system.stats.cra.value;
+                        skill = this.actor.system.skills.cra.crafting.value;
+                        messageData.flavor = `${game.i18n.localize('WITCHER.Diagram.craftingDC')} ${item.system.craftingDC}`;
+                    }
 
-                        let rollFormula = !displayRollDetails
-                            ? `1d10+${stat}+${skill}`
-                            : `1d10+${stat}[${statName}]+${skill}[${skillName}]`;
+                    let rollFormula = !displayRollDetails
+                        ? `1d10+${stat}+${skill}`
+                        : `1d10+${stat}[${statName}]+${skill}[${skillName}]`;
 
-                        if (hasDiagram) {
-                            rollFormula += !displayRollDetails
-                                ? `+2`
-                                : `+2[${game.i18n.localize('WITCHER.Dialog.Diagram')}]`;
-                        }
+                    if (hasDiagram) {
+                        rollFormula += !displayRollDetails
+                            ? `+2`
+                            : `+2[${game.i18n.localize('WITCHER.Dialog.Diagram')}]`;
+                    }
 
-                        rollFormula += this.actor.addAllModifiers('alchemy');
+                    rollFormula += this.actor.addAllModifiers('alchemy');
 
-                        let config = new RollConfig();
-                        config.showCrit = true;
-                        config.showSuccess = true;
-                        config.threshold = item.system.alchemyDC;
-                        config.thresholdDesc = skillName;
-                        config.messageOnSuccess = game.i18n.localize('WITCHER.craft.ItemsSuccessfullyCrafted');
-                        config.messageOnFailure = game.i18n.localize('WITCHER.craft.ItemsNotCrafted');
+                    let config = new RollConfig();
+                    config.showCrit = true;
+                    config.showSuccess = true;
+                    config.threshold = item.system.alchemyDC;
+                    config.thresholdDesc = skillName;
+                    config.messageOnSuccess = game.i18n.localize('WITCHER.craft.ItemsSuccessfullyCrafted');
+                    config.messageOnFailure = game.i18n.localize('WITCHER.craft.ItemsNotCrafted');
 
-                        if (realCraft) {
-                            if (areCraftComponentsEnough) {
-                                item.realCraft(rollFormula, messageData, config);
-                            } else {
-                                return ui.notifications.error(
-                                    game.i18n.localize('WITCHER.Dialog.NoComponents') +
-                                        ' ' +
-                                        item.system.associatedItem.name
-                                );
-                            }
+                    if (realCraft) {
+                        if (areCraftComponentsEnough) {
+                            item.realCraft(rollFormula, messageData, config);
                         } else {
-                            // Craft without automatic removal components and without real crafting of an item
-                            await extendedRoll(rollFormula, messageData, config);
+                            return ui.notifications.error(
+                                game.i18n.localize('WITCHER.Dialog.NoComponents') +
+                                    ' ' +
+                                    item.system.associatedItem.name
+                            );
                         }
+                    } else {
+                        // Craft without automatic removal components and without real crafting of an item
+                        await extendedRoll(rollFormula, messageData, config);
                     }
                 }
-            }
-        }).render(true);
+            }]
+        });
+        dialog.render(true);
     }
 
     async _craftingCraft(event) {
@@ -379,68 +382,70 @@ export default class WitcherCharacterSheet extends WitcherActorSheet {
         content += `<label>${game.i18n.localize('WITCHER.Dialog.CraftingDiagram')}: <input type="checkbox" name="hasDiagram"></label> <br />`;
         content += `<label>${game.i18n.localize('WITCHER.Dialog.RealCrafting')}: <input type="checkbox" name="realCraft"></label> <br />`;
 
-        new Dialog({
-            title: `${game.i18n.localize('WITCHER.Dialog.CraftingTitle')}`,
+        const dialog = new foundry.applications.api.DialogV2({
+            window: { title: game.i18n.localize('WITCHER.Dialog.CraftingTitle') },
             content,
-            buttons: {
-                Craft: {
-                    label: `${game.i18n.localize('WITCHER.Dialog.ButtonCraft')}`,
-                    callback: async html => {
-                        let stat = this.actor.system.stats.cra.value;
-                        let statName = game.i18n.localize(this.actor.system.stats.cra.label);
-                        let skill = this.actor.system.skills.cra.crafting.value;
-                        let skillName = game.i18n.localize(this.actor.system.skills.cra.crafting.label);
-                        let hasDiagram = html.find('[name=hasDiagram]').prop('checked');
-                        let realCraft = html.find('[name=realCraft]').prop('checked');
-                        skillName = skillName.replace(' (2)', '');
-                        (messageData.flavor = `<h1>${game.i18n.localize('WITCHER.Dialog.CraftingItem')}</h1>`),
-                            (messageData.flavor += `<label>${game.i18n.localize('WITCHER.Dialog.Crafting')}:</label> <b>${item.name}</b> <br />`),
-                            (messageData.flavor += `<label>${game.i18n.localize('WITCHER.Dialog.after')}:</label> <b>${item.system.craftingTime}</b> <br />`),
-                            (messageData.flavor += `${game.i18n.localize('WITCHER.Diagram.craftingDC')} ${item.system.craftingDC}`);
+            buttons: [{
+                action: "craft",
+                label: game.i18n.localize('WITCHER.Dialog.ButtonCraft'),
+                default: true,
+                callback: async (event, button, instance) => {
+                    const html = instance.element;
+                    let stat = this.actor.system.stats.cra.value;
+                    let statName = game.i18n.localize(this.actor.system.stats.cra.label);
+                    let skill = this.actor.system.skills.cra.crafting.value;
+                    let skillName = game.i18n.localize(this.actor.system.skills.cra.crafting.label);
+                    let hasDiagram = html.querySelector('[name=hasDiagram]').checked;
+                    let realCraft = html.querySelector('[name=realCraft]').checked;
+                    skillName = skillName.replace(' (2)', '');
+                    (messageData.flavor = `<h1>${game.i18n.localize('WITCHER.Dialog.CraftingItem')}</h1>`),
+                        (messageData.flavor += `<label>${game.i18n.localize('WITCHER.Dialog.Crafting')}:</label> <b>${item.name}</b> <br />`),
+                        (messageData.flavor += `<label>${game.i18n.localize('WITCHER.Dialog.after')}:</label> <b>${item.system.craftingTime}</b> <br />`),
+                        (messageData.flavor += `${game.i18n.localize('WITCHER.Diagram.craftingDC')} ${item.system.craftingDC}`);
 
-                        let rollFormula = '1d10 +';
-                        if (game.settings.get('TheWitcherItaNewSystem', 'woundsAffectSkillBase')) {
-                            rollFormula += '(';
-                        }
+                    let rollFormula = '1d10 +';
+                    if (game.settings.get('TheWitcherItaNewSystem', 'woundsAffectSkillBase')) {
+                        rollFormula += '(';
+                    }
 
+                    rollFormula += !displayRollDetails
+                        ? `${stat} + ${skill}`
+                        : `${stat}[${statName}] + ${skill}[${skillName}]`;
+
+                    if (hasDiagram) {
                         rollFormula += !displayRollDetails
-                            ? `${stat} + ${skill}`
-                            : `${stat}[${statName}] + ${skill}[${skillName}]`;
+                            ? `+2`
+                            : `+2[${game.i18n.localize('WITCHER.Dialog.Diagram')}]`;
+                    }
 
-                        if (hasDiagram) {
-                            rollFormula += !displayRollDetails
-                                ? `+2`
-                                : `+2[${game.i18n.localize('WITCHER.Dialog.Diagram')}]`;
-                        }
+                    rollFormula += this.actor.addAllModifiers('crafting');
 
-                        rollFormula += this.actor.addAllModifiers('crafting');
+                    let config = new RollConfig();
+                    config.showCrit = true;
+                    config.showSuccess = true;
+                    config.threshold = item.system.craftingDC;
+                    config.thresholdDesc = skillName;
+                    config.messageOnSuccess = game.i18n.localize('WITCHER.craft.ItemsSuccessfullyCrafted');
+                    config.messageOnFailure = game.i18n.localize('WITCHER.craft.ItemsNotCrafted');
 
-                        let config = new RollConfig();
-                        config.showCrit = true;
-                        config.showSuccess = true;
-                        config.threshold = item.system.craftingDC;
-                        config.thresholdDesc = skillName;
-                        config.messageOnSuccess = game.i18n.localize('WITCHER.craft.ItemsSuccessfullyCrafted');
-                        config.messageOnFailure = game.i18n.localize('WITCHER.craft.ItemsNotCrafted');
-
-                        if (realCraft) {
-                            if (areCraftComponentsEnough) {
-                                item.realCraft(rollFormula, messageData, config);
-                            } else {
-                                return ui.notifications.error(
-                                    game.i18n.localize('WITCHER.Dialog.NoComponents') +
-                                        ' ' +
-                                        item.system.associatedItem.name
-                                );
-                            }
+                    if (realCraft) {
+                        if (areCraftComponentsEnough) {
+                            item.realCraft(rollFormula, messageData, config);
                         } else {
-                            // Craft without automatic removal components and without real crafting of an item
-                            await extendedRoll(rollFormula, messageData, config);
+                            return ui.notifications.error(
+                                game.i18n.localize('WITCHER.Dialog.NoComponents') +
+                                    ' ' +
+                                    item.system.associatedItem.name
+                            );
                         }
+                    } else {
+                        // Craft without automatic removal components and without real crafting of an item
+                        await extendedRoll(rollFormula, messageData, config);
                     }
                 }
-            }
-        }).render(true);
+            }]
+        });
+        dialog.render(true);
     }
 
     async _repairItem(event) {
@@ -479,6 +484,133 @@ export default class WitcherCharacterSheet extends WitcherActorSheet {
             skillKey: skillKey,
             type: type
         })?.render(true);
+    }
+
+    static async #editReputation(event, target) {
+        const actor = this.document;
+        const currentRep = actor.system.reputation.value || 0;
+        
+        let optionsHtml = '';
+        for (let i = 1; i <= 10; i++) {
+            const label = game.i18n.localize(`WITCHER.reputationLevels.${i}`);
+            const selected = i === currentRep ? 'selected' : '';
+            optionsHtml += `<option value="${i}" ${selected}>Livello ${i}: ${label.substring(0, 40)}${label.length > 40 ? '...' : ''}</option>`;
+        }
+
+        const content = `
+            <div class="reputation-dialog-container" style="display: flex; flex-direction: column; gap: 15px; padding: 10px;">
+                <div class="rep-select-group">
+                    <label style="font-weight: bold; display: block; margin-bottom: 5px;">${game.i18n.localize('WITCHER.Reputation')} (Grado 1-10):</label>
+                    <select name="repLevel" class="gold-select" style="width: 100%; height: 32px; background: rgba(0,0,0,0.2); color: white; border: 1px solid var(--w-gold);">
+                        ${optionsHtml}
+                    </select>
+                </div>
+                
+                <div class="rep-description-box" style="background: rgba(28, 104, 136, 0.1); border-left: 4px solid var(--w-gold); padding: 15px; border-radius: 4px; min-height: 100px; display: flex; flex-direction: column; justify-content: center;">
+                    <h4 style="margin: 0 0 8px 0; font-size: 11px; text-transform: uppercase; color: var(--w-gold); letter-spacing: 1px;">Chi ti conosce:</h4>
+                    <p class="rep-preview-text" style="margin: 0; font-size: 14px; font-style: italic; line-height: 1.4;">
+                        ${game.i18n.localize(`WITCHER.reputationLevels.${currentRep || 1}`)}
+                    </p>
+                </div>
+
+                ${actor.system.reputation.modifiers.length > 0 ? `
+                <div class="rep-modifiers">
+                    <label style="font-weight: bold; margin-bottom: 8px; display: block;">${game.i18n.localize('WITCHER.Apply.Mod')}:</label>
+                    <div class="mod-list" style="display: flex; flex-direction: column; gap: 5px; max-height: 100px; overflow-y: auto;">
+                        ${actor.system.reputation.modifiers.map(mod => `
+                            <label class="checkbox-label" style="display: flex; align-items: center; gap: 10px; cursor: pointer; padding: 4px; background: rgba(255,255,255,0.05); border-radius: 4px;">
+                                <input class="rep-mod-checkbox" id="${mod.name.replace(/\s/g, '')}" type="checkbox" data-mod-value="${mod.value}" style="width: 16px; height: 16px;" />
+                                <span>${mod.name} (${mod.value})</span>
+                            </label>
+                        `).join('')}
+                    </div>
+                </div>
+                ` : ''}
+            </div>
+        `;
+
+        const dialog = new foundry.applications.api.DialogV2({
+            window: { 
+                title: game.i18n.localize('WITCHER.ReputationTitle'),
+                icon: "fas fa-award"
+            },
+            content,
+            buttons: [
+                {
+                    action: "saveRep",
+                    label: game.i18n.localize('WITCHER.ReputationButton.UpdateLevel'),
+                    class: "standard-button gold",
+                    callback: async (event, button, instance) => {
+                        const newLevel = parseInt(instance.element.querySelector('[name="repLevel"]').value);
+                        await actor.update({ "system.reputation.value": newLevel });
+                    }
+                },
+                {
+                    action: "rollRep",
+                    label: game.i18n.localize('WITCHER.ReputationButton.Save'),
+                    class: "standard-button blue",
+                    callback: async (event, button, instance) => {
+                        const html = instance.element;
+                        let statValue = parseInt(html.querySelector('[name="repLevel"]').value);
+                        
+                        html.querySelectorAll('.rep-mod-checkbox').forEach(checkbox => {
+                            if (checkbox.checked) {
+                                statValue += parseInt(checkbox.dataset.modValue);
+                            }
+                        });
+
+                        const messageData = new ChatMessageData(actor);
+                        messageData.flavor = `
+                            <h2>${game.i18n.localize('WITCHER.ReputationTitle')}: ${game.i18n.localize('WITCHER.ReputationSave.Title')}</h2>
+                            <div class="roll-summary">
+                                <div class="dice-formula">${game.i18n.localize('WITCHER.Chat.SaveText')}: <b>${statValue}</b></div>
+                            </div>
+                            <hr />`;
+
+                        const config = new RollConfig();
+                        config.showSuccess = true;
+                        config.reversal = true;
+                        config.threshold = statValue;
+
+                        await extendedRoll(`1d10`, messageData, config);
+                    }
+                },
+                {
+                    action: "faceDown",
+                    label: game.i18n.localize('WITCHER.ReputationButton.FaceDown'),
+                    class: "standard-button red",
+                    callback: async (event, button, instance) => {
+                        const html = instance.element;
+                        let repValue = parseInt(html.querySelector('[name="repLevel"]').value);
+                        
+                        html.querySelectorAll('.rep-mod-checkbox').forEach(checkbox => {
+                            if (checkbox.checked) {
+                                repValue += parseInt(checkbox.dataset.modValue);
+                            }
+                        });
+
+                        const messageData = new ChatMessageData(actor);
+                        const rollFormula = `1d10 + ${Number(repValue)}[${game.i18n.localize('WITCHER.Reputation')}] + ${Number(actor.system.stats.will.value)}[${game.i18n.localize('WITCHER.StWill')}]`;
+                        messageData.flavor = `
+                            <h2>${game.i18n.localize('WITCHER.ReputationTitle')}: ${game.i18n.localize('WITCHER.ReputationFaceDown.Title')}</h2>
+                            <div class="roll-summary">
+                                <div class="dice-formula">${game.i18n.localize('WITCHER.Context.Result')}: <b>${rollFormula}</b></div>
+                            </div>
+                            <hr />`;
+
+                        await extendedRoll(rollFormula, messageData, new RollConfig());
+                    }
+                }
+            ],
+            render: (instance) => {
+                const select = instance.element.querySelector('[name="repLevel"]');
+                const preview = instance.element.querySelector('.rep-preview-text');
+                select.addEventListener('change', (e) => {
+                    preview.innerText = game.i18n.localize(`WITCHER.reputationLevels.${e.target.value}`);
+                });
+            }
+        });
+        dialog.render(true);
     }
 }
 

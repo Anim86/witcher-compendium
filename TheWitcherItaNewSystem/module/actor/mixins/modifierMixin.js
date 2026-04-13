@@ -63,10 +63,10 @@ export let modifierMixin = {
 
         this.system.skills[skill.attribute.name][skill.name].modifiers?.forEach(mod => {
             if (mod.value < 0) {
-                formula += !displayRollDetails ? ` ${mod.value}` : ` ${mod.value}[${mod.name}]`;
+                formula += ` ${mod.value}[${mod.name}]`;
             }
             if (mod.value > 0) {
-                formula += !displayRollDetails ? ` +${mod.value}` : ` +${mod.value}[${mod.name}]`;
+                formula += ` +${mod.value}[${mod.name}]`;
             }
         });
 
@@ -79,9 +79,7 @@ export let modifierMixin = {
                 )
                 .map(effect => effect.name)
                 .join(' & ');
-            formula += !displayRollDetails
-                ? ` +${this.system.skills[skill.attribute.name][skill.name].activeEffectModifiers}`
-                : ` +${this.system.skills[skill.attribute.name][skill.name].activeEffectModifiers}[${effects}]`;
+            formula += ` +${this.system.skills[skill.attribute.name][skill.name].activeEffectModifiers}[${effects}]`;
         }
 
         if (this.system.skillGroupModifiers) {
@@ -120,13 +118,9 @@ export let modifierMixin = {
                         skill.skill == 'all'
                     ) {
                         if (skill.modifier?.toString().includes('/')) {
-                            formula += !displayRollDetails
-                                ? ` /${Number(skill.modifier.replace('/', ''))}`
-                                : ` /${Number(skill.modifier.replace('/', ''))}[${game.i18n.localize('WITCHER.CritWound.Header')}]`;
+                            formula += ` /${Number(skill.modifier.replace('/', ''))}[${game.i18n.localize('WITCHER.CritWound.Header')}]`;
                         } else {
-                            formula += !displayRollDetails
-                                ? ` ${Number(skill.modifier)}`
-                                : ` ${Number(skill.modifier)}[${game.i18n.localize('WITCHER.CritWound.Header')}]`;
+                            formula += ` ${Number(skill.modifier)}[${game.i18n.localize('WITCHER.CritWound.Header')}]`;
                         }
                     }
                 });

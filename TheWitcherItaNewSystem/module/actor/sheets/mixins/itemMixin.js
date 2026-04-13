@@ -157,17 +157,19 @@ export let itemMixin = {
         let itemId = event.currentTarget.closest('.item').dataset.itemId;
         let item = this.actor.items.get(itemId);
 
-        new Dialog(
-            {
+        const dialog = new foundry.applications.api.DialogV2({
+            window: { 
                 title: item.name,
-                content: `<img src="${item.img}" alt="${item.img}" width="100%" />`,
-                buttons: {}
-            },
-            {
-                width: 520,
                 resizable: true
-            }
-        ).render(true);
+            },
+            content: `<img src="${item.img}" alt="${item.img}" width="100%" />`,
+            buttons: [{
+                action: "ok",
+                label: game.i18n.localize('WITCHER.Button.Ok'),
+                default: true
+            }]
+        });
+        dialog.render(true);
     },
 
     async _onItemDelete(event) {
@@ -204,20 +206,24 @@ export let itemMixin = {
             content += `<div><label>${game.i18n.localize('WITCHER.Dialog.Enhancement')}: <select name="enhancement">${enhancementsOption}</select></label></div>`;
         }
 
-        new Dialog({
-            title: `${game.i18n.localize('WITCHER.Enhancement.ChooseTitle')}`,
+        const dialog = new foundry.applications.api.DialogV2({
+            window: { title: game.i18n.localize('WITCHER.Enhancement.ChooseTitle') },
             content,
-            buttons: {
-                Cancel: {
-                    label: `${game.i18n.localize('WITCHER.Button.Cancel')}`,
-                    callback: () => {}
+            buttons: [
+                {
+                    action: "cancel",
+                    label: game.i18n.localize('WITCHER.Button.Cancel')
                 },
-                Apply: {
-                    label: `${game.i18n.localize('WITCHER.Dialog.Apply')}`,
-                    callback: async html => {
+                {
+                    action: "apply",
+                    label: game.i18n.localize('WITCHER.Dialog.Apply'),
+                    default: true,
+                    callback: async (event, button, instance) => {
+                        const html = instance.element;
                         let enhancementId = undefined;
-                        if (html.find('[name=enhancement]')[0]) {
-                            enhancementId = html.find('[name=enhancement]')[0].value;
+                        const selector = html.querySelector('[name=enhancement]');
+                        if (selector) {
+                            enhancementId = selector.value;
                         }
                         if (enhancementId) {
                             let newEnhancementList = item.system.enhancementItemIds;
@@ -275,8 +281,9 @@ export let itemMixin = {
                         }
                     }
                 }
-            }
-        }).render(true);
+            ]
+        });
+        dialog.render(true);
     },
 
     _onItemDisplayInfo(event) {
