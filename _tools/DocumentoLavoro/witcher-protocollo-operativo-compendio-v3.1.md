@@ -1,7 +1,7 @@
 # WITCHER COMPENDIUM — PROTOCOLLO OPERATIVO COMPLETO
 ## Documento di riferimento per LLM / AI Builder
-### Versione: 3.1 — Data: 13 Aprile 2026
-### Autore: Perplexity (Strategist) per il team Manuel + Antigravity
+### Versione: 3.5 — Data: 13 Aprile 2026 (Sync Post-Unificazione)
+### Autore: Antigravity per il team Manuel
 
 ---
 
@@ -41,9 +41,9 @@ Perplexity analizza → prepara prossimo brief
 
 ### 2.1 Dove vivono i testi originali
 ```
-Tomo Base:     Tomo Base/Testi/PagXXX_NomeSezione.txt
-Tomo del Caos: Tomo del Caos/Testi/PagXXX_NomeSezione.txt
-Libro dei Racconti: Libro dei Racconti/Testi/PagXXX_NomeSezione.txt
+Tomo Base:           Tomo Base/Testi/PagXXX_NomeSezione.txt
+Tomo del Caos:       Tomo del Caos/Testi/PagXXX_NomeSezione.txt
+Libro dei Racconti:  Libro dei Racconti/Testi/PagXXX_NomeSezione.txt
 Diario di un Witcher: Diario di un Witcher/Testi/PagXXX_NomeSezione.txt
 ```
 
@@ -53,155 +53,137 @@ Diario di un Witcher: Diario di un Witcher/Testi/PagXXX_NomeSezione.txt
 |---|---|---|
 | witcher-weapons | Pag074_Armi.txt | MB |
 | witcher-weapons-racconti| Appendice Equipaggiamento | LR |
-| witcher-components | Pag212_Componenti e Mutageni.txt | MB / DW |
+| witcher-components | Pag212_Componenti e Mutageni.txt | MB |
+| witcher-components-diario | Componenti aggiuntivi | DW |
 | witcher-components-racconti | Appendice Crafting | LR |
 | witcher-schematics | Schemi vari | MB / TC |
 | witcher-schematics-racconti| Appendice Schemi | LR |
-| witcher-monsters | Bestiario Base | MB |
-| witcher-monsters-chaos | Bestiario Chaos | TC |
-| witcher-monsters-racconti | Mostri Avventure | LR |
-| witcher-monsters-diario | Bestiario Completo | DW |
-| witcher-npc-racconti | PNG Avventure | LR |
-| witcher-spells-racconti | Incantesimi e Rituali | LR |
+| witcher-monsters | Bestiario Unificato (MB + TC + DW + LR) | Tutti |
+| witcher-png | Personaggi Non Giocanti Unificati | Tutti |
 | witcher-races | Razze giocabili | MB / LR |
 | witcher-trophies | Pag126_Trofei.txt | TC |
 | witcher-transports | Pag093_Trasporti.txt | MB |
 
 ---
 
-## 3. STRUTTURA JSON E METADATI (REGOLE V14 V3.0)
+## 3. STRUTTURA JSON E METADATI (ARCHITETTURA 1:1:1)
 
 ### 3.1 Dove vivono i JSON sorgente
 ```
-_tools/src-packs/[CATEGORIA]/[sottocartella]/[NomeVoce].json
+_tools/src-packs/[CATEGORIA]/[sottocartella]/[NomePack]/[NomeVoce].json
 ```
 
-**Struttura cartelle:**
+**Struttura cartelle REALE (Verificata 13 Apr 2026):**
 ```
 _tools/src-packs/
+├── BESTIARIO/
+│   ├── MOSTRI/                ← Pack: witcher-monsters (UNIFICATO)
+│   └── PNG/                   ← Pack: witcher-png (UNIFICATO)
+├── CORE/
+│   ├── witcher-professions/
+│   ├── witcher-races/
+│   └── witcher-skills/
+├── CRAFTING/
+│   ├── diario/
+│   │   └── witcher-components-diario/
+│   ├── racconti/
+│   │   ├── witcher-components-racconti/
+│   │   └── witcher-schematics-racconti/
+│   ├── witcher-alchemy/
+│   ├── witcher-components/
+│   ├── witcher-mutations/
+│   └── witcher-schematics/
 ├── EQUIPAGGIAMENTO/
 │   ├── base/
+│   │   ├── witcher-armor/
+│   │   ├── witcher-equipment/
+│   │   ├── witcher-special/
+│   │   ├── witcher-transports/
+│   │   └── witcher-weapons/
 │   ├── caos/
-│   └── racconti/                  ← witcher-weapons-racconti
-├── CRAFTING/
-│   ├── base/
-│   ├── diario/                    ← witcher-components-diario
-│   └── racconti/                  ← witcher-schematics-racconti, witcher-components-racconti
-├── BESTIARIO/
-│   ├── PNG/
-│   │   ├── base/
-│   │   ├── caos/
-│   │   ├── diario/                ← witcher-monsters-diario
-│   │   └── racconti/              ← witcher-monsters-racconti
-│   └── NPC/
-│       └── racconti/              ← witcher-npc-racconti
-├── MAGIA/
-│   ├── base/
-│   ├── caos/
-│   └── racconti/                  ← witcher-spells-racconti
+│   │   ├── witcher-special-chaos/
+│   │   └── witcher-trophies/
+│   └── racconti/
+│       └── witcher-weapons-racconti/
 ├── GAMEPLAY/
 │   └── base/
+│       ├── witcher-critical-wounds/
+│       └── witcher-curses/
 ├── LORE/
 │   └── base/
-└── CORE/
-    └── witcher-races/             ← (Gnomo, Vran, Bobolak, ecc.)
+│       └── witcher-lore/
+├── MAGIA/
+│   ├── base/
+│   │   ├── witcher-hexes-base/
+│   │   ├── witcher-rituals/
+│   │   ├── witcher-runes/
+│   │   ├── witcher-signs/
+│   │   └── witcher-spells/
+│   ├── caos/
+│   │   ├── witcher-gifts/
+│   │   ├── witcher-goetia/
+│   │   ├── witcher-hexes/
+│   │   ├── witcher-invocations/
+│   │   ├── witcher-rituals-chaos/
+│   │   ├── witcher-signs-chaos/
+│   │   └── witcher-spells-chaos/
+│   └── racconti/
+│       └── witcher-spells-racconti/
+└── _DA_RICOLLOCARE/
+    └── trofei/                ← Mappato su witcher-trophies
 ```
 
 ### 3.2 Regole CRITICHE sui campi
-- **`_id`**: UUID a esattamente 16 caratteri esadecimali, UNIVOCO IN ASSOLUTO su tutti i pack. Eseguire sempre check duplicati.
-- **`description`**: testo in `<p>...</p>`, MAI testo grezzo, MAI tabelle OCR.
-- **`sourcebook`**: formato "MB [pagina]", "TC [pagina]", "LR [pagina]", o "DW [pagina]". Se ci sono duplicati logici (es. due armi uguali ma con stats diverse), il sourcebook discrimina.
-- **`cost` / `weight`**: per gli schemi, imporre SEMPRE 0. Per il resto, estrarre dai manuali.
-- **Nomi**: NON usare parentesi nei nomi dei JSON per distinguere le edizioni (usa solo il `sourcebook`).
+- **`_id`**: UUID a esattamente 16 caratteri esadecimali, UNIVOCO.
+- **`description`**: testo in `<p>...</p>`, NO tabelle OCR.
+- **`sourcebook`**: formato "MB [pagina]", "TC [pagina]", "LR [pagina]", o "DW [pagina]".
+- **`img`**: Percorso dinamico gestito dallo script di mirroring: `modules/witcher-compendium/assets/[PercorsoFisico].webp`.
+- **`cost` / `weight`**: Per gli schemi, obbligatorio 0.
 
-### 3.3 Campo _stats — LA REGOLA D'ORO DEL METADATA
-Tutti i JSON devono avere il seguente blocco esatto:
+### 3.3 Campo _stats — OBBLIGATORIO (Foundry V14)
 ```json
 "_stats": {
   "systemId": "TheWitcherItaNewSystem",
   "coreVersion": 14
 }
 ```
-⚠️ `coreVersion` deve essere un **numero intero** (`14`), MAI stringa.
-⚠️ La voce `systemVersion` **NON DEVE ESSERE PRESENTE**.
-⚠️ Nessun file deve presentare il **Byte Order Mark (BOM)** a inizio file, altrimenti il parsing JSON fallirà e i compilatori salteranno i file. Lo script `fix-metadata.mjs` è configurato per epurare il BOM automaticamente preservando i caratteri accentati (UTF-8).
+⚠️ `coreVersion` intero (`14`). `systemVersion` **VIETATO**. No BOM.
 
 ---
 
-## 4. COME TROVARE I TESTI NEI FILE TXT
+## 4. PIPELINE DI SVILUPPO E DEPLOY
 
-1. Cerca il nome esatto della voce nel TXT.
-2. Prendi il TESTO NARRATIVO subito sotto il titolo.
-3. SCARTA le tabelle (righe con numeri, trattini, pipes `|` per le stats).
-4. Wrappa il testo estratto in `<p>...</p>`.
-5. Gestione apostrofi: usa `replace(/[\u2018\u2019]/g, "'")` per matchare i nomi correttamente.
+### 4.1 La Regola d'Oro (Allineamento 1:1:1)
+Ogni modifica deve rispettare l'allineamento tra:
+1. **Master (`src-packs`)**: Sorgente della verità.
+2. **Assets (`assets`)**: Mirroring delle immagini (allineato via script).
+3. **Packs (`packs`)**: Database compilati 1:1 dalle cartelle Master.
 
----
+### 4.2 Workflow di Rilascio Locale
+1. **Mirroring**: `py _tools/scratch/mirror_structure.py` (allinea assets e percorsi JSON).
+2. **Cleanup**: `py _tools/scratch/cleanup_assets.py` (rimuove asset orfani).
+3. **Compile**: `node _tools/scripts/compile-packs-v11.mjs` (genera LevelDB).
+4. **Deploy**: `./deploy.ps1` (copia in Foundry).
 
-## 5. BUILD E DEPLOY
-
-### 5.1 Compilatore ufficiale V14
-```powershell
-node _tools/scripts/compile-packs-v11.mjs
-```
-- Esegue una pulizia locale dei database e ricompila tutti i file in `_tools/src-packs` verso i rispettivi file LevelDB in `witcher-compendium/packs/`.
-- Ignora e avvisa in caso di file vuoti o danneggiati.
-
-### 5.2 Check pre-compilazione OBBLIGATORI (Sprint 12 Aprile)
-1. **Script Global Metadata**: `node _tools/scripts/fix-metadata.mjs` (rimuove il BOM e controlla _stats).
-2. **Controllo Duplicati**: Esaminare l'univotà degli ID su intero `src-packs`.
-3. **Cartelle Vuote**: Verificare che nessun pack registrato in `module.json` chiami una cartella vuota su disco.
-4. **Verifica Versioning**: Fare bump progressivo nel file `module.json` concordandolo con il team.
-
-### 5.3 Workflow GitHub e Rilascio
-1. Eseguire sempre il rebase (`git pull --rebase origin main`) prima di pushare per prevenire conflitti con la CI e i bot.
-2. Se compaiono conflitti di natura binaria/LevelDB (`LOG` / `MANIFEST`), la soluzione è abortire il rebase/merge, risolvere manualmente i file base (es. `module.json`), e **rieseguire il comando di compilazione node** per pulire le cartelle DB e allinearle.
-3. Caricare le modifiche su git.
-4. Creare un file `.zip` (es. `witcher-compendium-v14.1.55.zip`).
-5. Richiedere a Manuel di verificare in Foundry ed eseguire la Release GitHub.
+### 4.3 Gestione Folder UI Sidebar
+Le cartelle in Foundry sono gestite da `scripts/setup-folders.js`.
+Lo script crea la gerarchia UI (`Categoria > Sottocartella > Pack`) leggendo la posizione dei file su disco.
+Per forzare il refresh: `game.settings.set("witcher-compendium", "foldersCreated", false)`.
 
 ---
 
-## 6. DOCUMENTO DI STATO LIVE
+## 5. DOCUMENTO DI STATO LIVE
 
-### 6.1 Scopo
-Il file `_tools/reports/stato-compendio-live.md` è la fonte di verità
-ufficiale sullo stato reale del compendio in ogni momento.
-Viene usato da Perplexity come base di partenza per ogni nuova sessione
-di lavoro, eliminando il rischio di doppioni o voci già presenti.
+### 5.1 Scopo
+Il file `_tools/reports/stato-compendio-live.md` (o simile) è la fonte di verità ufficiale sullo stato reale del compendio.
 
-### 6.2 Struttura obbligatoria
-
-| Sezione | Contenuto |
-|---|---|
-| Pack attivi | Nome, cartella, N. voci, sourcebook, note |
-| Voci aggiunte (sessione) | Nome, pack, sourcebook, data |
-| Voci modificate (sessione) | Nome, pack, modifica, data |
-| Pack pianificati | Nome, fonte, stato |
-| Issue aperte | Descrizione, priorità, assegnato |
-| Changelog sessioni | Data, operazione, N. voci, autore |
-
-### 6.3 Regola operativa — OBBLIGATORIA
-L'aggiornamento di `stato-compendio-live.md` è L'ULTIMA operazione
-di ogni sessione di lavoro, prima del commit Git.
-
+### 5.2 Regola operativa — OBBLIGATORIA
 Nessuna sessione si chiude senza:
-1. Aggiornamento del documento live
-2. Commit Git con messaggio formato: `[DATA] sessione — N voci aggiunte/modificate`
-
-### 6.4 Uso da parte di Perplexity
-All'inizio di ogni nuova conversazione, Manuel porta
-`stato-compendio-live.md` come primo allegato.
-Questo permette a Perplexity di avere il quadro aggiornato
-senza dover ricostruire lo stato dal log storico.
-
-### 6.5 Chi aggiorna il documento
-- **Antigravity**: aggiorna voci aggiunte/modificate e changelog
-- **Perplexity**: aggiorna pack pianificati e issue aperte
-- **Manuel**: valida e approva prima del commit
+1. Aggiornamento del documento live (voci aggiunte/modificate).
+2. Commit Git con versione corretta (es. `v14.1.57`).
+3. Push del tag corrispondente per attivare la build automatica.
 
 ---
 
-*Documento aggiornato da Antigravity — 13 Aprile 2026 — v3.1*
-*Precedente versione: v3.0 del 12 Aprile 2026*
-*Modifiche v3.1: Aggiunta sezione 6 per la gestione del documento di stato live tramite Perplexity e Antigravity.*
+*Documento aggiornato da Antigravity — 13 Aprile 2026 — v3.5*
+*Modifiche v3.5: Correzione totale dell'alberatura BESTIARIO (unificati Mostri e PNG). Integrazione pipeline di mirroring e deploy 1:1:1.*
