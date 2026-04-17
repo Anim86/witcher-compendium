@@ -1,0 +1,25 @@
+{
+    "_id": "256e25eb2b924b9c",
+    "name": "Pietra del Vino",
+    "type": "component",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/Pietra_del_Vino.webp",
+    "system": {
+        "description": "<p>R Birrifici 1d6/2 UnitÃ  18 0,5 88</p>",
+        "quantity": "1",
+        "weight": 0.5,
+        "cost": 88,
+        "sourcebook": "MB 146",
+        "type": "alchemical",
+        "rarity": "R",
+        "location": "Birrifici 1d6/2 UnitÃ  18",
+        "quantityObtainable": "",
+        "forage": "",
+        "substanceType": "rebis"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

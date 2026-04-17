@@ -1,0 +1,28 @@
+{
+    "_id": "5e72ceea3c4644d5",
+    "name": "Camaglio",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-armor/camaglio.webp",
+    "system": {
+        "description": "<p>Brigantina Brache corazzate Balestra e dardi Ã—20 Brocchiero d'acciaio</p>",
+        "weight": 0,
+        "cost": 0,
+        "components": [
+            "Camaglio 16 4 ore Acciaio (Ã—4) 192 374"
+        ],
+        "difficulty": 16,
+        "time": "4 ore",
+        "sourcebook": "MB 40"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

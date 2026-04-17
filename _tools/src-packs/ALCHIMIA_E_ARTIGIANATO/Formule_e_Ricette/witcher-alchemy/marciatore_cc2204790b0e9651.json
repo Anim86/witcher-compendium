@@ -1,0 +1,23 @@
+{
+    "_id": "cc2204790b0e9651",
+    "name": "Marciatore",
+    "type": "component",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/marciatore.webp",
+    "system": {
+        "description": "<p>Droga militare per coprire grandi distanze senza sosta.</p><p><b>Effetti:</b> Sopprime il bisogno di dormire.</p><p><b>Durata:</b> 24 ore</p><p><b>TossicitÃ :</b> 50%</p>",
+        "quantity": "1",
+        "weight": 0.1,
+        "cost": 64,
+        "sourcebook": "TC 117",
+        "type": "alchemical",
+        "rarity": "R",
+        "location": "",
+        "substanceType": ""
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

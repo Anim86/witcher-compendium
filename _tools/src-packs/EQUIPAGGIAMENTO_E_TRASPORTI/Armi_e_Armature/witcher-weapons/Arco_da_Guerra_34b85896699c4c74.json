@@ -1,0 +1,51 @@
+{
+    "_id": "34b85896699c4c74",
+    "name": "Arco da Guerra",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/Arco_da_Guerra.webp",
+    "system": {
+        "description": "<p>L’arco da guerra è roba di fino. Ãˆ stato sviluppato per com- battere i cavalieri con armature di piastre massicce. Questo affare è alto quasi due metri e tira una freccia che arriva a 77 chili di potenza. Sono questi gli archi che si vedono in battaglia. Eh, stai indietro e tiri in cielo, per poi vedere le frecce che ricadono come una pioggia di meteore. Preferisco le balestre, ma rispetto l’arciere che sa usare uno di questi.</p>",
+        "cost": 835,
+        "reliability": {
+            "max": 15,
+            "value": 15
+        },
+        "accuracy": 0,
+        "reach": "300m",
+        "effects": "N/A",
+        "sourcebook": "MB 76",
+        "range": "300m",
+        "type": {
+            "text": "",
+            "slashing": false,
+            "piercing": true,
+            "bludgeoning": false,
+            "elemental": false
+        },
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "isMeteorite": false,
+            "isNonLethal": false,
+            "effects": []
+        },
+        "weight": 3,
+        "rarity": "Comune",
+        "damage": "6d6",
+        "hands": 2,
+        "unmodifiedMax": {}
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "_id": "cfe496b115424807",
+    "name": "Radice di Pimento",
+    "type": "component",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/Radice_di_Pimento.webp",
+    "system": {
+        "description": "<p>Radice aromatica e pepata con un forte legame all'Etere.</p><p><b>RaritÃ :</b> S | <b>Ubicazione:</b> Campi</p>",
+        "quantity": "1",
+        "weight": 0.1,
+        "cost": 18,
+        "sourcebook": "MB 145",
+        "type": "alchemical",
+        "rarity": "S",
+        "location": "Campi",
+        "substanceType": "etere"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

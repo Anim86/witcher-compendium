@@ -1,0 +1,61 @@
+{
+    "_id": "357c1a71b3cc4361",
+    "name": "Camera di Dormyn",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells-chaos/camera_di_dormyn.webp",
+    "system": {
+        "description": "<p>Camera di Dormyn imprigiona una singola cre- atura in una bolla traslucida, dotata di 40 Punti Salute, che rimane ferma nel punto in cui è stata lanciata. La creatura all’interno non può bersagliare ciò che si trova all’esterno, né viceversa. Inoltre, la bolla è perfettamente insonorizzata.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "TC 83",
+        "class": "Mage",
+        "level": "master",
+        "source": "mixedElements",
+        "stamina": 0,
+        "staminaIsVar": false,
+        "effect": "Camera di Dormyn imprigiona una singola cre- atura in una bolla traslucida, dotata di 40 Punti Salute, che rimane ferma nel punto in cui Ã¨ stata lanciata. La creatura allâ€™interno non puÃ² bersagliare ciÃ² che si trova allâ€™esterno, nÃ© viceversa. Inoltre, la bolla Ã¨ perfettamente insonorizzata.",
+        "range": "10m",
+        "duration": "Attiva (8 RES)",
+        "defence": "Schivare",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
+}

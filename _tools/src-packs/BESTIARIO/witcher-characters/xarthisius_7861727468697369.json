@@ -1,0 +1,194 @@
+{
+    "_id": "7861727468697369",
+    "name": "Xarthisius",
+    "type": "character",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-characters/xarthisius.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 9,
+                "max": 9,
+                "unmodifiedMax": 9
+            },
+            "ref": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "dex": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "body": {
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
+            },
+            "spd": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "emp": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "cra": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "will": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "luck": {
+                "value": null,
+                "max": null,
+                "unmodifiedMax": null
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 15
+            },
+            "alchimia": {
+                "value": 14
+            },
+            "bestiario": {
+                "value": 17
+            },
+            "carisma": {
+                "value": 11
+            },
+            "deduzione": {
+                "value": 17
+            },
+            "eleganza": {
+                "value": 11
+            },
+            "eludere": {
+                "value": 11
+            },
+            "etichetta": {
+                "value": 15
+            },
+            "insegnamento": {
+                "value": 15
+            },
+            "intessereFatture": {
+                "value": 17
+            },
+            "istruzione": {
+                "value": 19
+            },
+            "lanciareIncantesimi": {
+                "value": 18
+            },
+            "nascondersi": {
+                "value": 7
+            },
+            "officiareRituali": {
+                "value": 18
+            },
+            "persuasione": {
+                "value": 13
+            },
+            "rapiditaDiMano": {
+                "value": 11
+            },
+            "resistereacoercizioni": {
+                "value": 14
+            },
+            "resistereallamagia": {
+                "value": 18
+            },
+            "sensibilita": {
+                "value": 13
+            },
+            "artedelmago": {
+                "value": 10
+            },
+            "distillazione": {
+                "value": 8
+            },
+            "immutabile": {
+                "value": 6
+            },
+            "ingegneriaInversa": {
+                "value": 8
+            },
+            "intrigo": {
+                "value": 8
+            },
+            "magiaAmpliata": {
+                "value": 4
+            },
+            "malelingue": {
+                "value": 8
+            },
+            "mutare": {
+                "value": 6
+            },
+            "risorse": {
+                "value": 4
+            },
+            "sintonia": {
+                "value": 8
+            }
+        },
+        "derivedStats": {
+            "vigor": {
+                "value": 21,
+                "max": 21,
+                "unmodifiedMax": 21
+            },
+            "rec": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "resolve": {
+                "value": 30,
+                "max": 30,
+                "unmodifiedMax": 30
+            },
+            "stun": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "woundTreshold": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "hp": {
+                "value": 30,
+                "max": 30,
+                "unmodifiedMax": 30
+            },
+            "sta": {
+                "value": 30,
+                "max": 30,
+                "unmodifiedMax": 30
+            }
+        },
+        "details": {
+            "biography": "<p>Xarthisius ha grandi capacità divinatorie, ma tale pratica è per sua natura ingannevole. Sembrava un uomo onesto, con una fede toccante nella guida delle stelle. – Glynnis var Treharne</p><p>Xarthisius è un rinomato astrologo e divinatore nilfgaardiano che ha servito lealmente l'Imperatore Emhyr var Emreis. Grazie alle sue letture delle stelle, ha guidato Emhyr durante i suoi anni di esilio nel Nord, predicendo correttamente molti eventi futuri. Nonostante la sua integrità accademica, è caduto in disgrazia agli occhi dell'Imperatore a causa dell'imprecisione di alcune divinazioni cruciali, finendo imprigionato per ordine del sovrano che un tempo aveva aiutato a salire al trono.</p>",
+            "sourcebook": "TC 171"
+        },
+        "description": "<p>Xarthisius ha grandi capacità divinatorie, ma tale pratica è per sua natura ingannevole. Sembrava un uomo onesto, con una fede toccante nella guida delle stelle. – Glynnis var Treharne</p><p>Xarthisius è un rinomato astrologo e divinatore nilfgaardiano che ha servito lealmente l'Imperatore Emhyr var Emreis. Grazie alle sue letture delle stelle, ha guidato Emhyr durante i suoi anni di esilio nel Nord, predicendo correttamente molti eventi futuri.</p><h3>Equipaggiamento</h3><p>Bastone da Passeggio Elfico, Pugnale, Abiti Comuni, Borsello, Mappa del Continente, Amuleto con Gemma, Attrezzatura Alchemica, Occorrente per Scrivere, Acciarino, Mappa Stellare, Testo di Astrologia, Formaggio, Mazzo di Gwent (Nilfgaard), Giaciglio, Simbolo Sacro (Il Grande Sole), Diario, Borraccia, Pipa e Tabacco, Pietra del Sole.</p><h3>Incantesimi Preferiti</h3><p>Bussola Magica, Compromettere Focus, Dissipazione, Idromanzia, Individuare Linee Geomantiche, Oniromanzia, Piromanzia, Riparo di Urien, Telepatia, Teletrasporto, Tiromanzia.</p>",
+        "sourcebook": "TC 171"
+    },
+    "items": [],
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

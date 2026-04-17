@@ -1,0 +1,32 @@
+{
+    "_id": "edc769e026cdb33f",
+    "name": "Palvese",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-armor/palvese.webp",
+    "system": {
+        "description": "<p>Schema per la fabbricazione di: <b>Palvese</b>.</p><p><b>Componenti richiesti:</b> Legname Indurito (Ã—10), Cuoio Indurito (Ã—3), Cerume di Orco (Ã—1), Acciaio Nero (Ã—1), Grasso di Estere (Ã—2)</p><p><b>DifficoltÃ  Manifattura:</b> CD 19</p><p><b>Tempo:</b> 5 ore</p>",
+        "weight": 0,
+        "cost": 0,
+        "components": [
+            "Legname Indurito (Ã—10)",
+            "Cuoio Indurito (Ã—3)",
+            "Cerume di Orco (Ã—1)",
+            "Acciaio Nero (Ã—1)",
+            "Grasso di Estere (Ã—2)"
+        ],
+        "difficulty": 19,
+        "time": "5 ore",
+        "sourcebook": "MB 137"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

@@ -1,0 +1,55 @@
+{
+    "_id": "96e13315d29d466d",
+    "name": "Brache Corazzate",
+    "type": "armor",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-armor/Brache_Corazzate.webp",
+    "system": {
+        "description": "<p>Ti dirò, prima che si ammorbidiscano ci vuole qualche set- timana. Ma non è esattamente il tuo problema principale. Le parti importanti sono il cuoio indurito e le piastre d’ac- ciaio. Tengono sani e salvi senza appesantirti troppo.</p>",
+        "cost": 250,
+        "reliability": {
+            "value": 0,
+            "max": 0
+        },
+        "sourcebook": "MB 19",
+        "type": "Medium",
+        "location": "Leg",
+        "encumb": 0,
+        "enhancements": 0,
+        "headStopping": 0,
+        "headMaxStopping": 0,
+        "torsoStopping": 0,
+        "torsoMaxStopping": 0,
+        "leftArmStopping": 0,
+        "leftArmMaxStopping": 0,
+        "rightArmStopping": 0,
+        "rightArmMaxStopping": 0,
+        "leftLegStopping": 12,
+        "leftLegMaxStopping": 12,
+        "rightLegStopping": 12,
+        "rightLegMaxStopping": 12,
+        "bludgeoning": false,
+        "slashing": false,
+        "piercing": false,
+        "elemental": false,
+        "fire": false,
+        "poison": false,
+        "bleeding": false,
+        "weight": 3.5,
+        "rarity": "Diffusa",
+        "stoppingPower": 12,
+        "protection": {},
+        "encumbranceMod": 0,
+        "unmodifiedMax": {}
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

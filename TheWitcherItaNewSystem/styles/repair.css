@@ -1,0 +1,23 @@
+table.repair-info td:first-child {
+    text-align: left;
+}
+
+table.repair-info td:last-child {
+    text-align: right;
+}
+
+table.repair-info td {
+    font-weight: bold;
+    font-size: 1.15em;
+}
+
+
+.repair .components-list-container {
+    overflow-y: scroll;
+    max-height: calc(60vh - 50px);
+}
+
+.repair general {
+    overflow-y: scroll;
+    max-height: calc(25vh); 
+}

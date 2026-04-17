@@ -1,0 +1,51 @@
+{
+    "_id": "d5e6f7a8b9c0d1e2",
+    "name": "Armatura dei Montanari",
+    "type": "armor",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-armor/armatura_dei_montanari.webp",
+    "system": {
+        "description": "<p>Armatura Reliquia. Appartenuta a Thjjn, eroe bobolak che difese le miniere dei monti Gheppi dall'esilio umano, soccombendo durante la tempesta finale.</p><p><strong>Statistiche:</strong> 23 PA, 0 VI, Res. Contundente/Tagliente/Perforante/Veleno. 3 Slot.</p><p><strong>Effetti:</strong> Resistenze: Contundente, Perforante, Tagliente, Veleno.</p>",
+        "quantity": "1",
+        "weight": 15,
+        "cost": 0,
+        "sourcebook": "MB 265",
+        "poa": {
+            "value": 23,
+            "max": 23
+        },
+        "stopping": 23,
+        "ev": 0,
+        "encumbrance": 0,
+        "level": "medium",
+        "enhancementSlots": 3,
+        "bludgeoning": true,
+        "slashing": true,
+        "piercing": true,
+        "type": "Medium",
+        "location": "FullCover",
+        "encumb": 0,
+        "enhancements": 3,
+        "headStopping": 23,
+        "headMaxStopping": 23,
+        "torsoStopping": 23,
+        "torsoMaxStopping": 23,
+        "leftArmStopping": 23,
+        "leftArmMaxStopping": 23,
+        "rightArmStopping": 23,
+        "rightArmMaxStopping": 23,
+        "leftLegStopping": 23,
+        "leftLegMaxStopping": 23,
+        "rightLegStopping": 23,
+        "rightLegMaxStopping": 23,
+        "elemental": false,
+        "fire": false,
+        "poison": true,
+        "bleeding": false
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "name": "Percepire Veleno",
+    "type": "valuable",
+    "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Doni_del_Caos/witcher-gifts/percepire_veleno.webp",
+    "system": {
+        "sourcebook": "TC 75",
+        "description": "<p><strong>Effetto:</strong> utilizzando un Round, il personaggio può annusare una sostanza e capire se è stata avvelenata.</p><p><strong>Effetti Collaterali:</strong> il personaggio subisce automaticamente gli effetti Avvelenato ed Ebbrezza quando ne è bersaglio. Inoltre, finché è sotto il loro effetto subisce anche Nausea.</p>",
+        "stats": {
+            "cost": "2 RES (Prova CD 9)"
+        }
+    },
+    "_id": "fb3658dd44454676",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

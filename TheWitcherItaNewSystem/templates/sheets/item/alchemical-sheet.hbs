@@ -1,0 +1,42 @@
+<section class="scrollable">
+    {{>"systems/TheWitcherItaNewSystem/templates/partials/item-header.hbs"}}
+
+    <div class="item-description-container">
+        <div class="section-title">
+            <i class="fas fa-scroll"></i> {{localize "WITCHER.Item.Description"}}
+        </div>
+        {{#if item.system.effect}}
+            {{editor item.system.effect target="system.effect" button=true owner=owner editable=editable engine="prosemirror"}}
+        {{else if item.system.description}}
+            {{editor item.system.description target="system.description" button=true owner=owner editable=editable engine="prosemirror"}}
+        {{else}}
+            {{editor item.system.effect target="system.effect" button=true owner=owner editable=editable engine="prosemirror"}}
+        {{/if}}
+    </div>
+
+    <div class="properties-grid main-stats">
+        <div class="property-card">
+            <label>{{localize "WITCHER.Type"}}</label>
+            <select name="system.type" id="type-select">
+                {{selectOptions config.type selected=item.system.type localize=true}}
+            </select>
+        </div>
+        <div class="property-card">
+            <label>{{localize "WITCHER.Item.Short.Availability"}}</label>
+            <select name="system.avail" id="avail-select">
+                {{selectOptions config.Availability selected=item.system.avail localize=true}}
+            </select>
+        </div>
+        <div class="property-card">
+            <label>{{localize "WITCHER.Alchemy.Duration"}}</label>
+            <input type="text" name="system.time" value="{{item.system.time}}" />
+        </div>
+        {{#if (or (eq item.system.type "potion") (eq item.system.type "decoction"))}}
+        <div class="property-card highlight">
+            <label>{{localize "WITCHER.Alchemy.Toxicity"}}</label>
+            <input type="text" name="system.toxicity" value="{{item.system.toxicity}}" />
+        </div>
+        {{/if}}
+    </div>
+</section>
+

@@ -1,0 +1,32 @@
+# Source materials
+Manuali/
+*.pdf
+*.txt
+*.log
+
+# Python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Foundry LevelDB
+# Ignore volatile files that change frequently and can cause lock errors
+**/packs/**/LOCK
+**/packs/**/LOG
+**/packs/**/LOG.old
+**/packs/**/*.log
+
+# Keep data files
+!**/packs/**/*.ldb
+!**/packs/**/CURRENT
+!**/packs/**/MANIFEST-*
+
+# Zip files for releases
+*.zip
+
+# Dependencies
+node_modules/
+_tools/scripts/node_modules/

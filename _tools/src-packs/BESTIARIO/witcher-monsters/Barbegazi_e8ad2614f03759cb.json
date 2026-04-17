@@ -1,0 +1,129 @@
+{
+    "name": "Barbegazi",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/barbegazi.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "ref": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "dex": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "body": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "spd": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "emp": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "cra": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "will": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 0
+            },
+            "atletica": {
+                "value": 0
+            },
+            "coraggio": {
+                "value": 0
+            },
+            "intimidire": {
+                "value": 0
+            },
+            "nascondersi": {
+                "value": 0
+            },
+            "prestanza": {
+                "value": 0
+            },
+            "resistereAllaMagia": {
+                "value": 0
+            },
+            "rissa": {
+                "value": 0
+            },
+            "sopravvivenza": {
+                "value": 0
+            },
+            "tempra": {
+                "value": 0
+            }
+        },
+        "details": {
+            "biography": "<p>Se dovessi mai viaggiare in compagnia per le montagne, resta il più vicino possibile agli altri. Ricorda quel che ti dico, se qualcuno sparisce e poi lo sentite chiamare aiuto, potrebbe essere un barbegazi. Eh, da quel che ho sentito, questi scarafaggi bastardi possono rubarti la voce se ti mordono. Gli piace nascondersi tra le rocce e attirare la gente in un’imboscata. – Rodolf Kazmer</p>",
+            "threat": "Facile Complesso",
+            "reward": 15,
+            "monsterType": "Ogroid",
+            "difficulty": "MEDIUM"
+        },
+        "derivedStats": {
+            "rec": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "stun": {
+                "value": 0,
+                "max": 0
+            },
+            "woundTreshold": {
+                "value": 0,
+                "max": 0
+            },
+            "hp": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "sta": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "description": "<p>Sui monti bisogna stare sempre all’erta, perché ogni masso potrebbe essere un barbegazi. Queste creature sono note per la loro capacità di imitare le voci umane, usandole per attirare le vittime fino a luoghi isolati. Quando si attraversano le zone fredde delle Montagne del Drago, la discrezione è fondamentale. Se privati dell’elemento sorpresa, i barbegazi possono essere uccisi da chiunque sia abile con la spada.</p><p>“Ogni tanto qualche studente scompariva nei dintorni di Kaer Seren. Avevano parlato troppo lungo il percorso di allenamento e un nido di barbegazi aveva imparato a imitarli. Il giorno dopo avevano sentito la voce di uno dei loro confratelli che riecheggiava da una caverna o dal folto della foresta. Per fortuna i barbegazi sono facili da uccidere.” – Erland di Larvik</p>",
+        "sourcebook": "DW 66",
+        "monsterType": "Ogroid",
+        "difficulty": "MEDIUM",
+        "bounty": 15
+    },
+    "items": [],
+    "_id": "e8ad2614f03759cb",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

@@ -1,0 +1,138 @@
+{
+    "_id": "46254ad0013cc34f",
+    "name": "Francine Marchand",
+    "type": "character",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-characters/francine_marchand.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "ref": {
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
+            },
+            "dex": {
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
+            },
+            "body": {
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
+            },
+            "spd": {
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
+            },
+            "emp": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "cra": {
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
+            },
+            "will": {
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
+            },
+            "luck": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 9
+            },
+            "atletica": {
+                "value": 7
+            },
+            "belleArti": {
+                "value": 10
+            },
+            "cavalcare": {
+                "value": 9
+            },
+            "nascondersi": {
+                "value": 0
+            }
+        },
+        "details": {
+            "biography": "<p>Francine Marchand è la figlia di un ricco mercante di Tana di Volpe, vittima di una maledizione che fa crescere i suoi capelli a una velocità prodigiosa, intrappolandola in una torre. Sopravvive da due anni in isolamento, mangiando ratti e insetti.</p>",
+            "threat": "Facile",
+            "sourcebook": "LR 147"
+        },
+        "derivedStats": {
+            "hp": {
+                "value": 15,
+                "max": 15,
+                "unmodifiedMax": 15
+            },
+            "sta": {
+                "value": 15,
+                "max": 15,
+                "unmodifiedMax": 15
+            },
+            "rec": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "stun": {
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
+            },
+            "vigor": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "resolve": {
+                "value": 15,
+                "max": 15,
+                "unmodifiedMax": 15
+            },
+            "woundTreshold": {
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
+            },
+            "run": {
+                "value": 9,
+                "max": 9,
+                "unmodifiedMax": 9
+            },
+            "leap": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "enc": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            }
+        },
+        "description": "<p>Damigella intrappolata nella torre.</p>",
+        "sourcebook": "LR 147"
+    },
+    "items": [],
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

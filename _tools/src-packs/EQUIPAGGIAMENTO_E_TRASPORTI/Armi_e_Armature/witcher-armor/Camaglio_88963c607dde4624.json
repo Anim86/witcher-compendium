@@ -1,0 +1,55 @@
+{
+    "_id": "88963c607dde4624",
+    "name": "Camaglio",
+    "type": "armor",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-armor/Camaglio.webp",
+    "system": {
+        "description": "<p>Serve una corazza semplice e robusta? Eh, amico, ti serve un camaglio. Ãˆ solo un nome ricercato per un cappuccio di ma- glia di ferro. Ferma i colpi di spada e ammortizza martellate e roba simile. Alcuni lo usano come armatura da sé, altri lo indossano sotto un elmo. In ogni caso è un ottimo articolo.</p>",
+        "cost": 250,
+        "reliability": {
+            "value": 0,
+            "max": 0
+        },
+        "sourcebook": "MB 40",
+        "type": "Medium",
+        "location": "Head",
+        "encumb": 0,
+        "enhancements": 0,
+        "headStopping": 12,
+        "headMaxStopping": 12,
+        "torsoStopping": 0,
+        "torsoMaxStopping": 0,
+        "leftArmStopping": 0,
+        "leftArmMaxStopping": 0,
+        "rightArmStopping": 0,
+        "rightArmMaxStopping": 0,
+        "leftLegStopping": 0,
+        "leftLegMaxStopping": 0,
+        "rightLegStopping": 0,
+        "rightLegMaxStopping": 0,
+        "bludgeoning": false,
+        "slashing": false,
+        "piercing": false,
+        "elemental": false,
+        "fire": false,
+        "poison": false,
+        "bleeding": false,
+        "weight": 0.5,
+        "rarity": "Diffusa",
+        "stoppingPower": 12,
+        "protection": {},
+        "encumbranceMod": 0,
+        "unmodifiedMax": {}
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

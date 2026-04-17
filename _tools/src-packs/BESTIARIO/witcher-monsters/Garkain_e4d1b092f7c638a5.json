@@ -1,0 +1,129 @@
+{
+    "name": "Garkain",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/garkain.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "ref": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "dex": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "body": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "spd": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "emp": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "cra": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "will": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 0
+            },
+            "atletica": {
+                "value": 0
+            },
+            "coraggio": {
+                "value": 0
+            },
+            "intimidire": {
+                "value": 0
+            },
+            "nascondersi": {
+                "value": 0
+            },
+            "prestanza": {
+                "value": 0
+            },
+            "resistereAllaMagia": {
+                "value": 0
+            },
+            "rissa": {
+                "value": 0
+            },
+            "sopravvivenza": {
+                "value": 0
+            },
+            "tempra": {
+                "value": 0
+            }
+        },
+        "details": {
+            "biography": "<p>Dicono che se vedi un garkain è già troppo tardi! Non ho mai avuto questo piacere, ma ho visto alcuni disegni. I garkain si nascondono tra i gargoyle e balzano sui passanti per farli a pezzi con gli artigli. Alcuni sostengono che molti gargoyle della capitale del Nazair erano garkain, eh. – Rodolf Kazmer</p>",
+            "threat": "Medio Complesso",
+            "reward": 700,
+            "monsterType": "Vampire",
+            "difficulty": "MEDIUM"
+        },
+        "derivedStats": {
+            "rec": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "stun": {
+                "value": 0,
+                "max": 0
+            },
+            "woundTreshold": {
+                "value": 0,
+                "max": 0
+            },
+            "hp": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "sta": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "description": "<p>I garkain sono vampiri d'intelligenza ferale che cacciano in branco guidati da un alfa. Impiegano mobilità verticale e scariche di energia psichica per disorientare le prede prima di massacrarle con gli artigli. Godono tanto nel bere sangue quanto nel massacrare violentemente le loro vittime, lasciando spesso scene raccapriccianti nei centri urbani dove operano.</p>",
+        "sourcebook": "DW 118",
+        "monsterType": "Vampire",
+        "difficulty": "MEDIUM",
+        "bounty": 700
+    },
+    "items": [],
+    "_id": "e4d1b092f7c638a5",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

@@ -1,0 +1,130 @@
+<section class="scrollable">
+    {{>"systems/TheWitcherItaNewSystem/templates/partials/item-header.hbs"}}
+
+    <div class="properties-grid main-stats">
+        <div class="property-card">
+            <label>{{localize "WITCHER.Diagram.Formulae"}}</label>
+            <input type="checkbox" name="system.isFormulae" {{checked item.system.isFormulae}} />
+        </div>
+        <div class="property-card">
+            <label>{{localize "WITCHER.Type"}}</label>
+            <select name="system.type">
+                {{#if item.system.isFormulae}}
+                    {{selectOptions selects.formulaTypes selected=item.system.type localize=true}}
+                {{else}}
+                    {{selectOptions selects.diagramTypes selected=item.system.type localize=true}}
+                {{/if}}
+            </select>
+        </div>
+        <div class="property-card">
+            <label>{{localize "WITCHER.Actor.Profession.Level"}}</label>
+            <select name="system.level">
+                {{selectOptions config.craftingLevels selected=item.system.level localize=true}}
+            </select>
+        </div>
+        <div class="property-card highlight">
+            <label>{{localize "WITCHER.DC"}}</label>
+            {{#if item.system.isFormulae}}
+                <input type="text" name="system.alchemyDC" value="{{item.system.alchemyDC}}" data-dtype="Number" />
+            {{else}}
+                <input type="text" name="system.craftingDC" value="{{item.system.craftingDC}}" data-dtype="Number" />
+            {{/if}}
+        </div>
+        <div class="property-card">
+            <label>{{localize "WITCHER.Diagram.craftingTime"}}</label>
+            <input type="text" name="system.craftingTime" value="{{item.system.craftingTime}}" />
+        </div>
+        {{#unless item.system.isFormulae}}
+        <div class="property-card">
+            <label>{{localize "WITCHER.Diagram.investment"}}</label>
+            <input type="text" name="system.investment" value="{{item.system.investment}}" data-dtype="Number" />
+        </div>
+        {{/unless}}
+    </div>
+
+    {{>"systems/TheWitcherItaNewSystem/templates/partials/associated-item.hbs"}}
+
+    <div class="item-description-container">
+        <div class="section-title">
+            <i class="fas fa-scroll"></i> {{localize "WITCHER.Item.Description"}}
+        </div>
+        {{editor item.system.description target="system.description" button=true owner=owner editable=editable engine="prosemirror"}}
+    </div>
+
+    {{#if item.system.isFormulae}}
+    <div class="alchemy-substances-container">
+        <div class="section-title"><i class="fas fa-flask"></i> {{localize "WITCHER.Loot.Components"}}</div>
+        <div class="substances-grid">
+            <div class="substance-item">
+                <img src="systems/TheWitcherItaNewSystem/assets/images/vitriol.png" title="Vitriol" />
+                <input type="number" name="system.alchemyComponents.vitriol" value="{{item.system.alchemyComponents.vitriol}}" />
+            </div>
+            <div class="substance-item">
+                <img src="systems/TheWitcherItaNewSystem/assets/images/rebis.png" title="Rebis" />
+                <input type="number" name="system.alchemyComponents.rebis" value="{{item.system.alchemyComponents.rebis}}" />
+            </div>
+            <div class="substance-item">
+                <img src="systems/TheWitcherItaNewSystem/assets/images/aether.png" title="Aether" />
+                <input type="number" name="system.alchemyComponents.aether" value="{{item.system.alchemyComponents.aether}}" />
+            </div>
+            <div class="substance-item">
+                <img src="systems/TheWitcherItaNewSystem/assets/images/quebrith.png" title="Quebrith" />
+                <input type="number" name="system.alchemyComponents.quebrith" value="{{item.system.alchemyComponents.quebrith}}" />
+            </div>
+            <div class="substance-item">
+                <img src="systems/TheWitcherItaNewSystem/assets/images/hydragenum.png" title="Hydragenum" />
+                <input type="number" name="system.alchemyComponents.hydragenum" value="{{item.system.alchemyComponents.hydragenum}}" />
+            </div>
+            <div class="substance-item">
+                <img src="systems/TheWitcherItaNewSystem/assets/images/vermilion.png" title="Vermilion" />
+                <input type="number" name="system.alchemyComponents.vermilion" value="{{item.system.alchemyComponents.vermilion}}" />
+            </div>
+            <div class="substance-item">
+                <img src="systems/TheWitcherItaNewSystem/assets/images/sol.png" title="Sol" />
+                <input type="number" name="system.alchemyComponents.sol" value="{{item.system.alchemyComponents.sol}}" />
+            </div>
+            <div class="substance-item">
+                <img src="systems/TheWitcherItaNewSystem/assets/images/caelum.png" title="Caelum" />
+                <input type="number" name="system.alchemyComponents.caelum" value="{{item.system.alchemyComponents.caelum}}" />
+            </div>
+            <div class="substance-item">
+                <img src="systems/TheWitcherItaNewSystem/assets/images/fulgur.png" title="Fulgur" />
+                <input type="number" name="system.alchemyComponents.fulgur" value="{{item.system.alchemyComponents.fulgur}}" />
+            </div>
+        </div>
+    </div>
+    {{/if}}
+
+    <div class="components-list-container">
+        <div class="section-title">
+            <i class="fas fa-hammer"></i> {{localize "WITCHER.Diagram.components"}}
+            <a class="add-component control-icon" title="{{localize 'WITCHER.Item.AddComponent'}}"><i class="fas fa-plus"></i></a>
+        </div>
+        
+        <div class="components-grid">
+            {{#each knownCraftingComponents as |component name|}}
+                <div class="component-row" data-id="{{component.id}}">
+                    <img class="component-img" src="{{component.img}}" />
+                    <span class="component-name edit-component">{{component.name}}</span>
+                    <div class="component-quantity">
+                        <label>{{localize "WITCHER.Item.Quantity"}}</label>
+                        <input class="edit-component" data-field="quantity" type="number" value="{{component.quantity}}" />
+                    </div>
+                    <a class="remove-component control-icon" title="{{localize 'WITCHER.Item.RemoveComponent'}}"><i class="fas fa-trash"></i></a>
+                </div>
+            {{/each}}
+            {{#each unknownCraftingComponents as |component name|}}
+                <div class="component-row unknown" data-id="{{component.id}}">
+                    <div class="component-img placeholder"><i class="fas fa-question"></i></div>
+                    <input class="component-name-input edit-component" data-field="name" type="text" value="{{component.name}}" />
+                    <div class="component-quantity">
+                        <label>{{localize "WITCHER.Item.Quantity"}}</label>
+                        <input class="edit-component" data-field="quantity" type="number" value="{{component.quantity}}" />
+                    </div>
+                    <a class="remove-component control-icon" title="{{localize 'WITCHER.Item.RemoveComponent'}}"><i class="fas fa-trash"></i></a>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</section>
+

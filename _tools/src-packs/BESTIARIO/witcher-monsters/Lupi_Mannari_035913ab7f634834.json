@@ -1,0 +1,184 @@
+{
+    "_id": "035913ab7f634834",
+    "name": "Lupi Mannari",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/lupi_mannari.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "ref": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "dex": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "body": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "spd": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "emp": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "cra": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "will": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 10
+            },
+            "atletica": {
+                "value": 8
+            },
+            "coraggio": {
+                "value": 10
+            },
+            "eludere": {
+                "value": 8
+            },
+            "mischia": {
+                "value": 9
+            },
+            "nascondersi": {
+                "value": 9
+            },
+            "rissa": {
+                "value": 8
+            },
+            "sopravvivenza": {
+                "value": 9
+            },
+            "tempra": {
+                "value": 8
+            }
+        },
+        "details": {
+            "biography": "<p>La leggenda dice che sono tipi normali finché non vengono illuminati dalla luna e allora si trasformano in mostri folli. – Rodolf Kazmer</p><p>I lupi mannari sono belve orribili e pericolose che possono nascondersi dentro individui perfettamente normali. Questi colossi somigliano a un incrocio tra un umano e un lupo gigante. Sono spietati e guidati dalla sete di sangue. Nascono da persone comuni, vittime di una maledizione.</p>",
+            "threat": "Ardua",
+            "reward": 2000,
+            "monsterType": "CursedOne",
+            "difficulty": "MEDIUM"
+        },
+        "derivedStats": {
+            "vigor": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "rec": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "resolve": {
+                "value": 50,
+                "max": 50,
+                "unmodifiedMax": 50
+            },
+            "stun": {
+                "value": 8,
+                "max": 8
+            },
+            "woundTreshold": {
+                "value": 10,
+                "max": 10
+            },
+            "hp": {
+                "value": 50,
+                "max": 50,
+                "unmodifiedMax": 50
+            },
+            "sta": {
+                "value": 50,
+                "max": 50,
+                "unmodifiedMax": 50
+            }
+        },
+        "description": "<p>La leggenda dice che sono tipi normali finché non vengono illuminati dalla luna e allora si trasformano in mostri folli. – Rodolf Kazmer</p><p>I lupi mannari sono belve orribili e pericolose che possono nascondersi dentro individui perfettamente normali. Questi colossi somigliano a un incrocio tra un umano e un lupo gigante. Sono spietati e guidati dalla sete di sangue. Nascono da persone comuni, vittime di una maledizione.</p>",
+        "sourcebook": "MB 289",
+        "monsterType": "CursedOne",
+        "difficulty": "MEDIUM",
+        "bounty": 2000
+    },
+    "items": [
+        {
+            "_id": "0dcdc4b3c3494bf4",
+            "name": "Artigli",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/Trait_Artigli.webp",
+            "system": {
+                "description": "",
+                "damage": "4d6+2",
+                "accuracy": 0,
+                "effects": "Sanguinamento (25%)"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "6b6eecc2d7be407c",
+            "name": "Morso",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/Trait_Zanne.webp",
+            "system": {
+                "description": "",
+                "damage": "5d6",
+                "accuracy": 0,
+                "effects": "Sanguinamento (75%)"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "f14e599975544884",
+            "name": "[Capacità] Rigenerazione",
+            "type": "note",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/Trait_Generico.webp",
+            "system": {
+                "description": "<p>Un lupo mannaro rigenera 5 PS per round.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        }
+    ],
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

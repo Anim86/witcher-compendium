@@ -1,0 +1,64 @@
+{
+    "_id": "08816405b9304d1e",
+    "name": "Vortice Fiammeggiante",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells/Vortice_Fiammeggiante.webp",
+    "system": {
+        "description": "<p>Vortice Fiammeggiante crea un tornado di fiamme largo 2m. L’incantatore può dirigere il torna- do spostandolo di un numero di metri per turno pari al valore dell’Abilit Lanciare Incantesimi. Se travolge un bersaglio, l’incantatore effettua un tiro di Lanciare Incantesimi contrapposto al tiro di Eludere del bersaglio. Se ha successo, il bersaglio subisce 5d6 danni e ha il 50% di probabilit di subire l’effetto A Fuoco. Il vortice non si sposta oltre il raggio dell’incantesimo.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "MB 103",
+        "class": "Mage",
+        "level": "journeyman",
+        "source": "fire",
+        "stamina": 15,
+        "staminaIsVar": false,
+        "effect": "Vortice Fiammeggiante crea un tornado di fiamme largo 2m. L’incantatore può dirigere il torna- do spostandolo di un numero di metri per turno pari al valore dell’Abilit Lanciare Incantesimi. Se travolge un bersaglio, l’incantatore effettua un tiro di Lanciare Incantesimi contrapposto al tiro di Eludere del bersaglio. Se ha successo, il bersaglio subisce 5d6 danni e ha il 50% di probabilit di subire l’effetto A Fuoco. Il vortice non si sposta oltre il raggio dell’incantesimo.",
+        "range": "Raggio di 10m",
+        "duration": "Attiva (4 RES)",
+        "defence": "Schivare",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast",
+        "causeDamages": true,
+        "damage": "5d6",
+        "damageType": "elemental"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

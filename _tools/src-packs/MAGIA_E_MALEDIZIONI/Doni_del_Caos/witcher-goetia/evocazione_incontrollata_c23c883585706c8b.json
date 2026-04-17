@@ -1,0 +1,31 @@
+{
+    "_id": "c23c883585706c8b",
+    "name": "Evocazione Incontrollata",
+    "type": "ritual",
+    "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Doni_del_Caos/witcher-goetia/evocazione_incontrollata.webp",
+    "system": {
+        "description": "<p>Rituale Goetico di livello Novizio. Il capo evocatore traccia un circolo con il gesso e intona tre sillabe casuali, visualizzando il proprio desiderio più grande. È un rituale estremamente pericoloso perché evoca un demone del tutto casuale — persino un demone maggiore. La creatura evocata non è sotto alcun controllo e non ha obblighi verso l'evocatore: può attaccare i presenti o semplicemente andarsene.</p><p><strong>Preparazione:</strong> 10 Round. <strong>CD Artigianato Rituale:</strong> 10. <strong>Componenti:</strong> Gesso per tracciare il circolo.</p><p><em>⚠️ La Goezia è una delle pratiche magiche più oscure e pericolose, severamente proibita dal Concilio dei Maghi.</em></p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "TC 139",
+        "class": "ritual",
+        "level": "novice",
+        "source": "",
+        "stamina": 0,
+        "staminaIsVar": false,
+        "effect": "Evoca un demone casuale (anche maggiore) che non è sotto alcun controllo. La creatura evocata non ha obblighi: può attaccare i presenti o andarsene. Estremamente pericoloso.",
+        "range": "N/A",
+        "duration": "Istantanea",
+        "preparationTime": "10 Round",
+        "difficultyCheck": "10",
+        "components": "Gesso per tracciare il circolo (Investimento: 2)",
+        "spellAttackSkill": "ritcraft"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

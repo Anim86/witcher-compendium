@@ -1,0 +1,55 @@
+{
+    "_id": "15857f6ead814bc8",
+    "name": "Gambesone",
+    "type": "armor",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-armor/Gambesone.webp",
+    "system": {
+        "description": "<p>Qualche anno fa ho marciato da Nastrog a Bremervoord dentro un usbergo di maglia. Non sapevamo quando avremmo visto la batta- glia e così tenevamo l’armatura addosso tutto il tempo. Fortuna che non ero uno dei cavalieri in quella marcia. Per quei poveri bastardi è stato un incubo vivere in quella corazza a piastre. Ma neanche la maglia di ferro era comoda. Ãˆ pesante, rumorosa e se non la tieni pulita fa ruggine e s’irrigidisce. In questi tempi porto un gambesone. Certo, non proteg- ge molto. Ma non si arrugginisce. Se dai un’occhiata in una cittÃ , vedi che c’è un sacco di gente che indossa un gambesone. Mi sa che un’altra causa è da imputare al costo delle corazze oggigiorno, ma un’armatura è gratis se pugnali nel sonno quello che ce l’ha addosso. - Rodolf Kazmer ARMATURE PER LA TESTA</p>",
+        "cost": 100,
+        "reliability": {
+            "value": 0,
+            "max": 0
+        },
+        "sourcebook": "MB 48",
+        "type": "Light",
+        "location": "Torso",
+        "encumb": 0,
+        "enhancements": 0,
+        "headStopping": 0,
+        "headMaxStopping": 0,
+        "torsoStopping": 3,
+        "torsoMaxStopping": 3,
+        "leftArmStopping": 3,
+        "leftArmMaxStopping": 3,
+        "rightArmStopping": 3,
+        "rightArmMaxStopping": 3,
+        "leftLegStopping": 0,
+        "leftLegMaxStopping": 0,
+        "rightLegStopping": 0,
+        "rightLegMaxStopping": 0,
+        "bludgeoning": false,
+        "slashing": false,
+        "piercing": false,
+        "elemental": false,
+        "fire": false,
+        "poison": false,
+        "bleeding": false,
+        "weight": 1,
+        "rarity": "Diffusa",
+        "stoppingPower": 3,
+        "protection": {},
+        "encumbranceMod": 0,
+        "unmodifiedMax": {}
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

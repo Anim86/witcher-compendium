@@ -1,0 +1,61 @@
+{
+    "_id": "9cf62182fd34f93d",
+    "name": "Presagi di Sventura",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Doni_del_Caos/witcher-invocations/presagi_di_sventura.webp",
+    "system": {
+        "description": "<p>Invocazione da Arciprete (Nehaleni). L'incantatore tira dadi finché non ottiene tre risultati compresi tra 2 e 9: se chiunque entro 20 metri ottiene uno di quei risultati su un 1d10, il Prete può forzarlo immediatamente a diventare un Disastro.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "TC 97",
+        "class": "Invocations",
+        "level": "master",
+        "source": "Priest",
+        "stamina": 16,
+        "staminaIsVar": false,
+        "effect": "L'incantatore tira dadi finché non ottiene tre risultati tra 2 e 9. Se chiunque entro 20m ottiene uno di quei risultati su un 1d10, il Prete può forzarlo a diventare un Disastro.",
+        "range": "Personale",
+        "duration": "1 giorno",
+        "defence": "Nessuna",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

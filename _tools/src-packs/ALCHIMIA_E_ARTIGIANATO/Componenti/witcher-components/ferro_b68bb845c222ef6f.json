@@ -1,0 +1,26 @@
+{
+    "_id": "b68bb845c222ef6f",
+    "name": "Ferro",
+    "type": "component",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Componenti/witcher-components/ferro.webp",
+    "system": {
+        "description": "<p>Metallo base per la manifattura di massa e strumenti agricoli.</p>",
+        "category": "componente",
+        "quantity": "1",
+        "weight": 1.5,
+        "cost": 30,
+        "sourcebook": "MB 131",
+        "type": "crafting-material",
+        "rarity": "S",
+        "location": "Montagne e sottoterra",
+        "quantityObtainable": "",
+        "forage": "",
+        "substanceType": ""
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

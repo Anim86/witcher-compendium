@@ -1,0 +1,14 @@
+<a class="skill-card {{#if skill.isProfession}}is-profession{{else if skill.isPickup}}is-pickup{{else if skill.isLearned}}is-learned{{/if}}" 
+   data-action="rollSkill" data-skill="{{name}}" data-stat={{stat}} data-tooltip="{{localize skill.label}}">
+    <div class="skill-main">
+        <span class="skill-label">{{localize skill.label}}</span>
+        <div class="skill-status-icons">
+            {{#if skill.isProfession}}<i class="fa-solid fa-briefcase" data-tooltip="{{localize 'WITCHER.skills.profession'}}"></i>{{/if}}
+            {{#if skill.isPickup}}<i class="fa-solid fa-hand-holding-hand" data-tooltip="{{localize 'WITCHER.skills.pickup'}}"></i>{{/if}}
+            {{#if skill.isLearned}}<i class="fa-solid fa-graduation-cap" data-tooltip="{{localize 'WITCHER.skills.learn'}}"></i>{{/if}}
+        </div>
+    </div>
+    <div class="skill-value-badge">
+        {{#if (gte skill.value 0)}}+{{/if}}{{skill.value}}
+    </div>
+</a>

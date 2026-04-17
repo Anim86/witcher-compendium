@@ -1,0 +1,30 @@
+{
+    "_id": "30d435cba4c349b9",
+    "name": "Inganno",
+    "type": "skill",
+    "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/sociale.webp",
+    "system": {
+        "attribute": "emp",
+        "description": "<p>Saper mentire in modo convincente e non farsi scoprire. Permette di raggirare gli altri e costruire storie plausibili per nascondere la verità.</p>",
+        "sourcebook": "MB 56",
+        "value": 0,
+        "label": "",
+        "isOpened": false,
+        "modifiers": [],
+        "activeEffectModifiers": 0,
+        "isProfession": false,
+        "isPickup": false,
+        "isLearned": false
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

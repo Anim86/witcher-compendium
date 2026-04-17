@@ -1,0 +1,176 @@
+{
+    "_id": "756363656c6c6f62",
+    "name": "Uccello",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-animals/uccello.png",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "ref": {
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
+            },
+            "dex": {
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
+            },
+            "body": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "spd": {
+                "value": 2,
+                "max": 2,
+                "unmodifiedMax": 2
+            },
+            "emp": {
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
+            },
+            "cra": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "will": {
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 9
+            },
+            "atletica": {
+                "value": 6
+            },
+            "coraggio": {
+                "value": 6
+            },
+            "eludere": {
+                "value": 6
+            },
+            "mischia": {
+                "value": 5
+            },
+            "nascondersi": {
+                "value": 6
+            },
+            "sopravvivenza": {
+                "value": 3
+            },
+            "tempra": {
+                "value": 4
+            }
+        },
+        "details": {
+            "biography": "<p>Dagli uccelli canori delle foreste ai rapaci del nord, il Continente è popolato da un'incredibile varietà di volatili. Alcuni sono addestrati per la caccia o per recapitare messaggi.</p>",
+            "threat": "Bassa",
+            "reward": "—",
+            "monsterType": "Beast",
+            "difficulty": "EASY"
+        },
+        "derivedStats": {
+            "hp": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "sta": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "vigor": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "rec": {
+                "value": 2,
+                "max": 2,
+                "unmodifiedMax": 2
+            },
+            "stun": {
+                "value": 2,
+                "max": 2,
+                "unmodifiedMax": 2
+            },
+            "resolve": {
+                "value": 20,
+                "max": 20,
+                "unmodifiedMax": 20
+            },
+            "woundTreshold": {
+                "value": 2,
+                "max": 2,
+                "unmodifiedMax": 2
+            }
+        },
+        "description": "<p>Dagli uccelli canori delle foreste ai rapaci del nord, il Continente è popolato da un'incredibile varietà di volatili. Alcuni sono addestrati per la caccia o per recapitare messaggi.</p>",
+        "sourcebook": "MB 313",
+        "monsterType": "Beast",
+        "difficulty": "EASY"
+    },
+    "items": [
+        {
+            "name": "Artigli",
+            "type": "weapon",
+            "img": "icons/svg/sword.svg",
+            "system": {
+                "damage": "1d6/2",
+                "accuracy": 0,
+                "type": "T",
+                "effects": "N/A"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "name": "[Capacità] Ferale",
+            "type": "note",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/Trait_Generico.webp",
+            "system": {
+                "description": "<p>Grazie ai suoi istinti un uccello possiede INT 7 ai fini delle prove di Accortezza e Sopravvivenza.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "name": "[Capacità] Volo",
+            "type": "note",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/Trait_Generico.webp",
+            "system": {
+                "description": "<p>Come azione di movimento un uccello può volare. L’unico modo per abbatterlo è stordirlo o colpirlo con un attacco. Se precipita deve superare un tiro di Atletica con CD 16 o subire danni da impatto. In volo ha VEL 7.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        }
+    ],
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

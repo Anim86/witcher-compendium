@@ -1,0 +1,30 @@
+{
+    "_id": "3199364ee5d4c7c6",
+    "name": "Insegnamento",
+    "type": "skill",
+    "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/sociale.webp",
+    "system": {
+        "attribute": "int",
+        "description": "<p>L’abilità di spiegare agli altri. Rende il compito di istruire qualcuno molto più semplice e permette di trasmettere nozioni avanzate in modo comprensibile.</p>",
+        "sourcebook": "MB 52",
+        "value": 0,
+        "label": "",
+        "isOpened": false,
+        "modifiers": [],
+        "activeEffectModifiers": 0,
+        "isProfession": false,
+        "isPickup": false,
+        "isLearned": false
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

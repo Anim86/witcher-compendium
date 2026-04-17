@@ -1,0 +1,62 @@
+<aside class="monster-sidebar" data-application-part="sidebar">
+    <div class="artwork-container">
+        <img class="monster-artwork" src="{{actorImg}}" data-edit="img" title="{{actor.name}}" />
+        
+        <div class="vitals-overlay">
+            <div class="vital-orb hp" data-tooltip="{{localize 'WITCHER.Actor.Hp'}}">
+                <i class="fas fa-heart"></i>
+                <input name="system.stats.hp.value" type="text" value="{{system.stats.hp.value}}" />
+                <span class="max">{{system.stats.hp.max}}</span>
+            </div>
+            <div class="vital-orb sta" data-tooltip="{{localize 'WITCHER.Actor.Stamina'}}">
+                <i class="fas fa-bolt"></i>
+                <input name="system.stats.sta.value" type="text" value="{{system.stats.sta.value}}" />
+                <span class="max">{{system.stats.sta.max}}</span>
+            </div>
+             <div class="vital-orb res" data-tooltip="{{localize 'WITCHER.Actor.Stat.Resolve'}}">
+                <i class="fas fa-fist-raised"></i>
+                <input name="system.stats.res.value" type="text" value="{{system.stats.res.value}}" />
+                <span class="max">{{system.stats.res.max}}</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="monster-quick-actions">
+        <a class="action-btn" data-action="rollInit" title="{{localize 'WITCHER.RollInit'}}">
+            <i class="fas fa-running"></i>
+        </a>
+        <a class="action-btn" data-action="rollCrit" title="{{localize 'WITCHER.RollCrit'}}">
+            <i class="fas fa-dice-d20"></i>
+        </a>
+    </div>
+
+    <div class="sidebar-info-group">
+        <div class="monster-category-header">
+            <i class="fas fa-paw"></i> {{localize "WITCHER.Monster.Category"}}
+        </div>
+        <div class="monster-type-card">
+            {{#if system.monsterType}}
+                <img class="monster-type-icon" src="systems/TheWitcherItaNewSystem/assets/images/Monsters/{{system.monsterType}}.png" data-tooltip="{{localize (lookup config.MonsterTypes system.monsterType)}}">
+                <span class="monster-type-name">{{localize (lookup config.MonsterTypes system.monsterType)}}</span>
+            {{else}}
+                <span class="monster-type-name">{{localize "WITCHER.None"}}</span>
+            {{/if}}
+        </div>
+    </div>
+
+    <div class="sidebar-info-group">
+        <div class="group-header">
+            <i class="fas fa-coins"></i> {{localize "WITCHER.Loot.Bounty"}}
+        </div>
+        <input class="bounty-input" name="system.bounty" type="text" value="{{system.bounty}}" />
+    </div>
+
+    <div class="sidebar-info-group">
+        <div class="group-header">
+            <i class="fas fa-scroll"></i> {{localize "WITCHER.Description"}}
+        </div>
+        <div class="monster-bio-box">
+             {{editor system.notes target="system.notes" button=true owner=owner editable=editable}}
+        </div>
+    </div>
+</aside>

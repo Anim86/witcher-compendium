@@ -1,0 +1,17 @@
+{
+    "name": "Carro",
+    "_id": "33e07d1c617174f0",
+    "system": {
+        "weight": 600,
+        "description": "<p>Un veicolo robusto a quattro ruote progettato per il trasporto di merci pesanti, solitamente trainato da buoi o cavalli.</p>",
+        "quantity": 1,
+        "cost": 660,
+        "sourcebook": "MB 93"
+    },
+    "type": "valuable",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Trasporti/witcher-transports/carro.webp",
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
+}

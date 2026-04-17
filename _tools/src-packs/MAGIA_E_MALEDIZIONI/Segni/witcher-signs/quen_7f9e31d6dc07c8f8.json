@@ -1,0 +1,61 @@
+{
+    "_id": "7f9e31d6dc07c8f8",
+    "name": "Quen",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Segni/witcher-signs/quen.webp",
+    "system": {
+        "description": "<p>I Segni Witcher sono forme di magia semplici apprese durante l'addestramento. Quen crea uno scudo magico che conferisce 5 Punti Salute per ogni punto RES speso. I danni degli attacchi fisici o magici riducono i PS dello scudo, e solo il danno eccedente andrà a scalare i PS dell'incantatore. Non può essere lanciato nuovamente finché lo scudo non si è esaurito ed è inefficace contro danni di natura passiva come asfissia, veleni o malattie. Il costo in Resistenza è sempre variabile: il witcher può investirvi i punti che desidera (fino a un massimo di 7), a patto di non superare la propria Soglia di Vigore.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "MB 115",
+        "class": "Witcher",
+        "level": "novice",
+        "source": "Earth",
+        "stamina": 0,
+        "staminaIsVar": true,
+        "effect": "Crea uno scudo magico che conferisce 5 Punti Salute per ogni punto RES speso. I danni riducono i PS dello scudo; solo il danno eccedente scalerà i PS dell'incantatore. Non può essere lanciato nuovamente finché lo scudo non si è esaurito. Inefficace contro danni passivi/interni come asfissia, veleni o malattie.",
+        "range": "Personale",
+        "duration": "10 round o fino a esaurimento",
+        "defence": "Nessuna",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

@@ -1,0 +1,55 @@
+{
+    "_id": "5908f0aa32a3481c",
+    "name": "Cappuccio Corazzato",
+    "type": "armor",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-armor/Cappuccio_Corazzato.webp",
+    "system": {
+        "description": "<p>Negli ambienti naturali, dove ti serve avere più visuale, la gente porta i cappucci, specie gli elfi. Fatti di cuoio duro, spago spesso e strati di lino. Per come sono trattati, sono abbastanza duri da bloccare un fendente, o il dardo di un piccolo balestrino.</p>",
+        "cost": 350,
+        "reliability": {
+            "value": 0,
+            "max": 0
+        },
+        "sourcebook": "MB 81",
+        "type": "Medium",
+        "location": "Head",
+        "encumb": 0,
+        "enhancements": 0,
+        "headStopping": 14,
+        "headMaxStopping": 14,
+        "torsoStopping": 0,
+        "torsoMaxStopping": 0,
+        "leftArmStopping": 0,
+        "leftArmMaxStopping": 0,
+        "rightArmStopping": 0,
+        "rightArmMaxStopping": 0,
+        "leftLegStopping": 0,
+        "leftLegMaxStopping": 0,
+        "rightLegStopping": 0,
+        "rightLegMaxStopping": 0,
+        "bludgeoning": false,
+        "slashing": false,
+        "piercing": false,
+        "elemental": false,
+        "fire": false,
+        "poison": false,
+        "bleeding": false,
+        "weight": 2,
+        "rarity": "Comune",
+        "stoppingPower": 14,
+        "protection": {},
+        "encumbranceMod": 0,
+        "unmodifiedMax": {}
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "_id": "66b53304ae614932",
+    "name": "Seduta Spiritica",
+    "type": "ritual",
+    "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-rituals/seduta_spiritica.webp",
+    "system": {
+        "description": "<p>Seduta Spiritica contatta lo spirito di un defun- to. La seduta riporta l’anima sotto forma di spettro con l’intelletto della persona originale. Lo spettro conser- va tutti i ricordi, compreso quello della sua morte, ed è possibile parlare con lui nel luogo della sua sepoltura. Lo spettro non può essere ricacciato nel regno dei mor- ti, se non per sua libera scelta o distruggendolo. Seduta Spiritica evoca gli spiriti di tutti coloro che condividono lo stesso sangue entro 20m e, pertanto, non è consiglia- bile officiare questo rituale in una cripta di famiglia.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "MB 118",
+        "class": "ritual",
+        "level": "novice",
+        "source": "",
+        "stamina": 0,
+        "staminaIsVar": false,
+        "effect": "Seduta Spiritica contatta lo spirito di un defun- to. La seduta riporta lâ€™anima sotto forma di spettro con lâ€™intelletto della persona originale. Lo spettro conser- va tutti i ricordi, compreso quello della sua morte, ed Ã¨ possibile parlare con lui nel luogo della sua sepoltura. Lo spettro non puÃ² essere ricacciato nel regno dei mor- ti, se non per sua libera scelta o distruggendolo. Seduta Spiritica evoca gli spiriti di tutti coloro che condividono lo stesso sangue entro 20m e, pertanto, non Ã¨ consiglia- bile officiare questo rituale in una cripta di famiglia.",
+        "range": "N/A",
+        "duration": "Permanente",
+        "defence": "",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "ritcraft"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
+}

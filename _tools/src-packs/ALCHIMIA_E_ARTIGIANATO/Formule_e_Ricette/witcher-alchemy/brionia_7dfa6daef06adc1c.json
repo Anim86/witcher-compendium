@@ -1,0 +1,23 @@
+{
+    "_id": "7dfa6daef06adc1c",
+    "name": "Brionia",
+    "type": "component",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/brionia.webp",
+    "system": {
+        "description": "<p>Pianta rampicante dalle radici massicce, fondamentale per estrarre Caelum.</p><p><b>RaritÃ :</b> C | <b>Ubicazione:</b> Montagne e cittÃ </p>",
+        "quantity": "1",
+        "weight": 0.1,
+        "cost": 8,
+        "sourcebook": "MB 145",
+        "type": "alchemical",
+        "rarity": "C",
+        "location": "Montagne e cittÃ ",
+        "substanceType": "caelum"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

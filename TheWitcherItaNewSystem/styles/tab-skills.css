@@ -1,0 +1,149 @@
+/* ── Skills Stats List ── */
+.grow > div { flex-grow: 1; }
+
+.skills-stats-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* ── Colonne abilità ── */
+.skill-column {
+    margin: 4px;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid light-dark(rgba(28,104,136,0.2), rgba(44,136,175,0.22));
+    background: light-dark(rgba(255,255,255,0.35), rgba(14,26,36,0.45));
+    width: 100%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.14);
+    transition: border-color 0.2s;
+
+    h1 { border: none; }
+
+    summary {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        border-bottom: 1px solid light-dark(rgba(28,104,136,0.25), rgba(44,136,175,0.3));
+        padding-bottom: 4px;
+        margin-bottom: 6px;
+
+        span { font-size: 22px; font-weight: 800; }
+    }
+}
+
+.skill-column:hover {
+    border-color: light-dark(rgba(28,104,136,0.4), rgba(44,136,175,0.4));
+}
+
+/* ── Singola skill ── */
+.char-skill { padding: 0; }
+
+.table-skills {
+    min-width: 175px;
+    border: none;
+    background: none;
+}
+
+.char-skill a {
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #7a1212, #a01818);
+    border-radius: 10px;
+    color: rgba(255,255,255,0.92);
+    padding: 3px 8px;
+    border: 1px solid rgba(255,255,255,0.1);
+    height: 28px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    transition: filter 0.18s, transform 0.18s, box-shadow 0.18s;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.25);
+}
+
+.char-skill:hover {
+    outline: none;
+}
+
+.char-skill a:hover {
+    filter: brightness(1.2);
+    transform: translateX(2px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    text-shadow: none;
+}
+
+.learned-skilled a {
+    background: linear-gradient(135deg, #2e5c0a, #3e8010);
+}
+
+.not-skilled a {
+    background: linear-gradient(135deg, #6a350a, #904818);
+}
+
+/* ── Skill IP box ── */
+.skill-ip {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: light-dark(rgba(28,104,136,0.08), rgba(28,104,136,0.18));
+    border: 1px solid light-dark(rgba(28,104,136,0.2), rgba(44,136,175,0.25));
+    border-radius: 10px;
+    padding: 10px;
+    color: light-dark(black, white);
+    flex: 1;
+    width: 100%;
+
+    .current-ip {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    span {
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .IP-value {
+        font-weight: 700;
+        width: 5ch;
+        text-align: center;
+        font-variant-numeric: tabular-nums;
+    }
+
+    .skillTraining { display: flex; gap: 5px; }
+
+    .extra-skill-value {
+        font-weight: 700;
+        width: 8ch;
+        text-align: center;
+        min-width: 30px;
+        font-variant-numeric: tabular-nums;
+    }
+}
+
+/* ── Totale abilità ── */
+.total-skills {
+    width: 5ch;
+    font-weight: 700;
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+}
+
+/* ── Checkbox abilità ── */
+input[type="checkbox"].skill-checkbox {
+    height: 15px;
+    width: 15px;
+    margin-left: 0;
+    accent-color: #1c6888;
+}
+
+.char-input-skill input {
+    font-weight: 700;
+    width: 30px;
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+}

@@ -1,0 +1,16 @@
+{
+    "_id": "519dd197ce334269",
+    "name": "Tipi di Locali e Taverne",
+    "type": "valuable",
+    "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Lore_e_Racconti/witcher-dlc-sr-lore/tipi_di_locali_e_taverne.webp",
+    "system": {
+        "description": "<p>Esistono molti tipi di locali, ma questi cinque sono i più comuni nel Continente.</p><ul><li><strong>I bordelli</strong> sono locali dove i clienti fanno sesso con il personale. Di solito sono gestiti da una Matrona, che supervisiona le attività quotidiane e l'amministrazione.</li><li><strong>I club</strong> sono locali privati o semi-privati, spesso un incrocio tra taverne e bordelli, dove l'ingresso è riservato, di solito a chi conosce una parola l'ordine o ha un segno di riconoscimento.</li><li><strong>Le locande di posta</strong> si trovano lungo le strade, nei luoghi più remoti o ai margini delle città. Molte sono fortificate e offrono numerosi servizi, come la cura dei cavalli o un maniscalco.</li><li><strong>Gli ostelli</strong> sono l'alternativa economica alle locande e, di solito, si trovano nelle città più grandi. Sono molto spartani, ma costano poco e i proprietari non fanno domande.</li><li><strong>Le taverne</strong> sono locali dove si beve e in molte, a seconda delle leggi locali, si gioca d'azzardo.</li></ul><p>Tirare 1d6 per determinare il tipo di locale.</p><table><tr><th>1d6</th><th>Tipo di Locale</th></tr><tr><td>1</td><td>Bordello</td></tr><tr><td>2</td><td>Club</td></tr><tr><td>3-4</td><td>Locanda di Posta</td></tr><tr><td>5</td><td>Ostello</td></tr><tr><td>6</td><td>Taverna</td></tr></table>",
+        "sourcebook": "Locande e Taverne"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

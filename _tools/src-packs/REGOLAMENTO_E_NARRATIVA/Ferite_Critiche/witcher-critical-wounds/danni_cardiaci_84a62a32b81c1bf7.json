@@ -1,0 +1,20 @@
+{
+    "name": "Danni Cardiaci",
+    "type": "criticalWound",
+    "system": {
+        "severity": "deadly",
+        "description": "<p>Il colpo danneggia il cuore. La vittima deve effettuare immediatamente un tiro salvezza su Morte.</p><p><b>Uscita:</b> Se sopravvive, subisce sanguinamento e riduce a un quarto i suoi valori di Resistenza, VEL e FIS.</p><p><b>Stabilizzato:</b> La vittima subisce +2 danni per round ogni volta che subisce sanguinamento. La penalità è permanente.</p><p><b>Curato:</b> La vittima dimezza i suoi valori di Resistenza, VEL e FIS.</p>",
+        "sourcebook": "MB 161"
+    },
+    "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Ferite_Critiche/witcher-critical-wounds/interna.webp",
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14,
+        "createdTime": 1712760000000,
+        "modifiedTime": 1712760000000,
+        "lastModifiedBy": "antigravity"
+    },
+    "_id": "84a62a32b81c1bf7"
+}

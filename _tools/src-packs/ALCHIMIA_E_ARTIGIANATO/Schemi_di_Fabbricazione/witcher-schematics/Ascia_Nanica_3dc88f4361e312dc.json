@@ -1,0 +1,34 @@
+{
+    "_id": "3dc88f4361e312dc",
+    "name": "Ascia Nanica",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-schematics/Ascia_Nanica.webp",
+    "system": {
+        "description": "<p>Schema per la fabbricazione di: <b>Ascia Nanica</b>.</p><p><b>Componenti richiesti:</b> Acciaio Mahakaman (Ã—3), Legname Indurito (Ã—4), Cuoio Indurito (Ã—2), Acquaforte (Ã—4), Cote (Ã—1), Argilla (Ã—2), Carbone (Ã—3)</p><p><b>DifficoltÃ  Manifattura:</b> CD 24</p><p><b>Tempo:</b> 12 ore</p>",
+        "weight": 0,
+        "cost": 0,
+        "components": [
+            "Acciaio Mahakaman (Ã—3)",
+            "Legname Indurito (Ã—4)",
+            "Cuoio Indurito (Ã—2)",
+            "Acquaforte (Ã—4)",
+            "Cote (Ã—1)",
+            "Argilla (Ã—2)",
+            "Carbone (Ã—3)"
+        ],
+        "difficulty": 24,
+        "time": "12 ore",
+        "sourcebook": "MB 138"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

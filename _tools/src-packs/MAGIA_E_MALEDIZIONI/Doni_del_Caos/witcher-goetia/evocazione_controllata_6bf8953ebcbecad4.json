@@ -1,0 +1,31 @@
+{
+    "_id": "6bf8953ebcbecad4",
+    "name": "Evocazione Controllata",
+    "type": "ritual",
+    "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Doni_del_Caos/witcher-goetia/evocazione_controllata.webp",
+    "system": {
+        "description": "<p>Rituale Goetico di livello Esperto. Permette di scegliere quale tipo specifico di demone evocare, incluse le varianti maggiori. Si usa una pasta di polvere infusa ed essenza di wraith per tracciare il circolo, circondato da cinque candele, e si pone un'offerta specifica al centro. Intonando il nome del demone per cinque volte, la creatura appare. Rimane comunque una procedura molto pericolosa e spesso fatale senza adeguate protezioni magiche come il Manto di Capra.</p><p><strong>Preparazione:</strong> 15 Round. <strong>CD Artigianato Rituale:</strong> 16. <strong>Componenti:</strong> Pasta di polvere infusa ed essenza di wraith, 5 candele, offerta specifica per il tipo di demone.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "TC 141",
+        "class": "ritual",
+        "level": "journeyman",
+        "source": "",
+        "stamina": 0,
+        "staminaIsVar": false,
+        "effect": "Permette di scegliere quale tipo specifico di demone evocare, incluse le varianti maggiori. Il demone appare ma non è vincolato: rimane una procedura molto pericolosa.",
+        "range": "N/A",
+        "duration": "Istantanea",
+        "preparationTime": "15 Round",
+        "difficultyCheck": "16",
+        "components": "Pasta di polvere infusa ed essenza di wraith; 5 candele; offerta specifica (Investimento: 639)",
+        "spellAttackSkill": "ritcraft"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

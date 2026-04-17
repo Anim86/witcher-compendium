@@ -1,0 +1,26 @@
+<section class="scrollable">
+    {{>"systems/TheWitcherItaNewSystem/templates/partials/item-header.hbs"}}
+
+    <div class="item-description-container">
+        <div class="section-title">
+            <i class="fas fa-scroll"></i> {{localize "WITCHER.Item.Description"}}
+        </div>
+        
+        {{#if item.system.description}}
+            {{editor item.system.description target="system.description" button=true owner=owner editable=editable engine="prosemirror"}}
+        {{else if item.system.text}}
+            {{editor item.system.text target="system.text" button=true owner=owner editable=editable engine="prosemirror"}}
+        {{else}}
+            {{editor item.system.description target="system.description" button=true owner=owner editable=editable engine="prosemirror"}}
+        {{/if}}
+    </div>
+
+    {{#if item.system.category}}
+    <div class="properties-grid main-stats">
+        <div class="property-card">
+            <label>{{localize "WITCHER.Type"}}</label>
+            <input type="text" name="system.category" value="{{item.system.category}}" />
+        </div>
+    </div>
+    {{/if}}
+</section>

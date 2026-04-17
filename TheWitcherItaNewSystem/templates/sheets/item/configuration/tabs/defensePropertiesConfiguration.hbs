@@ -1,0 +1,19 @@
+<div class="tab {{tabs.defenseProperties.cssClass}} scrollable standard-form" data-group="primary"
+    data-tab="defenseProperties">
+    {{formGroup
+    systemFields.defenseProperties.fields.parrying
+    value=item.system.defenseProperties.parrying
+    localize=true
+}}
+    {{formGroup
+        systemFields.defenseProperties.fields.defendsAgainst
+        value=item.system.defenseProperties.defendsAgainst
+        options=config.attackOptions
+        localize=true
+    }}
+    {{formGroup
+            systemFields.defenseProperties.fields.modifier
+            value=item.system.defenseProperties.modifier
+            localize=true
+        }}
+</div>

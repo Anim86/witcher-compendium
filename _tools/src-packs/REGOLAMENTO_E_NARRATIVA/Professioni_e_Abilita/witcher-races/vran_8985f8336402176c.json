@@ -1,0 +1,39 @@
+{
+    "name": "Vran",
+    "type": "race",
+    "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-races/vran.webp",
+    "system": {
+        "sourcebook": "LR 170",
+        "perk1": {
+            "name": "Cuore Calmo",
+            "description": "<p>Si crede che i vran siano senza cuore e privi di empatia, ma la realtà è molto diversa. Hanno le medesime emozioni degli umani, ma sono molto più riservati e non le mostrano apertamente. I vran hanno un <strong>+1 innato a Resistere a Coercizione</strong>.</p>"
+        },
+        "perk2": {
+            "name": "Zanne e Artigli",
+            "description": "<p>Anche se impiegano armi, i vran possono causare terribili ferite anche con artigli e zanne. Sono armi naturali, di cui non possono essere privati. I loro calci e pugni infliggono danni da non sottovalutare, oltre alle zanne che causano <strong>3d6 danni</strong> e hanno una probabilità del 50% di infliggere <strong>Avvelenato</strong>.</p>"
+        },
+        "perk3": {
+            "name": "Pelle a Scaglie",
+            "description": "<p>Le scaglie dei vran li rendono molto resistenti ai danni. È un’armatura naturale con <strong>Protezione 4</strong>, che non può essere ridotta né dai colpi subiti né dagli effetti di ablazione.</p>"
+        },
+        "perk4": {
+            "name": "Fisiologia Rettile",
+            "description": "<p>I vran sono l’unica razza senziente di origine rettile e la loro fisiologia differisce da quella di umani e altri non-umani. Primo, i loro corpi sono tanto diversi che i medici di altre specie subiscono una penalità di <strong>-2 alle Prove di Pronto Soccorso</strong> per curare le ferite di un vran e <strong>-5 per stabilizzare o trattare le Ferite Critiche</strong>. Secondo, se un vran è vittima della condizione Congelamento subisce -2 a tutte le azioni per 1d6 Round dopo che questa ha avuto termine.</p>"
+        },
+        "socialStanding": {
+            "north": "hatedFeared",
+            "nilfgaard": "toleratedFeared",
+            "skellige": "hatedFeared",
+            "dolBlathanna": "hated",
+            "mahakam": "tolerated"
+        },
+        "description": "<p>A volte detti “lucertoloidi”, i vran sono una delle specie più antiche e varie del Continente. Un tempo diffusi ovunque e noti per la loro architettura unica e l'autocontrollo, hanno subito un declino sanguinoso a causa dei conflitti con gli elfi e della successiva persecuzione da parte degli umani. Oggi sono rari e spesso costretti a vivere tra i monti o come cittadini di terza categoria.</p>"
+    },
+    "effects": [],
+    "flags": {},
+    "_id": "8985f8336402176c",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

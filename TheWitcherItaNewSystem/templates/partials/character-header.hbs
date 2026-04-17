@@ -1,0 +1,45 @@
+<div class="char-header-center" data-application-part="header">
+    <div class="header-main-info">
+        <div class="name-row">
+            <h1>
+                <input name="name" type="text" value="{{actor.name}}" placeholder="{{localize 'WITCHER.Name'}}" />
+            </h1>
+            <div class="header-right">
+                <div class="reputation-badge" data-action="editReputation" data-tooltip="{{localize 'WITCHER.Reputation'}}">
+                    <i class="fas fa-award"></i>
+                    <span class="rep-value">{{#if system.reputation.value}}{{system.reputation.value}}{{else}}0{{/if}}</span>
+                    <i class="fas fa-cog gear-icon"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-metadata">
+            <div class="meta-tags-group">
+                <span class="meta-tag race" title="{{localize 'WITCHER.Actor.Race'}}">
+                    <i class="fas fa-fingerprint"></i> {{#if race}}{{localize race.name}}{{else}}---{{/if}}
+                </span>
+                <span class="meta-tag profession" title="{{localize 'WITCHER.Actor.Prof'}}">
+                    <i class="fas fa-briefcase"></i> {{#if profession}}{{localize profession.name}}{{else}}---{{/if}}
+                </span>
+            </div>
+            
+            <div class="meta-info-list">
+                <div class="info-item" title="{{localize 'WITCHER.SocialStanding'}}">
+                    <i class="fas fa-users"></i> {{#if system.general.socialStanding}}{{localize (concat 'WITCHER.socialStanding.' system.general.socialStanding)}}{{else}}---{{/if}}
+                </div>
+                <div class="info-item" title="{{localize 'WITCHER.Homeland'}}">
+                    <i class="fas fa-map-marker-alt"></i> {{#if system.general.homeland.value}}{{localize (lookup config.homelands system.general.homeland.value)}}{{else}}---{{/if}}
+                </div>
+                <div class="info-item" title="{{localize 'WITCHER.Age'}}">
+                    <i class="fas fa-hourglass-half"></i> {{system.general.age}}
+                </div>
+                <div class="info-item" title="{{localize 'WITCHER.Actor.Gender.name'}}">
+                    <i class="fas fa-venus-mars"></i> {{localize (concat 'WITCHER.Actor.Gender.' system.general.gender)}}
+                </div>
+                <div class="info-item weight {{#if (gt totalWeight system.derivedStats.enc.value)}}over-encumbered{{/if}}">
+                    <i class="fas fa-weight-hanging"></i> {{totalWeight}} <small>/</small> {{system.derivedStats.enc.value}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,49 @@
+{
+    "_id": "0005b5430715c5a1",
+    "name": "Lama del Tir Tochair",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/Lama_del_Tir_Tochair.webp",
+    "system": {
+        "description": "",
+        "weight": 1,
+        "cost": 100,
+        "sourcebook": "MB",
+        "damage": "6d6",
+        "accuracy": 3,
+        "reliability": {
+            "value": 15,
+            "max": 15
+        },
+        "hands": "2",
+        "type": {
+            "text": "",
+            "slashing": true,
+            "piercing": true,
+            "bludgeoning": false,
+            "elemental": false
+        },
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "isMeteorite": false,
+            "isNonLethal": false,
+            "effects": [
+                {
+                    "id": "0000decd7971fbad",
+                    "name": "sanguinamento",
+                    "statusEffect": null,
+                    "percentage": 25,
+                    "varEffect": false
+                }
+            ]
+        }
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

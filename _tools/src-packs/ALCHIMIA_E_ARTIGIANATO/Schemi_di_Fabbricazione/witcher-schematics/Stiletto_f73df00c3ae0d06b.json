@@ -1,0 +1,34 @@
+{
+    "_id": "f73df00c3ae0d06b",
+    "name": "Stiletto",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/stiletto.webp",
+    "system": {
+        "description": "<p>Schema per la fabbricazione di: <b>Stiletto</b>.</p><p><b>Componenti richiesti:</b> Legname (Ã—1), Resina (Ã—1), Acciaio (Ã—1), Cera (Ã—2), Olio Scurente (Ã—1), Cote (Ã—2), Carbone (Ã—5)</p><p><b>DifficoltÃ  Manifattura:</b> CD 16</p><p><b>Tempo:</b> 4 ore</p>",
+        "weight": 0,
+        "cost": 0,
+        "components": [
+            "Legname (Ã—1)",
+            "Resina (Ã—1)",
+            "Acciaio (Ã—1)",
+            "Cera (Ã—2)",
+            "Olio Scurente (Ã—1)",
+            "Cote (Ã—2)",
+            "Carbone (Ã—5)"
+        ],
+        "difficulty": 16,
+        "time": "4 ore",
+        "sourcebook": "MB 134"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

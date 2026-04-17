@@ -1,0 +1,23 @@
+{
+    "_id": "af6a9f09a857fc25",
+    "name": "Schema: Maglio del Contadino",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-schematics-racconti/schema_maglio_del_contadino.webp",
+    "system": {
+        "description": "<p>Artigiani e manifatturieri possono utilizzare questo schema per creare un Maglio del Contadino.</p>",
+        "difficulty": 12,
+        "time": "3 ore",
+        "components": [
+            "Cera (x2), Cuoio (x3), Ferro (x3), Grasso di Estere (x1), Legname Indurito (x6)"
+        ],
+        "sourcebook": "LR 169",
+        "weight": 0,
+        "cost": 0
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

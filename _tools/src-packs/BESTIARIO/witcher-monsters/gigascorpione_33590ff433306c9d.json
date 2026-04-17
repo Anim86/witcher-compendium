@@ -1,0 +1,175 @@
+{
+    "_id": "33590ff433306c9d",
+    "name": "Gigascorpione",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/gigascorpione.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "ref": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "dex": {
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
+            },
+            "body": {
+                "value": 12,
+                "max": 12,
+                "unmodifiedMax": 12
+            },
+            "spd": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "emp": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "cra": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "will": {
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 10
+            },
+            "atletica": {
+                "value": 8
+            },
+            "coraggio": {
+                "value": 15
+            },
+            "eludere": {
+                "value": 8
+            },
+            "nascondersi": {
+                "value": 10
+            },
+            "rissa": {
+                "value": 0
+            },
+            "sopravvivenza": {
+                "value": 12
+            },
+            "tempra": {
+                "value": 15
+            },
+            "intimidire": {
+                "value": 12
+            },
+            "mischia": {
+                "value": 13
+            }
+        },
+        "details": {
+            "biography": "<p>Il gigascorpione è una creatura mostruosa che infesta i deserti e le zone aride. Di dimensioni enormi, è protetto da un esoscheletro durissimo e possiede un veleno letale.</p>",
+            "threat": "Medio Complesso",
+            "monsterType": "Insectoid",
+            "difficulty": "MEDIUM"
+        },
+        "derivedStats": {
+            "hp": {
+                "value": 60,
+                "max": 60,
+                "unmodifiedMax": 60
+            },
+            "sta": {
+                "value": 60,
+                "max": 60,
+                "unmodifiedMax": 60
+            },
+            "rec": {
+                "value": 2,
+                "max": 2,
+                "unmodifiedMax": 2
+            },
+            "stun": {
+                "value": 12,
+                "max": 12,
+                "unmodifiedMax": 12
+            },
+            "vigor": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "resolve": {
+                "value": 60,
+                "max": 60,
+                "unmodifiedMax": 60
+            },
+            "woundTreshold": {
+                "value": 15,
+                "max": 15,
+                "unmodifiedMax": 15
+            },
+            "run": {
+                "value": 18,
+                "max": 18,
+                "unmodifiedMax": 18
+            },
+            "leap": {
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
+            },
+            "enc": {
+                "value": 24,
+                "max": 24,
+                "unmodifiedMax": 24
+            }
+        },
+        "description": "<p>Enorme insettoside del deserto.</p><h3>Capacità</h3><ul><li><strong>Pelle Coriacea:</strong> Immune a sanguinamento e colpi contundenti non magici.</li><li><strong>Debolezza al Freddo:</strong> Subisce danni raddoppiati da fonti di gelo.</li></ul>",
+        "sourcebook": "LR 112"
+    },
+    "items": [
+        {
+            "name": "Artigli",
+            "type": "weapon",
+            "img": "icons/svg/sword.svg",
+            "system": {
+                "damage": "2d6+4",
+                "accuracy": 13,
+                "effects": "N/A"
+            }
+        },
+        {
+            "name": "Coda",
+            "type": "weapon",
+            "img": "icons/svg/sword.svg",
+            "system": {
+                "damage": "2d6+4",
+                "accuracy": 13,
+                "effects": "Veleno (100%)"
+            }
+        }
+    ],
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

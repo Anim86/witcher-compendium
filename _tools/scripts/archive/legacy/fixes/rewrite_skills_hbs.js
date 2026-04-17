@@ -1,0 +1,117 @@
+const fs = require('fs');
+const filepath = 'e:/AntigravitiProgetti/CompendioTheWitcher/TheWitcherItaNewSystem/templates/app/wizard/steps/skills.hbs';
+
+const fullHbs = `<div class="wizard-step step-skills">
+    <h2>{{localize "WITCHER.Wizard.Step.Skills.Title"}}</h2>
+    <p>{{localize "WITCHER.Wizard.Step.Skills.Description"}}</p>
+
+    <div class="skills-container tabs" data-group="skill-tabs">
+        <nav class="sheet-tabs tabs" data-group="skill-tabs">
+            <a class="item {{#if (eq activeSkillTab 'profession-skills')}}active{{/if}}" data-action="switchSkillTab" data-tab="profession-skills">
+                {{localize "WITCHER.Wizard.Skills.Profession"}}
+                <span class="badge {{#if (lt professionPointsRemaining 0)}}negative{{/if}}">{{professionPointsRemaining}}</span>
+            </a>
+            <a class="item {{#if (eq activeSkillTab 'pickup-skills')}}active{{/if}}" data-action="switchSkillTab" data-tab="pickup-skills">
+                {{localize "WITCHER.Wizard.Skills.Pickup"}}
+                <span class="badge {{#if (lt pickupPointsRemaining 0)}}negative{{/if}}">{{pickupPointsRemaining}}</span>
+            </a>
+        </nav>
+
+        <section class="content">
+            <!-- TAB: Abilità Professionali -->
+            <div class="tab {{#if (eq activeSkillTab 'profession-skills')}}active{{/if}}" data-group="skill-tabs" data-tab="profession-skills">
+                <div class="skills-pool-info">
+                    <span class="pool-label">{{localize "WITCHER.Wizard.Skills.ProfessionPool"}}: </span>
+                    <span class="pool-value {{#if (lt professionPointsRemaining 0)}}negative{{/if}}">
+                        <strong>{{professionPointsRemaining}}</strong> / 44
+                    </span>
+                    <span class="pool-hint">{{localize "WITCHER.Wizard.Skills.CapHint"}}</span>
+                </div>
+                <div class="skills-grid compact-skills">
+                    {{#each professionSkills}}
+                    <div class="skill-row {{#if isDifficult}}skill-difficult{{/if}}" data-skill="{{key}}">
+                        <label class="skill-label">
+                            {{name}}
+                            {{#if isDifficult}}<span class="cost-badge">(Difficile ×2)</span>{{/if}}
+                        </label>
+                        <div class="skill-controls compact">
+                            <button type="button" data-action="adjustSkill" data-skill="{{key}}" data-type="profession" data-delta="-1" class="btn-sm">
+                                <i class="fa-solid fa-minus"></i>
+                            </button>
+                            <input type="number"
+                                   data-action="adjustSkill"
+                                   data-skill="{{key}}"
+                                   data-type="profession"
+                                   name="skills.{{key}}"
+                                   value="{{value}}"
+                                   min="1"
+                                   max="6"
+                                   class="skill-input-sm">
+                            <button type="button" data-action="adjustSkill" data-skill="{{key}}" data-type="profession" data-delta="1" class="btn-sm">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+
+            <!-- TAB: Abilità Pick-up -->
+            <div class="tab {{#if (eq activeSkillTab 'pickup-skills')}}active{{/if}}" data-group="skill-tabs" data-tab="pickup-skills">
+                <div class="skills-pool-info">
+                    <span class="pool-label">{{localize "WITCHER.Wizard.Skills.PickupPool"}}: </span>
+                    <span class="pool-value {{#if (lt pickupPointsRemaining 0)}}negative{{/if}}">
+                        <strong>{{pickupPointsRemaining}}</strong>
+                    </span>
+                    <span class="pool-hint">{{localize "WITCHER.Wizard.Skills.PickupHint"}}</span>
+                </div>
+
+                <div class="skills-picker">
+                    <div class="controls-row">
+                        <select name="new-pickup-skill" id="new-pickup-skill-select">
+                            <option value="">-- {{localize "WITCHER.Wizard.Skills.Add"}} --</option>
+                            {{#each availablePickupSkills}}
+                            <option value="{{key}}">{{name}} {{#if (eq cost 2)}}(Difficile ×2){{/if}}</option>
+                            {{/each}}
+                        </select>
+                        <button type="button" data-action="addPickupSkill" class="btn-add">
+                            <i class="fa-solid fa-plus"></i> {{localize "WITCHER.Wizard.Skills.AddButton"}}
+                        </button>
+                    </div>
+                </div>
+
+                <div class="skills-grid compact-skills pickup-grid">
+                    {{#each pickupSkills}}
+                    <div class="skill-row {{#if isDifficult}}skill-difficult{{/if}}" data-skill="{{key}}">
+                        <label class="skill-label">
+                            {{name}}
+                            {{#if isDifficult}}<span class="cost-badge">(Difficile ×2)</span>{{/if}}
+                        </label>
+                        <div class="skill-controls compact">
+                            <button type="button" data-action="adjustSkill" data-skill="{{key}}" data-type="pickup" data-delta="-1" class="btn-sm">
+                                <i class="fa-solid fa-minus"></i>
+                            </button>
+                            <input type="number"
+                                   data-action="adjustSkill"
+                                   data-skill="{{key}}"
+                                   data-type="pickup"
+                                   name="skills.{{key}}"
+                                   value="{{value}}"
+                                   min="0"
+                                   max="6"
+                                   class="skill-input-sm">
+                            <button type="button" data-action="adjustSkill" data-skill="{{key}}" data-type="pickup" data-delta="1" class="btn-sm">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+`;
+
+fs.writeFileSync(filepath, fullHbs);
+console.log('Done hbs');

@@ -1,0 +1,132 @@
+{
+    "name": "Vendigo",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/vendigo.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "ref": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "dex": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "body": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "spd": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "emp": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "cra": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "will": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 0
+            },
+            "atletica": {
+                "value": 0
+            },
+            "coraggio": {
+                "value": 0
+            },
+            "intessereFatture": {
+                "value": 0
+            },
+            "intimidire": {
+                "value": 0
+            },
+            "nascondersi": {
+                "value": 0
+            },
+            "prestanza": {
+                "value": 0
+            },
+            "resistereAllaMagia": {
+                "value": 0
+            },
+            "rissa": {
+                "value": 0
+            },
+            "sopravvivenza": {
+                "value": 0
+            },
+            "tempra": {
+                "value": 0
+            }
+        },
+        "details": {
+            "biography": "<p>Strano… non ho mai sentito di ‘sto vendigo, ma la gente ha ogni genere di superstizioni sui viaggi per i Gheppi, i Monti del Drago e all'improvviso ho sentito storie che ti farebbero venire i brividi alla schiena. Parlavano di una specie di spettro che perseguita i viaggiatori e fa venire loro fame come non l’hanno mai avuta. Alcuni montanari di Caingorn hanno cominciato a portare con sé razioni extra e a indossare ‘ste strambe maschere cerimo- niali del lontano Nord. – Rodolf Kazmer</p>",
+            "threat": "Difficile Arduo",
+            "reward": 1500,
+            "monsterType": "Relict",
+            "difficulty": "MEDIUM"
+        },
+        "derivedStats": {
+            "rec": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "stun": {
+                "value": 0,
+                "max": 0
+            },
+            "woundTreshold": {
+                "value": 0,
+                "max": 0
+            },
+            "hp": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "sta": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "description": "<p>I vendigo infestano i picchi più alti del Continente. Hanno la testa adorna di un palco simile a quello di un cervo e volti laceri deformati nella smorfia di un viaggiatore affamato. Oltre ad avere artigli infetti, sono capaci di potenti magie, inclusa una terribile maledizione che invoglia le vittime a commettere atti di cannibalismo. Il mostro teme il fuoco e raramente si accosta ai fuochi da campo, capacità che usa per isolare le sue prede.</p>",
+        "sourcebook": "DW 50",
+        "monsterType": "Relict",
+        "difficulty": "MEDIUM",
+        "bounty": 1500
+    },
+    "items": [],
+    "_id": "e4a39bc56f780d12",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

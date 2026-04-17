@@ -1,0 +1,30 @@
+<section class="{{item.type}} scrollable">
+    {{>"systems/TheWitcherItaNewSystem/templates/partials/item-header.hbs"}}
+
+    <div class="properties-grid main-stats">
+        <div class="property-card">
+            <label>{{localize "WITCHER.Mount.Dex"}}</label>
+            <input type="text" name="system.dex" value="{{item.system.dex}}" />
+        </div>
+        <div class="property-card">
+            <label>{{localize "WITCHER.Mount.ControlMod"}}</label>
+            <input type="text" name="system.control" value="{{item.system.control}}" />
+        </div>
+        <div class="property-card">
+            <label>{{localize "WITCHER.Mount.Speed"}}</label>
+            <input type="text" name="system.speed" value="{{item.system.speed}}" />
+        </div>
+        <div class="property-card highlight">
+            <label>{{localize "WITCHER.Mount.Hp"}}</label>
+            <input type="text" name="system.hp" value="{{item.system.hp}}" data-dtype="Number" />
+        </div>
+    </div>
+
+    <div class="item-description-container">
+        <div class="section-title">
+            <i class="fas fa-horse"></i> {{localize "WITCHER.table.Description"}}
+        </div>
+        {{editor item.system.description target="system.description" button=true owner=owner editable=editable engine="prosemirror"}}
+    </div>
+</section>
+

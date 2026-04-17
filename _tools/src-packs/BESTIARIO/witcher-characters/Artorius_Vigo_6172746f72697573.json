@@ -1,0 +1,194 @@
+{
+    "_id": "6172746f72697573",
+    "name": "Artorius Vigo",
+    "type": "character",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-characters/artorius_vigo.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "ref": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "dex": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "body": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "spd": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "emp": {
+                "value": 9,
+                "max": 9,
+                "unmodifiedMax": 9
+            },
+            "cra": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "will": {
+                "value": 9,
+                "max": 9,
+                "unmodifiedMax": 9
+            },
+            "luck": {
+                "value": null,
+                "max": null,
+                "unmodifiedMax": null
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 16
+            },
+            "armiInAsta": {
+                "value": 12
+            },
+            "carisma": {
+                "value": 15
+            },
+            "cavalcare": {
+                "value": 14
+            },
+            "commercio": {
+                "value": 18
+            },
+            "coraggio": {
+                "value": 17
+            },
+            "eleganza": {
+                "value": 18
+            },
+            "eludere": {
+                "value": 14
+            },
+            "etichetta": {
+                "value": 19
+            },
+            "intessereFatture": {
+                "value": 17
+            },
+            "istruzione": {
+                "value": 19
+            },
+            "lanciareIncantesimi": {
+                "value": 19
+            },
+            "nascondersi": {
+                "value": 12
+            },
+            "officiareRituali": {
+                "value": 19
+            },
+            "persuasione": {
+                "value": 16
+            },
+            "resistereacoercizioni": {
+                "value": 19
+            },
+            "resistereallamagia": {
+                "value": 19
+            },
+            "scherma": {
+                "value": 14
+            },
+            "sensibilita": {
+                "value": 17
+            },
+            "artedelmago": {
+                "value": 10
+            },
+            "distillazione": {
+                "value": 6
+            },
+            "immutabile": {
+                "value": 7
+            },
+            "ingegneriaInversa": {
+                "value": 7
+            },
+            "intrigo": {
+                "value": 6
+            },
+            "magiaAmpliata": {
+                "value": 8
+            },
+            "malelingue": {
+                "value": 8
+            },
+            "mutare": {
+                "value": 2
+            },
+            "risorse": {
+                "value": 10
+            },
+            "sintonia": {
+                "value": 10
+            }
+        },
+        "derivedStats": {
+            "vigor": {
+                "value": 25,
+                "max": 25,
+                "unmodifiedMax": 25
+            },
+            "rec": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "resolve": {
+                "value": 35,
+                "max": 35,
+                "unmodifiedMax": 35
+            },
+            "stun": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "woundTreshold": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "hp": {
+                "value": 35,
+                "max": 35,
+                "unmodifiedMax": 35
+            },
+            "sta": {
+                "value": 35,
+                "max": 35,
+                "unmodifiedMax": 35
+            }
+        },
+        "details": {
+            "biography": "<p>Artorius Vigo era un maestro dell’illusione che lavorava per i duchi di Beauclair. Ha scritto un libro, 'L’Essenza d’Incantesimi e Illusione', considerato un'opera fondamentale sul funzionamento della mente. – Rodolf Kazmer</p><p>Artorius è un potente mago nilfgaardiano originario di Toussaint, noto principalmente per le sue incredibili abilità nelle illusioni. È lo zio di Fringilla Vigo e ha servito per anni la corte di Toussaint, creando meraviglie magiche per la nobiltà locale. La sua maestria è tale da influenzare la percezione della realtà stessa di chi lo circonda.</p>",
+            "sourcebook": "TC 154"
+        },
+        "description": "<p>Artorius Vigo era un maestro dell’illusione che lavorava per i duchi di Beauclair. Ha scritto un libro, 'L’Essenza d’Incantesimi e Illusione', considerato un'opera fondamentale sul funzionamento della mente. – Rodolf Kazmer</p><p>Artorius è un potente mago nilfgaardiano originario di Toussaint, noto principalmente per le sue incredibili abilità nelle illusioni. È lo zio di Fringilla Vigo e ha servito per anni la corte di Toussaint, creando meraviglie magiche per la nobiltà locale.</p><h3>Equipaggiamento</h3><p>Bastone da Passeggio Elfico, Esboda, Abiti Eleganti, Amuleto con Gemma, Borsello, Occorrente per Scrivere, Diario, Libro Mastro, Anello con Sigillo, Cavallo con Sella da Corsa, Bisacce, Vino (x2), Dolcetti, Pipa e Tabacco, Megascopio, Acqua di Colonia, Mazzo di Gwent (Nilfgaard), Pozione Lacrime di Mogli, Inchiostro Invisibile, Sali da Fiuto.</p><h3>Incantesimi Preferiti</h3><p>Dissipazione, Fascino, Illusione, Illusione Interattiva, L'Incubo, Macchia, Manto, Modellare Terra, Portale, Schermo Magico, Teletrasporto.</p>",
+        "sourcebook": "TC 154"
+    },
+    "items": [],
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

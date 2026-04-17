@@ -1,0 +1,66 @@
+{
+    "_id": "023a83c9ec334aba",
+    "name": "Bastone con Cristallo",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/Bastone_con_Cristallo.webp",
+    "system": {
+        "description": "<p>I maghi migliori hanno un bastone con cristallo. Sono più o meno come i bastoni normali, ma hanno in cima una gemma incastonata nel legno. Il bello è che la gemma deve essere perfetta. Se la gemma ha anche solo un’incrinatura o un’imperfezione, rischi che esploda tutto quanto o qualcosa del genere. Ne vale la pena, però: amplifica la magia meglio di ogni altra roba.</p>",
+        "cost": 835,
+        "reliability": {
+            "max": 5,
+            "value": 5
+        },
+        "accuracy": 0,
+        "reach": "N/A",
+        "effects": "Portata Focus (3) Focus",
+        "sourcebook": "MB 15",
+        "range": "Portata",
+        "type": {
+            "text": "",
+            "slashing": false,
+            "piercing": false,
+            "bludgeoning": true,
+            "elemental": false
+        },
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "isMeteorite": false,
+            "isNonLethal": false,
+            "effects": [
+                {
+                    "id": "00d96031ead25ba8",
+                    "name": "Focus (3)",
+                    "statusEffect": null,
+                    "percentage": 100,
+                    "varEffect": false
+                },
+                {
+                    "id": "000107f2a245068e",
+                    "name": "Focus Sup.",
+                    "statusEffect": null,
+                    "percentage": 100,
+                    "varEffect": false
+                }
+            ]
+        },
+        "weight": 2.5,
+        "rarity": "Rara",
+        "damage": "2d6+2",
+        "hands": 2,
+        "unmodifiedMax": {}
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

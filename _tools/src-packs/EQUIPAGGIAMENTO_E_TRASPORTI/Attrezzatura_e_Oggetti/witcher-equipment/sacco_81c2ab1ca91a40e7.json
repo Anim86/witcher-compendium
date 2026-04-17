@@ -1,0 +1,23 @@
+{
+    "_id": "81c2ab1ca91a40e7",
+    "name": "Sacco",
+    "type": "valuable",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-equipment/sacco.webp",
+    "system": {
+        "description": "<p>Un semplicissimo grosso sacco di tela. Ci puoi trasportare 20kg buoni di piccoli oggetti.</p>",
+        "weight": 0.1,
+        "cost": 3,
+        "sourcebook": "MB 95"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

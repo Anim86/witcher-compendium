@@ -1,0 +1,159 @@
+{
+    "_id": "6e9d37fba6b67132",
+    "name": "Clarisse de Claudine",
+    "type": "character",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-characters/clarisse_de_claudine.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "ref": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "dex": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "body": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "spd": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "emp": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "cra": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "will": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "skills": {
+            "alchimia": {
+                "value": 8
+            },
+            "eleganza": {
+                "value": 5
+            },
+            "insegnamento": {
+                "value": 5
+            },
+            "lanciareIncantesimi": {
+                "value": 7
+            },
+            "officiareRituali": {
+                "value": 5
+            },
+            "intessereFatture": {
+                "value": 6
+            },
+            "resistereAllaMagia": {
+                "value": 7
+            },
+            "tempra": {
+                "value": 5
+            },
+            "istruzione": {
+                "value": 10
+            },
+            "accortezza": {
+                "value": 7
+            },
+            "atletica": {
+                "value": 5
+            },
+            "nascondersi": {
+                "value": 5
+            }
+        },
+        "details": {
+            "biography": "<p>Clarisse de Claudine è il terzo membro della Società. Trovata in solitudine sulle montagne, è stata reclutata per la sua vasta conoscenza alchemica. Anche se inizialmente riservata, ha trovato nelle colleghe una vera famiglia. Quando parla di alchimia, la sua timidezza svanisce completamente.</p>",
+            "threat": "Media",
+            "sourcebook": "LR 19"
+        },
+        "derivedStats": {
+            "hp": {
+                "value": 35,
+                "max": 35,
+                "unmodifiedMax": 35
+            },
+            "sta": {
+                "value": 35,
+                "max": 35,
+                "unmodifiedMax": 35
+            },
+            "rec": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "stun": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "vigor": {
+                "value": 14,
+                "max": 14,
+                "unmodifiedMax": 14
+            },
+            "resolve": {
+                "value": 35,
+                "max": 35,
+                "unmodifiedMax": 35
+            },
+            "woundTreshold": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "run": {
+                "value": 15,
+                "max": 15,
+                "unmodifiedMax": 15
+            },
+            "leap": {
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
+            },
+            "enc": {
+                "value": 14,
+                "max": 14,
+                "unmodifiedMax": 14
+            }
+        },
+        "description": "<p>Clarisse de Claudine è l'esperta alchimista della Società.</p><h3>Incantesimi Preferiti</h3><p>Codi Bywyd, Fascino, Teletrasporto, Folata di Bronwyn, Sostituzione de Claudine.</p><h3>Rituali</h3><p>Rituale Purificatore.</p>",
+        "sourcebook": "LR 19"
+    },
+    "items": [],
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

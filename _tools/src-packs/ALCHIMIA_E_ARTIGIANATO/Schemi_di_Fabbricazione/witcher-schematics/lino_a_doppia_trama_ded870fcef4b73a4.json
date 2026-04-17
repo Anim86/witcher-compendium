@@ -1,0 +1,29 @@
+{
+    "_id": "ded870fcef4b73a4",
+    "name": "Lino a Doppia Trama",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-schematics/lino_a_doppia_trama.webp",
+    "system": {
+        "description": "<p>Schema per la fabbricazione di: <b>Lino a Doppia Trama</b>.</p><p><b>Componenti richiesti:</b> Lino (Ã—1), Filo (Ã—2)</p><p><b>DifficoltÃ  Manifattura:</b> CD 14</p><p><b>Tempo:</b> 0,5 ore</p>",
+        "weight": 0,
+        "cost": 0,
+        "components": [
+            "Lino (Ã—1)",
+            "Filo (Ã—2)"
+        ],
+        "difficulty": 14,
+        "time": "0,5 ore",
+        "sourcebook": "MB 132"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

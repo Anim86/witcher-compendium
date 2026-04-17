@@ -1,0 +1,71 @@
+<div class="wizard-step step-summary">
+    <h2>{{localize "WITCHER.Wizard.Step.Finish.Title"}}</h2>
+    <p>{{localize "WITCHER.Wizard.Step.Finish.Description"}}</p>
+
+    <!-- Initial Profession Gear (Static Map or Choice) -->
+    <div class="summary-card profession-gear">
+        <h3>{{localize "WITCHER.Wizard.Gear.InitialGear"}}</h3>
+        {{#if character.profession}}
+            <div class="initial-gear-display">
+                {{#if professionChoiceRequired}}
+                    <p class="choice-hint">{{localize "WITCHER.Wizard.Gear.ChoiceHint"}}</p>
+                    <!-- Here we could add a list of checkboxes for initial items -->
+                    <!-- For now, showing a simple summary of what the profession gives -->
+                {{/if}}
+                <ul class="initial-gear-list">
+                   <!-- This would be populated by the profession data -->
+                   <li>{{localize "WITCHER.Wizard.Gear.StandardPack"}}</li>
+                </ul>
+            </div>
+        {{else}}
+            <p>{{localize "WITCHER.Wizard.Gear.NoProfession"}}</p>
+        {{/if}}
+    </div>
+
+    <!-- Purchased Gear (Step 6) -->
+    <div class="summary-card purchased-gear">
+        <h3>{{localize "WITCHER.Wizard.Gear.PurchasedGear"}}</h3>
+        <ul class="purchased-list">
+            {{#each character.gear}}
+            <li>
+                <span>{{name}}</span>
+                <span class="cost">
+                    {{#if system.cost.value}}{{system.cost.value}}{{else}}{{system.cost}}{{/if}} corone
+                </span>
+            </li>
+            {{/each}}
+        </ul>
+        <div class="money-summary {{#if isOverBudget}}overbudget{{/if}}">
+            <strong>{{localize "WITCHER.Wizard.Gear.TotalCost"}}:</strong> {{gearCost}} / {{character.money}}
+            {{#if isOverBudget}}
+                <div class="budget-warning">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    {{localize "WITCHER.Wizard.Gear.OverBudget"}}
+                </div>
+            {{/if}}
+        </div>
+    </div>
+
+    <div class="summary-grid">
+        <div class="summary-card">
+            <h3>{{localize "WITCHER.Wizard.Stats.Summary"}}</h3>
+            <div class="stats-pills">
+                {{#each summary.stats}}
+                <div class="stat-pill">
+                    <span class="stat-abbr">{{localize label}}</span>
+                    <span class="stat-value">{{value}}</span>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+        
+        <div class="summary-card">
+            <h3>{{localize "WITCHER.Wizard.Skills.Summary"}}</h3>
+            <div class="skills-list">
+                {{#each summary.skills}}
+                <span class="skill-tag">{{localize label}}: {{value}}</span>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</div>

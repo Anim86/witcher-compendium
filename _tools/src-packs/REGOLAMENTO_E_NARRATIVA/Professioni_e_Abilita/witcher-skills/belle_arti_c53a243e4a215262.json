@@ -1,0 +1,30 @@
+{
+    "_id": "c53a243e4a215262",
+    "name": "Belle Arti",
+    "type": "skill",
+    "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/artistiche.webp",
+    "system": {
+        "attribute": "emp",
+        "description": "<p>L’abilità di creare opere d’arte, dal dipingere al comporre canzoni al soffiare il vetro. Richiede di specificare l'arte in cui ci si è addestrati.</p>",
+        "sourcebook": "MB 56",
+        "value": 0,
+        "label": "",
+        "isOpened": false,
+        "modifiers": [],
+        "activeEffectModifiers": 0,
+        "isProfession": false,
+        "isPickup": false,
+        "isLearned": false
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

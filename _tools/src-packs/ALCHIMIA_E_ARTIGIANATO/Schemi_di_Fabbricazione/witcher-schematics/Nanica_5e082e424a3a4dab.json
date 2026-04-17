@@ -1,0 +1,28 @@
+{
+    "_id": "5e082e424a3a4dab",
+    "name": "Nanica",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-schematics/Nanica.webp",
+    "system": {
+        "description": "<p>5 X X R 3,5 195 I potenziamenti per armature consistono in parti di rinforzo aggiunte a un'armatura giÃ  esistente. Invece di grossi pezzi sono piccole pezze aggiunte nei punti critici dell'armatura per rinforzarla. I potenziamenti conferiscono un bonus al Pr e altri possibili effetti o resistenze contro determinati tipi di danno (vedere Resistenze). PARTI DI POTENZIAMENTI Si può decidere di applicare parti di un potenziamento a una sola sezione dell'armatura. Il procedimento è identico, ma il potenziamento si applica solo a quella sezione del corpo e le altre sono utlizzate come parti di ricambio. POTENZIAMENTI DIFFERENTI I potenziamenti sono realizzati e venduti come set completi. Un potenziamento per armatura si applica a ogni parte dell'armatura indossata in quel momento. Vedere il paragrafo a fianco per come suddividere i potenziamenti per armature. Resistenze Simbolo Contundente C Elementale E Perforante P METTERE E TOGLIERE Mettere o togliere un potenziamento è un'azione di round completo. Un personaggio che aggiunge potenziamenti all'armatura deve superare un tiro di Manifattura con CD 14. Se la prova fallisce, il potenziamento non funziona e bisogna ritentare. Se la prova ha successo, il potenziamento aggiunge i bonus all'armatura su cui è applicato. Un potenziamento non può essere tolto da un'armatura danneggiandola o rompendola, ma viene distrutto quando l'armatura è distrutta. Per rimuovere il potenziamento da un'armatura, è necessario effettuare una prova di Manifattura con CD 15: se la prova fallisce, il potenziamento resta invariato. Se la prova ha successo, il potenziamento è rimosso e può essere applicato su un'altra armatura. Tagliente T RESISTERE AL SANGUINAMENTO Se l'armatura del personaggio ha questa capacitÃ , il danno da sanguinamento viene ridotto a metÃ , arrotondato per difetto. Per esempio, se dovesse subire 2 danni a round, ne subirÃ  invece solo 1.</p>",
+        "weight": 0,
+        "cost": 0,
+        "components": [
+            "Nanica 24 6 ore Acciaio Mahakaman (Ã—1), Pelle di Lupo (Ã—1), Filo (Ã—5), Carbone (Ã—1) 144 292"
+        ],
+        "difficulty": 24,
+        "time": "6 ore",
+        "sourcebook": "MB 92"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

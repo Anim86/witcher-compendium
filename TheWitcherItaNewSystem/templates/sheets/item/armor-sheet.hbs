@@ -1,0 +1,157 @@
+<section class="scrollable">
+    {{>"systems/TheWitcherItaNewSystem/templates/partials/item-header.hbs"}}
+    
+    <div class="item-description-container">
+        <div class="section-title">
+            <i class="fas fa-scroll"></i> {{localize "WITCHER.Item.Description"}}
+        </div>
+        {{editor item.system.description target="system.description" button=true owner=owner editable=editable engine="prosemirror"}}
+    </div>
+
+    <div class="item-settings-grid">
+        <div class="settings-column">
+            <div class="section-title"><i class="fas fa-shield-alt"></i> {{localize "WITCHER.Armor.Resistances"}}</div>
+            <div class="damage-types-container">
+                <label class="checkbox-chip {{#if item.system.slashing}}active{{/if}}">
+                    <input type="checkbox" name="system.slashing" {{checked item.system.slashing}} />
+                    <span>{{localize "WITCHER.Enhancement.Slashing"}}</span>
+                </label>
+                <label class="checkbox-chip {{#if item.system.piercing}}active{{/if}}">
+                    <input type="checkbox" name="system.piercing" {{checked item.system.piercing}} />
+                    <span>{{localize "WITCHER.Enhancement.Piercing"}}</span>
+                </label>
+                <label class="checkbox-chip {{#if item.system.bludgeoning}}active{{/if}}">
+                    <input type="checkbox" name="system.bludgeoning" {{checked item.system.bludgeoning}} />
+                    <span>{{localize "WITCHER.Enhancement.Bludgeoning"}}</span>
+                </label>
+            </div>
+        </div>
+
+        <div class="settings-column">
+            <div class="section-title"><i class="fas fa-cogs"></i> {{localize "WITCHER.Item.Settings.general"}}</div>
+            <div class="property-row">
+                <label>{{localize "WITCHER.Armor.Location"}}</label>
+                <select name="system.location" id="location-select">
+                    {{selectOptions config.armorLocations selected=item.system.location localize=true}}
+                </select>
+            </div>
+            <div class="property-row">
+                <label>{{localize "WITCHER.Armor.Type"}}</label>
+                <select name="system.type" id="type-select">
+                    {{selectOptions config.type selected=item.system.type localize=true}}
+                </select>
+            </div>
+            <div class="property-row">
+                <label>{{localize "WITCHER.Item.Short.Availability"}}</label>
+                <select name="system.avail" id="avail-select">
+                    {{selectOptions config.Availability selected=item.system.avail localize=true}}
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="properties-grid main-stats">
+        <div class="property-card">
+            <label>{{localize "WITCHER.Armor.Short.EncumbranceValue"}}</label>
+            <input type="number" name="system.encumb" value="{{item.system.encumb}}" data-dtype="Number" />
+        </div>
+        <div class="property-card">
+            <label>{{localize "WITCHER.Armor.Short.ArmorEnhancement"}}</label>
+            <input type="number" name="system.enhancements" value="{{item.system.enhancements}}" data-dtype="Number" />
+        </div>
+    </div>
+
+    <div class="sp-section">
+        <div class="section-title"><i class="fas fa-user-shield"></i> {{localize "WITCHER.Armor.StoppingPower"}}</div>
+        <div class="properties-grid sp-grid">
+            {{#if (or (eq item.system.location "Head") (eq item.system.location "FullCover"))}}
+            <div class="property-card sp-card">
+                <label>{{localize "WITCHER.Armor.LocationHead"}}</label>
+                <div class="dual-input">
+                    <input type="number" name="system.headStopping" value="{{item.system.headStopping}}" data-dtype="Number" title="{{localize 'WITCHER.Armor.StoppingPower'}}"/>
+                    <span class="separator">/</span>
+                    <input type="number" name="system.headMaxStopping" value="{{item.system.headMaxStopping}}" data-dtype="Number" title="{{localize 'WITCHER.Armor.MaxStoppingPower'}}"/>
+                </div>
+            </div>
+            {{/if}}
+            
+            {{#if (or (eq item.system.location "Torso") (eq item.system.location "FullCover"))}}
+            <div class="property-card sp-card">
+                <label>{{localize "WITCHER.Armor.LocationTorso"}}</label>
+                <div class="dual-input">
+                    <input type="number" name="system.torsoStopping" value="{{item.system.torsoStopping}}" data-dtype="Number" title="{{localize 'WITCHER.Armor.StoppingPower'}}"/>
+                    <span class="separator">/</span>
+                    <input type="number" name="system.torsoMaxStopping" value="{{item.system.torsoMaxStopping}}" data-dtype="Number" title="{{localize 'WITCHER.Armor.MaxStoppingPower'}}"/>
+                </div>
+            </div>
+            <div class="property-card sp-card">
+                <label>{{localize "WITCHER.Location.Left"}} {{localize "WITCHER.Armor.LocationArm"}}</label>
+                <div class="dual-input">
+                    <input type="number" name="system.leftArmStopping" value="{{item.system.leftArmStopping}}" data-dtype="Number" title="{{localize 'WITCHER.Armor.StoppingPower'}}"/>
+                    <span class="separator">/</span>
+                    <input type="number" name="system.leftArmMaxStopping" value="{{item.system.leftArmMaxStopping}}" data-dtype="Number" title="{{localize 'WITCHER.Armor.MaxStoppingPower'}}"/>
+                </div>
+            </div>
+            <div class="property-card sp-card">
+                <label>{{localize "WITCHER.Location.Right"}} {{localize "WITCHER.Armor.LocationArm"}}</label>
+                <div class="dual-input">
+                    <input type="number" name="system.rightArmStopping" value="{{item.system.rightArmStopping}}" data-dtype="Number" title="{{localize 'WITCHER.Armor.StoppingPower'}}"/>
+                    <span class="separator">/</span>
+                    <input type="number" name="system.rightArmMaxStopping" value="{{item.system.rightArmMaxStopping}}" data-dtype="Number" title="{{localize 'WITCHER.Armor.MaxStoppingPower'}}"/>
+                </div>
+            </div>
+            {{/if}}
+
+            {{#if (or (eq item.system.location "Leg") (eq item.system.location "FullCover"))}}
+            <div class="property-card sp-card">
+                <label>{{localize "WITCHER.Location.Left"}} {{localize "WITCHER.Armor.LocationLeg"}}</label>
+                <div class="dual-input">
+                    <input type="number" name="system.leftLegStopping" value="{{item.system.leftLegStopping}}" data-dtype="Number" title="{{localize 'WITCHER.Armor.StoppingPower'}}"/>
+                    <span class="separator">/</span>
+                    <input type="number" name="system.leftLegMaxStopping" value="{{item.system.leftLegMaxStopping}}" data-dtype="Number" title="{{localize 'WITCHER.Armor.MaxStoppingPower'}}"/>
+                </div>
+            </div>
+            <div class="property-card sp-card">
+                <label>{{localize "WITCHER.Location.Right"}} {{localize "WITCHER.Armor.LocationLeg"}}</label>
+                <div class="dual-input">
+                    <input type="number" name="system.rightLegStopping" value="{{item.system.rightLegStopping}}" data-dtype="Number" title="{{localize 'WITCHER.Armor.StoppingPower'}}"/>
+                    <span class="separator">/</span>
+                    <input type="number" name="system.rightLegMaxStopping" value="{{item.system.rightLegMaxStopping}}" data-dtype="Number" title="{{localize 'WITCHER.Armor.MaxStoppingPower'}}"/>
+                </div>
+            </div>
+            {{/if}}
+
+            {{#if (eq item.system.location "Shield")}}
+            <div class="property-card sp-card highlight">
+                <label>{{localize "WITCHER.Weapon.Short.Reliability"}}</label>
+                <div class="dual-input">
+                    <input type="number" name="system.reliability" value="{{item.system.reliability}}" data-dtype="Number" title="{{localize 'WITCHER.Weapon.Reliability'}}"/>
+                    <span class="separator">/</span>
+                    <input type="number" name="system.reliabilityMax" value="{{item.system.reliabilityMax}}" data-dtype="Number" title="{{localize 'WITCHER.Weapon.MaxReliability'}}"/>
+                </div>
+            </div>
+            {{/if}}
+        </div>
+    </div>
+
+    <div class="effects-section">
+        <div class="section-title">
+            <i class="fas fa-magic"></i> {{localize "WITCHER.Item.Effect"}}
+            <a class="add-effect float-right"><i class="fas fa-plus"></i></a>
+        </div>
+        <div class="effects-list">
+            {{#each item.system.effects as |effect name|}}
+                <div class="effect-row list-item" data-id="{{effect.id}}">
+                    <input class="edit-effect item-effect" placeholder="{{localize 'WITCHER.table.Name'}}" data-field="name" type="text" value="{{effect.name}}" />
+                    <select class="edit-effect item-effect" data-field="statusEffect">
+                        {{selectOptions ../config.armorEffects blank='' selected=effect.statusEffect nameAttr='id' valueAttr="id" labelAttr="name" localize=true}}
+                    </select>
+                    <a class="remove-effect"><i class="fas fa-times"></i></a>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+
+    {{>"systems/TheWitcherItaNewSystem/templates/partials/associated-diagram.hbs"}}
+</section>
+

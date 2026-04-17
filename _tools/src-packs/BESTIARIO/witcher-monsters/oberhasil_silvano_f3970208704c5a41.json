@@ -1,0 +1,184 @@
+{
+    "_id": "f3970208704c5a41",
+    "name": "Oberhasil (Silvano)",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/oberhasil.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "ref": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "dex": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "body": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "spd": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "emp": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "cra": {
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
+            },
+            "will": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "luck": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 12
+            },
+            "atletica": {
+                "value": 8
+            },
+            "coraggio": {
+                "value": 10
+            },
+            "eludere": {
+                "value": 13
+            },
+            "intimidire": {
+                "value": 11
+            },
+            "nascondersi": {
+                "value": 0
+            },
+            "persuasione": {
+                "value": 15
+            },
+            "resistereAllaMagia": {
+                "value": 11
+            },
+            "rissa": {
+                "value": 12
+            },
+            "sopravvivenza": {
+                "value": 0
+            },
+            "tempra": {
+                "value": 0
+            },
+            "inganno": {
+                "value": 14
+            },
+            "linguaAntica": {
+                "value": 12
+            },
+            "linguaComune": {
+                "value": 12
+            },
+            "prestanza": {
+                "value": 14
+            },
+            "resistereACoercizione": {
+                "value": 14
+            }
+        },
+        "details": {
+            "biography": "<p>Oberhasil è il leader della troupe di artisti dell’Alderwood. Sebbene appaia come un buffo silvano mangione e bevitore, possiede un’antica saggezza e un profondo legame con la foresta. Ha una particolare predilezione per la vodka di Mahakam.</p>",
+            "threat": "Medio",
+            "reward": 400,
+            "monsterType": "Relict",
+            "difficulty": "MEDIUM"
+        },
+        "derivedStats": {
+            "hp": {
+                "value": 50,
+                "max": 50,
+                "unmodifiedMax": 50
+            },
+            "sta": {
+                "value": 50,
+                "max": 50,
+                "unmodifiedMax": 50
+            },
+            "rec": {
+                "value": 2,
+                "max": 2,
+                "unmodifiedMax": 2
+            },
+            "stun": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "vigor": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "resolve": {
+                "value": 50,
+                "max": 50,
+                "unmodifiedMax": 50
+            },
+            "woundTreshold": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "run": {
+                "value": 15,
+                "max": 15,
+                "unmodifiedMax": 15
+            },
+            "leap": {
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
+            },
+            "enc": {
+                "value": 20,
+                "max": 20,
+                "unmodifiedMax": 20
+            }
+        },
+        "description": "<h3>Oberhasil (Silvano)</h3><p>I silvani sono creature ancestrali molto rare. Somigliano a uomini corpulenti con corna e zampe da caprone. Di carattere tanto dispettoso quanto pigro, Oberhasil è un leader eccentrico per la sua troupe.</p><h3>Capacità</h3><ul><li><strong>Scoppio di Fiamme:</strong> Palla di fuoco (10m), 4d6 danni, 75% A Fuoco.</li><li><strong>Calpestare:</strong> Batte lo zoccolo, CD 15 Atletica per non essere Vacillanti.</li><li><strong>Soffio di Fuoco:</strong> Cono di 2m, 4d6 danni, 75% A Fuoco.</li><li><strong>Forza Schiacciante:</strong> Gli attacchi non possono essere parati e raddoppiano i danni da ablazione.</li></ul>",
+        "sourcebook": "LR 34"
+    },
+    "items": [
+        {
+            "name": "Pugni",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/Trait_Generico.webp",
+            "system": {
+                "damage": "4d6+4",
+                "accuracy": 0,
+                "effects": "Atterramento (30%)"
+            }
+        }
+    ],
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

@@ -1,0 +1,11 @@
+<nav class="sheet-tabs tabs monster-tabs {{#if labelPrefix}}prefixed{{/if}}" data-group="{{group}}" data-part="tabs">
+    {{#each tabs as |tab|}}
+    <a class="item {{tab.cssClass}}" data-tab="{{tab.id}}" data-group="{{../group}}">
+        {{#if ../labelPrefix}}
+        {{localize (concat ../labelPrefix "." tab.label)}}
+        {{else}}
+        {{localize tab.label}}
+        {{/if}}
+    </a>
+    {{/each}}
+</nav>

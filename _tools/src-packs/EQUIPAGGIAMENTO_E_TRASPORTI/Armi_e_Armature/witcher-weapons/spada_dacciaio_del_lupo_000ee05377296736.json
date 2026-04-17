@@ -1,0 +1,41 @@
+{
+    "_id": "000ee05377296736",
+    "name": "Spada d’Acciaio del Lupo",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/spada_dacciaio_del_lupo.webp",
+    "system": {
+        "description": "",
+        "weight": 1,
+        "cost": 100,
+        "sourcebook": "MB",
+        "damage": "5d6+2",
+        "accuracy": 1,
+        "reliability": {
+            "value": 15,
+            "max": 15
+        },
+        "hands": "2",
+        "type": {
+            "text": "",
+            "slashing": true,
+            "piercing": true,
+            "bludgeoning": false,
+            "elemental": false
+        },
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": true,
+            "ablating": false,
+            "crushingForce": false,
+            "isMeteorite": true,
+            "isNonLethal": false,
+            "effects": []
+        }
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

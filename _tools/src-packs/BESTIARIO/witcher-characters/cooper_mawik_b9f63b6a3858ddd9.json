@@ -1,0 +1,167 @@
+{
+    "_id": "b9f63b6a3858ddd9",
+    "name": "Cooper Mawik",
+    "type": "character",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-characters/cooper_mawik.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "ref": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "dex": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "body": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "spd": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "emp": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "cra": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "will": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "luck": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 12
+            },
+            "coraggio": {
+                "value": 11
+            },
+            "eludere": {
+                "value": 12
+            },
+            "intimidire": {
+                "value": 12
+            },
+            "nascondersi": {
+                "value": 10
+            },
+            "sensibilita": {
+                "value": 9
+            },
+            "tattica": {
+                "value": 12
+            },
+            "rissa": {
+                "value": 12
+            },
+            "lameCorte": {
+                "value": 10
+            },
+            "prestanza": {
+                "value": 12
+            },
+            "resistereACoercizione": {
+                "value": 12
+            }
+        },
+        "details": {
+            "biography": "<p>Cooper Mawik ambisce a diventare membro del Consiglio degli Anziani. È un minatore e un artigiano passabile, che produce armi per l'esportazione. Detesta gli umani ed è orgoglioso di fregarli ogni volta che può.</p>",
+            "threat": "Medio Semplice",
+            "sourcebook": "LR 64"
+        },
+        "derivedStats": {
+            "hp": {
+                "value": 40,
+                "max": 40,
+                "unmodifiedMax": 40
+            },
+            "sta": {
+                "value": 40,
+                "max": 40,
+                "unmodifiedMax": 40
+            },
+            "rec": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "stun": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "vigor": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "resolve": {
+                "value": 40,
+                "max": 40,
+                "unmodifiedMax": 40
+            },
+            "woundTreshold": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "run": {
+                "value": 21,
+                "max": 21,
+                "unmodifiedMax": 21
+            },
+            "leap": {
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
+            },
+            "enc": {
+                "value": 16,
+                "max": 16,
+                "unmodifiedMax": 16
+            }
+        },
+        "description": "<p>Cooper Mawik è un influente nano di Mahakam.</p><h3>Attacchi</h3><p>Pugno: 1d6+2 danni, Calcio: 1d6+6 danni, Pugnale: 1d6+2 danni.</p>",
+        "sourcebook": "LR 64"
+    },
+    "items": [
+        {
+            "name": "Pugnale",
+            "type": "weapon",
+            "img": "icons/svg/sword.svg",
+            "system": {
+                "damage": "1d6+2",
+                "accuracy": 0,
+                "effects": "N/A"
+            }
+        }
+    ],
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

@@ -1,0 +1,23 @@
+<div class="monster-stats-grid" data-application-part="stats">
+    {{#each system.stats as |stat id|}}
+    <a class="monster-stat-card stat-roll-btn" data-action="rollStat" data-stat="{{id}}" title="{{localize 'WITCHER.Button.Roll'}}">
+        <span class="stat-label">{{localize (lookup (lookup ../config.statMap id) 'labelShort')}}</span>
+        <div class="stat-values">
+            <input type="text" name="system.stats.{{id}}.value" value="{{stat.value}}" data-dtype="Number" />
+            <span class="separator">/</span>
+            <span class="stat-max">{{stat.max}}</span>
+        </div>
+        <i class="fas fa-dice-d10 roll-icon-hint"></i>
+    </a>
+    {{/each}}
+    
+    {{!-- Toxicity (Special for some monsters) --}}
+    <div class="monster-stat-card toxicity" data-stat="toxicity">
+        <span class="stat-label">{{localize "WITCHER.Actor.Stat.Toxicity"}}</span>
+        <div class="stat-values">
+            <input type="text" name="system.stats.toxicity.value" value="{{system.stats.toxicity.value}}" data-dtype="Number" />
+            <span class="separator">/</span>
+            <span class="stat-max">{{system.stats.toxicity.max}}</span>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+{
+    "_id": "158766ff2e804669",
+    "name": "Linguaggio: Nanico",
+    "type": "skill",
+    "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/sociale.webp",
+    "system": {
+        "attribute": "int",
+        "description": "<p>Saper parlare, leggere e scrivere la lingua dei nani e degli gnomi. (Costo x2)</p>",
+        "sourcebook": "MB 51",
+        "value": 0,
+        "label": "",
+        "isOpened": false,
+        "modifiers": [],
+        "activeEffectModifiers": 0,
+        "isProfession": false,
+        "isPickup": false,
+        "isLearned": false
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

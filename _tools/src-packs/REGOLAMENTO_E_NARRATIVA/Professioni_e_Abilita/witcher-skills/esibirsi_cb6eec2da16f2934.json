@@ -1,0 +1,30 @@
+{
+    "_id": "cb6eec2da16f2934",
+    "name": "Esibirsi",
+    "type": "skill",
+    "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/sociale.webp",
+    "system": {
+        "attribute": "emp",
+        "description": "<p>L’abilità di recitare, cantare o esibirsi davanti a un pubblico. Permette di intrattenere e influenzare le emozioni degli spettatori attraverso la propria performance.</p>",
+        "sourcebook": "MB 56",
+        "value": 0,
+        "label": "",
+        "isOpened": false,
+        "modifiers": [],
+        "activeEffectModifiers": 0,
+        "isProfession": false,
+        "isPickup": false,
+        "isLearned": false
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

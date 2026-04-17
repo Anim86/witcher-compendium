@@ -1,0 +1,26 @@
+{
+    "_id": "bed25d1776aa72c8",
+    "name": "Lino",
+    "type": "component",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Componenti/witcher-components/lino.webp",
+    "system": {
+        "description": "<p>Tessuto leggero e resistente derivato dalla pianta del lino.</p>",
+        "category": "componente",
+        "quantity": "1",
+        "weight": 0.1,
+        "cost": 9,
+        "sourcebook": "MB 130",
+        "type": "crafting-material",
+        "rarity": "C",
+        "location": "Acquistato o fabbricato",
+        "quantityObtainable": "",
+        "forage": "",
+        "substanceType": ""
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

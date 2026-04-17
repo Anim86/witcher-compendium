@@ -1,0 +1,21 @@
+<div class="monster-tab-content" data-application-part="content">
+    {{#if (eq tabs.primary.active "skills")}}
+        {{> "systems/TheWitcherItaNewSystem/templates/partials/monster/monster-skill-tab.hbs"}}
+    {{/if}}
+
+    {{#if (eq tabs.primary.active "inventory")}}
+        {{> "systems/TheWitcherItaNewSystem/templates/partials/monster/monster-inventory-tab.hbs"}}
+    {{/if}}
+
+    {{#if (eq tabs.primary.active "details")}}
+        {{> "systems/TheWitcherItaNewSystem/templates/partials/monster/monster-details-tab.hbs"}}
+    {{/if}}
+
+    {{#if (eq tabs.primary.active "spells")}}
+        {{> "systems/TheWitcherItaNewSystem/templates/partials/monster/monster-spell-tab.hbs"}}
+    {{/if}}
+
+    {{#if (eq tabs.primary.active "effects")}}
+        {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/tab-effects.hbs"}}
+    {{/if}}
+</div>

@@ -1,0 +1,24 @@
+<footer class="wizard-footer">
+    <div class="footer-buttons">
+        {{#unless isFirstStep}}
+        <button type="button" data-action="prevStep">
+            <i class="fa-solid fa-chevron-left"></i>
+            {{localize "WITCHER.Wizard.Back"}}
+        </button>
+        {{else}}
+        <div></div>
+        {{/unless}}
+
+        {{#unless isLastStep}}
+        <button type="button" data-action="nextStep">
+            {{localize "WITCHER.Wizard.Next"}}
+            <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        {{else}}
+        <button type="button" data-action="finish" class="btn-finish">
+            {{localize "WITCHER.Wizard.FinishBtn"}}
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+        </button>
+        {{/unless}}
+    </div>
+</footer>

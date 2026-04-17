@@ -1,0 +1,55 @@
+<!--suppress SpellCheckingInspection -->
+<table class="crit-wounds-table">
+    <tbody>
+        {{#each system.critWounds as |critWound i| }}
+            <tr>
+                <td class="critwound">
+                    <div class="critwound-header">
+                        <div class="critwound-info">
+                            <input hidden name="system.critWounds.{{i}}.id" type="text" value="{{critWound.id}}" />
+                            <select class="wound-name" name="system.critWounds.{{i}}.configEntry">
+                                <option value=""></option>
+                                {{selectOptions ../config.Crit selected=this.configEntry labelAttr="label" localize=true}}
+                            </select>
+                            <select name="system.critWounds.{{i}}.mod">
+                                {{selectOptions ../config.CritMod selected=this.mod localize=true}}
+                            </select>
+                            <select name="system.critWounds.{{i}}.location">
+                                {{selectOptions ../config.location selected=this.location localize=true}}
+                            </select>
+                        </div>
+                        <div class="critwound-days-rest">
+                            <label
+                                class="healing-time-lable">{{localize "WITCHER.CritWound.HealingTime.Label"}}:
+                            </label>
+                            <div class="healing-time-inputs">
+                                <input class="days-healed" name="system.critWounds.{{i}}.daysHealed" type="number"
+                                    data-dtype="Number" value="{{critWound.daysHealed}}" />
+                                /
+                                <input class="healing-time" name="system.critWounds.{{i}}.healingTime" type="number"
+                                    data-dtype="Number" value="{{critWound.healingTime}}" />
+                            </div>
+                        </div>
+                        <div class="critwound-controls">
+                            <a class="effect-control critwound-display">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </a>
+                            <a class="effect-control delete-crit">
+                                <i class="fas fa-trash" data-id="{{critWound.id}}"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="critwounds-description invisible">
+                        <div class="crit-wound-description">
+                            {{localize critWound.description}}
+                        </div>
+                        <div class="crit-wound-mod-description">
+                            {{localize critWound.effect.description}}
+                        </div>
+                        <textarea rows=3 name="system.critWounds.{{i}}.notes">{{critWound.notes}}</textarea>
+                    </div>
+                </td>
+            </tr>
+        {{/each}}
+    </tbody>
+</table>

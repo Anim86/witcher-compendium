@@ -1,0 +1,61 @@
+{
+    "_id": "66078d69acdb040c",
+    "name": "Cercare i Cercatori",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Doni_del_Caos/witcher-invocations/cercare_i_cercatori.webp",
+    "system": {
+        "description": "<p>Invocazione da Prete (Esperto). Cercare i Cercatori crea una protezione magica: quando il Prete o un'altra creatura entro 10m è bersaglio di una divinazione (Idromanzia, Piromanzia...), il Prete viene allertato e vede nella sua mente il volto del divinatore. Questi deve superare una prova di Istruzione CD 20 per accorgersene.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "TC 95",
+        "class": "Invocations",
+        "level": "journeyman",
+        "source": "Priest",
+        "stamina": 24,
+        "staminaIsVar": false,
+        "effect": "Crea una protezione magica che allerta il Prete se qualcuno entro 10m è bersaglio di divinazione, mostrandogli il volto del divinatore.",
+        "range": "Personale",
+        "duration": "1 giorno",
+        "defence": "Nessuna",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

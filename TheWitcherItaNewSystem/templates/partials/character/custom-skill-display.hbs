@@ -1,0 +1,11 @@
+<a class="skill-card custom" data-action="rollSkill" data-skill="{{name}}" data-stat={{stat}} data-tooltip="{{localize skill.label}}">
+    <div class="skill-main">
+        <span class="skill-label">{{localize skill.label}}</span>
+        <div class="skill-status-icons">
+             <i class="fa-solid fa-user-gear" data-tooltip="Custom Skill"></i>
+        </div>
+    </div>
+    <div class="skill-value-badge">
+        {{#if (gte skill.value 0)}}+{{/if}}{{skill.value}}
+    </div>
+</a>

@@ -1,0 +1,28 @@
+{
+    "_id": "d029c5c95239484c",
+    "name": "Pugnale",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/pugnale.webp",
+    "system": {
+        "description": "<p>Simbolo sacro Strumenti chirurgici Davide Mesina 355175</p>",
+        "weight": 0,
+        "cost": 0,
+        "components": [
+            "Pugnale 8 2 ore Legname (Ã—1), Ferro (Ã—1) 33 74"
+        ],
+        "difficulty": 8,
+        "time": "2 ore",
+        "sourcebook": "MB 20"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

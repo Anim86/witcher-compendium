@@ -1,0 +1,175 @@
+{
+    "_id": "a2663c6721e4f823",
+    "name": "Oritteropo",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/oritteropo.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "ref": {
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
+            },
+            "dex": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "body": {
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
+            },
+            "spd": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "emp": {
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
+            },
+            "cra": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "will": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "luck": {
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 10
+            },
+            "atletica": {
+                "value": 8
+            },
+            "coraggio": {
+                "value": 13
+            },
+            "eludere": {
+                "value": 9
+            },
+            "nascondersi": {
+                "value": 8
+            },
+            "rissa": {
+                "value": 0
+            },
+            "sopravvivenza": {
+                "value": 15
+            },
+            "tempra": {
+                "value": 13
+            },
+            "intimidire": {
+                "value": 8
+            },
+            "mischia": {
+                "value": 10
+            }
+        },
+        "details": {
+            "biography": "<p>L'oritteropo è una creatura del deserto, simile a un grosso pangolino o a un formichiere corazzato. Sebbene non sia aggressivo per natura, è un combattente tenace se messo all'angolo.</p>",
+            "threat": "Facile Semplice",
+            "monsterType": "Beast",
+            "difficulty": "EASY"
+        },
+        "derivedStats": {
+            "hp": {
+                "value": 15,
+                "max": 15,
+                "unmodifiedMax": 15
+            },
+            "sta": {
+                "value": 15,
+                "max": 15,
+                "unmodifiedMax": 15
+            },
+            "rec": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "stun": {
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
+            },
+            "vigor": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "resolve": {
+                "value": 15,
+                "max": 15,
+                "unmodifiedMax": 15
+            },
+            "woundTreshold": {
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
+            },
+            "run": {
+                "value": 15,
+                "max": 15,
+                "unmodifiedMax": 15
+            },
+            "leap": {
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
+            },
+            "enc": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            }
+        },
+        "description": "<p>Bestia corazzata del deserto.</p><h3>Capacità</h3><ul><li><strong>Postura Intimidatoria:</strong> Può alzarsi sulle zampe per intimidire un simile (Prova Contrapposta vs Coraggio). Chi perde deve fuggire nel turno seguente.</li><li><strong>Volontà di Uccidere:</strong> Se scende sotto i 10 PS, deve superare CD 20 Coraggio per non fuggire.</li></ul>",
+        "sourcebook": "LR 111"
+    },
+    "items": [
+        {
+            "name": "Artigli",
+            "type": "weapon",
+            "img": "icons/svg/sword.svg",
+            "system": {
+                "damage": "1d6",
+                "accuracy": 10,
+                "effects": "Sanguinamento (100%)"
+            }
+        },
+        {
+            "name": "Coda",
+            "type": "weapon",
+            "img": "icons/svg/sword.svg",
+            "system": {
+                "damage": "2d6",
+                "accuracy": 10,
+                "effects": "N/A"
+            }
+        }
+    ],
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

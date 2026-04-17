@@ -1,0 +1,138 @@
+{
+    "name": "Troll",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/troll.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "ref": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "dex": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "body": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "spd": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "emp": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "cra": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "will": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 0
+            },
+            "atletica": {
+                "value": 0
+            },
+            "coraggio": {
+                "value": 0
+            },
+            "intimidire": {
+                "value": 0
+            },
+            "manifattura": {
+                "value": 0
+            },
+            "nascondersi": {
+                "value": 0
+            },
+            "persuasione": {
+                "value": 0
+            },
+            "prestanza": {
+                "value": 0
+            },
+            "resistereACoercizione": {
+                "value": 0
+            },
+            "resistereAllaMagia": {
+                "value": 0
+            },
+            "rissa": {
+                "value": 0
+            },
+            "sopravvivenza": {
+                "value": 0
+            },
+            "tempra": {
+                "value": 0
+            }
+        },
+        "details": {
+            "biography": "<p>Lo ammetto, amo i troll! Molta gente ne ha paura perché sono “mostri”, ma io penso che siano un sacco divertenti. Amano la vodka e non sono troppo svegli, per cui è facile prenderli in giro. Certa gente dice che se finisci per scontrarti con un troll lo devi attirare in acqua: è tanto pesante che non può nuotare e finisce affogato sul fondo. – Rodolf Kazmer</p>",
+            "threat": "Medio Semplice",
+            "reward": 800,
+            "monsterType": "Ogroid",
+            "difficulty": "MEDIUM"
+        },
+        "derivedStats": {
+            "rec": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "stun": {
+                "value": 0,
+                "max": 0
+            },
+            "woundTreshold": {
+                "value": 0,
+                "max": 0
+            },
+            "hp": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "sta": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "description": "<p>Che vivano nelle foreste, nelle caverne o sotto i ponti, tutti i troll amano la vodka. Non sono di natura violenta e molti preferiscono ubriacarsi e addormentarsi. Quando si infuriano, però, diventano pericolosi scagliando macigni con precisione micidiale. Sono anche abili artigiani: i loro ponti sono spesso preferiti dai mercanti perché molto stabili.</p><p>“Quando avete a che fare con i troll dovete ricordarvi che non sono umani. Molti vedono uma- ni ed elfi sia come amici sia come cibo. Un’offerta di vodka o carne fresca può essere sufficiente a portarne uno dalla vostra parte.” – Erland di Larvik</p>",
+        "sourcebook": "DW 100",
+        "monsterType": "Ogroid",
+        "difficulty": "MEDIUM",
+        "bounty": 800
+    },
+    "items": [],
+    "_id": "48a5d21bf7c06e93",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

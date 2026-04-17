@@ -1,0 +1,30 @@
+{
+    "_id": "0a18ae46767fd5fb",
+    "name": "Sopravvivenza",
+    "type": "skill",
+    "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/fisiche.webp",
+    "system": {
+        "attribute": "int",
+        "description": "<p>Sopravvivere all’aperto e seguire le tracce di una preda. Permette di accendere fuochi, identificare piante e sapersi adattare a qualsiasi ambiente naturale.</p>",
+        "sourcebook": "MB 53",
+        "value": 0,
+        "label": "",
+        "isOpened": false,
+        "modifiers": [],
+        "activeEffectModifiers": 0,
+        "isProfession": false,
+        "isPickup": false,
+        "isLearned": false
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

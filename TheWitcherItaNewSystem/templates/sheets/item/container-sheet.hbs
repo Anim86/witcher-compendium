@@ -1,0 +1,45 @@
+<section class="scrollable">
+    {{>"systems/TheWitcherItaNewSystem/templates/partials/item-header.hbs"}}
+    
+    <div class="properties-grid main-stats">
+        <div class="property-card highlight">
+            <label>{{localize "WITCHER.Armor.Encumbrance"}}</label>
+            <div class="dual-input">
+                <input type="text" value="{{data.storedWeight}}" disabled />
+                <span class="separator">/</span>
+                <input type="number" name="system.carry" value="{{item.system.carry}}" data-dtype="Number" />
+            </div>
+        </div>
+    </div>
+
+    <div class="item-description-container">
+        <div class="section-title">
+            <i class="fas fa-box-open"></i> {{localize "WITCHER.table.Description"}}
+        </div>
+        {{editor item.system.description target="system.description" button=true owner=owner editable=editable engine="prosemirror"}}
+    </div>
+
+    <div class="container-contents">
+        <div class="section-title">
+            <i class="fas fa-inventory"></i> {{localize "WITCHER.Inventory.name"}}
+        </div>
+        <div class="contents-list">
+            {{#each data.itemContent as |storedItem|}}
+                <div class="content-item-row">
+                    <img class="item-img" src="{{storedItem.img}}" />
+                    <div class="item-info">
+                        <div class="item-name">{{storedItem.name}}</div>
+                        <div class="item-details">
+                            <span><b>{{localize "WITCHER.Item.Quantity"}}:</b> {{storedItem.quantity}}</span>
+                            <span><b>{{localize "WITCHER.Item.Weight"}}:</b> {{storedItem.weight}}</span>
+                        </div>
+                    </div>
+                    <a class="control-icon remove-item" data-uuid="{{storedItem.uuid}}" title="{{localize 'WITCHER.Item.RemoveComponent'}}">
+                        <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                    </a>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</section>
+

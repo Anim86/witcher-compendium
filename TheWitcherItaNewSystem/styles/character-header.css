@@ -1,0 +1,155 @@
+/*
+ * character-header.css
+ *
+ * Stili legacy mantenuti per retrocompatibilità.
+ * Il restyle principale è in styles/character/sheet.css.
+ * Qui rimangono SOLO le classi non coperte da sheet.css.
+ */
+
+/* ── Grid / Layout helper vecchio ── */
+.optional-stats-collum {
+    display: grid;
+    grid-template-columns: 90px 90px;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+/* ── Stat label (vecchio layout) ── */
+.char-stat-label {
+    width: 70px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 10px 0 0 10px;
+    color: light-dark(black, white);
+    padding: 0 5px 0;
+    place-content: center;
+}
+
+/* ── Header right sidebar ── */
+.char-right-sidebar {
+    justify-items: center;
+    color: light-dark(black, white);
+}
+
+.right-element {
+    float: left;
+    margin: auto;
+    width: 50%;
+    height: 110px;
+    text-align: center;
+}
+
+.right-image {
+    height: 75px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 0;
+}
+
+.right-row { size: 75px; }
+.right-row label { position: relative; }
+
+input.right-value {
+    position: relative;
+    bottom: 55px;
+    width: 40px;
+    font-size: 25px;
+    border: none;
+    background: none;
+    color: light-dark(#000, #fff);
+}
+
+.right-value::placeholder { color: light-dark(black, white); }
+
+.right-max {
+    position: relative;
+    bottom: 84px;
+    left: 54px;
+    border: none;
+    text-align: left;
+    width: 50px;
+    font-size: 25px;
+    color: light-dark(#000, #fff);
+}
+
+.right-top {
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+/* ── Stat helpers ── */
+.stat-info,
+.derived-info { align-items: center; }
+
+.stat-modifiers,
+.skill-modifiers,
+.derived-modifiers { margin-top: 5px; }
+
+.stat-info > h4,
+.char-stat-label,
+.stat-mod,
+.derived-info { margin-bottom: 0; }
+
+.stat-mod  { height: 30px; width: 35px; place-content: center; }
+.stat-max  { height: 30px; width: 35px; }
+
+input.stat-max {
+    border: none;
+    padding: 0;
+    line-height: 20px;
+}
+
+input.header-stat {
+    font-weight: bold;
+    width: 35px;
+    height: 30px;
+}
+
+/* ── Misc label ── */
+.core-stats-label {
+    text-align: center;
+    display: inline-block;
+    width: 60px;
+}
+
+.core-stats.minmax {
+    text-align: center;
+    display: inline-block;
+}
+
+.global-modifier-column { flex: 1; }
+
+.death-counter > i {
+    padding-top: 2px;
+    padding-bottom: 3px;
+}
+
+.header-center label { font-weight: bold; }
+
+.char-center-middle {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+input.total-stats-show {
+    width: 35px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.total-stats-label {}
+
+.stat-title { margin-left: 55px; }
+
+.resource-title {
+    background-color: light-dark(rgba(28,104,136,0.15), rgba(28,104,136,0.5));
+    color: light-dark(#1a2530, white);
+    padding: 5px 8px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}

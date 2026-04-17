@@ -1,0 +1,76 @@
+<div class="wizard-step step-finalize">
+    <h2>{{localize "WITCHER.Wizard.Step.Finalize.Title"}}</h2>
+    <p>{{localize "WITCHER.Wizard.Step.Finalize.Description"}}</p>
+
+    <div class="character-preview-grid">
+        <div class="preview-sidebar">
+            <div class="avatar-selection" data-action="selectAvatar">
+                <img src="{{character.img}}" alt="{{character.name}}" class="wizard-avatar">
+                <div class="avatar-overlay">
+                    <i class="fa-solid fa-camera"></i>
+                    <span>{{localize "WITCHER.Wizard.ChangeAvatar"}}</span>
+                </div>
+            </div>
+            <div class="form-group character-name-selection">
+                <label>{{localize "WITCHER.Actor.Name"}}</label>
+                <input type="text" name="name" value="{{character.name}}" placeholder="{{localize "WITCHER.Wizard.NamePlaceholder"}}" class="wizard-name-input">
+            </div>
+        </div>
+
+        <div class="preview-main">
+            <div class="summary-card">
+                <h3>{{localize "WITCHER.Wizard.Summary.Details"}}</h3>
+                <div class="summary-line">
+                    <strong>{{localize "WITCHER.Wizard.Race"}}:</strong> {{character.race.name}}
+                </div>
+                <div class="summary-line">
+                    <strong>{{localize "WITCHER.Wizard.Profession"}}:</strong> {{character.profession.name}}
+                </div>
+                <div class="summary-line">
+                    <strong>{{localize "WITCHER.Wizard.BackgroundLabel"}}:</strong> {{character.homeland}} - {{character.background.socialStatus}}
+                </div>
+                <div class="summary-line">
+                    <strong class="{{#if isOverBudget}}overbudget{{/if}}">💰 {{localize "WITCHER.Wizard.Gear.MoneyLabel"}}:</strong> {{character.money}} crowns
+                </div>
+            </div>
+
+            <div class="summary-card">
+                <h3>{{localize "WITCHER.Wizard.Stats.Summary"}}</h3>
+                <div class="stats-pills">
+                    {{#each summary.stats}}
+                    <div class="stat-pill">
+                        <span class="stat-abbr">{{localize label}}</span>
+                        <span class="stat-value">{{value}}</span>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+
+            <div class="summary-card">
+                <h3>{{localize "WITCHER.Wizard.Gear.InitialGear"}}</h3>
+                <div class="profession-gear-list">
+                    {{#each summary.professionGear}}
+                    <span class="gear-tag">{{name}}</span>
+                    {{else}}
+                    <p><em>Nessun oggetto professionale scelto.</em></p>
+                    {{/each}}
+                </div>
+            </div>
+
+            <div class="summary-card">
+                <h3>{{localize "WITCHER.Wizard.Gear.PurchasedGear"}}</h3>
+                <div class="purchased-gear-list">
+                    {{#each character.gear}}
+                    <span class="gear-tag">{{name}}</span>
+                    {{else}}
+                    <p><em>Nessun oggetto acquistato.</em></p>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="finish-callout">
+        <p>{{localize "WITCHER.Wizard.Finish.Callout"}}</p>
+    </div>
+</div>

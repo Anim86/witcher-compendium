@@ -1,0 +1,30 @@
+{
+    "_id": "970be8417e1c4200",
+    "name": "Scudo Temeriano",
+    "type": "armor",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-armor/Scudo_Temeriano.webp",
+    "system": {
+        "description": "<p>Ah! Il buon vecchio artigianato temeriano! Quel che chia- miamo “scudo a goccia” è probabilmente il tipo di scudo più comune che si vede nel reame. Uno scudo temeriano tiene a bada spade e frecce per un discreto periodo di tempo.</p>",
+        "cost": 225,
+        "stoppingPower": 0,
+        "reliability": {
+            "max": 8,
+            "value": 8
+        },
+        "sourcebook": "MB 82",
+        "weight": 1.5,
+        "rarity": "Comune",
+        "unmodifiedMax": {}
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

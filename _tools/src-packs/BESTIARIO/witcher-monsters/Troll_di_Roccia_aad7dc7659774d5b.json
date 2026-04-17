@@ -1,0 +1,181 @@
+{
+    "_id": "aad7dc7659774d5b",
+    "name": "Troll di Roccia",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/troll_di_roccia.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 2,
+                "max": 2,
+                "unmodifiedMax": 2
+            },
+            "ref": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "dex": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "body": {
+                "value": 12,
+                "max": 12,
+                "unmodifiedMax": 12
+            },
+            "spd": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "emp": {
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
+            },
+            "cra": {
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
+            },
+            "will": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 9
+            },
+            "atletica": {
+                "value": 3
+            },
+            "coraggio": {
+                "value": 10
+            },
+            "eludere": {
+                "value": 5
+            },
+            "nascondersi": {
+                "value": 3
+            },
+            "rissa": {
+                "value": 8
+            },
+            "sopravvivenza": {
+                "value": 7
+            },
+            "tempra": {
+                "value": 8
+            }
+        },
+        "details": {
+            "biography": "<p>Tutti sanno che i troll sono grandi costruttori e lavorano in cambio di vodka. Possono costruire ogni genere di edificio, ma non sono troppo furbi. – Rodolf Kazmer</p><p>Tutti i troll hanno un’intelligenza equivalente a quella di un bambino piccolo. Amano gli alcolici, ma ne serve molto per farli ubriacare. I troll di roccia hanno uno spesso strato di roccia sulla schiena che funge da armatura naturale.</p>",
+            "threat": "Difficile",
+            "reward": 1000,
+            "monsterType": "Ogroid",
+            "difficulty": "HARD"
+        },
+        "derivedStats": {
+            "vigor": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "rec": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "resolve": {
+                "value": 40,
+                "max": 40,
+                "unmodifiedMax": 40
+            },
+            "stun": {
+                "value": 8,
+                "max": 8
+            },
+            "woundTreshold": {
+                "value": 12,
+                "max": 12
+            },
+            "hp": {
+                "value": 80,
+                "max": 80,
+                "unmodifiedMax": 80
+            },
+            "sta": {
+                "value": 40,
+                "max": 40,
+                "unmodifiedMax": 40
+            }
+        },
+        "description": "<p>Tutti sanno che i troll sono grandi costruttori e lavorano in cambio di vodka. Possono costruire ogni genere di edificio, ma non sono troppo furbi. – Rodolf Kazmer</p><p>Tutti i troll hanno un’intelligenza equivalente a quella di un bambino piccolo. Amano gli alcolici, ma ne serve molto per farli ubriacare. I troll di roccia hanno uno spesso strato di roccia sulla schiena che funge da armatura naturale.</p>",
+        "sourcebook": "MB 305",
+        "monsterType": "Ogroid",
+        "difficulty": "HARD",
+        "bounty": 1000
+    },
+    "items": [
+        {
+            "_id": "25bdc1fb9d3146cc",
+            "name": "Pugni",
+            "type": "weapon",
+            "img": "icons/svg/sword.svg",
+            "system": {
+                "description": "",
+                "damage": "6d6",
+                "accuracy": 0,
+                "effects": ""
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "t1",
+            "name": "[Capacità] Forza Distruttiva",
+            "type": "note",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/Trait_Generico.webp",
+            "system": {
+                "description": "<p>I colpi non possono essere parati e causano doppio danno ablativo.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "t2",
+            "name": "[Capacità] Scagliare Macigni",
+            "type": "note",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/Trait_Generico.webp",
+            "system": {
+                "description": "<p>Oltre i 6m scaglia macerie. 5d6 danni, gittata 16m.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        }
+    ],
+    "effects": [],
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

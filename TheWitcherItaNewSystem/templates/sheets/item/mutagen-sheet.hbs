@@ -1,0 +1,29 @@
+<section class="scrollable">
+    {{>"systems/TheWitcherItaNewSystem/templates/partials/item-header.hbs"}}
+    
+    <div class="properties-grid main-stats">
+        <div class="property-card">
+            <label>{{localize "WITCHER.Mutagen.MutSource"}}</label>
+            <input type="text" name="system.source" value="{{item.system.source}}" />
+        </div>
+        <div class="property-card highlight">
+            <label>{{localize "WITCHER.Mutagen.AlchemyDC"}}</label>
+            <input type="text" name="system.alchemyDC" value="{{item.system.alchemyDC}}" />
+        </div>
+    </div>
+
+    <div class="item-description-container">
+        <div class="section-title">
+            <i class="fas fa-biohazard"></i> {{localize "WITCHER.Item.Effect"}}
+        </div>
+        <input type="text" name="system.effect" value="{{item.system.effect}}" style="width: 100%;" />
+    </div>
+
+    <div class="item-description-container">
+        <div class="section-title">
+            <i class="fas fa-dna"></i> {{localize "WITCHER.Mutagen.MinorMutation"}}
+        </div>
+        <input type="text" name="system.minorMutation" value="{{item.system.minorMutation}}" style="width: 100%;" />
+    </div>
+</section>
+

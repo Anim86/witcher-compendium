@@ -1,0 +1,28 @@
+<div class="monster-header" data-application-part="header">
+    <div class="header-name-box">
+        <h1 class="charname">
+            <input name="name" type="text" value="{{actor.name}}" placeholder="{{localize 'WITCHER.Name'}}" />
+        </h1>
+        <div class="monster-badges">
+            <span class="badge difficulty {{toLowerCase system.difficulty}}">
+                <i class="fas fa-skull"></i> {{localize (lookup config.monsterDifficulty (toLowerCase system.difficulty))}}
+            </span>
+            <span class="badge complexity {{toLowerCase system.complexity}}">
+                <i class="fas fa-brain"></i> {{localize (lookup config.monsterComplexity (toLowerCase system.complexity))}}
+            </span>
+            <span class="badge size">
+                <i class="fas fa-expand-arrows-alt"></i> {{#if system.size}}{{system.size}}{{else}}?{{/if}}
+            </span>
+        </div>
+    </div>
+
+    <div class="monster-type-banner">
+        {{#if system.monsterType}}
+        <img class="type-icon" src="systems/TheWitcherItaNewSystem/assets/images/Monsters/{{system.monsterType}}.png" data-tooltip="{{localize (lookup config.MonsterTypes system.monsterType)}}" />
+        <span class="type-label">{{localize (lookup config.MonsterTypes system.monsterType)}}</span>
+        {{else}}
+        <i class="fas fa-question-circle type-placeholder"></i>
+        <span class="type-label">{{localize "WITCHER.None"}}</span>
+        {{/if}}
+    </div>
+</div>

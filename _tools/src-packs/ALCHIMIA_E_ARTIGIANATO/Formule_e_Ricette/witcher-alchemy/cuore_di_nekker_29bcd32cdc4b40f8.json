@@ -1,0 +1,23 @@
+{
+    "_id": "29bcd32cdc4b40f8",
+    "name": "Cuore di Nekker",
+    "type": "component",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/cuore_di_nekker.webp",
+    "system": {
+        "description": "<p>Cuore pulsante di una creatura di branco necrofaga.</p><p><b>RaritÃ :</b> S | <b>Ubicazione:</b> Nekker</p>",
+        "quantity": "1",
+        "weight": 0.5,
+        "cost": 30,
+        "sourcebook": "MB 146",
+        "type": "alchemical",
+        "rarity": "S",
+        "location": "Nekker",
+        "substanceType": "rebis"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

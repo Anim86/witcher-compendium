@@ -1,0 +1,29 @@
+{
+    "_id": "bc953028d623420a",
+    "name": "Armatura da Scoia’tael",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-schematics/armatura_da_scoiatael.webp",
+    "system": {
+        "description": "<p>20 R 2 Vedi barra laterale Testa, Torso, Braccia e Gambe 1 12 2325 ARMATURA DA DRAGONE L'Armatura Gnomesca da Dragone è costruita in modo da permettere a chi la indossa di stare più facilmente in sella. Quando è in sella, chi indossa un'armatura gnomesca ottiene +2 alle prove di Cavalcare. Armature Pesanti Testa, Torso, Braccia e Gambe 2 20 2850 Armatura Gnomesca da Dragone 25 R 2 Resistenza: Taglienti Resistenza: Perforanti Vedi barra laterale Testa, Torso, Braccia e Gambe 2 30 3525 Armatura a Piastre Mahakaman 30 R 3 Resistenza: Taglienti Resistenza: Contundenti Resistenza: Perforanti PALVESE DEI MAHAKAM Esattamente come la sua controparte nilfgaardiana, il palvese dei Mahakam può essere piantato al suolo, davanti al portatore. SCUDI Nome Aff. Disp. Effetto VI Peso Costo Scudo Leggero Brocchiero Gnomesco 15 R 0 1 450 Scudo Medio Scudo Elfico 25 R 0 3 700 Scudo Pesante Palvese Mahakaman 35 R Vedi barra laterale 1 5,5 1050</p>",
+        "weight": 0,
+        "cost": 3486,
+        "components": [
+            "Sventratrici Elfiche (Ã—5) 20 Â½ ora Acciaio Nero (Ã—1), Legname Indurito (Ã—1), Piume (Ã—2), Cote (Ã—1), Cerume di Orco (Ã—1), Resina (Ã—1), Filo (Ã—1) 185 100",
+            "Acciaio Nero (Ã—12), Pelle di Lupo (Ã—3), Grasso di Estere (Ã—10), Acquaforte (Ã—12), Cenere (Ã—11), Lino a Doppia Trama (Ã—8), Olio Scurente (Ã—4), Legno Indurito (Ã—13), Olio di Papero (Ã—2), Filo (Ã—9)"
+        ],
+        "difficulty": 20,
+        "time": "20 ore",
+        "sourcebook": "MB 86"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "_id": "152461ebf437fd2b",
+    "name": "Armatura a Piastre Mahakaman",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-schematics/Armatura_a_Piastre_Mahakaman.webp",
+    "system": {
+        "description": "<p>Schema per la fabbricazione di: <b>Armatura a Piastre Mahakaman</b>.</p><p><b>Componenti richiesti:</b> Acciaio Mahakaman (Ã—12), Dimeritium Mahakaman (Ã—2), Grasso di Estere (Ã—8), Acquaforte (Ã—12), Cuoio Indurito (Ã—5), Olio Scurente (Ã—2), Olio di Papero (Ã—1), Meteorite (Ã—2), Cerume di Orco (Ã—3), Filo (Ã—10)</p><p><b>DifficoltÃ  Manifattura:</b> CD 28</p><p><b>Tempo:</b> 28 ore</p>",
+        "weight": 0,
+        "cost": 0,
+        "components": [
+            "Acciaio Mahakaman (Ã—12)",
+            "Dimeritium Mahakaman (Ã—2)",
+            "Grasso di Estere (Ã—8)",
+            "Acquaforte (Ã—12)",
+            "Cuoio Indurito (Ã—5)",
+            "Olio Scurente (Ã—2)",
+            "Olio di Papero (Ã—1)",
+            "Meteorite (Ã—2)",
+            "Cerume di Orco (Ã—3)",
+            "Filo (Ã—10)"
+        ],
+        "difficulty": 28,
+        "time": "28 ore",
+        "sourcebook": "MB 140"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

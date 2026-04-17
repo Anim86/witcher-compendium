@@ -1,0 +1,31 @@
+{
+    "_id": "0c8eaef83981bedf",
+    "name": "Orione (Ã—3)",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-schematics/orione_a3.webp",
+    "system": {
+        "description": "<p>Schema per la fabbricazione di: <b>Orione (Ã—3)</b>.</p><p><b>Componenti richiesti:</b> Acciaio (Ã—1), Olio (Ã—2), Argilla (Ã—1), Ceneri (Ã—3)</p><p><b>DifficoltÃ  Manifattura:</b> CD 12</p><p><b>Tempo:</b> 1 ora</p>",
+        "weight": 0,
+        "cost": 0,
+        "components": [
+            "Acciaio (Ã—1)",
+            "Olio (Ã—2)",
+            "Argilla (Ã—1)",
+            "Ceneri (Ã—3)"
+        ],
+        "difficulty": 12,
+        "time": "1 ora",
+        "sourcebook": "MB 133"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

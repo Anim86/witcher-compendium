@@ -1,0 +1,129 @@
+{
+    "name": "Shaelmaar",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/shaelmaar.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "ref": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "dex": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "body": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "spd": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "emp": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "cra": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "will": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 0
+            },
+            "atletica": {
+                "value": 0
+            },
+            "coraggio": {
+                "value": 0
+            },
+            "intimidire": {
+                "value": 0
+            },
+            "nascondersi": {
+                "value": 0
+            },
+            "prestanza": {
+                "value": 0
+            },
+            "resistereAllaMagia": {
+                "value": 0
+            },
+            "rissa": {
+                "value": 0
+            },
+            "sopravvivenza": {
+                "value": 0
+            },
+            "tempra": {
+                "value": 0
+            }
+        },
+        "details": {
+            "biography": "<p>Nel sud dei monti di Mahakam si dice che siano spiriti della terra, che pattugliano il sottosuolo per evitare che la gente estragga oro e gemme. L’unica volta che ne ho visto uno stava facendo crollare il soffitto di una miniera con le sue enormi chele! Sbucano dal suolo senza preavviso e hanno gusci più duri dell’acciaio. – Rodolf Kazmer</p>",
+            "threat": "Medio Complesso",
+            "reward": 500,
+            "monsterType": "Relict",
+            "difficulty": "MEDIUM"
+        },
+        "derivedStats": {
+            "rec": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "stun": {
+                "value": 0,
+                "max": 0
+            },
+            "woundTreshold": {
+                "value": 0,
+                "max": 0
+            },
+            "hp": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "sta": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "description": "<p>Gli shaelmaar sono colossali creature sotterranee dotate di spessi gusci chitinosi. Sono ciechi, ma possiedono un udito acuto e un sonar infallibile. Una volta individuata la preda, lo shaelmaar si raggomitola e ruota rapidamente, o carica rotolando verso il nemico per schiacciarlo con il suo enorme peso.</p>",
+        "sourcebook": "DW 90",
+        "monsterType": "Relict",
+        "difficulty": "MEDIUM",
+        "bounty": 500
+    },
+    "items": [],
+    "_id": "c6f108bd53ae4729",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

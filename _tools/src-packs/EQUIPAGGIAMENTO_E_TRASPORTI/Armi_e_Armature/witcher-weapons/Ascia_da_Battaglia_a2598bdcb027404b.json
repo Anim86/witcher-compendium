@@ -1,0 +1,50 @@
+{
+    "_id": "a2598bdcb027404b",
+    "name": "Ascia da Battaglia",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/Ascia_da_Battaglia.webp",
+    "system": {
+        "description": "<p>Serve buttar giù una porta? Bisogna fare a pezzi uno, vivo o morto? Pigliati un’ascia, amico mio. Ce ne sono di tante forme, ma l’ascia da battaglia è un’arma devastante ed è più robusta di quasi ogni spada.</p>",
+        "cost": 525,
+        "reliability": {
+            "max": 15,
+            "value": 15
+        },
+        "accuracy": 0,
+        "reach": "N/A",
+        "effects": "N/A",
+        "sourcebook": "MB 40",
+        "type": {
+            "text": "",
+            "slashing": true,
+            "piercing": false,
+            "bludgeoning": false,
+            "elemental": false
+        },
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": true,
+            "crushingForce": false,
+            "isMeteorite": false,
+            "isNonLethal": false,
+            "effects": []
+        },
+        "weight": 2,
+        "rarity": "Comune",
+        "damage": "5d6",
+        "hands": 1,
+        "unmodifiedMax": {}
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

@@ -1,0 +1,84 @@
+<div class="monster-tab-content monster-details-container">
+    {{!-- Biometrics & Core Info --}}
+    <section class="details-section biometrics card">
+        <h3 class="section-header"><i class="fas fa-dna"></i> {{localize "WITCHER.Actor.StatTitle.Attributes"}}</h3>
+        <div class="monster-details-grid">
+            <div class="detail-item">
+                <label>{{localize "WITCHER.Actor.Skill.Intelligence"}}</label>
+                <input type="text" name="system.intelligence" value="{{system.intelligence}}" />
+            </div>
+            <div class="detail-item">
+                <label>{{localize "WITCHER.Armor.LocationTotal"}}</label>
+                 <input type="text" name="system.organization" value="{{system.organization}}" />
+            </div>
+            <div class="detail-item">
+                <label>{{localize "WITCHER.Item.Availability"}}</label>
+                <input type="text" name="system.size" value="{{system.size}}" />
+            </div>
+            <div class="detail-item">
+                <label>{{localize "WITCHER.Height"}}</label>
+                <input type="text" name="system.height" value="{{system.height}}" />
+            </div>
+            <div class="detail-item">
+                <label>{{localize "WITCHER.Item.Weight"}}</label>
+                <input type="text" name="system.weight" value="{{system.weight}}" />
+            </div>
+            <div class="detail-item">
+                <label>{{localize "WITCHER.monster.senses"}}</label>
+                <input type="text" name="system.senses" value="{{system.senses}}" />
+            </div>
+        </div>
+    </section>
+
+    {{!-- Combat Traits --}}
+    <section class="details-section combat-traits card">
+        <h3 class="section-header"><i class="fas fa-shield-alt"></i> {{localize "WITCHER.Defense.name"}}</h3>
+        <div class="traits-container">
+            <div class="detail-item full-width">
+                <label><i class="fas fa-shield-virus"></i> {{localize "WITCHER.Armor.Resistances"}}</label>
+                <input type="text" name="system.resistances" value="{{system.resistances}}" />
+            </div>
+            <div class="detail-item full-width">
+                <label><i class="fas fa-biohazard"></i> {{localize "WITCHER.Item.DefenseProperties.label"}}</label>
+                <input type="text" name="system.immunities" value="{{system.immunities}}" />
+            </div>
+            <div class="detail-item full-width">
+                <label><i class="fas fa-bolt"></i> {{localize "WITCHER.Defense.defenseOptions.magicResist"}}</label>
+                <input type="text" name="system.susceptibilities" value="{{system.susceptibilities}}" />
+            </div>
+            <div class="detail-item full-width">
+                <label><i class="fas fa-hand-fist"></i> {{localize "WITCHER.Damage.totalApplied"}}</label>
+                <input type="text" name="system.vulnerability" value="{{system.vulnerability}}" />
+            </div>
+        </div>
+    </section>
+
+    {{!-- Knowledge Blocks --}}
+    <section class="details-section knowledge card">
+        <h3 class="section-header"><i class="fas fa-book-open"></i> {{localize "WITCHER.Item.Description"}}</h3>
+        
+        <div class="knowledge-block">
+            <div class="knowledge-header">
+                <label><i class="fas fa-users"></i> {{localize "WITCHER.Monster.CommonerSuperstition"}}</label>
+                <div class="dc-badge"><span>CD</span><input type="text" name="system.commonSkillValue" value="{{system.commonSkillValue}}" /></div>
+            </div>
+            <textarea name="system.common">{{system.common}}</textarea>
+        </div>
+
+        <div class="knowledge-block">
+            <div class="knowledge-header">
+                <label><i class="fas fa-graduation-cap"></i> {{localize "WITCHER.Monster.AcademicKnowledge"}}</label>
+                <div class="dc-badge"><span>CD</span><input type="text" name="system.academicKnowledgeSkillValue" value="{{system.academicKnowledgeSkillValue}}" /></div>
+            </div>
+            <textarea name="system.academicKnowledge">{{system.academicKnowledge}}</textarea>
+        </div>
+    </section>
+
+    {{!-- Critical Wounds --}}
+    <section class="details-section critical-wounds card">
+        <h3 class="section-header"><i class="fas fa-user-injured"></i> {{localize "WITCHER.CritWound.Header"}}</h3>
+        <div class="crit-wounds-container">
+            {{> "systems/TheWitcherItaNewSystem/templates/partials/crit-wounds-table.hbs"}}
+        </div>
+    </section>
+</div>

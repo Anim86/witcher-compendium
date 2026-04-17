@@ -1,0 +1,114 @@
+const fs = require('fs');
+const filepath = 'e:/AntigravitiProgetti/CompendioTheWitcher/TheWitcherItaNewSystem/templates/app/wizard/steps/gear.hbs';
+
+const fullHbs = `<div class="wizard-step step-gear">
+    <h2>{{localize "WITCHER.Wizard.Step.Gear.Title"}}</h2>
+    <p>{{localize "WITCHER.Wizard.Step.Gear.Description"}}</p>
+    
+    <!-- Dotazione della Professione -->
+    <div class="summary-card profession-dotazione">
+        <h3>
+            {{localize "WITCHER.Wizard.Gear.InitialGear"}} 
+            {{#if (gt professionGearChoose 0)}}
+            <span class="choose-hint">(Scegli {{professionGearChoose}} - Rimasti: {{professionGearRemaining}})</span>
+            {{/if}}
+        </h3>
+        
+        {{#if professionGearList}}
+            <div class="profession-gear-grid">
+                {{#each professionGearList}}
+                <div class="gear-item-mini {{#if selected}}selected{{/if}} {{#if missing}}missing{{/if}}" 
+                     {{#unless always}}data-action="toggleProfessionGear" data-item-id="{{id}}"{{/unless}}>
+                    {{#if img}}<img src="{{img}}" alt="{{name}}">{{/if}}
+                    <span class="name">{{name}}</span>
+                    {{#if always}}<span class="badge-fixed">Fisso</span>{{/if}}
+                </div>
+                {{/each}}
+            </div>
+        {{else}}
+            <p><em>{{localize "WITCHER.Wizard.Gear.NoProfession"}}</em></p>
+        {{/if}}
+    </div>
+
+    <div class="money-selection">
+        <i class="money-icon fa-solid fa-coins"></i>
+        <div>
+            <label>{{localize "WITCHER.Wizard.Gear.MoneyLabel"}}:</label>
+            <div class="money-hint">{{localize "WITCHER.Wizard.Gear.MoneyHint"}}</div>
+        </div>
+        <input type="number" name="money" value="{{character.money}}" min="0" data-action="updateMoney">
+    </div>
+
+    <div class="gear-container">
+        <div class="gear-categories">
+            <div class="gear-category">
+                <h3>{{localize "WITCHER.Loot.Weapons"}}</h3>
+                <div class="gear-list">
+                    {{#each allGear.weapons}}
+                    <div class="gear-item {{#if selected}}selected{{/if}}" 
+                         data-action="toggleGear" data-item-id="{{_id}}" data-item-type="weapon">
+                        <img src="{{img}}" alt="{{name}}">
+                        <span class="name">{{name}}</span>
+                        <span class="cost">{{#if system.cost.value}}{{system.cost.value}}{{else}}{{system.cost}}{{/if}} Corone</span>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+
+            <div class="gear-category">
+                <h3>{{localize "WITCHER.Loot.Armors"}}</h3>
+                <div class="gear-list">
+                    {{#each allGear.armor}}
+                    <div class="gear-item {{#if selected}}selected{{/if}}" 
+                         data-action="toggleGear" data-item-id="{{_id}}" data-item-type="armor">
+                        <img src="{{img}}" alt="{{name}}">
+                        <span class="name">{{name}}</span>
+                        <span class="cost">{{#if system.cost.value}}{{system.cost.value}}{{else}}{{system.cost}}{{/if}} Corone</span>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+
+            <div class="gear-category">
+                <h3>{{localize "WITCHER.Loot.Valuables"}}</h3>
+                <div class="gear-list">
+                    {{#each allGear.equipment}}
+                    <div class="gear-item {{#if selected}}selected{{/if}}" 
+                         data-action="toggleGear" data-item-id="{{_id}}" data-item-type="equipment">
+                        <img src="{{img}}" alt="{{name}}">
+                        <span class="name">{{name}}</span>
+                        <span class="cost">{{#if system.cost.value}}{{system.cost.value}}{{else}}{{system.cost}}{{/if}} Corone</span>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+
+        <div class="gear-summary">
+            <h3>{{localize "WITCHER.Wizard.Gear.Selected"}}</h3>
+            <ul>
+                {{#each character.gear}}
+                <li>
+                    <span>{{name}}</span>
+                    <span class="cost">{{#if system.cost.value}}{{system.cost.value}}{{else}}{{system.cost}}{{/if}} Corone</span>
+                </li>
+                {{/each}}
+            </ul>
+            <div class="money-total {{#if isOverBudget}}overbudget{{/if}}">
+                <span>{{localize "WITCHER.Wizard.Gear.TotalCost"}}:</span>
+                <span class="money-value {{#if isOverBudget}}overbudget{{/if}}">{{gearCost}}</span>
+            </div>
+            
+            {{#if isOverBudget}}
+            <div class="budget-warning">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                {{localize "WITCHER.Wizard.Gear.OverBudget"}}
+            </div>
+            {{/if}}
+        </div>
+    </div>
+</div>
+`;
+
+fs.writeFileSync(filepath, fullHbs);
+console.log('Done hbs');

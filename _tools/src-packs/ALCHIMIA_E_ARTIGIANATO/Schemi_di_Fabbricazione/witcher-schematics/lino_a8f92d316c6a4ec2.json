@@ -1,0 +1,29 @@
+{
+    "_id": "a8f92d316c6a4ec2",
+    "name": "Lino",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-schematics/lino.webp",
+    "system": {
+        "description": "<p>C Acquistato o fabbricato N/A N/A 0,1 9 Lino a Doppia Trama S Acquistato o fabbricato N/A N/A 0,1 22 Olio C Acquistato o fabbricato N/A N/A 0,1 3 Resina C Foreste 1d6 UnitÃ  10 0,1 2 Seta S Acquistato N/A N/A 0,1 50 Vetro S Acquistato N/A N/A 0,5 5 PELLI E PARTI ANIMALI Nome RaritÃ  Ubicazione QuantitÃ  CD Per Procacciarlo Peso Costo Cuoio C Acquistato o fabbricato N/A N/A 2 28 Cuoio Indurito S Acquistato o fabbricato N/A N/A 3 48 Cuoio Lyriano S Acquistato o fabbricato N/A N/A 2 60 Ossa di Bestia C Reperibile da mostri e bestie Variabile N/A 4 8 Pelle di Dragonide R Acquistato o fabbricato N/A N/A 5 58 Pelle di Lupo C Acquistato o fabbricato 3 UnitÃ  N/A 3 14 Pelle di Mucca C Acquistato N/A N/A 5 10 Piume D Reperibile sugli uccelli 1d6 UnitÃ  N/A 0,1 4 Scaglie di Dragonide R Reperibile sulle viverne 1d6 UnitÃ  N/A 5 30</p>",
+        "weight": 0,
+        "cost": 30,
+        "components": [
+            "Lino 10 15 minuti Filo (Ã—2) 6 12",
+            "Lino a Doppia Trama 14 Â½ ora Lino (Ã—1), Filo (Ã—2) 15 30"
+        ],
+        "difficulty": 10,
+        "time": "15 minuti",
+        "sourcebook": "MB 130"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

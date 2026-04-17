@@ -1,0 +1,51 @@
+{
+    "_id": "003b7935a5eab648",
+    "name": "Spada d’Argento del Grifone",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/spada_dargento_del_grifone.webp",
+    "system": {
+        "description": "",
+        "weight": 1,
+        "cost": 100,
+        "sourcebook": "MB",
+        "damage": "2d6+2",
+        "accuracy": 1,
+        "reliability": {
+            "value": 10,
+            "max": 10
+        },
+        "hands": "2",
+        "type": {
+            "text": "",
+            "slashing": true,
+            "piercing": true,
+            "bludgeoning": false,
+            "elemental": false
+        },
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "isMeteorite": false,
+            "isNonLethal": false,
+            "silverTrait": true,
+            "silverDamage": "3d6",
+            "effects": [
+                {
+                    "id": "000c63ddba485ec1",
+                    "name": "Focus (1)",
+                    "statusEffect": null,
+                    "percentage": 100,
+                    "varEffect": false
+                }
+            ]
+        }
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "_id": "f0a1b2c3d4e5f6a7",
+    "name": "Parola di Dio",
+    "type": "skill",
+    "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/magiche.webp",
+    "system": {
+        "attribute": "emp",
+        "description": "<p>L’abilità di convincere i presenti che gli dei parlano attraverso di sé. Permette di ottenere seguaci leali (apostoli) che vedono il Prete come un messia.</p>",
+        "sourcebook": "TC 52",
+        "value": 0,
+        "label": "",
+        "isOpened": false,
+        "modifiers": [],
+        "activeEffectModifiers": 0,
+        "isProfession": true,
+        "isPickup": false,
+        "isLearned": false
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

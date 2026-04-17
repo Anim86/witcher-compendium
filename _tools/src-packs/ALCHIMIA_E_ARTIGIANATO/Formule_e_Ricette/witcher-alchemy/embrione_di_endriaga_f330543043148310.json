@@ -1,0 +1,23 @@
+{
+    "_id": "f330543043148310",
+    "name": "Embrione di Endriaga",
+    "type": "component",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/embrione_di_endriaga.webp",
+    "system": {
+        "description": "<p>Feto immaturo di un insettoide endriaga, ricco di Fulgur.</p><p><b>RaritÃ :</b> R | <b>Ubicazione:</b> Endriaghe</p>",
+        "quantity": "1",
+        "weight": 1.5,
+        "cost": 55,
+        "sourcebook": "MB 145",
+        "type": "alchemical",
+        "rarity": "R",
+        "location": "Endriaghe",
+        "substanceType": "fulgur"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

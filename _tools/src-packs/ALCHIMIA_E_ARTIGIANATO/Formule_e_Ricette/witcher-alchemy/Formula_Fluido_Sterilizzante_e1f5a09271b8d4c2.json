@@ -1,0 +1,23 @@
+{
+    "name": "Formula: Fluido Sterilizzante",
+    "_id": "e1f5a09271b8d4c2",
+    "system": {
+        "recipe": [],
+        "description": "<p>Una formula per preparare Fluido Sterilizzante. <em>Ingredienti specifici da verificare sul manuale fisico (colonna componenti non estratta da OCR — Pag146/Pag249 MB).</em></p>",
+        "weight": 0.1,
+        "cost": 52,
+        "sourcebook": "MB 146",
+        "craftingTime": "5 Round",
+        "type": "alchemy",
+        "rarity": "C",
+        "quantity": 1,
+        "learned": false,
+        "craftingCc": 12
+    },
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/Formula_Fluido_Sterilizzante.webp",
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
+}

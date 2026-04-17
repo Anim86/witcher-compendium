@@ -1,0 +1,25 @@
+<section class="scrollable">
+    {{>"systems/TheWitcherItaNewSystem/templates/partials/item-header.hbs"}}
+
+    <div class="properties-grid main-stats">
+        <div class="property-card">
+            <label>{{localize "WITCHER.homeland.name"}}</label>
+            <select name="system.value" class="details" id="homeland-select">
+                {{selectOptions config.homelands selected=item.system.value localize=true}}
+            </select>
+        </div>
+        {{#if (eq item.system.value "other")}}
+        <div class="property-card">
+            <label>{{localize "WITCHER.NoEffects"}}</label>
+            <input class="details hometailOther" name="system.otherValue" type="text" value="{{item.system.otherValue}}" />
+        </div>
+        {{/if}}
+    </div>
+
+    <div class="item-description-container">
+        <div class="section-title">
+            <i class="fas fa-map-marked-alt"></i> {{localize "WITCHER.Item.Description"}}
+        </div>
+        {{editor item.system.description target="system.description" button=true owner=owner editable=editable engine="prosemirror"}}
+    </div>
+</section>

@@ -1,0 +1,183 @@
+{
+    "_id": "7e2ac369b1344d85",
+    "name": "Bes",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/bes.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "ref": {
+                "value": 12,
+                "max": 12,
+                "unmodifiedMax": 12
+            },
+            "dex": {
+                "value": 12,
+                "max": 12,
+                "unmodifiedMax": 12
+            },
+            "body": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "spd": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "emp": {
+                "value": 2,
+                "max": 2,
+                "unmodifiedMax": 2
+            },
+            "cra": {
+                "value": 2,
+                "max": 2,
+                "unmodifiedMax": 2
+            },
+            "will": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 10
+            },
+            "atletica": {
+                "value": 20
+            },
+            "intimidire": {
+                "value": 19
+            },
+            "lanciareIncantesimi": {
+                "value": 18
+            },
+            "nascondersi": {
+                "value": 12
+            },
+            "prestanza": {
+                "value": 20
+            },
+            "resistereallamagia": {
+                "value": 20
+            },
+            "rissa": {
+                "value": 20
+            },
+            "sopravvivenza": {
+                "value": 12
+            }
+        },
+        "details": {
+            "biography": "<p>I bes sono demoni di furia e potere, che giungono nel mondo solo per diffondere la sofferenza. – Rodolf Kazmer</p><p>Eredi di reami oltre la conoscenza, i bes sono grandi guerrieri dotati di artigli affilati. Hanno la terribile abitudine di possedere i corpi altrui, sfruttando la forza degli ospiti mentre surriscaldano il loro sangue fino a bruciare chiunque li colpisca.</p>",
+            "threat": "Arduo",
+            "reward": 1500,
+            "monsterType": "Relict",
+            "difficulty": "HARD"
+        },
+        "derivedStats": {
+            "vigor": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "rec": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "resolve": {
+                "value": 100,
+                "max": 100,
+                "unmodifiedMax": 100
+            },
+            "stun": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "woundTreshold": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "hp": {
+                "value": 100,
+                "max": 100,
+                "unmodifiedMax": 100
+            },
+            "sta": {
+                "value": 50,
+                "max": 50,
+                "unmodifiedMax": 50
+            }
+        },
+        "description": "<p>I bes sono demoni di furia e potere, che giungono nel mondo solo per diffondere la sofferenza. – Rodolf Kazmer</p><p>Eredi di reami oltre la conoscenza, i bes sono grandi guerrieri dotati di artigli affilati. Hanno la terribile abitudine di possedere i corpi altrui, sfruttando la forza degli ospiti mentre surriscaldano il loro sangue fino a bruciare chiunque li colpisca.</p>",
+        "sourcebook": "TC 200",
+        "monsterType": "Relict",
+        "difficulty": "HARD",
+        "bounty": 1500
+    },
+    "items": [
+        {
+            "_id": "b1",
+            "name": "Artigli",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/Trait_Artigli.webp",
+            "system": {
+                "description": "",
+                "damage": "5d6+4",
+                "accuracy": 0,
+                "effects": "Bilanciato, Sanguinamento (100%)"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "b2",
+            "name": "[Capacità] Possessione",
+            "type": "note",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/Trait_Generico.webp",
+            "system": {
+                "description": "<p>Prova contrapposta di Lanciare Incantesimi vs Resistere alla Magia per prendere il controllo di un corpo.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "b3",
+            "name": "[Capacità] Sangue Bollente",
+            "type": "note",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/Trait_Generico.webp",
+            "system": {
+                "description": "<p>Danni da armi Taglienti/Perforanti colpiscono l'attaccante (5 danni + rimozione 1 PR).</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        }
+    ],
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

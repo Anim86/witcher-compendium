@@ -1,0 +1,26 @@
+{
+    "_id": "8f4056bd40e2e2a5",
+    "name": "Vetro",
+    "type": "component",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Componenti/witcher-components/vetro.webp",
+    "system": {
+        "description": "<p>Materiale fragile e trasparente, essenziale per fiale e lenti.</p>",
+        "category": "componente",
+        "quantity": "1",
+        "weight": 0.5,
+        "cost": 5,
+        "sourcebook": "MB 130",
+        "type": "crafting-material",
+        "rarity": "S",
+        "location": "Acquistato",
+        "quantityObtainable": "",
+        "forage": "",
+        "substanceType": ""
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

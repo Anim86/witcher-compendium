@@ -1,0 +1,259 @@
+<section class="tab {{tabs.inventory.cssClass}} scrollable standard-form" data-group="primary" data-tab="inventory">
+    <div class="carry-section">
+        <div class="carry-labels">
+            <span>Carry: {{totalWeight}}</span>
+            <span class="bulk-max">Max Carry: {{system.derivedStats.enc.value}}</span>
+        </div>
+        <progress class="carry-bar {{#if (gte totalWeight system.derivedStats.enc.value)}}overweight{{/if}}" value="{{totalWeight}}" max="{{system.derivedStats.enc.value}}"></progress>
+    </div>
+
+    <div class="currency-section">
+        <div class="currency-header">
+            <div class="header-title">
+                <i class="fas fa-coins"></i>
+                <span>{{localize 'WITCHER.Actor.rewards.currency'}}</span>
+            </div>
+            <a class="open-rewards" data-tooltip="Visualizza Registro Ricompense">
+                <i class="fa-solid fa-clipboard-list"></i>
+            </a>
+        </div>
+        <div class="currency-grid">
+            <div class="currency-item" data-tooltip="{{localize "WITCHER.Currency.bizant"}}">
+                <span class="coin-label">{{localize "WITCHER.Currency.bizant"}}</span>
+                <div class="coin-row">
+                    <div class="coin-icon gold"><i class="fas fa-circle"></i></div>
+                    <input name="system.currency.bizant" type="number" value="{{system.currency.bizant}}" placeholder="0" data-dtype="Number" />
+                </div>
+            </div>
+            <div class="currency-item" data-tooltip="{{localize "WITCHER.Currency.ducat"}}">
+                <span class="coin-label">{{localize "WITCHER.Currency.ducat"}}</span>
+                <div class="coin-row">
+                    <div class="coin-icon gold"><i class="fas fa-circle"></i></div>
+                    <input name="system.currency.ducat" type="number" value="{{system.currency.ducat}}" placeholder="0" data-dtype="Number" />
+                </div>
+            </div>
+            <div class="currency-item" data-tooltip="{{localize "WITCHER.Currency.lintar"}}">
+                <span class="coin-label">{{localize "WITCHER.Currency.lintar"}}</span>
+                <div class="coin-row">
+                    <div class="coin-icon silver"><i class="fas fa-circle"></i></div>
+                    <input name="system.currency.lintar" type="number" value="{{system.currency.lintar}}" placeholder="0" data-dtype="Number" />
+                </div>
+            </div>
+            <div class="currency-item" data-tooltip="{{localize "WITCHER.Currency.floren"}}">
+                <span class="coin-label">{{localize "WITCHER.Currency.floren"}}</span>
+                <div class="coin-row">
+                    <div class="coin-icon gold"><i class="fas fa-circle"></i></div>
+                    <input name="system.currency.floren" type="number" value="{{system.currency.floren}}" placeholder="0" data-dtype="Number" />
+                </div>
+            </div>
+            <div class="currency-item" data-tooltip="{{localize "WITCHER.Currency.crown"}}">
+                <span class="coin-label">{{localize "WITCHER.Currency.crown"}}</span>
+                <div class="coin-row">
+                    <div class="coin-icon copper"><i class="fas fa-circle"></i></div>
+                    <input name="system.currency.crown" type="number" value="{{system.currency.crown}}" placeholder="0" data-dtype="Number" />
+                </div>
+            </div>
+            <div class="currency-item" data-tooltip="{{localize "WITCHER.Currency.oren"}}">
+                <span class="coin-label">{{localize "WITCHER.Currency.oren"}}</span>
+                <div class="coin-row">
+                    <div class="coin-icon silver"><i class="fas fa-circle"></i></div>
+                    <input name="system.currency.oren" type="number" value="{{system.currency.oren}}" placeholder="0" data-dtype="Number" />
+                </div>
+            </div>
+            <div class="currency-item" data-tooltip="{{localize "WITCHER.Currency.falsecoin"}}">
+                <span class="coin-label">{{localize "WITCHER.Currency.falsecoin"}}</span>
+                <div class="coin-row">
+                    <div class="coin-icon false"><i class="fas fa-circle"></i></div>
+                    <input name="system.currency.falsecoin" type="number" value="{{system.currency.falsecoin}}" placeholder="0" data-dtype="Number" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="weapon-section">
+        {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/inventory/tab-inventory-weapons.hbs" weapons=weapons itemType='weapon' header=(localize "WITCHER.Inventory.Weapons") hasDamage=true hasReliability=true hasQuantity=true}}
+    </div>
+
+    <div class="armor-section">
+        {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/inventory/tab-inventory-armors.hbs" armors=armors itemType='armor' header=(localize "WITCHER.Inventory.Armor") hasReliability=true}}
+    </div>
+
+    <div class="valuable-section">
+        <div class="section-header valuable-header">
+            <div></div>
+            <h2>{{localize "WITCHER.Inventory.Valuables"}}</h2>
+            <div class="list-label">
+                <span>
+                    <a class="add-item" data-itemType="valuable">
+                        <i class="fas fa-plus"></i>
+                    </a>
+                </span>
+            </div>
+        </div>
+
+        {{#if questItems}}
+            {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/inventory/tab-inventory-valuables.hbs" valuables=questItems header=(localize "WITCHER.Valuable.QuestItem") hasQuantity=true}}
+        {{/if}}
+
+        {{#if general}}
+            {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/inventory/tab-inventory-valuables.hbs" valuables=general header=(localize "WITCHER.Valuable.General") hasQuantity=true}}
+        {{/if}}
+
+        {{#if foodAndDrinks}}
+            {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/inventory/tab-inventory-valuables.hbs" valuables=foodAndDrinks header=(localize "WITCHER.Valuable.Food&Drinks") hasQuantity=true}}
+        {{/if}}
+
+        {{#if toolkits}}
+            {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/inventory/tab-inventory-valuables.hbs" valuables=toolkits header=(localize "WITCHER.Valuable.Toolkit") hasQuantity=true}}
+        {{/if}}
+
+        {{#if clothingAndContainers}}
+            {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/inventory/tab-inventory-valuables.hbs" valuables=clothingAndContainers header=(localize "WITCHER.Valuable.Clothings") hasQuantity=true}}
+        {{/if}}
+
+        {{#if mounts}}
+            {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/inventory/tab-inventory-mounts.hbs"  mounts=mounts header=(localize "WITCHER.Inventory.Mounts") hasQuantity=true}}
+        {{/if}}
+
+        {{#if mountAccessories}}
+            {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/inventory/tab-inventory-valuables.hbs" valuables=mountAccessories header=(localize "WITCHER.Valuable.MountAccessories") hasQuantity=true}}
+        {{/if}}
+
+        {{#if containers}}
+            {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/inventory/tab-inventory-valuables.hbs" valuables=containers header=(localize "WITCHER.Valuable.Containers") itemType="container" hasQuantity=true}}
+        {{/if}}
+
+        <div class="section-header valuable-header">
+            <div></div>
+            <h2>{{localize "WITCHER.Inventory.Diagrams"}}</h2>
+            <div class="list-label">
+                <span>
+                    <a class="add-item" data-itemType="diagrams">
+                        <i class="fas fa-plus"></i>
+                    </a>
+                </span>
+            </div>
+        </div>
+        {{#if alchemicalItemDiagrams}}
+            {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/inventory/tab-inventory-diagrams.hbs" diagrams=alchemicalItemDiagrams header=(localize "WITCHER.Inventory.AlchemicalItemDiagrams") hasQuantity=true}}
+        {{/if}}
+
+        {{#if oilDiagrams}}
+            {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/inventory/tab-inventory-diagrams.hbs" diagrams=oilDiagrams header=(localize "WITCHER.Inventory.OilDiagrams") hasQuantity=true}}
+        {{/if}}
+
+        {{#if potionDiagrams}}
+            {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/inventory/tab-inventory-diagrams.hbs" diagrams=potionDiagrams header=(localize "WITCHER.Inventory.PotionDiagrams") hasQuantity=true}}
+        {{/if}}
+
+        {{#if decoctionDiagrams}}
+            {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/inventory/tab-inventory-diagrams.hbs" diagrams=decoctionDiagrams header=(localize "WITCHER.Inventory.DecoctionDiagrams") hasQuantity=true}}
+        {{/if}}
+
+        {{#if ingredientDiagrams}}
+            {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/inventory/tab-inventory-diagrams.hbs" diagrams=ingredientDiagrams header=(localize "WITCHER.Inventory.IngredientDiagrams") hasQuantity=true}}
+        {{/if}}
+
+        {{#if ammunitionDiagrams}}
+            {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/inventory/tab-inventory-diagrams.hbs" diagrams=ammunitionDiagrams header=(localize "WITCHER.Inventory.AmmunitionDiagrams") hasQuantity=true}}
+        {{/if}}
+
+        {{#if weaponDiagrams}}
+            {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/inventory/tab-inventory-diagrams.hbs" diagrams=weaponDiagrams header=(localize "WITCHER.Inventory.WeaponDiagrams") hasQuantity=true}}
+        {{/if}}
+
+        {{#if enhancementDiagrams}}
+            {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/inventory/tab-inventory-diagrams.hbs" diagrams=enhancementDiagrams header=(localize "WITCHER.Inventory.enhancementDiagrams") hasQuantity=true}}
+        {{/if}}
+
+        {{#if armorDiagrams}}
+            {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/inventory/tab-inventory-diagrams.hbs" diagrams=armorDiagrams header=(localize "WITCHER.Inventory.ArmorDiagrams") hasQuantity=true}}
+        {{/if}}
+
+        {{#if elderfolkWeaponDiagrams}}
+            {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/inventory/tab-inventory-diagrams.hbs" diagrams=elderfolkWeaponDiagrams header=(localize "WITCHER.Inventory.ElderfolkWeaponDiagrams") hasQuantity=true}}
+        {{/if}}
+
+        {{#if elderfolkArmorDiagrams}}
+            {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/inventory/tab-inventory-diagrams.hbs" diagrams=elderfolkArmorDiagrams header=(localize "WITCHER.Inventory.ElderfolkArmorDiagrams") hasQuantity=true}}
+        {{/if}}
+
+        {{#if bombDiagrams}}
+            {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/inventory/tab-inventory-diagrams.hbs" diagrams=bombDiagrams header=(localize "WITCHER.Inventory.BombDiagrams") hasQuantity=true}}
+        {{/if}}
+
+        {{#if trapDiagrams}}
+            {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/inventory/tab-inventory-diagrams.hbs" diagrams=trapDiagrams header=(localize "WITCHER.Inventory.TrapDiagrams") hasQuantity=true}}
+        {{/if}}
+    </div>
+
+    <div class="component-section">
+        <div class="section-header valuable-header">
+            <div></div>
+            <h2>{{localize "WITCHER.Inventory.Alchemy"}}</h2>
+            <div class="list-label">
+                <span>
+                    <a class="add-item" data-itemType="alchemical">
+                        <i class="fas fa-plus"></i>
+                    </a>
+                </span>
+            </div>
+        </div>
+
+        {{#if alchemicalItems}}
+            {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/inventory/tab-inventory-alchemical.hbs" alchemicals=alchemicalItems header=(localize "WITCHER.Inventory.AlchemicalItems") hasQuantity=true}}
+        {{/if}}
+
+        {{#if oils}}
+            {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/inventory/tab-inventory-alchemical.hbs" alchemicals=oils header=(localize "WITCHER.Inventory.Oils") hasQuantity=true}}
+        {{/if}}
+
+        {{#if witcherPotions}}
+            {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/inventory/tab-inventory-alchemical.hbs" alchemicals=witcherPotions header=(localize "WITCHER.Inventory.WitcherPotionsAndDecoctions") hasQuantity=true}}
+        {{/if}}
+
+        {{#if mutagens}}
+            {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/inventory/tab-inventory-alchemical.hbs" alchemicals=mutagens itemType='mutagen' header=(localize "WITCHER.Inventory.Mutagens") hasQuantity=true}}
+        {{/if}}
+
+        {{#if alchemicalTreatments}}
+            {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/inventory/tab-inventory-components.hbs" components=alchemicalTreatments header=(localize "WITCHER.Inventory.AlchemicalTreatments") hasQuantity=true}}
+        {{/if}}
+
+        <div>
+            {{> "systems/TheWitcherItaNewSystem/templates/partials/character/substances.hbs"}}
+        </div>
+
+        <div class="section-header valuable-header">
+            <div></div>
+            <h2>{{localize "WITCHER.Inventory.Crafting"}}</h2>
+            <div class="list-label">
+                <span>
+                    <a class="add-item" data-itemType="component">
+                        <i class="fas fa-plus"></i>
+                    </a>
+                </span>
+            </div>
+        </div>
+        <div class="components">
+            {{#if craftingMaterials}}
+                {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/inventory/tab-inventory-components.hbs" components=craftingMaterials header=(localize "WITCHER.Inventory.CraftingMaterials") hasQuantity=true}}
+            {{/if}}
+
+            {{#if ingotsAndMinerals}}
+                {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/inventory/tab-inventory-components.hbs" components=ingotsAndMinerals header=(localize "WITCHER.Inventory.IngotsAndMinerals") hasQuantity=true}}
+            {{/if}}
+
+            {{#if hidesAndAnimalParts}}
+                {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/inventory/tab-inventory-components.hbs" components=hidesAndAnimalParts header=(localize "WITCHER.Inventory.HidesAndAnimalParts") hasQuantity=true}}
+            {{/if}}
+
+            {{#if runeItems}}
+                {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/inventory/tab-inventory-runes-glyphs.hbs" enhancements=runeItems header=(localize "WITCHER.Inventory.Runes") hasQuantity=true}}
+            {{/if}}
+            {{#if glyphItems}}
+                {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/inventory/tab-inventory-runes-glyphs.hbs" enhancements=glyphItems header=(localize "WITCHER.Inventory.Glyphs") hasQuantity=true}}
+            {{/if}}
+        </div>
+    </div>
+</section>

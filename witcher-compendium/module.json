@@ -1,0 +1,470 @@
+{
+  "id": "witcher-compendium",
+  "title": "Witcher RPG Compendium (Premium IT)",
+  "description": "Compendio premium per The Witcher TRPG (v14).",
+  "version": "14.1.58",
+  "authors": [
+    {
+      "name": "Zolt",
+      "flags": {}
+    },
+    {
+      "name": "Anim",
+      "flags": {}
+    }
+  ],
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14.360"
+  },
+  "esmodules": [
+    "scripts/witcher-compendium.js",
+    "scripts/setup-folders.js"
+  ],
+  "relationships": {
+    "systems": [
+      {
+        "id": "TheWitcherItaNewSystem"
+      }
+    ],
+    "requires": [
+      {
+        "id": "TheWitcherItaNewSystem",
+        "type": "system"
+      }
+    ]
+  },
+  "packs": [
+    {
+      "name": "witcher-races",
+      "label": "Razze",
+      "path": "packs/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-races",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-professions",
+      "label": "Professioni",
+      "path": "packs/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-professions",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-skills",
+      "label": "Abilità",
+      "path": "packs/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-weapons",
+      "label": "Armi",
+      "path": "packs/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-weapons-racconti",
+      "label": "Armi (Racconti)",
+      "path": "packs/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons-racconti",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-armor",
+      "label": "Armature",
+      "path": "packs/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-armor",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-equipment",
+      "label": "Oggetti Vari",
+      "path": "packs/EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-equipment",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-special",
+      "label": "Oggetti Witcher",
+      "path": "packs/EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-special",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-special-chaos",
+      "label": "Oggetti Chaos",
+      "path": "packs/EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-special-chaos",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-spells",
+      "label": "Incantesimi Base",
+      "path": "packs/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-spells-racconti",
+      "label": "Incantesimi (Racconti)",
+      "path": "packs/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells-racconti",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-rituals",
+      "label": "Rituali Base",
+      "path": "packs/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-rituals",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-signs",
+      "label": "Segni Witcher",
+      "path": "packs/MAGIA_E_MALEDIZIONI/Segni/witcher-signs",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-spells-chaos",
+      "label": "Incantesimi Chaos",
+      "path": "packs/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells-chaos",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-rituals-chaos",
+      "label": "Rituali Chaos",
+      "path": "packs/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-rituals-chaos",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-signs-chaos",
+      "label": "Segni Chaos",
+      "path": "packs/MAGIA_E_MALEDIZIONI/Segni/witcher-signs-chaos",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-runes",
+      "label": "Rune, Glifi e Reliquie",
+      "path": "packs/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-runes",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-hexes-base",
+      "label": "Fatture Base",
+      "path": "packs/MAGIA_E_MALEDIZIONI/Maledizioni_e_Fatture/witcher-hexes-base",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-hexes",
+      "label": "Fatture Chaos",
+      "path": "packs/MAGIA_E_MALEDIZIONI/Maledizioni_e_Fatture/witcher-hexes",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-invocations",
+      "label": "Invocazioni Chaos",
+      "path": "packs/MAGIA_E_MALEDIZIONI/Doni_del_Caos/witcher-invocations",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-gifts",
+      "label": "Doni Magici",
+      "path": "packs/MAGIA_E_MALEDIZIONI/Doni_del_Caos/witcher-gifts",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-goetia",
+      "label": "Goezia",
+      "path": "packs/MAGIA_E_MALEDIZIONI/Doni_del_Caos/witcher-goetia",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-components",
+      "label": "Componenti",
+      "path": "packs/ALCHIMIA_E_ARTIGIANATO/Componenti/witcher-components",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-components-diario",
+      "label": "Componenti (Diario)",
+      "path": "packs/ALCHIMIA_E_ARTIGIANATO/Componenti/witcher-components-diario",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-components-racconti",
+      "label": "Componenti (Racconti)",
+      "path": "packs/ALCHIMIA_E_ARTIGIANATO/Componenti/witcher-components-racconti",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-schematics",
+      "label": "Schemi",
+      "path": "packs/ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-schematics",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-schematics-racconti",
+      "label": "Schemi (Racconti)",
+      "path": "packs/ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-schematics-racconti",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-alchemy",
+      "label": "Alchimia",
+      "path": "packs/ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-mutations",
+      "label": "Mutageni",
+      "path": "packs/ALCHIMIA_E_ARTIGIANATO/Mutageni/witcher-mutations",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-monsters",
+      "label": "Mostri",
+      "path": "packs/BESTIARIO/witcher-monsters",
+      "type": "Actor",
+      "system": "TheWitcherItaNewSystem",
+      "banner": "modules/witcher-compendium/images/banners/banner_monsters.webp"
+    },
+    {
+      "name": "witcher-characters",
+      "label": "Personaggi",
+      "path": "packs/BESTIARIO/witcher-characters",
+      "type": "Actor",
+      "system": "TheWitcherItaNewSystem",
+      "banner": "modules/witcher-compendium/images/banners/banner_png.webp"
+    },
+    {
+      "name": "witcher-transports",
+      "label": "Trasporti",
+      "path": "packs/EQUIPAGGIAMENTO_E_TRASPORTI/Trasporti/witcher-transports",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-trophies",
+      "label": "Trofei",
+      "path": "packs/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-critical-wounds",
+      "label": "Ferite Critiche",
+      "path": "packs/REGOLAMENTO_E_NARRATIVA/Ferite_Critiche/witcher-critical-wounds",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-curses",
+      "label": "Maledizioni GM",
+      "path": "packs/MAGIA_E_MALEDIZIONI/Maledizioni_e_Fatture/witcher-curses",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-lore",
+      "label": "Lore",
+      "path": "packs/REGOLAMENTO_E_NARRATIVA/Lore_e_Racconti/witcher-lore",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-geografia",
+      "label": "Geografia (Nazioni e Luoghi)",
+      "path": "packs/REGOLAMENTO_E_NARRATIVA/Geografia/witcher-geografia",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-dlc-sw-equipment",
+      "label": "Equipaggiamento Scuole (SW)",
+      "path": "packs/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-dlc-sw-equipment",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-dlc-sw-schematics",
+      "label": "Schemi Scuole (SW)",
+      "path": "packs/ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-dlc-sw-schematics",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-animals",
+      "label": "Animali",
+      "path": "packs/BESTIARIO/witcher-animals",
+      "type": "Actor",
+      "system": "TheWitcherItaNewSystem",
+      "banner": "modules/witcher-compendium/images/banners/banner_animals.webp"
+    },
+    {
+      "name": "witcher-dlc-ms-components",
+      "label": "Componenti sulla Strada (MS)",
+      "path": "packs/ALCHIMIA_E_ARTIGIANATO/Componenti/witcher-dlc-ms-components",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-dlc-sr-equipment",
+      "label": "Equipaggiamento Viaggi (SR)",
+      "path": "packs/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-dlc-sr-equipment",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-dlc-sr-lore",
+      "label": "Lore sulla Strada (SR)",
+      "path": "packs/REGOLAMENTO_E_NARRATIVA/Lore_e_Racconti/witcher-dlc-sr-lore",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-dlc-ts-equipment",
+      "label": "Equipaggiamento Toussaint (TS)",
+      "path": "packs/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-dlc-ts-equipment",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-dlc-ts-alchemy",
+      "label": "Alchimia Toussaint (TS)",
+      "path": "packs/ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-dlc-ts-alchemy",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-dlc-ts-schematics",
+      "label": "Schemi Toussaint (TS)",
+      "path": "packs/ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-dlc-ts-schematics",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-dlc-ap-equipment",
+      "label": "Arnesi Professionista (AP)",
+      "path": "packs/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-dlc-ap-equipment",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-dlc-ap-alchemy",
+      "label": "Alchimia Professionista (AP)",
+      "path": "packs/ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-dlc-ap-alchemy",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-dlc-dp-equipment",
+      "label": "Protesi e Sedie (DP)",
+      "path": "packs/EQUIPAGGIAMENTO_E_TRASPORTI/Protesi/witcher-dlc-dp-equipment",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-dlc-np-professions",
+      "label": "Nuove Professioni (NP)",
+      "path": "packs/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-dlc-np-professions",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-dlc-sl-equipment",
+      "label": "Equipaggiamento Lumaca (SL)",
+      "path": "packs/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-dlc-sl-equipment",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-dlc-sl-schematics",
+      "label": "Schemi Lumaca (SL)",
+      "path": "packs/ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-dlc-sl-schematics",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-components-mutageni-dw",
+      "label": "Componenti e Mutageni (DW)",
+      "path": "packs/ALCHIMIA_E_ARTIGIANATO/Componenti/witcher-components-mutageni-dw",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-mutazioni-tc",
+      "label": "Mutazioni (TC)",
+      "path": "packs/ALCHIMIA_E_ARTIGIANATO/Mutageni/witcher-mutazioni-tc",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-magic-items",
+      "label": "Oggetti Magici (TC)",
+      "path": "packs/EQUIPAGGIAMENTO_E_TRASPORTI/Reliquie_e_Artefatti/witcher-magic-items",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-investigations",
+      "label": "Indagini (DW)",
+      "path": "packs/REGOLAMENTO_E_NARRATIVA/Investigazioni/witcher-investigations",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-lore-racconti",
+      "label": "Lore (Racconti)",
+      "path": "packs/REGOLAMENTO_E_NARRATIVA/Lore_e_Racconti/witcher-lore-racconti",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-lore-chaos",
+      "label": "Lore Chaos (TC)",
+      "path": "packs/REGOLAMENTO_E_NARRATIVA/Lore_e_Racconti/witcher-lore-chaos",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-necromanzia",
+      "label": "Necromanzia (TC)",
+      "path": "packs/MAGIA_E_MALEDIZIONI/Necromanzia/witcher-necromanzia",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    }
+  ],
+  "languages": [
+    {
+      "lang": "it",
+      "name": "Italiano",
+      "path": "languages/it.json"
+    },
+    {
+      "lang": "it-IT",
+      "name": "Italiano",
+      "path": "languages/it.json"
+    }
+  ],
+  "url": "https://github.com/Anim86/witcher-compendium",
+  "manifest": "https://raw.githubusercontent.com/Anim86/witcher-compendium/main/witcher-compendium/module.json",
+  "download": "https://github.com/Anim86/witcher-compendium/releases/download/v14.1.58/witcher-compendium-v14.1.58.zip"
+}

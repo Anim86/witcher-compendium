@@ -1,0 +1,194 @@
+{
+    "_id": "6472797374616e6e",
+    "name": "Drystan di Nazair",
+    "type": "character",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-characters/drystan_di_nazair.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 9,
+                "max": 9,
+                "unmodifiedMax": 9
+            },
+            "ref": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "dex": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "body": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "spd": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "emp": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "cra": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "will": {
+                "value": 9,
+                "max": 9,
+                "unmodifiedMax": 9
+            },
+            "luck": {
+                "value": null,
+                "max": null,
+                "unmodifiedMax": null
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 16
+            },
+            "belleArti": {
+                "value": 15
+            },
+            "carisma": {
+                "value": 20
+            },
+            "eleganza": {
+                "value": 20
+            },
+            "eludere": {
+                "value": 16
+            },
+            "etichetta": {
+                "value": 19
+            },
+            "inganno": {
+                "value": 16
+            },
+            "intessereFatture": {
+                "value": 16
+            },
+            "istruzione": {
+                "value": 16
+            },
+            "lanciareIncantesimi": {
+                "value": 17
+            },
+            "nascondersi": {
+                "value": 14
+            },
+            "officiareRituali": {
+                "value": 14
+            },
+            "persuasione": {
+                "value": 20
+            },
+            "resistereacoercizioni": {
+                "value": 17
+            },
+            "resistereallamagia": {
+                "value": 17
+            },
+            "scaltrezza": {
+                "value": 16
+            },
+            "scherma": {
+                "value": 14
+            },
+            "seduzione": {
+                "value": 18
+            },
+            "sensibilita": {
+                "value": 19
+            },
+            "artedelmago": {
+                "value": 10
+            },
+            "distillazione": {
+                "value": 4
+            },
+            "immutabile": {
+                "value": 6
+            },
+            "ingegneriaInversa": {
+                "value": 6
+            },
+            "intrigo": {
+                "value": 9
+            },
+            "magiaAmpliata": {
+                "value": 6
+            },
+            "malelingue": {
+                "value": 8
+            },
+            "mutare": {
+                "value": 0
+            },
+            "risorse": {
+                "value": 10
+            },
+            "sintonia": {
+                "value": 8
+            }
+        },
+        "derivedStats": {
+            "vigor": {
+                "value": 21,
+                "max": 21,
+                "unmodifiedMax": 21
+            },
+            "rec": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "resolve": {
+                "value": 35,
+                "max": 35,
+                "unmodifiedMax": 35
+            },
+            "stun": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "woundTreshold": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "hp": {
+                "value": 35,
+                "max": 35,
+                "unmodifiedMax": 35
+            },
+            "sta": {
+                "value": 35,
+                "max": 35,
+                "unmodifiedMax": 35
+            }
+        },
+        "details": {
+            "biography": "<p>Drystan di Nazair reagì alla perdita della sua proprietà con tutto il potere di un mago addestrato e tutta la maturità di un bebè. I cavalieri imperiali fecero un’orrenda fine. – Brandon di Oxenfurt</p><p>Drystan è un nobile minore di Nazair e un mago autodidatta che si è unito alla ribellione della Luna Crescente quasi per caso. Noto per essere un uomo affascinante e un po' fatuo, è estremamente geloso delle sue ricerche e della sua libertà. Sebbene partecipi alle feste della nobiltà sotto scarsi travestimenti, la sua capacità di manipolare le menti e le illusioni lo rende un alleato imprevedibile per i ribelli.</p>",
+            "sourcebook": "TC 161"
+        },
+        "description": "<p>Drystan di Nazair reagì alla perdita della sua proprietà con tutto il potere di un mago addestrato e tutta la maturità di un bebè. I cavalieri imperiali fecero un’orrenda fine. – Brandon di Oxenfurt</p><p>Drystan è un nobile minore di Nazair e un mago autodidatta che si è unito alla ribellione della Luna Crescente quasi per caso. Noto per essere un uomo affascinante e un po' fatuo, è estremamente geloso delle sue ricerche e della sua libertà.</p><h3>Equipaggiamento</h3><p>Bastone con Cristallo, Borsello, Mazzo di Gwent (Scoia'tael), Occorrente per Scrivere, Spada da Cavalleria Vrihedd, Farsetto Protettivo Halfling, Brache da Cavallerizzo, Pozione di Lacrime di Mogli, Veleno Nero (x2), Cavallo con Sella da Corsa, Amuleto con Gemma, Strumenti per le Belle Arti, Dado Truccato, Tasca Segreta, Gioielli.</p><h3>Incantesimi Preferiti</h3><p>Dissipazione, Fascino, Fattura Odiosa, Immobilizzare Lingua, Macchia, Manto, Nastro Invisibile, Piromanzia, Prigione di Talfryn, Teletrasporto, Vaso di Incantesimi.</p>",
+        "sourcebook": "TC 161"
+    },
+    "items": [],
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

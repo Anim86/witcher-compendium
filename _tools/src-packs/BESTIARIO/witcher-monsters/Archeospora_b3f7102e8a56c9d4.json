@@ -1,0 +1,129 @@
+{
+    "name": "Archeospora",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/archeospora.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "ref": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "dex": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "body": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "spd": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "emp": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "cra": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "will": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 0
+            },
+            "atletica": {
+                "value": 0
+            },
+            "coraggio": {
+                "value": 0
+            },
+            "intimidire": {
+                "value": 0
+            },
+            "nascondersi": {
+                "value": 0
+            },
+            "prestanza": {
+                "value": 0
+            },
+            "resistereAllaMagia": {
+                "value": 0
+            },
+            "rissa": {
+                "value": 0
+            },
+            "sopravvivenza": {
+                "value": 0
+            },
+            "tempra": {
+                "value": 0
+            }
+        },
+        "details": {
+            "biography": "<p>Ecco come funziona. Quando un tizio davvero cattivo sanguina sui petali di un fiore può capitare che que- sto diventi un’archeospora, uno di questi mostri enormi, che sputano acido, strisciano sottoterra e mangiano le persone. Quando succede non c’è modo di rimediare. Le archeospore sono come le erbacce ma... cioè, malvagie. Si diffondono come la gramigna, producendo altre mostruosità e uccidendo chiunque si avvicini. – Rodolf Kazmer</p>",
+            "threat": "Facile Arduo",
+            "reward": 30,
+            "monsterType": "CursedOne",
+            "difficulty": "MEDIUM"
+        },
+        "derivedStats": {
+            "rec": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "stun": {
+                "value": 0,
+                "max": 0
+            },
+            "woundTreshold": {
+                "value": 0,
+                "max": 0
+            },
+            "hp": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "sta": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "description": "<p>I luoghi dove si sono consumate tragedie come terribili omicidi o pogrom sono spesso infestati di archeospore. Si mimetizzano perfettamente tra il fogliame e sono avversari versatili, capaci di sputare veleno acido a distanza. Hanno fauci poderose e sono in grado di spostarsi sottoterra, lasciando dietro di sé baccelli che esplodono in nubi di spine e gas velenoso.</p>",
+        "sourcebook": "DW 46",
+        "monsterType": "CursedOne",
+        "difficulty": "MEDIUM",
+        "bounty": 30
+    },
+    "items": [],
+    "_id": "b3f7102e8a56c9d4",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

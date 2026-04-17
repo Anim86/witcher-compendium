@@ -1,0 +1,29 @@
+{
+    "_id": "5bd2aea8288b4fdb",
+    "name": "Palvese",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-armor/palvese.webp",
+    "system": {
+        "description": "<p>20 S Riparo Completo 1 4 500 Palvese Nilfgaardiano 25 R Riparo Completo 1 5 650</p>",
+        "weight": 0,
+        "cost": 0,
+        "components": [
+            "Palvese 19 5 ore Legname Indurito (Ã—10), Cuoio Indurito (Ã—3), Cerume di Orco (Ã—1), Acciaio Nero (Ã—1), Grasso di Estere (Ã—2) 378 750",
+            "Legname Indurito (Ã—10), Cuoio Indurito (Ã—3), Cerume di Orco (Ã—1), Acciaio Nero (Ã—1), Grasso di Estere (Ã—2), Olio Scurente (Ã—1), Ceneri (Ã—10), Acquaforte (Ã—2)"
+        ],
+        "difficulty": 19,
+        "time": "5 ore",
+        "sourcebook": "MB 82"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

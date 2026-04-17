@@ -1,0 +1,194 @@
+{
+    "_id": "616466616e656263",
+    "name": "Sile de Tancarville",
+    "type": "character",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-characters/sile_de_tancarville.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "ref": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "dex": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "body": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "spd": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "emp": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "cra": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "will": {
+                "value": 9,
+                "max": 9,
+                "unmodifiedMax": 9
+            },
+            "luck": {
+                "value": null,
+                "max": null,
+                "unmodifiedMax": null
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 19
+            },
+            "alchimia": {
+                "value": 17
+            },
+            "bestiario": {
+                "value": 20
+            },
+            "carisma": {
+                "value": 11
+            },
+            "deduzione": {
+                "value": 18
+            },
+            "eleganza": {
+                "value": 15
+            },
+            "eludere": {
+                "value": 14
+            },
+            "etichetta": {
+                "value": 18
+            },
+            "insegnamento": {
+                "value": 18
+            },
+            "intessereFatture": {
+                "value": 17
+            },
+            "istruzione": {
+                "value": 20
+            },
+            "lanciareIncantesimi": {
+                "value": 19
+            },
+            "nascondersi": {
+                "value": 12
+            },
+            "officiareRituali": {
+                "value": 19
+            },
+            "persuasione": {
+                "value": 13
+            },
+            "resistereacoercizioni": {
+                "value": 18
+            },
+            "resistereallamagia": {
+                "value": 19
+            },
+            "sensibilita": {
+                "value": 13
+            },
+            "tempra": {
+                "value": 13
+            },
+            "artedelmago": {
+                "value": 10
+            },
+            "distillazione": {
+                "value": 8
+            },
+            "immutabile": {
+                "value": 5
+            },
+            "ingegneriaInversa": {
+                "value": 8
+            },
+            "intrigo": {
+                "value": 8
+            },
+            "magiaAmpliata": {
+                "value": 7
+            },
+            "malelingue": {
+                "value": 8
+            },
+            "mutare": {
+                "value": 6
+            },
+            "risorse": {
+                "value": 8
+            },
+            "sintonia": {
+                "value": 10
+            }
+        },
+        "derivedStats": {
+            "vigor": {
+                "value": 25,
+                "max": 25,
+                "unmodifiedMax": 25
+            },
+            "rec": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "resolve": {
+                "value": 35,
+                "max": 35,
+                "unmodifiedMax": 35
+            },
+            "stun": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "woundTreshold": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "hp": {
+                "value": 35,
+                "max": 35,
+                "unmodifiedMax": 35
+            },
+            "sta": {
+                "value": 35,
+                "max": 35,
+                "unmodifiedMax": 35
+            }
+        },
+        "details": {
+            "biography": "<p>Sile de Tancarville è nota per due cose: far parte della Loggia delle Maghe ed essere un’eremita. – Brandon di Oxenfurt</p><p>Sile è una maga di Kovir, austera e dedita esclusivamente alla ricerca magica e alla politica d'oro. Nota per la sua partecipazione alla Loggia delle Maghe, è un'esperta nell'uccisione di mostri giganteschi tramite la magia, come dimostrato a Flotsam. La sua pragmatica freddezza e il suo disprezzo per le distrazioni umane la rendono un'alleata efficiente ma estremamente pericolosa.</p>",
+            "sourcebook": "TC 169"
+        },
+        "description": "<p>Sile de Tancarville è nota per due cose: far parte della Loggia delle Maghe ed essere un’eremita. – Brandon di Oxenfurt</p><p>Sile è una maga di Kovir, austera e dedita esclusivamente alla ricerca magica e alla politica d'oro. Nota per la sua partecipazione alla Loggia delle Maghe, è un'esperta nell'uccisione di mostri giganteschi tramite la magia, come dimostrato a Flotsam.</p><h3>Equipaggiamento</h3><p>Bastone con Cristallo, Farsetto Protettivo Halfling, Sacca, Amuleto con Gemma, Occorrente per Scrivere, Brache a Doppia Trama, Attrezzatura Alchemica, Borsello, Elisir Marciatore (x3), Fodero da Giarrettiera, Stiletto, Diario, Profumo, Colla Alchemica (x2), Abiti Eleganti, Boa di Volpe Argentata, Gioiello, Polvere Coagulante (x2), Inchiostro Invisibile, Kit per il Trucco.</p><h3>Incantesimi Preferiti</h3><p>Arieggiare, Comando Mentale, Dissipazione, Essenza di Pozione, L'Incubo, Manipolazione Mentale, Oniromanzia, Portale, Rituale della Magia, Teletrasporto, Teoria di Elgan.</p>",
+        "sourcebook": "TC 169"
+    },
+    "items": [],
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

@@ -1,0 +1,138 @@
+{
+    "name": "Leshen",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/leshen.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "ref": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "dex": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "body": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "spd": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "emp": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "cra": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "will": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 0
+            },
+            "atletica": {
+                "value": 0
+            },
+            "coraggio": {
+                "value": 0
+            },
+            "intessereFatture": {
+                "value": 0
+            },
+            "intimidire": {
+                "value": 0
+            },
+            "nascondersi": {
+                "value": 0
+            },
+            "prestanza": {
+                "value": 0
+            },
+            "resistereACoercizione": {
+                "value": 0
+            },
+            "resistereAllaMagia": {
+                "value": 0
+            },
+            "rissa": {
+                "value": 0
+            },
+            "sensibilità": {
+                "value": 0
+            },
+            "sopravvivenza": {
+                "value": 0
+            },
+            "tempra": {
+                "value": 0
+            }
+        },
+        "details": {
+            "biography": "<p>Ho visto un leshen solo una volta in vita mia. All’improvviso sento un rumore e proprio lì, appena oltre gli alberi, c’è questa enorme… cosa. La gente dice che i leshen sono le foreste che hanno preso vita. Odiano più di tutto i bracconieri, i taglialegna e i raccoglitori e se entri nel bosco di un leshen finisci impalato su una radice. – Rodolf Kazmer</p>",
+            "threat": "Difficile Arduo",
+            "reward": 1500,
+            "monsterType": "Relict",
+            "difficulty": "MEDIUM"
+        },
+        "derivedStats": {
+            "rec": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "stun": {
+                "value": 0,
+                "max": 0
+            },
+            "woundTreshold": {
+                "value": 0,
+                "max": 0
+            },
+            "hp": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "sta": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "description": "<p>I leshen dominano le foreste primordiali del Continente, piegando al proprio volere piante e animali grazie alla loro potente magia. In combattimento sono letali e ingannevoli, capaci di tramutarsi in fumo o di bloccare i nemici con le radici. I più antichi creano totem magici e legami con gli umani vicini che permettono loro di rinascere anche se distrutti.</p>",
+        "sourcebook": "DW 88",
+        "monsterType": "Relict",
+        "difficulty": "MEDIUM",
+        "bounty": 1500
+    },
+    "items": [],
+    "_id": "d25be16a30987c4f",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

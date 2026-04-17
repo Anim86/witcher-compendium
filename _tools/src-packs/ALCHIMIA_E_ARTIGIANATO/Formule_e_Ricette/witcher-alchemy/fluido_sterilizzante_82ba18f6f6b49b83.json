@@ -1,0 +1,23 @@
+{
+    "_id": "82ba18f6f6b49b83",
+    "name": "Fluido Sterilizzante",
+    "type": "component",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/fluido_sterilizzante.webp",
+    "system": {
+        "description": "<p>Liquido igienizzante per prevenire infezioni e accelerare il recupero.</p><p><b>Effetti:</b> Guarigione +2 punti, riduce tempo guarigione critici.</p><p><b>Durata:</b> Istantaneo</p><p><b>TossicitÃ :</b> 0%</p>",
+        "quantity": "1",
+        "weight": 0.1,
+        "cost": 22,
+        "sourcebook": "MB 89",
+        "type": "alchemical",
+        "rarity": "C",
+        "location": "",
+        "substanceType": ""
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

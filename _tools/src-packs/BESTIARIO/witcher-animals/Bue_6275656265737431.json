@@ -1,0 +1,191 @@
+{
+    "_id": "6275656265737431",
+    "name": "Bue",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-animals/bue.png",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "ref": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "dex": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "body": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "spd": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "emp": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "cra": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "will": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 3
+            },
+            "atletica": {
+                "value": 2
+            },
+            "coraggio": {
+                "value": 10
+            },
+            "eludere": {
+                "value": 7
+            },
+            "mischia": {
+                "value": 5
+            },
+            "nascondersi": {
+                "value": 1
+            },
+            "sopravvivenza": {
+                "value": 1
+            },
+            "tempra": {
+                "value": 6
+            }
+        },
+        "details": {
+            "biography": "<p>Il bue è un animale da soma e da lavoro essenziale per gli agricoltori del Continente. Sebbene calmo, può diventare estremamente pericoloso se spaventato o provocato.</p>",
+            "threat": "Bassa",
+            "reward": "—",
+            "monsterType": "Beast",
+            "difficulty": "EASY"
+        },
+        "derivedStats": {
+            "hp": {
+                "value": 50,
+                "max": 50,
+                "unmodifiedMax": 50
+            },
+            "sta": {
+                "value": 50,
+                "max": 50,
+                "unmodifiedMax": 50
+            },
+            "vigor": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "rec": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "stun": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "resolve": {
+                "value": 30,
+                "max": 30,
+                "unmodifiedMax": 30
+            },
+            "woundTreshold": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            }
+        },
+        "description": "<p>Il bue è un animale da soma e da lavoro essenziale per gli agricoltori del Continente. Sebbene calmo, può diventare estremamente pericoloso se spaventato o provocato.</p>",
+        "sourcebook": "MB 310",
+        "monsterType": "Beast",
+        "difficulty": "EASY"
+    },
+    "items": [
+        {
+            "name": "Incornata",
+            "type": "weapon",
+            "img": "icons/svg/sword.svg",
+            "system": {
+                "damage": "5d6",
+                "accuracy": 0,
+                "type": "P",
+                "effects": "Sanguinamento (50%)"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "name": "Zoccoli",
+            "type": "weapon",
+            "img": "icons/svg/sword.svg",
+            "system": {
+                "damage": "4d6",
+                "accuracy": 0,
+                "type": "C",
+                "effects": "N/A"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "name": "[Capacità] Carica",
+            "type": "note",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/Trait_Generico.webp",
+            "system": {
+                "description": "<p>Se un avversario si allontana di oltre 10 m, un bue può caricarlo, effettuando un poderoso attacco di incornata. Questo subisce una penalità di -4 ma infligge 8d6 e scaraventa indietro la vittima di 8m. Se colpisce un ostacolo, il bersaglio subisce danni da impatto.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "name": "[Capacità] Ferale",
+            "type": "note",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/Trait_Generico.webp",
+            "system": {
+                "description": "<p>Grazie ai suoi istinti un bue ha INT 7 ai fini delle prove di Accortezza e Sopravvivenza.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        }
+    ],
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

@@ -1,0 +1,149 @@
+<div class="monster-tab-content spells-tab-container">
+    {{!-- Focus / Magic Info Section --}}
+    <div class="magic-info-section">
+        <h3 class="section-title"><i class="fas fa-magic"></i> {{localize "WITCHER.Actor.focus.name"}}</h3>
+        <div class="magic-grid">
+            <div class="flex-row">
+                <div class="focus-group">
+                    <input class="focus" name="system.focus1.name" type="text" value="{{system.focus1.name}}"
+                        placeholder="{{localize "WITCHER.Actor.focus.first"}} {{localize "WITCHER.Actor.focus.name"}}" />
+                    <input class="focus-value" name="system.focus1.value" type="text" value="{{system.focus1.value}}"
+                        placeholder="0" />
+                </div>
+                <div class="focus-group">
+                    <input class="focus" name="system.focus2.name" type="text" value="{{system.focus2.name}}"
+                        placeholder="{{localize "WITCHER.Actor.focus.second"}} {{localize "WITCHER.Actor.focus.name"}}" />
+                    <input class="focus-value" name="system.focus2.value" type="text" value="{{system.focus2.value}}"
+                        placeholder="0" />
+                </div>
+            </div>
+            <div class="flex-row">
+                <div class="focus-group">
+                    <input class="focus" name="system.focus3.name" type="text" value="{{system.focus3.name}}"
+                        placeholder="{{localize "WITCHER.Actor.focus.third"}} {{localize "WITCHER.Actor.focus.name"}}" />
+                    <input class="focus-value" name="system.focus3.value" type="text" value="{{system.focus3.value}}"
+                        placeholder="0" />
+                </div>
+                <div class="focus-group">
+                    <input class="focus" name="system.focus4.name" type="text" value="{{system.focus4.name}}"
+                        placeholder="{{localize "WITCHER.Actor.focus.fourth"}} {{localize "WITCHER.Actor.focus.name"}}" />
+                    <input class="focus-value" name="system.focus4.value" type="text" value="{{system.focus4.value}}"
+                        placeholder="0" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{!-- Spells Categories --}}
+    <div class="spells-list">
+        {{!-- Novice --}}
+        <div class="spell-category" data-spelltype="noviceSpell">
+            <h3 class="category-header">{{localize "WITCHER.Spell.Spells"}} - {{localize "WITCHER.Spell.Novice"}}</h3>
+            <div class="spells-grid">
+                {{#each noviceSpells as |spell id|}}
+                <div class="spell-card item" data-item-id="{{spell._id}}">
+                    <div class="card-main">
+                        <img src="{{spell.img}}" class="item-img dragable" draggable="true" data-id="{{spell._id}}" />
+                        <div class="item-info">
+                            <span class="item-name spell-roll">{{spell.name}}</span>
+                            <span class="item-sta">Cost: {{spell.system.stamina}}</span>
+                        </div>
+                        <div class="card-actions">
+                            <a class="item-edit"><i class="fas fa-edit"></i></a>
+                            <a class="item-delete"><i class="fas fa-trash-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+
+        {{!-- Journeyman --}}
+        <div class="spell-category" data-spelltype="journeymanSpell">
+            <h3 class="category-header">{{localize "WITCHER.Spell.Spells"}} - {{localize "WITCHER.Spell.Journeyman"}}</h3>
+            <div class="spells-grid">
+                {{#each journeymanSpells as |spell id|}}
+                <div class="spell-card item" data-item-id="{{spell._id}}">
+                    <div class="card-main">
+                        <img src="{{spell.img}}" class="item-img dragable" draggable="true" data-id="{{spell._id}}" />
+                        <div class="item-info">
+                            <span class="item-name spell-roll">{{spell.name}}</span>
+                            <span class="item-sta">Cost: {{spell.system.stamina}}</span>
+                        </div>
+                        <div class="card-actions">
+                            <a class="item-edit"><i class="fas fa-edit"></i></a>
+                            <a class="item-delete"><i class="fas fa-trash-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+
+        {{!-- Master --}}
+        <div class="spell-category" data-spelltype="masterSpell">
+            <h3 class="category-header">{{localize "WITCHER.Spell.Spells"}} - {{localize "WITCHER.Spell.Master"}}</h3>
+            <div class="spells-grid">
+                {{#each masterSpells as |spell id|}}
+                <div class="spell-card item" data-item-id="{{spell._id}}">
+                    <div class="card-main">
+                        <img src="{{spell.img}}" class="item-img dragable" draggable="true" data-id="{{spell._id}}" />
+                        <div class="item-info">
+                            <span class="item-name spell-roll">{{spell.name}}</span>
+                            <span class="item-sta">Cost: {{spell.system.stamina}}</span>
+                        </div>
+                        <div class="card-actions">
+                            <a class="item-edit"><i class="fas fa-edit"></i></a>
+                            <a class="item-delete"><i class="fas fa-trash-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+
+        {{!-- Rituals --}}
+        <div class="spell-category" data-spelltype="ritual">
+            <h3 class="category-header">{{localize "WITCHER.Spell.Rituals"}}</h3>
+            <div class="spells-grid">
+                {{#each rituals as |ritual id|}}
+                <div class="spell-card item" data-item-id="{{ritual._id}}">
+                    <div class="card-main">
+                        <img src="{{ritual.img}}" class="item-img dragable" draggable="true" data-id="{{ritual._id}}" />
+                        <div class="item-info">
+                            <span class="item-name spell-roll">{{ritual.name}}</span>
+                            <span class="item-sta">Cost: {{ritual.system.stamina}}</span>
+                        </div>
+                        <div class="card-actions">
+                            <a class="item-edit"><i class="fas fa-edit"></i></a>
+                            <a class="item-delete"><i class="fas fa-trash-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+
+        {{!-- Hexes --}}
+        <div class="spell-category" data-spelltype="hex">
+            <h3 class="category-header">{{localize "WITCHER.Spell.Hexes"}}</h3>
+            <div class="spells-grid">
+                {{#each hexes as |hex id|}}
+                <div class="spell-card item" data-item-id="{{hex._id}}">
+                    <div class="card-main">
+                        <img src="{{hex.img}}" class="item-img dragable" draggable="true" data-id="{{hex._id}}" />
+                        <div class="item-info">
+                            <span class="item-name spell-roll">{{hex.name}}</span>
+                            <span class="item-sta">Cost: {{hex.system.stamina}}</span>
+                        </div>
+                        <div class="card-actions">
+                            <a class="item-edit"><i class="fas fa-edit"></i></a>
+                            <a class="item-delete"><i class="fas fa-trash-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</div>

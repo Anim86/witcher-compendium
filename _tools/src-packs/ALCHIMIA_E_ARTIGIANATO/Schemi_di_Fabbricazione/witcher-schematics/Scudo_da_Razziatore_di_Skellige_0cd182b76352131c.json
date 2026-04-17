@@ -1,0 +1,32 @@
+{
+    "_id": "0cd182b76352131c",
+    "name": "Scudo da Razziatore di Skellige",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-schematics/Scudo_da_Razziatore_di_Skellige.webp",
+    "system": {
+        "description": "<p>Schema per la fabbricazione di: <b>Scudo da Razziatore di Skellige</b>.</p><p><b>Componenti richiesti:</b> Legname Indurito (Ã—5), Acciaio Nero (Ã—1), Ossa di Bestia (Ã—5), Cuoio (Ã—1), Cerume di Orco (Ã—1)</p><p><b>DifficoltÃ  Manifattura:</b> CD 18</p><p><b>Tempo:</b> 5 ore</p>",
+        "weight": 0,
+        "cost": 0,
+        "components": [
+            "Legname Indurito (Ã—5)",
+            "Acciaio Nero (Ã—1)",
+            "Ossa di Bestia (Ã—5)",
+            "Cuoio (Ã—1)",
+            "Cerume di Orco (Ã—1)"
+        ],
+        "difficulty": 18,
+        "time": "5 ore",
+        "sourcebook": "MB 137"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

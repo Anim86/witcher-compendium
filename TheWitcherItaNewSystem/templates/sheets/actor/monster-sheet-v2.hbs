@@ -1,0 +1,33 @@
+{{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/monster/header.hbs"}}
+{{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/monster/sidebar.hbs"}}
+{{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/monster/stats.hbs"}}
+
+<nav class="sheet-tabs tabs" data-group="primary" data-part="tabs">
+    {{#each tabs as |tab|}}
+    <a class="item {{tab.cssClass}}" data-tab="{{tab.id}}" data-group="{{tab.group}}">
+        {{localize tab.label}}
+    </a>
+    {{/each}}
+</nav>
+
+<div class="monster-tabs-content">
+    <section class="tab {{tab.skills.cssClass}}" data-tab="skills" data-group="primary" data-part="skills">
+        {{> "systems/TheWitcherItaNewSystem/templates/partials/monster/monster-skill-tab.hbs"}}
+    </section>
+
+    <section class="tab {{tab.inventory.cssClass}}" data-tab="inventory" data-group="primary" data-part="inventory">
+        {{> "systems/TheWitcherItaNewSystem/templates/partials/monster/monster-inventory-tab.hbs"}}
+    </section>
+
+    <section class="tab {{tab.details.cssClass}}" data-tab="details" data-group="primary" data-part="details">
+        {{> "systems/TheWitcherItaNewSystem/templates/partials/monster/monster-details-tab.hbs"}}
+    </section>
+
+    <section class="tab {{tab.spells.cssClass}}" data-tab="spells" data-group="primary" data-part="spells">
+        {{> "systems/TheWitcherItaNewSystem/templates/partials/monster/monster-spell-tab.hbs"}}
+    </section>
+
+    <section class="tab {{tab.effects.cssClass}}" data-tab="effects" data-group="primary" data-part="effects">
+        {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/tab-effects.hbs"}}
+    </section>
+</div>

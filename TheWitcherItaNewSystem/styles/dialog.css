@@ -1,0 +1,144 @@
+/* Verbal Combat Dialog Styling - Compact Version */
+
+:root {
+    --w-teal-light: #2a8aaf;
+    --w-teal-dim: rgba(42, 138, 175, 0.4);
+    --w-gold: #c9a84c;
+    --w-gold-dim: rgba(201, 168, 76, 0.2);
+    --w-bg-dark: #121212;
+}
+
+/* Base Window Overrides */
+.verbal-combat-dialog.window-app,
+.verbal-combat-dialog.window-app .window-content,
+.verbal-combat-dialog form {
+    background: var(--w-bg-dark) !important;
+    background-color: var(--w-bg-dark) !important;
+    color: #e8e0d4 !important;
+}
+
+.verbal-combat-dialog.window-app {
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.9) !important;
+}
+
+/* Compact layout */
+.verbal-combat-dialog .window-content,
+.verbal-combat-dialog.verbal-combat-list,
+form.verbal-combat-dialog {
+    padding: 8px 15px !important;
+}
+
+/* Headers - More compact and fixed position */
+.verbal-combat-dialog h1 {
+    font-family: "Thewitcher", serif !important;
+    color: var(--w-gold) !important;
+    text-align: center !important;
+    border-bottom: 2px solid var(--w-gold) !important;
+    margin: 5px 0 10px 0 !important; /* Reduced top margin */
+    padding: 0 0 5px 0 !important;
+    text-transform: uppercase !important;
+    font-size: 1.1rem !important; /* Smaller size */
+    line-height: 1 !important;
+}
+
+.verbal-combat-dialog h2 {
+    font-family: "Thewitcher", serif !important;
+    color: var(--w-teal-light) !important;
+    font-size: 1rem !important;
+    margin-top: 12px !important; /* More compact */
+    margin-bottom: 5px !important;
+    border-bottom: 1px solid var(--w-teal-dim) !important;
+    padding-bottom: 2px !important;
+    text-transform: uppercase !important;
+}
+
+/* Radio buttons container - Compact height */
+.verbal-combat-dialog .verbal-option {
+    display: flex !important;
+    align-items: center !important;
+    margin-bottom: 2px !important; /* Minimal spacing */
+}
+
+/* Custom radio */
+.verbal-combat-dialog .verbal-option input[type="radio"] {
+    display: none !important;
+}
+
+.verbal-combat-dialog .verbal-option label {
+    display: flex !important;
+    align-items: center !important;
+    cursor: pointer !important;
+    padding: 3px 8px !important; /* Compact padding */
+    border-radius: 4px !important;
+    width: 100% !important;
+    font-size: 13.5px !important;
+    color: #bbb !important;
+    margin: 0 !important;
+}
+
+.verbal-combat-dialog .verbal-option label::before {
+    content: '' !important;
+    display: inline-block !important;
+    width: 14px !important; /* Slightly smaller circles */
+    height: 14px !important;
+    border: 1.5px solid var(--w-teal-light) !important;
+    border-radius: 50% !important;
+    margin-right: 10px !important;
+    background: rgba(0, 0, 0, 0.4) !important;
+    flex-shrink: 0 !important;
+}
+
+.verbal-combat-dialog .verbal-option:hover label {
+    background: rgba(255, 255, 255, 0.05) !important;
+}
+
+/* Checked state */
+.verbal-combat-dialog .verbal-option input[type="radio"]:checked + label {
+    color: var(--w-gold) !important;
+    font-weight: bold !important;
+}
+
+.verbal-combat-dialog .verbal-option input[type="radio"]:checked + label::before {
+    border-color: var(--w-gold) !important;
+    background: radial-gradient(circle, var(--w-gold) 45%, transparent 55%) !important;
+}
+
+/* Custom Modifier Input - More compact */
+.verbal-combat-dialog .custom-mod-container {
+    margin-top: 15px !important;
+    padding: 8px 12px !important;
+    background: rgba(255, 255, 255, 0.02) !important;
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    border-radius: 4px !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+
+.verbal-combat-dialog .custom-mod-container label {
+    color: var(--w-gold) !important;
+    font-weight: bold !important;
+    font-size: 0.9rem !important;
+}
+
+.verbal-combat-dialog .custom-mod-container input {
+    width: 45px !important;
+    height: 24px !important;
+    background: rgba(0,0,0,0.5) !important;
+    border: 1px solid var(--w-teal-light) !important;
+    color: white !important;
+    text-align: center !important;
+}
+
+/* Footer buttons - Compact */
+.verbal-combat-dialog footer.buttons {
+    margin-top: 10px !important;
+    padding: 8px 0 !important;
+    gap: 10px !important;
+}
+
+.verbal-combat-dialog footer.buttons button {
+    height: 32px !important; /* More compact buttons */
+    font-size: 1rem !important;
+}

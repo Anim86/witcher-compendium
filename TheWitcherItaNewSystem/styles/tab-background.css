@@ -1,0 +1,250 @@
+/* ── Editor box ── */
+.editor {
+    border-radius: 7px;
+    background: light-dark(rgba(28,104,136,0.06), rgba(14,50,70,0.45));
+    border: 1px solid light-dark(rgba(28,104,136,0.18), rgba(44,136,175,0.22));
+    height: 250px;
+    padding: 6px;
+}
+
+.tox.tox-tinymce {
+    min-height: 200px;
+    min-width: 200px;
+}
+
+/* ── Background tab grids ── */
+.life-events,
+.character-notes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+/* ── Section headers ── */
+.life-events-header,
+.notes-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 10px;
+    border-radius: 7px;
+    background: light-dark(rgba(28,104,136,0.09), rgba(14,50,70,0.5));
+    border: 1px solid light-dark(rgba(28,104,136,0.2), rgba(44,136,175,0.22));
+    margin-top: 18px;
+    margin-bottom: 6px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+
+    span { font-size: 20px; color: light-dark(rgba(28,104,136,0.8), rgba(44,136,175,0.9)); }
+}
+
+.life-events-header > h2,
+.notes-header > h2 {
+    margin: 0;
+    border-bottom: none;
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    opacity: 0.85;
+}
+
+/* ── Event cards ── */
+.life-events-card {
+    border-radius: 7px;
+    background: light-dark(rgba(255,255,255,0.45), rgba(14,26,36,0.5));
+    border: 1px solid light-dark(rgba(28,104,136,0.18), rgba(44,136,175,0.2));
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.life-events-card:hover {
+    border-color: light-dark(rgba(28,104,136,0.35), rgba(44,136,175,0.38));
+    box-shadow: 0 2px 10px rgba(0,0,0,0.18);
+}
+
+/* ── Card header ── */
+.life-events-card-header {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    padding: 7px 5px;
+    align-items: center;
+
+    span { font-size: 16px; color: light-dark(rgba(28,104,136,0.8), rgba(44,136,175,0.9)); }
+}
+
+.padding { padding: 5px 10px; }
+
+.life-events-controls { justify-self: center; }
+
+.life-events-decades {
+    display: flex;
+    text-align: end;
+}
+
+.add-item { margin-right: 5px; }
+
+/* ── Note box ── */
+.bg-note {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-radius: 7px;
+    padding: 6px;
+    background: light-dark(rgba(255,255,255,0.45), rgba(14,26,36,0.45));
+    border: 1px solid light-dark(rgba(28,104,136,0.18), rgba(44,136,175,0.2));
+    transition: border-color 0.2s;
+}
+
+.bg-note:hover {
+    border-color: light-dark(rgba(28,104,136,0.35), rgba(44,136,175,0.38));
+}
+
+.note-header { display: flex; flex-direction: row; }
+.note-header > a { display: none; }
+.note-header:hover > a {
+    display: inline-block;
+    text-align: center;
+    text-shadow: none;
+    color: #c03030;
+    transition: color 0.2s;
+}
+.note-header:hover > a:hover { color: #e04040; }
+
+/* ── Item delete ── */
+.item-delete { margin: 5px; width: 15px; }
+
+.modifier-display { min-width: 100px; }
+
+/* ── Background info layout ── */
+.background-info {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.general-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 5px;
+}
+
+.general-homeland,
+.general-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+    min-height: 90px;
+    background: rgba(26, 46, 56, 0.4);
+    border: 1px solid rgba(44, 136, 175, 0.25);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.2s ease;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.general-homeland:hover,
+.general-info:hover {
+    border-color: var(--w-teal-light);
+    background: rgba(26, 46, 56, 0.6);
+    transform: translateY(-2px);
+}
+
+.general-homeland::before,
+.general-info::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, var(--w-teal-light), transparent);
+    opacity: 0.3;
+}
+
+.general-homeland > label,
+.general-info > label,
+.general-homeland,
+.general-info {
+    font-size: 13px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--w-teal-light);
+}
+
+.homeland-select { 
+    display: flex; 
+    gap: 5px; 
+    width: 100%;
+}
+
+/* ── Styled Selects and Inputs ── */
+select.details,
+.general-section select,
+input.details {
+    background: rgba(0, 0, 0, 0.5) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 6px !important;
+    color: #fff !important;
+    padding: 8px 12px !important;
+    width: 100% !important;
+    cursor: pointer;
+    font-size: 13px;
+    transition: all 0.2s ease;
+}
+
+select.details:hover,
+.general-section select:hover,
+input.details:hover {
+    border-color: var(--w-teal-light) !important;
+    box-shadow: 0 0 10px rgba(44, 136, 175, 0.2) !important;
+}
+
+option {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 10px;
+}
+
+.background-description { overflow-y: auto; }
+
+/* ── Input fields ── */
+textarea.life-events-details,
+textarea.inline-edit {
+    resize: vertical;
+    height: auto;
+}
+
+input.life-events-decades {
+    width: 4ch;
+    text-align: center;
+}
+
+input.details,
+select.details,
+input.life-events-details,
+textarea.life-events-details,
+input.life-events-decades,
+textarea.inline-edit,
+input.inline-edit {
+    border: none;
+    border-bottom: 1px solid light-dark(rgba(28,104,136,0.15), rgba(44,136,175,0.15));
+    background: transparent;
+    transition: border-color 0.18s ease, box-shadow 0.18s ease;
+    flex-grow: 1;
+}
+
+input.details:hover,
+select.details:hover,
+input.life-events-details:hover,
+textarea.life-events-details:hover,
+input.life-events-decades:hover,
+textarea.inline-edit:hover,
+input.inline-edit:hover {
+    border-color: light-dark(rgba(28,104,136,0.45), rgba(44,136,175,0.55));
+    box-shadow: 0 2px 0 0 light-dark(rgba(28,104,136,0.3), rgba(44,136,175,0.35));
+}

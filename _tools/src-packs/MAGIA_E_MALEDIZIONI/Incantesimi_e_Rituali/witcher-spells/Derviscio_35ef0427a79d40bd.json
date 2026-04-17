@@ -1,0 +1,61 @@
+{
+    "_id": "35ef0427a79d40bd",
+    "name": "Derviscio",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells/Derviscio.webp",
+    "system": {
+        "description": "<p>Creato da un misterioso mago di Ofir, Derviscio consente all’incantatore di creare intorno a sé un tornado di 2m. Il tornado devia gli attacchi a distanza come per Gwynt Troelli e agisce come l’incantesimo Zefiro contro ogni bersaglio entro 2m dal mago. L’incantatore all’in- terno del tornado non può correre, né effettuare attacchi verso l’esterno ma, se si muove entro 2m da un bersaglio questo subisce gli effetti dell’incantesimo Zefiro.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "MB 103",
+        "class": "Mage",
+        "level": "master",
+        "source": "air",
+        "stamina": 22,
+        "staminaIsVar": false,
+        "effect": "Creato da un misterioso mago di Ofir, Derviscio consente all’incantatore di creare intorno a sé un tornado di 2m. Il tornado devia gli attacchi a distanza come per Gwynt Troelli e agisce come l’incantesimo Zefiro contro ogni bersaglio entro 2m dal mago. L’incantatore all’in- terno del tornado non può correre, né effettuare attacchi verso l’esterno ma, se si muove entro 2m da un bersaglio questo subisce gli effetti dell’incantesimo Zefiro.",
+        "range": "Raggio di 2m",
+        "duration": "Attiva (6 RES)",
+        "defence": "Schivare",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

@@ -1,0 +1,55 @@
+{
+    "_id": "25b33d15fa1d4c20",
+    "name": "Armatura da Alabardiere Redaniana",
+    "type": "armor",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-armor/Armatura_da_Alabardiere_Redaniana.webp",
+    "system": {
+        "description": "<p>Strano a dirsi, gli alabardieri redaniani non portano trop- pa armatura addosso. Cuoio semplice e gambesoni di stoffa al ginocchio, un giaco di maglia, una gorgiera e spallacci. Penso che un’armatura pesante non ti serva quando stai dalla parte giusta di un’alabarda. Sanno assorbire un fen- dente e lasciano la mobilitÃ  di un gambesone.</p>",
+        "cost": 400,
+        "reliability": {
+            "value": 0,
+            "max": 0
+        },
+        "sourcebook": "MB 81",
+        "type": "Medium",
+        "location": "Torso",
+        "encumb": 1,
+        "enhancements": 0,
+        "headStopping": 0,
+        "headMaxStopping": 0,
+        "torsoStopping": 14,
+        "torsoMaxStopping": 14,
+        "leftArmStopping": 14,
+        "leftArmMaxStopping": 14,
+        "rightArmStopping": 14,
+        "rightArmMaxStopping": 14,
+        "leftLegStopping": 0,
+        "leftLegMaxStopping": 0,
+        "rightLegStopping": 0,
+        "rightLegMaxStopping": 0,
+        "bludgeoning": false,
+        "slashing": false,
+        "piercing": false,
+        "elemental": false,
+        "fire": false,
+        "poison": false,
+        "bleeding": false,
+        "weight": 8.5,
+        "rarity": "Scarsa",
+        "stoppingPower": 14,
+        "protection": {},
+        "encumbranceMod": -1,
+        "unmodifiedMax": {}
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

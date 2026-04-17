@@ -1,0 +1,28 @@
+{
+    "_id": "138462120a014e30",
+    "name": "Arco da Viaggio Elfico",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-schematics/Arco_da_Viaggio_Elfico.webp",
+    "system": {
+        "description": "<p>P 1 R 4d6 10 2 200m G 1 1 575 Zefhar Elfico P 2 R 6d6 10 2 350m Trapassare Migliorato N/A 2 2,5 1100 Balestre Balestrino Gnomesco P 3 R 2d6 10 1 100m Ricarica Lenta P 1 1 425 Balestra Pesante Nanica P 3 R 5d6 15 2 300m Ricarica Lenta N/A 2 3,5 850</p>",
+        "weight": 0,
+        "cost": 862,
+        "components": [
+            "Legname Indurito (Ã—4), Filo (Ã—4), Cera (Ã—4), Quintessenza (Ã—1), Cuoio (Ã—1), Piume (Ã—3), Ossa di Bestia (Ã—2), Acciaio Nero (Ã—2), Grasso di Estere (Ã—5), Acquaforte (Ã—3)"
+        ],
+        "difficulty": 22,
+        "time": "11 ore",
+        "sourcebook": "MB 85"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

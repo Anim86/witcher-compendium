@@ -1,0 +1,213 @@
+<form class="{{cssClass}} actor-sheet monster" autocomplete="off">
+
+    {{!-- Monster Header --}}
+    <header class="monster-sheet-left-column">
+        <h1 class="charname">
+            <input name="name" type="text" value="{{actor.name}}" placeholder="Name" />
+        </h1>
+    </header>
+
+    <div class="monster-main">
+        {{!-- Left Sidebar: Primary Stats --}}
+        <aside class="monster-left-sidebar">
+            <div class="monster-stat-title">
+                <span>{{localize 'WITCHER.Actor.StatTitle.LableLeft'}}</span>
+                <span>{{localize 'WITCHER.Actor.StatTitle.ModMax'}}</span>
+            </div>
+
+            {{#each system.stats as |stat id|}}
+            <div class="monster-stat-display">
+                <a class="monster-stat-button stat-roll" data-stat="{{id}}">
+                    {{localize stat.label}}
+                </a>
+                <input type="text" name="system.stats.{{id}}.value" value="{{stat.value}}" data-dtype="Number" />
+                <div class="stat-modifier-display">
+                    <input class="stat-max" type="text" name="system.stats.{{id}}.max" value="{{stat.max}}" data-dtype="Number" />
+                </div>
+                <a class="stat-config" data-stat="{{id}}" title="Config"><i class="fas fa-chevron-right"></i></a>
+            </div>
+            {{/each}}
+
+             {{!-- Toxicity (Special for some monsters) --}}
+            <div class="monster-stat-display toxicity-row">
+                <a class="monster-stat-button">{{localize "WITCHER.Actor.Stat.Toxicity"}}</a>
+                <input type="text" name="system.stats.toxicity.value" value="{{system.stats.toxicity.value}}" data-dtype="Number" />
+                <div class="stat-modifier-display">
+                    <input class="stat-max" type="text" name="system.stats.toxicity.max" value="{{system.stats.toxicity.max}}" data-dtype="Number" />
+                </div>
+            </div>
+
+            <hr>
+
+            {{!-- Secondary Stats & derived values --}}
+            <div class="monster-derived-section">
+                <div class="monster-derived-stat">
+                    <label>{{localize "WITCHER.Actor.Shield"}}</label>
+                    <div class="flex-center">
+                        <input name="system.derived.shield.value" type="text" value="{{system.derived.shield.value}}" /> /
+                        <span>{{system.derived.shield.max}}</span>
+                    </div>
+                </div>
+                <div class="monster-derived-stat">
+                    <label>{{localize "WITCHER.Actor.DerStat.Focus"}}</label>
+                    <div class="flex-center">
+                        <input name="system.derived.focus.value" type="text" value="{{system.derived.focus.value}}" /> /
+                        <span>{{system.derived.focus.max}}</span>
+                    </div>
+                </div>
+                <div class="monster-derived-stat">
+                    <label>{{localize "WITCHER.Actor.DerStat.Stun"}}</label>
+                    <span>{{system.derived.stun.value}}</span>
+                </div>
+                <div class="monster-derived-stat">
+                    <label>{{localize "WITCHER.Actor.DerStat.Run"}}</label>
+                    <span>{{system.derived.run.value}}</span>
+                </div>
+                 <div class="monster-derived-stat">
+                    <label>{{localize "WITCHER.Actor.DerStat.Leap"}}</label>
+                    <span>{{system.derived.leap.value}}</span>
+                </div>
+                <div class="monster-derived-stat">
+                    <label>{{localize "WITCHER.Actor.DerStat.Rec"}}</label>
+                    <span>{{system.derived.hprecu.value}}</span>
+                </div>
+            </div>
+        </aside>
+
+        {{!-- Center Column: Metadata & Image --}}
+        <section class="monster-header-center">
+            <div class="monster-center-top">
+                <div class="monster-type">
+                    <label>{{localize "WITCHER.Actor.Monster.Type"}}</label>
+                    <select name="system.details.monsterType">
+                        {{selectOptions config.MonsterTypes selected=system.details.monsterType localize=true}}
+                    </select>
+                </div>
+                <div class="monster-difficulty">
+                    <label>{{localize "WITCHER.Actor.Monster.Difficulty"}}</label>
+                    <select name="system.details.difficulty">
+                        {{selectOptions config.monsterDifficulty selected=system.details.difficulty localize=true}}
+                    </select>
+                </div>
+                <div class="monster-complexity">
+                    <label>{{localize "WITCHER.Actor.Monster.Complexity"}}</label>
+                    <select name="system.details.complexity">
+                        {{selectOptions config.monsterComplexity selected=system.details.complexity localize=true}}
+                    </select>
+                </div>
+                <div class="monster-vulnerability">
+                    <label>{{localize "WITCHER.Actor.Monster.Vulnerability"}}</label>
+                    <input type="text" name="system.details.vulnerability" value="{{system.details.vulnerability}}" />
+                </div>
+                <div class="monster-bounty">
+                    <label>{{localize "WITCHER.Actor.Monster.Bounty"}}</label>
+                    <input name="system.details.bounty" type="text" value="{{system.details.bounty}}" />
+                </div>
+                <div class="monster-size">
+                    <label>{{localize "WITCHER.Actor.Monster.Size"}}</label>
+                    <input name="system.details.size" type="text" value="{{system.details.size}}" />
+                </div>
+                <div class="monster-threat">
+                    <a class="threat-config"><i class="fas fa-cog"></i></a>
+                </div>
+            </div>
+
+            <div class="img-view">
+                <img class="monster-img" src="{{actorImg}}" title="{{actor.name}}" />
+                
+                {{!-- Category Overlay Icon --}}
+                <img class="cat-img" src="systems/TheWitcherItaNewSystem/assets/images/Monsters/{{system.details.monsterType}}.png" />
+
+                <div class="monster-info">
+                    <table>
+                        <tr>
+                            <td>{{localize "WITCHER.Actor.Monster.Height"}}</td>
+                            <td><input name="system.details.height" type="text" value="{{system.details.height}}" /></td>
+                            <td>{{localize "WITCHER.Actor.Monster.Weight"}}</td>
+                            <td><input name="system.details.weight" type="text" value="{{system.details.weight}}" /></td>
+                        </tr>
+                        <tr>
+                            <td>{{localize "WITCHER.Actor.Monster.Environment"}}</td>
+                            <td colspan="3"><input name="system.details.environment" type="text" value="{{system.details.environment}}" /></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        {{!-- Right Sidebar: Resources, Actions & Tabs --}}
+        <section class="monster-right-sidebar">
+            <div class="monster-right-top">
+                <div class="monster-initiative-row">
+                     <a class="button-roll init-roll">{{localize "WITCHER.Actor.Initiative"}}</a>
+                     <a class="button-roll death-roll">{{localize "WITCHER.Actor.SavingThrow"}}</a>
+                </div>
+                <div class="monster-button-grid">
+                    <a class="button-roll crit-roll">{{localize "WITCHER.Actor.Crit/Fumble"}}</a>
+                    <a class="button-roll heal-button">{{localize "WITCHER.Actor.Recovery"}}</a>
+                </div>
+
+                <div class="monster-right-attributes">
+                    <div class="right-element hp-element" title="{{localize 'WITCHER.Actor.Hp'}}">
+                        <i class="fa-solid fa-heart right-icon"></i>
+                        <input class="right-value" name="system.derived.hp.value" type="text" value="{{system.derived.hp.value}}" />
+                    </div>
+                    
+                    <div class="right-element sta-element" title="{{localize 'WITCHER.Actor.Stamina'}}">
+                        <i class="fa-solid fa-bolt right-icon"></i>
+                        <input class="right-value" name="system.derived.sta.value" type="text" value="{{system.derived.sta.value}}" />
+                    </div>
+
+                    <div class="death-section">
+                        <div class="death-icons">
+                            {{#each system.deathStates}}
+                                <i class="fas fa-skull {{#if this}}death{{/if}}"></i>
+                            {{/each}}
+                        </div>
+                        <div class="flex-row">
+                             <a class="death-minus"><i class="fas fa-minus"></i></a>
+                             <a class="death-plus"><i class="fas fa-plus"></i></a>
+                        </div>
+                    </div>
+
+                    {{!-- Resolve/Resolve --}}
+                    <div class="right-element res-element" title="{{localize 'WITCHER.Actor.Resolve'}}">
+                         <input class="right-value" name="system.derived.res.value" type="text" value="{{system.derived.res.value}}" />
+                    </div>
+                </div>
+            </div>
+
+            {{!-- Navigation Tabs --}}
+            <nav class="sheet-tabs tabs" data-group="primary">
+                <a class="item active" data-tab="skills">{{localize "WITCHER.Actor.Tab.Skills"}}</a>
+                <a class="item" data-tab="attack">{{localize "WITCHER.Actor.Tab.Att/Loot"}}</a>
+                <a class="item" data-tab="details">{{localize "WITCHER.Actor.Tab.Details"}}</a>
+                <a class="item" data-tab="spells">{{localize "WITCHER.Actor.Tab.Spells"}}</a>
+                <a class="item" data-tab="effects">{{localize "WITCHER.Actor.Tab.Effects"}}</a>
+            </nav>
+
+            {{!-- Tab content containers --}}
+            <section class="monster-tabs-content">
+                <div class="tab active" data-group="primary" data-tab="skills">
+                    {{> "systems/TheWitcherItaNewSystem/templates/partials/monster/monster-skill-tab.hbs"}}
+                </div>
+
+                <div class="tab" data-group="primary" data-tab="attack">
+                    {{> "systems/TheWitcherItaNewSystem/templates/partials/monster/monster-inventory-tab.hbs"}}
+                </div>
+
+                <div class="tab" data-group="primary" data-tab="details">
+                    {{> "systems/TheWitcherItaNewSystem/templates/partials/monster/monster-details-tab.hbs"}}
+                </div>
+
+                <div class="tab" data-group="primary" data-tab="spells">
+                    {{> "systems/TheWitcherItaNewSystem/templates/partials/monster/monster-spell-tab.hbs"}}
+                </div>
+
+                <div class="tab" data-group="primary" data-tab="effects">
+                    {{> "systems/TheWitcherItaNewSystem/templates/partials/effect-part.hbs"}}
+                </div>
+            </section>
+        </section>
+    </div>
+</form>

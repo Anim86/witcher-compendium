@@ -1,0 +1,30 @@
+{
+    "_id": "72d412e20c59fda5",
+    "name": "Resistere a Coercizione",
+    "type": "skill",
+    "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/sociale.webp",
+    "system": {
+        "attribute": "will",
+        "description": "<p>Resistere alla persuasione, alla seduzione e a influenze sociali simili. Permette di restare fermi nelle proprie decisioni nonostante le argomentazioni altrui.</p>",
+        "sourcebook": "MB 58",
+        "value": 0,
+        "label": "",
+        "isOpened": false,
+        "modifiers": [],
+        "activeEffectModifiers": 0,
+        "isProfession": false,
+        "isPickup": false,
+        "isLearned": false
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

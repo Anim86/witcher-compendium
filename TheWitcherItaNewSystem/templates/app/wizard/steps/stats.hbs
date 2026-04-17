@@ -1,0 +1,85 @@
+<div class="wizard-step step-stats">
+    <div class="step-header">
+        <h2>{{localize "WITCHER.Wizard.Step.Stats.Title"}}</h2>
+        <p>{{localize "WITCHER.Wizard.Step.Stats.Description"}}</p>
+    </div>
+
+    <div class="stats-outer-container">
+        <!-- Thematic Points Reservoir -->
+        <div class="points-reservoir {{#if (lt pointsRemaining 0)}}overbudget{{/if}}">
+            <div class="points-icon"><i class="fa-solid fa-droplet"></i></div>
+            <div class="points-info">
+                <span class="label">{{localize "WITCHER.Wizard.Stats.Points"}} {{localize "WITCHER.Wizard.Stats.Remaining"}}</span>
+                <span class="value">{{pointsRemaining}}</span>
+            </div>
+        </div>
+
+        <div class="stats-grid">
+            {{#each stats}}
+            <div class="stat-vial-row" data-stat="{{@key}}">
+                <div class="stat-identity">
+                    <span class="stat-label">{{localize label}}</span>
+                    <span class="stat-short">{{localize (concat "WITCHER.Actor.Stat." (toUpper @key))}}</span>
+                </div>
+                
+                <div class="stat-vial-container">
+                    <div class="vial-frame">
+                        <div class="vial-fill" style="width: {{multiply value 10}}%"></div>
+                        <div class="vial-glow"></div>
+                    </div>
+                </div>
+
+                <div class="stat-controls">
+                    <button type="button" class="ctrl-btn minus" data-action="adjustStat" data-stat="{{@key}}" data-delta="-1">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <input type="number" 
+                           class="stat-input"
+                           data-action="adjustStat" 
+                           data-stat="{{@key}}" 
+                           name="stats.{{@key}}" 
+                           value="{{value}}" 
+                           readonly>
+                    <button type="button" class="ctrl-btn plus" data-action="adjustStat" data-stat="{{@key}}" data-delta="1">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+
+                <div class="stat-info-tip" title="{{localize (concat 'WITCHER.Actor.Stat.Desc.' @key)}}">
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+
+        <div class="derived-stats-preview">
+            <h3>{{localize "WITCHER.Wizard.Stats.DerivedPreview"}}</h3>
+            <div class="derived-pills">
+                <div class="derived-pill">
+                    <span class="label">{{localize "WITCHER.Actor.DerStat.HP"}}</span>
+                    <span class="value">{{derived.hp}}</span>
+                </div>
+                <div class="derived-pill">
+                    <span class="label">{{localize "WITCHER.Actor.DerStat.Sta"}}</span>
+                    <span class="value">{{derived.sta}}</span>
+                </div>
+                <div class="derived-pill">
+                    <span class="label">{{localize "WITCHER.Actor.DerStat.Rec"}}</span>
+                    <span class="value">{{derived.rec}}</span>
+                </div>
+                <div class="derived-pill">
+                    <span class="label">{{localize "WITCHER.Actor.DerStat.Stun"}}</span>
+                    <span class="value">{{derived.stun}}</span>
+                </div>
+                <div class="derived-pill">
+                    <span class="label">{{localize "WITCHER.Actor.DerStat.Run"}}</span>
+                    <span class="value">{{derived.run}}m</span>
+                </div>
+                <div class="derived-pill">
+                    <span class="label">{{localize "WITCHER.Actor.DerStat.Leap"}}</span>
+                    <span class="value">{{derived.leap}}m</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

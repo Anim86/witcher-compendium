@@ -1,0 +1,99 @@
+<div class="monster-tab-content inventory-container">
+    {{!-- Weapons Section --}}
+    <div class="inventory-section">
+        <div class="section-header">
+            <h3><i class="fas fa-sword"></i> {{localize "WITCHER.Loot.Weapons"}}</h3>
+            <a class="add-btn" data-action="createItem" data-type="weapon" title="{{localize 'WITCHER.Button.Add'}}">
+                <i class="fas fa-plus"></i>
+            </a>
+        </div>
+        <div class="inventory-grid weapons">
+            {{#each weapons as |weapon id|}}
+            <div class="inventory-card weapon item" data-item-id="{{weapon._id}}">
+                <div class="card-main">
+                    <img src="{{weapon.img}}" class="item-img dragable" draggable="true" data-id="{{weapon._id}}" />
+                    <div class="item-info">
+                        <span class="item-name item-roll">{{weapon.name}}</span>
+                        <div class="item-stats">
+                            <span class="stat" title="{{localize 'WITCHER.Weapon.Short.Damage'}}">
+                                <i class="fas fa-tint"></i> {{weapon.system.damage}}
+                            </span>
+                            <span class="stat" title="{{localize 'WITCHER.Weapon.Short.Reliability'}}">
+                                <i class="fas fa-shield-alt"></i> {{weapon.system.reliable}}
+                            </span>
+                            <span class="stat" title="{{localize 'WITCHER.Item.ROF'}}">
+                                <i class="fas fa-redo"></i> {{weapon.system.rateOfFire}}
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <a class="item-action item-edit" title="{{localize 'WITCHER.Button.Edit'}}"><i class="fas fa-edit"></i></a>
+                        <a class="item-action item-delete" title="{{localize 'WITCHER.Button.Delete'}}"><i class="fas fa-trash"></i></a>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+
+    {{!-- Armor Section --}}
+    <div class="inventory-section">
+        <div class="section-header">
+            <h3><i class="fas fa-shield-alt"></i> {{localize "WITCHER.Inventory.Armor"}}</h3>
+            <a class="add-btn" data-action="createItem" data-type="armor" title="{{localize 'WITCHER.Button.Add'}}">
+                <i class="fas fa-plus"></i>
+            </a>
+        </div>
+        <div class="inventory-grid armors">
+            {{#each armors as |armor id|}}
+            <div class="inventory-card armor item" data-item-id="{{armor._id}}">
+                <div class="card-main">
+                    <img src="{{armor.img}}" class="item-img dragable" draggable="true" data-id="{{armor._id}}" />
+                    <div class="item-info">
+                        <span class="item-name">{{armor.name}}</span>
+                        <div class="item-stats">
+                            <span class="stat" title="{{localize 'WITCHER.table.StoppingPower'}}">
+                                <i class="fas fa-bahai"></i> {{armor.system.headStopping}}/{{armor.system.torsoStopping}}/{{armor.system.leftArmStopping}}
+                            </span>
+                        </div>
+                    </div>
+                    <div class="card-actions">
+                        <a class="item-action item-edit" title="{{localize 'WITCHER.Button.Edit'}}"><i class="fas fa-edit"></i></a>
+                        <a class="item-action item-delete" title="{{localize 'WITCHER.Button.Delete'}}"><i class="fas fa-trash"></i></a>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+
+    {{!-- Loot / Valuable Section --}}
+    <div class="inventory-section">
+        <div class="section-header">
+            <h3><i class="fas fa-coins"></i> {{localize "WITCHER.Loot.Name"}}</h3>
+            <div class="header-actions">
+                <a class="action-link export-loot" data-action="exportLoot">{{localize "WITCHER.Monster.exportLoot"}}</a>
+                <a class="add-btn" data-action="createItem" data-type="valuable" title="{{localize 'WITCHER.Button.Add'}}">
+                    <i class="fas fa-plus"></i>
+                </a>
+            </div>
+        </div>
+        <div class="inventory-grid loots">
+            {{#each loots as |valuable id|}}
+            <div class="inventory-card loot item" data-item-id="{{valuable._id}}">
+                <div class="card-main">
+                    <img src="{{valuable.img}}" class="item-img dragable" draggable="true" data-id="{{valuable._id}}" />
+                    <div class="item-info">
+                        <span class="item-name">{{valuable.name}}</span>
+                        <span class="item-quantity">Qty: {{#if valuable.system.quantity}}{{valuable.system.quantity}}{{else}}1{{/if}}</span>
+                    </div>
+                    <div class="card-actions">
+                        <a class="item-action item-edit" title="{{localize 'WITCHER.Button.Edit'}}"><i class="fas fa-edit"></i></a>
+                        <a class="item-action item-delete" title="{{localize 'WITCHER.Button.Delete'}}"><i class="fas fa-trash"></i></a>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>

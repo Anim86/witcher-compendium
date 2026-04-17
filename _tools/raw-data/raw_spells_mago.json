@@ -1,0 +1,652 @@
+[
+    {
+        "name": "Bussola Magica",
+        "tier": "Novizio",
+        "element": "Terra",
+        "res": "3",
+        "effect": "Bussola Magica consente all’incantatore di in- tuire immediatamente la direzione verso un luogo che ha visitato in precedenza. In alternativa, l’incantesimo indica la posizione del nord.",
+        "range": "Personale",
+        "duration": "1d6 Ore",
+        "defense": "Nessuna"
+    },
+    {
+        "name": "Telepatia",
+        "tier": "Novizio",
+        "element": "Terra",
+        "res": "2",
+        "effect": "Telepatia consente all’incantatore di comunica- re telepaticamente con un singolo soggetto per la durata dell’incantesimo. La telepatia non è ostacolata da barrie- re linguistiche.",
+        "range": "10m",
+        "duration": "Attiva (1 RES)",
+        "defense": "Nessuna"
+    },
+    {
+        "name": "Dissipazione",
+        "tier": "Novizio",
+        "element": "Terra",
+        "res": "Variabile",
+        "effect": "Dissipazione permette di porre fine a un incan- tesimo/rituale/fattura entro il raggio dell’incantesimo. Quest’incantesimo può cancellare la magia che abbia una durata e può essere lanciato come Azione Difensiva per bloccare attacchi magici, con o senza componenti fi- siche. Per cancellare un effetto magico, l’incantatore deve spendere metà dei punti di Resistenza spesi per lanciare la magia ed effettuare una prova di Lanciare Incantesimi superiore al tiro ottenuto dall’altro incantatore.",
+        "range": "10m",
+        "duration": "Istantanea",
+        "defense": "Lanciare Incantesimi"
+    },
+    {
+        "name": "Cenlly Graig",
+        "tier": "Novizio",
+        "element": "Terra",
+        "res": "3",
+        "effect": "Cenlly Graig scaglia pietre aguzze contro un avversario. Per ogni punto con cui il tiro di Lanciare Incantesimi supera il tiro di difesa del bersaglio (massi- mo 10), l’incantesimo infligge 1d6 danni.",
+        "range": "5m",
+        "duration": "Istantanea",
+        "defense": "Schivare o Bloccare"
+    },
+    {
+        "name": "Evoca Bordone",
+        "tier": "Novizio",
+        "element": "Terra",
+        "res": "2",
+        "effect": "Evoca Bordone consente all’incantatore di smaterializzare il proprio bastone e trasportarlo in un luogo in cui è stato, al più tardi, il giorno precedente. Lanciando l’incantesimo una seconda volta, può ripor- tare a sé il bastone.",
+        "range": "N/A",
+        "duration": "Istantanea",
+        "defense": "Nessuna"
+    },
+    {
+        "name": "Codi Bywyd",
+        "tier": "Novizio",
+        "element": "Terra",
+        "res": "2",
+        "effect": "Codi Bywyd può far crescere una pianta adulta da un seme in un solo turno. Ciò permette di coltiva- re erbe e piante alchemiche, ma non piante più grandi come, ad esempio, un albero.",
+        "range": "4m",
+        "duration": "Istantanea",
+        "defense": "Nessuna"
+    },
+    {
+        "name": "Guarigione Magica",
+        "tier": "Novizio",
+        "element": "Terra",
+        "res": "5",
+        "effect": "Guarigione Magica stimola la guarigione natu- rale del bersaglio, guarendolo al ritmo di 3 Punti Salute per turno. L’effetto perdura fino al termine dell’incante- simo. In alternativa, l’incantesimo può essere usato ripe- tutamente per curare una ferita critica.",
+        "range": "2m",
+        "duration": "1d10 Round",
+        "defense": "Nessuna"
+    },
+    {
+        "name": "Fascino",
+        "tier": "Novizio",
+        "element": "Terra",
+        "res": "5",
+        "effect": "Fascino consente all’incantatore di creare un’il- lusione su se stesso che lo renda affascinante. Questo in- cantesimo conferisce +3 a Seduzione, Carisma e Autorità.",
+        "range": "Personale",
+        "duration": "1d6 Ore",
+        "defense": "Nessuna"
+    },
+    {
+        "name": "Manipolazione Mentale",
+        "tier": "Novizio",
+        "element": "Terra",
+        "res": "3",
+        "effect": "Manipolazione Mentale costringe un bersaglio a provare una delle seguenti emozioni per tutta la durata dell’incantesimo: odio, amore, depressione o euforia.",
+        "range": "5m",
+        "duration": "1d10 Round",
+        "defense": "Resistere alla Magia"
+    },
+    {
+        "name": "Incantesimo Diagnostico",
+        "tier": "Novizio",
+        "element": "Terra",
+        "res": "3",
+        "effect": "Incantesimo Diagnostico consente all’incanta- tore di valutare rapidamente la salute di un bersaglio e di determinare quanti Punti Salute possiede, eventuali ferite critiche, malattie o avvelenamenti.",
+        "range": "5m",
+        "duration": "Istantanea",
+        "defense": "Nessuna"
+    },
+    {
+        "name": "Polvere Accecante",
+        "tier": "Novizio",
+        "element": "Terra",
+        "res": "3",
+        "effect": "Polvere Accecante permette all’incantatore di scagliare polvere magica negli occhi di un bersaglio, ac- cecandolo per la durata dell’incantesimo.",
+        "range": "4m",
+        "duration": "1d10 Round",
+        "defense": "Schivare o Bloccare"
+    },
+    {
+        "name": "Penna di Luthien",
+        "tier": "Novizio",
+        "element": "Terra",
+        "res": "2",
+        "effect": "Penna di Luthien, che prende il nome dalla sua inventrice Luthien di Ebbing, può scrivere o disegnare su qualsiasi superficie solida. Non può essere utilizzata su creature viventi.",
+        "range": "1m",
+        "duration": "Istantanea",
+        "defense": "Nessuna"
+    },
+    {
+        "name": "Specchio di Afan",
+        "tier": "Novizio",
+        "element": "Terra",
+        "res": "3",
+        "effect": "",
+        "range": "",
+        "duration": "",
+        "defense": ""
+    },
+    {
+        "name": "Prigione di Talfryn",
+        "tier": "Novizio",
+        "element": "Terra",
+        "res": "3",
+        "effect": "Prigione di Talfryn prende il nome da Talfryn di Nazair, un cavaliere traditore che fu intrappolato per tre giorni nel giardino del mago Drystan, L’incantesimo immobilizza il bersaglio con delle radici, per reciderle occorre infliggere 15 danni. In alternativa, per liberar- si occorre una prova di Eludere con CD pari al tiro di Lanciare Incantesimi.",
+        "range": "10m",
+        "duration": "Finché non viene distrutto",
+        "defense": "Schivare"
+    },
+    {
+        "name": "Sacca d’Aria",
+        "tier": "Novizio",
+        "element": "Terra",
+        "res": "3",
+        "effect": "Sacca d’Aria consente di creare una sacca d’aria fresca sott’acqua o in un’area dove normalmente non si trova aria pura. Questa sacca ha un raggio di 1m per la durata dell’incantesimo.",
+        "range": "12m",
+        "duration": "2d10 Round",
+        "defense": "Nessuna"
+    },
+    {
+        "name": "Telecinesi",
+        "tier": "Novizio",
+        "element": "Terra",
+        "res": "3",
+        "effect": "Telecinesi permette all’incantatore di sollevare e maneggiare un oggetto (fino a 5 ING per ogni punto posseduto in Lanciare Incantesimi) come se lo tenesse in mano.",
+        "range": "5m",
+        "duration": "Attiva (2 RES)",
+        "defense": "Nessuna"
+    },
+    {
+        "name": "Soffio di Korath",
+        "tier": "Novizio",
+        "element": "Terra",
+        "res": "2",
+        "effect": "Soffio di Korath spezza una pietra o una superfi- cie di terra, spruzzando sabbia ardente in un cono di 3m generato dall’incantatore. I bersagli nell’area che fallisco- no il tiro di difesa sono accecati per 1d6 round.",
+        "range": "Cono di 3m",
+        "duration": "Istantanea",
+        "defense": "Schivare o Bloccare"
+    },
+    {
+        "name": "Tempesta Statica",
+        "tier": "Novizio",
+        "element": "Terra",
+        "res": "5",
+        "effect": "Tempesta Statica consente all’incantatore di sa- turare d’elettricità un raggio di 5m centrato su di lui. Ogni bersaglio nell’area (eccetto l’incantatore), se indos- sa un’armatura di metallo o porta armi di metallo, subi- sce 2 danni per round.",
+        "range": "Raggio di 5m",
+        "duration": "2d6 Round",
+        "defense": "Nessuna"
+    },
+    {
+        "name": "Spuntone di Terra",
+        "tier": "Novizio",
+        "element": "Terra",
+        "res": "5",
+        "effect": "Spuntone di Terra crea una stalattite acuminata che trafigge il bersaglio. Lo spuntone infligge 5d6 danni e permane finché non è distrutto, dopo aver subito 20 danni.",
+        "range": "6m",
+        "duration": "Istantanea",
+        "defense": "Schivare o Bloccare"
+    },
+    {
+        "name": "Zefiro",
+        "tier": "Novizio",
+        "element": "Aria",
+        "res": "5",
+        "effect": "Zefiro consente all’incantatore di scagliare una folata di vento che investe ogni bersaglio entro 2m, spin- gendoli indietro di 6 m. Tale attacco infligge solo 1d6 danni ma, se il bersaglio colpisce un ostacolo, subisce dan- no da impatto.",
+        "range": "Raggio di 2m",
+        "duration": "Istantanea",
+        "defense": "Nessuna"
+    },
+    {
+        "name": "Adenydd",
+        "tier": "Novizio",
+        "element": "Aria",
+        "res": "4",
+        "effect": "Adenydd rende l’incantatore più leggero, per- mettendogli di planare mentre cade. Ciò significa che per ogni 2m di caduta può spostarsi di 2m in una qualsi- asi direzione. Se tocca terra entro la durata dell’incante- simo, non subisce alcun danno.",
+        "range": "Personale",
+        "duration": "Attiva (2 RES)",
+        "defense": "Nessuna"
+    },
+    {
+        "name": "Arieggiare",
+        "tier": "Novizio",
+        "element": "Fuoco",
+        "res": "2",
+        "effect": "Arieggiare consente di ripulire un’area di 4m di raggio (centrata sull’incantatore) da ogni fumo, ve- leno o altra contaminazione dell’aria, per tutta la durata dell’incantesimo.",
+        "range": "Raggio di 4m",
+        "duration": "Attiva (2 RES)",
+        "defense": "Nessuna"
+    },
+    {
+        "name": "Aenye",
+        "tier": "Novizio",
+        "element": "Fuoco",
+        "res": "5",
+        "effect": "Aenye consente di scagliare una palla di fuoco puro contro un bersaglio entro il raggio dell’incantesi- mo. La palla di fuoco infligge 4d6 danni e ha il 75% di probabilità d’infliggere l’effetto A Fuoco al bersaglio.",
+        "range": "12m",
+        "duration": "Istantanea",
+        "defense": "Schivare o Bloccare"
+    },
+    {
+        "name": "Folata di Bronwyn",
+        "tier": "Novizio",
+        "element": "Fuoco",
+        "res": "2",
+        "effect": "Folata di Bronwyn prende il nome dalla maga razziatrice di Skellige, Bronwyn Occhiofino. L’incantesimo consente di respingere il bersaglio di un numero di metri pari alla differenza con cui il tiro di Lanciare Incantesimi supera la difesa del bersaglio. Tale attacco infligge solo 1d6 danni, ma, se il bersaglio colpi- sce un ostacolo, subisce danno da impatto.",
+        "range": "2m",
+        "duration": "Istantanea",
+        "defense": "Schivare"
+    },
+    {
+        "name": "Aine Verseos",
+        "tier": "Novizio",
+        "element": "Fuoco",
+        "res": "1",
+        "effect": "Aine Verseos crea un’area di luce splendente in un raggio di 4m centrato sull’incantatore.",
+        "range": "Raggio di 4m",
+        "duration": "Attiva (2 RES)",
+        "defense": "Nessuna"
+    },
+    {
+        "name": "Alzare le Fiamme",
+        "tier": "Novizio",
+        "element": "Fuoco",
+        "res": "3",
+        "effect": "Alzare le Fiamme consente all’incantatore di diffondere un fuoco già esistente alla velocità di 2m per round in una direzione qualsiasi, di smorzarlo fino a una debole fiammella (riducendo il danno da fuoco di 1) o di intensificare le fiamme (aumentando il danno da fuoco di 1).",
+        "range": "10m",
+        "duration": "Attiva (2 RES)",
+        "defense": "Nessuna"
+    },
+    {
+        "name": "Riparo di Urien",
+        "tier": "Novizio",
+        "element": "Fuoco",
+        "res": "3",
+        "effect": "Riparo di Urien, creato dal mago dell’aria Urien di Cidaris, permette di annullare gli effetti negativi del tempo atmosferico in un raggio di 8m centrato sull’in- cantatore. Nega il caldo e il freddo estremi, la pioggia e la neve.",
+        "range": "",
+        "duration": "",
+        "defense": ""
+    },
+    {
+        "name": "Fiammata",
+        "tier": "Novizio",
+        "element": "Fuoco",
+        "res": "4",
+        "effect": "Fiammata erutta in una direzione un cono di fuoco di 3m e infligge 2d6 danni ad ogni bersaglio nell’a- rea che non riesca a schivarlo o bloccarlo e ha il 50% di probabilità d’infliggere l’effetto A Fuoco al bersaglio.",
+        "range": "Cono di 3m",
+        "duration": "Istantanea",
+        "defense": "Schivare o Bloccare"
+    },
+    {
+        "name": "Grandinata di Carys",
+        "tier": "Novizio",
+        "element": "Fuoco",
+        "res": "3",
+        "effect": "Quest’incantesimo, che prende il nome dalla sua creatrice Carys di Cintra, scaglia chicchi di ghiac- cio a gran velocità contro un bersaglio. Per ogni punto con cui il tiro Lanciare Incantesimi supera Schivare o Bloccare del bersaglio (massimo 5), infligge 1d6 danni e ha il 35% di probabilità di congelarlo.",
+        "range": "5m",
+        "duration": "Istantanea",
+        "defense": "Schivare o Bloccare"
+    },
+    {
+        "name": "Lampo Magico",
+        "tier": "Novizio",
+        "element": "Fuoco",
+        "res": "2",
+        "effect": "Lampo Magico fa balenare un lampo sopra il mago. Ogni bersaglio entro un raggio di 8m deve supe- rare una prova di Resistenza alla Magia o essere accecato per 1d6 round. Il lampo è visibile fino a 10 chilometri.",
+        "range": "Raggio di 8m",
+        "duration": "Istantanea",
+        "defense": "Resistere alla Magia"
+    },
+    {
+        "name": "Lastra di Ghiaccio",
+        "tier": "Novizio",
+        "element": "Fuoco",
+        "res": "2",
+        "effect": "Lastra di Ghiaccio permette di creare un’area di ghiaccio di 2 metri quadrati. Chi mette piede in quest’a- rea deve superare una prova di Atletica con CD pari al risultato di Lanciare Incantesimi per non scivolare sul ghiaccio.",
+        "range": "10m",
+        "duration": "2d10 Round",
+        "defense": "Schivare"
+    },
+    {
+        "name": "Marchio a Fuoco",
+        "tier": "Novizio",
+        "element": "Fuoco",
+        "res": "4",
+        "effect": "Marchio di Fuoco permette all’incantatore di marchiare il bersaglio con un semplice simbolo o parola in un punto esposto del corpo del bersaglio, a sua scelta. Infligge 1d6 danni e lascia un grande sfregio indelebile.",
+        "range": "8m",
+        "duration": "Istantanea",
+        "defense": "Nessuna"
+    },
+    {
+        "name": "Maledizione di Sedna",
+        "tier": "Novizio",
+        "element": "Fuoco",
+        "res": "5",
+        "effect": "Questo incantesimo prende il nome dal tumul- tuoso Abisso di Sedna, in cui avventurarsi è considerato un viaggio senza ritorno per le navi. Crea un potente vor- tice nell’acqua, in un’area di 4 metri. Ogni bersaglio entro 5m deve superare una prova di Nuotare pari alla prova di Lanciare Incantesimi dell’incantatore o finire risucchia- tosott’acqua. Si deve effettuare una prova, ogni round, o rimanere sott’acqua, con il rischio di affogare.",
+        "range": "12m",
+        "duration": "Attiva (2 RES)",
+        "defense": "Schivare"
+    },
+    {
+        "name": "Stretta di Cadfan",
+        "tier": "Novizio",
+        "element": "Fuoco",
+        "res": "4",
+        "effect": "La Stretta di Cadfan, che prende il nome dal mago e fabbro Cadfan di Ebbing, consente di surriscal- dare un oggetto metallico, costringendo chi lo impugna a lasciarlo cadere o subire 2d6 danni. L’incantesimo può anche arroventare un’arma, per conferirgli +2d6 ai danni e il 50% di probabilità d’infliggere l’effetto A Fuoco al bersaglio.",
+        "range": "8m",
+        "duration": "1d6 Round",
+        "defense": "Nessuna"
+    },
+    {
+        "name": "Nebbia di Dormyn",
+        "tier": "Novizio",
+        "element": "Fuoco",
+        "res": "3",
+        "effect": "Creato da Dormyn di Gemmera, la Nebbia di Dormyn crea un’area di fitta nebbia con un raggio di 10m, centrata sull’incantatore, che impone una penalità di -3 ad Accortezza e riduce la visuale a 4m.",
+        "range": "Raggio di 10m",
+        "duration": "Attiva (2 RES)",
+        "defense": "Nessuna"
+    },
+    {
+        "name": "Tanio Ilchar",
+        "tier": "Novizio",
+        "element": "Fuoco",
+        "res": "3",
+        "effect": "Tanio Ilchar crea uno scoppio di fuoco in un’a- rea di 2m x 2m e ha il 100% di probabilità d’infliggere l’effetto A Fuoco ai bersagli nell’area.",
+        "range": "8m",
+        "duration": "Istantanea",
+        "defense": "Schivare"
+    },
+    {
+        "name": "Puro Dwr",
+        "tier": "Novizio",
+        "element": "Fuoco",
+        "res": "2",
+        "effect": "Puro Dwr permette di purificare 1 metro cubo di acqua. Ciò annulla veleni e malattie, ma non espelle creature viventi al suo interno. Se lanciato su una parte di una massa d’acqua contaminata, l’acqua comincerà a contaminarsi nuovamente al termine dell’incantesimo.",
+        "range": "4m",
+        "duration": "1d10 Round",
+        "defense": "Nessuna"
+    },
+    {
+        "name": "Acquazzone",
+        "tier": "Novizio",
+        "element": "Acqua",
+        "res": "2",
+        "effect": "Acquazzone crea una pioggia torrenzia- le in un’area del raggio di 3m che spegne ogni fuoco. L’incantesimo contrasta gli effetti del fuoco.",
+        "range": "8m",
+        "duration": "Attiva (2 RES)",
+        "defense": "Nessuna"
+    },
+    {
+        "name": "Rhewi",
+        "tier": "Novizio",
+        "element": "Acqua",
+        "res": "2",
+        "effect": "Rhewi crea uno spesso strato di ghiaccio attorno al bersaglio per la durata dell’incantesimo. Il bersaglio è considerato congelato. Se utilizzato su un bersaglio non vivente, questo non può essere manipolato o spostato.",
+        "range": "8m",
+        "duration": "1d10 Round",
+        "defense": "Schivare"
+    },
+    {
+        "name": "Controllare Acque",
+        "tier": "Novizio",
+        "element": "Acqua",
+        "res": "5",
+        "effect": "Controllare Acque consente all’incantatore di controllare la velocità di movimento di una massa d’ac- qua e la direzione in cui si sposta, per la durata dell’in- cantesimo. Può servire a rallentare un bersaglio che sta nuotando dimezzandone la velocità, raddoppiare la velo- cità di una nave o rallentarla fino ad arrestare le correnti fluviali.",
+        "range": "10m",
+        "duration": "Attiva (2 RES)",
+        "defense": "CD stabilita dal GM"
+    },
+    {
+        "name": "Terremoto di Stammelford",
+        "tier": "Esperto",
+        "element": "Elemento Misto",
+        "res": "12",
+        "effect": "Terremoto di Stammelford consente di dissesta- re il suolo in un’area di 10m, creando un terreno frasta- gliato e franoso che impone ad ogni bersaglio nell’area -2 Riflessi e -3 MAN. Piccole costruzioni sul terreno infranto hanno il 10% di probabilità di crollare. Ogni round, ogni bersaglio nell’area deve superare un tiro di Atletica o sprofondare nel terreno instabile, e iniziare a soffocare finché non riesce ad uscire superando un’altra prova di Atletica. Esaurita la durata dell’incantesimo, il terreno cessa di franare, ma resta dissestato.",
+        "range": "30m",
+        "duration": "1d10 Round",
+        "defense": "Schivare"
+    },
+    {
+        "name": "Illusione",
+        "tier": "Esperto",
+        "element": "Elemento Misto",
+        "res": "8",
+        "effect": "Illusione consente all’incantatore di creare qualsiasi illusione visiva desideri entro 20m. Chiunque fallisca la prova di Resistenza alla Magia e può vedere l’illusione, crede che sia reale. L’illusione non può tutta- via essere toccata, udita o annusata.",
+        "range": "20m",
+        "duration": "Attiva (4 RES)",
+        "defense": "Resistere alla Magia"
+    },
+    {
+        "name": "Tecnica di Eilhart",
+        "tier": "Esperto",
+        "element": "Elemento Misto",
+        "res": "12",
+        "effect": "Orribile incantesimo, che prende il nome dalla sua creatrice Philippa Eilhart, consente di scavare nel- la mente del bersaglio e strapparne informazioni. Se il tiro di Lanciare Incantesimi ha successo, l’incantatore ricava un’informazione dal bersaglio. Se il tiro di difesa del bersaglio è un Disastro la sua INT è ridotta perma- nentemente di 1.",
+        "range": "3m",
+        "duration": "Istantanea",
+        "defense": "Resistere alla Magia"
+    },
+    {
+        "name": "Teletrasporto",
+        "tier": "Esperto",
+        "element": "Elemento Misto",
+        "res": "10",
+        "effect": "Il Teletrasporto consente all’incantatore di te- letrasportarsi istantaneamente in un luogo conosciuto. Non può portare nessuno con sé e può trasportare solo ciò che indossa o tiene in mano. Tentare di teletraspor- tarsi con qualcun altro trasporta solamente l’incantatore, lasciando l’altro dove si trova. Per teletrasportarsi occorre un tiro di Lanciare Incantesimo con CD 15. Se il tiro fallisce, l’incantatore si ritrova in un punto casuale a 1d6 km dalla destinazione.",
+        "range": "N/A",
+        "duration": "Istantanea",
+        "defense": "Nessuna"
+    },
+    {
+        "name": "Rhwystr Graig",
+        "tier": "Esperto",
+        "element": "Terra",
+        "res": "15",
+        "effect": "Rhwystr Graig permette di creare una parete di roccia di 2m per 3m, con 30 punti Pr, ovunque entro 3m dall’incantatore, orientato in qualsiasi direzione. Il muro permane fino alla sua distruzione.",
+        "range": "20m",
+        "duration": "Istantanea",
+        "defense": "Nessuna"
+    },
+    {
+        "name": "Teoria di Elgan",
+        "tier": "Esperto",
+        "element": "Terra",
+        "res": "10",
+        "effect": "Teoria di Elgan fu scoperta da Elgan di Verdem, che viaggiò verso il cuore di Mahakam e studiò per anni la magia della terra. L’incantesimo permette di magne- tizzare un oggetto metallico entro 8m. Ogni metallo en- tro 2m è attratto dal magnete e si attacca ad esso. È necessaria una prova di Prestanza con CD 18 per stac- care un oggetto. Tutto il metallo che si attacca alle armi o all’armatura va conteggiato nell’ING di chi porta o indossa l’oggetto magnetizzato.",
+        "range": "8m",
+        "duration": "2d10 Round",
+        "defense": "Nessuna"
+    },
+    {
+        "name": "Vortice Fiammeggiante",
+        "tier": "Esperto",
+        "element": "Aria",
+        "res": "15",
+        "effect": "Vortice Fiammeggiante crea un tornado di fiamme largo 2m. L’incantatore può dirigere il torna- do spostandolo di un numero di metri per turno pari al valore dell’Abilità Lanciare Incantesimi. Se travolge un bersaglio, l’incantatore effettua un tiro di Lanciare Incantesimi contrapposto al tiro di Eludere del bersaglio. Se ha successo, il bersaglio subisce 5d6 danni e ha il 50% di probabilità di subire l’effetto A Fuoco. Il vortice non si sposta oltre il raggio dell’incantesimo.",
+        "range": "Raggio di 10m",
+        "duration": "Attiva (4 RES)",
+        "defense": "Schivare"
+    },
+    {
+        "name": "Gwynt Troelli",
+        "tier": "Esperto",
+        "element": "Aria",
+        "res": "12",
+        "effect": "Gwynt Troelli crea una barriera di vento intorno all’incantatore, in grado di deviare attacchi a distanza e proiettili. Ogni attacco con proiettile diretto contro l’in- cantatore deve superare il tiro di Lanciare Incantesimi. Se fallisce, la barriera devia il proiettile di 8m in dire- zione casuale.",
+        "range": "Raggio di 10m",
+        "duration": "Attiva (4 RES)",
+        "defense": "Nessuna"
+    },
+    {
+        "name": "Soffocare",
+        "tier": "Esperto",
+        "element": "Aria",
+        "res": "14",
+        "effect": "L’incantesimo soffoca un bersaglio infliggendo 1d10 danni per turno. Il soffocamento termina se l’in- cantatore viene colpito da un’arma o interrompe la con- centrazione. Mentre soffoca, il bersaglio è considerato vacillante.",
+        "range": "10m",
+        "duration": "Attiva (4 RES)",
+        "defense": "Resistere alla Magia"
+    },
+    {
+        "name": "Anialwch",
+        "tier": "Esperto",
+        "element": "Acqua",
+        "res": "8",
+        "effect": "Anialwch permette di risucchiare parte dei li- quidi presenti nel corpo di un bersaglio, danneggiandolo e sfinendolo. L’incantesimo infligge 4d6 danni che non possono essere bloccati da armature o scudi. La grave di- sidratazione causa anche affaticamento che riduce di 4d6 la RES del bersaglio.",
+        "range": "10m",
+        "duration": "Istantanea",
+        "defense": "Resistere alla Magia"
+    },
+    {
+        "name": "Tuono di Alzur",
+        "tier": "Esperto",
+        "element": "Acqua",
+        "res": "15",
+        "effect": "Tuono di Alzur consente all’incantatore di sca- gliare contro un bersaglio una potente folgore che in- fligge 8d6 danni e ha il 75% di probabilità d’infliggere l’effetto A Fuoco al bersaglio. Il Tuono di Alzur viaggia in linea retta trapassando i bersagli e, per ogni bersaglio che attraversa, il danno a quello successivo diminuisce di 1d6.",
+        "range": "25m",
+        "duration": "Istantanea",
+        "defense": "Schivare"
+    },
+    {
+        "name": "Grandine di Merigold",
+        "tier": "Esperto",
+        "element": "Acqua",
+        "res": "15",
+        "effect": "Prende il nome dalla sua creatrice Triss Merigold, ex consigliera di Re Foltest di Temeria e crea una tempe- sta di grandine in tutta l’area dell’incantesimo. Chiunque si trovi nell’area deve superare, ogni round, una prova di Eludere con CD pari alla prova di Lanciare Incantesimi dell’incantatore o subire 2d6 danni in una parte del corpo scelta casualmente.",
+        "range": "Raggio di 30m",
+        "duration": "Attiva (4 RES)",
+        "defense": "Schivare"
+    },
+    {
+        "name": "Moto di Demetia Crest",
+        "tier": "Esperto",
+        "element": "Fuoco",
+        "res": "12",
+        "effect": "Moto di Demetia Crest consente all’incan- tatore di creare attorno a sé uno scudo di puro fuoco magico, in grado di bloccare una quantità d’incantesimi d’acqua pari al doppio del valore dell’Abilità Lanciare Incantesimi dell’incantatore. I proiettili che colpiscono lo scudo vengono distrutti e le creature viventi non pos- sono entrare nell’area.",
+        "range": "10m",
+        "duration": "Attiva (4 RES)",
+        "defense": "Nessuna"
+    },
+    {
+        "name": "Ondate della Naglfar",
+        "tier": "Esperto",
+        "element": "Fuoco",
+        "res": "10",
+        "effect": "Creato da un mago che asseriva di aver assistito alla cavalcata della Caccia Selvaggia, questo incantesimo crea un’ondata di magia del ghiaccio che si espande per 3m dall’incantatore in ogni direzione. Chiunque si trovi nell’area deve superare una prova di difesa o venire con- gelato e subire 4d6 danni.",
+        "range": "Raggio di 3m",
+        "duration": "Istantanea",
+        "defense": "Schivare o Bloccare"
+    },
+    {
+        "name": "Seirff Haul",
+        "tier": "Esperto",
+        "element": "Fuoco",
+        "res": "10",
+        "effect": "Seirff Haul crea vari serpenti fatti di fuoco magi- co che si avventano su un bersaglio. Il soggetto è in lotta e A Fuoco finché non supera una prova di Eludere contrap- posta al tiro di Lanciare Incantesimi dell’incantatore. Per ogni round in cui il soggetto fallisce il tiro di Eludere, i serpenti stringono la presa e la CD aumenta di 1.",
+        "range": "10m",
+        "duration": "2d10 Round",
+        "defense": "Schivare"
+    },
+    {
+        "name": "Trasmutazione",
+        "tier": "Maestro",
+        "element": "Elemento Misto",
+        "res": "25",
+        "effect": "Trasmutazione consente all’incantatore di mo- dificare le proprietà di un metallo o di un minerale. Può mutare un’unità di metallo in un qualsiasi altro metallo, o trasformare una gemma imperfetta in una perfetta, utile per la magia. Il dimeritium o altri metalli derivati dal dimeritium, non possono essere creati o modificati con questo incantesimo.",
+        "range": "2m",
+        "duration": "Permanente",
+        "defense": "Nessuna"
+    },
+    {
+        "name": "Comando Mentale",
+        "tier": "Maestro",
+        "element": "Elemento Misto",
+        "res": "25",
+        "effect": "Comando Mentale consente d’impiantare un ordine nella mente di un bersaglio. Il comando deve es- sere eseguito alla lettera. Se il comando è qualcosa che il bersaglio non farebbe mai, questo riceve +5 alla prova di Resistere alla Magia.",
+        "range": "10m",
+        "duration": "Fino al completamento dell’incarico",
+        "defense": "Resistere alla Magia"
+    },
+    {
+        "name": "Portale",
+        "tier": "Maestro",
+        "element": "Aria",
+        "res": "22",
+        "effect": "Portale crea un portale sospeso di 1m per 2m entro 10m dall’incantatore. Oltrepassare il portale tele- trasporta in qualsiasi luogo l’incantatore possa ricordare. Il portale può trasferire qualsiasi cosa riesca a passarvi. Se l’incantatore pone fine al portale, mentre un bersa- glio lo sta attraversando, l’oggetto o la persona viene tranciato in due. Una persona è considerata mutilata, come per la Ferita Critica. L’incantatore può creare un portale per una destinazione che non conosce, come per Teletrasporto.",
+        "range": "N/A",
+        "duration": "Attiva (6 RES)",
+        "defense": "Nessuna"
+    },
+    {
+        "name": "Derviscio",
+        "tier": "Maestro",
+        "element": "Aria",
+        "res": "22",
+        "effect": "Creato da un misterioso mago di Ofir, Derviscio consente all’incantatore di creare intorno a sé un tornado di 2m. Il tornado devia gli attacchi a distanza come per Gwynt Troelli e agisce come l’incantesimo Zefiro contro ogni bersaglio entro 2m dal mago. L’incantatore all’in- terno del tornado non può correre, né effettuare attacchi verso l’esterno ma, se si muove entro 2m da un bersaglio questo subisce gli effetti dell’incantesimo Zefiro.",
+        "range": "Raggio di 2m",
+        "duration": "Attiva (6 RES)",
+        "defense": "Schivare"
+    },
+    {
+        "name": "Tempesta di Fulmini",
+        "tier": "Maestro",
+        "element": "Terra",
+        "res": "25",
+        "effect": "Questo incantesimo consente all’incantatore di creare una tempesta di fulmini nell’area. Esiste il 35% di probabilità che chiunque si trovi nella zona sia colpito da un fulmine (eccetto l’incantatore). Chi vie- ne colpito deve superare una prova di Eludere o subire 8d6 danni al torso con il 75% di probabilità di subire l’effetto A Fuoco.",
+        "range": "",
+        "duration": "Attiva (6 RES)",
+        "defense": "Schivare o Scudo Magico"
+    },
+    {
+        "name": "Polimorfismo",
+        "tier": "Maestro",
+        "element": "Terra",
+        "res": "22",
+        "effect": "Polimorfismo consente all’incantatore di assu- mere la forma di un serpente, di un gatto, di un uccello o di un cane. Mentre si trova in questo stato possiede le statistiche fisiche di quell’animale (vedi Bestiario, pag.310). Ogni oggetto indossato o trasportato si tra- sforma con lui. Per tornare nella sua forma normale deve lanciare nuovamente l’incantesimo.",
+        "range": "Personale",
+        "duration": "Finché non viene rilanciato",
+        "defense": "Nessuna"
+    },
+    {
+        "name": "Effetto Specchio",
+        "tier": "Maestro",
+        "element": "Acqua",
+        "res": "25",
+        "effect": "Effetto Specchio crea un raggio di luce acce- cante che infligge 10d6 danni. Questo raggio può essere schivato o bloccato (distruggendo qualsiasi cosa utiliz- zata per bloccare), ma non può essere deviato dal vento e può essere parato solo da una superficie riflettente, che subisce comunque il danno. Il laser riflesso è deviato in una direzione casuale. Questo incantesimo utilizza i rag- gi del sole e non può essere utilizzato in mancanza di luce solare. Con la luce della luna o col cielo coperto da nubi, infligge metà dei danni.",
+        "range": "20m",
+        "duration": "2d6 Round",
+        "defense": "Schivare o Bloccare"
+    },
+    {
+        "name": "Dividere le Acque",
+        "tier": "Maestro",
+        "element": "Acqua",
+        "res": "25",
+        "effect": "Dividere le Acque consente all’incantatore di creare uno spazio aperto in una massa d’acqua, fino a 10m x 100m ×10m. Pesci, mostri e altre creature nell’ac- qua vengono spostate insieme ad essa. L’incantatore può entrare e uscire dalle pareti d’acqua come se fosse un normale specchio d’acqua, senza disturbare le pareti. Se usato in acqua, l’incantesimo sposta anche l’incantatore. L’area può essere evocata con qualsiasi orientamento, an- che in verticale.",
+        "range": "Raggio di 10m",
+        "duration": "Attiva (6 RES)",
+        "defense": "Nessuna"
+    },
+    {
+        "name": "Tryferi Gaeaf",
+        "tier": "Maestro",
+        "element": "Acqua",
+        "res": "22",
+        "effect": "Tryferi Gaeaf permette all’incantatore di sca- gliare una quantità di spuntoni di ghiaccio pari a metà del proprio valore dell’Abilità Lanciare Incantesimi, contro quanti bersagli desidera entro la portata dell’in- cantesimo. Questi spuntoni infliggono 5d6 danni e, se il danno supera l’armatura, congelano l’avversario inflig- gendo 2 danni per round finché non vengono spezzati superando una prova di Prestanza con CD 20 o inflig- gendo loro 20 danni. Gli spuntoni altrimenti perdurano fino alla fine dell’incantesimo. Ogni attacco si risolve separatamente.",
+        "range": "20m",
+        "duration": "1d10 Round",
+        "defense": "Schivare o Bloccare"
+    },
+    {
+        "name": "Fuoco di Maelgar",
+        "tier": "Maestro",
+        "element": "Acqua",
+        "res": "25",
+        "effect": "Questo incantesimo è famoso per il caos che ha seminato sui campi della Valle del Pontar. Fuoco dai Cieli consente all’incantatore di far piovere palle di fuo- co dal cielo su un’area immensa. Chiunque sia al suo in- terno (eccetto l’incantatore) ha una probabilità del 75% di venire colpito e deve difendersi con una CD pari al risultato di Lanciare Incantesimi dell’incantatore o subi- re 4d6 danni in un punto casuale del corpo e il 75% di probabilità di subire l’effetto A Fuoco.",
+        "range": "Raggio di 40m",
+        "duration": "2d6 Round",
+        "defense": "Schivare o Bloccare"
+    }
+]

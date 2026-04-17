@@ -1,0 +1,23 @@
+{
+    "_id": "6000a8a57a7e1717",
+    "name": "Furia di Bredan",
+    "type": "component",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/furia_di_bredan.webp",
+    "system": {
+        "description": "<p>Potente esplosivo chimico creato dal chimico pazzo di Gheso.</p><p><b>Effetti:</b> Esplosione: 2d6 danni a ogni parte del corpo entro 2m.</p><p><b>Durata:</b> Istantaneo</p><p><b>TossicitÃ :</b> 0%</p>",
+        "quantity": "1",
+        "weight": 0.1,
+        "cost": 95,
+        "sourcebook": "MB 89",
+        "type": "alchemical",
+        "rarity": "R",
+        "location": "",
+        "substanceType": ""
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

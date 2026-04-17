@@ -1,0 +1,33 @@
+{
+    "_id": "71ac34829794f524",
+    "name": "Armatura a Piastre",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-armor/armatura_a_piastre.webp",
+    "system": {
+        "description": "<p>Schema per la fabbricazione di: <b>Armatura a Piastre</b>.</p><p><b>Componenti richiesti:</b> Acciaio (Ã—5), Cuoio Indurito (Ã—3), Filo (Ã—7), Acquaforte (Ã—4), Olio di Papero (Ã—1), Cerume di Orco (Ã—1)</p><p><b>DifficoltÃ  Manifattura:</b> CD 19</p><p><b>Tempo:</b> 10 ore</p>",
+        "weight": 0,
+        "cost": 0,
+        "components": [
+            "Acciaio (Ã—5)",
+            "Cuoio Indurito (Ã—3)",
+            "Filo (Ã—7)",
+            "Acquaforte (Ã—4)",
+            "Olio di Papero (Ã—1)",
+            "Cerume di Orco (Ã—1)"
+        ],
+        "difficulty": 19,
+        "time": "10 ore",
+        "sourcebook": "MB 137"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

@@ -1,0 +1,100 @@
+<div class='char-sidebar' data-application-part="sidebar">
+    <div class="char-image">
+        <img class='witcher-actor-img' src='{{actorImg}}' alt="actor image" data-action="editImage" data-edit='img'
+            title='{{actor.name}}' />
+        
+        <div class="encumbrance-indicator {{#if (gt totalWeight system.derivedStats.enc.value)}}overweight{{/if}}">
+            <i class="fas fa-weight-hanging"></i> {{totalWeight}} / {{system.derivedStats.enc.value}}
+        </div>
+
+        <div class='wound-state' data-tooltip="{{localize 'WITCHER.Actor.woundState'}}">
+            {{#if (gte system.derivedStats.hp.value system.derivedStats.hp.unmodifiedMax)}}
+                <i class='fa-solid fa-heart' style='color: #2ecc71;'></i>
+            {{else if (gte system.derivedStats.hp.value system.derivedStats.woundTreshold.value)}}
+                <i class='fa-solid fa-heart-crack' style='color: #f1c40f;'></i>
+            {{else}}
+                <i class='fa-solid fa-heart-crack' style='color: #e74c3c;'></i>
+            {{/if}}
+        </div>
+    </div>
+
+    <div class='resource-section'>
+        {{!-- HP --}}
+        <div class='resource-bar-container hp'>
+            <div class="bar-label-row">
+                <span class="bar-label"><i class="fas fa-heart"></i> {{localize 'WITCHER.Actor.Hp'}}</span>
+                <span class="bar-value">{{system.derivedStats.hp.value}} <small>/</small> {{system.derivedStats.hp.max}}</span>
+            </div>
+            <div class="bar-wrapper">
+                <div class="bar-fill" style="width: {{pct system.derivedStats.hp.value system.derivedStats.hp.max}}%;"></div>
+                <input class='bar-input' name='system.derivedStats.hp.value' type='number' value='{{system.derivedStats.hp.value}}' data-dtype='Number' />
+            </div>
+        </div>
+
+        {{!-- Stamina --}}
+        <div class='resource-bar-container stamina'>
+            <div class="bar-label-row">
+                <span class="bar-label"><i class="fas fa-bolt"></i> {{localize 'WITCHER.Actor.Stamina'}}</span>
+                <span class="bar-value">{{system.derivedStats.sta.value}} <small>/</small> {{system.derivedStats.sta.max}}</span>
+            </div>
+            <div class="bar-wrapper">
+                <div class="bar-fill" style="width: {{pct system.derivedStats.sta.value system.derivedStats.sta.max}}%;"></div>
+                <input class='bar-input' name='system.derivedStats.sta.value' type='number' value='{{system.derivedStats.sta.value}}' data-dtype='Number' />
+            </div>
+        </div>
+
+        {{!-- Toxicity --}}
+        <div class='resource-bar-container toxicity'>
+            <div class="bar-label-row">
+                <span class="bar-label"><i class="fas fa-skull-crossbones"></i> {{localize 'WITCHER.Actor.Stat.Toxicity'}}</span>
+                <span class="bar-value">{{system.stats.toxicity.value}} <small>/</small> {{system.stats.toxicity.max}}</span>
+            </div>
+            <div class="bar-wrapper">
+                <div class="bar-fill" style="width: {{pct system.stats.toxicity.value system.stats.toxicity.max}}%;"></div>
+                <input class='bar-input' name='system.stats.toxicity.value' type='number' value='{{system.stats.toxicity.value}}' data-dtype='Number' />
+            </div>
+        </div>
+
+        {{#if system.derivedStats.focus.max}}
+        {{!-- Focus --}}
+        <div class='resource-bar-container focus'>
+            <div class="bar-label-row">
+                <span class="bar-label"><i class="fas fa-eye"></i> {{localize 'WITCHER.Actor.DerStat.Focus'}}</span>
+                <span class="bar-value">{{system.derivedStats.focus.value}} <small>/</small> {{system.derivedStats.focus.max}}</span>
+            </div>
+            <div class="bar-wrapper">
+                <div class="bar-fill" style="width: {{pct system.derivedStats.focus.value system.derivedStats.focus.max}}%;"></div>
+                <input class='bar-input' name='system.derivedStats.focus.value' type='number' value='{{system.derivedStats.focus.value}}' data-dtype='Number' />
+            </div>
+        </div>
+        {{/if}}
+    </div>
+
+    <div class='side-stats-grid'>
+        <div class='mini-stat-box vigor' data-tooltip="{{localize 'WITCHER.Actor.DerStat.Vigor'}}">
+            <span class="label"><i class='fa-solid fa-circle-notch'></i> VIG</span>
+            <span class="value">{{system.derivedStats.vigor.max}}</span>
+        </div>
+
+        <div class='mini-stat-box shield' data-tooltip="{{localize 'WITCHER.Actor.Shield'}}">
+            <span class="label"><i class='fa-solid fa-shield-halved'></i> SCD</span>
+            <input type='number' name='system.derivedStats.shield.value' value='{{system.derivedStats.shield.value}}' data-dtype='Number' />
+        </div>
+
+        <div class='mini-stat-box luck' data-tooltip="{{localize 'WITCHER.StLuck'}}">
+            <span class="label"><i class='fa-solid fa-clover'></i> LUK</span>
+            <input type='number' name='system.stats.luck.value' value='{{system.stats.luck.value}}' data-dtype='Number' />
+        </div>
+    </div>
+
+    <div class="quick-rolls-footer">
+        <div class="roll-buttons-compact">
+            <a class="btn-roll init-roll" data-action="rollInit" data-tooltip="{{localize 'WITCHER.Actor.RollInit'}}"><i class="fas fa-dice-d20"></i></a>
+            <a class="btn-roll crit-roll" data-action="rollCrit" data-tooltip="{{localize 'WITCHER.Actor.RollCrit'}}"><i class="fas fa-burst"></i></a>
+            <a class="btn-roll recover-sta" data-action="recoverSta" data-tooltip="{{localize 'WITCHER.Dialog.staDialog'}}"><i class="fas fa-bed"></i></a>
+        </div>
+        <button class="modifiers-btn" data-action="openModifiers">
+            <i class="fas fa-sliders-h"></i>
+        </button>
+    </div>
+</div>

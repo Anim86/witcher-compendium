@@ -1,0 +1,30 @@
+{
+    "_id": "e76878dc8c48e71c",
+    "name": "Intimidire",
+    "type": "skill",
+    "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/sociale.webp",
+    "system": {
+        "attribute": "will",
+        "description": "<p>Spaventare gli altri, per farli scappare o perché facciano qualcosa per il personaggio. Permette di incutere timore e irradiare malignità.</p>",
+        "sourcebook": "MB 58",
+        "value": 0,
+        "label": "",
+        "isOpened": false,
+        "modifiers": [],
+        "activeEffectModifiers": 0,
+        "isProfession": false,
+        "isPickup": false,
+        "isLearned": false
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

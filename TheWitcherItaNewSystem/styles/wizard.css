@@ -1,0 +1,1345 @@
+.witcher-wizard {
+    --wizard-accent: #8b0000;
+    --wizard-accent-hover: #a00000;
+    --wizard-text-dark: #1a1a1a;
+    --wizard-text-muted: #4b4b4b;
+    --wizard-border: #665544;
+    --wizard-bg-light: #f4e8d1;
+    --wizard-shadow: rgba(0, 0, 0, 0.4);
+    --wizard-parchment: #e8dcc4;
+    --wizard-gold: #b8860b;
+}
+
+/* ── Global override: nessun testo giallo nel wizard ──────────────────── */
+.witcher-wizard .wizard-content label:not(.points-display):not(.stat-pill):not(.gear-tag),
+.witcher-wizard .wizard-content h3,
+.witcher-wizard .wizard-content h4,
+.witcher-wizard .wizard-content p,
+.witcher-wizard .wizard-content span:not(.badge):not(.stat-pill):not(.step-num):not(.step-label):not(.points-value):not(.stat-abbr):not(.stat-value):not(.gear-tag),
+.witcher-wizard .wizard-content .form-group label,
+.witcher-wizard .wizard-content .background-section h3,
+.witcher-wizard .wizard-content .background-section label {
+    color: var(--wizard-text-dark) !important;
+}
+
+.witcher-wizard .window-content {
+    background: url('/systems/TheWitcherItaNewSystem/assets/images/setup_bg.jpg') center/cover no-repeat !important;
+    background-color: #000 !important;
+    color: var(--wizard-text-dark);
+    font-family: 'Outfit', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100%;
+}
+
+/* ── Step Navigation Path ────────────────────────────────────────── */
+.witcher-wizard .wizard-navigation {
+    display: flex;
+    flex-direction: row;
+    background: rgba(0, 0, 0, 0.8);
+    background: linear-gradient(to bottom, #1a1a1a, #000);
+    border-bottom: 3px solid var(--wizard-gold);
+    padding: 15px 40px;
+    gap: 0;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    z-index: 20;
+}
+
+.witcher-wizard .nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    z-index: 2;
+    padding: 10px;
+    min-width: 80px;
+}
+
+.witcher-wizard .nav-icon-container {
+    width: 45px;
+    height: 45px;
+    background: #222;
+    border: 2px solid var(--wizard-border);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: var(--wizard-text-muted);
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin-bottom: 8px;
+}
+
+.witcher-wizard .nav-label-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+.witcher-wizard .nav-item .step-num {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--wizard-gold);
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.witcher-wizard .nav-item .step-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #ccc;
+    white-space: nowrap;
+}
+
+/* Hover State */
+.witcher-wizard .nav-item:hover .nav-icon-container {
+    border-color: var(--wizard-gold);
+    color: var(--wizard-gold);
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(184, 134, 11, 0.4);
+}
+
+.witcher-wizard .nav-item:hover .nav-label-container {
+    opacity: 1;
+}
+
+/* Active State */
+.witcher-wizard .nav-item.active .nav-icon-container {
+    background: var(--wizard-accent);
+    border-color: var(--wizard-gold);
+    color: #fff;
+    transform: scale(1.15);
+    box-shadow: 0 0 20px rgba(139, 0, 0, 0.6), 0 0 5px var(--wizard-gold);
+}
+
+.witcher-wizard .nav-item.active .nav-label-container {
+    opacity: 1;
+}
+
+.witcher-wizard .nav-item.active .step-label {
+    color: #fff;
+    font-weight: 800;
+}
+
+/* Completed State */
+.witcher-wizard .nav-item.completed .nav-icon-container {
+    border-color: #4a4;
+    color: #4a4;
+}
+
+.witcher-wizard .nav-item.completed .nav-icon-container::after {
+    content: '\f00c';
+    font-family: 'Font Awesome 6 Free';
+    font-size: 0.8rem;
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    background: #000;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #4a4;
+}
+
+/* Enhanced Navigation Connectors */
+.witcher-wizard .nav-connector {
+    flex: 1;
+    height: 4px;
+    background: rgba(0, 0, 0, 0.4);
+    margin: 0 -15px;
+    transform: translateY(-28px);
+    z-index: 1;
+    position: relative;
+    border-radius: 2px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.5);
+    transition: all 0.3s ease;
+}
+
+.witcher-wizard .nav-item.completed + .nav-connector,
+.witcher-wizard .nav-item.active + .nav-connector {
+    background: linear-gradient(90deg, var(--wizard-gold), #ffd700);
+    box-shadow: 0 0 8px rgba(184, 134, 11, 0.5), inset 0 1px 1px rgba(255,255,255,0.3);
+}
+
+.witcher-wizard .nav-item.completed + .nav-connector {
+    background: #4a4;
+    box-shadow: 0 0 8px rgba(68, 170, 68, 0.4);
+}
+
+/* ── Content Area: Professional Parchment ────────────────────────── */
+form.witcher-wizard .wizard-content {
+    padding: 35px;
+    flex: 1;
+    overflow-y: auto !important;
+    overflow-x: hidden;
+    min-height: 0;
+    scrollbar-width: thin;
+    scrollbar-color: var(--wizard-accent) transparent;
+    
+    /* Elegant Parchment Texture */
+    background: var(--wizard-parchment) url('/systems/TheWitcherItaNewSystem/assets/images/scroll-unfurled.png');
+    background-blend-mode: multiply;
+    background-size: cover;
+    
+    margin: 20px 40px;
+    border-radius: 6px;
+    border: 1px solid var(--wizard-border);
+    box-shadow: 
+        0 10px 30px rgba(0, 0, 0, 0.7),
+        inset 0 0 40px rgba(102, 85, 68, 0.3);
+    
+    position: relative;
+}
+
+/* Decorative corner ornaments removed to avoid 404s */
+
+.witcher-wizard h2 {
+    color: var(--wizard-accent) !important;
+    border-bottom: 2px solid var(--wizard-accent);
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-family: 'MedievalSharp', serif;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.witcher-wizard p {
+    color: var(--wizard-text-dark);
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+/* Points Reservoir Stylized */
+.witcher-wizard .points-reservoir {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: rgba(139, 0, 0, 0.08);
+    border: 2px solid var(--wizard-border);
+    border-radius: 12px;
+    padding: 12px 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.witcher-wizard .points-reservoir.overbudget {
+    background: rgba(139, 0, 0, 0.2);
+    border-color: #f44;
+    animation: pulse-border 1.5s infinite;
+}
+
+.witcher-wizard .points-reservoir .points-icon {
+    font-size: 1.8rem;
+    color: var(--wizard-accent);
+}
+
+.witcher-wizard .points-reservoir .points-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.witcher-wizard .points-reservoir .label {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: var(--wizard-text-muted);
+}
+
+.witcher-wizard .points-reservoir .value {
+    font-family: 'MedievalSharp', serif;
+    font-size: 1.8rem;
+    line-height: 1;
+    color: var(--wizard-text-dark);
+}
+
+.witcher-wizard .stats-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+/* Stat Vial Row */
+.witcher-wizard .stat-vial-row {
+    display: grid;
+    grid-template-columns: 140px 1fr 140px 30px;
+    align-items: center;
+    gap: 20px;
+    padding: 10px 18px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid var(--wizard-border);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+    transition: all 0.2s ease;
+}
+
+.witcher-wizard .stat-vial-row:hover {
+    background: rgba(255, 255, 255, 0.82);
+    transform: translateX(4px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.witcher-wizard .stat-identity {
+    display: flex;
+    flex-direction: column;
+}
+
+.witcher-wizard .stat-label {
+    font-weight: 800;
+    color: var(--wizard-text-dark);
+    font-size: 0.95rem;
+}
+
+.witcher-wizard .stat-short {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: var(--wizard-accent);
+    font-weight: bold;
+}
+
+.witcher-wizard .vial-frame {
+    height: 12px;
+    background: #e0e0e0;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.witcher-wizard .vial-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #8b0000, #c00);
+    border-radius: 10px;
+    transition: width 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 0 10px rgba(139, 0, 0, 0.3);
+}
+
+.witcher-wizard .stat-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.witcher-wizard .ctrl-btn {
+    width: 26px;
+    height: 26px;
+    background: #444;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.witcher-wizard .ctrl-btn:hover {
+    background: var(--wizard-accent);
+    transform: translateY(-1px);
+}
+
+.witcher-wizard .stat-input {
+    width: 45px;
+    height: 32px !important;
+    background: white !important;
+    border: 1px solid var(--wizard-border) !important;
+    border-radius: 4px;
+    text-align: center;
+    font-family: 'MedievalSharp', serif;
+    font-size: 1.2rem !important;
+    font-weight: bold;
+    color: var(--wizard-text-dark) !important;
+    padding: 0 !important;
+}
+
+.witcher-wizard .stat-info-tip {
+    color: var(--wizard-gold);
+    cursor: help;
+    text-align: center;
+    font-size: 1.1rem;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+}
+
+.witcher-wizard .stat-vial-row:hover .stat-info-tip {
+    opacity: 1;
+}
+
+/* Derived Pills */
+.witcher-wizard .derived-stats-preview {
+    background: rgba(0, 0, 0, 0.03);
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px dashed var(--wizard-border);
+}
+
+.witcher-wizard .derived-stats-preview h3 {
+    font-family: 'MedievalSharp', serif;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+    color: var(--wizard-accent) !important;
+    border-bottom: 1px solid rgba(139, 0, 0, 0.2);
+    padding-bottom: 8px;
+}
+
+.witcher-wizard .derived-pills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.witcher-wizard .derived-pill {
+    background: white;
+    border: 1px solid var(--wizard-border);
+    border-radius: 6px;
+    padding: 8px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.witcher-wizard .derived-pill .label {
+    font-size: 0.75rem;
+    font-variant: small-caps;
+    font-weight: bold;
+    color: var(--wizard-text-muted);
+}
+
+.witcher-wizard .derived-pill .value {
+    font-weight: 800;
+    color: var(--wizard-accent);
+}
+
+/* Skills Layout */
+.witcher-wizard .skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.witcher-wizard .skill-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    color: var(--wizard-text-dark);
+}
+
+.witcher-wizard .skill-label {
+    flex: 1;
+    font-weight: bold;
+}
+
+/* ── Points Display: Thematic Coins/Vials ───────────────────────── */
+.witcher-wizard .points-display {
+    background: linear-gradient(135deg, #441111 0%, #8b0000 100%);
+    border: 2px solid var(--wizard-gold);
+    color: #fff !important;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-family: 'MedievalSharp', serif;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.witcher-wizard .points-value {
+    background: var(--wizard-gold);
+    color: #000 !important;
+    padding: 2px 10px;
+    border-radius: 4px;
+    min-width: 40px;
+    display: inline-block;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+}
+
+.witcher-wizard .points-value.negative {
+    background: #e63946;
+    color: #fff !important;
+    animation: pulse-red 2s infinite;
+}
+
+@keyframes pulse-red {
+    0% { box-shadow: 0 0 0 0 rgba(230, 57, 70, 0.7); }
+    70% { box-shadow: 0 0 0 10px rgba(230, 57, 70, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(230, 57, 70, 0); }
+}
+
+/* Footer Controls */
+.witcher-wizard .wizard-footer {
+    padding: 15px 25px;
+    border-top: 2px solid var(--wizard-border);
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 -4px 10px rgba(0,0,0,0.1);
+    z-index: 10;
+}
+
+.witcher-wizard .footer-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.witcher-wizard .wizard-footer button {
+    padding: 10px 24px; /* Larger hit area */
+    font-weight: bold;
+    background: var(--wizard-accent);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.witcher-wizard .wizard-footer button:hover {
+    background: var(--wizard-accent-hover);
+}
+
+.witcher-wizard .wizard-footer button:disabled {
+    background: #666;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* Finish Step Redesign */
+.witcher-wizard .character-preview-grid {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 30px;
+    padding-top: 10px;
+}
+
+.witcher-wizard .avatar-selection {
+    position: relative;
+    width: 200px;
+    height: 250px;
+    margin: 0 auto 20px;
+    cursor: pointer;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+    border: 3px solid var(--wizard-border);
+    background: rgba(0,0,0,0.1);
+}
+
+.witcher-wizard .wizard-avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.witcher-wizard .avatar-selection:hover .wizard-avatar {
+    transform: scale(1.1);
+}
+
+.witcher-wizard .avatar-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 0.8rem;
+}
+
+.witcher-wizard .avatar-selection:hover .avatar-overlay {
+    opacity: 1;
+}
+
+.witcher-wizard .wizard-name-input {
+    width: 100%;
+    font-size: 1.4rem;
+    font-family: 'MedievalSharp', serif;
+    background: rgba(255, 255, 255, 0.5);
+    border: 2px solid var(--wizard-border);
+    padding: 10px;
+    text-align: center;
+    color: var(--wizard-accent);
+}
+
+.witcher-wizard .summary-card {
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid var(--wizard-border);
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.witcher-wizard .summary-card h3 {
+    margin-top: 0;
+    font-size: 1.1rem;
+    border-bottom: 2px solid var(--wizard-accent);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.witcher-wizard .summary-line {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+.witcher-wizard .stats-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.witcher-wizard .stat-pill {
+    background: var(--wizard-accent);
+    color: white !important; /* Force white on red */
+    padding: 4px 8px;
+    border-radius: 4px;
+    display: flex;
+    gap: 8px;
+    font-size: 0.8rem;
+    min-width: 65px;
+    justify-content: space-between;
+}
+
+.witcher-wizard .stat-pill span {
+    color: white !important;
+}
+
+.witcher-wizard .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.witcher-wizard .skill-tag {
+    background: rgba(0,0,0,0.05);
+    border: 1px solid var(--wizard-border);
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+}
+/* Selection Grids (Race, Profession, etc.) */
+.witcher-wizard .race-selection,
+.witcher-wizard .profession-selection {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 10px;
+    width: 100%;
+    justify-content: center;
+}
+
+.witcher-wizard .race-card,
+.witcher-wizard .profession-card {
+    background: rgba(255, 255, 255, 0.4);
+    border: 2px solid var(--wizard-border);
+    border-radius: 8px;
+    padding: 12px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    box-shadow: 0 2px 5px var(--wizard-shadow);
+    width: 180px;
+    min-height: 220px;
+}
+
+/* Background Step Enhancements */
+.witcher-wizard .step-background .background-section {
+    background: rgba(255, 255, 255, 0.45);
+    border: 1px solid var(--wizard-border);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.witcher-wizard .step-background h3 {
+    font-family: 'MedievalSharp', serif;
+    color: var(--wizard-accent) !important;
+    border-bottom: 2px solid rgba(139, 0, 0, 0.15);
+    padding-bottom: 6px;
+    margin-top: 0;
+    margin-bottom: 18px;
+    font-size: 1.3rem;
+}
+
+.witcher-wizard .step-background .events-list {
+    background: rgba(0, 0, 0, 0.04);
+    border-radius: 6px;
+    padding: 10px;
+    border: 1px inset rgba(0,0,0,0.1);
+    max-height: 250px;
+    overflow-y: auto;
+    margin-bottom: 15px;
+}
+
+.witcher-wizard .step-background .event-item {
+    padding: 8px 12px;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    display: flex;
+    gap: 12px;
+    font-size: 0.85rem;
+}
+
+.witcher-wizard .step-background .event-age {
+    color: var(--wizard-accent);
+    white-space: nowrap;
+    font-weight: bold;
+}
+
+.witcher-wizard .btn-roll-events {
+    width: 100%;
+    padding: 10px;
+    background: var(--wizard-accent);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    box-shadow: 0 4px 10px rgba(139, 0, 0, 0.2);
+}
+
+.witcher-wizard .btn-roll-events:hover {
+    background: #a00;
+    transform: translateY(-2px);
+}
+
+/* Sidebar Wizard Button Scaling */
+.wizard-button {
+    background: linear-gradient(to right, #2a2a2a, #3a3a3a) !important;
+    color: #ffd700 !important;
+    border: 1px solid #b8860b !important;
+    border-radius: 4px !important;
+    padding: 8px !important;
+    margin: 4px 0 !important;
+    font-family: 'MedievalSharp', serif !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.4) !important;
+    transition: all 0.2s !important;
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 10px !important;
+}
+
+.wizard-button i {
+    color: #ffd700 !important;
+    font-size: 1.1rem !important;
+}
+
+.wizard-button:hover {
+    background: linear-gradient(to right, #3a3a3a, #4a4a4a) !important;
+    border-color: #ffd700 !important;
+    box-shadow: 0 0 10px rgba(255, 215, 0, 0.3) !important;
+}
+
+.witcher-wizard .profession-card img,
+.witcher-wizard .race-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.05);
+    border: 2px solid var(--wizard-border);
+}
+
+.witcher-wizard .profession-card h3 {
+    margin: 5px 0;
+    font-size: 1.1rem;
+}
+
+.witcher-wizard .profession-perks {
+    font-size: 0.85rem;
+    overflow-y: auto;
+    flex: 1;
+    width: 100%;
+}
+
+.witcher-wizard .race-card:hover,
+.witcher-wizard .profession-card:hover {
+    background: rgba(139, 0, 0, 0.1);
+    border-color: var(--wizard-accent);
+    transform: translateY(-5px);
+}
+
+.witcher-wizard .race-card.selected,
+.witcher-wizard .profession-card.selected {
+    background: rgba(139, 0, 0, 0.2);
+    border-color: var(--wizard-accent);
+    box-shadow: 0 0 15px var(--wizard-accent);
+}
+
+.witcher-wizard .race-card img,
+.witcher-wizard .profession-card img,
+.witcher-wizard .race-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.05);
+    border: 2px solid var(--wizard-border);
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.1);
+    border: 2px solid var(--wizard-border);
+}
+
+.witcher-wizard .race-card h3,
+.witcher-wizard .profession-card h3 {
+    margin: 0;
+    color: var(--wizard-accent);
+    font-size: 1.2rem;
+    font-family: 'MedievalSharp', serif;
+}
+
+.witcher-wizard .race-perks,
+.witcher-wizard .profession-perks {
+    font-size: 0.8rem;
+    color: var(--wizard-text-muted);
+    text-align: left;
+    max-height: 100px;
+    overflow-y: auto;
+    width: 100%;
+    padding-right: 5px;
+}
+/* Gear Selection Step (Definitive Grid) */
+.witcher-wizard .gear-container {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 20px;
+    height: 100%;
+}
+
+.witcher-wizard .gear-categories {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.witcher-wizard .gear-category h3 {
+    border-bottom: 2px solid var(--wizard-border);
+    margin-bottom: 15px;
+    font-family: 'MedievalSharp', serif;
+    color: var(--wizard-accent);
+}
+
+.witcher-wizard .gear-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 12px;
+}
+
+.witcher-wizard .gear-item {
+    background: rgba(255, 255, 255, 0.4);
+    border: 2px solid var(--wizard-border);
+    border-radius: 6px;
+    padding: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.witcher-wizard .gear-item:hover {
+    background: rgba(139, 0, 0, 0.05);
+    border-color: var(--wizard-accent);
+    transform: translateY(-2px);
+}
+
+form.witcher-wizard .gear-item.selected {
+    background: rgba(139, 0, 0, 0.15) !important;
+    border-color: var(--wizard-accent) !important;
+    box-shadow: 0 0 8px var(--wizard-accent) !important;
+}
+
+form.witcher-wizard .gear-item img {
+    width: 64px !important;
+    height: 64px !important;
+    max-width: 64px !important;
+    max-height: 64px !important;
+    object-fit: contain !important;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.witcher-wizard .gear-item .name {
+    font-size: 0.8rem;
+    font-weight: bold;
+    line-height: 1.1;
+    height: 2.2em;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-clamp: 2;
+}
+
+.witcher-wizard .gear-item .cost {
+    font-size: 0.75rem;
+    color: var(--wizard-accent);
+    font-weight: bold;
+}
+
+.witcher-wizard .gear-summary {
+    background: rgba(139, 0, 0, 0.05);
+    border: 1px solid var(--wizard-border);
+    border-radius: 8px;
+    padding: 15px;
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+.witcher-wizard .gear-summary h3 {
+    margin-top: 0;
+    font-size: 1.1rem;
+    color: var(--wizard-accent);
+    border-bottom: 2px solid var(--wizard-accent);
+}
+
+.witcher-wizard .gear-summary ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.witcher-wizard .gear-summary li {
+    font-size: 0.85rem;
+    padding: 4px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+}
+
+.witcher-wizard .gear-summary .money-total {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 2px solid var(--wizard-border);
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    color: var(--wizard-text-dark) !important;
+}
+
+.witcher-wizard .gear-summary .money-value {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #b8860b !important;
+}
+.witcher-wizard .budget-warning {
+    background: rgba(139, 0, 0, 0.1);
+    color: #8b0000;
+    border-left: 4px solid #8b0000;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 0.8rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+}
+
+.witcher-wizard .budget-warning i {
+    font-size: 1rem;
+}
+
+.witcher-wizard .money-value.overbudget {
+    color: #e63946 !important;
+    text-decoration: underline wavy;
+}
+
+
+
+/* ── Fix Contrasto Globale v14.1.1 ──────────────────── */
+/* Forza il testo bianco su tutti gli sfondi rossi critici */
+.witcher-wizard .points-display, 
+.witcher-wizard .points-display label, 
+.witcher-wizard .points-display .points-value,
+.witcher-wizard .points-display .points-label,
+.witcher-wizard .points-display span,
+.witcher-wizard .stats-outer-container .points-display .points-value,
+.witcher-wizard .stat-pill,
+.witcher-wizard .stat-pill .stat-abbr,
+.witcher-wizard .stat-pill .stat-value,
+.witcher-wizard .stat-pill span,
+.witcher-wizard .skill-tag,
+.witcher-wizard .gear-tag,
+.witcher-wizard .badge.red,
+.witcher-wizard .negative {
+    color: #ffffff !important;
+}
+
+/* Fix contrast per label punti */
+.witcher-wizard .points-label {
+    text-shadow: none !important;
+}
+
+/* Stilizzazione Dotazione e Tag */
+/* -- Step 6: Professional Gear Formatting ------------ */
+.witcher-wizard .profession-gear-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.witcher-wizard .gear-item-mini {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid var(--wizard-border);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    opacity: 1 !important;
+}
+
+.witcher-wizard .gear-item-mini img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.witcher-wizard .gear-item-mini.selected {
+    background: rgba(184, 134, 11, 0.1) !important;
+    border: 2px solid #b8860b !important;
+    box-shadow: 0 0 5px rgba(184, 134, 11, 0.3);
+}
+
+.witcher-wizard .gear-item-mini.missing {
+    color: var(--wizard-text-muted);
+}
+
+.witcher-wizard .gear-item-mini .name {
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.witcher-wizard .gear-tag {
+    display: inline-block;
+    background: #8b0000;
+    color: white !important;
+    padding: 2px 8px;
+    margin: 2px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+/* Migliora la leggibilità sulla pergamena scura */
+form.witcher-wizard .wizard-content {
+    background: rgba(255, 255, 255, 0.98) !important;
+    color: #1a1a1a !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+}
+
+/* ── Step 5: Skills ────────────────────────────────────────── */
+
+.witcher-wizard .step-skills .skills-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Pool info banner */
+.witcher-wizard .step-skills .skills-pool-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(139, 0, 0, 0.07);
+    border: 1px solid rgba(139, 0, 0, 0.2);
+    border-radius: 6px;
+    padding: 6px 12px;
+    margin: 8px 0 12px 0;
+    font-size: 0.85rem;
+}
+
+.witcher-wizard .step-skills .pool-label {
+    color: var(--wizard-text-muted) !important;
+    font-weight: 600;
+}
+
+.witcher-wizard .step-skills .pool-value {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--wizard-text-dark) !important;
+}
+
+.witcher-wizard .step-skills .pool-value.negative {
+    color: #c0392b !important;
+}
+
+.witcher-wizard .step-skills .pool-hint {
+    margin-left: auto;
+    color: var(--wizard-text-muted) !important;
+    font-style: italic;
+    font-size: 0.78rem;
+}
+
+/* Compact two-column skills grid */
+.witcher-wizard .step-skills .compact-skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 4px 16px;
+}
+
+.witcher-wizard .step-skills .skill-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 6px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    transition: background 0.15s;
+}
+
+.witcher-wizard .step-skills .skill-row:hover {
+    background: rgba(139, 0, 0, 0.05);
+    border-color: rgba(139, 0, 0, 0.15);
+}
+
+.witcher-wizard .step-skills .skill-row.skill-difficult {
+    background: rgba(139, 0, 0, 0.04);
+    border-left: 3px solid rgba(139, 0, 0, 0.3);
+}
+
+.witcher-wizard .step-skills .skill-label {
+    flex: 1;
+    font-size: 0.8rem !important;
+    color: var(--wizard-text-dark) !important;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    min-width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.witcher-wizard .step-skills .cost-badge {
+    display: inline-block;
+    background: #8b0000;
+    color: white !important;
+    font-size: 0.65rem;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+/* Compact +/- controls */
+.witcher-wizard .step-skills .skill-controls.compact {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    flex-shrink: 0;
+}
+
+.witcher-wizard .step-skills .btn-sm {
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    padding: 0;
+    font-size: 0.65rem;
+    border: 1px solid var(--wizard-border);
+    border-radius: 3px;
+    background: white;
+    color: var(--wizard-text-dark);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.15s;
+    line-height: 1;
+}
+
+.witcher-wizard .step-skills .btn-sm:hover {
+    background: var(--wizard-accent);
+    color: white;
+    border-color: var(--wizard-accent);
+}
+
+.witcher-wizard .step-skills .skill-input-sm {
+    width: 36px;
+    text-align: center;
+    font-size: 0.82rem;
+    font-weight: bold;
+    border: 1px solid var(--wizard-border);
+    border-radius: 3px;
+    padding: 1px 2px;
+    color: var(--wizard-text-dark);
+    background: white;
+    height: 22px;
+}
+
+/* Pickup skill picker bar */
+.witcher-wizard .step-skills .skills-picker .controls-row {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 8px;
+    background: rgba(0,0,0,0.03);
+    border-radius: 6px;
+    border: 1px solid var(--wizard-border);
+}
+
+.witcher-wizard .step-skills .skills-picker select {
+    flex: 1;
+    font-size: 0.85rem;
+    padding: 4px 8px;
+    border: 1px solid var(--wizard-border);
+    border-radius: 4px;
+    background: white;
+    color: var(--wizard-text-dark);
+}
+
+.witcher-wizard .step-skills .btn-add {
+    background: var(--wizard-accent);
+    color: white;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background 0.2s;
+}
+
+.witcher-wizard .step-skills .btn-add:hover {
+    background: var(--wizard-accent-hover);
+}
+
+/* Tabs styling for skills */
+.witcher-wizard .step-skills .sheet-tabs {
+    display: flex;
+    gap: 4px;
+    padding: 0;
+    border-bottom: 2px solid var(--wizard-border);
+    margin-bottom: 8px;
+}
+
+.witcher-wizard .step-skills .sheet-tabs .item {
+    padding: 6px 16px;
+    border-radius: 4px 4px 0 0;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--wizard-text-muted);
+    border: 1px solid transparent;
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.15s;
+}
+
+.witcher-wizard .step-skills .sheet-tabs .item:hover {
+    background: rgba(139, 0, 0, 0.07);
+    color: var(--wizard-accent);
+}
+
+.witcher-wizard .step-skills .sheet-tabs .item.active {
+    background: white;
+    color: var(--wizard-accent);
+    border-color: var(--wizard-border);
+    border-bottom-color: white;
+    margin-bottom: -2px;
+}
+
+.witcher-wizard .step-skills .sheet-tabs .badge {
+    background: var(--wizard-accent);
+    color: white !important;
+    border-radius: 10px;
+    padding: 1px 7px;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.witcher-wizard .step-skills .sheet-tabs .badge.negative {
+    background: #c0392b;
+    animation: pulse-warn 1s infinite;
+}
+
+@keyframes pulse-warn {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.6; }
+}
+
+.witcher-wizard .step-skills .content .tab {
+    display: none;
+    flex-direction: column;
+}
+
+.witcher-wizard .step-skills .content .tab.active {
+    display: flex;
+}
+
+
+

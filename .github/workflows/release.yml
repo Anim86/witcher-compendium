@@ -1,0 +1,106 @@
+name: Release Foundry Packages
+run-name: Release ${{ inputs.version || github.ref_name }} by @${{ github.actor }}
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Versione da rilasciare (es. v14.1.47)'
+        required: true
+        default: 'v14.1.47'
+
+permissions:
+  contents: write
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4.2.2
+        with:
+          fetch-depth: 0
+
+      - name: Set Version Variables
+        id: vars
+        run: |
+          V_VERSION=${{ inputs.version || github.ref_name }}
+          VERSION=${V_VERSION#v}
+          echo "v_version=$V_VERSION" >> $GITHUB_OUTPUT
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+
+      - name: Update Manifest Files
+        run: |
+          V_VER="${{ steps.vars.outputs.v_version }}"
+          VER="${{ steps.vars.outputs.version }}"
+          
+          jq --arg ver "$V_VER" \
+             --arg dl "https://github.com/Anim86/witcher-compendium/releases/download/$V_VER/system.zip" \
+             '.version = $ver | .download = $dl' \
+             TheWitcherItaNewSystem/system.json > system.json.tmp && mv system.json.tmp TheWitcherItaNewSystem/system.json
+             
+          jq --arg ver "$VER" \
+             --arg dl "https://github.com/Anim86/witcher-compendium/releases/download/$V_VER/witcher-compendium-$V_VER.zip" \
+             '.version = $ver | .download = $dl' \
+             witcher-compendium/module.json > module.json.tmp && mv module.json.tmp witcher-compendium/module.json
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4.1.0
+        with:
+          node-version: '24'
+
+      - name: Install Tools Dependencies
+        run: |
+          cd _tools/scripts
+          npm install
+
+      - name: Package System
+        run: |
+          cd TheWitcherItaNewSystem
+          zip -r ../system.zip . -x "*.zip" -x ".git*" -x "node_modules*"
+          cd ..
+
+      - name: Package Module
+        run: |
+          V_VER="${{ steps.vars.outputs.v_version }}"
+          cd witcher-compendium
+          zip -r ../witcher-compendium-${V_VER}.zip . -x "*.zip" -x ".git*" -x "node_modules*"
+          cd ..
+
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4.4.3
+        with:
+          name: packaged-zips
+          path: |
+            system.zip
+            witcher-compendium-*.zip
+
+      - name: Create Release
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v2.2.1
+        with:
+          files: |
+            system.zip
+            witcher-compendium-${{ steps.vars.outputs.v_version }}.zip
+            TheWitcherItaNewSystem/system.json
+            witcher-compendium/module.json
+          draft: false
+          prerelease: false
+          generate_release_notes: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Update Repository Manifests
+        if: startsWith(github.ref, 'refs/tags/')
+        run: |
+          V_VER="${{ steps.vars.outputs.v_version }}"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add TheWitcherItaNewSystem/system.json witcher-compendium/module.json
+          git commit -m "chore: update manifests to ${V_VER} [skip ci]" || echo "No changes"
+          git push origin HEAD:main

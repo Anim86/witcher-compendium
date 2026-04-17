@@ -1,0 +1,45 @@
+const fs = require('fs');
+const path = require('path');
+
+const baseDirs = [
+    `e:\\AntigravitiProgetti\\CompendioTheWitcher\\_tools\\src-packs\\REGOLAMENTO_E_NARRATIVA\\Lore_e_Racconti\\witcher-lore`,
+    `e:\\AntigravitiProgetti\\CompendioTheWitcher\\_tools\\src-packs\\REGOLAMENTO_E_NARRATIVA\\Lore_e_Racconti\\witcher-lore-chaos`,
+    `e:\\AntigravitiProgetti\\CompendioTheWitcher\\_tools\\src-packs\\REGOLAMENTO_E_NARRATIVA\\Lore_e_Racconti\\witcher-lore-racconti`,
+    `e:\\AntigravitiProgetti\\CompendioTheWitcher\\_tools\\src-packs\\REGOLAMENTO_E_NARRATIVA\\Lore_e_Racconti\\witcher-dlc-sr-lore`
+];
+
+const updatesA = {
+    "Accademia di Oxenfurt": "<p>Oxenfurt è la più vivace tra le città di Redania. L'Accademia di Oxenfurt occupa il centro della città con le sue aule, laboratori e biblioteche. La periferia è formata da taverne, bar e bordelli, che accolgono gli studenti, di solito spensierati e squattrinati. È una fucina costante d'idee e invenzioni, unica in tutto il Nord.</p>",
+    "Ordine della Rosa Fiammeggiante": "<p>L'originale braccio militare della Chiesa era l'Ordine della Rosa Bianca, ma con il diffondersi del culto in Temeria e Aedirn i loro bersagli divennero sempre più vari. Tutti gli utilizzatori di magia – inclusi witcher, streghe e non-umani – divennero nemici dell'ordine, rei di ogni disgrazia, dal cattivo tempo alle guerre. Il primo Gran Maestro dell'Ordine fu Jacques de Aldersberg e, quando una rosa bianca prese fuoco nelle sue mani, cambiò il nome in Ordine della Rosa Fiammeggiante. Il gruppo divenne ancora più militante, al punto che alcuni sostengono che il fanatismo del Gran Maestro ne avesse intaccato la sanità mentale. Secondo alcuni, dopo la morte di de Aldersberg, il nuovo gran maestro Siegfried di Denesle tentò di moderare l'ordine e cambiò l'araldica da una rosa in fiamme a una rosa con un nastro dorato. Tuttavia le persecuzioni sono continuate e l'Ordine ha trovato il proprio monarca ideale in Radovid. Il Re ha concesso all'Ordine terre nei pressi di Roggeven in Redania e ha incoraggiato la loro caccia alle streghe. Il Fuoco Eterno è ora la religione di stato in Redania e si sta espandendo rapidamente, soppiantando il culto di Kreve nel Nord. Di recente, l'Ordine della Rosa Fiammeggiante si è sciolto per motivi sconosciuti. Alcuni membri sono rimasti a Novigrad come forza di polizia e guardiani del sempre più vasto tempio soprannominato Grande Picchetto. Altri sono divenuti ufficiali dei Cacciatori di Streghe. Infine, altri sono stati inviati al fronte tra Temeria e Nilfgaard, dove sebbene abbondi il lavoro per dei cavalieri, è anche una condanna a morte.</p>",
+    "Scuola del Lupo": "<p>La Fortezza del Lupo, Kaer Morhen, è nascosta nelle Montagne Blu a Kaedwen. Questi sono i witcher di cui sentiamo più parlare. Combattono con le spade, menando colpi potenti come ci si aspetta da uccisori di mostri. Ne restano solo 4 o 5, tra cui il leggendario Geralt di Rivia. I racconti delle sue imprese sono ormai tanto fantastici da far pensare che siano solo frutto dell'immaginazione dei bardi, che fanno affari d'oro narrando le sue gesta. Una rivolta popolare danneggiò gravemente la fortezza e uccise numerosi witcher. L'allenamento è stato difficile ma ben strutturato, coprendo ogni aspetto della professione del witcher. Ha imparato a colpire con forza e rapidità per terminare in fretta la caccia.</p>",
+    "Scuola del Gatto": "<p>I Gatti sono, probabilmente, ciò che ha portato la gente a non fidarsi dei witcher. I loro metodi per creare nuovi witcher erano diversi da quelli delle altre scuole e producevano individui instabili e sanguinari. Non avevano una fortezza, ma si muovevano in una carovana chiamata Dyn Marw. Lo stile di combattimento dei Gatti è rapido, simile a quello elfico. I Gatti si sono adeguati alla scarsità di mostri divenendo assassini e potrebbero anche non essere più considerati witcher. La loro esistenza rafforza la paura e i pregiudizi della popolazione. Non è chiaro se vivano ancora membri di questa scuola, ma la carovana sembra non esistere più. La mutazione e l'allenamento distrugge emotivamente chi vi si sottopone, costretto a lottare contro i propri impulsi crudeli e violenti.</p>",
+    "Scuola del Grifone": "<p>La Fortezza del Grifone, Kaer y Seren, era nel Nord, dove i Monti del Drago raggiungono il mare. Le altre scuole rispettavano i Grifoni per la loro competenza magica e lo stile di combattimento che enfatizzava l'affrontare molteplici avversari. La loro ricerca ha potenziato molti dei segni esistenti. Sfortunatamente, una valanga ha ucciso molti witcher e danneggiato gravemente la scuola. Secondo le voci, fu provocata da un gruppo di maghi furiosi per il rifiuto dei Grifoni di condividere importanti libri di magia della loro biblioteca. L'allenamento si concentrava sull'affrontare avversari multipli e usare le limitate capacità magiche al massimo.</p>",
+    "Scuola dell'Orso": "<p>La Fortezza dell'Orso, Haern Cadwch, si trova sui Monti Amell. Questi witcher indossavano armature pesanti, ma più flessibili rispetto a quelle di piastre, e potrebbero avere stretto un patto con i nani e gli gnomi degli Amell. Come ci si può aspettare, gli Orsi erano temibili combattenti, dalla grande forza e resistenza. Quando fallirono nel distruggere una cabala di vampiri più volte, la frustrazione delle popolazioni di quelle provincie in guerra portò ad una rivolta. Tuttavia sembra che la fortezza sia ancora intatta tra le montagne.</p>",
+    "Scuola della Vipera": "<p>Si racconta che la Fortezza della Vipera, Gorthwr Gwaed, si trovi sui Tir Tochair, vicino a Nilfgaard. Hanno uno stile di combattimento sinuoso e imprevedibile e portano due lame più corte dette \"zanne\", spesso avvelenate. Sono forse i più alieni e misteriosi tra i witcher. Dopo il vano tentativo dell'Usurpatore di sottomettere le Vipere, l'esercito Nilfgaardiano distrusse la fortezza e disperse i witcher. Letho di Guleta ha tentato di riconquistare il favore imperiale servendo Emhyr var Emreis.</p>",
+    "Druidismo": "<p>I druidi sono incantatori insoliti il cui potere è ritenuto di origine divina, conferito non da una divinità specifica ma dalla natura stessa, che venerano come ordine e armonia. A differenza dei preti, i druidi non compiono incantesimi ma invocazioni e sigilli: magie meno complesse, lanciate con parole e gesti meno precisi ma più accorati, con lo scopo di preservare l'equilibrio del mondo. Alcuni credono che il culto di Veyopatis si sia evoluto nel moderno Druidismo. La società dei druidi è chiusa, non cerca proseliti. Vivono nelle foreste in gruppi chiamati circoli e compiono i propri riti sotto le stelle presso boschi sacri o circoli di monoliti. Spesso inviano petizioni alle autorità locali quando gli umani alterano l'equilibrio naturale e, grazie alla loro saggezza e capacità come guaritori, vengono spesso ascoltati. Molti druidi del Nord risiedono ora presso Kaer Myrkid, il circolo di Toussaint, sotto la protezione della Duchessa Anna Henrietta. Esiste poi un circolo a Skellige, il cui capo è chiamato \"gerofante\" se uomo o \"flaminika\" se donna. L'attuale gerofante di Skellige è Ermion, detto anche Saccoditopo.</p>",
+    "Chiesa di Kreve": "<p>Il culto di Kreve è una delle religioni del Nord, basato sulla venerazione di un misconosciuto dio dei cieli e del tuono. In passato diffuso in Redania, Kaedwen e verso nord, oggi è ormai soppiantato dalla Fiamma Eterna. I suoi sacerdoti tendono ad essere moralisti, ma alcuni sono stati assoldati dai sovrani concentrando il loro messaggio sul Diritto Divino dei re e la necessità di grandi donazioni alla Chiesa. Kreve è considerato la nemesi di Melitele: i suoi seguaci sono incoraggiati a portare avanti crociate morali e donare i propri beni. Tra i santi più celebri vi è San Gregory, che usò metà del suo grande patrimonio per comprare cibo a Nazair e salvare Novigrad dalla fame.</p>",
+    "San Gregory": "<p>San Gregory è un santo venerato dai fedeli del culto di Kreve, celebre per aver usato metà del suo grande patrimonio personale per comprare cibo a Nazair e salvare Novigrad dalla fame. È citato come esempio di devozione e generosità dai sacerdoti di Kreve.</p>"
+};
+
+let report = [];
+
+baseDirs.forEach(baseDir => {
+    if (!fs.existsSync(baseDir)) return;
+    const files = fs.readdirSync(baseDir).filter(f => f.endsWith('.json'));
+    
+    files.forEach(f => {
+        const fullPath = path.join(baseDir, f);
+        const data = JSON.parse(fs.readFileSync(fullPath, 'utf8'));
+        const name = data.name;
+    
+        if (updatesA[name]) {
+            if (!data.system) data.system = {};
+            data.system.description = updatesA[name];
+            fs.writeFileSync(fullPath, JSON.stringify(data, null, 4), 'utf8');
+            const packName = path.basename(baseDir);
+            report.push(`[${packName}] [${name}] — STATO: Aggiornato`);
+        }
+    });
+});
+
+fs.writeFileSync('e:\\AntigravitiProgetti\\CompendioTheWitcher\\scratch\\update_report_3.txt', report.join('\n'), 'utf8');

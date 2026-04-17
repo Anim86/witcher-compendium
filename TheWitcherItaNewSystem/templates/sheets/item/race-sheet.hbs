@@ -1,0 +1,89 @@
+<section class="{{item.type}} scrollable">
+    <header class="item-header">
+        <h1 class="itemname"><input name="name" type="text" value="{{item.name}}" placeholder="{{localize 'WITCHER.Name'}}" /></h1>
+        {{#if showConfig}}
+            <a class="configure-item" data-action="configureItem"><i class="fas fa-gear"></i></a>
+        {{/if}}
+        <general>
+            <itemimage>
+                <img class="profile-img" src="{{itemImg}}" data-action="editImage" data-edit="img" title="{{item.name}}" />
+            </itemimage>
+            <div class="information-grid">
+                <div class="info-item info-full">
+                    <label>{{localize "WITCHER.Item.SourceBook"}}</label>
+                    <input type="text" name="system.sourcebook" value="{{item.system.sourcebook}}" />
+                </div>
+            </div>
+        </general>
+    </header>
+
+    <div class="item-description-container">
+        <div class="section-title">
+            <i class="fas fa-users-rays"></i> {{localize "WITCHER.Actor.Perks"}}
+        </div>
+        <div class="perks-grid">
+            <div class="perk-card">
+                <div class="perk-header">
+                    <input name="system.perk1.name" type="text" value="{{item.system.perk1.name}}" placeholder="{{localize 'WITCHER.Actor.Perk'}} 1" />
+                </div>
+                {{formGroup enrichedText.perk1.systemField value=enrichedText.perk1.value enriched=enrichedText.perk1.enriched toggled=true}}
+            </div>
+            <div class="perk-card">
+                <div class="perk-header">
+                    <input name="system.perk2.name" type="text" value="{{item.system.perk2.name}}" placeholder="{{localize 'WITCHER.Actor.Perk'}} 2" />
+                </div>
+                {{formGroup enrichedText.perk2.systemField value=enrichedText.perk2.value enriched=enrichedText.perk2.enriched toggled=true}}
+            </div>
+            <div class="perk-card">
+                <div class="perk-header">
+                    <input name="system.perk3.name" type="text" value="{{item.system.perk3.name}}" placeholder="{{localize 'WITCHER.Actor.Perk'}} 3" />
+                </div>
+                {{formGroup enrichedText.perk3.systemField value=enrichedText.perk3.value enriched=enrichedText.perk3.enriched toggled=true}}
+            </div>
+            <div class="perk-card">
+                <div class="perk-header">
+                    <input name="system.perk4.name" type="text" value="{{item.system.perk4.name}}" placeholder="{{localize 'WITCHER.Actor.Perk'}} 4" />
+                </div>
+                {{formGroup enrichedText.perk4.systemField value=enrichedText.perk4.value enriched=enrichedText.perk4.enriched toggled=true}}
+            </div>
+        </div>
+    </div>
+
+    <div class="item-description-container">
+        <div class="section-title">
+            <i class="fas fa-globe-europe"></i> {{localize "WITCHER.Actor.SocialStanding"}}
+        </div>
+        <div class="properties-grid" style="grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));">
+            <div class="property-card">
+                <label>{{localize "WITCHER.socialStanding.north"}}</label>
+                <select name="system.socialStanding.north">
+                    {{selectOptions config.socialStanding selected=item.system.socialStanding.north localize=true}}
+                </select>
+            </div>
+            <div class="property-card">
+                <label>{{localize "WITCHER.socialStanding.nilfgaard"}}</label>
+                <select name="system.socialStanding.nilfgaard">
+                    {{selectOptions config.socialStanding selected=item.system.socialStanding.nilfgaard localize=true}}
+                </select>
+            </div>
+            <div class="property-card">
+                <label>{{localize "WITCHER.socialStanding.skellige"}}</label>
+                <select name="system.socialStanding.skellige">
+                    {{selectOptions config.socialStanding selected=item.system.socialStanding.skellige localize=true}}
+                </select>
+            </div>
+            <div class="property-card">
+                <label>{{localize "WITCHER.socialStanding.dolBlathanna"}}</label>
+                <select name="system.socialStanding.dolBlathanna">
+                    {{selectOptions config.socialStanding selected=item.system.socialStanding.dolBlathanna localize=true}}
+                </select>
+            </div>
+            <div class="property-card">
+                <label>{{localize "WITCHER.socialStanding.mahakam"}}</label>
+                <select name="system.socialStanding.mahakam">
+                    {{selectOptions config.socialStanding selected=item.system.socialStanding.mahakam localize=true}}
+                </select>
+            </div>
+        </div>
+    </div>
+</section>

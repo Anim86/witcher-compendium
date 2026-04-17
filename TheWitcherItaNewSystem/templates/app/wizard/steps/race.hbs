@@ -1,0 +1,24 @@
+<div class="wizard-step step-race">
+    <h2>{{localize "WITCHER.Wizard.Step.Race.Title"}}</h2>
+    <p>{{localize "WITCHER.Wizard.Step.Race.Description"}}</p>
+
+    <div class="race-selection">
+        {{#each races}}
+        <div class="race-card {{#if (eq ../character.race._id _id)}}selected{{/if}}" data-action="selectRace" data-race-id="{{_id}}">
+            <img src="{{img}}" alt="{{name}}">
+            <h3>{{name}}</h3>
+            <div class="race-perks">
+                {{#if system.description}}
+                    {{{system.description}}}
+                {{else}}
+                    <ul>
+                        {{#if system.perk1.name}}<li><strong>{{system.perk1.name}}</strong></li>{{/if}}
+                        {{#if system.perk2.name}}<li><strong>{{system.perk2.name}}</strong></li>{{/if}}
+                        {{#if system.perk3.name}}<li><strong>{{system.perk3.name}}</strong></li>{{/if}}
+                    </ul>
+                {{/if}}
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>

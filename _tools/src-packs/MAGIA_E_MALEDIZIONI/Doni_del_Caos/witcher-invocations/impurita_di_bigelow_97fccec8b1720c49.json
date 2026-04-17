@@ -1,0 +1,61 @@
+{
+    "_id": "97fccec8b1720c49",
+    "name": "Impurità di Bigelow",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Doni_del_Caos/witcher-invocations/impurita_di_bigelow.webp",
+    "system": {
+        "description": "<p>Invocazione da Druido di livello Esperto. Contamina con batteri fino a 2 metri cubi di cibo o liquidi. Chi li consuma diventa Malato per un'ora con un costo di 5 RES; spendendo 10 RES la vittima subisce anche lo status Avvelenato.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "TC 93",
+        "class": "Invocations",
+        "level": "journeyman",
+        "source": "Druid",
+        "stamina": 5,
+        "staminaIsVar": true,
+        "effect": "Contamina con batteri cibo o liquidi rendendoli veicolo di Malattia (5 RES) o Veleno (10 RES).",
+        "range": "4m",
+        "duration": "Permanente",
+        "defence": "Nessuna",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}
