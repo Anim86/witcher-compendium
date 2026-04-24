@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompts Batch 20 - Witcher Compendium</title>
+    <style>
+        body { font-family: sans-serif; background: #1a1a1a; color: #e0e0e0; padding: 20px; line-height: 1.6; }
+        .batch-section { margin-bottom: 40px; border-bottom: 1px solid #444; padding-bottom: 20px; }
+        .path-info { background: #333; color: #4caf50; padding: 5px 10px; border-radius: 4px; font-family: monospace; display: inline-block; margin-bottom: 15px; }
+        .item { background: #2a2a2a; padding: 15px; margin-bottom: 10px; border-radius: 8px; display: flex; flex-direction: column; }
+        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+        .name { font-weight: bold; color: #ff9800; font-size: 1.1em; }
+        .meta { color: #888; font-size: 0.9em; }
+        .prompt-box { background: #111; padding: 10px; border-radius: 4px; font-family: monospace; font-size: 0.9em; margin-bottom: 10px; position: relative; }
+        button { background: #4caf50; color: white; border: none; padding: 8px 15px; border-radius: 4px; cursor: pointer; font-weight: bold; transition: background 0.3s; }
+        button:hover { background: #45a049; }
+        button.copied { background: #2196f3; }
+    </style>
+</head>
+<body>
+    <h1>Prompts Batch 20 (Componenti & Mutageni)</h1>
+    <p>Clicca sul tasto verde per copiare il prompt. Salva i file PNG nelle cartelle indicate in verde.</p>
+
+    <div id="content"></div>
+
+    <script>
+        const data = [
+            {
+                section: "1. Materiali Base",
+                path: "temp_images/witcher-components/",
+                items: [
+                    { name: "Acciaio Mahakaman", file: "acciaio_mahakaman.png", prompt: "Extreme close-up digital painting viewed from directly above, top-down perspective, a high-quality Mahakaman steel ingot with dwarven runes etched on it lying flat on a dark rough textured stone surface, large subject filling the frame, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus." },
+                    { name: "Acciaio Nero", file: "acciaio_nero.png", prompt: "Extreme close-up digital painting viewed from directly above, top-down perspective, a dark, almost black heavy steel ingot with a slight matte finish lying flat on a dark rough textured stone surface, large subject filling the frame, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus." },
+                    { name: "Acciaio Tretogor", file: "acciaio_tretogor.png", prompt: "Extreme close-up digital painting viewed from directly above, top-down perspective, a polished steel ingot with Redanian insignias faintly visible lying flat on a dark rough textured stone surface, large subject filling the frame, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus." },
+                    { name: "Dimeritium Mahakaman", file: "dimeritium_mahakaman.png", prompt: "Extreme close-up digital painting viewed from directly above, top-down perspective, a glowing iridescent blue-green dimeritium ingot with dwarven markings lying flat on a dark rough textured stone surface, large subject filling the frame, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus." },
+                    { name: "Ossa di Bestia", file: "Ossa_di_Bestia.png", prompt: "Extreme close-up digital painting viewed from directly above, top-down perspective, a pile of bleached large monster bones and vertebrae lying flat on a dark rough textured stone surface, large subject filling the frame, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus." },
+                    { name: "Pelle di Mucca", file: "pelle_di_mucca.png", prompt: "Extreme close-up digital painting viewed from directly above, top-down perspective, a folded piece of common cow hide with brown and white patches lying flat on a dark rough textured stone surface, large subject filling the frame, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus." },
+                    { name: "Grasso d'Orso", file: "grasso_dorso.png", prompt: "Extreme close-up digital painting viewed from directly above, top-down perspective, an open wooden tub containing thick yellowish translucent bear fat lying flat on a dark rough textured stone surface, large subject filling the frame, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus." },
+                    { name: "Olio di Papero", file: "Olio_di_Papero.png", prompt: "Extreme close-up digital painting viewed from directly above, top-down perspective, a small glass jar containing thick orange-colored bird oil lying flat on a dark rough textured stone surface, large subject filling the frame, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus." },
+                    { name: "Cerume di Orco", file: "cerume_di_orco.png", prompt: "Extreme close-up digital painting viewed from directly above, top-down perspective, a disgusting lump of waxy yellowish-brown ogre wax lying flat on a dark rough textured stone surface, large subject filling the frame, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus." }
+                ]
+            },
+            {
+                section: "2. Parti di Mostri DLC",
+                path: "temp_images/witcher-components-diario/",
+                items: [
+                    { name: "Cervello di Botchling", file: "cervello_di_botchling.png", prompt: "Extreme close-up digital painting viewed from directly above, top-down perspective, a small pulsating greyish brain of a cursed botchling lying flat on a dark rough textured stone surface, large subject filling the frame, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus." },
+                    { name: "Cuore di Vendigo", file: "cuore_di_vendigo.png", prompt: "Extreme close-up digital painting viewed from directly above, top-down perspective, a frozen-looking blue-tinted heart of a Vendigo monster lying flat on a dark rough textured stone surface, large subject filling the frame, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus." },
+                    { name: "Sangue di Botchling", file: "sangue_di_botchling.png", prompt: "Extreme close-up digital painting viewed from directly above, top-down perspective, a small puddle of dark viscous cursed blood lying flat on a dark rough textured stone surface, large subject filling the frame, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus." },
+                    { name: "Zanne di Vampiro Superiore", file: "zanne_di_vampiro_superiore.png", prompt: "Extreme close-up digital painting viewed from directly above, top-down perspective, two long sharp ivory fangs of a higher vampire lying flat on a dark rough textured stone surface, large subject filling the frame, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus." }
+                ]
+            },
+            {
+                section: "3. Mutageni DLC",
+                path: "temp_images/witcher-components-mutageni-dw/",
+                items: [
+                    { name: "Mutageno: Bruxa (Blu)", file: "mutageno_bruxa_blu.png", prompt: "Extreme close-up digital painting viewed from directly above, top-down perspective, a glowing blue organic mutagenic orb with internal swirling energy from a Bruxa lying flat on a dark rough textured stone surface, large subject filling the frame, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus." },
+                    { name: "Mutageno: Leshen (Blu)", file: "mutageno_leshen_blu.png", prompt: "Extreme close-up digital painting viewed from directly above, top-down perspective, a glowing blue organic mutagenic orb with wooden and leaf-like textures inside from a Leshen lying flat on a dark rough textured stone surface, large subject filling the frame, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus." },
+                    { name: "Mutageno d'Orso (Verde)", file: "mutageno_dorso_verde.png", prompt: "Extreme close-up digital painting viewed from directly above, top-down perspective, a glowing green organic mutagenic orb with thick fur-like internal structures from a bear lying flat on a dark rough textured stone surface, large subject filling the frame, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus." }
+                ]
+            },
+            {
+                section: "4. Mutazioni & Tratti",
+                path: "temp_images/witcher-mutations/ (o witcher-mutazioni-tc/)",
+                items: [
+                    { name: "Mutageno dell'Arachas", file: "mutageno_dellarachas.png", prompt: "Extreme close-up digital painting viewed from directly above, top-down perspective, a glowing amber-colored organic mutagenic orb with insectoid leg shapes inside lying flat on a dark rough textured stone surface, large subject filling the frame, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus." },
+                    { name: "Mutageno della Sirena", file: "mutageno_della_sirena.png", prompt: "Extreme close-up digital painting viewed from directly above, top-down perspective, a glowing turquoise organic mutagenic orb with scale-like internal textures lying flat on a dark rough textured stone surface, large subject filling the frame, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus." },
+                    { name: "Mutageno del Nekker", file: "mutageno_del_nekker.png", prompt: "Extreme close-up digital painting viewed from directly above, top-down perspective, a glowing small organic mutagenic orb with internal muscle-like textures from a Nekker lying flat on a dark rough textured stone surface, large subject filling the frame, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus." },
+                    { name: "Tratto Mutazione: Corazza", file: "tratto_mutazione_corazza.png", prompt: "Extreme close-up digital painting viewed from directly above, top-down perspective, a piece of thick natural bone-like armor plate lying flat on a dark rough textured stone surface, large subject filling the frame, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus." },
+                    { name: "Tratto Mutazione: Adattamento Anfibio", file: "tratto_mutazione_adattamento_anfibio.png", prompt: "Extreme close-up digital painting viewed from directly above, top-down perspective, a set of translucent blue-green gills or fin-like structures lying flat on a dark rough textured stone surface, large subject filling the frame, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus." }
+                ]
+            }
+        ];
+
+        const container = document.getElementById('content');
+        data.forEach(sec => {
+            const secDiv = document.createElement('div');
+            secDiv.className = 'batch-section';
+            secDiv.innerHTML = `<h2>${sec.section}</h2><div class="path-info">Salva in: ${sec.path}</div>`;
+            sec.items.forEach(item => {
+                const itemDiv = document.createElement('div');
+                itemDiv.className = 'item';
+                itemDiv.innerHTML = `
+                    <div class="header">
+                        <span class="name">${item.name}</span>
+                        <span class="meta">Nome file richiesto: ${item.file}</span>
+                    </div>
+                    <div class="prompt-box" id="p-${item.file}">${item.prompt}</div>
+                    <button onclick="copyToClipboard('${item.prompt}', this)">Copia Prompt</button>
+                `;
+                secDiv.appendChild(itemDiv);
+            });
+            container.appendChild(secDiv);
+        });
+
+        function copyToClipboard(text, btn) {
+            navigator.clipboard.writeText(text).then(() => {
+                const originalText = btn.innerText;
+                btn.innerText = "Copiato!";
+                btn.classList.add('copied');
+                setTimeout(() => {
+                    btn.innerText = originalText;
+                    btn.classList.remove('copied');
+                }, 2000);
+            });
+        }
+    </script>
+</body>
+</html>

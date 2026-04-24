@@ -1,0 +1,1730 @@
+[
+  {
+    "_id": "402d36bee857486c",
+    "name": "Acquazzone",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells/Acquazzone.webp",
+    "system": {
+      "description": "<p>Acquazzone crea una pioggia torrenzia- le in un'area del raggio di 3m che spegne ogni fuoco. L'incantesimo contrasta gli effetti del fuoco.</p>",
+      "quantity": "1",
+      "weight": 0,
+      "cost": 0,
+      "sourcebook": "MB 103",
+      "class": "Mage",
+      "level": "novice",
+      "source": "Water",
+      "stamina": 2,
+      "staminaIsVar": false,
+      "effect": "Acquazzone crea una pioggia torrenzia- le in un'area del raggio di 3m che spegne ogni fuoco. L'incantesimo contrasta gli effetti del fuoco.",
+      "range": "8m",
+      "duration": "Attiva (2 RES)",
+      "defence": "Nessuna",
+      "damageProperties": {
+        "armorPiercing": false,
+        "improvedArmorPiercing": false,
+        "ablating": false,
+        "crushingForce": false,
+        "damageIsAblation": false,
+        "stun": 0,
+        "damageToAllLocations": false,
+        "bypassesWornArmor": false,
+        "bypassesNaturalArmor": false,
+        "defenseDifferenceMultiplier": false,
+        "defenseMultiplierCap": 5,
+        "variableDamage": false,
+        "effects": [],
+        "oilEffect": "",
+        "silverTrait": false,
+        "silverDamage": "",
+        "isMeteorite": false,
+        "isNonLethal": false
+      },
+      "regionProperties": {
+        "createRegionFromTemplate": false,
+        "behaviours": {
+          "tokenEnter": null,
+          "tokenTurnStart": null,
+          "tokenMoveWithin": null,
+          "tokenExit": null
+        }
+      },
+      "attackOptions": [
+        "spell"
+      ],
+      "spellAttackSkill": "spellcast"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+      "systemId": "TheWitcherItaNewSystem",
+      "coreVersion": 14
+    }
+  },
+  {
+    "_id": "5750cd6d5a9640c6",
+    "name": "Adenydd",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells/Adenydd.webp",
+    "system": {
+      "description": "<p>Adenydd rende l'incantatore più leggero, per- mettendogli di planare mentre cade. Ciò significa che per ogni 2m di caduta può spostarsi di 2m in una qualsi- asi direzione. Se tocca terra entro la durata dell'incante- simo, non subisce alcun danno.</p>",
+      "quantity": "1",
+      "weight": 0,
+      "cost": 0,
+      "sourcebook": "MB 103",
+      "class": "Mage",
+      "level": "novice",
+      "source": "air",
+      "stamina": 4,
+      "staminaIsVar": false,
+      "effect": "Adenydd rende l'incantatore più leggero, per- mettendogli di planare mentre cade. Ciò significa che per ogni 2m di caduta può spostarsi di 2m in una qualsi- asi direzione. Se tocca terra entro la durata dell'incante- simo, non subisce alcun danno.",
+      "range": "Personale",
+      "duration": "Attiva (2 RES)",
+      "defence": "Nessuna",
+      "damageProperties": {
+        "armorPiercing": false,
+        "improvedArmorPiercing": false,
+        "ablating": false,
+        "crushingForce": false,
+        "damageIsAblation": false,
+        "stun": 0,
+        "damageToAllLocations": false,
+        "bypassesWornArmor": false,
+        "bypassesNaturalArmor": false,
+        "defenseDifferenceMultiplier": false,
+        "defenseMultiplierCap": 5,
+        "variableDamage": false,
+        "effects": [],
+        "oilEffect": "",
+        "silverTrait": false,
+        "silverDamage": "",
+        "isMeteorite": false,
+        "isNonLethal": false
+      },
+      "regionProperties": {
+        "createRegionFromTemplate": false,
+        "behaviours": {
+          "tokenEnter": null,
+          "tokenTurnStart": null,
+          "tokenMoveWithin": null,
+          "tokenExit": null
+        }
+      },
+      "attackOptions": [
+        "spell"
+      ],
+      "spellAttackSkill": "spellcast"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+      "systemId": "TheWitcherItaNewSystem",
+      "coreVersion": 14
+    }
+  },
+  {
+    "_id": "47102457bb98469c",
+    "name": "Aenye",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells/Aenye.webp",
+    "system": {
+      "description": "<p>Aenye consente di scagliare una palla di fuoco puro contro un bersaglio entro il raggio dell'incantesi- mo. La palla di fuoco infligge 4d6 danni e ha il 75% di probabilit d'infliggere l'effetto A Fuoco al bersaglio.</p>",
+      "quantity": "1",
+      "weight": 0,
+      "cost": 0,
+      "sourcebook": "MB 103",
+      "class": "Mage",
+      "level": "novice",
+      "source": "air",
+      "stamina": 5,
+      "staminaIsVar": false,
+      "effect": "Aenye consente di scagliare una palla di fuoco puro contro un bersaglio entro il raggio dell'incantesi- mo. La palla di fuoco infligge 4d6 danni e ha il 75% di probabilit d'infliggere l'effetto A Fuoco al bersaglio.",
+      "range": "12m",
+      "duration": "Istantanea",
+      "defence": "Schivare o Bloccare",
+      "damageProperties": {
+        "armorPiercing": false,
+        "improvedArmorPiercing": false,
+        "ablating": false,
+        "crushingForce": false,
+        "damageIsAblation": false,
+        "stun": 0,
+        "damageToAllLocations": false,
+        "bypassesWornArmor": false,
+        "bypassesNaturalArmor": false,
+        "defenseDifferenceMultiplier": false,
+        "defenseMultiplierCap": 5,
+        "variableDamage": false,
+        "effects": [],
+        "oilEffect": "",
+        "silverTrait": false,
+        "silverDamage": "",
+        "isMeteorite": false,
+        "isNonLethal": false
+      },
+      "regionProperties": {
+        "createRegionFromTemplate": false,
+        "behaviours": {
+          "tokenEnter": null,
+          "tokenTurnStart": null,
+          "tokenMoveWithin": null,
+          "tokenExit": null
+        }
+      },
+      "attackOptions": [
+        "spell"
+      ],
+      "spellAttackSkill": "spellcast",
+      "causeDamages": true,
+      "damage": "4d6",
+      "damageType": "elemental"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+      "systemId": "TheWitcherItaNewSystem",
+      "coreVersion": 14
+    }
+  },
+  {
+    "_id": "1e50b5373f534d66",
+    "name": "Aine Verseos",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells/aine_verseos.webp",
+    "system": {
+      "description": "<p>Aine Verseos crea un'area di luce splendente in un raggio di 4m centrato sull'incantatore.</p>",
+      "quantity": "1",
+      "weight": 0,
+      "cost": 0,
+      "sourcebook": "MB 103",
+      "class": "Mage",
+      "level": "novice",
+      "source": "fire",
+      "stamina": 1,
+      "staminaIsVar": false,
+      "effect": "Aine Verseos crea un'area di luce splendente in un raggio di 4m centrato sull'incantatore.",
+      "range": "Raggio di 4m",
+      "duration": "Attiva (2 RES)",
+      "defence": "Nessuna",
+      "damageProperties": {
+        "armorPiercing": false,
+        "improvedArmorPiercing": false,
+        "ablating": false,
+        "crushingForce": false,
+        "damageIsAblation": false,
+        "stun": 0,
+        "damageToAllLocations": false,
+        "bypassesWornArmor": false,
+        "bypassesNaturalArmor": false,
+        "defenseDifferenceMultiplier": false,
+        "defenseMultiplierCap": 5,
+        "variableDamage": false,
+        "effects": [],
+        "oilEffect": "",
+        "silverTrait": false,
+        "silverDamage": "",
+        "isMeteorite": false,
+        "isNonLethal": false
+      },
+      "regionProperties": {
+        "createRegionFromTemplate": false,
+        "behaviours": {
+          "tokenEnter": null,
+          "tokenTurnStart": null,
+          "tokenMoveWithin": null,
+          "tokenExit": null
+        }
+      },
+      "attackOptions": [
+        "spell"
+      ],
+      "spellAttackSkill": "spellcast"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+      "systemId": "TheWitcherItaNewSystem",
+      "coreVersion": 14
+    }
+  },
+  {
+    "_id": "6cc19cb05ee34cd7",
+    "name": "Alzare le Fiamme",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells/Alzare_le_Fiamme.webp",
+    "system": {
+      "description": "<p>Alzare le Fiamme consente all'incantatore di diffondere un fuoco gi esistente alla velocit di 2m per round in una direzione qualsiasi, di smorzarlo fino a una debole fiammella (riducendo il danno da fuoco di 1) o di intensificare le fiamme (aumentando il danno da fuoco di 1).</p>",
+      "quantity": "1",
+      "weight": 0,
+      "cost": 0,
+      "sourcebook": "MB 103",
+      "class": "Mage",
+      "level": "novice",
+      "source": "fire",
+      "stamina": 3,
+      "staminaIsVar": false,
+      "effect": "Alzare le Fiamme consente all'incantatore di diffondere un fuoco gi esistente alla velocit di 2m per round in una direzione qualsiasi, di smorzarlo fino a una debole fiammella (riducendo il danno da fuoco di 1) o di intensificare le fiamme (aumentando il danno da fuoco di 1).",
+      "range": "10m",
+      "duration": "Attiva (2 RES)",
+      "defence": "Nessuna",
+      "damageProperties": {
+        "armorPiercing": false,
+        "improvedArmorPiercing": false,
+        "ablating": false,
+        "crushingForce": false,
+        "damageIsAblation": false,
+        "stun": 0,
+        "damageToAllLocations": false,
+        "bypassesWornArmor": false,
+        "bypassesNaturalArmor": false,
+        "defenseDifferenceMultiplier": false,
+        "defenseMultiplierCap": 5,
+        "variableDamage": false,
+        "effects": [],
+        "oilEffect": "",
+        "silverTrait": false,
+        "silverDamage": "",
+        "isMeteorite": false,
+        "isNonLethal": false
+      },
+      "regionProperties": {
+        "createRegionFromTemplate": false,
+        "behaviours": {
+          "tokenEnter": null,
+          "tokenTurnStart": null,
+          "tokenMoveWithin": null,
+          "tokenExit": null
+        }
+      },
+      "attackOptions": [
+        "spell"
+      ],
+      "spellAttackSkill": "spellcast"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+      "systemId": "TheWitcherItaNewSystem",
+      "coreVersion": 14
+    }
+  },
+  {
+    "_id": "599c536b937548ba",
+    "name": "Anialwch",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells/Anialwch.webp",
+    "system": {
+      "description": "<p>Anialwch permette di risucchiare parte dei li- quidi presenti nel corpo di un bersaglio, danneggiandolo e sfinendolo. L'incantesimo infligge 4d6 danni che non possono essere bloccati da armature o scudi. La grave di- sidratazione causa anche affaticamento che riduce di 4d6 la RES del bersaglio.</p>",
+      "quantity": "1",
+      "weight": 0,
+      "cost": 0,
+      "sourcebook": "MB 103",
+      "class": "Mage",
+      "level": "journeyman",
+      "source": "Water",
+      "stamina": 8,
+      "staminaIsVar": false,
+      "effect": "Anialwch permette di risucchiare parte dei li- quidi presenti nel corpo di un bersaglio, danneggiandolo e sfinendolo. L'incantesimo infligge 4d6 danni che non possono essere bloccati da armature o scudi. La grave di- sidratazione causa anche affaticamento che riduce di 4d6 la RES del bersaglio.",
+      "range": "10m",
+      "duration": "Istantanea",
+      "defence": "Resistere alla Magia",
+      "damageProperties": {
+        "armorPiercing": false,
+        "improvedArmorPiercing": false,
+        "ablating": false,
+        "crushingForce": false,
+        "damageIsAblation": false,
+        "stun": 0,
+        "damageToAllLocations": false,
+        "bypassesWornArmor": false,
+        "bypassesNaturalArmor": false,
+        "defenseDifferenceMultiplier": false,
+        "defenseMultiplierCap": 5,
+        "variableDamage": false,
+        "effects": [],
+        "oilEffect": "",
+        "silverTrait": false,
+        "silverDamage": "",
+        "isMeteorite": false,
+        "isNonLethal": false
+      },
+      "regionProperties": {
+        "createRegionFromTemplate": false,
+        "behaviours": {
+          "tokenEnter": null,
+          "tokenTurnStart": null,
+          "tokenMoveWithin": null,
+          "tokenExit": null
+        }
+      },
+      "attackOptions": [
+        "spell"
+      ],
+      "spellAttackSkill": "spellcast",
+      "causeDamages": true,
+      "damage": "4d6",
+      "damageType": "elemental"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+      "systemId": "TheWitcherItaNewSystem",
+      "coreVersion": 14
+    }
+  },
+  {
+    "_id": "017f9a4e6361438f",
+    "name": "Bussola Magica",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells/bussola_magica.webp",
+    "system": {
+      "description": "<p>Bussola Magica consente all'incantatore di in- tuire immediatamente la direzione verso un luogo che ha visitato in precedenza. In alternativa, l'incantesimo indica la posizione del nord.</p>",
+      "quantity": "1",
+      "weight": 0,
+      "cost": 0,
+      "sourcebook": "MB 103",
+      "class": "Mage",
+      "level": "novice",
+      "source": "earth",
+      "stamina": 3,
+      "staminaIsVar": false,
+      "effect": "Bussola Magica consente all'incantatore di in- tuire immediatamente la direzione verso un luogo che ha visitato in precedenza. In alternativa, l'incantesimo indica la posizione del nord.",
+      "range": "Personale",
+      "duration": "1d6 Ore",
+      "defence": "Nessuna",
+      "damageProperties": {
+        "armorPiercing": false,
+        "improvedArmorPiercing": false,
+        "ablating": false,
+        "crushingForce": false,
+        "damageIsAblation": false,
+        "stun": 0,
+        "damageToAllLocations": false,
+        "bypassesWornArmor": false,
+        "bypassesNaturalArmor": false,
+        "defenseDifferenceMultiplier": false,
+        "defenseMultiplierCap": 5,
+        "variableDamage": false,
+        "effects": [],
+        "oilEffect": "",
+        "silverTrait": false,
+        "silverDamage": "",
+        "isMeteorite": false,
+        "isNonLethal": false
+      },
+      "regionProperties": {
+        "createRegionFromTemplate": false,
+        "behaviours": {
+          "tokenEnter": null,
+          "tokenTurnStart": null,
+          "tokenMoveWithin": null,
+          "tokenExit": null
+        }
+      },
+      "attackOptions": [
+        "spell"
+      ],
+      "spellAttackSkill": "spellcast"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+      "systemId": "TheWitcherItaNewSystem",
+      "coreVersion": 14
+    }
+  },
+  {
+    "_id": "02701420cd554a85",
+    "name": "Cenlly Graig",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells/Cenlly_Graig.webp",
+    "system": {
+      "description": "<p>Cenlly Graig scaglia pietre aguzze contro un avversario. Per ogni punto con cui il tiro di Lanciare Incantesimi supera il tiro di difesa del bersaglio (massi- mo 10), l'incantesimo infligge 1d6 danni.</p>",
+      "quantity": "1",
+      "weight": 0,
+      "cost": 0,
+      "sourcebook": "MB 103",
+      "class": "Mage",
+      "level": "novice",
+      "source": "earth",
+      "stamina": 3,
+      "staminaIsVar": false,
+      "effect": "Cenlly Graig scaglia pietre aguzze contro un avversario. Per ogni punto con cui il tiro di Lanciare Incantesimi supera il tiro di difesa del bersaglio (massi- mo 10), l'incantesimo infligge 1d6 danni.",
+      "range": "5m",
+      "duration": "Istantanea",
+      "defence": "Schivare o Bloccare",
+      "damageProperties": {
+        "armorPiercing": false,
+        "improvedArmorPiercing": false,
+        "ablating": false,
+        "crushingForce": false,
+        "damageIsAblation": false,
+        "stun": 0,
+        "damageToAllLocations": false,
+        "bypassesWornArmor": false,
+        "bypassesNaturalArmor": false,
+        "defenseDifferenceMultiplier": false,
+        "defenseMultiplierCap": 5,
+        "variableDamage": false,
+        "effects": [],
+        "oilEffect": "",
+        "silverTrait": false,
+        "silverDamage": "",
+        "isMeteorite": false,
+        "isNonLethal": false
+      },
+      "regionProperties": {
+        "createRegionFromTemplate": false,
+        "behaviours": {
+          "tokenEnter": null,
+          "tokenTurnStart": null,
+          "tokenMoveWithin": null,
+          "tokenExit": null
+        }
+      },
+      "attackOptions": [
+        "spell"
+      ],
+      "spellAttackSkill": "spellcast",
+      "causeDamages": true,
+      "damage": "1d6",
+      "damageType": "elemental"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+      "systemId": "TheWitcherItaNewSystem",
+      "coreVersion": 14
+    }
+  },
+  {
+    "_id": "0984857645344e5c",
+    "name": "Codi Bywyd",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells/Codi_Bywyd.webp",
+    "system": {
+      "description": "<p>Codi Bywyd può far crescere una pianta adulta da un seme in un solo turno. Ciò permette di coltiva- re erbe e piante alchemiche, ma non piante più grandi come, ad esempio, un albero.</p>",
+      "quantity": "1",
+      "weight": 0,
+      "cost": 0,
+      "sourcebook": "MB 103",
+      "class": "Mage",
+      "level": "novice",
+      "source": "earth",
+      "stamina": 2,
+      "staminaIsVar": false,
+      "effect": "Codi Bywyd può far crescere una pianta adulta da un seme in un solo turno. Ciò permette di coltiva- re erbe e piante alchemiche, ma non piante più grandi come, ad esempio, un albero.",
+      "range": "4m",
+      "duration": "Istantanea",
+      "defence": "Nessuna",
+      "damageProperties": {
+        "armorPiercing": false,
+        "improvedArmorPiercing": false,
+        "ablating": false,
+        "crushingForce": false,
+        "damageIsAblation": false,
+        "stun": 0,
+        "damageToAllLocations": false,
+        "bypassesWornArmor": false,
+        "bypassesNaturalArmor": false,
+        "defenseDifferenceMultiplier": false,
+        "defenseMultiplierCap": 5,
+        "variableDamage": false,
+        "effects": [],
+        "oilEffect": "",
+        "silverTrait": false,
+        "silverDamage": "",
+        "isMeteorite": false,
+        "isNonLethal": false
+      },
+      "regionProperties": {
+        "createRegionFromTemplate": false,
+        "behaviours": {
+          "tokenEnter": null,
+          "tokenTurnStart": null,
+          "tokenMoveWithin": null,
+          "tokenExit": null
+        }
+      },
+      "attackOptions": [
+        "spell"
+      ],
+      "spellAttackSkill": "spellcast"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+      "systemId": "TheWitcherItaNewSystem",
+      "coreVersion": 14
+    }
+  },
+  {
+    "_id": "3575177c150740db",
+    "name": "Comando Mentale",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells/Comando_Mentale.webp",
+    "system": {
+      "description": "<p>Comando Mentale consente d'impiantare un ordine nella mente di un bersaglio. Il comando deve es- sere eseguito alla lettera. Se il comando è qualcosa che il bersaglio non farebbe mai, questo riceve +5 alla prova di Resistere alla Magia.</p>",
+      "quantity": "1",
+      "weight": 0,
+      "cost": 0,
+      "sourcebook": "MB 103",
+      "class": "Mage",
+      "level": "master",
+      "source": "mixedElements",
+      "stamina": 25,
+      "staminaIsVar": false,
+      "effect": "Comando Mentale consente d'impiantare un ordine nella mente di un bersaglio. Il comando deve es- sere eseguito alla lettera. Se il comando è qualcosa che il bersaglio non farebbe mai, questo riceve +5 alla prova di Resistere alla Magia.",
+      "range": "10m",
+      "duration": "Fino al completamento dell'incarico",
+      "defence": "Resistere alla Magia",
+      "damageProperties": {
+        "armorPiercing": false,
+        "improvedArmorPiercing": false,
+        "ablating": false,
+        "crushingForce": false,
+        "damageIsAblation": false,
+        "stun": 0,
+        "damageToAllLocations": false,
+        "bypassesWornArmor": false,
+        "bypassesNaturalArmor": false,
+        "defenseDifferenceMultiplier": false,
+        "defenseMultiplierCap": 5,
+        "variableDamage": false,
+        "effects": [],
+        "oilEffect": "",
+        "silverTrait": false,
+        "silverDamage": "",
+        "isMeteorite": false,
+        "isNonLethal": false
+      },
+      "regionProperties": {
+        "createRegionFromTemplate": false,
+        "behaviours": {
+          "tokenEnter": null,
+          "tokenTurnStart": null,
+          "tokenMoveWithin": null,
+          "tokenExit": null
+        }
+      },
+      "attackOptions": [
+        "spell"
+      ],
+      "spellAttackSkill": "spellcast"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+      "systemId": "TheWitcherItaNewSystem",
+      "coreVersion": 14
+    }
+  },
+  {
+    "_id": "69c73fb2a4d44e77",
+    "name": "Controllare Acque",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells/Controllare_Acque.webp",
+    "system": {
+      "description": "<p>Controllare Acque consente all'incantatore di controllare la velocit di movimento di una massa d'ac- qua e la direzione in cui si sposta, per la durata dell'in- cantesimo. Può servire a rallentare un bersaglio che sta nuotando dimezzandone la velocità, raddoppiare la velo- cit di una nave o rallentarla fino ad arrestare le correnti fluviali.</p>",
+      "quantity": "1",
+      "weight": 0,
+      "cost": 0,
+      "sourcebook": "MB 103",
+      "class": "Mage",
+      "level": "novice",
+      "source": "fire",
+      "stamina": 5,
+      "staminaIsVar": false,
+      "effect": "Controllare Acque consente all'incantatore di controllare la velocit di movimento di una massa d'ac- qua e la direzione in cui si sposta, per la durata dell'in- cantesimo. Può servire a rallentare un bersaglio che sta nuotando dimezzandone la velocità, raddoppiare la velo- cit di una nave o rallentarla fino ad arrestare le correnti fluviali.",
+      "range": "10m",
+      "duration": "Attiva (2 RES)",
+      "defence": "CD stabilita dal GM",
+      "damageProperties": {
+        "armorPiercing": false,
+        "improvedArmorPiercing": false,
+        "ablating": false,
+        "crushingForce": false,
+        "damageIsAblation": false,
+        "stun": 0,
+        "damageToAllLocations": false,
+        "bypassesWornArmor": false,
+        "bypassesNaturalArmor": false,
+        "defenseDifferenceMultiplier": false,
+        "defenseMultiplierCap": 5,
+        "variableDamage": false,
+        "effects": [],
+        "oilEffect": "",
+        "silverTrait": false,
+        "silverDamage": "",
+        "isMeteorite": false,
+        "isNonLethal": false
+      },
+      "regionProperties": {
+        "createRegionFromTemplate": false,
+        "behaviours": {
+          "tokenEnter": null,
+          "tokenTurnStart": null,
+          "tokenMoveWithin": null,
+          "tokenExit": null
+        }
+      },
+      "attackOptions": [
+        "spell"
+      ],
+      "spellAttackSkill": "spellcast"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+      "systemId": "TheWitcherItaNewSystem",
+      "coreVersion": 14
+    }
+  },
+  {
+    "_id": "35ef0427a79d40bd",
+    "name": "Derviscio",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells/Derviscio.webp",
+    "system": {
+      "description": "<p>Creato da un misterioso mago di Ofir, Derviscio consente all'incantatore di creare intorno a sé un tornado di 2m. Il tornado devia gli attacchi a distanza come per Gwynt Troelli e agisce come l'incantesimo Zefiro contro ogni bersaglio entro 2m dal mago. L'incantatore all'in- terno del tornado non può correre, né effettuare attacchi verso l'esterno ma, se si muove entro 2m da un bersaglio questo subisce gli effetti dell'incantesimo Zefiro.</p>",
+      "quantity": "1",
+      "weight": 0,
+      "cost": 0,
+      "sourcebook": "MB 103",
+      "class": "Mage",
+      "level": "master",
+      "source": "air",
+      "stamina": 22,
+      "staminaIsVar": false,
+      "effect": "Creato da un misterioso mago di Ofir, Derviscio consente all'incantatore di creare intorno a sé un tornado di 2m. Il tornado devia gli attacchi a distanza come per Gwynt Troelli e agisce come l'incantesimo Zefiro contro ogni bersaglio entro 2m dal mago. L'incantatore all'in- terno del tornado non può correre, né effettuare attacchi verso l'esterno ma, se si muove entro 2m da un bersaglio questo subisce gli effetti dell'incantesimo Zefiro.",
+      "range": "Raggio di 2m",
+      "duration": "Attiva (6 RES)",
+      "defence": "Schivare",
+      "damageProperties": {
+        "armorPiercing": false,
+        "improvedArmorPiercing": false,
+        "ablating": false,
+        "crushingForce": false,
+        "damageIsAblation": false,
+        "stun": 0,
+        "damageToAllLocations": false,
+        "bypassesWornArmor": false,
+        "bypassesNaturalArmor": false,
+        "defenseDifferenceMultiplier": false,
+        "defenseMultiplierCap": 5,
+        "variableDamage": false,
+        "effects": [],
+        "oilEffect": "",
+        "silverTrait": false,
+        "silverDamage": "",
+        "isMeteorite": false,
+        "isNonLethal": false
+      },
+      "regionProperties": {
+        "createRegionFromTemplate": false,
+        "behaviours": {
+          "tokenEnter": null,
+          "tokenTurnStart": null,
+          "tokenMoveWithin": null,
+          "tokenExit": null
+        }
+      },
+      "attackOptions": [
+        "spell"
+      ],
+      "spellAttackSkill": "spellcast"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+      "systemId": "TheWitcherItaNewSystem",
+      "coreVersion": 14
+    }
+  },
+  {
+    "_id": "722238936d204bf7",
+    "name": "Dissipazione",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells/dissipazione.webp",
+    "system": {
+      "description": "<p>Dissipazione permette di porre fine a un incan- tesimo/rituale/fattura entro il raggio dell'incantesimo. Quest'incantesimo può cancellare la magia che abbia una durata e può essere lanciato come Azione Difensiva per bloccare attacchi magici, con o senza componenti fi- siche. Per cancellare un effetto magico, l'incantatore deve spendere met dei punti di Resistenza spesi per lanciare la magia ed effettuare una prova di Lanciare Incantesimi superiore al tiro ottenuto dall'altro incantatore.</p>",
+      "quantity": "1",
+      "weight": 0,
+      "cost": 0,
+      "sourcebook": "MB 103",
+      "class": "Mage",
+      "level": "novice",
+      "source": "earth",
+      "stamina": 0,
+      "staminaIsVar": true,
+      "effect": "Dissipazione permette di porre fine a un incan- tesimo/rituale/fattura entro il raggio dell'incantesimo. Quest'incantesimo può cancellare la magia che abbia una durata e può essere lanciato come Azione Difensiva per bloccare attacchi magici, con o senza componenti fi- siche. Per cancellare un effetto magico, l'incantatore deve spendere met dei punti di Resistenza spesi per lanciare la magia ed effettuare una prova di Lanciare Incantesimi superiore al tiro ottenuto dall'altro incantatore.",
+      "range": "10m",
+      "duration": "Istantanea",
+      "defence": "Lanciare Incantesimi",
+      "damageProperties": {
+        "armorPiercing": false,
+        "improvedArmorPiercing": false,
+        "ablating": false,
+        "crushingForce": false,
+        "damageIsAblation": false,
+        "stun": 0,
+        "damageToAllLocations": false,
+        "bypassesWornArmor": false,
+        "bypassesNaturalArmor": false,
+        "defenseDifferenceMultiplier": false,
+        "defenseMultiplierCap": 5,
+        "variableDamage": false,
+        "effects": [],
+        "oilEffect": "",
+        "silverTrait": false,
+        "silverDamage": "",
+        "isMeteorite": false,
+        "isNonLethal": false
+      },
+      "regionProperties": {
+        "createRegionFromTemplate": false,
+        "behaviours": {
+          "tokenEnter": null,
+          "tokenTurnStart": null,
+          "tokenMoveWithin": null,
+          "tokenExit": null
+        }
+      },
+      "attackOptions": [
+        "spell"
+      ],
+      "spellAttackSkill": "spellcast"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+      "systemId": "TheWitcherItaNewSystem",
+      "coreVersion": 14
+    }
+  },
+  {
+    "_id": "010dc43d08144862",
+    "name": "Dividere le Acque",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells/Dividere_le_Acque.webp",
+    "system": {
+      "description": "<p>Dividere le Acque consente all'incantatore di creare uno spazio aperto in una massa d'acqua, fino a 10m x 100m x10m. Pesci, mostri e altre creature nell'ac- qua vengono spostate insieme ad essa. L'incantatore può entrare e uscire dalle pareti d'acqua come se fosse un normale specchio d'acqua, senza disturbare le pareti. Se usato in acqua, l'incantesimo sposta anche l'incantatore. L'area può essere evocata con qualsiasi orientamento, an- che in verticale.</p>",
+      "quantity": "1",
+      "weight": 0,
+      "cost": 0,
+      "sourcebook": "MB 103",
+      "class": "Mage",
+      "level": "master",
+      "source": "Water",
+      "stamina": 25,
+      "staminaIsVar": false,
+      "effect": "Dividere le Acque consente all'incantatore di creare uno spazio aperto in una massa d'acqua, fino a 10m x 100m x10m. Pesci, mostri e altre creature nell'ac- qua vengono spostate insieme ad essa. L'incantatore può entrare e uscire dalle pareti d'acqua come se fosse un normale specchio d'acqua, senza disturbare le pareti. Se usato in acqua, l'incantesimo sposta anche l'incantatore. L'area può essere evocata con qualsiasi orientamento, an- che in verticale.",
+      "range": "Raggio di 10m",
+      "duration": "Attiva (6 RES)",
+      "defence": "Nessuna",
+      "damageProperties": {
+        "armorPiercing": false,
+        "improvedArmorPiercing": false,
+        "ablating": false,
+        "crushingForce": false,
+        "damageIsAblation": false,
+        "stun": 0,
+        "damageToAllLocations": false,
+        "bypassesWornArmor": false,
+        "bypassesNaturalArmor": false,
+        "defenseDifferenceMultiplier": false,
+        "defenseMultiplierCap": 5,
+        "variableDamage": false,
+        "effects": [],
+        "oilEffect": "",
+        "silverTrait": false,
+        "silverDamage": "",
+        "isMeteorite": false,
+        "isNonLethal": false
+      },
+      "regionProperties": {
+        "createRegionFromTemplate": false,
+        "behaviours": {
+          "tokenEnter": null,
+          "tokenTurnStart": null,
+          "tokenMoveWithin": null,
+          "tokenExit": null
+        }
+      },
+      "attackOptions": [
+        "spell"
+      ],
+      "spellAttackSkill": "spellcast"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+      "systemId": "TheWitcherItaNewSystem",
+      "coreVersion": 14
+    }
+  },
+  {
+    "_id": "4be005ca974d403e",
+    "name": "Effetto Specchio",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells/Effetto_Specchio.webp",
+    "system": {
+      "description": "<p>Effetto Specchio crea un raggio di luce acce- cante che infligge 10d6 danni. Questo raggio può essere schivato o bloccato (distruggendo qualsiasi cosa utiliz- zata per bloccare), ma non può essere deviato dal vento e può essere parato solo da una superficie riflettente, che subisce comunque il danno. Il laser riflesso è deviato in una direzione casuale. Questo incantesimo utilizza i rag- gi del sole e non può essere utilizzato in mancanza di luce solare. Con la luce della luna o col cielo coperto da nubi, infligge met dei danni.</p>",
+      "quantity": "1",
+      "weight": 0,
+      "cost": 0,
+      "sourcebook": "MB 103",
+      "class": "Mage",
+      "level": "master",
+      "source": "Water",
+      "stamina": 25,
+      "staminaIsVar": false,
+      "effect": "Effetto Specchio crea un raggio di luce acce- cante che infligge 10d6 danni. Questo raggio può essere schivato o bloccato (distruggendo qualsiasi cosa utiliz- zata per bloccare), ma non può essere deviato dal vento e può essere parato solo da una superficie riflettente, che subisce comunque il danno. Il laser riflesso è deviato in una direzione casuale. Questo incantesimo utilizza i rag- gi del sole e non può essere utilizzato in mancanza di luce solare. Con la luce della luna o col cielo coperto da nubi, infligge met dei danni.",
+      "range": "20m",
+      "duration": "2d6 Round",
+      "defence": "Schivare o Bloccare",
+      "damageProperties": {
+        "armorPiercing": false,
+        "improvedArmorPiercing": false,
+        "ablating": false,
+        "crushingForce": false,
+        "damageIsAblation": false,
+        "stun": 0,
+        "damageToAllLocations": false,
+        "bypassesWornArmor": false,
+        "bypassesNaturalArmor": false,
+        "defenseDifferenceMultiplier": false,
+        "defenseMultiplierCap": 5,
+        "variableDamage": false,
+        "effects": [],
+        "oilEffect": "",
+        "silverTrait": false,
+        "silverDamage": "",
+        "isMeteorite": false,
+        "isNonLethal": false
+      },
+      "regionProperties": {
+        "createRegionFromTemplate": false,
+        "behaviours": {
+          "tokenEnter": null,
+          "tokenTurnStart": null,
+          "tokenMoveWithin": null,
+          "tokenExit": null
+        }
+      },
+      "attackOptions": [
+        "spell"
+      ],
+      "spellAttackSkill": "spellcast",
+      "causeDamages": true,
+      "damage": "10d6",
+      "damageType": "elemental"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+      "systemId": "TheWitcherItaNewSystem",
+      "coreVersion": 14
+    }
+  },
+  {
+    "_id": "2810f6f48d3244c0",
+    "name": "Fiammata",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Segni/witcher-signs/fiammata.webp",
+    "system": {
+      "description": "<p>Fiammata erutta in una direzione un cono di fuoco di 3m e infligge 2d6 danni ad ogni bersaglio nell'a- rea che non riesca a schivarlo o bloccarlo e ha il 50% di probabilit d'infliggere l'effetto A Fuoco al bersaglio.</p>",
+      "quantity": "1",
+      "weight": 0,
+      "cost": 0,
+      "sourcebook": "MB 103",
+      "class": "Mage",
+      "level": "novice",
+      "source": "air",
+      "stamina": 4,
+      "staminaIsVar": false,
+      "effect": "Fiammata erutta in una direzione un cono di fuoco di 3m e infligge 2d6 danni ad ogni bersaglio nell'a- rea che non riesca a schivarlo o bloccarlo e ha il 50% di probabilit d'infliggere l'effetto A Fuoco al bersaglio.",
+      "range": "Cono di 3m",
+      "duration": "Istantanea",
+      "defence": "Schivare o Bloccare",
+      "damageProperties": {
+        "armorPiercing": false,
+        "improvedArmorPiercing": false,
+        "ablating": false,
+        "crushingForce": false,
+        "damageIsAblation": false,
+        "stun": 0,
+        "damageToAllLocations": false,
+        "bypassesWornArmor": false,
+        "bypassesNaturalArmor": false,
+        "defenseDifferenceMultiplier": false,
+        "defenseMultiplierCap": 5,
+        "variableDamage": false,
+        "effects": [],
+        "oilEffect": "",
+        "silverTrait": false,
+        "silverDamage": "",
+        "isMeteorite": false,
+        "isNonLethal": false
+      },
+      "regionProperties": {
+        "createRegionFromTemplate": false,
+        "behaviours": {
+          "tokenEnter": null,
+          "tokenTurnStart": null,
+          "tokenMoveWithin": null,
+          "tokenExit": null
+        }
+      },
+      "attackOptions": [
+        "spell"
+      ],
+      "spellAttackSkill": "spellcast",
+      "causeDamages": true,
+      "damage": "2d6",
+      "damageType": "elemental"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+      "systemId": "TheWitcherItaNewSystem",
+      "coreVersion": 14
+    }
+  },
+  {
+    "_id": "c4bbce96c85045ed",
+    "name": "Illusione",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells/Illusione.webp",
+    "system": {
+      "description": "<p>Illusione consente all'incantatore di creare qualsiasi illusione visiva desideri entro 20m. Chiunque fallisca la prova di Resistenza alla Magia e può vedere l'illusione, crede che sia reale. L'illusione non può tutta- via essere toccata, udita o annusata.</p>",
+      "quantity": "1",
+      "weight": 0,
+      "cost": 0,
+      "sourcebook": "MB 103",
+      "class": "Mage",
+      "level": "journeyman",
+      "source": "mixedElements",
+      "stamina": 8,
+      "staminaIsVar": false,
+      "effect": "Illusione consente all'incantatore di creare qualsiasi illusione visiva desideri entro 20m. Chiunque fallisca la prova di Resistenza alla Magia e può vedere l'illusione, crede che sia reale. L'illusione non può tutta- via essere toccata, udita o annusata.",
+      "range": "20m",
+      "duration": "Attiva (4 RES)",
+      "defence": "Resistere alla Magia",
+      "damageProperties": {
+        "armorPiercing": false,
+        "improvedArmorPiercing": false,
+        "ablating": false,
+        "crushingForce": false,
+        "damageIsAblation": false,
+        "stun": 0,
+        "damageToAllLocations": false,
+        "bypassesWornArmor": false,
+        "bypassesNaturalArmor": false,
+        "defenseDifferenceMultiplier": false,
+        "defenseMultiplierCap": 5,
+        "variableDamage": false,
+        "effects": [],
+        "oilEffect": "",
+        "silverTrait": false,
+        "silverDamage": "",
+        "isMeteorite": false,
+        "isNonLethal": false
+      },
+      "regionProperties": {
+        "createRegionFromTemplate": false,
+        "behaviours": {
+          "tokenEnter": null,
+          "tokenTurnStart": null,
+          "tokenMoveWithin": null,
+          "tokenExit": null
+        }
+      },
+      "attackOptions": [
+        "spell"
+      ],
+      "spellAttackSkill": "spellcast"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+      "systemId": "TheWitcherItaNewSystem",
+      "coreVersion": 14
+    }
+  },
+  {
+    "_id": "4375d03295e24907",
+    "name": "Incantesimo Diagnostico",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells/Incantesimo_Diagnostico.webp",
+    "system": {
+      "description": "<p>Incantesimo Diagnostico consente all'incanta- tore di valutare rapidamente la salute di un bersaglio e di determinare quanti Punti Salute possiede, eventuali ferite critiche, malattie o avvelenamenti.</p>",
+      "quantity": "1",
+      "weight": 0,
+      "cost": 0,
+      "sourcebook": "MB 103",
+      "class": "Mage",
+      "level": "novice",
+      "source": "earth",
+      "stamina": 3,
+      "staminaIsVar": false,
+      "effect": "Incantesimo Diagnostico consente all'incanta- tore di valutare rapidamente la salute di un bersaglio e di determinare quanti Punti Salute possiede, eventuali ferite critiche, malattie o avvelenamenti.",
+      "range": "5m",
+      "duration": "Istantanea",
+      "defence": "Nessuna",
+      "damageProperties": {
+        "armorPiercing": false,
+        "improvedArmorPiercing": false,
+        "ablating": false,
+        "crushingForce": false,
+        "damageIsAblation": false,
+        "stun": 0,
+        "damageToAllLocations": false,
+        "bypassesWornArmor": false,
+        "bypassesNaturalArmor": false,
+        "defenseDifferenceMultiplier": false,
+        "defenseMultiplierCap": 5,
+        "variableDamage": false,
+        "effects": [],
+        "oilEffect": "",
+        "silverTrait": false,
+        "silverDamage": "",
+        "isMeteorite": false,
+        "isNonLethal": false
+      },
+      "regionProperties": {
+        "createRegionFromTemplate": false,
+        "behaviours": {
+          "tokenEnter": null,
+          "tokenTurnStart": null,
+          "tokenMoveWithin": null,
+          "tokenExit": null
+        }
+      },
+      "attackOptions": [
+        "spell"
+      ],
+      "spellAttackSkill": "spellcast"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+      "systemId": "TheWitcherItaNewSystem",
+      "coreVersion": 14
+    }
+  },
+  {
+    "_id": "662f8dd782ac45df",
+    "name": "Lampo Magico",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells/lampo_magico.webp",
+    "system": {
+      "description": "<p>Lampo Magico fa balenare un lampo sopra il mago. Ogni bersaglio entro un raggio di 8m deve supe- rare una prova di Resistenza alla Magia o essere accecato per 1d6 round. Il lampo è visibile fino a 10 chilometri.</p>",
+      "quantity": "1",
+      "weight": 0,
+      "cost": 0,
+      "sourcebook": "MB 103",
+      "class": "Mage",
+      "level": "novice",
+      "source": "fire",
+      "stamina": 2,
+      "staminaIsVar": false,
+      "effect": "Lampo Magico fa balenare un lampo sopra il mago. Ogni bersaglio entro un raggio di 8m deve supe- rare una prova di Resistenza alla Magia o essere accecato per 1d6 round. Il lampo è visibile fino a 10 chilometri.",
+      "range": "Raggio di 8m",
+      "duration": "Istantanea",
+      "defence": "Resistere alla Magia",
+      "damageProperties": {
+        "armorPiercing": false,
+        "improvedArmorPiercing": false,
+        "ablating": false,
+        "crushingForce": false,
+        "damageIsAblation": false,
+        "stun": 0,
+        "damageToAllLocations": false,
+        "bypassesWornArmor": false,
+        "bypassesNaturalArmor": false,
+        "defenseDifferenceMultiplier": false,
+        "defenseMultiplierCap": 5,
+        "variableDamage": false,
+        "effects": [],
+        "oilEffect": "",
+        "silverTrait": false,
+        "silverDamage": "",
+        "isMeteorite": false,
+        "isNonLethal": false
+      },
+      "regionProperties": {
+        "createRegionFromTemplate": false,
+        "behaviours": {
+          "tokenEnter": null,
+          "tokenTurnStart": null,
+          "tokenMoveWithin": null,
+          "tokenExit": null
+        }
+      },
+      "attackOptions": [
+        "spell"
+      ],
+      "spellAttackSkill": "spellcast",
+      "causeDamages": true,
+      "damage": "1d6",
+      "damageType": "elemental"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+      "systemId": "TheWitcherItaNewSystem",
+      "coreVersion": 14
+    }
+  },
+  {
+    "_id": "408bcf5ba9eb4b89",
+    "name": "Lastra di Ghiaccio",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells/Lastra_di_Ghiaccio.webp",
+    "system": {
+      "description": "<p>Lastra di Ghiaccio permette di creare un'area di ghiaccio di 2 metri quadrati. Chi mette piede in quest'a- rea deve superare una prova di Atletica con CD pari al risultato di Lanciare Incantesimi per non scivolare sul ghiaccio.</p>",
+      "quantity": "1",
+      "weight": 0,
+      "cost": 0,
+      "sourcebook": "MB 103",
+      "class": "Mage",
+      "level": "novice",
+      "source": "fire",
+      "stamina": 2,
+      "staminaIsVar": false,
+      "effect": "Lastra di Ghiaccio permette di creare un'area di ghiaccio di 2 metri quadrati. Chi mette piede in quest'a- rea deve superare una prova di Atletica con CD pari al risultato di Lanciare Incantesimi per non scivolare sul ghiaccio.",
+      "range": "10m",
+      "duration": "2d10 Round",
+      "defence": "Schivare",
+      "damageProperties": {
+        "armorPiercing": false,
+        "improvedArmorPiercing": false,
+        "ablating": false,
+        "crushingForce": false,
+        "damageIsAblation": false,
+        "stun": 0,
+        "damageToAllLocations": false,
+        "bypassesWornArmor": false,
+        "bypassesNaturalArmor": false,
+        "defenseDifferenceMultiplier": false,
+        "defenseMultiplierCap": 5,
+        "variableDamage": false,
+        "effects": [],
+        "oilEffect": "",
+        "silverTrait": false,
+        "silverDamage": "",
+        "isMeteorite": false,
+        "isNonLethal": false
+      },
+      "regionProperties": {
+        "createRegionFromTemplate": false,
+        "behaviours": {
+          "tokenEnter": null,
+          "tokenTurnStart": null,
+          "tokenMoveWithin": null,
+          "tokenExit": null
+        }
+      },
+      "attackOptions": [
+        "spell"
+      ],
+      "spellAttackSkill": "spellcast"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+      "systemId": "TheWitcherItaNewSystem",
+      "coreVersion": 14
+    }
+  },
+  {
+    "_id": "3785bd470b1e444b",
+    "name": "Penna di Luthien",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells/penna_di_luthien.webp",
+    "system": {
+      "description": "<p>Penna di Luthien, che prende il nome dalla sua inventrice Luthien di Ebbing, può scrivere o disegnare su qualsiasi superficie solida. Non può essere utilizzata su creature viventi.</p>",
+      "quantity": "1",
+      "weight": 0,
+      "cost": 0,
+      "sourcebook": "MB 103",
+      "class": "Mage",
+      "level": "novice",
+      "source": "earth",
+      "stamina": 2,
+      "staminaIsVar": false,
+      "effect": "Penna di Luthien, che prende il nome dalla sua inventrice Luthien di Ebbing, può scrivere o disegnare su qualsiasi superficie solida. Non può essere utilizzata su creature viventi.",
+      "range": "1m",
+      "duration": "Istantanea",
+      "defence": "Nessuna",
+      "damageProperties": {
+        "armorPiercing": false,
+        "improvedArmorPiercing": false,
+        "ablating": false,
+        "crushingForce": false,
+        "damageIsAblation": false,
+        "stun": 0,
+        "damageToAllLocations": false,
+        "bypassesWornArmor": false,
+        "bypassesNaturalArmor": false,
+        "defenseDifferenceMultiplier": false,
+        "defenseMultiplierCap": 5,
+        "variableDamage": false,
+        "effects": [],
+        "oilEffect": "",
+        "silverTrait": false,
+        "silverDamage": "",
+        "isMeteorite": false,
+        "isNonLethal": false
+      },
+      "regionProperties": {
+        "createRegionFromTemplate": false,
+        "behaviours": {
+          "tokenEnter": null,
+          "tokenTurnStart": null,
+          "tokenMoveWithin": null,
+          "tokenExit": null
+        }
+      },
+      "attackOptions": [
+        "spell"
+      ],
+      "spellAttackSkill": "spellcast"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+      "systemId": "TheWitcherItaNewSystem",
+      "coreVersion": 14
+    }
+  },
+  {
+    "_id": "c1e3fdfabc4c461a",
+    "name": "Portale",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells/portale.webp",
+    "system": {
+      "description": "<p>Portale crea un portale sospeso di 1m per 2m entro 10m dall'incantatore. Oltrepassare il portale tele- trasporta in qualsiasi luogo l'incantatore possa ricordare. Il portale può trasferire qualsiasi cosa riesca a passarvi. Se l'incantatore pone fine al portale, mentre un bersa- glio lo sta attraversando, l'oggetto o la persona viene tranciato in due. Una persona è considerata mutilata, come per la Ferita Critica. L'incantatore può creare un portale per una destinazione che non conosce, come per Teletrasporto.</p>",
+      "quantity": "1",
+      "weight": 0,
+      "cost": 0,
+      "sourcebook": "MB 103",
+      "class": "Mage",
+      "level": "master",
+      "source": "air",
+      "stamina": 22,
+      "staminaIsVar": false,
+      "effect": "Portale crea un portale sospeso di 1m per 2m entro 10m dall'incantatore. Oltrepassare il portale tele- trasporta in qualsiasi luogo l'incantatore possa ricordare. Il portale può trasferire qualsiasi cosa riesca a passarvi. Se l'incantatore pone fine al portale, mentre un bersa- glio lo sta attraversando, l'oggetto o la persona viene tranciato in due. Una persona è considerata mutilata, come per la Ferita Critica. L'incantatore può creare un portale per una destinazione che non conosce, come per Teletrasporto.",
+      "range": "N/A",
+      "duration": "Attiva (6 RES)",
+      "defence": "Nessuna",
+      "damageProperties": {
+        "armorPiercing": false,
+        "improvedArmorPiercing": false,
+        "ablating": false,
+        "crushingForce": false,
+        "damageIsAblation": false,
+        "stun": 0,
+        "damageToAllLocations": false,
+        "bypassesWornArmor": false,
+        "bypassesNaturalArmor": false,
+        "defenseDifferenceMultiplier": false,
+        "defenseMultiplierCap": 5,
+        "variableDamage": false,
+        "effects": [],
+        "oilEffect": "",
+        "silverTrait": false,
+        "silverDamage": "",
+        "isMeteorite": false,
+        "isNonLethal": false
+      },
+      "regionProperties": {
+        "createRegionFromTemplate": false,
+        "behaviours": {
+          "tokenEnter": null,
+          "tokenTurnStart": null,
+          "tokenMoveWithin": null,
+          "tokenExit": null
+        }
+      },
+      "attackOptions": [
+        "spell"
+      ],
+      "spellAttackSkill": "spellcast",
+      "unknownDestinationRule": {
+        "type": "Teletrasporto Alla Cieca",
+        "CD": 20,
+        "deviation": "2d10 km",
+        "requiresObject": false,
+        "note": "Per Portale basta non conoscere la destinazione, non serve oggetto del luogo"
+      }
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+      "systemId": "TheWitcherItaNewSystem",
+      "coreVersion": 14
+    }
+  },
+  {
+    "_id": "290769e2377c4bcf",
+    "name": "Rhwystr Graig",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells/Rhwystr_Graig.webp",
+    "system": {
+      "description": "<p>Rhwystr Graig permette di creare una parete di roccia di 2m per 3m, con 30 punti Pr, ovunque entro 3m dall'incantatore, orientato in qualsiasi direzione. Il muro permane fino alla sua distruzione.</p>",
+      "quantity": "1",
+      "weight": 0,
+      "cost": 0,
+      "sourcebook": "MB 103",
+      "class": "Mage",
+      "level": "journeyman",
+      "source": "earth",
+      "stamina": 15,
+      "staminaIsVar": false,
+      "effect": "Rhwystr Graig permette di creare una parete di roccia di 2m per 3m, con 30 punti Pr, ovunque entro 3m dall'incantatore, orientato in qualsiasi direzione. Il muro permane fino alla sua distruzione.",
+      "range": "20m",
+      "duration": "Istantanea",
+      "defence": "Nessuna",
+      "damageProperties": {
+        "armorPiercing": false,
+        "improvedArmorPiercing": false,
+        "ablating": false,
+        "crushingForce": false,
+        "damageIsAblation": false,
+        "stun": 0,
+        "damageToAllLocations": false,
+        "bypassesWornArmor": false,
+        "bypassesNaturalArmor": false,
+        "defenseDifferenceMultiplier": false,
+        "defenseMultiplierCap": 5,
+        "variableDamage": false,
+        "effects": [],
+        "oilEffect": "",
+        "silverTrait": false,
+        "silverDamage": "",
+        "isMeteorite": false,
+        "isNonLethal": false
+      },
+      "regionProperties": {
+        "createRegionFromTemplate": false,
+        "behaviours": {
+          "tokenEnter": null,
+          "tokenTurnStart": null,
+          "tokenMoveWithin": null,
+          "tokenExit": null
+        }
+      },
+      "attackOptions": [
+        "spell"
+      ],
+      "spellAttackSkill": "spellcast"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+      "systemId": "TheWitcherItaNewSystem",
+      "coreVersion": 14
+    }
+  },
+  {
+    "_id": "2587b5e8257b4f8e",
+    "name": "Sacca d'Aria",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells/sacca_daria.webp",
+    "system": {
+      "description": "<p>Sacca d'Aria consente di creare una sacca d'aria fresca sott'acqua o in un'area dove normalmente non si trova aria pura. Questa sacca ha un raggio di 1m per la durata dell'incantesimo.</p>",
+      "quantity": "1",
+      "weight": 0,
+      "cost": 0,
+      "sourcebook": "MB 103",
+      "class": "Mage",
+      "level": "novice",
+      "source": "Air",
+      "stamina": 3,
+      "staminaIsVar": false,
+      "effect": "Sacca dâ€™Aria consente di creare una sacca dâ€™aria fresca sottâ€™acqua o in unâ€™area dove normalmente non si trova aria pura. Questa sacca ha un raggio di 1m per la durata dellâ€™incantesimo.",
+      "range": "12m",
+      "duration": "2d10 Round",
+      "defence": "Nessuna",
+      "damageProperties": {
+        "armorPiercing": false,
+        "improvedArmorPiercing": false,
+        "ablating": false,
+        "crushingForce": false,
+        "damageIsAblation": false,
+        "stun": 0,
+        "damageToAllLocations": false,
+        "bypassesWornArmor": false,
+        "bypassesNaturalArmor": false,
+        "defenseDifferenceMultiplier": false,
+        "defenseMultiplierCap": 5,
+        "variableDamage": false,
+        "effects": [],
+        "oilEffect": "",
+        "silverTrait": false,
+        "silverDamage": "",
+        "isMeteorite": false,
+        "isNonLethal": false
+      },
+      "regionProperties": {
+        "createRegionFromTemplate": false,
+        "behaviours": {
+          "tokenEnter": null,
+          "tokenTurnStart": null,
+          "tokenMoveWithin": null,
+          "tokenExit": null
+        }
+      },
+      "attackOptions": [
+        "spell"
+      ],
+      "spellAttackSkill": "spellcast"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+      "systemId": "TheWitcherItaNewSystem",
+      "coreVersion": 14
+    }
+  },
+  {
+    "name": "Teletrasporto",
+    "type": "spell",
+    "folder": "Incantesimi Mago",
+    "system": {
+      "activation": {
+        "type": "spell",
+        "cost": 10
+      },
+      "range": {
+        "value": 0,
+        "units": "special",
+        "label": "N/A"
+      },
+      "duration": {
+        "units": "inst"
+      },
+      "target": {
+        "value": 1,
+        "type": "self"
+      },
+      "damage": null,
+      "element": "Misto",
+      "spellLevel": "Maestro",
+      "source": "Tomo Base",
+      "pendingStats": false,
+      "variants": [
+        {
+          "name": "Luogo Noto",
+          "CD": 15,
+          "failureDeviation": "1d6 km casuale"
+        },
+        {
+          "name": "Alla Cieca",
+          "CD": 20,
+          "requiresObject": true,
+          "failureDeviation": "2d10 km casuale"
+        }
+      ],
+      "limitations": [
+        "Solo incantatore (no passeggeri)",
+        "Solo ciò che indossa o tiene in mano",
+        "Tentare con altri: trasporta solo l'incantatore"
+      ],
+      "description": {
+        "value": "Teletrasporta l'incantatore in luogo noto (CD 15) o alla cieca con oggetto del luogo (CD 20). Fallimento: deviazione 1d6 km (noto) o 2d10 km (cieco). Non trasporta altri: l'incantatore parte solo. Interazione Portale: destinazione ignota funziona come Teletrasporto Alla Cieca."
+      }
+    },
+    "img": "systems/witcher/assets/icons/magia/teletrasporto.webp"
+  },
+  {
+    "_id": "07cea574175e4a2a",
+    "name": "Tuono di Alzur",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells/Tuono_di_Alzur.webp",
+    "system": {
+      "description": "<p>Tuono di Alzur consente all'incantatore di sca- gliare contro un bersaglio una potente folgore che in- fligge 8d6 danni e ha il 75% di probabilit d'infliggere l'effetto A Fuoco al bersaglio. Il Tuono di Alzur viaggia in linea retta trapassando i bersagli e, per ogni bersaglio che attraversa, il danno a quello successivo diminuisce di 1d6.</p>",
+      "quantity": "1",
+      "weight": 0,
+      "cost": 0,
+      "sourcebook": "MB 103",
+      "class": "Mage",
+      "level": "journeyman",
+      "source": "Water",
+      "stamina": 15,
+      "staminaIsVar": false,
+      "effect": "Tuono di Alzur consente all'incantatore di sca- gliare contro un bersaglio una potente folgore che in- fligge 8d6 danni e ha il 75% di probabilit d'infliggere l'effetto A Fuoco al bersaglio. Il Tuono di Alzur viaggia in linea retta trapassando i bersagli e, per ogni bersaglio che attraversa, il danno a quello successivo diminuisce di 1d6.",
+      "range": "25m",
+      "duration": "Istantanea",
+      "defence": "Schivare",
+      "damageProperties": {
+        "armorPiercing": false,
+        "improvedArmorPiercing": false,
+        "ablating": false,
+        "crushingForce": false,
+        "damageIsAblation": false,
+        "stun": 0,
+        "damageToAllLocations": false,
+        "bypassesWornArmor": false,
+        "bypassesNaturalArmor": false,
+        "defenseDifferenceMultiplier": false,
+        "defenseMultiplierCap": 5,
+        "variableDamage": false,
+        "effects": [],
+        "oilEffect": "",
+        "silverTrait": false,
+        "silverDamage": "",
+        "isMeteorite": false,
+        "isNonLethal": false
+      },
+      "regionProperties": {
+        "createRegionFromTemplate": false,
+        "behaviours": {
+          "tokenEnter": null,
+          "tokenTurnStart": null,
+          "tokenMoveWithin": null,
+          "tokenExit": null
+        }
+      },
+      "attackOptions": [
+        "spell"
+      ],
+      "spellAttackSkill": "spellcast",
+      "causeDamages": true,
+      "damage": "8d6",
+      "damageType": "elemental"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+      "systemId": "TheWitcherItaNewSystem",
+      "coreVersion": 14
+    }
+  },
+  {
+    "name": "Esiti Disastri Magici",
+    "type": "RollTable",
+    "formula": "1d10",
+    "results": [
+      {
+        "range": [
+          1,
+          6
+        ],
+        "text": "La magia crepita e scintilla: l'incantatore subisce 1 danno per ogni punto del disastro, ma l'incantesimo ha comunque effetto."
+      },
+      {
+        "range": [
+          7,
+          9
+        ],
+        "text": "La magia s'incendia dentro l'incantatore. L'incantesimo FALLISCE. Applica effetto disastro elementale (tabella elemento usato)."
+      },
+      {
+        "range": [
+          10,
+          10
+        ],
+        "text": "Esplosione devastante. L'incantesimo FALLISCE. Disastro elementale + tutti gli oggetti focus esplodono: 1d10 danni, raggio 2m."
+      }
+    ]
+  },
+  {
+    "name": "Disastri Elementali",
+    "type": "RollTable",
+    "entries": [
+      {
+        "element": "Fuoco",
+        "formula": "fixed",
+        "effect": "Il corpo dell'incantatore prende fuoco. 1 danno per ogni punto del disastro + A Fuoco.",
+        "conditions": [
+          "A Fuoco"
+        ],
+        "damage": "1*disasterPoints"
+      },
+      {
+        "element": "Acqua",
+        "formula": "fixed",
+        "effect": "Crosta di ghiaccio scricchiolante. 1 danno per ogni punto del disastro + Congelato.",
+        "conditions": [
+          "Congelato"
+        ],
+        "damage": "1*disasterPoints"
+      },
+      {
+        "element": "Aria",
+        "formula": "fixed",
+        "effect": "Il vento soffia intorno all'incantatore. 1 danno per ogni punto del disastro + scagliato indietro di 2m.",
+        "conditions": [
+          "Knockback 2m"
+        ],
+        "damage": "1*disasterPoints"
+      },
+      {
+        "element": "Terra",
+        "formula": "fixed",
+        "effect": "La terra trema intorno all'incantatore. 1 danno per ogni punto del disastro + Stordito.",
+        "conditions": [
+          "Stordito"
+        ],
+        "damage": "1*disasterPoints"
+      },
+      {
+        "element": "Misto",
+        "formula": "1d4",
+        "note": "GM sceglie casualmente tra gli effetti sopra.",
+        "usedBy": [
+          "Preti",
+          "Druidi"
+        ],
+        "ruleRef": "I preti usano sempre la tabella Misto perché estrapolano la magia da vari elementi tramite devozione, non incanalano direttamente il Caos grezzo.",
+        "results": [
+          {
+            "range": [
+              1,
+              1
+            ],
+            "text": "A Fuoco (come Fuoco)"
+          },
+          {
+            "range": [
+              2,
+              2
+            ],
+            "text": "Congelato (come Acqua)"
+          },
+          {
+            "range": [
+              3,
+              3
+            ],
+            "text": "Knockback 2m (come Aria)"
+          },
+          {
+            "range": [
+              4,
+              4
+            ],
+            "text": "Stordito (come Terra)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Sovraffaticamento Magico",
+    "type": "SystemRule",
+    "rules": {
+      "onOvercast": {
+        "damage": "5 PS per punto oltre Soglia Vigore",
+        "triggerRollTable": "Esiti Disastri Magici",
+        "elementTable": {
+          "mage": "elemento incantesimo usato",
+          "priest": "Misto (sempre)",
+          "druid": "Misto (sempre)"
+        }
+      }
+    }
+  }
+]
