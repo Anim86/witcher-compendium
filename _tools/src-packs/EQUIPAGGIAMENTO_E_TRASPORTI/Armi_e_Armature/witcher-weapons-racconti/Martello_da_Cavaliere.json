@@ -1,0 +1,25 @@
+{
+    "_id": "6c72776561703037",
+    "name": "Martello da Cavaliere",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons-racconti/martello_da_cavaliere.webp",
+    "system": {
+        "description": "<p>Nel Continente si possono trovare molte stranezze, oggetti curiosi e creature di cui una contadina come voi non ha alcuna conoscenza, né ha mai avuto occasione di vedere. Ecco perché io viaggio! Per far sì che gli angoli della mappa si pieghino verso il centro, per portare l'esotico nei luoghi fin troppo comuni. – Dandelion</p>",
+        "sourcebook": "LR 167",
+        "weight": 2.5,
+        "cost": 860,
+        "reliability": 10,
+        "reliabilityMax": 10,
+        "accuracy": 0,
+        "damage": "2d6",
+        "hands": 1,
+        "effects": "Carica",
+        "category": "Bludgeons"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

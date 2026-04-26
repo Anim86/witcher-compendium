@@ -1,0 +1,56 @@
+{
+    "_id": "570e1ae2633117e4",
+    "name": "Lupo (Spada Lunga Reliquia)",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/lupo.webp",
+    "system": {
+        "description": "<p>Spada Lunga Reliquia. Appartenuta a Uffe Lama Sanguinaria, maledetto per i suoi crimini e trasformato in lupo mannaro, poi ucciso dal suo stesso fratello di sangue con questa lama.</p><p><strong>Statistiche:</strong> 7d6 DAN, Trapassare, Sanguinamento (75%). 3 Slot.</p>",
+        "quantity": "1",
+        "weight": 4,
+        "cost": 0,
+        "sourcebook": "MB 260",
+        "class": "simple",
+        "category": "relic",
+        "damage": "7d6",
+        "damageType": "slashing",
+        "reliability": {
+            "value": 15,
+            "max": 15
+        },
+        "hands": "2",
+        "range": "N/A",
+        "enhancementSlots": 3,
+        "isMeteorite": false,
+        "damageProperties": {
+            "effects": [
+                {
+                    "id": "000236b3cc4c7a6f",
+                    "name": "sanguinamento",
+                    "statusEffect": null,
+                    "percentage": 75,
+                    "varEffect": false
+                }
+            ],
+            "armorPiercing": true,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "accuracy": 2,
+        "type": {
+            "text": "",
+            "slashing": true,
+            "piercing": true,
+            "bludgeoning": false,
+            "elemental": false
+        }
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

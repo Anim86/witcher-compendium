@@ -4,12 +4,12 @@
     "type": "diagrams",
     "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/pugnale.webp",
     "system": {
-        "description": "<p>Schema per la fabbricazione di: <b>Pugnale</b>.</p><p><b>Componenti richiesti:</b> Legname (Ã—1), Ferro (Ã—1)</p><p><b>DifficoltÃ  Manifattura:</b> CD 8</p><p><b>Tempo:</b> 2 ore</p>",
+        "description": "<p>Schema per la fabbricazione di: <b>Pugnale</b>.</p><p><b>Componenti richiesti:</b> Legname (x1), Ferro (x1)</p><p><b>DifficoltÃ  Manifattura:</b> CD 8</p><p><b>Tempo:</b> 2 ore</p>",
         "weight": 0,
         "cost": 0,
         "components": [
-            "Legname (Ã—1)",
-            "Ferro (Ã—1)"
+            "Legname (x1)",
+            "Ferro (x1)"
         ],
         "difficulty": 8,
         "time": "2 ore",

@@ -1,8 +1,8 @@
 {
     "_id": "323194a9de7b4879",
-    "name": "Arcieri Scoia’tael",
+    "name": "Arcieri Scoia'tael",
     "type": "monster",
-    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-characters/arcieri_scoia’tael.webp",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-characters/arcieri_scoia'tael.webp",
     "system": {
         "stats": {
             "int": {
@@ -84,7 +84,7 @@
             }
         },
         "details": {
-            "biography": "<p>Essendo un ‘nano lealista’ ho qualcosa da dire sugli Scoia’tael. Adesso sono solo dei pazzi vendicativi... Troverete gli ultimi – che sono soprattutto elfi – nei boschi, nascosti nelle caverne e impegnati a tendere imboscate. – Rodolf Kazmer</p><p>Sono guerriglieri addestrati, che si muovono in gruppi detti “commando” e tendono imboscate. Spesso i commando seguono una preda per ore, in attesa di trovare il luogo migliore per l’imboscata. Iniziano l’attacco con raffiche di frecce dagli alberi.</p>",
+            "biography": "<p>Essendo un ‘nano lealista' ho qualcosa da dire sugli Scoia'tael. Adesso sono solo dei pazzi vendicativi... Troverete gli ultimi – che sono soprattutto elfi – nei boschi, nascosti nelle caverne e impegnati a tendere imboscate. – Rodolf Kazmer</p><p>Sono guerriglieri addestrati, che si muovono in gruppi detti “commando” e tendono imboscate. Spesso i commando seguono una preda per ore, in attesa di trovare il luogo migliore per l'imboscata. Iniziano l'attacco con raffiche di frecce dagli alberi.</p>",
             "threat": "Facile",
             "reward": 10,
             "monsterType": "Humanoid"
@@ -124,7 +124,7 @@
                 "max": 6
             }
         },
-        "description": "<p>Essendo un ‘nano lealista’ ho qualcosa da dire sugli Scoia’tael. Adesso sono solo dei pazzi vendicativi... Troverete gli ultimi – che sono soprattutto elfi – nei boschi, nascosti nelle caverne e impegnati a tendere imboscate. – Rodolf Kazmer</p><p>Sono guerriglieri addestrati, che si muovono in gruppi detti “commando” e tendono imboscate. Spesso i commando seguono una preda per ore, in attesa di trovare il luogo migliore per l’imboscata. Iniziano l’attacco con raffiche di frecce dagli alberi.</p>",
+        "description": "<p>Essendo un ‘nano lealista' ho qualcosa da dire sugli Scoia'tael. Adesso sono solo dei pazzi vendicativi... Troverete gli ultimi – che sono soprattutto elfi – nei boschi, nascosti nelle caverne e impegnati a tendere imboscate. – Rodolf Kazmer</p><p>Sono guerriglieri addestrati, che si muovono in gruppi detti “commando” e tendono imboscate. Spesso i commando seguono una preda per ore, in attesa di trovare il luogo migliore per l'imboscata. Iniziano l'attacco con raffiche di frecce dagli alberi.</p>",
         "sourcebook": "MB 276"
     },
     "items": [
@@ -204,7 +204,7 @@
             "type": "note",
             "img": "modules/witcher-compendium/assets/SPECIAL/Trait_Volo.webp",
             "system": {
-                "description": "<p>Quando un gruppo di arcieri Scoia’tael effettua una prova di Nascondersi, l’intero gruppo usa il singolo tiro più alto tra tutti i membri.</p>"
+                "description": "<p>Quando un gruppo di arcieri Scoia'tael effettua una prova di Nascondersi, l'intero gruppo usa il singolo tiro più alto tra tutti i membri.</p>"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

@@ -4,7 +4,7 @@
     "type": "spell",
     "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells/Comando_Mentale.webp",
     "system": {
-        "description": "<p>Comando Mentale consente d’impiantare un ordine nella mente di un bersaglio. Il comando deve es- sere eseguito alla lettera. Se il comando è qualcosa che il bersaglio non farebbe mai, questo riceve +5 alla prova di Resistere alla Magia.</p>",
+        "description": "<p>Comando Mentale consente d'impiantare un ordine nella mente di un bersaglio. Il comando deve es- sere eseguito alla lettera. Se il comando è qualcosa che il bersaglio non farebbe mai, questo riceve +5 alla prova di Resistere alla Magia.</p>",
         "quantity": "1",
         "weight": 0,
         "cost": 0,
@@ -14,9 +14,9 @@
         "source": "mixedElements",
         "stamina": 25,
         "staminaIsVar": false,
-        "effect": "Comando Mentale consente d’impiantare un ordine nella mente di un bersaglio. Il comando deve es- sere eseguito alla lettera. Se il comando è qualcosa che il bersaglio non farebbe mai, questo riceve +5 alla prova di Resistere alla Magia.",
+        "effect": "Comando Mentale consente d'impiantare un ordine nella mente di un bersaglio. Il comando deve es- sere eseguito alla lettera. Se il comando è qualcosa che il bersaglio non farebbe mai, questo riceve +5 alla prova di Resistere alla Magia.",
         "range": "10m",
-        "duration": "Fino al completamento dell’incarico",
+        "duration": "Fino al completamento dell'incarico",
         "defence": "Resistere alla Magia",
         "damageProperties": {
             "armorPiercing": false,
