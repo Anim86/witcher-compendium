@@ -28,7 +28,8 @@ const sourceFolders = [
     'witcher-components-mutageni-dw',
     'witcher-dlc-ms-components',
     'witcher-mutations',
-    'witcher-mutazioni-tc'
+    'witcher-mutazioni-tc',
+    'witcher-schematics'
 ];
 
 async function processImages() {
