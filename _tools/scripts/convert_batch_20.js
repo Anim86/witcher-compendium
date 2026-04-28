@@ -32,7 +32,10 @@ const sourceFolders = [
     'witcher-schematics',
     'witcher-weapons',
     'witcher-dlc-sw-schematics',
-    'witcher-dlc-ts-schematics'
+    'witcher-dlc-ts-schematics',
+    'witcher-equipment',
+    'witcher-special',
+    'witcher-trophies'
 ];
 
 async function processImages() {
