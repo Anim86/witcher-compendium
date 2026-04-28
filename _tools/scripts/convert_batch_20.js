@@ -35,6 +35,7 @@ const sourceFolders = [
     'witcher-dlc-ts-schematics',
     'witcher-equipment',
     'witcher-special',
+    'witcher-special-chaos',
     'witcher-trophies'
 ];
 
