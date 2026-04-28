@@ -29,7 +29,10 @@ const sourceFolders = [
     'witcher-dlc-ms-components',
     'witcher-mutations',
     'witcher-mutazioni-tc',
-    'witcher-schematics'
+    'witcher-schematics',
+    'witcher-weapons',
+    'witcher-dlc-sw-schematics',
+    'witcher-dlc-ts-schematics'
 ];
 
 async function processImages() {

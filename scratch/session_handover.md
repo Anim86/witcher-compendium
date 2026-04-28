@@ -1,30 +1,30 @@
-# Session Handover: Witcher Compendium Icon Integration
+# Session Handover: Witcher Compendium Icon Integration & Sanitization
 
-## Progress Summary (2026-04-24)
-- **Batches 20-24 Integrated**: Successfully processed, converted, and deployed icons for 62+ items (Components, Mutagens, and special materials).
-- **Global Audit Updated**: The missing icon count has been reduced to **858**.
-- **Next Batches Prepared**: Batch 25 and 26 are ready with prompts and filenames.
-- **Git State**: All changes (WebP assets, scripts, scratch files) have been committed and pushed to `origin main`.
-- **Infrastructure**:
-    - `convert_batch_20.js` has been updated to handle multiple source folders and many-to-many mappings.
-    - `global_icon_audit.js` and `update_missing_list.js` are ready for future runs.
+## Progress Summary (2026-04-28)
+- **Batch 28 Completed**: Integrated 15 weapons.
+- **Data Sanitization (CRITICAL)**:
+    - **Deduplication**: Renamed all schematic items to include the prefix **"Schema: "**. This resolved 97 duplicate name collisions in the compendium.
+    - **Description Repair**: Fixed **26 items** with corrupted "table-dump" descriptions in the schematic packs. Descriptions were either restored from the base item or replaced with clean placeholders.
+- **Global Audit**: Missing icons now at **754**.
+- **Prompt Preparation**:
+    - **Batches 31-41 (Equipment)**: Prepared HTML files for 142 equipment items.
+    - **Batches 42-44 (Trophies)**: Prepared HTML files for 45 unique monster trophies.
+
+## Blocker: API Quota Exhausted
+- **Status**: Quota for `gemini-3.1-flash-image` is exhausted.
+- **Reset Time**: Approximately **12:41 UTC** (in about 2 hours).
 
 ## Current State of Next Batches
-### [Batch 25 (Ready)](file:///e:/AntigravitiProgetti/CompendioTheWitcher/scratch/prompts_batch_25.html)
-- Focus: Mutageno Vendigo, DLC components (Alp, Werecat), and common mutagens (Wyvern, Fiend, etc.).
-- Items: 15
-
-### [Batch 26 (Ready)](file:///e:/AntigravitiProgetti/CompendioTheWitcher/scratch/prompts_batch_26.html)
-- Focus: Remaining mutagens and Mutation Rules/Traits.
-- Items: 15
+### Batches 31 to 44 (Prepared)
+- **Focus**: Equipment, Special Items, and Monster Trophies.
+- **Files**: `prompts_batch_31.html` through `prompts_batch_44.html` in the `scratch/` folder.
 
 ## Important Paths
-- **Source PNGs**: `e:/AntigravitiProgetti/CompendioTheWitcher/temp_images/` (subfolders per pack).
-- **Target WebP**: `e:/AntigravitiProgetti/CompendioTheWitcher/witcher-compendium/assets/...`
-- **Mapping Reference**: `e:/AntigravitiProgetti/CompendioTheWitcher/scratch/work_list.json`
-- **Missing List**: `e:/AntigravitiProgetti/CompendioTheWitcher/scratch/FULL_MISSING_ICONS_LIST.txt`
+- **Source PNGs**: `e:/AntigravitiProgetti/CompendioTheWitcher/temp_images/`
+- **Sanitization Scripts**: `scratch/rename_schemas.js` and `scratch/execute_sanitization_v4.js`.
 
 ## Tasks for Next Session
-1. Check for newly generated PNGs in `temp_images/` for Batch 25 and 26.
-2. Run `node e:\AntigravitiProgetti\CompendioTheWitcher\_tools\scripts\convert_batch_20.js` to deploy them.
-3. Perform a new global audit to select items for Batch 27 (Schematics & Weapons).
+1. **Wait for API quota** to reset.
+2. Continue generation of **Batch 31** (Equipment).
+3. Update `convert_batch_20.js` to include `witcher-equipment`, `witcher-special`, and `witcher-trophies`.
+4. Run `node e:\AntigravitiProgetti\CompendioTheWitcher\_tools\scripts\convert_batch_20.js` to deploy.

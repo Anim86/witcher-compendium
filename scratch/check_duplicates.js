@@ -1,29 +1,53 @@
 const fs = require('fs');
+const path = require('path');
 
-function findDuplicates(filepath) {
-    const content = fs.readFileSync(filepath, 'utf8');
-    const lines = content.split('\n');
-    const stack = [{}];
-    
-    lines.forEach((line, i) => {
-        const lineNum = i + 1;
-        // Simple regex for keys in one line
-        const keyMatch = line.match(/\"([^\"]+)\"\s*:/);
-        if (keyMatch) {
-            const key = keyMatch[1];
-            const currentScope = stack[stack.length - 1];
-            if (currentScope[key]) {
-                console.log(`Duplicate key "${key}" found at line ${lineNum} (previously at line ${currentScope[key]})`);
-            }
-            currentScope[key] = lineNum;
-        }
-        
-        // Track nesting scope
-        if (line.includes('{')) stack.push({});
-        if (line.includes('}')) stack.pop();
+const SRC_PACKS = 'e:/AntigravitiProgetti/CompendioTheWitcher/_tools/src-packs';
+
+function walkDir(dir, callback) {
+    fs.readdirSync(dir).forEach(f => {
+        let dirPath = path.join(dir, f);
+        let isDirectory = fs.statSync(dirPath).isDirectory();
+        isDirectory ? walkDir(dirPath, callback) : callback(dirPath);
     });
 }
 
-const file = process.argv[2];
-if (file) findDuplicates(file);
-else console.log("Please provide a file path.");
+const itemsByName = {};
+const duplicates = [];
+
+console.log('Scanning for duplicates...');
+
+walkDir(SRC_PACKS, (filePath) => {
+    if (!filePath.endsWith('.json')) return;
+    
+    try {
+        const data = JSON.parse(fs.readFileSync(filePath, 'utf8'));
+        const name = data.name;
+        const pack = path.relative(SRC_PACKS, path.dirname(filePath));
+        
+        if (!itemsByName[name]) {
+            itemsByName[name] = [];
+        }
+        
+        itemsByName[name].push({
+            path: filePath,
+            pack: pack
+        });
+    } catch (e) {}
+});
+
+for (const name in itemsByName) {
+    if (itemsByName[name].length > 1) {
+        duplicates.push({
+            name: name,
+            instances: itemsByName[name]
+        });
+    }
+}
+
+console.log(`Found ${duplicates.length} duplicate names.`);
+
+if (duplicates.length > 0) {
+    const reportPath = 'e:/AntigravitiProgetti/CompendioTheWitcher/scratch/duplicate_report.json';
+    fs.writeFileSync(reportPath, JSON.stringify(duplicates, null, 2));
+    console.log(`Duplicate report saved to: ${reportPath}`);
+}
