@@ -1,0 +1,912 @@
+[
+    {
+        "pack": "ALCHIMIA_E_ARTIGIANATO\\Formule_e_Ricette\\witcher-alchemy\\Formula_Olio_Anti-Ancestrali_wo_.json",
+        "itemName": "Formula: Olio Anti-Ancestrali",
+        "imgValue": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/formula_olio_anti_ancestrali.webp",
+        "imgFilename": "formula_olio_anti_ancestrali.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "ALCHIMIA_E_ARTIGIANATO\\Formule_e_Ricette\\witcher-alchemy\\Formula_Olio_Anti-Bestie_wo_.json",
+        "itemName": "Formula: Olio Anti-Bestie",
+        "imgValue": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/formula_olio_anti_bestie.webp",
+        "imgFilename": "formula_olio_anti_bestie.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "ALCHIMIA_E_ARTIGIANATO\\Formule_e_Ricette\\witcher-alchemy\\Formula_Olio_Anti-Dragonidi_wo_.json",
+        "itemName": "Formula: Olio Anti-Dragonidi",
+        "imgValue": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/formula_olio_anti_dragonidi.webp",
+        "imgFilename": "formula_olio_anti_dragonidi.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "ALCHIMIA_E_ARTIGIANATO\\Formule_e_Ricette\\witcher-alchemy\\Formula_Olio_Anti-Elementali_wo_.json",
+        "itemName": "Formula: Olio Anti-Elementali",
+        "imgValue": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/formula_olio_anti_elementali.webp",
+        "imgFilename": "formula_olio_anti_elementali.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "ALCHIMIA_E_ARTIGIANATO\\Formule_e_Ricette\\witcher-alchemy\\Formula_Olio_Anti-Ibridi_wo_.json",
+        "itemName": "Formula: Olio Anti-Ibridi",
+        "imgValue": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/formula_olio_anti_ibridi.webp",
+        "imgFilename": "formula_olio_anti_ibridi.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "ALCHIMIA_E_ARTIGIANATO\\Formule_e_Ricette\\witcher-alchemy\\Formula_Olio_Anti-Insettoidi_wo_.json",
+        "itemName": "Formula: Olio Anti-Insettoidi",
+        "imgValue": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/formula_olio_anti_insettoidi.webp",
+        "imgFilename": "formula_olio_anti_insettoidi.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "ALCHIMIA_E_ARTIGIANATO\\Formule_e_Ricette\\witcher-alchemy\\Formula_Olio_Anti-Maledetti_wo_.json",
+        "itemName": "Formula: Olio Anti-Maledetti",
+        "imgValue": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/formula_olio_anti_maledetti.webp",
+        "imgFilename": "formula_olio_anti_maledetti.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "ALCHIMIA_E_ARTIGIANATO\\Formule_e_Ricette\\witcher-alchemy\\Formula_Olio_Anti-Necrofagi_wo_.json",
+        "itemName": "Formula: Olio Anti-Necrofagi",
+        "imgValue": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/formula_olio_anti_necrofagi.webp",
+        "imgFilename": "formula_olio_anti_necrofagi.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "ALCHIMIA_E_ARTIGIANATO\\Formule_e_Ricette\\witcher-alchemy\\Formula_Olio_Anti-Orchi_wo_.json",
+        "itemName": "Formula: Olio Anti-Orchi",
+        "imgValue": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/formula_olio_anti_orchi.webp",
+        "imgFilename": "formula_olio_anti_orchi.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "ALCHIMIA_E_ARTIGIANATO\\Formule_e_Ricette\\witcher-alchemy\\Formula_Olio_Anti-Spettri_wo_.json",
+        "itemName": "Formula: Olio Anti-Spettri",
+        "imgValue": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/formula_olio_anti_spettri.webp",
+        "imgFilename": "formula_olio_anti_spettri.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "ALCHIMIA_E_ARTIGIANATO\\Formule_e_Ricette\\witcher-alchemy\\Formula_Olio_Anti-Vampiri_wo_.json",
+        "itemName": "Formula: Olio Anti-Vampiri",
+        "imgValue": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/formula_olio_anti_vampiri.webp",
+        "imgFilename": "formula_olio_anti_vampiri.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "ALCHIMIA_E_ARTIGIANATO\\Schemi_di_Fabbricazione\\witcher-schematics\\asce_da_lancio_a3_139cd011b5f432c7.json",
+        "itemName": "Schema: Asce da Lancio (x3)",
+        "imgValue": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-schematics/asce_da_lancio_a3.webp",
+        "imgFilename": "asce_da_lancio_a3.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "ALCHIMIA_E_ARTIGIANATO\\Schemi_di_Fabbricazione\\witcher-schematics\\coltelli_da_lancio_a3_3ae97d399c900c27.json",
+        "itemName": "Schema: Coltelli da Lancio (x3)",
+        "imgValue": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-schematics/coltelli_da_lancio_a3.webp",
+        "imgFilename": "coltelli_da_lancio_a3.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "ALCHIMIA_E_ARTIGIANATO\\Schemi_di_Fabbricazione\\witcher-schematics\\elfica_2d0dfd770cbb7773.json",
+        "itemName": "Schema: Rinforzo Elfico",
+        "imgValue": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-schematics/elfica.webp",
+        "imgFilename": "elfica.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "ALCHIMIA_E_ARTIGIANATO\\Schemi_di_Fabbricazione\\witcher-schematics\\munizioni_a_punta_larga_a10_7b53ec7f7bf34eac.json",
+        "itemName": "Schema: Munizioni a Punta Larga (x10)",
+        "imgValue": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-schematics/munizioni_a_punta_larga_a10.webp",
+        "imgFilename": "munizioni_a_punta_larga_a10.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "ALCHIMIA_E_ARTIGIANATO\\Schemi_di_Fabbricazione\\witcher-schematics\\munizioni_bodkin_a10_094dd115f8554ffe.json",
+        "itemName": "Schema: Munizioni Bodkin (x10)",
+        "imgValue": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-schematics/munizioni_bodkin_a10.webp",
+        "imgFilename": "munizioni_bodkin_a10.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "ALCHIMIA_E_ARTIGIANATO\\Schemi_di_Fabbricazione\\witcher-schematics\\Nanica_5e082e424a3a4dab.json",
+        "itemName": "Schema: Rinforzo Nano",
+        "imgValue": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-schematics/Nanica.webp",
+        "imgFilename": "Nanica.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "ALCHIMIA_E_ARTIGIANATO\\Schemi_di_Fabbricazione\\witcher-schematics\\orione_a3_0c8eaef83981bedf.json",
+        "itemName": "Schema: Orione (x3)",
+        "imgValue": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-schematics/orione_a3.webp",
+        "imgFilename": "orione_a3.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "BESTIARIO\\witcher-monsters\\succube_incubo_7ed094f23185bc6a.json",
+        "itemName": "Succube & Incubo",
+        "imgValue": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/succube_incubo.webp",
+        "imgFilename": "succube_incubo.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Attrezzatura_e_Oggetti\\witcher-equipment\\Anti-Ancestrali_01897166528f04c2.json",
+        "itemName": "Anti-Ancestrali",
+        "imgValue": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-special/anti_ancestrali.webp",
+        "imgFilename": "anti_ancestrali.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Attrezzatura_e_Oggetti\\witcher-equipment\\Anti-Bestie_be0449da77ab5136.json",
+        "itemName": "Anti-Bestie",
+        "imgValue": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-special/anti_bestie.webp",
+        "imgFilename": "anti_bestie.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Attrezzatura_e_Oggetti\\witcher-equipment\\Anti-Costrutti_dd75a029513af7f7.json",
+        "itemName": "Anti-Costrutti",
+        "imgValue": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-special/anti_costrutti.webp",
+        "imgFilename": "anti_costrutti.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Attrezzatura_e_Oggetti\\witcher-equipment\\Anti-Dragonidi_6d4f3bc2cbeec9ef.json",
+        "itemName": "Anti-Dragonidi",
+        "imgValue": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-special/anti_dragonidi.webp",
+        "imgFilename": "anti_dragonidi.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Attrezzatura_e_Oggetti\\witcher-equipment\\Anti-Ibridi_960d1a617e2a6847.json",
+        "itemName": "Anti-Ibridi",
+        "imgValue": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-special/anti_ibridi.webp",
+        "imgFilename": "anti_ibridi.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Attrezzatura_e_Oggetti\\witcher-equipment\\Anti-Insettoidi_38a76fa165a6de46.json",
+        "itemName": "Anti-Insettoidi",
+        "imgValue": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-special/anti_insettoidi.webp",
+        "imgFilename": "anti_insettoidi.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Attrezzatura_e_Oggetti\\witcher-equipment\\Anti-Maledetti_69e7c869d29dc1bd.json",
+        "itemName": "Anti-Maledetti",
+        "imgValue": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-special/anti_maledetti.webp",
+        "imgFilename": "anti_maledetti.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Attrezzatura_e_Oggetti\\witcher-equipment\\Anti-Necrofagi_6ea0fdab22fb013d.json",
+        "itemName": "Anti-Necrofagi",
+        "imgValue": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-special/anti_necrofagi.webp",
+        "imgFilename": "anti_necrofagi.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Attrezzatura_e_Oggetti\\witcher-equipment\\Anti-Orchi_071d9c96f5e1cfa0.json",
+        "itemName": "Anti-Orchi",
+        "imgValue": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-special/anti_orchi.webp",
+        "imgFilename": "anti_orchi.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Attrezzatura_e_Oggetti\\witcher-equipment\\Anti-Spettri_e1d78826b093f749.json",
+        "itemName": "Anti-Spettri",
+        "imgValue": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-special/anti_spettri.webp",
+        "imgFilename": "anti_spettri.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Attrezzatura_e_Oggetti\\witcher-equipment\\Anti-Vampiri_a8c209f3b5cbf95b.json",
+        "itemName": "Anti-Vampiri",
+        "imgValue": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-special/anti_vampiri.webp",
+        "imgFilename": "anti_vampiri.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Attrezzatura_e_Oggetti\\witcher-equipment\\Arto_Artificiale_di_Qualita_b81eec29f7eb6759.json",
+        "itemName": "Arto Artificiale di Qualità ",
+        "imgValue": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-equipment/Arto_Artificiale_di_Qualità.webp",
+        "imgFilename": "Arto_Artificiale_di_Qualità.webp",
+        "reason": "Special chars in filename"
+    },
+    {
+        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Attrezzatura_e_Oggetti\\witcher-equipment\\Candele_5_2dbbeeaa6ab742e8.json",
+        "itemName": "Candele (x5)",
+        "imgValue": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-equipment/candele_a5.webp",
+        "imgFilename": "candele_a5.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Attrezzatura_e_Oggetti\\witcher-equipment\\Diario_-_Libro_Mastro_b59de88fc253d2b4.json",
+        "itemName": "Diario / Libro Mastro",
+        "imgValue": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-equipment/diario_libro_mastro.webp",
+        "imgFilename": "diario_libro_mastro.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Attrezzatura_e_Oggetti\\witcher-equipment\\Picchetti_5_1267697207ac492c.json",
+        "itemName": "Picchetti (x5)",
+        "imgValue": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-equipment/picchetti_a5.webp",
+        "imgFilename": "picchetti_a5.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Attrezzatura_e_Oggetti\\witcher-equipment\\Profumo_-_Acqua_di_Colonia_9813c3ad8c118fde.json",
+        "itemName": "Profumo / Acqua di Colonia",
+        "imgValue": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-equipment/profumo_acqua_di_colonia.webp",
+        "imgFilename": "profumo_acqua_di_colonia.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Attrezzatura_e_Oggetti\\witcher-equipment\\Stanza_in_Locanda_di_Qualita_82cb6f3fb5cdec93.json",
+        "itemName": "Stanza in Locanda di Qualità ",
+        "imgValue": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-equipment/Stanza_in_Locanda_di_Qualità.webp",
+        "imgFilename": "Stanza_in_Locanda_di_Qualità.webp",
+        "reason": "Special chars in filename"
+    },
+    {
+        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\_review_orphans\\taglia_monete_f559fde75a4ea17c.json",
+        "itemName": "Taglia-monete",
+        "imgValue": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-dlc-ap-equipment/taglia_monete.webp",
+        "imgFilename": "taglia_monete.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Ferite_Critiche\\witcher-critical-wounds\\costole_incrinate_1cebd02ef5dd2823.json",
+        "itemName": "Costole Incrinate",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Ferite_Critiche/witcher-critical-wounds/frattura.webp",
+        "imgFilename": "frattura.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Ferite_Critiche\\witcher-critical-wounds\\costole_rotte_70e098177830a70c.json",
+        "itemName": "Costole Rotte",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Ferite_Critiche/witcher-critical-wounds/frattura.webp",
+        "imgFilename": "frattura.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Ferite_Critiche\\witcher-critical-wounds\\danni_cardiaci_84a62a32b81c1bf7.json",
+        "itemName": "Danni Cardiaci",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Ferite_Critiche/witcher-critical-wounds/interna.webp",
+        "imgFilename": "interna.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Ferite_Critiche\\witcher-critical-wounds\\mascella_incrinata_dbe978558ba27837.json",
+        "itemName": "Mascella Incrinata",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Ferite_Critiche/witcher-critical-wounds/frattura.webp",
+        "imgFilename": "frattura.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Ferite_Critiche\\witcher-critical-wounds\\milza_lesionata_1dba2b6dcf9b9e19.json",
+        "itemName": "Milza Lesionata",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Ferite_Critiche/witcher-critical-wounds/interna.webp",
+        "imgFilename": "interna.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Ferite_Critiche\\witcher-critical-wounds\\occhio_danneggiato_8003eccf03321f3e.json",
+        "itemName": "Occhio Danneggiato",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Ferite_Critiche/witcher-critical-wounds/testa.webp",
+        "imgFilename": "testa.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Ferite_Critiche\\witcher-critical-wounds\\pneumotorace_aeb87aa787b6254c.json",
+        "itemName": "Pneumotorace",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Ferite_Critiche/witcher-critical-wounds/testa.webp",
+        "imgFilename": "testa.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Ferite_Critiche\\witcher-critical-wounds\\sfregio_82f38cee4ff0d783.json",
+        "itemName": "Sfregio",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Ferite_Critiche/witcher-critical-wounds/testa.webp",
+        "imgFilename": "testa.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Ferite_Critiche\\witcher-critical-wounds\\shock_settico_e7ea9dfa3a6292a0.json",
+        "itemName": "Shock Settico",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Ferite_Critiche/witcher-critical-wounds/interna.webp",
+        "imgFilename": "interna.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Ferite_Critiche\\witcher-critical-wounds\\spina_dorsale_spezzata_360dba105834c152.json",
+        "itemName": "Spina Dorsale Spezzata",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Ferite_Critiche/witcher-critical-wounds/testa.webp",
+        "imgFilename": "testa.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Ferite_Critiche\\witcher-critical-wounds\\stomaco_lacerato_453ba1d034666a86.json",
+        "itemName": "Stomaco Lacerato",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Ferite_Critiche/witcher-critical-wounds/interna.webp",
+        "imgFilename": "interna.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Lore_e_Racconti\\witcher-lore\\background_vita_witcher_b1a2c3k4g5r6o7u8.json",
+        "itemName": "La Vita di un Witcher",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Lore_e_Racconti/witcher-lore/vita_witcher.webp",
+        "imgFilename": "vita_witcher.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Lore_e_Racconti\\witcher-lore\\epoca_d_oro_witcher_e1p2o3c4a5o6r7o8.json",
+        "itemName": "L'Epoca d'Oro dei Witcher",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Lore_e_Racconti/witcher-lore/epoca_d_oro.webp",
+        "imgFilename": "epoca_d_oro.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Lore_e_Racconti\\witcher-lore-chaos\\lore_linee_geomantiche_definizione_eb145f9ad6ee28ab.json",
+        "itemName": "Lore: Linee Geomantiche — Definizione",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Lore_e_Racconti/witcher-lore-chaos/lore_linee_geomantiche_definizione.webp",
+        "imgFilename": "lore_linee_geomantiche_definizione.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Lore_e_Racconti\\witcher-lore-chaos\\lore_linee_geomantiche_elemento_acqua_d70fc75101163b31.json",
+        "itemName": "Lore: Linee Geomantiche — Elemento Acqua",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Lore_e_Racconti/witcher-lore-chaos/lore_linee_geomantiche_elemento_acqua.webp",
+        "imgFilename": "lore_linee_geomantiche_elemento_acqua.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Lore_e_Racconti\\witcher-lore-chaos\\lore_linee_geomantiche_elemento_aria_8ce2e2491e3e4854.json",
+        "itemName": "Lore: Linee Geomantiche — Elemento Aria",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Lore_e_Racconti/witcher-lore-chaos/lore_linee_geomantiche_elemento_aria.webp",
+        "imgFilename": "lore_linee_geomantiche_elemento_aria.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Lore_e_Racconti\\witcher-lore-chaos\\lore_linee_geomantiche_elemento_fuoco_8134c5e015861d67.json",
+        "itemName": "Lore: Linee Geomantiche — Elemento Fuoco",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Lore_e_Racconti/witcher-lore-chaos/lore_linee_geomantiche_elemento_fuoco.webp",
+        "imgFilename": "lore_linee_geomantiche_elemento_fuoco.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Lore_e_Racconti\\witcher-lore-chaos\\lore_linee_geomantiche_elemento_terra_14e141aed1808487.json",
+        "itemName": "Lore: Linee Geomantiche — Elemento Terra",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Lore_e_Racconti/witcher-lore-chaos/lore_linee_geomantiche_elemento_terra.webp",
+        "imgFilename": "lore_linee_geomantiche_elemento_terra.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Lore_e_Racconti\\witcher-lore-chaos\\lore_linee_geomantiche_preti_e_druidi_1c4488d356be8b07.json",
+        "itemName": "Lore: Linee Geomantiche — Preti e Druidi",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Lore_e_Racconti/witcher-lore-chaos/lore_linee_geomantiche_preti_e_druidi.webp",
+        "imgFilename": "lore_linee_geomantiche_preti_e_druidi.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Lore_e_Racconti\\witcher-lore-chaos\\lore_linee_geomantiche_trarre_potere_39daea5ccbf4a1f1.json",
+        "itemName": "Lore: Linee Geomantiche — Trarre Potere",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Lore_e_Racconti/witcher-lore-chaos/lore_linee_geomantiche_trarre_potere.webp",
+        "imgFilename": "lore_linee_geomantiche_trarre_potere.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Lore_e_Racconti\\witcher-lore-chaos\\storia_dei_druidi_s1t2o3r4i5a6d7k0.json",
+        "itemName": "Storia dei Druidi",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Lore_e_Racconti/witcher-lore-chaos/storia_druidi.webp",
+        "imgFilename": "storia_druidi.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Lore_e_Racconti\\witcher-lore-chaos\\vita_da_mago_v1i2t3a4d5a6m7k0.json",
+        "itemName": "La Vita da Mago",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Lore_e_Racconti/witcher-lore-chaos/vita_mago.webp",
+        "imgFilename": "vita_mago.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-races\\elfi_24e63ac513a0d5e3.json",
+        "itemName": "Elfi",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-races/elfo.webp",
+        "imgFilename": "elfo.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-races\\nani_dbf30463fcf83a5d.json",
+        "itemName": "Nani",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-races/nano.webp",
+        "imgFilename": "nano.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-races\\umani_7d704613492c7519.json",
+        "itemName": "Umani",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-races/umano.webp",
+        "imgFilename": "umano.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\accortezza_73c79deb0ee6329a.json",
+        "itemName": "Accortezza",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/percezione.webp",
+        "imgFilename": "percezione.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\armi_in_asta_4569adf6da4cd78c.json",
+        "itemName": "Armi in Asta",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/combattimento.webp",
+        "imgFilename": "combattimento.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\artigianato_d2a0fdc55b892b70.json",
+        "itemName": "Artigianato",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/tecniche.webp",
+        "imgFilename": "tecniche.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\atletica_ea0d9de2d94c7ae7.json",
+        "itemName": "Atletica",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/fisiche.webp",
+        "imgFilename": "fisiche.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\balestre_3dafd1145ae258d4.json",
+        "itemName": "Balestre",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/archi.webp",
+        "imgFilename": "archi.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\belle_arti_c53a243e4a215262.json",
+        "itemName": "Belle Arti",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/artistiche.webp",
+        "imgFilename": "artistiche.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\benedizioni_b4c5d6e7f8a9b0c1.json",
+        "itemName": "Benedizioni",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/magiche.webp",
+        "imgFilename": "magiche.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\bestiario_fb419ebc522bdec9.json",
+        "itemName": "Bestiario",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/sapere.webp",
+        "imgFilename": "sapere.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\bosco_sacro_c4d5e6f7a8b9c0d1.json",
+        "itemName": "Bosco Sacro",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/magiche.webp",
+        "imgFilename": "magiche.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\camuffare_3a027964177ebfb2.json",
+        "itemName": "Camuffare",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/fisiche.webp",
+        "imgFilename": "fisiche.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\carisma_0bbaaa3a81520262.json",
+        "itemName": "Carisma",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/sociale.webp",
+        "imgFilename": "sociale.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\cavalcare_f961f259b5a0fb56.json",
+        "itemName": "Cavalcare",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/fisiche.webp",
+        "imgFilename": "fisiche.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\commercio_5f8be6c95d19d184.json",
+        "itemName": "Commercio",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/sociale.webp",
+        "imgFilename": "sociale.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\contraffazione_eaa35432d5329a08.json",
+        "itemName": "Contraffazione",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/tecniche.webp",
+        "imgFilename": "tecniche.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\coraggio_7ebdf43554dc6aa3.json",
+        "itemName": "Coraggio",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/fisiche.webp",
+        "imgFilename": "fisiche.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\costruire_trappole_84e1b21239c0966a.json",
+        "itemName": "Costruire Trappole",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/tecniche.webp",
+        "imgFilename": "tecniche.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\deduzione_bdc543342cfc257f.json",
+        "itemName": "Deduzione",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/sapere.webp",
+        "imgFilename": "sapere.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\eleganza_620f203ff79edc3b.json",
+        "itemName": "Eleganza",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/sociale.webp",
+        "imgFilename": "sociale.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\eludere_8d6dadda304af038.json",
+        "itemName": "Eludere",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/combattimento.webp",
+        "imgFilename": "combattimento.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\esibirsi_cb6eec2da16f2934.json",
+        "itemName": "Esibirsi",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/sociale.webp",
+        "imgFilename": "sociale.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\etichetta_bce439c2946e0caa.json",
+        "itemName": "Etichetta",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/sociale.webp",
+        "imgFilename": "sociale.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\fabbricare_trappole_811f06949c0e223b.json",
+        "itemName": "Fabbricare Trappole",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/tecniche.webp",
+        "imgFilename": "tecniche.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\falsificare_070c79e701918341.json",
+        "itemName": "Falsificare",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/tecniche.webp",
+        "imgFilename": "tecniche.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\fervore_a6b7c8d9e0f1a2b3.json",
+        "itemName": "Fervore",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/magiche.webp",
+        "imgFilename": "magiche.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\forma_bestiale_b0c1d2e3f4a5b6c7.json",
+        "itemName": "Forma Bestiale",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/combattimento.webp",
+        "imgFilename": "combattimento.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\guardiano_del_bosco_f6a7b8c9d0e1f2a3.json",
+        "itemName": "Guardiano del Bosco",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/magiche.webp",
+        "imgFilename": "magiche.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\guaritore_di_bestie_d0e1f2a3b4c5d6e7.json",
+        "itemName": "Guaritore di Bestie",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/alchimia.webp",
+        "imgFilename": "alchimia.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\inganno_30d435cba4c349b9.json",
+        "itemName": "Inganno",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/sociale.webp",
+        "imgFilename": "sociale.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\iniziato_degli_dei_1a2b3c4d5e6f7a8b.json",
+        "itemName": "Iniziato degli Dei",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/magiche.webp",
+        "imgFilename": "magiche.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\insegnamento_3199364ee5d4c7c6.json",
+        "itemName": "Insegnamento",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/sociale.webp",
+        "imgFilename": "sociale.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\intessere_fatture_da4e797c1ed17316.json",
+        "itemName": "Intessere Fatture",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/magiche.webp",
+        "imgFilename": "magiche.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\intimidire_e76878dc8c48e71c.json",
+        "itemName": "Intimidire",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/sociale.webp",
+        "imgFilename": "sociale.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\istruzione_cae834ce33219427.json",
+        "itemName": "Istruzione",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/sapere.webp",
+        "imgFilename": "sapere.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\lame_corte_cab8e29ce1231d1c.json",
+        "itemName": "Lame Corte",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/combattimento.webp",
+        "imgFilename": "combattimento.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\lanciare_incantesimi_62d40cb8b56d14af.json",
+        "itemName": "Lanciare Incantesimi",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/magiche.webp",
+        "imgFilename": "magiche.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\leggere_la_natura_f8a9b0c1d2e3f4a5.json",
+        "itemName": "Leggere la Natura",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/percezione.webp",
+        "imgFilename": "percezione.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\linguaggio_lingua_antica_d5e513cfba00d5d5.json",
+        "itemName": "Linguaggio: Lingua Antica",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/sociale.webp",
+        "imgFilename": "sociale.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\linguaggio_lingua_comune_2574c290a64b4e31.json",
+        "itemName": "Linguaggio: Lingua Comune",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/sociale.webp",
+        "imgFilename": "sociale.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\linguaggio_nanico_158766ff2e804669.json",
+        "itemName": "Linguaggio: Nanico",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/sociale.webp",
+        "imgFilename": "sociale.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\manifattura_c64070fc0d72f10b.json",
+        "itemName": "Manifattura",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/tecniche.webp",
+        "imgFilename": "tecniche.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\mischia_9985644d9354a4d0.json",
+        "itemName": "Mischia",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/combattimento.webp",
+        "imgFilename": "combattimento.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\mistagogo_b1c2d3e4f5a6b7c8.json",
+        "itemName": "Mistagogo",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/sapere.webp",
+        "imgFilename": "sapere.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\misteri_del_culto_c0d1e2f3a4b5c6d7.json",
+        "itemName": "Misteri del Culto",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/sapere.webp",
+        "imgFilename": "sapere.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\navigazione_d40561485e4f1ad1.json",
+        "itemName": "Navigazione",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/fisiche.webp",
+        "imgFilename": "fisiche.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\officiare_rituali_f8cd878e2f47c613.json",
+        "itemName": "Officiare Rituali",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/magiche.webp",
+        "imgFilename": "magiche.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\parola_di_dio_f0a1b2c3d4e5f6a7.json",
+        "itemName": "Parola di Dio",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/magiche.webp",
+        "imgFilename": "magiche.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\patto_animale_d8e9f0a1b2c3d4e5.json",
+        "itemName": "Patto Animale",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/magiche.webp",
+        "imgFilename": "magiche.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\persuasione_7629510c05d21936.json",
+        "itemName": "Persuasione",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/sociale.webp",
+        "imgFilename": "sociale.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\potere_divino_d4e5f6a7b8c9d0e1.json",
+        "itemName": "Potere Divino",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/magiche.webp",
+        "imgFilename": "magiche.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\prestidigitazione_8edaff803df41fb4.json",
+        "itemName": "Prestidigitazione",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/tecniche.webp",
+        "imgFilename": "tecniche.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\preveggenza_d2e3f4a5b6c7d8e9.json",
+        "itemName": "Preveggenza",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/magiche.webp",
+        "imgFilename": "magiche.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\pronto_soccorso_120ca2cb658c1f01.json",
+        "itemName": "Pronto Soccorso",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/alchimia.webp",
+        "imgFilename": "alchimia.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\resistere_alla_magia_80a7bfb7b88c0f03.json",
+        "itemName": "Resistere alla Magia",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/magiche.webp",
+        "imgFilename": "magiche.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\resistere_a_coercizione_72d412e20c59fda5.json",
+        "itemName": "Resistere a Coercizione",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/sociale.webp",
+        "imgFilename": "sociale.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\rissa_bc857c992af634f2.json",
+        "itemName": "Rissa",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/combattimento.webp",
+        "imgFilename": "combattimento.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\rito_della_quercia_e_del_vischio_c8d9e0f1a2b3c4d5.json",
+        "itemName": "Rito della Quercia e del Vischio",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/magiche.webp",
+        "imgFilename": "magiche.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\rituali_di_sangue_f2a3b4c5d6e7f8a9.json",
+        "itemName": "Rituali di Sangue",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/magiche.webp",
+        "imgFilename": "magiche.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\sangue_e_ossa_e6f7a8b9c0d1e2f3.json",
+        "itemName": "Sangue e Ossa",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/magiche.webp",
+        "imgFilename": "magiche.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\scaltrezza_eb7e06c22f82a6ca.json",
+        "itemName": "Scaltrezza",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/sapere.webp",
+        "imgFilename": "sapere.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\scassinare_1d2757279313ea51.json",
+        "itemName": "Scassinare",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/tecniche.webp",
+        "imgFilename": "tecniche.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\scherma_b9e523e73d6c5c20.json",
+        "itemName": "Scherma",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/combattimento.webp",
+        "imgFilename": "combattimento.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\seduzione_0813e7896818fe7a.json",
+        "itemName": "Seduzione",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/sociale.webp",
+        "imgFilename": "sociale.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\sensibilita_d9c91689d82daf96.json",
+        "itemName": "Sensibilità",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/percezione.webp",
+        "imgFilename": "percezione.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\sintonia_con_la_natura_a4b5c6d7e8f9a0b1.json",
+        "itemName": "Sintonia con la Natura",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/percezione.webp",
+        "imgFilename": "percezione.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\sopravvivenza_0a18ae46767fd5fb.json",
+        "itemName": "Sopravvivenza",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/fisiche.webp",
+        "imgFilename": "fisiche.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\sovranita_divina_e8f9a0b1c2d3e4f5.json",
+        "itemName": "Sovranità Divina",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/magiche.webp",
+        "imgFilename": "magiche.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\tattica_3f60b7f63590d334.json",
+        "itemName": "Tattica",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/sapere.webp",
+        "imgFilename": "sapere.webp",
+        "reason": "Name/Img mismatch"
+    },
+    {
+        "pack": "REGOLAMENTO_E_NARRATIVA\\Professioni_e_Abilita\\witcher-skills\\tempra_0b9c99bed937928b.json",
+        "itemName": "Tempra",
+        "imgValue": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/fisiche.webp",
+        "imgFilename": "fisiche.webp",
+        "reason": "Name/Img mismatch"
+    }
+]
