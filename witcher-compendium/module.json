@@ -450,6 +450,27 @@
       "path": "packs/MAGIA_E_MALEDIZIONI/Necromanzia/witcher-necromanzia",
       "type": "Item",
       "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-rolltable-critici",
+      "label": "Tabelle: Critici e Fumble",
+      "path": "packs/TABELLEOPERATIVE/CriticieCombattimento",
+      "type": "RollTable",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-rolltable-disastri",
+      "label": "Tabelle: Disastri Magici",
+      "path": "packs/TABELLEOPERATIVE/DisastriMagici",
+      "type": "RollTable",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-rolltable-strumentigm",
+      "label": "Tabelle: Strumenti GM",
+      "path": "packs/TABELLEOPERATIVE/StrumentiGM",
+      "type": "RollTable",
+      "system": "TheWitcherItaNewSystem"
     }
   ],
   "languages": [

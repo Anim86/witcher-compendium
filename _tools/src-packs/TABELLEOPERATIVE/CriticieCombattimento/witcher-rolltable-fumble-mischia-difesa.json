@@ -1,0 +1,84 @@
+{
+  "_id": "60d8bc6889149124",
+  "name": "Fumble - Mischia Difesa",
+  "type": "RollTable",
+  "formula": "1d10",
+  "description": "",
+  "results": [
+    {
+      "range": [
+        1,
+        5
+      ],
+      "weight": 1,
+      "type": 0,
+      "text": "Nessun effetto aggiuntivo",
+      "_id": "a823886e4538ec73",
+      "drawn": false
+    },
+    {
+      "range": [
+        6,
+        6
+      ],
+      "weight": 1,
+      "type": 0,
+      "text": "1d6 danni affidabilità",
+      "_id": "f03e94426aaabc0f",
+      "drawn": false
+    },
+    {
+      "range": [
+        7,
+        7
+      ],
+      "weight": 1,
+      "type": 0,
+      "text": "Arma a terra 1d6m casuale",
+      "_id": "650cfe7a1b69925f",
+      "drawn": false
+    },
+    {
+      "range": [
+        8,
+        8
+      ],
+      "weight": 1,
+      "type": 0,
+      "text": "Prono + TS Grinta",
+      "_id": "aeaa691c99582f25",
+      "drawn": false
+    },
+    {
+      "range": [
+        9,
+        9
+      ],
+      "weight": 1,
+      "type": 0,
+      "text": "2d6 danni affidabilità",
+      "_id": "1eae15c30470018a",
+      "drawn": false
+    },
+    {
+      "range": [
+        10,
+        10
+      ],
+      "weight": 1,
+      "type": 0,
+      "text": "L'arma rimbalza su di te",
+      "_id": "bc48766e82a1904e",
+      "drawn": false
+    }
+  ],
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": "14"
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  }
+}

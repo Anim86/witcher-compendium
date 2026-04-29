@@ -130,6 +130,7 @@ _tools/src-packs/
 │   ├── witcher-characters
 │   └── witcher-monsters
 ├── EQUIPAGGIAMENTO_E_TRASPORTI
+│   ├── _review_orphans
 │   ├── Armi_e_Armature
 │   │   ├── witcher-armor
 │   │   ├── witcher-dlc-ap-equipment
@@ -159,8 +160,7 @@ _tools/src-packs/
 │   │   ├── witcher-rituals-chaos
 │   │   ├── witcher-runes
 │   │   ├── witcher-spells
-│   │   ├── witcher-spells-chaos
-│   │   └── witcher-spells-racconti
+│   │   └── witcher-spells-chaos
 │   ├── Maledizioni_e_Fatture
 │   │   ├── witcher-curses
 │   │   ├── witcher-hexes
@@ -170,27 +170,31 @@ _tools/src-packs/
 │   └── Segni
 │       ├── witcher-signs
 │       └── witcher-signs-chaos
-└── REGOLAMENTO_E_NARRATIVA
-    ├── Ferite_Critiche
-    │   └── witcher-critical-wounds
-    ├── Geografia
-    │   └── witcher-geografia
-    ├── Investigazioni
-    │   └── witcher-investigations
-    ├── Lore_e_Racconti
-    │   ├── witcher-dlc-sr-lore
-    │   ├── witcher-lore
-    │   ├── witcher-lore-chaos
-    │   └── witcher-lore-racconti
-    ├── Professioni_e_Abilita
-    │   ├── witcher-dlc-np-professions
-    │   ├── witcher-professions
-    │   ├── witcher-races
-    │   └── witcher-skills
-    └── Trofei
-        └── witcher-trophies
+├── REGOLAMENTO_E_NARRATIVA
+│   ├── Ferite_Critiche
+│   │   └── witcher-critical-wounds
+│   ├── Geografia
+│   │   └── witcher-geografia
+│   ├── Investigazioni
+│   │   └── witcher-investigations
+│   ├── Lore_e_Racconti
+│   │   ├── witcher-dlc-sr-lore
+│   │   ├── witcher-lore
+│   │   ├── witcher-lore-chaos
+│   │   └── witcher-lore-racconti
+│   ├── Professioni_e_Abilita
+│   │   ├── witcher-dlc-np-professions
+│   │   ├── witcher-professions
+│   │   ├── witcher-races
+│   │   └── witcher-skills
+│   └── Trofei
+│       └── witcher-trophies
+└── TABELLEOPERATIVE
+    ├── CriticieCombattimento
+    ├── DisastriMagici
+    └── StrumentiGM
 ```
-*Ultimo aggiornamento automatico: 15 aprile 2026*
+*Ultimo aggiornamento automatico: 29 aprile 2026*
 <!-- FOLDER_STRUCTURE_END -->
 
 ## 📜 6. ARCHIVIO STORICO
