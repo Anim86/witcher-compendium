@@ -2,174 +2,166 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prompts Batch 40 - Witcher Compendium</title>
     <style>
-        body { font-family: sans-serif; background: #1a1a1a; color: #e0e0e0; padding: 20px; line-height: 1.6; }
-        .path-info { background: #333; color: #4caf50; padding: 5px 10px; border-radius: 4px; font-family: monospace; display: inline-block; margin-bottom: 10px; font-weight: bold; }
-        .item { background: #2a2a2a; padding: 15px; margin-bottom: 15px; border-radius: 8px; display: flex; flex-direction: column; border-left: 5px solid #4caf50; }
-        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+        body { font-family: sans-serif; background: #1a1a1a; color: #e0e0e0; padding: 20px; }
+        .item { background: #2a2a2a; padding: 15px; margin-bottom: 15px; border-radius: 8px; border-left: 5px solid #2196f3; }
         .name { font-weight: bold; color: #ff9800; font-size: 1.2em; }
         .meta { color: #bbb; font-size: 0.9em; }
-        .prompt-box { background: #111; padding: 10px; border-radius: 4px; font-family: monospace; font-size: 0.9em; margin-bottom: 10px; position: relative; border: 1px solid #444; }
-        button { background: #4caf50; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; font-weight: bold; transition: background 0.3s; align-self: flex-start; }
-        button:hover { background: #45a049; }
-        button.copied { background: #2196f3; }
-        strong { color: #fff; }
+        .prompt-box { background: #111; padding: 10px; border-radius: 4px; font-family: monospace; margin: 10px 0; border: 1px solid #444; }
+        button { background: #2196f3; color: white; border: none; padding: 8px 15px; border-radius: 4px; cursor: pointer; }
+        .path-info { color: #4caf50; font-family: monospace; font-weight: bold; margin-bottom: 5px; }
     </style>
 </head>
 <body>
-    <h1>Prompts Batch 40 (Equipaggiamento e Speciali)</h1>
-    <p>Clicca sul tasto verde per copiare il prompt. Salva i file PNG nelle sottocartelle indicate.</p>
+    <h1>Prompts Batch 40</h1>
+    <p>Target folder: <strong>temp_images/witcher-schematics-racconti/</strong></p>
 
-    <div id="content">
     <div class="item">
-        <div class="header">
-            <span class="name">Rigogolo Dorato</span>
-            <span class="meta">Nome file: <strong>rigogolo_dorato.png</strong></span>
-        </div>
-        <div class="path-info">Salva in: temp_images/witcher-special/</div>
-        <div class="prompt-box">Digital painting viewed from directly above, top-down perspective, a rigogolo dorato lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
-        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a rigogolo dorato lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
+        <div class="name">Schema: Maglio del Contadino</div>
+        <div class="meta">Nome file: <strong>schema_maglio_del_contadino.png</strong></div>
+        <div class="path-info">Salva in: temp_images/witcher-schematics-racconti/</div>
+        <div class="prompt-box" id="p-schema_maglio_del_contadino.png">Digital painting viewed from directly above, top-down perspective, a schema: maglio del contadino lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
+        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a schema: maglio del contadino lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
     </div>
     <div class="item">
-        <div class="header">
-            <span class="name">Rondine</span>
-            <span class="meta">Nome file: <strong>rondine.png</strong></span>
-        </div>
-        <div class="path-info">Salva in: temp_images/witcher-special/</div>
-        <div class="prompt-box">Digital painting viewed from directly above, top-down perspective, a rondine lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
-        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a rondine lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
+        <div class="name">Schema: Martello da Cavaliere</div>
+        <div class="meta">Nome file: <strong>schema_martello_da_cavaliere.png</strong></div>
+        <div class="path-info">Salva in: temp_images/witcher-schematics-racconti/</div>
+        <div class="prompt-box" id="p-schema_martello_da_cavaliere.png">Digital painting viewed from directly above, top-down perspective, a schema: martello da cavaliere lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
+        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a schema: martello da cavaliere lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
     </div>
     <div class="item">
-        <div class="header">
-            <span class="name">Sangue Nero</span>
-            <span class="meta">Nome file: <strong>sangue_nero.png</strong></span>
-        </div>
-        <div class="path-info">Salva in: temp_images/witcher-special/</div>
-        <div class="prompt-box">Digital painting viewed from directly above, top-down perspective, a sangue nero lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
-        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a sangue nero lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
+        <div class="name">Schema: Partigiana</div>
+        <div class="meta">Nome file: <strong>schema_partigiana.png</strong></div>
+        <div class="path-info">Salva in: temp_images/witcher-schematics-racconti/</div>
+        <div class="prompt-box" id="p-schema_partigiana.png">Digital painting viewed from directly above, top-down perspective, a schema: partigiana lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
+        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a schema: partigiana lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
     </div>
     <div class="item">
-        <div class="header">
-            <span class="name">Spada d'acciaio da witcher</span>
-            <span class="meta">Nome file: <strong>Spada_dacciaio_da_witcher.png</strong></span>
-        </div>
-        <div class="path-info">Salva in: temp_images/witcher-special/</div>
-        <div class="prompt-box">Digital painting viewed from directly above, top-down perspective, a sharp metal sword lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
-        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a sharp metal sword lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
+        <div class="name">Schema: Spada Ducale</div>
+        <div class="meta">Nome file: <strong>schema_spada_ducale.png</strong></div>
+        <div class="path-info">Salva in: temp_images/witcher-schematics-racconti/</div>
+        <div class="prompt-box" id="p-schema_spada_ducale.png">Digital painting viewed from directly above, top-down perspective, a schema: spada ducale lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
+        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a schema: spada ducale lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
     </div>
     <div class="item">
-        <div class="header">
-            <span class="name">Spada d'Argento da Witcher</span>
-            <span class="meta">Nome file: <strong>Spada_dargento_da_witcher.png</strong></span>
-        </div>
-        <div class="path-info">Salva in: temp_images/witcher-special/</div>
-        <div class="prompt-box">Digital painting viewed from directly above, top-down perspective, a sharp metal sword lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
-        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a sharp metal sword lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
+        <div class="name">Aenarinn (Quintetto di Claremont)</div>
+        <div class="meta">Nome file: <strong>aenarinn_(quintetto_di_claremont).png</strong></div>
+        <div class="path-info">Salva in: temp_images/witcher-characters/</div>
+        <div class="prompt-box" id="p-aenarinn_(quintetto_di_claremont).png">Digital painting viewed from directly above, top-down perspective, a aenarinn (quintetto di claremont) lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
+        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a aenarinn (quintetto di claremont) lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
     </div>
     <div class="item">
-        <div class="header">
-            <span class="name">Tuono</span>
-            <span class="meta">Nome file: <strong>tuono.png</strong></span>
-        </div>
-        <div class="path-info">Salva in: temp_images/witcher-special/</div>
-        <div class="prompt-box">Digital painting viewed from directly above, top-down perspective, a tuono lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
-        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a tuono lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
+        <div class="name">Annegina di Maribor</div>
+        <div class="meta">Nome file: <strong>annegina_di_maribor.png</strong></div>
+        <div class="path-info">Salva in: temp_images/witcher-characters/</div>
+        <div class="prompt-box" id="p-annegina_di_maribor.png">Digital painting viewed from directly above, top-down perspective, a annegina di maribor lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
+        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a annegina di maribor lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
     </div>
     <div class="item">
-        <div class="header">
-            <span class="name">Veleno dell'Impiccato</span>
-            <span class="meta">Nome file: <strong>veleno_dellimpiccato.png</strong></span>
-        </div>
-        <div class="path-info">Salva in: temp_images/witcher-special/</div>
-        <div class="prompt-box">Digital painting viewed from directly above, top-down perspective, a veleno dell'impiccato lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
-        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a veleno dell\'impiccato lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
+        <div class="name">Arcieri Scoia'tael</div>
+        <div class="meta">Nome file: <strong>arcieri_scoia'tael.png</strong></div>
+        <div class="path-info">Salva in: temp_images/witcher-characters/</div>
+        <div class="prompt-box" id="p-arcieri_scoia'tael.png">Digital painting viewed from directly above, top-down perspective, a arcieri scoiatael lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
+        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a arcieri scoiatael lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
     </div>
     <div class="item">
-        <div class="header">
-            <span class="name">Corda Magica Elfica</span>
-            <span class="meta">Nome file: <strong>corda_magica_elfica.png</strong></span>
-        </div>
-        <div class="path-info">Salva in: temp_images/witcher-special-chaos/</div>
-        <div class="prompt-box">Digital painting viewed from directly above, top-down perspective, a corda magica elfica lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
-        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a corda magica elfica lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
+        <div class="name">Arkam (Artigiani di Mahakam)</div>
+        <div class="meta">Nome file: <strong>arkam_(artigiani_di_mahakam).png</strong></div>
+        <div class="path-info">Salva in: temp_images/witcher-characters/</div>
+        <div class="prompt-box" id="p-arkam_(artigiani_di_mahakam).png">Digital painting viewed from directly above, top-down perspective, a arkam (artigiani di mahakam) lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
+        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a arkam (artigiani di mahakam) lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
     </div>
     <div class="item">
-        <div class="header">
-            <span class="name">Legame di Coppia</span>
-            <span class="meta">Nome file: <strong>legame_di_coppia.png</strong></span>
-        </div>
-        <div class="path-info">Salva in: temp_images/witcher-special-chaos/</div>
-        <div class="prompt-box">Digital painting viewed from directly above, top-down perspective, a legame di coppia lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
-        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a legame di coppia lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
+        <div class="name">Asdis (Vergini di Ferro)</div>
+        <div class="meta">Nome file: <strong>asdis_(vergini_di_ferro).png</strong></div>
+        <div class="path-info">Salva in: temp_images/witcher-characters/</div>
+        <div class="prompt-box" id="p-asdis_(vergini_di_ferro).png">Digital painting viewed from directly above, top-down perspective, a asdis (vergini di ferro) lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
+        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a asdis (vergini di ferro) lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
     </div>
     <div class="item">
-        <div class="header">
-            <span class="name">Megascopio</span>
-            <span class="meta">Nome file: <strong>megascopio.png</strong></span>
-        </div>
-        <div class="path-info">Salva in: temp_images/witcher-special-chaos/</div>
-        <div class="prompt-box">Digital painting viewed from directly above, top-down perspective, a megascopio lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
-        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a megascopio lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
+        <div class="name">Brodgar Farrag</div>
+        <div class="meta">Nome file: <strong>brodgar_farrag.png</strong></div>
+        <div class="path-info">Salva in: temp_images/witcher-characters/</div>
+        <div class="prompt-box" id="p-brodgar_farrag.png">Digital painting viewed from directly above, top-down perspective, a brodgar farrag lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
+        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a brodgar farrag lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
     </div>
     <div class="item">
-        <div class="header">
-            <span class="name">Occhio di Nehaleni</span>
-            <span class="meta">Nome file: <strong>occhio_di_nehaleni.png</strong></span>
-        </div>
-        <div class="path-info">Salva in: temp_images/witcher-special-chaos/</div>
-        <div class="prompt-box">Digital painting viewed from directly above, top-down perspective, a occhio di nehaleni lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
-        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a occhio di nehaleni lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
+        <div class="name">Catrin Preece</div>
+        <div class="meta">Nome file: <strong>catrin_preece.png</strong></div>
+        <div class="path-info">Salva in: temp_images/witcher-characters/</div>
+        <div class="prompt-box" id="p-catrin_preece.png">Digital painting viewed from directly above, top-down perspective, a catrin preece lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
+        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a catrin preece lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
     </div>
     <div class="item">
-        <div class="header">
-            <span class="name">Portale Fisso</span>
-            <span class="meta">Nome file: <strong>portale_fisso.png</strong></span>
-        </div>
-        <div class="path-info">Salva in: temp_images/witcher-special-chaos/</div>
-        <div class="prompt-box">Digital painting viewed from directly above, top-down perspective, a portale fisso lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
-        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a portale fisso lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
+        <div class="name">Clarisse de Claudine</div>
+        <div class="meta">Nome file: <strong>clarisse_de_claudine.png</strong></div>
+        <div class="path-info">Salva in: temp_images/witcher-characters/</div>
+        <div class="prompt-box" id="p-clarisse_de_claudine.png">Digital painting viewed from directly above, top-down perspective, a clarisse de claudine lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
+        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a clarisse de claudine lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
     </div>
     <div class="item">
-        <div class="header">
-            <span class="name">Quadrifoglio</span>
-            <span class="meta">Nome file: <strong>quadrifoglio.png</strong></span>
-        </div>
-        <div class="path-info">Salva in: temp_images/witcher-special-chaos/</div>
-        <div class="prompt-box">Digital painting viewed from directly above, top-down perspective, a quadrifoglio lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
-        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a quadrifoglio lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
+        <div class="name">Cooper Mawik</div>
+        <div class="meta">Nome file: <strong>cooper_mawik.png</strong></div>
+        <div class="path-info">Salva in: temp_images/witcher-characters/</div>
+        <div class="prompt-box" id="p-cooper_mawik.png">Digital painting viewed from directly above, top-down perspective, a cooper mawik lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
+        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a cooper mawik lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
     </div>
     <div class="item">
-        <div class="header">
-            <span class="name">Specchio dei Desideri</span>
-            <span class="meta">Nome file: <strong>specchio_dei_desideri.png</strong></span>
-        </div>
-        <div class="path-info">Salva in: temp_images/witcher-special-chaos/</div>
-        <div class="prompt-box">Digital painting viewed from directly above, top-down perspective, a specchio dei desideri lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
-        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a specchio dei desideri lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
+        <div class="name">"Crogiolo" Kowal</div>
+        <div class="meta">Nome file: <strong>"crogiolo"_kowal.png</strong></div>
+        <div class="path-info">Salva in: temp_images/witcher-characters/</div>
+        <div class="prompt-box" id="p-"crogiolo"_kowal.png">Digital painting viewed from directly above, top-down perspective, a crogiolo kowal lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
+        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a crogiolo kowal lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
     </div>
     <div class="item">
-        <div class="header">
-            <span class="name">Teschio di Cristallo</span>
-            <span class="meta">Nome file: <strong>teschio_di_cristallo.png</strong></span>
-        </div>
-        <div class="path-info">Salva in: temp_images/witcher-special-chaos/</div>
-        <div class="prompt-box">Digital painting viewed from directly above, top-down perspective, a teschio di cristallo lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
-        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a teschio di cristallo lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
+        <div class="name">Cultista (Coram Agh Tera)</div>
+        <div class="meta">Nome file: <strong>cultista_(coram_agh_tera).png</strong></div>
+        <div class="path-info">Salva in: temp_images/witcher-characters/</div>
+        <div class="prompt-box" id="p-cultista_(coram_agh_tera).png">Digital painting viewed from directly above, top-down perspective, a cultista (coram agh tera) lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
+        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a cultista (coram agh tera) lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
     </div>
+    <div class="item">
+        <div class="name">Cuor Nero (Katakan)</div>
+        <div class="meta">Nome file: <strong>cuor_nero_(katakan).png</strong></div>
+        <div class="path-info">Salva in: temp_images/witcher-characters/</div>
+        <div class="prompt-box" id="p-cuor_nero_(katakan).png">Digital painting viewed from directly above, top-down perspective, a cuor nero (katakan) lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
+        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a cuor nero (katakan) lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
     </div>
-
+    <div class="item">
+        <div class="name">Dandelion (Flagello di Draghi)</div>
+        <div class="meta">Nome file: <strong>dandelion_(flagello_di_draghi).png</strong></div>
+        <div class="path-info">Salva in: temp_images/witcher-characters/</div>
+        <div class="prompt-box" id="p-dandelion_(flagello_di_draghi).png">Digital painting viewed from directly above, top-down perspective, a dandelion (flagello di draghi) lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
+        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a dandelion (flagello di draghi) lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
+    </div>
+    <div class="item">
+        <div class="name">Enid Harkus</div>
+        <div class="meta">Nome file: <strong>enid_harkus.png</strong></div>
+        <div class="path-info">Salva in: temp_images/witcher-characters/</div>
+        <div class="prompt-box" id="p-enid_harkus.png">Digital painting viewed from directly above, top-down perspective, a enid harkus lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
+        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a enid harkus lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
+    </div>
+    <div class="item">
+        <div class="name">Est Est (Katakan)</div>
+        <div class="meta">Nome file: <strong>est_est_(katakan).png</strong></div>
+        <div class="path-info">Salva in: temp_images/witcher-characters/</div>
+        <div class="prompt-box" id="p-est_est_(katakan).png">Digital painting viewed from directly above, top-down perspective, a est est (katakan) lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
+        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a est est (katakan) lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
+    </div>
+    <div class="item">
+        <div class="name">Francine Marchand</div>
+        <div class="meta">Nome file: <strong>francine_marchand.png</strong></div>
+        <div class="path-info">Salva in: temp_images/witcher-characters/</div>
+        <div class="prompt-box" id="p-francine_marchand.png">Digital painting viewed from directly above, top-down perspective, a francine marchand lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
+        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a francine marchand lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
+    </div>
     <script>
         function copyToClipboard(text, btn) {
             navigator.clipboard.writeText(text).then(() => {
-                const originalText = btn.innerText;
                 btn.innerText = "Copiato!";
-                btn.classList.add('copied');
-                setTimeout(() => {
-                    btn.innerText = originalText;
-                    btn.classList.remove('copied');
-                }, 2000);
+                setTimeout(() => { btn.innerText = "Copia Prompt"; }, 2000);
             });
         }
     </script>

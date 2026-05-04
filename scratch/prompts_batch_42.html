@@ -2,174 +2,166 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prompts Batch 42 - Witcher Compendium</title>
     <style>
-        body { font-family: sans-serif; background: #1a1a1a; color: #e0e0e0; padding: 20px; line-height: 1.6; }
-        .path-info { background: #333; color: #4caf50; padding: 5px 10px; border-radius: 4px; font-family: monospace; display: inline-block; margin-bottom: 10px; font-weight: bold; }
-        .item { background: #2a2a2a; padding: 15px; margin-bottom: 15px; border-radius: 8px; display: flex; flex-direction: column; border-left: 5px solid #ff5722; }
-        .header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+        body { font-family: sans-serif; background: #1a1a1a; color: #e0e0e0; padding: 20px; }
+        .item { background: #2a2a2a; padding: 15px; margin-bottom: 15px; border-radius: 8px; border-left: 5px solid #2196f3; }
         .name { font-weight: bold; color: #ff9800; font-size: 1.2em; }
         .meta { color: #bbb; font-size: 0.9em; }
-        .prompt-box { background: #111; padding: 10px; border-radius: 4px; font-family: monospace; font-size: 0.9em; margin-bottom: 10px; position: relative; border: 1px solid #444; }
-        button { background: #ff5722; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; font-weight: bold; transition: background 0.3s; align-self: flex-start; }
-        button:hover { background: #e64a19; }
-        button.copied { background: #2196f3; }
-        strong { color: #fff; }
+        .prompt-box { background: #111; padding: 10px; border-radius: 4px; font-family: monospace; margin: 10px 0; border: 1px solid #444; }
+        button { background: #2196f3; color: white; border: none; padding: 8px 15px; border-radius: 4px; cursor: pointer; }
+        .path-info { color: #4caf50; font-family: monospace; font-weight: bold; margin-bottom: 5px; }
     </style>
 </head>
 <body>
-    <h1>Prompts Batch 42 (Trofei del Bestiario)</h1>
-    <p>Clicca sul tasto arancione per copiare il prompt del trofeo. Salva i file PNG nelle sottocartelle indicate.</p>
+    <h1>Prompts Batch 42</h1>
+    <p>Target folder: <strong>temp_images/witcher-characters/</strong></p>
 
-    <div id="content">
     <div class="item">
-        <div class="header">
-            <span class="name">Trofeo: Arachas</span>
-            <span class="meta">Nome file: <strong>Trofeo_Arachas.png</strong></span>
-        </div>
-        <div class="path-info">Salva in: temp_images/witcher-trophies/</div>
-        <div class="prompt-box">Digital painting viewed from directly above, top-down perspective, a bloody severed head of a Arachas monster tied with rough hemp rope lying flat on a dark rough textured stone surface, the trophy is a gruesome proof of a hunt, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
-        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a bloody severed head of a Arachas monster tied with rough hemp rope lying flat on a dark rough textured stone surface, the trophy is a gruesome proof of a hunt, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
+        <div class="name">Voren di Dillingen</div>
+        <div class="meta">Nome file: <strong>voren_di_dillingen.png</strong></div>
+        <div class="path-info">Salva in: temp_images/witcher-characters/</div>
+        <div class="prompt-box" id="p-voren_di_dillingen.png">Digital painting viewed from directly above, top-down perspective, a voren di dillingen lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
+        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a voren di dillingen lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
     </div>
     <div class="item">
-        <div class="header">
-            <span class="name">Trofeo: Botchling</span>
-            <span class="meta">Nome file: <strong>Trofeo_Botchling.png</strong></span>
-        </div>
-        <div class="path-info">Salva in: temp_images/witcher-trophies/</div>
-        <div class="prompt-box">Digital painting viewed from directly above, top-down perspective, a bloody severed head of a Botchling monster tied with rough hemp rope lying flat on a dark rough textured stone surface, the trophy is a gruesome proof of a hunt, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
-        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a bloody severed head of a Botchling monster tied with rough hemp rope lying flat on a dark rough textured stone surface, the trophy is a gruesome proof of a hunt, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
+        <div class="name">Zoltan Chivay</div>
+        <div class="meta">Nome file: <strong>zoltan_chivay.png</strong></div>
+        <div class="path-info">Salva in: temp_images/witcher-characters/</div>
+        <div class="prompt-box" id="p-zoltan_chivay.png">Digital painting viewed from directly above, top-down perspective, a zoltan chivay lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
+        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a zoltan chivay lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
     </div>
     <div class="item">
-        <div class="header">
-            <span class="name">Trofeo: Bruxa</span>
-            <span class="meta">Nome file: <strong>Trofeo_Bruxa.png</strong></span>
-        </div>
-        <div class="path-info">Salva in: temp_images/witcher-trophies/</div>
-        <div class="prompt-box">Digital painting viewed from directly above, top-down perspective, a bloody severed head of a Bruxa monster tied with rough hemp rope lying flat on a dark rough textured stone surface, the trophy is a gruesome proof of a hunt, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
-        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a bloody severed head of a Bruxa monster tied with rough hemp rope lying flat on a dark rough textured stone surface, the trophy is a gruesome proof of a hunt, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
+        <div class="name">Spada d'Argento del Gatto</div>
+        <div class="meta">Nome file: <strong>spada_dargento_del_gatto.png</strong></div>
+        <div class="path-info">Salva in: temp_images/witcher-weapons/</div>
+        <div class="prompt-box" id="p-spada_dargento_del_gatto.png">Digital painting viewed from directly above, top-down perspective, a spada dargento del gatto lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
+        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a spada dargento del gatto lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
     </div>
     <div class="item">
-        <div class="header">
-            <span class="name">Trofeo: Bullvore</span>
-            <span class="meta">Nome file: <strong>Trofeo_Bullvore.png</strong></span>
-        </div>
-        <div class="path-info">Salva in: temp_images/witcher-trophies/</div>
-        <div class="prompt-box">Digital painting viewed from directly above, top-down perspective, a bloody severed head of a Bullvore monster tied with rough hemp rope lying flat on a dark rough textured stone surface, the trophy is a gruesome proof of a hunt, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
-        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a bloody severed head of a Bullvore monster tied with rough hemp rope lying flat on a dark rough textured stone surface, the trophy is a gruesome proof of a hunt, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
+        <div class="name">Balestra del Gatto</div>
+        <div class="meta">Nome file: <strong>balestra_del_gatto.png</strong></div>
+        <div class="path-info">Salva in: temp_images/witcher-weapons/</div>
+        <div class="prompt-box" id="p-balestra_del_gatto.png">Digital painting viewed from directly above, top-down perspective, a balestra del gatto lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
+        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a balestra del gatto lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
     </div>
     <div class="item">
-        <div class="header">
-            <span class="name">Trofeo: Ciclope</span>
-            <span class="meta">Nome file: <strong>Trofeo_Ciclope.png</strong></span>
-        </div>
-        <div class="path-info">Salva in: temp_images/witcher-trophies/</div>
-        <div class="prompt-box">Digital painting viewed from directly above, top-down perspective, a bloody severed head of a Ciclope monster tied with rough hemp rope lying flat on a dark rough textured stone surface, the trophy is a gruesome proof of a hunt, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
-        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a bloody severed head of a Ciclope monster tied with rough hemp rope lying flat on a dark rough textured stone surface, the trophy is a gruesome proof of a hunt, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
+        <div class="name">Spada d'Argento del Grifone</div>
+        <div class="meta">Nome file: <strong>spada_dargento_del_grifone.png</strong></div>
+        <div class="path-info">Salva in: temp_images/witcher-weapons/</div>
+        <div class="prompt-box" id="p-spada_dargento_del_grifone.png">Digital painting viewed from directly above, top-down perspective, a spada dargento del grifone lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
+        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a spada dargento del grifone lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
     </div>
     <div class="item">
-        <div class="header">
-            <span class="name">Trofeo: Cockatrice</span>
-            <span class="meta">Nome file: <strong>Trofeo_Cockatrice.png</strong></span>
-        </div>
-        <div class="path-info">Salva in: temp_images/witcher-trophies/</div>
-        <div class="prompt-box">Digital painting viewed from directly above, top-down perspective, a bloody severed head of a Cockatrice monster tied with rough hemp rope lying flat on a dark rough textured stone surface, the trophy is a gruesome proof of a hunt, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
-        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a bloody severed head of a Cockatrice monster tied with rough hemp rope lying flat on a dark rough textured stone surface, the trophy is a gruesome proof of a hunt, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
+        <div class="name">Balestra del Grifone</div>
+        <div class="meta">Nome file: <strong>balestra_del_grifone.png</strong></div>
+        <div class="path-info">Salva in: temp_images/witcher-weapons/</div>
+        <div class="prompt-box" id="p-balestra_del_grifone.png">Digital painting viewed from directly above, top-down perspective, a balestra del grifone lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
+        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a balestra del grifone lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
     </div>
     <div class="item">
-        <div class="header">
-            <span class="name">Trofeo: Demonio</span>
-            <span class="meta">Nome file: <strong>Trofeo_Demonio.png</strong></span>
-        </div>
-        <div class="path-info">Salva in: temp_images/witcher-trophies/</div>
-        <div class="prompt-box">Digital painting viewed from directly above, top-down perspective, a bloody severed head of a Demonio monster tied with rough hemp rope lying flat on a dark rough textured stone surface, the trophy is a gruesome proof of a hunt, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
-        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a bloody severed head of a Demonio monster tied with rough hemp rope lying flat on a dark rough textured stone surface, the trophy is a gruesome proof of a hunt, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
+        <div class="name">Spada da Cavalleria Vrihedd</div>
+        <div class="meta">Nome file: <strong>Spada_da_Cavalleria_Vrihedd.png</strong></div>
+        <div class="path-info">Salva in: temp_images/witcher-weapons/</div>
+        <div class="prompt-box" id="p-Spada_da_Cavalleria_Vrihedd.png">Digital painting viewed from directly above, top-down perspective, a spada da cavalleria vrihedd lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
+        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a spada da cavalleria vrihedd lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
     </div>
     <div class="item">
-        <div class="header">
-            <span class="name">Trofeo: Elementale</span>
-            <span class="meta">Nome file: <strong>Trofeo_Elementale.png</strong></span>
-        </div>
-        <div class="path-info">Salva in: temp_images/witcher-trophies/</div>
-        <div class="prompt-box">Digital painting viewed from directly above, top-down perspective, a bloody severed head of a Elementale monster tied with rough hemp rope lying flat on a dark rough textured stone surface, the trophy is a gruesome proof of a hunt, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
-        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a bloody severed head of a Elementale monster tied with rough hemp rope lying flat on a dark rough textured stone surface, the trophy is a gruesome proof of a hunt, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
+        <div class="name">Spada Lunare</div>
+        <div class="meta">Nome file: <strong>spada_lunare.png</strong></div>
+        <div class="path-info">Salva in: temp_images/witcher-weapons/</div>
+        <div class="prompt-box" id="p-spada_lunare.png">Digital painting viewed from directly above, top-down perspective, a spada lunare lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
+        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a spada lunare lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
     </div>
     <div class="item">
-        <div class="header">
-            <span class="name">Trofeo: Fenice</span>
-            <span class="meta">Nome file: <strong>Trofeo_Fenice.png</strong></span>
-        </div>
-        <div class="path-info">Salva in: temp_images/witcher-trophies/</div>
-        <div class="prompt-box">Digital painting viewed from directly above, top-down perspective, a bloody severed head of a Fenice monster tied with rough hemp rope lying flat on a dark rough textured stone surface, the trophy is a gruesome proof of a hunt, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
-        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a bloody severed head of a Fenice monster tied with rough hemp rope lying flat on a dark rough textured stone surface, the trophy is a gruesome proof of a hunt, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
+        <div class="name">Spada Meteoritica</div>
+        <div class="meta">Nome file: <strong>Spada_Meteoritica.png</strong></div>
+        <div class="path-info">Salva in: temp_images/witcher-weapons/</div>
+        <div class="prompt-box" id="p-Spada_Meteoritica.png">Digital painting viewed from directly above, top-down perspective, a spada meteoritica lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
+        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a spada meteoritica lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
     </div>
     <div class="item">
-        <div class="header">
-            <span class="name">Trofeo: Foglet</span>
-            <span class="meta">Nome file: <strong>Trofeo_Foglet.png</strong></span>
-        </div>
-        <div class="path-info">Salva in: temp_images/witcher-trophies/</div>
-        <div class="prompt-box">Digital painting viewed from directly above, top-down perspective, a bloody severed head of a Foglet monster tied with rough hemp rope lying flat on a dark rough textured stone surface, the trophy is a gruesome proof of a hunt, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
-        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a bloody severed head of a Foglet monster tied with rough hemp rope lying flat on a dark rough textured stone surface, the trophy is a gruesome proof of a hunt, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
+        <div class="name">Sperone d'Arpia</div>
+        <div class="meta">Nome file: <strong>sperone_darpia.png</strong></div>
+        <div class="path-info">Salva in: temp_images/witcher-weapons/</div>
+        <div class="prompt-box" id="p-sperone_darpia.png">Digital painting viewed from directly above, top-down perspective, a sperone darpia lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
+        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a sperone darpia lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
     </div>
     <div class="item">
-        <div class="header">
-            <span class="name">Trofeo: Frightener</span>
-            <span class="meta">Nome file: <strong>Trofeo_Frightener.png</strong></span>
-        </div>
-        <div class="path-info">Salva in: temp_images/witcher-trophies/</div>
-        <div class="prompt-box">Digital painting viewed from directly above, top-down perspective, a bloody severed head of a Frightener monster tied with rough hemp rope lying flat on a dark rough textured stone surface, the trophy is a gruesome proof of a hunt, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
-        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a bloody severed head of a Frightener monster tied with rough hemp rope lying flat on a dark rough textured stone surface, the trophy is a gruesome proof of a hunt, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
+        <div class="name">Spina</div>
+        <div class="meta">Nome file: <strong>Spina.png</strong></div>
+        <div class="path-info">Salva in: temp_images/witcher-weapons/</div>
+        <div class="prompt-box" id="p-Spina.png">Digital painting viewed from directly above, top-down perspective, a spina lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
+        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a spina lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
     </div>
     <div class="item">
-        <div class="header">
-            <span class="name">Trofeo: Garkain</span>
-            <span class="meta">Nome file: <strong>Trofeo_Garkain.png</strong></span>
-        </div>
-        <div class="path-info">Salva in: temp_images/witcher-trophies/</div>
-        <div class="prompt-box">Digital painting viewed from directly above, top-down perspective, a bloody severed head of a Garkain monster tied with rough hemp rope lying flat on a dark rough textured stone surface, the trophy is a gruesome proof of a hunt, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
-        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a bloody severed head of a Garkain monster tied with rough hemp rope lying flat on a dark rough textured stone surface, the trophy is a gruesome proof of a hunt, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
+        <div class="name">Zefhar Elfico</div>
+        <div class="meta">Nome file: <strong>zefhar_elfico.png</strong></div>
+        <div class="path-info">Salva in: temp_images/witcher-weapons/</div>
+        <div class="prompt-box" id="p-zefhar_elfico.png">Digital painting viewed from directly above, top-down perspective, a zefhar elfico lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
+        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a zefhar elfico lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
     </div>
     <div class="item">
-        <div class="header">
-            <span class="name">Trofeo: Golem</span>
-            <span class="meta">Nome file: <strong>Trofeo_Golem.png</strong></span>
-        </div>
-        <div class="path-info">Salva in: temp_images/witcher-trophies/</div>
-        <div class="prompt-box">Digital painting viewed from directly above, top-down perspective, a bloody severed head of a Golem monster tied with rough hemp rope lying flat on a dark rough textured stone surface, the trophy is a gruesome proof of a hunt, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
-        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a bloody severed head of a Golem monster tied with rough hemp rope lying flat on a dark rough textured stone surface, the trophy is a gruesome proof of a hunt, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
+        <div class="name">Balestra da Caccia</div>
+        <div class="meta">Nome file: <strong>balestra_da_caccia.png</strong></div>
+        <div class="path-info">Salva in: temp_images/witcher-weapons-racconti/</div>
+        <div class="prompt-box" id="p-balestra_da_caccia.png">Digital painting viewed from directly above, top-down perspective, a balestra da caccia lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
+        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a balestra da caccia lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
     </div>
     <div class="item">
-        <div class="header">
-            <span class="name">Trofeo: Grifone</span>
-            <span class="meta">Nome file: <strong>Trofeo_Grifone.png</strong></span>
-        </div>
-        <div class="path-info">Salva in: temp_images/witcher-trophies/</div>
-        <div class="prompt-box">Digital painting viewed from directly above, top-down perspective, a bloody severed head of a Grifone monster tied with rough hemp rope lying flat on a dark rough textured stone surface, the trophy is a gruesome proof of a hunt, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
-        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a bloody severed head of a Grifone monster tied with rough hemp rope lying flat on a dark rough textured stone surface, the trophy is a gruesome proof of a hunt, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
+        <div class="name">Lama Viroledana</div>
+        <div class="meta">Nome file: <strong>lama_viroledana.png</strong></div>
+        <div class="path-info">Salva in: temp_images/witcher-weapons-racconti/</div>
+        <div class="prompt-box" id="p-lama_viroledana.png">Digital painting viewed from directly above, top-down perspective, a lama viroledana lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
+        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a lama viroledana lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
     </div>
     <div class="item">
-        <div class="header">
-            <span class="name">Trofeo: Hym</span>
-            <span class="meta">Nome file: <strong>Trofeo_Hym.png</strong></span>
-        </div>
-        <div class="path-info">Salva in: temp_images/witcher-trophies/</div>
-        <div class="prompt-box">Digital painting viewed from directly above, top-down perspective, a bloody severed head of a Hym monster tied with rough hemp rope lying flat on a dark rough textured stone surface, the trophy is a gruesome proof of a hunt, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
-        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a bloody severed head of a Hym monster tied with rough hemp rope lying flat on a dark rough textured stone surface, the trophy is a gruesome proof of a hunt, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
+        <div class="name">Lancia da Guerra</div>
+        <div class="meta">Nome file: <strong>lancia_da_guerra.png</strong></div>
+        <div class="path-info">Salva in: temp_images/witcher-weapons-racconti/</div>
+        <div class="prompt-box" id="p-lancia_da_guerra.png">Digital painting viewed from directly above, top-down perspective, a lancia da guerra lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
+        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a lancia da guerra lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
     </div>
+    <div class="item">
+        <div class="name">Lancia Smussata</div>
+        <div class="meta">Nome file: <strong>lancia_smussata.png</strong></div>
+        <div class="path-info">Salva in: temp_images/witcher-weapons-racconti/</div>
+        <div class="prompt-box" id="p-lancia_smussata.png">Digital painting viewed from directly above, top-down perspective, a lancia smussata lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
+        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a lancia smussata lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
     </div>
-
+    <div class="item">
+        <div class="name">Maglio del Contadino</div>
+        <div class="meta">Nome file: <strong>maglio_del_contadino.png</strong></div>
+        <div class="path-info">Salva in: temp_images/witcher-weapons-racconti/</div>
+        <div class="prompt-box" id="p-maglio_del_contadino.png">Digital painting viewed from directly above, top-down perspective, a maglio del contadino lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
+        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a maglio del contadino lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
+    </div>
+    <div class="item">
+        <div class="name">Martello da Cavaliere</div>
+        <div class="meta">Nome file: <strong>martello_da_cavaliere.png</strong></div>
+        <div class="path-info">Salva in: temp_images/witcher-weapons-racconti/</div>
+        <div class="prompt-box" id="p-martello_da_cavaliere.png">Digital painting viewed from directly above, top-down perspective, a martello da cavaliere lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
+        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a martello da cavaliere lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
+    </div>
+    <div class="item">
+        <div class="name">Partigiana</div>
+        <div class="meta">Nome file: <strong>partigiana.png</strong></div>
+        <div class="path-info">Salva in: temp_images/witcher-weapons-racconti/</div>
+        <div class="prompt-box" id="p-partigiana.png">Digital painting viewed from directly above, top-down perspective, a partigiana lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
+        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a partigiana lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
+    </div>
+    <div class="item">
+        <div class="name">Spada Ducale</div>
+        <div class="meta">Nome file: <strong>spada_ducale.png</strong></div>
+        <div class="path-info">Salva in: temp_images/witcher-weapons-racconti/</div>
+        <div class="prompt-box" id="p-spada_ducale.png">Digital painting viewed from directly above, top-down perspective, a spada ducale lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
+        <button onclick="copyToClipboard('Digital painting viewed from directly above, top-down perspective, a spada ducale lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.', this)">Copia Prompt</button>
+    </div>
     <script>
         function copyToClipboard(text, btn) {
             navigator.clipboard.writeText(text).then(() => {
-                const originalText = btn.innerText;
                 btn.innerText = "Copiato!";
-                btn.classList.add('copied');
-                setTimeout(() => {
-                    btn.innerText = originalText;
-                    btn.classList.remove('copied');
-                }, 2000);
+                setTimeout(() => { btn.innerText = "Copia Prompt"; }, 2000);
             });
         }
     </script>
