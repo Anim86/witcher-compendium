@@ -86,7 +86,7 @@
                         <span class="name">${item.name}</span>
                         <span class="meta">Nome file richiesto: ${item.file}</span>
                     </div>
-                    <div class="prompt-box" id="p-${item.file}">${item.prompt}</div>
+                    <div class="prompt-box" id="p-item.file">${item.prompt}</div>
                     <button onclick="copyToClipboard('${item.prompt}', this)">Copia Prompt</button>
                 `;
                 secDiv.appendChild(itemDiv);

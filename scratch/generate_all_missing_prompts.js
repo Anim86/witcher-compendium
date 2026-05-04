@@ -28,6 +28,13 @@ for (const item of missingReport) {
         expectedPng = item.name.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_|_$/g, '') + '.png';
     }
     
+    // Sanitizzazione aggiuntiva per evitare caratteri problematici (parentesi, apici, ecc.)
+    expectedPng = expectedPng.toLowerCase()
+        .replace(/['"]/g, '')
+        .replace(/[\(\)]/g, '')
+        .replace(/[^a-z0-9\._-]+/g, '_')
+        .replace(/_+/g, '_');
+    
     // Ignora i placeholder SVG
     if (expectedPng.endsWith('.svg')) continue;
     if (expectedPng === "mystery-man.png") continue;
