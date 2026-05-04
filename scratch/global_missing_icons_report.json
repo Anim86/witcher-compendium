@@ -42,22 +42,10 @@
         "expected": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-schematics/cuoio_di_dragonide.webp"
     },
     {
-        "name": "Schema: Daga a Rondelle Halfling",
-        "pack": "ALCHIMIA_E_ARTIGIANATO\\Schemi_di_Fabbricazione\\witcher-schematics",
-        "reason": "File not found",
-        "expected": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-schematics/daga_a_rondelle_halfling.webp"
-    },
-    {
         "name": "Schema: Rinforzo Elfico",
         "pack": "ALCHIMIA_E_ARTIGIANATO\\Schemi_di_Fabbricazione\\witcher-schematics",
         "reason": "File not found",
         "expected": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-schematics/elfica.webp"
-    },
-    {
-        "name": "Schema: Falcione Elfico",
-        "pack": "ALCHIMIA_E_ARTIGIANATO\\Schemi_di_Fabbricazione\\witcher-schematics",
-        "reason": "File not found",
-        "expected": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-schematics/falcione_elfico.webp"
     },
     {
         "name": "Schema: Farsetto Protettivo Halfling",
@@ -78,48 +66,6 @@
         "expected": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-schematics/Giubba_di_Cuoio_Lyriano.webp"
     },
     {
-        "name": "Schema: Gwyhyr Gnomesca",
-        "pack": "ALCHIMIA_E_ARTIGIANATO\\Schemi_di_Fabbricazione\\witcher-schematics",
-        "reason": "File not found",
-        "expected": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-schematics/Gwyhyr_Gnomesca.webp"
-    },
-    {
-        "name": "Schema: Lama del Tir Tochair",
-        "pack": "ALCHIMIA_E_ARTIGIANATO\\Schemi_di_Fabbricazione\\witcher-schematics",
-        "reason": "File not found",
-        "expected": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-schematics/Lama_del_Tir_Tochair.webp"
-    },
-    {
-        "name": "Schema: Mannaia Nanica",
-        "pack": "ALCHIMIA_E_ARTIGIANATO\\Schemi_di_Fabbricazione\\witcher-schematics",
-        "reason": "File not found",
-        "expected": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-schematics/Mannaia_Nanica.webp"
-    },
-    {
-        "name": "Schema: Martello d'Armi Mahakaman",
-        "pack": "ALCHIMIA_E_ARTIGIANATO\\Schemi_di_Fabbricazione\\witcher-schematics",
-        "reason": "File not found",
-        "expected": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-schematics/martello_darmi_mahakaman.webp"
-    },
-    {
-        "name": "Schema: Mazzafrusto Meteoritico",
-        "pack": "ALCHIMIA_E_ARTIGIANATO\\Schemi_di_Fabbricazione\\witcher-schematics",
-        "reason": "File not found",
-        "expected": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-schematics/Mazzafrusto_Meteoritico.webp"
-    },
-    {
-        "name": "Schema: Mazzapicchio Nanico",
-        "pack": "ALCHIMIA_E_ARTIGIANATO\\Schemi_di_Fabbricazione\\witcher-schematics",
-        "reason": "File not found",
-        "expected": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-schematics/Mazzapicchio_Nanico.webp"
-    },
-    {
-        "name": "Schema: Messer Elfico",
-        "pack": "ALCHIMIA_E_ARTIGIANATO\\Schemi_di_Fabbricazione\\witcher-schematics",
-        "reason": "File not found",
-        "expected": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-schematics/messer_elfico.webp"
-    },
-    {
         "name": "Schema: Munizioni a Punta Larga (x10)",
         "pack": "ALCHIMIA_E_ARTIGIANATO\\Schemi_di_Fabbricazione\\witcher-schematics",
         "reason": "File not found",
@@ -130,12 +76,6 @@
         "pack": "ALCHIMIA_E_ARTIGIANATO\\Schemi_di_Fabbricazione\\witcher-schematics",
         "reason": "File not found",
         "expected": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-schematics/munizioni_bodkin_a10.webp"
-    },
-    {
-        "name": "Schema: Munizioni Smussate",
-        "pack": "ALCHIMIA_E_ARTIGIANATO\\Schemi_di_Fabbricazione\\witcher-schematics",
-        "reason": "File not found",
-        "expected": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-schematics/Munizioni_Smussate.webp"
     },
     {
         "name": "Schema: Rinforzo Nano",
@@ -474,228 +414,6 @@
         "expected": "modules/witcher-compendium/assets/BESTIARIO/witcher-characters/zoltan_chivay.webp"
     },
     {
-        "name": "Bordone da Pastore",
-        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Armi_e_Armature\\witcher-weapons",
-        "reason": "File not found",
-        "expected": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/Bordone_da_Pastore.webp"
-    },
-    {
-        "name": "Caroline",
-        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Armi_e_Armature\\witcher-weapons",
-        "reason": "File not found",
-        "expected": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/caroline.webp"
-    },
-    {
-        "name": "Daga a Rondelle Halfling",
-        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Armi_e_Armature\\witcher-weapons",
-        "reason": "File not found",
-        "expected": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/daga_a_rondelle_halfling.webp"
-    },
-    {
-        "name": "Decapitatore",
-        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Armi_e_Armature\\witcher-weapons",
-        "reason": "File not found",
-        "expected": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/decapitatore.webp"
-    },
-    {
-        "name": "Destino",
-        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Armi_e_Armature\\witcher-weapons",
-        "reason": "File not found",
-        "expected": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/destino.webp"
-    },
-    {
-        "name": "Devine",
-        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Armi_e_Armature\\witcher-weapons",
-        "reason": "File not found",
-        "expected": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/devine.webp"
-    },
-    {
-        "name": "Falcetto",
-        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Armi_e_Armature\\witcher-weapons",
-        "reason": "File not found",
-        "expected": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/falcetto.webp"
-    },
-    {
-        "name": "Falce",
-        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Armi_e_Armature\\witcher-weapons",
-        "reason": "File not found",
-        "expected": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/falce.webp"
-    },
-    {
-        "name": "Falcione Elfico",
-        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Armi_e_Armature\\witcher-weapons",
-        "reason": "File not found",
-        "expected": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/falcione_elfico.webp"
-    },
-    {
-        "name": "Forcone",
-        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Armi_e_Armature\\witcher-weapons",
-        "reason": "File not found",
-        "expected": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/forcone.webp"
-    },
-    {
-        "name": "Gwyhyr Gnomesca",
-        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Armi_e_Armature\\witcher-weapons",
-        "reason": "File not found",
-        "expected": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/Gwyhyr_Gnomesca.webp"
-    },
-    {
-        "name": "Lama del Tir Tochair",
-        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Armi_e_Armature\\witcher-weapons",
-        "reason": "File not found",
-        "expected": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/Lama_del_Tir_Tochair.webp"
-    },
-    {
-        "name": "Lupo (Spada Lunga Reliquia)",
-        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Armi_e_Armature\\witcher-weapons",
-        "reason": "File not found",
-        "expected": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/lupo.webp"
-    },
-    {
-        "name": "Mannaia di Hood",
-        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Armi_e_Armature\\witcher-weapons",
-        "reason": "File not found",
-        "expected": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/mannaia_di_hood.webp"
-    },
-    {
-        "name": "Mannaia Nanica",
-        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Armi_e_Armature\\witcher-weapons",
-        "reason": "File not found",
-        "expected": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/Mannaia_Nanica.webp"
-    },
-    {
-        "name": "Martello d'Armi Mahakaman",
-        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Armi_e_Armature\\witcher-weapons",
-        "reason": "File not found",
-        "expected": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/Martello_dArmi_Mahakaman.webp"
-    },
-    {
-        "name": "Maugrim",
-        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Armi_e_Armature\\witcher-weapons",
-        "reason": "File not found",
-        "expected": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/maugrim.webp"
-    },
-    {
-        "name": "Mazzafrusto Meteoritico",
-        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Armi_e_Armature\\witcher-weapons",
-        "reason": "File not found",
-        "expected": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/Mazzafrusto_Meteoritico.webp"
-    },
-    {
-        "name": "Mazzapicchio Nanico",
-        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Armi_e_Armature\\witcher-weapons",
-        "reason": "File not found",
-        "expected": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/Mazzapicchio_Nanico.webp"
-    },
-    {
-        "name": "Messer Elfico",
-        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Armi_e_Armature\\witcher-weapons",
-        "reason": "File not found",
-        "expected": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/messer_elfico.webp"
-    },
-    {
-        "name": "Morte Rossa",
-        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Armi_e_Armature\\witcher-weapons",
-        "reason": "File not found",
-        "expected": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/morte_rossa.webp"
-    },
-    {
-        "name": "Munizioni Bodkin",
-        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Armi_e_Armature\\witcher-weapons",
-        "reason": "File not found",
-        "expected": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/munizioni_bodkin.webp"
-    },
-    {
-        "name": "Munizioni Da Impatto Naniche",
-        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Armi_e_Armature\\witcher-weapons",
-        "reason": "File not found",
-        "expected": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/munizioni_da_impatto_naniche.webp"
-    },
-    {
-        "name": "Munizioni Esplosive",
-        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Armi_e_Armature\\witcher-weapons",
-        "reason": "File not found",
-        "expected": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/munizioni_esplosive.webp"
-    },
-    {
-        "name": "Munizioni Multiple",
-        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Armi_e_Armature\\witcher-weapons",
-        "reason": "File not found",
-        "expected": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/munizioni_multiple.webp"
-    },
-    {
-        "name": "Munizioni Punta Larga",
-        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Armi_e_Armature\\witcher-weapons",
-        "reason": "File not found",
-        "expected": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/munizioni_punta_larga.webp"
-    },
-    {
-        "name": "Munizioni Smussate",
-        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Armi_e_Armature\\witcher-weapons",
-        "reason": "File not found",
-        "expected": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/munizioni_smussate.webp"
-    },
-    {
-        "name": "Munizioni Sventratrici Elfiche",
-        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Armi_e_Armature\\witcher-weapons",
-        "reason": "File not found",
-        "expected": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/munizioni_sventratrici_elfiche.webp"
-    },
-    {
-        "name": "Munizioni Traccianti",
-        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Armi_e_Armature\\witcher-weapons",
-        "reason": "File not found",
-        "expected": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/munizioni_traccianti.webp"
-    },
-    {
-        "name": "Pala",
-        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Armi_e_Armature\\witcher-weapons",
-        "reason": "File not found",
-        "expected": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/pala.webp"
-    },
-    {
-        "name": "Pietra Arco (Pietra del Potere)",
-        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Armi_e_Armature\\witcher-weapons",
-        "reason": "File not found",
-        "expected": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-special-chaos/pietra_arco_pietra_del_potere.webp"
-    },
-    {
-        "name": "Pietra Guardiana: Arco",
-        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Armi_e_Armature\\witcher-weapons",
-        "reason": "File not found",
-        "expected": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Reliquie_e_Artefatti/witcher-magic-items/pietra_guardiana_arco.webp"
-    },
-    {
-        "name": "Pugnale di Diaspro Sanguigno",
-        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Armi_e_Armature\\witcher-weapons",
-        "reason": "File not found",
-        "expected": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/pugnale_di_diaspro_sang.webp"
-    },
-    {
-        "name": "Rete con Pesi",
-        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Armi_e_Armature\\witcher-weapons",
-        "reason": "File not found",
-        "expected": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/rete_con_pesi.webp"
-    },
-    {
-        "name": "Rete per Mostri",
-        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Armi_e_Armature\\witcher-weapons",
-        "reason": "File not found",
-        "expected": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/rete_per_mostri.webp"
-    },
-    {
-        "name": "Scorpione",
-        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Armi_e_Armature\\witcher-weapons",
-        "reason": "File not found",
-        "expected": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/scorpione.webp"
-    },
-    {
-        "name": "Spada d'Acciaio della Lumaca",
-        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Armi_e_Armature\\witcher-weapons",
-        "reason": "File not found",
-        "expected": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-dlc-sl-equipment/spada_dacciaio_della_lumaca.webp"
-    },
-    {
         "name": "Spada d'Argento della Lumaca",
         "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Armi_e_Armature\\witcher-weapons",
         "reason": "File not found",
@@ -820,18 +538,6 @@
         "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Armi_e_Armature\\witcher-weapons-racconti",
         "reason": "File not found",
         "expected": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons-racconti/spada_ducale.webp"
-    },
-    {
-        "name": "Intrattenimento",
-        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Attrezzatura_e_Oggetti\\witcher-equipment",
-        "reason": "File not found",
-        "expected": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-equipment/intrattenimento.webp"
-    },
-    {
-        "name": "Investigatore",
-        "pack": "EQUIPAGGIAMENTO_E_TRASPORTI\\Attrezzatura_e_Oggetti\\witcher-equipment",
-        "reason": "File not found",
-        "expected": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-equipment/investigatore.webp"
     },
     {
         "name": "Kit per il Camuffamento",
@@ -4168,5 +3874,60 @@
         "pack": "REGOLAMENTO_E_NARRATIVA\\Trofei\\witcher-trophies",
         "reason": "File not found",
         "expected": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/Trofeo_Wraith_Diurno.webp"
+    },
+    {
+        "name": "Critici Complicati",
+        "pack": "TABELLEOPERATIVE\\CriticieCombattimento",
+        "reason": "Placeholder / No image"
+    },
+    {
+        "name": "Critici Difficili",
+        "pack": "TABELLEOPERATIVE\\CriticieCombattimento",
+        "reason": "Placeholder / No image"
+    },
+    {
+        "name": "Critici Mortali",
+        "pack": "TABELLEOPERATIVE\\CriticieCombattimento",
+        "reason": "Placeholder / No image"
+    },
+    {
+        "name": "Critici Semplici",
+        "pack": "TABELLEOPERATIVE\\CriticieCombattimento",
+        "reason": "Placeholder / No image"
+    },
+    {
+        "name": "Fumble - Disarmato",
+        "pack": "TABELLEOPERATIVE\\CriticieCombattimento",
+        "reason": "Placeholder / No image"
+    },
+    {
+        "name": "Fumble - Distanza",
+        "pack": "TABELLEOPERATIVE\\CriticieCombattimento",
+        "reason": "Placeholder / No image"
+    },
+    {
+        "name": "Fumble - Mischia Attacco",
+        "pack": "TABELLEOPERATIVE\\CriticieCombattimento",
+        "reason": "Placeholder / No image"
+    },
+    {
+        "name": "Fumble - Mischia Difesa",
+        "pack": "TABELLEOPERATIVE\\CriticieCombattimento",
+        "reason": "Placeholder / No image"
+    },
+    {
+        "name": "Effetti dei Disastri Elementali",
+        "pack": "TABELLEOPERATIVE\\DisastriMagici",
+        "reason": "Placeholder / No image"
+    },
+    {
+        "name": "Esiti dei Disastri Magici — Mago",
+        "pack": "TABELLEOPERATIVE\\DisastriMagici",
+        "reason": "Placeholder / No image"
+    },
+    {
+        "name": "Pericoli della Necromanzia",
+        "pack": "TABELLEOPERATIVE\\DisastriMagici",
+        "reason": "Placeholder / No image"
     }
 ]
