@@ -1,24 +1,24 @@
 {
-    "_id": "d180ae4328590a26",
-    "name": "Trofeo: Troll",
-    "type": "valuable",
-    "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/Trofeo_Troll.webp",
-    "system": {
-        "description": "<p>di Roccia Il personaggio aumenta di 1 il moltiplicatore alla gittata delle armi da lancio.</p>",
-        "weight": 0,
-        "cost": 0,
-        "quantity": 1,
-        "sourcebook": "TC p.126"
-    },
-    "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
-    "flags": {},
-    "_stats": {
-        "coreVersion": 14,
-        "systemId": "TheWitcherItaNewSystem"
-    }
+  "_id": "d180ae4328590a26",
+  "name": "Trofeo: Troll",
+  "type": "valuable",
+  "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/trofeo_troll.webp",
+  "system": {
+    "description": "<p>di Roccia Il personaggio aumenta di 1 il moltiplicatore alla gittata delle armi da lancio.</p>",
+    "weight": 0,
+    "cost": 0,
+    "quantity": 1,
+    "sourcebook": "TC p.126"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": 14,
+    "systemId": "TheWitcherItaNewSystem"
+  }
 }

@@ -1,142 +1,142 @@
 {
-    "_id": "34253226f5c82904",
-    "name": "La Strega di Rupe della Lince",
-    "type": "character",
-    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-characters/la_strega_di_rupe_della_lince.webp",
-    "system": {
-        "stats": {
-            "int": {
-                "value": 0,
-                "max": 0
-            },
-            "ref": {
-                "value": 0,
-                "max": 0
-            },
-            "dex": {
-                "value": 0,
-                "max": 0
-            },
-            "body": {
-                "value": 0,
-                "max": 0
-            },
-            "spd": {
-                "value": 0,
-                "max": 0
-            },
-            "emp": {
-                "value": 0,
-                "max": 0
-            },
-            "cra": {
-                "value": 0,
-                "max": 0
-            },
-            "will": {
-                "value": 0,
-                "max": 0
-            },
-            "luck": {
-                "value": 0,
-                "max": 0
-            }
-        },
-        "skills": {
-            "accortezza": {
-                "value": 0
-            },
-            "armiInAsta": {
-                "value": 0
-            },
-            "atletica": {
-                "value": 0
-            },
-            "coraggio": {
-                "value": 0
-            },
-            "eludere": {
-                "value": 0
-            },
-            "intessereFatture": {
-                "value": 0
-            },
-            "lanciareIncantesimi": {
-                "value": 0
-            },
-            "nascondersi": {
-                "value": 0
-            },
-            "officiareRituali": {
-                "value": 0
-            },
-            "resistereACoercizione": {
-                "value": 0
-            },
-            "resistereAllaMagia": {
-                "value": 0
-            },
-            "sopravvivenza": {
-                "value": 0
-            },
-            "tempra": {
-                "value": 0
-            }
-        },
-        "details": {
-            "biography": "<p>Temuta nel Toussaint settentrionale, la Strega di Rupe della Lince è considerata responsabile di molte maledizioni. Vive in isolamento con le sue pantere e maledice chiunque osi insultarla. Nonostante la sua fama sinistra, alcuni disperati cercano il suo aiuto.</p>",
-            "threat": "Difficile",
-            "reward": 0
-        },
-        "derivedStats": {
-            "health": {
-                "value": 0,
-                "max": 0
-            },
-            "stamina": {
-                "value": 0,
-                "max": 0
-            },
-            "rec": {
-                "value": 0,
-                "max": 0
-            },
-            "stun": {
-                "value": 0
-            },
-            "woundTreshold": {
-                "value": 0
-            },
-            "vigor": {
-                "value": 0,
-                "max": 0
-            }
-        },
-        "description": "<p>Temuta nel Toussaint settentrionale, la Strega di Rupe della Lince è considerata responsabile di molte maledizioni. Vive in isolamento con le sue pantere e maledice chiunque osi insultarla.</p>",
-        "sourcebook": "LR 148"
+  "_id": "34253226f5c82904",
+  "name": "La Strega di Rupe della Lince",
+  "type": "character",
+  "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-characters/la_strega_di_rupe_della_lince.webp",
+  "system": {
+    "stats": {
+      "int": {
+        "value": 0,
+        "max": 0
+      },
+      "ref": {
+        "value": 0,
+        "max": 0
+      },
+      "dex": {
+        "value": 0,
+        "max": 0
+      },
+      "body": {
+        "value": 0,
+        "max": 0
+      },
+      "spd": {
+        "value": 0,
+        "max": 0
+      },
+      "emp": {
+        "value": 0,
+        "max": 0
+      },
+      "cra": {
+        "value": 0,
+        "max": 0
+      },
+      "will": {
+        "value": 0,
+        "max": 0
+      },
+      "luck": {
+        "value": 0,
+        "max": 0
+      }
     },
-    "items": [
-        {
-            "name": "Bastone Gnomesco",
-            "type": "weapon",
-            "img": "icons/svg/sword.svg",
-            "system": {
-                "damage": "3d6+2",
-                "accuracy": 0,
-                "effects": "Portata, Focus (3)"
-            }
-        },
-        {
-            "name": "[Capacità] Magia della Strega",
-            "type": "note",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/Trait_Generico.webp",
-            "system": {
-                "description": "<p>Conosce gli incantesimi: Akhan Daal, Cenlly Graig, Guarigione Magica, Manipolazione Mentale, Teletrasporto, Tuono di Alzur, Zefiro. Rituali: Idromanzia, Piromanzia, Rituale della Magia, Rituale Purificatore. Fatture: La Fortuna del Diavolo, L'Incubo, La Fattura della Bestia.</p>"
-            }
-        }
-    ],
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
+    "skills": {
+      "accortezza": {
+        "value": 0
+      },
+      "armiInAsta": {
+        "value": 0
+      },
+      "atletica": {
+        "value": 0
+      },
+      "coraggio": {
+        "value": 0
+      },
+      "eludere": {
+        "value": 0
+      },
+      "intessereFatture": {
+        "value": 0
+      },
+      "lanciareIncantesimi": {
+        "value": 0
+      },
+      "nascondersi": {
+        "value": 0
+      },
+      "officiareRituali": {
+        "value": 0
+      },
+      "resistereACoercizione": {
+        "value": 0
+      },
+      "resistereAllaMagia": {
+        "value": 0
+      },
+      "sopravvivenza": {
+        "value": 0
+      },
+      "tempra": {
+        "value": 0
+      }
+    },
+    "details": {
+      "biography": "<p>Temuta nel Toussaint settentrionale, la Strega di Rupe della Lince è considerata responsabile di molte maledizioni. Vive in isolamento con le sue pantere e maledice chiunque osi insultarla. Nonostante la sua fama sinistra, alcuni disperati cercano il suo aiuto.</p>",
+      "threat": "Difficile",
+      "reward": 0
+    },
+    "derivedStats": {
+      "health": {
+        "value": 0,
+        "max": 0
+      },
+      "stamina": {
+        "value": 0,
+        "max": 0
+      },
+      "rec": {
+        "value": 0,
+        "max": 0
+      },
+      "stun": {
+        "value": 0
+      },
+      "woundTreshold": {
+        "value": 0
+      },
+      "vigor": {
+        "value": 0,
+        "max": 0
+      }
+    },
+    "description": "<p>Temuta nel Toussaint settentrionale, la Strega di Rupe della Lince è considerata responsabile di molte maledizioni. Vive in isolamento con le sue pantere e maledice chiunque osi insultarla.</p>",
+    "sourcebook": "LR 148"
+  },
+  "items": [
+    {
+      "name": "Bastone Gnomesco",
+      "type": "weapon",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "damage": "3d6+2",
+        "accuracy": 0,
+        "effects": "Portata, Focus (3)"
+      }
+    },
+    {
+      "name": "[Capacità] Magia della Strega",
+      "type": "note",
+      "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+      "system": {
+        "description": "<p>Conosce gli incantesimi: Akhan Daal, Cenlly Graig, Guarigione Magica, Manipolazione Mentale, Teletrasporto, Tuono di Alzur, Zefiro. Rituali: Idromanzia, Piromanzia, Rituale della Magia, Rituale Purificatore. Fatture: La Fortuna del Diavolo, L'Incubo, La Fattura della Bestia.</p>"
+      }
     }
+  ],
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

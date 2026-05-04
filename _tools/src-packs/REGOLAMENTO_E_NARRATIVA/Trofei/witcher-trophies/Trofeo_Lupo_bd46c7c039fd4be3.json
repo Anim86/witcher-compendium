@@ -1,23 +1,23 @@
 {
-    "_id": "bd46c7c039fd4be3",
-    "name": "Trofeo: Lupo",
-    "type": "valuable",
-    "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/Trofeo_Lupo.webp",
-    "system": {
-        "description": "<p>Mannaro Il personaggio ottiene +2 alle prove di Prestanza e Sopravvivenza.</p>",
-        "weight": 0,
-        "cost": 0,
-        "sourcebook": "TC p.126"
-    },
-    "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-    }
+  "_id": "bd46c7c039fd4be3",
+  "name": "Trofeo: Lupo",
+  "type": "valuable",
+  "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/trofeo_lupo.webp",
+  "system": {
+    "description": "<p>Mannaro Il personaggio ottiene +2 alle prove di Prestanza e Sopravvivenza.</p>",
+    "weight": 0,
+    "cost": 0,
+    "sourcebook": "TC p.126"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

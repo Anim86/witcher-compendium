@@ -1,61 +1,61 @@
 {
-    "_id": "9a44fb35f2fd4476",
-    "name": "Modellare Terra",
-    "type": "spell",
-    "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells-chaos/Modellare_Terra.webp",
-    "system": {
-        "description": "<p>Modellare Terra crea una struttura del volume massimo di 20 metri cubi, usando i materiali presenti nell'ambiente, come legno, roccia o terriccio. Ãˆ il mago a decidere forma e funzione della struttura, purché si tratti di qualcosa di semplice, come un muro, una sta- tua o una torre con poche stanze e scarsamente ammo- biliata. La struttura sorge nel giro di 10 minuti e ha un valore di PR scelto dal GM, da PR 5 per un muro di legno a PR 30 per uno di pietra.</p>",
-        "quantity": "1",
-        "weight": 0,
-        "cost": 0,
-        "sourcebook": "TC 83",
-        "class": "Mage",
-        "level": "master",
-        "source": "Earth",
-        "stamina": 0,
-        "staminaIsVar": false,
-        "effect": "Modellare Terra crea una struttura del volume massimo di 20 metri cubi, usando i materiali presenti nellâ€™ambiente, come legno, roccia o terriccio. Ãˆ il mago a decidere forma e funzione della struttura, purchÃ© si tratti di qualcosa di semplice, come un muro, una sta- tua o una torre con poche stanze e scarsamente ammo- biliata. La struttura sorge nel giro di 10 minuti e ha un valore di PR scelto dal GM, da PR 5 per un muro di legno a PR 30 per uno di pietra.",
-        "range": "6m",
-        "duration": "Permanente",
-        "defence": "Nessuna",
-        "damageProperties": {
-            "armorPiercing": false,
-            "improvedArmorPiercing": false,
-            "ablating": false,
-            "crushingForce": false,
-            "damageIsAblation": false,
-            "stun": 0,
-            "damageToAllLocations": false,
-            "bypassesWornArmor": false,
-            "bypassesNaturalArmor": false,
-            "defenseDifferenceMultiplier": false,
-            "defenseMultiplierCap": 5,
-            "variableDamage": false,
-            "effects": [],
-            "oilEffect": "",
-            "silverTrait": false,
-            "silverDamage": "",
-            "isMeteorite": false,
-            "isNonLethal": false
-        },
-        "regionProperties": {
-            "createRegionFromTemplate": false,
-            "behaviours": {
-                "tokenEnter": null,
-                "tokenTurnStart": null,
-                "tokenMoveWithin": null,
-                "tokenExit": null
-            }
-        },
-        "attackOptions": [
-            "spell"
-        ],
-        "spellAttackSkill": "spellcast"
+  "_id": "9a44fb35f2fd4476",
+  "name": "Modellare Terra",
+  "type": "spell",
+  "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells-chaos/modellare_terra.webp",
+  "system": {
+    "description": "<p>Modellare Terra crea una struttura del volume massimo di 20 metri cubi, usando i materiali presenti nell'ambiente, come legno, roccia o terriccio. Ãˆ il mago a decidere forma e funzione della struttura, purché si tratti di qualcosa di semplice, come un muro, una sta- tua o una torre con poche stanze e scarsamente ammo- biliata. La struttura sorge nel giro di 10 minuti e ha un valore di PR scelto dal GM, da PR 5 per un muro di legno a PR 30 per uno di pietra.</p>",
+    "quantity": "1",
+    "weight": 0,
+    "cost": 0,
+    "sourcebook": "TC 83",
+    "class": "Mage",
+    "level": "master",
+    "source": "Earth",
+    "stamina": 0,
+    "staminaIsVar": false,
+    "effect": "Modellare Terra crea una struttura del volume massimo di 20 metri cubi, usando i materiali presenti nellâ€™ambiente, come legno, roccia o terriccio. Ãˆ il mago a decidere forma e funzione della struttura, purchÃ© si tratti di qualcosa di semplice, come un muro, una sta- tua o una torre con poche stanze e scarsamente ammo- biliata. La struttura sorge nel giro di 10 minuti e ha un valore di PR scelto dal GM, da PR 5 per un muro di legno a PR 30 per uno di pietra.",
+    "range": "6m",
+    "duration": "Permanente",
+    "defence": "Nessuna",
+    "damageProperties": {
+      "armorPiercing": false,
+      "improvedArmorPiercing": false,
+      "ablating": false,
+      "crushingForce": false,
+      "damageIsAblation": false,
+      "stun": 0,
+      "damageToAllLocations": false,
+      "bypassesWornArmor": false,
+      "bypassesNaturalArmor": false,
+      "defenseDifferenceMultiplier": false,
+      "defenseMultiplierCap": 5,
+      "variableDamage": false,
+      "effects": [],
+      "oilEffect": "",
+      "silverTrait": false,
+      "silverDamage": "",
+      "isMeteorite": false,
+      "isNonLethal": false
     },
-    "effects": [],
-    "flags": {},
-    "_stats": {
-        "coreVersion": 14,
-        "systemId": "TheWitcherItaNewSystem"
-    }
+    "regionProperties": {
+      "createRegionFromTemplate": false,
+      "behaviours": {
+        "tokenEnter": null,
+        "tokenTurnStart": null,
+        "tokenMoveWithin": null,
+        "tokenExit": null
+      }
+    },
+    "attackOptions": [
+      "spell"
+    ],
+    "spellAttackSkill": "spellcast"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "coreVersion": 14,
+    "systemId": "TheWitcherItaNewSystem"
+  }
 }

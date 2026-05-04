@@ -1,49 +1,49 @@
 {
-    "_id": "00fecd750979a238",
-    "name": "Gwyhyr Gnomesca",
-    "type": "weapon",
-    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/Gwyhyr_Gnomesca.webp",
-    "system": {
-        "description": "",
-        "weight": 1,
-        "cost": 100,
-        "sourcebook": "MB",
-        "damage": "5d6+3",
-        "accuracy": 3,
-        "reliability": {
-            "value": 15,
-            "max": 15
-        },
-        "hands": "2",
-        "type": {
-            "text": "",
-            "slashing": true,
-            "piercing": true,
-            "bludgeoning": false,
-            "elemental": false
-        },
-        "damageProperties": {
-            "armorPiercing": false,
-            "improvedArmorPiercing": false,
-            "ablating": false,
-            "crushingForce": false,
-            "isMeteorite": false,
-            "isNonLethal": false,
-            "effects": [
-                {
-                    "id": "0009d3759ab93921",
-                    "name": "sanguinamento",
-                    "statusEffect": null,
-                    "percentage": 50,
-                    "varEffect": false
-                }
-            ]
-        }
+  "_id": "00fecd750979a238",
+  "name": "Gwyhyr Gnomesca",
+  "type": "weapon",
+  "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/gwyhyr_gnomesca.webp",
+  "system": {
+    "description": "",
+    "weight": 1,
+    "cost": 100,
+    "sourcebook": "MB",
+    "damage": "5d6+3",
+    "accuracy": 3,
+    "reliability": {
+      "value": 15,
+      "max": 15
     },
-    "effects": [],
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
+    "hands": "2",
+    "type": {
+      "text": "",
+      "slashing": true,
+      "piercing": true,
+      "bludgeoning": false,
+      "elemental": false
+    },
+    "damageProperties": {
+      "armorPiercing": false,
+      "improvedArmorPiercing": false,
+      "ablating": false,
+      "crushingForce": false,
+      "isMeteorite": false,
+      "isNonLethal": false,
+      "effects": [
+        {
+          "id": "0009d3759ab93921",
+          "name": "sanguinamento",
+          "statusEffect": null,
+          "percentage": 50,
+          "varEffect": false
+        }
+      ]
     }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

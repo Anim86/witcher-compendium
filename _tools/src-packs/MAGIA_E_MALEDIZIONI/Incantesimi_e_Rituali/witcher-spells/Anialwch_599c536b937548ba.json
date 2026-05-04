@@ -1,64 +1,64 @@
 {
-    "_id": "599c536b937548ba",
-    "name": "Anialwch",
-    "type": "spell",
-    "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells/Anialwch.webp",
-    "system": {
-        "description": "<p>Anialwch permette di risucchiare parte dei li- quidi presenti nel corpo di un bersaglio, danneggiandolo e sfinendolo. L'incantesimo infligge 4d6 danni che non possono essere bloccati da armature o scudi. La grave di- sidratazione causa anche affaticamento che riduce di 4d6 la RES del bersaglio.</p>",
-        "quantity": "1",
-        "weight": 0,
-        "cost": 0,
-        "sourcebook": "MB 103",
-        "class": "Mage",
-        "level": "journeyman",
-        "source": "Water",
-        "stamina": 8,
-        "staminaIsVar": false,
-        "effect": "Anialwch permette di risucchiare parte dei li- quidi presenti nel corpo di un bersaglio, danneggiandolo e sfinendolo. L'incantesimo infligge 4d6 danni che non possono essere bloccati da armature o scudi. La grave di- sidratazione causa anche affaticamento che riduce di 4d6 la RES del bersaglio.",
-        "range": "10m",
-        "duration": "Istantanea",
-        "defence": "Resistere alla Magia",
-        "damageProperties": {
-            "armorPiercing": false,
-            "improvedArmorPiercing": false,
-            "ablating": false,
-            "crushingForce": false,
-            "damageIsAblation": false,
-            "stun": 0,
-            "damageToAllLocations": false,
-            "bypassesWornArmor": false,
-            "bypassesNaturalArmor": false,
-            "defenseDifferenceMultiplier": false,
-            "defenseMultiplierCap": 5,
-            "variableDamage": false,
-            "effects": [],
-            "oilEffect": "",
-            "silverTrait": false,
-            "silverDamage": "",
-            "isMeteorite": false,
-            "isNonLethal": false
-        },
-        "regionProperties": {
-            "createRegionFromTemplate": false,
-            "behaviours": {
-                "tokenEnter": null,
-                "tokenTurnStart": null,
-                "tokenMoveWithin": null,
-                "tokenExit": null
-            }
-        },
-        "attackOptions": [
-            "spell"
-        ],
-        "spellAttackSkill": "spellcast",
-        "causeDamages": true,
-        "damage": "4d6",
-        "damageType": "elemental"
+  "_id": "599c536b937548ba",
+  "name": "Anialwch",
+  "type": "spell",
+  "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells/anialwch.webp",
+  "system": {
+    "description": "<p>Anialwch permette di risucchiare parte dei li- quidi presenti nel corpo di un bersaglio, danneggiandolo e sfinendolo. L'incantesimo infligge 4d6 danni che non possono essere bloccati da armature o scudi. La grave di- sidratazione causa anche affaticamento che riduce di 4d6 la RES del bersaglio.</p>",
+    "quantity": "1",
+    "weight": 0,
+    "cost": 0,
+    "sourcebook": "MB 103",
+    "class": "Mage",
+    "level": "journeyman",
+    "source": "Water",
+    "stamina": 8,
+    "staminaIsVar": false,
+    "effect": "Anialwch permette di risucchiare parte dei li- quidi presenti nel corpo di un bersaglio, danneggiandolo e sfinendolo. L'incantesimo infligge 4d6 danni che non possono essere bloccati da armature o scudi. La grave di- sidratazione causa anche affaticamento che riduce di 4d6 la RES del bersaglio.",
+    "range": "10m",
+    "duration": "Istantanea",
+    "defence": "Resistere alla Magia",
+    "damageProperties": {
+      "armorPiercing": false,
+      "improvedArmorPiercing": false,
+      "ablating": false,
+      "crushingForce": false,
+      "damageIsAblation": false,
+      "stun": 0,
+      "damageToAllLocations": false,
+      "bypassesWornArmor": false,
+      "bypassesNaturalArmor": false,
+      "defenseDifferenceMultiplier": false,
+      "defenseMultiplierCap": 5,
+      "variableDamage": false,
+      "effects": [],
+      "oilEffect": "",
+      "silverTrait": false,
+      "silverDamage": "",
+      "isMeteorite": false,
+      "isNonLethal": false
     },
-    "effects": [],
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-    }
+    "regionProperties": {
+      "createRegionFromTemplate": false,
+      "behaviours": {
+        "tokenEnter": null,
+        "tokenTurnStart": null,
+        "tokenMoveWithin": null,
+        "tokenExit": null
+      }
+    },
+    "attackOptions": [
+      "spell"
+    ],
+    "spellAttackSkill": "spellcast",
+    "causeDamages": true,
+    "damage": "4d6",
+    "damageType": "elemental"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

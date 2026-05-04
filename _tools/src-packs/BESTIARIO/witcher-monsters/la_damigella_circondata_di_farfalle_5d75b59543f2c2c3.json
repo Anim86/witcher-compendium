@@ -1,150 +1,150 @@
 {
-    "_id": "5d75b59543f2c2c3",
-    "name": "La Damigella Circondata di Farfalle",
-    "type": "monster",
-    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/la_damigella_circondata_di_farfalle.webp",
-    "system": {
-        "stats": {
-            "int": {
-                "value": 0,
-                "max": 0
-            },
-            "ref": {
-                "value": 0,
-                "max": 0
-            },
-            "dex": {
-                "value": 0,
-                "max": 0
-            },
-            "body": {
-                "value": 0,
-                "max": 0
-            },
-            "spd": {
-                "value": 0,
-                "max": 0
-            },
-            "emp": {
-                "value": 0,
-                "max": 0
-            },
-            "cra": {
-                "value": 0,
-                "max": 0
-            },
-            "will": {
-                "value": 0,
-                "max": 0
-            },
-            "luck": {
-                "value": 0,
-                "max": 0
-            }
-        },
-        "skills": {
-            "accortezza": {
-                "value": 0
-            },
-            "atletica": {
-                "value": 0
-            },
-            "coraggio": {
-                "value": 0
-            },
-            "eludere": {
-                "value": 0
-            },
-            "intimidire": {
-                "value": 0
-            },
-            "mischia": {
-                "value": 0
-            },
-            "nascondersi": {
-                "value": 0
-            },
-            "resistereAllaMagia": {
-                "value": 0
-            },
-            "rissa": {
-                "value": 0
-            },
-            "tempra": {
-                "value": 0
-            }
-        },
-        "details": {
-            "biography": "<p>Questa creatura non è Francine Marchand, ma i suoi stessi capelli, cresciuti sino a proporzioni enormi e maligne a causa di una maledizione. Appare come un enorme ragno peloso composto da otto enormi ciocche sospese al soffitto.</p>",
-            "threat": "Difficile",
-            "reward": 0,
-            "monsterType": "Relict",
-            "difficulty": "HARD"
-        },
-        "derivedStats": {
-            "rec": {
-                "value": 0,
-                "max": 0
-            },
-            "stun": {
-                "value": 0
-            },
-            "woundTreshold": {
-                "value": 0
-            },
-            "hp": {
-                "value": 0,
-                "max": 0
-            },
-            "sta": {
-                "value": 0,
-                "max": 0
-            }
-        },
-        "description": "<p>Questa creatura non è Francine Marchand, ma i suoi stessi capelli, cresciuti sino a proporzioni enormi e maligne a causa di una maledizione. Appare come un enorme ragno peloso composto da otto enormi ciocche sospese al soffitto. Il mostro “vede” grazie alle vibrazioni del terreno.</p>",
-        "sourcebook": "LR 154",
-        "monsterType": "Relict",
-        "difficulty": "HARD",
-        "bounty": 0
+  "_id": "5d75b59543f2c2c3",
+  "name": "La Damigella Circondata di Farfalle",
+  "type": "monster",
+  "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/la_damigella_circondata_di_farfalle.webp",
+  "system": {
+    "stats": {
+      "int": {
+        "value": 0,
+        "max": 0
+      },
+      "ref": {
+        "value": 0,
+        "max": 0
+      },
+      "dex": {
+        "value": 0,
+        "max": 0
+      },
+      "body": {
+        "value": 0,
+        "max": 0
+      },
+      "spd": {
+        "value": 0,
+        "max": 0
+      },
+      "emp": {
+        "value": 0,
+        "max": 0
+      },
+      "cra": {
+        "value": 0,
+        "max": 0
+      },
+      "will": {
+        "value": 0,
+        "max": 0
+      },
+      "luck": {
+        "value": 0,
+        "max": 0
+      }
     },
-    "items": [
-        {
-            "name": "Frusta di Capelli",
-            "type": "weapon",
-            "img": "icons/svg/sword.svg",
-            "system": {
-                "damage": "3d6+2",
-                "accuracy": 0,
-                "effects": "Bilanciata, Portata (20m)"
-            }
-        },
-        {
-            "name": "[Capacità] Salute Proporzionale",
-            "type": "note",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/Trait_Generico.webp",
-            "system": {
-                "description": "<p>La creatura è composta da otto enormi ciocche di capelli. Ognuna ha 15 PS, Pr 12 ed è considerata una creatura a sé stante ai fini della difesa. Una volta che tutte le ciocche sono state tagliate, la creatura è ridotta a 1 PS e non può più attaccare.</p>"
-            }
-        },
-        {
-            "name": "[Capacità] Scambio",
-            "type": "note",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/Trait_Generico.webp",
-            "system": {
-                "description": "<p>Una volta per Round, la creatura può tentare di sostituire il corpo di Francine Marchand (10 PS) alla ciocca bersaglio per difendersi (Prova di Rissa vs Attacco).</p>"
-            }
-        },
-        {
-            "name": "[Capacità] Sensibile alla Vibrazioni",
-            "type": "note",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/Trait_Generico.webp",
-            "system": {
-                "description": "<p>La creatura vede grazie alle vibrazioni del terreno. Non può venire accecata se il bersaglio tocca terra, ma è considerata accecata contro creature in volo o che non toccano il suolo.</p>"
-            }
-        }
-    ],
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
+    "skills": {
+      "accortezza": {
+        "value": 0
+      },
+      "atletica": {
+        "value": 0
+      },
+      "coraggio": {
+        "value": 0
+      },
+      "eludere": {
+        "value": 0
+      },
+      "intimidire": {
+        "value": 0
+      },
+      "mischia": {
+        "value": 0
+      },
+      "nascondersi": {
+        "value": 0
+      },
+      "resistereAllaMagia": {
+        "value": 0
+      },
+      "rissa": {
+        "value": 0
+      },
+      "tempra": {
+        "value": 0
+      }
+    },
+    "details": {
+      "biography": "<p>Questa creatura non è Francine Marchand, ma i suoi stessi capelli, cresciuti sino a proporzioni enormi e maligne a causa di una maledizione. Appare come un enorme ragno peloso composto da otto enormi ciocche sospese al soffitto.</p>",
+      "threat": "Difficile",
+      "reward": 0,
+      "monsterType": "Relict",
+      "difficulty": "HARD"
+    },
+    "derivedStats": {
+      "rec": {
+        "value": 0,
+        "max": 0
+      },
+      "stun": {
+        "value": 0
+      },
+      "woundTreshold": {
+        "value": 0
+      },
+      "hp": {
+        "value": 0,
+        "max": 0
+      },
+      "sta": {
+        "value": 0,
+        "max": 0
+      }
+    },
+    "description": "<p>Questa creatura non è Francine Marchand, ma i suoi stessi capelli, cresciuti sino a proporzioni enormi e maligne a causa di una maledizione. Appare come un enorme ragno peloso composto da otto enormi ciocche sospese al soffitto. Il mostro “vede” grazie alle vibrazioni del terreno.</p>",
+    "sourcebook": "LR 154",
+    "monsterType": "Relict",
+    "difficulty": "HARD",
+    "bounty": 0
+  },
+  "items": [
+    {
+      "name": "Frusta di Capelli",
+      "type": "weapon",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "damage": "3d6+2",
+        "accuracy": 0,
+        "effects": "Bilanciata, Portata (20m)"
+      }
+    },
+    {
+      "name": "[Capacità] Salute Proporzionale",
+      "type": "note",
+      "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+      "system": {
+        "description": "<p>La creatura è composta da otto enormi ciocche di capelli. Ognuna ha 15 PS, Pr 12 ed è considerata una creatura a sé stante ai fini della difesa. Una volta che tutte le ciocche sono state tagliate, la creatura è ridotta a 1 PS e non può più attaccare.</p>"
+      }
+    },
+    {
+      "name": "[Capacità] Scambio",
+      "type": "note",
+      "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+      "system": {
+        "description": "<p>Una volta per Round, la creatura può tentare di sostituire il corpo di Francine Marchand (10 PS) alla ciocca bersaglio per difendersi (Prova di Rissa vs Attacco).</p>"
+      }
+    },
+    {
+      "name": "[Capacità] Sensibile alla Vibrazioni",
+      "type": "note",
+      "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+      "system": {
+        "description": "<p>La creatura vede grazie alle vibrazioni del terreno. Non può venire accecata se il bersaglio tocca terra, ma è considerata accecata contro creature in volo o che non toccano il suolo.</p>"
+      }
     }
+  ],
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

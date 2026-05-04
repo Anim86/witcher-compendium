@@ -1,61 +1,61 @@
 {
-    "_id": "4375d03295e24907",
-    "name": "Incantesimo Diagnostico",
-    "type": "spell",
-    "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells/Incantesimo_Diagnostico.webp",
-    "system": {
-        "description": "<p>Incantesimo Diagnostico consente all'incanta- tore di valutare rapidamente la salute di un bersaglio e di determinare quanti Punti Salute possiede, eventuali ferite critiche, malattie o avvelenamenti.</p>",
-        "quantity": "1",
-        "weight": 0,
-        "cost": 0,
-        "sourcebook": "MB 103",
-        "class": "Mage",
-        "level": "novice",
-        "source": "earth",
-        "stamina": 3,
-        "staminaIsVar": false,
-        "effect": "Incantesimo Diagnostico consente all'incanta- tore di valutare rapidamente la salute di un bersaglio e di determinare quanti Punti Salute possiede, eventuali ferite critiche, malattie o avvelenamenti.",
-        "range": "5m",
-        "duration": "Istantanea",
-        "defence": "Nessuna",
-        "damageProperties": {
-            "armorPiercing": false,
-            "improvedArmorPiercing": false,
-            "ablating": false,
-            "crushingForce": false,
-            "damageIsAblation": false,
-            "stun": 0,
-            "damageToAllLocations": false,
-            "bypassesWornArmor": false,
-            "bypassesNaturalArmor": false,
-            "defenseDifferenceMultiplier": false,
-            "defenseMultiplierCap": 5,
-            "variableDamage": false,
-            "effects": [],
-            "oilEffect": "",
-            "silverTrait": false,
-            "silverDamage": "",
-            "isMeteorite": false,
-            "isNonLethal": false
-        },
-        "regionProperties": {
-            "createRegionFromTemplate": false,
-            "behaviours": {
-                "tokenEnter": null,
-                "tokenTurnStart": null,
-                "tokenMoveWithin": null,
-                "tokenExit": null
-            }
-        },
-        "attackOptions": [
-            "spell"
-        ],
-        "spellAttackSkill": "spellcast"
+  "_id": "4375d03295e24907",
+  "name": "Incantesimo Diagnostico",
+  "type": "spell",
+  "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells/incantesimo_diagnostico.webp",
+  "system": {
+    "description": "<p>Incantesimo Diagnostico consente all'incanta- tore di valutare rapidamente la salute di un bersaglio e di determinare quanti Punti Salute possiede, eventuali ferite critiche, malattie o avvelenamenti.</p>",
+    "quantity": "1",
+    "weight": 0,
+    "cost": 0,
+    "sourcebook": "MB 103",
+    "class": "Mage",
+    "level": "novice",
+    "source": "earth",
+    "stamina": 3,
+    "staminaIsVar": false,
+    "effect": "Incantesimo Diagnostico consente all'incanta- tore di valutare rapidamente la salute di un bersaglio e di determinare quanti Punti Salute possiede, eventuali ferite critiche, malattie o avvelenamenti.",
+    "range": "5m",
+    "duration": "Istantanea",
+    "defence": "Nessuna",
+    "damageProperties": {
+      "armorPiercing": false,
+      "improvedArmorPiercing": false,
+      "ablating": false,
+      "crushingForce": false,
+      "damageIsAblation": false,
+      "stun": 0,
+      "damageToAllLocations": false,
+      "bypassesWornArmor": false,
+      "bypassesNaturalArmor": false,
+      "defenseDifferenceMultiplier": false,
+      "defenseMultiplierCap": 5,
+      "variableDamage": false,
+      "effects": [],
+      "oilEffect": "",
+      "silverTrait": false,
+      "silverDamage": "",
+      "isMeteorite": false,
+      "isNonLethal": false
     },
-    "effects": [],
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-    }
+    "regionProperties": {
+      "createRegionFromTemplate": false,
+      "behaviours": {
+        "tokenEnter": null,
+        "tokenTurnStart": null,
+        "tokenMoveWithin": null,
+        "tokenExit": null
+      }
+    },
+    "attackOptions": [
+      "spell"
+    ],
+    "spellAttackSkill": "spellcast"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

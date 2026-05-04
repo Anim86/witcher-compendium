@@ -1,51 +1,51 @@
 {
-    "_id": "38c1eaacac924334",
-    "name": "Azza",
-    "type": "weapon",
-    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/Azza.webp",
-    "system": {
-        "description": "<p>Ãˆ stato un armaiolo nanico a creare quest'azza leggera, a Poviss. Una lunga asta che termina con la pesante testa di un'ascia, un rostro in cima e una testa di martello sul retro. Eh, un'arma progettata per essere versatile e contrastare ogni tipo di corazza. Abbiamo buone armi per essere politica- mente neutrali.</p>",
-        "cost": 460,
-        "reliability": {
-            "max": 10,
-            "value": 10
-        },
-        "accuracy": 0,
-        "reach": "N/A",
-        "effects": "Portata",
-        "sourcebook": "MB 75",
-        "range": "Portata",
-        "type": {
-            "text": "",
-            "slashing": true,
-            "piercing": true,
-            "bludgeoning": true,
-            "elemental": false
-        },
-        "damageProperties": {
-            "armorPiercing": false,
-            "improvedArmorPiercing": false,
-            "ablating": false,
-            "crushingForce": false,
-            "isMeteorite": false,
-            "isNonLethal": false,
-            "effects": []
-        },
-        "weight": 3,
-        "rarity": "Scarsa",
-        "damage": "4d6+2",
-        "hands": 2,
-        "unmodifiedMax": {}
+  "_id": "38c1eaacac924334",
+  "name": "Azza",
+  "type": "weapon",
+  "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/azza.webp",
+  "system": {
+    "description": "<p>Ãˆ stato un armaiolo nanico a creare quest'azza leggera, a Poviss. Una lunga asta che termina con la pesante testa di un'ascia, un rostro in cima e una testa di martello sul retro. Eh, un'arma progettata per essere versatile e contrastare ogni tipo di corazza. Abbiamo buone armi per essere politica- mente neutrali.</p>",
+    "cost": 460,
+    "reliability": {
+      "max": 10,
+      "value": 10
     },
-    "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
+    "accuracy": 0,
+    "reach": "N/A",
+    "effects": "Portata",
+    "sourcebook": "MB 75",
+    "range": "Portata",
+    "type": {
+      "text": "",
+      "slashing": true,
+      "piercing": true,
+      "bludgeoning": true,
+      "elemental": false
     },
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-    }
+    "damageProperties": {
+      "armorPiercing": false,
+      "improvedArmorPiercing": false,
+      "ablating": false,
+      "crushingForce": false,
+      "isMeteorite": false,
+      "isNonLethal": false,
+      "effects": []
+    },
+    "weight": 3,
+    "rarity": "Scarsa",
+    "damage": "4d6+2",
+    "hands": 2,
+    "unmodifiedMax": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

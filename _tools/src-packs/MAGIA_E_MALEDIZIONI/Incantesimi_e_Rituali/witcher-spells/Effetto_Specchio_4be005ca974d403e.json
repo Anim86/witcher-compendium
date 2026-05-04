@@ -1,64 +1,64 @@
 {
-    "_id": "4be005ca974d403e",
-    "name": "Effetto Specchio",
-    "type": "spell",
-    "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells/Effetto_Specchio.webp",
-    "system": {
-        "description": "<p>Effetto Specchio crea un raggio di luce acce- cante che infligge 10d6 danni. Questo raggio può essere schivato o bloccato (distruggendo qualsiasi cosa utiliz- zata per bloccare), ma non può essere deviato dal vento e può essere parato solo da una superficie riflettente, che subisce comunque il danno. Il laser riflesso è deviato in una direzione casuale. Questo incantesimo utilizza i rag- gi del sole e non può essere utilizzato in mancanza di luce solare. Con la luce della luna o col cielo coperto da nubi, infligge met dei danni.</p>",
-        "quantity": "1",
-        "weight": 0,
-        "cost": 0,
-        "sourcebook": "MB 103",
-        "class": "Mage",
-        "level": "master",
-        "source": "Water",
-        "stamina": 25,
-        "staminaIsVar": false,
-        "effect": "Effetto Specchio crea un raggio di luce acce- cante che infligge 10d6 danni. Questo raggio può essere schivato o bloccato (distruggendo qualsiasi cosa utiliz- zata per bloccare), ma non può essere deviato dal vento e può essere parato solo da una superficie riflettente, che subisce comunque il danno. Il laser riflesso è deviato in una direzione casuale. Questo incantesimo utilizza i rag- gi del sole e non può essere utilizzato in mancanza di luce solare. Con la luce della luna o col cielo coperto da nubi, infligge met dei danni.",
-        "range": "20m",
-        "duration": "2d6 Round",
-        "defence": "Schivare o Bloccare",
-        "damageProperties": {
-            "armorPiercing": false,
-            "improvedArmorPiercing": false,
-            "ablating": false,
-            "crushingForce": false,
-            "damageIsAblation": false,
-            "stun": 0,
-            "damageToAllLocations": false,
-            "bypassesWornArmor": false,
-            "bypassesNaturalArmor": false,
-            "defenseDifferenceMultiplier": false,
-            "defenseMultiplierCap": 5,
-            "variableDamage": false,
-            "effects": [],
-            "oilEffect": "",
-            "silverTrait": false,
-            "silverDamage": "",
-            "isMeteorite": false,
-            "isNonLethal": false
-        },
-        "regionProperties": {
-            "createRegionFromTemplate": false,
-            "behaviours": {
-                "tokenEnter": null,
-                "tokenTurnStart": null,
-                "tokenMoveWithin": null,
-                "tokenExit": null
-            }
-        },
-        "attackOptions": [
-            "spell"
-        ],
-        "spellAttackSkill": "spellcast",
-        "causeDamages": true,
-        "damage": "10d6",
-        "damageType": "elemental"
+  "_id": "4be005ca974d403e",
+  "name": "Effetto Specchio",
+  "type": "spell",
+  "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells/effetto_specchio.webp",
+  "system": {
+    "description": "<p>Effetto Specchio crea un raggio di luce acce- cante che infligge 10d6 danni. Questo raggio può essere schivato o bloccato (distruggendo qualsiasi cosa utiliz- zata per bloccare), ma non può essere deviato dal vento e può essere parato solo da una superficie riflettente, che subisce comunque il danno. Il laser riflesso è deviato in una direzione casuale. Questo incantesimo utilizza i rag- gi del sole e non può essere utilizzato in mancanza di luce solare. Con la luce della luna o col cielo coperto da nubi, infligge met dei danni.</p>",
+    "quantity": "1",
+    "weight": 0,
+    "cost": 0,
+    "sourcebook": "MB 103",
+    "class": "Mage",
+    "level": "master",
+    "source": "Water",
+    "stamina": 25,
+    "staminaIsVar": false,
+    "effect": "Effetto Specchio crea un raggio di luce acce- cante che infligge 10d6 danni. Questo raggio può essere schivato o bloccato (distruggendo qualsiasi cosa utiliz- zata per bloccare), ma non può essere deviato dal vento e può essere parato solo da una superficie riflettente, che subisce comunque il danno. Il laser riflesso è deviato in una direzione casuale. Questo incantesimo utilizza i rag- gi del sole e non può essere utilizzato in mancanza di luce solare. Con la luce della luna o col cielo coperto da nubi, infligge met dei danni.",
+    "range": "20m",
+    "duration": "2d6 Round",
+    "defence": "Schivare o Bloccare",
+    "damageProperties": {
+      "armorPiercing": false,
+      "improvedArmorPiercing": false,
+      "ablating": false,
+      "crushingForce": false,
+      "damageIsAblation": false,
+      "stun": 0,
+      "damageToAllLocations": false,
+      "bypassesWornArmor": false,
+      "bypassesNaturalArmor": false,
+      "defenseDifferenceMultiplier": false,
+      "defenseMultiplierCap": 5,
+      "variableDamage": false,
+      "effects": [],
+      "oilEffect": "",
+      "silverTrait": false,
+      "silverDamage": "",
+      "isMeteorite": false,
+      "isNonLethal": false
     },
-    "effects": [],
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-    }
+    "regionProperties": {
+      "createRegionFromTemplate": false,
+      "behaviours": {
+        "tokenEnter": null,
+        "tokenTurnStart": null,
+        "tokenMoveWithin": null,
+        "tokenExit": null
+      }
+    },
+    "attackOptions": [
+      "spell"
+    ],
+    "spellAttackSkill": "spellcast",
+    "causeDamages": true,
+    "damage": "10d6",
+    "damageType": "elemental"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

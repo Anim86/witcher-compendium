@@ -1,24 +1,24 @@
 {
-    "_id": "ecc06b600432e2fa",
-    "name": "Trofeo: Grifone",
-    "type": "valuable",
-    "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/Trofeo_Grifone.webp",
-    "system": {
-        "description": "<p>Il personaggio tira due volte per le Ferite Critiche e sceglie quale risultato applicare.</p>",
-        "weight": 0,
-        "cost": 0,
-        "quantity": 1,
-        "sourcebook": "TC p.126"
-    },
-    "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
-    "flags": {},
-    "_stats": {
-        "coreVersion": 14,
-        "systemId": "TheWitcherItaNewSystem"
-    }
+  "_id": "ecc06b600432e2fa",
+  "name": "Trofeo: Grifone",
+  "type": "valuable",
+  "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/trofeo_grifone.webp",
+  "system": {
+    "description": "<p>Il personaggio tira due volte per le Ferite Critiche e sceglie quale risultato applicare.</p>",
+    "weight": 0,
+    "cost": 0,
+    "quantity": 1,
+    "sourcebook": "TC p.126"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "coreVersion": 14,
+    "systemId": "TheWitcherItaNewSystem"
+  }
 }

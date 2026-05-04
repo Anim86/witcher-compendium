@@ -1,61 +1,61 @@
 {
-    "_id": "3575177c150740db",
-    "name": "Comando Mentale",
-    "type": "spell",
-    "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells/Comando_Mentale.webp",
-    "system": {
-        "description": "<p>Comando Mentale consente d'impiantare un ordine nella mente di un bersaglio. Il comando deve es- sere eseguito alla lettera. Se il comando è qualcosa che il bersaglio non farebbe mai, questo riceve +5 alla prova di Resistere alla Magia.</p>",
-        "quantity": "1",
-        "weight": 0,
-        "cost": 0,
-        "sourcebook": "MB 103",
-        "class": "Mage",
-        "level": "master",
-        "source": "mixedElements",
-        "stamina": 25,
-        "staminaIsVar": false,
-        "effect": "Comando Mentale consente d'impiantare un ordine nella mente di un bersaglio. Il comando deve es- sere eseguito alla lettera. Se il comando è qualcosa che il bersaglio non farebbe mai, questo riceve +5 alla prova di Resistere alla Magia.",
-        "range": "10m",
-        "duration": "Fino al completamento dell'incarico",
-        "defence": "Resistere alla Magia",
-        "damageProperties": {
-            "armorPiercing": false,
-            "improvedArmorPiercing": false,
-            "ablating": false,
-            "crushingForce": false,
-            "damageIsAblation": false,
-            "stun": 0,
-            "damageToAllLocations": false,
-            "bypassesWornArmor": false,
-            "bypassesNaturalArmor": false,
-            "defenseDifferenceMultiplier": false,
-            "defenseMultiplierCap": 5,
-            "variableDamage": false,
-            "effects": [],
-            "oilEffect": "",
-            "silverTrait": false,
-            "silverDamage": "",
-            "isMeteorite": false,
-            "isNonLethal": false
-        },
-        "regionProperties": {
-            "createRegionFromTemplate": false,
-            "behaviours": {
-                "tokenEnter": null,
-                "tokenTurnStart": null,
-                "tokenMoveWithin": null,
-                "tokenExit": null
-            }
-        },
-        "attackOptions": [
-            "spell"
-        ],
-        "spellAttackSkill": "spellcast"
+  "_id": "3575177c150740db",
+  "name": "Comando Mentale",
+  "type": "spell",
+  "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells/comando_mentale.webp",
+  "system": {
+    "description": "<p>Comando Mentale consente d'impiantare un ordine nella mente di un bersaglio. Il comando deve es- sere eseguito alla lettera. Se il comando è qualcosa che il bersaglio non farebbe mai, questo riceve +5 alla prova di Resistere alla Magia.</p>",
+    "quantity": "1",
+    "weight": 0,
+    "cost": 0,
+    "sourcebook": "MB 103",
+    "class": "Mage",
+    "level": "master",
+    "source": "mixedElements",
+    "stamina": 25,
+    "staminaIsVar": false,
+    "effect": "Comando Mentale consente d'impiantare un ordine nella mente di un bersaglio. Il comando deve es- sere eseguito alla lettera. Se il comando è qualcosa che il bersaglio non farebbe mai, questo riceve +5 alla prova di Resistere alla Magia.",
+    "range": "10m",
+    "duration": "Fino al completamento dell'incarico",
+    "defence": "Resistere alla Magia",
+    "damageProperties": {
+      "armorPiercing": false,
+      "improvedArmorPiercing": false,
+      "ablating": false,
+      "crushingForce": false,
+      "damageIsAblation": false,
+      "stun": 0,
+      "damageToAllLocations": false,
+      "bypassesWornArmor": false,
+      "bypassesNaturalArmor": false,
+      "defenseDifferenceMultiplier": false,
+      "defenseMultiplierCap": 5,
+      "variableDamage": false,
+      "effects": [],
+      "oilEffect": "",
+      "silverTrait": false,
+      "silverDamage": "",
+      "isMeteorite": false,
+      "isNonLethal": false
     },
-    "effects": [],
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-    }
+    "regionProperties": {
+      "createRegionFromTemplate": false,
+      "behaviours": {
+        "tokenEnter": null,
+        "tokenTurnStart": null,
+        "tokenMoveWithin": null,
+        "tokenExit": null
+      }
+    },
+    "attackOptions": [
+      "spell"
+    ],
+    "spellAttackSkill": "spellcast"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

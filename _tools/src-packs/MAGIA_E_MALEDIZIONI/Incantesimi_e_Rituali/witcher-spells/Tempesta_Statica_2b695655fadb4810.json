@@ -1,61 +1,61 @@
 {
-    "_id": "2b695655fadb4810",
-    "name": "Tempesta Statica",
-    "type": "spell",
-    "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells/Tempesta_Statica.webp",
-    "system": {
-        "description": "<p>Tempesta Statica consente all'incantatore di sa- turare d'elettricit un raggio di 5m centrato su di lui. Ogni bersaglio nell'area (eccetto l'incantatore), se indos- sa un'armatura di metallo o porta armi di metallo, subi- sce 2 danni per round.</p>",
-        "quantity": "1",
-        "weight": 0,
-        "cost": 0,
-        "sourcebook": "MB 103",
-        "class": "Mage",
-        "level": "novice",
-        "source": "earth",
-        "stamina": 5,
-        "staminaIsVar": false,
-        "effect": "Tempesta Statica consente all'incantatore di sa- turare d'elettricit un raggio di 5m centrato su di lui. Ogni bersaglio nell'area (eccetto l'incantatore), se indos- sa un'armatura di metallo o porta armi di metallo, subi- sce 2 danni per round.",
-        "range": "Raggio di 5m",
-        "duration": "2d6 Round",
-        "defence": "Nessuna",
-        "damageProperties": {
-            "armorPiercing": false,
-            "improvedArmorPiercing": false,
-            "ablating": false,
-            "crushingForce": false,
-            "damageIsAblation": false,
-            "stun": 0,
-            "damageToAllLocations": false,
-            "bypassesWornArmor": false,
-            "bypassesNaturalArmor": false,
-            "defenseDifferenceMultiplier": false,
-            "defenseMultiplierCap": 5,
-            "variableDamage": false,
-            "effects": [],
-            "oilEffect": "",
-            "silverTrait": false,
-            "silverDamage": "",
-            "isMeteorite": false,
-            "isNonLethal": false
-        },
-        "regionProperties": {
-            "createRegionFromTemplate": false,
-            "behaviours": {
-                "tokenEnter": null,
-                "tokenTurnStart": null,
-                "tokenMoveWithin": null,
-                "tokenExit": null
-            }
-        },
-        "attackOptions": [
-            "spell"
-        ],
-        "spellAttackSkill": "spellcast"
+  "_id": "2b695655fadb4810",
+  "name": "Tempesta Statica",
+  "type": "spell",
+  "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells/tempesta_statica.webp",
+  "system": {
+    "description": "<p>Tempesta Statica consente all'incantatore di sa- turare d'elettricit un raggio di 5m centrato su di lui. Ogni bersaglio nell'area (eccetto l'incantatore), se indos- sa un'armatura di metallo o porta armi di metallo, subi- sce 2 danni per round.</p>",
+    "quantity": "1",
+    "weight": 0,
+    "cost": 0,
+    "sourcebook": "MB 103",
+    "class": "Mage",
+    "level": "novice",
+    "source": "earth",
+    "stamina": 5,
+    "staminaIsVar": false,
+    "effect": "Tempesta Statica consente all'incantatore di sa- turare d'elettricit un raggio di 5m centrato su di lui. Ogni bersaglio nell'area (eccetto l'incantatore), se indos- sa un'armatura di metallo o porta armi di metallo, subi- sce 2 danni per round.",
+    "range": "Raggio di 5m",
+    "duration": "2d6 Round",
+    "defence": "Nessuna",
+    "damageProperties": {
+      "armorPiercing": false,
+      "improvedArmorPiercing": false,
+      "ablating": false,
+      "crushingForce": false,
+      "damageIsAblation": false,
+      "stun": 0,
+      "damageToAllLocations": false,
+      "bypassesWornArmor": false,
+      "bypassesNaturalArmor": false,
+      "defenseDifferenceMultiplier": false,
+      "defenseMultiplierCap": 5,
+      "variableDamage": false,
+      "effects": [],
+      "oilEffect": "",
+      "silverTrait": false,
+      "silverDamage": "",
+      "isMeteorite": false,
+      "isNonLethal": false
     },
-    "effects": [],
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-    }
+    "regionProperties": {
+      "createRegionFromTemplate": false,
+      "behaviours": {
+        "tokenEnter": null,
+        "tokenTurnStart": null,
+        "tokenMoveWithin": null,
+        "tokenExit": null
+      }
+    },
+    "attackOptions": [
+      "spell"
+    ],
+    "spellAttackSkill": "spellcast"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

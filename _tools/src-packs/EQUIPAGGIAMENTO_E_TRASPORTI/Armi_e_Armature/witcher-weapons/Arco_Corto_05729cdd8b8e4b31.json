@@ -1,51 +1,51 @@
 {
-    "_id": "05729cdd8b8e4b31",
-    "name": "Arco Corto",
-    "type": "weapon",
-    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/Arco_Corto.webp",
-    "system": {
-        "description": "<p>Non se ne vedono molti di archi corti in guerra. Sono trop- po piccoli per essere davvero validi in battaglia e le frecce non hanno una grande gittata. Ma sono perfetti per caccia- re cervi... e, quando capita, gli intrusi. BASTONI</p>",
-        "cost": 290,
-        "reliability": {
-            "max": 10,
-            "value": 10
-        },
-        "accuracy": 0,
-        "reach": "100m",
-        "effects": "N/A",
-        "sourcebook": "MB 76",
-        "range": "100m",
-        "type": {
-            "text": "",
-            "slashing": false,
-            "piercing": true,
-            "bludgeoning": false,
-            "elemental": false
-        },
-        "damageProperties": {
-            "armorPiercing": false,
-            "improvedArmorPiercing": false,
-            "ablating": false,
-            "crushingForce": false,
-            "isMeteorite": false,
-            "isNonLethal": false,
-            "effects": []
-        },
-        "weight": 1,
-        "rarity": "Diffusa",
-        "damage": "3d6+3",
-        "hands": 2,
-        "unmodifiedMax": {}
+  "_id": "05729cdd8b8e4b31",
+  "name": "Arco Corto",
+  "type": "weapon",
+  "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/arco_corto.webp",
+  "system": {
+    "description": "<p>Non se ne vedono molti di archi corti in guerra. Sono trop- po piccoli per essere davvero validi in battaglia e le frecce non hanno una grande gittata. Ma sono perfetti per caccia- re cervi... e, quando capita, gli intrusi. BASTONI</p>",
+    "cost": 290,
+    "reliability": {
+      "max": 10,
+      "value": 10
     },
-    "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
+    "accuracy": 0,
+    "reach": "100m",
+    "effects": "N/A",
+    "sourcebook": "MB 76",
+    "range": "100m",
+    "type": {
+      "text": "",
+      "slashing": false,
+      "piercing": true,
+      "bludgeoning": false,
+      "elemental": false
     },
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-    }
+    "damageProperties": {
+      "armorPiercing": false,
+      "improvedArmorPiercing": false,
+      "ablating": false,
+      "crushingForce": false,
+      "isMeteorite": false,
+      "isNonLethal": false,
+      "effects": []
+    },
+    "weight": 1,
+    "rarity": "Diffusa",
+    "damage": "3d6+3",
+    "hands": 2,
+    "unmodifiedMax": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

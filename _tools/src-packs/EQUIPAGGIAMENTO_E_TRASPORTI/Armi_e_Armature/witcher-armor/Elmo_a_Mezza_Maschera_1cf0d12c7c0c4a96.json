@@ -1,55 +1,55 @@
 {
-    "_id": "1cf0d12c7c0c4a96",
-    "name": "Elmo a Mezza Maschera",
-    "type": "armor",
-    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-armor/Elmo_a_Mezza_Maschera.webp",
-    "system": {
-        "description": "<p>Gli elmi a mezza maschera sono più comuni a Nilfgaard e a Skellige. Gli uomini del Nord preferiscono di norma elmi chiusi o semplicemente dei berretti. Questo pezzo a occhia- le sul davanti dell'elmo aiuta a proteggere occhi e faccia e alcuni elmi hanno anche della cotta di maglia attaccata in fondo, per proteggere il collo.</p>",
-        "cost": 200,
-        "reliability": {
-            "value": 0,
-            "max": 0
-        },
-        "sourcebook": "MB 81",
-        "type": "Light",
-        "location": "Head",
-        "encumb": 0,
-        "enhancements": 0,
-        "headStopping": 8,
-        "headMaxStopping": 8,
-        "torsoStopping": 0,
-        "torsoMaxStopping": 0,
-        "leftArmStopping": 0,
-        "leftArmMaxStopping": 0,
-        "rightArmStopping": 0,
-        "rightArmMaxStopping": 0,
-        "leftLegStopping": 0,
-        "leftLegMaxStopping": 0,
-        "rightLegStopping": 0,
-        "rightLegMaxStopping": 0,
-        "bludgeoning": false,
-        "slashing": false,
-        "piercing": false,
-        "elemental": false,
-        "fire": false,
-        "poison": false,
-        "bleeding": false,
-        "weight": 1,
-        "rarity": "Comune",
-        "stoppingPower": 8,
-        "protection": {},
-        "encumbranceMod": 0,
-        "unmodifiedMax": {}
+  "_id": "1cf0d12c7c0c4a96",
+  "name": "Elmo a Mezza Maschera",
+  "type": "armor",
+  "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-armor/elmo_a_mezza_maschera.webp",
+  "system": {
+    "description": "<p>Gli elmi a mezza maschera sono più comuni a Nilfgaard e a Skellige. Gli uomini del Nord preferiscono di norma elmi chiusi o semplicemente dei berretti. Questo pezzo a occhia- le sul davanti dell'elmo aiuta a proteggere occhi e faccia e alcuni elmi hanno anche della cotta di maglia attaccata in fondo, per proteggere il collo.</p>",
+    "cost": 200,
+    "reliability": {
+      "value": 0,
+      "max": 0
     },
-    "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-    }
+    "sourcebook": "MB 81",
+    "type": "Light",
+    "location": "Head",
+    "encumb": 0,
+    "enhancements": 0,
+    "headStopping": 8,
+    "headMaxStopping": 8,
+    "torsoStopping": 0,
+    "torsoMaxStopping": 0,
+    "leftArmStopping": 0,
+    "leftArmMaxStopping": 0,
+    "rightArmStopping": 0,
+    "rightArmMaxStopping": 0,
+    "leftLegStopping": 0,
+    "leftLegMaxStopping": 0,
+    "rightLegStopping": 0,
+    "rightLegMaxStopping": 0,
+    "bludgeoning": false,
+    "slashing": false,
+    "piercing": false,
+    "elemental": false,
+    "fire": false,
+    "poison": false,
+    "bleeding": false,
+    "weight": 1,
+    "rarity": "Comune",
+    "stoppingPower": 8,
+    "protection": {},
+    "encumbranceMod": 0,
+    "unmodifiedMax": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

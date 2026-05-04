@@ -1,184 +1,184 @@
 {
-    "_id": "0d0ad6b62ee84666",
-    "name": "Nekker",
-    "type": "monster",
-    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/nekker.webp",
-    "system": {
-        "stats": {
-            "int": {
-                "value": 2,
-                "max": 2,
-                "unmodifiedMax": 2
-            },
-            "ref": {
-                "value": 5,
-                "max": 5,
-                "unmodifiedMax": 5
-            },
-            "dex": {
-                "value": 7,
-                "max": 7,
-                "unmodifiedMax": 7
-            },
-            "body": {
-                "value": 3,
-                "max": 3,
-                "unmodifiedMax": 3
-            },
-            "spd": {
-                "value": 6,
-                "max": 6,
-                "unmodifiedMax": 6
-            },
-            "emp": {
-                "value": 2,
-                "max": 2,
-                "unmodifiedMax": 2
-            },
-            "cra": {
-                "value": 2,
-                "max": 2,
-                "unmodifiedMax": 2
-            },
-            "will": {
-                "value": 4,
-                "max": 4,
-                "unmodifiedMax": 4
-            },
-            "luck": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
-            }
-        },
-        "skills": {
-            "accortezza": {
-                "value": 8
-            },
-            "atletica": {
-                "value": 7
-            },
-            "coraggio": {
-                "value": 6
-            },
-            "eludere": {
-                "value": 6
-            },
-            "mischia": {
-                "value": 5
-            },
-            "nascondersi": {
-                "value": 8
-            },
-            "rissa": {
-                "value": 5
-            },
-            "sopravvivenza": {
-                "value": 8
-            },
-            "tempra": {
-                "value": 6
-            }
-        },
-        "details": {
-            "biography": "<p>I nekker sono piccole bestie orribili. Eh, dicono che vivano sotto i ponti e attacchino i viaggiatori che si sono persi. Sono arnesi piccoli, orrendi e simili ai troll, che vanno a caccia in branco. – Rodolf Kazmer</p><p>Grotte o buche, i nekker si nascondono quasi ovunque. Recenti scoperte suggeriscono che siano decisamente più intelligenti di quanto si creda: agiscono in bande guidate da un capo e decorano le proprie caverne con dipinti primitivi.</p>",
-            "threat": "Media",
-            "reward": 100,
-            "monsterType": "Ogroid",
-            "difficulty": "MEDIUM"
-        },
-        "derivedStats": {
-            "vigor": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
-            },
-            "rec": {
-                "value": 3,
-                "max": 3,
-                "unmodifiedMax": 3
-            },
-            "resolve": {
-                "value": 15,
-                "max": 15,
-                "unmodifiedMax": 15
-            },
-            "stun": {
-                "value": 3,
-                "max": 3
-            },
-            "woundTreshold": {
-                "value": 3,
-                "max": 3
-            },
-            "hp": {
-                "value": 15,
-                "max": 15,
-                "unmodifiedMax": 15
-            },
-            "sta": {
-                "value": 15,
-                "max": 15,
-                "unmodifiedMax": 15
-            }
-        },
-        "description": "<p>I nekker sono piccole bestie orribili. Eh, dicono che vivano sotto i ponti e attacchino i viaggiatori che si sono persi. Sono arnesi piccoli, orrendi e simili ai troll, che vanno a caccia in branco. – Rodolf Kazmer</p><p>Grotte o buche, i nekker si nascondono quasi ovunque. Recenti scoperte suggeriscono che siano decisamente più intelligenti di quanto si creda: agiscono in bande guidate da un capo e decorano le proprie caverne con dipinti primitivi.</p>",
-        "sourcebook": "MB 303",
-        "monsterType": "Ogroid",
-        "difficulty": "MEDIUM",
-        "bounty": 100
+  "_id": "0d0ad6b62ee84666",
+  "name": "Nekker",
+  "type": "monster",
+  "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/nekker.webp",
+  "system": {
+    "stats": {
+      "int": {
+        "value": 2,
+        "max": 2,
+        "unmodifiedMax": 2
+      },
+      "ref": {
+        "value": 5,
+        "max": 5,
+        "unmodifiedMax": 5
+      },
+      "dex": {
+        "value": 7,
+        "max": 7,
+        "unmodifiedMax": 7
+      },
+      "body": {
+        "value": 3,
+        "max": 3,
+        "unmodifiedMax": 3
+      },
+      "spd": {
+        "value": 6,
+        "max": 6,
+        "unmodifiedMax": 6
+      },
+      "emp": {
+        "value": 2,
+        "max": 2,
+        "unmodifiedMax": 2
+      },
+      "cra": {
+        "value": 2,
+        "max": 2,
+        "unmodifiedMax": 2
+      },
+      "will": {
+        "value": 4,
+        "max": 4,
+        "unmodifiedMax": 4
+      },
+      "luck": {
+        "value": 0,
+        "max": 0,
+        "unmodifiedMax": 0
+      }
     },
-    "items": [
-        {
-            "_id": "243c05600cd24109",
-            "name": "Artigli",
-            "type": "weapon",
-            "img": "modules/witcher-compendium/assets/SPECIAL/Trait_Artigli.webp",
-            "system": {
-                "description": "",
-                "damage": "2d6",
-                "accuracy": 0,
-                "effects": ""
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "n1",
-            "name": "[Capacità] Capo",
-            "type": "note",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/Trait_Generico.webp",
-            "system": {
-                "description": "<p>Finché il capo è vivo tutti i membri ottengono +4 Coraggio.</p>"
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "n2",
-            "name": "[Capacità] Vista Notturna",
-            "type": "note",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/Trait_Generico.webp",
-            "system": {
-                "description": "<p>Può agire in zone di luce fioca senza penalità.</p>"
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        }
-    ],
-    "effects": [],
-    "ownership": {
-        "default": 0
+    "skills": {
+      "accortezza": {
+        "value": 8
+      },
+      "atletica": {
+        "value": 7
+      },
+      "coraggio": {
+        "value": 6
+      },
+      "eludere": {
+        "value": 6
+      },
+      "mischia": {
+        "value": 5
+      },
+      "nascondersi": {
+        "value": 8
+      },
+      "rissa": {
+        "value": 5
+      },
+      "sopravvivenza": {
+        "value": 8
+      },
+      "tempra": {
+        "value": 6
+      }
     },
-    "flags": {},
-    "_stats": {
+    "details": {
+      "biography": "<p>I nekker sono piccole bestie orribili. Eh, dicono che vivano sotto i ponti e attacchino i viaggiatori che si sono persi. Sono arnesi piccoli, orrendi e simili ai troll, che vanno a caccia in branco. – Rodolf Kazmer</p><p>Grotte o buche, i nekker si nascondono quasi ovunque. Recenti scoperte suggeriscono che siano decisamente più intelligenti di quanto si creda: agiscono in bande guidate da un capo e decorano le proprie caverne con dipinti primitivi.</p>",
+      "threat": "Media",
+      "reward": 100,
+      "monsterType": "Ogroid",
+      "difficulty": "MEDIUM"
+    },
+    "derivedStats": {
+      "vigor": {
+        "value": 0,
+        "max": 0,
+        "unmodifiedMax": 0
+      },
+      "rec": {
+        "value": 3,
+        "max": 3,
+        "unmodifiedMax": 3
+      },
+      "resolve": {
+        "value": 15,
+        "max": 15,
+        "unmodifiedMax": 15
+      },
+      "stun": {
+        "value": 3,
+        "max": 3
+      },
+      "woundTreshold": {
+        "value": 3,
+        "max": 3
+      },
+      "hp": {
+        "value": 15,
+        "max": 15,
+        "unmodifiedMax": 15
+      },
+      "sta": {
+        "value": 15,
+        "max": 15,
+        "unmodifiedMax": 15
+      }
+    },
+    "description": "<p>I nekker sono piccole bestie orribili. Eh, dicono che vivano sotto i ponti e attacchino i viaggiatori che si sono persi. Sono arnesi piccoli, orrendi e simili ai troll, che vanno a caccia in branco. – Rodolf Kazmer</p><p>Grotte o buche, i nekker si nascondono quasi ovunque. Recenti scoperte suggeriscono che siano decisamente più intelligenti di quanto si creda: agiscono in bande guidate da un capo e decorano le proprie caverne con dipinti primitivi.</p>",
+    "sourcebook": "MB 303",
+    "monsterType": "Ogroid",
+    "difficulty": "MEDIUM",
+    "bounty": 100
+  },
+  "items": [
+    {
+      "_id": "243c05600cd24109",
+      "name": "Artigli",
+      "type": "weapon",
+      "img": "modules/witcher-compendium/assets/SPECIAL/trait_artigli.webp",
+      "system": {
+        "description": "",
+        "damage": "2d6",
+        "accuracy": 0,
+        "effects": ""
+      },
+      "_stats": {
         "systemId": "TheWitcherItaNewSystem",
         "coreVersion": 14
+      }
+    },
+    {
+      "_id": "n1",
+      "name": "[Capacità] Capo",
+      "type": "note",
+      "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+      "system": {
+        "description": "<p>Finché il capo è vivo tutti i membri ottengono +4 Coraggio.</p>"
+      },
+      "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+      }
+    },
+    {
+      "_id": "n2",
+      "name": "[Capacità] Vista Notturna",
+      "type": "note",
+      "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+      "system": {
+        "description": "<p>Può agire in zone di luce fioca senza penalità.</p>"
+      },
+      "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+      }
     }
+  ],
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

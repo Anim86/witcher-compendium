@@ -1,19 +1,19 @@
 {
-    "_id": "b8b690f688a77656",
-    "name": "Spada d'acciaio da witcher",
-    "type": "weapon",
-    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-special/Spada_dacciaio_da_witcher.webp",
-    "system": {
-        "description": "<p>Ancor oggi, i witcher sono gli unici guerrieri che portano regolarmente spade d'acciaio meteoritico. Pref: 0, Danno: 4d6+2, Mani: 1, Affidabilità: 15, Effetti: Trapassare Meteorite.</p>\n<p><i>Tutto l'equipaggiamento presentato in questo capitolo è più che raro. Questi oggetti e formule dovrebbero essere le ricompense per missioni importanti o quando un personaggio li cerca appositamente.</i> — MB 246</p>\n<p><b>Rarità:</b> Molto Raro. Non vendibile (MB 246-250).</p>",
-        "weight": 2.5,
-        "cost": 506,
-        "quantity": 1,
-        "toxicity": "0%",
-        "duration": "N/A",
-        "sourcebook": "MB 247"
-    },
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-    }
+  "_id": "b8b690f688a77656",
+  "name": "Spada d'acciaio da witcher",
+  "type": "weapon",
+  "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-special/spada_dacciaio_da_witcher.webp",
+  "system": {
+    "description": "<p>Ancor oggi, i witcher sono gli unici guerrieri che portano regolarmente spade d'acciaio meteoritico. Pref: 0, Danno: 4d6+2, Mani: 1, Affidabilità: 15, Effetti: Trapassare Meteorite.</p>\n<p><i>Tutto l'equipaggiamento presentato in questo capitolo è più che raro. Questi oggetti e formule dovrebbero essere le ricompense per missioni importanti o quando un personaggio li cerca appositamente.</i> — MB 246</p>\n<p><b>Rarità:</b> Molto Raro. Non vendibile (MB 246-250).</p>",
+    "weight": 2.5,
+    "cost": 506,
+    "quantity": 1,
+    "toxicity": "0%",
+    "duration": "N/A",
+    "sourcebook": "MB 247"
+  },
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

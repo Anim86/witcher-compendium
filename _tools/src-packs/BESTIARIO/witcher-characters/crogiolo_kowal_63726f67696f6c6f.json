@@ -1,218 +1,218 @@
 {
-    "_id": "63726f67696f6c6f",
-    "name": "\"Crogiolo\" Kowal",
-    "type": "character",
-    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-characters/\"crogiolo\"_kowal.webp",
-    "system": {
-        "stats": {
-            "int": {
-                "value": 9,
-                "max": 9,
-                "unmodifiedMax": 9
-            },
-            "ref": {
-                "value": 10,
-                "max": 10,
-                "unmodifiedMax": 10
-            },
-            "dex": {
-                "value": 9,
-                "max": 9,
-                "unmodifiedMax": 9
-            },
-            "body": {
-                "value": 7,
-                "max": 7,
-                "unmodifiedMax": 7
-            },
-            "spd": {
-                "value": 7,
-                "max": 7,
-                "unmodifiedMax": 7
-            },
-            "emp": {
-                "value": 4,
-                "max": 4,
-                "unmodifiedMax": 4
-            },
-            "cra": {
-                "value": 9,
-                "max": 9,
-                "unmodifiedMax": 9
-            },
-            "will": {
-                "value": 9,
-                "max": 9,
-                "unmodifiedMax": 9
-            },
-            "luck": {
-                "value": 5,
-                "max": 5,
-                "unmodifiedMax": 5
-            }
-        },
-        "skills": {
-            "accortezza": {
-                "value": 15
-            },
-            "atletica": {
-                "value": 12
-            },
-            "balestra": {
-                "value": 18
-            },
-            "carisma": {
-                "value": 14
-            },
-            "coraggio": {
-                "value": 16
-            },
-            "eludere": {
-                "value": 15
-            },
-            "nascondersi": {
-                "value": 12
-            },
-            "persuasione": {
-                "value": 14
-            },
-            "resistereacoercizione": {
-                "value": 16
-            },
-            "rissa": {
-                "value": 14
-            },
-            "scherma": {
-                "value": 18
-            },
-            "seduzione": {
-                "value": 12
-            },
-            "tempra": {
-                "value": 14
-            }
-        },
-        "details": {
-            "biography": "<p>Kowal, soprannominato \"Crogiolo\", è un individuo pericoloso e risoluto incontrato a Maribor. È noto per la sua cocciutaggine e per la sua abilità con le armi da taglio e a distanza.</p>",
-            "threat": "Difficile",
-            "reward": "54 cr",
-            "difficulty": "HARD"
-        },
-        "derivedStats": {
-            "hp": {
-                "value": 40,
-                "max": 40,
-                "unmodifiedMax": 40
-            },
-            "sta": {
-                "value": 40,
-                "max": 40,
-                "unmodifiedMax": 40
-            },
-            "vigor": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
-            },
-            "rec": {
-                "value": 8,
-                "max": 8,
-                "unmodifiedMax": 8
-            },
-            "stun": {
-                "value": 8,
-                "max": 8,
-                "unmodifiedMax": 8
-            },
-            "resolve": {
-                "value": 40,
-                "max": 40,
-                "unmodifiedMax": 40
-            },
-            "woundTreshold": {
-                "value": 8,
-                "max": 8,
-                "unmodifiedMax": 8
-            }
-        },
-        "description": "<p>Kowal, soprannominato \"Crogiolo\", è un individuo pericoloso e risoluto incontrato a Maribor. È noto per la sua cocciutaggine e per la sua abilità con le armi da taglio e a distanza.</p>",
-        "sourcebook": "LR 83"
+  "_id": "63726f67696f6c6f",
+  "name": "\"Crogiolo\" Kowal",
+  "type": "character",
+  "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-characters/crogiolo_kowal.webp",
+  "system": {
+    "stats": {
+      "int": {
+        "value": 9,
+        "max": 9,
+        "unmodifiedMax": 9
+      },
+      "ref": {
+        "value": 10,
+        "max": 10,
+        "unmodifiedMax": 10
+      },
+      "dex": {
+        "value": 9,
+        "max": 9,
+        "unmodifiedMax": 9
+      },
+      "body": {
+        "value": 7,
+        "max": 7,
+        "unmodifiedMax": 7
+      },
+      "spd": {
+        "value": 7,
+        "max": 7,
+        "unmodifiedMax": 7
+      },
+      "emp": {
+        "value": 4,
+        "max": 4,
+        "unmodifiedMax": 4
+      },
+      "cra": {
+        "value": 9,
+        "max": 9,
+        "unmodifiedMax": 9
+      },
+      "will": {
+        "value": 9,
+        "max": 9,
+        "unmodifiedMax": 9
+      },
+      "luck": {
+        "value": 5,
+        "max": 5,
+        "unmodifiedMax": 5
+      }
     },
-    "items": [
-        {
-            "name": "Balestrino",
-            "type": "weapon",
-            "img": "icons/svg/sword.svg",
-            "system": {
-                "damage": "2d6+2",
-                "accuracy": 18,
-                "type": "P",
-                "effects": "Portata 50m, Ricarica Lenta, PA +1"
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "name": "Esboda",
-            "type": "weapon",
-            "img": "icons/svg/sword.svg",
-            "system": {
-                "damage": "5d6",
-                "accuracy": 18,
-                "type": "T",
-                "effects": "PA +1"
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "name": "Stiletto",
-            "type": "weapon",
-            "img": "icons/svg/sword.svg",
-            "system": {
-                "damage": "1d6",
-                "accuracy": 18,
-                "type": "P",
-                "effects": "Occultabile, PA +2"
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "name": "[Abilità] Affidabile",
-            "type": "note",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/Trait_Generico.webp",
-            "system": {
-                "description": "<p>+1 alle prove di Carisma, Seduzione e Persuasione verso altri umani.</p>"
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "name": "[Abilità] Cocciuto",
-            "type": "note",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/Trait_Generico.webp",
-            "system": {
-                "description": "<p>Per 3 volte a sessione, può tirare di nuovo le prove fallite di Resistere a Coercizione e Coraggio.</p>"
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        }
-    ],
-    "effects": [],
-    "flags": {},
-    "_stats": {
+    "skills": {
+      "accortezza": {
+        "value": 15
+      },
+      "atletica": {
+        "value": 12
+      },
+      "balestra": {
+        "value": 18
+      },
+      "carisma": {
+        "value": 14
+      },
+      "coraggio": {
+        "value": 16
+      },
+      "eludere": {
+        "value": 15
+      },
+      "nascondersi": {
+        "value": 12
+      },
+      "persuasione": {
+        "value": 14
+      },
+      "resistereacoercizione": {
+        "value": 16
+      },
+      "rissa": {
+        "value": 14
+      },
+      "scherma": {
+        "value": 18
+      },
+      "seduzione": {
+        "value": 12
+      },
+      "tempra": {
+        "value": 14
+      }
+    },
+    "details": {
+      "biography": "<p>Kowal, soprannominato \"Crogiolo\", è un individuo pericoloso e risoluto incontrato a Maribor. È noto per la sua cocciutaggine e per la sua abilità con le armi da taglio e a distanza.</p>",
+      "threat": "Difficile",
+      "reward": "54 cr",
+      "difficulty": "HARD"
+    },
+    "derivedStats": {
+      "hp": {
+        "value": 40,
+        "max": 40,
+        "unmodifiedMax": 40
+      },
+      "sta": {
+        "value": 40,
+        "max": 40,
+        "unmodifiedMax": 40
+      },
+      "vigor": {
+        "value": 0,
+        "max": 0,
+        "unmodifiedMax": 0
+      },
+      "rec": {
+        "value": 8,
+        "max": 8,
+        "unmodifiedMax": 8
+      },
+      "stun": {
+        "value": 8,
+        "max": 8,
+        "unmodifiedMax": 8
+      },
+      "resolve": {
+        "value": 40,
+        "max": 40,
+        "unmodifiedMax": 40
+      },
+      "woundTreshold": {
+        "value": 8,
+        "max": 8,
+        "unmodifiedMax": 8
+      }
+    },
+    "description": "<p>Kowal, soprannominato \"Crogiolo\", è un individuo pericoloso e risoluto incontrato a Maribor. È noto per la sua cocciutaggine e per la sua abilità con le armi da taglio e a distanza.</p>",
+    "sourcebook": "LR 83"
+  },
+  "items": [
+    {
+      "name": "Balestrino",
+      "type": "weapon",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "damage": "2d6+2",
+        "accuracy": 18,
+        "type": "P",
+        "effects": "Portata 50m, Ricarica Lenta, PA +1"
+      },
+      "_stats": {
         "systemId": "TheWitcherItaNewSystem",
         "coreVersion": 14
+      }
+    },
+    {
+      "name": "Esboda",
+      "type": "weapon",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "damage": "5d6",
+        "accuracy": 18,
+        "type": "T",
+        "effects": "PA +1"
+      },
+      "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+      }
+    },
+    {
+      "name": "Stiletto",
+      "type": "weapon",
+      "img": "icons/svg/sword.svg",
+      "system": {
+        "damage": "1d6",
+        "accuracy": 18,
+        "type": "P",
+        "effects": "Occultabile, PA +2"
+      },
+      "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+      }
+    },
+    {
+      "name": "[Abilità] Affidabile",
+      "type": "note",
+      "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+      "system": {
+        "description": "<p>+1 alle prove di Carisma, Seduzione e Persuasione verso altri umani.</p>"
+      },
+      "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+      }
+    },
+    {
+      "name": "[Abilità] Cocciuto",
+      "type": "note",
+      "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+      "system": {
+        "description": "<p>Per 3 volte a sessione, può tirare di nuovo le prove fallite di Resistere a Coercizione e Coraggio.</p>"
+      },
+      "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+      }
     }
+  ],
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

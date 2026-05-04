@@ -1,192 +1,192 @@
 {
-    "_id": "74369e6bcb144839",
-    "name": "Casglydd",
-    "type": "monster",
-    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/casglydd.webp",
-    "system": {
-        "stats": {
-            "int": {
-                "value": 10,
-                "max": 10,
-                "unmodifiedMax": 10
-            },
-            "ref": {
-                "value": 9,
-                "max": 9,
-                "unmodifiedMax": 9
-            },
-            "dex": {
-                "value": 6,
-                "max": 6,
-                "unmodifiedMax": 6
-            },
-            "body": {
-                "value": 5,
-                "max": 5,
-                "unmodifiedMax": 5
-            },
-            "spd": {
-                "value": 6,
-                "max": 6,
-                "unmodifiedMax": 6
-            },
-            "emp": {
-                "value": 4,
-                "max": 4,
-                "unmodifiedMax": 4
-            },
-            "cra": {
-                "value": 8,
-                "max": 8,
-                "unmodifiedMax": 8
-            },
-            "will": {
-                "value": 12,
-                "max": 12,
-                "unmodifiedMax": 12
-            },
-            "luck": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
-            }
-        },
-        "skills": {
-            "accortezza": {
-                "value": 19
-            },
-            "atletica": {
-                "value": 12
-            },
-            "intimidire": {
-                "value": 14
-            },
-            "lanciareIncantesimi": {
-                "value": 20
-            },
-            "nascondersi": {
-                "value": 16
-            },
-            "persuasione": {
-                "value": 12
-            },
-            "prestanza": {
-                "value": 15
-            },
-            "resistereacoercizioni": {
-                "value": 18
-            },
-            "resistereallamagia": {
-                "value": 22
-            },
-            "rissa": {
-                "value": 18
-            },
-            "sopravvivenza": {
-                "value": 17
-            },
-            "tempra": {
-                "value": 14
-            }
-        },
-        "details": {
-            "biography": "<p>La gente farebbe di tutto per l'informazione giusta. Eh, fidati, il vecchio Rodolf lo ha imparato molto tempo fa. – Rodolf Kazmer</p><p>I casglydd sono demoni della conoscenza che vivono tra le ombre, usandole come portali. Scompaiono per poi rapire le loro vittime, trascinandole in un regno d'oscurità dove ne risucchiano l'intelletto e i ricordi. Chi fa un patto con loro deve stare attento: diventeranno ossessionati e torneranno con offerte sempre più oscure.</p>",
-            "threat": "Arduo",
-            "reward": 1500,
-            "monsterType": "Relict",
-            "difficulty": "HARD"
-        },
-        "derivedStats": {
-            "vigor": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
-            },
-            "rec": {
-                "value": 8,
-                "max": 8,
-                "unmodifiedMax": 8
-            },
-            "resolve": {
-                "value": 80,
-                "max": 80,
-                "unmodifiedMax": 80
-            },
-            "stun": {
-                "value": 8,
-                "max": 8,
-                "unmodifiedMax": 8
-            },
-            "woundTreshold": {
-                "value": 8,
-                "max": 8,
-                "unmodifiedMax": 8
-            },
-            "hp": {
-                "value": 80,
-                "max": 80,
-                "unmodifiedMax": 80
-            },
-            "sta": {
-                "value": 40,
-                "max": 40,
-                "unmodifiedMax": 40
-            }
-        },
-        "description": "<p>La gente farebbe di tutto per l'informazione giusta. Eh, fidati, il vecchio Rodolf lo ha imparato molto tempo fa. – Rodolf Kazmer</p><p>I casglydd sono demoni della conoscenza che vivono tra le ombre, usandole come portali. Scompaiono per poi rapire le loro vittime, trascinandole in un regno d'oscurità dove ne risucchiano l'intelletto e i ricordi. Chi fa un patto con loro deve stare attento: diventeranno ossessionati e torneranno con offerte sempre più oscure.</p>",
-        "sourcebook": "TC 202",
-        "monsterType": "Relict",
-        "difficulty": "HARD",
-        "bounty": 1500
+  "_id": "74369e6bcb144839",
+  "name": "Casglydd",
+  "type": "monster",
+  "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/casglydd.webp",
+  "system": {
+    "stats": {
+      "int": {
+        "value": 10,
+        "max": 10,
+        "unmodifiedMax": 10
+      },
+      "ref": {
+        "value": 9,
+        "max": 9,
+        "unmodifiedMax": 9
+      },
+      "dex": {
+        "value": 6,
+        "max": 6,
+        "unmodifiedMax": 6
+      },
+      "body": {
+        "value": 5,
+        "max": 5,
+        "unmodifiedMax": 5
+      },
+      "spd": {
+        "value": 6,
+        "max": 6,
+        "unmodifiedMax": 6
+      },
+      "emp": {
+        "value": 4,
+        "max": 4,
+        "unmodifiedMax": 4
+      },
+      "cra": {
+        "value": 8,
+        "max": 8,
+        "unmodifiedMax": 8
+      },
+      "will": {
+        "value": 12,
+        "max": 12,
+        "unmodifiedMax": 12
+      },
+      "luck": {
+        "value": 0,
+        "max": 0,
+        "unmodifiedMax": 0
+      }
     },
-    "items": [
-        {
-            "_id": "c1",
-            "name": "Artigli",
-            "type": "weapon",
-            "img": "modules/witcher-compendium/assets/SPECIAL/Trait_Artigli.webp",
-            "system": {
-                "description": "",
-                "damage": "1d6",
-                "accuracy": 0,
-                "effects": "Portata, Trascinare nell'Ombra"
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "c2",
-            "name": "[Capacità] Movimento nell'Ombra",
-            "type": "note",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/Trait_Generico.webp",
-            "system": {
-                "description": "<p>Teletrasporto tra zone di oscurità entro 20m come Azione di Movimento.</p>"
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "c3",
-            "name": "[Capacità] Pozzo di Conoscenza",
-            "type": "note",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/Trait_Generico.webp",
-            "system": {
-                "description": "<p>Base 20 in tutte le prove per apprendere, ricordare o insegnare informazioni.</p>"
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        }
-    ],
-    "effects": [],
-    "flags": {},
-    "_stats": {
+    "skills": {
+      "accortezza": {
+        "value": 19
+      },
+      "atletica": {
+        "value": 12
+      },
+      "intimidire": {
+        "value": 14
+      },
+      "lanciareIncantesimi": {
+        "value": 20
+      },
+      "nascondersi": {
+        "value": 16
+      },
+      "persuasione": {
+        "value": 12
+      },
+      "prestanza": {
+        "value": 15
+      },
+      "resistereacoercizioni": {
+        "value": 18
+      },
+      "resistereallamagia": {
+        "value": 22
+      },
+      "rissa": {
+        "value": 18
+      },
+      "sopravvivenza": {
+        "value": 17
+      },
+      "tempra": {
+        "value": 14
+      }
+    },
+    "details": {
+      "biography": "<p>La gente farebbe di tutto per l'informazione giusta. Eh, fidati, il vecchio Rodolf lo ha imparato molto tempo fa. – Rodolf Kazmer</p><p>I casglydd sono demoni della conoscenza che vivono tra le ombre, usandole come portali. Scompaiono per poi rapire le loro vittime, trascinandole in un regno d'oscurità dove ne risucchiano l'intelletto e i ricordi. Chi fa un patto con loro deve stare attento: diventeranno ossessionati e torneranno con offerte sempre più oscure.</p>",
+      "threat": "Arduo",
+      "reward": 1500,
+      "monsterType": "Relict",
+      "difficulty": "HARD"
+    },
+    "derivedStats": {
+      "vigor": {
+        "value": 0,
+        "max": 0,
+        "unmodifiedMax": 0
+      },
+      "rec": {
+        "value": 8,
+        "max": 8,
+        "unmodifiedMax": 8
+      },
+      "resolve": {
+        "value": 80,
+        "max": 80,
+        "unmodifiedMax": 80
+      },
+      "stun": {
+        "value": 8,
+        "max": 8,
+        "unmodifiedMax": 8
+      },
+      "woundTreshold": {
+        "value": 8,
+        "max": 8,
+        "unmodifiedMax": 8
+      },
+      "hp": {
+        "value": 80,
+        "max": 80,
+        "unmodifiedMax": 80
+      },
+      "sta": {
+        "value": 40,
+        "max": 40,
+        "unmodifiedMax": 40
+      }
+    },
+    "description": "<p>La gente farebbe di tutto per l'informazione giusta. Eh, fidati, il vecchio Rodolf lo ha imparato molto tempo fa. – Rodolf Kazmer</p><p>I casglydd sono demoni della conoscenza che vivono tra le ombre, usandole come portali. Scompaiono per poi rapire le loro vittime, trascinandole in un regno d'oscurità dove ne risucchiano l'intelletto e i ricordi. Chi fa un patto con loro deve stare attento: diventeranno ossessionati e torneranno con offerte sempre più oscure.</p>",
+    "sourcebook": "TC 202",
+    "monsterType": "Relict",
+    "difficulty": "HARD",
+    "bounty": 1500
+  },
+  "items": [
+    {
+      "_id": "c1",
+      "name": "Artigli",
+      "type": "weapon",
+      "img": "modules/witcher-compendium/assets/SPECIAL/trait_artigli.webp",
+      "system": {
+        "description": "",
+        "damage": "1d6",
+        "accuracy": 0,
+        "effects": "Portata, Trascinare nell'Ombra"
+      },
+      "_stats": {
         "systemId": "TheWitcherItaNewSystem",
         "coreVersion": 14
+      }
+    },
+    {
+      "_id": "c2",
+      "name": "[Capacità] Movimento nell'Ombra",
+      "type": "note",
+      "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+      "system": {
+        "description": "<p>Teletrasporto tra zone di oscurità entro 20m come Azione di Movimento.</p>"
+      },
+      "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+      }
+    },
+    {
+      "_id": "c3",
+      "name": "[Capacità] Pozzo di Conoscenza",
+      "type": "note",
+      "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+      "system": {
+        "description": "<p>Base 20 in tutte le prove per apprendere, ricordare o insegnare informazioni.</p>"
+      },
+      "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+      }
     }
+  ],
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

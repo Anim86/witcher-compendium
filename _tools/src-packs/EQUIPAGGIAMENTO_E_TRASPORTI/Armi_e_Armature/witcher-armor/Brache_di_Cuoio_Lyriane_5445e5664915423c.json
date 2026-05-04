@@ -1,55 +1,55 @@
 {
-    "_id": "5445e5664915423c",
-    "name": "Brache di Cuoio Lyriane",
-    "type": "armor",
-    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-armor/Brache_di_Cuoio_Lyriane.webp",
-    "system": {
-        "description": "<p>Cuoio lyriano lavorato per farne brache. Roba ruvida e che non fa traspirare granché, ma eccome se ti tiene al sicuro le gambe. Non si può proprio dire che non attirino l'attenzione.</p>",
-        "cost": 525,
-        "reliability": {
-            "value": 0,
-            "max": 0
-        },
-        "sourcebook": "MB 82",
-        "type": "Medium",
-        "location": "Leg",
-        "encumb": 0,
-        "enhancements": 1,
-        "headStopping": 0,
-        "headMaxStopping": 0,
-        "torsoStopping": 0,
-        "torsoMaxStopping": 0,
-        "leftArmStopping": 0,
-        "leftArmMaxStopping": 0,
-        "rightArmStopping": 0,
-        "rightArmMaxStopping": 0,
-        "leftLegStopping": 16,
-        "leftLegMaxStopping": 16,
-        "rightLegStopping": 16,
-        "rightLegMaxStopping": 16,
-        "bludgeoning": false,
-        "slashing": false,
-        "piercing": false,
-        "elemental": false,
-        "fire": false,
-        "poison": false,
-        "bleeding": false,
-        "weight": 3.5,
-        "rarity": "Rara",
-        "stoppingPower": 16,
-        "protection": {},
-        "encumbranceMod": 0,
-        "unmodifiedMax": {}
+  "_id": "5445e5664915423c",
+  "name": "Brache di Cuoio Lyriane",
+  "type": "armor",
+  "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-armor/brache_di_cuoio_lyriane.webp",
+  "system": {
+    "description": "<p>Cuoio lyriano lavorato per farne brache. Roba ruvida e che non fa traspirare granché, ma eccome se ti tiene al sicuro le gambe. Non si può proprio dire che non attirino l'attenzione.</p>",
+    "cost": 525,
+    "reliability": {
+      "value": 0,
+      "max": 0
     },
-    "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-    }
+    "sourcebook": "MB 82",
+    "type": "Medium",
+    "location": "Leg",
+    "encumb": 0,
+    "enhancements": 1,
+    "headStopping": 0,
+    "headMaxStopping": 0,
+    "torsoStopping": 0,
+    "torsoMaxStopping": 0,
+    "leftArmStopping": 0,
+    "leftArmMaxStopping": 0,
+    "rightArmStopping": 0,
+    "rightArmMaxStopping": 0,
+    "leftLegStopping": 16,
+    "leftLegMaxStopping": 16,
+    "rightLegStopping": 16,
+    "rightLegMaxStopping": 16,
+    "bludgeoning": false,
+    "slashing": false,
+    "piercing": false,
+    "elemental": false,
+    "fire": false,
+    "poison": false,
+    "bleeding": false,
+    "weight": 3.5,
+    "rarity": "Rara",
+    "stoppingPower": 16,
+    "protection": {},
+    "encumbranceMod": 0,
+    "unmodifiedMax": {}
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

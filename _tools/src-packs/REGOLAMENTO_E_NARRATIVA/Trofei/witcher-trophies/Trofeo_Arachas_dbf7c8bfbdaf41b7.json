@@ -1,23 +1,23 @@
 {
-    "_id": "dbf7c8bfbdaf41b7",
-    "name": "Trofeo: Arachas",
-    "type": "valuable",
-    "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/Trofeo_Arachas.webp",
-    "system": {
-        "description": "<p>Il personaggio è immune ai veleni.</p>",
-        "weight": 0,
-        "cost": 0,
-        "sourcebook": "TC p.126"
-    },
-    "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-    }
+  "_id": "dbf7c8bfbdaf41b7",
+  "name": "Trofeo: Arachas",
+  "type": "valuable",
+  "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/trofeo_arachas.webp",
+  "system": {
+    "description": "<p>Il personaggio è immune ai veleni.</p>",
+    "weight": 0,
+    "cost": 0,
+    "sourcebook": "TC p.126"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }
