@@ -1,37 +1,44 @@
-# Session Handover - Witcher Compendium Icon Generation
+# Session Handover - Witcher Compendium Maintenance
 
-**Data/Ora:** 05/05/2026 - 22:55
-**Stato Generale:** Batch 43 COMPLETATA | Batch 44 IN CORSO (14/20)
+**Data/Ora:** 05/05/2026 - 23:55
+**Stato Generale:** Asset Ottimizzati (512px) | Repository Sincronizzato | Pronto per Migrazione UI
 
 ## Obiettivo Corrente
-Completare la generazione massiva del **Batch 44** e procedere con i successivi (45-60).
+Mantenere l'integrità dell'architettura a "3 Colonne" e proseguire con il restyling delle schede in **ApplicationV2 (Foundry V14)**.
 
 ## Stato Repository
-- **Batch 43:** COMPLETATA (20/20). Tutte le armature (Manticora, Orso, Vipera) e gli oggetti magici sono stati deployati.
-- **Batch 44:** In corso (14/20). Asset relativi a trasporti (carri), personaggi (Broderick) e attrezzatura generica già deployati.
-- **Ambiente:** Script di manutenzione (`convert_batch_20.js` e `global_icon_audit.js`) corretti e funzionanti nel workspace locale (rimossi percorsi hardcoded `E:`).
-- **Standard Qualità:** Mantenuto il "Digital Painting on Stone Slab" con inquadratura top-down e ritratti pittorici per i personaggi.
+- **Asset Optimization:** Completata. Tutti i file in `assets/` sono ora `.webp`, `snake_case` e hanno una risoluzione **MAX 512px** (Risparmiati >240MB).
+- **Cleanup:** La cartella `temp_images` è stata svuotata. Tutti i sorgenti validi sono stati processati e spostati in `assets/`.
+- **Database (JSON):** 932 file in `_tools/src-packs/` aggiornati con i nuovi path e nomi file normalizzati.
+- **Compilazione:** Tutti i pacchetti in `witcher-compendium/packs/` sono stati ricompilati e allineati ai sorgenti.
 
-## Punto di Ripresa (Action Required)
-1. **Completamento Batch 44:** Generare gli ultimi 6 item in `scratch/prompts_batch_44.html` (Quota API permettendo):
-   - Compartimento Segreto
-   - Coppia di Puntelli
-   - Corno da Segnalazione
-   - Cote Nanica
-   - Elias von Drexel (Ritratto)
-   - Fischietto da Segnalazione
-2. **Deployment:** Eseguire `node _tools/scripts/convert_batch_20.js` per sincronizzare i nuovi asset.
-3. **Audit:** Eseguire `node scratch/global_icon_audit.js` per verificare la copertura totale.
+## Standard Tecnici (Mandatori)
+### 1. Asset Grafici
+- **Formato:** WebP (lossy, quality 80).
+- **Risoluzione:** Max **512x512px**.
+- **Naming:** `snake_case` (es. `spada_acciaio_militare.webp`).
+- **Path:** Sempre `modules/witcher-compendium/assets/[CATEGORIA]/...`.
 
-## Progressi Batch
-- **Batch 34-43:** Completati e deployati.
-- **Batch 44:** 14/20 completati.
-- **Batch 45-60:** Prompt pronti in `scratch/`.
+### 2. Architettura 3 Colonne
+Ogni modifica deve essere sincronizzata tra:
+1.  **_tools/src-packs/**: Fonte di verità (JSON).
+2.  **witcher-compendium/assets/**: Risorse grafiche ottimizzate.
+3.  **witcher-compendium/packs/**: Database binari compilati (LevelDB).
 
-## Note Tecniche
-- **Quota API:** Esaurita durante la generazione della Batch 44. **Prossimo reset atteso per le 01:40 (UTC+2) circa.**
-- **Deployment Script:** Utilizzare sempre `convert_batch_20.js` che gestisce automaticamente la mappatura verso le cartelle DLC e base.
+### 3. Sviluppo UI (ApplicationV2)
+- **CSS Selectors:** Seguire la `_tools/DocumentoLavoro/foundry-v14-css-selectors-guide.md`.
+- **Nota Critica:** Usare selettori basati sulle classi reali del DOM (es. `.monster-v2` anche per i personaggi se Foundry concatena così le classi).
+- **Parts:** Usare `[data-application-part="..."]` per lo styling dei componenti.
 
-## Script Utili
-- `node _tools/scripts/convert_batch_20.js`: Deployment WebP automatizzato.
-- `node scratch/global_icon_audit.js`: Audit di coerenza asset/referenze.
+## Action Required per la Prossima Sessione
+1. **Audit Asset Futuri:** Se vengono generati nuovi asset, passare sempre attraverso lo script di ridimensionamento a 512px.
+2. **Restyling Monster Sheet:** Verificare il rendering delle immagini dei mostri (risoluzione 512px ora disponibile).
+3. **Sincronizzazione Git:** Effettuare regolarmente `pull --rebase` e `push` per mantenere il workspace pulito.
+
+## Script di Riferimento
+- `node _tools/scripts/core/compile_packs.mjs`: Compilazione LevelDB.
+- `node _tools/scripts/core/align_assets_json.mjs`: Riallineamento path immagini.
+- `_tools/scratch/deep_optimize_images.py`: (Logica da integrare) Ridimensionamento a 512px.
+
+---
+*Documento aggiornato per allineamento Foundry v14.361*

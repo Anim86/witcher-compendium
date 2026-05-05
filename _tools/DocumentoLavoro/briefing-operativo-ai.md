@@ -53,15 +53,24 @@ Ci sono due strategie alternative per la gestione degli asset, a seconda della d
 
 *   **Opzione 1 (Primaria): Generazione Immagini AI**
     1.  Se manca un'icona tematica e la quota AI lo consente, usare il tool `generate_image`.
-    2.  Salvare l'immagine generata (rinominata con logica snake_case) direttamente in `witcher-compendium/assets/[CATEGORIA]/`.
+    2.  Salvare l'immagine generata (rinominata con logica snake_case) e **ottimizzarla sempre a 512px** prima di muoverla in `witcher-compendium/assets/[CATEGORIA]/`.
     
 *   **Opzione 2 (Fallback): Upload Manuale tramite `temp_images/`**
     1.  *Quando usarlo:* Se la quota AI è esaurita o si possiedono asset ufficiali/estratti da PDF.
-    2.  L'operatore umano carica i file grezzi in `temp_images/` (anche mantenendo i tag sporchi del PDF).
-    3.  L'AI esegue il batch: `python _tools/scripts/utils/process_new_images.py`.
-    4.  Lo script si occupa di rinominare, ottimizzare in WebP, posizionare nella corretta cartella (es. `GEOGRAFIA` o `PNG`) e aggiornare i JSON.
+    2.  L'operatore umano carica i file grezzi in `temp_images/`.
+    3.  L'AI esegue il batch di ottimizzazione: **WebP conversion + 512px resizing**.
+    4.  Posizionamento finale nella corretta cartella di `assets/` e aggiornamento dei JSON.
+
+### 🖼️ Specifiche Tecniche Asset
+| Parametro | Standard |
+| :--- | :--- |
+| **Formato** | WebP (Lossy) |
+| **Risoluzione** | **Max 512x512px** (obbligatorio per performance) |
+| **Qualità** | 80% |
+| **Naming** | `snake_case` rigoroso, no caratteri speciali o parentesi |
 
 **Naming Convention Naturale**: Il nome del file finale deve corrispondere approssimativamente al nome del file JSON (tutto minuscolo, spazi sostituiti da `_`).
+
 *Esempio*: Item `Spada d'Argento` -> Asset `spada_d_argento.webp`.
 
 ### Fase C: Sincronizzazione & Normalizzazione
@@ -133,19 +142,12 @@ _tools/src-packs/
 │   ├── _review_orphans
 │   ├── Armi_e_Armature
 │   │   ├── witcher-armor
-│   │   ├── witcher-dlc-ap-equipment
-│   │   ├── witcher-dlc-sl-equipment
-│   │   ├── witcher-dlc-sr-equipment
-│   │   ├── witcher-dlc-sw-equipment
-│   │   ├── witcher-dlc-ts-equipment
 │   │   ├── witcher-weapons
 │   │   └── witcher-weapons-racconti
 │   ├── Attrezzatura_e_Oggetti
 │   │   ├── witcher-equipment
 │   │   ├── witcher-special
 │   │   └── witcher-special-chaos
-│   ├── Protesi
-│   │   └── witcher-dlc-dp-equipment
 │   ├── Reliquie_e_Artefatti
 │   │   └── witcher-magic-items
 │   └── Trasporti
@@ -160,7 +162,8 @@ _tools/src-packs/
 │   │   ├── witcher-rituals-chaos
 │   │   ├── witcher-runes
 │   │   ├── witcher-spells
-│   │   └── witcher-spells-chaos
+│   │   ├── witcher-spells-chaos
+│   │   └── witcher-spells-racconti
 │   ├── Maledizioni_e_Fatture
 │   │   ├── witcher-curses
 │   │   ├── witcher-hexes
@@ -191,10 +194,9 @@ _tools/src-packs/
 │       └── witcher-trophies
 └── TABELLEOPERATIVE
     ├── CriticieCombattimento
-    ├── DisastriMagici
-    └── StrumentiGM
+    └── DisastriMagici
 ```
-*Ultimo aggiornamento automatico: 29 aprile 2026*
+*Ultimo aggiornamento automatico: 5 maggio 2026*
 <!-- FOLDER_STRUCTURE_END -->
 
 ## 📜 6. ARCHIVIO STORICO
@@ -203,4 +205,4 @@ Se hai bisogno di capire come sono stati estratti i dati originariamente, consul
 -   `_tools/scripts/archive/legacy/audits/`: Logiche di validazione storica.
 
 ---
-*Mantenere questo documento aggiornato è parte integrante del task di manutenzione.*
+*Ultimo aggiornamento guida: 5 Maggio 2026 (allineamento standard 512px e build 14.361)*
