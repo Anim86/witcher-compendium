@@ -1,34 +1,33 @@
 # Session Handover - Witcher Compendium Icon Remediation
 
-**Data/Ora:** 29/04/2026 - 14:10
-**Stato Generale:** Batch 34 COMPLETATO | Batch 35 COMPLETATO | RollTables implementate | Nuovi Prompt pronti
+**Data/Ora:** 05/05/2026 - 11:52
+**Stato Generale:** Batch 42 COMPLETATO | Remediation Batch 36 IN ATTESA | Quota API in reset
 
 ## Obiettivo Corrente
-Continuare la generazione manuale e il deployment delle icone mancanti per i pack `witcher-weapons`, `witcher-spells` ed `witcher-equipment` seguendo i file HTML predisposti.
+Completare la **Remediation del Batch 36** (20 armi/munizioni con prompt corretti da NotebookLM) per risolvere le ambiguità e lo stile generico delle vecchie generazioni, prima di procedere con il **Batch 43**.
 
 ## Stato Repository
-- **Commit & Push:** EFFETTUATO. Tutti gli asset generati e le correzioni ai JSON sono su GitHub (branch `main`).
-- **Audit Globale:** Rieseguito. Icone mancanti totali: **695** (da oltre 1200). 
-- **Placeholders:** Eliminati tutti i placeholder SVG/Mystery Man dai JSON; ora tutti i percorsi sono definitivi.
+- **Batch 42:** COMPLETATO e DEPLOYATO. Include ritratti di Voren e Zoltan e armi delle scuole (Gatto, Grifone).
+- **Batch 36 Remediation:** Identificato come "punto critico" a causa di prompt troppo generici (es. Scorpione). Creato file HTML dedicato con i prompt definitivi.
+- **Sanitizzazione:** Pienamente operativa. Tutti i nuovi file seguono lo standard clean (lowercase, no special chars).
+- **Database:** Allineato. I percorsi immagini nei JSON puntano correttamente ai nomi sanitizzati.
 
 ## Punto di Ripresa (Action Required)
-1. **Continuare la Generazione:** Generare le immagini usando i file di prompt già preparati (`prompts_batch_36_weapons.html`, `prompts_batch_37_spells.html`, `prompts_batch_38_equipment.html`).
-2. **Deployment:** Avviare `node _tools/scripts/convert_batch_20.js` ogni volta che vengono aggiunte nuove icone in `temp_images/`.
-3. **Commit & Push:** Ricordarsi di fare commit regolarmente dei nuovi `.webp` e dei file aggiornati.
+1. **Remediation Batch 36:** Generare i 20 oggetti usando `scratch/prompts_batch_36_remediation.html`.
+2. **Generazione Batch 43:** Proseguire con `scratch/prompts_batch_43.html` (Alchimia e Lore).
+3. **Deployment:** Eseguire `node _tools/scripts/convert_batch_20.js` dopo ogni sessione di generazione.
 
-## Progressi per Pack
-- **Batch 34 (Equipment/Special):** 15/15 completati.
-- **Batch 35 (Weapons P1):** 20/20 completati.
-- **Batch 36 (Weapons P2):** 0/20 (Prompt pronti in `scratch/prompts_batch_36_weapons.html`).
-- **Batch 37 (Spells P1):** 0/20 (Prompt pronti in `scratch/prompts_batch_37_spells.html`).
-- **Batch 38 (Equipment P2):** 0/20 (Prompt pronti in `scratch/prompts_batch_38_equipment.html`).
+## Progressi Batch
+- **Batch 34-35:** Completati e deployati (Prompt semplici/manuali).
+- **Batch 36:** In attesa di rifacimento (Remediation).
+- **Batch 37-41:** Completati e deployati (Prompt NotebookLM).
+- **Batch 42:** Completato (Prompt NotebookLM).
+- **Batch 43-60:** Prompt pronti e sanitizzati in `scratch/`.
 
 ## Note Tecniche
-- **Encoding:** Tutti i problemi relativi a caratteri accentati (es. "Qualità") sono stati risolti sia nei nomi item che nei path immagine.
-- **Sincronizzazione:** `work_list.json` è perfettamente allineata ai pack sorgente.
-- **Quota:** Attualmente esaurita per la generazione immagini.
+- **Quota API:** Esaurita stamattina. **Reset atteso per le 12:45 circa.**
+- **Asset "Scorpione":** Riconfigurato come componente di ballista d'assedio (Scorpion ballista) per evitare collisioni con l'arma leggera o varianti di mostri.
 
 ## Script Utili
-- `node scratch/global_icon_audit.js`: Audit icone mancanti.
-- `node _tools/scripts/convert_batch_20.js`: Deployment WebP.
-- `node scratch/generate_weapon_prompts.js`: Rigenera i prompt per le armi se necessario.
+- `node _tools/scripts/convert_batch_20.js`: Deployment WebP (rileva automaticamente tutte le sottocartelle in `temp_images`).
+- `node scratch/global_icon_audit.js`: Audit per verificare lo stato delle icone nel compendio.

@@ -29,6 +29,7 @@ for (const packName in workList) {
 
 // 2. Add items from missing report (if not already present)
 missingReport.forEach(m => {
+    if (!m.expected) return; // Skip if no expected path
     const filename = path.basename(m.expected);
     const imgPath = m.expected.replace('modules/witcher-compendium/', '');
     
@@ -43,23 +44,8 @@ missingReport.forEach(m => {
     }
 });
 
-// Folders in temp_images to check
-const sourceFolders = [
-    'witcher-components',
-    'witcher-components-diario',
-    'witcher-components-mutageni-dw',
-    'witcher-dlc-ms-components',
-    'witcher-mutations',
-    'witcher-mutazioni-tc',
-    'witcher-schematics',
-    'witcher-weapons',
-    'witcher-dlc-sw-schematics',
-    'witcher-dlc-ts-schematics',
-    'witcher-equipment',
-    'witcher-special',
-    'witcher-special-chaos',
-    'witcher-trophies'
-];
+// Dynamically detect folders in temp_images
+const sourceFolders = fs.readdirSync(TEMP_BASE).filter(f => fs.statSync(path.join(TEMP_BASE, f)).isDirectory());
 
 async function processImages() {
     console.log('Starting Batch 20 conversion & deployment...');
