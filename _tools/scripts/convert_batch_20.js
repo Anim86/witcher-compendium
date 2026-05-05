@@ -2,7 +2,7 @@ const sharp = require('sharp');
 const fs = require('fs');
 const path = require('path');
 
-const ROOT = 'e:\\AntigravitiProgetti\\CompendioTheWitcher';
+const ROOT = path.resolve(__dirname, '..', '..');
 const TEMP_BASE = path.join(ROOT, 'temp_images');
 const ASSETS_BASE = path.join(ROOT, 'witcher-compendium', 'assets');
 const WORK_LIST_PATH = path.join(ROOT, 'scratch', 'work_list.json');

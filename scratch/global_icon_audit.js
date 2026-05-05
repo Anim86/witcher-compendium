@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const ROOT = 'e:\\AntigravitiProgetti\\CompendioTheWitcher';
+const ROOT = path.resolve(__dirname, '..');
 const SRC_PACKS = path.join(ROOT, '_tools', 'src-packs');
 const ASSETS_BASE = path.join(ROOT, 'witcher-compendium', 'assets');
 const TEMP_BASE = path.join(ROOT, 'temp_images');
