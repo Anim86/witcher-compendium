@@ -1,189 +1,189 @@
 {
-  "_id": "428856c3bd17449e",
-  "name": "Grande Orso",
-  "type": "monster",
-  "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-animals/grande_orso.webp",
-  "system": {
-    "stats": {
-      "int": {
-        "value": 1,
-        "max": 1,
-        "unmodifiedMax": 1
-      },
-      "ref": {
-        "value": 7,
-        "max": 7,
-        "unmodifiedMax": 7
-      },
-      "dex": {
-        "value": 6,
-        "max": 6,
-        "unmodifiedMax": 6
-      },
-      "body": {
-        "value": 12,
-        "max": 12,
-        "unmodifiedMax": 12
-      },
-      "spd": {
-        "value": 7,
-        "max": 7,
-        "unmodifiedMax": 7
-      },
-      "emp": {
-        "value": 1,
-        "max": 1,
-        "unmodifiedMax": 1
-      },
-      "cra": {
-        "value": 1,
-        "max": 1,
-        "unmodifiedMax": 1
-      },
-      "will": {
-        "value": 5,
-        "max": 5,
-        "unmodifiedMax": 5
-      },
-      "luck": {
-        "value": 0,
-        "max": 0,
-        "unmodifiedMax": 0
-      }
+    "_id": "428856c3bd17449e",
+    "name": "Grande Orso",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-animals/grande_orso.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "ref": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "dex": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "body": {
+                "value": 12,
+                "max": 12,
+                "unmodifiedMax": 12
+            },
+            "spd": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "emp": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "cra": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "will": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 10
+            },
+            "atletica": {
+                "value": 10
+            },
+            "coraggio": {
+                "value": 14
+            },
+            "intimidire": {
+                "value": 14
+            },
+            "nascondersi": {
+                "value": 8
+            },
+            "prestanza": {
+                "value": 20
+            },
+            "resistereallamagia": {
+                "value": 13
+            },
+            "rissa": {
+                "value": 13
+            },
+            "sopravvivenza": {
+                "value": 12
+            },
+            "tempra": {
+                "value": 16
+            }
+        },
+        "details": {
+            "biography": "<p>Senti sempre parlare di quei grossi mostri schifosi con alito di fuoco... e finisci per dimenticarti delle fottute macchine assassine di madre natura. – Rodolf Kazmer</p><p>Ogni anno gli orsi fanno più vittime dei mostri. È più facile sopravvivere al morso di una viverna che a quello di un grande orso. In combattimento, la loro imponenza fisica è letale: bloccare una zampata con uno scudo serve solo a rompere lo scudo.</p>",
+            "threat": "Media",
+            "reward": 450,
+            "monsterType": "Beast",
+            "difficulty": "MEDIUM"
+        },
+        "derivedStats": {
+            "vigor": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "rec": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "resolve": {
+                "value": 80,
+                "max": 80,
+                "unmodifiedMax": 80
+            },
+            "stun": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "woundTreshold": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "hp": {
+                "value": 80,
+                "max": 80,
+                "unmodifiedMax": 80
+            },
+            "sta": {
+                "value": 40,
+                "max": 40,
+                "unmodifiedMax": 40
+            }
+        },
+        "description": "<p>Senti sempre parlare di quei grossi mostri schifosi con alito di fuoco... e finisci per dimenticarti delle fottute macchine assassine di madre natura. – Rodolf Kazmer</p><p>Ogni anno gli orsi fanno più vittime dei mostri. È più facile sopravvivere al morso di una viverna che a quello di un grande orso. In combattimento, la loro imponenza fisica è letale: bloccare una zampata con uno scudo serve solo a rompere lo scudo.</p>",
+        "sourcebook": "TC 204",
+        "monsterType": "Beast",
+        "difficulty": "MEDIUM",
+        "bounty": 450
     },
-    "skills": {
-      "accortezza": {
-        "value": 10
-      },
-      "atletica": {
-        "value": 10
-      },
-      "coraggio": {
-        "value": 14
-      },
-      "intimidire": {
-        "value": 14
-      },
-      "nascondersi": {
-        "value": 8
-      },
-      "prestanza": {
-        "value": 20
-      },
-      "resistereallamagia": {
-        "value": 13
-      },
-      "rissa": {
-        "value": 13
-      },
-      "sopravvivenza": {
-        "value": 12
-      },
-      "tempra": {
-        "value": 16
-      }
-    },
-    "details": {
-      "biography": "<p>Senti sempre parlare di quei grossi mostri schifosi con alito di fuoco... e finisci per dimenticarti delle fottute macchine assassine di madre natura. – Rodolf Kazmer</p><p>Ogni anno gli orsi fanno più vittime dei mostri. È più facile sopravvivere al morso di una viverna che a quello di un grande orso. In combattimento, la loro imponenza fisica è letale: bloccare una zampata con uno scudo serve solo a rompere lo scudo.</p>",
-      "threat": "Media",
-      "reward": 450,
-      "monsterType": "Beast",
-      "difficulty": "MEDIUM"
-    },
-    "derivedStats": {
-      "vigor": {
-        "value": 0,
-        "max": 0,
-        "unmodifiedMax": 0
-      },
-      "rec": {
-        "value": 8,
-        "max": 8,
-        "unmodifiedMax": 8
-      },
-      "resolve": {
-        "value": 80,
-        "max": 80,
-        "unmodifiedMax": 80
-      },
-      "stun": {
-        "value": 8,
-        "max": 8,
-        "unmodifiedMax": 8
-      },
-      "woundTreshold": {
-        "value": 8,
-        "max": 8,
-        "unmodifiedMax": 8
-      },
-      "hp": {
-        "value": 80,
-        "max": 80,
-        "unmodifiedMax": 80
-      },
-      "sta": {
-        "value": 40,
-        "max": 40,
-        "unmodifiedMax": 40
-      }
-    },
-    "description": "<p>Senti sempre parlare di quei grossi mostri schifosi con alito di fuoco... e finisci per dimenticarti delle fottute macchine assassine di madre natura. – Rodolf Kazmer</p><p>Ogni anno gli orsi fanno più vittime dei mostri. È più facile sopravvivere al morso di una viverna che a quello di un grande orso. In combattimento, la loro imponenza fisica è letale: bloccare una zampata con uno scudo serve solo a rompere lo scudo.</p>",
-    "sourcebook": "TC 204",
-    "monsterType": "Beast",
-    "difficulty": "MEDIUM",
-    "bounty": 450
-  },
-  "items": [
-    {
-      "_id": "o1",
-      "name": "Morso",
-      "type": "weapon",
-      "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
-      "system": {
-        "description": "",
-        "damage": "8d6",
-        "accuracy": 0,
-        "effects": "Forza Distruttiva, Sanguinamento (75%)"
-      },
-      "_stats": {
+    "items": [
+        {
+            "_id": "o1",
+            "name": "Morso",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
+            "system": {
+                "description": "",
+                "damage": "8d6",
+                "accuracy": 0,
+                "effects": "Forza Distruttiva, Sanguinamento (75%)"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "o2",
+            "name": "Artigli",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/trait_artigli.webp",
+            "system": {
+                "description": "",
+                "damage": "4d6+5",
+                "accuracy": 0,
+                "effects": "Forza Distruttiva"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "o3",
+            "name": "[Capacità] Alzarsi sulle Zampe",
+            "type": "note",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "<p>Usa un intero round per colpire con entrambi gli artigli. 6d6 danni al torso, getta prono e blocca a terra.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        }
+    ],
+    "effects": [],
+    "flags": {},
+    "_stats": {
         "systemId": "TheWitcherItaNewSystem",
         "coreVersion": 14
-      }
-    },
-    {
-      "_id": "o2",
-      "name": "Artigli",
-      "type": "weapon",
-      "img": "modules/witcher-compendium/assets/SPECIAL/trait_artigli.webp",
-      "system": {
-        "description": "",
-        "damage": "4d6+5",
-        "accuracy": 0,
-        "effects": "Forza Distruttiva"
-      },
-      "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-      }
-    },
-    {
-      "_id": "o3",
-      "name": "[Capacità] Alzarsi sulle Zampe",
-      "type": "note",
-      "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-      "system": {
-        "description": "<p>Usa un intero round per colpire con entrambi gli artigli. 6d6 danni al torso, getta prono e blocca a terra.</p>"
-      },
-      "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-      }
     }
-  ],
-  "effects": [],
-  "flags": {},
-  "_stats": {
-    "systemId": "TheWitcherItaNewSystem",
-    "coreVersion": 14
-  }
 }

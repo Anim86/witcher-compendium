@@ -1,181 +1,181 @@
 {
-  "_id": "d847c2fbfd02418a",
-  "name": "Lupi e Warg",
-  "type": "monster",
-  "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/lupi_e_warg.webp",
-  "system": {
-    "stats": {
-      "int": {
-        "value": 1,
-        "max": 1,
-        "unmodifiedMax": 1
-      },
-      "ref": {
-        "value": 7,
-        "max": 7,
-        "unmodifiedMax": 7
-      },
-      "dex": {
-        "value": 7,
-        "max": 7,
-        "unmodifiedMax": 7
-      },
-      "body": {
-        "value": 8,
-        "max": 8,
-        "unmodifiedMax": 8
-      },
-      "spd": {
-        "value": 8,
-        "max": 8,
-        "unmodifiedMax": 8
-      },
-      "emp": {
-        "value": 1,
-        "max": 1,
-        "unmodifiedMax": 1
-      },
-      "cra": {
-        "value": 1,
-        "max": 1,
-        "unmodifiedMax": 1
-      },
-      "will": {
-        "value": 4,
-        "max": 4,
-        "unmodifiedMax": 4
-      },
-      "luck": {
-        "value": 0,
-        "max": 0,
-        "unmodifiedMax": 0
-      }
+    "_id": "d847c2fbfd02418a",
+    "name": "Lupi e Warg",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/lupi_e_warg.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "ref": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "dex": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "body": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "spd": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "emp": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "cra": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "will": {
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 6
+            },
+            "atletica": {
+                "value": 6
+            },
+            "coraggio": {
+                "value": 6
+            },
+            "eludere": {
+                "value": 6
+            },
+            "mischia": {
+                "value": 6
+            },
+            "nascondersi": {
+                "value": 6
+            },
+            "rissa": {
+                "value": 6
+            },
+            "sopravvivenza": {
+                "value": 9
+            },
+            "tempra": {
+                "value": 5
+            }
+        },
+        "details": {
+            "biography": "<p>Non c'è molto da dire sui lupi. Eh, sono dei maledetti bastardi che vivono nelle foreste e attaccano i viaggiatori. – Rodolf Kazmer</p><p>Pur essendoci molti strani racconti e miti sui lupi, tutti sono concordi nell'affermare che non sono creature magiche. I warg, d'altro canto, sono assai più misteriosi. Quando un branco diventa abbastanza grande, può capitare che tra loro ci sia un warg: lupi molto grossi e robusti.</p>",
+            "threat": "Media",
+            "reward": 500,
+            "monsterType": "Beast",
+            "difficulty": "MEDIUM"
+        },
+        "derivedStats": {
+            "vigor": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "rec": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "resolve": {
+                "value": 35,
+                "max": 35,
+                "unmodifiedMax": 35
+            },
+            "stun": {
+                "value": 7,
+                "max": 7
+            },
+            "woundTreshold": {
+                "value": 7,
+                "max": 7
+            },
+            "hp": {
+                "value": 45,
+                "max": 45,
+                "unmodifiedMax": 45
+            },
+            "sta": {
+                "value": 35,
+                "max": 35,
+                "unmodifiedMax": 35
+            }
+        },
+        "description": "<p>Non c'è molto da dire sui lupi. Eh, sono dei maledetti bastardi che vivono nelle foreste e attaccano i viaggiatori. – Rodolf Kazmer</p><p>Pur essendoci molti strani racconti e miti sui lupi, tutti sono concordi nell'affermare che non sono creature magiche. I warg, d'altro canto, sono assai più misteriosi. Quando un branco diventa abbastanza grande, può capitare che tra loro ci sia un warg: lupi molto grossi e robusti.</p>",
+        "sourcebook": "MB 287",
+        "monsterType": "Beast",
+        "difficulty": "MEDIUM",
+        "bounty": 500
     },
-    "skills": {
-      "accortezza": {
-        "value": 6
-      },
-      "atletica": {
-        "value": 6
-      },
-      "coraggio": {
-        "value": 6
-      },
-      "eludere": {
-        "value": 6
-      },
-      "mischia": {
-        "value": 6
-      },
-      "nascondersi": {
-        "value": 6
-      },
-      "rissa": {
-        "value": 6
-      },
-      "sopravvivenza": {
-        "value": 9
-      },
-      "tempra": {
-        "value": 5
-      }
-    },
-    "details": {
-      "biography": "<p>Non c'è molto da dire sui lupi. Eh, sono dei maledetti bastardi che vivono nelle foreste e attaccano i viaggiatori. – Rodolf Kazmer</p><p>Pur essendoci molti strani racconti e miti sui lupi, tutti sono concordi nell'affermare che non sono creature magiche. I warg, d'altro canto, sono assai più misteriosi. Quando un branco diventa abbastanza grande, può capitare che tra loro ci sia un warg: lupi molto grossi e robusti.</p>",
-      "threat": "Media",
-      "reward": 500,
-      "monsterType": "Beast",
-      "difficulty": "MEDIUM"
-    },
-    "derivedStats": {
-      "vigor": {
-        "value": 0,
-        "max": 0,
-        "unmodifiedMax": 0
-      },
-      "rec": {
-        "value": 7,
-        "max": 7,
-        "unmodifiedMax": 7
-      },
-      "resolve": {
-        "value": 35,
-        "max": 35,
-        "unmodifiedMax": 35
-      },
-      "stun": {
-        "value": 7,
-        "max": 7
-      },
-      "woundTreshold": {
-        "value": 7,
-        "max": 7
-      },
-      "hp": {
-        "value": 45,
-        "max": 45,
-        "unmodifiedMax": 45
-      },
-      "sta": {
-        "value": 35,
-        "max": 35,
-        "unmodifiedMax": 35
-      }
-    },
-    "description": "<p>Non c'è molto da dire sui lupi. Eh, sono dei maledetti bastardi che vivono nelle foreste e attaccano i viaggiatori. – Rodolf Kazmer</p><p>Pur essendoci molti strani racconti e miti sui lupi, tutti sono concordi nell'affermare che non sono creature magiche. I warg, d'altro canto, sono assai più misteriosi. Quando un branco diventa abbastanza grande, può capitare che tra loro ci sia un warg: lupi molto grossi e robusti.</p>",
-    "sourcebook": "MB 287",
-    "monsterType": "Beast",
-    "difficulty": "MEDIUM",
-    "bounty": 500
-  },
-  "items": [
-    {
-      "_id": "1fc15cc74bd1411f",
-      "name": "Morso",
-      "type": "weapon",
-      "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
-      "system": {
-        "description": "",
-        "damage": "2d6",
-        "accuracy": 0,
-        "effects": ""
-      },
-      "_stats": {
+    "items": [
+        {
+            "_id": "1fc15cc74bd1411f",
+            "name": "Morso",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
+            "system": {
+                "description": "",
+                "damage": "2d6",
+                "accuracy": 0,
+                "effects": ""
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "w1",
+            "name": "[Capacità] Fiuto",
+            "type": "note",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "<p>Può seguire le tracce senza bisogno di segnali visivi o uditivi.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "w2",
+            "name": "[Capacità] Capobranco",
+            "type": "note",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "<p>Bonus di +4 al Coraggio per i lupi del branco finché il warg è vivo.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        }
+    ],
+    "effects": [],
+    "flags": {},
+    "_stats": {
         "systemId": "TheWitcherItaNewSystem",
         "coreVersion": 14
-      }
-    },
-    {
-      "_id": "w1",
-      "name": "[Capacità] Fiuto",
-      "type": "note",
-      "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-      "system": {
-        "description": "<p>Può seguire le tracce senza bisogno di segnali visivi o uditivi.</p>"
-      },
-      "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-      }
-    },
-    {
-      "_id": "w2",
-      "name": "[Capacità] Capobranco",
-      "type": "note",
-      "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-      "system": {
-        "description": "<p>Bonus di +4 al Coraggio per i lupi del branco finché il warg è vivo.</p>"
-      },
-      "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-      }
     }
-  ],
-  "effects": [],
-  "flags": {},
-  "_stats": {
-    "systemId": "TheWitcherItaNewSystem",
-    "coreVersion": 14
-  }
 }

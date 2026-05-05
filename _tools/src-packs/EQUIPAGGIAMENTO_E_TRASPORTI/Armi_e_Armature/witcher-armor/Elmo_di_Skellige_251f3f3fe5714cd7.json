@@ -1,55 +1,55 @@
 {
-  "_id": "251f3f3fe5714cd7",
-  "name": "Elmo di Skellige",
-  "type": "armor",
-  "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-armor/elmo_di_skellige.webp",
-  "system": {
-    "description": "<p>Gli Skelliger adorano gli ornamenti, se li fanno sembrare dei duri, e i loro elmi ne sono la prova. L'elmo di Skellige è spesso, con una maglia di ferro attorno al collo, piastre sulle guance e... corna, spesso e volentieri. Scommetto che gli skelliger più duri ci sbudellano i nemici con le corna sugli elmi.</p><p><strong>Effetti:</strong> Visuale Limitata</p>",
-    "cost": 700,
-    "reliability": {
-      "value": 0,
-      "max": 0
+    "_id": "251f3f3fe5714cd7",
+    "name": "Elmo di Skellige",
+    "type": "armor",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-armor/elmo_di_skellige.webp",
+    "system": {
+        "description": "<p>Gli Skelliger adorano gli ornamenti, se li fanno sembrare dei duri, e i loro elmi ne sono la prova. L'elmo di Skellige è spesso, con una maglia di ferro attorno al collo, piastre sulle guance e... corna, spesso e volentieri. Scommetto che gli skelliger più duri ci sbudellano i nemici con le corna sugli elmi.</p><p><strong>Effetti:</strong> Visuale Limitata</p>",
+        "cost": 700,
+        "reliability": {
+            "value": 0,
+            "max": 0
+        },
+        "sourcebook": "MB 81",
+        "type": "Heavy",
+        "location": "Head",
+        "encumb": 0,
+        "enhancements": 1,
+        "headStopping": 25,
+        "headMaxStopping": 25,
+        "torsoStopping": 0,
+        "torsoMaxStopping": 0,
+        "leftArmStopping": 0,
+        "leftArmMaxStopping": 0,
+        "rightArmStopping": 0,
+        "rightArmMaxStopping": 0,
+        "leftLegStopping": 0,
+        "leftLegMaxStopping": 0,
+        "rightLegStopping": 0,
+        "rightLegMaxStopping": 0,
+        "bludgeoning": false,
+        "slashing": false,
+        "piercing": false,
+        "elemental": false,
+        "fire": false,
+        "poison": false,
+        "bleeding": false,
+        "weight": 3.5,
+        "rarity": "Scarsa",
+        "stoppingPower": 25,
+        "protection": {},
+        "encumbranceMod": 0,
+        "unmodifiedMax": {}
     },
-    "sourcebook": "MB 81",
-    "type": "Heavy",
-    "location": "Head",
-    "encumb": 0,
-    "enhancements": 1,
-    "headStopping": 25,
-    "headMaxStopping": 25,
-    "torsoStopping": 0,
-    "torsoMaxStopping": 0,
-    "leftArmStopping": 0,
-    "leftArmMaxStopping": 0,
-    "rightArmStopping": 0,
-    "rightArmMaxStopping": 0,
-    "leftLegStopping": 0,
-    "leftLegMaxStopping": 0,
-    "rightLegStopping": 0,
-    "rightLegMaxStopping": 0,
-    "bludgeoning": false,
-    "slashing": false,
-    "piercing": false,
-    "elemental": false,
-    "fire": false,
-    "poison": false,
-    "bleeding": false,
-    "weight": 3.5,
-    "rarity": "Scarsa",
-    "stoppingPower": 25,
-    "protection": {},
-    "encumbranceMod": 0,
-    "unmodifiedMax": {}
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "TheWitcherItaNewSystem",
-    "coreVersion": 14
-  }
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
 }

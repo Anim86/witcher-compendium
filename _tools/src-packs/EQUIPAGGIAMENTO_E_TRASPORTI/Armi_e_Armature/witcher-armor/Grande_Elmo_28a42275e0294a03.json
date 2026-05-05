@@ -1,55 +1,55 @@
 {
-  "_id": "28a42275e0294a03",
-  "name": "Grande Elmo",
-  "type": "armor",
-  "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-armor/grande_elmo.webp",
-  "system": {
-    "description": "<p>I grandi elmi sono per i più grandi cavalieri. Grossi elmi cilindrici con feritoie più ampie per gli occhi e abbastanza fori di ventilazione per riuscire a respirare. Sono duri e, di solito, decorati con nappe, corna e aquile ad ali spiegate. Eh, costano come dei maledetti ma sono utili.</p><p><strong>Effetti:</strong> Visuale Limitata</p>",
-    "cost": 575,
-    "reliability": {
-      "value": 0,
-      "max": 0
+    "_id": "28a42275e0294a03",
+    "name": "Grande Elmo",
+    "type": "armor",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-armor/grande_elmo.webp",
+    "system": {
+        "description": "<p>I grandi elmi sono per i più grandi cavalieri. Grossi elmi cilindrici con feritoie più ampie per gli occhi e abbastanza fori di ventilazione per riuscire a respirare. Sono duri e, di solito, decorati con nappe, corna e aquile ad ali spiegate. Eh, costano come dei maledetti ma sono utili.</p><p><strong>Effetti:</strong> Visuale Limitata</p>",
+        "cost": 575,
+        "reliability": {
+            "value": 0,
+            "max": 0
+        },
+        "sourcebook": "MB 81",
+        "type": "Heavy",
+        "location": "Head",
+        "encumb": 0,
+        "enhancements": 1,
+        "headStopping": 20,
+        "headMaxStopping": 20,
+        "torsoStopping": 0,
+        "torsoMaxStopping": 0,
+        "leftArmStopping": 0,
+        "leftArmMaxStopping": 0,
+        "rightArmStopping": 0,
+        "rightArmMaxStopping": 0,
+        "leftLegStopping": 0,
+        "leftLegMaxStopping": 0,
+        "rightLegStopping": 0,
+        "rightLegMaxStopping": 0,
+        "bludgeoning": false,
+        "slashing": false,
+        "piercing": false,
+        "elemental": false,
+        "fire": false,
+        "poison": false,
+        "bleeding": false,
+        "weight": 3.5,
+        "rarity": "Rara",
+        "stoppingPower": 20,
+        "protection": {},
+        "encumbranceMod": 0,
+        "unmodifiedMax": {}
     },
-    "sourcebook": "MB 81",
-    "type": "Heavy",
-    "location": "Head",
-    "encumb": 0,
-    "enhancements": 1,
-    "headStopping": 20,
-    "headMaxStopping": 20,
-    "torsoStopping": 0,
-    "torsoMaxStopping": 0,
-    "leftArmStopping": 0,
-    "leftArmMaxStopping": 0,
-    "rightArmStopping": 0,
-    "rightArmMaxStopping": 0,
-    "leftLegStopping": 0,
-    "leftLegMaxStopping": 0,
-    "rightLegStopping": 0,
-    "rightLegMaxStopping": 0,
-    "bludgeoning": false,
-    "slashing": false,
-    "piercing": false,
-    "elemental": false,
-    "fire": false,
-    "poison": false,
-    "bleeding": false,
-    "weight": 3.5,
-    "rarity": "Rara",
-    "stoppingPower": 20,
-    "protection": {},
-    "encumbranceMod": 0,
-    "unmodifiedMax": {}
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "TheWitcherItaNewSystem",
-    "coreVersion": 14
-  }
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
 }

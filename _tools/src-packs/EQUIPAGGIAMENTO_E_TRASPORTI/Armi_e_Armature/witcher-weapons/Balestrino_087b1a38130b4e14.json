@@ -1,59 +1,59 @@
 {
-  "_id": "087b1a38130b4e14",
-  "name": "Balestrino",
-  "type": "weapon",
-  "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/balestrino.webp",
-  "system": {
-    "description": "<p>Non so di preciso da dove provenga il balestrino. Immagino che agli inizi fosse una specie di balestra da civile. Ãˆ più piccolo e meno potente di una balestra normale, ma sta in una mano sola ed è facile sparare con precisione. Oggigiorno sono richiesti per difendere la casa, dal momento che molta gente non può permettersi qualcuno che insegni loro a com- battere e per imparare a usare le balestre non ci vuole molto. MUNIZIONI Normali Se hai un'arma che spara proiettili, ti servono i proiettili. Le munizioni normali sono in pratica il tipico dardo o freccia. I dardi sono di solito più corti delle frecce, ma entrambi hanno una punta di metallo acuminata e un impennaggio di piume. Punta Larga Le “punte larghe” sono tra i migliori proiettili alternativi da avere a disposizione. Sono molto simili a frecce o dardi normali, ma, invece di una punta di metallo, hanno una testa piatta, larga e affilata. Eh, ce ne sono di ogni tipo e misura, a foglia, a rombo, fatte a V e così via, ma tutte quante tagliano più di una punta normale e causano ferite che sanguinano.</p>",
-    "cost": 285,
-    "reliability": {
-      "max": 5,
-      "value": 5
+    "_id": "087b1a38130b4e14",
+    "name": "Balestrino",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/balestrino.webp",
+    "system": {
+        "description": "<p>Non so di preciso da dove provenga il balestrino. Immagino che agli inizi fosse una specie di balestra da civile. Ãˆ più piccolo e meno potente di una balestra normale, ma sta in una mano sola ed è facile sparare con precisione. Oggigiorno sono richiesti per difendere la casa, dal momento che molta gente non può permettersi qualcuno che insegni loro a com- battere e per imparare a usare le balestre non ci vuole molto. MUNIZIONI Normali Se hai un'arma che spara proiettili, ti servono i proiettili. Le munizioni normali sono in pratica il tipico dardo o freccia. I dardi sono di solito più corti delle frecce, ma entrambi hanno una punta di metallo acuminata e un impennaggio di piume. Punta Larga Le “punte larghe” sono tra i migliori proiettili alternativi da avere a disposizione. Sono molto simili a frecce o dardi normali, ma, invece di una punta di metallo, hanno una testa piatta, larga e affilata. Eh, ce ne sono di ogni tipo e misura, a foglia, a rombo, fatte a V e così via, ma tutte quante tagliano più di una punta normale e causano ferite che sanguinano.</p>",
+        "cost": 285,
+        "reliability": {
+            "max": 5,
+            "value": 5
+        },
+        "reach": "50m",
+        "effects": "Ricarica Lenta",
+        "sourcebook": "MB 48",
+        "range": "50m",
+        "type": {
+            "text": "",
+            "slashing": false,
+            "piercing": true,
+            "bludgeoning": false,
+            "elemental": false
+        },
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "isMeteorite": false,
+            "isNonLethal": false,
+            "effects": [
+                {
+                    "id": "000bf5f12ec80db5",
+                    "name": "Ricarica Lenta",
+                    "statusEffect": null,
+                    "percentage": 100,
+                    "varEffect": false
+                }
+            ]
+        },
+        "weight": 0.5,
+        "rarity": "Diffusa",
+        "damage": "2d6+2",
+        "hands": 1,
+        "accuracy": 1,
+        "unmodifiedMax": {}
     },
-    "reach": "50m",
-    "effects": "Ricarica Lenta",
-    "sourcebook": "MB 48",
-    "range": "50m",
-    "type": {
-      "text": "",
-      "slashing": false,
-      "piercing": true,
-      "bludgeoning": false,
-      "elemental": false
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
     },
-    "damageProperties": {
-      "armorPiercing": false,
-      "improvedArmorPiercing": false,
-      "ablating": false,
-      "crushingForce": false,
-      "isMeteorite": false,
-      "isNonLethal": false,
-      "effects": [
-        {
-          "id": "000bf5f12ec80db5",
-          "name": "Ricarica Lenta",
-          "statusEffect": null,
-          "percentage": 100,
-          "varEffect": false
-        }
-      ]
-    },
-    "weight": 0.5,
-    "rarity": "Diffusa",
-    "damage": "2d6+2",
-    "hands": 1,
-    "accuracy": 1,
-    "unmodifiedMax": {}
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "TheWitcherItaNewSystem",
-    "coreVersion": 14
-  }
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
 }

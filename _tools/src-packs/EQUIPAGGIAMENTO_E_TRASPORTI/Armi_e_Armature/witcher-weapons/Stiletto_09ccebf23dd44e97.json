@@ -1,58 +1,58 @@
 {
-  "_id": "09ccebf23dd44e97",
-  "name": "Stiletto",
-  "type": "weapon",
-  "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/stiletto.webp",
-  "system": {
-    "description": "<p>Ci volevano i Neri per creare un coltello ancora più facile da nascondere di un pugnale normale. Ha una lama sot- tilissima che rientra nel manico e così la puoi nascondere quasi ovunque.</p>",
-    "cost": 275,
-    "reliability": {
-      "max": 5,
-      "value": 5
+    "_id": "09ccebf23dd44e97",
+    "name": "Stiletto",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/stiletto.webp",
+    "system": {
+        "description": "<p>Ci volevano i Neri per creare un coltello ancora più facile da nascondere di un pugnale normale. Ha una lama sot- tilissima che rientra nel manico e così la puoi nascondere quasi ovunque.</p>",
+        "cost": 275,
+        "reliability": {
+            "max": 5,
+            "value": 5
+        },
+        "reach": "N/A",
+        "effects": "Occultabile",
+        "sourcebook": "MB 43",
+        "type": {
+            "text": "",
+            "slashing": true,
+            "piercing": true,
+            "bludgeoning": false,
+            "elemental": false
+        },
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "isMeteorite": false,
+            "isNonLethal": false,
+            "effects": [
+                {
+                    "id": "00fb2b01e3355e08",
+                    "name": "occultabile",
+                    "statusEffect": null,
+                    "percentage": 100,
+                    "varEffect": false
+                }
+            ]
+        },
+        "weight": 0.5,
+        "rarity": "Comune",
+        "damage": "1d6",
+        "hands": 1,
+        "accuracy": 2,
+        "unmodifiedMax": {}
     },
-    "reach": "N/A",
-    "effects": "Occultabile",
-    "sourcebook": "MB 43",
-    "type": {
-      "text": "",
-      "slashing": true,
-      "piercing": true,
-      "bludgeoning": false,
-      "elemental": false
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
     },
-    "damageProperties": {
-      "armorPiercing": false,
-      "improvedArmorPiercing": false,
-      "ablating": false,
-      "crushingForce": false,
-      "isMeteorite": false,
-      "isNonLethal": false,
-      "effects": [
-        {
-          "id": "00fb2b01e3355e08",
-          "name": "occultabile",
-          "statusEffect": null,
-          "percentage": 100,
-          "varEffect": false
-        }
-      ]
-    },
-    "weight": 0.5,
-    "rarity": "Comune",
-    "damage": "1d6",
-    "hands": 1,
-    "accuracy": 2,
-    "unmodifiedMax": {}
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "TheWitcherItaNewSystem",
-    "coreVersion": 14
-  }
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
 }

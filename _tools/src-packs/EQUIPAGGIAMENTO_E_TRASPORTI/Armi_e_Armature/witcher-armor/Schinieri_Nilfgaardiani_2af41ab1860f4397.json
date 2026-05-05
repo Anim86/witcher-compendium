@@ -1,55 +1,55 @@
 {
-  "_id": "2af41ab1860f4397",
-  "name": "Schinieri Nilfgaardiani",
-  "type": "armor",
-  "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-armor/schinieri_nilfgaardiani.webp",
-  "system": {
-    "description": "<p>Gli schinieri nilfgaardiani sono un po' meno spessi dell'armatu- ra per il torso. Di solito comprendono schinieri e scarpe d'arme, oltre a brache di cuoio pesante e stoffa con un motivo a scacchi.</p>",
-    "cost": 850,
-    "reliability": {
-      "value": 0,
-      "max": 0
+    "_id": "2af41ab1860f4397",
+    "name": "Schinieri Nilfgaardiani",
+    "type": "armor",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-armor/schinieri_nilfgaardiani.webp",
+    "system": {
+        "description": "<p>Gli schinieri nilfgaardiani sono un po' meno spessi dell'armatu- ra per il torso. Di solito comprendono schinieri e scarpe d'arme, oltre a brache di cuoio pesante e stoffa con un motivo a scacchi.</p>",
+        "cost": 850,
+        "reliability": {
+            "value": 0,
+            "max": 0
+        },
+        "sourcebook": "MB 82",
+        "type": "Heavy",
+        "location": "Leg",
+        "encumb": 1,
+        "enhancements": 2,
+        "headStopping": 0,
+        "headMaxStopping": 0,
+        "torsoStopping": 0,
+        "torsoMaxStopping": 0,
+        "leftArmStopping": 0,
+        "leftArmMaxStopping": 0,
+        "rightArmStopping": 0,
+        "rightArmMaxStopping": 0,
+        "leftLegStopping": 30,
+        "leftLegMaxStopping": 30,
+        "rightLegStopping": 30,
+        "rightLegMaxStopping": 30,
+        "bludgeoning": false,
+        "slashing": false,
+        "piercing": false,
+        "elemental": false,
+        "fire": false,
+        "poison": false,
+        "bleeding": false,
+        "weight": 6,
+        "rarity": "Rara",
+        "stoppingPower": 30,
+        "protection": {},
+        "encumbranceMod": -1,
+        "unmodifiedMax": {}
     },
-    "sourcebook": "MB 82",
-    "type": "Heavy",
-    "location": "Leg",
-    "encumb": 1,
-    "enhancements": 2,
-    "headStopping": 0,
-    "headMaxStopping": 0,
-    "torsoStopping": 0,
-    "torsoMaxStopping": 0,
-    "leftArmStopping": 0,
-    "leftArmMaxStopping": 0,
-    "rightArmStopping": 0,
-    "rightArmMaxStopping": 0,
-    "leftLegStopping": 30,
-    "leftLegMaxStopping": 30,
-    "rightLegStopping": 30,
-    "rightLegMaxStopping": 30,
-    "bludgeoning": false,
-    "slashing": false,
-    "piercing": false,
-    "elemental": false,
-    "fire": false,
-    "poison": false,
-    "bleeding": false,
-    "weight": 6,
-    "rarity": "Rara",
-    "stoppingPower": 30,
-    "protection": {},
-    "encumbranceMod": -1,
-    "unmodifiedMax": {}
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "TheWitcherItaNewSystem",
-    "coreVersion": 14
-  }
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
 }

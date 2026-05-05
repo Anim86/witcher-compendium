@@ -1,189 +1,189 @@
 {
-  "_id": "a34ed9b7ba1f433d",
-  "name": "Penitente",
-  "type": "monster",
-  "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/penitente.webp",
-  "system": {
-    "stats": {
-      "int": {
-        "value": 6,
-        "max": 6,
-        "unmodifiedMax": 6
-      },
-      "ref": {
-        "value": 8,
-        "max": 8,
-        "unmodifiedMax": 8
-      },
-      "dex": {
-        "value": 8,
-        "max": 8,
-        "unmodifiedMax": 8
-      },
-      "body": {
-        "value": 8,
-        "max": 8,
-        "unmodifiedMax": 8
-      },
-      "spd": {
-        "value": 6,
-        "max": 6,
-        "unmodifiedMax": 6
-      },
-      "emp": {
-        "value": 1,
-        "max": 1,
-        "unmodifiedMax": 1
-      },
-      "cra": {
-        "value": 1,
-        "max": 1,
-        "unmodifiedMax": 1
-      },
-      "will": {
-        "value": 8,
-        "max": 8,
-        "unmodifiedMax": 8
-      },
-      "luck": {
-        "value": 0,
-        "max": 0,
-        "unmodifiedMax": 0
-      }
+    "_id": "a34ed9b7ba1f433d",
+    "name": "Penitente",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/penitente.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "ref": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "dex": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "body": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "spd": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "emp": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "cra": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "will": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 16
+            },
+            "atletica": {
+                "value": 14
+            },
+            "intimidire": {
+                "value": 17
+            },
+            "lanciareIncantesimi": {
+                "value": 17
+            },
+            "nascondersi": {
+                "value": 17
+            },
+            "prestanza": {
+                "value": 15
+            },
+            "resistereallamagia": {
+                "value": 15
+            },
+            "rissa": {
+                "value": 15
+            },
+            "sopravvivenza": {
+                "value": 12
+            },
+            "tempra": {
+                "value": 15
+            }
+        },
+        "details": {
+            "biography": "<p>Un penitente è un demone che perseguita chi ha commesso un crimine. – Rodolf Kazmer</p><p>I penitenti sono anime che puniscono i malvagi. Si legano al colpevole coprendo il luogo del crimine con una fitta nebbia e richiamando spettri. Avanzano ripetendo con voce rauca il nome del colpevole, attaccando con spada e lanterna per poi svanire nell'ombra.</p>",
+            "threat": "Media",
+            "reward": 800,
+            "monsterType": "Specter",
+            "difficulty": "MEDIUM"
+        },
+        "derivedStats": {
+            "vigor": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "rec": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "resolve": {
+                "value": 80,
+                "max": 80,
+                "unmodifiedMax": 80
+            },
+            "stun": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "woundTreshold": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "hp": {
+                "value": 80,
+                "max": 80,
+                "unmodifiedMax": 80
+            },
+            "sta": {
+                "value": 40,
+                "max": 40,
+                "unmodifiedMax": 40
+            }
+        },
+        "description": "<p>Un penitente è un demone che perseguita chi ha commesso un crimine. – Rodolf Kazmer</p><p>I penitenti sono anime che puniscono i malvagi. Si legano al colpevole coprendo il luogo del crimine con una fitta nebbia e richiamando spettri. Avanzano ripetendo con voce rauca il nome del colpevole, attaccando con spada e lanterna per poi svanire nell'ombra.</p>",
+        "sourcebook": "TC 208",
+        "monsterType": "Specter",
+        "difficulty": "MEDIUM",
+        "bounty": 800
     },
-    "skills": {
-      "accortezza": {
-        "value": 16
-      },
-      "atletica": {
-        "value": 14
-      },
-      "intimidire": {
-        "value": 17
-      },
-      "lanciareIncantesimi": {
-        "value": 17
-      },
-      "nascondersi": {
-        "value": 17
-      },
-      "prestanza": {
-        "value": 15
-      },
-      "resistereallamagia": {
-        "value": 15
-      },
-      "rissa": {
-        "value": 15
-      },
-      "sopravvivenza": {
-        "value": 12
-      },
-      "tempra": {
-        "value": 15
-      }
-    },
-    "details": {
-      "biography": "<p>Un penitente è un demone che perseguita chi ha commesso un crimine. – Rodolf Kazmer</p><p>I penitenti sono anime che puniscono i malvagi. Si legano al colpevole coprendo il luogo del crimine con una fitta nebbia e richiamando spettri. Avanzano ripetendo con voce rauca il nome del colpevole, attaccando con spada e lanterna per poi svanire nell'ombra.</p>",
-      "threat": "Media",
-      "reward": 800,
-      "monsterType": "Specter",
-      "difficulty": "MEDIUM"
-    },
-    "derivedStats": {
-      "vigor": {
-        "value": 0,
-        "max": 0,
-        "unmodifiedMax": 0
-      },
-      "rec": {
-        "value": 8,
-        "max": 8,
-        "unmodifiedMax": 8
-      },
-      "resolve": {
-        "value": 80,
-        "max": 80,
-        "unmodifiedMax": 80
-      },
-      "stun": {
-        "value": 8,
-        "max": 8,
-        "unmodifiedMax": 8
-      },
-      "woundTreshold": {
-        "value": 8,
-        "max": 8,
-        "unmodifiedMax": 8
-      },
-      "hp": {
-        "value": 80,
-        "max": 80,
-        "unmodifiedMax": 80
-      },
-      "sta": {
-        "value": 40,
-        "max": 40,
-        "unmodifiedMax": 40
-      }
-    },
-    "description": "<p>Un penitente è un demone che perseguita chi ha commesso un crimine. – Rodolf Kazmer</p><p>I penitenti sono anime che puniscono i malvagi. Si legano al colpevole coprendo il luogo del crimine con una fitta nebbia e richiamando spettri. Avanzano ripetendo con voce rauca il nome del colpevole, attaccando con spada e lanterna per poi svanire nell'ombra.</p>",
-    "sourcebook": "TC 208",
-    "monsterType": "Specter",
-    "difficulty": "MEDIUM",
-    "bounty": 800
-  },
-  "items": [
-    {
-      "_id": "p1",
-      "name": "Spada del Penitente",
-      "type": "weapon",
-      "img": "icons/svg/sword.svg",
-      "system": {
-        "description": "",
-        "damage": "5d6+4",
-        "accuracy": 0,
-        "effects": "Sanguinamento (30%)"
-      },
-      "_stats": {
+    "items": [
+        {
+            "_id": "p1",
+            "name": "Spada del Penitente",
+            "type": "weapon",
+            "img": "icons/svg/sword.svg",
+            "system": {
+                "description": "",
+                "damage": "5d6+4",
+                "accuracy": 0,
+                "effects": "Sanguinamento (30%)"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "p2",
+            "name": "Lanterna del Penitente",
+            "type": "weapon",
+            "img": "icons/svg/sword.svg",
+            "system": {
+                "description": "",
+                "damage": "4d6",
+                "accuracy": 0,
+                "effects": "A Fuoco (75%)"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "p3",
+            "name": "[Capacità] Nebbia Sovrannaturale",
+            "type": "note",
+            "img": "modules/witcher-compendium/assets/SPECIAL/gift_natura.webp",
+            "system": {
+                "description": "<p>Raggio 50m. Finché nella nebbia, non subisce danni. Si dissipa solo con un gran fuoco.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        }
+    ],
+    "effects": [],
+    "flags": {},
+    "_stats": {
         "systemId": "TheWitcherItaNewSystem",
         "coreVersion": 14
-      }
-    },
-    {
-      "_id": "p2",
-      "name": "Lanterna del Penitente",
-      "type": "weapon",
-      "img": "icons/svg/sword.svg",
-      "system": {
-        "description": "",
-        "damage": "4d6",
-        "accuracy": 0,
-        "effects": "A Fuoco (75%)"
-      },
-      "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-      }
-    },
-    {
-      "_id": "p3",
-      "name": "[Capacità] Nebbia Sovrannaturale",
-      "type": "note",
-      "img": "modules/witcher-compendium/assets/SPECIAL/gift_natura.webp",
-      "system": {
-        "description": "<p>Raggio 50m. Finché nella nebbia, non subisce danni. Si dissipa solo con un gran fuoco.</p>"
-      },
-      "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-      }
     }
-  ],
-  "effects": [],
-  "flags": {},
-  "_stats": {
-    "systemId": "TheWitcherItaNewSystem",
-    "coreVersion": 14
-  }
 }

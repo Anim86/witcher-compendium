@@ -1,180 +1,180 @@
 {
-  "_id": "7989cf0e75c84ac4",
-  "name": "Armatura Vivente",
-  "type": "monster",
-  "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/armatura_vivente.webp",
-  "system": {
-    "stats": {
-      "int": {
-        "value": 1,
-        "max": 1,
-        "unmodifiedMax": 1
-      },
-      "ref": {
-        "value": 8,
-        "max": 8,
-        "unmodifiedMax": 8
-      },
-      "dex": {
-        "value": 6,
-        "max": 6,
-        "unmodifiedMax": 6
-      },
-      "body": {
-        "value": 8,
-        "max": 8,
-        "unmodifiedMax": 8
-      },
-      "spd": {
-        "value": 4,
-        "max": 4,
-        "unmodifiedMax": 4
-      },
-      "emp": {
-        "value": 1,
-        "max": 1,
-        "unmodifiedMax": 1
-      },
-      "cra": {
-        "value": 1,
-        "max": 1,
-        "unmodifiedMax": 1
-      },
-      "will": {
-        "value": 4,
-        "max": 4,
-        "unmodifiedMax": 4
-      },
-      "luck": {
-        "value": 0,
-        "max": 0,
-        "unmodifiedMax": 0
-      }
+    "_id": "7989cf0e75c84ac4",
+    "name": "Armatura Vivente",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/armatura_vivente.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "ref": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "dex": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "body": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "spd": {
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
+            },
+            "emp": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "cra": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "will": {
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 14
+            },
+            "atletica": {
+                "value": 10
+            },
+            "intimidire": {
+                "value": 10
+            },
+            "nascondersi": {
+                "value": 10
+            },
+            "prestanza": {
+                "value": 16
+            },
+            "resistereallamagia": {
+                "value": 14
+            },
+            "rissa": {
+                "value": 16
+            },
+            "sopravvivenza": {
+                "value": 13
+            }
+        },
+        "details": {
+            "biography": "<p>Invece di impiegare come guardia un umano fallibile, dotandolo di armi e armature, perché non animare direttamente la corazza? – Rodolf Kazmer</p><p>Le armature viventi sono instancabili, relativamente economiche e assolutamente fedeli. In combattimento si comportano in maniera simile ai comuni soldati, maneggiando le armi con abilità equivalente. Il modo migliore per distruggerle è aprirne il torso e distruggere il cuore di golem al centro.</p>",
+            "threat": "Media",
+            "reward": 400,
+            "monsterType": "Elementa",
+            "difficulty": "MEDIUM"
+        },
+        "derivedStats": {
+            "vigor": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "rec": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "resolve": {
+                "value": null,
+                "max": null,
+                "unmodifiedMax": null
+            },
+            "stun": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "woundTreshold": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "hp": {
+                "value": 60,
+                "max": 60,
+                "unmodifiedMax": 60
+            },
+            "sta": {
+                "value": null,
+                "max": null,
+                "unmodifiedMax": null
+            }
+        },
+        "description": "<p>Invece di impiegare come guardia un umano fallibile, dotandolo di armi e armature, perché non animare direttamente la corazza? – Rodolf Kazmer</p><p>Le armature viventi sono instancabili, relativamente economiche e assolutamente fedeli. In combattimento si comportano in maniera simile ai comuni soldati, maneggiando le armi con abilità equivalente. Il modo migliore per distruggerle è aprirne il torso e distruggere il cuore di golem al centro.</p>",
+        "sourcebook": "TC 198",
+        "monsterType": "Elementa",
+        "difficulty": "MEDIUM",
+        "bounty": 400
     },
-    "skills": {
-      "accortezza": {
-        "value": 14
-      },
-      "atletica": {
-        "value": 10
-      },
-      "intimidire": {
-        "value": 10
-      },
-      "nascondersi": {
-        "value": 10
-      },
-      "prestanza": {
-        "value": 16
-      },
-      "resistereallamagia": {
-        "value": 14
-      },
-      "rissa": {
-        "value": 16
-      },
-      "sopravvivenza": {
-        "value": 13
-      }
-    },
-    "details": {
-      "biography": "<p>Invece di impiegare come guardia un umano fallibile, dotandolo di armi e armature, perché non animare direttamente la corazza? – Rodolf Kazmer</p><p>Le armature viventi sono instancabili, relativamente economiche e assolutamente fedeli. In combattimento si comportano in maniera simile ai comuni soldati, maneggiando le armi con abilità equivalente. Il modo migliore per distruggerle è aprirne il torso e distruggere il cuore di golem al centro.</p>",
-      "threat": "Media",
-      "reward": 400,
-      "monsterType": "Elementa",
-      "difficulty": "MEDIUM"
-    },
-    "derivedStats": {
-      "vigor": {
-        "value": 0,
-        "max": 0,
-        "unmodifiedMax": 0
-      },
-      "rec": {
-        "value": 6,
-        "max": 6,
-        "unmodifiedMax": 6
-      },
-      "resolve": {
-        "value": null,
-        "max": null,
-        "unmodifiedMax": null
-      },
-      "stun": {
-        "value": 6,
-        "max": 6,
-        "unmodifiedMax": 6
-      },
-      "woundTreshold": {
-        "value": 6,
-        "max": 6,
-        "unmodifiedMax": 6
-      },
-      "hp": {
-        "value": 60,
-        "max": 60,
-        "unmodifiedMax": 60
-      },
-      "sta": {
-        "value": null,
-        "max": null,
-        "unmodifiedMax": null
-      }
-    },
-    "description": "<p>Invece di impiegare come guardia un umano fallibile, dotandolo di armi e armature, perché non animare direttamente la corazza? – Rodolf Kazmer</p><p>Le armature viventi sono instancabili, relativamente economiche e assolutamente fedeli. In combattimento si comportano in maniera simile ai comuni soldati, maneggiando le armi con abilità equivalente. Il modo migliore per distruggerle è aprirne il torso e distruggere il cuore di golem al centro.</p>",
-    "sourcebook": "TC 198",
-    "monsterType": "Elementa",
-    "difficulty": "MEDIUM",
-    "bounty": 400
-  },
-  "items": [
-    {
-      "_id": "v1",
-      "name": "Pugni",
-      "type": "weapon",
-      "img": "icons/svg/sword.svg",
-      "system": {
-        "description": "",
-        "damage": "1d6+2",
-        "accuracy": 0,
-        "effects": ""
-      },
-      "_stats": {
+    "items": [
+        {
+            "_id": "v1",
+            "name": "Pugni",
+            "type": "weapon",
+            "img": "icons/svg/sword.svg",
+            "system": {
+                "description": "",
+                "damage": "1d6+2",
+                "accuracy": 0,
+                "effects": ""
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "v2",
+            "name": "[Capacità] Maestro d'Armi",
+            "type": "note",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "<p>Ha Base 16 in tutte le Abilità di combattimento relative alle armi impugnate.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "v3",
+            "name": "[Capacità] Cuore di Golem",
+            "type": "note",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "<p>Sospeso all'interno del torace. Se il torace viene ridotto a PR 0, un colpo distrugge il cuore e uccide l'armatura.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        }
+    ],
+    "effects": [],
+    "flags": {},
+    "_stats": {
         "systemId": "TheWitcherItaNewSystem",
         "coreVersion": 14
-      }
-    },
-    {
-      "_id": "v2",
-      "name": "[Capacità] Maestro d'Armi",
-      "type": "note",
-      "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-      "system": {
-        "description": "<p>Ha Base 16 in tutte le Abilità di combattimento relative alle armi impugnate.</p>"
-      },
-      "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-      }
-    },
-    {
-      "_id": "v3",
-      "name": "[Capacità] Cuore di Golem",
-      "type": "note",
-      "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-      "system": {
-        "description": "<p>Sospeso all'interno del torace. Se il torace viene ridotto a PR 0, un colpo distrugge il cuore e uccide l'armatura.</p>"
-      },
-      "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-      }
     }
-  ],
-  "effects": [],
-  "flags": {},
-  "_stats": {
-    "systemId": "TheWitcherItaNewSystem",
-    "coreVersion": 14
-  }
 }

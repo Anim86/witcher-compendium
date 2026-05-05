@@ -1,59 +1,59 @@
 {
-  "_id": "5f833da91e34474a",
-  "name": "Balestra da Cacciatore di Mostri",
-  "type": "weapon",
-  "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/balestra_da_cacciatore_di_mostri.webp",
-  "system": {
-    "description": "<p>Di questi tempi i mostri non sono molto frequenti. Potrei contare tutti i miei avvistamenti di mostri sulle dita di una mano. Ma saltano ancora fuori di tanto in tanto e, ora che i witcher sono altrettanto rari, qualche bastardo giù a sud ha sviluppato questa belva. Lunga più di un metro e quasi al- trettanto tra un braccio e l'altro, dicono che questa balestra deve essere caricata con un verricello e spara con una forza di 136 chili. Ce li vedo a pensare che, se ci vuole parecchia potenza per ammazzare un mostro, perché non fare una dannata balista portatile per abbatterli a distanza, eh.</p>",
-    "cost": 1125,
-    "reliability": {
-      "max": 15,
-      "value": 15
+    "_id": "5f833da91e34474a",
+    "name": "Balestra da Cacciatore di Mostri",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/balestra_da_cacciatore_di_mostri.webp",
+    "system": {
+        "description": "<p>Di questi tempi i mostri non sono molto frequenti. Potrei contare tutti i miei avvistamenti di mostri sulle dita di una mano. Ma saltano ancora fuori di tanto in tanto e, ora che i witcher sono altrettanto rari, qualche bastardo giù a sud ha sviluppato questa belva. Lunga più di un metro e quasi al- trettanto tra un braccio e l'altro, dicono che questa balestra deve essere caricata con un verricello e spara con una forza di 136 chili. Ce li vedo a pensare che, se ci vuole parecchia potenza per ammazzare un mostro, perché non fare una dannata balista portatile per abbatterli a distanza, eh.</p>",
+        "cost": 1125,
+        "reliability": {
+            "max": 15,
+            "value": 15
+        },
+        "reach": "200m",
+        "effects": "Ricarica Lenta Trapassare",
+        "sourcebook": "MB 76",
+        "range": "200m",
+        "type": {
+            "text": "",
+            "slashing": false,
+            "piercing": true,
+            "bludgeoning": false,
+            "elemental": false
+        },
+        "damageProperties": {
+            "armorPiercing": true,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "isMeteorite": false,
+            "isNonLethal": false,
+            "effects": [
+                {
+                    "id": "000abcfa249abfc3",
+                    "name": "Ricarica Lenta",
+                    "statusEffect": null,
+                    "percentage": 100,
+                    "varEffect": false
+                }
+            ]
+        },
+        "weight": 4,
+        "rarity": "Rara",
+        "damage": "6d6",
+        "hands": 2,
+        "accuracy": 1,
+        "unmodifiedMax": {}
     },
-    "reach": "200m",
-    "effects": "Ricarica Lenta Trapassare",
-    "sourcebook": "MB 76",
-    "range": "200m",
-    "type": {
-      "text": "",
-      "slashing": false,
-      "piercing": true,
-      "bludgeoning": false,
-      "elemental": false
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
     },
-    "damageProperties": {
-      "armorPiercing": true,
-      "improvedArmorPiercing": false,
-      "ablating": false,
-      "crushingForce": false,
-      "isMeteorite": false,
-      "isNonLethal": false,
-      "effects": [
-        {
-          "id": "000abcfa249abfc3",
-          "name": "Ricarica Lenta",
-          "statusEffect": null,
-          "percentage": 100,
-          "varEffect": false
-        }
-      ]
-    },
-    "weight": 4,
-    "rarity": "Rara",
-    "damage": "6d6",
-    "hands": 2,
-    "accuracy": 1,
-    "unmodifiedMax": {}
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "TheWitcherItaNewSystem",
-    "coreVersion": 14
-  }
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
 }

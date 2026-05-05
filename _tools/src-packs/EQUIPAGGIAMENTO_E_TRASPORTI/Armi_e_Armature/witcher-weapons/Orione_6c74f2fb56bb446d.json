@@ -1,51 +1,51 @@
 {
-  "_id": "6c74f2fb56bb446d",
-  "name": "Orione",
-  "type": "weapon",
-  "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/orione.webp",
-  "system": {
-    "description": "<p>I Neri hanno preso a usare questi cosi da qualche decina d'anni. Sono come dei coltelli da lancio, ma fatti a stella. Eh, strano modello, ma diamine se son pericolosi. E pure rapidi. ARCHI</p>",
-    "cost": 100,
-    "reliability": {
-      "max": 5,
-      "value": 5
+    "_id": "6c74f2fb56bb446d",
+    "name": "Orione",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/orione.webp",
+    "system": {
+        "description": "<p>I Neri hanno preso a usare questi cosi da qualche decina d'anni. Sono come dei coltelli da lancio, ma fatti a stella. Eh, strano modello, ma diamine se son pericolosi. E pure rapidi. ARCHI</p>",
+        "cost": 100,
+        "reliability": {
+            "max": 5,
+            "value": 5
+        },
+        "reach": "FIS x4m",
+        "effects": "N/A",
+        "sourcebook": "MB 76",
+        "range": "FISx4m",
+        "type": {
+            "text": "",
+            "slashing": true,
+            "piercing": false,
+            "bludgeoning": false,
+            "elemental": false
+        },
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "isMeteorite": false,
+            "isNonLethal": false,
+            "effects": []
+        },
+        "weight": 0.1,
+        "rarity": "Scarsa",
+        "damage": "1d6",
+        "hands": 1,
+        "accuracy": 1,
+        "unmodifiedMax": {}
     },
-    "reach": "FIS x4m",
-    "effects": "N/A",
-    "sourcebook": "MB 76",
-    "range": "FISx4m",
-    "type": {
-      "text": "",
-      "slashing": true,
-      "piercing": false,
-      "bludgeoning": false,
-      "elemental": false
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
     },
-    "damageProperties": {
-      "armorPiercing": false,
-      "improvedArmorPiercing": false,
-      "ablating": false,
-      "crushingForce": false,
-      "isMeteorite": false,
-      "isNonLethal": false,
-      "effects": []
-    },
-    "weight": 0.1,
-    "rarity": "Scarsa",
-    "damage": "1d6",
-    "hands": 1,
-    "accuracy": 1,
-    "unmodifiedMax": {}
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "TheWitcherItaNewSystem",
-    "coreVersion": 14
-  }
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
 }

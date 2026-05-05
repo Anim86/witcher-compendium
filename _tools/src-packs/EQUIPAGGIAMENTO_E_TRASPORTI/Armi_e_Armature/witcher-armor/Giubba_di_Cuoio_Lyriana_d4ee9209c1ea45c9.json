@@ -1,55 +1,55 @@
 {
-  "_id": "d4ee9209c1ea45c9",
-  "name": "Giubba di Cuoio Lyriana",
-  "type": "armor",
-  "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-armor/giubba_di_cuoio_lyriana.webp",
-  "system": {
-    "description": "<p>Sono stato abbastanza fortunato da indossare una giubba di cuoio lyriana, una volta. Porco mondo, mi pareva di essere in una dannata corazza di piastre. I Lyriani trattano il loro cuoio con una lavorazione speciale che lo rende duro come la pelle di basilisco. Mi son fatto tirare una freccia dal mercante con un arco lungo e manco m'ha graffiato! Magari all'epoca ero un po' sbronzo.</p>",
-    "cost": 525,
-    "reliability": {
-      "value": 0,
-      "max": 0
+    "_id": "d4ee9209c1ea45c9",
+    "name": "Giubba di Cuoio Lyriana",
+    "type": "armor",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-armor/giubba_di_cuoio_lyriana.webp",
+    "system": {
+        "description": "<p>Sono stato abbastanza fortunato da indossare una giubba di cuoio lyriana, una volta. Porco mondo, mi pareva di essere in una dannata corazza di piastre. I Lyriani trattano il loro cuoio con una lavorazione speciale che lo rende duro come la pelle di basilisco. Mi son fatto tirare una freccia dal mercante con un arco lungo e manco m'ha graffiato! Magari all'epoca ero un po' sbronzo.</p>",
+        "cost": 525,
+        "reliability": {
+            "value": 0,
+            "max": 0
+        },
+        "sourcebook": "MB 81",
+        "type": "Medium",
+        "location": "Torso",
+        "encumb": 1,
+        "enhancements": 1,
+        "headStopping": 0,
+        "headMaxStopping": 0,
+        "torsoStopping": 16,
+        "torsoMaxStopping": 16,
+        "leftArmStopping": 16,
+        "leftArmMaxStopping": 16,
+        "rightArmStopping": 16,
+        "rightArmMaxStopping": 16,
+        "leftLegStopping": 0,
+        "leftLegMaxStopping": 0,
+        "rightLegStopping": 0,
+        "rightLegMaxStopping": 0,
+        "bludgeoning": false,
+        "slashing": false,
+        "piercing": false,
+        "elemental": false,
+        "fire": false,
+        "poison": false,
+        "bleeding": false,
+        "weight": 6.5,
+        "rarity": "Rara",
+        "stoppingPower": 16,
+        "protection": {},
+        "encumbranceMod": -1,
+        "unmodifiedMax": {}
     },
-    "sourcebook": "MB 81",
-    "type": "Medium",
-    "location": "Torso",
-    "encumb": 1,
-    "enhancements": 1,
-    "headStopping": 0,
-    "headMaxStopping": 0,
-    "torsoStopping": 16,
-    "torsoMaxStopping": 16,
-    "leftArmStopping": 16,
-    "leftArmMaxStopping": 16,
-    "rightArmStopping": 16,
-    "rightArmMaxStopping": 16,
-    "leftLegStopping": 0,
-    "leftLegMaxStopping": 0,
-    "rightLegStopping": 0,
-    "rightLegMaxStopping": 0,
-    "bludgeoning": false,
-    "slashing": false,
-    "piercing": false,
-    "elemental": false,
-    "fire": false,
-    "poison": false,
-    "bleeding": false,
-    "weight": 6.5,
-    "rarity": "Rara",
-    "stoppingPower": 16,
-    "protection": {},
-    "encumbranceMod": -1,
-    "unmodifiedMax": {}
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "TheWitcherItaNewSystem",
-    "coreVersion": 14
-  }
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
 }

@@ -1,55 +1,55 @@
 {
-  "_id": "5db318389d2f4b48",
-  "name": "Armatura Pesante di Hindarsfjall",
-  "type": "armor",
-  "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-armor/armatura_pesante_di_hindarsfjall.webp",
-  "system": {
-    "description": "<p>Son stato a Skellige una o due volte in vita mia. Andai a Hindarsfjall parecchio tempo fa, a visitare il tempio di Freya. Fuori avevano degli spadaccini che indossavano quest'arma- tura bestiale. Ãˆ un usbergo di maglia pesante lungo fino al ginocchio, con sotto uno strato di cuoio indurito e sopra uno di cuoio borchiato, con in più una pancera di cuoio spesso. Penso che questa roba riuscirebbe a deviare anche una dan- nata alabarda.</p>",
-    "cost": 750,
-    "reliability": {
-      "value": 0,
-      "max": 0
+    "_id": "5db318389d2f4b48",
+    "name": "Armatura Pesante di Hindarsfjall",
+    "type": "armor",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-armor/armatura_pesante_di_hindarsfjall.webp",
+    "system": {
+        "description": "<p>Son stato a Skellige una o due volte in vita mia. Andai a Hindarsfjall parecchio tempo fa, a visitare il tempio di Freya. Fuori avevano degli spadaccini che indossavano quest'arma- tura bestiale. Ãˆ un usbergo di maglia pesante lungo fino al ginocchio, con sotto uno strato di cuoio indurito e sopra uno di cuoio borchiato, con in più una pancera di cuoio spesso. Penso che questa roba riuscirebbe a deviare anche una dan- nata alabarda.</p>",
+        "cost": 750,
+        "reliability": {
+            "value": 0,
+            "max": 0
+        },
+        "sourcebook": "MB 81",
+        "type": "Heavy",
+        "location": "Torso",
+        "encumb": 2,
+        "enhancements": 3,
+        "headStopping": 0,
+        "headMaxStopping": 0,
+        "torsoStopping": 25,
+        "torsoMaxStopping": 25,
+        "leftArmStopping": 25,
+        "leftArmMaxStopping": 25,
+        "rightArmStopping": 25,
+        "rightArmMaxStopping": 25,
+        "leftLegStopping": 0,
+        "leftLegMaxStopping": 0,
+        "rightLegStopping": 0,
+        "rightLegMaxStopping": 0,
+        "bludgeoning": false,
+        "slashing": false,
+        "piercing": false,
+        "elemental": false,
+        "fire": false,
+        "poison": false,
+        "bleeding": false,
+        "weight": 15,
+        "rarity": "Rara",
+        "stoppingPower": 25,
+        "protection": {},
+        "encumbranceMod": -2,
+        "unmodifiedMax": {}
     },
-    "sourcebook": "MB 81",
-    "type": "Heavy",
-    "location": "Torso",
-    "encumb": 2,
-    "enhancements": 3,
-    "headStopping": 0,
-    "headMaxStopping": 0,
-    "torsoStopping": 25,
-    "torsoMaxStopping": 25,
-    "leftArmStopping": 25,
-    "leftArmMaxStopping": 25,
-    "rightArmStopping": 25,
-    "rightArmMaxStopping": 25,
-    "leftLegStopping": 0,
-    "leftLegMaxStopping": 0,
-    "rightLegStopping": 0,
-    "rightLegMaxStopping": 0,
-    "bludgeoning": false,
-    "slashing": false,
-    "piercing": false,
-    "elemental": false,
-    "fire": false,
-    "poison": false,
-    "bleeding": false,
-    "weight": 15,
-    "rarity": "Rara",
-    "stoppingPower": 25,
-    "protection": {},
-    "encumbranceMod": -2,
-    "unmodifiedMax": {}
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "TheWitcherItaNewSystem",
-    "coreVersion": 14
-  }
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
 }

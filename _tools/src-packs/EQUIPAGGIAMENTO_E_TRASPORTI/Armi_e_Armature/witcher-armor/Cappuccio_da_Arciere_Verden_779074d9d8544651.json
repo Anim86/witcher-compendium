@@ -1,55 +1,55 @@
 {
-  "_id": "779074d9d8544651",
-  "name": "Cappuccio da Arciere Verden",
-  "type": "armor",
-  "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-armor/cappuccio_da_arciere_verden.webp",
-  "system": {
-    "description": "<p>Gli arcieri di Verden sono dei duri. Tendono a non avere troppa protezione addosso. Penso che se ne freghino, visto che ci pensano le driadi a riempire i buchi. Però i loro cap- pucci corazzati sono buoni, in stoffa robusta con un motivo a frecce blu e nere.</p>",
-    "cost": 100,
-    "reliability": {
-      "value": 0,
-      "max": 0
+    "_id": "779074d9d8544651",
+    "name": "Cappuccio da Arciere Verden",
+    "type": "armor",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-armor/cappuccio_da_arciere_verden.webp",
+    "system": {
+        "description": "<p>Gli arcieri di Verden sono dei duri. Tendono a non avere troppa protezione addosso. Penso che se ne freghino, visto che ci pensano le driadi a riempire i buchi. Però i loro cap- pucci corazzati sono buoni, in stoffa robusta con un motivo a frecce blu e nere.</p>",
+        "cost": 100,
+        "reliability": {
+            "value": 0,
+            "max": 0
+        },
+        "sourcebook": "MB 81",
+        "type": "Light",
+        "location": "Head",
+        "encumb": 0,
+        "enhancements": 1,
+        "headStopping": 3,
+        "headMaxStopping": 3,
+        "torsoStopping": 0,
+        "torsoMaxStopping": 0,
+        "leftArmStopping": 0,
+        "leftArmMaxStopping": 0,
+        "rightArmStopping": 0,
+        "rightArmMaxStopping": 0,
+        "leftLegStopping": 0,
+        "leftLegMaxStopping": 0,
+        "rightLegStopping": 0,
+        "rightLegMaxStopping": 0,
+        "bludgeoning": false,
+        "slashing": false,
+        "piercing": false,
+        "elemental": false,
+        "fire": false,
+        "poison": false,
+        "bleeding": false,
+        "weight": 0.5,
+        "rarity": "Comune",
+        "stoppingPower": 3,
+        "protection": {},
+        "encumbranceMod": 0,
+        "unmodifiedMax": {}
     },
-    "sourcebook": "MB 81",
-    "type": "Light",
-    "location": "Head",
-    "encumb": 0,
-    "enhancements": 1,
-    "headStopping": 3,
-    "headMaxStopping": 3,
-    "torsoStopping": 0,
-    "torsoMaxStopping": 0,
-    "leftArmStopping": 0,
-    "leftArmMaxStopping": 0,
-    "rightArmStopping": 0,
-    "rightArmMaxStopping": 0,
-    "leftLegStopping": 0,
-    "leftLegMaxStopping": 0,
-    "rightLegStopping": 0,
-    "rightLegMaxStopping": 0,
-    "bludgeoning": false,
-    "slashing": false,
-    "piercing": false,
-    "elemental": false,
-    "fire": false,
-    "poison": false,
-    "bleeding": false,
-    "weight": 0.5,
-    "rarity": "Comune",
-    "stoppingPower": 3,
-    "protection": {},
-    "encumbranceMod": 0,
-    "unmodifiedMax": {}
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "TheWitcherItaNewSystem",
-    "coreVersion": 14
-  }
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
 }

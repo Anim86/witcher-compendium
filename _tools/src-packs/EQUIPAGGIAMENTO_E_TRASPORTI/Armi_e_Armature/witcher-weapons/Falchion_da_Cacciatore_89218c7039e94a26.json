@@ -1,50 +1,50 @@
 {
-  "_id": "89218c7039e94a26",
-  "name": "Falchion da Cacciatore",
-  "type": "weapon",
-  "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/falchion_da_cacciatore.webp",
-  "system": {
-    "description": "<p>I cacciatori usano queste pesanti lame per macellare le loro prede. Se cerchi una lama buona per spaccar legna e mozza- re arti, eccola qua. Sui campi di battaglia si trovano spesso in mano alle persone comuni.</p>",
-    "cost": 325,
-    "reliability": {
-      "max": 15,
-      "value": 15
+    "_id": "89218c7039e94a26",
+    "name": "Falchion da Cacciatore",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/falchion_da_cacciatore.webp",
+    "system": {
+        "description": "<p>I cacciatori usano queste pesanti lame per macellare le loro prede. Se cerchi una lama buona per spaccar legna e mozza- re arti, eccola qua. Sui campi di battaglia si trovano spesso in mano alle persone comuni.</p>",
+        "cost": 325,
+        "reliability": {
+            "max": 15,
+            "value": 15
+        },
+        "accuracy": 0,
+        "reach": "N/A",
+        "effects": "N/A",
+        "sourcebook": "MB 75",
+        "type": {
+            "text": "",
+            "slashing": true,
+            "piercing": true,
+            "bludgeoning": false,
+            "elemental": false
+        },
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "isMeteorite": false,
+            "isNonLethal": false,
+            "effects": []
+        },
+        "weight": 2,
+        "rarity": "Comune",
+        "damage": "3d6",
+        "hands": 1,
+        "unmodifiedMax": {}
     },
-    "accuracy": 0,
-    "reach": "N/A",
-    "effects": "N/A",
-    "sourcebook": "MB 75",
-    "type": {
-      "text": "",
-      "slashing": true,
-      "piercing": true,
-      "bludgeoning": false,
-      "elemental": false
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
     },
-    "damageProperties": {
-      "armorPiercing": false,
-      "improvedArmorPiercing": false,
-      "ablating": false,
-      "crushingForce": false,
-      "isMeteorite": false,
-      "isNonLethal": false,
-      "effects": []
-    },
-    "weight": 2,
-    "rarity": "Comune",
-    "damage": "3d6",
-    "hands": 1,
-    "unmodifiedMax": {}
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "TheWitcherItaNewSystem",
-    "coreVersion": 14
-  }
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
 }

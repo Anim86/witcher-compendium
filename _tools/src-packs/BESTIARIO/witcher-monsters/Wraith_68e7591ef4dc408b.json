@@ -1,184 +1,184 @@
 {
-  "_id": "68e7591ef4dc408b",
-  "name": "Wraith",
-  "type": "monster",
-  "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/wraith.webp",
-  "system": {
-    "stats": {
-      "int": {
-        "value": 3,
-        "max": 3,
-        "unmodifiedMax": 3
-      },
-      "ref": {
-        "value": 8,
-        "max": 8,
-        "unmodifiedMax": 8
-      },
-      "dex": {
-        "value": 8,
-        "max": 8,
-        "unmodifiedMax": 8
-      },
-      "body": {
-        "value": 7,
-        "max": 7,
-        "unmodifiedMax": 7
-      },
-      "spd": {
-        "value": 6,
-        "max": 6,
-        "unmodifiedMax": 6
-      },
-      "emp": {
-        "value": 1,
-        "max": 1,
-        "unmodifiedMax": 1
-      },
-      "cra": {
-        "value": 1,
-        "max": 1,
-        "unmodifiedMax": 1
-      },
-      "will": {
-        "value": 7,
-        "max": 7,
-        "unmodifiedMax": 7
-      },
-      "luck": {
-        "value": 0,
-        "max": 0,
-        "unmodifiedMax": 0
-      }
+    "_id": "68e7591ef4dc408b",
+    "name": "Wraith",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/wraith.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
+            },
+            "ref": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "dex": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "body": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "spd": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "emp": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "cra": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "will": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 8
+            },
+            "atletica": {
+                "value": 5
+            },
+            "eludere": {
+                "value": 6
+            },
+            "mischia": {
+                "value": 6
+            },
+            "nascondersi": {
+                "value": 9
+            },
+            "rissa": {
+                "value": 6
+            },
+            "scherma": {
+                "value": 7
+            },
+            "sopravvivenza": {
+                "value": 6
+            },
+            "tempra": {
+                "value": 7
+            }
+        },
+        "details": {
+            "biography": "<p>Secondo i racconti, ci sono wraith di ogni forma e colore. Sono le anime dei morti e dei dannati, che tornano per perseguitare i vivi. – Rodolf Kazmer</p><p>I wraith sono uno dei pochi tipi di mostro davvero legati ai defunti. Un wraith è lo spirito di una persona morta in circostanze terribili o con questioni in sospeso. Molti tornano al regno dei morti una volta eliminati.</p>",
+            "threat": "Media",
+            "reward": 800,
+            "monsterType": "Specter",
+            "difficulty": "MEDIUM"
+        },
+        "derivedStats": {
+            "vigor": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "rec": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "resolve": {
+                "value": 40,
+                "max": 40,
+                "unmodifiedMax": 40
+            },
+            "stun": {
+                "value": 7,
+                "max": 7
+            },
+            "woundTreshold": {
+                "value": 7,
+                "max": 7
+            },
+            "hp": {
+                "value": 40,
+                "max": 40,
+                "unmodifiedMax": 40
+            },
+            "sta": {
+                "value": 40,
+                "max": 40,
+                "unmodifiedMax": 40
+            }
+        },
+        "description": "<p>Secondo i racconti, ci sono wraith di ogni forma e colore. Sono le anime dei morti e dei dannati, che tornano per perseguitare i vivi. – Rodolf Kazmer</p><p>I wraith sono uno dei pochi tipi di mostro davvero legati ai defunti. Un wraith è lo spirito di una persona morta in circostanze terribili o con questioni in sospeso. Molti tornano al regno dei morti una volta eliminati.</p>",
+        "sourcebook": "MB 283",
+        "monsterType": "Specter",
+        "difficulty": "MEDIUM",
+        "bounty": 800
     },
-    "skills": {
-      "accortezza": {
-        "value": 8
-      },
-      "atletica": {
-        "value": 5
-      },
-      "eludere": {
-        "value": 6
-      },
-      "mischia": {
-        "value": 6
-      },
-      "nascondersi": {
-        "value": 9
-      },
-      "rissa": {
-        "value": 6
-      },
-      "scherma": {
-        "value": 7
-      },
-      "sopravvivenza": {
-        "value": 6
-      },
-      "tempra": {
-        "value": 7
-      }
-    },
-    "details": {
-      "biography": "<p>Secondo i racconti, ci sono wraith di ogni forma e colore. Sono le anime dei morti e dei dannati, che tornano per perseguitare i vivi. – Rodolf Kazmer</p><p>I wraith sono uno dei pochi tipi di mostro davvero legati ai defunti. Un wraith è lo spirito di una persona morta in circostanze terribili o con questioni in sospeso. Molti tornano al regno dei morti una volta eliminati.</p>",
-      "threat": "Media",
-      "reward": 800,
-      "monsterType": "Specter",
-      "difficulty": "MEDIUM"
-    },
-    "derivedStats": {
-      "vigor": {
-        "value": 0,
-        "max": 0,
-        "unmodifiedMax": 0
-      },
-      "rec": {
-        "value": 8,
-        "max": 8,
-        "unmodifiedMax": 8
-      },
-      "resolve": {
-        "value": 40,
-        "max": 40,
-        "unmodifiedMax": 40
-      },
-      "stun": {
-        "value": 7,
-        "max": 7
-      },
-      "woundTreshold": {
-        "value": 7,
-        "max": 7
-      },
-      "hp": {
-        "value": 40,
-        "max": 40,
-        "unmodifiedMax": 40
-      },
-      "sta": {
-        "value": 40,
-        "max": 40,
-        "unmodifiedMax": 40
-      }
-    },
-    "description": "<p>Secondo i racconti, ci sono wraith di ogni forma e colore. Sono le anime dei morti e dei dannati, che tornano per perseguitare i vivi. – Rodolf Kazmer</p><p>I wraith sono uno dei pochi tipi di mostro davvero legati ai defunti. Un wraith è lo spirito di una persona morta in circostanze terribili o con questioni in sospeso. Molti tornano al regno dei morti una volta eliminati.</p>",
-    "sourcebook": "MB 283",
-    "monsterType": "Specter",
-    "difficulty": "MEDIUM",
-    "bounty": 800
-  },
-  "items": [
-    {
-      "_id": "cbede690df734612",
-      "name": "Lanterna Wraith",
-      "type": "weapon",
-      "img": "icons/svg/sword.svg",
-      "system": {
-        "description": "",
-        "damage": "2d6+2",
-        "accuracy": 0,
-        "effects": "Fuoco (25%)"
-      },
-      "_stats": {
+    "items": [
+        {
+            "_id": "cbede690df734612",
+            "name": "Lanterna Wraith",
+            "type": "weapon",
+            "img": "icons/svg/sword.svg",
+            "system": {
+                "description": "",
+                "damage": "2d6+2",
+                "accuracy": 0,
+                "effects": "Fuoco (25%)"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "0558db7d6f4e4515",
+            "name": "Spada Wraith",
+            "type": "weapon",
+            "img": "icons/svg/sword.svg",
+            "system": {
+                "description": "",
+                "damage": "3d6",
+                "accuracy": 0,
+                "effects": ""
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "w1",
+            "name": "[Capacità] Teletrasporto",
+            "type": "note",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "<p>Può teletrasportarsi istantaneamente di 10m come azione di movimento.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        }
+    ],
+    "effects": [],
+    "flags": {},
+    "_stats": {
         "systemId": "TheWitcherItaNewSystem",
         "coreVersion": 14
-      }
-    },
-    {
-      "_id": "0558db7d6f4e4515",
-      "name": "Spada Wraith",
-      "type": "weapon",
-      "img": "icons/svg/sword.svg",
-      "system": {
-        "description": "",
-        "damage": "3d6",
-        "accuracy": 0,
-        "effects": ""
-      },
-      "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-      }
-    },
-    {
-      "_id": "w1",
-      "name": "[Capacità] Teletrasporto",
-      "type": "note",
-      "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-      "system": {
-        "description": "<p>Può teletrasportarsi istantaneamente di 10m come azione di movimento.</p>"
-      },
-      "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-      }
     }
-  ],
-  "effects": [],
-  "flags": {},
-  "_stats": {
-    "systemId": "TheWitcherItaNewSystem",
-    "coreVersion": 14
-  }
 }

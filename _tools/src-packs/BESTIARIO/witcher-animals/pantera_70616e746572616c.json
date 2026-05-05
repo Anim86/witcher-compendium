@@ -1,197 +1,197 @@
 {
-  "_id": "70616e746572616c",
-  "name": "Pantera",
-  "type": "monster",
-  "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-animals/pantera.webp",
-  "system": {
-    "stats": {
-      "int": {
-        "value": 1,
-        "max": 1,
-        "unmodifiedMax": 1
-      },
-      "ref": {
-        "value": 7,
-        "max": 7,
-        "unmodifiedMax": 7
-      },
-      "dex": {
-        "value": 7,
-        "max": 7,
-        "unmodifiedMax": 7
-      },
-      "body": {
-        "value": 5,
-        "max": 5,
-        "unmodifiedMax": 5
-      },
-      "spd": {
-        "value": 8,
-        "max": 8,
-        "unmodifiedMax": 8
-      },
-      "emp": {
-        "value": 1,
-        "max": 1,
-        "unmodifiedMax": 1
-      },
-      "cra": {
-        "value": 1,
-        "max": 1,
-        "unmodifiedMax": 1
-      },
-      "will": {
-        "value": 6,
-        "max": 6,
-        "unmodifiedMax": 6
-      },
-      "luck": {
-        "value": 0,
-        "max": 0,
-        "unmodifiedMax": 0
-      }
+    "_id": "70616e746572616c",
+    "name": "Pantera",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-animals/pantera.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "ref": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "dex": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "body": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "spd": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "emp": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "cra": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "will": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 15
+            },
+            "atletica": {
+                "value": 16
+            },
+            "coraggio": {
+                "value": 14
+            },
+            "intimidire": {
+                "value": 12
+            },
+            "nascondersi": {
+                "value": 17
+            },
+            "prestanza": {
+                "value": 13
+            },
+            "resistereAllaMagia": {
+                "value": 10
+            },
+            "rissa": {
+                "value": 12
+            },
+            "sopravvivenza": {
+                "value": 14
+            },
+            "tempra": {
+                "value": 12
+            }
+        },
+        "details": {
+            "biography": "<p>Ah, le pantere, che bestiacce esotiche! Ho sentito che le donne selvagge e le streghe del sud le tengono come famigli. Se vedete una pantera con gli occhi che brillano alla luce della luna, c'è un mago che vi sta spiando! Ne ho viste solo due in vita mia, mentre passavo per Mag Turga per… ehm… affari. Molto impressionanti, dico io, non vorrei diventare la loro vittima! – Rodolf Kazmer</p>",
+            "threat": "Media Semplice",
+            "reward": 20,
+            "monsterType": "Beast",
+            "difficulty": "MEDIUM"
+        },
+        "derivedStats": {
+            "hp": {
+                "value": 25,
+                "max": 25,
+                "unmodifiedMax": 25
+            },
+            "sta": {
+                "value": 25,
+                "max": 25,
+                "unmodifiedMax": 25
+            },
+            "vigor": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "rec": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "stun": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "resolve": {
+                "value": 25,
+                "max": 25,
+                "unmodifiedMax": 25
+            },
+            "woundTreshold": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            }
+        },
+        "description": "<p>In tutto il Continente, pantere, puma e altri grossi felini sono una costante minaccia per i viaggiatori. Seguono silenziosamente la preda, in attesa del momento giusto per colpire, di solito attaccando la persona meno corazzata. L'incredibile rapidità e la capacità di arrampicarsi permettono loro di colpire e dileguarsi rapide come saette.</p><p>'Ho sentito racconti su enormi felini striati che vivono nelle giungle di Ofier. Nylah riuscì persino a realizzarne un dipinto dettagliato durante uno dei nostri viaggi. Non ho mai visto nulla di simile sul Continente per taglia o imponenza, ma non era troppo dissimile dalle pantere e dai grandi felini del sud. Si tratta di bestie pericolose, sebbene prediligano tendere imboscate.' – Erland di Larvik</p>",
+        "sourcebook": "LR 150 / DW 40",
+        "monsterType": "Beast",
+        "difficulty": "MEDIUM"
     },
-    "skills": {
-      "accortezza": {
-        "value": 15
-      },
-      "atletica": {
-        "value": 16
-      },
-      "coraggio": {
-        "value": 14
-      },
-      "intimidire": {
-        "value": 12
-      },
-      "nascondersi": {
-        "value": 17
-      },
-      "prestanza": {
-        "value": 13
-      },
-      "resistereAllaMagia": {
-        "value": 10
-      },
-      "rissa": {
-        "value": 12
-      },
-      "sopravvivenza": {
-        "value": 14
-      },
-      "tempra": {
-        "value": 12
-      }
-    },
-    "details": {
-      "biography": "<p>Ah, le pantere, che bestiacce esotiche! Ho sentito che le donne selvagge e le streghe del sud le tengono come famigli. Se vedete una pantera con gli occhi che brillano alla luce della luna, c'è un mago che vi sta spiando! Ne ho viste solo due in vita mia, mentre passavo per Mag Turga per… ehm… affari. Molto impressionanti, dico io, non vorrei diventare la loro vittima! – Rodolf Kazmer</p>",
-      "threat": "Media Semplice",
-      "reward": 20,
-      "monsterType": "Beast",
-      "difficulty": "MEDIUM"
-    },
-    "derivedStats": {
-      "hp": {
-        "value": 25,
-        "max": 25,
-        "unmodifiedMax": 25
-      },
-      "sta": {
-        "value": 25,
-        "max": 25,
-        "unmodifiedMax": 25
-      },
-      "vigor": {
-        "value": 0,
-        "max": 0,
-        "unmodifiedMax": 0
-      },
-      "rec": {
-        "value": 5,
-        "max": 5,
-        "unmodifiedMax": 5
-      },
-      "stun": {
-        "value": 5,
-        "max": 5,
-        "unmodifiedMax": 5
-      },
-      "resolve": {
-        "value": 25,
-        "max": 25,
-        "unmodifiedMax": 25
-      },
-      "woundTreshold": {
-        "value": 5,
-        "max": 5,
-        "unmodifiedMax": 5
-      }
-    },
-    "description": "<p>In tutto il Continente, pantere, puma e altri grossi felini sono una costante minaccia per i viaggiatori. Seguono silenziosamente la preda, in attesa del momento giusto per colpire, di solito attaccando la persona meno corazzata. L'incredibile rapidità e la capacità di arrampicarsi permettono loro di colpire e dileguarsi rapide come saette.</p><p>'Ho sentito racconti su enormi felini striati che vivono nelle giungle di Ofier. Nylah riuscì persino a realizzarne un dipinto dettagliato durante uno dei nostri viaggi. Non ho mai visto nulla di simile sul Continente per taglia o imponenza, ma non era troppo dissimile dalle pantere e dai grandi felini del sud. Si tratta di bestie pericolose, sebbene prediligano tendere imboscate.' – Erland di Larvik</p>",
-    "sourcebook": "LR 150 / DW 40",
-    "monsterType": "Beast",
-    "difficulty": "MEDIUM"
-  },
-  "items": [
-    {
-      "name": "Morso",
-      "type": "weapon",
-      "img": "icons/svg/sword.svg",
-      "system": {
-        "damage": "4d6+4",
-        "accuracy": 0,
-        "type": "P",
-        "effects": "N/A"
-      },
-      "_stats": {
+    "items": [
+        {
+            "name": "Morso",
+            "type": "weapon",
+            "img": "icons/svg/sword.svg",
+            "system": {
+                "damage": "4d6+4",
+                "accuracy": 0,
+                "type": "P",
+                "effects": "N/A"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "name": "Artigli",
+            "type": "weapon",
+            "img": "icons/svg/sword.svg",
+            "system": {
+                "damage": "2d6+2",
+                "accuracy": 0,
+                "type": "T",
+                "effects": "Sanguinamento (30%)"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "name": "[Capacità] Scatto",
+            "type": "note",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "<p>Con un'azione di movimento, una pantera può balzare fino a 4m, in orizzontale o in verticale, senza rincorsa.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "name": "[Capacità] Abile Scalatore",
+            "type": "note",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "<p>Superando una Prova di Atletica per arrampicarsi, una pantera può percorrere 8m, invece dei normali 4m.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        }
+    ],
+    "effects": [],
+    "flags": {},
+    "_stats": {
         "systemId": "TheWitcherItaNewSystem",
         "coreVersion": 14
-      }
-    },
-    {
-      "name": "Artigli",
-      "type": "weapon",
-      "img": "icons/svg/sword.svg",
-      "system": {
-        "damage": "2d6+2",
-        "accuracy": 0,
-        "type": "T",
-        "effects": "Sanguinamento (30%)"
-      },
-      "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-      }
-    },
-    {
-      "name": "[Capacità] Scatto",
-      "type": "note",
-      "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-      "system": {
-        "description": "<p>Con un'azione di movimento, una pantera può balzare fino a 4m, in orizzontale o in verticale, senza rincorsa.</p>"
-      },
-      "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-      }
-    },
-    {
-      "name": "[Capacità] Abile Scalatore",
-      "type": "note",
-      "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-      "system": {
-        "description": "<p>Superando una Prova di Atletica per arrampicarsi, una pantera può percorrere 8m, invece dei normali 4m.</p>"
-      },
-      "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-      }
     }
-  ],
-  "effects": [],
-  "flags": {},
-  "_stats": {
-    "systemId": "TheWitcherItaNewSystem",
-    "coreVersion": 14
-  }
 }

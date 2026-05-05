@@ -1,200 +1,200 @@
 {
-  "_id": "fbbeb3e855404782",
-  "name": "Katakan",
-  "type": "monster",
-  "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/katakan.webp",
-  "system": {
-    "stats": {
-      "int": {
-        "value": 5,
-        "max": 5,
-        "unmodifiedMax": 5
-      },
-      "ref": {
-        "value": 10,
-        "max": 10,
-        "unmodifiedMax": 10
-      },
-      "dex": {
-        "value": 10,
-        "max": 10,
-        "unmodifiedMax": 10
-      },
-      "body": {
-        "value": 6,
-        "max": 6,
-        "unmodifiedMax": 6
-      },
-      "spd": {
-        "value": 8,
-        "max": 8,
-        "unmodifiedMax": 8
-      },
-      "emp": {
-        "value": 5,
-        "max": 5,
-        "unmodifiedMax": 5
-      },
-      "cra": {
-        "value": 5,
-        "max": 5,
-        "unmodifiedMax": 5
-      },
-      "will": {
-        "value": 7,
-        "max": 7,
-        "unmodifiedMax": 7
-      },
-      "luck": {
-        "value": 0,
-        "max": 0,
-        "unmodifiedMax": 0
-      }
+    "_id": "fbbeb3e855404782",
+    "name": "Katakan",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/katakan.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "ref": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "dex": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "body": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "spd": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "emp": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "cra": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "will": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 10
+            },
+            "atletica": {
+                "value": 10
+            },
+            "coraggio": {
+                "value": 8
+            },
+            "eludere": {
+                "value": 10
+            },
+            "intimidire": {
+                "value": 8
+            },
+            "mischia": {
+                "value": 8
+            },
+            "nascondersi": {
+                "value": 10
+            },
+            "rissa": {
+                "value": 7
+            },
+            "sopravvivenza": {
+                "value": 8
+            },
+            "tempra": {
+                "value": 8
+            }
+        },
+        "details": {
+            "biography": "<p>I katakan si trasformano per sedurre le donne più belle e berne il sangue. Se ti capita tieni a portata di mano una testa d'aglio... Tra l'altro, vendo tutta questa roba a prezzi davvero ragionevoli. – Rodolf Kazmer</p><p>I katakan sono un buon punto intermedio tra i bestiali vampiri inferiori e i geniali vampiri superiori. Sono intelligenti, spesso più delle persone comuni, e hanno grandi qualità magiche. Sono in grado di nascondersi a molte forme di rilevazione, compresi i medaglioni dei witcher, e di comunicare telepaticamente con le proprie prede.</p>",
+            "threat": "Ardua",
+            "reward": 1500,
+            "monsterType": "Vampire",
+            "difficulty": "MEDIUM"
+        },
+        "derivedStats": {
+            "vigor": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "rec": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "resolve": {
+                "value": 35,
+                "max": 35,
+                "unmodifiedMax": 35
+            },
+            "stun": {
+                "value": 7,
+                "max": 7
+            },
+            "woundTreshold": {
+                "value": 8,
+                "max": 8
+            },
+            "hp": {
+                "value": 45,
+                "max": 45,
+                "unmodifiedMax": 45
+            },
+            "sta": {
+                "value": 35,
+                "max": 35,
+                "unmodifiedMax": 35
+            }
+        },
+        "description": "<p>I katakan si trasformano per sedurre le donne più belle e berne il sangue. Se ti capita tieni a portata di mano una testa d'aglio... Tra l'altro, vendo tutta questa roba a prezzi davvero ragionevoli. – Rodolf Kazmer</p><p>I katakan sono un buon punto intermedio tra i bestiali vampiri inferiori e i geniali vampiri superiori. Sono intelligenti, spesso più delle persone comuni, e hanno grandi qualità magiche. Sono in grado di nascondersi a molte forme di rilevazione, compresi i medaglioni dei witcher, e di comunicare telepaticamente con le proprie prede.</p>",
+        "sourcebook": "MB 309",
+        "monsterType": "Vampire",
+        "difficulty": "MEDIUM",
+        "bounty": 1500
     },
-    "skills": {
-      "accortezza": {
-        "value": 10
-      },
-      "atletica": {
-        "value": 10
-      },
-      "coraggio": {
-        "value": 8
-      },
-      "eludere": {
-        "value": 10
-      },
-      "intimidire": {
-        "value": 8
-      },
-      "mischia": {
-        "value": 8
-      },
-      "nascondersi": {
-        "value": 10
-      },
-      "rissa": {
-        "value": 7
-      },
-      "sopravvivenza": {
-        "value": 8
-      },
-      "tempra": {
-        "value": 8
-      }
-    },
-    "details": {
-      "biography": "<p>I katakan si trasformano per sedurre le donne più belle e berne il sangue. Se ti capita tieni a portata di mano una testa d'aglio... Tra l'altro, vendo tutta questa roba a prezzi davvero ragionevoli. – Rodolf Kazmer</p><p>I katakan sono un buon punto intermedio tra i bestiali vampiri inferiori e i geniali vampiri superiori. Sono intelligenti, spesso più delle persone comuni, e hanno grandi qualità magiche. Sono in grado di nascondersi a molte forme di rilevazione, compresi i medaglioni dei witcher, e di comunicare telepaticamente con le proprie prede.</p>",
-      "threat": "Ardua",
-      "reward": 1500,
-      "monsterType": "Vampire",
-      "difficulty": "MEDIUM"
-    },
-    "derivedStats": {
-      "vigor": {
-        "value": 0,
-        "max": 0,
-        "unmodifiedMax": 0
-      },
-      "rec": {
-        "value": 6,
-        "max": 6,
-        "unmodifiedMax": 6
-      },
-      "resolve": {
-        "value": 35,
-        "max": 35,
-        "unmodifiedMax": 35
-      },
-      "stun": {
-        "value": 7,
-        "max": 7
-      },
-      "woundTreshold": {
-        "value": 8,
-        "max": 8
-      },
-      "hp": {
-        "value": 45,
-        "max": 45,
-        "unmodifiedMax": 45
-      },
-      "sta": {
-        "value": 35,
-        "max": 35,
-        "unmodifiedMax": 35
-      }
-    },
-    "description": "<p>I katakan si trasformano per sedurre le donne più belle e berne il sangue. Se ti capita tieni a portata di mano una testa d'aglio... Tra l'altro, vendo tutta questa roba a prezzi davvero ragionevoli. – Rodolf Kazmer</p><p>I katakan sono un buon punto intermedio tra i bestiali vampiri inferiori e i geniali vampiri superiori. Sono intelligenti, spesso più delle persone comuni, e hanno grandi qualità magiche. Sono in grado di nascondersi a molte forme di rilevazione, compresi i medaglioni dei witcher, e di comunicare telepaticamente con le proprie prede.</p>",
-    "sourcebook": "MB 309",
-    "monsterType": "Vampire",
-    "difficulty": "MEDIUM",
-    "bounty": 1500
-  },
-  "items": [
-    {
-      "_id": "k1",
-      "name": "Artigli",
-      "type": "weapon",
-      "img": "modules/witcher-compendium/assets/SPECIAL/trait_artigli.webp",
-      "system": {
-        "description": "",
-        "damage": "6d6",
-        "accuracy": 0,
-        "effects": "Sanguinamento (50%)"
-      },
-      "_stats": {
+    "items": [
+        {
+            "_id": "k1",
+            "name": "Artigli",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/trait_artigli.webp",
+            "system": {
+                "description": "",
+                "damage": "6d6",
+                "accuracy": 0,
+                "effects": "Sanguinamento (50%)"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "k2",
+            "name": "Morso",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
+            "system": {
+                "description": "",
+                "damage": "7d6+2",
+                "accuracy": 0,
+                "effects": "Sanguinamento (100%)"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "k3",
+            "name": "[Capacità] Invisibilità",
+            "type": "note",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_camuffamento.webp",
+            "system": {
+                "description": "<p>Un katakan può diventare invisibile, ottenendo +10 Nascondersi e +5 agli attacchi. Se attacca ritorna visibile.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "k4",
+            "name": "[Capacità] Rigenerazione",
+            "type": "note",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "<p>Un katakan rigenera 5 PS per round (ridotto a 3 PS alla luce del sole).</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        }
+    ],
+    "effects": [],
+    "flags": {},
+    "_stats": {
         "systemId": "TheWitcherItaNewSystem",
         "coreVersion": 14
-      }
-    },
-    {
-      "_id": "k2",
-      "name": "Morso",
-      "type": "weapon",
-      "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
-      "system": {
-        "description": "",
-        "damage": "7d6+2",
-        "accuracy": 0,
-        "effects": "Sanguinamento (100%)"
-      },
-      "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-      }
-    },
-    {
-      "_id": "k3",
-      "name": "[Capacità] Invisibilità",
-      "type": "note",
-      "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_camuffamento.webp",
-      "system": {
-        "description": "<p>Un katakan può diventare invisibile, ottenendo +10 Nascondersi e +5 agli attacchi. Se attacca ritorna visibile.</p>"
-      },
-      "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-      }
-    },
-    {
-      "_id": "k4",
-      "name": "[Capacità] Rigenerazione",
-      "type": "note",
-      "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-      "system": {
-        "description": "<p>Un katakan rigenera 5 PS per round (ridotto a 3 PS alla luce del sole).</p>"
-      },
-      "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-      }
     }
-  ],
-  "effects": [],
-  "flags": {},
-  "_stats": {
-    "systemId": "TheWitcherItaNewSystem",
-    "coreVersion": 14
-  }
 }

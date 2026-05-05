@@ -1,33 +1,33 @@
 {
-  "_id": "32a7169943fa83ef",
-  "name": "Schema: Mazzafrusto Meteoritico",
-  "type": "diagrams",
-  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-schematics/mazzafrusto_meteoritico.webp",
-  "system": {
-    "description": "<p>Schema per la fabbricazione di: <b>Mazzafrusto Meteoritico</b>.</p><p><b>Componenti richiesti:</b> Meteorite (x5), Legname Indurito (x1), Cuoio Indurito (x1), Grasso di Estere (x1), Acciaio Nero (x1), Cote (x1)</p><p><b>DifficoltÃ  Manifattura:</b> CD 25</p><p><b>Tempo:</b> 13 ore</p>",
-    "weight": 0,
-    "cost": 0,
-    "components": [
-      "Meteorite (x5)",
-      "Legname Indurito (x1)",
-      "Cuoio Indurito (x1)",
-      "Grasso di Estere (x1)",
-      "Acciaio Nero (x1)",
-      "Cote (x1)"
-    ],
-    "difficulty": 25,
-    "time": "13 ore",
-    "sourcebook": "MB 139"
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "TheWitcherItaNewSystem",
-    "coreVersion": 14
-  }
+    "_id": "32a7169943fa83ef",
+    "name": "Schema: Mazzafrusto Meteoritico",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-schematics/mazzafrusto_meteoritico.webp",
+    "system": {
+        "description": "<p>Schema per la fabbricazione di: <b>Mazzafrusto Meteoritico</b>.</p><p><b>Componenti richiesti:</b> Meteorite (x5), Legname Indurito (x1), Cuoio Indurito (x1), Grasso di Estere (x1), Acciaio Nero (x1), Cote (x1)</p><p><b>DifficoltÃ  Manifattura:</b> CD 25</p><p><b>Tempo:</b> 13 ore</p>",
+        "weight": 0,
+        "cost": 0,
+        "components": [
+            "Meteorite (x5)",
+            "Legname Indurito (x1)",
+            "Cuoio Indurito (x1)",
+            "Grasso di Estere (x1)",
+            "Acciaio Nero (x1)",
+            "Cote (x1)"
+        ],
+        "difficulty": 25,
+        "time": "13 ore",
+        "sourcebook": "MB 139"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
 }

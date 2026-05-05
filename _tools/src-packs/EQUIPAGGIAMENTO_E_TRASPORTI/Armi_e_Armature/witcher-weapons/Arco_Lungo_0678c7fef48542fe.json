@@ -1,51 +1,51 @@
 {
-  "_id": "0678c7fef48542fe",
-  "name": "Arco Lungo",
-  "type": "weapon",
-  "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/arco_lungo.webp",
-  "system": {
-    "description": "<p>L'arco lungo è il predecessore della balestra. Personalmente, li ho sempre trovati grossi e scomodi. Pero è facile a dirsi quando sei più basso dell'arco. Gli elfi si fidano ciecamente dell'arco lungo e, in mano a loro, è probabilmente l'arma a distanza più letale al mondo dopo una dannata balista. Gli umani in genere si sono dedicati alle balestre, ma giÃ  a Nilfgaard ci sono un bel po' di arcieri, tutti letali e con una gran voglia di dimostrarlo.</p>",
-    "cost": 475,
-    "reliability": {
-      "max": 10,
-      "value": 10
+    "_id": "0678c7fef48542fe",
+    "name": "Arco Lungo",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/arco_lungo.webp",
+    "system": {
+        "description": "<p>L'arco lungo è il predecessore della balestra. Personalmente, li ho sempre trovati grossi e scomodi. Pero è facile a dirsi quando sei più basso dell'arco. Gli elfi si fidano ciecamente dell'arco lungo e, in mano a loro, è probabilmente l'arma a distanza più letale al mondo dopo una dannata balista. Gli umani in genere si sono dedicati alle balestre, ma giÃ  a Nilfgaard ci sono un bel po' di arcieri, tutti letali e con una gran voglia di dimostrarlo.</p>",
+        "cost": 475,
+        "reliability": {
+            "max": 10,
+            "value": 10
+        },
+        "accuracy": 0,
+        "reach": "200m",
+        "effects": "N/A",
+        "sourcebook": "MB 76",
+        "range": "200m",
+        "type": {
+            "text": "",
+            "slashing": false,
+            "piercing": true,
+            "bludgeoning": false,
+            "elemental": false
+        },
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "isMeteorite": false,
+            "isNonLethal": false,
+            "effects": []
+        },
+        "weight": 2,
+        "rarity": "Diffusa",
+        "damage": "4d6",
+        "hands": 2,
+        "unmodifiedMax": {}
     },
-    "accuracy": 0,
-    "reach": "200m",
-    "effects": "N/A",
-    "sourcebook": "MB 76",
-    "range": "200m",
-    "type": {
-      "text": "",
-      "slashing": false,
-      "piercing": true,
-      "bludgeoning": false,
-      "elemental": false
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
     },
-    "damageProperties": {
-      "armorPiercing": false,
-      "improvedArmorPiercing": false,
-      "ablating": false,
-      "crushingForce": false,
-      "isMeteorite": false,
-      "isNonLethal": false,
-      "effects": []
-    },
-    "weight": 2,
-    "rarity": "Diffusa",
-    "damage": "4d6",
-    "hands": 2,
-    "unmodifiedMax": {}
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "TheWitcherItaNewSystem",
-    "coreVersion": 14
-  }
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
 }

@@ -1,200 +1,200 @@
 {
-  "_id": "d56af36cf7084deb",
-  "name": "Sirene",
-  "type": "monster",
-  "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/sirene.webp",
-  "system": {
-    "stats": {
-      "int": {
-        "value": 5,
-        "max": 5,
-        "unmodifiedMax": 5
-      },
-      "ref": {
-        "value": 7,
-        "max": 7,
-        "unmodifiedMax": 7
-      },
-      "dex": {
-        "value": 7,
-        "max": 7,
-        "unmodifiedMax": 7
-      },
-      "body": {
-        "value": 6,
-        "max": 6,
-        "unmodifiedMax": 6
-      },
-      "spd": {
-        "value": 8,
-        "max": 8,
-        "unmodifiedMax": 8
-      },
-      "emp": {
-        "value": 3,
-        "max": 3,
-        "unmodifiedMax": 3
-      },
-      "cra": {
-        "value": 3,
-        "max": 3,
-        "unmodifiedMax": 3
-      },
-      "will": {
-        "value": 8,
-        "max": 8,
-        "unmodifiedMax": 8
-      },
-      "luck": {
-        "value": 0,
-        "max": 0,
-        "unmodifiedMax": 0
-      }
+    "_id": "d56af36cf7084deb",
+    "name": "Sirene",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/sirene.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "ref": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "dex": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "body": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "spd": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "emp": {
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
+            },
+            "cra": {
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
+            },
+            "will": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 7
+            },
+            "atletica": {
+                "value": 8
+            },
+            "coraggio": {
+                "value": 5
+            },
+            "eludere": {
+                "value": 6
+            },
+            "mischia": {
+                "value": 7
+            },
+            "nascondersi": {
+                "value": 8
+            },
+            "rissa": {
+                "value": 7
+            },
+            "sopravvivenza": {
+                "value": 7
+            },
+            "tempra": {
+                "value": 6
+            },
+            "lanciareIncantesimi": {
+                "value": 10
+            }
+        },
+        "details": {
+            "biography": "<p>Quella delle sirene è una storia triste. Erano bellissime donne con la coda di pesce e una passione per i marinai. Oggi, attirano la gente con le canzoni e si trasformano in orridi mostri. – Rodolf Kazmer</p><p>Nascondono le loro orribili fattezze da pesce sotto l'aspetto di donne giovani e belle capaci di attrarre un marinaio. Attirano una nave grazie a questa illusione, per poi lanciarsi sulla preda.</p>",
+            "threat": "Facile",
+            "reward": 20,
+            "monsterType": "Hybrid",
+            "difficulty": "EASY"
+        },
+        "derivedStats": {
+            "vigor": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "rec": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "resolve": {
+                "value": 35,
+                "max": 35,
+                "unmodifiedMax": 35
+            },
+            "stun": {
+                "value": 7,
+                "max": 7
+            },
+            "woundTreshold": {
+                "value": 7,
+                "max": 7
+            },
+            "hp": {
+                "value": 35,
+                "max": 35,
+                "unmodifiedMax": 35
+            },
+            "sta": {
+                "value": 35,
+                "max": 35,
+                "unmodifiedMax": 35
+            }
+        },
+        "description": "<p>Quella delle sirene è una storia triste. Erano bellissime donne con la coda di pesce e una passione per i marinai. Oggi, attirano la gente con le canzoni e si trasformano in orridi mostri. – Rodolf Kazmer</p><p>Nascondono le loro orribili fattezze da pesce sotto l'aspetto di donne giovani e belle capaci di attrarre un marinaio. Attirano una nave grazie a questa illusione, per poi lanciarsi sulla preda.</p>",
+        "sourcebook": "MB 291",
+        "monsterType": "Hybrid",
+        "difficulty": "EASY",
+        "bounty": 20
     },
-    "skills": {
-      "accortezza": {
-        "value": 7
-      },
-      "atletica": {
-        "value": 8
-      },
-      "coraggio": {
-        "value": 5
-      },
-      "eludere": {
-        "value": 6
-      },
-      "mischia": {
-        "value": 7
-      },
-      "nascondersi": {
-        "value": 8
-      },
-      "rissa": {
-        "value": 7
-      },
-      "sopravvivenza": {
-        "value": 7
-      },
-      "tempra": {
-        "value": 6
-      },
-      "lanciareIncantesimi": {
-        "value": 10
-      }
-    },
-    "details": {
-      "biography": "<p>Quella delle sirene è una storia triste. Erano bellissime donne con la coda di pesce e una passione per i marinai. Oggi, attirano la gente con le canzoni e si trasformano in orridi mostri. – Rodolf Kazmer</p><p>Nascondono le loro orribili fattezze da pesce sotto l'aspetto di donne giovani e belle capaci di attrarre un marinaio. Attirano una nave grazie a questa illusione, per poi lanciarsi sulla preda.</p>",
-      "threat": "Facile",
-      "reward": 20,
-      "monsterType": "Hybrid",
-      "difficulty": "EASY"
-    },
-    "derivedStats": {
-      "vigor": {
-        "value": 0,
-        "max": 0,
-        "unmodifiedMax": 0
-      },
-      "rec": {
-        "value": 7,
-        "max": 7,
-        "unmodifiedMax": 7
-      },
-      "resolve": {
-        "value": 35,
-        "max": 35,
-        "unmodifiedMax": 35
-      },
-      "stun": {
-        "value": 7,
-        "max": 7
-      },
-      "woundTreshold": {
-        "value": 7,
-        "max": 7
-      },
-      "hp": {
-        "value": 35,
-        "max": 35,
-        "unmodifiedMax": 35
-      },
-      "sta": {
-        "value": 35,
-        "max": 35,
-        "unmodifiedMax": 35
-      }
-    },
-    "description": "<p>Quella delle sirene è una storia triste. Erano bellissime donne con la coda di pesce e una passione per i marinai. Oggi, attirano la gente con le canzoni e si trasformano in orridi mostri. – Rodolf Kazmer</p><p>Nascondono le loro orribili fattezze da pesce sotto l'aspetto di donne giovani e belle capaci di attrarre un marinaio. Attirano una nave grazie a questa illusione, per poi lanciarsi sulla preda.</p>",
-    "sourcebook": "MB 291",
-    "monsterType": "Hybrid",
-    "difficulty": "EASY",
-    "bounty": 20
-  },
-  "items": [
-    {
-      "_id": "90d478240ab64793",
-      "name": "Artigli",
-      "type": "weapon",
-      "img": "modules/witcher-compendium/assets/SPECIAL/trait_artigli.webp",
-      "system": {
-        "description": "",
-        "damage": "2d6+2",
-        "accuracy": 0,
-        "effects": "-1 PA"
-      },
-      "_stats": {
+    "items": [
+        {
+            "_id": "90d478240ab64793",
+            "name": "Artigli",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/trait_artigli.webp",
+            "system": {
+                "description": "",
+                "damage": "2d6+2",
+                "accuracy": 0,
+                "effects": "-1 PA"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "1b092d147d3347f3",
+            "name": "Coda",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_artigli.webp",
+            "system": {
+                "description": "",
+                "damage": "3d6+2",
+                "accuracy": 0,
+                "effects": ""
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "s1",
+            "name": "[Capacità] Illusione",
+            "type": "note",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "<p>Può sembrare una bella donna. Dissipabile con Lanciare Incantesimi CD 15.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "30fb80b87c29447e",
+            "name": "[Capacità] Urlo",
+            "type": "note",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "<p>Urlo entro 10m: tiro salvezza Grinta con penalità -1.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        }
+    ],
+    "effects": [],
+    "flags": {},
+    "_stats": {
         "systemId": "TheWitcherItaNewSystem",
         "coreVersion": 14
-      }
-    },
-    {
-      "_id": "1b092d147d3347f3",
-      "name": "Coda",
-      "type": "weapon",
-      "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_artigli.webp",
-      "system": {
-        "description": "",
-        "damage": "3d6+2",
-        "accuracy": 0,
-        "effects": ""
-      },
-      "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-      }
-    },
-    {
-      "_id": "s1",
-      "name": "[Capacità] Illusione",
-      "type": "note",
-      "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-      "system": {
-        "description": "<p>Può sembrare una bella donna. Dissipabile con Lanciare Incantesimi CD 15.</p>"
-      },
-      "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-      }
-    },
-    {
-      "_id": "30fb80b87c29447e",
-      "name": "[Capacità] Urlo",
-      "type": "note",
-      "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-      "system": {
-        "description": "<p>Urlo entro 10m: tiro salvezza Grinta con penalità -1.</p>"
-      },
-      "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-      }
     }
-  ],
-  "effects": [],
-  "flags": {},
-  "_stats": {
-    "systemId": "TheWitcherItaNewSystem",
-    "coreVersion": 14
-  }
 }
