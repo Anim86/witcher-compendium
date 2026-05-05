@@ -1,6 +1,6 @@
 # THE WITCHER FOUNDRY OMNIBUS MASTER v6.0
 > [!IMPORTANT]
-> **COMPATIBILITÀ**: [Foundry VTT Stable 14 build 360](https://foundryvtt.com/releases/14.360)
+> **COMPATIBILITÀ**: [Foundry VTT Stable 14 build 361](https://foundryvtt.com/releases/14.361)
 
 Documento Master Omnibus v6.0 — Storico Completo
 

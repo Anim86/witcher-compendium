@@ -201,3 +201,17 @@ In alcuni sistemi (come questo), la scheda personaggio eredita classi da mixin o
    /* NON usare character-v2 — viene sovrascritto dalla catena ereditaria Foundry V14 */
    .application.sheet.witcher.actor.monster-v2 { ... }
    ```
+
+---
+
+## Appendice: Novità Build 14.361 (Stable 3)
+
+La versione 14.361 introduce alcuni cambiamenti minori ma rilevanti per l'UI e lo sviluppo:
+
+1. **Ridenominazione Sidebar**: La tab "Game Settings" è stata rinominata in **"Settings"**. I selettori CSS che puntano a label o attributi data contenenti il vecchio nome potrebbero richiedere aggiornamenti.
+2. **Drag-and-Drop DocumentSheetV2**: È ora possibile iniziare un'operazione di trascinamento cliccando sull'icona "Document UUID Link" nell'header di qualsiasi scheda `DocumentSheetV2`.
+3. **Icone Token HUD**: L'icona per "Toggle Visibility State" è passata dal "mystery man" generico a `fa-eye`/`fa-eye-slash`.
+4. **Filtri Swiper e Occlusione**: Migliorata la gestione dell'occlusione per gli oggetti in primo piano sopra le superfici (attivabile con `ALT`).
+5. **Stopwords nei Compendi**: Risolto un bug che impediva la ricerca di termini comuni (stopwords) nella barra di ricerca dei compendi.
+
+*Ultimo aggiornamento guida: 5 Maggio 2026 (allineamento build 14.361)*

@@ -1,6 +1,6 @@
 # 📜 BRIEFING OPERATIVO: MAINTENANCE WITCHER COMPENDIUM
 > [!IMPORTANT]
-> **AMBIENTE DI SVILUPPO**: [Foundry VTT Stable 14 build 360](https://foundryvtt.com/releases/14.360)
+> **AMBIENTE DI SVILUPPO**: [Foundry VTT Stable 14 build 361](https://foundryvtt.com/releases/14.361)
 
 ## Documento di Handover per AI Builder (Antigravity & Friends)
 

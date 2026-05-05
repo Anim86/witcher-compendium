@@ -1,7 +1,7 @@
 # WITCHER COMPENDIUM — PROTOCOLLO OPERATIVO
 
 > \\\\\\\[!IMPORTANT]
-> \\\\\\\*\\\\\\\*TARGET\\\\\\\*\\\\\\\*: \\\\\\\[Foundry VTT Stable 14 build 360](https://foundryvtt.com/releases/14.360)
+> \\\\\\\*\\\\\\\*TARGET\\\\\\\*\\\\\\\*: \\\\\\\[Foundry VTT Stable 14 build 361](https://foundryvtt.com/releases/14.361)
 
 
 
