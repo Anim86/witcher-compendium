@@ -87,6 +87,29 @@
         </div>
     </div>
 
+    <div class='sidebar-armor-protection'>
+        <div class='armor-grid'>
+            {{#each system.armorSP as |protection loc|}}
+                <div class='armor-loc-card' data-loc='{{loc}}' data-tooltip="{{protection.displaySP}}">
+                    <div class="loc-icon">
+                        {{#if (eq loc 'head')}}<i class="fa-solid fa-helmet-safety"></i>{{/if}}
+                        {{#if (eq loc 'torso')}}<i class="fa-solid fa-shirt"></i>{{/if}}
+                        {{#if (eq loc 'rightArm')}}<i class="fa-solid fa-hand-back-fist"></i>{{/if}}
+                        {{#if (eq loc 'leftArm')}}<i class="fa-solid fa-hand-back-fist fa-flip-horizontal"></i>{{/if}}
+                        {{#if (eq loc 'rightLeg')}}<i class="fa-solid fa-boot"></i>{{/if}}
+                        {{#if (eq loc 'leftLeg')}}<i class="fa-solid fa-boot fa-flip-horizontal"></i>{{/if}}
+                    </div>
+                    <div class="loc-content">
+                        <div class="label">
+                            <span class="loc-name">{{localize (concat 'WITCHER.Location.' loc)}}</span>
+                            <span class="current-val">{{protection.totalSP}}</span>
+                        </div>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+
     <div class="quick-rolls-footer">
         <div class="roll-buttons-compact">
             <a class="btn-roll init-roll" data-action="rollInit" data-tooltip="{{localize 'WITCHER.Actor.RollInit'}}"><i class="fas fa-dice-d20"></i></a>

@@ -56,6 +56,7 @@ export default class WitcherActor extends Actor {
         this.calculateDerivedStats();
         this.calculateAttackStats();
         this.applyActiveEffects('derived');
+        this.calculateArmorSP();
     }
 
     calculateStats() {
@@ -81,7 +82,7 @@ export default class WitcherActor extends Actor {
         if (stat === 'ref' || stat === 'dex' || stat === 'spd') {
             if (stat === 'ref' || stat === 'dex') {
                 let armorEnc = this.getArmorEcumbrance();
-                totalModifiers += -armorEnc - this.calculateWeigthEncumbrance();
+                totalModifiers -= armorEnc;
             }
 
             totalModifiers -= this.calculateWeigthEncumbrance();

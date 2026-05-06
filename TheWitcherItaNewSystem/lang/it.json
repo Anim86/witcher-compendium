@@ -327,7 +327,14 @@
       "LocationLeft": "S.",
       "LocationRight": "D.",
       "Location": "Locazione",
-      "tooMuch": "Troppe armature equipaggiate dello stesso tipo"
+      "tooMuch": "Troppe armature equipaggiate dello stesso tipo",
+      "ProtectionTitle": "Protezione Armatura",
+      "Locationhead": "Testa",
+      "Locationtorso": "Torso",
+      "LocationrightArm": "Braccio Dx",
+      "LocationleftArm": "Braccio Sx",
+      "LocationrightLeg": "Gamba Dx",
+      "LocationleftLeg": "Gamba Sx"
     },
     "Item": {
       "Equipped": "Equipaggiato",
@@ -479,7 +486,8 @@
       "silverDmg": "Aggiungi Danni d'Argento",
       "silver": "Argento",
       "oil": "Olio",
-      "activeEffect": "Effetto Attivo"
+      "activeEffect": "Effetto Attivo",
+      "halved": "Dimezzato"
     },
     "Dialog": {
       "NoComponents": "Componenti insufficienti per la creazione",
@@ -671,7 +679,9 @@
       "rightArm": "Braccio D.",
       "leftArm": "Braccio S.",
       "rightLeg": "Gamba D.",
-      "leftLeg": "Gamba S."
+      "leftLeg": "Gamba S.",
+      "head": "Testa",
+      "torso": "Torso"
     },
     "Component": {
       "Rarity": "Rarità",
@@ -973,7 +983,10 @@
       "ResBludgeon": "C",
       "ResSlashing": "T",
       "ResPiercing": "P",
-      "Equipped": "Eq"
+      "Weight": "Peso",
+      "Equipped": "Eq",
+      "Parts": "Parti",
+      "ArrestoAff": "SP/Aff."
     },
     "Monster": {
       "Category": "Categoria Mostro",
@@ -1139,13 +1152,7 @@
       "fullStamina": "Stamina Piena"
     },
     "Currency": {
-      "bizant": "Bisante",
-      "ducat": "Ducato",
-      "lintar": "Lintar",
-      "floren": "Florino",
-      "crown": "Corona",
-      "oren": "Oren",
-      "falsecoin": "Moneta Falsa"
+      "crown": "Corona"
     },
     "currencyConverter": {
       "title": "Convertitore Valuta",

@@ -12,14 +12,7 @@ export default class LootData extends foundry.abstract.TypeDataModel {
     }
 
     calcCurrencyWeight() {
-        let totalPieces =
-            Number(this.currency.bizant) +
-            Number(this.currency.ducat) +
-            Number(this.currency.lintar) +
-            Number(this.currency.floren) +
-            Number(this.currency.crown) +
-            Number(this.currency.oren) +
-            Number(this.currency.falsecoin);
+        let totalPieces = Number(this.currency.crown);
         return Number(totalPieces * 0.001);
     }
 }

@@ -18,17 +18,16 @@ export default class ArmorData extends CommonItemData {
             location: new fields.ArrayField(
                 new fields.StringField({
                     initial: 'Torso',
-                    choices: ['Head', 'Torso', 'Leg', 'FullCover']
+                    choices: ['Head', 'Torso', 'Leg', 'FullCover', 'Shield']
                 })
             ),
 
-            avail: new fields.StringField({ initial: '' }),
+            avail: new fields.StringField({ initial: '', blank: true }),
             equipped: new fields.BooleanField({ initial: false }),
 
             reliability: new fields.NumberField({ initial: 0 }),
             reliabilityMax: new fields.NumberField({ initial: 0 }),
             encumb: new fields.NumberField({ initial: 0 }),
-            location: new fields.StringField({ initial: '' }),
 
             bludgeoning: new fields.BooleanField({ initial: false }),
             slashing: new fields.BooleanField({ initial: false }),
@@ -46,6 +45,9 @@ export default class ArmorData extends CommonItemData {
             leftLegMaxStopping: new fields.NumberField({ initial: 0 }),
             rightLegStopping: new fields.NumberField({ initial: 0 }),
             rightLegMaxStopping: new fields.NumberField({ initial: 0 }),
+
+            witcherSet: new fields.StringField({ initial: '', blank: true, choices: ['', 'Wolf', 'Bear', 'Manticore', 'Cat', 'Griffin', 'Viper'] }),
+            limitedSight: new fields.BooleanField({ initial: false }),
 
             enhancements: new fields.NumberField({ initial: 0 }),
             enhancementItemIds: new fields.ArrayField(new fields.StringField({ initial: '' })),

@@ -131,128 +131,63 @@ table th {
 }
 
 /* ── Currency section ── */
-.currency-section {
+.currency-bar {
     display: flex;
-    flex-direction: column;
-    gap: 8px;
-    background: light-dark(rgba(201, 168, 76, 0.08), rgba(60, 45, 10, 0.4));
-    border: 1px solid light-dark(rgba(160, 120, 30, 0.3), rgba(201, 168, 76, 0.15));
-    border-radius: 8px;
-    padding: 8px 12px;
-    margin-bottom: 10px;
-    box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
-
-    .currency-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border-bottom: 1px solid rgba(201, 168, 76, 0.2);
-        padding-bottom: 4px;
-        margin-bottom: 4px;
-
-        .header-title {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            color: var(--w-gold);
-            font-family: 'Goudy Old Style', serif;
-            font-size: 16px;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .open-rewards {
-            color: rgba(255,255,255,0.6);
-            transition: color 0.2s, transform 0.2s;
-            cursor: pointer;
-            font-size: 14px;
-
-            &:hover {
-                color: var(--w-gold);
-                transform: scale(1.1);
-            }
-        }
-    }
-
-    .currency-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(85px, 1fr));
-        gap: 8px;
-        padding: 4px 0;
-    }
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--w-border-gold);
+    border-radius: 6px;
+    padding: 6px 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 
     .currency-item {
         display: flex;
-        flex-direction: column;
-        align-items: stretch;
-        gap: 2px;
-        background: rgba(0,0,0,0.2);
-        padding: 4px 6px 2px 6px;
-        border-radius: 4px;
-        border: 1px solid rgba(255,255,255,0.05);
-        transition: border-color 0.2s, background 0.2s;
-
-        .coin-label {
-            font-size: 10px;
-            text-transform: uppercase;
-            color: rgba(255,255,255,0.7);
-            text-align: center;
-            line-height: 1.2;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            font-weight: bold;
-            letter-spacing: 0.3px;
-        }
-
-        .coin-row {
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-
-        &:hover {
-            border-color: rgba(201, 168, 76, 0.4);
-            background: rgba(0,0,0,0.3);
-        }
+        align-items: center;
+        gap: 12px;
 
         .coin-icon {
-            font-size: 10px; /* Small circle */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 14px;
-            height: 14px;
-            border-radius: 50%;
-            box-shadow: 0 0 5px rgba(0,0,0,0.5);
+            color: var(--w-gold);
+            font-size: 16px;
+        }
 
-            &.gold { color: #ffd700; text-shadow: 0 0 3px #aa8800; }
-            &.silver { color: #e0e0e0; text-shadow: 0 0 3px #888888; }
-            &.copper { color: #cd7f32; text-shadow: 0 0 3px #884411; }
-            &.false { color: #666666; text-shadow: 0 0 3px #000000; opacity: 0.7; }
+        .coin-label {
+            font-family: 'Goudy Old Style', serif;
+            font-size: 14px;
+            color: var(--w-gold);
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 0.5px;
         }
 
         input {
-            width: 100%;
+            background: rgba(0,0,0,0.4) !important;
+            border: 1px solid rgba(201, 168, 76, 0.3) !important;
+            border-radius: 4px;
+            width: 80px !important;
             height: 24px !important;
-            background: transparent !important;
-            border: none !important;
-            color: #eee !important;
-            font-size: 13px !important;
-            font-weight: bold !important;
-            padding: 0 !important;
-            text-align: right;
-            outline: none !important;
-            box-shadow: none !important;
+            font-size: 14px !important;
+            color: #fff !important;
+            text-align: center;
+            margin: 0 !important;
 
-            /* Hide arrows */
-            &::-webkit-inner-spin-button,
-            &::-webkit-outer-spin-button {
-                -webkit-appearance: none;
-                margin: 0;
+            &:focus {
+                border-color: var(--w-gold) !important;
+                box-shadow: 0 0 5px rgba(201, 168, 76, 0.4);
             }
-            -moz-appearance: textfield;
+        }
+    }
+
+    .open-rewards {
+        color: rgba(255,255,255,0.5);
+        font-size: 16px;
+        transition: all 0.2s;
+        cursor: pointer;
+
+        &:hover {
+            color: var(--w-gold);
+            transform: scale(1.1);
         }
     }
 }
@@ -304,18 +239,18 @@ table th {
 .item-img-wrapper .item-show:hover .fa { display: inline-block; }
 
 /* ── Grid column defs ── */
-.weapon-header  { grid-template-columns: 33px 2fr 1fr; }
-.weapon-details { grid-template-columns: 40px 2fr 1fr; }
+.weapon-header  { grid-template-columns: 33px 1fr auto; }
+.weapon-details { grid-template-columns: 40px 1fr auto; }
 .weapon-enhancement, .container-stored-item {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
-.armor-header   { grid-template-columns: 33px 1fr 1fr; }
-.armor-details  { grid-template-columns: 40px 1fr 1fr; }
-.valuable-header, .spell-header         { grid-template-columns: 33px 6fr 1fr; }
-.valuables-list-header, .spell-list-header { grid-template-columns: 33px 1.5fr 1fr; }
-.valuable-details, .spell-details       { grid-template-columns: 40px 1.5fr 1fr; }
+.armor-header   { grid-template-columns: 33px 1fr auto; }
+.armor-details  { grid-template-columns: 40px 1fr auto; }
+.valuable-header, .spell-header         { grid-template-columns: 33px 1fr auto; }
+.valuables-list-header, .spell-list-header { grid-template-columns: 33px 1fr auto; }
+.valuable-details, .spell-details       { grid-template-columns: 40px 1fr auto; }
 
 /* ── Stored weight progress bar ── */
 .progress-bar-stored-weight {

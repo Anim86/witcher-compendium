@@ -128,7 +128,8 @@ export let damageMixin = {
 
         if (properties.improvedArmorPiercing) {
             totalSP = Math.ceil(totalSP / 2);
-            displaySP = Math.ceil(displaySP / 2);
+            // We use totalSP string because displaySP is now a complex formatted string with names
+            displaySP = `${totalSP} (${game.i18n.localize('WITCHER.Damage.halved')})`;
         }
 
         let silverDamage = 0;

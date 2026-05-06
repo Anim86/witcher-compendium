@@ -61,16 +61,24 @@ details[open] .list-header > .chevron-icon { transform: rotate(180deg); }
 /* ── Label row inside a list item ── */
 .list-label {
     display: flex;
-    flex-direction: row;
+    justify-content: flex-end;
     align-items: center;
     gap: 12px;
 }
 
 .list-label > span {
-    width: 70px;
+    width: 60px;
     text-align: center;
     padding: 4px;
     font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-label > .list-controls {
+    width: 110px;
+    justify-content: space-around;
 }
 
 .list-header .list-label > span {
@@ -84,7 +92,8 @@ details[open] .list-header > .chevron-icon { transform: rotate(180deg); }
     color: light-dark(rgba(28,104,136,0.9), rgba(44,136,175,0.85));
 }
 
-.list-details .list-label > span:hover {
+.list-details .list-label > span.interactive:hover,
+.list-details .list-label > span a:hover {
     padding: 4px;
     background: light-dark(rgba(255,255,255,0.4), rgba(255,255,255,0.08));
     border-radius: 5px;

@@ -348,7 +348,14 @@
       "LocationLeft": "L.",
       "LocationRight": "R.",
       "Location": "Location",
-      "tooMuch": "There is too much armor equipped of the same type"
+      "tooMuch": "There is too much armor equipped of the same type",
+      "ProtectionTitle": "Armor Protection",
+      "Locationhead": "Head",
+      "Locationtorso": "Torso",
+      "LocationrightArm": "R. Arm",
+      "LocationleftArm": "L. Arm",
+      "LocationrightLeg": "R. Leg",
+      "LocationleftLeg": "L. Leg"
     },
     "Item": {
       "Equipped": "Equipped",
@@ -492,7 +499,8 @@
       "silverDmg": "Add Silver Damages",
       "silver": "Silver",
       "oil": "Oil",
-      "activeEffect": "Active Effect"
+      "activeEffect": "Active Effect",
+      "halved": "Halved"
     },
     "Dialog": {
       "NoComponents": "Not enough components for craft",
@@ -684,7 +692,9 @@
       "rightArm": "R. Arm",
       "leftArm": "L. Arm",
       "rightLeg": "R. Leg",
-      "leftLeg": "L. Leg"
+      "leftLeg": "L. Leg",
+      "head": "Head",
+      "torso": "Torso"
     },
     "Component": {
       "Rarity": "Rarity",
@@ -986,7 +996,10 @@
       "ResBludgeon": "B",
       "ResSlashing": "S",
       "ResPiercing": "P",
-      "Equipped": "Eq"
+      "Weight": "Weight",
+      "Equipped": "Eq",
+      "Parts": "Parts",
+      "ArrestoAff": "SP/Rel."
     },
     "Monster": {
       "HeadArmor": "Armor Head",
@@ -1149,13 +1162,7 @@
       "fullStamina": "Full Stamina"
     },
     "Currency": {
-      "bizant": "Bizant",
-      "ducat": "Ducat",
-      "lintar": "Lintar",
-      "floren": "Floren",
-      "crown": "Crown",
-      "oren": "Oren",
-      "falsecoin": "FalseCoin"
+      "crown": "Crown"
     },
     "currencyConverter": {
       "title": "Currency Converter",
