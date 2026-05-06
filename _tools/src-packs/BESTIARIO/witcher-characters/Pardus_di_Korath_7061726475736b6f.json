@@ -1,195 +1,195 @@
 {
-  "_id": "7061726475736b6f",
-  "name": "Pardus di Korath",
-  "type": "character",
-  "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-characters/pardus_di_korath.webp",
-  "system": {
-    "stats": {
-      "int": {
-        "value": 5,
-        "max": 5,
-        "unmodifiedMax": 5
-      },
-      "ref": {
-        "value": 10,
-        "max": 10,
-        "unmodifiedMax": 10
-      },
-      "dex": {
-        "value": 10,
-        "max": 10,
-        "unmodifiedMax": 10
-      },
-      "body": {
-        "value": 8,
-        "max": 8,
-        "unmodifiedMax": 8
-      },
-      "spd": {
-        "value": 9,
-        "max": 9,
-        "unmodifiedMax": 9
-      },
-      "emp": {
-        "value": 1,
-        "max": 1,
-        "unmodifiedMax": 1
-      },
-      "cra": {
-        "value": 5,
-        "max": 5,
-        "unmodifiedMax": 5
-      },
-      "will": {
-        "value": 8,
-        "max": 8,
-        "unmodifiedMax": 8
-      },
-      "luck": {
-        "value": 8,
-        "max": 8,
-        "unmodifiedMax": 8
-      }
+    "_id": "7061726475736b6f",
+    "name": "Pardus di Korath",
+    "type": "character",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-characters/Pardus_di_Korath.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "ref": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "dex": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "body": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "spd": {
+                "value": 9,
+                "max": 9,
+                "unmodifiedMax": 9
+            },
+            "emp": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "cra": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "will": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "luck": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 14
+            },
+            "atletica": {
+                "value": 18
+            },
+            "coraggio": {
+                "value": 15
+            },
+            "eludere": {
+                "value": 18
+            },
+            "intimidire": {
+                "value": 16
+            },
+            "lanciareIncantesimi": {
+                "value": 14
+            },
+            "nascondersi": {
+                "value": 18
+            },
+            "resistereAllaMagia": {
+                "value": 14
+            },
+            "rissa": {
+                "value": 16
+            },
+            "scherma": {
+                "value": 20
+            },
+            "sopravvivenza": {
+                "value": 13
+            },
+            "tempra": {
+                "value": 18
+            },
+            "alchimia": {
+                "value": 10
+            },
+            "deduzione": {
+                "value": 10
+            },
+            "prestanza": {
+                "value": 14
+            },
+            "resistereACoercizione": {
+                "value": 16
+            },
+            "artedelWitcher": {
+                "value": 10
+            }
+        },
+        "details": {
+            "biography": "<p>Pardus era un bambino venduto alla Carovana Dyn Mawr nel deserto di Korath. Sopravvissuto a fatica alla Prova delle Erbe, è diventato un witcher della Scuola del Gatto specializzato in contratti di omicidio. Un mutageno di Katakan ha alterato il suo corpo, allungandone le braccia e rendendolo un predatore ancora più letale.</p>",
+            "threat": "Difficile",
+            "sourcebook": "LR 36"
+        },
+        "derivedStats": {
+            "hp": {
+                "value": 40,
+                "max": 40,
+                "unmodifiedMax": 40
+            },
+            "sta": {
+                "value": 40,
+                "max": 40,
+                "unmodifiedMax": 40
+            },
+            "rec": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "stun": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "vigor": {
+                "value": 2,
+                "max": 2,
+                "unmodifiedMax": 2
+            },
+            "resolve": {
+                "value": 40,
+                "max": 40,
+                "unmodifiedMax": 40
+            },
+            "woundTreshold": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "run": {
+                "value": 27,
+                "max": 27,
+                "unmodifiedMax": 27
+            },
+            "leap": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "enc": {
+                "value": 16,
+                "max": 16,
+                "unmodifiedMax": 16
+            }
+        },
+        "description": "<p>Pardus di Korath è un assassino witcher della Scuola del Gatto mutato.</p><h3>Segni</h3><p>Yrden, Quen, Aard, Igni, Axii.</p><h3>Equipaggiamento</h3><p>Spada d'acciaio da witcher, Spada d'argento da witcher, Cappuccio a doppia trama, Gambesone a doppia trama, Brache di cuoio lyriane, Samum (x2), Rondine (x2), Luna Piena (x2), Miele Bianco (x2), Decotto di Katakan, Medaglione da witcher.</p>",
+        "sourcebook": "LR 36"
     },
-    "skills": {
-      "accortezza": {
-        "value": 14
-      },
-      "atletica": {
-        "value": 18
-      },
-      "coraggio": {
-        "value": 15
-      },
-      "eludere": {
-        "value": 18
-      },
-      "intimidire": {
-        "value": 16
-      },
-      "lanciareIncantesimi": {
-        "value": 14
-      },
-      "nascondersi": {
-        "value": 18
-      },
-      "resistereAllaMagia": {
-        "value": 14
-      },
-      "rissa": {
-        "value": 16
-      },
-      "scherma": {
-        "value": 20
-      },
-      "sopravvivenza": {
-        "value": 13
-      },
-      "tempra": {
-        "value": 18
-      },
-      "alchimia": {
-        "value": 10
-      },
-      "deduzione": {
-        "value": 10
-      },
-      "prestanza": {
-        "value": 14
-      },
-      "resistereACoercizione": {
-        "value": 16
-      },
-      "artedelWitcher": {
-        "value": 10
-      }
-    },
-    "details": {
-      "biography": "<p>Pardus era un bambino venduto alla Carovana Dyn Mawr nel deserto di Korath. Sopravvissuto a fatica alla Prova delle Erbe, è diventato un witcher della Scuola del Gatto specializzato in contratti di omicidio. Un mutageno di Katakan ha alterato il suo corpo, allungandone le braccia e rendendolo un predatore ancora più letale.</p>",
-      "threat": "Difficile",
-      "sourcebook": "LR 36"
-    },
-    "derivedStats": {
-      "hp": {
-        "value": 40,
-        "max": 40,
-        "unmodifiedMax": 40
-      },
-      "sta": {
-        "value": 40,
-        "max": 40,
-        "unmodifiedMax": 40
-      },
-      "rec": {
-        "value": 1,
-        "max": 1,
-        "unmodifiedMax": 1
-      },
-      "stun": {
-        "value": 8,
-        "max": 8,
-        "unmodifiedMax": 8
-      },
-      "vigor": {
-        "value": 2,
-        "max": 2,
-        "unmodifiedMax": 2
-      },
-      "resolve": {
-        "value": 40,
-        "max": 40,
-        "unmodifiedMax": 40
-      },
-      "woundTreshold": {
-        "value": 8,
-        "max": 8,
-        "unmodifiedMax": 8
-      },
-      "run": {
-        "value": 27,
-        "max": 27,
-        "unmodifiedMax": 27
-      },
-      "leap": {
-        "value": 5,
-        "max": 5,
-        "unmodifiedMax": 5
-      },
-      "enc": {
-        "value": 16,
-        "max": 16,
-        "unmodifiedMax": 16
-      }
-    },
-    "description": "<p>Pardus di Korath è un assassino witcher della Scuola del Gatto mutato.</p><h3>Segni</h3><p>Yrden, Quen, Aard, Igni, Axii.</p><h3>Equipaggiamento</h3><p>Spada d'acciaio da witcher, Spada d'argento da witcher, Cappuccio a doppia trama, Gambesone a doppia trama, Brache di cuoio lyriane, Samum (x2), Rondine (x2), Luna Piena (x2), Miele Bianco (x2), Decotto di Katakan, Medaglione da witcher.</p>",
-    "sourcebook": "LR 36"
-  },
-  "items": [
-    {
-      "name": "Spada d'acciaio da witcher",
-      "type": "weapon",
-      "img": "modules/witcher-compendium/assets/SPECIAL/trait_generico.webp",
-      "system": {
-        "damage": "4d6+2",
-        "accuracy": 0,
-        "effects": "Trapassare, Meteorite"
-      }
-    },
-    {
-      "name": "Spada d'argento da witcher",
-      "type": "weapon",
-      "img": "modules/witcher-compendium/assets/SPECIAL/trait_generico.webp",
-      "system": {
-        "damage": "1d6+2",
-        "accuracy": 0,
-        "effects": "Argento (3d6)"
-      }
+    "items": [
+        {
+            "name": "Spada d'acciaio da witcher",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/trait_generico.webp",
+            "system": {
+                "damage": "4d6+2",
+                "accuracy": 0,
+                "effects": "Trapassare, Meteorite"
+            }
+        },
+        {
+            "name": "Spada d'argento da witcher",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/trait_generico.webp",
+            "system": {
+                "damage": "1d6+2",
+                "accuracy": 0,
+                "effects": "Argento (3d6)"
+            }
+        }
+    ],
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
     }
-  ],
-  "effects": [],
-  "flags": {},
-  "_stats": {
-    "systemId": "TheWitcherItaNewSystem",
-    "coreVersion": 14
-  }
 }

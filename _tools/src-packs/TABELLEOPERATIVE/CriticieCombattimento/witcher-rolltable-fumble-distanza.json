@@ -1,62 +1,63 @@
 {
-  "_id": "ae00243fc142a619",
-  "name": "Fumble - Distanza",
-  "type": "RollTable",
-  "formula": "1d10",
-  "description": "",
-  "results": [
-    {
-      "range": [
-        1,
-        5
-      ],
-      "weight": 1,
-      "type": 0,
-      "text": "Nessun effetto aggiuntivo",
-      "_id": "9ce0e1609dd4b206",
-      "drawn": false
+    "_id": "ae00243fc142a619",
+    "name": "Fumble - Distanza",
+    "type": "RollTable",
+    "formula": "1d10",
+    "description": "",
+    "results": [
+        {
+            "range": [
+                1,
+                5
+            ],
+            "weight": 1,
+            "type": 0,
+            "text": "Nessun effetto aggiuntivo",
+            "_id": "9ce0e1609dd4b206",
+            "drawn": false
+        },
+        {
+            "range": [
+                6,
+                7
+            ],
+            "weight": 1,
+            "type": 0,
+            "text": "Proiettile/arma si spezza",
+            "_id": "60b697b65b45d82c",
+            "drawn": false
+        },
+        {
+            "range": [
+                8,
+                9
+            ],
+            "weight": 1,
+            "type": 0,
+            "text": "Arma inceppata 1 round",
+            "_id": "db16f31157190148",
+            "drawn": false
+        },
+        {
+            "range": [
+                10,
+                10
+            ],
+            "weight": 1,
+            "type": 0,
+            "text": "Colpisci alleato",
+            "_id": "72fa963e4eaac016",
+            "drawn": false
+        }
+    ],
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": "14"
     },
-    {
-      "range": [
-        6,
-        7
-      ],
-      "weight": 1,
-      "type": 0,
-      "text": "Proiettile/arma si spezza",
-      "_id": "60b697b65b45d82c",
-      "drawn": false
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
     },
-    {
-      "range": [
-        8,
-        9
-      ],
-      "weight": 1,
-      "type": 0,
-      "text": "Arma inceppata 1 round",
-      "_id": "db16f31157190148",
-      "drawn": false
-    },
-    {
-      "range": [
-        10,
-        10
-      ],
-      "weight": 1,
-      "type": 0,
-      "text": "Colpisci alleato",
-      "_id": "72fa963e4eaac016",
-      "drawn": false
-    }
-  ],
-  "_stats": {
-    "systemId": "TheWitcherItaNewSystem",
-    "coreVersion": "14"
-  },
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0
-  }
+    "img": "modules/witcher-compendium/assets/TABELLEOPERATIVE/CriticieCombattimento/witcher-rolltable-fumble-distanza.webp"
 }

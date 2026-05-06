@@ -1,23 +1,23 @@
 {
-  "_id": "e22f4aae08a44702",
-  "name": "Trofeo: Scaltrocertola",
-  "type": "valuable",
-  "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/trofeo_scaltrocertola.webp",
-  "system": {
-    "description": "<p>Il personaggio ottiene +2 a Lanciare Incantesimi quando usa incantesimi o segni a base di fuoco.</p>",
-    "weight": 0,
-    "cost": 0,
-    "sourcebook": "TC p.126"
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "TheWitcherItaNewSystem",
-    "coreVersion": 14
-  }
+    "_id": "e22f4aae08a44702",
+    "name": "Trofeo: Scaltrocertola",
+    "type": "valuable",
+    "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/Trofeo_Scaltrocertola.webp",
+    "system": {
+        "description": "<p>Il personaggio ottiene +2 a Lanciare Incantesimi quando usa incantesimi o segni a base di fuoco.</p>",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "TC p.126"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
 }

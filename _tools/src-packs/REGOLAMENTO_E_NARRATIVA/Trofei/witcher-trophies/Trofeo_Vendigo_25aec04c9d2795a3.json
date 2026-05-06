@@ -1,24 +1,24 @@
 {
-  "_id": "25aec04c9d2795a3",
-  "name": "Trofeo: Vendigo",
-  "type": "valuable",
-  "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/trofeo_vendigo.webp",
-  "system": {
-    "description": "<p>Il personaggio è immune alle malattie.</p>",
-    "weight": 0,
-    "cost": 0,
-    "quantity": 1,
-    "sourcebook": "TC p.126"
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0
-  },
-  "flags": {},
-  "_stats": {
-    "coreVersion": 14,
-    "systemId": "TheWitcherItaNewSystem"
-  }
+    "_id": "25aec04c9d2795a3",
+    "name": "Trofeo: Vendigo",
+    "type": "valuable",
+    "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/Trofeo_Vendigo.webp",
+    "system": {
+        "description": "<p>Il personaggio è immune alle malattie.</p>",
+        "weight": 0,
+        "cost": 0,
+        "quantity": 1,
+        "sourcebook": "TC p.126"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
 }

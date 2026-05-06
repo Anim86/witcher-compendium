@@ -1,24 +1,24 @@
 {
-  "_id": "fd8f3581ae216748",
-  "name": "Trofeo: Troll",
-  "type": "valuable",
-  "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/trofeo_troll.webp",
-  "system": {
-    "description": "<p>Il personaggio deve bere il doppio del normale prima di subire Ebbrezza e non ha mai postumi.</p>",
-    "weight": 0,
-    "cost": 0,
-    "quantity": 1,
-    "sourcebook": "TC p.126"
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0
-  },
-  "flags": {},
-  "_stats": {
-    "coreVersion": 14,
-    "systemId": "TheWitcherItaNewSystem"
-  }
+    "_id": "fd8f3581ae216748",
+    "name": "Trofeo: Troll",
+    "type": "valuable",
+    "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/Trofeo_Troll.webp",
+    "system": {
+        "description": "<p>Il personaggio deve bere il doppio del normale prima di subire Ebbrezza e non ha mai postumi.</p>",
+        "weight": 0,
+        "cost": 0,
+        "quantity": 1,
+        "sourcebook": "TC p.126"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
 }

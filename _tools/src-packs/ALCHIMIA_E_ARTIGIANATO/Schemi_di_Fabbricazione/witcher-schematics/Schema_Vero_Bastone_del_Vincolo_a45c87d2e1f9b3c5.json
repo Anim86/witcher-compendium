@@ -1,34 +1,34 @@
 {
-  "name": "Schema: Vero Bastone del Vincolo",
-  "_id": "a45c87d2e1f9b3c5",
-  "system": {
-    "recipe": [
-      {
+    "name": "Schema: Vero Bastone del Vincolo",
+    "_id": "a45c87d2e1f9b3c5",
+    "system": {
+        "recipe": [
+            {
+                "quantity": 1,
+                "name": "Bastone del Vincolo"
+            },
+            {
+                "quantity": 3,
+                "name": "Meteorite"
+            },
+            {
+                "quantity": 2,
+                "name": "Optima Mater"
+            }
+        ],
+        "description": "<p>Schema maestro per potenziare il Bastone del Vincolo con meteorite e optima mater. Il bastone base richiede: legno di nocciolo, grasso d'estere, cerume d'orco, olio di papero, diaspro sanguigno scolpito.</p>",
+        "weight": 0.1,
+        "cost": 0,
+        "sourcebook": "TC ND",
+        "time": "ND",
+        "rarity": "Maestro",
         "quantity": 1,
-        "name": "Bastone del Vincolo"
-      },
-      {
-        "quantity": 3,
-        "name": "Meteorite"
-      },
-      {
-        "quantity": 2,
-        "name": "Optima Mater"
-      }
-    ],
-    "description": "<p>Schema maestro per potenziare il Bastone del Vincolo con meteorite e optima mater. Il bastone base richiede: legno di nocciolo, grasso d'estere, cerume d'orco, olio di papero, diaspro sanguigno scolpito.</p>",
-    "weight": 0.1,
-    "cost": 0,
-    "sourcebook": "TC ND",
-    "time": "ND",
-    "rarity": "Maestro",
-    "quantity": 1,
-    "difficulty": 0
-  },
-  "type": "diagrams",
-  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-schematics/schema_vero_bastone_del_vincolo.webp",
-  "_stats": {
-    "coreVersion": 14,
-    "systemId": "TheWitcherItaNewSystem"
-  }
+        "difficulty": 0
+    },
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-schematics/Schema_Vero_Bastone_del_Vincolo.webp",
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
 }

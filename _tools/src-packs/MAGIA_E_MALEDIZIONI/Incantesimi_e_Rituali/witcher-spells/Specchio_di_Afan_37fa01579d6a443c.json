@@ -1,64 +1,64 @@
 {
-  "_id": "37fa01579d6a443c",
-  "name": "Specchio di Afan",
-  "type": "spell",
-  "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells/specchio_di_afan.webp",
-  "system": {
-    "description": "<p>Creato dal talentuoso mago aedirniano Afan di Guleta, lo Specchio di Afan crea 1d10 copie illusorie dell'incantatore. Queste copie sono immateriali, ma in- distinguibili dall'incantatore e controllate mentalmente Alessandro Pacifico - 355698  --- Pagina 105 --- [Immagini presenti in questa pagina: Pag105_Incantesimi da Mago_01.png, Pag105_Incantesimi da Mago_02.png, Pag105_Incantesimi da Mago_03.png, Pag105_Incantesimi da Mago_04.png, Pag105_Incantesimi da Mago_05.png, Pag105_Incantesimi da Mago_06.png, Pag105_Incantesimi da Mago_07.png]  103 Prigione di Talfryn Costo in RES: 3 Effetto: Prigione di Talfryn prende il nome da Talfryn di Nazair, un cavaliere traditore che fu intrappolato per tre giorni nel giardino del mago Drystan, L'incantesimo immobilizza il bersaglio con delle radici, per reciderle occorre infliggere 15 danni. In alternativa, per liberar- si occorre una prova di Eludere con CD pari al tiro di Lanciare Incantesimi.</p>",
-    "quantity": "1",
-    "weight": 0,
-    "cost": 0,
-    "sourcebook": "MB 103",
-    "class": "Mage",
-    "level": "novice",
-    "source": "earth",
-    "stamina": 3,
-    "staminaIsVar": false,
-    "effect": "<p>Creato dal talentuoso mago aedirniano Afan di Guleta, lo Specchio di Afan crea 1d10 copie illusorie dell'incantatore. Queste copie sono immateriali, ma indistinguibili dall'incantatore e controllate mentalmente Alessandro Pacifico 355698</p>",
-    "range": "",
-    "duration": "",
-    "defence": "",
-    "damageProperties": {
-      "armorPiercing": false,
-      "improvedArmorPiercing": false,
-      "ablating": false,
-      "crushingForce": false,
-      "damageIsAblation": false,
-      "stun": 0,
-      "damageToAllLocations": false,
-      "bypassesWornArmor": false,
-      "bypassesNaturalArmor": false,
-      "defenseDifferenceMultiplier": false,
-      "defenseMultiplierCap": 5,
-      "variableDamage": false,
-      "effects": [],
-      "oilEffect": "",
-      "silverTrait": false,
-      "silverDamage": "",
-      "isMeteorite": false,
-      "isNonLethal": false
+    "_id": "37fa01579d6a443c",
+    "name": "Specchio di Afan",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells/Specchio_di_Afan.webp",
+    "system": {
+        "description": "<p>Creato dal talentuoso mago aedirniano Afan di Guleta, lo Specchio di Afan crea 1d10 copie illusorie dell'incantatore. Queste copie sono immateriali, ma in- distinguibili dall'incantatore e controllate mentalmente Alessandro Pacifico - 355698  --- Pagina 105 --- [Immagini presenti in questa pagina: Pag105_Incantesimi da Mago_01.png, Pag105_Incantesimi da Mago_02.png, Pag105_Incantesimi da Mago_03.png, Pag105_Incantesimi da Mago_04.png, Pag105_Incantesimi da Mago_05.png, Pag105_Incantesimi da Mago_06.png, Pag105_Incantesimi da Mago_07.png]  103 Prigione di Talfryn Costo in RES: 3 Effetto: Prigione di Talfryn prende il nome da Talfryn di Nazair, un cavaliere traditore che fu intrappolato per tre giorni nel giardino del mago Drystan, L'incantesimo immobilizza il bersaglio con delle radici, per reciderle occorre infliggere 15 danni. In alternativa, per liberar- si occorre una prova di Eludere con CD pari al tiro di Lanciare Incantesimi.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "MB 103",
+        "class": "Mage",
+        "level": "novice",
+        "source": "earth",
+        "stamina": 3,
+        "staminaIsVar": false,
+        "effect": "<p>Creato dal talentuoso mago aedirniano Afan di Guleta, lo Specchio di Afan crea 1d10 copie illusorie dell'incantatore. Queste copie sono immateriali, ma indistinguibili dall'incantatore e controllate mentalmente Alessandro Pacifico 355698</p>",
+        "range": "",
+        "duration": "",
+        "defence": "",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast",
+        "causeDamages": true,
+        "damage": "1d10",
+        "damageType": "elemental"
     },
-    "regionProperties": {
-      "createRegionFromTemplate": false,
-      "behaviours": {
-        "tokenEnter": null,
-        "tokenTurnStart": null,
-        "tokenMoveWithin": null,
-        "tokenExit": null
-      }
-    },
-    "attackOptions": [
-      "spell"
-    ],
-    "spellAttackSkill": "spellcast",
-    "causeDamages": true,
-    "damage": "1d10",
-    "damageType": "elemental"
-  },
-  "effects": [],
-  "flags": {},
-  "_stats": {
-    "systemId": "TheWitcherItaNewSystem",
-    "coreVersion": 14
-  }
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
 }

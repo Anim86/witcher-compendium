@@ -1,23 +1,23 @@
 {
-  "_id": "6ac97cfc395645bd",
-  "name": "Trofeo: Strega",
-  "type": "valuable",
-  "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/trofeo_strega.webp",
-  "system": {
-    "description": "<p>dei Sepolcri Il personaggio ottiene +2 alle prove di Officiare Rituali e Intessere Fatture.</p>",
-    "weight": 0,
-    "cost": 0,
-    "sourcebook": "TC p.126"
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "TheWitcherItaNewSystem",
-    "coreVersion": 14
-  }
+    "_id": "6ac97cfc395645bd",
+    "name": "Trofeo: Strega",
+    "type": "valuable",
+    "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/Trofeo_Strega.webp",
+    "system": {
+        "description": "<p>dei Sepolcri Il personaggio ottiene +2 alle prove di Officiare Rituali e Intessere Fatture.</p>",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "TC p.126"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
 }

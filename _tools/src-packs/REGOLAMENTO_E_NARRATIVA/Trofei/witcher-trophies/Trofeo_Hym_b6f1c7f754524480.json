@@ -1,23 +1,23 @@
 {
-  "_id": "b6f1c7f754524480",
-  "name": "Trofeo: Hym",
-  "type": "valuable",
-  "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/trofeo_hym.webp",
-  "system": {
-    "description": "<p>Se tutto il danno inflitto dal personaggio viene bloccato dall'armatura, il bersaglio subisce comunque 4 danni.</p>",
-    "weight": 0,
-    "cost": 0,
-    "sourcebook": "TC p.126"
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "TheWitcherItaNewSystem",
-    "coreVersion": 14
-  }
+    "_id": "b6f1c7f754524480",
+    "name": "Trofeo: Hym",
+    "type": "valuable",
+    "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/Trofeo_Hym.webp",
+    "system": {
+        "description": "<p>Se tutto il danno inflitto dal personaggio viene bloccato dall'armatura, il bersaglio subisce comunque 4 danni.</p>",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "TC p.126"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
 }

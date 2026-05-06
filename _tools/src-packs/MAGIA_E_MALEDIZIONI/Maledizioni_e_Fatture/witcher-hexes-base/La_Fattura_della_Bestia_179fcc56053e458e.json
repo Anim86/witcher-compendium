@@ -1,61 +1,61 @@
 {
-  "_id": "179fcc56053e458e",
-  "name": "La Fattura della Bestia",
-  "type": "hex",
-  "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Maledizioni_e_Fatture/witcher-hexes-base/la_fattura_della_bestia.webp",
-  "system": {
-    "description": "<p>La Fattura della Bestia rende il bersaglio la ne- mesi di animali e bestie. Ogni volta che la vittima si tro- va entro 10m da un animale, questo reagirÃ  con aggres- sivitÃ , imponendo -3 alle prove relative a calmarlo. Esiste una probabilitÃ  del 50% che l'animale attacchi.</p>",
-    "quantity": "1",
-    "weight": 0,
-    "cost": 0,
-    "sourcebook": "MB 123",
-    "class": "hex",
-    "level": "novice",
-    "source": "",
-    "stamina": 0,
-    "staminaIsVar": false,
-    "effect": "La Fattura della Bestia rende il bersaglio la ne- mesi di animali e bestie. Ogni volta che la vittima si tro- va entro 10m da un animale, questo reagirÃ  con aggres- sivitÃ , imponendo -3 alle prove relative a calmarlo. Esiste una probabilitÃ  del 50% che lâ€™animale attacchi.",
-    "range": "N/A",
-    "duration": "N/A",
-    "defence": "",
-    "damageProperties": {
-      "armorPiercing": false,
-      "improvedArmorPiercing": false,
-      "ablating": false,
-      "crushingForce": false,
-      "damageIsAblation": false,
-      "stun": 0,
-      "damageToAllLocations": false,
-      "bypassesWornArmor": false,
-      "bypassesNaturalArmor": false,
-      "defenseDifferenceMultiplier": false,
-      "defenseMultiplierCap": 5,
-      "variableDamage": false,
-      "effects": [],
-      "oilEffect": "",
-      "silverTrait": false,
-      "silverDamage": "",
-      "isMeteorite": false,
-      "isNonLethal": false
+    "_id": "179fcc56053e458e",
+    "name": "La Fattura della Bestia",
+    "type": "hex",
+    "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Maledizioni_e_Fatture/witcher-hexes-base/La_Fattura_della_Bestia.webp",
+    "system": {
+        "description": "<p>La Fattura della Bestia rende il bersaglio la ne- mesi di animali e bestie. Ogni volta che la vittima si tro- va entro 10m da un animale, questo reagirÃ  con aggres- sivitÃ , imponendo -3 alle prove relative a calmarlo. Esiste una probabilitÃ  del 50% che l'animale attacchi.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "MB 123",
+        "class": "hex",
+        "level": "novice",
+        "source": "",
+        "stamina": 0,
+        "staminaIsVar": false,
+        "effect": "La Fattura della Bestia rende il bersaglio la ne- mesi di animali e bestie. Ogni volta che la vittima si tro- va entro 10m da un animale, questo reagirÃ  con aggres- sivitÃ , imponendo -3 alle prove relative a calmarlo. Esiste una probabilitÃ  del 50% che lâ€™animale attacchi.",
+        "range": "N/A",
+        "duration": "N/A",
+        "defence": "",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "hexweave"
     },
-    "regionProperties": {
-      "createRegionFromTemplate": false,
-      "behaviours": {
-        "tokenEnter": null,
-        "tokenTurnStart": null,
-        "tokenMoveWithin": null,
-        "tokenExit": null
-      }
-    },
-    "attackOptions": [
-      "spell"
-    ],
-    "spellAttackSkill": "hexweave"
-  },
-  "effects": [],
-  "flags": {},
-  "_stats": {
-    "coreVersion": 14,
-    "systemId": "TheWitcherItaNewSystem"
-  }
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
 }

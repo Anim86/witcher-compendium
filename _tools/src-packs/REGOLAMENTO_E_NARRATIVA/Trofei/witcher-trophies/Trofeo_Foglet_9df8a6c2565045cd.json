@@ -1,23 +1,23 @@
 {
-  "_id": "9df8a6c2565045cd",
-  "name": "Trofeo: Foglet",
-  "type": "valuable",
-  "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/trofeo_foglet.webp",
-  "system": {
-    "description": "<p>Il personaggio ottiene +2 alle prove di Nascondersi e Rapidità di Mano.</p>",
-    "weight": 0,
-    "cost": 0,
-    "sourcebook": "TC p.126"
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "TheWitcherItaNewSystem",
-    "coreVersion": 14
-  }
+    "_id": "9df8a6c2565045cd",
+    "name": "Trofeo: Foglet",
+    "type": "valuable",
+    "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/Trofeo_Foglet.webp",
+    "system": {
+        "description": "<p>Il personaggio ottiene +2 alle prove di Nascondersi e Rapidità di Mano.</p>",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "TC p.126"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
 }

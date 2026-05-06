@@ -1,26 +1,26 @@
 {
-  "_id": "aa0b1d0c1b304fa0",
-  "name": "Schema: Palvese Mahakaman",
-  "type": "diagrams",
-  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-schematics/palvese_mahakaman.webp",
-  "system": {
-    "description": "<p>35 R Vedi barra laterale 1 5,5 1050</p>",
-    "weight": 0,
-    "cost": 1574,
-    "components": [],
-    "difficulty": 26,
-    "time": "7 ore",
-    "sourcebook": "MB 86"
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "TheWitcherItaNewSystem",
-    "coreVersion": 14
-  }
+    "_id": "aa0b1d0c1b304fa0",
+    "name": "Schema: Palvese Mahakaman",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-schematics/Palvese_Mahakaman.webp",
+    "system": {
+        "description": "<p>35 R Vedi barra laterale 1 5,5 1050</p>",
+        "weight": 0,
+        "cost": 1574,
+        "components": [],
+        "difficulty": 26,
+        "time": "7 ore",
+        "sourcebook": "MB 86"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
 }

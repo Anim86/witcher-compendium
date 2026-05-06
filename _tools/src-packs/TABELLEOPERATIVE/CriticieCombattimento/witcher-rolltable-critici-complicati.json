@@ -1,84 +1,85 @@
 {
-  "_id": "02c0c3792d885d94",
-  "name": "Critici Complicati",
-  "type": "RollTable",
-  "formula": "2d6",
-  "description": "",
-  "results": [
-    {
-      "range": [
-        12,
-        12
-      ],
-      "weight": 1,
-      "type": 0,
-      "text": "Ferita alla Testa: -1 a INT, VOL e Grinta. [Stab: -1 INT e VOL. Curato: -1 VOL.]",
-      "_id": "1551372d1dd17357",
-      "drawn": false
+    "_id": "02c0c3792d885d94",
+    "name": "Critici Complicati",
+    "type": "RollTable",
+    "formula": "2d6",
+    "description": "",
+    "results": [
+        {
+            "range": [
+                12,
+                12
+            ],
+            "weight": 1,
+            "type": 0,
+            "text": "Ferita alla Testa: -1 a INT, VOL e Grinta. [Stab: -1 INT e VOL. Curato: -1 VOL.]",
+            "_id": "1551372d1dd17357",
+            "drawn": false
+        },
+        {
+            "range": [
+                11,
+                11
+            ],
+            "weight": 1,
+            "type": 0,
+            "text": "Denti Persi: -3 a Lanciare Incantesimi e Scontro Verbale. [Stab: -2. Curato: -1.]",
+            "_id": "b8ab49cbce40c37f",
+            "drawn": false
+        },
+        {
+            "range": [
+                9,
+                10
+            ],
+            "weight": 1,
+            "type": 0,
+            "text": "Milza Lesionata: TS su Grinta ogni 5 round, sanguinamento. [Stab: TS ogni 10 round. Curato: -2 Grinta.]",
+            "_id": "f1e8bd195125617c",
+            "drawn": false
+        },
+        {
+            "range": [
+                6,
+                8
+            ],
+            "weight": 1,
+            "type": 0,
+            "text": "Costole Rotte: -2 FIS, -1 RIF e DES. [Stab: -1 FIS e RIF. Curato: -1 FIS.]",
+            "_id": "6d1b314882bc2f33",
+            "drawn": false
+        },
+        {
+            "range": [
+                4,
+                5
+            ],
+            "weight": 1,
+            "type": 0,
+            "text": "Braccio Fratturato: -3 azioni con quel braccio. [Stab: -2. Curato: -1.]",
+            "_id": "895a3a39fb535278",
+            "drawn": false
+        },
+        {
+            "range": [
+                2,
+                3
+            ],
+            "weight": 1,
+            "type": 0,
+            "text": "Gamba Fratturata: -3 a VEL, Eludere e Atletica. [Stab: -2. Curato: -1.]",
+            "_id": "ac26a087f751f648",
+            "drawn": false
+        }
+    ],
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": "14"
     },
-    {
-      "range": [
-        11,
-        11
-      ],
-      "weight": 1,
-      "type": 0,
-      "text": "Denti Persi: -3 a Lanciare Incantesimi e Scontro Verbale. [Stab: -2. Curato: -1.]",
-      "_id": "b8ab49cbce40c37f",
-      "drawn": false
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
     },
-    {
-      "range": [
-        9,
-        10
-      ],
-      "weight": 1,
-      "type": 0,
-      "text": "Milza Lesionata: TS su Grinta ogni 5 round, sanguinamento. [Stab: TS ogni 10 round. Curato: -2 Grinta.]",
-      "_id": "f1e8bd195125617c",
-      "drawn": false
-    },
-    {
-      "range": [
-        6,
-        8
-      ],
-      "weight": 1,
-      "type": 0,
-      "text": "Costole Rotte: -2 FIS, -1 RIF e DES. [Stab: -1 FIS e RIF. Curato: -1 FIS.]",
-      "_id": "6d1b314882bc2f33",
-      "drawn": false
-    },
-    {
-      "range": [
-        4,
-        5
-      ],
-      "weight": 1,
-      "type": 0,
-      "text": "Braccio Fratturato: -3 azioni con quel braccio. [Stab: -2. Curato: -1.]",
-      "_id": "895a3a39fb535278",
-      "drawn": false
-    },
-    {
-      "range": [
-        2,
-        3
-      ],
-      "weight": 1,
-      "type": 0,
-      "text": "Gamba Fratturata: -3 a VEL, Eludere e Atletica. [Stab: -2. Curato: -1.]",
-      "_id": "ac26a087f751f648",
-      "drawn": false
-    }
-  ],
-  "_stats": {
-    "systemId": "TheWitcherItaNewSystem",
-    "coreVersion": "14"
-  },
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0
-  }
+    "img": "modules/witcher-compendium/assets/TABELLEOPERATIVE/CriticieCombattimento/witcher-rolltable-critici-complicati.webp"
 }
