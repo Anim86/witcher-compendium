@@ -29,16 +29,31 @@ Ogni modifica deve essere sincronizzata tra:
 > [!IMPORTANT]
 > **UTILIZZO PROMPT BATCH:** Utilizzare SEMPRE i file `scratch/prompts_batch_*.html` già generati per i prompt e i nomi file. Questi file contengono la mappatura corretta e i prompt ottimizzati per lo stile "Digital Painting on Stone Slab".
 
-## Action Required per la Prossima Sessione
-1. **Completare Batch 49:** Terminare i restanti 15 item di `scratch/prompts_batch_48.html` (partendo da Pozzo di Conoscenza, Presagi di Sventura, Presenza del Divino, ecc.).
-2. **Iniziare Batch 50:** Passare al file batch successivo nella cartella `scratch/` (`prompts_batch_49.html`).
-3. **Pipeline di Deployment:** 
-    - Usare script simili a `scratch/deploy_batch_49_part1.py` per il post-processing.
-    - Eseguire `node _tools/scripts/core/align_assets_json.mjs`.
-    - Eseguire `node _tools/scripts/core/compile_packs.mjs`.
+### 🔄 Stato Avanzamento (Batch)
+- **Batch 1-47:** COMPLETATI. Tutti gli asset sono generati, convertiti (512x512 WebP) e integrati.
+- **Batch 48 (Goetia/Invocazioni):** COMPLETATO.
+- **Batch 49 (Invocazioni/Rituali):** IN CORSO (5/20). Generati i primi 5 item dal file `scratch/prompts_batch_48.html` prima dell'esaurimento della quota AI.
+
+---
+
+## 🛑 Bloccanti Attuali
+1. **Quota AI Esaurita**: Non è stato possibile completare il Batch 49 a causa dei limiti di generazione immagini (Quota reset in ~4-5 ore). I file per `pozzo_di_conoscenza` fino a `barriera_magica` (totale 15) rimangono da generare.
+
+---
+
+## 📋 Prossimi Passaggi (Next Steps per il prossimo modello)
+1. **Riprendere Batch 49**: 
+   - Continuare a generare le icone partendo da `pozzo_di_conoscenza` nel file `scratch/prompts_batch_48.html`.
+2. **Creare Script di Deploy**:
+   - Creare o eseguire `scratch/deploy_batch_49_part2.py` per processare i nuovi asset.
+3. **Allineare JSON e Compilare**:
+   - Eseguire `node _tools/scripts/core/align_assets_json.mjs`
+   - Eseguire `node _tools/scripts/core/compile_packs.mjs`
+4. **Commit e Push**:
+   - `git add .` -> `git commit -m "chore: complete Batch 49 assets"` -> `git push`
+5. **Procedere al Batch 50**: Continuare con il file HTML successivo nella cartella `scratch/`.
 
 ## Script di Riferimento
 - `node _tools/scripts/core/compile_packs.mjs`: Compilazione LevelDB.
 - `node _tools/scripts/core/align_assets_json.mjs`: Riallineamento path immagini.
 - `py scratch/deploy_batch_49_part1.py`: Esempio di post-processing per il batch 49.
-
