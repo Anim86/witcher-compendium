@@ -2,8 +2,8 @@ import os
 import glob
 from PIL import Image
 
-SOURCE_DIR = r"C:\Users\Manuel\.gemini\antigravity\brain\bf3b09f3-6509-4d28-b6a1-428ef171091b"
-ASSETS_DIR = r"e:\AntigravitiProgetti\CompendioTheWitcher\assets\MAGIA_E_MALEDIZIONI"
+SOURCE_DIR = r"C:\Users\apaci\.gemini\antigravity\brain\5371183f-5cc0-4cf7-9c88-0a13a0576da5"
+ASSETS_DIR = r"c:\Users\apaci\Desktop\Script\witcher-compendium-main\witcher-compendium\assets\MAGIA_E_MALEDIZIONI"
 
 mapping = {
     "marchio_dellavvizzimento": r"Incantesimi_e_Rituali\witcher-invocations",
@@ -15,10 +15,6 @@ mapping = {
 
 for item_name, rel_dir in mapping.items():
     png_files = glob.glob(os.path.join(SOURCE_DIR, f"{item_name}_*.png"))
-    if not png_files:
-        print(f"Warning: No files found for {item_name}")
-        continue
-        
     for png_path in png_files:
         basename = os.path.basename(png_path)
         new_name = item_name + ".webp"
