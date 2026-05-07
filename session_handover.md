@@ -1,17 +1,17 @@
 # Session Handover - Witcher Compendium Maintenance
 
-**Data/Ora:** 06/05/2026 - Aggiornamento Batch 48 (Completato) e 49 (Parte 1)
-**Stato Generale:** Generazione Asset in corso | Batch 48 COMPLETATO | Batch 49 (5/20) Completato | Quota Limite Raggiunta
+**Data/Ora:** 07/05/2026 - Aggiornamento Batch 49 (13/20 completati)
+**Stato Generale:** Generazione Asset in pausa | Batch 49 (13/20) Completato | Quota Limite Raggiunta (Reset lungo)
 
 ## Obiettivo Corrente
 Completare la generazione e l'integrazione degli asset mancanti seguendo la sequenza dei file `prompts_batch_*.html` situati nella cartella `scratch/`.
 
 ## Stato Repository e Generazione Asset
 - **Batch 48 (Goetia/Invocazioni):** COMPLETATO. Tutti i 20 item dal file `scratch/prompts_batch_47.html` sono stati generati, processati e integrati.
-- **Batch 49 (Invocazioni/Rituali):** IN CORSO (5/20). Generati i primi 5 item dal file `scratch/prompts_batch_48.html`: Marchio dell'Avvizzimento, Miracolo di Lebioda, Ombra di Bleobheris, Parola Evocatrice, Penna del Divino.
-- **Post-Processing:** Le immagini sono state ridimensionate a 512px, convertite in WebP (80%) e posizionate nelle cartelle finali (`assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-invocations`).
-- **Integrazione Dati:** Allineamento path `img` eseguito con `align_assets_json.mjs` e compilazione LevelDB eseguita con `compile_packs.mjs`.
-- **Blocco Attuale:** La quota di generazione immagini (gemini-3.1-flash-image) è nuovamente esaurita al 6° item del Batch 49 (Pozzo di Conoscenza). Riprendere tra circa 5 ore (reset previsto per le 00:55 UTC del 07/05).
+- **Batch 49 (Invocazioni/Rituali):** IN CORSO (13/20). Generati e integrati altri 8 item: Pozzo di Conoscenza, Presagi di Sventura, Presenza del Divino, Ragnatela di Radici, Sagitta Aurea, Sangue del Berserker, Sangue del Monte, Santuario del Bosco Nero.
+- **Post-Processing:** Immagini ridimensionate a 512px, convertite in WebP (80%) e posizionate in `witcher-compendium/assets/...`.
+- **Integrazione Dati:** Allineamento path `img` e compilazione LevelDB eseguiti.
+- **Blocco Attuale:** La quota di generazione immagini è esaurita. Reset previsto tra circa 78 ore (10/05/2026). Rimangono 7 item del Batch 49.
 
 ## Standard Tecnici (Mandatori)
 ### 1. Asset Grafici
@@ -32,12 +32,12 @@ Ogni modifica deve essere sincronizzata tra:
 ### 🔄 Stato Avanzamento (Batch)
 - **Batch 1-47:** COMPLETATI. Tutti gli asset sono generati, convertiti (512x512 WebP) e integrati.
 - **Batch 48 (Goetia/Invocazioni):** COMPLETATO.
-- **Batch 49 (Invocazioni/Rituali):** IN CORSO (5/20). Generati i primi 5 item dal file `scratch/prompts_batch_48.html` prima dell'esaurimento della quota AI.
+- **Batch 49 (Invocazioni/Rituali):** IN CORSO (13/20). Mancano 7 asset dal file `scratch/prompts_batch_48.html`.
 
 ---
 
 ## 🛑 Bloccanti Attuali
-1. **Quota AI Esaurita**: Non è stato possibile completare il Batch 49 a causa dei limiti di generazione immagini (Quota reset in ~4-5 ore). I file per `pozzo_di_conoscenza` fino a `barriera_magica` (totale 15) rimangono da generare.
+1. **Quota AI Esaurita**: Limite raggiunto per `gemini-3.1-flash-image`. Reset tra ~78 ore. I file da `sigillo_dabbondanza` a `barriera_magica` (totale 7) rimangono da generare.
 
 ---
 
