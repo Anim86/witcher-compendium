@@ -1,15 +1,16 @@
 # Session Handover - Witcher Compendium Maintenance
 
-**Data/Ora:** 07/05/2026 - Aggiornamento Batch 49 e 50 (COMPLETATI)
-**Stato Generale:** Batch 49 COMPLETATO | Batch 50 COMPLETATO | In attesa di Batch 51
+**Data/Ora:** 07/05/2026 - Aggiornamento Batch 49, 50 e 51 (COMPLETATI)
+**Stato Generale:** Batch 49-51 COMPLETATI | In attesa di Batch 52
 
 ## Obiettivo Corrente
 Completare la generazione e l'integrazione degli asset mancanti seguendo la sequenza dei file `prompts_batch_*.html` situati nella cartella `scratch/`.
 
 ## Stato Repository e Generazione Asset
 - **Batch 48 (Goetia/Invocazioni):** COMPLETATO. Tutti i 20 item dal file `scratch/prompts_batch_47.html` sono stati generati, processati e integrati.
-- **Batch 49 (Invocazioni/Rituali):** COMPLETATO. Tutti i 20 item integrati.
-- **Batch 50 (Rituali/Chaos):** COMPLETATO. Tutti i 20 item integrati (manualmente caricati dall'utente e ottimizzati dall'AI).
+- **Batch 49 (Invocazioni/Rituali):** COMPLETATO.
+- **Batch 50 (Rituali/Chaos):** COMPLETATO.
+- **Batch 51 (Rituali/Rune/Spell):** COMPLETATO. Tutti i 20 item integrati (caricati manualmente e ottimizzati).
 - **Post-Processing:** Immagini ridimensionate a 512px, convertite in WebP (80%) e posizionate in `witcher-compendium/assets/...`.
 - **Integrazione Dati:** Allineamento path `img` e compilazione LevelDB eseguiti.
 - **Blocco Attuale:** Nessuno per i batch completati. Quota AI ancora in reset per nuove generazioni.
@@ -33,8 +34,7 @@ Ogni modifica deve essere sincronizzata tra:
 ### 🔄 Stato Avanzamento (Batch)
 - **Batch 1-47:** COMPLETATI.
 - **Batch 48 (Goetia/Invocazioni):** COMPLETATO.
-- **Batch 49 (Invocazioni/Rituali):** COMPLETATO.
-- **Batch 50 (Rituali/Chaos):** COMPLETATO.
+- **Batch 49-51:** COMPLETATI.
 
 ---
 
@@ -44,9 +44,9 @@ Ogni modifica deve essere sincronizzata tra:
 ---
 
 ## 📋 Prossimi Passaggi
-1. **Procedere al Batch 51**: Usare il file `scratch/prompts_batch_51.html`.
-2. **Generazione/Caricamento**: Caricare i PNG manualmente in `temp_images/witcher-invocations/` (o sottocartella corretta).
-3. **Eseguire Deploy**: Adattare ed eseguire `scratch/deploy_manual_batches.py` per i nuovi asset.
+1. **Procedere al Batch 52**: Usare il file `scratch/prompts_batch_52.html`.
+2. **Generazione/Caricamento**: Caricare i PNG manualmente in `temp_images/` (seguire sottocartelle indicate nel file HTML).
+3. **Eseguire Deploy**: Eseguire `py scratch/deploy_manual_batches.py`.
 4. **Sincronizzare e Compilare**:
    - `node _tools/scripts/core/align_assets_json.mjs`
    - `node _tools/scripts/core/compile_packs.mjs`

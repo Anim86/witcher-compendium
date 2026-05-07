@@ -10,8 +10,11 @@ ASSETS_BASE = os.path.join(REPO_ROOT, "witcher-compendium", "assets", "MAGIA_E_M
 # Mapping delle sottocartelle
 SUB_MAPPING = {
     "witcher-invocations": r"Incantesimi_e_Rituali\witcher-invocations",
+    "witcher-rituali": r"Incantesimi_e_Rituali\witcher-rituals",
     "witcher-rituals": r"Incantesimi_e_Rituali\witcher-rituals",
-    "witcher-rituals-chaos": r"Incantesimi_e_Rituali\witcher-rituals-chaos"
+    "witcher-rituals-chaos": r"Incantesimi_e_Rituali\witcher-rituals-chaos",
+    "witcher-runes": r"Incantesimi_e_Rituali\witcher-runes",
+    "witcher-spells": r"Incantesimi_e_Rituali\witcher-spells"
 }
 
 # Gestione speciale per file con nomi Gemini generici
