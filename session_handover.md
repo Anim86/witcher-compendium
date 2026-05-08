@@ -1,19 +1,18 @@
 # Session Handover - Witcher Compendium Maintenance
 
-**Data/Ora:** 08/05/2026 - Completamento Batch 57 e 58
-**Stato Generale:** Batch 49-58 COMPLETATI | In attesa di Batch 59 | Prompt 59-63 Aggiornati
+**Data/Ora:** 08/05/2026 - Inizio Batch 59
+**Stato Generale:** Batch 49-58 COMPLETATI | Batch 59 (1/20) | Prompt 59-63 Aggiornati
 
 ## Obiettivo Corrente
 Completare la generazione e l'integrazione degli asset mancanti seguendo la sequenza dei file `prompts_batch_*.html` situati nella cartella `scratch/`. I prompt dei batch dal 54 al 63 sono stati revisionati e aggiornati con descrizioni specifiche degli incantesimi/maledizioni.
 
 ## Stato Repository e Generazione Asset
-- **Batch 51-56 (Spells/Chaos/Curses):** COMPLETATI.
-- **Batch 57 (Hexes/Necromancy):** COMPLETATO. 20 asset generati, ottimizzati e integrati.
-- **Batch 58 (Signs/Maps/Clues):** COMPLETATO. 20 asset generati, ottimizzati e integrati.
+- **Batch 51-58:** COMPLETATI.
+- **Batch 59 (Investigations/Lore):** PARZIALE (1/20). Solo l'asset "indizio_ricerche" è stato generato e integrato. Quota esaurita per i rimanenti 19.
 - **Aggiornamento Prompt:** COMPLETATO. Tutti i file `prompts_batch_*.html` (dal 59 al 63) sono stati aggiornati.
 - **Post-Processing:** Eseguito con script Node.js `_tools/scripts/deploy_manual_batches.js`.
-- **Integrazione Dati:** Allineamento path `img` e compilazione LevelDB eseguiti.
-- **Blocco Attuale:** Nessuno per i batch completati. Quota AI ancora in reset per nuove generazioni.
+- **Integrazione Dati:** Allineamento path `img` e compilazione LevelDB eseguiti per l'asset generato.
+- **Blocco Attuale:** Quota AI esaurita per `gemini-3.1-flash-image` (reset atteso in ~40h).
 
 ## Standard Tecnici (Mandatori)
 ### 1. Asset Grafici
@@ -33,17 +32,18 @@ Ogni modifica deve essere sincronizzata tra:
 
 ### 🔄 Stato Avanzamento (Batch)
 - **Batch 1-58:** COMPLETATI.
+- **Batch 59:** IN CORSO (1/20 integrati).
 - **Prompt 59-63:** AGGIORNATI e pronti per l'uso.
 
 ---
 
 ## 🛑 Bloccanti Attuali
-1. **Quota AI Esaurita**: Limite attivo per `gemini-3.1-flash-image`. I prossimi batch (59+) richiederanno caricamento manuale dei PNG in `temp_images/` o attesa del reset.
+1. **Quota AI Esaurita**: Limite attivo per `gemini-3.1-flash-image` (reset atteso in ~40h). Mancano 19 icone per chiudere il Batch 59.
 
 ---
 
 ## 📋 Prossimi Passaggi
-1. **Procedere al Batch 59**: Usare il file `scratch/prompts_batch_59.html`.
+1. **Completare il Batch 59**: Generare gli ultimi 19 asset dopo il reset della quota (~40h) oppure procedere manualmente.
 2. **Generazione/Caricamento**: Caricare i PNG in `temp_images/`.
 3. **Eseguire Deploy**: Eseguire `node _tools/scripts/deploy_manual_batches.js`.
 4. **Sincronizzare e Compilare**:
