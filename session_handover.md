@@ -56,4 +56,3 @@ Ogni modifica deve essere sincronizzata tra:
 - `node _tools/scripts/core/compile_packs.mjs`: Compilazione LevelDB.
 - `node _tools/scripts/core/align_assets_json.mjs`: Riallineamento path immagini.
 - `node _tools/scripts/deploy_manual_batches.js`: Script Node.js (alternativo a Python) per processare PNG manuali.
-
