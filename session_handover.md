@@ -1,15 +1,14 @@
 # Session Handover - Witcher Compendium Maintenance
 
-**Data/Ora:** 08/05/2026 - Aggiornamento Prompt Batch 54-63 (COMPLETATO)
-**Stato Generale:** Batch 49-53 COMPLETATI | In attesa di Batch 54 | Prompt 54-63 Aggiornati
+**Data/Ora:** 08/05/2026 - Completamento Batch 54
+**Stato Generale:** Batch 49-54 COMPLETATI | In attesa di Batch 55 | Prompt 54-63 Aggiornati
 
 ## Obiettivo Corrente
 Completare la generazione e l'integrazione degli asset mancanti seguendo la sequenza dei file `prompts_batch_*.html` situati nella cartella `scratch/`. I prompt dei batch dal 54 al 63 sono stati revisionati e aggiornati con descrizioni specifiche degli incantesimi/maledizioni (es. fulmini per Alzur, neve per Invaerne).
 
 ## Stato Repository e Generazione Asset
-- **Batch 51 (Rituali/Rune/Spell):** COMPLETATO.
-- **Batch 52 (Spells):** COMPLETATO. 20 asset caricati manualmente, ottimizzati e integrati.
-- **Batch 53 (Spells):** COMPLETATO. 20 asset caricati manualmente, ottimizzati e integrati.
+- **Batch 51-53 (Spells):** COMPLETATI.
+- **Batch 54 (Spells/Invocations/Curses):** COMPLETATO. 20 asset caricati manualmente, ottimizzati e integrati.
 - **Aggiornamento Prompt:** COMPLETATO. Tutti i file `prompts_batch_*.html` (dal 54 al 63) sono stati aggiornati con i nuovi prompt revisionati dall'utente per coerenza tematica.
 - **Post-Processing:** Immagini ridimensionate a 512px, convertite in WebP (80%) e posizionate in `witcher-compendium/assets/...`.
 - **Integrazione Dati:** Allineamento path `img` e compilazione LevelDB eseguiti.
@@ -32,8 +31,7 @@ Ogni modifica deve essere sincronizzata tra:
 > **UTILIZZO PROMPT BATCH:** Utilizzare SEMPRE i file `scratch/prompts_batch_*.html` già generati per i prompt e i nomi file. Questi file contengono la mappatura corretta e i prompt ottimizzati per lo stile "Digital Painting on Stone Slab".
 
 ### 🔄 Stato Avanzamento (Batch)
-- **Batch 1-51:** COMPLETATI.
-- **Batch 52-53:** COMPLETATI.
+- **Batch 1-54:** COMPLETATI.
 - **Prompt 54-63:** AGGIORNATI. Tutti i file HTML dei prompt rimanenti sono allineati ai requisiti.
 
 ---
@@ -44,7 +42,7 @@ Ogni modifica deve essere sincronizzata tra:
 ---
 
 ## 📋 Prossimi Passaggi
-1. **Procedere al Batch 54**: Usare il file `scratch/prompts_batch_54.html`.
+1. **Procedere al Batch 55**: Usare il file `scratch/prompts_batch_55.html`.
 2. **Generazione/Caricamento**: Caricare i PNG manualmente in `temp_images/` (seguire sottocartelle indicate nel file HTML).
 3. **Eseguire Deploy**: Eseguire `py scratch/deploy_manual_batches.py`.
 4. **Sincronizzare e Compilare**:
