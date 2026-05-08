@@ -1,19 +1,20 @@
 # Session Handover - Witcher Compendium Maintenance
 
-**Data/Ora:** 08/05/2026 - Completamento Batch 55 e 56
-**Stato Generale:** Batch 49-56 COMPLETATI | In attesa di Batch 57 | Prompt 57-63 Aggiornati
+**Data/Ora:** 08/05/2026 - Completamento parziale Batch 57
+**Stato Generale:** Batch 49-56 COMPLETATI | Batch 57 (17/20) | Prompt 57-63 Aggiornati
 
 ## Obiettivo Corrente
 Completare la generazione e l'integrazione degli asset mancanti seguendo la sequenza dei file `prompts_batch_*.html` situati nella cartella `scratch/`. I prompt dei batch dal 54 al 63 sono stati revisionati e aggiornati con descrizioni specifiche degli incantesimi/maledizioni.
 
 ## Stato Repository e Generazione Asset
 - **Batch 51-54 (Spells):** COMPLETATI.
-- **Batch 55 (Spells Chaos):** COMPLETATO. 20 asset generati, ottimizzati e integrati.
-- **Batch 56 (Spells Chaos/Curses):** COMPLETATO. 20 asset generati, ottimizzati e integrati.
+- **Batch 55 (Spells Chaos):** COMPLETATO.
+- **Batch 56 (Spells Chaos/Curses):** COMPLETATO.
+- **Batch 57 (Hexes/Necromancy):** PARZIALE (17/20). 17 asset generati, ottimizzati e integrati. Mancano: Rianimare Cadavere, Sintesi di Cadfan, Sogno Blu di Hanmarvyn.
 - **Aggiornamento Prompt:** COMPLETATO. Tutti i file `prompts_batch_*.html` (dal 57 al 63) sono stati aggiornati.
-- **Post-Processing:** Eseguito con nuovo script Node.js `_tools/scripts/deploy_manual_batches.js`.
+- **Post-Processing:** Eseguito con script Node.js `_tools/scripts/deploy_manual_batches.js`.
 - **Integrazione Dati:** Allineamento path `img` e compilazione LevelDB eseguiti.
-- **Blocco Attuale:** Nessuno per i batch completati. Quota AI ancora in reset per nuove generazioni.
+- **Blocco Attuale:** Quota AI esaurita per `gemini-3.1-flash-image` (reset atteso tra ~5h).
 
 ## Standard Tecnici (Mandatori)
 ### 1. Asset Grafici
@@ -38,12 +39,12 @@ Ogni modifica deve essere sincronizzata tra:
 ---
 
 ## 🛑 Bloccanti Attuali
-1. **Quota AI Esaurita**: Limite attivo per `gemini-3.1-flash-image`. I prossimi batch (57+) richiederanno caricamento manuale dei PNG in `temp_images/` o attesa del reset.
+1. **Quota AI Esaurita**: Limite attivo per `gemini-3.1-flash-image` (reset atteso tra ~5h). Mancano 3 icone per chiudere il Batch 57.
 
 ---
 
 ## 📋 Prossimi Passaggi
-1. **Procedere al Batch 57**: Usare il file `scratch/prompts_batch_57.html`.
+1. **Completare il Batch 57**: Generare gli ultimi 3 asset necromantici dopo il reset della quota.
 2. **Generazione/Caricamento**: Caricare i PNG in `temp_images/`.
 3. **Eseguire Deploy**: Eseguire `node _tools/scripts/deploy_manual_batches.js`.
 4. **Sincronizzare e Compilare**:
