@@ -1,18 +1,19 @@
 # Session Handover - Witcher Compendium Maintenance
 
-**Data/Ora:** 08/05/2026 - Completamento Batch 54
-**Stato Generale:** Batch 49-54 COMPLETATI | In attesa di Batch 55 | Prompt 54-63 Aggiornati
+**Data/Ora:** 08/05/2026 - Completamento parziale Batch 55
+**Stato Generale:** Batch 49-54 COMPLETATI | Batch 55 (17/20) | Prompt 55-63 Aggiornati
 
 ## Obiettivo Corrente
 Completare la generazione e l'integrazione degli asset mancanti seguendo la sequenza dei file `prompts_batch_*.html` situati nella cartella `scratch/`. I prompt dei batch dal 54 al 63 sono stati revisionati e aggiornati con descrizioni specifiche degli incantesimi/maledizioni (es. fulmini per Alzur, neve per Invaerne).
 
 ## Stato Repository e Generazione Asset
 - **Batch 51-53 (Spells):** COMPLETATI.
-- **Batch 54 (Spells/Invocations/Curses):** COMPLETATO. 20 asset caricati manualmente, ottimizzati e integrati.
-- **Aggiornamento Prompt:** COMPLETATO. Tutti i file `prompts_batch_*.html` (dal 54 al 63) sono stati aggiornati con i nuovi prompt revisionati dall'utente per coerenza tematica.
-- **Post-Processing:** Immagini ridimensionate a 512px, convertite in WebP (80%) e posizionate in `witcher-compendium/assets/...`.
+- **Batch 54 (Spells/Invocations/Curses):** COMPLETATO.
+- **Batch 55 (Spells Chaos):** PARZIALE (17/20). 17 asset generati, ottimizzati e integrati. Mancano: Portale Trappola, Porta di Cenere, Rafforzare.
+- **Aggiornamento Prompt:** COMPLETATO. Tutti i file `prompts_batch_*.html` (dal 55 al 63) sono stati aggiornati.
+- **Post-Processing:** Eseguito con nuovo script Node.js `_tools/scripts/deploy_manual_batches.js` (causa assenza Python in ambiente locale).
 - **Integrazione Dati:** Allineamento path `img` e compilazione LevelDB eseguiti.
-- **Blocco Attuale:** Nessuno per i batch completati. Quota AI ancora in reset per nuove generazioni.
+- **Blocco Attuale:** Quota AI esaurita per `gemini-3.1-flash-image` (reset tra ~5h).
 
 ## Standard Tecnici (Mandatori)
 ### 1. Asset Grafici
@@ -32,19 +33,20 @@ Ogni modifica deve essere sincronizzata tra:
 
 ### 🔄 Stato Avanzamento (Batch)
 - **Batch 1-54:** COMPLETATI.
-- **Prompt 54-63:** AGGIORNATI. Tutti i file HTML dei prompt rimanenti sono allineati ai requisiti.
+- **Batch 55:** IN CORSO (17/20 integrati).
+- **Prompt 56-63:** AGGIORNATI e pronti per l'uso.
 
 ---
 
 ## 🛑 Bloccanti Attuali
-1. **Quota AI Esaurita**: Limite ancora attivo per `gemini-3.1-flash-image` (~72h). I prossimi batch (54+) richiederanno caricamento manuale dei PNG in `temp_images/` o attesa del reset.
+1. **Quota AI Esaurita**: Limite attivo per `gemini-3.1-flash-image` (reset atteso tra ~5h). Mancano 3 icone per chiudere il Batch 55.
 
 ---
 
 ## 📋 Prossimi Passaggi
-1. **Procedere al Batch 55**: Usare il file `scratch/prompts_batch_55.html`.
-2. **Generazione/Caricamento**: Caricare i PNG manualmente in `temp_images/` (seguire sottocartelle indicate nel file HTML).
-3. **Eseguire Deploy**: Eseguire `py scratch/deploy_manual_batches.py`.
+1. **Completare il Batch 55**: Generare gli ultimi 3 asset (`portale_trappola`, `porta_di_cenere`, `rafforzare`) dopo il reset della quota.
+2. **Generazione/Caricamento**: Caricare i PNG in `temp_images/witcher-spells-chaos/`.
+3. **Eseguire Deploy**: Eseguire `node _tools/scripts/deploy_manual_batches.js`.
 4. **Sincronizzare e Compilare**:
    - `node _tools/scripts/core/align_assets_json.mjs`
    - `node _tools/scripts/core/compile_packs.mjs`
@@ -53,5 +55,5 @@ Ogni modifica deve essere sincronizzata tra:
 ## Script di Riferimento
 - `node _tools/scripts/core/compile_packs.mjs`: Compilazione LevelDB.
 - `node _tools/scripts/core/align_assets_json.mjs`: Riallineamento path immagini.
-- `py scratch/deploy_manual_batches.py`: Script per processare PNG manuali (Batch 49+).
+- `node _tools/scripts/deploy_manual_batches.js`: Script Node.js (alternativo a Python) per processare PNG manuali.
 

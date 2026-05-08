@@ -3,7 +3,8 @@ import glob
 from PIL import Image
 
 # Configurazione percorsi
-REPO_ROOT = r"e:\AntigravitiProgetti\CompendioTheWitcher"
+# Usa il percorso assoluto della cartella del progetto
+REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SOURCE_ROOT = os.path.join(REPO_ROOT, "temp_images")
 ASSETS_BASE = os.path.join(REPO_ROOT, "witcher-compendium", "assets", "MAGIA_E_MALEDIZIONI")
 
@@ -14,7 +15,8 @@ SUB_MAPPING = {
     "witcher-rituals": r"Incantesimi_e_Rituali\witcher-rituals",
     "witcher-rituals-chaos": r"Incantesimi_e_Rituali\witcher-rituals-chaos",
     "witcher-runes": r"Incantesimi_e_Rituali\witcher-runes",
-    "witcher-spells": r"Incantesimi_e_Rituali\witcher-spells"
+    "witcher-spells": r"Incantesimi_e_Rituali\witcher-spells",
+    "witcher-spells-chaos": r"Incantesimi_e_Rituali\witcher-spells-chaos"
 }
 
 # Gestione speciale per file con nomi Gemini generici
