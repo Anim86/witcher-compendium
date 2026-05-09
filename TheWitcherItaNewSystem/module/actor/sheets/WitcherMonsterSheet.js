@@ -83,7 +83,7 @@ export default class WitcherMonsterSheet extends WitcherActorSheet {
         return context;
     }
 
-    /** Restructure window-content into sidebar + main columns on every render */
+    /** @override */
     _onRender(context, options) {
         super._onRender(context, options);
 
@@ -98,29 +98,8 @@ export default class WitcherMonsterSheet extends WitcherActorSheet {
             });
             input._hasWitcherEnterHandler = true;
         });
-
-        const content = this.element.querySelector('.window-content');
-        if (!content) return;
-
-        const sidebar = this.element.querySelector('[data-application-part="sidebar"]');
-        if (!sidebar) return;
-
-        // Create wrapper if it doesn't exist yet
-        let wrapper = content.querySelector('.char-main-wrapper');
-        if (!wrapper) {
-            wrapper = document.createElement('div');
-            wrapper.className = 'char-main-wrapper';
-            content.appendChild(wrapper);
-        }
-
-        // Move ALL children except sidebar and the wrapper itself into the wrapper
-        // This handles PARTS that Foundry re-injects directly into window-content on re-renders
-        Array.from(content.children).forEach(child => {
-            if (child !== sidebar && child !== wrapper) {
-                wrapper.appendChild(child);
-            }
-        });
     }
+
 
     _prepareCharacterData(context) {
         let actor = context.actor;
