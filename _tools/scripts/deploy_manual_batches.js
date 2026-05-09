@@ -5,17 +5,23 @@ const sharp = require('sharp');
 // Configurazione percorsi
 const REPO_ROOT = path.dirname(path.dirname(__dirname));
 const SOURCE_ROOT = path.join(REPO_ROOT, "temp_images");
-const ASSETS_BASE = path.join(REPO_ROOT, "witcher-compendium", "assets", "MAGIA_E_MALEDIZIONI");
+const ASSETS_ROOT = path.join(REPO_ROOT, "witcher-compendium", "assets");
 
-// Mapping delle sottocartelle
+// Mapping delle sottocartelle (relative ad ASSETS_ROOT)
 const SUB_MAPPING = {
-    "witcher-invocations": "Incantesimi_e_Rituali/witcher-invocations",
-    "witcher-rituali": "Incantesimi_e_Rituali/witcher-rituals",
-    "witcher-rituals": "Incantesimi_e_Rituali/witcher-rituals",
-    "witcher-rituals-chaos": "Incantesimi_e_Rituali/witcher-rituals-chaos",
-    "witcher-runes": "Incantesimi_e_Rituali/witcher-runes",
-    "witcher-spells": "Incantesimi_e_Rituali/witcher-spells",
-    "witcher-spells-chaos": "Incantesimi_e_Rituali/witcher-spells-chaos"
+    "witcher-invocations": "MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-invocations",
+    "witcher-rituali": "MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-rituals",
+    "witcher-rituals": "MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-rituals",
+    "witcher-rituals-chaos": "MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-rituals-chaos",
+    "witcher-runes": "MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-runes",
+    "witcher-spells": "MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells",
+    "witcher-spells-chaos": "MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells-chaos",
+    "witcher-hexes": "MAGIA_E_MALEDIZIONI/Maledizioni_e_Fatture/witcher-hexes",
+    "witcher-hexes-base": "MAGIA_E_MALEDIZIONI/Maledizioni_e_Fatture/witcher-hexes-base",
+    "witcher-necromanzia": "MAGIA_E_MALEDIZIONI/Necromanzia/witcher-necromanzia",
+    "witcher-signs-chaos": "MAGIA_E_MALEDIZIONI/Segni/witcher-signs-chaos",
+    "witcher-geografia": "REGOLAMENTO_E_NARRATIVA/Geografia/witcher-geografia",
+    "witcher-investigations": "REGOLAMENTO_E_NARRATIVA/Investigazioni/witcher-investigations"
 };
 
 // Gestione speciale per file con nomi Gemini generici
@@ -37,7 +43,7 @@ async function processImages() {
             const pngPath = path.join(srcDir, file);
             let newName = SPECIAL_FILES[file] || (path.parse(file).name + ".webp");
             
-            const targetDir = path.join(ASSETS_BASE, destSub);
+            const targetDir = path.join(ASSETS_ROOT, destSub);
             if (!fs.existsSync(targetDir)) {
                 fs.mkdirSync(targetDir, { recursive: true });
             }
