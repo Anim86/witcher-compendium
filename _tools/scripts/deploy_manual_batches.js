@@ -21,7 +21,8 @@ const SUB_MAPPING = {
     "witcher-necromanzia": "MAGIA_E_MALEDIZIONI/Necromanzia/witcher-necromanzia",
     "witcher-signs-chaos": "MAGIA_E_MALEDIZIONI/Segni/witcher-signs-chaos",
     "witcher-geografia": "REGOLAMENTO_E_NARRATIVA/Geografia/witcher-geografia",
-    "witcher-investigations": "REGOLAMENTO_E_NARRATIVA/Investigazioni/witcher-investigations"
+    "witcher-investigations": "REGOLAMENTO_E_NARRATIVA/Investigazioni/witcher-investigations",
+    "witcher-dlc-sr-lore": "REGOLAMENTO_E_NARRATIVA/Lore_e_Racconti/witcher-dlc-sr-lore"
 };
 
 // Gestione speciale per file con nomi Gemini generici

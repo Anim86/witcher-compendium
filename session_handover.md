@@ -8,11 +8,11 @@ Completare la generazione e l'integrazione degli asset mancanti seguendo la sequ
 
 ## Stato Repository e Generazione Asset
 - **Batch 51-58:** COMPLETATI.
-- **Batch 59 (Investigations/Lore):** PARZIALE (1/20). Solo l'asset "indizio_ricerche" è stato generato e integrato. Quota esaurita per i rimanenti 19.
+- **Batch 59 (Investigations/Lore):** PARZIALE (18/20). Generati e integrati 17 nuovi asset oltre al primo già presente. Mancano 2 asset (strade_e_distanze_del_continente, tipi_di_locali_e_taverne).
 - **Aggiornamento Prompt:** COMPLETATO. Tutti i file `prompts_batch_*.html` (dal 59 al 63) sono stati aggiornati.
-- **Post-Processing:** Eseguito con script Node.js `_tools/scripts/deploy_manual_batches.js`.
-- **Integrazione Dati:** Allineamento path `img` e compilazione LevelDB eseguiti per l'asset generato.
-- **Blocco Attuale:** Quota AI esaurita per `gemini-3.1-flash-image` (reset atteso in ~40h).
+- **Post-Processing:** Eseguito con script Node.js `_tools/scripts/deploy_manual_batches.js` per 17 immagini.
+- **Integrazione Dati:** Allineamento path `img` e compilazione LevelDB eseguiti.
+- **Blocco Attuale:** Quota AI esaurita per `gemini-3.1-flash-image` (reset atteso tra ~5h).
 
 ## Standard Tecnici (Mandatori)
 ### 1. Asset Grafici
@@ -32,13 +32,13 @@ Ogni modifica deve essere sincronizzata tra:
 
 ### 🔄 Stato Avanzamento (Batch)
 - **Batch 1-58:** COMPLETATI.
-- **Batch 59:** IN CORSO (1/20 integrati).
+- **Batch 59:** IN CORSO (18/20 integrati).
 - **Prompt 59-63:** AGGIORNATI e pronti per l'uso.
 
 ---
 
 ## 🛑 Bloccanti Attuali
-1. **Quota AI Esaurita**: Limite attivo per `gemini-3.1-flash-image` (reset atteso in ~40h). Mancano 19 icone per chiudere il Batch 59.
+1. **Quota AI Esaurita**: Limite attivo per `gemini-3.1-flash-image` (reset atteso tra ~5h). Mancano 2 icone per chiudere il Batch 59.
 
 ---
 
