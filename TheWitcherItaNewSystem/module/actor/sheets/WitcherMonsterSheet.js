@@ -30,22 +30,41 @@ export default class WitcherMonsterSheet extends WitcherActorSheet {
 
     /** @override */
     static PARTS = {
-        header: { template: 'systems/TheWitcherItaNewSystem/templates/sheets/actor/monster/header.hbs' },
         sidebar: { template: 'systems/TheWitcherItaNewSystem/templates/sheets/actor/monster/sidebar.hbs' },
-        stats: { template: 'systems/TheWitcherItaNewSystem/templates/sheets/actor/monster/stats.hbs' },
-        tabs: { template: 'systems/TheWitcherItaNewSystem/templates/generic/tab-navigation.hbs' },
-        content: { template: 'systems/TheWitcherItaNewSystem/templates/sheets/actor/monster/content.hbs' }
+        header:  { template: 'systems/TheWitcherItaNewSystem/templates/sheets/actor/monster/header.hbs' },
+        stats:   { template: 'systems/TheWitcherItaNewSystem/templates/sheets/actor/monster/stats.hbs' },
+        tabs:    { template: 'templates/generic/tab-navigation.hbs' },
+        skills:  {
+            template: 'systems/TheWitcherItaNewSystem/templates/sheets/actor/monster/tabs/tab-skills.hbs',
+            scrollable: ['']
+        },
+        inventory: {
+            template: 'systems/TheWitcherItaNewSystem/templates/sheets/actor/monster/tabs/tab-inventory.hbs',
+            scrollable: ['']
+        },
+        details: {
+            template: 'systems/TheWitcherItaNewSystem/templates/sheets/actor/monster/tabs/tab-details.hbs',
+            scrollable: ['']
+        },
+        spells: {
+            template: 'systems/TheWitcherItaNewSystem/templates/sheets/actor/monster/tabs/tab-spells.hbs',
+            scrollable: ['']
+        },
+        effects: {
+            template: 'systems/TheWitcherItaNewSystem/templates/sheets/actor/monster/tabs/tab-effects.hbs',
+            scrollable: ['']
+        }
     };
 
     /** @override */
     static TABS = {
         primary: {
             tabs: [
-                { id: 'skills', label: 'WITCHER.Actor.tabs.skills', icon: 'fas fa-list-ul' },
-                { id: 'inventory', label: 'WITCHER.Actor.tabs.inventory', icon: 'fas fa-backpack' },
-                { id: 'details', label: 'WITCHER.Actor.tabs.stats', icon: 'fas fa-book-open' },
-                { id: 'spells', label: 'WITCHER.Actor.tabs.magic', icon: 'fas fa-magic' },
-                { id: 'effects', label: 'WITCHER.Actor.tabs.effects', icon: 'fas fa-sparkles' }
+                { id: 'skills',    label: 'WITCHER.Actor.tabs.skills',    icon: 'fas fa-list-ul' },
+                { id: 'inventory', label: 'WITCHER.Actor.tabs.inventory',  icon: 'fas fa-backpack' },
+                { id: 'details',   label: 'WITCHER.Actor.tabs.stats',      icon: 'fas fa-book-open' },
+                { id: 'spells',    label: 'WITCHER.Actor.tabs.magic',      icon: 'fas fa-magic' },
+                { id: 'effects',   label: 'WITCHER.Actor.tabs.effects',    icon: 'fas fa-sparkles' }
             ],
             initial: 'skills',
             labelPrefix: ''
@@ -64,7 +83,7 @@ export default class WitcherMonsterSheet extends WitcherActorSheet {
         return context;
     }
 
-    /** Restructure window-content into sidebar + main columns after first render */
+    /** Restructure window-content into sidebar + main columns on every render */
     _onRender(context, options) {
         super._onRender(context, options);
 
@@ -81,25 +100,26 @@ export default class WitcherMonsterSheet extends WitcherActorSheet {
         });
 
         const content = this.element.querySelector('.window-content');
-        if (!content || content.querySelector('.char-main-wrapper')) return;
-        
-        // Match both data-part (old) and data-application-part (new)
-        const sidebar = this.element.querySelector('.monster-sidebar') || 
-                        this.element.querySelector('[data-application-part="sidebar"]') || 
-                        this.element.querySelector('[data-part="sidebar"]');
-        
-        const wrapper = document.createElement('div');
-        wrapper.className = 'char-main-wrapper';
-        
-        // Move all children except the sidebar into the main wrapper
-        const children = Array.from(content.children);
-        children.forEach(child => {
-            if (child !== sidebar && !child.classList.contains('char-main-wrapper')) {
+        if (!content) return;
+
+        const sidebar = this.element.querySelector('[data-application-part="sidebar"]');
+        if (!sidebar) return;
+
+        // Create wrapper if it doesn't exist yet
+        let wrapper = content.querySelector('.char-main-wrapper');
+        if (!wrapper) {
+            wrapper = document.createElement('div');
+            wrapper.className = 'char-main-wrapper';
+            content.appendChild(wrapper);
+        }
+
+        // Move ALL children except sidebar and the wrapper itself into the wrapper
+        // This handles PARTS that Foundry re-injects directly into window-content on re-renders
+        Array.from(content.children).forEach(child => {
+            if (child !== sidebar && child !== wrapper) {
                 wrapper.appendChild(child);
             }
         });
-        
-        content.appendChild(wrapper);
     }
 
     _prepareCharacterData(context) {

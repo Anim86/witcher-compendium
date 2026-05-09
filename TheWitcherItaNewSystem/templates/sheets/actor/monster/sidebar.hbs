@@ -56,7 +56,7 @@
             <i class="fas fa-scroll"></i> {{localize "WITCHER.Description"}}
         </div>
         <div class="monster-bio-box">
-             {{editor system.notes target="system.notes" button=true owner=owner editable=editable}}
+            <textarea name="system.description" rows="6" placeholder="{{localize 'WITCHER.Description'}}">{{system.description}}</textarea>
         </div>
     </div>
 </aside>

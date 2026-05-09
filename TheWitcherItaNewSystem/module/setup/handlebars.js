@@ -36,6 +36,16 @@ export async function preloadHandlebarsTemplates() {
         'systems/TheWitcherItaNewSystem/templates/partials/monster/monster-skill-display.hbs',
         'systems/TheWitcherItaNewSystem/templates/partials/monster/monster-custom-skill-display.hbs',
         'systems/TheWitcherItaNewSystem/templates/partials/monster/monster-profession-skill-display.hbs',
+
+        // Monster sheet V2 PARTS tab wrappers (ApplicationV2 V14)
+        'systems/TheWitcherItaNewSystem/templates/sheets/actor/monster/sidebar.hbs',
+        'systems/TheWitcherItaNewSystem/templates/sheets/actor/monster/header.hbs',
+        'systems/TheWitcherItaNewSystem/templates/sheets/actor/monster/stats.hbs',
+        'systems/TheWitcherItaNewSystem/templates/sheets/actor/monster/tabs/tab-skills.hbs',
+        'systems/TheWitcherItaNewSystem/templates/sheets/actor/monster/tabs/tab-inventory.hbs',
+        'systems/TheWitcherItaNewSystem/templates/sheets/actor/monster/tabs/tab-details.hbs',
+        'systems/TheWitcherItaNewSystem/templates/sheets/actor/monster/tabs/tab-spells.hbs',
+        'systems/TheWitcherItaNewSystem/templates/sheets/actor/monster/tabs/tab-effects.hbs',
         'systems/TheWitcherItaNewSystem/templates/sheets/actor/configuration/partials/skillConfiguration.hbs',
 
         'systems/TheWitcherItaNewSystem/templates/sheets/actor/configuration/app/partials/stats-block.hbs',

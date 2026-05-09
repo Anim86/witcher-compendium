@@ -310,16 +310,118 @@
     color: rgba(255,255,255,0.8);
 }
 
-/* ── Content Tabs ── */
-.application.sheet.witcher.actor.monster-v2 .sheet-tabs {
+/* ── Content Tabs (Navigation bar) ── */
+.application.sheet.witcher.actor.monster-v2 .sheet-tabs,
+.application.sheet.witcher.actor.monster-v2 [data-application-part="tabs"] {
     background: rgba(10, 15, 20, 0.9) !important;
     border-bottom: 1px solid var(--p-border) !important;
-    flex-shrink: 0;
+    flex-shrink: 0 !important;
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    padding: 0 10px !important;
 }
 
+.application.sheet.witcher.actor.monster-v2 [data-application-part="tabs"] .item {
+    padding: 8px 15px !important;
+    color: rgba(255,255,255,0.5) !important;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    border-bottom: 2px solid transparent !important;
+    transition: all 0.2s !important;
+    cursor: pointer !important;
+    white-space: nowrap !important;
+}
+
+.application.sheet.witcher.actor.monster-v2 [data-application-part="tabs"] .item:hover {
+    color: var(--w-gold-light) !important;
+}
+
+.application.sheet.witcher.actor.monster-v2 [data-application-part="tabs"] .item.active {
+    color: var(--w-gold-light) !important;
+    border-bottom-color: var(--w-gold) !important;
+}
+
+/* ── Tab Content PARTS — show/hide via [hidden] (ApplicationV2 V14) ── */
+/* Ogni PART tab riceve [hidden] quando non è attiva */
+.application.sheet.witcher.actor.monster-v2 [data-application-part="skills"],
+.application.sheet.witcher.actor.monster-v2 [data-application-part="inventory"],
+.application.sheet.witcher.actor.monster-v2 [data-application-part="details"],
+.application.sheet.witcher.actor.monster-v2 [data-application-part="spells"],
+.application.sheet.witcher.actor.monster-v2 [data-application-part="effects"] {
+    display: none !important;
+    flex: 1 !important;
+    overflow-y: auto !important;
+    min-height: 0 !important;
+}
+
+.application.sheet.witcher.actor.monster-v2 [data-application-part="skills"]:not([hidden]),
+.application.sheet.witcher.actor.monster-v2 [data-application-part="inventory"]:not([hidden]),
+.application.sheet.witcher.actor.monster-v2 [data-application-part="details"]:not([hidden]),
+.application.sheet.witcher.actor.monster-v2 [data-application-part="spells"]:not([hidden]),
+.application.sheet.witcher.actor.monster-v2 [data-application-part="effects"]:not([hidden]) {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+/* Inner wrapper for each tab content */
 .monster-tab-content {
     background: transparent !important;
     padding: 15px !important;
     flex: 1 !important;
     overflow-y: auto !important;
 }
+
+/* ── char-main-wrapper — colonna destra con header, stats, tabs, contenuto tab ── */
+.application.sheet.witcher.actor.monster-v2 .char-main-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    flex: 1 !important;
+    min-width: 0 !important;
+    overflow: hidden !important;
+}
+
+/* ── Sidebar description textarea ── */
+.monster-bio-box textarea {
+    width: 100% !important;
+    background: rgba(0,0,0,0.2) !important;
+    border: 1px solid var(--p-border) !important;
+    border-radius: 4px !important;
+    color: rgba(255,255,255,0.8) !important;
+    font-size: 12px !important;
+    padding: 5px !important;
+    resize: vertical !important;
+    min-height: 80px !important;
+    font-family: inherit !important;
+}
+
+/* ── Quick action buttons sidebar ── */
+.monster-quick-actions {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.action-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid var(--p-border);
+    color: var(--w-gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.action-btn:hover {
+    background: rgba(197,160,89,0.15);
+    border-color: var(--w-gold);
+    transform: translateY(-1px);
+}
+
