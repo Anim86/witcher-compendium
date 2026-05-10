@@ -7,12 +7,11 @@
 Completare la generazione e l'integrazione degli asset mancanti seguendo la sequenza dei file `prompts_batch_*.html` situati nella cartella `scratch/`. I prompt dei batch dal 54 al 63 sono stati revisionati e aggiornati con descrizioni specifiche degli incantesimi/maledizioni.
 
 ## Stato Repository e Generazione Asset
-- **Batch 51-58:** COMPLETATI.
-- **Batch 59 (Investigations/Lore):** PARZIALE (18/20). Generati e integrati 17 nuovi asset oltre al primo già presente. Mancano 2 asset (strade_e_distanze_del_continente, tipi_di_locali_e_taverne).
+- **Batch 51-59:** COMPLETATI.
 - **Aggiornamento Prompt:** COMPLETATO. Tutti i file `prompts_batch_*.html` (dal 59 al 63) sono stati aggiornati.
-- **Post-Processing:** Eseguito con script Node.js `_tools/scripts/deploy_manual_batches.js` per 17 immagini.
+- **Post-Processing:** Eseguito con script Node.js `_tools/scripts/deploy_manual_batches.js` per Batch 59.
 - **Integrazione Dati:** Allineamento path `img` e compilazione LevelDB eseguiti.
-- **Blocco Attuale:** Quota AI esaurita per `gemini-3.1-flash-image` (reset atteso tra ~5h).
+- **Blocco Attuale:** Nessuno per il Batch 59. Pronti per iniziare il Batch 60.
 
 ## Standard Tecnici (Mandatori)
 ### 1. Asset Grafici
@@ -31,14 +30,13 @@ Ogni modifica deve essere sincronizzata tra:
 > **UTILIZZO PROMPT BATCH:** Utilizzare SEMPRE i file `scratch/prompts_batch_*.html` già generati per i prompt e i nomi file. Questi file contengono la mappatura corretta e i prompt ottimizzati per lo stile "Digital Painting on Stone Slab".
 
 ### 🔄 Stato Avanzamento (Batch)
-- **Batch 1-58:** COMPLETATI.
-- **Batch 59:** IN CORSO (18/20 integrati).
-- **Prompt 59-63:** AGGIORNATI e pronti per l'uso.
+- **Batch 1-59:** COMPLETATI.
+- **Prompt 60-63:** AGGIORNATI e pronti per l'uso.
 
 ---
 
 ## 🛑 Bloccanti Attuali
-1. **Quota AI Esaurita**: Limite attivo per `gemini-3.1-flash-image` (reset atteso tra ~5h). Mancano 2 icone per chiudere il Batch 59.
+Nessun bloccante. Batch 59 completato. Si può procedere con il Batch 60.
 
 ---
 
