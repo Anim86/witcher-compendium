@@ -29,12 +29,25 @@ const SUB_MAPPING = {
     "witcher-dlc-sl-schematics": "ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-dlc-sl-schematics",
     "witcher-goetia": "MAGIA_E_MALEDIZIONI/Doni_del_Caos/witcher-goetia",
     "witcher-lore-racconti": "REGOLAMENTO_E_NARRATIVA/Lore_e_Racconti/witcher-lore-racconti",
-    "witcher-trophies": "REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies"
+    "witcher-trophies": "REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies",
+    "CriticieCombattimento": "TABELLEOPERATIVE/CriticieCombattimento",
+    "DisastriMagici": "TABELLEOPERATIVE/DisastriMagici"
 };
 
-// Gestione speciale per file con nomi Gemini generici
+// Gestione speciale per file con nomi Gemini generici o che richiedono rename specifico
 const SPECIAL_FILES = {
-    "Gemini_Generated_Image_lzgf8ulzgf8ulzgf.png": "illusione_interattiva.webp"
+    "Gemini_Generated_Image_lzgf8ulzgf8ulzgf.png": "illusione_interattiva.webp",
+    "Gemini_Generated_Image_qrgc49qrgc49qrgc.png": "witcher-rolltable-critici-complicati.webp",
+    "critici_difficili.png": "witcher-rolltable-critici-difficili.webp",
+    "critici_mortali.png": "witcher-rolltable-critici-mortali.webp",
+    "critici_semplici.png": "witcher-rolltable-critici-semplici.webp",
+    "fumble_disarmato.png": "witcher-rolltable-fumble-disarmato.webp",
+    "fumble_distanza.png": "witcher-rolltable-fumble-distanza.webp",
+    "fumble_mischia_attacco.png": "witcher-rolltable-fumble-mischia-attacco.webp",
+    "fumble_mischia_difesa.png": "witcher-rolltable-fumble-mischia-difesa.webp",
+    "effetti_dei_disastri_elementali.png": "witcher-rolltable-disastri-elementi.webp",
+    "esiti_dei_disastri_magici_mago.png": "witcher-rolltable-disastri-mago.webp",
+    "pericoli_della_necromanzia.png": "witcher-rolltable-pericoli-necromanzia.webp"
 };
 
 console.log("Avvio processing asset manuali (Node.js version with Sharp/CommonJS)...");

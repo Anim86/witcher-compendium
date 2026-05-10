@@ -10,7 +10,11 @@ const TARGET_FOLDERS = [
     "MAGIA_E_MALEDIZIONI/Maledizioni_e_Fatture",
     "MAGIA_E_MALEDIZIONI/Segni",
     "REGOLAMENTO_E_NARRATIVA/Geografia",
-    "REGOLAMENTO_E_NARRATIVA/Investigazioni"
+    "REGOLAMENTO_E_NARRATIVA/Investigazioni",
+    "REGOLAMENTO_E_NARRATIVA/Lore_e_Racconti",
+    "REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita",
+    "TABELLEOPERATIVE/CriticieCombattimento",
+    "TABELLEOPERATIVE/DisastriMagici"
 ];
 
 function getFiles(dir, files = []) {
