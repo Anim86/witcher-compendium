@@ -49,8 +49,7 @@
 }
 
 .application.sheet.witcher.actor.monster-v2 [data-application-part="stats"] {
-    grid-column: 2 !important;
-    grid-row: 2 !important;
+    display: none !important; /* Stats moved to sidebar */
 }
 
 .application.sheet.witcher.actor.monster-v2 [data-application-part="tabs"] {
@@ -176,217 +175,224 @@
 
 /* Monster Header */
 .monster-header {
-    background: rgba(13, 18, 23, 0.8) !important;
-    padding: 20px 25px !important;
+    background: rgba(13, 18, 23, 0.95) !important;
+    padding: 15px 25px !important;
     border-bottom: 2px solid var(--p-border-bright) !important;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     flex-shrink: 0;
-    min-height: 100px;
+    min-height: 80px;
+    backdrop-filter: blur(10px);
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.monster-type-mini {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--p-border);
+}
+
+.mini-type-icon {
+    height: 32px;
+    width: auto;
+    filter: drop-shadow(0 0 5px rgba(197, 160, 89, 0.4));
+}
+
+.mini-type-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.type-name {
+    font-family: 'Thewitcher', serif;
+    font-size: 14px;
+    color: var(--w-gold-light);
+    line-height: 1.1;
+}
+
+.size-tag {
+    font-size: 9px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+    letter-spacing: 0.5px;
+}
+
+.header-name-box h1 input {
+    font-family: 'Thewitcher', serif !important;
+    font-size: 28px !important;
+    color: #fff !important;
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.monster-badges {
+    display: flex;
+    gap: 6px;
+    margin-top: 2px;
+}
+
+.badge {
+    font-size: 9px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid var(--p-border);
+    border-radius: 4px;
+    color: var(--w-gold-light);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.badge input {
+    background: transparent !important;
+    border: none !important;
+    color: inherit !important;
+    font-weight: inherit !important;
+    width: 30px !important;
+    padding: 0 !important;
+    font-size: 9px !important;
+    height: auto !important;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
 }
 
 .monster-bounty-badge {
     display: flex;
     align-items: center;
-    gap: 8px;
-    padding: 8px 20px;
-    background: rgba(197, 160, 89, 0.05);
-}
-
-.bounty-label {
-    font-size: 10px;
-    font-weight: 800;
-    color: var(--w-gold-light);
-    letter-spacing: 1px;
-    opacity: 0.8;
+    gap: 12px;
+    padding: 10px 15px;
+    background: linear-gradient(90deg, transparent, rgba(197, 160, 89, 0.1));
+    border-radius: 8px;
+    border-right: 3px solid var(--w-gold);
 }
 
 .monster-bounty-badge i {
-    font-size: 12px;
+    font-size: 16px;
     color: var(--w-gold);
-    filter: drop-shadow(0 0 3px rgba(197, 160, 89, 0.5));
+}
+
+.bounty-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.bounty-label {
+    font-size: 9px;
+    font-weight: 800;
+    color: var(--w-gold-light);
+    text-transform: uppercase;
+    opacity: 0.7;
 }
 
 .monster-bounty-badge input {
     background: transparent !important;
     border: none !important;
     color: #fff !important;
-    font-weight: 800 !important;
-    width: 65px !important;
+    font-weight: 900 !important;
+    width: 50px !important;
     padding: 0 !important;
-    font-size: 14px !important;
-    text-align: center;
-    text-shadow: 0 0 5px rgba(0,0,0,0.5);
-}
-
-
-.header-name-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-
-.header-name-box h1 {
-    margin: 0 !important;
-}
-
-
-.header-name-box h1 input {
-    font-family: 'Thewitcher', serif !important;
-    font-size: 32px !important;
-    color: var(--w-gold-light) !important;
-    background: transparent !important;
-    border: none !important;
-    padding: 0 !important;
-}
-
-.monster-badges {
-    display: flex;
-    gap: 8px;
-    margin-top: 5px;
-}
-
-.badge {
-    font-size: 10px;
-    font-weight: 800;
-    text-transform: uppercase;
-    padding: 2px 10px;
-    background: rgba(0,0,0,0.3);
-    border: 1px solid var(--p-border);
-    border-radius: 4px;
-    color: var(--w-gold-light);
+    font-size: 16px !important;
 }
 
 .badge.difficulty.hard { border-color: #e74c3c; color: #ff5555; }
 
-/* Type Banner in Header (Category + Bounty) */
-.monster-type-banner {
-    display: flex;
-    align-items: center;
-    background: rgba(13, 18, 23, 0.6) !important;
-    padding: 0 !important;
-    border-radius: 40px;
-    border: 1px solid var(--p-border);
-    backdrop-filter: blur(8px);
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
-}
-
-.type-info-group {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    padding: 8px 20px;
-}
-
-.header-divider {
-    width: 1px;
-    height: 25px;
-    background: linear-gradient(180deg, transparent, var(--p-border-bright), transparent);
-}
-
-.monster-type-banner .type-icon {
-    height: 36px;
-    filter: drop-shadow(0 0 5px rgba(197, 160, 89, 0.3));
-}
-
-.type-labels-vertical {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.monster-type-banner .type-label {
-    font-family: 'Thewitcher', serif;
-    font-size: 18px;
-    color: var(--w-gold-light);
-    letter-spacing: 1px;
-    line-height: 1.1;
-}
-
-.size-label {
-    font-size: 10px;
-    text-transform: uppercase;
-    color: rgba(255,255,255,0.6);
-    letter-spacing: 0.5px;
-}
-
-.size-label strong {
-    color: var(--w-gold-light);
-    font-weight: 900;
-}
-
-
-/* ── STATS GRID ── */
-.monster-stats-grid {
+/* ── SIDEBAR STATS GRID ── */
+.sidebar-stats-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-    gap: 10px;
-    padding: 15px 20px;
-    background: rgba(0,0,0,0.2);
-    border-bottom: 1px solid var(--p-border);
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-top: 15px;
+    padding-bottom: 25px; /* Previene tagli dell'ultima riga */
     flex-shrink: 0;
 }
 
-.monster-stat-card {
-    background: var(--w-surface) !important;
-    border: 1px solid var(--p-border) !important;
-    border-radius: 6px !important;
-    padding: 10px !important;
-    min-height: 50px;
-    position: relative !important;
+.sidebar-stat-box {
+    background: linear-gradient(135deg, rgba(255,255,255,0.05), rgba(0,0,0,0.3));
+    border: 1px solid var(--p-border);
+    border-radius: 8px;
+    padding: 8px 10px;
     transition: all 0.2s ease;
     text-decoration: none !important;
     display: flex;
     flex-direction: column;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
-.monster-stat-card:hover {
-    background: var(--w-surface-hover) !important;
-    border-color: var(--p-border-bright) !important;
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+.sidebar-stat-box:hover {
+    background: rgba(197, 160, 89, 0.15);
+    border-color: var(--w-gold);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
 }
 
-.stat-label {
-    font-size: 10px;
-    font-weight: 700;
-    color: var(--w-gold-light);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    margin-bottom: 2px;
-}
-
-.stat-values {
+.stat-info {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     gap: 4px;
 }
 
-.stat-values input {
+.stat-name {
+    font-size: 9px;
+    font-weight: 800;
+    color: var(--w-gold-light);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.stat-pair {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 2px;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    padding-top: 4px;
+}
+
+.sidebar-stat-box input {
     background: transparent !important;
     border: none !important;
     color: #fff !important;
-    font-size: 18px !important;
+    font-size: 15px !important;
     font-weight: 900 !important;
-    width: 35px !important;
+    width: 28px !important;
     padding: 0 !important;
-    text-align: center;
+    text-align: left;
 }
 
-.stat-values .separator { opacity: 0.2; }
-.stat-values .stat-max { font-size: 14px; opacity: 0.5; color: #fff; }
-
-.roll-icon-hint {
-    position: absolute;
-    bottom: 6px;
-    right: 8px;
-    font-size: 10px;
-    color: var(--w-gold);
-    opacity: 0.2;
-    transition: all 0.3s;
+.sidebar-stat-box .sep {
+    font-size: 11px;
+    opacity: 0.3;
 }
+
+.sidebar-stat-box .max {
+    font-size: 11px;
+    opacity: 0.5;
+    color: #fff;
+    font-weight: 700;
+}
+
+
+
 
 /* Sidebar Info Groups */
 .sidebar-info-group {
@@ -539,190 +545,126 @@
     text-align: left;
 }
 
-/* ── SIDEBAR GRID LAYOUTS ── */
-.monster-skill-base-grid, 
-.monster-defense-grid,
-.monster-ecology-grid {
+/* ── MONSTER DETAILS TAB LAYOUT ── */
+.monster-details-layout {
     display: flex;
-    flex-direction: column;
-    gap: 4px;
+    gap: 20px;
 }
 
-.skill-base-row, 
-.defense-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 4px 6px;
-    background: rgba(0,0,0,0.2);
-    border-radius: 4px;
-    font-size: 12px;
-}
-
-.skill-base-row .label, 
-.defense-row .label {
-    opacity: 0.7;
-    font-size: 11px;
-}
-
-.skill-base-row .value, 
-.defense-row .value {
-    font-weight: 900;
-    color: var(--w-gold-light);
-    background: rgba(197,160,89,0.1);
-    border: 1px solid rgba(197,160,89,0.2);
-    padding: 0 8px;
-    border-radius: 3px;
-    min-width: 28px;
-    text-align: center;
-    font-family: 'Inter', sans-serif;
-}
-
-/* Armor & Reg Row */
-.monster-armor-reg-row {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-.armor-box, .reg-box {
+.details-column {
     flex: 1;
-    background: rgba(0,0,0,0.4);
-    border: 1px solid var(--p-border);
-    border-radius: 6px;
-    padding: 8px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    transition: all 0.2s;
+    gap: 20px;
 }
 
-.armor-box:hover, .reg-box:hover {
-    border-color: var(--p-border-bright);
-    background: rgba(0,0,0,0.5);
+.details-section.card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--p-border);
+    border-radius: 12px;
+    padding: 15px;
+    backdrop-filter: blur(5px);
 }
 
-.armor-box label, .reg-box label {
-    font-size: 9px;
-    font-weight: 800;
-    text-transform: uppercase;
+.section-header {
+    font-family: 'Thewitcher', serif;
+    font-size: 1.2rem;
     color: var(--w-gold-light);
-    margin-bottom: 4px;
-    letter-spacing: 1px;
+    border-bottom: 1px solid var(--p-border-bright);
+    margin: 0 0 15px 0;
+    padding-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.armor-box input, .reg-box input {
-    width: 100% !important;
-    text-align: center;
-    font-size: 20px !important;
-    font-weight: 900 !important;
-    background: transparent !important;
-    border: none !important;
-    color: #fff !important;
-    padding: 0 !important;
-}
-
-/* Ecology Grid */
-.monster-ecology-grid {
+.details-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    gap: 15px;
 }
 
-.ecology-item {
-    display: flex;
-    flex-direction: column;
-}
-
-.ecology-item label {
-    font-size: 9px;
-    font-weight: 800;
-    color: var(--w-gold-light);
-    opacity: 0.6;
-    margin-bottom: 3px;
-    text-transform: uppercase;
-}
-
-.ecology-item input {
-    background: rgba(0,0,0,0.3) !important;
-    border: 1px solid rgba(197, 160, 89, 0.1) !important;
-    border-radius: 4px !important;
-    color: #fff !important;
-    font-size: 11px !important;
-    padding: 4px 8px !important;
-}
-
-/* Superstition Box */
-.superstition-box {
-    margin-top: 10px;
-}
-
-.superstition-box label {
-    font-size: 10px;
-    font-weight: 800;
-    color: var(--w-gold-light);
-    display: block;
-    margin-bottom: 5px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.superstition-box textarea {
-    width: 100% !important;
-    background: rgba(0,0,0,0.3) !important;
-    border: 1px solid var(--p-border) !important;
-    color: rgba(255,255,255,0.7) !important;
-    font-size: 11px !important;
-    padding: 8px !important;
-    font-style: italic;
-    border-radius: 4px;
-    resize: none;
-    line-height: 1.4;
-}
-
-/* ── VULNERABILITIES & RESISTANCES ── */
-.monster-vuln-res-box {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.monster-vuln-res-box .vuln-box,
-.monster-vuln-res-box .res-box {
+.detail-item {
     display: flex;
     flex-direction: column;
     gap: 4px;
-    background: rgba(0,0,0,0.2);
-    padding: 8px;
-    border-radius: 6px;
-    border-left: 3px solid transparent;
 }
 
-.monster-vuln-res-box .vuln-box {
-    border-left-color: #e74c3c;
-}
-
-.monster-vuln-res-box .res-box {
-    border-left-color: #3498db;
-}
-
-.monster-vuln-res-box label {
+.detail-item label {
     font-size: 9px;
     font-weight: 800;
     text-transform: uppercase;
-    color: var(--w-gold-light);
+    color: rgba(255, 255, 255, 0.5);
     letter-spacing: 1px;
 }
 
-.monster-vuln-res-box textarea {
-    background: transparent !important;
-    border: none !important;
-    color: rgba(255,255,255,0.8) !important;
-    font-size: 11px !important;
-    padding: 0 !important;
-    resize: vertical;
-    min-height: 40px !important;
+.detail-item input {
+    background: rgba(0, 0, 0, 0.4) !important;
+    border: 1px solid var(--p-border) !important;
+    border-radius: 4px !important;
+    color: #fff !important;
+    padding: 6px 10px !important;
+    font-size: 13px !important;
 }
+
+.vuln-res-container, .knowledge-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.text-block label {
+    font-size: 10px;
+    font-weight: 800;
+    color: var(--w-gold);
+    text-transform: uppercase;
+}
+
+.text-block textarea {
+    background: rgba(0, 0, 0, 0.3) !important;
+    border: 1px solid var(--p-border) !important;
+    border-radius: 6px !important;
+    color: rgba(255, 255, 255, 0.8) !important;
+    padding: 10px !important;
+    font-size: 13px !important;
+    line-height: 1.5 !important;
+    resize: vertical !important;
+    min-height: 80px;
+}
+
+.bio-container {
+    min-height: 200px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+/* ── SIDEBAR REFINEMENTS ── */
+.monster-sidebar {
+    background: linear-gradient(180deg, #1a1a1a, #0a0a0a) !important;
+}
+
+.artwork-container {
+    border: 1px solid var(--p-border-bright);
+    box-shadow: 0 0 30px rgba(0,0,0,0.8);
+}
+
+.vital-orb {
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.vital-orb:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0,0,0,0.7);
+}
+
 
 /* ── SIDEBAR LOOT TABLE ── */
 .monster-loot-table {

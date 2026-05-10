@@ -1,4 +1,67 @@
-<div class="monster-tab-content flex">
+<div class="monster-tab-content skills-tab-layout">
+    {{!-- Quick Reference Section --}}
+    <div class="skills-quick-reference">
+        <div class="quick-ref-column">
+            <h3 class="ref-header"><i class="fas fa-tasks"></i> {{localize "WITCHER.Monster.SkillBase"}}</h3>
+            <div class="quick-base-grid">
+                <div class="base-row">
+                    <span>{{localize "WITCHER.skills.athletics.label"}}</span>
+                    <span class="value">{{sum system.stats.dex.value system.skills.dex.athletics.value}}</span>
+                </div>
+                <div class="base-row">
+                    <span>{{localize "WITCHER.skills.brawling.label"}}</span>
+                    <span class="value">{{sum system.stats.ref.value system.skills.ref.brawling.value}}</span>
+                </div>
+                <div class="base-row">
+                    <span>{{localize "WITCHER.skills.stealth.label"}}</span>
+                    <span class="value">{{sum system.stats.dex.value system.skills.dex.stealth.value}}</span>
+                </div>
+                <div class="base-row">
+                    <span>{{localize "WITCHER.skills.intimidation.label"}}</span>
+                    <span class="value">{{sum system.stats.will.value system.skills.will.intimidation.value}}</span>
+                </div>
+                <div class="base-row">
+                    <span>{{localize "WITCHER.skills.physique.label"}}</span>
+                    <span class="value">{{sum system.stats.body.value system.skills.body.physique.value}}</span>
+                </div>
+                <div class="base-row">
+                    <span>{{localize "WITCHER.skills.awareness.label"}}</span>
+                    <span class="value">{{sum system.stats.int.value system.skills.int.awareness.value}}</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="quick-ref-column">
+            <h3 class="ref-header"><i class="fas fa-shield-alt"></i> {{localize "WITCHER.Monster.DefenseBase"}}</h3>
+            <div class="quick-defense-grid">
+                <div class="defense-card">
+                    <label>{{localize "WITCHER.Defense.defenseOptions.dodge"}}</label>
+                    <span class="value">{{sum 10 system.stats.dex.value system.skills.dex.dodgeEscape.value}}</span>
+                </div>
+                <div class="defense-card">
+                    <label>{{localize "WITCHER.Defense.defenseOptions.reposition"}}</label>
+                    <span class="value">{{sum 10 system.stats.dex.value system.skills.dex.athletics.value}}</span>
+                </div>
+                <div class="defense-card">
+                    <label>{{localize "WITCHER.Defense.defenseOptions.block"}}</label>
+                    <span class="value">{{sum 10 system.stats.ref.value system.skills.ref.brawling.value}}</span>
+                </div>
+            </div>
+            
+            <div class="quick-armor-reg">
+                <div class="mini-box">
+                    <label>{{localize "WITCHER.Armor.Short.StoppingPower"}}</label>
+                    <input name="system.stats.armor.value" type="number" value="{{system.stats.armor.value}}" />
+                </div>
+                <div class="mini-box">
+                    <label>{{localize "WITCHER.Monster.Regeneration"}}</label>
+                    <input name="system.regeneration" type="number" value="{{system.regeneration}}" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="skills-main-content flex">
     <div class="skill-column">
         <div class="skill" data-skilltype="int">
             <div class="monster-skill">

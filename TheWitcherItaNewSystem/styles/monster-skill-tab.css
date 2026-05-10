@@ -1,81 +1,152 @@
-/* Monster Skill Tab - Witcher Premium Theme - Compact Version */
-
-.monster-skill {
+/* Quick Reference Section Styling */
+.skills-tab-layout {
     display: flex;
     flex-direction: column;
+    gap: 20px;
+}
+
+.skills-quick-reference {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.03);
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid rgba(197, 160, 89, 0.15);
+    backdrop-filter: blur(8px);
+}
+
+.quick-ref-column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.ref-header {
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--witcher-gold);
+    letter-spacing: 1px;
+    margin: 0 0 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid rgba(197, 160, 89, 0.2);
+    padding-bottom: 5px;
+}
+
+.quick-base-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 8px;
 }
 
-.skill-display {
-    position: relative;
-    width: 100%;
-    font-weight: bold;
-    font-size: 1.1rem !important;
-    color: var(--witcher-gold, #c5a059) !important;
-    border-bottom: 1px solid var(--witcher-accent, #ab0d0d) !important;
-    margin-bottom: 6px !important;
-    padding: 2px 5px !important;
-    font-family: 'Thewitcher', serif;
-    display: block !important;
-    text-shadow: 1px 1px 2px black;
-}
-
-.skill-list {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 15px;
-}
-
-.skill-list td {
-    padding: 3px 5px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.char-skill a {
-    color: var(--witcher-text, #e0e0e0) !important;
-    font-size: 12px;
-    font-weight: 500;
-    transition: color 0.2s;
-}
-
-.char-skill:hover a {
-    color: var(--witcher-accent) !important;
-}
-
-.char-input-skill input {
-    background: rgba(0, 0, 0, 0.4) !important;
-    border: 1px solid #333 !important;
-    border-radius: 3px;
-    color: var(--witcher-gold) !important;
-    width: 35px !important;
-    text-align: center;
-    font-weight: bold;
-    font-size: 12px;
-    height: 20px;
-}
-
-.skill-modifier-display {
-    color: var(--witcher-gold);
-    font-size: 10px;
-    opacity: 0.6;
-}
-
-.add-skill-modifier {
-    color: var(--witcher-gold);
-    font-size: 10px;
-    margin: 5px;
-}
-
-.list-modifiers {
+.base-row {
     display: flex;
-    gap: 5px;
-    padding: 2px 10px;
-    background: rgba(255, 255, 255, 0.03);
-    margin-bottom: 2px;
-    border-radius: 3px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 12px;
 }
 
-.list-modifiers input {
-    font-size: 10px;
-    height: 18px;
+.base-row span:first-child {
+    opacity: 0.7;
+    font-size: 11px;
 }
+
+.base-row .value {
+    font-weight: 900;
+    color: var(--witcher-gold);
+    font-family: 'Inter', sans-serif;
+    background: rgba(197, 160, 89, 0.1);
+    padding: 2px 6px;
+    border-radius: 4px;
+    min-width: 24px;
+    text-align: center;
+}
+
+.quick-defense-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.defense-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    background: rgba(20, 20, 20, 0.6);
+    border: 1px solid rgba(197, 160, 89, 0.2);
+    border-radius: 8px;
+    transition: transform 0.2s;
+}
+
+.defense-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--witcher-gold);
+}
+
+.defense-card label {
+    font-size: 9px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 4px;
+}
+
+.defense-card .value {
+    font-size: 18px;
+    font-weight: 900;
+    color: var(--witcher-gold);
+}
+
+.quick-armor-reg {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.mini-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(197, 160, 89, 0.1), transparent);
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(197, 160, 89, 0.1);
+}
+
+.mini-box label {
+    font-size: 9px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--witcher-gold);
+    margin-bottom: 5px;
+}
+
+.mini-box input {
+    background: transparent !important;
+    border: none !important;
+    color: #fff !important;
+    font-size: 22px !important;
+    font-weight: 900 !important;
+    width: 100% !important;
+    text-align: center;
+    padding: 0 !important;
+}
+
+/* Skills Main Content (The existing skill lists) */
+.skills-main-content {
+    display: flex;
+    gap: 20px;
+}
+
+.skill-column {
+    flex: 1;
+}
