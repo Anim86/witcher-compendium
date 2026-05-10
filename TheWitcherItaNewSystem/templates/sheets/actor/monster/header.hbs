@@ -1,5 +1,20 @@
 <div class="monster-header" data-application-part="header">
     <div class="header-name-box">
+        <div class="type-info-group">
+            {{#if system.monsterType}}
+            <img class="type-icon" src="systems/TheWitcherItaNewSystem/assets/images/Monsters/{{system.monsterType}}.png" data-tooltip="{{localize (lookup config.MonsterTypes system.monsterType)}}" />
+            <div class="type-labels-vertical">
+                <span class="type-label">{{localize (lookup config.MonsterTypes system.monsterType)}}</span>
+                <span class="size-label">{{localize "WITCHER.table.Size"}}: <strong>{{#if system.size}}{{system.size}}{{else}}?{{/if}}</strong></span>
+            </div>
+            {{else}}
+            <i class="fas fa-question-circle type-placeholder"></i>
+            <div class="type-labels-vertical">
+                <span class="type-label">{{localize "WITCHER.None"}}</span>
+                <span class="size-label">{{localize "WITCHER.table.Size"}}: <strong>{{#if system.size}}{{system.size}}{{else}}?{{/if}}</strong></span>
+            </div>
+            {{/if}}
+        </div>
         <h1 class="charname">
             <input name="name" type="text" value="{{actor.name}}" placeholder="{{localize 'WITCHER.Name'}}" />
         </h1>
@@ -10,19 +25,27 @@
             <span class="badge complexity {{toLowerCase system.complexity}}">
                 <i class="fas fa-brain"></i> {{localize (lookup config.monsterComplexity (toLowerCase system.complexity))}}
             </span>
-            <span class="badge size">
-                <i class="fas fa-expand-arrows-alt"></i> {{#if system.size}}{{system.size}}{{else}}?{{/if}}
-            </span>
         </div>
     </div>
 
     <div class="monster-type-banner">
-        {{#if system.monsterType}}
-        <img class="type-icon" src="systems/TheWitcherItaNewSystem/assets/images/Monsters/{{system.monsterType}}.png" data-tooltip="{{localize (lookup config.MonsterTypes system.monsterType)}}" />
-        <span class="type-label">{{localize (lookup config.MonsterTypes system.monsterType)}}</span>
-        {{else}}
-        <i class="fas fa-question-circle type-placeholder"></i>
-        <span class="type-label">{{localize "WITCHER.None"}}</span>
-        {{/if}}
+        <div class="header-attr-group">
+            <div class="header-attr" data-tooltip="{{localize 'WITCHER.Monster.Intelligence'}}">
+                <i class="fas fa-head-side-virus"></i>
+                <input name="system.intelligence" type="text" value="{{system.intelligence}}" placeholder="?" />
+            </div>
+            <div class="header-attr" data-tooltip="{{localize 'WITCHER.Monster.Senses'}}">
+                <i class="fas fa-eye"></i>
+                <input name="system.senses" type="text" value="{{system.senses}}" placeholder="?" />
+            </div>
+        </div>
+
+        <div class="header-divider"></div>
+        
+        <div class="monster-bounty-badge" data-tooltip="{{localize 'WITCHER.Loot.Bounty'}}">
+            <span class="bounty-label">{{localize "WITCHER.Loot.Bounty"}}:</span>
+            <input name="system.bounty" type="text" value="{{system.bounty}}" placeholder="0" />
+            <i class="fas fa-coins"></i>
+        </div>
     </div>
 </div>

@@ -30,25 +30,110 @@
         </a>
     </div>
 
+    {{!-- Skill Base Section --}}
     <div class="sidebar-info-group">
-        <div class="monster-category-header">
-            <i class="fas fa-paw"></i> {{localize "WITCHER.Monster.Category"}}
+        <div class="group-header">
+            <i class="fas fa-tasks"></i> {{localize "WITCHER.Monster.SkillBase"}}
         </div>
-        <div class="monster-type-card">
-            {{#if system.monsterType}}
-                <img class="monster-type-icon" src="systems/TheWitcherItaNewSystem/assets/images/Monsters/{{system.monsterType}}.png" data-tooltip="{{localize (lookup config.MonsterTypes system.monsterType)}}">
-                <span class="monster-type-name">{{localize (lookup config.MonsterTypes system.monsterType)}}</span>
-            {{else}}
-                <span class="monster-type-name">{{localize "WITCHER.None"}}</span>
-            {{/if}}
+        <div class="monster-skill-base-grid">
+            <div class="skill-base-row">
+                <span class="label">{{localize "WITCHER.skills.athletics.label"}}</span>
+                <span class="value">{{sum system.stats.dex.value system.skills.dex.athletics.value}}</span>
+            </div>
+            <div class="skill-base-row">
+                <span class="label">{{localize "WITCHER.skills.brawling.label"}}</span>
+                <span class="value">{{sum system.stats.ref.value system.skills.ref.brawling.value}}</span>
+            </div>
+            <div class="skill-base-row">
+                <span class="label">{{localize "WITCHER.skills.stealth.label"}}</span>
+                <span class="value">{{sum system.stats.dex.value system.skills.dex.stealth.value}}</span>
+            </div>
+            <div class="skill-base-row">
+                <span class="label">{{localize "WITCHER.skills.intimidation.label"}}</span>
+                <span class="value">{{sum system.stats.will.value system.skills.will.intimidation.value}}</span>
+            </div>
+            <div class="skill-base-row">
+                <span class="label">{{localize "WITCHER.skills.physique.label"}}</span>
+                <span class="value">{{sum system.stats.body.value system.skills.body.physique.value}}</span>
+            </div>
+            <div class="skill-base-row">
+                <span class="label">{{localize "WITCHER.skills.endurance.label"}}</span>
+                <span class="value">{{sum system.stats.body.value system.skills.body.endurance.value}}</span>
+            </div>
+            <div class="skill-base-row">
+                <span class="label">{{localize "WITCHER.skills.resistMagic.label"}}</span>
+                <span class="value">{{sum system.stats.will.value system.skills.will.resistMagic.value}}</span>
+            </div>
+            <div class="skill-base-row">
+                <span class="label">{{localize "WITCHER.skills.wildernessSurvival.label"}}</span>
+                <span class="value">{{sum system.stats.int.value system.skills.int.survival.value}}</span>
+            </div>
+            <div class="skill-base-row">
+                <span class="label">{{localize "WITCHER.skills.awareness.label"}}</span>
+                <span class="value">{{sum system.stats.int.value system.skills.int.awareness.value}}</span>
+            </div>
         </div>
     </div>
 
+    {{!-- Armor & Defenses Section --}}
     <div class="sidebar-info-group">
         <div class="group-header">
-            <i class="fas fa-coins"></i> {{localize "WITCHER.Loot.Bounty"}}
+            <i class="fas fa-shield-alt"></i> {{localize "WITCHER.Monster.DefenseBase"}}
         </div>
-        <input class="bounty-input" name="system.bounty" type="text" value="{{system.bounty}}" />
+        <div class="monster-defense-grid">
+            <div class="defense-row">
+                <span class="label">{{localize "WITCHER.Defense.defenseOptions.dodge"}}</span>
+                <span class="value">{{sum 10 system.stats.dex.value system.skills.dex.dodgeEscape.value}}</span>
+            </div>
+            <div class="defense-row">
+                <span class="label">{{localize "WITCHER.Defense.defenseOptions.reposition"}}</span>
+                <span class="value">{{sum 10 system.stats.dex.value system.skills.dex.athletics.value}}</span>
+            </div>
+            <div class="defense-row">
+                <span class="label">{{localize "WITCHER.Defense.defenseOptions.block"}}</span>
+                <span class="value">{{sum 10 system.stats.ref.value system.skills.ref.brawling.value}}</span>
+            </div>
+        </div>
+        
+        <div class="monster-armor-reg-row">
+            <div class="armor-box">
+                <label>{{localize "WITCHER.Armor.Short.StoppingPower"}}</label>
+                <input name="system.stats.armor.value" type="number" value="{{system.stats.armor.value}}" />
+            </div>
+            <div class="reg-box">
+                <label>{{localize "WITCHER.Monster.Regeneration"}}</label>
+                <input name="system.regeneration" type="number" value="{{system.regeneration}}" />
+            </div>
+        </div>
+    </div>
+
+    {{!-- Ecology & Superstition --}}
+    <div class="sidebar-info-group">
+        <div class="group-header">
+            <i class="fas fa-leaf"></i> {{localize "WITCHER.Monster.Environment"}}
+        </div>
+        <div class="monster-ecology-grid">
+            <div class="ecology-item">
+                <label>{{localize "WITCHER.Monster.Environment"}}</label>
+                <input name="system.environment" type="text" value="{{system.environment}}" />
+            </div>
+            <div class="ecology-item">
+                <label>{{localize "WITCHER.Monster.Organization"}}</label>
+                <input name="system.organization" type="text" value="{{system.organization}}" />
+            </div>
+            <div class="ecology-item">
+                <label>{{localize "WITCHER.Monster.Height"}}</label>
+                <input name="system.height" type="text" value="{{system.height}}" />
+            </div>
+            <div class="ecology-item">
+                <label>{{localize "WITCHER.Monster.Weight"}}</label>
+                <input name="system.weight" type="text" value="{{system.weight}}" />
+            </div>
+        </div>
+        <div class="superstition-box">
+            <label>{{localize "WITCHER.Monster.Superstition"}}</label>
+            <textarea name="system.superstition" rows="2">{{system.superstition}}</textarea>
+        </div>
     </div>
 
     <div class="sidebar-info-group">
@@ -56,7 +141,54 @@
             <i class="fas fa-scroll"></i> {{localize "WITCHER.Description"}}
         </div>
         <div class="monster-bio-box">
-            <textarea name="system.description" rows="6" placeholder="{{localize 'WITCHER.Description'}}">{{system.description}}</textarea>
+            <textarea name="system.description" rows="3" placeholder="{{localize 'WITCHER.Description'}}">{{system.description}}</textarea>
+        </div>
+    </div>
+
+    <div class="sidebar-info-group">
+        <div class="group-header">
+            <i class="fas fa-biohazard"></i> {{localize "WITCHER.Monster.Vulnerabilities"}} & {{localize "WITCHER.Monster.Resistances"}}
+        </div>
+        <div class="monster-vuln-res-box">
+            <div class="vuln-box">
+                <label>{{localize "WITCHER.Monster.Vulnerabilities"}}</label>
+                <textarea name="system.vulnerability" rows="2">{{system.vulnerability}}</textarea>
+            </div>
+            <div class="res-box">
+                <label>{{localize "WITCHER.Monster.Resistances"}}</label>
+                <textarea name="system.resistances" rows="2">{{system.resistances}}</textarea>
+            </div>
+        </div>
+    </div>
+
+    {{!-- Loot Table Section --}}
+    <div class="sidebar-info-group loot-group">
+        <div class="group-header">
+            <i class="fas fa-treasure-chest"></i> {{localize "WITCHER.Monster.Loot"}}
+            <div class="header-actions">
+                <a class="action-btn-small" data-action="createItem" data-type="valuable" title="{{localize 'WITCHER.Button.Add'}}">
+                    <i class="fas fa-plus"></i>
+                </a>
+            </div>
+        </div>
+        <div class="monster-loot-table">
+            <div class="loot-list">
+                {{#each loots as |item|}}
+                <div class="loot-row item" data-item-id="{{item._id}}">
+                    <div class="loot-item-main">
+                        <img class="loot-img item-edit" src="{{item.img}}" />
+                        <span class="loot-name item-edit">{{item.name}}</span>
+                    </div>
+                    <div class="loot-item-actions">
+                        <input class="loot-qty inline-edit" type="number" data-field="system.quantity" value="{{#if item.system.quantity}}{{item.system.quantity}}{{else}}1{{/if}}" />
+                        <a class="item-delete" title="{{localize 'WITCHER.Button.Delete'}}"><i class="fas fa-times"></i></a>
+                    </div>
+                </div>
+                {{/each}}
+                {{#unless loots}}
+                <div class="loot-empty">{{localize "WITCHER.None"}}</div>
+                {{/unless}}
+            </div>
         </div>
     </div>
 </aside>

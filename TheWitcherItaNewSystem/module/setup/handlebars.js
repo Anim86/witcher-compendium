@@ -279,6 +279,12 @@ export async function registerHandelbarHelpers() {
         return str.toLowerCase();
     });
 
+    Handlebars.registerHelper('sum', function (...args) {
+        // Remove the options object from the end
+        args.pop();
+        return args.reduce((a, b) => (parseFloat(a) || 0) + (parseFloat(b) || 0), 0);
+    });
+
     Handlebars.registerHelper('multiply', function (v1, v2) {
         return (Number(v1) || 0) * (Number(v2) || 0);
     });
