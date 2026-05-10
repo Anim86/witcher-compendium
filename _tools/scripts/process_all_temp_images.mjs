@@ -14,7 +14,7 @@ const ASSETS_BASE = path.join(REPO_ROOT, "witcher-compendium", "assets", "REGOLA
 // Mapping delle sottocartelle
 const SUB_MAPPING = {
     "witcher-dlc-sr-lore": "Lore_e_Racconti/witcher-dlc-sr-lore",
-    "witcher-investigations": "Investigazioni/witcher-investigations"
+    "witcher-lore": "Lore_e_Racconti/witcher-lore"
 };
 
 console.log("Avvio processing asset manuali in temp_images...");
