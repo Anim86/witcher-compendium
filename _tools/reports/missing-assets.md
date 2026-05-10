@@ -1,5 +1,5 @@
 # 🛡️ Asset Guard - Report Iconografia
-Data Scansione: 10/05/2026, 22:43:01
+Data Scansione: 10/05/2026, 22:49:08
 
 ## 📊 Riepilogo
 - **Totale Voci**: 1513
