@@ -23,7 +23,13 @@ const SUB_MAPPING = {
     "witcher-geografia": "REGOLAMENTO_E_NARRATIVA/Geografia/witcher-geografia",
     "witcher-investigations": "REGOLAMENTO_E_NARRATIVA/Investigazioni/witcher-investigations",
     "witcher-dlc-sr-lore": "REGOLAMENTO_E_NARRATIVA/Lore_e_Racconti/witcher-dlc-sr-lore",
-    "witcher-lore": "REGOLAMENTO_E_NARRATIVA/Lore_e_Racconti/witcher-lore"
+    "witcher-lore": "REGOLAMENTO_E_NARRATIVA/Lore_e_Racconti/witcher-lore",
+    "witcher-lore-chaos": "REGOLAMENTO_E_NARRATIVA/Lore_e_Racconti/witcher-lore-chaos",
+    "witcher-dlc-np-professions": "REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-dlc-np-professions",
+    "witcher-dlc-sl-schematics": "ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-dlc-sl-schematics",
+    "witcher-goetia": "MAGIA_E_MALEDIZIONI/Doni_del_Caos/witcher-goetia",
+    "witcher-lore-racconti": "REGOLAMENTO_E_NARRATIVA/Lore_e_Racconti/witcher-lore-racconti",
+    "witcher-trophies": "REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies"
 };
 
 // Gestione speciale per file con nomi Gemini generici

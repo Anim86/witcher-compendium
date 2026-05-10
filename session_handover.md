@@ -1,18 +1,17 @@
 # Session Handover - Witcher Compendium Maintenance
 
-**Data/Ora:** 08/05/2026 - Inizio Batch 59
-**Stato Generale:** Batch 49-58 COMPLETATI | Batch 59 (1/20) | Prompt 59-63 Aggiornati
+**Data/Ora:** 10/05/2026 - Conclusione Batch
+**Stato Generale:** Batch 1-63 COMPLETATI.
 
 ## Obiettivo Corrente
-Completare la generazione e l'integrazione degli asset mancanti seguendo la sequenza dei file `prompts_batch_*.html` situati nella cartella `scratch/`. I prompt dei batch dal 54 al 63 sono stati revisionati e aggiornati con descrizioni specifiche degli incantesimi/maledizioni.
+Tutti i batch previsti (fino al 63) sono stati generati, integrati e compilati. La fase di generazione massiva degli asset è da considerarsi conclusa con successo.
 
 ## Stato Repository e Generazione Asset
-- **Batch 51-59:** COMPLETATI.
-- **Batch 60 (Lore):** PARZIALE (15/20). Generati e integrati 15 asset. Mancano 5 asset (luna_crescente, luoghi_di_potere, melitele, niya_lilit, ordine_della_rosa_fiammeggiante).
-- **Aggiornamento Prompt:** COMPLETATO. Tutti i file `prompts_batch_*.html` (dal 59 al 63) sono stati aggiornati.
-- **Post-Processing:** Eseguito con script Node.js `_tools/scripts/deploy_manual_batches.js` per Batch 60 (15 asset).
+- **Batch 1-63:** COMPLETATI (Le immagini finali sono state processate a mano dall'utente).
+- **Aggiornamento Prompt:** COMPLETATO.
+- **Post-Processing:** Eseguito con script Node.js `_tools/scripts/deploy_manual_batches.js` su tutti i batch.
 - **Integrazione Dati:** Allineamento path `img` e compilazione LevelDB eseguiti.
-- **Blocco Attuale:** Quota AI esaurita per `gemini-3.1-flash-image` (reset atteso tra ~5h).
+- **Blocco Attuale:** Nessuno. Tutti i task previsti sono stati completati.
 
 ## Standard Tecnici (Mandatori)
 ### 1. Asset Grafici
@@ -31,24 +30,18 @@ Ogni modifica deve essere sincronizzata tra:
 > **UTILIZZO PROMPT BATCH:** Utilizzare SEMPRE i file `scratch/prompts_batch_*.html` già generati per i prompt e i nomi file. Questi file contengono la mappatura corretta e i prompt ottimizzati per lo stile "Digital Painting on Stone Slab".
 
 ### 🔄 Stato Avanzamento (Batch)
-- **Batch 1-59:** COMPLETATI.
-- **Prompt 60-63:** AGGIORNATI e pronti per l'uso.
+- **Batch 1-63:** COMPLETATI.
 
 ---
 
 ## 🛑 Bloccanti Attuali
-Nessun bloccante. Batch 59 completato. Si può procedere con il Batch 60.
+Nessun bloccante. Il processo di integrazione è concluso.
 
 ---
 
 ## 📋 Prossimi Passaggi
-1. **Completare il Batch 59**: Generare gli ultimi 19 asset dopo il reset della quota (~40h) oppure procedere manualmente.
-2. **Generazione/Caricamento**: Caricare i PNG in `temp_images/`.
-3. **Eseguire Deploy**: Eseguire `node _tools/scripts/deploy_manual_batches.js`.
-4. **Sincronizzare e Compilare**:
-   - `node _tools/scripts/core/align_assets_json.mjs`
-   - `node _tools/scripts/core/compile_packs.mjs`
-5. **Commit e Push**.
+1. **Verifica Finale**: Eseguire test di QA all'interno di Foundry VTT (v14) per accertarsi che le icone di quest'ultima tornata siano visualizzate correttamente in tutte le sezioni.
+2. **Commit e Push**: Pushare i file JSON, gli asset WebP e i pack aggiornati sul repository remoto.
 
 ## Script di Riferimento
 - `node _tools/scripts/core/compile_packs.mjs`: Compilazione LevelDB.
