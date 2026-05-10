@@ -30,10 +30,7 @@
 /* =====================================================
    CHARACTER SHEET – Main Layout Grid
    ===================================================== */
-/* ── Main Sheet Grid (Foundry V12/V14 ApplicationV2) ── */
-/* Selector basato su classe reale DOM: application sheet witcher actor monster monster-v2 */
-/* NOTA: In V14 le classi vengono concatenate. WitcherCharacterSheet eredita classi che includono monster-v2 */
-.application.sheet.witcher.actor.monster-v2, 
+/* ── Main Sheet Layout (Foundry V14 ApplicationV2 — character-v2 only) ── */
 .application.sheet.witcher.actor.character-v2 {
     background: #0d1217 url("../../assets/images/setup_bg.jpg") no-repeat center center fixed !important;
     background-size: cover !important;
@@ -41,10 +38,9 @@
     display: flex !important;
     flex-direction: column !important;
     box-shadow: var(--w-shadow-premium) !important;
-    border: 1px solid var(--w-gold-dark) !important; /* Bordino dorato Witcher all'esterno */
+    border: 1px solid var(--w-gold-dark) !important;
 }
 
-.application.sheet.witcher.actor.monster-v2 .window-content,
 .application.sheet.witcher.actor.character-v2 .window-content {
     padding: 0 !important;
     display: flex !important;
@@ -55,15 +51,13 @@
     min-height: 0 !important;
 }
 
-/* Sidebar: Glassmorphism */
-.application.sheet.witcher.actor.monster-v2 .char-sidebar,
-.application.sheet.witcher.actor.monster-v2 [data-application-part="sidebar"],
+/* Sidebar: Glassmorphism (character-v2 only) */
 .application.sheet.witcher.actor.character-v2 .char-sidebar,
 .application.sheet.witcher.actor.character-v2 [data-application-part="sidebar"] {
     flex: 0 0 280px !important;
     background: var(--p-bg-sidebar) !important;
     backdrop-filter: var(--w-blur);
-    border-right: 1px solid var(--p-border); /* Separazione oro soffusa */
+    border-right: 1px solid var(--p-border);
     padding: 20px 15px !important;
     display: flex !important;
     flex-direction: column !important;
@@ -74,7 +68,6 @@
     box-sizing: border-box !important;
 }
 
-.application.sheet.witcher.actor.monster-v2 .char-main-wrapper,
 .application.sheet.witcher.actor.character-v2 .char-main-wrapper {
     flex: 1 !important;
     min-width: 0 !important;
@@ -87,7 +80,6 @@
     border-left: 1px solid var(--p-border) !important; /* Forza la sovrascrittura di eventuali bordi rossi residui */
 }
 
-.application.sheet.witcher.actor.monster-v2 [data-application-part="header"],
 .application.sheet.witcher.actor.character-v2 [data-application-part="header"] {
     padding: 12px 20px 8px !important;
     background: rgba(13, 18, 23, 0.7) !important;
@@ -96,7 +88,6 @@
     margin: 0 !important;
 }
 
-.application.sheet.witcher.actor.monster-v2 [data-application-part="tabs"],
 .application.sheet.witcher.actor.character-v2 [data-application-part="tabs"] {
     background: rgba(10, 15, 20, 0.9) !important;
     padding: 0 20px !important;
@@ -108,13 +99,6 @@
     margin: 0 !important;
 }
 
-.application.sheet.witcher.actor.monster-v2 [data-application-part="stats"],
-.application.sheet.witcher.actor.monster-v2 [data-application-part="skills"],
-.application.sheet.witcher.actor.monster-v2 [data-application-part="profession"],
-.application.sheet.witcher.actor.monster-v2 [data-application-part="inventory"],
-.application.sheet.witcher.actor.monster-v2 [data-application-part="magic"],
-.application.sheet.witcher.actor.monster-v2 [data-application-part="background"],
-.application.sheet.witcher.actor.monster-v2 [data-application-part="effects"],
 .application.sheet.witcher.actor.character-v2 [data-application-part="stats"],
 .application.sheet.witcher.actor.character-v2 [data-application-part="skills"],
 .application.sheet.witcher.actor.character-v2 [data-application-part="profession"],
@@ -161,7 +145,6 @@
 }
 
 /* ── Sidebar: Character Image & Overlays ── */
-.application.sheet.witcher.actor.monster-v2 .char-sidebar .char-image,
 .application.sheet.witcher.actor.character-v2 .char-sidebar .char-image {
     position: relative;
     border-radius: 8px;
@@ -313,7 +296,6 @@
 .focus    .bar-label { color: var(--p-foc); }
 
 /* ── Side Stats Grid ── */
-.application.sheet.witcher.actor.monster-v2 .side-stats-grid,
 .application.sheet.witcher.actor.character-v2 .side-stats-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1468,7 +1450,6 @@ a.button-roll:hover {
 /* =====================================================
    CHARACTER HEADER – Redesign
    ===================================================== */
-.application.sheet.witcher.actor.monster-v2 .header-main-info,
 .application.sheet.witcher.actor.character-v2 .header-main-info {
     display: flex !important;
     flex-direction: column !important;

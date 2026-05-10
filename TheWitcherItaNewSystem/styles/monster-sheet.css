@@ -58,7 +58,10 @@
     grid-row: 3 !important;
 }
 
-/* Tab PARTS: colonna destra, riga 4 (si sovrappongono, V14 gestisce visibilità via [hidden]) */
+/* Tab PARTS: colonna destra, riga 4.
+ * Il sistema Witcher usa .tab + .active per gestire la visibilità (non [hidden]).
+ * Di default tutti i tab sono nascosti, solo .active viene mostrato.
+ */
 .application.sheet.witcher.actor.monster-v2 [data-application-part="skills"],
 .application.sheet.witcher.actor.monster-v2 [data-application-part="inventory"],
 .application.sheet.witcher.actor.monster-v2 [data-application-part="details"],
@@ -68,6 +71,16 @@
     grid-row: 4 !important;
     overflow-y: auto !important;
     min-height: 0 !important;
+    display: none !important; /* Nascosto di default */
+}
+
+/* Tab attivo: visibile. ApplicationV2 aggiunge/rimuove classe .active */
+.application.sheet.witcher.actor.monster-v2 [data-application-part="skills"].active,
+.application.sheet.witcher.actor.monster-v2 [data-application-part="inventory"].active,
+.application.sheet.witcher.actor.monster-v2 [data-application-part="details"].active,
+.application.sheet.witcher.actor.monster-v2 [data-application-part="spells"].active,
+.application.sheet.witcher.actor.monster-v2 [data-application-part="effects"].active {
+    display: block !important;
 }
 
 
