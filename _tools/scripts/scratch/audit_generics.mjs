@@ -35,7 +35,7 @@ function walk(dir) {
                 const relPath = path.relative(ASSETS_ROOT, fullPath);
                 // Escludiamo i file che SONO i placeholder stessi
                 if (!relPath.includes('witcher-skills') && !relPath.includes('oggetti_disonesti.webp')) {
-                    audit[placeholders[size]].push(relPath);
+                    audit[placeholders[size]].push(file);
                 }
             }
         }
