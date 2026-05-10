@@ -22,7 +22,8 @@ const SUB_MAPPING = {
     "witcher-signs-chaos": "MAGIA_E_MALEDIZIONI/Segni/witcher-signs-chaos",
     "witcher-geografia": "REGOLAMENTO_E_NARRATIVA/Geografia/witcher-geografia",
     "witcher-investigations": "REGOLAMENTO_E_NARRATIVA/Investigazioni/witcher-investigations",
-    "witcher-dlc-sr-lore": "REGOLAMENTO_E_NARRATIVA/Lore_e_Racconti/witcher-dlc-sr-lore"
+    "witcher-dlc-sr-lore": "REGOLAMENTO_E_NARRATIVA/Lore_e_Racconti/witcher-dlc-sr-lore",
+    "witcher-lore": "REGOLAMENTO_E_NARRATIVA/Lore_e_Racconti/witcher-lore"
 };
 
 // Gestione speciale per file con nomi Gemini generici

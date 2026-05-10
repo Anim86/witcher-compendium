@@ -8,10 +8,11 @@ Completare la generazione e l'integrazione degli asset mancanti seguendo la sequ
 
 ## Stato Repository e Generazione Asset
 - **Batch 51-59:** COMPLETATI.
+- **Batch 60 (Lore):** PARZIALE (15/20). Generati e integrati 15 asset. Mancano 5 asset (luna_crescente, luoghi_di_potere, melitele, niya_lilit, ordine_della_rosa_fiammeggiante).
 - **Aggiornamento Prompt:** COMPLETATO. Tutti i file `prompts_batch_*.html` (dal 59 al 63) sono stati aggiornati.
-- **Post-Processing:** Eseguito con script Node.js `_tools/scripts/deploy_manual_batches.js` per Batch 59.
+- **Post-Processing:** Eseguito con script Node.js `_tools/scripts/deploy_manual_batches.js` per Batch 60 (15 asset).
 - **Integrazione Dati:** Allineamento path `img` e compilazione LevelDB eseguiti.
-- **Blocco Attuale:** Nessuno per il Batch 59. Pronti per iniziare il Batch 60.
+- **Blocco Attuale:** Quota AI esaurita per `gemini-3.1-flash-image` (reset atteso tra ~5h).
 
 ## Standard Tecnici (Mandatori)
 ### 1. Asset Grafici
