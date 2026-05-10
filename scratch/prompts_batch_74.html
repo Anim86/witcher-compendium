@@ -7,9 +7,10 @@
         body { background-color: #1a1a1a; color: #e0e0e0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 20px; }
         .batch-header { border-bottom: 2px solid #c0a060; padding-bottom: 10px; margin-bottom: 30px; }
         .prompt-card { background-color: #2a2a2a; border-left: 5px solid #c0a060; padding: 15px; margin-bottom: 20px; border-radius: 4px; position: relative; }
-        .item-name { color: #c0a060; font-size: 1.2em; font-weight: bold; margin-bottom: 10px; }
+        .item-name { color: #c0a060; font-size: 1.2em; font-weight: bold; margin-bottom: 5px; }
+        .target-path { font-size: 0.8em; color: #60c0f0; margin-bottom: 10px; font-family: monospace; }
         .save-info { font-size: 0.85em; color: #aaa; margin-bottom: 10px; }
-        .save-path { color: #60c0f0; font-family: monospace; font-weight: bold; }
+        .save-path { color: #ff8080; font-family: monospace; font-weight: bold; }
         .prompt-text { background-color: #151515; padding: 10px; border-radius: 4px; font-family: monospace; font-size: 0.9em; line-height: 1.4; margin-bottom: 10px; border: 1px solid #444; }
         button { background-color: #c0a060; border: none; color: #1a1a1a; padding: 8px 15px; border-radius: 4px; cursor: pointer; font-weight: bold; transition: background 0.2s; }
         button:hover { background-color: #e0c080; }
@@ -36,13 +37,14 @@
 </head>
 <body>
     <div class="batch-header">
-        <h1>Witcher Compendium - Batch 74</h1>
-        <p>Salva le immagini in: <a href="file:///e:/AntigravitiProgetti/CompendioTheWitcher/temp_images/" class="folder-link">E:\AntigravitiProgetti\CompendioTheWitcher\temp_images\</a></p>
+        <h1>Witcher Compendium - Batch 74 (Oli e Decotti)</h1>
+        <p>Salva in: <a href="file:///e:/AntigravitiProgetti/CompendioTheWitcher/temp_images/" class="folder-link">E:\AntigravitiProgetti\CompendioTheWitcher\temp_images\</a></p>
     </div>
 
     <!-- ITEM 1 -->
     <div class="prompt-card">
         <div class="item-name">1. Olio Anti-Ancestrali</div>
+        <div class="target-path">Dest: assets/ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/</div>
         <div class="save-info">Salva come: <span class="save-path">Formula_Olio_Anti-Ancestrali_wo_.png</span></div>
         <div class="prompt-text" id="prompt1">Digital painting viewed from directly above, top-down perspective, an ancient illuminated parchment featuring the alchemical formula for the Olio Anti-Ancestrali, depicting intricate ink illustrations of ancient relict skulls, glowing magical runes, and scattered herbs, lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
         <button class="copy-btn" onclick="copyPrompt('prompt1')">Copia Prompt</button>
@@ -52,6 +54,7 @@
     <!-- ITEM 2 -->
     <div class="prompt-card">
         <div class="item-name">2. Olio Anti-Bestie</div>
+        <div class="target-path">Dest: assets/ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/</div>
         <div class="save-info">Salva come: <span class="save-path">Formula_Olio_Anti-Bestie_wo_.png</span></div>
         <div class="prompt-text" id="prompt2">Digital painting viewed from directly above, top-down perspective, an ancient illuminated parchment featuring the alchemical formula for the Olio Anti-Bestie, depicting intricate ink illustrations of beast claws, dog tallow, and toxic botanical extracts, lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
         <button class="copy-btn" onclick="copyPrompt('prompt2')">Copia Prompt</button>
@@ -61,6 +64,7 @@
     <!-- ITEM 3 -->
     <div class="prompt-card">
         <div class="item-name">3. Olio Anti-Dragonidi</div>
+        <div class="target-path">Dest: assets/ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/</div>
         <div class="save-info">Salva come: <span class="save-path">Formula_Olio_Anti-Dragonidi_wo_.png</span></div>
         <div class="prompt-text" id="prompt3">Digital painting viewed from directly above, top-down perspective, an ancient illuminated parchment featuring the alchemical formula for the Olio Anti-Dragonidi, depicting intricate ink illustrations of scaled draconid hides, sharp crushed minerals, and animal fat, lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
         <button class="copy-btn" onclick="copyPrompt('prompt3')">Copia Prompt</button>
@@ -70,6 +74,7 @@
     <!-- ITEM 4 -->
     <div class="prompt-card">
         <div class="item-name">4. Olio Anti-Elementali</div>
+        <div class="target-path">Dest: assets/ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/</div>
         <div class="save-info">Salva come: <span class="save-path">Formula_Olio_Anti-Elementali_wo_.png</span></div>
         <div class="prompt-text" id="prompt4">Digital painting viewed from directly above, top-down perspective, an ancient illuminated parchment featuring the alchemical formula for the Olio Anti-Elementali, depicting intricate ink illustrations of crushed elemental stones, glowing dust, and heavy greases, lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
         <button class="copy-btn" onclick="copyPrompt('prompt4')">Copia Prompt</button>
@@ -79,6 +84,7 @@
     <!-- ITEM 5 -->
     <div class="prompt-card">
         <div class="item-name">5. Olio Anti-Ibridi</div>
+        <div class="target-path">Dest: assets/ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/</div>
         <div class="save-info">Salva come: <span class="save-path">Formula_Olio_Anti-Ibridi_wo_.png</span></div>
         <div class="prompt-text" id="prompt5">Digital painting viewed from directly above, top-down perspective, an ancient illuminated parchment featuring the alchemical formula for the Olio Anti-Ibridi, depicting intricate ink illustrations of griffin feathers, harpy talons, and dark toxic liquids, lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
         <button class="copy-btn" onclick="copyPrompt('prompt5')">Copia Prompt</button>
@@ -88,6 +94,7 @@
     <!-- ITEM 6 -->
     <div class="prompt-card">
         <div class="item-name">6. Olio Anti-Insettoidi</div>
+        <div class="target-path">Dest: assets/ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/</div>
         <div class="save-info">Salva come: <span class="save-path">Formula_Olio_Anti-Insettoidi_wo_.png</span></div>
         <div class="prompt-text" id="prompt6">Digital painting viewed from directly above, top-down perspective, an ancient illuminated parchment featuring the alchemical formula for the Olio Anti-Insettoidi, depicting intricate ink illustrations of sharp chitin shards, venomous stingers, and crushed toxic flora, lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
         <button class="copy-btn" onclick="copyPrompt('prompt6')">Copia Prompt</button>
@@ -97,6 +104,7 @@
     <!-- ITEM 7 -->
     <div class="prompt-card">
         <div class="item-name">7. Olio Anti-Maledetti</div>
+        <div class="target-path">Dest: assets/ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/</div>
         <div class="save-info">Salva come: <span class="save-path">Formula_Olio_Anti-Maledetti_wo_.png</span></div>
         <div class="prompt-text" id="prompt7">Digital painting viewed from directly above, top-down perspective, an ancient illuminated parchment featuring the alchemical formula for the Olio Anti-Maledetti, depicting intricate ink illustrations of dark cursed blood drops, twisted roots, and mystical binding runes, lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
         <button class="copy-btn" onclick="copyPrompt('prompt7')">Copia Prompt</button>
@@ -106,6 +114,7 @@
     <!-- ITEM 8 -->
     <div class="prompt-card">
         <div class="item-name">8. Olio Anti-Necrofagi</div>
+        <div class="target-path">Dest: assets/ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/</div>
         <div class="save-info">Salva come: <span class="save-path">Formula_Olio_Anti-Necrofagi_wo_.png</span></div>
         <div class="prompt-text" id="prompt8">Digital painting viewed from directly above, top-down perspective, an ancient illuminated parchment featuring the alchemical formula for the Olio Anti-Necrofagi, depicting intricate ink illustrations of rotting flesh motifs, toxic green spores, and dark bone dust, lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
         <button class="copy-btn" onclick="copyPrompt('prompt8')">Copia Prompt</button>
@@ -115,6 +124,7 @@
     <!-- ITEM 9 -->
     <div class="prompt-card">
         <div class="item-name">9. Olio Anti-Orchi</div>
+        <div class="target-path">Dest: assets/ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/</div>
         <div class="save-info">Salva come: <span class="save-path">Formula_Olio_Anti-Orchi_wo_.png</span></div>
         <div class="prompt-text" id="prompt9">Digital painting viewed from directly above, top-down perspective, an ancient illuminated parchment featuring the alchemical formula for the Olio Anti-Orchi, depicting intricate ink illustrations of thick ogre wax, crushed troll bone, and heavy animal fat, lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
         <button class="copy-btn" onclick="copyPrompt('prompt9')">Copia Prompt</button>
@@ -124,6 +134,7 @@
     <!-- ITEM 10 -->
     <div class="prompt-card">
         <div class="item-name">10. Olio Anti-Spettri</div>
+        <div class="target-path">Dest: assets/ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/</div>
         <div class="save-info">Salva come: <span class="save-path">Formula_Olio_Anti-Spettri_wo_.png</span></div>
         <div class="prompt-text" id="prompt10">Digital painting viewed from directly above, top-down perspective, an ancient illuminated parchment featuring the alchemical formula for the Olio Anti-Spettri, depicting intricate ink illustrations of pale ethereal ectoplasm, ghostly essence, and mystical silver dust, lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
         <button class="copy-btn" onclick="copyPrompt('prompt10')">Copia Prompt</button>
@@ -133,6 +144,7 @@
     <!-- ITEM 11 -->
     <div class="prompt-card">
         <div class="item-name">11. Olio Anti-Vampiri</div>
+        <div class="target-path">Dest: assets/ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/</div>
         <div class="save-info">Salva come: <span class="save-path">Formula_Olio_Anti-Vampiri_wo_.png</span></div>
         <div class="prompt-text" id="prompt11">Digital painting viewed from directly above, top-down perspective, an ancient illuminated parchment featuring the alchemical formula for the Olio Anti-Vampiri, depicting intricate ink illustrations of long curved vampire fangs, dark blood, and crushed holy garlic, lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
         <button class="copy-btn" onclick="copyPrompt('prompt11')">Copia Prompt</button>
@@ -142,6 +154,7 @@
     <!-- ITEM 12 -->
     <div class="prompt-card">
         <div class="item-name">12. Veleno dell'Impiccato</div>
+        <div class="target-path">Dest: assets/ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/</div>
         <div class="save-info">Salva come: <span class="save-path">Formula_Veleno_dell'Impiccato_wo_.png</span></div>
         <div class="prompt-text" id="prompt12">Digital painting viewed from directly above, top-down perspective, an ancient illuminated parchment featuring the alchemical formula for the Veleno dell'Impiccato, depicting intricate ink illustrations of sinister human skull motifs, deadly nightshade, and drops of highly toxic green liquid, lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
         <button class="copy-btn" onclick="copyPrompt('prompt12')">Copia Prompt</button>
@@ -151,6 +164,7 @@
     <!-- ITEM 13 -->
     <div class="prompt-card">
         <div class="item-name">13. Decotto di Arachas</div>
+        <div class="target-path">Dest: assets/ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/</div>
         <div class="save-info">Salva come: <span class="save-path">Formula_Decotto_di_Arachas_dec_.png</span></div>
         <div class="prompt-text" id="prompt13">Digital painting viewed from directly above, top-down perspective, an ancient illuminated parchment featuring the alchemical formula for the Decotto di Arachas, depicting intricate ink illustrations of a venomous arachas eye, a vial of swirling toxic green mutagen, and a bottle of strong spirit, lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
         <button class="copy-btn" onclick="copyPrompt('prompt13')">Copia Prompt</button>
@@ -160,6 +174,7 @@
     <!-- ITEM 14 -->
     <div class="prompt-card">
         <div class="item-name">14. Decotto di Demonio</div>
+        <div class="target-path">Dest: assets/ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/</div>
         <div class="save-info">Salva come: <span class="save-path">Formula_Decotto_di_Demonio_dec_.png</span></div>
         <div class="prompt-text" id="prompt14">Digital painting viewed from directly above, top-down perspective, an ancient illuminated parchment featuring the alchemical formula for the Decotto di Demonio, depicting intricate ink illustrations of a massive horned fiend third eye, a vial of swirling dark red mutagen, and a bottle of strong spirit, lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
         <button class="copy-btn" onclick="copyPrompt('prompt14')">Copia Prompt</button>
@@ -169,6 +184,7 @@
     <!-- ITEM 15 -->
     <div class="prompt-card">
         <div class="item-name">15. Decotto di Grifone</div>
+        <div class="target-path">Dest: assets/ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/</div>
         <div class="save-info">Salva come: <span class="save-path">Formula_Decotto_di_Grifone_dec_.png</span></div>
         <div class="prompt-text" id="prompt15">Digital painting viewed from directly above, top-down perspective, an ancient illuminated parchment featuring the alchemical formula for the Decotto di Grifone, depicting intricate ink illustrations of sharp griffin feathers, a vial of swirling green mutagen, and a bottle of strong spirit, lying flat on a dark rough textured stone surface, large subject perfectly framed with narrow margins, filling the space without overflowing, dark fantasy style, Witcher universe aesthetic, moody lighting, high contrast, 1024x1024, sharp focus.</div>
         <button class="copy-btn" onclick="copyPrompt('prompt15')">Copia Prompt</button>
