@@ -1,11 +1,13 @@
 # Session Summary - Witcher Compendium Asset Completion
 
 ### 1. Final Status
-*   **Total Integrity**: All 568 high-quality assets (552 restored + 8 manual + 8 Snail restored) are now fully integrated and correctly mapped.
-*   **Snail School Restoration**: 100% complete. Restored 8 JSON files and 8 WebP assets for the "Equipaggiamento Lumaca (SL)" compendium, which was previously empty.
+*   **Total Integrity**: All 588 high-quality assets (552 restored + 8 manual + 8 Snail + 20 SW duplicated) are now fully integrated and correctly mapped.
+*   **Snail School (SL) Restoration**: 100% complete. Restored 8 JSONs and 8 assets in a dedicated DLC pack.
+*   **School Equipment (SW) Duplication**: 100% complete. Restored 20 JSONs for the "Equipaggiamento Scuole (SW)" pack and duplicated the high-quality assets to maintain independence.
 *   **ID Collision Fix**: Resolved a critical issue where Batch 74 formulas (Oils/Decoctions) shared duplicate IDs. All formulas now have unique IDs and are fully visible in Foundry.
-*   **Weapons Remediation**: 100% complete. All school weapons (including Snail) use high-resolution art.
+*   **Weapons Remediation**: 100% complete. All school weapons use high-resolution art.
 *   **Cleanup**: Repository is clean. `temp_images` is empty, and all source PNGs are in the git-ignored `backup_images` folder.
+
 
 
 ### 2. Actions Performed
