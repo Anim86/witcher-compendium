@@ -8,6 +8,20 @@
 *   **Weapons Remediation**: 100% complete. All school weapons use high-resolution art.
 *   **Cleanup**: Repository is clean. `temp_images` is empty, and all source PNGs are in the git-ignored `backup_images` folder.
 
+## 6. Audit Asset Chaos (Aggiornamento 11/05)
+*   **Asset Ripristinati**:
+    *   **Amuleti Incantati (1-4)**: Ripristinati dal backup locale, convertiti in WebP (512px) e inseriti in `witcher-equipment`.
+    *   **Corda Magica Elfica**: Recuperata versione HQ da `magic-items` e copiata in `special-chaos`.
+    *   **Portale Fisso & Teschio di Cristallo**: Verificati, erano già in HQ in `special-chaos`.
+*   **Asset Mancanti (Placeholder 54KB)**:
+    *   I seguenti 6 oggetti sono ancora segnaposto. La rigenerazione è in pausa per quota API esaurita (reset tra ~1.5h):
+        *   Megascopio
+        *   Quadrifoglio
+        *   Specchio dei Desideri
+        *   Legame di Coppia
+        *   Occhio di Nehaleni
+        *   Utensili da Incisore Runico
+*   **Prossimi Passaggi**: Rigenerare questi 6 oggetti con i prompt del Batch 67 appena possibile.
 
 
 ### 2. Actions Performed
@@ -24,13 +38,14 @@
 ---
 
 ## 🛑 Bloccanti Attuali
-Nessun bloccante. Il processo di integrazione è concluso.
+*   **Quota Generazione Immagini**: Esaurita per circa 1.5h. Impedisce la rigenerazione degli ultimi 6 oggetti Chaos (Megascopio, ecc.).
 
 ---
 
 ## 📋 Prossimi Passaggi
 📦 **Batch Pendenti**:
 *   **Batch 75 (Alchimia)**: 15 item rimanenti (Decotti e Pozioni).
+*   **Batch 67 (Chaos)**: Rigenerazione 6 icone HQ (Megascopio, Quadrifoglio, Specchio, Legame, Occhio, Utensili).
 *   **Batch 76-77**: In coda.
 
 
