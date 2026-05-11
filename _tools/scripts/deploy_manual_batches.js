@@ -31,7 +31,8 @@ const SUB_MAPPING = {
     "witcher-lore-racconti": "REGOLAMENTO_E_NARRATIVA/Lore_e_Racconti/witcher-lore-racconti",
     "witcher-trophies": "REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies",
     "CriticieCombattimento": "TABELLEOPERATIVE/CriticieCombattimento",
-    "DisastriMagici": "TABELLEOPERATIVE/DisastriMagici"
+    "DisastriMagici": "TABELLEOPERATIVE/DisastriMagici",
+    "witcher-alchemy": "ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy"
 };
 
 // Gestione speciale per file con nomi Gemini generici o che richiedono rename specifico

@@ -22,8 +22,6 @@ Questo file elenca gli asset che risultano essere placeholder o eccessivamente c
   - Usato da: Schema: Balestra da Caccia
 - **Balestra.webp** (EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/Balestra.webp)
   - Usato da: Balestra
-- **Scuola_dellOrso_(Balestra).webp** (EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/Scuola_dellOrso_(Balestra).webp)
-  - Usato da: Balestra dell'Orso
 
 ### Dimensione: 9250 bytes
 - **Munizioni_Normali.webp** (ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-schematics/Munizioni_Normali.webp)
@@ -44,50 +42,20 @@ Questo file elenca gli asset che risultano essere placeholder o eccessivamente c
 ### Dimensione: 17144 bytes
 - **Formula_Amico_dell'Avvelenatore.webp** (ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/Formula_Amico_dell'Avvelenatore.webp)
   - Usato da: Formula: Amico dell'Avvelenatore
-- **Formula_Bufera_di_Neve_wp_.webp** (ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/Formula_Bufera_di_Neve_wp_.webp)
-  - Usato da: Formula: Bufera di Neve
 - **Formula_Colla_Alchemica_ex_1.webp** (ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/Formula_Colla_Alchemica_ex_1.webp)
   - Usato da: Formula: Colla Alchemica
-- **Formula_Decotto_di_Katakan_dec_.webp** (ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/Formula_Decotto_di_Katakan_dec_.webp)
-  - Usato da: Formula: Decotto di Katakan
-- **Formula_Decotto_di_Lupo_Mannaro_dec_.webp** (ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/Formula_Decotto_di_Lupo_Mannaro_dec_.webp)
-  - Usato da: Formula: Decotto di Lupo Mannaro
-- **Formula_Decotto_di_Nekker_dec_.webp** (ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/Formula_Decotto_di_Nekker_dec_.webp)
-  - Usato da: Formula: Decotto di Nekker
-- **Formula_Decotto_di_Strega_dei_Sepolcri_dec_.webp** (ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/Formula_Decotto_di_Strega_dei_Sepolcri_dec_.webp)
-  - Usato da: Formula: Decotto di Strega dei Sepolcri
-- **Formula_Decotto_di_Troll_dec_.webp** (ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/Formula_Decotto_di_Troll_dec_.webp)
-  - Usato da: Formula: Decotto di Troll
-- **Formula_Decotto_di_Viverna_dec_.webp** (ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/Formula_Decotto_di_Viverna_dec_.webp)
-  - Usato da: Formula: Decotto di Viverna
-- **Formula_Decotto_di_Wraith_Diurno_dec_.webp** (ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/Formula_Decotto_di_Wraith_Diurno_dec_.webp)
-  - Usato da: Formula: Decotto di Wraith Diurno
 - **Formula_Elisir_di_Pantagran_ex_5.webp** (ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/Formula_Elisir_di_Pantagran_ex_5.webp)
   - Usato da: Formula: Elisir di Pantagran
-- **Formula_Filtro_di_Petri_wp_.webp** (ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/Formula_Filtro_di_Petri_wp_.webp)
-  - Usato da: Formula: Filtro di Petri
 - **Formula_Fisstech_ex_6.webp** (ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/Formula_Fisstech_ex_6.webp)
   - Usato da: Formula: Fisstech
-- **Formula_Foresta_di_Maribor_wp_.webp** (ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/Formula_Foresta_di_Maribor_wp_.webp)
-  - Usato da: Formula: Foresta di Maribor
 - **Formula_Fuoco_Rapido_ex_2.webp** (ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/Formula_Fuoco_Rapido_ex_2.webp)
   - Usato da: Formula: Fuoco Rapido
 - **Formula_Fuoco_Zerrikaniano_ex_7.webp** (ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/Formula_Fuoco_Zerrikaniano_ex_7.webp)
   - Usato da: Formula: Fuoco Zerrikaniano
 - **Formula_Furia_di_Bredan_ex_8.webp** (ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/Formula_Furia_di_Bredan_ex_8.webp)
   - Usato da: Formula: Furia di Bredan
-- **Formula_Gatto_wp_.webp** (ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/Formula_Gatto_wp_.webp)
-  - Usato da: Formula: Gatto
-- **Formula_Gufo_Fulvo_wp_.webp** (ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/Formula_Gufo_Fulvo_wp_.webp)
-  - Usato da: Formula: Gufo Fulvo
 - **Formula_Lacrime_di_Talgar_ex_9.webp** (ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/Formula_Lacrime_di_Talgar_ex_9.webp)
   - Usato da: Formula: Lacrime di Talgar
-- **Formula_Luna_Piena_wp_.webp** (ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/Formula_Luna_Piena_wp_.webp)
-  - Usato da: Formula: Luna Piena
-- **Formula_Miele_Bianco_wp_.webp** (ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/Formula_Miele_Bianco_wp_.webp)
-  - Usato da: Formula: Miele Bianco
-- **Formula_Orca_Assassina_wp_.webp** (ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/Formula_Orca_Assassina_wp_.webp)
-  - Usato da: Formula: Orca Assassina
 - **Formula_Pozione_Profumo_ex_10.webp** (ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/Formula_Pozione_Profumo_ex_10.webp)
   - Usato da: Formula: Pozione Profumo
 - **Formula_Rigogolo_Dorato_wp_.webp** (ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/Formula_Rigogolo_Dorato_wp_.webp)
@@ -116,6 +84,8 @@ Questo file elenca gli asset che risultano essere placeholder o eccessivamente c
   - Usato da: Pardus di Korath
 - **rodolf_kazmer.webp** (BESTIARIO/witcher-characters/rodolf_kazmer.webp)
   - Usato da: Rodolf Kazmer
+- **elias_von_drexel.webp** (EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-dlc-sl-equipment/elias_von_drexel.webp)
+  - Usato da: Elias von Drexel
 - **Anti-Ancestrali.webp** (EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-equipment/Anti-Ancestrali.webp)
   - Usato da: Anti-Ancestrali
 - **Anti-Bestie.webp** (EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-equipment/Anti-Bestie.webp)
@@ -140,8 +110,6 @@ Questo file elenca gli asset che risultano essere placeholder o eccessivamente c
   - Usato da: Anti-Vampiri
 - **Diario_-_Libro_Mastro.webp** (EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-equipment/Diario_-_Libro_Mastro.webp)
   - Usato da: Diario / Libro Mastro
-- **elias_von_drexel.webp** (EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-equipment/elias_von_drexel.webp)
-  - Usato da: Elias von Drexel
 - **Pietra_Allarme__Pietra_del_Potere_.webp** (EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-equipment/Pietra_Allarme__Pietra_del_Potere_.webp)
   - Usato da: Pietra Allarme (Pietra del Potere)
 - **pietra_guardiana__allarme.webp** (EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-equipment/pietra_guardiana__allarme.webp)
