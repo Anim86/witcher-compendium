@@ -7,14 +7,7 @@ const __dirname = path.dirname(__filename);
 const REPO_ROOT = path.resolve(__dirname, '../../../');
 const SRC_PACKS_DIR = path.join(REPO_ROOT, '_tools/src-packs');
 
-function slugify(text) {
-    return text.toString().toLowerCase()
-        .normalize('NFD') // Normalize to decomposed form
-        .replace(/[\u0300-\u036f]/g, '') // Remove accent marks
-        .replace(/[^\w\s-]/g, '') // Remove non-word chars
-        .replace(/[-\s]+/g, '_') // Replace spaces/dashes with underscores
-        .replace(/^-+|-+$/g, ''); // Trim underscores
-}
+import { slugify } from '../core/utils.mjs';
 
 function walk(dir) {
     let results = [];

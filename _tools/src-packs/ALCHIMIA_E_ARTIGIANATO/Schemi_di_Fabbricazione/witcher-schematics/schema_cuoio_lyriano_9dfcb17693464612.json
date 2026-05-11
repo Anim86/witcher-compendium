@@ -1,0 +1,28 @@
+{
+    "_id": "9dfcb17693464612",
+    "name": "Schema: Cuoio Lyriano",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-schematics/schema_cuoio_lyriano.webp",
+    "system": {
+        "description": "<p>S Acquistato o fabbricato N/A N/A 2 60 Ossa di Bestia C Reperibile da mostri e bestie Variabile N/A 4 8 Pelle di Dragonide R Acquistato o fabbricato N/A N/A 5 58 Pelle di Lupo C Acquistato o fabbricato 3 UnitÃ  N/A 3 14 Pelle di Mucca C Acquistato N/A N/A 5 10 Piume D Reperibile sugli uccelli 1d6 UnitÃ  N/A 0,1 4 Scaglie di Dragonide R Reperibile sulle viverne 1d6 UnitÃ  N/A 5 30</p>",
+        "weight": 0,
+        "cost": 0,
+        "components": [
+            "Cuoio Lyriano 17 1 ora Cuoio (x1), Cerume di Orco (x1), Carbone (x12) 40 80"
+        ],
+        "difficulty": 17,
+        "time": "1 ora",
+        "sourcebook": "MB 130"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

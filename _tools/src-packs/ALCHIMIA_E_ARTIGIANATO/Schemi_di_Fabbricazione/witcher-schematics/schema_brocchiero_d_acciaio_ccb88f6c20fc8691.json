@@ -1,0 +1,30 @@
+{
+    "_id": "ccb88f6c20fc8691",
+    "name": "Schema: Brocchiero d'Acciaio",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-schematics/schema_brocchiero_d_acciaio.webp",
+    "system": {
+        "description": "<p>Schema per la fabbricazione di: <b>Brocchiero d'Acciaio</b>.</p><p><b>Componenti richiesti:</b> Acciaio (x1), Legname Indurito (x1), Cuoio Indurito (x1)</p><p><b>DifficoltÃ  Manifattura:</b> CD 15</p><p><b>Tempo:</b> 4 ore</p>",
+        "weight": 0,
+        "cost": 0,
+        "components": [
+            "Acciaio (x1)",
+            "Legname Indurito (x1)",
+            "Cuoio Indurito (x1)"
+        ],
+        "difficulty": 15,
+        "time": "4 ore",
+        "sourcebook": "MB 136"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

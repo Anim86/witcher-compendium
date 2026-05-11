@@ -1,0 +1,51 @@
+{
+    "_id": "d5ddcedcbfad6a43",
+    "name": "Armatura di Draugr",
+    "type": "armor",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-armor/armatura_di_draugr.webp",
+    "system": {
+        "description": "<p>Armatura Reliquia. Ricavata dai resti del Draug (il comandante Vandergrift) nella nebbia di Vergen. Resistente come l'inferno ma maledetta.</p><p><strong>Statistiche:</strong> 26 PA, 3 VI, +25 HP, +2 Res. Magia, Res. Fuoco/Veleno/Sang., +2 Lanciare Incantesimi. 3 Slot.</p><p><strong>Effetti:</strong> +25 Punti Salute, +2 Res. Magia, +2 Lanciare Incantesimi. Resistenze: Fuoco, Veleno, Sanguinamento.</p>",
+        "quantity": "1",
+        "weight": 37,
+        "cost": 0,
+        "sourcebook": "MB 265",
+        "poa": {
+            "value": 26,
+            "max": 26
+        },
+        "stopping": 26,
+        "ev": 3,
+        "encumbrance": 3,
+        "level": "heavy",
+        "enhancementSlots": 3,
+        "bludgeoning": false,
+        "slashing": false,
+        "piercing": false,
+        "type": "Heavy",
+        "location": "FullCover",
+        "encumb": 3,
+        "enhancements": 3,
+        "headStopping": 26,
+        "headMaxStopping": 26,
+        "torsoStopping": 26,
+        "torsoMaxStopping": 26,
+        "leftArmStopping": 26,
+        "leftArmMaxStopping": 26,
+        "rightArmStopping": 26,
+        "rightArmMaxStopping": 26,
+        "leftLegStopping": 26,
+        "leftLegMaxStopping": 26,
+        "rightLegStopping": 26,
+        "rightLegMaxStopping": 26,
+        "elemental": false,
+        "fire": true,
+        "poison": true,
+        "bleeding": true
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

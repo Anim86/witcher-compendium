@@ -1,0 +1,41 @@
+{
+    "_id": "bce7ae8df61a77de",
+    "name": "Armatura del Gatto",
+    "type": "armor",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-armor/armatura_del_gatto.webp",
+    "system": {
+        "description": "<p>Set di Armatura da Witcher.</p><p><strong>Effetti:</strong> Raffica Fatale: Dopo un critico, puoi disarmare o sbilanciare gratis.</p>",
+        "quantity": 1,
+        "weight": 3,
+        "type": "Light",
+        "location": "FullCover",
+        "encumb": 0,
+        "enhancements": 2,
+        "headStopping": 6,
+        "headMaxStopping": 6,
+        "torsoStopping": 6,
+        "torsoMaxStopping": 6,
+        "leftArmStopping": 6,
+        "leftArmMaxStopping": 6,
+        "rightArmStopping": 6,
+        "rightArmMaxStopping": 6,
+        "leftLegStopping": 6,
+        "leftLegMaxStopping": 6,
+        "rightLegStopping": 6,
+        "rightLegMaxStopping": 6,
+        "sourcebook": "MB",
+        "bludgeoning": false,
+        "slashing": false,
+        "piercing": false,
+        "elemental": false,
+        "fire": false,
+        "poison": false,
+        "bleeding": false
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

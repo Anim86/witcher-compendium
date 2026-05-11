@@ -1,0 +1,29 @@
+{
+    "_id": "6ca203f549cb45a4",
+    "name": "Schema: Azza",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-schematics/schema_azza.webp",
+    "system": {
+        "description": "<p>Ãˆ stato un armaiolo nanico a creare quest'azza leggera, a Poviss. Una lunga asta che termina con la pesante testa di un'ascia, un rostro in cima e una testa di martello sul retro. Eh, un'arma progettata per essere versatile e contrastare ogni tipo di corazza. Abbiamo buone armi per essere politica- mente neutrali.</p>",
+        "weight": 0,
+        "cost": 0,
+        "components": [
+            "Azza 16 8 ore Legname Indurito (x5), Acciaio Nero (x2), Cuoio (x2), Cote (x1), Grasso di Estere (x1), Lino (x1) 349 690",
+            "Legname Indurito (x4), Filo (x5), Cera (x1), Resina (x2), Acciaio (x3), Cuoio Indurito (x1), Grasso di Estere (x2), Cerume di Orco (x2), Ferro (x1)"
+        ],
+        "difficulty": 16,
+        "time": "8 ore",
+        "sourcebook": "MB 75"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

@@ -1,0 +1,29 @@
+{
+    "_id": "03d02b3c12af4068",
+    "name": "Schema: Bastone Gnomesco",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-schematics/schema_bastone_gnomesco.webp",
+    "system": {
+        "description": "<p>Uno schema dettagliato che illustra i procedimenti necessari per forgiare o fabbricare: <strong>Bastone Gnomesco</strong>.</p>",
+        "weight": 0,
+        "cost": 1386,
+        "components": [
+            "Legname Indurito (x6), Quintessenza (x5), Olio Scurente (x3), Acciaio Nero (x1), Lino a Doppia Trama (x1)",
+            "Legname Indurito (x6), Acciaio Nero (x4), Acciaio (x1), Cuoio (x4), Piume (x3), Cote (x2), Grasso di Estere (x4)"
+        ],
+        "difficulty": 22,
+        "time": "11 ore",
+        "sourcebook": "MB 85"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

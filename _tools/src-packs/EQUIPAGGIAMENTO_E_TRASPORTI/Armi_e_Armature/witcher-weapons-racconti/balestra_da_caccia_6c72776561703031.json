@@ -1,0 +1,27 @@
+{
+    "_id": "6c72776561703031",
+    "name": "Balestra da Caccia",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons-racconti/balestra_da_caccia.webp",
+    "system": {
+        "description": "<p>Nel Continente si possono trovare molte stranezze, oggetti curiosi e creature di cui una contadina come voi non ha alcuna conoscenza, né ha mai avuto occasione di vedere. Ecco perché io viaggio! Per far sì che gli angoli della mappa si pieghino verso il centro, per portare l'esotico nei luoghi fin troppo comuni. – Dandelion</p>",
+        "sourcebook": "LR 166",
+        "weight": 3,
+        "cost": 600,
+        "reliability": 10,
+        "reliabilityMax": 10,
+        "accuracy": 2,
+        "damage": "5d6",
+        "hands": 2,
+        "range": 150,
+        "effects": "Ricarica Lenta",
+        "concealment": "G",
+        "category": "Crossbow"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

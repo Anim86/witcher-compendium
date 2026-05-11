@@ -1,0 +1,41 @@
+{
+    "_id": "1e57c115900d583a",
+    "name": "Armatura della Lumaca",
+    "type": "armor",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-dlc-sl-equipment/armatura_della_lumaca.webp",
+    "system": {
+        "description": "<p>Set di Armatura da Witcher.</p><p><strong>Effetti:</strong> Resistenza a danni Contundenti, Elementali, Perforanti e Taglienti. Copre anche la Testa.</p>",
+        "quantity": 1,
+        "weight": 42,
+        "type": "Heavy",
+        "location": "FullCover",
+        "encumb": 6,
+        "enhancements": 1,
+        "headStopping": 30,
+        "headMaxStopping": 30,
+        "torsoStopping": 30,
+        "torsoMaxStopping": 30,
+        "leftArmStopping": 30,
+        "leftArmMaxStopping": 30,
+        "rightArmStopping": 30,
+        "rightArmMaxStopping": 30,
+        "leftLegStopping": 30,
+        "leftLegMaxStopping": 30,
+        "rightLegStopping": 30,
+        "rightLegMaxStopping": 30,
+        "sourcebook": "MB",
+        "bludgeoning": true,
+        "slashing": true,
+        "piercing": true,
+        "elemental": true,
+        "fire": false,
+        "poison": false,
+        "bleeding": false
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

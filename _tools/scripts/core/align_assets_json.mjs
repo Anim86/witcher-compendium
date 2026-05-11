@@ -24,24 +24,14 @@ function walkDir(dir, callback) {
     });
 }
 
+import { slugify } from './utils.mjs';
+
 const idRegex = /_([a-z0-9]{16})$/;
 
 console.log("🚀 Starting JSON image path alignment...");
 
 walkDir(srcRoot, (filePath) => {
     if (!filePath.endsWith('.json')) return;
-
-    const relPath = path.relative(srcRoot, filePath);
-    const dirName = path.dirname(relPath).replace(/\\/g, '/');
-    let fileName = path.basename(relPath, '.json');
-
-    // Strip internal ID if present (e.g. _7e2ac369b1344d85)
-    fileName = fileName.replace(idRegex, '');
-    
-    // Normalize filename
-    fileName = fileName.replace(/\s+/g, '_');
-
-    const newImgPath = `${assetsPrefix}/${dirName}/${fileName}.webp`;
 
     try {
         let rawContent = fs.readFileSync(filePath, 'utf8');
@@ -51,6 +41,15 @@ walkDir(srcRoot, (filePath) => {
         }
         
         const data = JSON.parse(rawContent);
+        const name = data.name;
+        if (!name) return;
+
+        const relPath = path.relative(srcRoot, filePath);
+        const dirName = path.dirname(relPath).replace(/\\/g, '/');
+        
+        const slugifiedName = slugify(name);
+        const newImgPath = `${assetsPrefix}/${dirName}/${slugifiedName}.webp`;
+
         const currentImg = data.img || "";
         
         // We only update if it points to our module or is a placeholder/default

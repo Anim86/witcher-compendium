@@ -11,21 +11,7 @@ const ASSETS_ROOT = path.join(REPO_ROOT, 'witcher-compendium/assets');
 const REPORT_FILE = path.join(REPO_ROOT, '_tools/reports/smart-missing-assets.md');
 const IS_FIX_MODE = process.argv.includes('--fix');
 
-/**
- * Normalizes a string to snake_case, replacing special characters with underscores.
- * As per documentation: "Spada d'Argento" -> "spada_d_argento.webp"
- */
-function slugify(text) {
-    if (!text) return "";
-    return text.toString().toLowerCase()
-        .normalize('NFD') // Decompose accents
-        .replace(/[\u0300-\u036f]/g, '') // Remove accent marks
-        .replace(/'/g, '') // Remove apostrophes (e.g., d'argento -> dargento)
-        .replace(/[^\w\s-]/g, '_') // Replace other special chars with underscores
-        .replace(/[-\s]+/g, '_') // Replace spaces and dashes with underscores
-        .replace(/__+/g, '_') // Collapse multiple underscores
-        .replace(/^_|_$/g, ''); // Trim leading/trailing underscores
-}
+import { slugify, getFiles } from '../core/utils.mjs';
 
 /**
  * Old normalization logic (removes apostrophes).
@@ -39,22 +25,6 @@ function legacySlugify(text) {
         .replace(/[^\w-]+/g, '')
         .replace(/__+/g, '_')
         .replace(/^_|_$/g, '');
-}
-
-function getFiles(dir) {
-    let results = [];
-    if (!fs.existsSync(dir)) return [];
-    const list = fs.readdirSync(dir);
-    list.forEach(file => {
-        const filePath = path.join(dir, file);
-        const stat = fs.statSync(filePath);
-        if (stat && stat.isDirectory()) {
-            results = results.concat(getFiles(filePath));
-        } else {
-            results.push(filePath);
-        }
-    });
-    return results;
 }
 
 function runSmartGuard() {
