@@ -9,12 +9,11 @@ const __dirname = path.dirname(__filename);
 // Configurazione percorsi
 const REPO_ROOT = path.dirname(path.dirname(__dirname));
 const SOURCE_ROOT = path.join(REPO_ROOT, "temp_images");
-const ASSETS_BASE = path.join(REPO_ROOT, "witcher-compendium", "assets", "REGOLAMENTO_E_NARRATIVA");
+const ASSETS_BASE = path.join(REPO_ROOT, "witcher-compendium", "assets", "ALCHIMIA_E_ARTIGIANATO");
 
 // Mapping delle sottocartelle
 const SUB_MAPPING = {
-    "witcher-dlc-sr-lore": "Lore_e_Racconti/witcher-dlc-sr-lore",
-    "witcher-lore": "Lore_e_Racconti/witcher-lore"
+    "witcher-alchemy": "Formule_e_Ricette/witcher-alchemy"
 };
 
 console.log("Avvio processing asset manuali in temp_images...");
