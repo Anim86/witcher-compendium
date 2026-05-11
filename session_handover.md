@@ -25,9 +25,10 @@ Nessun bloccante. Il processo di integrazione è concluso.
 ---
 
 ## 📋 Prossimi Passaggi
-1. **Reset Quota AI**: Attendere il reset della quota per generare i Batch 75, 76 e 77.
-2. **Generazione Batch 75-77**: Usare i prompt definiti nei rispettivi file .html in `scratch/`.
-3. **QA Finale in Foundry**: Verificare che i nuovi oli e decotti del Batch 74 siano corretti.
+📦 **Batch Pendenti**:
+*   **Batch 75 (Alchimia)**: 15 item rimanenti (Decotti e Pozioni).
+*   **Batch 76-77**: In coda.
+
 
 ## Script di Riferimento
 - `node _tools/scripts/core/compile_packs.mjs`: Compilazione LevelDB.
