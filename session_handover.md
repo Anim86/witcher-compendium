@@ -1,16 +1,17 @@
 # Session Handover - Witcher Compendium Maintenance
 
-**Data/Ora:** 11/05/2026 - Ripresa Lavoro (Batch 74-77)
-**Stato Generale:** INTEGRAZIONE NUOVI BATCH (17/53 nuovi asset completati).
+**Data/Ora:** 11/05/2026 - Sessione Rimediazione Prioritaria
+**Stato Generale:** RIMEDIAZIONE ASSET CORROTTI (Armi vs Schemi).
 
 ## Obiettivo Corrente
-Generazione e integrazione di asset mancanti identificati nei Batch 74, 75, 76 e 77. 
+1. **Rimediazione Prioritaria (15 Asset)**: Generazione di immagini reali per le armi delle Scuole Witcher che attualmente mostrano erroneamente lo schema blueprint.
+2. **Batch 75-77**: Completare la generazione di oli, decotti e altri asset mancanti.
 
 ## Stato Repository e Generazione Asset
-- **Batch 74 (Oli e Decotti):** COMPLETATO (17/17 asset generati e integrati).
-- **Batch 75-77:** PENDENTI (Quota AI Image Generation esaurita).
-- **Post-Processing & Integrazione:** Allineamento JSON e compilazione LevelDB effettuati per il Batch 74.
-- **Blocco Attuale:** Quota AI Image Generation esaurita (reset previsto tra circa 5 ore).
+- **Priorità Rimediazione**: Allineata in cima a `scratch/prompts_batch_75.html` (15 item).
+- **Batch 74 (Oli e Decotti)**: COMPLETATO.
+- **Batch 75-77**: PENDENTI (Quota AI Image Generation esaurita).
+- **Blocco Attuale**: Quota AI Image Generation esaurita (reset previsto tra circa 4 ore).
 
 ## Standard Tecnici (Mandatori)
 ### 1. Asset Grafici
