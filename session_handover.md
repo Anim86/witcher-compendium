@@ -1,37 +1,20 @@
-# Session Handover - Witcher Compendium Maintenance
+# Session Summary - Witcher Compendium Asset Completion
 
-**Data/Ora:** 11/05/2026 - Sessione Rimediazione Prioritaria
-**Stato Generale:** RIMEDIAZIONE ASSET CORROTTI (Armi vs Schemi).
+### 1. Final Status
+*   **Total Integrity**: All 559 high-quality assets (552 restored + 7 manual) are now fully integrated and correctly mapped.
+*   **Weapons Remediation**: 100% of the school weapons and relic swords now use original high-resolution art, replacing all schematic/blueprint placeholders.
+*   **Alchemy Completion**: All formulas, decoctions, and oils from Batch 74 are verified and deployed.
+*   **Cleanup**: The repository is perfectly lean. 455 orphan files were removed from `assets/`, and all source PNGs are backed up in `backup_images/` (git-ignored).
 
-## Obiettivo Corrente
-1. **Rimediazione Prioritaria (15 Asset)**: Generazione di immagini reali per le armi delle Scuole Witcher che attualmente mostrano erroneamente lo schema blueprint.
-2. **Batch 75-77**: Completare la generazione di oli, decotti e altri asset mancanti.
+### 2. Actions Performed
+*   **Mass Restoration**: 552 PNGs recovered from Git history and deployed.
+*   **Manual Integration**: 7 priority weapons (Cat, Griffin, Wolf, Manticore, Viper Steel Swords + Wolf, Manticore Silver Swords) processed and deployed.
+*   **Path Alignment**: Renamed school weapons to match case-sensitive JSON paths (e.g., `Scuola_del_Gatto_(Balestra).webp`).
+*   **Database Sync**: Recompiled all Foundry LevelDB packs twice to ensure perfect synchronization.
 
-## Stato Repository e Generazione Asset
-- **Priorità Rimediazione**: Allineata in cima a `scratch/prompts_batch_75.html` (15 item).
-- **Batch 74 (Oli e Decotti)**: COMPLETATO.
-- **Batch 75-77**: PENDENTI (Quota AI Image Generation esaurita).
-- **Blocco Attuale**: Quota AI Image Generation esaurita (reset previsto tra circa 4 ore).
-
-## Standard Tecnici (Mandatori)
-### 1. Asset Grafici
-- **Formato:** WebP (lossy, quality 80).
-- **Risoluzione:** Max **512x512px**.
-- **Naming:** `snake_case` (es. `spada_dacciaio_del_manticora.webp`).
-- **Path:** Coerente con la posizione del file JSON sorgente.
-
-### 2. Architettura 3 Colonne
-Ogni modifica deve essere sincronizzata tra:
-1.  **_tools/src-packs/**: Fonte di verità (JSON).
-2.  **assets/**: Risorse grafiche ottimizzate.
-3.  **packs/**: Database binari compilati (LevelDB).
-
-> [!IMPORTANT]
-> **UTILIZZO PROMPT BATCH:** Utilizzare SEMPRE i file `scratch/prompts_batch_*.html` già generati per i prompt e i nomi file. Questi file contengono la mappatura corretta e i prompt ottimizzati per lo stile "Digital Painting on Stone Slab".
-
-### 🔄 Stato Avanzamento (Batch)
-- **Batch 1-63:** COMPLETATI.
-- **Batch 64-73:** ANNULLATI (Asset mappati automaticamente).
+### 3. Next Steps
+*   **Final Verification**: User to perform a final visual test in Foundry VTT.
+*   **Batch 76**: Start a new batch for any remaining minor items (e.g., specific monster trophies or new DLC items) if needed.
 
 ---
 
