@@ -1,5 +1,5 @@
 # 🛡️ Smart Asset Guard - Report Iconografia
-Data Scansione: 11/05/2026, 18:44:26
+Data Scansione: 11/05/2026, 22:12:32
 
 ## 📊 Riepilogo
 - **Totale Voci Analizzate**: 1560
@@ -174,7 +174,7 @@ Data Scansione: 11/05/2026, 18:44:26
 | La Strega di Rupe della Lince | _tools\src-packs\BESTIARIO\witcher-characters\la_strega_di_rupe_della_lince_34253226f5c82904.json | `BESTIARIO/witcher-characters/la_strega_di_rupe_della_lince.webp` |
 | Leblanc de Surmann | _tools\src-packs\BESTIARIO\witcher-characters\leblanc_de_surmann_cb55120cd991d83e.json | `BESTIARIO/witcher-characters/leblanc_de_surmann.webp` |
 | Louise van Adelaide | _tools\src-packs\BESTIARIO\witcher-characters\louise_van_adelaide_6e9d37fba6b67130.json | `BESTIARIO/witcher-characters/louise_van_adelaide.webp` |
-| Pardus di Korath | _tools\src-packs\BESTIARIO\witcher-characters\pardus_di_korath_7061726475736b6f.json | `BESTIARIO/witcher-characters/pardus_di_korath.webp` |
+| Pardus di Korath | _tools\src-packs\BESTIARIO\witcher-characters\Pardus_di_Korath_7061726475736b6f.json | `BESTIARIO/witcher-characters/pardus_di_korath.webp` |
 | Rodolf Kazmer | _tools\src-packs\BESTIARIO\witcher-characters\rodolf_kazmer_288ee308a5318712.json | `BESTIARIO/witcher-characters/rodolf_kazmer.webp` |
 | Elias von Drexel | _tools\src-packs\EQUIPAGGIAMENTO_E_TRASPORTI\Armi_e_Armature\witcher-dlc-sl-equipment\elias_von_drexel_bfc34788c345a119.json | `EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-dlc-sl-equipment/elias_von_drexel.webp` |
 | Balestra dell'Orso | _tools\src-packs\EQUIPAGGIAMENTO_E_TRASPORTI\Armi_e_Armature\witcher-weapons\balestra_dell_orso_006d87c91fc31f98.json | `EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/balestra_dell_orso.webp` |
