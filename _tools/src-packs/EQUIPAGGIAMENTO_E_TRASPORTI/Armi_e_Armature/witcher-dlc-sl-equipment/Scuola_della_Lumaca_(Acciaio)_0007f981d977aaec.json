@@ -1,18 +1,18 @@
 {
-    "_id": "0004a8f80211769c",
-    "name": "Scuola della Lumaca (Argento)",
+    "_id": "0007f981d977aaec",
+    "name": "Scuola della Lumaca (Acciaio)",
     "type": "weapon",
-    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-equipment/Scuola_della_Lumaca_(Argento).webp",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-dlc-sl-equipment/Scuola_della_Lumaca_(Acciaio).webp",
     "system": {
         "description": "",
         "weight": 1,
         "cost": 100,
         "sourcebook": "MB",
-        "damage": "5d6",
+        "damage": "8d6",
         "accuracy": -6,
         "reliability": {
-            "value": 15,
-            "max": 15
+            "value": 20,
+            "max": 20
         },
         "hands": "2",
         "type": {
@@ -23,15 +23,13 @@
             "elemental": false
         },
         "damageProperties": {
-            "armorPiercing": false,
+            "armorPiercing": true,
             "improvedArmorPiercing": false,
             "ablating": true,
             "crushingForce": true,
-            "isMeteorite": false,
+            "isMeteorite": true,
             "isNonLethal": false,
             "stun": -2,
-            "silverTrait": true,
-            "silverDamage": "3d6",
             "effects": []
         }
     },
