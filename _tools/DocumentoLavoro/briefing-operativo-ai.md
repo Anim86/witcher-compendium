@@ -26,11 +26,11 @@ Tutti gli script sono stati riorganizzati in `_tools/scripts/`. Ogni script usa 
 
 | Script | Linguaggio | Scopo | Quando usarlo |
 | :--- | :--- | :--- | :--- |
-| **`core/align_assets_json.mjs`** | Node.js | Allinea i percorsi `img` nei JSON | Dopo aver aggiunto nuove immagini in `assets`. |
 | **`core/compile_packs.mjs`** | Node.js | Genera i LevelDB (V14 format) | Prima di ogni test in Foundry o rilascio. |
 | **`core/audit_project.mjs`** | Node.js | Verifica coerenza JSON vs `module.json` | Per trovare file mancanti o non dichiarati. |
-| **`utils/update_docs_structure.mjs`** | Node.js | Aggiorna le mappe cartelle nei file .md | Quando viene cambiata la gerarchia di `src-packs`. |
-| **`utils/asset_guard.mjs`** | Node.js | Trova icone mancanti o placeholder | Per generare la lista di asset da produrre/correggere. |
+| **`utils/smart_asset_guard.mjs`** | Node.js | Audit avanzato asset + Fix automatico | Per trovare mismatch di naming e correggere i path JSON (`--fix`). |
+| **`normalize_asset_filenames.mjs`** | Node.js | Normalizzazione asset su disco | Quando vengono aggiunti file con nomi non standard. |
+| **`core/align_assets_json.mjs`** | Node.js | Allinea i percorsi `img` nei JSON | Legacy/Manuale - Preferire `smart_asset_guard`. |
 
 ### 🔧 Utility & Debug
 -   **`core/update_special_abilities.py`**: Mappa automaticamente le abilità speciali ai loro asset in `assets/SPECIAL/` (Normalized).
@@ -53,7 +53,7 @@ Ci sono due strategie alternative per la gestione degli asset, a seconda della d
 
 *   **Opzione 1 (Primaria): Generazione Immagini AI**
     1.  Se manca un'icona tematica e la quota AI lo consente, usare il tool `generate_image`.
-    2.  Salvare l'immagine generata (rinominata con logica snake_case) e **ottimizzarla sempre a 512px** prima di muoverla in `witcher-compendium/assets/[CATEGORIA]/`.
+    2.  Salvare l'immagine generata (rinominata con logica `slugify`) e **ottimizzarla sempre a 512px** prima di muoverla in `witcher-compendium/assets/[CATEGORIA]/`.
     
 *   **Opzione 2 (Fallback): Upload Manuale tramite `temp_images/`**
     1.  *Quando usarlo:* Se la quota AI è esaurita o si possiedono asset ufficiali/estratti da PDF.
@@ -66,21 +66,29 @@ Ci sono due strategie alternative per la gestione degli asset, a seconda della d
 | :--- | :--- |
 | **Formato** | WebP (Lossy) |
 | **Risoluzione** | **Max 512x512px** (obbligatorio per performance) |
-| **Qualità** | 80% |
-| **Naming** | `snake_case` rigoroso, no caratteri speciali o parentesi |
+| **Qualità** | 80-85% |
+| **Naming Standard** | **Slugify Centralizzato** (`lowercase`, `underscores` only) |
 
-**Naming Convention Naturale**: Il nome del file finale deve corrispondere approssimativamente al nome del file JSON (tutto minuscolo, spazi sostituiti da `_`).
+**Logica di Naming (Slugify)**:
+Il nome del file deve essere generato tramite la funzione `slugify` (definita in `_tools/scripts/core/utils.mjs`). 
+1.  Tutto minuscolo.
+2.  Spazi e trattini sostituiti da `_`.
+3.  Rimozione di caratteri speciali: `' " « » „ “ ” ( ) [ ] : , . ! ?`.
+4.  Rimozione di suffissi tecnici legacy (es. `_wp_`, `_dec_`, `_ex_`).
+5.  Nessun doppio underscore (`__` -> `_`).
 
-*Esempio*: Item `Spada d'Argento` -> Asset `spada_d_argento.webp`.
+*Esempio*: Item `Spada d'Argento (Rara)` -> Asset `spada_d_argento_rara.webp`.
 
 ### Fase C: Sincronizzazione & Normalizzazione
-1.  Per normalizzazioni specifiche su macro-categorie (es. equipaggiamenti generici o ricondizionamenti geografici):
+1.  **Normalizzazione Asset su Disco**:
+    Se sono stati aggiunti file con nomi non standard o caratteri speciali:
     ```powershell
-    python _tools/scripts/utils/fix_paths_and_normalize.py
+    node _tools/scripts/normalize_asset_filenames.mjs
     ```
-2.  Per un riallineamento totale o generico dei path `img`:
+2.  **Riallineamento Path nei JSON**:
+    Per aggiornare i campi `img` nei JSON sorgente affinché puntino ai nuovi nomi normalizzati:
     ```powershell
-    node _tools/scripts/core/align_assets_json.mjs
+    node _tools/scripts/utils/smart_asset_guard.mjs --fix
     ```
 
 ### Fase D: Compilazione & Deploy
@@ -205,4 +213,4 @@ Se hai bisogno di capire come sono stati estratti i dati originariamente, consul
 -   `_tools/scripts/archive/legacy/audits/`: Logiche di validazione storica.
 
 ---
-*Ultimo aggiornamento guida: 5 Maggio 2026 (allineamento standard 512px e build 14.361)*
+*Ultimo aggiornamento guida: 11 Maggio 2026 (Integrazione Smart Asset Guard & Slugify Standard)*

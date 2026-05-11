@@ -1,30 +1,34 @@
-# Session Summary - Witcher Compendium Asset Completion (Aggiornato 11/05)
+# Session Summary - Witcher Compendium Asset Completion (Aggiornato 11/05 - Final State)
 
 ### 1. Final Status
-*   **Total Integrity**: Tutti i 1560 asset sono correttamente mappati. Il Batch 75 è stato completato al 100%.
-*   **Batch 75 (Alchimia)**: **Completato**. 15 nuovi asset integrati (Decotti e Pozioni) con lo standard "Digital Painting on Stone Slab".
-*   **ID Collision Fix**: Effettuati **78 fix di ID** (collisioni e formati non validi come `wp_`). Tutte le formule ora hanno ID univoci.
-*   **Cleanup Snail School**: Rimossi i duplicati residui nei pack principali.
+*   **Total Integrity**: Tutti i 1560 asset sono correttamente mappati e normalizzati secondo lo standard `slugify`.
+*   **Batch 75 (Alchimia)**: **Completato**. 8 nuovi asset integrati (Formule) con risoluzione 512px WebP.
+*   **Naming Normalization**: Repository interamente convertito a `lowercase` e `underscores`. Tutti i caratteri speciali e parentesi rimossi dai nomi file fisici e dai puntatori JSON.
+*   **Placeholder Purge**: Rimossi 38 asset placeholder (17KB) che inquinavano l'audit.
 
 ### 2. Actions Performed
-*   **Generazione**: Prodotti 15 asset PNG HQ in `temp_images/witcher-alchemy/`.
-*   **Processing**: Convertiti in WebP (512px) e spostati in `assets/`.
-*   **Allineamento**: Script di allineamento path e ricompilazione pack Foundry V14 completati.
+*   **Slugify Logic Integration**: Creata funzione centralizzata in `_tools/scripts/core/utils.mjs` per garantire coerenza futura.
+*   **Normalization**: Eseguito `normalize_asset_filenames.mjs` su tutta la cartella `assets/`.
+*   **Smart Audit**: Utilizzato `smart_asset_guard.mjs --fix` per riallineare i path JSON agli asset normalizzati su disco.
+*   **Compilazione**: Rigenerati i pacchetti LevelDB per Foundry V14.
+*   **Documentazione**: Aggiornato il `briefing-operativo-ai.md` con i nuovi standard e workflow.
 
 ---
 
-## 🛑 Bloccanti Attuali
-*   Nessun bloccante.
+## 📋 Stato dell'Iconografia (Audit Finale)
+*   **Asset Corretti**: 1343
+*   **Asset con Mismatch**: 0 (Tutti i path sono ora validi)
+*   **Asset Truly Missing**: 217 (Vedere `_tools/reports/smart-missing-assets.md` per la lista dei mancanti).
 
 ---
-
-## 📋 Prossimi Passaggi
-📦 **Batch Pendenti**:
-*   **Batch 76-77**: Prossimi item in coda (Schemi e rimanenti Alchimia).
-*   **Audit**: Continuare la sostituzione dei placeholder residui identificati in `generic_assets_audit.md`.
 
 ## Script di Riferimento
 - `node _tools/scripts/core/compile_packs.mjs`: Compilazione LevelDB.
-- `node _tools/scripts/core/align_assets_json.mjs`: Riallineamento path immagini.
-- `node _tools/scripts/utils/fix_uuids.mjs`: Correzione ID.
-- `node _tools/scripts/utils/asset_guard.mjs`: Verifica integrità asset.
+- `node _tools/scripts/utils/smart_asset_guard.mjs --fix`: Audit e fix path immagini.
+- `node _tools/scripts/normalize_asset_filenames.mjs`: Normalizzazione nomi file su disco.
+- `python _tools/scripts/process_alchemy_orphans.py`: Script (monouso) per batch alchimia.
+
+## 🚀 Prossimi Passaggi
+📦 **Produzione Asset**:
+*   Iniziare la generazione dei 217 asset mancanti seguendo la lista prodotta dallo `smart_asset_guard`.
+*   Mantenere rigorosamente lo standard `slugify` per ogni nuova aggiunta.

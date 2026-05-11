@@ -59,7 +59,7 @@ Se desideri contribuire o personalizzare il sistema, i tool necessari si trovano
 *   **`scripts`**: Script di utilità per il mining e la formattazione dei dati.
 
 > [!TIP]
-> Ricordati di aggiornare i puntamenti nei file `system.json` e `module.json` se decidi di forkarlo o cambiare l'ID del pacchetto.
+> **Asset Naming Standard**: Tutte le immagini devono seguire la logica `slugify` (lowercase, underscores only, no special characters). Usa `_tools/scripts/normalize_asset_filenames.mjs` per mantenere il repository pulito.
 
 ---
 
