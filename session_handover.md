@@ -1,18 +1,16 @@
 # Session Handover - Witcher Compendium Maintenance
 
-**Data/Ora:** 10/05/2026 - Conclusione Definitiva (100% Asset)
-**Stato Generale:** TUTTI GLI ASSET COMPLETATI (1513/1513).
+**Data/Ora:** 11/05/2026 - Ripresa Lavoro (Batch 74-77)
+**Stato Generale:** INTEGRAZIONE NUOVI BATCH (17/53 nuovi asset completati).
 
 ## Obiettivo Corrente
-Tutti gli asset del compendio sono stati completati, allineati e compilati. Le icone mancanti (ferite, abilità specifiche, magie e oggetti generici) sono state risolte tramite "Smart Mapping" riutilizzando in modo intelligente le icone di macro-categoria precedentemente generate.
+Generazione e integrazione di asset mancanti identificati nei Batch 74, 75, 76 e 77. 
 
 ## Stato Repository e Generazione Asset
-- **Allineamento Esistenti:** COMPLETATO.
-- **Smart Mapping Orfani:** COMPLETATO (188 file mappati su immagini generiche esistenti).
-- **Batch 1-63:** COMPLETATI.
-- **Batch 64-73 (Recupero Mancanti):** ANNULLATI (Risolti tramite Smart Mapping).
-- **Post-Processing & Integrazione:** COMPLETATO al 100%. Path JSON allineati e pacchetti LevelDB compilati.
-- **Blocco Attuale:** Nessuno. Il modulo è pronto per l'uso.
+- **Batch 74 (Oli e Decotti):** COMPLETATO (17/17 asset generati e integrati).
+- **Batch 75-77:** PENDENTI (Quota AI Image Generation esaurita).
+- **Post-Processing & Integrazione:** Allineamento JSON e compilazione LevelDB effettuati per il Batch 74.
+- **Blocco Attuale:** Quota AI Image Generation esaurita (reset previsto tra circa 5 ore).
 
 ## Standard Tecnici (Mandatori)
 ### 1. Asset Grafici
@@ -42,8 +40,9 @@ Nessun bloccante. Il processo di integrazione è concluso.
 ---
 
 ## 📋 Prossimi Passaggi
-1. **QA Finale in Foundry**: Aprire il mondo in Foundry VTT (v14) e assicurarsi che le icone delle abilità, ferite, e magie mappate automaticamente rendano bene visivamente.
-2. **Commit e Push**: Pushare tutti gli aggiornamenti finali (JSON, WebP, LevelDB) sul repository remoto.
+1. **Reset Quota AI**: Attendere il reset della quota per generare i Batch 75, 76 e 77.
+2. **Generazione Batch 75-77**: Usare i prompt definiti nei rispettivi file .html in `scratch/`.
+3. **QA Finale in Foundry**: Verificare che i nuovi oli e decotti del Batch 74 siano corretti.
 
 ## Script di Riferimento
 - `node _tools/scripts/core/compile_packs.mjs`: Compilazione LevelDB.
