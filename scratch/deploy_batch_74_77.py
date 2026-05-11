@@ -31,7 +31,7 @@ def convert_and_deploy(src_path: Path, dest_dir: Path, dest_filename: str):
             img = img.convert("RGB")
         img.save(dest_path, "WEBP", quality=QUALITY)
     
-    print(f"  ✅ {src_path.name} -> {dest_path.relative_to(REPO_ROOT)}")
+    print(f"  OK: {src_path.name} -> {dest_path.relative_to(REPO_ROOT)}")
     return dest_path
 
 # === MAPPATURA BATCH 74 ===
