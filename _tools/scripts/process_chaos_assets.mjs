@@ -42,7 +42,7 @@ async function processImages() {
 
         // Handle other items (Chaos and Magic Items)
         const baseName = path.basename(file, path.extname(file));
-        const destName = baseName.toLowerCase() + ".webp";
+        const destName = baseName.toLowerCase().replace(/\s+/g, '_') + ".webp";
         
         // To Chaos folder
         const destPathChaos = path.join(DEST_CHAOS, destName);
