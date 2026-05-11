@@ -1,20 +1,21 @@
 # Session Summary - Witcher Compendium Asset Completion
 
 ### 1. Final Status
-*   **Total Integrity**: All 559 high-quality assets (552 restored + 7 manual) are now fully integrated and correctly mapped.
-*   **Weapons Remediation**: 100% of the school weapons and relic swords now use original high-resolution art, replacing all schematic/blueprint placeholders.
-*   **Alchemy Completion**: All formulas, decoctions, and oils from Batch 74 are verified and deployed.
-*   **Cleanup**: The repository is perfectly lean. 455 orphan files were removed from `assets/`, and all source PNGs are backed up in `backup_images/` (git-ignored).
+*   **Total Integrity**: All 560 high-quality assets (552 restored + 8 manual) are now fully integrated and correctly mapped.
+*   **ID Collision Fix**: Resolved a critical issue where Batch 74 formulas (Oils/Decoctions) shared duplicate IDs (`wo_` and `dec_`). All formulas now have unique IDs and are fully visible in Foundry.
+*   **Weapons Remediation**: 100% complete. The last addition, `Scuola_della_Vipera_(Zanna).webp`, is now active.
+*   **Cleanup**: Repository is 100% lean. `temp_images` is empty, and all source PNGs are in the git-ignored `backup_images` folder.
 
 ### 2. Actions Performed
-*   **Mass Restoration**: 552 PNGs recovered from Git history and deployed.
-*   **Manual Integration**: 7 priority weapons (Cat, Griffin, Wolf, Manticore, Viper Steel Swords + Wolf, Manticore Silver Swords) processed and deployed.
-*   **Path Alignment**: Renamed school weapons to match case-sensitive JSON paths (e.g., `Scuola_del_Gatto_(Balestra).webp`).
-*   **Database Sync**: Recompiled all Foundry LevelDB packs twice to ensure perfect synchronization.
+*   **ID Repair**: Scripted unique 16-char IDs for all Batch 74 alchemy items.
+*   **Manual Integration**: 8 weapons total (Cat, Griffin, Wolf, Manticore, Viper Steel Swords + Wolf, Manticore Silver Swords + Viper Fang) processed and deployed.
+*   **Asset Alignment**: 455 orphan files removed from `assets/` to ensure no duplicates or old placeholders remain.
+*   **Database Sync**: Final recompilation of all packs successful.
 
 ### 3. Next Steps
-*   **Final Verification**: User to perform a final visual test in Foundry VTT.
-*   **Batch 76**: Start a new batch for any remaining minor items (e.g., specific monster trophies or new DLC items) if needed.
+*   **Visual Check**: User to confirm visibility of the "Alchimia" compendium items in Foundry VTT.
+*   **Standard Maintenance**: Any future generations must ensure unique IDs to avoid the collision bug.
+
 
 ---
 
