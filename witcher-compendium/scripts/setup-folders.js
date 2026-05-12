@@ -5,7 +5,7 @@ Hooks.once("ready", async () => {
   const MACRO_CATS = {
     "BESTIARIO": "BESTIARIO & PERSONAGGI",
     "MAGIA_E_MALEDIZIONI": "MAGIA & MALEDIZIONI",
-    "EQUIPAGGIAMENTO_E_TRASPORTI": "EQUIPAGGIAMENTO & TRASPORTI",
+    "EQUIPAGGIAMENTO": "EQUIPAGGIAMENTO",
     "ALCHIMIA_E_ARTIGIANATO": "ALCHIMIA & ARTIGIANATO",
     "REGOLAMENTO_E_NARRATIVA": "REGOLAMENTO & NARRATIVA"
   };
@@ -65,13 +65,8 @@ Hooks.once("ready", async () => {
   await ensureSub("MAGIA_E_MALEDIZIONI/Necromanzia", "Necromanzia", mMagia);
   await ensureSub("MAGIA_E_MALEDIZIONI/Maledizioni_e_Fatture", "Maledizioni & Fatture", mMagia);
 
-  // Equipaggiamento
-  const mEquip = folderMap.get("EQUIPAGGIAMENTO_E_TRASPORTI");
-  await ensureSub("EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature", "Armi & Armature", mEquip);
-  await ensureSub("EQUIPAGGIAMENTO_E_TRASPORTI/Trasporti", "Trasporti", mEquip);
-  await ensureSub("EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti", "Attrezzatura & Oggetti", mEquip);
-  await ensureSub("EQUIPAGGIAMENTO_E_TRASPORTI/Reliquie_e_Artefatti", "Reliquie & Artefatti", mEquip);
-  await ensureSub("EQUIPAGGIAMENTO_E_TRASPORTI/Protesi", "Protesi", mEquip);
+  // Equipaggiamento (Directly under parent now)
+  const mEquip = folderMap.get("EQUIPAGGIAMENTO");
 
   // Alchimia
   const mAlch = folderMap.get("ALCHIMIA_E_ARTIGIANATO");
