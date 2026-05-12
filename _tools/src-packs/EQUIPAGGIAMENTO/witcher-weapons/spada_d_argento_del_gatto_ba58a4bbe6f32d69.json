@@ -1,11 +1,44 @@
-{
+﻿{
     "_id": "ba58a4bbe6f32d69",
     "name": "Spada d'Argento del Gatto",
-    "type": "valuable",
-    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-dlc-sw-equipment/spada_d_argento_del_gatto.webp",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/spada_d_argento_del_gatto.webp",
     "system": {
-        "description": "<p>Spada d'argento con marchio della Scuola del Gatto. Essenziale per i contratti sui mostri.</p>",
-        "sourcebook": "SW"
+        "description": "<p>Spada d'argento della Scuola del Gatto, agile e precisa, essenziale per i contratti sui mostri.</p>",
+        "weight": 1,
+        "cost": 100,
+        "sourcebook": "SW",
+        "damage": "4d6+2",
+        "accuracy": 1,
+        "reliability": {
+            "value": 10,
+            "max": 10
+        },
+        "hands": "1",
+        "type": {
+            "text": "",
+            "slashing": true,
+            "piercing": true,
+            "bludgeoning": false,
+            "elemental": false
+        },
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "isMeteorite": false,
+            "isNonLethal": false,
+            "effects": [
+                {
+                    "id": "389c67a3872844d1",
+                    "name": "bilanciata",
+                    "statusEffect": null,
+                    "percentage": 100,
+                    "varEffect": false
+                }
+            ]
+        }
     },
     "effects": [],
     "flags": {},
