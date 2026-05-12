@@ -1,0 +1,25 @@
+{
+    "_id": "6c72776561703033",
+    "name": "Lama Viroledana",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/lama_viroledana.webp",
+    "system": {
+        "description": "<p>Nel Continente si possono trovare molte stranezze, oggetti curiosi e creature di cui una contadina come voi non ha alcuna conoscenza, né ha mai avuto occasione di vedere. Ecco perché io viaggio! Per far sì che gli angoli della mappa si pieghino verso il centro, per portare l'esotico nei luoghi fin troppo comuni. – Dandelion</p>",
+        "sourcebook": "LR 167",
+        "weight": 2.5,
+        "cost": 995,
+        "reliability": 10,
+        "reliabilityMax": 10,
+        "accuracy": 1,
+        "damage": "4d6+4",
+        "hands": 2,
+        "effects": "Bilanciata, Sanguinamento (30%), Veleno (30%)",
+        "category": "Swords"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

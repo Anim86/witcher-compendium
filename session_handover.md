@@ -1,33 +1,41 @@
-### 🛠️ Session Summary: Consolidamento Asset & Pulizia Strutturale (FINALE)
+### 🛠️ Session Summary: Consolidamento Architetturale & Semplificazione Gear
 
-Abbiamo completato la messa in sicurezza del repository, risolvendo duplicati nei dati e ripulendo il workspace da anni di file legacy. Il sistema è ora pronto per l'ultima fase generativa.
+Abbiamo eseguito una ristrutturazione profonda del compendio per eliminare la dispersione degli asset in cartelle DLC e Scuole, riconducendo tutto a una struttura binaria per l'equipaggiamento da combattimento, come richiesto.
 
-#### 🎯 GUIDA OPERATIVA: GENERAZIONE ICONE MANCANTI
-Per completare i 93 asset mancanti (Truly Missing), seguire rigorosamente questa nuova pipeline:
+#### 📁 Cartelle Consolidate (Smistamento Completato)
+Tutti i file JSON e i relativi asset `.webp` sono stati spostati dalle cartelle legacy alle nuove destinazioni:
+*   **Armi**: Confluite in `EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/`
+*   **Armature/Scudi**: Confluiti in `EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-armor/`
+*   **Equipaggiamento/Oggetti/Protesi**: Spostati in `EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-equipment/`
+*   **Schemi**: Consolidati in `ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-schematics/`
+*   **Alchimia/Componenti**: Consolidati in `ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/` e `witcher-components/`
+*   **Lore/Professioni**: Consolidati in `REGOLAMENTO_E_NARRATIVA/`
+*   **Personaggi (DLC)**: Spostati in `BESTIARIO/witcher-characters/`
 
-1.  **Fonte di Verità**: Fare riferimento esclusivamente al file @[_tools/MASTER_GENERATION_LIST.md](file:///c:/Users/apaci/Desktop/Script/witcher-compendium-main/_tools/MASTER_GENERATION_LIST.md).
-2.  **Procedura di Generazione**:
-    *   Identificare un oggetto con stato `[ ]`.
-    *   Copiare il **Prompt Complesso** (recuperato dagli archivi e già calibrato per stile/Lore).
-    *   Generare l'immagine e salvarla in formato **WebP (512x512)**.
-    *   Salvare il file nel percorso esatto indicato nella colonna **Percorso Target**.
-3.  **Aggiornamento Stato**:
-    *   Una volta salvato l'asset, segnare l'oggetto come **`[X]`** nel file MASTER_GENERATION_LIST.md.
-    *   Fare il commit del file MASTER_GENERATION_LIST.md aggiornato. **Questo è fondamentale per evitare generazioni duplicate in chat diverse.**
+#### 🎯 NUOVA LOGICA DI CLASSIFICAZIONE (A PROVA DI BOMBA)
+Per mantenere l'ordine raggiunto, ogni nuovo oggetto deve seguire questa logica, indipendentemente dal suo `type` tecnico (es. anche se è `valuable`):
+1.  **Parole Chiave Armi**: Se il nome contiene *Spada, Balestra, Arco, Daga, Pugnale, Ascia, Zanna, Lancia, Mazza, Martello, Munizioni* -> va in **witcher-weapons**.
+2.  **Parole Chiave Armature**: Se il nome contiene *Armatura, Elmo, Scudo, Brache, Gambali, Cotta, Brigantina, Gambesone* -> va in **witcher-armor**.
+3.  **Tutto il resto**: Va in **witcher-equipment** (o nella categoria specifica Lore/Bestiario se pertinente).
 
 #### 📝 Key Activities & Accomplishments
-*   **Deduplicazione Trofei**: Rimossi **32 file duplicati** e uniformata la nomenclatura degli Elementali.
-*   **Repository Decluttering**: Spostati oltre **120 file obsoleti** in `_tools/_garbage`.
-*   **Recupero Prompt**: Estratti e consolidati oltre 500 prompt curati in `_tools/prompts_archive/`.
+*   **Deduplicazione Intelligente**: Durante il trasloco, i file duplicati sono stati confrontati. È stata mantenuta la versione più completa (maggiore dimensione/dettaglio), eliminando le versioni ridondanti.
+*   **Unificazione Assets**: Le immagini sono ora centralizzate nelle cartelle degli asset corrispondenti ai nuovi pack.
+*   **Aggiornamento Master List**: I percorsi target per la generazione dei 77 asset mancanti sono stati aggiornati per riflettere la nuova struttura (es. *Elias von Drexel* ora punta correttamente al Bestiario).
+*   **Pulizia Workspace**: Tutte le cartelle `witcher-dlc-*` e `witcher-weapons-racconti` sono state eliminate sia dai `src-packs` che dagli `assets`.
 
-#### 🔑 Key Information for Future Sessions
-*   **Asset Mancanti**: **93** (tutti mappati nella Master List).
-*   **Integrità**: Mismatch path/naming azzerati.
-*   **Reset Quota AI**: La generazione potrà riprendere dopo il **12/05/2026 22:41**.
+#### 🚀 Pipeline di Sincronizzazione Eseguita
+Ogni volta che si apportano modifiche strutturali, è stata eseguita questa sequenza (ora completata):
+1.  `node _tools/scripts/normalize_asset_filenames.mjs` (Uniforma i nomi in `slugify`).
+2.  `node _tools/scripts/utils/smart_asset_guard.mjs --fix` (Corregge i path `img` nei JSON).
+3.  `node _tools/scripts/core/compile_packs.mjs` (Rigenera i database LevelDB di Foundry).
 
-#### 🚀 Next Steps
-1.  **Esecuzione Batch**: Aprire la Master List e procedere alla generazione delle icone mancanti.
-2.  **Validazione**: Al termine, eseguire `./_tools/scripts/smart-icon-guard.mjs` per confermare che il conteggio dei mancanti sia sceso a zero.
+#### 🚀 PROSSIMI PASSI: GENERAZIONE ASSET
+Per continuare il lavoro di completamento del compendio, seguire rigorosamente questa procedura:
+1.  **Aprire la Master List**: Consultare il file [_tools/MASTER_GENERATION_LIST.md](file:///c:/Users/apaci/Desktop/Script/witcher-compendium-main/_tools/MASTER_GENERATION_LIST.md).
+2.  **Generazione**: Scegliere un oggetto con stato `[ ]`, usare il prompt fornito e salvare l'immagine nel percorso target indicato (già aggiornato alla nuova struttura).
+3.  **Aggiornamento**: Segnare l'oggetto come `[X]` nella lista e fare il commit del file.
+4.  **Consolidamento**: Al termine di ogni batch di generazione, eseguire la pipeline di sincronizzazione descritta sopra per garantire che Foundry VTT veda i nuovi file.
 
-#### 🚧 Status Repository
-Il repository è in uno stato di **ordine e integrità totale**. Il debito tecnico è stato azzerato.
+#### 🚧 Stato Repository
+Il repository è ora **perfettamente pulito e consolidato**. Non esistono più duplicati tra DLC e pack standard. La generazione può procedere senza rischio di creare cartelle orfane o broken links.
