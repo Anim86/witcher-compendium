@@ -71,7 +71,7 @@ Hooks.once("ready", async () => {
   // Alchimia
   const mAlch = folderMap.get("ALCHIMIA_E_ARTIGIANATO");
   await ensureSub("ALCHIMIA_E_ARTIGIANATO/Componenti", "Componenti", mAlch);
-  await ensureSub("ALCHIMIA_E_ARTIGIANATO/Mutageni", "Mutageni", mAlch);
+
   await ensureSub("ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette", "Formule & Ricette", mAlch);
   await ensureSub("ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione", "Schemi di Fabbricazione", mAlch);
 
