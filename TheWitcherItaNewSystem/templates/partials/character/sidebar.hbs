@@ -48,6 +48,7 @@
             <div class="bar-label-row">
                 <span class="bar-label"><i class="fas fa-skull-crossbones"></i> {{localize 'WITCHER.Actor.Stat.Toxicity'}}</span>
                 <span class="bar-value">{{system.stats.toxicity.value}} <small>/</small> {{system.stats.toxicity.max}}</span>
+                <a class="toxicity-reset" data-tooltip="{{localize 'WITCHER.Actor.Stat.ToxicityReset'}}"><i class="fas fa-undo"></i></a>
             </div>
             <div class="bar-wrapper">
                 <div class="bar-fill" style="width: {{pct system.stats.toxicity.value system.stats.toxicity.max}}%;"></div>
@@ -76,14 +77,26 @@
             <span class="value">{{system.derivedStats.vigor.max}}</span>
         </div>
 
-        <div class='mini-stat-box shield' data-tooltip="{{localize 'WITCHER.Actor.Shield'}}">
+        <div class='mini-stat-box shield {{#if (lte system.derivedStats.shield.value 0)}}broken{{/if}}' data-tooltip="{{localize 'WITCHER.Actor.Shield'}}">
             <span class="label"><i class='fa-solid fa-shield-halved'></i> SCD</span>
-            <input type='number' name='system.derivedStats.shield.value' value='{{system.derivedStats.shield.value}}' data-dtype='Number' />
+            <div class="shield-values">
+                <input type='number' name='system.derivedStats.shield.value' value='{{system.derivedStats.shield.value}}' data-dtype='Number' />
+                <span class="max">/ {{system.derivedStats.shield.max}}</span>
+            </div>
         </div>
 
         <div class='mini-stat-box luck' data-tooltip="{{localize 'WITCHER.StLuck'}}">
             <span class="label"><i class='fa-solid fa-clover'></i> LUK</span>
-            <input type='number' name='system.stats.luck.value' value='{{system.stats.luck.value}}' data-dtype='Number' />
+            <div class="luck-controls">
+                <a class="luck-minus"><i class="fas fa-minus"></i></a>
+                <div class="luck-values">
+                    <input type='number' name='system.stats.luck.value' value='{{system.stats.luck.value}}' data-dtype='Number' />
+                    {{#if system.stats.luck.temp}}
+                        <span class="temp">+{{system.stats.luck.temp}}</span>
+                    {{/if}}
+                </div>
+                <a class="luck-reset"><i class="fas fa-sync-alt"></i></a>
+            </div>
         </div>
     </div>
 
@@ -99,11 +112,16 @@
                         {{#if (eq loc 'rightLeg')}}<i class="fa-solid fa-boot"></i>{{/if}}
                         {{#if (eq loc 'leftLeg')}}<i class="fa-solid fa-boot fa-flip-horizontal"></i>{{/if}}
                     </div>
-                    <div class="loc-content">
-                        <div class="label">
-                            <span class="loc-name">{{localize (concat 'WITCHER.Location.' loc)}}</span>
-                            <span class="current-val">{{protection.totalSP}}</span>
-                        </div>
+                    <div class="loc-sp">
+                        <span class="current-sp">{{protection.totalSP}}</span>
+                        <span class="loc-label">
+                            {{#if (eq loc 'head')}}TES{{/if}}
+                            {{#if (eq loc 'torso')}}BUS{{/if}}
+                            {{#if (eq loc 'leftArm')}}B.S.{{/if}}
+                            {{#if (eq loc 'rightArm')}}B.D.{{/if}}
+                            {{#if (eq loc 'leftLeg')}}G.S.{{/if}}
+                            {{#if (eq loc 'rightLeg')}}G.D.{{/if}}
+                        </span>
                     </div>
                 </div>
             {{/each}}
@@ -115,8 +133,9 @@
             <a class="btn-roll init-roll" data-action="rollInit" data-tooltip="{{localize 'WITCHER.Actor.RollInit'}}"><i class="fas fa-dice-d20"></i></a>
             <a class="btn-roll crit-roll" data-action="rollCrit" data-tooltip="{{localize 'WITCHER.Actor.RollCrit'}}"><i class="fas fa-burst"></i></a>
             <a class="btn-roll recover-sta" data-action="recoverSta" data-tooltip="{{localize 'WITCHER.Dialog.staDialog'}}"><i class="fas fa-bed"></i></a>
+            <a class="btn-roll heal-button" data-action="heal" data-tooltip="{{localize 'WITCHER.Heal.dialogTitle'}}"><i class="fas fa-heart-pulse"></i></a>
         </div>
-        <button class="modifiers-btn" data-action="openModifiers">
+        <button class="modifiers-btn" data-action="openModifiers" data-type="stats" data-tooltip="{{localize 'WITCHER.Resources.modifiers'}}">
             <i class="fas fa-sliders-h"></i>
         </button>
     </div>

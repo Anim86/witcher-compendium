@@ -30,9 +30,9 @@
 /* =====================================================
    CHARACTER SHEET – Main Layout Grid
    ===================================================== */
-/* ── Main Sheet Layout (Foundry V14 ApplicationV2 — character-v2 only) ── */
+/* ── Main Sheet Layout (Inclusive of all Witcher Actors) ── */
 .application.sheet.witcher.actor.character-v2 {
-    background: #0d1217 url("../../assets/images/setup_bg.jpg") no-repeat center center fixed !important;
+    background: #0d1217 !important;
     background-size: cover !important;
     overflow: hidden !important;
     display: flex !important;
@@ -51,18 +51,18 @@
     min-height: 0 !important;
 }
 
-/* Sidebar: Glassmorphism (character-v2 only) */
+/* Sidebar: Glassmorphism */
 .application.sheet.witcher.actor.character-v2 .char-sidebar,
 .application.sheet.witcher.actor.character-v2 [data-application-part="sidebar"] {
     flex: 0 0 280px !important;
-    background: var(--p-bg-sidebar) !important;
+    background: linear-gradient(180deg, rgba(14, 14, 14, 0.95) 0%, rgba(20, 25, 30, 0.98) 100%) !important;
     backdrop-filter: var(--w-blur);
-    border-right: 1px solid var(--p-border);
+    border-right: 1px solid var(--w-gold-dark);
     padding: 20px 15px !important;
     display: flex !important;
     flex-direction: column !important;
     gap: 15px !important;
-    box-shadow: 4px 0 15px rgba(0, 0, 0, 0.3) !important;
+    box-shadow: 4px 0 15px rgba(0, 0, 0, 0.5), inset -1px 0 0 rgba(255, 255, 255, 0.05) !important;
     z-index: 10 !important;
     overflow-y: auto !important;
     box-sizing: border-box !important;
@@ -75,17 +75,26 @@
     display: grid !important;
     grid-template-rows: auto auto 1fr !important; /* Header, Tabs, Content */
     overflow: hidden !important;
-    background: rgba(0, 0, 0, 0.5) !important;
+    background: rgba(0, 0, 0, 0.4) !important;
     gap: 0 !important;
-    border-left: 1px solid var(--p-border) !important; /* Forza la sovrascrittura di eventuali bordi rossi residui */
+    border-left: 1px solid var(--w-border) !important;
+}
+
+/* Reset grid placements enforced by monster-sheet.css due to V14 class merging */
+.application.sheet.witcher.actor.character-v2 .char-main-wrapper > [data-application-part] {
+    grid-column: auto !important;
+    grid-row: auto !important;
 }
 
 .application.sheet.witcher.actor.character-v2 [data-application-part="header"] {
-    padding: 12px 20px 8px !important;
-    background: rgba(13, 18, 23, 0.7) !important;
-    backdrop-filter: blur(12px);
-    border-bottom: 2px solid var(--p-border-bright) !important; /* Separatore premium oro invece di rosso */
+    padding: 15px 25px 10px !important;
+    background: linear-gradient(180deg, rgba(20, 25, 35, 0.95) 0%, rgba(10, 15, 20, 0.85) 100%) !important;
+    backdrop-filter: blur(15px);
+    border-bottom: 2px solid var(--w-gold-dark) !important;
     margin: 0 !important;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.6);
+    position: relative;
+    z-index: 5;
 }
 
 .application.sheet.witcher.actor.character-v2 [data-application-part="tabs"] {
@@ -106,11 +115,17 @@
 .application.sheet.witcher.actor.character-v2 [data-application-part="magic"],
 .application.sheet.witcher.actor.character-v2 [data-application-part="background"],
 .application.sheet.witcher.actor.character-v2 [data-application-part="effects"] {
+    display: none !important; /* Hidden by default */
     padding: 12px 16px !important;
     background: transparent !important;
     overflow-y: auto !important;
     flex: 1 !important;
     min-height: 0 !important;
+}
+
+.application.sheet.witcher.actor.character-v2 [data-application-part].active {
+    display: flex !important; /* Shown when active */
+    flex-direction: column !important;
 }
 
 /* Character Image Styling in Sidebar */
@@ -833,8 +848,45 @@ a.button-roll:hover {
 }
 
 .sidebar-armor-protection .armor-grid {
-    gap: 6px;
+    gap: 4px;
 }
+
+.mini-stat-box.shield.broken {
+    border-color: #e74c3c !important;
+    background: rgba(231, 76, 60, 0.1) !important;
+    animation: pulse-broken 2s infinite;
+}
+
+.mini-stat-box.shield.broken i {
+    color: #e74c3c !important;
+}
+
+@keyframes pulse-broken {
+    0% { box-shadow: 0 0 0 0 rgba(231, 76, 60, 0.4); }
+    70% { box-shadow: 0 0 0 6px rgba(231, 76, 60, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(231, 76, 60, 0); }
+}
+
+.shield-values {
+    display: flex;
+    align-items: baseline;
+    gap: 2px;
+    input {
+        width: 25px !important;
+        font-size: 14px !important;
+        font-weight: 800 !important;
+        color: var(--w-gold) !important;
+        background: transparent !important;
+        border: none !important;
+        text-align: right;
+    }
+    .max {
+        font-size: 10px;
+        color: var(--w-text-muted);
+        opacity: 0.7;
+    }
+}
+
 
 .armor-loc-card {
     background: rgba(20, 20, 25, 0.6);
@@ -878,27 +930,31 @@ a.button-roll:hover {
     font-size: 14px;
 }
 
-.armor-loc-card .loc-content {
-    flex: 1;
+.sidebar-armor-protection .armor-loc-card .loc-name {
+    display: none;
 }
 
-.armor-loc-card .label {
+.loc-sp {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1;
 }
 
-.armor-loc-card .loc-name {
-    font-size: 10px;
+.loc-sp .current-sp {
+    font-size: 16px;
     font-weight: 800;
+    color: #fff;
+}
+
+.loc-sp .loc-label {
+    font-size: 8px;
+    font-weight: 700;
     text-transform: uppercase;
     color: var(--w-text-muted);
-    letter-spacing: 0.5px;
+    margin-top: -2px;
 }
 
-.sidebar-armor-protection .armor-loc-card .loc-name {
-    font-size: 8px;
-}
 
 .armor-loc-card .current-val {
     font-size: 20px;
@@ -1543,4 +1599,68 @@ a.button-roll:hover {
         color: #e74c3c;
         i { color: #e74c3c; }
     }
+}
+
+/* --- Modifier Configuration Popup --- */
+.modifier-configuration {
+    background: url('../../assets/images/sheet_bg.jpg') repeat !important;
+    background-color: #1a1a1a !important; /* Fallback dark background */
+    border: 1px solid var(--w-gold);
+    box-shadow: 0 0 25px rgba(0,0,0,0.8);
+    z-index: 100;
+}
+
+.modifier-configuration .window-content {
+    background: rgba(0, 0, 0, 0.7) !important;
+    color: #eee;
+    padding: 15px;
+}
+
+.modifier-configuration label {
+    color: var(--w-gold-light);
+    font-weight: bold;
+    text-shadow: 1px 1px 2px black;
+}
+
+.modifier-configuration .form-group {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding: 5px 0;
+}
+
+
+/* --- Luck Controls --- */
+.luck-controls {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.luck-controls a {
+    color: var(--w-gold-dark);
+    font-size: 10px;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+}
+
+.luck-controls a:hover {
+    opacity: 1;
+    color: var(--w-gold);
+}
+
+.luck-values {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.luck-values input {
+    width: 20px !important;
+    text-align: center;
+    font-weight: 800;
+}
+
+.luck-values .temp {
+    font-size: 10px;
+    color: var(--p-tox); /* Green for temporary points */
+    font-weight: bold;
 }

@@ -166,9 +166,24 @@ Se compare uno spazio vuoto (solitamente nero o del colore del background) tra l
 
 ## Mixin e Classi "Monster" (Il Caso Witcher)
 
-In alcuni sistemi (come questo), la scheda personaggio eredita classi da mixin o parent classes che aggiungono `.monster` o `.monster-v2` nel DOM.
+In alcuni sistemi (come questo), la scheda personaggio eredita classi da mixin o parent classes che aggiungono `.monster` o `.monster-v2` nel DOM a causa della mutazione dell'oggetto globale in `DEFAULT_OPTIONS`.
 
-**Regola d'oro**: Ispezionare SEMPRE il DOM. Se il browser dice che la classe è `monster-v2`, usare `monster-v2` nel CSS anche se si sta lavorando su un Personaggio. È un comportamento di Foundry V14 legato alla concatenazione degli array `classes`.
+**Regola d'oro**: Ispezionare SEMPRE il DOM. Se il browser dice che la classe è `monster-v2`, usare `monster-v2` nel CSS anche se si sta lavorando su un Personaggio.
+
+### ⚠️ Pericolo: Conflitti di Layout (Grid Pollution)
+Se due schede diverse (es. Mostro e Personaggio) finiscono per condividere la stessa classe `.monster-v2`, i file CSS di entrambe si sovrapporranno (es. `monster-sheet.css` agirà anche sul Personaggio).
+Se la scheda mostro usa `grid-column: 2 !important;` per posizionare l'header o i tab, questi comandi "spaccheranno" il layout del personaggio spingendo i contenuti fuori dalla griglia.
+
+**La Soluzione Definitiva per Isolamento CSS:**
+1. Raggruppare i contenuti specifici del Personaggio in un wrapper univoco (es. `.char-main-wrapper`).
+2. Applicare un **CSS Reset** mirato nel CSS del personaggio per annullare le costrizioni di layout ereditate dall'altra scheda:
+```css
+/* Annulla i grid-column e grid-row imposti da monster-sheet.css */
+.application.sheet.witcher.actor.monster-v2 .char-main-wrapper > [data-application-part] {
+    grid-column: auto !important;
+    grid-row: auto !important;
+}
+```
 
 ---
 

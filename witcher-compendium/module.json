@@ -89,21 +89,15 @@
     },
     {
       "name": "witcher-spells",
-      "label": "Incantesimi Base",
+      "label": "Incantesimi",
       "path": "packs/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells",
       "type": "Item",
       "system": "TheWitcherItaNewSystem"
     },
-    {
-      "name": "witcher-spells-racconti",
-      "label": "Incantesimi (Racconti)",
-      "path": "packs/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells-racconti",
-      "type": "Item",
-      "system": "TheWitcherItaNewSystem"
-    },
+
     {
       "name": "witcher-rituals",
-      "label": "Rituali Base",
+      "label": "Rituali",
       "path": "packs/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-rituals",
       "type": "Item",
       "system": "TheWitcherItaNewSystem"
@@ -115,27 +109,9 @@
       "type": "Item",
       "system": "TheWitcherItaNewSystem"
     },
-    {
-      "name": "witcher-spells-chaos",
-      "label": "Incantesimi Chaos",
-      "path": "packs/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells-chaos",
-      "type": "Item",
-      "system": "TheWitcherItaNewSystem"
-    },
-    {
-      "name": "witcher-rituals-chaos",
-      "label": "Rituali Chaos",
-      "path": "packs/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-rituals-chaos",
-      "type": "Item",
-      "system": "TheWitcherItaNewSystem"
-    },
-    {
-      "name": "witcher-signs-chaos",
-      "label": "Segni Chaos",
-      "path": "packs/MAGIA_E_MALEDIZIONI/Segni/witcher-signs-chaos",
-      "type": "Item",
-      "system": "TheWitcherItaNewSystem"
-    },
+
+
+
     {
       "name": "witcher-runes",
       "label": "Rune, Glifi e Reliquie",
@@ -143,16 +119,10 @@
       "type": "Item",
       "system": "TheWitcherItaNewSystem"
     },
-    {
-      "name": "witcher-hexes-base",
-      "label": "Fatture Base",
-      "path": "packs/MAGIA_E_MALEDIZIONI/Maledizioni_e_Fatture/witcher-hexes-base",
-      "type": "Item",
-      "system": "TheWitcherItaNewSystem"
-    },
+
     {
       "name": "witcher-hexes",
-      "label": "Fatture Chaos",
+      "label": "Fatture",
       "path": "packs/MAGIA_E_MALEDIZIONI/Maledizioni_e_Fatture/witcher-hexes",
       "type": "Item",
       "system": "TheWitcherItaNewSystem"
@@ -181,7 +151,7 @@
     {
       "name": "witcher-components",
       "label": "Componenti",
-      "path": "packs/ALCHIMIA_E_ARTIGIANATO/Componenti/witcher-components",
+      "path": "packs/ALCHIMIA_E_ARTIGIANATO/witcher-components",
       "type": "Item",
       "system": "TheWitcherItaNewSystem"
     },
@@ -189,7 +159,7 @@
     {
       "name": "witcher-schematics",
       "label": "Schemi",
-      "path": "packs/ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-schematics",
+      "path": "packs/ALCHIMIA_E_ARTIGIANATO/witcher-schematics",
       "type": "Item",
       "system": "TheWitcherItaNewSystem"
     },
@@ -197,14 +167,14 @@
     {
       "name": "witcher-alchemy",
       "label": "Alchimia",
-      "path": "packs/ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy",
+      "path": "packs/ALCHIMIA_E_ARTIGIANATO/witcher-alchemy",
       "type": "Item",
       "system": "TheWitcherItaNewSystem"
     },
     {
       "name": "witcher-mutations",
       "label": "Mutageni",
-      "path": "packs/ALCHIMIA_E_ARTIGIANATO/Mutageni/witcher-mutations",
+      "path": "packs/ALCHIMIA_E_ARTIGIANATO/witcher-mutations",
       "type": "Item",
       "system": "TheWitcherItaNewSystem"
     },
@@ -283,7 +253,7 @@
     {
       "name": "witcher-mutazioni-tc",
       "label": "Mutazioni (TC)",
-      "path": "packs/ALCHIMIA_E_ARTIGIANATO/Mutageni/witcher-mutazioni-tc",
+      "path": "packs/ALCHIMIA_E_ARTIGIANATO/witcher-mutazioni-tc",
       "type": "Item",
       "system": "TheWitcherItaNewSystem"
     },
@@ -325,21 +295,21 @@
     {
       "name": "witcher-rolltable-critici",
       "label": "Tabelle: Critici e Fumble",
-      "path": "packs/TABELLEOPERATIVE/CriticieCombattimento",
+      "path": "packs/REGOLAMENTO_E_NARRATIVA/Tabelle_Operative/CriticieCombattimento",
       "type": "RollTable",
       "system": "TheWitcherItaNewSystem"
     },
     {
       "name": "witcher-rolltable-disastri",
       "label": "Tabelle: Disastri Magici",
-      "path": "packs/TABELLEOPERATIVE/DisastriMagici",
+      "path": "packs/REGOLAMENTO_E_NARRATIVA/Tabelle_Operative/DisastriMagici",
       "type": "RollTable",
       "system": "TheWitcherItaNewSystem"
     },
     {
       "name": "witcher-rolltable-strumentigm",
       "label": "Tabelle: Strumenti GM",
-      "path": "packs/TABELLEOPERATIVE/StrumentiGM",
+      "path": "packs/REGOLAMENTO_E_NARRATIVA/Tabelle_Operative/StrumentiGM",
       "type": "RollTable",
       "system": "TheWitcherItaNewSystem"
     }

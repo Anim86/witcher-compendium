@@ -14,7 +14,7 @@ export default class WitcherCharacterSheet extends WitcherActorSheet {
     rewards = new RewardsSheet({ document: this.actor });
 
     /** @override */
-    static DEFAULT_OPTIONS = foundry.utils.mergeObject(super.DEFAULT_OPTIONS, {
+    static DEFAULT_OPTIONS = foundry.utils.mergeObject(foundry.utils.deepClone(super.DEFAULT_OPTIONS), {
         classes: ['witcher', 'sheet', 'actor', 'character-v2'],
         window: {
             vertical: false,

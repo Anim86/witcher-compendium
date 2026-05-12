@@ -1,53 +1,68 @@
-<ol class="items-list effects-list">
+<div class="effects-container">
     {{#each effects as |section sid|}}
-        <li class="items-header effects-header flexrow" data-effect-type="{{section.type}}">
-            <h3 class="item-name header-name flexrow">{{localize section.label}}</h3>
-            <h3 class="header-source">{{localize "WITCHER.activeEffect.source"}}</h3>
-            <h3 class="header-source">{{localize "EFFECT.TABS.duration"}}</h3>
-            {{#unless (and (eq section.type 'temporaryItemImprovement') (not ../document.system.canHaveTemporaryItemImprovement) )}}
-                <div class="item-controls header-controls flexrow">
-                    <a class="effect-control" data-action="create" title="{{localize 'WITCHER.activeEffect.new'}}">
-                        <i class="fas fa-plus"></i> {{localize "WITCHER.activeEffect.new"}}
-                    </a>
+        <div class="effects-group" data-effect-type="{{section.type}}">
+            <div class="effects-header-row">
+                <div class="header-name-group">
+                    <i class="fa-solid fa-bolt-lightning header-icon"></i>
+                    <h3 class="header-label">{{localize section.label}}</h3>
                 </div>
-            {{/unless}}
-        </li>
+                
+                <div class="header-columns">
+                    <span class="col-source">{{localize "WITCHER.activeEffect.source"}}</span>
+                    <span class="col-duration">{{localize "EFFECT.TABS.duration"}}</span>
+                </div>
 
-        <ol class="effect-list">
-            {{#each section.effects as |effect|}}
-                {{#unless (and effect.isSuppressed @root.actor)}}
-                    <li class="item effect-row flexrow draggable" data-effect-id="{{effect.id}}"
-                        data-parent-id="{{effect.parent.uuid}}" data-parent-uuid="{{effect.parent.uuid}}">
-                        <div class="effect-first-row">
-                            <a class="effect-display">
-                                <div class="item-name effect-name flexrow ">
-                                    <img class="item-image item-list-image" src="{{effect.img}}" alt="image of active effect"/>
-                                    <p>{{effect.name}}</p>
+                <div class="header-controls">
+                    {{#unless (and (eq section.type 'temporaryItemImprovement') (not ../document.system.canHaveTemporaryItemImprovement) )}}
+                        <a class="effect-control add-effect-btn" data-action="create" data-tooltip="{{localize 'WITCHER.activeEffect.new'}}">
+                            <i class="fas fa-plus-circle"></i> <span>{{localize "WITCHER.activeEffect.new"}}</span>
+                        </a>
+                    {{/unless}}
+                </div>
+            </div>
+
+            <ol class="effect-list">
+                {{#each section.effects as |effect|}}
+                    {{#unless (and effect.isSuppressed @root.actor)}}
+                        <li class="effect-item draggable {{#if effect.disabled}}is-disabled{{/if}}" 
+                            data-effect-id="{{effect.id}}"
+                            data-parent-id="{{effect.parent.uuid}}" 
+                            data-parent-uuid="{{effect.parent.uuid}}">
+                            
+                            <div class="effect-main-content">
+                                <a class="effect-display">
+                                    <div class="effect-info">
+                                        <img class="effect-img" src="{{effect.img}}" alt="{{effect.name}}"/>
+                                        <span class="effect-name">{{effect.name}}</span>
+                                    </div>
+                                    <div class="effect-metadata">
+                                        <span class="effect-source" data-tooltip="{{localize 'WITCHER.activeEffect.source'}}">{{effect.sourceName}}</span>
+                                        <span class="effect-duration" data-tooltip="{{localize 'EFFECT.TABS.duration'}}">{{#if effect.duration.label}}{{effect.duration.label}}{{else}}--{{/if}}</span>
+                                    </div>
+                                </a>
+
+                                <div class="effect-controls">
+                                    <a class="effect-control" data-action="toggle" data-tooltip="{{localize 'WITCHER.activeEffect.toggle'}}">
+                                        <i class="fas {{#if effect.disabled}}fa-toggle-off{{else}}fa-toggle-on{{/if}}"></i>
+                                    </a>
+                                    <a class="effect-control" data-action="edit" data-tooltip="{{localize 'DOCUMENT.Update' type='Effect'}}">
+                                        <i class="fas fa-pen-to-square"></i>
+                                    </a>
+                                    <a class="effect-control delete" data-action="delete" data-tooltip="{{localize 'DOCUMENT.Delete' type='Effect'}}">
+                                        <i class="fas fa-trash-can"></i>
+                                    </a>
                                 </div>
-                                <div class="effect-source">{{effect.sourceName}}</div>
-                                <div class="effect-duration">{{effect.duration.label}}</div>
-                            </a>
-                            <div class="item-controls effect-controls flexrow">
-                                <a class="effect-control" data-action="toggle"
-                                    title="{{localize 'WITCHER.activeEffect.toggle'}}">
-                                    <i class="fas {{#if effect.disabled}}fa-check{{else}}fa-times{{/if}}"></i>
-                                </a>
-                                <a class="effect-control" data-action="edit"
-                                    title="{{localize 'DOCUMENT.Update' type="Effect"}}">
-                                    <i class="fas fa-edit"></i>
-                                </a>
-                                <a class="effect-control" data-action="delete"
-                                    title="{{localize 'DOCUMENT.Delete' type="Effect"}}">
-                                    <i class="fas fa-trash"></i>
-                                </a>
                             </div>
-                        </div>
-                        <div class="effect-description invisible">
-                            {{{effect.description}}}
-                        </div>
-                    </li>
-                {{/unless}}
-            {{/each}}
-        </ol>
+
+                            {{#if effect.description}}
+                                <div class="effect-description invisible">
+                                    {{{effect.description}}}
+                                </div>
+                            {{/if}}
+                        </li>
+                    {{/unless}}
+                {{/each}}
+            </ol>
+        </div>
     {{/each}}
-</ol>
+</div>

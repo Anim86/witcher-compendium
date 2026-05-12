@@ -252,7 +252,7 @@ WITCHER.defenseOptions = [
     {
         value: 'parryThrown',
         label: 'WITCHER.Defense.defenseOptions.parryThrown',
-        itemTypes: ['weapon', 'shield'],
+        itemTypes: ['shield'],
         modifier: -5
     },
     {

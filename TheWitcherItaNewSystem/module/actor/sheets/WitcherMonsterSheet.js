@@ -9,7 +9,7 @@ const { DialogV2 } = foundry.applications.api;
 export default class WitcherMonsterSheet extends WitcherActorSheet {
 
     /** @override */
-    static DEFAULT_OPTIONS = foundry.utils.mergeObject(super.DEFAULT_OPTIONS, {
+    static DEFAULT_OPTIONS = foundry.utils.mergeObject(foundry.utils.deepClone(super.DEFAULT_OPTIONS), {
         classes: ['witcher', 'sheet', 'actor', 'monster', 'monster-v2'],
         window: {
             vertical: false

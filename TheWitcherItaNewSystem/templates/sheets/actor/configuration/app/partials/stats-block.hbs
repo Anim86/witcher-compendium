@@ -1,47 +1,79 @@
 {{#each stats as |details stat|}}
     {{#unless (eq (localize details.label) (localize 'WITCHER.Actor.Stat.Toxicity'))}}
-        <details>
-            <summary>
-                <span>{{localize details.label}}</span>
-                <input class='header-stat stat-max' name='system.{{@root.type}}.{{stat}}.unmodifiedMax' type='number'
-                    value='{{details.max}}' placeholder='0' data-dtype='Number' />
-            </summary>
-            {{#if details.modifiers}}
-                <div class='stat-modifiers'>
-                    {{#each details.modifiers as |modifier value|}}
-                        <div class='list-modifiers stat-display' data-id='{{modifier.id}}' data-type="{{@root.type}}"
-                            data-stat="{{stat}}">
-                            <input class='medium list-mod-edit' data-field='name' type='text'
-                                value='{{modifier.name}}' />
-                            <input class='small list-mod-edit' data-field='value' type='number'
-                                value='{{modifier.value}}' />
-                            <a class='delete-stat'><i class='fas fa-trash-alt' data-id='{{modifier.id}}'></i></a>
+        <div class="config-stat-row">
+            <div class="stat-main-row">
+                <div class="stat-label-group">
+                    <i class="fa-solid fa-scroll stat-icon"></i>
+                    <span class="stat-name">{{localize details.label}}</span>
+                </div>
+                
+                <div class="stat-base-input">
+                    <label>{{localize 'WITCHER.Actor.StatTitle.ModMax'}}</label>
+                    <input class='stat-max-input' name='system.{{@root.type}}.{{stat}}.unmodifiedMax' type='number'
+                        value='{{details.unmodifiedMax}}' placeholder='0' data-dtype='Number' />
+                </div>
+            </div>
+            
+            <div class='stat-modifiers-container'>
+                <div class="modifiers-header">
+                    <span class="mod-title"><i class="fa-solid fa-wand-sparkles"></i> {{localize 'WITCHER.Actor.Resources.modifiers'}}</span>
+                    <a class="add-modifier" data-stat="{{stat}}" data-type="{{@root.type}}" data-tooltip="{{localize 'WITCHER.Actor.Button.Add'}}">
+                        <i class="fas fa-plus-circle"></i>
+                    </a>
+                </div>
+                
+                <div class="modifiers-list">
+                    {{#each details.modifiers as |modifier idx|}}
+                        <div class='modifier-item' data-id='{{modifier.id}}' data-type="{{@root.type}}" data-stat="{{stat}}">
+                            <input class='mod-name' data-field='name' type='text' value='{{modifier.name}}' placeholder="..." />
+                            <div class="mod-value-group">
+                                <input class='mod-value' data-field='value' type='number' value='{{modifier.value}}' />
+                                <a class='delete-stat' data-id='{{modifier.id}}' data-tooltip="{{localize 'WITCHER.Actor.Button.Delete'}}">
+                                    <i class='fas fa-trash-can'></i>
+                                </a>
+                            </div>
                         </div>
                     {{/each}}
                 </div>
-            {{/if}}
-        </details>
+            </div>
+        </div>
     {{/unless}}
 {{/each}}
 
 {{#if reputation}}
-    <details>
-        <summary>
-            <span>{{localize 'WITCHER.Reputation'}}</span>
-            <input class='header-stat stat-max' name='system.reputation.unmodifiedMax' type='number' value='{{reputation.max}}'
-                placeholder='0' data-dtype='Number' />
-        </summary>
-        {{#if reputation.modifiers}}
-            <div class='stat-modifiers'>
-                {{#each reputation.modifiers as |modifier value|}}
-                    <div class='list-modifiers stat-display' data-id='{{modifier.id}}' data-type="reputation" data-stat="reputation">
-                        <input class='medium list-mod-edit' data-field='name' type='text' value='{{modifier.name}}' />
-                        <input class='small list-mod-edit' data-field='value' type='number'
-                            value='{{modifier.value}}' />
-                        <a class='delete-stat'><i class='fas fa-trash-alt' data-id='{{modifier.id}}'></i></a>
+    <div class="config-stat-row reputation">
+        <div class="stat-main-row">
+            <div class="stat-label-group">
+                <i class="fa-solid fa-crown stat-icon"></i>
+                <span class="stat-name">{{localize 'WITCHER.Reputation'}}</span>
+            </div>
+            <div class="stat-base-input">
+                <label>{{localize 'WITCHER.Actor.StatTitle.ModMax'}}</label>
+                <input class='stat-max-input' name='system.reputation.unmodifiedMax' type='number' value='{{reputation.unmodifiedMax}}'
+                    placeholder='0' data-dtype='Number' />
+            </div>
+        </div>
+        
+        <div class='stat-modifiers-container'>
+             <div class="modifiers-header">
+                <span class="mod-title"><i class="fa-solid fa-wand-sparkles"></i> {{localize 'WITCHER.Actor.Resources.modifiers'}}</span>
+                <a class="add-modifier" data-stat="reputation" data-type="reputation" data-tooltip="{{localize 'WITCHER.Actor.Button.Add'}}">
+                    <i class="fas fa-plus-circle"></i>
+                </a>
+            </div>
+            <div class="modifiers-list">
+                {{#each reputation.modifiers as |modifier idx|}}
+                    <div class='modifier-item' data-id='{{modifier.id}}' data-type="reputation" data-stat="reputation">
+                        <input class='mod-name' data-field='name' type='text' value='{{modifier.name}}' placeholder="..." />
+                        <div class="mod-value-group">
+                            <input class='mod-value' data-field='value' type='number' value='{{modifier.value}}' />
+                            <a class='delete-stat' data-id='{{modifier.id}}' data-tooltip="{{localize 'WITCHER.Actor.Button.Delete'}}">
+                                <i class='fas fa-trash-can'></i>
+                            </a>
+                        </div>
                     </div>
                 {{/each}}
             </div>
-        {{/if}}
-    </details>
+        </div>
+    </div>
 {{/if}}

@@ -1,15 +1,23 @@
-<section class="tab {{tabs.effects.cssClass}} scrollable standard-form" data-group="primary" data-tab="effects">
-    <div class="flex crit-wound-section">
-        <div class="crit-wounds">
-            <div class="item-name crit-wounds-header">
-                <h2 class="crit-wounds-header-name">{{localize "WITCHER.CritWound.Header"}}</h2>
-                <a class="add-crit"><i class="fas fa-plus"></i></a>
+<section class="tab {{tabs.effects.cssClass}} scrollable effects-tab-container" data-group="primary" data-tab="effects">
+    <div class="crit-wound-section">
+        <div class="section-header-premium">
+            <div class="header-main">
+                <i class="fa-solid fa-skull-crossbones header-icon"></i>
+                <h2 class="header-name">{{localize "WITCHER.CritWound.Header"}}</h2>
             </div>
+            <div class="header-actions">
+                <a class="add-crit btn-premium-action" data-tooltip="{{localize 'WITCHER.CritWound.Add'}}">
+                    <i class="fas fa-plus"></i> <span>Aggiungi Ferita</span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="crit-wounds-content">
             {{> "systems/TheWitcherItaNewSystem/templates/partials/crit-wounds-table.hbs"}}
         </div>
     </div>
 
-    <div class="active-effects-section">
+    <div class="active-effects-wrapper">
         {{> systems/TheWitcherItaNewSystem/templates/partials/effect-part.hbs}}
     </div>
 </section>

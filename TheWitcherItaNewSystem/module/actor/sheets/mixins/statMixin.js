@@ -180,9 +180,7 @@ export let statMixin = {
 
     async _onLuckMinus(event) {
         event.preventDefault();
-        if (this.actor.system.stats.luck.value > 0) {
-            await this.actor.update({ 'system.stats.luck.value': this.actor.system.stats.luck.value - 1 });
-        }
+        await this.actor.spendLuck(1);
     },
 
     async _onLuckReset(event) {
@@ -202,6 +200,39 @@ export let statMixin = {
         await this.actor.update({ 'system.adrenaline.value': this.actor.system.adrenaline.value + 1 });
     },
 
+    async _onToxicityReset(event) {
+        event.preventDefault();
+        const effectsToDelete = this.actor.effects.filter(e => e.system.toxicity > 0).map(e => e.id);
+
+        if (effectsToDelete.length > 0) {
+            await this.actor.deleteEmbeddedDocuments('ActiveEffect', effectsToDelete);
+            ui.notifications.info(game.i18n.localize('WITCHER.Actor.Stat.ToxicityResetInfo'));
+        } else {
+            // If no alchemical effects, just ensure value is 0 (though calculateToxicity should do this)
+            await this.actor.update({ 'system.stats.toxicity.value': 0 });
+        }
+    },
+
+    async _onAddStatModifier(event) {
+        event.preventDefault();
+        const stat = event.currentTarget.dataset.stat;
+        const type = event.currentTarget.dataset.type;
+        
+        let modifiers = [];
+        let path = "";
+
+        if (type === 'reputation') {
+            modifiers = foundry.utils.deepClone(this.actor.system.reputation.modifiers || []);
+            path = "system.reputation.modifiers";
+        } else {
+            modifiers = foundry.utils.deepClone(this.actor.system[this.statMap[stat].origin][stat].modifiers || []);
+            path = `system.${this.statMap[stat].origin}.${stat}.modifiers`;
+        }
+
+        modifiers.push({ name: game.i18n.localize('WITCHER.Resources.modifiers'), value: 0, id: foundry.utils.randomID() });
+        await this.actor.update({ [path]: modifiers });
+    },
+
     statListener(html) {
         html = $(html);
         html.find('.stat-roll').on('click', this._onStatSaveRoll.bind(this));
@@ -216,5 +247,7 @@ export let statMixin = {
         html.find('.luck-reset').on('click', this._onLuckReset.bind(this));
         html.find('.adrenaline-minus').on('click', this._onAdrenalineMinus.bind(this));
         html.find('.adrenaline-plus').on('click', this._onAdrenalinePlus.bind(this));
+        html.find('.toxicity-reset').on('click', this._onToxicityReset.bind(this));
+        html.find('.add-modifier').on('click', this._onAddStatModifier.bind(this));
     }
 };

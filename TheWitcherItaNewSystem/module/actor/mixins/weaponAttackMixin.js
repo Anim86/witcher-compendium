@@ -60,9 +60,9 @@ export let weaponAttackMixin = {
             displayDmgFormula,
             noAmmo,
             noThrowable,
-            ammunitionOption,
             ammunitions,
             meleeBonus: meleeBonus,
+            system: this.system,
             config: CONFIG.WITCHER
         };
 
@@ -88,10 +88,10 @@ export let weaponAttackMixin = {
             isSilhouetted,
             customAim,
             range,
-            customAtt,
             strike,
             damageType,
-            customDmg
+            customDmg,
+            luckToSpend
         } = await DialogV2.prompt({
             window: {
                 title: `${game.i18n.localize('WITCHER.Dialog.attackWith')}: ${weapon.name}`,
@@ -124,12 +124,17 @@ export let weaponAttackMixin = {
                         customAtt: button.form.elements.customAtt.value,
                         strike: button.form.elements.strike.value,
                         damageType: button.form.elements.damageType.value,
-                        customDmg: button.form.elements.customDmg.value
+                        customDmg: button.form.elements.customDmg.value,
+                        luckToSpend: Number(button.form.elements.luckToSpend?.value || 0)
                     };
                 }
             },
             rejectClose: true
         });
+
+        if (luckToSpend > 0) {
+            await this.spendLuck(luckToSpend);
+        }
 
         let attacknumber = CONFIG.WITCHER.weapon.attacks[strike]?.attackNumber ?? 1;
         let damage = weapon.createBaseDamageObject();
@@ -260,6 +265,12 @@ export let weaponAttackMixin = {
                     : `+${customAtt}[${game.i18n.localize('WITCHER.Settings.Custom')}]`;
             }
 
+            if (luckToSpend > 0) {
+                attFormula += !displayRollDetails
+                    ? `+${luckToSpend}`
+                    : `+${luckToSpend}[${game.i18n.localize('WITCHER.StLuck')}]`;
+            }
+
             switch (range) {
                 case 'pointBlank':
                     attFormula = !displayRollDetails
@@ -308,7 +319,26 @@ export let weaponAttackMixin = {
                     defenseOptions: weapon.system.defenseOptions
                 });
 
-                await extendedRoll(attFormula, messageData);
+                let roll = await extendedRoll(attFormula, messageData);
+
+                // Rule: Disaster (Fumble) reduces reliability by 1
+                if (roll.options.fumble) {
+                    let reliabilityDamage = 1;
+                    if (weapon.type == 'weapon') {
+                        let newReliable = Math.max(0, (weapon.system.reliable ?? 0) - reliabilityDamage);
+                        weapon.update({ 'system.reliable': newReliable });
+                        if (newReliable <= 0) {
+                            ui.notifications.error(`${game.i18n.localize('WITCHER.Weapon.Broken')}: ${weapon.name}`);
+                        }
+                    } else {
+                        // Handle shield
+                        let newReliability = Math.max(0, (weapon.system.reliability ?? 0) - reliabilityDamage);
+                        weapon.update({ 'system.reliability': newReliability });
+                        if (newReliability <= 0) {
+                            ui.notifications.error(`${game.i18n.localize('WITCHER.Shield.Broken')}: ${weapon.name}`);
+                        }
+                    }
+                }
             }
         }
     },

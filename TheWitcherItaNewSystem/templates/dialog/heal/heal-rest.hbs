@@ -1,19 +1,46 @@
 <div class="dialog-heal-rest">
-    <h1>{{localize 'WITCHER.Heal.title'}}</h1>
-    <div class="dialog-grid-checkbox">
-        <span><input id="resting" type="checkbox" />{{localize 'WITCHER.Heal.resting'}}</span>
-        <span><input id="healing-hand" type="checkbox" />{{localize 'WITCHER.Heal.healinghand'}}</span>
-        <span><input id="sterilized" type="checkbox" />{{localize 'WITCHER.Heal.sterilized'}}</span>
-        <span><input id="healing-tent" type="checkbox" />{{localize 'WITCHER.Heal.healingTent'}}</span>
-        <span><input id="resetTempHealth" type="checkbox"
-                {{checked resetTempHealth}} />{{localize 'WITCHER.Heal.resetTempHealth'}}</span>
+    <div class="heal-header">
+        <i class="fas fa-heart-pulse"></i>
+        <h2>{{localize 'WITCHER.Heal.title'}}</h2>
     </div>
-    <div>
-        <h1 id="extra-info">
-            {{localize 'WITCHER.Heal.totalRecover'}} + {{totalRec}}
-        </h1>
-        <span id="sterilized-info" class="invisible">
-            {{localize 'WITCHER.Heal.criticalWounds'}}
-        </span>
+
+    <div class="heal-options-grid">
+        <label class="heal-option">
+            <input id="resting" type="checkbox" />
+            <span class="checkmark"></span>
+            <span class="label-text">{{localize 'WITCHER.Heal.resting'}}</span>
+        </label>
+        <label class="heal-option">
+            <input id="healing-hand" type="checkbox" />
+            <span class="checkmark"></span>
+            <span class="label-text">{{localize 'WITCHER.Heal.healinghand'}}</span>
+        </label>
+        <label class="heal-option">
+            <input id="sterilized" type="checkbox" />
+            <span class="checkmark"></span>
+            <span class="label-text">{{localize 'WITCHER.Heal.sterilized'}}</span>
+        </label>
+        <label class="heal-option">
+            <input id="healing-tent" type="checkbox" />
+            <span class="checkmark"></span>
+            <span class="label-text">{{localize 'WITCHER.Heal.healingTent'}}</span>
+        </label>
+        <label class="heal-option full-width">
+            <input id="resetTempHealth" type="checkbox" {{checked resetTempHealth}} />
+            <span class="checkmark"></span>
+            <span class="label-text">{{localize 'WITCHER.Heal.resetTempHealth'}}</span>
+        </label>
+    </div>
+
+    <div class="heal-summary">
+        <div class="recovery-badge">
+            <span class="label">{{localize 'WITCHER.Heal.totalRecover'}}</span>
+            <span id="extra-info" class="value">+ {{totalRec}}</span>
+        </div>
+        
+        <div id="sterilized-info" class="sterilized-warning invisible">
+            <i class="fas fa-virus-slash"></i>
+            <span>{{localize 'WITCHER.Heal.criticalWounds'}}</span>
+        </div>
     </div>
 </div>

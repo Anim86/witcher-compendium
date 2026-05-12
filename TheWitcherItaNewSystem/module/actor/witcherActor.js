@@ -54,7 +54,9 @@ export default class WitcherActor extends Actor {
         this.calculateFixedDerivedStats();
         this.calculateStats();
         this.calculateDerivedStats();
+        this.calculateToxicity();
         this.calculateAttackStats();
+        this.calculateShield();
         this.applyActiveEffects('derived');
         this.calculateArmorSP();
     }
@@ -102,14 +104,16 @@ export default class WitcherActor extends Actor {
             }
         }
 
-        this.system.stats[stat].value = Math.floor((this.system.stats[stat].unmodifiedMax + totalModifiers) / divider);
+        let baseVal = this.system.stats[stat].unmodifiedMax || this.system.stats[stat].max || 0;
+        this.system.stats[stat].value = Math.floor((baseVal + totalModifiers) / divider);
     }
 
     calculateWeigthEncumbrance() {
         let bodyTotalModifiers = this.getAllModifiers('body').totalModifiers + this.system.stats.body.totalModifiers;
         this.system.stats.body.modifiers.forEach(item => (bodyTotalModifiers += Number(item.value)));
+        let bodyBase = this.system.stats.body.unmodifiedMax || this.system.stats.body.max || 0;
         let currentEncumbrance =
-            (this.system.stats.body.max + bodyTotalModifiers) * 10 +
+            (bodyBase + bodyTotalModifiers) * 10 +
             this.getAllModifiers('enc').totalModifiers +
             this.system.derivedStats.enc.totalModifiers;
         var totalWeights = this.getTotalWeight();
@@ -123,8 +127,13 @@ export default class WitcherActor extends Actor {
     }
 
     calculateFixedDerivedStats() {
-        const base = Math.floor((this.system.stats.body.value + this.system.stats.will.value) / 2);
-        const baseMax = Math.floor((this.system.stats.body.max + this.system.stats.will.max) / 2);
+        const bodyVal = this.system.stats.body.value || 0;
+        const willVal = this.system.stats.will.value || 0;
+        const bodyMax = this.system.stats.body.unmodifiedMax || this.system.stats.body.max || 0;
+        const willMax = this.system.stats.will.unmodifiedMax || this.system.stats.will.max || 0;
+        
+        const base = Math.floor((bodyVal + willVal) / 2);
+        const baseMax = Math.floor((bodyMax + willMax) / 2);
 
         let stunTotalModifiers =
             this.getAllModifiers('stun').totalModifiers + this.system.derivedStats.stun.totalModifiers;
@@ -158,9 +167,9 @@ export default class WitcherActor extends Actor {
         let encDivider = this.getAllModifiers('enc').totalDivider;
         this.system.derivedStats.enc.modifiers.forEach(item => (encTotalModifiers += Number(item.value)));
         this.system.derivedStats.enc.value = Math.floor(
-            (this.system.stats.body.value * 10 + encTotalModifiers) / encDivider
+            ((this.system.stats.body.value || 0) * 10 + encTotalModifiers) / encDivider
         );
-        this.system.derivedStats.enc.max = this.system.stats.body.value * 10;
+        this.system.derivedStats.enc.max = (this.system.stats.body.unmodifiedMax || this.system.stats.body.max || 0) * 10;
         this.system.derivedStats.enc.totalModifiers = encTotalModifiers;
 
         let recTotalModifiers =
@@ -188,13 +197,31 @@ export default class WitcherActor extends Actor {
         this.calculateDerivedStat('vigor');
     }
 
+    calculateShield() {
+        let shields = this.items.filter(i => {
+            if (i.type !== 'armor' || !i.system.equipped) return false;
+            const loc = i.system.location;
+            if (!loc) return false;
+            return (Array.isArray(loc) && loc.includes('Shield')) || (typeof loc === 'string' && loc.includes('Shield'));
+        });
+        if (shields.length > 0) {
+            // Take the one with highest current reliability as the active shield
+            let bestShield = shields.reduce((prev, current) => (prev.system.reliability > current.system.reliability) ? prev : current);
+            this.system.derivedStats.shield.value = bestShield.system.reliability;
+            this.system.derivedStats.shield.max = bestShield.system.reliabilityMax;
+        }
+    }
+
     calculateDerivedStat(stat) {
         let totalModifiers = this.getAllModifiers(stat).totalModifiers || 0;
         let divider = this.getAllModifiers(stat).totalDivider || 1;
         this.system.derivedStats[stat].modifiers.forEach(item => (totalModifiers += Number(item.value)));
         totalModifiers += this.system.derivedStats[stat].totalModifiers;
 
-        const base = Math.floor((this.system.stats.body.value + this.system.stats.will.value) / 2);
+        const bodyVal = this.system.stats.body.value || 0;
+        const willVal = this.system.stats.will.value || 0;
+        const base = Math.floor((bodyVal + willVal) / 2);
+        
         if (!this.system.customStat && (stat === 'hp' || stat === 'sta')) {
             this.system.derivedStats[stat].unmodifiedMax = base * 5;
         }
@@ -223,8 +250,60 @@ export default class WitcherActor extends Actor {
         this.system.derivedStats[stat].totalModifiers = totalModifiers;
     }
 
+    calculateToxicity() {
+        if (this.type !== 'character') return;
+
+        // 1. Determine Max Toxicity (Threshold)
+        // Default is 100%. Check for "Stomach of Iron" (Stomaco di Ferro)
+        let toxicityMax = 100;
+        const stomachOfIron = this.items.find(
+            i => i.name.includes('Stomaco di Ferro') || i.name.includes('Stomach of Iron')
+        );
+        if (stomachOfIron) {
+            toxicityMax = 150;
+        }
+        this.system.stats.toxicity.max = toxicityMax;
+
+        // 2. Sum current Toxicity from active effects
+        let currentToxicity = 0;
+        const applicableEffects = this.effects.filter(e => e.active);
+
+        for (const effect of applicableEffects) {
+            if (effect.system.toxicity) {
+                currentToxicity += Number(effect.system.toxicity);
+            }
+        }
+
+        this.system.stats.toxicity.value = currentToxicity;
+
+        // 3. Handle Poisoned state
+        const isOverLimit = currentToxicity > toxicityMax;
+        const hasPoisonStatus = this.statuses.has('poison');
+
+        if (isOverLimit && !hasPoisonStatus) {
+            this.toggleStatusEffect('poison');
+        } else if (!isOverLimit && hasPoisonStatus) {
+            // In Witcher, toxicity-induced poisoning ends when toxicity is back in range
+            this.toggleStatusEffect('poison');
+        }
+
+        // 4. Handle Frenzy (Frenesia)
+        this.system.frenzyActive = false;
+        if (isOverLimit) {
+            const frenzy = this.items.find(i => i.name.includes('Frenesia') || i.name.includes('Frenzy'));
+            if (frenzy) {
+                this.system.frenzyActive = true;
+            }
+        }
+    }
+
     calculateAttackStats() {
-        const meleeBonus = Math.ceil((this.system.stats.body.value - 6) / 2) * 2;
+        let meleeBonus = Math.ceil((this.system.stats.body.value - 6) / 2) * 2;
+
+        if (this.system.frenzyActive) {
+            meleeBonus += 3; // Standard Frenzy damage bonus
+        }
+
         this.system.attackStats.meleeBonus += meleeBonus;
         this.system.attackStats.punch.value = `1d6+${meleeBonus}`;
         this.system.attackStats.kick.value = `1d6+${4 + meleeBonus}`;
@@ -234,11 +313,17 @@ export default class WitcherActor extends Actor {
         const overrides = {};
         const changes = [];
 
+        const isHalfling = this.items.some(i => i.type === 'race' && i.name.includes('Halfling'));
+
         switch (preparationStage) {
             case 'derived':
                 // Organize non-disabled effects by their application priority
                 for (const effect of this.allApplicableEffects()) {
                     if (!effect.active) continue;
+
+                    // Halfling immunity to alchemical benefits
+                    if (isHalfling && effect.system.toxicity > 0) continue;
+
                     changes.push(
                         ...effect.changes
                             .filter(change => derivedPaths.some(path => change.key.includes(path)))
@@ -257,6 +342,10 @@ export default class WitcherActor extends Actor {
                 // Organize non-disabled effects by their application priority
                 for (const effect of this.allApplicableEffects()) {
                     if (!effect.active) continue;
+
+                    // Halfling immunity to alchemical benefits
+                    if (isHalfling && effect.system.toxicity > 0) continue;
+
                     changes.push(
                         ...effect.changes.map(change => {
                             const c = foundry.utils.deepClone(change);
@@ -280,6 +369,34 @@ export default class WitcherActor extends Actor {
 
         // Expand the set of final overrides
         this.overrides = foundry.utils.expandObject(overrides);
+    }
+
+    /**
+     * Spend luck points and return the modifier.
+     * Prioritizes temporary luck points first.
+     * @param {number} amount
+     * @returns {number}
+     */
+    async spendLuck(amount) {
+        if (amount <= 0) return 0;
+        
+        let luck = this.system.stats.luck;
+        let currentTemp = luck.temp || 0;
+        let currentVal = luck.value || 0;
+        
+        if (amount > (currentTemp + currentVal)) {
+            amount = currentTemp + currentVal; // Cap at max available
+        }
+        
+        let toSpendFromTemp = Math.min(amount, currentTemp);
+        let toSpendFromVal = amount - toSpendFromTemp;
+        
+        await this.update({
+            'system.stats.luck.temp': currentTemp - toSpendFromTemp,
+            'system.stats.luck.value': currentVal - toSpendFromVal
+        });
+        
+        return amount;
     }
 
     async rollSkill(skillName, threshold = -1) {
@@ -319,15 +436,32 @@ export default class WitcherActor extends Actor {
                 : `-${armorEnc}[${game.i18n.localize('WITCHER.Armor.EncumbranceValue')}]`;
         }
 
+        const totalLuck = (this.system.stats.luck.value || 0) + (this.system.stats.luck.temp || 0);
+
         return await DialogV2.prompt({
             window: { title: `${game.i18n.localize('WITCHER.Dialog.Skill')}: ${skillLabel}` },
-            content: `<label>${game.i18n.localize(
-                'WITCHER.Dialog.attackCustom'
-            )}: <input name="customModifiers" value=0></label>`,
+            content: `
+                <div class="form-group">
+                    <label>${game.i18n.localize('WITCHER.Dialog.attackCustom')}:</label>
+                    <input name="customModifiers" type="number" value=0>
+                </div>
+                <div class="form-group">
+                    <label>${game.i18n.localize('WITCHER.StLuck')} (${totalLuck}):</label>
+                    <input name="luckToSpend" type="number" value=0 min=0 max="${totalLuck}">
+                </div>`,
             ok: {
                 label: game.i18n.localize('WITCHER.Button.Continue'),
-                callback: (event, button, dialog) => {
-                    let customModifier = button.form.elements.customModifiers.value;
+                callback: async (event, button, dialog) => {
+                    let customModifier = Number(button.form.elements.customModifiers.value || 0);
+                    let luckToSpend = Number(button.form.elements.luckToSpend.value || 0);
+
+                    if (luckToSpend > 0) {
+                        await this.spendLuck(luckToSpend);
+                        rollFormula += !displayRollDetails
+                            ? ` +${luckToSpend}`
+                            : ` +${luckToSpend}[${game.i18n.localize('WITCHER.StLuck')}]`;
+                    }
+
                     if (customModifier < 0) {
                         rollFormula += !displayRollDetails
                             ? ` ${customModifier}`
@@ -431,15 +565,32 @@ export default class WitcherActor extends Actor {
             }
         });
 
+        const totalLuck = (this.system.stats.luck.value || 0) + (this.system.stats.luck.temp || 0);
+
         return DialogV2.prompt({
             window: { title: `${game.i18n.localize('WITCHER.Dialog.Skill')}: ${skillLabel}` },
-            content: `<label>${game.i18n.localize(
-                'WITCHER.Dialog.attackCustom'
-            )}: <input name="customModifiers" value=0></label>`,
+            content: `
+                <div class="form-group">
+                    <label>${game.i18n.localize('WITCHER.Dialog.attackCustom')}:</label>
+                    <input name="customModifiers" type="number" value=0>
+                </div>
+                <div class="form-group">
+                    <label>${game.i18n.localize('WITCHER.StLuck')} (${totalLuck}):</label>
+                    <input name="luckToSpend" type="number" value=0 min=0 max="${totalLuck}">
+                </div>`,
             ok: {
                 label: game.i18n.localize('WITCHER.Button.Continue'),
-                callback: (event, button, dialog) => {
-                    let customModifier = button.form.elements.customModifiers.value;
+                callback: async (event, button, dialog) => {
+                    let customModifier = Number(button.form.elements.customModifiers.value || 0);
+                    let luckToSpend = Number(button.form.elements.luckToSpend.value || 0);
+
+                    if (luckToSpend > 0) {
+                        await this.spendLuck(luckToSpend);
+                        rollFormula += !displayRollDetails
+                            ? ` +${luckToSpend}`
+                            : ` +${luckToSpend}[${game.i18n.localize('WITCHER.StLuck')}]`;
+                    }
+
                     if (customModifier < 0) {
                         rollFormula += !displayRollDetails
                             ? ` ${customModifier}`
@@ -505,6 +656,81 @@ export default class WitcherActor extends Actor {
             this.removeItem(item.id, 1);
             return;
         }
+
+        // Handle shield offensive attack
+        if (item.type === 'armor' && item.system.location?.includes('Shield')) {
+            if (item.system.reliability <= 0) {
+                return ui.notifications.error(`${game.i18n.localize('WITCHER.Shield.Broken')}: ${item.name}`);
+            }
+            return this.shieldAttack(item, options);
+        }
+    }
+
+    async shieldAttack(shield, options = {}) {
+        let brawlingSkill = this.system.skills.ref.brawling;
+        if (!brawlingSkill) {
+            return ui.notifications.error(game.i18n.localize('WITCHER.Weapon.error.noAttackSkill'));
+        }
+
+        // Shield weight class bonus
+        // Light (Leggero): +0
+        // Medium (Medio): +2
+        // Heavy (Pesante): +4
+        let shieldBonus = 0;
+        if (shield.system.type === 'Medium') shieldBonus = 2;
+        if (shield.system.type === 'Heavy') shieldBonus = 4;
+
+        // Punch Damage: 1d6 + meleeBonus
+        let meleeBonus = Math.ceil((this.system.stats.body.value - 6) / 2) * 2;
+        if (this.system.frenzyActive) meleeBonus += 3;
+        
+        let totalBonus = meleeBonus + shieldBonus;
+        // Rules say shield strike deals lethal damage
+        let damageFormula = `1d6${totalBonus >= 0 ? '+' : ''}${totalBonus}`;
+
+        // Create a temporary mock weapon object to reuse weaponAttack logic
+        const shieldWeapon = {
+            id: shield.id,
+            name: `${game.i18n.localize('WITCHER.Attack.ShieldStrike')}: ${shield.name}`,
+            img: shield.img,
+            type: 'weapon',
+            system: {
+                damage: damageFormula,
+                reliability: shield.system.reliability,
+                meleeAttackSkill: 'brawling',
+                accuracy: 0,
+                type: { value: 'bludgeoning' },
+                hands: 'none',
+                description: shield.system.description,
+                applyMeleeBonus: false, // Already included in formula
+                isThrowable: false,
+                usingAmmo: false,
+                defenseOptions: ['block', 'parry'],
+                rollOnlyDmg: false,
+                enhancementItems: shield.system.enhancementItems || [],
+                createBaseDamageObject: () => {
+                    return {
+                        formula: damageFormula,
+                        type: 'bludgeoning',
+                        properties: { effects: [] },
+                        location: {},
+                        originalLocation: 'random'
+                    };
+                },
+                getItemAttack: () => {
+                    return {
+                        skill: 'brawling',
+                        attackOption: 'melee',
+                        alias: 'WITCHER.skills.brawling.label'
+                    };
+                },
+                isEnoughThrowable: () => true
+            },
+            // For disaster damage logic
+            update: (data) => shield.update(data)
+        };
+
+        return this.weaponAttack(shieldWeapon, options);
     }
 
     getTotalWeight() {
@@ -515,7 +741,7 @@ export default class WitcherActor extends Actor {
     getList(name) {
         if (name === 'shield') {
             return this.items
-                .filter(item => item.type == 'armor' && item.system.location == 'Shield')
+                .filter(item => item.type == 'armor' && item.system.location?.includes('Shield'))
                 .sort((a, b) => a.sort - b.sort);
         }
         return this.items.filter(i => i.type == name && !i.system.isStored).sort((a, b) => a.sort - b.sort);

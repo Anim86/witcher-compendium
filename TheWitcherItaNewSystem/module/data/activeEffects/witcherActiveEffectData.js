@@ -26,7 +26,8 @@ export default class WitcherActiveEffectData extends foundry.abstract.TypeDataMo
                 priority: new fields.NumberField(),
                 type: new fields.StringField(),
                 phase: new fields.StringField()
-            }))
+            })),
+            toxicity: new fields.NumberField({ initial: 0 })
         };
     }
 }

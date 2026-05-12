@@ -22,11 +22,12 @@ export async function applyActiveEffectToActorViaId(actorUuid, itemUuid, applyWh
     applyActiveEffectToActor(
         actorUuid,
         item.effects.filter(effect => effect.system[applyWhen]),
-        duration
+        duration,
+        item
     );
 }
 
-export async function applyActiveEffectToActor(actorUuid, activeEffects, duration) {
+export async function applyActiveEffectToActor(actorUuid, activeEffects, duration, originItem = null) {
     let actor = fromUuidSync(actorUuid);
 
     if (!actor) return;
@@ -45,18 +46,25 @@ export async function applyActiveEffectToActor(actorUuid, activeEffects, duratio
 
     let newEffects = activeEffects
         .filter(effect => effect.type != 'temporaryItemImprovement')
-        .map(effect =>
-            effect.clone(
-                {
-                    'duration.combat': ui.combat.combats.find(combat => combat.isActive)?.id,
-                    'system.applySelf': false,
-                    'system.applyOnTarget': false,
-                    'system.applyOnHit': false,
-                    'system.applyOnDamage': false
-                },
-                { parent: actor }
-            )
-        );
+        .map(effect => {
+            const updateData = {
+                'duration.combat': ui.combat.combats.find(combat => combat.isActive)?.id,
+                'system.applySelf': false,
+                'system.applyOnTarget': false,
+                'system.applyOnHit': false,
+                'system.applyOnDamage': false
+            };
+
+            // Inject toxicity if it's an alchemical item
+            if (originItem?.system?.toxicity) {
+                const toxValue = parseInt(originItem.system.toxicity);
+                if (!isNaN(toxValue)) {
+                    updateData['system.toxicity'] = toxValue;
+                }
+            }
+
+            return effect.clone(updateData, { parent: actor });
+        });
 
     await actor.createEmbeddedDocuments('ActiveEffect', newEffects);
 }

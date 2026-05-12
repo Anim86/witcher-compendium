@@ -34,7 +34,7 @@
                     <i class="fas fa-hourglass-half"></i> {{system.general.age}}
                 </div>
                 <div class="info-item" title="{{localize 'WITCHER.Actor.Gender.name'}}">
-                    <i class="fas fa-venus-mars"></i> {{localize (concat 'WITCHER.Actor.Gender.' system.general.gender)}}
+                    <i class="fas fa-venus-mars"></i> {{#if system.gender}}{{localize (concat 'WITCHER.Actor.Gender.' system.gender)}}{{else}}---{{/if}}
                 </div>
                 <div class="info-item weight {{#if (gt totalWeight system.derivedStats.enc.value)}}over-encumbered{{/if}}">
                     <i class="fas fa-weight-hanging"></i> {{totalWeight}} <small>/</small> {{system.derivedStats.enc.value}}

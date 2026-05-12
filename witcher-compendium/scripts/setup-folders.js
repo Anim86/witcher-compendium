@@ -68,12 +68,9 @@ Hooks.once("ready", async () => {
   // Equipaggiamento (Directly under parent now)
   const mEquip = folderMap.get("EQUIPAGGIAMENTO");
 
-  // Alchimia
+  // Alchimia (Flattened)
   const mAlch = folderMap.get("ALCHIMIA_E_ARTIGIANATO");
-  await ensureSub("ALCHIMIA_E_ARTIGIANATO/Componenti", "Componenti", mAlch);
 
-  await ensureSub("ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette", "Formule & Ricette", mAlch);
-  await ensureSub("ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione", "Schemi di Fabbricazione", mAlch);
 
   // Regolamento
   const mReg = folderMap.get("REGOLAMENTO_E_NARRATIVA");
@@ -83,6 +80,7 @@ Hooks.once("ready", async () => {
   await ensureSub("REGOLAMENTO_E_NARRATIVA/Lore_e_Racconti", "Lore & Racconti", mReg);
   await ensureSub("REGOLAMENTO_E_NARRATIVA/Trofei", "Trofei", mReg);
   await ensureSub("REGOLAMENTO_E_NARRATIVA/Geografia", "Geografia", mReg);
+  await ensureSub("REGOLAMENTO_E_NARRATIVA/Tabelle_Operative", "Tabelle Operative", mReg);
 
   // 5. Rilocazione Pack
   for (let pack of game.packs) {

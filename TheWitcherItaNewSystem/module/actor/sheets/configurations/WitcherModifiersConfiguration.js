@@ -59,7 +59,7 @@ export default class WitcherModifiersConfiguration extends HandlebarsApplication
             return obj;
         }, {});
 
-        context.system = this.document.system;
+        context.system = this.document.system.toObject();
         context.skillKey = this.skillKey;
         context.type = this.type;
 

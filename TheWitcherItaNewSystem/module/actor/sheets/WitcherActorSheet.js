@@ -40,7 +40,7 @@ export default class WitcherActorSheet extends HandlebarsApplicationMixin(ActorS
     configuration = undefined;
 
     /** @override */
-    static DEFAULT_OPTIONS = foundry.utils.mergeObject(super.DEFAULT_OPTIONS, {
+    static DEFAULT_OPTIONS = foundry.utils.mergeObject(foundry.utils.deepClone(super.DEFAULT_OPTIONS), {
         id: "actor-sheet-{id}",
         tagName: 'form',
         window: {
@@ -84,7 +84,9 @@ export default class WitcherActorSheet extends HandlebarsApplicationMixin(ActorS
         CONFIG.Combat.initiative.formula = '1d10 + @stats.ref.value' + (context.displayRollDetails ? '[REF]' : '');
 
         context.actor = this.actor;
-        context.system = context.actor.system;
+        context.system = foundry.utils.mergeObject(context.actor.system.toObject(), {
+            armorSP: context.actor.system.armorSP
+        });
         context.systemFields = this.document.system.schema.fields;
         context.items = context.actor.items.filter(i => !i.system.isStored).sort((a, b) => a.sort - b.sort);
 

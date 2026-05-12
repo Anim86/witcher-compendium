@@ -30,9 +30,11 @@ export let healMixin = {
                 {
                     action: 'heal',
                     label: game.i18n.localize('WITCHER.Heal.button'),
-                    callback: async () => {
+            callback: async () => {
                         const isResting = document.querySelector('#resting').checked;
                         const isSterilized = document.querySelector('#sterilized').checked;
+                        const resetTempHealth = document.querySelector('#resetTempHealth').checked;
+                        dialogData.resetTempHealth = resetTempHealth;
 
                         await this.recoverActor(isResting, isSterilized, dialogData);
                     }
@@ -83,11 +85,12 @@ export let healMixin = {
     },
 
     async recoverActor(isResting, isSterilized, dialogData) {
+        const currentHP = Number(this.actor.system.derivedStats.hp.value) || 0;
+        const maxHP = Number(this.actor.system.derivedStats.hp.max) || 0;
+        const recoveryAmount = Number(dialogData.totalRec) || 0;
+
         await this.actor.update({
-            'system.derivedStats.hp.value': Math.min(
-                this.actor.system.derivedStats.hp.value + dialogData.totalRec,
-                this.actor.system.derivedStats.hp.max
-            ),
+            'system.derivedStats.hp.value': Math.min(currentHP + recoveryAmount, maxHP),
             'system.derivedStats.sta.value': this.actor.system.derivedStats.sta.max,
             'system.derivedStats.vigor.value': this.actor.system.derivedStats.vigor.max
         });
@@ -144,5 +147,10 @@ export let healMixin = {
         document
             .querySelector('#healing-tent')
             .addEventListener('change', () => this.updateHealAmount(totalRec, rec, dialogData, actualWoundList));
+        document
+            .querySelector('#resetTempHealth')
+            .addEventListener('change', (e) => {
+                dialogData.resetTempHealth = e.target.checked;
+            });
     }
 };

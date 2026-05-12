@@ -298,4 +298,9 @@ export async function registerHandelbarHelpers() {
         if (!max || parseFloat(max) === 0) return 0;
         return Math.round((parseFloat(value) / parseFloat(max)) * 100);
     });
+
+    Handlebars.registerHelper('substring', function (str, start, end) {
+        if (typeof str !== 'string') return '';
+        return str.substring(start, end);
+    });
 }

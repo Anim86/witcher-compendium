@@ -206,10 +206,15 @@
             <table>
                 <tr>
                     <td>
-                        <label>{{localize "WITCHER.Dialog.attackCustom"}}:</label>
+                        <input type="number" name="customAtt" value=0>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>{{localize "WITCHER.StLuck"}} ({{(sum system.stats.luck.value system.stats.luck.temp)}}):</label>
                     </td>
                     <td>
-                        <input type="number" name="customAtt" value=0>
+                        <input type="number" name="luckToSpend" value=0 min=0 max="{{(sum system.stats.luck.value system.stats.luck.temp)}}">
                     </td>
                 </tr>
             </table>

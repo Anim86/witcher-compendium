@@ -1,5 +1,190 @@
-.application.sheet.witcher.actor.modifier-configuration:not(.extended-sheet) {
-    .window-content {
-        display: inherit;
-    }
+.modifier-configuration {
+    background: url('../../../assets/CORE/UI/parchment_bg.webp');
+    background-size: cover;
+    color: #2c2c2c;
+    font-family: 'Goudy Old Style', serif;
+}
+
+.modifier-configuration .window-content {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.config-stat-row {
+    background: rgba(0, 0, 0, 0.04);
+    border-left: 3px solid #8b0000;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    padding: 8px 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    transition: all 0.2s ease;
+}
+
+.config-stat-row:hover {
+    background: rgba(0, 0, 0, 0.07);
+    box-shadow: 0 2px 5px rgba(139, 0, 0, 0.2);
+}
+
+.stat-main-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stat-label-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.stat-icon {
+    color: #8b0000;
+    font-size: 1.1em;
+    opacity: 0.8;
+}
+
+.stat-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #444;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.stat-base-input {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.stat-base-input label {
+    font-size: 0.75em;
+    text-transform: uppercase;
+    color: #777;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.stat-max-input {
+    width: 50px !important;
+    height: 28px !important;
+    text-align: center;
+    font-size: 1.1em !important;
+    font-weight: bold;
+    color: #8b0000 !important;
+    border: 1px solid rgba(139, 0, 0, 0.3) !important;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.8) !important;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.stat-max-input:focus {
+    border-color: #8b0000 !important;
+    background: white !important;
+    box-shadow: 0 0 4px rgba(139, 0, 0, 0.3);
+}
+
+.stat-modifiers-container {
+    margin-top: 6px;
+    padding-top: 6px;
+    border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+.modifiers-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.mod-title {
+    font-size: 0.8em;
+    color: #666;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.add-modifier {
+    color: #27ae60;
+    cursor: pointer;
+    font-size: 1em;
+    transition: all 0.2s;
+    opacity: 0.7;
+}
+
+.add-modifier:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    color: #2ecc71;
+}
+
+.modifiers-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.modifier-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.4);
+    padding: 3px 8px;
+    border-radius: 3px;
+    border: 1px solid rgba(0,0,0,0.03);
+}
+
+.modifier-item input.mod-name {
+    flex: 1;
+    background: transparent !important;
+    border: none !important;
+    font-size: 0.95em !important;
+    height: 24px !important;
+    color: #333;
+}
+
+.mod-value-group {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.modifier-item input.mod-value {
+    width: 38px !important;
+    height: 24px !important;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid rgba(0,0,0,0.1) !important;
+    border-radius: 2px;
+    background: rgba(255, 255, 255, 0.9) !important;
+    font-size: 0.9em !important;
+}
+
+.modifier-item .delete-stat {
+    color: #a93226;
+    cursor: pointer;
+    font-size: 0.85em;
+    opacity: 0.5;
+    transition: opacity 0.2s;
+}
+
+.modifier-item .delete-stat:hover {
+    opacity: 1;
+}
+
+/* Custom Scrollbar */
+.modifier-configuration .window-content::-webkit-scrollbar {
+    width: 5px;
+}
+
+.modifier-configuration .window-content::-webkit-scrollbar-thumb {
+    background: #8b0000;
+    border-radius: 10px;
+}
+
+.modifier-configuration .window-content::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.05);
 }

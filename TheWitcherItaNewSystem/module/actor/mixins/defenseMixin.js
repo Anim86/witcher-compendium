@@ -9,11 +9,17 @@ const DialogV2 = foundry.applications.api.DialogV2;
 
 export let defenseMixin = {
     async prepareAndExecuteDefense(attack, defenseOptions, attackDamageObject, totalAttack, attacker) {
+        const totalLuck = (this.system.stats.luck.value || 0) + (this.system.stats.luck.temp || 0);
         const content = `
         <div class="flex">
             <label>${game.i18n.localize('WITCHER.Dialog.DefenseExtra')}: <input type="checkbox" name="isExtraDefense"></label> <br />
         </div>
-        <label>${game.i18n.localize('WITCHER.Dialog.defense.custom')}: <input type="Number" class="small" name="customDef" value=0></label> <br />`;
+        <div class="form-group">
+            <label>${game.i18n.localize('WITCHER.Dialog.defense.custom')}: <input type="number" class="small" name="customDef" value=0></label>
+        </div>
+        <div class="form-group">
+            <label>${game.i18n.localize('WITCHER.StLuck')} (${totalLuck}): <input type="number" class="small" name="luckToSpend" value=0 min=0 max="${totalLuck}"></label>
+        </div>`;
 
         let additionalOptions = this.items
             .filter(item => item.system.isApplicableDefense?.(attack.attackOption))
@@ -37,19 +43,24 @@ export let defenseMixin = {
                         return {
                             defenseAction: option,
                             extraDefense: button.form.elements.isExtraDefense.checked,
-                            customDef: button.form.elements.customDef.value
+                            customDef: button.form.elements.customDef.value,
+                            luckToSpend: Number(button.form.elements.luckToSpend.value || 0)
                         };
                     }
                 };
             })
         );
 
-        let { defenseAction, extraDefense, customDef } = await DialogV2.wait({
+        let { defenseAction, extraDefense, customDef, luckToSpend } = await DialogV2.wait({
             window: { title: `${game.i18n.localize('WITCHER.Dialog.DefenseTitle')}` },
             content,
             buttons: buttons,
             rejectClose: true
         });
+
+        if (luckToSpend > 0) {
+            await this.spendLuck(luckToSpend);
+        }
 
         let chooser = [];
         if (defenseAction.skills) {
@@ -62,6 +73,12 @@ export let defenseMixin = {
             defenseAction.itemTypes.forEach(itemType =>
                 this.getList(itemType)
                     .filter(item => !item.system.isAmmo)
+                    .filter(item => {
+                        // Filter out broken items
+                        if (item.type === 'armor') return (item.system.reliability ?? 1) > 0;
+                        if (item.type === 'weapon') return (item.system.reliable ?? 1) > 0;
+                        return true;
+                    })
                     .forEach(item =>
                         chooser.push({
                             value: item.system.meleeAttackSkill ?? 'melee',
@@ -113,7 +130,7 @@ export let defenseMixin = {
                 attackDamageObject,
                 attacker
             },
-            { extraDefense, customDef },
+            { extraDefense, customDef, luckToSpend },
             defenseAction,
             itemId,
             defenseAction.skillOverride
@@ -123,7 +140,7 @@ export let defenseMixin = {
     async skillDefense(
         { skillName, modifier = 0, stagger = false, block = false },
         { totalAttack, attackDamageObject, attacker },
-        { extraDefense = false, customDef = 0 },
+        { extraDefense = false, customDef = 0, luckToSpend = 0 },
         defenseAction,
         defenseItemId,
         skillOverride
@@ -173,6 +190,12 @@ export let defenseMixin = {
             rollFormula += !displayRollDetails
                 ? `+${customDef}`
                 : ` +${customDef}[${game.i18n.localize('WITCHER.Settings.Custom')}]`;
+        }
+
+        if (luckToSpend > 0) {
+            rollFormula += !displayRollDetails
+                ? `+${luckToSpend}`
+                : ` +${luckToSpend}[${game.i18n.localize('WITCHER.StLuck')}]`;
         }
 
         rollFormula = this.handleLifepathModifier(
@@ -390,6 +413,27 @@ export let defenseMixin = {
     },
 
     handleDefenseResults(roll, { totalAttack, attackDamageObject, attacker }, defenseItemId, { stagger, block }) {
+        let item = this.items.get(defenseItemId);
+        let isFumble = roll.options.fumble;
+
+        // Rule: Disaster (Fumble) reduces reliability by 1
+        if (isFumble && item) {
+            let reliabilityDamage = 1;
+            if (item.type == 'armor') {
+                let newReliability = Math.max(0, item.system.reliability - reliabilityDamage);
+                item.update({ 'system.reliability': newReliability });
+                if (newReliability <= 0) {
+                    ui.notifications.error(`${game.i18n.localize('WITCHER.Shield.Broken')}: ${item.name}`);
+                }
+            } else if (item.type == 'weapon') {
+                let newReliable = Math.max(0, item.system.reliable - reliabilityDamage);
+                item.update({ 'system.reliable': newReliable });
+                if (newReliable <= 0) {
+                    ui.notifications.error(`${game.i18n.localize('WITCHER.Weapon.Broken')}: ${item.name}`);
+                }
+            }
+        }
+
         if (roll.total < totalAttack) {
             applyActiveEffectToActorViaId(
                 this.uuid,
@@ -404,21 +448,23 @@ export let defenseMixin = {
                 applyStatusEffectToActor(attacker, 'staggered', 1);
             }
 
-            if (block) {
+            if (block && item) {
                 let reliabilityDamage = 1;
                 if (attackDamageObject.properties.crushingForce) {
                     reliabilityDamage *= 2;
                 }
-                let item = this.items.get(defenseItemId);
+                
                 if (item.type == 'armor') {
-                    item.update({ 'system.reliability': item.system.reliability - reliabilityDamage });
-                    if (item.system.reliability - reliabilityDamage <= 0) {
-                        ui.notifications.error(game.i18n.localize('WITCHER.Shield.Broken'));
+                    let newReliability = Math.max(0, item.system.reliability - reliabilityDamage);
+                    item.update({ 'system.reliability': newReliability });
+                    if (newReliability <= 0) {
+                        ui.notifications.error(`${game.i18n.localize('WITCHER.Shield.Broken')}: ${item.name}`);
                     }
-                } else {
-                    item.update({ 'system.reliable': item.system.reliable - reliabilityDamage });
-                    if (item.system.reliable - reliabilityDamage <= 0) {
-                        ui.notifications.error(game.i18n.localize('WITCHER.Weapon.Broken'));
+                } else if (item.type == 'weapon') {
+                    let newReliable = Math.max(0, item.system.reliable - reliabilityDamage);
+                    item.update({ 'system.reliable': newReliable });
+                    if (newReliable <= 0) {
+                        ui.notifications.error(`${game.i18n.localize('WITCHER.Weapon.Broken')}: ${item.name}`);
                     }
                 }
             }

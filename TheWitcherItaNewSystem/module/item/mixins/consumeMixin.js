@@ -23,6 +23,15 @@ export let consumeMixin = {
 
         this.actor.applyStatus(properties.effects);
         this.actor.removeStatus(this.system.consumeProperties.removesEffects);
+
+        // Special handling for White Honey (Miele Bianco)
+        if (this.name.includes('Miele Bianco') || this.name.includes('White Honey')) {
+            const effectsToDelete = this.actor.effects.filter(e => e.system.toxicity > 0).map(e => e.id);
+            if (effectsToDelete.length > 0) {
+                await this.actor.deleteEmbeddedDocuments('ActiveEffect', effectsToDelete);
+            }
+        }
+
         applyActiveEffectToActorViaId(this.actor.uuid, this.uuid, 'applySelf');
         this.createConsumeMessage(messageInfos);
     },

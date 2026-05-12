@@ -106,31 +106,46 @@ export let itemMixin = {
         let isEquipping = !item.system.equipped;
 
         // Validation for armor layering rules
-        if (isEquipping && item.type === 'armor' && item.system.type !== 'Natural') {
-            const locations = ['head', 'torso', 'rightArm', 'leftArm', 'rightLeg', 'leftLeg'];
-            const armorType = item.system.type;
+        if (isEquipping && item.type === 'armor') {
+            // Rule: Only one shield at a time
+            if (item.system.location?.includes('Shield')) {
+                const otherShields = this.actor.items.filter(i => 
+                    i.type === 'armor' && 
+                    i.system.equipped && 
+                    i.system.location?.includes('Shield') && 
+                    i.id !== item.id
+                );
+                for (let s of otherShields) {
+                    await s.update({ 'system.equipped': false });
+                }
+            }
 
-            for (let loc of locations) {
-                const spKey = loc + 'Stopping';
-                // Only check locations covered by this item
-                if ((item.system[spKey] ?? 0) > 0) {
-                    const locArmor = this.actor.getLocationArmor({ name: loc }, {});
-                    const worn = locArmor.armorSet.worn;
+            if (item.system.type !== 'Natural') {
+                const locations = ['head', 'torso', 'rightArm', 'leftArm', 'rightLeg', 'leftLeg'];
+                const armorType = item.system.type;
 
-                    // 1. Max 3 layers per single body location
-                    if (worn.length >= 3) {
-                        ui.notifications.warn(`${game.i18n.localize('WITCHER.Armor.tooMuch')} (${loc.toUpperCase()}: Max 3 layers)`);
-                        return;
-                    }
+                for (let loc of locations) {
+                    const spKey = loc + 'Stopping';
+                    // Only check locations covered by this item
+                    if ((item.system[spKey] ?? 0) > 0) {
+                        const locArmor = this.actor.getLocationArmor({ name: loc }, {});
+                        const worn = locArmor.armorSet.worn;
 
-                    // 2. Max 1 Heavy and 1 Medium per location
-                    if (armorType === 'Medium' && worn.some(a => a.system.type === 'Medium')) {
-                        ui.notifications.warn(`${game.i18n.localize('WITCHER.Armor.tooMuch')} (${loc.toUpperCase()}: Max 1 Medium)`);
-                        return;
-                    }
-                    if (armorType === 'Heavy' && worn.some(a => a.system.type === 'Heavy')) {
-                        ui.notifications.warn(`${game.i18n.localize('WITCHER.Armor.tooMuch')} (${loc.toUpperCase()}: Max 1 Heavy)`);
-                        return;
+                        // 1. Max 3 layers per single body location
+                        if (worn.length >= 3) {
+                            ui.notifications.warn(`${game.i18n.localize('WITCHER.Armor.tooMuch')} (${loc.toUpperCase()}: Max 3 layers)`);
+                            return;
+                        }
+
+                        // 2. Max 1 Heavy and 1 Medium per location
+                        if (armorType === 'Medium' && worn.some(a => a.system.type === 'Medium')) {
+                            ui.notifications.warn(`${game.i18n.localize('WITCHER.Armor.tooMuch')} (${loc.toUpperCase()}: Max 1 Medium)`);
+                            return;
+                        }
+                        if (armorType === 'Heavy' && worn.some(a => a.system.type === 'Heavy')) {
+                            ui.notifications.warn(`${game.i18n.localize('WITCHER.Armor.tooMuch')} (${loc.toUpperCase()}: Max 1 Heavy)`);
+                            return;
+                        }
                     }
                 }
             }
