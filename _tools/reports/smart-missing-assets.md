@@ -1,35 +1,14 @@
 # 🛡️ Smart Asset Guard - Report Iconografia
-Data Scansione: 12/05/2026, 10:25:22
+Data Scansione: 12/05/2026, 10:41:39
 
 ## 📊 Riepilogo
 - **Totale Voci Analizzate**: 1478
-- **Asset Corretti**: 1379
-- **Asset con Mismatch (Legacy/Path)**: 17
+- **Asset Corretti**: 1396
+- **Asset con Mismatch (Legacy/Path)**: 0
 - **Asset Mancanti**: 82
 
 > [!IMPORTANT]
 > Lo standard per i caratteri speciali (apostrofi, parentesi, due punti) è la sostituzione con l'underscore: `Spada d'Argento` -> `spada_d_argento.webp`.
-
-## ⚠️ Asset con Mismatch (Azione Richiesta)
-| Nome | Motivo | Percorso Attuale | Suggerimento |
-|---|---|---|---|
-| Mutageno: Botchling (Rosso) | Percorso JSON non allineato (File trovato con slugify) | `modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Componenti/witcher-components-mutageni-dw/mutageno_botchling_rosso.webp` | `modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Componenti/witcher-mutageni-dw/mutageno_botchling_rosso.webp` |
-| Mutageno: Bruxa (Blu) | Percorso JSON non allineato (File trovato con slugify) | `modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Componenti/witcher-components-mutageni-dw/mutageno_bruxa_blu.webp` | `modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Componenti/witcher-mutageni-dw/mutageno_bruxa_blu.webp` |
-| Mutageno: Bullvore (Verde) | Percorso JSON non allineato (File trovato con slugify) | `modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Componenti/witcher-components-mutageni-dw/mutageno_bullvore_verde.webp` | `modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Componenti/witcher-mutageni-dw/mutageno_bullvore_verde.webp` |
-| Mutageno: Cockatrice (Rosso) | Percorso JSON non allineato (File trovato con slugify) | `modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Componenti/witcher-components-mutageni-dw/mutageno_cockatrice_rosso.webp` | `modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Componenti/witcher-mutageni-dw/mutageno_cockatrice_rosso.webp` |
-| Mutageno: Elementale (Blu) | Percorso JSON non allineato (File trovato con slugify) | `modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Componenti/witcher-components-mutageni-dw/mutageno_elementale_blu.webp` | `modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Componenti/witcher-mutageni-dw/mutageno_elementale_blu.webp` |
-| Mutageno: Fenice (Rosso) | Percorso JSON non allineato (File trovato con slugify) | `modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Componenti/witcher-components-mutageni-dw/mutageno_fenice_rosso.webp` | `modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Componenti/witcher-mutageni-dw/mutageno_fenice_rosso.webp` |
-| Mutageno: Foglet (Blu) | Percorso JSON non allineato (File trovato con slugify) | `modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Componenti/witcher-components-mutageni-dw/mutageno_foglet_blu.webp` | `modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Componenti/witcher-mutageni-dw/mutageno_foglet_blu.webp` |
-| Mutageno: Frightener (Verde) | Percorso JSON non allineato (File trovato con slugify) | `modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Componenti/witcher-components-mutageni-dw/mutageno_frightener_verde.webp` | `modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Componenti/witcher-mutageni-dw/mutageno_frightener_verde.webp` |
-| Mutageno: Garkain (Verde) | Percorso JSON non allineato (File trovato con slugify) | `modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Componenti/witcher-components-mutageni-dw/mutageno_garkain_verde.webp` | `modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Componenti/witcher-mutageni-dw/mutageno_garkain_verde.webp` |
-| Mutageno: Leshen (Blu) | Percorso JSON non allineato (File trovato con slugify) | `modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Componenti/witcher-components-mutageni-dw/mutageno_leshen_blu.webp` | `modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Componenti/witcher-mutageni-dw/mutageno_leshen_blu.webp` |
-| Mutageno: Manticora (Rosso) | Percorso JSON non allineato (File trovato con slugify) | `modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Componenti/witcher-components-mutageni-dw/mutageno_manticora_rosso.webp` | `modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Componenti/witcher-mutageni-dw/mutageno_manticora_rosso.webp` |
-| Mutageno: Orso (Verde) | Percorso JSON non allineato (File trovato con slugify) | `modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Componenti/witcher-components-mutageni-dw/mutageno_orso_verde.webp` | `modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Componenti/witcher-mutageni-dw/mutageno_orso_verde.webp` |
-| Mutageno: Pesta (Blu) | Percorso JSON non allineato (File trovato con slugify) | `modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Componenti/witcher-components-mutageni-dw/mutageno_pesta_blu.webp` | `modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Componenti/witcher-mutageni-dw/mutageno_pesta_blu.webp` |
-| Mutageno: Shaelmaar (Verde) | Percorso JSON non allineato (File trovato con slugify) | `modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Componenti/witcher-components-mutageni-dw/mutageno_shaelmaar_verde.webp` | `modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Componenti/witcher-mutageni-dw/mutageno_shaelmaar_verde.webp` |
-| Mutageno: Succube (Verde) | Percorso JSON non allineato (File trovato con slugify) | `modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Componenti/witcher-components-mutageni-dw/mutageno_succube_verde.webp` | `modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Componenti/witcher-mutageni-dw/mutageno_succube_verde.webp` |
-| Mutageno: Troll (Verde) | Percorso JSON non allineato (File trovato con slugify) | `modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Componenti/witcher-components-mutageni-dw/mutageno_troll_verde.webp` | `modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Componenti/witcher-mutageni-dw/mutageno_troll_verde.webp` |
-| Mutageno: Vendigo (Rosso) | Percorso JSON non allineato (File trovato con slugify) | `modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Componenti/witcher-components-mutageni-dw/mutageno_vendigo_rosso.webp` | `modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/Componenti/witcher-mutageni-dw/mutageno_vendigo_rosso.webp` |
 
 ## ❌ Asset Totalmente Mancanti
 | Nome | File JSON | Percorso Atteso |
