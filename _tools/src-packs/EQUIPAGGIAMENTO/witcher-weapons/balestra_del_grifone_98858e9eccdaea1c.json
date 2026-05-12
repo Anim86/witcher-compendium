@@ -1,11 +1,51 @@
 {
     "_id": "98858e9eccdaea1c",
     "name": "Balestra del Grifone",
-    "type": "valuable",
+    "type": "weapon",
     "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/balestra_del_grifone.webp",
     "system": {
-        "description": "<p>Balestra speciale progettato e utilizzato dai membri della Scuola del Grifone.</p>",
-        "sourcebook": "SW"
+        "description": "<p>Un'arma specializzata per perforare anche i mostri volanti più pesantemente corazzati a corto raggio.</p>",
+        "weight": 0.5,
+        "cost": 0,
+        "sourcebook": "MB",
+        "damage": "2d6+2",
+        "accuracy": 1,
+        "reliability": {
+            "value": 5,
+            "max": 5
+        },
+        "hands": "1",
+        "range": "50m",
+        "enhancementSlots": 1,
+        "conceal": "G",
+        "type": {
+            "text": "",
+            "slashing": false,
+            "piercing": true,
+            "bludgeoning": false,
+            "elemental": false
+        },
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": true,
+            "ablating": false,
+            "crushingForce": false,
+            "isMeteorite": false,
+            "isNonLethal": false,
+            "effects": [
+                {
+                    "varEffect": false,
+                    "percentage": 100,
+                    "name": "Ricarica Lenta",
+                    "id": "315a448feb8342af",
+                    "statusEffect": null
+                }
+            ]
+        },
+        "rangedAttackSkill": "crossbow",
+        "attackOptions": [
+            "ranged"
+        ]
     },
     "effects": [],
     "flags": {},

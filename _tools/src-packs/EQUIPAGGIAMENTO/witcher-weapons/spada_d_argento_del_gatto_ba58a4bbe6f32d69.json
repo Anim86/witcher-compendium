@@ -1,15 +1,15 @@
-﻿{
+{
     "_id": "ba58a4bbe6f32d69",
     "name": "Spada d'Argento del Gatto",
     "type": "weapon",
     "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/spada_d_argento_del_gatto.webp",
     "system": {
         "description": "<p>Spada d'argento della Scuola del Gatto, agile e precisa, essenziale per i contratti sui mostri.</p>",
-        "weight": 1,
-        "cost": 100,
+        "weight": 1.5,
+        "cost": 0,
         "sourcebook": "SW",
-        "damage": "4d6+2",
-        "accuracy": 1,
+        "damage": "1d6+2",
+        "accuracy": 2,
         "reliability": {
             "value": 10,
             "max": 10
@@ -38,7 +38,12 @@
                     "varEffect": false
                 }
             ]
-        }
+        },
+        "enhancementSlots": 2,
+        "meleeAttackSkill": "swordsmanship",
+        "attackOptions": [
+            "melee"
+        ]
     },
     "effects": [],
     "flags": {},

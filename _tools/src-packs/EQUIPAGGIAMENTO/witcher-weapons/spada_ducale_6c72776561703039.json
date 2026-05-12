@@ -14,7 +14,11 @@
         "damage": "5d6",
         "hands": 1,
         "effects": "Trapassare",
-        "category": "Swords"
+        "category": "Swords",
+        "meleeAttackSkill": "swordsmanship",
+        "attackOptions": [
+            "melee"
+        ]
     },
     "effects": [],
     "flags": {},

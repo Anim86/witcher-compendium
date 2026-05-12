@@ -43,7 +43,12 @@
         "damage": "6d6",
         "hands": 2,
         "accuracy": 1,
-        "unmodifiedMax": {}
+        "unmodifiedMax": {},
+        "enhancementSlots": 1,
+        "rangedAttackSkill": "crossbow",
+        "attackOptions": [
+            "ranged"
+        ]
     },
     "effects": [],
     "folder": null,

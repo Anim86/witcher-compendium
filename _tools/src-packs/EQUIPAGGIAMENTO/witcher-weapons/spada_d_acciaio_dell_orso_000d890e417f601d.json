@@ -1,12 +1,12 @@
-﻿{
+{
     "_id": "000d890e417f601d",
     "name": "Spada d'Acciaio dell'Orso",
     "type": "weapon",
     "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/spada_d_acciaio_dell_orso.webp",
     "system": {
-        "description": "",
-        "weight": 1,
-        "cost": 100,
+        "description": "<p>Pesantissimo pezzo di acciaio forgiato a Skellige o sugli Amell, congegnato per sfasciare armature e abbattere i bersagli a terra.</p>",
+        "weight": 2.5,
+        "cost": 0,
         "sourcebook": "MB",
         "damage": "6d6+2",
         "accuracy": 0,
@@ -14,7 +14,7 @@
             "value": 15,
             "max": 15
         },
-        "hands": "2",
+        "hands": "1",
         "type": {
             "text": "",
             "slashing": true,
@@ -30,7 +30,12 @@
             "isMeteorite": true,
             "isNonLethal": false,
             "effects": []
-        }
+        },
+        "enhancementSlots": 2,
+        "meleeAttackSkill": "swordsmanship",
+        "attackOptions": [
+            "melee"
+        ]
     },
     "effects": [],
     "flags": {},

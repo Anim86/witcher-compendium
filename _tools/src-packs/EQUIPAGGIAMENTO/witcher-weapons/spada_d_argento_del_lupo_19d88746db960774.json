@@ -1,20 +1,20 @@
-﻿{
+{
     "_id": "19d88746db960774",
     "name": "Spada d'Argento del Lupo",
     "type": "weapon",
     "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/spada_d_argento_del_lupo.webp",
     "system": {
         "description": "<p>Spada d'argento della Scuola del Lupo, letale contro ogni tipo di mostro, forgiata con argento puro.</p>",
-        "weight": 1,
-        "cost": 100,
+        "weight": 1.5,
+        "cost": 0,
         "sourcebook": "SW",
-        "damage": "5d6+2",
+        "damage": "2d6+2",
         "accuracy": 1,
         "reliability": {
             "value": 10,
             "max": 10
         },
-        "hands": "2",
+        "hands": "1",
         "type": {
             "text": "",
             "slashing": true,
@@ -38,7 +38,12 @@
                     "varEffect": false
                 }
             ]
-        }
+        },
+        "enhancementSlots": 3,
+        "meleeAttackSkill": "swordsmanship",
+        "attackOptions": [
+            "melee"
+        ]
     },
     "effects": [],
     "flags": {},

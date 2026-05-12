@@ -19,10 +19,32 @@
     </div>
 
     <div class="weapon-section">
+        <div class="section-header valuable-header">
+            <div></div>
+            <h2>{{localize "WITCHER.Loot.Weapons"}}</h2>
+            <div class="list-label">
+                <span class="list-controls">
+                    <a class="add-item" data-itemType="weapon" data-tooltip="{{localize 'WITCHER.Button.Add'}} {{localize 'WITCHER.TYPES.Item.weapon'}}">
+                        <i class="fas fa-plus"></i>
+                    </a>
+                </span>
+            </div>
+        </div>
         {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/inventory/tab-inventory-weapons.hbs" weapons=weapons itemType='weapon' header=(localize "WITCHER.Inventory.Weapons") hasDamage=true hasReliability=true hasQuantity=true}}
     </div>
 
     <div class="armor-section">
+        <div class="section-header valuable-header">
+            <div></div>
+            <h2>{{localize "WITCHER.Loot.Armors"}}</h2>
+            <div class="list-label">
+                <span class="list-controls">
+                    <a class="add-item" data-itemType="armor" data-tooltip="{{localize 'WITCHER.Button.Add'}} {{localize 'WITCHER.TYPES.Item.armor'}}">
+                        <i class="fas fa-plus"></i>
+                    </a>
+                </span>
+            </div>
+        </div>
         {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/inventory/tab-inventory-armors.hbs" armors=armors itemType='armor' header=(localize "WITCHER.Inventory.Armor") hasReliability=true hasQuantity=true}}
     </div>
 

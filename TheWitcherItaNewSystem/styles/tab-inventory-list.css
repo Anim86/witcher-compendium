@@ -162,6 +162,14 @@ details .list,
 
 .list-details:last-child { border: none; }
 
+.list-details h3 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+    color: #fff;
+    flex-grow: 1;
+}
+
 .list-details:hover {
     border-radius: 5px;
     background: rgba(255, 255, 255, 0.04);

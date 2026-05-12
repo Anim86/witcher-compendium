@@ -4,9 +4,9 @@
     "type": "weapon",
     "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/zefhar_elfico.webp",
     "system": {
-        "description": "",
-        "weight": 1,
-        "cost": 100,
+        "description": "<p>Il gran vanto degli elfi: un ingegnoso arco a quattro braccia che raddoppia la potenza delle frecce senza aumentare il peso totale.</p>",
+        "weight": 2.5,
+        "cost": 1100,
         "sourcebook": "MB",
         "damage": "6d6",
         "accuracy": 2,
@@ -31,7 +31,12 @@
             "isMeteorite": false,
             "isNonLethal": false,
             "effects": []
-        }
+        },
+        "enhancementSlots": 2,
+        "rangedAttackSkill": "archery",
+        "attackOptions": [
+            "ranged"
+        ]
     },
     "effects": [],
     "flags": {},

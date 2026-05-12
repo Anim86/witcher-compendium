@@ -4,9 +4,9 @@
     "type": "weapon",
     "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/messer_elfico.webp",
     "system": {
-        "description": "",
-        "weight": 1,
-        "cost": 100,
+        "description": "<p>Enormi coltelli ricurvi ideati inizialmente dai Nazairiani disarmati e poi perfezionati dagli elfi in armi letali.</p>",
+        "weight": 2,
+        "cost": 595,
         "sourcebook": "MB",
         "damage": "3d6+4",
         "accuracy": 2,
@@ -38,7 +38,13 @@
                     "varEffect": false
                 }
             ]
-        }
+        },
+        "enhancementSlots": 2,
+        "conceal": "G",
+        "meleeAttackSkill": "swordsmanship",
+        "attackOptions": [
+            "melee"
+        ]
     },
     "effects": [],
     "flags": {},

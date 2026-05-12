@@ -35,7 +35,12 @@
         "rarity": "Scarsa",
         "damage": "6d6+3",
         "hands": 2,
-        "unmodifiedMax": {}
+        "unmodifiedMax": {},
+        "enhancementSlots": 1,
+        "meleeAttackSkill": "staffspear",
+        "attackOptions": [
+            "melee"
+        ]
     },
     "effects": [],
     "folder": null,

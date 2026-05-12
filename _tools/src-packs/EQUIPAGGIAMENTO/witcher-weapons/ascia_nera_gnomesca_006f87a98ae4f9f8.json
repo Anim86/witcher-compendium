@@ -4,9 +4,9 @@
     "type": "weapon",
     "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/ascia_nera_gnomesca.webp",
     "system": {
-        "description": "",
-        "weight": 1,
-        "cost": 100,
+        "description": "<p>Arma gnomesca apparentemente leggera per il suo massiccio profilo, ma forgiata e incantata per fendere in due pesanti armature.</p>",
+        "weight": 2.5,
+        "cost": 910,
         "sourcebook": "MB",
         "damage": "6d6+2",
         "accuracy": 2,
@@ -30,7 +30,12 @@
             "isMeteorite": false,
             "isNonLethal": false,
             "effects": []
-        }
+        },
+        "enhancementSlots": 2,
+        "meleeAttackSkill": "melee",
+        "attackOptions": [
+            "melee"
+        ]
     },
     "effects": [],
     "flags": {},

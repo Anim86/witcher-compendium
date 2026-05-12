@@ -34,7 +34,12 @@
         "rarity": "Diffusa",
         "damage": "1d6+2",
         "hands": 1,
-        "unmodifiedMax": {}
+        "unmodifiedMax": {},
+        "conceal": "P",
+        "meleeAttackSkill": "smallblades",
+        "attackOptions": [
+            "melee"
+        ]
     },
     "effects": [],
     "folder": null,

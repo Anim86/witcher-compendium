@@ -1,77 +1,81 @@
 {
-    "_id": "c2d3e4f5a6b7c8d9",
-    "name": "Caroline",
-    "type": "weapon",
-    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/caroline.webp",
-    "system": {
-        "description": "<p>Spada Lunga Reliquia. Prende il nome dalla moglie di Geoff di Bremervoord, che cercò vendetta contro i predoni di Skellige battendosi con furia sovrumana.</p><p><strong>Statistiche:</strong> 9d6 DAN, Focus Superiore (Acqua), +25 Punti Salute, Bilanciata, Sanguinamento (75%). 3 Slot.</p>",
-        "quantity": "1",
-        "weight": 3,
-        "cost": 0,
-        "sourcebook": "MB 258",
-        "class": "simple",
-        "category": "relic",
-        "damage": "9d6",
-        "damageType": "slashing",
-        "reliability": {
-            "value": 15,
-            "max": 15
-        },
-        "hands": "2",
-        "range": "N/A",
-        "enhancementSlots": 3,
-        "isMeteorite": false,
-        "damageProperties": {
-            "effects": [
-                {
-                    "id": "00011500c3ba4611",
-                    "name": "Focus Sup. (Acqua)",
-                    "statusEffect": null,
-                    "percentage": 100,
-                    "varEffect": false
-                },
-                {
-                    "id": "007a934cca7eea08",
-                    "name": "+25 Punti Salute",
-                    "statusEffect": null,
-                    "percentage": 100,
-                    "varEffect": false
-                },
-                {
-                    "id": "003f7cdaa97f5f48",
-                    "name": "bilanciata",
-                    "statusEffect": null,
-                    "percentage": 100,
-                    "varEffect": false
-                },
-                {
-                    "id": "00921a53afebce68",
-                    "name": "sanguinamento",
-                    "statusEffect": null,
-                    "percentage": 75,
-                    "varEffect": false
-                }
-            ],
-            "armorPiercing": false,
-            "improvedArmorPiercing": false,
-            "ablating": false,
-            "crushingForce": false,
-            "isMeteorite": false,
-            "isNonLethal": false
-        },
-        "accuracy": 3,
-        "type": {
-            "text": "",
-            "slashing": true,
-            "piercing": true,
-            "bludgeoning": false,
-            "elemental": false
-        }
-    },
-    "effects": [],
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-    }
+    "_id":  "c2d3e4f5a6b7c8d9",
+    "name":  "Caroline",
+    "type":  "weapon",
+    "img":  "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/caroline.webp",
+    "system":  {
+                "description":  "<p>Spada Lunga Reliquia. Prende il nome dalla moglie di Geoff di Bremervoord, che cercò vendetta contro i predoni di Skellige battendosi con furia sovrumana.</p><p><strong>Statistiche:</strong> 9d6 DAN, Focus Superiore (Acqua), +25 Punti Salute, Bilanciata, Sanguinamento (75%). 3 Slot.</p>",
+                "quantity":  "1",
+                "weight":  3,
+                "cost":  0,
+                "sourcebook":  "MB 258",
+                "class":  "simple",
+                "category":  "relic",
+                "damage":  "9d6",
+                "damageType":  "slashing",
+                "reliability":  {
+                                    "value":  15,
+                                    "max":  15
+                                },
+                "hands":  "2",
+                "range":  "N/A",
+                "enhancementSlots":  3,
+                "isMeteorite":  false,
+                "damageProperties":  {
+                                            "effects":  [
+                                                            {
+                                                                "id":  "00011500c3ba4611",
+                                                                "name":  "Focus Sup. (Acqua)",
+                                                                "statusEffect":  null,
+                                                                "percentage":  100,
+                                                                "varEffect":  false
+                                                            },
+                                                            {
+                                                                "id":  "007a934cca7eea08",
+                                                                "name":  "+25 Punti Salute",
+                                                                "statusEffect":  null,
+                                                                "percentage":  100,
+                                                                "varEffect":  false
+                                                            },
+                                                            {
+                                                                "id":  "003f7cdaa97f5f48",
+                                                                "name":  "bilanciata",
+                                                                "statusEffect":  null,
+                                                                "percentage":  100,
+                                                                "varEffect":  false
+                                                            },
+                                                            {
+                                                                "id":  "00921a53afebce68",
+                                                                "name":  "sanguinamento",
+                                                                "statusEffect":  null,
+                                                                "percentage":  75,
+                                                                "varEffect":  false
+                                                            }
+                                                        ],
+                                            "armorPiercing":  false,
+                                            "improvedArmorPiercing":  false,
+                                            "ablating":  false,
+                                            "crushingForce":  false,
+                                            "isMeteorite":  false,
+                                            "isNonLethal":  false
+                                        },
+                "accuracy":  3,
+                "type":  {
+                                "text":  "",
+                                "slashing":  true,
+                                "piercing":  true,
+                                "bludgeoning":  false,
+                                "elemental":  false
+                            }
+            },
+    "effects":  [
+
+                ],
+    "flags":  {
+
+            },
+    "_stats":  {
+                "systemId":  "TheWitcherItaNewSystem",
+                "coreVersion":  14
+            }
 }

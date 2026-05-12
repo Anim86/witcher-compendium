@@ -4,9 +4,9 @@
     "type": "weapon",
     "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/martello_d_armi_mahakaman.webp",
     "system": {
-        "description": "",
-        "weight": 1,
-        "cost": 100,
+        "description": "<p>Rara ascia ibrida con testa di martello e pesante spuntone perforante; viene usata soprattutto dai nani.</p>",
+        "weight": 3.5,
+        "cost": 750,
         "sourcebook": "MB",
         "damage": "5d6",
         "accuracy": 0,
@@ -30,7 +30,13 @@
             "isMeteorite": false,
             "isNonLethal": false,
             "effects": []
-        }
+        },
+        "enhancementSlots": 1,
+        "conceal": "G",
+        "meleeAttackSkill": "melee",
+        "attackOptions": [
+            "melee"
+        ]
     },
     "effects": [],
     "flags": {},

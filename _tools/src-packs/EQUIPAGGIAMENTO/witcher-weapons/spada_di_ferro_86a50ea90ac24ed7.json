@@ -34,7 +34,12 @@
         "rarity": "Diffusa",
         "damage": "2d6+2",
         "hands": 2,
-        "unmodifiedMax": {}
+        "unmodifiedMax": {},
+        "conceal": "G",
+        "meleeAttackSkill": "swordsmanship",
+        "attackOptions": [
+            "melee"
+        ]
     },
     "effects": [],
     "folder": null,

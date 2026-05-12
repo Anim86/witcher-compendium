@@ -1,57 +1,61 @@
 {
-    "_id": "e0f1a2b3c4d5e6f7",
-    "name": "Ogh'r",
-    "type": "weapon",
-    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/ogh_r.webp",
-    "system": {
-        "description": "<p>Martello da Guerra Reliquia. Creato dal nano Yorath per sconfiggere il troll Rogar Testadura in un bizzarro duello di testate (vinto grazie alla 'testa' del martello).</p><p><strong>Statistiche:</strong> 10d6 DAN, Stordimento (4), Bilanciata. 3 Slot.</p>",
-        "quantity": "1",
-        "weight": 5,
-        "cost": 0,
-        "sourcebook": "MB 262",
-        "class": "simple",
-        "category": "relic",
-        "damage": "10d6",
-        "damageType": "bludgeoning",
-        "reliability": {
-            "value": 15,
-            "max": 15
-        },
-        "hands": "2",
-        "range": "N/A",
-        "enhancementSlots": 3,
-        "isMeteorite": false,
-        "damageProperties": {
-            "effects": [
-                {
-                    "id": "00ea402d239e9d78",
-                    "name": "bilanciata",
-                    "statusEffect": null,
-                    "percentage": 100,
-                    "varEffect": false
-                }
-            ],
-            "armorPiercing": true,
-            "improvedArmorPiercing": false,
-            "ablating": false,
-            "crushingForce": false,
-            "isMeteorite": false,
-            "isNonLethal": false,
-            "stun": 4
-        },
-        "accuracy": 0,
-        "type": {
-            "text": "",
-            "slashing": false,
-            "piercing": false,
-            "bludgeoning": true,
-            "elemental": false
-        }
-    },
-    "effects": [],
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-    }
+    "_id":  "e0f1a2b3c4d5e6f7",
+    "name":  "Ogh'r",
+    "type":  "weapon",
+    "img":  "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/ogh_r.webp",
+    "system":  {
+                "description":  "<p>Martello da Guerra Reliquia. Creato dal nano Yorath per sconfiggere il troll Rogar Testadura in un bizzarro duello di testate (vinto grazie alla 'testa' del martello).</p><p><strong>Statistiche:</strong> 10d6 DAN, Stordimento (4), Bilanciata. 3 Slot.</p>",
+                "quantity":  "1",
+                "weight":  5,
+                "cost":  0,
+                "sourcebook":  "MB 262",
+                "class":  "simple",
+                "category":  "relic",
+                "damage":  "10d6",
+                "damageType":  "bludgeoning",
+                "reliability":  {
+                                    "value":  15,
+                                    "max":  15
+                                },
+                "hands":  "2",
+                "range":  "N/A",
+                "enhancementSlots":  3,
+                "isMeteorite":  false,
+                "damageProperties":  {
+                                            "effects":  [
+                                                            {
+                                                                "id":  "00ea402d239e9d78",
+                                                                "name":  "bilanciata",
+                                                                "statusEffect":  null,
+                                                                "percentage":  100,
+                                                                "varEffect":  false
+                                                            }
+                                                        ],
+                                            "armorPiercing":  true,
+                                            "improvedArmorPiercing":  false,
+                                            "ablating":  false,
+                                            "crushingForce":  false,
+                                            "isMeteorite":  false,
+                                            "isNonLethal":  false,
+                                            "stun":  4
+                                        },
+                "accuracy":  0,
+                "type":  {
+                                "text":  "",
+                                "slashing":  false,
+                                "piercing":  false,
+                                "bludgeoning":  true,
+                                "elemental":  false
+                            }
+            },
+    "effects":  [
+
+                ],
+    "flags":  {
+
+            },
+    "_stats":  {
+                "systemId":  "TheWitcherItaNewSystem",
+                "coreVersion":  14
+            }
 }

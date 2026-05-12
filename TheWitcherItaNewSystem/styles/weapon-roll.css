@@ -1,19 +1,229 @@
-.weapon_roll_sheet input {
-    text-align: center !important;
-    margin: 0px 5px;
-    width: 30px;
-    float: right;
+.weapon_roll_sheet {
+    background: #1a1a1a;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    color: #eee;
 }
 
-.weapon_roll_sheet td {
-    height: 35px;
+.weapon_roll_sheet .scrollable {
+    padding: 10px 15px;
 }
 
-.weapon_roll_sheet select {
-    margin: 0px 5px;
-    float: right;
+/* Premium Banner Header */
+.premium-banner {
+    background: linear-gradient(90deg, #2c1e14 0%, #1a1a1a 100%);
+    border-bottom: 2px solid #c8a45d;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
 }
 
-.weapon_roll_sheet label {
-    vertical-align: middle;
+.premium-banner .item-img {
+    width: 48px;
+    height: 48px;
+    border: 1px solid #c8a45d;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.premium-banner .item-info-text {
+    flex-grow: 1;
+}
+
+.premium-banner .item-name {
+    margin: 0;
+    color: #c8a45d;
+    font-family: 'Goudy Old Style', serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.premium-banner .item-damage {
+    display: block;
+    font-size: 0.9rem;
+    color: #aaa;
+}
+
+.premium-banner .skill-info {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+.premium-banner .melee-bonus-badge {
+    text-align: center;
+    background: rgba(200, 164, 93, 0.1);
+    padding: 5px 10px;
+    border: 1px solid #c8a45d;
+    border-radius: 4px;
+}
+
+.premium-banner .melee-bonus-badge label {
+    display: block;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: #c8a45d;
+}
+
+.premium-banner .melee-bonus-badge span {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+fieldset {
+    border: 1px solid #444;
+    border-radius: 6px;
+    padding: 6px 10px;
+    margin-bottom: 10px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+fieldset legend {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #d4af37;
+    padding: 0 5px;
+    font-weight: bold;
+}
+
+/* Layout Grid */
+.attack-sheet-grid {
+    padding: 0 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.config-section {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid #333;
+    border-radius: 6px;
+    padding: 8px;
+}
+
+.config-section h4 {
+    margin: 0 0 8px 0;
+    border-bottom: 1px solid #444;
+    padding-bottom: 3px;
+    color: #c8a45d;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+.grid-2col {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 8px;
+}
+
+.grid-3col {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 8px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-bottom: 8px;
+}
+
+.form-group label {
+    font-size: 0.7rem;
+    color: #aaa;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.form-group select, .form-group input {
+    width: 100% !important;
+    background: #2a2a2a !important;
+    border: 1px solid #444 !important;
+    color: white !important;
+    padding: 3px 6px !important;
+    border-radius: 4px !important;
+    height: 28px !important;
+    font-size: 0.8rem !important;
+}
+
+.form-group input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin: 5px 0;
+}
+
+.full-width {
+    grid-column: span 2;
+}
+
+/* Advanced Modifiers */
+.advanced-mods {
+    margin-top: 10px;
+}
+
+.advanced-mods summary {
+    cursor: pointer;
+    color: #888;
+    font-size: 0.8rem;
+    padding: 5px;
+    user-select: none;
+}
+
+.grid-2col-mods {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+    background: rgba(0,0,0,0.2);
+    border-radius: 4px;
+}
+
+.mod-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+    padding: 4px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.mod-row:last-child {
+    border-bottom: none;
+}
+
+/* Footer Section */
+.attack-footer {
+    margin: 12px 10px 10px 10px;
+    background: rgba(200, 164, 93, 0.05);
+    border: 1px solid #c8a45d55;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.small-input {
+    width: 60px !important;
+    text-align: center;
+}
+
+.error-display {
+    color: #ff5555;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+}
+
+.invisible {
+    display: none !important;
 }

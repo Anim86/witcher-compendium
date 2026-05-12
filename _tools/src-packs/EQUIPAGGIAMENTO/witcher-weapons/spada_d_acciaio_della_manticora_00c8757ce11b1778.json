@@ -1,12 +1,12 @@
-﻿{
+{
     "_id": "00c8757ce11b1778",
     "name": "Spada d'Acciaio della Manticora",
     "type": "weapon",
     "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/spada_d_acciaio_della_manticora.webp",
     "system": {
-        "description": "",
-        "weight": 1,
-        "cost": 100,
+        "description": "<p>In dotazione ai cacciatori della dinastia orientale, studiate per infliggere un numero letale di colpi critici perfetti.</p>",
+        "weight": 2.5,
+        "cost": 0,
         "sourcebook": "MB",
         "damage": "5d6+2",
         "accuracy": 1,
@@ -14,7 +14,7 @@
             "value": 15,
             "max": 15
         },
-        "hands": "2",
+        "hands": "1",
         "type": {
             "text": "",
             "slashing": true,
@@ -38,7 +38,12 @@
                     "varEffect": false
                 }
             ]
-        }
+        },
+        "enhancementSlots": 2,
+        "meleeAttackSkill": "swordsmanship",
+        "attackOptions": [
+            "melee"
+        ]
     },
     "effects": [],
     "flags": {},

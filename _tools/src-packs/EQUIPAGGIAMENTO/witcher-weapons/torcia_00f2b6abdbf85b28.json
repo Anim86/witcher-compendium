@@ -4,9 +4,9 @@
     "type": "weapon",
     "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/torcia.webp",
     "system": {
-        "description": "",
-        "weight": 1,
-        "cost": 100,
+        "description": "<p>Fa abbastanza luce nell'oscurità ed è un buon randello improvvisato che incute terrore nei mostri quando brucia.</p>",
+        "weight": 0.1,
+        "cost": 1,
         "sourcebook": "MB",
         "damage": "1d6",
         "accuracy": -1,
@@ -38,7 +38,12 @@
                     "varEffect": false
                 }
             ]
-        }
+        },
+        "conceal": "P",
+        "meleeAttackSkill": "melee",
+        "attackOptions": [
+            "melee"
+        ]
     },
     "effects": [],
     "flags": {},

@@ -47,7 +47,11 @@
             "piercing": true,
             "bludgeoning": false,
             "elemental": false
-        }
+        },
+        "meleeAttackSkill": "swordsmanship",
+        "attackOptions": [
+            "melee"
+        ]
     },
     "effects": [],
     "flags": {},

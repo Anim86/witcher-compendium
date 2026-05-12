@@ -42,7 +42,12 @@
         "rarity": "Scarsa",
         "damage": "6d6",
         "hands": 2,
-        "unmodifiedMax": {}
+        "unmodifiedMax": {},
+        "enhancementSlots": 1,
+        "meleeAttackSkill": "melee",
+        "attackOptions": [
+            "melee"
+        ]
     },
     "effects": [],
     "folder": null,

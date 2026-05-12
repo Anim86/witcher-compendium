@@ -7,16 +7,48 @@
         "description": "<p>Nel Continente si possono trovare molte stranezze, oggetti curiosi e creature di cui una contadina come voi non ha alcuna conoscenza, né ha mai avuto occasione di vedere. Ecco perché io viaggio! Per far sì che gli angoli della mappa si pieghino verso il centro, per portare l'esotico nei luoghi fin troppo comuni. – Dandelion</p>",
         "sourcebook": "LR 166",
         "weight": 3,
-        "cost": 600,
-        "reliability": 10,
+        "cost": 455,
         "reliabilityMax": 10,
-        "accuracy": 2,
-        "damage": "5d6",
+        "accuracy": 1,
+        "damage": "4d6+2",
         "hands": 2,
         "range": 150,
         "effects": "Ricarica Lenta",
         "concealment": "G",
-        "category": "Crossbow"
+        "category": "Crossbow",
+        "reliability": {
+            "value": 5,
+            "max": 5
+        },
+        "enhancementSlots": 1,
+        "type": {
+            "text": "",
+            "slashing": false,
+            "piercing": true,
+            "bludgeoning": false,
+            "elemental": false
+        },
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "isMeteorite": false,
+            "isNonLethal": false,
+            "effects": [
+                {
+                    "varEffect": false,
+                    "percentage": 100,
+                    "name": "Ricarica Lenta",
+                    "id": "9d419603b00447ff",
+                    "statusEffect": null
+                }
+            ]
+        },
+        "rangedAttackSkill": "crossbow",
+        "attackOptions": [
+            "ranged"
+        ]
     },
     "effects": [],
     "flags": {},

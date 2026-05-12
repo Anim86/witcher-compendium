@@ -4,9 +4,9 @@
     "type": "weapon",
     "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/pala.webp",
     "system": {
-        "description": "",
-        "weight": 1,
-        "cost": 100,
+        "description": "<p>Mai sottovalutare una pala robusta, perfetta per scavare nascondigli e, se disperati, rompere la testa dei Nilfgaardiani ficcanaso.</p>",
+        "weight": 1.5,
+        "cost": 15,
         "sourcebook": "MB",
         "damage": "2d6",
         "accuracy": -2,
@@ -38,7 +38,12 @@
                     "varEffect": false
                 }
             ]
-        }
+        },
+        "conceal": "G",
+        "meleeAttackSkill": "melee",
+        "attackOptions": [
+            "melee"
+        ]
     },
     "effects": [],
     "flags": {},

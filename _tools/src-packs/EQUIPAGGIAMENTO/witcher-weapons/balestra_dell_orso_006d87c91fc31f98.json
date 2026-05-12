@@ -1,12 +1,12 @@
-﻿{
+{
     "_id": "006d87c91fc31f98",
     "name": "Balestra dell'Orso",
     "type": "weapon",
     "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/balestra_dell_orso.webp",
     "system": {
-        "description": "",
-        "weight": 1,
-        "cost": 100,
+        "description": "<p>Strumento massiccio con potenza di fuoco impressionante pensato per spezzare le ossa dall'alto potenziale difensivo dei nemici rintanati in quota.</p>",
+        "weight": 0.5,
+        "cost": 0,
         "sourcebook": "MB",
         "damage": "4d6+2",
         "accuracy": 1,
@@ -14,7 +14,7 @@
             "value": 5,
             "max": 5
         },
-        "hands": "2",
+        "hands": "1",
         "range": "50m",
         "type": {
             "text": "",
@@ -39,7 +39,13 @@
                     "varEffect": false
                 }
             ]
-        }
+        },
+        "enhancementSlots": 1,
+        "conceal": "G",
+        "rangedAttackSkill": "crossbow",
+        "attackOptions": [
+            "ranged"
+        ]
     },
     "effects": [],
     "flags": {},

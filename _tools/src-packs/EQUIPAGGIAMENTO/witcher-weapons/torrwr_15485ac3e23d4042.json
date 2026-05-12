@@ -42,7 +42,12 @@
         "rarity": "Rara",
         "damage": "6d6",
         "hands": 2,
-        "unmodifiedMax": {}
+        "unmodifiedMax": {},
+        "enhancementSlots": 2,
+        "meleeAttackSkill": "swordsmanship",
+        "attackOptions": [
+            "melee"
+        ]
     },
     "effects": [],
     "folder": null,

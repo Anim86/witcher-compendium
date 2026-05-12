@@ -4,9 +4,9 @@
     "type": "weapon",
     "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/spada_da_cavalleria_vrihedd.webp",
     "system": {
-        "description": "",
-        "weight": 1,
-        "cost": 100,
+        "description": "<p>Letali lame forgiate in acciaio bluastro, usate dai famigerati commando cavallereschi elfici della brigata Vrihedd.</p>",
+        "weight": 2.5,
+        "cost": 745,
         "sourcebook": "MB",
         "damage": "4d6+4",
         "accuracy": 3,
@@ -30,7 +30,12 @@
             "isMeteorite": false,
             "isNonLethal": false,
             "effects": []
-        }
+        },
+        "conceal": "G",
+        "meleeAttackSkill": "swordsmanship",
+        "attackOptions": [
+            "melee"
+        ]
     },
     "effects": [],
     "flags": {},

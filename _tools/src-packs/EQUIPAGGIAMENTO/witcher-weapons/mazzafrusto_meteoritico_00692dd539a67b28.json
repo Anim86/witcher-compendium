@@ -4,9 +4,9 @@
     "type": "weapon",
     "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/mazzafrusto_meteoritico.webp",
     "system": {
-        "description": "",
-        "weight": 1,
-        "cost": 100,
+        "description": "<p>Un'arma di gran classe per i nani: palla chiodata di acciaio meteoritico ancorata a una spessa catena.</p>",
+        "weight": 4,
+        "cost": 900,
         "sourcebook": "MB",
         "damage": "6d6",
         "accuracy": 2,
@@ -38,7 +38,12 @@
                     "varEffect": false
                 }
             ]
-        }
+        },
+        "enhancementSlots": 2,
+        "meleeAttackSkill": "melee",
+        "attackOptions": [
+            "melee"
+        ]
     },
     "effects": [],
     "flags": {},

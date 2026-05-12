@@ -1,12 +1,12 @@
-﻿{
+{
     "_id": "00ccb4382fba9b98",
     "name": "Spada d'Argento della Manticora",
     "type": "weapon",
     "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/spada_d_argento_della_manticora.webp",
     "system": {
-        "description": "",
-        "weight": 1,
-        "cost": 100,
+        "description": "<p>Leggera e rapida, forgiata per adattarsi all'uso dello scudo e agli elisir per i quali la Scuola della Manticora è famosa.</p>",
+        "weight": 1.5,
+        "cost": 0,
         "sourcebook": "MB",
         "damage": "2d6+2",
         "accuracy": 1,
@@ -14,7 +14,7 @@
             "value": 10,
             "max": 10
         },
-        "hands": "2",
+        "hands": "1",
         "type": {
             "text": "",
             "slashing": true,
@@ -40,7 +40,12 @@
                     "varEffect": false
                 }
             ]
-        }
+        },
+        "enhancementSlots": 2,
+        "meleeAttackSkill": "swordsmanship",
+        "attackOptions": [
+            "melee"
+        ]
     },
     "effects": [],
     "flags": {},

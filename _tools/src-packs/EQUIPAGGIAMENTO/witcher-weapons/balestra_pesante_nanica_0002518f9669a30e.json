@@ -4,9 +4,9 @@
     "type": "weapon",
     "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/balestra_pesante_nanica.webp",
     "system": {
-        "description": "",
-        "weight": 1,
-        "cost": 100,
+        "description": "<p>Pensata per la grande potenza muscolare nanica; viene venduta con una speciale leva a pié di capra per umani ed elfi.</p>",
+        "weight": 3.5,
+        "cost": 850,
         "sourcebook": "MB",
         "damage": "5d6",
         "accuracy": 3,
@@ -39,7 +39,12 @@
                     "varEffect": false
                 }
             ]
-        }
+        },
+        "enhancementSlots": 2,
+        "rangedAttackSkill": "crossbow",
+        "attackOptions": [
+            "ranged"
+        ]
     },
     "effects": [],
     "flags": {},

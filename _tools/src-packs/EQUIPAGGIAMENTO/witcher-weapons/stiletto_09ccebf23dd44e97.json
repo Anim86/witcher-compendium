@@ -42,7 +42,13 @@
         "damage": "1d6",
         "hands": 1,
         "accuracy": 2,
-        "unmodifiedMax": {}
+        "unmodifiedMax": {},
+        "enhancementSlots": 1,
+        "conceal": "M",
+        "meleeAttackSkill": "smallblades",
+        "attackOptions": [
+            "melee"
+        ]
     },
     "effects": [],
     "folder": null,

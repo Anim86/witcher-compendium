@@ -1,11 +1,58 @@
 {
     "_id": "b08cca06247d1f80",
     "name": "Balestra del Gatto",
-    "type": "valuable",
+    "type": "weapon",
     "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/balestra_del_gatto.webp",
     "system": {
-        "description": "<p>Balestra speciale progettato e utilizzato dai membri della Scuola del Gatto.</p>",
-        "sourcebook": "SW"
+        "description": "<p>Balestra in dotazione ai witcher assassini per gli attacchi a distanza con dardi letali.</p>",
+        "weight": 0.5,
+        "cost": 0,
+        "sourcebook": "MB",
+        "damage": "2d6+2",
+        "accuracy": 1,
+        "reliability": {
+            "value": 5,
+            "max": 5
+        },
+        "hands": "1",
+        "range": "50m",
+        "enhancementSlots": 1,
+        "conceal": "G",
+        "type": {
+            "text": "",
+            "slashing": false,
+            "piercing": true,
+            "bludgeoning": false,
+            "elemental": false
+        },
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "isMeteorite": false,
+            "isNonLethal": false,
+            "effects": [
+                {
+                    "varEffect": false,
+                    "percentage": 100,
+                    "name": "bilanciata",
+                    "id": "5c0dac4b0eda48fe",
+                    "statusEffect": null
+                },
+                {
+                    "varEffect": false,
+                    "percentage": 100,
+                    "name": "Ricarica Lenta",
+                    "id": "b2d1ee2d50274783",
+                    "statusEffect": null
+                }
+            ]
+        },
+        "rangedAttackSkill": "crossbow",
+        "attackOptions": [
+            "ranged"
+        ]
     },
     "effects": [],
     "flags": {},

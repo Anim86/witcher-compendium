@@ -34,7 +34,12 @@
         "rarity": "Comune",
         "damage": "5d6",
         "hands": 1,
-        "unmodifiedMax": {}
+        "unmodifiedMax": {},
+        "conceal": "G",
+        "meleeAttackSkill": "melee",
+        "attackOptions": [
+            "melee"
+        ]
     },
     "effects": [],
     "folder": null,

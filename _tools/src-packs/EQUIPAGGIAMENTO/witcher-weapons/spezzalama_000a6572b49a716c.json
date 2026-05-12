@@ -4,9 +4,9 @@
     "type": "weapon",
     "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/spezzalama.webp",
     "system": {
-        "description": "",
+        "description": "<p>Strumento insolito provvisto di pesanti denti incisi; si usa alla rovescia per disarmare una lama e imprigionarla prima di uccidere colpugnale.</p>",
         "weight": 1,
-        "cost": 100,
+        "cost": 500,
         "sourcebook": "MB",
         "damage": "2d6",
         "accuracy": 0,
@@ -38,7 +38,13 @@
                     "varEffect": false
                 }
             ]
-        }
+        },
+        "enhancementSlots": 1,
+        "conceal": "P",
+        "meleeAttackSkill": "melee",
+        "attackOptions": [
+            "melee"
+        ]
     },
     "effects": [],
     "flags": {},

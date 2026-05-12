@@ -4,9 +4,9 @@
     "type": "weapon",
     "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/ascia_nanica.webp",
     "system": {
-        "description": "",
-        "weight": 1,
-        "cost": 100,
+        "description": "<p>Un muro massiccio di metallo: le due teste da guerra la rendono l'arma simbolo dell'amore nanico per i danni devastanti.</p>",
+        "weight": 4,
+        "cost": 740,
         "sourcebook": "MB",
         "damage": "5d6+3",
         "accuracy": 3,
@@ -30,7 +30,13 @@
             "isMeteorite": false,
             "isNonLethal": false,
             "effects": []
-        }
+        },
+        "enhancementSlots": 1,
+        "conceal": "G",
+        "meleeAttackSkill": "melee",
+        "attackOptions": [
+            "melee"
+        ]
     },
     "effects": [],
     "flags": {},

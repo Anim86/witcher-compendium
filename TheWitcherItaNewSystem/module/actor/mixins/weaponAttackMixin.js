@@ -71,6 +71,49 @@ export let weaponAttackMixin = {
             data
         );
 
+        const result = await DialogV2.prompt({
+            window: {
+                title: `${game.i18n.localize('WITCHER.Dialog.attackWith')}: ${weapon.name}`,
+                contentClasses: ['scrollable']
+            },
+            position: { width: 550 },
+            content: dialogTemplate,
+            modal: true,
+            ok: {
+                label: game.i18n.localize('WITCHER.Button.Confirm'),
+                callback: (event, button, dialog) => {
+                    return {
+                        isExtraAttack: button.form.elements.isExtraAttack?.checked ?? false,
+                        location: button.form.elements.location?.value,
+                        ammunition: button.form.elements.ammunition?.value,
+
+                        targetOutsideLOS: button.form.elements.targetOutsideLOS?.checked ?? false,
+                        outsideLOS: button.form.elements.outsideLOS?.checked ?? false,
+                        isFastDraw: button.form.elements.isFastDraw?.checked ?? false,
+                        isProne: button.form.elements.isProne?.checked ?? false,
+                        isPinned: button.form.elements.isPinned?.checked ?? false,
+                        isActivelyDodging: button.form.elements.isActivelyDodging?.checked ?? false,
+                        isMoving: button.form.elements.isMoving?.checked ?? false,
+                        isAmbush: button.form.elements.isAmbush?.checked ?? false,
+                        isRicochet: button.form.elements.isRicochet?.checked ?? false,
+                        isBlinded: button.form.elements.isBlinded?.checked ?? false,
+                        isSilhouetted: button.form.elements.isSilhouetted?.checked ?? false,
+                        customAim: button.form.elements.customAim?.value || 0,
+
+                        range: weapon.system.range ? button.form.elements.range?.value : null,
+                        customAtt: button.form.elements.customAtt?.value || 0,
+                        strike: button.form.elements.strike?.value,
+                        damageType: button.form.elements.damageType?.value,
+                        customDmg: button.form.elements.customDmg?.value || "0",
+                        luckToSpend: Number(button.form.elements.luckToSpend?.value || 0)
+                    };
+                }
+            },
+            rejectClose: false
+        });
+
+        if (!result) return;
+
         let {
             isExtraAttack,
             location,
@@ -87,50 +130,13 @@ export let weaponAttackMixin = {
             isBlinded,
             isSilhouetted,
             customAim,
+            customAtt,
             range,
             strike,
             damageType,
             customDmg,
             luckToSpend
-        } = await DialogV2.prompt({
-            window: {
-                title: `${game.i18n.localize('WITCHER.Dialog.attackWith')}: ${weapon.name}`,
-                contentClasses: ['scrollable']
-            },
-            position: { width: 600 },
-            content: dialogTemplate,
-            modal: true,
-            ok: {
-                callback: (event, button, dialog) => {
-                    return {
-                        isExtraAttack: button.form.elements.isExtraAttack.checked,
-                        location: button.form.elements.location.value,
-                        ammunition: button.form.elements.ammunition?.value,
-
-                        targetOutsideLOS: button.form.elements.targetOutsideLOS.checked,
-                        outsideLOS: button.form.elements.outsideLOS.checked,
-                        isFastDraw: button.form.elements.isFastDraw.checked,
-                        isProne: button.form.elements.isProne.checked,
-                        isPinned: button.form.elements.isPinned.checked,
-                        isActivelyDodging: button.form.elements.isActivelyDodging.checked,
-                        isMoving: button.form.elements.isMoving.checked,
-                        isAmbush: button.form.elements.isAmbush.checked,
-                        isRicochet: button.form.elements.isRicochet.checked,
-                        isBlinded: button.form.elements.isBlinded.checked,
-                        isSilhouetted: button.form.elements.isSilhouetted.checked,
-                        customAim: button.form.elements.customAim.value,
-
-                        range: weapon.system.range ? button.form.elements.range.value : null,
-                        customAtt: button.form.elements.customAtt.value,
-                        strike: button.form.elements.strike.value,
-                        damageType: button.form.elements.damageType.value,
-                        customDmg: button.form.elements.customDmg.value,
-                        luckToSpend: Number(button.form.elements.luckToSpend?.value || 0)
-                    };
-                }
-            },
-            rejectClose: true
-        });
+        } = result;
 
         if (luckToSpend > 0) {
             await this.spendLuck(luckToSpend);

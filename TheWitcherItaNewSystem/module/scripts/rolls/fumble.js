@@ -5,9 +5,9 @@ import { getInteractActor } from '../helper.js';
 export function addFumbleContextOptions(html, options) {
     let isFumble = li => game.messages.get(li.dataset.messageId).rolls[0]?.options.fumble;
     options.push({
-        name: `${game.i18n.localize('WITCHER.Context.fumble')}`,
+        label: `${game.i18n.localize('WITCHER.Context.fumble')}`,
         icon: '<i class="fas fa-user-minus"></i>',
-        condition: isFumble,
+        visible: isFumble,
         callback: async li => {
             applyFumble(game.messages.get(li.dataset.messageId));
         }

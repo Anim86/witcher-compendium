@@ -4,9 +4,9 @@
     "type": "weapon",
     "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/spada_meteoritica.webp",
     "system": {
-        "description": "",
-        "weight": 1,
-        "cost": 100,
+        "description": "<p>Armi dal riflesso inconfondibile, forgiate con l'ausilio di rari metalli meteoritici: bilanciate, super robuste ma stranamente leggere.</p>",
+        "weight": 3,
+        "cost": 875,
         "sourcebook": "MB",
         "damage": "5d6",
         "accuracy": 1,
@@ -38,7 +38,12 @@
                     "varEffect": false
                 }
             ]
-        }
+        },
+        "enhancementSlots": 2,
+        "meleeAttackSkill": "swordsmanship",
+        "attackOptions": [
+            "melee"
+        ]
     },
     "effects": [],
     "flags": {},

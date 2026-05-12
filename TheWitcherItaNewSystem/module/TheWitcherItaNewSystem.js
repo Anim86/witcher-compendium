@@ -96,7 +96,7 @@ Hooks.on('renderActiveEffectConfig', async (activeEffectConfig, html, data) => {
 
 Hooks.once('ready', async function () {
     if (game.user.isGM && game.paused && game.settings.get('TheWitcherItaNewSystem', 'disableAutoPause')) {
-        game.togglePause(false, true);
+        game.togglePause(false, { broadcast: true });
     }
 
     // Wait to register hotbar drop hook on ready so that modules could register earlier if they want to

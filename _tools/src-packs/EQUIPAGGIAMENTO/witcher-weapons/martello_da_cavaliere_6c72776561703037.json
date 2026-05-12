@@ -14,7 +14,11 @@
         "damage": "2d6",
         "hands": 1,
         "effects": "Carica",
-        "category": "Bludgeons"
+        "category": "Bludgeons",
+        "meleeAttackSkill": "melee",
+        "attackOptions": [
+            "melee"
+        ]
     },
     "effects": [],
     "flags": {},

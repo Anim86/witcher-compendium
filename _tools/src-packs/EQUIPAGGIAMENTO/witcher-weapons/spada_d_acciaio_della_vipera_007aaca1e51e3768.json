@@ -1,12 +1,12 @@
-﻿{
+{
     "_id": "007aaca1e51e3768",
     "name": "Spada d'Acciaio della Vipera",
     "type": "weapon",
     "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/spada_d_acciaio_della_vipera.webp",
     "system": {
-        "description": "",
-        "weight": 1,
-        "cost": 100,
+        "description": "<p>La letale e infida spada dei witcher delle Vipere del sud, bagnata da venefiche soluzioni mortali fin dal concepimento.</p>",
+        "weight": 2.5,
+        "cost": 0,
         "sourcebook": "MB",
         "damage": "4d6+2",
         "accuracy": 2,
@@ -14,7 +14,7 @@
             "value": 15,
             "max": 15
         },
-        "hands": "2",
+        "hands": "1",
         "type": {
             "text": "",
             "slashing": true,
@@ -38,7 +38,12 @@
                     "varEffect": false
                 }
             ]
-        }
+        },
+        "enhancementSlots": 2,
+        "meleeAttackSkill": "swordsmanship",
+        "attackOptions": [
+            "melee"
+        ]
     },
     "effects": [],
     "flags": {},

@@ -35,7 +35,12 @@
         "rarity": "Diffusa",
         "damage": "3d6+3",
         "hands": 2,
-        "unmodifiedMax": {}
+        "unmodifiedMax": {},
+        "conceal": "G",
+        "rangedAttackSkill": "archery",
+        "attackOptions": [
+            "ranged"
+        ]
     },
     "effects": [],
     "folder": null,

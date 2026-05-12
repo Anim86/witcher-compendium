@@ -1,20 +1,20 @@
-﻿{
+{
     "_id": "a76cd51e95ac556f",
     "name": "Spada d'Argento del Grifone",
     "type": "weapon",
     "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/spada_d_argento_del_grifone.webp",
     "system": {
         "description": "<p>Spada d'argento della Scuola del Grifone, rinforzata con rune, ideale per creature sensibili all'argento.</p>",
-        "weight": 1,
-        "cost": 100,
+        "weight": 1.5,
+        "cost": 0,
         "sourcebook": "SW",
-        "damage": "5d6",
-        "accuracy": 0,
+        "damage": "2d6+2",
+        "accuracy": 1,
         "reliability": {
-            "value": 15,
-            "max": 15
+            "value": 10,
+            "max": 10
         },
-        "hands": "2",
+        "hands": "1",
         "type": {
             "text": "",
             "slashing": true,
@@ -38,7 +38,12 @@
                     "varEffect": false
                 }
             ]
-        }
+        },
+        "enhancementSlots": 2,
+        "meleeAttackSkill": "swordsmanship",
+        "attackOptions": [
+            "melee"
+        ]
     },
     "effects": [],
     "flags": {},

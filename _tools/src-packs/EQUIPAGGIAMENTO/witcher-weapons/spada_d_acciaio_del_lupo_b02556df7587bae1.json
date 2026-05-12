@@ -1,12 +1,12 @@
-﻿{
+{
     "_id": "b02556df7587bae1",
     "name": "Spada d'Acciaio del Lupo",
     "type": "weapon",
     "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/spada_d_acciaio_del_lupo.webp",
     "system": {
         "description": "<p>Spada d'acciaio della Scuola del Lupo, versatile e letale, lo standard dei cacciatori di mostri.</p>",
-        "weight": 1,
-        "cost": 100,
+        "weight": 2.5,
+        "cost": 0,
         "sourcebook": "SW",
         "damage": "5d6+2",
         "accuracy": 1,
@@ -14,7 +14,7 @@
             "value": 15,
             "max": 15
         },
-        "hands": "2",
+        "hands": "1",
         "type": {
             "text": "",
             "slashing": true,
@@ -38,7 +38,12 @@
                     "varEffect": false
                 }
             ]
-        }
+        },
+        "enhancementSlots": 3,
+        "meleeAttackSkill": "swordsmanship",
+        "attackOptions": [
+            "melee"
+        ]
     },
     "effects": [],
     "flags": {},

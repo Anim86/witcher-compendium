@@ -1,15 +1,15 @@
-﻿{
+{
     "_id": "4224936e2338517b",
     "name": "Spada d'Acciaio del Gatto",
     "type": "weapon",
     "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/spada_d_acciaio_del_gatto.webp",
     "system": {
         "description": "<p>Spada d'acciaio della Scuola del Gatto, leggera e agile, progettata per colpi rapidi e precisi.</p>",
-        "weight": 1,
-        "cost": 100,
+        "weight": 2.5,
+        "cost": 0,
         "sourcebook": "SW",
         "damage": "4d6+2",
-        "accuracy": 1,
+        "accuracy": 2,
         "reliability": {
             "value": 15,
             "max": 15
@@ -38,7 +38,12 @@
                     "varEffect": false
                 }
             ]
-        }
+        },
+        "enhancementSlots": 2,
+        "meleeAttackSkill": "swordsmanship",
+        "attackOptions": [
+            "melee"
+        ]
     },
     "effects": [],
     "flags": {},

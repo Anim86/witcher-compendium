@@ -4,9 +4,9 @@
     "type": "weapon",
     "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/arco_da_viaggio_elfico.webp",
     "system": {
-        "description": "",
+        "description": "<p>Pratica versione in miniatura dello zefhar; si ripiega smontando la corda in modo da poter essere portato in una sacca.</p>",
         "weight": 1,
-        "cost": 100,
+        "cost": 575,
         "sourcebook": "MB",
         "damage": "4d6",
         "accuracy": 1,
@@ -31,7 +31,13 @@
             "isMeteorite": false,
             "isNonLethal": false,
             "effects": []
-        }
+        },
+        "enhancementSlots": 1,
+        "conceal": "G",
+        "rangedAttackSkill": "archery",
+        "attackOptions": [
+            "ranged"
+        ]
     },
     "effects": [],
     "flags": {},

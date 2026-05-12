@@ -59,7 +59,11 @@
             "piercing": true,
             "bludgeoning": false,
             "elemental": false
-        }
+        },
+        "rangedAttackSkill": "archery",
+        "attackOptions": [
+            "ranged"
+        ]
     },
     "effects": [],
     "flags": {},

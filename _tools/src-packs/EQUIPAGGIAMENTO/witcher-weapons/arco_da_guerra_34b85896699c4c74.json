@@ -35,7 +35,12 @@
         "rarity": "Comune",
         "damage": "6d6",
         "hands": 2,
-        "unmodifiedMax": {}
+        "unmodifiedMax": {},
+        "enhancementSlots": 1,
+        "rangedAttackSkill": "archery",
+        "attackOptions": [
+            "ranged"
+        ]
     },
     "effects": [],
     "folder": null,

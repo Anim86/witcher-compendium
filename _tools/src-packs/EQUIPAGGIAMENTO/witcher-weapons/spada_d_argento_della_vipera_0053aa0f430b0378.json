@@ -1,12 +1,12 @@
-﻿{
+{
     "_id": "0053aa0f430b0378",
     "name": "Spada d'Argento della Vipera",
     "type": "weapon",
     "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/spada_d_argento_della_vipera.webp",
     "system": {
-        "description": "",
-        "weight": 1,
-        "cost": 100,
+        "description": "<p>Forgiata per braccare demoni o creature mostruose con la stessa metodologia da assassino e avvelenatore per cui la scuola è tristemente conosciuta.</p>",
+        "weight": 1.5,
+        "cost": 0,
         "sourcebook": "MB",
         "damage": "1d6+2",
         "accuracy": 2,
@@ -14,7 +14,7 @@
             "value": 10,
             "max": 10
         },
-        "hands": "2",
+        "hands": "1",
         "type": {
             "text": "",
             "slashing": true,
@@ -40,7 +40,12 @@
                     "varEffect": false
                 }
             ]
-        }
+        },
+        "enhancementSlots": 2,
+        "meleeAttackSkill": "swordsmanship",
+        "attackOptions": [
+            "melee"
+        ]
     },
     "effects": [],
     "flags": {},
