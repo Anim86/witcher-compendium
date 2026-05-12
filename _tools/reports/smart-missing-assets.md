@@ -1,11 +1,11 @@
 # 🛡️ Smart Asset Guard - Report Iconografia
-Data Scansione: 12/05/2026, 00:09:36
+Data Scansione: 12/05/2026, 06:30:28
 
 ## 📊 Riepilogo
-- **Totale Voci Analizzate**: 1518
-- **Asset Corretti**: 1425
+- **Totale Voci Analizzate**: 1486
+- **Asset Corretti**: 1410
 - **Asset con Mismatch (Legacy/Path)**: 0
-- **Asset Mancanti**: 93
+- **Asset Mancanti**: 76
 
 > [!IMPORTANT]
 > Lo standard per i caratteri speciali (apostrofi, parentesi, due punti) è la sostituzione con l'underscore: `Spada d'Argento` -> `spada_d_argento.webp`.
@@ -13,23 +13,6 @@ Data Scansione: 12/05/2026, 00:09:36
 ## ❌ Asset Totalmente Mancanti
 | Nome | File JSON | Percorso Atteso |
 |---|---|---|
-| Veleno Nero | _tools\src-packs\ALCHIMIA_E_ARTIGIANATO\Formule_e_Ricette\witcher-alchemy\veleno_nero_b2c17a34289de8e2.json | `ALCHIMIA_E_ARTIGIANATO/Formule_e_Ricette/witcher-alchemy/veleno_nero.webp` |
-| Schema: Schema Armatura della Lumaca | _tools\src-packs\ALCHIMIA_E_ARTIGIANATO\Schemi_di_Fabbricazione\witcher-dlc-sl-schematics\schema_schema_armatura_della_lumaca_c5b2337b0e663674.json | `ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-dlc-sl-schematics/schema_schema_armatura_della_lumaca.webp` |
-| Schema: Schema Spada d'Acciaio della Lumaca | _tools\src-packs\ALCHIMIA_E_ARTIGIANATO\Schemi_di_Fabbricazione\witcher-dlc-sl-schematics\schema_schema_spada_d_acciaio_della_lumaca_8740d6ca0ec69f89.json | `ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-dlc-sl-schematics/schema_schema_spada_d_acciaio_della_lumaca.webp` |
-| Schema: Schema Spada d'Argento della Lumaca | _tools\src-packs\ALCHIMIA_E_ARTIGIANATO\Schemi_di_Fabbricazione\witcher-dlc-sl-schematics\schema_schema_spada_d_argento_della_lumaca_542bee0e7a3953eb.json | `ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-dlc-sl-schematics/schema_schema_spada_d_argento_della_lumaca.webp` |
-| Schema: Schema Armatura del Gatto | _tools\src-packs\ALCHIMIA_E_ARTIGIANATO\Schemi_di_Fabbricazione\witcher-dlc-sw-schematics\schema_schema_armatura_del_gatto_e856cd522c2b65c9.json | `ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-dlc-sw-schematics/schema_schema_armatura_del_gatto.webp` |
-| Schema: Schema Armatura del Grifone | _tools\src-packs\ALCHIMIA_E_ARTIGIANATO\Schemi_di_Fabbricazione\witcher-dlc-sw-schematics\schema_schema_armatura_del_grifone_417dfb3b4fcdda5f.json | `ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-dlc-sw-schematics/schema_schema_armatura_del_grifone.webp` |
-| Schema: Schema Armatura del Lupo | _tools\src-packs\ALCHIMIA_E_ARTIGIANATO\Schemi_di_Fabbricazione\witcher-dlc-sw-schematics\schema_schema_armatura_del_lupo_caf7c265416b63c7.json | `ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-dlc-sw-schematics/schema_schema_armatura_del_lupo.webp` |
-| Schema: Schema Armatura del Manticora | _tools\src-packs\ALCHIMIA_E_ARTIGIANATO\Schemi_di_Fabbricazione\witcher-dlc-sw-schematics\schema_schema_armatura_del_manticora_aedd6699267138f5.json | `ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-dlc-sw-schematics/schema_schema_armatura_del_manticora.webp` |
-| Schema: Schema Armatura del Orso | _tools\src-packs\ALCHIMIA_E_ARTIGIANATO\Schemi_di_Fabbricazione\witcher-dlc-sw-schematics\schema_schema_armatura_del_orso_4faf34eb649331cd.json | `ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-dlc-sw-schematics/schema_schema_armatura_del_orso.webp` |
-| Schema: Schema Armatura del Vipera | _tools\src-packs\ALCHIMIA_E_ARTIGIANATO\Schemi_di_Fabbricazione\witcher-dlc-sw-schematics\schema_schema_armatura_del_vipera_7820eaeccdca5b0d.json | `ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-dlc-sw-schematics/schema_schema_armatura_del_vipera.webp` |
-| Schema: Schema Balestra del Gatto | _tools\src-packs\ALCHIMIA_E_ARTIGIANATO\Schemi_di_Fabbricazione\witcher-dlc-sw-schematics\schema_schema_balestra_del_gatto_7caa5c5f6eb87dc9.json | `ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-dlc-sw-schematics/schema_schema_balestra_del_gatto.webp` |
-| Schema: Schema Balestra del Grifone | _tools\src-packs\ALCHIMIA_E_ARTIGIANATO\Schemi_di_Fabbricazione\witcher-dlc-sw-schematics\schema_schema_balestra_del_grifone_a2b15b1251f52e72.json | `ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-dlc-sw-schematics/schema_schema_balestra_del_grifone.webp` |
-| Schema: Schema Balestra del Orso | _tools\src-packs\ALCHIMIA_E_ARTIGIANATO\Schemi_di_Fabbricazione\witcher-dlc-sw-schematics\schema_schema_balestra_del_orso_9407a5179b6438cb.json | `ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-dlc-sw-schematics/schema_schema_balestra_del_orso.webp` |
-| Schema: Schema Scudo del Manticora | _tools\src-packs\ALCHIMIA_E_ARTIGIANATO\Schemi_di_Fabbricazione\witcher-dlc-sw-schematics\schema_schema_scudo_del_manticora_409dc7f8f730ae6e.json | `ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-dlc-sw-schematics/schema_schema_scudo_del_manticora.webp` |
-| Schema: Schema Spada d'Acciaio del Gatto | _tools\src-packs\ALCHIMIA_E_ARTIGIANATO\Schemi_di_Fabbricazione\witcher-dlc-sw-schematics\schema_schema_spada_d_acciaio_del_gatto_46cfed86ca7d9b3a.json | `ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-dlc-sw-schematics/schema_schema_spada_d_acciaio_del_gatto.webp` |
-| Schema: Schema Spada d'Acciaio del Grifone | _tools\src-packs\ALCHIMIA_E_ARTIGIANATO\Schemi_di_Fabbricazione\witcher-dlc-sw-schematics\schema_schema_spada_d_acciaio_del_grifone_a44bb4f798676e69.json | `ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-dlc-sw-schematics/schema_schema_spada_d_acciaio_del_grifone.webp` |
-| Schema: Schema Spada d'Acciaio del Lupo | _tools\src-packs\ALCHIMIA_E_ARTIGIANATO\Schemi_di_Fabbricazione\witcher-dlc-sw-schematics\schema_schema_spada_d_acciaio_del_lupo_7e212d7c7abb7550.json | `ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-dlc-sw-schematics/schema_schema_spada_d_acciaio_del_lupo.webp` |
 | Schema: Schema Spada d'Acciaio del Manticora | _tools\src-packs\ALCHIMIA_E_ARTIGIANATO\Schemi_di_Fabbricazione\witcher-dlc-sw-schematics\schema_schema_spada_d_acciaio_del_manticora_c96248758b2c1bce.json | `ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-dlc-sw-schematics/schema_schema_spada_d_acciaio_del_manticora.webp` |
 | Schema: Schema Spada d'Acciaio del Orso | _tools\src-packs\ALCHIMIA_E_ARTIGIANATO\Schemi_di_Fabbricazione\witcher-dlc-sw-schematics\schema_schema_spada_d_acciaio_del_orso_09658d766401261d.json | `ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-dlc-sw-schematics/schema_schema_spada_d_acciaio_del_orso.webp` |
 | Schema: Schema Spada d'Acciaio del Vipera | _tools\src-packs\ALCHIMIA_E_ARTIGIANATO\Schemi_di_Fabbricazione\witcher-dlc-sw-schematics\schema_schema_spada_d_acciaio_del_vipera_2b285bd6d0b28320.json | `ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-dlc-sw-schematics/schema_schema_spada_d_acciaio_del_vipera.webp` |
@@ -53,7 +36,7 @@ Data Scansione: 12/05/2026, 00:09:36
 | La Strega di Rupe della Lince | _tools\src-packs\BESTIARIO\witcher-characters\la_strega_di_rupe_della_lince_34253226f5c82904.json | `BESTIARIO/witcher-characters/la_strega_di_rupe_della_lince.webp` |
 | Leblanc de Surmann | _tools\src-packs\BESTIARIO\witcher-characters\leblanc_de_surmann_cb55120cd991d83e.json | `BESTIARIO/witcher-characters/leblanc_de_surmann.webp` |
 | Louise van Adelaide | _tools\src-packs\BESTIARIO\witcher-characters\louise_van_adelaide_6e9d37fba6b67130.json | `BESTIARIO/witcher-characters/louise_van_adelaide.webp` |
-| Pardus di Korath | _tools\src-packs\BESTIARIO\witcher-characters\pardus_di_korath_7061726475736b6f.json | `BESTIARIO/witcher-characters/pardus_di_korath.webp` |
+| Pardus di Korath | _tools\src-packs\BESTIARIO\witcher-characters\Pardus_di_Korath_7061726475736b6f.json | `BESTIARIO/witcher-characters/pardus_di_korath.webp` |
 | Rodolf Kazmer | _tools\src-packs\BESTIARIO\witcher-characters\rodolf_kazmer_288ee308a5318712.json | `BESTIARIO/witcher-characters/rodolf_kazmer.webp` |
 | Elias von Drexel | _tools\src-packs\EQUIPAGGIAMENTO_E_TRASPORTI\Armi_e_Armature\witcher-dlc-sl-equipment\elias_von_drexel_bfc34788c345a119.json | `EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-dlc-sl-equipment/elias_von_drexel.webp` |
 | Balestra dell'Orso | _tools\src-packs\EQUIPAGGIAMENTO_E_TRASPORTI\Armi_e_Armature\witcher-weapons\balestra_dell_orso_006d87c91fc31f98.json | `EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/balestra_dell_orso.webp` |
