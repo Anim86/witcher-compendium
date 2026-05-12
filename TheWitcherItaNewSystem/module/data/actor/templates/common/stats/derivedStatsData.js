@@ -23,23 +23,13 @@ export default class DerivedStats extends foundry.abstract.DataModel {
 
     /** @inheritdoc */
     static migrateData(source) {
-        if (source.stun?.unmodifiedMax == 0) {
-            source.stun.unmodifiedMax = source.stun.max;
-        }
-        if (source.run?.unmodifiedMax == 0) {
-            source.run.unmodifiedMax = source.run.max;
-        }
-        if (source.leap?.unmodifiedMax == 0) {
-            source.leap.unmodifiedMax = source.leap.max;
-        }
-        if (source.enc?.unmodifiedMax == 0) {
-            source.enc.unmodifiedMax = source.enc.max;
-        }
-        if (source.woundTreshold?.unmodifiedMax == 0) {
-            source.woundTreshold.unmodifiedMax = source.woundTreshold.max;
-        }
-        if (source.vigor?.unmodifiedMax == 0) {
-            source.vigor.unmodifiedMax = source.vigor.max;
+        const stats = ["stun", "run", "leap", "enc", "woundTreshold", "vigor"];
+        for (const s of stats) {
+            if (source[s] && (source[s].unmodifiedMax === undefined || source[s].unmodifiedMax === null || source[s].unmodifiedMax === 0)) {
+                if (source[s].max > 0) {
+                    source[s].unmodifiedMax = source[s].max;
+                }
+            }
         }
 
         return super.migrateData(source);

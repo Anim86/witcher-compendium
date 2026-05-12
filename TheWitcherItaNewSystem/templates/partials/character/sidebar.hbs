@@ -22,7 +22,7 @@
         {{!-- HP --}}
         <div class='resource-bar-container hp'>
             <div class="bar-label-row">
-                <span class="bar-label"><i class="fas fa-heart"></i> {{localize 'WITCHER.Actor.Hp'}}</span>
+                <span class="bar-label"><i class="fas fa-heart"></i> {{localize 'WITCHER.Actor.DerStat.HP'}}</span>
                 <span class="bar-value">{{system.derivedStats.hp.value}} <small>/</small> {{system.derivedStats.hp.max}}</span>
             </div>
             <div class="bar-wrapper">
@@ -34,7 +34,7 @@
         {{!-- Stamina --}}
         <div class='resource-bar-container stamina'>
             <div class="bar-label-row">
-                <span class="bar-label"><i class="fas fa-bolt"></i> {{localize 'WITCHER.Actor.Stamina'}}</span>
+                <span class="bar-label"><i class="fas fa-bolt"></i> {{localize 'WITCHER.Actor.DerStat.Sta'}}</span>
                 <span class="bar-value">{{system.derivedStats.sta.value}} <small>/</small> {{system.derivedStats.sta.max}}</span>
             </div>
             <div class="bar-wrapper">
@@ -77,7 +77,7 @@
             <span class="value">{{system.derivedStats.vigor.max}}</span>
         </div>
 
-        <div class='mini-stat-box shield {{#if (lte system.derivedStats.shield.value 0)}}broken{{/if}}' data-tooltip="{{localize 'WITCHER.Actor.Shield'}}">
+        <div class='mini-stat-box shield {{#if (lte system.derivedStats.shield.value 0)}}broken{{/if}}' data-tooltip="{{localize 'WITCHER.Actor.DerStat.Shield'}}">
             <span class="label"><i class='fa-solid fa-shield-halved'></i> SCD</span>
             <div class="shield-values">
                 <input type='number' name='system.derivedStats.shield.value' value='{{system.derivedStats.shield.value}}' data-dtype='Number' />
@@ -86,7 +86,7 @@
         </div>
 
         <div class='mini-stat-box luck' data-tooltip="{{localize 'WITCHER.StLuck'}}">
-            <span class="label"><i class='fa-solid fa-clover'></i> LUK</span>
+            <span class="label"><i class='fa-solid fa-clover'></i> FOR</span>
             <div class="luck-controls">
                 <a class="luck-minus"><i class="fas fa-minus"></i></a>
                 <div class="luck-values">
@@ -107,20 +107,20 @@
                     <div class="loc-icon">
                         {{#if (eq loc 'head')}}<i class="fa-solid fa-helmet-safety"></i>{{/if}}
                         {{#if (eq loc 'torso')}}<i class="fa-solid fa-shirt"></i>{{/if}}
-                        {{#if (eq loc 'rightArm')}}<i class="fa-solid fa-hand-back-fist"></i>{{/if}}
-                        {{#if (eq loc 'leftArm')}}<i class="fa-solid fa-hand-back-fist fa-flip-horizontal"></i>{{/if}}
-                        {{#if (eq loc 'rightLeg')}}<i class="fa-solid fa-boot"></i>{{/if}}
-                        {{#if (eq loc 'leftLeg')}}<i class="fa-solid fa-boot fa-flip-horizontal"></i>{{/if}}
+                        {{#if (eq loc 'leftArm')}}<i class="fa-solid fa-hand-back-fist"></i>{{/if}}
+                        {{#if (eq loc 'rightArm')}}<i class="fa-solid fa-hand-back-fist fa-flip-horizontal"></i>{{/if}}
+                        {{#if (eq loc 'leftLeg')}}<i class="fa-solid fa-boot"></i>{{/if}}
+                        {{#if (eq loc 'rightLeg')}}<i class="fa-solid fa-boot fa-flip-horizontal"></i>{{/if}}
                     </div>
                     <div class="loc-sp">
                         <span class="current-sp">{{protection.totalSP}}</span>
                         <span class="loc-label">
-                            {{#if (eq loc 'head')}}TES{{/if}}
-                            {{#if (eq loc 'torso')}}BUS{{/if}}
-                            {{#if (eq loc 'leftArm')}}B.S.{{/if}}
-                            {{#if (eq loc 'rightArm')}}B.D.{{/if}}
-                            {{#if (eq loc 'leftLeg')}}G.S.{{/if}}
-                            {{#if (eq loc 'rightLeg')}}G.D.{{/if}}
+                            {{#if (eq loc 'head')}}TESTA{{/if}}
+                            {{#if (eq loc 'torso')}}BUSTO{{/if}}
+                            {{#if (eq loc 'leftArm')}}BRACCIO SIN.{{/if}}
+                            {{#if (eq loc 'rightArm')}}BRACCIO DES.{{/if}}
+                            {{#if (eq loc 'leftLeg')}}GAMBA SIN.{{/if}}
+                            {{#if (eq loc 'rightLeg')}}GAMBA DES.{{/if}}
                         </span>
                     </div>
                 </div>

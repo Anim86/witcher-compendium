@@ -224,7 +224,7 @@ export let armorMixin = {
     },
 
     calculateArmorSP() {
-        const locations = ['head', 'torso', 'rightArm', 'leftArm', 'rightLeg', 'leftLeg'];
+        const locations = ['head', 'torso', 'leftArm', 'rightArm', 'leftLeg', 'rightLeg'];
         this.system.armorSP = {};
         for (let loc of locations) {
             this.system.armorSP[loc] = this.getLocationArmor({ name: loc }, {});

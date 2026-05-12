@@ -169,7 +169,9 @@ export default class WitcherActor extends Actor {
         this.system.derivedStats.enc.value = Math.floor(
             ((this.system.stats.body.value || 0) * 10 + encTotalModifiers) / encDivider
         );
-        this.system.derivedStats.enc.max = (this.system.stats.body.unmodifiedMax || this.system.stats.body.max || 0) * 10;
+        const encLimit = (this.system.stats.body.unmodifiedMax || this.system.stats.body.max || 0) * 10;
+        this.system.derivedStats.enc.max = encLimit;
+        this.system.derivedStats.enc.value = encLimit;
         this.system.derivedStats.enc.totalModifiers = encTotalModifiers;
 
         let recTotalModifiers =
@@ -198,17 +200,27 @@ export default class WitcherActor extends Actor {
     }
 
     calculateShield() {
+        // Initialize with default values
+        this.system.derivedStats.shield.value = 0;
+        this.system.derivedStats.shield.max = 0;
+
         let shields = this.items.filter(i => {
             if (i.type !== 'armor' || !i.system.equipped) return false;
             const loc = i.system.location;
             if (!loc) return false;
-            return (Array.isArray(loc) && loc.includes('Shield')) || (typeof loc === 'string' && loc.includes('Shield'));
+            
+            // Handle both string and array for location (though schema says string)
+            const locations = Array.isArray(loc) ? loc : [loc];
+            return locations.some(l => l === 'Shield' || l.includes('Shield'));
         });
+
         if (shields.length > 0) {
             // Take the one with highest current reliability as the active shield
-            let bestShield = shields.reduce((prev, current) => (prev.system.reliability > current.system.reliability) ? prev : current);
-            this.system.derivedStats.shield.value = bestShield.system.reliability;
-            this.system.derivedStats.shield.max = bestShield.system.reliabilityMax;
+            let bestShield = shields.reduce((prev, current) => 
+                ((current.system.reliability || 0) > (prev.system.reliability || 0)) ? current : prev
+            );
+            this.system.derivedStats.shield.value = bestShield.system.reliability || 0;
+            this.system.derivedStats.shield.max = bestShield.system.reliabilityMax || 0;
         }
     }
 
@@ -247,6 +259,7 @@ export default class WitcherActor extends Actor {
         }
 
         this.system.derivedStats[stat].max = modifiedMax;
+        this.system.derivedStats[stat].value = Math.min(this.system.derivedStats[stat].value, modifiedMax);
         this.system.derivedStats[stat].totalModifiers = totalModifiers;
     }
 

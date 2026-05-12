@@ -4,22 +4,19 @@
     "type": "armor",
     "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-armor/palvese.webp",
     "system": {
-        "description": "<p>Quando vuoi proteggerti tutto il corpo, ma proprio mettere uno stramaledetto muro tra te e il nemico, piglia un palve- se. Questi mostri sono così grossi, alti fino alle spalle di un umano e larghi quanto un nano, che ti ci puoi inginocchia- re dietro e aspettare che finisca di piovere frecce. ARMATURE PER LE GAMBE</p>",
+        "description": "<p>Un mostro di scudo, largo quanto un nano e alto fino alle spalle di un umano, dietro a cui ci si può inginocchiare e aspettare al sicuro che finisca di piovere frecce.</p>",
+        "notes": "Riparo Completo: fornisce copertura totale se ci si accovaccia dietro.",
         "weight": 4,
         "cost": 500,
-        "stoppingPower": 0,
-        "reliability": {
-            "value": 20,
-            "max": 20
-        },
-        "sourcebook": "MB 82"
+        "reliability": 20,
+        "reliabilityMax": 20,
+        "sourcebook": "MB 82",
+        "type": "Heavy",
+        "encumb": 1,
+        "avail": "S",
+        "location": "Shield"
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",

@@ -8,6 +8,15 @@
         {{editor item.system.description target="system.description" button=true owner=owner editable=editable engine="prosemirror"}}
     </div>
 
+    {{#if (or item.system.notes editable)}}
+    <div class="item-notes-container">
+        <div class="section-title">
+            <i class="fas fa-sticky-note"></i> {{localize "WITCHER.Notes"}}
+        </div>
+        {{editor item.system.notes target="system.notes" button=true owner=owner editable=editable engine="prosemirror"}}
+    </div>
+    {{/if}}
+
     {{#unless item.system.isAmmo}}
     <div class="properties-grid main-stats">
         <div class="property-card highlight">

@@ -4,24 +4,19 @@
     "type": "armor",
     "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-armor/brocchiero_d_acciaio.webp",
     "system": {
-        "description": "<p>Il brocchiero è come uno scudo per bimbi. Largo appena un piede o poco più, ma funziona benone per parare lame e altro.</p>",
+        "description": "<p>Un piccolo scudo di metallo agganciato al braccio o tenuto in mano, ideale per deviare i colpi e contrattaccare rapidamente.</p>",
+        "notes": "",
+        "weight": 1.5,
         "cost": 150,
-        "stoppingPower": 0,
-        "reliability": {
-            "max": 6,
-            "value": 6
-        },
-        "sourcebook": "MB 40",
-        "weight": 1,
-        "rarity": "Comune",
-        "unmodifiedMax": {}
+        "reliability": 10,
+        "reliabilityMax": 10,
+        "sourcebook": "MB 72",
+        "type": "Light",
+        "encumb": 0,
+        "avail": "C",
+        "location": "Shield"
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",

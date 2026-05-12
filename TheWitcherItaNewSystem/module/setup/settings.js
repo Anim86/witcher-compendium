@@ -84,4 +84,13 @@ export const registerSettings = function () {
         type: Boolean,
         default: true
     });
+
+    game.settings.register('TheWitcherItaNewSystem', 'disableAutoPause', {
+        name: 'WITCHER.Settings.disableAutoPause',
+        hint: 'WITCHER.Settings.disableAutoPauseHint',
+        scope: 'world',
+        config: true,
+        type: Boolean,
+        default: true
+    });
 };

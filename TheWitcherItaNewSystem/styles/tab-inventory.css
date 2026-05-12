@@ -251,17 +251,17 @@ progress.carry-bar.overweight::-moz-progress-bar {
 .item-img-wrapper .item-show:hover .fa { display: inline-block; }
 
 /* ── Grid column defs ── */
-.weapon-header  { grid-template-columns: 33px 1fr auto; }
+.weapon-header  { grid-template-columns: 40px 1fr auto; }
 .weapon-details { grid-template-columns: 40px 1fr auto; }
 .weapon-enhancement, .container-stored-item {
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
-.armor-header   { grid-template-columns: 33px 1fr auto; }
+.armor-header   { grid-template-columns: 40px 1fr auto; }
 .armor-details  { grid-template-columns: 40px 1fr auto; }
-.valuable-header, .spell-header         { grid-template-columns: 33px 1fr auto; }
-.valuables-list-header, .spell-list-header { grid-template-columns: 33px 1fr auto; }
+.valuable-header, .spell-header         { grid-template-columns: 40px 1fr auto; }
+.valuables-list-header, .spell-list-header { grid-template-columns: 40px 1fr auto; }
 .valuable-details, .spell-details       { grid-template-columns: 40px 1fr auto; }
 
 /* ── Stored weight progress bar ── */

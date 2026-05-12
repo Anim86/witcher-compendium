@@ -50,6 +50,12 @@ Hooks.once('init', function () {
     registerQueries();
 });
 
+Hooks.on('preCreateActor', (actor, data, options, userId) => {
+    if (data.type === 'character') {
+        actor.updateSource({ 'prototypeToken.actorLink': true });
+    }
+});
+
 Hooks.on('renderChatMessageHTML', (message, html, context) => {
     Combat.attackChatMessageListeners(message, html);
     Combat.defenseChatMessageListeners(message, html);
@@ -89,6 +95,10 @@ Hooks.on('renderActiveEffectConfig', async (activeEffectConfig, html, data) => {
 });
 
 Hooks.once('ready', async function () {
+    if (game.user.isGM && game.paused && game.settings.get('TheWitcherItaNewSystem', 'disableAutoPause')) {
+        game.togglePause(false, true);
+    }
+
     // Wait to register hotbar drop hook on ready so that modules could register earlier if they want to
     Hooks.on('hotbarDrop', (bar, data, slot) => {
         if (data.type === 'Item') {

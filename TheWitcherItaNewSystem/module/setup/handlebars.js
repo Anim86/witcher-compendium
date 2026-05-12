@@ -207,17 +207,17 @@ export async function registerHandelbarHelpers() {
             },
             {
                 key: 'leftLeg',
-                name: game.i18n.localize('WITCHER.Location.rightLeg'),
+                name: game.i18n.localize('WITCHER.Location.leftLeg'),
                 stopping: 'leftLegStopping',
                 max: 'leftLegMaxStopping',
-                icon: 'fa-shoe-prints'
+                icon: 'fa-boot fa-flip-horizontal'
             },
             {
                 key: 'rightLeg',
-                name: game.i18n.localize('WITCHER.Location.leftLeg'),
+                name: game.i18n.localize('WITCHER.Location.rightLeg'),
                 stopping: 'rightLegStopping',
                 max: 'rightLegMaxStopping',
-                icon: 'fa-shoe-prints'
+                icon: 'fa-boot'
             },
             {
                 key: 'shield',

@@ -1206,7 +1206,9 @@
             "clickableImageItemTypes": "Show 'Zoomable' checkbox on item sheet",
             "clickableImageItemTypesHint": "A comma-separated list of item types, where a checkbox can be set. If it is checked, the players can click on the item image from their inventory to see a larger version of it. Possible types are 'valuable', 'weapon', 'armor', 'alchemical', 'diagrams', 'component'.",
             "clickableImageCheckboxForGMOnly": "Show 'Zoomable' checkbox to GM only",
-            "specialFont": "Usa il font speciale witcher"
+            "specialFont": "Usa il font speciale witcher",
+            "disableAutoPause": "Disabilita Pausa Automatica all'avvio",
+            "disableAutoPauseHint": "Rimuove automaticamente la pausa del gioco quando un amministratore effettua l'accesso."
         },
         "background.other": "Altro",
         "Resources.modifiers": "Modificatori Risorse",

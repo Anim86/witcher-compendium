@@ -4,24 +4,19 @@
     "type": "armor",
     "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-armor/scudo_temeriano.webp",
     "system": {
-        "description": "<p>Ah! Il buon vecchio artigianato temeriano! Quel che chia- miamo “scudo a goccia” è probabilmente il tipo di scudo più comune che si vede nel reame. Uno scudo temeriano tiene a bada spade e frecce per un discreto periodo di tempo.</p>",
-        "cost": 225,
-        "stoppingPower": 0,
-        "reliability": {
-            "max": 8,
-            "value": 8
-        },
-        "sourcebook": "MB 82",
-        "weight": 1.5,
-        "rarity": "Comune",
-        "unmodifiedMax": {}
+        "description": "<p>Porta con orgoglio i gigli di Temeria. Questo scudo è bilanciato sia per la parata che per colpire il nemico in mischia.</p>",
+        "notes": "Bilanciato: +1 ai tiri di parata con lo scudo.",
+        "weight": 2.5,
+        "cost": 275,
+        "reliability": 12,
+        "reliabilityMax": 12,
+        "sourcebook": "MB 72",
+        "type": "Medium",
+        "encumb": 0,
+        "avail": "C",
+        "location": "Shield"
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",

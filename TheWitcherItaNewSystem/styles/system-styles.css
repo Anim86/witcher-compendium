@@ -21,12 +21,12 @@
 /* Navigation tabs – overrides live in character/sheet.css */
 
 /* App theme edits */
-.window-app .window-content,
-.application .window-content {
+.witcher.window-app .window-content,
+.witcher.application .window-content {
     padding: 0;
 }
 
-.actor .window-header {
+.witcher.actor .window-header {
     flex: 0 0 30px;
     overflow: hidden;
     padding: 0 10px;

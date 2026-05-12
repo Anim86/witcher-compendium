@@ -4,22 +4,19 @@
     "type": "armor",
     "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-armor/scudo_kaedweni.webp",
     "system": {
-        "description": "<p>Uno scudo kaedweni non è tanto diverso da uno temeriano. L'unica differenza è il ferro scuro che usano sul frontale. Sono più pesanti, ma anche più robusti.</p>",
-        "weight": 2.5,
-        "cost": 400,
-        "stoppingPower": 0,
-        "reliability": {
-            "value": 14,
-            "max": 14
-        },
-        "sourcebook": "MB 82"
+        "description": "<p>Uno scudo robusto, marchiato con l'unicorno di Kaedwen. È costruito per resistere ai climi freddi e ai colpi pesanti delle asce da battaglia.</p>",
+        "notes": "Resistente al Freddo: immune ai danni da ghiaccio.",
+        "weight": 3,
+        "cost": 300,
+        "reliability": 15,
+        "reliabilityMax": 15,
+        "sourcebook": "MB 72",
+        "type": "Medium",
+        "encumb": 0,
+        "avail": "C",
+        "location": "Shield"
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",

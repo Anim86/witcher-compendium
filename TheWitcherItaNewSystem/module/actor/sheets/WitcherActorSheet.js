@@ -84,9 +84,7 @@ export default class WitcherActorSheet extends HandlebarsApplicationMixin(ActorS
         CONFIG.Combat.initiative.formula = '1d10 + @stats.ref.value' + (context.displayRollDetails ? '[REF]' : '');
 
         context.actor = this.actor;
-        context.system = foundry.utils.mergeObject(context.actor.system.toObject(), {
-            armorSP: context.actor.system.armorSP
-        });
+        context.system = this.actor.system;
         context.systemFields = this.document.system.schema.fields;
         context.items = context.actor.items.filter(i => !i.system.isStored).sort((a, b) => a.sort - b.sort);
 

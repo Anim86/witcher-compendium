@@ -12,7 +12,7 @@
                             <i class="fa-solid fa-book"></i>
                         </span>
                     </a>
-                    <div><a class="item-roll">{{armor.name}}</a></div>
+                    <h3 class="no-margin"><a class="item-roll">{{armor.name}}</a></h3>
                     <div class="list-label">
                         <span>
                             {{#each (armorPartsInfo armor.system) as |part|}}
@@ -22,7 +22,7 @@
                             {{/each}}
                         </span>
 
-                        <span>{{#if (eq armor.system.location.[0] "Shield")}}{{armor.system.reliability}}{{else}}{{armor.system.torsoStopping}}{{/if}}</span>
+                        <span>{{#if (eq armor.system.location "Shield")}}{{armor.system.reliability}}{{else}}{{armor.system.torsoStopping}}{{/if}}</span>
                         <span>{{armor.system.weight}}</span>
                         <span><input class="inline-edit item-quantity" data-field="system.quantity" type="text"
                                 value="{{armor.system.quantity}}" data-dtype="Number" /></span>

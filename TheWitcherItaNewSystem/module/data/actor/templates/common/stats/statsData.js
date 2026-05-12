@@ -19,50 +19,28 @@ export default class Stats extends foundry.abstract.DataModel {
     }
 
     prepareBaseData() {
-        this.int.max = this.int.unmodifiedMax;
-        this.ref.max = this.ref.unmodifiedMax;
-        this.dex.max = this.dex.unmodifiedMax;
-        this.body.max = this.body.unmodifiedMax;
-        this.spd.max = this.spd.unmodifiedMax;
-        this.emp.max = this.emp.unmodifiedMax;
-        this.cra.max = this.cra.unmodifiedMax;
-        this.will.max = this.will.unmodifiedMax;
+        this.int.max = this.int.unmodifiedMax || this.int.max;
+        this.ref.max = this.ref.unmodifiedMax || this.ref.max;
+        this.dex.max = this.dex.unmodifiedMax || this.dex.max;
+        this.body.max = this.body.unmodifiedMax || this.body.max;
+        this.spd.max = this.spd.unmodifiedMax || this.spd.max;
+        this.emp.max = this.emp.unmodifiedMax || this.emp.max;
+        this.cra.max = this.cra.unmodifiedMax || this.cra.max;
+        this.will.max = this.will.unmodifiedMax || this.will.max;
 
-        this.toxicity.max = this.toxicity.unmodifiedMax;
-        this.luck.max = this.luck.unmodifiedMax;
+        this.toxicity.max = this.toxicity.unmodifiedMax || this.toxicity.max;
+        this.luck.max = this.luck.unmodifiedMax || this.luck.max;
     }
 
     /** @inheritdoc */
     static migrateData(source) {
-        if (source.int && source.int.unmodifiedMax == 0) {
-            source.int.unmodifiedMax = source.int.max;
-        }
-        if (source.ref && source.ref.unmodifiedMax == 0) {
-            source.ref.unmodifiedMax = source.ref.max;
-        }
-        if (source.dex && source.dex.unmodifiedMax == 0) {
-            source.dex.unmodifiedMax = source.dex.max;
-        }
-        if (source.body && source.body.unmodifiedMax == 0) {
-            source.body.unmodifiedMax = source.body.max;
-        }
-        if (source.spd && source.spd.unmodifiedMax == 0) {
-            source.spd.unmodifiedMax = source.spd.max;
-        }
-        if (source.emp && source.emp.unmodifiedMax == 0) {
-            source.emp.unmodifiedMax = source.emp.max;
-        }
-        if (source.cra && source.cra.unmodifiedMax == 0) {
-            source.cra.unmodifiedMax = source.cra.max;
-        }
-        if (source.will && source.will.unmodifiedMax == 0) {
-            source.will.unmodifiedMax = source.will.max;
-        }
-        if (source.luck && source.luck.unmodifiedMax == 0) {
-            source.luck.unmodifiedMax = source.luck.max;
-        }
-        if (source.toxicity && source.toxicity.unmodifiedMax == 0) {
-            source.toxicity.unmodifiedMax = source.toxicity.max;
+        const stats = ["int", "ref", "dex", "body", "spd", "emp", "cra", "will", "luck", "toxicity"];
+        for (const s of stats) {
+            if (source[s] && (source[s].unmodifiedMax === undefined || source[s].unmodifiedMax === null || source[s].unmodifiedMax === 0)) {
+                if (source[s].max > 0) {
+                    source[s].unmodifiedMax = source[s].max;
+                }
+            }
         }
 
         return super.migrateData(source);

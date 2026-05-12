@@ -8,6 +8,7 @@ export default class CommonItemData extends foundry.abstract.TypeDataModel {
             weight: new fields.NumberField({ initial: 0 }),
             cost: new fields.NumberField({ initial: 0 }),
             sourcebook: new fields.StringField({ initial: '' }),
+            notes: new fields.StringField({ initial: '' }),
 
             isHidden: new fields.BooleanField({ initial: false }),
             isStored: new fields.BooleanField({ initial: false }),

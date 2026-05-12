@@ -4,24 +4,19 @@
     "type": "armor",
     "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-armor/scudo_da_razziatore_skellige.webp",
     "system": {
-        "description": "<p>Diversamente dal resto del mondo, gli Skelliger usano gran- di scudi rotondi con umboni di metallo al centro e l'im- pugnatura dietro di essi. Immagino che renda lo scudo più maneggevole, visto che non è legato al braccio.</p>",
-        "cost": 325,
-        "stoppingPower": 0,
-        "reliability": {
-            "max": 10,
-            "value": 10
-        },
+        "description": "<p>Uno scudo tondo rinforzato, tipico dei guerrieri delle Isole Skellige. È progettato per resistere alle intemperie e ai colpi più duri.</p>",
+        "notes": "Legno di Skellige: immune ai danni da acqua e ghiaccio.",
+        "weight": 2.5,
+        "cost": 250,
+        "reliability": 12,
+        "reliabilityMax": 12,
         "sourcebook": "MB 82",
-        "weight": 2,
-        "rarity": "Scarsa",
-        "unmodifiedMax": {}
+        "type": "Medium",
+        "encumb": 0,
+        "avail": "C",
+        "location": "Shield"
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",

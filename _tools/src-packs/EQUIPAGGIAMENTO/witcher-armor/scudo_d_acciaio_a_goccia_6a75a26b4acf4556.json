@@ -4,22 +4,19 @@
     "type": "armor",
     "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-armor/scudo_d_acciaio_a_goccia.webp",
     "system": {
-        "description": "<p>Uno scudo fatto tutto d'acciaio è un pezzo interessante. Fa un baccano tremendo quando ci pari qualcosa, ma è più robusto degli altri scudi ed è ottimo per menar botte.</p>",
+        "description": "<p>Uno scudo d'acciaio con la classica forma a goccia, offre una protezione eccellente per tutto il corpo durante i combattimenti a cavallo o a piedi.</p>",
+        "notes": "",
         "weight": 3,
         "cost": 400,
-        "stoppingPower": 0,
-        "reliability": {
-            "value": 16,
-            "max": 16
-        },
-        "sourcebook": "MB 82"
+        "reliability": 15,
+        "reliabilityMax": 15,
+        "sourcebook": "MB 72",
+        "type": "Medium",
+        "encumb": 0,
+        "avail": "C",
+        "location": "Shield"
     },
     "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
