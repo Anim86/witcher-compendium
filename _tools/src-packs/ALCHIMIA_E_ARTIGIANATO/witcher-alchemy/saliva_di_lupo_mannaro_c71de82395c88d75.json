@@ -1,0 +1,23 @@
+{
+    "_id": "c71de82395c88d75",
+    "name": "Saliva di Lupo Mannaro",
+    "type": "component",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-alchemy/saliva_di_lupo_mannaro.webp",
+    "system": {
+        "description": "<p>Bava infetta e magica di un licantropo.</p><p><b>RaritÃ :</b> R | <b>Ubicazione:</b> Lupi mannari</p>",
+        "quantity": "1",
+        "weight": 0.1,
+        "cost": 60,
+        "sourcebook": "MB 146",
+        "type": "alchemical",
+        "rarity": "R",
+        "location": "Lupi mannari",
+        "substanceType": "hydragenum"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

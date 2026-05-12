@@ -1,0 +1,23 @@
+{
+    "name": "Formula: Elisir di Pantagran",
+    "_id": "61266bfcdcc7544b",
+    "system": {
+        "recipe": [],
+        "description": "<p>Una formula per preparare Elisir di Pantagran. <em>Ingredienti specifici da verificare sul manuale fisico (colonna componenti non estratta da OCR — Pag146/Pag249 MB).</em></p>",
+        "weight": 0.1,
+        "cost": 80,
+        "sourcebook": "MB 146",
+        "craftingTime": "15 Minuti",
+        "type": "alchemy",
+        "rarity": "C",
+        "quantity": 1,
+        "learned": false,
+        "craftingCc": 17
+    },
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-alchemy/formula_elisir_di_pantagran.webp",
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "name": "Formula: Olio Anti-Bestie",
+    "_id": "7f1086db4c23a59e",
+    "system": {
+        "recipe": [
+            {
+                "quantity": 1,
+                "name": "Grasso di Cane"
+            }
+        ],
+        "description": "<p>Una formula per preparare Olio Anti-Bestie. <em>Ingredienti specifici da verificare sul manuale fisico (colonna componenti non estratta da OCR — Pag146/Pag249 MB).</em></p>",
+        "weight": 0.1,
+        "cost": 80,
+        "sourcebook": "MB 249",
+        "craftingTime": "15 Minuti",
+        "type": "alchemy",
+        "rarity": "C",
+        "quantity": 1,
+        "learned": false,
+        "craftingCc": 14
+    },
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-alchemy/formula_olio_anti_bestie.webp",
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
+}

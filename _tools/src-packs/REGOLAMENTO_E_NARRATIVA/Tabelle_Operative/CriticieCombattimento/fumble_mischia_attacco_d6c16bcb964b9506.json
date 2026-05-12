@@ -1,0 +1,85 @@
+{
+    "_id": "d6c16bcb964b9506",
+    "name": "Fumble - Mischia Attacco",
+    "type": "RollTable",
+    "formula": "1d10",
+    "description": "",
+    "results": [
+        {
+            "range": [
+                1,
+                5
+            ],
+            "weight": 1,
+            "type": 0,
+            "text": "Nessun effetto aggiuntivo",
+            "_id": "9526fa69943eaa12",
+            "drawn": false
+        },
+        {
+            "range": [
+                6,
+                6
+            ],
+            "weight": 1,
+            "type": 0,
+            "text": "Vacillante",
+            "_id": "d6ffd6e11cc05f89",
+            "drawn": false
+        },
+        {
+            "range": [
+                7,
+                7
+            ],
+            "weight": 1,
+            "type": 0,
+            "text": "Arma incastrata 1 round",
+            "_id": "e8034b9b8a4094c6",
+            "drawn": false
+        },
+        {
+            "range": [
+                8,
+                8
+            ],
+            "weight": 1,
+            "type": 0,
+            "text": "1d10 danni affidabilità all'arma",
+            "_id": "a5e6f3f829bfed24",
+            "drawn": false
+        },
+        {
+            "range": [
+                9,
+                9
+            ],
+            "weight": 1,
+            "type": 0,
+            "text": "Ferisci te stesso",
+            "_id": "29e5be817904e9fb",
+            "drawn": false
+        },
+        {
+            "range": [
+                10,
+                10
+            ],
+            "weight": 1,
+            "type": 0,
+            "text": "Ferisci alleato vicino",
+            "_id": "5ccb09fcd0b6c822",
+            "drawn": false
+        }
+    ],
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": "14"
+    },
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "img": "modules/witcher-compendium/assets/TABELLEOPERATIVE/CriticieCombattimento/fumble_mischia_attacco.webp"
+}

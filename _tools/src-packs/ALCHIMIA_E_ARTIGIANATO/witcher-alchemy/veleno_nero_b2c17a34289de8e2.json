@@ -1,0 +1,23 @@
+{
+    "_id": "b2c17a34289de8e2",
+    "name": "Veleno Nero",
+    "type": "component",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-alchemy/veleno_nero.webp",
+    "system": {
+        "description": "<p>Il veleno più comune del Sud, annerisce le vene.</p><p><b>Effetti:</b> Avvelenamento immediato se ingerito o nel sangue. Tempra CD 16.</p><p><b>Durata:</b> Finché curato</p><p><b>TossicitÃ :</b> 0%</p>",
+        "quantity": "1",
+        "weight": 0.1,
+        "cost": 45,
+        "sourcebook": "MB 90",
+        "type": "alchemical",
+        "rarity": "C",
+        "location": "",
+        "substanceType": ""
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

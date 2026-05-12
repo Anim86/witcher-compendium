@@ -1,0 +1,28 @@
+{
+    "_id": "34b84667feea412d",
+    "name": "Schema: Gleddyf",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_gleddyf.webp",
+    "system": {
+        "description": "<p>Il gleddyf è una delle lame più pesanti del continente e an- che una delle più sottili. Eh, tutto quel peso concentrato in quella bell'elsa e in quel pomo. Ma è abbastanza facile da forgiare e così è un ottimo articolo per i Neri, visto quanto continua a ingrandirsi il loro esercito.</p>",
+        "weight": 0,
+        "cost": 0,
+        "components": [
+            "Gleddyf 14 7 ore Legname (x1), Cuoio Indurito (x1), Cuoio (x1), Ferro (x1), Acciaio (x2), Olio (x1), Resina (x1) 210 426"
+        ],
+        "difficulty": 14,
+        "time": "7 ore",
+        "sourcebook": "MB 75"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

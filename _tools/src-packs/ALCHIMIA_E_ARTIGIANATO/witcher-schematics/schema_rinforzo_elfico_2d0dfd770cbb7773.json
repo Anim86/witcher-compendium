@@ -1,0 +1,31 @@
+{
+    "_id": "2d0dfd770cbb7773",
+    "name": "Schema: Rinforzo Elfico",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_rinforzo_elfico.webp",
+    "system": {
+        "description": "<p>Schema per la fabbricazione di: <b>Elfica</b>.</p><p><b>Componenti richiesti:</b> Acciaio Nero (x1), Cuoio Indurito (x1), Filo (x5), Piume (x1)</p><p><b>DifficoltÃ  Manifattura:</b> CD 24</p><p><b>Tempo:</b> 6 ore</p>",
+        "weight": 0,
+        "cost": 0,
+        "components": [
+            "Acciaio Nero (x1)",
+            "Cuoio Indurito (x1)",
+            "Filo (x5)",
+            "Piume (x1)"
+        ],
+        "difficulty": 24,
+        "time": "6 ore",
+        "sourcebook": "MB 141"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

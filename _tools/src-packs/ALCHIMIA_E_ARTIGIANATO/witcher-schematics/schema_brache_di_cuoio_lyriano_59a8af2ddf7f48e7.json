@@ -1,0 +1,28 @@
+{
+    "_id": "59a8af2ddf7f48e7",
+    "name": "Schema: Brache di Cuoio Lyriano",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_brache_di_cuoio_lyriano.webp",
+    "system": {
+        "description": "<p>18 9 ore Cuoio Lyriano (x4), Filo (x4), Cuoio (x2), Lino (x4), Acciaio (x1) 392 786 Brigantina 16 8 ore Cuoio (x3), Cuoio Indurito (x3) 228 450 Camaglio 16 4 ore Acciaio (x4) 192 374 Cappuccio Corazzato 12 6 ore Cuoio (x1), Cuoio Indurito (x3), Lino a Doppia Trama (x3), Filo (x4), Cerume di Orco (x1) 260 524 Giubba di Cuoio Lyriano 18 9 ore Cuoio Lyriano (x4), Filo (x4), Cuoio (x2), Lino (x4), Acciaio (x1) 392 786 Schinieri Redaniani 17 9 ore Cuoio Indurito (x1), Cuoio (x1), Acciaio Tretogor (x3), Filo (x5), Erbe da Concia (x3), Cotone (x3) 295 600 Scudo d'Acciaio a Goccia 17 5 ore Acciaio (x4), Acciaio Nero (x1), Cuoio (x1) 302 600</p>",
+        "weight": 0,
+        "cost": 0,
+        "components": [
+            "Brache di Cuoio Lyriano 18 9 ore Cuoio Lyriano (x4), Filo (x4), Cuoio (x2), Lino (x4), Acciaio (x1) 392 786"
+        ],
+        "difficulty": 18,
+        "time": "9 ore",
+        "sourcebook": "MB 136"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "_id": "4a20469cefed01ce",
+    "name": "Schema: Gambesone a Doppia Trama",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_gambesone_a_doppia_trama.webp",
+    "system": {
+        "description": "<p>Schema per la fabbricazione di: <b>Gambesone a Doppia Trama</b>.</p><p><b>Componenti richiesti:</b> Lino a Doppia Trama (x5), Filo (x6), Erbe da Concia (x4), Lino (x4), Cotone (x11)</p><p><b>DifficoltÃ  Manifattura:</b> CD 15</p><p><b>Tempo:</b> 8 ore</p>",
+        "weight": 0,
+        "cost": 0,
+        "components": [
+            "Lino a Doppia Trama (x5)",
+            "Filo (x6)",
+            "Erbe da Concia (x4)",
+            "Lino (x4)",
+            "Cotone (x11)"
+        ],
+        "difficulty": 15,
+        "time": "8 ore",
+        "sourcebook": "MB 136"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

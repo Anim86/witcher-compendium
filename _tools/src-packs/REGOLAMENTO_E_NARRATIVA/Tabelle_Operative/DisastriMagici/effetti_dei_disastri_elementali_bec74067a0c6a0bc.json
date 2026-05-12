@@ -1,0 +1,74 @@
+{
+    "_id": "bec74067a0c6a0bc",
+    "name": "Effetti dei Disastri Elementali",
+    "type": "RollTable",
+    "formula": "1d5",
+    "description": "Preti e Druidi applicano sempre il risultato Misto (1). Non tirano per l'elemento.",
+    "results": [
+        {
+            "range": [
+                1,
+                1
+            ],
+            "weight": 1,
+            "type": 0,
+            "text": "Misto: 1 danno/punto disastro + effetto casuale GM.",
+            "_id": "f85ced9aef752cca",
+            "drawn": false
+        },
+        {
+            "range": [
+                2,
+                2
+            ],
+            "weight": 1,
+            "type": 0,
+            "text": "Terra: 1 danno/punto disastro + Stordito.",
+            "_id": "1a58b13e4b38327a",
+            "drawn": false
+        },
+        {
+            "range": [
+                3,
+                3
+            ],
+            "weight": 1,
+            "type": 0,
+            "text": "Aria: 1 danno/punto disastro + scagliato indietro 2m.",
+            "_id": "68bf5f3e7862cd99",
+            "drawn": false
+        },
+        {
+            "range": [
+                4,
+                4
+            ],
+            "weight": 1,
+            "type": 0,
+            "text": "Fuoco: 1 danno/punto disastro + A Fuoco.",
+            "_id": "5780e116aca8d14b",
+            "drawn": false
+        },
+        {
+            "range": [
+                5,
+                5
+            ],
+            "weight": 1,
+            "type": 0,
+            "text": "Acqua: 1 danno/punto disastro + Congelato.",
+            "_id": "34ed790792d32738",
+            "drawn": false
+        }
+    ],
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": "14"
+    },
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "img": "modules/witcher-compendium/assets/TABELLEOPERATIVE/DisastriMagici/effetti_dei_disastri_elementali.webp"
+}

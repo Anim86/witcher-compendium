@@ -1,0 +1,28 @@
+{
+    "_id": "5e33653c7c9041c2",
+    "name": "Schema: Spada d'Arme",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_spada_d_arme.webp",
+    "system": {
+        "description": "<p>La spada d'arme redaniana è una lama a una mano con un'elsa ricurva semplice e un bordo affilato. Eh, con la Redania che si espande in tutto il Nord per “difenderci”, queste spade militari cominciano a vedersi ovunque. CONTUNDENTI</p>",
+        "weight": 0,
+        "cost": 0,
+        "components": [
+            "Spada dâ€™Arme 13 7 ore Legname (x2), Filo (x1), Cuoio Indurito (x2), Acciaio (x2) 201 404"
+        ],
+        "difficulty": 13,
+        "time": "7 ore",
+        "sourcebook": "MB 75"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

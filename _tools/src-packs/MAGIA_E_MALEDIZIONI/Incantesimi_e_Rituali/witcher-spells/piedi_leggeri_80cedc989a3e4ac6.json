@@ -1,0 +1,61 @@
+{
+    "_id": "80cedc989a3e4ac6",
+    "name": "Piedi Leggeri",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-spells/piedi_leggeri.webp",
+    "system": {
+        "description": "<p>Piedi Leggeri crea un soffio di vento che sospin- ge il mago. Una volta lanciato l'incantesimo, la VEL del mago aumenta di 5, la sua Corsa di 15 e il Balzo di 3.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "TC 83",
+        "class": "Mage",
+        "level": "master",
+        "source": "mixedElements",
+        "stamina": 0,
+        "staminaIsVar": false,
+        "effect": "Piedi Leggeri crea un soffio di vento che sospin- ge il mago. Una volta lanciato lâ€™incantesimo, la VEL del mago aumenta di 5, la sua Corsa di 15 e il Balzo di 3.",
+        "range": "Personale",
+        "duration": "Attiva (2 RES)",
+        "defence": "Nessuna",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
+}

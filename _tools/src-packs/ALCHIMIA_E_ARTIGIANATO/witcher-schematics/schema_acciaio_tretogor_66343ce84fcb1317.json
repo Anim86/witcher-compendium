@@ -1,0 +1,30 @@
+{
+    "_id": "66343ce84fcb1317",
+    "name": "Schema: Acciaio Tretogor",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_acciaio_tretogor.webp",
+    "system": {
+        "description": "<p>Schema per la fabbricazione di: <b>Acciaio Tretogor</b>.</p><p><b>Componenti richiesti:</b> Ferro (x1), Carbone (x5), Piume (x2)</p><p><b>DifficoltÃ  Manifattura:</b> CD 16</p><p><b>Tempo:</b> 1 ora</p>",
+        "weight": 0,
+        "cost": 0,
+        "components": [
+            "Ferro (x1)",
+            "Carbone (x5)",
+            "Piume (x2)"
+        ],
+        "difficulty": 16,
+        "time": "1 ora",
+        "sourcebook": "MB 132"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

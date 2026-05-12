@@ -1,0 +1,28 @@
+{
+    "_id": "0c4b4c8693e94f24",
+    "name": "Schema: Scudo di Cuoio",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_scudo_di_cuoio.webp",
+    "system": {
+        "description": "<p>4 D 0 0,5 50 Brocchiero d'Acciaio 6 C 0 1 150 Scudo Temeriano 8 C 0 1,5 225 Scudi Medi Scudo da Razziatore Skellige 10 S 0 2 325 Scudo Kaedweni 14 S 0 2,5 400 Scudo d'Acciaio a Goccia 16 C 0 3 400 Scudi Pesanti Palvese 20 S Riparo Completo 1 4 500 Palvese Nilfgaardiano 25 R Riparo Completo 1 5 650</p>",
+        "weight": 0,
+        "cost": 0,
+        "components": [
+            "Scudo di Cuoio 12 3 ore Cuoio (x1), Legname (x2), Erbe da Concia (x1) 37 74"
+        ],
+        "difficulty": 12,
+        "time": "3 ore",
+        "sourcebook": "MB 82"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

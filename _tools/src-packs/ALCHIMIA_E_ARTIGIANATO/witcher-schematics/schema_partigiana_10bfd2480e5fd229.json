@@ -1,0 +1,23 @@
+{
+    "_id": "10bfd2480e5fd229",
+    "name": "Schema: Partigiana",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_partigiana.webp",
+    "system": {
+        "description": "<p>Artigiani e manifatturieri possono utilizzare questo schema per creare una Partigiana di Toussaint.</p>",
+        "difficulty": 16,
+        "time": "18 ore",
+        "components": [
+            "Acciaio Nero (x2), Cerume di Orco (x2), Cuoio Indurito (x2), Ferro Nero (x3), Grasso di Estere (x2), Legname Indurito (x7)"
+        ],
+        "sourcebook": "LR 169",
+        "weight": 0,
+        "cost": 0
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

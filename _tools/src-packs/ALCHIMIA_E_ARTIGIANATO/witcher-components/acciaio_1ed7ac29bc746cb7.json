@@ -1,0 +1,26 @@
+{
+    "_id": "1ed7ac29bc746cb7",
+    "name": "Acciaio",
+    "type": "component",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-components/acciaio.webp",
+    "system": {
+        "description": "<p>Lingotto di acciaio standard per spade e armature di buona fattura.</p>",
+        "category": "componente",
+        "quantity": "1",
+        "weight": 1,
+        "cost": 48,
+        "sourcebook": "MB 131",
+        "type": "crafting-material",
+        "rarity": "S",
+        "location": "Acquistato o fabbricato",
+        "quantityObtainable": "",
+        "forage": "",
+        "substanceType": ""
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

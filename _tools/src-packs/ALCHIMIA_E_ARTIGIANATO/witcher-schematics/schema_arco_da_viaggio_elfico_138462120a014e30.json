@@ -1,0 +1,28 @@
+{
+    "_id": "138462120a014e30",
+    "name": "Schema: Arco da Viaggio Elfico",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_arco_da_viaggio_elfico.webp",
+    "system": {
+        "description": "<p>Uno schema dettagliato che illustra i procedimenti necessari per forgiare o fabbricare: <strong>Arco da Viaggio Elfico</strong>.</p>",
+        "weight": 0,
+        "cost": 862,
+        "components": [
+            "Legname Indurito (x4), Filo (x4), Cera (x4), Quintessenza (x1), Cuoio (x1), Piume (x3), Ossa di Bestia (x2), Acciaio Nero (x2), Grasso di Estere (x5), Acquaforte (x3)"
+        ],
+        "difficulty": 22,
+        "time": "11 ore",
+        "sourcebook": "MB 85"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}
