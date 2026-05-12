@@ -1,0 +1,24 @@
+{
+    "_id": "7ec8a90ac1d79862",
+    "name": "Medico",
+    "type": "valuable",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-equipment/medico.webp",
+    "system": {
+        "description": "<p>Prestazione medica di un guaritore o chirurgo per trattare ferite o malattie.</p>",
+        "weight": 0,
+        "cost": 50,
+        "quantity": 1,
+        "sourcebook": "MB 95"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

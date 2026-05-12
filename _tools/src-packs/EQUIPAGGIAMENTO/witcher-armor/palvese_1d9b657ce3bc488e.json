@@ -1,0 +1,28 @@
+{
+    "_id": "1d9b657ce3bc488e",
+    "name": "Palvese",
+    "type": "armor",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-armor/palvese.webp",
+    "system": {
+        "description": "<p>Quando vuoi proteggerti tutto il corpo, ma proprio mettere uno stramaledetto muro tra te e il nemico, piglia un palve- se. Questi mostri sono così grossi, alti fino alle spalle di un umano e larghi quanto un nano, che ti ci puoi inginocchia- re dietro e aspettare che finisca di piovere frecce. ARMATURE PER LE GAMBE</p>",
+        "weight": 4,
+        "cost": 500,
+        "stoppingPower": 0,
+        "reliability": {
+            "value": 20,
+            "max": 20
+        },
+        "sourcebook": "MB 82"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

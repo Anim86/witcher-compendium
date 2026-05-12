@@ -1,0 +1,23 @@
+{
+    "_id": "d682a5755bc14602",
+    "name": "Alcohest",
+    "type": "valuable",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-equipment/alcohest.webp",
+    "system": {
+        "description": "<p>L'alcohest è a conti fatti alcol purissimo, per l'alchimia e cose simili. Un sorso manderebbe un nano col culo per terra. Una bottiglia intera in pratica è un veleno.</p>",
+        "weight": 1,
+        "cost": 8,
+        "sourcebook": "MB 95"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

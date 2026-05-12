@@ -1,0 +1,58 @@
+{
+    "_id": "1528b6ffdaf94ed0",
+    "name": "Tirapugni",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/tirapugni.webp",
+    "system": {
+        "description": "<p>Eh, amico mio, il mondo è pieno d'ingiustizie. Alcuni proprio sono nati più deboli di altri. Ora, di solito non devo combattere i miei nemici da troppo vicino, i vantaggi dell'essere un bale- striere, ma, se dovessi farne un'abitudine, mi prenderei qualche tirapugni. Ti danno quell' “impatto” in più, eh.</p>",
+        "cost": 50,
+        "reliability": {
+            "max": 15,
+            "value": 15
+        },
+        "reach": "N/A",
+        "effects": "Rissa",
+        "sourcebook": "MB 43",
+        "type": {
+            "text": "",
+            "slashing": false,
+            "piercing": false,
+            "bludgeoning": true,
+            "elemental": false
+        },
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "isMeteorite": false,
+            "isNonLethal": false,
+            "effects": [
+                {
+                    "id": "005998acaed3df88",
+                    "name": "rissa",
+                    "statusEffect": null,
+                    "percentage": 100,
+                    "varEffect": false
+                }
+            ]
+        },
+        "weight": 0.5,
+        "rarity": "Diffusa",
+        "damage": "1d6",
+        "hands": 1,
+        "accuracy": 1,
+        "unmodifiedMax": {}
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

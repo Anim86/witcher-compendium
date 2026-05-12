@@ -1,0 +1,55 @@
+{
+    "_id": "5966d38dbaa245dd",
+    "name": "Brache da Cavallerizzo",
+    "type": "armor",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-armor/brache_da_cavallerizzo.webp",
+    "system": {
+        "description": "<p>A meno che non sia un dragone, il cavallerizzo tipico è pro- babile che non indossi quintali di armatura. Questi panta- loni neri sono solo rinforzati con strisce di cuoio.</p>",
+        "cost": 75,
+        "reliability": {
+            "value": 0,
+            "max": 0
+        },
+        "sourcebook": "MB 82",
+        "type": "Light",
+        "location": "Leg",
+        "encumb": 0,
+        "enhancements": 0,
+        "headStopping": 0,
+        "headMaxStopping": 0,
+        "torsoStopping": 0,
+        "torsoMaxStopping": 0,
+        "leftArmStopping": 0,
+        "leftArmMaxStopping": 0,
+        "rightArmStopping": 0,
+        "rightArmMaxStopping": 0,
+        "leftLegStopping": 3,
+        "leftLegMaxStopping": 3,
+        "rightLegStopping": 3,
+        "rightLegMaxStopping": 3,
+        "bludgeoning": false,
+        "slashing": false,
+        "piercing": false,
+        "elemental": false,
+        "fire": false,
+        "poison": false,
+        "bleeding": false,
+        "weight": 0.5,
+        "rarity": "Comune",
+        "stoppingPower": 3,
+        "protection": {},
+        "encumbranceMod": 0,
+        "unmodifiedMax": {}
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

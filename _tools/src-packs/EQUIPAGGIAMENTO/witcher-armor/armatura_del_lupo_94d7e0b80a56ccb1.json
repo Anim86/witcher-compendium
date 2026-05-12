@@ -1,0 +1,41 @@
+{
+    "_id": "94d7e0b80a56ccb1",
+    "name": "Armatura del Lupo",
+    "type": "armor",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-armor/armatura_del_lupo.webp",
+    "system": {
+        "description": "<p>Set di Armatura da Witcher.</p><p><strong>Effetti:</strong> Momentum: Dopo un critico, ottieni un attacco extra senza spesa di RES.</p>",
+        "quantity": 1,
+        "weight": 14,
+        "type": "Medium",
+        "location": "FullCover",
+        "encumb": 1,
+        "enhancements": 2,
+        "headStopping": 14,
+        "headMaxStopping": 14,
+        "torsoStopping": 14,
+        "torsoMaxStopping": 14,
+        "leftArmStopping": 14,
+        "leftArmMaxStopping": 14,
+        "rightArmStopping": 14,
+        "rightArmMaxStopping": 14,
+        "leftLegStopping": 14,
+        "leftLegMaxStopping": 14,
+        "rightLegStopping": 14,
+        "rightLegMaxStopping": 14,
+        "sourcebook": "MB",
+        "bludgeoning": false,
+        "slashing": false,
+        "piercing": false,
+        "elemental": false,
+        "fire": false,
+        "poison": false,
+        "bleeding": false
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "_id": "e1a91e26b2f7a0e9",
+    "name": "Decotto di Demonio",
+    "type": "alchemical",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-special/decotto_di_demonio.webp",
+    "system": {
+        "description": "<p>ING raddoppiato.</p>\n<p><i>Tutto l'equipaggiamento presentato in questo capitolo è più che raro. Questi oggetti e formule dovrebbero essere le ricompense per missioni importanti o quando un personaggio li cerca appositamente.</i> — MB 246</p>\n<p><b>RaritÃ :</b> Molto Raro. Non vendibile (MB 246-250).</p>",
+        "weight": 0.5,
+        "cost": 0,
+        "quantity": 1,
+        "toxicity": "75%",
+        "duration": "30 minuti",
+        "sourcebook": "MB 250"
+    },
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

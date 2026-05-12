@@ -1,0 +1,17 @@
+{
+    "_id": "4ddf42cb2eab0e0c",
+    "name": "Amuleto Incantato (3 Incantesimi)",
+    "type": "valuable",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-equipment/amuleto_incantato_3_incantesimi.webp",
+    "system": {
+        "description": "<p>Questo amuleto è un Focus (2) e può contenere 3 incantesimi. Se infuso con più di un incantesimo, applica una penalitÃ  al portatore (PS -5, -1 INT/RIF/VOL, o RES -10).</p><p><i>Peso stimato — non indicato nel manuale (TC 119-128).</i></p>",
+        "weight": 0.1,
+        "cost": 950,
+        "quantity": 1,
+        "sourcebook": "TC 117"
+    },
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

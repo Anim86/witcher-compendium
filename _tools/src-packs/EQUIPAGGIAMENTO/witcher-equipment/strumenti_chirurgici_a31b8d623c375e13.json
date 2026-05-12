@@ -1,0 +1,24 @@
+{
+    "_id": "a31b8d623c375e13",
+    "name": "Strumenti Chirurgici",
+    "type": "valuable",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-equipment/strumenti_chirurgici.webp",
+    "system": {
+        "description": "<p>Ferri del mestiere per medici e cerusici. Consente di effettuare operazioni chirurgiche e trattare ferite gravi.</p>",
+        "weight": 1,
+        "cost": 83,
+        "quantity": 1,
+        "sourcebook": "MB 94"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "_id": "08c8bc3916a44ba5",
+    "name": "Pugnale",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/pugnale.webp",
+    "system": {
+        "description": "<p>Ci sono pugnali di tutte le misure e tutti i tipi, ma sono sempre abbastanza piccoli da essere nascosti. Tutti girano con un pugnale, dai cavalieri ai contadini.</p>",
+        "cost": 50,
+        "reliability": {
+            "max": 10,
+            "value": 10
+        },
+        "accuracy": 0,
+        "reach": "N/A",
+        "effects": "N/A",
+        "sourcebook": "MB 20",
+        "type": {
+            "text": "",
+            "slashing": true,
+            "piercing": true,
+            "bludgeoning": false,
+            "elemental": false
+        },
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "isMeteorite": false,
+            "isNonLethal": false,
+            "effects": []
+        },
+        "weight": 0.5,
+        "rarity": "Diffusa",
+        "damage": "1d6+2",
+        "hands": 1,
+        "unmodifiedMax": {}
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

@@ -1,0 +1,59 @@
+{
+    "_id": "afa5102884274060",
+    "name": "Bastone di Ferro",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/bastone_di_ferro.webp",
+    "system": {
+        "description": "<p>A volte un mago può aver bisogno di un altro po' di pro- tezione oppure, diamine, la loro magia potrebbe non fun- zionare come vorrebbero. In quel caso, ci vuole un bastone di ferro. In pratica è una grossa verga di ferro intarsiata con venature di quintessenza. Ãˆ più robusto di un normale bastone e picchia come una mazza. Ci puoi anche bloccare le lame, almeno un po'. INDOSSARE LA MAGIA Stando ai maghi che ho conosciu- to, dove incanalare la propria ma- gia è una scelta personale. Molti tengono con loro bastoni o bordo- ni. Ãˆ tradizione qui a Oxenfurt che un bastone decorato assicuri che gli studenti cedano il passo al mago, onde evitare di finire da un momento all'altro folgorati o tramutati. Oggigiorno in Redania non è saggio sfoggiare simili vezzi, quando anche una matricola pia- gnucolosa può andare a lagnarsi dal primo cavaliere che passa. Vi racconterò di un'altra storiella priva di fondamento: quella del fragile vecchio che si appoggia al suo bordone. I maghi prolungano sempre troppo questa messinscena e, quando si decidono a usare la magia, hanno giÃ  un branco di teppisti addosso. A volte porto con me un bastone, ma solo per spezzare i denti del primo ma- scalzone che tocca la mia scarsella. L'alternativa per i maghi è indos- sare amuleti. Se lo fa in maniera discreta, un mago è riconoscibile solo quando scatena la sua ma- gia. Molti stregoni, e quasi tutte le maghe, non sanno resistere alla tentazione di girare con patacco- ni ingioiellati che strozzerebbero una capra. I più famosi, come Philippa Eihart o Yennefer di Vengerberg, che comunque non camminano mai per strada, sanno dissuadere i ladri. Per i maghi di basso rango, la faccenda può rive- larsi complicata. - Brandon di Oxenfurt.</p>",
+        "cost": 675,
+        "reliability": {
+            "max": 15,
+            "value": 15
+        },
+        "accuracy": 0,
+        "reach": "N/A",
+        "effects": "Portata Focus (2)",
+        "sourcebook": "MB 76",
+        "range": "Portata",
+        "type": {
+            "text": "",
+            "slashing": false,
+            "piercing": false,
+            "bludgeoning": true,
+            "elemental": false
+        },
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "isMeteorite": false,
+            "isNonLethal": false,
+            "effects": [
+                {
+                    "id": "000db372ea2ae95e",
+                    "name": "Focus (2)",
+                    "statusEffect": null,
+                    "percentage": 100,
+                    "varEffect": false
+                }
+            ]
+        },
+        "weight": 4,
+        "rarity": "Scarsa",
+        "damage": "3d6",
+        "hands": 2,
+        "unmodifiedMax": {}
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

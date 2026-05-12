@@ -1,0 +1,30 @@
+{
+    "_id": "18dddff08cf94cc5",
+    "name": "Scudo da Razziatore Skellige",
+    "type": "armor",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-armor/scudo_da_razziatore_skellige.webp",
+    "system": {
+        "description": "<p>Diversamente dal resto del mondo, gli Skelliger usano gran- di scudi rotondi con umboni di metallo al centro e l'im- pugnatura dietro di essi. Immagino che renda lo scudo più maneggevole, visto che non è legato al braccio.</p>",
+        "cost": 325,
+        "stoppingPower": 0,
+        "reliability": {
+            "max": 10,
+            "value": 10
+        },
+        "sourcebook": "MB 82",
+        "weight": 2,
+        "rarity": "Scarsa",
+        "unmodifiedMax": {}
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

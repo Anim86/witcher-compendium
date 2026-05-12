@@ -1,5 +1,5 @@
 # 🛡️ Smart Asset Guard - Report Iconografia
-Data Scansione: 12/05/2026, 08:54:15
+Data Scansione: 12/05/2026, 09:49:09
 
 ## 📊 Riepilogo
 - **Totale Voci Analizzate**: 1478
@@ -39,43 +39,43 @@ Data Scansione: 12/05/2026, 08:54:15
 | Louise van Adelaide | _tools\src-packs\BESTIARIO\witcher-characters\louise_van_adelaide_6e9d37fba6b67130.json | `BESTIARIO/witcher-characters/louise_van_adelaide.webp` |
 | Pardus di Korath | _tools\src-packs\BESTIARIO\witcher-characters\pardus_di_korath_7061726475736b6f.json | `BESTIARIO/witcher-characters/pardus_di_korath.webp` |
 | Rodolf Kazmer | _tools\src-packs\BESTIARIO\witcher-characters\rodolf_kazmer_288ee308a5318712.json | `BESTIARIO/witcher-characters/rodolf_kazmer.webp` |
-| Balestra dell'Orso | _tools\src-packs\EQUIPAGGIAMENTO_E_TRASPORTI\Armi_e_Armature\witcher-weapons\balestra_dell_orso_006d87c91fc31f98.json | `EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/balestra_dell_orso.webp` |
-| Lupo (Spada Lunga Reliquia) | _tools\src-packs\EQUIPAGGIAMENTO_E_TRASPORTI\Armi_e_Armature\witcher-weapons\lupo_spada_lunga_reliquia_570e1ae2633117e4.json | `EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/lupo_spada_lunga_reliquia.webp` |
-| Pugnale di Diaspro Sanguigno | _tools\src-packs\EQUIPAGGIAMENTO_E_TRASPORTI\Armi_e_Armature\witcher-weapons\pugnale_di_diaspro_sanguigno_004c9f9702b73e28.json | `EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/pugnale_di_diaspro_sanguigno.webp` |
-| Scorpione | _tools\src-packs\EQUIPAGGIAMENTO_E_TRASPORTI\Armi_e_Armature\witcher-weapons\scorpione_00056b29e0b098b1.json | `EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/scorpione.webp` |
-| Sentinella dell'Abisso | _tools\src-packs\EQUIPAGGIAMENTO_E_TRASPORTI\Armi_e_Armature\witcher-weapons\sentinella_dell_abisso_f1a2b3c4d5e6f7a8.json | `EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/sentinella_dell_abisso.webp` |
-| Spada d'Acciaio della Manticora | _tools\src-packs\EQUIPAGGIAMENTO_E_TRASPORTI\Armi_e_Armature\witcher-weapons\spada_d_acciaio_della_manticora_00c8757ce11b1778.json | `EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/spada_d_acciaio_della_manticora.webp` |
-| Spada d'Acciaio della Vipera | _tools\src-packs\EQUIPAGGIAMENTO_E_TRASPORTI\Armi_e_Armature\witcher-weapons\spada_d_acciaio_della_vipera_007aaca1e51e3768.json | `EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/spada_d_acciaio_della_vipera.webp` |
-| Spada d'Acciaio dell'Orso | _tools\src-packs\EQUIPAGGIAMENTO_E_TRASPORTI\Armi_e_Armature\witcher-weapons\spada_d_acciaio_dell_orso_000d890e417f601d.json | `EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/spada_d_acciaio_dell_orso.webp` |
-| Spada d'Acciaio del Gatto | _tools\src-packs\EQUIPAGGIAMENTO_E_TRASPORTI\Armi_e_Armature\witcher-weapons\spada_d_acciaio_del_gatto_4224936e2338517b.json | `EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/spada_d_acciaio_del_gatto.webp` |
-| Spada d'Acciaio del Grifone | _tools\src-packs\EQUIPAGGIAMENTO_E_TRASPORTI\Armi_e_Armature\witcher-weapons\spada_d_acciaio_del_grifone_3fd3cc4a053ee4e3.json | `EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/spada_d_acciaio_del_grifone.webp` |
-| Spada d'Acciaio del Lupo | _tools\src-packs\EQUIPAGGIAMENTO_E_TRASPORTI\Armi_e_Armature\witcher-weapons\spada_d_acciaio_del_lupo_b02556df7587bae1.json | `EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/spada_d_acciaio_del_lupo.webp` |
-| Spada d'Argento della Manticora | _tools\src-packs\EQUIPAGGIAMENTO_E_TRASPORTI\Armi_e_Armature\witcher-weapons\spada_d_argento_della_manticora_00ccb4382fba9b98.json | `EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/spada_d_argento_della_manticora.webp` |
-| Spada d'Argento della Vipera | _tools\src-packs\EQUIPAGGIAMENTO_E_TRASPORTI\Armi_e_Armature\witcher-weapons\spada_d_argento_della_vipera_0053aa0f430b0378.json | `EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/spada_d_argento_della_vipera.webp` |
-| Spada d'Argento dell'Orso | _tools\src-packs\EQUIPAGGIAMENTO_E_TRASPORTI\Armi_e_Armature\witcher-weapons\spada_d_argento_dell_orso_003af6d3fb73c238.json | `EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/spada_d_argento_dell_orso.webp` |
-| Spada d'Argento del Gatto | _tools\src-packs\EQUIPAGGIAMENTO_E_TRASPORTI\Armi_e_Armature\witcher-weapons\spada_d_argento_del_gatto_ba58a4bbe6f32d69.json | `EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/spada_d_argento_del_gatto.webp` |
-| Spada d'Argento del Grifone | _tools\src-packs\EQUIPAGGIAMENTO_E_TRASPORTI\Armi_e_Armature\witcher-weapons\spada_d_argento_del_grifone_a76cd51e95ac556f.json | `EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/spada_d_argento_del_grifone.webp` |
-| Spada d'Argento del Lupo | _tools\src-packs\EQUIPAGGIAMENTO_E_TRASPORTI\Armi_e_Armature\witcher-weapons\spada_d_argento_del_lupo_19d88746db960774.json | `EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/spada_d_argento_del_lupo.webp` |
-| Zanna della Vipera | _tools\src-packs\EQUIPAGGIAMENTO_E_TRASPORTI\Armi_e_Armature\witcher-weapons\zanna_della_vipera_00091b914a4c2757.json | `EQUIPAGGIAMENTO_E_TRASPORTI/Armi_e_Armature/witcher-weapons/zanna_della_vipera.webp` |
-| Anti-Ancestrali | _tools\src-packs\EQUIPAGGIAMENTO_E_TRASPORTI\Attrezzatura_e_Oggetti\witcher-equipment\anti_ancestrali_01897166528f04c2.json | `EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-equipment/anti_ancestrali.webp` |
-| Anti-Costrutti | _tools\src-packs\EQUIPAGGIAMENTO_E_TRASPORTI\Attrezzatura_e_Oggetti\witcher-equipment\anti_costrutti_dd75a029513af7f7.json | `EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-equipment/anti_costrutti.webp` |
-| Anti-Dragonidi | _tools\src-packs\EQUIPAGGIAMENTO_E_TRASPORTI\Attrezzatura_e_Oggetti\witcher-equipment\anti_dragonidi_6d4f3bc2cbeec9ef.json | `EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-equipment/anti_dragonidi.webp` |
-| Anti-Ibridi | _tools\src-packs\EQUIPAGGIAMENTO_E_TRASPORTI\Attrezzatura_e_Oggetti\witcher-equipment\anti_ibridi_960d1a617e2a6847.json | `EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-equipment/anti_ibridi.webp` |
-| Anti-Insettoidi | _tools\src-packs\EQUIPAGGIAMENTO_E_TRASPORTI\Attrezzatura_e_Oggetti\witcher-equipment\anti_insettoidi_38a76fa165a6de46.json | `EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-equipment/anti_insettoidi.webp` |
-| Anti-Maledetti | _tools\src-packs\EQUIPAGGIAMENTO_E_TRASPORTI\Attrezzatura_e_Oggetti\witcher-equipment\anti_maledetti_69e7c869d29dc1bd.json | `EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-equipment/anti_maledetti.webp` |
-| Anti-Orchi | _tools\src-packs\EQUIPAGGIAMENTO_E_TRASPORTI\Attrezzatura_e_Oggetti\witcher-equipment\anti_orchi_071d9c96f5e1cfa0.json | `EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-equipment/anti_orchi.webp` |
-| Anti-Spettri | _tools\src-packs\EQUIPAGGIAMENTO_E_TRASPORTI\Attrezzatura_e_Oggetti\witcher-equipment\anti_spettri_e1d78826b093f749.json | `EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-equipment/anti_spettri.webp` |
-| Anti-Vampiri | _tools\src-packs\EQUIPAGGIAMENTO_E_TRASPORTI\Attrezzatura_e_Oggetti\witcher-equipment\anti_vampiri_a8c209f3b5cbf95b.json | `EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-equipment/anti_vampiri.webp` |
-| Candele (x5) | _tools\src-packs\EQUIPAGGIAMENTO_E_TRASPORTI\Attrezzatura_e_Oggetti\witcher-equipment\candele_x5_2dbbeeaa6ab742e8.json | `EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-equipment/candele_x5.webp` |
-| Diario / Libro Mastro | _tools\src-packs\EQUIPAGGIAMENTO_E_TRASPORTI\Attrezzatura_e_Oggetti\witcher-equipment\diario_libro_mastro_b59de88fc253d2b4.json | `EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-equipment/diario_libro_mastro.webp` |
-| Picchetti (x5) | _tools\src-packs\EQUIPAGGIAMENTO_E_TRASPORTI\Attrezzatura_e_Oggetti\witcher-equipment\picchetti_x5_1267697207ac492c.json | `EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-equipment/picchetti_x5.webp` |
-| Pietra Allarme (Pietra del Potere) | _tools\src-packs\EQUIPAGGIAMENTO_E_TRASPORTI\Attrezzatura_e_Oggetti\witcher-equipment\pietra_allarme_pietra_del_potere_b5a6c68e3b740061.json | `EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-equipment/pietra_allarme_pietra_del_potere.webp` |
-| Pietra Guardiana: Allarme | _tools\src-packs\EQUIPAGGIAMENTO_E_TRASPORTI\Attrezzatura_e_Oggetti\witcher-equipment\pietra_guardiana_allarme_3dec698af9a63db7.json | `EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-equipment/pietra_guardiana_allarme.webp` |
-| Rampino | _tools\src-packs\EQUIPAGGIAMENTO_E_TRASPORTI\Attrezzatura_e_Oggetti\witcher-equipment\rampino_773afe5f357947b7.json | `EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-equipment/rampino.webp` |
-| Razioni da Viaggio (1 giorno) | _tools\src-packs\EQUIPAGGIAMENTO_E_TRASPORTI\Attrezzatura_e_Oggetti\witcher-equipment\razioni_da_viaggio_1_giorno_8c1fc4ca62f8d45e.json | `EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-equipment/razioni_da_viaggio_1_giorno.webp` |
-| Ricettatore | _tools\src-packs\EQUIPAGGIAMENTO_E_TRASPORTI\Attrezzatura_e_Oggetti\witcher-equipment\ricettatore_c6b5ed14eda9e0c6.json | `EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-equipment/ricettatore.webp` |
-| Simbolo Sacro | _tools\src-packs\EQUIPAGGIAMENTO_E_TRASPORTI\Attrezzatura_e_Oggetti\witcher-equipment\simbolo_sacro_9122c168f86b758b.json | `EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-equipment/simbolo_sacro.webp` |
-| Tasca Segreta | _tools\src-packs\EQUIPAGGIAMENTO_E_TRASPORTI\Attrezzatura_e_Oggetti\witcher-equipment\tasca_segreta_3a3fa476fef7faeb.json | `EQUIPAGGIAMENTO_E_TRASPORTI/Attrezzatura_e_Oggetti/witcher-equipment/tasca_segreta.webp` |
+| Anti-Ancestrali | _tools\src-packs\EQUIPAGGIAMENTO\witcher-equipment\anti_ancestrali_01897166528f04c2.json | `EQUIPAGGIAMENTO/witcher-equipment/anti_ancestrali.webp` |
+| Anti-Costrutti | _tools\src-packs\EQUIPAGGIAMENTO\witcher-equipment\anti_costrutti_dd75a029513af7f7.json | `EQUIPAGGIAMENTO/witcher-equipment/anti_costrutti.webp` |
+| Anti-Dragonidi | _tools\src-packs\EQUIPAGGIAMENTO\witcher-equipment\anti_dragonidi_6d4f3bc2cbeec9ef.json | `EQUIPAGGIAMENTO/witcher-equipment/anti_dragonidi.webp` |
+| Anti-Ibridi | _tools\src-packs\EQUIPAGGIAMENTO\witcher-equipment\anti_ibridi_960d1a617e2a6847.json | `EQUIPAGGIAMENTO/witcher-equipment/anti_ibridi.webp` |
+| Anti-Insettoidi | _tools\src-packs\EQUIPAGGIAMENTO\witcher-equipment\anti_insettoidi_38a76fa165a6de46.json | `EQUIPAGGIAMENTO/witcher-equipment/anti_insettoidi.webp` |
+| Anti-Maledetti | _tools\src-packs\EQUIPAGGIAMENTO\witcher-equipment\anti_maledetti_69e7c869d29dc1bd.json | `EQUIPAGGIAMENTO/witcher-equipment/anti_maledetti.webp` |
+| Anti-Orchi | _tools\src-packs\EQUIPAGGIAMENTO\witcher-equipment\anti_orchi_071d9c96f5e1cfa0.json | `EQUIPAGGIAMENTO/witcher-equipment/anti_orchi.webp` |
+| Anti-Spettri | _tools\src-packs\EQUIPAGGIAMENTO\witcher-equipment\anti_spettri_e1d78826b093f749.json | `EQUIPAGGIAMENTO/witcher-equipment/anti_spettri.webp` |
+| Anti-Vampiri | _tools\src-packs\EQUIPAGGIAMENTO\witcher-equipment\anti_vampiri_a8c209f3b5cbf95b.json | `EQUIPAGGIAMENTO/witcher-equipment/anti_vampiri.webp` |
+| Candele (x5) | _tools\src-packs\EQUIPAGGIAMENTO\witcher-equipment\candele_x5_2dbbeeaa6ab742e8.json | `EQUIPAGGIAMENTO/witcher-equipment/candele_x5.webp` |
+| Diario / Libro Mastro | _tools\src-packs\EQUIPAGGIAMENTO\witcher-equipment\diario_libro_mastro_b59de88fc253d2b4.json | `EQUIPAGGIAMENTO/witcher-equipment/diario_libro_mastro.webp` |
+| Picchetti (x5) | _tools\src-packs\EQUIPAGGIAMENTO\witcher-equipment\picchetti_x5_1267697207ac492c.json | `EQUIPAGGIAMENTO/witcher-equipment/picchetti_x5.webp` |
+| Pietra Allarme (Pietra del Potere) | _tools\src-packs\EQUIPAGGIAMENTO\witcher-equipment\pietra_allarme_pietra_del_potere_b5a6c68e3b740061.json | `EQUIPAGGIAMENTO/witcher-equipment/pietra_allarme_pietra_del_potere.webp` |
+| Pietra Guardiana: Allarme | _tools\src-packs\EQUIPAGGIAMENTO\witcher-equipment\pietra_guardiana_allarme_3dec698af9a63db7.json | `EQUIPAGGIAMENTO/witcher-equipment/pietra_guardiana_allarme.webp` |
+| Rampino | _tools\src-packs\EQUIPAGGIAMENTO\witcher-equipment\rampino_773afe5f357947b7.json | `EQUIPAGGIAMENTO/witcher-equipment/rampino.webp` |
+| Razioni da Viaggio (1 giorno) | _tools\src-packs\EQUIPAGGIAMENTO\witcher-equipment\razioni_da_viaggio_1_giorno_8c1fc4ca62f8d45e.json | `EQUIPAGGIAMENTO/witcher-equipment/razioni_da_viaggio_1_giorno.webp` |
+| Ricettatore | _tools\src-packs\EQUIPAGGIAMENTO\witcher-equipment\ricettatore_c6b5ed14eda9e0c6.json | `EQUIPAGGIAMENTO/witcher-equipment/ricettatore.webp` |
+| Simbolo Sacro | _tools\src-packs\EQUIPAGGIAMENTO\witcher-equipment\simbolo_sacro_9122c168f86b758b.json | `EQUIPAGGIAMENTO/witcher-equipment/simbolo_sacro.webp` |
+| Tasca Segreta | _tools\src-packs\EQUIPAGGIAMENTO\witcher-equipment\tasca_segreta_3a3fa476fef7faeb.json | `EQUIPAGGIAMENTO/witcher-equipment/tasca_segreta.webp` |
+| Balestra dell'Orso | _tools\src-packs\EQUIPAGGIAMENTO\witcher-weapons\balestra_dell_orso_006d87c91fc31f98.json | `EQUIPAGGIAMENTO/witcher-weapons/balestra_dell_orso.webp` |
+| Lupo (Spada Lunga Reliquia) | _tools\src-packs\EQUIPAGGIAMENTO\witcher-weapons\lupo_spada_lunga_reliquia_570e1ae2633117e4.json | `EQUIPAGGIAMENTO/witcher-weapons/lupo_spada_lunga_reliquia.webp` |
+| Pugnale di Diaspro Sanguigno | _tools\src-packs\EQUIPAGGIAMENTO\witcher-weapons\pugnale_di_diaspro_sanguigno_004c9f9702b73e28.json | `EQUIPAGGIAMENTO/witcher-weapons/pugnale_di_diaspro_sanguigno.webp` |
+| Scorpione | _tools\src-packs\EQUIPAGGIAMENTO\witcher-weapons\scorpione_00056b29e0b098b1.json | `EQUIPAGGIAMENTO/witcher-weapons/scorpione.webp` |
+| Sentinella dell'Abisso | _tools\src-packs\EQUIPAGGIAMENTO\witcher-weapons\sentinella_dell_abisso_f1a2b3c4d5e6f7a8.json | `EQUIPAGGIAMENTO/witcher-weapons/sentinella_dell_abisso.webp` |
+| Spada d'Acciaio della Manticora | _tools\src-packs\EQUIPAGGIAMENTO\witcher-weapons\spada_d_acciaio_della_manticora_00c8757ce11b1778.json | `EQUIPAGGIAMENTO/witcher-weapons/spada_d_acciaio_della_manticora.webp` |
+| Spada d'Acciaio della Vipera | _tools\src-packs\EQUIPAGGIAMENTO\witcher-weapons\spada_d_acciaio_della_vipera_007aaca1e51e3768.json | `EQUIPAGGIAMENTO/witcher-weapons/spada_d_acciaio_della_vipera.webp` |
+| Spada d'Acciaio dell'Orso | _tools\src-packs\EQUIPAGGIAMENTO\witcher-weapons\spada_d_acciaio_dell_orso_000d890e417f601d.json | `EQUIPAGGIAMENTO/witcher-weapons/spada_d_acciaio_dell_orso.webp` |
+| Spada d'Acciaio del Gatto | _tools\src-packs\EQUIPAGGIAMENTO\witcher-weapons\spada_d_acciaio_del_gatto_4224936e2338517b.json | `EQUIPAGGIAMENTO/witcher-weapons/spada_d_acciaio_del_gatto.webp` |
+| Spada d'Acciaio del Grifone | _tools\src-packs\EQUIPAGGIAMENTO\witcher-weapons\spada_d_acciaio_del_grifone_3fd3cc4a053ee4e3.json | `EQUIPAGGIAMENTO/witcher-weapons/spada_d_acciaio_del_grifone.webp` |
+| Spada d'Acciaio del Lupo | _tools\src-packs\EQUIPAGGIAMENTO\witcher-weapons\spada_d_acciaio_del_lupo_b02556df7587bae1.json | `EQUIPAGGIAMENTO/witcher-weapons/spada_d_acciaio_del_lupo.webp` |
+| Spada d'Argento della Manticora | _tools\src-packs\EQUIPAGGIAMENTO\witcher-weapons\spada_d_argento_della_manticora_00ccb4382fba9b98.json | `EQUIPAGGIAMENTO/witcher-weapons/spada_d_argento_della_manticora.webp` |
+| Spada d'Argento della Vipera | _tools\src-packs\EQUIPAGGIAMENTO\witcher-weapons\spada_d_argento_della_vipera_0053aa0f430b0378.json | `EQUIPAGGIAMENTO/witcher-weapons/spada_d_argento_della_vipera.webp` |
+| Spada d'Argento dell'Orso | _tools\src-packs\EQUIPAGGIAMENTO\witcher-weapons\spada_d_argento_dell_orso_003af6d3fb73c238.json | `EQUIPAGGIAMENTO/witcher-weapons/spada_d_argento_dell_orso.webp` |
+| Spada d'Argento del Gatto | _tools\src-packs\EQUIPAGGIAMENTO\witcher-weapons\spada_d_argento_del_gatto_ba58a4bbe6f32d69.json | `EQUIPAGGIAMENTO/witcher-weapons/spada_d_argento_del_gatto.webp` |
+| Spada d'Argento del Grifone | _tools\src-packs\EQUIPAGGIAMENTO\witcher-weapons\spada_d_argento_del_grifone_a76cd51e95ac556f.json | `EQUIPAGGIAMENTO/witcher-weapons/spada_d_argento_del_grifone.webp` |
+| Spada d'Argento del Lupo | _tools\src-packs\EQUIPAGGIAMENTO\witcher-weapons\spada_d_argento_del_lupo_19d88746db960774.json | `EQUIPAGGIAMENTO/witcher-weapons/spada_d_argento_del_lupo.webp` |
+| Zanna della Vipera | _tools\src-packs\EQUIPAGGIAMENTO\witcher-weapons\zanna_della_vipera_00091b914a4c2757.json | `EQUIPAGGIAMENTO/witcher-weapons/zanna_della_vipera.webp` |
 | La Vita di un Witcher | _tools\src-packs\REGOLAMENTO_E_NARRATIVA\Lore_e_Racconti\witcher-lore\la_vita_di_un_witcher_a96151f1c5056cb4.json | `REGOLAMENTO_E_NARRATIVA/Lore_e_Racconti/witcher-lore/la_vita_di_un_witcher.webp` |
 | L'Epoca d'Oro dei Witcher | _tools\src-packs\REGOLAMENTO_E_NARRATIVA\Lore_e_Racconti\witcher-lore\l_epoca_d_oro_dei_witcher_25d364d388062598.json | `REGOLAMENTO_E_NARRATIVA/Lore_e_Racconti/witcher-lore/l_epoca_d_oro_dei_witcher.webp` |
 | Demoni Maggiori e Veri Nomi | _tools\src-packs\REGOLAMENTO_E_NARRATIVA\Lore_e_Racconti\witcher-lore-chaos\demoni_maggiori_e_veri_nomi_d43dc5b0ad179b66.json | `REGOLAMENTO_E_NARRATIVA/Lore_e_Racconti/witcher-lore-chaos/demoni_maggiori_e_veri_nomi.webp` |

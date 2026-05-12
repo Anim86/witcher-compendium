@@ -1,0 +1,24 @@
+{
+    "_id": "00cf2898878221ef",
+    "name": "Custodia per Arco",
+    "type": "valuable",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/custodia_per_arco.webp",
+    "system": {
+        "description": "<p>Una custodia protettiva per arco e faretra, ideale per proteggere l'arma durante lunghi spostamenti.</p>",
+        "weight": 1.5,
+        "cost": 24,
+        "quantity": 1,
+        "sourcebook": "MB 95"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

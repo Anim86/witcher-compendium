@@ -1,0 +1,19 @@
+{
+    "_id": "98a5095142388ea4",
+    "name": "Spada d'Argento da Witcher",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-special/spada_d_argento_da_witcher.webp",
+    "system": {
+        "description": "<p>Forgiate apposta per una determinata persona o evento. Pref: 0, Danno: 1d6+2, Mani: 1, AffidabilitÃ : 10, Effetti: Argento (3d6).</p>\n<p><i>Tutto l'equipaggiamento presentato in questo capitolo è più che raro. Questi oggetti e formule dovrebbero essere le ricompense per missioni importanti o quando un personaggio li cerca appositamente.</i> — MB 246</p>\n<p><b>RaritÃ :</b> Molto Raro. Non vendibile (MB 246-250).</p>",
+        "weight": 1.5,
+        "cost": 497,
+        "quantity": 1,
+        "toxicity": "0%",
+        "duration": "N/A",
+        "sourcebook": "MB 247"
+    },
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

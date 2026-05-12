@@ -1,0 +1,59 @@
+{
+    "_id": "90750e6f288a4af4",
+    "name": "Balestra",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/balestra.webp",
+    "system": {
+        "description": "<p>Robusta, accurata e potente. Di' pure che faccio preferenze, ma la balestra l'adoro. Certo, ci vuole un po' per ricaricarla. Ma un balestriere svelto riesce a tirare una bella sfilza di dardi, con una precisione che la maggior parte degli archi umani si sogna. Il calcio di legno permette di appoggiarla alla spalla, di mirare e di tirare molto più dritto. Usavo una di queste nella Seconda Guerra Settentrionale e mi è sempre stata utile. Bodkin I dardi smussati e a punta cava sono ottimi se miri contro qualcuno che non ha armatura. Eh, il problema è che i più hanno abbastanza buon senso da mettersi qualche armatu- ra e a te tocca fare i salti mortali per cercare di trapassarle. Ed è qui che entrano in gioco i bodkin. Prendi un lungo puntale rastremato, lo tempri nel fuoco ed eccolo che perfora cuoio e acciaio.</p>",
+        "cost": 455,
+        "reliability": {
+            "max": 5,
+            "value": 5
+        },
+        "reach": "100m",
+        "effects": "Ricarica Lenta",
+        "sourcebook": "MB 40",
+        "range": "100m",
+        "type": {
+            "text": "",
+            "slashing": false,
+            "piercing": true,
+            "bludgeoning": false,
+            "elemental": false
+        },
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "isMeteorite": false,
+            "isNonLethal": false,
+            "effects": [
+                {
+                    "id": "0003045093ecacc9",
+                    "name": "Ricarica Lenta",
+                    "statusEffect": null,
+                    "percentage": 100,
+                    "varEffect": false
+                }
+            ]
+        },
+        "weight": 3,
+        "rarity": "Diffusa",
+        "damage": "4d6+2",
+        "hands": 2,
+        "accuracy": 1,
+        "unmodifiedMax": {}
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

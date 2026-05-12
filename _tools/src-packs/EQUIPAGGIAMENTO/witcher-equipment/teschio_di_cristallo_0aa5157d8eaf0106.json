@@ -1,0 +1,17 @@
+{
+    "_id": "0aa5157d8eaf0106",
+    "name": "Teschio di Cristallo",
+    "type": "valuable",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-equipment/teschio_di_cristallo.webp",
+    "system": {
+        "description": "<p>Teschio animale cristallizzato che può animarsi in un animale (cane, gatto, ecc.) ubbidiente tramite comando mentale.</p><p><i>Peso stimato — non indicato nel manuale (TC 119-128).</i></p>",
+        "weight": 1,
+        "cost": 700,
+        "quantity": 1,
+        "sourcebook": "TC 121"
+    },
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

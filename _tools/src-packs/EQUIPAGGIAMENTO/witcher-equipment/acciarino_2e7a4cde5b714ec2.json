@@ -1,0 +1,23 @@
+{
+    "_id": "2e7a4cde5b714ec2",
+    "name": "Acciarino",
+    "type": "valuable",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-equipment/acciarino.webp",
+    "system": {
+        "description": "<p>Un pezzo di pietra focaia e un acciarino. Battili insieme e fanno una pioggia di scintille con cui accendere il fuoco.</p>",
+        "weight": 0.1,
+        "cost": 6,
+        "sourcebook": "MB 95"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

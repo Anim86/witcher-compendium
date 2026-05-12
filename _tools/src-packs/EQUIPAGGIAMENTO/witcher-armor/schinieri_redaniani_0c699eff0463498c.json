@@ -1,0 +1,55 @@
+{
+    "_id": "0c699eff0463498c",
+    "name": "Schinieri Redaniani",
+    "type": "armor",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-armor/schinieri_redaniani.webp",
+    "system": {
+        "description": "<p>Proprio come le loro armature per il torso, le protezioni per gambe degli alabardieri redaniani non sono niente di spe- ciale. Semplici pantaloni di cuoio, schinieri e una conchi- glia. Sempre preferire la mobilitÃ  alla forza.</p>",
+        "cost": 400,
+        "reliability": {
+            "value": 0,
+            "max": 0
+        },
+        "sourcebook": "MB 82",
+        "type": "Medium",
+        "location": "Leg",
+        "encumb": 0,
+        "enhancements": 1,
+        "headStopping": 0,
+        "headMaxStopping": 0,
+        "torsoStopping": 0,
+        "torsoMaxStopping": 0,
+        "leftArmStopping": 0,
+        "leftArmMaxStopping": 0,
+        "rightArmStopping": 0,
+        "rightArmMaxStopping": 0,
+        "leftLegStopping": 14,
+        "leftLegMaxStopping": 14,
+        "rightLegStopping": 14,
+        "rightLegMaxStopping": 14,
+        "bludgeoning": false,
+        "slashing": false,
+        "piercing": false,
+        "elemental": false,
+        "fire": false,
+        "poison": false,
+        "bleeding": false,
+        "weight": 4,
+        "rarity": "Scarsa",
+        "stoppingPower": 14,
+        "protection": {},
+        "encumbranceMod": 0,
+        "unmodifiedMax": {}
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

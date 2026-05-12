@@ -1,0 +1,58 @@
+{
+    "_id": "1d38b8f9c55f420d",
+    "name": "Costoliere",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/costoliere.webp",
+    "system": {
+        "description": "<p>Eh, un po' di buon vecchio stile temeriano. Lungo, sottile e leggero. Mi son trovato a combattere un Nero alla Battaglia di Sodden con uno di questi. Mi ha rotto sei costole, ma io ci sono ancora e lui no.</p>",
+        "cost": 350,
+        "reliability": {
+            "max": 10,
+            "value": 10
+        },
+        "reach": "N/A",
+        "effects": "Sanguinamento (25%)",
+        "sourcebook": "MB 16",
+        "type": {
+            "text": "",
+            "slashing": true,
+            "piercing": true,
+            "bludgeoning": false,
+            "elemental": false
+        },
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "isMeteorite": false,
+            "isNonLethal": false,
+            "effects": [
+                {
+                    "id": "00096a6b21a1fcf1",
+                    "name": "sanguinamento",
+                    "statusEffect": null,
+                    "percentage": 25,
+                    "varEffect": false
+                }
+            ]
+        },
+        "weight": 1,
+        "rarity": "Scarsa",
+        "damage": "2d6+2",
+        "hands": 1,
+        "accuracy": 1,
+        "unmodifiedMax": {}
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}
