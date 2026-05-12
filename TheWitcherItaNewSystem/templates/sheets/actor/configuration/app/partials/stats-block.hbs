@@ -1,34 +1,110 @@
 {{#each stats as |details stat|}}
     {{#unless (eq (localize details.label) (localize 'WITCHER.Actor.Stat.Toxicity'))}}
-        <div class="config-stat-row">
+        <div class="config-stat-row" data-stat="{{stat}}" data-type="{{@root.type}}">
             <div class="stat-main-row">
                 <div class="stat-label-group">
-                    <i class="fa-solid fa-scroll stat-icon"></i>
-                    <span class="stat-name">{{localize details.label}}</span>
+                    <div class="stat-icon">
+                         {{#if (eq stat 'int')}}<i class="fa-solid fa-brain"></i>{{/if}}
+                         {{#if (eq stat 'ref')}}<i class="fa-solid fa-person-running"></i>{{/if}}
+                         {{#if (eq stat 'dex')}}<i class="fa-solid fa-arrows-to-dot"></i>{{/if}}
+                         {{#if (eq stat 'body')}}<i class="fa-solid fa-child"></i>{{/if}}
+                         {{#if (eq stat 'spd')}}<i class="fa-solid fa-bolt"></i>{{/if}}
+                         {{#if (eq stat 'emp')}}<i class="fa-solid fa-heart"></i>{{/if}}
+                         {{#if (eq stat 'cra')}}<i class="fa-solid fa-hammer"></i>{{/if}}
+                         {{#if (eq stat 'will')}}<i class="fa-solid fa-fire"></i>{{/if}}
+                         {{#if (eq stat 'luck')}}<i class="fa-solid fa-clover"></i>{{/if}}
+                         {{#if (eq stat 'stun')}}<i class="fa-solid fa-face-dizzy"></i>{{/if}}
+                         {{#if (eq stat 'run')}}<i class="fa-solid fa-wind"></i>{{/if}}
+                         {{#if (eq stat 'leap')}}<i class="fa-solid fa-up-long"></i>{{/if}}
+                         {{#if (eq stat 'hp')}}<i class="fa-solid fa-heart"></i>{{/if}}
+                         {{#if (eq stat 'sta')}}<i class="fa-solid fa-bolt"></i>{{/if}}
+                         {{#if (eq stat 'vigor')}}<i class="fa-solid fa-hand-holding-hand"></i>{{/if}}
+                         {{#if (eq stat 'enc')}}<i class="fa-solid fa-weight-hanging"></i>{{/if}}
+                         {{#if (eq stat 'rec')}}<i class="fa-solid fa-suitcase-medical"></i>{{/if}}
+                         {{#if (eq stat 'resolve')}}<i class="fa-solid fa-shield-heart"></i>{{/if}}
+                         {{#if (eq stat 'focus')}}<i class="fa-solid fa-eye"></i>{{/if}}
+                         {{#if (eq stat 'shield')}}<i class="fa-solid fa-shield-halved"></i>{{/if}}
+                         {{#if (eq stat 'woundTreshold')}}<i class="fa-solid fa-droplet-slash"></i>{{/if}}
+                    </div>
+                    <span class="stat-name">
+                        {{#if (eq @root.type 'stats')}}
+                            {{#if (eq stat 'luck')}}
+                                {{localize 'WITCHER.StLuck'}}
+                            {{else}}
+                                {{localize (concat 'WITCHER.St' (capitalize stat))}}
+                            {{/if}}
+                        {{else}}
+                            {{localize details.label}}
+                        {{/if}}
+                    </span>
                 </div>
                 
-                <div class="stat-base-input">
-                    <label>{{localize 'WITCHER.Actor.StatTitle.ModMax'}}</label>
-                    <input class='stat-max-input' name='system.{{@root.type}}.{{stat}}.unmodifiedMax' type='number'
-                        value='{{details.unmodifiedMax}}' placeholder='0' data-dtype='Number' />
-                </div>
-            </div>
-            
-            <div class='stat-modifiers-container'>
-                <div class="modifiers-header">
-                    <span class="mod-title"><i class="fa-solid fa-wand-sparkles"></i> {{localize 'WITCHER.Actor.Resources.modifiers'}}</span>
+                <div class="stat-controls">
+                    <div class="stat-base-input">
+                        <label>{{localize 'WITCHER.Actor.StatTitle.ModMax'}}</label>
+                        <input class='stat-max-input' name='system.{{@root.type}}.{{stat}}.unmodifiedMax' type='number'
+                            value='{{details.unmodifiedMax}}' placeholder='0' data-dtype='Number' />
+                    </div>
+                    
                     <a class="add-modifier" data-stat="{{stat}}" data-type="{{@root.type}}" data-tooltip="{{localize 'WITCHER.Actor.Button.Add'}}">
                         <i class="fas fa-plus-circle"></i>
                     </a>
                 </div>
+            </div>
+            
+            {{#if details.modifiers.length}}
+                <div class='stat-modifiers-container'>
+                    <div class="modifiers-list">
+                        {{#each details.modifiers as |modifier idx|}}
+                            <div class='modifier-item' data-id='{{modifier.id}}' data-type="{{@root.type}}" data-stat="{{stat}}">
+                                <input class='mod-name' data-field='name' type='text' value='{{modifier.name}}' placeholder="..." />
+                                <div class="mod-value-group">
+                                    <input class='mod-value' data-field='value' type='number' value='{{modifier.value}}' />
+                                    <a class='delete-stat' data-id='{{modifier.id}}' data-stat="{{stat}}" data-type="{{@root.type}}" data-tooltip="{{localize 'WITCHER.Actor.Button.Delete'}}">
+                                        <i class='fas fa-trash-can'></i>
+                                    </a>
+                                </div>
+                            </div>
+                        {{/each}}
+                    </div>
+                </div>
+            {{/if}}
+        </div>
+    {{/unless}}
+{{/each}}
+
+{{#if reputation}}
+    <div class="config-stat-row reputation" data-stat="reputation" data-type="reputation">
+        <div class="stat-main-row">
+            <div class="stat-label-group">
+                <div class="stat-icon">
+                    <i class="fa-solid fa-crown"></i>
+                </div>
+                <span class="stat-name">{{localize 'WITCHER.Reputation'}}</span>
+            </div>
+            
+            <div class="stat-controls">
+                <div class="stat-base-input">
+                    <label>{{localize 'WITCHER.Actor.StatTitle.ModMax'}}</label>
+                    <input class='stat-max-input' name='system.reputation.unmodifiedMax' type='number' value='{{reputation.unmodifiedMax}}'
+                        placeholder='0' data-dtype='Number' />
+                </div>
                 
+                <a class="add-modifier" data-stat="reputation" data-type="reputation" data-tooltip="{{localize 'WITCHER.Actor.Button.Add'}}">
+                    <i class="fas fa-plus-circle"></i>
+                </a>
+            </div>
+        </div>
+        
+        {{#if reputation.modifiers.length}}
+            <div class='stat-modifiers-container'>
                 <div class="modifiers-list">
-                    {{#each details.modifiers as |modifier idx|}}
-                        <div class='modifier-item' data-id='{{modifier.id}}' data-type="{{@root.type}}" data-stat="{{stat}}">
+                    {{#each reputation.modifiers as |modifier idx|}}
+                        <div class='modifier-item' data-id='{{modifier.id}}' data-type="reputation" data-stat="reputation">
                             <input class='mod-name' data-field='name' type='text' value='{{modifier.name}}' placeholder="..." />
                             <div class="mod-value-group">
                                 <input class='mod-value' data-field='value' type='number' value='{{modifier.value}}' />
-                                <a class='delete-stat' data-id='{{modifier.id}}' data-tooltip="{{localize 'WITCHER.Actor.Button.Delete'}}">
+                                <a class='delete-stat' data-id='{{modifier.id}}' data-stat="reputation" data-type="reputation" data-tooltip="{{localize 'WITCHER.Actor.Button.Delete'}}">
                                     <i class='fas fa-trash-can'></i>
                                 </a>
                             </div>
@@ -36,44 +112,6 @@
                     {{/each}}
                 </div>
             </div>
-        </div>
-    {{/unless}}
-{{/each}}
-
-{{#if reputation}}
-    <div class="config-stat-row reputation">
-        <div class="stat-main-row">
-            <div class="stat-label-group">
-                <i class="fa-solid fa-crown stat-icon"></i>
-                <span class="stat-name">{{localize 'WITCHER.Reputation'}}</span>
-            </div>
-            <div class="stat-base-input">
-                <label>{{localize 'WITCHER.Actor.StatTitle.ModMax'}}</label>
-                <input class='stat-max-input' name='system.reputation.unmodifiedMax' type='number' value='{{reputation.unmodifiedMax}}'
-                    placeholder='0' data-dtype='Number' />
-            </div>
-        </div>
-        
-        <div class='stat-modifiers-container'>
-             <div class="modifiers-header">
-                <span class="mod-title"><i class="fa-solid fa-wand-sparkles"></i> {{localize 'WITCHER.Actor.Resources.modifiers'}}</span>
-                <a class="add-modifier" data-stat="reputation" data-type="reputation" data-tooltip="{{localize 'WITCHER.Actor.Button.Add'}}">
-                    <i class="fas fa-plus-circle"></i>
-                </a>
-            </div>
-            <div class="modifiers-list">
-                {{#each reputation.modifiers as |modifier idx|}}
-                    <div class='modifier-item' data-id='{{modifier.id}}' data-type="reputation" data-stat="reputation">
-                        <input class='mod-name' data-field='name' type='text' value='{{modifier.name}}' placeholder="..." />
-                        <div class="mod-value-group">
-                            <input class='mod-value' data-field='value' type='number' value='{{modifier.value}}' />
-                            <a class='delete-stat' data-id='{{modifier.id}}' data-tooltip="{{localize 'WITCHER.Actor.Button.Delete'}}">
-                                <i class='fas fa-trash-can'></i>
-                            </a>
-                        </div>
-                    </div>
-                {{/each}}
-            </div>
-        </div>
+        {{/if}}
     </div>
 {{/if}}

@@ -1,49 +1,68 @@
-/* ── List / Section headers ── */
-.list-header,
+/* ── Section Headers (Top Level) ── */
 .section-header {
     display: grid;
     align-items: center;
-    padding: 5px 10px;
-    border-radius: 7px;
-    background: light-dark(rgba(28,104,136,0.09), rgba(14,50,70,0.55));
-    border: 1px solid light-dark(rgba(28,104,136,0.2), rgba(44,136,175,0.22));
-    margin: 5px 0;
-    gap: 16px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(210, 190, 140, 0.2);
+    margin: 12px 0 6px 0;
+    gap: 10px;
     list-style: none;
-    cursor: pointer;
-    transition: background 0.2s, border-color 0.2s;
+    position: relative;
 }
 
-.list-header:hover,
-.section-header:hover {
-    background: light-dark(rgba(28,104,136,0.16), rgba(28,104,136,0.35));
-    border-color: light-dark(rgba(28,104,136,0.35), rgba(44,136,175,0.4));
-}
-
-.list-header > .chevron-icon {
-    width: 16px;
-    justify-self: center;
-    transition: transform 0.25s ease;
-    color: light-dark(rgba(28,104,136,0.7), rgba(44,136,175,0.8));
-}
-
-details[open] .list-header > .chevron-icon { transform: rotate(180deg); }
-
-.list-header h2,
 .section-header h2 {
     margin: 0;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 800;
-    letter-spacing: 0.3px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: rgba(210, 190, 140, 0.9);
 }
 
-.list-header h3,
-.section-header h3,
-.list-details h3 {
-    font-size: 15px;
+/* ── List Headers (Sub Categories) ── */
+.list-header {
+    display: grid;
+    align-items: center;
+    padding: 4px 10px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    margin: 2px 0;
+    gap: 10px;
+    list-style: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.list-header:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ── Hierarchy Indentation ── */
+.substances-section .list,
+.inventory-section .list,
+details .list,
+.list-header {
+    margin-left: 15px; /* Indent everything inside a section */
+}
+
+/* Vertical guide line for sections */
+.substances-section,
+.inventory-section {
+    position: relative;
+    border-left: 1px solid rgba(255, 255, 255, 0.05);
+    margin-bottom: 10px;
+}
+
+.list-header h3 {
+    font-size: 13px;
     margin: 0;
     border: none;
-    font-weight: 700;
+    font-weight: 600;
+    color: #e8e0d4;
 }
 
 /* ── Expanded item info ── */
@@ -53,8 +72,8 @@ details[open] .list-header > .chevron-icon { transform: rotate(180deg); }
     padding: 8px 6px;
     gap: 5px;
     box-shadow:
-        inset 0 4px 8px -8px light-dark(rgba(28,104,136,0.2), rgba(0,0,0,0.5)),
-        inset 0 -4px 8px -8px light-dark(rgba(28,104,136,0.2), rgba(0,0,0,0.5));
+        inset 0 4px 8px -8px rgba(0,0,0,0.4),
+        inset 0 -4px 8px -8px rgba(0,0,0,0.4);
 }
 
 .list-item-info.invisible { display: none; }
@@ -64,14 +83,14 @@ details[open] .list-header > .chevron-icon { transform: rotate(180deg); }
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
 }
 
 .list-label > span {
     flex: 0 0 60px;
     width: 60px;
     text-align: center;
-    padding: 4px;
+    padding: 3px;
     font-size: 12px;
     display: flex;
     justify-content: center;
@@ -86,27 +105,27 @@ details[open] .list-header > .chevron-icon { transform: rotate(180deg); }
 }
 
 .list-header .list-label > span {
-    border-left: 1px solid light-dark(rgba(28,104,136,0.25), rgba(44,136,175,0.3));
+    border-left: 1px solid rgba(255, 255, 255, 0.08);
     box-sizing: border-box;
-    height: 26px;
-    font-size: 11px;
+    height: 22px;
+    font-size: 10px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.4px;
-    color: light-dark(rgba(28,104,136,0.9), rgba(44,136,175,0.85));
+    color: rgba(210, 190, 140, 0.6);
 }
 
 .list-details .list-label > span.interactive:hover,
 .list-details .list-label > span a:hover {
     padding: 4px;
-    background: light-dark(rgba(255,255,255,0.4), rgba(255,255,255,0.08));
+    background: rgba(255,255,255,0.06);
     border-radius: 5px;
     transition: all 0.2s ease;
 }
 
 .list-item-info h3,
 .list-item-description h3 {
-    border-bottom: 1px solid light-dark(rgba(28,104,136,0.2), rgba(44,136,175,0.2));
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
     font-size: 13px;
     margin-bottom: 4px;
 }
@@ -133,10 +152,10 @@ details[open] .list-header > .chevron-icon { transform: rotate(180deg); }
 .list-details {
     display: grid;
     margin: 0;
-    border-bottom: 1px solid light-dark(rgba(28,104,136,0.1), rgba(44,136,175,0.1));
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
     align-items: center;
     justify-content: center;
-    gap: 16px;
+    gap: 10px;
     transition: background 0.18s ease;
     padding: 2px 10px;
 }
@@ -145,7 +164,7 @@ details[open] .list-header > .chevron-icon { transform: rotate(180deg); }
 
 .list-details:hover {
     border-radius: 5px;
-    background: light-dark(rgba(28,104,136,0.08), rgba(28,104,136,0.18));
+    background: rgba(255, 255, 255, 0.04);
 }
 
 .list-details:hover > .display-details > img { display: none; }
@@ -159,18 +178,18 @@ details[open] .list-header > .chevron-icon { transform: rotate(180deg); }
     flex-wrap: wrap;
     place-content: center;
     text-shadow: none;
-    color: light-dark(#1a2530, #e8e0d4);
+    color: #e8e0d4;
     font-size: 22px;
-    border-radius: 6px;
-    width: 40px;
-    height: 40px;
-    border: 1px solid light-dark(rgba(28,104,136,0.2), rgba(44,136,175,0.25));
-    background: light-dark(rgba(28,104,136,0.05), rgba(28,104,136,0.1));
+    border-radius: 5px;
+    width: 36px;
+    height: 36px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(0, 0, 0, 0.2);
     transition: border-color 0.2s;
 }
 
 .item-list-image:hover {
-    border-color: light-dark(rgba(28,104,136,0.45), rgba(44,136,175,0.5));
+    border-color: rgba(210, 190, 140, 0.3);
 }
 
 /* ── Reliability ── */
@@ -204,11 +223,11 @@ details[open] .list-header > .chevron-icon { transform: rotate(180deg); }
     transition: color 0.18s;
 }
 
-.item-equip:hover { color: #1c6888; }
-.item-chat:hover  { color: #c9a84c; }
+.item-equip:hover { color: rgba(210, 190, 140, 0.8); }
+.item-chat:hover  { color: rgba(210, 190, 140, 0.8); }
 
 a.equipped {
-    color: light-dark(#1c6888, #2a8aaf);
+    color: rgba(210, 190, 140, 0.7);
     text-shadow: none;
 }
 
@@ -231,11 +250,11 @@ a.equipped {
 }
 
 .toggle-hand-icon:not(.equipped) {
-    color: light-dark(rgba(25,25,25,0.35), rgba(255,255,255,0.2));
+    color: rgba(255,255,255,0.2);
     text-shadow: none;
 }
 
 .toggle-hand-icon:has(.equipped) {
-    color: light-dark(#1a2530, #e8e0d4);
+    color: #e8e0d4;
     text-shadow: none;
 }

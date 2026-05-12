@@ -5,67 +5,91 @@ import ChatMessageData from '../../../chatMessage/chatMessageData.js';
 export let statMixin = {
     _onStatModifierDisplay(event) {
         event.preventDefault();
-        let stat = event.currentTarget.closest('.stat-display').dataset.stat;
+        const statDisplay = event.currentTarget.closest('.stat-display') || event.currentTarget.closest('.config-stat-row');
+        const stat = event.currentTarget.dataset.stat || statDisplay?.dataset.stat;
+        const type = event.currentTarget.dataset.type || statDisplay?.dataset.type;
 
-        if (stat == 'toxicity') {
+        if (stat === 'toxicity') {
             this.actor.update({ [`system.stats.${stat}.isOpened`]: !this.actor.system.stats[stat].isOpened });
-        } else if (stat == 'reputation') {
-            this.actor.update({ [`system.${stat}.isOpened`]: !this.actor.system[stat].isOpened });
+        } else if (stat === 'reputation' || type === 'reputation') {
+            this.actor.update({ [`system.reputation.isOpened`]: !this.actor.system.reputation.isOpened });
         } else {
+            const origin = this.statMap?.[stat]?.origin || (type === 'stats' ? 'stats' : 'derivedStats');
             this.actor.update({
-                [`system.${this.statMap[stat].origin}.${stat}.isOpened`]:
-                    !this.actor.system[this.statMap[stat].origin][stat].isOpened
+                [`system.${origin}.${stat}.isOpened`]: !this.actor.system[origin][stat].isOpened
             });
         }
     },
 
     async _onEditStatModifier(event) {
         event.preventDefault();
-        let stat = event.currentTarget.closest('.stat-display').dataset.stat;
+        const currentTarget = event.currentTarget;
+        const modifierItem = currentTarget.closest('.modifier-item');
+        const statDisplay = currentTarget.closest('.stat-display') || currentTarget.closest('.config-stat-row');
+        
+        const stat = currentTarget.dataset.stat || modifierItem?.dataset.stat || statDisplay?.dataset.stat;
+        const type = currentTarget.dataset.type || modifierItem?.dataset.type || statDisplay?.dataset.type;
+        const itemId = currentTarget.dataset.id || modifierItem?.dataset.id;
+        const field = currentTarget.dataset.field;
+        const value = currentTarget.value;
 
-        let element = event.currentTarget;
-        let itemId = element.closest('.list-modifiers').dataset.id;
+        if (!stat || !itemId || !field) {
+            console.error("Witcher TRPG | Dati mancanti per la modifica del modificatore", {stat, itemId, field, value});
+            return;
+        }
 
-        let field = element.dataset.field;
-        let value = element.value;
         let modifiers = [];
+        let path = "";
 
-        if (stat == 'reputation') {
-            modifiers = this.actor.system.reputation.modifiers;
+        if (stat === 'reputation' || type === 'reputation') {
+            modifiers = foundry.utils.deepClone(this.actor.system.reputation.modifiers);
+            path = "system.reputation.modifiers";
         } else {
-            modifiers = this.actor.system[this.statMap[stat].origin][stat].modifiers;
+            const origin = this.statMap?.[stat]?.origin || (type === 'stats' ? 'stats' : 'derivedStats');
+            modifiers = foundry.utils.deepClone(this.actor.system[origin][stat].modifiers);
+            path = `system.${origin}.${stat}.modifiers`;
         }
 
         let objIndex = modifiers.findIndex(obj => obj.id == itemId);
-        modifiers[objIndex][field] = value;
-
-        if (stat == 'reputation') {
-            this.actor.update({ [`system.${stat}.modifiers`]: modifiers });
-        } else {
-            this.actor.update({ [`system.${this.statMap[stat].origin}.${stat}.modifiers`]: modifiers });
+        if (objIndex !== -1) {
+            modifiers[objIndex][field] = value;
+            await this.actor.update({ [path]: modifiers });
         }
     },
 
     async _onRemoveStatModifier(event) {
         event.preventDefault();
-        let stat = event.currentTarget.closest('.stat-display').dataset.stat;
-        let type = event.currentTarget.closest('.stat-display').dataset.type;
+        const currentTarget = event.currentTarget;
+        const modifierItem = currentTarget.closest('.modifier-item');
+        const statDisplay = currentTarget.closest('.stat-display') || currentTarget.closest('.config-stat-row');
+        
+        // Cerca stat e type nei dataset, provando diverse posizioni possibili
+        const stat = currentTarget.dataset.stat || modifierItem?.dataset.stat || statDisplay?.dataset.stat;
+        const type = currentTarget.dataset.type || modifierItem?.dataset.type || statDisplay?.dataset.type;
+        const id = currentTarget.dataset.id;
+        
+        if (!stat || !type || !id) {
+            console.error("Witcher TRPG | Impossibile trovare stat, type o id per la rimozione del modificatore", {stat, type, id, event});
+            return;
+        }
+
         let prevModList = [];
-        if (type == 'derived') {
+        if (type === 'derived' || type === 'derivedStats') {
             prevModList = this.actor.system.derivedStats[stat].modifiers;
-        } else if (type == 'reputation') {
+        } else if (type === 'reputation') {
             prevModList = this.actor.system.reputation.modifiers;
         } else {
             prevModList = this.actor.system.stats[stat].modifiers;
         }
-        const newModList = Object.values(prevModList).map(details => details);
-        const idxToRm = newModList.findIndex(v => v.id === event.target.dataset.id);
-        newModList.splice(idxToRm, 1);
 
-        if (stat == 'reputation') {
-            this.actor.update({ [`system.${stat}.modifiers`]: newModList });
+        const newModList = prevModList.filter(v => v.id !== id);
+
+        if (type === 'reputation') {
+            await this.actor.update({ [`system.${type}.modifiers`]: newModList });
         } else {
-            this.actor.update({ [`system.${this.statMap[stat].origin}.${stat}.modifiers`]: newModList });
+            // Usa la mappa delle statistiche se disponibile, altrimenti fallback sul tipo
+            const origin = this.statMap?.[stat]?.origin || (type === 'stats' ? 'stats' : 'derivedStats');
+            await this.actor.update({ [`system.${origin}.${stat}.modifiers`]: newModList });
         }
     },
 

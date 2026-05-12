@@ -580,7 +580,7 @@ export default class WitcherCharacterSheet extends WitcherActorSheet {
                     class: "standard-button gold",
                     callback: async (event, button, dialog) => {
                         const newLevel = parseInt(dialog.element.querySelector('[name="repLevel"]').value);
-                        await actor.update({ "system.reputation.max": newLevel });
+                        await actor.update({ "system.reputation.unmodifiedMax": newLevel });
                     }
                 },
                 {

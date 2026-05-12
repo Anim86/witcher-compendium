@@ -878,7 +878,7 @@
         "StLuck": "Fortuna",
         "StSpd": "Velocità",
         "StVigor": "Vigor",
-        "StReputation": "Rep",
+        "StReputation": "Reputazione",
         "CritWound": {
             "Header": "Ferite Critiche",
             "HealingTime.Label": "Giorni alla Guarigione",
@@ -1636,16 +1636,16 @@
         },
         "deprecations": {
             "lifepathModifiers": {
-                "title": "Lifepath Modifiers",
-                "text": "Lifepath Modifiers attack boni where changed. This MUST be done before switching to v14. Re-add them via the active effect wizard for the following actors"
+                "title": "Modificatori Percorso Vitale",
+                "text": "I bonus ai tiri dei Modificatori Percorso Vitale sono cambiati. Questo DEVE essere fatto prima di passare alla v14. Riaggiungili tramite il wizard degli effetti attivi per i seguenti attori"
             },
             "statSkillModifiers": {
-                "title": "Stat or Skill Modifiers",
-                "text": "Stat and Skill Modifiers are deprecated. This MUST be done before switching to v14. Move them to active effects for the following actors"
+                "title": "Modificatori Statistiche o Abilità",
+                "text": "I Modificatori di Statistiche e Abilità sono deprecati. Questo DEVE essere fatto prima di passare alla v14. Spostali negli effetti attivi per i seguenti attori"
             },
             "oldCriticalWounds": {
-                "title": "Critical Wounds deprecation",
-                "text": "Critical Wounds were moved to items. This MUST be done before switching to v14. Replace the wounds of these actors."
+                "title": "Deprecazione Ferite Critiche",
+                "text": "Le Ferite Critiche sono state spostate negli oggetti. Questo DEVE essere fatto prima di passare alla v14. Sostituisci le ferite di questi attori."
             }
         },
         "AssociatedDiagram": {

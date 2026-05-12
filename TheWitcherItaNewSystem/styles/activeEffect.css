@@ -14,12 +14,14 @@
     margin-bottom: 15px;
     border-radius: 4px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+    min-height: 45px;
 }
 
 .section-header-premium .header-main {
     display: flex;
     align-items: center;
     gap: 12px;
+    flex: 1;
 }
 
 .section-header-premium .header-icon {
@@ -206,7 +208,8 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    flex: 1;
+    flex: 0 0 40%; /* Fixed width for labels to prevent overlap */
+    min-width: 0;
 }
 
 .header-label {
@@ -215,16 +218,20 @@
     font-family: 'Goudy Old Style', serif;
     font-size: 1.1em;
     text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Handle long text like 'Miglioramento Temporaneo...' */
 }
 
 .header-columns {
     display: flex;
     gap: 20px;
-    flex: 2;
+    flex: 1;
     font-size: 0.8em;
     color: #888;
     text-transform: uppercase;
     justify-content: flex-start;
+    padding-left: 10px;
 }
 
 .col-source { width: 150px; }

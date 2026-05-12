@@ -73,6 +73,11 @@ export default class WitcherActor extends Actor {
 
         this.system.stats.toxicity.max += this.system.stats.toxicity.totalModifiers;
         this.system.stats.luck.max += this.system.stats.luck.totalModifiers;
+        
+        // Calcola la reputazione includendo i modificatori
+        let repModifiers = 0;
+        this.system.reputation.modifiers.forEach(item => (repModifiers += Number(item.value)));
+        this.system.reputation.max = (this.system.reputation.unmodifiedMax || 0) + repModifiers;
         this.system.reputation.value = this.system.reputation.max;
     }
 
