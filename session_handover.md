@@ -38,11 +38,11 @@ Per continuare il lavoro di completamento del compendio, seguire rigorosamente q
 4.  **Consolidamento**: Al termine di ogni batch di generazione, eseguire la pipeline di sincronizzazione descritta sopra per garantire che Foundry VTT veda i nuovi file.
 
 #### 🎨 PROMPT PER GENERAZIONE BANNER
-Usa questi prompt per generare i banner mancanti (si consiglia formato 16:9 o panoramico):
+Usa questi prompt per generare i banner mancanti (ottimizzati per formato panoramico e WebP):
 *   **Banner Armi (`banner_weapons.webp`)**:
-    > "A cinematic, gritty dark fantasy banner for a Witcher RPG weapons compendium. A collection of diverse medieval weapons (steel and silver swords, heavy axes, crossbows, and daggers) laid out on a rough-hewn oak table in a dim, candle-lit armory. Dust motes dance in the air. High detail, photorealistic textures, muted colors, volumetric lighting, 16:9 aspect ratio."
+    > "A cinematic, ultra-wide panoramic banner (21:9 aspect ratio) for a Witcher RPG weapons compendium. A collection of diverse medieval weapons (steel and silver swords, heavy axes, crossbows, and daggers) laid out on a rough-hewn oak table in a dim, candle-lit armory. Dust motes dance in the air. High detail, photorealistic textures, muted colors, volumetric lighting. Optimized for conversion to WebP format."
 *   **Banner Armature (`banner_armor.webp`)**:
-    > "A cinematic, gritty dark fantasy banner for a Witcher RPG armor compendium. A set of battle-worn witcher armor (leather, gambeson, and chainmail) hanging on a wooden stand in a cold, stone fortress hall. A weathered shield with a wolf emblem leans against the wall. High detail, realistic textures, cinematic lighting, cold blue and warm leather tones, 16:9 aspect ratio."
+    > "A cinematic, ultra-wide panoramic banner (21:9 aspect ratio) for a Witcher RPG armor compendium. A set of battle-worn witcher armor (leather, gambeson, and chainmail) hanging on a wooden stand in a cold, stone fortress hall. A weathered shield with a wolf emblem leans against the wall. High detail, realistic textures, cinematic lighting, cold blue and warm leather tones. Optimized for conversion to WebP format."
 
 #### 🚧 Stato Repository
 Il repository è ora **perfettamente pulito e consolidato**. Il sistema è già predisposto per cercare i file `banner_weapons.webp` e `banner_armor.webp` nella cartella `images/banners/`.
