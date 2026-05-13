@@ -5,42 +5,42 @@
     "system": {
         "stats": {
             "int": {
-                "value": 0,
+                "value": 1,
                 "max": 0,
                 "unmodifiedMax": 0
             },
             "ref": {
-                "value": 0,
+                "value": 6,
                 "max": 0,
                 "unmodifiedMax": 0
             },
             "dex": {
-                "value": 0,
+                "value": 6,
                 "max": 0,
                 "unmodifiedMax": 0
             },
             "body": {
-                "value": 0,
+                "value": 5,
                 "max": 0,
                 "unmodifiedMax": 0
             },
             "spd": {
-                "value": 0,
+                "value": 11,
                 "max": 0,
                 "unmodifiedMax": 0
             },
             "emp": {
-                "value": 0,
+                "value": 1,
                 "max": 0,
                 "unmodifiedMax": 0
             },
             "cra": {
-                "value": 0,
+                "value": 1,
                 "max": 0,
                 "unmodifiedMax": 0
             },
             "will": {
-                "value": 0,
+                "value": 5,
                 "max": 0,
                 "unmodifiedMax": 0
             },
@@ -99,36 +99,36 @@
             "reward": 10,
             "monsterType": "Necrophage",
             "difficulty": "MEDIUM",
-            "height": "",
-            "weight": "",
-            "environment": "",
-            "organization": "",
-            "vulnerability": "",
-            "intelligence": "",
+            "height": "2m",
+            "weight": "80kg",
+            "environment": "Caverne e Campi di Battaglia",
+            "organization": "Gruppi da 4 a 6",
+            "vulnerability": "Unguento Anti-Necrofagi",
+            "intelligence": "Ferale",
             "bounty": 10
         },
         "derivedStats": {
             "rec": {
-                "value": 0,
-                "max": 0,
+                "value": 5,
+                "max": 5,
                 "unmodifiedMax": 0
             },
             "stun": {
-                "value": 0,
-                "max": 0
+                "value": 33,
+                "max": 33
             },
             "woundTreshold": {
                 "value": 0,
                 "max": 0
             },
             "hp": {
-                "value": 0,
-                "max": 0,
+                "value": 25,
+                "max": 25,
                 "unmodifiedMax": 0
             },
             "sta": {
-                "value": 0,
-                "max": 0,
+                "value": 25,
+                "max": 25,
                 "unmodifiedMax": 0
             },
             "focus": {

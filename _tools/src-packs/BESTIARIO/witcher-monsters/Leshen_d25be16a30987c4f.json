@@ -5,42 +5,42 @@
     "system": {
         "stats": {
             "int": {
-                "value": 0,
+                "value": 7,
                 "max": 0,
                 "unmodifiedMax": 0
             },
             "ref": {
-                "value": 0,
+                "value": 9,
                 "max": 0,
                 "unmodifiedMax": 0
             },
             "dex": {
-                "value": 0,
+                "value": 9,
                 "max": 0,
                 "unmodifiedMax": 0
             },
             "body": {
-                "value": 0,
+                "value": 12,
                 "max": 0,
                 "unmodifiedMax": 0
             },
             "spd": {
-                "value": 0,
+                "value": 5,
                 "max": 0,
                 "unmodifiedMax": 0
             },
             "emp": {
-                "value": 0,
+                "value": 4,
                 "max": 0,
                 "unmodifiedMax": 0
             },
             "cra": {
-                "value": 0,
+                "value": 2,
                 "max": 0,
                 "unmodifiedMax": 0
             },
             "will": {
-                "value": 0,
+                "value": 10,
                 "max": 0,
                 "unmodifiedMax": 0
             },
@@ -50,7 +50,7 @@
                 "unmodifiedMax": 0
             },
             "armor": {
-                "value": 0,
+                "value": 8,
                 "max": 0
             }
         },
@@ -108,36 +108,36 @@
             "reward": 1500,
             "monsterType": "Relict",
             "difficulty": "MEDIUM",
-            "height": "",
-            "weight": "",
-            "environment": "",
-            "organization": "",
-            "vulnerability": "",
-            "intelligence": "",
+            "height": "2,5m",
+            "weight": "136kg",
+            "environment": "Profondo delle foreste",
+            "organization": "Solitario",
+            "vulnerability": "Unguento Anti-Ancestrali, Bombe al Dimeritium, Bombe Polvere Lunare, Fuoco",
+            "intelligence": "Senziente",
             "bounty": 1500
         },
         "derivedStats": {
             "rec": {
-                "value": 0,
-                "max": 0,
+                "value": 11,
+                "max": 11,
                 "unmodifiedMax": 0
             },
             "stun": {
-                "value": 0,
-                "max": 0
+                "value": 15,
+                "max": 15
             },
             "woundTreshold": {
                 "value": 0,
                 "max": 0
             },
             "hp": {
-                "value": 0,
-                "max": 0,
+                "value": 110,
+                "max": 110,
                 "unmodifiedMax": 0
             },
             "sta": {
-                "value": 0,
-                "max": 0,
+                "value": 55,
+                "max": 55,
                 "unmodifiedMax": 0
             },
             "focus": {

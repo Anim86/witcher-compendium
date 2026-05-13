@@ -84,7 +84,15 @@ export default class WitcherActorSheet extends HandlebarsApplicationMixin(ActorS
         CONFIG.Combat.initiative.formula = '1d10 + @stats.ref.value' + (context.displayRollDetails ? '[REF]' : '');
 
         context.actor = this.actor;
-        context.system = this.actor.system;
+        context.system = foundry.utils.deepClone(this.actor.system);
+
+        // Apply temporary panel state (for non-editable documents like locked compendiums)
+        if (this._tempPannels) {
+            for (const [path, value] of Object.entries(this._tempPannels)) {
+                foundry.utils.setProperty(context.system, path.replace('system.', ''), value);
+            }
+        }
+
         context.systemFields = this.document.system.schema.fields;
         context.items = context.actor.items.filter(i => !i.system.isStored).sort((a, b) => a.sort - b.sort);
 

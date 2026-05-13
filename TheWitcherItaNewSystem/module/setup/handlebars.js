@@ -290,8 +290,8 @@ export async function registerHandelbarHelpers() {
     });
 
     Handlebars.registerHelper("monsterIcon", function (monsterType) {
-        if (!monsterType) return "systems/TheWitcherItaNewSystem/assets/images/Monsters/Unknown.png";
-        return `systems/TheWitcherItaNewSystem/assets/images/Monsters/${monsterType}.png`;
+        const type = monsterType || "Beast";
+        return `systems/TheWitcherItaNewSystem/assets/images/Monsters/${type}.png`;
     });
 
     Handlebars.registerHelper("pct", function (value, max) {
