@@ -49,6 +49,10 @@
                 "value": 10,
                 "max": 10,
                 "unmodifiedMax": 10
+            },
+            "armor": {
+                "value": 0,
+                "max": 0
             }
         },
         "skills": {
@@ -87,7 +91,14 @@
             },
             "prestanza": {
                 "value": 8
-            }
+            },
+            "int": {},
+            "ref": {},
+            "dex": {},
+            "body": {},
+            "emp": {},
+            "cra": {},
+            "will": {}
         },
         "details": {
             "biography": "<p>Il mostro è alto quattro metri, occupati per la gran parte dall'enorme bocca, con cui nutre il gigantesco stomaco traslucido che trascina qua e là. Il grosso torso pallico ha due lunghe braccia, che terminano con mani dotate di artigli seghettati, perfette per gettare le vittime nell'enorme orifizio.</p>",
@@ -99,7 +110,8 @@
             "weight": "",
             "environment": "",
             "organization": "",
-            "vulnerability": ""
+            "vulnerability": "",
+            "intelligence": ""
         },
         "derivedStats": {
             "hp": {
@@ -151,6 +163,11 @@
                 "value": 30,
                 "max": 30,
                 "unmodifiedMax": 30
+            },
+            "focus": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
             }
         },
         "description": "<p>Il mostro è alto quattro metri, occupati per la gran parte dall'enorme bocca, con cui nutre il gigantesco stomaco traslucido che trascina qua e là. Il grosso torso pallico ha due lunghe braccia, che terminano con mani dotate di artigli seghettati, perfette per gettare le vittime nell'enorme orifizio.</p>",
@@ -160,7 +177,9 @@
         "environment": "",
         "organization": "",
         "intelligence": "",
-        "vulnerability": ""
+        "vulnerability": "",
+        "monsterType": "Cursed One",
+        "difficulty": "hard"
     },
     "items": [
         {
@@ -170,7 +189,10 @@
             "system": {
                 "damage": "5d6",
                 "accuracy": 0,
-                "effects": "Inghiottire"
+                "effects": "Inghiottire",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
             }
         },
         {
@@ -180,23 +202,28 @@
             "system": {
                 "damage": "4d6",
                 "accuracy": 0,
-                "effects": "Portata 2"
+                "effects": "Portata 2",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
             }
         },
         {
             "name": "Capacità: Inghiottire",
-            "type": "note",
+            "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Chi viene colpito dal Morso viene inghiottito. La vittima è considerata in lotta. Fuggire richiede una Prova di Prestanza CD 16 o infliggere 15 danni allo stomaco (Pr 10).</p>"
+                "description": "<p>Chi viene colpito dal Morso viene inghiottito. La vittima è considerata in lotta. Fuggire richiede una Prova di Prestanza CD 16 o infliggere 15 danni allo stomaco (Pr 10).</p>",
+                "isStored": false
             }
         },
         {
             "name": "Capacità: Acido Digestivo",
-            "type": "note",
+            "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Chi inizia il proprio Turno nello stomaco subisce 2 danni da acido a ogni Locazione. Se una locazione è corazzata, l'armatura subisce 3 danni da ablazione.</p>"
+                "description": "<p>Chi inizia il proprio Turno nello stomaco subisce 2 danni da acido a ogni Locazione. Se una locazione è corazzata, l'armatura subisce 3 danni da ablazione.</p>",
+                "isStored": false
             }
         }
     ],

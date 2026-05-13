@@ -48,6 +48,10 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 0,
+                "max": 0
             }
         },
         "skills": {
@@ -95,7 +99,14 @@
             },
             "tempra": {
                 "value": 0
-            }
+            },
+            "int": {},
+            "ref": {},
+            "dex": {},
+            "body": {},
+            "emp": {},
+            "cra": {},
+            "will": {}
         },
         "details": {
             "biography": "<p>Una volta questo tipo dal Nazair mi ha detto che le bruxa sono ninfe corrotte da magia oscura e desideri carnali. Escono di notte e fanno sesso con giovanotti attraenti, prima di succhiare loro il sangue. Non è facile ucciderne una perché sono più veloci di qualsiasi umano, hanno artigli come rasoi e voci come arieti d'assedio. – Rodolf Kazmer</p>",
@@ -107,7 +118,9 @@
             "weight": "",
             "environment": "",
             "organization": "",
-            "vulnerability": ""
+            "vulnerability": "",
+            "intelligence": "",
+            "bounty": 2000
         },
         "derivedStats": {
             "rec": {
@@ -132,12 +145,17 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
             }
         },
         "description": "<p>Una volta questo tipo dal Nazair mi ha detto che le bruxa sono ninfe corrotte da magia oscura e desideri carnali. Escono di notte e fanno sesso con giovanotti attraenti, prima di succhiare loro il sangue. Non è facile ucciderne una perché sono più veloci di qualsiasi umano, hanno artigli come rasoi e voci come arieti d'assedio. – Rodolf Kazmer</p>",
         "sourcebook": "DW 116",
         "monsterType": "Vampire",
-        "difficulty": "MEDIUM",
+        "difficulty": "medium",
         "bounty": 2000,
         "height": "",
         "weight": "",

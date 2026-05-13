@@ -48,6 +48,10 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 0,
+                "max": 0
             }
         },
         "skills": {
@@ -95,7 +99,14 @@
             },
             "tempra": {
                 "value": 0
-            }
+            },
+            "int": {},
+            "ref": {},
+            "dex": {},
+            "body": {},
+            "emp": {},
+            "cra": {},
+            "will": {}
         },
         "details": {
             "biography": "<p>Coboldi, goblin e simili non sono troppo male, ma i battiroccia o polterduk o comunque si chiamino sono il peggio. Si nascondono nelle miniere e piazzano trappole per i lavoratori. A volte si fanno vedere e pestano quei poveretti, prima di scappare nei tunnel. Ho sentito che alcuni minatori si portano dei pezzi di rame con cui spaventarli. – Rodolf Kazmer</p>",
@@ -107,7 +118,9 @@
             "weight": "",
             "environment": "",
             "organization": "",
-            "vulnerability": ""
+            "vulnerability": "",
+            "intelligence": "",
+            "bounty": 25
         },
         "derivedStats": {
             "rec": {
@@ -132,12 +145,17 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
             }
         },
         "description": "<p>Coboldi, goblin e simili non sono troppo male, ma i battiroccia o polterduk o comunque si chiamino sono il peggio. Si nascondono nelle miniere e piazzano trappole per i lavoratori. A volte si fanno vedere e pestano quei poveretti, prima di scappare nei tunnel. Ho sentito che alcuni minatori si portano dei pezzi di rame con cui spaventarli. – Rodolf Kazmer</p>",
         "sourcebook": "DW 96",
         "monsterType": "Elementa",
-        "difficulty": "MEDIUM",
+        "difficulty": "medium",
         "bounty": 25,
         "height": "",
         "weight": "",

@@ -49,6 +49,10 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 20,
+                "max": 20
             }
         },
         "skills": {
@@ -80,7 +84,11 @@
             "weight": "Circa 800 Kg",
             "environment": "Paludi e pianure alluvionali",
             "organization": "Solitaria",
-            "vulnerability": ""
+            "vulnerability": "",
+            "intelligence": "Circa come un cane",
+            "bounty": 1000,
+            "academicKnowledge": "",
+            "common": ""
         },
         "derivedStats": {
             "vigor": {
@@ -117,12 +125,17 @@
                 "value": 45,
                 "max": 45,
                 "unmodifiedMax": 45
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
             }
         },
         "description": "<p>Enormi insettoidi corazzati che si mimetizzano nelle paludi. Sono incredibilmente velenosi e agili, ma dalla vista debole.</p>",
         "sourcebook": "MB 297",
         "monsterType": "Insectoid",
-        "difficulty": "HARD",
+        "difficulty": "complesso",
         "bounty": 1000,
         "armorHead": 20,
         "armorUpper": 20,
@@ -144,9 +157,12 @@
             "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
                 "description": "Avvelenamento",
-                "damage": "",
+                "damage": "N/A",
                 "accuracy": 0,
-                "effects": "Avvelenamento"
+                "effects": "Avvelenamento",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -156,10 +172,11 @@
         {
             "_id": "4c9a051c5bfd4438",
             "name": "[Capacità] Mimetismo",
-            "type": "note",
+            "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Se resta immobile non viene percepita grazie alla debole vista predatoria e all'aspetto che replica l'ambiente.</p>"
+                "description": "<p>Se resta immobile non viene percepita grazie alla debole vista predatoria e all'aspetto che replica l'ambiente.</p>",
+                "isStored": false
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -172,7 +189,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1"
+                "description": "Quantità: 1",
+                "isStored": false,
+                "quantity": "1"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -185,7 +204,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1"
+                "description": "Quantità: 1",
+                "isStored": false,
+                "quantity": "1"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -198,7 +219,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1d6"
+                "description": "Quantità: 1d6",
+                "isStored": false,
+                "quantity": "1d6"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

@@ -49,6 +49,10 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 5,
+                "max": 5
             }
         },
         "skills": {
@@ -137,7 +141,11 @@
             "weight": "Normale umano",
             "environment": "Strade, confini, porti e nascondigli",
             "organization": "Solitario o in piccoli gruppi (Spesso legati a sindacati o Havekar)",
-            "vulnerability": ""
+            "vulnerability": "",
+            "intelligence": "Umana",
+            "bounty": 10,
+            "academicKnowledge": "I contrabbandieri sono criminali specializzati. Sanno come eludere i controlli ai confini e hanno sempre armi ben nascoste o balestrini compatti per tirarsi fuori dai guai in fretta senza dare nell'occhio.",
+            "common": "Coi ladri è abbastanza facile trattare, e tornano sempre utili. Scassinatori, borsaioli, topi d'appartamento, non ne trovi di migliori quando si tratta di entrare a forza. Ma i capibanda il cui mestiere è dedicarsi al crimine in generale... sono gli unici dai quali bisogna guardarsi, sempre a cercare la situazione migliore per loro."
         },
         "derivedStats": {
             "hp": {
@@ -174,6 +182,11 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
             }
         },
         "armorHead": 5,
@@ -188,7 +201,9 @@
         "academicKnowledge": "I contrabbandieri sono criminali specializzati. Sanno come eludere i controlli ai confini e hanno sempre armi ben nascoste o balestrini compatti per tirarsi fuori dai guai in fretta senza dare nell'occhio.",
         "bounty": 10,
         "description": "<p>I contrabbandieri trafficano merci illegalmente, spesso per evitare i pedaggi o per rifornire la resistenza oltre le linee nemiche. Sono maestri nell'evitare le pattuglie e nascondere il carico.</p>",
-        "vulnerability": ""
+        "vulnerability": "",
+        "monsterType": "Humanoid",
+        "difficulty": "semplice"
     },
     "items": [
         {
@@ -198,9 +213,12 @@
             "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
                 "description": "PA +1, Gittata 50m, Ricarica Lenta",
-                "damage": "",
+                "damage": "N/A",
                 "accuracy": 0,
-                "effects": "PA +1, Gittata 50m, Ricarica Lenta"
+                "effects": "PA +1, Gittata 50m, Ricarica Lenta",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -214,9 +232,12 @@
             "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
                 "description": "PA +2, Occultabile",
-                "damage": "",
+                "damage": "N/A",
                 "accuracy": 0,
-                "effects": "PA +2, Occultabile"
+                "effects": "PA +2, Occultabile",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -226,10 +247,11 @@
         {
             "_id": "f2eccafe4b3145a6",
             "name": "[Capacità] Abile a Nascondere",
-            "type": "note",
+            "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Ottiene un bonus di +2 alle Prove di Rapidità di Mano per occultare oggetti che pesano 1kg o meno.</p>"
+                "description": "<p>Ottiene un bonus di +2 alle Prove di Rapidità di Mano per occultare oggetti che pesano 1kg o meno.</p>",
+                "isStored": false
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -239,10 +261,11 @@
         {
             "_id": "ec26cb3fa13441ba",
             "name": "[Capacità] Paranoico Esperto",
-            "type": "note",
+            "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Può tirare su Paranoico Esperto contro il tiro di Nascondersi di chi è in agguato per individuare imboscate e trappole entro 10m. Se fallisce avverte comunque una strana sensazione che gli fornisce +2 per evitare la trappola o riduce il bonus di chi lo imboscata da +5 a +3.</p>"
+                "description": "<p>Può tirare su Paranoico Esperto contro il tiro di Nascondersi di chi è in agguato per individuare imboscate e trappole entro 10m. Se fallisce avverte comunque una strana sensazione che gli fornisce +2 per evitare la trappola o riduce il bonus di chi lo imboscata da +5 a +3.</p>",
+                "isStored": false
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -255,7 +278,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 3d10"
+                "description": "Quantità: 3d10",
+                "isStored": false,
+                "quantity": "3d10"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -268,7 +293,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1"
+                "description": "Quantità: 1",
+                "isStored": false,
+                "quantity": "1"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -281,7 +308,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1"
+                "description": "Quantità: 1",
+                "isStored": false,
+                "quantity": "1"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -294,7 +323,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1"
+                "description": "Quantità: 1",
+                "isStored": false,
+                "quantity": "1"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -307,7 +338,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 10"
+                "description": "Quantità: 10",
+                "isStored": false,
+                "quantity": "10"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -320,7 +353,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1"
+                "description": "Quantità: 1",
+                "isStored": false,
+                "quantity": "1"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -333,7 +368,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1"
+                "description": "Quantità: 1",
+                "isStored": false,
+                "quantity": "1"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -346,7 +383,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1"
+                "description": "Quantità: 1",
+                "isStored": false,
+                "quantity": "1"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -359,7 +398,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1d6"
+                "description": "Quantità: 1d6",
+                "isStored": false,
+                "quantity": "1d6"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

@@ -12,8 +12,8 @@ export default class Body extends foundry.abstract.DataModel {
 
     /** @inheritdoc */
     static migrateData(source) {
-        source.physique.label = "WITCHER.skills.physique.label";
-        source.endurance.label = 'WITCHER.skills.endurance.label';
+        if (source.physique) source.physique.label = "WITCHER.skills.physique.label";
+        if (source.endurance) source.endurance.label = 'WITCHER.skills.endurance.label';
 
         return super.migrateData(source);
     }

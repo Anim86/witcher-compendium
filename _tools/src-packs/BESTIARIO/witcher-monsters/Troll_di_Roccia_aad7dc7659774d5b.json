@@ -49,6 +49,10 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 20,
+                "max": 20
             }
         },
         "skills": {
@@ -80,7 +84,11 @@
             "weight": "Circa 408 Kg",
             "environment": "Valli e montagne",
             "organization": "Solitario o coppia",
-            "vulnerability": ""
+            "vulnerability": "",
+            "intelligence": "Senziente (ma tonti)",
+            "bounty": 800,
+            "academicKnowledge": "",
+            "common": ""
         },
         "derivedStats": {
             "vigor": {
@@ -117,12 +125,17 @@
                 "value": 40,
                 "max": 40,
                 "unmodifiedMax": 40
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
             }
         },
         "description": "<p>Orchi massicci, grandi costruttori (e bevitori di vodka). Sono creature molto forti, difese da uno spesso strato di roccia.</p>",
         "sourcebook": "MB 305",
         "monsterType": "Ogroid",
-        "difficulty": "HARD",
+        "difficulty": "complesso",
         "bounty": 800,
         "armorHead": 20,
         "armorUpper": 20,
@@ -144,9 +157,12 @@
             "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
                 "description": "N/A",
-                "damage": "",
+                "damage": "N/A",
                 "accuracy": 0,
-                "effects": "N/A"
+                "effects": "N/A",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -159,7 +175,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1"
+                "description": "Quantità: 1",
+                "isStored": false,
+                "quantity": "1"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -172,7 +190,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1"
+                "description": "Quantità: 1",
+                "isStored": false,
+                "quantity": "1"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

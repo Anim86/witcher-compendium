@@ -92,6 +92,7 @@ export default class WitcherMonsterSheet extends WitcherActorSheet {
         }
 
         this._prepareLoot(context);
+        this._prepareAbilities(context);
         this._prepareCharacterData(context);
         context.tabs = this._prepareTabs('primary');
         return context;
@@ -118,6 +119,10 @@ export default class WitcherMonsterSheet extends WitcherActorSheet {
     _prepareCharacterData(context) {
         let actor = context.actor;
         context.profession = actor.getList('profession')[0];
+    }
+
+    _prepareAbilities(context) {
+        context.abilities = context.items.filter(i => i.type == 'ability');
     }
 
     _prepareLoot(context) {

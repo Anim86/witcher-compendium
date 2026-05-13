@@ -49,6 +49,10 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 0,
+                "max": 0
             }
         },
         "skills": {
@@ -115,7 +119,11 @@
             "weight": "Circa 80 Kg",
             "environment": "Foreste e pianure",
             "organization": "Solitario (alla guida di branchi di lupi)",
-            "vulnerability": ""
+            "vulnerability": "",
+            "intelligence": "Superiore a un cane",
+            "bounty": 20,
+            "academicKnowledge": "",
+            "common": "Non c'è molto da dire sui lupi. Eh, sono dei maledetti bastardi che vivono nelle foreste e attaccano i viaggiatori. Di solito agiscono in branchi di 5 o 6 e hanno paura del fuoco. Se dovete combatterli fate in modo che non possano circondarvi, perché vi salteranno addosso da tutte le parti. Non è un bel modo di morire, secondo me. Le cose vanno sempre peggio dall'inizio della guerra, con tutti quei cadaveri in giro i lupi sono sempre più spavaldi. Eh, tanti credono che siano pure un segno di sventura. Non mi ricordo più quante profezie iniziano con un lupo. Seriamente, sono bestiacce maledette."
         },
         "derivedStats": {
             "vigor": {
@@ -152,12 +160,17 @@
                 "value": 30,
                 "max": 30,
                 "unmodifiedMax": 30
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
             }
         },
         "description": "<p>I warg sono più grossi dei lupi comuni, hanno la pelliccia marrone-rossiccia e occhi rossi luminescenti. Sono decisamente più intelligenti e guidano i branchi.</p>",
         "sourcebook": "MB 287",
         "monsterType": "Beast",
-        "difficulty": "MEDIUM",
+        "difficulty": "semplice",
         "bounty": 20,
         "armorHead": 0,
         "armorUpper": 0,
@@ -179,9 +192,12 @@
             "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
             "system": {
                 "description": "N/A",
-                "damage": "",
+                "damage": "N/A",
                 "accuracy": 0,
-                "effects": "N/A"
+                "effects": "N/A",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -191,10 +207,11 @@
         {
             "_id": "2d68ba48a1224712",
             "name": "[Capacità] Capobranco",
-            "type": "note",
+            "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Finché il warg è vivo tutti i lupi ottengono un bonus di +4 al Coraggio. Inoltre, il warg è in grado di dare ordini al resto del branco (es. 'attacca alle spalle', 'aspetta', 'vai laggiù').</p>"
+                "description": "<p>Finché il warg è vivo tutti i lupi ottengono un bonus di +4 al Coraggio. Inoltre, il warg è in grado di dare ordini al resto del branco (es. 'attacca alle spalle', 'aspetta', 'vai laggiù').</p>",
+                "isStored": false
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -204,10 +221,11 @@
         {
             "_id": "e6a0c7e003984203",
             "name": "[Capacità] Fiuto",
-            "type": "note",
+            "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Può seguire le tracce di una creatura senza bisogno di segnali visivi o uditivi senza alcuna penalità.</p>"
+                "description": "<p>Può seguire le tracce di una creatura senza bisogno di segnali visivi o uditivi senza alcuna penalità.</p>",
+                "isStored": false
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -217,10 +235,11 @@
         {
             "_id": "3e922d05fc9b4b09",
             "name": "[Capacità] Vista Notturna",
-            "type": "note",
+            "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Può agire in zone di luce fioca senza penalità.</p>"
+                "description": "<p>Può agire in zone di luce fioca senza penalità.</p>",
+                "isStored": false
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -233,7 +252,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1"
+                "description": "Quantità: 1",
+                "isStored": false,
+                "quantity": "1"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -246,7 +267,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1d6"
+                "description": "Quantità: 1d6",
+                "isStored": false,
+                "quantity": "1d6"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -259,7 +282,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1d6"
+                "description": "Quantità: 1d6",
+                "isStored": false,
+                "quantity": "1d6"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -272,7 +297,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1"
+                "description": "Quantità: 1",
+                "isStored": false,
+                "quantity": "1"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

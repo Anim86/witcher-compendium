@@ -49,6 +49,10 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 0,
+                "max": 0
             }
         },
         "skills": {
@@ -80,7 +84,12 @@
             "weight": "Normale umano",
             "environment": "Vicino a laghi, fiumi e coste",
             "organization": "Gruppi da 3 a 6",
-            "vulnerability": "Olio per necrofagi, Fuoco"
+            "vulnerability": "Olio per necrofagi, Fuoco",
+            "intelligence": "Circa quanto un pesce",
+            "bounty": 10,
+            "academicKnowledge": "",
+            "common": "Le favole raccontano che quando un bastardo abbastanza cattivo muore nell'acqua risorge come drowner.",
+            "resistances": "Nessuna particolare"
         },
         "derivedStats": {
             "vigor": {
@@ -117,12 +126,17 @@
                 "value": 25,
                 "max": 25,
                 "unmodifiedMax": 25
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
             }
         },
         "description": "<p>Bestiacce anfibie prive di intelletto che vivono per affogare le vittime e mangiarsi i cadaveri.</p>",
         "sourcebook": "MB 277",
         "monsterType": "Necrophage",
-        "difficulty": "EASY",
+        "difficulty": "semplice",
         "bounty": 10,
         "environment": "Vicino a laghi, fiumi e coste",
         "organization": "Gruppi da 3 a 6",
@@ -146,9 +160,12 @@
             "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
             "system": {
                 "description": "N/A",
-                "damage": "",
+                "damage": "N/A",
                 "accuracy": 0,
-                "effects": "N/A"
+                "effects": "N/A",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -161,7 +178,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1"
+                "description": "Quantità: 1",
+                "isStored": false,
+                "quantity": "1"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -174,7 +193,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1"
+                "description": "Quantità: 1",
+                "isStored": false,
+                "quantity": "1"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

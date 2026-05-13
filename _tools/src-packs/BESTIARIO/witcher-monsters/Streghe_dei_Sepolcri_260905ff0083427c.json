@@ -49,6 +49,10 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 0,
+                "max": 0
             }
         },
         "skills": {
@@ -78,7 +82,14 @@
             },
             "tempra": {
                 "value": 7
-            }
+            },
+            "int": {},
+            "ref": {},
+            "dex": {},
+            "body": {},
+            "emp": {},
+            "cra": {},
+            "will": {}
         },
         "details": {
             "biography": "<p>Onestamente, il tipico popolano non sa granché delle streghe dei sepolcri. Eh, sono come incubi, abbastanza intelligenti da parlare, costruire trappole e adescare i bambini. – Rodolf Kazmer</p><p>Le streghe dei sepolcri sono tra i pochi necrofagi totalmente senzienti. Pur possedendo la magia, non hanno nulla a che fare con i maghi. Vivono nei pressi dei cimiteri e altre fonti di cadaveri.</p>",
@@ -90,7 +101,9 @@
             "weight": "",
             "environment": "",
             "organization": "",
-            "vulnerability": ""
+            "vulnerability": "",
+            "intelligence": "",
+            "bounty": 1500
         },
         "derivedStats": {
             "vigor": {
@@ -125,12 +138,17 @@
                 "value": 40,
                 "max": 40,
                 "unmodifiedMax": 40
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
             }
         },
         "description": "<p>Onestamente, il tipico popolano non sa granché delle streghe dei sepolcri. Eh, sono come incubi, abbastanza intelligenti da parlare, costruire trappole e adescare i bambini. – Rodolf Kazmer</p><p>Le streghe dei sepolcri sono tra i pochi necrofagi totalmente senzienti. Pur possedendo la magia, non hanno nulla a che fare con i maghi. Vivono nei pressi dei cimiteri e altre fonti di cadaveri.</p>",
         "sourcebook": "MB 281",
         "monsterType": "Necrophage",
-        "difficulty": "MEDIUM",
+        "difficulty": "medium",
         "bounty": 1500,
         "height": "",
         "weight": "",
@@ -149,7 +167,10 @@
                 "description": "",
                 "damage": "5d6",
                 "accuracy": 0,
-                "effects": "Sanguinamento (50%)"
+                "effects": "Sanguinamento (50%)",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -165,7 +186,10 @@
                 "description": "",
                 "damage": "6d6",
                 "accuracy": 0,
-                "effects": "Veleno (75%)"
+                "effects": "Veleno (75%)",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -181,7 +205,10 @@
                 "description": "",
                 "damage": "3d6+2",
                 "accuracy": 0,
-                "effects": "Veleno (100%) Gittata: 4m"
+                "effects": "Veleno (100%) Gittata: 4m",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -191,10 +218,11 @@
         {
             "_id": "g1",
             "name": "[Capacità] Circolo di Teschi",
-            "type": "note",
+            "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Finché rimane entro 100m da un circolo di teschi creato in 1 ora, ottiene +3 a tutte le azioni.</p>"
+                "description": "<p>Finché rimane entro 100m da un circolo di teschi creato in 1 ora, ottiene +3 a tutte le azioni.</p>",
+                "isStored": false
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

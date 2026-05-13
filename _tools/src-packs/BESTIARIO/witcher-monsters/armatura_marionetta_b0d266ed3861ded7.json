@@ -40,6 +40,10 @@
             "luck": {
                 "value": 0,
                 "max": 0
+            },
+            "armor": {
+                "value": 0,
+                "max": 0
             }
         },
         "skills": {
@@ -66,7 +70,14 @@
             },
             "tempra": {
                 "value": 0
-            }
+            },
+            "int": {},
+            "ref": {},
+            "dex": {},
+            "body": {},
+            "emp": {},
+            "cra": {},
+            "will": {}
         },
         "details": {
             "biography": "<p>Controllate dai crini malevoli della Damigella come marionette dai fili, queste armature danzano un valzer di morte. Nonostante la perfetta sincronia, sono ignare delle finezze della scherma.</p>",
@@ -78,7 +89,9 @@
             "weight": "",
             "environment": "",
             "organization": "",
-            "vulnerability": ""
+            "vulnerability": "",
+            "intelligence": "",
+            "bounty": 0
         },
         "derivedStats": {
             "rec": {
@@ -98,12 +111,17 @@
             "sta": {
                 "value": 0,
                 "max": 0
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
             }
         },
         "description": "<p>Controllate dai crini malevoli della Damigella come marionette dai fili, queste armature danzano un valzer di morte. Nonostante la perfetta sincronia, sono ignare delle finezze della scherma.</p>",
         "sourcebook": "LR 154",
         "monsterType": "Elementa",
-        "difficulty": "MEDIUM",
+        "difficulty": "medium",
         "bounty": 0,
         "height": "",
         "weight": "",
@@ -120,23 +138,28 @@
             "system": {
                 "damage": "2d6+2",
                 "accuracy": 0,
-                "effects": ""
+                "effects": "",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
             }
         },
         {
             "name": "[Capacità] Costrutto",
-            "type": "note",
+            "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Un'Armatura Marionetta è immune a Sanguinamento, Veleno, Fuoco e agli incantesimi che colpiscono la mente o le emozioni. È impossibile ragionarci e non finiscono mai la RES.</p>"
+                "description": "<p>Un'Armatura Marionetta è immune a Sanguinamento, Veleno, Fuoco e agli incantesimi che colpiscono la mente o le emozioni. È impossibile ragionarci e non finiscono mai la RES.</p>",
+                "isStored": false
             }
         },
         {
             "name": "[Capacità] Punto Debole: Tagliare i Fili",
-            "type": "note",
+            "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Se la “Testa” subisce più di 9 danni da un singolo attacco con un'arma tagliente, questo recide i fili e distrugge il costrutto.</p>"
+                "description": "<p>Se la “Testa” subisce più di 9 danni da un singolo attacco con un'arma tagliente, questo recide i fili e distrugge il costrutto.</p>",
+                "isStored": false
             }
         }
     ],

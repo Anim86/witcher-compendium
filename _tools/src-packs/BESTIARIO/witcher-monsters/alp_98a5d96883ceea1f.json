@@ -1,7 +1,7 @@
 {
     "_id": "98a5d96883ceea1f",
     "name": "Alp",
-    "type": "character",
+    "type": "monster",
     "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/alp.webp",
     "system": {
         "description": "<p>Un temibile vampiro capace di assumere forme umanoidi o animali. Possiede un'agilità mortale e una saliva soporifera spaventosa.</p>",
@@ -51,6 +51,10 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 10,
+                "max": 10
             }
         },
         "skills": {
@@ -133,6 +137,11 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
             }
         },
         "details": {
@@ -144,7 +153,11 @@
             "weight": "Varia",
             "environment": "Vicino a rovine, foreste cupe o città",
             "organization": "Solitario",
-            "vulnerability": ""
+            "vulnerability": "",
+            "intelligence": "Senziente",
+            "bounty": 2000,
+            "academicKnowledge": "",
+            "common": ""
         },
         "armorHead": 10,
         "armorUpper": 10,
@@ -157,7 +170,9 @@
         "common": "",
         "academicKnowledge": "",
         "bounty": 2000,
-        "vulnerability": ""
+        "vulnerability": "",
+        "difficulty": "hard",
+        "monsterType": "Vampire"
     },
     "effects": [],
     "flags": {},
@@ -173,9 +188,12 @@
             "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
             "system": {
                 "description": "Saliva Soporifera, Sanguinamento (75%), Succhiare Sangue, Trapassare Migliorato",
-                "damage": "",
+                "damage": "N/A",
                 "accuracy": 0,
-                "effects": "Saliva Soporifera, Sanguinamento (75%), Succhiare Sangue, Trapassare Migliorato"
+                "effects": "Saliva Soporifera, Sanguinamento (75%), Succhiare Sangue, Trapassare Migliorato",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -189,9 +207,12 @@
             "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
             "system": {
                 "description": "Bilanciata, Trapassare",
-                "damage": "",
+                "damage": "N/A",
                 "accuracy": 0,
-                "effects": "Bilanciata, Trapassare"
+                "effects": "Bilanciata, Trapassare",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -201,10 +222,11 @@
         {
             "_id": "c93f876b80b74a5d",
             "name": "[Capacità] Mutaforma Versatile",
-            "type": "note",
+            "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Può trasformarsi in una bella elfa o un cane/gatto, conservando il proprio intelletto.</p>"
+                "description": "<p>Può trasformarsi in una bella elfa o un cane/gatto, conservando il proprio intelletto.</p>",
+                "isStored": false
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -214,10 +236,11 @@
         {
             "_id": "921bd0bc94154267",
             "name": "[Capacità] Saliva Soporifera",
-            "type": "note",
+            "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Provoca un sonno profondo (Tempra CD 16 se ignaro) o drena 5 RES a contatto in scontro.</p>"
+                "description": "<p>Provoca un sonno profondo (Tempra CD 16 se ignaro) o drena 5 RES a contatto in scontro.</p>",
+                "isStored": false
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -227,10 +250,11 @@
         {
             "_id": "05768c10491b44a1",
             "name": "[Capacità] Esplosione Sonora",
-            "type": "note",
+            "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Cono di 6m. Danno 5d6 e spinta indietro di 4m (CD 16 per bloccare/riposizionarsi).</p>"
+                "description": "<p>Cono di 6m. Danno 5d6 e spinta indietro di 4m (CD 16 per bloccare/riposizionarsi).</p>",
+                "isStored": false
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -240,10 +264,11 @@
         {
             "_id": "62ee3771b4d645d4",
             "name": "[Capacità] Rigenerazione",
-            "type": "note",
+            "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Recupera PS nel tempo come molti vampiri.</p>"
+                "description": "<p>Recupera PS nel tempo come molti vampiri.</p>",
+                "isStored": false
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -256,7 +281,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1d6/2"
+                "description": "Quantità: 1d6/2",
+                "isStored": false,
+                "quantity": "1d6"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -269,7 +296,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 2d6"
+                "description": "Quantità: 2d6",
+                "isStored": false,
+                "quantity": "2d6"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -282,7 +311,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1d6"
+                "description": "Quantità: 1d6",
+                "isStored": false,
+                "quantity": "1d6"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -295,7 +326,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1d6/3"
+                "description": "Quantità: 1d6/3",
+                "isStored": false,
+                "quantity": "1d6"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

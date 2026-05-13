@@ -49,6 +49,10 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 15,
+                "max": 15
             }
         },
         "skills": {
@@ -94,7 +98,11 @@
             "weight": "136 kg",
             "environment": "Ovunque venga evocato (Reami d'ombra)",
             "organization": "Solitario",
-            "vulnerability": ""
+            "vulnerability": "",
+            "intelligence": "Senziente",
+            "bounty": 1500,
+            "academicKnowledge": "",
+            "common": ""
         },
         "derivedStats": {
             "vigor": {
@@ -131,12 +139,17 @@
                 "value": 40,
                 "max": 40,
                 "unmodifiedMax": 40
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
             }
         },
         "description": "<p>Demoni della conoscenza. Si nascondono nell'ombra, raccogliendo informazioni e perseguitando accademici ed evocatori per consumarne l'intelletto.</p>",
         "sourcebook": "TC 202",
         "monsterType": "Relict",
-        "difficulty": "HARD",
+        "difficulty": "semplice",
         "bounty": 1500,
         "armorHead": 15,
         "armorUpper": 15,
@@ -158,9 +171,12 @@
             "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
             "system": {
                 "description": "Portata, Trascinare nell'Ombra",
-                "damage": "",
+                "damage": "N/A",
                 "accuracy": 0,
-                "effects": "Portata, Trascinare nell'Ombra"
+                "effects": "Portata, Trascinare nell'Ombra",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -170,10 +186,11 @@
         {
             "_id": "275d4b8e77bf4c6e",
             "name": "[Capacità] Pozzo di Conoscenza",
-            "type": "note",
+            "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Ha Base 20 in tutte le prove per apprendere, ricordare o insegnare informazioni.</p>"
+                "description": "<p>Ha Base 20 in tutte le prove per apprendere, ricordare o insegnare informazioni.</p>",
+                "isStored": false
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -183,10 +200,11 @@
         {
             "_id": "35bd722f97b14cab",
             "name": "[Capacità] Movimento nell'Ombra",
-            "type": "note",
+            "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Può teletrasportarsi da una zona d'oscurità all'altra entro 20m.</p>"
+                "description": "<p>Può teletrasportarsi da una zona d'oscurità all'altra entro 20m.</p>",
+                "isStored": false
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -196,10 +214,11 @@
         {
             "_id": "d7fc58f739af4625",
             "name": "[Capacità] Trascinare nell'Ombra",
-            "type": "note",
+            "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Trasferisce il bersaglio in un reame oscuro tramite un portale sul petto per nutrirsi dei suoi ricordi e intelletto.</p>"
+                "description": "<p>Trasferisce il bersaglio in un reame oscuro tramite un portale sul petto per nutrirsi dei suoi ricordi e intelletto.</p>",
+                "isStored": false
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -212,7 +231,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1d6"
+                "description": "Quantità: 1d6",
+                "isStored": false,
+                "quantity": "1d6"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -225,7 +246,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 2"
+                "description": "Quantità: 2",
+                "isStored": false,
+                "quantity": "2"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -238,7 +261,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 2d10"
+                "description": "Quantità: 2d10",
+                "isStored": false,
+                "quantity": "2d10"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

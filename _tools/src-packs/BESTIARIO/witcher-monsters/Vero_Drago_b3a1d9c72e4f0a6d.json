@@ -48,6 +48,10 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 0,
+                "max": 0
             }
         },
         "skills": {
@@ -98,7 +102,14 @@
             },
             "tempra": {
                 "value": 0
-            }
+            },
+            "int": {},
+            "ref": {},
+            "dex": {},
+            "body": {},
+            "emp": {},
+            "cra": {},
+            "will": {}
         },
         "details": {
             "biography": "<p>Ho saputo, da fonte attendibile, che la famosa Vergine di Aedirn, Saskia, era un drago! Questi affari possono assumere forma umana, soffiano fuoco tanto caldo da sciogliere la pietra e abbattono le mura dei castelli con gli artigli! Sono certo che i re del Nord terranno i loro preziosi ben nascosti. D'altronde i draghi vivono solo per due cose: ammazzare cavalieri e accumulare bottino. – Rodolf Kazmer</p>",
@@ -110,7 +121,9 @@
             "weight": "",
             "environment": "",
             "organization": "",
-            "vulnerability": ""
+            "vulnerability": "",
+            "intelligence": "",
+            "bounty": 5000
         },
         "derivedStats": {
             "rec": {
@@ -135,12 +148,17 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
             }
         },
         "description": "<p>Ho saputo, da fonte attendibile, che la famosa Vergine di Aedirn, Saskia, era un drago! Questi affari possono assumere forma umana, soffiano fuoco tanto caldo da sciogliere la pietra e abbattono le mura dei castelli con gli artigli! Sono certo che i re del Nord terranno i loro preziosi ben nascosti. D'altronde i draghi vivono solo per due cose: ammazzare cavalieri e accumulare bottino. – Rodolf Kazmer</p>",
         "sourcebook": "DW 130",
         "monsterType": "Draconid",
-        "difficulty": "MEDIUM",
+        "difficulty": "medium",
         "bounty": 5000,
         "height": "",
         "weight": "",

@@ -48,6 +48,10 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 0,
+                "max": 0
             }
         },
         "skills": {
@@ -77,7 +81,14 @@
             },
             "tempra": {
                 "value": 0
-            }
+            },
+            "int": {},
+            "ref": {},
+            "dex": {},
+            "body": {},
+            "emp": {},
+            "cra": {},
+            "will": {}
         },
         "details": {
             "biography": "<p>Una donna saggia del Mag Turga mi ha detto che si formano dai laghi gelati montani e calano a valle in cerca di luoghi di potere che li rendano più forti. Potresti pensare che basti scioglierli con il fuoco, ma sono parecchio robusti. Possono bucare una lastra d'acciaio con un pugno, evocare schegge di ghiaccio e roba simile. – Rodolf Kazmer</p>",
@@ -89,7 +100,9 @@
             "weight": "",
             "environment": "",
             "organization": "",
-            "vulnerability": ""
+            "vulnerability": "",
+            "intelligence": "",
+            "bounty": 1600
         },
         "derivedStats": {
             "rec": {
@@ -114,12 +127,17 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
             }
         },
         "description": "<p>Una donna saggia del Mag Turga mi ha detto che si formano dai laghi gelati montani e calano a valle in cerca di luoghi di potere che li rendano più forti. Potresti pensare che basti scioglierli con il fuoco, ma sono parecchio robusti. Possono bucare una lastra d'acciaio con un pugno, evocare schegge di ghiaccio e roba simile. – Rodolf Kazmer</p>",
         "sourcebook": "DW 78",
         "monsterType": "Elementa",
-        "difficulty": "MEDIUM",
+        "difficulty": "medium",
         "bounty": 1600,
         "height": "",
         "weight": "",

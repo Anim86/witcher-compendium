@@ -49,6 +49,10 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 3,
+                "max": 3
             }
         },
         "skills": {
@@ -80,7 +84,11 @@
             "weight": "Normale umano",
             "environment": "Strade, percorsi isolati",
             "organization": "Solitario",
-            "vulnerability": ""
+            "vulnerability": "",
+            "intelligence": "Senziente",
+            "bounty": 0,
+            "academicKnowledge": "",
+            "common": ""
         },
         "derivedStats": {
             "hp": {
@@ -117,6 +125,11 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
             }
         },
         "armorHead": 3,
@@ -131,7 +144,9 @@
         "academicKnowledge": "",
         "bounty": 0,
         "description": "<p>Viaggiatori coraggiosi o prezzolati che trasportano messaggi tra città, affrontando selve, mostri e criminali.</p>",
-        "vulnerability": ""
+        "vulnerability": "",
+        "monsterType": "Humanoid",
+        "difficulty": "semplice"
     },
     "items": [
         {
@@ -141,9 +156,12 @@
             "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
                 "description": "N/A",
-                "damage": "",
+                "damage": "N/A",
                 "accuracy": 0,
-                "effects": "N/A"
+                "effects": "N/A",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -156,7 +174,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1d10"
+                "description": "Quantità: 1d10",
+                "isStored": false,
+                "quantity": "1d10"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -169,7 +189,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1"
+                "description": "Quantità: 1",
+                "isStored": false,
+                "quantity": "1"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

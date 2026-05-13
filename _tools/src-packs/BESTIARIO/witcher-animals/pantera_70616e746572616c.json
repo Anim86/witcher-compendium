@@ -49,6 +49,10 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 0,
+                "max": 0
             }
         },
         "skills": {
@@ -81,7 +85,14 @@
             },
             "tempra": {
                 "value": 12
-            }
+            },
+            "int": {},
+            "ref": {},
+            "dex": {},
+            "body": {},
+            "emp": {},
+            "cra": {},
+            "will": {}
         },
         "details": {
             "biography": "<p>Ah, le pantere, che bestiacce esotiche! Ho sentito che le donne selvagge e le streghe del sud le tengono come famigli. Se vedete una pantera con gli occhi che brillano alla luce della luna, c'è un mago che vi sta spiando! Ne ho viste solo due in vita mia, mentre passavo per Mag Turga per… ehm… affari. Molto impressionanti, dico io, non vorrei diventare la loro vittima! – Rodolf Kazmer</p>",
@@ -93,7 +104,8 @@
             "weight": "",
             "environment": "",
             "organization": "",
-            "vulnerability": ""
+            "vulnerability": "",
+            "intelligence": ""
         },
         "derivedStats": {
             "hp": {
@@ -130,12 +142,17 @@
                 "value": 5,
                 "max": 5,
                 "unmodifiedMax": 5
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
             }
         },
         "description": "<p>Ah, le pantere, che bestiacce esotiche! Ho sentito che le donne selvagge e le streghe del sud le tengono come famigli. Se vedete una pantera con gli occhi che brillano alla luce della luna, c'è un mago che vi sta spiando! Ne ho viste solo due in vita mia, mentre passavo per Mag Turga per… ehm… affari. Molto impressionanti, dico io, non vorrei diventare la loro vittima! – Rodolf Kazmer</p>",
         "sourcebook": "LR 150 / DW 40",
         "monsterType": "Beast",
-        "difficulty": "MEDIUM",
+        "difficulty": "medium",
         "height": "",
         "weight": "",
         "environment": "",
@@ -152,7 +169,10 @@
                 "damage": "4d6+4",
                 "accuracy": 0,
                 "type": "P",
-                "effects": "N/A"
+                "effects": "N/A",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -167,7 +187,10 @@
                 "damage": "2d6+2",
                 "accuracy": 0,
                 "type": "T",
-                "effects": "Sanguinamento (30%)"
+                "effects": "Sanguinamento (30%)",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -176,10 +199,11 @@
         },
         {
             "name": "[Capacità] Scatto",
-            "type": "note",
+            "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Con un'azione di movimento, una pantera può balzare fino a 4m, in orizzontale o in verticale, senza rincorsa.</p>"
+                "description": "<p>Con un'azione di movimento, una pantera può balzare fino a 4m, in orizzontale o in verticale, senza rincorsa.</p>",
+                "isStored": false
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -188,10 +212,11 @@
         },
         {
             "name": "[Capacità] Abile Scalatore",
-            "type": "note",
+            "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Superando una Prova di Atletica per arrampicarsi, una pantera può percorrere 8m, invece dei normali 4m.</p>"
+                "description": "<p>Superando una Prova di Atletica per arrampicarsi, una pantera può percorrere 8m, invece dei normali 4m.</p>",
+                "isStored": false
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

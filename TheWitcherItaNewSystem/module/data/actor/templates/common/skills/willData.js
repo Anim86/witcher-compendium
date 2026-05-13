@@ -17,13 +17,13 @@ export default class Will extends foundry.abstract.DataModel {
 
     /** @inheritdoc */
     static migrateData(source) {
-        source.courage.label = 'WITCHER.skills.courage.label';
-        source.hexweave.label = 'WITCHER.skills.hexWeaving.label';
-        source.intimidation.label = 'WITCHER.skills.intimidation.label';
-        source.spellcast.label = 'WITCHER.skills.spellCasting.label';
-        source.resistmagic.label = 'WITCHER.skills.resistMagic.label';
-        source.resistcoerc.label = 'WITCHER.skills.resistCoercion.label';
-        source.ritcraft.label = 'WITCHER.skills.ritualCrafting.label';
+        if (source.courage) source.courage.label = 'WITCHER.skills.courage.label';
+        if (source.hexweave) source.hexweave.label = 'WITCHER.skills.hexWeaving.label';
+        if (source.intimidation) source.intimidation.label = 'WITCHER.skills.intimidation.label';
+        if (source.spellcast) source.spellcast.label = 'WITCHER.skills.spellCasting.label';
+        if (source.resistmagic) source.resistmagic.label = 'WITCHER.skills.resistMagic.label';
+        if (source.resistcoerc) source.resistcoerc.label = 'WITCHER.skills.resistCoercion.label';
+        if (source.ritcraft) source.ritcraft.label = 'WITCHER.skills.ritualCrafting.label';
 
         return super.migrateData(source);
     }

@@ -49,6 +49,10 @@
                 "value": 4,
                 "max": 4,
                 "unmodifiedMax": 4
+            },
+            "armor": {
+                "value": 0,
+                "max": 0
             }
         },
         "skills": {
@@ -81,7 +85,14 @@
             },
             "mischia": {
                 "value": 10
-            }
+            },
+            "int": {},
+            "ref": {},
+            "dex": {},
+            "body": {},
+            "emp": {},
+            "cra": {},
+            "will": {}
         },
         "details": {
             "biography": "<p>L'oritteropo è una creatura del deserto, simile a un grosso pangolino o a un formichiere corazzato. Sebbene non sia aggressivo per natura, è un combattente tenace se messo all'angolo.</p>",
@@ -92,7 +103,8 @@
             "weight": "",
             "environment": "",
             "organization": "",
-            "vulnerability": ""
+            "vulnerability": "",
+            "intelligence": ""
         },
         "derivedStats": {
             "hp": {
@@ -144,6 +156,11 @@
                 "value": 6,
                 "max": 6,
                 "unmodifiedMax": 6
+            },
+            "focus": {
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
             }
         },
         "description": "<p>L'oritteropo è una creatura del deserto, simile a un grosso pangolino o a un formichiere corazzato. Sebbene non sia aggressivo per natura, è un combattente tenace se messo all'angolo.</p>",
@@ -153,7 +170,9 @@
         "environment": "",
         "organization": "",
         "intelligence": "",
-        "vulnerability": ""
+        "vulnerability": "",
+        "monsterType": "Beast",
+        "difficulty": "easy"
     },
     "items": [
         {
@@ -163,7 +182,10 @@
             "system": {
                 "damage": "1d6",
                 "accuracy": 10,
-                "effects": "Sanguinamento (100%)"
+                "effects": "Sanguinamento (100%)",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
             }
         },
         {
@@ -173,7 +195,10 @@
             "system": {
                 "damage": "2d6",
                 "accuracy": 10,
-                "effects": "N/A"
+                "effects": "N/A",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
             }
         }
     ],

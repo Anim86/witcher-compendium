@@ -48,6 +48,10 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 0,
+                "max": 0
             }
         },
         "skills": {
@@ -83,7 +87,14 @@
             },
             "tempra": {
                 "value": 0
-            }
+            },
+            "int": {},
+            "ref": {},
+            "dex": {},
+            "body": {},
+            "emp": {},
+            "cra": {},
+            "will": {}
         },
         "details": {
             "biography": "<p>Strano… non ho mai sentito di ‘sto vendigo, ma la gente ha ogni genere di superstizioni sui viaggi per i Gheppi, i Monti del Drago e all'improvviso ho sentito storie che ti farebbero venire i brividi alla schiena. Parlavano di una specie di spettro che perseguita i viaggiatori e fa venire loro fame come non l'hanno mai avuta. Alcuni montanari di Caingorn hanno cominciato a portare con sé razioni extra e a indossare ‘ste strambe maschere cerimo- niali del lontano Nord. – Rodolf Kazmer</p>",
@@ -95,7 +106,9 @@
             "weight": "",
             "environment": "",
             "organization": "",
-            "vulnerability": ""
+            "vulnerability": "",
+            "intelligence": "",
+            "bounty": 1500
         },
         "derivedStats": {
             "rec": {
@@ -120,12 +133,17 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
             }
         },
         "description": "<p>Strano… non ho mai sentito di ‘sto vendigo, ma la gente ha ogni genere di superstizioni sui viaggi per i Gheppi, i Monti del Drago e all'improvviso ho sentito storie che ti farebbero venire i brividi alla schiena. Parlavano di una specie di spettro che perseguita i viaggiatori e fa venire loro fame come non l'hanno mai avuta. Alcuni montanari di Caingorn hanno cominciato a portare con sé razioni extra e a indossare ‘ste strambe maschere cerimo- niali del lontano Nord. – Rodolf Kazmer</p>",
         "sourcebook": "DW 50",
         "monsterType": "Relict",
-        "difficulty": "MEDIUM",
+        "difficulty": "medium",
         "bounty": 1500,
         "height": "",
         "weight": "",

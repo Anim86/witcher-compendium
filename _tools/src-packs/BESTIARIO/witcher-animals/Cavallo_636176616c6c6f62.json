@@ -49,6 +49,10 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 0,
+                "max": 0
             }
         },
         "skills": {
@@ -70,7 +74,11 @@
             "weight": "",
             "environment": "",
             "organization": "",
-            "vulnerability": ""
+            "vulnerability": "",
+            "intelligence": "",
+            "bounty": 0,
+            "academicKnowledge": "",
+            "common": ""
         },
         "derivedStats": {
             "hp": {
@@ -107,12 +115,17 @@
                 "value": 8,
                 "max": 8,
                 "unmodifiedMax": 8
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
             }
         },
         "description": "<p></p>",
         "sourcebook": "MB 311",
         "monsterType": "Beast",
-        "difficulty": "EASY",
+        "difficulty": "",
         "armorHead": 0,
         "armorUpper": 0,
         "armorLower": 0,
@@ -134,9 +147,12 @@
             "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
             "system": {
                 "description": "N/A",
-                "damage": "",
+                "damage": "N/A",
                 "accuracy": 0,
-                "effects": "N/A"
+                "effects": "N/A",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -149,7 +165,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1d10"
+                "description": "Quantità: 1d10",
+                "isStored": false,
+                "quantity": "1d10"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -162,7 +180,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1d10"
+                "description": "Quantità: 1d10",
+                "isStored": false,
+                "quantity": "1d10"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

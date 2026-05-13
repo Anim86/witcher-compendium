@@ -768,3 +768,85 @@
     transform: scale(1.1);
 }
 
+/* ── SPECIAL ABILITIES SECTION ── */
+.details-footer {
+    margin-top: 25px;
+    padding: 0 15px 25px 15px;
+}
+
+.abilities-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.ability-item {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(197, 160, 89, 0.2);
+    border-radius: 6px;
+    padding: 12px;
+    transition: all 0.2s ease;
+}
+
+.ability-item:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(197, 160, 89, 0.4);
+    transform: translateX(4px);
+}
+
+.ability-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(197, 160, 89, 0.1);
+    padding-bottom: 8px;
+}
+
+.ability-icon {
+    width: 32px;
+    height: 32px;
+    border: 1px solid var(--p-gold);
+    border-radius: 4px;
+    object-fit: cover;
+}
+
+.ability-name {
+    font-family: "Gwent", serif;
+    font-size: 1.2rem;
+    color: var(--p-gold);
+    flex-grow: 1;
+    text-shadow: 0 0 10px rgba(197, 160, 89, 0.3);
+}
+
+.ability-actions {
+    display: flex;
+    gap: 10px;
+    opacity: 0.3;
+    transition: opacity 0.2s;
+}
+
+.ability-item:hover .ability-actions {
+    opacity: 1;
+}
+
+.ability-actions a {
+    color: #fff;
+    cursor: pointer;
+}
+
+.ability-actions a:hover {
+    color: var(--p-gold);
+}
+
+.ability-description {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #ccc;
+    font-style: italic;
+}
+
+.ability-description p {
+    margin: 0;
+}
+

@@ -49,6 +49,10 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 0,
+                "max": 0
             }
         },
         "skills": {
@@ -119,7 +123,11 @@
             "weight": "Circa 13 Kg",
             "environment": "Pianure e foreste",
             "organization": "Bande da 3 a 12",
-            "vulnerability": ""
+            "vulnerability": "",
+            "intelligence": "Quanto un umano stupido",
+            "bounty": 10,
+            "academicKnowledge": "",
+            "common": ""
         },
         "derivedStats": {
             "vigor": {
@@ -156,12 +164,17 @@
                 "value": 15,
                 "max": 15,
                 "unmodifiedMax": 15
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
             }
         },
         "description": "<p>Piccole bestiacce scavatrici che attaccano implacabilmente in branco. Più intelligenti di quanto sembrino, sanno elaborare elementari tattiche di agguato.</p>",
         "sourcebook": "MB 303",
         "monsterType": "Ogroid",
-        "difficulty": "MEDIUM",
+        "difficulty": "complesso",
         "bounty": 10,
         "armorHead": 0,
         "armorUpper": 0,
@@ -183,9 +196,12 @@
             "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
             "system": {
                 "description": "N/A",
-                "damage": "",
+                "damage": "N/A",
                 "accuracy": 0,
-                "effects": "N/A"
+                "effects": "N/A",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -195,10 +211,11 @@
         {
             "_id": "8bb85c8cac7240bc",
             "name": "[Capacità] Comando del Branco",
-            "type": "note",
+            "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>I capi (più grossi, spesso dipinti) guidano i branchi in combattimento.</p>"
+                "description": "<p>I capi (più grossi, spesso dipinti) guidano i branchi in combattimento.</p>",
+                "isStored": false
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -211,7 +228,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 2"
+                "description": "Quantità: 2",
+                "isStored": false,
+                "quantity": "2"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -224,7 +243,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1"
+                "description": "Quantità: 1",
+                "isStored": false,
+                "quantity": "1"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -237,7 +258,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1d6/2"
+                "description": "Quantità: 1d6/2",
+                "isStored": false,
+                "quantity": "1d6"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

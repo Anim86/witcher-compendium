@@ -49,6 +49,10 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 0,
+                "max": 0
             }
         },
         "skills": {
@@ -70,7 +74,11 @@
             "weight": "",
             "environment": "",
             "organization": "",
-            "vulnerability": ""
+            "vulnerability": "",
+            "intelligence": "",
+            "bounty": 0,
+            "academicKnowledge": "",
+            "common": ""
         },
         "derivedStats": {
             "hp": {
@@ -107,12 +115,17 @@
                 "value": 10,
                 "max": 10,
                 "unmodifiedMax": 10
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
             }
         },
         "description": "<p>Se si allontana 10m, carica per 8d6 danni scaraventando a 8m.</p>",
         "sourcebook": "MB 310",
         "monsterType": "Beast",
-        "difficulty": "EASY",
+        "difficulty": "",
         "armorHead": 0,
         "armorUpper": 0,
         "armorLower": 0,
@@ -134,9 +147,12 @@
             "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
                 "description": "Sang (50%)",
-                "damage": "",
+                "damage": "N/A",
                 "accuracy": 0,
-                "effects": "Sang (50%)"
+                "effects": "Sang (50%)",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -150,9 +166,12 @@
             "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
                 "description": "N/A",
-                "damage": "",
+                "damage": "N/A",
                 "accuracy": 0,
-                "effects": "N/A"
+                "effects": "N/A",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -162,10 +181,11 @@
         {
             "_id": "7b5524fa572f4a55",
             "name": "[Capacità] Carica",
-            "type": "note",
+            "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Se si allontana 10m, carica per 8d6 danni scaraventando a 8m.</p>"
+                "description": "<p>Se si allontana 10m, carica per 8d6 danni scaraventando a 8m.</p>",
+                "isStored": false
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -178,7 +198,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 2d6"
+                "description": "Quantità: 2d6",
+                "isStored": false,
+                "quantity": "2d6"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -191,7 +213,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 2d6"
+                "description": "Quantità: 2d6",
+                "isStored": false,
+                "quantity": "2d6"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

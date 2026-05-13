@@ -48,6 +48,10 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 0,
+                "max": 0
             }
         },
         "skills": {
@@ -74,7 +78,14 @@
             },
             "sopravvivenza": {
                 "value": 0
-            }
+            },
+            "int": {},
+            "ref": {},
+            "dex": {},
+            "body": {},
+            "emp": {},
+            "cra": {},
+            "will": {}
         },
         "details": {
             "biography": "<p>Per me le pestilenze sono un faccenda delicata... Eh, vedi, ho passato un bel pezzo della mia vita nell'esercito Temeriano e ho visto la mia parte di vittime della Catriona. Ugh… mai visto un paziente? Il gonfiore, la pelle marcia, il dolore negli occhi. Ce n'è abbastanza da spingerti a lavarti ogni notte per un anno. Le pesta sono portatrici di malattie. Ovunque vadano si portano dietro insetti e ratti infetti che mordono chiunque incontrino. – Rodolf Kazmer</p>",
@@ -86,7 +97,9 @@
             "weight": "",
             "environment": "",
             "organization": "",
-            "vulnerability": ""
+            "vulnerability": "",
+            "intelligence": "",
+            "bounty": 900
         },
         "derivedStats": {
             "rec": {
@@ -111,12 +124,17 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
             }
         },
         "description": "<p>Per me le pestilenze sono un faccenda delicata... Eh, vedi, ho passato un bel pezzo della mia vita nell'esercito Temeriano e ho visto la mia parte di vittime della Catriona. Ugh… mai visto un paziente? Il gonfiore, la pelle marcia, il dolore negli occhi. Ce n'è abbastanza da spingerti a lavarti ogni notte per un anno. Le pesta sono portatrici di malattie. Ovunque vadano si portano dietro insetti e ratti infetti che mordono chiunque incontrino. – Rodolf Kazmer</p>",
         "sourcebook": "DW 30",
         "monsterType": "Specter",
-        "difficulty": "MEDIUM",
+        "difficulty": "medium",
         "bounty": 900,
         "height": "",
         "weight": "",

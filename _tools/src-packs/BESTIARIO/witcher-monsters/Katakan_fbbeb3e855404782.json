@@ -49,6 +49,10 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 0,
+                "max": 0
             }
         },
         "skills": {
@@ -70,7 +74,11 @@
             "weight": "Circa 115 Kg",
             "environment": "Rovine, caverne e vicino alle città",
             "organization": "Solitario",
-            "vulnerability": ""
+            "vulnerability": "",
+            "intelligence": "Umana",
+            "bounty": 1500,
+            "academicKnowledge": "",
+            "common": ""
         },
         "derivedStats": {
             "vigor": {
@@ -107,12 +115,17 @@
                 "value": 40,
                 "max": 40,
                 "unmodifiedMax": 40
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
             }
         },
         "description": "<p>Intelligenti e letali vampiri, superiori ai loro cugini bestiali ma non ancora veri nosferatu. Si nascondono nell'invisibilità manipolando le prede telepaticamente.</p>",
         "sourcebook": "MB 309",
         "monsterType": "Vampire",
-        "difficulty": "MEDIUM",
+        "difficulty": "complesso",
         "bounty": 1500,
         "armorHead": 0,
         "armorUpper": 0,
@@ -134,9 +147,12 @@
             "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
             "system": {
                 "description": "Sanguinamento (100%)",
-                "damage": "",
+                "damage": "N/A",
                 "accuracy": 0,
-                "effects": "Sanguinamento (100%)"
+                "effects": "Sanguinamento (100%)",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -150,9 +166,12 @@
             "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
             "system": {
                 "description": "Sanguinamento (50%)",
-                "damage": "",
+                "damage": "N/A",
                 "accuracy": 0,
-                "effects": "Sanguinamento (50%)"
+                "effects": "Sanguinamento (50%)",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -162,10 +181,11 @@
         {
             "_id": "56cc8ead20e24624",
             "name": "[Capacità] Invisibile alla Magia",
-            "type": "note",
+            "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Un katakan non può essere rilevato dai medaglioni dei witcher. Un mago deve superare un tiro contrapposto per percepirlo.</p>"
+                "description": "<p>Un katakan non può essere rilevato dai medaglioni dei witcher. Un mago deve superare un tiro contrapposto per percepirlo.</p>",
+                "isStored": false
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -175,10 +195,11 @@
         {
             "_id": "389c945e8c8644a1",
             "name": "[Capacità] Invisibilità",
-            "type": "note",
+            "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Può diventare invisibile (+10 Nascondersi, +5 Attacchi). Il segno Yrden lo rende visibile.</p>"
+                "description": "<p>Può diventare invisibile (+10 Nascondersi, +5 Attacchi). Il segno Yrden lo rende visibile.</p>",
+                "isStored": false
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -188,10 +209,11 @@
         {
             "_id": "714a399517c34733",
             "name": "[Capacità] Rigenerazione",
-            "type": "note",
+            "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Rigenera 5 PS per round (ridotti a 3 alla luce del sole).</p>"
+                "description": "<p>Rigenera 5 PS per round (ridotti a 3 alla luce del sole).</p>",
+                "isStored": false
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -201,10 +223,11 @@
         {
             "_id": "7450a0bb718b4666",
             "name": "[Capacità] Telepatia",
-            "type": "note",
+            "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Può comunicare telepaticamente con qualsiasi creatura entro 20m.</p>"
+                "description": "<p>Può comunicare telepaticamente con qualsiasi creatura entro 20m.</p>",
+                "isStored": false
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -217,7 +240,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1d6"
+                "description": "Quantità: 1d6",
+                "isStored": false,
+                "quantity": "1d6"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -230,7 +255,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1d6/2"
+                "description": "Quantità: 1d6/2",
+                "isStored": false,
+                "quantity": "1d6"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -243,7 +270,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1"
+                "description": "Quantità: 1",
+                "isStored": false,
+                "quantity": "1"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -256,7 +285,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1d6"
+                "description": "Quantità: 1d6",
+                "isStored": false,
+                "quantity": "1d6"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

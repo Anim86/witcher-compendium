@@ -49,6 +49,10 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 20,
+                "max": 20
             }
         },
         "skills": {
@@ -70,7 +74,11 @@
             "weight": "Circa 900 Kg",
             "environment": "Rovine e torri dei maghi",
             "organization": "Solitario",
-            "vulnerability": ""
+            "vulnerability": "",
+            "intelligence": "Incapace di pensiero",
+            "bounty": 1200,
+            "academicKnowledge": "",
+            "common": ""
         },
         "derivedStats": {
             "vigor": {
@@ -107,12 +115,17 @@
                 "value": 40,
                 "max": 40,
                 "unmodifiedMax": 40
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
             }
         },
         "description": "<p>Costrutti di pietra ed argilla creati dai maghi come sentinelle eterne. Seguono instancabilmente i loro ordini ma sono del tutto incapaci di raziocinio indipendente.</p>",
         "sourcebook": "MB 299",
         "monsterType": "Elementa",
-        "difficulty": "MEDIUM",
+        "difficulty": "semplice",
         "bounty": 1200,
         "armorHead": 20,
         "armorUpper": 20,
@@ -134,9 +147,12 @@
             "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
                 "description": "Danni massicci a scudi ed armi",
-                "damage": "",
+                "damage": "N/A",
                 "accuracy": 0,
-                "effects": "Danni massicci a scudi ed armi"
+                "effects": "Danni massicci a scudi ed armi",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -146,10 +162,11 @@
         {
             "_id": "83e622e8c7b248cd",
             "name": "[Capacità] Carica",
-            "type": "note",
+            "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Se un avversario si allontana di oltre 10m, può caricare infliggendo danni massicci (10d6) e scaraventando indietro la vittima di 8m.</p>"
+                "description": "<p>Se un avversario si allontana di oltre 10m, può caricare infliggendo danni massicci (10d6) e scaraventando indietro la vittima di 8m.</p>",
+                "isStored": false
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -162,7 +179,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1"
+                "description": "Quantità: 1",
+                "isStored": false,
+                "quantity": "1"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -175,7 +194,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1d6"
+                "description": "Quantità: 1d6",
+                "isStored": false,
+                "quantity": "1d6"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

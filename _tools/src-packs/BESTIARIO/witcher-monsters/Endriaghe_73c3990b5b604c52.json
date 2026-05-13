@@ -49,6 +49,10 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 0,
+                "max": 0
             }
         },
         "skills": {
@@ -124,7 +128,9 @@
                     "value": 0,
                     "isVisible": true
                 }
-            }
+            },
+            "emp": {},
+            "cra": {}
         },
         "details": {
             "biography": "<p>Dicono che le endriaghe siano come ogni altro insetto, solo un'infestazione di cui bisogna liberarsi. La gente immagina delle soluzioni davvero creative. – Rodolf Kazmer</p><p>Superati tutti i pericoli, si trova la regina e le uova. Chi arriva a questo punto dovrà affrontare ogni endriaga rimasta nell'area, perché la regina le convocherà tutte a difesa. La regina è tecnicamente un insetto, allo stesso modo in cui un leone è un gatto.</p>",
@@ -136,7 +142,9 @@
             "weight": "",
             "environment": "",
             "organization": "",
-            "vulnerability": ""
+            "vulnerability": "",
+            "intelligence": "",
+            "bounty": 1000
         },
         "derivedStats": {
             "vigor": {
@@ -171,12 +179,17 @@
                 "value": 25,
                 "max": 25,
                 "unmodifiedMax": 25
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
             }
         },
         "description": "<p>Dicono che le endriaghe siano come ogni altro insetto, solo un'infestazione di cui bisogna liberarsi. La gente immagina delle soluzioni davvero creative. – Rodolf Kazmer</p><p>Superati tutti i pericoli, si trova la regina e le uova. Chi arriva a questo punto dovrà affrontare ogni endriaga rimasta nell'area, perché la regina le convocherà tutte a difesa. La regina è tecnicamente un insetto, allo stesso modo in cui un leone è un gatto.</p>",
         "sourcebook": "MB 295",
         "monsterType": "Insectoid",
-        "difficulty": "MEDIUM",
+        "difficulty": "medium",
         "bounty": 1000,
         "height": "",
         "weight": "",
@@ -193,9 +206,12 @@
             "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
                 "description": "Veleno (25% se Lavoratore)",
-                "damage": "",
+                "damage": "N/A",
                 "accuracy": 0,
-                "effects": "Veleno (25% se Lavoratore)"
+                "effects": "Veleno (25% se Lavoratore)",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -209,9 +225,12 @@
             "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
                 "description": "Veleno (50%)",
-                "damage": "",
+                "damage": "N/A",
                 "accuracy": 0,
-                "effects": "Veleno (50%)"
+                "effects": "Veleno (50%)",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -225,9 +244,12 @@
             "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
                 "description": "Veleno",
-                "damage": "",
+                "damage": "N/A",
                 "accuracy": 0,
-                "effects": "Veleno"
+                "effects": "Veleno",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -237,10 +259,11 @@
         {
             "_id": "aae0d33ff7d64998",
             "name": "[Capacità] Avventarsi",
-            "type": "note",
+            "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Può balzare addosso alla preda saltando fino a 4m senza rincorsa.</p>"
+                "description": "<p>Può balzare addosso alla preda saltando fino a 4m senza rincorsa.</p>",
+                "isStored": false
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -253,7 +276,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1d6/2"
+                "description": "Quantità: 1d6/2",
+                "isStored": false,
+                "quantity": "1d6"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -266,7 +291,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1d6/2"
+                "description": "Quantità: 1d6/2",
+                "isStored": false,
+                "quantity": "1d6"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -279,7 +306,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1d6/2"
+                "description": "Quantità: 1d6/2",
+                "isStored": false,
+                "quantity": "1d6"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

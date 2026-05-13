@@ -49,6 +49,10 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 5,
+                "max": 5
             }
         },
         "skills": {
@@ -103,7 +107,11 @@
             "weight": "135 Kg",
             "environment": "Ovunque venga evocato",
             "organization": "Solitario",
-            "vulnerability": ""
+            "vulnerability": "",
+            "intelligence": "Senziente",
+            "bounty": 1500,
+            "academicKnowledge": "",
+            "common": ""
         },
         "derivedStats": {
             "vigor": {
@@ -140,12 +148,17 @@
                 "value": 45,
                 "max": 45,
                 "unmodifiedMax": 45
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
             }
         },
         "description": "<p>Tetri demoni scheletrici o bestiali che offrono \"ospitalità\" o perseguitano senza tregua coloro che non li invitano in casa offrendo cibi o doni.</p>",
         "sourcebook": "TC 206",
         "monsterType": "Relict",
-        "difficulty": "HARD",
+        "difficulty": "complesso",
         "bounty": 1500,
         "armorHead": 5,
         "armorUpper": 5,
@@ -167,9 +180,12 @@
             "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
                 "description": "N/A",
-                "damage": "",
+                "damage": "N/A",
                 "accuracy": 0,
-                "effects": "N/A"
+                "effects": "N/A",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -179,10 +195,11 @@
         {
             "_id": "0780675db47e42da",
             "name": "[Capacità] Aura Gelida",
-            "type": "note",
+            "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Gelo innaturale: chi inizia il Turno in mischia ha il 50% di probabilità di restare Congelato.</p>"
+                "description": "<p>Gelo innaturale: chi inizia il Turno in mischia ha il 50% di probabilità di restare Congelato.</p>",
+                "isStored": false
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -192,10 +209,11 @@
         {
             "_id": "1cbb6662c8474e3c",
             "name": "[Capacità] Mutaforma",
-            "type": "note",
+            "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Imita alla perfezione ogni voce, e se ha più di 50 PS assume la forma di un umanoide che ha ucciso (ruba pelle).</p>"
+                "description": "<p>Imita alla perfezione ogni voce, e se ha più di 50 PS assume la forma di un umanoide che ha ucciso (ruba pelle).</p>",
+                "isStored": false
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -208,7 +226,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1"
+                "description": "Quantità: 1",
+                "isStored": false,
+                "quantity": "1"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -221,7 +241,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 2d6"
+                "description": "Quantità: 2d6",
+                "isStored": false,
+                "quantity": "2d6"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -234,7 +256,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1d10"
+                "description": "Quantità: 1d10",
+                "isStored": false,
+                "quantity": "1d10"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

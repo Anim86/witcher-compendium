@@ -48,6 +48,10 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 0,
+                "max": 0
             }
         },
         "skills": {
@@ -98,7 +102,14 @@
             },
             "tempra": {
                 "value": 0
-            }
+            },
+            "int": {},
+            "ref": {},
+            "dex": {},
+            "body": {},
+            "emp": {},
+            "cra": {},
+            "will": {}
         },
         "details": {
             "biography": "<p>Eh, ho avuto il piacere di incontrare un paio di volte una succube. Mai a letto, ovviamente! Penso che le succubi non siano troppo male. Una volta ci ho avuto una bella conversazione. Onestamente, a volte le preferisco agli umani, eh! La verità è che hanno bisogno di dormire con certa gente e… assorbirne la forza vitale, immagino. Ho sentito che molti di quei ‘fortunati' non vedono il mattino dopo. – Rodolf Kazmer</p>",
@@ -110,7 +121,9 @@
             "weight": "",
             "environment": "",
             "organization": "",
-            "vulnerability": ""
+            "vulnerability": "",
+            "intelligence": "",
+            "bounty": 400
         },
         "derivedStats": {
             "rec": {
@@ -135,12 +148,17 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
             }
         },
         "description": "<p>Eh, ho avuto il piacere di incontrare un paio di volte una succube. Mai a letto, ovviamente! Penso che le succubi non siano troppo male. Una volta ci ho avuto una bella conversazione. Onestamente, a volte le preferisco agli umani, eh! La verità è che hanno bisogno di dormire con certa gente e… assorbirne la forza vitale, immagino. Ho sentito che molti di quei ‘fortunati' non vedono il mattino dopo. – Rodolf Kazmer</p>",
         "sourcebook": "DW 60",
         "monsterType": "Relict",
-        "difficulty": "MEDIUM",
+        "difficulty": "medium",
         "bounty": 400,
         "height": "",
         "weight": "",

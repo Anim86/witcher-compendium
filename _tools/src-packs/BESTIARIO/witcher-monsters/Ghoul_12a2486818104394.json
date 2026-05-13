@@ -49,6 +49,10 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 0,
+                "max": 0
             }
         },
         "skills": {
@@ -75,7 +79,11 @@
             "weight": "Circa 86 Kg",
             "environment": "Campi di battaglia e cimiteri",
             "organization": "Branchi da 3 a 6",
-            "vulnerability": ""
+            "vulnerability": "",
+            "intelligence": "Circa come un cane",
+            "bounty": 30,
+            "academicKnowledge": "",
+            "common": ""
         },
         "derivedStats": {
             "vigor": {
@@ -112,12 +120,17 @@
                 "value": 25,
                 "max": 25,
                 "unmodifiedMax": 25
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
             }
         },
         "description": "<p>Luridi demoni necrofagi, che si nutrono dei morti sui campi di battaglia e attaccano chiunque si avvicini.</p>",
         "sourcebook": "MB 279",
         "monsterType": "Necrophage",
-        "difficulty": "MEDIUM",
+        "difficulty": "complesso",
         "bounty": 30,
         "armorHead": 0,
         "armorUpper": 0,
@@ -139,9 +152,12 @@
             "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
             "system": {
                 "description": "N/A",
-                "damage": "",
+                "damage": "N/A",
                 "accuracy": 0,
-                "effects": "N/A"
+                "effects": "N/A",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -154,7 +170,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1"
+                "description": "Quantità: 1",
+                "isStored": false,
+                "quantity": "1"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -167,7 +185,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1d6"
+                "description": "Quantità: 1d6",
+                "isStored": false,
+                "quantity": "1d6"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

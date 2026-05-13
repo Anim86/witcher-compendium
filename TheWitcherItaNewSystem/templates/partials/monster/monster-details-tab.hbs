@@ -73,5 +73,32 @@
             </div>
         </section>
     </div>
+
+    {{!-- Full Width Bottom Section: Special Abilities --}}
+    <div class="details-footer">
+        <section class="details-section abilities card">
+            <h3 class="section-header"><i class="fas fa-star"></i> {{localize "WITCHER.Monster.SpecialAbilities"}}</h3>
+            <div class="abilities-grid">
+                {{#each abilities as |ability id|}}
+                <div class="ability-item item" data-item-id="{{ability._id}}">
+                    <div class="ability-header">
+                        <img src="{{ability.img}}" class="ability-icon" />
+                        <span class="ability-name">{{ability.name}}</span>
+                        <div class="ability-actions">
+                            <a class="item-action item-edit" title="{{localize 'WITCHER.Button.Edit'}}"><i class="fas fa-edit"></i></a>
+                            <a class="item-action item-delete" title="{{localize 'WITCHER.Button.Delete'}}"><i class="fas fa-trash"></i></a>
+                        </div>
+                    </div>
+                    <div class="ability-description">
+                        {{{ability.system.description}}}
+                    </div>
+                </div>
+                {{/each}}
+                {{#unless abilities}}
+                <p class="no-data">{{localize "WITCHER.Monster.NoSpecialAbilities"}}</p>
+                {{/unless}}
+            </div>
+        </section>
+    </div>
 </div>
 

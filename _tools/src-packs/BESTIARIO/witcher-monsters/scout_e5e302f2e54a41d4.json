@@ -49,6 +49,10 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 5,
+                "max": 5
             }
         },
         "skills": {
@@ -89,7 +93,11 @@
             "weight": "Normale umano",
             "environment": "Terre selvagge",
             "organization": "Solitario",
-            "vulnerability": ""
+            "vulnerability": "",
+            "intelligence": "Senziente",
+            "bounty": 0,
+            "academicKnowledge": "",
+            "common": ""
         },
         "derivedStats": {
             "hp": {
@@ -126,6 +134,11 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
             }
         },
         "armorHead": 5,
@@ -140,7 +153,9 @@
         "academicKnowledge": "",
         "bounty": 0,
         "description": "<p>Esploratori abili nel sopravvivere nei boschi. Spesso al servizio di militari, esplorano territori ostili.</p>",
-        "vulnerability": ""
+        "vulnerability": "",
+        "monsterType": "Humanoid",
+        "difficulty": "semplice"
     },
     "items": [
         {
@@ -150,9 +165,12 @@
             "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
                 "description": "200m",
-                "damage": "",
+                "damage": "N/A",
                 "accuracy": 0,
-                "effects": "200m"
+                "effects": "200m",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -166,9 +184,12 @@
             "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
                 "description": "N/A",
-                "damage": "",
+                "damage": "N/A",
                 "accuracy": 0,
-                "effects": "N/A"
+                "effects": "N/A",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -178,10 +199,11 @@
         {
             "_id": "60fc9ace0e5242cb",
             "name": "[Capacità] Frecce a Punta Larga",
-            "type": "note",
+            "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Ha 10 frecce a punta larga. Infliggono Sanguinamento (100%).</p>"
+                "description": "<p>Ha 10 frecce a punta larga. Infliggono Sanguinamento (100%).</p>",
+                "isStored": false
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -191,10 +213,11 @@
         {
             "_id": "1656d162c62d40bb",
             "name": "[Capacità] Segugio",
-            "type": "note",
+            "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>+5 a Sopravvivenza per seguire le tracce.</p>"
+                "description": "<p>+5 a Sopravvivenza per seguire le tracce.</p>",
+                "isStored": false
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -207,7 +230,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1d10"
+                "description": "Quantità: 1d10",
+                "isStored": false,
+                "quantity": "1d10"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -220,7 +245,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 30"
+                "description": "Quantità: 30",
+                "isStored": false,
+                "quantity": "30"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -233,7 +260,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1"
+                "description": "Quantità: 1",
+                "isStored": false,
+                "quantity": "1"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

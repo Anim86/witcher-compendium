@@ -1,7 +1,7 @@
 {
     "_id": "0275fca75d31b216",
     "name": "Glustyworp",
-    "type": "character",
+    "type": "monster",
     "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/glustyworp.webp",
     "system": {
         "description": "",
@@ -11,7 +11,30 @@
         "environment": "",
         "organization": "",
         "intelligence": "",
-        "vulnerability": ""
+        "vulnerability": "",
+        "stats": {
+            "armor": {
+                "value": 0,
+                "max": 0
+            }
+        },
+        "derivedStats": {
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "skills": {
+            "int": {},
+            "ref": {},
+            "dex": {},
+            "body": {},
+            "emp": {},
+            "cra": {},
+            "will": {}
+        },
+        "monsterType": "Relict"
     },
     "effects": [],
     "flags": {},

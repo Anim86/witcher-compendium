@@ -49,6 +49,10 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 0,
+                "max": 0
             }
         },
         "skills": {
@@ -70,7 +74,11 @@
             "weight": "Circa 68 Kg",
             "environment": "Foreste e pianure",
             "organization": "Branchi da 3 a 6",
-            "vulnerability": ""
+            "vulnerability": "",
+            "intelligence": "Circa come un cane",
+            "bounty": 10,
+            "academicKnowledge": "",
+            "common": "Non c'è molto da dire sui lupi. Eh, sono dei maledetti bastardi che vivono nelle foreste e attaccano i viaggiatori. Di solito agiscono in branchi di 5 o 6 e hanno paura del fuoco. Se dovete combatterli fate in modo che non possano circondarvi, perché vi salteranno addosso da tutte le parti. Non è un bel modo di morire, secondo me. Le cose vanno sempre peggio dall'inizio della guerra, con tutti quei cadaveri in giro i lupi sono sempre più spavaldi. Eh, tanti credono che siano pure un segno di sventura. Non mi ricordo più quante profezie iniziano con un lupo. Seriamente, sono bestiacce maledette."
         },
         "derivedStats": {
             "vigor": {
@@ -107,12 +115,17 @@
                 "value": 20,
                 "max": 20,
                 "unmodifiedMax": 20
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
             }
         },
         "description": "<p>Predatori comuni che cacciano in branco nelle foreste e pianure, letali se riescono a circondare la preda.</p>",
         "sourcebook": "MB 287",
         "monsterType": "Beast",
-        "difficulty": "EASY",
+        "difficulty": "semplice",
         "bounty": 10,
         "armorHead": 0,
         "armorUpper": 0,
@@ -134,9 +147,12 @@
             "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
             "system": {
                 "description": "N/A",
-                "damage": "",
+                "damage": "N/A",
                 "accuracy": 0,
-                "effects": "N/A"
+                "effects": "N/A",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -146,10 +162,11 @@
         {
             "_id": "6a80969d088641ca",
             "name": "[Capacità] Fiuto",
-            "type": "note",
+            "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Un lupo può seguire le tracce di una creatura senza bisogno di segnali visivi o uditivi senza alcuna penalità.</p>"
+                "description": "<p>Un lupo può seguire le tracce di una creatura senza bisogno di segnali visivi o uditivi senza alcuna penalità.</p>",
+                "isStored": false
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -159,10 +176,11 @@
         {
             "_id": "07d8300a6ba34e92",
             "name": "[Capacità] Vista Notturna",
-            "type": "note",
+            "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Un lupo può agire in zone di luce fioca senza penalità.</p>"
+                "description": "<p>Un lupo può agire in zone di luce fioca senza penalità.</p>",
+                "isStored": false
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -175,7 +193,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1"
+                "description": "Quantità: 1",
+                "isStored": false,
+                "quantity": "1"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -188,7 +208,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1d6"
+                "description": "Quantità: 1d6",
+                "isStored": false,
+                "quantity": "1d6"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -201,7 +223,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1d6"
+                "description": "Quantità: 1d6",
+                "isStored": false,
+                "quantity": "1d6"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -214,7 +238,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1"
+                "description": "Quantità: 1",
+                "isStored": false,
+                "quantity": "1"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

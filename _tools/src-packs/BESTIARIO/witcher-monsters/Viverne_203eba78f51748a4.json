@@ -49,6 +49,10 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 0,
+                "max": 0
             }
         },
         "skills": {
@@ -124,7 +128,9 @@
                     "value": 0,
                     "isVisible": true
                 }
-            }
+            },
+            "emp": {},
+            "cra": {}
         },
         "details": {
             "biography": "<p>Le viverne sono tipo draghi con due zampe, credo. Dicono che una volta uccisi, berne il sangue dia potere sul fuoco. – Rodolf Kazmer</p><p>Le viverne infestano i picchi montani e danno la caccia a chi passa nelle vicinanze. Attaccano piombando dal cielo, tentando di restare in volo il più a lungo possibile. Non possono soffiare fuoco come i draghi, ma sputano veleno acido con grande precisione.</p>",
@@ -136,7 +142,9 @@
             "weight": "",
             "environment": "",
             "organization": "",
-            "vulnerability": ""
+            "vulnerability": "",
+            "intelligence": "",
+            "bounty": 1500
         },
         "derivedStats": {
             "vigor": {
@@ -171,12 +179,17 @@
                 "value": 45,
                 "max": 45,
                 "unmodifiedMax": 45
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
             }
         },
         "description": "<p>Le viverne sono tipo draghi con due zampe, credo. Dicono che una volta uccisi, berne il sangue dia potere sul fuoco. – Rodolf Kazmer</p><p>Le viverne infestano i picchi montani e danno la caccia a chi passa nelle vicinanze. Attaccano piombando dal cielo, tentando di restare in volo il più a lungo possibile. Non possono soffiare fuoco come i draghi, ma sputano veleno acido con grande precisione.</p>",
         "sourcebook": "MB 307",
         "monsterType": "Draconid",
-        "difficulty": "HARD",
+        "difficulty": "hard",
         "bounty": 1500,
         "height": "",
         "weight": "",
@@ -193,9 +206,12 @@
             "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
             "system": {
                 "description": "Veleno (25%)",
-                "damage": "",
+                "damage": "N/A",
                 "accuracy": 0,
-                "effects": "Veleno (25%)"
+                "effects": "Veleno (25%)",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -209,9 +225,12 @@
             "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
             "system": {
                 "description": "N/A",
-                "damage": "",
+                "damage": "N/A",
                 "accuracy": 0,
-                "effects": "N/A"
+                "effects": "N/A",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -225,9 +244,12 @@
             "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
                 "description": "Veleno (75%)",
-                "damage": "",
+                "damage": "N/A",
                 "accuracy": 0,
-                "effects": "Veleno (75%)"
+                "effects": "Veleno (75%)",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -237,10 +259,11 @@
         {
             "_id": "0d9ff6b462874f93",
             "name": "[Capacità] Sputo Velenoso",
-            "type": "note",
+            "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Può sputare veleno contro un singolo bersaglio fino a 8m (3d6 danni e 100% Avvelenato).</p>"
+                "description": "<p>Può sputare veleno contro un singolo bersaglio fino a 8m (3d6 danni e 100% Avvelenato).</p>",
+                "isStored": false
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -250,10 +273,11 @@
         {
             "_id": "4062564298d14843",
             "name": "[Capacità] Volo",
-            "type": "note",
+            "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Può volare come azione di movimento. Se subisce più di 10 danni precipita.</p>"
+                "description": "<p>Può volare come azione di movimento. Se subisce più di 10 danni precipita.</p>",
+                "isStored": false
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -266,7 +290,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1d10"
+                "description": "Quantità: 1d10",
+                "isStored": false,
+                "quantity": "1d10"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -279,7 +305,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1d6/2"
+                "description": "Quantità: 1d6/2",
+                "isStored": false,
+                "quantity": "1d6"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -292,7 +320,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1d10"
+                "description": "Quantità: 1d10",
+                "isStored": false,
+                "quantity": "1d10"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -305,7 +335,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1d6/2"
+                "description": "Quantità: 1d6/2",
+                "isStored": false,
+                "quantity": "1d6"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

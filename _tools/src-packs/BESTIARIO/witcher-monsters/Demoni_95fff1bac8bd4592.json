@@ -49,6 +49,10 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 0,
+                "max": 0
             }
         },
         "skills": {
@@ -81,7 +85,14 @@
             },
             "tempra": {
                 "value": 7
-            }
+            },
+            "int": {},
+            "ref": {},
+            "dex": {},
+            "body": {},
+            "emp": {},
+            "cra": {},
+            "will": {}
         },
         "details": {
             "biography": "<p>E se ne incontri uno, ti farà cadere in trance per nutrirsi dei tuoi segreti più oscuri. Poi, dopo averti svuotato la mente, ti farà a pezzi e divorerà il tuo cadavere. – Rodolf Kazmer</p><p>I demoni sono tra i relitti più pericolosi che si incontrano nel Continente. Sono creature terrificanti simili ad alci, tanto colossali che neppure i membri della Scuola del Grifone riescono a stordirli con il segno Aard. Guariscono quasi istantaneamente e possono ipnotizzare con uno sguardo.</p>",
@@ -93,7 +104,9 @@
             "weight": "",
             "environment": "",
             "organization": "",
-            "vulnerability": ""
+            "vulnerability": "",
+            "intelligence": "",
+            "bounty": 1500
         },
         "derivedStats": {
             "vigor": {
@@ -128,12 +141,17 @@
                 "value": 50,
                 "max": 50,
                 "unmodifiedMax": 50
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
             }
         },
         "description": "<p>E se ne incontri uno, ti farà cadere in trance per nutrirsi dei tuoi segreti più oscuri. Poi, dopo averti svuotato la mente, ti farà a pezzi e divorerà il tuo cadavere. – Rodolf Kazmer</p><p>I demoni sono tra i relitti più pericolosi che si incontrano nel Continente. Sono creature terrificanti simili ad alci, tanto colossali che neppure i membri della Scuola del Grifone riescono a stordirli con il segno Aard. Guariscono quasi istantaneamente e possono ipnotizzare con uno sguardo.</p>",
         "sourcebook": "MB 301",
         "monsterType": "Relict",
-        "difficulty": "MEDIUM",
+        "difficulty": "medium",
         "bounty": 1500,
         "height": "",
         "weight": "",
@@ -152,7 +170,10 @@
                 "description": "",
                 "damage": "6d6+2",
                 "accuracy": 0,
-                "effects": ""
+                "effects": "",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -168,7 +189,10 @@
                 "description": "",
                 "damage": "8d6",
                 "accuracy": 0,
-                "effects": "-1 PA"
+                "effects": "-1 PA",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -184,7 +208,10 @@
                 "description": "",
                 "damage": "7d6",
                 "accuracy": 0,
-                "effects": "Sanguinamento (50%)"
+                "effects": "Sanguinamento (50%)",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -194,10 +221,11 @@
         {
             "_id": "0ba1a530a53c4cfc",
             "name": "[Capacità] Carica",
-            "type": "note",
+            "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Se un avversario si allontana di oltre 10m, un demonio può caricarlo con le corna. Subisce -4 Precisione, ma infligge 10d6 e scaraventa indietro la vittima di 8m.</p>"
+                "description": "<p>Se un avversario si allontana di oltre 10m, un demonio può caricarlo con le corna. Subisce -4 Precisione, ma infligge 10d6 e scaraventa indietro la vittima di 8m.</p>",
+                "isStored": false
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -207,10 +235,11 @@
         {
             "_id": "d1",
             "name": "[Capacità] Ipnosi",
-            "type": "note",
+            "type": "ability",
             "img": "modules/witcher-compendium/assets/SPECIAL/gift_mente.webp",
             "system": {
-                "description": "<p>Un demonio può ipnotizzare i propri avversari. Chi fallisce la resistenza subisce -4 agli attacchi e alle difese per 5 round.</p>"
+                "description": "<p>Un demonio può ipnotizzare i propri avversari. Chi fallisce la resistenza subisce -4 agli attacchi e alle difese per 5 round.</p>",
+                "isStored": false
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -220,10 +249,11 @@
         {
             "_id": "d2",
             "name": "[Capacità] Rigenerazione",
-            "type": "note",
+            "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Un demonio rigenera 5 PS per round.</p>"
+                "description": "<p>Un demonio rigenera 5 PS per round.</p>",
+                "isStored": false
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

@@ -49,6 +49,10 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 0,
+                "max": 0
             }
         },
         "skills": {
@@ -78,7 +82,14 @@
             },
             "tempra": {
                 "value": 7
-            }
+            },
+            "int": {},
+            "ref": {},
+            "dex": {},
+            "body": {},
+            "emp": {},
+            "cra": {},
+            "will": {}
         },
         "details": {
             "biography": "<p>Dicono che i wraith diurni siano le anime di giovani donne uccise poco prima del matrimonio. – Rodolf Kazmer</p><p>A volte le giovani fidanzate che muoiono di morte violenta prima del matrimonio ritornano come wraith diurni, creature potenti e vendicative. Le anime di queste donne sono folli per il dolore e la rabbia che le spinge a infestare i campi vicini alla loro tomba.</p>",
@@ -90,7 +101,9 @@
             "weight": "",
             "environment": "",
             "organization": "",
-            "vulnerability": ""
+            "vulnerability": "",
+            "intelligence": "",
+            "bounty": 800
         },
         "derivedStats": {
             "vigor": {
@@ -125,12 +138,17 @@
                 "value": 50,
                 "max": 50,
                 "unmodifiedMax": 50
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
             }
         },
         "description": "<p>Dicono che i wraith diurni siano le anime di giovani donne uccise poco prima del matrimonio. – Rodolf Kazmer</p><p>A volte le giovani fidanzate che muoiono di morte violenta prima del matrimonio ritornano come wraith diurni, creature potenti e vendicative. Le anime di queste donne sono folli per il dolore e la rabbia che le spinge a infestare i campi vicini alla loro tomba.</p>",
         "sourcebook": "MB 285",
         "monsterType": "Specter",
-        "difficulty": "MEDIUM",
+        "difficulty": "medium",
         "bounty": 800,
         "height": "",
         "weight": "",
@@ -149,7 +167,10 @@
                 "description": "",
                 "damage": "5d6",
                 "accuracy": 0,
-                "effects": ""
+                "effects": "",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -159,10 +180,11 @@
         {
             "_id": "21411460b99a48ba",
             "name": "[Capacità] Danza di Mezzogiorno",
-            "type": "note",
+            "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Può creare 3 copie danzanti. Finché attiva, drena 3 PS dal bersaglio ogni round per guarire il wraith.</p>"
+                "description": "<p>Può creare 3 copie danzanti. Finché attiva, drena 3 PS dal bersaglio ogni round per guarire il wraith.</p>",
+                "isStored": false
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

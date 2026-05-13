@@ -49,6 +49,10 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 5,
+                "max": 5
             }
         },
         "skills": {
@@ -127,7 +131,11 @@
             "weight": "Normale umano",
             "environment": "Selve o vicino alle strade maestre",
             "organization": "Commando da 3 a 15",
-            "vulnerability": ""
+            "vulnerability": "",
+            "intelligence": "Umana",
+            "bounty": 20,
+            "academicKnowledge": "Sono guerriglieri addestrati. Iniziano l'attacco con raffiche di frecce dagli alberi, poi metà dell'unità carica in mischia. Le Sventratrici Elfiche sono riservate ai nemici più odiati.",
+            "common": "Una volta avevano uno scopo, combattevano per la libertà. Adesso sono solo dei pazzi vendicativi, che vogliono morire in una fiammata di gloria."
         },
         "derivedStats": {
             "hp": {
@@ -164,6 +172,11 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
             }
         },
         "armorHead": 5,
@@ -178,7 +191,9 @@
         "academicKnowledge": "Sono guerriglieri addestrati. Iniziano l'attacco con raffiche di frecce dagli alberi, poi metà dell'unità carica in mischia. Le Sventratrici Elfiche sono riservate ai nemici più odiati.",
         "bounty": 20,
         "description": "<p>Ribelli elfici e nanici spinti nei boschi, maestri di guerriglia e imboscate. Letali dalla distanza.</p>",
-        "vulnerability": ""
+        "vulnerability": "",
+        "monsterType": "Humanoid",
+        "difficulty": "complesso"
     },
     "items": [
         {
@@ -188,9 +203,12 @@
             "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
                 "description": "Gittata 200m",
-                "damage": "",
+                "damage": "N/A",
                 "accuracy": 0,
-                "effects": "Gittata 200m"
+                "effects": "Gittata 200m",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -204,9 +222,12 @@
             "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
                 "description": "Gittata 20m",
-                "damage": "",
+                "damage": "N/A",
                 "accuracy": 0,
-                "effects": "Gittata 20m"
+                "effects": "Gittata 20m",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -220,9 +241,12 @@
             "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
                 "description": "N/A",
-                "damage": "",
+                "damage": "N/A",
                 "accuracy": 0,
-                "effects": "N/A"
+                "effects": "N/A",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -236,9 +260,12 @@
             "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
                 "description": "N/A",
-                "damage": "",
+                "damage": "N/A",
                 "accuracy": 0,
-                "effects": "N/A"
+                "effects": "N/A",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -248,10 +275,11 @@
         {
             "_id": "03bda3d8af5b412a",
             "name": "[Capacità] Specialista dell'Imboscata",
-            "type": "note",
+            "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Quando un gruppo di arcieri effettua una prova di Nascondersi, l'intero gruppo usa il singolo tiro più alto tra tutti i membri.</p>"
+                "description": "<p>Quando un gruppo di arcieri effettua una prova di Nascondersi, l'intero gruppo usa il singolo tiro più alto tra tutti i membri.</p>",
+                "isStored": false
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -264,7 +292,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1d10"
+                "description": "Quantità: 1d10",
+                "isStored": false,
+                "quantity": "1d10"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -277,7 +307,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 30"
+                "description": "Quantità: 30",
+                "isStored": false,
+                "quantity": "30"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -290,7 +322,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 10"
+                "description": "Quantità: 10",
+                "isStored": false,
+                "quantity": "10"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -303,7 +337,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1"
+                "description": "Quantità: 1",
+                "isStored": false,
+                "quantity": "1"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

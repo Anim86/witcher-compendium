@@ -49,6 +49,10 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 8,
+                "max": 8
             }
         },
         "skills": {
@@ -70,7 +74,11 @@
             "weight": "Circa 907 Kg",
             "environment": "Picchi montani",
             "organization": "Solitario o coppia",
-            "vulnerability": ""
+            "vulnerability": "",
+            "intelligence": "Circa come un cane",
+            "bounty": 1200,
+            "academicKnowledge": "",
+            "common": ""
         },
         "derivedStats": {
             "vigor": {
@@ -107,12 +115,17 @@
                 "value": 50,
                 "max": 50,
                 "unmodifiedMax": 50
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
             }
         },
         "description": "<p>Majestuosi super-predatori che uniscono l'aspetto e la ferocia di aquile e leoni. Colpiscono con forza devastante dal cielo.</p>",
         "sourcebook": "MB 293",
         "monsterType": "Hybrid",
-        "difficulty": "HARD",
+        "difficulty": "complesso",
         "bounty": 1200,
         "armorHead": 8,
         "armorUpper": 8,
@@ -134,9 +147,12 @@
             "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
             "system": {
                 "description": "Sanguinamento",
-                "damage": "",
+                "damage": "N/A",
                 "accuracy": 0,
-                "effects": "Sanguinamento"
+                "effects": "Sanguinamento",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -146,10 +162,11 @@
         {
             "_id": "b14cd760b460408e",
             "name": "[Capacità] Urlo",
-            "type": "note",
+            "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Usa il turno per lanciare un grido che costringe tutti entro 10m a TS Grinta -1.</p>"
+                "description": "<p>Usa il turno per lanciare un grido che costringe tutti entro 10m a TS Grinta -1.</p>",
+                "isStored": false
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -159,10 +176,11 @@
         {
             "_id": "9f5d1bf5d54544af",
             "name": "[Capacità] Volo",
-            "type": "note",
+            "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Vola come Azione di Movimento. Se subisce più di 10 danni cade.</p>"
+                "description": "<p>Vola come Azione di Movimento. Se subisce più di 10 danni cade.</p>",
+                "isStored": false
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -175,7 +193,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1d10"
+                "description": "Quantità: 1d10",
+                "isStored": false,
+                "quantity": "1d10"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -188,7 +208,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1"
+                "description": "Quantità: 1",
+                "isStored": false,
+                "quantity": "1"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

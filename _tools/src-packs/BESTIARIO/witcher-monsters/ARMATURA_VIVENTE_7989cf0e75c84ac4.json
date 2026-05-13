@@ -49,6 +49,10 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 0,
+                "max": 0
             }
         },
         "skills": {
@@ -103,7 +107,11 @@
             "weight": "In Base all'Armatura Usata",
             "environment": "Rovine e torri dei maghi",
             "organization": "Solitario o coppia",
-            "vulnerability": ""
+            "vulnerability": "",
+            "intelligence": "Incapace di pensiero",
+            "bounty": 400,
+            "academicKnowledge": "",
+            "common": ""
         },
         "derivedStats": {
             "vigor": {
@@ -140,12 +148,17 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
             }
         },
         "description": "<p>Costrutti magici a forma di pesanti armature complete vuote, animate dai maghi come instancabili guardie e sentinelle.</p>",
         "sourcebook": "TC 198",
         "monsterType": "Elementa",
-        "difficulty": "MEDIUM",
+        "difficulty": "semplice",
         "bounty": 400,
         "armorHead": 0,
         "armorUpper": 0,
@@ -167,9 +180,12 @@
             "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
                 "description": "Ablativo (su Pugni)",
-                "damage": "",
+                "damage": "N/A",
                 "accuracy": 0,
-                "effects": "Ablativo (su Pugni)"
+                "effects": "Ablativo (su Pugni)",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -179,10 +195,11 @@
         {
             "_id": "15b2323a5eb64159",
             "name": "[Capacità] Costrutto",
-            "type": "note",
+            "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Senza mente, esegue fedelmente gli ordini del creatore in eterno.</p>"
+                "description": "<p>Senza mente, esegue fedelmente gli ordini del creatore in eterno.</p>",
+                "isStored": false
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -195,7 +212,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1d6/3"
+                "description": "Quantità: 1d6/3",
+                "isStored": false,
+                "quantity": "1d6"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -208,7 +227,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1d6/3"
+                "description": "Quantità: 1d6/3",
+                "isStored": false,
+                "quantity": "1d6"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -221,7 +242,9 @@
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Quantità: 1"
+                "description": "Quantità: 1",
+                "isStored": false,
+                "quantity": "1"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

@@ -48,6 +48,10 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 0,
+                "max": 0
             }
         },
         "skills": {
@@ -80,7 +84,14 @@
             },
             "tempra": {
                 "value": 0
-            }
+            },
+            "int": {},
+            "ref": {},
+            "dex": {},
+            "body": {},
+            "emp": {},
+            "cra": {},
+            "will": {}
         },
         "details": {
             "biography": "<p>Nel sud dei monti di Mahakam si dice che siano spiriti della terra, che pattugliano il sottosuolo per evitare che la gente estragga oro e gemme. L'unica volta che ne ho visto uno stava facendo crollare il soffitto di una miniera con le sue enormi chele! Sbucano dal suolo senza preavviso e hanno gusci più duri dell'acciaio. – Rodolf Kazmer</p>",
@@ -92,7 +103,9 @@
             "weight": "",
             "environment": "",
             "organization": "",
-            "vulnerability": ""
+            "vulnerability": "",
+            "intelligence": "",
+            "bounty": 500
         },
         "derivedStats": {
             "rec": {
@@ -117,12 +130,17 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
             }
         },
         "description": "<p>Nel sud dei monti di Mahakam si dice che siano spiriti della terra, che pattugliano il sottosuolo per evitare che la gente estragga oro e gemme. L'unica volta che ne ho visto uno stava facendo crollare il soffitto di una miniera con le sue enormi chele! Sbucano dal suolo senza preavviso e hanno gusci più duri dell'acciaio. – Rodolf Kazmer</p>",
         "sourcebook": "DW 90",
         "monsterType": "Relict",
-        "difficulty": "MEDIUM",
+        "difficulty": "medium",
         "bounty": 500,
         "height": "",
         "weight": "",

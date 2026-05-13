@@ -48,6 +48,10 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 0,
+                "max": 0
             }
         },
         "skills": {
@@ -98,7 +102,14 @@
             },
             "tempra": {
                 "value": 0
-            }
+            },
+            "int": {},
+            "ref": {},
+            "dex": {},
+            "body": {},
+            "emp": {},
+            "cra": {},
+            "will": {}
         },
         "details": {
             "biography": "<p>Nel sud c'è gente convinta che esista un gruppo segreto di potenti vampiri che opera in tutto il Continente, una sorta di ragnatela che tira le fila. I vampiri possono essere più forti e veloci di noi mortali e possono guarire ogni ferita, ma un paletto d'argento nel cuore li rispedisce nella tomba! O almeno così si spera. – Rodolf Kazmer</p>",
@@ -110,7 +121,9 @@
             "weight": "",
             "environment": "",
             "organization": "",
-            "vulnerability": ""
+            "vulnerability": "",
+            "intelligence": "",
+            "bounty": 5000
         },
         "derivedStats": {
             "rec": {
@@ -135,12 +148,17 @@
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
             }
         },
         "description": "<p>Nel sud c'è gente convinta che esista un gruppo segreto di potenti vampiri che opera in tutto il Continente, una sorta di ragnatela che tira le fila. I vampiri possono essere più forti e veloci di noi mortali e possono guarire ogni ferita, ma un paletto d'argento nel cuore li rispedisce nella tomba! O almeno così si spera. – Rodolf Kazmer</p>",
         "sourcebook": "DW 138",
         "monsterType": "Vampire",
-        "difficulty": "MEDIUM",
+        "difficulty": "medium",
         "bounty": 5000,
         "height": "",
         "weight": "",

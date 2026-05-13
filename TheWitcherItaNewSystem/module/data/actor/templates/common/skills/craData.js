@@ -17,13 +17,13 @@ export default class Craft extends foundry.abstract.DataModel {
 
     /** @inheritdoc */
     static migrateData(source) {
-        source.alchemy.label = 'WITCHER.skills.alchemy.label';
-        source.crafting.label = 'WITCHER.skills.crafting.label';
-        source.disguise.label = 'WITCHER.skills.disguise.label';
-        source.firstaid.label = 'WITCHER.skills.firstAid.label';
-        source.forgery.label = 'WITCHER.skills.forgery.label';
-        source.picklock.label = 'WITCHER.skills.pickLock.label';
-        source.trapcraft.label = 'WITCHER.skills.trapCrafting.label';
+        if (source.alchemy) source.alchemy.label = 'WITCHER.skills.alchemy.label';
+        if (source.crafting) source.crafting.label = 'WITCHER.skills.crafting.label';
+        if (source.disguise) source.disguise.label = 'WITCHER.skills.disguise.label';
+        if (source.firstaid) source.firstaid.label = 'WITCHER.skills.firstAid.label';
+        if (source.forgery) source.forgery.label = 'WITCHER.skills.forgery.label';
+        if (source.picklock) source.picklock.label = 'WITCHER.skills.pickLock.label';
+        if (source.trapcraft) source.trapcraft.label = 'WITCHER.skills.trapCrafting.label';
 
         return super.migrateData(source);
     }

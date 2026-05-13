@@ -49,6 +49,10 @@
                 "value": 8,
                 "max": 8,
                 "unmodifiedMax": 8
+            },
+            "armor": {
+                "value": 0,
+                "max": 0
             }
         },
         "skills": {
@@ -99,7 +103,14 @@
             },
             "resistereACoercizione": {
                 "value": 14
-            }
+            },
+            "int": {},
+            "ref": {},
+            "dex": {},
+            "body": {},
+            "emp": {},
+            "cra": {},
+            "will": {}
         },
         "details": {
             "biography": "<p>Oberhasil è il leader della troupe di artisti dell'Alderwood. Sebbene appaia come un buffo silvano mangione e bevitore, possiede un'antica saggezza e un profondo legame con la foresta. Ha una particolare predilezione per la vodka di Mahakam.</p>",
@@ -111,7 +122,8 @@
             "weight": "",
             "environment": "",
             "organization": "",
-            "vulnerability": ""
+            "vulnerability": "",
+            "intelligence": ""
         },
         "derivedStats": {
             "hp": {
@@ -163,6 +175,11 @@
                 "value": 20,
                 "max": 20,
                 "unmodifiedMax": 20
+            },
+            "focus": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
             }
         },
         "description": "<p>Oberhasil è il leader della troupe di artisti dell'Alderwood. Sebbene appaia come un buffo silvano mangione e bevitore, possiede un'antica saggezza e un profondo legame con la foresta. Ha una particolare predilezione per la vodka di Mahakam.</p>",
@@ -172,7 +189,9 @@
         "environment": "",
         "organization": "",
         "intelligence": "",
-        "vulnerability": ""
+        "vulnerability": "",
+        "monsterType": "Relict",
+        "difficulty": "medium"
     },
     "items": [
         {
@@ -182,7 +201,10 @@
             "system": {
                 "damage": "4d6+4",
                 "accuracy": 0,
-                "effects": "Atterramento (30%)"
+                "effects": "Atterramento (30%)",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
             }
         }
     ],
