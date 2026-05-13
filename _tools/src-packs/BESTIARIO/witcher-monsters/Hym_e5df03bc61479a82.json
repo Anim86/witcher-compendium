@@ -87,7 +87,12 @@
             "threat": "Difficile Arduo",
             "reward": 1500,
             "monsterType": "Specter",
-            "difficulty": "MEDIUM"
+            "difficulty": "MEDIUM",
+            "height": "",
+            "weight": "",
+            "environment": "",
+            "organization": "",
+            "vulnerability": ""
         },
         "derivedStats": {
             "rec": {
@@ -114,11 +119,17 @@
                 "unmodifiedMax": 0
             }
         },
-        "description": "<p>Anche se viene classificato come spettro, un hym è in realtà un demone che vive nelle sfere esterne. Raggiunge questo mondo per nutrirsi di emozioni negative, soprattutto di sensi di colpa, attaccandosi per lo più a individui spregevoli. L'hym tormenta l'ospite con allucinazioni di giorno e incubi durante il sonno. È noto che spinge le vittime a ritirarsi in solitudine e a farsi del male da sole fino a impazzire.</p>",
+        "description": "<p>Non posso dire di conoscere qualcosa su un qualcosa che si chiama hym. Ho sentito voci su ombre e spettri del senso di colpa o roba simile. Forse intendi questi. Eh, una volta, tra una pinta e l'altra, ho parlato con un razziatore di An Skellig. Il povero bastardo era mezzo matto e chissà perché aveva voglia di dirmi come mai era al porto. Diceva di vedere l'ombra di un suo fratello di scudo con cui aveva navigato. La loro nave era affondata lungo la costa di Nazair e il ragazzo aveva dovuto lasciare annegare l'amico. – Rodolf Kazmer</p>",
         "sourcebook": "DW 28",
         "monsterType": "Specter",
         "difficulty": "MEDIUM",
-        "bounty": 1500
+        "bounty": 1500,
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "organization": "",
+        "intelligence": "",
+        "vulnerability": ""
     },
     "items": [],
     "_id": "e5df03bc61479a82",

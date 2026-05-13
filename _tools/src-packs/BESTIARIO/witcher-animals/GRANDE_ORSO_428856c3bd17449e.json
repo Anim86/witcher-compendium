@@ -52,43 +52,74 @@
             }
         },
         "skills": {
-            "accortezza": {
-                "value": 10
+            "int": {
+                "awareness": {
+                    "value": 9,
+                    "isVisible": true
+                },
+                "wildernessSurvival": {
+                    "value": 11,
+                    "isVisible": true
+                }
             },
-            "atletica": {
-                "value": 10
+            "ref": {
+                "brawling": {
+                    "value": 6,
+                    "isVisible": true
+                },
+                "dodge": {
+                    "value": 5,
+                    "isVisible": true
+                }
             },
-            "coraggio": {
-                "value": 14
+            "dex": {
+                "athletics": {
+                    "value": 4,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 2,
+                    "isVisible": true
+                }
             },
-            "intimidire": {
-                "value": 14
+            "body": {
+                "physique": {
+                    "value": 8,
+                    "isVisible": true
+                },
+                "endurance": {
+                    "value": 4,
+                    "isVisible": true
+                }
             },
-            "nascondersi": {
-                "value": 8
-            },
-            "prestanza": {
-                "value": 20
-            },
-            "resistereallamagia": {
-                "value": 13
-            },
-            "rissa": {
-                "value": 13
-            },
-            "sopravvivenza": {
-                "value": 12
-            },
-            "tempra": {
-                "value": 16
+            "emp": {},
+            "cra": {},
+            "will": {
+                "courage": {
+                    "value": 9,
+                    "isVisible": true
+                },
+                "intimidation": {
+                    "value": 9,
+                    "isVisible": true
+                },
+                "resistMagic": {
+                    "value": 8,
+                    "isVisible": true
+                }
             }
         },
         "details": {
-            "biography": "<p>Senti sempre parlare di quei grossi mostri schifosi con alito di fuoco... e finisci per dimenticarti delle fottute macchine assassine di madre natura. – Rodolf Kazmer</p><p>Ogni anno gli orsi fanno più vittime dei mostri. È più facile sopravvivere al morso di una viverna che a quello di un grande orso. In combattimento, la loro imponenza fisica è letale: bloccare una zampata con uno scudo serve solo a rompere lo scudo.</p>",
-            "threat": "Media",
+            "biography": "<p>Feroci macchine assassine di madre natura. Enormi e incredibilmente pericolosi, possono spazzare via soldati esperti con poche zampate.</p>",
+            "threat": "Medio",
             "reward": 450,
             "monsterType": "Beast",
-            "difficulty": "MEDIUM"
+            "difficulty": "SEMPLICE",
+            "height": "1,75 m (al garrese)",
+            "weight": "600 Kg",
+            "environment": "Foreste e montagne",
+            "organization": "Solitario o coppia",
+            "vulnerability": ""
         },
         "derivedStats": {
             "vigor": {
@@ -102,14 +133,14 @@
                 "unmodifiedMax": 8
             },
             "resolve": {
-                "value": 80,
-                "max": 80,
-                "unmodifiedMax": 80
+                "value": 21,
+                "max": 21,
+                "unmodifiedMax": 21
             },
             "stun": {
-                "value": 8,
-                "max": 8,
-                "unmodifiedMax": 8
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
             },
             "woundTreshold": {
                 "value": 8,
@@ -127,21 +158,32 @@
                 "unmodifiedMax": 40
             }
         },
-        "description": "<p>Senti sempre parlare di quei grossi mostri schifosi con alito di fuoco... e finisci per dimenticarti delle fottute macchine assassine di madre natura. – Rodolf Kazmer</p><p>Ogni anno gli orsi fanno più vittime dei mostri. È più facile sopravvivere al morso di una viverna che a quello di un grande orso. In combattimento, la loro imponenza fisica è letale: bloccare una zampata con uno scudo serve solo a rompere lo scudo.</p>",
+        "description": "<p>Feroci macchine assassine di madre natura. Enormi e incredibilmente pericolosi, possono spazzare via soldati esperti con poche zampate.</p>",
         "sourcebook": "TC 204",
         "monsterType": "Beast",
         "difficulty": "MEDIUM",
-        "bounty": 450
+        "bounty": 450,
+        "armorHead": 14,
+        "armorUpper": 14,
+        "armorLower": 14,
+        "height": "1,75 m (al garrese)",
+        "weight": "600 Kg",
+        "environment": "Foreste e montagne",
+        "intelligence": "Ferale",
+        "organization": "Solitario o coppia",
+        "common": "",
+        "academicKnowledge": "",
+        "vulnerability": ""
     },
     "items": [
         {
-            "_id": "o1",
+            "_id": "b015784aa24b4931",
             "name": "Morso",
             "type": "weapon",
             "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
             "system": {
-                "description": "",
-                "damage": "8d6",
+                "description": "Forza Distruttiva, Sanguinamento (75%)",
+                "damage": "",
                 "accuracy": 0,
                 "effects": "Forza Distruttiva, Sanguinamento (75%)"
             },
@@ -151,13 +193,13 @@
             }
         },
         {
-            "_id": "o2",
+            "_id": "3aa3fa348994483e",
             "name": "Artigli",
             "type": "weapon",
-            "img": "modules/witcher-compendium/assets/SPECIAL/trait_artigli.webp",
+            "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
             "system": {
-                "description": "",
-                "damage": "4d6+5",
+                "description": "Forza Distruttiva",
+                "damage": "",
                 "accuracy": 0,
                 "effects": "Forza Distruttiva"
             },
@@ -167,12 +209,64 @@
             }
         },
         {
-            "_id": "o3",
+            "_id": "4e6c073b34c44934",
             "name": "[Capacità] Alzarsi sulle Zampe",
             "type": "note",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Usa un intero round per colpire con entrambi gli artigli. 6d6 danni al torso, getta prono e blocca a terra.</p>"
+                "description": "<p>Può usare l'intero round per alzarsi e colpire con due artigli contemporaneamente per 6d6 danni bloccando la vittima a terra prona.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "6c4d068cd6d34c92",
+            "name": "Carne Cruda (x3d6)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 3d6"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "f36298dc5a6a40f8",
+            "name": "Grasso d'Orso (x1d6)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 1d6"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "1431492a2d2e44a0",
+            "name": "Pelle d'Orso (x1d6/2)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 1d6/2"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "4485f53000254645",
+            "name": "Ossa di Bestia (x2d6)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 2d6"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

@@ -84,7 +84,12 @@
             "threat": "Difficile Complesso",
             "reward": 1500,
             "monsterType": "Elementa",
-            "difficulty": "MEDIUM"
+            "difficulty": "MEDIUM",
+            "height": "",
+            "weight": "",
+            "environment": "",
+            "organization": "",
+            "vulnerability": ""
         },
         "derivedStats": {
             "rec": {
@@ -111,11 +116,17 @@
                 "unmodifiedMax": 0
             }
         },
-        "description": "<p>Gli elementali di terra sono i costrutti che si incontrano più facilmente al servizio dei maghi, ma possono apparire spontaneamente vicino a luoghi di potere. Essendo fatti di roccia sono corazzati e i loro pugni possono schiacciare facilmente una persona. Compensano la loro lentezza colpendo il terreno per scagliare grosse schegge di roccia o creando anelli difensivi e muri intorno a sé.</p><p>“L'ultima volta che affrontai un elementale di terra fu nelle pro- fondità di una rovina elfica a Verden. Scoprii che il silvano che stavo cacciando conosceva le difese delle rovine meglio di me.” – Erland di Larvik</p>",
+        "description": "<p>Un elementale di terra è un grumo di magia della terra che indossa pezzi di roccia come armatura. Non sono proprio furbi. Ho sentito che controllano il terreno e possono creare spuntoni di roccia, muri e altre robe simili! Non penso proverei a piantare qualcosa nel corpo di un simile bestione se dovesse capitare! – Rodolf Kazmer</p>",
         "sourcebook": "DW 80",
         "monsterType": "Elementa",
         "difficulty": "MEDIUM",
-        "bounty": 1500
+        "bounty": 1500,
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "organization": "",
+        "intelligence": "",
+        "vulnerability": ""
     },
     "items": [],
     "_id": "279c64d03ebf1a85",

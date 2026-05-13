@@ -16,19 +16,19 @@
                 "unmodifiedMax": 6
             },
             "dex": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "body": {
                 "value": 6,
                 "max": 6,
                 "unmodifiedMax": 6
             },
-            "body": {
-                "value": 7,
-                "max": 7,
-                "unmodifiedMax": 7
-            },
             "spd": {
-                "value": 7,
-                "max": 7,
-                "unmodifiedMax": 7
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
             },
             "emp": {
                 "value": 1,
@@ -41,9 +41,9 @@
                 "unmodifiedMax": 1
             },
             "will": {
-                "value": 4,
-                "max": 4,
-                "unmodifiedMax": 4
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
             },
             "luck": {
                 "value": 0,
@@ -52,40 +52,30 @@
             }
         },
         "skills": {
-            "accortezza": {
-                "value": 7
+            "int": {},
+            "ref": {
+                "dodge": {
+                    "value": 6,
+                    "isVisible": true
+                }
             },
-            "atletica": {
-                "value": 7
-            },
-            "coraggio": {
-                "value": 7
-            },
-            "eludere": {
-                "value": 6
-            },
-            "mischia": {
-                "value": 6
-            },
-            "nascondersi": {
-                "value": 4
-            },
-            "rissa": {
-                "value": 6
-            },
-            "sopravvivenza": {
-                "value": 6
-            },
-            "tempra": {
-                "value": 6
-            }
+            "dex": {},
+            "body": {},
+            "emp": {},
+            "cra": {},
+            "will": {}
         },
         "details": {
-            "biography": "<p>Di questi tempi si vedono un sacco di ghoul nel Nord. Eh, mi ricordo che una volta potevi passare una vita intera senza vederne uno, ma con tutti i corpi che marciscono nei campi, il sangue nei fiumi e nelle valli, i ghoul sono dappertutto. – Rodolf Kazmer</p><p>Como per altri necrofagi, i ghoul sono una specie proveniente da un'altra dimensione, che agisce in maniera simile ad alcuni animali. Sono spazzini, che si nutrono dei corpi lasciati sui campi di battaglia, ma attaccano anche prede vive, se queste si avvicinano troppo. Di solito si muovono in piccoli branchi.</p>",
-            "threat": "Medio",
-            "reward": 500,
+            "biography": "<p>Luridi demoni necrofagi, che si nutrono dei morti sui campi di battaglia e attaccano chiunque si avvicini.</p>",
+            "threat": "Facile",
+            "reward": 30,
             "monsterType": "Necrophage",
-            "difficulty": "MEDIUM"
+            "difficulty": "COMPLESSO",
+            "height": "Circa 1,25 metri alla spalla",
+            "weight": "Circa 86 Kg",
+            "environment": "Campi di battaglia e cimiteri",
+            "organization": "Branchi da 3 a 6",
+            "vulnerability": ""
         },
         "derivedStats": {
             "vigor": {
@@ -94,67 +84,64 @@
                 "unmodifiedMax": 0
             },
             "rec": {
-                "value": 6,
-                "max": 6,
-                "unmodifiedMax": 6
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
             },
             "resolve": {
-                "value": 30,
-                "max": 30,
-                "unmodifiedMax": 30
+                "value": 18,
+                "max": 18,
+                "unmodifiedMax": 18
             },
             "stun": {
-                "value": 6,
-                "max": 6
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
             },
             "woundTreshold": {
-                "value": 6,
-                "max": 6
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
             },
             "hp": {
-                "value": 30,
-                "max": 30,
-                "unmodifiedMax": 30
+                "value": 25,
+                "max": 25,
+                "unmodifiedMax": 25
             },
             "sta": {
-                "value": 30,
-                "max": 30,
-                "unmodifiedMax": 30
+                "value": 25,
+                "max": 25,
+                "unmodifiedMax": 25
             }
         },
-        "description": "<p>Di questi tempi si vedono un sacco di ghoul nel Nord. Eh, mi ricordo che una volta potevi passare una vita intera senza vederne uno, ma con tutti i corpi che marciscono nei campi, il sangue nei fiumi e nelle valli, i ghoul sono dappertutto. – Rodolf Kazmer</p><p>Como per altri necrofagi, i ghoul sono una specie proveniente da un'altra dimensione, che agisce in maniera simile ad alcuni animali. Sono spazzini, che si nutrono dei corpi lasciati sui campi di battaglia, ma attaccano anche prede vive, se queste si avvicinano troppo. Di solito si muovono in piccoli branchi.</p>",
+        "description": "<p>Luridi demoni necrofagi, che si nutrono dei morti sui campi di battaglia e attaccano chiunque si avvicini.</p>",
         "sourcebook": "MB 279",
         "monsterType": "Necrophage",
         "difficulty": "MEDIUM",
-        "bounty": 500
+        "bounty": 30,
+        "armorHead": 0,
+        "armorUpper": 0,
+        "armorLower": 0,
+        "height": "Circa 1,25 metri alla spalla",
+        "weight": "Circa 86 Kg",
+        "environment": "Campi di battaglia e cimiteri",
+        "intelligence": "Circa come un cane",
+        "organization": "Branchi da 3 a 6",
+        "common": "",
+        "academicKnowledge": "",
+        "vulnerability": ""
     },
     "items": [
         {
-            "_id": "7112482588ba4b4b",
+            "_id": "165e5af171674361",
             "name": "Artigli",
-            "type": "weapon",
-            "img": "modules/witcher-compendium/assets/SPECIAL/trait_artigli.webp",
-            "system": {
-                "description": "",
-                "damage": "3d6",
-                "accuracy": 0,
-                "effects": ""
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "450f610955684868",
-            "name": "Morso",
             "type": "weapon",
             "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
             "system": {
-                "description": "",
-                "damage": "3d6+2",
+                "description": "N/A",
+                "damage": "",
                 "accuracy": 0,
-                "effects": "Sanguinamento (25%), -1 PA"
+                "effects": "N/A"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -162,12 +149,25 @@
             }
         },
         {
-            "_id": "g1",
-            "name": "[Capacità] Furia",
-            "type": "note",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "_id": "251751dca89c438f",
+            "name": "Midollo di Ghoul (x1)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "<p>Sotto i 10 PS entra in furia: attacca ogni round e rigenera 3 PS per turno.</p>"
+                "description": "Quantità: 1"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "0c644472ebb445b5",
+            "name": "Artiglio di Ghoul (x1d6)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 1d6"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

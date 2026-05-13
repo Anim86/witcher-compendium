@@ -87,7 +87,12 @@
             "threat": "Facile Arduo",
             "reward": 10,
             "monsterType": "Beast",
-            "difficulty": "MEDIUM"
+            "difficulty": "MEDIUM",
+            "height": "",
+            "weight": "",
+            "environment": "",
+            "organization": "",
+            "vulnerability": ""
         },
         "derivedStats": {
             "rec": {
@@ -114,11 +119,17 @@
                 "unmodifiedMax": 0
             }
         },
-        "description": "<p>I cinghiali sono animali testardi. Dare loro la caccia è molto pericoloso, ma remunerativo. Un solo adulto di taglia media può fornire cibo a una famiglia intera per diversi giorni. Durante la caccia bisogna usare una lancia, per restare lontani dal pericolo. L'Unguento Anti- Bestie è d'aiuto per chi agisce da solo, ma non è necessario se si hanno abbastanza amici con sé.</p><p>'I cinghiali da guerra sono un'antica tradizione di Skellige. Ricordo vagamente di averne visto uno da bambino ed essere rimasto scioc- cato dal fatto che fosse più alto di me. Forse non era così strano, visto che non ero molto sopra il metro. Ho visto un cinghiale da guerra in azione solo una o due volte ed è uno spettacolo incredibile.' – Erland di Larvik</p>",
+        "description": "<p>Ho sempre pensato ai cinghiali selvatici come spiriti affini! Eh sì, robusti, bassi e decisamente intrattabili se si alzano con il piede sbagliato! Ho passato un po' di tempo a cacciarli a Mahakam e posso dirti che con loro non conviene giocare. Se ti caricano la cosa migliore è buttarsi dietro un riparo perché quelle zanne possono sfondare una brigantina se gli dai la possibilità. – Rodolf Kazmer</p>",
         "sourcebook": "DW 36",
         "monsterType": "Beast",
         "difficulty": "MEDIUM",
-        "bounty": 10
+        "bounty": 10,
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "organization": "",
+        "intelligence": "",
+        "vulnerability": ""
     },
     "items": [],
     "_id": "9163caeb805d4f72",

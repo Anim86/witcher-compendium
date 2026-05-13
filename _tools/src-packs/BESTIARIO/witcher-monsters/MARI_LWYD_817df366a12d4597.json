@@ -52,43 +52,58 @@
             }
         },
         "skills": {
-            "accortezza": {
-                "value": 16
+            "int": {
+                "awareness": {
+                    "value": 11,
+                    "isVisible": true
+                }
             },
-            "atletica": {
-                "value": 18
+            "ref": {
+                "brawling": {
+                    "value": 8,
+                    "isVisible": true
+                }
             },
-            "inganno": {
-                "value": 16
+            "dex": {
+                "athletics": {
+                    "value": 8,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 6,
+                    "isVisible": true
+                }
             },
-            "intimidire": {
-                "value": 16
+            "body": {
+                "physique": {
+                    "value": 8,
+                    "isVisible": true
+                }
             },
-            "nascondersi": {
-                "value": 16
-            },
-            "prestanza": {
-                "value": 18
-            },
-            "resistereallamagia": {
-                "value": 20
-            },
-            "rissa": {
-                "value": 18
-            },
-            "sopravvivenza": {
-                "value": 16
-            },
-            "tempra": {
-                "value": 18
+            "emp": {},
+            "cra": {},
+            "will": {
+                "intimidation": {
+                    "value": 8,
+                    "isVisible": true
+                },
+                "resistMagic": {
+                    "value": 12,
+                    "isVisible": true
+                }
             }
         },
         "details": {
-            "biography": "<p>Se, nel cuore della notte, sentite un coro inquietante fuori dalla vostra porta, sbarratela e tappatevi le orecchie. – Rodolf Kazmer</p><p>I mari lwyd sono demoni dell'avidità che vagano chiedendo ospitalità. Se rifiutati, marchiano le vittime o possiedono i vicini per farsi aprire. In combattimento usano il loro lungo collo come una frusta e la testa scheletrica per sbranare le prede, emanando un'aura di gelo soprannaturale.</p>",
-            "threat": "Arduo",
+            "biography": "<p>Tetri demoni scheletrici o bestiali che offrono \"ospitalità\" o perseguitano senza tregua coloro che non li invitano in casa offrendo cibi o doni.</p>",
+            "threat": "Difficile",
             "reward": 1500,
             "monsterType": "Relict",
-            "difficulty": "HARD"
+            "difficulty": "COMPLESSO",
+            "height": "Circa 2,5 m",
+            "weight": "135 Kg",
+            "environment": "Ovunque venga evocato",
+            "organization": "Solitario",
+            "vulnerability": ""
         },
         "derivedStats": {
             "vigor": {
@@ -102,14 +117,14 @@
                 "unmodifiedMax": 9
             },
             "resolve": {
-                "value": 90,
-                "max": 90,
-                "unmodifiedMax": 90
+                "value": 15,
+                "max": 15,
+                "unmodifiedMax": 15
             },
             "stun": {
-                "value": 9,
-                "max": 9,
-                "unmodifiedMax": 9
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
             },
             "woundTreshold": {
                 "value": 9,
@@ -127,55 +142,34 @@
                 "unmodifiedMax": 45
             }
         },
-        "description": "<p>Se, nel cuore della notte, sentite un coro inquietante fuori dalla vostra porta, sbarratela e tappatevi le orecchie. – Rodolf Kazmer</p><p>I mari lwyd sono demoni dell'avidità che vagano chiedendo ospitalità. Se rifiutati, marchiano le vittime o possiedono i vicini per farsi aprire. In combattimento usano il loro lungo collo come una frusta e la testa scheletrica per sbranare le prede, emanando un'aura di gelo soprannaturale.</p>",
+        "description": "<p>Tetri demoni scheletrici o bestiali che offrono \"ospitalità\" o perseguitano senza tregua coloro che non li invitano in casa offrendo cibi o doni.</p>",
         "sourcebook": "TC 206",
         "monsterType": "Relict",
         "difficulty": "HARD",
-        "bounty": 1500
+        "bounty": 1500,
+        "armorHead": 5,
+        "armorUpper": 5,
+        "armorLower": 5,
+        "height": "Circa 2,5 m",
+        "weight": "135 Kg",
+        "environment": "Ovunque venga evocato",
+        "intelligence": "Senziente",
+        "organization": "Solitario",
+        "common": "",
+        "academicKnowledge": "",
+        "vulnerability": ""
     },
     "items": [
         {
-            "_id": "m1",
-            "name": "Morso",
-            "type": "weapon",
-            "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
-            "system": {
-                "description": "",
-                "damage": "5d6+4",
-                "accuracy": 0,
-                "effects": "Congelamento (100%), Trapassare Migliorato"
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "m2",
-            "name": "Frusta Spinale",
-            "type": "weapon",
-            "img": "icons/svg/sword.svg",
-            "system": {
-                "description": "",
-                "damage": "4d6+4",
-                "accuracy": 0,
-                "effects": "Vacillante (30%)"
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "m3",
+            "_id": "9c758538b9124854",
             "name": "Schianto",
             "type": "weapon",
-            "img": "icons/svg/sword.svg",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
-                "description": "",
-                "damage": "4d6+4",
+                "description": "N/A",
+                "damage": "",
                 "accuracy": 0,
-                "effects": "Vacillante (50%)"
+                "effects": "N/A"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -183,12 +177,64 @@
             }
         },
         {
-            "_id": "m4",
+            "_id": "0780675db47e42da",
             "name": "[Capacità] Aura Gelida",
             "type": "note",
-            "img": "modules/witcher-compendium/assets/SPECIAL/gift_mente.webp",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Probabilità del 50% di restare Congelato ogni Turno in mischia. Spegne automaticamente fiamme.</p>"
+                "description": "<p>Gelo innaturale: chi inizia il Turno in mischia ha il 50% di probabilità di restare Congelato.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "1cbb6662c8474e3c",
+            "name": "[Capacità] Mutaforma",
+            "type": "note",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "<p>Imita alla perfezione ogni voce, e se ha più di 50 PS assume la forma di un umanoide che ha ucciso (ruba pelle).</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "2c63a7fe0a0d4b7b",
+            "name": "Teschio di Mari Lwyd (x1)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 1"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "09b806d14f1a499b",
+            "name": "Essenza di Wraith (x2d6)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 2d6"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "8fdab7887b5546c2",
+            "name": "Seta (x1d10)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 1d10"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

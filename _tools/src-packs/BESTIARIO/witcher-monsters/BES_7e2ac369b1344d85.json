@@ -52,40 +52,62 @@
             }
         },
         "skills": {
-            "accortezza": {
-                "value": 10
+            "int": {
+                "awareness": {
+                    "value": 5,
+                    "isVisible": true
+                }
             },
-            "atletica": {
-                "value": 20
+            "ref": {
+                "brawling": {
+                    "value": 8,
+                    "isVisible": true
+                }
             },
-            "intimidire": {
-                "value": 19
+            "dex": {
+                "athletics": {
+                    "value": 8,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 0,
+                    "isVisible": true
+                }
             },
-            "lanciareIncantesimi": {
-                "value": 18
+            "body": {
+                "physique": {
+                    "value": 10,
+                    "isVisible": true
+                }
             },
-            "nascondersi": {
-                "value": 12
-            },
-            "prestanza": {
-                "value": 20
-            },
-            "resistereallamagia": {
-                "value": 20
-            },
-            "rissa": {
-                "value": 20
-            },
-            "sopravvivenza": {
-                "value": 12
+            "emp": {},
+            "cra": {},
+            "will": {
+                "intimidation": {
+                    "value": 9,
+                    "isVisible": true
+                },
+                "spellCasting": {
+                    "value": 8,
+                    "isVisible": true
+                },
+                "resistMagic": {
+                    "value": 10,
+                    "isVisible": true
+                }
             }
         },
         "details": {
-            "biography": "<p>I bes sono demoni di furia e potere, che giungono nel mondo solo per diffondere la sofferenza. – Rodolf Kazmer</p><p>Eredi di reami oltre la conoscenza, i bes sono grandi guerrieri dotati di artigli affilati. Hanno la terribile abitudine di possedere i corpi altrui, sfruttando la forza degli ospiti mentre surriscaldano il loro sangue fino a bruciare chiunque li colpisca.</p>",
-            "threat": "Arduo",
+            "biography": "<p>Demoni di furia e potere, guardiani dei regni ultraterreni. Possiedono artigli capaci di trinciare uomini ed equipaggiamenti in un istante, e adorano godere delle possessioni mortali.</p>",
+            "threat": "Difficile",
             "reward": 1500,
             "monsterType": "Relict",
-            "difficulty": "HARD"
+            "difficulty": "COMPLESSO",
+            "height": "Circa 2,5 m",
+            "weight": "136 Kg",
+            "environment": "Ovunque venga evocato",
+            "organization": "Solitario",
+            "vulnerability": ""
         },
         "derivedStats": {
             "vigor": {
@@ -99,14 +121,14 @@
                 "unmodifiedMax": 10
             },
             "resolve": {
-                "value": 100,
-                "max": 100,
-                "unmodifiedMax": 100
+                "value": 21,
+                "max": 21,
+                "unmodifiedMax": 21
             },
             "stun": {
-                "value": 10,
-                "max": 10,
-                "unmodifiedMax": 10
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
             },
             "woundTreshold": {
                 "value": 10,
@@ -124,21 +146,32 @@
                 "unmodifiedMax": 50
             }
         },
-        "description": "<p>I bes sono demoni di furia e potere, che giungono nel mondo solo per diffondere la sofferenza. – Rodolf Kazmer</p><p>Eredi di reami oltre la conoscenza, i bes sono grandi guerrieri dotati di artigli affilati. Hanno la terribile abitudine di possedere i corpi altrui, sfruttando la forza degli ospiti mentre surriscaldano il loro sangue fino a bruciare chiunque li colpisca.</p>",
+        "description": "<p>Demoni di furia e potere, guardiani dei regni ultraterreni. Possiedono artigli capaci di trinciare uomini ed equipaggiamenti in un istante, e adorano godere delle possessioni mortali.</p>",
         "sourcebook": "TC 200",
         "monsterType": "Relict",
         "difficulty": "HARD",
-        "bounty": 1500
+        "bounty": 1500,
+        "armorHead": 0,
+        "armorUpper": 0,
+        "armorLower": 0,
+        "height": "Circa 2,5 m",
+        "weight": "136 Kg",
+        "environment": "Ovunque venga evocato",
+        "intelligence": "Senziente",
+        "organization": "Solitario",
+        "common": "",
+        "academicKnowledge": "",
+        "vulnerability": ""
     },
     "items": [
         {
-            "_id": "b1",
+            "_id": "92a68e2457b84847",
             "name": "Artigli",
             "type": "weapon",
-            "img": "modules/witcher-compendium/assets/SPECIAL/trait_artigli.webp",
+            "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
             "system": {
-                "description": "",
-                "damage": "5d6+4",
+                "description": "Bilanciato, Sanguinamento (100%)",
+                "damage": "",
                 "accuracy": 0,
                 "effects": "Bilanciato, Sanguinamento (100%)"
             },
@@ -148,12 +181,12 @@
             }
         },
         {
-            "_id": "b2",
+            "_id": "fb690e4cf5cb42dd",
             "name": "[Capacità] Possessione",
             "type": "note",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Prova contrapposta di Lanciare Incantesimi vs Resistere alla Magia per prendere il controllo di un corpo.</p>"
+                "description": "<p>Può possedere mortali senza il Manto di Capra, aumentando le loro statistiche e obbligandoli all'omicidio per conto del demone.</p>"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -161,12 +194,103 @@
             }
         },
         {
-            "_id": "b3",
+            "_id": "d5dbb8ceb83a4d1b",
             "name": "[Capacità] Sangue Bollente",
             "type": "note",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Danni da armi Taglienti/Perforanti colpiscono l'attaccante (5 danni + rimozione 1 PR).</p>"
+                "description": "<p>In stato di furia berserk la creatura o l'ospite rimuove punti di armatura a ogni colpo andato a segno.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "f9c36fa79f914b67",
+            "name": "[Capacità] Vista Notturna Superiore",
+            "type": "note",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "<p>Ignora completamente il buio.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "0a667f4004a04195",
+            "name": "Corna di Bes (x1d6/3)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 1d6/3"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "5760d3b272824fc7",
+            "name": "Essenza di Wraith (x2d6)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 2d6"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "8cab4beccb084e30",
+            "name": "Polvere Infusa (x2d10)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 2d10"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "1bf4efdf05bb43b7",
+            "name": "Polvere di Spettro (x2d6)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 2d6"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "274be9caa4bc4158",
+            "name": "Ceneri (x2d10)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 2d10"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "00062d8bca664ce6",
+            "name": "Ossa di Bestia (x1d10)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 1d10"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

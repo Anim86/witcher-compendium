@@ -11,29 +11,29 @@
                 "unmodifiedMax": 1
             },
             "ref": {
-                "value": 6,
-                "max": 6,
-                "unmodifiedMax": 6
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
             },
             "dex": {
-                "value": 6,
-                "max": 6,
-                "unmodifiedMax": 6
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
             },
             "body": {
-                "value": 14,
-                "max": 14,
-                "unmodifiedMax": 14
+                "value": 12,
+                "max": 12,
+                "unmodifiedMax": 12
             },
             "spd": {
-                "value": 11,
-                "max": 11,
-                "unmodifiedMax": 11
+                "value": 12,
+                "max": 12,
+                "unmodifiedMax": 12
             },
             "emp": {
-                "value": 3,
-                "max": 3,
-                "unmodifiedMax": 3
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
             },
             "cra": {
                 "value": 1,
@@ -41,9 +41,9 @@
                 "unmodifiedMax": 1
             },
             "will": {
-                "value": 6,
-                "max": 6,
-                "unmodifiedMax": 6
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
             },
             "luck": {
                 "value": 0,
@@ -52,48 +52,36 @@
             }
         },
         "skills": {
-            "accortezza": {
-                "value": 5
-            },
-            "atletica": {
-                "value": 6
-            },
-            "coraggio": {
-                "value": 6
-            },
-            "eludere": {
-                "value": 8
-            },
-            "mischia": {
-                "value": 6
-            },
-            "nascondersi": {
-                "value": 3
-            },
-            "sopravvivenza": {
-                "value": 2
-            },
-            "tempra": {
-                "value": 6
-            }
+            "int": {},
+            "ref": {},
+            "dex": {},
+            "body": {},
+            "emp": {},
+            "cra": {},
+            "will": {}
         },
         "details": {
-            "biography": "<p>I cavalli sono il mezzo di trasporto principale nel Continente. Ne esistono diverse razze, dalle agili cavalcature elfiche ai robusti destrieri del nord.</p>",
-            "threat": "Bassa",
-            "reward": "—",
+            "biography": "<p></p>",
+            "threat": "",
+            "reward": 0,
             "monsterType": "Beast",
-            "difficulty": "EASY"
+            "difficulty": "",
+            "height": "",
+            "weight": "",
+            "environment": "",
+            "organization": "",
+            "vulnerability": ""
         },
         "derivedStats": {
             "hp": {
-                "value": 50,
-                "max": 50,
-                "unmodifiedMax": 50
+                "value": 40,
+                "max": 40,
+                "unmodifiedMax": 40
             },
             "sta": {
-                "value": 50,
-                "max": 50,
-                "unmodifiedMax": 50
+                "value": 40,
+                "max": 40,
+                "unmodifiedMax": 40
             },
             "vigor": {
                 "value": 0,
@@ -101,40 +89,53 @@
                 "unmodifiedMax": 0
             },
             "rec": {
-                "value": 10,
-                "max": 10,
-                "unmodifiedMax": 10
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
             },
             "stun": {
-                "value": 10,
-                "max": 10,
-                "unmodifiedMax": 10
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
             },
             "resolve": {
-                "value": 30,
-                "max": 30,
-                "unmodifiedMax": 30
+                "value": 36,
+                "max": 36,
+                "unmodifiedMax": 36
             },
             "woundTreshold": {
-                "value": 10,
-                "max": 10,
-                "unmodifiedMax": 10
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
             }
         },
-        "description": "<p>I cavalli sono il mezzo di trasporto principale nel Continente. Ne esistono diverse razze, dalle agili cavalcature elfiche ai robusti destrieri del nord.</p>",
+        "description": "<p></p>",
         "sourcebook": "MB 311",
         "monsterType": "Beast",
-        "difficulty": "EASY"
+        "difficulty": "EASY",
+        "armorHead": 0,
+        "armorUpper": 0,
+        "armorLower": 0,
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "intelligence": "",
+        "organization": "",
+        "common": "",
+        "academicKnowledge": "",
+        "bounty": 0,
+        "vulnerability": ""
     },
     "items": [
         {
-            "name": "Zoccoli",
+            "_id": "9e17b89e1f374a94",
+            "name": "Zoccoli / Morso",
             "type": "weapon",
-            "img": "icons/svg/sword.svg",
+            "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
             "system": {
-                "damage": "2d6+2",
+                "description": "N/A",
+                "damage": "",
                 "accuracy": 0,
-                "type": "C",
                 "effects": "N/A"
             },
             "_stats": {
@@ -143,11 +144,25 @@
             }
         },
         {
-            "name": "[Capacità] Ferale",
-            "type": "note",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "_id": "fe9c3035b5184c42",
+            "name": "Carne Cruda (x1d10)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "<p>Grazie ai suoi istinti un cavallo possiede INT 7 ai fini delle prove d'Accortezza e Sopravvivenza.</p>"
+                "description": "Quantità: 1d10"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "6af7429f37134bc6",
+            "name": "Ossa di Bestia (x1d10)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 1d10"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

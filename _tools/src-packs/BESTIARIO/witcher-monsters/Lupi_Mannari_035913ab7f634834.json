@@ -85,7 +85,12 @@
             "threat": "Ardua",
             "reward": 2000,
             "monsterType": "CursedOne",
-            "difficulty": "MEDIUM"
+            "difficulty": "MEDIUM",
+            "height": "",
+            "weight": "",
+            "environment": "",
+            "organization": "",
+            "vulnerability": ""
         },
         "derivedStats": {
             "vigor": {
@@ -126,7 +131,13 @@
         "sourcebook": "MB 289",
         "monsterType": "CursedOne",
         "difficulty": "MEDIUM",
-        "bounty": 2000
+        "bounty": 2000,
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "organization": "",
+        "intelligence": "",
+        "vulnerability": ""
     },
     "items": [
         {

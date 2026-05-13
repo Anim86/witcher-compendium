@@ -87,7 +87,12 @@
             "threat": "Medio Complesso",
             "reward": 500,
             "monsterType": "Relict",
-            "difficulty": "MEDIUM"
+            "difficulty": "MEDIUM",
+            "height": "",
+            "weight": "",
+            "environment": "",
+            "organization": "",
+            "vulnerability": ""
         },
         "derivedStats": {
             "rec": {
@@ -114,11 +119,17 @@
                 "unmodifiedMax": 0
             }
         },
-        "description": "<p>Gli shaelmaar sono colossali creature sotterranee dotate di spessi gusci chitinosi. Sono ciechi, ma possiedono un udito acuto e un sonar infallibile. Una volta individuata la preda, lo shaelmaar si raggomitola e ruota rapidamente, o carica rotolando verso il nemico per schiacciarlo con il suo enorme peso.</p>",
+        "description": "<p>Nel sud dei monti di Mahakam si dice che siano spiriti della terra, che pattugliano il sottosuolo per evitare che la gente estragga oro e gemme. L'unica volta che ne ho visto uno stava facendo crollare il soffitto di una miniera con le sue enormi chele! Sbucano dal suolo senza preavviso e hanno gusci più duri dell'acciaio. – Rodolf Kazmer</p>",
         "sourcebook": "DW 90",
         "monsterType": "Relict",
         "difficulty": "MEDIUM",
-        "bounty": 500
+        "bounty": 500,
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "organization": "",
+        "intelligence": "",
+        "vulnerability": ""
     },
     "items": [],
     "_id": "c6f108bd53ae4729",

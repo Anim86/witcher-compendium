@@ -87,7 +87,12 @@
             "threat": "Facile Complesso",
             "reward": 20,
             "monsterType": "Insectoid",
-            "difficulty": "MEDIUM"
+            "difficulty": "MEDIUM",
+            "height": "",
+            "weight": "",
+            "environment": "",
+            "organization": "",
+            "vulnerability": ""
         },
         "derivedStats": {
             "rec": {
@@ -114,11 +119,17 @@
                 "unmodifiedMax": 0
             }
         },
-        "description": "<p>Le scolopendre giganti sono creature ferali e cieche, che percepiscono anche la minima vi- brazione del suolo. Usano questa capacità per tendere imboscate, restando sepolte finché non sentono dei passi. In combattimento mordono gli avversari vicini e sputano acido verso quelli più lontani. Hanno il ventre morbido e vulnerabile, ma se attaccate si raggomitolano immediatamente per proteggersi, sferrando colpi rapidi tutto intorno.</p>",
+        "description": "<p>Ugh, non so se odio di più le endriaghe o le scolopendre giganti. Sono sempre grossi insetti che girano in gruppo e tendono imboscate. Almeno le scolopendre hanno un ventre molle dove piazzare un dardo; ma almeno con le endriaghe, se gli arrivi addosso, non devi preoccuparti che si infilino nel terreno e ti sbuchino alle spalle. – Rodolf Kazmer</p>",
         "sourcebook": "DW 70",
         "monsterType": "Insectoid",
         "difficulty": "MEDIUM",
-        "bounty": 20
+        "bounty": 20,
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "organization": "",
+        "intelligence": "",
+        "vulnerability": ""
     },
     "items": [],
     "_id": "ea4189d5603b2c7f",

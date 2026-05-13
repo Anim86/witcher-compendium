@@ -11,19 +11,19 @@
                 "unmodifiedMax": 1
             },
             "ref": {
-                "value": 7,
-                "max": 7,
-                "unmodifiedMax": 7
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
             },
             "dex": {
-                "value": 6,
-                "max": 6,
-                "unmodifiedMax": 6
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
             },
             "body": {
-                "value": 12,
-                "max": 12,
-                "unmodifiedMax": 12
+                "value": 15,
+                "max": 15,
+                "unmodifiedMax": 15
             },
             "spd": {
                 "value": 6,
@@ -41,9 +41,9 @@
                 "unmodifiedMax": 1
             },
             "will": {
-                "value": 6,
-                "max": 6,
-                "unmodifiedMax": 6
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
             },
             "luck": {
                 "value": 0,
@@ -52,40 +52,25 @@
             }
         },
         "skills": {
-            "accortezza": {
-                "value": 10
-            },
-            "atletica": {
-                "value": 7
-            },
-            "coraggio": {
-                "value": 10
-            },
-            "eludere": {
-                "value": 7
-            },
-            "mischia": {
-                "value": 9
-            },
-            "nascondersi": {
-                "value": 4
-            },
-            "rissa": {
-                "value": 7
-            },
-            "sopravvivenza": {
-                "value": 8
-            },
-            "tempra": {
-                "value": 3
-            }
+            "int": {},
+            "ref": {},
+            "dex": {},
+            "body": {},
+            "emp": {},
+            "cra": {},
+            "will": {}
         },
         "details": {
-            "biography": "<p>Puoi immaginarti qualcosa di più maestoso d'un grifone? Pochi li conoscono bene, molti si limitano a evitarli. Cosa faresti quando 900 chili di pelo, piume e artigli atterrano nel tuo campo per portarsi via una mucca? – Rodolf Kazmer</p><p>I grifoni sono super-predatori, rapidi al suolo quanto in aria. Localizzano una preda nascosta grazie alla loro vista d'aquila. Afferrano prede grandi come un cavallo e lasciano precipitare da oltre 100 metri d'altezza.</p>",
+            "biography": "<p>Majestuosi super-predatori che uniscono l'aspetto e la ferocia di aquile e leoni. Colpiscono con forza devastante dal cielo.</p>",
             "threat": "Difficile",
             "reward": 1200,
             "monsterType": "Hybrid",
-            "difficulty": "HARD"
+            "difficulty": "COMPLESSO",
+            "height": "Circa 2m al garrese",
+            "weight": "Circa 907 Kg",
+            "environment": "Picchi montani",
+            "organization": "Solitario o coppia",
+            "vulnerability": ""
         },
         "derivedStats": {
             "vigor": {
@@ -99,62 +84,59 @@
                 "unmodifiedMax": 10
             },
             "resolve": {
-                "value": 60,
-                "max": 60,
-                "unmodifiedMax": 60
+                "value": 18,
+                "max": 18,
+                "unmodifiedMax": 18
             },
             "stun": {
-                "value": 10,
-                "max": 10
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
             },
             "woundTreshold": {
                 "value": 10,
-                "max": 10
+                "max": 10,
+                "unmodifiedMax": 10
             },
             "hp": {
-                "value": 60,
-                "max": 60,
-                "unmodifiedMax": 60
+                "value": 100,
+                "max": 100,
+                "unmodifiedMax": 100
             },
             "sta": {
-                "value": 60,
-                "max": 60,
-                "unmodifiedMax": 60
+                "value": 50,
+                "max": 50,
+                "unmodifiedMax": 50
             }
         },
-        "description": "<p>Puoi immaginarti qualcosa di più maestoso d'un grifone? Pochi li conoscono bene, molti si limitano a evitarli. Cosa faresti quando 900 chili di pelo, piume e artigli atterrano nel tuo campo per portarsi via una mucca? – Rodolf Kazmer</p><p>I grifoni sono super-predatori, rapidi al suolo quanto in aria. Localizzano una preda nascosta grazie alla loro vista d'aquila. Afferrano prede grandi come un cavallo e lasciano precipitare da oltre 100 metri d'altezza.</p>",
+        "description": "<p>Majestuosi super-predatori che uniscono l'aspetto e la ferocia di aquile e leoni. Colpiscono con forza devastante dal cielo.</p>",
         "sourcebook": "MB 293",
         "monsterType": "Hybrid",
         "difficulty": "HARD",
-        "bounty": 1200
+        "bounty": 1200,
+        "armorHead": 8,
+        "armorUpper": 8,
+        "armorLower": 8,
+        "height": "Circa 2m al garrese",
+        "weight": "Circa 907 Kg",
+        "environment": "Picchi montani",
+        "intelligence": "Circa come un cane",
+        "organization": "Solitario o coppia",
+        "common": "",
+        "academicKnowledge": "",
+        "vulnerability": ""
     },
     "items": [
         {
-            "_id": "2fb632fb74ed4875",
-            "name": "Artigli",
-            "type": "weapon",
-            "img": "modules/witcher-compendium/assets/SPECIAL/trait_artigli.webp",
-            "system": {
-                "description": "",
-                "damage": "6d6",
-                "accuracy": 0,
-                "effects": ""
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "817bbb956b2d4cca",
-            "name": "Morso",
+            "_id": "b2124a06653248ab",
+            "name": "Morso e Artigli",
             "type": "weapon",
             "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
             "system": {
-                "description": "",
-                "damage": "7d6+2",
+                "description": "Sanguinamento",
+                "damage": "",
                 "accuracy": 0,
-                "effects": "Sanguinamento (50%)"
+                "effects": "Sanguinamento"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -162,25 +144,51 @@
             }
         },
         {
-            "_id": "g1",
-            "name": "[Capacità] Carica",
-            "type": "note",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-            "system": {
-                "description": "<p>Può caricare un nemico oltre i 10m. -4 Pres, 10d6 danni e scaraventa indietro di 8m.</p>"
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "g2",
+            "_id": "b14cd760b460408e",
             "name": "[Capacità] Urlo",
             "type": "note",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Urlo entro 10m: tiro salvezza Grinta con penalità -1.</p>"
+                "description": "<p>Usa il turno per lanciare un grido che costringe tutti entro 10m a TS Grinta -1.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "9f5d1bf5d54544af",
+            "name": "[Capacità] Volo",
+            "type": "note",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "<p>Vola come Azione di Movimento. Se subisce più di 10 danni cade.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "adbd9e7354f841f5",
+            "name": "Piume di Grifone (x1d10)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 1d10"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "018b2f14ed234b2d",
+            "name": "Uovo di Grifone (x1)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 1"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

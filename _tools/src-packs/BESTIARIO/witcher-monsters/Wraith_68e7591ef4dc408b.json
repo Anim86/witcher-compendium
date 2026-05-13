@@ -6,29 +6,29 @@
     "system": {
         "stats": {
             "int": {
-                "value": 3,
-                "max": 3,
-                "unmodifiedMax": 3
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
             },
             "ref": {
-                "value": 8,
-                "max": 8,
-                "unmodifiedMax": 8
-            },
-            "dex": {
-                "value": 8,
-                "max": 8,
-                "unmodifiedMax": 8
-            },
-            "body": {
-                "value": 7,
-                "max": 7,
-                "unmodifiedMax": 7
-            },
-            "spd": {
                 "value": 6,
                 "max": 6,
                 "unmodifiedMax": 6
+            },
+            "dex": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "body": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "spd": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
             },
             "emp": {
                 "value": 1,
@@ -41,9 +41,9 @@
                 "unmodifiedMax": 1
             },
             "will": {
-                "value": 7,
-                "max": 7,
-                "unmodifiedMax": 7
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
             },
             "luck": {
                 "value": 0,
@@ -52,40 +52,74 @@
             }
         },
         "skills": {
-            "accortezza": {
-                "value": 8
+            "int": {
+                "awareness": {
+                    "value": 4,
+                    "isVisible": true
+                },
+                "wildernessSurvival": {
+                    "value": 2,
+                    "isVisible": true
+                }
             },
-            "atletica": {
-                "value": 5
+            "ref": {
+                "brawling": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "swordsmanship": {
+                    "value": 1,
+                    "isVisible": true
+                },
+                "melee": {
+                    "value": 0,
+                    "isVisible": true
+                }
             },
-            "eludere": {
-                "value": 6
+            "dex": {
+                "athletics": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 4,
+                    "isVisible": true
+                }
             },
-            "mischia": {
-                "value": 6
+            "body": {
+                "physique": {
+                    "value": 2,
+                    "isVisible": true
+                },
+                "endurance": {
+                    "value": 2,
+                    "isVisible": true
+                }
             },
-            "nascondersi": {
-                "value": 9
-            },
-            "rissa": {
-                "value": 6
-            },
-            "scherma": {
-                "value": 7
-            },
-            "sopravvivenza": {
-                "value": 6
-            },
-            "tempra": {
-                "value": 7
+            "emp": {},
+            "cra": {},
+            "will": {
+                "spellCasting": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "resistMagic": {
+                    "value": 0,
+                    "isVisible": true
+                }
             }
         },
         "details": {
-            "biography": "<p>Secondo i racconti, ci sono wraith di ogni forma e colore. Sono le anime dei morti e dei dannati, che tornano per perseguitare i vivi. – Rodolf Kazmer</p><p>I wraith sono uno dei pochi tipi di mostro davvero legati ai defunti. Un wraith è lo spirito di una persona morta in circostanze terribili o con questioni in sospeso. Molti tornano al regno dei morti una volta eliminati.</p>",
-            "threat": "Media",
-            "reward": 800,
+            "biography": "<p>Spiriti di persone morte in circostanze terribili o con questioni in sospeso, consumati dall'odio e pronti ad attaccare i vivi.</p>",
+            "threat": "Facile",
+            "reward": 30,
             "monsterType": "Specter",
-            "difficulty": "MEDIUM"
+            "difficulty": "ARDUO",
+            "height": "Normale umana",
+            "weight": "Privo di peso",
+            "environment": "Campi di battaglia e cimiteri",
+            "organization": "Gruppi da 3 a 21",
+            "vulnerability": ""
         },
         "derivedStats": {
             "vigor": {
@@ -94,49 +128,62 @@
                 "unmodifiedMax": 0
             },
             "rec": {
-                "value": 8,
-                "max": 8,
-                "unmodifiedMax": 8
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
             },
             "resolve": {
-                "value": 40,
-                "max": 40,
-                "unmodifiedMax": 40
+                "value": 15,
+                "max": 15,
+                "unmodifiedMax": 15
             },
             "stun": {
-                "value": 7,
-                "max": 7
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
             },
             "woundTreshold": {
-                "value": 7,
-                "max": 7
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
             },
             "hp": {
-                "value": 40,
-                "max": 40,
-                "unmodifiedMax": 40
+                "value": 25,
+                "max": 25,
+                "unmodifiedMax": 25
             },
             "sta": {
-                "value": 40,
-                "max": 40,
-                "unmodifiedMax": 40
+                "value": 25,
+                "max": 25,
+                "unmodifiedMax": 25
             }
         },
-        "description": "<p>Secondo i racconti, ci sono wraith di ogni forma e colore. Sono le anime dei morti e dei dannati, che tornano per perseguitare i vivi. – Rodolf Kazmer</p><p>I wraith sono uno dei pochi tipi di mostro davvero legati ai defunti. Un wraith è lo spirito di una persona morta in circostanze terribili o con questioni in sospeso. Molti tornano al regno dei morti una volta eliminati.</p>",
+        "description": "<p>Spiriti di persone morte in circostanze terribili o con questioni in sospeso, consumati dall'odio e pronti ad attaccare i vivi.</p>",
         "sourcebook": "MB 283",
         "monsterType": "Specter",
         "difficulty": "MEDIUM",
-        "bounty": 800
+        "bounty": 30,
+        "armorHead": 0,
+        "armorUpper": 0,
+        "armorLower": 0,
+        "height": "Normale umana",
+        "weight": "Privo di peso",
+        "environment": "Campi di battaglia e cimiteri",
+        "intelligence": "Consumato dalle emozioni",
+        "organization": "Gruppi da 3 a 21",
+        "common": "Sono le anime dei morti e dei dannati. Per scacciare un wraith serve un rituale: trovare il cadavere, pugnalarlo con un paletto di pioppo, tagliargli la testa e piazzarla tra le gambe, quindi dare fuoco al tutto.",
+        "academicKnowledge": "",
+        "vulnerability": ""
     },
     "items": [
         {
-            "_id": "cbede690df734612",
+            "_id": "644c84183aa2401d",
             "name": "Lanterna Wraith",
             "type": "weapon",
-            "img": "icons/svg/sword.svg",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
-                "description": "",
-                "damage": "2d6+2",
+                "description": "Fuoco (25%)",
+                "damage": "",
                 "accuracy": 0,
                 "effects": "Fuoco (25%)"
             },
@@ -146,15 +193,15 @@
             }
         },
         {
-            "_id": "0558db7d6f4e4515",
+            "_id": "744dfd29311347ab",
             "name": "Spada Wraith",
             "type": "weapon",
-            "img": "icons/svg/sword.svg",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
-                "description": "",
-                "damage": "3d6",
+                "description": "N/A",
+                "damage": "",
                 "accuracy": 0,
-                "effects": ""
+                "effects": "N/A"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -162,12 +209,77 @@
             }
         },
         {
-            "_id": "w1",
+            "_id": "78ebb376acbf4ba1",
+            "name": "[Capacità] Alimentato dalla Rabbia",
+            "type": "note",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "<p>Intelligente ma accecato da furia incontrollabile. È impossibile ragionarci o intimidirlo.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "8d4983f878b44eb6",
             "name": "[Capacità] Teletrasporto",
             "type": "note",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Può teletrasportarsi istantaneamente di 10m come azione di movimento.</p>"
+                "description": "<p>Può teletrasportarsi istantaneamente di 10m.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "dca2b72ef96c43bc",
+            "name": "[Capacità] Transizione",
+            "type": "note",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "<p>Può usare Lanciare Incantesimi per difendersi e divenire incorporeo, negando l'attacco.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "40e05643f9c24297",
+            "name": "Essenza di Wraith (x1d6/2)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 1d6/2"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "a5679b632d3640b0",
+            "name": "Polvere di Spettro (x1d6/2)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 1d6/2"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "ba372a052dfb48bb",
+            "name": "Polvere Infusa (x1d6/2)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 1d6/2"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

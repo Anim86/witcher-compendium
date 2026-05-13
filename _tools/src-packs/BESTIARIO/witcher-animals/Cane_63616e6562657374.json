@@ -82,7 +82,12 @@
             "threat": "Bassa",
             "reward": "—",
             "monsterType": "Beast",
-            "difficulty": "EASY"
+            "difficulty": "EASY",
+            "height": "",
+            "weight": "",
+            "environment": "",
+            "organization": "",
+            "vulnerability": ""
         },
         "derivedStats": {
             "hp": {
@@ -124,17 +129,24 @@
         "description": "<p>I cani sono i compagni fedeli dell'uomo, utilizzati per la caccia, la guardia e la compagnia. In branchi selvaggi possono però rappresentare un serio pericolo.</p>",
         "sourcebook": "MB 310",
         "monsterType": "Beast",
-        "difficulty": "EASY"
+        "difficulty": "EASY",
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "organization": "",
+        "intelligence": "",
+        "vulnerability": ""
     },
     "items": [
         {
+            "_id": "6c989cc3fe32439d",
             "name": "Morso",
             "type": "weapon",
-            "img": "icons/svg/sword.svg",
+            "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
             "system": {
-                "damage": "2d6",
+                "description": "N/A",
+                "damage": "",
                 "accuracy": 0,
-                "type": "P",
                 "effects": "N/A"
             },
             "_stats": {
@@ -143,11 +155,12 @@
             }
         },
         {
-            "name": "[Capacità] Ferale",
+            "_id": "6942e6f2e9d74644",
+            "name": "[Capacità] Fiuto",
             "type": "note",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Grazie ai suoi istinti un cane possiede INT 7 ai fini delle prove di Accortezza e Sopravvivenza.</p>"
+                "description": "<p>Segue tracce col fiuto senza penalità.</p>"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -155,11 +168,38 @@
             }
         },
         {
-            "name": "[Capacità] Fiuto",
-            "type": "note",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "_id": "a7a34e79b4994978",
+            "name": "Carne Cruda (x1d6/2)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "<p>Un cane può seguire le tracce di una creatura senza bisogno di segnali visivi o uditivi senza alcuna penalità.</p>"
+                "description": "Quantità: 1d6/2"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "e119ae8ce206461d",
+            "name": "Grasso di Cane (x1d6/2)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 1d6/2"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "e30132643ee2427f",
+            "name": "Ossa di Bestia (x1d6)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 1d6"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

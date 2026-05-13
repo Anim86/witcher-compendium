@@ -93,7 +93,12 @@
             "threat": "Medio Arduo",
             "reward": 1200,
             "monsterType": "Hybrid",
-            "difficulty": "MEDIUM"
+            "difficulty": "MEDIUM",
+            "height": "",
+            "weight": "",
+            "environment": "",
+            "organization": "",
+            "vulnerability": ""
         },
         "derivedStats": {
             "rec": {
@@ -120,11 +125,17 @@
                 "unmodifiedMax": 0
             }
         },
-        "description": "<p>Le fenici sono tra i mostri più rari del Continente. Sebbene non parlino, è possibile ragionarci. Possiedono molte armi magiche basate sul fuoco, inclusi soffi di braci e fiamme. Quando una fenice viene uccisa, il suo corpo esplode lasciando solo ceneri e un uovo o un pulcino: la medesima creatura rinata che conserva i propri ricordi ma deve ricrescere.</p>",
+        "description": "<p>L'unica cosa che avevo sentito sulle fenici è che erano uccelli mitologici fatti di fuoco e cenere. Una gran bella vista, specie di notte. Alcuni pensano che siano attirate dai più potenti maghi del fuoco. Ti consiglio di parlarci. Da quel che ho sentito sono abbastanza intelligenti… almeno per un enorme uccello di fuoco. – Rodolf Kazmer</p>",
         "sourcebook": "DW 108",
         "monsterType": "Hybrid",
         "difficulty": "MEDIUM",
-        "bounty": 1200
+        "bounty": 1200,
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "organization": "",
+        "intelligence": "",
+        "vulnerability": ""
     },
     "items": [],
     "_id": "395027d6cbea148f",

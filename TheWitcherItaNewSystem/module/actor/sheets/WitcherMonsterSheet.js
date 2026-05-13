@@ -77,6 +77,20 @@ export default class WitcherMonsterSheet extends WitcherActorSheet {
     /** @override */
     async _prepareContext(options) {
         let context = await super._prepareContext(options);
+        
+        // Use monster-specific labels for Luck -> Focus
+        context.config = foundry.utils.deepClone(context.config || CONFIG.WITCHER);
+        if (context.config.statMap?.luck) {
+            context.config.statMap.luck.label = "WITCHER.Actor.DerStat.Focus";
+            context.config.statMap.luck.labelShort = "WITCHER.Actor.DerStat.Focus";
+            
+            // Map Focus value to Luck stat for monsters to ensure visibility in the stats grid
+            if (context.system.stats.luck) {
+                context.system.stats.luck.value = context.system.derivedStats.focus.value || context.system.derivedStats.focus.unmodifiedMax;
+                context.system.stats.luck.max = context.system.derivedStats.focus.unmodifiedMax;
+            }
+        }
+
         this._prepareLoot(context);
         this._prepareCharacterData(context);
         context.tabs = this._prepareTabs('primary');

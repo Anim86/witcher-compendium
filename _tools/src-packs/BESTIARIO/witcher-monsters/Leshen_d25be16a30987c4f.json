@@ -96,7 +96,12 @@
             "threat": "Difficile Arduo",
             "reward": 1500,
             "monsterType": "Relict",
-            "difficulty": "MEDIUM"
+            "difficulty": "MEDIUM",
+            "height": "",
+            "weight": "",
+            "environment": "",
+            "organization": "",
+            "vulnerability": ""
         },
         "derivedStats": {
             "rec": {
@@ -123,11 +128,17 @@
                 "unmodifiedMax": 0
             }
         },
-        "description": "<p>I leshen dominano le foreste primordiali del Continente, piegando al proprio volere piante e animali grazie alla loro potente magia. In combattimento sono letali e ingannevoli, capaci di tramutarsi in fumo o di bloccare i nemici con le radici. I più antichi creano totem magici e legami con gli umani vicini che permettono loro di rinascere anche se distrutti.</p>",
+        "description": "<p>Ho visto un leshen solo una volta in vita mia. All'improvviso sento un rumore e proprio lì, appena oltre gli alberi, c'è questa enorme… cosa. La gente dice che i leshen sono le foreste che hanno preso vita. Odiano più di tutto i bracconieri, i taglialegna e i raccoglitori e se entri nel bosco di un leshen finisci impalato su una radice. – Rodolf Kazmer</p>",
         "sourcebook": "DW 88",
         "monsterType": "Relict",
         "difficulty": "MEDIUM",
-        "bounty": 1500
+        "bounty": 1500,
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "organization": "",
+        "intelligence": "",
+        "vulnerability": ""
     },
     "items": [],
     "_id": "d25be16a30987c4f",

@@ -94,7 +94,12 @@
             "threat": "Difficile",
             "reward": 1500,
             "monsterType": "Cursed One",
-            "difficulty": "HARD"
+            "difficulty": "HARD",
+            "height": "",
+            "weight": "",
+            "environment": "",
+            "organization": "",
+            "vulnerability": ""
         },
         "derivedStats": {
             "hp": {
@@ -148,8 +153,14 @@
                 "unmodifiedMax": 30
             }
         },
-        "description": "<h3>La Bestia del Lago Tankred</h3><p>In cima alla testa ci sono due piccoli occhi luccicanti, che vi osservano, in attesa…</p><h3>Tattiche</h3><p>In combattimento, la Bestia preferisce mordere l'avversario più vicino, preferibilmente uno su cui non abbia ancora usato la capacità Inghiottire. Se non ce ne sono, allora usa gli artigli per attaccare chi ha già assaggiato. Se viene bersagliata solo con armi a distanza e non può raggiungere gli aggressori in un round, si immerge sotto il ghiaccio per evitare i proiettili e colpire dal basso.</p>",
-        "sourcebook": "LR 16"
+        "description": "<p>Il mostro è alto quattro metri, occupati per la gran parte dall'enorme bocca, con cui nutre il gigantesco stomaco traslucido che trascina qua e là. Il grosso torso pallico ha due lunghe braccia, che terminano con mani dotate di artigli seghettati, perfette per gettare le vittime nell'enorme orifizio.</p>",
+        "sourcebook": "LR 16",
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "organization": "",
+        "intelligence": "",
+        "vulnerability": ""
     },
     "items": [
         {

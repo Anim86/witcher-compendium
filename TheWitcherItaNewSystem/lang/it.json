@@ -55,6 +55,8 @@
             "Loot": "Bottino (Loot)",
             "Vulnerabilities": "Vulnerabilità",
             "Resistances": "Resistenze",
+            "Immunities": "Immunità",
+            "Susceptibilities": "Suscettibilità",
             "Senses": "Sensi",
             "Intelligence": "Intelligenza",
             "CommonerSuperstition": "Superstizione Popolare",
@@ -233,6 +235,7 @@
                 "Will": "VOL",
                 "Luck": "FOR",
                 "Toxicity": "Tossicità",
+                "ToxicityShort": "TOS",
                 "ToxicityReset": "Resetta Tossicità",
                 "ToxicityResetInfo": "Tossicità resettata con successo.",
                 "Desc": {
@@ -295,7 +298,8 @@
                 "Emp": "EMP",
                 "Cra": "TEC",
                 "Will": "VOL",
-                "Luck": "FOR"
+                "Luck": "FOR",
+                "Tox": "TOS"
             },
             "Initiative": "Iniziativa",
             "Skill": {

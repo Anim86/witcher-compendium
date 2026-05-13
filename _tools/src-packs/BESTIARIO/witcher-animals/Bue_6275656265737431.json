@@ -11,39 +11,39 @@
                 "unmodifiedMax": 1
             },
             "ref": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
             },
             "dex": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
             },
             "body": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 14,
+                "max": 14,
+                "unmodifiedMax": 14
             },
             "spd": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
             },
             "emp": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 2,
+                "max": 2,
+                "unmodifiedMax": 2
             },
             "cra": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
             },
             "will": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
             },
             "luck": {
                 "value": 0,
@@ -52,37 +52,25 @@
             }
         },
         "skills": {
-            "accortezza": {
-                "value": 3
-            },
-            "atletica": {
-                "value": 2
-            },
-            "coraggio": {
-                "value": 10
-            },
-            "eludere": {
-                "value": 7
-            },
-            "mischia": {
-                "value": 5
-            },
-            "nascondersi": {
-                "value": 1
-            },
-            "sopravvivenza": {
-                "value": 1
-            },
-            "tempra": {
-                "value": 6
-            }
+            "int": {},
+            "ref": {},
+            "dex": {},
+            "body": {},
+            "emp": {},
+            "cra": {},
+            "will": {}
         },
         "details": {
-            "biography": "<p>Il bue è un animale da soma e da lavoro essenziale per gli agricoltori del Continente. Sebbene calmo, può diventare estremamente pericoloso se spaventato o provocato.</p>",
-            "threat": "Bassa",
-            "reward": "—",
+            "biography": "<p>Se si allontana 10m, carica per 8d6 danni scaraventando a 8m.</p>",
+            "threat": "",
+            "reward": 0,
             "monsterType": "Beast",
-            "difficulty": "EASY"
+            "difficulty": "",
+            "height": "",
+            "weight": "",
+            "environment": "",
+            "organization": "",
+            "vulnerability": ""
         },
         "derivedStats": {
             "hp": {
@@ -106,14 +94,14 @@
                 "unmodifiedMax": 10
             },
             "stun": {
-                "value": 10,
-                "max": 10,
-                "unmodifiedMax": 10
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
             },
             "resolve": {
-                "value": 30,
-                "max": 30,
-                "unmodifiedMax": 30
+                "value": 18,
+                "max": 18,
+                "unmodifiedMax": 18
             },
             "woundTreshold": {
                 "value": 10,
@@ -121,21 +109,34 @@
                 "unmodifiedMax": 10
             }
         },
-        "description": "<p>Il bue è un animale da soma e da lavoro essenziale per gli agricoltori del Continente. Sebbene calmo, può diventare estremamente pericoloso se spaventato o provocato.</p>",
+        "description": "<p>Se si allontana 10m, carica per 8d6 danni scaraventando a 8m.</p>",
         "sourcebook": "MB 310",
         "monsterType": "Beast",
-        "difficulty": "EASY"
+        "difficulty": "EASY",
+        "armorHead": 0,
+        "armorUpper": 0,
+        "armorLower": 0,
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "intelligence": "",
+        "organization": "",
+        "common": "",
+        "academicKnowledge": "",
+        "bounty": 0,
+        "vulnerability": ""
     },
     "items": [
         {
+            "_id": "e0e5a215f59c4d3d",
             "name": "Incornata",
             "type": "weapon",
-            "img": "icons/svg/sword.svg",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
-                "damage": "5d6",
+                "description": "Sang (50%)",
+                "damage": "",
                 "accuracy": 0,
-                "type": "P",
-                "effects": "Sanguinamento (50%)"
+                "effects": "Sang (50%)"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -143,13 +144,14 @@
             }
         },
         {
+            "_id": "826c91ed537a401a",
             "name": "Zoccoli",
             "type": "weapon",
-            "img": "icons/svg/sword.svg",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
-                "damage": "4d6",
+                "description": "N/A",
+                "damage": "",
                 "accuracy": 0,
-                "type": "C",
                 "effects": "N/A"
             },
             "_stats": {
@@ -158,11 +160,12 @@
             }
         },
         {
+            "_id": "7b5524fa572f4a55",
             "name": "[Capacità] Carica",
             "type": "note",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Se un avversario si allontana di oltre 10 m, un bue può caricarlo, effettuando un poderoso attacco di incornata. Questo subisce una penalità di -4 ma infligge 8d6 e scaraventa indietro la vittima di 8m. Se colpisce un ostacolo, il bersaglio subisce danni da impatto.</p>"
+                "description": "<p>Se si allontana 10m, carica per 8d6 danni scaraventando a 8m.</p>"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -170,11 +173,25 @@
             }
         },
         {
-            "name": "[Capacità] Ferale",
-            "type": "note",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "_id": "f92abe66c2c34568",
+            "name": "Carne Cruda (x2d6)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "<p>Grazie ai suoi istinti un bue ha INT 7 ai fini delle prove di Accortezza e Sopravvivenza.</p>"
+                "description": "Quantità: 2d6"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "9a2bedee82e54aba",
+            "name": "Ossa di Bestia (x2d6)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 2d6"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

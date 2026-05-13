@@ -147,6 +147,7 @@
 .vital-orb.hp { border-color: var(--p-hp) !important; color: var(--p-hp); }
 .vital-orb.sta { border-color: var(--p-sta) !important; color: var(--p-sta); }
 .vital-orb.res { border-color: var(--w-gold) !important; color: var(--w-gold); }
+.vital-orb.foc { border-color: #9b59b6 !important; color: #9b59b6; }
 
 .vital-orb i { font-size: 10px; position: absolute; top: 6px; }
 .vital-orb input { 

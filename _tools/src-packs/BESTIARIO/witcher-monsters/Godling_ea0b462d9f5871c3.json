@@ -96,7 +96,12 @@
             "threat": "Facile Semplice",
             "reward": 20,
             "monsterType": "Relict",
-            "difficulty": "MEDIUM"
+            "difficulty": "MEDIUM",
+            "height": "",
+            "weight": "",
+            "environment": "",
+            "organization": "",
+            "vulnerability": ""
         },
         "derivedStats": {
             "rec": {
@@ -123,11 +128,17 @@
                 "unmodifiedMax": 0
             }
         },
-        "description": "<p>I godling sono innocui se non vengono offesi e, a differenza di molti altri mostri, parlano la lingua comune. Se trattato con rispetto, un godling può diventare un membro utile di un piccolo villaggio, aiutando con gli animali. Tuttavia, un godling offeso può causare incubi e spingere gli animali ad attaccare le persone senza mai farsi vedere.</p>",
+        "description": "<p>Sono spiriti della natura, custodi delle case o roba simile. Il punto è che tendono a restare vicini ai villaggi e si prendono cura della gente. Riparano scar- pe, tetti e roba del genere. Però, mi hanno detto, quando si costruiscono vere città, i godling diventano gelosi e si rivoltano. Conducono ratti della peste nei negozi, rovinano le fondamenta e divorano gli animali domestici. – Rodolf Kazmer</p>",
         "sourcebook": "DW 86",
         "monsterType": "Relict",
         "difficulty": "MEDIUM",
-        "bounty": 20
+        "bounty": 20,
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "organization": "",
+        "intelligence": "",
+        "vulnerability": ""
     },
     "items": [],
     "_id": "ea0b462d9f5871c3",

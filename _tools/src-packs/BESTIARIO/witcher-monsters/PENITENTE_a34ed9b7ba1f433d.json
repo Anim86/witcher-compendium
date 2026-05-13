@@ -52,43 +52,74 @@
             }
         },
         "skills": {
-            "accortezza": {
-                "value": 16
+            "int": {
+                "awareness": {
+                    "value": 10,
+                    "isVisible": true
+                },
+                "wildernessSurvival": {
+                    "value": 6,
+                    "isVisible": true
+                }
             },
-            "atletica": {
-                "value": 14
+            "ref": {
+                "brawling": {
+                    "value": 7,
+                    "isVisible": true
+                },
+                "dodge": {
+                    "value": 8,
+                    "isVisible": true
+                }
             },
-            "intimidire": {
-                "value": 17
+            "dex": {
+                "athletics": {
+                    "value": 10,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 9,
+                    "isVisible": true
+                }
             },
-            "lanciareIncantesimi": {
-                "value": 17
+            "body": {
+                "physique": {
+                    "value": 7,
+                    "isVisible": true
+                },
+                "endurance": {
+                    "value": 7,
+                    "isVisible": true
+                }
             },
-            "nascondersi": {
-                "value": 17
-            },
-            "prestanza": {
-                "value": 15
-            },
-            "resistereallamagia": {
-                "value": 15
-            },
-            "rissa": {
-                "value": 15
-            },
-            "sopravvivenza": {
-                "value": 12
-            },
-            "tempra": {
-                "value": 15
+            "emp": {},
+            "cra": {},
+            "will": {
+                "intimidation": {
+                    "value": 9,
+                    "isVisible": true
+                },
+                "spellCasting": {
+                    "value": 9,
+                    "isVisible": true
+                },
+                "resistMagic": {
+                    "value": 7,
+                    "isVisible": true
+                }
             }
         },
         "details": {
-            "biography": "<p>Un penitente è un demone che perseguita chi ha commesso un crimine. – Rodolf Kazmer</p><p>I penitenti sono anime che puniscono i malvagi. Si legano al colpevole coprendo il luogo del crimine con una fitta nebbia e richiamando spettri. Avanzano ripetendo con voce rauca il nome del colpevole, attaccando con spada e lanterna per poi svanire nell'ombra.</p>",
-            "threat": "Media",
+            "biography": "<p>Spettri oscuri che perseguitano chi ha commesso crimini atroci, avvolgendo l'area in una fitta nebbia evocatrice di wraith.</p>",
+            "threat": "Medio",
             "reward": 800,
             "monsterType": "Specter",
-            "difficulty": "MEDIUM"
+            "difficulty": "COMPLESSO",
+            "height": "2,2 m",
+            "weight": "90 Kg",
+            "environment": "Ovunque venga evocato",
+            "organization": "Solitario",
+            "vulnerability": ""
         },
         "derivedStats": {
             "vigor": {
@@ -102,14 +133,14 @@
                 "unmodifiedMax": 8
             },
             "resolve": {
-                "value": 80,
-                "max": 80,
-                "unmodifiedMax": 80
+                "value": 18,
+                "max": 18,
+                "unmodifiedMax": 18
             },
             "stun": {
-                "value": 8,
-                "max": 8,
-                "unmodifiedMax": 8
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
             },
             "woundTreshold": {
                 "value": 8,
@@ -127,21 +158,32 @@
                 "unmodifiedMax": 40
             }
         },
-        "description": "<p>Un penitente è un demone che perseguita chi ha commesso un crimine. – Rodolf Kazmer</p><p>I penitenti sono anime che puniscono i malvagi. Si legano al colpevole coprendo il luogo del crimine con una fitta nebbia e richiamando spettri. Avanzano ripetendo con voce rauca il nome del colpevole, attaccando con spada e lanterna per poi svanire nell'ombra.</p>",
+        "description": "<p>Spettri oscuri che perseguitano chi ha commesso crimini atroci, avvolgendo l'area in una fitta nebbia evocatrice di wraith.</p>",
         "sourcebook": "TC 208",
         "monsterType": "Specter",
         "difficulty": "MEDIUM",
-        "bounty": 800
+        "bounty": 800,
+        "armorHead": 0,
+        "armorUpper": 0,
+        "armorLower": 0,
+        "height": "2,2 m",
+        "weight": "90 Kg",
+        "environment": "Ovunque venga evocato",
+        "intelligence": "Senziente",
+        "organization": "Solitario",
+        "common": "",
+        "academicKnowledge": "",
+        "vulnerability": ""
     },
     "items": [
         {
-            "_id": "p1",
+            "_id": "a4264240bf014b4e",
             "name": "Spada del Penitente",
             "type": "weapon",
-            "img": "icons/svg/sword.svg",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
-                "description": "",
-                "damage": "5d6+4",
+                "description": "Sanguinamento (30%)",
+                "damage": "",
                 "accuracy": 0,
                 "effects": "Sanguinamento (30%)"
             },
@@ -151,13 +193,13 @@
             }
         },
         {
-            "_id": "p2",
+            "_id": "8f0811ddadd24f01",
             "name": "Lanterna del Penitente",
             "type": "weapon",
-            "img": "icons/svg/sword.svg",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
-                "description": "",
-                "damage": "4d6",
+                "description": "A Fuoco (75%)",
+                "damage": "",
                 "accuracy": 0,
                 "effects": "A Fuoco (75%)"
             },
@@ -167,12 +209,90 @@
             }
         },
         {
-            "_id": "p3",
+            "_id": "c18e29d141794422",
             "name": "[Capacità] Nebbia Sovrannaturale",
             "type": "note",
-            "img": "modules/witcher-compendium/assets/SPECIAL/gift_natura.webp",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Raggio 50m. Finché nella nebbia, non subisce danni. Si dissipa solo con un gran fuoco.</p>"
+                "description": "<p>Crea una fitta nebbia per 50m. All'interno il penitente non subisce danni. La nube si dissipa solo accendendo un gran fuoco al suo interno.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "4a8e951d5ebf4a90",
+            "name": "[Capacità] Suddividersi",
+            "type": "note",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "<p>Può suddividersi in quattro wraith che controlla direttamente.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "b182ba2f1b1f40c9",
+            "name": "[Capacità] Sfocato",
+            "type": "note",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "<p>Può usare Lanciare Incantesimi per difendersi e divenire incorporeo fino al Turno successivo.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "d3c77c6f589d4d89",
+            "name": "Essenza di Wraith (x1d6)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 1d6"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "69265036d67e4647",
+            "name": "Polvere Infusa (x1d6)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 1d6"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "25bda24ec0ef4437",
+            "name": "Polvere di Spettro (x1d6)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 1d6"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "c4101116ab0a4e32",
+            "name": "Runa Casuale (x1)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 1"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

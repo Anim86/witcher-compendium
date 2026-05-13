@@ -52,37 +52,25 @@
             }
         },
         "skills": {
-            "accortezza": {
-                "value": 7
-            },
-            "atletica": {
-                "value": 8
-            },
-            "coraggio": {
-                "value": 5
-            },
-            "eludere": {
-                "value": 6
-            },
-            "mischia": {
-                "value": 4
-            },
-            "nascondersi": {
-                "value": 6
-            },
-            "sopravvivenza": {
-                "value": 3
-            },
-            "tempra": {
-                "value": 4
-            }
+            "int": {},
+            "ref": {},
+            "dex": {},
+            "body": {},
+            "emp": {},
+            "cra": {},
+            "will": {}
         },
         "details": {
-            "biography": "<p>I gatti sono animali comuni nelle case e nelle stalle, preziosi per il controllo dei parassiti. Tuttavia, sono creature misteriose, dotate di sensi acuti che sembrano percepire mondi invisibili.</p>",
-            "threat": "Bassa",
-            "reward": "—",
+            "biography": "<p>Può vedere invisibilità e magia fino a 18m.</p>",
+            "threat": "",
+            "reward": 0,
             "monsterType": "Beast",
-            "difficulty": "EASY"
+            "difficulty": "",
+            "height": "",
+            "weight": "",
+            "environment": "",
+            "organization": "",
+            "vulnerability": ""
         },
         "derivedStats": {
             "hp": {
@@ -106,14 +94,14 @@
                 "unmodifiedMax": 2
             },
             "stun": {
-                "value": 2,
-                "max": 2,
-                "unmodifiedMax": 2
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
             },
             "resolve": {
-                "value": 20,
-                "max": 20,
-                "unmodifiedMax": 20
+                "value": 18,
+                "max": 18,
+                "unmodifiedMax": 18
             },
             "woundTreshold": {
                 "value": 2,
@@ -121,20 +109,33 @@
                 "unmodifiedMax": 2
             }
         },
-        "description": "<p>I gatti sono animali comuni nelle case e nelle stalle, preziosi per il controllo dei parassiti. Tuttavia, sono creature misteriose, dotate di sensi acuti che sembrano percepire mondi invisibili.</p>",
+        "description": "<p>Può vedere invisibilità e magia fino a 18m.</p>",
         "sourcebook": "MB 312",
         "monsterType": "Beast",
-        "difficulty": "EASY"
+        "difficulty": "EASY",
+        "armorHead": 0,
+        "armorUpper": 0,
+        "armorLower": 0,
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "intelligence": "",
+        "organization": "",
+        "common": "",
+        "academicKnowledge": "",
+        "bounty": 0,
+        "vulnerability": ""
     },
     "items": [
         {
+            "_id": "887e6e8001724ab7",
             "name": "Artigli",
             "type": "weapon",
-            "img": "icons/svg/sword.svg",
+            "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
             "system": {
-                "damage": "1d6/2",
+                "description": "N/A",
+                "damage": "",
                 "accuracy": 0,
-                "type": "T",
                 "effects": "N/A"
             },
             "_stats": {
@@ -143,13 +144,14 @@
             }
         },
         {
+            "_id": "5387abd058ad4ec1",
             "name": "Morso",
             "type": "weapon",
-            "img": "icons/svg/sword.svg",
+            "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
             "system": {
-                "damage": "1d6",
+                "description": "N/A",
+                "damage": "",
                 "accuracy": 0,
-                "type": "P",
                 "effects": "N/A"
             },
             "_stats": {
@@ -158,35 +160,12 @@
             }
         },
         {
-            "name": "[Capacità] Avventarsi",
-            "type": "note",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-            "system": {
-                "description": "<p>Un gatto non ha bisogno di rincorsa per balzare.</p>"
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "name": "[Capacità] Ferale",
-            "type": "note",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-            "system": {
-                "description": "<p>Grazie ai suoi istinti un gatto possiede INT 7 ai fini delle prove d'Accortezza e Sopravvivenza.</p>"
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
+            "_id": "811ea9e9ce5748f4",
             "name": "[Capacità] Sintonia Magica",
             "type": "note",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Un gatto è in grado di vedere le creature invisibili e percepire emanazioni magiche e incantatori entro 18m.</p>"
+                "description": "<p>Può vedere invisibilità e magia fino a 18m.</p>"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -194,11 +173,25 @@
             }
         },
         {
-            "name": "[Capacità] Vista Notturna",
-            "type": "note",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "_id": "58a9578881ae4db7",
+            "name": "Carne Cruda (x1d6/2)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "<p>Un gatto può agire in zone di luce fioca senza penalità.</p>"
+                "description": "Quantità: 1d6/2"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "6041bda948794e05",
+            "name": "Ossa di Bestia (x1d6/2)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 1d6/2"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

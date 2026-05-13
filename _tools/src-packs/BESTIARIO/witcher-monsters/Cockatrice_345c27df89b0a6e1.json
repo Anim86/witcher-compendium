@@ -87,7 +87,12 @@
             "threat": "Medio Semplice",
             "reward": 800,
             "monsterType": "Draconid",
-            "difficulty": "MEDIUM"
+            "difficulty": "MEDIUM",
+            "height": "",
+            "weight": "",
+            "environment": "",
+            "organization": "",
+            "vulnerability": ""
         },
         "derivedStats": {
             "rec": {
@@ -114,11 +119,17 @@
                 "unmodifiedMax": 0
             }
         },
-        "description": "<p>La cockatrice è un dragonide che preferisce caverne e sotterranei freddi e umidi, incluse le cantine maltenute. Possiede molte armi: una coda spinosa, artigli rapidi e un becco velenoso. Contrariamente alle leggende, non trasforma nulla in pietra e gli specchi sono del tutto inutili. In volo è una cacciatrice temibile che usa il proprio peso per caricare e artigliare le prede al suolo.</p>",
+        "description": "<p>Sin dalla nascita la cockatrice odia tutto e tutti, così ferocemente da trasformazione in pietra gli animali con uno sguardo! O almeno così dicono le superstizioni. Amano volare e scendere in picchiata con becco e artigli protesi. Quando cerca di trasformarti in pietra devi alzare uno specchio e rispedirle tutto indietro! – Rodolf Kazmer</p>",
         "sourcebook": "DW 106",
         "monsterType": "Draconid",
         "difficulty": "MEDIUM",
-        "bounty": 800
+        "bounty": 800,
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "organization": "",
+        "intelligence": "",
+        "vulnerability": ""
     },
     "items": [],
     "_id": "345c27df89b0a6e1",

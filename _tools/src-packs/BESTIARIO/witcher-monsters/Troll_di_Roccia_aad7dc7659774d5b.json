@@ -6,19 +6,19 @@
     "system": {
         "stats": {
             "int": {
-                "value": 2,
-                "max": 2,
-                "unmodifiedMax": 2
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
             },
             "ref": {
-                "value": 5,
-                "max": 5,
-                "unmodifiedMax": 5
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
             },
             "dex": {
-                "value": 5,
-                "max": 5,
-                "unmodifiedMax": 5
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
             },
             "body": {
                 "value": 12,
@@ -26,24 +26,24 @@
                 "unmodifiedMax": 12
             },
             "spd": {
-                "value": 5,
-                "max": 5,
-                "unmodifiedMax": 5
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
             },
             "emp": {
-                "value": 4,
-                "max": 4,
-                "unmodifiedMax": 4
-            },
-            "cra": {
-                "value": 4,
-                "max": 4,
-                "unmodifiedMax": 4
-            },
-            "will": {
                 "value": 6,
                 "max": 6,
                 "unmodifiedMax": 6
+            },
+            "cra": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "will": {
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
             },
             "luck": {
                 "value": 0,
@@ -52,37 +52,35 @@
             }
         },
         "skills": {
-            "accortezza": {
-                "value": 9
+            "int": {},
+            "ref": {
+                "dodge": {
+                    "value": 4,
+                    "isVisible": true
+                }
             },
-            "atletica": {
-                "value": 3
+            "dex": {
+                "athletics": {
+                    "value": 3,
+                    "isVisible": true
+                }
             },
-            "coraggio": {
-                "value": 10
-            },
-            "eludere": {
-                "value": 5
-            },
-            "nascondersi": {
-                "value": 3
-            },
-            "rissa": {
-                "value": 8
-            },
-            "sopravvivenza": {
-                "value": 7
-            },
-            "tempra": {
-                "value": 8
-            }
+            "body": {},
+            "emp": {},
+            "cra": {},
+            "will": {}
         },
         "details": {
-            "biography": "<p>Tutti sanno che i troll sono grandi costruttori e lavorano in cambio di vodka. Possono costruire ogni genere di edificio, ma non sono troppo furbi. – Rodolf Kazmer</p><p>Tutti i troll hanno un'intelligenza equivalente a quella di un bambino piccolo. Amano gli alcolici, ma ne serve molto per farli ubriacare. I troll di roccia hanno uno spesso strato di roccia sulla schiena che funge da armatura naturale.</p>",
-            "threat": "Difficile",
-            "reward": 1000,
+            "biography": "<p>Orchi massicci, grandi costruttori (e bevitori di vodka). Sono creature molto forti, difese da uno spesso strato di roccia.</p>",
+            "threat": "Medio",
+            "reward": 800,
             "monsterType": "Ogroid",
-            "difficulty": "HARD"
+            "difficulty": "COMPLESSO",
+            "height": "Circa 2 m",
+            "weight": "Circa 408 Kg",
+            "environment": "Valli e montagne",
+            "organization": "Solitario o coppia",
+            "vulnerability": ""
         },
         "derivedStats": {
             "vigor": {
@@ -91,22 +89,24 @@
                 "unmodifiedMax": 0
             },
             "rec": {
-                "value": 10,
-                "max": 10,
-                "unmodifiedMax": 10
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
             },
             "resolve": {
-                "value": 40,
-                "max": 40,
-                "unmodifiedMax": 40
+                "value": 12,
+                "max": 12,
+                "unmodifiedMax": 12
             },
             "stun": {
-                "value": 8,
-                "max": 8
+                "value": 2,
+                "max": 2,
+                "unmodifiedMax": 2
             },
             "woundTreshold": {
-                "value": 12,
-                "max": 12
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
             },
             "hp": {
                 "value": 80,
@@ -119,23 +119,34 @@
                 "unmodifiedMax": 40
             }
         },
-        "description": "<p>Tutti sanno che i troll sono grandi costruttori e lavorano in cambio di vodka. Possono costruire ogni genere di edificio, ma non sono troppo furbi. – Rodolf Kazmer</p><p>Tutti i troll hanno un'intelligenza equivalente a quella di un bambino piccolo. Amano gli alcolici, ma ne serve molto per farli ubriacare. I troll di roccia hanno uno spesso strato di roccia sulla schiena che funge da armatura naturale.</p>",
+        "description": "<p>Orchi massicci, grandi costruttori (e bevitori di vodka). Sono creature molto forti, difese da uno spesso strato di roccia.</p>",
         "sourcebook": "MB 305",
         "monsterType": "Ogroid",
         "difficulty": "HARD",
-        "bounty": 1000
+        "bounty": 800,
+        "armorHead": 20,
+        "armorUpper": 20,
+        "armorLower": 20,
+        "height": "Circa 2 m",
+        "weight": "Circa 408 Kg",
+        "environment": "Valli e montagne",
+        "intelligence": "Senziente (ma tonti)",
+        "organization": "Solitario o coppia",
+        "common": "",
+        "academicKnowledge": "",
+        "vulnerability": ""
     },
     "items": [
         {
-            "_id": "25bdc1fb9d3146cc",
+            "_id": "bafb246a202c4880",
             "name": "Pugni",
             "type": "weapon",
-            "img": "icons/svg/sword.svg",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
-                "description": "",
-                "damage": "6d6",
+                "description": "N/A",
+                "damage": "",
                 "accuracy": 0,
-                "effects": ""
+                "effects": "N/A"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -143,12 +154,12 @@
             }
         },
         {
-            "_id": "t1",
-            "name": "[Capacità] Forza Distruttiva",
-            "type": "note",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "_id": "68c2dc2a907d46f7",
+            "name": "Fegato di Troll (x1)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "<p>I colpi non possono essere parati e causano doppio danno ablativo.</p>"
+                "description": "Quantità: 1"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -156,12 +167,12 @@
             }
         },
         {
-            "_id": "t2",
-            "name": "[Capacità] Scagliare Macigni",
-            "type": "note",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "_id": "c0f124bb46434f9d",
+            "name": "Pelle di Troll (x1)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "<p>Oltre i 6m scaglia macerie. 5d6 danni, gittata 16m.</p>"
+                "description": "Quantità: 1"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

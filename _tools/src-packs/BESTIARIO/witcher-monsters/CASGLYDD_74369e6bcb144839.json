@@ -52,49 +52,49 @@
             }
         },
         "skills": {
-            "accortezza": {
-                "value": 19
+            "int": {
+                "awareness": {
+                    "value": 9,
+                    "isVisible": true
+                }
             },
-            "atletica": {
-                "value": 12
+            "ref": {
+                "brawling": {
+                    "value": 9,
+                    "isVisible": true
+                }
             },
-            "intimidire": {
-                "value": 14
+            "dex": {
+                "stealth": {
+                    "value": 10,
+                    "isVisible": true
+                }
             },
-            "lanciareIncantesimi": {
-                "value": 20
-            },
-            "nascondersi": {
-                "value": 16
-            },
-            "persuasione": {
-                "value": 12
-            },
-            "prestanza": {
-                "value": 15
-            },
-            "resistereacoercizioni": {
-                "value": 18
-            },
-            "resistereallamagia": {
-                "value": 22
-            },
-            "rissa": {
-                "value": 18
-            },
-            "sopravvivenza": {
-                "value": 17
-            },
-            "tempra": {
-                "value": 14
+            "body": {},
+            "emp": {},
+            "cra": {},
+            "will": {
+                "spellCasting": {
+                    "value": 8,
+                    "isVisible": true
+                },
+                "resistMagic": {
+                    "value": 10,
+                    "isVisible": true
+                }
             }
         },
         "details": {
-            "biography": "<p>La gente farebbe di tutto per l'informazione giusta. Eh, fidati, il vecchio Rodolf lo ha imparato molto tempo fa. – Rodolf Kazmer</p><p>I casglydd sono demoni della conoscenza che vivono tra le ombre, usandole come portali. Scompaiono per poi rapire le loro vittime, trascinandole in un regno d'oscurità dove ne risucchiano l'intelletto e i ricordi. Chi fa un patto con loro deve stare attento: diventeranno ossessionati e torneranno con offerte sempre più oscure.</p>",
-            "threat": "Arduo",
+            "biography": "<p>Demoni della conoscenza. Si nascondono nell'ombra, raccogliendo informazioni e perseguitando accademici ed evocatori per consumarne l'intelletto.</p>",
+            "threat": "Medio",
             "reward": 1500,
             "monsterType": "Relict",
-            "difficulty": "HARD"
+            "difficulty": "SEMPLICE",
+            "height": "Circa 2,5 m",
+            "weight": "136 kg",
+            "environment": "Ovunque venga evocato (Reami d'ombra)",
+            "organization": "Solitario",
+            "vulnerability": ""
         },
         "derivedStats": {
             "vigor": {
@@ -108,14 +108,14 @@
                 "unmodifiedMax": 8
             },
             "resolve": {
-                "value": 80,
-                "max": 80,
-                "unmodifiedMax": 80
+                "value": 18,
+                "max": 18,
+                "unmodifiedMax": 18
             },
             "stun": {
-                "value": 8,
-                "max": 8,
-                "unmodifiedMax": 8
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
             },
             "woundTreshold": {
                 "value": 8,
@@ -133,21 +133,32 @@
                 "unmodifiedMax": 40
             }
         },
-        "description": "<p>La gente farebbe di tutto per l'informazione giusta. Eh, fidati, il vecchio Rodolf lo ha imparato molto tempo fa. – Rodolf Kazmer</p><p>I casglydd sono demoni della conoscenza che vivono tra le ombre, usandole come portali. Scompaiono per poi rapire le loro vittime, trascinandole in un regno d'oscurità dove ne risucchiano l'intelletto e i ricordi. Chi fa un patto con loro deve stare attento: diventeranno ossessionati e torneranno con offerte sempre più oscure.</p>",
+        "description": "<p>Demoni della conoscenza. Si nascondono nell'ombra, raccogliendo informazioni e perseguitando accademici ed evocatori per consumarne l'intelletto.</p>",
         "sourcebook": "TC 202",
         "monsterType": "Relict",
         "difficulty": "HARD",
-        "bounty": 1500
+        "bounty": 1500,
+        "armorHead": 15,
+        "armorUpper": 15,
+        "armorLower": 15,
+        "height": "Circa 2,5 m",
+        "weight": "136 kg",
+        "environment": "Ovunque venga evocato (Reami d'ombra)",
+        "intelligence": "Senziente",
+        "organization": "Solitario",
+        "common": "",
+        "academicKnowledge": "",
+        "vulnerability": ""
     },
     "items": [
         {
-            "_id": "c1",
+            "_id": "1434bed6cafe4faa",
             "name": "Artigli",
             "type": "weapon",
-            "img": "modules/witcher-compendium/assets/SPECIAL/trait_artigli.webp",
+            "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
             "system": {
-                "description": "",
-                "damage": "1d6",
+                "description": "Portata, Trascinare nell'Ombra",
+                "damage": "",
                 "accuracy": 0,
                 "effects": "Portata, Trascinare nell'Ombra"
             },
@@ -157,12 +168,12 @@
             }
         },
         {
-            "_id": "c2",
-            "name": "[Capacità] Movimento nell'Ombra",
+            "_id": "275d4b8e77bf4c6e",
+            "name": "[Capacità] Pozzo di Conoscenza",
             "type": "note",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Teletrasporto tra zone di oscurità entro 20m come Azione di Movimento.</p>"
+                "description": "<p>Ha Base 20 in tutte le prove per apprendere, ricordare o insegnare informazioni.</p>"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -170,12 +181,64 @@
             }
         },
         {
-            "_id": "c3",
-            "name": "[Capacità] Pozzo di Conoscenza",
+            "_id": "35bd722f97b14cab",
+            "name": "[Capacità] Movimento nell'Ombra",
             "type": "note",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Base 20 in tutte le prove per apprendere, ricordare o insegnare informazioni.</p>"
+                "description": "<p>Può teletrasportarsi da una zona d'oscurità all'altra entro 20m.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "d7fc58f739af4625",
+            "name": "[Capacità] Trascinare nell'Ombra",
+            "type": "note",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "<p>Trasferisce il bersaglio in un reame oscuro tramite un portale sul petto per nutrirsi dei suoi ricordi e intelletto.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "0d60b41ddcfa40a7",
+            "name": "Essenza di Wraith (x1d6)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 1d6"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "7a2d8b24278b40ac",
+            "name": "Glifo Casuale (x2)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 2"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "e76b3497461e45c8",
+            "name": "Polvere Infusa (x2d10)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 2d10"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

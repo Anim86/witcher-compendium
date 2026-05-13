@@ -69,18 +69,39 @@ export default class MonsterData extends CommonActorData {
     }
 
     /** @override */
+    prepareDerivedData() {
+        super.prepareDerivedData();
+
+        // Ensure all skills are visible for monsters so GMs can edit them easily
+        const categories = ['int', 'ref', 'dex', 'body', 'emp', 'cra', 'will'];
+        for (const cat of categories) {
+            const skills = this.skills[cat];
+            if (!skills) continue;
+            for (const skillName in skills) {
+                const skill = skills[skillName];
+                if (skill && typeof skill === 'object') {
+                    skill.isVisible = true;
+                }
+            }
+        }
+    }
+
+    /** @override */
     static migrateData(source) {
+        // Promote detail fields to root system
         if (source.details) {
             const d = source.details;
             const mapping = {
-                biography: 'biography',
-                description: 'description',
-                vulnerability: 'vulnerability',
+                monsterType: 'monsterType',
+                threat: 'threat',
+                reward: 'bounty',
+                difficulty: 'difficulty',
+                senses: 'senses',
                 size: 'size',
-                height: 'height',
-                weight: 'weight',
-                environment: 'environment',
                 intelligence: 'intelligence',
+                biography: 'biography',
+                vulnerability: 'vulnerability',
+                environment: 'environment',
                 organization: 'organization',
                 monsterLore: 'monsterLore',
                 academicKnowledge: 'academicKnowledge',
@@ -92,9 +113,46 @@ export default class MonsterData extends CommonActorData {
                     source[newKey] = d[oldKey];
                 }
             }
-            // Optional: delete details if empty or after migration
-            // delete source.details; 
         }
+
+        // Legacy flat Italian skills migration to grouped English schema
+        if (source.skills && !source.skills.int && !source.skills.ref) {
+            const legacySkills = source.skills;
+            const skillMap = {
+                "accortezza": "int.awareness",
+                "atletica": "dex.athletics",
+                "coraggio": "will.courage",
+                "eludere": "ref.dodge",
+                "mischia": "ref.melee",
+                "nascondersi": "dex.stealth",
+                "rissa": "ref.brawling",
+                "sopravvivenza": "int.wildernessSurvival",
+                "tempra": "body.physique",
+                "intimidazione": "will.intimidation",
+                "persuasione": "emp.persuasion",
+                "inganno": "emp.deceit"
+            };
+
+            const migratedSkills = { int: {}, ref: {}, dex: {}, body: {}, emp: {}, cra: {}, will: {} };
+            let hasLegacyData = false;
+
+            for (const [legacyKey, newPath] of Object.entries(skillMap)) {
+                if (legacySkills[legacyKey]) {
+                    const [cat, skillKey] = newPath.split('.');
+                    if (!migratedSkills[cat]) migratedSkills[cat] = {};
+                    migratedSkills[cat][skillKey] = {
+                        value: legacySkills[legacyKey].value || 0,
+                        isVisible: true
+                    };
+                    hasLegacyData = true;
+                }
+            }
+
+            if (hasLegacyData) {
+                source.skills = migratedSkills;
+            }
+        }
+
         return super.migrateData(source);
     }
 }

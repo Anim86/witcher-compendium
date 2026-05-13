@@ -78,6 +78,52 @@
             },
             "tempra": {
                 "value": 8
+            },
+            "int": {
+                "awareness": {
+                    "value": 9,
+                    "isVisible": true
+                },
+                "wildernessSurvival": {
+                    "value": 8,
+                    "isVisible": true
+                }
+            },
+            "dex": {
+                "athletics": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "will": {
+                "courage": {
+                    "value": 2,
+                    "isVisible": true
+                },
+                "resistMagic": {
+                    "value": 2,
+                    "isVisible": true
+                }
+            },
+            "ref": {
+                "melee": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "body": {
+                "endurance": {
+                    "value": 0,
+                    "isVisible": true
+                }
             }
         },
         "details": {
@@ -85,7 +131,12 @@
             "threat": "Difficile",
             "reward": 1500,
             "monsterType": "Draconid",
-            "difficulty": "HARD"
+            "difficulty": "HARD",
+            "height": "",
+            "weight": "",
+            "environment": "",
+            "organization": "",
+            "vulnerability": ""
         },
         "derivedStats": {
             "vigor": {
@@ -126,33 +177,23 @@
         "sourcebook": "MB 307",
         "monsterType": "Draconid",
         "difficulty": "HARD",
-        "bounty": 1500
+        "bounty": 1500,
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "organization": "",
+        "intelligence": "",
+        "vulnerability": ""
     },
     "items": [
         {
-            "_id": "ff962dd8ebda4274",
-            "name": "Artigli",
-            "type": "weapon",
-            "img": "modules/witcher-compendium/assets/SPECIAL/trait_artigli.webp",
-            "system": {
-                "description": "",
-                "damage": "6d6",
-                "accuracy": 0,
-                "effects": ""
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "e8c1a5b2b383464a",
+            "_id": "134f501e5de9456c",
             "name": "Morso",
             "type": "weapon",
             "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
             "system": {
-                "description": "",
-                "damage": "7d6",
+                "description": "Veleno (25%)",
+                "damage": "",
                 "accuracy": 0,
                 "effects": "Veleno (25%)"
             },
@@ -162,13 +203,29 @@
             }
         },
         {
-            "_id": "4725e2cbc5004f14",
+            "_id": "8730e6b6ef094d1a",
+            "name": "Artigli",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
+            "system": {
+                "description": "N/A",
+                "damage": "",
+                "accuracy": 0,
+                "effects": "N/A"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "5907222a7ca4430f",
             "name": "Aculei",
             "type": "weapon",
-            "img": "icons/svg/sword.svg",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
-                "description": "",
-                "damage": "5d6+2",
+                "description": "Veleno (75%)",
+                "damage": "",
                 "accuracy": 0,
                 "effects": "Veleno (75%)"
             },
@@ -178,12 +235,12 @@
             }
         },
         {
-            "_id": "v1",
-            "name": "[Capacità] Volo",
+            "_id": "0d9ff6b462874f93",
+            "name": "[Capacità] Sputo Velenoso",
             "type": "note",
-            "img": "modules/witcher-compendium/assets/SPECIAL/trait_volo.webp",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Può volare. Se cade subisce danni da impatto.</p>"
+                "description": "<p>Può sputare veleno contro un singolo bersaglio fino a 8m (3d6 danni e 100% Avvelenato).</p>"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -191,12 +248,64 @@
             }
         },
         {
-            "_id": "v2",
-            "name": "[Capacità] Sputo Velenoso",
+            "_id": "4062564298d14843",
+            "name": "[Capacità] Volo",
             "type": "note",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Sputa veleno fino a 8m. 3d6 danni, Avvelenato (100%).</p>"
+                "description": "<p>Può volare come azione di movimento. Se subisce più di 10 danni precipita.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "c3b1736fa7a24ee5",
+            "name": "Estratto di Veleno (x1d10)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 1d10"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "4717cc8a590847a0",
+            "name": "Occhio di Viverna (x1d6/2)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 1d6/2"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "d7822bcadbaf4306",
+            "name": "Scaglie di Dragonide (x1d10)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 1d10"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "c8bb16a21e304fb5",
+            "name": "Uovo di Viverna (x1d6/2)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 1d6/2"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

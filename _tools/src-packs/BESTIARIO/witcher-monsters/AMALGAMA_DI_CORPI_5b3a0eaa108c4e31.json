@@ -52,40 +52,58 @@
             }
         },
         "skills": {
-            "accortezza": {
-                "value": 10
+            "int": {
+                "awareness": {
+                    "value": 9,
+                    "isVisible": true
+                }
             },
-            "atletica": {
-                "value": 11
+            "ref": {
+                "brawling": {
+                    "value": 8,
+                    "isVisible": true
+                }
             },
-            "intimidire": {
-                "value": 16
+            "dex": {
+                "athletics": {
+                    "value": 5,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 4,
+                    "isVisible": true
+                }
             },
-            "nascondersi": {
-                "value": 10
+            "body": {
+                "physique": {
+                    "value": 8,
+                    "isVisible": true
+                }
             },
-            "prestanza": {
-                "value": 20
-            },
-            "resistereallamagia": {
-                "value": 17
-            },
-            "rissa": {
-                "value": 16
-            },
-            "sopravvivenza": {
-                "value": 7
-            },
-            "tempra": {
-                "value": 17
+            "emp": {},
+            "cra": {},
+            "will": {
+                "intimidation": {
+                    "value": 8,
+                    "isVisible": true
+                },
+                "resistMagic": {
+                    "value": 9,
+                    "isVisible": true
+                }
             }
         },
         "details": {
-            "biography": "<p>Un amalgama di corpi è un golem non-senziente formato da cadaveri parzialmente rianimati. In combattimento, colpisce tutto ciò che vede con le sue molte braccia, fermandosi solo per emettere un terribile lamento. – Rodolf Kazmer</p>",
-            "threat": "Arduo",
+            "biography": "<p>Golem di carne formato da cadaveri parzialmente rianimati che conservano barlumi di coscienza, urlante e mortale. Creato da necromanti.</p>",
+            "threat": "Difficile",
             "reward": 800,
             "monsterType": "Elementa",
-            "difficulty": "HARD"
+            "difficulty": "ARDUO",
+            "height": "Varia",
+            "weight": "Circa 680 kg",
+            "environment": "Vicino a cripte e torri dei maghi",
+            "organization": "Solitario",
+            "vulnerability": ""
         },
         "derivedStats": {
             "vigor": {
@@ -99,14 +117,14 @@
                 "unmodifiedMax": 10
             },
             "resolve": {
-                "value": 100,
-                "max": 100,
-                "unmodifiedMax": 100
+                "value": 18,
+                "max": 18,
+                "unmodifiedMax": 18
             },
             "stun": {
-                "value": 10,
-                "max": 10,
-                "unmodifiedMax": 10
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
             },
             "woundTreshold": {
                 "value": 10,
@@ -124,23 +142,34 @@
                 "unmodifiedMax": 50
             }
         },
-        "description": "<p>Un amalgama di corpi è un golem non-senziente formato da cadaveri parzialmente rianimati. In combattimento, colpisce tutto ciò che vede con le sue molte braccia, fermandosi solo per emettere un terribile lamento. – Rodolf Kazmer</p>",
+        "description": "<p>Golem di carne formato da cadaveri parzialmente rianimati che conservano barlumi di coscienza, urlante e mortale. Creato da necromanti.</p>",
         "sourcebook": "TC 196",
         "monsterType": "Elementa",
         "difficulty": "HARD",
-        "bounty": 800
+        "bounty": 800,
+        "armorHead": 0,
+        "armorUpper": 0,
+        "armorLower": 0,
+        "height": "Varia",
+        "weight": "Circa 680 kg",
+        "environment": "Vicino a cripte e torri dei maghi",
+        "intelligence": "Ferale (con scatti di lucidità)",
+        "organization": "Solitario",
+        "common": "",
+        "academicKnowledge": "",
+        "vulnerability": ""
     },
     "items": [
         {
-            "_id": "2a4ec5b28e0a4ec5",
-            "name": "Pugni",
+            "_id": "500dfa6d94df4e11",
+            "name": "Braccia Multiple",
             "type": "weapon",
-            "img": "icons/svg/sword.svg",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
-                "description": "",
-                "damage": "5d6",
+                "description": "N/A",
+                "damage": "",
                 "accuracy": 0,
-                "effects": "Forza Distruttiva, Portata 2"
+                "effects": "N/A"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -148,12 +177,12 @@
             }
         },
         {
-            "_id": "a1",
-            "name": "[Capacità] Orrido Lamento",
+            "_id": "732d35107eb04632",
+            "name": "[Capacità] Momento di Lucidità",
             "type": "note",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Entro 10m: Prova di Resistere alla Magia CD 16 o subire Vacillante.</p>"
+                "description": "<p>Può richiamare la memoria di un'anima per risolvere enigmi o aprire porte (aumenta temporaneamente INT e MAN).</p>"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -161,12 +190,51 @@
             }
         },
         {
-            "_id": "a2",
-            "name": "[Capacità] Spiriti Prigionieri",
+            "_id": "0ae1595c505b45b1",
+            "name": "[Capacità] Vista a 360°",
             "type": "note",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Ogni Ferita Critica libera un wraith e infligge 10 danni bonus all'amalgama.</p>"
+                "description": "<p>Gli occhi sono sparsi ovunque, non ha punti ciechi.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "8b5a0127d88042c3",
+            "name": "[Capacità] Spiriti Rancorosi",
+            "type": "note",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "<p>Tranciargli pezzi evoca Wraith rabbiosi dalle anime rimosse.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "22d687fae1ae4c07",
+            "name": "Essenza di Wraith (x1d6)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 1d6"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "06d8d14a705c4181",
+            "name": "Componenti Cadaverici (xVaria)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: Varia"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

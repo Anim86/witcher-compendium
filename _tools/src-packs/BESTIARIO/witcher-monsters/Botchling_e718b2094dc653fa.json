@@ -87,7 +87,12 @@
             "threat": "Medio Complesso",
             "reward": 600,
             "monsterType": "CursedOne",
-            "difficulty": "MEDIUM"
+            "difficulty": "MEDIUM",
+            "height": "",
+            "weight": "",
+            "environment": "",
+            "organization": "",
+            "vulnerability": ""
         },
         "derivedStats": {
             "rec": {
@@ -114,11 +119,17 @@
                 "unmodifiedMax": 0
             }
         },
-        "description": "<p>I botchling sono creature spaventose, neonati sepolti in fretta o abbandonati. Pur nutrendosi del sangue di donne gravide e di altri neonati non è facile farli adirare e raramente attaccano i passanti senza provocazione. Quando è necessario affrontarne uno bisogna essere cauti, perché quando un botchling si sente minacciato si trasforma, diventando più grande e pericoloso, simile a un alghoul. In questa forma può estroflettere spine capaci di danneggiare armi e persone.</p>",
+        "description": "<p>Ugh… se potessi passare il resto della mia vita senza pensare ai botchling sarei un nano felice. Vedi, quando un bambino nasce da una madre che non lo ama, viene gettato via, o peggio, diventa un botchling. Sono piccole creature deformi che odiano tutto e bevono il sangue di donne gravide e bebè. Anche se tu avessi il fegato per provare ad ammazzarlo, è fottutamente veloce e più forte di quanto meriterebbe. – Rodolf Kazmer</p>",
         "sourcebook": "DW 48",
         "monsterType": "CursedOne",
         "difficulty": "MEDIUM",
-        "bounty": 600
+        "bounty": 600,
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "organization": "",
+        "intelligence": "",
+        "vulnerability": ""
     },
     "items": [],
     "_id": "e718b2094dc653fa",

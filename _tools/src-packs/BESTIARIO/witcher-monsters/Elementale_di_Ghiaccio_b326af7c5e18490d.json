@@ -84,7 +84,12 @@
             "threat": "Difficile Complesso",
             "reward": 1600,
             "monsterType": "Elementa",
-            "difficulty": "MEDIUM"
+            "difficulty": "MEDIUM",
+            "height": "",
+            "weight": "",
+            "environment": "",
+            "organization": "",
+            "vulnerability": ""
         },
         "derivedStats": {
             "rec": {
@@ -111,11 +116,17 @@
                 "unmodifiedMax": 0
             }
         },
-        "description": "<p>I maghi evocano raramente gli elementali di ghiaccio, se non in luoghi che ne esaltano le capacità. Sono lenti e pesanti, ma i loro pugni possono congelare un nemico sul posto. Possono anche colpire il terreno per far emergere lame di ghiaccio frastagliate. Chi tiene alla propria vita dovrebbe restare lontano dai laghi gelati di alta montagna.</p><p>“Ci sono alcuni elementali del ghiaccio sulle Montagne del Drago. Sembra che i picchi innevati creino un'eccellente confluenza di ma- gia dell'acqua. Quando non vengono evocati con uno scopo preciso queste incarnazioni di forza magica sono divertenti da osservare.” – Erland di Larvik</p>",
+        "description": "<p>Una donna saggia del Mag Turga mi ha detto che si formano dai laghi gelati montani e calano a valle in cerca di luoghi di potere che li rendano più forti. Potresti pensare che basti scioglierli con il fuoco, ma sono parecchio robusti. Possono bucare una lastra d'acciaio con un pugno, evocare schegge di ghiaccio e roba simile. – Rodolf Kazmer</p>",
         "sourcebook": "DW 78",
         "monsterType": "Elementa",
         "difficulty": "MEDIUM",
-        "bounty": 1600
+        "bounty": 1600,
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "organization": "",
+        "intelligence": "",
+        "vulnerability": ""
     },
     "items": [],
     "_id": "b326af7c5e18490d",

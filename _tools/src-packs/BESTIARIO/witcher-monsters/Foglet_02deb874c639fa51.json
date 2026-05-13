@@ -87,7 +87,12 @@
             "threat": "Medio Arduo",
             "reward": 800,
             "monsterType": "Necrophage",
-            "difficulty": "MEDIUM"
+            "difficulty": "MEDIUM",
+            "height": "",
+            "weight": "",
+            "environment": "",
+            "organization": "",
+            "vulnerability": ""
         },
         "derivedStats": {
             "rec": {
@@ -114,11 +119,17 @@
                 "unmodifiedMax": 0
             }
         },
-        "description": "<p>La nebbia è pericolosa per i viaggiatori, ma mai quanto le luci al suo interno. Il corpo di un foglet brilla debolmente, attirando i viaggiatori verso il loro destino: essere smembrati da lunghi artigli ricurvi. Finché rimane in un banco di nebbia un foglet è una seria minaccia. Può scomparire, creare illusioni dietro cui nascondersi, diventare invisibile e creare copie di sé stesso, che svaniscono se colpite. Quando un foglet colpisce ritorna visibile per un attimo, permettendo di contrattaccare.</p>",
+        "description": "<p>Foglet? Fogler? Sentite entrambe, credo sia solo dialetto! Eh, comunque non ho mai avuto la fortuna di vederne uno. Dicono che infestino le paludi sulle le rive del Pontar e dello Yaruga, ma se è vero devono essere molto silenziosi. C'è un vecchio racconto popolare che ho sentito a Verden: dicono che i foglet arrivano con la nebbia e si nascondono al suo interno! Se ti capita di veder calare un banco di nebbia di notte, pianta i piedi e stai fermo. I foglet possono farti vedere cose nella nebbia. Se proprio devi continuare a muoverti lavati gli occhi con acqua di palude. – Rodolf Kazmer</p>",
         "sourcebook": "DW 20",
         "monsterType": "Necrophage",
         "difficulty": "MEDIUM",
-        "bounty": 800
+        "bounty": 800,
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "organization": "",
+        "intelligence": "",
+        "vulnerability": ""
     },
     "items": [],
     "_id": "02deb874c639fa51",

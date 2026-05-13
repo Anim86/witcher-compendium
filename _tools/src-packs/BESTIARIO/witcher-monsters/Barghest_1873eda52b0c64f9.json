@@ -81,7 +81,12 @@
             "threat": "Facile Complesso",
             "reward": 30,
             "monsterType": "Specter",
-            "difficulty": "MEDIUM"
+            "difficulty": "MEDIUM",
+            "height": "",
+            "weight": "",
+            "environment": "",
+            "organization": "",
+            "vulnerability": ""
         },
         "derivedStats": {
             "rec": {
@@ -108,11 +113,17 @@
                 "unmodifiedMax": 0
             }
         },
-        "description": "<p>Contrariamente alle credenze comuni, i barghest non sono un castigo divino inviato a persegui- tare i peccatori e punirli durante la Caccia Selvaggia. In realtà non hanno legami con la Caccia Selvaggia e nascono, come molte altre maledizioni, da una concentrazione di intento malevolo. Mentre alcuni perseguitano una singola creatura, altri non hanno un bersaglio preciso, di solito perché si manifestano come effetto secondario di una maledizione.</p><p>'Alcuni barghest si manifestano spontaneamente – soprattutto nei luoghi di grande sofferenza – ma sono molti di più quelli evocati da singole persone in momenti di grande dolore. Ricordo una caccia a Cidaris, alcuni secoli fa, che spiega molto bene la differenza. Ero stato ingaggiato per proteggere un cavaliere da un branco di barghest, che perseguitava lui e la sua tenuta ogni notte.' – Erland di Larvik</p>",
+        "description": "<p>Alcuni dicono che i barghest sono i segugi della Caccia Selvaggia, cani normali trasformati da una male- dizione. I preti ti vorranno far credere che sono un castigo divino, inviato per fare a pezzi i peccatori. Non so quale sia la verità. Eh, tutto quel che so è che girano in branchi e faresti bene ad avere un'armatura robusta, perché se il loro morso non basta a stenderti ti daranno fuoco per bruciarti vivo. – Rodolf Kazmer</p>",
         "sourcebook": "DW 26",
         "monsterType": "Specter",
         "difficulty": "MEDIUM",
-        "bounty": 30
+        "bounty": 30,
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "organization": "",
+        "intelligence": "",
+        "vulnerability": ""
     },
     "items": [],
     "_id": "1873eda52b0c64f9",

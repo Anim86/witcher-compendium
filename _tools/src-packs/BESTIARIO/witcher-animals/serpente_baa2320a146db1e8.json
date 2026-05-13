@@ -52,37 +52,25 @@
             }
         },
         "skills": {
-            "accortezza": {
-                "value": 5
-            },
-            "atletica": {
-                "value": 4
-            },
-            "coraggio": {
-                "value": 5
-            },
-            "eludere": {
-                "value": 5
-            },
-            "mischia": {
-                "value": 6
-            },
-            "nascondersi": {
-                "value": 9
-            },
-            "sopravvivenza": {
-                "value": 2
-            },
-            "tempra": {
-                "value": 4
-            }
+            "int": {},
+            "ref": {},
+            "dex": {},
+            "body": {},
+            "emp": {},
+            "cra": {},
+            "will": {}
         },
         "details": {
-            "biography": "<p>I serpenti sono predatori silenziosi, comuni in molti climi del Continente. Alcune specie sono innocue, ma molte possiedono veleni letali che possono uccidere un uomo in pochi minuti.</p>",
-            "threat": "Bassa",
-            "reward": "—",
+            "biography": "<p></p>",
+            "threat": "",
+            "reward": 0,
             "monsterType": "Beast",
-            "difficulty": "EASY"
+            "difficulty": "",
+            "height": "",
+            "weight": "",
+            "environment": "",
+            "organization": "",
+            "vulnerability": ""
         },
         "derivedStats": {
             "hp": {
@@ -106,14 +94,14 @@
                 "unmodifiedMax": 2
             },
             "stun": {
-                "value": 2,
-                "max": 2,
-                "unmodifiedMax": 2
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
             },
             "resolve": {
-                "value": 15,
-                "max": 15,
-                "unmodifiedMax": 15
+                "value": 18,
+                "max": 18,
+                "unmodifiedMax": 18
             },
             "woundTreshold": {
                 "value": 2,
@@ -121,20 +109,33 @@
                 "unmodifiedMax": 2
             }
         },
-        "description": "<p>I serpenti sono predatori silenziosi, comuni in molti climi del Continente. Alcune specie sono innocue, ma molte possiedono veleni letali che possono uccidere un uomo in pochi minuti.</p>",
+        "description": "<p></p>",
         "sourcebook": "MB 313",
         "monsterType": "Beast",
-        "difficulty": "EASY"
+        "difficulty": "EASY",
+        "armorHead": 0,
+        "armorUpper": 0,
+        "armorLower": 0,
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "intelligence": "",
+        "organization": "",
+        "common": "",
+        "academicKnowledge": "",
+        "bounty": 0,
+        "vulnerability": ""
     },
     "items": [
         {
+            "_id": "2d315387577b440a",
             "name": "Morso",
             "type": "weapon",
-            "img": "icons/svg/sword.svg",
+            "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
             "system": {
-                "damage": "1d6",
+                "description": "Veleno (75%)",
+                "damage": "",
                 "accuracy": 0,
-                "type": "P",
                 "effects": "Veleno (75%)"
             },
             "_stats": {
@@ -143,23 +144,12 @@
             }
         },
         {
-            "name": "[Capacità] Ferale",
-            "type": "note",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "_id": "dcdde5ebac9148c7",
+            "name": "Estratto di Veleno (x1d6/2)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "<p>Grazie ai suoi istinti un serpente possiede INT 7 ai fini delle prove di Accortezza e Sopravvivenza.</p>"
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "name": "[Capacità] Nuoto",
-            "type": "note",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-            "system": {
-                "description": "<p>Un serpente può nuotare alla propria normale VEL e usare Eludere per schivare sott'acqua.</p>"
+                "description": "Quantità: 1d6/2"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

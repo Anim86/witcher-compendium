@@ -11,19 +11,19 @@
                 "unmodifiedMax": 1
             },
             "ref": {
-                "value": 7,
-                "max": 7,
-                "unmodifiedMax": 7
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
             },
             "dex": {
-                "value": 3,
-                "max": 3,
-                "unmodifiedMax": 3
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
             },
             "body": {
-                "value": 15,
-                "max": 15,
-                "unmodifiedMax": 15
+                "value": 13,
+                "max": 13,
+                "unmodifiedMax": 13
             },
             "spd": {
                 "value": 4,
@@ -41,9 +41,9 @@
                 "unmodifiedMax": 1
             },
             "will": {
-                "value": 10,
-                "max": 10,
-                "unmodifiedMax": 10
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
             },
             "luck": {
                 "value": 0,
@@ -52,34 +52,25 @@
             }
         },
         "skills": {
-            "accortezza": {
-                "value": 8
-            },
-            "atletica": {
-                "value": 2
-            },
-            "eludere": {
-                "value": 4
-            },
-            "nascondersi": {
-                "value": 2
-            },
-            "rissa": {
-                "value": 5
-            },
-            "sopravvivenza": {
-                "value": 4
-            },
-            "tempra": {
-                "value": 10
-            }
+            "int": {},
+            "ref": {},
+            "dex": {},
+            "body": {},
+            "emp": {},
+            "cra": {},
+            "will": {}
         },
         "details": {
-            "biography": "<p>I golem sono gli unici mostri artificiali che conosco. Dicono che siano costruiti con il potere degli elementi e animati con le anime dei morti. – Rodolf Kazmer</p><p>I golem sono creature estremamente semplici, eppure incredibilmente pericolose. Il tipico esemplare è stato creato da un mago per proteggersi, come forza lavoro o per sorvegliare qualcosa d'importante. I golem seguono gli ordini alla lettera… per sempre.</p>",
-            "threat": "Ardua",
-            "reward": 1500,
+            "biography": "<p>Costrutti di pietra ed argilla creati dai maghi come sentinelle eterne. Seguono instancabilmente i loro ordini ma sono del tutto incapaci di raziocinio indipendente.</p>",
+            "threat": "Difficile",
+            "reward": 1200,
             "monsterType": "Elementa",
-            "difficulty": "MEDIUM"
+            "difficulty": "SEMPLICE",
+            "height": "Circa 2,5 m",
+            "weight": "Circa 900 Kg",
+            "environment": "Rovine e torri dei maghi",
+            "organization": "Solitario",
+            "vulnerability": ""
         },
         "derivedStats": {
             "vigor": {
@@ -88,51 +79,64 @@
                 "unmodifiedMax": 0
             },
             "rec": {
-                "value": 10,
-                "max": 10,
-                "unmodifiedMax": 10
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
             },
             "resolve": {
-                "value": 50,
-                "max": 50,
-                "unmodifiedMax": 50
+                "value": 12,
+                "max": 12,
+                "unmodifiedMax": 12
             },
             "stun": {
-                "value": 10,
-                "max": 10
+                "value": 2,
+                "max": 2,
+                "unmodifiedMax": 2
             },
             "woundTreshold": {
-                "value": 10,
-                "max": 10
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
             },
             "hp": {
-                "value": 50,
-                "max": 50,
-                "unmodifiedMax": 50
+                "value": 80,
+                "max": 80,
+                "unmodifiedMax": 80
             },
             "sta": {
-                "value": 50,
-                "max": 50,
-                "unmodifiedMax": 50
+                "value": 40,
+                "max": 40,
+                "unmodifiedMax": 40
             }
         },
-        "description": "<p>I golem sono gli unici mostri artificiali che conosco. Dicono che siano costruiti con il potere degli elementi e animati con le anime dei morti. – Rodolf Kazmer</p><p>I golem sono creature estremamente semplici, eppure incredibilmente pericolose. Il tipico esemplare è stato creato da un mago per proteggersi, come forza lavoro o per sorvegliare qualcosa d'importante. I golem seguono gli ordini alla lettera… per sempre.</p>",
+        "description": "<p>Costrutti di pietra ed argilla creati dai maghi come sentinelle eterne. Seguono instancabilmente i loro ordini ma sono del tutto incapaci di raziocinio indipendente.</p>",
         "sourcebook": "MB 299",
         "monsterType": "Elementa",
         "difficulty": "MEDIUM",
-        "bounty": 1500
+        "bounty": 1200,
+        "armorHead": 20,
+        "armorUpper": 20,
+        "armorLower": 20,
+        "height": "Circa 2,5 m",
+        "weight": "Circa 900 Kg",
+        "environment": "Rovine e torri dei maghi",
+        "intelligence": "Incapace di pensiero",
+        "organization": "Solitario",
+        "common": "",
+        "academicKnowledge": "",
+        "vulnerability": ""
     },
     "items": [
         {
-            "_id": "g1",
+            "_id": "c698931a142c48b4",
             "name": "Pugni",
             "type": "weapon",
-            "img": "icons/svg/sword.svg",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
-                "description": "",
-                "damage": "8d6",
+                "description": "Danni massicci a scudi ed armi",
+                "damage": "",
                 "accuracy": 0,
-                "effects": "Ablativo"
+                "effects": "Danni massicci a scudi ed armi"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -140,25 +144,38 @@
             }
         },
         {
-            "_id": "g2",
-            "name": "[Capacità] Forza Distruttiva",
-            "type": "note",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-            "system": {
-                "description": "<p>I colpi non possono essere parati e causano doppio danno ablativo.</p>"
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "g3",
+            "_id": "83e622e8c7b248cd",
             "name": "[Capacità] Carica",
             "type": "note",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Può caricare se l'avversario è oltre 10m. -4 precisione, 10d6 danni, sbalzo 8m.</p>"
+                "description": "<p>Se un avversario si allontana di oltre 10m, può caricare infliggendo danni massicci (10d6) e scaraventando indietro la vittima di 8m.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "31b3439b86b443bb",
+            "name": "Cuore di Golem (x1)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 1"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "658be52a29c54200",
+            "name": "Polvere Infusa (x1d6)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 1d6"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

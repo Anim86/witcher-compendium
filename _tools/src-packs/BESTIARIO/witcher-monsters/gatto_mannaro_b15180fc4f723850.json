@@ -4,13 +4,264 @@
     "type": "character",
     "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/gatto_mannaro.webp",
     "system": {
-        "description": "<p>Terianteropo nato da una terribile maledizione. Silenzioso e feroce nelle foreste o nei vicoli cittadini.</p>",
-        "sourcebook": "MS"
+        "description": "<p>Individui maledetti per crimini atroci, diventano bestie feline agili e letali in preda a una sadica sete di sangue.</p>",
+        "sourcebook": "MS",
+        "stats": {
+            "int": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "ref": {
+                "value": 9,
+                "max": 9,
+                "unmodifiedMax": 9
+            },
+            "dex": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "body": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "spd": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "emp": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "cra": {
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
+            },
+            "will": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "skills": {
+            "int": {},
+            "ref": {
+                "dodge": {
+                    "value": 7,
+                    "isVisible": true
+                }
+            },
+            "dex": {
+                "athletics": {
+                    "value": 10,
+                    "isVisible": true
+                }
+            },
+            "body": {},
+            "emp": {},
+            "cra": {},
+            "will": {}
+        },
+        "derivedStats": {
+            "woundTreshold": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "resolve": {
+                "value": 30,
+                "max": 30,
+                "unmodifiedMax": 30
+            },
+            "stun": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "sta": {
+                "value": 25,
+                "max": 25,
+                "unmodifiedMax": 25
+            },
+            "rec": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "hp": {
+                "value": 50,
+                "max": 50,
+                "unmodifiedMax": 50
+            },
+            "vigor": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "details": {
+            "biography": "<p>Individui maledetti per crimini atroci, diventano bestie feline agili e letali in preda a una sadica sete di sangue.</p>",
+            "threat": "Medio",
+            "difficulty": "COMPLESSO",
+            "reward": 500,
+            "height": "Circa 2 m",
+            "weight": "100 Kg",
+            "environment": "Foreste o insediamenti umani",
+            "organization": "Solitario",
+            "vulnerability": ""
+        },
+        "armorHead": 6,
+        "armorUpper": 6,
+        "armorLower": 6,
+        "height": "Circa 2 m",
+        "weight": "100 Kg",
+        "environment": "Foreste o insediamenti umani",
+        "intelligence": "Umana (Sadica)",
+        "organization": "Solitario",
+        "common": "",
+        "academicKnowledge": "",
+        "bounty": 500,
+        "vulnerability": ""
     },
     "effects": [],
     "flags": {},
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
         "coreVersion": 14
-    }
+    },
+    "items": [
+        {
+            "_id": "5389f0d0400244b7",
+            "name": "Morso",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
+            "system": {
+                "description": "Bilanciato, Sang. (25%)",
+                "damage": "",
+                "accuracy": 0,
+                "effects": "Bilanciato, Sang. (25%)"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "bbe30f231763463a",
+            "name": "Artigli",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
+            "system": {
+                "description": "Bilanciato",
+                "damage": "",
+                "accuracy": 0,
+                "effects": "Bilanciato"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "116b3301de184abc",
+            "name": "[Capacità] Rigenerazione",
+            "type": "note",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "<p>Guarisce di 3 PS per Round.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "564f8fa302ee49a2",
+            "name": "[Capacità] Scatto",
+            "type": "note",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "<p>Può balzare fino a 6m senza rincorsa.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "83b058f860c944ac",
+            "name": "[Capacità] Senso Magico",
+            "type": "note",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "<p>Molto sensibile alla magia entro 20m.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "180bd5b5010c4995",
+            "name": "[Capacità] Alleati Felini",
+            "type": "note",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "<p>Comunica e si allea con grandi felini naturali.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "e72d7cdf02c74482",
+            "name": "Denti di Gatto Mannaro (x1d6/2)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 1d6/2"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "c4d21aea18c84674",
+            "name": "Quintessenza (x1d6/2)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 1d6/2"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "80e7f48ae2e34766",
+            "name": "Oggetti Comuni (x1d6)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 1d6"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        }
+    ]
 }

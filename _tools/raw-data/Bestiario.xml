@@ -1,0 +1,3076 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bestiario>
+	<!-- ================= UMANOIDI E PNG ================= -->
+<SchedaMostro>
+        <Nome>Contrabbandiere</Nome>
+        <InformazioniGenerali>
+            <Descrizione>I contrabbandieri trafficano merci illegalmente, spesso per evitare i pedaggi o per rifornire la resistenza oltre le linee nemiche. Sono maestri nell'evitare le pattuglie e nascondere il carico.</Descrizione>
+            <Altezza>Normale umana</Altezza>
+            <Peso>Normale umano</Peso>
+            <Ambiente>Strade, confini, porti e nascondigli</Ambiente>
+            <Intelligenza>Umana</Intelligenza>
+            <Organizzazione>Solitario o in piccoli gruppi (Spesso legati a sindacati o Havekar)</Organizzazione>
+        </InformazioniGenerali>
+        <LivelloDiMinaccia>
+            <Categoria>Facile</Categoria>
+            <Complessita>Semplice</Complessita>
+        </LivelloDiMinaccia>
+        <Ricompensa valuta="Corone">10</Ricompensa>
+        <Lore>
+            <SuperstizioneComune abilita="Istruzione" cd="8">
+                <Fonte>Rodolf Kazmer</Fonte>
+                <Testo>Coi ladri è abbastanza facile trattare, e tornano sempre utili. Scassinatori, borsaioli, topi d'appartamento, non ne trovi di migliori quando si tratta di entrare a forza. Ma i capibanda il cui mestiere è dedicarsi al crimine in generale... sono gli unici dai quali bisogna guardarsi, sempre a cercare la situazione migliore per loro.</Testo>
+            </SuperstizioneComune>
+            <ConoscenzaAccademica abilita="Istruzione" cd="12">
+                <Testo>I contrabbandieri sono criminali specializzati. Sanno come eludere i controlli ai confini e hanno sempre armi ben nascoste o balestrini compatti per tirarsi fuori dai guai in fretta senza dare nell'occhio.</Testo>
+            </ConoscenzaAccademica>
+        </Lore>
+        <Statistiche><INT>7</INT><RIF>8</RIF><DES>6</DES><FIS>5</FIS><VEL>6</VEL><EMP>5</EMP><MAN>4</MAN><VOL>5</VOL><FOR>0</FOR></Statistiche>
+        <StatisticheDerivate><GRI>5</GRI><COR>18</COR><BAL>3</BAL><RES>25</RES><ING>50</ING><REC>5</REC><PS>25</PS><VIGORE>0</VIGORE></StatisticheDerivate>
+        <Combattimento>
+            <Armatura>5</Armatura>
+            <BasiDiAbilita>
+                <Accortezza>14</Accortezza>
+                <Atletica>12</Atletica>
+                <Coraggio>12</Coraggio>
+                <Falsificare>13</Falsificare>
+                <Inganno>15</Inganno>
+                <Intimidire>10</Intimidire>
+                <Nascondersi>15</Nascondersi>
+                <Prestanza>10</Prestanza>
+                <RapiditaDiMano>14</RapiditaDiMano>
+                <ResistereACoercizione>13</ResistereACoercizione>
+                <ResistereAllaMagia>12</ResistereAllaMagia>
+                <Rissa>11</Rissa>
+                <Sopravvivenza>10</Sopravvivenza>
+                <Tempra>10</Tempra>
+                <Schivare>13</Schivare>
+                <Riposizionare>11</Riposizionare>
+                <Bloccare>10</Bloccare>
+            </BasiDiAbilita>
+            <Armi>
+                <Arma>
+                    <Nome>Balestrino</Nome>
+                    <DAN>2d6+2</DAN>
+                    <Effetti>PA +1, Gittata 50m, Ricarica Lenta</Effetti>
+                    <NumeroAttacchi>1</NumeroAttacchi>
+                </Arma>
+                <Arma>
+                    <Nome>Stiletto</Nome>
+                    <DAN>1d6</DAN>
+                    <Effetti>PA +2, Occultabile</Effetti>
+                    <NumeroAttacchi>1</NumeroAttacchi>
+                </Arma>
+            </Armi>
+        </Combattimento>
+        <Vulnerabilita>
+            <Elemento>Veleno dell'Impiccato</Elemento>
+        </Vulnerabilita>
+        <Immunita></Immunita>
+        <Capacita>
+            <Tratto>
+                <Nome>Abile a Nascondere</Nome>
+                <Descrizione>Ottiene un bonus di +2 alle Prove di Rapidità di Mano per occultare oggetti che pesano 1kg o meno.</Descrizione>
+            </Tratto>
+            <Tratto>
+                <Nome>Paranoico Esperto</Nome>
+                <Descrizione>Può tirare su Paranoico Esperto contro il tiro di Nascondersi di chi è in agguato per individuare imboscate e trappole entro 10m. Se fallisce avverte comunque una strana sensazione che gli fornisce +2 per evitare la trappola o riduce il bonus di chi lo imboscata da +5 a +3.</Descrizione>
+            </Tratto>
+        </Capacita>
+        <Bottino>
+            <Oggetto><Nome>Corone</Nome><Quantita>3d10</Quantita></Oggetto>
+            <Oggetto><Nome>Acciarino</Nome><Quantita>1</Quantita></Oggetto>
+            <Oggetto><Nome>Brache Imbottite</Nome><Quantita>1</Quantita></Oggetto>
+            <Oggetto><Nome>Cappuccio a Doppia Trama</Nome><Quantita>1</Quantita></Oggetto>
+            <Oggetto><Nome>Dardi da Balestra</Nome><Quantita>10</Quantita></Oggetto>
+            <Oggetto><Nome>Gambesone Aedirniano</Nome><Quantita>1</Quantita></Oggetto>
+            <Oggetto><Nome>Lanterna Schermata</Nome><Quantita>1</Quantita></Oggetto>
+            <Oggetto><Nome>Sacca da Viaggio (con 2 Tasche Segrete)</Nome><Quantita>1</Quantita></Oggetto>
+            <Oggetto><Nome>Oggetti Comuni</Nome><Quantita>1d6</Quantita></Oggetto>
+        </Bottino>
+    </SchedaMostro>
+	<SchedaMostro>
+		<Nome>Bandito</Nome>
+		<InformazioniGenerali>
+			<Descrizione>Banditi, disertori, rinnegati o semplici criminali spinti dalla fame o dalla paura. Formano le minacce più comuni lungo le strade.</Descrizione>
+			<Altezza>Normale umana</Altezza>
+			<Peso>Normale umano</Peso>
+			<Ambiente>Vicino a città o strade maestre</Ambiente>
+			<Intelligenza>Umana</Intelligenza>
+			<Organizzazione>Bande da 3 a 5</Organizzazione>
+		</InformazioniGenerali>
+		<LivelloDiMinaccia>
+			<Categoria>Facile</Categoria>
+			<Complessita>Semplice</Complessita>
+		</LivelloDiMinaccia>
+		<Ricompensa valuta="Corone">10</Ricompensa>
+		<Lore>
+			<SuperstizioneComune abilita="Istruzione"
+			                     cd="8">
+				<Fonte>Rodolf Kazmer</Fonte>
+				<Testo>Eh, banditi, disertori, rinnegati, figli di puttana, comunque li volete chiamare. Dicono che la gente si dà al crimine per denaro o potere, ma di solito è perché ha fame o paura.</Testo>
+			</SuperstizioneComune>
+			<ConoscenzaAccademica abilita="Istruzione"
+			                      cd="10">
+				<Testo>I banditi sono una delle minacce più comuni lungo le strade. La maggioranza è formata da soldati senza esercito, mercenari senza contratto o disertori. Spesso si arrendono se subiscono abbastanza danni.</Testo>
+			</ConoscenzaAccademica>
+		</Lore>
+		<Statistiche>
+			<INT>3</INT>
+			<RIF>6</RIF>
+			<DES>5</DES>
+			<FIS>5</FIS>
+			<VEL>4</VEL>
+			<EMP>3</EMP>
+			<MAN>4</MAN>
+			<VOL>4</VOL>
+			<FOR>0</FOR>
+		</Statistiche>
+		<StatisticheDerivate>
+			<GRI>4</GRI>
+			<COR>12</COR>
+			<BAL>2</BAL>
+			<RES>20</RES>
+			<ING>50</ING>
+			<REC>4</REC>
+			<PS>20</PS>
+			<VIGORE>0</VIGORE>
+		</StatisticheDerivate>
+		<Combattimento>
+			<Armatura>5</Armatura>
+			<BasiDiAbilita>
+				<Schivare>12</Schivare>
+				<Riposizionare>13</Riposizionare>
+				<Bloccare>10</Bloccare>
+			</BasiDiAbilita>
+			<Armi>
+				<Arma>
+					<Nome>Spada/Mazza/Ascia Improvvisata</Nome>
+					<DAN>2d6</DAN>
+					<Effetti>N/A</Effetti>
+					<NumeroAttacchi>1</NumeroAttacchi>
+				</Arma>
+			</Armi>
+		</Combattimento>
+		<Vulnerabilita>
+			<Elemento>Veleno dell'Impiccato</Elemento>
+		</Vulnerabilita>
+		<Immunita/>
+		<Capacita/>
+		<Bottino>
+			<Oggetto>
+				<Nome>Corone</Nome>
+				<Quantita>1d10</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Oggetti Comuni</Nome>
+				<Quantita>1d6</Quantita>
+			</Oggetto>
+		</Bottino>
+	</SchedaMostro>
+	<SchedaMostro>
+		<Nome>Mago</Nome>
+		<InformazioniGenerali>
+			<Descrizione>Incantatori addestrati o reietti, capaci di imbrigliare le forze magiche e lanciare incantesimi mortali.</Descrizione>
+			<Altezza>Normale umana</Altezza>
+			<Peso>Normale umano</Peso>
+			<Ambiente>Città o torri isolate</Ambiente>
+			<Intelligenza>Umana</Intelligenza>
+			<Organizzazione>Di solito solitario</Organizzazione>
+		</InformazioniGenerali>
+		<LivelloDiMinaccia>
+			<Categoria>Medio</Categoria>
+			<Complessita>Semplice</Complessita>
+		</LivelloDiMinaccia>
+		<Ricompensa valuta="Corone">100</Ricompensa>
+		<Lore>
+			<SuperstizioneComune abilita="Istruzione"
+			                     cd="12">
+				<Fonte>Rodolf Kazmer</Fonte>
+				<Testo>I maghi, o incantatori se si vuole essere rispettosi, sono parecchio interessanti. Possono sfruttare le forze magiche e usarle per lanciare incantesimi. Questo è quello che qualsiasi bastardo vi può dire. Tutto il resto sono leggende e favole.</Testo>
+			</SuperstizioneComune>
+		</Lore>
+		<Statistiche>
+			<INT>7</INT>
+			<RIF>7</RIF>
+			<DES>6</DES>
+			<FIS>5</FIS>
+			<VEL>5</VEL>
+			<EMP>4</EMP>
+			<MAN>5</MAN>
+			<VOL>8</VOL>
+			<FOR>0</FOR>
+		</Statistiche>
+		<StatisticheDerivate>
+			<GRI>7</GRI>
+			<COR>15</COR>
+			<BAL>3</BAL>
+			<RES>30</RES>
+			<ING>50</ING>
+			<REC>7</REC>
+			<PS>30</PS>
+			<VIGORE>10</VIGORE>
+		</StatisticheDerivate>
+		<Combattimento>
+			<Armatura>0</Armatura>
+			<BasiDiAbilita>
+				<Accortezza>7</Accortezza>
+				<ArmiInAsta>6</ArmiInAsta>
+				<Atletica>5</Atletica>
+				<Coraggio>6</Coraggio>
+				<Eludere>8</Eludere>
+				<IntessereFatture>6</IntessereFatture>
+				<LanciareIncantesimi>7</LanciareIncantesimi>
+				<Nascondersi>5</Nascondersi>
+				<OfficiareRituali>5</OfficiareRituali>
+				<ResistereACoercizioni>7</ResistereACoercizioni>
+				<ResistereAllaMagia>7</ResistereAllaMagia>
+				<Sopravvivenza>5</Sopravvivenza>
+				<Tempra>5</Tempra>
+			</BasiDiAbilita>
+			<Armi>
+				<Arma>
+					<Nome>Bastone</Nome>
+					<DAN>1d6+2</DAN>
+					<Effetti>Portata, Focus (1)</Effetti>
+					<NumeroAttacchi>1</NumeroAttacchi>
+				</Arma>
+			</Armi>
+		</Combattimento>
+		<Vulnerabilita>
+			<Elemento>Veleno dell'Impiccato</Elemento>
+			<Elemento>Dimeritium</Elemento>
+		</Vulnerabilita>
+		<Immunita/>
+		<Capacita/>
+		<Bottino>
+			<Oggetto>
+				<Nome>Corone</Nome>
+				<Quantita>2d10</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Formula o Schema Casuale</Nome>
+				<Quantita>1</Quantita>
+			</Oggetto>
+		</Bottino>
+	</SchedaMostro>
+	<SchedaMostro>
+		<Nome>Arciere Scoia'tael</Nome>
+		<InformazioniGenerali>
+			<Descrizione>Ribelli elfici e nanici spinti nei boschi, maestri di guerriglia e imboscate. Letali dalla distanza.</Descrizione>
+			<Altezza>Normale umana</Altezza>
+			<Peso>Normale umano</Peso>
+			<Ambiente>Selve o vicino alle strade maestre</Ambiente>
+			<Intelligenza>Umana</Intelligenza>
+			<Organizzazione>Commando da 3 a 15</Organizzazione>
+		</InformazioniGenerali>
+		<LivelloDiMinaccia>
+			<Categoria>Facile</Categoria>
+			<Complessita>Complesso</Complessita>
+		</LivelloDiMinaccia>
+		<Ricompensa valuta="Corone">20</Ricompensa>
+		<Lore>
+			<SuperstizioneComune abilita="Istruzione"
+			                     cd="10">
+				<Fonte>Rodolf Kazmer</Fonte>
+				<Testo>Una volta avevano uno scopo, combattevano per la libertà. Adesso sono solo dei pazzi vendicativi, che vogliono morire in una fiammata di gloria.</Testo>
+			</SuperstizioneComune>
+			<ConoscenzaAccademica abilita="Istruzione"
+			                      cd="14">
+				<Testo>Sono guerriglieri addestrati. Iniziano l'attacco con raffiche di frecce dagli alberi, poi metà dell'unità carica in mischia. Le Sventratrici Elfiche sono riservate ai nemici più odiati.</Testo>
+			</ConoscenzaAccademica>
+		</Lore>
+		<Statistiche>
+			<INT>4</INT>
+			<RIF>6</RIF>
+			<DES>7</DES>
+			<FIS>5</FIS>
+			<VEL>7</VEL>
+			<EMP>3</EMP>
+			<MAN>4</MAN>
+			<VOL>6</VOL>
+			<FOR>0</FOR>
+		</Statistiche>
+		<StatisticheDerivate>
+			<GRI>5</GRI>
+			<COR>21</COR>
+			<BAL>4</BAL>
+			<RES>25</RES>
+			<ING>50</ING>
+			<REC>5</REC>
+			<PS>25</PS>
+			<VIGORE>0</VIGORE>
+		</StatisticheDerivate>
+		<Combattimento>
+			<Armatura>5</Armatura>
+			<BasiDiAbilita>
+				<Accortezza>9</Accortezza>
+				<Archi>8</Archi>
+				<Atletica>7</Atletica>
+				<Coraggio>6</Coraggio>
+				<Eludere>7</Eludere>
+				<LameCorte>6</LameCorte>
+				<Nascondersi>8</Nascondersi>
+				<ResistereACoercizione>6</ResistereACoercizione>
+				<ResistereAllaMagia>4</ResistereAllaMagia>
+				<Rissa>4</Rissa>
+				<Scherma>6</Scherma>
+				<Sopravvivenza>10</Sopravvivenza>
+				<Tempra>7</Tempra>
+			</BasiDiAbilita>
+			<Armi>
+				<Arma>
+					<Nome>Arco Lungo</Nome>
+					<DAN>4d6</DAN>
+					<Effetti>Gittata 200m</Effetti>
+					<NumeroAttacchi>1</NumeroAttacchi>
+				</Arma>
+				<Arma>
+					<Nome>Coltelli da Lancio</Nome>
+					<DAN>1d6</DAN>
+					<Effetti>Gittata 20m</Effetti>
+					<NumeroAttacchi>1</NumeroAttacchi>
+				</Arma>
+				<Arma>
+					<Nome>Falchion da Cacciatore</Nome>
+					<DAN>3d6</DAN>
+					<Effetti>N/A</Effetti>
+					<NumeroAttacchi>1</NumeroAttacchi>
+				</Arma>
+				<Arma>
+					<Nome>Pugnale</Nome>
+					<DAN>1d6+2</DAN>
+					<Effetti>N/A</Effetti>
+					<NumeroAttacchi>1</NumeroAttacchi>
+				</Arma>
+			</Armi>
+		</Combattimento>
+		<Vulnerabilita>
+			<Elemento>Veleno dell'Impiccato</Elemento>
+		</Vulnerabilita>
+		<Immunita/>
+		<Capacita>
+			<Tratto>
+				<Nome>Specialista dell'Imboscata</Nome>
+				<Descrizione>Quando un gruppo di arcieri effettua una prova di Nascondersi, l'intero gruppo usa il singolo tiro più alto tra tutti i membri.</Descrizione>
+			</Tratto>
+		</Capacita>
+		<Bottino>
+			<Oggetto>
+				<Nome>Corone</Nome>
+				<Quantita>1d10</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Munizioni Normali</Nome>
+				<Quantita>30</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Sventratrici Elfiche</Nome>
+				<Quantita>10</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Brache Imbottite</Nome>
+				<Quantita>1</Quantita>
+			</Oggetto>
+		</Bottino>
+	</SchedaMostro>
+	<SchedaMostro>
+		<Nome>Corriere</Nome>
+		<InformazioniGenerali>
+			<Descrizione>Viaggiatori coraggiosi o prezzolati che trasportano messaggi tra città, affrontando selve, mostri e criminali.</Descrizione>
+			<Altezza>Normale umana</Altezza>
+			<Peso>Normale umano</Peso>
+			<Ambiente>Strade, percorsi isolati</Ambiente>
+			<Intelligenza>Senziente</Intelligenza>
+			<Organizzazione>Solitario</Organizzazione>
+		</InformazioniGenerali>
+		<LivelloDiMinaccia>
+			<Categoria>Facile</Categoria>
+			<Complessita>Semplice</Complessita>
+		</LivelloDiMinaccia>
+		<Ricompensa valuta="Corone">0</Ricompensa>
+		<Statistiche>
+			<INT>7</INT>
+			<RIF>7</RIF>
+			<DES>6</DES>
+			<FIS>4</FIS>
+			<VEL>8</VEL>
+			<EMP>5</EMP>
+			<MAN>6</MAN>
+			<VOL>7</VOL>
+			<FOR>0</FOR>
+		</Statistiche>
+		<StatisticheDerivate>
+			<GRI>5</GRI>
+			<COR>24</COR>
+			<BAL>4</BAL>
+			<RES>25</RES>
+			<ING>40</ING>
+			<REC>5</REC>
+			<PS>25</PS>
+			<VIGORE>0</VIGORE>
+		</StatisticheDerivate>
+		<Combattimento>
+			<Armatura>3</Armatura>
+			<BasiDiAbilita>
+				<Schivare>12</Schivare>
+				<Riposizionare>13</Riposizionare>
+				<Bloccare>10</Bloccare>
+			</BasiDiAbilita>
+			<Armi>
+				<Arma>
+					<Nome>Pugnale</Nome>
+					<DAN>1d6+2</DAN>
+					<Effetti>N/A</Effetti>
+					<NumeroAttacchi>1</NumeroAttacchi>
+				</Arma>
+			</Armi>
+		</Combattimento>
+		<Vulnerabilita>
+			<Elemento>Veleno dell'Impiccato</Elemento>
+		</Vulnerabilita>
+		<Immunita/>
+		<Capacita/>
+		<Bottino>
+			<Oggetto>
+				<Nome>Corone</Nome>
+				<Quantita>1d10</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Sacca da Viaggio</Nome>
+				<Quantita>1</Quantita>
+			</Oggetto>
+		</Bottino>
+	</SchedaMostro>
+	<SchedaMostro>
+		<Nome>Scout</Nome>
+		<InformazioniGenerali>
+			<Descrizione>Esploratori abili nel sopravvivere nei boschi. Spesso al servizio di militari, esplorano territori ostili.</Descrizione>
+			<Altezza>Normale umana</Altezza>
+			<Peso>Normale umano</Peso>
+			<Ambiente>Terre selvagge</Ambiente>
+			<Intelligenza>Senziente</Intelligenza>
+			<Organizzazione>Solitario</Organizzazione>
+		</InformazioniGenerali>
+		<LivelloDiMinaccia>
+			<Categoria>Facile</Categoria>
+			<Complessita>Semplice</Complessita>
+		</LivelloDiMinaccia>
+		<Ricompensa valuta="Corone">0</Ricompensa>
+		<Statistiche>
+			<INT>7</INT>
+			<RIF>6</RIF>
+			<DES>7</DES>
+			<FIS>6</FIS>
+			<VEL>6</VEL>
+			<EMP>5</EMP>
+			<MAN>4</MAN>
+			<VOL>6</VOL>
+			<FOR>0</FOR>
+		</Statistiche>
+		<StatisticheDerivate>
+			<GRI>6</GRI>
+			<COR>18</COR>
+			<BAL>3</BAL>
+			<RES>30</RES>
+			<ING>60</ING>
+			<REC>6</REC>
+			<PS>30</PS>
+			<VIGORE>0</VIGORE>
+		</StatisticheDerivate>
+		<Combattimento>
+			<Armatura>5</Armatura>
+			<BasiDiAbilita>
+				<Accortezza>16</Accortezza>
+				<Atletica>15</Atletica>
+				<Coraggio>12</Coraggio>
+				<Sopravvivenza>15</Sopravvivenza>
+			</BasiDiAbilita>
+			<Armi>
+				<Arma>
+					<Nome>Arco Lungo</Nome>
+					<DAN>4d6</DAN>
+					<Effetti>200m</Effetti>
+					<NumeroAttacchi>1</NumeroAttacchi>
+				</Arma>
+				<Arma>
+					<Nome>Accetta</Nome>
+					<DAN>2d6+1</DAN>
+					<Effetti>N/A</Effetti>
+					<NumeroAttacchi>1</NumeroAttacchi>
+				</Arma>
+			</Armi>
+		</Combattimento>
+		<Vulnerabilita>
+			<Elemento>Veleno dell'Impiccato</Elemento>
+		</Vulnerabilita>
+		<Immunita/>
+		<Capacita>
+			<Tratto>
+				<Nome>Frecce a Punta Larga</Nome>
+				<Descrizione>Ha 10 frecce a punta larga. Infliggono Sanguinamento (100%).</Descrizione>
+			</Tratto>
+			<Tratto>
+				<Nome>Segugio</Nome>
+				<Descrizione>+5 a Sopravvivenza per seguire le tracce.</Descrizione>
+			</Tratto>
+		</Capacita>
+		<Bottino>
+			<Oggetto>
+				<Nome>Corone</Nome>
+				<Quantita>1d10</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Frecce</Nome>
+				<Quantita>30</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Giaciglio</Nome>
+				<Quantita>1</Quantita>
+			</Oggetto>
+		</Bottino>
+	</SchedaMostro>
+	<!-- ================= MOSTRI COMUNI E NECROFAGI ================= -->
+	<SchedaMostro>
+		<Nome>Drowner</Nome>
+		<InformazioniGenerali>
+			<Descrizione>Bestiacce anfibie prive di intelletto che vivono per affogare le vittime e mangiarsi i cadaveri.</Descrizione>
+			<Altezza>Normale umana</Altezza>
+			<Peso>Normale umano</Peso>
+			<Ambiente>Vicino a laghi, fiumi e coste</Ambiente>
+			<Intelligenza>Circa quanto un pesce</Intelligenza>
+			<Organizzazione>Gruppi da 3 a 6</Organizzazione>
+		</InformazioniGenerali>
+		<LivelloDiMinaccia>
+			<Categoria>Facile</Categoria>
+			<Complessita>Semplice</Complessita>
+		</LivelloDiMinaccia>
+		<Ricompensa valuta="Corone">10</Ricompensa>
+		<Lore>
+			<SuperstizioneComune abilita="Istruzione"
+			                     cd="14">
+				<Fonte>Rodolf Kazmer</Fonte>
+				<Testo>Le favole raccontano che quando un bastardo abbastanza cattivo muore nell'acqua risorge come drowner.</Testo>
+			</SuperstizioneComune>
+		</Lore>
+		<Statistiche>
+			<INT>1</INT>
+			<RIF>7</RIF>
+			<DES>7</DES>
+			<FIS>6</FIS>
+			<VEL>6</VEL>
+			<EMP>1</EMP>
+			<MAN>1</MAN>
+			<VOL>4</VOL>
+			<FOR>0</FOR>
+		</Statistiche>
+		<StatisticheDerivate>
+			<GRI>5</GRI>
+			<COR>18</COR>
+			<BAL>3</BAL>
+			<RES>25</RES>
+			<ING>60</ING>
+			<REC>5</REC>
+			<PS>25</PS>
+			<VIGORE>0</VIGORE>
+		</StatisticheDerivate>
+		<Combattimento>
+			<Armatura>0</Armatura>
+			<BasiDiAbilita>
+				<Schivare>12</Schivare>
+				<Riposizionare>10</Riposizionare>
+				<Bloccare>15</Bloccare>
+			</BasiDiAbilita>
+			<Armi>
+				<Arma>
+					<Nome>Artigli</Nome>
+					<DAN>2d6+2</DAN>
+					<Effetti>N/A</Effetti>
+					<NumeroAttacchi>1</NumeroAttacchi>
+				</Arma>
+			</Armi>
+		</Combattimento>
+		<Vulnerabilita>
+			<Elemento>Unguento Anti-necrofagi</Elemento>
+		</Vulnerabilita>
+		<Immunita/>
+		<Capacita/>
+		<Bottino>
+			<Oggetto>
+				<Nome>Cervello di Drowner</Nome>
+				<Quantita>1</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Essenza Acquatica</Nome>
+				<Quantita>1</Quantita>
+			</Oggetto>
+		</Bottino>
+	</SchedaMostro>
+	<SchedaMostro>
+		<Nome>Ghoul</Nome>
+		<InformazioniGenerali>
+			<Descrizione>Luridi demoni necrofagi, che si nutrono dei morti sui campi di battaglia e attaccano chiunque si avvicini.</Descrizione>
+			<Altezza>Circa 1,25 metri alla spalla</Altezza>
+			<Peso>Circa 86 Kg</Peso>
+			<Ambiente>Campi di battaglia e cimiteri</Ambiente>
+			<Intelligenza>Circa come un cane</Intelligenza>
+			<Organizzazione>Branchi da 3 a 6</Organizzazione>
+		</InformazioniGenerali>
+		<LivelloDiMinaccia>
+			<Categoria>Facile</Categoria>
+			<Complessita>Complesso</Complessita>
+		</LivelloDiMinaccia>
+		<Ricompensa valuta="Corone">30</Ricompensa>
+		<Statistiche>
+			<INT>1</INT>
+			<RIF>6</RIF>
+			<DES>7</DES>
+			<FIS>6</FIS>
+			<VEL>6</VEL>
+			<EMP>1</EMP>
+			<MAN>1</MAN>
+			<VOL>5</VOL>
+			<FOR>0</FOR>
+		</Statistiche>
+		<StatisticheDerivate>
+			<GRI>5</GRI>
+			<COR>18</COR>
+			<BAL>4</BAL>
+			<RES>25</RES>
+			<ING>60</ING>
+			<REC>5</REC>
+			<PS>25</PS>
+			<VIGORE>0</VIGORE>
+		</StatisticheDerivate>
+		<Combattimento>
+			<Armatura>0</Armatura>
+			<BasiDiAbilita>
+				<Schivare>12</Schivare>
+			</BasiDiAbilita>
+			<Armi>
+				<Arma>
+					<Nome>Artigli</Nome>
+					<DAN>2d6</DAN>
+					<Effetti>N/A</Effetti>
+					<NumeroAttacchi>2</NumeroAttacchi>
+				</Arma>
+			</Armi>
+		</Combattimento>
+		<Vulnerabilita>
+			<Elemento>Unguento Anti-necrofagi</Elemento>
+		</Vulnerabilita>
+		<Immunita/>
+		<Capacita/>
+		<Bottino>
+			<Oggetto>
+				<Nome>Midollo di Ghoul</Nome>
+				<Quantita>1</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Artiglio di Ghoul</Nome>
+				<Quantita>1d6</Quantita>
+			</Oggetto>
+		</Bottino>
+	</SchedaMostro>
+	<!-- ================= BESTIE, MALEDETTI E VAMPIRI ================= -->
+	<SchedaMostro>
+		<Nome>Lupo Mannaro</Nome>
+		<InformazioniGenerali>
+			<Descrizione>Vittime di licantropia, esseri per metà umani e metà lupi, feroci predatori spinti da una furia inesauribile.</Descrizione>
+			<Altezza>Circa 2,5 m</Altezza>
+			<Peso>Circa 136 Kg</Peso>
+			<Ambiente>Foreste o vicino alle comunità</Ambiente>
+			<Intelligenza>Umana</Intelligenza>
+			<Organizzazione>Solitario</Organizzazione>
+		</InformazioniGenerali>
+		<LivelloDiMinaccia>
+			<Categoria>Medio</Categoria>
+			<Complessita>Complesso</Complessita>
+		</LivelloDiMinaccia>
+		<Ricompensa valuta="Corone">500</Ricompensa>
+		<Statistiche>
+			<INT>6</INT>
+			<RIF>8</RIF>
+			<DES>8</DES>
+			<FIS>7</FIS>
+			<VEL>9</VEL>
+			<EMP>1</EMP>
+			<MAN>3</MAN>
+			<VOL>5</VOL>
+			<FOR>0</FOR>
+		</Statistiche>
+		<StatisticheDerivate>
+			<GRI>6</GRI>
+			<COR>27</COR>
+			<BAL>5</BAL>
+			<RES>30</RES>
+			<ING>70</ING>
+			<REC>6</REC>
+			<PS>60</PS>
+			<VIGORE>0</VIGORE>
+		</StatisticheDerivate>
+		<Combattimento>
+			<Armatura>8</Armatura>
+			<BasiDiAbilita/>
+			<Armi>
+				<Arma>
+					<Nome>Artigli</Nome>
+					<DAN>4d6</DAN>
+					<Effetti>N/A</Effetti>
+					<NumeroAttacchi>2</NumeroAttacchi>
+				</Arma>
+				<Arma>
+					<Nome>Morso</Nome>
+					<DAN>5d6</DAN>
+					<Effetti>Sanguinamento</Effetti>
+					<NumeroAttacchi>1</NumeroAttacchi>
+				</Arma>
+			</Armi>
+		</Combattimento>
+		<Vulnerabilita>
+			<Elemento>Unguento Anti-maledetti</Elemento>
+			<Elemento>Bombe Polvere Lunare</Elemento>
+		</Vulnerabilita>
+		<Immunita/>
+		<Capacita>
+			<Tratto>
+				<Nome>Rigenerazione</Nome>
+				<Descrizione>Rigenera 5 PS per round a meno che non si trovi nell'area di una Polvere Lunare.</Descrizione>
+			</Tratto>
+			<Tratto>
+				<Nome>Fiuto</Nome>
+				<Descrizione>Può seguire tracce col fiuto senza penalità.</Descrizione>
+			</Tratto>
+		</Capacita>
+		<Bottino>
+			<Oggetto>
+				<Nome>Saliva di Lupo Mannaro</Nome>
+				<Quantita>1</Quantita>
+			</Oggetto>
+		</Bottino>
+	</SchedaMostro>
+	<SchedaMostro>
+		<Nome>Alp</Nome>
+		<InformazioniGenerali>
+			<Descrizione>Un temibile vampiro capace di assumere forme umanoidi o animali. Possiede un'agilità mortale e una saliva soporifera spaventosa.</Descrizione>
+			<Altezza>Varia</Altezza>
+			<Peso>Varia</Peso>
+			<Ambiente>Vicino a rovine, foreste cupe o città</Ambiente>
+			<Intelligenza>Senziente</Intelligenza>
+			<Organizzazione>Solitario</Organizzazione>
+		</InformazioniGenerali>
+		<LivelloDiMinaccia>
+			<Categoria>Difficile</Categoria>
+			<Complessita>Arduo</Complessita>
+		</LivelloDiMinaccia>
+		<Ricompensa valuta="Corone">2000</Ricompensa>
+		<Statistiche>
+			<INT>6</INT>
+			<RIF>13</RIF>
+			<DES>13</DES>
+			<FIS>10</FIS>
+			<VEL>11</VEL>
+			<EMP>7</EMP>
+			<MAN>5</MAN>
+			<VOL>7</VOL>
+			<FOR>0</FOR>
+		</Statistiche>
+		<StatisticheDerivate>
+			<GRI>8</GRI>
+			<COR>33</COR>
+			<BAL>6</BAL>
+			<RES>40</RES>
+			<ING>100</ING>
+			<REC>8</REC>
+			<PS>80</PS>
+			<VIGORE>0</VIGORE>
+		</StatisticheDerivate>
+		<Combattimento>
+			<Armatura>10</Armatura>
+			<BasiDiAbilita>
+				<Accortezza>16</Accortezza>
+				<Atletica>17</Atletica>
+				<Coraggio>15</Coraggio>
+				<Intimidire>16</Intimidire>
+				<Nascondersi>18</Nascondersi>
+				<ResistereACoercizione>16</ResistereACoercizione>
+				<ResistereAllaMagia>16</ResistereAllaMagia>
+				<Rissa>17</Rissa>
+			</BasiDiAbilita>
+			<Armi>
+				<Arma>
+					<Nome>Morso</Nome>
+					<DAN>5d6</DAN>
+					<Effetti>Saliva Soporifera, Sanguinamento (75%), Succhiare Sangue, Trapassare Migliorato</Effetti>
+					<NumeroAttacchi>1</NumeroAttacchi>
+				</Arma>
+				<Arma>
+					<Nome>Artigli</Nome>
+					<DAN>4d6</DAN>
+					<Effetti>Bilanciata, Trapassare</Effetti>
+					<NumeroAttacchi>2</NumeroAttacchi>
+				</Arma>
+			</Armi>
+		</Combattimento>
+		<Vulnerabilita>
+			<Elemento>Pozione Sangue Nero</Elemento>
+			<Elemento>Fuoco</Elemento>
+			<Elemento>Bombe Polvere Lunare</Elemento>
+			<Elemento>Unguento Anti-Vampiri</Elemento>
+		</Vulnerabilita>
+		<Immunita>
+			<Elemento>Individuazione Magica</Elemento>
+		</Immunita>
+		<Resistenze>
+			<Elemento>Sanguinamento</Elemento>
+			<Elemento>Stordimento</Elemento>
+		</Resistenze>
+		<Capacita>
+			<Tratto>
+				<Nome>Mutaforma Versatile</Nome>
+				<Descrizione>Può trasformarsi in una bella elfa o un cane/gatto, conservando il proprio intelletto.</Descrizione>
+			</Tratto>
+			<Tratto>
+				<Nome>Saliva Soporifera</Nome>
+				<Descrizione>Provoca un sonno profondo (Tempra CD 16 se ignaro) o drena 5 RES a contatto in scontro.</Descrizione>
+			</Tratto>
+			<Tratto>
+				<Nome>Esplosione Sonora</Nome>
+				<Descrizione>Cono di 6m. Danno 5d6 e spinta indietro di 4m (CD 16 per bloccare/riposizionarsi).</Descrizione>
+			</Tratto>
+			<Tratto>
+				<Nome>Rigenerazione</Nome>
+				<Descrizione>Recupera PS nel tempo come molti vampiri.</Descrizione>
+			</Tratto>
+		</Capacita>
+		<Bottino>
+			<Oggetto>
+				<Nome>Denti di Vampiro</Nome>
+				<Quantita>1d6/2</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Essenza della Morte</Nome>
+				<Quantita>2d6</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Saliva di Alp</Nome>
+				<Quantita>1d6</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Linfa di Abominio</Nome>
+				<Quantita>1d6/3</Quantita>
+			</Oggetto>
+		</Bottino>
+	</SchedaMostro>
+	<!-- ================= CREATURE ANCESTRALI E DEMONI ================= -->
+	<SchedaMostro>
+		<Nome>Bes</Nome>
+		<InformazioniGenerali>
+			<Descrizione>Demoni di furia e potere, guardiani dei regni ultraterreni. Possiedono artigli capaci di trinciare uomini ed equipaggiamenti in un istante, e adorano godere delle possessioni mortali.</Descrizione>
+			<Altezza>Circa 2,5 m</Altezza>
+			<Peso>136 Kg</Peso>
+			<Ambiente>Ovunque venga evocato</Ambiente>
+			<Intelligenza>Senziente</Intelligenza>
+			<Organizzazione>Solitario</Organizzazione>
+		</InformazioniGenerali>
+		<LivelloDiMinaccia>
+			<Categoria>Difficile</Categoria>
+			<Complessita>Complesso</Complessita>
+		</LivelloDiMinaccia>
+		<Ricompensa valuta="Corone">1500</Ricompensa>
+		<Statistiche>
+			<INT>5</INT>
+			<RIF>12</RIF>
+			<DES>12</DES>
+			<FIS>10</FIS>
+			<VEL>7</VEL>
+			<EMP>2</EMP>
+			<MAN>2</MAN>
+			<VOL>10</VOL>
+			<FOR>0</FOR>
+		</Statistiche>
+		<StatisticheDerivate>
+			<GRI>10</GRI>
+			<COR>21</COR>
+			<BAL>5</BAL>
+			<RES>50</RES>
+			<ING>100</ING>
+			<REC>10</REC>
+			<PS>100</PS>
+			<VIGORE>0</VIGORE>
+		</StatisticheDerivate>
+		<Combattimento>
+			<Armatura>0</Armatura>
+			<BasiDiAbilita>
+				<Accortezza>10</Accortezza>
+				<Atletica>20</Atletica>
+				<Intimidire>19</Intimidire>
+				<LanciareIncantesimi>18</LanciareIncantesimi>
+				<Nascondersi>12</Nascondersi>
+				<Prestanza>20</Prestanza>
+				<ResistereAllaMagia>20</ResistereAllaMagia>
+				<Rissa>20</Rissa>
+			</BasiDiAbilita>
+			<Armi>
+				<Arma>
+					<Nome>Artigli</Nome>
+					<DAN>5d6+4</DAN>
+					<Effetti>Bilanciato, Sanguinamento (100%)</Effetti>
+					<NumeroAttacchi>2</NumeroAttacchi>
+				</Arma>
+			</Armi>
+		</Combattimento>
+		<Vulnerabilita>
+			<Elemento>Unguento Anti-Spettri</Elemento>
+			<Elemento>Bombe al Dimeritium</Elemento>
+		</Vulnerabilita>
+		<Immunita>
+			<Elemento>Fuoco</Elemento>
+			<Elemento>Malattie</Elemento>
+			<Elemento>Paura</Elemento>
+			<Elemento>Sanguinamento</Elemento>
+			<Elemento>Veleno</Elemento>
+		</Immunita>
+		<Capacita>
+			<Tratto>
+				<Nome>Possessione</Nome>
+				<Descrizione>Può possedere mortali senza il Manto di Capra, aumentando le loro statistiche e obbligandoli all'omicidio per conto del demone.</Descrizione>
+			</Tratto>
+			<Tratto>
+				<Nome>Sangue Bollente</Nome>
+				<Descrizione>In stato di furia berserk la creatura o l'ospite rimuove punti di armatura a ogni colpo andato a segno.</Descrizione>
+			</Tratto>
+			<Tratto>
+				<Nome>Vista Notturna Superiore</Nome>
+				<Descrizione>Ignora completamente il buio.</Descrizione>
+			</Tratto>
+		</Capacita>
+		<Bottino>
+			<Oggetto>
+				<Nome>Corna di Bes</Nome>
+				<Quantita>1d6/3</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Essenza di Wraith</Nome>
+				<Quantita>2d6</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Polvere Infusa</Nome>
+				<Quantita>2d10</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Polvere di Spettro</Nome>
+				<Quantita>2d6</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Ceneri</Nome>
+				<Quantita>2d10</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Ossa di Bestia</Nome>
+				<Quantita>1d10</Quantita>
+			</Oggetto>
+		</Bottino>
+	</SchedaMostro>
+	<SchedaMostro>
+		<Nome>Casglydd</Nome>
+		<InformazioniGenerali>
+			<Descrizione>Demoni della conoscenza. Si nascondono nell'ombra, raccogliendo informazioni e perseguitando accademici ed evocatori per consumarne l'intelletto.</Descrizione>
+			<Altezza>Circa 2,5 m</Altezza>
+			<Peso>136 kg</Peso>
+			<Ambiente>Ovunque venga evocato (Reami d'ombra)</Ambiente>
+			<Intelligenza>Senziente</Intelligenza>
+			<Organizzazione>Solitario</Organizzazione>
+		</InformazioniGenerali>
+		<LivelloDiMinaccia>
+			<Categoria>Medio</Categoria>
+			<Complessita>Semplice</Complessita>
+		</LivelloDiMinaccia>
+		<Ricompensa valuta="Corone">1500</Ricompensa>
+		<Statistiche>
+			<INT>10</INT>
+			<RIF>9</RIF>
+			<DES>6</DES>
+			<FIS>5</FIS>
+			<VEL>6</VEL>
+			<EMP>4</EMP>
+			<MAN>8</MAN>
+			<VOL>12</VOL>
+			<FOR>0</FOR>
+		</Statistiche>
+		<StatisticheDerivate>
+			<GRI>8</GRI>
+			<COR>18</COR>
+			<BAL>4</BAL>
+			<RES>40</RES>
+			<ING>50</ING>
+			<REC>8</REC>
+			<PS>80</PS>
+			<VIGORE>0</VIGORE>
+		</StatisticheDerivate>
+		<Combattimento>
+			<Armatura>15</Armatura>
+			<BasiDiAbilita>
+				<Accortezza>19</Accortezza>
+				<LanciareIncantesimi>20</LanciareIncantesimi>
+				<Nascondersi>16</Nascondersi>
+				<ResistereAllaMagia>22</ResistereAllaMagia>
+				<Rissa>18</Rissa>
+			</BasiDiAbilita>
+			<Armi>
+				<Arma>
+					<Nome>Artigli</Nome>
+					<DAN>1d6</DAN>
+					<Effetti>Portata, Trascinare nell'Ombra</Effetti>
+					<NumeroAttacchi>2</NumeroAttacchi>
+				</Arma>
+			</Armi>
+		</Combattimento>
+		<Vulnerabilita>
+			<Elemento>Unguento Anti-Spettri</Elemento>
+			<Elemento>Bombe al Dimeritium</Elemento>
+		</Vulnerabilita>
+		<Immunita>
+			<Elemento>Accecamento</Elemento>
+			<Elemento>Fuoco</Elemento>
+		</Immunita>
+		<Capacita>
+			<Tratto>
+				<Nome>Pozzo di Conoscenza</Nome>
+				<Descrizione>Ha Base 20 in tutte le prove per apprendere, ricordare o insegnare informazioni.</Descrizione>
+			</Tratto>
+			<Tratto>
+				<Nome>Movimento nell'Ombra</Nome>
+				<Descrizione>Può teletrasportarsi da una zona d'oscurità all'altra entro 20m.</Descrizione>
+			</Tratto>
+			<Tratto>
+				<Nome>Trascinare nell'Ombra</Nome>
+				<Descrizione>Trasferisce il bersaglio in un reame oscuro tramite un portale sul petto per nutrirsi dei suoi ricordi e intelletto.</Descrizione>
+			</Tratto>
+		</Capacita>
+		<Bottino>
+			<Oggetto>
+				<Nome>Essenza di Wraith</Nome>
+				<Quantita>1d6</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Glifo Casuale</Nome>
+				<Quantita>2</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Polvere Infusa</Nome>
+				<Quantita>2d10</Quantita>
+			</Oggetto>
+		</Bottino>
+	</SchedaMostro>
+	<SchedaMostro>
+		<Nome>Mari Lwyd</Nome>
+		<InformazioniGenerali>
+			<Descrizione>Tetri demoni scheletrici o bestiali che offrono "ospitalità" o perseguitano senza tregua coloro che non li invitano in casa offrendo cibi o doni.</Descrizione>
+			<Altezza>Circa 2,5 m</Altezza>
+			<Peso>135 Kg</Peso>
+			<Ambiente>Ovunque venga evocato</Ambiente>
+			<Intelligenza>Senziente</Intelligenza>
+			<Organizzazione>Solitario</Organizzazione>
+		</InformazioniGenerali>
+		<LivelloDiMinaccia>
+			<Categoria>Difficile</Categoria>
+			<Complessita>Complesso</Complessita>
+		</LivelloDiMinaccia>
+		<Ricompensa valuta="Corone">1500</Ricompensa>
+		<Statistiche>
+			<INT>5</INT>
+			<RIF>10</RIF>
+			<DES>10</DES>
+			<FIS>10</FIS>
+			<VEL>5</VEL>
+			<EMP>3</EMP>
+			<MAN>3</MAN>
+			<VOL>8</VOL>
+			<FOR>0</FOR>
+		</Statistiche>
+		<StatisticheDerivate>
+			<GRI>9</GRI>
+			<COR>15</COR>
+			<BAL>3</BAL>
+			<RES>45</RES>
+			<ING>100</ING>
+			<REC>9</REC>
+			<PS>90</PS>
+			<VIGORE>0</VIGORE>
+		</StatisticheDerivate>
+		<Combattimento>
+			<Armatura>5</Armatura>
+			<BasiDiAbilita>
+				<Accortezza>16</Accortezza>
+				<Atletica>18</Atletica>
+				<Intimidire>16</Intimidire>
+				<Nascondersi>16</Nascondersi>
+				<Prestanza>18</Prestanza>
+				<ResistereAllaMagia>20</ResistereAllaMagia>
+				<Rissa>18</Rissa>
+			</BasiDiAbilita>
+			<Armi>
+				<Arma>
+					<Nome>Schianto</Nome>
+					<DAN>4d6</DAN>
+					<Effetti>N/A</Effetti>
+					<NumeroAttacchi>2</NumeroAttacchi>
+				</Arma>
+			</Armi>
+		</Combattimento>
+		<Vulnerabilita>
+			<Elemento>Unguento Anti-Spettri</Elemento>
+			<Elemento>Bombe al Dimeritium</Elemento>
+			<Elemento>Bombe Polvere Lunare</Elemento>
+		</Vulnerabilita>
+		<Immunita>
+			<Elemento>Congelamento</Elemento>
+			<Elemento>Individuazione Magica</Elemento>
+			<Elemento>Paura</Elemento>
+			<Elemento>Sanguinamento</Elemento>
+			<Elemento>Veleno</Elemento>
+		</Immunita>
+		<Capacita>
+			<Tratto>
+				<Nome>Aura Gelida</Nome>
+				<Descrizione>Gelo innaturale: chi inizia il Turno in mischia ha il 50% di probabilità di restare Congelato.</Descrizione>
+			</Tratto>
+			<Tratto>
+				<Nome>Mutaforma</Nome>
+				<Descrizione>Imita alla perfezione ogni voce, e se ha più di 50 PS assume la forma di un umanoide che ha ucciso (ruba pelle).</Descrizione>
+			</Tratto>
+		</Capacita>
+		<Bottino>
+			<Oggetto>
+				<Nome>Teschio di Mari Lwyd</Nome>
+				<Quantita>1</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Essenza di Wraith</Nome>
+				<Quantita>2d6</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Seta</Nome>
+				<Quantita>1d10</Quantita>
+			</Oggetto>
+		</Bottino>
+	</SchedaMostro>
+	<!-- ================= ORCHI, DRAGONIDI, INSETTOIDI E COSTRUTTI ================= -->
+	<SchedaMostro>
+		<Nome>Troll di Roccia</Nome>
+		<InformazioniGenerali>
+			<Descrizione>Orchi massicci, grandi costruttori (e bevitori di vodka). Sono creature molto forti, difese da uno spesso strato di roccia.</Descrizione>
+			<Altezza>Circa 2 m</Altezza>
+			<Peso>Circa 408 Kg</Peso>
+			<Ambiente>Valli e montagne</Ambiente>
+			<Intelligenza>Senziente (ma tonti)</Intelligenza>
+			<Organizzazione>Solitario o coppia</Organizzazione>
+		</InformazioniGenerali>
+		<LivelloDiMinaccia>
+			<Categoria>Medio</Categoria>
+			<Complessita>Complesso</Complessita>
+		</LivelloDiMinaccia>
+		<Ricompensa valuta="Corone">800</Ricompensa>
+		<Statistiche>
+			<INT>3</INT>
+			<RIF>8</RIF>
+			<DES>7</DES>
+			<FIS>12</FIS>
+			<VEL>4</VEL>
+			<EMP>6</EMP>
+			<MAN>7</MAN>
+			<VOL>4</VOL>
+			<FOR>0</FOR>
+		</Statistiche>
+		<StatisticheDerivate>
+			<GRI>8</GRI>
+			<COR>12</COR>
+			<BAL>2</BAL>
+			<RES>40</RES>
+			<ING>120</ING>
+			<REC>8</REC>
+			<PS>80</PS>
+			<VIGORE>0</VIGORE>
+		</StatisticheDerivate>
+		<Combattimento>
+			<Armatura>20</Armatura>
+			<BasiDiAbilita>
+				<Schivare>12</Schivare>
+				<Riposizionare>10</Riposizionare>
+				<Bloccare>15</Bloccare>
+			</BasiDiAbilita>
+			<Armi>
+				<Arma>
+					<Nome>Pugni</Nome>
+					<DAN>4d6</DAN>
+					<Effetti>N/A</Effetti>
+					<NumeroAttacchi>2</NumeroAttacchi>
+				</Arma>
+			</Armi>
+		</Combattimento>
+		<Vulnerabilita>
+			<Elemento>Unguento Anti-orchi</Elemento>
+		</Vulnerabilita>
+		<Immunita/>
+		<Capacita/>
+		<Bottino>
+			<Oggetto>
+				<Nome>Fegato di Troll</Nome>
+				<Quantita>1</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Pelle di Troll</Nome>
+				<Quantita>1</Quantita>
+			</Oggetto>
+		</Bottino>
+	</SchedaMostro>
+	<SchedaMostro>
+		<Nome>Arachas</Nome>
+		<InformazioniGenerali>
+			<Descrizione>Enormi insettoidi corazzati che si mimetizzano nelle paludi. Sono incredibilmente velenosi e agili, ma dalla vista debole.</Descrizione>
+			<Altezza>Circa 3 m</Altezza>
+			<Peso>Circa 800 Kg</Peso>
+			<Ambiente>Paludi e pianure alluvionali</Ambiente>
+			<Intelligenza>Circa come un cane</Intelligenza>
+			<Organizzazione>Solitaria</Organizzazione>
+		</InformazioniGenerali>
+		<LivelloDiMinaccia>
+			<Categoria>Difficile</Categoria>
+			<Complessita>Complesso</Complessita>
+		</LivelloDiMinaccia>
+		<Ricompensa valuta="Corone">1000</Ricompensa>
+		<Statistiche>
+			<INT>1</INT>
+			<RIF>9</RIF>
+			<DES>6</DES>
+			<FIS>13</FIS>
+			<VEL>5</VEL>
+			<EMP>1</EMP>
+			<MAN>1</MAN>
+			<VOL>5</VOL>
+			<FOR>0</FOR>
+		</Statistiche>
+		<StatisticheDerivate>
+			<GRI>9</GRI>
+			<COR>15</COR>
+			<BAL>3</BAL>
+			<RES>45</RES>
+			<ING>130</ING>
+			<REC>9</REC>
+			<PS>90</PS>
+			<VIGORE>0</VIGORE>
+		</StatisticheDerivate>
+		<Combattimento>
+			<Armatura>20</Armatura>
+			<BasiDiAbilita>
+				<Schivare>15</Schivare>
+				<Riposizionare>12</Riposizionare>
+				<Bloccare>16</Bloccare>
+			</BasiDiAbilita>
+			<Armi>
+				<Arma>
+					<Nome>Chele/Pungiglione</Nome>
+					<DAN>6d6</DAN>
+					<Effetti>Avvelenamento</Effetti>
+					<NumeroAttacchi>2</NumeroAttacchi>
+				</Arma>
+			</Armi>
+		</Combattimento>
+		<Vulnerabilita>
+			<Elemento>Unguento Anti-insettoidi</Elemento>
+		</Vulnerabilita>
+		<Immunita/>
+		<Resistenze>
+			<Elemento>Sanguinamento (danni dimezzati)</Elemento>
+			<Elemento>Tagliente/Perforante (danni dimezzati)</Elemento>
+		</Resistenze>
+		<Capacita>
+			<Tratto>
+				<Nome>Mimetismo</Nome>
+				<Descrizione>Se resta immobile non viene percepita grazie alla debole vista predatoria e all'aspetto che replica l'ambiente.</Descrizione>
+			</Tratto>
+		</Capacita>
+		<Bottino>
+			<Oggetto>
+				<Nome>Veleno di Arachas</Nome>
+				<Quantita>1</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Occhi di Arachas</Nome>
+				<Quantita>1</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Chitina</Nome>
+				<Quantita>1d6</Quantita>
+			</Oggetto>
+		</Bottino>
+	</SchedaMostro>
+	<SchedaMostro>
+		<Nome>Armatura Vivente</Nome>
+		<InformazioniGenerali>
+			<Descrizione>Costrutti magici a forma di pesanti armature complete vuote, animate dai maghi come instancabili guardie e sentinelle.</Descrizione>
+			<Altezza>In Base all'Armatura Usata</Altezza>
+			<Peso>In Base all'Armatura Usata</Peso>
+			<Ambiente>Rovine e torri dei maghi</Ambiente>
+			<Intelligenza>Incapace di pensiero</Intelligenza>
+			<Organizzazione>Solitario o coppia</Organizzazione>
+		</InformazioniGenerali>
+		<LivelloDiMinaccia>
+			<Categoria>Medio</Categoria>
+			<Complessita>Semplice</Complessita>
+		</LivelloDiMinaccia>
+		<Ricompensa valuta="Corone">400</Ricompensa>
+		<Statistiche>
+			<INT>1</INT>
+			<RIF>8</RIF>
+			<DES>6</DES>
+			<FIS>8</FIS>
+			<VEL>4</VEL>
+			<EMP>1</EMP>
+			<MAN>1</MAN>
+			<VOL>4</VOL>
+			<FOR>0</FOR>
+		</Statistiche>
+		<StatisticheDerivate>
+			<GRI>0</GRI>
+			<COR>12</COR>
+			<BAL>2</BAL>
+			<RES>0</RES>
+			<ING>80</ING>
+			<REC>6</REC>
+			<PS>60</PS>
+			<VIGORE>0</VIGORE>
+		</StatisticheDerivate>
+		<Combattimento>
+			<Armatura>In Base all'Armatura Usata</Armatura>
+			<BasiDiAbilita>
+				<Accortezza>14</Accortezza>
+				<Atletica>10</Atletica>
+				<Intimidire>10</Intimidire>
+				<Nascondersi>10</Nascondersi>
+				<Prestanza>16</Prestanza>
+				<ResistereAllaMagia>14</ResistereAllaMagia>
+				<Rissa>16</Rissa>
+			</BasiDiAbilita>
+			<Armi>
+				<Arma>
+					<Nome>Pugni / Arma Impugnata</Nome>
+					<DAN>Varia</DAN>
+					<Effetti>Ablativo (su Pugni)</Effetti>
+					<NumeroAttacchi>1</NumeroAttacchi>
+				</Arma>
+			</Armi>
+		</Combattimento>
+		<Vulnerabilita>
+			<Elemento>Unguento Anti-Elementali</Elemento>
+			<Elemento>Bombe al Dimeritium</Elemento>
+		</Vulnerabilita>
+		<Immunita>
+			<Elemento>Ammaliamento, Coercizione, Paura, Sanguinamento, Stordimento, Veleno</Elemento>
+		</Immunita>
+		<Capacita>
+			<Tratto>
+				<Nome>Costrutto</Nome>
+				<Descrizione>Senza mente, esegue fedelmente gli ordini del creatore in eterno.</Descrizione>
+			</Tratto>
+		</Capacita>
+		<Bottino>
+			<Oggetto>
+				<Nome>Polvere Infusa</Nome>
+				<Quantita>1d6/3</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Quintessenza</Nome>
+				<Quantita>1d6/3</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Armatura Originale ed Eventuali Armi Impugnate</Nome>
+				<Quantita>1</Quantita>
+			</Oggetto>
+		</Bottino>
+	</SchedaMostro>
+	<SchedaMostro>
+		<Nome>Amalgama di Corpi</Nome>
+		<InformazioniGenerali>
+			<Descrizione>Golem di carne formato da cadaveri parzialmente rianimati che conservano barlumi di coscienza, urlante e mortale. Creato da necromanti.</Descrizione>
+			<Altezza>Varia</Altezza>
+			<Peso>Circa 680 kg</Peso>
+			<Ambiente>Vicino a cripte e torri dei maghi</Ambiente>
+			<Intelligenza>Ferale (con scatti di lucidità)</Intelligenza>
+			<Organizzazione>Solitario</Organizzazione>
+		</InformazioniGenerali>
+		<LivelloDiMinaccia>
+			<Categoria>Difficile</Categoria>
+			<Complessita>Arduo</Complessita>
+		</LivelloDiMinaccia>
+		<Ricompensa valuta="Corone">800</Ricompensa>
+		<Statistiche>
+			<INT>1</INT>
+			<RIF>8</RIF>
+			<DES>6</DES>
+			<FIS>12</FIS>
+			<VEL>6</VEL>
+			<EMP>1</EMP>
+			<MAN>1</MAN>
+			<VOL>8</VOL>
+			<FOR>0</FOR>
+		</Statistiche>
+		<StatisticheDerivate>
+			<GRI>10</GRI>
+			<COR>18</COR>
+			<BAL>4</BAL>
+			<RES>50</RES>
+			<ING>120</ING>
+			<REC>10</REC>
+			<PS>100</PS>
+			<VIGORE>0</VIGORE>
+		</StatisticheDerivate>
+		<Combattimento>
+			<Armatura>0</Armatura>
+			<BasiDiAbilita>
+				<Accortezza>10</Accortezza>
+				<Atletica>11</Atletica>
+				<Intimidire>16</Intimidire>
+				<Nascondersi>10</Nascondersi>
+				<Prestanza>20</Prestanza>
+				<ResistereAllaMagia>17</ResistereAllaMagia>
+				<Rissa>16</Rissa>
+			</BasiDiAbilita>
+			<Armi>
+				<Arma>
+					<Nome>Braccia Multiple</Nome>
+					<DAN>4d6</DAN>
+					<Effetti>N/A</Effetti>
+					<NumeroAttacchi>Multipli</NumeroAttacchi>
+				</Arma>
+			</Armi>
+		</Combattimento>
+		<Vulnerabilita>
+			<Elemento>Unguento Anti-Spettri</Elemento>
+		</Vulnerabilita>
+		<Immunita>
+			<Elemento>Ammaliamento, Atterramento, Coercizione, Paura, Sanguinamento, Stordimento, Veleno</Elemento>
+		</Immunita>
+		<Resistenze>
+			<Elemento>Contundente, Perforante</Elemento>
+		</Resistenze>
+		<Capacita>
+			<Tratto>
+				<Nome>Momento di Lucidità</Nome>
+				<Descrizione>Può richiamare la memoria di un'anima per risolvere enigmi o aprire porte (aumenta temporaneamente INT e MAN).</Descrizione>
+			</Tratto>
+			<Tratto>
+				<Nome>Vista a 360°</Nome>
+				<Descrizione>Gli occhi sono sparsi ovunque, non ha punti ciechi.</Descrizione>
+			</Tratto>
+			<Tratto>
+				<Nome>Spiriti Rancorosi</Nome>
+				<Descrizione>Tranciargli pezzi evoca Wraith rabbiosi dalle anime rimosse.</Descrizione>
+			</Tratto>
+		</Capacita>
+		<Bottino>
+			<Oggetto>
+				<Nome>Essenza di Wraith</Nome>
+				<Quantita>1d6</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Componenti Cadaverici</Nome>
+				<Quantita>Varia</Quantita>
+			</Oggetto>
+		</Bottino>
+	</SchedaMostro>
+	<!-- ================= SPETTRI E VAMPIRI ================= -->
+	<SchedaMostro>
+		<Nome>Wraith</Nome>
+		<InformazioniGenerali>
+			<Descrizione>Spiriti di persone morte in circostanze terribili o con questioni in sospeso, consumati dall'odio e pronti ad attaccare i vivi.</Descrizione>
+			<Altezza>Normale umana</Altezza>
+			<Peso>Privo di peso</Peso>
+			<Ambiente>Campi di battaglia e cimiteri</Ambiente>
+			<Intelligenza>Consumato dalle emozioni</Intelligenza>
+			<Organizzazione>Gruppi da 3 a 21</Organizzazione>
+		</InformazioniGenerali>
+		<LivelloDiMinaccia>
+			<Categoria>Facile</Categoria>
+			<Complessita>Arduo</Complessita>
+		</LivelloDiMinaccia>
+		<Ricompensa valuta="Corone">30</Ricompensa>
+		<Lore>
+			<SuperstizioneComune abilita="Istruzione"
+			                     cd="14">
+				<Fonte>Rodolf Kazmer</Fonte>
+				<Testo>Sono le anime dei morti e dei dannati. Per scacciare un wraith serve un rituale: trovare il cadavere, pugnalarlo con un paletto di pioppo, tagliargli la testa e piazzarla tra le gambe, quindi dare fuoco al tutto.</Testo>
+			</SuperstizioneComune>
+			<ConoscenzaDeiWitcher abilita="Arte del Witcher"
+			                      cd="10">
+				<Testo>I wraith sono uno dei pochi mostri davvero legati ai defunti. Quando si affronta un wraith è necessario continuare a muoversi. Ogni tanto, un wraith si teletrasporta alle spalle dell'avversario. Se si riesce a colpirlo con il segno Yrden o una bomba Polvere Lunare gli si impedisce di teletrasportarsi o diventare incorporeo.</Testo>
+			</ConoscenzaDeiWitcher>
+		</Lore>
+		<Statistiche>
+			<INT>4</INT>
+			<RIF>6</RIF>
+			<DES>5</DES>
+			<FIS>5</FIS>
+			<VEL>5</VEL>
+			<EMP>1</EMP>
+			<MAN>1</MAN>
+			<VOL>6</VOL>
+			<FOR>0</FOR>
+		</Statistiche>
+		<StatisticheDerivate>
+			<GRI>5</GRI>
+			<COR>15</COR>
+			<BAL>3</BAL>
+			<RES>25</RES>
+			<ING>50</ING>
+			<REC>5</REC>
+			<PS>25</PS>
+			<VIGORE>0</VIGORE>
+		</StatisticheDerivate>
+		<Combattimento>
+			<Armatura>0</Armatura>
+			<BasiDiAbilita>
+				<Accortezza>8</Accortezza>
+				<Atletica>5</Atletica>
+				<Eludere>6</Eludere>
+				<LanciareIncantesimi>6</LanciareIncantesimi>
+				<Mischia>6</Mischia>
+				<Nascondersi>9</Nascondersi>
+				<ResistereAllaMagia>6</ResistereAllaMagia>
+				<Rissa>6</Rissa>
+				<Scherma>7</Scherma>
+				<Sopravvivenza>6</Sopravvivenza>
+				<Tempra>7</Tempra>
+			</BasiDiAbilita>
+			<Armi>
+				<Arma>
+					<Nome>Lanterna Wraith</Nome>
+					<DAN>2d6+2</DAN>
+					<Effetti>Fuoco (25%)</Effetti>
+					<NumeroAttacchi>1</NumeroAttacchi>
+				</Arma>
+				<Arma>
+					<Nome>Spada Wraith</Nome>
+					<DAN>3d6</DAN>
+					<Effetti>N/A</Effetti>
+					<NumeroAttacchi>1</NumeroAttacchi>
+				</Arma>
+			</Armi>
+		</Combattimento>
+		<Vulnerabilita>
+			<Elemento>Unguento Anti-spettri</Elemento>
+			<Elemento>Bombe Polvere Lunare</Elemento>
+			<Elemento>Segno Yrden</Elemento>
+		</Vulnerabilita>
+		<Immunita/>
+		<Capacita>
+			<Tratto>
+				<Nome>Alimentato dalla Rabbia</Nome>
+				<Descrizione>Intelligente ma accecato da furia incontrollabile. È impossibile ragionarci o intimidirlo.</Descrizione>
+			</Tratto>
+			<Tratto>
+				<Nome>Teletrasporto</Nome>
+				<Descrizione>Può teletrasportarsi istantaneamente di 10m.</Descrizione>
+			</Tratto>
+			<Tratto>
+				<Nome>Transizione</Nome>
+				<Descrizione>Può usare Lanciare Incantesimi per difendersi e divenire incorporeo, negando l'attacco.</Descrizione>
+			</Tratto>
+		</Capacita>
+		<Bottino>
+			<Oggetto>
+				<Nome>Essenza di Wraith</Nome>
+				<Quantita>1d6/2</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Polvere di Spettro</Nome>
+				<Quantita>1d6/2</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Polvere Infusa</Nome>
+				<Quantita>1d6/2</Quantita>
+			</Oggetto>
+		</Bottino>
+	</SchedaMostro>
+	<SchedaMostro>
+		<Nome>Penitente</Nome>
+		<InformazioniGenerali>
+			<Descrizione>Spettri oscuri che perseguitano chi ha commesso crimini atroci, avvolgendo l'area in una fitta nebbia evocatrice di wraith.</Descrizione>
+			<Altezza>2,2 m</Altezza>
+			<Peso>90 Kg</Peso>
+			<Ambiente>Ovunque venga evocato</Ambiente>
+			<Intelligenza>Senziente</Intelligenza>
+			<Organizzazione>Solitario</Organizzazione>
+		</InformazioniGenerali>
+		<LivelloDiMinaccia>
+			<Categoria>Medio</Categoria>
+			<Complessita>Complesso</Complessita>
+		</LivelloDiMinaccia>
+		<Ricompensa valuta="Corone">800</Ricompensa>
+		<Statistiche>
+			<INT>6</INT>
+			<RIF>8</RIF>
+			<DES>8</DES>
+			<FIS>8</FIS>
+			<VEL>6</VEL>
+			<EMP>1</EMP>
+			<MAN>1</MAN>
+			<VOL>8</VOL>
+			<FOR>0</FOR>
+		</Statistiche>
+		<StatisticheDerivate>
+			<GRI>8</GRI>
+			<COR>18</COR>
+			<BAL>3</BAL>
+			<RES>40</RES>
+			<ING>80</ING>
+			<REC>8</REC>
+			<PS>80</PS>
+			<VIGORE>0</VIGORE>
+		</StatisticheDerivate>
+		<Combattimento>
+			<Armatura>0</Armatura>
+			<BasiDiAbilita>
+				<Accortezza>16</Accortezza>
+				<Atletica>14</Atletica>
+				<Intimidire>17</Intimidire>
+				<LanciareIncantesimi>17</LanciareIncantesimi>
+				<Nascondersi>17</Nascondersi>
+				<Prestanza>15</Prestanza>
+				<ResistereAllaMagia>15</ResistereAllaMagia>
+				<Rissa>15</Rissa>
+				<Sopravvivenza>12</Sopravvivenza>
+				<Tempra>15</Tempra>
+				<Schivare>16</Schivare>
+				<Riposizionare>18</Riposizionare>
+				<Bloccare>17</Bloccare>
+			</BasiDiAbilita>
+			<Armi>
+				<Arma>
+					<Nome>Spada del Penitente</Nome>
+					<DAN>5d6+4</DAN>
+					<Effetti>Sanguinamento (30%)</Effetti>
+					<NumeroAttacchi>2</NumeroAttacchi>
+				</Arma>
+				<Arma>
+					<Nome>Lanterna del Penitente</Nome>
+					<DAN>4d6</DAN>
+					<Effetti>A Fuoco (75%)</Effetti>
+					<NumeroAttacchi>1</NumeroAttacchi>
+				</Arma>
+			</Armi>
+		</Combattimento>
+		<Vulnerabilita>
+			<Elemento>Unguento Anti-Spettri</Elemento>
+			<Elemento>Bombe Polvere Lunare</Elemento>
+			<Elemento>Segno Yrden</Elemento>
+		</Vulnerabilita>
+		<Immunita>
+			<Elemento>Ammaliamento</Elemento>
+			<Elemento>Coercizione</Elemento>
+			<Elemento>Malattie</Elemento>
+			<Elemento>Paura</Elemento>
+			<Elemento>Sanguinamento</Elemento>
+			<Elemento>Veleno</Elemento>
+		</Immunita>
+		<Capacita>
+			<Tratto>
+				<Nome>Nebbia Sovrannaturale</Nome>
+				<Descrizione>Crea una fitta nebbia per 50m. All'interno il penitente non subisce danni. La nube si dissipa solo accendendo un gran fuoco al suo interno.</Descrizione>
+			</Tratto>
+			<Tratto>
+				<Nome>Suddividersi</Nome>
+				<Descrizione>Può suddividersi in quattro wraith che controlla direttamente.</Descrizione>
+			</Tratto>
+			<Tratto>
+				<Nome>Sfocato</Nome>
+				<Descrizione>Può usare Lanciare Incantesimi per difendersi e divenire incorporeo fino al Turno successivo.</Descrizione>
+			</Tratto>
+		</Capacita>
+		<Bottino>
+			<Oggetto>
+				<Nome>Essenza di Wraith</Nome>
+				<Quantita>1d6</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Polvere Infusa</Nome>
+				<Quantita>1d6</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Polvere di Spettro</Nome>
+				<Quantita>1d6</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Runa Casuale</Nome>
+				<Quantita>1</Quantita>
+			</Oggetto>
+		</Bottino>
+	</SchedaMostro>
+	<SchedaMostro>
+		<Nome>Katakan</Nome>
+		<InformazioniGenerali>
+			<Descrizione>Intelligenti e letali vampiri, superiori ai loro cugini bestiali ma non ancora veri nosferatu. Si nascondono nell'invisibilità manipolando le prede telepaticamente.</Descrizione>
+			<Altezza>Circa 2 m</Altezza>
+			<Peso>Circa 115 Kg</Peso>
+			<Ambiente>Rovine, caverne e vicino alle città</Ambiente>
+			<Intelligenza>Umana</Intelligenza>
+			<Organizzazione>Solitario</Organizzazione>
+		</InformazioniGenerali>
+		<LivelloDiMinaccia>
+			<Categoria>Difficile</Categoria>
+			<Complessita>Complesso</Complessita>
+		</LivelloDiMinaccia>
+		<Ricompensa valuta="Corone">1500</Ricompensa>
+		<Statistiche>
+			<INT>6</INT>
+			<RIF>14</RIF>
+			<DES>12</DES>
+			<FIS>8</FIS>
+			<VEL>10</VEL>
+			<EMP>3</EMP>
+			<MAN>3</MAN>
+			<VOL>8</VOL>
+			<FOR>0</FOR>
+		</Statistiche>
+		<StatisticheDerivate>
+			<GRI>8</GRI>
+			<COR>30</COR>
+			<BAL>6</BAL>
+			<RES>40</RES>
+			<ING>80</ING>
+			<REC>8</REC>
+			<PS>80</PS>
+			<VIGORE>0</VIGORE>
+		</StatisticheDerivate>
+		<Combattimento>
+			<Armatura>0</Armatura>
+			<BasiDiAbilita>
+				<!-- Omesse nel manuale specifico, usa valori base alti per creature letali -->
+			</BasiDiAbilita>
+			<Armi>
+				<Arma>
+					<Nome>Morso</Nome>
+					<DAN>7d6+2</DAN>
+					<Effetti>Sanguinamento (100%)</Effetti>
+					<NumeroAttacchi>1</NumeroAttacchi>
+				</Arma>
+				<Arma>
+					<Nome>Artigli</Nome>
+					<DAN>6d6</DAN>
+					<Effetti>Sanguinamento (50%)</Effetti>
+					<NumeroAttacchi>2</NumeroAttacchi>
+				</Arma>
+			</Armi>
+		</Combattimento>
+		<Vulnerabilita>
+			<Elemento>Unguento Anti-vampiri</Elemento>
+			<Elemento>Pozione Sangue Nero</Elemento>
+			<Elemento>Debolezza Celeste</Elemento>
+			<Elemento>Fuoco</Elemento>
+		</Vulnerabilita>
+		<Immunita/>
+		<Capacita>
+			<Tratto>
+				<Nome>Invisibile alla Magia</Nome>
+				<Descrizione>Un katakan non può essere rilevato dai medaglioni dei witcher. Un mago deve superare un tiro contrapposto per percepirlo.</Descrizione>
+			</Tratto>
+			<Tratto>
+				<Nome>Invisibilità</Nome>
+				<Descrizione>Può diventare invisibile (+10 Nascondersi, +5 Attacchi). Il segno Yrden lo rende visibile.</Descrizione>
+			</Tratto>
+			<Tratto>
+				<Nome>Rigenerazione</Nome>
+				<Descrizione>Rigenera 5 PS per round (ridotti a 3 alla luce del sole).</Descrizione>
+			</Tratto>
+			<Tratto>
+				<Nome>Telepatia</Nome>
+				<Descrizione>Può comunicare telepaticamente con qualsiasi creatura entro 20m.</Descrizione>
+			</Tratto>
+		</Capacita>
+		<Bottino>
+			<Oggetto>
+				<Nome>Saliva di Vampiro</Nome>
+				<Quantita>1d6</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Zanne di Vampiro</Nome>
+				<Quantita>1d6/2</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Runa Casuale</Nome>
+				<Quantita>1</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Oggetti Comuni</Nome>
+				<Quantita>1d6</Quantita>
+			</Oggetto>
+		</Bottino>
+	</SchedaMostro>
+	<!-- ================= DRAGONIDI E IBRIDI ================= -->
+	<SchedaMostro>
+		<Nome>Viverna</Nome>
+		<InformazioniGenerali>
+			<Descrizione>Cugini minori dei veri draghi, sono feroci rettili volanti che attaccano in picchiata, sputando veleno acido prima di afferrare le prede.</Descrizione>
+			<Altezza>Lunga circa 3 m</Altezza>
+			<Peso>Circa 408 Kg</Peso>
+			<Ambiente>Picchi montani e zone rupestri</Ambiente>
+			<Intelligenza>Ferale</Intelligenza>
+			<Organizzazione>Solitario o coppia</Organizzazione>
+		</InformazioniGenerali>
+		<LivelloDiMinaccia>
+			<Categoria>Difficile</Categoria>
+			<Complessita>Semplice</Complessita>
+		</LivelloDiMinaccia>
+		<Ricompensa valuta="Corone">1000</Ricompensa>
+		<Statistiche>
+			<INT>1</INT>
+			<RIF>10</RIF>
+			<DES>10</DES>
+			<FIS>10</FIS>
+			<VEL>7</VEL>
+			<EMP>1</EMP>
+			<MAN>1</MAN>
+			<VOL>6</VOL>
+			<FOR>0</FOR>
+		</Statistiche>
+		<StatisticheDerivate>
+			<GRI>8</GRI>
+			<COR>21</COR>
+			<BAL>4</BAL>
+			<RES>40</RES>
+			<ING>100</ING>
+			<REC>8</REC>
+			<PS>80</PS>
+			<VIGORE>0</VIGORE>
+		</StatisticheDerivate>
+		<Combattimento>
+			<Armatura>10</Armatura>
+			<BasiDiAbilita>
+				<Accortezza>10</Accortezza>
+				<Atletica>8</Atletica>
+				<Coraggio>8</Coraggio>
+				<Eludere>6</Eludere>
+				<Mischia>8</Mischia>
+				<Nascondersi>6</Nascondersi>
+				<ResistereAllaMagia>8</ResistereAllaMagia>
+				<Rissa>7</Rissa>
+				<Sopravvivenza>9</Sopravvivenza>
+				<Tempra>8</Tempra>
+			</BasiDiAbilita>
+			<Armi>
+				<Arma>
+					<Nome>Morso</Nome>
+					<DAN>7d6</DAN>
+					<Effetti>Veleno (25%)</Effetti>
+					<NumeroAttacchi>1</NumeroAttacchi>
+				</Arma>
+				<Arma>
+					<Nome>Artigli</Nome>
+					<DAN>6d6</DAN>
+					<Effetti>N/A</Effetti>
+					<NumeroAttacchi>2</NumeroAttacchi>
+				</Arma>
+				<Arma>
+					<Nome>Aculei</Nome>
+					<DAN>5d6+2</DAN>
+					<Effetti>Veleno (75%)</Effetti>
+					<NumeroAttacchi>1</NumeroAttacchi>
+				</Arma>
+			</Armi>
+		</Combattimento>
+		<Vulnerabilita>
+			<Elemento>Unguento Anti-dragonidi</Elemento>
+		</Vulnerabilita>
+		<Resistenze>
+			<Elemento>Perforante e Tagliente (danni dimezzati)</Elemento>
+		</Resistenze>
+		<Capacita>
+			<Tratto>
+				<Nome>Sputo Velenoso</Nome>
+				<Descrizione>Può sputare veleno contro un singolo bersaglio fino a 8m (3d6 danni e 100% Avvelenato).</Descrizione>
+			</Tratto>
+			<Tratto>
+				<Nome>Volo</Nome>
+				<Descrizione>Può volare come azione di movimento. Se subisce più di 10 danni precipita.</Descrizione>
+			</Tratto>
+		</Capacita>
+		<Bottino>
+			<Oggetto>
+				<Nome>Estratto di Veleno</Nome>
+				<Quantita>1d10</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Occhio di Viverna</Nome>
+				<Quantita>1d6/2</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Scaglie di Dragonide</Nome>
+				<Quantita>1d10</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Uovo di Viverna</Nome>
+				<Quantita>1d6/2</Quantita>
+			</Oggetto>
+		</Bottino>
+	</SchedaMostro>
+	<SchedaMostro>
+		<Nome>Sirena</Nome>
+		<InformazioniGenerali>
+			<Descrizione>Aggressive predatrici alate che celano il loro aspetto mostruoso attirando i viaggiatori ignari con l'aspetto di splendide fanciulle.</Descrizione>
+			<Altezza>Normale umana</Altezza>
+			<Peso>Normale umano</Peso>
+			<Ambiente>In mare o sulle coste</Ambiente>
+			<Intelligenza>Umana</Intelligenza>
+			<Organizzazione>Gruppi da 3 a 6</Organizzazione>
+		</InformazioniGenerali>
+		<LivelloDiMinaccia>
+			<Categoria>Facile</Categoria>
+			<Complessita>Complesso</Complessita>
+		</LivelloDiMinaccia>
+		<Ricompensa valuta="Corone">20</Ricompensa>
+		<Statistiche>
+			<INT>3</INT>
+			<RIF>7</RIF>
+			<DES>7</DES>
+			<FIS>6</FIS>
+			<VEL>8</VEL>
+			<EMP>3</EMP>
+			<MAN>3</MAN>
+			<VOL>8</VOL>
+			<FOR>0</FOR>
+		</Statistiche>
+		<StatisticheDerivate>
+			<GRI>7</GRI>
+			<COR>24</COR>
+			<BAL>4</BAL>
+			<RES>35</RES>
+			<ING>60</ING>
+			<REC>7</REC>
+			<PS>35</PS>
+			<VIGORE>0</VIGORE>
+		</StatisticheDerivate>
+		<Combattimento>
+			<Armatura>0</Armatura>
+			<BasiDiAbilita>
+				<LanciareIncantesimi>10</LanciareIncantesimi>
+			</BasiDiAbilita>
+			<Armi>
+				<Arma>
+					<Nome>Attacchi Naturali</Nome>
+					<DAN>2d6</DAN>
+					<Effetti>N/A</Effetti>
+					<NumeroAttacchi>1</NumeroAttacchi>
+				</Arma>
+			</Armi>
+		</Combattimento>
+		<Vulnerabilita>
+			<Elemento>Unguento Anti-ibridi</Elemento>
+		</Vulnerabilita>
+		<Immunita/>
+		<Capacita>
+			<Tratto>
+				<Nome>Illusione</Nome>
+				<Descrizione>Crea un'illusione per sembrare una bella donna, che si dissipa con un tiro Lanciare Incantesimi CD 15.</Descrizione>
+			</Tratto>
+			<Tratto>
+				<Nome>Urlo</Nome>
+				<Descrizione>Costringe chi si trova entro 10m a un TS Grinta -1.</Descrizione>
+			</Tratto>
+			<Tratto>
+				<Nome>Volo</Nome>
+				<Descrizione>Se subisce 5+ danni mentre vola, precipita.</Descrizione>
+			</Tratto>
+		</Capacita>
+		<Bottino>
+			<Oggetto>
+				<Nome>Essenza Acquatica</Nome>
+				<Quantita>1d6</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Corde Vocali di Sirena</Nome>
+				<Quantita>1</Quantita>
+			</Oggetto>
+		</Bottino>
+	</SchedaMostro>
+	<SchedaMostro>
+		<Nome>Grifone</Nome>
+		<InformazioniGenerali>
+			<Descrizione>Majestuosi super-predatori che uniscono l'aspetto e la ferocia di aquile e leoni. Colpiscono con forza devastante dal cielo.</Descrizione>
+			<Altezza>Circa 2m al garrese</Altezza>
+			<Peso>Circa 907 Kg</Peso>
+			<Ambiente>Picchi montani</Ambiente>
+			<Intelligenza>Circa come un cane</Intelligenza>
+			<Organizzazione>Solitario o coppia</Organizzazione>
+		</InformazioniGenerali>
+		<LivelloDiMinaccia>
+			<Categoria>Difficile</Categoria>
+			<Complessita>Complesso</Complessita>
+		</LivelloDiMinaccia>
+		<Ricompensa valuta="Corone">1200</Ricompensa>
+		<Statistiche>
+			<INT>1</INT>
+			<RIF>10</RIF>
+			<DES>10</DES>
+			<FIS>15</FIS>
+			<VEL>6</VEL>
+			<EMP>1</EMP>
+			<MAN>1</MAN>
+			<VOL>5</VOL>
+			<FOR>0</FOR>
+		</Statistiche>
+		<StatisticheDerivate>
+			<GRI>10</GRI>
+			<COR>18</COR>
+			<BAL>3</BAL>
+			<RES>50</RES>
+			<ING>150</ING>
+			<REC>10</REC>
+			<PS>100</PS>
+			<VIGORE>0</VIGORE>
+		</StatisticheDerivate>
+		<Combattimento>
+			<Armatura>8</Armatura>
+			<BasiDiAbilita/>
+			<Armi>
+				<Arma>
+					<Nome>Morso e Artigli</Nome>
+					<DAN>6d6</DAN>
+					<Effetti>Sanguinamento</Effetti>
+					<NumeroAttacchi>2</NumeroAttacchi>
+				</Arma>
+			</Armi>
+		</Combattimento>
+		<Vulnerabilita>
+			<Elemento>Unguento Anti-ibridi</Elemento>
+		</Vulnerabilita>
+		<Immunita/>
+		<Capacita>
+			<Tratto>
+				<Nome>Urlo</Nome>
+				<Descrizione>Usa il turno per lanciare un grido che costringe tutti entro 10m a TS Grinta -1.</Descrizione>
+			</Tratto>
+			<Tratto>
+				<Nome>Volo</Nome>
+				<Descrizione>Vola come Azione di Movimento. Se subisce più di 10 danni cade.</Descrizione>
+			</Tratto>
+		</Capacita>
+		<Bottino>
+			<Oggetto>
+				<Nome>Piume di Grifone</Nome>
+				<Quantita>1d10</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Uovo di Grifone</Nome>
+				<Quantita>1</Quantita>
+			</Oggetto>
+		</Bottino>
+	</SchedaMostro>
+	<!-- ================= ORCHI, INSETTOIDI E COSTRUTTI ================= -->
+	<SchedaMostro>
+		<Nome>Nekker</Nome>
+		<InformazioniGenerali>
+			<Descrizione>Piccole bestiacce scavatrici che attaccano implacabilmente in branco. Più intelligenti di quanto sembrino, sanno elaborare elementari tattiche di agguato.</Descrizione>
+			<Altezza>Circa 1 m</Altezza>
+			<Peso>Circa 13 Kg</Peso>
+			<Ambiente>Pianure e foreste</Ambiente>
+			<Intelligenza>Quanto un umano stupido</Intelligenza>
+			<Organizzazione>Bande da 3 a 12</Organizzazione>
+		</InformazioniGenerali>
+		<LivelloDiMinaccia>
+			<Categoria>Facile</Categoria>
+			<Complessita>Complesso</Complessita>
+		</LivelloDiMinaccia>
+		<Ricompensa valuta="Corone">10</Ricompensa>
+		<Statistiche>
+			<INT>2</INT>
+			<RIF>5</RIF>
+			<DES>7</DES>
+			<FIS>3</FIS>
+			<VEL>6</VEL>
+			<EMP>2</EMP>
+			<MAN>2</MAN>
+			<VOL>4</VOL>
+			<FOR>0</FOR>
+		</Statistiche>
+		<StatisticheDerivate>
+			<GRI>3</GRI>
+			<COR>18</COR>
+			<BAL>3</BAL>
+			<RES>15</RES>
+			<ING>30</ING>
+			<REC>3</REC>
+			<PS>15</PS>
+			<VIGORE>0</VIGORE>
+		</StatisticheDerivate>
+		<Combattimento>
+			<Armatura>0</Armatura>
+			<BasiDiAbilita>
+				<Accortezza>8</Accortezza>
+				<Atletica>7</Atletica>
+				<Coraggio>6</Coraggio>
+				<Eludere>6</Eludere>
+				<Mischia>5</Mischia>
+				<Nascondersi>8</Nascondersi>
+				<ResistereACoercizione>9</ResistereACoercizione>
+				<ResistereAllaMagia>4</ResistereAllaMagia>
+				<Rissa>5</Rissa>
+				<Sopravvivenza>8</Sopravvivenza>
+				<Tempra>6</Tempra>
+			</BasiDiAbilita>
+			<Armi>
+				<Arma>
+					<Nome>Artigli</Nome>
+					<DAN>2d6</DAN>
+					<Effetti>N/A</Effetti>
+					<NumeroAttacchi>1</NumeroAttacchi>
+				</Arma>
+			</Armi>
+		</Combattimento>
+		<Vulnerabilita>
+			<Elemento>Unguento Anti-orchi</Elemento>
+		</Vulnerabilita>
+		<Immunita/>
+		<Capacita>
+			<Tratto>
+				<Nome>Comando del Branco</Nome>
+				<Descrizione>I capi (più grossi, spesso dipinti) guidano i branchi in combattimento.</Descrizione>
+			</Tratto>
+		</Capacita>
+		<Bottino>
+			<Oggetto>
+				<Nome>Artiglio di Nekker</Nome>
+				<Quantita>2</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Cuore di Nekker</Nome>
+				<Quantita>1</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Denti di Nekker</Nome>
+				<Quantita>1d6/2</Quantita>
+			</Oggetto>
+		</Bottino>
+	</SchedaMostro>
+	<SchedaMostro>
+		<Nome>Endriaga</Nome>
+		<InformazioniGenerali>
+			<Descrizione>Insettoidi letali e tossici, che difendono ferocemente i loro nidi. Hanno varie caste: Lavoratori, Guerrieri, Droni e Regine.</Descrizione>
+			<Altezza>Circa 2,5 m</Altezza>
+			<Peso>Circa 200 Kg</Peso>
+			<Ambiente>Paludi e pianure alluvionali</Ambiente>
+			<Intelligenza>Circa come un cane</Intelligenza>
+			<Organizzazione>Gruppi da 3 a 9</Organizzazione>
+		</InformazioniGenerali>
+		<LivelloDiMinaccia>
+			<Categoria>Facile</Categoria>
+			<Complessita>Arduo</Complessita>
+		</LivelloDiMinaccia>
+		<Ricompensa valuta="Corone">30</Ricompensa>
+		<Statistiche>
+			<INT>1</INT>
+			<RIF>6</RIF>
+			<DES>7</DES>
+			<FIS>8</FIS>
+			<VEL>7</VEL>
+			<EMP>1</EMP>
+			<MAN>1</MAN>
+			<VOL>6</VOL>
+			<FOR>0</FOR>
+		</Statistiche>
+		<StatisticheDerivate>
+			<GRI>7</GRI>
+			<COR>21</COR>
+			<BAL>4</BAL>
+			<RES>35</RES>
+			<ING>80</ING>
+			<REC>7</REC>
+			<PS>35</PS>
+			<VIGORE>0</VIGORE>
+		</StatisticheDerivate>
+		<Combattimento>
+			<Armatura>8</Armatura>
+			<BasiDiAbilita>
+				<Accortezza>5</Accortezza>
+				<Atletica>5</Atletica>
+				<Coraggio>5</Coraggio>
+				<Eludere>6</Eludere>
+				<Mischia>6</Mischia>
+				<Nascondersi>7</Nascondersi>
+				<ResistereAllaMagia>6</ResistereAllaMagia>
+				<Rissa>5</Rissa>
+				<Sopravvivenza>6</Sopravvivenza>
+				<Tempra>6</Tempra>
+			</BasiDiAbilita>
+			<Armi>
+				<Arma>
+					<Nome>Chele</Nome>
+					<DAN>3d6</DAN>
+					<Effetti>Veleno (25% se Lavoratore)</Effetti>
+					<NumeroAttacchi>1</NumeroAttacchi>
+				</Arma>
+				<Arma>
+					<Nome>Coda (Guerriero)</Nome>
+					<DAN>4d6+2</DAN>
+					<Effetti>Veleno (50%)</Effetti>
+					<NumeroAttacchi>1</NumeroAttacchi>
+				</Arma>
+				<Arma>
+					<Nome>Aculei (Drone)</Nome>
+					<DAN>1d6 per aculeo</DAN>
+					<Effetti>Veleno</Effetti>
+					<NumeroAttacchi>Molteplici</NumeroAttacchi>
+				</Arma>
+			</Armi>
+		</Combattimento>
+		<Vulnerabilita>
+			<Elemento>Unguento Anti-insettoidi</Elemento>
+		</Vulnerabilita>
+		<Resistenze>
+			<Elemento>Sanguinamento e Taglienti (Danni dimezzati)</Elemento>
+		</Resistenze>
+		<Immunita>
+			<Elemento>Veleni</Elemento>
+		</Immunita>
+		<Capacita>
+			<Tratto>
+				<Nome>Avventarsi</Nome>
+				<Descrizione>Può balzare addosso alla preda saltando fino a 4m senza rincorsa.</Descrizione>
+			</Tratto>
+		</Capacita>
+		<Bottino>
+			<Oggetto>
+				<Nome>Estratto di Veleno</Nome>
+				<Quantita>1d6/2</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Chitina</Nome>
+				<Quantita>1d6/2</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Saliva di Endriaga</Nome>
+				<Quantita>1d6/2</Quantita>
+			</Oggetto>
+		</Bottino>
+	</SchedaMostro>
+	<SchedaMostro>
+		<Nome>Golem</Nome>
+		<InformazioniGenerali>
+			<Descrizione>Costrutti di pietra ed argilla creati dai maghi come sentinelle eterne. Seguono instancabilmente i loro ordini ma sono del tutto incapaci di raziocinio indipendente.</Descrizione>
+			<Altezza>Circa 2,5 m</Altezza>
+			<Peso>Circa 900 Kg</Peso>
+			<Ambiente>Rovine e torri dei maghi</Ambiente>
+			<Intelligenza>Incapace di pensiero</Intelligenza>
+			<Organizzazione>Solitario</Organizzazione>
+		</InformazioniGenerali>
+		<LivelloDiMinaccia>
+			<Categoria>Difficile</Categoria>
+			<Complessita>Semplice</Complessita>
+		</LivelloDiMinaccia>
+		<Ricompensa valuta="Corone">1200</Ricompensa>
+		<Statistiche>
+			<INT>1</INT>
+			<RIF>10</RIF>
+			<DES>6</DES>
+			<FIS>13</FIS>
+			<VEL>4</VEL>
+			<EMP>1</EMP>
+			<MAN>1</MAN>
+			<VOL>4</VOL>
+			<FOR>0</FOR>
+		</Statistiche>
+		<StatisticheDerivate>
+			<GRI>8</GRI>
+			<COR>12</COR>
+			<BAL>2</BAL>
+			<RES>40</RES>
+			<ING>130</ING>
+			<REC>8</REC>
+			<PS>80</PS>
+			<VIGORE>0</VIGORE>
+		</StatisticheDerivate>
+		<Combattimento>
+			<Armatura>20</Armatura>
+			<BasiDiAbilita/>
+			<Armi>
+				<Arma>
+					<Nome>Pugni</Nome>
+					<DAN>6d6</DAN>
+					<Effetti>Danni massicci a scudi ed armi</Effetti>
+					<NumeroAttacchi>1</NumeroAttacchi>
+				</Arma>
+			</Armi>
+		</Combattimento>
+		<Vulnerabilita>
+			<Elemento>Unguento Anti-costrutti</Elemento>
+			<Elemento>Bombe al Dimeritium</Elemento>
+			<Elemento>Elettricità (lo immobilizza temporaneamente)</Elemento>
+		</Vulnerabilita>
+		<Immunita>
+			<Elemento>Fuoco</Elemento>
+			<Elemento>Veleni</Elemento>
+			<Elemento>Sanguinamento</Elemento>
+			<Elemento>Effetti mentali/emotivi</Elemento>
+		</Immunita>
+		<Capacita>
+			<Tratto>
+				<Nome>Carica</Nome>
+				<Descrizione>Se un avversario si allontana di oltre 10m, può caricare infliggendo danni massicci (10d6) e scaraventando indietro la vittima di 8m.</Descrizione>
+			</Tratto>
+		</Capacita>
+		<Bottino>
+			<Oggetto>
+				<Nome>Cuore di Golem</Nome>
+				<Quantita>1</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Polvere Infusa</Nome>
+				<Quantita>1d6</Quantita>
+			</Oggetto>
+		</Bottino>
+	</SchedaMostro>
+	<SchedaMostro>
+		<Nome>Gatto Mannaro</Nome>
+		<InformazioniGenerali>
+			<Descrizione>Individui maledetti per crimini atroci, diventano bestie feline agili e letali in preda a una sadica sete di sangue.</Descrizione>
+			<Altezza>Circa 2 m</Altezza>
+			<Peso>100 Kg</Peso>
+			<Ambiente>Foreste o insediamenti umani</Ambiente>
+			<Intelligenza>Umana (Sadica)</Intelligenza>
+			<Organizzazione>Solitario</Organizzazione>
+		</InformazioniGenerali>
+		<LivelloDiMinaccia>
+			<Categoria>Medio</Categoria>
+			<Complessita>Complesso</Complessita>
+		</LivelloDiMinaccia>
+		<Ricompensa valuta="Corone">500</Ricompensa>
+		<Statistiche>
+			<INT>6</INT>
+			<RIF>9</RIF>
+			<DES>8</DES>
+			<FIS>5</FIS>
+			<VEL>10</VEL>
+			<EMP>1</EMP>
+			<MAN>3</MAN>
+			<VOL>6</VOL>
+			<FOR>0</FOR>
+		</Statistiche>
+		<StatisticheDerivate>
+			<GRI>5</GRI>
+			<COR>30</COR>
+			<BAL>6</BAL>
+			<RES>25</RES>
+			<ING>50</ING>
+			<REC>5</REC>
+			<PS>50</PS>
+			<VIGORE>0</VIGORE>
+		</StatisticheDerivate>
+		<Combattimento>
+			<Armatura>6</Armatura>
+			<BasiDiAbilita>
+				<Schivare>16</Schivare>
+				<Riposizionare>18</Riposizionare>
+				<Bloccare>17</Bloccare>
+			</BasiDiAbilita>
+			<Armi>
+				<Arma>
+					<Nome>Morso</Nome>
+					<DAN>5d6</DAN>
+					<Effetti>Bilanciato, Sang. (25%)</Effetti>
+					<NumeroAttacchi>1</NumeroAttacchi>
+				</Arma>
+				<Arma>
+					<Nome>Artigli</Nome>
+					<DAN>4d6</DAN>
+					<Effetti>Bilanciato</Effetti>
+					<NumeroAttacchi>2</NumeroAttacchi>
+				</Arma>
+			</Armi>
+		</Combattimento>
+		<Vulnerabilita>
+			<Elemento>Unguento Anti-Maledetti</Elemento>
+			<Elemento>Bombe Polvere Lunare (blocca rigenerazione)</Elemento>
+		</Vulnerabilita>
+		<Immunita/>
+		<Capacita>
+			<Tratto>
+				<Nome>Rigenerazione</Nome>
+				<Descrizione>Guarisce di 3 PS per Round.</Descrizione>
+			</Tratto>
+			<Tratto>
+				<Nome>Scatto</Nome>
+				<Descrizione>Può balzare fino a 6m senza rincorsa.</Descrizione>
+			</Tratto>
+			<Tratto>
+				<Nome>Senso Magico</Nome>
+				<Descrizione>Molto sensibile alla magia entro 20m.</Descrizione>
+			</Tratto>
+			<Tratto>
+				<Nome>Alleati Felini</Nome>
+				<Descrizione>Comunica e si allea con grandi felini naturali.</Descrizione>
+			</Tratto>
+		</Capacita>
+		<Bottino>
+			<Oggetto>
+				<Nome>Denti di Gatto Mannaro</Nome>
+				<Quantita>1d6/2</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Quintessenza</Nome>
+				<Quantita>1d6/2</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Oggetti Comuni</Nome>
+				<Quantita>1d6</Quantita>
+			</Oggetto>
+		</Bottino>
+	</SchedaMostro>
+	<SchedaMostro>
+		<Nome>Grande Orso</Nome>
+		<InformazioniGenerali>
+			<Descrizione>Feroci macchine assassine di madre natura. Enormi e incredibilmente pericolosi, possono spazzare via soldati esperti con poche zampate.</Descrizione>
+			<Altezza>1,75 m (al garrese)</Altezza>
+			<Peso>600 Kg</Peso>
+			<Ambiente>Foreste e montagne</Ambiente>
+			<Intelligenza>Ferale</Intelligenza>
+			<Organizzazione>Solitario o coppia</Organizzazione>
+		</InformazioniGenerali>
+		<LivelloDiMinaccia>
+			<Categoria>Medio</Categoria>
+			<Complessita>Semplice</Complessita>
+		</LivelloDiMinaccia>
+		<Ricompensa valuta="Corone">450</Ricompensa>
+		<Statistiche>
+			<INT>1</INT>
+			<RIF>7</RIF>
+			<DES>6</DES>
+			<FIS>12</FIS>
+			<VEL>7</VEL>
+			<EMP>1</EMP>
+			<MAN>1</MAN>
+			<VOL>5</VOL>
+			<FOR>0</FOR>
+		</Statistiche>
+		<StatisticheDerivate>
+			<GRI>8</GRI>
+			<COR>21</COR>
+			<BAL>4</BAL>
+			<RES>40</RES>
+			<ING>120</ING>
+			<REC>8</REC>
+			<PS>80</PS>
+			<VIGORE>0</VIGORE>
+		</StatisticheDerivate>
+		<Combattimento>
+			<Armatura>14</Armatura>
+			<BasiDiAbilita>
+				<Accortezza>10</Accortezza>
+				<Atletica>10</Atletica>
+				<Coraggio>14</Coraggio>
+				<Intimidire>14</Intimidire>
+				<Nascondersi>8</Nascondersi>
+				<Prestanza>20</Prestanza>
+				<ResistereAllaMagia>13</ResistereAllaMagia>
+				<Rissa>13</Rissa>
+				<Sopravvivenza>12</Sopravvivenza>
+				<Tempra>16</Tempra>
+				<Schivare>12</Schivare>
+				<Riposizionare>10</Riposizionare>
+				<Bloccare>15</Bloccare>
+			</BasiDiAbilita>
+			<Armi>
+				<Arma>
+					<Nome>Morso</Nome>
+					<DAN>8d6</DAN>
+					<Effetti>Forza Distruttiva, Sanguinamento (75%)</Effetti>
+					<NumeroAttacchi>1</NumeroAttacchi>
+				</Arma>
+				<Arma>
+					<Nome>Artigli</Nome>
+					<DAN>4d6+5</DAN>
+					<Effetti>Forza Distruttiva</Effetti>
+					<NumeroAttacchi>2</NumeroAttacchi>
+				</Arma>
+			</Armi>
+		</Combattimento>
+		<Vulnerabilita>
+			<Elemento>Unguento Anti-Bestie</Elemento>
+			<Elemento>Fuoco</Elemento>
+		</Vulnerabilita>
+		<Resistenze>
+			<Elemento>Contundente</Elemento>
+			<Elemento>Perforante</Elemento>
+			<Elemento>Tagliente</Elemento>
+		</Resistenze>
+		<Capacita>
+			<Tratto>
+				<Nome>Alzarsi sulle Zampe</Nome>
+				<Descrizione>Può usare l'intero round per alzarsi e colpire con due artigli contemporaneamente per 6d6 danni bloccando la vittima a terra prona.</Descrizione>
+			</Tratto>
+		</Capacita>
+		<Bottino>
+			<Oggetto>
+				<Nome>Carne Cruda</Nome>
+				<Quantita>3d6</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Grasso d'Orso</Nome>
+				<Quantita>1d6</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Pelle d'Orso</Nome>
+				<Quantita>1d6/2</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Ossa di Bestia</Nome>
+				<Quantita>2d6</Quantita>
+			</Oggetto>
+		</Bottino>
+	</SchedaMostro>
+	<!-- ================= BESTIE COMUNI MINORI ================= -->
+	<!-- (Le bestie comuni hanno intelligenza ferale, armatura 0 e vulnerabilità all'Unguento Anti-Bestie) -->
+	<SchedaMostro>
+		<Nome>Bue</Nome>
+		<Statistiche>
+			<INT>1</INT>
+			<RIF>3</RIF>
+			<DES>3</DES>
+			<FIS>14</FIS>
+			<VEL>6</VEL>
+			<EMP>2</EMP>
+			<MAN>1</MAN>
+			<VOL>6</VOL>
+			<FOR>0</FOR>
+		</Statistiche>
+		<StatisticheDerivate>
+			<GRI>10</GRI>
+			<COR>18</COR>
+			<BAL>3</BAL>
+			<RES>50</RES>
+			<ING>140</ING>
+			<REC>10</REC>
+			<PS>50</PS>
+		</StatisticheDerivate>
+		<Combattimento>
+			<Armatura>0</Armatura>
+			<Armi>
+				<Arma>
+					<Nome>Incornata</Nome>
+					<DAN>5d6</DAN>
+					<Effetti>Sang (50%)</Effetti>
+					<NumeroAttacchi>1</NumeroAttacchi>
+				</Arma>
+				<Arma>
+					<Nome>Zoccoli</Nome>
+					<DAN>4d6</DAN>
+					<Effetti>N/A</Effetti>
+					<NumeroAttacchi>1</NumeroAttacchi>
+				</Arma>
+			</Armi>
+		</Combattimento>
+		<Capacita>
+			<Tratto>
+				<Nome>Carica</Nome>
+				<Descrizione>Se si allontana 10m, carica per 8d6 danni scaraventando a 8m.</Descrizione>
+			</Tratto>
+		</Capacita>
+		<Bottino>
+			<Oggetto>
+				<Nome>Carne Cruda</Nome>
+				<Quantita>2d6</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Ossa di Bestia</Nome>
+				<Quantita>2d6</Quantita>
+			</Oggetto>
+		</Bottino>
+	</SchedaMostro>
+	<SchedaMostro>
+		<Nome>Cane / Cane Selvatico</Nome>
+		<Statistiche>
+			<INT>1</INT>
+			<RIF>3</RIF>
+			<DES>5</DES>
+			<FIS>3</FIS>
+			<VEL>5</VEL>
+			<EMP>4</EMP>
+			<MAN>1</MAN>
+			<VOL>5</VOL>
+			<FOR>0</FOR>
+		</Statistiche>
+		<StatisticheDerivate>
+			<GRI>4</GRI>
+			<COR>15</COR>
+			<BAL>3</BAL>
+			<RES>20</RES>
+			<ING>30</ING>
+			<REC>4</REC>
+			<PS>20</PS>
+		</StatisticheDerivate>
+		<Combattimento>
+			<Armatura>0</Armatura>
+			<Armi>
+				<Arma>
+					<Nome>Morso</Nome>
+					<DAN>2d6</DAN>
+					<Effetti>N/A</Effetti>
+					<NumeroAttacchi>1</NumeroAttacchi>
+				</Arma>
+			</Armi>
+		</Combattimento>
+		<Capacita>
+			<Tratto>
+				<Nome>Fiuto</Nome>
+				<Descrizione>Segue tracce col fiuto senza penalità.</Descrizione>
+			</Tratto>
+		</Capacita>
+		<Bottino>
+			<Oggetto>
+				<Nome>Carne Cruda</Nome>
+				<Quantita>1d6/2</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Grasso di Cane</Nome>
+				<Quantita>1d6/2</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Ossa di Bestia</Nome>
+				<Quantita>1d6</Quantita>
+			</Oggetto>
+		</Bottino>
+	</SchedaMostro>
+	<SchedaMostro>
+		<Nome>Cavallo</Nome>
+		<Statistiche>
+			<INT>1</INT>
+			<RIF>4</RIF>
+			<DES>5</DES>
+			<FIS>12</FIS>
+			<VEL>12</VEL>
+			<EMP>4</EMP>
+			<MAN>1</MAN>
+			<VOL>4</VOL>
+			<FOR>0</FOR>
+		</Statistiche>
+		<StatisticheDerivate>
+			<GRI>8</GRI>
+			<COR>36</COR>
+			<BAL>7</BAL>
+			<RES>40</RES>
+			<ING>120</ING>
+			<REC>8</REC>
+			<PS>40</PS>
+		</StatisticheDerivate>
+		<Combattimento>
+			<Armatura>0</Armatura>
+			<Armi>
+				<Arma>
+					<Nome>Zoccoli / Morso</Nome>
+					<DAN>4d6+2</DAN>
+					<Effetti>N/A</Effetti>
+					<NumeroAttacchi>1</NumeroAttacchi>
+				</Arma>
+			</Armi>
+		</Combattimento>
+		<Bottino>
+			<Oggetto>
+				<Nome>Carne Cruda</Nome>
+				<Quantita>1d10</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Ossa di Bestia</Nome>
+				<Quantita>1d10</Quantita>
+			</Oggetto>
+		</Bottino>
+	</SchedaMostro>
+	<SchedaMostro>
+		<Nome>Gatto</Nome>
+		<Statistiche>
+			<INT>1</INT>
+			<RIF>4</RIF>
+			<DES>6</DES>
+			<FIS>1</FIS>
+			<VEL>6</VEL>
+			<EMP>3</EMP>
+			<MAN>1</MAN>
+			<VOL>4</VOL>
+			<FOR>0</FOR>
+		</Statistiche>
+		<StatisticheDerivate>
+			<GRI>2</GRI>
+			<COR>18</COR>
+			<BAL>3</BAL>
+			<RES>10</RES>
+			<ING>10</ING>
+			<REC>2</REC>
+			<PS>10</PS>
+		</StatisticheDerivate>
+		<Combattimento>
+			<Armatura>0</Armatura>
+			<Armi>
+				<Arma>
+					<Nome>Artigli</Nome>
+					<DAN>1d6/2</DAN>
+					<Effetti>N/A</Effetti>
+					<NumeroAttacchi>1</NumeroAttacchi>
+				</Arma>
+				<Arma>
+					<Nome>Morso</Nome>
+					<DAN>1d6</DAN>
+					<Effetti>N/A</Effetti>
+					<NumeroAttacchi>1</NumeroAttacchi>
+				</Arma>
+			</Armi>
+		</Combattimento>
+		<Capacita>
+			<Tratto>
+				<Nome>Sintonia Magica</Nome>
+				<Descrizione>Può vedere invisibilità e magia fino a 18m.</Descrizione>
+			</Tratto>
+		</Capacita>
+		<Bottino>
+			<Oggetto>
+				<Nome>Carne Cruda</Nome>
+				<Quantita>1d6/2</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Ossa di Bestia</Nome>
+				<Quantita>1d6/2</Quantita>
+			</Oggetto>
+		</Bottino>
+	</SchedaMostro>
+	<SchedaMostro>
+		<Nome>Mulo</Nome>
+		<Statistiche>
+			<INT>1</INT>
+			<RIF>4</RIF>
+			<DES>4</DES>
+			<FIS>11</FIS>
+			<VEL>9</VEL>
+			<EMP>3</EMP>
+			<MAN>1</MAN>
+			<VOL>7</VOL>
+			<FOR>0</FOR>
+		</Statistiche>
+		<StatisticheDerivate>
+			<GRI>9</GRI>
+			<COR>27</COR>
+			<BAL>5</BAL>
+			<RES>45</RES>
+			<ING>110</ING>
+			<REC>9</REC>
+			<PS>45</PS>
+		</StatisticheDerivate>
+		<Combattimento>
+			<Armatura>0</Armatura>
+			<Armi>
+				<Arma>
+					<Nome>Zoccoli</Nome>
+					<DAN>2d6+2</DAN>
+					<Effetti>N/A</Effetti>
+					<NumeroAttacchi>1</NumeroAttacchi>
+				</Arma>
+			</Armi>
+		</Combattimento>
+		<Bottino>
+			<Oggetto>
+				<Nome>Carne Cruda</Nome>
+				<Quantita>1d10</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Ossa di Bestia</Nome>
+				<Quantita>1d10</Quantita>
+			</Oggetto>
+		</Bottino>
+	</SchedaMostro>
+	<SchedaMostro>
+		<Nome>Serpente</Nome>
+		<Statistiche>
+			<INT>1</INT>
+			<RIF>4</RIF>
+			<DES>3</DES>
+			<FIS>1</FIS>
+			<VEL>6</VEL>
+			<EMP>2</EMP>
+			<MAN>1</MAN>
+			<VOL>3</VOL>
+			<FOR>0</FOR>
+		</Statistiche>
+		<StatisticheDerivate>
+			<GRI>2</GRI>
+			<COR>18</COR>
+			<BAL>3</BAL>
+			<RES>10</RES>
+			<ING>10</ING>
+			<REC>2</REC>
+			<PS>10</PS>
+		</StatisticheDerivate>
+		<Combattimento>
+			<Armatura>0</Armatura>
+			<Armi>
+				<Arma>
+					<Nome>Morso</Nome>
+					<DAN>1d6</DAN>
+					<Effetti>Veleno (75%)</Effetti>
+					<NumeroAttacchi>1</NumeroAttacchi>
+				</Arma>
+			</Armi>
+		</Combattimento>
+		<Bottino>
+			<Oggetto>
+				<Nome>Estratto di Veleno</Nome>
+				<Quantita>1d6/2</Quantita>
+			</Oggetto>
+		</Bottino>
+	</SchedaMostro>
+	<SchedaMostro>
+		<Nome>Uccello</Nome>
+		<Statistiche>
+			<INT>1</INT>
+			<RIF>3</RIF>
+			<DES>4</DES>
+			<FIS>1</FIS>
+			<VEL>2 (7 in volo)</VEL>
+			<EMP>3</EMP>
+			<MAN>1</MAN>
+			<VOL>4</VOL>
+			<FOR>0</FOR>
+		</Statistiche>
+		<StatisticheDerivate>
+			<GRI>2</GRI>
+			<COR>10</COR>
+			<BAL>2</BAL>
+			<RES>10</RES>
+			<ING>10</ING>
+			<REC>2</REC>
+			<PS>10</PS>
+		</StatisticheDerivate>
+		<Combattimento>
+			<Armatura>0</Armatura>
+			<Armi>
+				<Arma>
+					<Nome>Artigli</Nome>
+					<DAN>1d6/2</DAN>
+					<Effetti>N/A</Effetti>
+					<NumeroAttacchi>1</NumeroAttacchi>
+				</Arma>
+			</Armi>
+		</Combattimento>
+		<Capacita>
+			<Tratto>
+				<Nome>Volo</Nome>
+				<Descrizione>Può volare come azione. Se colpito cade e subisce danni da caduta.</Descrizione>
+			</Tratto>
+		</Capacita>
+		<Bottino>
+			<Oggetto>
+				<Nome>Penne</Nome>
+				<Quantita>1d6</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Carne Cruda</Nome>
+				<Quantita>1d6/2</Quantita>
+			</Oggetto>
+		</Bottino>
+	</SchedaMostro>
+	<!-- ================= LUPI E WARG ================= -->
+	<SchedaMostro>
+		<Nome>Lupo</Nome>
+		<InformazioniGenerali>
+			<Descrizione>Predatori comuni che cacciano in branco nelle foreste e pianure, letali se riescono a circondare la preda.</Descrizione>
+			<Altezza>Circa 0,8m al garrese</Altezza>
+			<Peso>Circa 68 Kg</Peso>
+			<Ambiente>Foreste e pianure</Ambiente>
+			<Intelligenza>Circa come un cane</Intelligenza>
+			<Organizzazione>Branchi da 3 a 6</Organizzazione>
+		</InformazioniGenerali>
+		<LivelloDiMinaccia>
+			<Categoria>Facile</Categoria>
+			<Complessita>Semplice</Complessita>
+		</LivelloDiMinaccia>
+		<Ricompensa valuta="Corone">10</Ricompensa>
+		<Lore>
+			<SuperstizioneComune abilita="Istruzione"
+			                     cd="8">
+				<Fonte>Rodolf Kazmer</Fonte>
+				<Testo>Non c'è molto da dire sui lupi. Eh, sono dei maledetti bastardi che vivono nelle foreste e attaccano i viaggiatori. Di solito agiscono in branchi di 5 o 6 e hanno paura del fuoco. Se dovete combatterli fate in modo che non possano circondarvi, perché vi salteranno addosso da tutte le parti. Non è un bel modo di morire, secondo me. Le cose vanno sempre peggio dall'inizio della guerra, con tutti quei cadaveri in giro i lupi sono sempre più spavaldi. Eh, tanti credono che siano pure un segno di sventura. Non mi ricordo più quante profezie iniziano con un lupo. Seriamente, sono bestiacce maledette.</Testo>
+			</SuperstizioneComune>
+			<ConoscenzaDeiWitcher abilita="Arte del Witcher"
+			                      cd="14">
+				<Testo>Pur essendoci molti strani racconti e miti sui lupi, tutti sono concordi nell'affermare che non sono creature magiche.</Testo>
+			</ConoscenzaDeiWitcher>
+		</Lore>
+		<Statistiche>
+			<INT>1</INT>
+			<RIF>4</RIF>
+			<DES>6</DES>
+			<FIS>5</FIS>
+			<VEL>7</VEL>
+			<EMP>1</EMP>
+			<MAN>1</MAN>
+			<VOL>4</VOL>
+			<FOR>0</FOR>
+		</Statistiche>
+		<StatisticheDerivate>
+			<GRI>4</GRI>
+			<COR>21</COR>
+			<BAL>4</BAL>
+			<RES>20</RES>
+			<ING>50</ING>
+			<REC>4</REC>
+			<PS>20</PS>
+			<VIGORE>0</VIGORE>
+		</StatisticheDerivate>
+		<Combattimento>
+			<Armatura>0</Armatura>
+			<BasiDiAbilita/>
+			<Armi>
+				<Arma>
+					<Nome>Morso</Nome>
+					<DAN>2d6</DAN>
+					<Effetti>N/A</Effetti>
+					<NumeroAttacchi>1</NumeroAttacchi>
+				</Arma>
+			</Armi>
+		</Combattimento>
+		<Vulnerabilita>
+			<Elemento>Unguento Anti-bestie</Elemento>
+		</Vulnerabilita>
+		<Immunita/>
+		<Capacita>
+			<Tratto>
+				<Nome>Fiuto</Nome>
+				<Descrizione>Un lupo può seguire le tracce di una creatura senza bisogno di segnali visivi o uditivi senza alcuna penalità.</Descrizione>
+			</Tratto>
+			<Tratto>
+				<Nome>Vista Notturna</Nome>
+				<Descrizione>Un lupo può agire in zone di luce fioca senza penalità.</Descrizione>
+			</Tratto>
+		</Capacita>
+		<Bottino>
+			<Oggetto>
+				<Nome>Fegato di Lupo</Nome>
+				<Quantita>1</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Grasso di Cane</Nome>
+				<Quantita>1d6</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Ossa di Bestia</Nome>
+				<Quantita>1d6</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Pelle di Lupo</Nome>
+				<Quantita>1</Quantita>
+			</Oggetto>
+		</Bottino>
+	</SchedaMostro>
+	<SchedaMostro>
+		<Nome>Warg</Nome>
+		<InformazioniGenerali>
+			<Descrizione>I warg sono più grossi dei lupi comuni, hanno la pelliccia marrone-rossiccia e occhi rossi luminescenti. Sono decisamente più intelligenti e guidano i branchi.</Descrizione>
+			<Altezza>Circa 1m al garrese</Altezza>
+			<Peso>Circa 80 Kg</Peso>
+			<Ambiente>Foreste e pianure</Ambiente>
+			<Intelligenza>Superiore a un cane</Intelligenza>
+			<Organizzazione>Solitario (alla guida di branchi di lupi)</Organizzazione>
+		</InformazioniGenerali>
+		<LivelloDiMinaccia>
+			<Categoria>Media</Categoria>
+			<Complessita>Semplice</Complessita>
+		</LivelloDiMinaccia>
+		<Ricompensa valuta="Corone">20</Ricompensa>
+		<Lore>
+			<SuperstizioneComune abilita="Istruzione"
+			                     cd="8">
+				<Fonte>Rodolf Kazmer</Fonte>
+				<Testo>Non c'è molto da dire sui lupi. Eh, sono dei maledetti bastardi che vivono nelle foreste e attaccano i viaggiatori. Di solito agiscono in branchi di 5 o 6 e hanno paura del fuoco. Se dovete combatterli fate in modo che non possano circondarvi, perché vi salteranno addosso da tutte le parti. Non è un bel modo di morire, secondo me. Le cose vanno sempre peggio dall'inizio della guerra, con tutti quei cadaveri in giro i lupi sono sempre più spavaldi. Eh, tanti credono che siano pure un segno di sventura. Non mi ricordo più quante profezie iniziano con un lupo. Seriamente, sono bestiacce maledette.</Testo>
+			</SuperstizioneComune>
+			<ConoscenzaDeiWitcher abilita="Arte del Witcher"
+			                      cd="14">
+				<Testo>I warg sono assai più misteriosi per la popolazione. Quando un branco diventa abbastanza grande o controlla un territorio sufficientemente vasto, può capitare che tra loro ci sia un warg. Sono lupi molto grossi e robusti che assurgono al ruolo di capobranco. Persino i witcher più eruditi non sono certi di cosa inneschi la trasformazione da lupo a warg, ma la loro esistenza è indiscutibile.</Testo>
+			</ConoscenzaDeiWitcher>
+		</Lore>
+		<Statistiche>
+			<INT>2</INT>
+			<RIF>5</RIF>
+			<DES>7</DES>
+			<FIS>6</FIS>
+			<VEL>8</VEL>
+			<EMP>1</EMP>
+			<MAN>1</MAN>
+			<VOL>6</VOL>
+			<FOR>0</FOR>
+		</Statistiche>
+		<StatisticheDerivate>
+			<GRI>6</GRI>
+			<COR>24</COR>
+			<BAL>4</BAL>
+			<RES>30</RES>
+			<ING>60</ING>
+			<REC>6</REC>
+			<PS>30</PS>
+			<VIGORE>0</VIGORE>
+		</StatisticheDerivate>
+		<Combattimento>
+			<Armatura>0</Armatura>
+			<BasiDiAbilita>
+				<Accortezza>6</Accortezza>
+				<Atletica>6</Atletica>
+				<Coraggio>6</Coraggio>
+				<Eludere>6</Eludere>
+				<Mischia>6</Mischia>
+				<Nascondersi>6</Nascondersi>
+				<ResistereAllaMagia>2</ResistereAllaMagia>
+				<Rissa>6</Rissa>
+				<Sopravvivenza>9</Sopravvivenza>
+				<Tempra>5</Tempra>
+			</BasiDiAbilita>
+			<Armi>
+				<Arma>
+					<Nome>Morso</Nome>
+					<DAN>2d6</DAN>
+					<Effetti>N/A</Effetti>
+					<NumeroAttacchi>1</NumeroAttacchi>
+				</Arma>
+			</Armi>
+		</Combattimento>
+		<Vulnerabilita>
+			<Elemento>Unguento Anti-bestie</Elemento>
+		</Vulnerabilita>
+		<Immunita/>
+		<Capacita>
+			<Tratto>
+				<Nome>Capobranco</Nome>
+				<Descrizione>Finché il warg è vivo tutti i lupi ottengono un bonus di +4 al Coraggio. Inoltre, il warg è in grado di dare ordini al resto del branco (es. 'attacca alle spalle', 'aspetta', 'vai laggiù').</Descrizione>
+			</Tratto>
+			<Tratto>
+				<Nome>Fiuto</Nome>
+				<Descrizione>Può seguire le tracce di una creatura senza bisogno di segnali visivi o uditivi senza alcuna penalità.</Descrizione>
+			</Tratto>
+			<Tratto>
+				<Nome>Vista Notturna</Nome>
+				<Descrizione>Può agire in zone di luce fioca senza penalità.</Descrizione>
+			</Tratto>
+		</Capacita>
+		<Bottino>
+			<Oggetto>
+				<Nome>Fegato di Lupo</Nome>
+				<Quantita>1</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Grasso di Cane</Nome>
+				<Quantita>1d6</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Ossa di Bestia</Nome>
+				<Quantita>1d6</Quantita>
+			</Oggetto>
+			<Oggetto>
+				<Nome>Pelle di Lupo</Nome>
+				<Quantita>1</Quantita>
+			</Oggetto>
+		</Bottino>
+	</SchedaMostro>
+</Bestiario>

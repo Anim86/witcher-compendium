@@ -87,7 +87,12 @@
             "threat": "Difficile Complesso",
             "reward": 1500,
             "monsterType": "Draconid",
-            "difficulty": "MEDIUM"
+            "difficulty": "MEDIUM",
+            "height": "",
+            "weight": "",
+            "environment": "",
+            "organization": "",
+            "vulnerability": ""
         },
         "derivedStats": {
             "rec": {
@@ -114,11 +119,17 @@
                 "unmodifiedMax": 0
             }
         },
-        "description": "<p>Predatori eccezionali capaci di battersi tanto a terra quanto in cielo, le scaltrocertole sono note per la coda simile a una frusta trasudante veleno. Possono sputare fuoco e stordire i nemici con esplosioni soniche. Solo un'attenta preparazione e l'uso di unguenti specifici permettono di sperare nella sopravvivenza durante uno scontro con questi dragonidi.</p>",
+        "description": "<p>Le scaltrocertole – o dragolucertole – sono bestie infami. Sono una specie di drago, temibili e dotate di magia. Amano vivere nelle paludi e devi stare attento alle loro code spinate, colpiscono così velocemente che neppure un witcher può pararle! In certi posti dicono che se dai da mangiare a una scaltrocertola un pesce marinato nel miele l'animale si placa, ma è pura fantasia. – Rodolf Kazmer</p>",
         "sourcebook": "DW 110",
         "monsterType": "Draconid",
         "difficulty": "MEDIUM",
-        "bounty": 1500
+        "bounty": 1500,
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "organization": "",
+        "intelligence": "",
+        "vulnerability": ""
     },
     "items": [],
     "_id": "31e65a29f7d048bc",

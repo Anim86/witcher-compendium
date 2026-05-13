@@ -79,7 +79,12 @@
             "threat": "Difficile",
             "reward": 0,
             "monsterType": "Relict",
-            "difficulty": "HARD"
+            "difficulty": "HARD",
+            "height": "",
+            "weight": "",
+            "environment": "",
+            "organization": "",
+            "vulnerability": ""
         },
         "derivedStats": {
             "rec": {
@@ -101,11 +106,17 @@
                 "max": 0
             }
         },
-        "description": "<p>Questa creatura non è Francine Marchand, ma i suoi stessi capelli, cresciuti sino a proporzioni enormi e maligne a causa di una maledizione. Appare come un enorme ragno peloso composto da otto enormi ciocche sospese al soffitto. Il mostro “vede” grazie alle vibrazioni del terreno.</p>",
+        "description": "<p>Questa creatura non è Francine Marchand, ma i suoi stessi capelli, cresciuti sino a proporzioni enormi e maligne a causa di una maledizione. Appare come un enorme ragno peloso composto da otto enormi ciocche sospese al soffitto.</p>",
         "sourcebook": "LR 154",
         "monsterType": "Relict",
         "difficulty": "HARD",
-        "bounty": 0
+        "bounty": 0,
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "organization": "",
+        "intelligence": "",
+        "vulnerability": ""
     },
     "items": [
         {

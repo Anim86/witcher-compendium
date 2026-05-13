@@ -106,7 +106,12 @@
             "threat": "Medio",
             "reward": 400,
             "monsterType": "Relict",
-            "difficulty": "MEDIUM"
+            "difficulty": "MEDIUM",
+            "height": "",
+            "weight": "",
+            "environment": "",
+            "organization": "",
+            "vulnerability": ""
         },
         "derivedStats": {
             "hp": {
@@ -160,8 +165,14 @@
                 "unmodifiedMax": 20
             }
         },
-        "description": "<h3>Oberhasil (Silvano)</h3><p>I silvani sono creature ancestrali molto rare. Somigliano a uomini corpulenti con corna e zampe da caprone. Di carattere tanto dispettoso quanto pigro, Oberhasil è un leader eccentrico per la sua troupe.</p><h3>Capacità</h3><ul><li><strong>Scoppio di Fiamme:</strong> Palla di fuoco (10m), 4d6 danni, 75% A Fuoco.</li><li><strong>Calpestare:</strong> Batte lo zoccolo, CD 15 Atletica per non essere Vacillanti.</li><li><strong>Soffio di Fuoco:</strong> Cono di 2m, 4d6 danni, 75% A Fuoco.</li><li><strong>Forza Schiacciante:</strong> Gli attacchi non possono essere parati e raddoppiano i danni da ablazione.</li></ul>",
-        "sourcebook": "LR 34"
+        "description": "<p>Oberhasil è il leader della troupe di artisti dell'Alderwood. Sebbene appaia come un buffo silvano mangione e bevitore, possiede un'antica saggezza e un profondo legame con la foresta. Ha una particolare predilezione per la vodka di Mahakam.</p>",
+        "sourcebook": "LR 34",
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "organization": "",
+        "intelligence": "",
+        "vulnerability": ""
     },
     "items": [
         {

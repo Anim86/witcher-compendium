@@ -69,6 +69,12 @@ WITCHER.statMap = {
         label: 'WITCHER.Actor.St.Luck',
         labelShort: 'WITCHER.Actor.Stat.Luck'
     },
+    toxicity: {
+        origin: 'stats',
+        name: 'toxicity',
+        label: 'WITCHER.Actor.Stat.Toxicity',
+        labelShort: 'WITCHER.Actor.Stat.ToxicityShort'
+    },
 
     stun: {
         origin: 'derivedStats',

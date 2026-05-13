@@ -11,9 +11,9 @@
                 "unmodifiedMax": 1
             },
             "ref": {
-                "value": 5,
-                "max": 5,
-                "unmodifiedMax": 5
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
             },
             "dex": {
                 "value": 7,
@@ -52,40 +52,35 @@
             }
         },
         "skills": {
-            "accortezza": {
-                "value": 8
+            "int": {},
+            "ref": {
+                "dodge": {
+                    "value": 5,
+                    "isVisible": true
+                }
             },
-            "atletica": {
-                "value": 6
+            "dex": {
+                "athletics": {
+                    "value": 3,
+                    "isVisible": true
+                }
             },
-            "coraggio": {
-                "value": 8
-            },
-            "eludere": {
-                "value": 5
-            },
-            "mischia": {
-                "value": 6
-            },
-            "nascondersi": {
-                "value": 5
-            },
-            "rissa": {
-                "value": 6
-            },
-            "sopravvivenza": {
-                "value": 6
-            },
-            "tempra": {
-                "value": 6
-            }
+            "body": {},
+            "emp": {},
+            "cra": {},
+            "will": {}
         },
         "details": {
-            "biography": "<p>La gente non sa un cavolo dei drowner. Le favole raccontano che quando un figlio di puttana abbastanza cattivo muore e il suo corpo finisce in un fiume o lago risorge come drowner. Sono bestiacce senza alcun cervello, che vivono per affogare dei poveri bastardi e mangiarsi i cadaveri. – Rodolf Kazmer</p><p>I drowner non sono malfattori morti. Come tutti i necrofagi, i drowner sono creature di un altro piano giunte molti secoli fa in seguito alla Congiunzione delle Sfere. Preferiscono vivere sulle coste, nei fiumi o negli acquitrini. Sono anfibi e trascorrono buona parte del tempo in acqua.</p>",
+            "biography": "<p>Bestiacce anfibie prive di intelletto che vivono per affogare le vittime e mangiarsi i cadaveri.</p>",
             "threat": "Facile",
-            "reward": 30,
+            "reward": 10,
             "monsterType": "Necrophage",
-            "difficulty": "EASY"
+            "difficulty": "SEMPLICE",
+            "height": "Normale umana",
+            "weight": "Normale umano",
+            "environment": "Vicino a laghi, fiumi e coste",
+            "organization": "Gruppi da 3 a 6",
+            "vulnerability": "Olio per necrofagi, Fuoco"
         },
         "derivedStats": {
             "vigor": {
@@ -94,58 +89,66 @@
                 "unmodifiedMax": 0
             },
             "rec": {
-                "value": 6,
-                "max": 6,
-                "unmodifiedMax": 6
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
             },
             "resolve": {
-                "value": 30,
-                "max": 30,
-                "unmodifiedMax": 30
+                "value": 18,
+                "max": 18,
+                "unmodifiedMax": 18
             },
             "stun": {
-                "value": 6,
-                "max": 6
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
             },
             "woundTreshold": {
-                "value": 6,
-                "max": 6
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
             },
             "hp": {
-                "value": 30,
-                "max": 30,
-                "unmodifiedMax": 30
+                "value": 25,
+                "max": 25,
+                "unmodifiedMax": 25
             },
             "sta": {
-                "value": 30,
-                "max": 30,
-                "unmodifiedMax": 30
+                "value": 25,
+                "max": 25,
+                "unmodifiedMax": 25
             }
         },
-        "description": "<p>La gente non sa un cavolo dei drowner. Le favole raccontano che quando un figlio di puttana abbastanza cattivo muore e il suo corpo finisce in un fiume o lago risorge come drowner. Sono bestiacce senza alcun cervello, che vivono per affogare dei poveri bastardi e mangiarsi i cadaveri. – Rodolf Kazmer</p><p>I drowner non sono malfattori morti. Come tutti i necrofagi, i drowner sono creature di un altro piano giunte molti secoli fa in seguito alla Congiunzione delle Sfere. Preferiscono vivere sulle coste, nei fiumi o negli acquitrini. Sono anfibi e trascorrono buona parte del tempo in acqua.</p>",
+        "description": "<p>Bestiacce anfibie prive di intelletto che vivono per affogare le vittime e mangiarsi i cadaveri.</p>",
         "sourcebook": "MB 277",
         "monsterType": "Necrophage",
         "difficulty": "EASY",
-        "bounty": 30,
-        "environment": "Acquitrini, coste, fiumi",
-        "organization": "Solitari o branchi (3-12)",
-        "height": "Circa 1.8m",
-        "weight": "Circa 70kg",
+        "bounty": 10,
+        "environment": "Vicino a laghi, fiumi e coste",
+        "organization": "Gruppi da 3 a 6",
+        "height": "Normale umana",
+        "weight": "Normale umano",
         "superstition": "I drowner sono persone annegate tornate in vita per vendicarsi. (Falso)",
         "vulnerability": "Olio per necrofagi, Fuoco",
-        "resistances": "Nessuna particolare"
+        "resistances": "Nessuna particolare",
+        "armorHead": 0,
+        "armorUpper": 0,
+        "armorLower": 0,
+        "intelligence": "Circa quanto un pesce",
+        "common": "Le favole raccontano che quando un bastardo abbastanza cattivo muore nell'acqua risorge come drowner.",
+        "academicKnowledge": ""
     },
     "items": [
         {
-            "_id": "d136bdfd1e754cc8",
+            "_id": "4a84e68554324bec",
             "name": "Artigli",
             "type": "weapon",
-            "img": "modules/witcher-compendium/assets/SPECIAL/trait_artigli.webp",
+            "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
             "system": {
-                "description": "",
-                "damage": "3d6",
+                "description": "N/A",
+                "damage": "",
                 "accuracy": 0,
-                "effects": ""
+                "effects": "N/A"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -153,12 +156,25 @@
             }
         },
         {
-            "_id": "b818db18b1a54ac9",
-            "name": "[Capacità] Anfibio",
-            "type": "note",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "_id": "cf7a5741326149cf",
+            "name": "Cervello di Drowner (x1)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "<p>Un drowner può sopravvivere sott'acqua senza limiti di tempo. Non può affogare, né subisce penalità per agire sotto la superficie.</p>"
+                "description": "Quantità: 1"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "3399feb564e146ea",
+            "name": "Essenza Acquatica (x1)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 1"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

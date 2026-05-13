@@ -87,7 +87,12 @@
             "threat": "Medio Complesso",
             "reward": 700,
             "monsterType": "Vampire",
-            "difficulty": "MEDIUM"
+            "difficulty": "MEDIUM",
+            "height": "",
+            "weight": "",
+            "environment": "",
+            "organization": "",
+            "vulnerability": ""
         },
         "derivedStats": {
             "rec": {
@@ -114,11 +119,17 @@
                 "unmodifiedMax": 0
             }
         },
-        "description": "<p>I garkain sono vampiri d'intelligenza ferale che cacciano in branco guidati da un alfa. Impiegano mobilità verticale e scariche di energia psichica per disorientare le prede prima di massacrarle con gli artigli. Godono tanto nel bere sangue quanto nel massacrare violentemente le loro vittime, lasciando spesso scene raccapriccianti nei centri urbani dove operano.</p>",
+        "description": "<p>Dicono che se vedi un garkain è già troppo tardi! Non ho mai avuto questo piacere, ma ho visto alcuni disegni. I garkain si nascondono tra i gargoyle e balzano sui passanti per farli a pezzi con gli artigli. Alcuni sostengono che molti gargoyle della capitale del Nazair erano garkain, eh. – Rodolf Kazmer</p>",
         "sourcebook": "DW 118",
         "monsterType": "Vampire",
         "difficulty": "MEDIUM",
-        "bounty": 700
+        "bounty": 700,
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "organization": "",
+        "intelligence": "",
+        "vulnerability": ""
     },
     "items": [],
     "_id": "e4d1b092f7c638a5",

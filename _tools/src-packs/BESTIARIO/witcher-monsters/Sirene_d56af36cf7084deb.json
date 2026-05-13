@@ -81,6 +81,12 @@
             },
             "lanciareIncantesimi": {
                 "value": 10
+            },
+            "will": {
+                "spellCasting": {
+                    "value": 2,
+                    "isVisible": true
+                }
             }
         },
         "details": {
@@ -88,7 +94,12 @@
             "threat": "Facile",
             "reward": 20,
             "monsterType": "Hybrid",
-            "difficulty": "EASY"
+            "difficulty": "EASY",
+            "height": "",
+            "weight": "",
+            "environment": "",
+            "organization": "",
+            "vulnerability": ""
         },
         "derivedStats": {
             "vigor": {
@@ -129,19 +140,25 @@
         "sourcebook": "MB 291",
         "monsterType": "Hybrid",
         "difficulty": "EASY",
-        "bounty": 20
+        "bounty": 20,
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "organization": "",
+        "intelligence": "",
+        "vulnerability": ""
     },
     "items": [
         {
-            "_id": "90d478240ab64793",
-            "name": "Artigli",
+            "_id": "494444e75ec44bfd",
+            "name": "Attacchi Naturali",
             "type": "weapon",
-            "img": "modules/witcher-compendium/assets/SPECIAL/trait_artigli.webp",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
-                "description": "",
-                "damage": "2d6+2",
+                "description": "N/A",
+                "damage": "",
                 "accuracy": 0,
-                "effects": "-1 PA"
+                "effects": "N/A"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -149,28 +166,12 @@
             }
         },
         {
-            "_id": "1b092d147d3347f3",
-            "name": "Coda",
-            "type": "weapon",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_artigli.webp",
-            "system": {
-                "description": "",
-                "damage": "3d6+2",
-                "accuracy": 0,
-                "effects": ""
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "s1",
+            "_id": "94aed23c4bec494a",
             "name": "[Capacità] Illusione",
             "type": "note",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Può sembrare una bella donna. Dissipabile con Lanciare Incantesimi CD 15.</p>"
+                "description": "<p>Crea un'illusione per sembrare una bella donna, che si dissipa con un tiro Lanciare Incantesimi CD 15.</p>"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -178,12 +179,51 @@
             }
         },
         {
-            "_id": "30fb80b87c29447e",
+            "_id": "6557f32c90ce4fc1",
             "name": "[Capacità] Urlo",
             "type": "note",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Urlo entro 10m: tiro salvezza Grinta con penalità -1.</p>"
+                "description": "<p>Costringe chi si trova entro 10m a un TS Grinta -1.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "2e72292567354555",
+            "name": "[Capacità] Volo",
+            "type": "note",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "<p>Se subisce 5+ danni mentre vola, precipita.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "f3e09e980277440d",
+            "name": "Essenza Acquatica (x1d6)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 1d6"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "6a083837859c44ec",
+            "name": "Corde Vocali di Sirena (x1)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 1"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

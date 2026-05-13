@@ -1,0 +1,289 @@
+{
+    "_id": "e958d3ecee13529b",
+    "name": "Warg",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/warg.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 2,
+                "max": 2,
+                "unmodifiedMax": 2
+            },
+            "ref": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "dex": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "body": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "spd": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "emp": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "cra": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "will": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "skills": {
+            "int": {
+                "awareness": {
+                    "value": 4,
+                    "isVisible": true
+                },
+                "wildernessSurvival": {
+                    "value": 7,
+                    "isVisible": true
+                }
+            },
+            "ref": {
+                "brawling": {
+                    "value": 1,
+                    "isVisible": true
+                },
+                "melee": {
+                    "value": 1,
+                    "isVisible": true
+                }
+            },
+            "dex": {
+                "athletics": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "body": {
+                "physique": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "endurance": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "emp": {},
+            "cra": {},
+            "will": {
+                "courage": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "resistMagic": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            }
+        },
+        "details": {
+            "biography": "<p>I warg sono più grossi dei lupi comuni, hanno la pelliccia marrone-rossiccia e occhi rossi luminescenti. Sono decisamente più intelligenti e guidano i branchi.</p>",
+            "threat": "Media",
+            "reward": 20,
+            "monsterType": "Beast",
+            "difficulty": "SEMPLICE",
+            "height": "Circa 1m al garrese",
+            "weight": "Circa 80 Kg",
+            "environment": "Foreste e pianure",
+            "organization": "Solitario (alla guida di branchi di lupi)",
+            "vulnerability": ""
+        },
+        "derivedStats": {
+            "vigor": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "rec": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "resolve": {
+                "value": 24,
+                "max": 24,
+                "unmodifiedMax": 24
+            },
+            "stun": {
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
+            },
+            "woundTreshold": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "hp": {
+                "value": 30,
+                "max": 30,
+                "unmodifiedMax": 30
+            },
+            "sta": {
+                "value": 30,
+                "max": 30,
+                "unmodifiedMax": 30
+            }
+        },
+        "description": "<p>I warg sono più grossi dei lupi comuni, hanno la pelliccia marrone-rossiccia e occhi rossi luminescenti. Sono decisamente più intelligenti e guidano i branchi.</p>",
+        "sourcebook": "MB 287",
+        "monsterType": "Beast",
+        "difficulty": "MEDIUM",
+        "bounty": 20,
+        "armorHead": 0,
+        "armorUpper": 0,
+        "armorLower": 0,
+        "height": "Circa 1m al garrese",
+        "weight": "Circa 80 Kg",
+        "environment": "Foreste e pianure",
+        "intelligence": "Superiore a un cane",
+        "organization": "Solitario (alla guida di branchi di lupi)",
+        "common": "Non c'è molto da dire sui lupi. Eh, sono dei maledetti bastardi che vivono nelle foreste e attaccano i viaggiatori. Di solito agiscono in branchi di 5 o 6 e hanno paura del fuoco. Se dovete combatterli fate in modo che non possano circondarvi, perché vi salteranno addosso da tutte le parti. Non è un bel modo di morire, secondo me. Le cose vanno sempre peggio dall'inizio della guerra, con tutti quei cadaveri in giro i lupi sono sempre più spavaldi. Eh, tanti credono che siano pure un segno di sventura. Non mi ricordo più quante profezie iniziano con un lupo. Seriamente, sono bestiacce maledette.",
+        "academicKnowledge": "",
+        "vulnerability": ""
+    },
+    "items": [
+        {
+            "_id": "fcea829b64ff4700",
+            "name": "Morso",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
+            "system": {
+                "description": "N/A",
+                "damage": "",
+                "accuracy": 0,
+                "effects": "N/A"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "2d68ba48a1224712",
+            "name": "[Capacità] Capobranco",
+            "type": "note",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "<p>Finché il warg è vivo tutti i lupi ottengono un bonus di +4 al Coraggio. Inoltre, il warg è in grado di dare ordini al resto del branco (es. 'attacca alle spalle', 'aspetta', 'vai laggiù').</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "e6a0c7e003984203",
+            "name": "[Capacità] Fiuto",
+            "type": "note",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "<p>Può seguire le tracce di una creatura senza bisogno di segnali visivi o uditivi senza alcuna penalità.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "3e922d05fc9b4b09",
+            "name": "[Capacità] Vista Notturna",
+            "type": "note",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "<p>Può agire in zone di luce fioca senza penalità.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "883b7879e72243b4",
+            "name": "Fegato di Lupo (x1)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 1"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "402a356dee8a464d",
+            "name": "Grasso di Cane (x1d6)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 1d6"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "420a5eebe45644dc",
+            "name": "Ossa di Bestia (x1d6)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 1d6"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "16bd6b90b12c4f01",
+            "name": "Pelle di Lupo (x1)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 1"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        }
+    ],
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

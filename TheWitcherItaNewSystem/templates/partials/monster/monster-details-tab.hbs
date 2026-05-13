@@ -24,7 +24,7 @@
         </section>
 
         <section class="details-section vulnerabilities card">
-            <h3 class="section-header"><i class="fas fa-biohazard"></i> {{localize "WITCHER.Monster.Vulnerabilities"}} & {{localize "WITCHER.Monster.Resistances"}}</h3>
+            <h3 class="section-header"><i class="fas fa-biohazard"></i> {{localize "WITCHER.Monster.Vulnerabilities"}} &amp; {{localize "WITCHER.Monster.Resistances"}}</h3>
             <div class="vuln-res-container">
                 <div class="text-block">
                     <label>{{localize "WITCHER.Monster.Vulnerabilities"}}</label>
@@ -33,6 +33,14 @@
                 <div class="text-block">
                     <label>{{localize "WITCHER.Monster.Resistances"}}</label>
                     <textarea name="system.resistances" rows="3">{{system.resistances}}</textarea>
+                </div>
+                <div class="text-block">
+                    <label>{{localize "WITCHER.Monster.Immunities"}}</label>
+                    <textarea name="system.immunities" rows="2">{{system.immunities}}</textarea>
+                </div>
+                <div class="text-block">
+                    <label>{{localize "WITCHER.Monster.Susceptibilities"}}</label>
+                    <textarea name="system.susceptibilities" rows="2">{{system.susceptibilities}}</textarea>
                 </div>
             </div>
         </section>
@@ -44,8 +52,16 @@
             <h3 class="section-header"><i class="fas fa-scroll"></i> {{localize "WITCHER.Monster.Superstition"}}</h3>
             <div class="knowledge-container">
                 <div class="text-block">
-                    <label>{{localize "WITCHER.Monster.Superstition"}}</label>
-                    <textarea name="system.superstition" rows="4">{{system.superstition}}</textarea>
+                    <label>{{localize "WITCHER.Monster.CommonerSuperstition"}}</label>
+                    <textarea name="system.common" rows="3">{{system.common}}</textarea>
+                </div>
+                <div class="text-block">
+                    <label>{{localize "WITCHER.Monster.AcademicKnowledge"}}</label>
+                    <textarea name="system.academicKnowledge" rows="3">{{system.academicKnowledge}}</textarea>
+                </div>
+                <div class="text-block">
+                    <label>{{localize "WITCHER.Monster.WitcherKnowledge"}}</label>
+                    <textarea name="system.monsterLore" rows="3">{{system.monsterLore}}</textarea>
                 </div>
             </div>
         </section>

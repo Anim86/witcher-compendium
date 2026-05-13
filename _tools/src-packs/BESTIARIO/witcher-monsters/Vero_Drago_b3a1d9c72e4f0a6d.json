@@ -105,7 +105,12 @@
             "threat": "Eccezionale Complesso",
             "reward": 5000,
             "monsterType": "Draconid",
-            "difficulty": "MEDIUM"
+            "difficulty": "MEDIUM",
+            "height": "",
+            "weight": "",
+            "environment": "",
+            "organization": "",
+            "vulnerability": ""
         },
         "derivedStats": {
             "rec": {
@@ -132,11 +137,17 @@
                 "unmodifiedMax": 0
             }
         },
-        "description": "<p>I veri draghi sono tra le creature più potenti e senzienti del mondo. Possono comunicare telepaticamente e sono maestri del combattimento sia fisico che magico. Il loro soffio di fuoco può incenerire interi eserciti e le loro scaglie sono quasi impenetrabili. Vivono isolati nei regni montani e sono noti per la loro saggezza millenaria quanto per la loro ferocia protettiva del proprio territorio.</p><p>“Ho dovuto affrontare un drago solo una volta. Fetanahuir aveva reclamato il passo e chiunque si avvicinava veniva sommariamente ucciso. Non mi affrettai allo scontro. Passai due settimane a studiarlo prima di agire.” – Erland di Larvik</p>",
+        "description": "<p>Ho saputo, da fonte attendibile, che la famosa Vergine di Aedirn, Saskia, era un drago! Questi affari possono assumere forma umana, soffiano fuoco tanto caldo da sciogliere la pietra e abbattono le mura dei castelli con gli artigli! Sono certo che i re del Nord terranno i loro preziosi ben nascosti. D'altronde i draghi vivono solo per due cose: ammazzare cavalieri e accumulare bottino. – Rodolf Kazmer</p>",
         "sourcebook": "DW 130",
         "monsterType": "Draconid",
         "difficulty": "MEDIUM",
-        "bounty": 5000
+        "bounty": 5000,
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "organization": "",
+        "intelligence": "",
+        "vulnerability": ""
     },
     "items": [],
     "_id": "b3a1d9c72e4f0a6d",

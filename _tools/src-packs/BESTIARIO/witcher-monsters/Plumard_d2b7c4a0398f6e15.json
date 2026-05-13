@@ -87,7 +87,12 @@
             "threat": "Facile Semplice",
             "reward": 15,
             "monsterType": "Vampire",
-            "difficulty": "MEDIUM"
+            "difficulty": "MEDIUM",
+            "height": "",
+            "weight": "",
+            "environment": "",
+            "organization": "",
+            "vulnerability": ""
         },
         "derivedStats": {
             "rec": {
@@ -114,11 +119,17 @@
                 "unmodifiedMax": 0
             }
         },
-        "description": "<p>Ad Angren i plumard sono una continua minaccia per il bestiame. Pur essendo classificati come vampiri, sono più simili a parassiti che a predatori. Un singolo plumard è facile da eliminare, ma interi stormi possono rivelarsi fatali, attaccando da tutte le direzioni bersagli non corazzati. Sono estremamente vulnerabili alla luce solare e al fuoco.</p>",
+        "description": "<p>I plumard infestano tutta Angren e lo Yaruga e sono delle pesti! Escono di notte in stormi e ti sciamano addosso, mordendo e stridendo! Dicono che indossare il simbolo di un dio fatto con giunchi li tiene lontani, ma sono solo chiacchiere da vecchia. – Rodolf Kazmer</p>",
         "sourcebook": "DW 120",
         "monsterType": "Vampire",
         "difficulty": "MEDIUM",
-        "bounty": 15
+        "bounty": 15,
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "organization": "",
+        "intelligence": "",
+        "vulnerability": ""
     },
     "items": [],
     "_id": "d2b7c4a0398f6e15",

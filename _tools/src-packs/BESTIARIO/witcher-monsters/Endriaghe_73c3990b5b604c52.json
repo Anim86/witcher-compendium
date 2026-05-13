@@ -78,6 +78,52 @@
             },
             "tempra": {
                 "value": 6
+            },
+            "int": {
+                "awareness": {
+                    "value": 4,
+                    "isVisible": true
+                },
+                "wildernessSurvival": {
+                    "value": 5,
+                    "isVisible": true
+                }
+            },
+            "dex": {
+                "athletics": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "will": {
+                "courage": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "resistMagic": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "ref": {
+                "melee": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "body": {
+                "endurance": {
+                    "value": 0,
+                    "isVisible": true
+                }
             }
         },
         "details": {
@@ -85,7 +131,12 @@
             "threat": "Ardua",
             "reward": 1000,
             "monsterType": "Insectoid",
-            "difficulty": "MEDIUM"
+            "difficulty": "MEDIUM",
+            "height": "",
+            "weight": "",
+            "environment": "",
+            "organization": "",
+            "vulnerability": ""
         },
         "derivedStats": {
             "vigor": {
@@ -126,17 +177,39 @@
         "sourcebook": "MB 295",
         "monsterType": "Insectoid",
         "difficulty": "MEDIUM",
-        "bounty": 1000
+        "bounty": 1000,
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "organization": "",
+        "intelligence": "",
+        "vulnerability": ""
     },
     "items": [
         {
-            "_id": "068bd1383e1244d2",
+            "_id": "0df99d7e39b14d7a",
             "name": "Chele",
             "type": "weapon",
-            "img": "modules/witcher-compendium/assets/SPECIAL/trait_artigli.webp",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
-                "description": "",
-                "damage": "4d6+2",
+                "description": "Veleno (25% se Lavoratore)",
+                "damage": "",
+                "accuracy": 0,
+                "effects": "Veleno (25% se Lavoratore)"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "e1cacfc224bb402d",
+            "name": "Coda (Guerriero)",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Veleno (50%)",
+                "damage": "",
                 "accuracy": 0,
                 "effects": "Veleno (50%)"
             },
@@ -146,12 +219,15 @@
             }
         },
         {
-            "_id": "e1",
-            "name": "[Capacità] Avventarsi",
-            "type": "note",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "_id": "bb68014de2b64ec4",
+            "name": "Aculei (Drone)",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
-                "description": "<p>Un'endriaga non ha bisogno della rincorsa per balzare (fino a 4m da ferma).</p>"
+                "description": "Veleno",
+                "damage": "",
+                "accuracy": 0,
+                "effects": "Veleno"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -159,12 +235,51 @@
             }
         },
         {
-            "_id": "e2",
-            "name": "[Capacità] Aculei del Drone",
+            "_id": "aae0d33ff7d64998",
+            "name": "[Capacità] Avventarsi",
             "type": "note",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Può scagliare aculei in un cerchio di 5m. Schivata CD 15. Subisce 1d6 danni ed è avvelenato per ogni punto sotto la CD.</p>"
+                "description": "<p>Può balzare addosso alla preda saltando fino a 4m senza rincorsa.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "59d1080191814de6",
+            "name": "Estratto di Veleno (x1d6/2)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 1d6/2"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "9693601c3f1c4c16",
+            "name": "Chitina (x1d6/2)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 1d6/2"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "d188689b61714520",
+            "name": "Saliva di Endriaga (x1d6/2)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 1d6/2"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

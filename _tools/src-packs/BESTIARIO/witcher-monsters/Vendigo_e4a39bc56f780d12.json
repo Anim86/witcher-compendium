@@ -90,7 +90,12 @@
             "threat": "Difficile Arduo",
             "reward": 1500,
             "monsterType": "Relict",
-            "difficulty": "MEDIUM"
+            "difficulty": "MEDIUM",
+            "height": "",
+            "weight": "",
+            "environment": "",
+            "organization": "",
+            "vulnerability": ""
         },
         "derivedStats": {
             "rec": {
@@ -117,11 +122,17 @@
                 "unmodifiedMax": 0
             }
         },
-        "description": "<p>I vendigo infestano i picchi più alti del Continente. Hanno la testa adorna di un palco simile a quello di un cervo e volti laceri deformati nella smorfia di un viaggiatore affamato. Oltre ad avere artigli infetti, sono capaci di potenti magie, inclusa una terribile maledizione che invoglia le vittime a commettere atti di cannibalismo. Il mostro teme il fuoco e raramente si accosta ai fuochi da campo, capacità che usa per isolare le sue prede.</p>",
+        "description": "<p>Strano… non ho mai sentito di ‘sto vendigo, ma la gente ha ogni genere di superstizioni sui viaggi per i Gheppi, i Monti del Drago e all'improvviso ho sentito storie che ti farebbero venire i brividi alla schiena. Parlavano di una specie di spettro che perseguita i viaggiatori e fa venire loro fame come non l'hanno mai avuta. Alcuni montanari di Caingorn hanno cominciato a portare con sé razioni extra e a indossare ‘ste strambe maschere cerimo- niali del lontano Nord. – Rodolf Kazmer</p>",
         "sourcebook": "DW 50",
         "monsterType": "Relict",
         "difficulty": "MEDIUM",
-        "bounty": 1500
+        "bounty": 1500,
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "organization": "",
+        "intelligence": "",
+        "vulnerability": ""
     },
     "items": [],
     "_id": "e4a39bc56f780d12",
