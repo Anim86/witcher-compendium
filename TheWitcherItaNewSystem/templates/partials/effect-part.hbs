@@ -14,7 +14,7 @@
 
                 <div class="header-controls">
                     {{#unless (and (eq section.type 'temporaryItemImprovement') (not ../document.system.canHaveTemporaryItemImprovement) )}}
-                        <a class="effect-control add-effect-btn" data-action="create" data-tooltip="{{localize 'WITCHER.activeEffect.new'}}">
+                        <a class="effect-control add-effect-btn btn-premium-action" data-action="create" data-tooltip="{{localize 'WITCHER.activeEffect.new'}}">
                             <i class="fas fa-plus-circle"></i> <span>{{localize "WITCHER.activeEffect.new"}}</span>
                         </a>
                     {{/unless}}

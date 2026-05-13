@@ -6,12 +6,12 @@ export default class Will extends foundry.abstract.DataModel {
     static defineSchema() {
         return {
             courage: new fields.SchemaField(skill('WITCHER.skills.courage.label')),
-            hexweave: new fields.SchemaField(skill('WITCHER.skills.hexWeaving.label')),
+            hexweave: new fields.SchemaField(skill('WITCHER.skills.hexWeaving.label', 2)),
             intimidation: new fields.SchemaField(skill('WITCHER.skills.intimidation.label')),
-            spellcast: new fields.SchemaField(skill('WITCHER.skills.spellCasting.label')),
+            spellcast: new fields.SchemaField(skill('WITCHER.skills.spellCasting.label', 2)),
             resistmagic: new fields.SchemaField(skill('WITCHER.skills.resistMagic.label')),
             resistcoerc: new fields.SchemaField(skill('WITCHER.skills.resistCoercion.label')),
-            ritcraft: new fields.SchemaField(skill('WITCHER.skills.ritualCrafting.label'))
+            ritcraft: new fields.SchemaField(skill('WITCHER.skills.ritualCrafting.label', 2))
         };
     }
 

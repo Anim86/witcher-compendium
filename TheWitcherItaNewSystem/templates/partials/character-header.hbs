@@ -11,6 +11,13 @@
                     <span class="rep-value">{{#if system.reputation.value}}{{system.reputation.value}}{{else}}0{{/if}}</span>
                     <i class="fas fa-cog gear-icon"></i>
                 </div>
+
+                <div class="ip-badge open-rewards" data-action="openRewards" data-tooltip="{{localize 'WITCHER.Progression.SpendIP'}}">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span class="ip-label">{{localize 'WITCHER.Actor.ImprovementPoints'}}</span>
+                    <span class="ip-value">{{system.improvementPoints}}</span>
+                    <i class="fas fa-cog gear-icon"></i>
+                </div>
             </div>
         </div>
 

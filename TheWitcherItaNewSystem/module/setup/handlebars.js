@@ -150,7 +150,8 @@ export async function registerHandelbarHelpers() {
                 content = content.replace(regex, `$& selected`);
             }
             return content;
-        }
+        },
+        selected: (condition) => condition ? "selected" : ""
     });
 
     Handlebars.registerHelper('eachLimit', function (context, limit, options) {

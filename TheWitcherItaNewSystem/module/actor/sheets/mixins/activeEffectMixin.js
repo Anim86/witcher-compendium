@@ -50,7 +50,8 @@ export let activeEffectMixin = {
         event.preventDefault();
         const a = event.currentTarget;
         const li = a.closest('li');
-        const parentUuid = li?.dataset.parentUuid;
+        if (!li) return;
+        const parentUuid = li.dataset.parentUuid;
         const effect = li.dataset.effectId ? fromUuidSync(parentUuid).effects.get(li.dataset.effectId) : null;
         switch (a.dataset.action) {
             case 'create':

@@ -84,7 +84,7 @@ export let damageMixin = {
         const content = await foundry.applications.handlebars.renderTemplate(messageTemplate, templateContext);
         const chatData = {
             content: content,
-            type: CONST.CHAT_MESSAGE_STYLES.OTHER
+            type: CONST.CHAT_MESSAGE_TYPES.OTHER
         };
 
         ChatMessage.applyRollMode(chatData, game.settings.get('core', 'rollMode'));
@@ -258,7 +258,7 @@ export let damageMixin = {
             content: content,
             speaker: ChatMessage.getSpeaker({ actor: this }),
             flags: this.getDamageFlags(),
-            type: CONST.CHAT_MESSAGE_STYLES.OTHER
+            type: CONST.CHAT_MESSAGE_TYPES.OTHER
         };
 
         ChatMessage.applyRollMode(chatData, game.settings.get('core', 'rollMode'));
@@ -290,52 +290,158 @@ export let damageMixin = {
     },
 
     async applyCritWound(crit) {
-        let location = crit.location;
-        let possibleWounds = [];
+        const immuneCategories = ['Specter', 'Elementa'];
+        const isAnatomyLess = this.system.category && immuneCategories.includes(this.system.category);
+        
+        // Internal organ wounds that don't affect anatomy-less monsters
+        const immuneWounds = [
+            'foreignObject',
+            'rupturedSpleen',
+            'tornStomach',
+            'suckingChestWound',
+            'septicShock'
+        ];
 
-        for (let [woundName, woundConfig] of Object.entries(CONFIG.WITCHER.Crit)) {
-            if (woundConfig.location.includes(location.name) && woundConfig.severity == crit.severity) {
-                possibleWounds.push(woundName);
-            }
+        // Special bonus damage table for anatomy-less monsters
+        const anatomyLessBonusDamage = {
+            simple: 5,
+            complex: 10,
+            difficult: 15,
+            deadly: 20
+        };
+
+        let wound = null;
+        let finalLocationName = crit.location.name;
+
+        // Specter Leg Immunity: Re-roll if hit lands on a leg
+        if (this.system.category === 'Specter' && finalLocationName.includes('Leg')) {
+            const chatData = {
+                content: `<div class="dice-roll"><div class="dice-result"><div class="dice-flavor">${game.i18n.localize('WITCHER.CritWound.SpecterLegImmune')}</div></div></div>`,
+                speaker: ChatMessage.getSpeaker({ actor: this })
+            };
+            ChatMessage.create(chatData);
+            
+            // Re-roll location if it was a leg hit
+            const locations = ['head', 'torso', 'rightArm', 'leftArm', 'torso', 'torso']; 
+            finalLocationName = locations[Math.floor(Math.random() * locations.length)];
         }
 
-        let wound;
+        const CRIT_TABLE_MAPPING = {
+            simple: {
+                2: 'sprainedLeg', 3: 'sprainedLeg',
+                4: 'sprainedArm', 5: 'sprainedArm',
+                6: 'foreignObject', 7: 'foreignObject', 8: 'foreignObject',
+                9: 'crackedRibs', 10: 'crackedRibs',
+                11: 'disfiguringScar',
+                12: 'crackedJaw'
+            },
+            complex: {
+                2: 'fracturedLeg', 3: 'fracturedLeg',
+                4: 'fracturedArm', 5: 'fracturedArm',
+                6: 'brokenRibs', 7: 'brokenRibs', 8: 'brokenRibs',
+                9: 'concussion', 
+                10: 'rupturedSpleen',
+                11: 'tornStomach',
+                12: 'minorHeadWound'
+            },
+            difficult: {
+                2: 'compoundLegFracture', 3: 'compoundLegFracture',
+                4: 'compoundArmFracture', 5: 'compoundArmFracture',
+                6: 'brokenRibs', 7: 'brokenRibs', 8: 'brokenRibs',
+                9: 'suckingChestWound',
+                10: 'suckingChestWound',
+                11: 'suckingChestWound',
+                12: 'damagedEye'
+            },
+            deadly: {
+                2: 'dismemberedLeg', 3: 'dismemberedLeg',
+                4: 'dismemberedArm', 5: 'dismemberedArm',
+                6: 'septicShock', 7: 'septicShock', 8: 'septicShock',
+                9: 'heartDamage', 10: 'heartDamage',
+                11: 'septicShock',
+                12: 'decapitated'
+            }
+        };
 
-        if (possibleWounds.length == 1) {
-            wound = possibleWounds[0];
+        const sev = crit.severity;
+        if (crit.isTargeted) {
+            // Targeted: 1d6 roll (1-4 Minor, 5-6 Major)
+            let roll = await new Roll('1d6').evaluate();
+            await roll.toMessage({ 
+                flavor: `<b>${game.i18n.localize('WITCHER.CritWound.TargetedRoll')}</b>`,
+                speaker: ChatMessage.getSpeaker({ actor: this })
+            });
+            const isMajor = roll.total >= 5;
+            const loc = finalLocationName;
+
+            if (loc === 'head') wound = isMajor ? CRIT_TABLE_MAPPING[sev][12] : CRIT_TABLE_MAPPING[sev][11];
+            else if (loc === 'torso') wound = isMajor ? CRIT_TABLE_MAPPING[sev][9] : CRIT_TABLE_MAPPING[sev][6];
+            else if (loc.includes('Arm')) wound = CRIT_TABLE_MAPPING[sev][4];
+            else if (loc.includes('Leg')) wound = CRIT_TABLE_MAPPING[sev][2];
         } else {
-            let woundRoll = crit.location.critEffect ?? getRandomInt(6) + crit.critEffectModifier;
-            if (woundRoll > 4) {
-                wound = possibleWounds[0];
-            } else {
-                wound = possibleWounds[1];
-            }
+            // Untargeted: 2d6 roll on the severity table
+            let woundRoll = await new Roll('2d6').evaluate();
+            await woundRoll.toMessage({ 
+                flavor: `<b>${game.i18n.localize('WITCHER.CritWound.GeneralRoll')}</b>`,
+                speaker: ChatMessage.getSpeaker({ actor: this })
+            });
+            wound = CRIT_TABLE_MAPPING[sev][woundRoll.total];
+            // Update location based on wound config
+            finalLocationName = CONFIG.WITCHER.Crit[wound].location[0];
         }
 
-        const critList = this.system.critWounds;
+        if (!wound) return;
+
+        // Check if the specific wound is one of the "internal organ" ones for anatomy-less monsters
+        if (isAnatomyLess && immuneWounds.includes(wound)) {
+            const specialDmg = anatomyLessBonusDamage[crit.severity];
+            const chatData = {
+                content: `
+                    <div class="dice-roll">
+                        <div class="dice-result">
+                            <div class="dice-flavor">${game.i18n.localize('WITCHER.CritWound.AnatomyLessImmune')}</div>
+                            <div class="dice-total" style="color: #ff4444;">+${specialDmg} ${game.i18n.localize('WITCHER.Context.applyBonusCritDmg')}</div>
+                            <div class="dice-formula">${game.i18n.localize('WITCHER.CritWound.AnatomyLessDesc')}</div>
+                        </div>
+                    </div>`,
+                speaker: ChatMessage.getSpeaker({ actor: this })
+            };
+            ChatMessage.create(chatData);
+            return;
+        }
+
+        const critList = this.system.critWounds || [];
         critList.push({
+            id: foundry.utils.randomID(),
             configEntry: wound,
-            location: crit.location.name,
-            healingTime: this.calculateHealingTime(crit.severity)
+            location: finalLocationName,
+            mod: 'none',
+            healingTime: this.calculateHealingTime(crit.severity),
+            daysHealed: 0
         });
         this.update({ 'system.critWounds': critList });
 
         const chatData = {
             content: `<div>${game.i18n.localize(CONFIG.WITCHER.Crit[wound].label)}</div><div>${game.i18n.localize(CONFIG.WITCHER.Crit[wound].description)}</div>`,
             speaker: ChatMessage.getSpeaker({ actor: this }),
-            type: CONST.CHAT_MESSAGE_STYLES.OTHER
+            type: CONST.CHAT_MESSAGE_TYPES.OTHER
         };
         ChatMessage.create(chatData);
     },
 
     calculateHealingTime(severity) {
+        if (severity === 'deadly') return 0; // Permanente
+
+        const body = this.system.stats.body.max;
         switch (severity) {
             case 'simple':
-                return Math.max(8 - this.system.stats.body.max, 1);
+                return Math.max(8 - body, 1);
             case 'complex':
-                return Math.max(12 - this.system.stats.body.max, 1);
+                return Math.max(12 - body, 1);
             case 'difficult':
-                return Math.max(15 - this.system.stats.body.max, 1);
+                return Math.max(15 - body, 1);
+            default:
+                return 0;
         }
     }
 };

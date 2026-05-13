@@ -1,11 +1,46 @@
 <section class="tab {{tabs.ip.cssClass}} scrollable standard-form" data-group="primary" data-tab="ip">
-    <div class="logs">
-        {{#each system.logs.ipLog as |ipLog|}}
-            <div class="logEntry">
-                <label>{{localize "WITCHER.rewards.dialog.label"}}: {{ipLog.label}}</label>
-                <label>{{localize "WITCHER.rewards.dialog.ip"}}: {{ipLog.ip}}</label>
-                <label>{{localize "WITCHER.rewards.dialog.magicIp"}}: {{ipLog.isMagic}}</label>
+    <div class="rewards-sheet-content">
+    <div class="rewards-header">
+        <h3><i class="fas fa-chart-line"></i> {{localize "WITCHER.rewards.ip"}}</h3>
+        {{#if isGM}}
+        <button class="btn-premium add-ip-reward" data-action="addIpReward">
+            <i class="fas fa-plus-circle"></i> {{localize "WITCHER.rewards.addIp"}}
+        </button>
+        {{else}}
+        <div class="ip-info-hint">
+            <i class="fas fa-info-circle"></i> {{localize "WITCHER.rewards.spendIpHint"}}
+        </div>
+        {{/if}}
+    </div>
+
+    <div class="current-ip-summary">
+        <div class="ip-stat">
+            <span class="label">{{localize "WITCHER.Actor.CurrentIP"}}</span>
+            <span class="value">{{system.improvementPoints}}</span>
+        </div>
+    </div>
+
+    <div class="logs-header">
+        <h4>{{localize "WITCHER.rewards.logTitle"}}</h4>
+    </div>
+
+    <div class="logs ip-logs">
+        {{#each system.logs.ipLog}}
+        <div class="log-item">
+            <div class="log-info">
+                <span class="reason">{{this.reason}}</span>
+                <span class="date">{{#if this.date}}{{date this.date 'DD MMM YYYY'}}{{/if}}</span>
+            </div>
+            <div class="log-amount positive">
+                +{{this.amount}} PM
+            </div>
+        </div>
+        {{else}}
+            <div class="empty-state">
+                <i class="fas fa-history"></i>
+                <p>{{localize "WITCHER.rewards.noIpLogs"}}</p>
             </div>
         {{/each}}
     </div>
+</div>
 </section>

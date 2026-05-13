@@ -10,12 +10,12 @@ export default class Intelligence extends foundry.abstract.DataModel {
             deduction: new fields.SchemaField(skill('WITCHER.skills.deduction.label')),
             education: new fields.SchemaField(skill('WITCHER.skills.education.label')),
             commonsp: new fields.SchemaField(skill('WITCHER.skills.commonSpeech.label')),
-            eldersp: new fields.SchemaField(skill('WITCHER.skills.elderSpeech.label')),
-            dwarven: new fields.SchemaField(skill('WITCHER.skills.dwarvenSpeech.label')),
-            monster: new fields.SchemaField(skill('WITCHER.skills.monsterLore.label')),
+            eldersp: new fields.SchemaField(skill('WITCHER.skills.elderSpeech.label', 2)),
+            dwarven: new fields.SchemaField(skill('WITCHER.skills.dwarvenSpeech.label', 2)),
+            monster: new fields.SchemaField(skill('WITCHER.skills.monsterLore.label', 2)),
             socialetq: new fields.SchemaField(skill('WITCHER.skills.socialEtiquette.label')),
             streetwise: new fields.SchemaField(skill('WITCHER.skills.streetwise.label')),
-            tactics: new fields.SchemaField(skill('WITCHER.skills.tactics.label')),
+            tactics: new fields.SchemaField(skill('WITCHER.skills.tactics.label', 2)),
             teaching: new fields.SchemaField(skill('WITCHER.skills.teaching.label')),
             wilderness: new fields.SchemaField(skill('WITCHER.skills.wildernessSurvival.label'))
         };

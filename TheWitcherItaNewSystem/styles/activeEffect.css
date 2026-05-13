@@ -8,26 +8,249 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(90deg, rgba(40, 40, 40, 0.9) 0%, rgba(20, 20, 20, 0.7) 100%);
+    background: linear-gradient(90deg, rgba(30, 30, 30, 0.95) 0%, rgba(15, 15, 15, 0.8) 100%);
     border-left: 4px solid #b22222;
-    padding: 8px 15px;
-    margin-bottom: 15px;
-    border-radius: 4px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.4);
-    min-height: 45px;
+    padding: 10px 18px;
+    margin-bottom: 18px;
+    border-radius: 6px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    min-height: 50px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .section-header-premium .header-main {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 15px;
     flex: 1;
+}
+
+.section-header-premium .header-name {
+    margin: 0;
+    font-family: 'Goudy Old Style', serif;
+    font-size: 1.2rem;
+    color: #e8e0d4;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .section-header-premium .header-icon {
     color: #c9a84c;
     font-size: 1.4em;
     filter: drop-shadow(0 0 5px rgba(201, 168, 76, 0.3));
+}
+
+.add-crit.btn-premium-action {
+    background: linear-gradient(135deg, rgba(139, 0, 0, 0.3) 0%, rgba(60, 0, 0, 0.5) 100%);
+    border: 1px solid rgba(201, 168, 76, 0.3);
+    color: #e8e0d4;
+    padding: 6px 14px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 25px;
+    white-space: nowrap;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    position: relative;
+    overflow: hidden;
+}
+
+.add-crit.btn-premium-action::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent);
+    transition: 0.5s;
+}
+
+.add-crit.btn-premium-action:hover {
+    background: linear-gradient(135deg, rgba(181, 28, 28, 0.4) 0%, rgba(100, 10, 10, 0.6) 100%);
+    border-color: rgba(201, 168, 76, 0.8);
+    color: #fff;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(181, 28, 28, 0.3);
+}
+
+.add-crit.btn-premium-action:hover::before {
+    left: 100%;
+}
+
+.add-crit.btn-premium-action i {
+    font-size: 0.9rem;
+    color: #c9a84c;
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
+}
+
+.add-crit.btn-premium-action:hover i {
+    color: #f1d382;
+    transform: scale(1.1);
+}
+
+.critwound-main {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 15px;
+}
+
+.critwound-info {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    gap: 4px;
+}
+
+.info-group {
+    width: 100%;
+}
+
+.critwound-status {
+    display: flex;
+    flex: 3;
+    gap: 25px;
+    align-items: center;
+    padding: 0 20px;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.status-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.status-label {
+    font-size: 0.85em;
+    color: #aaa;
+    white-space: nowrap;
+}
+
+.critwound-actions {
+    display: flex;
+    gap: 12px;
+    padding-left: 10px;
+}
+
+.healing-status-compact {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.8em;
+    color: #c9a84c;
+    margin-top: 2px;
+    opacity: 0.8;
+}
+
+.healing-status-compact input {
+    width: 25px !important;
+    height: 18px !important;
+    background: transparent !important;
+    border: none !important;
+    color: #c9a84c !important;
+    text-align: center !important;
+    padding: 0 !important;
+}
+
+.healing-status-compact span {
+    color: #555;
+}
+
+/* Status Checkboxes in Wounds */
+.status-checkboxes {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.premium-checkbox {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.premium-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.premium-checkbox i {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.premium-checkbox:has(input:checked) {
+    background: rgba(181, 28, 28, 0.2);
+    border-color: var(--witcher-red);
+    box-shadow: 0 0 10px rgba(181, 28, 28, 0.3);
+}
+
+.premium-checkbox:has(input:checked) i {
+    color: var(--witcher-red);
+    filter: drop-shadow(0 0 5px rgba(181, 28, 28, 0.5));
+}
+
+.premium-checkbox:hover {
+    border-color: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.healing-status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.healing-icon {
+    color: #c9a84c;
+    font-size: 0.9rem;
+}
+
+.healing-progress-container {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.healing-progress-container input {
+    background: transparent;
+    border: none;
+    color: #fff;
+    width: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.healing-progress-container .separator {
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .section-header-premium .header-name {
@@ -41,23 +264,27 @@
 }
 
 .btn-premium-action {
-    background: rgba(178, 34, 34, 0.15);
-    border: 1px solid rgba(178, 34, 34, 0.4);
+    background: linear-gradient(135deg, rgba(178, 34, 34, 0.25) 0%, rgba(139, 0, 0, 0.1) 100%);
+    border: 1px solid rgba(178, 34, 34, 0.5);
     color: #e8e0d4;
-    padding: 4px 12px;
-    border-radius: 20px;
+    padding: 6px 16px;
+    border-radius: 4px;
     font-size: 0.85em;
+    font-weight: 500;
     display: flex;
     align-items: center;
-    gap: 6px;
-    transition: all 0.2s ease;
+    gap: 8px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+    cursor: pointer;
 }
 
 .btn-premium-action:hover {
-    background: rgba(178, 34, 34, 0.3);
-    border-color: #b22222;
-    box-shadow: 0 0 10px rgba(178, 34, 34, 0.3);
-    transform: translateY(-1px);
+    background: rgba(178, 34, 34, 0.4);
+    border-color: #ff4d4d;
+    box-shadow: 0 0 15px rgba(178, 34, 34, 0.4), inset 0 0 5px rgba(255,255,255,0.1);
+    transform: translateY(-2px);
+    color: #fff;
 }
 
 /* --- Critical Wounds --- */
@@ -79,12 +306,20 @@
     border-color: rgba(178, 34, 34, 0.3);
 }
 
+.critwound-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.8fr 80px;
+    padding: 8px 14px;
+    align-items: center;
+    gap: 12px;
+}
+
 .critwound-main {
     display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr 1.5fr 80px;
+    grid-template-columns: 2fr 1fr 1fr 1.8fr 80px;
     align-items: center;
-    padding: 8px 12px;
-    gap: 10px;
+    padding: 10px 14px;
+    gap: 12px;
 }
 
 .premium-select {
@@ -98,24 +333,31 @@
 
 .healing-status {
     display: flex;
-    flex-direction: column;
-    gap: 2px;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    background: rgba(0, 0, 0, 0.25);
+    padding: 4px 10px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .healing-label {
-    font-size: 0.75em;
-    color: #888;
+    font-size: 0.7em;
+    color: #aaa;
     text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
 }
 
 .healing-progress-container {
     display: flex;
     align-items: center;
     gap: 4px;
-    background: rgba(0, 0, 0, 0.4);
-    padding: 2px 8px;
-    border-radius: 15px;
-    border: 1px solid rgba(201, 168, 76, 0.2);
+    background: rgba(201, 168, 76, 0.1);
+    padding: 2px 6px;
+    border-radius: 3px;
+    border: 1px solid rgba(201, 168, 76, 0.3);
 }
 
 .healing-progress-container input {
@@ -328,4 +570,23 @@
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     font-size: 0.9em;
     color: #ccc;
+}
+
+/* --- Stat Modifiers Highlights --- */
+.stat-sub .modifier.penalty {
+    color: #ff4d4d;
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(255, 77, 77, 0.3);
+}
+
+.stat-sub .modifier.bonus {
+    color: #2ecc71;
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(46, 204, 113, 0.3);
+}
+
+.stat-sub .modifier {
+    font-size: 0.9em;
+    opacity: 0.9;
+    margin-left: 4px;
 }

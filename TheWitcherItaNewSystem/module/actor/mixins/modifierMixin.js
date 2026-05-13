@@ -13,10 +13,18 @@ export let modifierMixin = {
         let totalDivider = 1;
 
         wounds
-            .filter(wound => wound.configEntry != '')
-            .map(wound => CONFIG.WITCHER.Crit[wound.configEntry]?.effect[wound.mod])
+            .filter(wound => {
+                if (!wound.configEntry || wound.configEntry === '') return false;
+                // Se curata e i giorni di guarigione sono completati, non applica più penalità
+                if (wound.treated && wound.healingTime > 0 && wound.daysHealed >= wound.healingTime) return false;
+                return true;
+            })
             .forEach(wound => {
-                wound.stats?.forEach(stat => {
+                let mod = wound.treated ? 'treated' : (wound.stabilized ? 'stabilized' : 'none');
+                let effect = CONFIG.WITCHER.Crit[wound.configEntry]?.effect?.[mod];
+                if (!effect) return;
+
+                effect.stats?.forEach(stat => {
                     if (stat.stat == checkedStat) {
                         if (stat.modifier?.toString().includes('/')) {
                             totalDivider = Number(stat.modifier.replace('/', ''));
@@ -26,7 +34,7 @@ export let modifierMixin = {
                     }
                 });
 
-                wound.derived?.forEach(derived => {
+                effect.derived?.forEach(derived => {
                     if (derived.derivedStat == checkedStat) {
                         if (derived.modifier?.toString().includes('/')) {
                             totalDivider = Number(derived.modifier.replace('/', ''));
@@ -108,10 +116,18 @@ export let modifierMixin = {
 
         let formula = '';
         wounds
-            .filter(wound => wound.configEntry != '')
-            .map(wound => CONFIG.WITCHER.Crit[wound.configEntry].effect[wound.mod])
+            .filter(wound => {
+                if (!wound.configEntry || wound.configEntry === '') return false;
+                // Se curata e i giorni di guarigione sono completati, non applica più penalità
+                if (wound.treated && wound.healingTime > 0 && wound.daysHealed >= wound.healingTime) return false;
+                return true;
+            })
             .forEach(wound => {
-                wound.skills?.forEach(skill => {
+                let mod = wound.treated ? 'treated' : (wound.stabilized ? 'stabilized' : 'none');
+                let effect = CONFIG.WITCHER.Crit[wound.configEntry]?.effect?.[mod];
+                if (!effect) return;
+
+                effect.skills?.forEach(skill => {
                     if (
                         skill.skill == skillName ||
                         CONFIG.WITCHER[skill.skillgroup]?.includes(skillName) ||

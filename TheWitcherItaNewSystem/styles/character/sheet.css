@@ -559,9 +559,10 @@
 .header-right {
     display: flex;
     align-items: flex-start;
+    gap: 12px;
 }
 
-.reputation-badge {
+.reputation-badge, .ip-badge {
     background: linear-gradient(135deg, rgba(20, 28, 36, 0.95) 0%, rgba(10, 15, 20, 0.95) 100%);
     border: 1px solid var(--w-border-gold);
     padding: 6px 14px;
@@ -574,6 +575,8 @@
     box-shadow: 0 4px 15px rgba(0,0,0,0.4);
     position: relative;
     overflow: hidden;
+    min-width: 155px;
+    justify-content: space-between;
 
     &::before {
         content: '';
@@ -594,6 +597,15 @@
         .gear-icon { opacity: 1; transform: rotate(45deg); }
     }
 
+    .gear-icon { 
+        color: var(--w-gold-dark); 
+        font-size: 12px; 
+        opacity: 0.4;
+        transition: all 0.3s ease;
+    }
+}
+
+.reputation-badge {
     i:not(.gear-icon) { 
         color: var(--w-gold); 
         font-size: 18px;
@@ -616,14 +628,34 @@
         text-shadow: 0 0 10px rgba(255,255,255,0.2);
         font-family: 'Thewitcher', serif;
     }
+}
+
+.ip-badge {
+    i:not(.gear-icon) { 
+        color: var(--w-teal-light); 
+        font-size: 18px;
+        filter: drop-shadow(0 0 5px rgba(53, 180, 227, 0.4));
+    }
     
-    .gear-icon { 
-        color: var(--w-gold-dark); 
-        font-size: 12px; 
-        opacity: 0.4;
-        transition: all 0.3s ease;
+    .ip-label { 
+        font-size: 10px; 
+        color: var(--w-teal-light); 
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 800;
+        opacity: 0.8;
+    }
+    
+    .ip-value { 
+        font-size: 20px; 
+        font-weight: 900; 
+        color: #fff;
+        text-shadow: 0 0 10px rgba(255,255,255,0.2);
+        font-family: 'Thewitcher', serif;
     }
 }
+
+
 
 .header-tags {
     display: flex;
@@ -1076,6 +1108,15 @@ a.button-roll:hover {
         transform: translateY(-3px) !important;
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4) !important;
         &::before { width: 6px; }
+    }
+
+    /* Evidenza per statistiche penalizzate */
+    &.penalty-active {
+        border-color: rgba(255, 77, 77, 0.4) !important;
+        &::before { background: #ff4d4d !important; }
+        .stat-icon i { color: #ff4d4d !important; }
+        .current-val { color: #ff4d4d !important; font-weight: 800; }
+        .modifier.penalty { text-shadow: 0 0 8px rgba(255, 77, 77, 0.6); }
     }
 
     .stat-icon {
@@ -1709,4 +1750,96 @@ a.button-roll:hover {
     font-size: 10px;
     color: var(--p-tox); /* Green for temporary points */
     font-weight: bold;
+}
+/* =====================================================
+   REWARDS SHEET – Premium Design
+   ===================================================== */
+.rewards-sheet-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+}
+
+.rewards-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--w-border-gold);
+    padding-bottom: 10px;
+
+    h3 {
+        margin: 0;
+        font-family: 'Thewitcher', serif;
+        color: var(--w-gold);
+        font-size: 1.4rem;
+        i { margin-right: 10px; }
+    }
+}
+
+.ip-info-hint {
+    font-size: 11px;
+    color: var(--w-text-muted);
+    font-style: italic;
+    i { color: var(--w-gold); margin-right: 5px; }
+}
+
+.current-ip-summary {
+    background: rgba(197, 160, 89, 0.05);
+    border: 1px solid rgba(197, 160, 89, 0.2);
+    padding: 12px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+
+    .ip-stat {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .label { font-size: 10px; text-transform: uppercase; color: var(--w-text-muted); letter-spacing: 1px; }
+        .value { font-size: 2rem; font-weight: 800; color: var(--w-gold); }
+    }
+}
+
+.logs-header {
+    border-bottom: 1px solid var(--w-border);
+    margin-bottom: 5px;
+    h4 { margin: 0; font-size: 12px; text-transform: uppercase; color: #888; letter-spacing: 1px; }
+}
+
+.log-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: rgba(0,0,0,0.2);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 6px;
+    margin-bottom: 6px;
+    transition: background 0.2s;
+
+    &:hover { background: rgba(0,0,0,0.4); }
+
+    .log-info {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        .reason { font-size: 13px; color: #eee; font-weight: 600; }
+        .date { font-size: 10px; color: #666; }
+    }
+
+    .log-amount {
+        font-weight: 800;
+        font-size: 14px;
+        &.positive { color: #2ecc71; }
+        &.negative { color: #e74c3c; }
+    }
+}
+
+.empty-state {
+    padding: 40px;
+    text-align: center;
+    color: #444;
+    i { font-size: 3rem; margin-bottom: 10px; display: block; }
+    p { font-size: 12px; margin: 0; }
 }

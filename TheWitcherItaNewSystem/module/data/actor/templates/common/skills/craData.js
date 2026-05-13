@@ -5,13 +5,13 @@ const fields = foundry.data.fields;
 export default class Craft extends foundry.abstract.DataModel {
     static defineSchema() {
         return {
-            alchemy: new fields.SchemaField(skill('WITCHER.skills.alchemy.label')),
-            crafting: new fields.SchemaField(skill('WITCHER.skills.crafting.label')),
+            alchemy: new fields.SchemaField(skill('WITCHER.skills.alchemy.label', 2)),
+            crafting: new fields.SchemaField(skill('WITCHER.skills.crafting.label', 2)),
             disguise: new fields.SchemaField(skill('WITCHER.skills.disguise.label')),
             firstaid: new fields.SchemaField(skill('WITCHER.skills.firstAid.label')),
             forgery: new fields.SchemaField(skill('WITCHER.skills.forgery.label')),
-            picklock: new fields.SchemaField(skill('WITCHER.skills.pickLock.label')),
-            trapcraft: new fields.SchemaField(skill('WITCHER.skills.trapCrafting.label'))
+            picklock: new fields.SchemaField(skill('WITCHER.skills.pickLock.label', 2)),
+            trapcraft: new fields.SchemaField(skill('WITCHER.skills.trapCrafting.label', 2))
         };
     }
 

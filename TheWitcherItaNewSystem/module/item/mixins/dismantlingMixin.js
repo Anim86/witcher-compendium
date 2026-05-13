@@ -56,7 +56,7 @@ export let dismantlingMixin = {
         const chatData = {
             content: content,
             speaker: ChatMessage.getSpeaker({ actor: this.actor }),
-            type: CONST.CHAT_MESSAGE_STYLES.OTHER
+            type: CONST.CHAT_MESSAGE_TYPES.OTHER
         };
 
         ChatMessage.create(chatData);

@@ -329,7 +329,7 @@ class Repair {
         const chatData = {
             content: content,
             speaker: ChatMessage.getSpeaker({ actor: data.executor }),
-            type: CONST.CHAT_MESSAGE_STYLES.OTHER
+            type: CONST.CHAT_MESSAGE_TYPES.OTHER
         };
 
         ChatMessage.create(chatData);

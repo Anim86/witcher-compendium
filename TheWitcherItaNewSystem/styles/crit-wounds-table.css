@@ -1,134 +1,237 @@
-.crit-wounds {
-    flex-grow: 1;
-}
+/* =====================================================
+   CRITICAL WOUNDS UI – Premium Redesign
+   ===================================================== */
 
-.critwound-data {
+.crit-wound-section {
     display: flex;
     flex-direction: column;
+    gap: 15px;
 }
 
-.crit-wounds-header {
+.section-header-premium {
+    padding: 10px 0;
+    border-bottom: 1px solid var(--w-border-gold);
+    margin-bottom: 10px;
+}
+
+.header-main {
     display: flex;
-    justify-content: space-between;
-    padding: 5px;
-    border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.05);
-    border: 1px solid darkgray;
-    margin-top: 10px;
-}
-
-.crit-wounds-header-name {
-    margin-bottom: 0;
-    border-bottom: none;
-    opacity: 0.8;
-}
-
-.critwound-header {
-    display: grid;
-    grid-template-columns: 2fr 1fr 100px;
     align-items: center;
-    padding: 10px 5px 0px;
+    gap: 12px;
 }
 
-.critwound-info {
+.header-icon {
+    color: var(--w-gold);
+    font-size: 1.4rem;
+}
+
+.header-name {
+    flex: 1;
+    margin: 0;
+    font-family: 'Thewitcher', serif;
+    font-size: 1.5rem;
+    color: var(--w-gold-light);
+}
+
+.header-actions {
     display: flex;
-    gap: 5px;
-    flex-wrap: wrap;
-    
-    select {
-        width: max-content;
-    }
-
-    .wound-name {
-        width: -webkit-fill-available;
-    }
+    gap: 10px;
 }
 
-.critwound-days-rest {
+.btn-premium-action {
+    display: flex !important;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    background: rgba(197, 160, 89, 0.1) !important;
+    border: 1px solid var(--w-border-gold) !important;
+    border-radius: 6px !important;
+    color: var(--w-gold-light) !important;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none !important;
+}
+
+.btn-premium-action:hover {
+    background: rgba(197, 160, 89, 0.2) !important;
+    border-color: var(--w-gold) !important;
+    box-shadow: 0 0 10px rgba(197, 160, 89, 0.2);
+    color: #fff !important;
+}
+
+/* Card Styling */
+.critwound-card {
+    background: rgba(20, 20, 20, 0.6);
+    border: 1px solid var(--w-border);
+    border-radius: 6px;
+    margin-bottom: 8px;
+    overflow: hidden;
+    transition: all 0.2s ease;
+    border-left: 3px solid transparent;
+}
+
+.critwound-card:hover {
+    border-color: var(--w-gold-dark);
+    background: rgba(30, 30, 30, 0.8);
+}
+
+.critwound-card.is-stabilized { border-left-color: #3498db; }
+.critwound-card.is-treated { border-left-color: #2ecc71; }
+
+.critwound-main {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    gap: 12px;
+}
+
+.critwound-selection {
+    flex: 1;
+    display: flex;
+    gap: 8px;
+}
+
+.critwound-selection select {
+    background: rgba(0, 0, 0, 0.5) !important;
+    border: 1px solid #444 !important;
+    color: #eee !important;
+    padding: 4px 6px;
+    border-radius: 4px;
+    font-size: 11px;
+    height: 26px;
+}
+
+.wound-type { width: 140px; }
+.wound-location { width: 90px; }
+
+.critwound-status-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.healing-timer {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 2px 8px;
+    border-radius: 4px;
+    border: 1px solid #333;
+    font-size: 11px;
+}
+
+.healing-timer input {
+    width: 24px !important;
+    text-align: center;
+    background: transparent !important;
+    color: var(--w-gold-light) !important;
+    font-weight: bold;
+    border: none !important;
+    padding: 0 !important;
+}
+
+.healing-timer .sep { color: #666; font-size: 10px; }
+
+.toggle-group {
+    display: flex;
+    gap: 8px;
+}
+
+.premium-checkbox {
+    cursor: pointer;
+    width: 26px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.3);
+    border-radius: 4px;
+    border: 1px solid #444;
+}
+
+.premium-checkbox input { display: none; }
+
+.premium-checkbox i {
+    font-size: 14px;
+    color: #555;
+    transition: all 0.2s;
+}
+
+.premium-checkbox:has(input:checked) {
+    border-color: var(--w-gold-dark);
+    background: rgba(197, 160, 89, 0.1);
+}
+
+.premium-checkbox input:checked + i {
+    color: var(--w-gold);
+    filter: drop-shadow(0 0 3px var(--w-gold));
+}
+
+.critwound-footer {
+    padding: 6px 12px;
+    background: rgba(0, 0, 0, 0.3);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    align-items: start;
-    margin: 0 auto;
+    gap: 4px;
 }
 
-.critwound-display {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-}
-
-.critwound-display,
-.delete-crit {
-    width: 33.33px;
-}
-
-.critwound-controls {
+.penalty-line, .notes-line {
     display: flex;
-    justify-content: end;
+    align-items: center;
+    gap: 10px;
+    font-size: 11px;
 }
 
-.crit-wounds-table {
-    border: none;
-    margin: 0;
+.penalty-line i { color: #e67e22; font-size: 10px; }
+.penalty-text { color: var(--w-text-muted); font-style: italic; }
+
+.notes-line i { color: #888; font-size: 10px; }
+.notes-line input {
+    flex: 1;
+    background: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid transparent !important;
+    color: #ccc !important;
+    font-size: 11px;
+    padding: 0 !important;
+    height: 18px;
+    transition: all 0.2s;
 }
 
-.crit-wounds-table > tbody > tr {
-    background-color: rgba(0, 0, 0, 0);
-    border-bottom: 1px rgba(25, 24, 19, 0.2) solid;
+.notes-line input:focus {
+    border-bottom-color: var(--w-gold-dark) !important;
+    color: #fff !important;
 }
 
-.crit-wounds-table > tbody {
-    background-color: rgba(0, 0, 0, 0);
-}
-.crit-wounds-table > tbody > tr:last-child {
-    background-color: rgba(0, 0, 0, 0);
-    border-bottom: 0px;
+.critwound-actions {
+    display: flex;
+    gap: 6px;
 }
 
-.crit-wounds-table {
-    background-color: rgba(0, 0, 0, 0);
+.action-icon {
+    width: 26px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.05);
+    color: #666;
+    font-size: 12px;
 }
 
-.critwound input,
-.critwound select,
-.critwound textarea {
-    border: none;
-    transition: box-shadow 0.1s ease;
+.action-icon:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: #eee;
 }
 
-.critwound input:hover,
-.critwound select:hover,
-.critwound textarea:hover {
-    box-shadow: 0 0 5px var(--color-shadow-primary);
-}
-
-.critwounds-description:not(.invisible) {
-    padding: 10px 5px 1rem 5px;
-}
-
-.crit-wound-description,
-.crit-wound-mod-description {
-    padding-bottom: 0.5rem;
-}
-
-.crit-wounds-table textarea {
-    resize: vertical;
-}
-
-.add-crit {
-    margin: 5px;
-    width: 15px;
-}
-
-.healing-time-lable {
-    height: 32px;
-    align-content: center;
-}
-
-.days-healed {
-    width: 40px !important;
-}
-
-.healing-time {
-    width: 40px !important;
-}
+.action-icon.delete:hover {
+    color: #e74c3c;
+    background: rgba(231, 76, 60, 0.1);
+}
