@@ -1,11 +1,11 @@
 # 🛡️ Smart Asset Guard - Report Iconografia
-Data Scansione: 12/05/2026, 12:43:45
+Data Scansione: 13/05/2026, 08:00:37
 
 ## 📊 Riepilogo
-- **Totale Voci Analizzate**: 1478
-- **Asset Corretti**: 1413
+- **Totale Voci Analizzate**: 1472
+- **Asset Corretti**: 1455
 - **Asset con Mismatch (Legacy/Path)**: 0
-- **Asset Mancanti**: 65
+- **Asset Mancanti**: 17
 
 > [!IMPORTANT]
 > Lo standard per i caratteri speciali (apostrofi, parentesi, due punti) è la sostituzione con l'underscore: `Spada d'Argento` -> `spada_d_argento.webp`.
@@ -13,68 +13,20 @@ Data Scansione: 12/05/2026, 12:43:45
 ## ❌ Asset Totalmente Mancanti
 | Nome | File JSON | Percorso Atteso |
 |---|---|---|
-| Schema: Rinforzo in Fibra | _tools\src-packs\ALCHIMIA_E_ARTIGIANATO\Schemi_di_Fabbricazione\witcher-schematics\schema_rinforzo_in_fibra_9917c793cba645a3.json | `ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-schematics/schema_rinforzo_in_fibra.webp` |
-| Schema: Rinforzo Nano | _tools\src-packs\ALCHIMIA_E_ARTIGIANATO\Schemi_di_Fabbricazione\witcher-schematics\schema_rinforzo_nano_5e082e424a3a4dab.json | `ALCHIMIA_E_ARTIGIANATO/Schemi_di_Fabbricazione/witcher-schematics/schema_rinforzo_nano.webp` |
-| Elias von Drexel | _tools\src-packs\BESTIARIO\witcher-characters\elias_von_drexel_bfc34788c345a119.json | `BESTIARIO/witcher-characters/elias_von_drexel.webp` |
-| Layton Hermann | _tools\src-packs\BESTIARIO\witcher-characters\layton_hermann_92a4cadce984e6c6.json | `BESTIARIO/witcher-characters/layton_hermann.webp` |
-| La Strega di Rupe della Lince | _tools\src-packs\BESTIARIO\witcher-characters\la_strega_di_rupe_della_lince_34253226f5c82904.json | `BESTIARIO/witcher-characters/la_strega_di_rupe_della_lince.webp` |
-| Leblanc de Surmann | _tools\src-packs\BESTIARIO\witcher-characters\leblanc_de_surmann_cb55120cd991d83e.json | `BESTIARIO/witcher-characters/leblanc_de_surmann.webp` |
-| Louise van Adelaide | _tools\src-packs\BESTIARIO\witcher-characters\louise_van_adelaide_6e9d37fba6b67130.json | `BESTIARIO/witcher-characters/louise_van_adelaide.webp` |
-| Pardus di Korath | _tools\src-packs\BESTIARIO\witcher-characters\Pardus_di_Korath_7061726475736b6f.json | `BESTIARIO/witcher-characters/pardus_di_korath.webp` |
-| Rodolf Kazmer | _tools\src-packs\BESTIARIO\witcher-characters\rodolf_kazmer_288ee308a5318712.json | `BESTIARIO/witcher-characters/rodolf_kazmer.webp` |
-| Anti-Ancestrali | _tools\src-packs\EQUIPAGGIAMENTO\witcher-equipment\anti_ancestrali_01897166528f04c2.json | `EQUIPAGGIAMENTO/witcher-equipment/anti_ancestrali.webp` |
-| Anti-Costrutti | _tools\src-packs\EQUIPAGGIAMENTO\witcher-equipment\anti_costrutti_dd75a029513af7f7.json | `EQUIPAGGIAMENTO/witcher-equipment/anti_costrutti.webp` |
-| Anti-Dragonidi | _tools\src-packs\EQUIPAGGIAMENTO\witcher-equipment\anti_dragonidi_6d4f3bc2cbeec9ef.json | `EQUIPAGGIAMENTO/witcher-equipment/anti_dragonidi.webp` |
-| Anti-Ibridi | _tools\src-packs\EQUIPAGGIAMENTO\witcher-equipment\anti_ibridi_960d1a617e2a6847.json | `EQUIPAGGIAMENTO/witcher-equipment/anti_ibridi.webp` |
-| Anti-Insettoidi | _tools\src-packs\EQUIPAGGIAMENTO\witcher-equipment\anti_insettoidi_38a76fa165a6de46.json | `EQUIPAGGIAMENTO/witcher-equipment/anti_insettoidi.webp` |
-| Anti-Maledetti | _tools\src-packs\EQUIPAGGIAMENTO\witcher-equipment\anti_maledetti_69e7c869d29dc1bd.json | `EQUIPAGGIAMENTO/witcher-equipment/anti_maledetti.webp` |
-| Anti-Orchi | _tools\src-packs\EQUIPAGGIAMENTO\witcher-equipment\anti_orchi_071d9c96f5e1cfa0.json | `EQUIPAGGIAMENTO/witcher-equipment/anti_orchi.webp` |
-| Anti-Spettri | _tools\src-packs\EQUIPAGGIAMENTO\witcher-equipment\anti_spettri_e1d78826b093f749.json | `EQUIPAGGIAMENTO/witcher-equipment/anti_spettri.webp` |
-| Anti-Vampiri | _tools\src-packs\EQUIPAGGIAMENTO\witcher-equipment\anti_vampiri_a8c209f3b5cbf95b.json | `EQUIPAGGIAMENTO/witcher-equipment/anti_vampiri.webp` |
-| Candele (x5) | _tools\src-packs\EQUIPAGGIAMENTO\witcher-equipment\candele_x5_2dbbeeaa6ab742e8.json | `EQUIPAGGIAMENTO/witcher-equipment/candele_x5.webp` |
-| Diario / Libro Mastro | _tools\src-packs\EQUIPAGGIAMENTO\witcher-equipment\diario_libro_mastro_b59de88fc253d2b4.json | `EQUIPAGGIAMENTO/witcher-equipment/diario_libro_mastro.webp` |
-| Picchetti (x5) | _tools\src-packs\EQUIPAGGIAMENTO\witcher-equipment\picchetti_x5_1267697207ac492c.json | `EQUIPAGGIAMENTO/witcher-equipment/picchetti_x5.webp` |
-| Pietra Allarme (Pietra del Potere) | _tools\src-packs\EQUIPAGGIAMENTO\witcher-equipment\pietra_allarme_pietra_del_potere_b5a6c68e3b740061.json | `EQUIPAGGIAMENTO/witcher-equipment/pietra_allarme_pietra_del_potere.webp` |
-| Pietra Guardiana: Allarme | _tools\src-packs\EQUIPAGGIAMENTO\witcher-equipment\pietra_guardiana_allarme_3dec698af9a63db7.json | `EQUIPAGGIAMENTO/witcher-equipment/pietra_guardiana_allarme.webp` |
-| Rampino | _tools\src-packs\EQUIPAGGIAMENTO\witcher-equipment\rampino_773afe5f357947b7.json | `EQUIPAGGIAMENTO/witcher-equipment/rampino.webp` |
-| Razioni da Viaggio (1 giorno) | _tools\src-packs\EQUIPAGGIAMENTO\witcher-equipment\razioni_da_viaggio_1_giorno_8c1fc4ca62f8d45e.json | `EQUIPAGGIAMENTO/witcher-equipment/razioni_da_viaggio_1_giorno.webp` |
-| Ricettatore | _tools\src-packs\EQUIPAGGIAMENTO\witcher-equipment\ricettatore_c6b5ed14eda9e0c6.json | `EQUIPAGGIAMENTO/witcher-equipment/ricettatore.webp` |
-| Simbolo Sacro | _tools\src-packs\EQUIPAGGIAMENTO\witcher-equipment\simbolo_sacro_9122c168f86b758b.json | `EQUIPAGGIAMENTO/witcher-equipment/simbolo_sacro.webp` |
-| Tasca Segreta | _tools\src-packs\EQUIPAGGIAMENTO\witcher-equipment\tasca_segreta_3a3fa476fef7faeb.json | `EQUIPAGGIAMENTO/witcher-equipment/tasca_segreta.webp` |
-| Balestra dell'Orso | _tools\src-packs\EQUIPAGGIAMENTO\witcher-weapons\balestra_dell_orso_006d87c91fc31f98.json | `EQUIPAGGIAMENTO/witcher-weapons/balestra_dell_orso.webp` |
-| Lupo (Spada Lunga Reliquia) | _tools\src-packs\EQUIPAGGIAMENTO\witcher-weapons\lupo_spada_lunga_reliquia_570e1ae2633117e4.json | `EQUIPAGGIAMENTO/witcher-weapons/lupo_spada_lunga_reliquia.webp` |
-| Pugnale di Diaspro Sanguigno | _tools\src-packs\EQUIPAGGIAMENTO\witcher-weapons\pugnale_di_diaspro_sanguigno_004c9f9702b73e28.json | `EQUIPAGGIAMENTO/witcher-weapons/pugnale_di_diaspro_sanguigno.webp` |
-| Scorpione | _tools\src-packs\EQUIPAGGIAMENTO\witcher-weapons\scorpione_00056b29e0b098b1.json | `EQUIPAGGIAMENTO/witcher-weapons/scorpione.webp` |
-| Sentinella dell'Abisso | _tools\src-packs\EQUIPAGGIAMENTO\witcher-weapons\sentinella_dell_abisso_f1a2b3c4d5e6f7a8.json | `EQUIPAGGIAMENTO/witcher-weapons/sentinella_dell_abisso.webp` |
-| Spada d'Acciaio della Manticora | _tools\src-packs\EQUIPAGGIAMENTO\witcher-weapons\spada_d_acciaio_della_manticora_00c8757ce11b1778.json | `EQUIPAGGIAMENTO/witcher-weapons/spada_d_acciaio_della_manticora.webp` |
-| Spada d'Acciaio della Vipera | _tools\src-packs\EQUIPAGGIAMENTO\witcher-weapons\spada_d_acciaio_della_vipera_007aaca1e51e3768.json | `EQUIPAGGIAMENTO/witcher-weapons/spada_d_acciaio_della_vipera.webp` |
-| Spada d'Acciaio dell'Orso | _tools\src-packs\EQUIPAGGIAMENTO\witcher-weapons\spada_d_acciaio_dell_orso_000d890e417f601d.json | `EQUIPAGGIAMENTO/witcher-weapons/spada_d_acciaio_dell_orso.webp` |
+| Brocchiero Gnomesco | _tools\src-packs\EQUIPAGGIAMENTO\witcher-armor\brocchiero_gnomesco_6b7e8d9c0a1b2c3d.json | `EQUIPAGGIAMENTO/witcher-armor/brocchiero_gnomesco.webp` |
+| Palvese Mahakaman | _tools\src-packs\EQUIPAGGIAMENTO\witcher-armor\palvese_mahakaman_9e0f1a2b3c4d5e6f.json | `EQUIPAGGIAMENTO/witcher-armor/palvese_mahakaman.webp` |
+| Scudo Elfico | _tools\src-packs\EQUIPAGGIAMENTO\witcher-armor\scudo_elfico_8d9e0f1a2b3c4d5e.json | `EQUIPAGGIAMENTO/witcher-armor/scudo_elfico.webp` |
+| Scudo in Scaglie di Viverna | _tools\src-packs\EQUIPAGGIAMENTO\witcher-armor\scudo_in_scaglie_di_viverna_7c8d9e0f1a2b3c4d.json | `EQUIPAGGIAMENTO/witcher-armor/scudo_in_scaglie_di_viverna.webp` |
 | Spada d'Acciaio del Gatto | _tools\src-packs\EQUIPAGGIAMENTO\witcher-weapons\spada_d_acciaio_del_gatto_4224936e2338517b.json | `EQUIPAGGIAMENTO/witcher-weapons/spada_d_acciaio_del_gatto.webp` |
 | Spada d'Acciaio del Grifone | _tools\src-packs\EQUIPAGGIAMENTO\witcher-weapons\spada_d_acciaio_del_grifone_3fd3cc4a053ee4e3.json | `EQUIPAGGIAMENTO/witcher-weapons/spada_d_acciaio_del_grifone.webp` |
 | Spada d'Acciaio del Lupo | _tools\src-packs\EQUIPAGGIAMENTO\witcher-weapons\spada_d_acciaio_del_lupo_b02556df7587bae1.json | `EQUIPAGGIAMENTO/witcher-weapons/spada_d_acciaio_del_lupo.webp` |
-| Spada d'Argento della Manticora | _tools\src-packs\EQUIPAGGIAMENTO\witcher-weapons\spada_d_argento_della_manticora_00ccb4382fba9b98.json | `EQUIPAGGIAMENTO/witcher-weapons/spada_d_argento_della_manticora.webp` |
-| Spada d'Argento della Vipera | _tools\src-packs\EQUIPAGGIAMENTO\witcher-weapons\spada_d_argento_della_vipera_0053aa0f430b0378.json | `EQUIPAGGIAMENTO/witcher-weapons/spada_d_argento_della_vipera.webp` |
-| Spada d'Argento dell'Orso | _tools\src-packs\EQUIPAGGIAMENTO\witcher-weapons\spada_d_argento_dell_orso_003af6d3fb73c238.json | `EQUIPAGGIAMENTO/witcher-weapons/spada_d_argento_dell_orso.webp` |
 | Spada d'Argento del Gatto | _tools\src-packs\EQUIPAGGIAMENTO\witcher-weapons\spada_d_argento_del_gatto_ba58a4bbe6f32d69.json | `EQUIPAGGIAMENTO/witcher-weapons/spada_d_argento_del_gatto.webp` |
 | Spada d'Argento del Grifone | _tools\src-packs\EQUIPAGGIAMENTO\witcher-weapons\spada_d_argento_del_grifone_a76cd51e95ac556f.json | `EQUIPAGGIAMENTO/witcher-weapons/spada_d_argento_del_grifone.webp` |
 | Spada d'Argento del Lupo | _tools\src-packs\EQUIPAGGIAMENTO\witcher-weapons\spada_d_argento_del_lupo_19d88746db960774.json | `EQUIPAGGIAMENTO/witcher-weapons/spada_d_argento_del_lupo.webp` |
-| Zanna della Vipera | _tools\src-packs\EQUIPAGGIAMENTO\witcher-weapons\zanna_della_vipera_00091b914a4c2757.json | `EQUIPAGGIAMENTO/witcher-weapons/zanna_della_vipera.webp` |
-| La Vita di un Witcher | _tools\src-packs\REGOLAMENTO_E_NARRATIVA\Lore_e_Racconti\witcher-lore\la_vita_di_un_witcher_a96151f1c5056cb4.json | `REGOLAMENTO_E_NARRATIVA/Lore_e_Racconti/witcher-lore/la_vita_di_un_witcher.webp` |
-| L'Epoca d'Oro dei Witcher | _tools\src-packs\REGOLAMENTO_E_NARRATIVA\Lore_e_Racconti\witcher-lore\l_epoca_d_oro_dei_witcher_25d364d388062598.json | `REGOLAMENTO_E_NARRATIVA/Lore_e_Racconti/witcher-lore/l_epoca_d_oro_dei_witcher.webp` |
-| Demoni Maggiori e Veri Nomi | _tools\src-packs\REGOLAMENTO_E_NARRATIVA\Lore_e_Racconti\witcher-lore-chaos\demoni_maggiori_e_veri_nomi_d43dc5b0ad179b66.json | `REGOLAMENTO_E_NARRATIVA/Lore_e_Racconti/witcher-lore-chaos/demoni_maggiori_e_veri_nomi.webp` |
-| La Vita da Mago | _tools\src-packs\REGOLAMENTO_E_NARRATIVA\Lore_e_Racconti\witcher-lore-chaos\la_vita_da_mago_738e4e337f02c0af.json | `REGOLAMENTO_E_NARRATIVA/Lore_e_Racconti/witcher-lore-chaos/la_vita_da_mago.webp` |
-| Vita Scolastica dei Maghi | _tools\src-packs\REGOLAMENTO_E_NARRATIVA\Lore_e_Racconti\witcher-lore-chaos\vita_scolastica_dei_maghi_17364eb775b55a3e.json | `REGOLAMENTO_E_NARRATIVA/Lore_e_Racconti/witcher-lore-chaos/vita_scolastica_dei_maghi.webp` |
-| Eleganza | _tools\src-packs\REGOLAMENTO_E_NARRATIVA\Professioni_e_Abilita\witcher-skills\eleganza_620f203ff79edc3b.json | `REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/eleganza.webp` |
-| Fervore | _tools\src-packs\REGOLAMENTO_E_NARRATIVA\Professioni_e_Abilita\witcher-skills\fervore_a6b7c8d9e0f1a2b3.json | `REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/fervore.webp` |
-| Sintonia con la Natura | _tools\src-packs\REGOLAMENTO_E_NARRATIVA\Professioni_e_Abilita\witcher-skills\sintonia_con_la_natura_a4b5c6d7e8f9a0b1.json | `REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/sintonia_con_la_natura.webp` |
-| Critici Complicati | _tools\src-packs\TABELLEOPERATIVE\CriticieCombattimento\critici_complicati_02c0c3792d885d94.json | `TABELLEOPERATIVE/CriticieCombattimento/critici_complicati.webp` |
-| Critici Difficili | _tools\src-packs\TABELLEOPERATIVE\CriticieCombattimento\critici_difficili_d0c2238c3d20ebd9.json | `TABELLEOPERATIVE/CriticieCombattimento/critici_difficili.webp` |
-| Critici Mortali | _tools\src-packs\TABELLEOPERATIVE\CriticieCombattimento\critici_mortali_79b6dc01eaf17a13.json | `TABELLEOPERATIVE/CriticieCombattimento/critici_mortali.webp` |
-| Critici Semplici | _tools\src-packs\TABELLEOPERATIVE\CriticieCombattimento\critici_semplici_c643d9ff271bd482.json | `TABELLEOPERATIVE/CriticieCombattimento/critici_semplici.webp` |
-| Fumble - Disarmato | _tools\src-packs\TABELLEOPERATIVE\CriticieCombattimento\fumble_disarmato_f75b23dcf048c0be.json | `TABELLEOPERATIVE/CriticieCombattimento/fumble_disarmato.webp` |
-| Fumble - Distanza | _tools\src-packs\TABELLEOPERATIVE\CriticieCombattimento\fumble_distanza_ae00243fc142a619.json | `TABELLEOPERATIVE/CriticieCombattimento/fumble_distanza.webp` |
-| Fumble - Mischia Attacco | _tools\src-packs\TABELLEOPERATIVE\CriticieCombattimento\fumble_mischia_attacco_d6c16bcb964b9506.json | `TABELLEOPERATIVE/CriticieCombattimento/fumble_mischia_attacco.webp` |
-| Fumble - Mischia Difesa | _tools\src-packs\TABELLEOPERATIVE\CriticieCombattimento\fumble_mischia_difesa_60d8bc6889149124.json | `TABELLEOPERATIVE/CriticieCombattimento/fumble_mischia_difesa.webp` |
-| Effetti dei Disastri Elementali | _tools\src-packs\TABELLEOPERATIVE\DisastriMagici\effetti_dei_disastri_elementali_bec74067a0c6a0bc.json | `TABELLEOPERATIVE/DisastriMagici/effetti_dei_disastri_elementali.webp` |
-| Esiti dei Disastri Magici — Mago | _tools\src-packs\TABELLEOPERATIVE\DisastriMagici\esiti_dei_disastri_magici_mago_d020eeb9d502c6d6.json | `TABELLEOPERATIVE/DisastriMagici/esiti_dei_disastri_magici_mago.webp` |
-| Pericoli della Necromanzia | _tools\src-packs\TABELLEOPERATIVE\DisastriMagici\pericoli_della_necromanzia_590ac631fd075864.json | `TABELLEOPERATIVE/DisastriMagici/pericoli_della_necromanzia.webp` |
+| Critici Complicati | _tools\src-packs\REGOLAMENTO_E_NARRATIVA\Tabelle_Operative\CriticieCombattimento\critici_complicati_02c0c3792d885d94.json | `REGOLAMENTO_E_NARRATIVA/Tabelle_Operative/CriticieCombattimento/critici_complicati.webp` |
+| Critici Difficili | _tools\src-packs\REGOLAMENTO_E_NARRATIVA\Tabelle_Operative\CriticieCombattimento\critici_difficili_d0c2238c3d20ebd9.json | `REGOLAMENTO_E_NARRATIVA/Tabelle_Operative/CriticieCombattimento/critici_difficili.webp` |
+| Fumble - Mischia Attacco | _tools\src-packs\REGOLAMENTO_E_NARRATIVA\Tabelle_Operative\CriticieCombattimento\fumble_mischia_attacco_d6c16bcb964b9506.json | `REGOLAMENTO_E_NARRATIVA/Tabelle_Operative/CriticieCombattimento/fumble_mischia_attacco.webp` |
+| Fumble - Mischia Difesa | _tools\src-packs\REGOLAMENTO_E_NARRATIVA\Tabelle_Operative\CriticieCombattimento\fumble_mischia_difesa_60d8bc6889149124.json | `REGOLAMENTO_E_NARRATIVA/Tabelle_Operative/CriticieCombattimento/fumble_mischia_difesa.webp` |
+| Effetti dei Disastri Elementali | _tools\src-packs\REGOLAMENTO_E_NARRATIVA\Tabelle_Operative\DisastriMagici\effetti_dei_disastri_elementali_bec74067a0c6a0bc.json | `REGOLAMENTO_E_NARRATIVA/Tabelle_Operative/DisastriMagici/effetti_dei_disastri_elementali.webp` |
+| Esiti dei Disastri Magici — Mago | _tools\src-packs\REGOLAMENTO_E_NARRATIVA\Tabelle_Operative\DisastriMagici\esiti_dei_disastri_magici_mago_d020eeb9d502c6d6.json | `REGOLAMENTO_E_NARRATIVA/Tabelle_Operative/DisastriMagici/esiti_dei_disastri_magici_mago.webp` |
+| Pericoli della Necromanzia | _tools\src-packs\REGOLAMENTO_E_NARRATIVA\Tabelle_Operative\DisastriMagici\pericoli_della_necromanzia_590ac631fd075864.json | `REGOLAMENTO_E_NARRATIVA/Tabelle_Operative/DisastriMagici/pericoli_della_necromanzia.webp` |
