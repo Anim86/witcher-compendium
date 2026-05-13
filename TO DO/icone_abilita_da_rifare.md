@@ -1,0 +1,79 @@
+# TO DO: Icone Abilità Duplicate
+
+Le seguenti abilità nel compendio utilizzano immagini duplicate (placeholder o condivise tra più voci). 
+È necessario creare icone uniche per ciascuna di queste abilità, mantenendo lo stile **"Digital Painting on Stone Slab"** (Natura morta vista dall'alto su lastra di pietra scura).
+
+## Elenco Abilità
+
+- Accortezza (duplicato)
+- Alchimia
+- Archi
+- Armi in Asta (duplicato)
+- Artigianato (duplicato)
+- Atletica (duplicato)
+- Balestre
+- Belle Arti (duplicato)
+- Benedizioni (duplicato)
+- Bestiario (duplicato)
+- Bosco Sacro (duplicato)
+- Camuffare (duplicato)
+- Carisma (duplicato)
+- Cavalcare (duplicato)
+- Commercio (duplicato)
+- Contraffazione (duplicato)
+- Coraggio (duplicato)
+- Costruire Trappole (duplicato)
+- Custode del Sapere (duplicato)
+- Deduzione (duplicato)
+- Eleganza
+- Eludere (duplicato)
+- Esibirsi (duplicato)
+- Etichetta (duplicato)
+- Fabbricare Trappole (duplicato)
+- Falsificare (duplicato)
+- Fervore
+- Forma Bestiale (duplicato)
+- Gioco d'Azzardo
+- Guardiano del Bosco (duplicato)
+- Guaritore di Bestie (duplicato)
+- Inganno (duplicato)
+- Iniziato degli Dei (duplicato)
+- Insegnamento (duplicato)
+- Intessere Fatture (duplicato)
+- Intimidire (duplicato)
+- Istruzione (duplicato)
+- Lame Corte (duplicato)
+- Lanciare Incantesimi
+- Leggere la Natura (duplicato)
+- Linguaggio: Lingua Antica (duplicato)
+- Linguaggio: Lingua Comune (duplicato)
+- Linguaggio: Nanico (duplicato)
+- Manifattura (duplicato)
+- Mischia
+- Mistagogo (duplicato)
+- Misteri del Culto (duplicato)
+- Navigazione (duplicato)
+- Officiare Rituali (duplicato)
+- Parola di Dio (duplicato)
+- Patto Animale (duplicato)
+- Persuasione (duplicato)
+- Potere Divino (duplicato)
+- Prestidigitazione (duplicato)
+- Preveggenza (duplicato)
+- Pronto Soccorso (duplicato)
+- Resistere a Coercizione (duplicato)
+- Resistere alla Magia (duplicato)
+- Rissa (duplicato)
+- Rito della Quercia e del Vischio
+- Rituali di Sangue (duplicato)
+- Sangue e Ossa (duplicato)
+- Scaltrezza (duplicato)
+- Scassinare (duplicato)
+- Scherma (duplicato)
+- Seduzione (duplicato)
+- Sensibilità (duplicato)
+- Sintonia con la Natura
+- Sopravvivenza (duplicato)
+- Sovranità Divina (duplicato)
+- Tattica (duplicato)
+- Tempra (duplicato)
