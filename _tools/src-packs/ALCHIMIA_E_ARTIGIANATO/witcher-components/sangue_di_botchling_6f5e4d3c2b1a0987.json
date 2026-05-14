@@ -3,13 +3,15 @@
     "type": "component",
     "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-components/sangue_di_botchling.webp",
     "system": {
-        "description": "DESCRIZIONE MANCANTE",
+        "description": "<p>Sangue denso prelevato dal cadavere di un Botchling, utile come reagente base per distillare la sostanza Vetriolo.</p>",
         "quantity": 1,
         "weight": 0.1,
         "cost": 66,
         "category": "monster",
         "substanceType": "vitriolo",
-        "sourcebook": "DW 144"
+        "sourcebook": "DW 144",
+        "rarity": "Scarsa",
+        "location": "Reperibile sui Botchling"
     },
     "_id": "6f5e4d3c2b1a0987",
     "_stats": {

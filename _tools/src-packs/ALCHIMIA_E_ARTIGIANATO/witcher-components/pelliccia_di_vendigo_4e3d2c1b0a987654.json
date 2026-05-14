@@ -3,13 +3,15 @@
     "type": "component",
     "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-components/pelliccia_di_vendigo.webp",
     "system": {
-        "description": "DESCRIZIONE MANCANTE",
+        "description": "<p>Pelo irregolare e grigiastro prelevato dal cadavere di un Vendigo. Rappresenta un'ottima fonte per estrarre l'elemento alchemico Fulgur.</p>",
         "quantity": 1,
         "weight": 0.1,
         "cost": 76,
         "category": "monster",
         "substanceType": "fulgur",
-        "sourcebook": "DW 143"
+        "sourcebook": "DW 143",
+        "rarity": "Scarsa",
+        "location": "Reperibile sui Vendigo"
     },
     "_id": "4e3d2c1b0a987654",
     "_stats": {

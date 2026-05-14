@@ -3,13 +3,15 @@
     "type": "component",
     "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-components/succo_di_archeospora.webp",
     "system": {
-        "description": "DESCRIZIONE MANCANTE",
+        "description": "<p>Liquido tossico estratto dai fusti di una gigantesca e letale pianta Archeospora, utilizzato in alchimia per estrarre Vetriolo.</p>",
         "quantity": 1,
         "weight": 0.1,
         "cost": 38,
         "category": "monster",
         "substanceType": "vitriolo",
-        "sourcebook": "DW 144"
+        "sourcebook": "DW 144",
+        "rarity": "Scarsa",
+        "location": "Reperibile sulle Archeospore"
     },
     "_id": "a2f7c0b8e9d14635",
     "_stats": {

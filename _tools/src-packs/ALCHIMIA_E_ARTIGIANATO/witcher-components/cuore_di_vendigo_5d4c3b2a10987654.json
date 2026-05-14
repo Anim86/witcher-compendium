@@ -3,13 +3,15 @@
     "type": "component",
     "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-components/cuore_di_vendigo.webp",
     "system": {
-        "description": "DESCRIZIONE MANCANTE",
+        "description": "<p>Organo vitale estratto da un Vendigo. Questa mostruosità è profondamente legata alle energie oscure e le sue parti vengono impiegate per estrarre l'Essenza della Morte.</p>",
         "quantity": 1,
         "weight": 1,
         "cost": 167,
         "category": "monster",
         "substanceType": "etere",
-        "sourcebook": "DW 142"
+        "sourcebook": "DW 142",
+        "rarity": "Rara",
+        "location": "Reperibile sui Vendigo"
     },
     "_id": "5d4c3b2a10987654",
     "_stats": {
