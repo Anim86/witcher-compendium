@@ -1,65 +1,83 @@
-<div class="crit-wounds-list">
-    {{#each system.critWounds as |critWound i| }}
-        <div class="critwound-card draggable" data-id="{{critWound.id}}">
+<div class="crit-wound-section">
+    <div class="section-header-premium">
+        <div class="header-main">
+            <i class="fas fa-biohazard header-icon"></i>
+            <h3 class="header-name">{{localize "WITCHER.CritWound.Header"}}</h3>
+            <div class="header-actions">
+                <a class="btn-premium-action add-crit-wound" title="{{localize 'WITCHER.CritWound.Add'}}">
+                    <i class="fas fa-plus"></i>
+                    <span>{{localize "WITCHER.CritWound.Add"}}</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="critwounds-list">
+        {{#each system.critWounds as |wound i|}}
+        <div class="critwound-card {{ifThen wound.treated 'is-treated' (ifThen wound.stabilized 'is-stabilized' '')}}" data-index="{{i}}">
             <div class="critwound-main">
-                <div class="critwound-type">
-                    <input hidden name="system.critWounds.{{i}}.id" type="text" value="{{critWound.id}}" />
-                    <select class="wound-select premium-select" name="system.critWounds.{{i}}.configEntry">
-                        <option value=""></option>
-                        {{selectOptions ../config.Crit selected=this.configEntry labelAttr="label" localize=true}}
+                <!-- Selection & Info -->
+                <div class="critwound-selection">
+                    <select name="system.critWounds.{{i}}.configEntry" class="wound-type">
+                        <option value="">-- {{localize "WITCHER.CritWound.Add"}} --</option>
+                        {{#each ../config.Crit as |c key|}}
+                        <option value="{{key}}" {{selected (eq wound.configEntry key)}}>{{localize c.name}}</option>
+                        {{/each}}
+                    </select>
+                    
+                    <select name="system.critWounds.{{i}}.location" class="wound-location">
+                        {{#select wound.location}}
+                        <option value="head">{{localize "WITCHER.Location.Head"}}</option>
+                        <option value="torso">{{localize "WITCHER.Location.Torso"}}</option>
+                        <option value="rarm">{{localize "WITCHER.Location.RArm"}}</option>
+                        <option value="larm">{{localize "WITCHER.Location.LArm"}}</option>
+                        <option value="rleg">{{localize "WITCHER.Location.RLeg"}}</option>
+                        <option value="lleg">{{localize "WITCHER.Location.LLeg"}}</option>
+                        {{/select}}
                     </select>
                 </div>
 
-                <div class="critwound-severity">
-                    <select class="mod-select premium-select" name="system.critWounds.{{i}}.mod">
-                        {{selectOptions ../config.CritMod selected=this.mod localize=true}}
-                    </select>
+                <!-- Healing Progress -->
+                <div class="healing-timer" title="{{localize 'WITCHER.CritWound.HealingTime.Label'}}">
+                    <i class="fas fa-hourglass-half"></i>
+                    <input type="number" name="system.critWounds.{{i}}.daysHealed" value="{{wound.daysHealed}}" placeholder="0">
+                    <span class="sep">/</span>
+                    <input type="number" name="system.critWounds.{{i}}.healingTime" value="{{wound.healingTime}}" placeholder="0">
                 </div>
 
-                <div class="critwound-loc">
-                    <select class="loc-select premium-select" name="system.critWounds.{{i}}.location">
-                        {{selectOptions ../config.location selected=this.location localize=true}}
-                    </select>
+                <!-- Status Toggles -->
+                <div class="toggle-group">
+                    <label class="premium-checkbox {{ifThen wound.stabilized 'active' ''}}" title="{{localize 'WITCHER.CritWound.Stabilized'}}">
+                        <input type="checkbox" name="system.critWounds.{{i}}.stabilized" {{checked wound.stabilized}}>
+                        <i class="fas fa-band-aid"></i>
+                    </label>
+                    <label class="premium-checkbox {{ifThen wound.treated 'active' ''}}" title="{{localize 'WITCHER.CritWound.Treated'}}">
+                        <input type="checkbox" name="system.critWounds.{{i}}.treated" {{checked wound.treated}}>
+                        <i class="fas fa-briefcase-medical"></i>
+                    </label>
                 </div>
 
-                <div class="critwound-healing">
-                    <div class="healing-status">
-                        <span class="healing-label">{{localize "WITCHER.CritWound.HealingTime.Label"}}</span>
-                        <div class="healing-progress-container">
-                            <input class="days-input" name="system.critWounds.{{i}}.daysHealed" type="number" value="{{critWound.daysHealed}}" />
-                            <span class="separator">/</span>
-                            <input class="time-input" name="system.critWounds.{{i}}.healingTime" type="number" value="{{critWound.healingTime}}" />
-                            <span class="unit">gg</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="critwound-controls">
-                    <a class="critwound-display action-icon" data-tooltip="{{localize 'WITCHER.activeEffect.details'}}">
-                        <i class="fa-solid fa-chevron-down"></i>
-                    </a>
-                    <a class="delete-crit action-icon delete" data-id="{{critWound.id}}" data-tooltip="{{localize 'DOCUMENT.Delete' type='CritWound'}}">
-                        <i class="fas fa-trash-can"></i>
+                <!-- Actions -->
+                <div class="critwound-actions">
+                    <a class="action-icon delete delete-crit-wound" title="{{localize 'WITCHER.Button.Delete'}}">
+                        <i class="fas fa-trash"></i>
                     </a>
                 </div>
             </div>
 
-            <div class="critwound-details invisible">
-                <div class="details-grid">
-                    <div class="detail-description">
-                        <i class="fa-solid fa-info-circle"></i>
-                        <span>{{localize critWound.description}}</span>
-                    </div>
-                    <div class="detail-effect">
-                        <i class="fa-solid fa-burst"></i>
-                        <span>{{localize critWound.effect.description}}</span>
-                    </div>
-                    <div class="detail-notes">
-                        <label>{{localize "WITCHER.CritWound.Notes"}}</label>
-                        <textarea rows="2" name="system.critWounds.{{i}}.notes" placeholder="...">{{critWound.notes}}</textarea>
-                    </div>
+            <!-- Penalties & Notes (Sempre Visibili e Compatti) -->
+            <div class="critwound-footer">
+                {{#if wound.configEntry}}
+                <div class="penalty-line">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <span class="penalty-text">{{{localize (lookup (lookup ../config.Crit wound.configEntry) "penaltyDef")}}}</span>
+                </div>
+                {{/if}}
+                <div class="notes-line">
+                    <i class="fas fa-pen-nib"></i>
+                    <input type="text" name="system.critWounds.{{i}}.notes" value="{{wound.notes}}" placeholder="{{localize 'WITCHER.CritWound.NotesPlaceholder'}}">
                 </div>
             </div>
         </div>
     {{/each}}
-</div>
+</div>

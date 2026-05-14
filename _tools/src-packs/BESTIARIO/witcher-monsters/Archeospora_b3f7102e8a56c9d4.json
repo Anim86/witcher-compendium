@@ -5,42 +5,42 @@
     "system": {
         "stats": {
             "int": {
-                "value": 0,
+                "value": 1,
                 "max": 0,
                 "unmodifiedMax": 0
             },
             "ref": {
-                "value": 0,
+                "value": 6,
                 "max": 0,
                 "unmodifiedMax": 0
             },
             "dex": {
-                "value": 0,
+                "value": 5,
                 "max": 0,
                 "unmodifiedMax": 0
             },
             "body": {
-                "value": 0,
+                "value": 5,
                 "max": 0,
                 "unmodifiedMax": 0
             },
             "spd": {
-                "value": 0,
+                "value": 6,
                 "max": 0,
                 "unmodifiedMax": 0
             },
             "emp": {
-                "value": 0,
+                "value": 1,
                 "max": 0,
                 "unmodifiedMax": 0
             },
             "cra": {
-                "value": 0,
+                "value": 1,
                 "max": 0,
                 "unmodifiedMax": 0
             },
             "will": {
-                "value": 0,
+                "value": 5,
                 "max": 0,
                 "unmodifiedMax": 0
             },
@@ -50,7 +50,7 @@
                 "unmodifiedMax": 0
             },
             "armor": {
-                "value": 0,
+                "value": 5,
                 "max": 0
             }
         },
@@ -99,36 +99,36 @@
             "reward": 30,
             "monsterType": "CursedOne",
             "difficulty": "MEDIUM",
-            "height": "",
-            "weight": "",
-            "environment": "",
-            "organization": "",
-            "vulnerability": "",
-            "intelligence": "",
+            "height": "2,5m",
+            "weight": "68kg",
+            "environment": "Vicino ai cadaveri / terreni intrisi di sangue",
+            "organization": "Gruppi da 3 a 5",
+            "vulnerability": "Unguento Anti-Maledetti, Fuoco",
+            "intelligence": "Ferale",
             "bounty": 30
         },
         "derivedStats": {
             "rec": {
-                "value": 0,
-                "max": 0,
+                "value": 5,
+                "max": 5,
                 "unmodifiedMax": 0
             },
             "stun": {
-                "value": 0,
-                "max": 0
+                "value": 18,
+                "max": 18
             },
             "woundTreshold": {
                 "value": 0,
                 "max": 0
             },
             "hp": {
-                "value": 0,
-                "max": 0,
+                "value": 25,
+                "max": 25,
                 "unmodifiedMax": 0
             },
             "sta": {
-                "value": 0,
-                "max": 0,
+                "value": 25,
+                "max": 25,
                 "unmodifiedMax": 0
             },
             "focus": {

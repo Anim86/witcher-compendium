@@ -150,7 +150,8 @@ export async function registerHandelbarHelpers() {
                 content = content.replace(regex, `$& selected`);
             }
             return content;
-        }
+        },
+        selected: (condition) => condition ? "selected" : ""
     });
 
     Handlebars.registerHelper('eachLimit', function (context, limit, options) {
@@ -290,8 +291,8 @@ export async function registerHandelbarHelpers() {
     });
 
     Handlebars.registerHelper("monsterIcon", function (monsterType) {
-        if (!monsterType) return "systems/TheWitcherItaNewSystem/assets/images/Monsters/Unknown.png";
-        return `systems/TheWitcherItaNewSystem/assets/images/Monsters/${monsterType}.png`;
+        const type = monsterType || "Beast";
+        return `systems/TheWitcherItaNewSystem/assets/images/Monsters/${type}.png`;
     });
 
     Handlebars.registerHelper("pct", function (value, max) {

@@ -85,28 +85,33 @@
 
 /* ── MONSTER SIDEBAR ── */
 .monster-sidebar {
-    width: 100% !important; /* Larghezza controllata da grid-template-columns */
+    width: 100% !important;
     background: var(--p-bg-sidebar) !important;
-    backdrop-filter: var(--w-blur);
+    backdrop-filter: blur(15px);
     border-right: 1px solid var(--p-border) !important;
-    padding: 20px 15px !important;
+    padding: 15px 12px !important;
     display: flex !important;
     flex-direction: column !important;
-    gap: 20px !important;
+    gap: 15px !important;
     overflow-y: auto !important;
     z-index: 10 !important;
     position: relative !important;
 }
 
+.monster-sidebar.readonly {
+    pointer-events: none;
+    opacity: 0.95;
+}
+
 .artwork-container {
     width: 100%;
-    height: 250px !important; /* Forza altezza per contenere i vitals */
-    border: 2px solid var(--p-border);
-    border-radius: 8px;
+    height: 220px !important;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
     overflow: hidden;
     position: relative !important;
-    background: rgba(0,0,0,0.4);
-    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    background: #000;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
     flex-shrink: 0;
 }
 
@@ -115,53 +120,128 @@
     height: 100%;
     object-fit: cover;
     display: block;
+    transition: transform 0.5s ease;
 }
 
-/* Vital Orbs - Circular and Modern */
+.artwork-container:hover .monster-artwork {
+    transform: scale(1.05);
+}
+
+/* Vital Orbs Overlay */
 .vitals-overlay {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    padding: 10px;
-    background: linear-gradient(0deg, rgba(0,0,0,0.9), transparent);
+    padding: 12px 8px;
+    background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, transparent 100%);
     display: flex;
-    justify-content: center;
-    gap: 12px;
-    z-index: 5;
+    justify-content: space-around;
+    gap: 5px;
 }
 
 .vital-orb {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: rgba(10,10,10,0.9);
-    border: 2px solid var(--p-border);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    position: relative;
+    gap: 2px;
+    flex: 1;
 }
 
-.vital-orb.hp { border-color: var(--p-hp) !important; color: var(--p-hp); }
-.vital-orb.sta { border-color: var(--p-sta) !important; color: var(--p-sta); }
-.vital-orb.res { border-color: var(--w-gold) !important; color: var(--w-gold); }
-.vital-orb.foc { border-color: #9b59b6 !important; color: #9b59b6; }
+.vital-orb i {
+    font-size: 0.9rem;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.5));
+}
 
-.vital-orb i { font-size: 10px; position: absolute; top: 6px; }
-.vital-orb input { 
-    background: transparent !important; 
-    border: none !important; 
-    color: #fff !important; 
-    font-size: 14px !important; 
-    font-weight: 800 !important; 
+.vital-orb.hp i { color: #ff5252; }
+.vital-orb.sta i { color: #448aff; }
+.vital-orb.resolve i { color: #c5a35d; }
+
+.vital-orb input {
+    background: transparent !important;
+    border: none !important;
+    color: white !important;
+    font-family: 'MasonSans', sans-serif !important;
+    font-size: 1.1rem !important;
+    font-weight: bold !important;
     text-align: center;
-    width: 32px !important;
+    width: 100% !important;
     padding: 0 !important;
-    margin-top: 6px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.8);
 }
-.vital-orb .max { font-size: 9px; opacity: 0.5; margin-top: -2px; }
+
+/* Quick Actions */
+.monster-quick-actions {
+    display: flex;
+    justify-content: center;
+}
+
+.action-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 20px;
+    background: rgba(197, 160, 89, 0.1);
+    border: 1px solid rgba(197, 160, 89, 0.3);
+    border-radius: 6px;
+    color: #c5a35d;
+    text-decoration: none !important;
+    transition: all 0.3s ease;
+}
+
+.action-btn:hover {
+    background: rgba(197, 160, 89, 0.2);
+    box-shadow: 0 0 15px rgba(197, 160, 89, 0.2);
+}
+
+/* Stats Grid */
+.sidebar-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.sidebar-stat-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.sidebar-stat-box:hover {
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(197, 160, 89, 0.3);
+}
+
+.stat-abbr {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.4);
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.sidebar-stat-box input {
+    background: transparent !important;
+    border: none !important;
+    color: #fff !important;
+    font-family: 'MasonSans', serif !important;
+    font-size: 1.4rem !important;
+    font-weight: bold !important;
+    text-align: center;
+    width: 100% !important;
+    height: auto !important;
+    padding: 0 !important;
+}
+
+.sidebar-stat-box[data-stat="spd"] { border-bottom: 2px solid #4caf50; }
+.sidebar-stat-box[data-stat="ref"] { border-bottom: 2px solid #2196f3; }
+.sidebar-stat-box[data-stat="dex"] { border-bottom: 2px solid #ff9800; }
+.sidebar-stat-box[data-stat="will"] { border-bottom: 2px solid #9c27b0; }
 
 /* ── MONSTER MAIN WRAPPER ── */
 .char-main-wrapper {
@@ -848,5 +928,168 @@
 
 .ability-description p {
     margin: 0;
+}
+
+/* Monster Sheet Header V2 - Ultra Compact */
+.monster-sheet-header-v2 {
+    margin: 0;
+    padding: 12px 15px;
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px 8px 0 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.monster-sheet-header-v2.readonly {
+    pointer-events: none;
+    opacity: 0.9;
+}
+
+.monster-sheet-header-v2 .header-main-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Type Section */
+.monster-sheet-header-v2 .type-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex: 0 0 auto;
+}
+
+.monster-sheet-header-v2 .type-icon {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+}
+
+.monster-sheet-header-v2 .type-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.monster-sheet-header-v2 .type-label {
+    font-family: 'MasonSans', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #c9a941;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.monster-sheet-header-v2 .mini-badge {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.7rem;
+    padding: 1px 6px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.05);
+    width: fit-content;
+    text-transform: uppercase;
+}
+
+.monster-sheet-header-v2 .mini-badge.difficulty.EASY { color: #81C784; }
+.monster-sheet-header-v2 .mini-badge.difficulty.MEDIUM { color: #FFD54F; }
+.monster-sheet-header-v2 .mini-badge.difficulty.HARD { color: #E57373; }
+
+/* Name Section */
+.monster-sheet-header-v2 .name-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 200px;
+}
+
+.monster-sheet-header-v2 .monster-name-input {
+    background: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: white !important;
+    font-family: 'MasonSans', serif !important;
+    font-size: 1.8rem !important;
+    font-weight: bold !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    height: auto !important;
+}
+
+.monster-sheet-header-v2 .badges-row {
+    display: flex;
+    gap: 10px;
+}
+
+.monster-sheet-header-v2 .compact-badge {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.03);
+    padding: 1px 8px;
+    border-radius: 4px;
+}
+
+.monster-sheet-header-v2 .compact-badge.bounty {
+    color: #ffd700;
+}
+
+/* Vitals Section */
+.monster-sheet-header-v2 .vitals-section {
+    display: flex;
+    gap: 12px;
+    flex: 0 0 auto;
+}
+
+.monster-sheet-header-v2 .vital-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 10px;
+    background: rgba(255, 255, 255, 0.04);
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.monster-sheet-header-v2 .vital-item i {
+    font-size: 1rem;
+    opacity: 0.7;
+}
+
+.monster-sheet-header-v2 .vital-item.hp i { color: #ef5350; }
+.monster-sheet-header-v2 .vital-item.sta i { color: #42a5f5; }
+.monster-sheet-header-v2 .vital-item.armor i { color: #bdbdbd; }
+
+.monster-sheet-header-v2 .vital-values {
+    display: flex;
+    align-items: baseline;
+    gap: 2px;
+}
+
+.monster-sheet-header-v2 .vital-values input,
+.monster-sheet-header-v2 .vital-item.armor input {
+    background: transparent !important;
+    border: none !important;
+    color: white !important;
+    font-weight: bold !important;
+    font-size: 1rem !important;
+    width: 35px !important;
+    text-align: right !important;
+    padding: 0 !important;
+}
+
+.monster-sheet-header-v2 .vital-values .sep {
+    opacity: 0.3;
+    font-size: 0.8rem;
+}
+
+.monster-sheet-header-v2 .vital-values .max {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.4);
 }
 

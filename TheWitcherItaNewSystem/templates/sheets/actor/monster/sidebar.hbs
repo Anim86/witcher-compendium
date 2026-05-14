@@ -1,27 +1,19 @@
-<aside class="monster-sidebar" data-application-part="sidebar">
+<aside class="monster-sidebar {{#unless isEditable}}readonly{{/unless}}" data-application-part="sidebar">
     <div class="artwork-container">
         <img class="monster-artwork" src="{{actorImg}}" data-edit="img" title="{{actor.name}}" />
         
         <div class="vitals-overlay">
-            <div class="vital-orb hp" data-tooltip="{{localize 'WITCHER.Actor.DerStat.HP'}}">
+            <div class="vital-orb hp" data-tooltip="{{localize 'WITCHER.Stats.HP.Abbr'}}">
                 <i class="fas fa-heart"></i>
-                <input name="system.derivedStats.hp.value" type="text" value="{{system.derivedStats.hp.value}}" />
-                <span class="max">{{system.derivedStats.hp.max}}</span>
+                <input name="system.derivedStats.hp.value" type="text" value="{{system.derivedStats.hp.value}}" {{#unless isEditable}}readonly{{/unless}} />
             </div>
-            <div class="vital-orb sta" data-tooltip="{{localize 'WITCHER.Actor.DerStat.Sta'}}">
+            <div class="vital-orb sta" data-tooltip="{{localize 'WITCHER.Stats.STA.Abbr'}}">
                 <i class="fas fa-bolt"></i>
-                <input name="system.derivedStats.sta.value" type="text" value="{{system.derivedStats.sta.value}}" />
-                <span class="max">{{system.derivedStats.sta.max}}</span>
+                <input name="system.derivedStats.sta.value" type="text" value="{{system.derivedStats.sta.value}}" {{#unless isEditable}}readonly{{/unless}} />
             </div>
-             <div class="vital-orb res" data-tooltip="{{localize 'WITCHER.Actor.DerStat.Resolve'}}">
-                <i class="fas fa-fist-raised"></i>
-                <input name="system.derivedStats.resolve.value" type="text" value="{{system.derivedStats.resolve.value}}" />
-                <span class="max">{{system.derivedStats.resolve.max}}</span>
-            </div>
-            <div class="vital-orb foc" data-tooltip="{{localize 'WITCHER.Actor.DerStat.Focus'}}">
-                <i class="fas fa-eye"></i>
-                <input name="system.derivedStats.focus.value" type="text" value="{{system.derivedStats.focus.value}}" />
-                <span class="max">{{system.derivedStats.focus.max}}</span>
+             <div class="vital-orb resolve" data-tooltip="{{localize 'WITCHER.Stats.Resolve.Abbr'}}">
+                <i class="fas fa-brain"></i>
+                <input name="system.derivedStats.resolve.value" type="text" value="{{system.derivedStats.resolve.value}}" {{#unless isEditable}}readonly{{/unless}} />
             </div>
         </div>
     </div>
@@ -30,25 +22,21 @@
     <div class="monster-quick-actions">
         <a class="action-btn roll-init" data-action="rollInit" title="{{localize 'WITCHER.Button.RollInit'}}">
             <i class="fas fa-running"></i>
-        </a>
-        <a class="action-btn roll-crit" data-action="rollCrit" title="{{localize 'WITCHER.Button.RollCrit'}}">
-            <i class="fas fa-skull"></i>
+            <span>{{localize "WITCHER.Stats.SPD.Abbr"}}</span>
         </a>
     </div>
 
     {{!-- Primary Stats Grid --}}
     <div class="sidebar-stats-grid">
         {{#each system.stats as |stat id|}}
-        <a class="sidebar-stat-box stat-roll-btn" data-action="rollStat" data-stat="{{id}}" title="{{localize 'WITCHER.Button.Roll'}}">
-            <div class="stat-info">
-                <span class="stat-name">{{localize (lookup (lookup ../config.statMap id) 'label')}}</span>
-                <div class="stat-pair">
-                    <input type="text" name="system.stats.{{id}}.value" value="{{stat.value}}" data-dtype="Number" />
-                    <span class="sep">/</span>
-                    <span class="max">{{stat.max}}</span>
-                </div>
-            </div>
-        </a>
+        {{#unless (eq id "armor")}}
+        <div class="sidebar-stat-box" data-stat="{{id}}">
+            <a class="stat-roll-btn" data-action="rollStat" data-stat="{{id}}" title="{{localize 'WITCHER.Button.Roll'}}">
+                <span class="stat-abbr">{{localize (lookup (lookup ../config.statMap id) 'label')}}</span>
+            </a>
+            <input type="text" name="system.stats.{{id}}.value" value="{{stat.value}}" data-dtype="Number" {{#unless ../isEditable}}readonly{{/unless}} />
+        </div>
+        {{/unless}}
         {{/each}}
     </div>
 </aside>

@@ -1,12 +1,46 @@
 <section class="tab {{tabs.currency.cssClass}} scrollable standard-form" data-group="primary" data-tab="currency">
-    <div class="logs">
-        {{#each system.logs.currencyLog as |currencyLog|}}
-            <div class="logEntry">
-                <label>{{localize "WITCHER.rewards.dialog.label"}}: {{currencyLog.label}}</label>
-                <label>{{localize "WITCHER.rewards.dialog.currency"}}: {{currencyLog.amount}}</label>
-                <label>{{localize "WITCHER.rewards.dialog.currencyType"}}:
-                    {{ localize (lookup ../config.currency currencyLog.type) }}</label>
+    <div class="rewards-tab-content">
+    <div class="reward-header-summary">
+        <div class="currency-totals">
+            <div class="curr-box">
+                <span class="curr-label">{{localize "WITCHER.Actor.Stat.Gold"}}</span>
+                <span class="curr-val">{{system.currency.gold}}</span>
+            </div>
+            <div class="curr-box">
+                <span class="curr-label">{{localize "WITCHER.Actor.Stat.Crowns"}}</span>
+                <span class="curr-val">{{system.currency.crowns}}</span>
+            </div>
+            <div class="curr-box">
+                <span class="curr-label">{{localize "WITCHER.Actor.Stat.Orens"}}</span>
+                <span class="curr-val">{{system.currency.orens}}</span>
+            </div>
+        </div>
+    <div class="rewards-header">
+        <h3><i class="fas fa-coins"></i> {{localize "WITCHER.rewards.currency"}}</h3>
+        {{#if isGM}}
+        <button class="btn-premium add-currency-reward" data-action="addCurrencyReward">
+            <i class="fas fa-plus-circle"></i> {{localize "WITCHER.rewards.addCurrency"}}
+        </button>
+        {{/if}}
+    </div>
+
+    <div class="logs currency-logs">
+        {{#each system.logs.currencyLog}}
+        <div class="log-item">
+            <div class="log-info">
+                <span class="reason">{{this.label}}</span>
+                <span class="date">{{#if this.date}}{{date this.date 'DD MMM YYYY'}}{{/if}}</span>
+            </div>
+            <div class="log-amount {{ifThen (gt this.amount 0) 'positive' 'negative'}}">
+                {{#if (gt this.amount 0)}}+{{/if}}{{this.amount}} {{localize (concat "WITCHER.Actor.Stat." (capitalize this.type))}}
+            </div>
+        </div>
+        {{else}}
+            <div class="empty-state">
+                <i class="fas fa-coins"></i>
+                <p>{{localize "WITCHER.rewards.noCurrencyLogs"}}</p>
             </div>
         {{/each}}
     </div>
+</div>
 </section>

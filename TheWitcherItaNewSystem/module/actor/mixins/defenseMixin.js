@@ -230,6 +230,7 @@ export let defenseMixin = {
         );
         let crit = this.checkForCrit(roll.total, totalAttack);
         if (crit) {
+            crit.isTargeted = !attackDamageObject.originalLocation.includes('random');
             crit.location = await this.handleCritLocation(attackDamageObject);
             attackDamageObject.location = crit.location;
             crit.critEffectModifier = attackDamageObject.crit.critEffectModifier;
@@ -317,6 +318,12 @@ export let defenseMixin = {
     },
 
     checkForStun(attackDamageObject) {
+        // Every critical wound forces a Grit (stun) save
+        if (attackDamageObject.crit) {
+            return {
+                modifier: attackDamageObject.properties.stun || 0
+            };
+        }
         if (attackDamageObject.location.name != 'torso' && attackDamageObject.location.name != 'head') return;
         if (!attackDamageObject.properties.stun) return;
 
@@ -326,16 +333,9 @@ export let defenseMixin = {
     },
 
     checkForCrit(defenseRoll, totalAttack) {
-        // 7 - Simple - +3 dmg
-        // 10 - Complex - +5 dmg
-        // 13 - Difficult - +8 dmg
-        // 15 - Deadly - +10 dmg
-        let simple = totalAttack - 7;
-        let complex = totalAttack - 10;
-        let difficult = totalAttack - 13;
-        let deadly = totalAttack - 15;
+        let margin = totalAttack - defenseRoll;
 
-        if (defenseRoll <= deadly) {
+        if (margin >= 15) {
             return {
                 severity: 'deadly',
                 critdamage: 10,
@@ -343,7 +343,7 @@ export let defenseMixin = {
             };
         }
 
-        if (defenseRoll <= difficult) {
+        if (margin >= 13) {
             return {
                 severity: 'difficult',
                 critdamage: 8,
@@ -351,7 +351,7 @@ export let defenseMixin = {
             };
         }
 
-        if (defenseRoll <= complex) {
+        if (margin >= 10) {
             return {
                 severity: 'complex',
                 critdamage: 5,
@@ -359,7 +359,7 @@ export let defenseMixin = {
             };
         }
 
-        if (defenseRoll <= simple) {
+        if (margin >= 7) {
             return {
                 severity: 'simple',
                 critdamage: 3,
@@ -371,45 +371,14 @@ export let defenseMixin = {
     },
 
     async handleCritLocation(attackDamageObject) {
-        if (attackDamageObject.originalLocation.includes('random')) {
-            let critLocation = (await new Roll('2d6+' + attackDamageObject.crit.critLocationModifier).evaluate()).total;
-            let location;
-            switch (true) {
-                case critLocation >= 12: {
-                    location = this.getLocationObject('head');
-                    location.critEffect = 6;
-                    break;
-                }
-                case critLocation == 11: {
-                    location = this.getLocationObject('head');
-                    location.critEffect = 1;
-                    break;
-                }
-                case critLocation == 9 || critLocation == 10: {
-                    location = this.getLocationObject('torso');
-                    location.critEffect = 6;
-                    break;
-                }
-                case critLocation >= 6 && critLocation <= 8: {
-                    location = this.getLocationObject('torso');
-                    location.critEffect = 1;
-                    break;
-                }
-                case critLocation == 4 || critLocation == 5: {
-                    let side = getRandomInt(2);
-                    location = this.getLocationObject((side == 1 ? 'left' : 'right') + 'Arm');
-                    break;
-                }
-                case critLocation < 4: {
-                    let side = getRandomInt(2);
-                    location = this.getLocationObject((side == 1 ? 'left' : 'right') + 'Leg');
-                    break;
-                }
-            }
-            return location;
-        } else {
-            return attackDamageObject.location;
+        if (!attackDamageObject.originalLocation.includes('random')) {
+            return {
+                name: attackDamageObject.originalLocation
+            };
         }
+        return {
+            name: 'random'
+        };
     },
 
     handleDefenseResults(roll, { totalAttack, attackDamageObject, attacker }, defenseItemId, { stagger, block }) {

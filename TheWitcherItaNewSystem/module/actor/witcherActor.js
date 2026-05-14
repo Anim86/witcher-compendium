@@ -15,6 +15,7 @@ import ChatMessageData from '../chatMessage/chatMessageData.js';
 import { professionMixin } from './mixins/professionMixin.js';
 import { armorMixin } from './mixins/armorMixin.js';
 import { healMixin } from './mixins/healMixin.js';
+import { progressionMixin } from './mixins/progressionMixin.js';
 import { rewardsMixin } from './mixins/rewardsMixin.js';
 import { craftingMixin } from './mixins/craftingMixin.js';
 
@@ -23,6 +24,12 @@ const DialogV2 = foundry.applications.api.DialogV2;
 const derivedPaths = ['derivedStats', 'attackStats'];
 
 export default class WitcherActor extends Actor {
+    static CRIT_HEALING_TABLE = {
+        simple: { 3: 5, 4: 4, 5: 3, 6: 2, 7: 1, 8: 1, 9: 1, 10: 1, 11: 1, 12: 1, 13: 1 },
+        complex: { 3: 9, 4: 8, 5: 7, 6: 6, 7: 5, 8: 4, 9: 3, 10: 2, 11: 1, 12: 1, 13: 1 },
+        difficult: { 3: 12, 4: 11, 5: 10, 6: 9, 7: 8, 8: 7, 9: 6, 10: 5, 11: 4, 12: 3, 13: 2 }
+    };
+
     /**
      * An array of ActiveEffect instances which are present on the Actor or Items which have a limited duration.
      * @type {ActiveEffect[]}
@@ -61,6 +68,206 @@ export default class WitcherActor extends Actor {
         this.calculateArmorSP();
     }
 
+    /** @override */
+    async _preUpdate(changed, options, user) {
+        await super._preUpdate(changed, options, user);
+
+        // Se vengono aggiornate le ferite critiche
+        if (foundry.utils.hasProperty(changed, 'system.critWounds')) {
+            const currentWounds = this.system.critWounds || [];
+            const changedWounds = changed.system.critWounds;
+
+            // Foundry gestisce gli aggiornamenti agli array come oggetti di indici
+            for (let [i, woundUpdate] of Object.entries(changedWounds)) {
+                const originalWound = currentWounds[i];
+                if (!originalWound) continue;
+
+                // Se la ferita è stata appena segnata come 'treated' o 'stabilized' o è cambiato il tipo
+                const treatedJustFlipped = woundUpdate.treated === true && !originalWound.treated;
+                const stabilizedJustFlipped = (woundUpdate.stabilized === true && !originalWound.stabilized) || (woundUpdate.treated === true && !originalWound.stabilized);
+                const typeChanged = !!woundUpdate.configEntry && woundUpdate.configEntry !== originalWound.configEntry;
+
+                if (treatedJustFlipped || stabilizedJustFlipped || typeChanged) {
+                    // Calcola il tempo di guarigione se non è già presente o se è cambiato il tipo
+                    if (!originalWound.healingTime || originalWound.healingTime === 0 || typeChanged) {
+                        const configEntry = woundUpdate.configEntry || originalWound.configEntry;
+                        const config = WITCHER.Crit[configEntry];
+                        if (config && config.severity) {
+                            woundUpdate.healingTime = this.calculateCritHealingTime(config.severity);
+                            if (typeChanged || !originalWound.daysHealed) woundUpdate.daysHealed = 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /**
+     * Spende Punti Incremento per aumentare un'abilità
+     * @param {string} skillPath - Percorso completo dell'abilità (es. 'system.skills.int.awareness')
+     */
+    async spendIp(skillPath) {
+        const skill = foundry.utils.getProperty(this, skillPath);
+        if (!skill) return;
+
+        const currentLevel = skill.value || 0;
+        const multiplier = skill.multiplier || 1;
+        
+        // Costo: se livello 0 -> 1 * mult (o 2 per difficile). Se livello > 0 -> livello corrente * mult.
+        // Regola: Sbloccare Liv 1 = 1 PI (Normal) o 2 PI (Hard).
+        // Aumentare da X a X+1 = X PI. 
+        // Aspetta, il manuale dice: "Il costo è esattamente pari al livello corrente dell'abilità".
+        // Esempio: da 4 a 5 costa 4 PI.
+        // Se è difficile, da 0 a 1 costa 2. Quindi da 4 a 5 costa 4 * 2 = 8? 
+        // In realtà il manuale dice che i PI si spendono in base al livello CORRENTE.
+        // Se è difficile costa il doppio dei PI.
+        
+        const cost = (currentLevel === 0 ? 1 : currentLevel) * multiplier;
+        const currentIp = this.system.improvementPoints || 0;
+
+        if (currentIp < cost) {
+            ui.notifications.warn(game.i18n.format('WITCHER.Notifications.NotEnoughIP', { cost, current: currentIp }));
+            return;
+        }
+
+        const newLevel = currentLevel + 1;
+        const skillLabel = game.i18n.localize(skill.label);
+
+        // Prepara l'aggiornamento
+        const updates = {
+            [skillPath + '.value']: newLevel,
+            'system.improvementPoints': currentIp - cost
+        };
+
+        // Aggiungi al log
+        const logEntry = {
+            label: `${game.i18n.localize('WITCHER.Log.SpentIP')}: ${skillLabel} (${currentLevel} -> ${newLevel})`,
+            ip: -cost,
+            isMagic: false,
+            date: Date.now()
+        };
+
+        const currentLogs = Array.from(this.system.logs.ipLog || []);
+        currentLogs.push(logEntry);
+        updates['system.logs.ipLog'] = currentLogs;
+
+        await this.update(updates);
+        ui.notifications.info(game.i18n.format('WITCHER.Notifications.SkillIncreased', { skill: skillLabel, level: newLevel, cost }));
+    }
+
+    /**
+     * Ritorna un oggetto contenente le statistiche penalizzate dalle ferite critiche
+     */
+    get penalizedStats() {
+        const penalized = {};
+        const stats = ['int', 'ref', 'dex', 'body', 'emp', 'cra', 'will', 'luck', 'spd'];
+        for (let s of stats) {
+            const mods = this.getAllModifiers(s);
+            if (mods.totalModifiers < 0 || mods.totalDivider > 1) {
+                penalized[s] = true;
+            }
+        }
+        return penalized;
+    }
+
+    /**
+     * Calcola il tempo di guarigione base per una ferita critica
+     * @param {string} severity - 'simple', 'complex', 'difficult'
+     * @returns {number} - giorni di guarigione
+     */
+    calculateCritHealingTime(severity) {
+        if (severity === 'deadly') return 0; // Menomazione permanente
+        const body = Math.clamp(this.system.stats.body.value, 3, 13);
+        const table = WitcherActor.CRIT_HEALING_TABLE[severity];
+        return table ? table[body] : 0;
+    }
+
+    /**
+     * Esegue l'azione di riposo giornaliero
+     */
+    async rest() {
+        const rec = this.system.derivedStats.rec.value;
+        const luckStat = this.system.stats.luck;
+        const totalLuck = luckStat.unmodifiedMax || luckStat.max || 0;
+
+        const content = `
+            <div class="rest-dialog" style="padding: 10px;">
+                <div class="form-group" style="margin-bottom: 15px;">
+                    <label style="font-weight: bold; display: block; margin-bottom: 5px;">${game.i18n.localize('WITCHER.Rest.Type')}:</label>
+                    <select name="restType" style="width: 100%; padding: 5px;">
+                        <option value="full">${game.i18n.localize('WITCHER.Rest.Full')}</option>
+                        <option value="active">${game.i18n.localize('WITCHER.Rest.Active')}</option>
+                    </select>
+                </div>
+                <div class="form-group" style="margin-bottom: 10px; display: flex; align-items: center; gap: 10px;">
+                    <input type="checkbox" name="healed" checked id="rest-healed">
+                    <label for="rest-healed">${game.i18n.localize('WITCHER.Rest.Healed')}</label>
+                </div>
+                <div class="form-group" style="margin-bottom: 10px; display: flex; align-items: center; gap: 10px;">
+                    <input type="checkbox" name="assisted" id="rest-assisted">
+                    <label for="rest-assisted">${game.i18n.localize('WITCHER.Rest.Assisted')}</label>
+                </div>
+            </div>
+        `;
+
+        return DialogV2.confirm({
+            window: { 
+                title: game.i18n.localize('WITCHER.Rest.Title'),
+                icon: "fas fa-bed"
+            },
+            content: content,
+            yes: {
+                label: game.i18n.localize('WITCHER.Rest.Button'),
+                callback: async (event, button, dialog) => {
+                    const html = dialog.element;
+                    const restType = html.querySelector('[name=restType]').value;
+                    const assisted = html.querySelector('[name=assisted]').checked;
+                    const healed = html.querySelector('[name=healed]').checked;
+
+                    let hpGained = 0;
+                    if (healed) {
+                        hpGained = restType === 'full' ? rec : Math.floor(rec / 2);
+                        if (assisted) hpGained += 3;
+                    }
+
+                    // Aggiorna HP
+                    const newHp = Math.min(this.system.derivedStats.hp.value + hpGained, this.system.derivedStats.hp.max);
+                    
+                    // Aggiorna giorni di guarigione ferite critiche
+                    const critWounds = foundry.utils.deepClone(this.system.critWounds || []);
+                    let woundsProgressed = false;
+                    critWounds.forEach(w => {
+                        if (w.treated && w.healingTime > 0 && w.daysHealed < w.healingTime) {
+                            w.daysHealed += 1;
+                            woundsProgressed = true;
+                        }
+                    });
+
+                    const updateData = {
+                        "system.derivedStats.hp.value": newHp,
+                        "system.stats.luck.value": totalLuck
+                    };
+                    if (woundsProgressed) updateData["system.critWounds"] = critWounds;
+
+                    await this.update(updateData);
+
+                    // Messaggio in chat
+                    let chatContent = `<h3>${game.i18n.localize('WITCHER.Rest.Title')}</h3>`;
+                    chatContent += `<p>${game.i18n.localize('WITCHER.Rest.HPGained')}: <b>${hpGained}</b></p>`;
+                    chatContent += `<p>${game.i18n.localize('WITCHER.Rest.LuckReset')}: <b>${totalLuck}</b></p>`;
+                    if (woundsProgressed) {
+                        chatContent += `<p><i>Le ferite trattate hanno progredito nella guarigione (+1 giorno).</i></p>`;
+                    }
+
+                    ChatMessage.create({
+                        speaker: ChatMessage.getSpeaker({ actor: this }),
+                        content: chatContent
+                    });
+                }
+            }
+        });
+    }
+
     calculateStats() {
         this.calculateStat('int');
         this.calculateStat('ref');
@@ -82,7 +289,9 @@ export default class WitcherActor extends Actor {
     }
 
     calculateStat(stat) {
-        let totalModifiers = this.getAllModifiers(stat).totalModifiers + this.system.stats[stat].totalModifiers;
+        let totalModifiers = this.getAllModifiers(stat).totalModifiers;
+        let divider = this.getAllModifiers(stat).totalDivider;
+
         this.system.stats[stat].modifiers.forEach(item => (totalModifiers += Number(item.value)));
 
         //Adjust for encumbrance
@@ -95,14 +304,11 @@ export default class WitcherActor extends Actor {
             totalModifiers -= this.calculateWeigthEncumbrance();
         }
 
-        let divider = this.getAllModifiers(stat).totalDivider;
-
-        //Adjust for hp
-        let HPvalue = this.system.derivedStats.hp.value;
+        const HPvalue = this.system.derivedStats.hp.value;
         if (HPvalue <= 0) {
             this.system.deathStateApplied = true;
             divider += 2;
-        } else if (HPvalue < this.system.derivedStats.woundTreshold.value > 0) {
+        } else if (HPvalue < this.system.derivedStats.woundTreshold.value && this.system.derivedStats.woundTreshold.value > 0) {
             this.system.woundTresholdApplied = true;
             if (stat === 'ref' || stat === 'dex' || stat === 'int' || stat === 'will') {
                 divider += 1;
@@ -110,6 +316,7 @@ export default class WitcherActor extends Actor {
         }
 
         let baseVal = this.system.stats[stat].unmodifiedMax || this.system.stats[stat].max || 0;
+        this.system.stats[stat].totalModifiers = totalModifiers;
         this.system.stats[stat].value = Math.floor((baseVal + totalModifiers) / divider);
     }
 
@@ -140,16 +347,14 @@ export default class WitcherActor extends Actor {
         const base = Math.floor((bodyVal + willVal) / 2);
         const baseMax = Math.floor((bodyMax + willMax) / 2);
 
-        let stunTotalModifiers =
-            this.getAllModifiers('stun').totalModifiers + this.system.derivedStats.stun.totalModifiers;
+        let stunTotalModifiers = this.getAllModifiers('stun').totalModifiers;
         let stunDivider = this.getAllModifiers('stun').totalDivider;
         this.system.derivedStats.stun.modifiers.forEach(item => (stunTotalModifiers += Number(item.value)));
         this.system.derivedStats.stun.value = Math.floor((Math.clamp(base, 1, 10) + stunTotalModifiers) / stunDivider);
         this.system.derivedStats.stun.max = Math.clamp(baseMax, 1, 10);
         this.system.derivedStats.stun.totalModifiers = stunTotalModifiers;
 
-        let runTotalModifiers =
-            this.getAllModifiers('run').totalModifiers + this.system.derivedStats.run.totalModifiers;
+        let runTotalModifiers = this.getAllModifiers('run').totalModifiers;
         let runDivider = this.getAllModifiers('run').totalDivider;
         this.system.derivedStats.run.modifiers.forEach(item => (runTotalModifiers += Number(item.value)));
         this.system.derivedStats.run.value = Math.floor(
@@ -158,8 +363,7 @@ export default class WitcherActor extends Actor {
         this.system.derivedStats.run.max = this.system.stats.spd.value * 3;
         this.system.derivedStats.run.totalModifiers = runTotalModifiers;
 
-        let leapTotalModifiers =
-            this.getAllModifiers('leap').totalModifiers + this.system.derivedStats.leap.totalModifiers;
+        let leapTotalModifiers = this.getAllModifiers('leap').totalModifiers;
         let leapDivider = this.getAllModifiers('leap').totalDivider;
         this.system.derivedStats.leap.modifiers.forEach(item => (leapTotalModifiers += Number(item.value)));
         this.system.derivedStats.leap.value =
@@ -167,8 +371,7 @@ export default class WitcherActor extends Actor {
         this.system.derivedStats.leap.max = Math.floor((this.system.stats.spd.max * 3) / 5);
         this.system.derivedStats.leap.totalModifiers = leapTotalModifiers;
 
-        let encTotalModifiers =
-            this.getAllModifiers('enc').totalModifiers + this.system.derivedStats.enc.totalModifiers;
+        let encTotalModifiers = this.getAllModifiers('enc').totalModifiers;
         let encDivider = this.getAllModifiers('enc').totalDivider;
         this.system.derivedStats.enc.modifiers.forEach(item => (encTotalModifiers += Number(item.value)));
         this.system.derivedStats.enc.value = Math.floor(
@@ -179,8 +382,7 @@ export default class WitcherActor extends Actor {
         this.system.derivedStats.enc.value = encLimit;
         this.system.derivedStats.enc.totalModifiers = encTotalModifiers;
 
-        let recTotalModifiers =
-            this.getAllModifiers('rec').totalModifiers + this.system.derivedStats.rec.totalModifiers;
+        let recTotalModifiers = this.getAllModifiers('rec').totalModifiers;
         let recDivider = this.getAllModifiers('rec').totalDivider;
         this.system.derivedStats.rec.modifiers.forEach(item => (recTotalModifiers += Number(item.value)));
         this.system.derivedStats.rec.value = Math.floor((base + recTotalModifiers) / recDivider);
@@ -230,10 +432,10 @@ export default class WitcherActor extends Actor {
     }
 
     calculateDerivedStat(stat) {
-        let totalModifiers = this.getAllModifiers(stat).totalModifiers || 0;
-        let divider = this.getAllModifiers(stat).totalDivider || 1;
+        let totalModifiers = this.getAllModifiers(stat).totalModifiers;
+        let divider = this.getAllModifiers(stat).totalDivider;
+
         this.system.derivedStats[stat].modifiers.forEach(item => (totalModifiers += Number(item.value)));
-        totalModifiers += this.system.derivedStats[stat].totalModifiers;
 
         const bodyVal = this.system.stats.body.value || 0;
         const willVal = this.system.stats.will.value || 0;
@@ -958,5 +1160,6 @@ Object.assign(WitcherActor.prototype, verbalCombatMixin);
 Object.assign(WitcherActor.prototype, locationMixin);
 Object.assign(WitcherActor.prototype, temporaryEffectMixin);
 Object.assign(WitcherActor.prototype, armorMixin);
+Object.assign(WitcherActor.prototype, progressionMixin);
 Object.assign(WitcherActor.prototype, rewardsMixin);
 Object.assign(WitcherActor.prototype, craftingMixin);

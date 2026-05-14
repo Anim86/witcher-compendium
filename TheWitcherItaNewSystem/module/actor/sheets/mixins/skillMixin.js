@@ -17,10 +17,18 @@ export let skillMixin = {
     _onSkillDisplay(event) {
         event.preventDefault();
         let section = event.currentTarget.closest('.skill');
-        this.actor.update({
-            [`system.pannels.${section.dataset.skilltype}IsOpen`]:
-                !this.actor.system.pannels[section.dataset.skilltype + 'IsOpen']
-        });
+        const skillType = section.dataset.skilltype;
+        const key = `system.pannels.${skillType}IsOpen`;
+        const currentState = foundry.utils.getProperty(this.actor, key);
+
+        if (this.isEditable) {
+            this.actor.update({ [key]: !currentState });
+        } else {
+            // Temporary toggle for non-editable sheets (e.g. locked compendiums)
+            this._tempPannels = this._tempPannels || {};
+            this._tempPannels[skillType] = !currentState;
+            this.render();
+        }
     },
 
     skillListener(html) {

@@ -372,19 +372,33 @@ export let itemMixin = {
     _onSpellDisplay(event) {
         event.preventDefault();
         let section = event.currentTarget.closest('.spell');
-        this.actor.update({
-            [`system.pannels.${section.dataset.spelltype}IsOpen`]:
-                !this.actor.system.pannels[section.dataset.spelltype + 'IsOpen']
-        });
+        const spellType = section.dataset.spelltype;
+        const key = `system.pannels.${spellType}IsOpen`;
+        const currentState = foundry.utils.getProperty(this.actor, key);
+
+        if (this.isEditable) {
+            this.actor.update({ [key]: !currentState });
+        } else {
+            this._tempPannels = this._tempPannels || {};
+            this._tempPannels[key] = !currentState;
+            this.render();
+        }
     },
 
     _onSubstanceDisplay(event) {
         event.preventDefault();
         let section = event.currentTarget.closest('.substance');
-        this.actor.update({
-            [`system.pannels.${section.dataset.subtype}IsOpen`]:
-                !this.actor.system.pannels[section.dataset.subtype + 'IsOpen']
-        });
+        const subType = section.dataset.subtype;
+        const key = `system.pannels.${subType}IsOpen`;
+        const currentState = foundry.utils.getProperty(this.actor, key);
+
+        if (this.isEditable) {
+            this.actor.update({ [key]: !currentState });
+        } else {
+            this._tempPannels = this._tempPannels || {};
+            this._tempPannels[key] = !currentState;
+            this.render();
+        }
     },
 
     async _onItemMessage(event) {

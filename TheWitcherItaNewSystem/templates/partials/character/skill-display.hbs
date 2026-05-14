@@ -10,5 +10,8 @@
     </div>
     <div class="skill-value-badge">
         {{#if (gte skill.value 0)}}+{{/if}}{{skill.value}}
+        {{#if (gt @root.system.general.improvementPoints 0)}}
+            <a class="spend-ip-skill" data-tooltip="{{localize 'WITCHER.Progression.SpendIP'}}"><i class="fa-solid fa-plus"></i></a>
+        {{/if}}
     </div>
 </a>

@@ -5,42 +5,42 @@
     "system": {
         "stats": {
             "int": {
-                "value": 0,
+                "value": 1,
                 "max": 0,
                 "unmodifiedMax": 0
             },
             "ref": {
-                "value": 0,
+                "value": 8,
                 "max": 0,
                 "unmodifiedMax": 0
             },
             "dex": {
-                "value": 0,
+                "value": 9,
                 "max": 0,
                 "unmodifiedMax": 0
             },
             "body": {
-                "value": 0,
+                "value": 12,
                 "max": 0,
                 "unmodifiedMax": 0
             },
             "spd": {
-                "value": 0,
+                "value": 7,
                 "max": 0,
                 "unmodifiedMax": 0
             },
             "emp": {
-                "value": 0,
+                "value": 1,
                 "max": 0,
                 "unmodifiedMax": 0
             },
             "cra": {
-                "value": 0,
+                "value": 1,
                 "max": 0,
                 "unmodifiedMax": 0
             },
             "will": {
-                "value": 0,
+                "value": 4,
                 "max": 0,
                 "unmodifiedMax": 0
             },
@@ -50,7 +50,7 @@
                 "unmodifiedMax": 0
             },
             "armor": {
-                "value": 0,
+                "value": 5,
                 "max": 0
             }
         },
@@ -99,36 +99,36 @@
             "reward": 800,
             "monsterType": "Draconid",
             "difficulty": "MEDIUM",
-            "height": "",
-            "weight": "",
-            "environment": "",
-            "organization": "",
-            "vulnerability": "",
-            "intelligence": "",
+            "height": "2m",
+            "weight": "800kg",
+            "environment": "Caverne e cantine",
+            "organization": "Solitario o coppia",
+            "vulnerability": "Unguento Anti-Dragonidi",
+            "intelligence": "Ferale",
             "bounty": 800
         },
         "derivedStats": {
             "rec": {
-                "value": 0,
-                "max": 0,
+                "value": 8,
+                "max": 8,
                 "unmodifiedMax": 0
             },
             "stun": {
-                "value": 0,
-                "max": 0
+                "value": 21,
+                "max": 21
             },
             "woundTreshold": {
                 "value": 0,
                 "max": 0
             },
             "hp": {
-                "value": 0,
-                "max": 0,
+                "value": 80,
+                "max": 80,
                 "unmodifiedMax": 0
             },
             "sta": {
-                "value": 0,
-                "max": 0,
+                "value": 40,
+                "max": 40,
                 "unmodifiedMax": 0
             },
             "focus": {

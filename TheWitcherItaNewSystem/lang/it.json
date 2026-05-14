@@ -89,7 +89,7 @@
             "ArmorTab": "Armatura",
             "SkillList": "Mostra abilità specifiche",
             "Type": {
-                "Lable": "Tipo",
+                "Label": "Tipo",
                 "Humanoid": "Umanoide",
                 "Necrophage": "Necrofago",
                 "Specter": "Spettro",
@@ -105,9 +105,7 @@
             },
             "resistantNonSilver": "Resistente ai danni non d'argento",
             "resistantNonMeteorite": "Resistente ai danni non di meteorite",
-            "Immunities": "Immunità",
             "ImmunitiesStatusEffects": "Immunità agli Stati Alterati",
-            "Susceptibilities": "Vulnerabilità",
             "exportLoot": "Esporta come Bottino",
             "exportLootGenerated": "L'oggetto è stato generato con successo tramite la tabella di roll ed aggiunto alla scheda Bottino",
             "exportLootInvalidItemError": "L'oggetto non esiste nel compendio. Usa il generatore di bottino standard",
@@ -206,6 +204,7 @@
             "homeland": "Patria",
             "Name": "Nome Personaggio",
             "Race": "Razza",
+            "Prof": "Professione",
             "Gender": {
                 "name": "Genere",
                 "Male": "Maschio",
@@ -215,6 +214,7 @@
                 "female": "Femmina",
                 "other": "Altro"
             },
+            "ImprovementPoints": "Punti Miglioramento",
             "Age": "Età",
             "Perks": "Talenti",
             "Description": "Descrizione",
@@ -355,9 +355,14 @@
                 "skills": "Abilità"
             },
             "rewards": {
-                "heading": "Ricompense",
+                "heading": "Premi e Miglioramenti",
                 "currency": "Valuta",
-                "ip": "PM"
+                "ip": "PM",
+                "addIp": "Aggiungi PM",
+                "noIpLogs": "Nessun registro di PM trovato",
+                "spendIp": "Spendi PM",
+                "spendIpHint": "Per spendere i PM, clicca sulle abilità o sulle statistiche nella scheda principale.",
+                "logTitle": "Registro Miglioramenti"
             },
             "socialStanding": {
                 "name": "Rilevanza Sociale"
@@ -796,32 +801,75 @@
             "Quantity": "Quantità",
             "Forage": "CD Foraggiamento"
         },
-        "criticalWound": {
+        "Notifications": {
+            "NotEnoughIP": "Non hai abbastanza PM! (Costo: {cost}, Disponibili: {current})",
+            "SkillIncreased": "Abilità {skill} aumentata al livello {level} (Costo: {cost} PM)"
+        },
+        "Log": {
+            "SpentIP": "PM Spesi"
+        },
+        "CritWound": {
+            "Header": "Ferite Critiche",
+            "Add": "Aggiungi Ferita",
+            "Stabilized": "Stabilizzata",
+            "Treated": "Curata",
+            "HealingTime": {
+                "Label": "Progresso Guarigione (Giorni)",
+                "Current": "Giorni Trascorsi",
+                "Max": "Giorni Totali"
+            },
+            "Notes": "Note sulla Ferita",
+            "NotesPlaceholder": "Note sulla ferita...",
             "followUp": "Oggetto che sostituirà questo dopo il trattamento",
             "followUpHint": "lascia vuoto per rimuovere solo la ferita critica",
-            "header": "Ferite Critiche",
-            "healingTime.label": "Giorni alla Guarigione",
-            "criticalLevel": {
-                "label": "Livello Critico",
-                "Simple": "Semplice",
-                "Complex": "Complessa",
-                "Difficult": "Difficile",
-                "Deadly": "Letale",
-                "None": "Nessuno"
-            },
-            "treatment": {
-                "label": "Trattamento",
-                "Stabilized": "Stabilizzata",
-                "Treated": "Trattata"
-            },
-            "location": {
-                "label": "Locazione"
-            },
-            "lesserEffect": {
-                "label": "Effetto Minore",
-                "hint": "usato dai colpi critici mirati"
-            },
-            "treat": "Tratta"
+            "Name": {
+                "SimpleCrackedJaw": "Mascella Incrinata",
+                "SimpleDisfiguringScar": "Cicatrice Deturpante",
+                "SimpleCrackedRibs": "Costole Incrinate",
+                "SimpleForeignObject": "Corpo Estraneo",
+                "SimpleSprainedArm": "Braccio Slogato",
+                "SimpleSprainedLeg": "Gamba Slogata",
+                "ComplexMinorHeadWound": "Ferita alla Testa Minore",
+                "ComplexLostTeeth": "Denti Persi",
+                "ComplexRupturedSpleen": "Rottura della Milza",
+                "ComplexBrokenRibs": "Costole Rotte",
+                "ComplexFracturedArm": "Braccio Fratturato",
+                "ComplexFracturedLeg": "Gamba Fratturata",
+                "DifficultSkullFracture": "Frattura Cranica",
+                "DifficultFracturedSkull": "Cranio Fratturato",
+                "DifficultBrainInjury": "Lesione Cerebrale",
+                "DifficultSmashedEye": "Occhio Distrutto",
+                "DifficultDetachedEar": "Orecchio Staccato",
+                "DifficultSeptumDeviated": "Setto Nasale Deviato",
+                "DifficultSmashedJaw": "Mascella Frantumata",
+                "DifficultTornMuscle": "Muscolo Strappato",
+                "DifficultDeepLaceration": "Lacerazione Profonda",
+                "DifficultSmashedFinger": "Dito Frantumato",
+                "DifficultSeveredFinger": "Dito Mozzato",
+                "DifficultSmashedHand": "Mano Frantumata",
+                "DifficultSeveredHand": "Mano Mozzata",
+                "DifficultSeveredArm": "Braccio Mozzato",
+                "DifficultSmashedFoot": "Piede Frantumato",
+                "DifficultSeveredFoot": "Piede Mozzato",
+                "DifficultSeveredLeg": "Gamba Mozzata",
+                "DeadlyDecapitated": "Decapitato",
+                "DeadlyHeartStruck": "Colpito al Cuore",
+                "DeadlySpineSevered": "Spina Dorsale Recisa"
+            }
+        },
+        "Rest": {
+            "Title": "Riposo Giornaliero",
+            "Type": "Tipo di Riposo",
+            "Full": "Riposo Completo (Recupero REC)",
+            "Active": "Attivo (Viaggiare/Combattere) (Recupero REC/2)",
+            "Assisted": "Assistenza Medica (+3 PS)",
+            "Healed": "Tiro Pronto Soccorso/Mani Guaritrici Superato (CD 14)",
+            "Button": "Riposa",
+            "HPGained": "Punti Salute recuperati",
+            "LuckReset": "Punti Fortuna ripristinati",
+            "NoHPGained": "Nessun punto salute recuperato (Tiro fallito)",
+            "DaysHealed": "Giorni di Guarigione",
+            "HealingTime": "Tempo di Guarigione (GG)"
         },
         "Enhancement": {
             "Stopping": "Arresto",
@@ -887,15 +935,6 @@
         "StVigor": "Vigor",
         "StReputation": "Reputazione",
         "CritWound": {
-            "Header": "Ferite Critiche",
-            "HealingTime.Label": "Giorni alla Guarigione",
-            "Simple": "Semplice",
-            "Complex": "Complessa",
-            "Difficult": "Difficile",
-            "Deadly": "Letale",
-            "None": "Nessuno",
-            "Stabilized": "Stabilizzata",
-            "Treated": "Trattata",
             "Name": {
                 "SimpleCrackedJaw": "Mascella Incrinata",
                 "SimpleDisfiguringScar": "Cicatrice Deturpante",
@@ -912,7 +951,7 @@
                 "DifficultSkullFracture": "Frattura Cranica",
                 "DifficultConcussion": "Commozione Cerebrale",
                 "DifficultTornStomach": "Lacerazione allo Stomaco",
-                "DifficultSuckingChestWound": "Ferita al Torace Perforante",
+                "DifficultSuckingChestWound": "Pneumotorace",
                 "DifficultCompoundArmFracture": "Frattura Scomposta al Braccio",
                 "DifficultCompoundLegFracture": "Frattura Scomposta alla Gamba",
                 "DeadlyDecapitated": "Decapitato",
@@ -922,6 +961,29 @@
                 "DeadlyDismemberedArm": "Braccio Smembrato",
                 "DeadlyDismemberedLeg": "Gamba Smembrata"
             },
+            "Header": "Ferite Critiche",
+            "Name.Label": "Ferita",
+            "Severity.Label": "Gravità",
+            "Location.Label": "Posizione",
+            "HealingTime.Label": "Giorni alla Guarigione",
+            "Simple": "Semplice",
+            "Complex": "Complessa",
+            "Difficult": "Difficile",
+            "Deadly": "Letale",
+            "none": "Nessuno",
+            "stabilized": "Stabilizzata",
+            "treated": "Trattata",
+            "None": "Nessuno",
+            "Stabilized": "Stabilizzata",
+            "Treated": "Trattata",
+            "Notes": "Note sulla Ferita",
+            "NotesPlaceholder": "Inserisci qui i dettagli della ferita...",
+            "CritImmune": "Questo mostro è immune agli effetti delle ferite critiche (subisce solo il danno bonus).",
+            "TargetedRoll": "Tiro per Effetto Mirato (1-4 Minore, 5-6 Maggiore)",
+            "GeneralRoll": "Tiro sulla Tabella Ferite Critiche (2d6)",
+            "AnatomyLessImmune": "Immune! (Mancanza di Anatomia)",
+            "AnatomyLessDesc": "I mostri privi di anatomia interna non subiscono questo effetto.",
+            "SpecterLegImmune": "Lo Spettro non ha gambe! Tiro nuovamente la locazione...",
             "SimpleCrackedJaw": "Il colpo ti ha incrinato la mascella, rendendo difficile parlare chiaramente.",
             "SimpleDisfiguringScar": "Il colpo ti ha deturpato il viso in qualche modo. Sei grottesco e difficile da guardare.",
             "SimpleCrackedRibs": "Il colpo ti ha incrinato le costole, rendendo doloroso respirare ed esercitare forza.",
@@ -1020,6 +1082,18 @@
                 "DeadlyDismemberedLeg.Stabilized": "Dividi per quattro VEL, Schivare/Fuggire e Atletica.",
                 "DeadlyDismemberedLeg.Treated": "La gamba può essere sostituita con una protesi."
             }
+        },
+        "activeEffect": {
+            "source": "Origine",
+            "duration": "Durata",
+            "new": "Nuovo Effetto",
+            "toggle": "Attiva/Disattiva",
+            "details": "Mostra Dettagli",
+            "tab": "Effetti Attivi",
+            "temporary": "Temporaneo",
+            "passive": "Passivo",
+            "inactive": "Inattivo",
+            "temporaryItemImprovement": "Miglioramento Temporaneo Oggetto"
         },
         "Homeland": "Patria",
         "socialStanding": {
@@ -1542,16 +1616,7 @@
                 }
             }
         },
-        "activeEffect": {
-            "tab": "Effetti Attivi",
-            "source": "Origine",
-            "toggle": "Attiva/Disattiva",
-            "temporary": "Temporaneo",
-            "passive": "Passivo",
-            "inactive": "Inattivo",
-            "new": "Nuovo Effetto",
-            "temporaryItemImprovement": "Miglioramento Temporaneo dell'Oggetto"
-        },
+
         "err": {
             "CraftItemDeletion": "Incorrect amount of items were deleted from the actor",
             "craftItemAvailable": "Not all necessary items are available",
@@ -1706,20 +1771,32 @@
             "totalPrice": "Prezzo Totale"
         },
         "rewards": {
+            "heading": "Premi e Miglioramenti",
+            "currency": "Valuta",
+            "ip": "PM",
+            "addIp": "Aggiungi PM",
+            "addCurrency": "Aggiungi Valuta",
+            "noIpLogs": "Nessun registro di PM trovato",
+            "noCurrencyLogs": "Nessun registro di valuta trovato",
+            "spendIp": "Spendi PM",
+            "spendIpHint": "Per spendere i PM, clicca sulle abilità o sulle statistiche nella scheda principale.",
+            "logTitle": "Registro Miglioramenti",
+            "currencyLogTitle": "Registro Valuta",
             "dialog": {
-                "title": "Seleziona attori per la ricompensa",
-                "label": "Etichetta: ",
-                "ip": "PM: ",
-                "magicIp": "PM Magici: ",
-                "currency": "Importo Valuta",
-                "currencyType": "Tipo di Valuta",
+                "title": "Assegna Ricompense",
                 "confirm": "Conferma"
-            },
-            "chat": {
-                "title": "Ricompense",
-                "ip": "PM",
-                "currency": "Valuta"
             }
+        },
+
+        "Progression": {
+            "ConfirmTitle": "Conferma Miglioramento",
+            "ConfirmSpend": "Vuoi spendere {cost} PM per aumentare {label} di 1 punto?",
+            "NotEnoughIP": "Non hai abbastanza PM! (Necessari: {cost}, Disponibili: {currentIP})",
+            "StatCapReached": "Questa statistica ha raggiunto il limite massimo di 10!",
+            "SkillCapReached": "Questa abilità ha raggiunto il limite massimo di 10!",
+            "BranchRequirementNotMet": "Devi portare l'abilità precedente al livello 5 prima di poter sbloccare questa!",
+            "Success": "{label} aumentata con successo!",
+            "SpendIP": "Spendi PM"
         },
         "magic": {
             "magicImprovementPoints": "PM Magici"

@@ -32,7 +32,11 @@ export default class WitcherCharacterSheet extends WitcherActorSheet {
             rollInit: function() { return this.actor.rollInitiative({createCombatants: true}); },
             rollVCInit: function() { return this.actor.rollVerbalInitiative(); },
             rollStun: function() { return this.actor.rollStun(); },
-            rollSave: function() { return this.actor.rollDeathSave(); }
+            rollSave: function() { return this.actor.rollDeathSave(); },
+            rest: function() { return this.actor.rest(); },
+            openRewards: function() { return this._renderRewards(); },
+            addIpReward: this._addIpReward,
+            saveIpSpending: this._saveIpSpending
         }
     });
 
@@ -152,10 +156,6 @@ export default class WitcherCharacterSheet extends WitcherActorSheet {
         jquery.find('.alchemy-potion').on('click', this._alchemyCraft.bind(this));
         jquery.find('.crafting-craft').on('click', this._craftingCraft.bind(this));
         jquery.find('.item-repair').on('click', this._repairItem.bind(this));
-        jquery.find('.manualIpReward').on('click', this._addIpReward.bind(this));
-        jquery.find('.saveIpSpending').on('click', this._saveIpSpending.bind(this));
-
-        jquery.find('.open-rewards').on('click', this._renderRewards.bind(this));
     }
 
     async _prepareContext(options) {
@@ -496,8 +496,9 @@ export default class WitcherCharacterSheet extends WitcherActorSheet {
         this.actor.addIpReward();
     }
 
-    async _saveIpSpending(event) {
-        let siblings = event.currentTarget.parentElement.children;
+    async _saveIpSpending(event, target) {
+        const el = target || event.currentTarget;
+        let siblings = el.parentElement.children;
         let label = siblings.item(0).value;
         let value = siblings.item(1).value < 0 ? siblings.item(1).value : siblings.item(1).value * -1;
 

@@ -15,6 +15,10 @@ export default class RewardsSheet extends HandlebarsApplicationMixin(ActorSheetV
         form: {
             submitOnChange: true,
             closeOnSubmit: false
+        },
+        actions: {
+            addIpReward: function() { return this.document.addIpReward(); },
+            addCurrencyReward: function() { return this.document.addCurrencyReward(); }
         }
     };
 
@@ -49,6 +53,7 @@ export default class RewardsSheet extends HandlebarsApplicationMixin(ActorSheetV
         const context = await super._prepareContext(options);
         context.config = CONFIG.WITCHER;
         context.system = this.document.system;
+        context.isGM = game.user.isGM;
 
         return context;
     }

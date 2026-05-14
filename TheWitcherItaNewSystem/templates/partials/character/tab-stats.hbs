@@ -11,7 +11,7 @@
         <div class='stat-grid'>
             {{#each system.stats as |details stat|}}
                 {{#unless (eq (localize details.label) (localize 'WITCHER.Actor.Stat.Toxicity'))}}
-                    <a class='stat-display char-stat-button stat-roll stat-card-{{stat}}' data-stat='{{stat}}'
+                    <a class='stat-display char-stat-button stat-roll stat-card-{{stat}} {{#if (lookup @root.penalizedStats stat)}}penalty-active{{/if}}' data-stat='{{stat}}'
                         data-tooltip="{{localize (concat 'WITCHER.Actor.Stat.Desc.' stat)}}">
                         <div class="stat-icon">
                              {{#if (eq stat 'int')}}<i class="fa-solid fa-brain"></i>{{/if}}
@@ -27,10 +27,18 @@
                         <div class="stat-content">
                             <div class="label">
                                 <span class="stat-name">{{localize details.label}}</span>
-                                <span class="current-val">{{details.value}}</span>
+                                <span class="current-val">
+                                    {{details.value}}
+                                    {{#if (gt @root.system.general.improvementPoints 0)}}
+                                        <a class="spend-ip-stat" data-tooltip="{{localize 'WITCHER.Progression.SpendIP'}}"><i class="fa-solid fa-plus"></i></a>
+                                    {{/if}}
+                                </span>
                             </div>
                             <div class="stat-sub">
-                                {{details.unmodifiedMax}} / {{details.totalModifiers}}
+                                {{details.unmodifiedMax}} 
+                                <span class="modifier {{#if (or (lt details.totalModifiers 0) (gt details.totalDivider 1))}}penalty{{else if (gt details.totalModifiers 0)}}bonus{{/if}}">
+                                    ({{#if (gt details.totalModifiers 0)}}+{{/if}}{{details.totalModifiers}})
+                                </span>
                             </div>
                         </div>
                     </a>
@@ -82,7 +90,10 @@
                             <span class="current-val">{{details.value}}</span>
                         </div>
                         <div class="stat-sub">
-                            {{details.max}} / {{details.totalModifiers}}
+                            {{details.max}} 
+                            <span class="modifier {{#if (lt details.totalModifiers 0)}}penalty{{else if (gt details.totalModifiers 0)}}bonus{{/if}}">
+                                ({{#if (gt details.totalModifiers 0)}}+{{/if}}{{details.totalModifiers}})
+                            </span>
                         </div>
                     </div>
                 </div>

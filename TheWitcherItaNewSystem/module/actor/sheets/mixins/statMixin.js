@@ -9,15 +9,23 @@ export let statMixin = {
         const stat = event.currentTarget.dataset.stat || statDisplay?.dataset.stat;
         const type = event.currentTarget.dataset.type || statDisplay?.dataset.type;
 
+        let key = "";
         if (stat === 'toxicity') {
-            this.actor.update({ [`system.stats.${stat}.isOpened`]: !this.actor.system.stats[stat].isOpened });
+            key = `system.stats.${stat}.isOpened`;
         } else if (stat === 'reputation' || type === 'reputation') {
-            this.actor.update({ [`system.reputation.isOpened`]: !this.actor.system.reputation.isOpened });
+            key = `system.reputation.isOpened`;
         } else {
             const origin = this.statMap?.[stat]?.origin || (type === 'stats' ? 'stats' : 'derivedStats');
-            this.actor.update({
-                [`system.${origin}.${stat}.isOpened`]: !this.actor.system[origin][stat].isOpened
-            });
+            key = `system.${origin}.${stat}.isOpened`;
+        }
+
+        const currentState = foundry.utils.getProperty(this.actor, key);
+        if (this.isEditable) {
+            this.actor.update({ [key]: !currentState });
+        } else {
+            this._tempPannels = this._tempPannels || {};
+            this._tempPannels[key] = !currentState;
+            this.render();
         }
     },
 
