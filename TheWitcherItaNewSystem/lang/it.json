@@ -323,7 +323,6 @@
             "Profession": {
                 "Level": "Livello"
             },
-            "ImprovementPoints": "Punti Miglioramento",
             "CurrentIP": "PM Attuali:",
             "SkillName": "Nome abilità...",
             "TotalSkill": "Abilità Totali",
@@ -934,33 +933,7 @@
         "StSpd": "Velocità",
         "StVigor": "Vigor",
         "StReputation": "Reputazione",
-        "CritWound": {
-            "Name": {
-                "SimpleCrackedJaw": "Mascella Incrinata",
-                "SimpleDisfiguringScar": "Cicatrice Deturpante",
-                "SimpleCrackedRibs": "Costole Incrinate",
-                "SimpleForeignObject": "Corpo Estraneo",
-                "SimpleSprainedArm": "Braccio Slogato",
-                "SimpleSprainedLeg": "Gamba Slogata",
-                "ComplexMinorHeadWound": "Ferita alla Testa Minore",
-                "ComplexLostTeeth": "Denti Persi",
-                "ComplexRupturedSpleen": "Rottura della Milza",
-                "ComplexBrokenRibs": "Costole Rotte",
-                "ComplexFracturedArm": "Braccio Fratturato",
-                "ComplexFracturedLeg": "Gamba Fratturata",
-                "DifficultSkullFracture": "Frattura Cranica",
-                "DifficultConcussion": "Commozione Cerebrale",
-                "DifficultTornStomach": "Lacerazione allo Stomaco",
-                "DifficultSuckingChestWound": "Pneumotorace",
-                "DifficultCompoundArmFracture": "Frattura Scomposta al Braccio",
-                "DifficultCompoundLegFracture": "Frattura Scomposta alla Gamba",
-                "DeadlyDecapitated": "Decapitato",
-                "DeadlyDamagedEye": "Occhio Danneggiato",
-                "DeadlyHeartDamage": "Danno Cardiaco",
-                "DeadlySepticShock": "Shock Settico",
-                "DeadlyDismemberedArm": "Braccio Smembrato",
-                "DeadlyDismemberedLeg": "Gamba Smembrata"
-            },
+        "activeEffect": {
             "Header": "Ferite Critiche",
             "Name.Label": "Ferita",
             "Severity.Label": "Gravità",
