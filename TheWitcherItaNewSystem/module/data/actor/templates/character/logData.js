@@ -1,4 +1,3 @@
-import currencyLog from './currencyLogData.js';
 import ipLog from './ipLogData.js';
 
 const fields = foundry.data.fields;
@@ -6,8 +5,7 @@ const fields = foundry.data.fields;
 export default class Log extends foundry.abstract.DataModel {
     static defineSchema() {
         return {
-            ipLog: new fields.ArrayField(new fields.SchemaField(ipLog())),
-            currencyLog: new fields.ArrayField(new fields.SchemaField(currencyLog()))
+            ipLog: new fields.ArrayField(new fields.SchemaField(ipLog()))
         };
     }
 
@@ -28,14 +26,6 @@ export default class Log extends foundry.abstract.DataModel {
         }
     }
 
-    addCurrencyReward(label, amount, type) {
-        this.currencyLog.push({ label: label, amount: amount, type: type });
-        this.parent.parent.update({
-            'system.logs.currencyLog': this.currencyLog,
-            [`system.currency.${type}`]: this.parent.currency[type] + amount
-        });
-    }
-
     removeIpLog(index) {
         const entry = this.ipLog[index];
         if (!entry) return;
@@ -53,20 +43,5 @@ export default class Log extends foundry.abstract.DataModel {
         }
         
         this.parent.parent.update(updateData);
-    }
-
-    removeCurrencyLog(index) {
-        const entry = this.currencyLog[index];
-        if (!entry) return;
-        
-        const amount = entry.amount || 0;
-        const type = entry.type;
-        
-        this.currencyLog.splice(index, 1);
-        
-        this.parent.parent.update({
-            'system.logs.currencyLog': this.currencyLog,
-            [`system.currency.${type}`]: Math.max(0, this.parent.currency[type] - amount)
-        });
     }
 }
