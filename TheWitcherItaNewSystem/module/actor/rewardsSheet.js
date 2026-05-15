@@ -11,14 +11,22 @@ export default class RewardsSheet extends HandlebarsApplicationMixin(ActorSheetV
             width: 520,
             height: 480
         },
-        classes: ['witcher', 'extended-sheet', 'actor'],
+        classes: ['witcher', 'extended-sheet', 'actor', 'witcher-rewards-window'],
         form: {
             submitOnChange: true,
             closeOnSubmit: false
         },
         actions: {
             addIpReward: function() { return this.document.addIpReward(); },
-            addCurrencyReward: function() { return this.document.addCurrencyReward(); }
+            addCurrencyReward: function() { return this.document.addCurrencyReward(); },
+            deleteIpLog: function(event, target) { 
+                const index = target.dataset.index;
+                return this.document.system.logs.removeIpLog(index);
+            },
+            deleteCurrencyLog: function(event, target) {
+                const index = target.dataset.index;
+                return this.document.system.logs.removeCurrencyLog(index);
+            }
         }
     };
 

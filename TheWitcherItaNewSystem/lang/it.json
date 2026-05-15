@@ -949,6 +949,16 @@
             "None": "Nessuno",
             "Stabilized": "Stabilizzata",
             "Treated": "Trattata",
+            "source": "Origine",
+            "duration": "Durata",
+            "new": "Nuovo Effetto",
+            "toggle": "Attiva/Disattiva",
+            "details": "Mostra Dettagli",
+            "tab": "Effetti Attivi",
+            "temporary": "Temporaneo",
+            "passive": "Passivo",
+            "inactive": "Inattivo",
+            "temporaryItemImprovement": "Miglioramento Temporaneo Oggetto",
             "Notes": "Note sulla Ferita",
             "NotesPlaceholder": "Inserisci qui i dettagli della ferita...",
             "CritImmune": "Questo mostro è immune agli effetti delle ferite critiche (subisce solo il danno bonus).",
@@ -1055,18 +1065,6 @@
                 "DeadlyDismemberedLeg.Stabilized": "Dividi per quattro VEL, Schivare/Fuggire e Atletica.",
                 "DeadlyDismemberedLeg.Treated": "La gamba può essere sostituita con una protesi."
             }
-        },
-        "activeEffect": {
-            "source": "Origine",
-            "duration": "Durata",
-            "new": "Nuovo Effetto",
-            "toggle": "Attiva/Disattiva",
-            "details": "Mostra Dettagli",
-            "tab": "Effetti Attivi",
-            "temporary": "Temporaneo",
-            "passive": "Passivo",
-            "inactive": "Inattivo",
-            "temporaryItemImprovement": "Miglioramento Temporaneo Oggetto"
         },
         "Homeland": "Patria",
         "socialStanding": {
@@ -1757,7 +1755,12 @@
             "currencyLogTitle": "Registro Valuta",
             "dialog": {
                 "title": "Assegna Ricompense",
-                "confirm": "Conferma"
+                "confirm": "Conferma",
+                "label": "Causale / Evento",
+                "ip": "Punti Miglioramento (PM)",
+                "magicIp": "PM Magici",
+                "amount": "Quantità",
+                "currencyType": "Tipo di Valuta"
             }
         },
 

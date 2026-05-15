@@ -558,7 +558,7 @@
 /* ── Reputation Badge ── */
 .header-right {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 12px;
 }
 
@@ -576,6 +576,8 @@
     position: relative;
     overflow: hidden;
     min-width: 155px;
+    height: 46px;
+    box-sizing: border-box;
     justify-content: space-between;
 
     &::before {
@@ -1751,95 +1753,284 @@ a.button-roll:hover {
     color: var(--p-tox); /* Green for temporary points */
     font-weight: bold;
 }
-/* =====================================================
-   REWARDS SHEET – Premium Design
-   ===================================================== */
-.rewards-sheet-content {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 15px;
+
+/* --- Rewards & Improvements Window --- */
+.witcher-rewards-window .window-content {
+    background: url('../../assets/images/parchment_bg.jpg') repeat !important;
+    background-color: #0c1216 !important;
+    color: #ddd;
+    padding: 0;
 }
 
-.rewards-header {
+.witcher-rewards-window header.window-header {
+    background: linear-gradient(90deg, #1a242d 0%, #2c3e50 100%);
+    border-bottom: 2px solid var(--w-gold);
+    height: 36px;
+}
+
+.witcher-rewards-window header.window-header .window-title {
+    font-family: 'Inter', 'Roboto', sans-serif;
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--w-gold);
+    text-shadow: 0 1px 2px rgba(0,0,0,0.8);
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.witcher-rewards-window .rewards-header-main {
+    background: rgba(0, 0, 0, 0.4);
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+    text-align: center;
+}
+
+.witcher-rewards-window .rewards-header-main h1 {
+    font-family: 'Goudy Old Style', serif;
+    font-size: 24px;
+    color: var(--w-gold);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+.witcher-rewards-window nav.tabs {
+    background: rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0 10px;
+}
+
+.witcher-rewards-window nav.tabs .item {
+    font-family: 'Inter', 'Roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #888;
+    border: none;
+    padding: 10px 15px;
+    transition: all 0.3s ease;
+}
+
+.witcher-rewards-window nav.tabs .item.active {
+    color: var(--w-gold);
+    background: rgba(255, 215, 0, 0.1);
+    box-shadow: inset 0 -2px 0 var(--w-gold);
+}
+
+.witcher-rewards-window .rewards-sheet-content,
+.witcher-rewards-window .rewards-tab-content {
+    padding: 20px;
+}
+
+.witcher-rewards-window .rewards-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid var(--w-border-gold);
-    padding-bottom: 10px;
-
-    h3 {
-        margin: 0;
-        font-family: 'Thewitcher', serif;
-        color: var(--w-gold);
-        font-size: 1.4rem;
-        i { margin-right: 10px; }
-    }
+    margin-bottom: 20px;
 }
 
-.ip-info-hint {
-    font-size: 11px;
-    color: var(--w-text-muted);
-    font-style: italic;
-    i { color: var(--w-gold); margin-right: 5px; }
+.witcher-rewards-window .rewards-header h3 {
+    font-family: 'Inter', 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #fff;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
-.current-ip-summary {
-    background: rgba(197, 160, 89, 0.05);
-    border: 1px solid rgba(197, 160, 89, 0.2);
-    padding: 12px;
-    border-radius: 8px;
+.witcher-rewards-window .btn-premium {
+    background: linear-gradient(135deg, #1c6888 0%, #0c3a4d 100%);
+    color: #fff;
+    border: 1px solid #3498db;
+    border-radius: 4px;
+    padding: 6px 16px;
+    font-family: 'Inter', 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.witcher-rewards-window .btn-premium:hover {
+    background: linear-gradient(135deg, #2581a8 0%, #1c6888 100%);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    transform: translateY(-1px);
+}
+
+.witcher-rewards-window .current-ip-summary,
+.witcher-rewards-window .reward-header-summary {
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 215, 0, 0.2);
+    border-radius: 6px;
+    padding: 10px 15px;
     display: flex;
     justify-content: center;
-
-    .ip-stat {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        .label { font-size: 10px; text-transform: uppercase; color: var(--w-text-muted); letter-spacing: 1px; }
-        .value { font-size: 2rem; font-weight: 800; color: var(--w-gold); }
-    }
+    align-items: center;
+    margin-bottom: 20px;
+    min-height: auto;
 }
 
-.logs-header {
-    border-bottom: 1px solid var(--w-border);
-    margin-bottom: 5px;
-    h4 { margin: 0; font-size: 12px; text-transform: uppercase; color: #888; letter-spacing: 1px; }
+.witcher-rewards-window .currency-totals {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+    width: 100%;
 }
 
-.log-item {
+.witcher-rewards-window .curr-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.witcher-rewards-window .curr-label {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #888;
+    font-weight: 600;
+}
+
+.witcher-rewards-window .curr-val {
+    font-size: 18px;
+    color: var(--w-gold);
+    font-weight: bold;
+    font-family: 'Goudy Old Style', serif;
+}
+
+.witcher-rewards-window .ip-stat {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.witcher-rewards-window .ip-stat .label {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #888;
+    margin: 0;
+    font-weight: 600;
+}
+
+.witcher-rewards-window .ip-stat .value {
+    font-size: 26px;
+    font-weight: bold;
+    color: var(--w-gold);
+    font-family: 'Goudy Old Style', serif;
+    line-height: 1;
+}
+
+.witcher-rewards-window .logs-header h4 {
+    font-family: 'Inter', 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--w-gold);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid rgba(255, 215, 0, 0.2);
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.witcher-rewards-window .log-item {
+    background: rgba(255, 255, 255, 0.05);
+    border-left: 3px solid var(--w-gold);
+    margin-bottom: 8px;
+    padding: 10px 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    background: rgba(0,0,0,0.2);
-    border: 1px solid rgba(255,255,255,0.05);
-    border-radius: 6px;
-    margin-bottom: 6px;
+    border-radius: 0 4px 4px 0;
     transition: background 0.2s;
-
-    &:hover { background: rgba(0,0,0,0.4); }
-
-    .log-info {
-        display: flex;
-        flex-direction: column;
-        gap: 2px;
-        .reason { font-size: 13px; color: #eee; font-weight: 600; }
-        .date { font-size: 10px; color: #666; }
-    }
-
-    .log-amount {
-        font-weight: 800;
-        font-size: 14px;
-        &.positive { color: #2ecc71; }
-        &.negative { color: #e74c3c; }
-    }
 }
 
-.empty-state {
-    padding: 40px;
+.witcher-rewards-window .log-item:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.witcher-rewards-window .log-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.witcher-rewards-window .log-info .reason {
+    font-weight: bold;
+    color: #eee;
+    font-size: 14px;
+}
+
+.witcher-rewards-window .log-info .date {
+    font-size: 11px;
+    color: #777;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.witcher-rewards-window .magic-tag {
+    background: rgba(155, 89, 182, 0.2);
+    color: #af7ac5;
+    padding: 1px 6px;
+    border-radius: 3px;
+    font-size: 9px;
+    font-weight: bold;
+    border: 1px solid rgba(155, 89, 182, 0.3);
+}
+
+.witcher-rewards-window .log-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.witcher-rewards-window .log-amount {
+    font-family: 'Goudy Old Style', serif;
+    font-weight: bold;
+    font-size: 15px;
+    min-width: 80px;
+    text-align: right;
+}
+
+.witcher-rewards-window .log-amount.positive { color: #2ecc71; }
+.witcher-rewards-window .log-amount.negative { color: #e74c3c; }
+
+.witcher-rewards-window .btn-delete-log {
+    background: none;
+    border: none;
+    color: #555;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 13px;
+    transition: all 0.2s;
+}
+
+.witcher-rewards-window .btn-delete-log:hover {
+    color: #e74c3c;
+    transform: scale(1.1);
+}
+
+.witcher-rewards-window .empty-state {
     text-align: center;
-    color: #444;
-    i { font-size: 3rem; margin-bottom: 10px; display: block; }
-    p { font-size: 12px; margin: 0; }
+    padding: 40px 0;
+    opacity: 0.3;
 }
+
+.witcher-rewards-window .empty-state i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    display: block;
+}
+

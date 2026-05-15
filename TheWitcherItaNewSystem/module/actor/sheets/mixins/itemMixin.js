@@ -58,9 +58,20 @@ export let itemMixin = {
 
     async _onItemAdd(event) {
         let element = event.currentTarget;
+        const itemtype = element.dataset.itemtype;
+
+        if (['profession', 'race', 'homeland'].includes(itemtype)) {
+            const packMap = {
+                'profession': 'witcher-compendium.witcher-professions',
+                'race': 'witcher-compendium.witcher-races',
+                'homeland': 'witcher-compendium.witcher-homelands'
+            };
+            return this._onCompendiumItemSelect(itemtype, packMap[itemtype]);
+        }
+
         let itemData = {
-            name: `new ${element.dataset.itemtype}`,
-            type: element.dataset.itemtype
+            name: `new ${itemtype}`,
+            type: itemtype
         };
 
         switch (element.dataset.spelltype) {
@@ -97,6 +108,87 @@ export let itemMixin = {
         }
 
         await Item.create(itemData, { parent: this.actor });
+    },
+
+    async _onProfessionSelect() {
+        return this._onCompendiumItemSelect('profession', 'witcher-compendium.witcher-professions');
+    },
+
+    async _onCompendiumItemSelect(itemtype, packId) {
+        let pack = game.packs.get(packId);
+        
+        // Map itemtypes to their localized labels
+        const labels = {
+            'profession': game.i18n.localize('WITCHER.Actor.Prof'),
+            'race': game.i18n.localize('WITCHER.Actor.Race'),
+            'homeland': game.i18n.localize('WITCHER.Actor.homeland')
+        };
+        const typeLabel = labels[itemtype] || itemtype;
+
+        // If specific pack not found, try to find any pack containing this item type
+        if (!pack) {
+            pack = game.packs.find(p => p.metadata.type === "Item" && !p.metadata.name.includes("skill"));
+        }
+
+        if (!pack) return ui.notifications.error(`Compendio per ${typeLabel} non trovato.`);
+
+        const index = await pack.getIndex({fields: ["img", "name", "type"]});
+        const filteredIndex = index.filter(i => i.type === itemtype);
+        
+        if (filteredIndex.length === 0) {
+            // If the preferred pack doesn't have the items, search everywhere
+            for (const p of game.packs.filter(p => p.metadata.type === "Item")) {
+                const idx = await p.getIndex({fields: ["img", "name", "type"]});
+                const matches = idx.filter(i => i.type === itemtype);
+                if (matches.length > 0) {
+                    filteredIndex.push(...matches);
+                }
+            }
+        }
+
+        if (filteredIndex.length === 0) return ui.notifications.error(`Nessun oggetto di tipo ${typeLabel} trovato nei compendi.`);
+
+        // Sort alphabetically
+        filteredIndex.sort((a, b) => a.name.localeCompare(b.name));
+
+        let optionsHtml = filteredIndex.map(i => `
+            <option value="${i.uuid}">${i.name}</option>
+        `).join('');
+
+        const content = `
+            <div class="compendium-select-dialog" style="padding: 10px;">
+                <p style="margin-bottom: 10px; font-style: italic; opacity: 0.8;">Seleziona ${typeLabel.toLowerCase()} dal compendio:</p>
+                <select name="itemUuid" style="width: 100%; height: 35px; background: rgba(0,0,0,0.3); color: white; border: 1px solid var(--w-gold); font-family: 'Goudy Old Style', serif; font-size: 16px;">
+                    ${optionsHtml}
+                </select>
+            </div>
+        `;
+
+        const dialog = new foundry.applications.api.DialogV2({
+            window: { 
+                title: `${game.i18n.localize('WITCHER.Actor.Button.Add')} ${typeLabel}`,
+                icon: "fas fa-list"
+            },
+            content,
+            buttons: [
+                {
+                    action: "confirm",
+                    label: game.i18n.localize('WITCHER.Actor.Button.Add'),
+                    class: "standard-button gold",
+                    default: true,
+                    callback: async (event, button, instance) => {
+                        const itemUuid = instance.element.querySelector('[name="itemUuid"]').value;
+                        const item = await fromUuid(itemUuid);
+                        this._onDropItem(event, item);
+                    }
+                },
+                {
+                    action: "cancel",
+                    label: game.i18n.localize('WITCHER.Button.Cancel')
+                }
+            ]
+        });
+        dialog.render(true);
     },
 
     async _onItemEquip(event) {

@@ -31,8 +31,15 @@
                 <span class="reason">{{this.label}}</span>
                 <span class="date">{{#if this.date}}{{date this.date 'DD MMM YYYY'}}{{/if}}</span>
             </div>
-            <div class="log-amount {{ifThen (gt this.amount 0) 'positive' 'negative'}}">
-                {{#if (gt this.amount 0)}}+{{/if}}{{this.amount}} {{localize (concat "WITCHER.Actor.Stat." (capitalize this.type))}}
+            <div class="log-controls">
+                <div class="log-amount {{ifThen (gt this.amount 0) 'positive' 'negative'}}">
+                    {{#if (gt this.amount 0)}}+{{/if}}{{this.amount}} {{localize (concat "WITCHER.Actor.Stat." (capitalize this.type))}}
+                </div>
+                {{#if ../isGM}}
+                <button class="btn-delete-log" data-action="deleteCurrencyLog" data-index="{{@index}}" data-tooltip="{{localize 'WITCHER.Button.Delete'}}">
+                    <i class="fas fa-trash"></i>
+                </button>
+                {{/if}}
             </div>
         </div>
         {{else}}

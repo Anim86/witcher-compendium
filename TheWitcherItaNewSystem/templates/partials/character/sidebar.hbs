@@ -77,7 +77,7 @@
             <span class="value">{{system.derivedStats.vigor.max}}</span>
         </div>
 
-        <div class='mini-stat-box shield {{#if (lte system.derivedStats.shield.value 0)}}broken{{/if}}' data-tooltip="{{localize 'WITCHER.Actor.DerStat.Shield'}}">
+        <div class='mini-stat-box shield {{#if (and (gt system.derivedStats.shield.max 0) (lte system.derivedStats.shield.value 0))}}broken{{/if}}' data-tooltip="{{localize 'WITCHER.Actor.DerStat.Shield'}}">
             <span class="label"><i class='fa-solid fa-shield-halved'></i> SCD</span>
             <div class="shield-values">
                 <input type='number' name='system.derivedStats.shield.value' value='{{system.derivedStats.shield.value}}' data-dtype='Number' />

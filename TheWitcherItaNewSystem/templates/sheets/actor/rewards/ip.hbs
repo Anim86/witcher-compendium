@@ -28,11 +28,18 @@
         {{#each system.logs.ipLog}}
         <div class="log-item">
             <div class="log-info">
-                <span class="reason">{{this.reason}}</span>
-                <span class="date">{{#if this.date}}{{date this.date 'DD MMM YYYY'}}{{/if}}</span>
+                <span class="reason">{{this.label}}</span>
+                <span class="date">{{#if this.date}}{{date this.date 'DD MMM YYYY'}}{{/if}} {{#if this.isMagic}}<span class="magic-tag">MAGIA</span>{{/if}}</span>
             </div>
-            <div class="log-amount positive">
-                +{{this.amount}} PM
+            <div class="log-controls">
+                <div class="log-amount positive">
+                    +{{this.ip}} PM
+                </div>
+                {{#if ../isGM}}
+                <button class="btn-delete-log" data-action="deleteIpLog" data-index="{{@index}}" data-tooltip="{{localize 'WITCHER.Button.Delete'}}">
+                    <i class="fas fa-trash"></i>
+                </button>
+                {{/if}}
             </div>
         </div>
         {{else}}

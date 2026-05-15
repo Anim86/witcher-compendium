@@ -35,4 +35,38 @@ export default class Log extends foundry.abstract.DataModel {
             [`system.currency.${type}`]: this.parent.currency[type] + amount
         });
     }
+
+    removeIpLog(index) {
+        const entry = this.ipLog[index];
+        if (!entry) return;
+        
+        const ip = entry.ip || 0;
+        const isMagic = entry.isMagic;
+        
+        this.ipLog.splice(index, 1);
+        
+        const updateData = { 'system.logs.ipLog': this.ipLog };
+        if (isMagic) {
+            updateData['system.magic.magicImprovementPoints'] = Math.max(0, this.parent.magic.magicImprovementPoints - ip);
+        } else {
+            updateData['system.improvementPoints'] = Math.max(0, this.parent.improvementPoints - ip);
+        }
+        
+        this.parent.parent.update(updateData);
+    }
+
+    removeCurrencyLog(index) {
+        const entry = this.currencyLog[index];
+        if (!entry) return;
+        
+        const amount = entry.amount || 0;
+        const type = entry.type;
+        
+        this.currencyLog.splice(index, 1);
+        
+        this.parent.parent.update({
+            'system.logs.currencyLog': this.currencyLog,
+            [`system.currency.${type}`]: Math.max(0, this.parent.currency[type] - amount)
+        });
+    }
 }

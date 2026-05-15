@@ -14,7 +14,7 @@
 
                 <div class="ip-badge open-rewards" data-action="openRewards" data-tooltip="{{localize 'WITCHER.Progression.SpendIP'}}">
                     <i class="fas fa-graduation-cap"></i>
-                    <span class="ip-label">{{localize 'WITCHER.Actor.ImprovementPoints'}}</span>
+                    <span class="ip-label">Esperienza</span>
                     <span class="ip-value">{{system.improvementPoints}}</span>
                     <i class="fas fa-cog gear-icon"></i>
                 </div>
@@ -38,7 +38,7 @@
                 <div class="info-item" title="{{localize 'WITCHER.Homeland'}}">
                     <i class="fas fa-map-marker-alt"></i> {{#if system.general.homeland.value}}{{localize (lookup config.homelands system.general.homeland.value)}}{{else}}---{{/if}}
                 </div>
-                <div class="info-item" title="{{localize 'WITCHER.Age'}}">
+                <div class="info-item" title="{{localize 'WITCHER.Actor.Age'}}">
                     <i class="fas fa-hourglass-half"></i> {{system.general.age}}
                 </div>
                 <div class="info-item" title="{{localize 'WITCHER.Actor.Gender.name'}}">
