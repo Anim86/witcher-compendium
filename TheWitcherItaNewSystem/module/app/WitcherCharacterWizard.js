@@ -39,11 +39,6 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         this.professions = [];
         this.allSkills = [];
         this.activeSkillTab = "profession-skills";
-        
-        this.difficultSkills = [
-            "Bestiario", "Linguaggio", "Tattica", "Alchimia", "Costruire Trappole", 
-            "Manifattura", "Intessere Fatture", "Lanciare Incantesimi", "Resistere alla Magia", "Officiare Rituali"
-        ];
     }
 
     static DEFAULT_OPTIONS = {
@@ -335,13 +330,13 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         for (const name of names) {
             const skill = this.allSkills.find(s => s.name.toLowerCase() === name.toLowerCase());
             if (skill) {
-                const isDiff = this.difficultSkills.includes(skill.name);
+                const cost = this._getSkillCost(skill);
                 result.push({
                     key: skill._id,
                     name: skill.name,
                     value: this.characterData.skills[skill._id] || 1, // Start at 1
-                    cost: isDiff ? 2 : 1,
-                    isDifficult: isDiff
+                    cost: cost,
+                    isDifficult: cost === 2
                 });
                 
                 // Initialize default value if missing
@@ -357,13 +352,13 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         return this.characterData.selectedPickupSkills.map(id => {
             const skill = this.allSkills.find(s => s._id === id);
             if (!skill) return null;
-            const isDiff = this.difficultSkills.includes(skill.name);
+            const cost = this._getSkillCost(skill);
             return {
                 key: skill._id,
                 name: skill.name,
                 value: this.characterData.skills[skill._id] || 0,
-                cost: isDiff ? 2 : 1,
-                isDifficult: isDiff
+                cost: cost,
+                isDifficult: cost === 2
             };
         }).filter(s => s !== null);
     }
@@ -378,19 +373,108 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             return {
                 key: s._id,
                 name: s.name,
-                cost: this.difficultSkills.includes(s.name) ? 2 : 1
+                cost: this._getSkillCost(s)
             };
         });
     }
 
     _calculateSkillPoints(type) {
         if (type === "profession") {
-            const spent = this._getProfessionSkills().reduce((acc, s) => acc + (s.value * s.cost), 0);
+            const spent = this._getProfessionSkills().reduce((acc, s) => {
+                // The first 8 levels of the native language are free
+                let val = s.value;
+                if (this._isNativeLanguage(s.name)) {
+                    val = Math.max(0, s.value - 8);
+                }
+                return acc + (val * s.cost);
+            }, 0);
             return 44 - spent;
         } else {
             const available = (Number(this.characterData.stats.int) || 0) + (Number(this.characterData.stats.ref) || 0);
-            const spent = this._getPickupSkills().reduce((acc, s) => acc + (s.value * s.cost), 0);
+            const spent = this._getPickupSkills().reduce((acc, s) => {
+                let val = s.value;
+                if (this._isNativeLanguage(s.name)) {
+                    val = Math.max(0, s.value - 8);
+                }
+                return acc + (val * s.cost);
+            }, 0);
             return available - spent;
+        }
+    }
+
+    /**
+     * Checks if a skill name matches the current native language.
+     * @param {string} skillName - Name of the skill to check.
+     * @returns {boolean}
+     * @private
+     */
+    _isNativeLanguage(skillName) {
+        const raceName = this.characterData.race?.name;
+        const homeland = this.characterData.homeland?.toLowerCase();
+        
+        let langKey = "commonSpeech";
+        if (raceName === "Elfi") langKey = "elderSpeech";
+        else if (raceName === "Nani" || raceName === "Gnomo") langKey = "dwarvenSpeech";
+        else if (raceName === "Umani") {
+            const elderHomelands = ["nilfgaard", "vicovaro", "etolia", "gemmeria", "ebbing", "maecht", "mettina", "nazair", "gheso", "magturga", "skellige"];
+            if (elderHomelands.includes(homeland)) langKey = "elderSpeech";
+        }
+        
+        const label = game.i18n.localize(CONFIG.WITCHER.skillMap[langKey].label);
+        return skillName.toLowerCase() === label.toLowerCase();
+    }
+
+    /**
+     * Determines the cost of a skill from the global configuration.
+     * @param {Object} skillItem - The skill item document or object.
+     * @returns {number} - 1 for simple, 2 for difficult.
+     * @private
+     */
+    _getSkillCost(skillItem) {
+        const entry = Object.values(CONFIG.WITCHER.skillMap).find(e => {
+            // Match by technical name if it exists, otherwise by localized label
+            if (e.name && e.name.toLowerCase() === skillItem.name.toLowerCase()) return true;
+            return game.i18n.localize(e.label).toLowerCase() === skillItem.name.toLowerCase();
+        });
+        return entry?.cost || 1;
+    }
+
+    /**
+     * Automatically updates the native language skill to +8 based on race and homeland.
+     * @private
+     */
+    _updateNativeLanguage() {
+        const raceName = this.characterData.race?.name;
+        const homeland = this.characterData.homeland?.toLowerCase();
+        
+        let langKey = "commonSpeech";
+        if (raceName === "Elfi") langKey = "elderSpeech";
+        else if (raceName === "Nani" || raceName === "Gnomo") langKey = "dwarvenSpeech";
+        else if (raceName === "Umani") {
+            const elderHomelands = ["nilfgaard", "vicovaro", "etolia", "gemmeria", "ebbing", "maecht", "mettina", "nazair", "gheso", "magturga", "skellige"];
+            if (elderHomelands.includes(homeland)) langKey = "elderSpeech";
+        }
+        
+        // Find the skill in allSkills
+        const langSkill = this.allSkills.find(s => {
+            const label = game.i18n.localize(CONFIG.WITCHER.skillMap[langKey].label);
+            return s.name.toLowerCase() === label.toLowerCase();
+        });
+        
+        if (langSkill) {
+            // Clear existing level 8 from any language skill to avoid duplicates
+            const langKeys = ["commonSpeech", "elderSpeech", "dwarvenSpeech"];
+            const langLabels = langKeys.map(k => game.i18n.localize(CONFIG.WITCHER.skillMap[k].label).toLowerCase());
+            
+            for (const skillId in this.characterData.skills) {
+                const s = this.allSkills.find(sk => sk._id === skillId);
+                if (s && langLabels.includes(s.name.toLowerCase()) && this.characterData.skills[skillId] === 8) {
+                    this.characterData.skills[skillId] = 0;
+                }
+            }
+            
+            // Set the new native language to 8
+            this.characterData.skills[langSkill._id] = 8;
         }
     }
 
@@ -467,7 +551,11 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
     async _prevStep() { if (this.step > 1) { this.step--; this.render(true); } }
 
 
-    async _updateHomeland(event, target) { this.characterData.homeland = target.value; this.render(true); }
+    async _updateHomeland(event, target) { 
+        this.characterData.homeland = target.value; 
+        this._updateNativeLanguage();
+        this.render(true); 
+    }
     async _updateAge(event, target) { this.characterData.age = parseInt(target.value); this.render(true); }
     async _updateMoney(event, target) { this.characterData.money = parseInt(target.value); this.render(true); }
     async _goToStep(event, target) { this.step = parseInt(target.dataset.step); this.render(true); }
@@ -499,7 +587,11 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
     async _selectRace(event, target) {
         const id = target.dataset.raceId;
         const race = this.races.find(r => r.id === id);
-        if (race) { this.characterData.race = race; this.render(true); }
+        if (race) { 
+            this.characterData.race = race; 
+            this._updateNativeLanguage();
+            this.render(true); 
+        }
     }
 
     async _selectProfession(event, target) {
@@ -540,8 +632,15 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 : [];
             names.forEach(name => {
                 const s = this.allSkills.find(sk => sk.name.toLowerCase() === name.toLowerCase());
-                if (s) this.characterData.skills[s._id] = 1;
+                if (s) {
+                    // Only set to 1 if it's not already set (e.g. by native language at 8)
+                    if (this.characterData.skills[s._id] === undefined || this.characterData.skills[s._id] === 0) {
+                        this.characterData.skills[s._id] = 1;
+                    }
+                }
             });
+
+            this._updateNativeLanguage();
             this.render(true);
         }
     }

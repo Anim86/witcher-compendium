@@ -927,7 +927,7 @@
         "StDex": "Destrezza",
         "StBody": "Fisico",
         "StEmp": "Empatia",
-        "StCra": "Tecnica",
+        "StCra": "Manualità",
         "StWill": "Volontà",
         "StLuck": "Fortuna",
         "StSpd": "Velocità",
@@ -1266,10 +1266,10 @@
                 "empatheticVerbalCombatSkills": "Abilità Comb. Verbale Empatico"
             },
             "awareness": {
-                "label": "Percezione"
+                "label": "Accortezza"
             },
             "business": {
-                "label": "Mercanteggiare"
+                "label": "Commercio"
             },
             "deduction": {
                 "label": "Deduzione"
@@ -1278,26 +1278,26 @@
                 "label": "Istruzione"
             },
             "commonSpeech": {
-                "label": "Lingua Comune (2)",
+                "label": "Linguaggio: Lingua Comune (2)",
                 "rollLabel": "Lingua Comune"
             },
             "elderSpeech": {
-                "label": "Linguaggio Antico (2)",
-                "rollLabel": "Linguaggio Antico"
+                "label": "Linguaggio: Lingua Antica (2)",
+                "rollLabel": "Lingua Antica"
             },
             "dwarvenSpeech": {
-                "label": "Lingua Nanica (2)",
-                "rollLabel": "Lingua Nanica"
+                "label": "Linguaggio: Nanico (2)",
+                "rollLabel": "Nanico"
             },
             "monsterLore": {
-                "label": "Conoscenza Mostri (2)",
-                "rollLabel": "Conoscenza Mostri"
+                "label": "Bestiario (2)",
+                "rollLabel": "Bestiario"
             },
             "socialEtiquette": {
-                "label": "Etichetta Sociale"
+                "label": "Etichetta"
             },
             "streetwise": {
-                "label": "Vita di Strada"
+                "label": "Scaltrezza"
             },
             "tactics": {
                 "label": "Tattica (2)",
@@ -1313,7 +1313,7 @@
                 "label": "Rissa"
             },
             "dodgeEscape": {
-                "label": "Schivata/Fuga"
+                "label": "Eludere"
             },
             "melee": {
                 "label": "Mischia"
@@ -1328,31 +1328,31 @@
                 "label": "Lame Corte"
             },
             "staffspear": {
-                "label": "Bastone/Lancia"
+                "label": "Armi in Asta"
             },
             "swordsmanship": {
                 "label": "Scherma"
             },
             "archery": {
-                "label": "Arco"
+                "label": "Archi"
             },
             "athletics": {
                 "label": "Atletica"
             },
             "crossbow": {
-                "label": "Balestra"
+                "label": "Balestre"
             },
             "sleightOfHand": {
-                "label": "Giochi di Mano"
+                "label": "Rapidità di Mano"
             },
             "stealth": {
-                "label": "Furtività"
+                "label": "Nascondersi"
             },
             "physique": {
-                "label": "Prestanza Fisica"
+                "label": "Prestanza"
             },
             "endurance": {
-                "label": "Resistenza"
+                "label": "Tempra"
             },
             "charisma": {
                 "label": "Carisma"
@@ -1367,19 +1367,19 @@
                 "label": "Gioco d'Azzardo"
             },
             "groomingAndStyle": {
-                "label": "Cura e Stile"
+                "label": "Eleganza"
             },
             "humanPerception": {
-                "label": "Percezione Umana"
+                "label": "Sensibilità"
             },
             "leadership": {
-                "label": "Comando"
+                "label": "Autorità"
             },
             "persuasion": {
                 "label": "Persuasione"
             },
             "performance": {
-                "label": "Esibizione"
+                "label": "Esibirsi"
             },
             "seduction": {
                 "label": "Seduzione"
@@ -1389,11 +1389,11 @@
                 "rollLabel": "Alchimia"
             },
             "crafting": {
-                "label": "Artigianato (2)",
-                "rollLabel": "Artigianato"
+                "label": "Manifattura (2)",
+                "rollLabel": "Manifattura"
             },
             "disguise": {
-                "label": "Travestimento"
+                "label": "Camuffare"
             },
             "firstAid": {
                 "label": "Primo Soccorso"
@@ -1405,33 +1405,33 @@
                 "label": "Scassinare"
             },
             "trapCrafting": {
-                "label": "Creare Trappole (2)",
-                "rollLabel": "Creare Trappole"
+                "label": "Costruire Trappole (2)",
+                "rollLabel": "Costruire Trappole"
             },
             "courage": {
                 "label": "Coraggio"
             },
             "hexWeaving": {
-                "label": "Tessere Maledizioni (2)",
-                "rollLabel": "Tessere Maledizioni"
+                "label": "Intessere Fatture (2)",
+                "rollLabel": "Intessere Fatture"
             },
             "intimidation": {
-                "label": "Intimidazione"
+                "label": "Intimidire"
             },
             "spellCasting": {
-                "label": "Lancio Incantesimi (2)",
-                "rollLabel": "Lancio Incantesimi"
+                "label": "Lanciare Incantesimi (2)",
+                "rollLabel": "Lanciare Incantesimi"
             },
             "resistMagic": {
                 "label": "Resistere alla Magia (2)",
                 "rollLabel": "Resistere alla Magia"
             },
             "resistCoercion": {
-                "label": "Resistere alla Coercizione"
+                "label": "Resistere a Coercizione"
             },
             "ritualCrafting": {
-                "label": "Creazione Rituali (2)",
-                "rollLabel": "Creazione Rituali"
+                "label": "Officiare Rituali (2)",
+                "rollLabel": "Officiare Rituali"
             }
         },
         "Stats": {
