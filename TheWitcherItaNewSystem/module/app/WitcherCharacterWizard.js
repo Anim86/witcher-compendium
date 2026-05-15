@@ -659,7 +659,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                     age: this.characterData.age || 20
                 },
                 currency: {
-                    crowns: Number(this.characterData.money) || 0
+                    crown: Number(this.characterData.money) || 0
                 }
             }
         };
