@@ -23,6 +23,31 @@ Il progetto si basa su tre pilastri fondamentali che devono restare SEMPRE allin
 Tutti gli script sono stati riorganizzati in `_tools/scripts/`. Ogni script usa percorsi relativi calcolati dinamicamente rispetto alla root del repo.
 
 ### 🚀 Core Pipeline (Manutenzione Ordinaria)
+# 📜 BRIEFING OPERATIVO: MAINTENANCE WITCHER COMPENDIUM
+> [!IMPORTANT]
+> **AMBIENTE DI SVILUPPO**: [Foundry VTT Stable 14 build 361](https://foundryvtt.com/releases/14.361)
+
+## Documento di Handover per AI Builder (Antigravity & Friends)
+
+Questo documento è la **fonte di verità** per chiunque debba operare sugli strumenti di manutenzione del compendio Witcher TRPG. Seguire queste istruzioni garantisce che il lavoro sia sincronizzato, professionale e compatibile con Foundry V14.
+
+---
+
+## 🏗️ 1. ARCHITETTURA DELLE 3 COLONNE (1:1:1)
+
+Il progetto si basa su tre pilastri fondamentali che devono restare SEMPRE allineati.
+
+1.  **SORGENTE (`_tools/src-packs/`)**: Contiene i file JSON divisi per categoria. Questa è l'**unica fonte di verità**. Le modifiche ai dati si fanno SOLO qui.
+2.  **ASSETS (`witcher-compendium/assets/`)**: Contiene le immagini WebP. La struttura delle cartelle deve rispecchiare quella dei pack (es. `assets/weapons/weapon_name.webp`).
+3.  **PACKS (`witcher-compendium/packs/`)**: Contiene i database LevelDB compilati. **MAI** editare questi file direttamente. Vengono sovrascritti ad ogni compilazione.
+
+---
+
+## 🛠️ 2. IL TOOLSET PROFESSIONALE
+
+Tutti gli script sono stati riorganizzati in `_tools/scripts/`. Ogni script usa percorsi relativi calcolati dinamicamente rispetto alla root del repo.
+
+### 🚀 Core Pipeline (Manutenzione Ordinaria)
 
 | Script | Linguaggio | Scopo | Quando usarlo |
 | :--- | :--- | :--- | :--- |
@@ -30,13 +55,13 @@ Tutti gli script sono stati riorganizzati in `_tools/scripts/`. Ogni script usa 
 | **`core/audit_project.mjs`** | Node.js | Verifica coerenza JSON vs `module.json` | Per trovare file mancanti o non dichiarati. |
 | **`utils/smart_asset_guard.mjs`** | Node.js | Audit avanzato asset + Fix automatico | Per trovare mismatch di naming e correggere i path JSON (`--fix`). |
 | **`normalize_asset_filenames.mjs`** | Node.js | Normalizzazione asset su disco | Quando vengono aggiunti file con nomi non standard. |
+| **`utils/update_docs_structure.mjs`** | Node.js | Aggiorna Section 5 del Briefing | Dopo ogni cambio strutturale ai pack. |
 | **`core/align_assets_json.mjs`** | Node.js | Allinea i percorsi `img` nei JSON | Legacy/Manuale - Preferire `smart_asset_guard`. |
 
 ### 🔧 Utility & Debug
 -   **`core/update_special_abilities.py`**: Mappa automaticamente le abilità speciali ai loro asset in `assets/SPECIAL/` (Normalized).
--   `utils/fix_uuids.mjs`: Genera o corregge gli ID (16 char hex).
--   `utils/fix_metadata.mjs`: Normalizza i metadati `_stats` per la v14.
 -   `debug/diagnose_packs.js`: Scansione veloce per file corrotti o mancanti.
+-   `_garbage/`: Contiene script obsoleti (es. `fix_uuids.mjs`, `fix_metadata.mjs`) non più necessari per la v14.
 
 ---
 
@@ -123,43 +148,22 @@ Questa sezione è aggiornata automaticamente dal tool `update_docs_structure.mjs
 ```
 _tools/src-packs/
 ├── ALCHIMIA_E_ARTIGIANATO
-│   ├── Componenti
-│   │   ├── witcher-components
-│   │   ├── witcher-components-diario
-│   │   ├── witcher-components-mutageni-dw
-│   │   ├── witcher-components-racconti
-│   │   └── witcher-dlc-ms-components
-│   ├── Formule_e_Ricette
-│   │   ├── witcher-alchemy
-│   │   ├── witcher-dlc-ap-alchemy
-│   │   └── witcher-dlc-ts-alchemy
-│   ├── Mutageni
-│   │   ├── witcher-mutations
-│   │   └── witcher-mutazioni-tc
-│   └── Schemi_di_Fabbricazione
-│       ├── witcher-dlc-sl-schematics
-│       ├── witcher-dlc-sw-schematics
-│       ├── witcher-dlc-ts-schematics
-│       ├── witcher-schematics
-│       └── witcher-schematics-racconti
+│   ├── witcher-alchemy
+│   ├── witcher-components
+│   ├── witcher-mutations
+│   ├── witcher-mutazioni-tc
+│   └── witcher-schematics
 ├── BESTIARIO
 │   ├── witcher-animals
 │   ├── witcher-characters
 │   └── witcher-monsters
-├── EQUIPAGGIAMENTO_E_TRASPORTI
-│   ├── _review_orphans
-│   ├── Armi_e_Armature
-│   │   ├── witcher-armor
-│   │   ├── witcher-weapons
-│   │   └── witcher-weapons-racconti
-│   ├── Attrezzatura_e_Oggetti
-│   │   ├── witcher-equipment
-│   │   ├── witcher-special
-│   │   └── witcher-special-chaos
-│   ├── Reliquie_e_Artefatti
-│   │   └── witcher-magic-items
-│   └── Trasporti
-│       └── witcher-transports
+├── EQUIPAGGIAMENTO
+│   ├── witcher-armor
+│   ├── witcher-equipment
+│   ├── witcher-magic-items
+│   ├── witcher-special
+│   ├── witcher-transports
+│   └── witcher-weapons
 ├── MAGIA_E_MALEDIZIONI
 │   ├── Doni_del_Caos
 │   │   ├── witcher-gifts
@@ -167,50 +171,60 @@ _tools/src-packs/
 │   │   └── witcher-invocations
 │   ├── Incantesimi_e_Rituali
 │   │   ├── witcher-rituals
-│   │   ├── witcher-rituals-chaos
 │   │   ├── witcher-runes
-│   │   ├── witcher-spells
-│   │   ├── witcher-spells-chaos
-│   │   └── witcher-spells-racconti
+│   │   └── witcher-spells
 │   ├── Maledizioni_e_Fatture
 │   │   ├── witcher-curses
-│   │   ├── witcher-hexes
-│   │   └── witcher-hexes-base
+│   │   └── witcher-hexes
 │   ├── Necromanzia
 │   │   └── witcher-necromanzia
 │   └── Segni
-│       ├── witcher-signs
-│       └── witcher-signs-chaos
-├── REGOLAMENTO_E_NARRATIVA
-│   ├── Ferite_Critiche
-│   │   └── witcher-critical-wounds
-│   ├── Geografia
-│   │   └── witcher-geografia
-│   ├── Investigazioni
-│   │   └── witcher-investigations
-│   ├── Lore_e_Racconti
-│   │   ├── witcher-dlc-sr-lore
-│   │   ├── witcher-lore
-│   │   ├── witcher-lore-chaos
-│   │   └── witcher-lore-racconti
-│   ├── Professioni_e_Abilita
-│   │   ├── witcher-dlc-np-professions
-│   │   ├── witcher-professions
-│   │   ├── witcher-races
-│   │   └── witcher-skills
-│   └── Trofei
-│       └── witcher-trophies
-└── TABELLEOPERATIVE
-    ├── CriticieCombattimento
-    └── DisastriMagici
+│       └── witcher-signs
+└── REGOLAMENTO_E_NARRATIVA
+    ├── Ferite_Critiche
+    │   └── witcher-critical-wounds
+    ├── Geografia
+    │   └── witcher-geografia
+    ├── Investigazioni
+    │   └── witcher-investigations
+    ├── Lore_e_Racconti
+    │   ├── witcher-lore
+    │   ├── witcher-lore-chaos
+    │   └── witcher-lore-racconti
+    ├── Professioni_e_Abilita
+    │   ├── witcher-professions
+    │   ├── witcher-races
+    │   └── witcher-skills
+    ├── Tabelle_Operative
+    │   ├── CriticieCombattimento
+    │   └── DisastriMagici
+    └── Trofei
+        └── witcher-trophies
 ```
-*Ultimo aggiornamento automatico: 5 maggio 2026*
+*Ultimo aggiornamento automatico: 16 maggio 2026*
 <!-- FOLDER_STRUCTURE_END -->
 
-## 📜 6. ARCHIVIO STORICO
+## 📈 6. PROGRESSIONE E CHARACTER SHEET
+Il sistema di progressione (Improvement Points / P.I.) segue logiche specifiche implementate in `progressionMixin.js`:
+
+| Tipo Incremento | Costo (P.I.) | Note |
+| :--- | :--- | :--- |
+| **Skill Standard** | Livello Corrente (min 1) | Cap a livello 10. |
+| **Skill Difficili** | Livello Corrente * 2 | Sblocco Liv 1 costa 2 P.I. |
+| **Statistiche Base** | Livello Corrente * 10 | Massimo 10 per ogni statistica. |
+| **Skill Professione** | Livello Corrente (min 1) | Richiede Liv 5 nell'abilità precedente del ramo. |
+
+### 🛡️ Monster Sheets (V14 Standard)
+- **Layout**: Griglia a due colonne compatta per le statistiche.
+- **Risorse**: Data binding diretto per HP, STA, Vigore e Tossicità.
+- **Status**: Integrazione nativa con gli Active Effects della V14.
+
+---
+
+## 📜 7. ARCHIVIO STORICO
 Se hai bisogno di capire come sono stati estratti i dati originariamente, consulta:
 -   `_tools/scripts/archive/legacy/parsers/`: Logiche di estrazione OCR/TXT.
 -   `_tools/scripts/archive/legacy/audits/`: Logiche di validazione storica.
 
 ---
-*Ultimo aggiornamento guida: 11 Maggio 2026 (Integrazione Smart Asset Guard & Slugify Standard)*
+*Ultimo aggiornamento guida: 16 Maggio 2026 (Integrazione Sistema P.I. & Cleanup Repository)*
