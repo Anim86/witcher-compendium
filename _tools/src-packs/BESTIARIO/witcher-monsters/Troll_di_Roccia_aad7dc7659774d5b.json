@@ -61,6 +61,10 @@
                 "dodge": {
                     "value": 4,
                     "isVisible": true
+                },
+                "melee": {
+                    "value": 5,
+                    "isVisible": true
                 }
             },
             "dex": {
@@ -151,25 +155,6 @@
     },
     "items": [
         {
-            "_id": "bafb246a202c4880",
-            "name": "Pugni",
-            "type": "weapon",
-            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
-            "system": {
-                "description": "N/A",
-                "damage": "N/A",
-                "accuracy": 0,
-                "effects": "N/A",
-                "isStored": false,
-                "reliable": 0,
-                "rateOfFire": 1
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
             "_id": "68c2dc2a907d46f7",
             "name": "Fegato di Troll (x1)",
             "type": "valuable",
@@ -197,6 +182,19 @@
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
                 "coreVersion": 14
+            }
+        },
+        {
+            "_id": "e9975b11ba4a88",
+            "name": "Pugni",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Forza Schiacciante",
+                "damage": "6d6",
+                "accuracy": 0,
+                "effects": "Forza Schiacciante",
+                "rateOfFire": 2
             }
         }
     ],

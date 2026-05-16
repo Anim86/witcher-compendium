@@ -84,6 +84,10 @@
                 "stealth": {
                     "value": 0,
                     "isVisible": true
+                },
+                "brawling": {
+                    "value": 6,
+                    "isVisible": true
                 }
             },
             "body": {
@@ -186,67 +190,6 @@
     },
     "items": [
         {
-            "_id": "fcea829b64ff4700",
-            "name": "Morso",
-            "type": "weapon",
-            "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
-            "system": {
-                "description": "N/A",
-                "damage": "N/A",
-                "accuracy": 0,
-                "effects": "N/A",
-                "isStored": false,
-                "reliable": 0,
-                "rateOfFire": 1
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "2d68ba48a1224712",
-            "name": "[Capacità] Capobranco",
-            "type": "ability",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-            "system": {
-                "description": "<p>Finché il warg è vivo tutti i lupi ottengono un bonus di +4 al Coraggio. Inoltre, il warg è in grado di dare ordini al resto del branco (es. 'attacca alle spalle', 'aspetta', 'vai laggiù').</p>",
-                "isStored": false
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "e6a0c7e003984203",
-            "name": "[Capacità] Fiuto",
-            "type": "ability",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-            "system": {
-                "description": "<p>Può seguire le tracce di una creatura senza bisogno di segnali visivi o uditivi senza alcuna penalità.</p>",
-                "isStored": false
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "3e922d05fc9b4b09",
-            "name": "[Capacità] Vista Notturna",
-            "type": "ability",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-            "system": {
-                "description": "<p>Può agire in zone di luce fioca senza penalità.</p>",
-                "isStored": false
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
             "_id": "883b7879e72243b4",
             "name": "Fegato di Lupo (x1)",
             "type": "valuable",
@@ -304,6 +247,19 @@
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
                 "coreVersion": 14
+            }
+        },
+        {
+            "_id": "82006adee6e4c8",
+            "name": "Morso",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Sanguinamento (25%)",
+                "damage": "4d6",
+                "accuracy": 0,
+                "effects": "Sanguinamento (25%)",
+                "rateOfFire": 1
             }
         }
     ],

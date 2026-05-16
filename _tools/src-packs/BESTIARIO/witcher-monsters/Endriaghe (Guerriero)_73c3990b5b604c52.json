@@ -1,8 +1,8 @@
 {
-    "_id": "203eba78f51748a4",
-    "name": "Viverne",
+    "_id": "73c3990b5b604c52",
+    "name": "Endriaghe (Guerriero)",
     "type": "monster",
-    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/viverne.webp",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/endriaghe.webp",
     "system": {
         "stats": {
             "int": {
@@ -11,24 +11,24 @@
                 "unmodifiedMax": 1
             },
             "ref": {
-                "value": 8,
-                "max": 8,
-                "unmodifiedMax": 8
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
             },
             "dex": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "body": {
                 "value": 4,
                 "max": 4,
                 "unmodifiedMax": 4
             },
-            "body": {
-                "value": 9,
-                "max": 9,
-                "unmodifiedMax": 9
-            },
             "spd": {
-                "value": 5,
-                "max": 5,
-                "unmodifiedMax": 5
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
             },
             "emp": {
                 "value": 1,
@@ -57,39 +57,39 @@
         },
         "skills": {
             "accortezza": {
-                "value": 10
+                "value": 5
             },
             "atletica": {
-                "value": 8
+                "value": 5
             },
             "coraggio": {
-                "value": 8
+                "value": 5
             },
             "eludere": {
                 "value": 6
             },
             "mischia": {
-                "value": 8
-            },
-            "nascondersi": {
                 "value": 6
             },
-            "rissa": {
+            "nascondersi": {
                 "value": 7
             },
+            "rissa": {
+                "value": 5
+            },
             "sopravvivenza": {
-                "value": 9
+                "value": 6
             },
             "tempra": {
-                "value": 8
+                "value": 6
             },
             "int": {
                 "awareness": {
-                    "value": 9,
+                    "value": 4,
                     "isVisible": true
                 },
                 "wildernessSurvival": {
-                    "value": 8,
+                    "value": 5,
                     "isVisible": true
                 }
             },
@@ -103,17 +103,17 @@
                     "isVisible": true
                 },
                 "brawling": {
-                    "value": 10,
+                    "value": 8,
                     "isVisible": true
                 }
             },
             "will": {
                 "courage": {
-                    "value": 2,
+                    "value": 0,
                     "isVisible": true
                 },
                 "resistMagic": {
-                    "value": 2,
+                    "value": 0,
                     "isVisible": true
                 }
             },
@@ -137,18 +137,18 @@
             "cra": {}
         },
         "details": {
-            "biography": "<p>Le viverne sono tipo draghi con due zampe, credo. Dicono che una volta uccisi, berne il sangue dia potere sul fuoco. – Rodolf Kazmer</p><p>Le viverne infestano i picchi montani e danno la caccia a chi passa nelle vicinanze. Attaccano piombando dal cielo, tentando di restare in volo il più a lungo possibile. Non possono soffiare fuoco come i draghi, ma sputano veleno acido con grande precisione.</p>",
-            "threat": "Difficile",
-            "reward": 1500,
-            "monsterType": "Draconid",
-            "difficulty": "HARD",
+            "biography": "<p>Dicono che le endriaghe siano come ogni altro insetto, solo un'infestazione di cui bisogna liberarsi. La gente immagina delle soluzioni davvero creative. – Rodolf Kazmer</p><p>Superati tutti i pericoli, si trova la regina e le uova. Chi arriva a questo punto dovrà affrontare ogni endriaga rimasta nell'area, perché la regina le convocherà tutte a difesa. La regina è tecnicamente un insetto, allo stesso modo in cui un leone è un gatto.</p>",
+            "threat": "Ardua",
+            "reward": 1000,
+            "monsterType": "Insectoid",
+            "difficulty": "MEDIUM",
             "height": "",
             "weight": "",
             "environment": "",
             "organization": "",
             "vulnerability": "",
             "intelligence": "",
-            "bounty": 1500
+            "bounty": 1000
         },
         "derivedStats": {
             "vigor": {
@@ -157,32 +157,32 @@
                 "unmodifiedMax": 0
             },
             "rec": {
-                "value": 6,
-                "max": 6,
-                "unmodifiedMax": 6
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
             },
             "resolve": {
-                "value": 45,
-                "max": 45,
-                "unmodifiedMax": 45
+                "value": 25,
+                "max": 25,
+                "unmodifiedMax": 25
             },
             "stun": {
-                "value": 7,
-                "max": 7
+                "value": 5,
+                "max": 5
             },
             "woundTreshold": {
-                "value": 8,
-                "max": 8
+                "value": 5,
+                "max": 5
             },
             "hp": {
-                "value": 45,
-                "max": 45,
-                "unmodifiedMax": 45
+                "value": 25,
+                "max": 25,
+                "unmodifiedMax": 25
             },
             "sta": {
-                "value": 45,
-                "max": 45,
-                "unmodifiedMax": 45
+                "value": 25,
+                "max": 25,
+                "unmodifiedMax": 25
             },
             "focus": {
                 "value": 0,
@@ -190,11 +190,11 @@
                 "unmodifiedMax": 0
             }
         },
-        "description": "<p>Le viverne sono tipo draghi con due zampe, credo. Dicono che una volta uccisi, berne il sangue dia potere sul fuoco. – Rodolf Kazmer</p><p>Le viverne infestano i picchi montani e danno la caccia a chi passa nelle vicinanze. Attaccano piombando dal cielo, tentando di restare in volo il più a lungo possibile. Non possono soffiare fuoco come i draghi, ma sputano veleno acido con grande precisione.</p>",
-        "sourcebook": "MB 307",
-        "monsterType": "Draconid",
-        "difficulty": "hard",
-        "bounty": 1500,
+        "description": "<p>Dicono che le endriaghe siano come ogni altro insetto, solo un'infestazione di cui bisogna liberarsi. La gente immagina delle soluzioni davvero creative. – Rodolf Kazmer</p><p>Superati tutti i pericoli, si trova la regina e le uova. Chi arriva a questo punto dovrà affrontare ogni endriaga rimasta nell'area, perché la regina le convocherà tutte a difesa. La regina è tecnicamente un insetto, allo stesso modo in cui un leone è un gatto.</p>",
+        "sourcebook": "MB 295",
+        "monsterType": "Insectoid",
+        "difficulty": "medium",
+        "bounty": 1000,
         "height": "",
         "weight": "",
         "environment": "",
@@ -204,23 +204,8 @@
     },
     "items": [
         {
-            "_id": "c3b1736fa7a24ee5",
-            "name": "Estratto di Veleno (x1d10)",
-            "type": "valuable",
-            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
-            "system": {
-                "description": "Quantità: 1d10",
-                "isStored": false,
-                "quantity": "1d10"
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "4717cc8a590847a0",
-            "name": "Occhio di Viverna (x1d6/2)",
+            "_id": "59d1080191814de6",
+            "name": "Estratto di Veleno (x1d6/2)",
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
@@ -234,23 +219,8 @@
             }
         },
         {
-            "_id": "d7822bcadbaf4306",
-            "name": "Scaglie di Dragonide (x1d10)",
-            "type": "valuable",
-            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
-            "system": {
-                "description": "Quantità: 1d10",
-                "isStored": false,
-                "quantity": "1d10"
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "c8bb16a21e304fb5",
-            "name": "Uovo di Viverna (x1d6/2)",
+            "_id": "9693601c3f1c4c16",
+            "name": "Chitina (x1d6/2)",
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
@@ -264,41 +234,43 @@
             }
         },
         {
-            "_id": "8c079c4a648198",
-            "name": "Aculei",
-            "type": "weapon",
-            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "_id": "d188689b61714520",
+            "name": "Saliva di Endriaga (x1d6/2)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
             "system": {
-                "description": "Veleno (75%)",
-                "damage": "5d6+2",
-                "accuracy": 0,
-                "effects": "Veleno (75%)",
-                "rateOfFire": 1
+                "description": "Quantità: 1d6/2",
+                "isStored": false,
+                "quantity": "1d6"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
             }
         },
         {
-            "_id": "48e822e81dcaf8",
-            "name": "Artigli",
+            "_id": "885cb4ed558c88",
+            "name": "Chele",
             "type": "weapon",
             "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
-                "description": "Nessuno",
-                "damage": "6d6",
+                "description": "Veleno (50%)",
+                "damage": "4d6",
                 "accuracy": 0,
-                "effects": "Nessuno",
+                "effects": "Veleno (50%)",
                 "rateOfFire": 2
             }
         },
         {
-            "_id": "a59b4cc2e92008",
-            "name": "Morso",
+            "_id": "cf292a7111f59",
+            "name": "Coda",
             "type": "weapon",
             "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
-                "description": "Veleno (25%)",
-                "damage": "7d6",
+                "description": "Nessuno",
+                "damage": "5d6",
                 "accuracy": 0,
-                "effects": "Veleno (25%)",
+                "effects": "Nessuno",
                 "rateOfFire": 1
             }
         }

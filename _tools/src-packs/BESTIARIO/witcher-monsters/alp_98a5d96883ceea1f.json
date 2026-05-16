@@ -78,6 +78,10 @@
                 "stealth": {
                     "value": 5,
                     "isVisible": true
+                },
+                "brawling": {
+                    "value": 3,
+                    "isVisible": true
                 }
             },
             "body": {},
@@ -182,100 +186,6 @@
     },
     "items": [
         {
-            "_id": "8fa417af845e4cf5",
-            "name": "Morso",
-            "type": "weapon",
-            "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
-            "system": {
-                "description": "Saliva Soporifera, Sanguinamento (75%), Succhiare Sangue, Trapassare Migliorato",
-                "damage": "N/A",
-                "accuracy": 0,
-                "effects": "Saliva Soporifera, Sanguinamento (75%), Succhiare Sangue, Trapassare Migliorato",
-                "isStored": false,
-                "reliable": 0,
-                "rateOfFire": 1
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "8a06e11c43dc4aa4",
-            "name": "Artigli",
-            "type": "weapon",
-            "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
-            "system": {
-                "description": "Bilanciata, Trapassare",
-                "damage": "N/A",
-                "accuracy": 0,
-                "effects": "Bilanciata, Trapassare",
-                "isStored": false,
-                "reliable": 0,
-                "rateOfFire": 1
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "c93f876b80b74a5d",
-            "name": "[Capacità] Mutaforma Versatile",
-            "type": "ability",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-            "system": {
-                "description": "<p>Può trasformarsi in una bella elfa o un cane/gatto, conservando il proprio intelletto.</p>",
-                "isStored": false
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "921bd0bc94154267",
-            "name": "[Capacità] Saliva Soporifera",
-            "type": "ability",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-            "system": {
-                "description": "<p>Provoca un sonno profondo (Tempra CD 16 se ignaro) o drena 5 RES a contatto in scontro.</p>",
-                "isStored": false
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "05768c10491b44a1",
-            "name": "[Capacità] Esplosione Sonora",
-            "type": "ability",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-            "system": {
-                "description": "<p>Cono di 6m. Danno 5d6 e spinta indietro di 4m (CD 16 per bloccare/riposizionarsi).</p>",
-                "isStored": false
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "62ee3771b4d645d4",
-            "name": "[Capacità] Rigenerazione",
-            "type": "ability",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-            "system": {
-                "description": "<p>Recupera PS nel tempo come molti vampiri.</p>",
-                "isStored": false
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
             "_id": "0566ab39de424bd6",
             "name": "Denti di Vampiro (x1d6/2)",
             "type": "valuable",
@@ -333,6 +243,32 @@
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
                 "coreVersion": 14
+            }
+        },
+        {
+            "_id": "31443b20520eb8",
+            "name": "Morso",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Succhiare Sangue, Trapassare",
+                "damage": "5d6",
+                "accuracy": 0,
+                "effects": "Succhiare Sangue, Trapassare",
+                "rateOfFire": 1
+            }
+        },
+        {
+            "_id": "8f839d7af94628",
+            "name": "Artigli",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Sanguinamento (50%)",
+                "damage": "4d6",
+                "accuracy": 0,
+                "effects": "Sanguinamento (50%)",
+                "rateOfFire": 2
             }
         }
     ]

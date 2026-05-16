@@ -63,7 +63,12 @@
                     "isVisible": true
                 }
             },
-            "dex": {},
+            "dex": {
+                "brawling": {
+                    "value": 5,
+                    "isVisible": true
+                }
+            },
             "body": {},
             "emp": {},
             "cra": {},
@@ -146,25 +151,6 @@
     },
     "items": [
         {
-            "_id": "165e5af171674361",
-            "name": "Artigli",
-            "type": "weapon",
-            "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
-            "system": {
-                "description": "N/A",
-                "damage": "N/A",
-                "accuracy": 0,
-                "effects": "N/A",
-                "isStored": false,
-                "reliable": 0,
-                "rateOfFire": 1
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
             "_id": "251751dca89c438f",
             "name": "Midollo di Ghoul (x1)",
             "type": "valuable",
@@ -192,6 +178,32 @@
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
                 "coreVersion": 14
+            }
+        },
+        {
+            "_id": "26e50ad306465",
+            "name": "Artigli",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Nessuno",
+                "damage": "3d6",
+                "accuracy": 0,
+                "effects": "Nessuno",
+                "rateOfFire": 1
+            }
+        },
+        {
+            "_id": "6a75b09554dda8",
+            "name": "Morso",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Sanguinamento (25%), -1 Danno all'Armatura",
+                "damage": "3d6+2",
+                "accuracy": 0,
+                "effects": "Sanguinamento (25%), -1 Danno all'Armatura",
+                "rateOfFire": 1
             }
         }
     ],

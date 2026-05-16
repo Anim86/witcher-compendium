@@ -5,44 +5,44 @@
     "system": {
         "stats": {
             "int": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
             },
             "ref": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 9,
+                "max": 9,
+                "unmodifiedMax": 9
             },
             "dex": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
             },
             "body": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 18,
+                "max": 18,
+                "unmodifiedMax": 18
             },
             "spd": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
             },
             "emp": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
             },
             "cra": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
             },
             "will": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
             },
             "luck": {
                 "value": 0,
@@ -83,8 +83,22 @@
                 "value": 0
             },
             "int": {},
-            "ref": {},
-            "dex": {},
+            "ref": {
+                "dodge": {
+                    "value": 6,
+                    "isVisible": true
+                }
+            },
+            "dex": {
+                "athletics": {
+                    "value": 2,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 10,
+                    "isVisible": true
+                }
+            },
             "body": {},
             "emp": {},
             "cra": {},
@@ -119,9 +133,9 @@
                 "max": 0
             },
             "hp": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 120,
+                "max": 120,
+                "unmodifiedMax": 120
             },
             "sta": {
                 "value": 0,
@@ -144,9 +158,59 @@
         "environment": "",
         "organization": "",
         "intelligence": "",
-        "vulnerability": ""
+        "vulnerability": "",
+        "armorHead": 30,
+        "armorUpper": 30,
+        "armorLower": 30
     },
-    "items": [],
+    "items": [
+        {
+            "_id": "78bd17bfed81b8",
+            "name": "Artigli",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "",
+                "damage": "6d6+2",
+                "accuracy": 0,
+                "effects": "",
+                "rateOfFire": 2
+            }
+        },
+        {
+            "_id": "197f7ca6630218",
+            "name": "Morso",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "",
+                "damage": "8d6",
+                "accuracy": 0,
+                "effects": "",
+                "rateOfFire": 1
+            }
+        },
+        {
+            "_id": "62264a07c823f",
+            "name": "[Capacità] Ululato Stordente",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "",
+                "isStored": false
+            }
+        },
+        {
+            "_id": "9ec117cb3039b8",
+            "name": "[Capacità] Salto Prodigioso",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "",
+                "isStored": false
+            }
+        }
+    ],
     "_id": "4fb21c96538da7e0",
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",

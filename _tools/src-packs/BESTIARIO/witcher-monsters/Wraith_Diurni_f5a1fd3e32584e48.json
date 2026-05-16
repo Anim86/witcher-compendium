@@ -85,7 +85,12 @@
             },
             "int": {},
             "ref": {},
-            "dex": {},
+            "dex": {
+                "brawling": {
+                    "value": 5,
+                    "isVisible": true
+                }
+            },
             "body": {},
             "emp": {},
             "cra": {},
@@ -159,36 +164,16 @@
     },
     "items": [
         {
-            "_id": "c8cf668d56da43c5",
+            "_id": "ca1f3251349eb",
             "name": "Artigli",
             "type": "weapon",
-            "img": "modules/witcher-compendium/assets/SPECIAL/trait_artigli.webp",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
-                "description": "",
-                "damage": "5d6",
+                "description": "Spesso utilizza anche un colpo speciale che prosciuga vitalità",
+                "damage": "4d6",
                 "accuracy": 0,
-                "effects": "",
-                "isStored": false,
-                "reliable": 0,
-                "rateOfFire": 1
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "21411460b99a48ba",
-            "name": "[Capacità] Danza di Mezzogiorno",
-            "type": "ability",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-            "system": {
-                "description": "<p>Può creare 3 copie danzanti. Finché attiva, drena 3 PS dal bersaglio ogni round per guarire il wraith.</p>",
-                "isStored": false
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
+                "effects": "Spesso utilizza anche un colpo speciale che prosciuga vitalità",
+                "rateOfFire": 2
             }
         }
     ],

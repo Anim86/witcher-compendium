@@ -92,8 +92,18 @@
                 "value": 0
             },
             "int": {},
-            "ref": {},
-            "dex": {},
+            "ref": {
+                "melee": {
+                    "value": 7,
+                    "isVisible": true
+                }
+            },
+            "dex": {
+                "brawling": {
+                    "value": 6,
+                    "isVisible": true
+                }
+            },
             "body": {},
             "emp": {},
             "cra": {},
@@ -155,7 +165,34 @@
         "intelligence": "",
         "vulnerability": ""
     },
-    "items": [],
+    "items": [
+        {
+            "_id": "86e4e18322b928",
+            "name": "Artigli",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Sanguinamento (50%)",
+                "damage": "4d6",
+                "accuracy": 0,
+                "effects": "Sanguinamento (50%)",
+                "rateOfFire": 2
+            }
+        },
+        {
+            "_id": "4bfa18046fee6",
+            "name": "Colpo d'Ala",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "A Fuoco (50%), Vacillante (25%)",
+                "damage": "3d6",
+                "accuracy": 0,
+                "effects": "A Fuoco (50%), Vacillante (25%)",
+                "rateOfFire": 1
+            }
+        }
+    ],
     "_id": "395027d6cbea148f",
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",

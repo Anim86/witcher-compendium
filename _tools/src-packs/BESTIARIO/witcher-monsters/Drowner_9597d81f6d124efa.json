@@ -67,6 +67,10 @@
                 "athletics": {
                     "value": 3,
                     "isVisible": true
+                },
+                "brawling": {
+                    "value": 5,
+                    "isVisible": true
                 }
             },
             "body": {},
@@ -154,25 +158,6 @@
     },
     "items": [
         {
-            "_id": "4a84e68554324bec",
-            "name": "Artigli",
-            "type": "weapon",
-            "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
-            "system": {
-                "description": "N/A",
-                "damage": "N/A",
-                "accuracy": 0,
-                "effects": "N/A",
-                "isStored": false,
-                "reliable": 0,
-                "rateOfFire": 1
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
             "_id": "cf7a5741326149cf",
             "name": "Cervello di Drowner (x1)",
             "type": "valuable",
@@ -200,6 +185,19 @@
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
                 "coreVersion": 14
+            }
+        },
+        {
+            "_id": "810b126b569758",
+            "name": "Artigli",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Nessuno",
+                "damage": "2d6+2",
+                "accuracy": 0,
+                "effects": "Nessuno",
+                "rateOfFire": 2
             }
         }
     ],

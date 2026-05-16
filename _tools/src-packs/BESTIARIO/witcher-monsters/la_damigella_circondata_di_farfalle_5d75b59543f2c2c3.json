@@ -6,44 +6,54 @@
     "system": {
         "stats": {
             "int": {
-                "value": 0,
-                "max": 0
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
             },
             "ref": {
-                "value": 0,
-                "max": 0
+                "value": 14,
+                "max": 14,
+                "unmodifiedMax": 14
             },
             "dex": {
-                "value": 0,
-                "max": 0
+                "value": 12,
+                "max": 12,
+                "unmodifiedMax": 12
             },
             "body": {
-                "value": 0,
-                "max": 0
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
             },
             "spd": {
-                "value": 0,
-                "max": 0
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
             },
             "emp": {
-                "value": 0,
-                "max": 0
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
             },
             "cra": {
-                "value": 0,
-                "max": 0
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
             },
             "will": {
-                "value": 0,
-                "max": 0
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
             },
             "luck": {
                 "value": 0,
-                "max": 0
+                "max": 0,
+                "unmodifiedMax": 0
             },
             "armor": {
                 "value": 0,
-                "max": 0
+                "max": 0,
+                "unmodifiedMax": 0
             }
         },
         "skills": {
@@ -78,8 +88,26 @@
                 "value": 0
             },
             "int": {},
-            "ref": {},
-            "dex": {},
+            "ref": {
+                "dodge": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "melee": {
+                    "value": 2,
+                    "isVisible": true
+                }
+            },
+            "dex": {
+                "athletics": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 1,
+                    "isVisible": true
+                }
+            },
             "body": {},
             "emp": {},
             "cra": {},
@@ -92,7 +120,7 @@
             "monsterType": "Relict",
             "difficulty": "HARD",
             "height": "",
-            "weight": "",
+            "weight": "80 Kg",
             "environment": "",
             "organization": "",
             "vulnerability": "",
@@ -101,8 +129,9 @@
         },
         "derivedStats": {
             "rec": {
-                "value": 0,
-                "max": 0
+                "value": 9,
+                "max": 9,
+                "unmodifiedMax": 9
             },
             "stun": {
                 "value": 0
@@ -115,8 +144,9 @@
                 "max": 0
             },
             "sta": {
-                "value": 0,
-                "max": 0
+                "value": 40,
+                "max": 40,
+                "unmodifiedMax": 40
             },
             "focus": {
                 "value": 0,
@@ -138,42 +168,85 @@
     },
     "items": [
         {
+            "_id": "26a05ebe331938",
             "name": "Frusta di Capelli",
             "type": "weapon",
-            "img": "icons/svg/sword.svg",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
+                "description": "Bilanciata",
                 "damage": "3d6+2",
                 "accuracy": 0,
-                "effects": "Bilanciata, Portata (20m)",
-                "isStored": false,
-                "reliable": 0,
+                "effects": "Bilanciata",
                 "rateOfFire": 1
             }
         },
         {
-            "name": "[Capacità] Salute Proporzionale",
+            "_id": "c86ea240a3324",
+            "name": "[Capacità] Salute Proporzionale (15 PS per ogni ciocca)",
             "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>La creatura è composta da otto enormi ciocche di capelli. Ognuna ha 15 PS, Pr 12 ed è considerata una creatura a sé stante ai fini della difesa. Una volta che tutte le ciocche sono state tagliate, la creatura è ridotta a 1 PS e non può più attaccare.</p>",
+                "description": "",
                 "isStored": false
             }
         },
         {
-            "name": "[Capacità] Scambio",
+            "_id": "b81d20ada75608",
+            "name": "[Capacità] Parassita",
             "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Una volta per Round, la creatura può tentare di sostituire il corpo di Francine Marchand (10 PS) alla ciocca bersaglio per difendersi (Prova di Rissa vs Attacco).</p>",
+                "description": "",
                 "isStored": false
             }
         },
         {
-            "name": "[Capacità] Sensibile alla Vibrazioni",
+            "_id": "4e77527c09d108",
+            "name": "[Capacità] Attacchi Proporzionali",
             "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>La creatura vede grazie alle vibrazioni del terreno. Non può venire accecata se il bersaglio tocca terra, ma è considerata accecata contro creature in volo o che non toccano il suolo.</p>",
+                "description": "",
+                "isStored": false
+            }
+        },
+        {
+            "_id": "0c9b1df5e228",
+            "name": "[Capacità] Immunità alle Ferite Critiche",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "",
+                "isStored": false
+            }
+        },
+        {
+            "_id": "3e864ef8d44008",
+            "name": "[Capacità] Spinta dall'Ira",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "",
+                "isStored": false
+            }
+        },
+        {
+            "_id": "5eab34d96cfda8",
+            "name": "[Capacità] Sensibile alle Vibrazioni",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "",
+                "isStored": false
+            }
+        },
+        {
+            "_id": "43b43a4732e0c8",
+            "name": "[Capacità] Vulnerabilità all'Acciaio",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "",
                 "isStored": false
             }
         }

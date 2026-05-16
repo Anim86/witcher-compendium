@@ -66,6 +66,10 @@
                 "brawling": {
                     "value": 8,
                     "isVisible": true
+                },
+                "melee": {
+                    "value": 4,
+                    "isVisible": true
                 }
             },
             "dex": {
@@ -75,6 +79,10 @@
                 },
                 "stealth": {
                     "value": 0,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 4,
                     "isVisible": true
                 }
             },
@@ -178,67 +186,6 @@
     },
     "items": [
         {
-            "_id": "92a68e2457b84847",
-            "name": "Artigli",
-            "type": "weapon",
-            "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
-            "system": {
-                "description": "Bilanciato, Sanguinamento (100%)",
-                "damage": "N/A",
-                "accuracy": 0,
-                "effects": "Bilanciato, Sanguinamento (100%)",
-                "isStored": false,
-                "reliable": 0,
-                "rateOfFire": 1
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "fb690e4cf5cb42dd",
-            "name": "[Capacità] Possessione",
-            "type": "ability",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-            "system": {
-                "description": "<p>Può possedere mortali senza il Manto di Capra, aumentando le loro statistiche e obbligandoli all'omicidio per conto del demone.</p>",
-                "isStored": false
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "d5dbb8ceb83a4d1b",
-            "name": "[Capacità] Sangue Bollente",
-            "type": "ability",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-            "system": {
-                "description": "<p>In stato di furia berserk la creatura o l'ospite rimuove punti di armatura a ogni colpo andato a segno.</p>",
-                "isStored": false
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "f9c36fa79f914b67",
-            "name": "[Capacità] Vista Notturna Superiore",
-            "type": "ability",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-            "system": {
-                "description": "<p>Ignora completamente il buio.</p>",
-                "isStored": false
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
             "_id": "0a667f4004a04195",
             "name": "Corna di Bes (x1d6/3)",
             "type": "valuable",
@@ -326,6 +273,45 @@
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
                 "coreVersion": 14
+            }
+        },
+        {
+            "_id": "40ba39f517c438",
+            "name": "Artigli",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Nessuno",
+                "damage": "6d6+2",
+                "accuracy": 0,
+                "effects": "Nessuno",
+                "rateOfFire": 2
+            }
+        },
+        {
+            "_id": "99341c77b85fd",
+            "name": "Corna",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "-1 Danno Armatura (Ablativo)",
+                "damage": "8d6",
+                "accuracy": 0,
+                "effects": "-1 Danno Armatura (Ablativo)",
+                "rateOfFire": 1
+            }
+        },
+        {
+            "_id": "2d941fe834ad1",
+            "name": "Morso",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Sanguinamento (50%)",
+                "damage": "7d6",
+                "accuracy": 0,
+                "effects": "Sanguinamento (50%)",
+                "rateOfFire": 1
             }
         }
     ],

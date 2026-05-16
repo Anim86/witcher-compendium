@@ -58,7 +58,12 @@
         "skills": {
             "int": {},
             "ref": {},
-            "dex": {},
+            "dex": {
+                "brawling": {
+                    "value": 6,
+                    "isVisible": true
+                }
+            },
             "body": {},
             "emp": {},
             "cra": {},
@@ -141,53 +146,6 @@
     },
     "items": [
         {
-            "_id": "b2124a06653248ab",
-            "name": "Morso e Artigli",
-            "type": "weapon",
-            "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
-            "system": {
-                "description": "Sanguinamento",
-                "damage": "N/A",
-                "accuracy": 0,
-                "effects": "Sanguinamento",
-                "isStored": false,
-                "reliable": 0,
-                "rateOfFire": 1
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "b14cd760b460408e",
-            "name": "[Capacità] Urlo",
-            "type": "ability",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-            "system": {
-                "description": "<p>Usa il turno per lanciare un grido che costringe tutti entro 10m a TS Grinta -1.</p>",
-                "isStored": false
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "9f5d1bf5d54544af",
-            "name": "[Capacità] Volo",
-            "type": "ability",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-            "system": {
-                "description": "<p>Vola come Azione di Movimento. Se subisce più di 10 danni cade.</p>",
-                "isStored": false
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
             "_id": "adbd9e7354f841f5",
             "name": "Piume di Grifone (x1d10)",
             "type": "valuable",
@@ -215,6 +173,32 @@
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
                 "coreVersion": 14
+            }
+        },
+        {
+            "_id": "29a3cea2b4ab58",
+            "name": "Artigli",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Nessuno",
+                "damage": "6d6",
+                "accuracy": 0,
+                "effects": "Nessuno",
+                "rateOfFire": 2
+            }
+        },
+        {
+            "_id": "e444c40d7a72d",
+            "name": "Morso",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Sanguinamento (50%)",
+                "damage": "7d6+2",
+                "accuracy": 0,
+                "effects": "Sanguinamento (50%)",
+                "rateOfFire": 1
             }
         }
     ],

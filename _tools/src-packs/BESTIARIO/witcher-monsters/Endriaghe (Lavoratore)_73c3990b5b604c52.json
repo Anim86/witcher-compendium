@@ -1,6 +1,6 @@
 {
     "_id": "73c3990b5b604c52",
-    "name": "Endriaghe",
+    "name": "Endriaghe (Lavoratore)",
     "type": "monster",
     "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/endriaghe.webp",
     "system": {
@@ -101,6 +101,10 @@
                 "stealth": {
                     "value": 0,
                     "isVisible": true
+                },
+                "brawling": {
+                    "value": 6,
+                    "isVisible": true
                 }
             },
             "will": {
@@ -200,77 +204,6 @@
     },
     "items": [
         {
-            "_id": "0df99d7e39b14d7a",
-            "name": "Chele",
-            "type": "weapon",
-            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
-            "system": {
-                "description": "Veleno (25% se Lavoratore)",
-                "damage": "N/A",
-                "accuracy": 0,
-                "effects": "Veleno (25% se Lavoratore)",
-                "isStored": false,
-                "reliable": 0,
-                "rateOfFire": 1
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "e1cacfc224bb402d",
-            "name": "Coda (Guerriero)",
-            "type": "weapon",
-            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
-            "system": {
-                "description": "Veleno (50%)",
-                "damage": "N/A",
-                "accuracy": 0,
-                "effects": "Veleno (50%)",
-                "isStored": false,
-                "reliable": 0,
-                "rateOfFire": 1
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "bb68014de2b64ec4",
-            "name": "Aculei (Drone)",
-            "type": "weapon",
-            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
-            "system": {
-                "description": "Veleno",
-                "damage": "N/A",
-                "accuracy": 0,
-                "effects": "Veleno",
-                "isStored": false,
-                "reliable": 0,
-                "rateOfFire": 1
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "aae0d33ff7d64998",
-            "name": "[Capacità] Avventarsi",
-            "type": "ability",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-            "system": {
-                "description": "<p>Può balzare addosso alla preda saltando fino a 4m senza rincorsa.</p>",
-                "isStored": false
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
             "_id": "59d1080191814de6",
             "name": "Estratto di Veleno (x1d6/2)",
             "type": "valuable",
@@ -313,6 +246,19 @@
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
                 "coreVersion": 14
+            }
+        },
+        {
+            "_id": "7ffd1fa6c4889",
+            "name": "Chele",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Veleno (25%)",
+                "damage": "3d6",
+                "accuracy": 0,
+                "effects": "Veleno (25%)",
+                "rateOfFire": 1
             }
         }
     ],

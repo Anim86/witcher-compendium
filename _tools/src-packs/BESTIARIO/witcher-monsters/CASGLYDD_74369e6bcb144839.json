@@ -72,6 +72,10 @@
                 "stealth": {
                     "value": 10,
                     "isVisible": true
+                },
+                "brawling": {
+                    "value": 10,
+                    "isVisible": true
                 }
             },
             "body": {},
@@ -165,67 +169,6 @@
     },
     "items": [
         {
-            "_id": "1434bed6cafe4faa",
-            "name": "Artigli",
-            "type": "weapon",
-            "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
-            "system": {
-                "description": "Portata, Trascinare nell'Ombra",
-                "damage": "N/A",
-                "accuracy": 0,
-                "effects": "Portata, Trascinare nell'Ombra",
-                "isStored": false,
-                "reliable": 0,
-                "rateOfFire": 1
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "275d4b8e77bf4c6e",
-            "name": "[Capacità] Pozzo di Conoscenza",
-            "type": "ability",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-            "system": {
-                "description": "<p>Ha Base 20 in tutte le prove per apprendere, ricordare o insegnare informazioni.</p>",
-                "isStored": false
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "35bd722f97b14cab",
-            "name": "[Capacità] Movimento nell'Ombra",
-            "type": "ability",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-            "system": {
-                "description": "<p>Può teletrasportarsi da una zona d'oscurità all'altra entro 20m.</p>",
-                "isStored": false
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "d7fc58f739af4625",
-            "name": "[Capacità] Trascinare nell'Ombra",
-            "type": "ability",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-            "system": {
-                "description": "<p>Trasferisce il bersaglio in un reame oscuro tramite un portale sul petto per nutrirsi dei suoi ricordi e intelletto.</p>",
-                "isStored": false
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
             "_id": "0d60b41ddcfa40a7",
             "name": "Essenza di Wraith (x1d6)",
             "type": "valuable",
@@ -268,6 +211,19 @@
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
                 "coreVersion": 14
+            }
+        },
+        {
+            "_id": "01a29d9aa05038",
+            "name": "Artigli",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Sanguinamento (25%)",
+                "damage": "4d6",
+                "accuracy": 0,
+                "effects": "Sanguinamento (25%)",
+                "rateOfFire": 2
             }
         }
     ],

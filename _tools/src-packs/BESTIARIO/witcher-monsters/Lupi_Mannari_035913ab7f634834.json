@@ -85,7 +85,12 @@
             },
             "int": {},
             "ref": {},
-            "dex": {},
+            "dex": {
+                "brawling": {
+                    "value": 8,
+                    "isVisible": true
+                }
+            },
             "body": {},
             "emp": {},
             "cra": {},
@@ -159,55 +164,29 @@
     },
     "items": [
         {
-            "_id": "0dcdc4b3c3494bf4",
+            "_id": "7082d1b251c2",
             "name": "Artigli",
             "type": "weapon",
-            "img": "modules/witcher-compendium/assets/SPECIAL/trait_artigli.webp",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
-                "description": "",
-                "damage": "4d6+2",
-                "accuracy": 0,
-                "effects": "Sanguinamento (25%)",
-                "isStored": false,
-                "reliable": 0,
-                "rateOfFire": 1
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "6b6eecc2d7be407c",
-            "name": "Morso",
-            "type": "weapon",
-            "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
-            "system": {
-                "description": "",
+                "description": "Sanguinamento (25%)",
                 "damage": "5d6",
                 "accuracy": 0,
-                "effects": "Sanguinamento (75%)",
-                "isStored": false,
-                "reliable": 0,
-                "rateOfFire": 1
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
+                "effects": "Sanguinamento (25%)",
+                "rateOfFire": 2
             }
         },
         {
-            "_id": "f14e599975544884",
-            "name": "[Capacità] Rigenerazione",
-            "type": "ability",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "_id": "31673a929f5de",
+            "name": "Morso",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
-                "description": "<p>Un lupo mannaro rigenera 5 PS per round.</p>",
-                "isStored": false
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
+                "description": "Sanguinamento (50%)",
+                "damage": "6d6",
+                "accuracy": 0,
+                "effects": "Sanguinamento (50%)",
+                "rateOfFire": 1
             }
         }
     ],

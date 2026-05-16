@@ -5,44 +5,44 @@
     "system": {
         "stats": {
             "int": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
             },
             "ref": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
             },
             "dex": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
             },
             "body": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 12,
+                "max": 12,
+                "unmodifiedMax": 12
             },
             "spd": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
             },
             "emp": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
             },
             "cra": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
             },
             "will": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
             },
             "luck": {
                 "value": 0,
@@ -101,8 +101,26 @@
                 "value": 0
             },
             "int": {},
-            "ref": {},
-            "dex": {},
+            "ref": {
+                "dodge": {
+                    "value": 9,
+                    "isVisible": true
+                },
+                "melee": {
+                    "value": 8,
+                    "isVisible": true
+                }
+            },
+            "dex": {
+                "athletics": {
+                    "value": 8,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 8,
+                    "isVisible": true
+                }
+            },
             "body": {},
             "emp": {},
             "cra": {},
@@ -137,9 +155,9 @@
                 "max": 0
             },
             "hp": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 60,
+                "max": 60,
+                "unmodifiedMax": 60
             },
             "sta": {
                 "value": 0,
@@ -162,9 +180,59 @@
         "environment": "",
         "organization": "",
         "intelligence": "",
-        "vulnerability": ""
+        "vulnerability": "",
+        "armorHead": 10,
+        "armorUpper": 10,
+        "armorLower": 10
     },
-    "items": [],
+    "items": [
+        {
+            "_id": "d8aa98c8672b18",
+            "name": "Pugno",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "",
+                "damage": "4d6",
+                "accuracy": 0,
+                "effects": "",
+                "rateOfFire": 2
+            }
+        },
+        {
+            "_id": "110e42d80c6ca",
+            "name": "Lancio Masso",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "",
+                "damage": "6d6",
+                "accuracy": 0,
+                "effects": "",
+                "rateOfFire": 1
+            }
+        },
+        {
+            "_id": "a7dfe4dcf6b43",
+            "name": "[Capacità] Pelle di Roccia",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "",
+                "isStored": false
+            }
+        },
+        {
+            "_id": "c3003ceba38358",
+            "name": "[Capacità] Letargo",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "",
+                "isStored": false
+            }
+        }
+    ],
     "_id": "52f91a6ec3074bd8",
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",

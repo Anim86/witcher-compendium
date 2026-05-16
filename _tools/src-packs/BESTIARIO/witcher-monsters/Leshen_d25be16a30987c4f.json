@@ -96,7 +96,12 @@
             },
             "int": {},
             "ref": {},
-            "dex": {},
+            "dex": {
+                "brawling": {
+                    "value": 7,
+                    "isVisible": true
+                }
+            },
             "body": {},
             "emp": {},
             "cra": {},
@@ -158,7 +163,21 @@
         "intelligence": "",
         "vulnerability": ""
     },
-    "items": [],
+    "items": [
+        {
+            "_id": "08aa79d8b81ac8",
+            "name": "Artigli",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Nessuno",
+                "damage": "4d6",
+                "accuracy": 0,
+                "effects": "Nessuno",
+                "rateOfFire": 2
+            }
+        }
+    ],
     "_id": "d25be16a30987c4f",
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",

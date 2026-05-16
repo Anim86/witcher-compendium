@@ -5,44 +5,44 @@
     "system": {
         "stats": {
             "int": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 2,
+                "max": 2,
+                "unmodifiedMax": 2
             },
             "ref": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
             },
             "dex": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
             },
             "body": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 12,
+                "max": 12,
+                "unmodifiedMax": 12
             },
             "spd": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
             },
             "emp": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
             },
             "cra": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
             },
             "will": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
             },
             "luck": {
                 "value": 0,
@@ -89,8 +89,26 @@
                 "value": 0
             },
             "int": {},
-            "ref": {},
-            "dex": {},
+            "ref": {
+                "dodge": {
+                    "value": 4,
+                    "isVisible": true
+                },
+                "melee": {
+                    "value": 7,
+                    "isVisible": true
+                }
+            },
+            "dex": {
+                "athletics": {
+                    "value": 4,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 9,
+                    "isVisible": true
+                }
+            },
             "body": {},
             "emp": {},
             "cra": {},
@@ -125,9 +143,9 @@
                 "max": 0
             },
             "hp": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 60,
+                "max": 60,
+                "unmodifiedMax": 60
             },
             "sta": {
                 "value": 0,
@@ -150,9 +168,69 @@
         "environment": "",
         "organization": "",
         "intelligence": "",
-        "vulnerability": ""
+        "vulnerability": "",
+        "armorHead": 10,
+        "armorUpper": 10,
+        "armorLower": 10
     },
-    "items": [],
+    "items": [
+        {
+            "_id": "483cec59c60c6",
+            "name": "Artigli",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "",
+                "damage": "3d6+3",
+                "accuracy": 0,
+                "effects": "",
+                "rateOfFire": 2
+            }
+        },
+        {
+            "_id": "da4e80a2e42b38",
+            "name": "Incornata",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "",
+                "damage": "5d6",
+                "accuracy": 0,
+                "effects": "",
+                "rateOfFire": 1
+            }
+        },
+        {
+            "_id": "20d35b6542fd2",
+            "name": "[Capacità] Vomito Acido",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "",
+                "isStored": false
+            }
+        },
+        {
+            "_id": "a2d3c6b09cc06",
+            "name": "[Capacità] Carica",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "",
+                "isStored": false
+            }
+        },
+        {
+            "_id": "670305ca07b268",
+            "name": "[Capacità] Rigenerazione",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "",
+                "isStored": false
+            }
+        }
+    ],
     "_id": "a26b1940ed7c3f85",
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",

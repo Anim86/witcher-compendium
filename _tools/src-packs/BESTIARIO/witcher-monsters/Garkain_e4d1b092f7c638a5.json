@@ -87,7 +87,12 @@
             },
             "int": {},
             "ref": {},
-            "dex": {},
+            "dex": {
+                "brawling": {
+                    "value": 8,
+                    "isVisible": true
+                }
+            },
             "body": {},
             "emp": {},
             "cra": {},
@@ -149,7 +154,34 @@
         "intelligence": "",
         "vulnerability": ""
     },
-    "items": [],
+    "items": [
+        {
+            "_id": "2319f449fc3d58",
+            "name": "Morso",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Sanguinamento (75%)",
+                "damage": "5d6",
+                "accuracy": 0,
+                "effects": "Sanguinamento (75%)",
+                "rateOfFire": 1
+            }
+        },
+        {
+            "_id": "34784cb6f8fce8",
+            "name": "Artigli",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Sanguinamento (25%)",
+                "damage": "4d6+4",
+                "accuracy": 0,
+                "effects": "Sanguinamento (25%)",
+                "rateOfFire": 2
+            }
+        }
+    ],
     "_id": "e4d1b092f7c638a5",
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",

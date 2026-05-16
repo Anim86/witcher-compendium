@@ -5,44 +5,44 @@
     "system": {
         "stats": {
             "int": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
             },
             "ref": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
             },
             "dex": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
             },
             "body": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
             },
             "spd": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
             },
             "emp": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
             },
             "cra": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
             },
             "will": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
             },
             "luck": {
                 "value": 0,
@@ -104,8 +104,26 @@
                 "value": 0
             },
             "int": {},
-            "ref": {},
-            "dex": {},
+            "ref": {
+                "dodge": {
+                    "value": 6,
+                    "isVisible": true
+                },
+                "melee": {
+                    "value": 8,
+                    "isVisible": true
+                }
+            },
+            "dex": {
+                "athletics": {
+                    "value": 7,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 9,
+                    "isVisible": true
+                }
+            },
             "body": {},
             "emp": {},
             "cra": {},
@@ -140,9 +158,9 @@
                 "max": 0
             },
             "hp": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 25,
+                "max": 25,
+                "unmodifiedMax": 25
             },
             "sta": {
                 "value": 0,
@@ -165,9 +183,82 @@
         "environment": "",
         "organization": "",
         "intelligence": "",
-        "vulnerability": ""
+        "vulnerability": "",
+        "armorHead": 0,
+        "armorUpper": 0,
+        "armorLower": 0
     },
-    "items": [],
+    "items": [
+        {
+            "_id": "70d9017a7cda38",
+            "name": "Testata",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Forza Schiacciante, Stordimento (-2)",
+                "damage": "5d6",
+                "accuracy": 0,
+                "effects": "Forza Schiacciante, Stordimento (-2)",
+                "rateOfFire": 1
+            }
+        },
+        {
+            "_id": "95ba32024f7a48",
+            "name": "Calcio",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Atterramento (50%), Forza Schiacciante",
+                "damage": "4d6+4",
+                "accuracy": 0,
+                "effects": "Atterramento (50%), Forza Schiacciante",
+                "rateOfFire": 1
+            }
+        },
+        {
+            "_id": "b0d4acab6fda88",
+            "name": "Pugno",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Forza Schiacciante",
+                "damage": "3d6+3",
+                "accuracy": 0,
+                "effects": "Forza Schiacciante",
+                "rateOfFire": 2
+            }
+        },
+        {
+            "_id": "8c96c553f092c",
+            "name": "[Capacità] Sguardo Ammaliante",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "",
+                "isStored": false
+            }
+        },
+        {
+            "_id": "d705f5d68f0458",
+            "name": "[Capacità] Telepatia",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "",
+                "isStored": false
+            }
+        },
+        {
+            "_id": "3abfb6c259577",
+            "name": "[Capacità] Magia (Segno Axii)",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "",
+                "isStored": false
+            }
+        }
+    ],
     "_id": "7ed094f23185bc6a",
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",

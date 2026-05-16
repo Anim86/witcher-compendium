@@ -93,8 +93,18 @@
                 }
             },
             "int": {},
-            "ref": {},
-            "dex": {},
+            "ref": {
+                "melee": {
+                    "value": 6,
+                    "isVisible": true
+                }
+            },
+            "dex": {
+                "brawling": {
+                    "value": 6,
+                    "isVisible": true
+                }
+            },
             "body": {},
             "emp": {},
             "cra": {}
@@ -167,67 +177,6 @@
     },
     "items": [
         {
-            "_id": "494444e75ec44bfd",
-            "name": "Attacchi Naturali",
-            "type": "weapon",
-            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
-            "system": {
-                "description": "N/A",
-                "damage": "N/A",
-                "accuracy": 0,
-                "effects": "N/A",
-                "isStored": false,
-                "reliable": 0,
-                "rateOfFire": 1
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "94aed23c4bec494a",
-            "name": "[Capacità] Illusione",
-            "type": "ability",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-            "system": {
-                "description": "<p>Crea un'illusione per sembrare una bella donna, che si dissipa con un tiro Lanciare Incantesimi CD 15.</p>",
-                "isStored": false
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "6557f32c90ce4fc1",
-            "name": "[Capacità] Urlo",
-            "type": "ability",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-            "system": {
-                "description": "<p>Costringe chi si trova entro 10m a un TS Grinta -1.</p>",
-                "isStored": false
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "2e72292567354555",
-            "name": "[Capacità] Volo",
-            "type": "ability",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-            "system": {
-                "description": "<p>Se subisce 5+ danni mentre vola, precipita.</p>",
-                "isStored": false
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
             "_id": "f3e09e980277440d",
             "name": "Essenza Acquatica (x1d6)",
             "type": "valuable",
@@ -255,6 +204,32 @@
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
                 "coreVersion": 14
+            }
+        },
+        {
+            "_id": "25c663a1e60d6",
+            "name": "Artigli",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "-1 Danno Armatura (Ablativo)",
+                "damage": "2d6+2",
+                "accuracy": 0,
+                "effects": "-1 Danno Armatura (Ablativo)",
+                "rateOfFire": 1
+            }
+        },
+        {
+            "_id": "253fee35ce022",
+            "name": "Coda",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Nessuno",
+                "damage": "3d6+2",
+                "accuracy": 0,
+                "effects": "Nessuno",
+                "rateOfFire": 1
             }
         }
     ],

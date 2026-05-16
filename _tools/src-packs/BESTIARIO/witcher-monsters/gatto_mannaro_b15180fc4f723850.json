@@ -69,6 +69,10 @@
                 "athletics": {
                     "value": 10,
                     "isVisible": true
+                },
+                "brawling": {
+                    "value": 8,
+                    "isVisible": true
                 }
             },
             "body": {},
@@ -156,100 +160,6 @@
     },
     "items": [
         {
-            "_id": "5389f0d0400244b7",
-            "name": "Morso",
-            "type": "weapon",
-            "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
-            "system": {
-                "description": "Bilanciato, Sang. (25%)",
-                "damage": "N/A",
-                "accuracy": 0,
-                "effects": "Bilanciato, Sang. (25%)",
-                "isStored": false,
-                "reliable": 0,
-                "rateOfFire": 1
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "bbe30f231763463a",
-            "name": "Artigli",
-            "type": "weapon",
-            "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
-            "system": {
-                "description": "Bilanciato",
-                "damage": "N/A",
-                "accuracy": 0,
-                "effects": "Bilanciato",
-                "isStored": false,
-                "reliable": 0,
-                "rateOfFire": 1
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "116b3301de184abc",
-            "name": "[Capacità] Rigenerazione",
-            "type": "ability",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-            "system": {
-                "description": "<p>Guarisce di 3 PS per Round.</p>",
-                "isStored": false
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "564f8fa302ee49a2",
-            "name": "[Capacità] Scatto",
-            "type": "ability",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-            "system": {
-                "description": "<p>Può balzare fino a 6m senza rincorsa.</p>",
-                "isStored": false
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "83b058f860c944ac",
-            "name": "[Capacità] Senso Magico",
-            "type": "ability",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-            "system": {
-                "description": "<p>Molto sensibile alla magia entro 20m.</p>",
-                "isStored": false
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "180bd5b5010c4995",
-            "name": "[Capacità] Alleati Felini",
-            "type": "ability",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-            "system": {
-                "description": "<p>Comunica e si allea con grandi felini naturali.</p>",
-                "isStored": false
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
             "_id": "e72d7cdf02c74482",
             "name": "Denti di Gatto Mannaro (x1d6/2)",
             "type": "valuable",
@@ -292,6 +202,32 @@
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
                 "coreVersion": 14
+            }
+        },
+        {
+            "_id": "495ccabc7af3f8",
+            "name": "Morso",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Sanguinamento (50%)",
+                "damage": "4d6",
+                "accuracy": 0,
+                "effects": "Sanguinamento (50%)",
+                "rateOfFire": 1
+            }
+        },
+        {
+            "_id": "063ac4f63cf8f8",
+            "name": "Artigli",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Sanguinamento (25%)",
+                "damage": "3d6",
+                "accuracy": 0,
+                "effects": "Sanguinamento (25%)",
+                "rateOfFire": 2
             }
         }
     ]

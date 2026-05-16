@@ -87,8 +87,18 @@
                 "value": 10
             },
             "int": {},
-            "ref": {},
-            "dex": {},
+            "ref": {
+                "melee": {
+                    "value": 7,
+                    "isVisible": true
+                }
+            },
+            "dex": {
+                "brawling": {
+                    "value": 5,
+                    "isVisible": true
+                }
+            },
             "body": {},
             "emp": {},
             "cra": {},
@@ -176,28 +186,28 @@
     },
     "items": [
         {
+            "_id": "b37510c4fb0578",
             "name": "Artigli",
             "type": "weapon",
-            "img": "icons/svg/sword.svg",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
+                "description": "Sanguinamento (100%)",
                 "damage": "1d6",
-                "accuracy": 10,
+                "accuracy": 0,
                 "effects": "Sanguinamento (100%)",
-                "isStored": false,
-                "reliable": 0,
-                "rateOfFire": 1
+                "rateOfFire": 2
             }
         },
         {
+            "_id": "dc61da031ba4e",
             "name": "Coda",
             "type": "weapon",
-            "img": "icons/svg/sword.svg",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
+                "description": "Nessuno",
                 "damage": "2d6",
-                "accuracy": 10,
-                "effects": "N/A",
-                "isStored": false,
-                "reliable": 0,
+                "accuracy": 0,
+                "effects": "Nessuno",
                 "rateOfFire": 1
             }
         }

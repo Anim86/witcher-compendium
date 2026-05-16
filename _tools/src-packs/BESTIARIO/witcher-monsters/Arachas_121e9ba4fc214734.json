@@ -67,6 +67,10 @@
                 "athletics": {
                     "value": 6,
                     "isVisible": true
+                },
+                "brawling": {
+                    "value": 9,
+                    "isVisible": true
                 }
             },
             "body": {},
@@ -151,39 +155,6 @@
     },
     "items": [
         {
-            "_id": "e773f1be249e47cc",
-            "name": "Chele/Pungiglione",
-            "type": "weapon",
-            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
-            "system": {
-                "description": "Avvelenamento",
-                "damage": "N/A",
-                "accuracy": 0,
-                "effects": "Avvelenamento",
-                "isStored": false,
-                "reliable": 0,
-                "rateOfFire": 1
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "4c9a051c5bfd4438",
-            "name": "[Capacità] Mimetismo",
-            "type": "ability",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-            "system": {
-                "description": "<p>Se resta immobile non viene percepita grazie alla debole vista predatoria e all'aspetto che replica l'ambiente.</p>",
-                "isStored": false
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
             "_id": "f8b8535575a54278",
             "name": "Veleno di Arachas (x1)",
             "type": "valuable",
@@ -226,6 +197,19 @@
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
                 "coreVersion": 14
+            }
+        },
+        {
+            "_id": "9655a85124a29",
+            "name": "Chele",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Veleno (25%)",
+                "damage": "5d6",
+                "accuracy": 0,
+                "effects": "Veleno (25%)",
+                "rateOfFire": 2
             }
         }
     ],

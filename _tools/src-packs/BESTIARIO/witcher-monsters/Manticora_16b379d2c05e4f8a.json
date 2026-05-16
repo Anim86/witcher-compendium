@@ -86,8 +86,18 @@
                 "value": 0
             },
             "int": {},
-            "ref": {},
-            "dex": {},
+            "ref": {
+                "melee": {
+                    "value": 6,
+                    "isVisible": true
+                }
+            },
+            "dex": {
+                "brawling": {
+                    "value": 8,
+                    "isVisible": true
+                }
+            },
             "body": {},
             "emp": {},
             "cra": {},
@@ -149,7 +159,47 @@
         "intelligence": "",
         "vulnerability": ""
     },
-    "items": [],
+    "items": [
+        {
+            "_id": "97dc1f2f6762c8",
+            "name": "Artigli",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Nessuno",
+                "damage": "4d6",
+                "accuracy": 0,
+                "effects": "Nessuno",
+                "rateOfFire": 2
+            }
+        },
+        {
+            "_id": "1c6d5575731be8",
+            "name": "Morso",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Nessuno",
+                "damage": "5d6",
+                "accuracy": 0,
+                "effects": "Nessuno",
+                "rateOfFire": 1
+            }
+        },
+        {
+            "_id": "e6ceb8daff6eb8",
+            "name": "Coda",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Veleno Bohun Upas (CD 15)",
+                "damage": "3d6",
+                "accuracy": 0,
+                "effects": "Veleno Bohun Upas (CD 15)",
+                "rateOfFire": 1
+            }
+        }
+    ],
     "_id": "16b379d2c05e4f8a",
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",

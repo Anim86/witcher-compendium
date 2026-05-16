@@ -88,6 +88,10 @@
                 "stealth": {
                     "value": 4,
                     "isVisible": true
+                },
+                "brawling": {
+                    "value": 8,
+                    "isVisible": true
                 }
             },
             "body": {
@@ -190,86 +194,6 @@
     },
     "items": [
         {
-            "_id": "644c84183aa2401d",
-            "name": "Lanterna Wraith",
-            "type": "weapon",
-            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
-            "system": {
-                "description": "Fuoco (25%)",
-                "damage": "N/A",
-                "accuracy": 0,
-                "effects": "Fuoco (25%)",
-                "isStored": false,
-                "reliable": 0,
-                "rateOfFire": 1
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "744dfd29311347ab",
-            "name": "Spada Wraith",
-            "type": "weapon",
-            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
-            "system": {
-                "description": "N/A",
-                "damage": "N/A",
-                "accuracy": 0,
-                "effects": "N/A",
-                "isStored": false,
-                "reliable": 0,
-                "rateOfFire": 1
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "78ebb376acbf4ba1",
-            "name": "[Capacità] Alimentato dalla Rabbia",
-            "type": "ability",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-            "system": {
-                "description": "<p>Intelligente ma accecato da furia incontrollabile. È impossibile ragionarci o intimidirlo.</p>",
-                "isStored": false
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "8d4983f878b44eb6",
-            "name": "[Capacità] Teletrasporto",
-            "type": "ability",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-            "system": {
-                "description": "<p>Può teletrasportarsi istantaneamente di 10m.</p>",
-                "isStored": false
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "dca2b72ef96c43bc",
-            "name": "[Capacità] Transizione",
-            "type": "ability",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-            "system": {
-                "description": "<p>Può usare Lanciare Incantesimi per difendersi e divenire incorporeo, negando l'attacco.</p>",
-                "isStored": false
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
             "_id": "40e05643f9c24297",
             "name": "Essenza di Wraith (x1d6/2)",
             "type": "valuable",
@@ -312,6 +236,19 @@
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
                 "coreVersion": 14
+            }
+        },
+        {
+            "_id": "6085668e3ca6f8",
+            "name": "Artigli",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Nessuno",
+                "damage": "5d6",
+                "accuracy": 0,
+                "effects": "Nessuno",
+                "rateOfFire": 2
             }
         }
     ],

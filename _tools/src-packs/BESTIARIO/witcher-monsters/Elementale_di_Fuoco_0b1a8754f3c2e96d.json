@@ -5,44 +5,44 @@
     "system": {
         "stats": {
             "int": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
             },
             "ref": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
             },
             "dex": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
             },
             "body": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 11,
+                "max": 11,
+                "unmodifiedMax": 11
             },
             "spd": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
             },
             "emp": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
             },
             "cra": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
             },
             "will": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 9,
+                "max": 9,
+                "unmodifiedMax": 9
             },
             "luck": {
                 "value": 0,
@@ -50,8 +50,9 @@
                 "unmodifiedMax": 0
             },
             "armor": {
-                "value": 0,
-                "max": 0
+                "value": 15,
+                "max": 15,
+                "unmodifiedMax": 15
             }
         },
         "skills": {
@@ -83,8 +84,22 @@
                 "value": 0
             },
             "int": {},
-            "ref": {},
-            "dex": {},
+            "ref": {
+                "dodge": {
+                    "value": 7,
+                    "isVisible": true
+                }
+            },
+            "dex": {
+                "athletics": {
+                    "value": 4,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 10,
+                    "isVisible": true
+                }
+            },
             "body": {},
             "emp": {},
             "cra": {},
@@ -97,7 +112,7 @@
             "monsterType": "Elementa",
             "difficulty": "MEDIUM",
             "height": "",
-            "weight": "",
+            "weight": "100 Kg",
             "environment": "",
             "organization": "",
             "vulnerability": "",
@@ -106,9 +121,9 @@
         },
         "derivedStats": {
             "rec": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
             },
             "stun": {
                 "value": 0,
@@ -119,14 +134,14 @@
                 "max": 0
             },
             "hp": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 100,
+                "max": 100,
+                "unmodifiedMax": 100
             },
             "sta": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 50,
+                "max": 50,
+                "unmodifiedMax": 50
             },
             "focus": {
                 "value": 0,
@@ -146,7 +161,71 @@
         "intelligence": "",
         "vulnerability": ""
     },
-    "items": [],
+    "items": [
+        {
+            "_id": "5c0613ed382498",
+            "name": "Pugno",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Forza Schiacciante, A Fuoco (50%)",
+                "damage": "5d6",
+                "accuracy": 0,
+                "effects": "Forza Schiacciante, A Fuoco (50%)",
+                "rateOfFire": 2
+            }
+        },
+        {
+            "_id": "87785c22c26d08",
+            "name": "[Capacità] Soffocare le Fiamme",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "",
+                "isStored": false
+            }
+        },
+        {
+            "_id": "7300d950fdf6",
+            "name": "[Capacità] Alimentato dal Fuoco",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "",
+                "isStored": false
+            }
+        },
+        {
+            "_id": "5a6efd5c2c0418",
+            "name": "[Capacità] Schianto Fiammeggiante",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "",
+                "isStored": false
+            }
+        },
+        {
+            "_id": "87f4fd5d359be",
+            "name": "[Capacità] Aura di Fornace",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "",
+                "isStored": false
+            }
+        },
+        {
+            "_id": "3bbfc5cc4b564",
+            "name": "[Capacità] Anello di Fuoco",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "",
+                "isStored": false
+            }
+        }
+    ],
     "_id": "0b1a8754f3c2e96d",
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",

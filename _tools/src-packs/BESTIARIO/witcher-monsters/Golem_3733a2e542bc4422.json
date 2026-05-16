@@ -57,7 +57,12 @@
         },
         "skills": {
             "int": {},
-            "ref": {},
+            "ref": {
+                "melee": {
+                    "value": 4,
+                    "isVisible": true
+                }
+            },
             "dex": {},
             "body": {},
             "emp": {},
@@ -141,39 +146,6 @@
     },
     "items": [
         {
-            "_id": "c698931a142c48b4",
-            "name": "Pugni",
-            "type": "weapon",
-            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
-            "system": {
-                "description": "Danni massicci a scudi ed armi",
-                "damage": "N/A",
-                "accuracy": 0,
-                "effects": "Danni massicci a scudi ed armi",
-                "isStored": false,
-                "reliable": 0,
-                "rateOfFire": 1
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "83e622e8c7b248cd",
-            "name": "[Capacità] Carica",
-            "type": "ability",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-            "system": {
-                "description": "<p>Se un avversario si allontana di oltre 10m, può caricare infliggendo danni massicci (10d6) e scaraventando indietro la vittima di 8m.</p>",
-                "isStored": false
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
             "_id": "31b3439b86b443bb",
             "name": "Cuore di Golem (x1)",
             "type": "valuable",
@@ -201,6 +173,19 @@
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
                 "coreVersion": 14
+            }
+        },
+        {
+            "_id": "cb5a42b364998",
+            "name": "Pugni",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Forza Schiacciante, Danno Ablativo",
+                "damage": "8d6",
+                "accuracy": 0,
+                "effects": "Forza Schiacciante, Danno Ablativo",
+                "rateOfFire": 1
             }
         }
     ],

@@ -86,8 +86,18 @@
                 "value": 0
             },
             "int": {},
-            "ref": {},
-            "dex": {},
+            "ref": {
+                "melee": {
+                    "value": 8,
+                    "isVisible": true
+                }
+            },
+            "dex": {
+                "brawling": {
+                    "value": 10,
+                    "isVisible": true
+                }
+            },
             "body": {},
             "emp": {},
             "cra": {},
@@ -149,7 +159,47 @@
         "intelligence": "",
         "vulnerability": ""
     },
-    "items": [],
+    "items": [
+        {
+            "_id": "448fc857366a58",
+            "name": "Morso",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Trapassare",
+                "damage": "7d6+2",
+                "accuracy": 0,
+                "effects": "Trapassare",
+                "rateOfFire": 1
+            }
+        },
+        {
+            "_id": "ef2b8cef8ba5b8",
+            "name": "Artigli",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Sanguinamento (50%)",
+                "damage": "6d6+2",
+                "accuracy": 0,
+                "effects": "Sanguinamento (50%)",
+                "rateOfFire": 2
+            }
+        },
+        {
+            "_id": "1a1e936375046",
+            "name": "Spazzata Coda",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Forza Schiacciante, Portata, Sang (50%), Veleno (75%)",
+                "damage": "6d6",
+                "accuracy": 0,
+                "effects": "Forza Schiacciante, Portata, Sang (50%), Veleno (75%)",
+                "rateOfFire": 1
+            }
+        }
+    ],
     "_id": "31e65a29f7d048bc",
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",

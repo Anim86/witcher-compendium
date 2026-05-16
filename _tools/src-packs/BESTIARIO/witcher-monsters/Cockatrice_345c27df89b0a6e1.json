@@ -86,8 +86,18 @@
                 "value": 0
             },
             "int": {},
-            "ref": {},
-            "dex": {},
+            "ref": {
+                "melee": {
+                    "value": 9,
+                    "isVisible": true
+                }
+            },
+            "dex": {
+                "brawling": {
+                    "value": 8,
+                    "isVisible": true
+                }
+            },
             "body": {},
             "emp": {},
             "cra": {},
@@ -149,7 +159,60 @@
         "intelligence": "",
         "vulnerability": ""
     },
-    "items": [],
+    "items": [
+        {
+            "_id": "86b3276c19764",
+            "name": "Becco",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Avvelenato (50%)",
+                "damage": "5d6",
+                "accuracy": 0,
+                "effects": "Avvelenato (50%)",
+                "rateOfFire": 1
+            }
+        },
+        {
+            "_id": "3d6cd974fa405",
+            "name": "Artigli",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Sanguinamento (50%)",
+                "damage": "4d6+3",
+                "accuracy": 0,
+                "effects": "Sanguinamento (50%)",
+                "rateOfFire": 2
+            }
+        },
+        {
+            "_id": "5863ddc778fc78",
+            "name": "Spazzata Coda",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Portata, Sanguinamento (75%)",
+                "damage": "4d6+3",
+                "accuracy": 0,
+                "effects": "Portata, Sanguinamento (75%)",
+                "rateOfFire": 1
+            }
+        },
+        {
+            "_id": "e2525b0ebada58",
+            "name": "Colpo d'Ala",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Vacillante (25%)",
+                "damage": "2d6",
+                "accuracy": 0,
+                "effects": "Vacillante (25%)",
+                "rateOfFire": 1
+            }
+        }
+    ],
     "_id": "345c27df89b0a6e1",
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",

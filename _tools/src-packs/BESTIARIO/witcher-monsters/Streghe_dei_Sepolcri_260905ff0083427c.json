@@ -84,8 +84,18 @@
                 "value": 7
             },
             "int": {},
-            "ref": {},
-            "dex": {},
+            "ref": {
+                "melee": {
+                    "value": 7,
+                    "isVisible": true
+                }
+            },
+            "dex": {
+                "brawling": {
+                    "value": 8,
+                    "isVisible": true
+                }
+            },
             "body": {},
             "emp": {},
             "cra": {},
@@ -159,74 +169,42 @@
     },
     "items": [
         {
-            "_id": "01805f63a5b54775",
+            "_id": "f6ee0fec2f0418",
             "name": "Artigli",
             "type": "weapon",
-            "img": "modules/witcher-compendium/assets/SPECIAL/trait_artigli.webp",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
-                "description": "",
+                "description": "Sanguinamento (50%)",
                 "damage": "5d6",
                 "accuracy": 0,
                 "effects": "Sanguinamento (50%)",
-                "isStored": false,
-                "reliable": 0,
-                "rateOfFire": 1
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
+                "rateOfFire": 2
             }
         },
         {
-            "_id": "8d9a199d99d94db4",
+            "_id": "3766c9c96e8388",
             "name": "Morso",
             "type": "weapon",
-            "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
-                "description": "",
+                "description": "Veleno (75%)",
                 "damage": "6d6",
                 "accuracy": 0,
                 "effects": "Veleno (75%)",
-                "isStored": false,
-                "reliable": 0,
                 "rateOfFire": 1
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
             }
         },
         {
-            "_id": "59c1e8c46b4646cb",
+            "_id": "562c872f48438",
             "name": "Lingua",
             "type": "weapon",
-            "img": "icons/svg/sword.svg",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
-                "description": "",
+                "description": "Veleno (100%), Gittata 4m",
                 "damage": "3d6+2",
                 "accuracy": 0,
-                "effects": "Veleno (100%) Gittata: 4m",
-                "isStored": false,
-                "reliable": 0,
+                "effects": "Veleno (100%), Gittata 4m",
                 "rateOfFire": 1
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "g1",
-            "name": "[Capacità] Circolo di Teschi",
-            "type": "ability",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-            "system": {
-                "description": "<p>Finché rimane entro 100m da un circolo di teschi creato in 1 ora, ottiene +3 a tutte le azioni.</p>",
-                "isStored": false
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
             }
         }
     ],

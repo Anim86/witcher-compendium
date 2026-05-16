@@ -5,44 +5,44 @@
     "system": {
         "stats": {
             "int": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
             },
             "ref": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
             },
             "dex": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
             },
             "body": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 13,
+                "max": 13,
+                "unmodifiedMax": 13
             },
             "spd": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
             },
             "emp": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
             },
             "cra": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
             },
             "will": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 9,
+                "max": 9,
+                "unmodifiedMax": 9
             },
             "luck": {
                 "value": 0,
@@ -50,8 +50,9 @@
                 "unmodifiedMax": 0
             },
             "armor": {
-                "value": 0,
-                "max": 0
+                "value": 20,
+                "max": 20,
+                "unmodifiedMax": 20
             }
         },
         "skills": {
@@ -84,7 +85,12 @@
             },
             "int": {},
             "ref": {},
-            "dex": {},
+            "dex": {
+                "brawling": {
+                    "value": 10,
+                    "isVisible": true
+                }
+            },
             "body": {},
             "emp": {},
             "cra": {},
@@ -97,7 +103,7 @@
             "monsterType": "Elementa",
             "difficulty": "MEDIUM",
             "height": "",
-            "weight": "",
+            "weight": "130 Kg",
             "environment": "",
             "organization": "",
             "vulnerability": "",
@@ -106,9 +112,9 @@
         },
         "derivedStats": {
             "rec": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 11,
+                "max": 11,
+                "unmodifiedMax": 11
             },
             "stun": {
                 "value": 0,
@@ -119,14 +125,14 @@
                 "max": 0
             },
             "hp": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 110,
+                "max": 110,
+                "unmodifiedMax": 110
             },
             "sta": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 55,
+                "max": 55,
+                "unmodifiedMax": 55
             },
             "focus": {
                 "value": 0,
@@ -146,7 +152,51 @@
         "intelligence": "",
         "vulnerability": ""
     },
-    "items": [],
+    "items": [
+        {
+            "_id": "912d565acc61c",
+            "name": "Pugno",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Forza Schiacciante, Congelamento (50%)",
+                "damage": "8d6",
+                "accuracy": 0,
+                "effects": "Forza Schiacciante, Congelamento (50%)",
+                "rateOfFire": 1
+            }
+        },
+        {
+            "_id": "27b1091a479fc",
+            "name": "[Capacità] Schianto Ghiacciato",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "",
+                "isStored": false
+            }
+        },
+        {
+            "_id": "48be1bfc443ff",
+            "name": "[Capacità] Anello di Ghiaccio",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "",
+                "isStored": false
+            }
+        },
+        {
+            "_id": "13a36af9589f1",
+            "name": "[Capacità] Congelare Liquidi",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "",
+                "isStored": false
+            }
+        }
+    ],
     "_id": "b326af7c5e18490d",
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",

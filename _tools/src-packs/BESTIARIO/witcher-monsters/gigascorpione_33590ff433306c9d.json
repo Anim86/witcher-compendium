@@ -87,8 +87,18 @@
                 "value": 13
             },
             "int": {},
-            "ref": {},
-            "dex": {},
+            "ref": {
+                "melee": {
+                    "value": 11,
+                    "isVisible": true
+                }
+            },
+            "dex": {
+                "brawling": {
+                    "value": 13,
+                    "isVisible": true
+                }
+            },
             "body": {},
             "emp": {},
             "cra": {},
@@ -176,28 +186,28 @@
     },
     "items": [
         {
-            "name": "Artigli",
+            "_id": "214ba2dbb67d98",
+            "name": "Chele",
             "type": "weapon",
-            "img": "icons/svg/sword.svg",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
-                "damage": "2d6+4",
-                "accuracy": 13,
-                "effects": "N/A",
-                "isStored": false,
-                "reliable": 0,
-                "rateOfFire": 1
+                "description": "Nessuno",
+                "damage": "4d6+3",
+                "accuracy": 0,
+                "effects": "Nessuno",
+                "rateOfFire": 2
             }
         },
         {
-            "name": "Coda",
+            "_id": "b3a3e5f13ba45",
+            "name": "Pungiglione",
             "type": "weapon",
-            "img": "icons/svg/sword.svg",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
-                "damage": "2d6+4",
-                "accuracy": 13,
-                "effects": "Veleno (100%)",
-                "isStored": false,
-                "reliable": 0,
+                "description": "Portata, Sanguinamento (30%), Veleno (100%)",
+                "damage": "6d6+3",
+                "accuracy": 0,
+                "effects": "Portata, Sanguinamento (30%), Veleno (100%)",
                 "rateOfFire": 1
             }
         }

@@ -84,6 +84,10 @@
                 "stealth": {
                     "value": 1,
                     "isVisible": true
+                },
+                "brawling": {
+                    "value": 4,
+                    "isVisible": true
                 }
             },
             "body": {
@@ -190,39 +194,6 @@
     },
     "items": [
         {
-            "_id": "bde8d2f38fcb4947",
-            "name": "Artigli",
-            "type": "weapon",
-            "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
-            "system": {
-                "description": "N/A",
-                "damage": "N/A",
-                "accuracy": 0,
-                "effects": "N/A",
-                "isStored": false,
-                "reliable": 0,
-                "rateOfFire": 1
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "8bb85c8cac7240bc",
-            "name": "[Capacità] Comando del Branco",
-            "type": "ability",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-            "system": {
-                "description": "<p>I capi (più grossi, spesso dipinti) guidano i branchi in combattimento.</p>",
-                "isStored": false
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
             "_id": "8a30e19228ac4979",
             "name": "Artiglio di Nekker (x2)",
             "type": "valuable",
@@ -265,6 +236,19 @@
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
                 "coreVersion": 14
+            }
+        },
+        {
+            "_id": "6e99766f8cdd78",
+            "name": "Artigli",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Nessuno",
+                "damage": "2d6",
+                "accuracy": 0,
+                "effects": "Nessuno",
+                "rateOfFire": 1
             }
         }
     ],

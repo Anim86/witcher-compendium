@@ -87,7 +87,12 @@
             },
             "int": {},
             "ref": {},
-            "dex": {},
+            "dex": {
+                "brawling": {
+                    "value": 7,
+                    "isVisible": true
+                }
+            },
             "body": {},
             "emp": {},
             "cra": {},
@@ -149,7 +154,21 @@
         "intelligence": "",
         "vulnerability": ""
     },
-    "items": [],
+    "items": [
+        {
+            "_id": "ea0307e7aa7c",
+            "name": "Morso",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Portata",
+                "damage": "2d6+2",
+                "accuracy": 0,
+                "effects": "Portata",
+                "rateOfFire": 1
+            }
+        }
+    ],
     "_id": "b3f7102e8a56c9d4",
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",

@@ -66,6 +66,10 @@
                 "brawling": {
                     "value": 8,
                     "isVisible": true
+                },
+                "melee": {
+                    "value": 5,
+                    "isVisible": true
                 }
             },
             "dex": {
@@ -174,53 +178,6 @@
     },
     "items": [
         {
-            "_id": "9c758538b9124854",
-            "name": "Schianto",
-            "type": "weapon",
-            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
-            "system": {
-                "description": "N/A",
-                "damage": "N/A",
-                "accuracy": 0,
-                "effects": "N/A",
-                "isStored": false,
-                "reliable": 0,
-                "rateOfFire": 1
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "0780675db47e42da",
-            "name": "[Capacità] Aura Gelida",
-            "type": "ability",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-            "system": {
-                "description": "<p>Gelo innaturale: chi inizia il Turno in mischia ha il 50% di probabilità di restare Congelato.</p>",
-                "isStored": false
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
-            "_id": "1cbb6662c8474e3c",
-            "name": "[Capacità] Mutaforma",
-            "type": "ability",
-            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-            "system": {
-                "description": "<p>Imita alla perfezione ogni voce, e se ha più di 50 PS assume la forma di un umanoide che ha ucciso (ruba pelle).</p>",
-                "isStored": false
-            },
-            "_stats": {
-                "systemId": "TheWitcherItaNewSystem",
-                "coreVersion": 14
-            }
-        },
-        {
             "_id": "2c63a7fe0a0d4b7b",
             "name": "Teschio di Mari Lwyd (x1)",
             "type": "valuable",
@@ -263,6 +220,19 @@
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
                 "coreVersion": 14
+            }
+        },
+        {
+            "_id": "bf918c8a643898",
+            "name": "Schianto",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Forza Schiacciante",
+                "damage": "6d6",
+                "accuracy": 0,
+                "effects": "Forza Schiacciante",
+                "rateOfFire": 2
             }
         }
     ],

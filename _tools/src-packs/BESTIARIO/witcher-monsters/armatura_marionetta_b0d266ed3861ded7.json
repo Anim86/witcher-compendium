@@ -6,36 +6,44 @@
     "system": {
         "stats": {
             "int": {
-                "value": 0,
-                "max": 0
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
             },
             "ref": {
-                "value": 0,
-                "max": 0
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
             },
             "dex": {
-                "value": 0,
-                "max": 0
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
             },
             "body": {
-                "value": 0,
-                "max": 0
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
             },
             "spd": {
-                "value": 0,
-                "max": 0
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
             },
             "emp": {
-                "value": 0,
-                "max": 0
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
             },
             "cra": {
-                "value": 0,
-                "max": 0
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
             },
             "will": {
-                "value": 0,
-                "max": 0
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
             },
             "luck": {
                 "value": 0,
@@ -72,8 +80,26 @@
                 "value": 0
             },
             "int": {},
-            "ref": {},
-            "dex": {},
+            "ref": {
+                "dodge": {
+                    "value": 4,
+                    "isVisible": true
+                },
+                "melee": {
+                    "value": 7,
+                    "isVisible": true
+                }
+            },
+            "dex": {
+                "athletics": {
+                    "value": 4,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 8,
+                    "isVisible": true
+                }
+            },
             "body": {},
             "emp": {},
             "cra": {},
@@ -105,8 +131,9 @@
                 "value": 0
             },
             "hp": {
-                "value": 0,
-                "max": 0
+                "value": 50,
+                "max": 50,
+                "unmodifiedMax": 50
             },
             "sta": {
                 "value": 0,
@@ -128,37 +155,42 @@
         "environment": "",
         "organization": "",
         "intelligence": "",
-        "vulnerability": ""
+        "vulnerability": "",
+        "armorHead": 15,
+        "armorUpper": 15,
+        "armorLower": 15
     },
     "items": [
         {
+            "_id": "c6fa09b7ca1368",
             "name": "Gleddyf Decorativo",
             "type": "weapon",
-            "img": "icons/svg/sword.svg",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
-                "damage": "2d6+2",
+                "description": "Nessuno",
+                "damage": "4d6+2",
                 "accuracy": 0,
-                "effects": "",
-                "isStored": false,
-                "reliable": 0,
-                "rateOfFire": 1
+                "effects": "Nessuno",
+                "rateOfFire": 2
             }
         },
         {
+            "_id": "8a6b901e4bc2f",
             "name": "[Capacità] Costrutto",
             "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Un'Armatura Marionetta è immune a Sanguinamento, Veleno, Fuoco e agli incantesimi che colpiscono la mente o le emozioni. È impossibile ragionarci e non finiscono mai la RES.</p>",
+                "description": "",
                 "isStored": false
             }
         },
         {
+            "_id": "b36bd5fff4d478",
             "name": "[Capacità] Punto Debole: Tagliare i Fili",
             "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
             "system": {
-                "description": "<p>Se la “Testa” subisce più di 9 danni da un singolo attacco con un'arma tagliente, questo recide i fili e distrugge il costrutto.</p>",
+                "description": "",
                 "isStored": false
             }
         }
