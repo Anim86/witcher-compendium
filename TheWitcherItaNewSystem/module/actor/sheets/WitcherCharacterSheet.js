@@ -5,6 +5,7 @@ import ChatMessageData from '../../chatMessage/chatMessageData.js';
 import { alchemyMixin } from './mixins/alchemyMixin.js';
 import RewardsSheet from '../rewardsSheet.js';
 import WitcherModifiersConfiguration from '../../actor/sheets/configurations/WitcherModifiersConfiguration.js';
+import Rewards from '/systems/TheWitcherItaNewSystem/module/app/reward/reward.js';
 
 const DialogV2 = foundry.applications.api.DialogV2;
 
@@ -22,7 +23,7 @@ export default class WitcherCharacterSheet extends WitcherActorSheet {
         },
         position: {
             width: 1150,
-            height: 850
+            height: 720
         },
         actions: {
             openAttributeDialog: this.#openAttributeDialog,
@@ -34,9 +35,13 @@ export default class WitcherCharacterSheet extends WitcherActorSheet {
             rollStun: function() { return this.actor.rollStun(); },
             rollSave: function() { return this.actor.rollDeathSave(); },
             rest: function() { return this.actor.rest(); },
-            openRewards: function() { return this._renderRewards(); },
+            openRewards: function(event, target) { 
+                const type = target.dataset.type || 'standard';
+                return this._renderRewards(type); 
+            },
             addIpReward: this._addIpReward,
-            saveIpSpending: this._saveIpSpending
+            saveIpSpending: this._saveIpSpending,
+            adjustCurrency: this.#adjustCurrency
         }
     });
 
@@ -207,6 +212,15 @@ export default class WitcherCharacterSheet extends WitcherActorSheet {
         context.totalStats = this.calc_total_stats(context);
         context.totalSkills = this.calc_total_skills(context);
         context.totalProfSkills = this.actor.calc_total_skills_profession();
+
+        // Encumbrance & Weight details
+        context.totalWeight = actor.getTotalWeight();
+        context.weightBreakdown = actor.getWeightBreakdown();
+        context.armorEV = actor.getArmorEcumbrance();
+        context.encMax = actor.system.derivedStats.enc.max;
+        
+        // Percentage for progress bar
+        context.encPct = Math.min(Math.round((context.totalWeight / context.encMax) * 100), 100);
     }
 
     _prepareDiagramFormulas(context) {
@@ -505,7 +519,7 @@ export default class WitcherCharacterSheet extends WitcherActorSheet {
         this.actor.system.logs.addIpReward(label, value);
     }
 
-    async _renderRewards() {
+    async _renderRewards(type = 'standard') {
         this.rewards?.render(true);
     }
 
@@ -664,6 +678,42 @@ export default class WitcherCharacterSheet extends WitcherActorSheet {
             }
         });
         dialog.render(true);
+    }
+
+    static async #adjustCurrency(event, target) {
+        const actor = this.document;
+        const current = actor.system.currency.crown || 0;
+
+        const content = `
+        <div class="witcher-dialog-v2 currency-compact">
+            <div class="form-group-premium">
+                <label style="font-size: 11px; color: var(--w-gold);"><i class="fas fa-coins"></i> Variazione Corone</label>
+                <input type="text" name="variation" placeholder="Es: +50 o -20" autofocus style="text-align: center; font-size: 18px;" />
+            </div>
+            <p style="font-size: 10px; opacity: 0.7; text-align: center; margin-top: 5px;">Usa + per aggiungere e - per sottrarre.</p>
+        </div>
+        `;
+
+        const result = await DialogV2.input({
+            window: {
+                title: "Modifica Corone",
+                icon: "fa-solid fa-coins",
+                classes: ["witcher-dialog-v2", "compact-dialog"]
+            },
+            content: content,
+            ok: {
+                label: "Applica",
+                icon: "fa-solid fa-check"
+            }
+        });
+
+        if (result && result.variation) {
+            let variation = parseInt(result.variation);
+            if (!isNaN(variation)) {
+                let newValue = Math.max(0, current + variation);
+                await actor.update({ "system.currency.crown": newValue });
+            }
+        }
     }
 }
 

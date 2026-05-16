@@ -1,4 +1,4 @@
-import WitcherImprovementDialog from "../../app/WitcherImprovementDialog.js";
+import WitcherImprovementDialog from "../../../app/WitcherImprovementDialog.js";
 
 export let progressionSheetMixin = {
     progressionListener(html) {

@@ -7,42 +7,60 @@ export default class Rewards {
         return game.actors.filter(actor => actor.hasPlayerOwner);
     }
 
-    static async ipRewardDialog(actors) {
+    static async ipRewardDialog(actors, type = 'standard') {
         if (!actors) {
             actors = this.getPlayerActors();
         }
 
-        let content = '';
+        const isMagic = type === 'magic';
+        const title = isMagic ? 'WITCHER.rewards.dialog.titleMagic' : 'WITCHER.rewards.dialog.titleStandard';
+        const ipLabel = isMagic ? 'Punti Magici (P.M.)' : 'Punti Incremento (P.I.)';
+        const icon = isMagic ? 'fa-sparkles' : 'fa-graduation-cap';
+        const themeClass = isMagic ? 'magic-theme' : 'standard-theme';
 
-        let options = [];
+        let content = `
+        <div class="rewards-dialog-premium ${themeClass}">
+            <div class="rewards-targets">
+                <label class="section-label"><i class="fas fa-users"></i> Destinatari</label>
+                <div class="targets-grid">
+        `;
+
         actors.forEach(actor => {
-            options.push({ value: actor.uuid, label: actor.name, selected: true });
+            content += `
+                <label class="target-checkbox">
+                    <input type="checkbox" name="actors" value="${actor.uuid}" checked>
+                    <span class="target-name">${actor.name}</span>
+                </label>
+            `;
         });
 
-        const multiCheckboxes = foundry.applications.fields.createMultiSelectInput({
-            type: 'checkboxes',
-            name: 'actors',
-            options: options
-        });
-        content += multiCheckboxes.outerHTML;
+        content += `
+                </div>
+            </div>
 
-        game.i18n.localize('WITCHER.rewards.dialog.label');
-
-        let labelDiv = document.createElement('div');
-
-        labelDiv.appendChild(createLabeledInput(game.i18n.localize('WITCHER.rewards.dialog.label'), 'text', 'label'));
-        content += labelDiv.outerHTML;
-
-        let ipDiv = document.createElement('div');
-        ipDiv.appendChild(createLabeledInput(game.i18n.localize('WITCHER.rewards.dialog.ip'), 'number', 'ip'));
-        ipDiv.appendChild(
-            createLabeledInput(game.i18n.localize('WITCHER.rewards.dialog.magicIp'), 'checkbox', 'isMagic')
-        );
-        content += ipDiv.outerHTML;
+            <div class="reward-details">
+                <div class="form-group-premium">
+                    <label><i class="fas fa-pen-nib"></i> ${game.i18n.localize('WITCHER.rewards.dialog.label')}</label>
+                    <input type="text" name="label" placeholder="Es: Luogo di Potere, Fine Sessione..." />
+                </div>
+                
+                <div class="reward-value-row">
+                    <div class="form-group-premium">
+                        <label><i class="fas ${icon}"></i> ${ipLabel}</label>
+                        <input type="number" name="ip" value="0" min="1" />
+                    </div>
+                </div>
+            </div>
+            
+            <input type="hidden" name="isMagic" value="${isMagic ? 'true' : 'false'}" />
+        </div>
+        `;
 
         let values = await DialogV2.input({
             window: {
-                title: `${game.i18n.localize('WITCHER.rewards.dialog.title')}`
+                title: game.i18n.localize(title),
+                icon: icon,
+                classes: ['witcher-dialog-v2', 'rewards-v2']
             },
             content: content,
             ok: {
@@ -51,22 +69,32 @@ export default class Rewards {
             }
         });
 
+        if (values) {
+            // Fix checkboxes from createMultiSelectInput if we used it, but here we used raw HTML
+            // DialogV2.input returns an object with the names of the inputs
+            // If multiple checkboxes have the same name, it might be an array or a single value
+            // We need to ensure it's an array for actors
+        }
+
         return values;
     }
 
-    static async handoutIpRewards(actors) {
+    static async handoutIpRewards(actors, type = 'standard') {
         if (!game.user.isGM) return;
 
-        let values = await Rewards.ipRewardDialog(actors);
+        let values = await Rewards.ipRewardDialog(actors, type);
 
-        if (!values || !values.actors || values.actors.length === 0) return;
+        if (!values || !values.actors || (Array.isArray(values.actors) && values.actors.length === 0)) return;
 
-        let choosenActors = values.actors.map(actor => fromUuidSync(actor));
+        // Ensure actors is always an array
+        const actorUuids = Array.isArray(values.actors) ? values.actors : [values.actors];
+        let choosenActors = actorUuids.map(uuid => fromUuidSync(uuid));
         let ip = values.ip;
         let label = values.label;
+        let isMagic = values.isMagic === 'true' || values.isMagic === true;
 
         if (ip) {
-            choosenActors.forEach(actor => actor.system.logs.addIpReward(label, ip, values.isMagic));
+            choosenActors.forEach(actor => actor.system.logs.addIpReward(label, ip, isMagic));
         }
 
         const content = await foundry.applications.handlebars.renderTemplate(
@@ -84,6 +112,87 @@ export default class Rewards {
 
         if (ip) {
             ChatMessage.create(chatData);
+        }
+    }
+
+    static async currencyRewardDialog(actors) {
+        if (!actors) {
+            actors = this.getPlayerActors();
+        }
+
+        let content = `
+        <div class="rewards-dialog-premium currency-theme">
+            <div class="rewards-targets">
+                <label class="section-label"><i class="fas fa-users"></i> Destinatari</label>
+                <div class="targets-grid">
+        `;
+
+        actors.forEach(actor => {
+            content += `
+                <label class="target-checkbox">
+                    <input type="checkbox" name="actors" value="${actor.uuid}" checked>
+                    <span class="target-name">${actor.name}</span>
+                </label>
+            `;
+        });
+
+        content += `
+                </div>
+            </div>
+
+            <div class="reward-details">
+                <div class="form-group-premium">
+                    <label><i class="fas fa-pen-nib"></i> Causale</label>
+                    <input type="text" name="label" placeholder="Es: Bottino, Pagamento Contratto..." />
+                </div>
+                
+                <div class="reward-value-row">
+                    <div class="form-group-premium">
+                        <label><i class="fas fa-coins"></i> Corone (+/-)</label>
+                        <input type="number" name="amount" value="0" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        `;
+
+        let values = await DialogV2.input({
+            window: {
+                title: "Assegna Corone",
+                icon: "fa-solid fa-coins",
+                classes: ['witcher-dialog-v2', 'rewards-v2']
+            },
+            content: content,
+            ok: {
+                label: "Conferma",
+                icon: "fa-solid fa-floppy-disk"
+            }
+        });
+
+        return values;
+    }
+
+    static async handoutCurrencyRewards(actors) {
+        let values = await Rewards.currencyRewardDialog(actors);
+
+        if (!values || !values.actors || (Array.isArray(values.actors) && values.actors.length === 0)) return;
+
+        const actorUuids = Array.isArray(values.actors) ? values.actors : [values.actors];
+        let choosenActors = actorUuids.map(uuid => fromUuidSync(uuid));
+        let amount = parseInt(values.amount);
+        let label = values.label || "Aggiornamento Corone";
+
+        if (amount) {
+            for (let actor of choosenActors) {
+                let current = actor.system.currency.crown || 0;
+                let newValue = Math.max(0, current + amount);
+                await actor.update({ "system.currency.crown": newValue });
+                
+                // Track in logs if available
+                if (actor.system.logs?.addCurrencyReward) {
+                    actor.system.logs.addCurrencyReward(label, amount);
+                }
+            }
         }
     }
 }

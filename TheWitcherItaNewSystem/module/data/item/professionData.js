@@ -112,4 +112,29 @@ export default class ProfessionData extends CommonItemData {
             return this.findDefensePathData(attack, 'skillPath3');
         }
     }
+
+    prepareDerivedData() {
+        super.prepareDerivedData();
+        
+        // List of skills that are always considered magic
+        const magicSkillNames = ["arte del mago", "magia dei segni", "invocazione"];
+        
+        const checkMagic = (skill) => {
+            if (!skill) return;
+            const name = skill.skillName?.toLowerCase() || "";
+            if (magicSkillNames.some(m => name.includes(m))) {
+                skill.isMagic = true;
+            }
+        };
+
+        checkMagic(this.definingSkill);
+        for (let i = 1; i <= 3; i++) {
+            const path = this[`skillPath${i}`];
+            if (path) {
+                checkMagic(path.skill1);
+                checkMagic(path.skill2);
+                checkMagic(path.skill3);
+            }
+        }
+    }
 }

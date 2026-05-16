@@ -3,10 +3,6 @@
         <img class='witcher-actor-img' src='{{actorImg}}' alt="actor image" data-action="editImage" data-edit='img'
             title='{{actor.name}}' />
         
-        <div class="encumbrance-indicator {{#if (gt totalWeight system.derivedStats.enc.value)}}overweight{{/if}}">
-            <i class="fas fa-weight-hanging"></i> {{totalWeight}} / {{system.derivedStats.enc.value}}
-        </div>
-
         <div class='wound-state' data-tooltip="{{localize 'WITCHER.Actor.woundState'}}">
             {{#if (gte system.derivedStats.hp.value system.derivedStats.hp.unmodifiedMax)}}
                 <i class='fa-solid fa-heart' style='color: #2ecc71;'></i>

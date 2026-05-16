@@ -1,17 +1,3 @@
-<div class="crit-wound-section">
-    <div class="section-header-premium">
-        <div class="header-main">
-            <i class="fas fa-biohazard header-icon"></i>
-            <h3 class="header-name">{{localize "WITCHER.CritWound.Header"}}</h3>
-            <div class="header-actions">
-                <a class="btn-premium-action add-crit-wound" title="{{localize 'WITCHER.CritWound.Add'}}">
-                    <i class="fas fa-plus"></i>
-                    <span>{{localize "WITCHER.CritWound.Add"}}</span>
-                </a>
-            </div>
-        </div>
-    </div>
-
     <div class="critwounds-list">
         {{#each system.critWounds as |wound i|}}
         <div class="critwound-card {{ifThen wound.treated 'is-treated' (ifThen wound.stabilized 'is-stabilized' '')}}" data-index="{{i}}">
@@ -80,4 +66,4 @@
             </div>
         </div>
     {{/each}}
-</div>
+</div>

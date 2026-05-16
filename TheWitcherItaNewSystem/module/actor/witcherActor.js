@@ -269,9 +269,9 @@ export default class WitcherActor extends Actor {
 
     calculateStats() {
         this.calculateStat('int');
+        this.calculateStat('body'); // Calculate body first as it affects encumbrance
         this.calculateStat('ref');
         this.calculateStat('dex');
-        this.calculateStat('body');
         this.calculateStat('spd');
         this.calculateStat('emp');
         this.calculateStat('cra');
@@ -320,18 +320,21 @@ export default class WitcherActor extends Actor {
     }
 
     calculateWeigthEncumbrance() {
-        let bodyTotalModifiers = this.getAllModifiers('body').totalModifiers + this.system.stats.body.totalModifiers;
-        this.system.stats.body.modifiers.forEach(item => (bodyTotalModifiers += Number(item.value)));
-        let bodyBase = this.system.stats.body.unmodifiedMax || this.system.stats.body.max || 0;
-        let currentEncumbrance =
-            (bodyBase + bodyTotalModifiers) * 10 +
-            this.getAllModifiers('enc').totalModifiers +
-            this.system.derivedStats.enc.totalModifiers;
-        var totalWeights = this.getTotalWeight();
+        // Use the already calculated body value for the limit
+        const bodyValue = this.system.stats.body.value || 0;
+        const encLimit = bodyValue * 10;
+        
+        // Add other encumbrance modifiers (from effects/items)
+        const currentMaxEnc = encLimit +
+            (this.getAllModifiers('enc')?.totalModifiers || 0) +
+            (this.system.derivedStats.enc?.totalModifiers || 0);
+            
+        const totalWeights = this.getTotalWeight();
 
         let encDiff = 0;
-        if (currentEncumbrance < totalWeights) {
-            encDiff = Math.ceil((totalWeights - currentEncumbrance) / 5);
+        if (currentMaxEnc < totalWeights) {
+            // Rule: -1 to REF/DEX/SPD for every 5kg over the limit
+            encDiff = Math.ceil((totalWeights - currentMaxEnc) / 5);
         }
 
         return encDiff;
@@ -371,14 +374,13 @@ export default class WitcherActor extends Actor {
         this.system.derivedStats.leap.totalModifiers = leapTotalModifiers;
 
         let encTotalModifiers = this.getAllModifiers('enc').totalModifiers;
-        let encDivider = this.getAllModifiers('enc').totalDivider;
         this.system.derivedStats.enc.modifiers.forEach(item => (encTotalModifiers += Number(item.value)));
-        this.system.derivedStats.enc.value = Math.floor(
-            ((this.system.stats.body.value || 0) * 10 + encTotalModifiers) / encDivider
-        );
-        const encLimit = (this.system.stats.body.unmodifiedMax || this.system.stats.body.max || 0) * 10;
-        this.system.derivedStats.enc.max = encLimit;
-        this.system.derivedStats.enc.value = encLimit;
+
+        const totalWeights = this.getTotalWeight();
+        const baseEnc = (this.system.stats.body.unmodifiedMax || this.system.stats.body.max || 0) * 10;
+        this.system.derivedStats.enc.unmodifiedMax = baseEnc;
+        this.system.derivedStats.enc.max = baseEnc + encTotalModifiers;
+        this.system.derivedStats.enc.value = totalWeights;
         this.system.derivedStats.enc.totalModifiers = encTotalModifiers;
 
         let recTotalModifiers = this.getAllModifiers('rec').totalModifiers;
@@ -953,8 +955,65 @@ export default class WitcherActor extends Actor {
     }
 
     getTotalWeight() {
-        let total = this.items.reduce((total, item) => (total += item.system.calcWeight?.() ?? 0), 0);
-        return Math.ceil(total + this.system.calcCurrencyWeight());
+        const containers = this.items.filter(i => i.type === 'container');
+        // In Foundry, items in a container are still in the actor.items list.
+        // We need to avoid double counting them if the container already sums their weight.
+        const containedIds = new Set();
+        containers.forEach(c => {
+            if (c.system.content) {
+                c.system.content.forEach(id => containedIds.add(id));
+            }
+        });
+
+        let total = this.items.reduce((total, item) => {
+            // Skip items that are inside a container
+            if (containedIds.has(item.id) || containedIds.has(item.uuid)) return total;
+            return total + (item.system.calcWeight?.() ?? 0);
+        }, 0);
+
+        return Math.ceil(total + (this.system.calcCurrencyWeight?.() ?? 0));
+    }
+
+    /**
+     * Returns a detailed breakdown of the weight for the UI tooltip
+     */
+    getWeightBreakdown() {
+        const containers = this.items.filter(i => i.type === 'container');
+        const containedIds = new Set();
+        containers.forEach(c => {
+            if (c.system.content) {
+                c.system.content.forEach(id => containedIds.add(id));
+            }
+        });
+
+        const breakdown = {
+            weapons: 0,
+            armor: 0,
+            inventory: 0,
+            containers: 0,
+            currency: this.system.calcCurrencyWeight?.() ?? 0
+        };
+
+        this.items.forEach(item => {
+            if (containedIds.has(item.id) || containedIds.has(item.uuid)) return;
+            
+            const w = item.system.calcWeight?.() ?? 0;
+            if (w <= 0) return;
+
+            switch (item.type) {
+                case 'weapon': breakdown.weapons += w; break;
+                case 'armor': breakdown.armor += w; break;
+                case 'container': breakdown.containers += w; break;
+                default: breakdown.inventory += w; break;
+            }
+        });
+
+        // Round everything for display
+        for (let key in breakdown) {
+            breakdown[key] = Math.round(breakdown[key] * 100) / 100;
+        }
+
+        return breakdown;
     }
 
     getList(name) {

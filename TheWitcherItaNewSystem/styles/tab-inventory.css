@@ -70,7 +70,7 @@ table th {
 
 /* ── Carry section ── */
 .carry-section {
-    margin: 5px 0 10px 0;
+    margin: 2px 0 4px 0;
     width: 100%;
     position: relative;
     background: rgba(0, 0, 0, 0.3);
@@ -142,16 +142,16 @@ progress.carry-bar.overweight::-moz-progress-bar {
     align-items: center;
     background: rgba(20, 20, 20, 0.4);
     border: 1px solid rgba(210, 190, 140, 0.12);
-    border-left: 3px solid rgba(210, 190, 140, 0.4);
+    border-left: 2px solid rgba(210, 190, 140, 0.4);
     border-radius: 4px;
-    padding: 3px 12px;
-    margin-bottom: 10px;
+    padding: 2px 12px;
+    margin-bottom: 4px;
 }
 
 .currency-item {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 8px;
 }
 
 .coin-icon {
@@ -173,12 +173,36 @@ progress.carry-bar.overweight::-moz-progress-bar {
     border: 1px solid rgba(255, 255, 255, 0.08) !important;
     border-radius: 3px;
     width: 65px !important;
-    height: 20px !important;
+    height: 18px !important;
     font-size: 13px !important;
     color: #fff !important;
     text-align: center;
     margin: 0 !important;
     transition: all 0.2s;
+}
+
+.currency-input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.adjust-currency {
+    color: rgba(210, 190, 140, 0.8);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(210, 190, 140, 0.2);
+    padding: 1px 6px;
+    border-radius: 3px;
+    font-size: 0.85em;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.adjust-currency:hover {
+    color: #fff;
+    background: rgba(210, 190, 140, 0.2);
+    border-color: rgba(210, 190, 140, 0.5);
+    transform: translateY(-1px);
 }
 
 .currency-item input:focus {

@@ -27,6 +27,10 @@
                 <div class="flex defining-skill-header">
                     <input class="profession-skill-input" name="system.definingSkill.skillName" type="text"
                         value="{{ item.system.definingSkill.skillName }}" placeholder="" />
+                    <label class="magic-toggle {{#if item.system.definingSkill.isMagic}}active{{/if}}" data-tooltip="Abilità Magica">
+                        <input type="checkbox" name="system.definingSkill.isMagic" {{checked item.system.definingSkill.isMagic}} style="display:none" />
+                        <i class="fas fa-sparkles"></i>
+                    </label>
                     <select class="defining-skill-select" name="system.definingSkill.stat">
                         {{selectOptions config.statTypes selected=item.system.definingSkill.stat localize=true}}
                     </select>
@@ -48,6 +52,10 @@
                     <div class="flex first-path-header">
                         <input class="profession-skill-input" name="system.skillPath1.skill1.skillName" type="text"
                             value="{{ item.system.skillPath1.skill1.skillName }}" placeholder="" />
+                        <label class="magic-toggle {{#if item.system.skillPath1.skill1.isMagic}}active{{/if}}" data-tooltip="Abilità Magica">
+                            <input type="checkbox" name="system.skillPath1.skill1.isMagic" {{checked item.system.skillPath1.skill1.isMagic}} style="display:none" />
+                            <i class="fas fa-sparkles"></i>
+                        </label>
                         <select class="first-path-select" name="system.skillPath1.skill1.stat">
                             {{selectOptions config.statTypes selected=item.system.skillPath1.skill1.stat localize=true}}
                         </select>
@@ -60,6 +68,10 @@
                     <div class="flex first-path-header">
                         <input class="profession-skill-input" name="system.skillPath1.skill2.skillName" type="text"
                             value="{{ item.system.skillPath1.skill2.skillName }}" placeholder="" />
+                        <label class="magic-toggle {{#if item.system.skillPath1.skill2.isMagic}}active{{/if}}" data-tooltip="Abilità Magica">
+                            <input type="checkbox" name="system.skillPath1.skill2.isMagic" {{checked item.system.skillPath1.skill2.isMagic}} style="display:none" />
+                            <i class="fas fa-sparkles"></i>
+                        </label>
                         <select class="first-path-select" name="system.skillPath1.skill2.stat">
                             {{selectOptions config.statTypes selected=item.system.skillPath1.skill2.stat localize=true}}
                         </select>
@@ -72,6 +84,10 @@
                     <div class="flex first-path-header">
                         <input class="profession-skill-input" name="system.skillPath1.skill3.skillName" type="text"
                             value="{{ item.system.skillPath1.skill3.skillName }}" placeholder="" />
+                        <label class="magic-toggle {{#if item.system.skillPath1.skill3.isMagic}}active{{/if}}" data-tooltip="Abilità Magica">
+                            <input type="checkbox" name="system.skillPath1.skill3.isMagic" {{checked item.system.skillPath1.skill3.isMagic}} style="display:none" />
+                            <i class="fas fa-sparkles"></i>
+                        </label>
                         <select class="first-path-select" name="system.skillPath1.skill3.stat">
                             {{selectOptions config.statTypes selected=item.system.skillPath1.skill3.stat localize=true}}
                         </select>
@@ -88,6 +104,10 @@
                     <div class="flex second-path-header">
                         <input class="profession-skill-input" name="system.skillPath2.skill1.skillName" type="text"
                             value="{{ item.system.skillPath2.skill1.skillName }}" placeholder="" />
+                        <label class="magic-toggle {{#if item.system.skillPath2.skill1.isMagic}}active{{/if}}" data-tooltip="Abilità Magica">
+                            <input type="checkbox" name="system.skillPath2.skill1.isMagic" {{checked item.system.skillPath2.skill1.isMagic}} style="display:none" />
+                            <i class="fas fa-sparkles"></i>
+                        </label>
                         <select class="second-path-select" name="system.skillPath2.skill1.stat">
                             {{selectOptions config.statTypes selected=item.system.skillPath2.skill1.stat localize=true}}
                         </select>
@@ -100,6 +120,10 @@
                     <div class="flex second-path-header">
                         <input class="profession-skill-input" name="system.skillPath2.skill2.skillName" type="text"
                             value="{{ item.system.skillPath2.skill2.skillName }}" placeholder="" />
+                        <label class="magic-toggle {{#if item.system.skillPath2.skill2.isMagic}}active{{/if}}" data-tooltip="Abilità Magica">
+                            <input type="checkbox" name="system.skillPath2.skill2.isMagic" {{checked item.system.skillPath2.skill2.isMagic}} style="display:none" />
+                            <i class="fas fa-sparkles"></i>
+                        </label>
                         <select class="second-path-select" name="system.skillPath2.skill2.stat">
                             {{selectOptions config.statTypes selected=item.system.skillPath2.skill2.stat localize=true}}
                         </select>
@@ -112,6 +136,10 @@
                     <div class="flex second-path-header">
                         <input class="profession-skill-input" name="system.skillPath2.skill3.skillName" type="text"
                             value="{{ item.system.skillPath2.skill3.skillName }}" placeholder="" />
+                        <label class="magic-toggle {{#if item.system.skillPath2.skill3.isMagic}}active{{/if}}" data-tooltip="Abilità Magica">
+                            <input type="checkbox" name="system.skillPath2.skill3.isMagic" {{checked item.system.skillPath2.skill3.isMagic}} style="display:none" />
+                            <i class="fas fa-sparkles"></i>
+                        </label>
                         <select class="second-path-select" name="system.skillPath2.skill3.stat">
                             {{selectOptions config.statTypes selected=item.system.skillPath2.skill3.stat localize=true}}
                         </select>
@@ -128,6 +156,10 @@
                     <div class="flex third-path-header">
                         <input class="profession-skill-input" name="system.skillPath3.skill1.skillName" type="text"
                             value="{{ item.system.skillPath3.skill1.skillName }}" placeholder="" />
+                        <label class="magic-toggle {{#if item.system.skillPath3.skill1.isMagic}}active{{/if}}" data-tooltip="Abilità Magica">
+                            <input type="checkbox" name="system.skillPath3.skill1.isMagic" {{checked item.system.skillPath3.skill1.isMagic}} style="display:none" />
+                            <i class="fas fa-sparkles"></i>
+                        </label>
                         <select class="third-path-select" name="system.skillPath3.skill1.stat">
                             {{selectOptions config.statTypes selected=item.system.skillPath3.skill1.stat localize=true}}
                         </select>
@@ -140,6 +172,10 @@
                     <div class="flex third-path-header">
                         <input class="profession-skill-input" name="system.skillPath3.skill2.skillName" type="text"
                             value="{{ item.system.skillPath3.skill2.skillName }}" placeholder="" />
+                        <label class="magic-toggle {{#if item.system.skillPath3.skill2.isMagic}}active{{/if}}" data-tooltip="Abilità Magica">
+                            <input type="checkbox" name="system.skillPath3.skill2.isMagic" {{checked item.system.skillPath3.skill2.isMagic}} style="display:none" />
+                            <i class="fas fa-sparkles"></i>
+                        </label>
                         <select class="third-path-select" name="system.skillPath3.skill2.stat">
                             {{selectOptions config.statTypes selected=item.system.skillPath3.skill2.stat localize=true}}
                         </select>
@@ -152,6 +188,10 @@
                     <div class="flex third-path-header">
                         <input class="profession-skill-input" name="system.skillPath3.skill3.skillName" type="text"
                             value="{{ item.system.skillPath3.skill3.skillName }}" placeholder="" />
+                        <label class="magic-toggle {{#if item.system.skillPath3.skill3.isMagic}}active{{/if}}" data-tooltip="Abilità Magica">
+                            <input type="checkbox" name="system.skillPath3.skill3.isMagic" {{checked item.system.skillPath3.skill3.isMagic}} style="display:none" />
+                            <i class="fas fa-sparkles"></i>
+                        </label>
                         <select class="third-path-select" name="system.skillPath3.skill3.stat">
                             {{selectOptions config.statTypes selected=item.system.skillPath3.skill3.stat localize=true}}
                         </select>

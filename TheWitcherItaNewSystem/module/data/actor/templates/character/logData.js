@@ -1,11 +1,13 @@
 import ipLog from './ipLogData.js';
+import currencyLog from './currencyLogData.js';
 
 const fields = foundry.data.fields;
 
 export default class Log extends foundry.abstract.DataModel {
     static defineSchema() {
         return {
-            ipLog: new fields.ArrayField(new fields.SchemaField(ipLog()))
+            ipLog: new fields.ArrayField(new fields.SchemaField(ipLog())),
+            currencyLog: new fields.ArrayField(new fields.SchemaField(currencyLog()))
         };
     }
 
@@ -43,5 +45,19 @@ export default class Log extends foundry.abstract.DataModel {
         }
         
         this.parent.parent.update(updateData);
+    }
+
+    addCurrencyReward(label, amount) {
+        this.currencyLog.push({ label: label, amount: amount, date: Date.now() });
+        this.parent.parent.update({
+            'system.logs.currencyLog': this.currencyLog
+        });
+    }
+
+    removeCurrencyLog(index) {
+        this.currencyLog.splice(index, 1);
+        this.parent.parent.update({
+            'system.logs.currencyLog': this.currencyLog
+        });
     }
 }

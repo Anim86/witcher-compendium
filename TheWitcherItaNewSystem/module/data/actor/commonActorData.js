@@ -86,7 +86,8 @@ export default class CommonActorData extends foundry.abstract.TypeDataModel {
 
     calcCurrencyWeight() {
         let totalPieces = Number(this.currency.crown);
-        return Number(totalPieces * 0.001);
+        // 100 Crowns = 1kg -> 1 Crown = 0.01kg
+        return Number(totalPieces * 0.01);
     }
 
     /** @inheritdoc */

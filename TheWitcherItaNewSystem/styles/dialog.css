@@ -265,3 +265,126 @@ form.verbal-combat-dialog {
     display: none !important;
 }
 
+/* Rewards Dialog V2 Styles */
+.rewards-v2 .window-content {
+    background: #0c0c0c !important;
+    padding: 0 !important;
+}
+
+.rewards-dialog-premium {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: radial-gradient(circle at top right, rgba(201, 168, 76, 0.05), transparent 60%);
+}
+
+.rewards-dialog-premium.magic-theme {
+    background: radial-gradient(circle at top right, rgba(155, 62, 245, 0.1), transparent 60%);
+}
+
+.rewards-dialog-premium .section-label {
+    display: block;
+    font-family: 'Thewitcher', serif;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: var(--w-gold);
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid var(--w-gold-dim);
+    padding-bottom: 5px;
+}
+
+.magic-theme .section-label {
+    color: #9b3ef5;
+    border-bottom-color: rgba(155, 62, 245, 0.3);
+}
+
+.targets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 8px;
+}
+
+.target-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 12px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.target-checkbox:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.target-checkbox input[type="checkbox"] {
+    margin: 0;
+    width: 16px;
+    height: 16px;
+    accent-color: var(--w-gold);
+}
+
+.magic-theme .target-checkbox input[type="checkbox"] {
+    accent-color: #9b3ef5;
+}
+
+.target-name {
+    font-size: 0.95rem;
+    color: #ddd;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.form-group-premium {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group-premium label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #888;
+    letter-spacing: 0.5px;
+}
+
+.form-group-premium input {
+    background: rgba(0, 0, 0, 0.4) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: #fff !important;
+    padding: 8px 12px !important;
+    height: auto !important;
+    border-radius: 4px !important;
+    font-size: 1rem !important;
+}
+
+.form-group-premium input:focus {
+    border-color: var(--w-gold) !important;
+    box-shadow: 0 0 5px rgba(201, 168, 76, 0.3) !important;
+}
+
+.magic-theme .form-group-premium input:focus {
+    border-color: #9b3ef5 !important;
+    box-shadow: 0 0 5px rgba(155, 62, 245, 0.3) !important;
+}
+
+.reward-value-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.reward-details {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+

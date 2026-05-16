@@ -8,6 +8,7 @@ export default function professionSkill() {
     return {
         skillName: new fields.StringField({ initial: '' }),
         stat: new fields.StringField({ initial: '' }),
+        isMagic: new fields.BooleanField({ initial: false }),
         definition: new fields.HTMLField({ initial: '' }),
         level: new fields.NumberField({ initial: 0 }),
 

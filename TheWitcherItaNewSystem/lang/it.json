@@ -42,9 +42,15 @@
     "WITCHER": {
         "Progression": {
             "Title": "Miglioramento Personaggio",
+            "ConfirmTitle": "Conferma Miglioramento",
+            "ConfirmSpend": "Vuoi spendere {cost} PM per aumentare {label} di 1 punto?",
             "CurrentLevel": "Livello Attuale",
             "TargetLevel": "Livello Obiettivo",
             "TotalCost": "Costo Totale",
+            "StandardIP": "Punti Esperienza (Standard)",
+            "MagicIP": "Punti Esperienza Magici (Tesoretto)",
+            "ExpLabel": "Punti EXP",
+            "MagicLabel": "Punti Magia",
             "AvailableIP": "P.I. Disponibili",
             "Confirm": "Conferma Miglioramento",
             "Success": "{label} aumentata con successo!",
@@ -52,6 +58,7 @@
             "StatCapReached": "Il livello massimo per le statistiche è 10.",
             "SkillCapReached": "Il livello massimo per le abilità è 10.",
             "BranchRequirementNotMet": "Devi investire almeno 5 punti nell'abilità precedente.",
+            "SpendIP": "Spendi PM",
             "TrainingDays": "Giorni di Studio",
             "Successes": "Successi Accumulati",
             "Train": "Tira per l'Esercitazione",
@@ -1244,7 +1251,7 @@
             "fullStamina": "Stamina Piena"
         },
         "Currency": {
-            "crown": "Corona"
+            "crown": "Corone"
         },
         "Settings": {
             "criticalWoundsPack": "Critical Wounds Compendium",
@@ -1762,7 +1769,10 @@
             "currencyLogTitle": "Registro Valuta",
             "dialog": {
                 "title": "Assegna Ricompense",
+                "titleStandard": "Assegna Punti Esperienza",
+                "titleMagic": "Assegna Punti Magia (Tesoretto)",
                 "confirm": "Conferma",
+                "confirmAssignment": "Conferma Assegnazione",
                 "label": "Causale / Evento",
                 "ip": "Punti Miglioramento (PM)",
                 "magicIp": "PM Magici",
@@ -1771,16 +1781,6 @@
             }
         },
 
-        "Progression": {
-            "ConfirmTitle": "Conferma Miglioramento",
-            "ConfirmSpend": "Vuoi spendere {cost} PM per aumentare {label} di 1 punto?",
-            "NotEnoughIP": "Non hai abbastanza PM! (Necessari: {cost}, Disponibili: {currentIP})",
-            "StatCapReached": "Questa statistica ha raggiunto il limite massimo di 10!",
-            "SkillCapReached": "Questa abilità ha raggiunto il limite massimo di 10!",
-            "BranchRequirementNotMet": "Devi portare l'abilità precedente al livello 5 prima di poter sbloccare questa!",
-            "Success": "{label} aumentata con successo!",
-            "SpendIP": "Spendi PM"
-        },
         "magic": {
             "magicImprovementPoints": "PM Magici"
         },
@@ -1875,6 +1875,12 @@
             "Button": {
                 "Launch": "Crea Personaggio"
             }
+        },
+        "Rewards": {
+            "Title": "Premi e Miglioramenti",
+            "LogTitle": "Storico Incrementi",
+            "SpendIpHint": "I Punti Incremento possono essere spesi cliccando sulle abilità o sulle statistiche nella scheda.",
+            "NoLogs": "Nessun incremento registrato."
         }
     },
     "Settings.allowPlayerWizard": "Consenti ai Giocatori di usare il Wizard",

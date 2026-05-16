@@ -1,21 +1,35 @@
 <section class="tab {{tabs.inventory.cssClass}} scrollable standard-form" data-group="primary" data-tab="inventory">
-    <div class="carry-section">
-        <div class="carry-labels">
-            <span class="carry-current"><i class="fa-solid fa-weight-hanging"></i> {{localize "WITCHER.Loot.TotalWeight"}}: {{totalWeight}}</span>
-            <span class="carry-max">{{localize "WITCHER.Loot.MaxWeight"}}: {{system.derivedStats.enc.value}}</span>
+    <div class="inventory-encumbrance-container {{#if (gt totalWeight encMax)}}overweight{{/if}}" 
+         data-tooltip="<div class='weight-breakdown'>
+            <div class='breakdown-title'>{{localize 'WITCHER.Loot.TotalWeight'}}</div>
+            <div class='breakdown-item'><span>{{localize 'WITCHER.Loot.Weapons'}}:</span> <span>{{weightBreakdown.weapons}}kg</span></div>
+            <div class='breakdown-item'><span>{{localize 'WITCHER.Loot.Armors'}}:</span> <span>{{weightBreakdown.armor}}kg</span></div>
+            <div class='breakdown-item'><span>{{localize 'WITCHER.Actor.tabs.inventory'}}:</span> <span>{{weightBreakdown.inventory}}kg</span></div>
+            <div class='breakdown-item'><span>{{localize 'TYPES.Item.container'}}:</span> <span>{{weightBreakdown.containers}}kg</span></div>
+            <div class='breakdown-item'><span>{{localize 'WITCHER.Actor.rewards.currency'}}:</span> <span>{{weightBreakdown.currency}}kg</span></div>
+            <hr>
+            <div class='breakdown-item ev'><span>{{localize 'WITCHER.Armor.EncumbranceValue'}} (VIn):</span> <span>{{armorEV}}</span></div>
+         </div>">
+        <div class="enc-label">
+            <span class="main-label"><i class="fas fa-weight-hanging"></i> {{localize "WITCHER.Loot.TotalWeight"}}</span>
+            <span class="values">{{totalWeight}} / {{encMax}} <small>kg</small></span>
         </div>
-        <progress class="carry-bar {{#if (gte totalWeight system.derivedStats.enc.value)}}overweight{{/if}}" value="{{totalWeight}}" max="{{system.derivedStats.enc.value}}"></progress>
+        <div class="enc-bar-wrapper">
+            <div class="enc-bar-fill" style="width: {{encPct}}%;"></div>
+        </div>
     </div>
 
     <div class="currency-bar">
         <div class="currency-item" data-tooltip="{{localize "WITCHER.Currency.crown"}}">
             <div class="coin-icon copper"><i class="fas fa-coins"></i></div>
             <span class="coin-label">{{localize "WITCHER.Currency.crown"}}</span>
-            <input name="system.currency.crown" type="number" value="{{system.currency.crown}}" placeholder="0" data-dtype="Number" />
+            <div class="currency-input-wrapper">
+                <input name="system.currency.crown" type="number" value="{{system.currency.crown}}" placeholder="0" data-dtype="Number" />
+                <a class="adjust-currency" data-action="adjustCurrency" data-tooltip="Aggiungi/Sottrai Corone">
+                    <i class="fa-solid fa-plus-minus"></i>
+                </a>
+            </div>
         </div>
-        <a class="open-rewards" data-action="openRewards" data-tooltip="Visualizza Registro Ricompense">
-            <i class="fa-solid fa-clipboard-list"></i>
-        </a>
     </div>
 
     <div class="weapon-section">

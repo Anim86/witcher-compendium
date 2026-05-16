@@ -90,12 +90,16 @@ export default class WitcherImprovementDialog extends HandlebarsApplicationMixin
     }
 
     async _prepareContext(options) {
+        const standardIp = this.actor.system.improvementPoints || 0;
+        const magicIp = this.actor.system.magic?.magicImprovementPoints || 0;
+        const isMagicTarget = this._isMagicTarget();
+
         const context = {
             type: this.type,
             isMagic: this.type === 'magic',
             label: this._getTargetLabel(),
             img: this._getTargetImg(),
-            availableIp: this.actor.system.improvementPoints || 0
+            availableIp: isMagicTarget ? (standardIp + magicIp) : standardIp
         };
 
         if (this.type === 'magic') {
@@ -138,6 +142,25 @@ export default class WitcherImprovementDialog extends HandlebarsApplicationMixin
         if (this.type === 'magic') return this.target.img;
         if (this.type === 'skill' && this.options.isProfession) return "icons/svg/book.svg";
         return "icons/svg/upgrade.svg";
+    }
+
+    _isMagicTarget() {
+        if (this.type === 'magic') return true;
+        if (this.type === 'skill') {
+            if (this.options.isProfession) {
+                const profession = this.actor.getList('profession')[0];
+                const path = this.options.path;
+                const index = this.options.index;
+                const skillData = path === 'definingSkill' 
+                    ? profession.system.definingSkill 
+                    : profession.system[path][index];
+                return !!skillData.isMagic;
+            } else {
+                const skill = this._getSkillData(this.target);
+                return !!skill.isMagic;
+            }
+        }
+        return false;
     }
 
     _calculateTotalCost() {
@@ -184,16 +207,39 @@ export default class WitcherImprovementDialog extends HandlebarsApplicationMixin
 
     static async #confirmUpgrade(event, target) {
         const cost = this._calculateTotalCost();
-        const availableIp = this.actor.system.improvementPoints || 0;
+        const standardIp = this.actor.system.improvementPoints || 0;
+        const magicIp = this.actor.system.magic?.magicImprovementPoints || 0;
+        const isMagicTarget = this._isMagicTarget();
+        
+        const totalAvailable = isMagicTarget ? (standardIp + magicIp) : standardIp;
 
-        if (availableIp < cost) return;
+        if (totalAvailable < cost) return;
+
+        let newStandardIp = standardIp;
+        let newMagicIp = magicIp;
+
+        if (isMagicTarget) {
+            // Prioritize Magic IP
+            if (newMagicIp >= cost) {
+                newMagicIp -= cost;
+            } else {
+                const remainder = cost - newMagicIp;
+                newMagicIp = 0;
+                newStandardIp -= remainder;
+            }
+        } else {
+            newStandardIp -= cost;
+        }
+
+        const actorUpdates = {
+            'system.improvementPoints': newStandardIp,
+            'system.magic.magicImprovementPoints': newMagicIp
+        };
 
         if (this.type === 'stat') {
             const updatePath = `system.stats.${this.target}.unmodifiedMax`;
-            await this.actor.update({
-                [updatePath]: this.targetLevel,
-                'system.improvementPoints': availableIp - cost
-            });
+            actorUpdates[updatePath] = this.targetLevel;
+            await this.actor.update(actorUpdates);
         } else if (this.type === 'skill') {
             if (this.options.isProfession) {
                 const path = this.options.path;
@@ -203,14 +249,12 @@ export default class WitcherImprovementDialog extends HandlebarsApplicationMixin
                     : `system.${path}.${index}.level`;
                 
                 await this.professionItem.update({ [updatePath]: this.targetLevel });
-                await this.actor.update({ 'system.improvementPoints': availableIp - cost });
+                await this.actor.update(actorUpdates);
             } else {
                 const skillData = this._getSkillData(this.target);
                 const updatePath = `system.skills.${skillData.stat}.${this.target}.value`;
-                await this.actor.update({
-                    [updatePath]: this.targetLevel,
-                    'system.improvementPoints': availableIp - cost
-                });
+                actorUpdates[updatePath] = this.targetLevel;
+                await this.actor.update(actorUpdates);
             }
         }
         ui.notifications.info(game.i18n.format("WITCHER.Progression.Success", { label: this._getTargetLabel() }));
