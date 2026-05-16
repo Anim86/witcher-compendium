@@ -1,54 +1,50 @@
 {
-    "_id":  "00b99fe70e32c1b8",
-    "name":  "Falcetto",
-    "type":  "weapon",
-    "img":  "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/falcetto.webp",
-    "system":  {
-                "description":  "<p>Ideale per estirpare il grano o, nella mischia, afferrare gli arti del nemico e strappare la carne.</p>",
-                "weight":  1,
-                "cost":  76,
-                "sourcebook":  "MB",
-                "damage":  "1d6+2",
-                "accuracy":  0,
-                "reliability":  {
-                                    "value":  10,
-                                    "max":  10
-                                },
-                "hands":  "1",
-                "type":  {
-                                "text":  "",
-                                "slashing":  true,
-                                "piercing":  true,
-                                "bludgeoning":  false,
-                                "elemental":  false
-                            },
-                "damageProperties":  {
-                                            "armorPiercing":  false,
-                                            "improvedArmorPiercing":  false,
-                                            "ablating":  false,
-                                            "crushingForce":  false,
-                                            "isMeteorite":  false,
-                                            "isNonLethal":  false,
-                                            "effects":  [
-                                                            {
-                                                                "id":  "002eaa3be4efeb58",
-                                                                "name":  "presa",
-                                                                "statusEffect":  null,
-                                                                "percentage":  100,
-                                                                "varEffect":  false
-                                                            }
-                                                        ]
-                                        },
-                "conceal":  "P"
-            },
-    "effects":  [
-
-                ],
-    "flags":  {
-
-            },
-    "_stats":  {
-                "systemId":  "TheWitcherItaNewSystem",
-                "coreVersion":  14
-            }
+    "_id": "00b99fe70e32c1b8",
+    "name": "Falcetto",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/falcetto.webp",
+    "system": {
+        "description": "<p>Ideale per estirpare il grano o, nella mischia, afferrare gli arti del nemico e strappare la carne.</p>",
+        "weight": 1,
+        "cost": 76,
+        "sourcebook": "MB",
+        "damage": "1d6+2",
+        "accuracy": 0,
+        "reliability": 10,
+        "hands": "1",
+        "type": {
+            "text": "",
+            "slashing": true,
+            "piercing": true,
+            "bludgeoning": false,
+            "elemental": false
+        },
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "isMeteorite": false,
+            "isNonLethal": false,
+            "effects": [
+                {
+                    "id": "002eaa3be4efeb58",
+                    "name": "presa",
+                    "statusEffect": null,
+                    "percentage": 100,
+                    "varEffect": false
+                }
+            ]
+        },
+        "conceal": "P",
+        "category": "sword",
+        "range": "",
+        "reliabilityMax": 10
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
 }

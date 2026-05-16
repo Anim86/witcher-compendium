@@ -1,59 +1,50 @@
 {
-    "_id":  "94e00ab95004418a",
-    "name":  "Esboda",
-    "type":  "weapon",
-    "img":  "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/esboda.webp",
-    "system":  {
-                "description":  "<p>Un mercante deve mettere da parte i suoi pregiudizi di fronte a un buon prodotto. L'esboda mettinese è una delle lame da cavalleria più leggere e affilate che abbia mai visto. Ãˆ come un gleddyf, ma molto meglio. Conta che i Neri si affidano ai loro “vassalli” per forgiare le armi migliori, eh?</p>",
-                "cost":  650,
-                "reliability":  {
-                                    "max":  10,
-                                    "value":  10
-                                },
-                "reach":  "N/A",
-                "effects":  "N/A",
-                "sourcebook":  "MB 75",
-                "type":  {
-                                "text":  "",
-                                "slashing":  true,
-                                "piercing":  true,
-                                "bludgeoning":  false,
-                                "elemental":  false
-                            },
-                "damageProperties":  {
-                                            "armorPiercing":  false,
-                                            "improvedArmorPiercing":  false,
-                                            "ablating":  false,
-                                            "crushingForce":  false,
-                                            "isMeteorite":  false,
-                                            "isNonLethal":  false,
-                                            "effects":  [
-
-                                                        ]
-                                        },
-                "weight":  1.5,
-                "rarity":  "Scarsa",
-                "damage":  "5d6",
-                "hands":  1,
-                "accuracy":  1,
-                "unmodifiedMax":  {
-
-                                    },
-                "enhancementSlots":  1
-            },
-    "effects":  [
-
-                ],
-    "folder":  null,
-    "sort":  0,
-    "ownership":  {
-                    "default":  0
-                },
-    "flags":  {
-
-            },
-    "_stats":  {
-                "systemId":  "TheWitcherItaNewSystem",
-                "coreVersion":  14
-            }
+    "_id": "94e00ab95004418a",
+    "name": "Esboda",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/esboda.webp",
+    "system": {
+        "description": "<p>Un mercante deve mettere da parte i suoi pregiudizi di fronte a un buon prodotto. L'esboda mettinese è una delle lame da cavalleria più leggere e affilate che abbia mai visto. Ãˆ come un gleddyf, ma molto meglio. Conta che i Neri si affidano ai loro “vassalli” per forgiare le armi migliori, eh?</p>",
+        "cost": 650,
+        "reliability": 10,
+        "effects": "N/A",
+        "sourcebook": "MB 75",
+        "type": {
+            "text": "",
+            "slashing": true,
+            "piercing": true,
+            "bludgeoning": false,
+            "elemental": false
+        },
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "isMeteorite": false,
+            "isNonLethal": false,
+            "effects": []
+        },
+        "weight": 1.5,
+        "rarity": "Scarsa",
+        "damage": "5d6",
+        "hands": 1,
+        "accuracy": 1,
+        "unmodifiedMax": {},
+        "enhancementSlots": 1,
+        "category": "sword",
+        "range": "N/A",
+        "reliabilityMax": 10
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
 }

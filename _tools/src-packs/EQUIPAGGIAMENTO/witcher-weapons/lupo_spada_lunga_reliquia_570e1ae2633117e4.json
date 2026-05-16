@@ -10,13 +10,10 @@
         "cost": 0,
         "sourcebook": "MB 260",
         "class": "simple",
-        "category": "relic",
+        "category": "sword",
         "damage": "7d6",
         "damageType": "slashing",
-        "reliability": {
-            "value": 15,
-            "max": 15
-        },
+        "reliability": 15,
         "hands": "2",
         "range": "N/A",
         "enhancementSlots": 3,
@@ -46,10 +43,7 @@
             "bludgeoning": false,
             "elemental": false
         },
-        "meleeAttackSkill": "swordsmanship",
-        "attackOptions": [
-            "melee"
-        ]
+        "reliabilityMax": 15
     },
     "effects": [],
     "flags": {},

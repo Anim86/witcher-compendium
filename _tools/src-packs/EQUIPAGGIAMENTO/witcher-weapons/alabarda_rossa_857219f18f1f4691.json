@@ -6,12 +6,8 @@
     "system": {
         "description": "<p>Gli alabardieri redaniani sono tra i soldati meglio organiz- zati e più pericolosi al mondo.â€˜Sti figli di puttana bloccano l'avanzata della cavalleria e le cariche della fanteria come se nulla fosse. La loro alabarda è un capolavoro: due metri d'asta con in cima una pesante ascia da battaglia, una pun- ta sul retro e un lungo rostro. ARMI DA LANCIO</p>",
         "cost": 865,
-        "reliability": {
-            "max": 10,
-            "value": 10
-        },
+        "reliability": 10,
         "accuracy": 0,
-        "reach": "N/A",
         "effects": "Portata",
         "sourcebook": "MB 75",
         "range": "Portata",
@@ -37,10 +33,8 @@
         "hands": 2,
         "unmodifiedMax": {},
         "enhancementSlots": 1,
-        "meleeAttackSkill": "staffspear",
-        "attackOptions": [
-            "melee"
-        ]
+        "category": "polearm",
+        "reliabilityMax": 10
     },
     "effects": [],
     "folder": null,

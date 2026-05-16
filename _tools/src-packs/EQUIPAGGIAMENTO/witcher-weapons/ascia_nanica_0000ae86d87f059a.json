@@ -10,10 +10,7 @@
         "sourcebook": "MB",
         "damage": "5d6+3",
         "accuracy": 3,
-        "reliability": {
-            "value": 15,
-            "max": 15
-        },
+        "reliability": 15,
         "hands": "1",
         "type": {
             "text": "",
@@ -33,10 +30,9 @@
         },
         "enhancementSlots": 1,
         "conceal": "G",
-        "meleeAttackSkill": "melee",
-        "attackOptions": [
-            "melee"
-        ]
+        "category": "axe",
+        "range": "",
+        "reliabilityMax": 15
     },
     "effects": [],
     "flags": {},

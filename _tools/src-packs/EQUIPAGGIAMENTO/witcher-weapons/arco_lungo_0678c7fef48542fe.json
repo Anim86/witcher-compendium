@@ -6,12 +6,8 @@
     "system": {
         "description": "<p>L'arco lungo è il predecessore della balestra. Personalmente, li ho sempre trovati grossi e scomodi. Pero è facile a dirsi quando sei più basso dell'arco. Gli elfi si fidano ciecamente dell'arco lungo e, in mano a loro, è probabilmente l'arma a distanza più letale al mondo dopo una dannata balista. Gli umani in genere si sono dedicati alle balestre, ma già a Nilfgaard ci sono un bel po' di arcieri, tutti letali e con una gran voglia di dimostrarlo.</p>",
         "cost": 475,
-        "reliability": {
-            "max": 10,
-            "value": 10
-        },
+        "reliability": 10,
         "accuracy": 0,
-        "reach": "200m",
         "effects": "N/A",
         "sourcebook": "MB 76",
         "range": "200m",
@@ -37,10 +33,8 @@
         "hands": 2,
         "unmodifiedMax": {},
         "enhancementSlots": 1,
-        "rangedAttackSkill": "archery",
-        "attackOptions": [
-            "ranged"
-        ]
+        "category": "bow",
+        "reliabilityMax": 10
     },
     "effects": [],
     "folder": null,

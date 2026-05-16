@@ -10,13 +10,10 @@
         "cost": 0,
         "sourcebook": "MB 263",
         "class": "simple",
-        "category": "relic",
+        "category": "sword",
         "damage": "3d6",
         "damageType": "silver",
-        "reliability": {
-            "value": 10,
-            "max": 10
-        },
+        "reliability": 10,
         "hands": "2",
         "range": "N/A",
         "enhancementSlots": 3,
@@ -48,10 +45,7 @@
             "bludgeoning": false,
             "elemental": false
         },
-        "meleeAttackSkill": "swordsmanship",
-        "attackOptions": [
-            "melee"
-        ]
+        "reliabilityMax": 10
     },
     "effects": [],
     "flags": {},

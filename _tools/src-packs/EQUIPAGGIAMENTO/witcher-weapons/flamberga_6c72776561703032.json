@@ -1,29 +1,26 @@
 {
-    "_id":  "6c72776561703032",
-    "name":  "Flamberga",
-    "type":  "weapon",
-    "img":  "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/flamberga.webp",
-    "system":  {
-                "description":  "<p>Nel Continente si possono trovare molte stranezze, oggetti curiosi e creature di cui una contadina come voi non ha alcuna conoscenza, né ha mai avuto occasione di vedere. Ecco perché io viaggio! Per far sì che gli angoli della mappa si pieghino verso il centro, per portare l'esotico nei luoghi fin troppo comuni. – Dandelion</p>",
-                "sourcebook":  "LR 167",
-                "weight":  3.5,
-                "cost":  1025,
-                "reliability":  15,
-                "reliabilityMax":  15,
-                "accuracy":  -1,
-                "damage":  "6d6",
-                "hands":  2,
-                "effects":  "Ablativa, Portata",
-                "category":  "Swords"
-            },
-    "effects":  [
-
-                ],
-    "flags":  {
-
-            },
-    "_stats":  {
-                "systemId":  "TheWitcherItaNewSystem",
-                "coreVersion":  14
-            }
+    "_id": "6c72776561703032",
+    "name": "Flamberga",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/flamberga.webp",
+    "system": {
+        "description": "<p>Nel Continente si possono trovare molte stranezze, oggetti curiosi e creature di cui una contadina come voi non ha alcuna conoscenza, né ha mai avuto occasione di vedere. Ecco perché io viaggio! Per far sì che gli angoli della mappa si pieghino verso il centro, per portare l'esotico nei luoghi fin troppo comuni. – Dandelion</p>",
+        "sourcebook": "LR 167",
+        "weight": 3.5,
+        "cost": 1025,
+        "reliability": 15,
+        "reliabilityMax": 15,
+        "accuracy": -1,
+        "damage": "6d6",
+        "hands": 2,
+        "effects": "Ablativa, Portata",
+        "category": "sword",
+        "range": ""
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
 }

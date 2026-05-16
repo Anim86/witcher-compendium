@@ -1,38 +1,34 @@
 {
-    "_id":  "e0a1b2c3d4e5f606",
-    "name":  "Munizioni Traccianti",
-    "type":  "weapon",
-    "img":  "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/munizioni_traccianti.webp",
-    "system":  {
-                "description":  "<p>I traccianti sono imbevuti di una soluzione nauseabonda, che rende facile inseguire i bersagli. Finché il proiettile rimane sul bersaglio, seguirlo, usando il fiuto, non richiede alcun tiro, purché la traccia non sia più vecchia di mezza giornata.</p>",
-                "weight":  0.1,
-                "cost":  22,
-                "quantity":  10,
-                "isAmmo":  true,
-                "type":  {
-                                "text":  "Munizione",
-                                "piercing":  true
-                            },
-                "reliability":  {
-                                    "value":  10,
-                                    "max":  10
-                                },
-                "effects":  "Tracciante",
-                "sourcebook":  "MB 256"
-            },
-    "effects":  [
-
-                ],
-    "folder":  null,
-    "sort":  0,
-    "ownership":  {
-                    "default":  0
-                },
-    "flags":  {
-
-            },
-    "_stats":  {
-                "systemId":  "TheWitcherItaNewSystem",
-                "coreVersion":  14
-            }
+    "_id": "e0a1b2c3d4e5f606",
+    "name": "Munizioni Traccianti",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/munizioni_traccianti.webp",
+    "system": {
+        "description": "<p>I traccianti sono imbevuti di una soluzione nauseabonda, che rende facile inseguire i bersagli. Finché il proiettile rimane sul bersaglio, seguirlo, usando il fiuto, non richiede alcun tiro, purché la traccia non sia più vecchia di mezza giornata.</p>",
+        "weight": 0.1,
+        "cost": 22,
+        "quantity": 10,
+        "isAmmo": true,
+        "type": {
+            "text": "Munizione",
+            "piercing": true
+        },
+        "reliability": 10,
+        "effects": "Tracciante",
+        "sourcebook": "MB 256",
+        "category": "sword",
+        "range": "",
+        "reliabilityMax": 10
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
 }

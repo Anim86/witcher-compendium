@@ -8,16 +8,13 @@
         "sourcebook": "LR 167",
         "weight": 3.5,
         "cost": 375,
-        "reliabilityMax": 5,
+        "reliabilityMax": 10,
         "accuracy": 0,
         "damage": "3d6",
         "hands": "2",
         "effects": "Carica, Portata, Non-Letale",
-        "category": "Spears",
-        "reliability": {
-            "value": 10,
-            "max": 10
-        },
+        "category": "polearm",
+        "reliability": 10,
         "enhancementSlots": 1,
         "type": {
             "text": "",
@@ -43,10 +40,7 @@
                 }
             ]
         },
-        "meleeAttackSkill": "staffspear",
-        "attackOptions": [
-            "melee"
-        ]
+        "range": ""
     },
     "effects": [],
     "flags": {},

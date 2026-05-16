@@ -1,62 +1,57 @@
 {
-    "_id":  "00c7f51114c30a28",
-    "name":  "Bastone da Passeggio Elfico",
-    "type":  "weapon",
-    "img":  "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/bastone_da_passeggio_elfico.webp",
-    "system":  {
-                "description":  "<p>Usati dai grandi Saggi elfici per passeggiare e incanalare enormi poteri magici, ornati in seta e vero oro.</p>",
-                "weight":  1.5,
-                "cost":  975,
-                "sourcebook":  "MB",
-                "damage":  "3d6",
-                "accuracy":  1,
-                "reliability":  {
-                                    "value":  10,
-                                    "max":  10
-                                },
-                "hands":  "2",
-                "range":  "Portata",
-                "type":  {
-                                "text":  "",
-                                "slashing":  false,
-                                "piercing":  false,
-                                "bludgeoning":  true,
-                                "elemental":  false
-                            },
-                "damageProperties":  {
-                                            "armorPiercing":  false,
-                                            "improvedArmorPiercing":  false,
-                                            "ablating":  false,
-                                            "crushingForce":  false,
-                                            "isMeteorite":  false,
-                                            "isNonLethal":  false,
-                                            "effects":  [
-                                                            {
-                                                                "id":  "000686d211375674",
-                                                                "name":  "Focus (3)",
-                                                                "statusEffect":  null,
-                                                                "percentage":  100,
-                                                                "varEffect":  false
-                                                            },
-                                                            {
-                                                                "id":  "0003fcbc120a74de",
-                                                                "name":  "Focus Sup.",
-                                                                "statusEffect":  null,
-                                                                "percentage":  100,
-                                                                "varEffect":  false
-                                                            }
-                                                        ]
-                                        },
-                "enhancementSlots":  2
-            },
-    "effects":  [
-
-                ],
-    "flags":  {
-
-            },
-    "_stats":  {
-                "systemId":  "TheWitcherItaNewSystem",
-                "coreVersion":  14
-            }
+    "_id": "00c7f51114c30a28",
+    "name": "Bastone da Passeggio Elfico",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/bastone_da_passeggio_elfico.webp",
+    "system": {
+        "description": "<p>Usati dai grandi Saggi elfici per passeggiare e incanalare enormi poteri magici, ornati in seta e vero oro.</p>",
+        "weight": 1.5,
+        "cost": 975,
+        "sourcebook": "MB",
+        "damage": "3d6",
+        "accuracy": 1,
+        "reliability": 10,
+        "hands": "2",
+        "range": "Portata",
+        "type": {
+            "text": "",
+            "slashing": false,
+            "piercing": false,
+            "bludgeoning": true,
+            "elemental": false
+        },
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "isMeteorite": false,
+            "isNonLethal": false,
+            "effects": [
+                {
+                    "id": "000686d211375674",
+                    "name": "Focus (3)",
+                    "statusEffect": null,
+                    "percentage": 100,
+                    "varEffect": false
+                },
+                {
+                    "id": "0003fcbc120a74de",
+                    "name": "Focus Sup.",
+                    "statusEffect": null,
+                    "percentage": 100,
+                    "varEffect": false
+                }
+            ]
+        },
+        "enhancementSlots": 2,
+        "category": "staff",
+        "reliabilityMax": 10
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
 }

@@ -6,12 +6,8 @@
     "system": {
         "description": "<p>La spada d'arme redaniana è una lama a una mano con un'elsa ricurva semplice e un bordo affilato. Eh, con la Redania che si espande in tutto il Nord per “difenderci”, queste spade militari cominciano a vedersi ovunque. CONTUNDENTI</p>",
         "cost": 270,
-        "reliability": {
-            "max": 15,
-            "value": 15
-        },
+        "reliability": 15,
         "accuracy": 0,
-        "reach": "N/A",
         "effects": "N/A",
         "sourcebook": "MB 75",
         "type": {
@@ -36,10 +32,9 @@
         "hands": 1,
         "unmodifiedMax": {},
         "conceal": "G",
-        "meleeAttackSkill": "swordsmanship",
-        "attackOptions": [
-            "melee"
-        ]
+        "category": "sword",
+        "range": "N/A",
+        "reliabilityMax": 15
     },
     "effects": [],
     "folder": null,

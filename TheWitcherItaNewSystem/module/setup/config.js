@@ -672,6 +672,19 @@ WITCHER.craftingLevels = {
 };
 
 WITCHER.weapon = {
+    categories: {
+        sword: 'WITCHER.Weapon.Category.Sword',
+        smallBlade: 'WITCHER.Weapon.Category.SmallBlade',
+        axe: 'WITCHER.Weapon.Category.Axe',
+        bludgeoning: 'WITCHER.Weapon.Category.Bludgeoning',
+        staff: 'WITCHER.Weapon.Category.Staff',
+        polearm: 'WITCHER.Weapon.Category.Polearm',
+        brawling: 'WITCHER.Weapon.Category.Brawling',
+        bow: 'WITCHER.Weapon.Category.Bow',
+        crossbow: 'WITCHER.Weapon.Category.Crossbow',
+        thrown: 'WITCHER.Weapon.Category.Thrown',
+        bomb: 'WITCHER.Weapon.Category.Bomb'
+    },
     hands: {
         none: 'WITCHER.Weapon.Hands.none',
         left: 'WITCHER.Weapon.Hands.left',
@@ -700,6 +713,20 @@ WITCHER.weapon = {
             dmgMulti: '/2'
         }
     }
+};
+
+WITCHER.weaponCategorySkills = {
+    sword: 'swordsmanship',
+    smallBlade: 'smallblades',
+    axe: 'melee',
+    bludgeoning: 'melee',
+    staff: 'melee',
+    polearm: 'staffspear',
+    brawling: 'brawling',
+    bow: 'archery',
+    crossbow: 'crossbow',
+    thrown: 'athletics',
+    bomb: 'athletics'
 };
 
 WITCHER.magic = {

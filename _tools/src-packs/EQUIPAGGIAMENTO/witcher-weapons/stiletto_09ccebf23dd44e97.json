@@ -6,11 +6,7 @@
     "system": {
         "description": "<p>Ci volevano i Neri per creare un coltello ancora più facile da nascondere di un pugnale normale. Ha una lama sot- tilissima che rientra nel manico e così la puoi nascondere quasi ovunque.</p>",
         "cost": 275,
-        "reliability": {
-            "max": 5,
-            "value": 5
-        },
-        "reach": "N/A",
+        "reliability": 5,
         "effects": "Occultabile",
         "sourcebook": "MB 43",
         "type": {
@@ -45,10 +41,9 @@
         "unmodifiedMax": {},
         "enhancementSlots": 1,
         "conceal": "M",
-        "meleeAttackSkill": "smallblades",
-        "attackOptions": [
-            "melee"
-        ]
+        "category": "smallBlade",
+        "range": "N/A",
+        "reliabilityMax": 5
     },
     "effects": [],
     "folder": null,

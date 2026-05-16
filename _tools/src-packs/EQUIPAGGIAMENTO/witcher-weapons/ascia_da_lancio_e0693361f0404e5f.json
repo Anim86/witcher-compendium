@@ -6,12 +6,8 @@
     "system": {
         "description": "<p>Con un'ascia da lancio non vai tanto lontano come con un coltello, ma fai parecchio più male. Non c'è niente come un blocco di metallo affilato in cima a un manico che ti finisce addosso.</p>",
         "cost": 75,
-        "reliability": {
-            "max": 10,
-            "value": 10
-        },
+        "reliability": 10,
         "accuracy": 0,
-        "reach": "FIS x2m",
         "effects": "N/A",
         "sourcebook": "MB 76",
         "range": "FISx2m",
@@ -37,10 +33,8 @@
         "hands": 1,
         "unmodifiedMax": {},
         "conceal": "P",
-        "meleeAttackSkill": "melee",
-        "attackOptions": [
-            "melee"
-        ]
+        "category": "thrown",
+        "reliabilityMax": 10
     },
     "effects": [],
     "folder": null,

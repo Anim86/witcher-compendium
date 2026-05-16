@@ -681,7 +681,8 @@
             "attackModifiers": "Modificatori Attacco",
             "attackSize": "Modificatori Taglia Avversario",
             "attackRange": "Modificatori Gittata",
-            "attackCustom": "Modificatori Attacco Personalizzati",
+            "attackCustom": "Modificatore Attacco Personalizzato",
+            "attackCustomMod": "Bonus Attacco Personalizzato",
             "attackStrike": "Tipo di Colpo",
             "attackDamage": "danno",
             "attackMeleeBonus": "Bonus Mischia",
@@ -805,6 +806,20 @@
                 "strong": "Colpo Forte",
                 "joint": "Colpo Combinato",
                 "half": "Danno Dimezzato"
+            },
+            "Category": {
+                "title": "Categoria",
+                "Sword": "Spade",
+                "SmallBlade": "Lame Corte",
+                "Axe": "Asce",
+                "Bludgeoning": "Contundenti",
+                "Staff": "Bastoni",
+                "Polearm": "Armi in Asta",
+                "Brawling": "Rissa",
+                "Bow": "Archi",
+                "Crossbow": "Balestre",
+                "Thrown": "Armi da Lancio",
+                "Bomb": "Bombe"
             }
         },
         "Location": {

@@ -11,8 +11,92 @@ export default class WitcherItem extends Item {
     /** @inheritdoc */
     static migrateData(source) {
         this.migrateSpells(source);
+        this.migrateWeapons(source);
 
         return super.migrateData(source);
+    }
+
+    static migrateWeapons(source) {
+        if (source.type !== 'weapon' || !source.system) return;
+
+        // If category is already set, do not overwrite it
+        if (source.system.category) return;
+
+        const nameU = (source.name || '').toUpperCase();
+        
+        // Define heuristics to bootstrap the new category field
+        let category = '';
+        if (nameU.includes('ARCO') || nameU.includes('BOW')) {
+            category = 'bow';
+        } else if (nameU.includes('BALESTRA') || nameU.includes('CROSSBOW')) {
+            category = 'crossbow';
+        } else if (nameU.includes('LANCIO') || nameU.includes('THROW')) {
+            category = 'thrown';
+        } else if (nameU.includes('BOMBA') || nameU.includes('BOMB')) {
+            category = 'bomb';
+        } else if (
+            nameU.includes('PUGNALE') || 
+            nameU.includes('STILETTO') || 
+            nameU.includes('MANNAIA') || 
+            nameU.includes('DAGA') || 
+            nameU.includes('JAMBIYA') || 
+            nameU.includes('DAGGER') || 
+            nameU.includes('CLEAVER')
+        ) {
+            category = 'smallBlade';
+        } else if (
+            nameU.includes('ASTA') || 
+            nameU.includes('LANCIA') || 
+            nameU.includes('ALABARDA') || 
+            nameU.includes('FORCONE') || 
+            nameU.includes('PARTIGIANA') || 
+            nameU.includes('POLEARM') || 
+            nameU.includes('HALBERD') || 
+            nameU.includes('SPEAR')
+        ) {
+            category = 'polearm';
+        } else if (
+            nameU.includes('SPADA') || 
+            nameU.includes('SWORD') || 
+            nameU.includes('KORD') || 
+            nameU.includes('GLEDDYF') || 
+            nameU.includes('GWYHYR') || 
+            nameU.includes('MESSER') || 
+            nameU.includes('FLAMBERGA') ||
+            nameU.includes('CAROLINE') ||
+            nameU.includes('DESTINO') ||
+            nameU.includes('DEVINE')
+        ) {
+            category = 'sword';
+        } else if (nameU.includes('TIRAPUGNI') || nameU.includes('NUCKLE')) {
+            category = 'brawling';
+        } else if (nameU.includes('ASCIA') || nameU.includes('ACCETTA') || nameU.includes('AXE')) {
+            category = 'axe';
+        } else if (nameU.includes('BASTONE') || nameU.includes('STAFF')) {
+            category = 'staff';
+        } else if (
+            nameU.includes('MARTELLO') || 
+            nameU.includes('MAZZA') || 
+            nameU.includes('MAGLIO') || 
+            nameU.includes('MAZZAPICCHIO') || 
+            nameU.includes('AZZA') ||
+            nameU.includes('HAMMER') || 
+            nameU.includes('MACE') || 
+            nameU.includes('CLUB')
+        ) {
+            category = 'bludgeoning';
+        } else {
+            // Default based on range
+            const rangeVal = (source.system.range || source.system.reach || '').trim().toUpperCase();
+            const isRanged = rangeVal !== '' && rangeVal !== 'N/A';
+            if (isRanged) {
+                category = 'thrown';
+            } else {
+                category = 'sword'; // Safe default
+            }
+        }
+
+        source.system.category = category;
     }
 
     static migrateSpells(source) {
@@ -43,11 +127,11 @@ export default class WitcherItem extends Item {
         if (Object.values(options).some(key => key)) {
             switch (true) {
                 case options.alt:
-                    mapKeyToNumber = 2;
-                    break;
+                     mapKeyToNumber = 2;
+                     break;
                 case options.shift:
-                    mapKeyToNumber = 1;
-                    break;
+                     mapKeyToNumber = 1;
+                     break;
             }
 
             mapKeyToNumber = Math.min(mapKeyToNumber, this.system.attackOptions.size - 1);
@@ -63,6 +147,7 @@ export default class WitcherItem extends Item {
         }
 
         let attackSkill = this.system[attackOption + 'AttackSkill'];
+
         return {
             attackOption,
             skill: attackSkill,

@@ -85,28 +85,20 @@
                 </div>
                 {{/if}}
 
-                <details class="advanced-mods">
-                    <summary><i class="fas fa-plus-circle"></i> {{localize "WITCHER.Context.Details"}}</summary>
+                <details>
+                    <summary>{{localize "WITCHER.Dialog.advanced"}}</summary>
                     <div class="grid-2col-mods">
                         <div class="mod-row">
                             <label>{{localize "WITCHER.Dialog.attackOutsideLOS"}} (+3)</label>
                             <input type="checkbox" name="outsideLOS">
                         </div>
                         <div class="mod-row">
-                            <label>{{localize "WITCHER.Dialog.attackIsFastDraw"}} (-3)</label>
-                            <input type="checkbox" name="isFastDraw">
-                        </div>
-                        <div class="mod-row">
-                            <label>{{localize "WITCHER.Dialog.attackIsAmbush"}} (+5)</label>
-                            <input type="checkbox" name="isAmbush">
-                        </div>
-                        <div class="mod-row">
                             <label>{{localize "WITCHER.Dialog.attackIsPinned"}} (+4)</label>
                             <input type="checkbox" name="isPinned">
                         </div>
                         <div class="mod-row">
-                            <label>{{localize "WITCHER.Dialog.attackIsRicochet"}} (-5)</label>
-                            <input type="checkbox" name="isRicochet">
+                            <label>{{localize "WITCHER.Dialog.attackIsAmbush"}} (+5)</label>
+                            <input type="checkbox" name="isAmbush">
                         </div>
                         <div class="mod-row">
                             <label>{{localize "WITCHER.Dialog.attackIsSilhouetted"}} (+2)</label>
@@ -114,7 +106,7 @@
                         </div>
                         <div class="mod-row">
                             <label>{{localize "WITCHER.Dialog.attackIsAiming"}} (+1)</label>
-                            <input type="number" class="small-input" name="customAim" value=0>
+                            <input type="number" class="small-input" name="customAim" value="0">
                         </div>
                         <div class="mod-row">
                             <label>{{localize "WITCHER.Dialog.attackTargetOutsideLOS"}} (-3)</label>
@@ -135,6 +127,14 @@
                         <div class="mod-row">
                             <label>{{localize "WITCHER.Dialog.attackIsBlinded"}} (-3)</label>
                             <input type="checkbox" name="isBlinded">
+                        </div>
+                        <div class="mod-row">
+                            <label>{{localize "WITCHER.Dialog.attackIsRicochet"}} (-5)</label>
+                            <input type="checkbox" name="isRicochet">
+                        </div>
+                        <div class="mod-row">
+                            <label>{{localize "WITCHER.Dialog.attackIsFastDraw"}} (-3)</label>
+                            <input type="checkbox" name="isFastDraw">
                         </div>
                     </div>
                 </details>

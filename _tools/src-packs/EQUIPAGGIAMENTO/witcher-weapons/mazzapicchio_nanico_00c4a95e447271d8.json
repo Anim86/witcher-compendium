@@ -10,10 +10,7 @@
         "sourcebook": "MB",
         "damage": "5d6+2",
         "accuracy": 0,
-        "reliability": {
-            "value": 15,
-            "max": 15
-        },
+        "reliability": 15,
         "hands": "2",
         "range": "Portata",
         "type": {
@@ -34,10 +31,8 @@
             "effects": []
         },
         "enhancementSlots": 1,
-        "meleeAttackSkill": "melee",
-        "attackOptions": [
-            "melee"
-        ]
+        "category": "bludgeoning",
+        "reliabilityMax": 15
     },
     "effects": [],
     "flags": {},

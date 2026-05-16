@@ -10,10 +10,7 @@
         "sourcebook": "MB",
         "damage": "2d6",
         "accuracy": 0,
-        "reliability": {
-            "value": 5,
-            "max": 5
-        },
+        "reliability": 5,
         "hands": "1",
         "type": {
             "text": "",
@@ -41,10 +38,9 @@
         },
         "enhancementSlots": 1,
         "conceal": "P",
-        "meleeAttackSkill": "smallblades",
-        "attackOptions": [
-            "melee"
-        ]
+        "category": "smallBlade",
+        "range": "",
+        "reliabilityMax": 5
     },
     "effects": [],
     "flags": {},

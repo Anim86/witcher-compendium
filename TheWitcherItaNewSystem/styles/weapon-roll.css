@@ -1,31 +1,34 @@
-.weapon_roll_sheet {
-    background: #1a1a1a;
-    padding: 0;
-    font-family: 'Inter', sans-serif;
-    color: #eee;
+.weapon-roll-dialog {
+    background: #0f0f0f !important;
+    color: #e0e0e0 !important;
+    font-family: 'Inter', sans-serif !important;
 }
 
-.weapon_roll_sheet .scrollable {
-    padding: 10px 15px;
+.weapon_roll_sheet {
+    background: #121212;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 /* Premium Banner Header */
 .premium-banner {
-    background: linear-gradient(90deg, #2c1e14 0%, #1a1a1a 100%);
+    background: linear-gradient(135deg, #2b1d0e 0%, #1a1a1a 100%);
     border-bottom: 2px solid #c8a45d;
-    padding: 8px 12px;
+    padding: 15px 20px;
     display: flex;
     align-items: center;
-    gap: 12px;
-    margin-bottom: 12px;
+    gap: 15px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
 }
 
 .premium-banner .item-img {
-    width: 48px;
-    height: 48px;
-    border: 1px solid #c8a45d;
-    border-radius: 4px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    width: 64px;
+    height: 64px;
+    border: 2px solid #c8a45d;
+    border-radius: 8px;
+    background: #222;
+    padding: 2px;
 }
 
 .premium-banner .item-info-text {
@@ -36,28 +39,33 @@
     margin: 0;
     color: #c8a45d;
     font-family: 'Goudy Old Style', serif;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
+    text-shadow: 1px 1px 2px black;
 }
 
 .premium-banner .item-damage {
     display: block;
-    font-size: 0.9rem;
-    color: #aaa;
+    font-size: 1rem;
+    color: #ddd;
+    margin-top: 4px;
 }
 
 .premium-banner .skill-info {
-    font-size: 0.8rem;
-    color: #888;
+    font-size: 0.85rem;
+    color: #aaa;
+    font-style: italic;
 }
 
 .premium-banner .melee-bonus-badge {
     text-align: center;
-    background: rgba(200, 164, 93, 0.1);
-    padding: 5px 10px;
+    background: rgba(200, 164, 93, 0.15);
+    padding: 8px 12px;
     border: 1px solid #c8a45d;
-    border-radius: 4px;
+    border-radius: 6px;
+    min-width: 80px;
+    box-shadow: inset 0 0 10px rgba(200, 164, 93, 0.2);
 }
 
 .premium-banner .melee-bonus-badge label {
@@ -65,165 +73,176 @@
     font-size: 0.7rem;
     text-transform: uppercase;
     color: #c8a45d;
+    margin-bottom: 2px;
 }
 
 .premium-banner .melee-bonus-badge span {
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    color: #eee;
 }
 
-fieldset {
-    border: 1px solid #444;
-    border-radius: 6px;
-    padding: 6px 10px;
-    margin-bottom: 10px;
-    background: rgba(0, 0, 0, 0.2);
+/* Sections Styling */
+.weapon_roll_sheet fieldset {
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 12px 15px;
+    margin: 0 15px 15px 15px;
+    background: rgba(255, 255, 255, 0.03);
+    transition: all 0.2s ease;
 }
 
-fieldset legend {
-    font-size: 0.65rem;
+.weapon_roll_sheet fieldset:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: #444;
+}
+
+.weapon_roll_sheet fieldset legend {
+    font-size: 0.75rem;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
-    color: #d4af37;
-    padding: 0 5px;
+    letter-spacing: 1px;
+    color: #c8a45d;
+    padding: 0 10px;
     font-weight: bold;
+    font-family: 'Goudy Old Style', serif;
 }
 
-/* Layout Grid */
+/* Form Elements */
+.weapon_roll_sheet .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 8px;
+}
+
+.weapon_roll_sheet .form-group label {
+    font-size: 0.8rem;
+    color: #bbb;
+    text-transform: capitalize;
+}
+
+.weapon_roll_sheet select, 
+.weapon_roll_sheet input[type="text"], 
+.weapon_roll_sheet input[type="number"] {
+    background: #222 !important;
+    border: 1px solid #444 !important;
+    color: #eee !important;
+    border-radius: 4px !important;
+    height: 32px !important;
+    padding: 0 8px !important;
+    font-size: 0.9rem !important;
+}
+
+.weapon_roll_sheet select:focus, 
+.weapon_roll_sheet input:focus {
+    border-color: #c8a45d !important;
+    box-shadow: 0 0 5px rgba(200, 164, 93, 0.3) !important;
+    outline: none !important;
+}
+
+/* Grids */
 .attack-sheet-grid {
-    padding: 0 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px;
-}
-
-.config-section {
-    background: rgba(255,255,255,0.03);
-    border: 1px solid #333;
-    border-radius: 6px;
-    padding: 8px;
-}
-
-.config-section h4 {
-    margin: 0 0 8px 0;
-    border-bottom: 1px solid #444;
-    padding-bottom: 3px;
-    color: #c8a45d;
-    font-size: 0.8rem;
-    text-transform: uppercase;
-}
-
-.grid-2col {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    gap: 8px;
+    gap: 15px;
+    padding: 0 15px;
 }
 
 .grid-3col {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 8px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
 }
 
-.form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    margin-bottom: 8px;
-}
-
-.form-group label {
-    font-size: 0.7rem;
-    color: #aaa;
-    font-weight: bold;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.form-group select, .form-group input {
-    width: 100% !important;
-    background: #2a2a2a !important;
-    border: 1px solid #444 !important;
-    color: white !important;
-    padding: 3px 6px !important;
-    border-radius: 4px !important;
-    height: 28px !important;
-    font-size: 0.8rem !important;
-}
-
-.form-group input[type="checkbox"] {
-    width: 20px;
-    height: 20px;
-    margin: 5px 0;
-}
-
-.full-width {
-    grid-column: span 2;
-}
-
-/* Advanced Modifiers */
-.advanced-mods {
-    margin-top: 10px;
-}
-
-.advanced-mods summary {
-    cursor: pointer;
-    color: #888;
-    font-size: 0.8rem;
-    padding: 5px;
-    user-select: none;
-}
-
-.grid-2col-mods {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-    padding: 10px;
+/* Checkbox Styling */
+.form-group-checkbox {
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
     background: rgba(0,0,0,0.2);
+    padding: 8px 10px;
     border-radius: 4px;
+    border: 1px solid transparent;
+    transition: background 0.2s;
+    cursor: pointer;
 }
 
-.mod-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 0.8rem;
-    padding: 4px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.05);
+.form-group-checkbox:hover {
+    background: rgba(200, 164, 93, 0.1);
+    border-color: rgba(200, 164, 93, 0.2);
 }
 
-.mod-row:last-child {
-    border-bottom: none;
+.form-group-checkbox input[type="checkbox"] {
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #c8a45d;
+    border-radius: 3px;
+    background: #111;
+    position: relative;
+    cursor: pointer;
+}
+
+.form-group-checkbox input[type="checkbox"]:checked::after {
+    content: "✓";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #c8a45d;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 /* Footer Section */
 .attack-footer {
-    margin: 12px 10px 10px 10px;
-    background: rgba(200, 164, 93, 0.05);
-    border: 1px solid #c8a45d55;
-    border-radius: 6px;
-    padding: 10px;
+    margin: 20px 15px 15px 15px;
+    background: rgba(200, 164, 93, 0.08);
+    border: 1px solid #c8a45d;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: inset 0 0 20px rgba(0,0,0,0.3);
+}
+
+.luck-section {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(200, 164, 93, 0.3);
 }
 
 .footer-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 12px;
+    gap: 15px;
 }
 
-.small-input {
-    width: 60px !important;
-    text-align: center;
-}
-
-.error-display {
-    color: #ff5555;
+/* Button styling - targeting DialogV2 buttons */
+.weapon-roll-dialog button[data-button] {
+    background: linear-gradient(to bottom, #443322, #2c1e14);
+    color: #c8a45d;
+    border: 1px solid #c8a45d;
+    font-family: 'Goudy Old Style', serif;
     font-weight: bold;
-    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     padding: 10px;
+    height: auto;
+    transition: all 0.3s ease;
 }
 
-.invisible {
-    display: none !important;
+.weapon-roll-dialog button[data-button]:hover {
+    background: linear-gradient(to bottom, #554433, #3d2d22);
+    box-shadow: 0 0 15px rgba(200, 164, 93, 0.4);
+    color: #eee;
+}
+
+.weapon-roll-dialog button[data-button].default {
+    background: linear-gradient(to bottom, #c8a45d, #8b6e36);
+    color: #111;
+    border-color: #eee;
+}
+
+.weapon-roll-dialog button[data-button].default:hover {
+    background: linear-gradient(to bottom, #d4af37, #a68442);
+    box-shadow: 0 0 20px rgba(200, 164, 93, 0.6);
 }

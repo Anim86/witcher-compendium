@@ -59,6 +59,7 @@ export let weaponAttackMixin = {
             attackSkill: attack,
             displayDmgFormula,
             noAmmo,
+            ammunitionOption,
             noThrowable,
             ammunitions,
             meleeBonus: meleeBonus,
@@ -74,7 +75,7 @@ export let weaponAttackMixin = {
         const result = await DialogV2.prompt({
             window: {
                 title: `${game.i18n.localize('WITCHER.Dialog.attackWith')}: ${weapon.name}`,
-                contentClasses: ['scrollable']
+                contentClasses: ['scrollable', 'weapon-roll-dialog']
             },
             position: { width: 550 },
             content: dialogTemplate,

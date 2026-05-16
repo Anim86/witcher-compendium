@@ -10,10 +10,7 @@
         "sourcebook": "MB",
         "damage": "5d6",
         "accuracy": 0,
-        "reliability": {
-            "value": 15,
-            "max": 15
-        },
+        "reliability": 15,
         "hands": "2",
         "type": {
             "text": "",
@@ -33,10 +30,9 @@
         },
         "enhancementSlots": 1,
         "conceal": "G",
-        "meleeAttackSkill": "melee",
-        "attackOptions": [
-            "melee"
-        ]
+        "category": "bludgeoning",
+        "range": "",
+        "reliabilityMax": 15
     },
     "effects": [],
     "flags": {},

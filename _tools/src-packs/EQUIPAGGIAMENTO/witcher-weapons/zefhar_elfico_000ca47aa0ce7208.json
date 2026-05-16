@@ -10,10 +10,7 @@
         "sourcebook": "MB",
         "damage": "6d6",
         "accuracy": 2,
-        "reliability": {
-            "value": 10,
-            "max": 10
-        },
+        "reliability": 10,
         "hands": "2",
         "range": "350m",
         "type": {
@@ -33,10 +30,8 @@
             "effects": []
         },
         "enhancementSlots": 2,
-        "rangedAttackSkill": "archery",
-        "attackOptions": [
-            "ranged"
-        ]
+        "category": "thrown",
+        "reliabilityMax": 10
     },
     "effects": [],
     "flags": {},

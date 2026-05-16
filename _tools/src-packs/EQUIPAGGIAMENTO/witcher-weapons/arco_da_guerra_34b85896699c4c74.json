@@ -6,12 +6,8 @@
     "system": {
         "description": "<p>L'arco da guerra è roba di fino. Ãˆ stato sviluppato per com- battere i cavalieri con armature di piastre massicce. Questo affare è alto quasi due metri e tira una freccia che arriva a 77 chili di potenza. Sono questi gli archi che si vedono in battaglia. Eh, stai indietro e tiri in cielo, per poi vedere le frecce che ricadono come una pioggia di meteore. Preferisco le balestre, ma rispetto l'arciere che sa usare uno di questi.</p>",
         "cost": 835,
-        "reliability": {
-            "max": 15,
-            "value": 15
-        },
+        "reliability": 15,
         "accuracy": 0,
-        "reach": "300m",
         "effects": "N/A",
         "sourcebook": "MB 76",
         "range": "300m",
@@ -37,10 +33,8 @@
         "hands": 2,
         "unmodifiedMax": {},
         "enhancementSlots": 1,
-        "rangedAttackSkill": "archery",
-        "attackOptions": [
-            "ranged"
-        ]
+        "category": "bow",
+        "reliabilityMax": 15
     },
     "effects": [],
     "folder": null,

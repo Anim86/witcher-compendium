@@ -10,10 +10,7 @@
         "sourcebook": "MB",
         "damage": "2d6",
         "accuracy": -2,
-        "reliability": {
-            "value": 15,
-            "max": 15
-        },
+        "reliability": 15,
         "hands": "2",
         "type": {
             "text": "",
@@ -40,10 +37,9 @@
             ]
         },
         "conceal": "G",
-        "meleeAttackSkill": "melee",
-        "attackOptions": [
-            "melee"
-        ]
+        "category": "sword",
+        "range": "",
+        "reliabilityMax": 15
     },
     "effects": [],
     "flags": {},

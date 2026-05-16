@@ -10,10 +10,7 @@
         "sourcebook": "MB",
         "damage": "2d6+2",
         "accuracy": 1,
-        "reliability": {
-            "value": 5,
-            "max": 5
-        },
+        "reliability": 5,
         "hands": "1",
         "range": "50m",
         "enhancementSlots": 1,
@@ -42,10 +39,8 @@
                 }
             ]
         },
-        "rangedAttackSkill": "crossbow",
-        "attackOptions": [
-            "ranged"
-        ]
+        "category": "crossbow",
+        "reliabilityMax": 5
     },
     "effects": [],
     "flags": {},

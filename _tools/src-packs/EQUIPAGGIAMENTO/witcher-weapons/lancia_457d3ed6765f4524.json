@@ -6,12 +6,8 @@
     "system": {
         "description": "<p>Le lance sono l'arma preferita dai soldati di fanteria. Non sono esattamente piccole, di solito son due metri, ma tengo- no a bada i nemici e scoraggiano le cariche della cavalleria. Sono uno che una volta serviva come balestriere in battaglia e pertanto amo le lance. Avevamo una squadra di lancieri che ci proteggevano dalla cavalleria dei Neri.</p>",
         "cost": 375,
-        "reliability": {
-            "max": 10,
-            "value": 10
-        },
+        "reliability": 10,
         "accuracy": 0,
-        "reach": "N/A",
         "effects": "Portata",
         "sourcebook": "MB 40",
         "range": "Portata",
@@ -37,10 +33,8 @@
         "hands": 2,
         "unmodifiedMax": {},
         "enhancementSlots": 1,
-        "meleeAttackSkill": "staffspear",
-        "attackOptions": [
-            "melee"
-        ]
+        "category": "polearm",
+        "reliabilityMax": 10
     },
     "effects": [],
     "folder": null,

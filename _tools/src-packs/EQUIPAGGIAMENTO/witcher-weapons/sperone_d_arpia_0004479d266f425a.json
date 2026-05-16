@@ -1,62 +1,57 @@
 {
-    "_id":  "0004479d266f425a",
-    "name":  "Sperone d'Arpia",
-    "type":  "weapon",
-    "img":  "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/sperone_d_arpia.webp",
-    "system":  {
-                "description":  "<p>Strano coltello da lancio a lama dritta velenosissimo che vola dritto e non tradisce mai il letale veleno con cui viene spruzzato e intriso.</p>",
-                "weight":  5,
-                "cost":  450,
-                "sourcebook":  "MB",
-                "damage":  "1d6",
-                "accuracy":  1,
-                "reliability":  {
-                                    "value":  10,
-                                    "max":  10
-                                },
-                "hands":  "1",
-                "range":  "FISx4m",
-                "type":  {
-                                "text":  "",
-                                "slashing":  false,
-                                "piercing":  true,
-                                "bludgeoning":  false,
-                                "elemental":  false
-                            },
-                "damageProperties":  {
-                                            "armorPiercing":  false,
-                                            "improvedArmorPiercing":  false,
-                                            "ablating":  false,
-                                            "crushingForce":  false,
-                                            "isMeteorite":  false,
-                                            "isNonLethal":  false,
-                                            "effects":  [
-                                                            {
-                                                                "id":  "000e746b7dfdfc2c",
-                                                                "name":  "avvelenato",
-                                                                "statusEffect":  null,
-                                                                "percentage":  90,
-                                                                "varEffect":  false
-                                                            },
-                                                            {
-                                                                "id":  "000e5c2168dfa452",
-                                                                "name":  "bilanciata",
-                                                                "statusEffect":  null,
-                                                                "percentage":  100,
-                                                                "varEffect":  false
-                                                            }
-                                                        ]
-                                        },
-                "conceal":  "M"
-            },
-    "effects":  [
-
-                ],
-    "flags":  {
-
-            },
-    "_stats":  {
-                "systemId":  "TheWitcherItaNewSystem",
-                "coreVersion":  14
-            }
+    "_id": "0004479d266f425a",
+    "name": "Sperone d'Arpia",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/sperone_d_arpia.webp",
+    "system": {
+        "description": "<p>Strano coltello da lancio a lama dritta velenosissimo che vola dritto e non tradisce mai il letale veleno con cui viene spruzzato e intriso.</p>",
+        "weight": 5,
+        "cost": 450,
+        "sourcebook": "MB",
+        "damage": "1d6",
+        "accuracy": 1,
+        "reliability": 10,
+        "hands": "1",
+        "range": "FISx4m",
+        "type": {
+            "text": "",
+            "slashing": false,
+            "piercing": true,
+            "bludgeoning": false,
+            "elemental": false
+        },
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "isMeteorite": false,
+            "isNonLethal": false,
+            "effects": [
+                {
+                    "id": "000e746b7dfdfc2c",
+                    "name": "avvelenato",
+                    "statusEffect": null,
+                    "percentage": 90,
+                    "varEffect": false
+                },
+                {
+                    "id": "000e5c2168dfa452",
+                    "name": "bilanciata",
+                    "statusEffect": null,
+                    "percentage": 100,
+                    "varEffect": false
+                }
+            ]
+        },
+        "conceal": "M",
+        "category": "thrown",
+        "reliabilityMax": 10
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
 }

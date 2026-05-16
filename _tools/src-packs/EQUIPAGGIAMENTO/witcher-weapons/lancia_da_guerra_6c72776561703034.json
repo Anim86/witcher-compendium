@@ -14,7 +14,7 @@
         "damage": "3d6",
         "hands": "2",
         "effects": "Portata, Carica",
-        "category": "Spears",
+        "category": "polearm",
         "enhancementSlots": 1,
         "type": {
             "text": "",
@@ -40,10 +40,7 @@
                 }
             ]
         },
-        "meleeAttackSkill": "staffspear",
-        "attackOptions": [
-            "melee"
-        ]
+        "range": ""
     },
     "effects": [],
     "flags": {},

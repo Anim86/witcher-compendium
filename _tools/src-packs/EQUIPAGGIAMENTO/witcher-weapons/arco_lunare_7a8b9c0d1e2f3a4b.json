@@ -10,13 +10,10 @@
         "cost": 0,
         "sourcebook": "MB 257",
         "class": "simple",
-        "category": "relic",
+        "category": "bow",
         "damage": "8d6+2",
         "damageType": "piercing",
-        "reliability": {
-            "value": 10,
-            "max": 10
-        },
+        "reliability": 10,
         "hands": "2",
         "range": "Arco Lungo",
         "enhancementSlots": 3,
@@ -60,10 +57,7 @@
             "bludgeoning": false,
             "elemental": false
         },
-        "rangedAttackSkill": "archery",
-        "attackOptions": [
-            "ranged"
-        ]
+        "reliabilityMax": 10
     },
     "effects": [],
     "flags": {},

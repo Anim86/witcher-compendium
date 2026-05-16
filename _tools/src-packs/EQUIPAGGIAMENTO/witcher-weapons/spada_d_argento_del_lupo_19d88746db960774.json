@@ -10,10 +10,7 @@
         "sourcebook": "SW",
         "damage": "2d6+2",
         "accuracy": 1,
-        "reliability": {
-            "value": 10,
-            "max": 10
-        },
+        "reliability": 10,
         "hands": "1",
         "type": {
             "text": "",
@@ -40,10 +37,9 @@
             ]
         },
         "enhancementSlots": 3,
-        "meleeAttackSkill": "swordsmanship",
-        "attackOptions": [
-            "melee"
-        ]
+        "category": "sword",
+        "range": "",
+        "reliabilityMax": 10
     },
     "effects": [],
     "flags": {},

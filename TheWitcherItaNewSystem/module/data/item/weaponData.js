@@ -17,6 +17,7 @@ export default class WeaponData extends CommonItemData {
             ...commonData,
             type: new fields.SchemaField(weaponType()),
             isAmmo: new fields.BooleanField({ initial: false }),
+            category: new fields.StringField({ initial: '' }),
 
             conceal: new fields.StringField({ initial: '' }),
             avail: new fields.StringField({ initial: '' }),
@@ -81,6 +82,50 @@ export default class WeaponData extends CommonItemData {
         }
 
         unwrapAssociatedDiagram(this);
+
+        // Derive attack options and skills from category and range
+        const rangeVal = (this.range || '').trim().toUpperCase();
+        const isRanged = rangeVal !== '' && rangeVal !== 'N/A';
+
+        if (isRanged) {
+            this.attackOptions = new Set(['ranged']);
+            
+            // Map category to Dexterity (DEX) skill
+            let skill = 'athletics'; // Default ranged skill (throwing, bombs, others)
+            if (this.category === 'bow') {
+                skill = 'archery';
+            } else if (this.category === 'crossbow') {
+                skill = 'crossbow';
+            } else if (this.category && CONFIG.WITCHER?.weaponCategorySkills?.[this.category]) {
+                const catSkill = CONFIG.WITCHER.weaponCategorySkills[this.category];
+                if (CONFIG.WITCHER.rangedSkills.includes(catSkill)) {
+                    skill = catSkill;
+                }
+            }
+            this.rangedAttackSkill = skill;
+            this.meleeAttackSkill = '';
+        } else {
+            this.attackOptions = new Set(['melee']);
+
+            // Map category to Reflexes (REF) skill
+            let skill = 'melee'; // Default melee skill
+            if (this.category === 'sword') {
+                skill = 'swordsmanship';
+            } else if (this.category === 'smallBlade') {
+                skill = 'smallblades';
+            } else if (this.category === 'polearm') {
+                skill = 'staffspear';
+            } else if (this.category === 'brawling') {
+                skill = 'brawling';
+            } else if (this.category && CONFIG.WITCHER?.weaponCategorySkills?.[this.category]) {
+                const catSkill = CONFIG.WITCHER.weaponCategorySkills[this.category];
+                if (CONFIG.WITCHER.meleeSkills.includes(catSkill)) {
+                    skill = catSkill;
+                }
+            }
+            this.meleeAttackSkill = skill;
+            this.rangedAttackSkill = '';
+        }
     }
 
     isEnoughThrowable() {
@@ -139,17 +184,10 @@ export default class WeaponData extends CommonItemData {
             !source.attackSkill &&
             (!source.attackOptions || (source.attackOptions instanceof Array && source.attackOptions.length === 0))
         ) {
-            const nameU = (source.name || '').toUpperCase();
-            if (
-                nameU.includes('ARCO') ||
-                nameU.includes('BALESTRA') ||
-                nameU.includes('BOW') ||
-                nameU.includes('CROSSBOW') ||
-                (source.range && source.range !== 'N/A' && source.range !== '')
-            ) {
+            // Check if it has range info
+            if (source.range && source.range !== 'N/A' && source.range !== '') {
                 source.attackOptions = ['ranged'];
-                source.rangedAttackSkill =
-                    nameU.includes('BALESTRA') || nameU.includes('CROSSBOW') ? 'crossbow' : 'archery';
+                source.rangedAttackSkill = source.rangedAttackSkill || 'archery';
             } else {
                 // Default to melee for weapons
                 source.attackOptions = ['melee'];

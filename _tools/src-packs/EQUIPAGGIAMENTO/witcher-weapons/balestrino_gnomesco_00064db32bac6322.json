@@ -1,56 +1,51 @@
 {
-    "_id":  "00064db32bac6322",
-    "name":  "Balestrino Gnomesco",
-    "type":  "weapon",
-    "img":  "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/balestrino_gnomesco.webp",
-    "system":  {
-                "description":  "<p>Costruito come una delicatissima opera d'arte letale, fonde lavorazioni metalliche con il robusto e leggero legno nero gnomesco.</p>",
-                "weight":  1,
-                "cost":  425,
-                "sourcebook":  "MB",
-                "damage":  "2d6",
-                "accuracy":  3,
-                "reliability":  {
-                                    "value":  10,
-                                    "max":  10
-                                },
-                "hands":  "1",
-                "range":  "100m",
-                "type":  {
-                                "text":  "",
-                                "slashing":  false,
-                                "piercing":  true,
-                                "bludgeoning":  false,
-                                "elemental":  false
-                            },
-                "damageProperties":  {
-                                            "armorPiercing":  false,
-                                            "improvedArmorPiercing":  false,
-                                            "ablating":  false,
-                                            "crushingForce":  false,
-                                            "isMeteorite":  false,
-                                            "isNonLethal":  false,
-                                            "effects":  [
-                                                            {
-                                                                "id":  "000f28e98b824aeb",
-                                                                "name":  "Ricarica Lenta",
-                                                                "statusEffect":  null,
-                                                                "percentage":  100,
-                                                                "varEffect":  false
-                                                            }
-                                                        ]
-                                        },
-                "enhancementSlots":  1,
-                "conceal":  "P"
-            },
-    "effects":  [
-
-                ],
-    "flags":  {
-
-            },
-    "_stats":  {
-                "systemId":  "TheWitcherItaNewSystem",
-                "coreVersion":  14
-            }
+    "_id": "00064db32bac6322",
+    "name": "Balestrino Gnomesco",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/balestrino_gnomesco.webp",
+    "system": {
+        "description": "<p>Costruito come una delicatissima opera d'arte letale, fonde lavorazioni metalliche con il robusto e leggero legno nero gnomesco.</p>",
+        "weight": 1,
+        "cost": 425,
+        "sourcebook": "MB",
+        "damage": "2d6",
+        "accuracy": 3,
+        "reliability": 10,
+        "hands": "1",
+        "range": "100m",
+        "type": {
+            "text": "",
+            "slashing": false,
+            "piercing": true,
+            "bludgeoning": false,
+            "elemental": false
+        },
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "isMeteorite": false,
+            "isNonLethal": false,
+            "effects": [
+                {
+                    "id": "000f28e98b824aeb",
+                    "name": "Ricarica Lenta",
+                    "statusEffect": null,
+                    "percentage": 100,
+                    "varEffect": false
+                }
+            ]
+        },
+        "enhancementSlots": 1,
+        "conceal": "P",
+        "category": "thrown",
+        "reliabilityMax": 10
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
 }

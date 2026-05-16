@@ -1,38 +1,34 @@
 {
-    "_id":  "e0a1b2c3d4e5f608",
-    "name":  "Munizioni Sventratrici Elfiche",
-    "type":  "weapon",
-    "img":  "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/munizioni_sventratrici_elfiche.webp",
-    "system":  {
-                "description":  "<p>Le munizioni Sventratrici Elfiche causano sanguinamento come quelle a punta larga. Tuttavia la punta rimane nella ferita e pertanto l'emorragia può essere arrestata solo con una prova di Pronto Soccorso con CD 16 per togliere la cuspide. Gli Scoia'tael le hanno recuperate qualche anno fa da com- mercianti umani. La punta della freccia è a forma di vite, in modo che ti scavi in profondità ed estrarla sia una vera guerra.</p>",
-                "weight":  0.1,
-                "cost":  50,
-                "quantity":  10,
-                "isAmmo":  true,
-                "type":  {
-                                "text":  "Munizione",
-                                "piercing":  true
-                            },
-                "reliability":  {
-                                    "value":  10,
-                                    "max":  10
-                                },
-                "effects":  "Sanguinamento (Vedi MB 86)",
-                "sourcebook":  "MB 86"
-            },
-    "effects":  [
-
-                ],
-    "folder":  null,
-    "sort":  0,
-    "ownership":  {
-                    "default":  0
-                },
-    "flags":  {
-
-            },
-    "_stats":  {
-                "systemId":  "TheWitcherItaNewSystem",
-                "coreVersion":  14
-            }
+    "_id": "e0a1b2c3d4e5f608",
+    "name": "Munizioni Sventratrici Elfiche",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/munizioni_sventratrici_elfiche.webp",
+    "system": {
+        "description": "<p>Le munizioni Sventratrici Elfiche causano sanguinamento come quelle a punta larga. Tuttavia la punta rimane nella ferita e pertanto l'emorragia può essere arrestata solo con una prova di Pronto Soccorso con CD 16 per togliere la cuspide. Gli Scoia'tael le hanno recuperate qualche anno fa da com- mercianti umani. La punta della freccia è a forma di vite, in modo che ti scavi in profondità ed estrarla sia una vera guerra.</p>",
+        "weight": 0.1,
+        "cost": 50,
+        "quantity": 10,
+        "isAmmo": true,
+        "type": {
+            "text": "Munizione",
+            "piercing": true
+        },
+        "reliability": 10,
+        "effects": "Sanguinamento (Vedi MB 86)",
+        "sourcebook": "MB 86",
+        "category": "sword",
+        "range": "",
+        "reliabilityMax": 10
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
 }

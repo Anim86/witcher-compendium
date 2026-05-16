@@ -6,12 +6,8 @@
     "system": {
         "description": "<p>Sulle isole di Skellige i lupi mannari e le sirene sono comuni e i witcher sono rari. Mettici la folle temerarietà del tipico skelliger e ottieni questa bastarda qui: un'ascia lunga due me- tri con un'enorme testa barbuta, adornata da rune skellige.</p>",
         "cost": 960,
-        "reliability": {
-            "max": 15,
-            "value": 15
-        },
+        "reliability": 15,
         "accuracy": 0,
-        "reach": "N/A",
         "effects": "Ablativa Sanguinamento (25%)",
         "sourcebook": "MB 75",
         "type": {
@@ -44,10 +40,9 @@
         "hands": 2,
         "unmodifiedMax": {},
         "enhancementSlots": 1,
-        "meleeAttackSkill": "melee",
-        "attackOptions": [
-            "melee"
-        ]
+        "category": "axe",
+        "range": "N/A",
+        "reliabilityMax": 15
     },
     "effects": [],
     "folder": null,

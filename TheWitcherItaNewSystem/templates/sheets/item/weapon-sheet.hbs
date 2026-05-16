@@ -54,6 +54,12 @@
                 {{selectOptions config.weapon.hands selected=item.system.hands localize=true}}
             </select>
         </div>
+        <div class="property-card">
+            <label>{{localize "WITCHER.Weapon.Category.title"}}</label>
+            <select name="system.category">
+                {{selectOptions config.weapon.categories selected=item.system.category localize=true}}
+            </select>
+        </div>
         {{/unless}}
         <div class="property-card">
             <label>{{localize "WITCHER.Weapon.Short.Concealment"}}</label>

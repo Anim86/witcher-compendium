@@ -6,12 +6,8 @@
     "system": {
         "description": "<p>Non se ne vedono molti di archi corti in guerra. Sono trop- po piccoli per essere davvero validi in battaglia e le frecce non hanno una grande gittata. Ma sono perfetti per caccia- re cervi... e, quando capita, gli intrusi. BASTONI</p>",
         "cost": 290,
-        "reliability": {
-            "max": 10,
-            "value": 10
-        },
+        "reliability": 10,
         "accuracy": 0,
-        "reach": "100m",
         "effects": "N/A",
         "sourcebook": "MB 76",
         "range": "100m",
@@ -37,10 +33,8 @@
         "hands": 2,
         "unmodifiedMax": {},
         "conceal": "G",
-        "rangedAttackSkill": "archery",
-        "attackOptions": [
-            "ranged"
-        ]
+        "category": "bow",
+        "reliabilityMax": 10
     },
     "effects": [],
     "folder": null,

@@ -6,12 +6,8 @@
     "system": {
         "description": "<p>Eh, spade di ferro. Da nano, ti confesso che il concetto mi fa vomitare. Sono scialbe da dar la nausea, ma anche facili da produrre e si possono trovare ovunque, direi.</p>",
         "cost": 160,
-        "reliability": {
-            "max": 10,
-            "value": 10
-        },
+        "reliability": 10,
         "accuracy": 0,
-        "reach": "N/A",
         "effects": "N/A",
         "sourcebook": "MB 41",
         "type": {
@@ -36,10 +32,9 @@
         "hands": 2,
         "unmodifiedMax": {},
         "conceal": "G",
-        "meleeAttackSkill": "swordsmanship",
-        "attackOptions": [
-            "melee"
-        ]
+        "category": "sword",
+        "range": "N/A",
+        "reliabilityMax": 10
     },
     "effects": [],
     "folder": null,
