@@ -6,6 +6,7 @@ import damageProperties from './templates/combat/damagePropertiesData.js';
 import defenseOptions from './templates/combat/defenseOptionsData.js';
 import DefenseProperties from './templates/combat/defensePropertiesData.js';
 import itemEffect from './templates/itemEffectData.js';
+import magicTraining from './templates/magicTrainingData.js';
 
 import RegionProperties from './templates/regions/regionPropertiesData.js';
 
@@ -17,6 +18,7 @@ export default class SpellData extends CommonItemData {
         return {
             // Using destructuring to effectively append our additional data here
             ...commonData,
+            ...magicTraining(),
             class: new fields.StringField({ initial: '' }),
             level: new fields.StringField({ initial: '' }),
             source: new fields.StringField({ initial: '' }),

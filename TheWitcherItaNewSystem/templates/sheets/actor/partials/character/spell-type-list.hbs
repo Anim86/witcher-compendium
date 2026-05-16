@@ -23,6 +23,11 @@
                             <span>{{spell.system.stamina}}</span>
                         {{/if}}
                         <span class="list-controls">
+                            {{#if (not spell.system.isLearned)}}
+                                <a class="magic-training" data-tooltip="{{localize 'WITCHER.Progression.Train'}}">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                </a>
+                            {{/if}}
                             <a class="item-chat" data-tooltip="{{localize 'WITCHER.Item.sendToChat'}}">
                                 <i class="fa-regular fa-message"></i>
                             </a>

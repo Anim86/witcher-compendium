@@ -40,6 +40,26 @@
         }
     },
     "WITCHER": {
+        "Progression": {
+            "Title": "Miglioramento Personaggio",
+            "CurrentLevel": "Livello Attuale",
+            "TargetLevel": "Livello Obiettivo",
+            "TotalCost": "Costo Totale",
+            "AvailableIP": "P.I. Disponibili",
+            "Confirm": "Conferma Miglioramento",
+            "Success": "{label} aumentata con successo!",
+            "NotEnoughIP": "P.I. insufficienti (Richiesti: {cost}, Disponibili: {available})",
+            "StatCapReached": "Il livello massimo per le statistiche è 10.",
+            "SkillCapReached": "Il livello massimo per le abilità è 10.",
+            "BranchRequirementNotMet": "Devi investire almeno 5 punti nell'abilità precedente.",
+            "TrainingDays": "Giorni di Studio",
+            "Successes": "Successi Accumulati",
+            "Train": "Tira per l'Esercitazione",
+            "PayIP": "Paga P.I. Iniziali",
+            "TrainingComplete": "Addestramento completato! {label} appresa.",
+            "TrainingFailed": "Esercitazione fallita. Aggiunto 1 giorno di studio.",
+            "TrainingSuccess": "Ottimo progresso! Successo accumulato."
+        },
         "Description": "Descrizione",
         "RollInit": "Tira Iniziativa",
         "RollCrit": "Tira Critico",

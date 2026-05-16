@@ -2,6 +2,7 @@ import CommonItemData from './commonItemData.js';
 import defenseOptions from './templates/combat/defenseOptionsData.js';
 import component from './templates/componentData.js';
 import RegionProperties from './templates/regions/regionPropertiesData.js';
+import magicTraining from './templates/magicTrainingData.js';
 import { spellVisualMixin } from './mixin/spellVisualMixin.js';
 
 const fields = foundry.data.fields;
@@ -12,6 +13,7 @@ export default class RitualData extends CommonItemData {
         return {
             // Using destructuring to effectively append our additional data here
             ...commonData,
+            ...magicTraining(),
             level: new fields.StringField({ initial: '' }),
 
             stamina: new fields.NumberField({ initial: 0 }),

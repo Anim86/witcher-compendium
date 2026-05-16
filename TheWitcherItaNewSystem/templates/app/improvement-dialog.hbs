@@ -1,0 +1,83 @@
+<div class="improvement-dialog-container {{type}}" data-application-part="main">
+    <header class="improvement-header">
+        <img src="{{img}}" alt="{{label}}" class="improvement-icon" />
+        <div class="improvement-title">
+            <h2>{{label}}</h2>
+            <span class="improvement-type">{{localize typeLabel}}</span>
+        </div>
+    </header>
+
+    <div class="improvement-content">
+        {{#if isMagic}}
+            <div class="magic-training-section">
+                <div class="training-stats">
+                    <div class="stat-box">
+                        <span class="label">{{localize 'WITCHER.Progression.TrainingDays'}}</span>
+                        <span class="value">{{daysSpent}} / {{totalDays}}</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="label">{{localize 'WITCHER.Progression.Successes'}}</span>
+                        <span class="value">{{successesAccumulated}} / {{totalSuccesses}}</span>
+                    </div>
+                </div>
+                
+                <div class="progress-container">
+                    <div class="progress-bar" style="width: {{progress}}%"></div>
+                </div>
+
+                <div class="training-actions">
+                    {{#if (not ipPaid)}}
+                        <button class="standard-button gold pay-ip" data-action="payIp">
+                            <i class="fas fa-coins"></i> {{localize 'WITCHER.Progression.PayIP'}} ({{cost}} P.I.)
+                        </button>
+                    {{else}}
+                        <div class="training-info">
+                            <p>{{localize 'WITCHER.Progression.TrainingInfo'}}</p>
+                            <button class="standard-button blue do-training" data-action="doTraining" {{#if isComplete}}disabled{{/if}}>
+                                <i class="fas fa-dice-d20"></i> {{localize 'WITCHER.Progression.Train'}} (CD {{dc}})
+                            </button>
+                        </div>
+                    {{/if}}
+                </div>
+            </div>
+        {{else}}
+            <div class="upgrade-section">
+                <div class="current-value-display">
+                    <span class="label">{{localize 'WITCHER.Progression.CurrentLevel'}}</span>
+                    <span class="value">{{currentLevel}}</span>
+                </div>
+
+                <div class="target-selector">
+                    <label>{{localize 'WITCHER.Progression.TargetLevel'}}</label>
+                    <div class="selector-controls">
+                        <button class="control-btn" data-action="decreaseTarget" {{#if (eq targetLevel minTarget)}}disabled{{/if}}>-</button>
+                        <span class="target-value">{{targetLevel}}</span>
+                        <button class="control-btn" data-action="increaseTarget" {{#if (eq targetLevel maxTarget)}}disabled{{/if}}>+</button>
+                    </div>
+                </div>
+
+                <div class="cost-summary">
+                    <div class="cost-line">
+                        <span>{{localize 'WITCHER.Progression.TotalCost'}}</span>
+                        <span class="cost-value {{#if (gt totalCost availableIp)}}error{{/if}}">{{totalCost}} P.I.</span>
+                    </div>
+                    <div class="available-line">
+                        <span>{{localize 'WITCHER.Progression.AvailableIP'}}</span>
+                        <span>{{availableIp}} P.I.</span>
+                    </div>
+                </div>
+
+                {{#if requirementError}}
+                    <div class="requirement-warning">
+                        <i class="fas fa-exclamation-triangle"></i> {{localize requirementError}}
+                    </div>
+                {{/if}}
+
+                <button class="standard-button gold confirm-upgrade" data-action="confirmUpgrade" 
+                    {{#if (or (eq totalCost 0) (or (gt totalCost availableIp) requirementError))}}disabled{{/if}}>
+                    <i class="fas fa-check"></i> {{localize 'WITCHER.Progression.Confirm'}}
+                </button>
+            </div>
+        {{/if}}
+    </div>
+</div>

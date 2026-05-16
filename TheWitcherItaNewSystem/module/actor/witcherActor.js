@@ -15,7 +15,6 @@ import ChatMessageData from '../chatMessage/chatMessageData.js';
 import { professionMixin } from './mixins/professionMixin.js';
 import { armorMixin } from './mixins/armorMixin.js';
 import { healMixin } from './mixins/healMixin.js';
-import { progressionMixin } from './mixins/progressionMixin.js';
 import { rewardsMixin } from './mixins/rewardsMixin.js';
 import { craftingMixin } from './mixins/craftingMixin.js';
 
@@ -1160,6 +1159,5 @@ Object.assign(WitcherActor.prototype, verbalCombatMixin);
 Object.assign(WitcherActor.prototype, locationMixin);
 Object.assign(WitcherActor.prototype, temporaryEffectMixin);
 Object.assign(WitcherActor.prototype, armorMixin);
-Object.assign(WitcherActor.prototype, progressionMixin);
 Object.assign(WitcherActor.prototype, rewardsMixin);
 Object.assign(WitcherActor.prototype, craftingMixin);

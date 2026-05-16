@@ -20,6 +20,7 @@ import { deprecationWarnings } from './setup/deprecations.js';
 import { applyActiveEffectToActorViaId } from './scripts/temporaryEffects/applyActiveEffect.js';
 import { preloadHandlebarsTemplates, registerHandelbarHelpers } from './setup/handlebars.js';
 import Rewards from './app/reward/reward.js';
+import WitcherImprovementDialog from './app/WitcherImprovementDialog.js';
 import { registerQueries } from './setup/queries.js';
 
 Hooks.once('init', function () {
@@ -40,7 +41,8 @@ Hooks.once('init', function () {
         rewards: {
             ip: Rewards.handoutIpRewards,
             currency: Rewards.handoutCurrencyRewards
-        }
+        },
+        improvement: WitcherImprovementDialog
     };
 
     registerSettings();

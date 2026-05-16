@@ -2415,3 +2415,12 @@ WITCHER.armorEffects = [
         addsResistance: true
     }
 ];
+
+WITCHER.progression = {
+    magic: {
+        novice: { ip: 10, days: 4, successes: 2, dc: 14 },
+        journeyman: { ip: 20, days: 7, successes: 4, dc: 18 },
+        master: { ip: 30, days: 21, successes: 6, dc: 22 },
+        archpriest: { ip: 40, days: 35, successes: 8, dc: 24 }
+    }
+};

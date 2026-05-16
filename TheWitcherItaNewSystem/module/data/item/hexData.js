@@ -1,5 +1,6 @@
 import CommonItemData from './commonItemData.js';
 import defenseOptions from './templates/combat/defenseOptionsData.js';
+import magicTraining from './templates/magicTrainingData.js';
 
 const fields = foundry.data.fields;
 
@@ -9,6 +10,7 @@ export default class HexData extends CommonItemData {
         return {
             // Using destructuring to effectively append our additional data here
             ...commonData,
+            ...magicTraining(),
             danger: new fields.StringField({ initial: '' }),
             stamina: new fields.NumberField({ initial: 0 }),
 

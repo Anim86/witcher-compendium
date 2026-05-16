@@ -39,6 +39,26 @@
         }
     },
     "WITCHER": {
+        "Progression": {
+            "Title": "Character Improvement",
+            "CurrentLevel": "Current Level",
+            "TargetLevel": "Target Level",
+            "TotalCost": "Total Cost",
+            "AvailableIP": "Available IP",
+            "Confirm": "Confirm Improvement",
+            "Success": "{label} increased successfully!",
+            "NotEnoughIP": "Not enough IP (Required: {cost}, Available: {available})",
+            "StatCapReached": "Statistics max level is 10.",
+            "SkillCapReached": "Skills max level is 10.",
+            "BranchRequirementNotMet": "You must invest at least 5 points in the previous skill.",
+            "TrainingDays": "Training Days",
+            "Successes": "Accumulated Successes",
+            "Train": "Roll for Training",
+            "PayIP": "Pay Initial IP",
+            "TrainingComplete": "Training complete! {label} learned.",
+            "TrainingFailed": "Training failed. Added 1 day of study.",
+            "TrainingSuccess": "Great progress! Success accumulated."
+        },
         "Description": "Description",
         "RollInit": "Roll Initiative",
         "RollCrit": "Roll Critical",
