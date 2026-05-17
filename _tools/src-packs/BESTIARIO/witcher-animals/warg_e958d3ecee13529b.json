@@ -1,34 +1,34 @@
 {
-    "_id": "d847c2fbfd02418a",
-    "name": "Lupo",
+    "_id": "e958d3ecee13529b",
+    "name": "Warg",
     "type": "monster",
-    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/lupo.webp",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-animals/warg.webp",
     "system": {
         "stats": {
             "int": {
-                "value": 1,
-                "max": 1,
-                "unmodifiedMax": 1
+                "value": 2,
+                "max": 2,
+                "unmodifiedMax": 2
             },
             "ref": {
-                "value": 4,
-                "max": 4,
-                "unmodifiedMax": 4
-            },
-            "dex": {
-                "value": 6,
-                "max": 6,
-                "unmodifiedMax": 6
-            },
-            "body": {
                 "value": 5,
                 "max": 5,
                 "unmodifiedMax": 5
             },
-            "spd": {
+            "dex": {
                 "value": 7,
                 "max": 7,
                 "unmodifiedMax": 7
+            },
+            "body": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "spd": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
             },
             "emp": {
                 "value": 1,
@@ -41,9 +41,9 @@
                 "unmodifiedMax": 1
             },
             "will": {
-                "value": 4,
-                "max": 4,
-                "unmodifiedMax": 4
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
             },
             "luck": {
                 "value": 0,
@@ -56,32 +56,76 @@
             }
         },
         "skills": {
-            "int": {},
-            "ref": {},
-            "dex": {
-                "brawling": {
-                    "value": 5,
+            "int": {
+                "awareness": {
+                    "value": 4,
+                    "isVisible": true
+                },
+                "wildernessSurvival": {
+                    "value": 7,
                     "isVisible": true
                 }
             },
-            "body": {},
+            "ref": {
+                "brawling": {
+                    "value": 1,
+                    "isVisible": true
+                },
+                "melee": {
+                    "value": 1,
+                    "isVisible": true
+                }
+            },
+            "dex": {
+                "athletics": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 6,
+                    "isVisible": true
+                }
+            },
+            "body": {
+                "physique": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "endurance": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
             "emp": {},
             "cra": {},
-            "will": {}
+            "will": {
+                "courage": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "resistMagic": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            }
         },
         "details": {
-            "biography": "<p>Predatori comuni che cacciano in branco nelle foreste e pianure, letali se riescono a circondare la preda.</p>",
-            "threat": "Facile",
-            "reward": 10,
+            "biography": "<p>I warg sono più grossi dei lupi comuni, hanno la pelliccia marrone-rossiccia e occhi rossi luminescenti. Sono decisamente più intelligenti e guidano i branchi.</p>",
+            "threat": "Media",
+            "reward": 20,
             "monsterType": "Beast",
             "difficulty": "SEMPLICE",
-            "height": "Circa 0,8m al garrese",
-            "weight": "Circa 68 Kg",
+            "height": "Circa 1m al garrese",
+            "weight": "Circa 80 Kg",
             "environment": "Foreste e pianure",
-            "organization": "Branchi da 3 a 6",
+            "organization": "Solitario (alla guida di branchi di lupi)",
             "vulnerability": "",
-            "intelligence": "Circa come un cane",
-            "bounty": 10,
+            "intelligence": "Superiore a un cane",
+            "bounty": 20,
             "academicKnowledge": "",
             "common": "Non c'è molto da dire sui lupi. Eh, sono dei maledetti bastardi che vivono nelle foreste e attaccano i viaggiatori. Di solito agiscono in branchi di 5 o 6 e hanno paura del fuoco. Se dovete combatterli fate in modo che non possano circondarvi, perché vi salteranno addosso da tutte le parti. Non è un bel modo di morire, secondo me. Le cose vanno sempre peggio dall'inizio della guerra, con tutti quei cadaveri in giro i lupi sono sempre più spavaldi. Eh, tanti credono che siano pure un segno di sventura. Non mi ricordo più quante profezie iniziano con un lupo. Seriamente, sono bestiacce maledette."
         },
@@ -92,14 +136,14 @@
                 "unmodifiedMax": 0
             },
             "rec": {
-                "value": 4,
-                "max": 4,
-                "unmodifiedMax": 4
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
             },
             "resolve": {
-                "value": 21,
-                "max": 21,
-                "unmodifiedMax": 21
+                "value": 24,
+                "max": 24,
+                "unmodifiedMax": 24
             },
             "stun": {
                 "value": 4,
@@ -107,19 +151,19 @@
                 "unmodifiedMax": 4
             },
             "woundTreshold": {
-                "value": 4,
-                "max": 4,
-                "unmodifiedMax": 4
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
             },
             "hp": {
-                "value": 20,
-                "max": 20,
-                "unmodifiedMax": 20
+                "value": 30,
+                "max": 30,
+                "unmodifiedMax": 30
             },
             "sta": {
-                "value": 20,
-                "max": 20,
-                "unmodifiedMax": 20
+                "value": 30,
+                "max": 30,
+                "unmodifiedMax": 30
             },
             "focus": {
                 "value": 0,
@@ -127,26 +171,26 @@
                 "unmodifiedMax": 0
             }
         },
-        "description": "<p>Predatori comuni che cacciano in branco nelle foreste e pianure, letali se riescono a circondare la preda.</p>",
+        "description": "<p>I warg sono più grossi dei lupi comuni, hanno la pelliccia marrone-rossiccia e occhi rossi luminescenti. Sono decisamente più intelligenti e guidano i branchi.</p>",
         "sourcebook": "MB 287",
         "monsterType": "Beast",
         "difficulty": "semplice",
-        "bounty": 10,
+        "bounty": 20,
         "armorHead": 0,
         "armorUpper": 0,
         "armorLower": 0,
-        "height": "Circa 0,8m al garrese",
-        "weight": "Circa 68 Kg",
+        "height": "Circa 1m al garrese",
+        "weight": "Circa 80 Kg",
         "environment": "Foreste e pianure",
-        "intelligence": "Circa come un cane",
-        "organization": "Branchi da 3 a 6",
+        "intelligence": "Superiore a un cane",
+        "organization": "Solitario (alla guida di branchi di lupi)",
         "common": "Non c'è molto da dire sui lupi. Eh, sono dei maledetti bastardi che vivono nelle foreste e attaccano i viaggiatori. Di solito agiscono in branchi di 5 o 6 e hanno paura del fuoco. Se dovete combatterli fate in modo che non possano circondarvi, perché vi salteranno addosso da tutte le parti. Non è un bel modo di morire, secondo me. Le cose vanno sempre peggio dall'inizio della guerra, con tutti quei cadaveri in giro i lupi sono sempre più spavaldi. Eh, tanti credono che siano pure un segno di sventura. Non mi ricordo più quante profezie iniziano con un lupo. Seriamente, sono bestiacce maledette.",
         "academicKnowledge": "",
         "vulnerability": ""
     },
     "items": [
         {
-            "_id": "9029cc784656449f",
+            "_id": "883b7879e72243b4",
             "name": "Fegato di Lupo (x1)",
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
@@ -161,7 +205,7 @@
             }
         },
         {
-            "_id": "17d3727cb7b84fd1",
+            "_id": "402a356dee8a464d",
             "name": "Grasso di Cane (x1d6)",
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
@@ -176,7 +220,7 @@
             }
         },
         {
-            "_id": "26cbc11ea46043c8",
+            "_id": "420a5eebe45644dc",
             "name": "Ossa di Bestia (x1d6)",
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
@@ -191,7 +235,7 @@
             }
         },
         {
-            "_id": "6b9d6f277b1e4471",
+            "_id": "16bd6b90b12c4f01",
             "name": "Pelle di Lupo (x1)",
             "type": "valuable",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
@@ -206,13 +250,13 @@
             }
         },
         {
-            "_id": "310894e1dabe78",
+            "_id": "82006adee6e4c8",
             "name": "Morso",
             "type": "weapon",
             "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
                 "description": "Sanguinamento (25%)",
-                "damage": "2d6+2",
+                "damage": "4d6",
                 "accuracy": 0,
                 "effects": "Sanguinamento (25%)",
                 "rateOfFire": 1

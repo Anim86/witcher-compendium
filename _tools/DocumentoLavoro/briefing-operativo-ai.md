@@ -201,7 +201,7 @@ _tools/src-packs/
     └── Trofei
         └── witcher-trophies
 ```
-*Ultimo aggiornamento automatico: 16 maggio 2026*
+*Ultimo aggiornamento automatico: 17 maggio 2026*
 <!-- FOLDER_STRUCTURE_END -->
 
 ## 📈 6. PROGRESSIONE E CHARACTER SHEET
