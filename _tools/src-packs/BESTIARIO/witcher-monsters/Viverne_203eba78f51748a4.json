@@ -56,33 +56,6 @@
             }
         },
         "skills": {
-            "accortezza": {
-                "value": 10
-            },
-            "atletica": {
-                "value": 8
-            },
-            "coraggio": {
-                "value": 8
-            },
-            "eludere": {
-                "value": 6
-            },
-            "mischia": {
-                "value": 8
-            },
-            "nascondersi": {
-                "value": 6
-            },
-            "rissa": {
-                "value": 7
-            },
-            "sopravvivenza": {
-                "value": 9
-            },
-            "tempra": {
-                "value": 8
-            },
             "int": {
                 "awareness": {
                     "value": 9,
@@ -91,29 +64,9 @@
                 "wildernessSurvival": {
                     "value": 8,
                     "isVisible": true
-                }
-            },
-            "dex": {
-                "athletics": {
-                    "value": 0,
-                    "isVisible": true
                 },
-                "stealth": {
-                    "value": 0,
-                    "isVisible": true
-                },
-                "brawling": {
-                    "value": 10,
-                    "isVisible": true
-                }
-            },
-            "will": {
-                "courage": {
-                    "value": 2,
-                    "isVisible": true
-                },
-                "resistMagic": {
-                    "value": 2,
+                "wilderness": {
+                    "value": 9,
                     "isVisible": true
                 }
             },
@@ -123,18 +76,46 @@
                     "isVisible": true
                 },
                 "brawling": {
-                    "value": 0,
+                    "value": 7,
+                    "isVisible": true
+                },
+                "dodge": {
+                    "value": 6,
+                    "isVisible": true
+                }
+            },
+            "dex": {
+                "athletics": {
+                    "value": 8,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 6,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 10,
                     "isVisible": true
                 }
             },
             "body": {
                 "endurance": {
-                    "value": 0,
+                    "value": 8,
                     "isVisible": true
                 }
             },
             "emp": {},
-            "cra": {}
+            "cra": {},
+            "will": {
+                "courage": {
+                    "value": 2,
+                    "isVisible": true
+                },
+                "resistMagic": {
+                    "value": 2,
+                    "isVisible": true
+                }
+            }
         },
         "details": {
             "biography": "<p>Le viverne sono tipo draghi con due zampe, credo. Dicono che una volta uccisi, berne il sangue dia potere sul fuoco. – Rodolf Kazmer</p><p>Le viverne infestano i picchi montani e danno la caccia a chi passa nelle vicinanze. Attaccano piombando dal cielo, tentando di restare in volo il più a lungo possibile. Non possono soffiare fuoco come i draghi, ma sputano veleno acido con grande precisione.</p>",

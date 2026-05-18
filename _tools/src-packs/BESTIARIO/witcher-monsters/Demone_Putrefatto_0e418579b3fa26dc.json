@@ -55,40 +55,23 @@
             }
         },
         "skills": {
-            "accortezza": {
-                "value": 0
+            "int": {
+                "awareness": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "wilderness": {
+                    "value": 0,
+                    "isVisible": true
+                }
             },
-            "atletica": {
-                "value": 0
-            },
-            "coraggio": {
-                "value": 0
-            },
-            "intimidire": {
-                "value": 0
-            },
-            "nascondersi": {
-                "value": 0
-            },
-            "prestanza": {
-                "value": 0
-            },
-            "resistereAllaMagia": {
-                "value": 0
-            },
-            "rissa": {
-                "value": 0
-            },
-            "sopravvivenza": {
-                "value": 0
-            },
-            "tempra": {
-                "value": 0
-            },
-            "int": {},
             "ref": {
                 "dodge": {
                     "value": 6,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 0,
                     "isVisible": true
                 }
             },
@@ -100,12 +83,38 @@
                 "brawling": {
                     "value": 5,
                     "isVisible": true
+                },
+                "stealth": {
+                    "value": 0,
+                    "isVisible": true
                 }
             },
-            "body": {},
+            "body": {
+                "physique": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "endurance": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
             "emp": {},
             "cra": {},
-            "will": {}
+            "will": {
+                "courage": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "intimidation": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "resistmagic": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            }
         },
         "details": {
             "biography": "<p>Se sei mai passato per un campo di battaglia avrai visto 'sti bastardi. Ugh, fanno ribrezzo pure a me. La gente dice che i demoni putrefatti sono cadaveri rianimati con la magia nera. Che se ammazzi abbastanza gente ne avrai uno o due. Eh, nessuno sa perché ritornino in vita, ma c'è chi crede che sia perché erano avidi o depravati quando la loro anima era ancora su questa terra. Eh, comunque, se li hai tra le palle devi colpire alla radice. Trova tutti i cadaveri intorno al villaggio e bruciali. Se non lo fai, altri demoni putrefatti risorgeranno e dovrai occuparti anche di quelli! Quando hai finito con i cadaveri dai la caccia a 'sti abomini. Meglio farlo in gruppo. – Rodolf Kazmer</p>",

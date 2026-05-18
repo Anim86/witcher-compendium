@@ -55,48 +55,62 @@
             }
         },
         "skills": {
-            "accortezza": {
-                "value": 0
+            "int": {
+                "awareness": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "wilderness": {
+                    "value": 0,
+                    "isVisible": true
+                }
             },
-            "atletica": {
-                "value": 0
+            "ref": {
+                "brawling": {
+                    "value": 0,
+                    "isVisible": true
+                }
             },
-            "coraggio": {
-                "value": 0
-            },
-            "intimidire": {
-                "value": 0
-            },
-            "nascondersi": {
-                "value": 0
-            },
-            "prestanza": {
-                "value": 0
-            },
-            "resistereAllaMagia": {
-                "value": 0
-            },
-            "rissa": {
-                "value": 0
-            },
-            "sopravvivenza": {
-                "value": 0
-            },
-            "tempra": {
-                "value": 0
-            },
-            "int": {},
-            "ref": {},
             "dex": {
                 "brawling": {
                     "value": 7,
                     "isVisible": true
+                },
+                "athletics": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 0,
+                    "isVisible": true
                 }
             },
-            "body": {},
+            "body": {
+                "physique": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "endurance": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
             "emp": {},
             "cra": {},
-            "will": {}
+            "will": {
+                "courage": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "intimidation": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "resistmagic": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            }
         },
         "details": {
             "biography": "<p>Foglet? Fogler? Sentite entrambe, credo sia solo dialetto! Eh, comunque non ho mai avuto la fortuna di vederne uno. Dicono che infestino le paludi sulle le rive del Pontar e dello Yaruga, ma se è vero devono essere molto silenziosi. C'è un vecchio racconto popolare che ho sentito a Verden: dicono che i foglet arrivano con la nebbia e si nascondono al suo interno! Se ti capita di veder calare un banco di nebbia di notte, pianta i piedi e stai fermo. I foglet possono farti vedere cose nella nebbia. Se proprio devi continuare a muoverti lavati gli occhi con acqua di palude. – Rodolf Kazmer</p>",

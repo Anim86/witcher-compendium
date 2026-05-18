@@ -56,37 +56,50 @@
             }
         },
         "skills": {
-            "accortezza": {
-                "value": 6
+            "int": {
+                "awareness": {
+                    "value": 6,
+                    "isVisible": true
+                },
+                "wilderness": {
+                    "value": 2,
+                    "isVisible": true
+                }
             },
-            "atletica": {
-                "value": 6
+            "ref": {
+                "dodge": {
+                    "value": 6,
+                    "isVisible": true
+                },
+                "melee": {
+                    "value": 8,
+                    "isVisible": true
+                }
             },
-            "coraggio": {
-                "value": 10
+            "dex": {
+                "athletics": {
+                    "value": 6,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 2,
+                    "isVisible": true
+                }
             },
-            "eludere": {
-                "value": 6
+            "body": {
+                "endurance": {
+                    "value": 9,
+                    "isVisible": true
+                }
             },
-            "mischia": {
-                "value": 8
-            },
-            "nascondersi": {
-                "value": 2
-            },
-            "sopravvivenza": {
-                "value": 2
-            },
-            "tempra": {
-                "value": 9
-            },
-            "int": {},
-            "ref": {},
-            "dex": {},
-            "body": {},
             "emp": {},
             "cra": {},
-            "will": {}
+            "will": {
+                "courage": {
+                    "value": 10,
+                    "isVisible": true
+                }
+            }
         },
         "details": {
             "biography": "<p>Il cavallo da guerra è addestrato per resistere al caos del campo di battaglia. Più massiccio e coraggioso di un comune cavallo, è una risorsa inestimabile per qualsiasi cavaliere.</p>",

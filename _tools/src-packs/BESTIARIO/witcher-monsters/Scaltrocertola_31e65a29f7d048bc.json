@@ -55,40 +55,23 @@
             }
         },
         "skills": {
-            "accortezza": {
-                "value": 0
+            "int": {
+                "awareness": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "wilderness": {
+                    "value": 0,
+                    "isVisible": true
+                }
             },
-            "atletica": {
-                "value": 0
-            },
-            "coraggio": {
-                "value": 0
-            },
-            "intimidire": {
-                "value": 0
-            },
-            "nascondersi": {
-                "value": 0
-            },
-            "prestanza": {
-                "value": 0
-            },
-            "resistereAllaMagia": {
-                "value": 0
-            },
-            "rissa": {
-                "value": 0
-            },
-            "sopravvivenza": {
-                "value": 0
-            },
-            "tempra": {
-                "value": 0
-            },
-            "int": {},
             "ref": {
                 "melee": {
                     "value": 8,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 0,
                     "isVisible": true
                 }
             },
@@ -96,12 +79,42 @@
                 "brawling": {
                     "value": 10,
                     "isVisible": true
+                },
+                "athletics": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 0,
+                    "isVisible": true
                 }
             },
-            "body": {},
+            "body": {
+                "physique": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "endurance": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
             "emp": {},
             "cra": {},
-            "will": {}
+            "will": {
+                "courage": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "intimidation": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "resistmagic": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            }
         },
         "details": {
             "biography": "<p>Le scaltrocertole – o dragolucertole – sono bestie infami. Sono una specie di drago, temibili e dotate di magia. Amano vivere nelle paludi e devi stare attento alle loro code spinate, colpiscono così velocemente che neppure un witcher può pararle! In certi posti dicono che se dai da mangiare a una scaltrocertola un pesce marinato nel miele l'animale si placa, ma è pura fantasia. – Rodolf Kazmer</p>",

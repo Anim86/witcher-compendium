@@ -55,31 +55,12 @@
             }
         },
         "skills": {
-            "accortezza": {
-                "value": 0
+            "int": {
+                "awareness": {
+                    "value": 0,
+                    "isVisible": true
+                }
             },
-            "atletica": {
-                "value": 0
-            },
-            "coraggio": {
-                "value": 0
-            },
-            "eludere": {
-                "value": 0
-            },
-            "resistereAllaMagia": {
-                "value": 0
-            },
-            "rissa": {
-                "value": 0
-            },
-            "scherma": {
-                "value": 0
-            },
-            "tempra": {
-                "value": 0
-            },
-            "int": {},
             "ref": {
                 "dodge": {
                     "value": 4,
@@ -87,6 +68,14 @@
                 },
                 "melee": {
                     "value": 7,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "swordsmanship": {
+                    "value": 0,
                     "isVisible": true
                 }
             },
@@ -100,10 +89,24 @@
                     "isVisible": true
                 }
             },
-            "body": {},
+            "body": {
+                "endurance": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
             "emp": {},
             "cra": {},
-            "will": {}
+            "will": {
+                "courage": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "resistmagic": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            }
         },
         "details": {
             "biography": "<p>Controllate dai crini malevoli della Damigella come marionette dai fili, queste armature danzano un valzer di morte. Nonostante la perfetta sincronia, sono ignare delle finezze della scherma.</p>",

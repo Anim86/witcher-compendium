@@ -118,30 +118,111 @@ export default class MonsterData extends CommonActorData {
         // Legacy flat Italian skills migration to grouped English schema
         if (source.skills && !source.skills.int && !source.skills.ref) {
             const legacySkills = source.skills;
+
+            // Helper function to normalize keys for maximum robustness (ignores spaces, accents, special chars)
+            const normalizeKey = (str) => {
+                return str.toLowerCase()
+                    .replace(/à/g, 'a')
+                    .replace(/é/g, 'e')
+                    .replace(/è/g, 'e')
+                    .replace(/ì/g, 'i')
+                    .replace(/ò/g, 'o')
+                    .replace(/ù/g, 'u')
+                    .replace(/[\s\-_']+/g, '');
+            };
+
             const skillMap = {
+                // INT
                 "accortezza": "int.awareness",
-                "atletica": "dex.athletics",
-                "coraggio": "will.courage",
+                "commercio": "int.business",
+                "deduzione": "int.deduction",
+                "istruzione": "int.education",
+                "linguacomune": "int.commonsp",
+                "linguantica": "int.eldersp",
+                "nanico": "int.dwarven",
+                "bestiario": "int.monster",
+                "etichetta": "int.socialetq",
+                "scaltrezza": "int.streetwise",
+                "tattica": "int.tactics",
+                "insegnamento": "int.teaching",
+                "sopravvivenza": "int.wilderness",
+
+                // REF
+                "rissa": "ref.brawling",
                 "eludere": "ref.dodge",
                 "mischia": "ref.melee",
-                "nascondersi": "dex.stealth",
-                "rissa": "ref.brawling",
-                "sopravvivenza": "int.wildernessSurvival",
-                "tempra": "body.physique",
+                "cavalcare": "ref.riding",
+                "navigazione": "ref.sailing",
+                "lamecorte": "ref.smallblades",
+                "armiinasta": "ref.staffspear",
+                "asta": "ref.staffspear",
+                "scherma": "ref.swordsmanship",
+
+                // WILL
+                "coraggio": "will.courage",
+                "intesserefatture": "will.hexweave",
                 "intimidazione": "will.intimidation",
+                "intimidire": "will.intimidation",
+                "lanciareincantesimi": "will.spellcast",
+                "resistereallamagia": "will.resistmagic",
+                "resistereacoercizione": "will.resistcoerc",
+                "officiarerituali": "will.ritcraft",
+
+                // DEX
+                "archi": "dex.archery",
+                "atletica": "dex.athletics",
+                "balestre": "dex.crossbow",
+                "balestra": "dex.crossbow",
+                "rapiditadimano": "dex.sleight",
+                "nascondersi": "dex.stealth",
+
+                // CRA
+                "alchimia": "cra.alchemy",
+                "manifattura": "cra.crafting",
+                "camuffare": "cra.disguise",
+                "primosoccorso": "cra.firstaid",
+                "falsificazione": "cra.forgery",
+                "scassinare": "cra.picklock",
+                "costruiretrappole": "cra.trapcraft",
+
+                // BODY
+                "prestanza": "body.physique",
+                "tempra": "body.endurance",
+
+                // EMP
+                "carisma": "emp.charisma",
+                "inganno": "emp.deceit",
+                "bellearti": "emp.finearts",
+                "giocodazzardo": "emp.gambling",
+                "eleganza": "emp.grooming",
+                "sensibilita": "emp.perception",
+                "autorita": "emp.leadership",
                 "persuasione": "emp.persuasion",
-                "inganno": "emp.deceit"
+                "esibirsi": "emp.performance",
+                "seduzione": "emp.seduction"
             };
 
             const migratedSkills = { int: {}, ref: {}, dex: {}, body: {}, emp: {}, cra: {}, will: {} };
             let hasLegacyData = false;
 
-            for (const [legacyKey, newPath] of Object.entries(skillMap)) {
-                if (legacySkills[legacyKey]) {
+            for (const [legacyKey, valueObj] of Object.entries(legacySkills)) {
+                const normKey = normalizeKey(legacyKey);
+                const newPath = skillMap[normKey];
+                if (newPath) {
                     const [cat, skillKey] = newPath.split('.');
                     if (!migratedSkills[cat]) migratedSkills[cat] = {};
+                    
+                    let val = 0;
+                    if (valueObj && typeof valueObj === 'object') {
+                        val = valueObj.value || 0;
+                    } else if (typeof valueObj === 'number') {
+                        val = valueObj;
+                    } else if (typeof valueObj === 'string') {
+                        val = parseInt(valueObj) || 0;
+                    }
+                    
                     migratedSkills[cat][skillKey] = {
-                        value: legacySkills[legacyKey].value || 0,
+                        value: val,
                         isVisible: true
                     };
                     hasLegacyData = true;

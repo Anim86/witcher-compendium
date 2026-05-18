@@ -56,45 +56,58 @@
             }
         },
         "skills": {
-            "accortezza": {
-                "value": 10
+            "int": {
+                "awareness": {
+                    "value": 10,
+                    "isVisible": true
+                },
+                "wilderness": {
+                    "value": 9,
+                    "isVisible": true
+                }
             },
-            "atletica": {
-                "value": 8
-            },
-            "coraggio": {
-                "value": 10
-            },
-            "eludere": {
-                "value": 8
-            },
-            "mischia": {
-                "value": 9
-            },
-            "nascondersi": {
-                "value": 9
-            },
-            "rissa": {
-                "value": 8
-            },
-            "sopravvivenza": {
-                "value": 9
-            },
-            "tempra": {
-                "value": 8
-            },
-            "int": {},
-            "ref": {},
-            "dex": {
+            "ref": {
+                "dodge": {
+                    "value": 8,
+                    "isVisible": true
+                },
+                "melee": {
+                    "value": 9,
+                    "isVisible": true
+                },
                 "brawling": {
                     "value": 8,
                     "isVisible": true
                 }
             },
-            "body": {},
+            "dex": {
+                "brawling": {
+                    "value": 8,
+                    "isVisible": true
+                },
+                "athletics": {
+                    "value": 8,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 9,
+                    "isVisible": true
+                }
+            },
+            "body": {
+                "endurance": {
+                    "value": 8,
+                    "isVisible": true
+                }
+            },
             "emp": {},
             "cra": {},
-            "will": {}
+            "will": {
+                "courage": {
+                    "value": 10,
+                    "isVisible": true
+                }
+            }
         },
         "details": {
             "biography": "<p>La leggenda dice che sono tipi normali finché non vengono illuminati dalla luna e allora si trasformano in mostri folli. – Rodolf Kazmer</p><p>I lupi mannari sono belve orribili e pericolose che possono nascondersi dentro individui perfettamente normali. Questi colossi somigliano a un incrocio tra un umano e un lupo gigante. Sono spietati e guidati dalla sete di sangue. Nascono da persone comuni, vittime di una maledizione.</p>",

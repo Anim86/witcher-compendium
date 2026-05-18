@@ -56,33 +56,6 @@
             }
         },
         "skills": {
-            "accortezza": {
-                "value": 5
-            },
-            "atletica": {
-                "value": 5
-            },
-            "coraggio": {
-                "value": 5
-            },
-            "eludere": {
-                "value": 6
-            },
-            "mischia": {
-                "value": 6
-            },
-            "nascondersi": {
-                "value": 7
-            },
-            "rissa": {
-                "value": 5
-            },
-            "sopravvivenza": {
-                "value": 6
-            },
-            "tempra": {
-                "value": 6
-            },
             "int": {
                 "awareness": {
                     "value": 4,
@@ -91,15 +64,33 @@
                 "wildernessSurvival": {
                     "value": 5,
                     "isVisible": true
+                },
+                "wilderness": {
+                    "value": 6,
+                    "isVisible": true
+                }
+            },
+            "ref": {
+                "melee": {
+                    "value": 6,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 5,
+                    "isVisible": true
+                },
+                "dodge": {
+                    "value": 6,
+                    "isVisible": true
                 }
             },
             "dex": {
                 "athletics": {
-                    "value": 0,
+                    "value": 5,
                     "isVisible": true
                 },
                 "stealth": {
-                    "value": 0,
+                    "value": 7,
                     "isVisible": true
                 },
                 "brawling": {
@@ -107,34 +98,24 @@
                     "isVisible": true
                 }
             },
+            "body": {
+                "endurance": {
+                    "value": 6,
+                    "isVisible": true
+                }
+            },
+            "emp": {},
+            "cra": {},
             "will": {
                 "courage": {
-                    "value": 0,
+                    "value": 5,
                     "isVisible": true
                 },
                 "resistMagic": {
                     "value": 0,
                     "isVisible": true
                 }
-            },
-            "ref": {
-                "melee": {
-                    "value": 0,
-                    "isVisible": true
-                },
-                "brawling": {
-                    "value": 0,
-                    "isVisible": true
-                }
-            },
-            "body": {
-                "endurance": {
-                    "value": 0,
-                    "isVisible": true
-                }
-            },
-            "emp": {},
-            "cra": {}
+            }
         },
         "details": {
             "biography": "<p>Dicono che le endriaghe siano come ogni altro insetto, solo un'infestazione di cui bisogna liberarsi. La gente immagina delle soluzioni davvero creative. – Rodolf Kazmer</p><p>Superati tutti i pericoli, si trova la regina e le uova. Chi arriva a questo punto dovrà affrontare ogni endriaga rimasta nell'area, perché la regina le convocherà tutte a difesa. La regina è tecnicamente un insetto, allo stesso modo in cui un leone è un gatto.</p>",

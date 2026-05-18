@@ -56,40 +56,27 @@
             }
         },
         "skills": {
-            "accortezza": {
-                "value": 10
+            "int": {
+                "awareness": {
+                    "value": 10,
+                    "isVisible": true
+                },
+                "wilderness": {
+                    "value": 12,
+                    "isVisible": true
+                }
             },
-            "atletica": {
-                "value": 8
-            },
-            "coraggio": {
-                "value": 15
-            },
-            "eludere": {
-                "value": 8
-            },
-            "nascondersi": {
-                "value": 10
-            },
-            "rissa": {
-                "value": 0
-            },
-            "sopravvivenza": {
-                "value": 12
-            },
-            "tempra": {
-                "value": 15
-            },
-            "intimidire": {
-                "value": 12
-            },
-            "mischia": {
-                "value": 13
-            },
-            "int": {},
             "ref": {
                 "melee": {
                     "value": 11,
+                    "isVisible": true
+                },
+                "dodge": {
+                    "value": 8,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 0,
                     "isVisible": true
                 }
             },
@@ -97,12 +84,34 @@
                 "brawling": {
                     "value": 13,
                     "isVisible": true
+                },
+                "athletics": {
+                    "value": 8,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 10,
+                    "isVisible": true
                 }
             },
-            "body": {},
+            "body": {
+                "endurance": {
+                    "value": 15,
+                    "isVisible": true
+                }
+            },
             "emp": {},
             "cra": {},
-            "will": {}
+            "will": {
+                "courage": {
+                    "value": 15,
+                    "isVisible": true
+                },
+                "intimidation": {
+                    "value": 12,
+                    "isVisible": true
+                }
+            }
         },
         "details": {
             "biography": "<p>Il gigascorpione è una creatura mostruosa che infesta i deserti e le zone aride. Di dimensioni enormi, è protetto da un esoscheletro durissimo e possiede un veleno letale.</p>",

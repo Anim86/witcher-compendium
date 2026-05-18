@@ -56,45 +56,58 @@
             }
         },
         "skills": {
-            "accortezza": {
-                "value": 10
-            },
-            "atletica": {
-                "value": 4
-            },
-            "eludere": {
-                "value": 9
-            },
-            "lanciareIncantesimi": {
-                "value": 8
-            },
-            "mischia": {
-                "value": 8
-            },
-            "nascondersi": {
-                "value": 10
-            },
-            "rissa": {
-                "value": 7
-            },
-            "sopravvivenza": {
-                "value": 5
-            },
-            "tempra": {
-                "value": 7
-            },
-            "int": {},
-            "ref": {},
-            "dex": {
-                "brawling": {
+            "int": {
+                "awareness": {
+                    "value": 10,
+                    "isVisible": true
+                },
+                "wilderness": {
                     "value": 5,
                     "isVisible": true
                 }
             },
-            "body": {},
+            "ref": {
+                "dodge": {
+                    "value": 9,
+                    "isVisible": true
+                },
+                "melee": {
+                    "value": 8,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 7,
+                    "isVisible": true
+                }
+            },
+            "dex": {
+                "brawling": {
+                    "value": 5,
+                    "isVisible": true
+                },
+                "athletics": {
+                    "value": 4,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 10,
+                    "isVisible": true
+                }
+            },
+            "body": {
+                "endurance": {
+                    "value": 7,
+                    "isVisible": true
+                }
+            },
             "emp": {},
             "cra": {},
-            "will": {}
+            "will": {
+                "spellcast": {
+                    "value": 8,
+                    "isVisible": true
+                }
+            }
         },
         "details": {
             "biography": "<p>Dicono che i wraith diurni siano le anime di giovani donne uccise poco prima del matrimonio. – Rodolf Kazmer</p><p>A volte le giovani fidanzate che muoiono di morte violenta prima del matrimonio ritornano come wraith diurni, creature potenti e vendicative. Le anime di queste donne sono folli per il dolore e la rabbia che le spinge a infestare i campi vicini alla loro tomba.</p>",

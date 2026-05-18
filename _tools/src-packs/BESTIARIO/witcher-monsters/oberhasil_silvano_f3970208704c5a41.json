@@ -56,61 +56,79 @@
             }
         },
         "skills": {
-            "accortezza": {
-                "value": 12
+            "int": {
+                "awareness": {
+                    "value": 12,
+                    "isVisible": true
+                },
+                "wilderness": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "commonsp": {
+                    "value": 12,
+                    "isVisible": true
+                }
             },
-            "atletica": {
-                "value": 8
+            "ref": {
+                "dodge": {
+                    "value": 13,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 12,
+                    "isVisible": true
+                }
             },
-            "coraggio": {
-                "value": 10
+            "dex": {
+                "athletics": {
+                    "value": 8,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 0,
+                    "isVisible": true
+                }
             },
-            "eludere": {
-                "value": 13
+            "body": {
+                "endurance": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "physique": {
+                    "value": 14,
+                    "isVisible": true
+                }
             },
-            "intimidire": {
-                "value": 11
+            "emp": {
+                "persuasion": {
+                    "value": 15,
+                    "isVisible": true
+                },
+                "deceit": {
+                    "value": 14,
+                    "isVisible": true
+                }
             },
-            "nascondersi": {
-                "value": 0
-            },
-            "persuasione": {
-                "value": 15
-            },
-            "resistereAllaMagia": {
-                "value": 11
-            },
-            "rissa": {
-                "value": 12
-            },
-            "sopravvivenza": {
-                "value": 0
-            },
-            "tempra": {
-                "value": 0
-            },
-            "inganno": {
-                "value": 14
-            },
-            "linguaAntica": {
-                "value": 12
-            },
-            "linguaComune": {
-                "value": 12
-            },
-            "prestanza": {
-                "value": 14
-            },
-            "resistereACoercizione": {
-                "value": 14
-            },
-            "int": {},
-            "ref": {},
-            "dex": {},
-            "body": {},
-            "emp": {},
             "cra": {},
-            "will": {}
+            "will": {
+                "courage": {
+                    "value": 10,
+                    "isVisible": true
+                },
+                "intimidation": {
+                    "value": 11,
+                    "isVisible": true
+                },
+                "resistmagic": {
+                    "value": 11,
+                    "isVisible": true
+                },
+                "resistcoerc": {
+                    "value": 14,
+                    "isVisible": true
+                }
+            }
         },
         "details": {
             "biography": "<p>Oberhasil è il leader della troupe di artisti dell'Alderwood. Sebbene appaia come un buffo silvano mangione e bevitore, possiede un'antica saggezza e un profondo legame con la foresta. Ha una particolare predilezione per la vodka di Mahakam.</p>",

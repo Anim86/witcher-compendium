@@ -55,63 +55,83 @@
             }
         },
         "skills": {
-            "accortezza": {
-                "value": 0
+            "int": {
+                "awareness": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "socialetq": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "wilderness": {
+                    "value": 0,
+                    "isVisible": true
+                }
             },
-            "atletica": {
-                "value": 0
+            "ref": {
+                "brawling": {
+                    "value": 0,
+                    "isVisible": true
+                }
             },
-            "carisma": {
-                "value": 0
-            },
-            "coraggio": {
-                "value": 0
-            },
-            "etichetta": {
-                "value": 0
-            },
-            "intimidire": {
-                "value": 0
-            },
-            "nascondersi": {
-                "value": 0
-            },
-            "persuasione": {
-                "value": 0
-            },
-            "prestanza": {
-                "value": 0
-            },
-            "resistereACoercizione": {
-                "value": 0
-            },
-            "resistereAllaMagia": {
-                "value": 0
-            },
-            "rissa": {
-                "value": 0
-            },
-            "seduzione": {
-                "value": 0
-            },
-            "sopravvivenza": {
-                "value": 0
-            },
-            "tempra": {
-                "value": 0
-            },
-            "int": {},
-            "ref": {},
             "dex": {
                 "brawling": {
                     "value": 10,
                     "isVisible": true
+                },
+                "athletics": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 0,
+                    "isVisible": true
                 }
             },
-            "body": {},
-            "emp": {},
+            "body": {
+                "physique": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "endurance": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "emp": {
+                "charisma": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "persuasion": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "seduction": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
             "cra": {},
-            "will": {}
+            "will": {
+                "courage": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "intimidation": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "resistcoerc": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "resistmagic": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            }
         },
         "details": {
             "biography": "<p>Una volta questo tipo dal Nazair mi ha detto che le bruxa sono ninfe corrotte da magia oscura e desideri carnali. Escono di notte e fanno sesso con giovanotti attraenti, prima di succhiare loro il sangue. Non è facile ucciderne una perché sono più veloci di qualsiasi umano, hanno artigli come rasoi e voci come arieti d'assedio. – Rodolf Kazmer</p>",

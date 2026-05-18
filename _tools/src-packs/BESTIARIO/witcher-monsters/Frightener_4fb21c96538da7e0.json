@@ -55,37 +55,23 @@
             }
         },
         "skills": {
-            "accortezza": {
-                "value": 0
+            "int": {
+                "awareness": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "wilderness": {
+                    "value": 0,
+                    "isVisible": true
+                }
             },
-            "atletica": {
-                "value": 0
-            },
-            "intimidire": {
-                "value": 0
-            },
-            "nascondersi": {
-                "value": 0
-            },
-            "prestanza": {
-                "value": 0
-            },
-            "resistereAllaMagia": {
-                "value": 0
-            },
-            "rissa": {
-                "value": 0
-            },
-            "sopravvivenza": {
-                "value": 0
-            },
-            "tempra": {
-                "value": 0
-            },
-            "int": {},
             "ref": {
                 "dodge": {
                     "value": 6,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 0,
                     "isVisible": true
                 }
             },
@@ -97,12 +83,34 @@
                 "brawling": {
                     "value": 10,
                     "isVisible": true
+                },
+                "stealth": {
+                    "value": 0,
+                    "isVisible": true
                 }
             },
-            "body": {},
+            "body": {
+                "physique": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "endurance": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
             "emp": {},
             "cra": {},
-            "will": {}
+            "will": {
+                "intimidation": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "resistmagic": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            }
         },
         "details": {
             "biography": "<p>Quella del frightener è una storia di tracotanza arcana. Qualche secolo fa c'era ‘sto mago, Dagobert Sulla, che voleva costruire una specie di macchina da guerra e realizzò il frightener: un insetto cazzo enorme. Secondo la leggenda il mago provò a distruggere ‘sta cosa, ma la bestiaccia fuggì sui monti e si riprodusse. Il guscio li rende quasi invincibili, quindi non provare neppure a dargli fuoco! – Rodolf Kazmer</p>",

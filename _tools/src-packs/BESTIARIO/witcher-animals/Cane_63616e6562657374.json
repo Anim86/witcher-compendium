@@ -56,37 +56,50 @@
             }
         },
         "skills": {
-            "accortezza": {
-                "value": 9
+            "int": {
+                "awareness": {
+                    "value": 9,
+                    "isVisible": true
+                },
+                "wilderness": {
+                    "value": 8,
+                    "isVisible": true
+                }
             },
-            "atletica": {
-                "value": 3
+            "ref": {
+                "dodge": {
+                    "value": 6,
+                    "isVisible": true
+                },
+                "melee": {
+                    "value": 7,
+                    "isVisible": true
+                }
             },
-            "coraggio": {
-                "value": 8
+            "dex": {
+                "athletics": {
+                    "value": 3,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 3,
+                    "isVisible": true
+                }
             },
-            "eludere": {
-                "value": 6
+            "body": {
+                "endurance": {
+                    "value": 10,
+                    "isVisible": true
+                }
             },
-            "mischia": {
-                "value": 7
-            },
-            "nascondersi": {
-                "value": 3
-            },
-            "sopravvivenza": {
-                "value": 8
-            },
-            "tempra": {
-                "value": 10
-            },
-            "int": {},
-            "ref": {},
-            "dex": {},
-            "body": {},
             "emp": {},
             "cra": {},
-            "will": {}
+            "will": {
+                "courage": {
+                    "value": 8,
+                    "isVisible": true
+                }
+            }
         },
         "details": {
             "biography": "<p>I cani sono i compagni fedeli dell'uomo, utilizzati per la caccia, la guardia e la compagnia. In branchi selvaggi possono però rappresentare un serio pericolo.</p>",

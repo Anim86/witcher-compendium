@@ -56,46 +56,27 @@
             }
         },
         "skills": {
-            "accortezza": {
-                "value": 7
-            },
-            "atletica": {
-                "value": 8
-            },
-            "coraggio": {
-                "value": 5
-            },
-            "eludere": {
-                "value": 6
-            },
-            "mischia": {
-                "value": 7
-            },
-            "nascondersi": {
-                "value": 8
-            },
-            "rissa": {
-                "value": 7
-            },
-            "sopravvivenza": {
-                "value": 7
-            },
-            "tempra": {
-                "value": 6
-            },
-            "lanciareIncantesimi": {
-                "value": 10
-            },
-            "will": {
-                "spellCasting": {
-                    "value": 2,
+            "int": {
+                "awareness": {
+                    "value": 7,
+                    "isVisible": true
+                },
+                "wilderness": {
+                    "value": 7,
                     "isVisible": true
                 }
             },
-            "int": {},
             "ref": {
                 "melee": {
                     "value": 6,
+                    "isVisible": true
+                },
+                "dodge": {
+                    "value": 6,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 7,
                     "isVisible": true
                 }
             },
@@ -103,11 +84,38 @@
                 "brawling": {
                     "value": 6,
                     "isVisible": true
+                },
+                "athletics": {
+                    "value": 8,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 8,
+                    "isVisible": true
                 }
             },
-            "body": {},
+            "body": {
+                "endurance": {
+                    "value": 6,
+                    "isVisible": true
+                }
+            },
             "emp": {},
-            "cra": {}
+            "cra": {},
+            "will": {
+                "spellCasting": {
+                    "value": 2,
+                    "isVisible": true
+                },
+                "courage": {
+                    "value": 5,
+                    "isVisible": true
+                },
+                "spellcast": {
+                    "value": 10,
+                    "isVisible": true
+                }
+            }
         },
         "details": {
             "biography": "<p>Quella delle sirene è una storia triste. Erano bellissime donne con la coda di pesce e una passione per i marinai. Oggi, attirano la gente con le canzoni e si trasformano in orridi mostri. – Rodolf Kazmer</p><p>Nascondono le loro orribili fattezze da pesce sotto l'aspetto di donne giovani e belle capaci di attrarre un marinaio. Attirano una nave grazie a questa illusione, per poi lanciarsi sulla preda.</p>",

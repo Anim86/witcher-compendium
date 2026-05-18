@@ -55,48 +55,62 @@
             }
         },
         "skills": {
-            "accortezza": {
-                "value": 0
+            "int": {
+                "awareness": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "wilderness": {
+                    "value": 0,
+                    "isVisible": true
+                }
             },
-            "atletica": {
-                "value": 0
+            "ref": {
+                "brawling": {
+                    "value": 0,
+                    "isVisible": true
+                }
             },
-            "coraggio": {
-                "value": 0
-            },
-            "intimidire": {
-                "value": 0
-            },
-            "nascondersi": {
-                "value": 0
-            },
-            "prestanza": {
-                "value": 0
-            },
-            "resistereAllaMagia": {
-                "value": 0
-            },
-            "rissa": {
-                "value": 0
-            },
-            "sopravvivenza": {
-                "value": 0
-            },
-            "tempra": {
-                "value": 0
-            },
-            "int": {},
-            "ref": {},
             "dex": {
                 "brawling": {
                     "value": 7,
                     "isVisible": true
+                },
+                "athletics": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 0,
+                    "isVisible": true
                 }
             },
-            "body": {},
+            "body": {
+                "physique": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "endurance": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
             "emp": {},
             "cra": {},
-            "will": {}
+            "will": {
+                "courage": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "intimidation": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "resistmagic": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            }
         },
         "details": {
             "biography": "<p>Ugh… se potessi passare il resto della mia vita senza pensare ai botchling sarei un nano felice. Vedi, quando un bambino nasce da una madre che non lo ama, viene gettato via, o peggio, diventa un botchling. Sono piccole creature deformi che odiano tutto e bevono il sangue di donne gravide e bebè. Anche se tu avessi il fegato per provare ad ammazzarlo, è fottutamente veloce e più forte di quanto meriterebbe. – Rodolf Kazmer</p>",

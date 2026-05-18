@@ -55,46 +55,23 @@
             }
         },
         "skills": {
-            "accortezza": {
-                "value": 0
+            "int": {
+                "awareness": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "wilderness": {
+                    "value": 0,
+                    "isVisible": true
+                }
             },
-            "atletica": {
-                "value": 0
-            },
-            "coraggio": {
-                "value": 0
-            },
-            "intimidire": {
-                "value": 0
-            },
-            "nascondersi": {
-                "value": 0
-            },
-            "persuasione": {
-                "value": 0
-            },
-            "prestanza": {
-                "value": 0
-            },
-            "resistereACoercizione": {
-                "value": 0
-            },
-            "resistereAllaMagia": {
-                "value": 0
-            },
-            "rissa": {
-                "value": 0
-            },
-            "sopravvivenza": {
-                "value": 0
-            },
-            "tempra": {
-                "value": 0
-            },
-            "int": {},
             "ref": {
                 "melee": {
                     "value": 7,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 0,
                     "isVisible": true
                 }
             },
@@ -102,12 +79,51 @@
                 "brawling": {
                     "value": 6,
                     "isVisible": true
+                },
+                "athletics": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 0,
+                    "isVisible": true
                 }
             },
-            "body": {},
-            "emp": {},
+            "body": {
+                "physique": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "endurance": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "emp": {
+                "persuasion": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
             "cra": {},
-            "will": {}
+            "will": {
+                "courage": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "intimidation": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "resistcoerc": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "resistmagic": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            }
         },
         "details": {
             "biography": "<p>L'unica cosa che avevo sentito sulle fenici è che erano uccelli mitologici fatti di fuoco e cenere. Una gran bella vista, specie di notte. Alcuni pensano che siano attirate dai più potenti maghi del fuoco. Ti consiglio di parlarci. Da quel che ho sentito sono abbastanza intelligenti… almeno per un enorme uccello di fuoco. – Rodolf Kazmer</p>",

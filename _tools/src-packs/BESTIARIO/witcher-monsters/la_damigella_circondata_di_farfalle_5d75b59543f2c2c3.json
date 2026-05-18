@@ -57,37 +57,12 @@
             }
         },
         "skills": {
-            "accortezza": {
-                "value": 0
+            "int": {
+                "awareness": {
+                    "value": 0,
+                    "isVisible": true
+                }
             },
-            "atletica": {
-                "value": 0
-            },
-            "coraggio": {
-                "value": 0
-            },
-            "eludere": {
-                "value": 0
-            },
-            "intimidire": {
-                "value": 0
-            },
-            "mischia": {
-                "value": 0
-            },
-            "nascondersi": {
-                "value": 0
-            },
-            "resistereAllaMagia": {
-                "value": 0
-            },
-            "rissa": {
-                "value": 0
-            },
-            "tempra": {
-                "value": 0
-            },
-            "int": {},
             "ref": {
                 "dodge": {
                     "value": 0,
@@ -95,6 +70,10 @@
                 },
                 "melee": {
                     "value": 2,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 0,
                     "isVisible": true
                 }
             },
@@ -106,12 +85,34 @@
                 "brawling": {
                     "value": 1,
                     "isVisible": true
+                },
+                "stealth": {
+                    "value": 0,
+                    "isVisible": true
                 }
             },
-            "body": {},
+            "body": {
+                "endurance": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
             "emp": {},
             "cra": {},
-            "will": {}
+            "will": {
+                "courage": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "intimidation": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "resistmagic": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            }
         },
         "details": {
             "biography": "<p>Questa creatura non è Francine Marchand, ma i suoi stessi capelli, cresciuti sino a proporzioni enormi e maligne a causa di una maledizione. Appare come un enorme ragno peloso composto da otto enormi ciocche sospese al soffitto.</p>",

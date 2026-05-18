@@ -56,49 +56,66 @@
             }
         },
         "skills": {
-            "accortezza": {
-                "value": 9
+            "int": {
+                "awareness": {
+                    "value": 9,
+                    "isVisible": true
+                },
+                "wilderness": {
+                    "value": 8,
+                    "isVisible": true
+                }
             },
-            "atletica": {
-                "value": 8
+            "ref": {
+                "dodge": {
+                    "value": 4,
+                    "isVisible": true
+                },
+                "melee": {
+                    "value": 5,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 9,
+                    "isVisible": true
+                }
             },
-            "coraggio": {
-                "value": 10
+            "dex": {
+                "athletics": {
+                    "value": 8,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 10,
+                    "isVisible": true
+                }
             },
-            "eludere": {
-                "value": 4
+            "body": {
+                "endurance": {
+                    "value": 10,
+                    "isVisible": true
+                },
+                "physique": {
+                    "value": 8,
+                    "isVisible": true
+                }
             },
-            "intimidire": {
-                "value": 9
-            },
-            "mischia": {
-                "value": 5
-            },
-            "nascondersi": {
-                "value": 10
-            },
-            "resistereallaMagia": {
-                "value": 10
-            },
-            "rissa": {
-                "value": 9
-            },
-            "sopravvivenza": {
-                "value": 8
-            },
-            "tempra": {
-                "value": 10
-            },
-            "prestanza": {
-                "value": 8
-            },
-            "int": {},
-            "ref": {},
-            "dex": {},
-            "body": {},
             "emp": {},
             "cra": {},
-            "will": {}
+            "will": {
+                "courage": {
+                    "value": 10,
+                    "isVisible": true
+                },
+                "intimidation": {
+                    "value": 9,
+                    "isVisible": true
+                },
+                "resistmagic": {
+                    "value": 10,
+                    "isVisible": true
+                }
+            }
         },
         "details": {
             "biography": "<p>Il mostro è alto quattro metri, occupati per la gran parte dall'enorme bocca, con cui nutre il gigantesco stomaco traslucido che trascina qua e là. Il grosso torso pallico ha due lunghe braccia, che terminano con mani dotate di artigli seghettati, perfette per gettare le vittime nell'enorme orifizio.</p>",

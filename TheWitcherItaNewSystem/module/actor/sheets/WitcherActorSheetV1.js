@@ -232,7 +232,22 @@ export default class WitcherActorSheetV1 extends foundry.appv1.sheets.ActorSheet
     }
 
     async _onInitRoll(event) {
-        this.actor.rollInitiative({ createCombatants: true, rerollInitiative: true });
+        console.log("WITCHER TRPG | WitcherActorSheetV1._onInitRoll triggered!", { event });
+        const hasActiveCombat = !!game.combat;
+        const token = this.actor.token ?? this.actor.getActiveTokens()[0];
+
+        if (hasActiveCombat && token) {
+            await this.actor.rollInitiative({ createCombatants: true, rerollInitiative: true });
+        } else {
+            const refVal = this.actor.system.stats.ref.value || 0;
+            const rollFormula = `1d10 + ${refVal}`;
+            const roll = await new Roll(rollFormula).evaluate({ async: true });
+            
+            await roll.toMessage({
+                speaker: ChatMessage.getSpeaker({ actor: this.actor }),
+                flavor: `<h2>${game.i18n.localize('WITCHER.Actor.Initiative')}</h2>`
+            });
+        }
     }
 
     async _onCritRoll(event) {

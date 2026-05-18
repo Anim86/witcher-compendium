@@ -55,52 +55,16 @@
             }
         },
         "skills": {
-            "accortezza": {
-                "value": 0
+            "int": {
+                "awareness": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "wilderness": {
+                    "value": 0,
+                    "isVisible": true
+                }
             },
-            "atletica": {
-                "value": 0
-            },
-            "coraggio": {
-                "value": 0
-            },
-            "costruireTrappole": {
-                "value": 0
-            },
-            "inganno": {
-                "value": 0
-            },
-            "intimidire": {
-                "value": 0
-            },
-            "manifattura": {
-                "value": 0
-            },
-            "nascondersi": {
-                "value": 0
-            },
-            "persuasione": {
-                "value": 0
-            },
-            "prestanza": {
-                "value": 0
-            },
-            "resistereACoercizione": {
-                "value": 0
-            },
-            "resistereAllaMagia": {
-                "value": 0
-            },
-            "rissa": {
-                "value": 0
-            },
-            "sopravvivenza": {
-                "value": 0
-            },
-            "tempra": {
-                "value": 0
-            },
-            "int": {},
             "ref": {
                 "dodge": {
                     "value": 9,
@@ -108,6 +72,10 @@
                 },
                 "melee": {
                     "value": 8,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 0,
                     "isVisible": true
                 }
             },
@@ -119,12 +87,60 @@
                 "brawling": {
                     "value": 8,
                     "isVisible": true
+                },
+                "stealth": {
+                    "value": 0,
+                    "isVisible": true
                 }
             },
-            "body": {},
-            "emp": {},
-            "cra": {},
-            "will": {}
+            "body": {
+                "physique": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "endurance": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "emp": {
+                "deceit": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "persuasion": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "cra": {
+                "trapcraft": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "crafting": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "will": {
+                "courage": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "intimidation": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "resistcoerc": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "resistmagic": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            }
         },
         "details": {
             "biography": "<p>Coboldi, goblin e simili non sono troppo male, ma i battiroccia o polterduk o comunque si chiamino sono il peggio. Si nascondono nelle miniere e piazzano trappole per i lavoratori. A volte si fanno vedere e pestano quei poveretti, prima di scappare nei tunnel. Ho sentito che alcuni minatori si portano dei pezzi di rame con cui spaventarli. – Rodolf Kazmer</p>",

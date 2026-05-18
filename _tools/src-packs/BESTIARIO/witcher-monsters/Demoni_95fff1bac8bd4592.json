@@ -56,43 +56,58 @@
             }
         },
         "skills": {
-            "accortezza": {
-                "value": 10
+            "int": {
+                "awareness": {
+                    "value": 10,
+                    "isVisible": true
+                },
+                "wilderness": {
+                    "value": 6,
+                    "isVisible": true
+                }
             },
-            "atletica": {
-                "value": 5
+            "ref": {
+                "dodge": {
+                    "value": 7,
+                    "isVisible": true
+                },
+                "melee": {
+                    "value": 9,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 8,
+                    "isVisible": true
+                }
             },
-            "coraggio": {
-                "value": 10
+            "dex": {
+                "athletics": {
+                    "value": 5,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 1,
+                    "isVisible": true
+                }
             },
-            "eludere": {
-                "value": 7
+            "body": {
+                "physique": {
+                    "value": 10,
+                    "isVisible": true
+                },
+                "endurance": {
+                    "value": 7,
+                    "isVisible": true
+                }
             },
-            "mischia": {
-                "value": 9
-            },
-            "nascondersi": {
-                "value": 1
-            },
-            "prestanza": {
-                "value": 10
-            },
-            "rissa": {
-                "value": 8
-            },
-            "sopravvivenza": {
-                "value": 6
-            },
-            "tempra": {
-                "value": 7
-            },
-            "int": {},
-            "ref": {},
-            "dex": {},
-            "body": {},
             "emp": {},
             "cra": {},
-            "will": {}
+            "will": {
+                "courage": {
+                    "value": 10,
+                    "isVisible": true
+                }
+            }
         },
         "details": {
             "biography": "<p>E se ne incontri uno, ti farà cadere in trance per nutrirsi dei tuoi segreti più oscuri. Poi, dopo averti svuotato la mente, ti farà a pezzi e divorerà il tuo cadavere. – Rodolf Kazmer</p><p>I demoni sono tra i relitti più pericolosi che si incontrano nel Continente. Sono creature terrificanti simili ad alci, tanto colossali che neppure i membri della Scuola del Grifone riescono a stordirli con il segno Aard. Guariscono quasi istantaneamente e possono ipnotizzare con uno sguardo.</p>",

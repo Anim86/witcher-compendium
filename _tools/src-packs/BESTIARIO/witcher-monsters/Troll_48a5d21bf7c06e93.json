@@ -55,52 +55,72 @@
             }
         },
         "skills": {
-            "accortezza": {
-                "value": 0
+            "int": {
+                "awareness": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "wilderness": {
+                    "value": 0,
+                    "isVisible": true
+                }
             },
-            "atletica": {
-                "value": 0
+            "ref": {
+                "brawling": {
+                    "value": 0,
+                    "isVisible": true
+                }
             },
-            "coraggio": {
-                "value": 0
+            "dex": {
+                "athletics": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 0,
+                    "isVisible": true
+                }
             },
-            "intimidire": {
-                "value": 0
+            "body": {
+                "physique": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "endurance": {
+                    "value": 0,
+                    "isVisible": true
+                }
             },
-            "manifattura": {
-                "value": 0
+            "emp": {
+                "persuasion": {
+                    "value": 0,
+                    "isVisible": true
+                }
             },
-            "nascondersi": {
-                "value": 0
+            "cra": {
+                "crafting": {
+                    "value": 0,
+                    "isVisible": true
+                }
             },
-            "persuasione": {
-                "value": 0
-            },
-            "prestanza": {
-                "value": 0
-            },
-            "resistereACoercizione": {
-                "value": 0
-            },
-            "resistereAllaMagia": {
-                "value": 0
-            },
-            "rissa": {
-                "value": 0
-            },
-            "sopravvivenza": {
-                "value": 0
-            },
-            "tempra": {
-                "value": 0
-            },
-            "int": {},
-            "ref": {},
-            "dex": {},
-            "body": {},
-            "emp": {},
-            "cra": {},
-            "will": {}
+            "will": {
+                "courage": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "intimidation": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "resistcoerc": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "resistmagic": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            }
         },
         "details": {
             "biography": "<p>Lo ammetto, amo i troll! Molta gente ne ha paura perché sono “mostri”, ma io penso che siano un sacco divertenti. Amano la vodka e non sono troppo svegli, per cui è facile prenderli in giro. Certa gente dice che se finisci per scontrarti con un troll lo devi attirare in acqua: è tanto pesante che non può nuotare e finisce affogato sul fondo. – Rodolf Kazmer</p>",

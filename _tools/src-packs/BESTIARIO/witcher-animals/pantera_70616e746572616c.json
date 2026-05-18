@@ -56,43 +56,58 @@
             }
         },
         "skills": {
-            "accortezza": {
-                "value": 15
+            "int": {
+                "awareness": {
+                    "value": 15,
+                    "isVisible": true
+                },
+                "wilderness": {
+                    "value": 14,
+                    "isVisible": true
+                }
             },
-            "atletica": {
-                "value": 16
+            "ref": {
+                "brawling": {
+                    "value": 12,
+                    "isVisible": true
+                }
             },
-            "coraggio": {
-                "value": 14
+            "dex": {
+                "athletics": {
+                    "value": 16,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 17,
+                    "isVisible": true
+                }
             },
-            "intimidire": {
-                "value": 12
+            "body": {
+                "physique": {
+                    "value": 13,
+                    "isVisible": true
+                },
+                "endurance": {
+                    "value": 12,
+                    "isVisible": true
+                }
             },
-            "nascondersi": {
-                "value": 17
-            },
-            "prestanza": {
-                "value": 13
-            },
-            "resistereAllaMagia": {
-                "value": 10
-            },
-            "rissa": {
-                "value": 12
-            },
-            "sopravvivenza": {
-                "value": 14
-            },
-            "tempra": {
-                "value": 12
-            },
-            "int": {},
-            "ref": {},
-            "dex": {},
-            "body": {},
             "emp": {},
             "cra": {},
-            "will": {}
+            "will": {
+                "courage": {
+                    "value": 14,
+                    "isVisible": true
+                },
+                "intimidation": {
+                    "value": 12,
+                    "isVisible": true
+                },
+                "resistmagic": {
+                    "value": 10,
+                    "isVisible": true
+                }
+            }
         },
         "details": {
             "biography": "<p>Ah, le pantere, che bestiacce esotiche! Ho sentito che le donne selvagge e le streghe del sud le tengono come famigli. Se vedete una pantera con gli occhi che brillano alla luce della luna, c'è un mago che vi sta spiando! Ne ho viste solo due in vita mia, mentre passavo per Mag Turga per… ehm… affari. Molto impressionanti, dico io, non vorrei diventare la loro vittima! – Rodolf Kazmer</p>",

@@ -55,55 +55,16 @@
             }
         },
         "skills": {
-            "accortezza": {
-                "value": 0
+            "int": {
+                "awareness": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "wilderness": {
+                    "value": 0,
+                    "isVisible": true
+                }
             },
-            "atletica": {
-                "value": 0
-            },
-            "camuffamento": {
-                "value": 0
-            },
-            "carisma": {
-                "value": 0
-            },
-            "coraggio": {
-                "value": 0
-            },
-            "intimidire": {
-                "value": 0
-            },
-            "nascondersi": {
-                "value": 0
-            },
-            "persuasione": {
-                "value": 0
-            },
-            "prestanza": {
-                "value": 0
-            },
-            "rapiditàDiMano": {
-                "value": 0
-            },
-            "resistereACoercizione": {
-                "value": 0
-            },
-            "resistereAllaMagia": {
-                "value": 0
-            },
-            "rissa": {
-                "value": 0
-            },
-            "seduzione": {
-                "value": 0
-            },
-            "sopravvivenza": {
-                "value": 0
-            },
-            "tempra": {
-                "value": 0
-            },
-            "int": {},
             "ref": {
                 "dodge": {
                     "value": 6,
@@ -111,6 +72,10 @@
                 },
                 "melee": {
                     "value": 8,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 0,
                     "isVisible": true
                 }
             },
@@ -122,12 +87,59 @@
                 "brawling": {
                     "value": 9,
                     "isVisible": true
+                },
+                "stealth": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "sleight": {
+                    "value": 0,
+                    "isVisible": true
                 }
             },
-            "body": {},
-            "emp": {},
+            "body": {
+                "physique": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "endurance": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "emp": {
+                "charisma": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "persuasion": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "seduction": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
             "cra": {},
-            "will": {}
+            "will": {
+                "courage": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "intimidation": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "resistcoerc": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "resistmagic": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            }
         },
         "details": {
             "biography": "<p>Eh, ho avuto il piacere di incontrare un paio di volte una succube. Mai a letto, ovviamente! Penso che le succubi non siano troppo male. Una volta ci ho avuto una bella conversazione. Onestamente, a volte le preferisco agli umani, eh! La verità è che hanno bisogno di dormire con certa gente e… assorbirne la forza vitale, immagino. Ho sentito che molti di quei ‘fortunati' non vedono il mattino dopo. – Rodolf Kazmer</p>",

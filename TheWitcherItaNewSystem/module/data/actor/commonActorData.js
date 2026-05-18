@@ -98,8 +98,61 @@ export default class CommonActorData extends foundry.abstract.TypeDataModel {
 
         this.migrateCalculatedStats(source);
         this.migrateAdrenaline(source);
+        this.migrateGroupedSkills(source);
 
         return super.migrateData(source);
+    }
+
+    static migrateGroupedSkills(source) {
+        if (!source.skills || typeof source.skills !== 'object') return;
+
+        const skillMigrations = {
+            int: {
+                wildernessSurvival: 'wilderness',
+                commonSpeech: 'commonsp',
+                elderSpeech: 'eldersp',
+                dwarvenSpeech: 'dwarven',
+                monsterLore: 'monster',
+                socialEtiquette: 'socialetq'
+            },
+            ref: {
+                dodgeEscape: 'dodge'
+            },
+            dex: {
+                sleightOfHand: 'sleight'
+            },
+            cra: {
+                firstAid: 'firstaid',
+                pickLock: 'picklock',
+                trapCrafting: 'trapcraft'
+            },
+            emp: {
+                fineArts: 'finearts',
+                groomingAndStyle: 'grooming',
+                humanPerception: 'perception'
+            },
+            will: {
+                resistCoercion: 'resistcoerc',
+                resistMagic: 'resistmagic',
+                hexWeaving: 'hexweave',
+                spellCasting: 'spellcast',
+                ritualCrafting: 'ritcraft'
+            }
+        };
+
+        for (const [cat, mappings] of Object.entries(skillMigrations)) {
+            const catSkills = source.skills[cat];
+            if (!catSkills || typeof catSkills !== 'object') continue;
+
+            for (const [oldKey, newKey] of Object.entries(mappings)) {
+                if (catSkills[oldKey] !== undefined) {
+                    if (catSkills[newKey] === undefined) {
+                        catSkills[newKey] = catSkills[oldKey];
+                    }
+                    delete catSkills[oldKey];
+                }
+            }
+        }
     }
 
     static migrateCalculatedStats(source) {

@@ -16,12 +16,13 @@ export default class WitcherMonsterSheet extends WitcherActorSheet {
         },
         position: {
             width: 1150,
-            height: 850
+            height: 680
         },
         actions: {
             exportLoot: function(event, target) { return this._onExportLoot(event, target); },
             rollStat: function(event, target) { return this._onRollStat(event, target); },
             rollSkill: function(event, target) { return this._onRollSkill(event, target); },
+            rollInit: function(event, target) { return this._onInitRoll(event, target); },
             toggleDeathState: function(event, target) { return this._onToggleDeathState(event, target); },
             createNote: function(event, target) { return this._onCreateNote(event, target); },
             deleteNote: function(event, target) { return this._onDeleteNote(event, target); }
@@ -147,7 +148,18 @@ export default class WitcherMonsterSheet extends WitcherActorSheet {
 
     async _onRollStat(event, target) {
         const stat = target.dataset.stat;
-        return this.actor.rollStat(stat);
+        const statValue = this.actor.system.stats[stat]?.value || 0;
+        console.log("WITCHER TRPG | WitcherMonsterSheet._onRollStat triggered!", { event, target, stat, statValue });
+        const statName = `WITCHER.St${stat.charAt(0).toUpperCase() + stat.slice(1)}`;
+        const localizedStat = game.i18n.localize(statName);
+
+        const rollFormula = `1d10 + ${statValue}`;
+        const roll = await new Roll(rollFormula).evaluate({ async: true });
+
+        await roll.toMessage({
+            speaker: ChatMessage.getSpeaker({ actor: this.actor }),
+            flavor: `<h2>${localizedStat} Check</h2>`
+        });
     }
 
     async _onRollSkill(event, target) {

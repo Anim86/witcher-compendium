@@ -56,37 +56,27 @@
             }
         },
         "skills": {
-            "accortezza": {
-                "value": 8
+            "int": {
+                "awareness": {
+                    "value": 8,
+                    "isVisible": true
+                },
+                "wilderness": {
+                    "value": 6,
+                    "isVisible": true
+                }
             },
-            "atletica": {
-                "value": 6
-            },
-            "coraggio": {
-                "value": 9
-            },
-            "eludere": {
-                "value": 8
-            },
-            "mischia": {
-                "value": 8
-            },
-            "nascondersi": {
-                "value": 8
-            },
-            "rissa": {
-                "value": 6
-            },
-            "sopravvivenza": {
-                "value": 6
-            },
-            "tempra": {
-                "value": 7
-            },
-            "int": {},
             "ref": {
                 "melee": {
                     "value": 7,
+                    "isVisible": true
+                },
+                "dodge": {
+                    "value": 8,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 6,
                     "isVisible": true
                 }
             },
@@ -94,12 +84,30 @@
                 "brawling": {
                     "value": 8,
                     "isVisible": true
+                },
+                "athletics": {
+                    "value": 6,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 8,
+                    "isVisible": true
                 }
             },
-            "body": {},
+            "body": {
+                "endurance": {
+                    "value": 7,
+                    "isVisible": true
+                }
+            },
             "emp": {},
             "cra": {},
-            "will": {}
+            "will": {
+                "courage": {
+                    "value": 9,
+                    "isVisible": true
+                }
+            }
         },
         "details": {
             "biography": "<p>Onestamente, il tipico popolano non sa granché delle streghe dei sepolcri. Eh, sono come incubi, abbastanza intelligenti da parlare, costruire trappole e adescare i bambini. – Rodolf Kazmer</p><p>Le streghe dei sepolcri sono tra i pochi necrofagi totalmente senzienti. Pur possedendo la magia, non hanno nulla a che fare con i maghi. Vivono nei pressi dei cimiteri e altre fonti di cadaveri.</p>",

@@ -56,40 +56,27 @@
             }
         },
         "skills": {
-            "accortezza": {
-                "value": 10
+            "int": {
+                "awareness": {
+                    "value": 10,
+                    "isVisible": true
+                },
+                "wilderness": {
+                    "value": 15,
+                    "isVisible": true
+                }
             },
-            "atletica": {
-                "value": 8
-            },
-            "coraggio": {
-                "value": 13
-            },
-            "eludere": {
-                "value": 9
-            },
-            "nascondersi": {
-                "value": 8
-            },
-            "rissa": {
-                "value": 0
-            },
-            "sopravvivenza": {
-                "value": 15
-            },
-            "tempra": {
-                "value": 13
-            },
-            "intimidire": {
-                "value": 8
-            },
-            "mischia": {
-                "value": 10
-            },
-            "int": {},
             "ref": {
                 "melee": {
                     "value": 7,
+                    "isVisible": true
+                },
+                "dodge": {
+                    "value": 9,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 0,
                     "isVisible": true
                 }
             },
@@ -97,12 +84,34 @@
                 "brawling": {
                     "value": 5,
                     "isVisible": true
+                },
+                "athletics": {
+                    "value": 8,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 8,
+                    "isVisible": true
                 }
             },
-            "body": {},
+            "body": {
+                "endurance": {
+                    "value": 13,
+                    "isVisible": true
+                }
+            },
             "emp": {},
             "cra": {},
-            "will": {}
+            "will": {
+                "courage": {
+                    "value": 13,
+                    "isVisible": true
+                },
+                "intimidation": {
+                    "value": 8,
+                    "isVisible": true
+                }
+            }
         },
         "details": {
             "biography": "<p>L'oritteropo è una creatura del deserto, simile a un grosso pangolino o a un formichiere corazzato. Sebbene non sia aggressivo per natura, è un combattente tenace se messo all'angolo.</p>",

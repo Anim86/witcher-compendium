@@ -52,35 +52,57 @@
             }
         },
         "skills": {
-            "accortezza": {
-                "value": 6
+            "int": {
+                "awareness": {
+                    "value": 6,
+                    "isVisible": true
+                },
+                "wilderness": {
+                    "value": 5,
+                    "isVisible": true
+                }
             },
-            "atletica": {
-                "value": 4
+            "ref": {
+                "dodge": {
+                    "value": 4,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 6,
+                    "isVisible": true
+                },
+                "swordsmanship": {
+                    "value": 6,
+                    "isVisible": true
+                }
             },
-            "balestra": {
-                "value": 4
+            "dex": {
+                "athletics": {
+                    "value": 4,
+                    "isVisible": true
+                },
+                "crossbow": {
+                    "value": 4,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 3,
+                    "isVisible": true
+                }
             },
-            "coraggio": {
-                "value": 7
+            "body": {
+                "endurance": {
+                    "value": 5,
+                    "isVisible": true
+                }
             },
-            "eludere": {
-                "value": 4
-            },
-            "nascondersi": {
-                "value": 3
-            },
-            "rissa": {
-                "value": 6
-            },
-            "scherma": {
-                "value": 6
-            },
-            "sopravvivenza": {
-                "value": 5
-            },
-            "tempra": {
-                "value": 5
+            "emp": {},
+            "cra": {},
+            "will": {
+                "courage": {
+                    "value": 7,
+                    "isVisible": true
+                }
             }
         },
         "details": {
