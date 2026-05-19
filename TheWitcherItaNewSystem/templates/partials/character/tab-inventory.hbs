@@ -12,7 +12,7 @@
          </div>">
         <div class="enc-label">
             <span class="main-label"><i class="fas fa-weight-hanging"></i> {{localize "WITCHER.Loot.TotalWeight"}}</span>
-            <span class="values">{{totalWeight}} / {{encMax}} <small>kg</small></span>
+            <span class="values">{{totalWeight}} / {{encMax}} <small>kg</small> ({{localize "WITCHER.Loot.LiftLimit"}}: {{liftLimit}} <small>kg</small>)</span>
         </div>
         <div class="enc-bar-wrapper">
             <div class="enc-bar-fill" style="width: {{encPct}}%;"></div>
@@ -38,7 +38,7 @@
             <h2>{{localize "WITCHER.Loot.Weapons"}}</h2>
             <div class="list-label">
                 <span class="list-controls">
-                    <a class="add-item" data-itemType="weapon" data-tooltip="{{localize 'WITCHER.Button.Add'}} {{localize 'WITCHER.TYPES.Item.weapon'}}">
+                    <a class="add-item" data-itemType="weapon" data-tooltip="{{localize 'WITCHER.Actor.Button.Add'}} {{localize 'TYPES.Item.weapon'}}">
                         <i class="fas fa-plus"></i>
                     </a>
                 </span>
@@ -53,7 +53,7 @@
             <h2>{{localize "WITCHER.Loot.Armors"}}</h2>
             <div class="list-label">
                 <span class="list-controls">
-                    <a class="add-item" data-itemType="armor" data-tooltip="{{localize 'WITCHER.Button.Add'}} {{localize 'WITCHER.TYPES.Item.armor'}}">
+                    <a class="add-item" data-itemType="armor" data-tooltip="{{localize 'WITCHER.Actor.Button.Add'}} {{localize 'TYPES.Item.armor'}}">
                         <i class="fas fa-plus"></i>
                     </a>
                 </span>
@@ -68,7 +68,7 @@
             <h2>{{localize "WITCHER.Inventory.Valuables"}}</h2>
             <div class="list-label">
                 <span class="list-controls">
-                    <a class="add-item" data-itemType="valuable">
+                    <a class="add-item" data-itemType="valuable" data-tooltip="{{localize 'WITCHER.Actor.Button.Add'}} {{localize 'TYPES.Item.valuable'}}">
                         <i class="fas fa-plus"></i>
                     </a>
                 </span>
@@ -112,7 +112,7 @@
             <h2>{{localize "WITCHER.Inventory.Diagrams"}}</h2>
             <div class="list-label">
                 <span class="list-controls">
-                    <a class="add-item" data-itemType="diagrams">
+                    <a class="add-item" data-itemType="diagrams" data-tooltip="{{localize 'WITCHER.Actor.Button.Add'}} {{localize 'TYPES.Item.diagrams'}}">
                         <i class="fas fa-plus"></i>
                     </a>
                 </span>
@@ -177,7 +177,7 @@
             <h2>{{localize "WITCHER.Inventory.Alchemy"}}</h2>
             <div class="list-label">
                 <span class="list-controls">
-                    <a class="add-item" data-itemType="alchemical">
+                    <a class="add-item" data-itemType="alchemical" data-tooltip="{{localize 'WITCHER.Actor.Button.Add'}} {{localize 'TYPES.Item.alchemical'}}">
                         <i class="fas fa-plus"></i>
                     </a>
                 </span>
@@ -213,7 +213,7 @@
             <h2>{{localize "WITCHER.Inventory.Crafting"}}</h2>
             <div class="list-label">
                 <span class="list-controls">
-                    <a class="add-item" data-itemType="component">
+                    <a class="add-item" data-itemType="component" data-tooltip="{{localize 'WITCHER.Actor.Button.Add'}} {{localize 'TYPES.Item.component'}}">
                         <i class="fas fa-plus"></i>
                     </a>
                 </span>

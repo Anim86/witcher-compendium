@@ -424,3 +424,12 @@ input.skill-value {
         }
     }
 }
+
+/* Global select option styling for readability in Dark/Light themes */
+select option,
+.witcher select option,
+.witcher.window-app select option,
+.witcher.application select option {
+    background-color: #1a1a1a !important;
+    color: #e8e0d4 !important;
+}

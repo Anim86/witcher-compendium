@@ -42,7 +42,7 @@ function onDamage(message) {
 
 export async function rollDamage(verbalCombat, damage) {
     let messageData = {};
-    messageData.flavor = `<div class="verbalcombat-damage-message" <h1>${game.i18n.localize('WITCHER.table.Damage')}: ${game.i18n.localize(verbalCombat.name)} </h1>`;
+    messageData.flavor = `<div class="verbalcombat-damage-message"><h1>${game.i18n.localize('WITCHER.table.Damage')}: ${game.i18n.localize(verbalCombat.name)} </h1></div>`;
 
     let message = await (await new Roll(damage.formula).evaluate()).toMessage(messageData);
     message.setFlag('TheWitcherItaNewSystem', 'damage', damage);

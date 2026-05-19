@@ -235,7 +235,7 @@
     padding: 10px 15px;
     border-radius: 8px;
     border: 1px solid var(--w-border-gold);
-    margin-bottom: 12px;
+    margin-bottom: 6px;
     display: flex;
     flex-direction: column;
     gap: 6px;
@@ -2161,15 +2161,20 @@ a.button-roll:hover {
 }
 
 .witcher-rewards-window .empty-state {
-    text-align: center;
-    padding: 40px 0;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    padding: 40px 0 !important;
     opacity: 0.3;
+    width: 100% !important;
 }
 
 .witcher-rewards-window .empty-state i {
-    font-size: 40px;
-    margin-bottom: 10px;
-    display: block;
+    font-size: 40px !important;
+    margin-bottom: 10px !important;
+    display: inline-block !important;
 }
 
 .rewards-header-main {

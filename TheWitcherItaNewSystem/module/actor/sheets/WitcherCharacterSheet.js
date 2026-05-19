@@ -218,9 +218,13 @@ export default class WitcherCharacterSheet extends WitcherActorSheet {
         context.weightBreakdown = actor.getWeightBreakdown();
         context.armorEV = actor.getArmorEcumbrance();
         context.encMax = actor.system.derivedStats.enc.max;
+        context.liftLimit = actor.system.derivedStats.liftLimit;
         
         // Percentage for progress bar
         context.encPct = Math.min(Math.round((context.totalWeight / context.encMax) * 100), 100);
+
+        context.statBreakdowns = actor.getStatBreakdowns();
+        context.penalizedStats = actor.penalizedStats;
     }
 
     _prepareDiagramFormulas(context) {

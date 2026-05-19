@@ -72,3 +72,35 @@
     width: 100%;
     margin-bottom: 5px;
 }
+
+/* Chat message headers styling */
+.chat-message h1,
+.chat-message h2,
+.chat-message .flavor-text h1,
+.chat-message .flavor-text h2 {
+    font-family: 'Thewitcher', 'Goudy Old Style', serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--w-gold, #c5a059);
+    margin: 5px 0 10px 0;
+    padding: 0 0 5px 0;
+    border-bottom: 1px solid rgba(197, 160, 89, 0.3);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    line-height: 1.2;
+}
+
+.chat-message h1 img,
+.chat-message h2 img,
+.chat-message .flavor-text h1 img,
+.chat-message .flavor-text h2 img {
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    min-height: 32px;
+    border-radius: 4px;
+    border: 1px solid rgba(197, 160, 89, 0.4);
+    object-fit: cover;
+    margin: 0;
+}

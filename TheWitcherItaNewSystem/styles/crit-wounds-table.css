@@ -105,6 +105,11 @@
     height: 26px;
 }
 
+.critwound-selection select option {
+    background-color: #1c1c1c !important;
+    color: #eee !important;
+}
+
 .wound-type { width: 140px; }
 .wound-location { width: 90px; }
 

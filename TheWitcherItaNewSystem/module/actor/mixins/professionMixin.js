@@ -214,7 +214,7 @@ export let professionMixin = {
         messageDataFlavor = `<div class="attack-message"><h1>${game.i18n.localize('WITCHER.Attack.name')}: ${skill.skillName}</h1>`;
         messageDataFlavor += `<span>  ${game.i18n.localize('WITCHER.Armor.Location')}: ${touchedLocation.alias} </span>`;
 
-        messageDataFlavor += `<button class="damage">${game.i18n.localize('WITCHER.table.Damage')}</button>`;
+        messageDataFlavor += `<button class="damage">${game.i18n.localize('WITCHER.table.Damage')}</button></div>`;
 
         let messageData = new ChatMessageData(this, messageDataFlavor, 'attack', {
             attacker: this.uuid,

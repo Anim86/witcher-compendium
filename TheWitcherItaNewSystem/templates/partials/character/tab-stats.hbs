@@ -12,7 +12,27 @@
             {{#each system.stats as |details stat|}}
                 {{#unless (eq (localize details.label) (localize 'WITCHER.Actor.Stat.Toxicity'))}}
                     <a class='stat-display char-stat-button stat-roll stat-card-{{stat}} {{#if (lookup @root.penalizedStats stat)}}penalty-active{{/if}}' data-stat='{{stat}}'
-                        data-tooltip="{{localize (concat 'WITCHER.Actor.Stat.Desc.' stat)}}">
+                        data-tooltip="<div class='weight-breakdown'>
+                            <div class='stat-desc' style='font-size: 12px; color: #ccc; margin-bottom: 8px; font-style: italic; line-height: 1.3;'>{{localize (concat 'WITCHER.Actor.Stat.Desc.' stat)}}</div>
+                            {{#with (lookup @root.statBreakdowns stat) as |breakdown|}}
+                                {{#if breakdown.hasModifiers}}
+                                    <hr>
+                                    <div class='breakdown-title'>{{localize 'WITCHER.Resources.modifiers'}}</div>
+                                    {{#each breakdown.modifiers}}
+                                        <div class='breakdown-item'>
+                                            <span>{{name}}:</span>
+                                            <span>{{#if (gt value 0)}}+{{/if}}{{value}}</span>
+                                        </div>
+                                    {{/each}}
+                                    {{#each breakdown.dividers}}
+                                        <div class='breakdown-item ev'>
+                                            <span>{{name}}:</span>
+                                            <span>{{value}}</span>
+                                        </div>
+                                    {{/each}}
+                                {{/if}}
+                            {{/with}}
+                        </div>">
                         <div class="stat-icon">
                              {{#if (eq stat 'int')}}<i class="fa-solid fa-brain"></i>{{/if}}
                              {{#if (eq stat 'ref')}}<i class="fa-solid fa-person-running"></i>{{/if}}
@@ -68,35 +88,57 @@
         </div>
         <div class='stat-grid'>
             {{#each system.derivedStats as |details derStat|}}
-                <div class='stat-display char-derived-button der-card-{{derStat}}' data-type='derStat' data-stat='{{derStat}}'
-                    data-tooltip="{{#if (localize (concat 'WITCHER.Actor.DerStat.Desc.' derStat))}}{{localize (concat 'WITCHER.Actor.DerStat.Desc.' derStat)}}{{else}}{{localize details.label}}{{/if}}">
-                    <div class="stat-icon">
-                        {{#if (eq derStat 'stun')}}<i class="fa-solid fa-face-dizzy"></i>{{/if}}
-                        {{#if (eq derStat 'run')}}<i class="fa-solid fa-wind"></i>{{/if}}
-                        {{#if (eq derStat 'leap')}}<i class="fa-solid fa-up-long"></i>{{/if}}
-                        {{#if (eq derStat 'hp')}}<i class="fa-solid fa-heart"></i>{{/if}}
-                        {{#if (eq derStat 'sta')}}<i class="fa-solid fa-bolt"></i>{{/if}}
-                        {{#if (eq derStat 'vigor')}}<i class="fa-solid fa-hand-holding-hand"></i>{{/if}}
-                        {{#if (eq derStat 'enc')}}<i class="fa-solid fa-weight-hanging"></i>{{/if}}
-                        {{#if (eq derStat 'rec')}}<i class="fa-solid fa-suitcase-medical"></i>{{/if}}
-                        {{#if (eq derStat 'resolve')}}<i class="fa-solid fa-shield-heart"></i>{{/if}}
-                        {{#if (eq derStat 'focus')}}<i class="fa-solid fa-eye"></i>{{/if}}
-                        {{#if (eq derStat 'shield')}}<i class="fa-solid fa-shield-halved"></i>{{/if}}
-                        {{#if (eq derStat 'woundTreshold')}}<i class="fa-solid fa-droplet-slash"></i>{{/if}}
-                    </div>
-                    <div class="stat-content">
-                        <div class="label">
-                            <span class="stat-name">{{localize details.label}}</span>
-                            <span class="current-val">{{details.value}}</span>
+                {{#unless (eq derStat 'liftLimit')}}
+                    <div class='stat-display char-derived-button der-card-{{derStat}}' data-type='derStat' data-stat='{{derStat}}'
+                        data-tooltip="<div class='weight-breakdown'>
+                            <div class='stat-desc' style='font-size: 12px; color: #ccc; margin-bottom: 8px; font-style: italic; line-height: 1.3;'>{{#if (localize (concat 'WITCHER.Actor.DerStat.Desc.' derStat))}}{{localize (concat 'WITCHER.Actor.DerStat.Desc.' derStat)}}{{else}}{{localize details.label}}{{/if}}</div>
+                            {{#with (lookup @root.statBreakdowns derStat) as |breakdown|}}
+                                {{#if breakdown.hasModifiers}}
+                                    <hr>
+                                    <div class='breakdown-title'>{{localize 'WITCHER.Resources.modifiers'}}</div>
+                                    {{#each breakdown.modifiers}}
+                                        <div class='breakdown-item'>
+                                            <span>{{name}}:</span>
+                                            <span>{{#if (gt value 0)}}+{{/if}}{{value}}</span>
+                                        </div>
+                                    {{/each}}
+                                    {{#each breakdown.dividers}}
+                                        <div class='breakdown-item ev'>
+                                            <span>{{name}}:</span>
+                                            <span>{{value}}</span>
+                                        </div>
+                                    {{/each}}
+                                {{/if}}
+                            {{/with}}
+                        </div>">
+                        <div class="stat-icon">
+                            {{#if (eq derStat 'stun')}}<i class="fa-solid fa-face-dizzy"></i>{{/if}}
+                            {{#if (eq derStat 'run')}}<i class="fa-solid fa-wind"></i>{{/if}}
+                            {{#if (eq derStat 'leap')}}<i class="fa-solid fa-up-long"></i>{{/if}}
+                            {{#if (eq derStat 'hp')}}<i class="fa-solid fa-heart"></i>{{/if}}
+                            {{#if (eq derStat 'sta')}}<i class="fa-solid fa-bolt"></i>{{/if}}
+                            {{#if (eq derStat 'vigor')}}<i class="fa-solid fa-hand-holding-hand"></i>{{/if}}
+                            {{#if (eq derStat 'enc')}}<i class="fa-solid fa-weight-hanging"></i>{{/if}}
+                            {{#if (eq derStat 'rec')}}<i class="fa-solid fa-suitcase-medical"></i>{{/if}}
+                            {{#if (eq derStat 'resolve')}}<i class="fa-solid fa-shield-heart"></i>{{/if}}
+                            {{#if (eq derStat 'focus')}}<i class="fa-solid fa-eye"></i>{{/if}}
+                            {{#if (eq derStat 'shield')}}<i class="fa-solid fa-shield-halved"></i>{{/if}}
+                            {{#if (eq derStat 'woundTreshold')}}<i class="fa-solid fa-droplet-slash"></i>{{/if}}
                         </div>
-                        <div class="stat-sub">
-                            {{details.max}} 
-                            <span class="modifier {{#if (lt details.totalModifiers 0)}}penalty{{else if (gt details.totalModifiers 0)}}bonus{{/if}}">
-                                ({{#if (gt details.totalModifiers 0)}}+{{/if}}{{details.totalModifiers}})
-                            </span>
+                        <div class="stat-content">
+                            <div class="label">
+                                <span class="stat-name">{{localize details.label}}</span>
+                                <span class="current-val">{{details.value}}</span>
+                            </div>
+                            <div class="stat-sub">
+                                {{details.max}} 
+                                <span class="modifier {{#if (lt details.totalModifiers 0)}}penalty{{else if (gt details.totalModifiers 0)}}bonus{{/if}}">
+                                    ({{#if (gt details.totalModifiers 0)}}+{{/if}}{{details.totalModifiers}})
+                                </span>
+                            </div>
                         </div>
                     </div>
-                </div>
+                {{/unless}}
             {{/each}}
         </div>
     </div>

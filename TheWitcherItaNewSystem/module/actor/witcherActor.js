@@ -82,8 +82,11 @@ export default class WitcherActor extends Actor {
                 if (!originalWound) continue;
 
                 // Se la ferita è stata appena segnata come 'treated' o 'stabilized' o è cambiato il tipo
-                const treatedJustFlipped = woundUpdate.treated === true && !originalWound.treated;
-                const stabilizedJustFlipped = (woundUpdate.stabilized === true && !originalWound.stabilized) || (woundUpdate.treated === true && !originalWound.stabilized);
+                const originalMod = originalWound.mod || 'none';
+                const newMod = woundUpdate.mod || originalMod;
+
+                const treatedJustFlipped = newMod === 'treated' && originalMod !== 'treated';
+                const stabilizedJustFlipped = (newMod === 'stabilized' || newMod === 'treated') && originalMod === 'none';
                 const typeChanged = !!woundUpdate.configEntry && woundUpdate.configEntry !== originalWound.configEntry;
 
                 if (treatedJustFlipped || stabilizedJustFlipped || typeChanged) {
@@ -316,7 +319,7 @@ export default class WitcherActor extends Actor {
 
         let baseVal = this.system.stats[stat].unmodifiedMax || this.system.stats[stat].max || 0;
         this.system.stats[stat].totalModifiers = totalModifiers;
-        this.system.stats[stat].value = Math.floor((baseVal + totalModifiers) / divider);
+        this.system.stats[stat].value = Math.max(1, Math.floor((baseVal + totalModifiers) / divider));
     }
 
     calculateWeigthEncumbrance() {
@@ -377,11 +380,14 @@ export default class WitcherActor extends Actor {
         this.system.derivedStats.enc.modifiers.forEach(item => (encTotalModifiers += Number(item.value)));
 
         const totalWeights = this.getTotalWeight();
-        const baseEnc = (this.system.stats.body.unmodifiedMax || this.system.stats.body.max || 0) * 10;
-        this.system.derivedStats.enc.unmodifiedMax = baseEnc;
+        const baseEnc = (this.system.stats.body.value || 0) * 10;
+        this.system.derivedStats.enc.unmodifiedMax = (this.system.stats.body.unmodifiedMax || this.system.stats.body.max || 0) * 10;
         this.system.derivedStats.enc.max = baseEnc + encTotalModifiers;
         this.system.derivedStats.enc.value = totalWeights;
         this.system.derivedStats.enc.totalModifiers = encTotalModifiers;
+
+        // exceptional effort: lifting up to 50 times Physical (Fisico) in kg
+        this.system.derivedStats.liftLimit = (this.system.stats.body.value || 0) * 50;
 
         let recTotalModifiers = this.getAllModifiers('rec').totalModifiers;
         let recDivider = this.getAllModifiers('rec').totalDivider;
@@ -1051,6 +1057,249 @@ export default class WitcherActor extends Actor {
         } else {
             await foundItem.update({ 'system.quantity': newQuantity });
         }
+    }
+
+    getStatBreakdown(stat) {
+        const breakdown = [];
+        
+        // 1. Critical Wounds
+        const wounds = this.system.critWounds || [];
+        const activeWounds = wounds.filter(wound => {
+            if (!wound.configEntry || wound.configEntry === '') return false;
+            if (wound.treated && wound.healingTime > 0 && wound.daysHealed >= wound.healingTime) return false;
+            return true;
+        });
+
+        activeWounds.forEach(wound => {
+            const modType = wound.treated ? 'treated' : (wound.stabilized ? 'stabilized' : 'none');
+            const effect = CONFIG.WITCHER.Crit[wound.configEntry]?.effect?.[modType];
+            if (!effect) return;
+            effect.stats?.forEach(s => {
+                if (s.stat === stat) {
+                    if (!s.modifier?.toString().includes('/')) {
+                        const val = Number(s.modifier);
+                        if (!isNaN(val) && val !== 0) {
+                            breakdown.push({
+                                name: game.i18n.localize(CONFIG.WITCHER.Crit[wound.configEntry].label),
+                                value: val
+                            });
+                        }
+                    }
+                }
+            });
+        });
+
+        // 2. Manual/Custom Modifiers
+        const statData = this.system.stats[stat];
+        if (statData && statData.modifiers) {
+            statData.modifiers.forEach(mod => {
+                const val = Number(mod.value);
+                if (!isNaN(val) && val !== 0) {
+                    breakdown.push({
+                        name: mod.name || game.i18n.localize('WITCHER.Settings.Custom'),
+                        value: val
+                    });
+                }
+            });
+        }
+
+        // 3. Armor Encumbrance (for ref and dex)
+        if (stat === 'ref' || stat === 'dex') {
+            const armorEnc = this.getArmorEcumbrance();
+            if (armorEnc > 0) {
+                breakdown.push({
+                    name: game.i18n.localize('WITCHER.Armor.EncumbranceValue'),
+                    value: -armorEnc
+                });
+            }
+        }
+
+        // 4. Weight Encumbrance (for ref, dex, and spd)
+        if (stat === 'ref' || stat === 'dex' || stat === 'spd') {
+            const weightEnc = this.calculateWeigthEncumbrance();
+            if (weightEnc > 0) {
+                breakdown.push({
+                    name: game.i18n.localize('WITCHER.Loot.TotalWeight'),
+                    value: -weightEnc
+                });
+            }
+        }
+
+        // 5. Active Effects
+        this.appliedEffects?.forEach(effect => {
+            effect.changes.forEach(change => {
+                if (change.key === `system.stats.${stat}.totalModifiers` || change.key === `system.stats.${stat}.modifiers` || change.key === `system.stats.${stat}.value`) {
+                    const val = Number(change.value);
+                    if (!isNaN(val) && val !== 0) {
+                        breakdown.push({
+                            name: effect.name,
+                            value: val
+                        });
+                    }
+                }
+            });
+        });
+
+        return breakdown;
+    }
+
+    getStatDividerBreakdown(stat) {
+        const breakdown = [];
+        
+        // 1. Critical Wounds dividers
+        const wounds = this.system.critWounds || [];
+        const activeWounds = wounds.filter(wound => {
+            if (!wound.configEntry || wound.configEntry === '') return false;
+            if (wound.treated && wound.healingTime > 0 && wound.daysHealed >= wound.healingTime) return false;
+            return true;
+        });
+
+        activeWounds.forEach(wound => {
+            const modType = wound.treated ? 'treated' : (wound.stabilized ? 'stabilized' : 'none');
+            const effect = CONFIG.WITCHER.Crit[wound.configEntry]?.effect?.[modType];
+            if (!effect) return;
+            effect.stats?.forEach(s => {
+                if (s.stat === stat && s.modifier?.toString().includes('/')) {
+                    breakdown.push({
+                        name: game.i18n.localize(CONFIG.WITCHER.Crit[wound.configEntry].label),
+                        value: s.modifier
+                    });
+                }
+            });
+        });
+
+        // 2. HP state dividers
+        const HPvalue = this.system.derivedStats?.hp?.value ?? 0;
+        if (HPvalue <= 0) {
+            const label = game.i18n.localize('WITCHER.DeathSave') || 'Stato di Morte';
+            breakdown.push({
+                name: label,
+                value: '/3'
+            });
+        } else if (HPvalue < (this.system.derivedStats?.woundTreshold?.value ?? 0) && (this.system.derivedStats?.woundTreshold?.value ?? 0) > 0) {
+            if (stat === 'ref' || stat === 'dex' || stat === 'int' || stat === 'will') {
+                const label = game.i18n.localize('WITCHER.Actor.DerStat.woundTreshold') || 'Soglia Ferita';
+                breakdown.push({
+                    name: label,
+                    value: '/2'
+                });
+            }
+        }
+
+        return breakdown;
+    }
+
+    getDerivedStatBreakdown(stat) {
+        const breakdown = [];
+        
+        // 1. Critical Wounds
+        const wounds = this.system.critWounds || [];
+        const activeWounds = wounds.filter(wound => {
+            if (!wound.configEntry || wound.configEntry === '') return false;
+            if (wound.treated && wound.healingTime > 0 && wound.daysHealed >= wound.healingTime) return false;
+            return true;
+        });
+
+        activeWounds.forEach(wound => {
+            const modType = wound.treated ? 'treated' : (wound.stabilized ? 'stabilized' : 'none');
+            const effect = CONFIG.WITCHER.Crit[wound.configEntry]?.effect?.[modType];
+            if (!effect) return;
+            effect.derived?.forEach(d => {
+                if (d.derivedStat === stat) {
+                    if (!d.modifier?.toString().includes('/')) {
+                        const val = Number(d.modifier);
+                        if (!isNaN(val) && val !== 0) {
+                            breakdown.push({
+                                name: game.i18n.localize(CONFIG.WITCHER.Crit[wound.configEntry].label),
+                                value: val
+                            });
+                        }
+                    }
+                }
+            });
+        });
+
+        // 2. Manual/Custom Modifiers
+        const statData = this.system.derivedStats[stat];
+        if (statData && statData.modifiers) {
+            statData.modifiers.forEach(mod => {
+                const val = Number(mod.value);
+                if (!isNaN(val) && val !== 0) {
+                    breakdown.push({
+                        name: mod.name || game.i18n.localize('WITCHER.Settings.Custom'),
+                        value: val
+                    });
+                }
+            });
+        }
+
+        // 3. Active Effects
+        this.appliedEffects?.forEach(effect => {
+            effect.changes.forEach(change => {
+                if (change.key === `system.derivedStats.${stat}.totalModifiers` || change.key === `system.derivedStats.${stat}.modifiers` || change.key === `system.derivedStats.${stat}.value`) {
+                    const val = Number(change.value);
+                    if (!isNaN(val) && val !== 0) {
+                        breakdown.push({
+                            name: effect.name,
+                            value: val
+                        });
+                    }
+                }
+            });
+        });
+
+        return breakdown;
+    }
+
+    getDerivedStatDividerBreakdown(stat) {
+        const breakdown = [];
+        
+        // 1. Critical Wounds dividers
+        const wounds = this.system.critWounds || [];
+        const activeWounds = wounds.filter(wound => {
+            if (!wound.configEntry || wound.configEntry === '') return false;
+            if (wound.treated && wound.healingTime > 0 && wound.daysHealed >= wound.healingTime) return false;
+            return true;
+        });
+
+        activeWounds.forEach(wound => {
+            const modType = wound.treated ? 'treated' : (wound.stabilized ? 'stabilized' : 'none');
+            const effect = CONFIG.WITCHER.Crit[wound.configEntry]?.effect?.[modType];
+            if (!effect) return;
+            effect.derived?.forEach(d => {
+                if (d.derivedStat === stat && d.modifier?.toString().includes('/')) {
+                    breakdown.push({
+                        name: game.i18n.localize(CONFIG.WITCHER.Crit[wound.configEntry].label),
+                        value: d.modifier
+                    });
+                }
+            });
+        });
+
+        return breakdown;
+    }
+
+    getStatBreakdowns() {
+        const breakdowns = {};
+        const stats = ['int', 'ref', 'dex', 'body', 'spd', 'emp', 'cra', 'will', 'luck'];
+        stats.forEach(stat => {
+            breakdowns[stat] = {
+                modifiers: this.getStatBreakdown(stat),
+                dividers: this.getStatDividerBreakdown(stat),
+                hasModifiers: this.getStatBreakdown(stat).length > 0 || this.getStatDividerBreakdown(stat).length > 0
+            };
+        });
+        
+        const derivedStats = ['stun', 'run', 'leap', 'hp', 'sta', 'vigor', 'enc', 'rec', 'resolve', 'focus', 'shield', 'woundTreshold'];
+        derivedStats.forEach(stat => {
+            breakdowns[stat] = {
+                modifiers: this.getDerivedStatBreakdown(stat),
+                dividers: this.getDerivedStatDividerBreakdown(stat),
+                hasModifiers: this.getDerivedStatBreakdown(stat).length > 0 || this.getDerivedStatDividerBreakdown(stat).length > 0
+            };
+        });
+        
+        return breakdowns;
     }
 
     async removeItemsOfType(type) {

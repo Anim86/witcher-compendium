@@ -1,11 +1,20 @@
 <div class="weapon_roll_sheet">
     {{!-- Premium Header Banner --}}
     <div class="item-header-info premium-banner">
+        <div class="banner-border-line-top"></div>
         <img class="item-img" src="{{item.img}}" title="{{item.name}}" />
         <div class="item-info-text">
             <h3 class="item-name">{{item.name}}</h3>
-            <span class="item-damage">{{localize "WITCHER.Dialog.attackDamage"}}: <strong>{{displayDmgFormula}}</strong></span>
-            <span class="skill-info">{{localize "WITCHER.Dialog.attackUse"}}: <strong>{{localize attackSkill.alias}}</strong></span>
+            <div class="item-meta-badges">
+                <span class="meta-badge dmg-badge">
+                    <i class="fas fa-dice-d20"></i>
+                    {{localize "WITCHER.Dialog.attackDamage"}}: <strong>{{displayDmgFormula}}</strong>
+                </span>
+                <span class="meta-badge skill-badge">
+                    <i class="fas fa-fist-raised"></i>
+                    {{localize "WITCHER.Dialog.attackUse"}}: <strong>{{localize attackSkill.alias}}</strong>
+                </span>
+            </div>
         </div>
         {{#if meleeBonus}}
             <div class="melee-bonus-badge">
@@ -13,21 +22,26 @@
                 <span>+{{meleeBonus}}</span>
             </div>
         {{/if}}
+        <div class="banner-border-line-bottom"></div>
     </div>
 
-    <div class="attack-sheet-grid">
-        {{!-- Block 1: The Action --}}
+    {{!-- 3-Column Side-By-Side Layout --}}
+    <div class="attack-sheet-grid-3col">
+        
+        {{!-- COLUMN 1: Azione Colpo (Strike Action) --}}
         <section class="config-section action-config">
             <h4><i class="fas fa-crosshairs"></i> {{localize "WITCHER.Dialog.attackAction"}}</h4>
-            <div class="grid-2col">
-                <div class="form-group">
-                    <label>{{localize "WITCHER.Dialog.attackStrike"}}</label>
+            <div class="form-group">
+                <label>{{localize "WITCHER.Dialog.attackStrike"}}</label>
+                <div class="select-wrapper">
                     <select name="strike">
                         {{selectOptions config.weapon.attacks localize=true}}
                     </select>
                 </div>
-                <div class="form-group">
-                    <label>{{localize "WITCHER.Dialog.attackLocation"}}</label>
+            </div>
+            <div class="form-group">
+                <label>{{localize "WITCHER.Dialog.attackLocation"}}</label>
+                <div class="select-wrapper">
                     <select name="location">
                         <option value="randomHuman"> {{localize "WITCHER.Dialog.attackRandomHuman"}} </option>
                         <option value="randomMonster"> {{localize "WITCHER.Dialog.attackRandomMonster"}} </option>
@@ -40,8 +54,10 @@
                         <option value="tailWing"> {{localize "WITCHER.Dialog.attackTail"}} </option>
                     </select>
                 </div>
-                <div class="form-group">
-                    <label>{{localize "WITCHER.Dialog.damageType"}}</label>
+            </div>
+            <div class="form-group">
+                <label>{{localize "WITCHER.Dialog.damageType"}}</label>
+                <div class="select-wrapper">
                     <select name="damageType">
                         {{#if item.system.type.slashing}}
                             <option value="slashing">{{localize "WITCHER.DamageType.slashing"}}</option>
@@ -60,20 +76,27 @@
                         {{/if}}
                     </select>
                 </div>
-                <div class="form-group">
-                    <label>{{localize "WITCHER.Dialog.attackExtra"}}</label>
-                    <input type="checkbox" name="isExtraAttack">
-                </div>
+            </div>
+            
+            {{!-- Extra Attack checkbox inside Column 1 --}}
+            <div class="form-group toggle-wrapper-row">
+                <label class="toggle-row-label">
+                    <span class="toggle-title">
+                        <i class="fas fa-bolt"></i> {{localize "WITCHER.Dialog.attackExtra"}}
+                    </span>
+                    <input type="checkbox" name="isExtraAttack" class="styled-checkbox">
+                </label>
             </div>
         </section>
 
-        {{!-- Block 2: Conditions --}}
+        {{!-- COLUMN 2: Modificatori Attacco (Modifiers) --}}
         <section class="config-section condition-config">
-            <h4><i class="fas fa-adjust"></i> {{localize "WITCHER.Dialog.attackModifiers"}}</h4>
-            <div class="flex-column">
-                {{#if item.system.range}}
-                <div class="form-group full-width">
-                    <label>{{localize "WITCHER.Dialog.attackRange"}} ({{item.system.range}})</label>
+            <h4><i class="fas fa-sliders-h"></i> {{localize "WITCHER.Dialog.attackModifiers"}}</h4>
+            
+            {{#if item.system.range}}
+            <div class="form-group range-selector-group">
+                <label>{{localize "WITCHER.Dialog.attackRange"}} ({{item.system.range}})</label>
+                <div class="select-wrapper">
                     <select name="range">
                         <option value="none"> {{localize "WITCHER.Dialog.rangeNone"}} </option>
                         <option value="pointBlank"> {{localize "WITCHER.Dialog.rangePointBlank"}} </option>
@@ -83,107 +106,177 @@
                         <option value="extreme"> {{localize "WITCHER.Dialog.rangeExtreme"}} </option>
                     </select>
                 </div>
-                {{/if}}
+            </div>
+            {{/if}}
 
-                <details>
-                    <summary>{{localize "WITCHER.Dialog.advanced"}}</summary>
-                    <div class="grid-2col-mods">
-                        <div class="mod-row">
-                            <label>{{localize "WITCHER.Dialog.attackOutsideLOS"}} (+3)</label>
-                            <input type="checkbox" name="outsideLOS">
-                        </div>
-                        <div class="mod-row">
-                            <label>{{localize "WITCHER.Dialog.attackIsPinned"}} (+4)</label>
-                            <input type="checkbox" name="isPinned">
-                        </div>
-                        <div class="mod-row">
-                            <label>{{localize "WITCHER.Dialog.attackIsAmbush"}} (+5)</label>
-                            <input type="checkbox" name="isAmbush">
-                        </div>
-                        <div class="mod-row">
-                            <label>{{localize "WITCHER.Dialog.attackIsSilhouetted"}} (+2)</label>
-                            <input type="checkbox" name="isSilhouetted">
-                        </div>
-                        <div class="mod-row">
-                            <label>{{localize "WITCHER.Dialog.attackIsAiming"}} (+1)</label>
-                            <input type="number" class="small-input" name="customAim" value="0">
-                        </div>
-                        <div class="mod-row">
-                            <label>{{localize "WITCHER.Dialog.attackTargetOutsideLOS"}} (-3)</label>
-                            <input type="checkbox" name="targetOutsideLOS">
-                        </div>
-                        <div class="mod-row">
-                            <label>{{localize "WITCHER.Dialog.attackIsActivelyDodging"}} (-2)</label>
-                            <input type="checkbox" name="isActivelyDodging">
-                        </div>
-                        <div class="mod-row">
-                            <label>{{localize "WITCHER.Dialog.attackIsMoving"}} (-3)</label>
-                            <input type="checkbox" name="isMoving">
-                        </div>
-                        <div class="mod-row">
-                            <label>{{localize "WITCHER.Dialog.attackIsProne"}} (-2)</label>
-                            <input type="checkbox" name="isProne">
-                        </div>
-                        <div class="mod-row">
-                            <label>{{localize "WITCHER.Dialog.attackIsBlinded"}} (-3)</label>
-                            <input type="checkbox" name="isBlinded">
-                        </div>
-                        <div class="mod-row">
-                            <label>{{localize "WITCHER.Dialog.attackIsRicochet"}} (-5)</label>
-                            <input type="checkbox" name="isRicochet">
-                        </div>
-                        <div class="mod-row">
-                            <label>{{localize "WITCHER.Dialog.attackIsFastDraw"}} (-3)</label>
-                            <input type="checkbox" name="isFastDraw">
-                        </div>
+            <div class="advanced-mods-container">
+                <h5 class="sub-section-title"><i class="fas fa-cog"></i> {{localize "WITCHER.Dialog.advanced"}}</h5>
+                <div class="scrollable-mods-list">
+                    {{!-- Bonuses --}}
+                    <label class="mod-row bonus-row">
+                        <span class="mod-label-text">
+                            {{localize "WITCHER.Dialog.attackOutsideLOS"}}
+                            <span class="mod-val bonus">+3</span>
+                        </span>
+                        <input type="checkbox" name="outsideLOS">
+                    </label>
+                    <label class="mod-row bonus-row">
+                        <span class="mod-label-text">
+                            {{localize "WITCHER.Dialog.attackIsPinned"}}
+                            <span class="mod-val bonus">+4</span>
+                        </span>
+                        <input type="checkbox" name="isPinned">
+                    </label>
+                    <label class="mod-row bonus-row">
+                        <span class="mod-label-text">
+                            {{localize "WITCHER.Dialog.attackIsAmbush"}}
+                            <span class="mod-val bonus">+5</span>
+                        </span>
+                        <input type="checkbox" name="isAmbush">
+                    </label>
+                    <label class="mod-row bonus-row">
+                        <span class="mod-label-text">
+                            {{localize "WITCHER.Dialog.attackIsSilhouetted"}}
+                            <span class="mod-val bonus">+2</span>
+                        </span>
+                        <input type="checkbox" name="isSilhouetted">
+                    </label>
+                    
+                    {{!-- Numeric Aim --}}
+                    <div class="mod-row numeric-row">
+                        <label>
+                            <span class="mod-label-text">
+                                {{localize "WITCHER.Dialog.attackIsAiming"}}
+                                <span class="mod-val bonus">+1</span>
+                            </span>
+                        </label>
+                        <input type="number" class="small-input" name="customAim" value="0" min="0" max="3">
                     </div>
-                </details>
+
+                    {{!-- Penalties --}}
+                    <label class="mod-row penalty-row">
+                        <span class="mod-label-text">
+                            {{localize "WITCHER.Dialog.attackTargetOutsideLOS"}}
+                            <span class="mod-val penalty">-3</span>
+                        </span>
+                        <input type="checkbox" name="targetOutsideLOS">
+                    </label>
+                    <label class="mod-row penalty-row">
+                        <span class="mod-label-text">
+                            {{localize "WITCHER.Dialog.attackIsActivelyDodging"}}
+                            <span class="mod-val penalty">-2</span>
+                        </span>
+                        <input type="checkbox" name="isActivelyDodging">
+                    </label>
+                    <label class="mod-row penalty-row">
+                        <span class="mod-label-text">
+                            {{localize "WITCHER.Dialog.attackIsMoving"}}
+                            <span class="mod-val penalty">-3</span>
+                        </span>
+                        <input type="checkbox" name="isMoving">
+                    </label>
+                    <label class="mod-row penalty-row">
+                        <span class="mod-label-text">
+                            {{localize "WITCHER.Dialog.attackIsProne"}}
+                            <span class="mod-val penalty">-2</span>
+                        </span>
+                        <input type="checkbox" name="isProne">
+                    </label>
+                    <label class="mod-row penalty-row">
+                        <span class="mod-label-text">
+                            {{localize "WITCHER.Dialog.attackIsBlinded"}}
+                            <span class="mod-val penalty">-3</span>
+                        </span>
+                        <input type="checkbox" name="isBlinded">
+                    </label>
+                    <label class="mod-row penalty-row">
+                        <span class="mod-label-text">
+                            {{localize "WITCHER.Dialog.attackIsRicochet"}}
+                            <span class="mod-val penalty">-5</span>
+                        </span>
+                        <input type="checkbox" name="isRicochet">
+                    </label>
+                    <label class="mod-row penalty-row">
+                        <span class="mod-label-text">
+                            {{localize "WITCHER.Dialog.attackIsFastDraw"}}
+                            <span class="mod-val penalty">-3</span>
+                        </span>
+                        <input type="checkbox" name="isFastDraw">
+                    </label>
+                </div>
             </div>
         </section>
-    </div>
 
-    {{!-- Block 3: Luck & Custom --}}
-    <footer class="attack-footer">
-        <div class="luck-section">
-            <div class="grid-3col">
-                <div class="form-group">
-                    <label>{{localize "WITCHER.Actor.Stat.Luck"}} ({{system.stats.luck.value}})</label>
-                    <input type="number" name="luckToSpend" value="0">
+        {{!-- COLUMN 3: Risorse, Custom e Munizioni (Resources & Custom) --}}
+        <section class="config-section resources-config">
+            <h4><i class="fas fa-hand-holding-usd"></i> {{localize "WITCHER.Settings.Custom"}}</h4>
+            
+            <div class="custom-fields-stack">
+                <div class="form-group luck-group">
+                    <label>
+                        <i class="fas fa-dice"></i>
+                        {{localize "WITCHER.Actor.Stat.Luck"}} ({{system.stats.luck.value}})
+                    </label>
+                    <input type="number" name="luckToSpend" value="0" min="0" max="{{system.stats.luck.value}}">
                 </div>
-                <div class="form-group">
-                    <label>{{localize "WITCHER.Dialog.attackCustomMod"}}</label>
+                
+                <div class="form-group custom-att-group">
+                    <label>
+                        <i class="fas fa-plus-circle"></i>
+                        {{localize "WITCHER.Dialog.attackCustomMod"}}
+                    </label>
                     <input type="number" name="customAtt" value="0">
                 </div>
-                <div class="form-group">
-                    <label>{{localize "WITCHER.Dialog.attackCustomDmg"}}</label>
+                
+                <div class="form-group custom-dmg-group">
+                    <label>
+                        <i class="fas fa-hand-sparkles"></i>
+                        {{localize "WITCHER.Dialog.attackCustomDmg"}}
+                    </label>
                     <input type="text" name="customDmg" value="0">
                 </div>
             </div>
-        </div>
-        <div class="footer-grid">
-            {{#if item.system.usingAmmo}}
-                <div class="form-group">
-                    {{#if (eq noAmmo 1)}}
-                        <label class="error-display">{{localize "WITCHER.Dialog.NoAmmunition"}}</label>
-                    {{else}}
-                        <label>{{localize "WITCHER.Dialog.Ammunition"}}</label>
-                        <select name="ammunition">
-                            {{{ammunitionOption}}}
-                        </select>
-                    {{/if}}
-                </div>
-            {{/if}}
 
-            {{#if item.system.isThrowable}}
-                <div class="form-group">
-                    {{#if noThrowable }}
-                        <label class="error-display">{{localize "WITCHER.Dialog.NoThrowable"}}</label>
-                    {{else}}
-                        <label><b>{{localize "WITCHER.Dialog.Throwable"}}</b></label>
-                        <span><i class="fas fa-check-circle"></i> {{item.system.quantity}} disponibilli</span>
-                    {{/if}}
-                </div>
+            {{!-- Ammo / Throwable Selection inside Column 3 for a perfectly integrated look! --}}
+            {{#if (or item.system.usingAmmo item.system.isThrowable)}}
+            <div class="ammo-throwable-section">
+                <h5 class="sub-section-title"><i class="fas fa-box-open"></i> Munizioni / Oggetti</h5>
+                
+                {{#if item.system.usingAmmo}}
+                    <div class="form-group ammo-group">
+                        {{#if (eq noAmmo 1)}}
+                            <div class="ammo-status no-ammo">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <label class="error-display">{{localize "WITCHER.Dialog.NoAmmunition"}}</label>
+                            </div>
+                        {{else}}
+                            <label class="footer-sub-label"><i class="fas fa-dot-circle"></i> {{localize "WITCHER.Dialog.Ammunition"}}</label>
+                            <div class="select-wrapper">
+                                <select name="ammunition">
+                                    {{{ammunitionOption}}}
+                                </select>
+                            </div>
+                        {{/if}}
+                    </div>
+                {{/if}}
+
+                {{#if item.system.isThrowable}}
+                    <div class="form-group throwable-group">
+                        {{#if noThrowable }}
+                            <div class="ammo-status no-ammo">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <label class="error-display">{{localize "WITCHER.Dialog.NoThrowable"}}</label>
+                            </div>
+                        {{else}}
+                            <label class="footer-sub-label"><b><i class="fas fa-bullseye"></i> {{localize "WITCHER.Dialog.Throwable"}}</b></label>
+                            <span class="throwable-count">
+                                <i class="fas fa-check-circle"></i> {{item.system.quantity}} disponibili
+                            </span>
+                        {{/if}}
+                    </div>
+                {{/if}}
+            </div>
             {{/if}}
-        </div>
-    </footer>
+        </section>
+    </div>
 </div>

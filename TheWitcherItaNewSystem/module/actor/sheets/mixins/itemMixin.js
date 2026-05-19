@@ -60,11 +60,17 @@ export let itemMixin = {
         let element = event.currentTarget;
         const itemtype = element.dataset.itemtype;
 
-        if (['profession', 'race', 'homeland'].includes(itemtype)) {
+        if (['profession', 'race', 'homeland', 'weapon', 'armor', 'component', 'diagrams', 'alchemical', 'valuable'].includes(itemtype)) {
             const packMap = {
                 'profession': 'witcher-compendium.witcher-professions',
                 'race': 'witcher-compendium.witcher-races',
-                'homeland': 'witcher-compendium.witcher-homelands'
+                'homeland': 'witcher-compendium.witcher-homelands',
+                'weapon': 'witcher-compendium.witcher-weapons',
+                'armor': 'witcher-compendium.witcher-armor',
+                'component': 'witcher-compendium.witcher-components',
+                'diagrams': 'witcher-compendium.witcher-schematics',
+                'alchemical': 'witcher-compendium.witcher-alchemy',
+                'valuable': 'witcher-compendium.witcher-equipment'
             };
             return this._onCompendiumItemSelect(itemtype, packMap[itemtype]);
         }
@@ -121,7 +127,13 @@ export let itemMixin = {
         const labels = {
             'profession': game.i18n.localize('WITCHER.Actor.Prof'),
             'race': game.i18n.localize('WITCHER.Actor.Race'),
-            'homeland': game.i18n.localize('WITCHER.Actor.homeland')
+            'homeland': game.i18n.localize('WITCHER.Actor.homeland'),
+            'weapon': game.i18n.localize('TYPES.Item.weapon'),
+            'armor': game.i18n.localize('TYPES.Item.armor'),
+            'component': game.i18n.localize('TYPES.Item.component'),
+            'diagrams': game.i18n.localize('TYPES.Item.diagrams'),
+            'alchemical': game.i18n.localize('TYPES.Item.alchemical'),
+            'valuable': game.i18n.localize('TYPES.Item.valuable')
         };
         const typeLabel = labels[itemtype] || itemtype;
 
@@ -156,9 +168,10 @@ export let itemMixin = {
         `).join('');
 
         const content = `
-            <div class="compendium-select-dialog" style="padding: 10px;">
-                <p style="margin-bottom: 10px; font-style: italic; opacity: 0.8;">Seleziona ${typeLabel.toLowerCase()} dal compendio:</p>
-                <select name="itemUuid" style="width: 100%; height: 35px; background: rgba(0,0,0,0.3); color: white; border: 1px solid var(--w-gold); font-family: 'Goudy Old Style', serif; font-size: 16px;">
+            <div class="compendium-select-dialog" style="padding: 10px; display: flex; flex-direction: column; gap: 8px;">
+                <p style="margin: 0; font-style: italic; opacity: 0.8;">Seleziona ${typeLabel.toLowerCase()} dal compendio:</p>
+                <input type="text" name="searchFilter" placeholder="${game.i18n.localize('WITCHER.Actor.Button.Search')}..." style="width: 100%; height: 35px; padding: 0 10px; background: rgba(0,0,0,0.3); color: white; border: 1px solid var(--w-gold); font-family: 'Goudy Old Style', serif; font-size: 16px; border-radius: 4px; outline: none; box-sizing: border-box;" autofocus />
+                <select name="itemUuid" style="width: 100%; height: 35px; background: rgba(0,0,0,0.3); color: white; border: 1px solid var(--w-gold); font-family: 'Goudy Old Style', serif; font-size: 16px; border-radius: 4px; outline: none; box-sizing: border-box;">
                     ${optionsHtml}
                 </select>
             </div>
@@ -177,7 +190,9 @@ export let itemMixin = {
                     class: "standard-button gold",
                     default: true,
                     callback: async (event, button, instance) => {
-                        const itemUuid = instance.element.querySelector('[name="itemUuid"]').value;
+                        const element = instance.element || instance || document.querySelector('.compendium-select-dialog');
+                        const itemUuid = element?.querySelector('[name="itemUuid"]')?.value;
+                        if (!itemUuid) return;
                         const item = await fromUuid(itemUuid);
                         this._onDropItem(event, item);
                     }
@@ -186,7 +201,56 @@ export let itemMixin = {
                     action: "cancel",
                     label: game.i18n.localize('WITCHER.Button.Cancel')
                 }
-            ]
+            ],
+            render: (event, html) => {
+                // Try multiple ways to get the dialog HTML element (Foundry V11/V12/V13 compatibility)
+                const element = html || (event && event.element) || document.querySelector('.compendium-select-dialog');
+                if (!element) return;
+
+                const searchInput = element.querySelector('[name="searchFilter"]');
+                const selectElement = element.querySelector('[name="itemUuid"]');
+                if (!searchInput || !selectElement) return;
+
+                // Keep a copy of all original options
+                const originalOptions = Array.from(selectElement.options).map(opt => ({
+                    value: opt.value,
+                    text: opt.text
+                }));
+
+                // Focus search input
+                setTimeout(() => searchInput.focus(), 50);
+
+                searchInput.addEventListener('input', (e) => {
+                    const query = e.target.value.toLowerCase().trim();
+                    
+                    // Clear the select
+                    selectElement.innerHTML = '';
+                    
+                    // Filter matching options
+                    const filtered = originalOptions.filter(opt => 
+                        opt.text.toLowerCase().includes(query)
+                    );
+                    
+                    // Populate with filtered options
+                    filtered.forEach(opt => {
+                        const newOpt = document.createElement('option');
+                        newOpt.value = opt.value;
+                        newOpt.text = opt.text;
+                        selectElement.appendChild(newOpt);
+                    });
+                });
+
+                searchInput.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter') {
+                        e.preventDefault();
+                        // Find the confirm button in the dialog's footer
+                        const confirmBtn = element.closest('.window-content')?.parentElement.querySelector('footer.window-footer button[data-button-action="confirm"]');
+                        if (confirmBtn) {
+                            confirmBtn.click();
+                        }
+                    }
+                });
+            }
         });
         dialog.render(true);
     },
@@ -428,9 +492,11 @@ export let itemMixin = {
     _onItemDisplayInfo(event) {
         event.preventDefault();
         event.stopPropagation();
-        let section = event.currentTarget.closest('.item');
-        let editor = $(section).find('.item-info');
-        editor.toggleClass('invisible');
+        let itemId = event.currentTarget.closest('.item').dataset.itemId;
+        let item = this.actor.items.get(itemId);
+        if (item) {
+            item.sheet.render(true);
+        }
     },
 
     _onDisplayList(event) {

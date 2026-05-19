@@ -39,21 +39,47 @@ export let criticalWoundMixin = {
         const critList = foundry.utils.deepClone(this.actor.system.critWounds);
         const wound = critList[index];
         
-        // Update the state in our local clone
         if (input.type === 'checkbox') {
-            const prop = input.name.split('.').pop();
-            wound[prop] = input.checked;
-        }
-
-        // Automatic healing time calculation when stabilized
-        if (input.name.endsWith('.stabilized') && input.checked) {
-            const config = CONFIG.WITCHER.Crit[wound.configEntry];
-            const severity = config?.severity;
-            const fis = this.actor.system.stats.body.value;
-            
-            if (severity && severity !== 'deadly') {
-                wound.healingTime = this._getHealingTime(fis, severity);
+            const prop = input.name.split('.').pop(); // 'stabilized' or 'treated'
+            if (prop === 'stabilized') {
+                if (input.checked) {
+                    wound.mod = 'stabilized';
+                    
+                    // Automatic healing time calculation when stabilized
+                    const config = CONFIG.WITCHER.Crit[wound.configEntry];
+                    const severity = config?.severity;
+                    const fis = this.actor.system.stats.body.value;
+                    if (severity && severity !== 'deadly') {
+                        wound.healingTime = this._getHealingTime(fis, severity);
+                    }
+                } else {
+                    wound.mod = 'none';
+                    wound.healingTime = 0;
+                    wound.daysHealed = 0;
+                }
+            } else if (prop === 'treated') {
+                if (input.checked) {
+                    wound.mod = 'treated';
+                } else {
+                    wound.mod = 'stabilized';
+                }
             }
+        } else if (input.tagName === 'SELECT') {
+            if (input.classList.contains('wound-type')) {
+                wound.configEntry = input.value;
+                
+                // Reset healing progress when type changes
+                wound.healingTime = 0;
+                wound.daysHealed = 0;
+                wound.mod = 'none';
+            } else if (input.classList.contains('wound-location')) {
+                wound.location = input.value;
+            }
+        } else if (input.type === 'number') {
+            const prop = input.name.split('.').pop(); // 'daysHealed' or 'healingTime'
+            wound[prop] = Number(input.value) || 0;
+        } else if (input.type === 'text') {
+            wound.notes = input.value || '';
         }
         
         await this.actor.update({ "system.critWounds": critList });
@@ -75,7 +101,13 @@ export let criticalWoundMixin = {
         html.find(".add-crit-wound").on("click", this._onCriticalWoundAdd.bind(this));
         html.find(".delete-crit-wound").on("click", this._onCriticalWoundRemove.bind(this));
         html.find('.critwound-display').on('click', this._onCritWoundDisplayInfo.bind(this));
-        html.find(".premium-checkbox input[type='checkbox']").on("change", this._onCritWoundUpdate.bind(this));
+        
+        // Non registrare i listener change manuali se siamo in una scheda V2 con submitOnChange
+        const isV2 = this.options?.form?.submitOnChange;
+        if (!isV2) {
+            html.find(".critwound-card select").on("change", this._onCritWoundUpdate.bind(this));
+            html.find(".critwound-card input").on("change", this._onCritWoundUpdate.bind(this));
+        }
     }
 
 }

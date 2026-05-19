@@ -46,6 +46,22 @@ export default class WeaponData extends CommonItemData {
         };
     }
 
+    get reliable() {
+        return this.reliability;
+    }
+
+    set reliable(value) {
+        this.reliability = value;
+    }
+
+    get maxReliability() {
+        return this.reliabilityMax;
+    }
+
+    set maxReliability(value) {
+        this.reliabilityMax = value;
+    }
+
     isApplicableDefense(attack) {
         return this.defenseProperties.isApplicableDefense(attack);
     }

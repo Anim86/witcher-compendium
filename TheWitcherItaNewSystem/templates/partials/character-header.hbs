@@ -7,20 +7,20 @@
             <div class="header-right">
                 <div class="reputation-badge" data-action="editReputation" data-tooltip="{{localize 'WITCHER.Reputation'}}">
                     <i class="fas fa-award"></i>
-                    <span class="rep-label">{{localize 'WITCHER.Reputation'}}</span>
+                    <span class="rep-label">{{localize 'WITCHER.ReputationShort'}}</span>
                     <span class="rep-value">{{#if system.reputation.value}}{{system.reputation.value}}{{else}}0{{/if}}</span>
                     <i class="fas fa-cog gear-icon"></i>
                 </div>
 
                 <div class="ip-badge standard-ip open-rewards" data-action="openRewards" data-type="standard" data-tooltip="{{localize 'WITCHER.Progression.StandardIP'}}">
                     <i class="fas fa-graduation-cap"></i>
-                    <span class="ip-label">{{localize 'WITCHER.Progression.ExpLabel'}}</span>
+                    <span class="ip-label">{{localize 'WITCHER.Progression.ExpLabelShort'}}</span>
                     <span class="ip-value">{{system.improvementPoints}}</span>
                 </div>
                 
                 <div class="ip-badge magic-ip open-rewards" data-action="openRewards" data-type="magic" data-tooltip="{{localize 'WITCHER.Progression.MagicIP'}}">
                     <i class="fas fa-sparkles"></i>
-                    <span class="ip-label">{{localize 'WITCHER.Progression.MagicLabel'}}</span>
+                    <span class="ip-label">{{localize 'WITCHER.Progression.MagicLabelShort'}}</span>
                     <span class="ip-value">{{system.magic.magicImprovementPoints}}</span>
                 </div>
             </div>

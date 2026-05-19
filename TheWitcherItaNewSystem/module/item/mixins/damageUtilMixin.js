@@ -20,7 +20,7 @@ export let damageUtilMixin = {
 
     async rollDamage(damage) {
         let messageData = new ChatMessageData(this.parent);
-        messageData.flavor = `<div class="damage-message" <h1><img src="${this.img}" class="item-img" />${game.i18n.localize('WITCHER.table.Damage')}: ${this.name} </h1>`;
+        messageData.flavor = `<div class="damage-message"><h1><img src="${this.img}" class="item-img" />${game.i18n.localize('WITCHER.table.Damage')}: ${this.name} </h1></div>`;
 
         let damageFormula = '' + damage.formula;
 

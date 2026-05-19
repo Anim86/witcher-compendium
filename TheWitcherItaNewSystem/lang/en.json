@@ -44,7 +44,9 @@
             "StandardIP": "Experience Points (Standard)",
             "MagicIP": "Magic Experience Points (Pool)",
             "ExpLabel": "EXP Points",
+            "ExpLabelShort": "EXP",
             "MagicLabel": "Magic Points",
+            "MagicLabelShort": "MAG",
             "CurrentLevel": "Current Level",
             "TargetLevel": "Target Level",
             "TotalCost": "Total Cost",
@@ -137,6 +139,7 @@
             "MultipleExport": "Export for multiple monsters:",
             "TotalWeight": "Total Weight",
             "MaxWeight": "Max Weight",
+            "LiftLimit": "Lifting Capacity",
             "TotalCost": "Total Cost",
             "Weapons": "Weapons",
             "Armors": "Armors",
@@ -362,7 +365,8 @@
                 "Edit": "Edit",
                 "Delete": "Delete",
                 "Increase": "Increase",
-                "Decrease": "Decrease"
+                "Decrease": "Decrease",
+                "Search": "Search"
             }
         },
         "Spell": {
@@ -498,7 +502,7 @@
             "Description": "Description",
             "Attribute": "Attributes",
             "ROF": "ROF",
-            "openDescription": "Click to open the description",
+            "openDescription": "Click to open the item sheet",
             "equipEnhancement": "Equip a enhancement",
             "Availability": "Availability",
             "AddEffect": "Add Effect",
@@ -626,6 +630,7 @@
             "halved": "Halved"
         },
         "Dialog": {
+            "advanced": "Advanced Options",
             "NoComponents": "Not enough components for craft",
             "CraftingDiagram": "You have a recipe in hand",
             "RealCrafting": "Use real craft",
@@ -640,7 +645,7 @@
             "DefenseExtra": "Extra defense",
             "DefenseWith": "Defense with",
             "DefenseTitle": "Performing a defense action",
-            "attack": "Random Human",
+            "attack": "Attack",
             "attackRandomHuman": "Random Human",
             "attackRandomMonster": "Random Monster",
             "attackHead": "Head",
@@ -1444,6 +1449,7 @@
         "SocialStanding": "Social Standing",
         "Profession": "Profession",
         "Reputation": "Reputation",
+        "ReputationShort": "REP",
         "NoDamageSpecified": "Damage is not specified",
         "Shield.Broken": "Your shield is now broken",
         "Items.transferTitle": "Transferring Items",

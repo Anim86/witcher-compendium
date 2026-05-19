@@ -248,13 +248,78 @@ export default class WitcherActorSheet extends HandlebarsApplicationMixin(ActorS
         let wounds = context.system.critWounds;
         if (!wounds) return;
 
-        wounds.forEach((wound, index) => {
-            const config = CONFIG.WITCHER.Crit[wound.configEntry];
+        context.system.critWounds = wounds.map((wound) => {
+            const woundData = typeof wound.toObject === 'function' ? wound.toObject() : foundry.utils.deepClone(wound);
+            
+            // Map 'mod' database string field to helper boolean fields for the template
+            woundData.stabilized = (woundData.mod === 'stabilized' || woundData.mod === 'treated');
+            woundData.treated = (woundData.mod === 'treated');
+            
+            const config = CONFIG.WITCHER.Crit[woundData.configEntry];
             if (config) {
-                wounds[index].description = config.description;
-                wounds[index].effect = config.effect?.[wound.mod] || config.effect?.['none'];
+                woundData.description = config.description;
+                woundData.effect = config.effect?.[woundData.mod] || config.effect?.['none'];
             }
+            return woundData;
         });
+    }
+
+    /** @override */
+    _prepareUpdateData(updateData) {
+        // Intercetta e raggruppa gli aggiornamenti alle ferite critiche inseriti tramite form
+        const critWoundsUpdates = {};
+        for (const [key, value] of Object.entries(updateData)) {
+            const match = key.match(/^system\.critWounds\.(\d+)\.(.*)$/);
+            if (match) {
+                const index = parseInt(match[1]);
+                const prop = match[2];
+                if (!critWoundsUpdates[index]) critWoundsUpdates[index] = {};
+                critWoundsUpdates[index][prop] = value;
+                delete updateData[key];
+            }
+        }
+
+        if (Object.keys(critWoundsUpdates).length > 0) {
+            const currentWounds = foundry.utils.deepClone(this.actor.system.critWounds || []);
+            
+            for (const [index, woundUpdate] of Object.entries(critWoundsUpdates)) {
+                const wound = currentWounds[index];
+                if (!wound) continue;
+
+                // Applica i campi modificati
+                if ('configEntry' in woundUpdate) {
+                    // Se cambia il tipo, resetta stato e progresso
+                    if (woundUpdate.configEntry !== wound.configEntry) {
+                        wound.configEntry = woundUpdate.configEntry;
+                        wound.mod = 'none';
+                        wound.healingTime = 0;
+                        wound.daysHealed = 0;
+                    }
+                }
+                if ('location' in woundUpdate) wound.location = woundUpdate.location;
+                if ('daysHealed' in woundUpdate) wound.daysHealed = Number(woundUpdate.daysHealed) || 0;
+                if ('healingTime' in woundUpdate) wound.healingTime = Number(woundUpdate.healingTime) || 0;
+                if ('notes' in woundUpdate) wound.notes = woundUpdate.notes;
+
+                // Mappa i checkbox stabilized e treated a 'mod'
+                if ('stabilized' in woundUpdate || 'treated' in woundUpdate) {
+                    const isStabilized = 'stabilized' in woundUpdate ? woundUpdate.stabilized : (wound.mod === 'stabilized' || wound.mod === 'treated');
+                    const isTreated = 'treated' in woundUpdate ? woundUpdate.treated : (wound.mod === 'treated');
+
+                    if (isTreated) {
+                        wound.mod = 'treated';
+                    } else if (isStabilized) {
+                        wound.mod = 'stabilized';
+                    } else {
+                        wound.mod = 'none';
+                    }
+                }
+            }
+
+            updateData['system.critWounds'] = currentWounds;
+        }
+
+        return super._prepareUpdateData(updateData);
     }
 
     async _onRender(context, options) {

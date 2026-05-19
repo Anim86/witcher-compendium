@@ -1,11 +1,34 @@
 {
     "_id": "22270d7a24b0f5fb",
     "name": "Mutageno: Shaelmaar (Verde)",
-    "type": "valuable",
+    "type": "mutagen",
     "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-mutations/mutageno_shaelmaar_verde.webp",
     "system": {
         "description": "<p>Effetto: +10 PS. CD Mutazione: 20. Mutazione Minore: Zone di pelle spessa e rocciosa.</p>",
-        "sourcebook": "DW 145"
+        "quantity": "1",
+        "weight": 0.5,
+        "cost": 0,
+        "sourcebook": "DW 145",
+        "isHidden": false,
+        "isStored": false,
+        "isCarried": true,
+        "type": "Green",
+        "source": "Shaelmaar",
+        "effect": "+10 PS",
+        "alchemyDC": 20,
+        "minorMutation": "Zone di pelle spessa e rocciosa.",
+        "isConsumable": false,
+        "consumeProperties": {
+            "doesHeal": false,
+            "heal": "",
+            "addsTempHp": false,
+            "temporaryHp": {
+                "value": "",
+                "duration": 0
+            },
+            "effects": [],
+            "removesEffects": []
+        }
     },
     "effects": [],
     "flags": {},

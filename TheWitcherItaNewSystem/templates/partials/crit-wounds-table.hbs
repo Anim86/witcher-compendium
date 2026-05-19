@@ -7,7 +7,7 @@
                     <select name="system.critWounds.{{i}}.configEntry" class="wound-type">
                         <option value="">-- {{localize "WITCHER.CritWound.Add"}} --</option>
                         {{#each ../config.Crit as |c key|}}
-                        <option value="{{key}}" {{selected (eq wound.configEntry key)}}>{{localize c.name}}</option>
+                        <option value="{{key}}" {{selected (eq wound.configEntry key)}}>{{localize c.label}}</option>
                         {{/each}}
                     </select>
                     
@@ -15,10 +15,10 @@
                         {{#select wound.location}}
                         <option value="head">{{localize "WITCHER.Location.Head"}}</option>
                         <option value="torso">{{localize "WITCHER.Location.Torso"}}</option>
-                        <option value="rarm">{{localize "WITCHER.Location.RArm"}}</option>
-                        <option value="larm">{{localize "WITCHER.Location.LArm"}}</option>
-                        <option value="rleg">{{localize "WITCHER.Location.RLeg"}}</option>
-                        <option value="lleg">{{localize "WITCHER.Location.LLeg"}}</option>
+                        <option value="rarm">{{localize "WITCHER.Location.rightArm"}}</option>
+                        <option value="larm">{{localize "WITCHER.Location.leftArm"}}</option>
+                        <option value="rleg">{{localize "WITCHER.Location.rightLeg"}}</option>
+                        <option value="lleg">{{localize "WITCHER.Location.leftLeg"}}</option>
                         {{/select}}
                     </select>
                 </div>
@@ -55,9 +55,15 @@
             <div class="critwound-footer">
                 {{#if wound.configEntry}}
                 <div class="penalty-line">
-                    <i class="fas fa-exclamation-triangle"></i>
-                    <span class="penalty-text">{{{localize (lookup (lookup ../config.Crit wound.configEntry) "penaltyDef")}}}</span>
+                    <i class="fas fa-info-circle" style="color: #3498db; font-size: 11px;"></i>
+                    <span class="penalty-text" style="color: #eee;">{{{localize wound.description}}}</span>
                 </div>
+                {{#if wound.effect.description}}
+                <div class="penalty-line">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <span class="penalty-text">{{{localize wound.effect.description}}}</span>
+                </div>
+                {{/if}}
                 {{/if}}
                 <div class="notes-line">
                     <i class="fas fa-pen-nib"></i>
