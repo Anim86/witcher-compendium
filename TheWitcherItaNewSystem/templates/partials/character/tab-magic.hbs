@@ -5,42 +5,50 @@
                 data-tab="{{tab.id}}">{{localize tab.label}}</a>
         {{/each}}
     </nav>
-    <section class="tab {{magicTabs.all.cssClass}}" data-group="magicTabs" data-tab="all">
-        <div class="spell-section">
-            {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/spell-type-list.hbs" spells=noviceSpells itemType='spell' spellType="spellNovice" header=(concat (localize "WITCHER.Spell.Novice") " - " (localize "WITCHER.Spell.Spells") ", " (localize "WITCHER.Spell.Invocations") ", " (localize "WITCHER.Spell.Signs"))}}
 
-            {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/spell-type-list.hbs" spells=journeymanSpells itemType='spell' spellType="spellJourneyman" header=(concat (localize "WITCHER.Spell.Journeyman") " - " (localize "WITCHER.Spell.Spells") ", " (localize "WITCHER.Spell.Invocations") ", " (localize "WITCHER.Spell.Signs"))}}
 
-            {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/spell-type-list.hbs" spells=masterSpells itemType='spell' spellType="spellMaster" header=(concat (localize "WITCHER.Spell.Master") " - " (localize "WITCHER.Spell.Spells") ", " (localize "WITCHER.Spell.Invocations") ", " (localize "WITCHER.Spell.Signs"))}}
-        </div>
-        <div class="magic-section">
-            {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/spell-type-list.hbs" spells=rituals itemType='ritual' header=(localize "WITCHER.Spell.Rituals")}}
-
-            {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/spell-type-list.hbs" spells=hexes itemType='hex' header=(localize "WITCHER.Spell.Hexes")}}
-
-            {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/spell-type-list.hbs" spells=magicalgift itemType='spell' spellType="magicalgift" header=(localize "WITCHER.Spell.MagicalGift")}}
-        </div>
-    </section>
+    {{!-- 1. Spells (Incantesimi) --}}
     <section class="tab spell-section {{magicTabs.magic.cssClass}}" data-group="magicTabs" data-tab="magic">
-        {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/spell-type-list.hbs" spells=noviceSpells itemType='spell' spellType="spellNovice" header=(concat (localize "WITCHER.Spell.Novice") " - " (localize "WITCHER.Spell.Spells") ", " (localize "WITCHER.Spell.Invocations") ", " (localize "WITCHER.Spell.Signs"))}}
-
-        {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/spell-type-list.hbs" spells=journeymanSpells itemType='spell' spellType="spellJourneyman" header=(concat (localize "WITCHER.Spell.Journeyman") " - " (localize "WITCHER.Spell.Spells") ", " (localize "WITCHER.Spell.Invocations") ", " (localize "WITCHER.Spell.Signs"))}}
-
-        {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/spell-type-list.hbs" spells=masterSpells itemType='spell' spellType="spellMaster" header=(concat (localize "WITCHER.Spell.Master") " - " (localize "WITCHER.Spell.Spells") ", " (localize "WITCHER.Spell.Invocations") ", " (localize "WITCHER.Spell.Signs"))}}
+        {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/spell-type-list.hbs" spells=noviceSpells itemType='spell' spellType="spell" header=(concat (localize "WITCHER.Spell.Novice") " - " (localize "WITCHER.Spell.Spells"))}}
+        {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/spell-type-list.hbs" spells=journeymanSpells itemType='spell' spellType="spell" header=(concat (localize "WITCHER.Spell.Journeyman") " - " (localize "WITCHER.Spell.Spells"))}}
+        {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/spell-type-list.hbs" spells=masterSpells itemType='spell' spellType="spell" header=(concat (localize "WITCHER.Spell.Master") " - " (localize "WITCHER.Spell.Spells"))}}
     </section>
 
+    {{!-- 2. Invocations (Invocazioni) --}}
+    <section class="tab spell-section {{magicTabs.invocations.cssClass}}" data-group="magicTabs" data-tab="invocations">
+        {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/spell-type-list.hbs" spells=noviceInvocations itemType='spell' spellType="invocation" header=(concat (localize "WITCHER.Spell.Novice") " - " (localize "WITCHER.Spell.Invocations"))}}
+        {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/spell-type-list.hbs" spells=journeymanInvocations itemType='spell' spellType="invocation" header=(concat (localize "WITCHER.Spell.Journeyman") " - " (localize "WITCHER.Spell.Invocations"))}}
+        {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/spell-type-list.hbs" spells=masterInvocations itemType='spell' spellType="invocation" header=(concat (localize "WITCHER.Spell.Master") " - " (localize "WITCHER.Spell.Invocations"))}}
+    </section>
+
+    {{!-- 3. Witcher Signs (Segni) --}}
+    <section class="tab spell-section {{magicTabs.signs.cssClass}}" data-group="magicTabs" data-tab="signs">
+        {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/spell-type-list.hbs" spells=noviceSigns itemType='spell' spellType="sign" header=(concat (localize "WITCHER.Spell.Novice") " - " (localize "WITCHER.Spell.Signs"))}}
+        {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/spell-type-list.hbs" spells=journeymanSigns itemType='spell' spellType="sign" header=(concat (localize "WITCHER.Spell.Journeyman") " - " (localize "WITCHER.Spell.Signs"))}}
+        {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/spell-type-list.hbs" spells=masterSigns itemType='spell' spellType="sign" header=(concat (localize "WITCHER.Spell.Master") " - " (localize "WITCHER.Spell.Signs"))}}
+    </section>
+
+    {{!-- 4. Rituals (Rituali) --}}
     <section class="tab magic-section {{magicTabs.rituals.cssClass}}" data-group="magicTabs" data-tab="rituals">
-        {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/spell-type-list.hbs" spells=rituals itemType='ritual' header=(localize "WITCHER.Spell.Rituals")}}
+        {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/spell-type-list.hbs" spells=rituals itemType='ritual' spellType="ritual" header=(localize "WITCHER.Spell.Rituals")}}
     </section>
 
+    {{!-- 5. Hexes (Fatture) --}}
     <section class="tab magic-section {{magicTabs.hexes.cssClass}}" data-group="magicTabs" data-tab="hexes">
-        {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/spell-type-list.hbs" spells=hexes itemType='hex' header=(localize "WITCHER.Spell.Hexes")}}
+        {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/spell-type-list.hbs" spells=hexes itemType='hex' spellType="hex" header=(localize "WITCHER.Spell.Hexes")}}
     </section>
 
+    {{!-- 6. Magical Gift (Doni Magici) --}}
     <section class="tab magic-section {{magicTabs.magicalGift.cssClass}}" data-group="magicTabs" data-tab="magicalGift">
         {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/spell-type-list.hbs" spells=magicalgift itemType='spell' spellType="magicalgift" header=(localize "WITCHER.Spell.MagicalGift")}}
     </section>
 
+    {{!-- 7. Curses (Maledizioni) --}}
+    <section class="tab magic-section {{magicTabs.curses.cssClass}}" data-group="magicTabs" data-tab="curses">
+        {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/spell-type-list.hbs" spells=curses itemType='hex' spellType="curses" header=(localize "WITCHER.Spell.Curses")}}
+    </section>
+
+    {{!-- 8. Focus / Vigor --}}
     <div class="tab magic-info {{magicTabs.focus.cssClass}}" data-group="magicTabs" data-tab="focus">
         <div class="value-max-stat-display">
             <label>{{localize "WITCHER.StVigor"}}</label>

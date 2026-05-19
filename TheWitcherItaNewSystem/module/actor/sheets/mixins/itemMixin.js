@@ -60,7 +60,7 @@ export let itemMixin = {
         let element = event.currentTarget;
         const itemtype = element.dataset.itemtype;
 
-        if (['profession', 'race', 'homeland', 'weapon', 'armor', 'component', 'diagrams', 'alchemical', 'valuable'].includes(itemtype)) {
+        if (['profession', 'race', 'homeland', 'weapon', 'armor', 'component', 'diagrams', 'alchemical', 'valuable', 'spell', 'ritual', 'hex'].includes(itemtype)) {
             const packMap = {
                 'profession': 'witcher-compendium.witcher-professions',
                 'race': 'witcher-compendium.witcher-races',
@@ -70,9 +70,34 @@ export let itemMixin = {
                 'component': 'witcher-compendium.witcher-components',
                 'diagrams': 'witcher-compendium.witcher-schematics',
                 'alchemical': 'witcher-compendium.witcher-alchemy',
-                'valuable': 'witcher-compendium.witcher-equipment'
+                'valuable': 'witcher-compendium.witcher-equipment',
+                'spell': 'witcher-compendium.witcher-spells',
+                'ritual': 'witcher-compendium.witcher-rituals',
+                'hex': 'witcher-compendium.witcher-hexes'
             };
-            return this._onCompendiumItemSelect(itemtype, packMap[itemtype]);
+
+            const spellType = element.dataset.spelltype;
+            let packId = packMap[itemtype];
+            if (spellType) {
+                const spellPackMap = {
+                    'spellNovice': 'witcher-compendium.witcher-spells',
+                    'spellJourneyman': 'witcher-compendium.witcher-spells',
+                    'spellMaster': 'witcher-compendium.witcher-spells',
+                    'spell': 'witcher-compendium.witcher-spells',
+                    'invocation': 'witcher-compendium.witcher-invocations',
+                    'sign': 'witcher-compendium.witcher-signs',
+                    'ritual': 'witcher-compendium.witcher-rituals',
+                    'hex': 'witcher-compendium.witcher-hexes',
+                    'magicalgift': 'witcher-compendium.witcher-gifts',
+                    'goetia': 'witcher-compendium.witcher-rituals',
+                    'necromancy': 'witcher-compendium.witcher-spells',
+                    'curses': 'witcher-compendium.witcher-curses'
+                };
+                if (spellPackMap[spellType]) {
+                    packId = spellPackMap[spellType];
+                }
+            }
+            return this._onCompendiumItemSelect(itemtype, packId, spellType);
         }
 
         let itemData = {
@@ -120,7 +145,7 @@ export let itemMixin = {
         return this._onCompendiumItemSelect('profession', 'witcher-compendium.witcher-professions');
     },
 
-    async _onCompendiumItemSelect(itemtype, packId) {
+    async _onCompendiumItemSelect(itemtype, packId, spellType = null) {
         let pack = game.packs.get(packId);
         
         // Map itemtypes to their localized labels
@@ -133,7 +158,10 @@ export let itemMixin = {
             'component': game.i18n.localize('TYPES.Item.component'),
             'diagrams': game.i18n.localize('TYPES.Item.diagrams'),
             'alchemical': game.i18n.localize('TYPES.Item.alchemical'),
-            'valuable': game.i18n.localize('TYPES.Item.valuable')
+            'valuable': game.i18n.localize('TYPES.Item.valuable'),
+            'spell': game.i18n.localize('TYPES.Item.spell'),
+            'ritual': game.i18n.localize('TYPES.Item.ritual'),
+            'hex': game.i18n.localize('TYPES.Item.hex')
         };
         const typeLabel = labels[itemtype] || itemtype;
 
@@ -144,14 +172,56 @@ export let itemMixin = {
 
         if (!pack) return ui.notifications.error(`Compendio per ${typeLabel} non trovato.`);
 
-        const index = await pack.getIndex({fields: ["img", "name", "type"]});
-        const filteredIndex = index.filter(i => i.type === itemtype);
+        const filterFunc = (i) => {
+            if (spellType) {
+                if (spellType === 'spellNovice') {
+                    return i.type === 'spell' && ['Spells', 'Invocations', 'Witcher', 'Mage'].includes(i.system?.class) && i.system?.level === 'novice';
+                }
+                if (spellType === 'spellJourneyman') {
+                    return i.type === 'spell' && ['Spells', 'Invocations', 'Witcher', 'Mage'].includes(i.system?.class) && i.system?.level === 'journeyman';
+                }
+                if (spellType === 'spellMaster') {
+                    return i.type === 'spell' && ['Spells', 'Invocations', 'Witcher', 'Mage'].includes(i.system?.class) && i.system?.level === 'master';
+                }
+                if (spellType === 'spell') {
+                    return i.type === 'spell' && (i.system?.class === 'Spells' || i.system?.class === 'Mage');
+                }
+                if (spellType === 'invocation') {
+                    return i.type === 'spell' && i.system?.class === 'Invocations';
+                }
+                if (spellType === 'sign') {
+                    return i.type === 'spell' && i.system?.class === 'Witcher';
+                }
+                if (spellType === 'ritual') {
+                    return i.type === 'ritual' && (i.system?.class === 'ritual' || !i.system?.class);
+                }
+                if (spellType === 'hex') {
+                    return i.type === 'hex' && (i.system?.class === 'hex' || !i.system?.class);
+                }
+                if (spellType === 'magicalgift') {
+                    return i.type === 'spell' && i.system?.class === 'MagicalGift';
+                }
+                if (spellType === 'goetia') {
+                    return i.type === 'ritual' && i.system?.class === 'Goetia';
+                }
+                if (spellType === 'necromancy') {
+                    return i.system?.class === 'Necromanzia';
+                }
+                if (spellType === 'curses') {
+                    return i.type === 'hex' && i.system?.class === 'Curses';
+                }
+            }
+            return i.type === itemtype;
+        };
+
+        const index = await pack.getIndex({fields: ["img", "name", "type", "system.class", "system.level"]});
+        let filteredIndex = index.filter(filterFunc);
         
         if (filteredIndex.length === 0) {
             // If the preferred pack doesn't have the items, search everywhere
             for (const p of game.packs.filter(p => p.metadata.type === "Item")) {
-                const idx = await p.getIndex({fields: ["img", "name", "type"]});
-                const matches = idx.filter(i => i.type === itemtype);
+                const idx = await p.getIndex({fields: ["img", "name", "type", "system.class", "system.level"]});
+                const matches = idx.filter(filterFunc);
                 if (matches.length > 0) {
                     filteredIndex.push(...matches);
                 }

@@ -4,7 +4,7 @@ Hooks.once("ready", async () => {
   const ROOT_NAME = "The Witcher Compendio ITA";
   const MACRO_CATS = {
     "BESTIARIO": "BESTIARIO & PERSONAGGI",
-    "MAGIA_E_MALEDIZIONI": "MAGIA & MALEDIZIONI",
+    "MAGIA": "Magia",
     "EQUIPAGGIAMENTO": "EQUIPAGGIAMENTO",
     "ALCHIMIA_E_ARTIGIANATO": "ALCHIMIA & ARTIGIANATO",
     "REGOLAMENTO_E_NARRATIVA": "REGOLAMENTO & NARRATIVA"
@@ -57,13 +57,16 @@ Hooks.once("ready", async () => {
   // No sub-levels for BESTIARIO to keep it clean as requested.
 
   
-  // Magia
-  const mMagia = folderMap.get("MAGIA_E_MALEDIZIONI");
-  await ensureSub("MAGIA_E_MALEDIZIONI/Segni", "Segni", mMagia);
-  await ensureSub("MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali", "Incantesimi & Rituali", mMagia);
-  await ensureSub("MAGIA_E_MALEDIZIONI/Doni_del_Caos", "Doni del Caos", mMagia);
-  await ensureSub("MAGIA_E_MALEDIZIONI/Necromanzia", "Necromanzia", mMagia);
-  await ensureSub("MAGIA_E_MALEDIZIONI/Maledizioni_e_Fatture", "Maledizioni & Fatture", mMagia);
+  // Riorganizzazione Magia
+  const mMagia = folderMap.get("MAGIA");
+  await ensureSub("MAGIA/Incantesimi", "Incantesimi", mMagia);
+  await ensureSub("MAGIA/Invocazioni", "Invocazioni", mMagia);
+  await ensureSub("MAGIA/Rituali", "Rituali", mMagia);
+  await ensureSub("MAGIA/Fatture", "Fatture", mMagia);
+  await ensureSub("MAGIA/Segni", "Segni", mMagia);
+  await ensureSub("MAGIA/Doni_Magici", "Doni Magici", mMagia);
+  await ensureSub("MAGIA/Maledizioni", "Maledizioni", mMagia);
+  await ensureSub("MAGIA/Rune_Glifi_Reliquie", "Rune, Glifi & Reliquie", mMagia);
 
   // Equipaggiamento (Directly under parent now)
   const mEquip = folderMap.get("EQUIPAGGIAMENTO");
@@ -81,6 +84,7 @@ Hooks.once("ready", async () => {
   await ensureSub("REGOLAMENTO_E_NARRATIVA/Trofei", "Trofei", mReg);
   await ensureSub("REGOLAMENTO_E_NARRATIVA/Geografia", "Geografia", mReg);
   await ensureSub("REGOLAMENTO_E_NARRATIVA/Tabelle_Operative", "Tabelle Operative", mReg);
+  await ensureSub("REGOLAMENTO_E_NARRATIVA/Regole_Necromanzia", "Regole Necromanzia", mReg);
 
   // 5. Rilocazione Pack
   for (let pack of game.packs) {

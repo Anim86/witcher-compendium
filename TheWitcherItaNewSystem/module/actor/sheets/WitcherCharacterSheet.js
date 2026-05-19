@@ -116,14 +116,16 @@ export default class WitcherCharacterSheet extends WitcherActorSheet {
         },
         magicTabs: {
             tabs: [
-                { id: 'all', cssClass: 'all', label: 'WITCHER.Button.All' },
-                { id: 'magic', cssClass: 'magic', label: 'WITCHER.Actor.tabs.magic' },
+                { id: 'magic', cssClass: 'magic', label: 'WITCHER.Spell.Spells' },
+                { id: 'invocations', cssClass: 'invocations', label: 'WITCHER.Spell.Invocations' },
+                { id: 'signs', cssClass: 'signs', label: 'WITCHER.Spell.Signs' },
                 { id: 'rituals', cssClass: 'rituals', label: 'WITCHER.Spell.Rituals' },
                 { id: 'hexes', cssClass: 'hexes', label: 'WITCHER.Spell.Hexes' },
                 { id: 'magicalGift', cssClass: 'magicalGift', label: 'WITCHER.Spell.MagicalGift' },
+                { id: 'curses', cssClass: 'curses', label: 'WITCHER.Spell.Curses' },
                 { id: 'focus', cssClass: 'focus', label: 'WITCHER.Actor.focus.name' }
             ],
-            initial: 'all'
+            initial: 'magic'
         }
     };
 

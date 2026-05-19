@@ -14,6 +14,7 @@ export default class RitualData extends CommonItemData {
             // Using destructuring to effectively append our additional data here
             ...commonData,
             ...magicTraining(),
+            class: new fields.StringField({ initial: '' }),
             level: new fields.StringField({ initial: '' }),
 
             stamina: new fields.NumberField({ initial: 0 }),

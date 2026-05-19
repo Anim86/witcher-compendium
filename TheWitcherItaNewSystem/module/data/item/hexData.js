@@ -11,6 +11,7 @@ export default class HexData extends CommonItemData {
             // Using destructuring to effectively append our additional data here
             ...commonData,
             ...magicTraining(),
+            class: new fields.StringField({ initial: '' }),
             danger: new fields.StringField({ initial: '' }),
             stamina: new fields.NumberField({ initial: 0 }),
 

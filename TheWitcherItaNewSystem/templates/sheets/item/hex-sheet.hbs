@@ -23,7 +23,13 @@
             <div class="information-grid">
                 <div class="info-item">
                     <label>{{localize "WITCHER.Spell.type"}}</label>
-                    <span>{{localize "WITCHER.Spell.Hexes"}}</span>
+                    <span>
+                        {{#if (eq item.system.class "Curses")}}
+                            {{localize "WITCHER.Spell.Curses"}}
+                        {{else}}
+                            {{localize "TYPES.Item.hex"}}
+                        {{/if}}
+                    </span>
                 </div>
                 <div class="info-item">
                     <label>{{localize "WITCHER.Item.SourceBook"}}</label>

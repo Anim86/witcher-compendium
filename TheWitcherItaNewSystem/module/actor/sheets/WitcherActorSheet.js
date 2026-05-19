@@ -149,29 +149,36 @@ export default class WitcherActorSheet extends HandlebarsApplicationMixin(ActorS
     }
 
     _prepareSpells(context) {
-        context.spells = context.actor.getList('spell');
+        const spells = context.actor.getList('spell');
+        const rituals = context.actor.getList('ritual');
+        const hexes = context.actor.getList('hex');
 
-        context.noviceSpells = context.spells.filter(
-            s =>
-                s.system.level == 'novice' &&
-                (s.system.class == 'Spells' || s.system.class == 'Invocations' || s.system.class == 'Witcher')
-        );
+        // 1. Spells (Incantesimi)
+        context.noviceSpells = spells.filter(s => s.system.level === 'novice' && (s.system.class === 'Spells' || s.system.class === 'Mage' || s.system.class === 'Necromanzia'));
+        context.journeymanSpells = spells.filter(s => (s.system.level === 'journeyman' || (s.system.class === 'Necromanzia' && !s.system.level && s.name.includes("Cadavere"))) && (s.system.class === 'Spells' || s.system.class === 'Mage' || s.system.class === 'Necromanzia'));
+        context.masterSpells = spells.filter(s => (s.system.level === 'master' || (s.system.class === 'Necromanzia' && !s.system.level && s.name.includes("Anime"))) && (s.system.class === 'Spells' || s.system.class === 'Mage' || s.system.class === 'Necromanzia'));
 
-        context.journeymanSpells = context.spells.filter(
-            s =>
-                s.system.level == 'journeyman' &&
-                (s.system.class == 'Spells' || s.system.class == 'Invocations' || s.system.class == 'Witcher')
-        );
+        // 2. Invocations (Invocazioni)
+        context.noviceInvocations = spells.filter(s => s.system.level === 'novice' && s.system.class === 'Invocations');
+        context.journeymanInvocations = spells.filter(s => s.system.level === 'journeyman' && s.system.class === 'Invocations');
+        context.masterInvocations = spells.filter(s => s.system.level === 'master' && s.system.class === 'Invocations');
 
-        context.masterSpells = context.spells.filter(
-            s =>
-                s.system.level == 'master' &&
-                (s.system.class == 'Spells' || s.system.class == 'Invocations' || s.system.class == 'Witcher')
-        );
+        // 3. Witcher Signs (Segni)
+        context.noviceSigns = spells.filter(s => s.system.level === 'novice' && s.system.class === 'Witcher');
+        context.journeymanSigns = spells.filter(s => s.system.level === 'journeyman' && s.system.class === 'Witcher');
+        context.masterSigns = spells.filter(s => s.system.level === 'master' && s.system.class === 'Witcher');
 
-        context.hexes = context.actor.getList('hex');
-        context.rituals = context.actor.getList('ritual');
-        context.magicalgift = context.spells.filter(s => s.system.class == 'MagicalGift');
+        // 4. Rituals (Rituali)
+        context.rituals = rituals.filter(r => r.system.class === 'ritual' || !r.system.class || r.system.class === 'Goetia' || r.system.class === 'Necromanzia');
+
+        // 5. Hexes (Fatture)
+        context.hexes = hexes.filter(h => h.system.class === 'hex' || !h.system.class);
+
+        // 6. Magical Gift (Doni Magici)
+        context.magicalgift = spells.filter(s => s.system.class === 'MagicalGift');
+
+        // 9. Curses (Maledizioni)
+        context.curses = hexes.filter(h => h.system.class === 'Curses');
     }
 
     /**

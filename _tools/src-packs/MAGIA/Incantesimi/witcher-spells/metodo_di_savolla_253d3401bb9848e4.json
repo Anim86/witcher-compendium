@@ -1,0 +1,61 @@
+{
+    "_id": "253d3401bb9848e4",
+    "name": "Metodo di Savolla",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA/Incantesimi/witcher-spells/metodo_di_savolla.webp",
+    "system": {
+        "description": "<p>creato come miglioramento di tecniche più anti- che, il Metodo di Savolla rimuove tessuti e mucose da un cadavere, rendendo più facile recuperare le componenti mutagene. Lanciando questo incantesimo, il Mutageno si stacca dal corpo e brilla debolmente, permettendo di recuperarlo con una prova di Alchimia o Arte del Witcher CD 14.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "TC 83",
+        "class": "Mage",
+        "level": "master",
+        "source": "mixedElements",
+        "stamina": 0,
+        "staminaIsVar": false,
+        "effect": "creato come miglioramento di tecniche più anti- che, il Metodo di Savolla rimuove tessuti e mucose da un cadavere, rendendo più facile recuperare le componenti mutagene. Lanciando questo incantesimo, il Mutageno si stacca dal corpo e brilla debolmente, permettendo di recuperarlo con una prova di Alchimia o Arte del Witcher CD 14.",
+        "range": "2m",
+        "duration": "Istantanea",
+        "defence": "Nessuna",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
+}

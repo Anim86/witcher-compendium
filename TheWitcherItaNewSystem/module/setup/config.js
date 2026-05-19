@@ -739,6 +739,9 @@ WITCHER.magic = {
     Spells: {
         skill: WITCHER.skillMap.spellcast
     },
+    Mage: {
+        skill: WITCHER.skillMap.spellcast
+    },
     ritual: {
         skill: WITCHER.skillMap.ritcraft
     },
