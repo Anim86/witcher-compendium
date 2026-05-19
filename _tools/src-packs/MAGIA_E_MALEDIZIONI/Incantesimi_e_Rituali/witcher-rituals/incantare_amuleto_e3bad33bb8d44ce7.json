@@ -4,9 +4,16 @@
     "system": {
         "stamina": 0,
         "cost": 0,
-        "description": "<p>incastonando gemme incise con glifi magici in un comune amuleto, questo diviene un ricettacolo per alcuni Incantesimi. Durante la creazione dell'amuleto, il ritualista deve spendere la RES normalmente richiesta per lanciare ciascun Incantesimo. Per quelli Attivi oc- corre anche pagare il mantenimento per 4 Round. Non è possibile usare un Focus durante questo rituale e gli Incantesimi vanno lanciati uno dopo l'altro, senza pause, altrimenti il procedimento fallisce.</p>",
+        "description": "<p>Incastona Incantesimi o Invocazioni dentro i gioielli di un amuleto. Il ritualista deve pagare integralmente la RES per ogni Incantesimo caricato durante il processo</p>",
         "class": "ritual",
-        "sourcebook": "TC 104"
+        "sourcebook": "TC 104",
+        "level": "master",
+        "difficultyCheck": "18",
+        "staminaIsVar": true,
+        "duration": "Permanente",
+        "preparationTime": "",
+        "components": "Amuleto Semplice (x1), Arnesi Runici, Gemma Perfetta (1 a Incantesimo), Quintessenza (x2)",
+        "effect": "Incastona Incantesimi o Invocazioni dentro i gioielli di un amuleto. Il ritualista deve pagare integralmente la RES per ogni Incantesimo caricato durante il processo"
     },
     "type": "ritual",
     "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-rituals/incantare_amuleto.webp",

@@ -4,19 +4,19 @@
     "type": "ritual",
     "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-rituals/idromanzia.webp",
     "system": {
-        "description": "<p>L'Idromanzia permette al ritualista di fissare in un piccolo specchio d'acqua e di scorgervi un evento av- venuto negli ultimi due giorni, o che si sta svolgendo in quel momento. Osservare un evento passato usa la CD base. Se il ritualista cerca di scorgere un evento che sta avendo luogo, la CD aumenta di 3. Se il ritualista osserva un evento corrente, a cui partecipa un mago questo può percepire la divinazione con un tiro di Arte del Mago contrapposto al tiro di Officiare Rituali.</p>",
+        "description": "<p>Scorge nell'acqua un evento avvenuto negli ultimi due giorni o in corso. I maghi osservati possono percepire la divinazione</p>",
         "quantity": "1",
         "weight": 0,
-        "cost": 0,
+        "cost": 5,
         "sourcebook": "MB 118",
         "class": "ritual",
         "level": "novice",
         "source": "",
-        "stamina": 0,
+        "stamina": 5,
         "staminaIsVar": false,
-        "effect": "Lâ€™Idromanzia permette al ritualista di fissare in un piccolo specchio dâ€™acqua e di scorgervi un evento av- venuto negli ultimi due giorni, o che si sta svolgendo in quel momento. Osservare un evento passato usa la CD base. Se il ritualista cerca di scorgere un evento che sta avendo luogo, la CD aumenta di 3. Se il ritualista osserva un evento corrente, a cui partecipa un mago questo può percepire la divinazione con un tiro di Arte del Mago contrapposto al tiro di Officiare Rituali.",
+        "effect": "Scorge nell'acqua un evento avvenuto negli ultimi due giorni o in corso. I maghi osservati possono percepire la divinazione",
         "range": "N/A",
-        "duration": "Attiva (2 RES)",
+        "duration": "Attiva (2)",
         "defence": "",
         "damageProperties": {
             "armorPiercing": false,
@@ -50,7 +50,10 @@
         "attackOptions": [
             "spell"
         ],
-        "spellAttackSkill": "ritcraft"
+        "spellAttackSkill": "ritcraft",
+        "difficultyCheck": "15 (18)",
+        "preparationTime": "",
+        "components": "Ciotola/Specchio d'acqua, Quintessenza (x2), Petali Mirto (x2), Perla (x2), Frammento Lunare (x1), Berbercane (x1)"
     },
     "effects": [],
     "flags": {},

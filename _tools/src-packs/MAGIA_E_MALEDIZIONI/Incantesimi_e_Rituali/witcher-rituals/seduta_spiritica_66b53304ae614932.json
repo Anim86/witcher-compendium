@@ -4,17 +4,17 @@
     "type": "ritual",
     "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-rituals/seduta_spiritica.webp",
     "system": {
-        "description": "<p>Seduta Spiritica contatta lo spirito di un defun- to. La seduta riporta l'anima sotto forma di spettro con l'intelletto della persona originale. Lo spettro conser- va tutti i ricordi, compreso quello della sua morte, ed è possibile parlare con lui nel luogo della sua sepoltura. Lo spettro non può essere ricacciato nel regno dei mor- ti, se non per sua libera scelta o distruggendolo. Seduta Spiritica evoca gli spiriti di tutti coloro che condividono lo stesso sangue entro 20m e, pertanto, non è consiglia- bile officiare questo rituale in una cripta di famiglia.</p>",
+        "description": "<p>Evoca lo spirito intelligente di un defunto nel luogo della sua sepoltura per potergli parlare senza poterlo allontanare se non distruggendolo</p>",
         "quantity": "1",
         "weight": 0,
-        "cost": 0,
+        "cost": 5,
         "sourcebook": "MB 118",
         "class": "ritual",
         "level": "novice",
         "source": "",
-        "stamina": 0,
+        "stamina": 5,
         "staminaIsVar": false,
-        "effect": "Seduta Spiritica contatta lo spirito di un defun- to. La seduta riporta lâ€™anima sotto forma di spettro con lâ€™intelletto della persona originale. Lo spettro conser- va tutti i ricordi, compreso quello della sua morte, ed è possibile parlare con lui nel luogo della sua sepoltura. Lo spettro non può essere ricacciato nel regno dei mor- ti, se non per sua libera scelta o distruggendolo. Seduta Spiritica evoca gli spiriti di tutti coloro che condividono lo stesso sangue entro 20m e, pertanto, non è consiglia- bile officiare questo rituale in una cripta di famiglia.",
+        "effect": "Evoca lo spirito intelligente di un defunto nel luogo della sua sepoltura per potergli parlare senza poterlo allontanare se non distruggendolo",
         "range": "N/A",
         "duration": "Permanente",
         "defence": "",
@@ -50,7 +50,10 @@
         "attackOptions": [
             "spell"
         ],
-        "spellAttackSkill": "ritcraft"
+        "spellAttackSkill": "ritcraft",
+        "difficultyCheck": "12",
+        "preparationTime": "",
+        "components": "Sangue defunto/parente, Radice Mandragora (x1), Fungo Sewant (x2), Aconito (x2), Zolfo (x2)"
     },
     "effects": [],
     "flags": {},

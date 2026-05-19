@@ -4,9 +4,16 @@
     "system": {
         "stamina": 5,
         "cost": 5,
-        "description": "<p>infondendo di quintessenza il teschio di un cane, gatto, uccello o serpente, il ritualista crea un te- schio di cristallo, che può essere usato per ricreare l'ani- male (vedere pag. 119). Se la creatura così generata muo- re, il teschio diventa inattivo, ma può essere ricaricato ripetendo il rituale con solo 2 Unità di Quintessenza.</p>",
+        "description": "<p>(Dato Integrato) Crea un teschio fluttuante infuso di magia che funge da spia e proietta immagini e suoni al suo creatore.</p>",
         "class": "ritual",
-        "sourcebook": "TC 104"
+        "sourcebook": "TC 104",
+        "level": "novice",
+        "difficultyCheck": "15",
+        "staminaIsVar": false,
+        "duration": "Permanente",
+        "preparationTime": "",
+        "components": "Teschio di animale (x1), Quintessenza (x2), Vetro (x2)",
+        "effect": "(Dato Integrato) Crea un teschio fluttuante infuso di magia che funge da spia e proietta immagini e suoni al suo creatore."
     },
     "type": "ritual",
     "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-rituals/creare_teschio_di_cristallo.webp",

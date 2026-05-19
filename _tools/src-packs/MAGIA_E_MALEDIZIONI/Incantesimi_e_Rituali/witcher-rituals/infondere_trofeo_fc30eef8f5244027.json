@@ -4,9 +4,16 @@
     "system": {
         "stamina": 3,
         "cost": 3,
-        "description": "<p>una volta preparati e impagliati adeguatamente i resti di un mostro, questo rituale permette di sfruttare la fisiologia aliena per incanalare la magia. Così facendo, diventa un trofeo magico, che fornisce i benefici indicati a pag. 124, ma solo alle persone che hanno contribuito a uccidere la creatura.</p>",
+        "description": "<p>Consente di sfruttare la fisiologia di un mostro morto per incanalare la magia, creando un Trofeo che conferisce bonus a chi l'ha ucciso</p>",
         "class": "ritual",
-        "sourcebook": "TC 104"
+        "sourcebook": "TC 104",
+        "level": "novice",
+        "difficultyCheck": "14",
+        "staminaIsVar": false,
+        "duration": "Istantanea",
+        "preparationTime": "",
+        "components": "Trofeo di Mostro (x1), Cerume di Orco (x1), Erbe da Concia (x10), Grasso Estere (x2), Polvere Infusa (x1), Quintessenza (x1)",
+        "effect": "Consente di sfruttare la fisiologia di un mostro morto per incanalare la magia, creando un Trofeo che conferisce bonus a chi l'ha ucciso"
     },
     "type": "ritual",
     "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-rituals/infondere_trofeo.webp",

@@ -4,17 +4,17 @@
     "type": "ritual",
     "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-rituals/telecomunicazione.webp",
     "system": {
-        "description": "<p>Un Telecomunicatore consente al ritua- lista di comunicare con un'altra persona dotata di Telecomunicatore. Il rituale è semplice, ma occorre che entrambi i partecipanti possiedano un Telecomunicatore e officino il rituale. Consente però di comunicare a di- stanze eccezionali, mettendo in contatto ogni parte del Continente conosciuto.</p>",
+        "description": "<p>Mette in contatto telepatico l'utilizzatore con chiunque possieda un altro Telecomunicatore, in ogni parte del Continente</p>",
         "quantity": "1",
         "weight": 0,
-        "cost": 0,
+        "cost": 3,
         "sourcebook": "MB 118",
         "class": "ritual",
         "level": "novice",
         "source": "",
-        "stamina": 0,
+        "stamina": 3,
         "staminaIsVar": false,
-        "effect": "Un Telecomunicatore consente al ritua- lista di comunicare con unâ€™altra persona dotata di Telecomunicatore. Il rituale è semplice, ma occorre che entrambi i partecipanti possiedano un Telecomunicatore e officino il rituale. Consente però di comunicare a di- stanze eccezionali, mettendo in contatto ogni parte del Continente conosciuto.",
+        "effect": "Mette in contatto telepatico l'utilizzatore con chiunque possieda un altro Telecomunicatore, in ogni parte del Continente",
         "range": "N/A",
         "duration": "1 Ora",
         "defence": "",
@@ -50,7 +50,10 @@
         "attackOptions": [
             "spell"
         ],
-        "spellAttackSkill": "ritcraft"
+        "spellAttackSkill": "ritcraft",
+        "difficultyCheck": "Ness.",
+        "preparationTime": "",
+        "components": "Un Telecomunicatore"
     },
     "effects": [],
     "flags": {},

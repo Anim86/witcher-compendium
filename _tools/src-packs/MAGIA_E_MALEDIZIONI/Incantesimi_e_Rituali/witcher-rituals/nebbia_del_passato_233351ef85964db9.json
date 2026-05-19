@@ -4,9 +4,16 @@
     "system": {
         "stamina": 10,
         "cost": 10,
-        "description": "<p>costruendo un circolo di candele, una piramide di vetro con una scheggia lunare al centro e riempiendola di essenza di Wraith, il ritualista crea un proiettore ma- gico, che rivela visioni del passato. Una volta fatto, l'og- getto mostra l'evento emotivamente più importante mai avvenuto nell'area. La proiezione dura fino a cinque mi- nuti e si ripete a ciclo continuo per la durata dell'effetto.</p>",
+        "description": "<p>Produce un proiettore in vetro che mostra a ciclo continuo (in loop di 5 minuti) l'evento emotivamente più potente mai avvenuto in quel luogo</p>",
         "class": "ritual",
-        "sourcebook": "TC 104"
+        "sourcebook": "TC 104",
+        "level": "journeyman",
+        "difficultyCheck": "18",
+        "staminaIsVar": false,
+        "duration": "20 Minuti",
+        "preparationTime": "",
+        "components": "Candele (x5), Essenza di Wraith (x2), Frammenti Lunari (x1), Vetro (x5)",
+        "effect": "Produce un proiettore in vetro che mostra a ciclo continuo (in loop di 5 minuti) l'evento emotivamente più potente mai avvenuto in quel luogo"
     },
     "type": "ritual",
     "img": "modules/witcher-compendium/assets/MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali/witcher-rituals/nebbia_del_passato.webp",
