@@ -1,11 +1,13 @@
 {
   "_id": "6d608e7720919161",
   "name": "Puro Vermiglio",
-  "type": "valuable",
+  "type": "component",
   "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-alchemy/puro_vermiglio.webp",
   "system": {
     "description": "<p>Sostanza alchemica raffinata (Pura). Vale il doppio della sostanza base.</p>",
-    "sourcebook": "AP"
+    "sourcebook": "AP",
+    "type": "substances",
+    "substanceType": "vermilion"
   },
   "effects": [],
   "flags": {},

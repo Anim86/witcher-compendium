@@ -1,21 +1,21 @@
 {
-    "name": "Piume della Coda di Cockatrice",
-    "type": "component",
-    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-components/piume_della_coda_di_cockatrice.webp",
-    "system": {
-        "description": "<p>Piumaggio prelevato specificamente dalla coda di una Cockatrice, ricercato dagli artigiani e dagli alchimisti per la sua affinità all'Etere.</p>",
-        "quantity": 1,
-        "weight": 0.1,
-        "cost": 135,
-        "category": "monster",
-        "substanceType": "etere",
-        "sourcebook": "DW 143",
-        "rarity": "Scarsa",
-        "location": "Reperibile sulle Cockatrice"
-    },
-    "_id": "3f2e1d0c9b8a7654",
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-    }
+  "name": "Piume della Coda di Cockatrice",
+  "type": "component",
+  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-components/piume_della_coda_di_cockatrice.webp",
+  "system": {
+    "description": "<p>Piumaggio prelevato specificamente dalla coda di una Cockatrice, ricercato dagli artigiani e dagli alchimisti per la sua affinità all'Etere.</p>",
+    "quantity": 1,
+    "weight": 0.1,
+    "cost": 135,
+    "category": "monster",
+    "substanceType": "aether",
+    "sourcebook": "DW 143",
+    "rarity": "Scarsa",
+    "location": "Reperibile sulle Cockatrice"
+  },
+  "_id": "3f2e1d0c9b8a7654",
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

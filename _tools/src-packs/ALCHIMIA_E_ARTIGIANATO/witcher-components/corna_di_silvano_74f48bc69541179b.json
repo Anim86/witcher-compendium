@@ -1,26 +1,26 @@
 {
-    "_id": "74f48bc69541179b",
-    "name": "Corna di Silvano",
-    "type": "component",
-    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-components/corna_di_silvano.webp",
-    "system": {
-        "description": "<p>Le corna di un silvano, rare e dotate di proprietà magiche legate all'elemento Quebrith.</p>",
-        "category": "componente",
-        "quantity": "1",
-        "weight": 0.5,
-        "cost": 80,
-        "sourcebook": "LR 167",
-        "type": "alchemical-component",
-        "rarity": "R",
-        "location": "Silvano",
-        "quantityObtainable": "",
-        "forage": "",
-        "substanceType": "Quebrith"
-    },
-    "effects": [],
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-    }
+  "_id": "74f48bc69541179b",
+  "name": "Corna di Silvano",
+  "type": "component",
+  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-components/corna_di_silvano.webp",
+  "system": {
+    "description": "<p>Le corna di un silvano, rare e dotate di proprietà magiche legate all'elemento Quebrith.</p>",
+    "category": "componente",
+    "quantity": "1",
+    "weight": 0.5,
+    "cost": 80,
+    "sourcebook": "LR 167",
+    "type": "alchemical-component",
+    "rarity": "R",
+    "location": "Silvano",
+    "quantityObtainable": "",
+    "forage": "",
+    "substanceType": "quebrith"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

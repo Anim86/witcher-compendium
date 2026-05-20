@@ -1,11 +1,13 @@
 {
   "_id": "3d98f156a74e1451",
   "name": "Puro Caelum",
-  "type": "valuable",
+  "type": "component",
   "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-alchemy/puro_caelum.webp",
   "system": {
     "description": "<p>Sostanza alchemica raffinata (Pura). Vale il doppio della sostanza base.</p>",
-    "sourcebook": "AP"
+    "sourcebook": "AP",
+    "type": "substances",
+    "substanceType": "caelum"
   },
   "effects": [],
   "flags": {},

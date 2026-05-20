@@ -1,23 +1,23 @@
 {
-    "_id": "52dae8c18c5ae10f",
-    "name": "Aconito",
-    "type": "component",
-    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-alchemy/aconito.webp",
-    "system": {
-        "description": "<p>Pianta tossica nota come l'erba del lupo, essenziale per il Vermiglio.</p><p><b>Rarità:</b> S | <b>Ubicazione:</b> Campi, foreste e montagne</p>",
-        "quantity": "1",
-        "weight": 0.1,
-        "cost": 9,
-        "sourcebook": "MB 147",
-        "type": "alchemical",
-        "rarity": "S",
-        "location": "Campi, foreste e montagne",
-        "substanceType": "vermiglio"
-    },
-    "effects": [],
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-    }
+  "_id": "52dae8c18c5ae10f",
+  "name": "Aconito",
+  "type": "component",
+  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-alchemy/aconito.webp",
+  "system": {
+    "description": "<p>Pianta tossica nota come l'erba del lupo, essenziale per il Vermiglio.</p><p><b>Rarità:</b> S | <b>Ubicazione:</b> Campi, foreste e montagne</p>",
+    "quantity": "1",
+    "weight": 0.1,
+    "cost": 9,
+    "sourcebook": "MB 147",
+    "type": "alchemical",
+    "rarity": "S",
+    "location": "Campi, foreste e montagne",
+    "substanceType": "vermilion"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

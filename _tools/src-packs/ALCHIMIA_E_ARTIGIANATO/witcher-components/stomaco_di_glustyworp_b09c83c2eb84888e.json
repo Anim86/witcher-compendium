@@ -1,16 +1,26 @@
 {
-  "_id": "b09c83c2eb84888e",
-  "name": "Stomaco di Glustyworp",
-  "type": "valuable",
-  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-components/stomaco_di_glustyworp.webp",
-  "system": {
-    "description": "<p>Organo interno di un Glustyworp, ricco di acidi digestivi potenti.</p>",
-    "sourcebook": "MS"
-  },
-  "effects": [],
-  "flags": {},
-  "_stats": {
-    "systemId": "TheWitcherItaNewSystem",
-    "coreVersion": 14
-  }
+    "_id": "b09c83c2eb84888e",
+    "name": "Stomaco di Glustyworp",
+    "type": "component",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-components/stomaco_di_glustyworp.webp",
+    "system": {
+        "description": "<p>Organo interno di un Glustyworp, ricco di acidi digestivi potenti.</p>",
+        "category": "componente",
+        "quantity": "1",
+        "weight": 1.5,
+        "cost": 110,
+        "sourcebook": "MS",
+        "type": "crafting-material",
+        "rarity": "R",
+        "location": "Glustyworp",
+        "quantityObtainable": "",
+        "forage": "",
+        "substanceType": ""
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
 }

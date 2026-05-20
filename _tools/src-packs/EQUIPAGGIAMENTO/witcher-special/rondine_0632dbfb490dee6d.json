@@ -1,19 +1,32 @@
 {
-    "_id": "0632dbfb490dee6d",
-    "name": "Rondine",
-    "type": "alchemical",
-    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-special/rondine.webp",
-    "system": {
-        "description": "<p>Il witcher rigenera 3 PS a round. Non rigenera nei round in cui viene colpito. Usi multipli non sono cumulativi.</p>\n<p><i>Tutto l'equipaggiamento presentato in questo capitolo è più che raro. Questi oggetti e formule dovrebbero essere le ricompense per missioni importanti o quando un personaggio li cerca appositamente.</i> — MB 246</p>\n<p><b>Rarità:</b> Molto Raro. Non vendibile (MB 246-250).</p>",
-        "weight": 0.5,
-        "cost": 0,
-        "quantity": 1,
-        "toxicity": "50%",
-        "duration": "20 round",
-        "sourcebook": "MB 247"
-    },
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
+  "_id": "0632dbfb490dee6d",
+  "name": "Rondine",
+  "type": "alchemical",
+  "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-special/rondine.webp",
+  "system": {
+    "description": "<p>Il witcher rigenera 3 PS a round. Non rigenera nei round in cui viene colpito. Usi multipli non sono cumulativi.</p>\n<p><i>Tutto l'equipaggiamento presentato in questo capitolo è più che raro. Questi oggetti e formule dovrebbero essere le ricompense per missioni importanti o quando un personaggio li cerca appositamente.</i> — MB 246</p>\n<p><b>Rarità:</b> Molto Raro. Non vendibile (MB 246-250).</p>",
+    "weight": 0.5,
+    "cost": 0,
+    "quantity": 1,
+    "toxicity": "50%",
+    "duration": "20 round",
+    "sourcebook": "MB 247",
+    "type": "potion",
+    "isConsumable": true,
+    "consumeProperties": {
+      "doesHeal": false,
+      "heal": "",
+      "addsTempHp": false,
+      "temporaryHp": {
+        "value": "",
+        "duration": 0
+      },
+      "effects": [],
+      "removesEffects": []
     }
+  },
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

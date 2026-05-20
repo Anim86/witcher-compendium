@@ -19,13 +19,14 @@ export default class WitcherMonsterSheet extends WitcherActorSheet {
             height: 680
         },
         actions: {
-            exportLoot: function(event, target) { return this._onExportLoot(event, target); },
-            rollStat: function(event, target) { return this._onRollStat(event, target); },
-            rollSkill: function(event, target) { return this._onRollSkill(event, target); },
-            rollInit: function(event, target) { return this._onInitRoll(event, target); },
+            exportLoot:       function(event, target) { return this._onExportLoot(event, target); },
+            rollStat:         function(event, target) { return this._onRollStat(event, target); },
+            rollSkill:        function(event, target) { return this._onRollSkill(event, target); },
+            rollCustomSkill:  function(event, target) { return this._onRollCustomSkill(event, target); },
+            rollInit:         function(event, target) { return this._onInitRoll(event, target); },
             toggleDeathState: function(event, target) { return this._onToggleDeathState(event, target); },
-            createNote: function(event, target) { return this._onCreateNote(event, target); },
-            deleteNote: function(event, target) { return this._onDeleteNote(event, target); }
+            createNote:       function(event, target) { return this._onCreateNote(event, target); },
+            deleteNote:       function(event, target) { return this._onDeleteNote(event, target); }
         }
     });
 
@@ -114,6 +115,22 @@ export default class WitcherMonsterSheet extends WitcherActorSheet {
             });
             input._hasWitcherEnterHandler = true;
         });
+
+        // Restructure window-content into sidebar + main-wrapper columns.
+        // Mirrors the approach of WitcherCharacterSheet to avoid CSS-grid
+        // instability on .window-content (Foundry forces flex, overriding grid).
+        const content = this.element.querySelector('.window-content');
+        if (!content || content.querySelector('.monster-main-wrapper')) return;
+        const sidebar = content.querySelector('[data-application-part="sidebar"]');
+        if (!sidebar) return;
+        const wrapper = document.createElement('div');
+        wrapper.className = 'monster-main-wrapper';
+        Array.from(content.children).forEach(child => {
+            if (child !== sidebar && !child.classList.contains('monster-main-wrapper')) {
+                wrapper.appendChild(child);
+            }
+        });
+        content.appendChild(wrapper);
     }
 
 
@@ -128,17 +145,18 @@ export default class WitcherMonsterSheet extends WitcherActorSheet {
 
     _prepareLoot(context) {
         let items = context.items;
-        context.loots = items.filter(
-            i =>
-                i.type == 'component' ||
-                i.type == 'crafting-material' ||
-                i.type == 'container' ||
-                i.type == 'enhancement' ||
-                i.type == 'valuable' ||
-                i.type == 'animal-parts' ||
-                i.type == 'diagrams' ||
-                i.type == 'alchemical' ||
-                i.type == 'mutagen'
+        context.weapons = items.filter(i => i.type == 'weapon');
+        context.armors  = items.filter(i => i.type == 'armor');
+        context.loots   = items.filter(i =>
+            i.type == 'component'        ||
+            i.type == 'crafting-material'||
+            i.type == 'container'        ||
+            i.type == 'enhancement'      ||
+            i.type == 'valuable'         ||
+            i.type == 'animal-parts'     ||
+            i.type == 'diagrams'         ||
+            i.type == 'alchemical'       ||
+            i.type == 'mutagen'
         );
     }
 
@@ -149,7 +167,6 @@ export default class WitcherMonsterSheet extends WitcherActorSheet {
     async _onRollStat(event, target) {
         const stat = target.dataset.stat;
         const statValue = this.actor.system.stats[stat]?.value || 0;
-        console.log("WITCHER TRPG | WitcherMonsterSheet._onRollStat triggered!", { event, target, stat, statValue });
         const statName = `WITCHER.St${stat.charAt(0).toUpperCase() + stat.slice(1)}`;
         const localizedStat = game.i18n.localize(statName);
 
@@ -162,10 +179,40 @@ export default class WitcherMonsterSheet extends WitcherActorSheet {
         });
     }
 
+    /**
+     * Handles skill roll triggered by data-action="rollSkill".
+     * Reads data-skill (skill name) from the target and looks up the skill entry
+     * in CONFIG.WITCHER.skillMap to get the full roll context.
+     */
     async _onRollSkill(event, target) {
-        const skill = target.dataset.skill;
-        const attribute = target.dataset.attribute;
-        return this.actor.rollSkill(attribute, skill);
+        const skillName = target.dataset.skill;
+        if (!skillName) {
+            console.warn('WITCHER TRPG | _onRollSkill: data-skill not found on target', target);
+            return;
+        }
+        const skillMapEntry = CONFIG.WITCHER.skillMap[skillName];
+        if (!skillMapEntry) {
+            console.warn('WITCHER TRPG | _onRollSkill: no skillMap entry for', skillName);
+            return;
+        }
+        return this.actor.rollSkillCheck(skillMapEntry);
+    }
+
+    /**
+     * Handles custom skill roll triggered by data-action="rollCustomSkill".
+     * Reads data-item-id from the nearest ancestor with that attribute,
+     * then delegates to actor.rollCustomSkillCheck (which expects event.currentTarget
+     * to have a .closest('.item') with dataset.itemId).
+     */
+    async _onRollCustomSkill(event, target) {
+        const itemRow = target.closest('[data-item-id]');
+        if (!itemRow) {
+            console.warn('WITCHER TRPG | _onRollCustomSkill: no [data-item-id] ancestor found', target);
+            return;
+        }
+        // rollCustomSkillCheck expects event.currentTarget with .closest('.item')
+        const fakeEvent = { currentTarget: target };
+        return this.actor.rollCustomSkillCheck(fakeEvent);
     }
 
     async _onToggleDeathState(event, target) {

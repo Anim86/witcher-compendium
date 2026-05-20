@@ -1,5 +1,5 @@
 # Stato Attuale src-packs
-Data Audit: 19/05/2026, 23:57:25
+Data Audit: 20/05/2026, 17:39:28
 
 ## 1. Struttura Cartelle
 | Cartella | File JSON | Sourcebook Predom. |
