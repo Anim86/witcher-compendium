@@ -248,8 +248,8 @@ export default class WitcherActorSheetV1 extends foundry.appv1.sheets.ActorSheet
         } else {
             const refVal = this.actor.system.stats.ref.value || 0;
             const rollFormula = `1d10 + ${refVal}`;
-            const roll = await new Roll(rollFormula).evaluate({ async: true });
-            
+            const roll = await new Roll(rollFormula).evaluate();
+
             await roll.toMessage({
                 speaker: ChatMessage.getSpeaker({ actor: this.actor }),
                 flavor: `<h2>${game.i18n.localize('WITCHER.Actor.Initiative')}</h2>`
@@ -258,7 +258,7 @@ export default class WitcherActorSheetV1 extends foundry.appv1.sheets.ActorSheet
     }
 
     async _onCritRoll(event) {
-        let rollResult = await new Roll('1d10x10').evaluate({ async: true });
+        let rollResult = await new Roll('1d10x10').evaluate();
         let messageData = new ChatMessageData(this.actor);
         rollResult.toMessage(messageData);
     }

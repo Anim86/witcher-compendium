@@ -84,7 +84,7 @@ export let damageMixin = {
         const content = await foundry.applications.handlebars.renderTemplate(messageTemplate, templateContext);
         const chatData = {
             content: content,
-            type: CONST.CHAT_MESSAGE_TYPES.OTHER
+            ...(typeof CONST.CHAT_MESSAGE_STYLES !== "undefined" ? { style: CONST.CHAT_MESSAGE_STYLES.OTHER } : { type: CONST.CHAT_MESSAGE_TYPES?.OTHER ?? 0 })
         };
 
         ChatMessage.applyRollMode(chatData, game.settings.get('core', 'rollMode'));
@@ -258,7 +258,7 @@ export let damageMixin = {
             content: content,
             speaker: ChatMessage.getSpeaker({ actor: this }),
             flags: this.getDamageFlags(),
-            type: CONST.CHAT_MESSAGE_TYPES.OTHER
+            ...(typeof CONST.CHAT_MESSAGE_STYLES !== "undefined" ? { style: CONST.CHAT_MESSAGE_STYLES.OTHER } : { type: CONST.CHAT_MESSAGE_TYPES?.OTHER ?? 0 })
         };
 
         ChatMessage.applyRollMode(chatData, game.settings.get('core', 'rollMode'));
@@ -424,7 +424,7 @@ export let damageMixin = {
         const chatData = {
             content: `<div>${game.i18n.localize(CONFIG.WITCHER.Crit[wound].label)}</div><div>${game.i18n.localize(CONFIG.WITCHER.Crit[wound].description)}</div>`,
             speaker: ChatMessage.getSpeaker({ actor: this }),
-            type: CONST.CHAT_MESSAGE_TYPES.OTHER
+            ...(typeof CONST.CHAT_MESSAGE_STYLES !== "undefined" ? { style: CONST.CHAT_MESSAGE_STYLES.OTHER } : { type: CONST.CHAT_MESSAGE_TYPES?.OTHER ?? 0 })
         };
         ChatMessage.create(chatData);
     },

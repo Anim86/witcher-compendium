@@ -45,15 +45,17 @@ export let itemContextMenu = {
         return item.system.isConsumable;
     },
 
-    consumeItem(itemHtml) {
+    async consumeItem(itemHtml) {
         let item = this.actor.items.get(itemHtml.dataset.itemId);
 
         if (!item.system.isConsumable) {
             return ui.notifications.error(`${game.i18n.localize('WITCHER.Item.ContextMenu.NotConsumable')}`);
         }
 
-        item.consume();
-        this.actor.removeItem(item.id, 1);
+        const consumed = await item.consume();
+        if (consumed) {
+            this.actor.removeItem(item.id, 1);
+        }
     },
 
     removableEnhancement() {

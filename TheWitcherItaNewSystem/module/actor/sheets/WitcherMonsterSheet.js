@@ -171,7 +171,7 @@ export default class WitcherMonsterSheet extends WitcherActorSheet {
         const localizedStat = game.i18n.localize(statName);
 
         const rollFormula = `1d10 + ${statValue}`;
-        const roll = await new Roll(rollFormula).evaluate({ async: true });
+        const roll = await new Roll(rollFormula).evaluate();
 
         await roll.toMessage({
             speaker: ChatMessage.getSpeaker({ actor: this.actor }),
@@ -250,7 +250,7 @@ export default class WitcherMonsterSheet extends WitcherActorSheet {
             if (typeof newQuantity === 'string' && item.system.quantity.includes('d')) {
                 let total = 0;
                 for (let i = 0; i < multiplier; i++) {
-                    let roll = await new Roll(item.system.quantity).evaluate({ async: true });
+                    let roll = await new Roll(item.system.quantity).evaluate();
                     total += Math.ceil(roll.total);
                 }
                 newQuantity = total;

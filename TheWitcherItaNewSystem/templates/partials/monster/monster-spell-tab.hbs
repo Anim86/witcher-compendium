@@ -38,7 +38,14 @@
     <div class="spells-list">
         {{!-- Novice --}}
         <div class="spell-category" data-spelltype="noviceSpell">
-            <h3 class="category-header">{{localize "WITCHER.Spell.Spells"}} - {{localize "WITCHER.Spell.Novice"}}</h3>
+            <h3 class="category-header">
+                {{localize "WITCHER.Spell.Spells"}} - {{localize "WITCHER.Spell.Novice"}}
+                <span class="header-actions">
+                    <a class="add-item" data-itemtype="spell" data-spelltype="spellNovice" data-tooltip="{{localize 'WITCHER.Actor.Button.Add'}}">
+                        <i class="fas fa-plus"></i>
+                    </a>
+                </span>
+            </h3>
             <div class="spells-grid">
                 {{#each noviceSpells as |spell id|}}
                 <div class="spell-card item" data-item-id="{{spell._id}}">
@@ -60,7 +67,14 @@
 
         {{!-- Journeyman --}}
         <div class="spell-category" data-spelltype="journeymanSpell">
-            <h3 class="category-header">{{localize "WITCHER.Spell.Spells"}} - {{localize "WITCHER.Spell.Journeyman"}}</h3>
+            <h3 class="category-header">
+                {{localize "WITCHER.Spell.Spells"}} - {{localize "WITCHER.Spell.Journeyman"}}
+                <span class="header-actions">
+                    <a class="add-item" data-itemtype="spell" data-spelltype="spellJourneyman" data-tooltip="{{localize 'WITCHER.Actor.Button.Add'}}">
+                        <i class="fas fa-plus"></i>
+                    </a>
+                </span>
+            </h3>
             <div class="spells-grid">
                 {{#each journeymanSpells as |spell id|}}
                 <div class="spell-card item" data-item-id="{{spell._id}}">
@@ -82,7 +96,14 @@
 
         {{!-- Master --}}
         <div class="spell-category" data-spelltype="masterSpell">
-            <h3 class="category-header">{{localize "WITCHER.Spell.Spells"}} - {{localize "WITCHER.Spell.Master"}}</h3>
+            <h3 class="category-header">
+                {{localize "WITCHER.Spell.Spells"}} - {{localize "WITCHER.Spell.Master"}}
+                <span class="header-actions">
+                    <a class="add-item" data-itemtype="spell" data-spelltype="spellMaster" data-tooltip="{{localize 'WITCHER.Actor.Button.Add'}}">
+                        <i class="fas fa-plus"></i>
+                    </a>
+                </span>
+            </h3>
             <div class="spells-grid">
                 {{#each masterSpells as |spell id|}}
                 <div class="spell-card item" data-item-id="{{spell._id}}">
@@ -104,7 +125,14 @@
 
         {{!-- Rituals --}}
         <div class="spell-category" data-spelltype="ritual">
-            <h3 class="category-header">{{localize "WITCHER.Spell.Rituals"}}</h3>
+            <h3 class="category-header">
+                {{localize "WITCHER.Spell.Rituals"}}
+                <span class="header-actions">
+                    <a class="add-item" data-itemtype="ritual" data-spelltype="ritual" data-tooltip="{{localize 'WITCHER.Actor.Button.Add'}}">
+                        <i class="fas fa-plus"></i>
+                    </a>
+                </span>
+            </h3>
             <div class="spells-grid">
                 {{#each rituals as |ritual id|}}
                 <div class="spell-card item" data-item-id="{{ritual._id}}">
@@ -126,7 +154,14 @@
 
         {{!-- Hexes --}}
         <div class="spell-category" data-spelltype="hex">
-            <h3 class="category-header">{{localize "WITCHER.Spell.Hexes"}}</h3>
+            <h3 class="category-header">
+                {{localize "WITCHER.Spell.Hexes"}}
+                <span class="header-actions">
+                    <a class="add-item" data-itemtype="hex" data-spelltype="hex" data-tooltip="{{localize 'WITCHER.Actor.Button.Add'}}">
+                        <i class="fas fa-plus"></i>
+                    </a>
+                </span>
+            </h3>
             <div class="spells-grid">
                 {{#each hexes as |hex id|}}
                 <div class="spell-card item" data-item-id="{{hex._id}}">

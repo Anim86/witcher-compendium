@@ -666,15 +666,30 @@ export default class WitcherActor extends Actor {
         const totalLuck = (this.system.stats.luck.value || 0) + (this.system.stats.luck.temp || 0);
 
         return await DialogV2.prompt({
-            window: { title: `${game.i18n.localize('WITCHER.Dialog.Skill')}: ${skillLabel}` },
+            window: {
+                title: `${game.i18n.localize('WITCHER.Dialog.Skill')}: ${skillLabel}`,
+                width: 420,
+                classes: ['skill-roll-dialog']
+            },
             content: `
-                <div class="form-group">
-                    <label>${game.i18n.localize('WITCHER.Dialog.attackCustom')}:</label>
-                    <input name="customModifiers" type="number" value=0>
-                </div>
-                <div class="form-group">
-                    <label>${game.i18n.localize('WITCHER.StLuck')} (${totalLuck}):</label>
-                    <input name="luckToSpend" type="number" value=0 min=0 max="${totalLuck}">
+                <div class="skill-roll-dialog__content">
+                    <div class="skill-roll-dialog__note">Imposta un modificatore oppure spendi Fortuna per migliorare il tiro.</div>
+                    <div class="skill-roll-grid">
+                        <div class="skill-roll-field">
+                            <label>${game.i18n.localize('WITCHER.Dialog.attackCustom')}:</label>
+                            <div class="skill-roll-field__input">
+                                <input name="customModifiers" type="number" value=0 step=1>
+                                <span class="skill-roll-field__unit">±</span>
+                            </div>
+                        </div>
+                        <div class="skill-roll-field">
+                            <label>${game.i18n.localize('WITCHER.StLuck')} (${totalLuck}):</label>
+                            <div class="skill-roll-field__input">
+                                <input name="luckToSpend" type="number" value=0 min=0 max="${totalLuck}">
+                                <span class="skill-roll-field__unit">FP</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>`,
             ok: {
                 label: game.i18n.localize('WITCHER.Button.Continue'),
@@ -795,15 +810,30 @@ export default class WitcherActor extends Actor {
         const totalLuck = (this.system.stats.luck.value || 0) + (this.system.stats.luck.temp || 0);
 
         return DialogV2.prompt({
-            window: { title: `${game.i18n.localize('WITCHER.Dialog.Skill')}: ${skillLabel}` },
+            window: {
+                title: `${game.i18n.localize('WITCHER.Dialog.Skill')}: ${skillLabel}`,
+                width: 420,
+                classes: ['skill-roll-dialog']
+            },
             content: `
-                <div class="form-group">
-                    <label>${game.i18n.localize('WITCHER.Dialog.attackCustom')}:</label>
-                    <input name="customModifiers" type="number" value=0>
-                </div>
-                <div class="form-group">
-                    <label>${game.i18n.localize('WITCHER.StLuck')} (${totalLuck}):</label>
-                    <input name="luckToSpend" type="number" value=0 min=0 max="${totalLuck}">
+                <div class="skill-roll-dialog__content">
+                    <div class="skill-roll-dialog__note">Imposta un modificatore oppure spendi Fortuna per migliorare il tiro.</div>
+                    <div class="skill-roll-grid">
+                        <div class="skill-roll-field">
+                            <label>${game.i18n.localize('WITCHER.Dialog.attackCustom')}:</label>
+                            <div class="skill-roll-field__input">
+                                <input name="customModifiers" type="number" value=0 step=1>
+                                <span class="skill-roll-field__unit">±</span>
+                            </div>
+                        </div>
+                        <div class="skill-roll-field">
+                            <label>${game.i18n.localize('WITCHER.StLuck')} (${totalLuck}):</label>
+                            <div class="skill-roll-field__input">
+                                <input name="luckToSpend" type="number" value=0 min=0 max="${totalLuck}">
+                                <span class="skill-roll-field__unit">FP</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>`,
             ok: {
                 label: game.i18n.localize('WITCHER.Button.Continue'),
@@ -879,8 +909,10 @@ export default class WitcherActor extends Actor {
         }
 
         if (item.isConsumable) {
-            item.consume();
-            this.removeItem(item.id, 1);
+            const consumed = await item.consume();
+            if (consumed) {
+                this.removeItem(item.id, 1);
+            }
             return;
         }
 

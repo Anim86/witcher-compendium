@@ -38,9 +38,5 @@ export let skillMixin = {
 
         jQuery.find('.profession-roll').on('click', event => thisActor._onProfessionRoll(event));
         jQuery.find('.skill-display').on('click', this._onSkillDisplay.bind(this));
-
-        html.querySelectorAll('[data-action=rollSkill]').forEach(skill =>
-            skill.addEventListener('click', event => thisActor.rollSkillCheck(skillMap[skill.dataset.skill]))
-        );
     }
 };

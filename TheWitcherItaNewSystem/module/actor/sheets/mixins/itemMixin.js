@@ -214,16 +214,19 @@ export let itemMixin = {
             return i.type === itemtype;
         };
 
-        const index = await pack.getIndex({fields: ["img", "name", "type", "system.class", "system.level"]});
-        let filteredIndex = index.filter(filterFunc);
-        
-        if (filteredIndex.length === 0) {
-            // If the preferred pack doesn't have the items, search everywhere
-            for (const p of game.packs.filter(p => p.metadata.type === "Item")) {
-                const idx = await p.getIndex({fields: ["img", "name", "type", "system.class", "system.level"]});
-                const matches = idx.filter(filterFunc);
-                if (matches.length > 0) {
-                    filteredIndex.push(...matches);
+        let filteredIndex = [];
+        if (pack) {
+            const index = await pack.getIndex({fields: ["img", "name", "type", "system.class", "system.level"]});
+            filteredIndex.push(...index.filter(filterFunc));
+        }
+
+        // Also search in all other Item packs to gather all matching items (e.g., witcher-special or homebrew packs)
+        for (const p of game.packs.filter(p => p.metadata.type === "Item" && p !== pack)) {
+            const idx = await p.getIndex({fields: ["img", "name", "type", "system.class", "system.level"]});
+            const matches = idx.filter(filterFunc);
+            for (const match of matches) {
+                if (!filteredIndex.some(existing => existing.uuid === match.uuid)) {
+                    filteredIndex.push(match);
                 }
             }
         }
@@ -272,14 +275,38 @@ export let itemMixin = {
                     label: game.i18n.localize('WITCHER.Button.Cancel')
                 }
             ],
-            render: (event, html) => {
-                // Try multiple ways to get the dialog HTML element (Foundry V11/V12/V13 compatibility)
-                const element = html || (event && event.element) || document.querySelector('.compendium-select-dialog');
-                if (!element) return;
+            render: (instance, html) => {
+                // Determine the correct raw DOM element, handling jQuery objects and instance properties
+                let rawElement = null;
+                if (html) {
+                    rawElement = html.jquery ? html[0] : html;
+                } else if (instance) {
+                    if (instance.element) {
+                        rawElement = instance.element.jquery ? instance.element[0] : instance.element;
+                    } else if (instance.jquery) {
+                        rawElement = instance[0];
+                    } else if (instance instanceof HTMLElement) {
+                        rawElement = instance;
+                    }
+                }
+                
+                // Fallback to searching the entire document
+                if (!rawElement) {
+                    rawElement = document.querySelector('.compendium-select-dialog')?.closest('.window-content') 
+                              || document.querySelector('.compendium-select-dialog');
+                }
+                
+                if (!rawElement) {
+                    console.error("Witcher TRPG | Impossibile trovare l'elemento DOM del dialogo.");
+                    return;
+                }
 
-                const searchInput = element.querySelector('[name="searchFilter"]');
-                const selectElement = element.querySelector('[name="itemUuid"]');
-                if (!searchInput || !selectElement) return;
+                const searchInput = rawElement.querySelector('[name="searchFilter"]');
+                const selectElement = rawElement.querySelector('[name="itemUuid"]');
+                if (!searchInput || !selectElement) {
+                    console.error("Witcher TRPG | Elementi di ricerca o select non trovati nel dialogo.", { searchInput, selectElement });
+                    return;
+                }
 
                 // Keep a copy of all original options
                 const originalOptions = Array.from(selectElement.options).map(opt => ({
@@ -288,10 +315,12 @@ export let itemMixin = {
                 }));
 
                 // Focus search input
-                setTimeout(() => searchInput.focus(), 50);
+                setTimeout(() => {
+                    if (searchInput) searchInput.focus();
+                }, 50);
 
-                searchInput.addEventListener('input', (e) => {
-                    const query = e.target.value.toLowerCase().trim();
+                searchInput.addEventListener('input', () => {
+                    const query = searchInput.value.toLowerCase().trim();
                     
                     // Clear the select
                     selectElement.innerHTML = '';
@@ -314,7 +343,9 @@ export let itemMixin = {
                     if (e.key === 'Enter') {
                         e.preventDefault();
                         // Find the confirm button in the dialog's footer
-                        const confirmBtn = element.closest('.window-content')?.parentElement.querySelector('footer.window-footer button[data-button-action="confirm"]');
+                        const confirmBtn = rawElement.closest('.window-content')?.parentElement.querySelector('footer.window-footer button[data-button-action="confirm"]')
+                                     || rawElement.querySelector('button[data-button-action="confirm"]')
+                                     || document.querySelector('footer.window-footer button[data-button-action="confirm"]');
                         if (confirmBtn) {
                             confirmBtn.click();
                         }
@@ -644,7 +675,7 @@ export let itemMixin = {
                 dialogData
             ),
             speaker: ChatMessage.getSpeaker({ actor: this.actor.name }),
-            type: CONST.CHAT_MESSAGE_TYPES.IC
+            ...(typeof CONST.CHAT_MESSAGE_STYLES !== "undefined" ? { style: CONST.CHAT_MESSAGE_STYLES.IC } : { type: CONST.CHAT_MESSAGE_TYPES?.IC ?? 1 })
         });
     },
 

@@ -107,7 +107,7 @@ export default class Rewards {
         );
         const chatData = {
             content: content,
-            type: CONST.CHAT_MESSAGE_TYPES.OTHER
+            ...(typeof CONST.CHAT_MESSAGE_STYLES !== "undefined" ? { style: CONST.CHAT_MESSAGE_STYLES.OTHER } : { type: CONST.CHAT_MESSAGE_TYPES?.OTHER ?? 0 })
         };
 
         if (ip) {

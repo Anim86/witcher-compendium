@@ -2,24 +2,25 @@
 .skills-tab-layout {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 16px;
+    width: 100%;
 }
 
 .skills-quick-reference {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
     background: rgba(255, 255, 255, 0.03);
-    padding: 15px;
-    border-radius: 12px;
-    border: 1px solid rgba(197, 160, 89, 0.15);
-    backdrop-filter: blur(8px);
+    padding: 14px;
+    border-radius: 14px;
+    border: 1px solid rgba(197, 160, 89, 0.16);
+    backdrop-filter: blur(10px);
 }
 
 .quick-ref-column {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 10px;
 }
 
 .ref-header {
@@ -28,17 +29,17 @@
     text-transform: uppercase;
     color: var(--witcher-gold);
     letter-spacing: 1px;
-    margin: 0 0 5px 0;
+    margin: 0;
     display: flex;
     align-items: center;
     gap: 8px;
     border-bottom: 1px solid rgba(197, 160, 89, 0.2);
-    padding-bottom: 5px;
+    padding-bottom: 6px;
 }
 
 .quick-base-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 8px;
 }
 
@@ -46,15 +47,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 10px;
-    background: rgba(0, 0, 0, 0.3);
-    border-radius: 6px;
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 8px 10px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
     font-size: 12px;
 }
 
 .base-row span:first-child {
-    opacity: 0.7;
+    opacity: 0.75;
     font-size: 11px;
 }
 
@@ -62,16 +63,16 @@
     font-weight: 900;
     color: var(--witcher-gold);
     font-family: 'Inter', sans-serif;
-    background: rgba(197, 160, 89, 0.1);
+    background: rgba(197, 160, 89, 0.14);
     padding: 2px 6px;
-    border-radius: 4px;
-    min-width: 24px;
+    border-radius: 6px;
+    min-width: 28px;
     text-align: center;
 }
 
 .quick-defense-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     gap: 10px;
 }
 
@@ -79,23 +80,24 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 8px;
-    background: rgba(20, 20, 20, 0.6);
-    border: 1px solid rgba(197, 160, 89, 0.2);
-    border-radius: 8px;
-    transition: transform 0.2s;
+    padding: 10px 8px;
+    background: rgba(10, 14, 22, 0.78);
+    border: 1px solid rgba(197, 160, 89, 0.16);
+    border-radius: 10px;
+    transition: transform 0.2s, border-color 0.2s, background 0.2s;
 }
 
 .defense-card:hover {
     transform: translateY(-2px);
     border-color: var(--witcher-gold);
+    background: rgba(197, 160, 89, 0.08);
 }
 
 .defense-card label {
     font-size: 9px;
     text-transform: uppercase;
     font-weight: 800;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.7);
     margin-bottom: 4px;
 }
 
@@ -106,20 +108,21 @@
 }
 
 .quick-armor-reg {
-    display: flex;
-    gap: 15px;
-    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    margin-top: 12px;
 }
 
 .mini-box {
-    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(135deg, rgba(197, 160, 89, 0.1), transparent);
-    padding: 10px;
+    background: linear-gradient(135deg, rgba(197, 160, 89, 0.12), rgba(0, 0, 0, 0.18));
+    padding: 12px 10px;
     border-radius: 10px;
-    border: 1px solid rgba(197, 160, 89, 0.1);
+    border: 1px solid rgba(197, 160, 89, 0.15);
+    min-height: 72px;
 }
 
 .mini-box label {
@@ -127,14 +130,14 @@
     font-weight: 800;
     text-transform: uppercase;
     color: var(--witcher-gold);
-    margin-bottom: 5px;
+    margin-bottom: 6px;
 }
 
 .mini-box input {
     background: transparent !important;
     border: none !important;
     color: #fff !important;
-    font-size: 22px !important;
+    font-size: 20px !important;
     font-weight: 900 !important;
     width: 100% !important;
     text-align: center;
@@ -149,4 +152,4 @@
 
 .skill-column {
     flex: 1;
-}
+}

@@ -24,8 +24,8 @@ async function applyMonsterRegeneration(actor) {
         content: content,
         speaker: ChatMessage.getSpeaker({ actor: actor }),
         flags: actor.getDamageFlags(),
-        type: CONST.CHAT_MESSAGE_TYPES.OTHER,
-        whisper: [game.user.id]
+        whisper: [game.user.id],
+        ...(typeof CONST.CHAT_MESSAGE_STYLES !== "undefined" ? { style: CONST.CHAT_MESSAGE_STYLES.OTHER } : { type: CONST.CHAT_MESSAGE_TYPES?.OTHER ?? 0 })
     };
 
     ChatMessage.create(chatData);
@@ -54,7 +54,7 @@ async function applyCombatEffect(actor, status) {
         content: content,
         speaker: ChatMessage.getSpeaker({ actor: actor }),
         flags: actor.getDamageFlags(),
-        type: CONST.CHAT_MESSAGE_TYPES.OTHER
+        ...(typeof CONST.CHAT_MESSAGE_STYLES !== "undefined" ? { style: CONST.CHAT_MESSAGE_STYLES.OTHER } : { type: CONST.CHAT_MESSAGE_TYPES?.OTHER ?? 0 })
     };
 
     ChatMessage.applyRollMode(chatData, game.settings.get('core', 'rollMode'));
