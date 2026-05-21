@@ -1,0 +1,35 @@
+{
+  "_id": "2d1d8cdbf0e0eba5",
+  "name": "Pozione di Lacrime di Mogli",
+  "type": "alchemical",
+  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-alchemy/pozione_di_lacrime_di_mogli.webp",
+  "system": {
+    "description": "<p>Formula cittadina per ripulire la mente dai vapori dell'alcol.</p><p><b>Effetti:</b> Rende sobri istantaneamente negando ebbrezza.</p><p><b>Durata:</b> Istantaneo</p><p><b>Tossicità:</b> 5%</p>",
+    "quantity": "1",
+    "weight": 0.1,
+    "cost": 56,
+    "sourcebook": "MB 90",
+    "type": "potion",
+    "rarity": "S",
+    "location": "",
+    "substanceType": "",
+    "isConsumable": true,
+    "consumeProperties": {
+      "doesHeal": false,
+      "heal": "",
+      "addsTempHp": false,
+      "temporaryHp": {
+        "value": "",
+        "duration": 0
+      },
+      "effects": [],
+      "removesEffects": []
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
+}

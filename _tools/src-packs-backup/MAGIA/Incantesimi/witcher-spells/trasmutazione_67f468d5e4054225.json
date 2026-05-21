@@ -1,0 +1,61 @@
+{
+    "_id": "67f468d5e4054225",
+    "name": "Trasmutazione",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA/Incantesimi/witcher-spells/trasmutazione.webp",
+    "system": {
+        "description": "<p>Trasmutazione consente all'incantatore di mo- dificare le propriet di un metallo o di un minerale. Può mutare un'unit di metallo in un qualsiasi altro metallo, o trasformare una gemma imperfetta in una perfetta, utile per la magia. Il dimeritium o altri metalli derivati dal dimeritium, non possono essere creati o modificati con questo incantesimo.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "MB 103",
+        "class": "Mage",
+        "level": "master",
+        "source": "mixedElements",
+        "stamina": 25,
+        "staminaIsVar": false,
+        "effect": "Trasmutazione consente all'incantatore di mo- dificare le propriet di un metallo o di un minerale. Può mutare un'unit di metallo in un qualsiasi altro metallo, o trasformare una gemma imperfetta in una perfetta, utile per la magia. Il dimeritium o altri metalli derivati dal dimeritium, non possono essere creati o modificati con questo incantesimo.",
+        "range": "2m",
+        "duration": "Permanente",
+        "defence": "Nessuna",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

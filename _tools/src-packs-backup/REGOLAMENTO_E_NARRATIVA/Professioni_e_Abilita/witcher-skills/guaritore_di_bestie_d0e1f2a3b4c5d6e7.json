@@ -1,0 +1,30 @@
+{
+    "_id": "d0e1f2a3b4c5d6e7",
+    "name": "Guaritore di Bestie",
+    "type": "skill",
+    "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/guaritore_di_bestie.webp",
+    "system": {
+        "attribute": "cra",
+        "description": "<p>L'abilità di curare le ferite degli animali. Permette di trattare una Ferita Critica di una bestia proprio come un Medico farebbe con un umano.</p>",
+        "sourcebook": "TC 70",
+        "value": 0,
+        "label": "",
+        "isOpened": false,
+        "modifiers": [],
+        "activeEffectModifiers": 0,
+        "isProfession": true,
+        "isPickup": false,
+        "isLearned": false
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

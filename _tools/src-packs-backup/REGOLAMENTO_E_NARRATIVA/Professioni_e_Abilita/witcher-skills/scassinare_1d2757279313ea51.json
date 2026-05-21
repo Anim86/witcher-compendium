@@ -1,0 +1,30 @@
+{
+    "_id": "1d2757279313ea51",
+    "name": "Scassinare",
+    "type": "skill",
+    "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/scassinare.webp",
+    "system": {
+        "attribute": "cra",
+        "description": "<p>Aprire serrature senza una chiave. Permette di forzare serrature comuni, aprire camere di sicurezza delle banche e forzare serrature complesse anche con arnesi improvvisati.</p>",
+        "sourcebook": "MB 57",
+        "value": 0,
+        "label": "",
+        "isOpened": false,
+        "modifiers": [],
+        "activeEffectModifiers": 0,
+        "isProfession": false,
+        "isPickup": false,
+        "isLearned": false
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

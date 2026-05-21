@@ -1,0 +1,30 @@
+{
+    "_id": "3666219674b81b0e",
+    "name": "Glifo della Terra",
+    "type": "enhancement",
+    "img": "modules/witcher-compendium/assets/MAGIA/Rune_Glifi_Reliquie/witcher-runes/glifo_della_terra.webp",
+    "system": {
+        "description": "<p>Glifo per Armature. Potenzia le magie di terra del portatore, aumentando le CD degli incantesimi di terra di 3 oppure il loro danno di 1d6. Costo: 575 Corone.</p>",
+        "quantity": "1",
+        "weight": 0.1,
+        "cost": 575,
+        "sourcebook": "MB 256",
+        "isHidden": false,
+        "isStored": false,
+        "isCarried": true,
+        "type": "Glyph",
+        "avail": "Rare",
+        "applied": false,
+        "stopping": 0,
+        "bludgeoning": false,
+        "slashing": false,
+        "piercing": false,
+        "effects": []
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

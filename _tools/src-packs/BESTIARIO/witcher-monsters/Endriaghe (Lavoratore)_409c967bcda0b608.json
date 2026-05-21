@@ -1,0 +1,255 @@
+{
+    "_id": "409c967bcda0b608",
+    "name": "Endriaghe (Lavoratore)",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/endriaghe.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "ref": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "dex": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "body": {
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
+            },
+            "spd": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "emp": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "cra": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "will": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 0,
+                "max": 0
+            }
+        },
+        "skills": {
+            "int": {
+                "awareness": {
+                    "value": 4,
+                    "isVisible": true
+                },
+                "wildernessSurvival": {
+                    "value": 5,
+                    "isVisible": true
+                },
+                "wilderness": {
+                    "value": 6,
+                    "isVisible": true
+                }
+            },
+            "ref": {
+                "melee": {
+                    "value": 6,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 5,
+                    "isVisible": true
+                },
+                "dodge": {
+                    "value": 6,
+                    "isVisible": true
+                }
+            },
+            "dex": {
+                "athletics": {
+                    "value": 5,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 7,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 6,
+                    "isVisible": true
+                }
+            },
+            "body": {
+                "endurance": {
+                    "value": 6,
+                    "isVisible": true
+                }
+            },
+            "emp": {},
+            "cra": {},
+            "will": {
+                "courage": {
+                    "value": 5,
+                    "isVisible": true
+                },
+                "resistMagic": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            }
+        },
+        "details": {
+            "biography": "<p>Dicono che le endriaghe siano come ogni altro insetto, solo un'infestazione di cui bisogna liberarsi. La gente immagina delle soluzioni davvero creative. – Rodolf Kazmer</p><p>Superati tutti i pericoli, si trova la regina e le uova. Chi arriva a questo punto dovrà affrontare ogni endriaga rimasta nell'area, perché la regina le convocherà tutte a difesa. La regina è tecnicamente un insetto, allo stesso modo in cui un leone è un gatto.</p>",
+            "threat": "Ardua",
+            "reward": 1000,
+            "monsterType": "Insectoid",
+            "difficulty": "MEDIUM",
+            "height": "",
+            "weight": "",
+            "environment": "",
+            "organization": "",
+            "vulnerability": "",
+            "intelligence": "",
+            "bounty": 1000
+        },
+        "derivedStats": {
+            "vigor": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "rec": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "resolve": {
+                "value": 25,
+                "max": 25,
+                "unmodifiedMax": 25
+            },
+            "stun": {
+                "value": 5,
+                "max": 5
+            },
+            "woundTreshold": {
+                "value": 5,
+                "max": 5
+            },
+            "hp": {
+                "value": 25,
+                "max": 25,
+                "unmodifiedMax": 25
+            },
+            "sta": {
+                "value": 25,
+                "max": 25,
+                "unmodifiedMax": 25
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "description": "<p>Dicono che le endriaghe siano come ogni altro insetto, solo un'infestazione di cui bisogna liberarsi. La gente immagina delle soluzioni davvero creative. – Rodolf Kazmer</p><p>Superati tutti i pericoli, si trova la regina e le uova. Chi arriva a questo punto dovrà affrontare ogni endriaga rimasta nell'area, perché la regina le convocherà tutte a difesa. La regina è tecnicamente un insetto, allo stesso modo in cui un leone è un gatto.</p>",
+        "sourcebook": "MB 295",
+        "monsterType": "Insectoid",
+        "difficulty": "medium",
+        "bounty": 1000,
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "organization": "",
+        "intelligence": "",
+        "vulnerability": ""
+    },
+    "items": [
+        {
+            "_id": "59d1080191814de6",
+            "name": "Estratto di Veleno (x1d6/2)",
+            "type": "component",
+            "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-alchemy/estratto_di_veleno.webp",
+            "system": {
+                "description": "Quantità: 1d6/2",
+                "isStored": false,
+                "quantity": "1d6"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "9693601c3f1c4c16",
+            "name": "Chitina (x1d6/2)",
+            "type": "component",
+            "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-alchemy/chitina.webp",
+            "system": {
+                "description": "Quantità: 1d6/2",
+                "isStored": false,
+                "quantity": "1d6"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "d188689b61714520",
+            "name": "Saliva di Endriaga (x1d6/2)",
+            "type": "component",
+            "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-alchemy/saliva_di_endriaga.webp",
+            "system": {
+                "description": "Quantità: 1d6/2",
+                "isStored": false,
+                "quantity": "1d6"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "7ffd1fa6c4889",
+            "name": "Chele",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Veleno (25%)",
+                "damage": "3d6",
+                "accuracy": 0,
+                "effects": "Veleno (25%)",
+                "rateOfFire": 1
+            }
+        }
+    ],
+    "effects": [],
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

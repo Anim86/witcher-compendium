@@ -1,0 +1,34 @@
+{
+    "_id": "e0a1b2c3d4e5f605",
+    "name": "Munizioni Multiple",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/munizioni_multiple.webp",
+    "system": {
+        "description": "<p>I proiettili multipli sono formati da diversi dardi o frecce riuniti. Quando vengono scoccati i legacci si rompono e i proiettili si dividono. Per ogni punto oltre la difesa dell'avversario (massimo 3) l'arma causa danni a una locazione casuale del bersaglio.</p>",
+        "weight": 0.1,
+        "cost": 54,
+        "quantity": 10,
+        "isAmmo": true,
+        "type": {
+            "text": "Munizione",
+            "piercing": true
+        },
+        "reliability": 10,
+        "effects": "Multipla",
+        "sourcebook": "MB 256",
+        "category": "sword",
+        "range": "",
+        "reliabilityMax": 10
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

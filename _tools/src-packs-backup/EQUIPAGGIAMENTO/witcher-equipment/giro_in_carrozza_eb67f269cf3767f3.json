@@ -1,0 +1,24 @@
+{
+    "_id": "eb67f269cf3767f3",
+    "name": "Giro in Carrozza",
+    "type": "valuable",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-equipment/giro_in_carrozza.webp",
+    "system": {
+        "description": "<p>Spostamento sicuro e confortevole tra città a bordo di una carrozza pubblica.</p>",
+        "weight": 0,
+        "cost": 85,
+        "quantity": 1,
+        "sourcebook": "MB 95"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

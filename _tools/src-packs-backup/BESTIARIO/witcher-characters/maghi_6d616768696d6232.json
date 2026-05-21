@@ -1,0 +1,127 @@
+{
+    "_id": "6d616768696d6232",
+    "name": "Maghi",
+    "type": "character",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-characters/maghi.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "ref": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "dex": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "body": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "spd": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "emp": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "cra": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "will": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "skills": {
+            "artedelmago": {
+                "value": 10
+            },
+            "ingegneriaInversa": {
+                "value": 7
+            },
+            "distillazione": {
+                "value": 6
+            },
+            "sintonia": {
+                "value": 8
+            },
+            "immutabile": {
+                "value": 7
+            },
+            "magiaampliata": {
+                "value": 6
+            }
+        },
+        "details": {
+            "biography": "<p>I maghi sono incantatori esperti che dedicano la propria vita allo studio delle arti arcane. Nonostante le persecuzioni, la loro conoscenza rimane fondamentale per il Continente.</p>",
+            "equipment": "Mazza, Costoliere, Lama di Vicovaro, Balestra",
+            "threat": "Media",
+            "difficulty": "MEDIUM"
+        },
+        "derivedStats": {
+            "hp": {
+                "value": 35,
+                "max": 35,
+                "unmodifiedMax": 35
+            },
+            "sta": {
+                "value": 30,
+                "max": 30,
+                "unmodifiedMax": 30
+            },
+            "vigor": {
+                "value": 21,
+                "max": 21,
+                "unmodifiedMax": 21
+            },
+            "rec": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "stun": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "resolve": {
+                "value": 30,
+                "max": 30,
+                "unmodifiedMax": 30
+            },
+            "woundTreshold": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            }
+        },
+        "description": "<p>I maghi sono incantatori esperti che dedicano la propria vita allo studio delle arti arcane. Nonostante le persecuzioni, la loro conoscenza rimane fondamentale per il Continente.</p><p>Equipaggiamento: Mazza, Costoliere, Lama di Vicovaro, Balestra</p>",
+        "sourcebook": "MB 272"
+    },
+    "items": [],
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

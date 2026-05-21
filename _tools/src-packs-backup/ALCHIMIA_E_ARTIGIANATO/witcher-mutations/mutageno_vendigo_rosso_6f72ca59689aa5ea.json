@@ -1,0 +1,39 @@
+{
+    "_id": "6f72ca59689aa5ea",
+    "name": "Mutageno: Vendigo (Rosso)",
+    "type": "mutagen",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-mutations/mutageno_vendigo_rosso.webp",
+    "system": {
+        "description": "<p>Effetto: +3 Danni in Mischia. CD Mutazione: 20. Mutazione Minore: Pelliccia irregolare e pelle grigia e malaticcia.</p>",
+        "quantity": "1",
+        "weight": 0.5,
+        "cost": 0,
+        "sourcebook": "DW 145",
+        "isHidden": false,
+        "isStored": false,
+        "isCarried": true,
+        "type": "Red",
+        "source": "Vendigo",
+        "effect": "+3 Danni in Mischia",
+        "alchemyDC": 20,
+        "minorMutation": "Pelliccia irregolare e pelle grigia e malaticcia.",
+        "isConsumable": false,
+        "consumeProperties": {
+            "doesHeal": false,
+            "heal": "",
+            "addsTempHp": false,
+            "temporaryHp": {
+                "value": "",
+                "duration": 0
+            },
+            "effects": [],
+            "removesEffects": []
+        }
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

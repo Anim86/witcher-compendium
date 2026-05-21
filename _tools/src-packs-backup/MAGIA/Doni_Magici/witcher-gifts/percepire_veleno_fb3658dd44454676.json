@@ -1,0 +1,63 @@
+{
+    "name": "Percepire Veleno",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA/Doni_Magici/witcher-gifts/percepire_veleno.webp",
+    "system": {
+        "description": "<p><strong>Effetto:</strong> utilizzando un Round, il personaggio può annusare una sostanza e capire se è stata avvelenata.</p><p><strong>Effetti Collaterali:</strong> il personaggio subisce automaticamente gli effetti Avvelenato ed Ebbrezza quando ne è bersaglio. Inoltre, finché è sotto il loro effetto subisce anche Nausea.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "TC 75",
+        "class": "MagicalGift",
+        "level": "",
+        "source": "",
+        "stamina": 2,
+        "staminaIsVar": false,
+        "effect": "utilizzando un Round, il personaggio può annusare una sostanza e capire se è stata avvelenata.",
+        "sideEffect": "il personaggio subisce automaticamente gli effetti Avvelenato ed Ebbrezza quando ne è bersaglio. Inoltre, finché è sotto il loro effetto subisce anche Nausea.",
+        "range": "",
+        "duration": "",
+        "defence": "",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast",
+        "causeDamages": false,
+        "damage": null,
+        "damageType": "elemental"
+    },
+    "_id": "fb3658dd44454676",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

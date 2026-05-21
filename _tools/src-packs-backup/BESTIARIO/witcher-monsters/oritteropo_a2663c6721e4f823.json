@@ -1,0 +1,230 @@
+{
+    "_id": "a2663c6721e4f823",
+    "name": "Oritteropo",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/oritteropo.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "ref": {
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
+            },
+            "dex": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "body": {
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
+            },
+            "spd": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "emp": {
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
+            },
+            "cra": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "will": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "luck": {
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
+            },
+            "armor": {
+                "value": 0,
+                "max": 0
+            }
+        },
+        "skills": {
+            "int": {
+                "awareness": {
+                    "value": 10,
+                    "isVisible": true
+                },
+                "wilderness": {
+                    "value": 15,
+                    "isVisible": true
+                }
+            },
+            "ref": {
+                "melee": {
+                    "value": 7,
+                    "isVisible": true
+                },
+                "dodge": {
+                    "value": 9,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "dex": {
+                "brawling": {
+                    "value": 5,
+                    "isVisible": true
+                },
+                "athletics": {
+                    "value": 8,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 8,
+                    "isVisible": true
+                }
+            },
+            "body": {
+                "endurance": {
+                    "value": 13,
+                    "isVisible": true
+                }
+            },
+            "emp": {},
+            "cra": {},
+            "will": {
+                "courage": {
+                    "value": 13,
+                    "isVisible": true
+                },
+                "intimidation": {
+                    "value": 8,
+                    "isVisible": true
+                }
+            }
+        },
+        "details": {
+            "biography": "<p>L'oritteropo è una creatura del deserto, simile a un grosso pangolino o a un formichiere corazzato. Sebbene non sia aggressivo per natura, è un combattente tenace se messo all'angolo.</p>",
+            "threat": "Facile Semplice",
+            "monsterType": "Beast",
+            "difficulty": "EASY",
+            "height": "",
+            "weight": "",
+            "environment": "",
+            "organization": "",
+            "vulnerability": "",
+            "intelligence": ""
+        },
+        "derivedStats": {
+            "hp": {
+                "value": 15,
+                "max": 15,
+                "unmodifiedMax": 15
+            },
+            "sta": {
+                "value": 15,
+                "max": 15,
+                "unmodifiedMax": 15
+            },
+            "rec": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "stun": {
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
+            },
+            "vigor": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "resolve": {
+                "value": 15,
+                "max": 15,
+                "unmodifiedMax": 15
+            },
+            "woundTreshold": {
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
+            },
+            "run": {
+                "value": 15,
+                "max": 15,
+                "unmodifiedMax": 15
+            },
+            "leap": {
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
+            },
+            "enc": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "focus": {
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
+            }
+        },
+        "description": "<p>L'oritteropo è una creatura del deserto, simile a un grosso pangolino o a un formichiere corazzato. Sebbene non sia aggressivo per natura, è un combattente tenace se messo all'angolo.</p>",
+        "sourcebook": "LR 111",
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "organization": "",
+        "intelligence": "",
+        "vulnerability": "",
+        "monsterType": "Beast",
+        "difficulty": "easy"
+    },
+    "items": [
+        {
+            "_id": "b37510c4fb0578",
+            "name": "Artigli",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Sanguinamento (100%)",
+                "damage": "1d6",
+                "accuracy": 0,
+                "effects": "Sanguinamento (100%)",
+                "rateOfFire": 2
+            }
+        },
+        {
+            "_id": "dc61da031ba4e",
+            "name": "Coda",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Nessuno",
+                "damage": "2d6",
+                "accuracy": 0,
+                "effects": "Nessuno",
+                "rateOfFire": 1
+            }
+        }
+    ],
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

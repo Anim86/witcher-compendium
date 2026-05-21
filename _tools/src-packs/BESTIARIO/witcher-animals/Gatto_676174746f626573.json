@@ -147,7 +147,7 @@
             "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
             "system": {
                 "description": "N/A",
-                "damage": "N/A",
+                "damage": "2d6+2",
                 "accuracy": 0,
                 "effects": "N/A",
                 "isStored": false,
@@ -166,7 +166,7 @@
             "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
             "system": {
                 "description": "N/A",
-                "damage": "N/A",
+                "damage": "4d6+2",
                 "accuracy": 0,
                 "effects": "N/A",
                 "isStored": false,
@@ -196,7 +196,7 @@
             "_id": "58a9578881ae4db7",
             "name": "Carne Cruda (x1d6/2)",
             "type": "valuable",
-            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-equipment/carne_cruda.webp",
             "system": {
                 "description": "Quantità: 1d6/2",
                 "isStored": false,
@@ -210,8 +210,8 @@
         {
             "_id": "6041bda948794e05",
             "name": "Ossa di Bestia (x1d6/2)",
-            "type": "valuable",
-            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "type": "component",
+            "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-components/ossa_di_bestia.webp",
             "system": {
                 "description": "Quantità: 1d6/2",
                 "isStored": false,

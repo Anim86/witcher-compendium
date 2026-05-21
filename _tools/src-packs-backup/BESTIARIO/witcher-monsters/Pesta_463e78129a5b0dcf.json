@@ -1,0 +1,232 @@
+{
+    "name": "Pesta",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/pesta.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
+            },
+            "ref": {
+                "value": 9,
+                "max": 9,
+                "unmodifiedMax": 9
+            },
+            "dex": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "body": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "spd": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "emp": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "cra": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "will": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 0,
+                "max": 0
+            }
+        },
+        "skills": {
+            "int": {
+                "awareness": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "wilderness": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "ref": {
+                "dodge": {
+                    "value": 6,
+                    "isVisible": true
+                },
+                "melee": {
+                    "value": 6,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "dex": {
+                "athletics": {
+                    "value": 7,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 7,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "body": {
+                "physique": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "emp": {},
+            "cra": {},
+            "will": {
+                "intimidation": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "resistmagic": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            }
+        },
+        "details": {
+            "biography": "<p>Per me le pestilenze sono un faccenda delicata... Eh, vedi, ho passato un bel pezzo della mia vita nell'esercito Temeriano e ho visto la mia parte di vittime della Catriona. Ugh… mai visto un paziente? Il gonfiore, la pelle marcia, il dolore negli occhi. Ce n'è abbastanza da spingerti a lavarti ogni notte per un anno. Le pesta sono portatrici di malattie. Ovunque vadano si portano dietro insetti e ratti infetti che mordono chiunque incontrino. – Rodolf Kazmer</p>",
+            "threat": "Difficile Arduo",
+            "reward": 900,
+            "monsterType": "Specter",
+            "difficulty": "MEDIUM",
+            "height": "",
+            "weight": "",
+            "environment": "",
+            "organization": "",
+            "vulnerability": "",
+            "intelligence": "",
+            "bounty": 900
+        },
+        "derivedStats": {
+            "rec": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "stun": {
+                "value": 0,
+                "max": 0
+            },
+            "woundTreshold": {
+                "value": 0,
+                "max": 0
+            },
+            "hp": {
+                "value": 30,
+                "max": 30,
+                "unmodifiedMax": 30
+            },
+            "sta": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "description": "<p>Per me le pestilenze sono un faccenda delicata... Eh, vedi, ho passato un bel pezzo della mia vita nell'esercito Temeriano e ho visto la mia parte di vittime della Catriona. Ugh… mai visto un paziente? Il gonfiore, la pelle marcia, il dolore negli occhi. Ce n'è abbastanza da spingerti a lavarti ogni notte per un anno. Le pesta sono portatrici di malattie. Ovunque vadano si portano dietro insetti e ratti infetti che mordono chiunque incontrino. – Rodolf Kazmer</p>",
+        "sourcebook": "DW 30",
+        "monsterType": "Specter",
+        "difficulty": "medium",
+        "bounty": 900,
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "organization": "",
+        "intelligence": "",
+        "vulnerability": "",
+        "armorHead": 0,
+        "armorUpper": 0,
+        "armorLower": 0
+    },
+    "items": [
+        {
+            "_id": "98267b3bb91b8",
+            "name": "Bacio della Pesta",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "",
+                "damage": "3d6",
+                "accuracy": 0,
+                "effects": "",
+                "rateOfFire": 1
+            }
+        },
+        {
+            "_id": "43a2b55ac74f98",
+            "name": "[Capacità] Aura di Malattia",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "",
+                "isStored": false
+            }
+        },
+        {
+            "_id": "292673e545a0a8",
+            "name": "[Capacità] Forma Incorporea",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "",
+                "isStored": false
+            }
+        },
+        {
+            "_id": "6e71f47e4eaeb3cc",
+            "name": "Trofeo: Pesta",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/trofeo_pesta.webp",
+            "system": {
+                "description": "<p>Il personaggio è circondato da una nube di mosche. Gli avversari in mischia subiscono -2 alle proprie azioni e hanno una probabilità del 10% di divenire Malati. Tuttavia, le mosche causano una penalità di -2 a Eleganza, Persuasione e Seduzione.</p>",
+                "weight": 0,
+                "cost": 0,
+                "quantity": 1,
+                "sourcebook": "TC p.126"
+            },
+            "effects": [],
+            "_stats": {
+                "coreVersion": 14,
+                "systemId": "TheWitcherItaNewSystem"
+            }
+        }
+    ],
+    "_id": "463e78129a5b0dcf",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

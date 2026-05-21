@@ -1,0 +1,23 @@
+{
+    "_id": "d811f31a133f4c9a",
+    "name": "Borsello",
+    "type": "valuable",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-equipment/borsello.webp",
+    "system": {
+        "description": "<p>Un semplice sacchetto che si aggancia a una cintura. Contiene 5 kg di piccoli oggetti.</p>",
+        "weight": 0.1,
+        "cost": 7,
+        "sourcebook": "MB 14"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

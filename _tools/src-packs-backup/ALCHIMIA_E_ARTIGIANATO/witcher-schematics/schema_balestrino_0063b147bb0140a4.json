@@ -1,0 +1,28 @@
+{
+    "_id": "0063b147bb0140a4",
+    "name": "Schema: Balestrino",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_balestrino.webp",
+    "system": {
+        "description": "<p>Schema per la fabbricazione di: Balestrino. Componenti richiesti: Legname Indurito (x2), Filo (x4), Cera (x2), Resina (x2), Acciaio (x1), Cuoio Indurito (x1), Grasso di Estere (x2), Cerume di Orco (x2), Ferro (x1). Difficoltà Manifattura: CD 15. Tempo: 8 ore.</p>",
+        "weight": 0,
+        "cost": 426,
+        "components": [
+            "Legname Indurito (x2), Filo (x4), Cera (x2), Resina (x2), Acciaio (x1), Cuoio Indurito (x1), Grasso di Estere (x2), Cerume di Orco (x2), Ferro (x1)"
+        ],
+        "difficulty": 15,
+        "time": "8 ore",
+        "sourcebook": "MB 48"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

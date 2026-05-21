@@ -1,0 +1,19 @@
+{
+    "_id": "d8953dd21b37d036",
+    "name": "Medaglione da Witcher",
+    "type": "valuable",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-special/medaglione_da_witcher.webp",
+    "system": {
+        "description": "<p>I medaglioni dei witcher sono piccoli pendenti d'argento portati al collo. Se il medaglione si trova entro 20m da un mostro, una maledizione o chi sta lanciando un incantesimo, inizierà a vibrare impercettibilmente, allertando il witcher.</p>",
+        "weight": 0.1,
+        "cost": 469,
+        "quantity": 1,
+        "toxicity": "0%",
+        "duration": "N/A",
+        "sourcebook": "MB 247"
+    },
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

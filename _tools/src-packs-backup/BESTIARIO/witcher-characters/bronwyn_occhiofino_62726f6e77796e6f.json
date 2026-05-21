@@ -1,0 +1,194 @@
+{
+    "_id": "62726f6e77796e6f",
+    "name": "Bronwyn Occhiofino",
+    "type": "character",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-characters/bronwyn_occhiofino.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "ref": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "dex": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "body": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "spd": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "emp": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "cra": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "will": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "luck": {
+                "value": null,
+                "max": null,
+                "unmodifiedMax": null
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 18
+            },
+            "carisma": {
+                "value": 12
+            },
+            "eludere": {
+                "value": 17
+            },
+            "etichetta": {
+                "value": 13
+            },
+            "intessereFatture": {
+                "value": 20
+            },
+            "intimidire": {
+                "value": 20
+            },
+            "istruzione": {
+                "value": 13
+            },
+            "lanciareIncantesimi": {
+                "value": 19
+            },
+            "mischia": {
+                "value": 20
+            },
+            "navigare": {
+                "value": 18
+            },
+            "officiareRituali": {
+                "value": 18
+            },
+            "persuasione": {
+                "value": 11
+            },
+            "prestanza": {
+                "value": 17
+            },
+            "resistereacoercizioni": {
+                "value": 20
+            },
+            "resistereallamagia": {
+                "value": 19
+            },
+            "rissa": {
+                "value": 19
+            },
+            "scherma": {
+                "value": 16
+            },
+            "tattica": {
+                "value": 16
+            },
+            "tempra": {
+                "value": 16
+            },
+            "artedelmago": {
+                "value": 10
+            },
+            "distillazione": {
+                "value": 9
+            },
+            "immutabile": {
+                "value": 10
+            },
+            "ingegneriaInversa": {
+                "value": 7
+            },
+            "intrigo": {
+                "value": 10
+            },
+            "magiaAmpliata": {
+                "value": 10
+            },
+            "malelingue": {
+                "value": 6
+            },
+            "mutare": {
+                "value": 0
+            },
+            "risorse": {
+                "value": 8
+            },
+            "sintonia": {
+                "value": 10
+            }
+        },
+        "derivedStats": {
+            "vigor": {
+                "value": 25,
+                "max": 25,
+                "unmodifiedMax": 25
+            },
+            "rec": {
+                "value": 9,
+                "max": 9,
+                "unmodifiedMax": 9
+            },
+            "resolve": {
+                "value": 45,
+                "max": 45,
+                "unmodifiedMax": 45
+            },
+            "stun": {
+                "value": 9,
+                "max": 9,
+                "unmodifiedMax": 9
+            },
+            "woundTreshold": {
+                "value": 9,
+                "max": 9,
+                "unmodifiedMax": 9
+            },
+            "hp": {
+                "value": 45,
+                "max": 45,
+                "unmodifiedMax": 45
+            },
+            "sta": {
+                "value": 45,
+                "max": 45,
+                "unmodifiedMax": 45
+            }
+        },
+        "details": {
+            "biography": "<p>Bronwyn Occhiofino, la prima e unica maga mai addestrata a Ban Ard. Ha creato ben due incantesimi: la Folata di Bronwyn e l'Arco di Bronwyn. - Rodolf Kazmer</p><p>Nata nelle Isole Skellige, Bronwyn è un genio della magia dell'aria e una temibile pirata. Dopo aver studiato segretamente a Ban Ard, è tornata in patria per guidare spedizioni di saccheggio contro l'Impero di Nilfgaard. Nota per la sua sfrontatezza e il suo talento per la magia d'attacco, è una leggenda vivente tra le baleniere e i razziatori delle isole.</p>",
+            "sourcebook": "TC 155"
+        },
+        "description": "<p>Bronwyn Occhiofino, la prima e unica maga mai addestrata a Ban Ard. Ha creato ben due incantesimi: la Folata di Bronwyn e l'Arco di Bronwyn. - Rodolf Kazmer</p><p>Nata nelle Isole Skellige, Bronwyn è un genio della magia dell'aria e una temibile pirata. Dopo aver studiato segretamente a Ban Ard, è tornata in patria per guidare spedizioni di saccheggio contro l'Impero di Nilfgaard.</p><h3>Equipaggiamento</h3><p>Elmo di Skellige, Armatura Pesante di Hindarsfjall, Gambali di Maglia di Hindarsfjall, Ascia da Berserker, Pugnale, Krigsverd, Munizioni a Punta Larga (x10), Amuleto con Gemma (x2), Trofeo di Viverna, Corda e Rampino, Mazzo di Gwent (Skellige), Borraccia, Abiti per Climi Freddi, Pietra del Sole, Simbolo Sacro (Freya).</p><h3>Incantesimi Preferiti</h3><p>Arco di Bronwyn, Controllare Acque, Dissipazione, Folata di Bronwyn, Gwynt Troelli, Infondere Trofeo, Malocchio, Ossa di Vetro, Sacca d'Aria, Telecinesi, Tuono di Alzur.</p>",
+        "sourcebook": "TC 155"
+    },
+    "items": [],
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "_id": "120ca2cb658c1f01",
+    "name": "Pronto Soccorso",
+    "type": "skill",
+    "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/pronto_soccorso.webp",
+    "system": {
+        "attribute": "cra",
+        "description": "<p>Fermare emorragie, steccare ossa rotte e curare avvelenamenti. Permette di agire in emergenza medica e strappare alla morte una persona in pochi secondi.</p>",
+        "sourcebook": "MB 57",
+        "value": 0,
+        "label": "",
+        "isOpened": false,
+        "modifiers": [],
+        "activeEffectModifiers": 0,
+        "isProfession": false,
+        "isPickup": false,
+        "isLearned": false
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

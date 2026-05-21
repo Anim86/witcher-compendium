@@ -1,0 +1,32 @@
+{
+    "_id": "4972fafd54dbeb86",
+    "name": "Schema: Grande Elmo",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_grande_elmo.webp",
+    "system": {
+        "description": "<p>Schema per la fabbricazione di: Grande Elmo.Componenti richiesti: Acciaio (x5), Cuoio Indurito (x3), Filo (x6), Cerume di Orco (x2), Lino (x1)Difficoltà Manifattura: CD 19Tempo: 5 ore</p>",
+        "weight": 0,
+        "cost": 0,
+        "components": [
+            "Acciaio (x5)",
+            "Cuoio Indurito (x3)",
+            "Filo (x6)",
+            "Cerume di Orco (x2)",
+            "Lino (x1)"
+        ],
+        "difficulty": 19,
+        "time": "5 ore",
+        "sourcebook": "MB 137"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

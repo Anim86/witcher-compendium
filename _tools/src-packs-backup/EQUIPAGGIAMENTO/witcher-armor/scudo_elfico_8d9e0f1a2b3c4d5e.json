@@ -1,0 +1,25 @@
+{
+    "_id": "8d9e0f1a2b3c4d5e",
+    "name": "Scudo Elfico",
+    "type": "armor",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-armor/scudo_elfico.webp",
+    "system": {
+        "description": "<p>Uno scudo finemente decorato con motivi naturali, leggero e flessibile, tipico degli Scoia'tael.</p>",
+        "notes": "Leggero: non impone penalità alla velocità.",
+        "weight": 1.5,
+        "cost": 350,
+        "reliability": 12,
+        "reliabilityMax": 12,
+        "sourcebook": "MB 82",
+        "type": "Light",
+        "encumb": 0,
+        "avail": "S",
+        "location": "Shield"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

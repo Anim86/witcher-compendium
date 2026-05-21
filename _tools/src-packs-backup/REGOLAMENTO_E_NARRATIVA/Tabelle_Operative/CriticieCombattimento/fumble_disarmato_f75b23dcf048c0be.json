@@ -1,0 +1,85 @@
+{
+    "_id": "f75b23dcf048c0be",
+    "name": "Fumble - Disarmato",
+    "type": "RollTable",
+    "formula": "1d10",
+    "description": "",
+    "results": [
+        {
+            "range": [
+                1,
+                5
+            ],
+            "weight": 1,
+            "type": 0,
+            "text": "Nessun effetto aggiuntivo",
+            "_id": "80a3317d090e6066",
+            "drawn": false
+        },
+        {
+            "range": [
+                6,
+                6
+            ],
+            "weight": 1,
+            "type": 0,
+            "text": "Vacillante",
+            "_id": "7ef1ef5138f52c36",
+            "drawn": false
+        },
+        {
+            "range": [
+                7,
+                7
+            ],
+            "weight": 1,
+            "type": 0,
+            "text": "Prono",
+            "_id": "1a8f60fae0c49012",
+            "drawn": false
+        },
+        {
+            "range": [
+                8,
+                8
+            ],
+            "weight": 1,
+            "type": 0,
+            "text": "Prono + TS Grinta",
+            "_id": "019b7dbe4bbd2e6d",
+            "drawn": false
+        },
+        {
+            "range": [
+                9,
+                9
+            ],
+            "weight": 1,
+            "type": 0,
+            "text": "Prono + 1d6 danni letali alla testa + TS Grinta",
+            "_id": "2a4c4fb504d2e0f9",
+            "drawn": false
+        },
+        {
+            "range": [
+                10,
+                10
+            ],
+            "weight": 1,
+            "type": 0,
+            "text": "Prono + 1d6 danni letali alla testa + TS Grinta",
+            "_id": "8d1251cb69730a8c",
+            "drawn": false
+        }
+    ],
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": "14"
+    },
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "img": "modules/witcher-compendium/assets/TABELLEOPERATIVE/CriticieCombattimento/fumble_disarmato.webp"
+}

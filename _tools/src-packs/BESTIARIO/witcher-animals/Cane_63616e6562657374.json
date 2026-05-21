@@ -175,7 +175,7 @@
             "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
             "system": {
                 "description": "N/A",
-                "damage": "N/A",
+                "damage": "4d6+2",
                 "accuracy": 0,
                 "effects": "N/A",
                 "isStored": false,
@@ -205,7 +205,7 @@
             "_id": "a7a34e79b4994978",
             "name": "Carne Cruda (x1d6/2)",
             "type": "valuable",
-            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-equipment/carne_cruda.webp",
             "system": {
                 "description": "Quantità: 1d6/2",
                 "isStored": false,
@@ -219,8 +219,8 @@
         {
             "_id": "e119ae8ce206461d",
             "name": "Grasso di Cane (x1d6/2)",
-            "type": "valuable",
-            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "type": "component",
+            "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-alchemy/grasso_di_cane.webp",
             "system": {
                 "description": "Quantità: 1d6/2",
                 "isStored": false,
@@ -234,8 +234,8 @@
         {
             "_id": "e30132643ee2427f",
             "name": "Ossa di Bestia (x1d6)",
-            "type": "valuable",
-            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "type": "component",
+            "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-components/ossa_di_bestia.webp",
             "system": {
                 "description": "Quantità: 1d6",
                 "isStored": false,

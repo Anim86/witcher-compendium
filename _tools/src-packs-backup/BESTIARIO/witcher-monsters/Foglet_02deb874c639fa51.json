@@ -1,0 +1,208 @@
+{
+    "name": "Foglet",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/foglet.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 5,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "ref": {
+                "value": 8,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "dex": {
+                "value": 8,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "body": {
+                "value": 7,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "spd": {
+                "value": 6,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "emp": {
+                "value": 3,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "cra": {
+                "value": 3,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "will": {
+                "value": 6,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 0,
+                "max": 0
+            }
+        },
+        "skills": {
+            "int": {
+                "awareness": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "wilderness": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "ref": {
+                "brawling": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "dex": {
+                "brawling": {
+                    "value": 7,
+                    "isVisible": true
+                },
+                "athletics": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "body": {
+                "physique": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "endurance": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "emp": {},
+            "cra": {},
+            "will": {
+                "courage": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "intimidation": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "resistmagic": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            }
+        },
+        "details": {
+            "biography": "<p>Foglet? Fogler? Sentite entrambe, credo sia solo dialetto! Eh, comunque non ho mai avuto la fortuna di vederne uno. Dicono che infestino le paludi sulle le rive del Pontar e dello Yaruga, ma se è vero devono essere molto silenziosi. C'è un vecchio racconto popolare che ho sentito a Verden: dicono che i foglet arrivano con la nebbia e si nascondono al suo interno! Se ti capita di veder calare un banco di nebbia di notte, pianta i piedi e stai fermo. I foglet possono farti vedere cose nella nebbia. Se proprio devi continuare a muoverti lavati gli occhi con acqua di palude. – Rodolf Kazmer</p>",
+            "threat": "Medio Arduo",
+            "reward": 800,
+            "monsterType": "Necrophage",
+            "difficulty": "MEDIUM",
+            "height": "2m",
+            "weight": "75kg",
+            "environment": "Caverne e Paludi",
+            "organization": "Solitario",
+            "vulnerability": "Unguento Anti-Necrofagi, Bombe Polvere Lunare, Bombe al Dimeritium, Segno Yrden",
+            "intelligence": "Ferale",
+            "bounty": 800
+        },
+        "derivedStats": {
+            "rec": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 0
+            },
+            "stun": {
+                "value": 18,
+                "max": 18
+            },
+            "woundTreshold": {
+                "value": 0,
+                "max": 0
+            },
+            "hp": {
+                "value": 60,
+                "max": 60,
+                "unmodifiedMax": 0
+            },
+            "sta": {
+                "value": 30,
+                "max": 30,
+                "unmodifiedMax": 0
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "description": "<p>Foglet? Fogler? Sentite entrambe, credo sia solo dialetto! Eh, comunque non ho mai avuto la fortuna di vederne uno. Dicono che infestino le paludi sulle le rive del Pontar e dello Yaruga, ma se è vero devono essere molto silenziosi. C'è un vecchio racconto popolare che ho sentito a Verden: dicono che i foglet arrivano con la nebbia e si nascondono al suo interno! Se ti capita di veder calare un banco di nebbia di notte, pianta i piedi e stai fermo. I foglet possono farti vedere cose nella nebbia. Se proprio devi continuare a muoverti lavati gli occhi con acqua di palude. – Rodolf Kazmer</p>",
+        "sourcebook": "DW 20",
+        "monsterType": "Necrophage",
+        "difficulty": "medium",
+        "bounty": 800,
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "organization": "",
+        "intelligence": "",
+        "vulnerability": ""
+    },
+    "items": [
+        {
+            "_id": "4c1df10206dc3",
+            "name": "Artigli",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Nessuno",
+                "damage": "3d6+2",
+                "accuracy": 0,
+                "effects": "Nessuno",
+                "rateOfFire": 2
+            }
+        },
+        {
+            "_id": "9df8a6c2565045cd",
+            "name": "Trofeo: Foglet",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/trofeo_foglet.webp",
+            "system": {
+                "description": "<p>Il personaggio ottiene +2 alle prove di Nascondersi e Rapidità di Mano.</p>",
+                "weight": 0,
+                "cost": 0,
+                "sourcebook": "TC p.126"
+            },
+            "effects": [],
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        }
+    ],
+    "_id": "02deb874c639fa51",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

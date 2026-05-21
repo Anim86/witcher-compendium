@@ -1,0 +1,296 @@
+{
+    "name": "Succube & Incubo",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/succube_incubo.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "ref": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "dex": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "body": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "spd": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "emp": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "cra": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "will": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 0,
+                "max": 0
+            }
+        },
+        "skills": {
+            "int": {
+                "awareness": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "wilderness": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "ref": {
+                "dodge": {
+                    "value": 6,
+                    "isVisible": true
+                },
+                "melee": {
+                    "value": 8,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "dex": {
+                "athletics": {
+                    "value": 7,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 9,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "sleight": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "body": {
+                "physique": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "endurance": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "emp": {
+                "charisma": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "persuasion": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "seduction": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "cra": {},
+            "will": {
+                "courage": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "intimidation": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "resistcoerc": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "resistmagic": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            }
+        },
+        "details": {
+            "biography": "<p>Eh, ho avuto il piacere di incontrare un paio di volte una succube. Mai a letto, ovviamente! Penso che le succubi non siano troppo male. Una volta ci ho avuto una bella conversazione. Onestamente, a volte le preferisco agli umani, eh! La verità è che hanno bisogno di dormire con certa gente e… assorbirne la forza vitale, immagino. Ho sentito che molti di quei ‘fortunati' non vedono il mattino dopo. – Rodolf Kazmer</p>",
+            "threat": "Medio Semplice",
+            "reward": 400,
+            "monsterType": "Relict",
+            "difficulty": "MEDIUM",
+            "height": "",
+            "weight": "",
+            "environment": "",
+            "organization": "",
+            "vulnerability": "",
+            "intelligence": "",
+            "bounty": 400
+        },
+        "derivedStats": {
+            "rec": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "stun": {
+                "value": 0,
+                "max": 0
+            },
+            "woundTreshold": {
+                "value": 0,
+                "max": 0
+            },
+            "hp": {
+                "value": 25,
+                "max": 25,
+                "unmodifiedMax": 25
+            },
+            "sta": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "description": "<p>Eh, ho avuto il piacere di incontrare un paio di volte una succube. Mai a letto, ovviamente! Penso che le succubi non siano troppo male. Una volta ci ho avuto una bella conversazione. Onestamente, a volte le preferisco agli umani, eh! La verità è che hanno bisogno di dormire con certa gente e… assorbirne la forza vitale, immagino. Ho sentito che molti di quei ‘fortunati' non vedono il mattino dopo. – Rodolf Kazmer</p>",
+        "sourcebook": "DW 60",
+        "monsterType": "Relict",
+        "difficulty": "medium",
+        "bounty": 400,
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "organization": "",
+        "intelligence": "",
+        "vulnerability": "",
+        "armorHead": 0,
+        "armorUpper": 0,
+        "armorLower": 0
+    },
+    "items": [
+        {
+            "_id": "70d9017a7cda38",
+            "name": "Testata",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Forza Schiacciante, Stordimento (-2)",
+                "damage": "5d6",
+                "accuracy": 0,
+                "effects": "Forza Schiacciante, Stordimento (-2)",
+                "rateOfFire": 1
+            }
+        },
+        {
+            "_id": "95ba32024f7a48",
+            "name": "Calcio",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Atterramento (50%), Forza Schiacciante",
+                "damage": "4d6+4",
+                "accuracy": 0,
+                "effects": "Atterramento (50%), Forza Schiacciante",
+                "rateOfFire": 1
+            }
+        },
+        {
+            "_id": "b0d4acab6fda88",
+            "name": "Pugno",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Forza Schiacciante",
+                "damage": "3d6+3",
+                "accuracy": 0,
+                "effects": "Forza Schiacciante",
+                "rateOfFire": 2
+            }
+        },
+        {
+            "_id": "8c96c553f092c",
+            "name": "[Capacità] Sguardo Ammaliante",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "",
+                "isStored": false
+            }
+        },
+        {
+            "_id": "d705f5d68f0458",
+            "name": "[Capacità] Telepatia",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "",
+                "isStored": false
+            }
+        },
+        {
+            "_id": "3abfb6c259577",
+            "name": "[Capacità] Magia (Segno Axii)",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "",
+                "isStored": false
+            }
+        },
+        {
+            "_id": "12e890dc61674d19",
+            "name": "Trofeo: Succube",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/trofeo_succube.webp",
+            "system": {
+                "description": "<p>La Posizione Sociale del personaggio migliora di un grado (Odiato diventa Tollerato, Tollerato diventa Eguale).</p>",
+                "weight": 0,
+                "cost": 0,
+                "sourcebook": "TC p.126"
+            },
+            "effects": [],
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        }
+    ],
+    "_id": "7ed094f23185bc6a",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "_id": "6a75a26b4acf4556",
+    "name": "Scudo d'Acciaio a Goccia",
+    "type": "armor",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-armor/scudo_d_acciaio_a_goccia.webp",
+    "system": {
+        "description": "<p>Uno scudo d'acciaio con la classica forma a goccia, offre una protezione eccellente per tutto il corpo durante i combattimenti a cavallo o a piedi.</p>",
+        "notes": "",
+        "weight": 3,
+        "cost": 400,
+        "reliability": 15,
+        "reliabilityMax": 15,
+        "sourcebook": "MB 72",
+        "type": "Medium",
+        "encumb": 0,
+        "avail": "C",
+        "location": "Shield"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

@@ -52,6 +52,35 @@ Tutti gli script sono stati riorganizzati in `_tools/scripts/`. Ogni script usa 
 | Script | Linguaggio | Scopo | Quando usarlo |
 | :--- | :--- | :--- | :--- |
 | **`core/compile_packs.mjs`** | Node.js | Genera i LevelDB (V14 format) | Prima di ogni test in Foundry o rilascio. |
+# 📜 BRIEFING OPERATIVO: MAINTENANCE WITCHER COMPENDIUM
+> [!IMPORTANT]
+> **AMBIENTE DI SVILUPPO**: [Foundry VTT Stable 14 build 361](https://foundryvtt.com/releases/14.361)
+
+## Documento di Handover per AI Builder (Antigravity & Friends)
+
+Questo documento è la **fonte di verità** per chiunque debba operare sugli strumenti di manutenzione del compendio Witcher TRPG. Seguire queste istruzioni garantisce che il lavoro sia sincronizzato, professionale e compatibile con Foundry V14.
+
+---
+
+## 🏗️ 1. ARCHITETTURA DELLE 3 COLONNE (1:1:1)
+
+Il progetto si basa su tre pilastri fondamentali che devono restare SEMPRE allineati.
+
+1.  **SORGENTE (`_tools/src-packs/`)**: Contiene i file JSON divisi per categoria. Questa è l'**unica fonte di verità**. Le modifiche ai dati si fanno SOLO qui.
+2.  **ASSETS (`witcher-compendium/assets/`)**: Contiene le immagini WebP. La struttura delle cartelle deve rispecchiare quella dei pack (es. `assets/weapons/weapon_name.webp`).
+3.  **PACKS (`witcher-compendium/packs/`)**: Contiene i database LevelDB compilati. **MAI** editare questi file direttamente. Vengono sovrascritti ad ogni compilazione.
+
+---
+
+## 🛠️ 2. IL TOOLSET PROFESSIONALE
+
+Tutti gli script sono stati riorganizzati in `_tools/scripts/`. Ogni script usa percorsi relativi calcolati dinamicamente rispetto alla root del repo.
+
+### 🚀 Core Pipeline (Manutenzione Ordinaria)
+
+| Script | Linguaggio | Scopo | Quando usarlo |
+| :--- | :--- | :--- | :--- |
+| **`core/compile_packs.mjs`** | Node.js | Genera i LevelDB (V14 format) | Prima di ogni test in Foundry o rilascio. |
 | **`core/audit_project.mjs`** | Node.js | Verifica coerenza JSON vs `module.json` | Per trovare file mancanti o non dichiarati. |
 | **`utils/smart_asset_guard.mjs`** | Node.js | Audit avanzato asset + Fix automatico | Per trovare mismatch di naming e correggere i path JSON (`--fix`). |
 | **`normalize_asset_filenames.mjs`** | Node.js | Normalizzazione asset su disco | Quando vengono aggiunti file con nomi non standard. |
@@ -62,6 +91,13 @@ Tutti gli script sono stati riorganizzati in `_tools/scripts/`. Ogni script usa 
 -   **`core/update_special_abilities.py`**: Mappa automaticamente le abilità speciali ai loro asset in `assets/SPECIAL/` (Normalized).
 -   `debug/diagnose_packs.js`: Scansione veloce per file corrotti o mancanti.
 -   `_garbage/`: Contiene script obsoleti (es. `fix_uuids.mjs`, `fix_metadata.mjs`) non più necessari per la v14.
+
+### 📦 Compilazione Compendi LevelDB (V14) & `compile_packs.mjs` v3.0.0
+La compilazione dei compendi in Foundry V14 segue regole severe sui documenti incorporati (es. l'inventario `items` o gli `effects` all'interno degli attori):
+- **Struttura Corretta**: In LevelDB, l'oggetto genitore (es. `!actors!{actorId}`) deve contenere solo un array di ID stringa (es. `items: ["id1", "id2"]`), NON gli interi oggetti JSON incorporati. Ciascun elemento incorporato deve risiedere separatamente con chiave `!actors.items!{actorId}.{itemId}` contenente l'oggetto completo.
+- **Funzionamento dello Script**: Lo script `compile_packs.mjs` utilizza la libreria ufficiale `@foundryvtt/foundryvtt-cli`.
+- **Requisito `_key`**: La CLI ufficiale richiede che ogni file JSON contenga a livello radice un campo `_key` (es. `"_key": "!actors!{_id}"`). **ATTENZIONE**: Se `_key` è assente, la CLI salterà il file silenziosamente senza segnalare errori o warning.
+- **Logica Temporanea**: Per non sporcare il repository git con questi attributi runtime, lo script crea una cartella `__tmp_keyed`, vi copia i file sorgente, aggiunge ricorsivamente i campi `_key` adatti e genera ID esadecimali casuali per eventuali sotto-documenti privi di `_id` (come alcuni item dei mostri), per poi procedere alla compilazione e pulire la cartella temporanea.
 
 ---
 
@@ -117,27 +153,42 @@ Il nome del file deve essere generato tramite la funzione `slugify` (definita in
     ```
 
 ### Fase D: Compilazione & Deploy
-1.  Compilare i pacchetti:
+1.  **Arrestare Foundry VTT**: Se Foundry è in esecuzione (specialmente come servizio Windows "FoundryVTT"), fermarlo per rilasciare i blocchi sui file LevelDB (è possibile usare lo script `stop_foundry.bat` come amministratore).
+2.  **Compilare i pacchetti**: Generare i database LevelDB dai JSON sorgente:
     ```powershell
     node _tools/scripts/core/compile_packs.mjs
     ```
-2.  Eseguire il deploy nel server locale (se necessario):
+3.  **Eseguire il deploy**: Copiare i file compilati e il sistema di gioco nella cartella dati di Foundry:
     ```powershell
-    ./deploy.ps1
+    # Tramite script di automazione (esegue anche arresto e riavvio del servizio)
+    ./deploy.bat
     ```
+4.  **Riavviare Foundry VTT** (è possibile usare `start_foundry.bat` come amministratore).
+
+> [!CAUTION]
+> **PULIZIA DELLA CACHE DEL MONDO (FONDAMENTALE)**:
+> Foundry VTT memorizza nella cartella del mondo (es. `worlds/witcher/data/actors.db`) la copia locale degli attori/oggetti importati.
+> Qualsiasi modifica effettuata e ricompilata nel compendio **NON si rifletterà automaticamente** sugli attori già trascinati o presenti nella barra laterale destra del mondo.
+> Per vedere i cambiamenti (es. il ripristino di un inventario corretto o una nuova immagine), lo sviluppatore/utente deve **eliminare l'entità dalla barra laterale del Mondo e re-importarla dal Compendio**.
 
 ---
 
 ## ⚠️ 4. REGOLE D'ORO PER L'AI
 
 > [!IMPORTANT]
-> **COMPATIBILITÀ V14**: Ogni JSON deve avere il blocco `_stats` con `systemId: "TheWitcherItaNewSystem"` e `coreVersion: 14`. Non usare `systemVersion`.
+> **COMPATIBILITÀ V14**: Ogni JSON deve avere il blocco `_stats` con `systemId: "TheWitcherItaNewSystem"` e `coreVersion: 14`. Non usare `systemVersion`. Gli attori e i loro oggetti incorporati devono seguire lo schema di chiavi LevelDB (`!actors.items!`) anziché l'incorporamento ad-hoc diretto per evitare il bug dell'inventario vuoto.
 
 > [!WARNING]
 > **NO ABSOLUTE PATHS**: Non usare mai percorsi assoluti (es. `C:\Users\...`) negli script o nei JSON. Usa sempre la costante `REPO_ROOT` definita negli script core.
 
 > [!TIP]
 > **MASSIVE CHANGES**: Se devi cambiare un attributo su 500 file, scrivi una piccola utility in `_tools/scripts/utils/` (seguendo il template di `fix_metadata.mjs`) invece di fare centinaia di replace manuali. È più sicuro e documentato.
+
+> [!IMPORTANT]
+> **INTEGRITÀ DEI DATI E DI _ID**:
+> - **Niente _id duplicati**: Ogni entità sorgente JSON deve avere un ID unico a 16 caratteri esadecimali. ID duplicati (come avvenuto per `Endriaghe (Lavoratore)` ed `Endriaghe (Guerriero)`) portano a collisioni in compilazione in cui una delle due entità sovrascrive l'altra.
+> - **ID per Oggetti Incorporati**: Assicurarsi che gli oggetti dell'inventario o gli effetti all'interno di un attore abbiano sempre un proprio `_id` definito nel JSON. Se manca, lo script genererà un ID casuale runtime, ma averlo statico previene disallineamenti o problemi di stabilità.
+> - **Tipo di Dati Coerente**: Prestare attenzione a campi legacy come `effects` che a volte presentano il valore `0` (numero) invece del corretto array vuoto `[]`.
 
 ---
 
@@ -227,4 +278,4 @@ Se hai bisogno di capire come sono stati estratti i dati originariamente, consul
 -   `_tools/scripts/archive/legacy/audits/`: Logiche di validazione storica.
 
 ---
-*Ultimo aggiornamento guida: 16 Maggio 2026 (Integrazione Sistema P.I. & Cleanup Repository)*
+*Ultimo aggiornamento guida: 21 Maggio 2026 (Integrazione compilatore LevelDB V14 ufficiale, correzione bug inventario vuoto e allineamento deployment)*

@@ -1,0 +1,39 @@
+{
+    "_id": "6d5e24bcc76b8451",
+    "name": "Mutageno: Fenice (Rosso)",
+    "type": "mutagen",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-mutations/mutageno_fenice_rosso.webp",
+    "system": {
+        "description": "<p>Effetto: +2 Danni in Mischia. CD Mutazione: 20. Mutazione Minore: Ciuffi di piume grigie e luce dall'interno.</p>",
+        "quantity": "1",
+        "weight": 0.5,
+        "cost": 0,
+        "sourcebook": "DW 145",
+        "isHidden": false,
+        "isStored": false,
+        "isCarried": true,
+        "type": "Red",
+        "source": "Fenice",
+        "effect": "+2 Danni in Mischia",
+        "alchemyDC": 20,
+        "minorMutation": "Ciuffi di piume grigie e luce dall'interno.",
+        "isConsumable": false,
+        "consumeProperties": {
+            "doesHeal": false,
+            "heal": "",
+            "addsTempHp": false,
+            "temporaryHp": {
+                "value": "",
+                "duration": 0
+            },
+            "effects": [],
+            "removesEffects": []
+        }
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

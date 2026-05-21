@@ -1,0 +1,39 @@
+{
+    "_id": "36e5f3c35127062e",
+    "name": "Mutageno: Frightener (Verde)",
+    "type": "mutagen",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-mutations/mutageno_frightener_verde.webp",
+    "system": {
+        "description": "<p>Effetto: +1 FIS. CD Mutazione: 22. Mutazione Minore: Occhi sfaccettati e scaglie di chitina.</p>",
+        "quantity": "1",
+        "weight": 0.5,
+        "cost": 0,
+        "sourcebook": "DW 145",
+        "isHidden": false,
+        "isStored": false,
+        "isCarried": true,
+        "type": "Green",
+        "source": "Frightener",
+        "effect": "+1 FIS",
+        "alchemyDC": 22,
+        "minorMutation": "Occhi sfaccettati e scaglie di chitina.",
+        "isConsumable": false,
+        "consumeProperties": {
+            "doesHeal": false,
+            "heal": "",
+            "addsTempHp": false,
+            "temporaryHp": {
+                "value": "",
+                "duration": 0
+            },
+            "effects": [],
+            "removesEffects": []
+        }
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

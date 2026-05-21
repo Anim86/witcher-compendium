@@ -1,0 +1,23 @@
+{
+    "_id": "53f6d1bc9ed07c7a",
+    "name": "Estratto di Veleno",
+    "type": "component",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-alchemy/estratto_di_veleno.webp",
+    "system": {
+        "description": "<p>Secrezione tossica prelevata da creature velenose.</p><p><b>Rarità:</b> S | <b>Ubicazione:</b> Ghoul, streghe, endriaghe, arachas, viverne</p>",
+        "quantity": "1",
+        "weight": 0.1,
+        "cost": 38,
+        "sourcebook": "MB 145",
+        "type": "alchemical",
+        "rarity": "S",
+        "location": "Ghoul, streghe, endriaghe, arachas, viverne",
+        "substanceType": "caelum"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

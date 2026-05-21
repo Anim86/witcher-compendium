@@ -1,0 +1,32 @@
+{
+    "_id": "162f96a7ddf655d2",
+    "name": "Schema: Brocchiero Gnomesco",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_brocchiero_gnomesco.webp",
+    "system": {
+        "description": "<p>Schema per la fabbricazione di: Brocchiero Gnomesco.Componenti richiesti: Acciaio Nero (x3), Cuoio (x1), Grasso di Estere (x1), Acquaforte (x4), Olio di Papero (x1)Difficoltà Manifattura: CD 22Tempo: 6 ore</p>",
+        "weight": 0,
+        "cost": 0,
+        "components": [
+            "Acciaio Nero (x3)",
+            "Cuoio (x1)",
+            "Grasso di Estere (x1)",
+            "Acquaforte (x4)",
+            "Olio di Papero (x1)"
+        ],
+        "difficulty": 22,
+        "time": "6 ore",
+        "sourcebook": "MB 140"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

@@ -1,0 +1,23 @@
+{
+    "_id": "1fe3097885c043c2",
+    "name": "Schema: Flamberga",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_flamberga.webp",
+    "system": {
+        "description": "<p>Artigiani e manifatturieri possono utilizzare questo schema per creare una Flamberga di Toussaint.</p>",
+        "difficulty": 25,
+        "time": "13 ore",
+        "components": [
+            "Acciaio Nero (x4), Cote (x2), Cuoio Indurito (x2), Ferro Nero (x5), Legname Indurito (x1)"
+        ],
+        "sourcebook": "LR 169",
+        "weight": 0,
+        "cost": 0
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

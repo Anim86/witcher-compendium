@@ -1,0 +1,29 @@
+{
+    "_id": "13122a4aa2794d44",
+    "name": "Schema: Armatura a Piastre",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_armatura_a_piastre.webp",
+    "system": {
+        "description": "<p>Uno schema dettagliato che illustra i procedimenti necessari per forgiare o fabbricare: Armatura a Piastre.</p>",
+        "weight": 0,
+        "cost": 0,
+        "components": [
+            "Armatura a Piastre 19 10 ore Acciaio (x5), Cuoio Indurito (x3), Filo (x7), Acquaforte (x4), Olio di Papero (x1), Cerume di Orco (x1) 468 937",
+            "Acciaio Nero (x5), Cuoio Indurito (x1), Cuoio (x1), Olio Scurente (x1), Olio di Papero (x2), Lino (x3), Ceneri (x10)"
+        ],
+        "difficulty": 19,
+        "time": "10 ore",
+        "sourcebook": "MB 81"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

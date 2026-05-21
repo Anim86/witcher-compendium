@@ -1,0 +1,19 @@
+{
+    "_id": "69e7c869d29dc1bd",
+    "name": "Anti-Maledetti",
+    "type": "alchemical",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-equipment/anti_maledetti.webp",
+    "system": {
+        "description": "<p>+5 danni contro le creature maledette.</p>",
+        "weight": 0.5,
+        "cost": 0,
+        "quantity": 1,
+        "toxicity": "0%",
+        "duration": "30 minuti",
+        "sourcebook": "MB 248"
+    },
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

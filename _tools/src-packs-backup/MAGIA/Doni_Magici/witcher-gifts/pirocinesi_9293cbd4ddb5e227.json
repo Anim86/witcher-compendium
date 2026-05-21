@@ -1,0 +1,63 @@
+{
+    "name": "Pirocinesi",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA/Doni_Magici/witcher-gifts/pirocinesi.webp",
+    "system": {
+        "description": "<p><strong>Effetto:</strong> utilizzando un Round, il personaggio può accendere o spegnere un fuoco. Oppure dar fuoco a un bersaglio entro 8m. Non può usare questa capacità su sé stesso.</p><p><strong>Effetti Collaterali:</strong> il personaggio subisce automaticamente l'effetto A Fuoco (Manuale Base pag. 161) quando ne è bersaglio.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "TC 75",
+        "class": "MagicalGift",
+        "level": "",
+        "source": "",
+        "stamina": 2,
+        "staminaIsVar": false,
+        "effect": "utilizzando un Round, il personaggio può accendere o spegnere un fuoco. Oppure dar fuoco a un bersaglio entro 8m. Non può usare questa capacità su sé stesso.",
+        "sideEffect": "il personaggio subisce automaticamente l'effetto A Fuoco (Manuale Base pag. 161) quando ne è bersaglio.",
+        "range": "",
+        "duration": "",
+        "defence": "",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast",
+        "causeDamages": false,
+        "damage": null,
+        "damageType": "elemental"
+    },
+    "_id": "9293cbd4ddb5e227",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

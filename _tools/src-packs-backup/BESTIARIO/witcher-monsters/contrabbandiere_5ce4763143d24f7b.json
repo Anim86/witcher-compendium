@@ -1,0 +1,417 @@
+{
+    "_id": "5ce4763143d24f7b",
+    "name": "Contrabbandiere",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/contrabbandiere.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "ref": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "dex": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "body": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "spd": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "emp": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "cra": {
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
+            },
+            "will": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 5,
+                "max": 5
+            }
+        },
+        "skills": {
+            "int": {
+                "awareness": {
+                    "value": 7,
+                    "isVisible": true
+                },
+                "wildernessSurvival": {
+                    "value": 3,
+                    "isVisible": true
+                }
+            },
+            "ref": {
+                "brawling": {
+                    "value": 3,
+                    "isVisible": true
+                },
+                "dodge": {
+                    "value": 5,
+                    "isVisible": true
+                }
+            },
+            "dex": {
+                "athletics": {
+                    "value": 5,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 9,
+                    "isVisible": true
+                },
+                "sleight": {
+                    "value": 8,
+                    "isVisible": true
+                }
+            },
+            "body": {
+                "physique": {
+                    "value": 5,
+                    "isVisible": true
+                },
+                "endurance": {
+                    "value": 5,
+                    "isVisible": true
+                }
+            },
+            "emp": {
+                "deceit": {
+                    "value": 10,
+                    "isVisible": true
+                }
+            },
+            "cra": {
+                "forgery": {
+                    "value": 9,
+                    "isVisible": true
+                }
+            },
+            "will": {
+                "courage": {
+                    "value": 7,
+                    "isVisible": true
+                },
+                "intimidation": {
+                    "value": 5,
+                    "isVisible": true
+                },
+                "resistCoercion": {
+                    "value": 8,
+                    "isVisible": true
+                },
+                "resistMagic": {
+                    "value": 7,
+                    "isVisible": true
+                }
+            }
+        },
+        "details": {
+            "biography": "<p>I contrabbandieri trafficano merci illegalmente, spesso per evitare i pedaggi o per rifornire la resistenza oltre le linee nemiche. Sono maestri nell'evitare le pattuglie e nascondere il carico.</p>",
+            "threat": "Facile",
+            "reward": 10,
+            "monsterType": "Humanoid",
+            "difficulty": "SEMPLICE",
+            "height": "Normale umana",
+            "weight": "Normale umano",
+            "environment": "Strade, confini, porti e nascondigli",
+            "organization": "Solitario o in piccoli gruppi (Spesso legati a sindacati o Havekar)",
+            "vulnerability": "",
+            "intelligence": "Umana",
+            "bounty": 10,
+            "academicKnowledge": "I contrabbandieri sono criminali specializzati. Sanno come eludere i controlli ai confini e hanno sempre armi ben nascoste o balestrini compatti per tirarsi fuori dai guai in fretta senza dare nell'occhio.",
+            "common": "Coi ladri è abbastanza facile trattare, e tornano sempre utili. Scassinatori, borsaioli, topi d'appartamento, non ne trovi di migliori quando si tratta di entrare a forza. Ma i capibanda il cui mestiere è dedicarsi al crimine in generale... sono gli unici dai quali bisogna guardarsi, sempre a cercare la situazione migliore per loro."
+        },
+        "derivedStats": {
+            "hp": {
+                "value": 25,
+                "max": 25,
+                "unmodifiedMax": 25
+            },
+            "sta": {
+                "value": 25,
+                "max": 25,
+                "unmodifiedMax": 25
+            },
+            "rec": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "stun": {
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
+            },
+            "woundTreshold": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "resolve": {
+                "value": 18,
+                "max": 18,
+                "unmodifiedMax": 18
+            },
+            "vigor": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "armorHead": 5,
+        "armorUpper": 5,
+        "armorLower": 5,
+        "height": "Normale umana",
+        "weight": "Normale umano",
+        "environment": "Strade, confini, porti e nascondigli",
+        "intelligence": "Umana",
+        "organization": "Solitario o in piccoli gruppi (Spesso legati a sindacati o Havekar)",
+        "common": "Coi ladri è abbastanza facile trattare, e tornano sempre utili. Scassinatori, borsaioli, topi d'appartamento, non ne trovi di migliori quando si tratta di entrare a forza. Ma i capibanda il cui mestiere è dedicarsi al crimine in generale... sono gli unici dai quali bisogna guardarsi, sempre a cercare la situazione migliore per loro.",
+        "academicKnowledge": "I contrabbandieri sono criminali specializzati. Sanno come eludere i controlli ai confini e hanno sempre armi ben nascoste o balestrini compatti per tirarsi fuori dai guai in fretta senza dare nell'occhio.",
+        "bounty": 10,
+        "description": "<p>I contrabbandieri trafficano merci illegalmente, spesso per evitare i pedaggi o per rifornire la resistenza oltre le linee nemiche. Sono maestri nell'evitare le pattuglie e nascondere il carico.</p>",
+        "vulnerability": "",
+        "monsterType": "Humanoid",
+        "difficulty": "semplice"
+    },
+    "items": [
+        {
+            "_id": "530d5f3cee8d4ab9",
+            "name": "Balestrino",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/balestrino.webp",
+            "system": {
+                "description": "PA +1, Gittata 50m, Ricarica Lenta",
+                "damage": "N/A",
+                "accuracy": 0,
+                "effects": "PA +1, Gittata 50m, Ricarica Lenta",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "cd3085ee9f77490f",
+            "name": "Stiletto",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/stiletto.webp",
+            "system": {
+                "description": "PA +2, Occultabile",
+                "damage": "N/A",
+                "accuracy": 0,
+                "effects": "PA +2, Occultabile",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "f2eccafe4b3145a6",
+            "name": "[Capacità] Abile a Nascondere",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "<p>Ottiene un bonus di +2 alle Prove di Rapidità di Mano per occultare oggetti che pesano 1kg o meno.</p>",
+                "isStored": false
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "ec26cb3fa13441ba",
+            "name": "[Capacità] Paranoico Esperto",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "<p>Può tirare su Paranoico Esperto contro il tiro di Nascondersi di chi è in agguato per individuare imboscate e trappole entro 10m. Se fallisce avverte comunque una strana sensazione che gli fornisce +2 per evitare la trappola o riduce il bonus di chi lo imboscata da +5 a +3.</p>",
+                "isStored": false
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "c18c991b739c4223",
+            "name": "Corone (x3d10)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 3d10",
+                "isStored": false,
+                "quantity": "3d10"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "6ce069047f984b29",
+            "name": "Acciarino (x1)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-equipment/acciarino.webp",
+            "system": {
+                "description": "Quantità: 1",
+                "isStored": false,
+                "quantity": "1"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "e0033fde48014273",
+            "name": "Brache Imbottite (x1)",
+            "type": "armor",
+            "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-armor/brache_imbottite.webp",
+            "system": {
+                "description": "Quantità: 1",
+                "isStored": false,
+                "quantity": "1"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "e93bce06399b4b9c",
+            "name": "Cappuccio a Doppia Trama (x1)",
+            "type": "armor",
+            "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-armor/cappuccio_a_doppia_trama.webp",
+            "system": {
+                "description": "Quantità: 1",
+                "isStored": false,
+                "quantity": "1"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "633f777b95034fc2",
+            "name": "Dardi da Balestra (x10)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 10",
+                "isStored": false,
+                "quantity": "10"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "8caaa3b73ec94529",
+            "name": "Gambesone Aedirniano (x1)",
+            "type": "armor",
+            "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-armor/gambesone_aedirniano.webp",
+            "system": {
+                "description": "Quantità: 1",
+                "isStored": false,
+                "quantity": "1"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "c27ba35756b24ce1",
+            "name": "Lanterna Schermata (x1)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-equipment/lanterna_schermata.webp",
+            "system": {
+                "description": "Quantità: 1",
+                "isStored": false,
+                "quantity": "1"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "94a9b0a90358470d",
+            "name": "Sacca da Viaggio (con 2 Tasche Segrete) (x1)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 1",
+                "isStored": false,
+                "quantity": "1"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "65b41f5b303448bf",
+            "name": "Oggetti Comuni (x1d6)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "Quantità: 1d6",
+                "isStored": false,
+                "quantity": "1d6"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        }
+    ],
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

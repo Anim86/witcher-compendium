@@ -1,0 +1,32 @@
+{
+    "_id": "acf088625a36e921",
+    "name": "Schema: Armatura Pesante di Hindarsfjall",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_armatura_pesante_di_hindarsfjall.webp",
+    "system": {
+        "description": "<p>Schema per la fabbricazione di: Armatura Pesante di Hindarsfjall.Componenti richiesti: Acciaio Nero (x4), Cuoio Indurito (x1), Ossa di Bestia (x5), Filo (x6), Olio di Papero (x3)Difficoltà Manifattura: CD 22Tempo: 11 ore</p>",
+        "weight": 0,
+        "cost": 0,
+        "components": [
+            "Acciaio Nero (x4)",
+            "Cuoio Indurito (x1)",
+            "Ossa di Bestia (x5)",
+            "Filo (x6)",
+            "Olio di Papero (x3)"
+        ],
+        "difficulty": 22,
+        "time": "11 ore",
+        "sourcebook": "MB 137"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

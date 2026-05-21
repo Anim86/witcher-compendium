@@ -210,10 +210,10 @@
             "_id": "530d5f3cee8d4ab9",
             "name": "Balestrino",
             "type": "weapon",
-            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/balestrino.webp",
             "system": {
                 "description": "PA +1, Gittata 50m, Ricarica Lenta",
-                "damage": "N/A",
+                "damage": "2d6+2",
                 "accuracy": 0,
                 "effects": "PA +1, Gittata 50m, Ricarica Lenta",
                 "isStored": false,
@@ -229,10 +229,10 @@
             "_id": "cd3085ee9f77490f",
             "name": "Stiletto",
             "type": "weapon",
-            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/stiletto.webp",
             "system": {
                 "description": "PA +2, Occultabile",
-                "damage": "N/A",
+                "damage": "1d6",
                 "accuracy": 0,
                 "effects": "PA +2, Occultabile",
                 "isStored": false,
@@ -291,7 +291,7 @@
             "_id": "6ce069047f984b29",
             "name": "Acciarino (x1)",
             "type": "valuable",
-            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-equipment/acciarino.webp",
             "system": {
                 "description": "Quantità: 1",
                 "isStored": false,
@@ -305,8 +305,8 @@
         {
             "_id": "e0033fde48014273",
             "name": "Brache Imbottite (x1)",
-            "type": "valuable",
-            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "type": "armor",
+            "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-armor/brache_imbottite.webp",
             "system": {
                 "description": "Quantità: 1",
                 "isStored": false,
@@ -320,8 +320,8 @@
         {
             "_id": "e93bce06399b4b9c",
             "name": "Cappuccio a Doppia Trama (x1)",
-            "type": "valuable",
-            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "type": "armor",
+            "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-armor/cappuccio_a_doppia_trama.webp",
             "system": {
                 "description": "Quantità: 1",
                 "isStored": false,
@@ -350,8 +350,8 @@
         {
             "_id": "8caaa3b73ec94529",
             "name": "Gambesone Aedirniano (x1)",
-            "type": "valuable",
-            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "type": "armor",
+            "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-armor/gambesone_aedirniano.webp",
             "system": {
                 "description": "Quantità: 1",
                 "isStored": false,
@@ -366,7 +366,7 @@
             "_id": "c27ba35756b24ce1",
             "name": "Lanterna Schermata (x1)",
             "type": "valuable",
-            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-equipment/lanterna_schermata.webp",
             "system": {
                 "description": "Quantità: 1",
                 "isStored": false,

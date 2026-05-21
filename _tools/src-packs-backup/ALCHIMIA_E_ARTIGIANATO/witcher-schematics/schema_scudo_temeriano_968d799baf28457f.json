@@ -1,0 +1,28 @@
+{
+    "_id": "968d799baf28457f",
+    "name": "Schema: Scudo Temeriano",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_scudo_temeriano.webp",
+    "system": {
+        "description": "<p>Schema per la fabbricazione di: Scudo Temeriano. Componenti richiesti: Legname Indurito (x4), Ferro (x1), Cuoio Indurito (x1), Cerume di Orco (x3). Difficoltà Manifattura: CD 16. Tempo: 4 ore.</p>",
+        "weight": 0,
+        "cost": 0,
+        "components": [
+            "Scudo Temeriano 16 4 ore Legname Indurito (x4), Ferro (x1), Cuoio Indurito (x1), Cerume di Orco (x3) 172 342"
+        ],
+        "difficulty": 16,
+        "time": "4 ore",
+        "sourcebook": "MB 82"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

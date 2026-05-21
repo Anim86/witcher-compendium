@@ -1,0 +1,86 @@
+{
+    "name": "Mago",
+    "type": "profession",
+    "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-professions/mago.webp",
+    "system": {
+        "sourcebook": "MB 44",
+        "definingSkill": {
+            "skillName": "Arte del Mago",
+            "stat": "int",
+            "level": 1,
+            "definition": "<p>Un Mago può tirare <strong>Arte del Mago (INT)</strong> ogni volta che incontra un fenomeno magico, un incantesimo sconosciuto o per rispondere a domande teoriche sulla magia. Con un successo, comprende tutto ciò che è possibile sul fenomeno. Può essere usato al posto di Accortezza per individuare effetti magici attivi o spettri.</p>"
+        },
+        "skillPath1": {
+            "pathName": "Il Politico",
+            "skill1": {
+                "skillName": "Intrigo",
+                "stat": "int",
+                "level": 0,
+                "definition": "<p>Studiando il modus operandi di un bersaglio, il Mago ottiene +3 a Inganno, Seduzione, Intimidire o Persuasione contro di esso. Il bonus dura un numero di giorni pari al punteggio dell'abilità. La CD è pari alla INT x3 del bersaglio.</p>"
+            },
+            "skill2": {
+                "skillName": "Malelingue",
+                "stat": "int",
+                "level": 0,
+                "definition": "<p>Permette di spargere dicerie in un insediamento per abbassare la reputazione di un bersaglio di metà del proprio punteggio. L'effetto dura un numero di giorni pari al valore dell'abilità. La CD è pari alla EMP x3 del bersaglio.</p>"
+            },
+            "skill3": {
+                "skillName": "Risorse",
+                "stat": "int",
+                "level": 0,
+                "definition": "<p>Una volta per partita, permette di ricordare una risorsa acquisita in precedenza. Il risultato del tiro determina chi si conosce e il tipo di rapporto (Indebitato, Ricattato, Amichevole, etc.) secondo l'apposita tabella.</p>"
+            }
+        },
+        "skillPath2": {
+            "pathName": "Lo Scienziato",
+            "skill1": {
+                "skillName": "Ingegneria Inversa",
+                "stat": "int",
+                "level": 0,
+                "definition": "<p>Studiando una soluzione alchemica per un'ora, permette di ricavarne la formula originaria (CD manifattura +3). La formula trascritta è più difficile da realizzare (+3) ma permette di produrre l'oggetto con sicurezza.</p>"
+            },
+            "skill2": {
+                "skillName": "Distillazione",
+                "stat": "cra",
+                "level": 0,
+                "definition": "<p>Usabile al posto di Alchimia. Con un successo, crea una dose con effetto maggiorato del 50% in durata, danno o CD di resistenza (arrotondato per difetto). Richiede la creazione di una nuova formula.</p>"
+            },
+            "skill3": {
+                "skillName": "Mutare",
+                "stat": "int",
+                "level": 0,
+                "definition": "<p>Permette di sottoporre un bersaglio a mutazione tramite mutageni (CD basata su FIS e VOL del bersaglio). Il successo permette di acquisire la mutazione; il fallimento rende il bersaglio Moribondo con la mutazione peggiore.</p>"
+            }
+        },
+        "skillPath3": {
+            "pathName": "L'Arcimago",
+            "skill1": {
+                "skillName": "Sintonia",
+                "stat": "will",
+                "level": 0,
+                "definition": "<p>Abitua il corpo al flusso magico. Ogni livello aumenta di +2 la soglia di Vigore. Al livello 10, il Vigore massimo del mago arriva a 25 (compreso il vigore iniziale). Si somma ad altri eventuali bonus di vigore.</p>"
+            },
+            "skill2": {
+                "skillName": "Immutabile",
+                "stat": "will",
+                "level": 0,
+                "definition": "<p>Permette di ignorare in gran parte gli effetti del dimeritium. Superando una prova con CD 16, il Mago mantiene metà della sua soglia di Vigore totale e può continuare a lanciare magie (nonostante il fastidio).</p>"
+            },
+            "skill3": {
+                "skillName": "Magia Ampliata",
+                "stat": "will",
+                "level": 0,
+                "definition": "<p>Permette di convogliare un incantesimo tramite i propri focus dimezzandone (1 focus) o riducendone a un quarto (2 focus) il costo in punti Resistenza. Richiede una prova con CD 16 prima del lancio.</p>"
+            }
+        },
+        "professionSkills": "Lanciare Incantesimi, Intessere Fatture, Officiare Rituali, Resistere alla Magia, Armi in Asta, Istruzione, Etichetta, Sensibilità, Seduzione, Eleganza",
+        "notes": "<p>I maghi sono i potenti condotti del Caos Primevo. Nelle accademie imparano a usare la magia per far progredire la scienza e migliorare la vita, ma spesso finiscono per diventare influenti consiglieri reali o pericolosi manipolatori politici. La loro conoscenza arcana permette loro di compiere miracoli e mutazioni impossibili per i comuni mortali.</p>"
+    },
+    "effects": [],
+    "flags": {},
+    "_id": "dd33b84e1e8560b8",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

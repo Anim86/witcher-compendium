@@ -1,0 +1,29 @@
+{
+    "_id": "24936b02c3844cd4",
+    "name": "Schema: Elmo di Skellige",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_elmo_di_skellige.webp",
+    "system": {
+        "description": "<p>Uno schema dettagliato che illustra i procedimenti necessari per forgiare o fabbricare: Elmo di Skellige.</p>",
+        "weight": 0,
+        "cost": 1200,
+        "components": [
+            "Elmo di Skellige 22 6 ore Acciaio Nero (x4), Cuoio Indurito (x2), Ossa di Bestia (x5), Filo (x6), Olio di Papero (x1) 527 1050",
+            "Acciaio Nero (x4), Cuoio Indurito (x1), Lino (x1), Olio Scurente (x2), Olio di Papero (x2), Ceneri (x10), Olio (x1)"
+        ],
+        "difficulty": 22,
+        "time": "6 ore",
+        "sourcebook": "MB 81"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

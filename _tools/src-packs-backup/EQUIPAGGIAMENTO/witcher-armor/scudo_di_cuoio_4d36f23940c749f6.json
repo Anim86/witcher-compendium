@@ -1,0 +1,25 @@
+{
+    "_id": "4d36f23940c749f6",
+    "name": "Scudo di Cuoio",
+    "type": "armor",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-armor/scudo_di_cuoio.webp",
+    "system": {
+        "description": "<p>Lo scudo più semplice che si possa trovare sul mercato, fatto di cuoio teso su un cerchio di legno. Non regge molto in confronto al metallo, ma è leggero e costa poco.</p>",
+        "notes": "",
+        "weight": 0.5,
+        "cost": 50,
+        "reliability": 4,
+        "reliabilityMax": 4,
+        "sourcebook": "MB 82",
+        "type": "Light",
+        "encumb": 0,
+        "avail": "O",
+        "location": "Shield"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

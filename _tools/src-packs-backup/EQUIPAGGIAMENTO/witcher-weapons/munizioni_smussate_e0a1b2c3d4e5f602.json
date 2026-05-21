@@ -1,0 +1,34 @@
+{
+    "_id": "e0a1b2c3d4e5f602",
+    "name": "Munizioni Smussate",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/munizioni_smussate.webp",
+    "system": {
+        "description": "<p>Le frecce e i dardi smussati sono un caso interessante. Di mio non ne ho mai usate, ma non ho neanche mai com- battuto niente che non potesse andar giù con una punta larga. Le munizioni smussate hanno una punta di legno arrotondata, come se fosse un pugno. Ho sentito che, se le piazzi in un arco, puoi usarle per far svenire una persona.</p>",
+        "weight": 0.1,
+        "cost": 5,
+        "quantity": 10,
+        "isAmmo": true,
+        "type": {
+            "text": "Munizione",
+            "bludgeoning": true
+        },
+        "reliability": 10,
+        "effects": "Non-Letale",
+        "sourcebook": "MB 74",
+        "category": "sword",
+        "range": "",
+        "reliabilityMax": 10
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

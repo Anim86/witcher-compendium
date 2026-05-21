@@ -1,0 +1,64 @@
+{
+    "_id": "022b4bd365044f9f",
+    "name": "Piena di Ys",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA/Incantesimi/witcher-spells/piena_di_ys.webp",
+    "system": {
+        "description": "<p>Piena di Ys evoca 20 metri cubi d'acqua che si riversano in ogni direzione. Chi viene travolto su- bisce 5d6 danni al Torso e deve superare una prova di Prestanza CD 24 per non cadere Prono. Se l'incantesi- mo viene usato all'aperto l'acqua defluisce nello stesso Turno in cui appare, mentre al chiuso riempie la stanza e sfonda tutte le barriere non rinforzate.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "TC 83",
+        "class": "Mage",
+        "level": "master",
+        "source": "mixedElements",
+        "stamina": 0,
+        "staminaIsVar": false,
+        "effect": "Piena di Ys evoca 20 metri cubi dâ€™acqua che si riversano in ogni direzione. Chi viene travolto su- bisce 5d6 danni al Torso e deve superare una prova di Prestanza CD 24 per non cadere Prono. Se lâ€™incantesi- mo viene usato allâ€™aperto lâ€™acqua defluisce nello stesso Turno in cui appare, mentre al chiuso riempie la stanza e sfonda tutte le barriere non rinforzate.",
+        "range": "40m",
+        "duration": "Istantanea",
+        "defence": "Nessuna",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast",
+        "causeDamages": true,
+        "damage": "5d6",
+        "damageType": "elemental"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
+}

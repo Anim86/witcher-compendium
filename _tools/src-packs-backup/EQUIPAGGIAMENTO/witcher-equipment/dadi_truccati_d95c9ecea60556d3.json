@@ -1,0 +1,24 @@
+{
+    "_id": "d95c9ecea60556d3",
+    "name": "Dadi truccati",
+    "type": "valuable",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-equipment/dadi_truccati.webp",
+    "system": {
+        "description": "<p>Dadi sbilanciati per favorire determinati risultati. Conferiscono un bonus di +3 a Gioco d'Azzardo (Accortezza con CD 16 per notarli).</p>",
+        "weight": 0.1,
+        "cost": 12,
+        "quantity": 1,
+        "sourcebook": "MB 95"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "_id": "b8b690f688a77656",
+    "name": "Spada d'acciaio da witcher",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-special/spada_d_acciaio_da_witcher.webp",
+    "system": {
+        "description": "<p>Ancor oggi, i witcher sono gli unici guerrieri che portano regolarmente spade d'acciaio meteoritico. Pref: 0, Danno: 4d6+2, Mani: 1, Affidabilità: 15, Effetti: Trapassare Meteorite.</p>",
+        "weight": 2.5,
+        "cost": 506,
+        "quantity": 1,
+        "toxicity": "0%",
+        "duration": "N/A",
+        "sourcebook": "MB 247"
+    },
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

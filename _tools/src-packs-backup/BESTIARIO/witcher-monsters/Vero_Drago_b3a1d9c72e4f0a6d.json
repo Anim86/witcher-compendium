@@ -1,0 +1,283 @@
+{
+    "name": "Vero Drago",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/vero_drago.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "ref": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "dex": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "body": {
+                "value": 16,
+                "max": 16,
+                "unmodifiedMax": 16
+            },
+            "spd": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "emp": {
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
+            },
+            "cra": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "will": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 0,
+                "max": 0
+            }
+        },
+        "skills": {
+            "int": {
+                "awareness": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "education": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "wilderness": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "ref": {
+                "dodge": {
+                    "value": 8,
+                    "isVisible": true
+                },
+                "melee": {
+                    "value": 8,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "dex": {
+                "athletics": {
+                    "value": 7,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 12,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "body": {
+                "physique": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "endurance": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "emp": {
+                "charisma": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "deceit": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "persuasion": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "perception": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "cra": {},
+            "will": {
+                "courage": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "intimidation": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "resistcoerc": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "resistmagic": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            }
+        },
+        "details": {
+            "biography": "<p>Ho saputo, da fonte attendibile, che la famosa Vergine di Aedirn, Saskia, era un drago! Questi affari possono assumere forma umana, soffiano fuoco tanto caldo da sciogliere la pietra e abbattono le mura dei castelli con gli artigli! Sono certo che i re del Nord terranno i loro preziosi ben nascosti. D'altronde i draghi vivono solo per due cose: ammazzare cavalieri e accumulare bottino. – Rodolf Kazmer</p>",
+            "threat": "Eccezionale Complesso",
+            "reward": 5000,
+            "monsterType": "Draconid",
+            "difficulty": "MEDIUM",
+            "height": "",
+            "weight": "",
+            "environment": "",
+            "organization": "",
+            "vulnerability": "",
+            "intelligence": "",
+            "bounty": 5000
+        },
+        "derivedStats": {
+            "rec": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "stun": {
+                "value": 0,
+                "max": 0
+            },
+            "woundTreshold": {
+                "value": 0,
+                "max": 0
+            },
+            "hp": {
+                "value": 150,
+                "max": 150,
+                "unmodifiedMax": 150
+            },
+            "sta": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "description": "<p>Ho saputo, da fonte attendibile, che la famosa Vergine di Aedirn, Saskia, era un drago! Questi affari possono assumere forma umana, soffiano fuoco tanto caldo da sciogliere la pietra e abbattono le mura dei castelli con gli artigli! Sono certo che i re del Nord terranno i loro preziosi ben nascosti. D'altronde i draghi vivono solo per due cose: ammazzare cavalieri e accumulare bottino. – Rodolf Kazmer</p>",
+        "sourcebook": "DW 130",
+        "monsterType": "Draconid",
+        "difficulty": "medium",
+        "bounty": 5000,
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "organization": "",
+        "intelligence": "",
+        "vulnerability": "",
+        "armorHead": 25,
+        "armorUpper": 25,
+        "armorLower": 25
+    },
+    "items": [
+        {
+            "_id": "b60b4e1b972e5",
+            "name": "Artigli",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "",
+                "damage": "6d6",
+                "accuracy": 0,
+                "effects": "",
+                "rateOfFire": 2
+            }
+        },
+        {
+            "_id": "4350ebb63cb5",
+            "name": "Morso",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "",
+                "damage": "8d6",
+                "accuracy": 0,
+                "effects": "",
+                "rateOfFire": 1
+            }
+        },
+        {
+            "_id": "00f94beb4529f",
+            "name": "Colpo di Coda",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "",
+                "damage": "6d6",
+                "accuracy": 0,
+                "effects": "",
+                "rateOfFire": 1
+            }
+        },
+        {
+            "_id": "358bc4ec448ac8",
+            "name": "[Capacità] Soffio Elementale",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "",
+                "isStored": false
+            }
+        },
+        {
+            "_id": "0818107ad50b9",
+            "name": "[Capacità] Volo",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "",
+                "isStored": false
+            }
+        },
+        {
+            "_id": "eccd1fa2bdabf8",
+            "name": "[Capacità] Creatura Immensa",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "",
+                "isStored": false
+            }
+        }
+    ],
+    "_id": "b3a1d9c72e4f0a6d",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

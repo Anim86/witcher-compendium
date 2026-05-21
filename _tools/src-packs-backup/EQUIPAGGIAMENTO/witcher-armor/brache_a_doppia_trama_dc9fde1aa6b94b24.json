@@ -1,0 +1,55 @@
+{
+    "_id": "dc9fde1aa6b94b24",
+    "name": "Brache a Doppia Trama",
+    "type": "armor",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-armor/brache_a_doppia_trama.webp",
+    "system": {
+        "description": "<p>Con la doppia trama non ti puoi sbagliare. Non è rigonfia come la comune stoffa imbottita e tiene al sicuro.</p>",
+        "cost": 225,
+        "reliability": {
+            "value": 0,
+            "max": 0
+        },
+        "sourcebook": "MB 82",
+        "type": "Light",
+        "location": "Leg",
+        "encumb": 0,
+        "enhancements": 0,
+        "headStopping": 0,
+        "headMaxStopping": 0,
+        "torsoStopping": 0,
+        "torsoMaxStopping": 0,
+        "leftArmStopping": 0,
+        "leftArmMaxStopping": 0,
+        "rightArmStopping": 0,
+        "rightArmMaxStopping": 0,
+        "leftLegStopping": 8,
+        "leftLegMaxStopping": 8,
+        "rightLegStopping": 8,
+        "rightLegMaxStopping": 8,
+        "bludgeoning": false,
+        "slashing": false,
+        "piercing": false,
+        "elemental": false,
+        "fire": false,
+        "poison": false,
+        "bleeding": false,
+        "weight": 1.5,
+        "rarity": "Scarsa",
+        "stoppingPower": 8,
+        "protection": {},
+        "encumbranceMod": 0,
+        "unmodifiedMax": {}
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

@@ -18,11 +18,16 @@ export let damageUtilMixin = {
         };
     },
 
+    sanitizeDamageFormula(damageFormula) {
+        let formula = String(damageFormula ?? '').trim();
+        return formula.replace(/\bN\/A\b/gi, '0');
+    },
+
     async rollDamage(damage) {
         let messageData = new ChatMessageData(this.parent);
         messageData.flavor = `<div class="damage-message"><h1><img src="${this.img}" class="item-img" />${game.i18n.localize('WITCHER.table.Damage')}: ${this.name} </h1></div>`;
 
-        let damageFormula = '' + damage.formula;
+        let damageFormula = this.sanitizeDamageFormula(damage.formula);
 
         if (damage.properties.variableDamage) {
             damageFormula = await this.createVariableDamageDialog(damageFormula);

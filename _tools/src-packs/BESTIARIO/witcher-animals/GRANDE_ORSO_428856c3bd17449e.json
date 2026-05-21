@@ -196,7 +196,7 @@
             "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
             "system": {
                 "description": "Forza Distruttiva, Sanguinamento (75%)",
-                "damage": "N/A",
+                "damage": "4d6+2",
                 "accuracy": 0,
                 "effects": "Forza Distruttiva, Sanguinamento (75%)",
                 "isStored": false,
@@ -215,7 +215,7 @@
             "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
             "system": {
                 "description": "Forza Distruttiva",
-                "damage": "N/A",
+                "damage": "2d6+2",
                 "accuracy": 0,
                 "effects": "Forza Distruttiva",
                 "isStored": false,
@@ -245,7 +245,7 @@
             "_id": "6c4d068cd6d34c92",
             "name": "Carne Cruda (x3d6)",
             "type": "valuable",
-            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-equipment/carne_cruda.webp",
             "system": {
                 "description": "Quantità: 3d6",
                 "isStored": false,
@@ -259,8 +259,8 @@
         {
             "_id": "f36298dc5a6a40f8",
             "name": "Grasso d'Orso (x1d6)",
-            "type": "valuable",
-            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "type": "component",
+            "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-components/grasso_d_orso.webp",
             "system": {
                 "description": "Quantità: 1d6",
                 "isStored": false,
@@ -274,8 +274,8 @@
         {
             "_id": "1431492a2d2e44a0",
             "name": "Pelle d'Orso (x1d6/2)",
-            "type": "valuable",
-            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "type": "component",
+            "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-components/pelle_d_orso.webp",
             "system": {
                 "description": "Quantità: 1d6/2",
                 "isStored": false,
@@ -289,8 +289,8 @@
         {
             "_id": "4485f53000254645",
             "name": "Ossa di Bestia (x2d6)",
-            "type": "valuable",
-            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "type": "component",
+            "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-components/ossa_di_bestia.webp",
             "system": {
                 "description": "Quantità: 2d6",
                 "isStored": false,

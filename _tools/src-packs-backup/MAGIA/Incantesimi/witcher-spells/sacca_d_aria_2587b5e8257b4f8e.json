@@ -1,0 +1,61 @@
+{
+    "_id": "2587b5e8257b4f8e",
+    "name": "Sacca d'Aria",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA/Incantesimi/witcher-spells/sacca_d_aria.webp",
+    "system": {
+        "description": "<p>Sacca d'Aria consente di creare una sacca d'aria fresca sott'acqua o in un'area dove normalmente non si trova aria pura. Questa sacca ha un raggio di 1m per la durata dell'incantesimo.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "MB 103",
+        "class": "Mage",
+        "level": "novice",
+        "source": "Air",
+        "stamina": 3,
+        "staminaIsVar": false,
+        "effect": "Sacca dâ€™Aria consente di creare una sacca dâ€™aria fresca sottâ€™acqua o in unâ€™area dove normalmente non si trova aria pura. Questa sacca ha un raggio di 1m per la durata dellâ€™incantesimo.",
+        "range": "12m",
+        "duration": "2d10 Round",
+        "defence": "Nessuna",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

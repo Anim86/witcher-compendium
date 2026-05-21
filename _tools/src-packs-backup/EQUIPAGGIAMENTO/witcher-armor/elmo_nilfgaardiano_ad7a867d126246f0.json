@@ -1,0 +1,55 @@
+{
+    "_id": "ad7a867d126246f0",
+    "name": "Elmo Nilfgaardiano",
+    "type": "armor",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-armor/elmo_nilfgaardiano.webp",
+    "system": {
+        "description": "<p>Gli elmi dei Neri sono un progetto interessante diviso in due parti. La prima è una celata a scodella, con un pezzo aperto per la faccia o una visiera per vederci. La seconda è una barbozza che protegge il collo e copre naso e bocca. Insieme formano una notevole protezione.</p><p><strong>Effetti:</strong> Visuale Limitata</p>",
+        "cost": 800,
+        "reliability": {
+            "value": 0,
+            "max": 0
+        },
+        "sourcebook": "MB 81",
+        "type": "Heavy",
+        "location": "Head",
+        "encumb": 0,
+        "enhancements": 2,
+        "headStopping": 30,
+        "headMaxStopping": 30,
+        "torsoStopping": 0,
+        "torsoMaxStopping": 0,
+        "leftArmStopping": 0,
+        "leftArmMaxStopping": 0,
+        "rightArmStopping": 0,
+        "rightArmMaxStopping": 0,
+        "leftLegStopping": 0,
+        "leftLegMaxStopping": 0,
+        "rightLegStopping": 0,
+        "rightLegMaxStopping": 0,
+        "bludgeoning": false,
+        "slashing": false,
+        "piercing": false,
+        "elemental": false,
+        "fire": false,
+        "poison": false,
+        "bleeding": false,
+        "weight": 3,
+        "rarity": "Rara",
+        "stoppingPower": 30,
+        "protection": {},
+        "encumbranceMod": 0,
+        "unmodifiedMax": {}
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

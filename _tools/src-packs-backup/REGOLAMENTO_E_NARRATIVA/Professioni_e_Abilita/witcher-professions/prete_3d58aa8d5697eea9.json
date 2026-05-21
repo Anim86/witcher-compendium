@@ -1,0 +1,86 @@
+{
+    "name": "Prete",
+    "type": "profession",
+    "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-professions/prete.webp",
+    "system": {
+        "sourcebook": "TC 51",
+        "definingSkill": {
+            "skillName": "Iniziato degli Dei",
+            "stat": "emp",
+            "level": 1,
+            "definition": "<p>Un Prete può tirare <strong>Iniziato degli Dei (EMP)</strong> per ricevere alloggio gratuito, cure o servizi presso un santuario del proprio culto (o di culti alleati). Può essere usato anche per trattare con membri della stessa fede. La CD è stabilita dal GM in base alla disponibilità del santuario.</p>"
+        },
+        "skillPath1": {
+            "pathName": "Cultista",
+            "skill1": {
+                "skillName": "Mistagogo",
+                "stat": "emp",
+                "level": 0,
+                "definition": "<p>Permette di realizzare un santuario in un insediamento e convertire la popolazione. Il santuario funge da Focus (3) per il prete quando si trova entro 20m. La CD dipende dalle dimensioni della comunità.</p>"
+            },
+            "skill2": {
+                "skillName": "Misteri del Culto",
+                "stat": "will",
+                "level": 0,
+                "definition": "<p>Inizia il prete ai segreti della fede. Fornisce bonus alle prove di Iniziato degli Dei (Religioni Ufficiali), permette di usare il tiro migliore per i Rituali (Vecchi Dei) o protegge la propria identità magica (Culti Oscuri).</p>"
+            },
+            "skill3": {
+                "skillName": "Benedizioni",
+                "stat": "will",
+                "level": 0,
+                "definition": "<p>Permette di benedire un gruppo tramite una cerimonia di un'ora (CD 16). Fornisce bonus variabili (Autorità, PR, Iniziativa, etc.) in base al tipo di culto per la durata di un giorno.</p>"
+            }
+        },
+        "skillPath2": {
+            "pathName": "Predicatore",
+            "skill1": {
+                "skillName": "Potere Divino",
+                "stat": "will",
+                "level": 0,
+                "definition": "<p>Aumenta la sintonia con la divinità. Aumenta il Vigore di +1 per livello (fino a 9). Al livello 10, il bonus totale è +5 per un Vigore massimo di 16 (compreso il vigore iniziale).</p>"
+            },
+            "skill2": {
+                "skillName": "Sovranità Divina",
+                "stat": "emp",
+                "level": 0,
+                "definition": "<p>Somma il proprio valore alle prove di Autorità nelle regioni dove il culto è praticato. Altrove si somma metà del valore. Rappresenta l'aura di autorità divina che emana dal prete.</p>"
+            },
+            "skill3": {
+                "skillName": "Preveggenza",
+                "stat": "will",
+                "level": 0,
+                "definition": "<p>Il prete viene sopraffatto da visioni simboliche del futuro (rimanendo catatonico per 3 round). Al termine, può tirare per decifrarle contrapposto a una CD del GM per ottenere indizi o profezie.</p>"
+            }
+        },
+        "skillPath3": {
+            "pathName": "Fanatico",
+            "skill1": {
+                "skillName": "Rituali di Sangue",
+                "stat": "will",
+                "level": 0,
+                "definition": "<p>Permette di officiare rituali senza componenti alchemiche sacrificando sangue (5 PS per ogni unità mancante). Il sangue può essere proprio o altrui, purché versato durante il rito.</p>"
+            },
+            "skill2": {
+                "skillName": "Fervore",
+                "stat": "emp",
+                "level": 0,
+                "definition": "<p>Parole accorate che conferiscono 1d6 PS temporanei al bersaglio per ogni punto sopra la CD (INT x3 del bersaglio), fino a 5d6. L'effetto dura un numero di round pari al valore dell'abilità x2.</p>"
+            },
+            "skill3": {
+                "skillName": "Parola di Dio",
+                "stat": "emp",
+                "level": 0,
+                "definition": "<p>Convince i presenti di essere un tramite divino. Chi fallisce la difesa (Resistere a Coercizione) diventa un apostolo fedele. Il prete può avere un numero di apostoli pari al valore dell'abilità.</p>"
+            }
+        },
+        "professionSkills": "Autorità, Carisma, Coraggio, Insegnamento, Intessere Fatture, Lanciare Incantesimi, Officiare Rituali, Pronto Soccorso, Sensibilità, Sopravvivenza",
+        "notes": "<p>Preti e druidi sono due mondi separati. I preti traggono il loro potere dalla fede incrollabile in una divinità, in se stessi o nel loro messaggio. Dai predicatori di piazza ai cultisti segreti, fino ai fanatici pronti a scatenare inquisizioni, la loro magia è un dono divino che guida e protegge i fedeli.</p>"
+    },
+    "effects": [],
+    "flags": {},
+    "_id": "3d58aa8d5697eea9",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

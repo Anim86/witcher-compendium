@@ -1,0 +1,39 @@
+{
+    "name": "Bobolak",
+    "type": "race",
+    "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-races/bobolak.webp",
+    "system": {
+        "sourcebook": "LR 171",
+        "perk1": {
+            "name": "Cuor di Leone",
+            "description": "<p>I bobolak possono non essere la specie più grande del Continente, ma sono la più coraggiosa. I piccoli bobolak crescono con i racconti delle gesta eroiche dei loro avi. I bobolak hanno <strong>+1 innato a Coraggio</strong>.</p>"
+        },
+        "perk2": {
+            "name": "Strana Fisiologia",
+            "description": "<p>La fisiologia e il metabolismo dei bobolak è alieno rispetto a quello degli umani e delle altre Razze Antiche. Quando vengono feriti, qualcosa dentro di loro accelera, permettendo di sopravvivere a colpi letali. Quando subisce una Ferita Critica, un bobolak può effettuare una prova di <strong>Tempra con CD pari a quella necessaria per stabilizzarsi</strong>. Se ha successo, la Ferita Critica viene stabilizzata automaticamente. Questo tiro può essere effettuato solo nel momento in cui si subisce la ferita e non si può ritentare in caso di fallimento.</p>"
+        },
+        "perk3": {
+            "name": "Denti Acuminati",
+            "description": "<p>Pur non avendo le mandibole poderose e le zanne avvelenate dei vran, i bobolak hanno denti simili a rasoi molto affilati. Possono usarli come armi da mischia che causano <strong>2d6 danni</strong> e hanno l'effetto <strong>Trapassare Migliorato</strong>.</p>"
+        },
+        "perk4": {
+            "name": "Pessima Vista",
+            "description": "<p>Quasi tutti i bobolak hanno problemi di vista. Grazie all'udito acuto riescono a muoversi senza grossi problemi, ma sono assai meno percettivi di ogni altra razza del Continente. Per questo hanno <strong>-4 innato ad Accortezza</strong>, ma questa penalità non si applica alle prove basate esclusivamente sull'udito.</p>"
+        },
+        "socialStanding": {
+            "north": "tolerated",
+            "nilfgaard": "tolerated",
+            "skellige": "tolerated",
+            "dolBlathanna": "tolerated",
+            "mahakam": "equal"
+        },
+        "description": "<p>I bobolak sono una delle Razze Antiche meno umanoidi, quasi spazzate via dopo il Primo Sbarco. Popolo fiero con una lunga storia di eroismo, praticano il culto degli avi e degli spiriti leggendari. Scacciati dalle valli dagli elfi e dagli umani, vivono oggi in comunità montane isolate, commerciando principalmente con i nani e mantenendo con orgoglio le proprie tradizioni.</p>"
+    },
+    "effects": [],
+    "flags": {},
+    "_id": "5585e6301c871756",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

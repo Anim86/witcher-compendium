@@ -1,0 +1,236 @@
+{
+    "name": "Scolopendra Gigante",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/scolopendra_gigante.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "ref": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "dex": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "body": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "spd": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "emp": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "cra": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "will": {
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            }
+        },
+        "skills": {
+            "int": {
+                "awareness": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "wilderness": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "ref": {
+                "dodge": {
+                    "value": 3,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "dex": {
+                "athletics": {
+                    "value": 5,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 4,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "body": {
+                "physique": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "endurance": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "emp": {},
+            "cra": {},
+            "will": {
+                "courage": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "intimidation": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "resistmagic": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            }
+        },
+        "details": {
+            "biography": "<p>Ugh, non so se odio di più le endriaghe o le scolopendre giganti. Sono sempre grossi insetti che girano in gruppo e tendono imboscate. Almeno le scolopendre hanno un ventre molle dove piazzare un dardo; ma almeno con le endriaghe, se gli arrivi addosso, non devi preoccuparti che si infilino nel terreno e ti sbuchino alle spalle. – Rodolf Kazmer</p>",
+            "threat": "Facile Complesso",
+            "reward": 20,
+            "monsterType": "Insectoid",
+            "difficulty": "MEDIUM",
+            "height": "",
+            "weight": "50 Kg",
+            "environment": "",
+            "organization": "",
+            "vulnerability": "",
+            "intelligence": "",
+            "bounty": 20
+        },
+        "derivedStats": {
+            "rec": {
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
+            },
+            "stun": {
+                "value": 0,
+                "max": 0
+            },
+            "woundTreshold": {
+                "value": 0,
+                "max": 0
+            },
+            "hp": {
+                "value": 20,
+                "max": 20,
+                "unmodifiedMax": 20
+            },
+            "sta": {
+                "value": 20,
+                "max": 20,
+                "unmodifiedMax": 20
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "description": "<p>Ugh, non so se odio di più le endriaghe o le scolopendre giganti. Sono sempre grossi insetti che girano in gruppo e tendono imboscate. Almeno le scolopendre hanno un ventre molle dove piazzare un dardo; ma almeno con le endriaghe, se gli arrivi addosso, non devi preoccuparti che si infilino nel terreno e ti sbuchino alle spalle. – Rodolf Kazmer</p>",
+        "sourcebook": "DW 70",
+        "monsterType": "Insectoid",
+        "difficulty": "medium",
+        "bounty": 20,
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "organization": "",
+        "intelligence": "",
+        "vulnerability": ""
+    },
+    "items": [
+        {
+            "_id": "74f835716797e8",
+            "name": "Morso",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Veleno (30%)",
+                "damage": "3d6",
+                "accuracy": 0,
+                "effects": "Veleno (30%)",
+                "rateOfFire": 1
+            }
+        },
+        {
+            "_id": "de79532d1b31d8",
+            "name": "[Capacità] Sensibile alle Vibrazioni",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "",
+                "isStored": false
+            }
+        },
+        {
+            "_id": "eff6c08aefe74",
+            "name": "[Capacità] Ventre Molle (Armatura 3 sul ventre)",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "",
+                "isStored": false
+            }
+        },
+        {
+            "_id": "4b95aef4344b58",
+            "name": "[Capacità] Scavare",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "",
+                "isStored": false
+            }
+        },
+        {
+            "_id": "d6db08e570697",
+            "name": "[Capacità] Anello Protettivo",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "",
+                "isStored": false
+            }
+        }
+    ],
+    "_id": "ea4189d5603b2c7f",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

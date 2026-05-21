@@ -1,0 +1,63 @@
+{
+    "name": "Migliorare Arma",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA/Doni_Magici/witcher-gifts/migliorare_arma.webp",
+    "system": {
+        "description": "<p><strong>Effetto:</strong> utilizzando un Round, il personaggio può conferire l'Effetto Sanguinamento (25%) a un'arma Tagliente o Perforante.</p><p><strong>Effetti Collaterali:</strong> il personaggio subisce automaticamente l'effetto Sanguinamento quando ne è bersaglio.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "TC 75",
+        "class": "MagicalGift",
+        "level": "",
+        "source": "",
+        "stamina": 2,
+        "staminaIsVar": false,
+        "effect": "utilizzando un Round, il personaggio può conferire l'Effetto Sanguinamento (25%) a un'arma Tagliente o Perforante.",
+        "sideEffect": "il personaggio subisce automaticamente l'effetto Sanguinamento quando ne è bersaglio.",
+        "range": "",
+        "duration": "",
+        "defence": "",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast",
+        "causeDamages": false,
+        "damage": null,
+        "damageType": "elemental"
+    },
+    "_id": "6f8284250c334c11",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

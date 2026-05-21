@@ -1,0 +1,64 @@
+{
+    "_id": "715c4de0d12141ec",
+    "name": "Folata di Bronwyn",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA/Incantesimi/witcher-spells/folata_di_bronwyn.webp",
+    "system": {
+        "description": "<p>Folata di Bronwyn prende il nome dalla maga razziatrice di Skellige, Bronwyn Occhiofino. L'incantesimo consente di respingere il bersaglio di un numero di metri pari alla differenza con cui il tiro di Lanciare Incantesimi supera la difesa del bersaglio. Tale attacco infligge solo 1d6 danni, ma, se il bersaglio colpi- sce un ostacolo, subisce danno da impatto.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "MB 103",
+        "class": "Mage",
+        "level": "novice",
+        "source": "fire",
+        "stamina": 2,
+        "staminaIsVar": false,
+        "effect": "Folata di Bronwyn prende il nome dalla maga razziatrice di Skellige, Bronwyn Occhiofino. L'incantesimo consente di respingere il bersaglio di un numero di metri pari alla differenza con cui il tiro di Lanciare Incantesimi supera la difesa del bersaglio. Tale attacco infligge solo 1d6 danni, ma, se il bersaglio colpi- sce un ostacolo, subisce danno da impatto.",
+        "range": "2m",
+        "duration": "Istantanea",
+        "defence": "Schivare",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast",
+        "causeDamages": true,
+        "damage": "1d6",
+        "damageType": "elemental"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

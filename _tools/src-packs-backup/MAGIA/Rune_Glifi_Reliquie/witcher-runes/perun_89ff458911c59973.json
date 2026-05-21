@@ -1,0 +1,30 @@
+{
+    "_id": "89ff458911c59973",
+    "name": "Perun",
+    "type": "enhancement",
+    "img": "modules/witcher-compendium/assets/MAGIA/Rune_Glifi_Reliquie/witcher-runes/perun.webp",
+    "system": {
+        "description": "<p>Runa per Armi. Ogni volta che il personaggio ottiene un dado Adrenalina, ne ottiene immediatamente un secondo gratuitamente. Costo: 575 Corone.</p>",
+        "quantity": "1",
+        "weight": 0.1,
+        "cost": 575,
+        "sourcebook": "MB 256",
+        "isHidden": false,
+        "isStored": false,
+        "isCarried": true,
+        "type": "Rune",
+        "avail": "Rare",
+        "applied": false,
+        "stopping": 0,
+        "bludgeoning": false,
+        "slashing": false,
+        "piercing": false,
+        "effects": []
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

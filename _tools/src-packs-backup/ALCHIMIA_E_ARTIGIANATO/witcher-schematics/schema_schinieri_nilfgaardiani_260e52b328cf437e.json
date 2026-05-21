@@ -1,0 +1,35 @@
+{
+    "_id": "260e52b328cf437e",
+    "name": "Schema: Schinieri Nilfgaardiani",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_schinieri_nilfgaardiani.webp",
+    "system": {
+        "description": "<p>Schema per la fabbricazione di: Schinieri Nilfgaardiani.Componenti richiesti: Acciaio Nero (x5), Cuoio Indurito (x1), Cuoio (x1), Olio Scurente (x1), Olio di Papero (x2), Lino (x1), Ceneri (x10), Olio (x5)Difficoltà Manifattura: CD 24Tempo: 12 ore</p>",
+        "weight": 0,
+        "cost": 0,
+        "components": [
+            "Acciaio Nero (x5)",
+            "Cuoio Indurito (x1)",
+            "Cuoio (x1)",
+            "Olio Scurente (x1)",
+            "Olio di Papero (x2)",
+            "Lino (x1)",
+            "Ceneri (x10)",
+            "Olio (x5)"
+        ],
+        "difficulty": 24,
+        "time": "12 ore",
+        "sourcebook": "MB 137"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

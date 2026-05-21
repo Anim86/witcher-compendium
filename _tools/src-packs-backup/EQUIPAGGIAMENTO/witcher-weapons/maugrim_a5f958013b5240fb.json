@@ -1,0 +1,70 @@
+{
+    "_id": "a5f958013b5240fb",
+    "name": "Maugrim",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/maugrim.webp",
+    "system": {
+        "description": "<p>Spada d'Argento Reliquia. Forgiata dal witcher Gerring di Kharkiv nelle miniere di Mahakam per abbattere Maugrim, una bestia creata dalla maga Eira Cantogelido.</p><p><strong>Statistiche:</strong> 6d6+4 DAN (Argento), Focus Superiore (Terra e Acqua), Bilanciata, Congelamento (75%). 3 Slot.</p>",
+        "quantity": "1",
+        "weight": 6,
+        "cost": 0,
+        "sourcebook": "MB 261",
+        "class": "simple",
+        "category": "sword",
+        "damage": "2d6",
+        "damageType": "silver",
+        "reliability": 10,
+        "hands": "2",
+        "range": "N/A",
+        "enhancementSlots": 3,
+        "isMeteorite": false,
+        "damageProperties": {
+            "effects": [
+                {
+                    "id": "003a2b2a8734cc08",
+                    "name": "Focus Sup. (Terra/Acqua)",
+                    "statusEffect": null,
+                    "percentage": 100,
+                    "varEffect": false
+                },
+                {
+                    "id": "000f934d7338b029",
+                    "name": "bilanciata",
+                    "statusEffect": null,
+                    "percentage": 100,
+                    "varEffect": false
+                },
+                {
+                    "id": "00b298a0e30e79c8",
+                    "name": "congelamento",
+                    "statusEffect": null,
+                    "percentage": 75,
+                    "varEffect": false
+                }
+            ],
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "isMeteorite": false,
+            "isNonLethal": false,
+            "silverTrait": true,
+            "silverDamage": "6d6+4"
+        },
+        "accuracy": 0,
+        "type": {
+            "text": "",
+            "slashing": true,
+            "piercing": true,
+            "bludgeoning": false,
+            "elemental": false
+        },
+        "reliabilityMax": 10
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

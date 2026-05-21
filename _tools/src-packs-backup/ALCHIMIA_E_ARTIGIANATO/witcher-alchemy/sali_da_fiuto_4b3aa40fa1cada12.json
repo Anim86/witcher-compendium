@@ -1,0 +1,23 @@
+{
+    "_id": "4b3aa40fa1cada12",
+    "name": "Sali da Fiuto",
+    "type": "component",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-alchemy/sali_da_fiuto.webp",
+    "system": {
+        "description": "<p>Cristalli reattivi per far riprendere i sensi.</p><p><b>Effetti:</b> Annulla stordimento e svenimento. 25 usi.</p><p><b>Durata:</b> Istantaneo</p><p><b>Tossicità:</b> 0%</p>",
+        "quantity": "1",
+        "weight": 0.1,
+        "cost": 25,
+        "sourcebook": "MB 90",
+        "type": "alchemical",
+        "rarity": "C",
+        "location": "",
+        "substanceType": ""
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

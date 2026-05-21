@@ -1,0 +1,24 @@
+{
+    "name": "Creare Teschio di Cristallo",
+    "_id": "001acd2273064baf",
+    "system": {
+        "stamina": 5,
+        "cost": 5,
+        "description": "<p>Crea un teschio fluttuante infuso di magia che funge da spia e proietta immagini e suoni al suo creatore.</p>",
+        "class": "ritual",
+        "sourcebook": "TC 104",
+        "level": "novice",
+        "difficultyCheck": "15",
+        "staminaIsVar": false,
+        "duration": "Permanente",
+        "preparationTime": "",
+        "components": "Teschio di animale (x1), Quintessenza (x2), Vetro (x2)",
+        "effect": "Crea un teschio fluttuante infuso di magia che funge da spia e proietta immagini e suoni al suo creatore."
+    },
+    "type": "ritual",
+    "img": "modules/witcher-compendium/assets/MAGIA/Rituali/witcher-rituals/creare_teschio_di_cristallo.webp",
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
+}

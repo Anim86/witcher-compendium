@@ -1,0 +1,86 @@
+{
+    "name": "Criminale",
+    "type": "profession",
+    "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-professions/criminale.webp",
+    "system": {
+        "sourcebook": "MB 43",
+        "definingSkill": {
+            "skillName": "Paranoico Esperto",
+            "stat": "int",
+            "level": 1,
+            "definition": "<p>Tutti i criminali soffrono di una sana paranoia che li tiene fuori dai guai. Quando arriva entro 10m da una trappola o un'imboscata, il Criminale può effettuare un tiro di <strong>Paranoico Esperto (INT)</strong> contrapposto alla CD della trappola o al tiro di Nascondersi dei nemici. Anche se fallisce, percepisce comunque che qualcosa non va.</p>"
+        },
+        "skillPath1": {
+            "pathName": "Il Ladro",
+            "skill1": {
+                "skillName": "Tastare l'Area",
+                "stat": "int",
+                "level": 0,
+                "definition": "<p>Vagando per un'ora in un insediamento, il Criminale può memorizzare percorsi e nascondigli. Con un successo (CD variabile per zona), ottiene +2 a Nascondersi in quella zona per un numero di giorni pari al valore dell'abilità.</p>"
+            },
+            "skill2": {
+                "skillName": "Chiave Mentale",
+                "stat": "int",
+                "level": 0,
+                "definition": "<p>Scassinando una serratura con successo, il Criminale può memorizzare la posizione del cilindro. Ciò gli permette di riaprire quella serratura in futuro senza tiri. Può memorizzare un numero di chiavi pari alla sua INT.</p>"
+            },
+            "skill3": {
+                "skillName": "Stare Basso",
+                "stat": "int",
+                "level": 0,
+                "definition": "<p>Una volta per sessione, permette di trovare un nascondiglio sicuro in cui sparire. Il risultato del tiro viene diviso tra Sicurezza (serrature, trappole), Doti (cibo, strumenti) e Luogo celato.</p>"
+            }
+        },
+        "skillPath2": {
+            "pathName": "Il Capobanda",
+            "skill1": {
+                "skillName": "Punto Debole",
+                "stat": "emp",
+                "level": 0,
+                "definition": "<p>Individua l'oggetto o la persona di maggior valore per un bersaglio tramite una prova contrapposta a Inganno. Conferisce un bonus di +1 a Intimidire verso quel bersaglio per ogni 2 punti di scarto dal tiro nemico.</p>"
+            },
+            "skill2": {
+                "skillName": "Marchiato",
+                "stat": "will",
+                "level": 0,
+                "definition": "<p>Permette di segnare un bersaglio (tracciando segni sulla sua porta o simili). Se ha successo, il bersaglio dovrà superare il tiro ogni volta che cerca aiuto o servizi in quell'insediamento.</p>"
+            },
+            "skill3": {
+                "skillName": "Adunare",
+                "stat": "will",
+                "level": 0,
+                "definition": "<p>Permette di reclutare Banditi per un numero di giorni pari al valore dell'abilità. Per ogni 2 punti sopra la CD del GM, recluta 1 bandito. I banditi devono tirare per non fuggire se perdono metà salute.</p>"
+            }
+        },
+        "skillPath3": {
+            "pathName": "L'Assassino",
+            "skill1": {
+                "skillName": "Mira Accurata",
+                "stat": "dex",
+                "level": 0,
+                "definition": "<p>Prendendo la mira per un round (fuori dal combattimento), conferisce un bonus al prossimo attacco pari a metà del proprio valore. Se viene individuato prima di colpire, il bonus è dimezzato.</p>"
+            },
+            "skill2": {
+                "skillName": "Occhio Cavato",
+                "stat": "dex",
+                "level": 0,
+                "definition": "<p>Un attacco mirato (penalità -3 in mischia) per accecare il nemico. Se colpisce, infligge 2d6 danni non modificabili e acceca il bersaglio per un numero di round pari al valore dell'abilità.</p>"
+            },
+            "skill3": {
+                "skillName": "Colpo dell'Assassino",
+                "stat": "dex",
+                "level": 0,
+                "definition": "<p>Permette di sparire e nascondersi subito dopo aver effettuato un attacco (anche in mischia), tramite una prova contrapposta all'Accortezza del nemico. Subisce modificatori in base a luce e distanza.</p>"
+            }
+        },
+        "professionSkills": "Rapidità di Mano, Scassinare, Scaltrezza, Falsificare, Inganno, Nascondersi, Intimidire, Lame Corte, Atletica, Accortezza",
+        "notes": "<p>Dagli scassinatori professionisti agli assassini occasionali, i criminali sanno come muoversi nell'ombra. Sono esperti nel trovare punti deboli, scassinare serrature impossibili e sparire nel nulla quando le cose si mettono male. Per un criminale, farsi beccare significa la fine.</p>"
+    },
+    "effects": [],
+    "flags": {},
+    "_id": "8f3a4bb0354cf21a",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

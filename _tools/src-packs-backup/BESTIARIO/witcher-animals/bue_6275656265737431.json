@@ -1,0 +1,232 @@
+{
+    "_id": "6275656265737431",
+    "name": "Bue",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-animals/bue.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "ref": {
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
+            },
+            "dex": {
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
+            },
+            "body": {
+                "value": 14,
+                "max": 14,
+                "unmodifiedMax": 14
+            },
+            "spd": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "emp": {
+                "value": 2,
+                "max": 2,
+                "unmodifiedMax": 2
+            },
+            "cra": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "will": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 0,
+                "max": 0
+            }
+        },
+        "skills": {
+            "int": {},
+            "ref": {},
+            "dex": {},
+            "body": {},
+            "emp": {},
+            "cra": {},
+            "will": {}
+        },
+        "details": {
+            "biography": "<p>Se si allontana 10m, carica per 8d6 danni scaraventando a 8m.</p>",
+            "threat": "",
+            "reward": 0,
+            "monsterType": "Beast",
+            "difficulty": "",
+            "height": "",
+            "weight": "",
+            "environment": "",
+            "organization": "",
+            "vulnerability": "",
+            "intelligence": "",
+            "bounty": 0,
+            "academicKnowledge": "",
+            "common": ""
+        },
+        "derivedStats": {
+            "hp": {
+                "value": 50,
+                "max": 50,
+                "unmodifiedMax": 50
+            },
+            "sta": {
+                "value": 50,
+                "max": 50,
+                "unmodifiedMax": 50
+            },
+            "vigor": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "rec": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "stun": {
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
+            },
+            "resolve": {
+                "value": 18,
+                "max": 18,
+                "unmodifiedMax": 18
+            },
+            "woundTreshold": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "description": "<p>Se si allontana 10m, carica per 8d6 danni scaraventando a 8m.</p>",
+        "sourcebook": "MB 310",
+        "monsterType": "Beast",
+        "difficulty": "",
+        "armorHead": 0,
+        "armorUpper": 0,
+        "armorLower": 0,
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "intelligence": "",
+        "organization": "",
+        "common": "",
+        "academicKnowledge": "",
+        "bounty": 0,
+        "vulnerability": ""
+    },
+    "items": [
+        {
+            "_id": "e0e5a215f59c4d3d",
+            "name": "Incornata",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Sang (50%)",
+                "damage": "N/A",
+                "accuracy": 0,
+                "effects": "Sang (50%)",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "826c91ed537a401a",
+            "name": "Zoccoli",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "N/A",
+                "damage": "N/A",
+                "accuracy": 0,
+                "effects": "N/A",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "7b5524fa572f4a55",
+            "name": "[Capacità] Carica",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "<p>Se si allontana 10m, carica per 8d6 danni scaraventando a 8m.</p>",
+                "isStored": false
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "f92abe66c2c34568",
+            "name": "Carne Cruda (x2d6)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-equipment/carne_cruda.webp",
+            "system": {
+                "description": "Quantità: 2d6",
+                "isStored": false,
+                "quantity": "2d6"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "9a2bedee82e54aba",
+            "name": "Ossa di Bestia (x2d6)",
+            "type": "component",
+            "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-components/ossa_di_bestia.webp",
+            "system": {
+                "description": "Quantità: 2d6",
+                "isStored": false,
+                "quantity": "2d6"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        }
+    ],
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

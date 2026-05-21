@@ -1,0 +1,61 @@
+{
+    "_id": "68059b976525467f",
+    "name": "Telecinesi",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA/Incantesimi/witcher-spells/telecinesi.webp",
+    "system": {
+        "description": "<p>Telecinesi permette all'incantatore di sollevare e maneggiare un oggetto (fino a 5 ING per ogni punto posseduto in Lanciare Incantesimi) come se lo tenesse in mano.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "MB 103",
+        "class": "Mage",
+        "level": "novice",
+        "source": "air",
+        "stamina": 3,
+        "staminaIsVar": false,
+        "effect": "Telecinesi permette all'incantatore di sollevare e maneggiare un oggetto (fino a 5 ING per ogni punto posseduto in Lanciare Incantesimi) come se lo tenesse in mano.",
+        "range": "5m",
+        "duration": "Attiva (2 RES)",
+        "defence": "Nessuna",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

@@ -1,0 +1,23 @@
+{
+  "_id": "24433d7e35ac5c06",
+  "name": "Essenza di Wraith",
+  "type": "component",
+  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-alchemy/essenza_di_wraith.webp",
+  "system": {
+    "description": "<p>Residuo ectoplasmico di uno spettro vincolato al mondo dei vivi.</p><p><b>Rarità:</b> R | <b>Ubicazione:</b> Wraith</p>",
+    "quantity": "1",
+    "weight": 0.1,
+    "cost": 95,
+    "sourcebook": "MB 145",
+    "type": "alchemical",
+    "rarity": "R",
+    "location": "Wraith",
+    "substanceType": "aether"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
+}

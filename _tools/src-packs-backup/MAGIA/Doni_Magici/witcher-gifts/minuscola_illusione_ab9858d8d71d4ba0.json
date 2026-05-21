@@ -1,0 +1,63 @@
+{
+    "name": "Minuscola Illusione",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA/Doni_Magici/witcher-gifts/minuscola_illusione.webp",
+    "system": {
+        "description": "<p><strong>Effetto:</strong> con un'Azione, il personaggio crea un'illusione di un metro cubo di volume entro 4m da sé. È solo visiva e deve essere semplice.</p><p><strong>Effetti Collaterali:</strong> il personaggio subisce una penalità di -3 alle prove per determinare se un'illusione sia reale o no.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "TC 74",
+        "class": "MagicalGift",
+        "level": "",
+        "source": "",
+        "stamina": 1,
+        "staminaIsVar": false,
+        "effect": "con un'Azione, il personaggio crea un'illusione di un metro cubo di volume entro 4m da sé. È solo visiva e deve essere semplice.",
+        "sideEffect": "il personaggio subisce una penalità di -3 alle prove per determinare se un'illusione sia reale o no.",
+        "range": "",
+        "duration": "",
+        "defence": "",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast",
+        "causeDamages": false,
+        "damage": null,
+        "damageType": "elemental"
+    },
+    "_id": "ab9858d8d71d4ba0",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

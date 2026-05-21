@@ -1,0 +1,25 @@
+{
+    "_id": "6b7e8d9c0a1b2c3d",
+    "name": "Brocchiero Gnomesco",
+    "type": "armor",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-armor/brocchiero_gnomesco.webp",
+    "system": {
+        "description": "<p>Un capolavoro dell'ingegneria gnomesca, questo brocchiero è eccezionalmente leggero ma resistente grazie alla lega segreta utilizzata.</p>",
+        "notes": "Parata Superiore: riduce la penalità per parate multiple.",
+        "weight": 1,
+        "cost": 450,
+        "reliability": 15,
+        "reliabilityMax": 15,
+        "sourcebook": "MB 82",
+        "type": "Light",
+        "encumb": 0,
+        "avail": "R",
+        "location": "Shield"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

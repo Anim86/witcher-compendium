@@ -1,0 +1,257 @@
+{
+    "name": "Battiroccia",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/battiroccia.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "ref": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "dex": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "body": {
+                "value": 12,
+                "max": 12,
+                "unmodifiedMax": 12
+            },
+            "spd": {
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
+            },
+            "emp": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "cra": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "will": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 0,
+                "max": 0
+            }
+        },
+        "skills": {
+            "int": {
+                "awareness": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "wilderness": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "ref": {
+                "dodge": {
+                    "value": 9,
+                    "isVisible": true
+                },
+                "melee": {
+                    "value": 8,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "dex": {
+                "athletics": {
+                    "value": 8,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 8,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "body": {
+                "physique": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "endurance": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "emp": {
+                "deceit": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "persuasion": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "cra": {
+                "trapcraft": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "crafting": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "will": {
+                "courage": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "intimidation": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "resistcoerc": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "resistmagic": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            }
+        },
+        "details": {
+            "biography": "<p>Coboldi, goblin e simili non sono troppo male, ma i battiroccia o polterduk o comunque si chiamino sono il peggio. Si nascondono nelle miniere e piazzano trappole per i lavoratori. A volte si fanno vedere e pestano quei poveretti, prima di scappare nei tunnel. Ho sentito che alcuni minatori si portano dei pezzi di rame con cui spaventarli. – Rodolf Kazmer</p>",
+            "threat": "Facile Semplice",
+            "reward": 25,
+            "monsterType": "Elementa",
+            "difficulty": "MEDIUM",
+            "height": "",
+            "weight": "",
+            "environment": "",
+            "organization": "",
+            "vulnerability": "",
+            "intelligence": "",
+            "bounty": 25
+        },
+        "derivedStats": {
+            "rec": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "stun": {
+                "value": 0,
+                "max": 0
+            },
+            "woundTreshold": {
+                "value": 0,
+                "max": 0
+            },
+            "hp": {
+                "value": 60,
+                "max": 60,
+                "unmodifiedMax": 60
+            },
+            "sta": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "description": "<p>Coboldi, goblin e simili non sono troppo male, ma i battiroccia o polterduk o comunque si chiamino sono il peggio. Si nascondono nelle miniere e piazzano trappole per i lavoratori. A volte si fanno vedere e pestano quei poveretti, prima di scappare nei tunnel. Ho sentito che alcuni minatori si portano dei pezzi di rame con cui spaventarli. – Rodolf Kazmer</p>",
+        "sourcebook": "DW 96",
+        "monsterType": "Elementa",
+        "difficulty": "medium",
+        "bounty": 25,
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "organization": "",
+        "intelligence": "",
+        "vulnerability": "",
+        "armorHead": 10,
+        "armorUpper": 10,
+        "armorLower": 10
+    },
+    "items": [
+        {
+            "_id": "d8aa98c8672b18",
+            "name": "Pugno",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "",
+                "damage": "4d6",
+                "accuracy": 0,
+                "effects": "",
+                "rateOfFire": 2
+            }
+        },
+        {
+            "_id": "110e42d80c6ca",
+            "name": "Lancio Masso",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "",
+                "damage": "6d6",
+                "accuracy": 0,
+                "effects": "",
+                "rateOfFire": 1
+            }
+        },
+        {
+            "_id": "a7dfe4dcf6b43",
+            "name": "[Capacità] Pelle di Roccia",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "",
+                "isStored": false
+            }
+        },
+        {
+            "_id": "c3003ceba38358",
+            "name": "[Capacità] Letargo",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "",
+                "isStored": false
+            }
+        }
+    ],
+    "_id": "52f91a6ec3074bd8",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

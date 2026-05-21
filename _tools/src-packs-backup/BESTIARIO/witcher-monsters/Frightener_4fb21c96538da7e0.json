@@ -1,0 +1,244 @@
+{
+    "name": "Frightener",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/frightener.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "ref": {
+                "value": 9,
+                "max": 9,
+                "unmodifiedMax": 9
+            },
+            "dex": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "body": {
+                "value": 18,
+                "max": 18,
+                "unmodifiedMax": 18
+            },
+            "spd": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "emp": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "cra": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "will": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 0,
+                "max": 0
+            }
+        },
+        "skills": {
+            "int": {
+                "awareness": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "wilderness": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "ref": {
+                "dodge": {
+                    "value": 6,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "dex": {
+                "athletics": {
+                    "value": 2,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 10,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "body": {
+                "physique": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "endurance": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "emp": {},
+            "cra": {},
+            "will": {
+                "intimidation": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "resistmagic": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            }
+        },
+        "details": {
+            "biography": "<p>Quella del frightener è una storia di tracotanza arcana. Qualche secolo fa c'era ‘sto mago, Dagobert Sulla, che voleva costruire una specie di macchina da guerra e realizzò il frightener: un insetto cazzo enorme. Secondo la leggenda il mago provò a distruggere ‘sta cosa, ma la bestiaccia fuggì sui monti e si riprodusse. Il guscio li rende quasi invincibili, quindi non provare neppure a dargli fuoco! – Rodolf Kazmer</p>",
+            "threat": "Difficile Arduo",
+            "reward": 2000,
+            "monsterType": "Insectoid",
+            "difficulty": "MEDIUM",
+            "height": "",
+            "weight": "",
+            "environment": "",
+            "organization": "",
+            "vulnerability": "",
+            "intelligence": "",
+            "bounty": 2000
+        },
+        "derivedStats": {
+            "rec": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "stun": {
+                "value": 0,
+                "max": 0
+            },
+            "woundTreshold": {
+                "value": 0,
+                "max": 0
+            },
+            "hp": {
+                "value": 120,
+                "max": 120,
+                "unmodifiedMax": 120
+            },
+            "sta": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "description": "<p>Quella del frightener è una storia di tracotanza arcana. Qualche secolo fa c'era ‘sto mago, Dagobert Sulla, che voleva costruire una specie di macchina da guerra e realizzò il frightener: un insetto cazzo enorme. Secondo la leggenda il mago provò a distruggere ‘sta cosa, ma la bestiaccia fuggì sui monti e si riprodusse. Il guscio li rende quasi invincibili, quindi non provare neppure a dargli fuoco! – Rodolf Kazmer</p>",
+        "sourcebook": "DW 68",
+        "monsterType": "Insectoid",
+        "difficulty": "medium",
+        "bounty": 2000,
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "organization": "",
+        "intelligence": "",
+        "vulnerability": "",
+        "armorHead": 30,
+        "armorUpper": 30,
+        "armorLower": 30
+    },
+    "items": [
+        {
+            "_id": "78bd17bfed81b8",
+            "name": "Artigli",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "",
+                "damage": "6d6+2",
+                "accuracy": 0,
+                "effects": "",
+                "rateOfFire": 2
+            }
+        },
+        {
+            "_id": "197f7ca6630218",
+            "name": "Morso",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "",
+                "damage": "8d6",
+                "accuracy": 0,
+                "effects": "",
+                "rateOfFire": 1
+            }
+        },
+        {
+            "_id": "62264a07c823f",
+            "name": "[Capacità] Ululato Stordente",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "",
+                "isStored": false
+            }
+        },
+        {
+            "_id": "9ec117cb3039b8",
+            "name": "[Capacità] Salto Prodigioso",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "",
+                "isStored": false
+            }
+        },
+        {
+            "_id": "9f34bf6308df4db4",
+            "name": "Trofeo: Frightener",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/trofeo_frightener.webp",
+            "system": {
+                "description": "<p>Il personaggio ottiene Resistenza ai danni contundenti, perforanti o taglienti. Può cambiare la tipologia ogni giorno.</p>",
+                "weight": 0,
+                "cost": 0,
+                "sourcebook": "TC p.126"
+            },
+            "effects": [],
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        }
+    ],
+    "_id": "4fb21c96538da7e0",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

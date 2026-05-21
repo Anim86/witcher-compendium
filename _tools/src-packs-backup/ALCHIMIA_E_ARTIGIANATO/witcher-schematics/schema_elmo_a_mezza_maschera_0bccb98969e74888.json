@@ -1,0 +1,28 @@
+{
+    "_id": "0bccb98969e74888",
+    "name": "Schema: Elmo a Mezza Maschera",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_elmo_a_mezza_maschera.webp",
+    "system": {
+        "description": "<p>Schema per la fabbricazione di: Elmo a Mezza Maschera. Componenti richiesti: Acciaio (x3), Ossa di Bestia (x1). Difficoltà Manifattura: CD 15. Tempo: 4 ore.</p>",
+        "weight": 0,
+        "cost": 0,
+        "components": [
+            "Elmo a Mezza Maschera 15 4 ore Acciaio (x3), Ossa di Bestia (x1) 152 300"
+        ],
+        "difficulty": 15,
+        "time": "4 ore",
+        "sourcebook": "MB 81"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

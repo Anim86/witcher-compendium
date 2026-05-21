@@ -1,0 +1,61 @@
+{
+    "_id": "f1a2b3c4d5e6f7a8",
+    "name": "Sentinella dell'Abisso",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/sentinella_dell_abisso.webp",
+    "system": {
+        "description": "<p>Lancia Reliquia (Arpione). Di origine Vodyanoi, riemersa dagli abissi vicino alla Città di Ys. Vibra di un potere antico che altera la natura dell'acqua.</p><p><strong>Statistiche:</strong> 7d6+4 DAN, 20m Gittata (Lancio), Congelamento (75%), Focus Superiore (Acqua), Portata. 3 Slot.</p>",
+        "quantity": "1",
+        "weight": 4,
+        "cost": 0,
+        "sourcebook": "MB 262",
+        "class": "simple",
+        "category": "thrown",
+        "damage": "7d6+4",
+        "damageType": "piercing",
+        "reliability": 10,
+        "hands": "2",
+        "range": "Portata",
+        "enhancementSlots": 3,
+        "isMeteorite": false,
+        "damageProperties": {
+            "effects": [
+                {
+                    "id": "000685281fb84cb6",
+                    "name": "congelamento",
+                    "statusEffect": null,
+                    "percentage": 75,
+                    "varEffect": false
+                },
+                {
+                    "id": "009101a4262693d8",
+                    "name": "Focus Sup. (Acqua)",
+                    "statusEffect": null,
+                    "percentage": 100,
+                    "varEffect": false
+                }
+            ],
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "accuracy": 2,
+        "type": {
+            "text": "",
+            "slashing": false,
+            "piercing": true,
+            "bludgeoning": false,
+            "elemental": false
+        },
+        "reliabilityMax": 10
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

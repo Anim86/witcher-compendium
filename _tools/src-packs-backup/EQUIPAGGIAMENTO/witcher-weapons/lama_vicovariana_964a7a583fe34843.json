@@ -1,0 +1,58 @@
+{
+    "_id": "964a7a583fe34843",
+    "name": "Lama Vicovariana",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/lama_vicovariana.webp",
+    "system": {
+        "description": "<p>La lama vicovariana si riconosce per l'elsa pesante. Una volta la usavano i cavalieri di Vicovaro, ma con la guerra si son diffuse ovunque. Ti dico una cosa, amico: ho visto queste robe uscire da castelli mentre gli crollavano addosso ed essere ancora capaci di trinciare un arto o due.</p>",
+        "cost": 955,
+        "reliability": 15,
+        "accuracy": 0,
+        "effects": "Bilanciata",
+        "sourcebook": "MB 75",
+        "type": {
+            "text": "",
+            "slashing": true,
+            "piercing": true,
+            "bludgeoning": false,
+            "elemental": false
+        },
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "isMeteorite": false,
+            "isNonLethal": false,
+            "effects": [
+                {
+                    "id": "006a33b23dc4b338",
+                    "name": "bilanciata",
+                    "statusEffect": null,
+                    "percentage": 100,
+                    "varEffect": false
+                }
+            ]
+        },
+        "weight": 1.5,
+        "rarity": "Rara",
+        "damage": "5d6+4",
+        "hands": 2,
+        "unmodifiedMax": {},
+        "enhancementSlots": 1,
+        "category": "sword",
+        "range": "N/A",
+        "reliabilityMax": 15
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

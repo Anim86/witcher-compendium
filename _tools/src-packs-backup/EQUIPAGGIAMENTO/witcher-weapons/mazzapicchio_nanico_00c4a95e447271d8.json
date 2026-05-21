@@ -1,0 +1,43 @@
+{
+    "_id": "00c4a95e447271d8",
+    "name": "Mazzapicchio Nanico",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/mazzapicchio_nanico.webp",
+    "system": {
+        "description": "<p>Robusta pertica di due metri con testa a martello, lungo spuntone e uncino per strappare; un'arma difensiva perfetta.</p>",
+        "weight": 4,
+        "cost": 835,
+        "sourcebook": "MB",
+        "damage": "5d6+2",
+        "accuracy": 0,
+        "reliability": 15,
+        "hands": "2",
+        "range": "Portata",
+        "type": {
+            "text": "",
+            "slashing": false,
+            "piercing": true,
+            "bludgeoning": true,
+            "elemental": false
+        },
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "isMeteorite": false,
+            "isNonLethal": false,
+            "stun": -2,
+            "effects": []
+        },
+        "enhancementSlots": 1,
+        "category": "bludgeoning",
+        "reliabilityMax": 15
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

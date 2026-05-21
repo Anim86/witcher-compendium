@@ -1,0 +1,209 @@
+{
+    "_id": "636176616c6c6f67",
+    "name": "Cavallo da Guerra",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-animals/cavallo_da_guerra.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "ref": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "dex": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "body": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "spd": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "emp": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "cra": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "will": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 0,
+                "max": 0
+            }
+        },
+        "skills": {
+            "int": {
+                "awareness": {
+                    "value": 6,
+                    "isVisible": true
+                },
+                "wilderness": {
+                    "value": 2,
+                    "isVisible": true
+                }
+            },
+            "ref": {
+                "dodge": {
+                    "value": 6,
+                    "isVisible": true
+                },
+                "melee": {
+                    "value": 8,
+                    "isVisible": true
+                }
+            },
+            "dex": {
+                "athletics": {
+                    "value": 6,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 2,
+                    "isVisible": true
+                }
+            },
+            "body": {
+                "endurance": {
+                    "value": 9,
+                    "isVisible": true
+                }
+            },
+            "emp": {},
+            "cra": {},
+            "will": {
+                "courage": {
+                    "value": 10,
+                    "isVisible": true
+                }
+            }
+        },
+        "details": {
+            "biography": "<p>Il cavallo da guerra è addestrato per resistere al caos del campo di battaglia. Più massiccio e coraggioso di un comune cavallo, è una risorsa inestimabile per qualsiasi cavaliere.</p>",
+            "threat": "Media Semplice",
+            "reward": "—",
+            "monsterType": "Beast",
+            "difficulty": "MEDIUM",
+            "height": "",
+            "weight": "",
+            "environment": "",
+            "organization": "",
+            "vulnerability": "",
+            "intelligence": ""
+        },
+        "derivedStats": {
+            "hp": {
+                "value": 50,
+                "max": 50,
+                "unmodifiedMax": 50
+            },
+            "sta": {
+                "value": 50,
+                "max": 50,
+                "unmodifiedMax": 50
+            },
+            "vigor": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "rec": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "stun": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "resolve": {
+                "value": 35,
+                "max": 35,
+                "unmodifiedMax": 35
+            },
+            "woundTreshold": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "description": "<p>Il cavallo da guerra è addestrato per resistere al caos del campo di battaglia. Più massiccio e coraggioso di un comune cavallo, è una risorsa inestimabile per qualsiasi cavaliere.</p>",
+        "sourcebook": "MB 311",
+        "monsterType": "Beast",
+        "difficulty": "medium",
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "organization": "",
+        "intelligence": "",
+        "vulnerability": ""
+    },
+    "items": [
+        {
+            "name": "Morso",
+            "type": "weapon",
+            "img": "icons/svg/sword.svg",
+            "system": {
+                "damage": "4d6+2",
+                "accuracy": 0,
+                "type": "P",
+                "effects": "N/A",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "name": "[Capacità] Ferale",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "<p>Grazie ai suoi istinti un cavallo da guerra possiede INT 7 ai fini delle prove d'Accortezza e Sopravvivenza.</p>",
+                "isStored": false
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        }
+    ],
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

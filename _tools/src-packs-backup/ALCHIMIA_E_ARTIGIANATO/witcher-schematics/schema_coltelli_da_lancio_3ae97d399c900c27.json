@@ -1,0 +1,28 @@
+{
+    "_id": "3ae97d399c900c27",
+    "name": "Schema: Coltelli da Lancio (x3)",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_coltelli_da_lancio.webp",
+    "system": {
+        "description": "<p>Schema per la fabbricazione di: Coltelli da Lancio (x3).Componenti richiesti: Acciaio (x1)Difficoltà Manifattura: CD 8Tempo: 1 ora</p>",
+        "weight": 0,
+        "cost": 0,
+        "components": [
+            "Acciaio (x1)"
+        ],
+        "difficulty": 8,
+        "time": "1 ora",
+        "sourcebook": "MB 133"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

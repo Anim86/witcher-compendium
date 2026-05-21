@@ -1,0 +1,30 @@
+{
+    "_id": "84e1b21239c0966a",
+    "name": "Costruire Trappole",
+    "type": "skill",
+    "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/costruire_trappole.webp",
+    "system": {
+        "attribute": "cra",
+        "description": "<p>Creare trappole a mano e disattivarle. Permette di costruire fosse, trappole con corde e meccanismi complicati per accalappiare la preda o ferire mortalmente gli avversari. (Costo x2)</p>",
+        "sourcebook": "MB 57",
+        "value": 0,
+        "label": "",
+        "isOpened": false,
+        "modifiers": [],
+        "activeEffectModifiers": 0,
+        "isProfession": false,
+        "isPickup": false,
+        "isLearned": false
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

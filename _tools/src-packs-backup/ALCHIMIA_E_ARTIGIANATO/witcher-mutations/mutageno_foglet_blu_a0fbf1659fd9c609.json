@@ -1,0 +1,39 @@
+{
+    "_id": "a0fbf1659fd9c609",
+    "name": "Mutageno: Foglet (Blu)",
+    "type": "mutagen",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-mutations/mutageno_foglet_blu.webp",
+    "system": {
+        "description": "<p>Effetto: +2 Vigore. CD Mutazione: 18. Mutazione Minore: Debole luce interna e aspetto emaciato.</p>",
+        "quantity": "1",
+        "weight": 0.5,
+        "cost": 0,
+        "sourcebook": "DW 145",
+        "isHidden": false,
+        "isStored": false,
+        "isCarried": true,
+        "type": "Blue",
+        "source": "Foglet",
+        "effect": "+2 Vigore",
+        "alchemyDC": 18,
+        "minorMutation": "Debole luce interna e aspetto emaciato.",
+        "isConsumable": false,
+        "consumeProperties": {
+            "doesHeal": false,
+            "heal": "",
+            "addsTempHp": false,
+            "temporaryHp": {
+                "value": "",
+                "duration": 0
+            },
+            "effects": [],
+            "removesEffects": []
+        }
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

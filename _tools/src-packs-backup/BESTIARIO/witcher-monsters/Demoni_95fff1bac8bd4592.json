@@ -1,0 +1,306 @@
+{
+    "_id": "95fff1bac8bd4592",
+    "name": "Demoni",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/demoni.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 2,
+                "max": 2,
+                "unmodifiedMax": 2
+            },
+            "ref": {
+                "value": 9,
+                "max": 9,
+                "unmodifiedMax": 9
+            },
+            "dex": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "body": {
+                "value": 15,
+                "max": 15,
+                "unmodifiedMax": 15
+            },
+            "spd": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "emp": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "cra": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "will": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 0,
+                "max": 0
+            }
+        },
+        "skills": {
+            "int": {
+                "awareness": {
+                    "value": 10,
+                    "isVisible": true
+                },
+                "wilderness": {
+                    "value": 6,
+                    "isVisible": true
+                }
+            },
+            "ref": {
+                "dodge": {
+                    "value": 7,
+                    "isVisible": true
+                },
+                "melee": {
+                    "value": 9,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 8,
+                    "isVisible": true
+                }
+            },
+            "dex": {
+                "athletics": {
+                    "value": 5,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 1,
+                    "isVisible": true
+                }
+            },
+            "body": {
+                "physique": {
+                    "value": 10,
+                    "isVisible": true
+                },
+                "endurance": {
+                    "value": 7,
+                    "isVisible": true
+                }
+            },
+            "emp": {},
+            "cra": {},
+            "will": {
+                "courage": {
+                    "value": 10,
+                    "isVisible": true
+                }
+            }
+        },
+        "details": {
+            "biography": "<p>E se ne incontri uno, ti farà cadere in trance per nutrirsi dei tuoi segreti più oscuri. Poi, dopo averti svuotato la mente, ti farà a pezzi e divorerà il tuo cadavere. – Rodolf Kazmer</p><p>I demoni sono tra i relitti più pericolosi che si incontrano nel Continente. Sono creature terrificanti simili ad alci, tanto colossali che neppure i membri della Scuola del Grifone riescono a stordirli con il segno Aard. Guariscono quasi istantaneamente e possono ipnotizzare con uno sguardo.</p>",
+            "threat": "Ardua",
+            "reward": 1500,
+            "monsterType": "Relict",
+            "difficulty": "MEDIUM",
+            "height": "",
+            "weight": "",
+            "environment": "",
+            "organization": "",
+            "vulnerability": "",
+            "intelligence": "",
+            "bounty": 1500
+        },
+        "derivedStats": {
+            "vigor": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "rec": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "resolve": {
+                "value": 100,
+                "max": 100,
+                "unmodifiedMax": 100
+            },
+            "stun": {
+                "value": 10,
+                "max": 10
+            },
+            "woundTreshold": {
+                "value": 15,
+                "max": 15
+            },
+            "hp": {
+                "value": 100,
+                "max": 100,
+                "unmodifiedMax": 100
+            },
+            "sta": {
+                "value": 50,
+                "max": 50,
+                "unmodifiedMax": 50
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "description": "<p>E se ne incontri uno, ti farà cadere in trance per nutrirsi dei tuoi segreti più oscuri. Poi, dopo averti svuotato la mente, ti farà a pezzi e divorerà il tuo cadavere. – Rodolf Kazmer</p><p>I demoni sono tra i relitti più pericolosi che si incontrano nel Continente. Sono creature terrificanti simili ad alci, tanto colossali che neppure i membri della Scuola del Grifone riescono a stordirli con il segno Aard. Guariscono quasi istantaneamente e possono ipnotizzare con uno sguardo.</p>",
+        "sourcebook": "MB 301",
+        "monsterType": "Relict",
+        "difficulty": "medium",
+        "bounty": 1500,
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "organization": "",
+        "intelligence": "",
+        "vulnerability": ""
+    },
+    "items": [
+        {
+            "_id": "b2f3f56b1a334b27",
+            "name": "Artigli",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/trait_artigli.webp",
+            "system": {
+                "description": "",
+                "damage": "6d6+2",
+                "accuracy": 0,
+                "effects": "",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "856af64331f741a8",
+            "name": "Corna",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_artigli.webp",
+            "system": {
+                "description": "",
+                "damage": "8d6",
+                "accuracy": 0,
+                "effects": "-1 PA",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "f72486a559084f27",
+            "name": "Morso",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
+            "system": {
+                "description": "",
+                "damage": "7d6",
+                "accuracy": 0,
+                "effects": "Sanguinamento (50%)",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "0ba1a530a53c4cfc",
+            "name": "[Capacità] Carica",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "<p>Se un avversario si allontana di oltre 10m, un demonio può caricarlo con le corna. Subisce -4 Precisione, ma infligge 10d6 e scaraventa indietro la vittima di 8m.</p>",
+                "isStored": false
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "d1",
+            "name": "[Capacità] Ipnosi",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/SPECIAL/gift_mente.webp",
+            "system": {
+                "description": "<p>Un demonio può ipnotizzare i propri avversari. Chi fallisce la resistenza subisce -4 agli attacchi e alle difese per 5 round.</p>",
+                "isStored": false
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "d2",
+            "name": "[Capacità] Rigenerazione",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "<p>Un demonio rigenera 5 PS per round.</p>",
+                "isStored": false
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "0cbd5f329f32cd4d",
+            "name": "Trofeo: Demonio",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/trofeo_demonio.webp",
+            "system": {
+                "description": "<p>Il personaggio ottiene +2 alle prove di Lanciare Incantesimi e Resistere alla Magia.</p>",
+                "weight": 0,
+                "cost": 0,
+                "quantity": 1,
+                "sourcebook": "TC p.126"
+            },
+            "effects": [],
+            "_stats": {
+                "coreVersion": 14,
+                "systemId": "TheWitcherItaNewSystem"
+            }
+        }
+    ],
+    "effects": [],
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

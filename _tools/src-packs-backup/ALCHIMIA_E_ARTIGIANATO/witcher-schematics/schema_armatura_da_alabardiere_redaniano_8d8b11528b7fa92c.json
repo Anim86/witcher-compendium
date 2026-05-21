@@ -1,0 +1,31 @@
+{
+    "_id": "8d8b11528b7fa92c",
+    "name": "Schema: Armatura da Alabardiere Redaniano",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_armatura_da_alabardiere_redaniano.webp",
+    "system": {
+        "description": "<p>Schema per la fabbricazione di: Armatura da Alabardiere Redaniano.Componenti richiesti: Cuoio (x2), Acciaio (x2), Acciaio Tretogor (x2), Filo (x5)Difficoltà Manifattura: CD 17Tempo: 9 ore</p>",
+        "weight": 0,
+        "cost": 0,
+        "components": [
+            "Cuoio (x2)",
+            "Acciaio (x2)",
+            "Acciaio Tretogor (x2)",
+            "Filo (x5)"
+        ],
+        "difficulty": 17,
+        "time": "9 ore",
+        "sourcebook": "MB 136"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

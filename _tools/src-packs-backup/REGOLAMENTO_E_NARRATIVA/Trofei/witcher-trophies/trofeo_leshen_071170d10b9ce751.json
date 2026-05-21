@@ -1,0 +1,24 @@
+{
+    "_id": "071170d10b9ce751",
+    "name": "Trofeo: Leshen",
+    "type": "valuable",
+    "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/trofeo_leshen.webp",
+    "system": {
+        "description": "<p>Il personaggio può conversare con animali e bestie, che lo capiscono e gli ubbidiscono, ma non compiono azioni chiaramente autolesionistiche (come buttarsi da una scogliera).</p>",
+        "weight": 0,
+        "cost": 0,
+        "quantity": 1,
+        "sourcebook": "TC p.126"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
+}

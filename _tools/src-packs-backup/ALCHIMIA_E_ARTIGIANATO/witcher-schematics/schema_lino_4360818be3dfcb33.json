@@ -1,0 +1,28 @@
+{
+    "_id": "4360818be3dfcb33",
+    "name": "Schema: Lino",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_lino.webp",
+    "system": {
+        "description": "<p>Schema per la fabbricazione di: Lino.Componenti richiesti: Filo (x2)Difficoltà Manifattura: CD 10Tempo: 15 minuti</p>",
+        "weight": 0,
+        "cost": 0,
+        "components": [
+            "Filo (x2)"
+        ],
+        "difficulty": 10,
+        "time": "15 minuti",
+        "sourcebook": "MB 132"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

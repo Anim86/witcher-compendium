@@ -1,0 +1,28 @@
+{
+    "_id": "b593f96cc5b94a8f",
+    "name": "Schema: Cappuccio Corazzato",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_cappuccio_corazzato.webp",
+    "system": {
+        "description": "<p>Schema per la fabbricazione di: Cappuccio Corazzato. Componenti richiesti: Cuoio (x1), Cuoio Indurito (x3), Lino a Doppia Trama (x3), Filo (x4), Cerume di Orco (x1). Difficoltà Manifattura: CD 12. Tempo: 6 ore.</p>",
+        "weight": 0,
+        "cost": 0,
+        "components": [
+            "Cappuccio Corazzato 12 6 ore Cuoio (x1), Cuoio Indurito (x3), Lino a Doppia Trama (x3), Filo (x4), Cerume di Orco (x1) 260 524"
+        ],
+        "difficulty": 12,
+        "time": "6 ore",
+        "sourcebook": "MB 81"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

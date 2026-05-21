@@ -200,10 +200,10 @@
             "_id": "b03fe5cf7a2d489e",
             "name": "Arco Lungo",
             "type": "weapon",
-            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/arco_lungo.webp",
             "system": {
                 "description": "Gittata 200m",
-                "damage": "N/A",
+                "damage": "4d6",
                 "accuracy": 0,
                 "effects": "Gittata 200m",
                 "isStored": false,
@@ -222,7 +222,7 @@
             "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
             "system": {
                 "description": "Gittata 20m",
-                "damage": "N/A",
+                "damage": "1d6",
                 "accuracy": 0,
                 "effects": "Gittata 20m",
                 "isStored": false,
@@ -238,10 +238,10 @@
             "_id": "299fba379ce14d8a",
             "name": "Falchion da Cacciatore",
             "type": "weapon",
-            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/falchion_da_cacciatore.webp",
             "system": {
                 "description": "N/A",
-                "damage": "N/A",
+                "damage": "3d6",
                 "accuracy": 0,
                 "effects": "N/A",
                 "isStored": false,
@@ -257,10 +257,10 @@
             "_id": "5241a15f5c824170",
             "name": "Pugnale",
             "type": "weapon",
-            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/pugnale.webp",
             "system": {
                 "description": "N/A",
-                "damage": "N/A",
+                "damage": "1d6+2",
                 "accuracy": 0,
                 "effects": "N/A",
                 "isStored": false,
@@ -304,8 +304,8 @@
         {
             "_id": "10b706e0359e4a7f",
             "name": "Munizioni Normali (x30)",
-            "type": "valuable",
-            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/munizioni_normali.webp",
             "system": {
                 "description": "Quantità: 30",
                 "isStored": false,
@@ -334,8 +334,8 @@
         {
             "_id": "564b5b7500444584",
             "name": "Brache Imbottite (x1)",
-            "type": "valuable",
-            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "type": "armor",
+            "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-armor/brache_imbottite.webp",
             "system": {
                 "description": "Quantità: 1",
                 "isStored": false,

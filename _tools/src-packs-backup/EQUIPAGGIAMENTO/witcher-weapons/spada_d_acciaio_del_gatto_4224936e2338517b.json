@@ -1,0 +1,50 @@
+{
+    "_id": "4224936e2338517b",
+    "name": "Spada d'Acciaio del Gatto",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/spada_d_acciaio_del_gatto.webp",
+    "system": {
+        "description": "<p>Spada d'acciaio della Scuola del Gatto, leggera e agile, progettata per colpi rapidi e precisi.</p>",
+        "weight": 2.5,
+        "cost": 0,
+        "sourcebook": "SW",
+        "damage": "4d6+2",
+        "accuracy": 2,
+        "reliability": 15,
+        "hands": "1",
+        "type": {
+            "text": "",
+            "slashing": true,
+            "piercing": true,
+            "bludgeoning": false,
+            "elemental": false
+        },
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "isMeteorite": true,
+            "isNonLethal": false,
+            "effects": [
+                {
+                    "id": "b6620404dd7240a3",
+                    "name": "bilanciata",
+                    "statusEffect": null,
+                    "percentage": 100,
+                    "varEffect": false
+                }
+            ]
+        },
+        "enhancementSlots": 2,
+        "category": "sword",
+        "range": "",
+        "reliabilityMax": 15
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

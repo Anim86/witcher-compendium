@@ -1,0 +1,196 @@
+{
+    "name": "Ciclope",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/ciclope.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 4,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "ref": {
+                "value": 7,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "dex": {
+                "value": 6,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "body": {
+                "value": 15,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "spd": {
+                "value": 6,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "emp": {
+                "value": 4,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "cra": {
+                "value": 5,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "will": {
+                "value": 8,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 10,
+                "max": 0
+            }
+        },
+        "skills": {
+            "int": {
+                "awareness": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "wilderness": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "ref": {
+                "brawling": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "dex": {
+                "athletics": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "body": {
+                "physique": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "endurance": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "emp": {},
+            "cra": {},
+            "will": {
+                "courage": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "intimidation": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "resistcoerc": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "resistmagic": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            }
+        },
+        "details": {
+            "biography": "<p>Per me i ciclopi sono proprio strani. Sembrano umani, indossano abiti, alcuni portano armi, ma la gente li considera mostri. Eh, penso sia perché urlano e cercano di schiacciare tutti quelli che gli passano accanto. Non sono troppo svegli: se ne stanno soli in un posto e cercano di schiacciare tutto quello che passa di lì. – Rodolf Kazmer</p>",
+            "threat": "Difficile Semplice",
+            "reward": 1200,
+            "monsterType": "Ogroid",
+            "difficulty": "MEDIUM",
+            "height": "6m",
+            "weight": "3000kg",
+            "environment": "Montagne e pianure",
+            "organization": "Solitario o coppia",
+            "vulnerability": "Unguento Anti-Orchi",
+            "intelligence": "Senziente",
+            "bounty": 1200
+        },
+        "derivedStats": {
+            "rec": {
+                "value": 11,
+                "max": 11,
+                "unmodifiedMax": 0
+            },
+            "stun": {
+                "value": 18,
+                "max": 18
+            },
+            "woundTreshold": {
+                "value": 0,
+                "max": 0
+            },
+            "hp": {
+                "value": 110,
+                "max": 110,
+                "unmodifiedMax": 0
+            },
+            "sta": {
+                "value": 110,
+                "max": 110,
+                "unmodifiedMax": 0
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "description": "<p>Per me i ciclopi sono proprio strani. Sembrano umani, indossano abiti, alcuni portano armi, ma la gente li considera mostri. Eh, penso sia perché urlano e cercano di schiacciare tutti quelli che gli passano accanto. Non sono troppo svegli: se ne stanno soli in un posto e cercano di schiacciare tutto quello che passa di lì. – Rodolf Kazmer</p>",
+        "sourcebook": "DW 98",
+        "monsterType": "Ogroid",
+        "difficulty": "medium",
+        "bounty": 1200,
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "organization": "",
+        "intelligence": "",
+        "vulnerability": ""
+    },
+    "items": [
+        {
+            "_id": "0bde0052adcdbbbd",
+            "name": "Trofeo: Ciclope",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/trofeo_ciclope.webp",
+            "system": {
+                "description": "<p>Quando viene Stordito da un incantesimo, il personaggio può attaccare la creatura a lui più vicina per resistere. Ogni altro effetto della magia si applica normalmente.</p>",
+                "weight": 0,
+                "cost": 0,
+                "quantity": 1,
+                "sourcebook": "TC p.126"
+            },
+            "effects": [],
+            "_stats": {
+                "coreVersion": 14,
+                "systemId": "TheWitcherItaNewSystem"
+            }
+        }
+    ],
+    "_id": "a2894b75360efc1d",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

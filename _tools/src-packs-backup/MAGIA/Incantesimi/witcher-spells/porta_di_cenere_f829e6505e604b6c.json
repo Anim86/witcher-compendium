@@ -1,0 +1,64 @@
+{
+    "_id": "f829e6505e604b6c",
+    "name": "Porta di Cenere",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA/Incantesimi/witcher-spells/porta_di_cenere.webp",
+    "system": {
+        "description": "<p>Porta di Cenere incanala la magia del fuoco in una struttura infiammabile, consumandola in modo si- lenzioso e sicuro dall'interno. Una volta lanciato l'incan- tesimo, un riparo, del volume massimo di 2 metri cubi e che il mago sta toccando, subisce 4d6 danni da ablazio- ne. Questo effetto può essere mantenuto, concentrandosi per ulteriori Round e pagando il costo di Attivazione, così da causare altri 4d6 danni ablativi per Round. Quando il riparo non ha più PR viene ridotto in cenere.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "TC 83",
+        "class": "Mage",
+        "level": "master",
+        "source": "mixedElements",
+        "stamina": 0,
+        "staminaIsVar": false,
+        "effect": "Porta di Cenere incanala la magia del fuoco in una struttura infiammabile, consumandola in modo si- lenzioso e sicuro dallâ€™interno. Una volta lanciato lâ€™incan- tesimo, un riparo, del volume massimo di 2 metri cubi e che il mago sta toccando, subisce 4d6 danni da ablazio- ne. Questo effetto può essere mantenuto, concentrandosi per ulteriori Round e pagando il costo di Attivazione, così da causare altri 4d6 danni ablativi per Round. Quando il riparo non ha più PR viene ridotto in cenere.",
+        "range": "2m",
+        "duration": "Attiva (3 RES)",
+        "defence": "Nessuna",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast",
+        "causeDamages": true,
+        "damage": "4d6",
+        "damageType": "elemental"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
+}

@@ -80,7 +80,7 @@
             <h3 class="section-header"><i class="fas fa-star"></i> {{localize "WITCHER.Monster.SpecialAbilities"}}</h3>
             <div class="abilities-grid">
                 {{#each abilities as |ability id|}}
-                <div class="ability-item item" data-item-id="{{ability._id}}">
+                <div class="ability-item item" data-item-id="{{ability.id}}">
                     <div class="ability-header">
                         <img src="{{ability.img}}" class="ability-icon" />
                         <span class="ability-name">{{ability.name}}</span>

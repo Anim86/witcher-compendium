@@ -7,10 +7,16 @@ export let weaponAttackMixin = {
     async weaponAttack(weapon, options = {}) {
         let displayRollDetails = game.settings.get('TheWitcherItaNewSystem', 'displayRollsDetails');
 
+        const baseDamage =
+            typeof weapon.system.damage === 'string' && weapon.system.damage.trim().toUpperCase() === 'N/A'
+                ? ''
+                : String(weapon.system.damage ?? '').trim();
         let displayDmgFormula = `${weapon.system.damage}`;
         let damageFormula = !displayRollDetails
-            ? `${weapon.system.damage}`
-            : `${weapon.system.damage}[${game.i18n.localize('WITCHER.Diagram.Weapon')}]`;
+            ? baseDamage
+            : baseDamage
+                ? `${baseDamage}[${game.i18n.localize('WITCHER.Diagram.Weapon')}]`
+                : '';
 
         if (weapon.system.applyMeleeBonus && (this.type == 'character' || this.system.addMeleeBonus)) {
             if (this.system.attackStats.meleeBonus < 0) {
@@ -301,6 +307,7 @@ export let weaponAttackMixin = {
                     break;
             }
 
+            if (damageFormula === '') damageFormula = '0';
             if (customDmg != '0') {
                 damageFormula += !displayRollDetails
                     ? `+${customDmg}`

@@ -1,0 +1,235 @@
+{
+    "_id": "f3970208704c5a41",
+    "name": "Oberhasil (Silvano)",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/oberhasil_silvano.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "ref": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "dex": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "body": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "spd": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "emp": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "cra": {
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
+            },
+            "will": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "luck": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "armor": {
+                "value": 0,
+                "max": 0
+            }
+        },
+        "skills": {
+            "int": {
+                "awareness": {
+                    "value": 12,
+                    "isVisible": true
+                },
+                "wilderness": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "commonsp": {
+                    "value": 12,
+                    "isVisible": true
+                }
+            },
+            "ref": {
+                "dodge": {
+                    "value": 13,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 12,
+                    "isVisible": true
+                }
+            },
+            "dex": {
+                "athletics": {
+                    "value": 8,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "body": {
+                "endurance": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "physique": {
+                    "value": 14,
+                    "isVisible": true
+                }
+            },
+            "emp": {
+                "persuasion": {
+                    "value": 15,
+                    "isVisible": true
+                },
+                "deceit": {
+                    "value": 14,
+                    "isVisible": true
+                }
+            },
+            "cra": {},
+            "will": {
+                "courage": {
+                    "value": 10,
+                    "isVisible": true
+                },
+                "intimidation": {
+                    "value": 11,
+                    "isVisible": true
+                },
+                "resistmagic": {
+                    "value": 11,
+                    "isVisible": true
+                },
+                "resistcoerc": {
+                    "value": 14,
+                    "isVisible": true
+                }
+            }
+        },
+        "details": {
+            "biography": "<p>Oberhasil è il leader della troupe di artisti dell'Alderwood. Sebbene appaia come un buffo silvano mangione e bevitore, possiede un'antica saggezza e un profondo legame con la foresta. Ha una particolare predilezione per la vodka di Mahakam.</p>",
+            "threat": "Medio",
+            "reward": 400,
+            "monsterType": "Relict",
+            "difficulty": "MEDIUM",
+            "height": "",
+            "weight": "",
+            "environment": "",
+            "organization": "",
+            "vulnerability": "",
+            "intelligence": ""
+        },
+        "derivedStats": {
+            "hp": {
+                "value": 50,
+                "max": 50,
+                "unmodifiedMax": 50
+            },
+            "sta": {
+                "value": 50,
+                "max": 50,
+                "unmodifiedMax": 50
+            },
+            "rec": {
+                "value": 2,
+                "max": 2,
+                "unmodifiedMax": 2
+            },
+            "stun": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "vigor": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "resolve": {
+                "value": 50,
+                "max": 50,
+                "unmodifiedMax": 50
+            },
+            "woundTreshold": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "run": {
+                "value": 15,
+                "max": 15,
+                "unmodifiedMax": 15
+            },
+            "leap": {
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
+            },
+            "enc": {
+                "value": 20,
+                "max": 20,
+                "unmodifiedMax": 20
+            },
+            "focus": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            }
+        },
+        "description": "<p>Oberhasil è il leader della troupe di artisti dell'Alderwood. Sebbene appaia come un buffo silvano mangione e bevitore, possiede un'antica saggezza e un profondo legame con la foresta. Ha una particolare predilezione per la vodka di Mahakam.</p>",
+        "sourcebook": "LR 34",
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "organization": "",
+        "intelligence": "",
+        "vulnerability": "",
+        "monsterType": "Relict",
+        "difficulty": "medium"
+    },
+    "items": [
+        {
+            "name": "Pugni",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/trait_generico.webp",
+            "system": {
+                "damage": "4d6+4",
+                "accuracy": 0,
+                "effects": "Atterramento (30%)",
+                "isStored": false,
+                "reliable": 0,
+                "rateOfFire": 1
+            }
+        }
+    ],
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

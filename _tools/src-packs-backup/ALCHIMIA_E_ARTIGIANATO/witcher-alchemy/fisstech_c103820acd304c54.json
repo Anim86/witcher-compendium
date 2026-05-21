@@ -1,0 +1,37 @@
+{
+  "_id": "c103820acd304c54",
+  "name": "Fisstech",
+  "type": "alchemical",
+  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-alchemy/fisstech.webp",
+  "system": {
+    "description": "<p>Gli elfi chiamano questa roba “la Morte Bianca”. La droga più diffusa al mondo e, lascia che te lo dica, niente con cui ti conviene avere a che fare. Un drogato di fisstech fa spavento: non ha un briciolo di paura né di dignità quando ha bisogno di una dose.</p>",
+    "quantity": "1",
+    "weight": 0.1,
+    "cost": 25,
+    "sourcebook": "MB 89",
+    "type": "alchemical",
+    "rarity": "",
+    "location": "",
+    "quantityObtainable": "",
+    "forage": "",
+    "substanceType": "",
+    "isConsumable": true,
+    "consumeProperties": {
+      "doesHeal": false,
+      "heal": "",
+      "addsTempHp": false,
+      "temporaryHp": {
+        "value": "",
+        "duration": 0
+      },
+      "effects": [],
+      "removesEffects": []
+    }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
+}

@@ -9,11 +9,11 @@
         </div>
         <div class="inventory-grid weapons">
             {{#each weapons as |weapon id|}}
-            <div class="inventory-card weapon item" data-item-id="{{weapon._id}}">
+            <div class="inventory-card weapon item" data-item-id="{{weapon.id}}">
                 <div class="card-main">
-                    <img src="{{weapon.img}}" class="item-img dragable" draggable="true" data-id="{{weapon._id}}" />
+                    <img src="{{weapon.img}}" class="item-img dragable" draggable="true" data-id="{{weapon.id}}" />
                     <div class="item-info">
-                        <span class="item-name item-roll">{{weapon.name}}</span>
+                        <a class="item-name item-roll">{{weapon.name}}</a>
                         <div class="item-stats">
                             <span class="stat" title="{{localize 'WITCHER.Weapon.Short.Damage'}}">
                                 <i class="fas fa-tint"></i> {{weapon.system.damage}}
@@ -46,11 +46,11 @@
         </div>
         <div class="inventory-grid armors">
             {{#each armors as |armor id|}}
-            <div class="inventory-card armor item" data-item-id="{{armor._id}}">
+            <div class="inventory-card armor item" data-item-id="{{armor.id}}">
                 <div class="card-main">
-                    <img src="{{armor.img}}" class="item-img dragable" draggable="true" data-id="{{armor._id}}" />
+                    <img src="{{armor.img}}" class="item-img dragable" draggable="true" data-id="{{armor.id}}" />
                     <div class="item-info">
-                        <span class="item-name">{{armor.name}}</span>
+                        <a class="item-name">{{armor.name}}</a>
                         <div class="item-stats">
                             <span class="stat" title="{{localize 'WITCHER.table.StoppingPower'}}">
                                 <i class="fas fa-bahai"></i> {{armor.system.headStopping}}/{{armor.system.torsoStopping}}/{{armor.system.leftArmStopping}}
@@ -80,11 +80,11 @@
         </div>
         <div class="inventory-grid loots">
             {{#each loots as |valuable id|}}
-            <div class="inventory-card loot item" data-item-id="{{valuable._id}}">
+            <div class="inventory-card loot item" data-item-id="{{valuable.id}}">
                 <div class="card-main">
-                    <img src="{{valuable.img}}" class="item-img dragable" draggable="true" data-id="{{valuable._id}}" />
+                    <img src="{{valuable.img}}" class="item-img dragable" draggable="true" data-id="{{valuable.id}}" />
                     <div class="item-info">
-                        <span class="item-name">{{valuable.name}}</span>
+                        <a class="item-name">{{valuable.name}}</a>
                         <span class="item-quantity">Qty: {{#if valuable.system.quantity}}{{valuable.system.quantity}}{{else}}1{{/if}}</span>
                     </div>
                     <div class="card-actions">

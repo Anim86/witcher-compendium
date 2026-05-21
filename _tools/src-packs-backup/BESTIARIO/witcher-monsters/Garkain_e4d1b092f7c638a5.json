@@ -1,0 +1,221 @@
+{
+    "name": "Garkain",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/garkain.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 1,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "ref": {
+                "value": 11,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "dex": {
+                "value": 10,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "body": {
+                "value": 8,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "spd": {
+                "value": 8,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "emp": {
+                "value": 1,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "cra": {
+                "value": 1,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "will": {
+                "value": 7,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 0,
+                "max": 0
+            }
+        },
+        "skills": {
+            "int": {
+                "awareness": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "wilderness": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "ref": {
+                "brawling": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "dex": {
+                "brawling": {
+                    "value": 8,
+                    "isVisible": true
+                },
+                "athletics": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "body": {
+                "physique": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "endurance": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "emp": {},
+            "cra": {},
+            "will": {
+                "courage": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "intimidation": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "resistmagic": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            }
+        },
+        "details": {
+            "biography": "<p>Dicono che se vedi un garkain è già troppo tardi! Non ho mai avuto questo piacere, ma ho visto alcuni disegni. I garkain si nascondono tra i gargoyle e balzano sui passanti per farli a pezzi con gli artigli. Alcuni sostengono che molti gargoyle della capitale del Nazair erano garkain, eh. – Rodolf Kazmer</p>",
+            "threat": "Medio Complesso",
+            "reward": 700,
+            "monsterType": "Vampire",
+            "difficulty": "MEDIUM",
+            "height": "2,25m",
+            "weight": "136kg",
+            "environment": "Vicino agli insediamenti",
+            "organization": "Solitario o coppia",
+            "vulnerability": "Unguento Anti-Vampiri, Pozione Sangue Nero, Bombe al Dimeritium",
+            "intelligence": "Ferale",
+            "bounty": 700
+        },
+        "derivedStats": {
+            "rec": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 0
+            },
+            "stun": {
+                "value": 24,
+                "max": 24
+            },
+            "woundTreshold": {
+                "value": 0,
+                "max": 0
+            },
+            "hp": {
+                "value": 70,
+                "max": 70,
+                "unmodifiedMax": 0
+            },
+            "sta": {
+                "value": 35,
+                "max": 35,
+                "unmodifiedMax": 0
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "description": "<p>Dicono che se vedi un garkain è già troppo tardi! Non ho mai avuto questo piacere, ma ho visto alcuni disegni. I garkain si nascondono tra i gargoyle e balzano sui passanti per farli a pezzi con gli artigli. Alcuni sostengono che molti gargoyle della capitale del Nazair erano garkain, eh. – Rodolf Kazmer</p>",
+        "sourcebook": "DW 118",
+        "monsterType": "Vampire",
+        "difficulty": "medium",
+        "bounty": 700,
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "organization": "",
+        "intelligence": "",
+        "vulnerability": ""
+    },
+    "items": [
+        {
+            "_id": "2319f449fc3d58",
+            "name": "Morso",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Sanguinamento (75%)",
+                "damage": "5d6",
+                "accuracy": 0,
+                "effects": "Sanguinamento (75%)",
+                "rateOfFire": 1
+            }
+        },
+        {
+            "_id": "34784cb6f8fce8",
+            "name": "Artigli",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Sanguinamento (25%)",
+                "damage": "4d6+4",
+                "accuracy": 0,
+                "effects": "Sanguinamento (25%)",
+                "rateOfFire": 2
+            }
+        },
+        {
+            "_id": "504e89e9f5ba473c",
+            "name": "Trofeo: Garkain",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/trofeo_garkain.webp",
+            "system": {
+                "description": "<p>Le penalità ai tiri salvezza Grinta sono ridotte di 1. In caso non vi siano penalità, il personaggio ottiene +1 a Grinta.</p>",
+                "weight": 0,
+                "cost": 0,
+                "sourcebook": "TC p.126"
+            },
+            "effects": [],
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        }
+    ],
+    "_id": "e4d1b092f7c638a5",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

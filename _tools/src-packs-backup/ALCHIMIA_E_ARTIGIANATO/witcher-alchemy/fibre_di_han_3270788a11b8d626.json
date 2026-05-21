@@ -1,0 +1,23 @@
+{
+    "_id": "3270788a11b8d626",
+    "name": "Fibre di Han",
+    "type": "component",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-alchemy/fibre_di_han.webp",
+    "system": {
+        "description": "<p>Fibre flessibili utilizzate in molte misture segrete dei witcher.</p><p><b>Rarità:</b> S | <b>Ubicazione:</b> Campi</p>",
+        "quantity": "1",
+        "weight": 0.1,
+        "cost": 17,
+        "sourcebook": "MB 146",
+        "type": "alchemical",
+        "rarity": "S",
+        "location": "Campi",
+        "substanceType": "rebis"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

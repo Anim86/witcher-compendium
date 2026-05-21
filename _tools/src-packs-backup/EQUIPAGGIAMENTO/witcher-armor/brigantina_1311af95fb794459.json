@@ -1,0 +1,55 @@
+{
+    "_id": "1311af95fb794459",
+    "name": "Brigantina",
+    "type": "armor",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-armor/brigantina.webp",
+    "system": {
+        "description": "<p>I mercenari di solito indossano brigantine finché non rie- scono a mettere le mani su qualcosa di meglio. È una tunica di cuoio, con delle toppe di cuoio più spesso e robusto cucite o inchiodate sopra. Portavo una brigantina sui campi di Brenna e di Sodden. Possono essere rigide e un po' scomode.</p>",
+        "cost": 300,
+        "reliability": {
+            "value": 0,
+            "max": 0
+        },
+        "sourcebook": "MB 40",
+        "type": "Medium",
+        "location": "Torso",
+        "encumb": 1,
+        "enhancements": 0,
+        "headStopping": 0,
+        "headMaxStopping": 0,
+        "torsoStopping": 12,
+        "torsoMaxStopping": 12,
+        "leftArmStopping": 12,
+        "leftArmMaxStopping": 12,
+        "rightArmStopping": 12,
+        "rightArmMaxStopping": 12,
+        "leftLegStopping": 0,
+        "leftLegMaxStopping": 0,
+        "rightLegStopping": 0,
+        "rightLegMaxStopping": 0,
+        "bludgeoning": false,
+        "slashing": false,
+        "piercing": false,
+        "elemental": false,
+        "fire": false,
+        "poison": false,
+        "bleeding": false,
+        "weight": 7,
+        "rarity": "Comune",
+        "stoppingPower": 12,
+        "protection": {},
+        "encumbranceMod": -1,
+        "unmodifiedMax": {}
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

@@ -153,10 +153,10 @@
             "_id": "378b381707c74f9f",
             "name": "Pugnale",
             "type": "weapon",
-            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/pugnale.webp",
             "system": {
                 "description": "N/A",
-                "damage": "N/A",
+                "damage": "1d6+2",
                 "accuracy": 0,
                 "effects": "N/A",
                 "isStored": false,
@@ -187,7 +187,7 @@
             "_id": "612ff30fc39a4d30",
             "name": "Sacca da Viaggio (x1)",
             "type": "valuable",
-            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-equipment/sacca_da_viaggio.webp",
             "system": {
                 "description": "Quantità: 1",
                 "isStored": false,

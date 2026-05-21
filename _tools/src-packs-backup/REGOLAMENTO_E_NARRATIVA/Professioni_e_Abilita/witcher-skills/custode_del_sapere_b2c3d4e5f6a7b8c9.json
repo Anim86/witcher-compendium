@@ -1,0 +1,30 @@
+{
+    "_id": "b2c3d4e5f6a7b8c9",
+    "name": "Custode del Sapere",
+    "type": "skill",
+    "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills/custode_del_sapere.webp",
+    "system": {
+        "attribute": "int",
+        "description": "<p>L'abilità di memorizzare innumerevoli informazioni. Un Druido può effettuare una prova di Custode del Sapere al posto di Bestiario, Istruzione, Sensibilità o Sopravvivenza.</p>",
+        "sourcebook": "TC 70",
+        "value": 0,
+        "label": "",
+        "isOpened": false,
+        "modifiers": [],
+        "activeEffectModifiers": 0,
+        "isProfession": true,
+        "isPickup": false,
+        "isLearned": false
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

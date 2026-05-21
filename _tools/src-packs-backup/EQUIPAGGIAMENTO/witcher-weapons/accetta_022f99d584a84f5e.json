@@ -1,0 +1,50 @@
+{
+    "_id": "022f99d584a84f5e",
+    "name": "Accetta",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/accetta.webp",
+    "system": {
+        "description": "<p>Col tempo ho preso ad apprezzare l'accetta. Eh, le usavo per tagliare la legna, ma sono dannatamente robuste e una lama pensata per spaccar tronchi fa lo stesso anche con le ossa.</p>",
+        "cost": 205,
+        "reliability": 10,
+        "accuracy": 0,
+        "effects": "N/A",
+        "sourcebook": "MB 75",
+        "type": {
+            "text": "",
+            "slashing": true,
+            "piercing": false,
+            "bludgeoning": false,
+            "elemental": false
+        },
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "isMeteorite": false,
+            "isNonLethal": false,
+            "effects": []
+        },
+        "weight": 1,
+        "rarity": "Diffusa",
+        "damage": "2d6+1",
+        "hands": 1,
+        "unmodifiedMax": {},
+        "conceal": "P",
+        "category": "axe",
+        "range": "N/A",
+        "reliabilityMax": 10
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

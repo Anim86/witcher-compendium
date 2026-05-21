@@ -48,11 +48,11 @@
             </h3>
             <div class="spells-grid">
                 {{#each noviceSpells as |spell id|}}
-                <div class="spell-card item" data-item-id="{{spell._id}}">
+                <div class="spell-card item" data-item-id="{{spell.id}}">
                     <div class="card-main">
-                        <img src="{{spell.img}}" class="item-img dragable" draggable="true" data-id="{{spell._id}}" />
+                        <img src="{{spell.img}}" class="item-img dragable" draggable="true" data-id="{{spell.id}}" />
                         <div class="item-info">
-                            <span class="item-name spell-roll">{{spell.name}}</span>
+                            <a class="item-name spell-roll">{{spell.name}}</a>
                             <span class="item-sta">Cost: {{spell.system.stamina}}</span>
                         </div>
                         <div class="card-actions">
@@ -77,11 +77,11 @@
             </h3>
             <div class="spells-grid">
                 {{#each journeymanSpells as |spell id|}}
-                <div class="spell-card item" data-item-id="{{spell._id}}">
+                <div class="spell-card item" data-item-id="{{spell.id}}">
                     <div class="card-main">
-                        <img src="{{spell.img}}" class="item-img dragable" draggable="true" data-id="{{spell._id}}" />
+                        <img src="{{spell.img}}" class="item-img dragable" draggable="true" data-id="{{spell.id}}" />
                         <div class="item-info">
-                            <span class="item-name spell-roll">{{spell.name}}</span>
+                            <a class="item-name spell-roll">{{spell.name}}</a>
                             <span class="item-sta">Cost: {{spell.system.stamina}}</span>
                         </div>
                         <div class="card-actions">
@@ -106,11 +106,11 @@
             </h3>
             <div class="spells-grid">
                 {{#each masterSpells as |spell id|}}
-                <div class="spell-card item" data-item-id="{{spell._id}}">
+                <div class="spell-card item" data-item-id="{{spell.id}}">
                     <div class="card-main">
-                        <img src="{{spell.img}}" class="item-img dragable" draggable="true" data-id="{{spell._id}}" />
+                        <img src="{{spell.img}}" class="item-img dragable" draggable="true" data-id="{{spell.id}}" />
                         <div class="item-info">
-                            <span class="item-name spell-roll">{{spell.name}}</span>
+                            <a class="item-name spell-roll">{{spell.name}}</a>
                             <span class="item-sta">Cost: {{spell.system.stamina}}</span>
                         </div>
                         <div class="card-actions">
@@ -135,11 +135,11 @@
             </h3>
             <div class="spells-grid">
                 {{#each rituals as |ritual id|}}
-                <div class="spell-card item" data-item-id="{{ritual._id}}">
+                <div class="spell-card item" data-item-id="{{ritual.id}}">
                     <div class="card-main">
-                        <img src="{{ritual.img}}" class="item-img dragable" draggable="true" data-id="{{ritual._id}}" />
+                        <img src="{{ritual.img}}" class="item-img dragable" draggable="true" data-id="{{ritual.id}}" />
                         <div class="item-info">
-                            <span class="item-name spell-roll">{{ritual.name}}</span>
+                            <a class="item-name spell-roll">{{ritual.name}}</a>
                             <span class="item-sta">Cost: {{ritual.system.stamina}}</span>
                         </div>
                         <div class="card-actions">
@@ -164,11 +164,11 @@
             </h3>
             <div class="spells-grid">
                 {{#each hexes as |hex id|}}
-                <div class="spell-card item" data-item-id="{{hex._id}}">
+                <div class="spell-card item" data-item-id="{{hex.id}}">
                     <div class="card-main">
-                        <img src="{{hex.img}}" class="item-img dragable" draggable="true" data-id="{{hex._id}}" />
+                        <img src="{{hex.img}}" class="item-img dragable" draggable="true" data-id="{{hex.id}}" />
                         <div class="item-info">
-                            <span class="item-name spell-roll">{{hex.name}}</span>
+                            <a class="item-name spell-roll">{{hex.name}}</a>
                             <span class="item-sta">Cost: {{hex.system.stamina}}</span>
                         </div>
                         <div class="card-actions">

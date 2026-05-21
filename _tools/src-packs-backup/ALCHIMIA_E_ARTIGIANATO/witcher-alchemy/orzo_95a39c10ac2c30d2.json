@@ -1,0 +1,23 @@
+{
+  "_id": "95a39c10ac2c30d2",
+  "name": "Orzo",
+  "type": "component",
+  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-alchemy/orzo.webp",
+  "system": {
+    "description": "<p>Cereale comune indispensabile come base Vetriolo per molti composti.</p><p><b>Rarità:</b> C | <b>Ubicazione:</b> Campi</p>",
+    "quantity": "1",
+    "weight": 0.1,
+    "cost": 9,
+    "sourcebook": "MB 147",
+    "type": "alchemical",
+    "rarity": "C",
+    "location": "Campi",
+    "substanceType": "vitriol"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
+}

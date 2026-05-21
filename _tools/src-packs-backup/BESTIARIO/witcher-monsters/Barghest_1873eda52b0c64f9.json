@@ -1,0 +1,210 @@
+{
+    "name": "Barghest",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/barghest.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "ref": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "dex": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "body": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "spd": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "emp": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "cra": {
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
+            },
+            "will": {
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 0,
+                "max": 0
+            }
+        },
+        "skills": {
+            "int": {
+                "awareness": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "wilderness": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "ref": {
+                "dodge": {
+                    "value": 6,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "dex": {
+                "athletics": {
+                    "value": 5,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 6,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "body": {
+                "physique": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "endurance": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "emp": {},
+            "cra": {},
+            "will": {
+                "resistmagic": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            }
+        },
+        "details": {
+            "biography": "<p>Alcuni dicono che i barghest sono i segugi della Caccia Selvaggia, cani normali trasformati da una male- dizione. I preti ti vorranno far credere che sono un castigo divino, inviato per fare a pezzi i peccatori. Non so quale sia la verità. Eh, tutto quel che so è che girano in branchi e faresti bene ad avere un'armatura robusta, perché se il loro morso non basta a stenderti ti daranno fuoco per bruciarti vivo. – Rodolf Kazmer</p>",
+            "threat": "Facile Complesso",
+            "reward": 30,
+            "monsterType": "Specter",
+            "difficulty": "MEDIUM",
+            "height": "",
+            "weight": "",
+            "environment": "",
+            "organization": "",
+            "vulnerability": "",
+            "intelligence": "",
+            "bounty": 30
+        },
+        "derivedStats": {
+            "rec": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "stun": {
+                "value": 0,
+                "max": 0
+            },
+            "woundTreshold": {
+                "value": 0,
+                "max": 0
+            },
+            "hp": {
+                "value": 25,
+                "max": 25,
+                "unmodifiedMax": 25
+            },
+            "sta": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "description": "<p>Alcuni dicono che i barghest sono i segugi della Caccia Selvaggia, cani normali trasformati da una male- dizione. I preti ti vorranno far credere che sono un castigo divino, inviato per fare a pezzi i peccatori. Non so quale sia la verità. Eh, tutto quel che so è che girano in branchi e faresti bene ad avere un'armatura robusta, perché se il loro morso non basta a stenderti ti daranno fuoco per bruciarti vivo. – Rodolf Kazmer</p>",
+        "sourcebook": "DW 26",
+        "monsterType": "Specter",
+        "difficulty": "medium",
+        "bounty": 30,
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "organization": "",
+        "intelligence": "",
+        "vulnerability": "",
+        "armorHead": 0,
+        "armorUpper": 0,
+        "armorLower": 0
+    },
+    "items": [
+        {
+            "_id": "c4736fadff323",
+            "name": "Morso",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "",
+                "damage": "2d6",
+                "accuracy": 0,
+                "effects": "",
+                "rateOfFire": 1
+            }
+        },
+        {
+            "_id": "193b81d39f1828",
+            "name": "[Capacità] Carica Spettrale",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "",
+                "isStored": false
+            }
+        },
+        {
+            "_id": "a5a2d2f1d4a458",
+            "name": "[Capacità] Brando Incorporeo",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "",
+                "isStored": false
+            }
+        }
+    ],
+    "_id": "1873eda52b0c64f9",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

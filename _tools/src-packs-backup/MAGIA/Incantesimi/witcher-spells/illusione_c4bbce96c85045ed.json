@@ -1,0 +1,61 @@
+{
+    "_id": "c4bbce96c85045ed",
+    "name": "Illusione",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA/Incantesimi/witcher-spells/illusione.webp",
+    "system": {
+        "description": "<p>Illusione consente all'incantatore di creare qualsiasi illusione visiva desideri entro 20m. Chiunque fallisca la prova di Resistenza alla Magia e può vedere l'illusione, crede che sia reale. L'illusione non può tutta- via essere toccata, udita o annusata.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "MB 103",
+        "class": "Mage",
+        "level": "journeyman",
+        "source": "mixedElements",
+        "stamina": 8,
+        "staminaIsVar": false,
+        "effect": "Illusione consente all'incantatore di creare qualsiasi illusione visiva desideri entro 20m. Chiunque fallisca la prova di Resistenza alla Magia e può vedere l'illusione, crede che sia reale. L'illusione non può tutta- via essere toccata, udita o annusata.",
+        "range": "20m",
+        "duration": "Attiva (4 RES)",
+        "defence": "Resistere alla Magia",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

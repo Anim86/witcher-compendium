@@ -147,7 +147,7 @@
             "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
             "system": {
                 "description": "Veleno (75%)",
-                "damage": "N/A",
+                "damage": "4d6+2",
                 "accuracy": 0,
                 "effects": "Veleno (75%)",
                 "isStored": false,
@@ -162,8 +162,8 @@
         {
             "_id": "dcdde5ebac9148c7",
             "name": "Estratto di Veleno (x1d6/2)",
-            "type": "valuable",
-            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "type": "component",
+            "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-alchemy/estratto_di_veleno.webp",
             "system": {
                 "description": "Quantità: 1d6/2",
                 "isStored": false,

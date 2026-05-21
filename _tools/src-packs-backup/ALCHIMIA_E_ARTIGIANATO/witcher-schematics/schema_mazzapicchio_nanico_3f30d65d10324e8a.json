@@ -1,0 +1,29 @@
+{
+    "_id": "3f30d65d10324e8a",
+    "name": "Schema: Mazzapicchio Nanico",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_mazzapicchio_nanico.webp",
+    "system": {
+        "description": "<p>Uno schema dettagliato che illustra i procedimenti necessari per forgiare o fabbricare: Mazzapicchio Nanico.</p>",
+        "weight": 0,
+        "cost": 1660,
+        "components": [
+            "Mazzapicchio Nanico 25 13 ore Legname Indurito (x6), Acciaio Mahakaman (x3), Cuoio Indurito (x3), Cote (x1), Cerume di Orco (x1) 624 1248",
+            "Legname Indurito (x8), Filo (x8), Cerume di Orco (x8), Quintessenza (x2), Cuoio (x2), Piume (x4), Ossa di Bestia (x4), Acciaio Nero (x3), Grasso di Estere (x9), Acquaforte (x6)"
+        ],
+        "difficulty": 25,
+        "time": "13 ore",
+        "sourcebook": "MB 85"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

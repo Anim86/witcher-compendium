@@ -1,0 +1,21 @@
+{
+    "name": "Cervello di Botchling",
+    "type": "component",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-components/cervello_di_botchling.webp",
+    "system": {
+        "description": "<p>Materia cerebrale estratta da un Botchling. È una fonte molto concentrata, rara e costosa dell'elemento alchemico Caelum.</p>",
+        "quantity": 1,
+        "weight": 0.1,
+        "cost": 164,
+        "category": "monster",
+        "substanceType": "caelum",
+        "sourcebook": "DW 142",
+        "rarity": "Rara",
+        "location": "Reperibile sui Botchling"
+    },
+    "_id": "8a7b6c5d4e3f2019",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

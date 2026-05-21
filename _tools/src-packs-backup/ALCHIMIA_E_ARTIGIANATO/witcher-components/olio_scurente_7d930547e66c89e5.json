@@ -1,0 +1,26 @@
+{
+    "_id": "7d930547e66c89e5",
+    "name": "Olio Scurente",
+    "type": "component",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-components/olio_scurente.webp",
+    "system": {
+        "description": "<p>Trattamento per scurire metalli e legni, riducendo i riflessi.</p>",
+        "category": "trattamento",
+        "quantity": "1",
+        "weight": 0.1,
+        "cost": 24,
+        "sourcebook": "MB 131",
+        "type": "crafting-material",
+        "rarity": "S",
+        "location": "Foreste",
+        "quantityObtainable": "",
+        "forage": "",
+        "substanceType": ""
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

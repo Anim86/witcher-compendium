@@ -1,0 +1,28 @@
+{
+    "_id": "5d27e885c9bb4819",
+    "name": "Schema: Cappuccio da Arciere Verden",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_cappuccio_da_arciere_verden.webp",
+    "system": {
+        "description": "<p>Schema per la fabbricazione di: Cappuccio da Arciere Verden. Componenti richiesti: Lino (x2), Cuoio (x1), Filo (x6), Cera (x3). Difficoltà Manifattura: CD 10. Tempo: 3 ore.</p>",
+        "weight": 0,
+        "cost": 0,
+        "components": [
+            "Cappuccio da Arciere Verden 10 3 ore Lino (x2), Cuoio (x1), Filo (x6), Cera (x3) 70 150"
+        ],
+        "difficulty": 10,
+        "time": "3 ore",
+        "sourcebook": "MB 81"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

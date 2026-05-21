@@ -1,0 +1,242 @@
+{
+    "name": "Bruxa",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/bruxa.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 6,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "ref": {
+                "value": 14,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "dex": {
+                "value": 14,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "body": {
+                "value": 11,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "spd": {
+                "value": 12,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "emp": {
+                "value": 6,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "cra": {
+                "value": 5,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "will": {
+                "value": 8,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 0,
+                "max": 0
+            }
+        },
+        "skills": {
+            "int": {
+                "awareness": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "socialetq": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "wilderness": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "ref": {
+                "brawling": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "dex": {
+                "brawling": {
+                    "value": 10,
+                    "isVisible": true
+                },
+                "athletics": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "body": {
+                "physique": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "endurance": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "emp": {
+                "charisma": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "persuasion": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "seduction": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "cra": {},
+            "will": {
+                "courage": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "intimidation": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "resistcoerc": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "resistmagic": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            }
+        },
+        "details": {
+            "biography": "<p>Una volta questo tipo dal Nazair mi ha detto che le bruxa sono ninfe corrotte da magia oscura e desideri carnali. Escono di notte e fanno sesso con giovanotti attraenti, prima di succhiare loro il sangue. Non è facile ucciderne una perché sono più veloci di qualsiasi umano, hanno artigli come rasoi e voci come arieti d'assedio. – Rodolf Kazmer</p>",
+            "threat": "Difficile Arduo",
+            "reward": 2000,
+            "monsterType": "Vampire",
+            "difficulty": "MEDIUM",
+            "height": "1,75m",
+            "weight": "90kg",
+            "environment": "Vicino agli insediamenti",
+            "organization": "Solitario",
+            "vulnerability": "Unguento Anti-Vampiri, Pozione Sangue Nero, Bombe Polvere Lunare, Fuoco",
+            "intelligence": "Superiore",
+            "bounty": 2000
+        },
+        "derivedStats": {
+            "rec": {
+                "value": 9,
+                "max": 9,
+                "unmodifiedMax": 0
+            },
+            "stun": {
+                "value": 36,
+                "max": 36
+            },
+            "woundTreshold": {
+                "value": 0,
+                "max": 0
+            },
+            "hp": {
+                "value": 90,
+                "max": 90,
+                "unmodifiedMax": 0
+            },
+            "sta": {
+                "value": 45,
+                "max": 45,
+                "unmodifiedMax": 0
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "description": "<p>Una volta questo tipo dal Nazair mi ha detto che le bruxa sono ninfe corrotte da magia oscura e desideri carnali. Escono di notte e fanno sesso con giovanotti attraenti, prima di succhiare loro il sangue. Non è facile ucciderne una perché sono più veloci di qualsiasi umano, hanno artigli come rasoi e voci come arieti d'assedio. – Rodolf Kazmer</p>",
+        "sourcebook": "DW 116",
+        "monsterType": "Vampire",
+        "difficulty": "medium",
+        "bounty": 2000,
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "organization": "",
+        "intelligence": "",
+        "vulnerability": ""
+    },
+    "items": [
+        {
+            "_id": "fdefca7a627278",
+            "name": "Morso",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Sanguinamento (75%), Succhiare Sangue, Trapassare Migliorato",
+                "damage": "5d6+3",
+                "accuracy": 0,
+                "effects": "Sanguinamento (75%), Succhiare Sangue, Trapassare Migliorato",
+                "rateOfFire": 1
+            }
+        },
+        {
+            "_id": "311d1989fda76",
+            "name": "Artigli",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Sanguinamento (50%), Trapassare",
+                "damage": "4d6+4",
+                "accuracy": 0,
+                "effects": "Sanguinamento (50%), Trapassare",
+                "rateOfFire": 2
+            }
+        },
+        {
+            "_id": "30d16057087f4259",
+            "name": "Trofeo: Bruxa",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/trofeo_bruxa.webp",
+            "system": {
+                "description": "<p>Il personaggio può comunicare telepaticamente con gli individui entro 20m.</p>",
+                "weight": 0,
+                "cost": 0,
+                "sourcebook": "TC p.126"
+            },
+            "effects": [],
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        }
+    ],
+    "_id": "39f04128bca6d5e7",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

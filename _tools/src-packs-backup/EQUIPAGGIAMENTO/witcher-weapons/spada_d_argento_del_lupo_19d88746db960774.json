@@ -1,0 +1,50 @@
+{
+    "_id": "19d88746db960774",
+    "name": "Spada d'Argento del Lupo",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/spada_d_argento_del_lupo.webp",
+    "system": {
+        "description": "<p>Spada d'argento della Scuola del Lupo, letale contro ogni tipo di mostro, forgiata con argento puro.</p>",
+        "weight": 1.5,
+        "cost": 0,
+        "sourcebook": "SW",
+        "damage": "2d6+2",
+        "accuracy": 1,
+        "reliability": 10,
+        "hands": "1",
+        "type": {
+            "text": "",
+            "slashing": true,
+            "piercing": true,
+            "bludgeoning": false,
+            "elemental": false
+        },
+        "damageProperties": {
+            "armorPiercing": true,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "isMeteorite": false,
+            "isNonLethal": false,
+            "effects": [
+                {
+                    "id": "adb004d41f584a5a",
+                    "name": "bilanciata",
+                    "statusEffect": null,
+                    "percentage": 100,
+                    "varEffect": false
+                }
+            ]
+        },
+        "enhancementSlots": 3,
+        "category": "sword",
+        "range": "",
+        "reliabilityMax": 10
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

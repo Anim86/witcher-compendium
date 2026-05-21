@@ -65,6 +65,7 @@ export const registerDataModels = () => {
         obstacle: ObstacleData,
 
         skill: SkillItemData,
+        ability: CommonItemData,
         item: CommonItemData,
         criticalWound: CommonItemData
     });

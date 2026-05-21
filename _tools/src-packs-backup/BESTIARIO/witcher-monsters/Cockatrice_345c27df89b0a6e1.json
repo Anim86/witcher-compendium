@@ -1,0 +1,251 @@
+{
+    "name": "Cockatrice",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/cockatrice.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 1,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "ref": {
+                "value": 8,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "dex": {
+                "value": 9,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "body": {
+                "value": 12,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "spd": {
+                "value": 7,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "emp": {
+                "value": 1,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "cra": {
+                "value": 1,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "will": {
+                "value": 4,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 5,
+                "max": 0
+            }
+        },
+        "skills": {
+            "int": {
+                "awareness": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "wilderness": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "ref": {
+                "melee": {
+                    "value": 9,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "dex": {
+                "brawling": {
+                    "value": 8,
+                    "isVisible": true
+                },
+                "athletics": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "body": {
+                "physique": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "endurance": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "emp": {},
+            "cra": {},
+            "will": {
+                "courage": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "intimidation": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "resistmagic": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            }
+        },
+        "details": {
+            "biography": "<p>Sin dalla nascita la cockatrice odia tutto e tutti, così ferocemente da trasformazione in pietra gli animali con uno sguardo! O almeno così dicono le superstizioni. Amano volare e scendere in picchiata con becco e artigli protesi. Quando cerca di trasformarti in pietra devi alzare uno specchio e rispedirle tutto indietro! – Rodolf Kazmer</p>",
+            "threat": "Medio Semplice",
+            "reward": 800,
+            "monsterType": "Draconid",
+            "difficulty": "MEDIUM",
+            "height": "2m",
+            "weight": "800kg",
+            "environment": "Caverne e cantine",
+            "organization": "Solitario o coppia",
+            "vulnerability": "Unguento Anti-Dragonidi",
+            "intelligence": "Ferale",
+            "bounty": 800
+        },
+        "derivedStats": {
+            "rec": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 0
+            },
+            "stun": {
+                "value": 21,
+                "max": 21
+            },
+            "woundTreshold": {
+                "value": 0,
+                "max": 0
+            },
+            "hp": {
+                "value": 80,
+                "max": 80,
+                "unmodifiedMax": 0
+            },
+            "sta": {
+                "value": 40,
+                "max": 40,
+                "unmodifiedMax": 0
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "description": "<p>Sin dalla nascita la cockatrice odia tutto e tutti, così ferocemente da trasformazione in pietra gli animali con uno sguardo! O almeno così dicono le superstizioni. Amano volare e scendere in picchiata con becco e artigli protesi. Quando cerca di trasformarti in pietra devi alzare uno specchio e rispedirle tutto indietro! – Rodolf Kazmer</p>",
+        "sourcebook": "DW 106",
+        "monsterType": "Draconid",
+        "difficulty": "medium",
+        "bounty": 800,
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "organization": "",
+        "intelligence": "",
+        "vulnerability": ""
+    },
+    "items": [
+        {
+            "_id": "86b3276c19764",
+            "name": "Becco",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Avvelenato (50%)",
+                "damage": "5d6",
+                "accuracy": 0,
+                "effects": "Avvelenato (50%)",
+                "rateOfFire": 1
+            }
+        },
+        {
+            "_id": "3d6cd974fa405",
+            "name": "Artigli",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Sanguinamento (50%)",
+                "damage": "4d6+3",
+                "accuracy": 0,
+                "effects": "Sanguinamento (50%)",
+                "rateOfFire": 2
+            }
+        },
+        {
+            "_id": "5863ddc778fc78",
+            "name": "Spazzata Coda",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Portata, Sanguinamento (75%)",
+                "damage": "4d6+3",
+                "accuracy": 0,
+                "effects": "Portata, Sanguinamento (75%)",
+                "rateOfFire": 1
+            }
+        },
+        {
+            "_id": "e2525b0ebada58",
+            "name": "Colpo d'Ala",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Vacillante (25%)",
+                "damage": "2d6",
+                "accuracy": 0,
+                "effects": "Vacillante (25%)",
+                "rateOfFire": 1
+            }
+        },
+        {
+            "_id": "c6154ef5d8c34bfe",
+            "name": "Trofeo: Cockatrice",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/trofeo_cockatrice.webp",
+            "system": {
+                "description": "<p>Gli attacchi del personaggio ottengono Vacillante (10%).</p>",
+                "weight": 0,
+                "cost": 0,
+                "sourcebook": "TC p.126"
+            },
+            "effects": [],
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        }
+    ],
+    "_id": "345c27df89b0a6e1",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

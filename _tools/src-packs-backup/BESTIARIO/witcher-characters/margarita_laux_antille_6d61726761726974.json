@@ -1,0 +1,194 @@
+{
+    "_id": "6d61726761726974",
+    "name": "Margarita Laux-Antille",
+    "type": "character",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-characters/margarita_laux_antille.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "ref": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "dex": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "body": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "spd": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "emp": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "cra": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "will": {
+                "value": 9,
+                "max": 9,
+                "unmodifiedMax": 9
+            },
+            "luck": {
+                "value": null,
+                "max": null,
+                "unmodifiedMax": null
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 15
+            },
+            "bestiario": {
+                "value": 18
+            },
+            "carisma": {
+                "value": 16
+            },
+            "coraggio": {
+                "value": 15
+            },
+            "eleganza": {
+                "value": 16
+            },
+            "eludere": {
+                "value": 13
+            },
+            "etichetta": {
+                "value": 19
+            },
+            "insegnamento": {
+                "value": 20
+            },
+            "intessereFatture": {
+                "value": 19
+            },
+            "istruzione": {
+                "value": 20
+            },
+            "lanciareIncantesimi": {
+                "value": 19
+            },
+            "nascondersi": {
+                "value": 11
+            },
+            "officiareRituali": {
+                "value": 19
+            },
+            "persuasione": {
+                "value": 15
+            },
+            "resistereacoercizioni": {
+                "value": 19
+            },
+            "resistereallamagia": {
+                "value": 19
+            },
+            "seduzione": {
+                "value": 18
+            },
+            "sensibilita": {
+                "value": 15
+            },
+            "tempra": {
+                "value": 11
+            },
+            "artedelmago": {
+                "value": 10
+            },
+            "distillazione": {
+                "value": 6
+            },
+            "immutabile": {
+                "value": 5
+            },
+            "ingegneriaInversa": {
+                "value": 10
+            },
+            "intrigo": {
+                "value": 7
+            },
+            "magiaAmpliata": {
+                "value": 8
+            },
+            "malelingue": {
+                "value": 6
+            },
+            "mutare": {
+                "value": 6
+            },
+            "risorse": {
+                "value": 10
+            },
+            "sintonia": {
+                "value": 10
+            }
+        },
+        "derivedStats": {
+            "vigor": {
+                "value": 25,
+                "max": 25,
+                "unmodifiedMax": 25
+            },
+            "rec": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "resolve": {
+                "value": 35,
+                "max": 35,
+                "unmodifiedMax": 35
+            },
+            "stun": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "woundTreshold": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "hp": {
+                "value": 35,
+                "max": 35,
+                "unmodifiedMax": 35
+            },
+            "sta": {
+                "value": 35,
+                "max": 35,
+                "unmodifiedMax": 35
+            }
+        },
+        "details": {
+            "biography": "<p>Margarita Laux-Antille, Rita per gli amici, è tra i membri più influenti della sorellanza magica. Discende da una potente stirpe di maghe e ha servito come rettrice di Aretuza. – Brandon di Oxenfurt</p><p>Margarita è una maga eccezionale e una devota educatrice, che ha preso il posto di Tissaia de Vries alla guida dell'accademia di Aretuza. Nota per la sua bellezza e la sua assenza di arroganza, è un membro della Loggia delle Maghe. Nonostante il suo spirito accademico, la sua vita è stata segnata dalla tragedia della caccia alle streghe, portandola a sacrificare tutto per proteggere le sue studentesse.</p>",
+            "sourcebook": "TC 167"
+        },
+        "description": "<p>Margarita Laux-Antille, Rita per gli amici, è tra i membri più influenti della sorellanza magica. Discende da una potente stirpe di maghe e ha servito come rettrice di Aretuza. – Brandon di Oxenfurt</p><p>Margarita è una maga eccezionale e una devota educatrice, che ha preso il posto di Tissaia de Vries alla guida dell'accademia di Aretuza. Nota per la sua bellezza e la sua assenza di arroganza, è un membro della Loggia delle Maghe.</p><h3>Equipaggiamento</h3><p>Bastone con Cristallo, Farsetto Protettivo Halfling, Stiletto, Amuleto con Gemma, Occorrente per Scrivere, Abiti Eleganti, Attrezzatura Alchemica, Borsello per Rituali, Megascopio, Erbe Anestetiche, Gioiello (x2), Clessidra, Fodero da Giarrettiera, Brache a Doppia Trama, Formula Magica (x4), Specchietto, Sacca, Kit per il Trucco, Profumo, Teschio di Cristallo (Rondine).</p><h3>Incantesimi Preferiti</h3><p>Codi Bywyd, Compromettere Focus, Dissipazione, Fulmine Globulare, Idromanzia, Illusione Interattiva, Immobilizzare Lingua, Portale, Il Prurito Perenne, Rafforzare, Rituale della Magia.</p>",
+        "sourcebook": "TC 167"
+    },
+    "items": [],
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

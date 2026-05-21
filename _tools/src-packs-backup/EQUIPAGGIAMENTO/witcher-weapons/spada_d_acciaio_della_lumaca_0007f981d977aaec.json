@@ -1,0 +1,43 @@
+{
+    "_id": "0007f981d977aaec",
+    "name": "Spada d'acciaio della lumaca",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/spada_d_acciaio_della_lumaca.webp",
+    "system": {
+        "description": "<p>Grottesca e letale, la massiccia e ridicola arma principale ideata dal leggendario Broderick il Bisteccone (Contenuto goliardico).</p>",
+        "weight": 5,
+        "cost": 0,
+        "sourcebook": "MB",
+        "damage": "8d6",
+        "accuracy": -6,
+        "reliability": 20,
+        "hands": "2",
+        "type": {
+            "text": "",
+            "slashing": true,
+            "piercing": true,
+            "bludgeoning": false,
+            "elemental": false
+        },
+        "damageProperties": {
+            "armorPiercing": true,
+            "improvedArmorPiercing": false,
+            "ablating": true,
+            "crushingForce": true,
+            "isMeteorite": true,
+            "isNonLethal": false,
+            "stun": -2,
+            "effects": []
+        },
+        "enhancementSlots": 1,
+        "category": "sword",
+        "range": "",
+        "reliabilityMax": 20
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

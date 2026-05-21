@@ -1,0 +1,42 @@
+{
+    "_id": "006f87a98ae4f9f8",
+    "name": "Ascia Nera Gnomesca",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/ascia_nera_gnomesca.webp",
+    "system": {
+        "description": "<p>Arma gnomesca apparentemente leggera per il suo massiccio profilo, ma forgiata e incantata per fendere in due pesanti armature.</p>",
+        "weight": 2.5,
+        "cost": 910,
+        "sourcebook": "MB",
+        "damage": "6d6+2",
+        "accuracy": 2,
+        "reliability": 15,
+        "hands": "2",
+        "type": {
+            "text": "",
+            "slashing": true,
+            "piercing": false,
+            "bludgeoning": false,
+            "elemental": false
+        },
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "isMeteorite": false,
+            "isNonLethal": false,
+            "effects": []
+        },
+        "enhancementSlots": 2,
+        "category": "axe",
+        "range": "",
+        "reliabilityMax": 15
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

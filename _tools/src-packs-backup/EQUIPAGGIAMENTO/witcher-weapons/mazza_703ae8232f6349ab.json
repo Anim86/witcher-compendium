@@ -1,0 +1,50 @@
+{
+    "_id": "703ae8232f6349ab",
+    "name": "Mazza",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/mazza.webp",
+    "system": {
+        "description": "<p>Un'opera rozza e brutale. Testa di metallo massiccio con flange o spuntoni. Eh, il concetto è che, quando la testa della mazza va a segno, spacca le ossa. Conosco un sacco di mercenari che se ne portano una con loro solo per superare le armature.</p>",
+        "cost": 525,
+        "reliability": 15,
+        "accuracy": 0,
+        "effects": "N/A",
+        "sourcebook": "MB 19",
+        "type": {
+            "text": "",
+            "slashing": false,
+            "piercing": false,
+            "bludgeoning": true,
+            "elemental": false
+        },
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "isMeteorite": false,
+            "isNonLethal": false,
+            "effects": []
+        },
+        "weight": 2,
+        "rarity": "Comune",
+        "damage": "5d6",
+        "hands": 1,
+        "unmodifiedMax": {},
+        "conceal": "G",
+        "category": "bludgeoning",
+        "range": "N/A",
+        "reliabilityMax": 15
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

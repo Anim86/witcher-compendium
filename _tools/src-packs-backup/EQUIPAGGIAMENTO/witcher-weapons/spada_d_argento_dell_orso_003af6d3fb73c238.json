@@ -1,0 +1,44 @@
+{
+    "_id": "003af6d3fb73c238",
+    "name": "Spada d'Argento dell'Orso",
+    "type": "weapon",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/spada_d_argento_dell_orso.webp",
+    "system": {
+        "description": "<p>Usata in sinergia alla spaventosa prestanza dei witcher della Scuola dell'Orso per disintegrare le masse rocciose dei costrutti e la carne dei mostri.</p>",
+        "weight": 1.5,
+        "cost": 0,
+        "sourcebook": "MB",
+        "damage": "3d6+2",
+        "accuracy": 0,
+        "reliability": 10,
+        "hands": "1",
+        "type": {
+            "text": "",
+            "slashing": true,
+            "piercing": true,
+            "bludgeoning": false,
+            "elemental": false
+        },
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": true,
+            "crushingForce": false,
+            "isMeteorite": false,
+            "isNonLethal": false,
+            "silverTrait": true,
+            "silverDamage": "3d6",
+            "effects": []
+        },
+        "enhancementSlots": 2,
+        "category": "sword",
+        "range": "",
+        "reliabilityMax": 10
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

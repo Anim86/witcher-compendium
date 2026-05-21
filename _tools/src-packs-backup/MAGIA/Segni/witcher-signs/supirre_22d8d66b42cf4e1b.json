@@ -1,0 +1,61 @@
+{
+    "_id": "22d8d66b42cf4e1b",
+    "name": "Supirre",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA/Segni/witcher-signs/supirre.webp",
+    "system": {
+        "description": "<p>Supirre è un Segno Witcher Avanzato tratto dal Tomo del Caos. Tracciandolo su una superficie, il witcher proietta i propri sensi uditivi verso un punto preciso entro la propria gittata (2 metri per ogni punto RES utilizzato). Da quel momento può ascoltare chiaramente tutto ciò che avviene nei pressi di quel luogo, focalizzandosi su suoni specifici senza la necessità di superare prove di Accortezza per origliare le conversazioni. Il collegamento uditivo è vincolato a quel punto specifico: per spostarlo il witcher deve lanciare nuovamente il segno.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "TC 101",
+        "class": "Witcher",
+        "level": "novice",
+        "source": "",
+        "stamina": 0,
+        "staminaIsVar": true,
+        "effect": "Tracciando il Segno su una superficie, il witcher proietta i propri sensi uditivi verso un punto preciso entro la sua gittata. Può ascoltare chiaramente tutto ciò che avviene nei pressi di quel luogo, focalizzandosi su suoni specifici senza prove di Accortezza per origliare. Il collegamento è vincolato al punto: per spostarlo occorre lanciare nuovamente il segno.",
+        "range": "Variabile (2m per ogni punto RES)",
+        "duration": "Istantanea (collegamento fisso al punto)",
+        "defence": "Nessuna",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

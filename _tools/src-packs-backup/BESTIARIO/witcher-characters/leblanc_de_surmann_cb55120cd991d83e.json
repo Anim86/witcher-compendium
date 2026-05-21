@@ -1,0 +1,179 @@
+{
+    "_id": "cb55120cd991d83e",
+    "name": "Leblanc de Surmann",
+    "type": "character",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-characters/leblanc_de_surmann.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "ref": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "dex": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "body": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "spd": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "emp": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "cra": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            },
+            "will": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "luck": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 9
+            },
+            "atletica": {
+                "value": 10
+            },
+            "coraggio": {
+                "value": 12
+            },
+            "eludere": {
+                "value": 11
+            },
+            "nascondersi": {
+                "value": 0
+            },
+            "rissa": {
+                "value": 12
+            },
+            "sopravvivenza": {
+                "value": 0
+            },
+            "tempra": {
+                "value": 13
+            },
+            "armiInAsta": {
+                "value": 15
+            },
+            "cavalcare": {
+                "value": 12
+            },
+            "eleganza": {
+                "value": 12
+            },
+            "etichetta": {
+                "value": 10
+            },
+            "istruzione": {
+                "value": 10
+            },
+            "resistereAllaMagia": {
+                "value": 10
+            },
+            "scherma": {
+                "value": 15
+            }
+        },
+        "details": {
+            "biography": "<p>Unico figlio di Rafael de Surmann, Camerlengo di Toussaint, Leblanc è un Cavaliere Errante. Guidato da una profezia che parla di una 'damigella circondata di farfalle', viaggia alla ricerca del vero amore, protetto da un'armatura pesante e da un manipolo di tutori.</p>",
+            "threat": "Difficile",
+            "sourcebook": "LR 146"
+        },
+        "derivedStats": {
+            "hp": {
+                "value": 50,
+                "max": 50,
+                "unmodifiedMax": 50
+            },
+            "sta": {
+                "value": 50,
+                "max": 50,
+                "unmodifiedMax": 50
+            },
+            "rec": {
+                "value": 2,
+                "max": 2,
+                "unmodifiedMax": 2
+            },
+            "stun": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "vigor": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "resolve": {
+                "value": 50,
+                "max": 50,
+                "unmodifiedMax": 50
+            },
+            "woundTreshold": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "run": {
+                "value": 15,
+                "max": 15,
+                "unmodifiedMax": 15
+            },
+            "leap": {
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
+            },
+            "enc": {
+                "value": 20,
+                "max": 20,
+                "unmodifiedMax": 20
+            }
+        },
+        "description": "<p>Cavaliere Errante di Toussaint.</p><h3>Equipaggiamento</h3><p>Partigiana, Grande Elmo, Armatura di Piastre, Schinieri di Piastre (PA 20).</p>",
+        "sourcebook": "LR 146"
+    },
+    "items": [
+        {
+            "name": "Partigiana",
+            "type": "weapon",
+            "img": "icons/svg/sword.svg",
+            "system": {
+                "damage": "4d6+2",
+                "accuracy": 15,
+                "effects": "Portata, Sanguinamento (25%)"
+            }
+        }
+    ],
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

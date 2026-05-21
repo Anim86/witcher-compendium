@@ -1,0 +1,173 @@
+{
+    "name": "Plumard",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/plumard.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 1,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "ref": {
+                "value": 5,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "dex": {
+                "value": 6,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "body": {
+                "value": 1,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "spd": {
+                "value": 7,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "emp": {
+                "value": 1,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "cra": {
+                "value": 1,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "will": {
+                "value": 4,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 0,
+                "max": 0
+            }
+        },
+        "skills": {
+            "int": {
+                "awareness": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "wilderness": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "ref": {
+                "brawling": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "dex": {
+                "athletics": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "body": {
+                "physique": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "endurance": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "emp": {},
+            "cra": {},
+            "will": {
+                "courage": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "intimidation": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "resistmagic": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            }
+        },
+        "details": {
+            "biography": "<p>I plumard infestano tutta Angren e lo Yaruga e sono delle pesti! Escono di notte in stormi e ti sciamano addosso, mordendo e stridendo! Dicono che indossare il simbolo di un dio fatto con giunchi li tiene lontani, ma sono solo chiacchiere da vecchia. – Rodolf Kazmer</p>",
+            "threat": "Facile Semplice",
+            "reward": 15,
+            "monsterType": "Vampire",
+            "difficulty": "MEDIUM",
+            "height": "1m",
+            "weight": "4,5kg",
+            "environment": "Foreste e paludi",
+            "organization": "Stormi da 6 a 12",
+            "vulnerability": "Unguento Anti-Vampiri, Pozione Sangue Nero, Fuoco",
+            "intelligence": "Ferale",
+            "bounty": 15
+        },
+        "derivedStats": {
+            "rec": {
+                "value": 2,
+                "max": 2,
+                "unmodifiedMax": 0
+            },
+            "stun": {
+                "value": 21,
+                "max": 21
+            },
+            "woundTreshold": {
+                "value": 0,
+                "max": 0
+            },
+            "hp": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 0
+            },
+            "sta": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 0
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "description": "<p>I plumard infestano tutta Angren e lo Yaruga e sono delle pesti! Escono di notte in stormi e ti sciamano addosso, mordendo e stridendo! Dicono che indossare il simbolo di un dio fatto con giunchi li tiene lontani, ma sono solo chiacchiere da vecchia. – Rodolf Kazmer</p>",
+        "sourcebook": "DW 120",
+        "monsterType": "Vampire",
+        "difficulty": "medium",
+        "bounty": 15,
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "organization": "",
+        "intelligence": "",
+        "vulnerability": ""
+    },
+    "items": [],
+    "_id": "d2b7c4a0398f6e15",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

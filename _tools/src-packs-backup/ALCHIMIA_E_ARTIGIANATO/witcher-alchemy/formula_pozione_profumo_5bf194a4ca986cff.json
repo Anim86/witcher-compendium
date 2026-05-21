@@ -1,0 +1,23 @@
+{
+    "name": "Formula: Pozione Profumo",
+    "_id": "5bf194a4ca986cff",
+    "system": {
+        "recipe": [],
+        "description": "<p>Una formula per preparare Pozione Profumo. <em>Ingredienti specifici da verificare sul manuale fisico (colonna componenti non estratta da OCR — Pag146/Pag249 MB).</em></p>",
+        "weight": 0.1,
+        "cost": 120,
+        "sourcebook": "MB 146",
+        "craftingTime": "30 Minuti",
+        "type": "alchemy",
+        "rarity": "C",
+        "quantity": 1,
+        "learned": false,
+        "craftingCc": 18
+    },
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-alchemy/formula_pozione_profumo.webp",
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
+}

@@ -1,0 +1,61 @@
+{
+    "_id": "b51a5c4b3b5f4210",
+    "name": "Velo di Polvere",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA/Incantesimi/witcher-spells/velo_di_polvere.webp",
+    "system": {
+        "description": "<p>Velo di Polvere solleva il pulviscolo presente nell'area per formare una nube di 10 metri cubi che, per un Round, evidenza la sagome di eventuali creatu- re invisibili al suo interno. Il mago sceglie un bersaglio nell'area e, se questi fallisce nel difendersi, la polvere gli aderisce addosso negando i benefici dell'invisibilità.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "TC 83",
+        "class": "Mage",
+        "level": "master",
+        "source": "mixedElements",
+        "stamina": 0,
+        "staminaIsVar": false,
+        "effect": "Velo di Polvere solleva il pulviscolo presente nellâ€™area per formare una nube di 10 metri cubi che, per un Round, evidenza la sagome di eventuali creatu- re invisibili al suo interno. Il mago sceglie un bersaglio nellâ€™area e, se questi fallisce nel difendersi, la polvere gli aderisce addosso negando i benefici dellâ€™invisibilità.",
+        "range": "20m",
+        "duration": "Attiva (2 RES)",
+        "defence": "Schivare",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
+}

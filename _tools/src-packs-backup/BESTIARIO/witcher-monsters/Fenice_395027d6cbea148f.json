@@ -1,0 +1,234 @@
+{
+    "name": "Fenice",
+    "type": "monster",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/fenice.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 5,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "ref": {
+                "value": 9,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "dex": {
+                "value": 10,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "body": {
+                "value": 10,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "spd": {
+                "value": 10,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "emp": {
+                "value": 5,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "cra": {
+                "value": 3,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "will": {
+                "value": 8,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "luck": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "armor": {
+                "value": 0,
+                "max": 0
+            }
+        },
+        "skills": {
+            "int": {
+                "awareness": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "wilderness": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "ref": {
+                "melee": {
+                    "value": 7,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "dex": {
+                "brawling": {
+                    "value": 6,
+                    "isVisible": true
+                },
+                "athletics": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "stealth": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "body": {
+                "physique": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "endurance": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "emp": {
+                "persuasion": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            },
+            "cra": {},
+            "will": {
+                "courage": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "intimidation": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "resistcoerc": {
+                    "value": 0,
+                    "isVisible": true
+                },
+                "resistmagic": {
+                    "value": 0,
+                    "isVisible": true
+                }
+            }
+        },
+        "details": {
+            "biography": "<p>L'unica cosa che avevo sentito sulle fenici è che erano uccelli mitologici fatti di fuoco e cenere. Una gran bella vista, specie di notte. Alcuni pensano che siano attirate dai più potenti maghi del fuoco. Ti consiglio di parlarci. Da quel che ho sentito sono abbastanza intelligenti… almeno per un enorme uccello di fuoco. – Rodolf Kazmer</p>",
+            "threat": "Medio Arduo",
+            "reward": 1200,
+            "monsterType": "Hybrid",
+            "difficulty": "MEDIUM",
+            "height": "3m",
+            "weight": "550kg",
+            "environment": "Montagne remote",
+            "organization": "Solitario o coppia",
+            "vulnerability": "Unguento Anti-Dragonidi, Bombe al Dimeritium",
+            "intelligence": "Senziente",
+            "bounty": 1200
+        },
+        "derivedStats": {
+            "rec": {
+                "value": 9,
+                "max": 9,
+                "unmodifiedMax": 0
+            },
+            "stun": {
+                "value": 30,
+                "max": 30
+            },
+            "woundTreshold": {
+                "value": 0,
+                "max": 0
+            },
+            "hp": {
+                "value": 90,
+                "max": 90,
+                "unmodifiedMax": 0
+            },
+            "sta": {
+                "value": 45,
+                "max": 45,
+                "unmodifiedMax": 0
+            },
+            "focus": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            }
+        },
+        "description": "<p>L'unica cosa che avevo sentito sulle fenici è che erano uccelli mitologici fatti di fuoco e cenere. Una gran bella vista, specie di notte. Alcuni pensano che siano attirate dai più potenti maghi del fuoco. Ti consiglio di parlarci. Da quel che ho sentito sono abbastanza intelligenti… almeno per un enorme uccello di fuoco. – Rodolf Kazmer</p>",
+        "sourcebook": "DW 108",
+        "monsterType": "Hybrid",
+        "difficulty": "medium",
+        "bounty": 1200,
+        "height": "",
+        "weight": "",
+        "environment": "",
+        "organization": "",
+        "intelligence": "",
+        "vulnerability": ""
+    },
+    "items": [
+        {
+            "_id": "86e4e18322b928",
+            "name": "Artigli",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "Sanguinamento (50%)",
+                "damage": "4d6",
+                "accuracy": 0,
+                "effects": "Sanguinamento (50%)",
+                "rateOfFire": 2
+            }
+        },
+        {
+            "_id": "4bfa18046fee6",
+            "name": "Colpo d'Ala",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
+            "system": {
+                "description": "A Fuoco (50%), Vacillante (25%)",
+                "damage": "3d6",
+                "accuracy": 0,
+                "effects": "A Fuoco (50%), Vacillante (25%)",
+                "rateOfFire": 1
+            }
+        },
+        {
+            "_id": "0416e34f713f47bb",
+            "name": "Trofeo: Fenice",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/trofeo_fenice.webp",
+            "system": {
+                "description": "<p>Il personaggio riduce la probabilità di andare A Fuoco del 50% (minimo 0%).</p>",
+                "weight": 0,
+                "cost": 0,
+                "sourcebook": "TC p.126"
+            },
+            "effects": [],
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        }
+    ],
+    "_id": "395027d6cbea148f",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

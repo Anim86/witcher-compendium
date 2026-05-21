@@ -1,0 +1,39 @@
+{
+    "name": "Elfi",
+    "type": "race",
+    "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-races/elfi.webp",
+    "system": {
+        "description": "<p>Eh, gli elfi, o gli Aen Seidhe, visto che i nostri non sono gli unici elfi là fuori, son davvero una storia triste. Sono arrivati nel mondo mica tanto prima degli umani, su grandi navi bianche venute da chissà dove. Non sono propriamente la più gentile delle razze, ma con tutti noialtri son sempre andati più o meno d'accordo. Non sono poi tanto diversi dagli umani: alti, magri e inclini a guardare gli altri dall'alto in basso. Le uniche differenze sono le orecchie a punta, la vita eterna e il loro legame con la terra. Eh, gli elfi sono una cosa sola con la natura, o qualcosa del genere. Han vissuto dei frutti della terra per generazioni, raccogliendo cibo e costruendo grandi palazzi. Non si sono nemmeno affilati i denti, dopo tutti quegli anni a mangiar bacche e piante. Non fateli arrabbiare però: un elfo è una belva anche in battaglia. Magari non indossano troppa armatura, ma son duri come le rane d'inverno nelle terre selvagge e probabilmente sono i migliori arcieri che ti capiterà di vedere. – Rodolf Kazmer</p>",
+        "sourcebook": "MB 23",
+        "perk1": {
+            "name": "Artistico",
+            "description": "<p>Gli elfi hanno un occhio innato per la bellezza e un talento naturale per le espressioni artistiche. Ottengono un bonus di <strong>+1 innato all'abilità Belle Arti</strong>.</p>"
+        },
+        "perk2": {
+            "name": "Tiratore",
+            "description": "<p>Anni di tradizione e pratica rendono gli elfi i migliori arcieri del Continente. Ottengono un <strong>+2 innato all'abilità Archi</strong> e possono incordare o estrarre un arco senza consumare un'azione.</p>"
+        },
+        "perk3": {
+            "name": "Sintonia Naturale",
+            "description": "<p>Gli elfi possiedono un legame magico con la natura. Gli animali li considerano amichevoli e non vengono disturbati dalla loro presenza. Inoltre, gli elfi trovano automaticamente sostanze vegetali <strong>comuni</strong> (o inferiori) se presenti nell'ambiente.</p>"
+        },
+        "perk4": {
+            "name": "-",
+            "description": "-"
+        },
+        "socialStanding": {
+            "north": "hated",
+            "nilfgaard": "equal",
+            "skellige": "equal",
+            "dolBlathanna": "equal",
+            "mahakam": "equal"
+        }
+    },
+    "effects": [],
+    "flags": {},
+    "_id": "24e63ac513a0d5e3",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

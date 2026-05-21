@@ -1,0 +1,86 @@
+{
+    "name": "Armigero",
+    "type": "profession",
+    "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-professions/armigero.webp",
+    "system": {
+        "sourcebook": "MB 40",
+        "definingSkill": {
+            "skillName": "Duro come una Roccia",
+            "stat": "body",
+            "level": 1,
+            "definition": "<p>Quando un Armigero scende a 0 PS o meno, può effettuare un tiro di <strong>Duro come una Roccia (FIS)</strong> con CD pari ai PS negativi x2. In caso di successo, può continuare a combattere senza le penalità di Moribondo (come se fosse solo alla Soglia di Ferite) fino al termine dello scontro o finché non fallisce un nuovo tiro.</p>"
+        },
+        "skillPath1": {
+            "pathName": "Il Tiratore",
+            "skill1": {
+                "skillName": "Gittata Superiore",
+                "stat": "dex",
+                "level": 0,
+                "definition": "<p>Riduce della metà del proprio valore le penalità per la gittata. Inoltre, con una prova con CD 16, permette di attaccare bersagli fino a 3 volte la gittata dell'arma con penalità di -10 (ridotta da questa capacità).</p>"
+            },
+            "skill2": {
+                "skillName": "Tiro Doppio",
+                "stat": "dex",
+                "level": 0,
+                "definition": "<p>Permette di scoccare due proiettili con un singolo attacco. Se ha successo, colpisce due parti del corpo casuali (anche se il colpo era mirato, il secondo è casuale). Parare questo attacco impone una penalità di -6.</p>"
+            },
+            "skill3": {
+                "skillName": "Mira Precisa",
+                "stat": "dex",
+                "level": 0,
+                "definition": "<p>Permette di aggiungere il proprio valore al tiro per determinare l'entità di una Ferita Critica inflitta con un'arma a distanza, superando una prova con CD pari alla DES x3 del bersaglio.</p>"
+            }
+        },
+        "skillPath2": {
+            "pathName": "Il Cacciatore di Taglie",
+            "skill1": {
+                "skillName": "Segugio",
+                "stat": "int",
+                "level": 0,
+                "definition": "<p>Aggiunge il proprio valore ai tiri di Sopravvivenza per seguire tracce. Se si perde la pista, permette di effettuare un tiro con CD stabilita dal GM per ritrovarla immediatamente.</p>"
+            },
+            "skill2": {
+                "skillName": "Tranelli",
+                "stat": "cra",
+                "level": 0,
+                "definition": "<p>Permette di costruire trappole improvvisate (Calappio, Disarmante, Accecante, Inciampo, Sanguinamento, Stordente) con un raggio d'innesco di 2m. La CD di individuazione è pari al tiro effettuato per costruirla.</p>"
+            },
+            "skill3": {
+                "skillName": "Accortezza Tattica",
+                "stat": "int",
+                "level": 0,
+                "definition": "<p>Invece di muoversi, l'Armigero può tirare per intuire le mosse nemiche. Ottiene +3 ad attacco e difesa per 1 round contro ogni nemico entro 10m la cui DES x3 sia inferiore al risultato del tiro.</p>"
+            }
+        },
+        "skillPath3": {
+            "pathName": "Il Massacratore",
+            "skill1": {
+                "skillName": "Furia",
+                "stat": "will",
+                "level": 0,
+                "definition": "<p>Superando una prova con CD pari alla propria EMP x3, l'Armigero diventa immune alla paura, agli incantesimi mentali e al combattimento verbale per un numero di round pari al doppio del punteggio dell'abilità.</p>"
+            },
+            "skill2": {
+                "skillName": "Zweihand",
+                "stat": "body",
+                "level": 0,
+                "definition": "<p>Spendendo 10 Resistenza, permette di effettuare un attacco che infligge danni doppi e guadagna l'effetto Trapassare (o migliora quello esistente con +3d6 danni). Richiede un tiro con penalità di -3.</p>"
+            },
+            "skill3": {
+                "skillName": "Irriducibile",
+                "stat": "body",
+                "level": 0,
+                "definition": "<p>Spendendo 10 Resistenza, permette di tirare per negare una Ferita Critica subita. Se il tiro supera quello dell'attacco nemico, il danno viene subito come se non fosse un critico. Usabile volte al giorno pari al FIS.</p>"
+            }
+        },
+        "professionSkills": "5 Abilità di Combattimento a scelta (Archi, Armi in Asta, Atletica, Balestre, Cavalcare, Lame Corte, Mischia, Rissa, Scherma, Tattica), Sopravvivenza, Coraggio, Prestanza, Intimidire, Eludere",
+        "notes": "<p>I soldati pensano secondo la tattica. Sanno quando colpire, quando indietreggiare, quando caricare e quando tenere la posizione. I veri armigeri sono soldati incalliti che non rinunciano o si arrendono mai. Un armigero vive di combattimenti e respira conflitti.</p>"
+    },
+    "effects": [],
+    "flags": {},
+    "_id": "e5c6686a4c2bd8bc",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}
