@@ -6,10 +6,10 @@
 - unire i compendi Lore
 - eliminare sottocartelle di Regolamento e narrativa, tranne Tabelle operative
 - immagini da rifare/controllare:
-  - Tratto mutazione arto aggiuntivo
-  - tratto mutazione capacità rigenerativa
+  - [x] Tratto mutazione arto aggiuntivo (Concluso)
+  - [x] tratto mutazione capacità rigenerativa (Concluso)
   - tutti gli schemi
-  - warg
+  - [x] warg (Ottimizzato)
   - oggetti vari è pieno di doppioni e immagini sbagliate
   - ferite critiche
   - geografia
