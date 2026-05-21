@@ -13,4 +13,3 @@
   - oggetti vari è pieno di doppioni e immagini sbagliate
   - ferite critiche
   - geografia
-  - trofei (utilizzare il file [report trofei.md](report%20trofei.md) per la generazione delle immagini)
