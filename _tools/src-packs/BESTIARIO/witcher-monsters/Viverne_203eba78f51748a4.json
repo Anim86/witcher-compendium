@@ -282,6 +282,24 @@
                 "effects": "Veleno (25%)",
                 "rateOfFire": 1
             }
+        },
+        {
+            "_id": "073ea58863fdce50",
+            "name": "Trofeo: Viverna",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/trofeo_viverna.webp",
+            "system": {
+                "description": "<p>Gli attacchi del personaggio ottengono Avvelenato (25%).</p>",
+                "weight": 0,
+                "cost": 0,
+                "quantity": 1,
+                "sourcebook": "TC p.126"
+            },
+            "effects": [],
+            "_stats": {
+                "coreVersion": 14,
+                "systemId": "TheWitcherItaNewSystem"
+            }
         }
     ],
     "effects": [],

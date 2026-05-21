@@ -1411,13 +1411,14 @@
     background: transparent !important;
     border: none !important;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
-    color: white !important;
+    color: var(--w-gold) !important;
     font-family: 'MasonSans', serif !important;
     font-size: 1.8rem !important;
     font-weight: bold !important;
     padding: 0 !important;
     margin: 0 !important;
     height: auto !important;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8) !important;
 }
 
 .monster-sheet-header-v2 .badges-row {
@@ -1439,6 +1440,19 @@
 .monster-sheet-header-v2 .compact-badge.bounty {
     color: #ffd700;
 }
+
+/* Badge difficoltà nella badges-row (sotto il nome) */
+.monster-sheet-header-v2 .compact-badge.difficulty-badge {
+    font-weight: 700;
+    font-size: 0.72rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border: 1px solid currentColor;
+    opacity: 0.85;
+}
+.monster-sheet-header-v2 .compact-badge.difficulty-badge.EASY   { color: #81C784; border-color: rgba(129,199,132,0.4); background: rgba(129,199,132,0.08); }
+.monster-sheet-header-v2 .compact-badge.difficulty-badge.MEDIUM { color: #FFD54F; border-color: rgba(255,213,79,0.4);  background: rgba(255,213,79,0.08); }
+.monster-sheet-header-v2 .compact-badge.difficulty-badge.HARD   { color: #EF5350; border-color: rgba(239,83,80,0.4);   background: rgba(239,83,80,0.08); }
 
 /* Vitals Section */
 .monster-sheet-header-v2 .vitals-section {

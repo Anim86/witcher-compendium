@@ -481,15 +481,31 @@ export default class WitcherActor extends Actor {
         if (this.type !== 'character') return;
 
         // 1. Determine Max Toxicity (Threshold)
-        // Default is 100%. Check for "Stomach of Iron" (Stomaco di Ferro)
+        // Default is 100%. Check for "Stomach of Iron" (Stomaco di Ferro) rank-based max toxicity limit
         let toxicityMax = 100;
-        const stomachOfIron = this.items.find(
-            i => i.name.includes('Stomaco di Ferro') || i.name.includes('Stomach of Iron')
-        );
-        if (stomachOfIron) {
+        let stomachRank = 0;
+        const stomachSkillInfo = this.findSkillWithName('Stomaco di Ferro') || this.findSkillWithName('Stomach of Iron');
+        if (stomachSkillInfo) {
+            stomachRank = stomachSkillInfo.skill.level || 0;
+        }
+
+        if (stomachRank === 0) {
+            toxicityMax = 100;
+        } else if (stomachRank === 1) {
+            toxicityMax = 105;
+        } else if (stomachRank >= 2 && stomachRank <= 3) {
+            toxicityMax = 110;
+        } else if (stomachRank >= 4 && stomachRank <= 5) {
+            toxicityMax = 115;
+        } else if (stomachRank >= 6 && stomachRank <= 7) {
+            toxicityMax = 120;
+        } else if (stomachRank >= 8 && stomachRank <= 9) {
+            toxicityMax = 125;
+        } else if (stomachRank >= 10) {
             toxicityMax = 150;
         }
-        this.system.stats.toxicity.max = toxicityMax;
+
+        this.system.stats.toxicity.max = toxicityMax + (this.system.stats.toxicity.totalModifiers || 0);
 
         // 2. Sum current Toxicity from active effects
         let currentToxicity = 0;
@@ -503,24 +519,102 @@ export default class WitcherActor extends Actor {
 
         this.system.stats.toxicity.value = currentToxicity;
 
-        // 3. Handle Poisoned state
-        const isOverLimit = currentToxicity > toxicityMax;
-        const hasPoisonStatus = this.statuses.has('poison');
-
-        if (isOverLimit && !hasPoisonStatus) {
-            this.toggleStatusEffect('poison');
-        } else if (!isOverLimit && hasPoisonStatus) {
-            // In Witcher, toxicity-induced poisoning ends when toxicity is back in range
-            this.toggleStatusEffect('poison');
-        }
-
-        // 4. Handle Frenzy (Frenesia)
+        // 3. Handle Frenzy (Frenesia)
+        const isOverLimit = currentToxicity > this.system.stats.toxicity.max;
         this.system.frenzyActive = false;
         if (isOverLimit) {
             const frenzy = this.items.find(i => i.name.includes('Frenesia') || i.name.includes('Frenzy'));
             if (frenzy) {
                 this.system.frenzyActive = true;
             }
+        }
+    }
+
+    async checkToxicityPoisonState() {
+        if (this.type !== 'character') return;
+        if (this._checkingToxicityPoison) return;
+        this._checkingToxicityPoison = true;
+        try {
+            // 1. Clean expired toxicity effects from failedPotions array
+            let failedPotions = Array.from(this.getFlag('TheWitcherItaNewSystem', 'failedPotions') || []);
+            const originalLength = failedPotions.length;
+            failedPotions = failedPotions.filter(effectId => this.effects.some(e => e.id === effectId));
+            
+            if (failedPotions.length !== originalLength) {
+                await this.setFlag('TheWitcherItaNewSystem', 'failedPotions', failedPotions);
+            }
+
+            // 2. Determine if actor should be poisoned due to toxicity
+            const currentToxicity = this.system.stats.toxicity.value || 0;
+            const maxToxicity = this.system.stats.toxicity.max || 100;
+            const isOverLimit = currentToxicity > maxToxicity;
+            const hasFailedActivePotions = failedPotions.length > 0;
+            
+            const shouldBePoisoned = isOverLimit || hasFailedActivePotions;
+            const hasPoisonStatus = this.statuses.has('poison');
+            const toxicityPoisoned = this.getFlag('TheWitcherItaNewSystem', 'toxicityPoisoned') || false;
+
+            if (shouldBePoisoned) {
+                if (!hasPoisonStatus) {
+                    if (!toxicityPoisoned) {
+                        await this.setFlag('TheWitcherItaNewSystem', 'toxicityPoisoned', true);
+                    }
+                    await this.toggleStatusEffect('poison');
+                } else if (!toxicityPoisoned) {
+                    await this.setFlag('TheWitcherItaNewSystem', 'toxicityPoisoned', true);
+                }
+            } else {
+                if (hasPoisonStatus && toxicityPoisoned) {
+                    await this.setFlag('TheWitcherItaNewSystem', 'toxicityPoisoned', false);
+                    await this.toggleStatusEffect('poison');
+                } else if (toxicityPoisoned) {
+                    await this.setFlag('TheWitcherItaNewSystem', 'toxicityPoisoned', false);
+                }
+            }
+        } finally {
+            this._checkingToxicityPoison = false;
+        }
+    }
+
+    /** @override */
+    _onUpdate(changed, options, user) {
+        super._onUpdate(changed, options, user);
+        const userId = typeof user === 'string' ? user : (options?.userId || game.user.id);
+        if (game.user.id !== userId) return;
+        if (this.type !== 'character') return;
+        this.checkToxicityPoisonState();
+    }
+
+    /** @override */
+    _onCreateEmbeddedDocuments(embeddedName, documents, result, options, userId) {
+        super._onCreateEmbeddedDocuments(embeddedName, documents, result, options, userId);
+        const initiatorId = typeof userId === 'string' ? userId : game.user.id;
+        if (game.user.id !== initiatorId) return;
+        if (this.type !== 'character') return;
+        if (embeddedName === 'ActiveEffect' || embeddedName === 'Item') {
+            this.checkToxicityPoisonState();
+        }
+    }
+
+    /** @override */
+    _onUpdateEmbeddedDocuments(embeddedName, documents, result, options, userId) {
+        super._onUpdateEmbeddedDocuments(embeddedName, documents, result, options, userId);
+        const initiatorId = typeof userId === 'string' ? userId : game.user.id;
+        if (game.user.id !== initiatorId) return;
+        if (this.type !== 'character') return;
+        if (embeddedName === 'ActiveEffect' || embeddedName === 'Item') {
+            this.checkToxicityPoisonState();
+        }
+    }
+
+    /** @override */
+    _onDeleteEmbeddedDocuments(embeddedName, documents, result, options, userId) {
+        super._onDeleteEmbeddedDocuments(embeddedName, documents, result, options, userId);
+        const initiatorId = typeof userId === 'string' ? userId : game.user.id;
+        if (game.user.id !== initiatorId) return;
+        if (this.type !== 'character') return;
+        if (embeddedName === 'ActiveEffect' || embeddedName === 'Item') {
+            this.checkToxicityPoisonState();
         }
     }
 

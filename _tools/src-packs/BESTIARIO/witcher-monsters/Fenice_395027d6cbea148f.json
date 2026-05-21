@@ -207,6 +207,23 @@
                 "effects": "A Fuoco (50%), Vacillante (25%)",
                 "rateOfFire": 1
             }
+        },
+        {
+            "_id": "0416e34f713f47bb",
+            "name": "Trofeo: Fenice",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/trofeo_fenice.webp",
+            "system": {
+                "description": "<p>Il personaggio riduce la probabilità di andare A Fuoco del 50% (minimo 0%).</p>",
+                "weight": 0,
+                "cost": 0,
+                "sourcebook": "TC p.126"
+            },
+            "effects": [],
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
         }
     ],
     "_id": "395027d6cbea148f",

@@ -51,12 +51,15 @@ export let defenseMixin = {
             })
         );
 
-        let { defenseAction, extraDefense, customDef, luckToSpend } = await DialogV2.wait({
+        let result = await DialogV2.wait({
             window: { title: `${game.i18n.localize('WITCHER.Dialog.DefenseTitle')}` },
             content,
             buttons: buttons,
-            rejectClose: true
+            rejectClose: false
         });
+
+        if (!result) return;
+        let { defenseAction, extraDefense, customDef, luckToSpend } = result;
 
         if (luckToSpend > 0) {
             await this.spendLuck(luckToSpend);
@@ -103,7 +106,7 @@ export let defenseMixin = {
             );
 
             let chooserContent = `<label>${game.i18n.localize('WITCHER.Dialog.DefenseWith')}: </label><select name="choosenDefense">${options}</select><br />`;
-            ({ skillName, itemId } = await DialogV2.prompt({
+            let resultPrompt = await DialogV2.prompt({
                 window: { title: `${game.i18n.localize('WITCHER.Dialog.DefenseWith')}` },
                 content: chooserContent,
                 ok: {
@@ -114,8 +117,10 @@ export let defenseMixin = {
                         };
                     }
                 },
-                rejectClose: true
-            }));
+                rejectClose: false
+            });
+            if (!resultPrompt) return;
+            ({ skillName, itemId } = resultPrompt);
         }
 
         return this.skillDefense(

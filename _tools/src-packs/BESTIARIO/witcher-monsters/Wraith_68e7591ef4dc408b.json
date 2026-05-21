@@ -250,6 +250,23 @@
                 "effects": "Nessuno",
                 "rateOfFire": 2
             }
+        },
+        {
+            "_id": "7c311f43ccaf4f36",
+            "name": "Trofeo: Wraith",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/trofeo_wraith.webp",
+            "system": {
+                "description": "<p>Diurno Il personaggio è immune alla paura.</p>",
+                "weight": 0,
+                "cost": 0,
+                "sourcebook": "TC p.126"
+            },
+            "effects": [],
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
         }
     ],
     "effects": [],

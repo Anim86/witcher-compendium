@@ -239,6 +239,24 @@
                 "description": "",
                 "isStored": false
             }
+        },
+        {
+            "_id": "2080fd6df9870025",
+            "name": "Trofeo: Bullvore",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/trofeo_bullvore.webp",
+            "system": {
+                "description": "<p>Se sono presenti altri bersagli raggiungibili, oltre al personaggio, i Necrofagi sono obbligati a prenderli di mira per primi.</p>",
+                "weight": 0,
+                "cost": 0,
+                "quantity": 1,
+                "sourcebook": "TC p.126"
+            },
+            "effects": [],
+            "_stats": {
+                "coreVersion": 14,
+                "systemId": "TheWitcherItaNewSystem"
+            }
         }
     ],
     "_id": "a26b1940ed7c3f85",

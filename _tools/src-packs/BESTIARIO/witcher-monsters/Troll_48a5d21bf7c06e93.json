@@ -178,7 +178,25 @@
         "intelligence": "",
         "vulnerability": ""
     },
-    "items": [],
+    "items": [
+        {
+            "_id": "d15fe0a1b3d24ffc",
+            "name": "Trofeo: Troll",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/trofeo_troll.webp",
+            "system": {
+                "description": "<p>Il personaggio deve bere il doppio del normale prima di subire Ebbrezza e non ha mai postumi.</p>",
+                "weight": 0,
+                "cost": 0,
+                "sourcebook": "TC p.126"
+            },
+            "effects": [],
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        }
+    ],
     "_id": "48a5d21bf7c06e93",
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",

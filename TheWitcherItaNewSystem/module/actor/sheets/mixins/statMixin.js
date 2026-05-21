@@ -243,6 +243,16 @@ export let statMixin = {
             // If no alchemical effects, just ensure value is 0 (though calculateToxicity should do this)
             await this.actor.update({ 'system.stats.toxicity.value': 0 });
         }
+
+        // Clear failed potions, toxicityPoisoned flags, and untoggle poison status
+        await this.actor.update({
+            'flags.TheWitcherItaNewSystem.failedPotions': [],
+            'flags.TheWitcherItaNewSystem.toxicityPoisoned': false
+        });
+
+        if (this.actor.statuses.has('poison')) {
+            await this.actor.toggleStatusEffect('poison');
+        }
     },
 
     async _onAddStatModifier(event) {

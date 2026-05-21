@@ -208,6 +208,23 @@
                 "description": "",
                 "isStored": false
             }
+        },
+        {
+            "_id": "2595fc12d1dd4c0c",
+            "name": "Trofeo: Elementale (Ghiaccio)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/trofeo_elementale_ghiaccio.webp",
+            "system": {
+                "description": "<p>di Ghiaccio Gli attacchi del personaggio ottengono Congelato (25%).</p>",
+                "weight": 0,
+                "cost": 0,
+                "sourcebook": "TC p.126"
+            },
+            "effects": [],
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
         }
     ],
     "_id": "b326af7c5e18490d",

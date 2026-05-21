@@ -204,6 +204,23 @@
                 "description": "",
                 "isStored": false
             }
+        },
+        {
+            "_id": "97a3d63632854a98",
+            "name": "Trofeo: Elementale (Terra)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/trofeo_elementale_terra.webp",
+            "system": {
+                "description": "<p>di Terra Gli attacchi del personaggio causano doppia ablazione ad armi, armature e scudi.</p>",
+                "weight": 0,
+                "cost": 0,
+                "sourcebook": "TC p.126"
+            },
+            "effects": [],
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
         }
     ],
     "_id": "279c64d03ebf1a85",

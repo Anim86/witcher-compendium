@@ -217,6 +217,23 @@
                 "description": "",
                 "isStored": false
             }
+        },
+        {
+            "_id": "9f34bf6308df4db4",
+            "name": "Trofeo: Frightener",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/trofeo_frightener.webp",
+            "system": {
+                "description": "<p>Il personaggio ottiene Resistenza ai danni contundenti, perforanti o taglienti. Può cambiare la tipologia ogni giorno.</p>",
+                "weight": 0,
+                "cost": 0,
+                "sourcebook": "TC p.126"
+            },
+            "effects": [],
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
         }
     ],
     "_id": "4fb21c96538da7e0",

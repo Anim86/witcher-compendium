@@ -232,6 +232,24 @@
                 "description": "",
                 "isStored": false
             }
+        },
+        {
+            "_id": "98cae0cec2de53fd",
+            "name": "Trofeo: Elementale (Fuoco)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/trofeo_elementale_fuoco.webp",
+            "system": {
+                "description": "<p>di Fuoco Gli attacchi del personaggio ottengono A Fuoco (25%).</p>",
+                "weight": 0,
+                "cost": 0,
+                "quantity": 1,
+                "sourcebook": "TC p.126"
+            },
+            "effects": [],
+            "_stats": {
+                "coreVersion": 14,
+                "systemId": "TheWitcherItaNewSystem"
+            }
         }
     ],
     "_id": "0b1a8754f3c2e96d",

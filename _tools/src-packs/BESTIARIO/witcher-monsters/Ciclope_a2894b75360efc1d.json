@@ -168,7 +168,26 @@
         "intelligence": "",
         "vulnerability": ""
     },
-    "items": [],
+    "items": [
+        {
+            "_id": "0bde0052adcdbbbd",
+            "name": "Trofeo: Ciclope",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/trofeo_ciclope.webp",
+            "system": {
+                "description": "<p>Quando viene Stordito da un incantesimo, il personaggio può attaccare la creatura a lui più vicina per resistere. Ogni altro effetto della magia si applica normalmente.</p>",
+                "weight": 0,
+                "cost": 0,
+                "quantity": 1,
+                "sourcebook": "TC p.126"
+            },
+            "effects": [],
+            "_stats": {
+                "coreVersion": 14,
+                "systemId": "TheWitcherItaNewSystem"
+            }
+        }
+    ],
     "_id": "a2894b75360efc1d",
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",

@@ -269,6 +269,23 @@
                 "description": "",
                 "isStored": false
             }
+        },
+        {
+            "_id": "12e890dc61674d19",
+            "name": "Trofeo: Succube",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/trofeo_succube.webp",
+            "system": {
+                "description": "<p>La Posizione Sociale del personaggio migliora di un grado (Odiato diventa Tollerato, Tollerato diventa Eguale).</p>",
+                "weight": 0,
+                "cost": 0,
+                "sourcebook": "TC p.126"
+            },
+            "effects": [],
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
         }
     ],
     "_id": "7ed094f23185bc6a",

@@ -129,7 +129,7 @@ export default class WitcherLootSheet extends HandlebarsApplicationMixin(ActorSh
         }
         content += `To Character : <select name="character">${Characteroptions}</select>`;
 
-        let { numberOfItem, totalCost, characterId, coinType } = await DialogV2.prompt({
+        let result = await DialogV2.prompt({
             window: { title: `${game.i18n.localize('WITCHER.Loot.BuyTitle')}` },
             content: content,
             modal: true,
@@ -143,8 +143,11 @@ export default class WitcherLootSheet extends HandlebarsApplicationMixin(ActorSh
                     };
                 }
             },
-            rejectClose: true
+            rejectClose: false
         });
+
+        if (!result) return;
+        let { numberOfItem, totalCost, characterId, coinType } = result;
 
         let buyerActor = game.actors.get(characterId);
         let hasEnoughMoney = buyerActor.system.currency[coinType] >= totalCost;

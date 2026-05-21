@@ -187,6 +187,23 @@
                 "effects": "Forza Schiacciante, Danno Ablativo",
                 "rateOfFire": 1
             }
+        },
+        {
+            "_id": "70cd7a6f45e74143",
+            "name": "Trofeo: Golem",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/trofeo_golem.webp",
+            "system": {
+                "description": "<p>Il personaggio è immune a Sanguinante.</p>",
+                "weight": 0,
+                "cost": 0,
+                "sourcebook": "TC p.126"
+            },
+            "effects": [],
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
         }
     ],
     "effects": [],

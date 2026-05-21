@@ -2,27 +2,39 @@
     <h3>
         {{item.name}}
     </h3>
-    {{#if item.system.consumeProperties.doesHeal}}
+    {{#if messageInfos.halflingNoBenefits}}
+        <div style="color: #ff9800; font-weight: bold; margin-bottom: 5px;">
+            {{localize "WITCHER.Item.ConsumeProperties.Chat.halflingNoBenefits"}}
+        </div>
+    {{/if}}
+    {{#if messageInfos.poisonedOnFailure}}
+        <div style="color: #f44336; font-weight: bold; margin-bottom: 5px;">
+            {{localize "WITCHER.Item.ConsumeProperties.Chat.failedWitcherPotion"}}
+        </div>
+    {{/if}}
+    {{#if messageInfos.heal}}
         <div>
             {{localize "WITCHER.Item.ConsumeProperties.Chat.healedFor"}}: {{messageInfos.heal}}
         </div>
     {{/if}}
-    {{#if item.system.consumeProperties.addsTempHp}}
+    {{#if messageInfos.temporaryHp}}
         <div>
             {{localize "WITCHER.Item.ConsumeProperties.Chat.tempHpAdded"}}: {{messageInfos.temporaryHp.tempHp}}
             {{localize "WITCHER.Item.ConsumeProperties.temporaryHp.duration"}}: {{messageInfos.temporaryHp.duration}}
         </div>
     {{/if}}
-    {{#if item.system.consumeProperties.effects}}
-        <div>
-            {{localize "WITCHER.Item.ConsumeProperties.Chat.consumeEffects"}}:
-        </div>
-        {{#each statusEffects as |effect|}}
+    {{#if messageInfos.effectsApplied}}
+        {{#if item.system.consumeProperties.effects}}
             <div>
-                <span>{{effect.name}}</span>
-                <img class='chat-icon' src='{{effect.statusEffect.img}}' alt="status effect icon" />
-                <span> {{localize effect.statusEffect.name}}</span>
+                {{localize "WITCHER.Item.ConsumeProperties.Chat.consumeEffects"}}:
             </div>
-        {{/each}}
+            {{#each statusEffects as |effect|}}
+                <div>
+                    <span>{{effect.name}}</span>
+                    <img class='chat-icon' src='{{effect.statusEffect.img}}' alt="status effect icon" />
+                    <span> {{localize effect.statusEffect.name}}</span>
+                </div>
+            {{/each}}
+        {{/if}}
     {{/if}}
 </div>

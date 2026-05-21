@@ -232,7 +232,7 @@ export default class WitcherMonsterSheet extends WitcherActorSheet {
             ok: {
                 callback: (event, button, dialog) => button.form.elements.multiple.value
             },
-            rejectClose: true
+            rejectClose: false
         });
 
         if (!multiplier) return;

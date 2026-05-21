@@ -93,8 +93,7 @@ export let castSpellMixin = {
             data
         );
 
-        let { staCostTotal, customModifier, isExtraAttack, focusValue, secondFocusValue, location } =
-            await DialogV2.prompt({
+        let result = await DialogV2.prompt({
                 window: { title: `${game.i18n.localize('WITCHER.Spell.MagicCost')}` },
                 content: dialogTemplate,
                 modal: true,
@@ -110,8 +109,11 @@ export let castSpellMixin = {
                         };
                     }
                 },
-                rejectClose: true
+                rejectClose: false
             });
+
+        if (!result) return;
+        let { staCostTotal, customModifier, isExtraAttack, focusValue, secondFocusValue, location } = result;
 
         let origStaCost = staCostTotal;
 

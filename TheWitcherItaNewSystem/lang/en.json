@@ -532,6 +532,7 @@
                 "doesHeal": "Applies heal",
                 "heal": "Heals for",
                 "addsTempHp": "Add temporary health",
+                "isWitcherPotion": "Witcher Potion/Decoction",
                 "temporaryHp": {
                     "value": "Amount",
                     "duration": "Duration"
@@ -539,7 +540,9 @@
                 "Chat": {
                     "healedFor": "healed for",
                     "tempHpAdded": "Added temporary health",
-                    "consumeEffects": "applied these effects"
+                    "consumeEffects": "applied these effects",
+                    "halflingNoBenefits": "Halflings cannot benefit from Witcher alchemical preparations!",
+                    "failedWitcherPotion": "Failed the Endurance check (DC 18) for Witcher potion! Positive benefits denied and Poisoned status inflicted."
                 }
             },
             "DamageProperties": {

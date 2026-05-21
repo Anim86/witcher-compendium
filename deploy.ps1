@@ -21,9 +21,16 @@ $systemDest = Join-Path $foundryBase "Data\systems\TheWitcherItaNewSystem"
 Write-Host "Starting deployment to: $foundryBase" -ForegroundColor Cyan
 Write-Host "Source path: $PSScriptRoot" -ForegroundColor Gray
 
-# Stop FoundryVTT service (se installato come servizio)
-Write-Host "Stopping FoundryVTT service (if running)..." -ForegroundColor Yellow
+# Stop FoundryVTT service (se installato come servizio) o processo desktop
+Write-Host "Stopping FoundryVTT (if running)..." -ForegroundColor Yellow
 Stop-Service -Name "FoundryVTT" -ErrorAction SilentlyContinue
+$foundryProcess = Get-Process -Name "FoundryVTT" -ErrorAction SilentlyContinue
+if ($foundryProcess) {
+    Write-Host "Rilevato processo FoundryVTT attivo. Chiusura in corso per sbloccare i file del database..." -ForegroundColor Yellow
+    Stop-Process -Name "FoundryVTT" -Force
+    Start-Sleep -Seconds 2
+}
+
 
 # Deploy Module
 if (Test-Path $moduleSrc) {

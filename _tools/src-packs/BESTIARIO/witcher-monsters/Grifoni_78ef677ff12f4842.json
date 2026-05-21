@@ -200,6 +200,23 @@
                 "effects": "Sanguinamento (50%)",
                 "rateOfFire": 1
             }
+        },
+        {
+            "_id": "b9b3a184b1214ca0",
+            "name": "Trofeo: Grifone",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/trofeo_grifone.webp",
+            "system": {
+                "description": "<p>Il personaggio tira due volte per le Ferite Critiche e sceglie quale risultato applicare.</p>",
+                "weight": 0,
+                "cost": 0,
+                "sourcebook": "TC p.126"
+            },
+            "effects": [],
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
         }
     ],
     "effects": [],

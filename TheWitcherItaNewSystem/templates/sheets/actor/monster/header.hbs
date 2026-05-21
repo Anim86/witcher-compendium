@@ -4,18 +4,18 @@
             <img src="{{monsterIcon system.monsterType}}" class="type-icon" />
             <div class="type-meta">
                 <span class="type-label">{{localize (lookup config.monsterTypes system.monsterType)}}</span>
-                {{#if system.difficulty}}
-                <div class="mini-badge difficulty {{system.difficulty}}">
-                    <i class="fas fa-skull"></i>
-                    <span>{{localize (lookup config.monsterDifficulty system.difficulty)}}</span>
-                </div>
-                {{/if}}
             </div>
         </div>
 
         <div class="name-section">
             <input name="name" type="text" value="{{actor.name}}" class="monster-name-input" placeholder="{{localize 'WITCHER.Name'}}" {{#unless isEditable}}readonly{{/unless}} />
             <div class="badges-row">
+                {{#if system.difficulty}}
+                <div class="compact-badge difficulty-badge {{system.difficulty}}">
+                    <i class="fas fa-skull"></i>
+                    <span>{{localize (lookup config.monsterDifficulty system.difficulty)}}</span>
+                </div>
+                {{/if}}
                 {{#if system.intelligence}}
                 <div class="compact-badge" title="{{localize 'WITCHER.Stats.INT.Abbr'}}">
                     <i class="fas fa-brain"></i>

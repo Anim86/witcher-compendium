@@ -525,6 +525,7 @@
                 "doesHeal": "Applica cura",
                 "heal": "Cura per",
                 "addsTempHp": "Aggiunge salute temporanea",
+                "isWitcherPotion": "Pozione/Decotto da Witcher",
                 "temporaryHp": {
                     "value": "Quantità",
                     "duration": "Durata"
@@ -532,7 +533,9 @@
                 "Chat": {
                     "healedFor": "curato per",
                     "tempHpAdded": "Salute temporanea aggiunta",
-                    "consumeEffects": "ha applicato questi effetti"
+                    "consumeEffects": "ha applicato questi effetti",
+                    "halflingNoBenefits": "I mezzuomini non possono beneficiare dei preparati alchemici da Witcher!",
+                    "failedWitcherPotion": "Ha fallito la prova di Tempra (CD 18) per la pozione da Witcher! Effetti positivi negati e stato Avvelenato inflitto."
                 }
             },
             "DamageProperties": {

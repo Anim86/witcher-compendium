@@ -2,6 +2,7 @@
     data-tab="consumableProperties">
     {{formGroup systemFields.isConsumable value=item.system.isConsumable localize=true}}
     {{#if item.system.isConsumable}}
+        {{formGroup systemFields.consumeProperties.fields.isWitcherPotion value=item.system.consumeProperties.isWitcherPotion localize=true}}
         {{formGroup systemFields.consumeProperties.fields.doesHeal value=item.system.consumeProperties.doesHeal localize=true}}
         {{#if item.system.consumeProperties.doesHeal}}
             {{formGroup systemFields.consumeProperties.fields.heal value=item.system.consumeProperties.heal localize=true}}

@@ -211,6 +211,24 @@
                 "effects": "Veleno Bohun Upas (CD 15)",
                 "rateOfFire": 1
             }
+        },
+        {
+            "_id": "3525ace98585dd8e",
+            "name": "Trofeo: Manticora",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/trofeo_manticora.webp",
+            "system": {
+                "description": "<p>La CD per resistere o rimuovere i veleni usati dal personaggio aumenta di 2.</p>",
+                "weight": 0,
+                "cost": 0,
+                "quantity": 1,
+                "sourcebook": "TC p.126"
+            },
+            "effects": [],
+            "_stats": {
+                "coreVersion": 14,
+                "systemId": "TheWitcherItaNewSystem"
+            }
         }
     ],
     "_id": "16b379d2c05e4f8a",

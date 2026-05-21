@@ -194,6 +194,24 @@
                 "effects": "Nessuno",
                 "rateOfFire": 2
             }
+        },
+        {
+            "_id": "3273d45e1f3e09b0",
+            "name": "Trofeo: Botchling",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/trofeo_botchling.webp",
+            "system": {
+                "description": "<p>Il personaggio diventa Temuto, se lo è già i bonus sono raddoppiati.</p>",
+                "weight": 0,
+                "cost": 0,
+                "quantity": 1,
+                "sourcebook": "TC p.126"
+            },
+            "effects": [],
+            "_stats": {
+                "coreVersion": 14,
+                "systemId": "TheWitcherItaNewSystem"
+            }
         }
     ],
     "_id": "e718b2094dc653fa",

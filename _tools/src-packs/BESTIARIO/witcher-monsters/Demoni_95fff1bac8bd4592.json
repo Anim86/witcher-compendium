@@ -274,6 +274,24 @@
                 "systemId": "TheWitcherItaNewSystem",
                 "coreVersion": 14
             }
+        },
+        {
+            "_id": "0cbd5f329f32cd4d",
+            "name": "Trofeo: Demonio",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/trofeo_demonio.webp",
+            "system": {
+                "description": "<p>Il personaggio ottiene +2 alle prove di Lanciare Incantesimi e Resistere alla Magia.</p>",
+                "weight": 0,
+                "cost": 0,
+                "quantity": 1,
+                "sourcebook": "TC p.126"
+            },
+            "effects": [],
+            "_stats": {
+                "coreVersion": 14,
+                "systemId": "TheWitcherItaNewSystem"
+            }
         }
     ],
     "effects": [],

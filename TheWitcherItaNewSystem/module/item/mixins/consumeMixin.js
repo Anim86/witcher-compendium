@@ -1,4 +1,4 @@
-import { applyActiveEffectToActorViaId } from '../../scripts/temporaryEffects/applyActiveEffect.js';
+import { applyActiveEffectToActorViaId, applyToxicityToActor } from '../../scripts/temporaryEffects/applyActiveEffect.js';
 
 export let consumeMixin = {
     async consume() {
@@ -140,26 +140,117 @@ export let consumeMixin = {
         
         if (action !== "yes") return false;
 
-        let messageInfos = {};
-        if (properties.doesHeal) {
-            let heal = parseInt(await this.actor.calculateHealValue(properties.heal));
-            this.actor?.update({ 'system.derivedStats.hp.value': this.actor.system.derivedStats.hp.value + heal });
-            messageInfos.heal = heal;
-        }
+        // Detect if it is a Witcher potion/decoction
+        const isWitcherPotion = (() => {
+            if (this.system.consumeProperties?.isWitcherPotion) return true;
+            
+            const typeLower = (this.system.type || '').toLowerCase();
+            if (typeLower === 'decoction' || typeLower === 'decotto') return true;
+            
+            const nameLower = (this.name || '').toLowerCase();
+            const witcherNames = [
+                "bufera di neve", "blizzard",
+                "filtro di petri", "petri's philter",
+                "foresta di maribor", "maribor forest",
+                "gatto", "cat",
+                "gufo fulvo", "tawny owl",
+                "luna piena", "full moon",
+                "miele bianco", "white honey",
+                "orca assassina", "killer whale",
+                "rigogolo dorato", "golden oriole",
+                "rondine", "swallow",
+                "sangue nero", "black blood",
+                "tuono", "thunderbolt",
+                "arachas", "demonio", "fiend", "grifone", "griffin", "katakan",
+                "lupo mannaro", "werewolf", "nekker", "strega dei sepolcri", "grave hag",
+                "troll", "viverna", "wyvern", "wraith diurno", "noonwraith"
+            ];
+            
+            return witcherNames.some(wName => nameLower.includes(wName));
+        })();
 
-        if (properties.temporaryHp != '0') {
-            if (
-                this.actor.addTemporaryHealth(properties.temporaryHp.value, properties.temporaryHp.duration, this.uuid)
-            ) {
-                messageInfos.temporaryHp = {
-                    tempHp: properties.temporaryHp.value,
-                    duration: properties.temporaryHp.duration
-                };
+        // Check if the actor is a Witcher
+        const isWitcher = this.actor.getList('profession').some(p => {
+            const pName = (p.name || '').toLowerCase();
+            return pName.includes('witcher') || pName.includes('strigo');
+        });
+
+        let applyBenefits = true;
+        let rollFailed = false;
+
+        if (isWitcherPotion && !isWitcher) {
+            try {
+                // rollSkill uses DialogV2.prompt which rejects if closed. CD 18.
+                const rollResult = await this.actor.rollSkill('endurance', 18);
+                if (!rollResult) {
+                    return false; // Cancelled
+                }
+                if (rollResult.total < 18) {
+                    rollFailed = true;
+                    applyBenefits = false;
+                }
+            } catch (e) {
+                // Rejection or closure of the dialog aborts the consumption
+                return false;
             }
         }
 
-        this.actor.applyStatus(properties.effects);
-        this.actor.removeStatus(this.system.consumeProperties.removesEffects);
+        // Halflings never get benefits from Witcher potions
+        const isHalfling = this.actor.items.some(i => i.type === 'race' && i.name.toLowerCase().includes('halfling'));
+        if (isHalfling && isWitcherPotion) {
+            applyBenefits = false;
+        }
+
+        let messageInfos = {};
+        if (isHalfling && isWitcherPotion) {
+            messageInfos.halflingNoBenefits = true;
+        }
+        
+        // Apply benefits if allowed
+        if (applyBenefits) {
+            messageInfos.effectsApplied = true;
+            if (properties.doesHeal && properties.heal) {
+                let heal = parseInt(await this.actor.calculateHealValue(properties.heal));
+                this.actor?.update({ 'system.derivedStats.hp.value': this.actor.system.derivedStats.hp.value + heal });
+                messageInfos.heal = heal;
+            }
+
+            if (properties.temporaryHp != '0' && properties.temporaryHp?.value) {
+                if (
+                    this.actor.addTemporaryHealth(properties.temporaryHp.value, properties.temporaryHp.duration, this.uuid)
+                ) {
+                    messageInfos.temporaryHp = {
+                        tempHp: properties.temporaryHp.value,
+                        duration: properties.temporaryHp.duration
+                    };
+                }
+            }
+
+            this.actor.applyStatus(properties.effects);
+            this.actor.removeStatus(this.system.consumeProperties.removesEffects);
+
+            // Apply modifiers
+            applyActiveEffectToActorViaId(this.actor.uuid, this.uuid, 'applySelf');
+        }
+
+        // Always apply toxicity if there is one
+        const toxicityEffectId = await applyToxicityToActor(this.actor.uuid, this.uuid);
+
+        if (rollFailed) {
+            messageInfos.poisonedOnFailure = true;
+            // Track the failed potion
+            if (toxicityEffectId) {
+                const currentFailed = Array.from(this.actor.getFlag('TheWitcherItaNewSystem', 'failedPotions') || []);
+                currentFailed.push(toxicityEffectId);
+                await this.actor.setFlag('TheWitcherItaNewSystem', 'failedPotions', currentFailed);
+            }
+            await this.actor.setFlag('TheWitcherItaNewSystem', 'toxicityPoisoned', true);
+            
+            // Toggle poison immediately if not already poisoned
+            if (!this.actor.statuses.has('poison')) {
+                await this.actor.toggleStatusEffect('poison');
+            }
+        }
 
         // Special handling for White Honey (Miele Bianco)
         if (this.name.includes('Miele Bianco') || this.name.includes('White Honey')) {
@@ -167,9 +258,17 @@ export let consumeMixin = {
             if (effectsToDelete.length > 0) {
                 await this.actor.deleteEmbeddedDocuments('ActiveEffect', effectsToDelete);
             }
+            // Clear failed potions and toxicityPoisoned flags
+            await this.actor.update({
+                'flags.TheWitcherItaNewSystem.failedPotions': [],
+                'flags.TheWitcherItaNewSystem.toxicityPoisoned': false
+            });
+            // Untoggle poison status if active
+            if (this.actor.statuses.has('poison')) {
+                await this.actor.toggleStatusEffect('poison');
+            }
         }
 
-        applyActiveEffectToActorViaId(this.actor.uuid, this.uuid, 'applySelf');
         this.createConsumeMessage(messageInfos);
         return true;
     },

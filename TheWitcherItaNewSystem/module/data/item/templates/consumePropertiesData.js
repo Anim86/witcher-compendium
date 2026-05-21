@@ -14,6 +14,8 @@ export default class ConsumablePropertiesData extends foundry.abstract.DataModel
                 duration: new fields.NumberField({ initial: 0, label: 'WITCHER.Item.ConsumeProperties.temporaryHp.duration' })
             }),
 
+            isWitcherPotion: new fields.BooleanField({ initial: false, label: 'WITCHER.Item.ConsumeProperties.isWitcherPotion' }),
+
             effects: new fields.ArrayField(new fields.SchemaField(itemEffect())),
             removesEffects: new fields.ArrayField(new fields.SchemaField(itemEffect()))
         };

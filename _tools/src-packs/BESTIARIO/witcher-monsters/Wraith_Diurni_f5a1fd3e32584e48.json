@@ -188,6 +188,24 @@
                 "effects": "Spesso utilizza anche un colpo speciale che prosciuga vitalità",
                 "rateOfFire": 2
             }
+        },
+        {
+            "_id": "5491e81a30c34f2c",
+            "name": "Trofeo: Wraith Diurno",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/trofeo_wraith_diurno.webp",
+            "system": {
+                "description": "<p>Il personaggio è immune alla paura.</p>",
+                "weight": 0,
+                "cost": 0,
+                "quantity": 1,
+                "sourcebook": "TC p.126"
+            },
+            "effects": [],
+            "_stats": {
+                "coreVersion": 14,
+                "systemId": "TheWitcherItaNewSystem"
+            }
         }
     ],
     "effects": [],

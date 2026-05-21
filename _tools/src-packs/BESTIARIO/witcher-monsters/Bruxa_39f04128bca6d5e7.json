@@ -215,6 +215,23 @@
                 "effects": "Sanguinamento (50%), Trapassare",
                 "rateOfFire": 2
             }
+        },
+        {
+            "_id": "30d16057087f4259",
+            "name": "Trofeo: Bruxa",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/trofeo_bruxa.webp",
+            "system": {
+                "description": "<p>Il personaggio può comunicare telepaticamente con gli individui entro 20m.</p>",
+                "weight": 0,
+                "cost": 0,
+                "sourcebook": "TC p.126"
+            },
+            "effects": [],
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
         }
     ],
     "_id": "39f04128bca6d5e7",

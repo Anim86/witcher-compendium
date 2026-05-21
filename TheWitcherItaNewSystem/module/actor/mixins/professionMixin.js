@@ -88,22 +88,7 @@ export let professionMixin = {
             data
         );
 
-        let {
-            isExtraAttack,
-            location,
-            targetOutsideLOS,
-            outsideLOS,
-            isProne,
-            isPinned,
-            isActivelyDodging,
-            isMoving,
-            isAmbush,
-            isBlinded,
-            isSilhouetted,
-            customAtt,
-            damageType,
-            customDmg
-        } = await DialogV2.prompt({
+        let result = await DialogV2.prompt({
             window: {
                 title: `${game.i18n.localize('WITCHER.Dialog.attackWith')}: ${skill.skillName}`,
                 contentClasses: ['scrollable']
@@ -133,8 +118,26 @@ export let professionMixin = {
                     };
                 }
             },
-            rejectClose: true
+            rejectClose: false
         });
+
+        if (!result) return;
+        let {
+            isExtraAttack,
+            location,
+            targetOutsideLOS,
+            outsideLOS,
+            isProne,
+            isPinned,
+            isActivelyDodging,
+            isMoving,
+            isAmbush,
+            isBlinded,
+            isSilhouetted,
+            customAtt,
+            damageType,
+            customDmg
+        } = result;
 
         let damage = {
             properties: foundry.utils.deepClone(skillAttack.damageProperties),
@@ -246,8 +249,9 @@ export let professionMixin = {
                     return button.form.elements.choosen.value;
                 }
             },
-            rejectClose: true
+            rejectClose: false
         });
+        if (!itemId) return;
 
         let weapon = this.items.get(itemId);
         this.weaponAttack(weapon, {
@@ -276,8 +280,10 @@ export let professionMixin = {
             ok: {
                 callback: (event, button, dialog) => button.form.elements.customModifiers.value
             },
-            rejectClose: true
+            rejectClose: false
         });
+
+        if (customMod === null || customMod === undefined) return;
 
         if (customMod < 0) {
             rollFormula += !displayRollDetails
@@ -349,6 +355,7 @@ export let professionMixin = {
 
     findSkillWithName(skillName) {
         let profession = this.getList('profession')[0];
+        if (!profession) return null;
 
         if (profession.system.definingSkill.skillName === skillName) {
             return { skill: profession.system.definingSkill, path: 'definingSkill' };

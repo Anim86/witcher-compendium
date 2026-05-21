@@ -1,6 +1,7 @@
 import {
     applyActiveEffectToActor,
-    applyActiveEffectToActorViaId
+    applyActiveEffectToActorViaId,
+    applyToxicityToActor
 } from '../scripts/temporaryEffects/applyActiveEffect.js';
 import { applyStatusEffectToActor } from '../scripts/statusEffects/applyStatusEffect.js';
 
@@ -11,6 +12,7 @@ export const registerSocketListeners = function () {
         applyStatusEffectToActor,
         applyActiveEffectToActor,
         applyActiveEffectToActorViaId,
+        applyToxicityToActor,
         restoreReliability: 'uuid',
         createRegionFromTemplateUuids: 'uuid',
         addItem: 'uuid'
