@@ -158,9 +158,16 @@
     },
 
     {
-      "name": "witcher-alchemy",
-      "label": "Alchimia",
-      "path": "packs/ALCHIMIA_E_ARTIGIANATO/witcher-alchemy",
+      "name": "witcher-potions",
+      "label": "Pozioni",
+      "path": "packs/ALCHIMIA_E_ARTIGIANATO/witcher-potions",
+      "type": "Item",
+      "system": "TheWitcherItaNewSystem"
+    },
+    {
+      "name": "witcher-formulas",
+      "label": "Ricette",
+      "path": "packs/ALCHIMIA_E_ARTIGIANATO/witcher-formulas",
       "type": "Item",
       "system": "TheWitcherItaNewSystem"
     },

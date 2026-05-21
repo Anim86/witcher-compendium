@@ -1,28 +1,28 @@
 {
-    "_id": "4451011cdabf4418",
-    "name": "Schema: Acciaio",
-    "type": "diagrams",
-    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_acciaio.webp",
-    "system": {
-        "description": "<p>Schema per la fabbricazione di: Acciaio. Componenti richiesti: Ferro (x1), Carbone (x5). Difficoltà Manifattura: CD 15. Tempo: 1 ora.</p>",
-        "weight": 0,
-        "cost": 0,
-        "components": [
-            "Acciaio 18 5 ore Acciaio (x2), Filo (x3), Acquaforte (x2) 109 217"
-        ],
-        "difficulty": 15,
-        "time": "1 ora",
-        "sourcebook": "MB 92"
-    },
-    "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-    }
+  "_id": "4451011cdabf4418",
+  "name": "Schema: Acciaio",
+  "type": "diagrams",
+  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_acciaio.webp",
+  "system": {
+    "description": "<p>Schema per la fabbricazione di: Acciaio. Componenti richiesti: Ferro (x1), Carbone (x5). Difficoltà Manifattura: CD 15. Tempo: 1 ora.</p>",
+    "weight": 0,
+    "cost": 0,
+    "components": [
+      "Acciaio 18 5 ore Acciaio (x2), Filo (x3), Acquaforte (x2) 109 217"
+    ],
+    "difficulty": 15,
+    "time": "1 ora",
+    "sourcebook": "MB 92"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

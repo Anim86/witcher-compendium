@@ -1,0 +1,23 @@
+{
+  "_id": "9418501c8feea066",
+  "name": "Fulmine",
+  "type": "valuable",
+  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-alchemy/fulmine.webp",
+  "system": {
+    "description": "<p>Potente moltiplicatore di forza per soldati e mercenari.</p><p><b>Effetti:</b> +3 danni al prossimo attacco fisico.</p><p><b>Durata:</b> Istantanea</p><p><b>Tossicità:</b> 75%</p>",
+    "quantity": "1",
+    "weight": 0.1,
+    "cost": 75,
+    "sourcebook": "TC 117",
+    "type": "alchemical",
+    "rarity": "R",
+    "location": "",
+    "substanceType": ""
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
+}

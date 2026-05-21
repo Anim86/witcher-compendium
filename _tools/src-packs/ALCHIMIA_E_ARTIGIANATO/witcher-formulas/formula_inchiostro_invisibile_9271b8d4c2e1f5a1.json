@@ -1,0 +1,23 @@
+{
+  "name": "Formula: Inchiostro Invisibile",
+  "_id": "9271b8d4c2e1f5a1",
+  "system": {
+    "recipe": [],
+    "description": "<p>Una formula per preparare Inchiostro Invisibile. <em>Ingredienti specifici da verificare sul manuale fisico (colonna componenti non estratta da OCR — Pag146/Pag249 MB).</em></p>",
+    "weight": 0.1,
+    "cost": 56,
+    "sourcebook": "MB 146",
+    "craftingTime": "5 Round",
+    "type": "alchemy",
+    "rarity": "C",
+    "quantity": 1,
+    "learned": false,
+    "craftingCc": 11
+  },
+  "type": "diagrams",
+  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-alchemy/formula_inchiostro_invisibile.webp",
+  "_stats": {
+    "coreVersion": 14,
+    "systemId": "TheWitcherItaNewSystem"
+  }
+}

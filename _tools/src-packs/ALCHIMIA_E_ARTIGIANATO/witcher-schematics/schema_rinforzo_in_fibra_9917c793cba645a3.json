@@ -1,28 +1,28 @@
 {
-    "_id": "9917c793cba645a3",
-    "name": "Schema: Rinforzo in Fibra",
-    "type": "diagrams",
-    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_rinforzo_in_fibra.webp",
-    "system": {
-        "description": "<p>Uno schema dettagliato che illustra i procedimenti necessari per forgiare o fabbricare: Rinforzo in Fibra.</p>",
-        "weight": 0,
-        "cost": 0,
-        "components": [
-            "Fibra 14 3 ore Lino a Doppia Trama (x1), Filo (x2) 28 60"
-        ],
-        "difficulty": 14,
-        "time": "3 ore",
-        "sourcebook": "MB 92"
-    },
-    "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-    }
+  "_id": "9917c793cba645a3",
+  "name": "Schema: Rinforzo in Fibra",
+  "type": "diagrams",
+  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_rinforzo_in_fibra.webp",
+  "system": {
+    "description": "<p>Uno schema dettagliato che illustra i procedimenti necessari per forgiare o fabbricare: Rinforzo in Fibra.</p>",
+    "weight": 0,
+    "cost": 0,
+    "components": [
+      "Fibra 14 3 ore Lino a Doppia Trama (x1), Filo (x2) 28 60"
+    ],
+    "difficulty": 14,
+    "time": "3 ore",
+    "sourcebook": "MB 92"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

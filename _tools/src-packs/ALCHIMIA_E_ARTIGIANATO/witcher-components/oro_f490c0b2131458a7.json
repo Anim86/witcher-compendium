@@ -1,26 +1,26 @@
 {
-    "_id": "f490c0b2131458a7",
-    "name": "Oro",
-    "type": "component",
-    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-components/oro.webp",
-    "system": {
-        "description": "<p>Il più nobile dei metalli, usato per ornamenti di altissimo pregio.</p>",
-        "category": "componente",
-        "quantity": "1",
-        "weight": 1,
-        "cost": 85,
-        "sourcebook": "MB 131",
-        "type": "crafting-material",
-        "rarity": "R",
-        "location": "Montagne e sottoterra",
-        "quantityObtainable": "",
-        "forage": "",
-        "substanceType": ""
-    },
-    "effects": [],
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-    }
+  "_id": "f490c0b2131458a7",
+  "name": "Oro",
+  "type": "component",
+  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-components/oro.webp",
+  "system": {
+    "description": "<p>Il più nobile dei metalli, usato per ornamenti di altissimo pregio.</p>",
+    "category": "componente",
+    "quantity": "1",
+    "weight": 1,
+    "cost": 85,
+    "sourcebook": "MB 131",
+    "type": "crafting-material",
+    "rarity": "R",
+    "location": "Montagne e sottoterra",
+    "quantityObtainable": "",
+    "forage": "",
+    "substanceType": ""
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

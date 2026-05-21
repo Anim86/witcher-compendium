@@ -1,29 +1,29 @@
 {
-    "_id": "5bd2aea8288b4fdb",
-    "name": "Schema: Palvese",
-    "type": "diagrams",
-    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_palvese.webp",
-    "system": {
-        "description": "<p>Uno schema dettagliato che illustra i procedimenti necessari per forgiare o fabbricare: Palvese.</p>",
-        "weight": 0,
-        "cost": 0,
-        "components": [
-            "Palvese 19 5 ore Legname Indurito (x10), Cuoio Indurito (x3), Cerume di Orco (x1), Acciaio Nero (x1), Grasso di Estere (x2) 378 750",
-            "Legname Indurito (x10), Cuoio Indurito (x3), Cerume di Orco (x1), Acciaio Nero (x1), Grasso di Estere (x2), Olio Scurente (x1), Ceneri (x10), Acquaforte (x2)"
-        ],
-        "difficulty": 19,
-        "time": "5 ore",
-        "sourcebook": "MB 82"
-    },
-    "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-    }
+  "_id": "5bd2aea8288b4fdb",
+  "name": "Schema: Palvese",
+  "type": "diagrams",
+  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_palvese.webp",
+  "system": {
+    "description": "<p>Uno schema dettagliato che illustra i procedimenti necessari per forgiare o fabbricare: Palvese.</p>",
+    "weight": 0,
+    "cost": 0,
+    "components": [
+      "Palvese 19 5 ore Legname Indurito (x10), Cuoio Indurito (x3), Cerume di Orco (x1), Acciaio Nero (x1), Grasso di Estere (x2) 378 750",
+      "Legname Indurito (x10), Cuoio Indurito (x3), Cerume di Orco (x1), Acciaio Nero (x1), Grasso di Estere (x2), Olio Scurente (x1), Ceneri (x10), Acquaforte (x2)"
+    ],
+    "difficulty": 19,
+    "time": "5 ore",
+    "sourcebook": "MB 82"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

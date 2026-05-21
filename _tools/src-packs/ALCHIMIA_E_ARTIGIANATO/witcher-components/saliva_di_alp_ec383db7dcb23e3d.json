@@ -1,26 +1,26 @@
 {
-    "_id": "ec383db7dcb23e3d",
-    "name": "Saliva di Alp",
-    "type": "component",
-    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-components/saliva_di_alp.webp",
-    "system": {
-        "description": "<p>Sostanza corrosiva estratta dalle ghiandole di un Alp. Utile per pozioni e unguenti.</p>",
-        "category": "componente",
-        "quantity": "1",
-        "weight": 0.1,
-        "cost": 90,
-        "sourcebook": "MS",
-        "type": "crafting-material",
-        "rarity": "R",
-        "location": "Alp",
-        "quantityObtainable": "",
-        "forage": "",
-        "substanceType": ""
-    },
-    "effects": [],
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-    }
+  "_id": "ec383db7dcb23e3d",
+  "name": "Saliva di Alp",
+  "type": "component",
+  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-components/saliva_di_alp.webp",
+  "system": {
+    "description": "<p>Sostanza corrosiva estratta dalle ghiandole di un Alp. Utile per pozioni e unguenti.</p>",
+    "category": "componente",
+    "quantity": "1",
+    "weight": 0.1,
+    "cost": 90,
+    "sourcebook": "MS",
+    "type": "crafting-material",
+    "rarity": "R",
+    "location": "Alp",
+    "quantityObtainable": "",
+    "forage": "",
+    "substanceType": ""
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

@@ -1,28 +1,28 @@
 {
-    "_id": "33f1696beb94407f",
-    "name": "Schema: Brache a Doppia Trama",
-    "type": "diagrams",
-    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_brache_a_doppia_trama.webp",
-    "system": {
-        "description": "<p>Schema per la fabbricazione di: Brache a Doppia Trama. Componenti richiesti: Lino a Doppia Trama (x4), Filo (x6). Difficoltà Manifattura: CD 15. Tempo: 8 ore.</p>",
-        "weight": 0,
-        "cost": 0,
-        "components": [
-            "Brache a Doppia Trama 15 8 ore Lino a Doppia Trama (x4), Filo (x6) 165 336"
-        ],
-        "difficulty": 15,
-        "time": "8 ore",
-        "sourcebook": "MB 82"
-    },
-    "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-    }
+  "_id": "33f1696beb94407f",
+  "name": "Schema: Brache a Doppia Trama",
+  "type": "diagrams",
+  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_brache_a_doppia_trama.webp",
+  "system": {
+    "description": "<p>Schema per la fabbricazione di: Brache a Doppia Trama. Componenti richiesti: Lino a Doppia Trama (x4), Filo (x6). Difficoltà Manifattura: CD 15. Tempo: 8 ore.</p>",
+    "weight": 0,
+    "cost": 0,
+    "components": [
+      "Brache a Doppia Trama 15 8 ore Lino a Doppia Trama (x4), Filo (x6) 165 336"
+    ],
+    "difficulty": 15,
+    "time": "8 ore",
+    "sourcebook": "MB 82"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

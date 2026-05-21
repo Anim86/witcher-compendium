@@ -1,26 +1,26 @@
 {
-    "_id": "679285a56392b51a",
-    "name": "Pelle di Mucca",
-    "type": "component",
-    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-components/pelle_di_mucca.webp",
-    "system": {
-        "description": "<p>Cuoio economico e abbondante per lavori di manifattura comune.</p>",
-        "category": "componente",
-        "quantity": "1",
-        "weight": 5,
-        "cost": 10,
-        "sourcebook": "MB 130",
-        "type": "crafting-material",
-        "rarity": "C",
-        "location": "Acquistato",
-        "quantityObtainable": "",
-        "forage": "",
-        "substanceType": ""
-    },
-    "effects": [],
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-    }
+  "_id": "679285a56392b51a",
+  "name": "Pelle di Mucca",
+  "type": "component",
+  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-components/pelle_di_mucca.webp",
+  "system": {
+    "description": "<p>Cuoio economico e abbondante per lavori di manifattura comune.</p>",
+    "category": "componente",
+    "quantity": "1",
+    "weight": 5,
+    "cost": 10,
+    "sourcebook": "MB 130",
+    "type": "crafting-material",
+    "rarity": "C",
+    "location": "Acquistato",
+    "quantityObtainable": "",
+    "forage": "",
+    "substanceType": ""
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

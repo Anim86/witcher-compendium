@@ -1,21 +1,21 @@
 {
-    "name": "Pietra Elementale",
-    "type": "component",
-    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-components/pietra_elementale.webp",
-    "system": {
-        "description": "<p>Pietra magica che può essere recuperata dai resti di qualsiasi tipo di Elementale, contenente una potente concentrazione dell'elemento Quebrith.</p>",
-        "quantity": 1,
-        "weight": 0.5,
-        "cost": 134,
-        "category": "monster",
-        "substanceType": "quebrith",
-        "sourcebook": "DW 143",
-        "rarity": "Scarsa",
-        "location": "Reperibile sugli Elementali"
-    },
-    "_id": "6b5a43210f9e8d7c",
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-    }
+  "name": "Pietra Elementale",
+  "type": "component",
+  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-components/pietra_elementale.webp",
+  "system": {
+    "description": "<p>Pietra magica che può essere recuperata dai resti di qualsiasi tipo di Elementale, contenente una potente concentrazione dell'elemento Quebrith.</p>",
+    "quantity": 1,
+    "weight": 0.5,
+    "cost": 134,
+    "category": "monster",
+    "substanceType": "quebrith",
+    "sourcebook": "DW 143",
+    "rarity": "Scarsa",
+    "location": "Reperibile sugli Elementali"
+  },
+  "_id": "6b5a43210f9e8d7c",
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

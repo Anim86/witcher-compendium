@@ -1,28 +1,28 @@
 {
-    "_id": "47a868117dad449e",
-    "name": "Schema: Bastone da Passeggio Elfico",
-    "type": "diagrams",
-    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_bastone_da_passeggio_elfico.webp",
-    "system": {
-        "description": "<p>Uno schema dettagliato che illustra i procedimenti necessari per forgiare o fabbricare: Bastone da Passeggio Elfico.</p>",
-        "weight": 0,
-        "cost": 1470,
-        "components": [
-            "Legname Indurito (x6), Oro (x1), Grasso di Estere (x6), Pelle di Lupo (x2), Acciaio Nero (x1), Seta (x1), Quintessenza (x3), Gemma (x1)"
-        ],
-        "difficulty": 25,
-        "time": "13 ore",
-        "sourcebook": "MB 85"
-    },
-    "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-    }
+  "_id": "47a868117dad449e",
+  "name": "Schema: Bastone da Passeggio Elfico",
+  "type": "diagrams",
+  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_bastone_da_passeggio_elfico.webp",
+  "system": {
+    "description": "<p>Uno schema dettagliato che illustra i procedimenti necessari per forgiare o fabbricare: Bastone da Passeggio Elfico.</p>",
+    "weight": 0,
+    "cost": 1470,
+    "components": [
+      "Legname Indurito (x6), Oro (x1), Grasso di Estere (x6), Pelle di Lupo (x2), Acciaio Nero (x1), Seta (x1), Quintessenza (x3), Gemma (x1)"
+    ],
+    "difficulty": 25,
+    "time": "13 ore",
+    "sourcebook": "MB 85"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

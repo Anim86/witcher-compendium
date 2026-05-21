@@ -1,0 +1,23 @@
+{
+  "_id": "b86b6da09193b060",
+  "name": "Erbe Anestetiche",
+  "type": "valuable",
+  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-alchemy/erbe_anestetiche.webp",
+  "system": {
+    "description": "<p>Miscela di erbe naturali per lenire i dolori più intensi.</p><p><b>Effetti:</b> Riduce di 2 le penalità per ferite critiche o vicino alla morte.</p><p><b>Durata:</b> 2d10 round</p><p><b>Tossicità:</b> 0%</p>",
+    "quantity": "1",
+    "weight": 0.1,
+    "cost": 12,
+    "sourcebook": "MB 89",
+    "type": "alchemical",
+    "rarity": "D",
+    "location": "",
+    "substanceType": ""
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
+}

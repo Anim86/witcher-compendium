@@ -1,29 +1,29 @@
 {
-    "_id": "9e5b41587b5b4184",
-    "name": "Schema: Mannaia Nanica",
-    "type": "diagrams",
-    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_mannaia_nanica.webp",
-    "system": {
-        "description": "<p>Costoliere Torrwr Medaglione Witcher Frenesia 7 Pozione Bufera di Neve Pozione Rigogolo Dorato Pozione Usignolo Decotto di lupo mannaro Trasmutazione 7 Decotto di strega dei sepolcri Decotto di Arachas Bomba vento del Nord (x3) Bomba fungo del Diavolo Parare Frecce 10 Coltelli da lancio (x4) Brigantina Brache Corazzate Attrezzatura Alchemica Colpo Repentino 9 Veleno Nero (x3) Cloroformio (x3) Bandoliera Cavallo sellato Turbine 6</p>",
-        "weight": 0,
-        "cost": 0,
-        "components": [
-            "Mannaia Nanica 19 10 ore Acciaio Mahakaman (x2), Legname Indurito (x1), Cuoio (x1), Cote (x1), Olio di Papero (x1), Argilla (x5) 374 750",
-            "Acciaio Mahakaman (x3), Legno Indurito (x3), Cuoio Indurito (x2), Pelle di Lupo (x1), Cote (x1), Grasso di Estere (x3), Olio di Papero (x2), Argilla (x4), Lino (x1)"
-        ],
-        "difficulty": 19,
-        "time": "10 ore",
-        "sourcebook": "MB 21"
-    },
-    "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-    }
+  "_id": "9e5b41587b5b4184",
+  "name": "Schema: Mannaia Nanica",
+  "type": "diagrams",
+  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_mannaia_nanica.webp",
+  "system": {
+    "description": "<p>Costoliere Torrwr Medaglione Witcher Frenesia 7 Pozione Bufera di Neve Pozione Rigogolo Dorato Pozione Usignolo Decotto di lupo mannaro Trasmutazione 7 Decotto di strega dei sepolcri Decotto di Arachas Bomba vento del Nord (x3) Bomba fungo del Diavolo Parare Frecce 10 Coltelli da lancio (x4) Brigantina Brache Corazzate Attrezzatura Alchemica Colpo Repentino 9 Veleno Nero (x3) Cloroformio (x3) Bandoliera Cavallo sellato Turbine 6</p>",
+    "weight": 0,
+    "cost": 0,
+    "components": [
+      "Mannaia Nanica 19 10 ore Acciaio Mahakaman (x2), Legname Indurito (x1), Cuoio (x1), Cote (x1), Olio di Papero (x1), Argilla (x5) 374 750",
+      "Acciaio Mahakaman (x3), Legno Indurito (x3), Cuoio Indurito (x2), Pelle di Lupo (x1), Cote (x1), Grasso di Estere (x3), Olio di Papero (x2), Argilla (x4), Lino (x1)"
+    ],
+    "difficulty": 19,
+    "time": "10 ore",
+    "sourcebook": "MB 21"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

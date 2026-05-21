@@ -1,28 +1,28 @@
 {
-    "_id": "7ab29d7435014a64",
-    "name": "Schema: Munizioni Normali",
-    "type": "diagrams",
-    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_munizioni_normali.webp",
-    "system": {
-        "description": "<p>Schema per la fabbricazione di: Munizioni Normali. Componenti richiesti: Legname (x1), Ferro (x1), Piume (x1). Difficoltà Manifattura: CD 10. Tempo: 2 ore.</p>",
-        "weight": 0,
-        "cost": 0,
-        "components": [
-            "Munizioni Normali 10 2 ore Legname (x1), Ferro (x1), Piume (x1) 37 14"
-        ],
-        "difficulty": 10,
-        "time": "2 ore",
-        "sourcebook": "MB 17"
-    },
-    "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-    }
+  "_id": "7ab29d7435014a64",
+  "name": "Schema: Munizioni Normali",
+  "type": "diagrams",
+  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_munizioni_normali.webp",
+  "system": {
+    "description": "<p>Schema per la fabbricazione di: Munizioni Normali. Componenti richiesti: Legname (x1), Ferro (x1), Piume (x1). Difficoltà Manifattura: CD 10. Tempo: 2 ore.</p>",
+    "weight": 0,
+    "cost": 0,
+    "components": [
+      "Munizioni Normali 10 2 ore Legname (x1), Ferro (x1), Piume (x1) 37 14"
+    ],
+    "difficulty": 10,
+    "time": "2 ore",
+    "sourcebook": "MB 17"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

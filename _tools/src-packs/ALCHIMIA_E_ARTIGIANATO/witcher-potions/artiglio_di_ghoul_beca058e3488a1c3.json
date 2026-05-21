@@ -1,0 +1,23 @@
+{
+  "_id": "beca058e3488a1c3",
+  "name": "Artiglio di Ghoul",
+  "type": "valuable",
+  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-alchemy/artiglio_di_ghoul.webp",
+  "system": {
+    "description": "<p>Artiglio ricurvo e sporco di fango tombale.</p><p><b>Rarità:</b> R | <b>Ubicazione:</b> Ghoul</p>",
+    "quantity": "1",
+    "weight": 1,
+    "cost": 60,
+    "sourcebook": "MB 147",
+    "type": "alchemical",
+    "rarity": "R",
+    "location": "Ghoul",
+    "substanceType": "vitriol"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
+}

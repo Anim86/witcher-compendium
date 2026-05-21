@@ -1,26 +1,26 @@
 {
-    "_id": "0ea4a1520c190ce3",
-    "name": "Dimeritium",
-    "type": "component",
-    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-components/dimeritium.webp",
-    "system": {
-        "description": "<p>Metallo raro che sopprime le capacità magiche di chi lo indossa.</p>",
-        "category": "componente",
-        "quantity": "1",
-        "weight": 1,
-        "cost": 240,
-        "sourcebook": "MB 131",
-        "type": "crafting-material",
-        "rarity": "R",
-        "location": "Acquistato o fabbricato",
-        "quantityObtainable": "",
-        "forage": "",
-        "substanceType": ""
-    },
-    "effects": [],
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-    }
+  "_id": "0ea4a1520c190ce3",
+  "name": "Dimeritium",
+  "type": "component",
+  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-components/dimeritium.webp",
+  "system": {
+    "description": "<p>Metallo raro che sopprime le capacità magiche di chi lo indossa.</p>",
+    "category": "componente",
+    "quantity": "1",
+    "weight": 1,
+    "cost": 240,
+    "sourcebook": "MB 131",
+    "type": "crafting-material",
+    "rarity": "R",
+    "location": "Acquistato o fabbricato",
+    "quantityObtainable": "",
+    "forage": "",
+    "substanceType": ""
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

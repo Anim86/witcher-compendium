@@ -1,39 +1,39 @@
 {
-    "_id": "23c398518c5317ae",
-    "name": "Mutageno del Lupo Mannaro",
-    "type": "mutagen",
-    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-mutations/mutageno_del_lupo_mannaro.webp",
-    "system": {
-        "description": "<p>Mutageno Rosso estratto dal Lupo Mannaro. Una volta applicato tramite il processo di mutazione, conferisce al portatore +3 ai danni in mischia. Come mutazione minore, il portatore sviluppa una rapida ricrescita dei peli. CD Alchimia per processarlo: 20.</p>",
-        "quantity": "1",
-        "weight": 0.5,
-        "cost": 0,
-        "sourcebook": "MB 252",
-        "isHidden": false,
-        "isStored": false,
-        "isCarried": true,
-        "type": "Red",
-        "source": "Lupo Mannaro",
-        "effect": "+3 danni in mischia",
-        "alchemyDC": 20,
-        "minorMutation": "Rapida ricrescita dei peli",
-        "isConsumable": false,
-        "consumeProperties": {
-            "doesHeal": false,
-            "heal": "",
-            "addsTempHp": false,
-            "temporaryHp": {
-                "value": "",
-                "duration": 0
-            },
-            "effects": [],
-            "removesEffects": []
-        }
-    },
-    "effects": [],
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
+  "_id": "23c398518c5317ae",
+  "name": "Mutageno del Lupo Mannaro",
+  "type": "mutagen",
+  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-mutations/mutageno_del_lupo_mannaro.webp",
+  "system": {
+    "description": "<p>Mutageno Rosso estratto dal Lupo Mannaro. Una volta applicato tramite il processo di mutazione, conferisce al portatore +3 ai danni in mischia. Come mutazione minore, il portatore sviluppa una rapida ricrescita dei peli. CD Alchimia per processarlo: 20.</p>",
+    "quantity": "1",
+    "weight": 0.5,
+    "cost": 0,
+    "sourcebook": "MB 252",
+    "isHidden": false,
+    "isStored": false,
+    "isCarried": true,
+    "type": "Red",
+    "source": "Lupo Mannaro",
+    "effect": "+3 danni in mischia",
+    "alchemyDC": 20,
+    "minorMutation": "Rapida ricrescita dei peli",
+    "isConsumable": false,
+    "consumeProperties": {
+      "doesHeal": false,
+      "heal": "",
+      "addsTempHp": false,
+      "temporaryHp": {
+        "value": "",
+        "duration": 0
+      },
+      "effects": [],
+      "removesEffects": []
     }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

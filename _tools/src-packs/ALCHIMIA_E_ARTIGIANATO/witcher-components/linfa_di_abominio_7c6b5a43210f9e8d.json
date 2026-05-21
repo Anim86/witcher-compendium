@@ -1,21 +1,21 @@
 {
-    "name": "Linfa di Abominio",
-    "type": "component",
-    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-components/linfa_di_abominio.webp",
-    "system": {
-        "description": "<p>Secrezione fluida ed estremamente rara prelevata dai resti di un pericoloso Abominio.</p>",
-        "quantity": 1,
-        "weight": 0.1,
-        "cost": 152,
-        "category": "monster",
-        "substanceType": "quebrith",
-        "sourcebook": "DW 143",
-        "rarity": "Rara",
-        "location": "Reperibile sugli Abomini"
-    },
-    "_id": "7c6b5a43210f9e8d",
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-    }
+  "name": "Linfa di Abominio",
+  "type": "component",
+  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-components/linfa_di_abominio.webp",
+  "system": {
+    "description": "<p>Secrezione fluida ed estremamente rara prelevata dai resti di un pericoloso Abominio.</p>",
+    "quantity": 1,
+    "weight": 0.1,
+    "cost": 152,
+    "category": "monster",
+    "substanceType": "quebrith",
+    "sourcebook": "DW 143",
+    "rarity": "Rara",
+    "location": "Reperibile sugli Abomini"
+  },
+  "_id": "7c6b5a43210f9e8d",
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

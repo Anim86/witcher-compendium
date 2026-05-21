@@ -1,39 +1,39 @@
 {
-    "_id": "2464a9a9a85e607e",
-    "name": "Mutageno: Elementale (Blu)",
-    "type": "mutagen",
-    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-mutations/mutageno_elementale_blu.webp",
-    "system": {
-        "description": "<p>Effetto: +3 Vigore. CD Mutazione: 20. Mutazione Minore (Terra): Escrescenze rocciose; (Fuoco): Piccoli getti di fuoco dalla bocca; (Ghiaccio): Sempre freddo al tocco.</p>",
-        "quantity": "1",
-        "weight": 0.5,
-        "cost": 0,
-        "sourcebook": "DW 145",
-        "isHidden": false,
-        "isStored": false,
-        "isCarried": true,
-        "type": "Blue",
-        "source": "Elementale",
-        "effect": "+3 Vigore",
-        "alchemyDC": 20,
-        "minorMutation": "Escrescenze rocciose; (Fuoco): Piccoli getti di fuoco dalla bocca; (Ghiaccio): Sempre freddo al tocco.",
-        "isConsumable": false,
-        "consumeProperties": {
-            "doesHeal": false,
-            "heal": "",
-            "addsTempHp": false,
-            "temporaryHp": {
-                "value": "",
-                "duration": 0
-            },
-            "effects": [],
-            "removesEffects": []
-        }
-    },
-    "effects": [],
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
+  "_id": "2464a9a9a85e607e",
+  "name": "Mutageno: Elementale (Blu)",
+  "type": "mutagen",
+  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-mutations/mutageno_elementale_blu.webp",
+  "system": {
+    "description": "<p>Effetto: +3 Vigore. CD Mutazione: 20. Mutazione Minore (Terra): Escrescenze rocciose; (Fuoco): Piccoli getti di fuoco dalla bocca; (Ghiaccio): Sempre freddo al tocco.</p>",
+    "quantity": "1",
+    "weight": 0.5,
+    "cost": 0,
+    "sourcebook": "DW 145",
+    "isHidden": false,
+    "isStored": false,
+    "isCarried": true,
+    "type": "Blue",
+    "source": "Elementale",
+    "effect": "+3 Vigore",
+    "alchemyDC": 20,
+    "minorMutation": "Escrescenze rocciose; (Fuoco): Piccoli getti di fuoco dalla bocca; (Ghiaccio): Sempre freddo al tocco.",
+    "isConsumable": false,
+    "consumeProperties": {
+      "doesHeal": false,
+      "heal": "",
+      "addsTempHp": false,
+      "temporaryHp": {
+        "value": "",
+        "duration": 0
+      },
+      "effects": [],
+      "removesEffects": []
     }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

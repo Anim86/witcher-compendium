@@ -1,29 +1,29 @@
 {
-    "_id": "ded870fcef4b73a4",
-    "name": "Schema: Lino a Doppia Trama",
-    "type": "diagrams",
-    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_lino_a_doppia_trama.webp",
-    "system": {
-        "description": "<p>Schema per la fabbricazione di: Lino a Doppia Trama.Componenti richiesti: Lino (x1), Filo (x2)Difficoltà Manifattura: CD 14Tempo: 0,5 ore</p>",
-        "weight": 0,
-        "cost": 0,
-        "components": [
-            "Lino (x1)",
-            "Filo (x2)"
-        ],
-        "difficulty": 14,
-        "time": "0,5 ore",
-        "sourcebook": "MB 132"
-    },
-    "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-    }
+  "_id": "ded870fcef4b73a4",
+  "name": "Schema: Lino a Doppia Trama",
+  "type": "diagrams",
+  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_lino_a_doppia_trama.webp",
+  "system": {
+    "description": "<p>Schema per la fabbricazione di: Lino a Doppia Trama.Componenti richiesti: Lino (x1), Filo (x2)Difficoltà Manifattura: CD 14Tempo: 0,5 ore</p>",
+    "weight": 0,
+    "cost": 0,
+    "components": [
+      "Lino (x1)",
+      "Filo (x2)"
+    ],
+    "difficulty": 14,
+    "time": "0,5 ore",
+    "sourcebook": "MB 132"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

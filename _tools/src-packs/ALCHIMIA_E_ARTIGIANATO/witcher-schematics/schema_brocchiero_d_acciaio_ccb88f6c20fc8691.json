@@ -1,30 +1,30 @@
 {
-    "_id": "ccb88f6c20fc8691",
-    "name": "Schema: Brocchiero d'Acciaio",
-    "type": "diagrams",
-    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_brocchiero_d_acciaio.webp",
-    "system": {
-        "description": "<p>Schema per la fabbricazione di: Brocchiero d'Acciaio.Componenti richiesti: Acciaio (x1), Legname Indurito (x1), Cuoio Indurito (x1)Difficoltà Manifattura: CD 15Tempo: 4 ore</p>",
-        "weight": 0,
-        "cost": 0,
-        "components": [
-            "Acciaio (x1)",
-            "Legname Indurito (x1)",
-            "Cuoio Indurito (x1)"
-        ],
-        "difficulty": 15,
-        "time": "4 ore",
-        "sourcebook": "MB 136"
-    },
-    "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-    }
+  "_id": "ccb88f6c20fc8691",
+  "name": "Schema: Brocchiero d'Acciaio",
+  "type": "diagrams",
+  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_brocchiero_d_acciaio.webp",
+  "system": {
+    "description": "<p>Schema per la fabbricazione di: Brocchiero d'Acciaio.Componenti richiesti: Acciaio (x1), Legname Indurito (x1), Cuoio Indurito (x1)Difficoltà Manifattura: CD 15Tempo: 4 ore</p>",
+    "weight": 0,
+    "cost": 0,
+    "components": [
+      "Acciaio (x1)",
+      "Legname Indurito (x1)",
+      "Cuoio Indurito (x1)"
+    ],
+    "difficulty": 15,
+    "time": "4 ore",
+    "sourcebook": "MB 136"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

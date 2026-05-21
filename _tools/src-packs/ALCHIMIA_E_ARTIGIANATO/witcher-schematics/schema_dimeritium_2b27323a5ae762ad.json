@@ -1,28 +1,28 @@
 {
-    "_id": "2b27323a5ae762ad",
-    "name": "Schema: Dimeritium",
-    "type": "diagrams",
-    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_dimeritium.webp",
-    "system": {
-        "description": "<p>Schema per la fabbricazione di: Dimeritium.Componenti richiesti: Minerale Luccicante (x2)Difficoltà Manifattura: CD 20Tempo: 1 ora</p>",
-        "weight": 0,
-        "cost": 0,
-        "components": [
-            "Minerale Luccicante (x2)"
-        ],
-        "difficulty": 20,
-        "time": "1 ora",
-        "sourcebook": "MB 132"
-    },
-    "effects": [],
-    "folder": null,
-    "sort": 0,
-    "ownership": {
-        "default": 0
-    },
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-    }
+  "_id": "2b27323a5ae762ad",
+  "name": "Schema: Dimeritium",
+  "type": "diagrams",
+  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_dimeritium.webp",
+  "system": {
+    "description": "<p>Schema per la fabbricazione di: Dimeritium.Componenti richiesti: Minerale Luccicante (x2)Difficoltà Manifattura: CD 20Tempo: 1 ora</p>",
+    "weight": 0,
+    "cost": 0,
+    "components": [
+      "Minerale Luccicante (x2)"
+    ],
+    "difficulty": 20,
+    "time": "1 ora",
+    "sourcebook": "MB 132"
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

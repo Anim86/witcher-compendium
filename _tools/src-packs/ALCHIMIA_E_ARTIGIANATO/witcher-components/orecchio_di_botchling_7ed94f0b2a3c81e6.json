@@ -1,21 +1,21 @@
 {
-    "name": "Orecchio di Botchling",
-    "type": "component",
-    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-components/orecchio_di_botchling.webp",
-    "system": {
-        "description": "<p>Parte anatomica recisa dalla testa di un Botchling, particolarmente ricca di essenza alchemica Fulgur.</p>",
-        "quantity": 1,
-        "weight": 0.1,
-        "cost": 100,
-        "category": "monster",
-        "substanceType": "fulgur",
-        "sourcebook": "DW 143",
-        "rarity": "Scarsa",
-        "location": "Reperibile sui Botchling"
-    },
-    "_id": "7ed94f0b2a3c81e6",
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-    }
+  "name": "Orecchio di Botchling",
+  "type": "component",
+  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-components/orecchio_di_botchling.webp",
+  "system": {
+    "description": "<p>Parte anatomica recisa dalla testa di un Botchling, particolarmente ricca di essenza alchemica Fulgur.</p>",
+    "quantity": 1,
+    "weight": 0.1,
+    "cost": 100,
+    "category": "monster",
+    "substanceType": "fulgur",
+    "sourcebook": "DW 143",
+    "rarity": "Scarsa",
+    "location": "Reperibile sui Botchling"
+  },
+  "_id": "7ed94f0b2a3c81e6",
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

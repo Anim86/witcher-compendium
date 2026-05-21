@@ -1,0 +1,23 @@
+{
+  "_id": "4ab85f40147fe7fe",
+  "name": "Soluzione Acida",
+  "type": "valuable",
+  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-alchemy/soluzione_acida.webp",
+  "system": {
+    "description": "<p>Liquido altamente corrosivo per rompere armature o serrature.</p><p><b>Effetti:</b> 2d6 danni fuoco/acido e 1d6/2 danni ablativi.</p><p><b>Durata:</b> Istantaneo</p><p><b>Tossicità:</b> 0%</p>",
+    "quantity": "1",
+    "weight": 0.5,
+    "cost": 56,
+    "sourcebook": "MB 90",
+    "type": "alchemical",
+    "rarity": "S",
+    "location": "",
+    "substanceType": ""
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
+}

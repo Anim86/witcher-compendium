@@ -1,23 +1,23 @@
 {
-    "_id": "2438e90392a7880c",
-    "name": "Schema: Lancia da Guerra",
-    "type": "diagrams",
-    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_lancia_da_guerra.webp",
-    "system": {
-        "description": "<p>Artigiani e manifatturieri possono utilizzare questo schema per creare una Lancia da Guerra.</p>",
-        "difficulty": 15,
-        "time": "6 ore",
-        "components": [
-            "Acciaio (x1), Cerume di Orco (x3), Cuoio Indurito (x2), Ferro Nero (x2), Legname Indurito (x9)"
-        ],
-        "sourcebook": "LR 169",
-        "weight": 0,
-        "cost": 0
-    },
-    "effects": [],
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-    }
+  "_id": "2438e90392a7880c",
+  "name": "Schema: Lancia da Guerra",
+  "type": "diagrams",
+  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_lancia_da_guerra.webp",
+  "system": {
+    "description": "<p>Artigiani e manifatturieri possono utilizzare questo schema per creare una Lancia da Guerra.</p>",
+    "difficulty": 15,
+    "time": "6 ore",
+    "components": [
+      "Acciaio (x1), Cerume di Orco (x3), Cuoio Indurito (x2), Ferro Nero (x2), Legname Indurito (x9)"
+    ],
+    "sourcebook": "LR 169",
+    "weight": 0,
+    "cost": 0
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }

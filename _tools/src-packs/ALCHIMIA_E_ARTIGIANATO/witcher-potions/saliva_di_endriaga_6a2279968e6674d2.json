@@ -1,0 +1,23 @@
+{
+  "_id": "6a2279968e6674d2",
+  "name": "Saliva di Endriaga",
+  "type": "valuable",
+  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-alchemy/saliva_di_endriaga.webp",
+  "system": {
+    "description": "<p>Fluido digestivo e paralizzante prelevato dalle ghiandole endriaghe.</p><p><b>Rarità:</b> S | <b>Ubicazione:</b> Endriaghe</p>",
+    "quantity": "1",
+    "weight": 0.1,
+    "cost": 38,
+    "sourcebook": "MB 147",
+    "type": "alchemical",
+    "rarity": "S",
+    "location": "Endriaghe",
+    "substanceType": "vermilion"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
+}

@@ -1,39 +1,39 @@
 {
-    "_id": "de7ea8b98070b16b",
-    "name": "Mutageno: Manticora (Rosso)",
-    "type": "mutagen",
-    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-mutations/mutageno_manticora_rosso.webp",
-    "system": {
-        "description": "<p>Effetto: +1 RIF. CD Mutazione: 22. Mutazione Minore: Piccole corna e tratti felini.</p>",
-        "quantity": "1",
-        "weight": 0.5,
-        "cost": 0,
-        "sourcebook": "DW 145",
-        "isHidden": false,
-        "isStored": false,
-        "isCarried": true,
-        "type": "Red",
-        "source": "Manticora",
-        "effect": "+1 RIF",
-        "alchemyDC": 22,
-        "minorMutation": "Piccole corna e tratti felini.",
-        "isConsumable": false,
-        "consumeProperties": {
-            "doesHeal": false,
-            "heal": "",
-            "addsTempHp": false,
-            "temporaryHp": {
-                "value": "",
-                "duration": 0
-            },
-            "effects": [],
-            "removesEffects": []
-        }
-    },
-    "effects": [],
-    "flags": {},
-    "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
+  "_id": "de7ea8b98070b16b",
+  "name": "Mutageno: Manticora (Rosso)",
+  "type": "mutagen",
+  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-mutations/mutageno_manticora_rosso.webp",
+  "system": {
+    "description": "<p>Effetto: +1 RIF. CD Mutazione: 22. Mutazione Minore: Piccole corna e tratti felini.</p>",
+    "quantity": "1",
+    "weight": 0.5,
+    "cost": 0,
+    "sourcebook": "DW 145",
+    "isHidden": false,
+    "isStored": false,
+    "isCarried": true,
+    "type": "Red",
+    "source": "Manticora",
+    "effect": "+1 RIF",
+    "alchemyDC": 22,
+    "minorMutation": "Piccole corna e tratti felini.",
+    "isConsumable": false,
+    "consumeProperties": {
+      "doesHeal": false,
+      "heal": "",
+      "addsTempHp": false,
+      "temporaryHp": {
+        "value": "",
+        "duration": 0
+      },
+      "effects": [],
+      "removesEffects": []
     }
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
 }
