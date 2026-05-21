@@ -1,5 +1,5 @@
 # Stato Attuale src-packs
-Data Audit: 21/05/2026, 22:42:46
+Data Audit: 21/05/2026, 22:51:15
 
 ## 1. Struttura Cartelle
 | Cartella | File JSON | Sourcebook Predom. |
@@ -1133,10 +1133,10 @@ Data Audit: 21/05/2026, 22:42:46
 | animare_armatura_ba5d67e658aa46b7.json | 21/05/2026, 22:42:00 | MAGIA\witcher-rituals |
 | barriera_magica_6f95a8d8ab5e496b.json | 21/05/2026, 22:42:00 | MAGIA\witcher-rituals |
 | ciondolo_di_wagerer_71019f819cc849db.json | 21/05/2026, 22:42:00 | MAGIA\witcher-rituals |
-| compressione_in_manufatto_037a93ed3118473e.json | 20/05/2026, 17:43:54 | MAGIA\witcher-rituals |
+| compressione_in_manufatto_037a93ed3118473e.json | 21/05/2026, 22:50:59 | MAGIA\witcher-rituals |
 | consacrare_d9cee7de73c443c5.json | 21/05/2026, 22:42:00 | MAGIA\witcher-rituals |
 | costruire_golem_259c6a8a6cc1490f.json | 21/05/2026, 22:42:00 | MAGIA\witcher-rituals |
-| creare_luogo_di_potere_d12a8d75cc4c4de4.json | 20/05/2026, 17:43:54 | MAGIA\witcher-rituals |
+| creare_luogo_di_potere_d12a8d75cc4c4de4.json | 21/05/2026, 22:51:00 | MAGIA\witcher-rituals |
 | creare_teschio_di_cristallo_001acd2273064baf.json | 21/05/2026, 22:42:00 | MAGIA\witcher-rituals |
 | evocazione_controllata_6bf8953ebcbecad4.json | 21/05/2026, 22:42:00 | MAGIA\witcher-rituals |
 | evocazione_incontrollata_c23c883585706c8b.json | 21/05/2026, 22:42:00 | MAGIA\witcher-rituals |
@@ -1149,7 +1149,7 @@ Data Audit: 21/05/2026, 22:42:46
 | nebbia_del_passato_233351ef85964db9.json | 21/05/2026, 22:42:00 | MAGIA\witcher-rituals |
 | Oniromanzia_3f837cb1be7b4b06.json | 21/05/2026, 22:42:00 | MAGIA\witcher-rituals |
 | piromanzia_40dbcd89a1d6480b.json | 21/05/2026, 22:42:00 | MAGIA\witcher-rituals |
-| registro_magico_degli_ospiti_377230655e414158.json | 20/05/2026, 17:43:54 | MAGIA\witcher-rituals |
+| registro_magico_degli_ospiti_377230655e414158.json | 21/05/2026, 22:51:01 | MAGIA\witcher-rituals |
 | Rituale_della_Magia_55e57065785e426b.json | 21/05/2026, 22:42:00 | MAGIA\witcher-rituals |
 | Rituale_della_Vita_bfdbf167dce24b07.json | 21/05/2026, 22:42:00 | MAGIA\witcher-rituals |
 | rituale_del_manto_di_capra_7fbbed644aec6f5a.json | 21/05/2026, 22:42:00 | MAGIA\witcher-rituals |
