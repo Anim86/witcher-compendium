@@ -199,10 +199,11 @@ Questa sezione è aggiornata automaticamente dal tool `update_docs_structure.mjs
 ```
 _tools/src-packs/
 ├── ALCHIMIA_E_ARTIGIANATO
-│   ├── witcher-alchemy
 │   ├── witcher-components
+│   ├── witcher-formulas
 │   ├── witcher-mutations
 │   ├── witcher-mutazioni-tc
+│   ├── witcher-potions
 │   └── witcher-schematics
 ├── BESTIARIO
 │   ├── witcher-animals
@@ -215,44 +216,41 @@ _tools/src-packs/
 │   ├── witcher-special
 │   ├── witcher-transports
 │   └── witcher-weapons
-├── MAGIA_E_MALEDIZIONI
-│   ├── Doni_del_Caos
-│   │   ├── witcher-gifts
-│   │   ├── witcher-goetia
-│   │   └── witcher-invocations
-│   ├── Incantesimi_e_Rituali
-│   │   ├── witcher-rituals
-│   │   ├── witcher-runes
-│   │   └── witcher-spells
-│   ├── Maledizioni_e_Fatture
-│   │   ├── witcher-curses
-│   │   └── witcher-hexes
-│   ├── Necromanzia
+├── MAGIA
+│   ├── witcher-curses
+│   ├── witcher-gifts
+│   ├── witcher-hexes
+│   ├── witcher-invocations
+│   ├── witcher-rituals
+│   ├── witcher-runes
+│   ├── witcher-signs
+│   └── witcher-spells
+├── REGOLAMENTO_E_NARRATIVA
+│   ├── Ferite_Critiche
+│   │   └── witcher-critical-wounds
+│   ├── Geografia
+│   │   └── witcher-geografia
+│   ├── Investigazioni
+│   │   └── witcher-investigations
+│   ├── Lore_e_Racconti
+│   │   ├── witcher-lore
+│   │   ├── witcher-lore-chaos
+│   │   └── witcher-lore-racconti
+│   ├── Professioni_e_Abilita
+│   │   ├── witcher-professions
+│   │   ├── witcher-races
+│   │   └── witcher-skills
+│   ├── Regole_Necromanzia
 │   │   └── witcher-necromanzia
-│   └── Segni
-│       └── witcher-signs
-└── REGOLAMENTO_E_NARRATIVA
-    ├── Ferite_Critiche
-    │   └── witcher-critical-wounds
-    ├── Geografia
-    │   └── witcher-geografia
-    ├── Investigazioni
-    │   └── witcher-investigations
-    ├── Lore_e_Racconti
-    │   ├── witcher-lore
-    │   ├── witcher-lore-chaos
-    │   └── witcher-lore-racconti
-    ├── Professioni_e_Abilita
-    │   ├── witcher-professions
-    │   ├── witcher-races
-    │   └── witcher-skills
-    ├── Tabelle_Operative
-    │   ├── CriticieCombattimento
-    │   └── DisastriMagici
-    └── Trofei
-        └── witcher-trophies
+│   ├── Tabelle_Operative
+│   │   ├── CriticieCombattimento
+│   │   └── DisastriMagici
+│   └── Trofei
+│       └── witcher-trophies
+└── TABELLEOPERATIVE
+    └── StrumentiGM
 ```
-*Ultimo aggiornamento automatico: 17 maggio 2026*
+*Ultimo aggiornamento automatico: 21 maggio 2026*
 <!-- FOLDER_STRUCTURE_END -->
 
 ## 📈 6. PROGRESSIONE E CHARACTER SHEET

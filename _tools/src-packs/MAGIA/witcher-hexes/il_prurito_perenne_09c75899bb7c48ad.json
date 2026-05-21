@@ -1,0 +1,61 @@
+{
+    "_id": "09c75899bb7c48ad",
+    "name": "Il Prurito Perenne",
+    "type": "hex",
+    "img": "modules/witcher-compendium/assets/MAGIA/witcher-hexes/il_prurito_perenne.webp",
+    "system": {
+        "description": "<p>Il Prurito Perenne fa crescere pustole infiamma- te e irrita i genitali della vittima. Il prurito non causa danni, ma è un disturbo continuo che impone -1 ad ogni tiro. Inoltre, la vittima subisce -5 a Seduzione una volta “arrivato a letto”.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "MB 123",
+        "class": "hex",
+        "level": "novice",
+        "source": "",
+        "stamina": 0,
+        "staminaIsVar": false,
+        "effect": "Il Prurito Perenne fa crescere pustole infiamma- te e irrita i genitali della vittima. Il prurito non causa danni, ma è un disturbo continuo che impone -1 ad ogni tiro. Inoltre, la vittima subisce -5 a Seduzione una volta â€œarrivato a lettoâ€.",
+        "range": "N/A",
+        "duration": "N/A",
+        "defence": "",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "hexweave"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
+}

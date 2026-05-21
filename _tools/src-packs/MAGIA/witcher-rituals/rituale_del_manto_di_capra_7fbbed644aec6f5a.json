@@ -1,0 +1,31 @@
+{
+    "_id": "7fbbed644aec6f5a",
+    "name": "Rituale del Manto di Capra",
+    "type": "ritual",
+    "img": "modules/witcher-compendium/assets/MAGIA/witcher-rituals/rituale_del_manto_di_capra.webp",
+    "system": {
+        "description": "<p>Rituale Goetico di supporto — indispensabile per chi pratica la Goezia. Permette di creare il Manto di Capra, l'artefatto magico che protegge l'evocatore dagli attacchi dei demoni durante le evocazioni. Il rituale richiede due settimane di digiuno e astinenza, dopodiché si benedice, si uccide e si scuoia una capra, bruciandone i resti. Le ceneri vengono strofinate sulla pelle conciata per creare l'artefatto magico.</p><p><strong>Preparazione:</strong> 2 settimane di digiuno + 30 Round di rituale. <strong>CD Artigianato Rituale:</strong> 16. <strong>Componenti:</strong> Una capra (benedetta, uccisa e scuoiata); ceneri dei resti bruciati; Pugnale di Diaspro Sanguigno.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "TC 144",
+        "class": "Goetia",
+        "level": "journeyman",
+        "source": "",
+        "stamina": 0,
+        "staminaIsVar": false,
+        "effect": "Crea il Manto di Capra, artefatto magico indispensabile per difendersi dagli attacchi dei demoni durante le evocazioni.",
+        "range": "N/A",
+        "duration": "Permanente",
+        "preparationTime": "2 settimane + 30 Round",
+        "difficultyCheck": "16",
+        "components": "Una capra (benedetta, uccisa e scuoiata); ceneri dei resti bruciati; Pugnale di Diaspro Sanguigno; Erbe da concia (Investimento: 400)",
+        "spellAttackSkill": "ritcraft"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

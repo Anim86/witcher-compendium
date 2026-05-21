@@ -1,0 +1,63 @@
+{
+    "name": "Pigmento",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA/witcher-gifts/pigmento.webp",
+    "system": {
+        "description": "<p><strong>Effetto:</strong> con un'Azione, il personaggio lascia un marchio di un colore a sua scelta, anche luminoso, su una superficie. Un marchio luminoso migliora l'illuminazione di un livello nel raggio di 4m (livello massimo Luce Diurna). Finché si trova entro 4m dal marchio, il personaggio può usare un'Azione per fare in modo che il simbolo mandi un lampo di Luce Accecante per un Round, dopo di che scompare.</p><p><strong>Effetti Collaterali:</strong> se qualcuno subisce un Disastro Magico entro 10m dal personaggio, anche questi ne è vittima. Se è lui stesso a subirlo, questo effetto non si applica.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "TC 75",
+        "class": "MagicalGift",
+        "level": "",
+        "source": "",
+        "stamina": 1,
+        "staminaIsVar": false,
+        "effect": "con un'Azione, il personaggio lascia un marchio di un colore a sua scelta, anche luminoso, su una superficie. Un marchio luminoso migliora l'illuminazione di un livello nel raggio di 4m (livello massimo Luce Diurna). Finché si trova entro 4m dal marchio, il personaggio può usare un'Azione per fare in modo che il simbolo mandi un lampo di Luce Accecante per un Round, dopo di che scompare.",
+        "sideEffect": "se qualcuno subisce un Disastro Magico entro 10m dal personaggio, anche questi ne è vittima. Se è lui stesso a subirlo, questo effetto non si applica.",
+        "range": "",
+        "duration": "",
+        "defence": "",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast",
+        "causeDamages": false,
+        "damage": null,
+        "damageType": "elemental"
+    },
+    "_id": "2a7dd2599471545c",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

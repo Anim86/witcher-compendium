@@ -1,0 +1,64 @@
+{
+    "_id": "662f8dd782ac45df",
+    "name": "Lampo Magico",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA/witcher-spells/lampo_magico.webp",
+    "system": {
+        "description": "<p>Lampo Magico fa balenare un lampo sopra il mago. Ogni bersaglio entro un raggio di 8m deve supe- rare una prova di Resistenza alla Magia o essere accecato per 1d6 round. Il lampo è visibile fino a 10 chilometri.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "MB 103",
+        "class": "Mage",
+        "level": "novice",
+        "source": "fire",
+        "stamina": 2,
+        "staminaIsVar": false,
+        "effect": "Lampo Magico fa balenare un lampo sopra il mago. Ogni bersaglio entro un raggio di 8m deve supe- rare una prova di Resistenza alla Magia o essere accecato per 1d6 round. Il lampo è visibile fino a 10 chilometri.",
+        "range": "Raggio di 8m",
+        "duration": "Istantanea",
+        "defence": "Resistere alla Magia",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast",
+        "causeDamages": true,
+        "damage": "1d6",
+        "damageType": "elemental"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

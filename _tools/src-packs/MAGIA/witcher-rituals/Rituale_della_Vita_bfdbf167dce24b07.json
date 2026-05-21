@@ -1,0 +1,24 @@
+{
+    "name": "Rituale della Vita",
+    "_id": "bfdbf167dce24b07",
+    "system": {
+        "stamina": 5,
+        "description": "<p>Crea un cerchio in cui le cure sono amplificate. Chi vi entra rigenera 3 PS per turno per un massimo di 10 round</p>",
+        "cost": 5,
+        "sourcebook": "MB 118",
+        "preparationTime": "",
+        "components": "Gessetto (x2), Cenere (x2), Cera (x2), Radice Mandragora (x2)",
+        "class": "ritual",
+        "duration": "1 utilizzo",
+        "difficultyCheck": "15",
+        "level": "novice",
+        "staminaIsVar": false,
+        "effect": "Crea un cerchio in cui le cure sono amplificate. Chi vi entra rigenera 3 PS per turno per un massimo di 10 round"
+    },
+    "type": "ritual",
+    "img": "modules/witcher-compendium/assets/MAGIA/witcher-rituals/rituale_della_vita.webp",
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
+}

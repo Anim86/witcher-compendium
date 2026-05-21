@@ -1,0 +1,63 @@
+{
+    "name": "Criocinesi",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA/witcher-gifts/criocinesi.webp",
+    "system": {
+        "description": "<p><strong>Effetto:</strong> utilizzando un Round, il personaggio può congelare fino a due metri cubi di liquido o un singolo bersaglio entro 8m.</p><p><strong>Effetti Collaterali:</strong> Quando il personaggio è bersaglio di un effetto che lo renderebbe Congelato, non può resistere, ma invece delle normali penalità ciò riduce la sua VEL a 6 e i RIF a 4.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "TC 75",
+        "class": "MagicalGift",
+        "level": "",
+        "source": "",
+        "stamina": 2,
+        "staminaIsVar": false,
+        "effect": "utilizzando un Round, il personaggio può congelare fino a due metri cubi di liquido o un singolo bersaglio entro 8m.",
+        "sideEffect": "Quando il personaggio è bersaglio di un effetto che lo renderebbe Congelato, non può resistere, ma invece delle normali penalità ciò riduce la sua VEL a 6 e i RIF a 4.",
+        "range": "",
+        "duration": "",
+        "defence": "",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast",
+        "causeDamages": false,
+        "damage": null,
+        "damageType": "elemental"
+    },
+    "_id": "a85157a813714c79",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

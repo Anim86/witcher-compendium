@@ -1,0 +1,24 @@
+{
+    "name": "Costruire Golem",
+    "_id": "259c6a8a6cc1490f",
+    "system": {
+        "stamina": 15,
+        "description": "<p>Fabbrica un Golem elementale totalmente sottomesso e privo di libero arbitrio che esegue alla lettera gli ordini impartiti.</p>",
+        "cost": 15,
+        "sourcebook": "MB 118",
+        "preparationTime": "",
+        "components": "Argilla o Pietra (x10), Quintessenza (x5), Polvere Infusa (x2), Cuore di Golem o Mutageno (x1)",
+        "class": "ritual",
+        "duration": "Permanente",
+        "difficultyCheck": "20",
+        "level": "master",
+        "staminaIsVar": false,
+        "effect": "Fabbrica un Golem elementale totalmente sottomesso e privo di libero arbitrio che esegue alla lettera gli ordini impartiti."
+    },
+    "type": "ritual",
+    "img": "modules/witcher-compendium/assets/MAGIA/witcher-rituals/costruire_golem.webp",
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
+}

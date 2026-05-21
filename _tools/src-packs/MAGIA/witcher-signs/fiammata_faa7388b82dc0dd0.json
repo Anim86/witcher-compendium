@@ -1,0 +1,61 @@
+{
+    "_id": "faa7388b82dc0dd0",
+    "name": "Fiammata",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA/witcher-spells/fiammata.webp",
+    "system": {
+        "description": "<p>Segno Alternativo, variante avanzata di Igni. La Fiammata emette un getto continuo di fiamme che causa 1d6 danni per ogni punto RES speso, aumentando al 75% la probabilità di infliggere lo status A Fuoco. L'incantatore può cambiare bersaglio a ogni suo turno pagando il costo di mantenimento, pari alla metà del costo RES iniziale. Il costo in Resistenza è sempre variabile, fino a un massimo di 7 punti.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "MB 115",
+        "class": "Witcher",
+        "level": "journeyman",
+        "source": "Fire",
+        "stamina": 0,
+        "staminaIsVar": true,
+        "effect": "Emette un getto continuo di fiamme che causa 1d6 danni per ogni punto RES e aumenta al 75% la probabilità di infliggere lo status A Fuoco. L'incantatore può cambiare bersaglio a ogni suo turno pagando il costo di mantenimento.",
+        "range": "3m",
+        "duration": "Attiva (1/2 RES iniziale)",
+        "defence": "Schivare o Bloccare",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

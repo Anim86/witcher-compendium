@@ -1,0 +1,30 @@
+{
+    "_id": "4801df417ac522ab",
+    "name": "Triglav",
+    "type": "enhancement",
+    "img": "modules/witcher-compendium/assets/MAGIA/witcher-runes/triglav.webp",
+    "system": {
+        "description": "<p>Runa per Armi. Infonde nell'arma l'effetto Stordimento con penalità -1 al bersaglio colpito. Costo: 575 Corone.</p>",
+        "quantity": "1",
+        "weight": 0.1,
+        "cost": 575,
+        "sourcebook": "MB 256",
+        "isHidden": false,
+        "isStored": false,
+        "isCarried": true,
+        "type": "Rune",
+        "avail": "Rare",
+        "applied": false,
+        "stopping": 0,
+        "bludgeoning": false,
+        "slashing": false,
+        "piercing": false,
+        "effects": []
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

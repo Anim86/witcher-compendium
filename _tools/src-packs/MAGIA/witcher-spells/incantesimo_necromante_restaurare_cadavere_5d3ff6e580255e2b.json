@@ -1,0 +1,18 @@
+{
+    "_id": "5d3ff6e580255e2b",
+    "name": "Incantesimo Necromante: Restaurare Cadavere",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA/witcher-spells/incantesimo_necromante_restaurare_cadavere.webp",
+    "system": {
+        "description": "<p>Livello: Esperto. Costo RES: 7. Crea copie spettrali di muscoli, pelle e capelli di un corpo. Bersaglio diventa versione traslucida con ferite del momento della morte, toccabile ed esaminabile. Le \"parti molli\" possono essere staccate fino a 4m. Portata: 4m. Durata: 1 ora. Difese: Nessuna.</p>",
+        "sourcebook": "TC 134",
+        "class": "Necromanzia",
+        "level": "journeyman"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

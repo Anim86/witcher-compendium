@@ -1,0 +1,64 @@
+{
+    "_id": "0e058f4469d14c2f",
+    "name": "Idromanzia",
+    "type": "ritual",
+    "img": "modules/witcher-compendium/assets/MAGIA/witcher-rituals/idromanzia.webp",
+    "system": {
+        "description": "<p>Scorge nell'acqua un evento avvenuto negli ultimi due giorni o in corso. I maghi osservati possono percepire la divinazione</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 5,
+        "sourcebook": "MB 118",
+        "class": "ritual",
+        "level": "novice",
+        "source": "",
+        "stamina": 5,
+        "staminaIsVar": false,
+        "effect": "Scorge nell'acqua un evento avvenuto negli ultimi due giorni o in corso. I maghi osservati possono percepire la divinazione",
+        "range": "N/A",
+        "duration": "Attiva (2)",
+        "defence": "",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "ritcraft",
+        "difficultyCheck": "15 (18)",
+        "preparationTime": "",
+        "components": "Ciotola/Specchio d'acqua, Quintessenza (x2), Petali Mirto (x2), Perla (x2), Frammento Lunare (x1), Berbercane (x1)"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
+}

@@ -1,0 +1,63 @@
+{
+    "name": "Piedi Rapidi",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA/witcher-gifts/piedi_rapidi.webp",
+    "system": {
+        "description": "<p><strong>Effetto:</strong> con un'Azione, il personaggio raddoppia la sua distanza di Balzo per un Round.</p><p><strong>Effetti Collaterali:</strong> quando viene gettato a terra, il personaggio scivola per 4m, aumentando la possibilità di urtare qualcosa.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "TC 74",
+        "class": "MagicalGift",
+        "level": "",
+        "source": "",
+        "stamina": 1,
+        "staminaIsVar": false,
+        "effect": "con un'Azione, il personaggio raddoppia la sua distanza di Balzo per un Round.",
+        "sideEffect": "quando viene gettato a terra, il personaggio scivola per 4m, aumentando la possibilità di urtare qualcosa.",
+        "range": "",
+        "duration": "",
+        "defence": "",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast",
+        "causeDamages": false,
+        "damage": null,
+        "damageType": "elemental"
+    },
+    "_id": "631732f03b810a2d",
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

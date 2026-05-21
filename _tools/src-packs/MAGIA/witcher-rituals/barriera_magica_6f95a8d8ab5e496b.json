@@ -1,0 +1,64 @@
+{
+    "_id": "6f95a8d8ab5e496b",
+    "name": "Barriera Magica",
+    "type": "ritual",
+    "img": "modules/witcher-compendium/assets/MAGIA/witcher-rituals/barriera_magica.webp",
+    "system": {
+        "description": "<p>Crea una bolla impenetrabile di 10m di diametro con 50 PS. Se desiderato, blocca anche il ricambio d'aria</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 10,
+        "sourcebook": "MB 118",
+        "class": "ritual",
+        "level": "journeyman",
+        "source": "",
+        "stamina": 10,
+        "staminaIsVar": false,
+        "effect": "Crea una bolla impenetrabile di 10m di diametro con 50 PS. Se desiderato, blocca anche il ricambio d'aria",
+        "range": "N/A",
+        "duration": "Attiva (2)",
+        "defence": "",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "ritcraft",
+        "difficultyCheck": "18",
+        "preparationTime": "",
+        "components": "Quintessenza (x5), Polvere Infusa (x2), Gessetto (x4)"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
+}

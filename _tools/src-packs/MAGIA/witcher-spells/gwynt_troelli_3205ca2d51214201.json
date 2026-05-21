@@ -1,0 +1,61 @@
+{
+    "_id": "3205ca2d51214201",
+    "name": "Gwynt Troelli",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA/witcher-spells/gwynt_troelli.webp",
+    "system": {
+        "description": "<p>Gwynt Troelli crea una barriera di vento intorno all'incantatore, in grado di deviare attacchi a distanza e proiettili. Ogni attacco con proiettile diretto contro l'in- cantatore deve superare il tiro di Lanciare Incantesimi. Se fallisce, la barriera devia il proiettile di 8m in dire- zione casuale.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "MB 103",
+        "class": "Mage",
+        "level": "journeyman",
+        "source": "fire",
+        "stamina": 12,
+        "staminaIsVar": false,
+        "effect": "Gwynt Troelli crea una barriera di vento intorno all'incantatore, in grado di deviare attacchi a distanza e proiettili. Ogni attacco con proiettile diretto contro l'in- cantatore deve superare il tiro di Lanciare Incantesimi. Se fallisce, la barriera devia il proiettile di 8m in dire- zione casuale.",
+        "range": "Raggio di 10m",
+        "duration": "Attiva (4 RES)",
+        "defence": "Nessuna",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

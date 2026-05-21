@@ -1,0 +1,24 @@
+{
+    "name": "Animare Armatura",
+    "_id": "ba5d67e658aa46b7",
+    "system": {
+        "stamina": 14,
+        "cost": 14,
+        "description": "<p>Trasforma una normale corazza a piastre in un Costrutto animato che obbedisce ai comandi del ritualista.</p>",
+        "class": "ritual",
+        "sourcebook": "TC 104",
+        "level": "journeyman",
+        "difficultyCheck": "18",
+        "staminaIsVar": false,
+        "duration": "Permanente",
+        "preparationTime": "",
+        "components": "Armatura Completa, Cuore di Golem (x1), Quintessenza (x3), Polvere Infusa (x2)",
+        "effect": "Trasforma una normale corazza a piastre in un Costrutto animato che obbedisce ai comandi del ritualista."
+    },
+    "type": "ritual",
+    "img": "modules/witcher-compendium/assets/MAGIA/witcher-rituals/animare_armatura.webp",
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
+}

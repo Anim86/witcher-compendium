@@ -1,0 +1,61 @@
+{
+    "_id": "21d3cff617a04cf5",
+    "name": "Invaerne",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA/witcher-spells/invaerne.webp",
+    "system": {
+        "description": "<p>Invaerne evoca una terribile tempesta di neve che copre un'area di 30m di raggio, causando l'effetto Ghiaccio e Neve. Se usato in un clima freddo, questo incantesimo dura una settimana.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "TC 83",
+        "class": "Mage",
+        "level": "master",
+        "source": "mixedElements",
+        "stamina": 0,
+        "staminaIsVar": false,
+        "effect": "Invaerne evoca una terribile tempesta di neve che copre unâ€™area di 30m di raggio, causando lâ€™effetto Ghiaccio e Neve. Se usato in un clima freddo, questo incantesimo dura una settimana.",
+        "range": "50m",
+        "duration": "1 ora",
+        "defence": "Nessuna",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
+}

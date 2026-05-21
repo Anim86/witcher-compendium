@@ -1,0 +1,67 @@
+{
+    "_id": "d9cee7de73c443c5",
+    "name": "Consacrare",
+    "type": "ritual",
+    "img": "modules/witcher-compendium/assets/MAGIA/witcher-rituals/consacrare.webp",
+    "system": {
+        "description": "<p>Crea un cerchio repulsivo (fino a 10m). I mostri che tentano di passare devono battere il lancio del Rituale in una prova di Resistere alla Magia o subire danni ed essere respinti</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 10,
+        "sourcebook": "MB 118",
+        "class": "ritual",
+        "level": "journeyman",
+        "source": "",
+        "stamina": 10,
+        "staminaIsVar": false,
+        "effect": "Crea un cerchio repulsivo (fino a 10m). I mostri che tentano di passare devono battere il lancio del Rituale in una prova di Resistere alla Magia o subire danni ed essere respinti",
+        "range": "N/A",
+        "duration": "Permanente",
+        "defence": "",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "ritcraft",
+        "causeDamages": true,
+        "damage": "6d6",
+        "damageType": "elemental",
+        "difficultyCheck": "18",
+        "preparationTime": "",
+        "components": "Quintessenza (x5), Polvere Infusa (x2), Gessetto (x4), Argento o Meteorite (x5)"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
+}

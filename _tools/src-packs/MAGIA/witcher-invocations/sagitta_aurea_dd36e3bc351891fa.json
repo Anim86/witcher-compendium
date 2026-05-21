@@ -1,0 +1,61 @@
+{
+    "_id": "dd36e3bc351891fa",
+    "name": "Sagitta Aurea",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA/witcher-invocations/sagitta_aurea.webp",
+    "system": {
+        "description": "<p>Invocazione da Prete (Maestro). Sagitta Aurea richiama il potere divino sotto forma di una lancia di luce dorata che colpisce in linea retta infliggendo 7d6 danni. Colpisce più bersagli costringendo ciascuno a una prova di Difesa. I demoni subiscono danno, vengono espulsi e non possono agire nel round seguente.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "TC 95",
+        "class": "Invocations",
+        "level": "master",
+        "source": "Priest",
+        "stamina": 14,
+        "staminaIsVar": false,
+        "effect": "Richiama una lancia di luce dorata che colpisce tutti i bersagli in linea retta infliggendo 7d6 danni. Espelle i demoni dai corpi posseduti.",
+        "range": "20m",
+        "duration": "Istantanea",
+        "defence": "Schivare",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

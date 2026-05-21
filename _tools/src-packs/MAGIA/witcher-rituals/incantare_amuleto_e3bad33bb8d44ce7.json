@@ -1,0 +1,24 @@
+{
+    "name": "Incantare Amuleto",
+    "_id": "e3bad33bb8d44ce7",
+    "system": {
+        "stamina": 0,
+        "cost": 0,
+        "description": "<p>Incastona Incantesimi o Invocazioni dentro i gioielli di un amuleto. Il ritualista deve pagare integralmente la RES per ogni Incantesimo caricato durante il processo</p>",
+        "class": "ritual",
+        "sourcebook": "TC 104",
+        "level": "master",
+        "difficultyCheck": "18",
+        "staminaIsVar": true,
+        "duration": "Permanente",
+        "preparationTime": "",
+        "components": "Amuleto Semplice (x1), Arnesi Runici, Gemma Perfetta (1 a Incantesimo), Quintessenza (x2)",
+        "effect": "Incastona Incantesimi o Invocazioni dentro i gioielli di un amuleto. Il ritualista deve pagare integralmente la RES per ogni Incantesimo caricato durante il processo"
+    },
+    "type": "ritual",
+    "img": "modules/witcher-compendium/assets/MAGIA/witcher-rituals/incantare_amuleto.webp",
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
+}

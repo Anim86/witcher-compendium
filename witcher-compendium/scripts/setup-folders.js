@@ -4,7 +4,7 @@ Hooks.once("ready", async () => {
   const ROOT_NAME = "The Witcher Compendio ITA";
   const MACRO_CATS = {
     "BESTIARIO": "BESTIARIO & PERSONAGGI",
-    "MAGIA": "Magia",
+    "MAGIA": "MAGIA",
     "EQUIPAGGIAMENTO": "EQUIPAGGIAMENTO",
     "ALCHIMIA_E_ARTIGIANATO": "ALCHIMIA & ARTIGIANATO",
     "REGOLAMENTO_E_NARRATIVA": "REGOLAMENTO & NARRATIVA"
@@ -57,16 +57,7 @@ Hooks.once("ready", async () => {
   // No sub-levels for BESTIARIO to keep it clean as requested.
 
   
-  // Riorganizzazione Magia
-  const mMagia = folderMap.get("MAGIA");
-  await ensureSub("MAGIA/Incantesimi", "Incantesimi", mMagia);
-  await ensureSub("MAGIA/Invocazioni", "Invocazioni", mMagia);
-  await ensureSub("MAGIA/Rituali", "Rituali", mMagia);
-  await ensureSub("MAGIA/Fatture", "Fatture", mMagia);
-  await ensureSub("MAGIA/Segni", "Segni", mMagia);
-  await ensureSub("MAGIA/Doni_Magici", "Doni Magici", mMagia);
-  await ensureSub("MAGIA/Maledizioni", "Maledizioni", mMagia);
-  await ensureSub("MAGIA/Rune_Glifi_Reliquie", "Rune, Glifi & Reliquie", mMagia);
+  // Riorganizzazione Magia (compendi posizionati direttamente nella root MAGIA)
 
   // Equipaggiamento (Directly under parent now)
   const mEquip = folderMap.get("EQUIPAGGIAMENTO");

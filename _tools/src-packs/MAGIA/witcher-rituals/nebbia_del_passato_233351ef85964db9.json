@@ -1,0 +1,24 @@
+{
+    "name": "Nebbia del Passato",
+    "_id": "233351ef85964db9",
+    "system": {
+        "stamina": 10,
+        "cost": 10,
+        "description": "<p>Produce un proiettore in vetro che mostra a ciclo continuo (in loop di 5 minuti) l'evento emotivamente più potente mai avvenuto in quel luogo</p>",
+        "class": "ritual",
+        "sourcebook": "TC 104",
+        "level": "journeyman",
+        "difficultyCheck": "18",
+        "staminaIsVar": false,
+        "duration": "20 Minuti",
+        "preparationTime": "",
+        "components": "Candele (x5), Essenza di Wraith (x2), Frammenti Lunari (x1), Vetro (x5)",
+        "effect": "Produce un proiettore in vetro che mostra a ciclo continuo (in loop di 5 minuti) l'evento emotivamente più potente mai avvenuto in quel luogo"
+    },
+    "type": "ritual",
+    "img": "modules/witcher-compendium/assets/MAGIA/witcher-rituals/nebbia_del_passato.webp",
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "_id": "c0cf70a762ffe38f",
+    "name": "Glifo del Fuoco",
+    "type": "enhancement",
+    "img": "modules/witcher-compendium/assets/MAGIA/witcher-runes/glifo_del_fuoco.webp",
+    "system": {
+        "description": "<p>Glifo per Armature. Potenzia le magie di fuoco del portatore, aumentando le CD degli incantesimi di fuoco di 3 oppure il loro danno di 1d6. Costo: 575 Corone.</p>",
+        "quantity": "1",
+        "weight": 0.1,
+        "cost": 575,
+        "sourcebook": "MB 256",
+        "isHidden": false,
+        "isStored": false,
+        "isCarried": true,
+        "type": "Glyph",
+        "avail": "Rare",
+        "applied": false,
+        "stopping": 0,
+        "bludgeoning": false,
+        "slashing": false,
+        "piercing": false,
+        "effects": []
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

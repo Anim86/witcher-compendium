@@ -1,0 +1,61 @@
+{
+    "_id": "abc6dfbc44f1f138",
+    "name": "Maledizione della Temperanza",
+    "type": "hex",
+    "img": "modules/witcher-compendium/assets/MAGIA/witcher-hexes/maledizione_della_temperanza.webp",
+    "system": {
+        "description": "<p>Fattura di pericolosità Bassa. La Maledizione della Temperanza rende lo stomaco del malcapitato estremamente sensibile all'alcol, esacerbando gli effetti dell'ubriachezza. Bevendo qualsiasi sostanza alcolica, la vittima subisce automaticamente gli status Nausea ed Ebbrezza, mentre la testa inizia a girare e lo stomaco a rivoltarsi violentemente. Come tutte le fatture, i suoi effetti sono permanenti finché la vittima non soddisfa i requisiti di uno specifico rituale di rimozione.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "TC 105",
+        "class": "hex",
+        "level": "low",
+        "source": "",
+        "stamina": 4,
+        "staminaIsVar": false,
+        "effect": "Rende lo stomaco più sensibile all'alcol, esacerbando gli effetti dell'ubriachezza. Bevendo qualsiasi sostanza alcolica, la vittima subisce automaticamente Nausea ed Ebbrezza, mentre la testa inizia a girare e lo stomaco a rivoltarsi.",
+        "range": "Contatto",
+        "duration": "Permanente (fino a rimozione rituale)",
+        "defence": "",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "hexweave"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

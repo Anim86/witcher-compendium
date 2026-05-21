@@ -1,0 +1,61 @@
+{
+    "_id": "63e455a736e3a561",
+    "name": "Venti della Taiga",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA/witcher-invocations/venti_della_taiga.webp",
+    "system": {
+        "description": "<p>Invocazione da Ierofante (Circolo di Gwyn Carn). Evoca una bufera di neve spaventosa che acceca i nemici e causa le condizioni Ghiaccio e Neve nell'area. I compagni scelti dal Druido non patiscono l'invocazione e acquisiscono un 50% di probabilità di congelare chi colpiscono.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "TC 98",
+        "class": "Invocations",
+        "level": "master",
+        "source": "Druid",
+        "stamina": 16,
+        "staminaIsVar": false,
+        "effect": "Evoca una bufera di neve che acceca i nemici. I compagni sono immuni e possono congelare i bersagli colpita.",
+        "range": "Raggio di 1,6km",
+        "duration": "1 ora",
+        "defence": "Nessuna",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

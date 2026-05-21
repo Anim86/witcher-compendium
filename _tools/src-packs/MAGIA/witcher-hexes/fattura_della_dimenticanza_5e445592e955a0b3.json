@@ -1,0 +1,61 @@
+{
+    "_id": "5e445592e955a0b3",
+    "name": "Fattura della Dimenticanza",
+    "type": "hex",
+    "img": "modules/witcher-compendium/assets/MAGIA/witcher-hexes/fattura_della_dimenticanza.webp",
+    "system": {
+        "description": "<p>Fattura di pericolosità Alta. Avvolge la mente del malcapitato in una fitta nebbia magica che gli impedisce di fissare i ricordi: il bersaglio non può più ottenere Punti Incremento (P.I.) attraverso lo studio, l'insegnamento o la pratica, bloccando del tutto la possibilità di imparare nuovi incantesimi. Una volta al giorno, il Game Master può costringere la vittima a effettuare una prova di Resistere alla Magia con CD 20: fallire fa dimenticare in modo mirato un fatto, una formula, un incantesimo, un rituale o un segno a scelta del GM. La memoria perduta potrà essere ripristinata solo quando la fattura sarà definitivamente spezzata. Come tutte le fatture, i suoi effetti sono permanenti finché la vittima non soddisfa i requisiti di uno specifico rituale di rimozione.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "TC 106",
+        "class": "hex",
+        "level": "high",
+        "source": "",
+        "stamina": 12,
+        "staminaIsVar": false,
+        "effect": "Avvolge la mente del bersaglio in una nebbia magica che gli impedisce di fissare i ricordi. Non può ottenere Punti Incremento tramite studio, insegnamento o pratica, e non può imparare nuovi incantesimi. Una volta al giorno il GM può costringerlo a una prova di Resistere alla Magia CD 20: se fallisce, dimentica in modo mirato un fatto, formula, incantesimo, rituale o segno (a scelta del GM). La memoria perduta si ripristina solo quando la fattura è spezzata.",
+        "range": "Contatto",
+        "duration": "Permanente (fino a rimozione rituale)",
+        "defence": "",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "hexweave"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

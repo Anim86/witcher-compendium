@@ -1,7 +1,7 @@
 # Cose da sistemare
 
-- eliminare sottocartelle dentro compendio magia e lasciare i compendi tutti sotto magia
-- scrivere MAGIA tutto maiuscolo
+- [x] eliminare sottocartelle dentro compendio magia e lasciare i compendi tutti sotto magia
+- [x] scrivere MAGIA tutto maiuscolo
 - riorganizzare compendio alchimia e artigianato tramite il file [riorganizzazione alchimia.md](riorganizzazione%20alchimia.md)
 - unire i compendi Lore
 - eliminare sottocartelle di Regolamento e narrativa, tranne Tabelle operative

@@ -1,0 +1,61 @@
+{
+    "_id": "83fab892a4f74e67",
+    "name": "La Fattura delle Ombre",
+    "type": "hex",
+    "img": "modules/witcher-compendium/assets/MAGIA/witcher-hexes/la_fattura_delle_ombre.webp",
+    "system": {
+        "description": "<p>La Fattura delle Ombre crea sussurri nell'oscu- rità e ombre dietro gli angoli. La vittima deve effettuare prove di Accortezza casualmente con CD non specifi- cata, per essere sempre sul punto di scorgere qualcosa o qualcuno. Le prove di Accortezza sono solo illusioni e non comportano mai una minaccia reale.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "MB 123",
+        "class": "hex",
+        "level": "novice",
+        "source": "",
+        "stamina": 0,
+        "staminaIsVar": false,
+        "effect": "La Fattura delle Ombre crea sussurri nellâ€™oscu- rità e ombre dietro gli angoli. La vittima deve effettuare prove di Accortezza casualmente con CD non specifi- cata, per essere sempre sul punto di scorgere qualcosa o qualcuno. Le prove di Accortezza sono solo illusioni e non comportano mai una minaccia reale.",
+        "range": "N/A",
+        "duration": "N/A",
+        "defence": "",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "hexweave"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "coreVersion": 14,
+        "systemId": "TheWitcherItaNewSystem"
+    }
+}

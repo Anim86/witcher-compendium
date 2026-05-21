@@ -1,0 +1,64 @@
+{
+    "_id": "5d3f49217af34e78",
+    "name": "Tryferi Gaeaf",
+    "type": "spell",
+    "img": "modules/witcher-compendium/assets/MAGIA/witcher-spells/tryferi_gaeaf.webp",
+    "system": {
+        "description": "<p>Tryferi Gaeaf permette all'incantatore di sca- gliare una quantit di spuntoni di ghiaccio pari a met del proprio valore dell'Abilit Lanciare Incantesimi, contro quanti bersagli desidera entro la portata dell'in- cantesimo. Questi spuntoni infliggono 5d6 danni e, se il danno supera l'armatura, congelano l'avversario inflig- gendo 2 danni per round finché non vengono spezzati superando una prova di Prestanza con CD 20 o inflig- gendo loro 20 danni. Gli spuntoni altrimenti perdurano fino alla fine dell'incantesimo. Ogni attacco si risolve separatamente.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "MB 103",
+        "class": "Mage",
+        "level": "master",
+        "source": "Water",
+        "stamina": 22,
+        "staminaIsVar": false,
+        "effect": "Tryferi Gaeaf permette all'incantatore di sca- gliare una quantit di spuntoni di ghiaccio pari a met del proprio valore dell'Abilit Lanciare Incantesimi, contro quanti bersagli desidera entro la portata dell'in- cantesimo. Questi spuntoni infliggono 5d6 danni e, se il danno supera l'armatura, congelano l'avversario inflig- gendo 2 danni per round finché non vengono spezzati superando una prova di Prestanza con CD 20 o inflig- gendo loro 20 danni. Gli spuntoni altrimenti perdurano fino alla fine dell'incantesimo. Ogni attacco si risolve separatamente.",
+        "range": "20m",
+        "duration": "1d10 Round",
+        "defence": "Schivare o Bloccare",
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "spellcast",
+        "causeDamages": true,
+        "damage": "5d6",
+        "damageType": "elemental"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}
