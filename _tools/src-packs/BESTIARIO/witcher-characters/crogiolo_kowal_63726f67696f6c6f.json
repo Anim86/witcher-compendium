@@ -1,218 +1,341 @@
 {
-  "_id": "63726f67696f6c6f",
-  "name": "\"Crogiolo\" Kowal",
-  "type": "character",
-  "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-characters/crogiolo_kowal.webp",
-  "system": {
-    "stats": {
-      "int": {
-        "value": 9,
-        "max": 9,
-        "unmodifiedMax": 9
-      },
-      "ref": {
-        "value": 10,
-        "max": 10,
-        "unmodifiedMax": 10
-      },
-      "dex": {
-        "value": 9,
-        "max": 9,
-        "unmodifiedMax": 9
-      },
-      "body": {
-        "value": 7,
-        "max": 7,
-        "unmodifiedMax": 7
-      },
-      "spd": {
-        "value": 7,
-        "max": 7,
-        "unmodifiedMax": 7
-      },
-      "emp": {
-        "value": 4,
-        "max": 4,
-        "unmodifiedMax": 4
-      },
-      "cra": {
-        "value": 9,
-        "max": 9,
-        "unmodifiedMax": 9
-      },
-      "will": {
-        "value": 9,
-        "max": 9,
-        "unmodifiedMax": 9
-      },
-      "luck": {
-        "value": 5,
-        "max": 5,
-        "unmodifiedMax": 5
-      }
+    "_id": "63726f67696f6c6f",
+    "name": "\"Crogiolo\" Kowal",
+    "type": "character",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-characters/crogiolo_kowal.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 9,
+                "max": 9,
+                "unmodifiedMax": 9
+            },
+            "ref": {
+                "value": 10,
+                "max": 10,
+                "unmodifiedMax": 10
+            },
+            "dex": {
+                "value": 9,
+                "max": 9,
+                "unmodifiedMax": 9
+            },
+            "body": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "spd": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "emp": {
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
+            },
+            "cra": {
+                "value": 9,
+                "max": 9,
+                "unmodifiedMax": 9
+            },
+            "will": {
+                "value": 9,
+                "max": 9,
+                "unmodifiedMax": 9
+            },
+            "luck": {
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 15
+            },
+            "atletica": {
+                "value": 12
+            },
+            "balestra": {
+                "value": 18
+            },
+            "carisma": {
+                "value": 14
+            },
+            "coraggio": {
+                "value": 16
+            },
+            "eludere": {
+                "value": 15
+            },
+            "nascondersi": {
+                "value": 12
+            },
+            "persuasione": {
+                "value": 14
+            },
+            "resistereacoercizione": {
+                "value": 16
+            },
+            "rissa": {
+                "value": 14
+            },
+            "scherma": {
+                "value": 18
+            },
+            "seduzione": {
+                "value": 12
+            },
+            "tempra": {
+                "value": 14
+            }
+        },
+        "details": {
+            "biography": "<p>Kowal, soprannominato \"Crogiolo\", è un individuo pericoloso e risoluto incontrato a Maribor. È noto per la sua cocciutaggine e per la sua abilità con le armi da taglio e a distanza.</p>",
+            "threat": "Difficile",
+            "reward": "54 cr",
+            "difficulty": "HARD"
+        },
+        "derivedStats": {
+            "hp": {
+                "value": 40,
+                "max": 40,
+                "unmodifiedMax": 40
+            },
+            "sta": {
+                "value": 40,
+                "max": 40,
+                "unmodifiedMax": 40
+            },
+            "vigor": {
+                "value": 0,
+                "max": 0,
+                "unmodifiedMax": 0
+            },
+            "rec": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "stun": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            },
+            "resolve": {
+                "value": 40,
+                "max": 40,
+                "unmodifiedMax": 40
+            },
+            "woundTreshold": {
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
+            }
+        },
+        "description": "<p>Kowal, soprannominato \"Crogiolo\", è un individuo pericoloso e risoluto incontrato a Maribor. È noto per la sua cocciutaggine e per la sua abilità con le armi da taglio e a distanza.</p>",
+        "sourcebook": "LR 83"
     },
-    "skills": {
-      "accortezza": {
-        "value": 15
-      },
-      "atletica": {
-        "value": 12
-      },
-      "balestra": {
-        "value": 18
-      },
-      "carisma": {
-        "value": 14
-      },
-      "coraggio": {
-        "value": 16
-      },
-      "eludere": {
-        "value": 15
-      },
-      "nascondersi": {
-        "value": 12
-      },
-      "persuasione": {
-        "value": 14
-      },
-      "resistereacoercizione": {
-        "value": 16
-      },
-      "rissa": {
-        "value": 14
-      },
-      "scherma": {
-        "value": 18
-      },
-      "seduzione": {
-        "value": 12
-      },
-      "tempra": {
-        "value": 14
-      }
-    },
-    "details": {
-      "biography": "<p>Kowal, soprannominato \"Crogiolo\", è un individuo pericoloso e risoluto incontrato a Maribor. È noto per la sua cocciutaggine e per la sua abilità con le armi da taglio e a distanza.</p>",
-      "threat": "Difficile",
-      "reward": "54 cr",
-      "difficulty": "HARD"
-    },
-    "derivedStats": {
-      "hp": {
-        "value": 40,
-        "max": 40,
-        "unmodifiedMax": 40
-      },
-      "sta": {
-        "value": 40,
-        "max": 40,
-        "unmodifiedMax": 40
-      },
-      "vigor": {
-        "value": 0,
-        "max": 0,
-        "unmodifiedMax": 0
-      },
-      "rec": {
-        "value": 8,
-        "max": 8,
-        "unmodifiedMax": 8
-      },
-      "stun": {
-        "value": 8,
-        "max": 8,
-        "unmodifiedMax": 8
-      },
-      "resolve": {
-        "value": 40,
-        "max": 40,
-        "unmodifiedMax": 40
-      },
-      "woundTreshold": {
-        "value": 8,
-        "max": 8,
-        "unmodifiedMax": 8
-      }
-    },
-    "description": "<p>Kowal, soprannominato \"Crogiolo\", è un individuo pericoloso e risoluto incontrato a Maribor. È noto per la sua cocciutaggine e per la sua abilità con le armi da taglio e a distanza.</p>",
-    "sourcebook": "LR 83"
-  },
-  "items": [
-    {
-      "name": "Balestrino",
-      "type": "weapon",
-      "img": "icons/svg/sword.svg",
-      "system": {
-        "damage": "2d6+2",
-        "accuracy": 18,
-        "type": "P",
-        "effects": "Portata 50m, Ricarica Lenta, PA +1"
-      },
-      "_stats": {
+    "items": [
+        {
+            "_id": "087b1a38130b4e14",
+            "name": "Balestrino",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/balestrino.webp",
+            "system": {
+                "description": "<p>Non so di preciso da dove provenga il balestrino. Immagino che agli inizi fosse una specie di balestra da civile. È più piccolo e meno potente di una balestra normale, ma sta in una mano sola ed è facile sparare con precisione. Oggigiorno sono richiesti per difendere la casa, dal momento che molta gente non può permettersi qualcuno che insegni loro a com- battere e per imparare a usare le balestre non ci vuole molto. MUNIZIONI Normali Se hai un'arma che spara proiettili, ti servono i proiettili. Le munizioni normali sono in pratica il tipico dardo o freccia. I dardi sono di solito più corti delle frecce, ma entrambi hanno una punta di metallo acuminata e un impennaggio di piume. Punta Larga Le “punte larghe” sono tra i migliori proiettili alternativi da avere a disposizione. Sono molto simili a frecce o dardi normali, ma, invece di una punta di metallo, hanno una testa piatta, larga e affilata. Eh, ce ne sono di ogni tipo e misura, a foglia, a rombo, fatte a V e così via, ma tutte quante tagliano più di una punta normale e causano ferite che sanguinano.</p>",
+                "cost": 285,
+                "reliability": 5,
+                "effects": "Ricarica Lenta",
+                "sourcebook": "MB 48",
+                "range": "50m",
+                "type": {
+                    "text": "",
+                    "slashing": false,
+                    "piercing": true,
+                    "bludgeoning": false,
+                    "elemental": false
+                },
+                "damageProperties": {
+                    "armorPiercing": false,
+                    "improvedArmorPiercing": false,
+                    "ablating": false,
+                    "crushingForce": false,
+                    "isMeteorite": false,
+                    "isNonLethal": false,
+                    "effects": [
+                        {
+                            "id": "000bf5f12ec80db5",
+                            "name": "Ricarica Lenta",
+                            "statusEffect": null,
+                            "percentage": 100,
+                            "varEffect": false
+                        }
+                    ]
+                },
+                "weight": 0.5,
+                "rarity": "Diffusa",
+                "damage": "2d6+2",
+                "hands": 1,
+                "accuracy": 1,
+                "unmodifiedMax": {},
+                "enhancementSlots": 1,
+                "conceal": "G",
+                "category": "thrown",
+                "reliabilityMax": 5
+            },
+            "effects": [],
+            "folder": null,
+            "sort": 0,
+            "ownership": {
+                "default": 0
+            },
+            "flags": {},
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "94e00ab95004418a",
+            "name": "Esboda",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/esboda.webp",
+            "system": {
+                "description": "<p>Un mercante deve mettere da parte i suoi pregiudizi di fronte a un buon prodotto. L'esboda mettinese è una delle lame da cavalleria più leggere e affilate che abbia mai visto. È come un gleddyf, ma molto meglio. Conta che i Neri si affidano ai loro “vassalli” per forgiare le armi migliori, eh?</p>",
+                "cost": 650,
+                "reliability": 10,
+                "effects": "N/A",
+                "sourcebook": "MB 75",
+                "type": {
+                    "text": "",
+                    "slashing": true,
+                    "piercing": true,
+                    "bludgeoning": false,
+                    "elemental": false
+                },
+                "damageProperties": {
+                    "armorPiercing": false,
+                    "improvedArmorPiercing": false,
+                    "ablating": false,
+                    "crushingForce": false,
+                    "isMeteorite": false,
+                    "isNonLethal": false,
+                    "effects": []
+                },
+                "weight": 1.5,
+                "rarity": "Scarsa",
+                "damage": "5d6",
+                "hands": 1,
+                "accuracy": 1,
+                "unmodifiedMax": {},
+                "enhancementSlots": 1,
+                "category": "sword",
+                "range": "N/A",
+                "reliabilityMax": 10
+            },
+            "effects": [],
+            "folder": null,
+            "sort": 0,
+            "ownership": {
+                "default": 0
+            },
+            "flags": {},
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "_id": "09ccebf23dd44e97",
+            "name": "Stiletto",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/stiletto.webp",
+            "system": {
+                "description": "<p>Ci volevano i Neri per creare un coltello ancora più facile da nascondere di un pugnale normale. Ha una lama sot- tilissima che rientra nel manico e così la puoi nascondere quasi ovunque.</p>",
+                "cost": 275,
+                "reliability": 5,
+                "effects": "Occultabile",
+                "sourcebook": "MB 43",
+                "type": {
+                    "text": "",
+                    "slashing": true,
+                    "piercing": true,
+                    "bludgeoning": false,
+                    "elemental": false
+                },
+                "damageProperties": {
+                    "armorPiercing": false,
+                    "improvedArmorPiercing": false,
+                    "ablating": false,
+                    "crushingForce": false,
+                    "isMeteorite": false,
+                    "isNonLethal": false,
+                    "effects": [
+                        {
+                            "id": "00fb2b01e3355e08",
+                            "name": "occultabile",
+                            "statusEffect": null,
+                            "percentage": 100,
+                            "varEffect": false
+                        }
+                    ]
+                },
+                "weight": 0.5,
+                "rarity": "Comune",
+                "damage": "1d6",
+                "hands": 1,
+                "accuracy": 2,
+                "unmodifiedMax": {},
+                "enhancementSlots": 1,
+                "conceal": "M",
+                "category": "smallBlade",
+                "range": "N/A",
+                "reliabilityMax": 5
+            },
+            "effects": [],
+            "folder": null,
+            "sort": 0,
+            "ownership": {
+                "default": 0
+            },
+            "flags": {},
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "name": "[Abilità] Affidabile",
+            "type": "note",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "<p>+1 alle prove di Carisma, Seduzione e Persuasione verso altri umani.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "name": "[Abilità] Cocciuto",
+            "type": "note",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "<p>Per 3 volte a sessione, può tirare di nuovo le prove fallite di Resistere a Coercizione e Coraggio.</p>"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        }
+    ],
+    "effects": [],
+    "flags": {},
+    "_stats": {
         "systemId": "TheWitcherItaNewSystem",
         "coreVersion": 14
-      }
-    },
-    {
-      "name": "Esboda",
-      "type": "weapon",
-      "img": "icons/svg/sword.svg",
-      "system": {
-        "damage": "5d6",
-        "accuracy": 18,
-        "type": "T",
-        "effects": "PA +1"
-      },
-      "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-      }
-    },
-    {
-      "name": "Stiletto",
-      "type": "weapon",
-      "img": "icons/svg/sword.svg",
-      "system": {
-        "damage": "1d6",
-        "accuracy": 18,
-        "type": "P",
-        "effects": "Occultabile, PA +2"
-      },
-      "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-      }
-    },
-    {
-      "name": "[Abilità] Affidabile",
-      "type": "note",
-      "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-      "system": {
-        "description": "<p>+1 alle prove di Carisma, Seduzione e Persuasione verso altri umani.</p>"
-      },
-      "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-      }
-    },
-    {
-      "name": "[Abilità] Cocciuto",
-      "type": "note",
-      "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
-      "system": {
-        "description": "<p>Per 3 volte a sessione, può tirare di nuovo le prove fallite di Resistere a Coercizione e Coraggio.</p>"
-      },
-      "_stats": {
-        "systemId": "TheWitcherItaNewSystem",
-        "coreVersion": 14
-      }
     }
-  ],
-  "effects": [],
-  "flags": {},
-  "_stats": {
-    "systemId": "TheWitcherItaNewSystem",
-    "coreVersion": 14
-  }
 }

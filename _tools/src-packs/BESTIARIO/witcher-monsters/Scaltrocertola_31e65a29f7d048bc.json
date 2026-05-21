@@ -183,7 +183,8 @@
                 "damage": "7d6+2",
                 "accuracy": 0,
                 "effects": "Trapassare",
-                "rateOfFire": 1
+                "rateOfFire": 1,
+                "damageType": "piercing"
             }
         },
         {
@@ -196,7 +197,8 @@
                 "damage": "6d6+2",
                 "accuracy": 0,
                 "effects": "Sanguinamento (50%)",
-                "rateOfFire": 2
+                "rateOfFire": 2,
+                "damageType": "slashing"
             }
         },
         {
@@ -209,7 +211,8 @@
                 "damage": "6d6",
                 "accuracy": 0,
                 "effects": "Forza Schiacciante, Portata, Sang (50%), Veleno (75%)",
-                "rateOfFire": 1
+                "rateOfFire": 1,
+                "damageType": "slashing"
             }
         },
         {
@@ -225,6 +228,12 @@
                 "sourcebook": "TC p.126"
             },
             "effects": [],
+            "folder": null,
+            "sort": 0,
+            "ownership": {
+                "default": 0
+            },
+            "flags": {},
             "_stats": {
                 "coreVersion": 14,
                 "systemId": "TheWitcherItaNewSystem"

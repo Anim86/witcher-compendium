@@ -215,7 +215,8 @@
                 "damage": "2d6+2",
                 "accuracy": 0,
                 "effects": "Sanguinamento (25%)",
-                "rateOfFire": 1
+                "rateOfFire": 1,
+                "damageType": "piercing"
             }
         },
         {
@@ -231,6 +232,12 @@
                 "sourcebook": "TC p.126"
             },
             "effects": [],
+            "folder": null,
+            "sort": 0,
+            "ownership": {
+                "default": 0
+            },
+            "flags": {},
             "_stats": {
                 "coreVersion": 14,
                 "systemId": "TheWitcherItaNewSystem"

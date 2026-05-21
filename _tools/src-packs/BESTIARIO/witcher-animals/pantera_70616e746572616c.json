@@ -187,7 +187,8 @@
                 "effects": "N/A",
                 "isStored": false,
                 "reliable": 0,
-                "rateOfFire": 1
+                "rateOfFire": 1,
+                "damageType": "piercing"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -205,7 +206,8 @@
                 "effects": "Sanguinamento (30%)",
                 "isStored": false,
                 "reliable": 0,
-                "rateOfFire": 1
+                "rateOfFire": 1,
+                "damageType": "slashing"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -250,6 +252,12 @@
                 "sourcebook": "TC p.126"
             },
             "effects": [],
+            "folder": null,
+            "sort": 0,
+            "ownership": {
+                "default": 0
+            },
+            "flags": {},
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
                 "coreVersion": 14

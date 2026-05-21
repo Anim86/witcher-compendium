@@ -151,49 +151,159 @@
     },
     "items": [
         {
-            "_id": "4bd39540bb5743ea",
+            "_id": "087b1a38130b4e14",
             "name": "Balestrino",
             "type": "weapon",
-            "img": "icons/svg/sword.svg",
+            "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/balestrino.webp",
             "system": {
-                "description": "",
-                "damage": "2d6+2",
-                "accuracy": 0,
+                "description": "<p>Non so di preciso da dove provenga il balestrino. Immagino che agli inizi fosse una specie di balestra da civile. È più piccolo e meno potente di una balestra normale, ma sta in una mano sola ed è facile sparare con precisione. Oggigiorno sono richiesti per difendere la casa, dal momento che molta gente non può permettersi qualcuno che insegni loro a com- battere e per imparare a usare le balestre non ci vuole molto. MUNIZIONI Normali Se hai un'arma che spara proiettili, ti servono i proiettili. Le munizioni normali sono in pratica il tipico dardo o freccia. I dardi sono di solito più corti delle frecce, ma entrambi hanno una punta di metallo acuminata e un impennaggio di piume. Punta Larga Le “punte larghe” sono tra i migliori proiettili alternativi da avere a disposizione. Sono molto simili a frecce o dardi normali, ma, invece di una punta di metallo, hanno una testa piatta, larga e affilata. Eh, ce ne sono di ogni tipo e misura, a foglia, a rombo, fatte a V e così via, ma tutte quante tagliano più di una punta normale e causano ferite che sanguinano.</p>",
+                "cost": 285,
+                "reliability": 5,
+                "effects": "Ricarica Lenta",
+                "sourcebook": "MB 48",
                 "range": "50m",
-                "effects": "Ricarica Lenta, PA +1"
+                "type": {
+                    "text": "",
+                    "slashing": false,
+                    "piercing": true,
+                    "bludgeoning": false,
+                    "elemental": false
+                },
+                "damageProperties": {
+                    "armorPiercing": false,
+                    "improvedArmorPiercing": false,
+                    "ablating": false,
+                    "crushingForce": false,
+                    "isMeteorite": false,
+                    "isNonLethal": false,
+                    "effects": [
+                        {
+                            "id": "000bf5f12ec80db5",
+                            "name": "Ricarica Lenta",
+                            "statusEffect": null,
+                            "percentage": 100,
+                            "varEffect": false
+                        }
+                    ]
+                },
+                "weight": 0.5,
+                "rarity": "Diffusa",
+                "damage": "2d6+2",
+                "hands": 1,
+                "accuracy": 1,
+                "unmodifiedMax": {},
+                "enhancementSlots": 1,
+                "conceal": "G",
+                "category": "thrown",
+                "reliabilityMax": 5
             },
+            "effects": [],
+            "folder": null,
+            "sort": 0,
+            "ownership": {
+                "default": 0
+            },
+            "flags": {},
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
                 "coreVersion": 14
             }
         },
         {
-            "_id": "972ca1fb9dcf4b6b",
+            "_id": "08c8bc3916a44ba5",
             "name": "Pugnale",
             "type": "weapon",
-            "img": "icons/svg/sword.svg",
+            "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/pugnale.webp",
             "system": {
-                "description": "",
-                "damage": "1d6",
+                "description": "<p>Ci sono pugnali di tutte le misure e tutti i tipi, ma sono sempre abbastanza piccoli da essere nascosti. Tutti girano con un pugnale, dai cavalieri ai contadini.</p>",
+                "cost": 50,
+                "reliability": 10,
                 "accuracy": 0,
-                "effects": ""
+                "effects": "N/A",
+                "sourcebook": "MB 20",
+                "type": {
+                    "text": "",
+                    "slashing": true,
+                    "piercing": true,
+                    "bludgeoning": false,
+                    "elemental": false
+                },
+                "damageProperties": {
+                    "armorPiercing": false,
+                    "improvedArmorPiercing": false,
+                    "ablating": false,
+                    "crushingForce": false,
+                    "isMeteorite": false,
+                    "isNonLethal": false,
+                    "effects": []
+                },
+                "weight": 0.5,
+                "rarity": "Diffusa",
+                "damage": "1d6+2",
+                "hands": 1,
+                "unmodifiedMax": {},
+                "conceal": "P",
+                "category": "smallBlade",
+                "range": "N/A",
+                "reliabilityMax": 10
             },
+            "effects": [],
+            "folder": null,
+            "sort": 0,
+            "ownership": {
+                "default": 0
+            },
+            "flags": {},
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
                 "coreVersion": 14
             }
         },
         {
-            "_id": "7808c51860054527",
+            "_id": "86a50ea90ac24ed7",
             "name": "Spada di Ferro",
             "type": "weapon",
-            "img": "icons/svg/sword.svg",
+            "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/spada_di_ferro.webp",
             "system": {
-                "description": "",
-                "damage": "2d6+2",
+                "description": "<p>Eh, spade di ferro. Da nano, ti confesso che il concetto mi fa vomitare. Sono scialbe da dar la nausea, ma anche facili da produrre e si possono trovare ovunque, direi.</p>",
+                "cost": 160,
+                "reliability": 10,
                 "accuracy": 0,
-                "effects": ""
+                "effects": "N/A",
+                "sourcebook": "MB 41",
+                "type": {
+                    "text": "",
+                    "slashing": true,
+                    "piercing": true,
+                    "bludgeoning": false,
+                    "elemental": false
+                },
+                "damageProperties": {
+                    "armorPiercing": false,
+                    "improvedArmorPiercing": false,
+                    "ablating": false,
+                    "crushingForce": false,
+                    "isMeteorite": false,
+                    "isNonLethal": false,
+                    "effects": []
+                },
+                "weight": 1.5,
+                "rarity": "Diffusa",
+                "damage": "2d6+2",
+                "hands": 2,
+                "unmodifiedMax": {},
+                "conceal": "G",
+                "category": "sword",
+                "range": "N/A",
+                "reliabilityMax": 10
             },
+            "effects": [],
+            "folder": null,
+            "sort": 0,
+            "ownership": {
+                "default": 0
+            },
+            "flags": {},
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
                 "coreVersion": 14

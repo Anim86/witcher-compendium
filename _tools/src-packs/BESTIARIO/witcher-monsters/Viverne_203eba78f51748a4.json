@@ -254,7 +254,8 @@
                 "damage": "5d6+2",
                 "accuracy": 0,
                 "effects": "Veleno (75%)",
-                "rateOfFire": 1
+                "rateOfFire": 1,
+                "damageType": "piercing"
             }
         },
         {
@@ -267,7 +268,8 @@
                 "damage": "6d6",
                 "accuracy": 0,
                 "effects": "Nessuno",
-                "rateOfFire": 2
+                "rateOfFire": 2,
+                "damageType": "slashing"
             }
         },
         {
@@ -280,7 +282,8 @@
                 "damage": "7d6",
                 "accuracy": 0,
                 "effects": "Veleno (25%)",
-                "rateOfFire": 1
+                "rateOfFire": 1,
+                "damageType": "piercing"
             }
         },
         {
@@ -296,6 +299,12 @@
                 "sourcebook": "TC p.126"
             },
             "effects": [],
+            "folder": null,
+            "sort": 0,
+            "ownership": {
+                "default": 0
+            },
+            "flags": {},
             "_stats": {
                 "coreVersion": 14,
                 "systemId": "TheWitcherItaNewSystem"

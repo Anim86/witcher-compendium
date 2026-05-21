@@ -285,7 +285,8 @@
                 "damage": "6d6+2",
                 "accuracy": 0,
                 "effects": "Nessuno",
-                "rateOfFire": 2
+                "rateOfFire": 2,
+                "damageType": "slashing"
             }
         },
         {
@@ -298,7 +299,8 @@
                 "damage": "8d6",
                 "accuracy": 0,
                 "effects": "-1 Danno Armatura (Ablativo)",
-                "rateOfFire": 1
+                "rateOfFire": 1,
+                "damageType": "slashing"
             }
         },
         {
@@ -311,7 +313,8 @@
                 "damage": "7d6",
                 "accuracy": 0,
                 "effects": "Sanguinamento (50%)",
-                "rateOfFire": 1
+                "rateOfFire": 1,
+                "damageType": "piercing"
             }
         }
     ],

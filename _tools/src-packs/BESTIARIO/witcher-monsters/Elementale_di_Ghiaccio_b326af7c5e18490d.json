@@ -176,7 +176,8 @@
                 "damage": "8d6",
                 "accuracy": 0,
                 "effects": "Forza Schiacciante, Congelamento (50%)",
-                "rateOfFire": 1
+                "rateOfFire": 1,
+                "damageType": "bludgeoning"
             }
         },
         {
@@ -221,6 +222,12 @@
                 "sourcebook": "TC p.126"
             },
             "effects": [],
+            "folder": null,
+            "sort": 0,
+            "ownership": {
+                "default": 0
+            },
+            "flags": {},
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
                 "coreVersion": 14

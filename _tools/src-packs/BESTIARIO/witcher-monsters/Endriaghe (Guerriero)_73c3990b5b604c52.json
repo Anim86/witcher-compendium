@@ -239,7 +239,8 @@
                 "damage": "4d6",
                 "accuracy": 0,
                 "effects": "Veleno (50%)",
-                "rateOfFire": 2
+                "rateOfFire": 2,
+                "damageType": "slashing"
             }
         },
         {
@@ -252,7 +253,8 @@
                 "damage": "5d6",
                 "accuracy": 0,
                 "effects": "Nessuno",
-                "rateOfFire": 1
+                "rateOfFire": 1,
+                "damageType": "slashing"
             }
         }
     ],

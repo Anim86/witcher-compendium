@@ -224,7 +224,8 @@
                 "damage": "2d6+2",
                 "accuracy": 0,
                 "effects": "-1 Danno Armatura (Ablativo)",
-                "rateOfFire": 1
+                "rateOfFire": 1,
+                "damageType": "slashing"
             }
         },
         {
@@ -237,7 +238,8 @@
                 "damage": "3d6+2",
                 "accuracy": 0,
                 "effects": "Nessuno",
-                "rateOfFire": 1
+                "rateOfFire": 1,
+                "damageType": "slashing"
             }
         }
     ],

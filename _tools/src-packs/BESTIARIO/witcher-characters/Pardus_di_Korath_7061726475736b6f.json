@@ -166,23 +166,41 @@
     },
     "items": [
         {
+            "_id": "b8b690f688a77656",
             "name": "Spada d'acciaio da witcher",
             "type": "weapon",
-            "img": "modules/witcher-compendium/assets/SPECIAL/trait_generico.webp",
+            "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-special/spada_d_acciaio_da_witcher.webp",
             "system": {
-                "damage": "4d6+2",
-                "accuracy": 0,
-                "effects": "Trapassare, Meteorite"
+                "description": "<p>Ancor oggi, i witcher sono gli unici guerrieri che portano regolarmente spade d'acciaio meteoritico. Pref: 0, Danno: 4d6+2, Mani: 1, Affidabilità: 15, Effetti: Trapassare Meteorite.</p>",
+                "weight": 2.5,
+                "cost": 506,
+                "quantity": 1,
+                "toxicity": "0%",
+                "duration": "N/A",
+                "sourcebook": "MB 247"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
             }
         },
         {
-            "name": "Spada d'argento da witcher",
+            "_id": "98a5095142388ea4",
+            "name": "Spada d'Argento da Witcher",
             "type": "weapon",
-            "img": "modules/witcher-compendium/assets/SPECIAL/trait_generico.webp",
+            "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-special/spada_d_argento_da_witcher.webp",
             "system": {
-                "damage": "1d6+2",
-                "accuracy": 0,
-                "effects": "Argento (3d6)"
+                "description": "<p>Forgiate apposta per una determinata persona o evento. Pref: 0, Danno: 1d6+2, Mani: 1, Affidabilità: 10, Effetti: Argento (3d6).</p>",
+                "weight": 1.5,
+                "cost": 497,
+                "quantity": 1,
+                "toxicity": "0%",
+                "duration": "N/A",
+                "sourcebook": "MB 247"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
             }
         }
     ],

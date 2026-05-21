@@ -135,7 +135,8 @@
                 "damage": "6d6",
                 "accuracy": 0,
                 "effects": "Ablativa, Sanguinamento (75%)",
-                "rateOfFire": 1
+                "rateOfFire": 1,
+                "damageType": "piercing"
             }
         },
         {
@@ -148,7 +149,8 @@
                 "damage": "4d6",
                 "accuracy": 0,
                 "effects": "Portata, Presa",
-                "rateOfFire": 2
+                "rateOfFire": 2,
+                "damageType": "slashing"
             }
         },
         {
@@ -161,7 +163,8 @@
                 "damage": "5d6",
                 "accuracy": 0,
                 "effects": "Stordimento",
-                "rateOfFire": 1
+                "rateOfFire": 1,
+                "damageType": "slashing"
             }
         },
         {

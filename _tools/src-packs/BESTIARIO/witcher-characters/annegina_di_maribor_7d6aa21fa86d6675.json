@@ -157,13 +157,69 @@
     },
     "items": [
         {
+            "_id": "62953f574ed44869",
             "name": "Jambiya",
             "type": "weapon",
-            "img": "icons/svg/sword.svg",
+            "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/jambiya.webp",
             "system": {
-                "damage": "2d6+2",
-                "accuracy": 10,
-                "effects": "Sanguinamento (100%), Trapassare"
+                "description": "<p>Amico mio, anche nelle remote terre di Zerrikania la morte ha la sua moneta. E hanno messo a punto uno dei migliori pugnali del pianeta. Questi affari ricurvi hanno iniziato a circolare quando sono diventati il segno distintivo degli as- sassini di Maecht, durante la Prima Guerra Settentrionale.</p>",
+                "cost": 440,
+                "reliability": 10,
+                "effects": "Sanguinamento (25%) Trapassare",
+                "sourcebook": "MB 75",
+                "type": {
+                    "text": "",
+                    "slashing": true,
+                    "piercing": true,
+                    "bludgeoning": false,
+                    "elemental": false
+                },
+                "damageProperties": {
+                    "armorPiercing": false,
+                    "improvedArmorPiercing": false,
+                    "ablating": false,
+                    "crushingForce": false,
+                    "isMeteorite": false,
+                    "isNonLethal": false,
+                    "effects": [
+                        {
+                            "id": "00cf9cdd4422b0b8",
+                            "name": "sanguinamento",
+                            "statusEffect": null,
+                            "percentage": 25,
+                            "varEffect": false
+                        },
+                        {
+                            "id": "000801fdbb24b308",
+                            "name": "trapassare",
+                            "statusEffect": null,
+                            "percentage": 100,
+                            "varEffect": false
+                        }
+                    ]
+                },
+                "weight": 0.5,
+                "rarity": "Rara",
+                "damage": "2d6",
+                "hands": 1,
+                "accuracy": 2,
+                "unmodifiedMax": {},
+                "enhancementSlots": 1,
+                "conceal": "M",
+                "category": "smallBlade",
+                "range": "N/A",
+                "reliabilityMax": 10
+            },
+            "effects": [],
+            "folder": null,
+            "sort": 0,
+            "ownership": {
+                "default": 0
+            },
+            "flags": {},
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
             }
         }
     ],

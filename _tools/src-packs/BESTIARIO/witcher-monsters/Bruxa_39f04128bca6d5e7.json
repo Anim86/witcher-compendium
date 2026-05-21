@@ -200,7 +200,8 @@
                 "damage": "5d6+3",
                 "accuracy": 0,
                 "effects": "Sanguinamento (75%), Succhiare Sangue, Trapassare Migliorato",
-                "rateOfFire": 1
+                "rateOfFire": 1,
+                "damageType": "piercing"
             }
         },
         {
@@ -213,7 +214,8 @@
                 "damage": "4d6+4",
                 "accuracy": 0,
                 "effects": "Sanguinamento (50%), Trapassare",
-                "rateOfFire": 2
+                "rateOfFire": 2,
+                "damageType": "slashing"
             }
         },
         {
@@ -228,6 +230,12 @@
                 "sourcebook": "TC p.126"
             },
             "effects": [],
+            "folder": null,
+            "sort": 0,
+            "ownership": {
+                "default": 0
+            },
+            "flags": {},
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
                 "coreVersion": 14

@@ -192,7 +192,8 @@
                 "damage": "4d6",
                 "accuracy": 0,
                 "effects": "Sanguinamento (50%)",
-                "rateOfFire": 2
+                "rateOfFire": 2,
+                "damageType": "slashing"
             }
         },
         {
@@ -205,7 +206,8 @@
                 "damage": "3d6",
                 "accuracy": 0,
                 "effects": "A Fuoco (50%), Vacillante (25%)",
-                "rateOfFire": 1
+                "rateOfFire": 1,
+                "damageType": "slashing"
             }
         },
         {
@@ -220,6 +222,12 @@
                 "sourcebook": "TC p.126"
             },
             "effects": [],
+            "folder": null,
+            "sort": 0,
+            "ownership": {
+                "default": 0
+            },
+            "flags": {},
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
                 "coreVersion": 14

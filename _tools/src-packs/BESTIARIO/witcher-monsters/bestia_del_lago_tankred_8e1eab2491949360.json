@@ -209,7 +209,8 @@
                 "effects": "Inghiottire",
                 "isStored": false,
                 "reliable": 0,
-                "rateOfFire": 1
+                "rateOfFire": 1,
+                "damageType": "piercing"
             }
         },
         {
@@ -222,7 +223,8 @@
                 "effects": "Portata 2",
                 "isStored": false,
                 "reliable": 0,
-                "rateOfFire": 1
+                "rateOfFire": 1,
+                "damageType": "slashing"
             }
         },
         {

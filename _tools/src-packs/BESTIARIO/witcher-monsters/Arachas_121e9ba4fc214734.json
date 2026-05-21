@@ -209,7 +209,8 @@
                 "damage": "5d6",
                 "accuracy": 0,
                 "effects": "Veleno (25%)",
-                "rateOfFire": 2
+                "rateOfFire": 2,
+                "damageType": "slashing"
             }
         },
         {
@@ -225,6 +226,12 @@
                 "sourcebook": "TC p.126"
             },
             "effects": [],
+            "folder": null,
+            "sort": 0,
+            "ownership": {
+                "default": 0
+            },
+            "flags": {},
             "_stats": {
                 "coreVersion": 14,
                 "systemId": "TheWitcherItaNewSystem"

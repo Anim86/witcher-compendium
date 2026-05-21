@@ -214,7 +214,8 @@
                 "damage": "4d6",
                 "accuracy": 0,
                 "effects": "Sanguinamento (50%)",
-                "rateOfFire": 1
+                "rateOfFire": 1,
+                "damageType": "piercing"
             }
         },
         {
@@ -227,7 +228,8 @@
                 "damage": "3d6",
                 "accuracy": 0,
                 "effects": "Sanguinamento (25%)",
-                "rateOfFire": 2
+                "rateOfFire": 2,
+                "damageType": "slashing"
             }
         }
     ]

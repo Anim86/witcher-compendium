@@ -1,177 +1,193 @@
 {
-  "_id": "18bcbf48f76275fc",
-  "name": "Dandelion (Flagello di Draghi)",
-  "type": "character",
-  "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-characters/dandelion_flagello_di_draghi.webp",
-  "system": {
-    "stats": {
-      "int": {
-        "value": 0,
-        "max": 0
-      },
-      "ref": {
-        "value": 0,
-        "max": 0
-      },
-      "dex": {
-        "value": 0,
-        "max": 0
-      },
-      "body": {
-        "value": 0,
-        "max": 0
-      },
-      "spd": {
-        "value": 0,
-        "max": 0
-      },
-      "emp": {
-        "value": 0,
-        "max": 0
-      },
-      "cra": {
-        "value": 0,
-        "max": 0
-      },
-      "will": {
-        "value": 0,
-        "max": 0
-      },
-      "luck": {
-        "value": 0,
-        "max": 0
-      }
+    "_id": "18bcbf48f76275fc",
+    "name": "Dandelion (Flagello di Draghi)",
+    "type": "character",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-characters/dandelion_flagello_di_draghi.webp",
+    "system": {
+        "stats": {
+            "int": {
+                "value": 0,
+                "max": 0
+            },
+            "ref": {
+                "value": 0,
+                "max": 0
+            },
+            "dex": {
+                "value": 0,
+                "max": 0
+            },
+            "body": {
+                "value": 0,
+                "max": 0
+            },
+            "spd": {
+                "value": 0,
+                "max": 0
+            },
+            "emp": {
+                "value": 0,
+                "max": 0
+            },
+            "cra": {
+                "value": 0,
+                "max": 0
+            },
+            "will": {
+                "value": 0,
+                "max": 0
+            },
+            "luck": {
+                "value": 0,
+                "max": 0
+            }
+        },
+        "skills": {
+            "accortezza": {
+                "value": 0
+            },
+            "atletica": {
+                "value": 0
+            },
+            "belleArti": {
+                "value": 0
+            },
+            "carisma": {
+                "value": 0
+            },
+            "commercio": {
+                "value": 0
+            },
+            "deduzione": {
+                "value": 0
+            },
+            "eleganza": {
+                "value": 0
+            },
+            "eludere": {
+                "value": 0
+            },
+            "esibirsi": {
+                "value": 0
+            },
+            "etichetta": {
+                "value": 0
+            },
+            "giocoDazzardo": {
+                "value": 0
+            },
+            "inganno": {
+                "value": 0
+            },
+            "istruzione": {
+                "value": 0
+            },
+            "linguaAntica": {
+                "value": 0
+            },
+            "linguaNanica": {
+                "value": 0
+            },
+            "mischia": {
+                "value": 0
+            },
+            "nascondersi": {
+                "value": 0
+            },
+            "persuasione": {
+                "value": 0
+            },
+            "prestanza": {
+                "value": 0
+            },
+            "rissa": {
+                "value": 0
+            },
+            "scaltrezza": {
+                "value": 0
+            },
+            "scassinare": {
+                "value": 0
+            },
+            "scherma": {
+                "value": 0
+            },
+            "seduzione": {
+                "value": 0
+            },
+            "sensibilita": {
+                "value": 0
+            },
+            "tempra": {
+                "value": 0
+            }
+        },
+        "details": {
+            "biography": "<p>Questa versione di Dandelion, nota come il “Flagello di Draghi e Donzelle”, è una leggenda vivente. Più che un semplice bardo, è un compagno di avventure capace di cavarsi d'impaccio con l'astuzia, il carisma e una sorprendente abilità nella scherma (quando proprio non può evitarlo).</p>",
+            "threat": "Eccezionale",
+            "reward": 0
+        },
+        "derivedStats": {
+            "health": {
+                "value": 0,
+                "max": 0
+            },
+            "stamina": {
+                "value": 0,
+                "max": 0
+            },
+            "rec": {
+                "value": 0,
+                "max": 0
+            },
+            "stun": {
+                "value": 0
+            },
+            "woundTreshold": {
+                "value": 0
+            }
+        },
+        "description": "<p>Questa versione di Dandelion, nota come il “Flagello di Draghi e Donzelle”, è una leggenda vivente. Più che un semplice bardo, è un compagno di avventure capace di cavarsi d'impaccio con l'astuzia, il carisma e una sorprendente abilità nella scherma.</p>",
+        "sourcebook": "LR 171"
     },
-    "skills": {
-      "accortezza": {
-        "value": 0
-      },
-      "atletica": {
-        "value": 0
-      },
-      "belleArti": {
-        "value": 0
-      },
-      "carisma": {
-        "value": 0
-      },
-      "commercio": {
-        "value": 0
-      },
-      "deduzione": {
-        "value": 0
-      },
-      "eleganza": {
-        "value": 0
-      },
-      "eludere": {
-        "value": 0
-      },
-      "esibirsi": {
-        "value": 0
-      },
-      "etichetta": {
-        "value": 0
-      },
-      "giocoDazzardo": {
-        "value": 0
-      },
-      "inganno": {
-        "value": 0
-      },
-      "istruzione": {
-        "value": 0
-      },
-      "linguaAntica": {
-        "value": 0
-      },
-      "linguaNanica": {
-        "value": 0
-      },
-      "mischia": {
-        "value": 0
-      },
-      "nascondersi": {
-        "value": 0
-      },
-      "persuasione": {
-        "value": 0
-      },
-      "prestanza": {
-        "value": 0
-      },
-      "rissa": {
-        "value": 0
-      },
-      "scaltrezza": {
-        "value": 0
-      },
-      "scassinare": {
-        "value": 0
-      },
-      "scherma": {
-        "value": 0
-      },
-      "seduzione": {
-        "value": 0
-      },
-      "sensibilita": {
-        "value": 0
-      },
-      "tempra": {
-        "value": 0
-      }
-    },
-    "details": {
-      "biography": "<p>Questa versione di Dandelion, nota come il “Flagello di Draghi e Donzelle”, è una leggenda vivente. Più che un semplice bardo, è un compagno di avventure capace di cavarsi d'impaccio con l'astuzia, il carisma e una sorprendente abilità nella scherma (quando proprio non può evitarlo).</p>",
-      "threat": "Eccezionale",
-      "reward": 0
-    },
-    "derivedStats": {
-      "health": {
-        "value": 0,
-        "max": 0
-      },
-      "stamina": {
-        "value": 0,
-        "max": 0
-      },
-      "rec": {
-        "value": 0,
-        "max": 0
-      },
-      "stun": {
-        "value": 0
-      },
-      "woundTreshold": {
-        "value": 0
-      }
-    },
-    "description": "<p>Questa versione di Dandelion, nota come il “Flagello di Draghi e Donzelle”, è una leggenda vivente. Più che un semplice bardo, è un compagno di avventure capace di cavarsi d'impaccio con l'astuzia, il carisma e una sorprendente abilità nella scherma.</p>",
-    "sourcebook": "LR 171"
-  },
-  "items": [
-    {
-      "name": "Flamberga",
-      "type": "weapon",
-      "img": "modules/witcher-compendium/assets/SPECIAL/weapon_sword.webp",
-      "system": {
-        "damage": "4d6+4",
-        "accuracy": 0,
-        "effects": "Sanguinamento (25%)"
-      }
-    },
-    {
-      "name": "Liuto",
-      "type": "item",
-      "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
-      "system": {
-        "description": "<p>Il leggendario strumento di Dandelion.</p>"
-      }
+    "items": [
+        {
+            "_id": "6c72776561703032",
+            "name": "Flamberga",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/flamberga.webp",
+            "system": {
+                "description": "<p>Nel Continente si possono trovare molte stranezze, oggetti curiosi e creature di cui una contadina come voi non ha alcuna conoscenza, né ha mai avuto occasione di vedere. Ecco perché io viaggio! Per far sì che gli angoli della mappa si pieghino verso il centro, per portare l'esotico nei luoghi fin troppo comuni. – Dandelion</p>",
+                "sourcebook": "LR 167",
+                "weight": 3.5,
+                "cost": 1025,
+                "reliability": 15,
+                "reliabilityMax": 15,
+                "accuracy": -1,
+                "damage": "6d6",
+                "hands": 2,
+                "effects": "Ablativa, Portata",
+                "category": "sword",
+                "range": ""
+            },
+            "effects": [],
+            "flags": {},
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
+            "name": "Liuto",
+            "type": "item",
+            "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
+            "system": {
+                "description": "<p>Il leggendario strumento di Dandelion.</p>"
+            }
+        }
+    ],
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
     }
-  ],
-  "_stats": {
-    "systemId": "TheWitcherItaNewSystem",
-    "coreVersion": 14
-  }
 }

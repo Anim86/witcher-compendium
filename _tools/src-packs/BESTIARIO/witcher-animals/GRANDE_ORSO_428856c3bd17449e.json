@@ -201,7 +201,8 @@
                 "effects": "Forza Distruttiva, Sanguinamento (75%)",
                 "isStored": false,
                 "reliable": 0,
-                "rateOfFire": 1
+                "rateOfFire": 1,
+                "damageType": "piercing"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -220,7 +221,8 @@
                 "effects": "Forza Distruttiva",
                 "isStored": false,
                 "reliable": 0,
-                "rateOfFire": 1
+                "rateOfFire": 1,
+                "damageType": "slashing"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

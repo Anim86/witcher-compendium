@@ -215,7 +215,8 @@
                 "damage": "6d6",
                 "accuracy": 0,
                 "effects": "",
-                "rateOfFire": 2
+                "rateOfFire": 2,
+                "damageType": "slashing"
             }
         },
         {
@@ -228,7 +229,8 @@
                 "damage": "8d6",
                 "accuracy": 0,
                 "effects": "",
-                "rateOfFire": 1
+                "rateOfFire": 1,
+                "damageType": "piercing"
             }
         },
         {
@@ -241,7 +243,8 @@
                 "damage": "6d6",
                 "accuracy": 0,
                 "effects": "",
-                "rateOfFire": 1
+                "rateOfFire": 1,
+                "damageType": "slashing"
             }
         },
         {

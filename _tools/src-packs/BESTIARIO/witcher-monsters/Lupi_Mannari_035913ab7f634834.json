@@ -186,7 +186,8 @@
                 "damage": "5d6",
                 "accuracy": 0,
                 "effects": "Sanguinamento (25%)",
-                "rateOfFire": 2
+                "rateOfFire": 2,
+                "damageType": "slashing"
             }
         },
         {
@@ -199,7 +200,8 @@
                 "damage": "6d6",
                 "accuracy": 0,
                 "effects": "Sanguinamento (50%)",
-                "rateOfFire": 1
+                "rateOfFire": 1,
+                "damageType": "piercing"
             }
         }
     ],

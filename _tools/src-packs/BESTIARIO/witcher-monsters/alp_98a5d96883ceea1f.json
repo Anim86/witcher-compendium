@@ -255,7 +255,8 @@
                 "damage": "5d6",
                 "accuracy": 0,
                 "effects": "Succhiare Sangue, Trapassare",
-                "rateOfFire": 1
+                "rateOfFire": 1,
+                "damageType": "piercing"
             }
         },
         {
@@ -268,7 +269,8 @@
                 "damage": "4d6",
                 "accuracy": 0,
                 "effects": "Sanguinamento (50%)",
-                "rateOfFire": 2
+                "rateOfFire": 2,
+                "damageType": "slashing"
             }
         }
     ]
