@@ -6,8 +6,8 @@ Questo report definisce la **nuova architettura** dei compendi per il modulo Fou
 
 | Compendio Target | Descrizione | Asset Totali | Tipo Meccanico Foundry |
 | :--- | :--- | :---: | :--- |
-| `witcher-formulas` | Ricette, formule e decotti (istruzioni cartacee) | 56 | `diagrams` |
 | `witcher-potions` | Pozioni e prodotti alchemici finiti e pronti all'uso | 36 | `valuable` |
+| `witcher-formulas` | Ricette, formule e decotti (istruzioni cartacee) | 56 | `diagrams` |
 | `witcher-components` | Materie prime, ingredienti, parti di mostro | 146 | `component` (tranne "Puro..." in `valuable`) |
 | `witcher-schematics` | Progetti tecnici per forgiare armi e corazze | 158 | `diagrams` |
 | `witcher-mutations` & `witcher-tc` | Mutageni (Blu, Verdi, Rossi), regole e tratti | 51 | `mutagen` & `valuable` |
@@ -16,13 +16,13 @@ Questo report definisce la **nuova architettura** dei compendi per il modulo Fou
 
 ## 📂 Dettaglio dei Compendi Riorganizzati
 
-### 📄 1. Nuovo Compendio: `witcher-formulas` (56 Asset)
-* **Tipo meccanico su Foundry:** `diagrams`
-* **Contenuto:** Istruzioni cartacee e ricette per la preparazione di pozioni, decotti, oli e bombe. Non contiene oggetti consumabili fisici, solo formule.
-
-### 🧪 2. Compendio Ripulito: `witcher-potions` (Pozioni Finite) (36 Asset)
+### 🧪 1. Compendio Ripulito: `witcher-potions` (Pozioni Finite) (36 Asset)
 * **Tipo meccanico su Foundry:** `valuable`
 * **Contenuto:** Pozioni finite, elisir, droghe, bombe, veleni e unguenti pronti all'uso derivati da processi alchemici.
+
+### 📄 2. Nuovo Compendio: `witcher-formulas` (56 Asset)
+* **Tipo meccanico su Foundry:** `diagrams`
+* **Contenuto:** Istruzioni cartacee e ricette per la preparazione di pozioni, decotti, oli e bombe. Non contiene oggetti consumabili fisici, solo formule.
 
 ### 🌿 3. Compendio Espanso: `witcher-components` (146 Asset)
 * **Tipo meccanico su Foundry:** `component` (Nota: I distillati *"Puro..."* restano `valuable` per mantenere il costo raddoppiato in conformità con le regole).
