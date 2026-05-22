@@ -1,5 +1,5 @@
 # 🛡️ Smart Asset Guard - Report Iconografia
-Data Scansione: 22/05/2026, 16:41:03
+Data Scansione: 22/05/2026, 22:15:00
 
 ## 📊 Riepilogo
 - **Totale Voci Analizzate**: 1462

@@ -13,19 +13,47 @@ const destDir = path.join(REPO_ROOT, 'witcher-compendium/assets/ALCHIMIA_E_ARTIG
 const reportPath = path.join(REPO_ROOT, 'TO DO/report_schemi_asset.md');
 
 const targets = [
-    { name: "Arco Corto", clean: "schema_arco_corto" },
-    { name: "Arco Lungo", clean: "schema_arco_lungo" },
-    { name: "Arco da Guerra", clean: "schema_arco_da_guerra" },
-    { name: "Arco da Viaggio Elfico", clean: "schema_arco_da_viaggio_elfico" },
-    { name: "Zefhar Elfico", clean: "schema_zefhar_elfico" },
-    { name: "Balestra", clean: "schema_balestra" },
-    { name: "Balestra da Caccia", clean: "schema_balestra_da_caccia" },
-    { name: "Balestra da Cacciatore di Mostri", clean: "schema_balestra_da_cacciatore_di_mostri" },
-    { name: "Balestra Pesante Nanica", clean: "schema_balestra_pesante_nanica" },
-    { name: "Balestrino", clean: "schema_balestrino" },
-    { name: "Balestrino Gnomesco", clean: "schema_balestrino_gnomesco" },
-    { name: "Munizioni Normali", clean: "schema_munizioni_normali" },
-    { name: "Munizioni a Punta Larga", clean: "schema_munizioni_a_punta_larga" }
+    { name: "Brocchiero Gnomesco", clean: "schema_brocchiero_gnomesco" },
+    { name: "Camaglio", clean: "schema_camaglio" },
+    { name: "Cappa Nanica", clean: "schema_cappa_nanica" },
+    { name: "Cappuccio a Doppia Trama", clean: "schema_cappuccio_a_doppia_trama" },
+    { name: "Cappuccio Corazzato", clean: "schema_cappuccio_corazzato" },
+    { name: "Cappuccio da Arciere Verden", clean: "schema_cappuccio_da_arciere_verden" },
+    { name: "Cotta di Maglia", clean: "schema_cotta_di_maglia" },
+    { name: "Cotta Gnomesca", clean: "schema_cotta_gnomesca" },
+    { name: "Elmo a Mezza Maschera", clean: "schema_elmo_a_mezza_maschera" },
+    { name: "Elmo di Skellige", clean: "schema_elmo_di_skellige" },
+    { name: "Elmo Nilfgaardiano", clean: "schema_elmo_nilfgaardiano" },
+    { name: "Farsetto Protettivo Halfling", clean: "schema_farsetto_protettivo_halfling" },
+    { name: "Gambali di Maglia di Hindarsfjall", clean: "schema_gambali_di_maglia_di_hindarsfjall" },
+    { name: "Gambesone", clean: "schema_gambesone" },
+    { name: "Gambesone Aedirniano", clean: "schema_gambesone_aedirniano" },
+    { name: "Gambesone a Doppia Trama", clean: "schema_gambesone_a_doppia_trama" },
+    { name: "Giubba di Cuoio Lyriano", clean: "schema_giubba_di_cuoio_lyriano" },
+    { name: "Grande Elmo", clean: "schema_grande_elmo" },
+    { name: "Palvese", clean: "schema_palvese" },
+    { name: "Palvese Mahakaman", clean: "schema_palvese_mahakaman" },
+    { name: "Palvese Nilfgaardiano", clean: "schema_palvese_nilfgaardiano" },
+    { name: "Schinieri di Piastre", clean: "schema_schinieri_di_piastre" },
+    { name: "Schinieri Nilfgaardiani", clean: "schema_schinieri_nilfgaardiani" },
+    { name: "Schinieri Redaniani", clean: "schema_schinieri_redaniani" },
+    { name: "Scudo d'Acciaio a Goccia", clean: "schema_scudo_d_acciaio_a_goccia" },
+    { name: "Scudo da Razziatore di Skellige", clean: "schema_scudo_da_razziatore_di_skellige" },
+    { name: "Scudo di Cuoio", clean: "schema_scudo_di_cuoio" },
+    { name: "Scudo Elfico", clean: "schema_scudo_elfico" },
+    { name: "Scudo Kaedweni", clean: "schema_scudo_kaedweni" },
+    { name: "Scudo Temeriano", clean: "schema_scudo_temeriano" },
+    { name: "Brache di Cuoio Lyriano", clean: "schema_brache_di_cuoio_lyriano" },
+    { name: "Bastone", clean: "schema_bastone" },
+    { name: "Bastone con Cristallo", clean: "schema_bastone_con_cristallo" },
+    { name: "Bastone da Passeggio Elfico", clean: "schema_bastone_da_passeggio_elfico" },
+    { name: "Bastone di Ferro", clean: "schema_bastone_di_ferro" },
+    { name: "Bastone Gnomesco", clean: "schema_bastone_gnomesco" },
+    { name: "Pugnale", clean: "schema_pugnale" },
+    { name: "Daga a Rondelle Halfling", clean: "schema_daga_a_rondelle_halfling" },
+    { name: "Jambiya", clean: "schema_jambiya" },
+    { name: "Bastone Uncinato", clean: "schema_bastone_uncinato" },
+    { name: "Asce da Lancio", clean: "schema_asce_da_lancio" }
 ];
 
 async function main() {
@@ -41,6 +69,8 @@ async function main() {
     }
 
     const brainFiles = fs.readdirSync(brainDir);
+
+    const processedTargets = [];
 
     for (const t of targets) {
         const regex = new RegExp(`^${t.clean}_\\d+\\.png$`);
@@ -62,6 +92,7 @@ async function main() {
                 .toFile(destWebpPath);
                 
             console.log(`✨ Optimized and saved: ${t.clean}.webp (512x512px WebP Q82)`);
+            processedTargets.push(t);
         } else {
             console.warn(`⚠️ Could not find brain image starting with ${t.clean}`);
         }
@@ -72,7 +103,7 @@ async function main() {
         let content = fs.readFileSync(reportPath, 'utf8');
         let updatedCount = 0;
         
-        for (const t of targets) {
+        for (const t of processedTargets) {
             // We want to replace "| [ ] | **Schema: Spada d'Arme**" with "| [x] | **Schema: Spada d'Arme**"
             const searchStr = `| [ ] | **Schema: ${t.name}**`;
             const replaceStr = `| [x] | **Schema: ${t.name}**`;
