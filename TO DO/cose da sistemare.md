@@ -10,6 +10,6 @@
   - [x] tratto mutazione capacità rigenerativa (Concluso)
   - tutti gli schemi (verificare il file [report_schemi_asset.md](report_schemi_asset.md) per lo stato di generazione e i prompt)
   - [x] warg (Ottimizzato)
-  - oggetti vari è pieno di doppioni e immagini sbagliate
+  - oggetti vari è pieno di doppioni e immagini sbagliate (verificare il file [report_oggetti_vari_asset.md](report_oggetti_vari_asset.md) per lo stato di generazione e i prompt delle immagini)
   - ferite critiche
   - geografia
