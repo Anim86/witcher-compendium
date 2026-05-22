@@ -1,0 +1,30 @@
+{
+    "_id": "a4b5c6d7e8f9a0b1",
+    "name": "Sintonia con la Natura",
+    "type": "skill",
+    "img": "modules/witcher-compendium/assets/PROFESSIONI_E_ABILITA/witcher-skills/sintonia_con_la_natura.webp",
+    "system": {
+        "attribute": "will",
+        "description": "<p>Il Druido entra più in sintonia con la natura e ottiene Vigore aggiuntivo. (Abilità Passiva)</p>",
+        "sourcebook": "TC 70",
+        "value": 0,
+        "label": "",
+        "isOpened": false,
+        "modifiers": [],
+        "activeEffectModifiers": 0,
+        "isProfession": true,
+        "isPickup": false,
+        "isLearned": false
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

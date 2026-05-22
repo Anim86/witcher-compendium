@@ -1,0 +1,30 @@
+{
+    "_id": "b0c1d2e3f4a5b6c7",
+    "name": "Forma Bestiale",
+    "type": "skill",
+    "img": "modules/witcher-compendium/assets/PROFESSIONI_E_ABILITA/witcher-skills/forma_bestiale.webp",
+    "system": {
+        "attribute": "body",
+        "description": "<p>L'abilità di assumere caratteristiche animali e tramutarsi in un ibrido. Permette di parlare con gli animali di cui si possiede l'aspetto, ma rende Odiati e Temuti.</p>",
+        "sourcebook": "TC 70",
+        "value": 0,
+        "label": "",
+        "isOpened": false,
+        "modifiers": [],
+        "activeEffectModifiers": 0,
+        "isProfession": true,
+        "isPickup": false,
+        "isLearned": false
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

@@ -1,0 +1,52 @@
+{
+    "_id": "d020eeb9d502c6d6",
+    "name": "Esiti dei Disastri Magici — Mago",
+    "type": "RollTable",
+    "formula": "1d10",
+    "description": "",
+    "results": [
+        {
+            "range": [
+                1,
+                6
+            ],
+            "weight": 1,
+            "type": 0,
+            "text": "Magia crepita: l'incantesimo ha effetto, l'incantatore subisce 1 danno per punto disastro.",
+            "_id": "de897401de5866cf",
+            "drawn": false
+        },
+        {
+            "range": [
+                7,
+                9
+            ],
+            "weight": 1,
+            "type": 0,
+            "text": "Magia s'incendia: l'incantesimo fallisce + applica effetto disastro elementale (vedi tabella Elementi).",
+            "_id": "900a0993c44ca2ee",
+            "drawn": false
+        },
+        {
+            "range": [
+                10,
+                10
+            ],
+            "weight": 1,
+            "type": 0,
+            "text": "Esplosione magica: effetto elementale + gli oggetti focus esplodono (1d10 danni, raggio 2m).",
+            "_id": "5735a91c189468ba",
+            "drawn": false
+        }
+    ],
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": "14"
+    },
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/DisastriMagici/esiti_dei_disastri_magici_mago.webp"
+}

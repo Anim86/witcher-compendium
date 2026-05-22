@@ -1,0 +1,30 @@
+{
+    "_id": "fb419ebc522bdec9",
+    "name": "Bestiario",
+    "type": "skill",
+    "img": "modules/witcher-compendium/assets/PROFESSIONI_E_ABILITA/witcher-skills/bestiario.webp",
+    "system": {
+        "attribute": "int",
+        "description": "<p>L'abilità di ricordare informazioni su vari mostri. Permette di classificarli e di richiamarne alla mente i punti di forza e di debolezza. (Costo x2)</p>",
+        "sourcebook": "MB 52",
+        "value": 0,
+        "label": "",
+        "isOpened": false,
+        "modifiers": [],
+        "activeEffectModifiers": 0,
+        "isProfession": false,
+        "isPickup": false,
+        "isLearned": false
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "_id": "d4e5f6a7b8c9d0e1",
+    "name": "Potere Divino",
+    "type": "skill",
+    "img": "modules/witcher-compendium/assets/PROFESSIONI_E_ABILITA/witcher-skills/potere_divino.webp",
+    "system": {
+        "attribute": "will",
+        "description": "<p>Il Prete entra più in sintonia con il suo dio e ottiene Vigore aggiuntivo. (Abilità Passiva)</p>",
+        "sourcebook": "TC 52",
+        "value": 0,
+        "label": "",
+        "isOpened": false,
+        "modifiers": [],
+        "activeEffectModifiers": 0,
+        "isProfession": true,
+        "isPickup": false,
+        "isLearned": false
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

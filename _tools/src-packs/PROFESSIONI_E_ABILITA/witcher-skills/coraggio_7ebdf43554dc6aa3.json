@@ -1,0 +1,30 @@
+{
+    "_id": "7ebdf43554dc6aa3",
+    "name": "Coraggio",
+    "type": "skill",
+    "img": "modules/witcher-compendium/assets/PROFESSIONI_E_ABILITA/witcher-skills/coraggio.webp",
+    "system": {
+        "attribute": "will",
+        "description": "<p>L'abilità di resistere alla paura. Permette al personaggio di restare calmo, tener testa alle provocazioni e non fuggire davanti ai mostri.</p>",
+        "sourcebook": "MB 57",
+        "value": 0,
+        "label": "",
+        "isOpened": false,
+        "modifiers": [],
+        "activeEffectModifiers": 0,
+        "isProfession": false,
+        "isPickup": false,
+        "isLearned": false
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

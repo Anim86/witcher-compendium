@@ -1,0 +1,30 @@
+{
+    "_id": "eb7e06c22f82a6ca",
+    "name": "Scaltrezza",
+    "type": "skill",
+    "img": "modules/witcher-compendium/assets/PROFESSIONI_E_ABILITA/witcher-skills/scaltrezza.webp",
+    "system": {
+        "attribute": "int",
+        "description": "<p>Conoscenza del mondo criminale, dei covi, del gergo della malavita e di come muoversi nelle zone più malfamate delle città.</p>",
+        "sourcebook": "MB 52",
+        "value": 0,
+        "label": "",
+        "isOpened": false,
+        "modifiers": [],
+        "activeEffectModifiers": 0,
+        "isProfession": false,
+        "isPickup": false,
+        "isLearned": false
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

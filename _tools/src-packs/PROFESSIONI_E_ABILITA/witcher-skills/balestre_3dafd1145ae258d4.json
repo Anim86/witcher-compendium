@@ -1,0 +1,30 @@
+{
+    "_id": "3dafd1145ae258d4",
+    "name": "Balestre",
+    "type": "skill",
+    "img": "modules/witcher-compendium/assets/PROFESSIONI_E_ABILITA/witcher-skills/balestre.webp",
+    "system": {
+        "attribute": "dex",
+        "description": "<p>Tirare con le balestre. Permette di incoccare e tirare con una balestra con grande precisione, colpendo bersagli difficili o distanti.</p>",
+        "sourcebook": "MB 55",
+        "value": 0,
+        "label": "",
+        "isOpened": false,
+        "modifiers": [],
+        "activeEffectModifiers": 0,
+        "isProfession": false,
+        "isPickup": false,
+        "isLearned": false
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

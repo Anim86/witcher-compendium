@@ -1,0 +1,86 @@
+{
+    "_id": "0651944f5f66f3fb",
+    "name": "Villico",
+    "type": "profession",
+    "img": "modules/witcher-compendium/assets/PROFESSIONI_E_ABILITA/witcher-professions/villico.webp",
+    "system": {
+        "sourcebook": "NP",
+        "definingSkill": {
+            "skillName": "Intolleranza",
+            "stat": "emp",
+            "level": 1,
+            "definition": "<p>Il Villico è abituato a sopportare le difficoltà, la fatica e i torti del mondo. Quando è sottoposto a prove di resistenza o affronta disagi fisici (come fame, freddo, o lavori massacranti), può utilizzare Intolleranza al posto di Tempra. Inoltre, quando il Villico subisce un torto evidente da parte di figure di autorità o classi sociali superiori, ottiene un bonus +2 a resistere alla coercizione mentale o all'intimidazione.</p>"
+        },
+        "skillPath1": {
+            "pathName": "N/A (Nessun percorso)",
+            "skill1": {
+                "skillName": "",
+                "stat": "",
+                "level": 0,
+                "definition": ""
+            },
+            "skill2": {
+                "skillName": "",
+                "stat": "",
+                "level": 0,
+                "definition": ""
+            },
+            "skill3": {
+                "skillName": "",
+                "stat": "",
+                "level": 0,
+                "definition": ""
+            }
+        },
+        "skillPath2": {
+            "pathName": "N/A (Nessun percorso)",
+            "skill1": {
+                "skillName": "",
+                "stat": "",
+                "level": 0,
+                "definition": ""
+            },
+            "skill2": {
+                "skillName": "",
+                "stat": "",
+                "level": 0,
+                "definition": ""
+            },
+            "skill3": {
+                "skillName": "",
+                "stat": "",
+                "level": 0,
+                "definition": ""
+            }
+        },
+        "skillPath3": {
+            "pathName": "N/A (Nessun percorso)",
+            "skill1": {
+                "skillName": "",
+                "stat": "",
+                "level": 0,
+                "definition": ""
+            },
+            "skill2": {
+                "skillName": "",
+                "stat": "",
+                "level": 0,
+                "definition": ""
+            },
+            "skill3": {
+                "skillName": "",
+                "stat": "",
+                "level": 0,
+                "definition": ""
+            }
+        },
+        "professionSkills": "Atletica, Coraggio, Gioco d'Azzardo, Lame Corte, Manifattura, Prestanza, Pronto Soccorso, Rissa, Sopravvivenza, Tempra",
+        "notes": "<p>La spina dorsale del Continente. Esperto di agricoltura, vita rurale e resilienza contro le avversità.</p>"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

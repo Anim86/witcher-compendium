@@ -1,0 +1,30 @@
+{
+    "_id": "c8d9e0f1a2b3c4d5",
+    "name": "Rito della Quercia e del Vischio",
+    "type": "skill",
+    "img": "modules/witcher-compendium/assets/PROFESSIONI_E_ABILITA/witcher-skills/rito_della_quercia_e_del_vischio.webp",
+    "system": {
+        "attribute": "int",
+        "description": "<p>L'abilità di raccogliere ingredienti naturali per creare un potente Focus (Bastone da Druido). Permette di collegarsi alla terra e ottenere benefici ambientali.</p>",
+        "sourcebook": "TC 69",
+        "value": 0,
+        "label": "",
+        "isOpened": false,
+        "modifiers": [],
+        "activeEffectModifiers": 0,
+        "isProfession": true,
+        "isPickup": false,
+        "isLearned": false
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

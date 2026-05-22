@@ -1,0 +1,30 @@
+{
+    "_id": "f8cd878e2f47c613",
+    "name": "Officiare Rituali",
+    "type": "skill",
+    "img": "modules/witcher-compendium/assets/PROFESSIONI_E_ABILITA/witcher-skills/officiare_rituali.webp",
+    "system": {
+        "attribute": "will",
+        "description": "<p>Magia rituale. Permette di compiere rituali con abilità e disinvoltura, anche sotto pressione, ottenendo il risultato desiderato. (Costo x2)</p>",
+        "sourcebook": "MB 58",
+        "value": 0,
+        "label": "",
+        "isOpened": false,
+        "modifiers": [],
+        "activeEffectModifiers": 0,
+        "isProfession": false,
+        "isPickup": false,
+        "isLearned": false
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

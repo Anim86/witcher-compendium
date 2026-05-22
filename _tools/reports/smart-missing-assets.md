@@ -1,9 +1,9 @@
 # 🛡️ Smart Asset Guard - Report Iconografia
-Data Scansione: 22/05/2026, 22:15:00
+Data Scansione: 22/05/2026, 23:25:13
 
 ## 📊 Riepilogo
-- **Totale Voci Analizzate**: 1462
-- **Asset Corretti**: 1462
+- **Totale Voci Analizzate**: 1461
+- **Asset Corretti**: 1461
 - **Asset con Mismatch (Legacy/Path)**: 0
 - **Asset Mancanti**: 0
 

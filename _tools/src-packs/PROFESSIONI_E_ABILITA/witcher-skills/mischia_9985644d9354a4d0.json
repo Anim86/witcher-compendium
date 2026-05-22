@@ -1,0 +1,30 @@
+{
+    "_id": "9985644d9354a4d0",
+    "name": "Mischia",
+    "type": "skill",
+    "img": "modules/witcher-compendium/assets/PROFESSIONI_E_ABILITA/witcher-skills/mischia.webp",
+    "system": {
+        "attribute": "ref",
+        "description": "<p>Saper usare armi contundenti (mazze, martelli), asce e fruste. Permette di maneggiare con sicurezza queste armi in combattimento.</p>",
+        "sourcebook": "MB 53",
+        "value": 0,
+        "label": "",
+        "isOpened": false,
+        "modifiers": [],
+        "activeEffectModifiers": 0,
+        "isProfession": false,
+        "isPickup": false,
+        "isLearned": false
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

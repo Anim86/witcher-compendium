@@ -1,0 +1,30 @@
+{
+    "_id": "cae834ce33219427",
+    "name": "Istruzione",
+    "type": "skill",
+    "img": "modules/witcher-compendium/assets/PROFESSIONI_E_ABILITA/witcher-skills/istruzione.webp",
+    "system": {
+        "attribute": "int",
+        "description": "<p>Il livello d'istruzione formale ricevuto dal personaggio. Dalle nozioni di base impartite dai genitori a una vasta cultura accademica acquisita a Oxenfurt o in altre università.</p>",
+        "sourcebook": "MB 53",
+        "value": 0,
+        "label": "",
+        "isOpened": false,
+        "modifiers": [],
+        "activeEffectModifiers": 0,
+        "isProfession": false,
+        "isPickup": false,
+        "isLearned": false
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

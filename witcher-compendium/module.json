@@ -38,21 +38,21 @@
     {
       "name": "witcher-races",
       "label": "Razze",
-      "path": "packs/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-races",
+      "path": "packs/PROFESSIONI_E_ABILITA/witcher-races",
       "type": "Item",
       "system": "TheWitcherItaNewSystem"
     },
     {
       "name": "witcher-professions",
       "label": "Professioni",
-      "path": "packs/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-professions",
+      "path": "packs/PROFESSIONI_E_ABILITA/witcher-professions",
       "type": "Item",
       "system": "TheWitcherItaNewSystem"
     },
     {
       "name": "witcher-skills",
       "label": "Abilità",
-      "path": "packs/REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita/witcher-skills",
+      "path": "packs/PROFESSIONI_E_ABILITA/witcher-skills",
       "type": "Item",
       "system": "TheWitcherItaNewSystem"
     },
@@ -204,14 +204,14 @@
     {
       "name": "witcher-trophies",
       "label": "Trofei",
-      "path": "packs/REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies",
+      "path": "packs/EQUIPAGGIAMENTO/witcher-trophies",
       "type": "Item",
       "system": "TheWitcherItaNewSystem"
     },
     {
       "name": "witcher-critical-wounds",
       "label": "Ferite Critiche",
-      "path": "packs/REGOLAMENTO_E_NARRATIVA/Ferite_Critiche/witcher-critical-wounds",
+      "path": "packs/REGOLAMENTO_E_NARRATIVA/witcher-critical-wounds",
       "type": "Item",
       "system": "TheWitcherItaNewSystem"
     },
@@ -225,14 +225,14 @@
     {
       "name": "witcher-lore",
       "label": "Lore",
-      "path": "packs/REGOLAMENTO_E_NARRATIVA/Lore_e_Racconti/witcher-lore",
+      "path": "packs/REGOLAMENTO_E_NARRATIVA/witcher-lore",
       "type": "Item",
       "system": "TheWitcherItaNewSystem"
     },
     {
       "name": "witcher-geografia",
       "label": "Geografia (Nazioni e Luoghi)",
-      "path": "packs/REGOLAMENTO_E_NARRATIVA/Geografia/witcher-geografia",
+      "path": "packs/REGOLAMENTO_E_NARRATIVA/witcher-geografia",
       "type": "Item",
       "system": "TheWitcherItaNewSystem"
     },
@@ -267,49 +267,35 @@
     {
       "name": "witcher-investigations",
       "label": "Indagini (DW)",
-      "path": "packs/REGOLAMENTO_E_NARRATIVA/Investigazioni/witcher-investigations",
-      "type": "Item",
-      "system": "TheWitcherItaNewSystem"
-    },
-    {
-      "name": "witcher-lore-racconti",
-      "label": "Lore (Racconti)",
-      "path": "packs/REGOLAMENTO_E_NARRATIVA/Lore_e_Racconti/witcher-lore-racconti",
-      "type": "Item",
-      "system": "TheWitcherItaNewSystem"
-    },
-    {
-      "name": "witcher-lore-chaos",
-      "label": "Lore Chaos (TC)",
-      "path": "packs/REGOLAMENTO_E_NARRATIVA/Lore_e_Racconti/witcher-lore-chaos",
+      "path": "packs/REGOLAMENTO_E_NARRATIVA/witcher-investigations",
       "type": "Item",
       "system": "TheWitcherItaNewSystem"
     },
     {
       "name": "witcher-necromanzia",
       "label": "Regole di Supporto GM (Necromanzia)",
-      "path": "packs/REGOLAMENTO_E_NARRATIVA/Regole_Necromanzia/witcher-necromanzia",
+      "path": "packs/REGOLAMENTO_E_NARRATIVA/witcher-necromanzia",
       "type": "Item",
       "system": "TheWitcherItaNewSystem"
     },
     {
       "name": "witcher-rolltable-critici",
       "label": "Tabelle: Critici e Fumble",
-      "path": "packs/REGOLAMENTO_E_NARRATIVA/Tabelle_Operative/CriticieCombattimento",
+      "path": "packs/REGOLAMENTO_E_NARRATIVA/CriticieCombattimento",
       "type": "RollTable",
       "system": "TheWitcherItaNewSystem"
     },
     {
       "name": "witcher-rolltable-disastri",
       "label": "Tabelle: Disastri Magici",
-      "path": "packs/REGOLAMENTO_E_NARRATIVA/Tabelle_Operative/DisastriMagici",
+      "path": "packs/REGOLAMENTO_E_NARRATIVA/DisastriMagici",
       "type": "RollTable",
       "system": "TheWitcherItaNewSystem"
     },
     {
       "name": "witcher-rolltable-strumentigm",
       "label": "Tabelle: Strumenti GM",
-      "path": "packs/REGOLAMENTO_E_NARRATIVA/Tabelle_Operative/StrumentiGM",
+      "path": "packs/REGOLAMENTO_E_NARRATIVA/StrumentiGM",
       "type": "RollTable",
       "system": "TheWitcherItaNewSystem"
     }

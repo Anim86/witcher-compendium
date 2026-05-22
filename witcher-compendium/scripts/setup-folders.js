@@ -4,6 +4,7 @@ Hooks.once("ready", async () => {
   const ROOT_NAME = "The Witcher Compendio ITA";
   const MACRO_CATS = {
     "BESTIARIO": "BESTIARIO & PERSONAGGI",
+    "PROFESSIONI_E_ABILITA": "PROFESSIONI & ABILITÀ",
     "MAGIA": "MAGIA",
     "EQUIPAGGIAMENTO": "EQUIPAGGIAMENTO",
     "ALCHIMIA_E_ARTIGIANATO": "ALCHIMIA & ARTIGIANATO",
@@ -68,14 +69,7 @@ Hooks.once("ready", async () => {
 
   // Regolamento
   const mReg = folderMap.get("REGOLAMENTO_E_NARRATIVA");
-  await ensureSub("REGOLAMENTO_E_NARRATIVA/Professioni_e_Abilita", "Professioni & Abilità", mReg);
-  await ensureSub("REGOLAMENTO_E_NARRATIVA/Investigazioni", "Investigazioni", mReg);
-  await ensureSub("REGOLAMENTO_E_NARRATIVA/Ferite_Critiche", "Ferite Critiche", mReg);
-  await ensureSub("REGOLAMENTO_E_NARRATIVA/Lore_e_Racconti", "Lore & Racconti", mReg);
-  await ensureSub("REGOLAMENTO_E_NARRATIVA/Trofei", "Trofei", mReg);
-  await ensureSub("REGOLAMENTO_E_NARRATIVA/Geografia", "Geografia", mReg);
-  await ensureSub("REGOLAMENTO_E_NARRATIVA/Tabelle_Operative", "Tabelle Operative", mReg);
-  await ensureSub("REGOLAMENTO_E_NARRATIVA/Regole_Necromanzia", "Regole Necromanzia", mReg);
+
 
   // 5. Rilocazione Pack
   for (let pack of game.packs) {

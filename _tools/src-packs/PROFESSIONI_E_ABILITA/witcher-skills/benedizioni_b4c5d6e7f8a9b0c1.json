@@ -1,0 +1,30 @@
+{
+    "_id": "b4c5d6e7f8a9b0c1",
+    "name": "Benedizioni",
+    "type": "skill",
+    "img": "modules/witcher-compendium/assets/PROFESSIONI_E_ABILITA/witcher-skills/benedizioni.webp",
+    "system": {
+        "attribute": "will",
+        "description": "<p>L'abilità di officiare cerimonie per benedire un gruppo di persone. Le benedizioni conferiscono bonus specifici in base alla divinità adorata.</p>",
+        "sourcebook": "TC 52",
+        "value": 0,
+        "label": "",
+        "isOpened": false,
+        "modifiers": [],
+        "activeEffectModifiers": 0,
+        "isProfession": true,
+        "isPickup": false,
+        "isLearned": false
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

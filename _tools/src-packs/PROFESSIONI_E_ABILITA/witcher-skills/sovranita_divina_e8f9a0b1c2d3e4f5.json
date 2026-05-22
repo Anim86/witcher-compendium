@@ -1,0 +1,30 @@
+{
+    "_id": "e8f9a0b1c2d3e4f5",
+    "name": "Sovranità Divina",
+    "type": "skill",
+    "img": "modules/witcher-compendium/assets/PROFESSIONI_E_ABILITA/witcher-skills/sovranita_divina.webp",
+    "system": {
+        "attribute": "emp",
+        "description": "<p>L'influenza del Prete come strumento del volere divino. Permette di sommare questa abilità alle prove di Autorità nelle regioni dove il proprio culto è praticato.</p>",
+        "sourcebook": "TC 52",
+        "value": 0,
+        "label": "",
+        "isOpened": false,
+        "modifiers": [],
+        "activeEffectModifiers": 0,
+        "isProfession": true,
+        "isPickup": false,
+        "isLearned": false
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

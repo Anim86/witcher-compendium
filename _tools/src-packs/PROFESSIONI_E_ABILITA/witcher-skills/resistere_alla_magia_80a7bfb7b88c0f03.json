@@ -1,0 +1,30 @@
+{
+    "_id": "80a7bfb7b88c0f03",
+    "name": "Resistere alla Magia",
+    "type": "skill",
+    "img": "modules/witcher-compendium/assets/PROFESSIONI_E_ABILITA/witcher-skills/resistere_alla_magia.webp",
+    "system": {
+        "attribute": "will",
+        "description": "<p>Resistere alle influenze magiche. Permette di accorgersi quando si è sotto l'effetto di una magia e di fortificare la mente contro gli stregoni. (Costo x2)</p>",
+        "sourcebook": "MB 58",
+        "value": 0,
+        "label": "",
+        "isOpened": false,
+        "modifiers": [],
+        "activeEffectModifiers": 0,
+        "isProfession": false,
+        "isPickup": false,
+        "isLearned": false
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

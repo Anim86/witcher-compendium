@@ -1,0 +1,30 @@
+{
+    "_id": "12fe74d0e5001799",
+    "name": "Gioco d'Azzardo",
+    "type": "skill",
+    "img": "modules/witcher-compendium/assets/PROFESSIONI_E_ABILITA/witcher-skills/gioco_d_azzardo.webp",
+    "system": {
+        "attribute": "emp",
+        "description": "<p>Conoscenza e abilità nei giochi d'azzardo, dal gwent alle scommesse clandestine. Permette di giocare con competenza e individuare chi bara.</p>",
+        "sourcebook": "MB 56",
+        "value": 0,
+        "label": "",
+        "isOpened": false,
+        "modifiers": [],
+        "activeEffectModifiers": 0,
+        "isProfession": false,
+        "isPickup": false,
+        "isLearned": false
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

@@ -17,10 +17,10 @@ ASSETS_DIR = os.path.join(REPO_ROOT, "witcher-compendium", "assets", "SPECIAL")
 
 # Target directories in src-packs
 SOURCE_PACKS = [
-    os.path.join(REPO_ROOT, "_tools", "src-packs", "GAMEPLAY", "base", "witcher-investigations"),
-    os.path.join(REPO_ROOT, "_tools", "src-packs", "MAGIA", "caos", "witcher-necromanzia"),
-    os.path.join(REPO_ROOT, "_tools", "src-packs", "MAGIA", "caos", "witcher-gifts"),
-    os.path.join(REPO_ROOT, "_tools", "src-packs", "GAMEPLAY", "base", "witcher-trophies")
+    os.path.join(REPO_ROOT, "_tools", "src-packs", "REGOLAMENTO_E_NARRATIVA", "witcher-investigations"),
+    os.path.join(REPO_ROOT, "_tools", "src-packs", "REGOLAMENTO_E_NARRATIVA", "witcher-necromanzia"),
+    os.path.join(REPO_ROOT, "_tools", "src-packs", "MAGIA", "witcher-gifts"),
+    os.path.join(REPO_ROOT, "_tools", "src-packs", "EQUIPAGGIAMENTO", "witcher-trophies")
 ]
 
 # Mapping rules: substring in name -> filename in assets/SPECIAL/

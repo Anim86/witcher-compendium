@@ -1,0 +1,30 @@
+{
+    "_id": "ea0d9de2d94c7ae7",
+    "name": "Atletica",
+    "type": "skill",
+    "img": "modules/witcher-compendium/assets/PROFESSIONI_E_ABILITA/witcher-skills/atletica.webp",
+    "system": {
+        "attribute": "dex",
+        "description": "<p>Saper correre, arrampicarsi e saltare con agilità. Permette di muoversi agilmente in vari ambienti e di superare ostacoli fisici con facilità.</p>",
+        "sourcebook": "MB 55",
+        "value": 0,
+        "label": "",
+        "isOpened": false,
+        "modifiers": [],
+        "activeEffectModifiers": 0,
+        "isProfession": false,
+        "isPickup": false,
+        "isLearned": false
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

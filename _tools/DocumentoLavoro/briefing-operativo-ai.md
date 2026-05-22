@@ -215,6 +215,7 @@ _tools/src-packs/
 │   ├── witcher-magic-items
 │   ├── witcher-special
 │   ├── witcher-transports
+│   ├── witcher-trophies
 │   └── witcher-weapons
 ├── MAGIA
 │   ├── witcher-curses
@@ -225,32 +226,21 @@ _tools/src-packs/
 │   ├── witcher-runes
 │   ├── witcher-signs
 │   └── witcher-spells
-├── REGOLAMENTO_E_NARRATIVA
-│   ├── Ferite_Critiche
-│   │   └── witcher-critical-wounds
-│   ├── Geografia
-│   │   └── witcher-geografia
-│   ├── Investigazioni
-│   │   └── witcher-investigations
-│   ├── Lore_e_Racconti
-│   │   ├── witcher-lore
-│   │   ├── witcher-lore-chaos
-│   │   └── witcher-lore-racconti
-│   ├── Professioni_e_Abilita
-│   │   ├── witcher-professions
-│   │   ├── witcher-races
-│   │   └── witcher-skills
-│   ├── Regole_Necromanzia
-│   │   └── witcher-necromanzia
-│   ├── Tabelle_Operative
-│   │   ├── CriticieCombattimento
-│   │   └── DisastriMagici
-│   └── Trofei
-│       └── witcher-trophies
-└── TABELLEOPERATIVE
-    └── StrumentiGM
+├── PROFESSIONI_E_ABILITA
+│   ├── witcher-professions
+│   ├── witcher-races
+│   └── witcher-skills
+└── REGOLAMENTO_E_NARRATIVA
+    ├── CriticieCombattimento
+    ├── DisastriMagici
+    ├── StrumentiGM
+    ├── witcher-critical-wounds
+    ├── witcher-geografia
+    ├── witcher-investigations
+    ├── witcher-lore
+    └── witcher-necromanzia
 ```
-*Ultimo aggiornamento automatico: 21 maggio 2026*
+*Ultimo aggiornamento automatico: 22 maggio 2026*
 <!-- FOLDER_STRUCTURE_END -->
 
 ## 📈 6. PROGRESSIONE E CHARACTER SHEET
