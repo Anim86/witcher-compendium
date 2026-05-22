@@ -1,24 +1,62 @@
 <div class="wizard-step step-race">
     <h2>{{localize "WITCHER.Wizard.Step.Race.Title"}}</h2>
-    <p>{{localize "WITCHER.Wizard.Step.Race.Description"}}</p>
 
-    <div class="race-selection">
-        {{#each races}}
-        <div class="race-card {{#if (eq ../character.race._id _id)}}selected{{/if}}" data-action="selectRace" data-race-id="{{_id}}">
-            <img src="{{img}}" alt="{{name}}">
-            <h3>{{name}}</h3>
-            <div class="race-perks">
-                {{#if system.description}}
-                    {{{system.description}}}
-                {{else}}
-                    <ul>
-                        {{#if system.perk1.name}}<li><strong>{{system.perk1.name}}</strong></li>{{/if}}
-                        {{#if system.perk2.name}}<li><strong>{{system.perk2.name}}</strong></li>{{/if}}
-                        {{#if system.perk3.name}}<li><strong>{{system.perk3.name}}</strong></li>{{/if}}
-                    </ul>
-                {{/if}}
+    <div class="wizard-split-layout">
+        <!-- Master Panel: List of Races -->
+        <div class="master-panel race-list">
+            {{#each races}}
+            <div class="compact-selector-card {{#if (eq ../character.race._id _id)}}selected{{/if}}" data-action="selectRace" data-race-id="{{_id}}">
+                <img src="{{img}}" alt="{{name}}">
+                <div class="selector-info">
+                    <h3>{{name}}</h3>
+                </div>
             </div>
+            {{/each}}
         </div>
-        {{/each}}
+
+        <!-- Detail Panel: Detailed information of the selected Race -->
+        <div class="detail-panel">
+            {{#if character.race}}
+                <div class="detail-header">
+                    <img src="{{character.race.img}}" alt="{{character.race.name}}">
+                    <div class="detail-title-wrapper">
+                        <h2>{{character.race.name}}</h2>
+                        <span class="detail-subtitle">Stirpe del Continente</span>
+                    </div>
+                </div>
+                <div class="detail-body">
+                    <div class="detail-description">
+                        {{#if character.race.system.description}}
+                            {{{character.race.system.description}}}
+                        {{else}}
+                            <p>Seleziona una razza a sinistra per visualizzare la sua descrizione.</p>
+                        {{/if}}
+                    </div>
+                    
+                    {{#if (or character.race.system.perk1.name (or character.race.system.perk2.name character.race.system.perk3.name))}}
+                    <div class="detail-perks-list">
+                        <h3>Doti Naturali:</h3>
+                        <ul>
+                            {{#if character.race.system.perk1.name}}
+                                <li><strong>{{character.race.system.perk1.name}}</strong>{{#if character.race.system.perk1.description}}: {{{character.race.system.perk1.description}}}{{/if}}</li>
+                            {{/if}}
+                            {{#if character.race.system.perk2.name}}
+                                <li><strong>{{character.race.system.perk2.name}}</strong>{{#if character.race.system.perk2.description}}: {{{character.race.system.perk2.description}}}{{/if}}</li>
+                            {{/if}}
+                            {{#if character.race.system.perk3.name}}
+                                <li><strong>{{character.race.system.perk3.name}}</strong>{{#if character.race.system.perk3.description}}: {{{character.race.system.perk3.description}}}{{/if}}</li>
+                            {{/if}}
+                        </ul>
+                    </div>
+                    {{/if}}
+                </div>
+            {{else}}
+                <div class="detail-placeholder">
+                    <i class="fa-solid fa-person-rays"></i>
+                    <p>Seleziona una stirpe a sinistra per rivelare i suoi segreti e le sue doti naturali.</p>
+                </div>
+            {{/if}}
+        </div>
     </div>
 </div>
+

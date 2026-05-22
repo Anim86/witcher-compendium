@@ -23,8 +23,7 @@
 }
 
 .witcher-wizard .window-content {
-    background: url('/systems/TheWitcherItaNewSystem/assets/images/setup_bg.jpg') center/cover no-repeat !important;
-    background-color: #000 !important;
+    background: #111111 !important;
     color: var(--wizard-text-dark);
     font-family: 'Outfit', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 0;
@@ -41,7 +40,7 @@
     background: rgba(0, 0, 0, 0.8);
     background: linear-gradient(to bottom, #1a1a1a, #000);
     border-bottom: 3px solid var(--wizard-gold);
-    padding: 15px 40px;
+    padding: 8px 25px;
     gap: 0;
     justify-content: space-between;
     align-items: center;
@@ -62,19 +61,19 @@
 }
 
 .witcher-wizard .nav-icon-container {
-    width: 45px;
-    height: 45px;
+    width: 36px;
+    height: 36px;
     background: #222;
     border: 2px solid var(--wizard-border);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--wizard-text-muted);
     transition: all 0.3s ease;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    margin-bottom: 8px;
+    margin-bottom: 4px;
 }
 
 .witcher-wizard .nav-label-container {
@@ -160,7 +159,7 @@
     height: 4px;
     background: rgba(0, 0, 0, 0.4);
     margin: 0 -15px;
-    transform: translateY(-28px);
+    transform: translateY(-22px);
     z-index: 1;
     position: relative;
     border-radius: 2px;
@@ -181,7 +180,7 @@
 
 /* ── Content Area: Professional Parchment ────────────────────────── */
 form.witcher-wizard .wizard-content {
-    padding: 35px;
+    padding: 15px 25px;
     flex: 1;
     overflow-y: auto !important;
     overflow-x: hidden;
@@ -194,7 +193,7 @@ form.witcher-wizard .wizard-content {
     background-blend-mode: multiply;
     background-size: cover;
     
-    margin: 20px 40px;
+    margin: 10px 20px;
     border-radius: 6px;
     border: 1px solid var(--wizard-border);
     box-shadow: 
@@ -210,9 +209,9 @@ form.witcher-wizard .wizard-content {
     color: var(--wizard-accent) !important;
     border-bottom: 2px solid var(--wizard-accent);
     margin-top: 0;
-    margin-bottom: 25px;
+    margin-bottom: 12px;
     font-family: 'MedievalSharp', serif;
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     letter-spacing: 1px;
     text-transform: uppercase;
     text-align: center;
@@ -501,7 +500,7 @@ form.witcher-wizard .wizard-content {
 
 /* Footer Controls */
 .witcher-wizard .wizard-footer {
-    padding: 15px 25px;
+    padding: 8px 20px;
     border-top: 2px solid var(--wizard-border);
     background: rgba(255, 255, 255, 0.6);
     box-shadow: 0 -4px 10px rgba(0,0,0,0.1);
@@ -516,7 +515,7 @@ form.witcher-wizard .wizard-content {
 }
 
 .witcher-wizard .wizard-footer button {
-    padding: 10px 24px; /* Larger hit area */
+    padding: 8px 16px; /* Compact area */
     font-weight: bold;
     background: var(--wizard-accent);
     color: white;
@@ -689,70 +688,214 @@ form.witcher-wizard .wizard-content {
     min-height: 220px;
 }
 
-/* Background Step Enhancements */
+/* ── Background Step ─────────────────────────────────────────────── */
+
+/* 2-column grid layout (replaces generic .grid-2col to avoid leaks) */
+.witcher-wizard .step-background .bg-grid-2col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    align-items: start;
+}
+
+.witcher-wizard .step-background .background-container {
+    padding: 0;
+}
+
 .witcher-wizard .step-background .background-section {
     background: rgba(255, 255, 255, 0.45);
     border: 1px solid var(--wizard-border);
     border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
+    padding: 14px 16px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 0;
 }
 
 .witcher-wizard .step-background h3 {
     font-family: 'MedievalSharp', serif;
     color: var(--wizard-accent) !important;
-    border-bottom: 2px solid rgba(139, 0, 0, 0.15);
-    padding-bottom: 6px;
+    border-bottom: 1px solid rgba(139, 0, 0, 0.2);
+    padding-bottom: 5px;
     margin-top: 0;
-    margin-bottom: 18px;
-    font-size: 1.3rem;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
 }
 
+/* Form groups: compact vertical rhythm */
+.witcher-wizard .step-background .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 10px;
+}
+
+.witcher-wizard .step-background .form-group label {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--wizard-text-muted) !important;
+}
+
+/* Parchment-styled selects */
+.witcher-wizard .step-background select {
+    width: 100%;
+    background: #fdf6e3 !important;
+    border: 1px solid var(--wizard-border) !important;
+    border-radius: 5px;
+    padding: 5px 8px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.85rem;
+    color: var(--wizard-text-dark) !important;
+    cursor: pointer;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    appearance: auto;
+    height: 30px;
+}
+
+.witcher-wizard .step-background select:focus {
+    outline: none;
+    border-color: var(--wizard-accent) !important;
+    box-shadow: 0 0 0 2px rgba(139, 0, 0, 0.15);
+}
+
+/* Parchment-styled text/number inputs */
+.witcher-wizard .step-background input[type="text"],
+.witcher-wizard .step-background input[type="number"] {
+    width: 100%;
+    background: #fdf6e3 !important;
+    border: 1px solid var(--wizard-border) !important;
+    border-radius: 5px;
+    padding: 5px 8px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.85rem;
+    color: var(--wizard-text-dark) !important;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    height: 30px;
+    box-sizing: border-box;
+}
+
+.witcher-wizard .step-background input[type="text"]:focus,
+.witcher-wizard .step-background input[type="number"]:focus {
+    outline: none;
+    border-color: var(--wizard-accent) !important;
+    box-shadow: 0 0 0 2px rgba(139, 0, 0, 0.15);
+}
+
+/* Input + roll button row */
+.witcher-wizard .step-background .input-with-roll {
+    display: flex;
+    align-items: stretch;
+    gap: 5px;
+}
+
+.witcher-wizard .step-background .input-with-roll select,
+.witcher-wizard .step-background .input-with-roll input {
+    flex: 1;
+    min-width: 0;
+}
+
+/* Compact inline roll button */
+.witcher-wizard .btn-roll-inline {
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    padding: 0;
+    background: var(--wizard-accent);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    transition: background 0.2s, transform 0.15s;
+    box-shadow: 0 2px 5px rgba(139, 0, 0, 0.3);
+    flex-shrink: 0;
+}
+
+.witcher-wizard .btn-roll-inline:hover {
+    background: #a00;
+    transform: translateY(-1px) scale(1.05);
+}
+
+.witcher-wizard .btn-roll-inline:active {
+    transform: translateY(0) scale(0.97);
+}
+
+/* Events list — internal scroll, compact height */
 .witcher-wizard .step-background .events-list {
     background: rgba(0, 0, 0, 0.04);
     border-radius: 6px;
-    padding: 10px;
-    border: 1px inset rgba(0,0,0,0.1);
-    max-height: 250px;
+    padding: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    max-height: 140px;
     overflow-y: auto;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--wizard-accent) transparent;
+}
+
+.witcher-wizard .step-background .no-events {
+    color: var(--wizard-text-muted);
+    font-style: italic;
+    font-size: 0.8rem;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0;
 }
 
 .witcher-wizard .step-background .event-item {
-    padding: 8px 12px;
+    padding: 5px 8px;
     border-bottom: 1px solid rgba(0,0,0,0.05);
     display: flex;
-    gap: 12px;
-    font-size: 0.85rem;
+    gap: 10px;
+    font-size: 0.8rem;
+    align-items: baseline;
+}
+
+.witcher-wizard .step-background .event-item:last-child {
+    border-bottom: none;
 }
 
 .witcher-wizard .step-background .event-age {
     color: var(--wizard-accent);
     white-space: nowrap;
     font-weight: bold;
+    font-size: 0.75rem;
+    flex-shrink: 0;
 }
 
+.witcher-wizard .step-background .event-text {
+    color: var(--wizard-text-dark);
+    line-height: 1.3;
+}
+
+/* Roll events wide button */
 .witcher-wizard .btn-roll-events {
     width: 100%;
-    padding: 10px;
+    padding: 8px 10px;
     background: var(--wizard-accent);
     color: white;
     border: none;
     border-radius: 6px;
     font-weight: bold;
+    font-size: 0.85rem;
     cursor: pointer;
     transition: all 0.2s;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
-    box-shadow: 0 4px 10px rgba(139, 0, 0, 0.2);
+    gap: 8px;
+    box-shadow: 0 3px 8px rgba(139, 0, 0, 0.2);
 }
 
 .witcher-wizard .btn-roll-events:hover {
     background: #a00;
-    transform: translateY(-2px);
+    transform: translateY(-1px);
 }
 
 /* Sidebar Wizard Button Scaling */
@@ -1340,6 +1483,246 @@ form.witcher-wizard .wizard-content {
 .witcher-wizard .step-skills .content .tab.active {
     display: flex;
 }
+
+/* ── Split Layout for Race & Profession Steps ────────────────────── */
+.witcher-wizard .wizard-step {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.witcher-wizard:has(.wizard-split-layout) .wizard-content {
+    overflow-y: hidden !important;
+}
+
+.witcher-wizard .wizard-split-layout {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 15px;
+    flex: 1;
+    min-height: 0;
+    margin-top: 8px;
+}
+
+.witcher-wizard .master-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: auto;
+    padding-right: 8px;
+}
+
+/* Custom scrollbars for master and detail panels */
+.witcher-wizard .master-panel::-webkit-scrollbar,
+.witcher-wizard .detail-description::-webkit-scrollbar {
+    width: 6px;
+}
+.witcher-wizard .master-panel::-webkit-scrollbar-track,
+.witcher-wizard .detail-description::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 4px;
+}
+.witcher-wizard .master-panel::-webkit-scrollbar-thumb,
+.witcher-wizard .detail-description::-webkit-scrollbar-thumb {
+    background: var(--wizard-border);
+    border-radius: 4px;
+}
+
+/* Compact Selector Card */
+.witcher-wizard .compact-selector-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 15px;
+    background: rgba(255, 255, 255, 0.45);
+    border: 1px solid var(--wizard-border);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px var(--wizard-shadow);
+}
+
+.witcher-wizard .compact-selector-card img {
+    width: 48px;
+    height: 48px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--wizard-border);
+    background: rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.witcher-wizard .compact-selector-card .selector-info h3 {
+    margin: 0 !important;
+    font-size: 1.1rem !important;
+    color: var(--wizard-text-dark) !important;
+    font-family: 'MedievalSharp', serif !important;
+    text-align: left !important;
+}
+
+.witcher-wizard .compact-selector-card:hover {
+    background: rgba(139, 0, 0, 0.08);
+    border-color: var(--wizard-accent);
+    transform: translateX(4px);
+}
+
+.witcher-wizard .compact-selector-card:hover img {
+    transform: scale(1.08);
+}
+
+.witcher-wizard .compact-selector-card.selected {
+    background: rgba(139, 0, 0, 0.15);
+    border-color: var(--wizard-accent);
+    box-shadow: 0 0 10px rgba(139, 0, 0, 0.2);
+    border-width: 2px;
+}
+
+.witcher-wizard .compact-selector-card.selected .selector-info h3 {
+    color: var(--wizard-accent) !important;
+    font-weight: bold;
+}
+
+/* Detail Panel */
+.witcher-wizard .detail-panel {
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid var(--wizard-border);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 0;
+    box-shadow: inset 0 0 20px rgba(102, 85, 68, 0.1);
+}
+
+/* Detail Placeholder */
+.witcher-wizard .detail-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: var(--wizard-text-muted);
+    text-align: center;
+    gap: 15px;
+    opacity: 0.75;
+}
+
+.witcher-wizard .detail-placeholder i {
+    font-size: 3rem;
+    color: var(--wizard-border);
+}
+
+/* Detail Header */
+.witcher-wizard .detail-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 2px solid var(--wizard-accent);
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+    flex-shrink: 0;
+}
+
+.witcher-wizard .detail-header img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--wizard-accent);
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.witcher-wizard .detail-title-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.witcher-wizard .detail-title-wrapper h2 {
+    margin: 0 !important;
+    font-size: 1.8rem !important;
+    text-align: left !important;
+    border-bottom: none !important;
+    font-family: 'MedievalSharp', serif !important;
+    color: var(--wizard-accent) !important;
+}
+
+.witcher-wizard .detail-subtitle {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--wizard-text-muted);
+    font-weight: bold;
+}
+
+/* Detail Body */
+.witcher-wizard .detail-body {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex: 1;
+    min-height: 0;
+}
+
+.witcher-wizard .detail-description {
+    font-size: 0.9rem;
+    line-height: 1.45;
+    color: var(--wizard-text-dark);
+    overflow-y: auto;
+    padding-right: 10px;
+    flex: 1;
+}
+
+.witcher-wizard .detail-perks-list {
+    border-top: 1px dashed var(--wizard-border);
+    padding-top: 12px;
+    flex-shrink: 0;
+}
+
+.witcher-wizard .detail-perks-list h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 1.05rem;
+    font-family: 'MedievalSharp', serif;
+    color: var(--wizard-accent);
+}
+
+.witcher-wizard .detail-perks-list ul {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 0.85rem;
+    color: var(--wizard-text-dark);
+}
+
+.witcher-wizard .detail-perks-list ul li {
+    margin-bottom: 3px;
+}
+
+.witcher-wizard .detail-perks-list ul li p {
+    display: inline;
+    margin: 0;
+}
+
+/* Profession skills tags */
+.witcher-wizard .prof-skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 5px;
+}
+
+.witcher-wizard .prof-skill-tag {
+    background: var(--wizard-accent);
+    color: white !important;
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    display: inline-block;
+}
+
 
 
 

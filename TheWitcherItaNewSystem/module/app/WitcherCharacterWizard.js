@@ -53,7 +53,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         },
         position: {
             width: 1000,
-            height: 800
+            height: 650
         }
     };
 
@@ -86,6 +86,8 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         updateHomeland: function(event, target) { this._updateHomeland(event, target); },
         rollBackground: function(event, target) { this._rollBackground(event, target); },
         rollLifeEvents: function(event, target) { this._rollLifeEvents(event, target); },
+        rollFamilyFate: function(event, target) { this._rollFamilyFate(event, target); },
+        updateBackground: function(event, target) { this._updateBackground(event, target); },
         toggleGear: function(event, target) { this._toggleGear(event, target); },
         selectAvatar: function(event, target) { this._selectAvatar(event, target); },
         goToStep: function(event, target) { this._goToStep(event, target); },
@@ -412,12 +414,12 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         const raceName = this.characterData.race?.name;
         const homeland = this.characterData.homeland?.toLowerCase();
         
-        let langKey = "commonSpeech";
-        if (raceName === "Elfi") langKey = "elderSpeech";
-        else if (raceName === "Nani" || raceName === "Gnomo") langKey = "dwarvenSpeech";
+        let langKey = "commonspeech";
+        if (raceName === "Elfi") langKey = "eldersp";
+        else if (raceName === "Nani" || raceName === "Gnomo") langKey = "dwarven";
         else if (raceName === "Umani") {
             const elderHomelands = ["nilfgaard", "vicovaro", "etolia", "gemmeria", "ebbing", "maecht", "mettina", "nazair", "gheso", "magturga", "skellige"];
-            if (elderHomelands.includes(homeland)) langKey = "elderSpeech";
+            if (elderHomelands.includes(homeland)) langKey = "eldersp";
         }
         
         const label = game.i18n.localize(CONFIG.WITCHER.skillMap[langKey].label);
@@ -447,12 +449,12 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         const raceName = this.characterData.race?.name;
         const homeland = this.characterData.homeland?.toLowerCase();
         
-        let langKey = "commonSpeech";
-        if (raceName === "Elfi") langKey = "elderSpeech";
-        else if (raceName === "Nani" || raceName === "Gnomo") langKey = "dwarvenSpeech";
+        let langKey = "commonspeech";
+        if (raceName === "Elfi") langKey = "eldersp";
+        else if (raceName === "Nani" || raceName === "Gnomo") langKey = "dwarven";
         else if (raceName === "Umani") {
             const elderHomelands = ["nilfgaard", "vicovaro", "etolia", "gemmeria", "ebbing", "maecht", "mettina", "nazair", "gheso", "magturga", "skellige"];
-            if (elderHomelands.includes(homeland)) langKey = "elderSpeech";
+            if (elderHomelands.includes(homeland)) langKey = "eldersp";
         }
         
         // Find the skill in allSkills
@@ -463,7 +465,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         
         if (langSkill) {
             // Clear existing level 8 from any language skill to avoid duplicates
-            const langKeys = ["commonSpeech", "elderSpeech", "dwarvenSpeech"];
+            const langKeys = ["commonspeech", "eldersp", "dwarven"];
             const langLabels = langKeys.map(k => game.i18n.localize(CONFIG.WITCHER.skillMap[k].label).toLowerCase());
             
             for (const skillId in this.characterData.skills) {
@@ -705,18 +707,55 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
     }
 
     async _rollBackground() {
-        const t = await this._findTable(["Social Standing"]);
-        if (t) { const r = await t.roll(); this.characterData.background.socialStatus = r.results[0].text; }
+        const t = await this._findTable(["Posizione Sociale", "Social Standing", "Rango Sociale"]);
+        if (t) {
+            const r = await t.roll();
+            const text = r.results[0]?.text ?? r.results[0]?.getChatText?.() ?? "";
+            this.characterData.background.socialStatus = text;
+            ui.notifications.info(`Rango Sociale: ${text}`);
+        } else {
+            ui.notifications.warn("Tabella 'Posizione Sociale' non trovata nel mondo o nei compendi.");
+        }
+        this.render(true);
+    }
+
+    async _rollFamilyFate() {
+        const t = await this._findTable(["Destino della Famiglia", "Destino Familiare", "Family Fate", "Family Background"]);
+        if (t) {
+            const r = await t.roll();
+            const text = r.results[0]?.text ?? r.results[0]?.getChatText?.() ?? "";
+            this.characterData.background.familyFate = text;
+            ui.notifications.info(`Destino Familiare: ${text}`);
+        } else {
+            ui.notifications.warn("Tabella 'Destino Familiare' non trovata nel mondo o nei compendi.");
+        }
         this.render(true);
     }
 
     async _rollLifeEvents() {
-        const t = await this._findTable(["Life Events"]);
+        const t = await this._findTable(["Eventi della Vita", "Life Events", "Evento di Vita"]);
         if (t) {
-            this.characterData.background.events = [];
-            for (let i = 0; i < 2; i++) { const r = await t.roll(); this.characterData.background.events.push({ age: 20 + i * 10, text: r.results[0].text }); }
+            const existing = this.characterData.background.events;
+            const lastAge = existing.length > 0 ? existing[existing.length - 1].age : (this.characterData.age || 20);
+            const nextAge = lastAge + 10;
+            const r = await t.roll();
+            const text = r.results[0]?.text ?? r.results[0]?.getChatText?.() ?? "";
+            existing.push({ age: nextAge, text });
+        } else {
+            ui.notifications.warn("Tabella 'Eventi della Vita' non trovata nel mondo o nei compendi.");
         }
         this.render(true);
+    }
+
+    _updateBackground(event, target) {
+        const name = target.name || target.dataset.name;
+        const value = target.value;
+        if (name === "background.socialStatus") {
+            this.characterData.background.socialStatus = value;
+        } else if (name === "background.familyFate") {
+            this.characterData.background.familyFate = value;
+        }
+        // No re-render on manual typing to avoid losing focus
     }
 
     _toggleGear(event, target) {
@@ -733,7 +772,24 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
     }
 
     async _findTable(hints) {
-        for (const h of hints) { const t = game.tables.find(t => t.name.toLowerCase().includes(h.toLowerCase())); if (t) return t; }
+        // 1. Search world tables first (fastest)
+        for (const h of hints) {
+            const t = game.tables.find(t => t.name.toLowerCase().includes(h.toLowerCase()));
+            if (t) return t;
+        }
+        // 2. Search registered compendium packs of type RollTable
+        const rollTablePacks = game.packs.filter(p => p.metadata.type === "RollTable");
+        for (const pack of rollTablePacks) {
+            // Use the pack index to avoid loading all documents
+            const index = pack.index.size > 0 ? pack.index : await pack.getIndex();
+            for (const h of hints) {
+                const entry = index.find(e => e.name.toLowerCase().includes(h.toLowerCase()));
+                if (entry) {
+                    const doc = await pack.getDocument(entry._id);
+                    if (doc) return doc;
+                }
+            }
+        }
         return null;
     }
 

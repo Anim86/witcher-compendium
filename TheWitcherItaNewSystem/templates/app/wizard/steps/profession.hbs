@@ -1,23 +1,56 @@
 <div class="wizard-step step-profession">
     <h2>{{localize "WITCHER.Wizard.Step.Profession.Title"}}</h2>
-    <p>{{localize "WITCHER.Wizard.Step.Profession.Description"}}</p>
 
-    <div class="profession-selection">
-        {{#each professions}}
-        <div class="profession-card {{#if (eq ../character.profession._id id)}}selected{{/if}}" data-action="selectProfession" data-prof-id="{{id}}">
-            <img src="{{img}}" alt="{{name}}">
-            <h3>{{name}}</h3>
-            <div class="profession-perks">
-                {{{system.description}}}
-                <div class="prof-skills">
-                    <ul>
-                        {{#each system.skills}}
-                        <li>{{this.label}}</li>
-                        {{/each}}
-                    </ul>
+    <div class="wizard-split-layout">
+        <!-- Master Panel: List of Professions -->
+        <div class="master-panel profession-list">
+            {{#each professions}}
+            <div class="compact-selector-card {{#if (eq ../character.profession._id id)}}selected{{/if}}" data-action="selectProfession" data-prof-id="{{id}}">
+                <img src="{{img}}" alt="{{name}}">
+                <div class="selector-info">
+                    <h3>{{name}}</h3>
                 </div>
             </div>
+            {{/each}}
         </div>
-        {{/each}}
+
+        <!-- Detail Panel: Detailed information of the selected Profession -->
+        <div class="detail-panel">
+            {{#if character.profession}}
+                <div class="detail-header">
+                    <img src="{{character.profession.img}}" alt="{{character.profession.name}}">
+                    <div class="detail-title-wrapper">
+                        <h2>{{character.profession.name}}</h2>
+                        <span class="detail-subtitle">Professione del Continente</span>
+                    </div>
+                </div>
+                <div class="detail-body">
+                    <div class="detail-description">
+                        {{#if character.profession.system.description}}
+                            {{{character.profession.system.description}}}
+                        {{else}}
+                            <p>Seleziona una professione a sinistra per visualizzare la sua descrizione.</p>
+                        {{/if}}
+                    </div>
+                    
+                    {{#if character.profession.system.skills}}
+                    <div class="detail-perks-list">
+                        <h3>Abilità di Partenza:</h3>
+                        <div class="prof-skills-tags">
+                            {{#each character.profession.system.skills}}
+                                <span class="prof-skill-tag">{{this.label}}</span>
+                            {{/each}}
+                        </div>
+                    </div>
+                    {{/if}}
+                </div>
+            {{else}}
+                <div class="detail-placeholder">
+                    <i class="fa-solid fa-sword"></i>
+                    <p>Seleziona una professione a sinistra per esaminare le sue caratteristiche e abilità.</p>
+                </div>
+            {{/if}}
+        </div>
     </div>
 </div>
+
