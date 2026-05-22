@@ -13,13 +13,19 @@ const destDir = path.join(REPO_ROOT, 'witcher-compendium/assets/ALCHIMIA_E_ARTIG
 const reportPath = path.join(REPO_ROOT, 'TO DO/report_schemi_asset.md');
 
 const targets = [
-    { name: "Gwyhyr Gnomesca", clean: "schema_gwyhyr_gnomesca" },
-    { name: "Kord", clean: "schema_kord" },
-    { name: "Krigsverd", clean: "schema_krigsverd" },
-    { name: "Lama del Tir Tochair", clean: "schema_lama_del_tir_tochair" },
-    { name: "Lama Vicovariana", clean: "schema_lama_vicovariana" },
-    { name: "Lama Viroledana", clean: "schema_lama_viroledana" },
-    { name: "Messer Elfico", clean: "schema_messer_elfico" }
+    { name: "Arco Corto", clean: "schema_arco_corto" },
+    { name: "Arco Lungo", clean: "schema_arco_lungo" },
+    { name: "Arco da Guerra", clean: "schema_arco_da_guerra" },
+    { name: "Arco da Viaggio Elfico", clean: "schema_arco_da_viaggio_elfico" },
+    { name: "Zefhar Elfico", clean: "schema_zefhar_elfico" },
+    { name: "Balestra", clean: "schema_balestra" },
+    { name: "Balestra da Caccia", clean: "schema_balestra_da_caccia" },
+    { name: "Balestra da Cacciatore di Mostri", clean: "schema_balestra_da_cacciatore_di_mostri" },
+    { name: "Balestra Pesante Nanica", clean: "schema_balestra_pesante_nanica" },
+    { name: "Balestrino", clean: "schema_balestrino" },
+    { name: "Balestrino Gnomesco", clean: "schema_balestrino_gnomesco" },
+    { name: "Munizioni Normali", clean: "schema_munizioni_normali" },
+    { name: "Munizioni a Punta Larga", clean: "schema_munizioni_a_punta_larga" }
 ];
 
 async function main() {
@@ -37,8 +43,8 @@ async function main() {
     const brainFiles = fs.readdirSync(brainDir);
 
     for (const t of targets) {
-        // Find the generated file in the brain folder
-        const match = brainFiles.find(f => f.startsWith(t.clean) && f.endsWith('.png'));
+        const regex = new RegExp(`^${t.clean}_\\d+\\.png$`);
+        const match = brainFiles.find(f => regex.test(f));
         if (match) {
             const srcPath = path.join(brainDir, match);
             const tempPngPath = path.join(tempDir, `${t.clean}.png`);
