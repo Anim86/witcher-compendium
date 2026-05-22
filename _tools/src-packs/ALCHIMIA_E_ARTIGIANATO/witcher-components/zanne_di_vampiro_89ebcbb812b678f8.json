@@ -1,0 +1,23 @@
+{
+  "_id": "89ebcbb812b678f8",
+  "name": "Zanne di Vampiro",
+  "type": "component",
+  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-alchemy/zanne_di_vampiro.webp",
+  "system": {
+    "description": "<p>Zanne affilate e cave di un vampiro superiore come il Katakan.</p><p><b>Rarità:</b> R | <b>Ubicazione:</b> Katakan</p>",
+    "quantity": "1",
+    "weight": 0.1,
+    "cost": 150,
+    "sourcebook": "MB 145",
+    "type": "alchemical",
+    "rarity": "R",
+    "location": "Katakan",
+    "substanceType": "caelum"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "_id": "bd1a4ecf135bb576",
+  "name": "Scleroderma",
+  "type": "component",
+  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-alchemy/scleroderma.webp",
+  "system": {
+    "description": "<p>Fungo coriaceo che cresce in condizioni di umidità estrema.</p><p><b>Rarità:</b> D | <b>Ubicazione:</b> Foreste e caverne</p>",
+    "quantity": "1",
+    "weight": 0.1,
+    "cost": 5,
+    "sourcebook": "MB 145",
+    "type": "alchemical",
+    "rarity": "D",
+    "location": "Foreste e caverne",
+    "substanceType": "aether"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
+}

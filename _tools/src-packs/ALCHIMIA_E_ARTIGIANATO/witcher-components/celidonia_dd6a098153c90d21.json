@@ -1,0 +1,23 @@
+{
+  "_id": "dd6a098153c90d21",
+  "name": "Celidonia",
+  "type": "component",
+  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-alchemy/celidonia.webp",
+  "system": {
+    "description": "<p>Pianta dai fiori gialli celebre per le sue proprietà curative e come Rebis.</p><p><b>Rarità:</b> C | <b>Ubicazione:</b> Campi e foreste</p>",
+    "quantity": "1",
+    "weight": 0.1,
+    "cost": 8,
+    "sourcebook": "MB 146",
+    "type": "alchemical",
+    "rarity": "C",
+    "location": "Campi e foreste",
+    "substanceType": "rebis"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
+}

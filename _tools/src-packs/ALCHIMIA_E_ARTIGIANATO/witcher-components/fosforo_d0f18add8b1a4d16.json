@@ -1,0 +1,23 @@
+{
+  "_id": "d0f18add8b1a4d16",
+  "name": "Fosforo",
+  "type": "component",
+  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-alchemy/fosforo.webp",
+  "system": {
+    "description": "<p>Minerale reattivo che brilla nell'oscurità.</p><p><b>Rarità:</b> S | <b>Ubicazione:</b> Montagne e sottoterra</p>",
+    "quantity": "1",
+    "weight": 0.5,
+    "cost": 20,
+    "sourcebook": "MB 147",
+    "type": "alchemical",
+    "rarity": "S",
+    "location": "Montagne e sottoterra",
+    "substanceType": "vermilion"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
+}

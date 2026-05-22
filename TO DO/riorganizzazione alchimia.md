@@ -2,42 +2,6 @@
 
 Questo report definisce la **nuova architettura** dei compendi per il modulo Foundry VTT *Compendio The Witcher*, riorganizzando tutte le **447 voci** in modo logico e funzionale.
 
-## 🏗️ Riepilogo Riorganizzazione
-
-| Compendio Target | Descrizione | Asset Totali | Tipo Meccanico Foundry |
-| :--- | :--- | :---: | :--- |
-| `witcher-potions` | Pozioni e prodotti alchemici finiti e pronti all'uso | 36 | `valuable` |
-| `witcher-formulas` | Ricette, formule e decotti (istruzioni cartacee) | 56 | `diagrams` |
-| `witcher-components` | Materie prime, ingredienti, parti di mostro | 146 | `component` (tranne "Puro..." in `valuable`) |
-| `witcher-schematics` | Progetti tecnici per forgiare armi e corazze | 158 | `diagrams` |
-| `witcher-mutations` & `witcher-tc` | Mutageni (Blu, Verdi, Rossi), regole e tratti | 51 | `mutagen` & `valuable` |
-
----
-
-## 📂 Dettaglio dei Compendi Riorganizzati
-
-### 🧪 1. Compendio Ripulito: `witcher-potions` (Pozioni Finite) (36 Asset)
-* **Tipo meccanico su Foundry:** `valuable`
-* **Contenuto:** Pozioni finite, elisir, droghe, bombe, veleni e unguenti pronti all'uso derivati da processi alchemici.
-
-### 📄 2. Nuovo Compendio: `witcher-formulas` (56 Asset)
-* **Tipo meccanico su Foundry:** `diagrams`
-* **Contenuto:** Istruzioni cartacee e ricette per la preparazione di pozioni, decotti, oli e bombe. Non contiene oggetti consumabili fisici, solo formule.
-
-### 🌿 3. Compendio Espanso: `witcher-components` (146 Asset)
-* **Tipo meccanico su Foundry:** `component` (Nota: I distillati *"Puro..."* restano `valuable` per mantenere il costo raddoppiato in conformità con le regole).
-* **Contenuto:** Materie prime di origine minerale, metallica, legnami, tessuti, parti anatomiche di mostri o animali selvatici, ed erbe selvatiche.
-
-### ⚔️ 4. Compendio Intatto: `witcher-schematics` (158 Asset)
-* **Tipo meccanico su Foundry:** `diagrams`
-* **Contenuto:** Progetti e schemi di artigianato necessari per la forgiatura di armi (corpo a corpo, asta, a distanza), corazze, scudi e raffinamento dei metalli/materiali grezzi.
-
-### 🧬 5. Compendi Speciali: `witcher-mutations` & `witcher-mutazioni-tc` (51 Asset)
-* **Tipo meccanico su Foundry:** `mutagen` (per i mutageni) & `valuable` (per regole e tratti di mutazione).
-* **Contenuto:** Mutageni estratti dalle creature (suddivisi per colore: Blu, Verde, Rosso), oltre a regole per gli esperimenti e tratti speciali ereditati dalle mutazioni.
-
----
-
 ## 📊 Master Table: Lista Completa Riorganizzata
 
 La seguente tabella mostra la collocazione finale di ciascun asset con il relativo compendio target, la sotto-categoria e il tipo meccanico Foundry.

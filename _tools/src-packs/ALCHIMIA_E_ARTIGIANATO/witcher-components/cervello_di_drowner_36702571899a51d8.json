@@ -1,0 +1,23 @@
+{
+  "_id": "36702571899a51d8",
+  "name": "Cervello di drowner",
+  "type": "component",
+  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-alchemy/cervello_di_drowner.webp",
+  "system": {
+    "description": "<p>Materia grigia infusa di acqua stagnante e malvagità.</p><p><b>Rarità:</b> S | <b>Ubicazione:</b> Drowner</p>",
+    "quantity": "1",
+    "weight": 1,
+    "cost": 80,
+    "sourcebook": "MB 146",
+    "type": "alchemical",
+    "rarity": "S",
+    "location": "Drowner",
+    "substanceType": "rebis"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "_id": "493af2375c925300",
+  "name": "Vischio",
+  "type": "component",
+  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-alchemy/vischio.webp",
+  "system": {
+    "description": "<p>Pianta parassita considerata sacra in molti rituali naturali.</p><p><b>Rarità:</b> S | <b>Ubicazione:</b> Campi e foreste</p>",
+    "quantity": "1",
+    "weight": 0.1,
+    "cost": 8,
+    "sourcebook": "MB 146",
+    "type": "alchemical",
+    "rarity": "S",
+    "location": "Campi e foreste",
+    "substanceType": "hydragenum"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
+}

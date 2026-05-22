@@ -1,0 +1,23 @@
+{
+  "_id": "aaef22a7a49685dc",
+  "name": "Fegato di Troll",
+  "type": "component",
+  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-alchemy/fegato_di_troll.webp",
+  "system": {
+    "description": "<p>Organo rigenerativo prelevato da un troll di montagna.</p><p><b>Rarità:</b> R | <b>Ubicazione:</b> Troll delle rocce</p>",
+    "quantity": "1",
+    "weight": 1,
+    "cost": 87,
+    "sourcebook": "MB 146",
+    "type": "alchemical",
+    "rarity": "R",
+    "location": "Troll delle rocce",
+    "substanceType": "hydragenum"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
+}

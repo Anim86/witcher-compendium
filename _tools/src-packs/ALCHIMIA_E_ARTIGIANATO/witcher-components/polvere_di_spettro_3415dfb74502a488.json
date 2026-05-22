@@ -1,0 +1,23 @@
+{
+  "_id": "3415dfb74502a488",
+  "name": "Polvere di Spettro",
+  "type": "component",
+  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-alchemy/polvere_di_spettro.webp",
+  "system": {
+    "description": "<p>Polvere cinerea che rimane dopo la sconfitta di un fantasma.</p><p><b>Rarità:</b> S | <b>Ubicazione:</b> Wraith</p>",
+    "quantity": "1",
+    "weight": 0.1,
+    "cost": 30,
+    "sourcebook": "MB 145",
+    "type": "alchemical",
+    "rarity": "S",
+    "location": "Wraith",
+    "substanceType": "fulgur"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
+}

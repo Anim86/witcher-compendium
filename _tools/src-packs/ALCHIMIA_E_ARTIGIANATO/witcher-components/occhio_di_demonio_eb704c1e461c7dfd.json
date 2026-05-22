@@ -1,0 +1,23 @@
+{
+  "_id": "eb704c1e461c7dfd",
+  "name": "Occhio di Demonio",
+  "type": "component",
+  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-alchemy/occhio_di_demonio.webp",
+  "system": {
+    "description": "<p>Terzo occhio frontale di un demonio, centro del suo potere extrasensoriale.</p><p><b>Rarità:</b> R | <b>Ubicazione:</b> Demoni</p>",
+    "quantity": "1",
+    "weight": 0.5,
+    "cost": 149,
+    "sourcebook": "MB 147",
+    "type": "alchemical",
+    "rarity": "R",
+    "location": "Demoni",
+    "substanceType": "sol"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
+}

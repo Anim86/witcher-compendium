@@ -1,0 +1,23 @@
+{
+  "_id": "127697ec6be6fbef",
+  "name": "Uovo di Grifone",
+  "type": "component",
+  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-alchemy/uovo_di_grifone.webp",
+  "system": {
+    "description": "<p>Uovo aureo prelevato da nidi inaccessibili sulle vette montuose.</p><p><b>Rarità:</b> R | <b>Ubicazione:</b> Grifoni o nidi di grifone</p>",
+    "quantity": "1",
+    "weight": 1,
+    "cost": 150,
+    "sourcebook": "MB 147",
+    "type": "alchemical",
+    "rarity": "R",
+    "location": "Grifoni o nidi di grifone",
+    "substanceType": "vermilion"
+  },
+  "effects": [],
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
+}
