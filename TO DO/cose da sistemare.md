@@ -8,7 +8,7 @@
 - immagini da rifare/controllare:
   - [x] Tratto mutazione arto aggiuntivo (Concluso)
   - [x] tratto mutazione capacità rigenerativa (Concluso)
-  - tutti gli schemi
+  - tutti gli schemi (verificare il file [report_schemi_asset.md](report_schemi_asset.md) per lo stato di generazione e i prompt)
   - [x] warg (Ottimizzato)
   - oggetti vari è pieno di doppioni e immagini sbagliate
   - ferite critiche
