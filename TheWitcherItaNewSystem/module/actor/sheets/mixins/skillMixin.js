@@ -32,11 +32,11 @@ export let skillMixin = {
     },
 
     skillListener(html) {
-        jQuery = $(html);
+        const jquery = $(html);
         let thisActor = this.actor;
         let skillMap = this.skillMap;
 
-        jQuery.find('.profession-roll').on('click', event => thisActor._onProfessionRoll(event));
-        jQuery.find('.skill-display').on('click', this._onSkillDisplay.bind(this));
+        jquery.find('.profession-roll').on('click', event => thisActor._onProfessionRoll(event));
+        jquery.find('.skill-display').on('click', this._onSkillDisplay.bind(this));
     }
 };
