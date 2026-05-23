@@ -1,0 +1,33 @@
+duplicate_type,identifier_1,identifier_2,name_1,name_2,similarity,notes
+duplicate_asset,73c3990b5b604c52,73c3990b5b604c52,Endriaghe (Guerriero),Endriaghe (Lavoratore),exact,Shared asset: BESTIARIO/witcher-monsters/endriaghe.webp
+duplicate_asset,2595fc12d1dd4c0c,97a3d63632854a98,Trofeo: Elementale (Ghiaccio),Trofeo: Elementale (Terra),exact,Shared asset: REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/trofeo_elementale.webp
+duplicate_asset,2595fc12d1dd4c0c,98cae0cec2de53fd,Trofeo: Elementale (Ghiaccio),Trofeo: Elementale (Fuoco),exact,Shared asset: REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/trofeo_elementale.webp
+duplicate_asset,97a3d63632854a98,98cae0cec2de53fd,Trofeo: Elementale (Terra),Trofeo: Elementale (Fuoco),exact,Shared asset: REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/trofeo_elementale.webp
+duplicate_asset,74187e96cb4f4aee,7c0ca396379a4320,Trofeo: [Immagini,Trofeo: [Immagini,exact,Shared asset: REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/trofeo_immagini.webp
+duplicate_asset,8e677a18869d4d9d,d15fe0a1b3d24ffc,Trofeo: Troll,Trofeo: Troll,exact,Shared asset: REGOLAMENTO_E_NARRATIVA/Trofei/witcher-trophies/trofeo_troll.webp
+duplicate_entry,2810f6f48d3244c0,faa7388b82dc0dd0,Fiammata,Fiammata,exact,"Exact duplicate name and type. Path 1: MAGIA_E_MALEDIZIONI/Incantesimi_e_Rituali, Path 2: MAGIA_E_MALEDIZIONI/Segni"
+duplicate_entry,74187e96cb4f4aee,7c0ca396379a4320,Trofeo: [Immagini,Trofeo: [Immagini,exact,"Exact duplicate name and type. Path 1: REGOLAMENTO_E_NARRATIVA/Trofei, Path 2: REGOLAMENTO_E_NARRATIVA/Trofei"
+duplicate_entry,8e677a18869d4d9d,d15fe0a1b3d24ffc,Trofeo: Troll,Trofeo: Troll,exact,"Exact duplicate name and type. Path 1: REGOLAMENTO_E_NARRATIVA/Trofei, Path 2: REGOLAMENTO_E_NARRATIVA/Trofei"
+near_duplicate_entry,5c551170e0f9898d,28de3488d21c948c,Mutageno d'Orso (Verde),Mutageno: Orso (Verde),near_duplicate,Near duplicate name (Levenshtein distance: 1) in category ALCHIMIA_E_ARTIGIANATO
+near_duplicate_entry,6ca203f549cb45a4,d6e2e9ae7b209049,Schema: Azza,Schema: Mazza,near_duplicate,Near duplicate name (Levenshtein distance: 1) in category ALCHIMIA_E_ARTIGIANATO
+near_duplicate_entry,0a8fcd4941e18d57,4360818be3dfcb33,Schema: Filo,Schema: Lino,near_duplicate,Near duplicate name (Levenshtein distance: 2) in category ALCHIMIA_E_ARTIGIANATO
+near_duplicate_entry,323194a9de7b4879,089be27d38b4463d,Arcieri Scoia'tael,Arciere Scoia'tael,near_duplicate,Near duplicate name (Levenshtein distance: 1) in category BESTIARIO
+near_duplicate_entry,0dc8836ecea5468a,8a9ad1da3e9d4120,Banditi,Bandito,near_duplicate,Near duplicate name (Levenshtein distance: 1) in category BESTIARIO
+near_duplicate_entry,ef6c48cd2dba2373,4d40471f65001a0b,Amuleto Incantato (1 Incantesimo),Amuleto Incantato (2 Incantesimi),near_duplicate,Near duplicate name (Levenshtein distance: 2) in category EQUIPAGGIAMENTO
+near_duplicate_entry,ef6c48cd2dba2373,4ddf42cb2eab0e0c,Amuleto Incantato (1 Incantesimo),Amuleto Incantato (3 Incantesimi),near_duplicate,Near duplicate name (Levenshtein distance: 2) in category EQUIPAGGIAMENTO
+near_duplicate_entry,ef6c48cd2dba2373,5bfe48717eebb217,Amuleto Incantato (1 Incantesimo),Amuleto Incantato (4 Incantesimi),near_duplicate,Near duplicate name (Levenshtein distance: 2) in category EQUIPAGGIAMENTO
+near_duplicate_entry,4d40471f65001a0b,4ddf42cb2eab0e0c,Amuleto Incantato (2 Incantesimi),Amuleto Incantato (3 Incantesimi),near_duplicate,Near duplicate name (Levenshtein distance: 1) in category EQUIPAGGIAMENTO
+near_duplicate_entry,4d40471f65001a0b,5bfe48717eebb217,Amuleto Incantato (2 Incantesimi),Amuleto Incantato (4 Incantesimi),near_duplicate,Near duplicate name (Levenshtein distance: 1) in category EQUIPAGGIAMENTO
+near_duplicate_entry,4ddf42cb2eab0e0c,5bfe48717eebb217,Amuleto Incantato (3 Incantesimi),Amuleto Incantato (4 Incantesimi),near_duplicate,Near duplicate name (Levenshtein distance: 1) in category EQUIPAGGIAMENTO
+near_duplicate_entry,dda3513924004a52,6c72776561703038,Artigiano,Partigiana,near_duplicate,Near duplicate name (Levenshtein distance: 2) in category EQUIPAGGIAMENTO
+near_duplicate_entry,610f3d4c792147d1,34b85896699c4c74,Carro da Guerra,Arco da Guerra,near_duplicate,Near duplicate name (Levenshtein distance: 2) in category EQUIPAGGIAMENTO
+near_duplicate_entry,995c5833bac01ffa,9fb964c591fc8f8a,Aerocinesi,Geocinesi,near_duplicate,Near duplicate name (Levenshtein distance: 2) in category MAGIA_E_MALEDIZIONI
+near_duplicate_entry,995c5833bac01ffa,9293cbd4ddb5e227,Aerocinesi,Pirocinesi,near_duplicate,Near duplicate name (Levenshtein distance: 2) in category MAGIA_E_MALEDIZIONI
+near_duplicate_entry,6bf8953ebcbecad4,c23c883585706c8b,Evocazione Controllata,Evocazione Incontrollata,near_duplicate,Near duplicate name (Levenshtein distance: 2) in category MAGIA_E_MALEDIZIONI
+near_duplicate_entry,0e058f4469d14c2f,40dbcd89a1d6480b,Idromanzia,Piromanzia,near_duplicate,Near duplicate name (Levenshtein distance: 2) in category MAGIA_E_MALEDIZIONI
+near_duplicate_entry,0e058f4469d14c2f,7f6be1a2142c4af5,Idromanzia,Tiromanzia,near_duplicate,Near duplicate name (Levenshtein distance: 2) in category MAGIA_E_MALEDIZIONI
+near_duplicate_entry,3f837cb1be7b4b06,40dbcd89a1d6480b,Oniromanzia,Piromanzia,near_duplicate,Near duplicate name (Levenshtein distance: 2) in category MAGIA_E_MALEDIZIONI
+near_duplicate_entry,3f837cb1be7b4b06,7f6be1a2142c4af5,Oniromanzia,Tiromanzia,near_duplicate,Near duplicate name (Levenshtein distance: 2) in category MAGIA_E_MALEDIZIONI
+near_duplicate_entry,40dbcd89a1d6480b,7f6be1a2142c4af5,Piromanzia,Tiromanzia,near_duplicate,Near duplicate name (Levenshtein distance: 1) in category MAGIA_E_MALEDIZIONI
+near_duplicate_entry,e6fba1dfd425d11a,d2a0fdc55b892b70,Artigiano,Artigianato,near_duplicate,Near duplicate name (Levenshtein distance: 2) in category REGOLAMENTO_E_NARRATIVA
+near_duplicate_entry,bdc543342cfc257f,0813e7896818fe7a,Deduzione,Seduzione,near_duplicate,Near duplicate name (Levenshtein distance: 1) in category REGOLAMENTO_E_NARRATIVA

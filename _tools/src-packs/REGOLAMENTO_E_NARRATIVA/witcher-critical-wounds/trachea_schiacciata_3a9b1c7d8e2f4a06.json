@@ -1,0 +1,20 @@
+{
+    "name": "Trachea Schiacciata",
+    "type": "criticalWound",
+    "system": {
+        "severity": "deadly",
+        "description": "<p>La trachea è stata schiacciata, ostruendo completamente il passaggio dell'aria.</p><p><b>Danno Extra:</b> +10 Danni alla testa.</p><p><b>Uscita:</b> Il personaggio è incapace di parlare, non può lanciare incantesimi che richiedono formule verbali e inizia a soffocare (subendo danni pari alla sua RES ogni round finché non viene stabilizzato).</p><p><b>Stabilizzato:</b> Il personaggio cessa di soffocare, ma rimane incapace di parlare.</p><p><b>Curato:</b> Il personaggio riprende a parlare ma con voce roca e affaticata, subendo un malus permanente di -1 a EMP e VOL.</p>",
+        "sourcebook": "MB 161"
+    },
+    "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/witcher-critical-wounds/trachea_schiacciata.webp",
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14,
+        "createdTime": 1779533984630,
+        "modifiedTime": 1779533984630,
+        "lastModifiedBy": "antigravity"
+    },
+    "_id": "bb32e4b56aa97c9c"
+}

@@ -1,0 +1,20 @@
+{
+    "name": "Muscolo Strappato",
+    "type": "criticalWound",
+    "system": {
+        "severity": "simple",
+        "description": "<p>Il colpo ha lacerato gravemente le fibre muscolari dell'arto.</p><p><b>Danno Extra:</b> +3 Danni alla locazione (Braccio / Gamba).</p><p><b>Uscita:</b> La vittima subisce un malus di -2 a tutte le prove che coinvolgono l'arto ferito.</p><p><b>Stabilizzato:</b> Il malus scende a -1 a tutte le prove che coinvolgono l'arto ferito.</p><p><b>Curato:</b> La ferita è rimarginata. Nessun malus.</p>",
+        "sourcebook": "MB 159"
+    },
+    "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/witcher-critical-wounds/muscolo_strappato.webp",
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14,
+        "createdTime": 1779533984629,
+        "modifiedTime": 1779533984629,
+        "lastModifiedBy": "antigravity"
+    },
+    "_id": "d4d52db27a8d5bee"
+}
