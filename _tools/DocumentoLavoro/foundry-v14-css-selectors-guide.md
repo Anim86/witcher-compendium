@@ -219,14 +219,26 @@ Se la scheda mostro usa `grid-column: 2 !important;` per posizionare l'header o 
 
 ---
 
-## Appendice: Novità Build 14.361 (Stable 3)
+## Appendice: Storico Novità Build (14.361 - 14.363)
 
-La versione 14.361 introduce alcuni cambiamenti minori ma rilevanti per l'UI e lo sviluppo:
+Le versioni recenti introducono alcuni cambiamenti minori ma rilevanti per l'UI e lo sviluppo:
 
-1. **Ridenominazione Sidebar**: La tab "Game Settings" è stata rinominata in **"Settings"**. I selettori CSS che puntano a label o attributi data contenenti il vecchio nome potrebbero richiedere aggiornamenti.
-2. **Drag-and-Drop DocumentSheetV2**: È ora possibile iniziare un'operazione di trascinamento cliccando sull'icona "Document UUID Link" nell'header di qualsiasi scheda `DocumentSheetV2`.
-3. **Icone Token HUD**: L'icona per "Toggle Visibility State" è passata dal "mystery man" generico a `fa-eye`/`fa-eye-slash`.
-4. **Filtri Swiper e Occlusione**: Migliorata la gestione dell'occlusione per gli oggetti in primo piano sopra le superfici (attivabile con `ALT`).
-5. **Stopwords nei Compendi**: Risolto un bug che impediva la ricerca di termini comuni (stopwords) nella barra di ricerca dei compendi.
+1. **Ridenominazione Sidebar (14.361)**: La tab "Game Settings" è stata rinominata in **"Settings"**. I selettori CSS che puntano a label o attributi data contenenti il vecchio nome potrebbero richiedere aggiornamenti.
+2. **Drag-and-Drop DocumentSheetV2 (14.361)**: È ora possibile iniziare un'operazione di trascinamento cliccando sull'icona "Document UUID Link" nell'header di qualsiasi scheda `DocumentSheetV2`.
+3. **Icone Token HUD (14.361)**: L'icona per "Toggle Visibility State" è passata dal "mystery man" generico a `fa-eye`/`fa-eye-slash`.
+4. **Filtri Swiper e Occlusione (14.361)**: Migliorata la gestione dell'occlusione per gli oggetti in primo piano sopra le superfici (attivabile con `ALT`).
+5. **Opzione submitOnClose ignorata (14.362)**: Viene ribadito e corretto nel core che `ApplicationV2` non supporta l'opzione `submitOnClose` (se presente, viene ignorata).
+6. **Tiles Nascosti e Bloccati (14.363)**: I Tiles che sono sia nascosti che bloccati sono ora invisibili anche per il GM sul canvas (per ridurre il disordine visivo), gestibili comunque dalla sidebar.
+
+---
+
+## Appendice B: Restrizioni sui Database Compendio e ID dei Documenti (Foundry VTT v12+)
+
+I pacchetti compendio generati come LevelDB (`RollTable`, `Item`, `Actor`, ecc.) devono seguire regole rigide per gli identificativi dei record:
+
+1. **Lunghezza ID**: Ciascun `_id` a livello radice deve essere di **esattamente 16 caratteri**.
+2. **Composizione Alphanumeric**: Gli ID devono contenere **esclusivamente lettere e numeri (`[a-zA-Z0-9]`)**.
+3. **Caratteri Vietati**: Non usare mai spazi, trattini, o trattini bassi (`_`).
+4. **Conseguenze**: L'uso di un ID non conforme (ad es. lungo 17 caratteri o contenente `_`) farà fallire la validazione interna del database al caricamento del modulo. Foundry VTT forzerà l'ID a `null`, inserendo nel database record corrotti che causano voci duplicate "fantasma" all'interno del compendio nel client e provocando eccezioni irreversibili (`TypeError: Cannot read properties of undefined (reading 'sheet')`) all'apertura del foglio.
 
 *Ultimo aggiornamento guida: 23 Maggio 2026 (allineamento build 14.363)*
