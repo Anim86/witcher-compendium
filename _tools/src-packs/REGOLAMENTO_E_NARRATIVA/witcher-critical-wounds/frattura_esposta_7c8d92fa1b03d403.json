@@ -1,0 +1,20 @@
+{
+    "name": "Frattura Esposta",
+    "type": "criticalWound",
+    "system": {
+        "severity": "difficult",
+        "description": "<p>L'osso si è spezzato fuoriuscendo vistosamente dalla carne.</p><p><b>Uscita:</b> La vittima perde l'uso dell'arto, subisce -4 alle azioni e sanguinamento.</p><p><b>Stabilizzato:</b> La vittima subisce -3 alle azioni.</p><p><b>Curato:</b> La vittima subisce -1 DES permanentemente.</p>",
+        "sourcebook": "MB 160"
+    },
+    "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/witcher-critical-wounds/frattura_esposta.webp",
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14,
+        "createdTime": 1779533984628,
+        "modifiedTime": 1779533984628,
+        "lastModifiedBy": "antigravity"
+    },
+    "_id": "2759ecb7faf13085"
+}

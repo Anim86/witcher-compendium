@@ -1,0 +1,20 @@
+{
+    "name": "Muscolo Strappato",
+    "type": "criticalWound",
+    "system": {
+        "severity": "simple",
+        "description": "<p>Le fibre muscolari dell'arto si sono lacerate a causa del trauma.</p><p><b>Uscita:</b> La vittima subisce -2 alle azioni che richiedono l'arto e -2 FIS.</p><p><b>Stabilizzato:</b> La vittima subisce -1 alle azioni che richiedono l'arto.</p><p><b>Curato:</b> La vittima subisce -1 FIS permanentemente.</p>",
+        "sourcebook": "MB 159"
+    },
+    "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/witcher-critical-wounds/muscolo_strappato.webp",
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14,
+        "createdTime": 1779533984629,
+        "modifiedTime": 1779533984629,
+        "lastModifiedBy": "antigravity"
+    },
+    "_id": "d4d52db27a8d5bee"
+}

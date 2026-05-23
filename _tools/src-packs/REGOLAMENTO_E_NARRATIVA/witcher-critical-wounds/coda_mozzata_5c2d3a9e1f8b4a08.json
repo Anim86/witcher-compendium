@@ -1,0 +1,20 @@
+{
+    "name": "Coda Mozzata",
+    "type": "criticalWound",
+    "system": {
+        "severity": "complex",
+        "description": "<p>La coda del mostro è stata tranciata di netto.</p><p><b>Uscita:</b> Il mostro perde qualsiasi attacco con la coda e subisce sanguinamento. -2 alla stabilità.</p><p><b>Stabilizzato:</b> Il mostro non sanguina più ma non ha attacchi con la coda.</p><p><b>Curato:</b> La coda non ricresce.</p>",
+        "sourcebook": "MB 161"
+    },
+    "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/witcher-critical-wounds/coda_mozzata.webp",
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14,
+        "createdTime": 1779533984630,
+        "modifiedTime": 1779533984630,
+        "lastModifiedBy": "antigravity"
+    },
+    "_id": "ba292c5ae2f893ff"
+}

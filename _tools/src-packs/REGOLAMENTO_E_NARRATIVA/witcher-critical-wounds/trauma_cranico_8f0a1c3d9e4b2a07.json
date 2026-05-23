@@ -1,0 +1,20 @@
+{
+    "name": "Trauma Cranico",
+    "type": "criticalWound",
+    "system": {
+        "severity": "difficult",
+        "description": "<p>Una grave frattura con infossamento colpisce il cranio.</p><p><b>Uscita:</b> La vittima è priva di sensi. Se si sveglia, subisce -4 INT e RIF.</p><p><b>Stabilizzato:</b> La vittima subisce -2 INT e RIF.</p><p><b>Curato:</b> La vittima subisce -1 INT permanentemente.</p>",
+        "sourcebook": "MB 160"
+    },
+    "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/witcher-critical-wounds/trauma_cranico.webp",
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14,
+        "createdTime": 1779533984630,
+        "modifiedTime": 1779533984630,
+        "lastModifiedBy": "antigravity"
+    },
+    "_id": "d79e33a81a186303"
+}

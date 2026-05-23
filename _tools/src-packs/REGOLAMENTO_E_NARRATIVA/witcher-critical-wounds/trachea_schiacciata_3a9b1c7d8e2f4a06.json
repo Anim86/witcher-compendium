@@ -1,0 +1,20 @@
+{
+    "name": "Trachea Schiacciata",
+    "type": "criticalWound",
+    "system": {
+        "severity": "deadly",
+        "description": "<p>La trachea è stata schiacciata. La vittima soffoca rapidamente.</p><p><b>Uscita:</b> La vittima inizia a soffocare ed è frastornata.</p><p><b>Stabilizzato:</b> La vittima respira faticosamente, subisce -3 FIS e VEL.</p><p><b>Curato:</b> La vittima subisce -1 permanentemente a FIS e VEL.</p>",
+        "sourcebook": "MB 161"
+    },
+    "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/witcher-critical-wounds/trachea_schiacciata.webp",
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14,
+        "createdTime": 1779533984630,
+        "modifiedTime": 1779533984630,
+        "lastModifiedBy": "antigravity"
+    },
+    "_id": "bb32e4b56aa97c9c"
+}
