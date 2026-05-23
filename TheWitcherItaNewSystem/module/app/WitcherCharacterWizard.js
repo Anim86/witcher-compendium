@@ -95,6 +95,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         updateBackground: function(event, target) { this._updateBackground(event, target); },
         toggleGear: function(event, target) { this._toggleGear(event, target); },
         selectAvatar: function(event, target) { this._selectAvatar(event, target); },
+        openListModal: function(event, target) { this._openListModal(event, target); },
         goToStep: function(event, target) { this._goToStep(event, target); },
         addPickupSkill: function(event, target) { this._addPickupSkill(event, target); },
         finish: function(event, target) { this._finish(event, target); },
@@ -888,12 +889,12 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
 
     _updateBackground(event, target) {
         const name = target.name || target.dataset.name;
-        const value = target.value;
+        const value = target.value || target.dataset.value || "";
         let needsRender = false;
 
         if (name === "background.socialStatus") {
             this.characterData.background.socialStatus = value;
-            if (target.tagName === "SELECT") needsRender = true;
+            if (target.tagName === "SELECT" || target.tagName === "BUTTON") needsRender = true;
         } else if (name === "background.familyState") {
             this.characterData.background.familyState = value;
             needsRender = true;
@@ -904,7 +905,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             }
         } else if (name === "background.familyFate") {
             this.characterData.background.familyFate = value;
-            if (target.tagName === "SELECT") needsRender = true;
+            if (target.tagName === "SELECT" || target.tagName === "BUTTON") needsRender = true;
         } else if (name === "background.parentsState") {
             this.characterData.background.parentsState = value;
             needsRender = true;
@@ -917,9 +918,100 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             this.characterData.background.parentsFate = value;
         }
 
+        if (target.tagName === "BUTTON") {
+            const wrapper = target.closest('.manual-dropdown');
+            if (wrapper) wrapper.removeAttribute('open');
+        }
+
         if (needsRender) {
             this.render(true);
         }
+    }
+
+    _openListModal(event, target) {
+        const field = target.dataset.field;
+        const title = target.dataset.title || "Seleziona opzione";
+        let options = [];
+
+        if (field === "background.socialStatus") {
+            options = this.socialStatusOptions || [];
+        } else if (field === "background.familyFate") {
+            options = this.familyFateOptions || [];
+        }
+
+        if (!options.length) return;
+
+        const currentValue = field === "background.socialStatus" 
+            ? this.characterData.background.socialStatus
+            : this.characterData.background.familyFate;
+
+        let html = `<div class="list-modal-search" style="margin-bottom: 15px;">
+            <input type="search" placeholder="Cerca opzione..." class="list-modal-filter" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.9rem;">
+        </div>
+        <div class="list-modal-items" style="max-height: 400px; overflow-y: auto; border: 1px solid #ccc; border-radius: 4px; scrollbar-width: none; -ms-overflow-style: none;">`;
+
+        options.forEach(opt => {
+            const selected = opt === currentValue ? ' style="background: rgba(139,0,0,0.1);" data-selected="true"' : '';
+            html += `<button type="button" class="list-modal-item" data-value="${opt}"${selected} style="display: block; width: 100%; text-align: left; padding: 14px; border: none; border-bottom: 1px solid #eee; background: transparent; cursor: pointer; font-size: 0.85rem; line-height: 1.6; white-space: normal; word-wrap: break-word; overflow-wrap: break-word;">
+                ${opt}
+            </button>`;
+        });
+
+        html += `</div>`;
+
+        const dialog = new Dialog({
+            title: title,
+            content: html,
+            buttons: {
+                cancel: {
+                    label: "Annulla",
+                    callback: () => {}
+                }
+            },
+            default: "cancel",
+            width: 700,
+            height: "auto"
+        });
+
+        dialog.render(true);
+
+        setTimeout(() => {
+            const modal = dialog.element[0] || dialog.element;
+            if (!modal) return;
+
+            // Nascondi scrollbar per Chrome/Safari
+            const style = document.createElement('style');
+            style.textContent = `.list-modal-items::-webkit-scrollbar { display: none; }`;
+            modal.appendChild(style);
+
+            const filterInput = modal.querySelector('.list-modal-filter');
+            const items = modal.querySelectorAll('.list-modal-item');
+
+            if (filterInput) {
+                filterInput.addEventListener('input', (e) => {
+                    const query = e.target.value.toLowerCase();
+                    items.forEach(item => {
+                        const text = item.textContent.toLowerCase();
+                        item.style.display = text.includes(query) ? '' : 'none';
+                    });
+                });
+                filterInput.focus();
+            }
+
+            items.forEach(item => {
+                item.addEventListener('click', () => {
+                    const value = item.dataset.value;
+                    const synthEvent = new Event('change', { bubbles: true });
+                    synthEvent.currentTarget = {
+                        name: field,
+                        value: value,
+                        tagName: 'BUTTON'
+                    };
+                    this._updateBackground(synthEvent, synthEvent.currentTarget);
+                    dialog.close();
+                });
+            });
+        }, 100);
     }
 
     _toggleGear(event, target) {

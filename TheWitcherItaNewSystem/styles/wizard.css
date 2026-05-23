@@ -816,6 +816,12 @@ form.witcher-wizard .wizard-content {
     box-shadow: 0 0 0 2px rgba(139, 0, 0, 0.15);
 }
 
+.witcher-wizard .step-background select option,
+.witcher-wizard .step-background .manual-select option {
+    background-color: #fdf6e3 !important;
+    color: var(--wizard-text-dark) !important;
+}
+
 /* Parchment-styled text/number inputs */
 .witcher-wizard .step-background input[type="text"],
 .witcher-wizard .step-background input[type="number"] {
@@ -838,6 +844,53 @@ form.witcher-wizard .wizard-content {
     border-color: var(--wizard-accent) !important;
     box-shadow: 0 0 0 2px rgba(139, 0, 0, 0.15);
 }
+
+/* List select button (modal trigger) */
+.witcher-wizard .step-background .btn-select-from-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f5edd6;
+    border: 1px solid var(--wizard-border);
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.85rem;
+    color: var(--wizard-text-dark);
+    cursor: pointer;
+    transition: border-color 0.2s, background 0.2s;
+    text-align: left;
+    margin-top: 4px;
+}
+
+.witcher-wizard .step-background .btn-select-from-list:hover {
+    background: #faf1dc;
+    border-color: var(--wizard-accent);
+}
+
+.witcher-wizard .step-background .btn-select-from-list:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(139, 0, 0, 0.18);
+}
+
+.witcher-wizard .step-background .btn-select-from-list .preview {
+    flex: 1;
+    line-height: 1.4;
+    white-space: normal;
+    word-break: break-word;
+}
+
+.witcher-wizard .step-background .btn-select-from-list .placeholder {
+    color: var(--wizard-text-muted);
+}
+
+.witcher-wizard .step-background .btn-select-from-list i {
+    margin-left: 10px;
+    color: var(--wizard-accent);
+    flex-shrink: 0;
+}
+
 
 /* Input + roll button row */
 .witcher-wizard .step-background .input-with-roll {
@@ -953,29 +1006,6 @@ form.witcher-wizard .wizard-content {
     transform: translateY(-1px);
 }
 
-/* Manual selection dropdown (below the roll input) */
-.witcher-wizard .step-background .manual-select {
-    width: 100%;
-    margin-top: 4px;
-    background: #f5edd6 !important;
-    border: 1px dashed var(--wizard-border) !important;
-    border-radius: 5px;
-    padding: 4px 8px;
-    font-family: 'Outfit', sans-serif;
-    font-size: 0.8rem;
-    color: var(--wizard-text-muted) !important;
-    cursor: pointer;
-    transition: border-color 0.2s, box-shadow 0.2s;
-    height: 28px;
-}
-
-.witcher-wizard .step-background .manual-select:focus {
-    outline: none;
-    border-color: var(--wizard-accent) !important;
-    border-style: solid !important;
-    box-shadow: 0 0 0 2px rgba(139, 0, 0, 0.12);
-    color: var(--wizard-text-dark) !important;
-}
 
 /* Nested conditional form groups (family fate / parents fate) */
 .witcher-wizard .step-background .nested-group {

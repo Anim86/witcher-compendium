@@ -54,12 +54,14 @@
                             </button>
                         </div>
                         {{#if socialStatusOptions.length}}
-                        <select name="background.socialStatus" data-action="updateBackground" class="manual-select">
-                            <option value="">— Oppure scegli dalla lista —</option>
-                            {{#each socialStatusOptions}}
-                            <option value="{{this}}" {{#if (eq ../character.background.socialStatus this)}}selected{{/if}}>{{this}}</option>
-                            {{/each}}
-                        </select>
+                        <button type="button" class="btn-select-from-list" data-action="openListModal" data-field="background.socialStatus" data-title="Seleziona Situazione Familiare">
+                            {{#if character.background.socialStatus}}
+                                <span class="preview">{{character.background.socialStatus}}</span>
+                            {{else}}
+                                <span class="placeholder">— Scegli dalla lista —</span>
+                            {{/if}}
+                            <i class="fa-solid fa-list"></i>
+                        </button>
                         {{/if}}
                     </div>
 
@@ -96,12 +98,14 @@
                             </button>
                         </div>
                         {{#if familyFateOptions.length}}
-                        <select name="background.familyFate" data-action="updateBackground" class="manual-select">
-                            <option value="">— Oppure scegli dalla lista —</option>
-                            {{#each familyFateOptions}}
-                            <option value="{{this}}" {{#if (eq ../character.background.familyFate this)}}selected{{/if}}>{{this}}</option>
-                            {{/each}}
-                        </select>
+                        <button type="button" class="btn-select-from-list" data-action="openListModal" data-field="background.familyFate" data-title="Seleziona Destino Familiare">
+                            {{#if character.background.familyFate}}
+                                <span class="preview">{{character.background.familyFate}}</span>
+                            {{else}}
+                                <span class="placeholder">— Scegli dalla lista —</span>
+                            {{/if}}
+                            <i class="fa-solid fa-list"></i>
+                        </button>
                         {{/if}}
                     </div>
                     {{/if}}
