@@ -1663,8 +1663,8 @@ form.witcher-wizard .wizard-content {
     align-items: center;
     gap: 20px;
     border-bottom: 2px solid var(--wizard-accent);
-    padding-bottom: 12px;
-    margin-bottom: 12px;
+    padding-bottom: 6px;
+    margin-bottom: 8px;
     flex-shrink: 0;
 }
 
@@ -1720,8 +1720,7 @@ form.witcher-wizard .wizard-content {
 }
 
 .witcher-wizard .detail-perks-list {
-    border-top: 1px dashed var(--wizard-border);
-    padding-top: 12px;
+    padding-top: 4px;
     flex-shrink: 0;
 }
 

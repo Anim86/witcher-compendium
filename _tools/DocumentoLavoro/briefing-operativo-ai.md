@@ -1,6 +1,6 @@
 # 📜 BRIEFING OPERATIVO: MAINTENANCE WITCHER COMPENDIUM
 > [!IMPORTANT]
-> **AMBIENTE DI SVILUPPO**: [Foundry VTT Stable 14 build 361](https://foundryvtt.com/releases/14.361)
+> **AMBIENTE DI SVILUPPO**: [Foundry VTT Stable 14 build 363](https://foundryvtt.com/releases/14.363)
 
 ## Documento di Handover per AI Builder (Antigravity & Friends)
 
@@ -25,7 +25,7 @@ Tutti gli script sono stati riorganizzati in `_tools/scripts/`. Ogni script usa 
 ### 🚀 Core Pipeline (Manutenzione Ordinaria)
 # 📜 BRIEFING OPERATIVO: MAINTENANCE WITCHER COMPENDIUM
 > [!IMPORTANT]
-> **AMBIENTE DI SVILUPPO**: [Foundry VTT Stable 14 build 361](https://foundryvtt.com/releases/14.361)
+> **AMBIENTE DI SVILUPPO**: [Foundry VTT Stable 14 build 363](https://foundryvtt.com/releases/14.363)
 
 ## Documento di Handover per AI Builder (Antigravity & Friends)
 
@@ -54,7 +54,7 @@ Tutti gli script sono stati riorganizzati in `_tools/scripts/`. Ogni script usa 
 | **`core/compile_packs.mjs`** | Node.js | Genera i LevelDB (V14 format) | Prima di ogni test in Foundry o rilascio. |
 # 📜 BRIEFING OPERATIVO: MAINTENANCE WITCHER COMPENDIUM
 > [!IMPORTANT]
-> **AMBIENTE DI SVILUPPO**: [Foundry VTT Stable 14 build 361](https://foundryvtt.com/releases/14.361)
+> **AMBIENTE DI SVILUPPO**: [Foundry VTT Stable 14 build 363](https://foundryvtt.com/releases/14.363)
 
 ## Documento di Handover per AI Builder (Antigravity & Friends)
 
@@ -266,4 +266,4 @@ Se hai bisogno di capire come sono stati estratti i dati originariamente, consul
 -   `_tools/scripts/archive/legacy/audits/`: Logiche di validazione storica.
 
 ---
-*Ultimo aggiornamento guida: 21 Maggio 2026 (Integrazione compilatore LevelDB V14 ufficiale, correzione bug inventario vuoto e allineamento deployment)*
+*Ultimo aggiornamento guida: 23 Maggio 2026 (Aggiornamento a Foundry 14.363)*

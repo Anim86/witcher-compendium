@@ -229,4 +229,4 @@ La versione 14.361 introduce alcuni cambiamenti minori ma rilevanti per l'UI e l
 4. **Filtri Swiper e Occlusione**: Migliorata la gestione dell'occlusione per gli oggetti in primo piano sopra le superfici (attivabile con `ALT`).
 5. **Stopwords nei Compendi**: Risolto un bug che impediva la ricerca di termini comuni (stopwords) nella barra di ricerca dei compendi.
 
-*Ultimo aggiornamento guida: 5 Maggio 2026 (allineamento build 14.361)*
+*Ultimo aggiornamento guida: 23 Maggio 2026 (allineamento build 14.363)*
