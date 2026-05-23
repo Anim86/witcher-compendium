@@ -17,13 +17,6 @@
         <!-- Detail Panel: Detailed information of the selected Race -->
         <div class="detail-panel">
             {{#if character.race}}
-                <div class="detail-header">
-                    <img src="{{character.race.img}}" alt="{{character.race.name}}">
-                    <div class="detail-title-wrapper">
-                        <h2>{{character.race.name}}</h2>
-                        <span class="detail-subtitle">Stirpe del Continente</span>
-                    </div>
-                </div>
                 <div class="detail-body">
                     {{#if character.race.system.description}}
                     <div class="detail-description">
@@ -33,7 +26,6 @@
                     
                     {{#if (or character.race.system.perk1.name (or character.race.system.perk2.name character.race.system.perk3.name))}}
                     <div class="detail-perks-list">
-                        <h3>Doti Naturali:</h3>
                         <ul>
                             {{#if character.race.system.perk1.name}}
                                 <li><strong>{{character.race.system.perk1.name}}</strong>{{#if character.race.system.perk1.description}}: {{{character.race.system.perk1.description}}}{{/if}}</li>

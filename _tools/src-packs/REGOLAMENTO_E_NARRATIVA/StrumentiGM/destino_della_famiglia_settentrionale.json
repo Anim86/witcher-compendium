@@ -1,0 +1,99 @@
+{
+  "_id": "famfate_north000",
+  "name": "Destino della Famiglia (Settentrionale)",
+  "type": "RollTable",
+  "formula": "1d10",
+  "description": "Tabella per il Destino della Famiglia con origini Settentrionali.",
+  "results": [
+    {
+      "range": [1, 1],
+      "weight": 1,
+      "type": 0,
+      "text": "Si è dispersa durante la guerra e il personaggio non ha idea di dove trovare la maggior parte dei suoi parenti.",
+      "_id": "ffatenorthres001",
+      "drawn": false
+    },
+    {
+      "range": [2, 2],
+      "weight": 1,
+      "type": 0,
+      "text": "È stata imprigionata per crimini o accuse false. Il personaggio è stato l'unico a fuggire. Vuole liberarli... o forse no.",
+      "_id": "ffatenorthres002",
+      "drawn": false
+    },
+    {
+      "range": [3, 3],
+      "weight": 1,
+      "type": 0,
+      "text": "La casa di famiglia è stata maledetta, i campi non producono più grano o spettri infestano le stanze. Per il personaggio è troppo pericoloso restarvi.",
+      "_id": "ffatenorthres003",
+      "drawn": false
+    },
+    {
+      "range": [4, 4],
+      "weight": 1,
+      "type": 0,
+      "text": "Con così tante guerre, i beni di famiglia sono andati persi. I suoi parenti si sono dati al crimine per sopravvivere.",
+      "_id": "ffatenorthres004",
+      "drawn": false
+    },
+    {
+      "range": [5, 5],
+      "weight": 1,
+      "type": 0,
+      "text": "Ha accumulato un enorme debito giocando d'azzardo o per favori richiesti a terzi. Il personaggio ha un disperato bisogno di denaro.",
+      "_id": "ffatenorthres005",
+      "drawn": false
+    },
+    {
+      "range": [6, 6],
+      "weight": 1,
+      "type": 0,
+      "text": "Ha una faida in corso con un'altra famiglia. Il personaggio non ricorda nemmeno come sia cominciata la rivalità.",
+      "_id": "ffatenorthres006",
+      "drawn": false
+    },
+    {
+      "range": [7, 7],
+      "weight": 1,
+      "type": 0,
+      "text": "A causa di qualche azione - o mancanza - la famiglia del personaggio ora è odiata nella sua città natale e nessuno vuole avere a che fare con loro.",
+      "_id": "ffatenorthres007",
+      "drawn": false
+    },
+    {
+      "range": [8, 8],
+      "weight": 1,
+      "type": 0,
+      "text": "Un giorno tutti gli averi della famiglia sono stati razziati da dei banditi. La famiglia è stata massacrata e il personaggio è rimasto solo al mondo.",
+      "_id": "ffatenorthres008",
+      "drawn": false
+    },
+    {
+      "range": [9, 9],
+      "weight": 1,
+      "type": 0,
+      "text": "Cela un terribile segreto che, se venisse alla luce, rovinerebbe lui e tutti gli altri per sempre. Il giocatore può decidere quale sia il segreto, o farlo decidere al Game Master.",
+      "_id": "ffatenorthres009",
+      "drawn": false
+    },
+    {
+      "range": [10, 10],
+      "weight": 1,
+      "type": 0,
+      "text": "I membri della famiglia si disprezzano fra loro. Nessuno dei parenti con cui il personaggio è cresciuto è rimasto in buoni rapporti ed è già tanto se i suoi fratelli lo salutano.",
+      "_id": "ffatenorthres010",
+      "drawn": false
+    }
+  ],
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": "14"
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "img": "icons/skills/social/diplomacy-handshake.webp"
+}

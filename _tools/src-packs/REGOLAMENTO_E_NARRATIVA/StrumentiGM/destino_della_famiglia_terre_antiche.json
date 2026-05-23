@@ -1,0 +1,99 @@
+{
+  "_id": "famfate_elder000",
+  "name": "Destino della Famiglia (Terre Antiche)",
+  "type": "RollTable",
+  "formula": "1d10",
+  "description": "Tabella per il Destino della Famiglia con origini Terre Antiche.",
+  "results": [
+    {
+      "range": [1, 1],
+      "weight": 1,
+      "type": 0,
+      "text": "È stata bollata come simpatizzante degli umani e non è ben vista nella sua terra natale.",
+      "_id": "ffateelderres001",
+      "drawn": false
+    },
+    {
+      "range": [2, 2],
+      "weight": 1,
+      "type": 0,
+      "text": "È stata ostracizzata per le sue opinioni e ora la gente non rivolge più la parola al personaggio o ai suoi parenti.",
+      "_id": "ffateelderres002",
+      "drawn": false
+    },
+    {
+      "range": [3, 3],
+      "weight": 1,
+      "type": 0,
+      "text": "È morta nelle Guerre Settentrionali. Potrebbero aver combattuto o essere semplici vittime del passaggio della guerra.",
+      "_id": "ffateelderres003",
+      "drawn": false
+    },
+    {
+      "range": [4, 4],
+      "weight": 1,
+      "type": 0,
+      "text": "È invischiata in una faida da generazioni. Forse il personaggio non ricorda perché sia iniziata, ma è una tragedia.",
+      "_id": "ffateelderres004",
+      "drawn": false
+    },
+    {
+      "range": [5, 5],
+      "weight": 1,
+      "type": 0,
+      "text": "È stata privata del suo titolo per qualche ragione. Hanno dovuto abbandonare la loro casa e arrangiarsi per campare.",
+      "_id": "ffateelderres005",
+      "drawn": false
+    },
+    {
+      "range": [6, 6],
+      "weight": 1,
+      "type": 0,
+      "text": "Quando il personaggio era piccolo, la sua famiglia ha iniziato a razziare gli insediamenti umani, per procurarsi il cibo o per rivalsa.",
+      "_id": "ffateelderres006",
+      "drawn": false
+    },
+    {
+      "range": [7, 7],
+      "weight": 1,
+      "type": 0,
+      "text": "La casa di famiglia è infestata. Probabilmente perché è stata teatro di innumerevoli morti nel corso della guerra contro gli umani.",
+      "_id": "ffateelderres007",
+      "drawn": false
+    },
+    {
+      "range": [8, 8],
+      "weight": 1,
+      "type": 0,
+      "text": "È stata divisa da un parente acquisito umano, che ne ha sposato un fratello o un parente. Ad alcuni membri piace, altri lo odiano.",
+      "_id": "ffateelderres008",
+      "drawn": false
+    },
+    {
+      "range": [9, 9],
+      "weight": 1,
+      "type": 0,
+      "text": "È stata uccisa da degli umani, che li ritenevano degli Scoia'tael. Forse sono stati massacrati o impiccati senza prove o un processo.",
+      "_id": "ffateelderres009",
+      "drawn": false
+    },
+    {
+      "range": [10, 10],
+      "weight": 1,
+      "type": 0,
+      "text": "Discende da un famigerato traditore. Questo rovina i rapporti con gli altri membri delle razze antiche e ha reso difficile vivere nelle loro terre ancestrali.",
+      "_id": "ffateelderres010",
+      "drawn": false
+    }
+  ],
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": "14"
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "img": "icons/skills/social/diplomacy-handshake.webp"
+}

@@ -63,9 +63,19 @@
 
                 {{!-- Colonna destra: Famiglia & Eventi --}}
                 <div class="background-section">
-                    <h3>{{localize "WITCHER.Wizard.Background.Family"}}</h3>
+                    <h3>Famiglia & Genitori</h3>
 
                     <div class="form-group">
+                        <label>Stato della Famiglia</label>
+                        <select name="background.familyState" data-action="updateBackground">
+                            <option value="">— Seleziona Stato Famiglia —</option>
+                            <option value="alive" {{#if (eq character.background.familyState "alive")}}selected{{/if}}>Almeno parte della famiglia è ancora viva.</option>
+                            <option value="something_happened" {{#if (eq character.background.familyState "something_happened")}}selected{{/if}}>Qualcosa è Accaduto alla Famiglia</option>
+                        </select>
+                    </div>
+
+                    {{#if (eq character.background.familyState "something_happened")}}
+                    <div class="form-group nested-group">
                         <label>{{localize "WITCHER.Wizard.Background.FamilyFate"}}</label>
                         <div class="input-with-roll">
                             <input type="text"
@@ -78,8 +88,31 @@
                             </button>
                         </div>
                     </div>
+                    {{/if}}
 
-                    <h3>{{localize "WITCHER.Wizard.Background.LifeEvents"}}</h3>
+                    <div class="form-group" style="margin-top: 10px;">
+                        <label>Stato dei Genitori</label>
+                        <select name="background.parentsState" data-action="updateBackground">
+                            <option value="">— Seleziona Stato Genitori —</option>
+                            <option value="alive" {{#if (eq character.background.parentsState "alive")}}selected{{/if}}>Genitori Vivi</option>
+                            <option value="something_happened" {{#if (eq character.background.parentsState "something_happened")}}selected{{/if}}>Qualcosa è Accaduto ai Genitori</option>
+                        </select>
+                    </div>
+
+                    {{#if (eq character.background.parentsState "something_happened")}}
+                    <div class="form-group nested-group">
+                        <label>Sorte dei Genitori</label>
+                        <div class="input-with-roll">
+                            <input type="text"
+                                   name="background.parentsFate"
+                                   value="{{character.background.parentsFate}}"
+                                   placeholder="Scrivi manualmente cosa è successo…"
+                                   data-action="updateBackground">
+                        </div>
+                    </div>
+                    {{/if}}
+
+                    <h3 style="margin-top: 15px;">{{localize "WITCHER.Wizard.Background.LifeEvents"}}</h3>
                     <div class="events-list scrollable">
                         {{#each character.background.events}}
                         <div class="event-item">

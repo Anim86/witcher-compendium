@@ -1,0 +1,99 @@
+{
+  "_id": "famfate_nilfg000",
+  "name": "Destino della Famiglia (Nilfgaardiana)",
+  "type": "RollTable",
+  "formula": "1d10",
+  "description": "Tabella per il Destino della Famiglia con origini Nilfgaardiane.",
+  "results": [
+    {
+      "range": [1, 1],
+      "weight": 1,
+      "type": 0,
+      "text": "È stata imprigionata per crimini contro l'Impero, a causa di accuse false. Solo il personaggio è scampato.",
+      "_id": "ffatenilfgres001",
+      "drawn": false
+    },
+    {
+      "range": [2, 2],
+      "weight": 1,
+      "type": 0,
+      "text": "È stata esiliata nel Deserto di Korath e il personaggio ha passato gran parte della sua vita a cercare di sopravvivere in quell'ambiente mortale.",
+      "_id": "ffatenilfgres002",
+      "drawn": false
+    },
+    {
+      "range": [3, 3],
+      "weight": 1,
+      "type": 0,
+      "text": "È stata uccisa da un mago vagabondo in cerca di vendetta o semplicemente assetato di sangue. In ogni caso, il personaggio è solo al mondo.",
+      "_id": "ffatenilfgres003",
+      "drawn": false
+    },
+    {
+      "range": [4, 4],
+      "weight": 1,
+      "type": 0,
+      "text": "È scomparsa e non ha idea di dove sia. Un giorno sono semplicemente svaniti.",
+      "_id": "ffatenilfgres004",
+      "drawn": false
+    },
+    {
+      "range": [5, 5],
+      "weight": 1,
+      "type": 0,
+      "text": "È stata giustiziata con l'accusa di tradimento contro l'Impero. Il personaggio è stato l'unico a sfuggire a questa sorte.",
+      "_id": "ffatenilfgres005",
+      "drawn": false
+    },
+    {
+      "range": [6, 6],
+      "weight": 1,
+      "type": 0,
+      "text": "È stata privata del suo titolo per qualche ragione. Hanno dovuto lasciare la loro casa e arrangiarsi per campare in mezzo alla feccia.",
+      "_id": "ffatenilfgres006",
+      "drawn": false
+    },
+    {
+      "range": [7, 7],
+      "weight": 1,
+      "type": 0,
+      "text": "Il nome della famiglia è stato infangato da un parente con doti magiche che ha sfoggiato malamente il suo dono, come un mago settentrionale.",
+      "_id": "ffatenilfgres007",
+      "drawn": false
+    },
+    {
+      "range": [8, 8],
+      "weight": 1,
+      "type": 0,
+      "text": "Il personaggio ha screditato la sua famiglia agli occhi dell'Impero. Ha detto o fatto qualcosa che ha rovinato la sua reputazione e danneggiato la famiglia.",
+      "_id": "ffatenilfgres008",
+      "drawn": false
+    },
+    {
+      "range": [9, 9],
+      "weight": 1,
+      "type": 0,
+      "text": "Cela un terribile segreto che, se venisse alla luce, potrebbe distruggerla insieme al suo buon nome. Il personaggio deve proteggere questo segreto a costo della vita.",
+      "_id": "ffatenilfgres009",
+      "drawn": false
+    },
+    {
+      "range": [10, 10],
+      "weight": 1,
+      "type": 0,
+      "text": "È stata assassinata. Forse intralciava i piani di qualcuno, oppure è stata usata per arrivare a qualcuno più in alto. In ogni caso, la sua famiglia non esiste più.",
+      "_id": "ffatenilfgres010",
+      "drawn": false
+    }
+  ],
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": "14"
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "img": "icons/skills/social/diplomacy-handshake.webp"
+}

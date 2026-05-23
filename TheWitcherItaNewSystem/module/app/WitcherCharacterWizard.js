@@ -21,7 +21,10 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             homeland: "",
             background: {
                 socialStatus: "",
+                familyState: "",
                 familyFate: "",
+                parentsState: "",
+                parentsFate: "",
                 events: []
             },
             profession: null,
@@ -789,14 +792,31 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
     }
 
     async _rollFamilyFate() {
-        const t = await this._findTable(["Destino della Famiglia", "Destino Familiare", "Family Fate", "Family Background"]);
+        const origin = this._getOriginCategory();
+        let tableName = "";
+        let hints = [];
+        if (origin === "Terre Antiche") {
+            tableName = "Destino della Famiglia (Terre Antiche)";
+            hints = ["Destino della Famiglia (Terre Antiche)", "Destino della Famiglia - Terre Antiche", "Terre Antiche"];
+        } else if (origin === "Nilfgaardiana") {
+            tableName = "Destino della Famiglia (Nilfgaardiana)";
+            hints = ["Destino della Famiglia (Nilfgaardiana)", "Destino della Famiglia - Nilfgaardiana", "Nilfgaardiana"];
+        } else {
+            tableName = "Destino della Famiglia (Settentrionale)";
+            hints = ["Destino della Famiglia (Settentrionale)", "Destino della Famiglia - Settentrionale", "Settentrionale"];
+        }
+        
+        // Fallbacks
+        hints.push("Destino della Famiglia", "Destino Familiare", "Family Fate", "Family Background");
+
+        const t = await this._findTable(hints);
         if (t) {
             const r = await t.roll();
             const text = r.results[0]?.text ?? r.results[0]?.getChatText?.() ?? "";
             this.characterData.background.familyFate = text;
             ui.notifications.info(`Destino Familiare: ${text}`);
         } else {
-            ui.notifications.warn("Tabella 'Destino Familiare' non trovata nel mondo o nei compendi.");
+            ui.notifications.warn(`Tabella '${tableName}' non trovata nel mondo o nei compendi.`);
         }
         this.render(true);
     }
@@ -819,12 +839,35 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
     _updateBackground(event, target) {
         const name = target.name || target.dataset.name;
         const value = target.value;
+        let needsRender = false;
+
         if (name === "background.socialStatus") {
             this.characterData.background.socialStatus = value;
+        } else if (name === "background.familyState") {
+            this.characterData.background.familyState = value;
+            needsRender = true;
+            if (value === "alive") {
+                this.characterData.background.familyFate = "Almeno parte della famiglia è ancora viva.";
+            } else {
+                this.characterData.background.familyFate = "";
+            }
         } else if (name === "background.familyFate") {
             this.characterData.background.familyFate = value;
+        } else if (name === "background.parentsState") {
+            this.characterData.background.parentsState = value;
+            needsRender = true;
+            if (value === "alive") {
+                this.characterData.background.parentsFate = "Genitori Vivi";
+            } else {
+                this.characterData.background.parentsFate = "";
+            }
+        } else if (name === "background.parentsFate") {
+            this.characterData.background.parentsFate = value;
         }
-        // No re-render on manual typing to avoid losing focus
+
+        if (needsRender) {
+            this.render(true);
+        }
     }
 
     _toggleGear(event, target) {
@@ -869,7 +912,35 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
     async _finish() {
         const name = this.element.querySelector("input[name='name']")?.value || "New Hero";
         
-        // 1. Prepare base actor data
+        // 1. Compile Background Biography HTML
+        let bgHtml = "";
+        const bg = this.characterData.background;
+        if (bg.socialStatus) {
+            bgHtml += `<p><strong>Situazione Familiare:</strong> ${bg.socialStatus}</p>`;
+        }
+        if (bg.familyState) {
+            const famStr = bg.familyState === "alive" ? "Almeno parte della famiglia è ancora viva." : "Qualcosa è Accaduto alla Famiglia";
+            bgHtml += `<p><strong>Stato della Famiglia:</strong> ${famStr}</p>`;
+            if (bg.familyFate) {
+                bgHtml += `<p><strong>Sorte della Famiglia:</strong> ${bg.familyFate}</p>`;
+            }
+        }
+        if (bg.parentsState) {
+            const parStr = bg.parentsState === "alive" ? "Genitori Vivi" : "Qualcosa è Accaduto ai Genitori";
+            bgHtml += `<p><strong>Stato dei Genitori:</strong> ${parStr}</p>`;
+            if (bg.parentsFate) {
+                bgHtml += `<p><strong>Sorte dei Genitori:</strong> ${bg.parentsFate}</p>`;
+            }
+        }
+        if (bg.events && bg.events.length > 0) {
+            bgHtml += `<h3>Eventi della Vita:</h3><ul>`;
+            for (const ev of bg.events) {
+                bgHtml += `<li><strong>Età ${ev.age}:</strong> ${ev.text}</li>`;
+            }
+            bgHtml += `</ul>`;
+        }
+
+        // 2. Prepare base actor data
         const actorData = {
             name,
             type: "character",
@@ -882,11 +953,34 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                     homeland: this.characterData.homeland || "",
                     age: this.characterData.age || 20
                 },
+                general: {
+                    age: this.characterData.age || 20,
+                    socialStanding: bg.socialStatus || "",
+                    homeland: {
+                        value: this.characterData.homeland || ""
+                    },
+                    background: {
+                        value: bgHtml
+                    },
+                    lifeEvents: {}
+                },
                 currency: {
                     crown: Number(this.characterData.money) || 0
                 }
             }
         };
+
+        // Populate lifeEvents in general
+        for (const ev of bg.events) {
+            const decadeKey = ev.age;
+            if (decadeKey >= 10 && decadeKey <= 200) {
+                actorData.system.general.lifeEvents[decadeKey] = {
+                    value: ev.text || "",
+                    details: "",
+                    isOpened: false
+                };
+            }
+        }
 
         // 2. Map Stats
         for (const [key, value] of Object.entries(this.characterData.stats)) {
