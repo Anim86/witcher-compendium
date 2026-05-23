@@ -1,0 +1,75 @@
+{
+  "_id": "familiarnilfg000",
+  "name": "Situazione Familiare (Nilfgaardiana)",
+  "type": "RollTable",
+  "formula": "1d10",
+  "description": "Tabella per la Situazione Familiare con origini Nilfgaardiane.",
+  "results": [
+    {
+      "range": [1, 1],
+      "weight": 1,
+      "type": 0,
+      "text": "Aristocrazia: cresciuto in un maniero, ben avvezzo alla vita a corte. Il lusso è stato solo un incentivo. Equipaggiamento Iniziale: Attestato di Nobiltà (+2 a Reputazione)",
+      "_id": "famnilfgres00001",
+      "drawn": false
+    },
+    {
+      "range": [2, 2],
+      "weight": 1,
+      "type": 0,
+      "text": "Alta Prelatura: allevato dal clero del Grande Sole. È cresciuto pio e conscio che la chiesa lo avrebbe guidato. Equipaggiamento Iniziale: Simbolo Sacro (+1 a Coraggio)",
+      "_id": "famnilfgres00002",
+      "drawn": false
+    },
+    {
+      "range": [3, 3],
+      "weight": 1,
+      "type": 0,
+      "text": "Cavalieri: cresciuto sapendo di dover servire l’Imperatore e che il lusso è una ricompensa per la sua devozione. Equipaggiamento Iniziale: Stemma Personale (+1 a Reputazione)",
+      "_id": "famnilfgres00003",
+      "drawn": false
+    },
+    {
+      "range": [4, 4],
+      "weight": 1,
+      "type": 0,
+      "text": "Famiglia di Artigiani: cresciuto in bottega, ha imparato a creare prodotti da vendere per il mondo. Conosce bene il valore della qualità. Equipaggiamento Iniziale: 3 Schemi/Formule Comuni",
+      "_id": "famnilfgres00004",
+      "drawn": false
+    },
+    {
+      "range": [5, 5],
+      "weight": 1,
+      "type": 0,
+      "text": "Famiglia di Mercanti: cresciuto vendendo prodotti in tutto l’Impero, ha visto ogni genere di merci esotiche. Equipaggiamento Iniziale: 2 Conoscenze",
+      "_id": "famnilfgres00005",
+      "drawn": false
+    },
+    {
+      "range": [6, 7],
+      "weight": 1,
+      "type": 0,
+      "text": "Nato per Servire: nato tra la servitù, ha vissuto in semplici alloggi. Ha sempre avuto pochi effetti personali e molti doveri faticosi. Equipaggiamento Iniziale: Un uccello o una serpe ammaestrata",
+      "_id": "famnilfgres00006",
+      "drawn": false
+    },
+    {
+      "range": [8, 10],
+      "weight": 1,
+      "type": 0,
+      "text": "Famiglia Contadina: cresciuto in una delle migliaia di fattorie sparse per l’Impero. Non ha mai posseduto granché, la sua è stata una vita semplice. Equipaggiamento Iniziale: Un Portafortuna (+2 a Fortuna)",
+      "_id": "famnilfgres00008",
+      "drawn": false
+    }
+  ],
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": "14"
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "img": "icons/skills/social/diplomacy-handshake.webp"
+}

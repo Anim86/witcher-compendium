@@ -17,9 +17,10 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         this.characterData = {
             name: "",
             race: null,
-            homeland: "Aedirn",
+            originRegion: "",
+            homeland: "",
             background: {
-                socialStatus: "Paritario",
+                socialStatus: "",
                 familyFate: "",
                 events: []
             },
@@ -83,6 +84,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         adjustSkill: function(event, target) { this._adjustSkill(event, target); },
         updateAge: function(event, target) { this._updateAge(event, target); },
         updateMoney: function(event, target) { this._updateMoney(event, target); },
+        updateOriginRegion: function(event, target) { this._updateOriginRegion(event, target); },
         updateHomeland: function(event, target) { this._updateHomeland(event, target); },
         rollBackground: function(event, target) { this._rollBackground(event, target); },
         rollLifeEvents: function(event, target) { this._rollLifeEvents(event, target); },
@@ -243,6 +245,20 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 });
             }
 
+            const regionHomelands = {
+                north: ["aedirn", "cidaris", "cintra", "kaedwen", "kovir", "lyria", "poviss", "redania", "rivia", "skellige", "temeria", "verden"],
+                nilfgaard: ["angren", "ebbing", "etolia", "gemmeria", "gheso", "maecht", "magturga", "mettina", "nazair", "nilfgaard", "vicovaro"],
+                elder: ["dolblathanna", "mahakam"]
+            };
+            
+            let filteredHomelands = [];
+            if (this.characterData.originRegion) {
+                const allowed = regionHomelands[this.characterData.originRegion] || [];
+                filteredHomelands = Object.entries(CONFIG.WITCHER.homelands || {})
+                    .filter(([v, l]) => allowed.includes(v))
+                    .map(([v, l]) => ({ value: v, label: l }));
+            }
+
             return {
                 step: this.step,
                 maxSteps: this.maxSteps,
@@ -251,7 +267,12 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 races: this.races,
                 professions: filteredProfessions,
                 stats: stats,
-                homelands: Object.entries(CONFIG.WITCHER.homelands || {}).map(([v, l]) => ({ value: v, label: l })),
+                regions: [
+                    { value: "north", label: "Regni Settentrionali" },
+                    { value: "nilfgaard", label: "Nilfgaard" },
+                    { value: "elder", label: "Terre degli Antichi" }
+                ],
+                homelands: filteredHomelands,
                 socialStandings: Object.entries(CONFIG.WITCHER.socialStanding || {}).map(([v, l]) => ({ value: v, label: l })),
                 pointsRemaining: statsRemaining,
                 derived: this._calculateDerivedStats(),
@@ -553,6 +574,15 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
     async _prevStep() { if (this.step > 1) { this.step--; this.render(true); } }
 
 
+    async _updateOriginRegion(event, target) {
+        this.characterData.originRegion = target.value;
+        this.characterData.homeland = "";
+        this.characterData.background.socialStatus = "";
+        this.characterData.background.familyFate = "";
+        this.characterData.background.events = [];
+        this.render(true);
+    }
+
     async _updateHomeland(event, target) { 
         this.characterData.homeland = target.value; 
         this._updateNativeLanguage();
@@ -706,15 +736,54 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         };
     }
 
+    _getOriginCategory() {
+        const raceName = (this.characterData.race?.name || "").toLowerCase();
+        const homeland = (this.characterData.homeland || "").toLowerCase();
+        
+        // Elder Lands (Terre Antiche): non-human races or specific homelands
+        const elderRaces = ["elfi", "nani", "gnomo", "elfo", "nano", "gnomi"];
+        const elderHomelands = ["skellige", "dolblathanna", "mahakam"];
+        
+        if (elderRaces.includes(raceName) || elderHomelands.includes(homeland)) {
+            return "Terre Antiche";
+        }
+        
+        // Nilfgaardian: Nilfgaardian homelands
+        const nilfgaardianHomelands = ["nilfgaard", "vicovaro", "etolia", "gemmeria", "ebbing", "maecht", "mettina", "nazair", "gheso", "magturga"];
+        if (nilfgaardianHomelands.includes(homeland)) {
+            return "Nilfgaardiana";
+        }
+        
+        // Default: Northern Kingdoms (Settentrionale)
+        return "Settentrionale";
+    }
+
     async _rollBackground() {
-        const t = await this._findTable(["Posizione Sociale", "Social Standing", "Rango Sociale"]);
+        const origin = this._getOriginCategory();
+        let tableName = "";
+        let hints = [];
+        if (origin === "Terre Antiche") {
+            tableName = "Situazione Familiare (Terre Antiche)";
+            hints = ["Situazione Familiare (Terre Antiche)", "Situazione Familiare - Terre Antiche", "Terre Antiche"];
+        } else if (origin === "Nilfgaardiana") {
+            tableName = "Situazione Familiare (Nilfgaardiana)";
+            hints = ["Situazione Familiare (Nilfgaardiana)", "Situazione Familiare - Nilfgaardiana", "Nilfgaardiana"];
+        } else {
+            tableName = "Situazione Familiare (Settentrionale)";
+            hints = ["Situazione Familiare (Settentrionale)", "Situazione Familiare - Settentrionale", "Settentrionale"];
+        }
+        
+        // Fallbacks
+        hints.push("Situazione Familiare", "Social Standing", "Posizione Sociale", "Rango Sociale");
+
+        const t = await this._findTable(hints);
         if (t) {
             const r = await t.roll();
             const text = r.results[0]?.text ?? r.results[0]?.getChatText?.() ?? "";
             this.characterData.background.socialStatus = text;
-            ui.notifications.info(`Rango Sociale: ${text}`);
+            ui.notifications.info(`Situazione Familiare: ${text}`);
         } else {
-            ui.notifications.warn("Tabella 'Posizione Sociale' non trovata nel mondo o nei compendi.");
+            ui.notifications.warn(`Tabella '${tableName}' non trovata nel mondo o nei compendi.`);
         }
         this.render(true);
     }

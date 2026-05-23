@@ -1,0 +1,75 @@
+{
+  "_id": "familiarlders000",
+  "name": "Situazione Familiare (Terre Antiche)",
+  "type": "RollTable",
+  "formula": "1d10",
+  "description": "Tabella per la Situazione Familiare con origini Terre Antiche.",
+  "results": [
+    {
+      "range": [1, 1],
+      "weight": 1,
+      "type": 0,
+      "text": "Aristocrazia: cresciuto in un palazzo con il costante ricordo della gloria passata. Dovrebbe onorare la propria stirpe. Equipaggiamento Iniziale: Attestato di Nobiltà (+2 a Reputazione)",
+      "_id": "famelderres00001",
+      "drawn": false
+    },
+    {
+      "range": [2, 2],
+      "weight": 1,
+      "type": 0,
+      "text": "Nobile Guerriero: figlio di un nobile guerriero. Dovrebbe migliorare la reputazione della famiglia e non disonorare il suo retaggio. Equipaggiamento Iniziale: Stemma Personale (+1 a Reputazione)",
+      "_id": "famelderres00002",
+      "drawn": false
+    },
+    {
+      "range": [3, 3],
+      "weight": 1,
+      "type": 0,
+      "text": "Mercanti: cresciuto tra mercanti itineranti. La vita a volte è stata dura, ma i manufatti dei non-umani sono sempre preziosi. Equipaggiamento Iniziale: 2 Conoscenze",
+      "_id": "famelderres00003",
+      "drawn": false
+    },
+    {
+      "range": [4, 4],
+      "weight": 1,
+      "type": 0,
+      "text": "Famiglia di Scribi: cresciuto come figlio di uno scriba, registrando e custodendo la storia dei popoli antichi sperando di salvarla. Equipaggiamento Iniziale: Un Registro (+1 a Istruzione)",
+      "_id": "famelderres00004",
+      "drawn": false
+    },
+    {
+      "range": [5, 5],
+      "weight": 1,
+      "type": 0,
+      "text": "Intrattenitori: cresciuto cantando canzoni e recitando opere teatrali. Ha lavorato dietro le quinte, contribuito a scrivere canzoni e riparato strumenti. Equipaggiamento Iniziale: 1 Strumento Musicale e 1 Amico",
+      "_id": "famelderres00005",
+      "drawn": false
+    },
+    {
+      "range": [6, 7],
+      "weight": 1,
+      "type": 0,
+      "text": "Famiglia di Artigiani: cresciuto in una famiglia di artigiani, visitando antichi palazzi per trovare ispirazione e trascorrendo ore sui propri progetti. Equipaggiamento Iniziale: 3 Schemi/Formule Comuni",
+      "_id": "famelderres00006",
+      "drawn": false
+    },
+    {
+      "range": [8, 10],
+      "weight": 1,
+      "type": 0,
+      "text": "Famiglia Umile: cresciuto in una famiglia di umili natali, badando alle dimore altrui o facendo piccoli lavori nella sua città natale. Equipaggiamento Iniziale: Un Portafortuna (+2 a Fortuna)",
+      "_id": "famelderres00008",
+      "drawn": false
+    }
+  ],
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": "14"
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "img": "icons/skills/social/diplomacy-handshake.webp"
+}

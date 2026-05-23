@@ -702,6 +702,20 @@ form.witcher-wizard .wizard-content {
     padding: 0;
 }
 
+.witcher-wizard .step-background .origin-selection-header {
+    margin-bottom: 12px;
+}
+
+.witcher-wizard .step-background .origin-selectors-row {
+    display: flex;
+    gap: 15px;
+}
+
+.witcher-wizard .step-background .origin-selectors-row .form-group {
+    flex: 1;
+    margin-bottom: 0;
+}
+
 .witcher-wizard .step-background .background-section {
     background: rgba(255, 255, 255, 0.45);
     border: 1px solid var(--wizard-border);
@@ -711,6 +725,36 @@ form.witcher-wizard .wizard-content {
     display: flex;
     flex-direction: column;
     gap: 0;
+}
+
+.witcher-wizard .step-background .origin-lock-message {
+    background: rgba(139, 0, 0, 0.04);
+    border: 1px dashed var(--wizard-border);
+    border-radius: 8px;
+    padding: 30px 20px;
+    text-align: center;
+    color: var(--wizard-text-dark);
+    margin-top: 15px;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.02);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.witcher-wizard .step-background .origin-lock-message i {
+    font-size: 2.2rem;
+    color: var(--wizard-accent);
+    opacity: 0.8;
+}
+
+.witcher-wizard .step-background .origin-lock-message p {
+    font-size: 0.95rem;
+    font-style: italic;
+    line-height: 1.4;
+    max-width: 450px;
+    margin: 0;
+    color: var(--wizard-text-dark) !important;
 }
 
 .witcher-wizard .step-background h3 {

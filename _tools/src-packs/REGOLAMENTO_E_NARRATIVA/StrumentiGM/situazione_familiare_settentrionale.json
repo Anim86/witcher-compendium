@@ -1,0 +1,75 @@
+{
+  "_id": "familiarnorth0000",
+  "name": "Situazione Familiare (Settentrionale)",
+  "type": "RollTable",
+  "formula": "1d10",
+  "description": "Tabella per la Situazione Familiare con origini Settentrionali.",
+  "results": [
+    {
+      "range": [1, 1],
+      "weight": 1,
+      "type": 0,
+      "text": "Aristocrazia: cresciuto in un maniero nobiliare, accudito da servitori, dovrebbe conoscere l’etichetta. Equipaggiamento Iniziale: Attestato di Nobiltà (+2 a Reputazione)",
+      "_id": "famnorthres00001",
+      "drawn": false
+    },
+    {
+      "range": [2, 2],
+      "weight": 1,
+      "type": 0,
+      "text": "Adottato da un Mago: ceduto da giovane a un mago. Ha vissuto agiatamente, vedendo di rado il suo occupato tutore. Equipaggiamento Iniziale: Un Registro (+1 a Istruzione)",
+      "_id": "famnorthres00002",
+      "drawn": false
+    },
+    {
+      "range": [3, 3],
+      "weight": 1,
+      "type": 0,
+      "text": "Cavalieri: cresciuto in un maniero, ha imparato l’etichetta. Il suo destino è stato segnato dalla nascita. Equipaggiamento Iniziale: Stemma Personale (+1 a Reputazione)",
+      "_id": "famnorthres00003",
+      "drawn": false
+    },
+    {
+      "range": [4, 4],
+      "weight": 1,
+      "type": 0,
+      "text": "Famiglia di Mercanti: cresciuto tra i mercanti, sempre circondato da urla, contrattazioni e denaro. Equipaggiamento Iniziale: 2 Conoscenze",
+      "_id": "famnorthres00004",
+      "drawn": false
+    },
+    {
+      "range": [5, 5],
+      "weight": 1,
+      "type": 0,
+      "text": "Famiglia di Artigiani: cresciuto nel laboratorio di un artigiano, le sue lunghe giornate sono scandite dall’incessante suono del lavoro. Equipaggiamento Iniziale: 3 Schemi/Formule Comuni",
+      "_id": "famnorthres00005",
+      "drawn": false
+    },
+    {
+      "range": [6, 7],
+      "weight": 1,
+      "type": 0,
+      "text": "Famiglia di Intrattenitori: cresciuto in una troupe di artisti. Può avere viaggiato molto oppure essersi esibito in un teatro. Equipaggiamento Iniziale: 1 Strumento Musicale e 1 Amico",
+      "_id": "famnorthres00006",
+      "drawn": false
+    },
+    {
+      "range": [8, 10],
+      "weight": 1,
+      "type": 0,
+      "text": "Famiglia Contadina: cresciuto in una fattoria di campagna. Non ha mai posseduto granché, la sua è stata una vita semplice, ma pericolosa. Equipaggiamento Iniziale: Un Portafortuna (+2 a Fortuna)",
+      "_id": "famnorthres00008",
+      "drawn": false
+    }
+  ],
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": "14"
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "img": "icons/skills/social/diplomacy-handshake.webp"
+}
