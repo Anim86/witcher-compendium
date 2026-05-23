@@ -53,6 +53,14 @@
                                 <i class="fa-solid fa-dice-d10"></i>
                             </button>
                         </div>
+                        {{#if socialStatusOptions.length}}
+                        <select name="background.socialStatus" data-action="updateBackground" class="manual-select">
+                            <option value="">— Oppure scegli dalla lista —</option>
+                            {{#each socialStatusOptions}}
+                            <option value="{{this}}" {{#if (eq ../character.background.socialStatus this)}}selected{{/if}}>{{this}}</option>
+                            {{/each}}
+                        </select>
+                        {{/if}}
                     </div>
 
                     <div class="form-group">
@@ -87,6 +95,14 @@
                                 <i class="fa-solid fa-dice-d10"></i>
                             </button>
                         </div>
+                        {{#if familyFateOptions.length}}
+                        <select name="background.familyFate" data-action="updateBackground" class="manual-select">
+                            <option value="">— Oppure scegli dalla lista —</option>
+                            {{#each familyFateOptions}}
+                            <option value="{{this}}" {{#if (eq ../character.background.familyFate this)}}selected{{/if}}>{{this}}</option>
+                            {{/each}}
+                        </select>
+                        {{/if}}
                     </div>
                     {{/if}}
 

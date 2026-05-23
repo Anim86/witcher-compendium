@@ -187,6 +187,7 @@ Il nome del file deve essere generato tramite la funzione `slugify` (definita in
 > [!IMPORTANT]
 > **INTEGRITÀ DEI DATI E DI _ID**:
 > - **Niente _id duplicati**: Ogni entità sorgente JSON deve avere un ID unico a 16 caratteri esadecimali. ID duplicati (come avvenuto per `Endriaghe (Lavoratore)` ed `Endriaghe (Guerriero)`) portano a collisioni in compilazione in cui una delle due entità sovrascrive l'altra.
+> - **Regole ID Compendi (Strettamente Alphanumeric & 16 caratteri)**: Tutti gli ID a livello radice dei documenti nei compendi (RollTable, Item, Actor, ecc.) devono essere di **esattamente 16 caratteri** e composti **esclusivamente da caratteri alfanumerici (`[a-zA-Z0-9]`)**. Non utilizzare mai spazi, trattini o trattini bassi/underscore (`_`). ID con lunghezza errata o caratteri non ammessi faranno fallire la validazione interna di Foundry VTT v12+, forzando la migrazione del record a ID `null` e creando voci duplicate corrotte ("ghost entries") non apribili nell'interfaccia.
 > - **ID per Oggetti Incorporati**: Assicurarsi che gli oggetti dell'inventario o gli effetti all'interno di un attore abbiano sempre un proprio `_id` definito nel JSON. Se manca, lo script genererà un ID casuale runtime, ma averlo statico previene disallineamenti o problemi di stabilità.
 > - **Tipo di Dati Coerente**: Prestare attenzione a campi legacy come `effects` che a volte presentano il valore `0` (numero) invece del corretto array vuoto `[]`.
 

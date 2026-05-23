@@ -262,7 +262,57 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                     .map(([v, l]) => ({ value: v, label: l }));
             }
 
+            // Cache regional lists when region changes
+            const currentOrigin = this._getOriginCategory();
+            const hasRegion = !!this.characterData.originRegion;
+            if (this._cachedOrigin !== currentOrigin || this._cachedHasRegion !== hasRegion || !this.socialStatusOptions) {
+                this._cachedOrigin = currentOrigin;
+                this._cachedHasRegion = hasRegion;
+                this.socialStatusOptions = [];
+                this.familyFateOptions = [];
+
+                if (hasRegion) {
+                    // Load Situazione Familiare options
+                    let socialHints = [];
+                    if (currentOrigin === "Terre Antiche") {
+                        socialHints = ["Situazione Familiare (Terre Antiche)", "Situazione Familiare - Terre Antiche", "Terre Antiche"];
+                    } else if (currentOrigin === "Nilfgaardiana") {
+                        socialHints = ["Situazione Familiare (Nilfgaardiana)", "Situazione Familiare - Nilfgaardiana", "Nilfgaardiana"];
+                    } else {
+                        socialHints = ["Situazione Familiare (Settentrionale)", "Situazione Familiare - Settentrionale", "Settentrionale"];
+                    }
+                    socialHints.push("Situazione Familiare", "Social Standing", "Posizione Sociale", "Rango Sociale");
+
+                    const socialTable = await this._findTable(socialHints);
+                    if (socialTable) {
+                        this.socialStatusOptions = socialTable.results
+                            .map(r => r.text || r.getChatText?.() || "")
+                            .filter(Boolean);
+                    }
+
+                    // Load Destino della Famiglia options
+                    let fateHints = [];
+                    if (currentOrigin === "Terre Antiche") {
+                        fateHints = ["Destino della Famiglia (Terre Antiche)", "Destino della Famiglia - Terre Antiche", "Terre Antiche"];
+                    } else if (currentOrigin === "Nilfgaardiana") {
+                        fateHints = ["Destino della Famiglia (Nilfgaardiana)", "Destino della Famiglia - Nilfgaardiana", "Nilfgaardiana"];
+                    } else {
+                        fateHints = ["Destino della Famiglia (Settentrionale)", "Destino della Famiglia - Settentrionale", "Settentrionale"];
+                    }
+                    fateHints.push("Destino della Famiglia", "Destino Familiare", "Family Fate", "Family Background");
+
+                    const fateTable = await this._findTable(fateHints);
+                    if (fateTable) {
+                        this.familyFateOptions = fateTable.results
+                            .map(r => r.text || r.getChatText?.() || "")
+                            .filter(Boolean);
+                    }
+                }
+            }
+
             return {
+                socialStatusOptions: this.socialStatusOptions || [],
+                familyFateOptions: this.familyFateOptions || [],
                 step: this.step,
                 maxSteps: this.maxSteps,
                 steps: this._getStepList(),
@@ -843,6 +893,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
 
         if (name === "background.socialStatus") {
             this.characterData.background.socialStatus = value;
+            if (target.tagName === "SELECT") needsRender = true;
         } else if (name === "background.familyState") {
             this.characterData.background.familyState = value;
             needsRender = true;
@@ -853,6 +904,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             }
         } else if (name === "background.familyFate") {
             this.characterData.background.familyFate = value;
+            if (target.tagName === "SELECT") needsRender = true;
         } else if (name === "background.parentsState") {
             this.characterData.background.parentsState = value;
             needsRender = true;
