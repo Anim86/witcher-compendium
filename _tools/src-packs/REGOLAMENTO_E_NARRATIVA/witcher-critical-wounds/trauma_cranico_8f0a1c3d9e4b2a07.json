@@ -3,7 +3,7 @@
     "type": "criticalWound",
     "system": {
         "severity": "difficult",
-        "description": "<p>Una grave frattura con infossamento colpisce il cranio.</p><p><b>Uscita:</b> La vittima è priva di sensi. Se si sveglia, subisce -4 INT e RIF.</p><p><b>Stabilizzato:</b> La vittima subisce -2 INT e RIF.</p><p><b>Curato:</b> La vittima subisce -1 INT permanentemente.</p>",
+        "description": "<p>Una grave frattura con infossamento colpisce il cranio.</p><p><b>Danno Extra:</b> +8 Danni alla testa.</p><p><b>Uscita:</b> La vittima subisce un malus di -3 a INT, VOL ed EMP.</p><p><b>Stabilizzato:</b> Il malus scende a -2 a INT, VOL ed EMP.</p><p><b>Curato:</b> La vittima subisce un malus permanente di -1 a INT.</p>",
         "sourcebook": "MB 160"
     },
     "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/witcher-critical-wounds/trauma_cranico.webp",

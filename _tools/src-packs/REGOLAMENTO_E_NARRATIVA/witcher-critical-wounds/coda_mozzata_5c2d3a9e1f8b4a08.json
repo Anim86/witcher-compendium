@@ -3,7 +3,7 @@
     "type": "criticalWound",
     "system": {
         "severity": "complex",
-        "description": "<p>La coda del mostro è stata tranciata di netto.</p><p><b>Uscita:</b> Il mostro perde qualsiasi attacco con la coda e subisce sanguinamento. -2 alla stabilità.</p><p><b>Stabilizzato:</b> Il mostro non sanguina più ma non ha attacchi con la coda.</p><p><b>Curato:</b> La coda non ricresce.</p>",
+        "description": "<p>La coda del mostro è stata tranciata di netto.</p><p><b>Danno Extra:</b> +5 Danni alla coda.</p><p><b>Uscita:</b> Il mostro perde qualsiasi attacco basato sulla coda e perde l'equilibrio: subisce un malus di -2 alle prove di Schivare/Fuggire e Atletica.</p><p><b>Stabilizzato:</b> Il malus a Schivare/Fuggire e Atletica scende a -1.</p><p><b>Curato:</b> La coda non ricresce, ma il mostro ritrova l'equilibrio (nessun malus alle prove, ma gli attacchi con la coda sono persi permanentemente).</p>",
         "sourcebook": "MB 161"
     },
     "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/witcher-critical-wounds/coda_mozzata.webp",

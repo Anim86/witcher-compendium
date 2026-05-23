@@ -3,7 +3,7 @@
     "type": "criticalWound",
     "system": {
         "severity": "deadly",
-        "description": "<p>Un arto è stato violentemente reciso dal corpo.</p><p><b>Uscita:</b> La vittima perde l'uso dell'arto e subisce sanguinamento mortale. -4 alle azioni.</p><p><b>Stabilizzato:</b> La vittima subisce -3 alle azioni.</p><p><b>Curato:</b> L'arto è perduto a meno di protesi o magia.</p>",
+        "description": "<p>Un arto è stato violentemente reciso dal corpo.</p><p><b>Danno Extra:</b> +10 Danni alla locazione (Braccio / Gamba).</p><p><b>Uscita:</b> L'arto viene rimosso. La vittima subisce Sanguinamento (5 Danni/round) e subisce un permanente -3 a tutte le azioni associate a quel lato del corpo (se è una gamba, la sua VEL si dimezza).</p><p><b>Stabilizzato:</b> Il sanguinamento cessa, ma permane il malus permanente di -3 alle azioni (e VEL dimezzata se gamba).</p><p><b>Curato:</b> L'arto non ricresce. I malus sono permanenti.</p>",
         "sourcebook": "MB 161"
     },
     "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/witcher-critical-wounds/amputazione.webp",

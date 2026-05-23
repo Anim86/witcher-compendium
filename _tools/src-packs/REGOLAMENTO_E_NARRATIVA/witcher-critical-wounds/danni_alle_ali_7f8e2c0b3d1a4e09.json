@@ -3,7 +3,7 @@
     "type": "criticalWound",
     "system": {
         "severity": "complex",
-        "description": "<p>L'ala della creatura è stata strappata o perforata.</p><p><b>Uscita:</b> Il mostro non può volare e subisce -3 VEL.</p><p><b>Stabilizzato:</b> Il mostro non può volare e subisce -2 VEL.</p><p><b>Curato:</b> L'ala guarisce ma lascia ampie cicatrici.</p>",
+        "description": "<p>L'ala della creatura è stata strappata o perforata.</p><p><b>Danno Extra:</b> +5 Danni all'ala.</p><p><b>Uscita:</b> Il mostro perde la capacità di volare. Se si trovava in aria al momento del colpo, precipita subendo danni da caduta.</p><p><b>Stabilizzato:</b> Il mostro rimane a terra stabile ma impossibilitato a volare.</p><p><b>Curato:</b> L'ala guarisce completamente, ripristinando la capacità di volare.</p>",
         "sourcebook": "MB 160"
     },
     "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/witcher-critical-wounds/danni_alle_ali.webp",

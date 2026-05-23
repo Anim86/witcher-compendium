@@ -3,7 +3,7 @@
     "type": "criticalWound",
     "system": {
         "severity": "complex",
-        "description": "<p>Un forte impatto alla testa ha causato una commozione cerebrale.</p><p><b>Uscita:</b> La vittima subisce -3 alle prove basate su INT e RIF e non può lanciare incantesimi.</p><p><b>Stabilizzato:</b> La vittima subisce -2 alle prove basate su INT e RIF.</p><p><b>Curato:</b> La vittima subisce -1 a INT e RIF per 1D10 giorni.</p>",
+        "description": "<p>Un forte impatto alla testa ha causato una commozione cerebrale.</p><p><b>Danno Extra:</b> +5 Danni alla testa.</p><p><b>Uscita:</b> La vittima subisce un malus di -2 a INT, VOL ed EMP.</p><p><b>Stabilizzato:</b> Il malus scende a -1 a INT, VOL ed EMP.</p><p><b>Curato:</b> Nessun malus.</p>",
         "sourcebook": "MB 160"
     },
     "img": "modules/witcher-compendium/assets/REGOLAMENTO_E_NARRATIVA/witcher-critical-wounds/commozione_cerebrale.webp",
