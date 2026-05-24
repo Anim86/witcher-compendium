@@ -339,20 +339,28 @@ export default class WitcherItem extends Item {
      */
     async checkIfItemHasRollTable(newQuantity) {
         // search for the compendium pack in the world roll tables by name of the generator
-        const compendiumPack = game.packs
-            .filter(p => p.metadata.type === 'RollTable')
-            .filter(c => c.index.find(r => r.name === this.name));
+        const rollTablePacks = game.packs.filter(p => p.documentName === 'RollTable' || p.metadata.type === 'RollTable' || p.metadata.documentName === 'RollTable');
+        let compendiumPack = null;
+        let tableId = null;
 
-        if (!compendiumPack || compendiumPack.length == 0) {
+        for (const pack of rollTablePacks) {
+            const index = pack.index.size > 0 ? pack.index : await pack.getIndex();
+            const entry = index.find(r => r.name === this.name);
+            if (entry) {
+                compendiumPack = pack;
+                tableId = entry._id;
+                break;
+            }
+        }
+
+        if (!compendiumPack) {
             // Provided item does not have associated roll table
             // this item should appear in loot sheet as is
             return false;
-        } else if (compendiumPack.length == 1) {
-            // get id of the needed table generator in the compendium pack
-            const tableId = compendiumPack[0].index.getName(this.name)._id;
+        }
 
-            for (let i = 0; i < newQuantity; i++) {
-                let roll = await compendiumPack[0].getDocument(tableId).then(el => el.roll());
+        for (let i = 0; i < newQuantity; i++) {
+            let roll = await compendiumPack.getDocument(tableId).then(el => el.roll());
                 let res = roll.results[0];
                 let pack = game.packs.get(res.documentCollection);
                 await pack?.getIndex();
@@ -392,9 +400,6 @@ export default class WitcherItem extends Item {
             await this.actor.items.get(this.id).delete();
 
             return true;
-        } else {
-            return ui.notifications.error(`${game.i18n.localize('WITCHER.Monster.exportLootToManyRollTablesError')}`);
-        }
     }
 
     /* -------------------------------------------- */

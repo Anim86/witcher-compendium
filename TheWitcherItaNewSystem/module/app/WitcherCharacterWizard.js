@@ -15,7 +15,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         
         // Character Data
         this.characterData = {
-            name: "",
+            name: this._getRandomFantasyName("umano"),
             race: null,
             originRegion: "",
             homeland: "",
@@ -84,10 +84,12 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         selectRace: function(event, target) { this._selectRace(event, target); },
         selectProfession: function(event, target) { this._selectProfession(event, target); },
         adjustStat: function(event, target) { this._adjustStat(event, target); },
+        rollStats: function(event, target) { this._rollStats(event, target); },
         adjustSkill: function(event, target) { this._adjustSkill(event, target); },
         updateAge: function(event, target) { this._updateAge(event, target); },
         updateName: function(event, target) { this._updateName(event, target); },
         rollAge: function(event, target) { this._rollAge(event, target); },
+        rollName: function(event, target) { this._rollName(event, target); },
         updateMoney: function(event, target) { this._updateMoney(event, target); },
         updateOriginRegion: function(event, target) { this._updateOriginRegion(event, target); },
         updateHomeland: function(event, target) { this._updateHomeland(event, target); },
@@ -224,11 +226,17 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
 
             const statsTotal = Object.values(this.characterData.stats).reduce((a, b) => a + Number(b), 0);
             const statsRemaining = 60 - statsTotal;
+            const statsRemainingPct = Math.max(0, Math.min(100, (statsRemaining / 33) * 100));
 
             const stats = {};
             for (const [key, statDef] of Object.entries(CONFIG.WITCHER.statMap)) {
-                if (statDef.origin === "stats") {
-                    stats[key] = { label: statDef.labelShort || statDef.label, value: this.characterData.stats[key] || 0 };
+                if (statDef.origin === "stats" && key !== "toxicity") {
+                    const capKey = key.charAt(0).toUpperCase() + key.slice(1);
+                    stats[key] = {
+                        label: `WITCHER.St${capKey}`,
+                        labelShort: statDef.labelShort,
+                        value: this.characterData.stats[key] || 0
+                    };
                 }
             }
 
@@ -291,7 +299,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                     const socialTable = await this._findTable(socialHints);
                     if (socialTable) {
                         this.socialStatusOptions = socialTable.results
-                            .map(r => r.name || r.text || r.getChatText?.() || "")
+                            .map(r => r.name || r.description || r._source?.text || r._source?.description || "")
                             .filter(Boolean);
                     }
 
@@ -309,7 +317,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                     const fateTable = await this._findTable(fateHints);
                     if (fateTable) {
                         this.familyFateOptions = fateTable.results
-                            .map(r => r.name || r.text || r.getChatText?.() || "")
+                            .map(r => r.name || r.description || r._source?.text || r._source?.description || "")
                             .filter(Boolean);
                     }
 
@@ -327,7 +335,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                     const parentsFateTable = await this._findTable(parentsFateHints);
                     if (parentsFateTable) {
                         this.parentsFateOptions = parentsFateTable.results
-                            .map(r => r.name || r.text || r.getChatText?.() || "")
+                            .map(r => r.name || r.description || r._source?.text || r._source?.description || "")
                             .filter(Boolean);
                     }
                 }
@@ -335,7 +343,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
 
             const ageLimits = this._getAgeLimits();
             if (!this.characterData.age) {
-                this.characterData.age = ageLimits.min;
+                this.characterData.age = Math.floor(Math.random() * (ageLimits.max - ageLimits.min + 1)) + ageLimits.min;
             } else {
                 if (this.characterData.age < ageLimits.min) this.characterData.age = ageLimits.min;
                 if (this.characterData.age > ageLimits.max) this.characterData.age = ageLimits.max;
@@ -361,6 +369,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 homelands: filteredHomelands,
                 socialStandings: Object.entries(CONFIG.WITCHER.socialStanding || {}).map(([v, l]) => ({ value: v, label: l })),
                 pointsRemaining: statsRemaining,
+                pointsRemainingPct: statsRemainingPct,
                 derived: this._calculateDerivedStats(),
                 professionSkills: this._getProfessionSkills(),
                 pickupSkills: this._getPickupSkills(),
@@ -436,6 +445,8 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
     _getProfessionSkills() {
         const names = this._getProfessionSkillNames();
         const result = [];
+        console.log("TheWitcherItaNewSystem | _getProfessionSkills | Names to find:", names);
+        console.log("TheWitcherItaNewSystem | _getProfessionSkills | Total skills in allSkills:", this.allSkills.length);
         for (const name of names) {
             const skill = this.allSkills.find(s => s.name.toLowerCase() === name.toLowerCase());
             if (skill) {
@@ -452,8 +463,11 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 if (this.characterData.skills[skill._id] === undefined) {
                     this.characterData.skills[skill._id] = 1;
                 }
+            } else {
+                console.warn(`TheWitcherItaNewSystem | _getProfessionSkills | Skill not found in allSkills: "${name}"`);
             }
         }
+        console.log("TheWitcherItaNewSystem | _getProfessionSkills | Found starting skills count:", result.length);
         return result;
     }
 
@@ -714,9 +728,56 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         const limits = this._getAgeLimits();
         const rolledAge = Math.floor(Math.random() * (limits.max - limits.min + 1)) + limits.min;
         this.characterData.age = rolledAge;
-        ui.notifications.info(`Età generata casualmente: ${rolledAge} anni (limiti per la razza: ${limits.min}-${limits.max})`);
         this.render(true);
     }
+
+    _getRandomFantasyName(raceName = "") {
+        const lowerRace = raceName.toLowerCase();
+
+        const humanFirst = ["Geralt", "Julian", "Caleb", "Olgierd", "Sigismund", "Radovid", "Foltest", "Emhyr", "Leo", "Vilgefortz", "Cahir", "Valdo", "Yennefer", "Triss", "Keira", "Philippa", "Shani", "Calanthe", "Meve", "Anna", "Syanna", "Renfri", "Milva", "Lytta", "Fringilla", "Sabrina", "Vesemir", "Lambert", "Eskel", "Coën", "Cedric", "Dolan", "Letho", "Serrit", "Auckes"];
+        const humanLast = ["di Rivia", "di Maribor", "di Vengerberg", "di Ellander", "di Cintra", "di Oxenfurt", "di Vizima", "di Novigrad", "di Tretogor", "di Lan Exeter", "di Beauclair", "di Gors Velen", "di Aldersberg", "di Guleta", "di Ban Ard", "di Aretuza"];
+
+        const elfFirst = ["Yaevinn", "Iorveth", "Toruviel", "Francesca", "Filavandrel", "Crevan", "Ida", "Eredin", "Auberon", "Avallac'h", "Aelirenn", "Lara", "Shiadhal", "Galarr", "Ciaran", "Aegar", "Riordain", "Gwynbleidd", "Isengrim", "Chireadan", "Eithné", "Morenn", "Mousesack", "Faoiltiarna"];
+        const elfLast = ["aep Dahy", "findabair", "en Craite", "aep Cellach", "aep Muirloe", "aep Gwydion", "aep Llwyd", "aep Gwyn", "aep Rhiannon"];
+
+        const dwarfFirst = ["Yarpen", "Zoltan", "Barclay", "Dennis", "Sheldon", "Figgis", "Munro", "Brouver", "Eudora", "Golan", "Vimme", "Barnaby", "Beck", "Rudolf", "Gaspard", "Paulie", "Reginald"];
+        const dwarfLast = ["Chivay", "Zigrin", "Els", "Cranmer", "Cleaver", "Vivaldi", "Hoog", "Dahlberg", "Giancardi", "Figgis", "Borok", "Groz", "Kov"];
+
+        const gnomeFirst = ["Percival", "Schuttenbach", "Barnaby", "Beckenbauer", "Golyat", "Reginald", "Bremervoord", "Aaron", "Gedymin", "Kalkstein", "Pinety"];
+        const vranFirst = ["Karrg", "Varkk", "Sssral", "Zzash", "Grek", "Grzz", "Vrrx", "Krrs", "Hsssk", "Tzass"];
+
+        let firstList = humanFirst;
+        let lastList = humanLast;
+
+        if (lowerRace.includes("elfo") || lowerRace.includes("elfi") || lowerRace.includes("elf")) {
+            firstList = elfFirst;
+            lastList = elfLast;
+        } else if (lowerRace.includes("nano") || lowerRace.includes("nani") || lowerRace.includes("dwarf")) {
+            firstList = dwarfFirst;
+            lastList = dwarfLast;
+        } else if (lowerRace.includes("gnomo") || lowerRace.includes("gnomi") || lowerRace.includes("gnome")) {
+            firstList = gnomeFirst;
+            lastList = [];
+        } else if (lowerRace.includes("vran") || lowerRace.includes("bobolak")) {
+            firstList = vranFirst;
+            lastList = [];
+        } else if (lowerRace.includes("witcher")) {
+            firstList = ["Geralt", "Vesemir", "Lambert", "Eskel", "Coën", "Brehen", "Gaetan", "Kiyan", "Erland", "Ivar", "Treyse", "Warin", "Keldar", "Barmin", "Reinald"];
+            lastList = ["della Scuola del Lupo", "della Scuola del Gatto", "della Scuola della Vipera", "della Scuola del Grifone", "della Scuola dell'Orso", "della Scuola della Manticora"];
+        }
+
+        const first = firstList[Math.floor(Math.random() * firstList.length)];
+        const last = lastList.length > 0 ? " " + lastList[Math.floor(Math.random() * lastList.length)] : "";
+        return `${first}${last}`;
+    }
+
+    async _rollName() {
+        const raceName = this.characterData.race?.name || "umano";
+        const rolledName = this._getRandomFantasyName(raceName);
+        this.characterData.name = rolledName;
+        this.render(true);
+    }
+
     async _updateMoney(event, target) { this.characterData.money = parseInt(target.value); this.render(true); }
     async _goToStep(event, target) { this.step = parseInt(target.dataset.step); this.render(true); }
     
@@ -750,6 +811,9 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         if (race) { 
             this.characterData.race = race; 
             this._updateNativeLanguage();
+            const limits = this._getAgeLimits();
+            this.characterData.age = Math.floor(Math.random() * (limits.max - limits.min + 1)) + limits.min;
+            this.characterData.name = this._getRandomFantasyName(race.name);
             this.render(true); 
         }
     }
@@ -822,6 +886,22 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         val = Math.max(1, Math.min(10, val));
         const total = Object.values(this.characterData.stats).reduce((a, b) => a + b, 0) - (this.characterData.stats[stat] || 0) + val;
         if (total <= 60) { this.characterData.stats[stat] = val; this.render(true); }
+    }
+
+    _rollStats(event, target) {
+        const statsKeys = ["int", "ref", "dex", "body", "spd", "emp", "cra", "will", "luck"];
+        let total = Object.values(this.characterData.stats).reduce((a, b) => a + Number(b), 0);
+        let remaining = 60 - total;
+        if (remaining <= 0) return;
+
+        while (remaining > 0) {
+            const eligible = statsKeys.filter(k => (this.characterData.stats[k] || 0) < 10);
+            if (eligible.length === 0) break;
+            const randomKey = eligible[Math.floor(Math.random() * eligible.length)];
+            this.characterData.stats[randomKey] = (this.characterData.stats[randomKey] || 0) + 1;
+            remaining--;
+        }
+        this.render(true);
     }
 
     _adjustSkill(event, target) {
@@ -906,10 +986,8 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
 
         const t = await this._findTable(hints);
         if (t) {
-            const r = await t.roll();
-            const text = r.results[0]?.name ?? r.results[0]?.text ?? r.results[0]?.getChatText?.() ?? "";
+            const text = await this._rollTable(t);
             this.characterData.background.socialStatus = text;
-            ui.notifications.info(`Situazione Familiare: ${text}`);
         } else {
             ui.notifications.warn(`Tabella '${tableName}' non trovata nel mondo o nei compendi.`);
         }
@@ -936,10 +1014,8 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
 
         const t = await this._findTable(hints);
         if (t) {
-            const r = await t.roll();
-            const text = r.results[0]?.name ?? r.results[0]?.text ?? r.results[0]?.getChatText?.() ?? "";
+            const text = await this._rollTable(t);
             this.characterData.background.familyFate = text;
-            ui.notifications.info(`Destino Familiare: ${text}`);
         } else {
             ui.notifications.warn(`Tabella '${tableName}' non trovata nel mondo o nei compendi.`);
         }
@@ -966,10 +1042,8 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
 
         const t = await this._findTable(hints);
         if (t) {
-            const r = await t.roll();
-            const text = r.results[0]?.name ?? r.results[0]?.text ?? r.results[0]?.getChatText?.() ?? "";
+            const text = await this._rollTable(t);
             this.characterData.background.parentsFate = text;
-            ui.notifications.info(`Sorte dei Genitori: ${text}`);
         } else {
             ui.notifications.warn(`Tabella '${tableName}' non trovata nel mondo o nei compendi.`);
         }
@@ -1003,8 +1077,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             const table = await this._findTable([subTableName]);
             
             if (table) {
-                const r = await table.roll();
-                const text = r.results[0]?.name ?? r.results[0]?.text ?? r.results[0]?.getChatText?.() ?? "";
+                const text = await this._rollTable(table);
                 eventText = `<strong>Fortuna o Sfortuna: ${subTableName}</strong> ➔ ${text}`;
             } else {
                 ui.notifications.warn(`Tabella '${subTableName}' non trovata nel mondo o nei compendi.`);
@@ -1018,8 +1091,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             const table = await this._findTable([subTableName]);
             
             if (table) {
-                const r = await table.roll();
-                const text = r.results[0]?.name ?? r.results[0]?.text ?? r.results[0]?.getChatText?.() ?? "";
+                const text = await this._rollTable(table);
                 eventText = `<strong>Alleati o Nemici: ${isEven ? "Alleato" : "Nemico"}</strong> ➔ ${text}`;
             } else {
                 ui.notifications.warn(`Tabella '${subTableName}' non trovata nel mondo o nei compendi.`);
@@ -1046,8 +1118,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             if (subTableToRoll) {
                 const table = await this._findTable([subTableToRoll]);
                 if (table) {
-                    const r = await table.roll();
-                    const text = r.results[0]?.name ?? r.results[0]?.text ?? r.results[0]?.getChatText?.() ?? "";
+                    const text = await this._rollTable(table);
                     eventText = `<strong>Relazione Amorosa: ${romanceOutcome}</strong> ➔ ${text}`;
                 } else {
                     ui.notifications.warn(`Tabella '${subTableToRoll}' non trovata nel mondo o nei compendi.`);
@@ -1059,7 +1130,6 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         }
 
         existing.push({ age: nextAge, text: eventText });
-        ui.notifications.info(`Nuovo evento registrato all'età di ${nextAge} anni.`);
         this.render(true);
     }
 
@@ -1201,46 +1271,102 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         this.render(true);
     }
 
+    _hasResults(t) {
+        if (!t) return false;
+        const r = t.results;
+        if (!r) return false;
+        if (typeof r.size === "number") return r.size > 0;
+        if (typeof r.length === "number") return r.length > 0;
+        return true;
+    }
+
     async _findTable(hints) {
+        console.log("TheWitcherItaNewSystem | _findTable | Searching for table with hints:", hints);
         const lowerHints = hints.map(h => h.toLowerCase());
 
         // 1. Search world tables for exact match
         for (const lh of lowerHints) {
-            const t = game.tables.find(t => t.name.toLowerCase() === lh && t.results?.size > 0);
-            if (t) return t;
+            const t = game.tables.find(t => t.name && t.name.toLowerCase() === lh && this._hasResults(t));
+            if (t) {
+                console.log("TheWitcherItaNewSystem | _findTable | Found exact match in world tables:", t.name);
+                return t;
+            }
         }
 
         // 2. Search registered compendium packs of type RollTable for exact match
-        const rollTablePacks = game.packs.filter(p => p.metadata.type === "RollTable");
+        const rollTablePacks = game.packs.filter(p => p.documentName === "RollTable" || p.metadata.type === "RollTable" || p.metadata.documentName === "RollTable");
+        console.log("TheWitcherItaNewSystem | _findTable | Found RollTable packs:", rollTablePacks.map(p => p.collection || p.metadata.id));
         for (const pack of rollTablePacks) {
             const index = pack.index.size > 0 ? pack.index : await pack.getIndex();
             for (const lh of lowerHints) {
-                const entry = index.find(e => e.name.toLowerCase() === lh);
+                const entry = index.find(e => e.name && e.name.toLowerCase() === lh);
                 if (entry) {
+                    console.log(`TheWitcherItaNewSystem | _findTable | Found exact entry in pack ${pack.collection}:`, entry.name);
                     const doc = await pack.getDocument(entry._id);
-                    if (doc && doc.results?.size > 0) return doc;
+                    if (doc) {
+                        const hasResults = this._hasResults(doc);
+                        console.log(`TheWitcherItaNewSystem | _findTable | Loaded document: ${doc.name}, hasResults: ${hasResults}, results:`, doc.results);
+                        if (hasResults) return doc;
+                    }
                 }
             }
         }
 
         // 3. Search world tables for fuzzy match (includes)
         for (const lh of lowerHints) {
-            const t = game.tables.find(t => t.name.toLowerCase().includes(lh) && t.results?.size > 0);
-            if (t) return t;
+            const t = game.tables.find(t => t.name && t.name.toLowerCase().includes(lh) && this._hasResults(t));
+            if (t) {
+                console.log("TheWitcherItaNewSystem | _findTable | Found fuzzy match in world tables:", t.name);
+                return t;
+            }
         }
 
         // 4. Search registered compendium packs of type RollTable for fuzzy match (includes)
         for (const pack of rollTablePacks) {
             const index = pack.index.size > 0 ? pack.index : await pack.getIndex();
             for (const lh of lowerHints) {
-                const entry = index.find(e => e.name.toLowerCase().includes(lh));
+                const entry = index.find(e => e.name && e.name.toLowerCase().includes(lh));
                 if (entry) {
+                    console.log(`TheWitcherItaNewSystem | _findTable | Found fuzzy entry in pack ${pack.collection}:`, entry.name);
                     const doc = await pack.getDocument(entry._id);
-                    if (doc && doc.results?.size > 0) return doc;
+                    if (doc) {
+                        const hasResults = this._hasResults(doc);
+                        console.log(`TheWitcherItaNewSystem | _findTable | Loaded fuzzy document: ${doc.name}, hasResults: ${hasResults}, results:`, doc.results);
+                        if (hasResults) return doc;
+                    }
                 }
             }
         }
+        console.warn("TheWitcherItaNewSystem | _findTable | Table not found with hints:", hints);
         return null;
+    }
+
+    async _rollTable(t) {
+        if (!t) return "";
+        try {
+            const r = await t.roll({ displayChat: false });
+            if (!r || !r.results || r.results.length === 0) {
+                throw new Error("Empty results from native roll");
+            }
+            const text = r.results[0]?.name || r.results[0]?.description || r.results[0]?._source?.text || r.results[0]?._source?.description || "";
+            if (!text) {
+                throw new Error("Empty text resolved from native roll results");
+            }
+            return text;
+        } catch (err) {
+            console.warn("TheWitcherItaNewSystem | Error rolling table, using fallback:", err);
+            // Fallback manual roll
+            const formula = t.formula || "1d10";
+            const roll = new Roll(formula);
+            await roll.evaluate();
+            const total = roll.total;
+            const res = t.results.find(r => {
+                const range = r.range;
+                if (!Array.isArray(range) || range.length < 2) return false;
+                return total >= range[0] && total <= range[1];
+            });
+            return res?.name || res?.description || res?._source?.text || res?._source?.description || "";
+        }
     }
 
     _selectAvatar() { 

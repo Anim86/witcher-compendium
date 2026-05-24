@@ -167,7 +167,7 @@ export let itemMixin = {
 
         // If specific pack not found, try to find any pack containing this item type
         if (!pack) {
-            pack = game.packs.find(p => p.metadata.type === "Item" && !p.metadata.name.includes("skill"));
+            pack = game.packs.find(p => (p.documentName === "Item" || p.metadata.type === "Item" || p.metadata.documentName === "Item") && !p.metadata.name.includes("skill"));
         }
 
         if (!pack) return ui.notifications.error(`Compendio per ${typeLabel} non trovato.`);
@@ -221,7 +221,7 @@ export let itemMixin = {
         }
 
         // Also search in all other Item packs to gather all matching items (e.g., witcher-special or homebrew packs)
-        for (const p of game.packs.filter(p => p.metadata.type === "Item" && p !== pack)) {
+        for (const p of game.packs.filter(p => (p.documentName === "Item" || p.metadata.type === "Item" || p.metadata.documentName === "Item") && p !== pack)) {
             const idx = await p.getIndex({fields: ["img", "name", "type", "system.class", "system.level"]});
             const matches = idx.filter(filterFunc);
             for (const match of matches) {

@@ -26,19 +26,30 @@
                 </div>
                 <div class="detail-body">
                     <div class="detail-description">
-                        {{#if character.profession.system.description}}
+                        {{#if character.profession.system.notes}}
+                            {{{character.profession.system.notes}}}
+                        {{else if character.profession.system.description}}
                             {{{character.profession.system.description}}}
                         {{else}}
                             <p>Seleziona una professione a sinistra per visualizzare la sua descrizione.</p>
                         {{/if}}
                     </div>
                     
-                    {{#if character.profession.system.skills}}
-                    <div class="detail-perks-list">
+                    {{#if character.profession.system.definingSkill.skillName}}
+                    <div class="detail-perks-list" style="margin-top: 15px;">
+                        <h3>Abilità Unica:</h3>
+                        <div class="prof-skills-tags">
+                            <span class="prof-skill-tag unique-skill-tag" title="{{{character.profession.system.definingSkill.definition}}}">{{character.profession.system.definingSkill.skillName}}</span>
+                        </div>
+                    </div>
+                    {{/if}}
+
+                    {{#if professionSkills}}
+                    <div class="detail-perks-list" style="margin-top: 15px;">
                         <h3>Abilità di Partenza:</h3>
                         <div class="prof-skills-tags">
-                            {{#each character.profession.system.skills}}
-                                <span class="prof-skill-tag">{{this.label}}</span>
+                            {{#each professionSkills}}
+                                <span class="prof-skill-tag">{{name}}</span>
                             {{/each}}
                         </div>
                     </div>

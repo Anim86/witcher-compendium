@@ -15,7 +15,7 @@ const __dirname = path.dirname(__filename);
 const REPO_ROOT = path.resolve(__dirname, '../../../');
 
 // Change this to target the desired pack
-const PACK_PATH = path.join(REPO_ROOT, 'witcher-compendium/packs/EQUIPAGGIAMENTO/base/witcher-armor');
+const PACK_PATH = path.join(REPO_ROOT, 'witcher-compendium/packs/PROFESSIONI_E_ABILITA/witcher-professions');
 
 async function dumpFirstItem() {
     console.log(`🔍 [DUMP] Opening pack: ${PACK_PATH}`);

@@ -1,25 +1,43 @@
 <div class="wizard-step step-stats">
     <div class="step-header">
         <h2>{{localize "WITCHER.Wizard.Step.Stats.Title"}}</h2>
-        <p>{{localize "WITCHER.Wizard.Step.Stats.Description"}}</p>
+        <p class="stats-desc-row">
+            <span>{{localize "WITCHER.Wizard.Step.Stats.Description"}}</span>
+            <button type="button" class="ctrl-btn roll-stats-btn" data-action="rollStats" title="Distribuisci i punti rimanenti in modo casuale">
+                <i class="fa-solid fa-dice"></i> Casuale
+            </button>
+        </p>
     </div>
 
     <div class="stats-outer-container">
-        <!-- Thematic Points Reservoir -->
-        <div class="points-reservoir {{#if (lt pointsRemaining 0)}}overbudget{{/if}}">
-            <div class="points-icon"><i class="fa-solid fa-droplet"></i></div>
-            <div class="points-info">
-                <span class="label">{{localize "WITCHER.Wizard.Stats.Points"}} {{localize "WITCHER.Wizard.Stats.Remaining"}}</span>
-                <span class="value">{{pointsRemaining}}</span>
-            </div>
-        </div>
-
         <div class="stats-grid">
+            <!-- Points Reservoir integrated into the grid -->
+            <div class="stat-vial-row points-reservoir-row {{#if (lt pointsRemaining 0)}}overbudget{{/if}}">
+                <div class="stat-identity">
+                    <span class="stat-label">PUNTI</span>
+                    <span class="stat-short">Rimasti</span>
+                </div>
+                
+                <div class="stat-vial-container">
+                    <div class="vial-frame">
+                        <div class="vial-fill reservoir-fill" style="width: {{pointsRemainingPct}}%"></div>
+                        <div class="vial-glow"></div>
+                    </div>
+                </div>
+
+                <div class="stat-controls reservoir-value-display">
+                    <span class="reservoir-val">{{pointsRemaining}}</span>
+                </div>
+
+                <div class="stat-info-tip" title="Punti caratteristica rimanenti da distribuire per definire il tuo potenziale fisico e mentale (Totale: 60).">
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+            </div>
             {{#each stats}}
             <div class="stat-vial-row" data-stat="{{@key}}">
                 <div class="stat-identity">
-                    <span class="stat-label">{{localize label}}</span>
-                    <span class="stat-short">{{localize (concat "WITCHER.Actor.Stat." (toUpper @key))}}</span>
+                    <span class="stat-label">{{localize labelShort}}</span>
+                    <span class="stat-short">{{localize label}}</span>
                 </div>
                 
                 <div class="stat-vial-container">

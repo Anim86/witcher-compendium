@@ -8,7 +8,12 @@
             <div class="origin-selectors-row">
                 <div class="form-group">
                     <label>Nome Personaggio</label>
-                    <input type="text" name="name" value="{{character.name}}" placeholder="Nome del personaggio..." data-action="updateName">
+                    <div class="input-with-roll">
+                        <input type="text" name="name" value="{{character.name}}" placeholder="Nome del personaggio..." data-action="updateName">
+                        <button type="button" class="btn-roll-inline" data-action="rollName" title="Tira Nome casuale">
+                            <i class="fa-solid fa-dice-d10"></i>
+                        </button>
+                    </div>
                 </div>
 
                 <div class="form-group">
