@@ -1,0 +1,99 @@
+{
+  "_id": "parfatenilfg0000",
+  "name": "Sorte dei Genitori (Nilfgaardiana)",
+  "type": "RollTable",
+  "formula": "1d10",
+  "description": "Tabella per la Sorte dei Genitori con origini Nilfgaardiane.",
+  "results": [
+    {
+      "range": [1, 1],
+      "weight": 1,
+      "type": 0,
+      "text": "È morto nelle Guerre Settentrionali. Forse era già nell'esercito oppure è stato arruolato nel corso della guerra.",
+      "_id": "pfatenilfgres001",
+      "drawn": false
+    },
+    {
+      "range": [2, 2],
+      "weight": 1,
+      "type": 0,
+      "text": "È stato avvelenato. Potrebbe essere stata opera di un rivale, oppure far parte di un piano per sbarazzarsi dei genitori.",
+      "_id": "pfatenilfgres002",
+      "drawn": false
+    },
+    {
+      "range": [3, 3],
+      "weight": 1,
+      "type": 0,
+      "text": "È stato portato via dalla polizia segreta per essere \"interrogato\". La settimana dopo il suo corpo è stato trovato impiccato nelle vie della città.",
+      "_id": "pfatenilfgres003",
+      "drawn": false
+    },
+    {
+      "range": [4, 4],
+      "weight": 1,
+      "type": 0,
+      "text": "È stato ucciso da un mago vagabondo. Molto probabilmente hanno cercato di portare il mago in questione dalla parte dell'Impero e ne hanno pagato le conseguenze.",
+      "_id": "pfatenilfgres004",
+      "drawn": false
+    },
+    {
+      "range": [5, 5],
+      "weight": 1,
+      "type": 0,
+      "text": "È stato imprigionato per magia illegale. Forse ha davvero commesso il crimine, oppure è stata una montatura.",
+      "_id": "pfatenilfgres005",
+      "drawn": false
+    },
+    {
+      "range": [6, 6],
+      "weight": 1,
+      "type": 0,
+      "text": "È stato esiliato nel Deserto di Korath. Probabilmente ha commesso un grave crimine, ma ucciderlo avrebbe causato problemi.",
+      "_id": "pfatenilfgres006",
+      "drawn": false
+    },
+    {
+      "range": [7, 7],
+      "weight": 1,
+      "type": 0,
+      "text": "È stato maledetto da un mago. Probabilmente il mago esigeva vendetta.",
+      "_id": "pfatenilfgres007",
+      "drawn": false
+    },
+    {
+      "range": [8, 8],
+      "weight": 1,
+      "type": 0,
+      "text": "Ha abbandonato il personaggio, che non sa nemmeno il perché. Un giorno è semplicemente scomparso.",
+      "_id": "pfatenilfgres008",
+      "drawn": false
+    },
+    {
+      "range": [9, 9],
+      "weight": 1,
+      "type": 0,
+      "text": "È stato fatto schiavo. Potrebbe aver commesso un crimine contro l'Impero o essere vittima della macchinazione di un rivale.",
+      "_id": "pfatenilfgres009",
+      "drawn": false
+    },
+    {
+      "range": [10, 10],
+      "weight": 1,
+      "type": 0,
+      "text": "È stato mandato al Nord come agente sotto copertura. Probabilmente il personaggio non sa nemmeno dove si trovi al momento, ma è al servizio dell'Imperatore.",
+      "_id": "pfatenilfgres010",
+      "drawn": false
+    }
+  ],
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": "14"
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "img": "icons/skills/social/diplomacy-handshake.webp"
+}

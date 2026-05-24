@@ -1,0 +1,99 @@
+{
+  "_id": "fortuna0000000000",
+  "name": "Fortuna",
+  "type": "RollTable",
+  "formula": "1d10",
+  "description": "Tabella per generare una situazione di buona fortuna.",
+  "results": [
+    {
+      "range": [1, 1],
+      "weight": 1,
+      "type": 0,
+      "text": "Vincita: qualche avvenimento importante o un colpo di fortuna gli ha reso 1d10x100 corone.",
+      "_id": "fortunares000001",
+      "drawn": false
+    },
+    {
+      "range": [2, 2],
+      "weight": 1,
+      "type": 0,
+      "text": "Trovato un Maestro: si è addestrato con un insegnante. Guadagna +1 a una qualsiasi abilità di INT o parte con una nuova abilità di INT a +2.",
+      "_id": "fortunares000002",
+      "drawn": false
+    },
+    {
+      "range": [3, 3],
+      "weight": 1,
+      "type": 0,
+      "text": "Il Debito di un Nobile: ha fatto qualcosa che gli è valso un favore da parte di un/una nobile.",
+      "_id": "fortunares000003",
+      "drawn": false
+    },
+    {
+      "range": [4, 4],
+      "weight": 1,
+      "type": 0,
+      "text": "Trovato un Maestro d'Arme: si è addestrato con un soldato. Guadagna +1 a una qualsiasi abilità di combattimento o parte con una nuova abilità di combattimento a +2.",
+      "_id": "fortunares000004",
+      "drawn": false
+    },
+    {
+      "range": [5, 5],
+      "weight": 1,
+      "type": 0,
+      "text": "Il Debito di un Witcher: ha incontrato un witcher ed è riuscito a guadagnare un favore da parte sua.",
+      "_id": "fortunares000005",
+      "drawn": false
+    },
+    {
+      "range": [6, 6],
+      "weight": 1,
+      "type": 0,
+      "text": "Accettato dai Banditi: è ammanicato con una banda di furfanti. Una volta al mese può chiedere loro un favore.",
+      "_id": "fortunares000006",
+      "drawn": false
+    },
+    {
+      "range": [7, 7],
+      "weight": 1,
+      "type": 0,
+      "text": "Domato una Bestia: ha domato un animale selvatico incontrato nelle terre selvagge. Tirare 1d10: 1-7: Cane Selvatico (pag. 310), 8-10: Lupo (pag. 286).",
+      "_id": "fortunares000007",
+      "drawn": false
+    },
+    {
+      "range": [8, 8],
+      "weight": 1,
+      "type": 0,
+      "text": "Il Debito di un Mago: è riuscito a guadagnare un favore da parte di un mago che ha aiutato.",
+      "_id": "fortunares000008",
+      "drawn": false
+    },
+    {
+      "range": [9, 9],
+      "weight": 1,
+      "type": 0,
+      "text": "Benedetto da un Prete: ha ricevuto un simbolo sacro che può mostrare a chi condivide tale fede e ottenere +2 al Carisma nei loro confronti.",
+      "_id": "fortunares000009",
+      "drawn": false
+    },
+    {
+      "range": [10, 10],
+      "weight": 1,
+      "type": 0,
+      "text": "Insignito Cavaliere: è stato nominato cavaliere al merito in un regno a caso. In tale regno guadagna +2 alla Reputazione ed è riconosciuto come cavaliere.",
+      "_id": "fortunares000010",
+      "drawn": false
+    }
+  ],
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": "14"
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "img": "icons/skills/social/diplomacy-handshake.webp"
+}

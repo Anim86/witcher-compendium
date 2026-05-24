@@ -241,7 +241,7 @@ _tools/src-packs/
     ├── witcher-lore
     └── witcher-necromanzia
 ```
-*Ultimo aggiornamento automatico: 22 maggio 2026*
+*Ultimo aggiornamento automatico: 24 maggio 2026*
 <!-- FOLDER_STRUCTURE_END -->
 
 ## 📈 6. PROGRESSIONE E CHARACTER SHEET

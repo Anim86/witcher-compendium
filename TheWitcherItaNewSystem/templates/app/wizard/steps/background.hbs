@@ -2,10 +2,15 @@
     <h2>{{localize "WITCHER.Wizard.Step.Background.Title"}}</h2>
 
     <div class="background-container">
-        {{!-- Selezione Regione e Patria sempre visibili in alto --}}
+        {{!-- Selezione Nome, Regione, Patria ed Età sempre visibili in alto --}}
         <div class="background-section origin-selection-header">
-            <h3>{{localize "WITCHER.Wizard.Background.Origin"}}</h3>
+            <h3>Dettagli Personaggio & Origine</h3>
             <div class="origin-selectors-row">
+                <div class="form-group">
+                    <label>Nome Personaggio</label>
+                    <input type="text" name="name" value="{{character.name}}" placeholder="Nome del personaggio..." data-action="updateName">
+                </div>
+
                 <div class="form-group">
                     <label>Regione d'Origine</label>
                     <select name="originRegion" data-action="updateOriginRegion">
@@ -31,47 +36,28 @@
                         {{/each}}
                     </select>
                 </div>
+
+                <div class="form-group">
+                    <label>{{localize "WITCHER.Wizard.Background.Age"}}</label>
+                    <div class="input-with-roll">
+                        <input type="number" 
+                               name="age" 
+                               value="{{character.age}}" 
+                               min="{{ageLimits.min}}" 
+                               max="{{ageLimits.max}}" 
+                               data-action="updateAge">
+                        <button type="button" class="btn-roll-inline" data-action="rollAge" title="Tira Età casuale">
+                            <i class="fa-solid fa-dice-d10"></i>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
 
         {{!-- Sblocca il resto della generazione solo dopo aver scelto la Patria --}}
         {{#if character.homeland}}
             <div class="bg-grid-2col" style="margin-top: 15px;">
-                {{!-- Colonna sinistra: Estrazione e Età --}}
-                <div class="background-section">
-                    <h3>Situazione Familiare & Età</h3>
-
-                    <div class="form-group">
-                        <label>Situazione Familiare</label>
-                        <div class="input-with-roll">
-                            <input type="text" 
-                                   name="background.socialStatus" 
-                                   value="{{character.background.socialStatus}}" 
-                                   placeholder="Tira il dado o scrivi manualmente…"
-                                   data-action="updateBackground">
-                            <button type="button" class="btn-roll-inline" data-action="rollBackground" title="Tira Situazione Familiare">
-                                <i class="fa-solid fa-dice-d10"></i>
-                            </button>
-                        </div>
-                        {{#if socialStatusOptions.length}}
-                        <button type="button" class="btn-select-from-list" data-action="openListModal" data-field="background.socialStatus" data-title="Seleziona Situazione Familiare">
-                            {{#if character.background.socialStatus}}
-                                <span class="preview">{{character.background.socialStatus}}</span>
-                            {{else}}
-                                <span class="placeholder">— Scegli dalla lista —</span>
-                            {{/if}}
-                            <i class="fa-solid fa-list"></i>
-                        </button>
-                        {{/if}}
-                    </div>
-
-                    <div class="form-group">
-                        <label>{{localize "WITCHER.Wizard.Background.Age"}}</label>
-                        <input type="number" name="age" value="{{character.age}}" min="10" max="500" data-action="updateAge">
-                    </div>
-                </div>
-
-                {{!-- Colonna destra: Famiglia & Eventi --}}
+                {{!-- Colonna sinistra: Famiglia & Genitori --}}
                 <div class="background-section">
                     <h3>Famiglia & Genitori</h3>
 
@@ -88,29 +74,25 @@
                     <div class="form-group nested-group">
                         <label>{{localize "WITCHER.Wizard.Background.FamilyFate"}}</label>
                         <div class="input-with-roll">
-                            <input type="text"
-                                   name="background.familyFate"
-                                   value="{{character.background.familyFate}}"
-                                   placeholder="Tira il dado o scrivi manualmente…"
-                                   data-action="updateBackground">
-                            <button type="button" class="btn-roll-inline" data-action="rollFamilyFate" title="Tira Destino Familiare">
+                            <textarea name="background.familyFate"
+                                      placeholder="Tira il dado o scrivi manualmente…"
+                                      data-action="updateBackground"
+                                      rows="3">{{character.background.familyFate}}</textarea>
+                            <button type="button" class="btn-roll-inline" data-action="rollFamilyFate" title="Tira Sorte della Famiglia">
                                 <i class="fa-solid fa-dice-d10"></i>
                             </button>
                         </div>
                         {{#if familyFateOptions.length}}
-                        <button type="button" class="btn-select-from-list" data-action="openListModal" data-field="background.familyFate" data-title="Seleziona Destino Familiare">
-                            {{#if character.background.familyFate}}
-                                <span class="preview">{{character.background.familyFate}}</span>
-                            {{else}}
-                                <span class="placeholder">— Scegli dalla lista —</span>
-                            {{/if}}
+                        <button type="button" class="btn-select-from-list" data-action="openListModal" data-field="background.familyFate" data-title="Seleziona Sorte della Famiglia">
+                            <span>Scegli dalla lista...</span>
                             <i class="fa-solid fa-list"></i>
                         </button>
                         {{/if}}
                     </div>
                     {{/if}}
 
-                    <div class="form-group" style="margin-top: 10px;">
+                    {{#if (eq character.background.familyState "alive")}}
+                    <div class="form-group nested-group">
                         <label>Stato dei Genitori</label>
                         <select name="background.parentsState" data-action="updateBackground">
                             <option value="">— Seleziona Stato Genitori —</option>
@@ -123,16 +105,49 @@
                     <div class="form-group nested-group">
                         <label>Sorte dei Genitori</label>
                         <div class="input-with-roll">
-                            <input type="text"
-                                   name="background.parentsFate"
-                                   value="{{character.background.parentsFate}}"
-                                   placeholder="Scrivi manualmente cosa è successo…"
-                                   data-action="updateBackground">
+                            <textarea name="background.parentsFate"
+                                      placeholder="Tira il dado o scrivi manualmente…"
+                                      data-action="updateBackground"
+                                      rows="3">{{character.background.parentsFate}}</textarea>
+                            <button type="button" class="btn-roll-inline" data-action="rollParentsFate" title="Tira Sorte dei Genitori">
+                                <i class="fa-solid fa-dice-d10"></i>
+                            </button>
                         </div>
+                        {{#if parentsFateOptions.length}}
+                        <button type="button" class="btn-select-from-list" data-action="openListModal" data-field="background.parentsFate" data-title="Seleziona Sorte dei Genitori">
+                            <span>Scegli dalla lista...</span>
+                            <i class="fa-solid fa-list"></i>
+                        </button>
+                        {{/if}}
                     </div>
                     {{/if}}
 
-                    <h3 style="margin-top: 15px;">{{localize "WITCHER.Wizard.Background.LifeEvents"}}</h3>
+                    {{#if (eq character.background.parentsState "alive")}}
+                    <div class="form-group nested-group">
+                        <label>Situazione Familiare</label>
+                        <div class="input-with-roll">
+                            <textarea name="background.socialStatus" 
+                                      placeholder="Tira il dado o scrivi manualmente…"
+                                      data-action="updateBackground"
+                                      rows="3">{{character.background.socialStatus}}</textarea>
+                            <button type="button" class="btn-roll-inline" data-action="rollBackground" title="Tira Situazione Familiare">
+                                <i class="fa-solid fa-dice-d10"></i>
+                            </button>
+                        </div>
+                        {{#if socialStatusOptions.length}}
+                        <button type="button" class="btn-select-from-list" data-action="openListModal" data-field="background.socialStatus" data-title="Seleziona Situazione Familiare">
+                            <span>Scegli dalla lista...</span>
+                            <i class="fa-solid fa-list"></i>
+                        </button>
+                        {{/if}}
+                    </div>
+                    {{/if}}
+                    {{/if}}
+                </div>
+
+                {{!-- Colonna destra: Eventi della Vita --}}
+                <div class="background-section">
+                    <h3>{{localize "WITCHER.Wizard.Background.LifeEvents"}}</h3>
                     <div class="events-list scrollable">
                         {{#each character.background.events}}
                         <div class="event-item">

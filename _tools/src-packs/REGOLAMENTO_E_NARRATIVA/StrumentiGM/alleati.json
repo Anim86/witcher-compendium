@@ -1,0 +1,99 @@
+{
+  "_id": "alleati0000000000",
+  "name": "Alleati",
+  "type": "RollTable",
+  "formula": "1d10",
+  "description": "Tabella per generare un alleato.",
+  "results": [
+    {
+      "range": [1, 1],
+      "weight": 1,
+      "type": 0,
+      "text": "Maschio - Cacciatore di Taglie - Il personaggio lo ha salvato da qualcosa",
+      "_id": "alleatires000001",
+      "drawn": false
+    },
+    {
+      "range": [2, 2],
+      "weight": 1,
+      "type": 0,
+      "text": "Femmina - Mago - Si sono conosciuti in taverna",
+      "_id": "alleatires000002",
+      "drawn": false
+    },
+    {
+      "range": [3, 3],
+      "weight": 1,
+      "type": 0,
+      "text": "Maschio - Mentore o Insegnante - Ha salvato il personaggio da qualcosa",
+      "_id": "alleatires000003",
+      "drawn": false
+    },
+    {
+      "range": [4, 4],
+      "weight": 1,
+      "type": 0,
+      "text": "Femmina - Amico d'Infanzia - Ha ingaggiato il personaggio per qualcosa",
+      "_id": "alleatires000004",
+      "drawn": false
+    },
+    {
+      "range": [5, 5],
+      "weight": 1,
+      "type": 0,
+      "text": "Maschio - Artigiano - Sono stati intrappolati insieme",
+      "_id": "alleatires000005",
+      "drawn": false
+    },
+    {
+      "range": [6, 6],
+      "weight": 1,
+      "type": 0,
+      "text": "Femmina - Un Vecchio Nemico - Sono stati costretti a lavorare insieme",
+      "_id": "alleatires000006",
+      "drawn": false
+    },
+    {
+      "range": [7, 7],
+      "weight": 1,
+      "type": 0,
+      "text": "Maschio - Duca/Duchessa - Il personaggio lo ha ingaggiato per qualcosa",
+      "_id": "alleatires000007",
+      "drawn": false
+    },
+    {
+      "range": [8, 8],
+      "weight": 1,
+      "type": 0,
+      "text": "Femmina - Prete/Sacerdotessa - Si sono incontrati da ubriachi e sono andati d'accordo",
+      "_id": "alleatires000008",
+      "drawn": false
+    },
+    {
+      "range": [9, 9],
+      "weight": 1,
+      "type": 0,
+      "text": "Maschio - Soldato - Si sono incontrati durante un viaggio",
+      "_id": "alleatires000009",
+      "drawn": false
+    },
+    {
+      "range": [10, 10],
+      "weight": 1,
+      "type": 0,
+      "text": "Femmina - Bardo - Hanno combattuto assieme",
+      "_id": "alleatires000010",
+      "drawn": false
+    }
+  ],
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": "14"
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "img": "icons/skills/social/diplomacy-handshake.webp"
+}

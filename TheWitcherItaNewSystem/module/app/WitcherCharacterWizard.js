@@ -86,12 +86,15 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         adjustStat: function(event, target) { this._adjustStat(event, target); },
         adjustSkill: function(event, target) { this._adjustSkill(event, target); },
         updateAge: function(event, target) { this._updateAge(event, target); },
+        updateName: function(event, target) { this._updateName(event, target); },
+        rollAge: function(event, target) { this._rollAge(event, target); },
         updateMoney: function(event, target) { this._updateMoney(event, target); },
         updateOriginRegion: function(event, target) { this._updateOriginRegion(event, target); },
         updateHomeland: function(event, target) { this._updateHomeland(event, target); },
         rollBackground: function(event, target) { this._rollBackground(event, target); },
         rollLifeEvents: function(event, target) { this._rollLifeEvents(event, target); },
         rollFamilyFate: function(event, target) { this._rollFamilyFate(event, target); },
+        rollParentsFate: function(event, target) { this._rollParentsFate(event, target); },
         updateBackground: function(event, target) { this._updateBackground(event, target); },
         toggleGear: function(event, target) { this._toggleGear(event, target); },
         selectAvatar: function(event, target) { this._selectAvatar(event, target); },
@@ -271,6 +274,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 this._cachedHasRegion = hasRegion;
                 this.socialStatusOptions = [];
                 this.familyFateOptions = [];
+                this.parentsFateOptions = [];
 
                 if (hasRegion) {
                     // Load Situazione Familiare options
@@ -287,33 +291,61 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                     const socialTable = await this._findTable(socialHints);
                     if (socialTable) {
                         this.socialStatusOptions = socialTable.results
-                            .map(r => r.text || r.getChatText?.() || "")
+                            .map(r => r.name || r.text || r.getChatText?.() || "")
                             .filter(Boolean);
                     }
 
                     // Load Destino della Famiglia options
                     let fateHints = [];
                     if (currentOrigin === "Terre Antiche") {
-                        fateHints = ["Destino della Famiglia (Terre Antiche)", "Destino della Famiglia - Terre Antiche", "Terre Antiche"];
+                        fateHints = ["Sorte della Famiglia (Terre Antiche)", "Sorte della Famiglia - Terre Antiche", "Destino della Famiglia (Terre Antiche)", "Destino della Famiglia - Terre Antiche", "Terre Antiche"];
                     } else if (currentOrigin === "Nilfgaardiana") {
-                        fateHints = ["Destino della Famiglia (Nilfgaardiana)", "Destino della Famiglia - Nilfgaardiana", "Nilfgaardiana"];
+                        fateHints = ["Sorte della Famiglia (Nilfgaardiana)", "Sorte della Famiglia - Nilfgaardiana", "Destino della Famiglia (Nilfgaardiana)", "Destino della Famiglia - Nilfgaardiana", "Nilfgaardiana"];
                     } else {
-                        fateHints = ["Destino della Famiglia (Settentrionale)", "Destino della Famiglia - Settentrionale", "Settentrionale"];
+                        fateHints = ["Sorte della Famiglia (Settentrionale)", "Sorte della Famiglia - Settentrionale", "Destino della Famiglia (Settentrionale)", "Destino della Famiglia - Settentrionale", "Settentrionale"];
                     }
-                    fateHints.push("Destino della Famiglia", "Destino Familiare", "Family Fate", "Family Background");
+                    fateHints.push("Sorte della Famiglia", "Sorte Familiare", "Destino della Famiglia", "Destino Familiare", "Family Fate", "Family Background");
 
                     const fateTable = await this._findTable(fateHints);
                     if (fateTable) {
                         this.familyFateOptions = fateTable.results
-                            .map(r => r.text || r.getChatText?.() || "")
+                            .map(r => r.name || r.text || r.getChatText?.() || "")
+                            .filter(Boolean);
+                    }
+
+                    // Load Sorte dei Genitori options
+                    let parentsFateHints = [];
+                    if (currentOrigin === "Terre Antiche") {
+                        parentsFateHints = ["Sorte dei Genitori (Terre Antiche)", "Sorte dei Genitori - Terre Antiche", "Terre Antiche"];
+                    } else if (currentOrigin === "Nilfgaardiana") {
+                        parentsFateHints = ["Sorte dei Genitori (Nilfgaardiana)", "Sorte dei Genitori - Nilfgaardiana", "Nilfgaardiana"];
+                    } else {
+                        parentsFateHints = ["Sorte dei Genitori (Settentrionale)", "Sorte dei Genitori - Settentrionale", "Settentrionale"];
+                    }
+                    parentsFateHints.push("Sorte dei Genitori", "Sorte Genitori", "Parents Fate", "Parents Background");
+
+                    const parentsFateTable = await this._findTable(parentsFateHints);
+                    if (parentsFateTable) {
+                        this.parentsFateOptions = parentsFateTable.results
+                            .map(r => r.name || r.text || r.getChatText?.() || "")
                             .filter(Boolean);
                     }
                 }
             }
 
+            const ageLimits = this._getAgeLimits();
+            if (!this.characterData.age) {
+                this.characterData.age = ageLimits.min;
+            } else {
+                if (this.characterData.age < ageLimits.min) this.characterData.age = ageLimits.min;
+                if (this.characterData.age > ageLimits.max) this.characterData.age = ageLimits.max;
+            }
+
             return {
+                ageLimits: ageLimits,
                 socialStatusOptions: this.socialStatusOptions || [],
                 familyFateOptions: this.familyFateOptions || [],
+                parentsFateOptions: this.parentsFateOptions || [],
                 step: this.step,
                 maxSteps: this.maxSteps,
                 steps: this._getStepList(),
@@ -642,7 +674,49 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         this._updateNativeLanguage();
         this.render(true); 
     }
-    async _updateAge(event, target) { this.characterData.age = parseInt(target.value); this.render(true); }
+    async _updateAge(event, target) {
+        const limits = this._getAgeLimits();
+        let val = parseInt(target.value) || limits.min;
+        if (val < limits.min) val = limits.min;
+        if (val > limits.max) val = limits.max;
+        this.characterData.age = val;
+        this.render(true);
+    }
+
+    async _updateName(event, target) {
+        this.characterData.name = target.value;
+        this.render(true);
+    }
+
+    _getAgeLimits() {
+        const raceName = (this.characterData.race?.name || "").toLowerCase();
+        
+        if (raceName.includes("elfo") || raceName.includes("elfi") || raceName.includes("elf")) {
+            return { min: 20, max: 600 };
+        } else if (raceName.includes("gnomo") || raceName.includes("gnomi") || raceName.includes("gnome")) {
+            return { min: 20, max: 500 };
+        } else if (raceName.includes("bobolak")) {
+            return { min: 20, max: 300 };
+        } else if (raceName.includes("umano") || raceName.includes("umani") || raceName.includes("human")) {
+            return { min: 16, max: 90 };
+        } else if (raceName.includes("vran")) {
+            return { min: 20, max: 400 };
+        } else if (raceName.includes("nano") || raceName.includes("nani") || raceName.includes("dwarf")) {
+            return { min: 20, max: 500 };
+        } else if (raceName.includes("witcher")) {
+            return { min: 50, max: 260 };
+        }
+        
+        return { min: 16, max: 500 };
+    }
+
+    async _rollAge() {
+        const limits = this._getAgeLimits();
+        const rolledAge = Math.floor(Math.random() * (limits.max - limits.min + 1)) + limits.min;
+        this.characterData.age = rolledAge;
+        ui.notifications.info(`Età generata casualmente: ${rolledAge} anni (limiti per la razza: ${limits.min}-${limits.max})`);
+        this.render(true);
+    }
     async _updateMoney(event, target) { this.characterData.money = parseInt(target.value); this.render(true); }
     async _goToStep(event, target) { this.step = parseInt(target.dataset.step); this.render(true); }
     
@@ -833,7 +907,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         const t = await this._findTable(hints);
         if (t) {
             const r = await t.roll();
-            const text = r.results[0]?.text ?? r.results[0]?.getChatText?.() ?? "";
+            const text = r.results[0]?.name ?? r.results[0]?.text ?? r.results[0]?.getChatText?.() ?? "";
             this.characterData.background.socialStatus = text;
             ui.notifications.info(`Situazione Familiare: ${text}`);
         } else {
@@ -847,23 +921,23 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         let tableName = "";
         let hints = [];
         if (origin === "Terre Antiche") {
-            tableName = "Destino della Famiglia (Terre Antiche)";
-            hints = ["Destino della Famiglia (Terre Antiche)", "Destino della Famiglia - Terre Antiche", "Terre Antiche"];
+            tableName = "Sorte della Famiglia (Terre Antiche)";
+            hints = ["Sorte della Famiglia (Terre Antiche)", "Sorte della Famiglia - Terre Antiche", "Destino della Famiglia (Terre Antiche)", "Destino della Famiglia - Terre Antiche", "Terre Antiche"];
         } else if (origin === "Nilfgaardiana") {
-            tableName = "Destino della Famiglia (Nilfgaardiana)";
-            hints = ["Destino della Famiglia (Nilfgaardiana)", "Destino della Famiglia - Nilfgaardiana", "Nilfgaardiana"];
+            tableName = "Sorte della Famiglia (Nilfgaardiana)";
+            hints = ["Sorte della Famiglia (Nilfgaardiana)", "Sorte della Famiglia - Nilfgaardiana", "Destino della Famiglia (Nilfgaardiana)", "Destino della Famiglia - Nilfgaardiana", "Nilfgaardiana"];
         } else {
-            tableName = "Destino della Famiglia (Settentrionale)";
-            hints = ["Destino della Famiglia (Settentrionale)", "Destino della Famiglia - Settentrionale", "Settentrionale"];
+            tableName = "Sorte della Famiglia (Settentrionale)";
+            hints = ["Sorte della Famiglia (Settentrionale)", "Sorte della Famiglia - Settentrionale", "Destino della Famiglia (Settentrionale)", "Destino della Famiglia - Settentrionale", "Settentrionale"];
         }
         
         // Fallbacks
-        hints.push("Destino della Famiglia", "Destino Familiare", "Family Fate", "Family Background");
+        hints.push("Sorte della Famiglia", "Sorte Familiare", "Destino della Famiglia", "Destino Familiare", "Family Fate", "Family Background");
 
         const t = await this._findTable(hints);
         if (t) {
             const r = await t.roll();
-            const text = r.results[0]?.text ?? r.results[0]?.getChatText?.() ?? "";
+            const text = r.results[0]?.name ?? r.results[0]?.text ?? r.results[0]?.getChatText?.() ?? "";
             this.characterData.background.familyFate = text;
             ui.notifications.info(`Destino Familiare: ${text}`);
         } else {
@@ -872,24 +946,126 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         this.render(true);
     }
 
-    async _rollLifeEvents() {
-        const t = await this._findTable(["Eventi della Vita", "Life Events", "Evento di Vita"]);
-        if (t) {
-            const existing = this.characterData.background.events;
-            const lastAge = existing.length > 0 ? existing[existing.length - 1].age : (this.characterData.age || 20);
-            const nextAge = lastAge + 10;
-            const r = await t.roll();
-            const text = r.results[0]?.text ?? r.results[0]?.getChatText?.() ?? "";
-            existing.push({ age: nextAge, text });
+    async _rollParentsFate() {
+        const origin = this._getOriginCategory();
+        let tableName = "";
+        let hints = [];
+        if (origin === "Terre Antiche") {
+            tableName = "Sorte dei Genitori (Terre Antiche)";
+            hints = ["Sorte dei Genitori (Terre Antiche)", "Sorte dei Genitori - Terre Antiche", "Terre Antiche"];
+        } else if (origin === "Nilfgaardiana") {
+            tableName = "Sorte dei Genitori (Nilfgaardiana)";
+            hints = ["Sorte dei Genitori (Nilfgaardiana)", "Sorte dei Genitori - Nilfgaardiana", "Nilfgaardiana"];
         } else {
-            ui.notifications.warn("Tabella 'Eventi della Vita' non trovata nel mondo o nei compendi.");
+            tableName = "Sorte dei Genitori (Settentrionale)";
+            hints = ["Sorte dei Genitori (Settentrionale)", "Sorte dei Genitori - Settentrionale", "Settentrionale"];
+        }
+        
+        // Fallbacks
+        hints.push("Sorte dei Genitori", "Sorte Genitori", "Parents Fate", "Parents Background");
+
+        const t = await this._findTable(hints);
+        if (t) {
+            const r = await t.roll();
+            const text = r.results[0]?.name ?? r.results[0]?.text ?? r.results[0]?.getChatText?.() ?? "";
+            this.characterData.background.parentsFate = text;
+            ui.notifications.info(`Sorte dei Genitori: ${text}`);
+        } else {
+            ui.notifications.warn(`Tabella '${tableName}' non trovata nel mondo o nei compendi.`);
         }
         this.render(true);
     }
 
+    async _rollLifeEvents() {
+        const age = this.characterData.age || 20;
+        const maxEvents = Math.floor((age - 20) / 10) + 1;
+        const existing = this.characterData.background.events;
+
+        if (maxEvents <= 0) {
+            ui.notifications.warn("Il personaggio è troppo giovane per avere eventi della vita (età minima 20 anni).");
+            return;
+        }
+
+        if (existing.length >= maxEvents) {
+            ui.notifications.warn(`Hai già tirato il numero massimo di eventi consentiti per l'età di ${age} anni (${maxEvents} eventi).`);
+            return;
+        }
+
+        const nextAge = existing.length > 0 ? existing[existing.length - 1].age + 10 : 20;
+        const roll1 = Math.floor(Math.random() * 10) + 1;
+        let eventText = "";
+
+        if (roll1 >= 1 && roll1 <= 4) {
+            // Category: Fortuna o Sfortuna
+            const roll2 = Math.floor(Math.random() * 10) + 1;
+            const isEven = (roll2 % 2 === 0);
+            const subTableName = isEven ? "Fortuna" : "Sfortuna";
+            const table = await this._findTable([subTableName]);
+            
+            if (table) {
+                const r = await table.roll();
+                const text = r.results[0]?.name ?? r.results[0]?.text ?? r.results[0]?.getChatText?.() ?? "";
+                eventText = `<strong>Fortuna o Sfortuna: ${subTableName}</strong> ➔ ${text}`;
+            } else {
+                ui.notifications.warn(`Tabella '${subTableName}' non trovata nel mondo o nei compendi.`);
+                return;
+            }
+        } else if (roll1 >= 5 && roll1 <= 7) {
+            // Category: Alleati o Nemici
+            const roll2 = Math.floor(Math.random() * 10) + 1;
+            const isEven = (roll2 % 2 === 0);
+            const subTableName = isEven ? "Alleati" : "Nemici";
+            const table = await this._findTable([subTableName]);
+            
+            if (table) {
+                const r = await table.roll();
+                const text = r.results[0]?.name ?? r.results[0]?.text ?? r.results[0]?.getChatText?.() ?? "";
+                eventText = `<strong>Alleati o Nemici: ${isEven ? "Alleato" : "Nemico"}</strong> ➔ ${text}`;
+            } else {
+                ui.notifications.warn(`Tabella '${subTableName}' non trovata nel mondo o nei compendi.`);
+                return;
+            }
+        } else {
+            // Category: Relazione Amorosa (8-10)
+            const roll2 = Math.floor(Math.random() * 10) + 1;
+            let romanceOutcome = "";
+            let subTableToRoll = "";
+
+            if (roll2 === 1) {
+                romanceOutcome = "Felice Storia d'Amore";
+            } else if (roll2 >= 2 && roll2 <= 4) {
+                romanceOutcome = "Tragedia Sentimentale";
+                subTableToRoll = "Tragedia Sentimentale";
+            } else if (roll2 >= 5 && roll2 <= 6) {
+                romanceOutcome = "Amore Problematico";
+                subTableToRoll = "Amore Problematico";
+            } else {
+                romanceOutcome = "Puttane e Dissolutezze";
+            }
+
+            if (subTableToRoll) {
+                const table = await this._findTable([subTableToRoll]);
+                if (table) {
+                    const r = await table.roll();
+                    const text = r.results[0]?.name ?? r.results[0]?.text ?? r.results[0]?.getChatText?.() ?? "";
+                    eventText = `<strong>Relazione Amorosa: ${romanceOutcome}</strong> ➔ ${text}`;
+                } else {
+                    ui.notifications.warn(`Tabella '${subTableToRoll}' non trovata nel mondo o nei compendi.`);
+                    return;
+                }
+            } else {
+                eventText = `<strong>Relazione Amorosa: ${romanceOutcome}</strong>`;
+            }
+        }
+
+        existing.push({ age: nextAge, text: eventText });
+        ui.notifications.info(`Nuovo evento registrato all'età di ${nextAge} anni.`);
+        this.render(true);
+    }
+
     _updateBackground(event, target) {
-        const name = target.name || target.dataset.name;
-        const value = target.value || target.dataset.value || "";
+        const name = target.name || target.dataset?.name;
+        const value = target.value || target.dataset?.value || "";
         let needsRender = false;
 
         if (name === "background.socialStatus") {
@@ -902,6 +1078,8 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 this.characterData.background.familyFate = "Almeno parte della famiglia è ancora viva.";
             } else {
                 this.characterData.background.familyFate = "";
+                this.characterData.background.parentsState = "";
+                this.characterData.background.parentsFate = "";
             }
         } else if (name === "background.familyFate") {
             this.characterData.background.familyFate = value;
@@ -909,17 +1087,15 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         } else if (name === "background.parentsState") {
             this.characterData.background.parentsState = value;
             needsRender = true;
-            if (value === "alive") {
-                this.characterData.background.parentsFate = "Genitori Vivi";
-            } else {
-                this.characterData.background.parentsFate = "";
-            }
+            this.characterData.background.parentsFate = "";
+            this.characterData.background.socialStatus = "";
         } else if (name === "background.parentsFate") {
             this.characterData.background.parentsFate = value;
+            if (target.tagName === "SELECT" || target.tagName === "BUTTON") needsRender = true;
         }
 
         if (target.tagName === "BUTTON") {
-            const wrapper = target.closest('.manual-dropdown');
+            const wrapper = target.closest?.('.manual-dropdown');
             if (wrapper) wrapper.removeAttribute('open');
         }
 
@@ -937,22 +1113,24 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             options = this.socialStatusOptions || [];
         } else if (field === "background.familyFate") {
             options = this.familyFateOptions || [];
+        } else if (field === "background.parentsFate") {
+            options = this.parentsFateOptions || [];
         }
 
         if (!options.length) return;
 
         const currentValue = field === "background.socialStatus" 
             ? this.characterData.background.socialStatus
-            : this.characterData.background.familyFate;
+            : (field === "background.familyFate" ? this.characterData.background.familyFate : this.characterData.background.parentsFate);
 
-        let html = `<div class="list-modal-search" style="margin-bottom: 15px;">
-            <input type="search" placeholder="Cerca opzione..." class="list-modal-filter" style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; font-size: 0.9rem;">
+        let html = `<div class="list-modal-search">
+            <input type="search" placeholder="Cerca opzione..." class="list-modal-filter">
         </div>
-        <div class="list-modal-items" style="max-height: 400px; overflow-y: auto; border: 1px solid #ccc; border-radius: 4px; scrollbar-width: none; -ms-overflow-style: none;">`;
+        <div class="list-modal-items">`;
 
         options.forEach(opt => {
-            const selected = opt === currentValue ? ' style="background: rgba(139,0,0,0.1);" data-selected="true"' : '';
-            html += `<button type="button" class="list-modal-item" data-value="${opt}"${selected} style="display: block; width: 100%; text-align: left; padding: 14px; border: none; border-bottom: 1px solid #eee; background: transparent; cursor: pointer; font-size: 0.85rem; line-height: 1.6; white-space: normal; word-wrap: break-word; overflow-wrap: break-word;">
+            const selected = opt === currentValue ? ' data-selected="true"' : '';
+            html += `<button type="button" class="list-modal-item" data-value="${opt}"${selected}>
                 ${opt}
             </button>`;
         });
@@ -968,9 +1146,10 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                     callback: () => {}
                 }
             },
-            default: "cancel",
+            default: "cancel"
+        }, {
             width: 700,
-            height: "auto"
+            classes: ["dialog", "witcher-wizard-modal", "witcher-style"]
         });
 
         dialog.render(true);
@@ -978,11 +1157,6 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         setTimeout(() => {
             const modal = dialog.element[0] || dialog.element;
             if (!modal) return;
-
-            // Nascondi scrollbar per Chrome/Safari
-            const style = document.createElement('style');
-            style.textContent = `.list-modal-items::-webkit-scrollbar { display: none; }`;
-            modal.appendChild(style);
 
             const filterInput = modal.querySelector('.list-modal-filter');
             const items = modal.querySelectorAll('.list-modal-item');
@@ -1001,13 +1175,13 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             items.forEach(item => {
                 item.addEventListener('click', () => {
                     const value = item.dataset.value;
-                    const synthEvent = new Event('change', { bubbles: true });
-                    synthEvent.currentTarget = {
+                    const synthTarget = {
                         name: field,
                         value: value,
-                        tagName: 'BUTTON'
+                        tagName: 'BUTTON',
+                        dataset: {}
                     };
-                    this._updateBackground(synthEvent, synthEvent.currentTarget);
+                    this._updateBackground(null, synthTarget);
                     dialog.close();
                 });
             });
@@ -1028,21 +1202,41 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
     }
 
     async _findTable(hints) {
-        // 1. Search world tables first (fastest)
-        for (const h of hints) {
-            const t = game.tables.find(t => t.name.toLowerCase().includes(h.toLowerCase()));
+        const lowerHints = hints.map(h => h.toLowerCase());
+
+        // 1. Search world tables for exact match
+        for (const lh of lowerHints) {
+            const t = game.tables.find(t => t.name.toLowerCase() === lh && t.results?.size > 0);
             if (t) return t;
         }
-        // 2. Search registered compendium packs of type RollTable
+
+        // 2. Search registered compendium packs of type RollTable for exact match
         const rollTablePacks = game.packs.filter(p => p.metadata.type === "RollTable");
         for (const pack of rollTablePacks) {
-            // Use the pack index to avoid loading all documents
             const index = pack.index.size > 0 ? pack.index : await pack.getIndex();
-            for (const h of hints) {
-                const entry = index.find(e => e.name.toLowerCase().includes(h.toLowerCase()));
+            for (const lh of lowerHints) {
+                const entry = index.find(e => e.name.toLowerCase() === lh);
                 if (entry) {
                     const doc = await pack.getDocument(entry._id);
-                    if (doc) return doc;
+                    if (doc && doc.results?.size > 0) return doc;
+                }
+            }
+        }
+
+        // 3. Search world tables for fuzzy match (includes)
+        for (const lh of lowerHints) {
+            const t = game.tables.find(t => t.name.toLowerCase().includes(lh) && t.results?.size > 0);
+            if (t) return t;
+        }
+
+        // 4. Search registered compendium packs of type RollTable for fuzzy match (includes)
+        for (const pack of rollTablePacks) {
+            const index = pack.index.size > 0 ? pack.index : await pack.getIndex();
+            for (const lh of lowerHints) {
+                const entry = index.find(e => e.name.toLowerCase().includes(lh));
+                if (entry) {
+                    const doc = await pack.getDocument(entry._id);
+                    if (doc && doc.results?.size > 0) return doc;
                 }
             }
         }
@@ -1054,7 +1248,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
     }
 
     async _finish() {
-        const name = this.element.querySelector("input[name='name']")?.value || "New Hero";
+        const name = this.characterData.name || "New Hero";
         
         // 1. Compile Background Biography HTML
         let bgHtml = "";

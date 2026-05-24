@@ -1,0 +1,99 @@
+{
+  "_id": "tragedia0000000000",
+  "name": "Tragedia Sentimentale",
+  "type": "RollTable",
+  "formula": "1d10",
+  "description": "Tabella per generare una tragedia sentimentale.",
+  "results": [
+    {
+      "range": [1, 1],
+      "weight": 1,
+      "type": 0,
+      "text": "L'amore del personaggio è stato catturato dai banditi qualche tempo fa ed è ancora prigioniero.",
+      "_id": "tragediares000001",
+      "drawn": false
+    },
+    {
+      "range": [2, 2],
+      "weight": 1,
+      "type": 0,
+      "text": "L'amore del personaggio è scomparso misteriosamente e non vi sono indizi su dove sia.",
+      "_id": "tragediares000002",
+      "drawn": false
+    },
+    {
+      "range": [3, 3],
+      "weight": 1,
+      "type": 0,
+      "text": "L'amore del personaggio è stato imprigionato o esiliato per crimini che potrebbe aver commesso oppure no.",
+      "_id": "tragediares000003",
+      "drawn": false
+    },
+    {
+      "range": [4, 4],
+      "weight": 1,
+      "type": 0,
+      "text": "Una potente maledizione ha separato il personaggio dal suo amore.",
+      "_id": "tragediares000004",
+      "drawn": false
+    },
+    {
+      "range": [5, 5],
+      "weight": 1,
+      "type": 0,
+      "text": "Qualcuno si è intromesso tra il personaggio e il suo amore ed è stato costretto a ucciderlo.",
+      "_id": "tragediares000005",
+      "drawn": false
+    },
+    {
+      "range": [6, 6],
+      "weight": 1,
+      "type": 0,
+      "text": "L'amore del personaggio si è suicidato. Non è detto che il personaggio ne conosca il motivo.",
+      "_id": "tragediares000006",
+      "drawn": false
+    },
+    {
+      "range": [7, 7],
+      "weight": 1,
+      "type": 0,
+      "text": "L'amore del personaggio è stato rapito da un nobile che ne ha fatto la sua concubina.",
+      "_id": "tragediares000007",
+      "drawn": false
+    },
+    {
+      "range": [8, 8],
+      "weight": 1,
+      "type": 0,
+      "text": "Un rivale ha messo fuori gioco il personaggio e gli ha rubato l'affetto del suo amore.",
+      "_id": "tragediares000008",
+      "drawn": false
+    },
+    {
+      "range": [9, 9],
+      "weight": 1,
+      "type": 0,
+      "text": "L'amore del personaggio è rimasto ucciso dai mostri. Potrebbe essere stato un incidente o premeditato.",
+      "_id": "tragediares000009",
+      "drawn": false
+    },
+    {
+      "range": [10, 10],
+      "weight": 1,
+      "type": 0,
+      "text": "L'amore del personaggio è un mago, un witcher o un mostro senziente, la relazione è destinata a finire male.",
+      "_id": "tragediares000010",
+      "drawn": false
+    }
+  ],
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": "14"
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "img": "icons/skills/social/diplomacy-handshake.webp"
+}

@@ -1,0 +1,99 @@
+{
+  "_id": "parfateelder0000",
+  "name": "Sorte dei Genitori (Terre Antiche)",
+  "type": "RollTable",
+  "formula": "1d10",
+  "description": "Tabella per la Sorte dei Genitori con origini Terre Antiche.",
+  "results": [
+    {
+      "range": [1, 1],
+      "weight": 1,
+      "type": 0,
+      "text": "È stato accusato di essere uno Scoia'tael. I suoi vicini lo guardano con sospetto.",
+      "_id": "pfateelderres001",
+      "drawn": false
+    },
+    {
+      "range": [2, 2],
+      "weight": 1,
+      "type": 0,
+      "text": "Si è rivoltato contro il suo stesso popolo e ha venduto le razze antiche agli umani. Non è più il benvenuto nella sua terra natia.",
+      "_id": "pfateelderres002",
+      "drawn": false
+    },
+    {
+      "range": [3, 3],
+      "weight": 1,
+      "type": 0,
+      "text": "Si è ucciso per disperazione. Senza più speranza di riavere la gloria passata, si è arreso e l'ha fatta finita.",
+      "_id": "pfateelderres003",
+      "drawn": false
+    },
+    {
+      "range": [4, 4],
+      "weight": 1,
+      "type": 0,
+      "text": "Nel corso di un viaggio, è stato vittima del razzismo umano. È morto in un pogrom e il suo corpo è stato esposto impalato.",
+      "_id": "pfateelderres004",
+      "drawn": false
+    },
+    {
+      "range": [5, 5],
+      "weight": 1,
+      "type": 0,
+      "text": "È stato preso dall'ossessione di riportare la propria razza alla gloria passata. Ha sacrificato tutto per la causa.",
+      "_id": "pfateelderres005",
+      "drawn": false
+    },
+    {
+      "range": [6, 6],
+      "weight": 1,
+      "type": 0,
+      "text": "È stato esiliato dalla terra natale. Le ragioni possibili sono molte, da crimini a opinioni rivoluzionarie.",
+      "_id": "pfateelderres006",
+      "drawn": false
+    },
+    {
+      "range": [7, 7],
+      "weight": 1,
+      "type": 0,
+      "text": "È stato maledetto. Tale maledizione può essere decisa dal suo giocatore, o lasciata al Game Master.",
+      "_id": "pfateelderres007",
+      "drawn": false
+    },
+    {
+      "range": [8, 8],
+      "weight": 1,
+      "type": 0,
+      "text": "Ha ceduto il personaggio a un'altra famiglia per farlo sopravvivere, perché non poteva prendersi cura di lui.",
+      "_id": "pfateelderres008",
+      "drawn": false
+    },
+    {
+      "range": [9, 9],
+      "weight": 1,
+      "type": 0,
+      "text": "Si è unito agli Scoia'tael nel tentativo di rivalersi sugli umani, che ritiene abbiano rovinato la sua vita.",
+      "_id": "pfateelderres009",
+      "drawn": false
+    },
+    {
+      "range": [10, 10],
+      "weight": 1,
+      "type": 0,
+      "text": "È morto in un \"incidente\". Con ogni probabilità si era fatto un potente nemico che ha trovato il modo per sbarazzarsene.",
+      "_id": "pfateelderres010",
+      "drawn": false
+    }
+  ],
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": "14"
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "img": "icons/skills/social/diplomacy-handshake.webp"
+}

@@ -784,6 +784,7 @@ form.witcher-wizard .wizard-content {
     flex-direction: column;
     gap: 4px;
     margin-bottom: 10px;
+    height: auto !important;
 }
 
 .witcher-wizard .step-background .form-group label {
@@ -900,9 +901,33 @@ form.witcher-wizard .wizard-content {
 }
 
 .witcher-wizard .step-background .input-with-roll select,
-.witcher-wizard .step-background .input-with-roll input {
+.witcher-wizard .step-background .input-with-roll input,
+.witcher-wizard .step-background .input-with-roll textarea {
     flex: 1;
     min-width: 0;
+}
+
+/* Parchment-styled textareas */
+.witcher-wizard .step-background textarea {
+    width: 100%;
+    background: #fdf6e3 !important;
+    border: 1px solid var(--wizard-border) !important;
+    border-radius: 5px;
+    padding: 6px 8px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.85rem;
+    color: var(--wizard-text-dark) !important;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    box-sizing: border-box;
+    resize: vertical;
+    min-height: 60px;
+    line-height: 1.4;
+}
+
+.witcher-wizard .step-background textarea:focus {
+    outline: none;
+    border-color: var(--wizard-accent) !important;
+    box-shadow: 0 0 0 2px rgba(139, 0, 0, 0.15);
 }
 
 /* Compact inline roll button */
@@ -1866,4 +1891,157 @@ form.witcher-wizard .wizard-content {
     border-left: 2px solid var(--wizard-border);
     margin-top: 6px;
     margin-bottom: 6px;
+}
+
+/* ── Selection Dialog Modal: Parchment Theme ────────────────────── */
+.witcher-wizard-modal.window-app {
+    border: 2px solid var(--wizard-border, #665544) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7) !important;
+    border-radius: 8px !important;
+}
+
+.witcher-wizard-modal .window-header {
+    background: linear-gradient(to bottom, #1a1a1a, #000) !important;
+    border-bottom: 2px solid var(--wizard-gold, #b8860b) !important;
+    padding: 8px 15px !important;
+}
+
+.witcher-wizard-modal .window-title {
+    font-family: 'Thewitcher', serif !important;
+    color: var(--wizard-gold, #b8860b) !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+}
+
+.witcher-wizard-modal .window-header a.close {
+    color: #ccc !important;
+}
+
+.witcher-wizard-modal .window-header a.close:hover {
+    color: #fff !important;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+}
+
+.witcher-wizard-modal .window-content {
+    background: #f5edd6 !important;
+    color: var(--wizard-text-dark, #1a1a1a) !important;
+    font-family: 'Outfit', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+    padding: 15px 20px !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.witcher-wizard-modal .list-modal-search {
+    margin-bottom: 15px;
+}
+
+.witcher-wizard-modal .list-modal-filter {
+    width: 100%;
+    padding: 10px 14px !important;
+    border: 2px solid var(--wizard-border, #665544) !important;
+    border-radius: 6px !important;
+    background: rgba(255, 255, 255, 0.7) !important;
+    color: var(--wizard-text-dark, #1a1a1a) !important;
+    font-size: 0.95rem !important;
+    transition: all 0.2s ease;
+}
+
+.witcher-wizard-modal .list-modal-filter:focus {
+    border-color: var(--wizard-accent, #8b0000) !important;
+    background: rgba(255, 255, 255, 0.9) !important;
+    box-shadow: 0 0 5px rgba(139, 0, 0, 0.2) !important;
+    outline: none;
+}
+
+.witcher-wizard-modal .list-modal-items {
+    max-height: 380px;
+    overflow-y: auto;
+    border: 2px solid var(--wizard-border, #665544) !important;
+    border-radius: 6px !important;
+    background: rgba(255, 255, 255, 0.3) !important;
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.1);
+    scrollbar-width: none; /* Firefox */
+}
+
+.witcher-wizard-modal .list-modal-items::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+}
+
+.witcher-wizard-modal .list-modal-item {
+    display: block;
+    width: 100%;
+    text-align: left;
+    padding: 12px 16px !important;
+    border: none !important;
+    border-bottom: 1px solid rgba(102, 85, 68, 0.2) !important;
+    background: rgba(255, 255, 255, 0.15) !important;
+    cursor: pointer;
+    font-size: 0.9rem !important;
+    line-height: 1.5;
+    color: var(--wizard-text-dark, #1a1a1a) !important;
+    transition: all 0.2s ease;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-family: 'Outfit', sans-serif;
+}
+
+.witcher-wizard-modal .list-modal-item:last-child {
+    border-bottom: none !important;
+}
+
+.witcher-wizard-modal .list-modal-item:hover {
+    background: rgba(139, 0, 0, 0.05) !important;
+    padding-left: 20px !important; /* Sliding micro-animation */
+    color: var(--wizard-accent, #8b0000) !important;
+}
+
+.witcher-wizard-modal .list-modal-item[data-selected="true"] {
+    background: rgba(139, 0, 0, 0.1) !important;
+    border-left: 4px solid var(--wizard-accent, #8b0000) !important;
+    font-weight: 600 !important;
+    box-shadow: inset 2px 0 5px rgba(139, 0, 0, 0.05);
+}
+
+.witcher-wizard-modal .dialog-buttons {
+    margin-top: 15px !important;
+    padding: 0 !important;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.witcher-wizard-modal .dialog-buttons button {
+    background: var(--wizard-accent, #8b0000) !important;
+    color: #fff !important;
+    border: 2px solid var(--wizard-gold, #b8860b) !important;
+    border-radius: 6px !important;
+    padding: 8px 20px !important;
+    font-family: 'Thewitcher', serif !important;
+    font-size: 1rem !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.witcher-wizard-modal .dialog-buttons button:hover {
+    background: var(--wizard-accent-hover, #a00000) !important;
+    box-shadow: 0 4px 15px rgba(139, 0, 0, 0.5), 0 0 5px var(--wizard-gold, #b8860b);
+    transform: translateY(-1px);
+}
+
+.witcher-wizard-modal .dialog-buttons button:active {
+    transform: translateY(1px);
+}
+
+.witcher-wizard .wizard-name-display {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--wizard-text-dark);
+    padding: 8px 12px;
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid var(--wizard-border);
+    border-radius: 6px;
+    text-align: center;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
 }

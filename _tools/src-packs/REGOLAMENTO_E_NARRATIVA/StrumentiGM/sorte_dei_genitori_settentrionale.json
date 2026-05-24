@@ -1,0 +1,99 @@
+{
+  "_id": "parfatenorth0000",
+  "name": "Sorte dei Genitori (Settentrionale)",
+  "type": "RollTable",
+  "formula": "1d10",
+  "description": "Tabella per la Sorte dei Genitori con origini Settentrionali.",
+  "results": [
+    {
+      "range": [1, 1],
+      "weight": 1,
+      "type": 0,
+      "text": "È rimasto ucciso nelle Guerre Settentrionali. Con ogni probabilità è il padre del personaggio, ma anche la madre potrebbe aver combattuto o essere una vittima.",
+      "_id": "pfatenorthres001",
+      "drawn": false
+    },
+    {
+      "range": [2, 2],
+      "weight": 1,
+      "type": 0,
+      "text": "Lo ha abbandonato nelle terre selvagge. Forse non poteva permettersi di mantenerlo; forse è stato un incidente.",
+      "_id": "pfatenorthres002",
+      "drawn": false
+    },
+    {
+      "range": [3, 3],
+      "weight": 1,
+      "type": 0,
+      "text": "È stato maledetto da un mago o dall'odio feroce di qualcuno che ha incontrato. La maledizione gli ha tolto la vita.",
+      "_id": "pfatenorthres003",
+      "drawn": false
+    },
+    {
+      "range": [4, 4],
+      "weight": 1,
+      "type": 0,
+      "text": "Lo ha venduto per soldi, o forse scambiato con qualche avere o servizio. I suoi genitori avevano più bisogno di denaro che di lui.",
+      "_id": "pfatenorthres004",
+      "drawn": false
+    },
+    {
+      "range": [5, 5],
+      "weight": 1,
+      "type": 0,
+      "text": "Si è unito a una banda criminale. Il personaggio l'ha incontrata spesso e a volte è stato costretto a collaborare.",
+      "_id": "pfatenorthres005",
+      "drawn": false
+    },
+    {
+      "range": [6, 6],
+      "weight": 1,
+      "type": 0,
+      "text": "È stato ucciso dai mostri. Sta al giocatore decidere di chi sia stato preda.",
+      "_id": "pfatenorthres006",
+      "drawn": false
+    },
+    {
+      "range": [7, 7],
+      "weight": 1,
+      "type": 0,
+      "text": "È stato accusato ingiustamente. Potrebbe essere stato sfruttato come capro espiatorio o forse si trovava solo nel posto sbagliato.",
+      "_id": "pfatenorthres007",
+      "drawn": false
+    },
+    {
+      "range": [8, 8],
+      "weight": 1,
+      "type": 0,
+      "text": "È morto in un'epidemia. Il personaggio non ha potuto fare altro che cercare di alleviare la sua agonia.",
+      "_id": "pfatenorthres008",
+      "drawn": false
+    },
+    {
+      "range": [9, 9],
+      "weight": 1,
+      "type": 0,
+      "text": "Si è schierato con Nilfgaard. Potrebbe aver venduto informazioni o semplicemente aver cambiato bandiera.",
+      "_id": "pfatenorthres009",
+      "drawn": false
+    },
+    {
+      "range": [10, 10],
+      "weight": 1,
+      "type": 0,
+      "text": "È stato rapito dai nobili. Probabilmente è la madre, che ha attirato le attenzioni di un signorotto locale o di suo figlio.",
+      "_id": "pfatenorthres010",
+      "drawn": false
+    }
+  ],
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": "14"
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "img": "icons/skills/social/diplomacy-handshake.webp"
+}

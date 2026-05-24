@@ -1,0 +1,99 @@
+{
+  "_id": "nemici0000000000",
+  "name": "Nemici",
+  "type": "RollTable",
+  "formula": "1d10",
+  "description": "Tabella per generare un nemico.",
+  "results": [
+    {
+      "range": [1, 1],
+      "weight": 1,
+      "type": 0,
+      "text": "Maschio - Ex amico - Ha aggredito la parte lesa",
+      "_id": "nemicires000001",
+      "drawn": false
+    },
+    {
+      "range": [2, 2],
+      "weight": 1,
+      "type": 0,
+      "text": "Femmina - Ex amante - Ha causato la perdita di una persona cara",
+      "_id": "nemicires000002",
+      "drawn": false
+    },
+    {
+      "range": [3, 3],
+      "weight": 1,
+      "type": 0,
+      "text": "Maschio - Parente - Ha causato una grave umiliazione",
+      "_id": "nemicires000003",
+      "drawn": false
+    },
+    {
+      "range": [4, 4],
+      "weight": 1,
+      "type": 0,
+      "text": "Femmina - Nemico d'infanzia - Ha causato una maledizione",
+      "_id": "nemicires000004",
+      "drawn": false
+    },
+    {
+      "range": [5, 5],
+      "weight": 1,
+      "type": 0,
+      "text": "Maschio - Cultista - Lo ha accusato di stregoneria illegale",
+      "_id": "nemicires000005",
+      "drawn": false
+    },
+    {
+      "range": [6, 6],
+      "weight": 1,
+      "type": 0,
+      "text": "Femmina - Bardo - Ha respinto i suoi sentimenti",
+      "_id": "nemicires000006",
+      "drawn": false
+    },
+    {
+      "range": [7, 7],
+      "weight": 1,
+      "type": 0,
+      "text": "Maschio - Soldato - Gli ha causato una ferita gravissima",
+      "_id": "nemicires000007",
+      "drawn": false
+    },
+    {
+      "range": [8, 8],
+      "weight": 1,
+      "type": 0,
+      "text": "Femmina - Bandito - Lo ha ricattato",
+      "_id": "nemicires000008",
+      "drawn": false
+    },
+    {
+      "range": [9, 9],
+      "weight": 1,
+      "type": 0,
+      "text": "Maschio - Duca/Duchessa - Ha sventato i suoi progetti",
+      "_id": "nemicires000009",
+      "drawn": false
+    },
+    {
+      "range": [10, 10],
+      "weight": 1,
+      "type": 0,
+      "text": "Femmina - Mago - Ha causato l'attacco di un mostro",
+      "_id": "nemicires000010",
+      "drawn": false
+    }
+  ],
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": "14"
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "img": "icons/skills/social/diplomacy-handshake.webp"
+}

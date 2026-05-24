@@ -1,0 +1,99 @@
+{
+  "_id": "amoreprob00000000",
+  "name": "Amore Problematico",
+  "type": "RollTable",
+  "formula": "1d10",
+  "description": "Tabella per generare un problema amoroso.",
+  "results": [
+    {
+      "range": [1, 1],
+      "weight": 1,
+      "type": 0,
+      "text": "La famiglia o gli amici dell'amore del personaggio lo odiano e non accettano la loro relazione.",
+      "_id": "amoreprobres0001",
+      "drawn": false
+    },
+    {
+      "range": [2, 2],
+      "weight": 1,
+      "type": 0,
+      "text": "L'amore del personaggio si guadagna da vivere come puttana e rifiuta di lasciare il suo lavoro.",
+      "_id": "amoreprobres0002",
+      "drawn": false
+    },
+    {
+      "range": [3, 3],
+      "weight": 1,
+      "type": 0,
+      "text": "L'amore del personaggio soffre di una maledizione minore, come paranoia o incubi orribili.",
+      "_id": "amoreprobres0003",
+      "drawn": false
+    },
+    {
+      "range": [4, 4],
+      "weight": 1,
+      "type": 0,
+      "text": "L'amore del personaggio va a letto con più persone e si rifiuta di smettere sebbene sia stata scoperta.",
+      "_id": "amoreprobres0004",
+      "drawn": false
+    },
+    {
+      "range": [5, 5],
+      "weight": 1,
+      "type": 0,
+      "text": "L'amore del personaggio è follemente geloso e non sopporta di vederlo con qualsiasi possibile rivale.",
+      "_id": "amoreprobres0005",
+      "drawn": false
+    },
+    {
+      "range": [6, 6],
+      "weight": 1,
+      "type": 0,
+      "text": "La coppia litiga in continuazione e niente può farli smettere a lungo. Tra i due finisce sempre a insulti.",
+      "_id": "amoreprobres0006",
+      "drawn": false
+    },
+    {
+      "range": [7, 7],
+      "weight": 1,
+      "type": 0,
+      "text": "I due hanno qualche genere di rivalità professionale. Spesso si soffiano i clienti.",
+      "_id": "amoreprobres0007",
+      "drawn": false
+    },
+    {
+      "range": [8, 8],
+      "weight": 1,
+      "type": 0,
+      "text": "La differenza razziale rende difficile la vita del personaggio e del suo amore.",
+      "_id": "amoreprobres0008",
+      "drawn": false
+    },
+    {
+      "range": [9, 9],
+      "weight": 1,
+      "type": 0,
+      "text": "L'amore del personaggio è già sposato. Potrebbe voler abbandonare il coniuge oppure no.",
+      "_id": "amoreprobres0009",
+      "drawn": false
+    },
+    {
+      "range": [10, 10],
+      "weight": 1,
+      "type": 0,
+      "text": "La famiglia o gli amici del personaggio odiano il suo amore e non accettano la loro relazione.",
+      "_id": "amoreprobres0010",
+      "drawn": false
+    }
+  ],
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": "14"
+  },
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "img": "icons/skills/social/diplomacy-handshake.webp"
+}
