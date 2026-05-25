@@ -71,6 +71,18 @@ Questi prompt sono progettati in formato panoramico `900x250` per mantenere l'es
 - **Prompt Consigliato**:
   > Ultra-realistic cinematic concept art of the shadowed silhouettes of an Elf with a bow, a stout Dwarf with an axe, and a Human warrior standing together against a bleak misty mountain backdrop. Dark and visceral fantasy videogame aesthetic, desolate and cold atmosphere, dark, ominous, and moody. Strong directional chiaroscuro lighting, cold moonlight breaking through stormy clouds. Highly detailed physical textures: matted fur, hand-forged worn metal, and aged leather. Desaturated color palette, dominated by dark blues, slate greys, deep blacks, and earth browns. Wide panoramic composition, shallow depth of field isolating key details, blurred misty background. Photorealistic CGI masterpiece, 8k resolution, sharp focus, 900x250 aspect ratio.
 
+### 📌 Bestiario (Banners da Rifare)
+
+#### 🖼️ **Mostri** (`witcher-monsters`)
+- **Target Path**: `modules/witcher-compendium/images/banners/banner_monsters.webp`
+- **Prompt Consigliato**:
+  > Ultra-realistic cinematic concept art of terrifying dark fantasy monsters lurking in the shadows, featuring a towering wooden Leshen and a snarling werewolf ready to strike. Dark and visceral fantasy videogame aesthetic, desolate and cold atmosphere, dark, ominous, and moody. Strong directional chiaroscuro lighting, cold moonlight breaking through stormy clouds. Highly detailed physical textures: matted fur, weathered ancient bark, bone, and ancient stone. Desaturated color palette, dominated by dark blues, slate greys, deep blacks, and earth browns, with limited warm glowing accents. Wide panoramic composition, shallow depth of field isolating key details, blurred misty forest background. Photorealistic CGI masterpiece, 8k resolution, sharp focus, 900x250 aspect ratio.
+
+#### 🖼️ **Personaggi** (`witcher-characters`)
+- **Target Path**: `modules/witcher-compendium/images/banners/banner_png.webp`
+- **Prompt Consigliato**:
+  > Ultra-realistic cinematic concept art of a gritty assembly of dark fantasy characters, including a scarred witcher, a hooded elven archer, and a dwarven warrior standing together. Dark and visceral fantasy videogame aesthetic, desolate and cold atmosphere, dark, ominous, and moody. Strong directional chiaroscuro lighting, warm pulsating candlelight in a dark stone tavern environment. Highly detailed physical textures: matted fur, hand-forged worn metal, weathered ancient stone, and aged leather. Desaturated color palette, dominated by dark blues, slate greys, deep blacks, and earth browns, with limited warm accents. Wide panoramic composition, shallow depth of field isolating key details, blurred misty background. Photorealistic CGI masterpiece, 8k resolution, sharp focus, 900x250 aspect ratio.
+
 ### 📌 Artigianato, Alchimia e Componenti
 
 #### 🖼️ **Componenti** (`witcher-components`)
