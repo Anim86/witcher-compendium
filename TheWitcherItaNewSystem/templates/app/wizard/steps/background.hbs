@@ -4,10 +4,9 @@
     <div class="background-container">
         {{!-- Selezione Nome, Regione, Patria ed Età sempre visibili in alto --}}
         <div class="background-section origin-selection-header">
-            <h3>Dettagli Personaggio & Origine</h3>
             <div class="origin-selectors-row">
-                <div class="form-group">
-                    <label>Nome Personaggio</label>
+                <div class="form-group field-name">
+                    <label>Nome</label>
                     <div class="input-with-roll">
                         <input type="text" name="name" value="{{character.name}}" placeholder="Nome del personaggio..." data-action="updateName">
                         <button type="button" class="btn-roll-inline" data-action="rollName" title="Tira Nome casuale">
@@ -16,24 +15,34 @@
                     </div>
                 </div>
 
-                <div class="form-group">
+                <div class="form-group field-gender">
+                    <label>Genere</label>
+                    <select name="gender" data-action="updateGender">
+                        <option value="">— Genere —</option>
+                        <option value="male" {{#if (eq character.gender "male")}}selected{{/if}}>{{localize "WITCHER.Actor.Gender.Male"}}</option>
+                        <option value="female" {{#if (eq character.gender "female")}}selected{{/if}}>{{localize "WITCHER.Actor.Gender.Female"}}</option>
+                        <option value="other" {{#if (eq character.gender "other")}}selected{{/if}}>{{localize "WITCHER.Actor.Gender.Other"}}</option>
+                    </select>
+                </div>
+
+                <div class="form-group field-homeoriginregion">
                     <label>Regione d'Origine</label>
                     <select name="originRegion" data-action="updateOriginRegion">
-                        <option value="">— Seleziona Regione —</option>
+                        <option value="">— Regione —</option>
                         {{#each regions}}
                         <option value="{{this.value}}" {{#if (eq ../character.originRegion this.value)}}selected{{/if}}>{{this.label}}</option>
                         {{/each}}
                     </select>
                 </div>
 
-                <div class="form-group">
+                <div class="form-group field-homeland">
                     <label>{{localize "WITCHER.Wizard.Background.Homeland"}}</label>
                     <select name="homeland" data-action="updateHomeland" {{#unless character.originRegion}}disabled{{/unless}}>
                         <option value="">
                             {{#if character.originRegion}}
                                 {{localize "WITCHER.Wizard.Background.SelectHomeland"}}
                             {{else}}
-                                — Seleziona prima una regione —
+                                — Seleziona una regione —
                             {{/if}}
                         </option>
                         {{#each homelands}}
@@ -42,7 +51,7 @@
                     </select>
                 </div>
 
-                <div class="form-group">
+                <div class="form-group field-age">
                     <label>{{localize "WITCHER.Wizard.Background.Age"}}</label>
                     <div class="input-with-roll">
                         <input type="number" 
@@ -64,8 +73,6 @@
             <div class="bg-grid-2col" style="margin-top: 15px;">
                 {{!-- Colonna sinistra: Famiglia & Genitori --}}
                 <div class="background-section">
-                    <h3>Famiglia & Genitori</h3>
-
                     <div class="form-group">
                         <label>Stato della Famiglia</label>
                         <select name="background.familyState" data-action="updateBackground">

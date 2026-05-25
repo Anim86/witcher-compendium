@@ -733,11 +733,30 @@ form.witcher-wizard .wizard-content {
 .witcher-wizard .step-background .origin-selectors-row {
     display: flex;
     gap: 15px;
+    align-items: flex-start;
 }
 
 .witcher-wizard .step-background .origin-selectors-row .form-group {
     flex: 1;
     margin-bottom: 0;
+}
+
+.witcher-wizard .step-background .origin-selectors-row .field-homeoriginregion
+{    
+    flex: 1.3;
+    min-width: 0;
+}
+
+.witcher-wizard .step-background .origin-selectors-row .field-name,
+.witcher-wizard .step-background .origin-selectors-row .field-homeland {
+    flex: 1.5;
+    min-width: 0;
+}
+
+.witcher-wizard .step-background .origin-selectors-row .field-gender,
+.witcher-wizard .step-background .origin-selectors-row .field-age {
+    flex: 0.6;
+    min-width: 120px;
 }
 
 .witcher-wizard .step-background .background-section {

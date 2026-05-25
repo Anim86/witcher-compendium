@@ -16,6 +16,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         // Character Data
         this.characterData = {
             name: this._getRandomFantasyName("umano"),
+            gender: "",
             race: null,
             originRegion: "",
             homeland: "",
@@ -88,6 +89,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         adjustSkill: function(event, target) { this._adjustSkill(event, target); },
         updateAge: function(event, target) { this._updateAge(event, target); },
         updateName: function(event, target) { this._updateName(event, target); },
+        updateGender: function(event, target) { this._updateGender(event, target); },
         rollAge: function(event, target) { this._rollAge(event, target); },
         rollName: function(event, target) { this._rollName(event, target); },
         updateMoney: function(event, target) { this._updateMoney(event, target); },
@@ -699,6 +701,11 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
 
     async _updateName(event, target) {
         this.characterData.name = target.value;
+        this.render(true);
+    }
+
+    async _updateGender(event, target) {
+        this.characterData.gender = target.value;
         this.render(true);
     }
 
@@ -1410,6 +1417,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             type: "character",
             img: this.characterData.img || "icons/svg/mystery-man.svg",
             system: {
+                gender: this.characterData.gender || "",
                 stats: {},
                 details: {
                     race: this.characterData.race?.name || "",
