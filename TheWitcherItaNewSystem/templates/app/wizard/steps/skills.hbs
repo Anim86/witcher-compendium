@@ -25,30 +25,39 @@
                 </div>
                 <div class="skills-grid compact-skills">
                     {{#each professionSkills}}
-                    <div class="skill-row {{#if isDifficult}}skill-difficult{{/if}}" data-skill="{{key}}">
+                    <div class="skill-row {{#if isDifficult}}skill-difficult{{/if}} {{#if isNativeLanguage}}skill-native{{/if}}" data-skill="{{key}}">
                         <label class="skill-label">
-                            {{name}}
+                            <span class="skill-name-text">{{name}}</span>
+                            {{#if attributeLabel}}<span class="skill-attr-badge">{{attributeLabel}}</span>{{/if}}
                             {{#if isDifficult}}<span class="cost-badge">(Difficile ×2)</span>{{/if}}
+                            {{#if isNativeLanguage}}<span class="native-badge"><i class="fa-solid fa-crown"></i> Madrelingua</span>{{/if}}
                         </label>
-                        <div class="skill-controls compact">
-                            <button type="button" data-action="adjustSkill" data-skill="{{key}}" data-type="profession" data-delta="-1" class="btn-sm">
-                                <i class="fa-solid fa-minus"></i>
+                        <div class="skill-controls">
+                            <button type="button" class="ctrl-btn minus" data-action="adjustSkill" data-skill="{{key}}" data-type="profession" data-delta="-1">
+                                <i class="fa-solid fa-chevron-left"></i>
                             </button>
                             <input type="number"
+                                   class="skill-input"
                                    data-action="adjustSkill"
                                    data-skill="{{key}}"
                                    data-type="profession"
                                    name="skills.{{key}}"
                                    value="{{value}}"
-                                   min="1"
-                                   max="6"
-                                   class="skill-input-sm">
-                            <button type="button" data-action="adjustSkill" data-skill="{{key}}" data-type="profession" data-delta="1" class="btn-sm">
-                                <i class="fa-solid fa-plus"></i>
+                                   min="{{#if isNativeLanguage}}8{{else}}1{{/if}}"
+                                   max="{{#if isNativeLanguage}}10{{else}}6{{/if}}"
+                                   readonly>
+                            <button type="button" class="ctrl-btn plus" data-action="adjustSkill" data-skill="{{key}}" data-type="profession" data-delta="1">
+                                <i class="fa-solid fa-chevron-right"></i>
                             </button>
                         </div>
                     </div>
                     {{/each}}
+                    {{#unless professionSkills.length}}
+                    <div class="no-pickup-skills" style="grid-column: 1 / -1; margin-top: 10px;">
+                        <i class="fa-solid fa-circle-exclamation"></i>
+                        <span>La professione selezionata non ha abilità configurate, oppure le abilità non sono state trovate nel compendio. Apri la scheda della Professione (es. Criminale) nel compendio e assicurati di aver selezionato le "Abilità di Professione".</span>
+                    </div>
+                    {{/unless}}
                 </div>
             </div>
 
@@ -67,7 +76,7 @@
                         <select name="new-pickup-skill" id="new-pickup-skill-select">
                             <option value="">-- {{localize "WITCHER.Wizard.Skills.Add"}} --</option>
                             {{#each availablePickupSkills}}
-                            <option value="{{key}}">{{name}} {{#if (eq cost 2)}}(Difficile ×2){{/if}}</option>
+                            <option value="{{key}}">{{name}} {{#if attributeLabel}}[{{attributeLabel}}]{{/if}} {{#if (eq cost 2)}}(Difficile ×2){{/if}}</option>
                             {{/each}}
                         </select>
                         <button type="button" data-action="addPickupSkill" class="btn-add">
@@ -76,28 +85,38 @@
                     </div>
                 </div>
 
+                {{#unless pickupSkills.length}}
+                <div class="no-pickup-skills">
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span>Non hai ancora aggiunto nessuna abilità di pickup. Seleziona un'abilità dal menu a tendina sopra e premi "Aggiungi".</span>
+                </div>
+                {{/unless}}
+
                 <div class="skills-grid compact-skills pickup-grid">
                     {{#each pickupSkills}}
-                    <div class="skill-row {{#if isDifficult}}skill-difficult{{/if}}" data-skill="{{key}}">
+                    <div class="skill-row {{#if isDifficult}}skill-difficult{{/if}} {{#if isNativeLanguage}}skill-native{{/if}}" data-skill="{{key}}">
                         <label class="skill-label">
-                            {{name}}
+                            <span class="skill-name-text">{{name}}</span>
+                            {{#if attributeLabel}}<span class="skill-attr-badge">{{attributeLabel}}</span>{{/if}}
                             {{#if isDifficult}}<span class="cost-badge">(Difficile ×2)</span>{{/if}}
+                            {{#if isNativeLanguage}}<span class="native-badge"><i class="fa-solid fa-crown"></i> Madrelingua</span>{{/if}}
                         </label>
-                        <div class="skill-controls compact">
-                            <button type="button" data-action="adjustSkill" data-skill="{{key}}" data-type="pickup" data-delta="-1" class="btn-sm">
-                                <i class="fa-solid fa-minus"></i>
+                        <div class="skill-controls">
+                            <button type="button" class="ctrl-btn minus" data-action="adjustSkill" data-skill="{{key}}" data-type="pickup" data-delta="-1">
+                                <i class="fa-solid fa-chevron-left"></i>
                             </button>
                             <input type="number"
+                                   class="skill-input"
                                    data-action="adjustSkill"
                                    data-skill="{{key}}"
                                    data-type="pickup"
                                    name="skills.{{key}}"
                                    value="{{value}}"
-                                   min="0"
-                                   max="6"
-                                   class="skill-input-sm">
-                            <button type="button" data-action="adjustSkill" data-skill="{{key}}" data-type="pickup" data-delta="1" class="btn-sm">
-                                <i class="fa-solid fa-plus"></i>
+                                   min="{{#if isNativeLanguage}}8{{else}}0{{/if}}"
+                                   max="{{#if isNativeLanguage}}10{{else}}6{{/if}}"
+                                   readonly>
+                            <button type="button" class="ctrl-btn plus" data-action="adjustSkill" data-skill="{{key}}" data-type="pickup" data-delta="1">
+                                <i class="fa-solid fa-chevron-right"></i>
                             </button>
                         </div>
                     </div>

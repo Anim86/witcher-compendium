@@ -439,9 +439,56 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
     _getProfessionSkillNames() {
         if (!this.characterData.profession) return [];
         const raw = this.characterData.profession.system?.professionSkills;
+        if (raw instanceof Set) return Array.from(raw);
         if (Array.isArray(raw)) return raw;
         if (typeof raw === "string") return raw.split(",").map(s => s.trim()).filter(Boolean);
+        if (raw && typeof raw === "object" && typeof raw.forEach === "function") {
+            const arr = [];
+            raw.forEach(x => arr.push(x));
+            return arr;
+        }
         return [];
+    }
+
+    _findSkillByKeyOrName(keyOrName) {
+        if (!keyOrName) return null;
+        const lowerKeyOrName = keyOrName.toLowerCase();
+
+        // 1. Try to find entry in CONFIG.WITCHER.skillMap by key or by entry.name
+        let entry = CONFIG.WITCHER.skillMap[keyOrName];
+        if (!entry) {
+            entry = Object.values(CONFIG.WITCHER.skillMap).find(e => {
+                if (e.name && e.name.toLowerCase() === lowerKeyOrName) return true;
+                return game.i18n.localize(e.label).toLowerCase() === lowerKeyOrName;
+            });
+        }
+
+        // Get the localized label and the technical name
+        const localizedLabel = entry ? game.i18n.localize(entry.label).toLowerCase() : lowerKeyOrName;
+        const technicalName = entry?.name ? entry.name.toLowerCase() : lowerKeyOrName;
+
+        // 2. Search in allSkills matching localized label, technical name, or keyOrName
+        return this.allSkills.find(s => {
+            const sName = s.name.toLowerCase();
+            return sName === localizedLabel || sName === technicalName || sName === lowerKeyOrName;
+        });
+    }
+
+    _getSkillInfo(skill) {
+        const entry = Object.values(CONFIG.WITCHER.skillMap).find(e => {
+            if (e.name && e.name.toLowerCase() === skill.name.toLowerCase()) return true;
+            return game.i18n.localize(e.label).toLowerCase() === skill.name.toLowerCase();
+        });
+        
+        let attributeLabel = "";
+        if (entry?.attribute) {
+            attributeLabel = game.i18n.localize(entry.attribute.labelShort);
+        }
+        
+        return {
+            attributeLabel: attributeLabel,
+            isNativeLanguage: this._isNativeLanguage(skill.name)
+        };
     }
 
     _getProfessionSkills() {
@@ -450,15 +497,18 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         console.log("TheWitcherItaNewSystem | _getProfessionSkills | Names to find:", names);
         console.log("TheWitcherItaNewSystem | _getProfessionSkills | Total skills in allSkills:", this.allSkills.length);
         for (const name of names) {
-            const skill = this.allSkills.find(s => s.name.toLowerCase() === name.toLowerCase());
+            const skill = this._findSkillByKeyOrName(name);
             if (skill) {
                 const cost = this._getSkillCost(skill);
+                const info = this._getSkillInfo(skill);
                 result.push({
                     key: skill._id,
                     name: skill.name,
                     value: this.characterData.skills[skill._id] || 1, // Start at 1
                     cost: cost,
-                    isDifficult: cost === 2
+                    isDifficult: cost === 2,
+                    isNativeLanguage: info.isNativeLanguage,
+                    attributeLabel: info.attributeLabel
                 });
                 
                 // Initialize default value if missing
@@ -478,27 +528,37 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             const skill = this.allSkills.find(s => s._id === id);
             if (!skill) return null;
             const cost = this._getSkillCost(skill);
+            const info = this._getSkillInfo(skill);
             return {
                 key: skill._id,
                 name: skill.name,
                 value: this.characterData.skills[skill._id] || 0,
                 cost: cost,
-                isDifficult: cost === 2
+                isDifficult: cost === 2,
+                isNativeLanguage: info.isNativeLanguage,
+                attributeLabel: info.attributeLabel
             };
         }).filter(s => s !== null);
     }
 
     _getAvailablePickupSkills() {
-        const profNames = this._getProfessionSkillNames().map(n => n.toLowerCase());
+        const profNames = this._getProfessionSkillNames();
+        const resolvedProfSkillIds = profNames.map(name => {
+            const s = this._findSkillByKeyOrName(name);
+            return s?._id;
+        }).filter(Boolean);
+
         return this.allSkills.filter(s => {
-            const isProf = profNames.includes(s.name.toLowerCase());
+            const isProf = resolvedProfSkillIds.includes(s._id);
             const isSelected = this.characterData.selectedPickupSkills.includes(s._id);
             return !isProf && !isSelected;
         }).map(s => {
+            const info = this._getSkillInfo(s);
             return {
                 key: s._id,
                 name: s.name,
-                cost: this._getSkillCost(s)
+                cost: this._getSkillCost(s),
+                attributeLabel: info.attributeLabel
             };
         });
     }
@@ -856,13 +916,9 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             this.characterData.profession = prof;
             if (prof.img) this.characterData.img = prof.img;
             
-            // Reinitialize new profession skills logic handled in _getProfessionSkills normally
-            // But we must prepopulate characterData.skills keys here:
-            const names = typeof prof.system?.professionSkills === "string"
-                ? prof.system.professionSkills.split(",").map(s => s.trim()).filter(Boolean)
-                : [];
+            const names = this._getProfessionSkillNames();
             names.forEach(name => {
-                const s = this.allSkills.find(sk => sk.name.toLowerCase() === name.toLowerCase());
+                const s = this._findSkillByKeyOrName(name);
                 if (s) {
                     // Only set to 1 if it's not already set (e.g. by native language at 8)
                     if (this.characterData.skills[s._id] === undefined || this.characterData.skills[s._id] === 0) {
@@ -920,9 +976,19 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         const type = target.dataset.type;
         const isProg = type === "profession";
 
-        // Both are capped at 6. Profession starts at 1, Pickup starts at 0.
-        const minVal = isProg ? 1 : 0;
-        val = Math.max(minVal, Math.min(6, val));
+        const skill = this.allSkills.find(s => s._id === skillId);
+        const isNative = skill ? this._isNativeLanguage(skill.name) : false;
+
+        let minVal, maxVal;
+        if (isNative) {
+            minVal = 8;
+            maxVal = 10;
+        } else {
+            minVal = isProg ? 1 : 0;
+            maxVal = 6;
+        }
+
+        val = Math.max(minVal, Math.min(maxVal, val));
 
         const oldVal = this.characterData.skills[skillId] || 0;
         this.characterData.skills[skillId] = val;
