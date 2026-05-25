@@ -2,6 +2,8 @@
 
 Questo report fornisce una panoramica completa di tutte le immagini associate alle **Categorie dei Compendi (Banner)** e alle voci del **Bestiario (Animali, Mostri, Personaggi)**. Indica se sono presenti immagini personalizzate, placeholder di Foundry/Sistema, o se i file sono mancanti, includendo le relative dimensioni in pixel.
 
+Include inoltre l'archivio completo di tutti i **Prompt AI Consigliati** pronti per la generazione dei banner mancanti.
+
 ---
 
 ## 📁 1. Banner delle Categorie del Compendio (35 Categorie)
@@ -10,45 +12,214 @@ Questa tabella elenca tutti i compendii configurati nel modulo e lo stato dei ri
 
 | Categoria Compendio | Nome Tecnico | Path Immagine | Nome File | Dimensioni (Pixel) | Stato |
 | :--- | :--- | :--- | :--- | :---: | :--- |
-| **Abilità** | `witcher-skills` | `-` | `-` | - | ⚠️ Nessun Banner Assegnato (Placeholder) |
+| **Abilità** | `witcher-skills` | `-` | `-` | - | ⚠️ Nessun Banner (In Attesa Generazione) |
 | **Animali** | `witcher-animals` | `modules/witcher-compendium/images/banners/banner_animals.webp` | `banner_animals.webp` | 900x250 px | ✅ Personalizzata |
 | **Armature** | `witcher-armor` | `modules/witcher-compendium/images/banners/banner_armor.webp` | `banner_armor.webp` | 900x250 px | ✅ Personalizzata |
 | **Armi** | `witcher-weapons` | `modules/witcher-compendium/images/banners/banner_weapons.webp` | `banner_weapons.webp` | 900x250 px | ✅ Personalizzata |
-| **Componenti** | `witcher-components` | `-` | `-` | - | ⚠️ Nessun Banner Assegnato (Placeholder) |
-| **Doni Magici** | `witcher-gifts` | `-` | `-` | - | ⚠️ Nessun Banner Assegnato (Placeholder) |
-| **Fatture** | `witcher-hexes` | `-` | `-` | - | ⚠️ Nessun Banner Assegnato (Placeholder) |
-| **Ferite Critiche** | `witcher-critical-wounds` | `-` | `-` | - | ⚠️ Nessun Banner Assegnato (Placeholder) |
-| **Geografia (Nazioni e Luoghi)** | `witcher-geografia` | `-` | `-` | - | ⚠️ Nessun Banner Assegnato (Placeholder) |
-| **Incantesimi** | `witcher-spells` | `-` | `-` | - | ⚠️ Nessun Banner Assegnato (Placeholder) |
-| **Indagini (DW)** | `witcher-investigations` | `-` | `-` | - | ⚠️ Nessun Banner Assegnato (Placeholder) |
-| **Invocazioni Chaos** | `witcher-invocations` | `-` | `-` | - | ⚠️ Nessun Banner Assegnato (Placeholder) |
-| **Lore** | `witcher-lore` | `-` | `-` | - | ⚠️ Nessun Banner Assegnato (Placeholder) |
-| **Maledizioni** | `witcher-curses` | `-` | `-` | - | ⚠️ Nessun Banner Assegnato (Placeholder) |
+| **Componenti** | `witcher-components` | `-` | `-` | - | ⚠️ Nessun Banner (In Attesa Generazione) |
+| **Doni Magici** | `witcher-gifts` | `-` | `-` | - | ⚠️ Nessun Banner (In Attesa Generazione) |
+| **Fatture** | `witcher-hexes` | `-` | `-` | - | ⚠️ Nessun Banner (In Attesa Generazione) |
+| **Ferite Critiche** | `witcher-critical-wounds` | `-` | `-` | - | ⚠️ Nessun Banner (In Attesa Generazione) |
+| **Geografia (Nazioni e Luoghi)** | `witcher-geografia` | `-` | `-` | - | ⚠️ Nessun Banner (In Attesa Generazione) |
+| **Incantesimi** | `witcher-spells` | `-` | `-` | - | ⚠️ Nessun Banner (In Attesa Generazione) |
+| **Indagini (DW)** | `witcher-investigations` | `-` | `-` | - | ⚠️ Nessun Banner (In Attesa Generazione) |
+| **Invocazioni Chaos** | `witcher-invocations` | `-` | `-` | - | ⚠️ Nessun Banner (In Attesa Generazione) |
+| **Lore** | `witcher-lore` | `-` | `-` | - | ⚠️ Nessun Banner (In Attesa Generazione) |
+| **Maledizioni** | `witcher-curses` | `-` | `-` | - | ⚠️ Nessun Banner (In Attesa Generazione) |
 | **Mostri** | `witcher-monsters` | `modules/witcher-compendium/images/banners/banner_monsters.webp` | `banner_monsters.webp` | 900x250 px | ✅ Personalizzata |
-| **Mutageni** | `witcher-mutations` | `-` | `-` | - | ⚠️ Nessun Banner Assegnato (Placeholder) |
-| **Mutazioni (TC)** | `witcher-mutazioni-tc` | `-` | `-` | - | ⚠️ Nessun Banner Assegnato (Placeholder) |
-| **Oggetti Magici (TC)** | `witcher-magic-items` | `-` | `-` | - | ⚠️ Nessun Banner Assegnato (Placeholder) |
-| **Oggetti Vari** | `witcher-equipment` | `-` | `-` | - | ⚠️ Nessun Banner Assegnato (Placeholder) |
-| **Oggetti Witcher** | `witcher-special` | `-` | `-` | - | ⚠️ Nessun Banner Assegnato (Placeholder) |
+| **Mutageni** | `witcher-mutations` | `-` | `-` | - | ⚠️ Nessun Banner (In Attesa Generazione) |
+| **Mutazioni (TC)** | `witcher-mutazioni-tc` | `-` | `-` | - | ⚠️ Nessun Banner (In Attesa Generazione) |
+| **Oggetti Magici (TC)** | `witcher-magic-items` | `-` | `-` | - | ⚠️ Nessun Banner (In Attesa Generazione) |
+| **Oggetti Vari** | `witcher-equipment` | `-` | `-` | - | ⚠️ Nessun Banner (In Attesa Generazione) |
+| **Oggetti Witcher** | `witcher-special` | `-` | `-` | - | ⚠️ Nessun Banner (In Attesa Generazione) |
 | **Personaggi** | `witcher-characters` | `modules/witcher-compendium/images/banners/banner_png.webp` | `banner_png.webp` | 900x250 px | ✅ Personalizzata |
-| **Pozioni** | `witcher-potions` | `-` | `-` | - | ⚠️ Nessun Banner Assegnato (Placeholder) |
-| **Professioni** | `witcher-professions` | `-` | `-` | - | ⚠️ Nessun Banner Assegnato (Placeholder) |
-| **Razze** | `witcher-races` | `-` | `-` | - | ⚠️ Nessun Banner Assegnato (Placeholder) |
-| **Regole di Supporto GM (Necromanzia)** | `witcher-necromanzia` | `-` | `-` | - | ⚠️ Nessun Banner Assegnato (Placeholder) |
-| **Ricette** | `witcher-formulas` | `-` | `-` | - | ⚠️ Nessun Banner Assegnato (Placeholder) |
-| **Rituali** | `witcher-rituals` | `-` | `-` | - | ⚠️ Nessun Banner Assegnato (Placeholder) |
-| **Rune, Glifi e Reliquie** | `witcher-runes` | `-` | `-` | - | ⚠️ Nessun Banner Assegnato (Placeholder) |
-| **Schemi** | `witcher-schematics` | `-` | `-` | - | ⚠️ Nessun Banner Assegnato (Placeholder) |
-| **Segni Witcher** | `witcher-signs` | `-` | `-` | - | ⚠️ Nessun Banner Assegnato (Placeholder) |
-| **Tabelle: Critici e Fumble** | `witcher-rolltable-critici` | `-` | `-` | - | ⚠️ Nessun Banner Assegnato (Placeholder) |
-| **Tabelle: Disastri Magici** | `witcher-rolltable-disastri` | `-` | `-` | - | ⚠️ Nessun Banner Assegnato (Placeholder) |
-| **Tabelle: Strumenti GM** | `witcher-rolltable-strumentigm` | `-` | `-` | - | ⚠️ Nessun Banner Assegnato (Placeholder) |
-| **Trasporti** | `witcher-transports` | `-` | `-` | - | ⚠️ Nessun Banner Assegnato (Placeholder) |
-| **Trofei** | `witcher-trophies` | `-` | `-` | - | ⚠️ Nessun Banner Assegnato (Placeholder) |
+| **Pozioni** | `witcher-potions` | `-` | `-` | - | ⚠️ Nessun Banner (In Attesa Generazione) |
+| **Professioni** | `witcher-professions` | `-` | `-` | - | ⚠️ Nessun Banner (In Attesa Generazione) |
+| **Razze** | `witcher-races` | `-` | `-` | - | ⚠️ Nessun Banner (In Attesa Generazione) |
+| **Regole di Supporto GM (Necromanzia)** | `witcher-necromanzia` | `-` | `-` | - | ⚠️ Nessun Banner (In Attesa Generazione) |
+| **Ricette** | `witcher-formulas` | `-` | `-` | - | ⚠️ Nessun Banner (In Attesa Generazione) |
+| **Rituali** | `witcher-rituals` | `-` | `-` | - | ⚠️ Nessun Banner (In Attesa Generazione) |
+| **Rune, Glifi e Reliquie** | `witcher-runes` | `-` | `-` | - | ⚠️ Nessun Banner (In Attesa Generazione) |
+| **Schemi** | `witcher-schematics` | `-` | `-` | - | ⚠️ Nessun Banner (In Attesa Generazione) |
+| **Segni Witcher** | `witcher-signs` | `-` | `-` | - | ⚠️ Nessun Banner (In Attesa Generazione) |
+| **Tabelle: Critici e Fumble** | `witcher-rolltable-critici` | `-` | `-` | - | ⚠️ Nessun Banner (In Attesa Generazione) |
+| **Tabelle: Disastri Magici** | `witcher-rolltable-disastri` | `-` | `-` | - | ⚠️ Nessun Banner (In Attesa Generazione) |
+| **Tabelle: Strumenti GM** | `witcher-rolltable-strumentigm` | `-` | `-` | - | ⚠️ Nessun Banner (In Attesa Generazione) |
+| **Trasporti** | `witcher-transports` | `-` | `-` | - | ⚠️ Nessun Banner (In Attesa Generazione) |
+| **Trofei** | `witcher-trophies` | `-` | `-` | - | ⚠️ Nessun Banner (In Attesa Generazione) |
 
 ---
 
-## 🐾 2. Immagini delle Voci del Bestiario (Animali, Mostri e Personaggi)
+## 🖼️ 2. Archivio Prompt AI per la Generazione dei Banner Mancanti (30 Banner)
+
+Questi prompt sono progettati in formato panoramico `900x250` per mantenere l'estetica coerente del modulo (*dark/visceral fantasy cinematic concept art*, illuminazione drammatica chiaroscuro, toni desaturati e freddi).
+
+### 📌 Meccaniche e Personaggi
+
+#### 🖼️ **Abilità** (`witcher-skills`)
+- **Target Path**: `modules/witcher-compendium/images/banners/banner_skills.webp`
+- **Prompt Consigliato**:
+  > Ultra-realistic cinematic concept art of a diverse group of gritty adventurers showing off their combat stances and stealth skills in a dark tavern. Dark and visceral fantasy videogame aesthetic, desolate and cold atmosphere, dark, ominous, and moody. Strong directional chiaroscuro lighting, warm pulsating candlelight. Highly detailed physical textures: matted fur, hand-forged worn metal, weathered ancient stone, and aged leather. Desaturated color palette, dominated by dark blues, slate greys, deep blacks, and earth browns, with limited warm accents. Wide panoramic composition, shallow depth of field isolating key details, blurred misty background. Photorealistic CGI masterpiece, 8k resolution, sharp focus, 900x250 aspect ratio.
+
+#### 🖼️ **Professioni** (`witcher-professions`)
+- **Target Path**: `modules/witcher-compendium/images/banners/banner_professions.webp`
+- **Prompt Consigliato**:
+  > Ultra-realistic cinematic concept art of a collection of professional tools of the trade resting on a table, including a bard's lute, a merchant's brass scale, and a craftsman's heavy hammer. Dark and visceral fantasy videogame aesthetic, desolate and cold atmosphere, dark, ominous, and moody. Strong directional chiaroscuro lighting, warm pulsating candlelight. Highly detailed physical textures: hand-forged worn metal, weathered ancient stone, and aged leather. Desaturated color palette, dominated by dark blues, slate greys, deep blacks, and earth browns, with limited warm accents. Wide panoramic composition, shallow depth of field isolating key details, blurred misty background. Photorealistic CGI masterpiece, 8k resolution, sharp focus, 900x250 aspect ratio.
+
+#### 🖼️ **Razze** (`witcher-races`)
+- **Target Path**: `modules/witcher-compendium/images/banners/banner_races.webp`
+- **Prompt Consigliato**:
+  > Ultra-realistic cinematic concept art of the shadowed silhouettes of an Elf with a bow, a stout Dwarf with an axe, and a Human warrior standing together against a bleak misty mountain backdrop. Dark and visceral fantasy videogame aesthetic, desolate and cold atmosphere, dark, ominous, and moody. Strong directional chiaroscuro lighting, cold moonlight breaking through stormy clouds. Highly detailed physical textures: matted fur, hand-forged worn metal, and aged leather. Desaturated color palette, dominated by dark blues, slate greys, deep blacks, and earth browns. Wide panoramic composition, shallow depth of field isolating key details, blurred misty background. Photorealistic CGI masterpiece, 8k resolution, sharp focus, 900x250 aspect ratio.
+
+### 📌 Artigianato, Alchimia e Componenti
+
+#### 🖼️ **Componenti** (`witcher-components`)
+- **Target Path**: `modules/witcher-compendium/images/banners/banner_components.webp`
+- **Prompt Consigliato**:
+  > Ultra-realistic cinematic concept art of a dark wooden table covered in scattered raw monster parts, glowing ores, and bundles of wild herbs. Dark and visceral fantasy videogame aesthetic, desolate and cold atmosphere, dark, ominous, and moody. Strong directional chiaroscuro lighting, warm pulsating candlelight. Highly detailed physical textures: matted fur, weathered ancient stone, and aged leather. Desaturated color palette, dominated by dark blues, slate greys, deep blacks, and earth browns, with limited warm accents. Wide panoramic composition, shallow depth of field isolating key details, blurred misty background. Photorealistic CGI masterpiece, 8k resolution, sharp focus, 900x250 aspect ratio.
+
+#### 🖼️ **Mutageni** (`witcher-mutations`)
+- **Target Path**: `modules/witcher-compendium/images/banners/banner_mutations.webp`
+- **Prompt Consigliato**:
+  > Ultra-realistic cinematic concept art of a dark alchemical laboratory featuring glowing organic mutagens in glass vials pulsing with unnatural life. Dark and visceral fantasy videogame aesthetic, desolate and cold atmosphere, dark, ominous, and moody. Strong directional chiaroscuro lighting, warm pulsating candlelight in a dark stone environment. Highly detailed physical textures: hand-forged worn metal, weathered ancient stone, and aged leather. Desaturated color palette, dominated by dark blues, slate greys, deep blacks, and earth browns, with limited warm accents. Wide panoramic composition, shallow depth of field isolating key details, blurred misty background. Photorealistic CGI masterpiece, 8k resolution, sharp focus, 900x250 aspect ratio.
+
+#### 🖼️ **Pozioni** (`witcher-potions`)
+- **Target Path**: `modules/witcher-compendium/images/banners/banner_potions.webp`
+- **Prompt Consigliato**:
+  > Ultra-realistic cinematic concept art of a dusty wooden shelf lined with intricate glass vials filled with toxic-looking brightly colored alchemical liquids. Dark and visceral fantasy videogame aesthetic, desolate and cold atmosphere, dark, ominous, and moody. Strong directional chiaroscuro lighting, warm pulsating candlelight. Highly detailed physical textures: hand-forged worn metal and weathered ancient stone. Desaturated color palette, dominated by dark blues, slate greys, deep blacks, and earth browns, with limited warm accents. Wide panoramic composition, shallow depth of field isolating key details, blurred misty background. Photorealistic CGI masterpiece, 8k resolution, sharp focus, 900x250 aspect ratio.
+
+#### 🖼️ **Ricette** (`witcher-formulas`)
+- **Target Path**: `modules/witcher-compendium/images/banners/banner_formulas.webp`
+- **Prompt Consigliato**:
+  > Ultra-realistic cinematic concept art of scattered ancient parchment scrolls covered in complex alchemical formulas and detailed ingredient sketches. Dark and visceral fantasy videogame aesthetic, desolate and cold atmosphere, dark, ominous, and moody. Strong directional chiaroscuro lighting, warm pulsating candlelight in a dark stone environment. Highly detailed physical textures: weathered ancient stone and aged leather. Desaturated color palette, dominated by dark blues, slate greys, deep blacks, and earth browns. Wide panoramic composition, shallow depth of field isolating key details, blurred misty background. Photorealistic CGI masterpiece, 8k resolution, sharp focus, 900x250 aspect ratio.
+
+#### 🖼️ **Schemi** (`witcher-schematics`)
+- **Target Path**: `modules/witcher-compendium/images/banners/banner_schematics.webp`
+- **Prompt Consigliato**:
+  > Ultra-realistic cinematic concept art of detailed weapon and plate armor blueprints drawn on thick parchment pinned to a rugged wooden board. Dark and visceral fantasy videogame aesthetic, desolate and cold atmosphere, dark, ominous, and moody. Strong directional chiaroscuro lighting, warm pulsating candlelight. Highly detailed physical textures: hand-forged worn metal, weathered ancient stone, and aged leather. Desaturated color palette, dominated by dark blues, slate greys, deep blacks, and earth browns. Wide panoramic composition, shallow depth of field isolating key details, blurred misty background. Photorealistic CGI masterpiece, 8k resolution, sharp focus, 900x250 aspect ratio.
+
+### 📌 Magia e Occulto
+
+#### 🖼️ **Incantesimi** (`witcher-spells`)
+- **Target Path**: `modules/witcher-compendium/images/banners/banner_spells.webp`
+- **Prompt Consigliato**:
+  > Ultra-realistic cinematic concept art of a dramatic burst of elemental magic, wild fire and lightning clashing in the dark cast by unseen hands. Dark and visceral fantasy videogame aesthetic, desolate and cold atmosphere, dark, ominous, and moody. Strong directional chiaroscuro lighting, illuminating a dark stone environment. Highly detailed physical textures: weathered ancient stone and aged leather. Desaturated color palette, dominated by dark blues, slate greys, deep blacks, and earth browns, with limited warm glowing accents. Wide panoramic composition, shallow depth of field isolating key details, blurred misty background. Photorealistic CGI masterpiece, 8k resolution, sharp focus, 900x250 aspect ratio.
+
+#### 🖼️ **Invocazioni Chaos** (`witcher-invocations`)
+- **Target Path**: `modules/witcher-compendium/images/banners/banner_invocations.webp`
+- **Prompt Consigliato**:
+  > Ultra-realistic cinematic concept art of a hooded priest kneeling at a forgotten ancient stone shrine channeling blinding divine light from above. Dark and visceral fantasy videogame aesthetic, desolate and cold atmosphere, dark, ominous, and moody. Strong directional chiaroscuro lighting, cold moonlight breaking through stormy clouds. Highly detailed physical textures: hand-forged worn metal, weathered ancient stone, and aged leather. Desaturated color palette, dominated by dark blues, slate greys, deep blacks, and earth browns, with limited warm accents. Wide panoramic composition, shallow depth of field isolating key details, blurred misty background. Photorealistic CGI masterpiece, 8k resolution, sharp focus, 900x250 aspect ratio.
+
+#### 🖼️ **Rituali** (`witcher-rituals`)
+- **Target Path**: `modules/witcher-compendium/images/banners/banner_rituals.webp`
+- **Prompt Consigliato**:
+  > Ultra-realistic cinematic concept art of a glowing arcane chalk circle inscribed on a stone floor, surrounded by melting black candles and offering bowls. Dark and visceral fantasy videogame aesthetic, desolate and cold atmosphere, dark, ominous, and moody. Strong directional chiaroscuro lighting, warm pulsating candlelight in a dark stone environment. Highly detailed physical textures: weathered ancient stone and aged leather. Desaturated color palette, dominated by dark blues, slate greys, deep blacks, and earth browns, with limited warm accents. Wide panoramic composition, shallow depth of field isolating key details, blurred misty background. Photorealistic CGI masterpiece, 8k resolution, sharp focus, 900x250 aspect ratio.
+
+#### 🖼️ **Fatture** (`witcher-hexes`)
+- **Target Path**: `modules/witcher-compendium/images/banners/banner_hexes.webp`
+- **Prompt Consigliato**:
+  > Ultra-realistic cinematic concept art of a creepy woven poppet doll and a cursed bone totem emitting a malevolent aura on a blood-stained stone. Dark and visceral fantasy videogame aesthetic, desolate and cold atmosphere, dark, ominous, and moody. Strong directional chiaroscuro lighting, cold moonlight breaking through stormy clouds. Highly detailed physical textures: hand-forged worn metal, weathered ancient stone, and aged leather. Desaturated color palette, dominated by dark blues, slate greys, deep blacks, and earth browns. Wide panoramic composition, shallow depth of field isolating key details, blurred misty background. Photorealistic CGI masterpiece, 8k resolution, sharp focus, 900x250 aspect ratio.
+
+#### 🖼️ **Doni Magici** (`witcher-gifts`)
+- **Target Path**: `modules/witcher-compendium/images/banners/banner_gifts.webp`
+- **Prompt Consigliato**:
+  > Ultra-realistic cinematic concept art of a person's hands glowing with subtle, innate raw magical energy hovering in a dark room. Dark and visceral fantasy videogame aesthetic, desolate and cold atmosphere, dark, ominous, and moody. Strong directional chiaroscuro lighting, warm pulsating candlelight in a dark stone environment. Highly detailed physical textures: weathered ancient stone and aged leather. Desaturated color palette, dominated by dark blues, slate greys, deep blacks, and earth browns, with limited warm accents. Wide panoramic composition, shallow depth of field isolating key details, blurred misty background. Photorealistic CGI masterpiece, 8k resolution, sharp focus, 900x250 aspect ratio.
+
+#### 🖼️ **Maledizioni** (`witcher-curses`)
+- **Target Path**: `modules/witcher-compendium/images/banners/banner_curses.webp`
+- **Prompt Consigliato**:
+  > Ultra-realistic cinematic concept art of a terrifying shadowy specter haunting a twisted withered forest under a looming blood moon. Dark and visceral fantasy videogame aesthetic, desolate and cold atmosphere, dark, ominous, and moody. Strong directional chiaroscuro lighting, cold moonlight breaking through stormy clouds. Highly detailed physical textures: weathered ancient stone and aged leather. Desaturated color palette, dominated by dark blues, slate greys, deep blacks, and earth browns, with limited warm accents. Wide panoramic composition, shallow depth of field isolating key details, blurred misty background. Photorealistic CGI masterpiece, 8k resolution, sharp focus, 900x250 aspect ratio.
+
+#### 🖼️ **Segni Witcher** (`witcher-signs`)
+- **Target Path**: `modules/witcher-compendium/images/banners/banner_signs.webp`
+- **Prompt Consigliato**:
+  > Ultra-realistic cinematic concept art of a Witcher's gloved hand forming the glowing fiery triangle of the Igni sign in the darkness. Dark and visceral fantasy videogame aesthetic, desolate and cold atmosphere, dark, ominous, and moody. Strong directional chiaroscuro lighting, warm pulsating candlelight in a dark stone environment. Highly detailed physical textures: hand-forged worn metal, weathered ancient stone, and aged leather. Desaturated color palette, dominated by dark blues, slate greys, deep blacks, and earth browns, with limited warm accents. Wide panoramic composition, shallow depth of field isolating key details, blurred misty background. Photorealistic CGI masterpiece, 8k resolution, sharp focus, 900x250 aspect ratio.
+
+### 📌 Equipaggiamento ed Esplorazione
+
+#### 🖼️ **Oggetti Vari** (`witcher-equipment`)
+- **Target Path**: `modules/witcher-compendium/images/banners/banner_equipment.webp`
+- **Prompt Consigliato**:
+  > Ultra-realistic cinematic concept art of a traveling merchant's wooden cart loaded with lanterns, heavy ropes, and supplies resting on a gloomy road. Dark and visceral fantasy videogame aesthetic, desolate and cold atmosphere, dark, ominous, and moody. Strong directional chiaroscuro lighting, cold moonlight breaking through stormy clouds. Highly detailed physical textures: hand-forged worn metal, weathered ancient stone, and aged leather. Desaturated color palette, dominated by dark blues, slate greys, deep blacks, and earth browns. Wide panoramic composition, shallow depth of field isolating key details, blurred misty background. Photorealistic CGI masterpiece, 8k resolution, sharp focus, 900x250 aspect ratio.
+
+#### 🖼️ **Oggetti Witcher** (`witcher-special`)
+- **Target Path**: `modules/witcher-compendium/images/banners/banner_special.webp`
+- **Prompt Consigliato**:
+  > Ultra-realistic cinematic concept art of a silver sword, a wolf medallion, and alchemical bombs laid out on a dark leather cloak. Dark and visceral fantasy videogame aesthetic, desolate and cold atmosphere, dark, ominous, and moody. Strong directional chiaroscuro lighting, warm pulsating candlelight in a dark stone environment. Highly detailed physical textures: hand-forged worn metal, weathered ancient stone, and aged leather. Desaturated color palette, dominated by dark blues, slate greys, deep blacks, and earth browns. Wide panoramic composition, shallow depth of field isolating key details, blurred misty background. Photorealistic CGI masterpiece, 8k resolution, sharp focus, 900x250 aspect ratio.
+
+#### 🖼️ **Rune, Glifi e Reliquie** (`witcher-runes`)
+- **Target Path**: `modules/witcher-compendium/images/banners/banner_runes.webp`
+- **Prompt Consigliato**:
+  > Ultra-realistic cinematic concept art of ancient dark stone tablets deeply engraved with glowing blue and red dwarven runes. Dark and visceral fantasy videogame aesthetic, desolate and cold atmosphere, dark, ominous, and moody. Strong directional chiaroscuro lighting, warm pulsating candlelight in a dark stone environment. Highly detailed physical textures: hand-forged worn metal, weathered ancient stone, and aged leather. Desaturated color palette, dominated by dark blues, slate greys, deep blacks, and earth browns, with limited warm accents. Wide panoramic composition, shallow depth of field isolating key details, blurred misty background. Photorealistic CGI masterpiece, 8k resolution, sharp focus, 900x250 aspect ratio.
+
+#### 🖼️ **Trasporti** (`witcher-transports`)
+- **Target Path**: `modules/witcher-compendium/images/banners/banner_transports.webp`
+- **Prompt Consigliato**:
+  > Ultra-realistic cinematic concept art of a heavy horse-drawn wagon and a small wooden boat waiting at a misty river dock at twilight. Dark and visceral fantasy videogame aesthetic, desolate and cold atmosphere, dark, ominous, and moody. Strong directional chiaroscuro lighting, cold moonlight breaking through stormy clouds. Highly detailed physical textures: hand-forged worn metal, weathered ancient stone, and aged leather. Desaturated color palette, dominated by dark blues, slate greys, deep blacks, and earth browns. Wide panoramic composition, shallow depth of field isolating key details, blurred misty background. Photorealistic CGI masterpiece, 8k resolution, sharp focus, 900x250 aspect ratio.
+
+#### 🖼️ **Trofei** (`witcher-trophies`)
+- **Target Path**: `modules/witcher-compendium/images/banners/banner_trophies.webp`
+- **Prompt Consigliato**:
+  > Ultra-realistic cinematic concept art of a macabre display of severed monster heads hanging by heavy iron chains in the shadows. Dark and visceral fantasy videogame aesthetic, desolate and cold atmosphere, dark, ominous, and moody. Strong directional chiaroscuro lighting, warm pulsating candlelight in a dark stone environment. Highly detailed physical textures: matted fur, hand-forged worn metal, weathered ancient stone, and aged leather. Desaturated color palette, dominated by dark blues, slate greys, deep blacks, and earth browns. Wide panoramic composition, shallow depth of field isolating key details, blurred misty background. Photorealistic CGI masterpiece, 8k resolution, sharp focus, 900x250 aspect ratio.
+
+### 📌 Lore, Ferite e Strumenti GM
+
+#### 🖼️ **Ferite Critiche** (`witcher-critical-wounds`)
+- **Target Path**: `modules/witcher-compendium/images/banners/banner_critical-wounds.webp`
+- **Prompt Consigliato**:
+  > Ultra-realistic cinematic concept art of a blood-stained surgeon's wooden table with rusty medical tools, bone saws, and torn bandages. Dark and visceral fantasy videogame aesthetic, desolate and cold atmosphere, dark, ominous, and moody. Strong directional chiaroscuro lighting, warm pulsating candlelight in a dark stone environment. Highly detailed physical textures: hand-forged worn metal, weathered ancient stone, and aged leather. Desaturated color palette, dominated by dark blues, slate greys, deep blacks, and earth browns. Wide panoramic composition, shallow depth of field isolating key details, blurred misty background. Photorealistic CGI masterpiece, 8k resolution, sharp focus, 900x250 aspect ratio.
+
+#### 🖼️ **Geografia (Nazioni e Luoghi)** (`witcher-geografia`)
+- **Target Path**: `modules/witcher-compendium/images/banners/banner_geografia.webp`
+- **Prompt Consigliato**:
+  > Ultra-realistic cinematic concept art of a sweeping panoramic landscape of the war-torn Northern Realms, featuring misty mountains and a dark castle. Dark and visceral fantasy videogame aesthetic, desolate and cold atmosphere, dark, ominous, and moody. Strong directional chiaroscuro lighting, cold moonlight breaking through stormy clouds. Highly detailed physical textures: weathered ancient stone and aged leather. Desaturated color palette, dominated by dark blues, slate greys, deep blacks, and earth browns. Wide panoramic composition, shallow depth of field isolating key details, blurred misty background. Photorealistic CGI masterpiece, 8k resolution, sharp focus, 900x250 aspect ratio.
+
+#### 🖼️ **Indagini (DW)** (`witcher-investigations`)
+- **Target Path**: `modules/witcher-compendium/images/banners/banner_investigations.webp`
+- **Prompt Consigliato**:
+  > Ultra-realistic cinematic concept art of a dimly lit muddy alleyway with glowing monster tracks and a dropped lantern illuminating a clue. Dark and visceral fantasy videogame aesthetic, desolate and cold atmosphere, dark, ominous, and moody. Strong directional chiaroscuro lighting, cold moonlight breaking through stormy clouds. Highly detailed physical textures: hand-forged worn metal, weathered ancient stone, and aged leather. Desaturated color palette, dominated by dark blues, slate greys, deep blacks, and earth browns. Wide panoramic composition, shallow depth of field isolating key details, blurred misty background. Photorealistic CGI masterpiece, 8k resolution, sharp focus, 900x250 aspect ratio.
+
+#### 🖼️ **Lore** (`witcher-lore`)
+- **Target Path**: `modules/witcher-compendium/images/banners/banner_lore.webp`
+- **Prompt Consigliato**:
+  > Ultra-realistic cinematic concept art of a dusty ancient library desk with glowing candles, a skull, and an unrolled parchment map of the Continent. Dark and visceral fantasy videogame aesthetic, desolate and cold atmosphere, dark, ominous, and moody. Strong directional chiaroscuro lighting, warm pulsating candlelight in a dark stone environment. Highly detailed physical textures: hand-forged worn metal, weathered ancient stone, and aged leather. Desaturated color palette, dominated by dark blues, slate greys, deep blacks, and earth browns, with limited warm accents. Wide panoramic composition, shallow depth of field isolating key details, blurred misty background. Photorealistic CGI masterpiece, 8k resolution, sharp focus, 900x250 aspect ratio.
+
+#### 🖼️ **Regole di Supporto GM (Necromanzia)** (`witcher-necromanzia`)
+- **Target Path**: `modules/witcher-compendium/images/banners/banner_necromanzia.webp`
+- **Prompt Consigliato**:
+  > Ultra-realistic cinematic concept art of an open graveyard at midnight with eerie green spectral energy rising from the dirt and unearthed bones. Dark and visceral fantasy videogame aesthetic, desolate and cold atmosphere, dark, ominous, and moody. Strong directional chiaroscuro lighting, cold moonlight breaking through stormy clouds. Highly detailed physical textures: weathered ancient stone and aged leather. Desaturated color palette, dominated by dark blues, slate greys, deep blacks, and earth browns, with limited warm accents. Wide panoramic composition, shallow depth of field isolating key details, blurred misty background. Photorealistic CGI masterpiece, 8k resolution, sharp focus, 900x250 aspect ratio.
+
+### 📌 Tomo del Caos e Tabelle (Meccaniche)
+
+#### 🖼️ **Mutazioni (TC)** (`witcher-mutazioni-tc`)
+- **Target Path**: `modules/witcher-compendium/images/banners/banner_mutazioni-tc.webp`
+- **Prompt Consigliato**:
+  > Ultra-realistic cinematic concept art of a close-up of darkened toxic black veins spreading on a mutant's skin alongside glowing green elixirs. Dark and visceral fantasy videogame aesthetic, desolate and cold atmosphere, dark, ominous, and moody. Strong directional chiaroscuro lighting, warm pulsating candlelight in a dark stone environment. Highly detailed physical textures: weathered ancient stone and aged leather. Desaturated color palette, dominated by dark blues, slate greys, deep blacks, and earth browns, with limited warm accents. Wide panoramic composition, shallow depth of field isolating key details, blurred misty background. Photorealistic CGI masterpiece, 8k resolution, sharp focus, 900x250 aspect ratio.
+
+#### 🖼️ **Oggetti Magici (TC)** (`witcher-magic-items`)
+- **Target Path**: `modules/witcher-compendium/images/banners/banner_magic-items.webp`
+- **Prompt Consigliato**:
+  > Ultra-realistic cinematic concept art of a collection of ancient glowing relics, rings, and an arcane crystal staff displayed on a stone altar. Dark and visceral fantasy videogame aesthetic, desolate and cold atmosphere, dark, ominous, and moody. Strong directional chiaroscuro lighting, warm pulsating candlelight in a dark stone environment. Highly detailed physical textures: hand-forged worn metal, weathered ancient stone, and aged leather. Desaturated color palette, dominated by dark blues, slate greys, deep blacks, and earth browns, with limited warm accents. Wide panoramic composition, shallow depth of field isolating key details, blurred misty background. Photorealistic CGI masterpiece, 8k resolution, sharp focus, 900x250 aspect ratio.
+
+#### 🖼️ **Tabelle: Critici e Fumble** (`witcher-rolltable-critici`)
+- **Target Path**: `modules/witcher-compendium/images/banners/banner_rolltable-critici.webp`
+- **Prompt Consigliato**:
+  > Ultra-realistic cinematic concept art of a dramatic mid-combat strike showing a steel sword shattering against a heavy iron shield in a shower of bright sparks. Dark and visceral fantasy videogame aesthetic, desolate and cold atmosphere, dark, ominous, and moody. Strong directional chiaroscuro lighting, cold moonlight breaking through stormy clouds. Highly detailed physical textures: hand-forged worn metal, weathered ancient stone, and aged leather. Desaturated color palette, dominated by dark blues, slate greys, deep blacks, and earth browns. Wide panoramic composition, shallow depth of field isolating key details, blurred misty background. Photorealistic CGI masterpiece, 8k resolution, sharp focus, 900x250 aspect ratio.
+
+#### 🖼️ **Tabelle: Disastri Magici** (`witcher-rolltable-disastri`)
+- **Target Path**: `modules/witcher-compendium/images/banners/banner_rolltable-disastri.webp`
+- **Prompt Consigliato**:
+  > Ultra-realistic cinematic concept art of a violent explosion of chaotic magical energy tearing through an alchemist's study with flying books and glass. Dark and visceral fantasy videogame aesthetic, desolate and cold atmosphere, dark, ominous, and moody. Strong directional chiaroscuro lighting, warm pulsating candlelight in a dark stone environment. Highly detailed physical textures: weathered ancient stone and aged leather. Desaturated color palette, dominated by dark blues, slate greys, deep blacks, and earth browns, with limited warm accents. Wide panoramic composition, shallow depth of field isolating key details, blurred misty background. Photorealistic CGI masterpiece, 8k resolution, sharp focus, 900x250 aspect ratio.
+
+#### 🖼️ **Tabelle: Strumenti GM** (`witcher-rolltable-strumentigm`)
+- **Target Path**: `modules/witcher-compendium/images/banners/banner_rolltable-strumentigm.webp`
+- **Prompt Consigliato**:
+  > Ultra-realistic cinematic concept art of a mysterious cloaked figure's hands rolling worn bone dice onto a weathered parchment map. Dark and visceral fantasy videogame aesthetic, desolate and cold atmosphere, dark, ominous, and moody. Strong directional chiaroscuro lighting, warm pulsating candlelight in a dark stone environment. Highly detailed physical textures: hand-forged worn metal, weathered ancient stone, and aged leather. Desaturated color palette, dominated by dark blues, slate greys, deep blacks, and earth browns. Wide panoramic composition, shallow depth of field isolating key details, blurred misty background. Photorealistic CGI masterpiece, 8k resolution, sharp focus, 900x250 aspect ratio.
+
+
+---
+
+## 🐾 3. Immagini delle Voci del Bestiario (Animali, Mostri e Personaggi)
 
 Questa tabella elenca tutte le voci contenute nei compendii del bestiario, i relativi path immagine, file di provenienza, dimensioni e stato di personalizzazione.
 
@@ -199,4 +370,4 @@ Questa tabella elenca tutte le voci contenute nei compendii del bestiario, i rel
 | Personaggi (witcher-characters) | **Zoltan Chivay** | `modules/witcher-compendium/assets/BESTIARIO/witcher-characters/zoltan_chivay.webp` | `zoltan_chivay.webp` | 512x512 px | ✅ Personalizzata |
 
 ---
-*Report generato automaticamente il: 25/05/2026*
+*Report aggiornato ed integrato con i prompt AI il: 25/05/2026*
