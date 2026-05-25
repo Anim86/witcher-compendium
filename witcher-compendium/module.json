@@ -40,21 +40,24 @@
       "label": "Razze",
       "path": "packs/PROFESSIONI_E_ABILITA/witcher-races",
       "type": "Item",
-      "system": "TheWitcherItaNewSystem"
+      "system": "TheWitcherItaNewSystem",
+      "banner": "modules/witcher-compendium/images/banners/banner_races.webp"
     },
     {
       "name": "witcher-professions",
       "label": "Professioni",
       "path": "packs/PROFESSIONI_E_ABILITA/witcher-professions",
       "type": "Item",
-      "system": "TheWitcherItaNewSystem"
+      "system": "TheWitcherItaNewSystem",
+      "banner": "modules/witcher-compendium/images/banners/banner_professions.webp"
     },
     {
       "name": "witcher-skills",
       "label": "Abilità",
       "path": "packs/PROFESSIONI_E_ABILITA/witcher-skills",
       "type": "Item",
-      "system": "TheWitcherItaNewSystem"
+      "system": "TheWitcherItaNewSystem",
+      "banner": "modules/witcher-compendium/images/banners/banner_skills.webp"
     },
     {
       "name": "witcher-weapons",
@@ -64,7 +67,6 @@
       "system": "TheWitcherItaNewSystem",
       "banner": "modules/witcher-compendium/images/banners/banner_weapons.webp"
     },
-
     {
       "name": "witcher-armor",
       "label": "Armature",
@@ -78,105 +80,112 @@
       "label": "Oggetti Vari",
       "path": "packs/EQUIPAGGIAMENTO/witcher-equipment",
       "type": "Item",
-      "system": "TheWitcherItaNewSystem"
+      "system": "TheWitcherItaNewSystem",
+      "banner": "modules/witcher-compendium/images/banners/banner_equipment.webp"
     },
     {
       "name": "witcher-special",
       "label": "Oggetti Witcher",
       "path": "packs/EQUIPAGGIAMENTO/witcher-special",
       "type": "Item",
-      "system": "TheWitcherItaNewSystem"
+      "system": "TheWitcherItaNewSystem",
+      "banner": "modules/witcher-compendium/images/banners/banner_special.webp"
     },
     {
       "name": "witcher-spells",
       "label": "Incantesimi",
       "path": "packs/MAGIA/witcher-spells",
       "type": "Item",
-      "system": "TheWitcherItaNewSystem"
+      "system": "TheWitcherItaNewSystem",
+      "banner": "modules/witcher-compendium/images/banners/banner_spells.webp"
     },
-
     {
       "name": "witcher-rituals",
       "label": "Rituali",
       "path": "packs/MAGIA/witcher-rituals",
       "type": "Item",
-      "system": "TheWitcherItaNewSystem"
+      "system": "TheWitcherItaNewSystem",
+      "banner": "modules/witcher-compendium/images/banners/banner_rituals.webp"
     },
     {
       "name": "witcher-signs",
       "label": "Segni Witcher",
       "path": "packs/MAGIA/witcher-signs",
       "type": "Item",
-      "system": "TheWitcherItaNewSystem"
+      "system": "TheWitcherItaNewSystem",
+      "banner": "modules/witcher-compendium/images/banners/banner_signs.webp"
     },
-
-
-
     {
       "name": "witcher-runes",
       "label": "Rune, Glifi e Reliquie",
       "path": "packs/MAGIA/witcher-runes",
       "type": "Item",
-      "system": "TheWitcherItaNewSystem"
+      "system": "TheWitcherItaNewSystem",
+      "banner": "modules/witcher-compendium/images/banners/banner_runes.webp"
     },
-
     {
       "name": "witcher-hexes",
       "label": "Fatture",
       "path": "packs/MAGIA/witcher-hexes",
       "type": "Item",
-      "system": "TheWitcherItaNewSystem"
+      "system": "TheWitcherItaNewSystem",
+      "banner": "modules/witcher-compendium/images/banners/banner_hexes.webp"
     },
     {
       "name": "witcher-invocations",
       "label": "Invocazioni Chaos",
       "path": "packs/MAGIA/witcher-invocations",
       "type": "Item",
-      "system": "TheWitcherItaNewSystem"
+      "system": "TheWitcherItaNewSystem",
+      "banner": "modules/witcher-compendium/images/banners/banner_invocations.webp"
     },
     {
       "name": "witcher-gifts",
       "label": "Doni Magici",
       "path": "packs/MAGIA/witcher-gifts",
       "type": "Item",
-      "system": "TheWitcherItaNewSystem"
+      "system": "TheWitcherItaNewSystem",
+      "banner": "modules/witcher-compendium/images/banners/banner_gifts.webp"
     },
     {
       "name": "witcher-components",
       "label": "Componenti",
       "path": "packs/ALCHIMIA_E_ARTIGIANATO/witcher-components",
       "type": "Item",
-      "system": "TheWitcherItaNewSystem"
+      "system": "TheWitcherItaNewSystem",
+      "banner": "modules/witcher-compendium/images/banners/banner_components.webp"
     },
-
     {
       "name": "witcher-schematics",
       "label": "Schemi",
       "path": "packs/ALCHIMIA_E_ARTIGIANATO/witcher-schematics",
       "type": "Item",
-      "system": "TheWitcherItaNewSystem"
+      "system": "TheWitcherItaNewSystem",
+      "banner": "modules/witcher-compendium/images/banners/banner_schematics.webp"
     },
-
     {
       "name": "witcher-potions",
       "label": "Pozioni",
       "path": "packs/ALCHIMIA_E_ARTIGIANATO/witcher-potions",
       "type": "Item",
-      "system": "TheWitcherItaNewSystem"
+      "system": "TheWitcherItaNewSystem",
+      "banner": "modules/witcher-compendium/images/banners/banner_potions.webp"
     },
     {
       "name": "witcher-formulas",
       "label": "Ricette",
       "path": "packs/ALCHIMIA_E_ARTIGIANATO/witcher-formulas",
       "type": "Item",
-      "system": "TheWitcherItaNewSystem"
+      "system": "TheWitcherItaNewSystem",
+      "banner": "modules/witcher-compendium/images/banners/banner_formulas.webp"
     },
     {
       "name": "witcher-mutations",
       "label": "Mutageni",
       "path": "packs/ALCHIMIA_E_ARTIGIANATO/witcher-mutations",
       "type": "Item",
-      "system": "TheWitcherItaNewSystem"
+      "system": "TheWitcherItaNewSystem",
+      "banner": "modules/witcher-compendium/images/banners/banner_mutations.webp"
     },
     {
       "name": "witcher-monsters",
@@ -199,44 +208,49 @@
       "label": "Trasporti",
       "path": "packs/EQUIPAGGIAMENTO/witcher-transports",
       "type": "Item",
-      "system": "TheWitcherItaNewSystem"
+      "system": "TheWitcherItaNewSystem",
+      "banner": "modules/witcher-compendium/images/banners/banner_transports.webp"
     },
     {
       "name": "witcher-trophies",
       "label": "Trofei",
       "path": "packs/EQUIPAGGIAMENTO/witcher-trophies",
       "type": "Item",
-      "system": "TheWitcherItaNewSystem"
+      "system": "TheWitcherItaNewSystem",
+      "banner": "modules/witcher-compendium/images/banners/banner_trophies.webp"
     },
     {
       "name": "witcher-critical-wounds",
       "label": "Ferite Critiche",
       "path": "packs/REGOLAMENTO_E_NARRATIVA/witcher-critical-wounds",
       "type": "Item",
-      "system": "TheWitcherItaNewSystem"
+      "system": "TheWitcherItaNewSystem",
+      "banner": "modules/witcher-compendium/images/banners/banner_critical-wounds.webp"
     },
     {
       "name": "witcher-curses",
       "label": "Maledizioni",
       "path": "packs/MAGIA/witcher-curses",
       "type": "Item",
-      "system": "TheWitcherItaNewSystem"
+      "system": "TheWitcherItaNewSystem",
+      "banner": "modules/witcher-compendium/images/banners/banner_curses.webp"
     },
     {
       "name": "witcher-lore",
       "label": "Lore",
       "path": "packs/REGOLAMENTO_E_NARRATIVA/witcher-lore",
       "type": "Item",
-      "system": "TheWitcherItaNewSystem"
+      "system": "TheWitcherItaNewSystem",
+      "banner": "modules/witcher-compendium/images/banners/banner_lore.webp"
     },
     {
       "name": "witcher-geografia",
       "label": "Geografia (Nazioni e Luoghi)",
       "path": "packs/REGOLAMENTO_E_NARRATIVA/witcher-geografia",
       "type": "Item",
-      "system": "TheWitcherItaNewSystem"
+      "system": "TheWitcherItaNewSystem",
+      "banner": "modules/witcher-compendium/images/banners/banner_geografia.webp"
     },
-
     {
       "name": "witcher-animals",
       "label": "Animali",
@@ -245,59 +259,61 @@
       "system": "TheWitcherItaNewSystem",
       "banner": "modules/witcher-compendium/images/banners/banner_animals.webp"
     },
-
-
-
-
-
     {
       "name": "witcher-mutazioni-tc",
       "label": "Mutazioni (TC)",
       "path": "packs/ALCHIMIA_E_ARTIGIANATO/witcher-mutazioni-tc",
       "type": "Item",
-      "system": "TheWitcherItaNewSystem"
+      "system": "TheWitcherItaNewSystem",
+      "banner": "modules/witcher-compendium/images/banners/banner_mutazioni-tc.webp"
     },
     {
       "name": "witcher-magic-items",
       "label": "Oggetti Magici (TC)",
       "path": "packs/EQUIPAGGIAMENTO/witcher-magic-items",
       "type": "Item",
-      "system": "TheWitcherItaNewSystem"
+      "system": "TheWitcherItaNewSystem",
+      "banner": "modules/witcher-compendium/images/banners/banner_magic-items.webp"
     },
     {
       "name": "witcher-investigations",
       "label": "Indagini (DW)",
       "path": "packs/REGOLAMENTO_E_NARRATIVA/witcher-investigations",
       "type": "Item",
-      "system": "TheWitcherItaNewSystem"
+      "system": "TheWitcherItaNewSystem",
+      "banner": "modules/witcher-compendium/images/banners/banner_investigations.webp"
     },
     {
       "name": "witcher-necromanzia",
       "label": "Regole di Supporto GM (Necromanzia)",
       "path": "packs/REGOLAMENTO_E_NARRATIVA/witcher-necromanzia",
       "type": "Item",
-      "system": "TheWitcherItaNewSystem"
+      "system": "TheWitcherItaNewSystem",
+      "banner": "modules/witcher-compendium/images/banners/banner_necromanzia.webp"
     },
     {
       "name": "witcher-rolltable-critici",
       "label": "Tabelle: Critici e Fumble",
       "path": "packs/REGOLAMENTO_E_NARRATIVA/CriticieCombattimento",
       "type": "RollTable",
-      "system": "TheWitcherItaNewSystem"
+      "system": "TheWitcherItaNewSystem",
+      "banner": "modules/witcher-compendium/images/banners/banner_rolltable-critici.webp"
     },
     {
       "name": "witcher-rolltable-disastri",
       "label": "Tabelle: Disastri Magici",
       "path": "packs/REGOLAMENTO_E_NARRATIVA/DisastriMagici",
       "type": "RollTable",
-      "system": "TheWitcherItaNewSystem"
+      "system": "TheWitcherItaNewSystem",
+      "banner": "modules/witcher-compendium/images/banners/banner_rolltable-disastri.webp"
     },
     {
       "name": "witcher-rolltable-strumentigm",
       "label": "Tabelle: Strumenti GM",
       "path": "packs/REGOLAMENTO_E_NARRATIVA/StrumentiGM",
       "type": "RollTable",
-      "system": "TheWitcherItaNewSystem"
+      "system": "TheWitcherItaNewSystem",
+      "banner": "modules/witcher-compendium/images/banners/banner_rolltable-strumentigm.webp"
     }
   ],
   "languages": [
