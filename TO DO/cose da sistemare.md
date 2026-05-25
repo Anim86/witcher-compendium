@@ -12,5 +12,6 @@
   * [ ] ferite critiche va sistemato. Le schede si aprono ma sono vuote
   * [ ] dobbiamo sistemare le schede dei componenti perchè hanno un campo rarità vuoto e la scritta rarità nel testo. le pulirei un pò
   * [ ] preparare le immagini mancanti delle categorie del compendio
+  * [ ] settare iperlink tra i compendi
 
 
