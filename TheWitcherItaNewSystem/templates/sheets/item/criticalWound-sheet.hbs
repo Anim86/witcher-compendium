@@ -1,0 +1,10 @@
+<section class="{{item.type}} scrollable">
+    {{>"systems/TheWitcherItaNewSystem/templates/partials/item-header.hbs"}}
+    
+    <div class="item-description-container">
+        <div class="section-title">
+            <i class="fas fa-scroll"></i> {{localize "WITCHER.Item.Description"}}
+        </div>
+        {{editor item.system.description target="system.description" button=true owner=owner editable=editable engine="prosemirror"}}
+    </div>
+</section>

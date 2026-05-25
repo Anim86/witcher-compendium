@@ -19,34 +19,34 @@ Questa tabella elenca tutti i compendii configurati nel modulo e lo stato dei ri
 | **Componenti** | `witcher-components` | `modules/witcher-compendium/images/banners/banner_components.webp` | `banner_components.webp` | 900x250 px | ✅ Personalizzata |
 | **Doni Magici** | `witcher-gifts` | `modules/witcher-compendium/images/banners/banner_gifts.webp` | `banner_gifts.webp` | 900x250 px | ✅ Personalizzata |
 | **Fatture** | `witcher-hexes` | `modules/witcher-compendium/images/banners/banner_hexes.webp` | `banner_hexes.webp` | 900x250 px | ✅ Personalizzata |
-| **Ferite Critiche** | `witcher-critical-wounds` | `modules/witcher-compendium/images/banners/banner_critical-wounds.webp` | `banner_critical-wounds.webp` | - | ❌ Mancante su disco |
-| **Geografia (Nazioni e Luoghi)** | `witcher-geografia` | `modules/witcher-compendium/images/banners/banner_geografia.webp` | `banner_geografia.webp` | - | ❌ Mancante su disco |
+| **Ferite Critiche** | `witcher-critical-wounds` | `modules/witcher-compendium/images/banners/banner_critical-wounds.webp` | `banner_critical-wounds.webp` | 900x250 px | ✅ Personalizzata |
+| **Geografia (Nazioni e Luoghi)** | `witcher-geografia` | `modules/witcher-compendium/images/banners/banner_geografia.webp` | `banner_geografia.webp` | 900x250 px | ✅ Personalizzata |
 | **Incantesimi** | `witcher-spells` | `modules/witcher-compendium/images/banners/banner_spells.webp` | `banner_spells.webp` | 900x250 px | ✅ Personalizzata |
-| **Indagini (DW)** | `witcher-investigations` | `modules/witcher-compendium/images/banners/banner_investigations.webp` | `banner_investigations.webp` | - | ❌ Mancante su disco |
+| **Indagini (DW)** | `witcher-investigations` | `modules/witcher-compendium/images/banners/banner_investigations.webp` | `banner_investigations.webp` | 900x250 px | ✅ Personalizzata |
 | **Invocazioni Chaos** | `witcher-invocations` | `modules/witcher-compendium/images/banners/banner_invocations.webp` | `banner_invocations.webp` | 900x250 px | ✅ Personalizzata |
-| **Lore** | `witcher-lore` | `modules/witcher-compendium/images/banners/banner_lore.webp` | `banner_lore.webp` | - | ❌ Mancante su disco |
+| **Lore** | `witcher-lore` | `modules/witcher-compendium/images/banners/banner_lore.webp` | `banner_lore.webp` | 900x250 px | ✅ Personalizzata |
 | **Maledizioni** | `witcher-curses` | `modules/witcher-compendium/images/banners/banner_curses.webp` | `banner_curses.webp` | 900x250 px | ✅ Personalizzata |
 | **Mostri** | `witcher-monsters` | `modules/witcher-compendium/images/banners/banner_monsters.webp` | `banner_monsters.webp` | 900x250 px | ✅ Personalizzata |
 | **Mutageni** | `witcher-mutations` | `modules/witcher-compendium/images/banners/banner_mutations.webp` | `banner_mutations.webp` | 900x250 px | ✅ Personalizzata |
-| **Mutazioni (TC)** | `witcher-mutazioni-tc` | `modules/witcher-compendium/images/banners/banner_mutazioni-tc.webp` | `banner_mutazioni-tc.webp` | - | ❌ Mancante su disco |
-| **Oggetti Magici (TC)** | `witcher-magic-items` | `modules/witcher-compendium/images/banners/banner_magic-items.webp` | `banner_magic-items.webp` | - | ❌ Mancante su disco |
+| **Mutazioni (TC)** | `witcher-mutazioni-tc` | `modules/witcher-compendium/images/banners/banner_mutazioni-tc.webp` | `banner_mutazioni-tc.webp` | 900x250 px | ✅ Personalizzata |
+| **Oggetti Magici (TC)** | `witcher-magic-items` | `modules/witcher-compendium/images/banners/banner_magic-items.webp` | `banner_magic-items.webp` | 900x250 px | ✅ Personalizzata |
 | **Oggetti Vari** | `witcher-equipment` | `modules/witcher-compendium/images/banners/banner_equipment.webp` | `banner_equipment.webp` | 900x250 px | ✅ Personalizzata |
 | **Oggetti Witcher** | `witcher-special` | `modules/witcher-compendium/images/banners/banner_special.webp` | `banner_special.webp` | 900x250 px | ✅ Personalizzata |
 | **Personaggi** | `witcher-characters` | `modules/witcher-compendium/images/banners/banner_png.webp` | `banner_png.webp` | 900x250 px | ✅ Personalizzata |
 | **Pozioni** | `witcher-potions` | `modules/witcher-compendium/images/banners/banner_potions.webp` | `banner_potions.webp` | 900x250 px | ✅ Personalizzata |
 | **Professioni** | `witcher-professions` | `modules/witcher-compendium/images/banners/banner_professions.webp` | `banner_professions.webp` | 900x250 px | ✅ Personalizzata |
 | **Razze** | `witcher-races` | `modules/witcher-compendium/images/banners/banner_races.webp` | `banner_races.webp` | 900x250 px | ✅ Personalizzata |
-| **Regole di Supporto GM (Necromanzia)** | `witcher-necromanzia` | `modules/witcher-compendium/images/banners/banner_necromanzia.webp` | `banner_necromanzia.webp` | - | ❌ Mancante su disco |
+| **Regole di Supporto GM (Necromanzia)** | `witcher-necromanzia` | `modules/witcher-compendium/images/banners/banner_necromanzia.webp` | `banner_necromanzia.webp` | 900x250 px | ✅ Personalizzata |
 | **Ricette** | `witcher-formulas` | `modules/witcher-compendium/images/banners/banner_formulas.webp` | `banner_formulas.webp` | 900x250 px | ✅ Personalizzata |
 | **Rituali** | `witcher-rituals` | `modules/witcher-compendium/images/banners/banner_rituals.webp` | `banner_rituals.webp` | 900x250 px | ✅ Personalizzata |
 | **Rune, Glifi e Reliquie** | `witcher-runes` | `modules/witcher-compendium/images/banners/banner_runes.webp` | `banner_runes.webp` | 900x250 px | ✅ Personalizzata |
 | **Schemi** | `witcher-schematics` | `modules/witcher-compendium/images/banners/banner_schematics.webp` | `banner_schematics.webp` | 900x250 px | ✅ Personalizzata |
 | **Segni Witcher** | `witcher-signs` | `modules/witcher-compendium/images/banners/banner_signs.webp` | `banner_signs.webp` | 900x250 px | ✅ Personalizzata |
-| **Tabelle: Critici e Fumble** | `witcher-rolltable-critici` | `modules/witcher-compendium/images/banners/banner_rolltable-critici.webp` | `banner_rolltable-critici.webp` | - | ❌ Mancante su disco |
-| **Tabelle: Disastri Magici** | `witcher-rolltable-disastri` | `modules/witcher-compendium/images/banners/banner_rolltable-disastri.webp` | `banner_rolltable-disastri.webp` | - | ❌ Mancante su disco |
-| **Tabelle: Strumenti GM** | `witcher-rolltable-strumentigm` | `modules/witcher-compendium/images/banners/banner_rolltable-strumentigm.webp` | `banner_rolltable-strumentigm.webp` | - | ❌ Mancante su disco |
+| **Tabelle: Critici e Fumble** | `witcher-rolltable-critici` | `modules/witcher-compendium/images/banners/banner_rolltable-critici.webp` | `banner_rolltable-critici.webp` | 900x250 px | ✅ Personalizzata |
+| **Tabelle: Disastri Magici** | `witcher-rolltable-disastri` | `modules/witcher-compendium/images/banners/banner_rolltable-disastri.webp` | `banner_rolltable-disastri.webp` | 900x250 px | ✅ Personalizzata |
+| **Tabelle: Strumenti GM** | `witcher-rolltable-strumentigm` | `modules/witcher-compendium/images/banners/banner_rolltable-strumentigm.webp` | `banner_rolltable-strumentigm.webp` | 900x250 px | ✅ Personalizzata |
 | **Trasporti** | `witcher-transports` | `modules/witcher-compendium/images/banners/banner_transports.webp` | `banner_transports.webp` | 900x250 px | ✅ Personalizzata |
-| **Trofei** | `witcher-trophies` | `modules/witcher-compendium/images/banners/banner_trophies.webp` | `banner_trophies.webp` | - | ❌ Mancante su disco |
+| **Trofei** | `witcher-trophies` | `modules/witcher-compendium/images/banners/banner_trophies.webp` | `banner_trophies.webp` | 900x250 px | ✅ Personalizzata |
 
 ---
 

@@ -22,6 +22,7 @@ import WitcherHexSheet from '../item/sheets/WitcherHexSheet.js';
 import WitcherRitualSheet from '../item/sheets/WitcherRitualSheet.js';
 import WitcherRaceSheet from '../item/sheets/WitcherRaceSheet.js';
 import WitcherItemSheet from '../item/sheets/WitcherItemSheet.js';
+import WitcherCriticalWoundSheet from '../item/sheets/WitcherCriticalWoundSheet.js';
 import WitcherMountSheet from '../item/sheets/WitcherMountSheet.js';
 import WitcherComponentSheet from '../item/sheets/WitcherComponentSheet.js';
 import WitcherHomelandSheet from '../item/sheets/WitcherHomelandSheet.js';
@@ -134,7 +135,11 @@ export const registerSheets = () => {
     });
     register(Item, 'witcher', WitcherItemSheet, {
         makeDefault: true,
-        types: ['item', 'criticalWound']
+        types: ['item']
+    });
+    register(Item, 'witcher', WitcherCriticalWoundSheet, {
+        makeDefault: true,
+        types: ['criticalWound']
     });
 
     // Actors
