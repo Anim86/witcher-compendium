@@ -34,6 +34,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             },
             skills: {},
             selectedPickupSkills: [], // We'll populate this dynamically
+            selectedCombatSkills: [],
             gear: [],
             money: 0,
             selectedProfessionGear: []
@@ -105,6 +106,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         openListModal: function(event, target) { this._openListModal(event, target); },
         goToStep: function(event, target) { this._goToStep(event, target); },
         addPickupSkill: function(event, target) { this._addPickupSkill(event, target); },
+        addCombatSkill: function(event, target) { this._addCombatSkill(event, target); },
         finish: function(event, target) { this._finish(event, target); },
         switchSkillTab: function(event, target) { this._switchSkillTab(event, target); },
         toggleProfessionGear: function(event, target) { this._toggleProfessionGear(event, target); }
@@ -351,6 +353,32 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 if (this.characterData.age > ageLimits.max) this.characterData.age = ageLimits.max;
             }
 
+            // Combat skills logic for Armigero
+            let availableCombatSkills = [];
+            let combatSkillsRemaining = 0;
+            const isArmigero = this.characterData.profession?.name?.toLowerCase() === "armigero";
+            if (isArmigero) {
+                const maxCombatSkills = 5;
+                const selectedCount = this.characterData.selectedCombatSkills.length;
+                combatSkillsRemaining = Math.max(0, maxCombatSkills - selectedCount);
+
+                if (combatSkillsRemaining > 0) {
+                    availableCombatSkills = this.allSkills.filter(s => 
+                        s.system?.isCombatSkill && 
+                        !this.characterData.selectedCombatSkills.includes(s._id) &&
+                        !this._getProfessionSkillNames().includes(s.name)
+                    ).map(s => {
+                        const info = this._getSkillInfo(s);
+                        return {
+                            key: s._id,
+                            name: s.name,
+                            cost: this._getSkillCost(s),
+                            attributeLabel: info.attributeLabel
+                        };
+                    });
+                }
+            }
+
             return {
                 ageLimits: ageLimits,
                 socialStatusOptions: this.socialStatusOptions || [],
@@ -382,6 +410,9 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 isFirstStep: this.step === 1,
                 isLastStep: this.step === this.maxSteps,
                 currentTemplate: this._getTemplateForStep(this.step),
+                availableCombatSkills: availableCombatSkills,
+                combatSkillsRemaining: combatSkillsRemaining,
+                isArmigero: isArmigero,
                 allGear: {
                     weapons: (this.weapons || []).map(sanitizeItem),
                     armor: (this.armor || []).map(sanitizeItem),
@@ -439,15 +470,24 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
     _getProfessionSkillNames() {
         if (!this.characterData.profession) return [];
         const raw = this.characterData.profession.system?.professionSkills;
-        if (raw instanceof Set) return Array.from(raw);
-        if (Array.isArray(raw)) return raw;
-        if (typeof raw === "string") return raw.split(",").map(s => s.trim()).filter(Boolean);
-        if (raw && typeof raw === "object" && typeof raw.forEach === "function") {
+        let names = [];
+        if (raw instanceof Set) names = Array.from(raw);
+        else if (Array.isArray(raw)) names = raw;
+        else if (typeof raw === "string") names = raw.split(",").map(s => s.trim()).filter(Boolean);
+        else if (raw && typeof raw === "object" && typeof raw.forEach === "function") {
             const arr = [];
             raw.forEach(x => arr.push(x));
-            return arr;
+            names = arr;
         }
-        return [];
+
+        if (this.characterData.selectedCombatSkills && this.characterData.selectedCombatSkills.length > 0) {
+            for (const id of this.characterData.selectedCombatSkills) {
+                const s = this.allSkills.find(sk => sk._id === id);
+                if (s) names.push(s.name);
+            }
+        }
+
+        return names;
     }
 
     _findSkillByKeyOrName(keyOrName) {
@@ -494,6 +534,31 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
     _getProfessionSkills() {
         const names = this._getProfessionSkillNames();
         const result = [];
+        
+        // Add defining skill (Abilità Esclusiva/Definente)
+        const defSkill = this.characterData.profession?.system?.definingSkill;
+        if (defSkill && defSkill.skillName) {
+            let statLabel = defSkill.stat;
+            if (CONFIG.WITCHER && CONFIG.WITCHER.statMap && CONFIG.WITCHER.statMap[defSkill.stat]) {
+                statLabel = game.i18n.localize(CONFIG.WITCHER.statMap[defSkill.stat].labelShort || defSkill.stat);
+            }
+            
+            result.push({
+                key: "definingSkill",
+                name: defSkill.skillName,
+                value: this.characterData.skills["definingSkill"] || 1,
+                cost: 1,
+                isDifficult: false,
+                isNativeLanguage: false,
+                attributeLabel: statLabel,
+                description: defSkill.definition || "",
+                isDefining: true
+            });
+            if (this.characterData.skills["definingSkill"] === undefined) {
+                this.characterData.skills["definingSkill"] = 1;
+            }
+        }
+
         console.log("TheWitcherItaNewSystem | _getProfessionSkills | Names to find:", names);
         console.log("TheWitcherItaNewSystem | _getProfessionSkills | Total skills in allSkills:", this.allSkills.length);
         for (const name of names) {
@@ -938,6 +1003,15 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         if (skillKey && !this.characterData.selectedPickupSkills.includes(skillKey)) {
             this.characterData.selectedPickupSkills.push(skillKey);
             this.characterData.skills[skillKey] = 0;
+            this.render(true);
+        }
+    }
+
+    async _addCombatSkill(event, target) {
+        const skillKey = this.element.querySelector("select[name='new-combat-skill']")?.value;
+        if (skillKey && !this.characterData.selectedCombatSkills.includes(skillKey)) {
+            this.characterData.selectedCombatSkills.push(skillKey);
+            this.characterData.skills[skillKey] = 1;
             this.render(true);
         }
     }
@@ -1549,6 +1623,12 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         if (this.characterData.profession) {
             const p = foundry.utils.deepClone(this.characterData.profession);
             delete p._id; delete p.id; 
+            
+            // Apply defining skill level if present
+            if (this.characterData.skills["definingSkill"] !== undefined && p.system.definingSkill) {
+                p.system.definingSkill.level = this.characterData.skills["definingSkill"];
+            }
+            
             itemsToCreate.push(p);
         }
 
@@ -1594,6 +1674,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         // Collect exact skills from allSkills
         const myProfNames = this._getProfessionSkillNames().map(s => s.toLowerCase());
         for (const [skillId, value] of Object.entries(this.characterData.skills)) {
+            if (skillId === "definingSkill") continue; // Handled within profession item
             if (value > 0) {
                 const skillItem = this.allSkills.find(s => s._id === skillId);
                 if (skillItem) {

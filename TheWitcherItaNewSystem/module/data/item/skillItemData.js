@@ -16,7 +16,8 @@ export default class SkillItemData extends CommonItemData {
             activeEffectModifiers: new fields.NumberField({ initial: 0 }),
             isProfession: new fields.BooleanField({ initial: false }),
             isPickup: new fields.BooleanField({ initial: false }),
-            isLearned: new fields.BooleanField({ initial: false })
+            isLearned: new fields.BooleanField({ initial: false }),
+            isCombatSkill: new fields.BooleanField({ initial: false })
         };
     }
 }

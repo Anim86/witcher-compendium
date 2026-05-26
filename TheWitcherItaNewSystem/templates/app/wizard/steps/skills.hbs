@@ -1,6 +1,5 @@
 <div class="wizard-step step-skills">
     <h2>{{localize "WITCHER.Wizard.Step.Skills.Title"}}</h2>
-    <p>{{localize "WITCHER.Wizard.Step.Skills.Description"}}</p>
 
     <div class="skills-container tabs" data-group="skill-tabs">
         <nav class="sheet-tabs tabs" data-group="skill-tabs">
@@ -23,13 +22,37 @@
                         {{professionPointsRemaining}} / 44
                     </span>
                 </div>
+
+                {{#if isArmigero}}
+                {{#if (gt combatSkillsRemaining 0)}}
+                <div class="skills-picker" style="margin-bottom: 15px; background: rgba(0,0,0,0.4); padding: 10px; border: 1px solid var(--witcher-red);">
+                    <div class="skills-pool-info" style="margin-bottom: 5px;">
+                        <span class="pool-label" style="color: var(--witcher-red);">Abilità da Combattimento: </span>
+                        <span class="pool-value">Devi scegliere ancora <strong>{{combatSkillsRemaining}}</strong> abilità</span>
+                    </div>
+                    <div class="controls-row">
+                        <select name="new-combat-skill" id="new-combat-skill-select">
+                            <option value="">-- Seleziona Abilità da Combattimento --</option>
+                            {{#each availableCombatSkills}}
+                            <option value="{{key}}">{{name}} {{#if attributeLabel}}[{{attributeLabel}}]{{/if}}</option>
+                            {{/each}}
+                        </select>
+                        <button type="button" data-action="addCombatSkill" class="btn-add">
+                            <i class="fa-solid fa-plus"></i> Aggiungi
+                        </button>
+                    </div>
+                </div>
+                {{/if}}
+                {{/if}}
+
                 <div class="skills-grid compact-skills">
                     {{#each professionSkills}}
-                    <div class="skill-row {{#if isDifficult}}skill-difficult{{/if}} {{#if isNativeLanguage}}skill-native{{/if}}" data-skill="{{key}}">
+                    <div class="skill-row {{#if isDifficult}}skill-difficult{{/if}} {{#if isNativeLanguage}}skill-native{{/if}} {{#if isDefining}}skill-defining{{/if}}" data-skill="{{key}}">
                         <label class="skill-label">
                             <span class="skill-name-text">{{name}}</span>
                             {{#if attributeLabel}}<span class="skill-attr-badge">{{attributeLabel}}</span>{{/if}}
-                            {{#if isDifficult}}<span class="cost-badge">(Difficile ×2)</span>{{/if}}
+                            {{#if isDefining}}<span class="defining-badge"><i class="fa-solid fa-star"></i> Abilità Esclusiva</span>{{/if}}
+                            <span class="cost-badge {{#if isDifficult}}cost-high{{else}}cost-normal{{/if}}">Costo: {{cost}} pt.</span>
                             {{#if isNativeLanguage}}<span class="native-badge"><i class="fa-solid fa-crown"></i> Madrelingua</span>{{/if}}
                         </label>
                         <div class="skill-controls">
@@ -98,7 +121,7 @@
                         <label class="skill-label">
                             <span class="skill-name-text">{{name}}</span>
                             {{#if attributeLabel}}<span class="skill-attr-badge">{{attributeLabel}}</span>{{/if}}
-                            {{#if isDifficult}}<span class="cost-badge">(Difficile ×2)</span>{{/if}}
+                            <span class="cost-badge {{#if isDifficult}}cost-high{{else}}cost-normal{{/if}}">Costo: {{cost}} pt.</span>
                             {{#if isNativeLanguage}}<span class="native-badge"><i class="fa-solid fa-crown"></i> Madrelingua</span>{{/if}}
                         </label>
                         <div class="skill-controls">

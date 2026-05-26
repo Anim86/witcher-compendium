@@ -14,6 +14,7 @@ export default function skill(label, mult = 1, isMagic = false) {
         multiplier: new fields.NumberField({ initial: mult, min: 1, max: 2 }),
         isProfession: new fields.BooleanField({ initial: false }),
         isPickup: new fields.BooleanField({ initial: false }),
-        isLearned: new fields.BooleanField({ initial: false })
+        isLearned: new fields.BooleanField({ initial: false }),
+        isCombatSkill: new fields.BooleanField({ initial: false })
     };
 }
