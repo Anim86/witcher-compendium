@@ -23,11 +23,16 @@ import Rewards from '/systems/TheWitcherItaNewSystem/module/app/reward/reward.js
 import WitcherImprovementDialog from '/systems/TheWitcherItaNewSystem/module/app/WitcherImprovementDialog.js';
 import { registerQueries } from './setup/queries.js';
 
+// -----------------------------------------------------------------------
+// REGISTRAZIONE ROOT-LEVEL (Per intercettare Application V2 & Pre-Init)
+// -----------------------------------------------------------------------
+registerHooks();
+registerHandelbarHelpers();
+
 Hooks.once('init', function () {
     console.log('TheWitcherItaNewSystem | init system');
     console.log('TheWitcherItaNewSystem | Supported Languages:', CONFIG.supportedLanguages);
     console.log('TheWitcherItaNewSystem | Current Lang:', game.i18n.lang);
-    registerHooks();
 
     CONFIG.WITCHER = WITCHER;
     CONFIG.statusEffects = CONFIG.WITCHER.statusEffects;
@@ -178,8 +183,8 @@ Hooks.on('getChatMessageContextOptions', Fumble.addFumbleContextOptions);
 /**
  * Create a Macro from an Item drop.
  * Get an existing item macro if one exists, otherwise create a new one.
- * @param {Object} data     The dropped data
- * @param {number} slot     The hotbar slot to use
+ * @param {Object} data    The dropped data
+ * @param {number} slot    The hotbar slot to use
  * @returns {Promise}
  */
 async function createMacro(data, slot) {
@@ -203,5 +208,3 @@ async function createMacro(data, slot) {
     }
     game.user.assignHotbarMacro(macro, slot);
 }
-
-registerHandelbarHelpers();

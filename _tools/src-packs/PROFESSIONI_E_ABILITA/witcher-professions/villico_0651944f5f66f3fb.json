@@ -74,7 +74,18 @@
                 "definition": ""
             }
         },
-        "professionSkills": "Atletica, Coraggio, Gioco d'Azzardo, Lame Corte, Manifattura, Prestanza, Pronto Soccorso, Rissa, Sopravvivenza, Tempra",
+        "professionSkills": [
+            "athletics",
+            "courage",
+            "gambling",
+            "smallblades",
+            "crafting",
+            "physique",
+            "firstaid",
+            "brawling",
+            "wildernessSurvival",
+            "endurance"
+        ],
         "notes": "<p>La spina dorsale del Continente. Esperto di agricoltura, vita rurale e resilienza contro le avversità.</p>"
     },
     "effects": [],

@@ -241,4 +241,47 @@ I pacchetti compendio generati come LevelDB (`RollTable`, `Item`, `Actor`, ecc.)
 3. **Caratteri Vietati**: Non usare mai spazi, trattini, o trattini bassi (`_`).
 4. **Conseguenze**: L'uso di un ID non conforme (ad es. lungo 17 caratteri o contenente `_`) farà fallire la validazione interna del database al caricamento del modulo. Foundry VTT forzerà l'ID a `null`, inserendo nel database record corrotti che causano voci duplicate "fantasma" all'interno del compendio nel client e provocando eccezioni irreversibili (`TypeError: Cannot read properties of undefined (reading 'sheet')`) all'apertura del foglio.
 
-*Ultimo aggiornamento guida: 23 Maggio 2026 (allineamento build 14.363)*
+*Ultimo aggiornamento guida: 26 Maggio 2026 (allineamento build 14.363 / getActorContextOptions)*
+
+---
+
+## Appendice C: Hook dei Menu Contestuali e Gestione DOM (Foundry V14 / ApplicationV2)
+
+In Foundry V14 (architettura `ApplicationV2`), la gestione dei menu contestuali (es. tasto destro sulle voci della sidebar/directory) e la manipolazione del DOM ad essi associati hanno subito importanti cambiamenti.
+
+### 1. Sostituzione degli Hook Storici
+- **Vecchio Hook (v11/v12)**: `getActorDirectoryEntryContext` (non funzionante o deprecato).
+- **Nuovo Hook (v14)**: `getActorContextOptions` per la Actor Directory (e analogamente per altre directory).
+
+### 2. Differenze nel Passaggio dei Parametri (jQuery vs Native DOM)
+Nelle precedenti versioni di Foundry, i callback e le condizioni ricevevano oggetti jQuery (tipicamente indicati con `html`). Con `ApplicationV2`, Foundry passa direttamente elementi DOM nativi (`HTMLElement`).
+
+Per garantire la massima compatibilità e prevenire errori sia con i moduli/temi legacy che con quelli nativi V14, si consiglia la normalizzazione dell'elemento all'interno delle funzioni `condition` e `callback`:
+
+```javascript
+Hooks.on('getActorContextOptions', (app, options) => {
+    options.push({
+        name: "WITCHER.ContextMenu.ShowCharacterArtwork",
+        icon: '<i class="fas fa-image"></i>',
+        condition: node => {
+            // Normalizzazione: ApplicationV2 passa un HTMLElement, moduli legacy potrebbero passare jQuery
+            const el = node instanceof HTMLElement ? node : node[0];
+            const targetRow = el.closest('[data-entry-id]');
+            if (!targetRow) return false;
+
+            const actor = game.actors.get(targetRow.dataset.entryId);
+            return Boolean(actor && actor.img);
+        },
+        callback: node => {
+            const el = node instanceof HTMLElement ? node : node[0];
+            const actorId = el.closest('[data-entry-id]')?.dataset?.entryId;
+            const actor = game.actors.get(actorId);
+            // ... logica dell'azione ...
+        }
+    });
+});
+```
+
+### 3. Punti Chiave per l'Estrazione dei Dati
+- **Dataset**: Utilizzare `dataset.entryId` (o `dataset.documentId`) anziché interrogazioni jQuery su attributi personalizzati.
+- **Distanziamento degli elementi**: La ricerca dell'elemento contenente l'ID del documento deve usare `.closest('[data-entry-id]')` per risalire in modo sicuro nella gerarchia del DOM di `ApplicationV2`.

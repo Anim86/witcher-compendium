@@ -73,7 +73,18 @@
                 "definition": "<p>Attacco mirato (penalità -6) che impone una penalità alle statistiche (RIF, FIS o VEL) pari a 1 per ogni 3 punti sopra la difesa nemica. La penalità permane finché non viene curata con Chirurgia Efficace.</p>"
             }
         },
-        "professionSkills": "Resistere a Coercizione, Carisma, Etichetta, Coraggio, Sensibilità, Sopravvivenza, Commercio, Deduzione, Lame Corte, Alchimia",
+        "professionSkills": [
+            "resistCoercion",
+            "charisma",
+            "socialEtiquette",
+            "courage",
+            "humanPerception",
+            "wildernessSurvival",
+            "business",
+            "deduction",
+            "smallblades",
+            "alchemy"
+        ],
         "notes": "<p>In un mondo dilaniato dalla guerra e dai mostri, il medico è una figura essenziale. Dagli accademici di Oxenfurt ai medici da campo, queste figure conoscono i segreti del corpo umano. Sanno come riportare indietro chi ha già un piede nella fossa, ma anche come usare la loro conoscenza anatomica per infliggere ferite debilitanti.</p>"
     },
     "effects": [],

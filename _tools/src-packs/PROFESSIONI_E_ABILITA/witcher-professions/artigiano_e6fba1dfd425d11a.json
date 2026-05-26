@@ -73,7 +73,18 @@
                 "definition": "<p>Permette di individuare difetti strutturali in un oggetto. Consente un attacco mirato con penalità -6 per infliggere danno ablativo superiore (1d6 x metà del punteggio dell'abilità).</p>"
             }
         },
-        "professionSkills": "Manifattura, Commercio, Atletica, Tempra, Prestanza, Scaltrezza, Belle Arti, Alchimia, Istruzione, Persuasione",
+        "professionSkills": [
+            "crafting",
+            "business",
+            "athletics",
+            "endurance",
+            "physique",
+            "streetwise",
+            "fineArts",
+            "alchemy",
+            "education",
+            "persuasion"
+        ],
         "notes": "<p>L'artigiano è probabilmente la seconda professione più comune. Mastri, li chiamano alcuni. Possono essere fabbri capaci di forgiare armi leggendarie o alchimisti esperti in bombe e misture letali. Un buon artigiano sa riparare un oggetto spezzato quanto basta perché torni a far combattere chi lo utilizza.</p>"
     },
     "effects": [],

@@ -73,7 +73,20 @@
                 "definition": "<p>Permette di far rivoltare un bersaglio contro un alleato tramite bugie e mezze verità. L'effetto dura un numero di giorni pari al valore dell'abilità o finché il bersaglio non supera un tiro di Resistere a Coercizione.</p>"
             }
         },
-        "professionSkills": "Carisma, Inganno, Esibirsi, Linguaggio (1 a scelta), Sensibilità, Persuasione, Scaltrezza, Belle Arti, Seduzione, Etichetta",
+        "professionSkills": [
+            "charisma",
+            "deceit",
+            "performance",
+            "commonSpeech",
+            "elderSpeech",
+            "dwarvenSpeech",
+            "humanPerception",
+            "persuasion",
+            "streetwise",
+            "fineArts",
+            "seduction",
+            "socialEtiquette"
+        ],
         "notes": "<p>Non si sa mai cosa aspettarsi da un bardo. Possono essere poeti erranti che cantano di eroi e leggende, o scaltre spie che manipolano le folle e le menti per ottenere segreti. Il loro talento nel trafficare con la testa della gente è pari solo alla loro abilità nel raccontare storie.</p>"
     },
     "effects": [],

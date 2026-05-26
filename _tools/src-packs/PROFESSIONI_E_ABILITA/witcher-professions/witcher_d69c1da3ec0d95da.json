@@ -73,7 +73,18 @@
                 "definition": "<p>Spendendo 5 RES per round, il Witcher può roteare in un turbine ed effettuare un attacco contro ogni bersaglio a portata. Richiede di mantenere l'azione, schivare o muoversi di soli 2m.</p>"
             }
         },
-        "professionSkills": "Scherma, Armi in Asta, Lame Corte, Atletica, Accortezza, Sopravvivenza, Alchimia, Resistere alla Magia, Tempra, Intimidire",
+        "professionSkills": [
+            "swordsmanship",
+            "staffspear",
+            "smallblades",
+            "athletics",
+            "awareness",
+            "wildernessSurvival",
+            "alchemy",
+            "resistMagic",
+            "endurance",
+            "intimidation"
+        ],
         "notes": "<p>I witcher sono mutanti creati per un solo scopo: uccidere mostri. Sottoposti a prove e mutazioni atroci fin da bambini, hanno acquisito sensi sovraumani e la capacità di usare i Segni. Freddi e risoluti, sono i guardiani dell'umanità contro le creature del Caos, anche se per questo sono spesso odiati e temuti dai comuni mortali.</p>"
     },
     "effects": [],

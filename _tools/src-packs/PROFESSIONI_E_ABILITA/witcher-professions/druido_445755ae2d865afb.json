@@ -73,7 +73,18 @@
                 "definition": "<p>Permette al Druido di evocare i difensori della natura. Spendendo Resistenza, può far apparire Spine, Radici Impiglianti o nebbia fitta per ostacolare chi minaccia l'equilibrio naturale.</p>"
             }
         },
-        "professionSkills": "Sopravvivenza, Accortezza, Sensibilità, Istruzione, Alchimia, Officiare Rituali, Lanciare Incantesimi, Pronto Soccorso, Belle Arti, Armi in Asta",
+        "professionSkills": [
+            "wildernessSurvival",
+            "awareness",
+            "humanPerception",
+            "education",
+            "alchemy",
+            "ritualCrafting",
+            "spellCasting",
+            "firstaid",
+            "fineArts",
+            "staffspear"
+        ],
         "notes": "<p>I druidi vivono in armonia con la natura e ne proteggono l'equilibrio sacro. Diversi dai maghi e dai preti, attingono la loro magia dalla terra stessa e dagli spiriti dei boschi. Sono i custodi dei circoli sacri, capaci di parlare agli animali, mutare forma e scatenare le forze della natura contro i trasgressori.</p>"
     },
     "effects": [],

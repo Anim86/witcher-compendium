@@ -73,7 +73,18 @@
                 "definition": "<p>Permette di sparire e nascondersi subito dopo aver effettuato un attacco (anche in mischia), tramite una prova contrapposta all'Accortezza del nemico. Subisce modificatori in base a luce e distanza.</p>"
             }
         },
-        "professionSkills": "Rapidità di Mano, Scassinare, Scaltrezza, Falsificare, Inganno, Nascondersi, Intimidire, Lame Corte, Atletica, Accortezza",
+        "professionSkills": [
+            "sleightOfHand",
+            "pickLock",
+            "streetwise",
+            "forgery",
+            "deceit",
+            "stealth",
+            "intimidation",
+            "smallblades",
+            "athletics",
+            "awareness"
+        ],
         "notes": "<p>Dagli scassinatori professionisti agli assassini occasionali, i criminali sanno come muoversi nell'ombra. Sono esperti nel trovare punti deboli, scassinare serrature impossibili e sparire nel nulla quando le cose si mettono male. Per un criminale, farsi beccare significa la fine.</p>"
     },
     "effects": [],

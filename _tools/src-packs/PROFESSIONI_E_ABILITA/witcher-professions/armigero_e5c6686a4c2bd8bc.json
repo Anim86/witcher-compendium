@@ -73,7 +73,23 @@
                 "definition": "<p>Spendendo 10 Resistenza, permette di tirare per negare una Ferita Critica subita. Se il tiro supera quello dell'attacco nemico, il danno viene subito come se non fosse un critico. Usabile volte al giorno pari al FIS.</p>"
             }
         },
-        "professionSkills": "5 Abilità di Combattimento a scelta (Archi, Armi in Asta, Atletica, Balestre, Cavalcare, Lame Corte, Mischia, Rissa, Scherma, Tattica), Sopravvivenza, Coraggio, Prestanza, Intimidire, Eludere",
+        "professionSkills": [
+            "archery",
+            "staffspear",
+            "athletics",
+            "crossbow",
+            "riding",
+            "smallblades",
+            "melee",
+            "brawling",
+            "swordsmanship",
+            "tactics",
+            "wildernessSurvival",
+            "courage",
+            "physique",
+            "intimidation",
+            "dodgeEscape"
+        ],
         "notes": "<p>I soldati pensano secondo la tattica. Sanno quando colpire, quando indietreggiare, quando caricare e quando tenere la posizione. I veri armigeri sono soldati incalliti che non rinunciano o si arrendono mai. Un armigero vive di combattimenti e respira conflitti.</p>"
     },
     "effects": [],

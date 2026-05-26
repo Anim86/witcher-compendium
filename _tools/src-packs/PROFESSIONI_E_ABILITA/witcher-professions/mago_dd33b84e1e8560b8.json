@@ -73,7 +73,18 @@
                 "definition": "<p>Permette di convogliare un incantesimo tramite i propri focus dimezzandone (1 focus) o riducendone a un quarto (2 focus) il costo in punti Resistenza. Richiede una prova con CD 16 prima del lancio.</p>"
             }
         },
-        "professionSkills": "Lanciare Incantesimi, Intessere Fatture, Officiare Rituali, Resistere alla Magia, Armi in Asta, Istruzione, Etichetta, Sensibilità, Seduzione, Eleganza",
+        "professionSkills": [
+            "spellCasting",
+            "hexWeaving",
+            "ritualCrafting",
+            "resistMagic",
+            "staffspear",
+            "education",
+            "socialEtiquette",
+            "humanPerception",
+            "seduction",
+            "groomingAndStyle"
+        ],
         "notes": "<p>I maghi sono i potenti condotti del Caos Primevo. Nelle accademie imparano a usare la magia per far progredire la scienza e migliorare la vita, ma spesso finiscono per diventare influenti consiglieri reali o pericolosi manipolatori politici. La loro conoscenza arcana permette loro di compiere miracoli e mutazioni impossibili per i comuni mortali.</p>"
     },
     "effects": [],
