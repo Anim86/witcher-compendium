@@ -12,6 +12,7 @@ export default class SkillItemData extends CommonItemData {
             value: new fields.NumberField({ initial: 0 }),
             label: new fields.StringField({ initial: '' }),
             isOpened: new fields.BooleanField({ initial: false }),
+            isDifficult: new fields.BooleanField({ initial: false }),
             modifiers: new fields.ArrayField(new fields.SchemaField(modifier())),
             activeEffectModifiers: new fields.NumberField({ initial: 0 }),
             isProfession: new fields.BooleanField({ initial: false }),

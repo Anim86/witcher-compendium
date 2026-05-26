@@ -499,24 +499,27 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         if (!entry) {
             entry = Object.values(CONFIG.WITCHER.skillMap).find(e => {
                 if (e.name && e.name.toLowerCase() === lowerKeyOrName) return true;
+                if (e.rollLabel && game.i18n.localize(e.rollLabel).toLowerCase() === lowerKeyOrName) return true;
                 return game.i18n.localize(e.label).toLowerCase() === lowerKeyOrName;
             });
         }
 
         // Get the localized label and the technical name
         const localizedLabel = entry ? game.i18n.localize(entry.label).toLowerCase() : lowerKeyOrName;
+        const localizedRollLabel = entry && entry.rollLabel ? game.i18n.localize(entry.rollLabel).toLowerCase() : null;
         const technicalName = entry?.name ? entry.name.toLowerCase() : lowerKeyOrName;
 
         // 2. Search in allSkills matching localized label, technical name, or keyOrName
         return this.allSkills.find(s => {
             const sName = s.name.toLowerCase();
-            return sName === localizedLabel || sName === technicalName || sName === lowerKeyOrName;
+            return sName === localizedLabel || sName === localizedRollLabel || sName === technicalName || sName === lowerKeyOrName;
         });
     }
 
     _getSkillInfo(skill) {
         const entry = Object.values(CONFIG.WITCHER.skillMap).find(e => {
             if (e.name && e.name.toLowerCase() === skill.name.toLowerCase()) return true;
+            if (e.rollLabel && game.i18n.localize(e.rollLabel).toLowerCase() === skill.name.toLowerCase()) return true;
             return game.i18n.localize(e.label).toLowerCase() === skill.name.toLowerCase();
         });
         
@@ -676,18 +679,13 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
     }
 
     /**
-     * Determines the cost of a skill from the global configuration.
+     * Determines the cost of a skill from the item data.
      * @param {Object} skillItem - The skill item document or object.
      * @returns {number} - 1 for simple, 2 for difficult.
      * @private
      */
     _getSkillCost(skillItem) {
-        const entry = Object.values(CONFIG.WITCHER.skillMap).find(e => {
-            // Match by technical name if it exists, otherwise by localized label
-            if (e.name && e.name.toLowerCase() === skillItem.name.toLowerCase()) return true;
-            return game.i18n.localize(e.label).toLowerCase() === skillItem.name.toLowerCase();
-        });
-        return entry?.cost || 1;
+        return skillItem?.system?.isDifficult ? 2 : 1;
     }
 
     /**
@@ -1684,6 +1682,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                     cloned.system.isProfession = myProfNames.includes(cloned.name.toLowerCase());
                     cloned.system.isPickup = !cloned.system.isProfession;
                     cloned.system.isLearned = true;
+                    cloned.system.multiplier = cloned.system.isDifficult ? 2 : 1;
                     itemsToCreate.push(cloned);
                 }
             }

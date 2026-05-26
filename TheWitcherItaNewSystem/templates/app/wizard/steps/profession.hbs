@@ -36,7 +36,7 @@
                     </div>
                     
                     {{#if character.profession.system.definingSkill.skillName}}
-                    <div class="detail-perks-list" style="margin-top: 15px;">
+                    <div class="detail-perks-list">
                         <h3>Abilità Unica:</h3>
                         <details class="prof-skill-details unique-skill-details" open>
                             <summary class="prof-skill-tag unique-skill-tag">
@@ -52,7 +52,7 @@
                     {{/if}}
 
                     {{#if (or character.profession.system.skillPath1.pathName (or character.profession.system.skillPath2.pathName character.profession.system.skillPath3.pathName))}}
-                    <div class="detail-perks-list" style="margin-top: 15px;">
+                    <div class="detail-perks-list">
                         <h3>Rami di Specializzazione:</h3>
                         <div class="prof-paths-container">
                             {{#if character.profession.system.skillPath1.pathName}}

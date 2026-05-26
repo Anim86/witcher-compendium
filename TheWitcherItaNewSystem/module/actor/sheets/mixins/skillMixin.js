@@ -3,12 +3,8 @@ export let skillMixin = {
         let totalSkills = 0;
         for (let element in context.system.skills) {
             for (let skill in context.system.skills[element]) {
-                let skillLabel = game.i18n.localize(context.system.skills[element][skill].label);
-                if (skillLabel?.includes('(2)')) {
-                    totalSkills += context.system.skills[element][skill].value * 2;
-                } else {
-                    totalSkills += context.system.skills[element][skill].value;
-                }
+                const multiplier = context.system.skills[element][skill].multiplier || 1;
+                totalSkills += context.system.skills[element][skill].value * multiplier;
             }
         }
         return totalSkills;
