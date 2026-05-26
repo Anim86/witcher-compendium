@@ -2065,11 +2065,15 @@ form.witcher-wizard .wizard-content {
     padding-right: 2px;
 }
 
+.witcher-wizard .detail-description p:last-child {
+    margin-bottom: 0;
+}
+
 .witcher-wizard .detail-perks-list {
     padding-top: 10px;
     border-top: 1px solid rgba(102, 85, 68, 0.25);
     flex-shrink: 0;
-    margin-top: 5px;
+    margin-top: 0;
 }
 
 .witcher-wizard .detail-perks-list h3 {
@@ -2397,8 +2401,8 @@ form.witcher-wizard .wizard-content {
 .witcher-wizard .prof-paths-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    margin-top: 10px;
+    gap: 10px;
+    margin-top: 8px;
     align-items: start;
 }
 
@@ -2412,21 +2416,21 @@ form.witcher-wizard .wizard-content {
     background: rgba(255, 255, 255, 0.35);
     border: 1px solid var(--wizard-border);
     border-radius: 8px;
-    padding: 12px;
+    padding: 8px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 4px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
 }
 
 .witcher-wizard .prof-path-branch h4 {
-    margin: 0 0 6px 0 !important;
-    font-size: 0.95rem !important;
+    margin: 0 0 4px 0 !important;
+    font-size: 0.9rem !important;
     text-align: center !important;
     color: var(--wizard-accent) !important;
     font-family: 'MedievalSharp', serif !important;
     border-bottom: 2px solid rgba(139, 0, 0, 0.15);
-    padding-bottom: 4px;
+    padding-bottom: 2px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
@@ -2445,7 +2449,7 @@ form.witcher-wizard .wizard-content {
     border: 1px solid rgba(102, 85, 68, 0.2);
     box-shadow: none;
     font-size: 0.8rem;
-    padding: 6px 10px;
+    padding: 4px 8px;
 }
 
 .witcher-wizard .path-skill-details summary.path-skill-tag:hover {

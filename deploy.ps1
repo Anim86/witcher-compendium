@@ -9,8 +9,11 @@ $systemSrc = Join-Path $PSScriptRoot "TheWitcherItaNewSystem"
 # Destinazione: prova il vecchio percorso su E:, altrimenti usa il percorso standard su C:
 $foundryBase = "E:\FoundryVTT_Data"
 if (-not (Test-Path $foundryBase)) {
-    # Percorso standard basato sull'utente corrente
-    $foundryBase = "$env:LOCALAPPDATA\FoundryVTT"
+    $foundryBase = "C:\Users\Manuel\AppData\Local\FoundryVTT"
+    if (-not (Test-Path $foundryBase)) {
+        # Percorso standard basato sull'utente corrente
+        $foundryBase = "$env:LOCALAPPDATA\FoundryVTT"
+    }
 }
 
 $moduleDest = Join-Path $foundryBase "Data\modules\witcher-compendium"

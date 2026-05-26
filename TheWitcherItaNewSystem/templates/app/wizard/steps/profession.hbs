@@ -217,29 +217,7 @@
                     </div>
                     {{/if}}
 
-                    {{#if professionSkills}}
-                    <div class="detail-perks-list" style="margin-top: 15px;">
-                        <h3>Abilità di Partenza:</h3>
-                        <div class="prof-skills-expandable-list">
-                            {{#each professionSkills}}
-                            <details class="prof-skill-details">
-                                <summary class="prof-skill-tag">
-                                    <i class="fa-solid fa-book icon-left"></i>
-                                    {{name}}
-                                    <i class="fa-solid fa-chevron-down toggle-icon"></i>
-                                </summary>
-                                <div class="prof-skill-desc">
-                                    {{#if description}}
-                                        {{{description}}}
-                                    {{else}}
-                                        <p>Nessuna descrizione disponibile per questa abilità.</p>
-                                    {{/if}}
-                                </div>
-                            </details>
-                            {{/each}}
-                        </div>
-                    </div>
-                    {{/if}}
+
                 </div>
             {{else}}
                 <div class="detail-placeholder">
