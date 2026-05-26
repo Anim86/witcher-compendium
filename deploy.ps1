@@ -23,6 +23,8 @@ $systemDest = Join-Path $foundryBase "Data\systems\TheWitcherItaNewSystem"
 
 Write-Host "Starting deployment to: $foundryBase" -ForegroundColor Cyan
 Write-Host "Source path: $PSScriptRoot" -ForegroundColor Gray
+Write-Host "Destination module path: $moduleDest" -ForegroundColor Green
+Write-Host "Destination system path: $systemDest" -ForegroundColor Green
 
 # Stop FoundryVTT service (se installato come servizio) o processo desktop
 Write-Host "Stopping FoundryVTT (if running)..." -ForegroundColor Yellow
