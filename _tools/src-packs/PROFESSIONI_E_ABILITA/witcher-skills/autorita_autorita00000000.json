@@ -1,0 +1,30 @@
+{
+  "_id": "autorita00000000",
+  "name": "Autorità",
+  "type": "skill",
+  "img": "modules/witcher-compendium/assets/PROFESSIONI_E_ABILITA/witcher-skills/autorita.webp",
+  "system": {
+    "attribute": "emp",
+    "description": "<p>L'abilità di proiettare sicurezza e comandare il rispetto altrui. Permette di dare ordini, guidare le truppe o farsi obbedire e seguire grazie alla propria presenza carismatica e autorevole.</p>",
+    "sourcebook": "MB 53",
+    "value": 0,
+    "label": "",
+    "isOpened": false,
+    "modifiers": [],
+    "activeEffectModifiers": 0,
+    "isProfession": false,
+    "isPickup": false,
+    "isLearned": false
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
+}
