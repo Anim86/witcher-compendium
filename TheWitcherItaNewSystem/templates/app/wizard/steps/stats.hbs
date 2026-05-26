@@ -29,8 +29,9 @@
                     <span class="reservoir-val">{{pointsRemaining}}</span>
                 </div>
 
-                <div class="stat-info-tip" title="Punti caratteristica rimanenti da distribuire per definire il tuo potenziale fisico e mentale (Totale: 60).">
+                <div class="stat-info-tip">
                     <i class="fa-solid fa-circle-info"></i>
+                    <span class="tooltip-text">Punti caratteristica rimanenti da distribuire per definire il tuo potenziale fisico e mentale (Totale: 60).</span>
                 </div>
             </div>
             {{#each stats}}
@@ -58,13 +59,14 @@
                            name="stats.{{@key}}" 
                            value="{{value}}" 
                            readonly>
-                    <button type="button" class="ctrl-btn plus" data-action="adjustStat" data-stat="{{@key}}" data-delta="1">
+                     <button type="button" class="ctrl-btn plus" data-action="adjustStat" data-stat="{{@key}}" data-delta="1">
                         <i class="fa-solid fa-chevron-right"></i>
                     </button>
                 </div>
 
-                <div class="stat-info-tip" title="{{localize (concat 'WITCHER.Actor.Stat.Desc.' @key)}}">
+                <div class="stat-info-tip">
                     <i class="fa-solid fa-circle-info"></i>
+                    <span class="tooltip-text">{{localize (concat 'WITCHER.Actor.Stat.Desc.' @key)}}</span>
                 </div>
             </div>
             {{/each}}

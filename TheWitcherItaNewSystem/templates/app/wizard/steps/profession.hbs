@@ -38,8 +38,181 @@
                     {{#if character.profession.system.definingSkill.skillName}}
                     <div class="detail-perks-list" style="margin-top: 15px;">
                         <h3>Abilità Unica:</h3>
-                        <div class="prof-skills-tags">
-                            <span class="prof-skill-tag unique-skill-tag" title="{{{character.profession.system.definingSkill.definition}}}">{{character.profession.system.definingSkill.skillName}}</span>
+                        <details class="prof-skill-details unique-skill-details" open>
+                            <summary class="prof-skill-tag unique-skill-tag">
+                                <i class="fa-solid fa-star icon-left"></i>
+                                {{character.profession.system.definingSkill.skillName}}
+                                <i class="fa-solid fa-chevron-down toggle-icon"></i>
+                            </summary>
+                            <div class="prof-skill-desc unique-skill-desc">
+                                {{{character.profession.system.definingSkill.definition}}}
+                            </div>
+                        </details>
+                    </div>
+                    {{/if}}
+
+                    {{#if (or character.profession.system.skillPath1.pathName (or character.profession.system.skillPath2.pathName character.profession.system.skillPath3.pathName))}}
+                    <div class="detail-perks-list" style="margin-top: 15px;">
+                        <h3>Rami di Specializzazione:</h3>
+                        <div class="prof-paths-container">
+                            {{#if character.profession.system.skillPath1.pathName}}
+                            <div class="prof-path-branch">
+                                <h4>{{character.profession.system.skillPath1.pathName}}</h4>
+                                <div class="prof-skills-expandable-list">
+                                    {{#if character.profession.system.skillPath1.skill1.skillName}}
+                                    <details class="prof-skill-details path-skill-details">
+                                        <summary class="prof-skill-tag path-skill-tag">
+                                            <span>
+                                                <i class="fa-solid fa-turn-up icon-left rotate-90"></i>
+                                                {{character.profession.system.skillPath1.skill1.skillName}}
+                                                <span class="skill-stat-badge">({{character.profession.system.skillPath1.skill1.stat}})</span>
+                                            </span>
+                                            <i class="fa-solid fa-chevron-down toggle-icon"></i>
+                                        </summary>
+                                        <div class="prof-skill-desc path-skill-desc">
+                                            {{{character.profession.system.skillPath1.skill1.definition}}}
+                                        </div>
+                                    </details>
+                                    {{/if}}
+                                    {{#if character.profession.system.skillPath1.skill2.skillName}}
+                                    <details class="prof-skill-details path-skill-details">
+                                        <summary class="prof-skill-tag path-skill-tag">
+                                            <span>
+                                                <i class="fa-solid fa-turn-up icon-left rotate-90"></i>
+                                                {{character.profession.system.skillPath1.skill2.skillName}}
+                                                <span class="skill-stat-badge">({{character.profession.system.skillPath1.skill2.stat}})</span>
+                                            </span>
+                                            <i class="fa-solid fa-chevron-down toggle-icon"></i>
+                                        </summary>
+                                        <div class="prof-skill-desc path-skill-desc">
+                                            {{{character.profession.system.skillPath1.skill2.definition}}}
+                                        </div>
+                                    </details>
+                                    {{/if}}
+                                    {{#if character.profession.system.skillPath1.skill3.skillName}}
+                                    <details class="prof-skill-details path-skill-details">
+                                        <summary class="prof-skill-tag path-skill-tag">
+                                            <span>
+                                                <i class="fa-solid fa-turn-up icon-left rotate-90"></i>
+                                                {{character.profession.system.skillPath1.skill3.skillName}}
+                                                <span class="skill-stat-badge">({{character.profession.system.skillPath1.skill3.stat}})</span>
+                                            </span>
+                                            <i class="fa-solid fa-chevron-down toggle-icon"></i>
+                                        </summary>
+                                        <div class="prof-skill-desc path-skill-desc">
+                                            {{{character.profession.system.skillPath1.skill3.definition}}}
+                                        </div>
+                                    </details>
+                                    {{/if}}
+                                </div>
+                            </div>
+                            {{/if}}
+
+                            {{#if character.profession.system.skillPath2.pathName}}
+                            <div class="prof-path-branch">
+                                <h4>{{character.profession.system.skillPath2.pathName}}</h4>
+                                <div class="prof-skills-expandable-list">
+                                    {{#if character.profession.system.skillPath2.skill1.skillName}}
+                                    <details class="prof-skill-details path-skill-details">
+                                        <summary class="prof-skill-tag path-skill-tag">
+                                            <span>
+                                                <i class="fa-solid fa-turn-up icon-left rotate-90"></i>
+                                                {{character.profession.system.skillPath2.skill1.skillName}}
+                                                <span class="skill-stat-badge">({{character.profession.system.skillPath2.skill1.stat}})</span>
+                                            </span>
+                                            <i class="fa-solid fa-chevron-down toggle-icon"></i>
+                                        </summary>
+                                        <div class="prof-skill-desc path-skill-desc">
+                                            {{{character.profession.system.skillPath2.skill1.definition}}}
+                                        </div>
+                                    </details>
+                                    {{/if}}
+                                    {{#if character.profession.system.skillPath2.skill2.skillName}}
+                                    <details class="prof-skill-details path-skill-details">
+                                        <summary class="prof-skill-tag path-skill-tag">
+                                            <span>
+                                                <i class="fa-solid fa-turn-up icon-left rotate-90"></i>
+                                                {{character.profession.system.skillPath2.skill2.skillName}}
+                                                <span class="skill-stat-badge">({{character.profession.system.skillPath2.skill2.stat}})</span>
+                                            </span>
+                                            <i class="fa-solid fa-chevron-down toggle-icon"></i>
+                                        </summary>
+                                        <div class="prof-skill-desc path-skill-desc">
+                                            {{{character.profession.system.skillPath2.skill2.definition}}}
+                                        </div>
+                                    </details>
+                                    {{/if}}
+                                    {{#if character.profession.system.skillPath2.skill3.skillName}}
+                                    <details class="prof-skill-details path-skill-details">
+                                        <summary class="prof-skill-tag path-skill-tag">
+                                            <span>
+                                                <i class="fa-solid fa-turn-up icon-left rotate-90"></i>
+                                                {{character.profession.system.skillPath2.skill3.skillName}}
+                                                <span class="skill-stat-badge">({{character.profession.system.skillPath2.skill3.stat}})</span>
+                                            </span>
+                                            <i class="fa-solid fa-chevron-down toggle-icon"></i>
+                                        </summary>
+                                        <div class="prof-skill-desc path-skill-desc">
+                                            {{{character.profession.system.skillPath2.skill3.definition}}}
+                                        </div>
+                                    </details>
+                                    {{/if}}
+                                </div>
+                            </div>
+                            {{/if}}
+
+                            {{#if character.profession.system.skillPath3.pathName}}
+                            <div class="prof-path-branch">
+                                <h4>{{character.profession.system.skillPath3.pathName}}</h4>
+                                <div class="prof-skills-expandable-list">
+                                    {{#if character.profession.system.skillPath3.skill1.skillName}}
+                                    <details class="prof-skill-details path-skill-details">
+                                        <summary class="prof-skill-tag path-skill-tag">
+                                            <span>
+                                                <i class="fa-solid fa-turn-up icon-left rotate-90"></i>
+                                                {{character.profession.system.skillPath3.skill1.skillName}}
+                                                <span class="skill-stat-badge">({{character.profession.system.skillPath3.skill1.stat}})</span>
+                                            </span>
+                                            <i class="fa-solid fa-chevron-down toggle-icon"></i>
+                                        </summary>
+                                        <div class="prof-skill-desc path-skill-desc">
+                                            {{{character.profession.system.skillPath3.skill1.definition}}}
+                                        </div>
+                                    </details>
+                                    {{/if}}
+                                    {{#if character.profession.system.skillPath3.skill2.skillName}}
+                                    <details class="prof-skill-details path-skill-details">
+                                        <summary class="prof-skill-tag path-skill-tag">
+                                            <span>
+                                                <i class="fa-solid fa-turn-up icon-left rotate-90"></i>
+                                                {{character.profession.system.skillPath3.skill2.skillName}}
+                                                <span class="skill-stat-badge">({{character.profession.system.skillPath3.skill2.stat}})</span>
+                                            </span>
+                                            <i class="fa-solid fa-chevron-down toggle-icon"></i>
+                                        </summary>
+                                        <div class="prof-skill-desc path-skill-desc">
+                                            {{{character.profession.system.skillPath3.skill2.definition}}}
+                                        </div>
+                                    </details>
+                                    {{/if}}
+                                    {{#if character.profession.system.skillPath3.skill3.skillName}}
+                                    <details class="prof-skill-details path-skill-details">
+                                        <summary class="prof-skill-tag path-skill-tag">
+                                            <span>
+                                                <i class="fa-solid fa-turn-up icon-left rotate-90"></i>
+                                                {{character.profession.system.skillPath3.skill3.skillName}}
+                                                <span class="skill-stat-badge">({{character.profession.system.skillPath3.skill3.stat}})</span>
+                                            </span>
+                                            <i class="fa-solid fa-chevron-down toggle-icon"></i>
+                                        </summary>
+                                        <div class="prof-skill-desc path-skill-desc">
+                                            {{{character.profession.system.skillPath3.skill3.definition}}}
+                                        </div>
+                                    </details>
+                                    {{/if}}
+                                </div>
+                            </div>
+                            {{/if}}
                         </div>
                     </div>
                     {{/if}}
@@ -47,9 +220,22 @@
                     {{#if professionSkills}}
                     <div class="detail-perks-list" style="margin-top: 15px;">
                         <h3>Abilità di Partenza:</h3>
-                        <div class="prof-skills-tags">
+                        <div class="prof-skills-expandable-list">
                             {{#each professionSkills}}
-                                <span class="prof-skill-tag">{{name}}</span>
+                            <details class="prof-skill-details">
+                                <summary class="prof-skill-tag">
+                                    <i class="fa-solid fa-book icon-left"></i>
+                                    {{name}}
+                                    <i class="fa-solid fa-chevron-down toggle-icon"></i>
+                                </summary>
+                                <div class="prof-skill-desc">
+                                    {{#if description}}
+                                        {{{description}}}
+                                    {{else}}
+                                        <p>Nessuna descrizione disponibile per questa abilità.</p>
+                                    {{/if}}
+                                </div>
+                            </details>
                             {{/each}}
                         </div>
                     </div>

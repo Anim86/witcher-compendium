@@ -508,7 +508,8 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                     cost: cost,
                     isDifficult: cost === 2,
                     isNativeLanguage: info.isNativeLanguage,
-                    attributeLabel: info.attributeLabel
+                    attributeLabel: info.attributeLabel,
+                    description: skill.system?.description || ""
                 });
                 
                 // Initialize default value if missing
