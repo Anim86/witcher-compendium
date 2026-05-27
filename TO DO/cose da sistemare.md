@@ -2,11 +2,14 @@
 
 
 
-* immagini da fare:
+bug / correzioni da fare:
 
-  * [x] fare le immagini dei banner dei compendi (tutti i 35 banner completati ed integrati)
-  * bug / correzioni da fare:
-  * [x] ferite critiche va sistemato. Le schede si aprono ma sono vuote (risolto tramite implementazione di WitcherCriticalWoundSheet)
-  * \[ ] dobbiamo sistemare le schede dei componenti perchè hanno un campo rarità vuoto e la scritta rarità nel testo. puliamole
-  * \[ ] settare iperlink tra i compendi
+* \[x] ferite critiche va sistemato. Le schede si aprono ma sono vuote (risolto tramite implementazione di WitcherCriticalWoundSheet)
+* \[ ] dobbiamo sistemare le schede dei componenti perchè hanno un campo rarità vuoto e la scritta rarità nel testo. puliamole
+
+Wizard:
+
+* \[ ] filtrare nella sezione equipaggiamento di non poter scegliere gli oggetti che costano 0 corone
+* \[ ] aggiungere sezione di scelta incantesimi con i limiti decisi dal regolamento
+* \[ ] settare iperlink tra i compendi
 
