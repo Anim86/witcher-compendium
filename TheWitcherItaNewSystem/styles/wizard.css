@@ -1698,36 +1698,53 @@ form.witcher-wizard .wizard-content {
 }
 
 .witcher-wizard .step-skills .ctrl-btn {
-    width: 20px;
-    height: 20px;
-    background: #444;
-    color: white;
-    border: none;
+    width: 24px;
+    height: 24px;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    color: var(--wizard-text-dark);
+    border: 1px solid #ccc;
     border-radius: 4px;
     cursor: pointer;
-    transition: all 0.2s;
+    transition: all 0.2s ease;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
 }
 
 .witcher-wizard .step-skills .ctrl-btn:hover {
     background: var(--wizard-accent);
+    color: white;
+    border-color: var(--wizard-accent);
     transform: translateY(-1px);
+    box-shadow: 1px 2px 4px rgba(0,0,0,0.15);
+}
+
+.witcher-wizard .step-skills .ctrl-btn.delete {
+    background: #fff;
+    border: 1px solid #e63946;
+    color: #e63946 !important;
+}
+
+.witcher-wizard .step-skills .ctrl-btn.delete:hover {
+    background: #e63946;
+    color: white !important;
+    border-color: #e63946;
 }
 
 .witcher-wizard .step-skills .skill-input {
-    width: 28px;
-    height: 20px !important;
+    width: 32px;
+    height: 24px !important;
     background: white !important;
     border: 1px solid var(--wizard-border) !important;
     border-radius: 4px;
     text-align: center;
     font-family: 'MedievalSharp', serif;
-    font-size: 0.85rem !important;
+    font-size: 0.95rem !important;
     font-weight: bold;
     color: var(--wizard-text-dark) !important;
+    box-shadow: inset 1px 1px 3px rgba(0,0,0,0.05);
     padding: 0 !important;
 }
 

@@ -110,17 +110,35 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         addPickupSkill: function(event, target) { this._addPickupSkill(event, target); },
         removePickupSkill: function(event, target) { this._removePickupSkill(event, target); },
         addCombatSkill: function(event, target) { this._addCombatSkill(event, target); },
+        removeCombatSkill: function(event, target) { this._removeCombatSkill(event, target); },
+        addBardLanguage: function(event, target) { this._addBardLanguage(event, target); },
+        removeBardLanguage: function(event, target) { this._removeBardLanguage(event, target); },
         finish: function(event, target) { this._finish(event, target); },
         switchSkillTab: function(event, target) { this._switchSkillTab(event, target); },
         toggleGnomeSkill: function(event, target) { this._toggleGnomeSkill(event, target); },
         toggleProfessionGear: function(event, target) { this._toggleProfessionGear(event, target); },
-        rollAllSkills: function(event, target) { this._rollAllSkills(event, target); }
+        rollAllSkills: function(event, target) { this._rollAllSkills(event, target); },
+        rollStartingGold: function(event, target) { this._rollStartingGold(event, target); }
     };
 
     static PARTS = {
         navigation: { template: "systems/TheWitcherItaNewSystem/templates/app/wizard/navigation.hbs" },
         content: { template: "systems/TheWitcherItaNewSystem/templates/app/wizard/content.hbs" },
         footer: { template: "systems/TheWitcherItaNewSystem/templates/app/wizard/footer.hbs" }
+    };
+
+    static STARTING_GOLD_MULTIPLIER = {
+        "armigero": 120,
+        "artigiano": 120,
+        "bardo": 100,
+        "criminale": 150,
+        "mago": 200,
+        "medico": 150,
+        "mercante": 180,
+        "prete": 75,
+        "witcher": 50,
+        "druido": 75,
+        "villico": 20
     };
 
     /* -------------------------------------------- */
@@ -388,6 +406,35 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 }
             }
 
+            // Bard language logic
+            let availableBardLanguages = [];
+            let bardLanguagesRemaining = 0;
+            const isBardo = this.characterData.profession?.name?.toLowerCase() === "bardo";
+            const isMercante = this.characterData.profession?.name?.toLowerCase() === "mercante";
+            if (isBardo || isMercante) {
+                if (!this.characterData.selectedBardLanguages) this.characterData.selectedBardLanguages = [];
+                const maxBardLanguages = isMercante ? 2 : 1;
+                const selectedCount = this.characterData.selectedBardLanguages.length;
+                bardLanguagesRemaining = Math.max(0, maxBardLanguages - selectedCount);
+
+                if (bardLanguagesRemaining > 0) {
+                    const langKeys = ["commonspeech", "eldersp", "dwarven"];
+                    const validLangIds = langKeys.map(k => this._findSkillByKeyOrName(k)?._id).filter(Boolean);
+                    
+                    availableBardLanguages = this.allSkills.filter(s => 
+                        validLangIds.includes(s._id) && 
+                        !this._isNativeLanguage(s.name) &&
+                        !this.characterData.selectedBardLanguages.includes(s._id)
+                    ).map(s => {
+                        return {
+                            key: s._id,
+                            name: s.name,
+                            cost: this._getSkillCost(s)
+                        };
+                    });
+                }
+            }
+
             let availableGnomeSkills = [];
             let gnomeSkillsRemaining = 0;
             if (this.characterData.race?.name === "Gnomo") {
@@ -439,10 +486,13 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 availableCombatSkills: availableCombatSkills,
                 combatSkillsRemaining: combatSkillsRemaining,
                 isArmigero: isArmigero,
+                availableBardLanguages: availableBardLanguages,
+                bardLanguagesRemaining: bardLanguagesRemaining,
+                isBardo: isBardo || isMercante,
                 allGear: {
-                    weapons: (this.weapons || []).map(sanitizeItem),
-                    armor: (this.armor || []).map(sanitizeItem),
-                    equipment: (this.gear || []).map(sanitizeItem)
+                    weapons: (this.weapons || []).filter(i => (i.system?.cost || 0) > 0).map(sanitizeItem),
+                    armor: (this.armor || []).filter(i => (i.system?.cost || 0) > 0).map(sanitizeItem),
+                    equipment: (this.gear || []).filter(i => (i.system?.cost || 0) > 0).map(sanitizeItem)
                 },
                 gearCost: gearCost,
                 professionGearList: professionGearList,
@@ -535,7 +585,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         const raw = this.characterData.profession.system?.professionSkills;
         let names = [];
         if (raw instanceof Set) names = Array.from(raw);
-        else if (Array.isArray(raw)) names = raw;
+        else if (Array.isArray(raw)) names = [...raw];
         else if (typeof raw === "string") names = raw.split(",").map(s => s.trim()).filter(Boolean);
         else if (raw && typeof raw === "object" && typeof raw.forEach === "function") {
             const arr = [];
@@ -545,6 +595,13 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
 
         if (this.characterData.selectedCombatSkills && this.characterData.selectedCombatSkills.length > 0) {
             for (const id of this.characterData.selectedCombatSkills) {
+                const s = this.allSkills.find(sk => sk._id === id);
+                if (s) names.push(s.name);
+            }
+        }
+
+        if (this.characterData.selectedBardLanguages && this.characterData.selectedBardLanguages.length > 0) {
+            for (const id of this.characterData.selectedBardLanguages) {
                 const s = this.allSkills.find(sk => sk._id === id);
                 if (s) names.push(s.name);
             }
@@ -573,17 +630,25 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         const technicalName = entry?.name ? entry.name.toLowerCase() : lowerKeyOrName;
 
         // 2. Search in allSkills matching localized label, technical name, or keyOrName
+        const cleanLabel = localizedLabel.replace(/\s*\(\d+\)\s*$/, '');
         return this.allSkills.find(s => {
             const sName = s.name.toLowerCase();
-            return sName === localizedLabel || sName === localizedRollLabel || sName === technicalName || sName === lowerKeyOrName;
+            const sNameClean = sName.replace(/\s*\(\d+\)\s*$/, '');
+            return sNameClean === cleanLabel || 
+                   sNameClean === localizedLabel ||
+                   sNameClean === localizedRollLabel || 
+                   sName === technicalName || 
+                   sName === lowerKeyOrName;
         });
     }
 
     _getSkillInfo(skill) {
+        const sNameClean = skill.name.toLowerCase().replace(/\s*\(\d+\)\s*$/, '');
         const entry = Object.values(CONFIG.WITCHER.skillMap).find(e => {
-            if (e.name && e.name.toLowerCase() === skill.name.toLowerCase()) return true;
-            if (e.rollLabel && game.i18n.localize(e.rollLabel).toLowerCase() === skill.name.toLowerCase()) return true;
-            return game.i18n.localize(e.label).toLowerCase() === skill.name.toLowerCase();
+            if (e.name && e.name.toLowerCase() === sNameClean) return true;
+            if (e.rollLabel && game.i18n.localize(e.rollLabel).toLowerCase() === sNameClean) return true;
+            const labelClean = game.i18n.localize(e.label).toLowerCase().replace(/\s*\(\d+\)\s*$/, '');
+            return labelClean === sNameClean;
         });
         
         let attributeLabel = "";
@@ -632,6 +697,8 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             if (skill) {
                 const cost = this._getSkillCost(skill);
                 const info = this._getSkillInfo(skill);
+                const isManualCombatSkill = this.characterData.selectedCombatSkills && this.characterData.selectedCombatSkills.includes(skill._id);
+                const isManualBardLanguage = this.characterData.selectedBardLanguages && this.characterData.selectedBardLanguages.includes(skill._id);
                 result.push({
                     key: skill._id,
                     name: skill.name,
@@ -640,7 +707,9 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                     isDifficult: cost === 2,
                     isNativeLanguage: info.isNativeLanguage,
                     attributeLabel: info.attributeLabel,
-                    description: skill.system?.description || ""
+                    description: skill.system?.description || "",
+                    isManualCombatSkill: isManualCombatSkill,
+                    isManualBardLanguage: isManualBardLanguage
                 });
                 
                 // Initialize default value if missing
@@ -753,15 +822,17 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         
         if (patria) {
             if (patria.regione === "nilfgaard") langKey = "nilfgaardian";
-            if (patria.regione === "elder") langKey = "elderspeech";
+            if (patria.regione === "elder") langKey = "eldersp";
+            if (patria.regione === "skellige") langKey = "eldersp";
         }
         
-        if (raceName && ["Elfo", "Nano", "Gnomo", "Vran"].includes(raceName)) {
-            langKey = "elderspeech";
+        if (raceName) {
+            if (["Elfo", "Vran"].includes(raceName)) langKey = "eldersp";
+            if (["Nano", "Gnomo"].includes(raceName)) langKey = "dwarven";
         }
 
-        const s = this.allSkills.find(s => s.name.toLowerCase() === skillName.toLowerCase());
-        return s?.system?.category === langKey;
+        const nativeSkill = this._findSkillByKeyOrName(langKey);
+        return nativeSkill && nativeSkill.name.toLowerCase() === skillName.toLowerCase();
     }
 
     /**
@@ -790,11 +861,8 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             if (elderHomelands.includes(homeland)) langKey = "eldersp";
         }
         
-        // Find the skill in allSkills
-        const langSkill = this.allSkills.find(s => {
-            const label = game.i18n.localize(CONFIG.WITCHER.skillMap[langKey].label);
-            return s.name.toLowerCase() === label.toLowerCase();
-        });
+        // Find the skill in allSkills using the helper
+        const langSkill = this._findSkillByKeyOrName(langKey);
         
         if (langSkill) {
             // Clear existing level 8 from any language skill to avoid duplicates
@@ -1118,6 +1186,34 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         }
     }
 
+    async _removeCombatSkill(event, target) {
+        const skillId = target.dataset.skill;
+        if (skillId) {
+            this.characterData.selectedCombatSkills = this.characterData.selectedCombatSkills.filter(id => id !== skillId);
+            delete this.characterData.skills[skillId];
+            this.render(true);
+        }
+    }
+
+    async _addBardLanguage(event, target) {
+        const skillKey = this.element.querySelector("select[name='new-bard-language']")?.value;
+        if (!this.characterData.selectedBardLanguages) this.characterData.selectedBardLanguages = [];
+        if (skillKey && !this.characterData.selectedBardLanguages.includes(skillKey)) {
+            this.characterData.selectedBardLanguages.push(skillKey);
+            this.characterData.skills[skillKey] = 1;
+            this.render(true);
+        }
+    }
+
+    async _removeBardLanguage(event, target) {
+        const skillId = target.dataset.skill;
+        if (skillId && this.characterData.selectedBardLanguages) {
+            this.characterData.selectedBardLanguages = this.characterData.selectedBardLanguages.filter(id => id !== skillId);
+            delete this.characterData.skills[skillId];
+            this.render(true);
+        }
+    }
+
     async _addCombatSkill(event, target) {
         const skillKey = this.element.querySelector("select[name='new-combat-skill']")?.value;
         if (skillKey && !this.characterData.selectedCombatSkills.includes(skillKey)) {
@@ -1350,6 +1446,28 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         }
 
         this.render(true);
+    }
+
+    _rollStartingGold(event, target) {
+        const profName = this.characterData.profession?.name?.toLowerCase() || "";
+        let multiplier = 0;
+        
+        for (const [key, val] of Object.entries(this.constructor.STARTING_GOLD_MULTIPLIER)) {
+            if (profName.includes(key)) {
+                multiplier = val;
+                break;
+            }
+        }
+        
+        if (multiplier > 0) {
+            const roll1 = Math.floor(Math.random() * 6) + 1;
+            const roll2 = Math.floor(Math.random() * 6) + 1;
+            this.characterData.money = (roll1 + roll2) * multiplier;
+            this.render(true);
+            ui.notifications.info(`Hai tirato ${roll1} e ${roll2}. (Somma: ${roll1+roll2}) x ${multiplier} = ${this.characterData.money} Corone.`);
+        } else {
+            ui.notifications.warn("Seleziona una professione valida per calcolare l'oro iniziale.");
+        }
     }
 
     async _rollBackground() {
@@ -1888,8 +2006,9 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         const itemsToCreate = [];
 
         if (this.characterData.race) {
-            const r = foundry.utils.deepClone(this.characterData.race);
-            delete r._id; delete r.id; 
+            let rData = this.characterData.race.toObject ? this.characterData.race.toObject() : this.characterData.race;
+            const { _id, id, ...rClean } = rData;
+            const r = foundry.utils.deepClone(rClean);
             
             if (r.name === "Gnomo" && this.characterData.gnomeSkills?.length > 0) {
                 if (r.system.perk2) {
@@ -1904,8 +2023,9 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         }
 
         if (this.characterData.profession) {
-            const p = foundry.utils.deepClone(this.characterData.profession);
-            delete p._id; delete p.id; 
+            let pData = this.characterData.profession.toObject ? this.characterData.profession.toObject() : this.characterData.profession;
+            const { _id, id, ...pClean } = pData;
+            const p = foundry.utils.deepClone(pClean);
             
             // Apply defining skill level if present
             if (this.characterData.skills["definingSkill"] !== undefined && p.system.definingSkill) {
@@ -1917,9 +2037,9 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
 
         if (this.characterData.gear.length > 0) {
             const gearArr = this.characterData.gear.map(g => {
-                const item = foundry.utils.deepClone(g);
-                delete item._id; delete item.id;
-                return item;
+                let gData = g.toObject ? g.toObject() : g;
+                const { _id, id, ...gClean } = gData;
+                return foundry.utils.deepClone(gClean);
             });
             itemsToCreate.push(...gearArr);
         }
@@ -1937,8 +2057,9 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             for (const name of (gearConfig.always || [])) {
                 const item = findItem(name);
                 if (item) {
-                    const cloned = foundry.utils.deepClone(item.toObject ? item.toObject() : item);
-                    delete cloned._id; delete cloned.id;
+                    let iData = item.toObject ? item.toObject() : item;
+                    const { _id, id, ...iClean } = iData;
+                    const cloned = foundry.utils.deepClone(iClean);
                     itemsToCreate.push(cloned);
                 }
             }
@@ -1947,8 +2068,9 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             for (const id of this.characterData.selectedProfessionGear) {
                 const item = findItem(id);
                 if (item) {
-                    const cloned = foundry.utils.deepClone(item.toObject ? item.toObject() : item);
-                    delete cloned._id; delete cloned.id;
+                    let iData = item.toObject ? item.toObject() : item;
+                    const { _id, id, ...iClean } = iData;
+                    const cloned = foundry.utils.deepClone(iClean);
                     itemsToCreate.push(cloned);
                 }
             }
@@ -1961,8 +2083,9 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             if (value > 0) {
                 const skillItem = this.allSkills.find(s => s._id === skillId);
                 if (skillItem) {
-                    const cloned = foundry.utils.deepClone(skillItem);
-                    delete cloned._id; delete cloned.id;
+                    let sData = skillItem.toObject ? skillItem.toObject() : skillItem;
+                    const { _id, id, ...sClean } = sData;
+                    const cloned = foundry.utils.deepClone(sClean);
                     cloned.system.value = Number(value) || 0;
                     cloned.system.isProfession = myProfNames.includes(cloned.name.toLowerCase());
                     cloned.system.isPickup = !cloned.system.isProfession;

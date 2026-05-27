@@ -26,19 +26,45 @@
             <div class="tab {{#if (eq activeSkillTab 'profession-skills')}}active{{/if}}" data-group="skill-tabs" data-tab="profession-skills">
                 {{#if isArmigero}}
                 {{#if (gt combatSkillsRemaining 0)}}
-                <div class="skills-picker" style="margin-bottom: 15px; background: rgba(0,0,0,0.4); padding: 10px; border: 1px solid var(--witcher-red);">
-                    <div class="skills-pool-info" style="margin-bottom: 5px;">
-                        <span class="pool-label" style="color: var(--witcher-red);">Abilità da Combattimento: </span>
-                        <span class="pool-value">Devi scegliere ancora <strong>{{combatSkillsRemaining}}</strong> abilità</span>
-                    </div>
-                    <div class="controls-row">
-                        <select name="new-combat-skill" id="new-combat-skill-select">
+                <div class="summary-card" style="margin-bottom: 15px;">
+                    <h3 style="display: flex; justify-content: space-between; align-items: center;">
+                        <span>Abilità da Combattimento</span>
+                        <span style="font-size: 0.9rem; font-family: 'Outfit', sans-serif; color: var(--wizard-text-dark); text-transform: none; font-weight: normal;">
+                            Devi scegliere ancora <strong>{{combatSkillsRemaining}}</strong> abilità
+                        </span>
+                    </h3>
+                    <div class="controls-row" style="display: flex; gap: 10px; align-items: center;">
+                        <select name="new-combat-skill" id="new-combat-skill-select" style="flex: 1; border: 1px solid var(--wizard-border); border-radius: 4px; padding: 8px; font-family: 'Outfit', sans-serif; background: rgba(255,255,255,0.7); color: var(--wizard-text-dark);">
                             <option value="">-- Seleziona Abilità da Combattimento --</option>
                             {{#each availableCombatSkills}}
                             <option value="{{key}}">{{name}} {{#if attributeLabel}}[{{attributeLabel}}]{{/if}}</option>
                             {{/each}}
                         </select>
-                        <button type="button" data-action="addCombatSkill" class="btn-add">
+                        <button type="button" data-action="addCombatSkill" class="btn-add" style="background: var(--wizard-accent); color: white; border: none; border-radius: 4px; padding: 8px 16px; cursor: pointer; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 6px; font-family: 'Outfit', sans-serif; transition: background 0.2s;">
+                            <i class="fa-solid fa-plus"></i> Aggiungi
+                        </button>
+                    </div>
+                </div>
+                {{/if}}
+                {{/if}}
+                
+                {{#if isBardo}}
+                {{#if (gt bardLanguagesRemaining 0)}}
+                <div class="summary-card" style="margin-bottom: 15px;">
+                    <h3 style="display: flex; justify-content: space-between; align-items: center;">
+                        <span>Lingua Secondaria</span>
+                        <span style="font-size: 0.9rem; font-family: 'Outfit', sans-serif; color: var(--wizard-text-dark); text-transform: none; font-weight: normal;">
+                            Devi scegliere ancora <strong>{{bardLanguagesRemaining}}</strong> lingua
+                        </span>
+                    </h3>
+                    <div class="controls-row" style="display: flex; gap: 10px; align-items: center;">
+                        <select name="new-bard-language" id="new-bard-language-select" style="flex: 1; border: 1px solid var(--wizard-border); border-radius: 4px; padding: 8px; font-family: 'Outfit', sans-serif; background: rgba(255,255,255,0.7); color: var(--wizard-text-dark);">
+                            <option value="">-- Seleziona Lingua --</option>
+                            {{#each availableBardLanguages}}
+                            <option value="{{key}}">{{name}}</option>
+                            {{/each}}
+                        </select>
+                        <button type="button" data-action="addBardLanguage" class="btn-add" style="background: var(--wizard-accent); color: white; border: none; border-radius: 4px; padding: 8px 16px; cursor: pointer; font-weight: bold; box-shadow: 0 2px 4px rgba(0,0,0,0.2); display: flex; align-items: center; gap: 6px; font-family: 'Outfit', sans-serif; transition: background 0.2s;">
                             <i class="fa-solid fa-plus"></i> Aggiungi
                         </button>
                     </div>
@@ -61,6 +87,16 @@
                             </div>
                         </label>
                         <div class="skill-controls">
+                            {{#if isManualCombatSkill}}
+                            <button type="button" class="ctrl-btn delete" data-action="removeCombatSkill" data-skill="{{key}}" title="Rimuovi Abilità" style="color: var(--witcher-red); margin-right: 5px;">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                            {{/if}}
+                            {{#if isManualBardLanguage}}
+                            <button type="button" class="ctrl-btn delete" data-action="removeBardLanguage" data-skill="{{key}}" title="Rimuovi Abilità" style="color: var(--witcher-red); margin-right: 5px;">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
+                            {{/if}}
                             <button type="button" class="ctrl-btn minus" data-action="adjustSkill" data-skill="{{key}}" data-type="profession" data-delta="-1">
                                 <i class="fa-solid fa-chevron-left"></i>
                             </button>
