@@ -97,6 +97,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         updateMoney: function(event, target) { this._updateMoney(event, target); },
         updateOriginRegion: function(event, target) { this._updateOriginRegion(event, target); },
         updateHomeland: function(event, target) { this._updateHomeland(event, target); },
+        rollAllBackground: function(event, target) { this._rollAllBackground(event, target); },
         rollBackground: function(event, target) { this._rollBackground(event, target); },
         rollLifeEvents: function(event, target) { this._rollLifeEvents(event, target); },
         rollFamilyFate: function(event, target) { this._rollFamilyFate(event, target); },
@@ -150,12 +151,14 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             if (this.allSkills.length === 0) {
                 const skillPack = game.packs.get("witcher-compendium.witcher-skills");
                 const docs = skillPack ? await skillPack.getDocuments() : [];
-                this.allSkills = docs.map(d => {
-                    const obj = d.toObject();
-                    obj._id = d.id;
-                    obj.id = d.id;
-                    return obj;
-                }).sort((a,b) => a.name.localeCompare(b.name));
+                this.allSkills = docs;
+            }
+
+            if (!this.patriaList) {
+                const gmPack = game.packs.get("witcher-compendium.witcher-rolltable-strumentigm");
+                const gmDocs = gmPack ? await gmPack.getDocuments() : [];
+                const patriaTable = gmDocs.find(d => d.name === "Patria");
+                this.patriaList = patriaTable ? patriaTable.results.map(r => r.flags?.witcher || { regione: r.regione, patria: r.patria, bonus: r.bonus, abilita: r.abilita, text: r.text }) : [];
             }
             
             // 1.1 Calculate Budget and Gear Cost
@@ -163,7 +166,8 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 const cost = Number(item.system?.cost?.value || item.system?.cost || 0);
                 return acc + cost;
             }, 0);
-            const isOverBudget = gearCost > (Number(this.characterData.money) || 0);
+            const isOverBudget = this._isOverBudget(false);
+            const isOverBudgetPickup = this._isOverBudget(true);
             
             const sanitizeItem = (i) => {
                 const obj = i.toObject ? i.toObject() : i;
@@ -266,18 +270,19 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 });
             }
 
-            const regionHomelands = {
-                north: ["aedirn", "cidaris", "cintra", "kaedwen", "kovir", "lyria", "poviss", "redania", "rivia", "skellige", "temeria", "verden"],
-                nilfgaard: ["angren", "ebbing", "etolia", "gemmeria", "gheso", "maecht", "magturga", "mettina", "nazair", "nilfgaard", "vicovaro"],
-                elder: ["dolblathanna", "mahakam"]
+            const regionsRaw = [...new Set((this.patriaList || []).map(p => p.regione))];
+            const regionLabels = {
+                north: "Regni Settentrionali",
+                nilfgaard: "Impero di Nilfgaard",
+                elder: "Terre degli Antichi"
             };
-            
+            const computedOriginRegions = regionsRaw.map(r => ({ value: r, label: regionLabels[r] || r }));
+
             let filteredHomelands = [];
-            if (this.characterData.originRegion) {
-                const allowed = regionHomelands[this.characterData.originRegion] || [];
-                filteredHomelands = Object.entries(CONFIG.WITCHER.homelands || {})
-                    .filter(([v, l]) => allowed.includes(v))
-                    .map(([v, l]) => ({ value: v, label: l }));
+            if (this.characterData.originRegion && this.patriaList) {
+                filteredHomelands = this.patriaList
+                    .filter(p => p.regione === this.characterData.originRegion)
+                    .map(p => ({ value: p.patria, label: p.text }));
             }
 
             // Cache regional lists when region changes
@@ -408,13 +413,13 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 races: this.races,
                 professions: filteredProfessions,
                 stats: stats,
-                regions: [
-                    { value: "north", label: "Regni Settentrionali" },
-                    { value: "nilfgaard", label: "Nilfgaard" },
-                    { value: "elder", label: "Terre degli Antichi" }
+                genders: [
+                    { value: "male", label: "Maschio" },
+                    { value: "female", label: "Femmina" },
+                    { value: "other", label: "Altro" }
                 ],
+                regions: computedOriginRegions,
                 homelands: filteredHomelands,
-                socialStandings: Object.entries(CONFIG.WITCHER.socialStanding || {}).map(([v, l]) => ({ value: v, label: l })),
                 pointsRemaining: statsRemaining,
                 pointsRemainingPct: statsRemainingPct,
                 derived: this._calculateDerivedStats(),
@@ -442,6 +447,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 professionGearRemaining: professionGearRemaining,
                 professionGearChoose: gearConfig?.choose || 0,
                 isOverBudget: isOverBudget,
+                isOverBudgetPickup: isOverBudgetPickup,
                 professionGear: this.characterData.profession?.system?.notes || "",
                 summary: this._getSummaryContext()
             };
@@ -457,13 +463,49 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             const statDef = CONFIG.WITCHER.statMap[key];
             if (statDef?.origin === "stats") stats.push({ label: statDef.labelShort || key, value });
         }
-        const skills = [];
+        
+        const finalSkills = {};
+
+        // 1. Base chosen skills
         for (const [key, value] of Object.entries(this.characterData.skills)) {
-            if (value > 0) {
+            if (key !== "definingSkill" && value > 0) {
                 const s = this.allSkills.find(s => s._id === key);
-                skills.push({ label: s ? s.name : key, value });
+                if (s) finalSkills[s.name] = value;
             }
         }
+
+        // 2. Defining Skill
+        if (this.characterData.skills["definingSkill"] !== undefined && this.characterData.profession?.system?.definingSkill?.skillName) {
+            finalSkills[this.characterData.profession.system.definingSkill.skillName] = this.characterData.skills["definingSkill"];
+        }
+
+        // 3. Homeland Bonus
+        let homelandBonusSkillName = null;
+        let homelandBonusValue = 0;
+        if (this.characterData.homeland && this.patriaList) {
+            const p = this.patriaList.find(x => x.patria === this.characterData.homeland);
+            if (p) {
+                homelandBonusSkillName = p.abilita;
+                homelandBonusValue = parseInt(p.bonus.replace('+','')) || 1;
+            }
+        }
+        if (homelandBonusSkillName) {
+            const skillItem = this.allSkills.find(s => s.name.toLowerCase() === homelandBonusSkillName.toLowerCase());
+            const finalName = skillItem ? skillItem.name : homelandBonusSkillName;
+            finalSkills[finalName] = (finalSkills[finalName] || 0) + homelandBonusValue;
+        }
+
+        // 4. Gnome Bonus
+        if (this.characterData.race?.name === "Gnomo" && this.characterData.gnomeSkills?.length > 0) {
+            this.characterData.gnomeSkills.forEach(skillId => {
+                const s = this.allSkills.find(sk => sk._id === skillId);
+                if (s) {
+                    finalSkills[s.name] = (finalSkills[s.name] || 0) + 2;
+                }
+            });
+        }
+
+        const skills = Object.entries(finalSkills).map(([label, value]) => ({ label, value })).sort((a,b) => a.label.localeCompare(b.label));
 
         // Professional gear (Fix 6)
         const profGear = [];
@@ -651,6 +693,26 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         });
     }
 
+    _isOverBudget(isPickup) {
+        if (isPickup) {
+            const available = (Number(this.characterData.stats.int) || 0) + (Number(this.characterData.stats.ref) || 0);
+            const spent = this._getPickupSkills().reduce((acc, s) => {
+                let val = s.value;
+                if (this._isNativeLanguage(s.name)) {
+                    val = Math.max(0, s.value - 8);
+                }
+                return acc + (val * s.cost);
+            }, 0);
+            return spent > available;
+        } else {
+            const gearCost = this.characterData.gear.reduce((acc, item) => {
+                const cost = Number(item.system?.cost?.value || item.system?.cost || 0);
+                return acc + cost;
+            }, 0);
+            return gearCost > (Number(this.characterData.money) || 0);
+        }
+    }
+
     _calculateSkillPoints(type) {
         if (type === "profession") {
             const spent = this._getProfessionSkills().reduce((acc, s) => {
@@ -680,21 +742,24 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
      * @param {string} skillName - Name of the skill to check.
      * @returns {boolean}
      * @private
-     */
-    _isNativeLanguage(skillName) {
+     */    _isNativeLanguage(skillName) {
         const raceName = this.characterData.race?.name;
-        const homeland = this.characterData.homeland?.toLowerCase();
+        if (!this.characterData.homeland || !this.patriaList) return false;
         
+        const patria = this.patriaList.find(p => p.patria === this.characterData.homeland);
         let langKey = "commonspeech";
-        if (raceName === "Elfo" || raceName === "Elfi") langKey = "eldersp";
-        else if (raceName === "Nano" || raceName === "Nani" || raceName === "Gnomo") langKey = "dwarven";
-        else if (raceName === "Umano" || raceName === "Umani") {
-            const elderHomelands = ["nilfgaard", "vicovaro", "etolia", "gemmeria", "ebbing", "maecht", "mettina", "nazair", "gheso", "magturga", "skellige"];
-            if (elderHomelands.includes(homeland)) langKey = "eldersp";
+        
+        if (patria) {
+            if (patria.regione === "nilfgaard") langKey = "nilfgaardian";
+            if (patria.regione === "elder") langKey = "elderspeech";
         }
         
-        const label = game.i18n.localize(CONFIG.WITCHER.skillMap[langKey].label);
-        return skillName.toLowerCase() === label.toLowerCase();
+        if (raceName && ["Elfo", "Nano", "Gnomo", "Vran"].includes(raceName)) {
+            langKey = "elderspeech";
+        }
+
+        const s = this.allSkills.find(s => s.name.toLowerCase() === skillName.toLowerCase());
+        return s?.system?.category === langKey;
     }
 
     /**
@@ -1149,24 +1214,12 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
     }
 
     _getOriginCategory() {
-        const raceName = (this.characterData.race?.name || "").toLowerCase();
-        const homeland = (this.characterData.homeland || "").toLowerCase();
-        
-        // Elder Lands (Terre Antiche): non-human races or specific homelands
-        const elderRaces = ["elfi", "nani", "gnomo", "elfo", "nano", "gnomi"];
-        const elderHomelands = ["skellige", "dolblathanna", "mahakam"];
-        
-        if (elderRaces.includes(raceName) || elderHomelands.includes(homeland)) {
-            return "Terre Antiche";
-        }
-        
-        // Nilfgaardian: Nilfgaardian homelands
-        const nilfgaardianHomelands = ["nilfgaard", "vicovaro", "etolia", "gemmeria", "ebbing", "maecht", "mettina", "nazair", "gheso", "magturga"];
-        if (nilfgaardianHomelands.includes(homeland)) {
-            return "Nilfgaardiana";
-        }
-        
-        // Default: Northern Kingdoms (Settentrionale)
+        if (!this.characterData.homeland || !this.patriaList) return "Settentrionale";
+        const patria = this.patriaList.find(p => p.patria === this.characterData.homeland);
+        if (!patria) return "Settentrionale";
+
+        if (patria.regione === "elder") return "Terre Antiche";
+        if (patria.regione === "nilfgaard") return "Nilfgaardiana";
         return "Settentrionale";
     }
 
@@ -1687,6 +1740,22 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         const actor = await Actor.create(actorData);
         
         // 4. Add Embedded Items
+        // Homeland Bonus
+        let homelandBonusSkillName = null;
+        let homelandBonusValue = 0;
+        if (this.characterData.homeland && this.patriaList) {
+            const p = this.patriaList.find(x => x.patria === this.characterData.homeland);
+            if (p) {
+                homelandBonusSkillName = p.abilita;
+                homelandBonusValue = parseInt(p.bonus.replace('+','')) || 1;
+            }
+        }
+        if (homelandBonusSkillName) {
+            const skillItem = this.allSkills.find(s => s.name.toLowerCase() === homelandBonusSkillName.toLowerCase());
+            const finalName = skillItem ? skillItem._id : homelandBonusSkillName;
+            this.characterData.skills[finalName] = (this.characterData.skills[finalName] || 0) + homelandBonusValue;
+        }
+
         const itemsToCreate = [];
 
         if (this.characterData.race) {

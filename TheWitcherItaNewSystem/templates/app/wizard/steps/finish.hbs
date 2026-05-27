@@ -1,6 +1,6 @@
 <div class="wizard-step step-finalize">
     <h2>{{localize "WITCHER.Wizard.Step.Finalize.Title"}}</h2>
-    <p>{{localize "WITCHER.Wizard.Step.Finalize.Description"}}</p>
+
 
     <div class="character-preview-grid">
         <div class="preview-sidebar">
@@ -40,6 +40,18 @@
                     {{#each summary.stats}}
                     <div class="stat-pill">
                         <span class="stat-abbr">{{localize label}}</span>
+                        <span class="stat-value">{{value}}</span>
+                    </div>
+                    {{/each}}
+                </div>
+            </div>
+
+            <div class="summary-card">
+                <h3>Riepilogo Abilità</h3>
+                <div class="stats-pills">
+                    {{#each summary.skills}}
+                    <div class="stat-pill">
+                        <span class="stat-abbr">{{label}}</span>
                         <span class="stat-value">{{value}}</span>
                     </div>
                     {{/each}}

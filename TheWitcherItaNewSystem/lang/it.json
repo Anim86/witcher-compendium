@@ -296,7 +296,7 @@
             "DerStat": {
                 "HP": "Salute",
                 "Shield": "Scudo",
-                "Sta": "Stamina",
+                "Sta": "Resistenza",
                 "Rec": "Recupero",
                 "Stun": "Stordimento",
                 "Run": "Corsa",
@@ -315,7 +315,7 @@
                     "run": "Velocità di corsa espressa in metri per turno.",
                     "leap": "Distanza di salto espressa in metri.",
                     "enc": "Peso massimo che il personaggio può trasportare.",
-                    "rec": "Recupero di Stamina per ogni azione di recupero.",
+                    "rec": "Recupero di Resistenza per ogni azione di recupero.",
                     "resolve": "Resistenza mentale e forza di volontà.",
                     "focus": "Capacità di concentrazione e precisione magica.",
                     "vigor": "Capacità di gestire il Caos magico senza subire danni.",
@@ -350,8 +350,8 @@
             "SavingThrow": "Tiro Salvezza",
             "Crit/Fumble": "Critico/Fumble",
             "Adrenaline": "Adrenalina",
-            "Stamina": "Stamina",
-            "RecoveryStamina": "Recupera Stamina",
+            "Stamina": "Resistenza",
+            "RecoveryStamina": "Recupera Resistenza",
             "Hp": "Salute",
             "Shield": "Scudo",
             "Profession": {
@@ -714,10 +714,10 @@
             "Apply": "Applica",
             "Skill": "Esecuzione di un Test di Abilità",
             "profession.skill": "Esecuzione di un'abilità professionale",
-            "staDialog": "Come vuoi recuperare stamina?",
+            "staDialog": "Come vuoi recuperare la Resistenza?",
             "recoveryAction": "Azione di Recupero",
             "fullRecovery": "Recupero Completo",
-            "fullStaInfo": "La tua stamina è già piena",
+            "fullStaInfo": "La tua Resistenza è già piena",
             "defense": {
                 "custom": "Modificatori Difesa Personalizzati"
             }
@@ -1004,12 +1004,12 @@
                 "DeadlyDamagedEye.None": "Sottrai -5 a Consapevolezza basata sulla vista e -4 a DES. Questa ferita inizia a sanguinare.",
                 "DeadlyDamagedEye.Stabilized": "Sottrai -3 a Consapevolezza basata sulla vista e -2 a DES.",
                 "DeadlyDamagedEye.Treated": "-1 permanente a Consapevolezza basata sulla vista e DES.",
-                "DeadlyHeartDamage.None": "Effettua immediatamente un tiro salvataggio Morte. Se sopravvivi, la ferita sanguina e devi dividere per quattro la tua Stamina, VEL e FIS.",
-                "DeadlyHeartDamage.Stabilized": "Dimezza Stamina, VEL e FIS.",
+                "DeadlyHeartDamage.None": "Effettua immediatamente un tiro salvataggio Morte. Se sopravvivi, la ferita sanguina e devi dividere per quattro la tua Resistenza, VEL e FIS.",
+                "DeadlyHeartDamage.Stabilized": "Dimezza la Resistenza, VEL e FIS.",
                 "DeadlyHeartDamage.Treated": "Subisci un +2 ai danni da sanguinamento permanentemente.",
-                "DeadlySepticShock.None": "Dividi per quattro la tua Stamina, sottrai -3 a INT, VOL, RIF e DES. Sei avvelenato.",
-                "DeadlySepticShock.Stabilized": "La tua Stamina è dimezzata e sottrai -1 a INT, VOL, RIF e DES.",
-                "DeadlySepticShock.Treated": "Sottrai -5 alla Stamina permanentemente.",
+                "DeadlySepticShock.None": "Dividi per quattro la tua Resistenza, sottrai -3 a INT, VOL, RIF e DES. Sei avvelenato.",
+                "DeadlySepticShock.Stabilized": "La tua Resistenza è dimezzata e sottrai -1 a INT, VOL, RIF e DES.",
+                "DeadlySepticShock.Treated": "Sottrai -5 alla Resistenza permanentemente.",
                 "DeadlyDismemberedArm.None": "Il braccio non può essere usato e inizi a sanguinare.",
                 "DeadlyDismemberedArm.Stabilized": "Quel braccio è inutile.",
                 "DeadlyDismemberedArm.Treated": "Quel braccio può essere sostituito con una protesi.",
@@ -1214,12 +1214,12 @@
                 "DeadlyDamagedEye.None": "Sottrai -5 a Consapevolezza basata sulla vista e -4 a DES. Questa ferita inizia a sanguinare.",
                 "DeadlyDamagedEye.Stabilized": "Sottrai -3 a Consapevolezza basata sulla vista e -2 a DES.",
                 "DeadlyDamagedEye.Treated": "-1 permanente a Consapevolezza basata sulla vista e DES.",
-                "DeadlyHeartDamage.None": "Effettua immediatamente un tiro salvataggio Morte. Se sopravvivi, la ferita sanguina e devi dividere per quattro la tua Stamina, VEL e FIS.",
-                "DeadlyHeartDamage.Stabilized": "Dimezza Stamina, VEL e FIS.",
+                "DeadlyHeartDamage.None": "Effettua immediatamente un tiro salvataggio Morte. Se sopravvivi, la ferita sanguina e devi dividere per quattro la tua Resistenza, VEL e FIS.",
+                "DeadlyHeartDamage.Stabilized": "Dimezza la Resistenza, VEL e FIS.",
                 "DeadlyHeartDamage.Treated": "Subisci un +2 ai danni da sanguinamento permanentemente.",
-                "DeadlySepticShock.None": "Dividi per quattro la tua Stamina, sottrai -3 a INT, VOL, RIF e DES. Sei avvelenato.",
-                "DeadlySepticShock.Stabilized": "La tua Stamina è dimezzata e sottrai -1 a INT, VOL, RIF e DES.",
-                "DeadlySepticShock.Treated": "Sottrai -5 alla Stamina permanentemente.",
+                "DeadlySepticShock.None": "Dividi per quattro la tua Resistenza, sottrai -3 a INT, VOL, RIF e DES. Sei avvelenato.",
+                "DeadlySepticShock.Stabilized": "La tua Resistenza è dimezzata e sottrai -1 a INT, VOL, RIF e DES.",
+                "DeadlySepticShock.Treated": "Sottrai -5 alla Resistenza permanentemente.",
                 "DeadlyDismemberedArm.None": "Il braccio non può essere usato e inizi a sanguinare.",
                 "DeadlyDismemberedArm.Stabilized": "Quel braccio è inutile.",
                 "DeadlyDismemberedArm.Treated": "Quel braccio può essere sostituito con una protesi.",
@@ -1242,33 +1242,6 @@
             "skellige": "Skellige",
             "dolBlathanna": "Dol Blathanna",
             "mahakam": "Mahakam"
-        },
-        "Homelands": {
-            "aedirn": "Aedirn (+1 Manifattura)",
-            "angren": "Angren (+1 Sopravvivenza)",
-            "cidaris": "Cidaris (+1 Navigazione)",
-            "cintra": "Cintra (+1 Sensibilità)",
-            "dolblathanna": "Dol Blathanna (+1 Empatia)",
-            "ebbing": "Ebbing (+1 Deduzione)",
-            "etolia": "Etolia (+1 Coraggio)",
-            "gemmeria": "Gemmera (+1 Intimidire)",
-            "gheso": "Geso (+1 Nascondersi)",
-            "kaedwen": "Kaedwen (+1 Tempra)",
-            "kovir": "Kovir (+1 Commercio)",
-            "lyria": "Lyria (+1 Resistere a Coercizione)",
-            "maecht": "Maecht (+1 Carisma)",
-            "magturga": "Mag Turga (+1 Tempra)",
-            "mahakam": "Mahakam (+1 Tempra)",
-            "mettina": "Metinna (+1 Cavalcare)",
-            "nazair": "Nazair (+1 Rissa)",
-            "nilfgaard": "Il Cuore di Nilfgaard (+1 Inganno)",
-            "poviss": "Poviss (+1 Commercio)",
-            "redania": "Redania (+1 Istruzione)",
-            "rivia": "Rivia (+1 Resistere a Coercizione)",
-            "skellige": "Skellige (+1 Coraggio)",
-            "temeria": "Temeria (+1 Carisma)",
-            "verden": "Verden (+1 Sopravvivenza)",
-            "vicovaro": "Vicovaro (+1 Istruzione)"
         },
         "MinValue": "Valore Minimo",
         "MaxValue": "Valore Massimo",
@@ -1383,7 +1356,7 @@
             "Resting": "ha passato il giorno riposando e recupera:",
             "Active": "ha passato il giorno in attività e recupera:",
             "WoundHealing": "sulla Soglia Guarigione Critica",
-            "fullStamina": "Stamina Piena"
+            "fullStamina": "Resistenza Piena"
         },
         "Currency": {
             "crown": "Corone"
@@ -1448,8 +1421,8 @@
                 "rollLabel": "Lingua Antica"
             },
             "dwarvenSpeech": {
-                "label": "Linguaggio: Nanico (2)",
-                "rollLabel": "Nanico"
+                "label": "Linguaggio: Lingua Nanica (2)",
+                "rollLabel": "Lingua Nanica"
             },
             "monsterLore": {
                 "label": "Bestiario (2)",
@@ -1561,7 +1534,7 @@
                 "label": "Primo Soccorso"
             },
             "forgery": {
-                "label": "Falsificazione"
+                "label": "Falsificare"
             },
             "pickLock": {
                 "label": "Scassinare"

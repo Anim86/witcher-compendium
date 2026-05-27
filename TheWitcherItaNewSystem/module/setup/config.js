@@ -588,35 +588,6 @@ WITCHER.skillMap = {
 };
 
 //Character info
-WITCHER.homelands = {
-    other: 'WITCHER.background.other',
-    aedirn: 'WITCHER.Homelands.aedirn',
-    angren: 'WITCHER.Homelands.angren',
-    cidaris: 'WITCHER.Homelands.cidaris',
-    cintra: 'WITCHER.Homelands.cintra',
-    dolblathanna: 'WITCHER.Homelands.dolblathanna',
-    ebbing: 'WITCHER.Homelands.ebbing',
-    etolia: 'WITCHER.Homelands.etolia',
-    gemmeria: 'WITCHER.Homelands.gemmeria',
-    gheso: 'WITCHER.Homelands.gheso',
-    kaedwen: 'WITCHER.Homelands.kaedwen',
-    kovir: 'WITCHER.Homelands.kovir',
-    lyria: 'WITCHER.Homelands.lyria',
-    maecht: 'WITCHER.Homelands.maecht',
-    magturga: 'WITCHER.Homelands.magturga',
-    mahakam: 'WITCHER.Homelands.mahakam',
-    mettina: 'WITCHER.Homelands.mettina',
-    nazair: 'WITCHER.Homelands.nazair',
-    nilfgaard: 'WITCHER.Homelands.nilfgaard',
-    poviss: 'WITCHER.Homelands.poviss',
-    redania: 'WITCHER.Homelands.redania',
-    rivia: 'WITCHER.Homelands.rivia',
-    skellige: 'WITCHER.Homelands.skellige',
-    temeria: 'WITCHER.Homelands.temeria',
-    verden: 'WITCHER.Homelands.verden',
-    vicovaro: 'WITCHER.Homelands.vicovaro'
-};
-
 WITCHER.socialStanding = {
     equal: 'WITCHER.socialStanding.equal',
     tolerated: 'WITCHER.socialStanding.tolerated',

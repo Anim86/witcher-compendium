@@ -1,0 +1,33 @@
+{
+    "_id": "5c7a4b123d4e5f6a",
+    "name": "Nascondersi",
+    "type": "skill",
+    "img": "modules/witcher-compendium/assets/PROFESSIONI_E_ABILITA/witcher-skills/nascondersi.webp",
+    "system": {
+        "attribute": "dex",
+        "description": "<p>Spostarsi silenziosamente e agire senza essere notato. A base 10, il personaggio riesce a superare furtivamente delle guardie addormentate senza svegliarle. A base 13 riesce a superare di soppiatto le guardie e a sfoderare silenziosamente un’arma senza che nessuno lo noti. A base 16 è furtivo come un assassino ben addestrato e di rado viene scoperto quando attraversa una zona di nascosto. A base 20 è in grado d’intrufolarsi facilmente in edifici sorvegliati, passare sotto il naso di guardie allertate e sfoderare una lama alle spalle di una persona senza essere scoperto.</p>",
+        "sourcebook": "MB 55",
+        "value": 0,
+        "label": "",
+        "isOpened": false,
+        "modifiers": [],
+        "activeEffectModifiers": 0,
+        "isProfession": false,
+        "isPickup": false,
+        "isLearned": false,
+        "isCombatSkill": false,
+        "isDifficult": false,
+        "multiplier": 1
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

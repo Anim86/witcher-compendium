@@ -1,5 +1,10 @@
 <div class="wizard-step step-background">
-    <h2>{{localize "WITCHER.Wizard.Step.Background.Title"}}</h2>
+    <h2 style="display: flex; justify-content: center; align-items: center; gap: 12px; margin-bottom: 15px;">
+        <span>{{localize "WITCHER.Wizard.Step.Background.Title"}}</span>
+        <button type="button" class="btn-roll-inline" data-action="rollAllBackground" title="Genera tutto il background casualmente" style="margin: 0; width: 30px; height: 30px; display: inline-flex; align-items: center; justify-content: center;">
+            <i class="fa-solid fa-dice-d20"></i>
+        </button>
+    </h2>
 
     <div class="background-container">
         {{!-- Selezione Nome, Regione, Patria ed Età sempre visibili in alto --}}

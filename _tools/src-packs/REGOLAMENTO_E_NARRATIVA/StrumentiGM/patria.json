@@ -1,0 +1,509 @@
+{
+  "_id": "patria0000000000",
+  "name": "Patria",
+  "type": "RollTable",
+  "formula": "1d25",
+  "description": "Lista di tutte le Patrie disponibili con relativi bonus.",
+  "results": [
+    {
+      "range": [
+        1,
+        1
+      ],
+      "weight": 1,
+      "type": 0,
+      "text": "Regni Settentrionali - Aedirn (+1 Manifattura)",
+      "flags": {
+        "witcher": {
+          "regione": "north",
+          "patria": "Aedirn",
+          "bonus": "+1",
+          "abilita": "Manifattura",
+          "text": "Aedirn (+1 Manifattura)"
+        }
+      },
+      "_id": "patriares0000001",
+      "drawn": false
+    },
+    {
+      "range": [
+        2,
+        2
+      ],
+      "weight": 1,
+      "type": 0,
+      "text": "Nilfgaard - Angren (+1 Sopravvivenza)",
+      "flags": {
+        "witcher": {
+          "regione": "nilfgaard",
+          "patria": "Angren",
+          "bonus": "+1",
+          "abilita": "Sopravvivenza",
+          "text": "Angren (+1 Sopravvivenza)"
+        }
+      },
+      "_id": "patriares0000002",
+      "drawn": false
+    },
+    {
+      "range": [
+        3,
+        3
+      ],
+      "weight": 1,
+      "type": 0,
+      "text": "Regni Settentrionali - Cidaris (+1 Navigazione)",
+      "flags": {
+        "witcher": {
+          "regione": "north",
+          "patria": "Cidaris",
+          "bonus": "+1",
+          "abilita": "Navigazione",
+          "text": "Cidaris (+1 Navigazione)"
+        }
+      },
+      "_id": "patriares0000003",
+      "drawn": false
+    },
+    {
+      "range": [
+        4,
+        4
+      ],
+      "weight": 1,
+      "type": 0,
+      "text": "Regni Settentrionali - Cintra (+1 Sensibilità)",
+      "flags": {
+        "witcher": {
+          "regione": "north",
+          "patria": "Cintra",
+          "bonus": "+1",
+          "abilita": "Sensibilità",
+          "text": "Cintra (+1 Sensibilità)"
+        }
+      },
+      "_id": "patriares0000004",
+      "drawn": false
+    },
+    {
+      "range": [
+        5,
+        5
+      ],
+      "weight": 1,
+      "type": 0,
+      "text": "Terre degli Antichi - Dol Blathanna (+1 Empatia)",
+      "flags": {
+        "witcher": {
+          "regione": "elder",
+          "patria": "Dol Blathanna",
+          "bonus": "+1",
+          "abilita": "Empatia",
+          "text": "Dol Blathanna (+1 Empatia)"
+        }
+      },
+      "_id": "patriares0000005",
+      "drawn": false
+    },
+    {
+      "range": [
+        6,
+        6
+      ],
+      "weight": 1,
+      "type": 0,
+      "text": "Nilfgaard - Ebbing (+1 Deduzione)",
+      "flags": {
+        "witcher": {
+          "regione": "nilfgaard",
+          "patria": "Ebbing",
+          "bonus": "+1",
+          "abilita": "Deduzione",
+          "text": "Ebbing (+1 Deduzione)"
+        }
+      },
+      "_id": "patriares0000006",
+      "drawn": false
+    },
+    {
+      "range": [
+        7,
+        7
+      ],
+      "weight": 1,
+      "type": 0,
+      "text": "Nilfgaard - Etolia (+1 Coraggio)",
+      "flags": {
+        "witcher": {
+          "regione": "nilfgaard",
+          "patria": "Etolia",
+          "bonus": "+1",
+          "abilita": "Coraggio",
+          "text": "Etolia (+1 Coraggio)"
+        }
+      },
+      "_id": "patriares0000007",
+      "drawn": false
+    },
+    {
+      "range": [
+        8,
+        8
+      ],
+      "weight": 1,
+      "type": 0,
+      "text": "Nilfgaard - Gemmera (+1 Intimidire)",
+      "flags": {
+        "witcher": {
+          "regione": "nilfgaard",
+          "patria": "Gemmera",
+          "bonus": "+1",
+          "abilita": "Intimidire",
+          "text": "Gemmera (+1 Intimidire)"
+        }
+      },
+      "_id": "patriares0000008",
+      "drawn": false
+    },
+    {
+      "range": [
+        9,
+        9
+      ],
+      "weight": 1,
+      "type": 0,
+      "text": "Nilfgaard - Geso (+1 Nascondersi)",
+      "flags": {
+        "witcher": {
+          "regione": "nilfgaard",
+          "patria": "Geso",
+          "bonus": "+1",
+          "abilita": "Nascondersi",
+          "text": "Geso (+1 Nascondersi)"
+        }
+      },
+      "_id": "patriares0000009",
+      "drawn": false
+    },
+    {
+      "range": [
+        10,
+        10
+      ],
+      "weight": 1,
+      "type": 0,
+      "text": "Regni Settentrionali - Kaedwen (+1 Tempra)",
+      "flags": {
+        "witcher": {
+          "regione": "north",
+          "patria": "Kaedwen",
+          "bonus": "+1",
+          "abilita": "Tempra",
+          "text": "Kaedwen (+1 Tempra)"
+        }
+      },
+      "_id": "patriares0000010",
+      "drawn": false
+    },
+    {
+      "range": [
+        11,
+        11
+      ],
+      "weight": 1,
+      "type": 0,
+      "text": "Regni Settentrionali - Kovir (+1 Commercio)",
+      "flags": {
+        "witcher": {
+          "regione": "north",
+          "patria": "Kovir",
+          "bonus": "+1",
+          "abilita": "Commercio",
+          "text": "Kovir (+1 Commercio)"
+        }
+      },
+      "_id": "patriares0000011",
+      "drawn": false
+    },
+    {
+      "range": [
+        12,
+        12
+      ],
+      "weight": 1,
+      "type": 0,
+      "text": "Regni Settentrionali - Lyria (+1 Resistere a Coercizione)",
+      "flags": {
+        "witcher": {
+          "regione": "north",
+          "patria": "Lyria",
+          "bonus": "+1",
+          "abilita": "Resistere a Coercizione",
+          "text": "Lyria (+1 Resistere a Coercizione)"
+        }
+      },
+      "_id": "patriares0000012",
+      "drawn": false
+    },
+    {
+      "range": [
+        13,
+        13
+      ],
+      "weight": 1,
+      "type": 0,
+      "text": "Nilfgaard - Maecht (+1 Carisma)",
+      "flags": {
+        "witcher": {
+          "regione": "nilfgaard",
+          "patria": "Maecht",
+          "bonus": "+1",
+          "abilita": "Carisma",
+          "text": "Maecht (+1 Carisma)"
+        }
+      },
+      "_id": "patriares0000013",
+      "drawn": false
+    },
+    {
+      "range": [
+        14,
+        14
+      ],
+      "weight": 1,
+      "type": 0,
+      "text": "Nilfgaard - Mag Turga (+1 Tempra)",
+      "flags": {
+        "witcher": {
+          "regione": "nilfgaard",
+          "patria": "Mag Turga",
+          "bonus": "+1",
+          "abilita": "Tempra",
+          "text": "Mag Turga (+1 Tempra)"
+        }
+      },
+      "_id": "patriares0000014",
+      "drawn": false
+    },
+    {
+      "range": [
+        15,
+        15
+      ],
+      "weight": 1,
+      "type": 0,
+      "text": "Terre degli Antichi - Mahakam (+1 Tempra)",
+      "flags": {
+        "witcher": {
+          "regione": "elder",
+          "patria": "Mahakam",
+          "bonus": "+1",
+          "abilita": "Tempra",
+          "text": "Mahakam (+1 Tempra)"
+        }
+      },
+      "_id": "patriares0000015",
+      "drawn": false
+    },
+    {
+      "range": [
+        16,
+        16
+      ],
+      "weight": 1,
+      "type": 0,
+      "text": "Nilfgaard - Metinna (+1 Cavalcare)",
+      "flags": {
+        "witcher": {
+          "regione": "nilfgaard",
+          "patria": "Metinna",
+          "bonus": "+1",
+          "abilita": "Cavalcare",
+          "text": "Metinna (+1 Cavalcare)"
+        }
+      },
+      "_id": "patriares0000016",
+      "drawn": false
+    },
+    {
+      "range": [
+        17,
+        17
+      ],
+      "weight": 1,
+      "type": 0,
+      "text": "Nilfgaard - Nazair (+1 Rissa)",
+      "flags": {
+        "witcher": {
+          "regione": "nilfgaard",
+          "patria": "Nazair",
+          "bonus": "+1",
+          "abilita": "Rissa",
+          "text": "Nazair (+1 Rissa)"
+        }
+      },
+      "_id": "patriares0000017",
+      "drawn": false
+    },
+    {
+      "range": [
+        18,
+        18
+      ],
+      "weight": 1,
+      "type": 0,
+      "text": "Nilfgaard - Il Cuore di Nilfgaard (+1 Inganno)",
+      "flags": {
+        "witcher": {
+          "regione": "nilfgaard",
+          "patria": "Il Cuore di Nilfgaard",
+          "bonus": "+1",
+          "abilita": "Inganno",
+          "text": "Il Cuore di Nilfgaard (+1 Inganno)"
+        }
+      },
+      "_id": "patriares0000018",
+      "drawn": false
+    },
+    {
+      "range": [
+        19,
+        19
+      ],
+      "weight": 1,
+      "type": 0,
+      "text": "Regni Settentrionali - Poviss (+1 Commercio)",
+      "flags": {
+        "witcher": {
+          "regione": "north",
+          "patria": "Poviss",
+          "bonus": "+1",
+          "abilita": "Commercio",
+          "text": "Poviss (+1 Commercio)"
+        }
+      },
+      "_id": "patriares0000019",
+      "drawn": false
+    },
+    {
+      "range": [
+        20,
+        20
+      ],
+      "weight": 1,
+      "type": 0,
+      "text": "Regni Settentrionali - Redania (+1 Istruzione)",
+      "flags": {
+        "witcher": {
+          "regione": "north",
+          "patria": "Redania",
+          "bonus": "+1",
+          "abilita": "Istruzione",
+          "text": "Redania (+1 Istruzione)"
+        }
+      },
+      "_id": "patriares0000020",
+      "drawn": false
+    },
+    {
+      "range": [
+        21,
+        21
+      ],
+      "weight": 1,
+      "type": 0,
+      "text": "Regni Settentrionali - Rivia (+1 Resistere a Coercizione)",
+      "flags": {
+        "witcher": {
+          "regione": "north",
+          "patria": "Rivia",
+          "bonus": "+1",
+          "abilita": "Resistere a Coercizione",
+          "text": "Rivia (+1 Resistere a Coercizione)"
+        }
+      },
+      "_id": "patriares0000021",
+      "drawn": false
+    },
+    {
+      "range": [
+        22,
+        22
+      ],
+      "weight": 1,
+      "type": 0,
+      "text": "Regni Settentrionali - Skellige (+1 Coraggio)",
+      "flags": {
+        "witcher": {
+          "regione": "north",
+          "patria": "Skellige",
+          "bonus": "+1",
+          "abilita": "Coraggio",
+          "text": "Skellige (+1 Coraggio)"
+        }
+      },
+      "_id": "patriares0000022",
+      "drawn": false
+    },
+    {
+      "range": [
+        23,
+        23
+      ],
+      "weight": 1,
+      "type": 0,
+      "text": "Regni Settentrionali - Temeria (+1 Carisma)",
+      "flags": {
+        "witcher": {
+          "regione": "north",
+          "patria": "Temeria",
+          "bonus": "+1",
+          "abilita": "Carisma",
+          "text": "Temeria (+1 Carisma)"
+        }
+      },
+      "_id": "patriares0000023",
+      "drawn": false
+    },
+    {
+      "range": [
+        24,
+        24
+      ],
+      "weight": 1,
+      "type": 0,
+      "text": "Regni Settentrionali - Verden (+1 Sopravvivenza)",
+      "flags": {
+        "witcher": {
+          "regione": "north",
+          "patria": "Verden",
+          "bonus": "+1",
+          "abilita": "Sopravvivenza",
+          "text": "Verden (+1 Sopravvivenza)"
+        }
+      },
+      "_id": "patriares0000024",
+      "drawn": false
+    },
+    {
+      "range": [
+        25,
+        25
+      ],
+      "weight": 1,
+      "type": 0,
+      "text": "Nilfgaard - Vicovaro (+1 Istruzione)",
+      "flags": {
+        "witcher": {
+          "regione": "nilfgaard",
+          "patria": "Vicovaro",
+          "bonus": "+1",
+          "abilita": "Istruzione",
+          "text": "Vicovaro (+1 Istruzione)"
+        }
+      },
+      "_id": "patriares0000025",
+      "drawn": false
+    }
+  ]
+}

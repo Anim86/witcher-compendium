@@ -74,6 +74,7 @@
     transition: all 0.3s ease;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     margin-bottom: 4px;
+    position: relative;
 }
 
 .witcher-wizard .nav-label-container {
@@ -139,6 +140,7 @@
 .witcher-wizard .nav-item.completed .nav-icon-container::after {
     content: '\f00c';
     font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
     font-size: 0.8rem;
     position: absolute;
     bottom: -2px;
@@ -451,7 +453,7 @@ form.witcher-wizard .wizard-content {
 
 .witcher-wizard .derived-pills {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 6px;
 }
 
@@ -476,6 +478,8 @@ form.witcher-wizard .wizard-content {
 .witcher-wizard .derived-pill .value {
     font-weight: 800;
     color: var(--wizard-accent);
+    font-size: 0.8rem;
+    white-space: nowrap;
 }
 
 /* Description Row for Stats with inline button */
@@ -495,7 +499,7 @@ form.witcher-wizard .wizard-content {
     font-size: 0.8rem;
     background: #8f1212;
     border: 1px solid #ffd700;
-    color: #ffd700 !important;
+    color: #ffffff !important;
     border-radius: 4px;
     font-weight: bold;
     cursor: pointer;
@@ -1491,7 +1495,7 @@ form.witcher-wizard .wizard-content {
 /* Pool info banner */
 .witcher-wizard .step-skills .skills-pool-info {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     gap: 8px;
     background: rgba(139, 0, 0, 0.07);
     border: 1px solid rgba(139, 0, 0, 0.2);
@@ -1542,7 +1546,8 @@ form.witcher-wizard .wizard-content {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     transition: all 0.2s ease;
     gap: 8px;
-    height: 100%;
+    min-height: 66px;
+    box-sizing: border-box;
 }
 
 .witcher-wizard .step-skills .skill-row:hover {
@@ -1562,11 +1567,31 @@ form.witcher-wizard .wizard-content {
     font-weight: 700;
     color: var(--wizard-text-dark) !important;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 6px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
     min-width: 0;
     line-height: 1.3;
+}
+
+.witcher-wizard .step-skills .skill-main-info {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    width: 100%;
+}
+
+.witcher-wizard .step-skills .skill-sub-info {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.witcher-wizard .step-skills .defining-star {
+    color: #b8860b;
+    font-size: 0.95rem;
+    display: inline-block;
 }
 
 .witcher-wizard .step-skills .cost-badge {
@@ -1603,7 +1628,8 @@ form.witcher-wizard .wizard-content {
 }
 
 .witcher-wizard .step-skills .skill-row.skill-defining {
-    border-left: 3px solid #b8860b;
+    border: 1px solid #b8860b;
+    border-left: 4px solid #b8860b;
     background: rgba(184, 134, 11, 0.05);
 }
 
@@ -1611,42 +1637,41 @@ form.witcher-wizard .wizard-content {
 .witcher-wizard .sheet-tabs {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin-bottom: 15px;
-    border-bottom: 2px solid var(--wizard-gold);
-    padding-bottom: 5px;
+    gap: 15px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--wizard-border);
 }
 
 .witcher-wizard .sheet-tabs .item {
-    padding: 8px 16px;
-    background: rgba(255, 255, 255, 0.5);
-    border: 1px solid var(--wizard-border);
-    border-bottom: none;
-    border-radius: 6px 6px 0 0;
+    padding: 6px 12px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid transparent;
     cursor: pointer;
     font-weight: bold;
-    color: var(--wizard-text-dark);
+    color: var(--wizard-text-muted);
     transition: all 0.2s ease;
     text-transform: uppercase;
     font-family: 'MedievalSharp', serif;
+    font-size: 0.9rem;
     letter-spacing: 0.5px;
+    margin-bottom: -1px;
 }
 
 .witcher-wizard .sheet-tabs .item:hover {
-    background: rgba(255, 255, 255, 0.8);
-    transform: translateY(-2px);
+    color: var(--wizard-text-dark);
 }
 
 .witcher-wizard .sheet-tabs .item.active {
-    background: var(--wizard-accent);
-    color: white !important;
+    background: transparent;
+    color: var(--wizard-accent) !important;
     border-color: var(--wizard-accent);
-    box-shadow: 0 -2px 10px rgba(139, 0, 0, 0.3);
+    box-shadow: none;
 }
 
 .witcher-wizard .sheet-tabs .item.active .badge {
-    background: white !important;
-    color: var(--wizard-accent) !important;
+    background: var(--wizard-accent) !important;
+    color: white !important;
 }
 
 .witcher-wizard .sheet-tabs .badge {
@@ -1831,7 +1856,7 @@ form.witcher-wizard .wizard-content {
 
 .witcher-wizard .wizard-split-layout {
     display: grid;
-    grid-template-columns: 140px 1fr;
+    grid-template-columns: 170px 1fr;
     gap: 15px;
     flex: 1;
     min-height: 0;
@@ -1841,11 +1866,11 @@ form.witcher-wizard .wizard-content {
 .witcher-wizard .master-panel {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 3px;
     overflow-y: auto;
     padding-right: 8px;
-    padding-bottom: 8px;
-    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-top: 2px;
 }
 
 /* Custom scrollbars for master and detail panels */
@@ -1871,7 +1896,7 @@ form.witcher-wizard .wizard-content {
     display: flex;
     align-items: center;
     gap: 9px;
-    padding: 5px 10px;
+    padding: 6px 10px;
     background: rgba(255, 255, 255, 0.45);
     border: 1px solid var(--wizard-border);
     border-radius: 6px;
@@ -1881,8 +1906,8 @@ form.witcher-wizard .wizard-content {
 }
 
 .witcher-wizard .compact-selector-card img {
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
     object-fit: cover;
     border-radius: 50%;
     border: 1px solid var(--wizard-border);
@@ -1892,7 +1917,7 @@ form.witcher-wizard .wizard-content {
 
 .witcher-wizard .compact-selector-card .selector-info h3 {
     margin: 0 !important;
-    font-size: 0.9rem !important;
+    font-size: 1.05rem !important;
     color: var(--wizard-text-dark) !important;
     font-family: 'MedievalSharp', serif !important;
     text-align: left !important;
@@ -2342,16 +2367,29 @@ form.witcher-wizard .wizard-content {
     transform: translateY(1px);
 }
 
+.witcher-wizard .character-name-selection label {
+    font-size: 0.8rem;
+    font-variant: small-caps;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: var(--wizard-accent) !important;
+    margin-bottom: 4px;
+    display: block;
+}
+
 .witcher-wizard .wizard-name-display {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: bold;
-    color: var(--wizard-text-dark);
-    padding: 8px 12px;
-    background: rgba(255, 255, 255, 0.4);
-    border: 1px solid var(--wizard-border);
+    color: var(--wizard-accent);
+    font-family: 'MedievalSharp', serif;
+    padding: 10px 16px;
+    background: rgba(255, 255, 255, 0.75);
+    border: 2px solid var(--wizard-border);
     border-radius: 6px;
     text-align: center;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.05);
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
 }
 
 /* Specialization Paths Layout */

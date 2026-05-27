@@ -6,7 +6,6 @@
         <div class="master-panel profession-list">
             {{#each professions}}
             <div class="compact-selector-card {{#if (eq ../character.profession._id id)}}selected{{/if}}" data-action="selectProfession" data-prof-id="{{id}}">
-                <img src="{{img}}" alt="{{name}}">
                 <div class="selector-info">
                     <h3>{{name}}</h3>
                 </div>
