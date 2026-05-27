@@ -14,6 +14,9 @@ Wizard:
 * \[ ] filtrare nella sezione equipaggiamento di non poter scegliere gli oggetti che costano 0 corone
 * \[ ] aggiungere sezione di scelta incantesimi con i limiti decisi dal regolamento
 * \[ ] Sistemare tutte le skill delle varie classi in fase di creazione. Al momento il wizard ha dei problemi
+* \[ ] Nella sezione equipaggiamento bisogna mettere un blocco a procedere se si super il budget durante l'acquisto
+* \[ ] Nella sezione equipaggiamento bisogna eliminare l'autoselezione degli oggetti a scelta
+* \[ ] Bisogna mettere il roll delle corone di partenza
 
 
 
