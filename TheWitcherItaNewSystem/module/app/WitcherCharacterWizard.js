@@ -108,11 +108,13 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         openListModal: function(event, target) { this._openListModal(event, target); },
         goToStep: function(event, target) { this._goToStep(event, target); },
         addPickupSkill: function(event, target) { this._addPickupSkill(event, target); },
+        removePickupSkill: function(event, target) { this._removePickupSkill(event, target); },
         addCombatSkill: function(event, target) { this._addCombatSkill(event, target); },
         finish: function(event, target) { this._finish(event, target); },
         switchSkillTab: function(event, target) { this._switchSkillTab(event, target); },
         toggleGnomeSkill: function(event, target) { this._toggleGnomeSkill(event, target); },
-        toggleProfessionGear: function(event, target) { this._toggleProfessionGear(event, target); }
+        toggleProfessionGear: function(event, target) { this._toggleProfessionGear(event, target); },
+        rollAllSkills: function(event, target) { this._rollAllSkills(event, target); }
     };
 
     static PARTS = {
@@ -1107,6 +1109,15 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         }
     }
 
+    async _removePickupSkill(event, target) {
+        const skillId = target.dataset.skill;
+        if (skillId) {
+            this.characterData.selectedPickupSkills = this.characterData.selectedPickupSkills.filter(id => id !== skillId);
+            delete this.characterData.skills[skillId];
+            this.render(true);
+        }
+    }
+
     async _addCombatSkill(event, target) {
         const skillKey = this.element.querySelector("select[name='new-combat-skill']")?.value;
         if (skillKey && !this.characterData.selectedCombatSkills.includes(skillKey)) {
@@ -1157,7 +1168,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         let minVal, maxVal;
         if (isNative) {
             minVal = 8;
-            maxVal = 10;
+            maxVal = 8;
         } else {
             minVal = isProg ? 1 : 0;
             maxVal = 6;
@@ -1221,6 +1232,124 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         if (patria.regione === "elder") return "Terre Antiche";
         if (patria.regione === "nilfgaard") return "Nilfgaardiana";
         return "Settentrionale";
+    }
+
+    async _rollAllBackground(event, target) {
+        if (!this.characterData.originRegion || !this.characterData.homeland) {
+            if (this.patriaList && this.patriaList.length > 0) {
+                const randomPatria = this.patriaList[Math.floor(Math.random() * this.patriaList.length)];
+                this.characterData.originRegion = randomPatria.regione;
+                this.characterData.homeland = randomPatria.patria;
+                this._updateNativeLanguage();
+            } else {
+                ui.notifications.warn("Impossibile generare la patria: lista Patria non trovata.");
+                return;
+            }
+        }
+
+        const familyRoll = Math.floor(Math.random() * 10) + 1;
+        if (familyRoll % 2 === 0) {
+            this.characterData.background.familyState = "alive";
+            this.characterData.background.familyFate = "";
+            
+            const parentsRoll = Math.floor(Math.random() * 10) + 1;
+            if (parentsRoll % 2 === 0) {
+                this.characterData.background.parentsState = "alive";
+                this.characterData.background.parentsFate = "";
+                await this._rollBackground(); 
+            } else {
+                this.characterData.background.parentsState = "something_happened";
+                this.characterData.background.socialStatus = "";
+                await this._rollParentsFate(); 
+            }
+        } else {
+            this.characterData.background.familyState = "something_happened";
+            this.characterData.background.parentsState = "";
+            this.characterData.background.socialStatus = "";
+            this.characterData.background.parentsFate = "";
+            await this._rollFamilyFate(); 
+        }
+
+        this.characterData.background.events = [];
+        const age = this.characterData.age || 20;
+        const maxEvents = Math.floor((age - 20) / 10) + 1;
+        
+        for (let i = 0; i < maxEvents; i++) {
+            await this._rollLifeEvents();
+        }
+
+        this.render(true);
+    }
+
+    async _rollAllSkills(event, target) {
+        // --- 1. Distribute Profession Skills ---
+        const profSkills = this._getProfessionSkills();
+        for (const s of profSkills) {
+            if (s.isNativeLanguage) {
+                this.characterData.skills[s.key] = 8;
+            } else if (s.isDefining) {
+                this.characterData.skills[s.key] = 1;
+            } else {
+                this.characterData.skills[s.key] = 1;
+            }
+        }
+
+        let profPointsRemaining = this._calculateSkillPoints("profession");
+        let safeCounter = 0;
+        while (profPointsRemaining > 0 && safeCounter < 200) {
+            safeCounter++;
+            const currentProfSkills = this._getProfessionSkills();
+            const upgradeable = currentProfSkills.filter(s => {
+                const maxLevel = s.isNativeLanguage ? 8 : 6;
+                return s.value < maxLevel && profPointsRemaining >= s.cost;
+            });
+            
+            if (upgradeable.length === 0) break;
+            
+            const targetSkill = upgradeable[Math.floor(Math.random() * upgradeable.length)];
+            const currentVal = this.characterData.skills[targetSkill.key] !== undefined ? this.characterData.skills[targetSkill.key] : (targetSkill.isNativeLanguage ? 8 : 1);
+            this.characterData.skills[targetSkill.key] = currentVal + 1;
+            profPointsRemaining -= targetSkill.cost;
+        }
+
+        // --- 2. Add 3 Pickup Skills ---
+        this.characterData.selectedPickupSkills = [];
+        for (const key in this.characterData.skills) {
+            if (!profSkills.find(ps => ps.key === key)) {
+                delete this.characterData.skills[key];
+            }
+        }
+
+        let availablePickup = this._getAvailablePickupSkills();
+        for (let i = 0; i < 3; i++) {
+            if (availablePickup.length === 0) break;
+            const randIndex = Math.floor(Math.random() * availablePickup.length);
+            const picked = availablePickup[randIndex];
+            this.characterData.selectedPickupSkills.push(picked.key);
+            this.characterData.skills[picked.key] = picked.isNativeLanguage ? 8 : 0;
+            availablePickup.splice(randIndex, 1);
+        }
+
+        // --- 3. Distribute Pickup Points ---
+        let pickupPointsRemaining = this._calculateSkillPoints("pickup");
+        safeCounter = 0;
+        while (pickupPointsRemaining > 0 && safeCounter < 200) {
+            safeCounter++;
+            const currentPickupSkills = this._getPickupSkills();
+            const upgradeable = currentPickupSkills.filter(s => {
+                const maxLevel = s.isNativeLanguage ? 8 : 6;
+                return s.value < maxLevel && pickupPointsRemaining >= s.cost;
+            });
+
+            if (upgradeable.length === 0) break;
+
+            const targetSkill = upgradeable[Math.floor(Math.random() * upgradeable.length)];
+            const currentVal = this.characterData.skills[targetSkill.key] !== undefined ? this.characterData.skills[targetSkill.key] : (targetSkill.isNativeLanguage ? 8 : 0);
+            this.characterData.skills[targetSkill.key] = currentVal + 1;
+            pickupPointsRemaining -= targetSkill.cost;
+        }
+
+        this.render(true);
     }
 
     async _rollBackground() {

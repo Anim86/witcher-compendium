@@ -1,5 +1,10 @@
 <div class="wizard-step step-skills">
-    <h2>{{localize "WITCHER.Wizard.Step.Skills.Title"}}</h2>
+    <h2 style="display: flex; justify-content: center; align-items: center; gap: 12px; margin-bottom: 15px;">
+        <span>{{localize "WITCHER.Wizard.Step.Skills.Title"}}</span>
+        <button type="button" class="btn-roll-inline" data-action="rollAllSkills" title="Distribuisci i punti abilità casualmente e seleziona 3 abilità pickup" style="margin: 0; width: 30px; height: 30px; display: inline-flex; align-items: center; justify-content: center;">
+            <i class="fa-solid fa-dice-d20"></i>
+        </button>
+    </h2>
 
     <div class="skills-container tabs" data-group="skill-tabs">
         <nav class="sheet-tabs tabs" data-group="skill-tabs">
@@ -19,13 +24,6 @@
         <section class="content">
             <!-- TAB: Abilità Professionali -->
             <div class="tab {{#if (eq activeSkillTab 'profession-skills')}}active{{/if}}" data-group="skill-tabs" data-tab="profession-skills">
-                <div class="points-display">
-                    <span class="points-label">{{localize "WITCHER.Wizard.Skills.ProfessionPool"}}: </span>
-                    <span class="points-value {{#if (lt professionPointsRemaining 0)}}negative{{/if}}">
-                        {{professionPointsRemaining}} / 44
-                    </span>
-                </div>
-
                 {{#if isArmigero}}
                 {{#if (gt combatSkillsRemaining 0)}}
                 <div class="skills-picker" style="margin-bottom: 15px; background: rgba(0,0,0,0.4); padding: 10px; border: 1px solid var(--witcher-red);">
@@ -74,7 +72,7 @@
                                    name="skills.{{key}}"
                                    value="{{value}}"
                                    min="{{#if isNativeLanguage}}8{{else}}1{{/if}}"
-                                   max="{{#if isNativeLanguage}}10{{else}}6{{/if}}"
+                                   max="{{#if isNativeLanguage}}8{{else}}6{{/if}}"
                                    readonly>
                             <button type="button" class="ctrl-btn plus" data-action="adjustSkill" data-skill="{{key}}" data-type="profession" data-delta="1">
                                 <i class="fa-solid fa-chevron-right"></i>
@@ -136,6 +134,9 @@
                             </div>
                         </label>
                         <div class="skill-controls">
+                            <button type="button" class="ctrl-btn delete" data-action="removePickupSkill" data-skill="{{key}}" title="Rimuovi Abilità" style="color: var(--witcher-red); margin-right: 5px;">
+                                <i class="fa-solid fa-trash"></i>
+                            </button>
                             <button type="button" class="ctrl-btn minus" data-action="adjustSkill" data-skill="{{key}}" data-type="pickup" data-delta="-1">
                                 <i class="fa-solid fa-chevron-left"></i>
                             </button>
@@ -147,7 +148,7 @@
                                    name="skills.{{key}}"
                                    value="{{value}}"
                                    min="{{#if isNativeLanguage}}8{{else}}0{{/if}}"
-                                   max="{{#if isNativeLanguage}}10{{else}}6{{/if}}"
+                                   max="{{#if isNativeLanguage}}8{{else}}6{{/if}}"
                                    readonly>
                             <button type="button" class="ctrl-btn plus" data-action="adjustSkill" data-skill="{{key}}" data-type="pickup" data-delta="1">
                                 <i class="fa-solid fa-chevron-right"></i>
