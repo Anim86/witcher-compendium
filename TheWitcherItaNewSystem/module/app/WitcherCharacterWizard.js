@@ -667,9 +667,9 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         const homeland = this.characterData.homeland?.toLowerCase();
         
         let langKey = "commonspeech";
-        if (raceName === "Elfi") langKey = "eldersp";
-        else if (raceName === "Nani" || raceName === "Gnomo") langKey = "dwarven";
-        else if (raceName === "Umani") {
+        if (raceName === "Elfo" || raceName === "Elfi") langKey = "eldersp";
+        else if (raceName === "Nano" || raceName === "Nani" || raceName === "Gnomo") langKey = "dwarven";
+        else if (raceName === "Umano" || raceName === "Umani") {
             const elderHomelands = ["nilfgaard", "vicovaro", "etolia", "gemmeria", "ebbing", "maecht", "mettina", "nazair", "gheso", "magturga", "skellige"];
             if (elderHomelands.includes(homeland)) langKey = "eldersp";
         }
@@ -697,9 +697,9 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         const homeland = this.characterData.homeland?.toLowerCase();
         
         let langKey = "commonspeech";
-        if (raceName === "Elfi") langKey = "eldersp";
-        else if (raceName === "Nani" || raceName === "Gnomo") langKey = "dwarven";
-        else if (raceName === "Umani") {
+        if (raceName === "Elfo" || raceName === "Elfi") langKey = "eldersp";
+        else if (raceName === "Nano" || raceName === "Nani" || raceName === "Gnomo") langKey = "dwarven";
+        else if (raceName === "Umano" || raceName === "Umani") {
             const elderHomelands = ["nilfgaard", "vicovaro", "etolia", "gemmeria", "ebbing", "maecht", "mettina", "nazair", "gheso", "magturga", "skellige"];
             if (elderHomelands.includes(homeland)) langKey = "eldersp";
         }
@@ -1566,7 +1566,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 },
                 general: {
                     age: this.characterData.age || 20,
-                    socialStanding: bg.socialStatus || "",
+                    socialStanding: "",
                     homeland: {
                         value: this.characterData.homeland || ""
                     },
@@ -1580,6 +1580,16 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 }
             }
         };
+
+        // Auto-calculate social standing based on race and homeland
+        if (this.characterData.race && this.characterData.race.system && this.characterData.race.system.socialStanding) {
+            const hl = this.characterData.homeland;
+            if (hl === "skellige") actorData.system.general.socialStanding = this.characterData.race.system.socialStanding.skellige || "";
+            else if (hl === "mahakam") actorData.system.general.socialStanding = this.characterData.race.system.socialStanding.mahakam || "";
+            else if (hl === "dolblathanna") actorData.system.general.socialStanding = this.characterData.race.system.socialStanding.dolBlathanna || "";
+            else if (this.characterData.originRegion === "nilfgaard") actorData.system.general.socialStanding = this.characterData.race.system.socialStanding.nilfgaard || "";
+            else actorData.system.general.socialStanding = this.characterData.race.system.socialStanding.north || "";
+        }
 
         // Populate lifeEvents in general
         for (const ev of bg.events) {
