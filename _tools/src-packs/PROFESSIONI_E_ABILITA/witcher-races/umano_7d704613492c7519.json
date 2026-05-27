@@ -7,11 +7,31 @@
         "sourcebook": "MB 23",
         "perk1": {
             "name": "Affidabile",
-            "description": "<p>In un mondo che non si fida dei non-umani, gli umani sembrano più affidabili. Ottengono un bonus di <strong>+1 alle prove di Carisma, Seduzione e Persuasione</strong> effettuate nei confronti di altri umani.</p>"
+            "description": "<p>In un mondo che non si fida dei non-umani, gli umani sembrano più affidabili. Ottengono un bonus di <strong>+1 alle prove di Carisma, Seduzione e Persuasione</strong> effettuate nei confronti di altri umani.</p>",
+            "modifiers": [
+                {
+                    "target": "charisma",
+                    "value": 1
+                },
+                {
+                    "target": "seduction",
+                    "value": 1
+                },
+                {
+                    "target": "persuasion",
+                    "value": 1
+                }
+            ]
         },
         "perk2": {
             "name": "Ingegno",
-            "description": "<p>Gli umani sono intelligenti e spesso trovano soluzioni brillanti a problemi complicati. Ottengono un bonus di <strong>+1 a Deduzione</strong>.</p>"
+            "description": "<p>Gli umani sono intelligenti e spesso trovano soluzioni brillanti a problemi complicati. Ottengono un bonus di <strong>+1 a Deduzione</strong>.</p>",
+            "modifiers": [
+                {
+                    "target": "deduction",
+                    "value": 1
+                }
+            ]
         },
         "perk3": {
             "name": "Cocciuto",

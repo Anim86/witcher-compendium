@@ -6,7 +6,13 @@
         "sourcebook": "LR 170",
         "perk1": {
             "name": "Cuore Calmo",
-            "description": "<p>Si crede che i vran siano senza cuore e privi di empatia, ma la realtà è molto diversa. Hanno le medesime emozioni degli umani, ma sono molto più riservati e non le mostrano apertamente. I vran hanno un <strong>+1 innato a Resistere a Coercizione</strong>.</p>"
+            "description": "<p>Si crede che i vran siano senza cuore e privi di empatia, ma la realtà è molto diversa. Hanno le medesime emozioni degli umani, ma sono molto più riservati e non le mostrano apertamente. I vran hanno un <strong>+1 innato a Resistere a Coercizione</strong>.</p>",
+            "modifiers": [
+                {
+                    "target": "resistcoerc",
+                    "value": 1
+                }
+            ]
         },
         "perk2": {
             "name": "Zanne e Artigli",
@@ -14,11 +20,23 @@
         },
         "perk3": {
             "name": "Pelle a Scaglie",
-            "description": "<p>Le scaglie dei vran li rendono molto resistenti ai danni. È un'armatura naturale con <strong>Protezione 4</strong>, che non può essere ridotta né dai colpi subiti né dagli effetti di ablazione.</p>"
+            "description": "<p>Le scaglie dei vran li rendono molto resistenti ai danni. È un'armatura naturale con <strong>Protezione 4</strong>, che non può essere ridotta né dai colpi subiti né dagli effetti di ablazione.</p>",
+            "modifiers": [
+                {
+                    "target": "sp",
+                    "value": 4
+                }
+            ]
         },
         "perk4": {
             "name": "Fisiologia Rettile",
-            "description": "<p>I vran sono l'unica razza senziente di origine rettile e la loro fisiologia differisce da quella di umani e altri non-umani. Primo, i loro corpi sono tanto diversi che i medici di altre specie subiscono una penalità di <strong>-2 alle Prove di Pronto Soccorso</strong> per curare le ferite di un vran e <strong>-5 per stabilizzare o trattare le Ferite Critiche</strong>. Secondo, se un vran è vittima della condizione Congelamento subisce -2 a tutte le azioni per 1d6 Round dopo che questa ha avuto termine.</p>"
+            "description": "<p>I vran sono l'unica razza senziente di origine rettile e la loro fisiologia differisce da quella di umani e altri non-umani. Primo, i loro corpi sono tanto diversi che i medici di altre specie subiscono una penalità di <strong>-2 alle Prove di Pronto Soccorso</strong> per curare le ferite di un vran e <strong>-5 per stabilizzare o trattare le Ferite Critiche</strong>. Secondo, se un vran è vittima della condizione Congelamento subisce -2 a tutte le azioni per 1d6 Round dopo che questa ha avuto termine.</p>",
+            "modifiers": [
+                {
+                    "target": "firstaid",
+                    "value": -2
+                }
+            ]
         },
         "socialStanding": {
             "north": "hatedFeared",

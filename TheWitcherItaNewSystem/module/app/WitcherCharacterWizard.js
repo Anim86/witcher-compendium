@@ -35,6 +35,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             skills: {},
             selectedPickupSkills: [], // We'll populate this dynamically
             selectedCombatSkills: [],
+            gnomeSkills: [],
             gear: [],
             money: 0,
             selectedProfessionGear: []
@@ -109,6 +110,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         addCombatSkill: function(event, target) { this._addCombatSkill(event, target); },
         finish: function(event, target) { this._finish(event, target); },
         switchSkillTab: function(event, target) { this._switchSkillTab(event, target); },
+        toggleGnomeSkill: function(event, target) { this._toggleGnomeSkill(event, target); },
         toggleProfessionGear: function(event, target) { this._toggleProfessionGear(event, target); }
     };
 
@@ -379,6 +381,21 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 }
             }
 
+            let availableGnomeSkills = [];
+            let gnomeSkillsRemaining = 0;
+            if (this.characterData.race?.name === "Gnomo") {
+                availableGnomeSkills = [
+                    { id: "alchemy", label: "Alchimia (Difficile)", selected: this.characterData.gnomeSkills?.includes("alchemy") },
+                    { id: "crafting", label: "Artigianato (Difficile)", selected: this.characterData.gnomeSkills?.includes("crafting") },
+                    { id: "disguise", label: "Camuffamento", selected: this.characterData.gnomeSkills?.includes("disguise") },
+                    { id: "firstaid", label: "Pronto Soccorso", selected: this.characterData.gnomeSkills?.includes("firstaid") },
+                    { id: "forgery", label: "Falsificare", selected: this.characterData.gnomeSkills?.includes("forgery") },
+                    { id: "picklock", label: "Scassinare", selected: this.characterData.gnomeSkills?.includes("picklock") },
+                    { id: "trapcraft", label: "Costruire Trappole (Difficile)", selected: this.characterData.gnomeSkills?.includes("trapcraft") }
+                ];
+                gnomeSkillsRemaining = 3 - (this.characterData.gnomeSkills?.length || 0);
+            }
+
             return {
                 ageLimits: ageLimits,
                 socialStatusOptions: this.socialStatusOptions || [],
@@ -409,6 +426,8 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 activeSkillTab: this.activeSkillTab,
                 isFirstStep: this.step === 1,
                 isLastStep: this.step === this.maxSteps,
+                availableGnomeSkills: availableGnomeSkills,
+                gnomeSkillsRemaining: gnomeSkillsRemaining,
                 currentTemplate: this._getTemplateForStep(this.step),
                 availableCombatSkills: availableCombatSkills,
                 combatSkillsRemaining: combatSkillsRemaining,
@@ -936,11 +955,29 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         this.render(true);
     }
 
+    _toggleGnomeSkill(event, target) {
+        const id = target.dataset.skillId;
+        if (!this.characterData.gnomeSkills) this.characterData.gnomeSkills = [];
+        
+        const idx = this.characterData.gnomeSkills.indexOf(id);
+        if (idx > -1) {
+            this.characterData.gnomeSkills.splice(idx, 1);
+        } else {
+            if (this.characterData.gnomeSkills.length < 3) {
+                this.characterData.gnomeSkills.push(id);
+            } else {
+                ui.notifications.warn("Puoi scegliere un massimo di 3 abilità di Manualità.");
+            }
+        }
+        this.render(true);
+    }
+
     async _selectRace(event, target) {
         const id = target.dataset.raceId;
         const race = this.races.find(r => r.id === id);
         if (race) { 
             this.characterData.race = race; 
+            this.characterData.gnomeSkills = []; // Reset gnome skills choices on race change
             this._updateNativeLanguage();
             const limits = this._getAgeLimits();
             this.characterData.age = Math.floor(Math.random() * (limits.max - limits.min + 1)) + limits.min;
@@ -1077,16 +1114,37 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
 
     _calculateDerivedStats() {
         const s = this.characterData.stats;
-        const res = Math.max(10, Math.floor(((Number(s.body)||0) + (Number(s.will)||0)) / 2) * 5);
-        const stun = Math.floor(((Number(s.body)||0) + (Number(s.will)||0)) / 2);
+        const body = Number(s.body) || 0;
+        const will = Number(s.will) || 0;
+        const spd = Number(s.spd) || 0;
+        
+        const base = Math.floor((body + will) / 2);
+        const hpSta = base * 5;
+        
+        let vigor = 0;
+        const profName = this.characterData.profession?.name?.toLowerCase() || "";
+        if (profName.includes('witcher') || profName.includes('prete') || profName.includes('sacerdote')) {
+            vigor = 2;
+        } else if (profName.includes('mago')) {
+            vigor = 5;
+        }
+
+        const meleeBonus = Math.ceil((body - 6) / 2) * 2;
+        const punchDmg = 1 * meleeBonus; // to keep number type check
+        const kickDmg = 4 + meleeBonus;
+
         return { 
-            hp: res, 
-            sta: res, 
-            rec: Math.floor(res / 5), 
-            stun: stun,
-            run: (Number(s.spd)||0) * 3, 
-            leap: Math.floor((Number(s.spd)||0) * 3 / 5), 
-            enc: (Number(s.body)||0) * 10 
+            hp: hpSta, 
+            sta: hpSta, 
+            rec: base, 
+            stun: base,
+            run: spd * 3, 
+            leap: Math.floor((spd * 3) / 5), 
+            enc: body * 10,
+            vigor: vigor,
+            meleeBonus: meleeBonus > 0 ? `+${meleeBonus}` : `${meleeBonus}`,
+            punch: `1d6${meleeBonus > 0 ? '+'+meleeBonus : (meleeBonus < 0 ? meleeBonus : '')}`,
+            kick: `1d6${kickDmg > 0 ? '+'+kickDmg : (kickDmg < 0 ? kickDmg : '')}`
         };
     }
 
@@ -1615,6 +1673,15 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             }
         }
 
+        const derived = this._calculateDerivedStats();
+        actorData.system.derivedStats = {
+            vigor: {
+                value: derived.vigor,
+                unmodifiedMax: derived.vigor,
+                max: derived.vigor
+            }
+        };
+
         // 3. Create Actor
         console.log("TheWitcherItaNewSystem | Wizard | Creating Actor:", actorData);
         const actor = await Actor.create(actorData);
@@ -1625,6 +1692,16 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         if (this.characterData.race) {
             const r = foundry.utils.deepClone(this.characterData.race);
             delete r._id; delete r.id; 
+            
+            if (r.name === "Gnomo" && this.characterData.gnomeSkills?.length > 0) {
+                if (r.system.perk2) {
+                    if (!r.system.perk2.modifiers) r.system.perk2.modifiers = [];
+                    this.characterData.gnomeSkills.forEach(skillId => {
+                        r.system.perk2.modifiers.push({ target: skillId, value: 2 });
+                    });
+                }
+            }
+
             itemsToCreate.push(r);
         }
 

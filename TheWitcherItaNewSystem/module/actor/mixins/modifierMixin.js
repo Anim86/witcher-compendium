@@ -2,8 +2,23 @@ export let modifierMixin = {
     getAllModifiers(checkedStat) {
         let woundModifiers = this.getWoundModifier(this.system.critWounds, checkedStat);
 
+        let raceModifiers = 0;
+        let raceItem = this.items?.find(i => i.type === 'race');
+        if (raceItem) {
+            for (let i = 1; i <= 4; i++) {
+                let perk = raceItem.system[`perk${i}`];
+                if (perk && Array.isArray(perk.modifiers)) {
+                    perk.modifiers.forEach(mod => {
+                        if (mod.target === checkedStat) {
+                            raceModifiers += Number(mod.value) || 0;
+                        }
+                    });
+                }
+            }
+        }
+
         return {
-            totalModifiers: woundModifiers.totalModifiers,
+            totalModifiers: woundModifiers.totalModifiers + raceModifiers,
             totalDivider: woundModifiers.totalDivider
         };
     },
@@ -105,6 +120,25 @@ export let modifierMixin = {
                 } else {
                 }
             });
+        }
+
+        let raceItem = this.items?.find(i => i.type === 'race');
+        if (raceItem) {
+            for (let i = 1; i <= 4; i++) {
+                let perk = raceItem.system[`perk${i}`];
+                if (perk && Array.isArray(perk.modifiers)) {
+                    perk.modifiers.forEach(mod => {
+                        if (mod.target === skillName) {
+                            let val = Number(mod.value) || 0;
+                            if (val < 0) {
+                                formula += ` ${val}[Tratto Razziale]`;
+                            } else if (val > 0) {
+                                formula += ` +${val}[Tratto Razziale]`;
+                            }
+                        }
+                    });
+                }
+            }
         }
 
         return formula;

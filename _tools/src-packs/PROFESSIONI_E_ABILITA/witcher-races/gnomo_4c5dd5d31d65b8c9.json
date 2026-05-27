@@ -6,7 +6,13 @@
         "sourcebook": "LR 169",
         "perk1": {
             "name": "Comportamento Piacevole",
-            "description": "<p>Gli gnomi sono noti in tutto il Continente per il carattere gioioso e scherzoso. Gli umani li considerano spesso i più piacevoli tra i non-umani. Gli gnomi ottengono <strong>+1 innato a Carisma</strong>.</p>"
+            "description": "<p>Gli gnomi sono noti in tutto il Continente per il carattere gioioso e scherzoso. Gli umani li considerano spesso i più piacevoli tra i non-umani. Gli gnomi ottengono <strong>+1 innato a Carisma</strong>.</p>",
+            "modifiers": [
+                {
+                    "target": "charisma",
+                    "value": 1
+                }
+            ]
         },
         "perk2": {
             "name": "Attenzione per i Dettagli",
@@ -14,11 +20,27 @@
         },
         "perk3": {
             "name": "Fiuto",
-            "description": "<p>L'incredibile acutezza si estende a tutti i sensi degli gnomi, compreso l'olfatto. Gli gnomi ottengono <strong>+1 innato ad Accortezza</strong> e possono seguire le tracce usando solo l'olfatto.</p>"
+            "description": "<p>L'incredibile acutezza si estende a tutti i sensi degli gnomi, compreso l'olfatto. Gli gnomi ottengono <strong>+1 innato ad Accortezza</strong> e possono seguire le tracce usando solo l'olfatto.</p>",
+            "modifiers": [
+                {
+                    "target": "awareness",
+                    "value": 1
+                }
+            ]
         },
         "perk4": {
             "name": "Bassa Statura",
-            "description": "<p>Con un'altezza media di 1m, gli gnomi sono la specie più piccola del Continente. Pur essendo resistenti, risultano spesso più deboli delle altre razze. Subiscono una <strong>penalità innata di -5 a Prestanza</strong> e calcolano il danno a mani nude, il danno bonus in mischia e l'Ingombro come se il loro FIS fosse più basso di 3 punti. Tuttavia, la bassa statura permette loro di entrare senza problemi in aperture di appena 50cm e nascondersi dietro qualsiasi creatura alta almeno 1m.</p>"
+            "description": "<p>Con un'altezza media di 1m, gli gnomi sono la specie più piccola del Continente. Pur essendo resistenti, risultano spesso più deboli delle altre razze. Subiscono una <strong>penalità innata di -5 a Prestanza</strong> e calcolano il danno a mani nude, il danno bonus in mischia e l'Ingombro come se il loro FIS fosse più basso di 3 punti. Tuttavia, la bassa statura permette loro di entrare senza problemi in aperture di appena 50cm e nascondersi dietro qualsiasi creatura alta almeno 1m.</p>",
+            "modifiers": [
+                {
+                    "target": "physique",
+                    "value": -5
+                },
+                {
+                    "target": "body",
+                    "value": -3
+                }
+            ]
         },
         "socialStanding": {
             "north": "tolerated",

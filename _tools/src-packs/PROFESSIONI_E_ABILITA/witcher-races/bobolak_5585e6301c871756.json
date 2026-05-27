@@ -6,7 +6,13 @@
         "sourcebook": "LR 171",
         "perk1": {
             "name": "Cuor di Leone",
-            "description": "<p>I bobolak possono non essere la specie più grande del Continente, ma sono la più coraggiosa. I piccoli bobolak crescono con i racconti delle gesta eroiche dei loro avi. I bobolak hanno <strong>+1 innato a Coraggio</strong>.</p>"
+            "description": "<p>I bobolak possono non essere la specie più grande del Continente, ma sono la più coraggiosa. I piccoli bobolak crescono con i racconti delle gesta eroiche dei loro avi. I bobolak hanno <strong>+1 innato a Coraggio</strong>.</p>",
+            "modifiers": [
+                {
+                    "target": "courage",
+                    "value": 1
+                }
+            ]
         },
         "perk2": {
             "name": "Strana Fisiologia",
@@ -18,7 +24,13 @@
         },
         "perk4": {
             "name": "Pessima Vista",
-            "description": "<p>Quasi tutti i bobolak hanno problemi di vista. Grazie all'udito acuto riescono a muoversi senza grossi problemi, ma sono assai meno percettivi di ogni altra razza del Continente. Per questo hanno <strong>-4 innato ad Accortezza</strong>, ma questa penalità non si applica alle prove basate esclusivamente sull'udito.</p>"
+            "description": "<p>Quasi tutti i bobolak hanno problemi di vista. Grazie all'udito acuto riescono a muoversi senza grossi problemi, ma sono assai meno percettivi di ogni altra razza del Continente. Per questo hanno <strong>-4 innato ad Accortezza</strong>, ma questa penalità non si applica alle prove basate esclusivamente sull'udito.</p>",
+            "modifiers": [
+                {
+                    "target": "awareness",
+                    "value": -4
+                }
+            ]
         },
         "socialStanding": {
             "north": "tolerated",

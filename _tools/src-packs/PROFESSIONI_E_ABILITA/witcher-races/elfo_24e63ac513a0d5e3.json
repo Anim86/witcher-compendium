@@ -7,11 +7,23 @@
         "sourcebook": "MB 23",
         "perk1": {
             "name": "Artistico",
-            "description": "<p>Gli elfi hanno un occhio innato per la bellezza e un talento naturale per le espressioni artistiche. Ottengono un bonus di <strong>+1 innato all'abilità Belle Arti</strong>.</p>"
+            "description": "<p>Gli elfi hanno un occhio innato per la bellezza e un talento naturale per le espressioni artistiche. Ottengono un bonus di <strong>+1 innato all'abilità Belle Arti</strong>.</p>",
+            "modifiers": [
+                {
+                    "target": "finearts",
+                    "value": 1
+                }
+            ]
         },
         "perk2": {
             "name": "Tiratore",
-            "description": "<p>Anni di tradizione e pratica rendono gli elfi i migliori arcieri del Continente. Ottengono un <strong>+2 innato all'abilità Archi</strong> e possono incordare o estrarre un arco senza consumare un'azione.</p>"
+            "description": "<p>Anni di tradizione e pratica rendono gli elfi i migliori arcieri del Continente. Ottengono un <strong>+2 innato all'abilità Archi</strong> e possono incordare o estrarre un arco senza consumare un'azione.</p>",
+            "modifiers": [
+                {
+                    "target": "archery",
+                    "value": 2
+                }
+            ]
         },
         "perk3": {
             "name": "Sintonia Naturale",

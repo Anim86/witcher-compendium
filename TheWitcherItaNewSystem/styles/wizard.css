@@ -2452,3 +2452,113 @@ form.witcher-wizard .wizard-content {
 .witcher-wizard .rotate-90 {
     transform: rotate(90deg);
 }
+
+/* ── Gnome Perk Section Redesign ──────────────────────────────────── */
+.witcher-wizard .gnome-perk-section {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 8px 12px;
+    background: linear-gradient(135deg, rgba(102, 85, 68, 0.08) 0%, rgba(102, 85, 68, 0.03) 100%);
+    border: 1px solid var(--wizard-border);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.witcher-wizard .gnome-perk-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.witcher-wizard .gnome-perk-title {
+    margin: 0 !important;
+    font-family: 'MedievalSharp', serif !important;
+    font-size: 1.05rem !important;
+    text-transform: uppercase !important;
+    color: var(--wizard-accent) !important;
+    letter-spacing: 0.5px;
+}
+
+.witcher-wizard .gnome-perk-choices {
+    font-size: 0.75rem;
+    background: rgba(139, 0, 0, 0.08);
+    border: 1px solid var(--wizard-border);
+    padding: 2px 8px;
+    border-radius: 12px;
+    color: var(--wizard-text-dark) !important;
+    font-weight: 600;
+}
+
+.witcher-wizard .gnome-perk-choices strong {
+    color: var(--wizard-accent);
+    font-size: 0.85rem;
+}
+
+.witcher-wizard .gnome-perk-subtitle {
+    margin: 0 0 8px 0 !important;
+    font-size: 0.75rem !important;
+    opacity: 0.85;
+    color: var(--wizard-text-muted) !important;
+    font-style: italic;
+    line-height: 1.2;
+}
+
+.witcher-wizard .gnome-skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.witcher-wizard .gnome-skill-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 10px;
+    background: rgba(255, 255, 255, 0.45);
+    border: 1px solid var(--wizard-border);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.15s ease-in-out;
+    user-select: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.witcher-wizard .gnome-skill-pill span {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--wizard-text-dark) !important;
+    transition: color 0.15s ease-in-out;
+}
+
+.witcher-wizard .gnome-skill-pill i {
+    font-size: 0.8rem;
+    color: var(--wizard-text-muted);
+    transition: color 0.15s ease-in-out;
+}
+
+.witcher-wizard .gnome-skill-pill:hover {
+    background: rgba(139, 0, 0, 0.08);
+    border-color: var(--wizard-accent);
+    transform: translateY(-1px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08), 0 0 5px rgba(139, 0, 0, 0.2);
+}
+
+.witcher-wizard .gnome-skill-pill.selected {
+    background: var(--wizard-accent) !important;
+    border-color: var(--wizard-gold) !important;
+    box-shadow: 0 2px 4px rgba(139, 0, 0, 0.2), 0 0 8px rgba(184, 134, 11, 0.4);
+}
+
+.witcher-wizard .gnome-skill-pill.selected span {
+    color: #ffffff !important;
+}
+
+.witcher-wizard .gnome-skill-pill.selected i {
+    color: var(--wizard-gold) !important;
+}
+
+.witcher-wizard .gnome-skill-pill:active {
+    transform: translateY(0);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}

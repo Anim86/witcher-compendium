@@ -39,6 +39,20 @@ export let armorMixin = {
             case 'tailWing': naturalBaseSP = this.system.armorTailWing ?? 0; break;
         }
 
+        let raceItem = this.items?.find(i => i.type === 'race');
+        if (raceItem) {
+            for (let i = 1; i <= 4; i++) {
+                let perk = raceItem.system[`perk${i}`];
+                if (perk && Array.isArray(perk.modifiers)) {
+                    perk.modifiers.forEach(mod => {
+                        if (mod.target === 'sp') {
+                            naturalBaseSP += Number(mod.value) || 0;
+                        }
+                    });
+                }
+            }
+        }
+
         // Apply Natural Armor if not bypassed
         if (!properties.bypassesNaturalArmor) {
             totalSP += naturalBaseSP;

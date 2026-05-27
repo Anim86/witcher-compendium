@@ -7,11 +7,23 @@
         "sourcebook": "MB 23",
         "perk1": {
             "name": "Sensi Acuiti",
-            "description": "<p>Grazie ai loro sensi intensificati, i witcher non subiscono penalità nelle aree di luce fioca e guadagnano un bonus di <strong>+1 innato all'abilità Accortezza</strong>, oltre alla facoltà di seguire tracce anche solo con l'olfatto.</p>"
+            "description": "<p>Grazie ai loro sensi intensificati, i witcher non subiscono penalità nelle aree di luce fioca e guadagnano un bonus di <strong>+1 innato all'abilità Accortezza</strong>, oltre alla facoltà di seguire tracce anche solo con l'olfatto.</p>",
+            "modifiers": [
+                {
+                    "target": "awareness",
+                    "value": 1
+                }
+            ]
         },
         "perk2": {
             "name": "Emozioni Attenuate",
-            "description": "<p>A causa dei traumi e delle mutazioni, i witcher provano emozioni meno intense. Non sono tenuti a effettuare prove di coraggio contro Intimidire, ma subiscono un <strong>-4 all'Empatia</strong> (minimo 1). Inoltre, non possono alzare l'Empatia sopra il 6.</p>"
+            "description": "<p>A causa dei traumi e delle mutazioni, i witcher provano emozioni meno intense. Non sono tenuti a effettuare prove di coraggio contro Intimidire, ma subiscono un <strong>-4 all'Empatia</strong> (minimo 1). Inoltre, non possono alzare l'Empatia sopra il 6.</p>",
+            "modifiers": [
+                {
+                    "target": "emp",
+                    "value": -4
+                }
+            ]
         },
         "perk3": {
             "name": "Mutazione Resiliente",
@@ -19,7 +31,17 @@
         },
         "perk4": {
             "name": "Riflessi Fulminei",
-            "description": "<p>Dopo un intenso addestramento e a causa delle mutazioni, i witcher sono molto più rapidi e agili degli umani. Ottengono un <strong>+1 permanente a Riflessi e Destrezza</strong>, che può portare queste statistiche sopra 10.</p>"
+            "description": "<p>Dopo un intenso addestramento e a causa delle mutazioni, i witcher sono molto più rapidi e agili degli umani. Ottengono un <strong>+1 permanente a Riflessi e Destrezza</strong>, che può portare queste statistiche sopra 10.</p>",
+            "modifiers": [
+                {
+                    "target": "ref",
+                    "value": 1
+                },
+                {
+                    "target": "dex",
+                    "value": 1
+                }
+            ]
         },
         "socialStanding": {
             "north": "hatedFeared",

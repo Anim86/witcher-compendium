@@ -7,15 +7,37 @@
         "sourcebook": "MB 23",
         "perk1": {
             "name": "Coriaceo",
-            "description": "<p>Trascorrendo molto tempo nelle miniere e nelle montagne, i nani hanno una pelle coriacea di natura. Pertanto la loro pelle ha una naturale <strong>capacità di blocco (PR) di 2</strong>. Questa PR non può essere ridotta da attacchi di armi o danno ablativo ed è cumulativa alle normali armature.</p>"
+            "description": "<p>Trascorrendo molto tempo nelle miniere e nelle montagne, i nani hanno una pelle coriacea di natura. Pertanto la loro pelle ha una naturale <strong>capacità di blocco (PR) di 2</strong>. Questa PR non può essere ridotta da attacchi di armi o danno ablativo ed è cumulativa alle normali armature.</p>",
+            "modifiers": [
+                {
+                    "target": "sp",
+                    "value": 2
+                }
+            ]
         },
         "perk2": {
             "name": "Forte",
-            "description": "<p>Grazie alla loro tozza struttura e alla propensione a lavori duri e faticosi, i nani ottengono un bonus di <strong>+1 all'abilità Prestanza</strong> e aumentano il valore d'<strong>Ingombro di 25</strong>.</p>"
+            "description": "<p>Grazie alla loro tozza struttura e alla propensione a lavori duri e faticosi, i nani ottengono un bonus di <strong>+1 all'abilità Prestanza</strong> e aumentano il valore d'<strong>Ingombro di 25</strong>.</p>",
+            "modifiers": [
+                {
+                    "target": "physique",
+                    "value": 1
+                },
+                {
+                    "target": "enc",
+                    "value": 25
+                }
+            ]
         },
         "perk3": {
             "name": "Occhio da Artigiano",
-            "description": "<p>Grazie al loro occhio per i dettagli e le valutazioni, è difficile gabbare un nano. Ottengono un bonus di <strong>+1 all'abilità Commercio</strong>.</p>"
+            "description": "<p>Grazie al loro occhio per i dettagli e le valutazioni, è difficile gabbare un nano. Ottengono un bonus di <strong>+1 all'abilità Commercio</strong>.</p>",
+            "modifiers": [
+                {
+                    "target": "business",
+                    "value": 1
+                }
+            ]
         },
         "perk4": {
             "name": "-",

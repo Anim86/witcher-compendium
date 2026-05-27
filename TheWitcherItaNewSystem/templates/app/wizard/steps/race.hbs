@@ -24,6 +24,28 @@
                     </div>
                     {{/if}}
                     
+                    {{#if (eq character.race.name "Gnomo")}}
+                    <div class="gnome-perk-section">
+                        <div class="gnome-perk-header">
+                            <h4 class="gnome-perk-title">Attenzione per i Dettagli</h4>
+                            <span class="gnome-perk-choices">Rimanenti: <strong>{{gnomeSkillsRemaining}}</strong></span>
+                        </div>
+                        <p class="gnome-perk-subtitle">Scegli fino a 3 Abilità di Manualità per ricevere un +2 innato.</p>
+                        <div class="gnome-skills-list">
+                            {{#each availableGnomeSkills}}
+                            <div class="gnome-skill-pill {{#if this.selected}}selected{{/if}}" data-action="toggleGnomeSkill" data-skill-id="{{this.id}}">
+                                {{#if this.selected}}
+                                <i class="fas fa-check-circle"></i>
+                                {{else}}
+                                <i class="far fa-circle"></i>
+                                {{/if}}
+                                <span>{{this.label}}</span>
+                            </div>
+                            {{/each}}
+                        </div>
+                    </div>
+                    {{/if}}
+                    
                     {{#if (or character.race.system.perk1.name (or character.race.system.perk2.name character.race.system.perk3.name))}}
                     <div class="detail-perks-list">
                         <ul>
