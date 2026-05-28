@@ -11,7 +11,6 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
 
         // Wizard State
         this.step = 1;
-        this.maxSteps = 7;
         
         // Character Data
         this.characterData = {
@@ -135,7 +134,8 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         randomProfessionGear: function(event, target) { this._randomProfessionGear(event, target); },
         toggleGearCategory: function(event, target) { this._toggleGearCategory(event, target); },
         rollAllSkills: function(event, target) { this._rollAllSkills(event, target); },
-        rollStartingGold: function(event, target) { this._rollStartingGold(event, target); }
+        rollStartingGold: function(event, target) { this._rollStartingGold(event, target); },
+        toggleMagicItem: function(event, target) { this._toggleMagicItem(event, target); }
     };
 
     static PARTS = {
@@ -189,6 +189,42 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 const skillPack = game.packs.get("witcher-compendium.witcher-skills");
                 const docs = skillPack ? await skillPack.getDocuments() : [];
                 this.allSkills = docs;
+            }
+
+            if (this._isSpellcaster()) {
+                if (!this.allSpells) {
+                    const pack = game.packs.get("witcher-compendium.witcher-spells");
+                    const docs = pack ? await pack.getDocuments() : [];
+                    this.allSpells = docs.filter(d => {
+                        const lvl = d.system?.level || "";
+                        const cls = d.system?.class || "";
+                        return lvl === "novice" && ["Spells", "Mage"].includes(cls);
+                    });
+                }
+                if (!this.allInvocations) {
+                    const pack = game.packs.get("witcher-compendium.witcher-invocations");
+                    const docs = pack ? await pack.getDocuments() : [];
+                    this.allInvocations = docs.filter(d => {
+                        const lvl = d.system?.level || "";
+                        const src = d.system?.source || "";
+                        const prof = this.characterData.profession?.name?.toLowerCase() || "";
+                        if (prof.includes("druido")) {
+                            return lvl === "novice" && src === "Druid";
+                        } else {
+                            return lvl === "novice" && src === "Priest";
+                        }
+                    });
+                }
+                if (!this.allRituals) {
+                    const pack = game.packs.get("witcher-compendium.witcher-rituals");
+                    const docs = pack ? await pack.getDocuments() : [];
+                    this.allRituals = docs.filter(d => (d.system?.level || "") === "novice");
+                }
+                if (!this.allHexes) {
+                    const pack = game.packs.get("witcher-compendium.witcher-hexes");
+                    const docs = pack ? await pack.getDocuments() : [];
+                    this.allHexes = docs.filter(d => (d.system?.level || "") === "novice");
+                }
             }
 
             if (!this.patriaList) {
@@ -467,6 +503,43 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 gnomeSkillsRemaining = 3 - (this.characterData.gnomeSkills?.length || 0);
             }
 
+            let magicSpells = [];
+            let magicInvocations = [];
+            let magicRituals = [];
+            let magicHexes = [];
+
+            let selectedSpellsCount = 0;
+            let selectedInvocationsCount = 0;
+            let selectedRitualsCount = 0;
+            let selectedHexesCount = 0;
+
+            if (this._isSpellcaster()) {
+                const isMagicSelected = (item) => {
+                    const sel = this.characterData.selectedMagic || [];
+                    return sel.some(m => m.id === item.id || m._id === item.id);
+                };
+                const sanitizeMagic = (i) => {
+                    const obj = i.toObject ? i.toObject() : i;
+                    obj.id = obj._id || obj.id || i.id;
+                    obj._id = obj.id;
+                    return {
+                        ...obj,
+                        selected: isMagicSelected(obj)
+                    };
+                };
+
+                const selected = this.characterData.selectedMagic || [];
+                selectedSpellsCount = selected.filter(m => m.type === "spell" && ["Spells", "Mage"].includes(m.system?.class)).length;
+                selectedInvocationsCount = selected.filter(m => m.type === "spell" && m.system?.class === "Invocations").length;
+                selectedRitualsCount = selected.filter(m => m.type === "ritual").length;
+                selectedHexesCount = selected.filter(m => m.type === "hex").length;
+
+                if (this.allSpells) magicSpells = this.allSpells.map(sanitizeMagic);
+                if (this.allInvocations) magicInvocations = this.allInvocations.map(sanitizeMagic);
+                if (this.allRituals) magicRituals = this.allRituals.map(sanitizeMagic);
+                if (this.allHexes) magicHexes = this.allHexes.map(sanitizeMagic);
+            }
+
             return {
                 ageLimits: ageLimits,
                 socialStatusOptions: this.socialStatusOptions || [],
@@ -521,6 +594,21 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 isOverBudgetPickup: isOverBudgetPickup,
                 startingGoldRolled: this.startingGoldRolled,
                 professionGear: this.characterData.profession?.system?.notes || "",
+                magic: {
+                    spells: magicSpells,
+                    invocations: magicInvocations,
+                    rituals: magicRituals,
+                    hexes: magicHexes,
+                    limits: this._getMagicLimits(),
+                    counts: {
+                        spells: selectedSpellsCount,
+                        invocations: selectedInvocationsCount,
+                        rituals: selectedRitualsCount,
+                        hexes: selectedHexesCount
+                    },
+                    isMage: (this.characterData.profession?.name?.toLowerCase() || "").includes("mago"),
+                    isPriestOrDruid: (this.characterData.profession?.name?.toLowerCase() || "").includes("prete") || (this.characterData.profession?.name?.toLowerCase() || "").includes("sacerdote") || (this.characterData.profession?.name?.toLowerCase() || "").includes("druido")
+                },
                 summary: this._getSummaryContext()
             };
         } catch (error) {
@@ -597,7 +685,25 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             }
         }
 
-        return { stats, skills, professionGear: profGear };
+        const selectedMagic = (this.characterData.selectedMagic || []).map(m => {
+            let labelType = "Magia";
+            if (m.type === "ritual") labelType = "Rituale";
+            else if (m.type === "hex") labelType = "Fattura";
+            else if (m.type === "spell") {
+                if (m.system?.class === "Invocations") labelType = "Invocazione";
+                else labelType = "Incantesimo";
+            }
+            return {
+                id: m.id || m._id,
+                name: m.name,
+                img: m.img,
+                type: m.type,
+                labelType: labelType,
+                description: m.system?.description || ""
+            };
+        });
+
+        return { stats, skills, professionGear: profGear, selectedMagic };
     }
 
     _getProfessionSkillNames() {
@@ -931,30 +1037,79 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         }
     }
 
+    _isSpellcaster() {
+        const profName = this.characterData.profession?.name?.toLowerCase() || "";
+        return profName.includes("mago") || profName.includes("prete") || profName.includes("sacerdote") || profName.includes("druido");
+    }
+
+    get maxSteps() {
+        return this._isSpellcaster() ? 8 : 7;
+    }
+
+    _getMagicLimits() {
+        const profName = this.characterData.profession?.name?.toLowerCase() || "";
+        if (profName.includes("mago")) {
+            return { spells: 5, rituals: 1, hexes: 1 };
+        } else if (profName.includes("prete") || profName.includes("sacerdote") || profName.includes("druido")) {
+            return { invocations: 2, rituals: 2 };
+        }
+        return {};
+    }
+
+    _getStepMapping() {
+        const isSpellcaster = this._isSpellcaster();
+        if (isSpellcaster) {
+            return {
+                1: { type: "race", label: "WITCHER.Wizard.Step.Race.Title", icon: "fa-solid fa-person-rays" },
+                2: { type: "background", label: "WITCHER.Wizard.Step.Background.Title", icon: "fa-solid fa-scroll" },
+                3: { type: "profession", label: "WITCHER.Wizard.Step.Profession.Title", icon: "fa-solid fa-sword" },
+                4: { type: "stats", label: "WITCHER.Wizard.Step.Stats.Title", icon: "fa-solid fa-chart-simple" },
+                5: { type: "skills", label: "WITCHER.Wizard.Step.Skills.Title", icon: "fa-solid fa-book-open-reader" },
+                6: { type: "magic", label: "WITCHER.Wizard.Step.Magic.Title", icon: "fa-solid fa-wand-magic-sparkles" },
+                7: { type: "gear", label: "WITCHER.Wizard.Step.Gear.Title", icon: "fa-solid fa-bag-shopping" },
+                8: { type: "finish", label: "WITCHER.Wizard.Step.Finalize.Title", icon: "fa-solid fa-check-double" }
+            };
+        } else {
+            return {
+                1: { type: "race", label: "WITCHER.Wizard.Step.Race.Title", icon: "fa-solid fa-person-rays" },
+                2: { type: "background", label: "WITCHER.Wizard.Step.Background.Title", icon: "fa-solid fa-scroll" },
+                3: { type: "profession", label: "WITCHER.Wizard.Step.Profession.Title", icon: "fa-solid fa-sword" },
+                4: { type: "stats", label: "WITCHER.Wizard.Step.Stats.Title", icon: "fa-solid fa-chart-simple" },
+                5: { type: "skills", label: "WITCHER.Wizard.Step.Skills.Title", icon: "fa-solid fa-book-open-reader" },
+                6: { type: "gear", label: "WITCHER.Wizard.Step.Gear.Title", icon: "fa-solid fa-bag-shopping" },
+                7: { type: "finish", label: "WITCHER.Wizard.Step.Finalize.Title", icon: "fa-solid fa-check-double" }
+            };
+        }
+    }
+
     _getStepList() {
-        const steps = [
-            { label: "WITCHER.Wizard.Step.Race.Title", icon: "fa-solid fa-person-rays" },
-            { label: "WITCHER.Wizard.Step.Background.Title", icon: "fa-solid fa-scroll" },
-            { label: "WITCHER.Wizard.Step.Profession.Title", icon: "fa-solid fa-sword" },
-            { label: "WITCHER.Wizard.Step.Stats.Title", icon: "fa-solid fa-chart-simple" },
-            { label: "WITCHER.Wizard.Step.Skills.Title", icon: "fa-solid fa-book-open-reader" },
-            { label: "WITCHER.Wizard.Step.Gear.Title", icon: "fa-solid fa-bag-shopping" },
-            { label: "WITCHER.Wizard.Step.Finalize.Title", icon: "fa-solid fa-check-double" }
-        ];
+        const mapping = this._getStepMapping();
         const raceSelected = !!this.characterData.race;
         const professionSelected = !!this.characterData.profession;
-        return steps.map((s, i) => ({
-            id: i + 1,
-            number: i + 1,
-            label: s.label,
-            icon: s.icon,
-            active: this.step === i + 1,
-            complete: this.step > i + 1,
-            disabled: (!raceSelected && i + 1 > 1) || (!professionSelected && i + 1 > 3)
-        }));
+        
+        return Object.entries(mapping).map(([stepStr, info]) => {
+            const stepNum = parseInt(stepStr);
+            let disabled = false;
+            if (!raceSelected && stepNum > 1) disabled = true;
+            else if (!professionSelected && stepNum > 3) disabled = true;
+
+            return {
+                id: stepNum,
+                number: stepNum,
+                label: info.label,
+                icon: info.icon,
+                active: this.step === stepNum,
+                complete: this.step > stepNum,
+                disabled: disabled
+            };
+        });
     }
 
     _canGoToStep(step) {
+        const mapping = this._getStepMapping();
+        const targetType = mapping[step]?.type;
+        const currentType = mapping[this.step]?.type;
+
         if (step > 1 && !this.characterData.race) {
             ui.notifications.warn("Seleziona una razza prima di proseguire.");
             return false;
@@ -977,20 +1132,48 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             ui.notifications.warn("Seleziona una professione prima di proseguire.");
             return false;
         }
+
+        // Validate leaving Magic step
+        if (currentType === "magic" && step > this.step) {
+            const limits = this._getMagicLimits();
+            const selected = this.characterData.selectedMagic || [];
+            
+            const spellsCount = selected.filter(m => m.type === "spell" && ["Spells", "Mage"].includes(m.system?.class)).length;
+            const ritualsCount = selected.filter(m => m.type === "ritual").length;
+            const hexesCount = selected.filter(m => m.type === "hex").length;
+            const invocationsCount = selected.filter(m => m.type === "spell" && m.system?.class === "Invocations").length;
+
+            if (limits.spells && spellsCount !== limits.spells) {
+                ui.notifications.warn(`Devi selezionare esattamente ${limits.spells} incantesimi novizio (selezionati: ${spellsCount}).`);
+                return false;
+            }
+            if (limits.rituals && ritualsCount !== limits.rituals) {
+                ui.notifications.warn(`Devi selezionare esattamente ${limits.rituals} rituali novizio (selezionati: ${ritualsCount}).`);
+                return false;
+            }
+            if (limits.hexes && hexesCount !== limits.hexes) {
+                ui.notifications.warn(`Devi selezionare esattamente ${limits.hexes} fatture novizio (selezionati: ${hexesCount}).`);
+                return false;
+            }
+            if (limits.invocations && invocationsCount !== limits.invocations) {
+                ui.notifications.warn(`Devi selezionare esattamente ${limits.invocations} invocazioni novizio (selezionati: ${invocationsCount}).`);
+                return false;
+            }
+        }
+
+        // Validate leaving Gear step or entering Finish step
+        if (targetType === "finish" && this._isOverBudget(false)) {
+            ui.notifications.warn("Non puoi proseguire: sei fuori budget per l'equipaggiamento!");
+            return false;
+        }
+
         return true;
     }
 
     _getTemplateForStep(step) {
-        const t = { 
-            1: "race", 
-            2: "background", 
-            3: "profession", 
-            4: "stats", 
-            5: "skills", 
-            6: "gear", 
-            7: "finish" 
-        };
-        return "systems/TheWitcherItaNewSystem/templates/app/wizard/steps/" + t[step] + ".hbs";
+        const mapping = this._getStepMapping();
+        const type = mapping[step]?.type || "finish";
+        return "systems/TheWitcherItaNewSystem/templates/app/wizard/steps/" + type + ".hbs";
     }
 
     _onRender(context, options) {
@@ -1068,6 +1251,69 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
 
     async _updateName(event, target) {
         this.characterData.name = target.value;
+        this.render(true);
+    }
+
+    async _toggleMagicItem(event, target) {
+        const id = target.dataset.itemId;
+        const type = target.dataset.itemType;
+        
+        if (!this.characterData.selectedMagic) {
+            this.characterData.selectedMagic = [];
+        }
+
+        const existingIdx = this.characterData.selectedMagic.findIndex(m => m.id === id);
+        if (existingIdx !== -1) {
+            this.characterData.selectedMagic.splice(existingIdx, 1);
+            this.render(true);
+            return;
+        }
+
+        const limits = this._getMagicLimits();
+        const selected = this.characterData.selectedMagic;
+
+        let fullDoc = null;
+        if (type === "spell") {
+            fullDoc = this.allSpells.find(d => d.id === id);
+        } else if (type === "invocation") {
+            fullDoc = this.allInvocations.find(d => d.id === id);
+        } else if (type === "ritual") {
+            fullDoc = this.allRituals.find(d => d.id === id);
+        } else if (type === "hex") {
+            fullDoc = this.allHexes.find(d => d.id === id);
+        }
+
+        if (!fullDoc) return;
+
+        if (type === "spell") {
+            const count = selected.filter(m => m.type === "spell" && ["Spells", "Mage"].includes(m.system?.class)).length;
+            if (count >= (limits.spells || 0)) {
+                ui.notifications.warn(`Hai già selezionato il numero massimo di incantesimi (${limits.spells}).`);
+                return;
+            }
+        } else if (type === "invocation") {
+            const count = selected.filter(m => m.type === "spell" && m.system?.class === "Invocations").length;
+            if (count >= (limits.invocations || 0)) {
+                ui.notifications.warn(`Hai già selezionato il numero massimo di invocazioni (${limits.invocations}).`);
+                return;
+            }
+        } else if (type === "ritual") {
+            const count = selected.filter(m => m.type === "ritual").length;
+            if (count >= (limits.rituals || 0)) {
+                ui.notifications.warn(`Hai già selezionato il numero massimo di rituali (${limits.rituals}).`);
+                return;
+            }
+        } else if (type === "hex") {
+            const count = selected.filter(m => m.type === "hex").length;
+            if (count >= (limits.hexes || 0)) {
+                ui.notifications.warn(`Hai già selezionato il numero massimo di fatture (${limits.hexes}).`);
+                return;
+            }
+        }
+
+        const cleanObj = fullDoc.toObject ? fullDoc.toObject() : fullDoc;
+        cleanObj.id = cleanObj._id || cleanObj.id;
+        this.characterData.selectedMagic.push(cleanObj);
         this.render(true);
     }
 
@@ -2100,11 +2346,66 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         }
 
         const derived = this._calculateDerivedStats();
+        const intVal = Number(this.characterData.stats.int) || 0;
+        const willVal = Number(this.characterData.stats.will) || 0;
+        const resolveVal = (willVal + intVal) * 5;
+        const focusVal = (willVal + intVal) * 3;
+
         actorData.system.derivedStats = {
+            hp: {
+                value: derived.hp,
+                unmodifiedMax: derived.hp,
+                max: derived.hp
+            },
+            sta: {
+                value: derived.sta,
+                unmodifiedMax: derived.sta,
+                max: derived.sta
+            },
+            rec: {
+                value: derived.rec,
+                unmodifiedMax: derived.rec,
+                max: derived.rec
+            },
+            stun: {
+                value: derived.stun,
+                unmodifiedMax: derived.stun,
+                max: derived.stun
+            },
+            run: {
+                value: derived.run,
+                unmodifiedMax: derived.run,
+                max: derived.run
+            },
+            leap: {
+                value: derived.leap,
+                unmodifiedMax: derived.leap,
+                max: derived.leap
+            },
+            enc: {
+                value: 0,
+                unmodifiedMax: derived.enc,
+                max: derived.enc
+            },
             vigor: {
                 value: derived.vigor,
                 unmodifiedMax: derived.vigor,
                 max: derived.vigor
+            },
+            woundTreshold: {
+                value: derived.rec,
+                unmodifiedMax: derived.rec,
+                max: derived.rec
+            },
+            resolve: {
+                value: resolveVal,
+                unmodifiedMax: resolveVal,
+                max: resolveVal
+            },
+            focus: {
+                value: focusVal,
+                unmodifiedMax: focusVal,
+                max: focusVal
             }
         };
 
@@ -2200,6 +2501,15 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                     itemsToCreate.push(cloned);
                 }
             }
+        }
+
+        if (this.characterData.selectedMagic && this.characterData.selectedMagic.length > 0) {
+            const magicArr = this.characterData.selectedMagic.map(m => {
+                let mData = m.toObject ? m.toObject() : m;
+                const { _id, id, ...mClean } = mData;
+                return foundry.utils.deepClone(mClean);
+            });
+            itemsToCreate.push(...magicArr);
         }
 
         // Collect exact skills from allSkills

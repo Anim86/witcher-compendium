@@ -13,7 +13,7 @@
             </div>
             <div class="form-group character-name-selection">
                 <label>{{localize "WITCHER.Actor.Name"}}</label>
-                <div class="wizard-name-display">{{character.name}}</div>
+                <input type="text" class="wizard-name-input" data-action="updateName" value="{{character.name}}">
             </div>
         </div>
 
@@ -79,6 +79,19 @@
                     {{/each}}
                 </div>
             </div>
+
+            {{#if summary.selectedMagic.length}}
+            <div class="summary-card">
+                <h3>Magia Selezionata</h3>
+                <div class="purchased-gear-list">
+                    {{#each summary.selectedMagic}}
+                    <span class="gear-tag" title="{{labelType}}">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i> <strong>[{{labelType}}]</strong> {{name}}
+                    </span>
+                    {{/each}}
+                </div>
+            </div>
+            {{/if}}
         </div>
     </div>
 

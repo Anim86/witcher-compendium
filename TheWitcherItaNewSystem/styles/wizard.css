@@ -2740,3 +2740,55 @@ form.witcher-wizard .wizard-content {
     transform: translateY(0);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
+
+/* ── Character Name Input & Magic Selection ────────────────────────── */
+.witcher-wizard .wizard-name-input {
+    width: 100%;
+    padding: 8px 12px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--wizard-text-dark) !important;
+    background: rgba(255, 255, 255, 0.45) !important;
+    border: 1px solid var(--wizard-border) !important;
+    border-radius: 4px;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.witcher-wizard .wizard-name-input:focus {
+    background: rgba(255, 255, 255, 0.7) !important;
+    border-color: var(--wizard-accent) !important;
+    box-shadow: 0 0 8px rgba(139, 0, 0, 0.3) !important;
+}
+
+/* Magic Step Styling */
+.witcher-wizard .magic-budget-pill.complete {
+    background: rgba(40, 167, 69, 0.15) !important;
+    border-color: rgba(40, 167, 69, 0.4) !important;
+}
+
+.witcher-wizard .magic-budget-pill.complete span {
+    color: #28a745 !important;
+}
+
+.witcher-wizard .magic-card {
+    transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.witcher-wizard .magic-card:hover {
+    background: rgba(255, 255, 255, 0.08) !important;
+    border-color: var(--wizard-accent) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.witcher-wizard .magic-card.selected {
+    background: rgba(139, 0, 0, 0.08) !important;
+    border-color: var(--wizard-gold) !important;
+    box-shadow: 0 0 10px rgba(184, 134, 11, 0.3), inset 0 0 5px rgba(184, 134, 11, 0.2) !important;
+}
+
+.witcher-wizard .magic-card.selected span {
+    color: var(--wizard-text-light) !important;
+}

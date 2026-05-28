@@ -41,7 +41,7 @@
              <div class="property-row">
                 <label>{{localize "WITCHER.Component.Rarity"}}</label>
                 <select name="system.rarity">
-                    {{#select item.system.rarity}}
+                    {{#select normalizedRarity}}
                         {{#each config.Availability as |name value|}}
                             <option value="{{value}}">{{localize name}}</option>
                         {{/each}}

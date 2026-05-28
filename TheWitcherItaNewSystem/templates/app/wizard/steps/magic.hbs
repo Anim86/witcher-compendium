@@ -1,0 +1,149 @@
+<div class="wizard-step step-magic">
+    <h2>{{localize "WITCHER.Wizard.Step.Magic.Title"}}</h2>
+    <p>Seleziona i tuoi incantesimi, invocazioni, rituali o fatture novizio iniziali in base al tuo retaggio magico.</p>
+
+    <!-- Budget & Limits Card -->
+    <div class="summary-card magic-budget" style="margin-bottom: 20px; background: rgba(0, 0, 0, 0.2); border: 1px solid var(--wizard-border); border-radius: 8px; padding: 15px;">
+        <h3 style="margin-top: 0; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; font-family: 'Outfit', sans-serif; font-size: 1.2rem; color: var(--wizard-text-light);">
+            <span><i class="fa-solid fa-wand-magic-sparkles"></i> Budget Magia</span>
+        </h3>
+        <div class="magic-budget-grids" style="display: flex; gap: 15px; flex-wrap: wrap; width: 100%;">
+            {{#if magic.limits.spells}}
+            <div class="magic-budget-pill {{#if (eq magic.counts.spells magic.limits.spells)}}complete{{/if}}" style="flex: 1; min-width: 150px; background: rgba(161, 140, 209, 0.15); border: 1px solid rgba(161, 140, 209, 0.3); border-radius: 6px; padding: 10px; display: flex; flex-direction: column; align-items: center; transition: all 0.3s ease;">
+                <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; color: #a18cd1; font-weight: bold;">Incantesimi</span>
+                <span style="font-size: 1.6rem; font-weight: bold; margin: 5px 0; color: #a18cd1;">{{magic.counts.spells}} / {{magic.limits.spells}}</span>
+                <span style="font-size: 0.7rem; opacity: 0.7; color: var(--wizard-text-light);">Livello Novizio</span>
+            </div>
+            {{/if}}
+
+            {{#if magic.limits.invocations}}
+            <div class="magic-budget-pill {{#if (eq magic.counts.invocations magic.limits.invocations)}}complete{{/if}}" style="flex: 1; min-width: 150px; background: rgba(251, 194, 235, 0.15); border: 1px solid rgba(251, 194, 235, 0.3); border-radius: 6px; padding: 10px; display: flex; flex-direction: column; align-items: center; transition: all 0.3s ease;">
+                <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; color: #fbc2eb; font-weight: bold;">Invocazioni</span>
+                <span style="font-size: 1.6rem; font-weight: bold; margin: 5px 0; color: #fbc2eb;">{{magic.counts.invocations}} / {{magic.limits.invocations}}</span>
+                <span style="font-size: 0.7rem; opacity: 0.7; color: var(--wizard-text-light);">Livello Novizio</span>
+            </div>
+            {{/if}}
+
+            {{#if magic.limits.rituals}}
+            <div class="magic-budget-pill {{#if (eq magic.counts.rituals magic.limits.rituals)}}complete{{/if}}" style="flex: 1; min-width: 150px; background: rgba(143, 211, 244, 0.15); border: 1px solid rgba(143, 211, 244, 0.3); border-radius: 6px; padding: 10px; display: flex; flex-direction: column; align-items: center; transition: all 0.3s ease;">
+                <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; color: #8fd3f4; font-weight: bold;">Rituali</span>
+                <span style="font-size: 1.6rem; font-weight: bold; margin: 5px 0; color: #8fd3f4;">{{magic.counts.rituals}} / {{magic.limits.rituals}}</span>
+                <span style="font-size: 0.7rem; opacity: 0.7; color: var(--wizard-text-light);">Livello Novizio</span>
+            </div>
+            {{/if}}
+
+            {{#if magic.limits.hexes}}
+            <div class="magic-budget-pill {{#if (eq magic.counts.hexes magic.limits.hexes)}}complete{{/if}}" style="flex: 1; min-width: 150px; background: rgba(255, 129, 119, 0.15); border: 1px solid rgba(255, 129, 119, 0.3); border-radius: 6px; padding: 10px; display: flex; flex-direction: column; align-items: center; transition: all 0.3s ease;">
+                <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; color: #ff8177; font-weight: bold;">Fatture</span>
+                <span style="font-size: 1.6rem; font-weight: bold; margin: 5px 0; color: #ff8177;">{{magic.counts.hexes}} / {{magic.limits.hexes}}</span>
+                <span style="font-size: 0.7rem; opacity: 0.7; color: var(--wizard-text-light);">Livello Novizio</span>
+            </div>
+            {{/if}}
+        </div>
+    </div>
+
+    <!-- Lists of Magic Items -->
+    <div class="magic-selection-container" style="max-height: 380px; overflow-y: auto; padding-right: 5px; scrollbar-width: thin;">
+        
+        {{#if magic.limits.spells}}
+        <div class="magic-category-section" style="margin-bottom: 25px;">
+            <h3 style="border-bottom: 2px solid #a18cd1; padding-bottom: 5px; color: #a18cd1; margin-bottom: 12px; font-family: 'Outfit', sans-serif; font-size: 1.1rem; display: flex; align-items: center; gap: 8px;">
+                <i class="fa-solid fa-sparkles"></i> Incantesimi Novizio
+            </h3>
+            <div class="magic-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px;">
+                {{#each magic.spells}}
+                <div class="magic-card selector-card {{#if selected}}selected{{/if}}" 
+                     data-action="toggleMagicItem" data-item-id="{{id}}" data-item-type="spell"
+                     style="display: flex; align-items: center; gap: 10px; background: rgba(255, 255, 255, 0.03); border: 1px solid var(--wizard-border); border-radius: 6px; padding: 8px; cursor: pointer; position: relative; transition: all 0.2s;"
+                     title="{{system.effect}}">
+                    <img src="{{img}}" alt="{{name}}" style="width: 36px; height: 36px; border-radius: 4px; object-fit: cover;">
+                    <div style="flex: 1; display: flex; flex-direction: column; overflow: hidden; white-space: nowrap;">
+                        <span style="font-weight: bold; color: var(--wizard-text-light); text-overflow: ellipsis; overflow: hidden;">{{name}}</span>
+                        <span style="font-size: 0.7rem; opacity: 0.6; color: var(--wizard-text-light);">{{system.source}} | STAMINA: {{system.stamina}}</span>
+                    </div>
+                    {{#if selected}}
+                    <div style="color: #a18cd1; font-size: 1.1rem;"><i class="fa-solid fa-circle-check"></i></div>
+                    {{/if}}
+                </div>
+                {{/each}}
+            </div>
+        </div>
+        {{/if}}
+
+        {{#if magic.limits.invocations}}
+        <div class="magic-category-section" style="margin-bottom: 25px;">
+            <h3 style="border-bottom: 2px solid #fbc2eb; padding-bottom: 5px; color: #fbc2eb; margin-bottom: 12px; font-family: 'Outfit', sans-serif; font-size: 1.1rem; display: flex; align-items: center; gap: 8px;">
+                <i class="fa-solid fa-pray"></i> Invocazioni Novizio
+            </h3>
+            <div class="magic-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px;">
+                {{#each magic.invocations}}
+                <div class="magic-card selector-card {{#if selected}}selected{{/if}}" 
+                     data-action="toggleMagicItem" data-item-id="{{id}}" data-item-type="invocation"
+                     style="display: flex; align-items: center; gap: 10px; background: rgba(255, 255, 255, 0.03); border: 1px solid var(--wizard-border); border-radius: 6px; padding: 8px; cursor: pointer; position: relative; transition: all 0.2s;"
+                     title="{{system.effect}}">
+                    <img src="{{img}}" alt="{{name}}" style="width: 36px; height: 36px; border-radius: 4px; object-fit: cover;">
+                    <div style="flex: 1; display: flex; flex-direction: column; overflow: hidden; white-space: nowrap;">
+                        <span style="font-weight: bold; color: var(--wizard-text-light); text-overflow: ellipsis; overflow: hidden;">{{name}}</span>
+                        <span style="font-size: 0.7rem; opacity: 0.6; color: var(--wizard-text-light);">STAMINA: {{system.stamina}}</span>
+                    </div>
+                    {{#if selected}}
+                    <div style="color: #fbc2eb; font-size: 1.1rem;"><i class="fa-solid fa-circle-check"></i></div>
+                    {{/if}}
+                </div>
+                {{/each}}
+            </div>
+        </div>
+        {{/if}}
+
+        {{#if magic.limits.rituals}}
+        <div class="magic-category-section" style="margin-bottom: 25px;">
+            <h3 style="border-bottom: 2px solid #8fd3f4; padding-bottom: 5px; color: #8fd3f4; margin-bottom: 12px; font-family: 'Outfit', sans-serif; font-size: 1.1rem; display: flex; align-items: center; gap: 8px;">
+                <i class="fa-solid fa-circle-nodes"></i> Rituali Novizio
+            </h3>
+            <div class="magic-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px;">
+                {{#each magic.rituals}}
+                <div class="magic-card selector-card {{#if selected}}selected{{/if}}" 
+                     data-action="toggleMagicItem" data-item-id="{{id}}" data-item-type="ritual"
+                     style="display: flex; align-items: center; gap: 10px; background: rgba(255, 255, 255, 0.03); border: 1px solid var(--wizard-border); border-radius: 6px; padding: 8px; cursor: pointer; position: relative; transition: all 0.2s;"
+                     title="{{system.effect}}">
+                    <img src="{{img}}" alt="{{name}}" style="width: 36px; height: 36px; border-radius: 4px; object-fit: cover;">
+                    <div style="flex: 1; display: flex; flex-direction: column; overflow: hidden; white-space: nowrap;">
+                        <span style="font-weight: bold; color: var(--wizard-text-light); text-overflow: ellipsis; overflow: hidden;">{{name}}</span>
+                        <span style="font-size: 0.7rem; opacity: 0.6; color: var(--wizard-text-light);">STAMINA: {{system.stamina}} | CD: {{system.difficultyCheck}}</span>
+                    </div>
+                    {{#if selected}}
+                    <div style="color: #8fd3f4; font-size: 1.1rem;"><i class="fa-solid fa-circle-check"></i></div>
+                    {{/if}}
+                </div>
+                {{/each}}
+            </div>
+        </div>
+        {{/if}}
+
+        {{#if magic.limits.hexes}}
+        <div class="magic-category-section" style="margin-bottom: 25px;">
+            <h3 style="border-bottom: 2px solid #ff8177; padding-bottom: 5px; color: #ff8177; margin-bottom: 12px; font-family: 'Outfit', sans-serif; font-size: 1.1rem; display: flex; align-items: center; gap: 8px;">
+                <i class="fa-solid fa-skull"></i> Fatture Novizio
+            </h3>
+            <div class="magic-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 10px;">
+                {{#each magic.hexes}}
+                <div class="magic-card selector-card {{#if selected}}selected{{/if}}" 
+                     data-action="toggleMagicItem" data-item-id="{{id}}" data-item-type="hex"
+                     style="display: flex; align-items: center; gap: 10px; background: rgba(255, 255, 255, 0.03); border: 1px solid var(--wizard-border); border-radius: 6px; padding: 8px; cursor: pointer; position: relative; transition: all 0.2s;"
+                     title="{{system.effect}}">
+                    <img src="{{img}}" alt="{{name}}" style="width: 36px; height: 36px; border-radius: 4px; object-fit: cover;">
+                    <div style="flex: 1; display: flex; flex-direction: column; overflow: hidden; white-space: nowrap;">
+                        <span style="font-weight: bold; color: var(--wizard-text-light); text-overflow: ellipsis; overflow: hidden;">{{name}}</span>
+                        <span style="font-size: 0.7rem; opacity: 0.6; color: var(--wizard-text-light);">STAMINA: {{system.stamina}}</span>
+                    </div>
+                    {{#if selected}}
+                    <div style="color: #ff8177; font-size: 1.1rem;"><i class="fa-solid fa-circle-check"></i></div>
+                    {{/if}}
+                </div>
+                {{/each}}
+            </div>
+        </div>
+        {{/if}}
+
+    </div>
+</div>
