@@ -1,7 +1,7 @@
 <nav class="wizard-navigation">
     {{#each steps}}
-    <div class="nav-item {{#if active}}active{{/if}} {{#if complete}}completed{{/if}}" 
-         data-action="goToStep" data-step="{{id}}">
+    <div class="nav-item {{#if active}}active{{/if}} {{#if complete}}completed{{/if}} {{#if disabled}}disabled{{/if}}" 
+         {{#unless disabled}}data-action="goToStep" data-step="{{id}}"{{/unless}}>
         <div class="nav-icon-container">
             <i class="{{icon}}"></i>
         </div>

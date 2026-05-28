@@ -891,14 +891,43 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             { label: "WITCHER.Wizard.Step.Gear.Title", icon: "fa-solid fa-bag-shopping" },
             { label: "WITCHER.Wizard.Step.Finalize.Title", icon: "fa-solid fa-check-double" }
         ];
+        const raceSelected = !!this.characterData.race;
+        const professionSelected = !!this.characterData.profession;
         return steps.map((s, i) => ({
             id: i + 1,
             number: i + 1,
             label: s.label,
             icon: s.icon,
             active: this.step === i + 1,
-            complete: this.step > i + 1
+            complete: this.step > i + 1,
+            disabled: (!raceSelected && i + 1 > 1) || (!professionSelected && i + 1 > 3)
         }));
+    }
+
+    _canGoToStep(step) {
+        if (step > 1 && !this.characterData.race) {
+            ui.notifications.warn("Seleziona una razza prima di proseguire.");
+            return false;
+        }
+        if (step >= 3) {
+            const missingGender = !this.characterData.gender;
+            const missingHomeland = !this.characterData.homeland;
+            if (missingGender || missingHomeland) {
+                if (missingGender && missingHomeland) {
+                    ui.notifications.warn("Seleziona genere e patria prima di proseguire.");
+                } else if (missingGender) {
+                    ui.notifications.warn("Seleziona il genere prima di proseguire.");
+                } else {
+                    ui.notifications.warn("Seleziona la patria prima di proseguire.");
+                }
+                return false;
+            }
+        }
+        if (step >= 4 && !this.characterData.profession) {
+            ui.notifications.warn("Seleziona una professione prima di proseguire.");
+            return false;
+        }
+        return true;
     }
 
     _getTemplateForStep(step) {
@@ -950,9 +979,10 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         }
     }
 
-    async _nextStep() { if (this.step < this.maxSteps) { this.step++; this.render(true); } }
+    async _nextStep() { if (this.step < this.maxSteps && this._canGoToStep(this.step + 1)) { this.step++; this.render(true); } }
     async _prevStep() { if (this.step > 1) { this.step--; this.render(true); } }
 
+    async _goToStep(event, target) { const step = parseInt(target.dataset.step); if (!this._canGoToStep(step)) return; this.step = step; this.render(true); }
 
     async _updateOriginRegion(event, target) {
         this.characterData.originRegion = target.value;
@@ -1064,7 +1094,6 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
     }
 
     async _updateMoney(event, target) { this.characterData.money = parseInt(target.value); this.render(true); }
-    async _goToStep(event, target) { this.step = parseInt(target.dataset.step); this.render(true); }
     
     _toggleProfessionGear(event, target) {
         const id = target.dataset.itemId;

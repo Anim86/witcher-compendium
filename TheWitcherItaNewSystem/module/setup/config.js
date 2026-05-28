@@ -603,6 +603,40 @@ WITCHER.genders = {
     other: 'WITCHER.Actor.Gender.Other'
 };
 
+// Homelands (Patrie) - valori esatti dalla tabella del compendio (patria.json)
+WITCHER.homelands = {
+    // Regni Settentrionali (north)
+    "Aedirn": "WITCHER.Homeland.Aedirn",
+    "Cidaris": "WITCHER.Homeland.Cidaris",
+    "Cintra": "WITCHER.Homeland.Cintra",
+    "Kaedwen": "WITCHER.Homeland.Kaedwen",
+    "Kovir": "WITCHER.Homeland.Kovir",
+    "Lyria": "WITCHER.Homeland.Lyria",
+    "Poviss": "WITCHER.Homeland.Poviss",
+    "Redania": "WITCHER.Homeland.Redania",
+    "Rivia": "WITCHER.Homeland.Rivia",
+    "Skellige": "WITCHER.Homeland.Skellige",
+    "Temeria": "WITCHER.Homeland.Temeria",
+    "Verden": "WITCHER.Homeland.Verden",
+    // Nilfgaard (nilfgaard)
+    "Angren": "WITCHER.Homeland.Angren",
+    "Ebbing": "WITCHER.Homeland.Ebbing",
+    "Etolia": "WITCHER.Homeland.Etolia",
+    "Gemmera": "WITCHER.Homeland.Gemmera",
+    "Geso": "WITCHER.Homeland.Geso",
+    "Maecht": "WITCHER.Homeland.Maecht",
+    "Mag Turga": "WITCHER.Homeland.MagTurga",
+    "Metinna": "WITCHER.Homeland.Metinna",
+    "Nazair": "WITCHER.Homeland.Nazair",
+    "Il Cuore di Nilfgaard": "WITCHER.Homeland.IlCuoreDiNilfgaard",
+    "Vicovaro": "WITCHER.Homeland.Vicovaro",
+    // Terre degli Antichi (elder)
+    "Dol Blathanna": "WITCHER.Homeland.DolBlathanna",
+    "Mahakam": "WITCHER.Homeland.Mahakam",
+    // Altro
+    "other": "WITCHER.Homeland.Other"
+};
+
 //Items
 WITCHER.currency = {
     crown: 'WITCHER.Currency.crown'

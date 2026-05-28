@@ -60,6 +60,17 @@
     min-width: 80px;
 }
 
+.witcher-wizard .nav-item.disabled {
+    cursor: default;
+    opacity: 0.45;
+}
+
+.witcher-wizard .nav-item.disabled:hover .nav-icon-container,
+.witcher-wizard .nav-item.disabled:hover .nav-label-container {
+    transform: none;
+    opacity: 0.45;
+}
+
 .witcher-wizard .nav-icon-container {
     width: 36px;
     height: 36px;

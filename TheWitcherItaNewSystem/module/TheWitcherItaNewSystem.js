@@ -34,6 +34,11 @@ Hooks.once('init', function () {
     console.log('TheWitcherItaNewSystem | Supported Languages:', CONFIG.supportedLanguages);
     console.log('TheWitcherItaNewSystem | Current Lang:', game.i18n.lang);
 
+    if (!Object.keys(CONFIG.supportedLanguages).includes('it')) {
+        console.warn('TheWitcherItaNewSystem | Italian language not registered, adding fallback.');
+        CONFIG.supportedLanguages['it'] = 'Italiano';
+    }
+
     CONFIG.WITCHER = WITCHER;
     CONFIG.statusEffects = CONFIG.WITCHER.statusEffects;
     CONFIG.Item.documentClass = WitcherItem;
