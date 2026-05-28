@@ -41,6 +41,20 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             selectedProfessionGear: []
         };
 
+        this.gearCategoryVisibility = {
+            weapons: false,
+            armor: false,
+            equipment: false
+        };
+
+        this.gearFilterText = {
+            weapons: "",
+            armor: "",
+            equipment: ""
+        };
+
+        this.startingGoldRolled = false;
+
         // Cache for compendium data
         this.races = [];
         this.professions = [];
@@ -118,6 +132,8 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         switchSkillTab: function(event, target) { this._switchSkillTab(event, target); },
         toggleGnomeSkill: function(event, target) { this._toggleGnomeSkill(event, target); },
         toggleProfessionGear: function(event, target) { this._toggleProfessionGear(event, target); },
+        randomProfessionGear: function(event, target) { this._randomProfessionGear(event, target); },
+        toggleGearCategory: function(event, target) { this._toggleGearCategory(event, target); },
         rollAllSkills: function(event, target) { this._rollAllSkills(event, target); },
         rollStartingGold: function(event, target) { this._rollStartingGold(event, target); }
     };
@@ -495,12 +511,15 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                     armor: (this.armor || []).filter(i => (i.system?.cost || 0) > 0).map(sanitizeItem),
                     equipment: (this.gear || []).filter(i => (i.system?.cost || 0) > 0).map(sanitizeItem)
                 },
+                gearCategoryVisibility: this.gearCategoryVisibility,
+                gearFilterText: this.gearFilterText,
                 gearCost: gearCost,
                 professionGearList: professionGearList,
                 professionGearRemaining: professionGearRemaining,
                 professionGearChoose: gearConfig?.choose || 0,
                 isOverBudget: isOverBudget,
                 isOverBudgetPickup: isOverBudgetPickup,
+                startingGoldRolled: this.startingGoldRolled,
                 professionGear: this.characterData.profession?.system?.notes || "",
                 summary: this._getSummaryContext()
             };
@@ -999,6 +1018,15 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             }
         });
 
+        html.find(".gear-list-filter").on("input", (event) => {
+            const input = event.currentTarget;
+            const category = input.dataset.category;
+            this.gearFilterText[category] = input.value;
+            this._applyGearFilters();
+        });
+
+        this._applyGearFilters();
+
         if (this._scrollPos) {
             const pos = this._scrollPos;
             requestAnimationFrame(() => {
@@ -1145,6 +1173,31 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         this.render(true);
     }
 
+    _randomProfessionGear(event, target) {
+        const profName = this.characterData.profession?.name;
+        const gearConfig = this.constructor.PROFESSION_GEAR_MAP[profName];
+        if (!gearConfig || !gearConfig.items?.length) {
+            ui.notifications.warn("Nessuna dotazione casuale disponibile per questa professione.");
+            return;
+        }
+
+        const searchPacks = [...(this.weapons || []), ...(this.armor || []), ...(this.gear || [])];
+        const findItem = (name) => {
+            const cleanName = name.toLowerCase().replace(/[^a-z0-9]/g, '');
+            return searchPacks.find(i => i.name.toLowerCase().replace(/[^a-z0-9]/g, '').includes(cleanName));
+        };
+
+        const choices = gearConfig.items.map(name => {
+            const item = findItem(name);
+            return { id: item?.id || name, name };
+        });
+
+        const shuffled = choices.slice().sort(() => Math.random() - 0.5);
+        const selected = shuffled.slice(0, gearConfig.choose || 0).map(entry => entry.id);
+        this.characterData.selectedProfessionGear = selected;
+        this.render(true);
+    }
+
     _switchSkillTab(event, target) { 
         this.activeSkillTab = target.dataset.tab; 
         this.render(true);
@@ -1191,23 +1244,6 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             
             // Reset old profession gear
             this.characterData.selectedProfessionGear = [];
-            
-            // Pre-select first 5 (or choose amount) for non-Witcher
-            const gearConfig = this.constructor.PROFESSION_GEAR_MAP[prof.name];
-            if (gearConfig && prof.name !== "Witcher") {
-                const searchPacks = [...(this.weapons || []), ...(this.armor || []), ...(this.gear || [])];
-                const findItem = (name) => {
-                    const cleanName = name.toLowerCase().replace(/[^a-z0-9]/g, '');
-                    const item = searchPacks.find(i => i.name.toLowerCase().replace(/[^a-z0-9]/g, '').includes(cleanName));
-                    return item;
-                };
-                
-                for (let i = 0; i < Math.min(gearConfig.choose || 0, gearConfig.items.length); i++) {
-                    const item = findItem(gearConfig.items[i]);
-                    if (item) this.characterData.selectedProfessionGear.push(item.id);
-                    else this.characterData.selectedProfessionGear.push(gearConfig.items[i]);
-                }
-            }
 
             this.characterData.profession = prof;
             if (prof.img) this.characterData.img = prof.img;
@@ -1523,10 +1559,11 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             const roll1 = Math.floor(Math.random() * 6) + 1;
             const roll2 = Math.floor(Math.random() * 6) + 1;
             this.characterData.money = (roll1 + roll2) * multiplier;
+            this.startingGoldRolled = true;
             this.render(true);
             ui.notifications.info(`Hai tirato ${roll1} e ${roll2}. (Somma: ${roll1+roll2}) x ${multiplier} = ${this.characterData.money} Corone.`);
         } else {
-            ui.notifications.warn("Seleziona una professione valida per calcolare l'oro iniziale.");
+            ui.notifications.warn("Seleziona una professione valida per calcolare le Corone iniziali.");
         }
     }
 
@@ -1826,13 +1863,42 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         const id = target.dataset.itemId;
         const type = target.dataset.itemType;
         const idx = this.characterData.gear.findIndex(g => g.id === id || g._id === id);
-        if (idx > -1) { this.characterData.gear.splice(idx, 1); }
-        else {
+        if (idx > -1) {
+            this.characterData.gear.splice(idx, 1);
+        } else {
             const src = type === "weapon" ? this.weapons : (type === "armor" ? this.armor : this.gear);
             const item = src.find(i => i.id === id || i._id === id);
-            if (item) this.characterData.gear.push(item.toObject ? item.toObject() : item);
+            if (item) {
+                const cost = Number(item.system?.cost?.value || item.system?.cost || 0);
+                const currentCost = this.characterData.gear.reduce((acc, g) => acc + Number(g.system?.cost?.value || g.system?.cost || 0), 0);
+                const budget = Number(this.characterData.money) || 0;
+                if (currentCost + cost > budget) {
+                    ui.notifications.warn("Il costo totale supera le Corone possedute. Rimuovi un oggetto o aumenta il budget prima di aggiungere questo elemento.");
+                    return;
+                }
+                this.characterData.gear.push(item.toObject ? item.toObject() : item);
+            }
         }
         this.render(true);
+    }
+
+    _toggleGearCategory(event, target) {
+        const category = target.dataset.category;
+        if (!category || !(category in this.gearCategoryVisibility)) return;
+        this.gearCategoryVisibility[category] = !this.gearCategoryVisibility[category];
+        this.render(true);
+    }
+
+    _applyGearFilters() {
+        if (!this.element) return;
+        Object.entries(this.gearFilterText).forEach(([category, query]) => {
+            const normalized = (query || "").toLowerCase();
+            const items = this.element.querySelectorAll(`.gear-category[data-category="${category}"] .gear-item`);
+            items.forEach(item => {
+                const text = item.textContent.toLowerCase();
+                item.style.display = text.includes(normalized) ? "" : "none";
+            });
+        });
     }
 
     _hasResults(t) {

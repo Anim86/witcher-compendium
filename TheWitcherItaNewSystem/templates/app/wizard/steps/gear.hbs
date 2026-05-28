@@ -4,10 +4,13 @@
     
     <!-- Dotazione della Professione -->
     <div class="summary-card profession-dotazione">
-        <h3>
-            {{localize "WITCHER.Wizard.Gear.InitialGear"}} 
+        <h3 class="profession-gear-title">
+            <span>{{localize "WITCHER.Wizard.Gear.InitialGear"}}</span>
             {{#if (gt professionGearChoose 0)}}
             <span class="choose-hint">(Scegli {{professionGearChoose}} - Rimasti: {{professionGearRemaining}})</span>
+            <button type="button" class="ctrl-btn profession-random-btn" data-action="randomProfessionGear" title="Selezione casuale">
+                <i class="fa-solid fa-dice"></i>
+            </button>
             {{/if}}
         </h3>
         
@@ -31,8 +34,8 @@
         <h3 style="color: #b8860b; border-bottom: 1px solid #eee8aa; display: flex; align-items: center; justify-content: space-between; margin-top: 0; padding-bottom: 8px;">
             <span><i class="fa-solid fa-coins"></i> Corone Iniziali</span>
             {{#if character.profession}}
-            <button type="button" data-action="rollStartingGold" class="ctrl-btn" style="background: #b8860b; color: white; width: auto; height: auto; padding: 6px 12px; font-family: 'Outfit', sans-serif; font-weight: bold; border: none; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.2); transition: transform 0.2s, background 0.2s;">
-                <i class="fa-solid fa-dice-d6"></i> Tira Oro ({{character.profession.name}})
+            <button type="button" data-action="rollStartingGold" class="ctrl-btn" style="background: #b8860b; color: white; width: auto; height: auto; padding: 6px 12px; font-family: 'Outfit', sans-serif; font-weight: bold; border: none; border-radius: 4px; box-shadow: 0 2px 4px rgba(0,0,0,0.2); transition: transform 0.2s, background 0.2s;" {{#if startingGoldRolled}}disabled{{/if}}>
+                <i class="fa-solid fa-dice-d6"></i> Tira Corone
             </button>
             {{/if}}
         </h3>
@@ -51,45 +54,75 @@
 
     <div class="gear-container">
         <div class="gear-categories">
-            <div class="gear-category">
-                <h3>{{localize "WITCHER.Loot.Weapons"}}</h3>
-                <div class="gear-list">
-                    {{#each allGear.weapons}}
-                    <div class="gear-item {{#if selected}}selected{{/if}}" 
-                         data-action="toggleGear" data-item-id="{{_id}}" data-item-type="weapon">
-                        <img src="{{img}}" alt="{{name}}">
-                        <span class="name">{{name}}</span>
-                        <span class="cost">{{#if system.cost.value}}{{system.cost.value}}{{else}}{{system.cost}}{{/if}} Corone</span>
+            <div class="gear-category" data-category="weapons">
+                <div class="gear-category-header">
+                    <h3>{{localize "WITCHER.Loot.Weapons"}}</h3>
+                    <button type="button" class="ctrl-btn gear-toggle-btn" data-action="toggleGearCategory" data-category="weapons" aria-label="Apri chiudi armi">
+                        {{#if gearCategoryVisibility.weapons}}−{{else}}+{{/if}}
+                    </button>
+                </div>
+                <div class="gear-category-body {{#unless gearCategoryVisibility.weapons}}collapsed{{/unless}}">
+                    <div class="gear-filter">
+                        <input type="text" class="gear-list-filter" data-category="weapons" placeholder="Filtra armi..." value="{{gearFilterText.weapons}}">
                     </div>
-                    {{/each}}
+                    <div class="gear-list">
+                        {{#each allGear.weapons}}
+                        <div class="gear-item {{#if selected}}selected{{/if}}" 
+                             data-action="toggleGear" data-item-id="{{_id}}" data-item-type="weapon">
+                            <img src="{{img}}" alt="{{name}}">
+                            <span class="name">{{name}}</span>
+                            <span class="cost">{{#if system.cost.value}}{{system.cost.value}}{{else}}{{system.cost}}{{/if}} Corone</span>
+                        </div>
+                        {{/each}}
+                    </div>
                 </div>
             </div>
 
-            <div class="gear-category">
-                <h3>{{localize "WITCHER.Loot.Armors"}}</h3>
-                <div class="gear-list">
-                    {{#each allGear.armor}}
-                    <div class="gear-item {{#if selected}}selected{{/if}}" 
-                         data-action="toggleGear" data-item-id="{{_id}}" data-item-type="armor">
-                        <img src="{{img}}" alt="{{name}}">
-                        <span class="name">{{name}}</span>
-                        <span class="cost">{{#if system.cost.value}}{{system.cost.value}}{{else}}{{system.cost}}{{/if}} Corone</span>
+            <div class="gear-category" data-category="armor">
+                <div class="gear-category-header">
+                    <h3>{{localize "WITCHER.Loot.Armors"}}</h3>
+                    <button type="button" class="ctrl-btn gear-toggle-btn" data-action="toggleGearCategory" data-category="armor" aria-label="Apri chiudi armature">
+                        {{#if gearCategoryVisibility.armor}}−{{else}}+{{/if}}
+                    </button>
+                </div>
+                <div class="gear-category-body {{#unless gearCategoryVisibility.armor}}collapsed{{/unless}}">
+                    <div class="gear-filter">
+                        <input type="text" class="gear-list-filter" data-category="armor" placeholder="Filtra armature..." value="{{gearFilterText.armor}}">
                     </div>
-                    {{/each}}
+                    <div class="gear-list">
+                        {{#each allGear.armor}}
+                        <div class="gear-item {{#if selected}}selected{{/if}}" 
+                             data-action="toggleGear" data-item-id="{{_id}}" data-item-type="armor">
+                            <img src="{{img}}" alt="{{name}}">
+                            <span class="name">{{name}}</span>
+                            <span class="cost">{{#if system.cost.value}}{{system.cost.value}}{{else}}{{system.cost}}{{/if}} Corone</span>
+                        </div>
+                        {{/each}}
+                    </div>
                 </div>
             </div>
 
-            <div class="gear-category">
-                <h3>{{localize "WITCHER.Loot.Valuables"}}</h3>
-                <div class="gear-list">
-                    {{#each allGear.equipment}}
-                    <div class="gear-item {{#if selected}}selected{{/if}}" 
-                         data-action="toggleGear" data-item-id="{{_id}}" data-item-type="equipment">
-                        <img src="{{img}}" alt="{{name}}">
-                        <span class="name">{{name}}</span>
-                        <span class="cost">{{#if system.cost.value}}{{system.cost.value}}{{else}}{{system.cost}}{{/if}} Corone</span>
+            <div class="gear-category" data-category="equipment">
+                <div class="gear-category-header">
+                    <h3>{{localize "WITCHER.Loot.Valuables"}}</h3>
+                    <button type="button" class="ctrl-btn gear-toggle-btn" data-action="toggleGearCategory" data-category="equipment" aria-label="Apri chiudi oggetti">
+                        {{#if gearCategoryVisibility.equipment}}−{{else}}+{{/if}}
+                    </button>
+                </div>
+                <div class="gear-category-body {{#unless gearCategoryVisibility.equipment}}collapsed{{/unless}}">
+                    <div class="gear-filter">
+                        <input type="text" class="gear-list-filter" data-category="equipment" placeholder="Filtra oggetti..." value="{{gearFilterText.equipment}}">
                     </div>
-                    {{/each}}
+                    <div class="gear-list">
+                        {{#each allGear.equipment}}
+                        <div class="gear-item {{#if selected}}selected{{/if}}" 
+                             data-action="toggleGear" data-item-id="{{_id}}" data-item-type="equipment">
+                            <img src="{{img}}" alt="{{name}}">
+                            <span class="name">{{name}}</span>
+                            <span class="cost">{{#if system.cost.value}}{{system.cost.value}}{{else}}{{system.cost}}{{/if}} Corone</span>
+                        </div>
+                        {{/each}}
+                    </div>
                 </div>
             </div>
         </div>

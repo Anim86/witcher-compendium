@@ -1274,6 +1274,58 @@ form.witcher-wizard .wizard-content {
     color: var(--wizard-accent);
 }
 
+.witcher-wizard .gear-category-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.witcher-wizard .gear-toggle-btn {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+    padding: 0;
+    font-size: 1.35rem;
+    font-weight: 700;
+    line-height: 1;
+    border-radius: 50%;
+    background: #f5f0dc;
+    color: #5a2e00;
+    border: 1px solid rgba(102, 85, 68, 0.35);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.12);
+    transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.witcher-wizard .gear-toggle-btn:hover {
+    background: #e5d4aa;
+    transform: translateY(-1px);
+    box-shadow: 0 3px 7px rgba(0,0,0,0.18);
+}
+
+.witcher-wizard .gear-toggle-btn:active {
+    transform: translateY(0);
+}
+
+.witcher-wizard .gear-category-body.collapsed .gear-list,
+.witcher-wizard .gear-category-body.collapsed .gear-filter {
+    display: none;
+}
+
+.witcher-wizard .gear-filter {
+    margin-bottom: 12px;
+}
+
+.witcher-wizard .gear-filter input {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid var(--wizard-border);
+    border-radius: 6px;
+    background: rgba(255,255,255,0.9);
+    color: var(--wizard-text-dark);
+}
+
 .witcher-wizard .gear-list {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
@@ -1437,9 +1489,9 @@ form.witcher-wizard .gear-item img {
 /* Stilizzazione Dotazione e Tag */
 /* -- Step 6: Professional Gear Formatting ------------ */
 .witcher-wizard .profession-gear-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
     margin-top: 10px;
 }
 
@@ -1454,6 +1506,7 @@ form.witcher-wizard .gear-item img {
     cursor: pointer;
     transition: all 0.2s ease;
     opacity: 1 !important;
+    min-height: 52px;
 }
 
 .witcher-wizard .gear-item-mini img {
@@ -1475,6 +1528,38 @@ form.witcher-wizard .gear-item img {
 .witcher-wizard .gear-item-mini .name {
     font-weight: 600;
     font-size: 0.9rem;
+}
+
+.witcher-wizard .profession-gear-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.witcher-wizard .profession-random-btn {
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+    padding: 0;
+    border-radius: 50%;
+    background: #f8f0d6;
+    color: #5a2e00;
+    border: 1px solid rgba(102,85,68,0.35);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.95rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.12);
+}
+
+.witcher-wizard .profession-random-btn:hover {
+    background: #eedcaa;
+}
+
+.witcher-wizard .profession-random-btn:active {
+    transform: translateY(1px);
 }
 
 .witcher-wizard .gear-tag {
