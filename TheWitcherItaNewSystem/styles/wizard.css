@@ -1548,7 +1548,7 @@ form.witcher-wizard .wizard-content {
 
 .witcher-wizard .step-skills .skill-row {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     padding: 8px 12px;
     background: rgba(255, 255, 255, 0.85);
@@ -1557,8 +1557,35 @@ form.witcher-wizard .wizard-content {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     transition: all 0.2s ease;
     gap: 8px;
-    min-height: 66px;
+    min-height: auto;
     box-sizing: border-box;
+}
+
+.witcher-wizard .step-skills .skill-sub-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.witcher-wizard .step-skills .skill-bottom-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.witcher-wizard .step-skills .skill-label {
+    width: 100%;
+}
+
+.witcher-wizard .step-skills .skill-controls {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex-wrap: wrap;
 }
 
 .witcher-wizard .step-skills .skill-row:hover {

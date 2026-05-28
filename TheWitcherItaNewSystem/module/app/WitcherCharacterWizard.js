@@ -74,6 +74,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         "Medico": { choose: 5, items: ["Polvere coagulante", "Fluido sterilizzante", "Erbe anestetiche", "Strumenti chirurgici", "Cronista", "Clessidra", "Candele", "Coperta", "Tenda", "Pugnale"] },
         "Mercante": { choose: 3, items: ["Cronista", "Utensili da mercante", "Tenda", "Diario", "Balestra", "Pugnale", "Carro", "Mulo"] },
         "Prete": { choose: 5, items: ["Simbolo sacro", "Fluido sterilizzante", "Attrezzatura alchemica", "Strumenti chirurgici", "Borsello", "Pugnale", "Bastone", "Polvere coagulante", "Erbe anestetiche", "100 corone in componenti"] },
+        "Druido": { choose: 5, items: ["Bastone", "Sacco", "Borsello", "Attrezzatura alchemica", "Clessidra", "Lanterna", "Erbe Anestetiche", "Fodero da Giarrettiera"] },
         "Witcher": { 
             always: ["Medaglione dei witcher", "Spada d'Arme", "Spada d'Argento", "Formula per pozioni", "Formula per unguenti", "Formula per decotto", "Gambesone a Doppia Trama", "Coltello da Lancio"],
             choose: 2, 
@@ -610,8 +611,38 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         return names;
     }
 
+    _normalizeSkillKey(keyOrName) {
+        if (!keyOrName) return keyOrName;
+        const normalized = keyOrName.toString().trim().toLowerCase();
+        const legacyAliases = {
+            wildernesssurvival: 'wilderness',
+            commonspeech: 'commonspeech',
+            elderspeech: 'eldersp',
+            dwarvenspeech: 'dwarven',
+            monsterlore: 'monster',
+            socialetiquette: 'socialetq',
+            dodgeescape: 'dodge',
+            sleightofhand: 'sleight',
+            firstaid: 'firstaid',
+            prontosoccorso: 'firstaid',
+            primosoccorso: 'firstaid',
+            picklock: 'picklock',
+            trapcrafting: 'trapcraft',
+            finearts: 'finearts',
+            groomingandstyle: 'grooming',
+            humanperception: 'perception',
+            resistcoercion: 'resistcoerc',
+            resistmagic: 'resistmagic',
+            hexweaving: 'hexweave',
+            spellcasting: 'spellcast',
+            ritualcrafting: 'ritcraft'
+        };
+        return legacyAliases[normalized] || normalized;
+    }
+
     _findSkillByKeyOrName(keyOrName) {
         if (!keyOrName) return null;
+        keyOrName = this._normalizeSkillKey(keyOrName);
         const lowerKeyOrName = keyOrName.toLowerCase();
 
         // 1. Try to find entry in CONFIG.WITCHER.skillMap by key or by entry.name
