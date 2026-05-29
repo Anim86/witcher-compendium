@@ -1528,6 +1528,7 @@ form.witcher-wizard .gear-item img {
 /* -- Step 6: Professional Gear Formatting ------------ */
 .witcher-wizard .profession-dotazione {
     position: relative;
+    flex: 0 0 auto;
     padding: 16px 18px 18px;
     overflow: hidden;
     background:

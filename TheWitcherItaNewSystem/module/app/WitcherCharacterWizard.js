@@ -837,6 +837,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             .toLowerCase()
             .normalize("NFD")
             .replace(/[\u0300-\u036f]/g, "")
+            .replace(/^linguaggio:\s*/, "")
             .replace(/\s*\(\d+\)\s*$/, "");
     }
 
@@ -1140,11 +1141,12 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         if (langSkill) {
             // Clear existing level 8 from any language skill to avoid duplicates
             const langKeys = ["commonspeech", "eldersp", "dwarven"];
-            const langLabels = langKeys.map(k => game.i18n.localize(CONFIG.WITCHER.skillMap[k].label).toLowerCase());
+            const actorLangKeys = langKeys.map(k => CONFIG.WITCHER.skillMap[k]?.name || k);
             
             for (const skillId in this.characterData.skills) {
                 const s = this.allSkills.find(sk => sk._id === skillId);
-                if (s && langLabels.includes(s.name.toLowerCase()) && this.characterData.skills[skillId] === 8) {
+                const actorPath = this._getActorSkillPath(s || skillId);
+                if (actorPath && actorLangKeys.includes(actorPath.key) && this.characterData.skills[skillId] === 8) {
                     this.characterData.skills[skillId] = 0;
                 }
             }
@@ -2497,6 +2499,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
 
     async _finish() {
         const name = this.characterData.name || "New Hero";
+        this._updateNativeLanguage();
         
         // 1. Compile Background Biography HTML
         let bgHtml = "";
@@ -2518,13 +2521,11 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 bgHtml += `<p><strong>Sorte dei Genitori:</strong> ${bg.parentsFate}</p>`;
             }
         }
-        if (bg.events && bg.events.length > 0) {
-            bgHtml += `<h3>Eventi della Vita:</h3><ul>`;
-            for (const ev of bg.events) {
-                bgHtml += `<li><strong>Età ${ev.age}:</strong> ${ev.text}</li>`;
-            }
-            bgHtml += `</ul>`;
-        }
+
+        const purchasedGearCost = this.characterData.gear.reduce((acc, item) => {
+            return acc + Number(item.system?.cost?.value || item.system?.cost || 0);
+        }, 0);
+        const remainingCrowns = Math.max(0, (Number(this.characterData.money) || 0) - purchasedGearCost);
 
         // 2. Prepare base actor data
         const actorData = {
@@ -2552,7 +2553,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                     lifeEvents: {}
                 },
                 currency: {
-                    crown: Number(this.characterData.money) || 0
+                    crown: remainingCrowns
                 }
             }
         };
