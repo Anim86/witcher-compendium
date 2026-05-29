@@ -602,6 +602,12 @@ WITCHER.genders = {
     female: 'WITCHER.Actor.Gender.Female',
 };
 
+WITCHER.originRegions = {
+    north: "Regni Settentrionali",
+    nilfgaard: "Impero di Nilfgaard",
+    elder: "Terre degli Antichi"
+};
+
 // Homelands (Patrie) - valori esatti dalla tabella del compendio (patria.json)
 WITCHER.homelands = {
     // Regni Settentrionali (north)

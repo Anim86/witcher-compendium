@@ -83,7 +83,22 @@
             "seduction",
             "socialetq"
         ],
-        "notes": "<p>Non si sa mai cosa aspettarsi da un bardo. Possono essere poeti erranti che cantano di eroi e leggende, o scaltre spie che manipolano le folle e le menti per ottenere segreti. Il loro talento nel trafficare con la testa della gente è pari solo alla loro abilità nel raccontare storie.</p>"
+        "notes": "<p>Non si sa mai cosa aspettarsi da un bardo. Possono essere poeti erranti che cantano di eroi e leggende, o scaltre spie che manipolano le folle e le menti per ottenere segreti. Il loro talento nel trafficare con la testa della gente è pari solo alla loro abilità nel raccontare storie.</p>",
+        "initialGear": {
+            "choose": 5,
+            "items": [
+                "Plancia da poker con dadi",
+                "Mazzo da Gwent",
+                "Specchietto",
+                "Strumento Musicale",
+                "Superalcolici",
+                "Pugnale",
+                "Profumo / Acqua di Colonia",
+                "Borsello",
+                "Fodero da giarrettiera",
+                "Diario"
+            ]
+        }
     },
     "effects": [],
     "flags": {},

@@ -1,0 +1,19 @@
+{
+    "_id": "componenti000100",
+    "name": "100 Corone in Componenti",
+    "type": "valuable",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-equipment/componenti_100_corone.webp",
+    "system": {
+        "description": "<p>Un ricco assortimento di materiali, erbe e ingredienti rari dal valore di 100 Corone.</p>",
+        "weight": 2,
+        "cost": 100,
+        "quantity": 1,
+        "sourcebook": "Witcher Wizard"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

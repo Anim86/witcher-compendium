@@ -86,7 +86,21 @@
             "wildernessSurvival",
             "endurance"
         ],
-        "notes": "<p>La spina dorsale del Continente. Esperto di agricoltura, vita rurale e resilienza contro le avversità.</p>"
+        "notes": "<p>La spina dorsale del Continente. Esperto di agricoltura, vita rurale e resilienza contro le avversità.</p>",
+        "initialGear": {
+            "choose": 5,
+            "items": [
+                "Abiti per Climi Freddi",
+                "Acciarino",
+                "Birra",
+                "Sacco",
+                "Simbolo Sacro",
+                "Utensili da Cucina",
+                "Carro Base",
+                "Pipa",
+                "Mazzo da Gwent"
+            ]
+        }
     },
     "effects": [],
     "flags": {},

@@ -84,7 +84,20 @@
             "gambling",
             "resistcoerc"
         ],
-        "notes": "<p>I mercanti portano alla gente ciò di cui ha bisogno, che si tratti di spade redaniane a Metinna o di avorio zerrikaniano nei Reami Settentrionali. Hanno contatti ovunque, sanno come fare affari scandalosi e riconoscono il potere del denaro. Un bravo mercante campa con i suoi contatti, le sue conoscenze e le sue merci.</p>"
+        "notes": "<p>I mercanti portano alla gente ciò di cui ha bisogno, che si tratti di spade redaniane a Metinna o di avorio zerrikaniano nei Reami Settentrionali. Hanno contatti ovunque, sanno come fare affari scandalosi e riconoscono il potere del denaro. Un bravo mercante campa con i suoi contatti, le sue conoscenze e le sue merci.</p>",
+        "initialGear": {
+            "choose": 3,
+            "items": [
+                "Cronista",
+                "Utensili da mercante",
+                "Tenda",
+                "Diario",
+                "Balestra",
+                "Pugnale",
+                "Carro",
+                "Mulo"
+            ]
+        }
     },
     "effects": [],
     "flags": {},

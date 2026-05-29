@@ -1,42 +1,39 @@
 <div class="wizard-step step-magic">
-    <h2>{{localize "WITCHER.Wizard.Step.Magic.Title"}}</h2>
+    <h2>Apprendimento Magico</h2>
     <p>Seleziona i tuoi incantesimi, invocazioni, rituali o fatture novizio iniziali in base al tuo retaggio magico.</p>
 
     <!-- Budget & Limits Card -->
-    <div class="summary-card magic-budget" style="margin-bottom: 20px; background: rgba(0, 0, 0, 0.2); border: 1px solid var(--wizard-border); border-radius: 8px; padding: 15px;">
-        <h3 style="margin-top: 0; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; font-family: 'Outfit', sans-serif; font-size: 1.2rem; color: var(--wizard-text-light);">
-            <span><i class="fa-solid fa-wand-magic-sparkles"></i> Budget Magia</span>
-        </h3>
-        <div class="magic-budget-grids" style="display: flex; gap: 15px; flex-wrap: wrap; width: 100%;">
+    <div class="magic-budget-compact" style="display: flex; align-items: center; justify-content: space-between; background: rgba(0, 0, 0, 0.3); border: 1px solid var(--wizard-border); border-radius: 4px; padding: 6px 15px; margin-bottom: 20px;">
+        <div style="display: flex; align-items: center; gap: 8px; color: var(--wizard-text-light); font-family: 'Outfit', sans-serif; font-size: 1rem;">
+            <i class="fa-solid fa-wand-magic-sparkles" style="color: #a18cd1;"></i>
+            <strong style="text-transform: uppercase; letter-spacing: 0.5px;">Budget:</strong>
+        </div>
+        <div style="display: flex; gap: 15px; flex-wrap: wrap;">
             {{#if magic.limits.spells}}
-            <div class="magic-budget-pill {{#if (eq magic.counts.spells magic.limits.spells)}}complete{{/if}}" style="flex: 1; min-width: 150px; background: rgba(161, 140, 209, 0.15); border: 1px solid rgba(161, 140, 209, 0.3); border-radius: 6px; padding: 10px; display: flex; flex-direction: column; align-items: center; transition: all 0.3s ease;">
-                <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; color: #a18cd1; font-weight: bold;">Incantesimi</span>
-                <span style="font-size: 1.6rem; font-weight: bold; margin: 5px 0; color: #a18cd1;">{{magic.counts.spells}} / {{magic.limits.spells}}</span>
-                <span style="font-size: 0.7rem; opacity: 0.7; color: var(--wizard-text-light);">Livello Novizio</span>
+            <div style="display: flex; align-items: center; gap: 6px; font-size: 0.85rem;">
+                <span style="color: #a18cd1; font-weight: bold;"><i class="fa-solid fa-sparkles"></i> Incantesimi</span>
+                <span style="background: rgba(161, 140, 209, {{#if (eq magic.counts.spells magic.limits.spells)}}0.4{{else}}0.1{{/if}}); border: 1px solid rgba(161, 140, 209, 0.5); border-radius: 3px; padding: 2px 6px; font-weight: bold; color: {{#if (eq magic.counts.spells magic.limits.spells)}}#fff{{else}}#a18cd1{{/if}};">{{magic.counts.spells}} / {{magic.limits.spells}}</span>
             </div>
             {{/if}}
 
             {{#if magic.limits.invocations}}
-            <div class="magic-budget-pill {{#if (eq magic.counts.invocations magic.limits.invocations)}}complete{{/if}}" style="flex: 1; min-width: 150px; background: rgba(251, 194, 235, 0.15); border: 1px solid rgba(251, 194, 235, 0.3); border-radius: 6px; padding: 10px; display: flex; flex-direction: column; align-items: center; transition: all 0.3s ease;">
-                <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; color: #fbc2eb; font-weight: bold;">Invocazioni</span>
-                <span style="font-size: 1.6rem; font-weight: bold; margin: 5px 0; color: #fbc2eb;">{{magic.counts.invocations}} / {{magic.limits.invocations}}</span>
-                <span style="font-size: 0.7rem; opacity: 0.7; color: var(--wizard-text-light);">Livello Novizio</span>
+            <div style="display: flex; align-items: center; gap: 6px; font-size: 0.85rem;">
+                <span style="color: #fbc2eb; font-weight: bold;"><i class="fa-solid fa-pray"></i> Invocazioni</span>
+                <span style="background: rgba(251, 194, 235, {{#if (eq magic.counts.invocations magic.limits.invocations)}}0.4{{else}}0.1{{/if}}); border: 1px solid rgba(251, 194, 235, 0.5); border-radius: 3px; padding: 2px 6px; font-weight: bold; color: {{#if (eq magic.counts.invocations magic.limits.invocations)}}#fff{{else}}#fbc2eb{{/if}};">{{magic.counts.invocations}} / {{magic.limits.invocations}}</span>
             </div>
             {{/if}}
 
             {{#if magic.limits.rituals}}
-            <div class="magic-budget-pill {{#if (eq magic.counts.rituals magic.limits.rituals)}}complete{{/if}}" style="flex: 1; min-width: 150px; background: rgba(143, 211, 244, 0.15); border: 1px solid rgba(143, 211, 244, 0.3); border-radius: 6px; padding: 10px; display: flex; flex-direction: column; align-items: center; transition: all 0.3s ease;">
-                <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; color: #8fd3f4; font-weight: bold;">Rituali</span>
-                <span style="font-size: 1.6rem; font-weight: bold; margin: 5px 0; color: #8fd3f4;">{{magic.counts.rituals}} / {{magic.limits.rituals}}</span>
-                <span style="font-size: 0.7rem; opacity: 0.7; color: var(--wizard-text-light);">Livello Novizio</span>
+            <div style="display: flex; align-items: center; gap: 6px; font-size: 0.85rem;">
+                <span style="color: #8fd3f4; font-weight: bold;"><i class="fa-solid fa-circle-nodes"></i> Rituali</span>
+                <span style="background: rgba(143, 211, 244, {{#if (eq magic.counts.rituals magic.limits.rituals)}}0.4{{else}}0.1{{/if}}); border: 1px solid rgba(143, 211, 244, 0.5); border-radius: 3px; padding: 2px 6px; font-weight: bold; color: {{#if (eq magic.counts.rituals magic.limits.rituals)}}#fff{{else}}#8fd3f4{{/if}};">{{magic.counts.rituals}} / {{magic.limits.rituals}}</span>
             </div>
             {{/if}}
 
             {{#if magic.limits.hexes}}
-            <div class="magic-budget-pill {{#if (eq magic.counts.hexes magic.limits.hexes)}}complete{{/if}}" style="flex: 1; min-width: 150px; background: rgba(255, 129, 119, 0.15); border: 1px solid rgba(255, 129, 119, 0.3); border-radius: 6px; padding: 10px; display: flex; flex-direction: column; align-items: center; transition: all 0.3s ease;">
-                <span style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.5px; color: #ff8177; font-weight: bold;">Fatture</span>
-                <span style="font-size: 1.6rem; font-weight: bold; margin: 5px 0; color: #ff8177;">{{magic.counts.hexes}} / {{magic.limits.hexes}}</span>
-                <span style="font-size: 0.7rem; opacity: 0.7; color: var(--wizard-text-light);">Livello Novizio</span>
+            <div style="display: flex; align-items: center; gap: 6px; font-size: 0.85rem;">
+                <span style="color: #ff8177; font-weight: bold;"><i class="fa-solid fa-skull"></i> Fatture</span>
+                <span style="background: rgba(255, 129, 119, {{#if (eq magic.counts.hexes magic.limits.hexes)}}0.4{{else}}0.1{{/if}}); border: 1px solid rgba(255, 129, 119, 0.5); border-radius: 3px; padding: 2px 6px; font-weight: bold; color: {{#if (eq magic.counts.hexes magic.limits.hexes)}}#fff{{else}}#ff8177{{/if}};">{{magic.counts.hexes}} / {{magic.limits.hexes}}</span>
             </div>
             {{/if}}
         </div>

@@ -41,7 +41,8 @@ export default class WitcherCharacterSheet extends WitcherActorSheet {
             },
             addIpReward: this._addIpReward,
             saveIpSpending: this._saveIpSpending,
-            adjustCurrency: this.#adjustCurrency
+            adjustCurrency: this.#adjustCurrency,
+            toggleBackgroundLock: this.#toggleBackgroundLock
         }
     });
 
@@ -145,6 +146,8 @@ export default class WitcherCharacterSheet extends WitcherActorSheet {
             input._hasWitcherEnterHandler = true;
         });
 
+        this._applyBackgroundLockState();
+
         const content = this.element.querySelector('.window-content');
         if (!content || content.querySelector('.char-main-wrapper')) return;
         const sidebar = content.querySelector('[data-application-part="sidebar"]');
@@ -155,6 +158,22 @@ export default class WitcherCharacterSheet extends WitcherActorSheet {
             if (child !== sidebar && !child.classList.contains('char-main-wrapper')) wrapper.appendChild(child);
         });
         content.appendChild(wrapper);
+    }
+
+    _applyBackgroundLockState() {
+        const locked = !!this.actor.system.general.backgroundLocked;
+        const lockedParts = this.element.querySelectorAll('[data-application-part="background"], [data-application-part="profession"]');
+
+        lockedParts.forEach(part => {
+            part.classList.toggle('background-edit-locked', locked);
+            part.querySelectorAll('input, select, textarea, button').forEach(control => {
+                control.disabled = locked;
+            });
+            part.querySelectorAll('.add-item, .item-edit, .item-delete, .spend-ip-profession').forEach(control => {
+                control.classList.toggle('background-lock-disabled-control', locked);
+                control.setAttribute('aria-disabled', locked ? 'true' : 'false');
+            });
+        });
     }
 
     activateListeners(html) {
@@ -176,16 +195,20 @@ export default class WitcherCharacterSheet extends WitcherActorSheet {
         this._prepareValuables(context);
         context.alchemyComponentsList = this._prepareAlchemyComponentsList(context);
 
-        context.system.general.lifeEvents = Object.entries(context.system.general.lifeEvents).map(([key, value]) => ({
+        context.system.general.lifeEvents = Object.entries(context.system.general.lifeEvents ?? {}).map(([key, value]) => ({
             key,
             ...value
         }));
-        context.system.lifeEventCounter = Math.min(context.system.lifeEventCounter || context.system.general.lifeEvents.length, 19);
+        context.backgroundLifeEvents = context.system.general.lifeEvents
+            .filter(event => String(event.value || event.details || '').trim())
+            .sort((a, b) => Number(a.key) - Number(b.key));
+        context.system.lifeEventCounter = context.system.general.lifeEvents.length;
 
         context.enrichedText = {
             ...context.enrichedText,
             ...(await this.document.system.enrichedText())
         };
+        context.backgroundLocked = !!context.system.general.backgroundLocked;
 
         context.tabs = this._prepareTabs('primary');
         context.skillTabs = this._prepareTabs('skillTabs');
@@ -200,6 +223,8 @@ export default class WitcherCharacterSheet extends WitcherActorSheet {
         context.profession = actor.getList('profession')[0];
         context.homeland = actor.getList('homeland')[0];
         context.race = actor.getList('race')[0];
+        context.backgroundHomelandValue = context.system.general.homeland.value || '';
+        context.backgroundOriginRegion = context.system.general.originRegion || '';
 
         context.enrichedText = {
             ...context.enrichedText,
@@ -532,6 +557,12 @@ export default class WitcherCharacterSheet extends WitcherActorSheet {
     static async #openAttributeDialog() {}
 
     static async #openDerivedDialog() {}
+
+    static async #toggleBackgroundLock(event) {
+        event.preventDefault();
+        const actor = this.document;
+        await actor.update({ 'system.general.backgroundLocked': !actor.system.general.backgroundLocked });
+    }
 
     static async #openModifiers(_, target) {
         _.preventDefault();

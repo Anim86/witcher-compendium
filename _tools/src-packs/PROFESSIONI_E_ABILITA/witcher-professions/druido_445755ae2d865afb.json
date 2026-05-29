@@ -85,7 +85,20 @@
             "fineArts",
             "staffspear"
         ],
-        "notes": "<p>I druidi vivono in armonia con la natura e ne proteggono l'equilibrio sacro. Diversi dai maghi e dai preti, attingono la loro magia dalla terra stessa e dagli spiriti dei boschi. Sono i custodi dei circoli sacri, capaci di parlare agli animali, mutare forma e scatenare le forze della natura contro i trasgressori.</p>"
+        "notes": "<p>I druidi vivono in armonia con la natura e ne proteggono l'equilibrio sacro. Diversi dai maghi e dai preti, attingono la loro magia dalla terra stessa e dagli spiriti dei boschi. Sono i custodi dei circoli sacri, capaci di parlare agli animali, mutare forma e scatenare le forze della natura contro i trasgressori.</p>",
+        "initialGear": {
+            "choose": 5,
+            "items": [
+                "Bastone",
+                "Sacco",
+                "Borsello",
+                "Attrezzatura alchemica",
+                "Clessidra",
+                "Lanterna",
+                "Erbe Anestetiche",
+                "Fodero da Giarrettiera"
+            ]
+        }
     },
     "effects": [],
     "flags": {},

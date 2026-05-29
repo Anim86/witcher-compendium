@@ -85,7 +85,22 @@
             "perception",
             "wilderness"
         ],
-        "notes": "<p>Preti e druidi sono due mondi separati. I preti traggono il loro potere dalla fede incrollabile in una divinità, in se stessi o nel loro messaggio. Dai predicatori di piazza ai cultisti segreti, fino ai fanatici pronti a scatenare inquisizioni, la loro magia è un dono divino che guida e protegge i fedeli.</p>"
+        "notes": "<p>Preti e druidi sono due mondi separati. I preti traggono il loro potere dalla fede incrollabile in una divinità, in se stessi o nel loro messaggio. Dai predicatori di piazza ai cultisti segreti, fino ai fanatici pronti a scatenare inquisizioni, la loro magia è un dono divino che guida e protegge i fedeli.</p>",
+        "initialGear": {
+            "choose": 5,
+            "items": [
+                "Simbolo sacro",
+                "Fluido sterilizzante",
+                "Attrezzatura alchemica",
+                "Strumenti chirurgici",
+                "Borsello",
+                "Pugnale",
+                "Bastone",
+                "Polvere coagulante",
+                "Erbe anestetiche",
+                "100 Corone in Componenti"
+            ]
+        }
     },
     "effects": [],
     "flags": {},

@@ -334,44 +334,6 @@
                     {{editor race.system.perk4.description target="race.system.perk4.description" editable=editable}}
                 </div>
             </div>
-            <div class="flexrow">
-                <table>
-                    <tr>
-                        <th>{{localize "WITCHER.socialStanding.north"}}</th>
-                        <th>{{localize "WITCHER.socialStanding.nilfgaard"}}</th>
-                        <th>{{localize "WITCHER.socialStanding.skellige"}}</th>
-                        <th>{{localize "WITCHER.socialStanding.dolBlathanna"}}</th>
-                        <th>{{localize "WITCHER.socialStanding.mahakam"}}</th>
-                    </tr>
-                    <tr>
-                        <td>
-                            <select class="inline-edit" data-field="system.socialStanding.north">
-                                {{selectOptions config.socialStanding selected=race.system.socialStanding.north localize=true}}
-                            </select>
-                        </td>
-                        <td>
-                            <select class="inline-edit" data-field="system.socialStanding.nilfgaard">
-                                {{selectOptions config.socialStanding selected=race.system.socialStanding.nilfgaard localize=true}}
-                            </select>
-                        </td>
-                        <td>
-                            <select class="inline-edit" data-field="system.socialStanding.skellige">
-                                {{selectOptions config.socialStanding selected=race.system.socialStanding.skellige localize=true}}
-                            </select>
-                        </td>
-                        <td>
-                            <select class="inline-edit" data-field="system.socialStanding.dolBlathanna">
-                                {{selectOptions config.socialStanding selected=race.system.socialStanding.dolBlathanna localize=true}}
-                            </select>
-                        </td>
-                        <td>
-                            <select class="inline-edit" data-field="system.socialStanding.mahakam">
-                                {{selectOptions config.socialStanding selected=race.system.socialStanding.mahakam localize=true}}
-                            </select>
-                        </td>
-                    </tr>
-                </table>
-            </div>
         </div>
     {{/if}}
     {{#unless race}}

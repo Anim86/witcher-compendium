@@ -85,7 +85,22 @@
             "seduction",
             "grooming"
         ],
-        "notes": "<p>I maghi sono i potenti condotti del Caos Primevo. Nelle accademie imparano a usare la magia per far progredire la scienza e migliorare la vita, ma spesso finiscono per diventare influenti consiglieri reali o pericolosi manipolatori politici. La loro conoscenza arcana permette loro di compiere miracoli e mutazioni impossibili per i comuni mortali.</p>"
+        "notes": "<p>I maghi sono i potenti condotti del Caos Primevo. Nelle accademie imparano a usare la magia per far progredire la scienza e migliorare la vita, ma spesso finiscono per diventare influenti consiglieri reali o pericolosi manipolatori politici. La loro conoscenza arcana permette loro di compiere miracoli e mutazioni impossibili per i comuni mortali.</p>",
+        "initialGear": {
+            "choose": 5,
+            "items": [
+                "Clessidra",
+                "Kit per il trucco",
+                "Borsello",
+                "Cronista",
+                "Specchietto",
+                "Pugnale",
+                "Bastone",
+                "Fodero da giarrettiera",
+                "Diario",
+                "100 Corone in Componenti"
+            ]
+        }
     },
     "effects": [],
     "flags": {},

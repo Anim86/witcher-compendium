@@ -37,9 +37,12 @@
             </div>
             
             <div class="meta-info-list">
-                <div class="info-item" title="{{localize 'WITCHER.SocialStanding'}}">
-                    <i class="fas fa-users"></i> {{#if system.general.socialStanding}}{{localize (concat 'WITCHER.socialStanding.' system.general.socialStanding)}}{{else}}---{{/if}}
-                </div>
+                <button type="button" class="info-item background-lock-toggle {{#if system.general.backgroundLocked}}locked{{else}}unlocked{{/if}}"
+                    data-action="toggleBackgroundLock"
+                    title="{{#if system.general.backgroundLocked}}Sblocca Background e Professione/Razza{{else}}Blocca Background e Professione/Razza{{/if}}">
+                    <i class="fas {{#if system.general.backgroundLocked}}fa-lock{{else}}fa-lock-open{{/if}}"></i>
+                    {{#if system.general.backgroundLocked}}Bloccato{{else}}Sbloccato{{/if}}
+                </button>
                 <div class="info-item" title="{{localize 'WITCHER.Homeland'}}">
                     <i class="fas fa-map-marker-alt"></i> {{#if system.general.homeland.value}}{{localize (lookup config.homelands system.general.homeland.value)}}{{else}}---{{/if}}
                 </div>

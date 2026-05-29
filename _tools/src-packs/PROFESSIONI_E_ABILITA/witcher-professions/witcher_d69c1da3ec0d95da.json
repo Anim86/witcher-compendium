@@ -85,7 +85,22 @@
             "endurance",
             "intimidation"
         ],
-        "notes": "<p>I witcher sono mutanti creati per un solo scopo: uccidere mostri. Sottoposti a prove e mutazioni atroci fin da bambini, hanno acquisito sensi sovraumani e la capacità di usare i Segni. Freddi e risoluti, sono i guardiani dell'umanità contro le creature del Caos, anche se per questo sono spesso odiati e temuti dai comuni mortali.</p>"
+        "notes": "<p>I witcher sono mutanti creati per un solo scopo: uccidere mostri. Sottoposti a prove e mutazioni atroci fin da bambini, hanno acquisito sensi sovraumani e la capacità di usare i Segni. Freddi e risoluti, sono i guardiani dell'umanità contro le creature del Caos, anche se per questo sono spesso odiati e temuti dai comuni mortali.</p>",
+        "initialGear": {
+            "always": [
+                "Medaglione da Witcher",
+                "Spada d'Arme",
+                "Spada d'Argento",
+                "Gambesone a Doppia Trama",
+                "Coltello da Lancio"
+            ],
+            "choose": 2,
+            "items": [
+                "Attrezzatura alchemica",
+                "Cavallo",
+                "Balestrino"
+            ]
+        }
     },
     "effects": [],
     "flags": {},

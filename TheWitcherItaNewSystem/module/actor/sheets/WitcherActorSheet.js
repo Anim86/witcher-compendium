@@ -434,10 +434,13 @@ export default class WitcherActorSheet extends HandlebarsApplicationMixin(ActorS
     _onLifeEventDisplay(event) {
         event.preventDefault();
         let section = event.currentTarget.closest('.life-events-card');
+        const lifeEvents = this.actor.system.general.lifeEvents;
+        const lifeEvent = Array.isArray(lifeEvents)
+            ? lifeEvents.find(event => event.key === section.dataset.event)
+            : lifeEvents?.[section.dataset.event];
+
         this.actor.update({
-            [`system.general.lifeEvents.${section.dataset.event}.isOpened`]: !this.actor.system.general.lifeEvents.find(
-                event => event.key === section.dataset.event
-            ).isOpened
+            [`system.general.lifeEvents.${section.dataset.event}.isOpened`]: !lifeEvent?.isOpened
         });
     }
 }

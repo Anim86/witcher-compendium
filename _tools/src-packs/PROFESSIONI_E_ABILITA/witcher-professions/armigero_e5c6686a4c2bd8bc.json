@@ -80,7 +80,22 @@
             "intimidation",
             "dodge"
         ],
-        "notes": "<p>I soldati pensano secondo la tattica. Sanno quando colpire, quando indietreggiare, quando caricare e quando tenere la posizione. I veri armigeri sono soldati incalliti che non rinunciano o si arrendono mai. Un armigero vive di combattimenti e respira conflitti.</p>"
+        "notes": "<p>I soldati pensano secondo la tattica. Sanno quando colpire, quando indietreggiare, quando caricare e quando tenere la posizione. I veri armigeri sono soldati incalliti che non rinunciano o si arrendono mai. Un armigero vive di combattimenti e respira conflitti.</p>",
+        "initialGear": {
+            "choose": 5,
+            "items": [
+                "Kord",
+                "Lancia",
+                "Ascia da Battaglia",
+                "Coltello da Lancio",
+                "Sacco",
+                "Camaglio",
+                "Brigantina",
+                "Brache Corazzate",
+                "Balestra",
+                "Brocchiero d'Acciaio"
+            ]
+        }
     },
     "effects": [],
     "flags": {},

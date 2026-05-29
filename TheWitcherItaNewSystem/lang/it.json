@@ -1899,6 +1899,201 @@
             "dialog": {
                 "title": "Assegna Ricompense",
                 "titleStandard": "Assegna Punti Esperienza",
+"ResolveDamage": "Impatto sulla Risolutezza",
+            "RollResolveDamage": "Tira Efficacia Verbale",
+            "SocialCombat": "Confronto Sociale"
+        },
+        "Effect": {
+            "Rolled": "Rolled",
+            "Applied": "Applied",
+            "Failed": "Failed",
+            "applySelf": "Applica l'effetto su se stessi quando usato",
+            "applyOnTarget": "Applica l'effetto sul bersaglio quando usato",
+            "applyOnHit": "Applica l'colpo su se stessi quando usato",
+            "applyOnDamage": "Applica l'effetto al danno quando usato",
+            "Error": {
+                "belongsToItem": "This effect belongs to an item"
+            },
+            "wizard": {
+                "lifepath": "Lifepath",
+                "other": "Other",
+                "resistances": "Resistances",
+                "flat": "Flat Bonus",
+                "multi": "Multiplication",
+                "applyAP": "Applica AP al Moltiplicatore",
+                "Item": {
+                    "damage": "Danno"
+                }
+            }
+        },
+        "err": {
+            "CraftItemDeletion": "Incorrect amount of items were deleted from the actor",
+            "craftItemAvailable": "Not all necessary items are available",
+            "NoItemsOfSpecificType": "No items of specific type are available for actor"
+        },
+        "Investigation": {
+            "clues": "Indizi",
+            "obstacles": "Ostacoli",
+            "skillsUsed": "Abilità usate",
+            "timeIncrement": "Tempo",
+            "timeBonus": "Bonus Tempo",
+            "damage": "Danno",
+            "obfuscation": "Offuscamento",
+            "penalty": "Penalità",
+            "focusDamage": "Danno al Focus",
+            "successDamage": "Danno Successo",
+            "failDamage": "Danno Fallimento",
+            "evidence": {
+                "chooseSkill": "Scegli la tua abilità"
+            }
+        },
+        "statusEffects": {
+            "applyCombat": "Applicazione effetto di combattimento per ",
+            "healing": "Guarigione",
+            "buffed": "Potenziato",
+            "fire": "Fuoco",
+            "stun": "Stun",
+            "poison": "Veleno",
+            "disease": "Malattia",
+            "prone": "Prono",
+            "bleed": "Sanguinamento",
+            "freeze": "Congelamento",
+            "staggered": "Stordito",
+            "intoxication": "Intossicazione",
+            "hallucination": "Allucinazione",
+            "nausea": "Nausea",
+            "suffocation": "Soffocamento",
+            "blinded": "Accecato",
+            "shielded": "Scudato",
+            "invisible": "Invisibile",
+            "unconscious": "Incosciente",
+            "grappled": "Afferrato",
+            "flying": "Volante",
+            "frightened": "Spaventato",
+            "aiming": "Mirando",
+            "deaf": "Sordo",
+            "reducedVision": "Visione Ridotta",
+            "holdAction": "Azione in Attesa",
+            "dead": "Morto"
+        },
+        "armorEffects": {
+            "fireResistance": "Resistenza al Fuoco",
+            "poisonResistance": "Resistenza al Veleno",
+            "bleedResistance": "Resistenza al Sanguinamento"
+        },
+        "fumbleResults": {
+            "name": "Risultato Fallimento Critico",
+            "nothing": "Non è successo nulla",
+            "magic": {
+                "1-6": "La magia scintilla e scoppietta e subisci 1 punto di danno per ogni punto di fallimento, ma l'incantesimo ha comunque effetto.",
+                "7-9": "La magia che è già parzialmente in te si accende dentro di te. Non solo l'incantesimo fallisce, ma subisci un effetto di fallimento elementale come indicato sotto.",
+                ">9": "La tua magia esplode con un effetto catastrofico. Non solo subisci un effetto di fallimento elementale, ma qualsiasi oggetto focalizzatore che stai trasportando esplode come se fosse una bomba (infliggendo [[1d10]] danni) con un raggio di 2 metri."
+            },
+            "meleeAttack": {
+                "6": "La tua arma rimbalza e rimani stordito.",
+                "7": "La tua arma si conficca in un oggetto vicino e ci vuole 1 round per liberarla.",
+                "8": "Daneggi gravemente la tua arma. L'arma subisce [[1d10]] punti di danno all'affidabilità.",
+                "9": "Riesci a ferirti da solo. Tira per la posizione.",
+                ">9": "Ferisci un alleato vicino. Tira la posizione su un alleato casuale entro la portata."
+            },
+            "armedDefense": {
+                "6": "La tua arma subisce [[1d6]] punti extra di danno all'affidabilità.",
+                "7": "L'arma ti viene colpita di mano e vola via per [[1d6]] metri in una direzione casuale (vedi tabella Scatter).",
+                "8": "Vieni scaraventato a terra. Sei ora prono e devi effettuare un salvataggio di Stun.",
+                "9": "La tua arma subisce [[2d6]] punti extra di danno all'affidabilità.",
+                ">9": "La tua arma rimbalza e ti colpisce. Tira per la posizione."
+            },
+            "rangedAttack": {
+                "6-7": "Le munizioni che hai sparato, o l'arma che hai lanciato, colpiscono qualcosa di duro, rompendosi.",
+                "8-9": "La corda del tuo arco si allenta parzialmente, la tua balestra si inceppa o lasci cadere l'arma da lancio. Ci vuole 1 round per rimediare.",
+                ">9": "Colpisci uno dei tuoi alleati con un rimbalzo. Tira la posizione su un alleato casuale entro la portata."
+            },
+            "unarmed": {
+                "6": "Perdi l'equilibrio e rimani stordito.",
+                "7": "Inciampi in qualcosa e cadi prono.",
+                "8": "Inciampi e cadi prono. Devi effettuare un salvataggio di Stun.",
+                "9": "Inciampi e batti la testa. Cadi prono, subisci [[1d6]] punti di danno non letale alla testa e devi effettuare un salvataggio di Stun.",
+                ">9": "Fallisci orribilmente e non solo cadi prono, ma subisci anche [[1d6]] danni letali alla testa e devi effettuare un salvataggio di Stun."
+            }
+        },
+        "deprecations": {
+            "lifepathModifiers": {
+                "title": "Modificatori Percorso Vitale",
+                "text": "I bonus ai tiri dei Modificatori Percorso Vitale sono cambiati. Questo DEVE essere fatto prima di passare alla v14. Riaggiungili tramite il wizard degli effetti attivi per i seguenti attori"
+            },
+            "statSkillModifiers": {
+                "title": "Modificatori Statistiche o Abilità",
+                "text": "I Modificatori di Statistiche e Abilità sono deprecati. Questo DEVE essere fatto prima di passare alla v14. Spostali negli effetti attivi per i seguenti attori"
+            },
+            "oldCriticalWounds": {
+                "title": "Deprecazione Ferite Critiche",
+                "text": "Le Ferite Critiche sono state spostate negli oggetti. Questo DEVE essere fatto prima di passare alla v14. Sostituisci le ferite di questi attori."
+            }
+        },
+        "AssociatedDiagram": {
+            "actions": {
+                "add": "Add crafting diagram",
+                "remove": "Remove crafting diagram"
+            },
+            "missing": "Associated crafting diagram is missing (drag it here to add)",
+            "title": "Crafting diagram"
+        },
+        "Repair": {
+            "action": "Riparando",
+            "buttons": {
+                "repair": "Ripara",
+                "simulate": "Simula riparazione",
+                "request": "Richiedi riparazione",
+                "gmRepair": "Riparazione GM"
+            },
+            "result": {
+                "success": "Riparazione riuscita!",
+                "failure": "Riparazione fallita"
+            },
+            "params": {
+                "craftingDC": "Difficoltà Artigianato",
+                "repairDC": "Difficoltà Riparazione",
+                "repairMod": "Modificatore Riparazione",
+                "enchants": "Modificatore Incantesimi",
+                "damagedLocations": "Posizioni Danneggiate",
+                "components": "Componenti"
+            },
+            "damagedLocations": {
+                "weapon": "Affidabilità Arma",
+                "shield": "Affidabilità Scudo"
+            },
+            "chat": {
+                "requestTitle": "sta richiedendo di riparare"
+            },
+            "alerts": {
+                "notEnoughComponents": "Componenti insufficienti per riparare questo oggetto",
+                "itemIsAlreadyRepaired": "Questo oggetto è già completamente riparato",
+                "noDiagram": "Nessun diagramma associato trovato per questo oggetto",
+                "invalidDiagram": "Il tipo di questo diagramma non è valido per questo oggetto"
+            }
+        },
+        "ComponentsList": {
+            "component": "Componente",
+            "quantity": "Quantità",
+            "required": "Richiesto",
+            "cost": "Costo",
+            "totalPrice": "Prezzo Totale"
+        },
+        "rewards": {
+            "heading": "Premi e Miglioramenti",
+            "currency": "Valuta",
+            "ip": "PM",
+            "addIp": "Aggiungi PM",
+            "addCurrency": "Aggiungi Valuta",
+            "noIpLogs": "Nessun registro di PM trovato",
+            "noCurrencyLogs": "Nessun registro di valuta trovato",
+            "spendIp": "Spendi PM",
+            "spendIpHint": "Per spendere i PM, clicca sulle abilità o sulle statistiche nella scheda principale.",
+            "logTitle": "Registro Miglioramenti",
+            "currencyLogTitle": "Registro Valuta",
+            "dialog": {
+                "title": "Assegna Ricompense",
+                "titleStandard": "Assegna Punti Esperienza",
                 "titleMagic": "Assegna Punti Magia (Tesoretto)",
                 "confirm": "Conferma",
                 "confirmAssignment": "Conferma Assegnazione",
@@ -1946,6 +2141,10 @@
                     "Title": "Background",
                     "Description": "Scrivi la tua storia attraverso gli eventi del passato."
                 },
+                "Magic": {
+                    "Title": "Apprendimento Magico",
+                    "Description": "Scegli gli incantesimi e i rituali per il tuo retaggio."
+                },
                 "Gear": {
                     "Title": "Equipaggiamento",
                     "Description": "Scegli la tua dotazione e acquista ciò che ti serve."
@@ -1972,6 +2171,10 @@
             },
             "Background": {
                 "Origin": "Origine",
+                "OriginRegion": "Regione d'Origine",
+                "OriginRegionNorth": "Regni Settentrionali",
+                "OriginRegionNilfgaard": "Impero di Nilfgaard",
+                "OriginRegionElder": "Terre degli Antichi",
                 "Homeland": "Patria",
                 "SelectHomeland": "-- Seleziona --",
                 "SocialStatus": "Rango Sociale",

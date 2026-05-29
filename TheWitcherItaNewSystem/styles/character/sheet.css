@@ -1817,6 +1817,42 @@ a.button-roll:hover {
     }
 }
 
+button.info-item.background-lock-toggle {
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.background-lock-toggle.locked {
+    color: var(--w-gold);
+}
+
+.background-lock-toggle.unlocked:hover,
+.background-lock-toggle.locked:hover {
+    color: var(--w-gold-light, #d4b870);
+}
+
+.background-lock-toggle.locked i {
+    color: var(--w-gold);
+}
+
+.background-lock-disabled-control {
+    pointer-events: none;
+    opacity: 0.28;
+    filter: grayscale(0.4);
+}
+
+.background-edit-locked input,
+.background-edit-locked select,
+.background-edit-locked textarea,
+.background-edit-locked button {
+    cursor: not-allowed !important;
+    opacity: 0.72;
+}
+
 /* --- Modifier Configuration Popup --- */
 .modifier-configuration {
     background: url('../../assets/images/sheet_bg.jpg') repeat !important;

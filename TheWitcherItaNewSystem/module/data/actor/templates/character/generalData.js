@@ -11,11 +11,13 @@ export default function general() {
         background: new fields.SchemaField(background()),
         details: new fields.SchemaField(details()),
         homeland: new fields.SchemaField(homeland()),
+        originRegion: new fields.StringField({ initial: '' }),
+        backgroundLocked: new fields.BooleanField({ initial: false }),
         reputation: new fields.SchemaField(valueLabel('WITCHER.Reputation')),
         socialStanding: new fields.StringField({ initial: '' }),
         name: new fields.StringField({ initial: '' }),
         race: new fields.StringField({ initial: '' }),
         age: new fields.NumberField({ initial: 0 }),
-        lifeEvents: new fields.SchemaField(lifeEvents())
+        lifeEvents: lifeEvents()
     };
 }

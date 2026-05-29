@@ -85,7 +85,22 @@
             "athletics",
             "awareness"
         ],
-        "notes": "<p>Dagli scassinatori professionisti agli assassini occasionali, i criminali sanno come muoversi nell'ombra. Sono esperti nel trovare punti deboli, scassinare serrature impossibili e sparire nel nulla quando le cose si mettono male. Per un criminale, farsi beccare significa la fine.</p>"
+        "notes": "<p>Dagli scassinatori professionisti agli assassini occasionali, i criminali sanno come muoversi nell'ombra. Sono esperti nel trovare punti deboli, scassinare serrature impossibili e sparire nel nulla quando le cose si mettono male. Per un criminale, farsi beccare significa la fine.</p>",
+        "initialGear": {
+            "choose": 5,
+            "items": [
+                "Dadi truccati",
+                "Lanterna",
+                "Tasca segreta",
+                "Arnesi da scasso",
+                "Fodero da manica",
+                "Stiletto",
+                "Tirapugni",
+                "Coltello da Lancio",
+                "Cloroformio",
+                "Sacco"
+            ]
+        }
     },
     "effects": [],
     "flags": {},
