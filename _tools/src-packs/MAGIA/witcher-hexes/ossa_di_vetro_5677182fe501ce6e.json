@@ -10,7 +10,6 @@
         "cost": 0,
         "sourcebook": "TC 106",
         "class": "hex",
-        "level": "high",
         "source": "",
         "stamina": 12,
         "staminaIsVar": false,
@@ -50,7 +49,8 @@
         "attackOptions": [
             "spell"
         ],
-        "spellAttackSkill": "hexweave"
+        "spellAttackSkill": "hexweave",
+        "danger": "high"
     },
     "effects": [],
     "flags": {},
