@@ -600,7 +600,6 @@ WITCHER.socialStanding = {
 WITCHER.genders = {
     male: 'WITCHER.Actor.Gender.Male',
     female: 'WITCHER.Actor.Gender.Female',
-    other: 'WITCHER.Actor.Gender.Other'
 };
 
 // Homelands (Patrie) - valori esatti dalla tabella del compendio (patria.json)

@@ -1,17 +1,24 @@
 <div class="wizard-step step-gear">
     <h2>{{localize "WITCHER.Wizard.Step.Gear.Title"}}</h2>
-    <p>{{localize "WITCHER.Wizard.Step.Gear.Description"}}</p>
     
     <!-- Dotazione della Professione -->
     <div class="summary-card profession-dotazione">
         <h3 class="profession-gear-title">
-            <span>{{localize "WITCHER.Wizard.Gear.InitialGear"}}</span>
-            {{#if (gt professionGearChoose 0)}}
-            <span class="choose-hint">(Scegli {{professionGearChoose}} - Rimasti: {{professionGearRemaining}})</span>
-            <button type="button" class="ctrl-btn profession-random-btn" data-action="randomProfessionGear" title="Selezione casuale">
-                <i class="fa-solid fa-dice"></i>
-            </button>
-            {{/if}}
+            <span class="profession-gear-heading">
+                <i class="fa-solid fa-shield-halved"></i>
+                <span>{{localize "WITCHER.Wizard.Gear.InitialGear"}}</span>
+            </span>
+            <span class="profession-gear-tools">
+                {{#if (gt professionGearChoose 0)}}
+                <span class="choose-hint">
+                    <span>Scegli {{professionGearChoose}}</span>
+                    <strong>{{professionGearRemaining}} rimasti</strong>
+                </span>
+                <button type="button" class="profession-random-btn" data-action="randomProfessionGear" title="Selezione casuale" aria-label="Selezione casuale">
+                    <i class="fa-solid fa-dice"></i>
+                </button>
+                {{/if}}
+            </span>
         </h3>
         
         {{#if professionGearList}}
@@ -19,9 +26,16 @@
                 {{#each professionGearList}}
                 <div class="gear-item-mini {{#if selected}}selected{{/if}} {{#if missing}}missing{{/if}}" 
                      {{#unless always}}data-action="toggleProfessionGear" data-item-id="{{id}}"{{/unless}}>
-                    {{#if img}}<img src="{{img}}" alt="{{name}}">{{/if}}
-                    <span class="name">{{name}}</span>
-                    {{#if always}}<span class="badge-fixed">Fisso</span>{{/if}}
+                    <span class="gear-select-indicator">
+                        {{#if selected}}<i class="fa-solid fa-check"></i>{{else if always}}<i class="fa-solid fa-lock"></i>{{/if}}
+                    </span>
+                    <span class="gear-thumb">
+                        {{#if img}}<img src="{{img}}" alt="{{name}}">{{else}}<i class="fa-solid fa-box"></i>{{/if}}
+                    </span>
+                    <span class="gear-item-info">
+                        <span class="name">{{name}}</span>
+                        {{#if always}}<span class="badge-fixed">Fisso</span>{{/if}}
+                    </span>
                 </div>
                 {{/each}}
             </div>
@@ -130,10 +144,13 @@
         <div class="gear-summary">
             <h3>{{localize "WITCHER.Wizard.Gear.Selected"}}</h3>
             <ul>
-                {{#each character.gear}}
+                {{#each selectedGear}}
                 <li>
-                    <span>{{name}}</span>
+                    <span class="selected-gear-name">{{name}}</span>
                     <span class="cost">{{#if system.cost.value}}{{system.cost.value}}{{else}}{{system.cost}}{{/if}} Corone</span>
+                    <button type="button" class="gear-remove-btn" data-action="removeGear" data-item-id="{{id}}" title="Rimuovi {{name}}" aria-label="Rimuovi {{name}}">
+                        &times;
+                    </button>
                 </li>
                 {{/each}}
             </ul>

@@ -27,8 +27,36 @@
                     <strong>{{localize "WITCHER.Wizard.Profession"}}:</strong> {{character.profession.name}}
                 </div>
                 <div class="summary-line">
-                    <strong>{{localize "WITCHER.Wizard.BackgroundLabel"}}:</strong> {{character.homeland}} - {{character.background.socialStatus}}
+                    <strong>{{localize "WITCHER.Wizard.BackgroundLabel"}}:</strong>
+                    {{#if character.homeland}}{{character.homeland}}{{else}}Non selezionato{{/if}}{{#if character.background.socialStatus}} - {{character.background.socialStatus}}{{/if}}
                 </div>
+                {{#if character.background.familyState}}
+                <div class="summary-line">
+                    <strong>Famiglia:</strong>
+                    {{#if (eq character.background.familyState "alive")}}Almeno parte della famiglia e viva{{else}}Qualcosa e accaduto alla famiglia{{/if}}
+                </div>
+                {{/if}}
+                {{#if character.background.familyFate}}
+                <div class="summary-line">
+                    <strong>Sorte della Famiglia:</strong> {{character.background.familyFate}}
+                </div>
+                {{/if}}
+                {{#if character.background.parentsState}}
+                <div class="summary-line">
+                    <strong>Genitori:</strong>
+                    {{#if (eq character.background.parentsState "alive")}}Vivi{{else}}Qualcosa e accaduto ai genitori{{/if}}
+                </div>
+                {{/if}}
+                {{#if character.background.parentsFate}}
+                <div class="summary-line">
+                    <strong>Sorte dei Genitori:</strong> {{character.background.parentsFate}}
+                </div>
+                {{/if}}
+                {{#if character.background.events.length}}
+                <div class="summary-line">
+                    <strong>Eventi della Vita:</strong> {{character.background.events.length}}
+                </div>
+                {{/if}}
                 <div class="summary-line">
                     <strong class="{{#if isOverBudget}}overbudget{{/if}}">💰 {{localize "WITCHER.Wizard.Gear.MoneyLabel"}}:</strong> {{character.money}} {{localize "WITCHER.Currency.crown"}}
                 </div>

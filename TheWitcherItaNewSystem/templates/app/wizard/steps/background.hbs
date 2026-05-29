@@ -1,7 +1,7 @@
 <div class="wizard-step step-background">
     <h2 style="display: flex; justify-content: center; align-items: center; gap: 12px; margin-bottom: 15px;">
         <span>{{localize "WITCHER.Wizard.Step.Background.Title"}}</span>
-        <button type="button" class="btn-roll-inline" data-action="rollAllBackground" title="Genera tutto il background casualmente" style="margin: 0; width: 30px; height: 30px; display: inline-flex; align-items: center; justify-content: center;">
+        <button type="button" class="btn-roll-inline" data-action="rollAllBackground" title="Genera tutto il background casualmente" style="margin: 0; width: 24px; height: 24px; font-size: 13px; display: inline-flex; align-items: center; justify-content: center;">
             <i class="fa-solid fa-dice-d20"></i>
         </button>
     </h2>
@@ -26,7 +26,7 @@
                         <option value="">— Genere —</option>
                         <option value="male" {{#if (eq character.gender "male")}}selected{{/if}}>{{localize "WITCHER.Actor.Gender.Male"}}</option>
                         <option value="female" {{#if (eq character.gender "female")}}selected{{/if}}>{{localize "WITCHER.Actor.Gender.Female"}}</option>
-                        <option value="other" {{#if (eq character.gender "other")}}selected{{/if}}>{{localize "WITCHER.Actor.Gender.Other"}}</option>
+                        {{!-- "Other" gender option removed; only male/female allowed --}}
                     </select>
                 </div>
 

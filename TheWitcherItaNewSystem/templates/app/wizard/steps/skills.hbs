@@ -9,15 +9,18 @@
     <div class="skills-container tabs" data-group="skill-tabs">
         <nav class="sheet-tabs tabs" data-group="skill-tabs">
             <a class="item {{#if (eq activeSkillTab 'profession-skills')}}active{{/if}}" data-action="switchSkillTab" data-tab="profession-skills">
-                {{localize "WITCHER.Wizard.Skills.Professional"}}
+                <i class="fa-solid fa-briefcase tab-icon" aria-hidden="true"></i>
+                <span class="tab-title">{{localize "WITCHER.Wizard.Skills.Professional"}}</span>
                 <span class="badge {{#if (lt professionPointsRemaining 0)}}negative{{/if}}">{{professionPointsRemaining}}</span>
             </a>
             <a class="item {{#if (eq activeSkillTab 'pickup-skills')}}active{{/if}}" data-action="switchSkillTab" data-tab="pickup-skills">
-                {{localize "WITCHER.Wizard.Skills.Pickup"}}
+                <i class="fa-solid fa-hand tab-icon" aria-hidden="true"></i>
+                <span class="tab-title">{{localize "WITCHER.Wizard.Skills.Pickup"}}</span>
                 <span class="badge {{#if (lt pickupPointsRemaining 0)}}negative{{/if}}">{{pickupPointsRemaining}}</span>
             </a>
             <a class="item {{#if (eq activeSkillTab 'magic-skills')}}active{{/if}}" data-action="switchSkillTab" data-tab="magic-skills">
-                Magia
+                <i class="fa-solid fa-wand-magic-sparkles tab-icon" aria-hidden="true"></i>
+                <span class="tab-title">Magia</span>
             </a>
         </nav>
 

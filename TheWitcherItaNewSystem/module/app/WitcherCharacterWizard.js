@@ -118,6 +118,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         rollParentsFate: function(event, target) { this._rollParentsFate(event, target); },
         updateBackground: function(event, target) { this._updateBackground(event, target); },
         toggleGear: function(event, target) { this._toggleGear(event, target); },
+        removeGear: function(event, target) { this._removeGear(event, target); },
         selectAvatar: function(event, target) { this._selectAvatar(event, target); },
         openListModal: function(event, target) { this._openListModal(event, target); },
         goToStep: function(event, target) { this._goToStep(event, target); },
@@ -254,6 +255,13 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                     selected: this.characterData.gear.some(g => (g._id === obj.id || g.id === obj.id))
                 };
             };
+
+            const selectedGear = this.characterData.gear.map(i => {
+                const obj = i.toObject ? i.toObject() : { ...i };
+                obj._id = obj._id || obj.id || i.id;
+                obj.id = obj.id || obj._id;
+                return obj;
+            });
             
             
             // 2.1 Profession Gear Logic
@@ -325,23 +333,26 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
 
             let filteredProfessions = this.professions;
             if (this.characterData.race) {
-                const raceName = (this.characterData.race.name || "").toLowerCase();
+                const raceName = this.characterData.race.name || "";
                 filteredProfessions = this.professions.filter(p => {
-                    const pName = (p.name || "").toLowerCase();
+                    const pName = p.name || "";
                     
-                    // Filter Mago/Prete/Sacerdote
-                    if (pName.includes("mago") || pName.includes("prete") || pName.includes("sacerdote")) {
-                        return raceName.includes("umani") || raceName.includes("elfi") || raceName.includes("umano") || raceName.includes("elfo");
+                    if (this._isWitcherName(raceName)) {
+                        return this._isWitcherName(pName);
                     }
-                    
-                    // Filter Witcher
-                    if (pName.includes("witcher")) {
-                        return raceName.includes("witcher");
+
+                    if (this._isWitcherName(pName)) {
+                        return false;
+                    }
+
+                    if (this._isMagicProfessionName(pName)) {
+                        return this._isMagicRaceName(raceName);
                     }
                     
                     return true;
                 });
             }
+            filteredProfessions = [...filteredProfessions].sort((a, b) => (a.name || "").localeCompare(b.name || "", "it", { sensitivity: "base" }));
 
             const regionsRaw = [...new Set((this.patriaList || []).map(p => p.regione))];
             const regionLabels = {
@@ -587,6 +598,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 gearCategoryVisibility: this.gearCategoryVisibility,
                 gearFilterText: this.gearFilterText,
                 gearCost: gearCost,
+                selectedGear: selectedGear,
                 professionGearList: professionGearList,
                 professionGearRemaining: professionGearRemaining,
                 professionGearChoose: gearConfig?.choose || 0,
@@ -607,7 +619,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                         hexes: selectedHexesCount
                     },
                     isMage: (this.characterData.profession?.name?.toLowerCase() || "").includes("mago"),
-                    isPriestOrDruid: (this.characterData.profession?.name?.toLowerCase() || "").includes("prete") || (this.characterData.profession?.name?.toLowerCase() || "").includes("sacerdote") || (this.characterData.profession?.name?.toLowerCase() || "").includes("druido")
+                    isPriestOrDruid: (this.characterData.profession?.name?.toLowerCase() || "").includes("prete") || (this.characterData.profession?.name?.toLowerCase() || "").includes("druido")
                 },
                 summary: this._getSummaryContext()
             };
@@ -816,6 +828,111 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             attributeLabel: attributeLabel,
             isNativeLanguage: this._isNativeLanguage(skill.name)
         };
+    }
+
+    _cleanSkillName(value) {
+        return (value || "")
+            .toString()
+            .trim()
+            .toLowerCase()
+            .normalize("NFD")
+            .replace(/[\u0300-\u036f]/g, "")
+            .replace(/\s*\(\d+\)\s*$/, "");
+    }
+
+    _resolveSkillMapEntry(skillOrName) {
+        if (!skillOrName || !CONFIG.WITCHER?.skillMap) return null;
+
+        const skillName = typeof skillOrName === "string" ? skillOrName : skillOrName.name;
+        const rawCandidates = [
+            skillName,
+            typeof skillOrName === "string" ? skillOrName : skillOrName.system?.key,
+            typeof skillOrName === "string" ? null : skillOrName.system?.skill
+        ].filter(Boolean);
+
+        for (const candidate of rawCandidates) {
+            const key = this._normalizeSkillKey(candidate);
+            if (CONFIG.WITCHER.skillMap[key]) {
+                return { mapKey: key, entry: CONFIG.WITCHER.skillMap[key] };
+            }
+        }
+
+        const normalizedCandidates = rawCandidates.map(candidate => this._cleanSkillName(candidate));
+
+        for (const [mapKey, entry] of Object.entries(CONFIG.WITCHER.skillMap)) {
+            const labels = [
+                mapKey,
+                entry.name,
+                entry.label ? game.i18n.localize(entry.label) : null,
+                entry.rollLabel ? game.i18n.localize(entry.rollLabel) : null
+            ].filter(Boolean).map(label => this._cleanSkillName(label));
+
+            if (normalizedCandidates.some(candidate => labels.includes(candidate))) {
+                return { mapKey, entry };
+            }
+        }
+
+        return null;
+    }
+
+    _getActorSkillPath(skillOrName) {
+        const resolved = this._resolveSkillMapEntry(skillOrName);
+        if (!resolved?.entry?.attribute?.name) return null;
+
+        return {
+            stat: resolved.entry.attribute.name,
+            key: resolved.entry.name || resolved.mapKey,
+            entry: resolved.entry,
+            mapKey: resolved.mapKey
+        };
+    }
+
+    _getWizardProfessionSkillPaths() {
+        const paths = new Set();
+        for (const name of this._getProfessionSkillNames()) {
+            const skill = this._findSkillByKeyOrName(name);
+            const actorPath = this._getActorSkillPath(skill || name);
+            if (actorPath) paths.add(`${actorPath.stat}.${actorPath.key}`);
+        }
+        return paths;
+    }
+
+    async _applyWizardSkillsToActor(actor) {
+        if (!actor) return;
+
+        const updates = {};
+        const professionSkillPaths = this._getWizardProfessionSkillPaths();
+
+        for (const [skillId, value] of Object.entries(this.characterData.skills)) {
+            if (skillId === "definingSkill") continue;
+
+            const numericValue = Number(value) || 0;
+            if (numericValue <= 0) continue;
+
+            const skillItem = this.allSkills.find(s => s._id === skillId) || this._findSkillByKeyOrName(skillId);
+            const actorPath = this._getActorSkillPath(skillItem || skillId);
+
+            if (!actorPath) {
+                console.warn(`TheWitcherItaNewSystem | Wizard | Unable to map skill to actor data: "${skillId}"`);
+                continue;
+            }
+
+            const pathKey = `${actorPath.stat}.${actorPath.key}`;
+            const basePath = `system.skills.${pathKey}`;
+            const isProfession = professionSkillPaths.has(pathKey);
+            const multiplier = skillItem ? this._getSkillCost(skillItem) : (Number(actorPath.entry.cost) || 1);
+
+            updates[`${basePath}.value`] = numericValue;
+            updates[`${basePath}.isProfession`] = isProfession;
+            updates[`${basePath}.isPickup`] = !isProfession;
+            updates[`${basePath}.isLearned`] = true;
+            updates[`${basePath}.multiplier`] = multiplier;
+            updates[`${basePath}.isCombatSkill`] = Boolean(skillItem?.system?.isCombatSkill);
+        }
+
+        if (Object.keys(updates).length > 0) {
+            await actor.update(updates);
+        }
     }
 
     _getProfessionSkills() {
@@ -1039,7 +1156,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
 
     _isSpellcaster() {
         const profName = this.characterData.profession?.name?.toLowerCase() || "";
-        return profName.includes("mago") || profName.includes("prete") || profName.includes("sacerdote") || profName.includes("druido");
+        return profName.includes("mago") || profName.includes("prete") || profName.includes("druido");
     }
 
     get maxSteps() {
@@ -1050,7 +1167,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         const profName = this.characterData.profession?.name?.toLowerCase() || "";
         if (profName.includes("mago")) {
             return { spells: 5, rituals: 1, hexes: 1 };
-        } else if (profName.includes("prete") || profName.includes("sacerdote") || profName.includes("druido")) {
+        } else if (profName.includes("prete") || profName.includes("druido")) {
             return { invocations: 2, rituals: 2 };
         }
         return {};
@@ -1174,6 +1291,51 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         const mapping = this._getStepMapping();
         const type = mapping[step]?.type || "finish";
         return "systems/TheWitcherItaNewSystem/templates/app/wizard/steps/" + type + ".hbs";
+    }
+
+    _isWitcherName(name = "") {
+        return name.toLowerCase().includes("witcher");
+    }
+
+    _isMagicRaceName(name = "") {
+        const lower = name.toLowerCase();
+        return lower.includes("umano") || lower.includes("umani") || lower.includes("elfo") || lower.includes("elfi");
+    }
+
+    _isMagicProfessionName(name = "") {
+        const lower = name.toLowerCase();
+        return lower.includes("mago") || lower.includes("prete");
+    }
+
+    _findRaceByName(name) {
+        return this.races.find(r => (r.name || "").toLowerCase() === name.toLowerCase());
+    }
+
+    _findProfessionByName(name) {
+        return this.professions.find(p => (p.name || "").toLowerCase() === name.toLowerCase());
+    }
+
+    _resetProfessionChoices() {
+        this.characterData.skills = {};
+        this.characterData.selectedProfessionGear = [];
+        this.characterData.selectedCombatSkills = [];
+        this.characterData.selectedBardLanguages = [];
+    }
+
+    _applyProfession(prof) {
+        this._resetProfessionChoices();
+        this.characterData.profession = prof;
+        if (prof.img) this.characterData.img = prof.img;
+
+        const names = this._getProfessionSkillNames();
+        names.forEach(name => {
+            const s = this._findSkillByKeyOrName(name);
+            if (s && (this.characterData.skills[s._id] === undefined || this.characterData.skills[s._id] === 0)) {
+                this.characterData.skills[s._id] = 1;
+            }
+        });
+
+        this._updateNativeLanguage();
     }
 
     _onRender(context, options) {
@@ -1395,6 +1557,11 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         const raceName = this.characterData.race?.name || "umano";
         const rolledName = this._getRandomFantasyName(raceName);
         this.characterData.name = rolledName;
+        // Se non è stato selezionato un genere, generane uno casuale (male/female)
+        if (!this.characterData.gender) {
+            const genders = ["male", "female"];
+            this.characterData.gender = genders[Math.floor(Math.random() * genders.length)];
+        }
         this.render(true);
     }
 
@@ -1472,6 +1639,19 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         if (race) { 
             this.characterData.race = race; 
             this.characterData.gnomeSkills = []; // Reset gnome skills choices on race change
+
+            if (this._isWitcherName(race.name)) {
+                const witcherProfession = this._findProfessionByName("Witcher");
+                if (witcherProfession) this._applyProfession(witcherProfession);
+            } else if (this.characterData.profession) {
+                const profName = this.characterData.profession.name || "";
+                if (this._isWitcherName(profName) || (this._isMagicProfessionName(profName) && !this._isMagicRaceName(race.name))) {
+                    this.characterData.profession = null;
+                    this._resetProfessionChoices();
+                    ui.notifications.info("La professione selezionata non e compatibile con questa razza ed e stata rimossa.");
+                }
+            }
+
             this._updateNativeLanguage();
             const limits = this._getAgeLimits();
             this.characterData.age = Math.floor(Math.random() * (limits.max - limits.min + 1)) + limits.min;
@@ -1484,28 +1664,26 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         const id = target.dataset.profId;
         const prof = this.professions.find(p => p.id === id);
         if (prof) {
-            // Reset old profession skills to 0
-            this.characterData.skills = {};
-            this.characterData.selectedProfessionGear = [];
-            
-            // Reset old profession gear
-            this.characterData.selectedProfessionGear = [];
-
-            this.characterData.profession = prof;
-            if (prof.img) this.characterData.img = prof.img;
-            
-            const names = this._getProfessionSkillNames();
-            names.forEach(name => {
-                const s = this._findSkillByKeyOrName(name);
-                if (s) {
-                    // Only set to 1 if it's not already set (e.g. by native language at 8)
-                    if (this.characterData.skills[s._id] === undefined || this.characterData.skills[s._id] === 0) {
-                        this.characterData.skills[s._id] = 1;
-                    }
+            if (this._isWitcherName(prof.name)) {
+                const witcherRace = this._findRaceByName("Witcher");
+                if (witcherRace) {
+                    this.characterData.race = witcherRace;
+                    this.characterData.gnomeSkills = [];
+                    const limits = this._getAgeLimits();
+                    this.characterData.age = Math.floor(Math.random() * (limits.max - limits.min + 1)) + limits.min;
+                    this.characterData.name = this._getRandomFantasyName(witcherRace.name);
                 }
-            });
+            } else if (this.characterData.race && this._isWitcherName(this.characterData.race.name)) {
+                ui.notifications.warn("La razza Witcher puo avere solo la professione Witcher.");
+                return;
+            }
 
-            this._updateNativeLanguage();
+            if (this._isMagicProfessionName(prof.name) && this.characterData.race && !this._isMagicRaceName(this.characterData.race.name)) {
+                ui.notifications.warn("Solo Umani ed Elfi possono scegliere la professione del Mago o del Prete.");
+                return;
+            }
+
+            this._applyProfession(prof);
             this.render(true);
         }
     }
@@ -1576,11 +1754,13 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
     }
 
     _rollStats(event, target) {
+        // Randomly allocate remaining stat points
         const statsKeys = ["int", "ref", "dex", "body", "spd", "emp", "cra", "will", "luck"];
         let total = Object.values(this.characterData.stats).reduce((a, b) => a + Number(b), 0);
         let remaining = 60 - total;
         if (remaining <= 0) return;
 
+        // Distribute remaining stat points randomly
         while (remaining > 0) {
             const eligible = statsKeys.filter(k => (this.characterData.stats[k] || 0) < 10);
             if (eligible.length === 0) break;
@@ -1637,7 +1817,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         
         let vigor = 0;
         const profName = this.characterData.profession?.name?.toLowerCase() || "";
-        if (profName.includes('witcher') || profName.includes('prete') || profName.includes('sacerdote')) {
+        if (profName.includes('witcher') || profName.includes('prete')) {
             vigor = 2;
         } else if (profName.includes('mago')) {
             vigor = 5;
@@ -1673,6 +1853,11 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
     }
 
     async _rollAllBackground(event, target) {
+        // Se non è stato selezionato un genere, generane uno casuale (male/female)
+        if (!this.characterData.gender) {
+            const genders = ["male", "female"];
+            this.characterData.gender = genders[Math.floor(Math.random() * genders.length)];
+        }
         if (!this.characterData.originRegion || !this.characterData.homeland) {
             if (this.patriaList && this.patriaList.length > 0) {
                 const randomPatria = this.patriaList[Math.floor(Math.random() * this.patriaList.length)];
@@ -1720,6 +1905,53 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
     }
 
     async _rollAllSkills(event, target) {
+        const isArmigero = this.characterData.profession?.name?.toLowerCase() === "armigero";
+        if (isArmigero) {
+            if (!this.characterData.selectedCombatSkills) this.characterData.selectedCombatSkills = [];
+            const maxCombatSkills = 5;
+            let combatRemaining = Math.max(0, maxCombatSkills - this.characterData.selectedCombatSkills.length);
+
+            while (combatRemaining > 0) {
+                const eligibleCombat = this.allSkills.filter(s =>
+                    s.system?.isCombatSkill &&
+                    !this.characterData.selectedCombatSkills.includes(s._id) &&
+                    !this._getProfessionSkillNames().includes(s.name)
+                );
+
+                if (eligibleCombat.length === 0) break;
+
+                const randomSkill = eligibleCombat[Math.floor(Math.random() * eligibleCombat.length)];
+                this.characterData.selectedCombatSkills.push(randomSkill._id);
+                this.characterData.skills[randomSkill._id] = 1;
+                combatRemaining--;
+            }
+        }
+
+        const isBardo = this.characterData.profession?.name?.toLowerCase() === "bardo";
+        const isMercante = this.characterData.profession?.name?.toLowerCase() === "mercante";
+        if (isBardo || isMercante) {
+            if (!this.characterData.selectedBardLanguages) this.characterData.selectedBardLanguages = [];
+            const maxLangs = isMercante ? 2 : 1;
+            let langsRemaining = Math.max(0, maxLangs - this.characterData.selectedBardLanguages.length);
+            const langKeys = ["commonspeech", "eldersp", "dwarven"];
+            const validLangIds = langKeys.map(k => this._findSkillByKeyOrName(k)?._id).filter(Boolean);
+
+            while (langsRemaining > 0) {
+                const eligibleLangs = this.allSkills.filter(s =>
+                    validLangIds.includes(s._id) &&
+                    !this._isNativeLanguage(s.name) &&
+                    !this.characterData.selectedBardLanguages.includes(s._id)
+                );
+
+                if (eligibleLangs.length === 0) break;
+
+                const randomLang = eligibleLangs[Math.floor(Math.random() * eligibleLangs.length)];
+                this.characterData.selectedBardLanguages.push(randomLang._id);
+                this.characterData.skills[randomLang._id] = 1;
+                langsRemaining--;
+            }
+        }
+
         // --- 1. Distribute Profession Skills ---
         const profSkills = this._getProfessionSkills();
         for (const s of profSkills) {
@@ -2128,6 +2360,20 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         this.render(true);
     }
 
+    _removeGear(event, target) {
+        event?.preventDefault?.();
+        event?.stopPropagation?.();
+
+        const id = target.dataset.itemId;
+        if (!id) return;
+
+        const idx = this.characterData.gear.findIndex(g => g.id === id || g._id === id);
+        if (idx > -1) {
+            this.characterData.gear.splice(idx, 1);
+            this.render(true);
+        }
+    }
+
     _toggleGearCategory(event, target) {
         const category = target.dataset.category;
         if (!category || !(category in this.gearCategoryVisibility)) return;
@@ -2430,6 +2676,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             this.characterData.skills[finalName] = (this.characterData.skills[finalName] || 0) + homelandBonusValue;
         }
 
+        const raceItemsToCreate = [];
         const itemsToCreate = [];
 
         if (this.characterData.race) {
@@ -2446,7 +2693,11 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 }
             }
 
-            itemsToCreate.push(r);
+            raceItemsToCreate.push(r);
+        }
+
+        if (raceItemsToCreate.length > 0) {
+            await actor.createEmbeddedDocuments("Item", raceItemsToCreate);
         }
 
         if (this.characterData.profession) {
@@ -2512,29 +2763,11 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             itemsToCreate.push(...magicArr);
         }
 
-        // Collect exact skills from allSkills
-        const myProfNames = this._getProfessionSkillNames().map(s => s.toLowerCase());
-        for (const [skillId, value] of Object.entries(this.characterData.skills)) {
-            if (skillId === "definingSkill") continue; // Handled within profession item
-            if (value > 0) {
-                const skillItem = this.allSkills.find(s => s._id === skillId);
-                if (skillItem) {
-                    let sData = skillItem.toObject ? skillItem.toObject() : skillItem;
-                    const { _id, id, ...sClean } = sData;
-                    const cloned = foundry.utils.deepClone(sClean);
-                    cloned.system.value = Number(value) || 0;
-                    cloned.system.isProfession = myProfNames.includes(cloned.name.toLowerCase());
-                    cloned.system.isPickup = !cloned.system.isProfession;
-                    cloned.system.isLearned = true;
-                    cloned.system.multiplier = cloned.system.isDifficult ? 2 : 1;
-                    itemsToCreate.push(cloned);
-                }
-            }
-        }
-
         if (itemsToCreate.length > 0) {
             await actor.createEmbeddedDocuments("Item", itemsToCreate);
         }
+
+        await this._applyWizardSkillsToActor(actor);
 
         ui.notifications.info(`${name} creato con successo!`);
         this.close();

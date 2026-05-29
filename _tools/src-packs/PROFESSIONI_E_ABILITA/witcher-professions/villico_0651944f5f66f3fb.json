@@ -12,66 +12,66 @@
             "definition": "<p>Il Villico è abituato a sopportare le difficoltà, la fatica e i torti del mondo. Quando è sottoposto a prove di resistenza o affronta disagi fisici (come fame, freddo, o lavori massacranti), può utilizzare Intolleranza al posto di Tempra. Inoltre, quando il Villico subisce un torto evidente da parte di figure di autorità o classi sociali superiori, ottiene un bonus +2 a resistere alla coercizione mentale o all'intimidazione.</p>"
         },
         "skillPath1": {
-            "pathName": "N/A (Nessun percorso)",
+            "pathName": "Contadino",
             "skill1": {
-                "skillName": "",
-                "stat": "",
+                "skillName": "Tempo del Raccolto",
+                "stat": "int",
                 "level": 0,
-                "definition": ""
+                "definition": "<p>Grazie ad anni di esperienza su come e quando mietere, il personaggio ottiene unità extra (pari a metà del grado dell'abilità) quando raccoglie componenti alchemiche a base vegetale.</p>"
             },
             "skill2": {
-                "skillName": "",
-                "stat": "",
+                "skillName": "Addestratore",
+                "stat": "emp",
                 "level": 0,
-                "definition": ""
+                "definition": "<p>Fornisce la capacità di dare ordini diretti agli animali domestici, facendoli obbedire al meglio delle loro possibilità.</p>"
             },
             "skill3": {
-                "skillName": "",
-                "stat": "",
+                "skillName": "Saggezza Contadina",
+                "stat": "int",
                 "level": 0,
-                "definition": ""
+                "definition": "<p>Permette di eseguire trucchetti di magia popolare (come prevedere il meteo, scacciare gli incubi, creare portafortuna o rivelare la magia nera) compiendo rituali casalinghi ed erboristici.</p>"
             }
         },
         "skillPath2": {
-            "pathName": "N/A (Nessun percorso)",
+            "pathName": "Cuoco",
             "skill1": {
-                "skillName": "",
-                "stat": "",
+                "skillName": "Macellaio",
+                "stat": "cra",
                 "level": 0,
-                "definition": ""
+                "definition": "<p>Scuoiando un mostro o un animale in base alla sua complessità, garantisce di estrarre e ottenere automaticamente la quantità massima possibile di un elemento di bottino organico.</p>"
             },
             "skill2": {
-                "skillName": "",
-                "stat": "",
+                "skillName": "Tonico",
+                "stat": "cra",
                 "level": 0,
-                "definition": ""
+                "definition": "<p>Permette di mescolare in dieci minuti componenti alchemici per creare uno speciale preparato capace di curare all'istante le condizioni di Avvelenamento, Nausea ed Ebbrezza.</p>"
             },
             "skill3": {
-                "skillName": "",
-                "stat": "",
+                "skillName": "Stufato di Mamma",
+                "stat": "cra",
                 "level": 0,
-                "definition": ""
+                "definition": "<p>Dedicando un'ora ai fornelli, prepara un pasto per sei persone. In base agli ingredienti usati, fornisce ai compagni potenti bonus (come aumento dell'armatura naturale, immunità, resistenze) per 24 ore.</p>"
             }
         },
         "skillPath3": {
-            "pathName": "N/A (Nessun percorso)",
+            "pathName": "Operaio",
             "skill1": {
-                "skillName": "",
-                "stat": "",
+                "skillName": "Scavafossi",
+                "stat": "body",
                 "level": 0,
-                "definition": ""
+                "definition": "<p>La forza sviluppata con il lavoro manuale aumenta in modo massiccio il massimale di Ingombro (ING), conferendo inoltre bonus passivi alle prove di Prestanza e Tempra.</p>"
             },
             "skill2": {
-                "skillName": "",
-                "stat": "",
+                "skillName": "Grog",
+                "stat": "cra",
                 "level": 0,
-                "definition": ""
+                "definition": "<p>Rende il Villico un esperto nel preparare alcolici devastanti. Mescolando sostanze alchemiche ai drink, può intossicare gravemente gli avversari raddoppiando gli effetti dell'ebbrezza.</p>"
             },
             "skill3": {
-                "skillName": "",
-                "stat": "",
+                "skillName": "Mordere l'Orecchio",
+                "stat": "body",
                 "level": 0,
-                "definition": ""
+                "definition": "<p>Quando si trova in lotta, può staccare a morsi un orecchio all'avversario infliggendo danni, liberandosi dalla presa e procurando alla vittima un malus permanente di -1 a Carisma e Seduzione.</p>"
             }
         },
         "professionSkills": [

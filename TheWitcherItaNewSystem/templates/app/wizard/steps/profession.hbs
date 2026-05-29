@@ -6,9 +6,23 @@
         <div class="master-panel profession-list">
             {{#each professions}}
             <div class="compact-selector-card {{#if (eq ../character.profession._id id)}}selected{{/if}}" data-action="selectProfession" data-prof-id="{{id}}">
+                <span class="profession-icon" aria-hidden="true">
+                    {{#if (eq name "Villico")}}<i class="fa-solid fa-wheat-awn"></i>
+                    {{else if (eq name "Prete")}}<i class="fa-solid fa-hands-praying"></i>
+                    {{else if (eq name "Druido")}}<i class="fa-solid fa-leaf"></i>
+                    {{else if (eq name "Bardo")}}<i class="fa-solid fa-music"></i>
+                    {{else if (eq name "Medico")}}<i class="fa-solid fa-briefcase-medical"></i>
+                    {{else if (eq name "Criminale")}}<i class="fa-solid fa-mask"></i>
+                    {{else if (eq name "Mercante")}}<i class="fa-solid fa-coins"></i>
+                    {{else if (eq name "Mago")}}<i class="fa-solid fa-hat-wizard"></i>
+                    {{else if (eq name "Armigero")}}<i class="fa-solid fa-shield-halved"></i>
+                    {{else if (eq name "Artigiano")}}<i class="fa-solid fa-hammer"></i>
+                    {{else}}<i class="fa-solid fa-user"></i>{{/if}}
+                </span>
                 <div class="selector-info">
                     <h3>{{name}}</h3>
                 </div>
+                <i class="fa-solid fa-chevron-right selector-arrow" aria-hidden="true"></i>
             </div>
             {{/each}}
         </div>

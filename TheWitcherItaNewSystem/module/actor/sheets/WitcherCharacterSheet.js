@@ -180,7 +180,7 @@ export default class WitcherCharacterSheet extends WitcherActorSheet {
             key,
             ...value
         }));
-        context.system.lifeEventCounter = context.system.lifeEventCounter || context.system.general.lifeEvents.length;
+        context.system.lifeEventCounter = Math.min(context.system.lifeEventCounter || context.system.general.lifeEvents.length, 19);
 
         context.enrichedText = {
             ...context.enrichedText,
