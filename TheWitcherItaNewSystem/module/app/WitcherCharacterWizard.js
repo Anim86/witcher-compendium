@@ -119,7 +119,8 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         toggleGearCategory: function(event, target) { this._toggleGearCategory(event, target); },
         rollAllSkills: function(event, target) { this._rollAllSkills(event, target); },
         rollStartingGold: function(event, target) { this._rollStartingGold(event, target); },
-        toggleMagicItem: function(event, target) { this._toggleMagicItem(event, target); }
+        toggleMagicItem: function(event, target) { this._toggleMagicItem(event, target); },
+        rollAllMagic: function(event, target) { this._rollAllMagic(event, target); }
     };
 
     static PARTS = {
@@ -542,10 +543,10 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 selectedRitualsCount = selected.filter(m => m.type === "ritual").length;
                 selectedHexesCount = selected.filter(m => m.type === "hex").length;
 
-                if (this.allSpells) magicSpells = this.allSpells.map(sanitizeMagic);
-                if (this.allInvocations) magicInvocations = this.allInvocations.map(sanitizeMagic);
-                if (this.allRituals) magicRituals = this.allRituals.map(sanitizeMagic);
-                if (this.allHexes) magicHexes = this.allHexes.map(sanitizeMagic);
+                if (this.allSpells) magicSpells = this.allSpells.map(sanitizeMagic).sort((a, b) => (a.name || "").localeCompare(b.name || "", "it", { sensitivity: "base" }));
+                if (this.allInvocations) magicInvocations = this.allInvocations.map(sanitizeMagic).sort((a, b) => (a.name || "").localeCompare(b.name || "", "it", { sensitivity: "base" }));
+                if (this.allRituals) magicRituals = this.allRituals.map(sanitizeMagic).sort((a, b) => (a.name || "").localeCompare(b.name || "", "it", { sensitivity: "base" }));
+                if (this.allHexes) magicHexes = this.allHexes.map(sanitizeMagic).sort((a, b) => (a.name || "").localeCompare(b.name || "", "it", { sensitivity: "base" }));
             }
 
             return {
@@ -716,7 +717,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 labelType: labelType,
                 description: m.system?.description || ""
             };
-        });
+        }).sort((a, b) => (a.name || "").localeCompare(b.name || "", "it", { sensitivity: "base" }));
 
         return { stats, skills, professionGear: profGear, selectedMagic };
     }
@@ -1494,6 +1495,48 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         const cleanObj = fullDoc.toObject ? fullDoc.toObject() : fullDoc;
         cleanObj.id = cleanObj._id || cleanObj.id;
         this.characterData.selectedMagic.push(cleanObj);
+        this.render(true);
+    }
+
+    async _rollAllMagic(event, target) {
+        if (!this._isSpellcaster()) return;
+
+        const limits = this._getMagicLimits();
+        this.characterData.selectedMagic = [];
+
+        const sanitizeMagic = (i) => {
+            const obj = i.toObject ? i.toObject() : i;
+            obj.id = obj._id || obj.id || i.id;
+            obj._id = obj.id;
+            return obj;
+        };
+
+        const getRandomItems = (arr, count) => {
+            if (!arr || !arr.length) return [];
+            const shuffled = [...arr].sort(() => Math.random() - 0.5);
+            return shuffled.slice(0, count).map(sanitizeMagic);
+        };
+
+        if (limits.spells && this.allSpells) {
+            const selected = getRandomItems(this.allSpells, limits.spells);
+            this.characterData.selectedMagic.push(...selected);
+        }
+
+        if (limits.invocations && this.allInvocations) {
+            const selected = getRandomItems(this.allInvocations, limits.invocations);
+            this.characterData.selectedMagic.push(...selected);
+        }
+
+        if (limits.rituals && this.allRituals) {
+            const selected = getRandomItems(this.allRituals, limits.rituals);
+            this.characterData.selectedMagic.push(...selected);
+        }
+
+        if (limits.hexes && this.allHexes) {
+            const selected = getRandomItems(this.allHexes, limits.hexes);
+            this.characterData.selectedMagic.push(...selected);
+        }
+
         this.render(true);
     }
 
