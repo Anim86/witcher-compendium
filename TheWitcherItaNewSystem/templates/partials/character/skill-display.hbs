@@ -8,8 +8,9 @@
             {{#if skill.isLearned}}<i class="fa-solid fa-graduation-cap" data-tooltip="{{localize 'WITCHER.skills.learn'}}"></i>{{/if}}
         </div>
     </div>
-    <div class="skill-value-badge">
-        {{#if (gte skill.value 0)}}+{{/if}}{{skill.value}}
+    <div class="skill-value-badge {{#if (gt skill.total skill.value)}}has-bonus{{else if (lt skill.total skill.value)}}has-penalty{{/if}}"
+         {{#if skill.modifiersSum}}data-tooltip="Base: {{skill.value}} | Mod: {{#if (gt skill.modifiersSum 0)}}+{{/if}}{{skill.modifiersSum}}"{{/if}}>
+        {{#if (gte skill.total 0)}}+{{/if}}{{skill.total}}
         {{#if (gt @root.system.general.improvementPoints 0)}}
             <a class="spend-ip-skill" data-tooltip="{{localize 'WITCHER.Progression.SpendIP'}}"><i class="fa-solid fa-plus"></i></a>
         {{/if}}

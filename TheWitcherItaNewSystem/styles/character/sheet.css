@@ -1490,6 +1490,18 @@ a.button-roll:hover {
         min-width: 32px;
         text-align: center;
         flex-shrink: 0;
+
+        &.has-bonus {
+            color: #2ecc71 !important;
+            background: rgba(46, 204, 113, 0.15) !important;
+            border: 1px solid rgba(46, 204, 113, 0.3) !important;
+        }
+
+        &.has-penalty {
+            color: #e74c3c !important;
+            background: rgba(231, 76, 60, 0.15) !important;
+            border: 1px solid rgba(231, 76, 60, 0.3) !important;
+        }
     }
 
     &.is-profession {

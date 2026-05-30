@@ -969,6 +969,8 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
 
         console.log("TheWitcherItaNewSystem | _getProfessionSkills | Names to find:", names);
         console.log("TheWitcherItaNewSystem | _getProfessionSkills | Total skills in allSkills:", this.allSkills.length);
+        
+        const otherSkills = [];
         for (const name of names) {
             const skill = this._findSkillByKeyOrName(name);
             if (skill) {
@@ -976,7 +978,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 const info = this._getSkillInfo(skill);
                 const isManualCombatSkill = this.characterData.selectedCombatSkills && this.characterData.selectedCombatSkills.includes(skill._id);
                 const isManualBardLanguage = this.characterData.selectedBardLanguages && this.characterData.selectedBardLanguages.includes(skill._id);
-                result.push({
+                otherSkills.push({
                     key: skill._id,
                     name: skill.name,
                     value: this.characterData.skills[skill._id] || 1, // Start at 1
@@ -997,12 +999,17 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 console.warn(`TheWitcherItaNewSystem | _getProfessionSkills | Skill not found in allSkills: "${name}"`);
             }
         }
-        console.log("TheWitcherItaNewSystem | _getProfessionSkills | Found starting skills count:", result.length);
-        return result;
+
+        // Sort other skills alphabetically by name
+        otherSkills.sort((a, b) => a.name.localeCompare(b.name, "it", { sensitivity: "base" }));
+
+        const finalResult = [...result, ...otherSkills];
+        console.log("TheWitcherItaNewSystem | _getProfessionSkills | Found starting skills count:", finalResult.length);
+        return finalResult;
     }
 
     _getPickupSkills() {
-        return this.characterData.selectedPickupSkills.map(id => {
+        const list = this.characterData.selectedPickupSkills.map(id => {
             const skill = this.allSkills.find(s => s._id === id);
             if (!skill) return null;
             const cost = this._getSkillCost(skill);
@@ -1017,6 +1024,9 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 attributeLabel: info.attributeLabel
             };
         }).filter(s => s !== null);
+
+        list.sort((a, b) => a.name.localeCompare(b.name, "it", { sensitivity: "base" }));
+        return list;
     }
 
     _getAvailablePickupSkills() {
@@ -1026,7 +1036,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             return s?._id;
         }).filter(Boolean);
 
-        return this.allSkills.filter(s => {
+        const list = this.allSkills.filter(s => {
             const isProf = resolvedProfSkillIds.includes(s._id);
             const isSelected = this.characterData.selectedPickupSkills.includes(s._id);
             return !isProf && !isSelected;
@@ -1039,6 +1049,9 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 attributeLabel: info.attributeLabel
             };
         });
+
+        list.sort((a, b) => a.name.localeCompare(b.name, "it", { sensitivity: "base" }));
+        return list;
     }
 
     _isOverBudget(isPickup) {
@@ -2763,7 +2776,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                     const itemQty = confItem && typeof confItem === "object" ? confItem.quantity : 1;
 
                     let iData = item.toObject ? item.toObject() : item;
-                    const { _id, id, ...iClean } = iData;
+                    const { _id, id: itemId, ...iClean } = iData;
                     const cloned = foundry.utils.deepClone(iClean);
                     if (cloned.system) cloned.system.quantity = itemQty;
                     itemsToCreate.push(cloned);
@@ -2778,6 +2791,25 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 return foundry.utils.deepClone(mClean);
             });
             itemsToCreate.push(...magicArr);
+        }
+
+        // Add basic Witcher signs if profession is Witcher
+        const isWitcher = (this.characterData.profession?.name?.toLowerCase() || "").includes("witcher");
+        if (isWitcher) {
+            const signsPack = game.packs.get("witcher-compendium.witcher-signs");
+            if (signsPack) {
+                const signsDocs = await signsPack.getDocuments();
+                const basicSigns = signsDocs
+                    .filter(d => d.system?.level === "basic")
+                    .map(d => {
+                        let dData = d.toObject ? d.toObject() : d;
+                        const { _id, id, ...dClean } = dData;
+                        return foundry.utils.deepClone(dClean);
+                    });
+                itemsToCreate.push(...basicSigns);
+            } else {
+                console.warn("TheWitcherItaNewSystem | Wizard | witcher-compendium.witcher-signs pack not found.");
+            }
         }
 
         if (itemsToCreate.length > 0) {

@@ -65,6 +65,7 @@ export default class WitcherActor extends Actor {
         this.calculateShield();
         this.applyActiveEffects('derived');
         this.calculateArmorSP();
+        this.calculateSkills();
     }
 
     /** @override */
@@ -411,6 +412,62 @@ export default class WitcherActor extends Actor {
         this.calculateDerivedStat('resolve');
         this.calculateDerivedStat('focus');
         this.calculateDerivedStat('vigor');
+    }
+
+    calculateSkills() {
+        if (!this.system.skills) return;
+
+        const raceItem = this.items?.find(i => i.type === 'race');
+
+        for (const statGroup in this.system.skills) {
+            for (const skillName in this.system.skills[statGroup]) {
+                const skill = this.system.skills[statGroup][skillName];
+                if (!skill) continue;
+
+                let modifiers = 0;
+
+                // 1. Racial Modifiers
+                if (raceItem) {
+                    for (let i = 1; i <= 4; i++) {
+                        const perk = raceItem.system[`perk${i}`];
+                        if (perk && Array.isArray(perk.modifiers)) {
+                            perk.modifiers.forEach(mod => {
+                                if (mod.target === skillName) {
+                                    modifiers += Number(mod.value) || 0;
+                                }
+                            });
+                        }
+                    }
+                }
+
+                // 2. Specific Skill Modifiers
+                if (Array.isArray(skill.modifiers)) {
+                    skill.modifiers.forEach(mod => {
+                        modifiers += Number(mod.value) || 0;
+                    });
+                }
+
+                // 3. Active Effect Modifiers
+                if (Number(skill.activeEffectModifiers)) {
+                    modifiers += Number(skill.activeEffectModifiers);
+                }
+
+                // 4. Skill Group Modifiers
+                if (this.system.skillGroupModifiers) {
+                    Object.values(this.system.skillGroupModifiers).forEach(modifier => {
+                        if (
+                            modifier.group === 'allSkills' ||
+                            (CONFIG.WITCHER[modifier.group] && CONFIG.WITCHER[modifier.group].some(groupSkill => groupSkill === skillName))
+                        ) {
+                            modifiers += Number(modifier.value) || 0;
+                        }
+                    });
+                }
+
+                skill.modifiersSum = modifiers;
+                skill.total = (skill.value || 0) + modifiers;
+            }
+        }
     }
 
     calculateShield() {
