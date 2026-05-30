@@ -84,16 +84,46 @@
         "initialGear": {
             "choose": 5,
             "items": [
-                "Kord",
-                "Lancia",
-                "Ascia da Battaglia",
-                "Coltello da Lancio",
-                "Sacco",
-                "Camaglio",
-                "Brigantina",
-                "Brache Corazzate",
-                "Balestra",
-                "Brocchiero d'Acciaio"
+                {
+                    "name": "Kord",
+                    "quantity": 1
+                },
+                {
+                    "name": "Lancia",
+                    "quantity": 1
+                },
+                {
+                    "name": "Ascia da Battaglia",
+                    "quantity": 1
+                },
+                {
+                    "name": "Coltello da Lancio",
+                    "quantity": 5
+                },
+                {
+                    "name": "Sacca da Viaggio",
+                    "quantity": 1
+                },
+                {
+                    "name": "Camaglio",
+                    "quantity": 1
+                },
+                {
+                    "name": "Brigantina",
+                    "quantity": 1
+                },
+                {
+                    "name": "Brache Corazzate",
+                    "quantity": 1
+                },
+                {
+                    "name": "Balestra",
+                    "quantity": 1
+                },
+                {
+                    "name": "Brocchiero d'Acciaio",
+                    "quantity": 1
+                }
             ]
         }
     },

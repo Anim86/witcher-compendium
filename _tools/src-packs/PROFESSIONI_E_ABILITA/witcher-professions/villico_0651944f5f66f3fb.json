@@ -90,15 +90,42 @@
         "initialGear": {
             "choose": 5,
             "items": [
-                "Abiti per Climi Freddi",
-                "Acciarino",
-                "Birra",
-                "Sacco",
-                "Simbolo Sacro",
-                "Utensili da Cucina",
-                "Carro Base",
-                "Pipa",
-                "Mazzo da Gwent"
+                {
+                    "name": "Abiti per Climi Freddi",
+                    "quantity": 1
+                },
+                {
+                    "name": "Acciarino",
+                    "quantity": 1
+                },
+                {
+                    "name": "Birra",
+                    "quantity": 1
+                },
+                {
+                    "name": "Sacco",
+                    "quantity": 1
+                },
+                {
+                    "name": "Simbolo Sacro",
+                    "quantity": 1
+                },
+                {
+                    "name": "Utensili da Cucina",
+                    "quantity": 1
+                },
+                {
+                    "name": "Carro Base",
+                    "quantity": 1
+                },
+                {
+                    "name": "Pipa",
+                    "quantity": 1
+                },
+                {
+                    "name": "Mazzo da Gwent",
+                    "quantity": 1
+                }
             ]
         }
     },

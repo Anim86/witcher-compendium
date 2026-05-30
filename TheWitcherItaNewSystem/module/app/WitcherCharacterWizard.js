@@ -254,6 +254,8 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 this.armor = armorPack ? await armorPack.getDocuments() : [];
                 const gearPack = game.packs.get("witcher-compendium.witcher-equipment");
                 this.gear = gearPack ? await gearPack.getDocuments() : [];
+                const specialPack = game.packs.get("witcher-compendium.witcher-special");
+                this.special = specialPack ? await specialPack.getDocuments() : [];
             }
             
             // 2.1 Profession Gear Logic
@@ -263,7 +265,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             let professionGearRemaining = 0;
 
             if (gearConfig) {
-                const searchPacks = [...(this.weapons || []), ...(this.armor || []), ...(this.gear || [])];
+                const searchPacks = [...(this.weapons || []), ...(this.armor || []), ...(this.gear || []), ...(this.special || [])];
                 
                 // Helper to find item by names (fuzzy or exact)
                 const findItem = (name) => {
@@ -275,20 +277,29 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 };
 
                 // Fixed items (Witcher only for now)
-                const fixedItems = (gearConfig.always || []).map(name => {
-                    const item = findItem(name);
-                    return item ? sanitizeItem(item) : { name, missing: true };
+                const fixedItems = (gearConfig.always || []).map(nameObj => {
+                    const itemName = typeof nameObj === "object" ? nameObj.name : nameObj;
+                    const itemQty = typeof nameObj === "object" ? nameObj.quantity : 1;
+                    const item = findItem(itemName);
+                    const itemDoc = item ? sanitizeItem(item) : { name: itemName, missing: true };
+                    if (itemDoc.system) itemDoc.system.quantity = itemQty;
+                    return { ...itemDoc, always: true, name: itemName, quantity: itemQty };
                 });
 
                 // Chooseable items
-                const chooseableItems = gearConfig.items.map(name => {
-                    const item = findItem(name);
-                    const itemDoc = item ? sanitizeItem(item) : { name, missing: true };
-                    const id = item?.id || name;
+                const chooseableItems = (gearConfig.items || []).map(nameObj => {
+                    const itemName = typeof nameObj === "object" ? nameObj.name : nameObj;
+                    const itemQty = typeof nameObj === "object" ? nameObj.quantity : 1;
+                    const item = findItem(itemName);
+                    const itemDoc = item ? sanitizeItem(item) : { name: itemName, missing: true };
+                    const id = item?.id || itemName;
+                    if (itemDoc.system) itemDoc.system.quantity = itemQty;
                     return {
                         ...itemDoc,
                         id: id,
-                        selected: this.characterData.selectedProfessionGear.includes(id)
+                        name: itemName,
+                        selected: this.characterData.selectedProfessionGear.includes(id),
+                        quantity: itemQty
                     };
                 });
 
@@ -670,16 +681,22 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         const profName = this.characterData.profession?.name;
         const gearConfig = this.characterData.profession?.system?.initialGear;
         if (gearConfig) {
-            const searchPacks = [...(this.weapons || []), ...(this.armor || []), ...(this.gear || [])];
+            const searchPacks = [...(this.weapons || []), ...(this.armor || []), ...(this.gear || []), ...(this.special || [])];
             const findItem = (nameOrId) => searchPacks.find(i => i.id === nameOrId || i.name === nameOrId);
             
-            for (const name of (gearConfig.always || [])) {
-                const item = findItem(name);
-                if (item) profGear.push({ name: item.name });
+            for (const nameObj of (gearConfig.always || [])) {
+                const itemName = typeof nameObj === "object" ? nameObj.name : nameObj;
+                const itemQty = typeof nameObj === "object" ? nameObj.quantity : 1;
+                const item = findItem(itemName);
+                if (item) profGear.push({ name: item.name, quantity: itemQty });
             }
             for (const id of this.characterData.selectedProfessionGear) {
                 const item = findItem(id);
-                if (item) profGear.push({ name: item.name });
+                if (item) {
+                    const confItem = (gearConfig.items || []).find(i => (typeof i === "object" ? i.name : i) === item.name);
+                    const itemQty = confItem && typeof confItem === "object" ? confItem.quantity : 1;
+                    profGear.push({ name: item.name, quantity: itemQty });
+                }
             }
         }
 
@@ -1582,15 +1599,16 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             return;
         }
 
-        const searchPacks = [...(this.weapons || []), ...(this.armor || []), ...(this.gear || [])];
+        const searchPacks = [...(this.weapons || []), ...(this.armor || []), ...(this.gear || []), ...(this.special || [])];
         const findItem = (name) => {
             const cleanName = name.toLowerCase().replace(/[^a-z0-9]/g, '');
             return searchPacks.find(i => i.name.toLowerCase().replace(/[^a-z0-9]/g, '').includes(cleanName));
         };
 
-        const choices = gearConfig.items.map(name => {
-            const item = findItem(name);
-            return { id: item?.id || name, name };
+        const choices = (gearConfig.items || []).map(nameObj => {
+            const itemName = typeof nameObj === "object" ? nameObj.name : nameObj;
+            const item = findItem(itemName);
+            return { id: item?.id || itemName, name: itemName };
         });
 
         const shuffled = choices.slice().sort(() => Math.random() - 0.5);
@@ -2714,18 +2732,21 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         const profName = this.characterData.profession?.name;
         const gearConfig = this.characterData.profession?.system?.initialGear;
         if (gearConfig) {
-            const searchPacks = [...(this.weapons || []), ...(this.armor || []), ...(this.gear || [])];
+            const searchPacks = [...(this.weapons || []), ...(this.armor || []), ...(this.gear || []), ...(this.special || [])];
             const findItem = (nameOrId) => {
                 return searchPacks.find(i => i.id === nameOrId || i.name === nameOrId);
             };
 
             // Fixed items
-            for (const name of (gearConfig.always || [])) {
-                const item = findItem(name);
+            for (const nameObj of (gearConfig.always || [])) {
+                const itemName = typeof nameObj === "object" ? nameObj.name : nameObj;
+                const itemQty = typeof nameObj === "object" ? nameObj.quantity : 1;
+                const item = findItem(itemName);
                 if (item) {
                     let iData = item.toObject ? item.toObject() : item;
                     const { _id, id, ...iClean } = iData;
                     const cloned = foundry.utils.deepClone(iClean);
+                    if (cloned.system) cloned.system.quantity = itemQty;
                     itemsToCreate.push(cloned);
                 }
             }
@@ -2734,9 +2755,17 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             for (const id of this.characterData.selectedProfessionGear) {
                 const item = findItem(id);
                 if (item) {
+                    const confItem = (gearConfig.items || []).find(i => {
+                        const iName = typeof i === "object" ? i.name : i;
+                        const fItem = findItem(iName);
+                        return fItem && fItem.id === id;
+                    });
+                    const itemQty = confItem && typeof confItem === "object" ? confItem.quantity : 1;
+
                     let iData = item.toObject ? item.toObject() : item;
                     const { _id, id, ...iClean } = iData;
                     const cloned = foundry.utils.deepClone(iClean);
+                    if (cloned.system) cloned.system.quantity = itemQty;
                     itemsToCreate.push(cloned);
                 }
             }

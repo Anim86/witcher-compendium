@@ -4,13 +4,38 @@
     "type": "weapon",
     "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-special/spada_d_argento_da_witcher.webp",
     "system": {
-        "description": "<p>Forgiate apposta per una determinata persona o evento. Pref: 0, Danno: 1d6+2, Mani: 1, Affidabilità: 10, Effetti: Argento (3d6).</p>",
+        "description": "<p>Le armi d’argento non conservano bene il filo e sono spesso più leggere delle controparti d’acciaio, causando quindi meno danni. D’altro canto, contro i mostri, provocano Danno d’Argento: Quando un personaggio colpisce un mostro con un’arma d’argento causerà il danno base e l’ammontare indicato con l’effetto Argento.</p>",
+        "cost": 0,
+        "reliability": 10,
+        "accuracy": 0,
+        "effects": "Argento (3d6)",
+        "sourcebook": "MB 247",
+        "type": {
+            "text": "",
+            "slashing": true,
+            "piercing": true,
+            "bludgeoning": false,
+            "elemental": false
+        },
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "isMeteorite": false,
+            "isNonLethal": false,
+            "effects": []
+        },
         "weight": 1.5,
-        "cost": 497,
-        "quantity": 1,
-        "toxicity": "0%",
-        "duration": "N/A",
-        "sourcebook": "MB 247"
+        "rarity": "Speciale",
+        "damage": "1d6+2",
+        "hands": 1,
+        "unmodifiedMax": {},
+        "conceal": "N/A",
+        "category": "sword",
+        "range": "N/A",
+        "reliabilityMax": 10,
+        "enhancements": 2
     },
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",

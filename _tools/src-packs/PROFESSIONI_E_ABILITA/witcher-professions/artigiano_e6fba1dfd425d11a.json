@@ -89,16 +89,46 @@
         "initialGear": {
             "choose": 5,
             "items": [
-                "Utensili da armaiolo",
-                "Utensili da mercante",
-                "Spada di Ferro",
-                "Strumento Musicale",
-                "Attrezzatura alchemica",
-                "Clessidra",
-                "Mazza",
-                "Lucchetto",
-                "Scrigno di Legno",
-                "50 Corone in Componenti"
+                {
+                    "name": "Utensili da armaiolo",
+                    "quantity": 1
+                },
+                {
+                    "name": "Utensili da mercante",
+                    "quantity": 1
+                },
+                {
+                    "name": "Spada di Ferro",
+                    "quantity": 1
+                },
+                {
+                    "name": "Strumento Musicale",
+                    "quantity": 1
+                },
+                {
+                    "name": "Attrezzatura alchemica",
+                    "quantity": 1
+                },
+                {
+                    "name": "Clessidra",
+                    "quantity": 1
+                },
+                {
+                    "name": "Mazza",
+                    "quantity": 1
+                },
+                {
+                    "name": "Lucchetto",
+                    "quantity": 1
+                },
+                {
+                    "name": "Scrigno di Legno",
+                    "quantity": 1
+                },
+                {
+                    "name": "50 Corone in Componenti",
+                    "quantity": 1
+                }
             ]
         }
     },

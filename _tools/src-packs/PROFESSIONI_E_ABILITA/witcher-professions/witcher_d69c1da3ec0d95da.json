@@ -88,17 +88,41 @@
         "notes": "<p>I witcher sono mutanti creati per un solo scopo: uccidere mostri. Sottoposti a prove e mutazioni atroci fin da bambini, hanno acquisito sensi sovraumani e la capacità di usare i Segni. Freddi e risoluti, sono i guardiani dell'umanità contro le creature del Caos, anche se per questo sono spesso odiati e temuti dai comuni mortali.</p>",
         "initialGear": {
             "always": [
-                "Medaglione da Witcher",
-                "Spada d'Arme",
-                "Spada d'Argento",
-                "Gambesone a Doppia Trama",
-                "Coltello da Lancio"
+                {
+                    "name": "Medaglione da Witcher",
+                    "quantity": 1
+                },
+                {
+                    "name": "Spada d'Acciaio da Witcher",
+                    "quantity": 1
+                },
+                {
+                    "name": "Spada d'Argento da Witcher",
+                    "quantity": 1
+                }
             ],
             "choose": 2,
             "items": [
-                "Attrezzatura alchemica",
-                "Cavallo",
-                "Balestrino"
+                {
+                    "name": "Attrezzatura alchemica",
+                    "quantity": 1
+                },
+                {
+                    "name": "Gambesone a Doppia Trama",
+                    "quantity": 1
+                },
+                {
+                    "name": "Cavallo",
+                    "quantity": 1
+                },
+                {
+                    "name": "Balestrino",
+                    "quantity": 1
+                },
+                {
+                    "name": "Coltello da Lancio",
+                    "quantity": 5
+                }
             ]
         }
     },

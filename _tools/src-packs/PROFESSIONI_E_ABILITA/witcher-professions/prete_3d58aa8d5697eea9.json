@@ -89,16 +89,46 @@
         "initialGear": {
             "choose": 5,
             "items": [
-                "Simbolo sacro",
-                "Fluido sterilizzante",
-                "Attrezzatura alchemica",
-                "Strumenti chirurgici",
-                "Borsello",
-                "Pugnale",
-                "Bastone",
-                "Polvere coagulante",
-                "Erbe anestetiche",
-                "100 Corone in Componenti"
+                {
+                    "name": "Simbolo sacro",
+                    "quantity": 1
+                },
+                {
+                    "name": "Fluido sterilizzante",
+                    "quantity": 5
+                },
+                {
+                    "name": "Attrezzatura alchemica",
+                    "quantity": 1
+                },
+                {
+                    "name": "Strumenti chirurgici",
+                    "quantity": 1
+                },
+                {
+                    "name": "Borsello",
+                    "quantity": 1
+                },
+                {
+                    "name": "Pugnale",
+                    "quantity": 1
+                },
+                {
+                    "name": "Bastone",
+                    "quantity": 1
+                },
+                {
+                    "name": "Polvere coagulante",
+                    "quantity": 5
+                },
+                {
+                    "name": "Erbe anestetiche",
+                    "quantity": 5
+                },
+                {
+                    "name": "100 Corone in Componenti",
+                    "quantity": 1
+                }
             ]
         }
     },

@@ -20,6 +20,22 @@ export default class ProfessionData extends CommonItemData {
             professionSkills: new fields.SetField(new fields.StringField(), {
                 label: 'WITCHER.profession.professionSkills.label',
                 hint: 'WITCHER.profession.professionSkills.hint'
+            }),
+            
+            initialGear: new fields.SchemaField({
+                always: new fields.ArrayField(
+                    new fields.SchemaField({
+                        name: new fields.StringField({ required: true, initial: '' }),
+                        quantity: new fields.NumberField({ initial: 1, min: 1, integer: true })
+                    })
+                ),
+                choose: new fields.NumberField({ initial: 0, min: 0, integer: true }),
+                items: new fields.ArrayField(
+                    new fields.SchemaField({
+                        name: new fields.StringField({ required: true, initial: '' }),
+                        quantity: new fields.NumberField({ initial: 1, min: 1, integer: true })
+                    })
+                )
             })
         };
     }

@@ -89,16 +89,46 @@
         "initialGear": {
             "choose": 5,
             "items": [
-                "Polvere coagulante",
-                "Fluido sterilizzante",
-                "Erbe anestetiche",
-                "Strumenti chirurgici",
-                "Cronista",
-                "Clessidra",
-                "Candele",
-                "Tenda",
-                "Pugnale",
-                "Giaciglio"
+                {
+                    "name": "Polvere coagulante",
+                    "quantity": 10
+                },
+                {
+                    "name": "Fluido sterilizzante",
+                    "quantity": 10
+                },
+                {
+                    "name": "Erbe anestetiche",
+                    "quantity": 1
+                },
+                {
+                    "name": "Strumenti chirurgici",
+                    "quantity": 1
+                },
+                {
+                    "name": "Cronista",
+                    "quantity": 1
+                },
+                {
+                    "name": "Clessidra",
+                    "quantity": 1
+                },
+                {
+                    "name": "Candele",
+                    "quantity": 10
+                },
+                {
+                    "name": "Tenda",
+                    "quantity": 1
+                },
+                {
+                    "name": "Pugnale",
+                    "quantity": 1
+                },
+                {
+                    "name": "Giaciglio",
+                    "quantity": 1
+                }
             ]
         }
     },

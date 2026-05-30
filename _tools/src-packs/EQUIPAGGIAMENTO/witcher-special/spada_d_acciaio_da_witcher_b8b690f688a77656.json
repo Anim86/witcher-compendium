@@ -1,16 +1,41 @@
 {
     "_id": "b8b690f688a77656",
-    "name": "Spada d'acciaio da witcher",
+    "name": "Spada d'Acciaio da Witcher",
     "type": "weapon",
     "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-special/spada_d_acciaio_da_witcher.webp",
     "system": {
-        "description": "<p>Ancor oggi, i witcher sono gli unici guerrieri che portano regolarmente spade d'acciaio meteoritico. Pref: 0, Danno: 4d6+2, Mani: 1, Affidabilità: 15, Effetti: Trapassare Meteorite.</p>",
+        "description": "<p>Ancora oggi, i witcher sono gli unici guerrieri che portano regolarmente spade d’argento o di acciaio meteoritico. Le armi realizzate con i meteoriti non sono così comuni, mentre quelle d’argento vengono forgiate apposta per una determinata persona o evento. Le spade di un witcher sono quasi parte di lui ed è improbabile incontrarne uno senza le classiche due spade.</p>",
+        "cost": 0,
+        "reliability": 15,
+        "accuracy": 0,
+        "effects": "Trapassare, Meteorite",
+        "sourcebook": "MB 247",
+        "type": {
+            "text": "",
+            "slashing": true,
+            "piercing": true,
+            "bludgeoning": false,
+            "elemental": false
+        },
+        "damageProperties": {
+            "armorPiercing": true,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "isMeteorite": true,
+            "isNonLethal": false,
+            "effects": []
+        },
         "weight": 2.5,
-        "cost": 506,
-        "quantity": 1,
-        "toxicity": "0%",
-        "duration": "N/A",
-        "sourcebook": "MB 247"
+        "rarity": "Speciale",
+        "damage": "4d6+2",
+        "hands": 1,
+        "unmodifiedMax": {},
+        "conceal": "N/A",
+        "category": "sword",
+        "range": "N/A",
+        "reliabilityMax": 15,
+        "enhancements": 2
     },
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",

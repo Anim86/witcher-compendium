@@ -87,16 +87,46 @@
         "initialGear": {
             "choose": 5,
             "items": [
-                "Plancia da poker con dadi",
-                "Mazzo da Gwent",
-                "Specchietto",
-                "Strumento Musicale",
-                "Superalcolici",
-                "Pugnale",
-                "Profumo / Acqua di Colonia",
-                "Borsello",
-                "Fodero da giarrettiera",
-                "Diario"
+                {
+                    "name": "Plancia da poker con dadi",
+                    "quantity": 1
+                },
+                {
+                    "name": "Mazzo da Gwent",
+                    "quantity": 1
+                },
+                {
+                    "name": "Specchietto",
+                    "quantity": 1
+                },
+                {
+                    "name": "Strumento Musicale",
+                    "quantity": 1
+                },
+                {
+                    "name": "Superalcolici",
+                    "quantity": 1
+                },
+                {
+                    "name": "Pugnale",
+                    "quantity": 1
+                },
+                {
+                    "name": "Profumo / Acqua di Colonia",
+                    "quantity": 1
+                },
+                {
+                    "name": "Borsello",
+                    "quantity": 1
+                },
+                {
+                    "name": "Fodero da giarrettiera",
+                    "quantity": 1
+                },
+                {
+                    "name": "Diario / Libro Mastro",
+                    "quantity": 1
+                }
             ]
         }
     },

@@ -89,16 +89,46 @@
         "initialGear": {
             "choose": 5,
             "items": [
-                "Dadi truccati",
-                "Lanterna",
-                "Tasca segreta",
-                "Arnesi da scasso",
-                "Fodero da manica",
-                "Stiletto",
-                "Tirapugni",
-                "Coltello da Lancio",
-                "Cloroformio",
-                "Sacco"
+                {
+                    "name": "Dadi truccati",
+                    "quantity": 1
+                },
+                {
+                    "name": "Lanterna Schermata",
+                    "quantity": 1
+                },
+                {
+                    "name": "Tasca segreta",
+                    "quantity": 1
+                },
+                {
+                    "name": "Arnesi da scasso",
+                    "quantity": 1
+                },
+                {
+                    "name": "Fodero da manica",
+                    "quantity": 1
+                },
+                {
+                    "name": "Stiletto",
+                    "quantity": 1
+                },
+                {
+                    "name": "Tirapugni",
+                    "quantity": 1
+                },
+                {
+                    "name": "Coltello da Lancio",
+                    "quantity": 5
+                },
+                {
+                    "name": "Cloroformio",
+                    "quantity": 1
+                },
+                {
+                    "name": "Sacco",
+                    "quantity": 1
+                }
             ]
         }
     },

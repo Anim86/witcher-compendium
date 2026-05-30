@@ -89,14 +89,38 @@
         "initialGear": {
             "choose": 5,
             "items": [
-                "Bastone",
-                "Sacco",
-                "Borsello",
-                "Attrezzatura alchemica",
-                "Clessidra",
-                "Lanterna",
-                "Erbe Anestetiche",
-                "Fodero da Giarrettiera"
+                {
+                    "name": "Bastone",
+                    "quantity": 1
+                },
+                {
+                    "name": "Sacco",
+                    "quantity": 1
+                },
+                {
+                    "name": "Borsello",
+                    "quantity": 1
+                },
+                {
+                    "name": "Attrezzatura alchemica",
+                    "quantity": 1
+                },
+                {
+                    "name": "Clessidra",
+                    "quantity": 1
+                },
+                {
+                    "name": "Lanterna",
+                    "quantity": 1
+                },
+                {
+                    "name": "Erbe Anestetiche",
+                    "quantity": 1
+                },
+                {
+                    "name": "Fodero da Giarrettiera",
+                    "quantity": 1
+                }
             ]
         }
     },

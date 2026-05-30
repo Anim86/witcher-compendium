@@ -88,14 +88,38 @@
         "initialGear": {
             "choose": 3,
             "items": [
-                "Cronista",
-                "Utensili da mercante",
-                "Tenda",
-                "Diario",
-                "Balestra",
-                "Pugnale",
-                "Carro",
-                "Mulo"
+                {
+                    "name": "Cronista",
+                    "quantity": 1
+                },
+                {
+                    "name": "Utensili da mercante",
+                    "quantity": 1
+                },
+                {
+                    "name": "Tenda",
+                    "quantity": 1
+                },
+                {
+                    "name": "Diario",
+                    "quantity": 1
+                },
+                {
+                    "name": "Balestra",
+                    "quantity": 1
+                },
+                {
+                    "name": "Pugnale",
+                    "quantity": 1
+                },
+                {
+                    "name": "Carro",
+                    "quantity": 1
+                },
+                {
+                    "name": "Mulo",
+                    "quantity": 1
+                }
             ]
         }
     },

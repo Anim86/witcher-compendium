@@ -33,7 +33,7 @@
                         {{#if img}}<img src="{{img}}" alt="{{name}}">{{else}}<i class="fa-solid fa-box"></i>{{/if}}
                     </span>
                     <span class="gear-item-info">
-                        <span class="name">{{name}}</span>
+                        <span class="name">{{name}}{{#if (gt quantity 1)}} (x{{quantity}}){{/if}}</span>
                         {{#if always}}<span class="badge-fixed">Fisso</span>{{/if}}
                     </span>
                 </div>
