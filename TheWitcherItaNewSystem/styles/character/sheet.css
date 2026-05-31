@@ -599,7 +599,7 @@
             font-size: 34px;
             font-weight: bold;
             color: var(--w-gold);
-            text-transform: uppercase;
+            text-transform: none;
             background: transparent !important;
             border: none !important;
             text-shadow: 2px 2px 4px #000;
@@ -1756,7 +1756,7 @@ a.button-roll:hover {
             font-family: 'Gwent', serif;
             font-size: 28px !important;
             color: var(--w-gold) !important;
-            text-transform: uppercase;
+            text-transform: none;
             text-shadow: 0 2px 4px rgba(0,0,0,0.5);
             &:hover, &:focus { background: rgba(255,255,255,0.03) !important; }
         }

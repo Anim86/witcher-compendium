@@ -23,9 +23,8 @@
 
     {{!-- 3. Witcher Signs (Segni) --}}
     <section class="tab spell-section {{magicTabs.signs.cssClass}}" data-group="magicTabs" data-tab="signs">
-        {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/spell-type-list.hbs" spells=noviceSigns itemType='spell' spellType="sign" header=(concat (localize "WITCHER.Spell.Novice") " - " (localize "WITCHER.Spell.Signs"))}}
-        {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/spell-type-list.hbs" spells=journeymanSigns itemType='spell' spellType="sign" header=(concat (localize "WITCHER.Spell.Journeyman") " - " (localize "WITCHER.Spell.Signs"))}}
-        {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/spell-type-list.hbs" spells=masterSigns itemType='spell' spellType="sign" header=(concat (localize "WITCHER.Spell.Master") " - " (localize "WITCHER.Spell.Signs"))}}
+        {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/spell-type-list.hbs" spells=basicSigns itemType='spell' spellType="signBasic" header=(concat (localize "WITCHER.Spell.Basic") " - " (localize "WITCHER.Spell.Signs"))}}
+        {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/spell-type-list.hbs" spells=alternateSigns itemType='spell' spellType="signAlternate" header=(concat (localize "WITCHER.Spell.Alternate") " - " (localize "WITCHER.Spell.Signs"))}}
     </section>
 
     {{!-- 4. Rituals (Rituali) --}}

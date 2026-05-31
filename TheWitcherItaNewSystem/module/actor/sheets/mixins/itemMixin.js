@@ -86,6 +86,8 @@ export let itemMixin = {
                     'spell': 'witcher-compendium.witcher-spells',
                     'invocation': 'witcher-compendium.witcher-invocations',
                     'sign': 'witcher-compendium.witcher-signs',
+                    'signBasic': 'witcher-compendium.witcher-signs',
+                    'signAlternate': 'witcher-compendium.witcher-signs',
                     'ritual': 'witcher-compendium.witcher-rituals',
                     'hex': 'witcher-compendium.witcher-hexes',
                     'magicalgift': 'witcher-compendium.witcher-gifts',
@@ -191,6 +193,12 @@ export let itemMixin = {
                 }
                 if (spellType === 'sign') {
                     return i.type === 'spell' && i.system?.class === 'Witcher';
+                }
+                if (spellType === 'signBasic') {
+                    return i.type === 'spell' && i.system?.class === 'Witcher' && i.system?.level === 'basic';
+                }
+                if (spellType === 'signAlternate') {
+                    return i.type === 'spell' && i.system?.class === 'Witcher' && i.system?.level === 'alternate';
                 }
                 if (spellType === 'ritual') {
                     return i.type === 'ritual' && (i.system?.class === 'ritual' || !i.system?.class);

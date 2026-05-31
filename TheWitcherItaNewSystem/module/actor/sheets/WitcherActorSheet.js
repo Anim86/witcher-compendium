@@ -164,9 +164,8 @@ export default class WitcherActorSheet extends HandlebarsApplicationMixin(ActorS
         context.masterInvocations = spells.filter(s => s.system.level === 'master' && s.system.class === 'Invocations');
 
         // 3. Witcher Signs (Segni)
-        context.noviceSigns = spells.filter(s => s.system.level === 'novice' && s.system.class === 'Witcher');
-        context.journeymanSigns = spells.filter(s => s.system.level === 'journeyman' && s.system.class === 'Witcher');
-        context.masterSigns = spells.filter(s => s.system.level === 'master' && s.system.class === 'Witcher');
+        context.basicSigns = spells.filter(s => s.system.level === 'basic' && s.system.class === 'Witcher');
+        context.alternateSigns = spells.filter(s => s.system.level === 'alternate' && s.system.class === 'Witcher');
 
         // 4. Rituals (Rituali)
         context.rituals = rituals.filter(r => r.system.class === 'ritual' || !r.system.class || r.system.class === 'Goetia' || r.system.class === 'Necromanzia');

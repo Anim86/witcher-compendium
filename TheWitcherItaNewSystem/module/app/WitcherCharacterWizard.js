@@ -2608,7 +2608,12 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                         value: this.characterData.homeland || ""
                     },
                     background: {
-                        value: bgHtml
+                        value: bgHtml,
+                        socialStatus: bg.socialStatus || "",
+                        familyState: bg.familyState || "",
+                        familyFate: bg.familyFate || "",
+                        parentsState: bg.parentsState || "",
+                        parentsFate: bg.parentsFate || ""
                     },
                     lifeEvents: {}
                 },
@@ -2837,13 +2842,13 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         }
 
         // Add basic Witcher signs if profession is Witcher
-        const isWitcher = (this.characterData.profession?.name?.toLowerCase() || "").includes("witcher");
+        const isWitcher = this._isWitcherName(this.characterData.profession?.name);
         if (isWitcher) {
             const signsPack = game.packs.get("witcher-compendium.witcher-signs");
             if (signsPack) {
                 const signsDocs = await signsPack.getDocuments();
                 const basicSigns = signsDocs
-                    .filter(d => d.system?.level === "basic")
+                    .filter(d => d.type === "spell" && d.system?.class === "Witcher" && d.system?.level === "basic")
                     .map(d => {
                         let dData = d.toObject ? d.toObject() : d;
                         const { _id, id, ...dClean } = dData;

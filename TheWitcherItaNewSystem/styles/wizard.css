@@ -1636,9 +1636,9 @@ form.witcher-wizard .gear-item img {
 }
 
 .witcher-wizard .gear-item-mini.selected {
-    background: linear-gradient(180deg, #aa0909, #760000) !important;
+    background: linear-gradient(180deg, rgba(255, 246, 219, 0.98), rgba(225, 196, 128, 0.78)) !important;
     border-color: var(--wizard-gold) !important;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.18), 0 5px 14px rgba(139, 0, 0, 0.26);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.84), 0 4px 12px rgba(102, 85, 68, 0.16), 0 0 0 1px rgba(184, 134, 11, 0.18);
 }
 
 .witcher-wizard .gear-item-mini.selected::before {
@@ -1647,13 +1647,13 @@ form.witcher-wizard .gear-item img {
 }
 
 .witcher-wizard .gear-item-mini.selected .gear-thumb {
-    background: rgba(255, 255, 255, 0.14);
-    border-color: rgba(255, 215, 0, 0.58);
+    background: rgba(255, 255, 255, 0.44);
+    border-color: rgba(184, 134, 11, 0.62);
 }
 
 .witcher-wizard .gear-item-mini.selected .name {
-    color: #ffffff !important;
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.42);
+    color: var(--wizard-text-dark) !important;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
 }
 
 .witcher-wizard .gear-item-mini.missing {
