@@ -18,6 +18,9 @@
         "range": "Raggio di 8m",
         "duration": "Istantanea",
         "defence": "Resistere alla Magia",
+        "defenseOptions": [
+            "magicResist"
+        ],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -53,7 +56,13 @@
         "spellAttackSkill": "spellcast",
         "causeDamages": true,
         "damage": "1d6",
-        "damageType": "elemental"
+        "damageType": "elemental",
+        "targetMode": "area",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "sphere",
+        "areaSize": "8m radius"
     },
     "effects": [],
     "flags": {},

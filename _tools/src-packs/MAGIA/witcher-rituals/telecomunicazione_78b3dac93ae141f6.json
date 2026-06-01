@@ -18,6 +18,7 @@
         "range": "N/A",
         "duration": "1 Ora",
         "defence": "",
+        "defenseOptions": [],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -53,7 +54,13 @@
         "spellAttackSkill": "ritcraft",
         "difficultyCheck": "Ness.",
         "preparationTime": "",
-        "components": "Un Telecomunicatore"
+        "components": "Un Telecomunicatore",
+        "targetMode": "manual",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "effects": [],
     "flags": {},

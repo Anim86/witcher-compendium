@@ -13,7 +13,13 @@
         "duration": "Istantanea",
         "preparationTime": "",
         "components": "Trofeo di Mostro (x1), Cerume di Orco (x1), Erbe da Concia (x10), Grasso Estere (x2), Polvere Infusa (x1), Quintessenza (x1)",
-        "effect": "Consente di sfruttare la fisiologia di un mostro morto per incanalare la magia, creando un Trofeo che conferisce bonus a chi l'ha ucciso"
+        "effect": "Consente di sfruttare la fisiologia di un mostro morto per incanalare la magia, creando un Trofeo che conferisce bonus a chi l'ha ucciso",
+        "targetMode": "manual",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "type": "ritual",
     "img": "modules/witcher-compendium/assets/MAGIA/witcher-rituals/infondere_trofeo.webp",

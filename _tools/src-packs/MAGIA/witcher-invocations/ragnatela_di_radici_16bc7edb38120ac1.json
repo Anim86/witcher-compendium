@@ -18,6 +18,7 @@
         "range": "10m",
         "duration": "Attiva (1)",
         "defence": "Nessuna",
+        "defenseOptions": [],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -50,7 +51,13 @@
         "attackOptions": [
             "spell"
         ],
-        "spellAttackSkill": "spellcast"
+        "spellAttackSkill": "spellcast",
+        "targetMode": "manual",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "effects": [],
     "flags": {},

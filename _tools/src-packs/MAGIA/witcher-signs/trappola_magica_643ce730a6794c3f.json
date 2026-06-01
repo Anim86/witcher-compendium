@@ -11,13 +11,17 @@
         "sourcebook": "MB 117",
         "class": "Witcher",
         "level": "alternate",
-        "source": "Mixed",
+        "source": "mixed",
         "stamina": 0,
         "staminaIsVar": true,
         "effect": "Crea una trappola magica che attacca il nemico più vicino ogni round infliggendo 3d6 danni. Richiede un round di preparazione.",
         "range": "Raggio di 3m",
-        "duration": "1 round per punto RES",
+        "duration": "1 round per punto di RES speso",
         "defence": "Schivare, Bloccare o Scudo Magico",
+        "defenseOptions": [
+            "dodge",
+            "block"
+        ],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -50,7 +54,13 @@
         "attackOptions": [
             "spell"
         ],
-        "spellAttackSkill": "spellcast"
+        "spellAttackSkill": "spellcast",
+        "targetMode": "area",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "circle",
+        "areaSize": "3m radius"
     },
     "effects": [],
     "flags": {},

@@ -37,7 +37,7 @@ export const defenseChatMessageListeners = async (message, html) => {
 };
 
 export function addDefenseOptionsContextMenu(html, options) {
-    let canDefend = li => game.messages.get(li.dataset.messageId).system.defenseOptions;
+    let canDefend = li => Array.from(game.messages.get(li.dataset.messageId)?.system?.defenseOptions ?? []).length > 0;
     options.push({
         label: `${game.i18n.localize('WITCHER.Context.Defense')}`,
         icon: '<i class="fas fa-shield-alt"></i>',

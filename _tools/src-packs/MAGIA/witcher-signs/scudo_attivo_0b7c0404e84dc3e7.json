@@ -11,13 +11,14 @@
         "sourcebook": "MB 115",
         "class": "Witcher",
         "level": "alternate",
-        "source": "Earth",
+        "source": "earth",
         "stamina": 0,
         "staminaIsVar": true,
         "effect": "Genera uno scudo a bolla con 10 PS per ogni punto RES speso. Isola totalmente l'incantatore: nulla di tangibile può passare all'interno o all'esterno della bolla senza prima distruggerne i PS.",
-        "range": "Personale (può includere un alleato)",
-        "duration": "Attiva (costo RES iniziale)",
+        "range": "Personale",
+        "duration": "Attiva (1/2 RES iniziale)",
         "defence": "Nessuna",
+        "defenseOptions": [],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -50,7 +51,13 @@
         "attackOptions": [
             "spell"
         ],
-        "spellAttackSkill": "spellcast"
+        "spellAttackSkill": "spellcast",
+        "targetMode": "self",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "effects": [],
     "flags": {},

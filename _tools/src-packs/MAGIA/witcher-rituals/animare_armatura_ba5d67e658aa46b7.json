@@ -13,7 +13,13 @@
         "duration": "Permanente",
         "preparationTime": "",
         "components": "Armatura Completa, Cuore di Golem (x1), Quintessenza (x3), Polvere Infusa (x2)",
-        "effect": "Trasforma una normale corazza a piastre in un Costrutto animato che obbedisce ai comandi del ritualista."
+        "effect": "Trasforma una normale corazza a piastre in un Costrutto animato che obbedisce ai comandi del ritualista.",
+        "targetMode": "manual",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "type": "ritual",
     "img": "modules/witcher-compendium/assets/MAGIA/witcher-rituals/animare_armatura.webp",

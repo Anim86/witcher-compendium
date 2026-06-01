@@ -18,6 +18,7 @@
         "range": "N/A",
         "duration": "Istantanea",
         "defence": "Nessuna",
+        "defenseOptions": [],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -50,7 +51,13 @@
         "attackOptions": [
             "spell"
         ],
-        "spellAttackSkill": "spellcast"
+        "spellAttackSkill": "spellcast",
+        "targetMode": "none",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "effects": [],
     "flags": {},

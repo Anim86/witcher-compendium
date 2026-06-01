@@ -11,13 +11,16 @@
         "sourcebook": "TC 83",
         "class": "Mage",
         "level": "master",
-        "source": "mixedElements",
+        "source": "mixed",
         "stamina": 10,
         "staminaIsVar": false,
         "effect": "Tocco del Fabbro focalizza la magia del fuoco nel metallo, così da poterlo manipolare a mani nude. Finché lâ€™incantesimo è attivo, il mago può piegare e scol- pire il metallo come fosse argilla. Inoltre, effettuando un attacco di Lotta, infligge 3d6 danni ablativi a unâ€™arma- tura o allâ€™Affidabilità di unâ€™arma. Questo incantesimo non ha effetto sul Dimeritium.",
         "range": "2m",
         "duration": "Attiva (10 RES)",
         "defence": "Schivare",
+        "defenseOptions": [
+            "dodge"
+        ],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -53,7 +56,13 @@
         "spellAttackSkill": "spellcast",
         "causeDamages": true,
         "damage": "3d6",
-        "damageType": "elemental"
+        "damageType": "elemental",
+        "targetMode": "manual",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "effects": [],
     "flags": {},

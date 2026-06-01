@@ -18,6 +18,9 @@
         "range": "Raggio di 30m",
         "duration": "Attiva (4 RES)",
         "defence": "Schivare",
+        "defenseOptions": [
+            "dodge"
+        ],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -53,7 +56,13 @@
         "spellAttackSkill": "spellcast",
         "causeDamages": true,
         "damage": "2d6",
-        "damageType": "elemental"
+        "damageType": "elemental",
+        "targetMode": "area",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "sphere",
+        "areaSize": "30m radius"
     },
     "effects": [],
     "flags": {},

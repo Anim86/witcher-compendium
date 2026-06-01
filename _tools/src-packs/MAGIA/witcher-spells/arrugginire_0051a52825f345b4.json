@@ -11,13 +11,17 @@
         "sourcebook": "TC 83",
         "class": "Mage",
         "level": "master",
-        "source": "Water",
+        "source": "water",
         "stamina": 14,
         "staminaIsVar": false,
         "effect": "Arrugginire permette di scagliare un getto di acqua che ossida immediatamente gli oggetti di metallo. Unâ€™armatura così colpita subisce 2d6 danni ablativi e chi la indossa ha una penalità di -2 a RIF, DES e VEL. Se usato su unâ€™arma, lâ€™incantesimo ne riduce lâ€™Affidabilità di 2d6 e impone una penalità di -2 agli attacchi. Ãˆ pos- sibile bloccare lâ€™incantesimo con uno scudo, ma questo perde 2d6 Affidabilità nel farlo. Spendendo unâ€™ora e su- perando una prova di Manifattura CD 14, è possibile ripulire fino a dieci oggetti dalla ruggine così creata.",
         "range": "4m",
         "duration": "Permanente",
         "defence": "Schivare o Bloccare",
+        "defenseOptions": [
+            "dodge",
+            "block"
+        ],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -53,7 +57,13 @@
         "spellAttackSkill": "spellcast",
         "causeDamages": true,
         "damage": "2d6",
-        "damageType": "elemental"
+        "damageType": "elemental",
+        "targetMode": "direct",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "effects": [],
     "flags": {},

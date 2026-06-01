@@ -20,7 +20,13 @@
         "preparationTime": "20 Round",
         "difficultyCheck": "18 (24 per Demone Maggiore)",
         "components": "Carbone (x10), Legname Indurito (x20), Ossa di Bestia (x10), Polvere Infusa (x3), Sangue del Demonologo (Investimento: 848)",
-        "spellAttackSkill": "ritcraft"
+        "spellAttackSkill": "ritcraft",
+        "targetMode": "manual",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "effects": [],
     "flags": {},

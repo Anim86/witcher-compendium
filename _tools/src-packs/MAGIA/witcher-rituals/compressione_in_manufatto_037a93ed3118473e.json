@@ -13,7 +13,13 @@
         "difficultyCheck": "18",
         "level": "master",
         "staminaIsVar": false,
-        "effect": "Rimpicciolisce violentemente il bersaglio a 1/10 della sua stazza rinchiudendolo in una statuina di giada (subisce enormi danni fisici se fallisce il TS Tempra)"
+        "effect": "Rimpicciolisce violentemente il bersaglio a 1/10 della sua stazza rinchiudendolo in una statuina di giada (subisce enormi danni fisici se fallisce il TS Tempra)",
+        "targetMode": "manual",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "type": "ritual",
     "img": "modules/witcher-compendium/assets/MAGIA/witcher-rituals/compressione_in_manufatto.webp",

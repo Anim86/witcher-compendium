@@ -11,13 +11,16 @@
         "sourcebook": "TC 83",
         "class": "Mage",
         "level": "master",
-        "source": "mixedElements",
+        "source": "mixed",
         "stamina": 25,
         "staminaIsVar": false,
         "effect": "Specchio Oscuro di Bekker intrappola il riflesso di una creatura in una superficie riflettente, indebolen- do così lâ€™originale. Quando lancia questo incantesimo, il mago sceglie due Statistiche del bersaglio e le riduce entrambe di 1d6, alterando anche le Statistiche Derivate. Questa riduzione permane per tutta la durata dellâ€™incan- tesimo o finché la superficie del riflesso non viene com- pletamente distrutta. Inoltre, finché ciò non avviene, la vittima non si riflette negli specchi. Le creature prive di riflesso sono immuni a questo incantesimo.",
         "range": "10m",
         "duration": "1 mese",
         "defence": "Resistere alla Magia",
+        "defenseOptions": [
+            "magicResist"
+        ],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -53,7 +56,13 @@
         "spellAttackSkill": "spellcast",
         "causeDamages": true,
         "damage": "1d6",
-        "damageType": "elemental"
+        "damageType": "elemental",
+        "targetMode": "direct",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "effects": [],
     "flags": {},

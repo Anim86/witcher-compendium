@@ -13,7 +13,13 @@
         "duration": "1 Settimana",
         "preparationTime": "",
         "components": "Aconito (x2), Acquaforte (x5), Ceneri (x2), Cuoio (x2), Gessetto (x2), Ossa di Bestia (x1)",
-        "effect": "Crea un ciondolo che assorbe temporaneamente le Fatture scagliate su chi lo indossa. Se non vengono rimosse, si spezza liberando la magia oscura su tutti entro 2m"
+        "effect": "Crea un ciondolo che assorbe temporaneamente le Fatture scagliate su chi lo indossa. Se non vengono rimosse, si spezza liberando la magia oscura su tutti entro 2m",
+        "targetMode": "manual",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "type": "ritual",
     "img": "modules/witcher-compendium/assets/MAGIA/witcher-rituals/ciondolo_di_wagerer.webp",

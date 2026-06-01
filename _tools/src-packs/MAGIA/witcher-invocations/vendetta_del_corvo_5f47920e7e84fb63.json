@@ -18,6 +18,9 @@
         "range": "20m",
         "duration": "Attiva (5 RES)",
         "defence": "Resistere alla Magia",
+        "defenseOptions": [
+            "magicResist"
+        ],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -50,7 +53,13 @@
         "attackOptions": [
             "spell"
         ],
-        "spellAttackSkill": "spellcast"
+        "spellAttackSkill": "spellcast",
+        "targetMode": "area",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "sphere",
+        "areaSize": "20m radius"
     },
     "effects": [],
     "flags": {},

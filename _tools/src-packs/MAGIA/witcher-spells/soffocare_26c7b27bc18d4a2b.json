@@ -18,6 +18,9 @@
         "range": "10m",
         "duration": "Attiva (4 RES)",
         "defence": "Resistere alla Magia",
+        "defenseOptions": [
+            "magicResist"
+        ],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -53,7 +56,13 @@
         "spellAttackSkill": "spellcast",
         "causeDamages": true,
         "damage": "1d10",
-        "damageType": "elemental"
+        "damageType": "elemental",
+        "targetMode": "direct",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "effects": [],
     "flags": {},

@@ -11,13 +11,16 @@
         "sourcebook": "TC 101",
         "class": "Witcher",
         "level": "basic",
-        "source": "",
+        "source": "mixed",
         "stamina": 0,
         "staminaIsVar": true,
         "effect": "Fa rilassare un bersaglio fino ad addormentarlo. Se la vittima fallisce nel difendersi tramite Resistere alla Magia, dorme per 8 ore (considerata Stordita). Profondità del sonno in base ai RES spesi: 2 RES -> si sveglia subendo danni, sentendo rumori forti o se scossa; 4 RES -> solo subendo danni o se scossa con un'Azione; 6 RES -> solo subendo danni o se scossa ininterrottamente per un intero Round; 7 RES -> esclusivamente subendo danni. Se il bersaglio non sospetta interferenze magiche, al risveglio non si accorgerà di nulla di strano.",
         "range": "8m",
         "duration": "8 ore",
         "defence": "Resistere alla Magia",
+        "defenseOptions": [
+            "magicResist"
+        ],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -50,7 +53,13 @@
         "attackOptions": [
             "spell"
         ],
-        "spellAttackSkill": "spellcast"
+        "spellAttackSkill": "spellcast",
+        "targetMode": "direct",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "effects": [],
     "flags": {},

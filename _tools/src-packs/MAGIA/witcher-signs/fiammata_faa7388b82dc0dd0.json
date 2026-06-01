@@ -11,13 +11,17 @@
         "sourcebook": "MB 115",
         "class": "Witcher",
         "level": "alternate",
-        "source": "Fire",
+        "source": "fire",
         "stamina": 4,
         "staminaIsVar": true,
         "effect": "Emette un getto continuo di fiamme che causa 1d6 danni per ogni punto RES e aumenta al 75% la probabilità di infliggere lo status A Fuoco. L'incantatore può cambiare bersaglio a ogni suo turno pagando il costo di mantenimento.",
         "range": "3m",
         "duration": "Attiva (1/2 RES iniziale)",
         "defence": "Schivare o Bloccare",
+        "defenseOptions": [
+            "dodge",
+            "block"
+        ],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -50,7 +54,13 @@
         "attackOptions": [
             "spell"
         ],
-        "spellAttackSkill": "spellcast"
+        "spellAttackSkill": "spellcast",
+        "targetMode": "direct",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "line",
+        "areaSize": "3m"
     },
     "effects": [],
     "flags": {},

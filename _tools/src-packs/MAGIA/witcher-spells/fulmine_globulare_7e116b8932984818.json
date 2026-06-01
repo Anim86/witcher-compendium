@@ -18,6 +18,9 @@
         "range": "20m",
         "duration": "5 Round",
         "defence": "Schivare",
+        "defenseOptions": [
+            "dodge"
+        ],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -53,7 +56,13 @@
         "spellAttackSkill": "spellcast",
         "causeDamages": true,
         "damage": "3d6",
-        "damageType": "elemental"
+        "damageType": "elemental",
+        "targetMode": "direct",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "effects": [],
     "flags": {},

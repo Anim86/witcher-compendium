@@ -11,13 +11,16 @@
         "sourcebook": "MB 114",
         "class": "Witcher",
         "level": "basic",
-        "source": "Water",
+        "source": "water",
         "stamina": 0,
         "staminaIsVar": true,
         "effect": "Stordisce l'avversario finché questi non supera un tiro salvezza di Grinta con una penalità di -1. Per ogni 2 punti RES spesi oltre il primo, la difficoltà per superare il tiro salvezza aumenta di 1.",
         "range": "8m",
         "duration": "Finché l'effetto non viene superato",
         "defence": "Resistere alla Magia",
+        "defenseOptions": [
+            "magicResist"
+        ],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -50,7 +53,13 @@
         "attackOptions": [
             "spell"
         ],
-        "spellAttackSkill": "spellcast"
+        "spellAttackSkill": "spellcast",
+        "targetMode": "direct",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "effects": [],
     "flags": {},

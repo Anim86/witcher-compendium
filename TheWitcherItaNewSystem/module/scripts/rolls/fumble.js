@@ -3,7 +3,12 @@ import DefenseMessageData from '../../data/chatMessage/defenseMessageData.js';
 import { getInteractActor } from '../helper.js';
 
 export function addFumbleContextOptions(html, options) {
-    let isFumble = li => game.messages.get(li.dataset.messageId).rolls[0]?.options.fumble;
+    let isFumble = li => {
+        const message = game.messages.get(li.dataset.messageId);
+        const isMagicalAttack =
+            message?.system?.constructor === AttackMessageData && message.system.attack?.attackOption === 'spell';
+        return message?.rolls[0]?.options.fumble && !isMagicalAttack;
+    };
     options.push({
         label: `${game.i18n.localize('WITCHER.Context.fumble')}`,
         icon: '<i class="fas fa-user-minus"></i>',

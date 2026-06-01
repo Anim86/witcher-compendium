@@ -11,13 +11,14 @@
         "sourcebook": "TC 83",
         "class": "Mage",
         "level": "master",
-        "source": "mixedElements",
+        "source": "mixed",
         "stamina": 2,
         "staminaIsVar": false,
         "effect": "Ragnatela di Ghiaccio copre una superficie con una delicata struttura di ghiaccio, collegata a un dupli- cato in possesso del mago. Quando una creatura intera- gisce con la superficie originale, il duplicato si rompe. In alternativa, spezzare il duplicato fa sciogliere la ragnatela principale. Notare la presenza del ghiaccio richiede una prova di Accortezza CD 18.",
         "range": "2m",
         "duration": "1 giorno",
         "defence": "Nessuna",
+        "defenseOptions": [],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -50,7 +51,13 @@
         "attackOptions": [
             "spell"
         ],
-        "spellAttackSkill": "spellcast"
+        "spellAttackSkill": "spellcast",
+        "targetMode": "none",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "effects": [],
     "flags": {},

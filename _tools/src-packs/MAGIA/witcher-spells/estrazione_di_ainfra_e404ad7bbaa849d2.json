@@ -11,13 +11,16 @@
         "sourcebook": "TC 83",
         "class": "Mage",
         "level": "master",
-        "source": "mixedElements",
+        "source": "mixed",
         "stamina": 22,
         "staminaIsVar": false,
         "effect": "opera del famoso Ainfra di Mag Turga, questo incantesimo estrae tutta lâ€™acqua dal corpo della vittima e permette al mago di utilizzarla a proprio piacimento. Se fallisce nel difendersi, la vittima perde 8d6 RES e il mago può immediatamente lanciare Getto dâ€™Acqua, Lastra di Ghiaccio o Rhewi, senza spendere RES.",
         "range": "8m",
         "duration": "Istantanea",
         "defence": "Resistere alla Magia",
+        "defenseOptions": [
+            "magicResist"
+        ],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -53,7 +56,13 @@
         "spellAttackSkill": "spellcast",
         "causeDamages": true,
         "damage": "8d6",
-        "damageType": "elemental"
+        "damageType": "elemental",
+        "targetMode": "direct",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "effects": [],
     "flags": {},

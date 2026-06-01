@@ -15,9 +15,10 @@
         "stamina": 10,
         "staminaIsVar": false,
         "effect": "Crea una bolla impenetrabile di 10m di diametro con 50 PS. Se desiderato, blocca anche il ricambio d'aria",
-        "range": "N/A",
-        "duration": "Attiva (2)",
+        "range": "10m (diametro)",
+        "duration": "Attiva (2 RES)",
         "defence": "",
+        "defenseOptions": [],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -53,7 +54,13 @@
         "spellAttackSkill": "ritcraft",
         "difficultyCheck": "18",
         "preparationTime": "",
-        "components": "Quintessenza (x5), Polvere Infusa (x2), Gessetto (x4)"
+        "components": "Quintessenza (x5), Polvere Infusa (x2), Gessetto (x4)",
+        "targetMode": "fixedDc",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 18,
+        "areaShape": "circle",
+        "areaSize": "10m diameter"
     },
     "effects": [],
     "flags": {},

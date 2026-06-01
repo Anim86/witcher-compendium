@@ -15,9 +15,10 @@
         "stamina": 16,
         "staminaIsVar": false,
         "effect": "Evoca una bufera di neve che acceca i nemici. I compagni sono immuni e possono congelare i bersagli colpita.",
-        "range": "Raggio di 1,6km",
+        "range": "1,6km di raggio",
         "duration": "1 ora",
         "defence": "Nessuna",
+        "defenseOptions": [],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -50,7 +51,13 @@
         "attackOptions": [
             "spell"
         ],
-        "spellAttackSkill": "spellcast"
+        "spellAttackSkill": "spellcast",
+        "targetMode": "area",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "circle",
+        "areaSize": "1,6km radius"
     },
     "effects": [],
     "flags": {},

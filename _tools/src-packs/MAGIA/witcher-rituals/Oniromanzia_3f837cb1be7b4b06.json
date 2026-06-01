@@ -15,9 +15,10 @@
         "stamina": 8,
         "staminaIsVar": false,
         "effect": "Genera sogni rivelatori per il passato o presente/futuro. Permette di trasportare nel sogno altre persone rispondendo a domande personali",
-        "range": "N/A",
+        "range": "manual",
         "duration": "1d10 Round",
         "defence": "",
+        "defenseOptions": [],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -53,7 +54,13 @@
         "spellAttackSkill": "ritcraft",
         "difficultyCheck": "15 (18)",
         "preparationTime": "",
-        "components": "Un posto dove dormire"
+        "components": "Un posto dove dormire",
+        "targetMode": "fixedDc",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 15,
+        "areaShape": "",
+        "areaSize": ""
     },
     "effects": [],
     "flags": {},

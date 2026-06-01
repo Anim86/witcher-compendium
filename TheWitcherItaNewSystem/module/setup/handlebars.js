@@ -281,6 +281,22 @@ export async function registerHandelbarHelpers() {
         return str.toLowerCase();
     });
 
+    Handlebars.registerHelper('spellSourceLabel', function (source) {
+        if (typeof source !== 'string' || !source.trim()) return '';
+
+        const sourceLabels = {
+            mixedelements: 'WITCHER.Spell.Mixed',
+            earth: 'WITCHER.Spell.Earth',
+            air: 'WITCHER.Spell.Air',
+            fire: 'WITCHER.Spell.Fire',
+            water: 'WITCHER.Spell.Water',
+            mixed: 'WITCHER.Spell.Mixed'
+        };
+
+        const label = sourceLabels[source.trim().toLowerCase()];
+        return label ? game.i18n.localize(label) : source;
+    });
+
     Handlebars.registerHelper('sum', function (...args) {
         // Remove the options object from the end
         args.pop();

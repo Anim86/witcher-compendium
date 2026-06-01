@@ -11,13 +11,16 @@
         "sourcebook": "MB 103",
         "class": "Mage",
         "level": "journeyman",
-        "source": "Water",
+        "source": "water",
         "stamina": 8,
         "staminaIsVar": false,
         "effect": "Anialwch permette di risucchiare parte dei li- quidi presenti nel corpo di un bersaglio, danneggiandolo e sfinendolo. L'incantesimo infligge 4d6 danni che non possono essere bloccati da armature o scudi. La grave di- sidratazione causa anche affaticamento che riduce di 4d6 la RES del bersaglio.",
         "range": "10m",
         "duration": "Istantanea",
         "defence": "Resistere alla Magia",
+        "defenseOptions": [
+            "magicResist"
+        ],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -53,7 +56,13 @@
         "spellAttackSkill": "spellcast",
         "causeDamages": true,
         "damage": "4d6",
-        "damageType": "elemental"
+        "damageType": "elemental",
+        "targetMode": "direct",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "effects": [],
     "flags": {},

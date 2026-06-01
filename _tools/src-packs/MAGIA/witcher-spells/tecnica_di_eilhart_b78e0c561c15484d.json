@@ -11,13 +11,16 @@
         "sourcebook": "MB 103",
         "class": "Mage",
         "level": "journeyman",
-        "source": "mixedElements",
+        "source": "mixed",
         "stamina": 12,
         "staminaIsVar": false,
         "effect": "Orribile incantesimo, che prende il nome dalla sua creatrice Philippa Eilhart, consente di scavare nel- la mente del bersaglio e strapparne informazioni. Se il tiro di Lanciare Incantesimi ha successo, l'incantatore ricava un'informazione dal bersaglio. Se il tiro di difesa del bersaglio è un Disastro la sua INT è ridotta perma- nentemente di 1.",
         "range": "3m",
         "duration": "Istantanea",
         "defence": "Resistere alla Magia",
+        "defenseOptions": [
+            "magicResist"
+        ],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -50,7 +53,13 @@
         "attackOptions": [
             "spell"
         ],
-        "spellAttackSkill": "spellcast"
+        "spellAttackSkill": "spellcast",
+        "targetMode": "direct",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "effects": [],
     "flags": {},

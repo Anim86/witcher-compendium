@@ -11,13 +11,14 @@
         "sourcebook": "TC 83",
         "class": "Mage",
         "level": "master",
-        "source": "Earth",
+        "source": "earth",
         "stamina": 4,
         "staminaIsVar": false,
         "effect": "Pilastro di Terra fa emergere dal suolo un cubo di terra di 2m di lato. Si tratta di un riparo con PR 10, che permane finché non viene distrutto.",
         "range": "10m",
         "duration": "Istantanea",
         "defence": "Nessuna",
+        "defenseOptions": [],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -50,7 +51,13 @@
         "attackOptions": [
             "spell"
         ],
-        "spellAttackSkill": "spellcast"
+        "spellAttackSkill": "spellcast",
+        "targetMode": "none",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "effects": [],
     "flags": {},

@@ -13,6 +13,9 @@
     {{#if hasStaCost}}
         <span>{{localize "WITCHER.Spell.Short.StaCost"}}</span>
     {{/if}}
+    {{#if hasElement}}
+        <span>{{localize "WITCHER.Spell.Element"}}</span>
+    {{/if}}
     {{#unless noWeight}}
         <span>{{localize "WITCHER.table.Weight"}}</span>
     {{/unless}}

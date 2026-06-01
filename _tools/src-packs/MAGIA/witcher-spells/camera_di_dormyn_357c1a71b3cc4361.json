@@ -11,13 +11,16 @@
         "sourcebook": "TC 83",
         "class": "Mage",
         "level": "master",
-        "source": "mixedElements",
+        "source": "mixed",
         "stamina": 18,
         "staminaIsVar": false,
         "effect": "Camera di Dormyn imprigiona una singola cre- atura in una bolla traslucida, dotata di 40 Punti Salute, che rimane ferma nel punto in cui è stata lanciata. La creatura allâ€™interno non può bersagliare ciò che si trova allâ€™esterno, né viceversa. Inoltre, la bolla è perfettamente insonorizzata.",
         "range": "10m",
         "duration": "Attiva (8 RES)",
         "defence": "Schivare",
+        "defenseOptions": [
+            "dodge"
+        ],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -50,7 +53,13 @@
         "attackOptions": [
             "spell"
         ],
-        "spellAttackSkill": "spellcast"
+        "spellAttackSkill": "spellcast",
+        "targetMode": "direct",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "effects": [],
     "flags": {},

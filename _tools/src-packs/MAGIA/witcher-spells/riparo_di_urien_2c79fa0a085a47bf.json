@@ -15,9 +15,10 @@
         "stamina": 3,
         "staminaIsVar": false,
         "effect": "Riparo di Urien, creato dal mago dell'aria Urien di Cidaris, permette di annullare gli effetti negativi del tempo atmosferico in un raggio di 8m centrato sull'in- cantatore. Nega il caldo e il freddo estremi, la pioggia e la neve.",
-        "range": "",
+        "range": "Raggio di 8m",
         "duration": "",
-        "defence": "",
+        "defence": "Nessuna",
+        "defenseOptions": [],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -50,7 +51,13 @@
         "attackOptions": [
             "spell"
         ],
-        "spellAttackSkill": "spellcast"
+        "spellAttackSkill": "spellcast",
+        "targetMode": "area",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "sphere",
+        "areaSize": "8m radius"
     },
     "effects": [],
     "flags": {},

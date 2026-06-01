@@ -18,6 +18,9 @@
         "range": "8m",
         "duration": "Istantanea",
         "defence": "Schivare",
+        "defenseOptions": [
+            "dodge"
+        ],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -50,7 +53,13 @@
         "attackOptions": [
             "spell"
         ],
-        "spellAttackSkill": "spellcast"
+        "spellAttackSkill": "spellcast",
+        "targetMode": "area",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "rect",
+        "areaSize": "2m x 2m"
     },
     "effects": [],
     "flags": {},

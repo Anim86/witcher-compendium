@@ -11,13 +11,17 @@
         "sourcebook": "MB 103",
         "class": "Mage",
         "level": "master",
-        "source": "Fire",
+        "source": "fire",
         "stamina": 25,
         "staminaIsVar": false,
         "effect": "Questo incantesimo è famoso per il caos che ha seminato sui campi della Valle del Pontar. Fuoco dai Cieli consente all'incantatore di far piovere palle di fuo- co dal cielo su un'area immensa. Chiunque sia al suo in- terno (eccetto l'incantatore) ha una probabilit del 75% di venire colpito e deve difendersi con una CD pari al risultato di Lanciare Incantesimi dell'incantatore o subi- re 4d6 danni in un punto casuale del corpo e il 75% di probabilit di subire l'effetto A Fuoco.",
         "range": "Raggio di 40m",
         "duration": "2d6 Round",
         "defence": "Schivare o Bloccare",
+        "defenseOptions": [
+            "dodge",
+            "block"
+        ],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -53,7 +57,13 @@
         "spellAttackSkill": "spellcast",
         "causeDamages": true,
         "damage": "4d6",
-        "damageType": "elemental"
+        "damageType": "elemental",
+        "targetMode": "area",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "sphere",
+        "areaSize": "40m radius"
     },
     "effects": [],
     "flags": {},

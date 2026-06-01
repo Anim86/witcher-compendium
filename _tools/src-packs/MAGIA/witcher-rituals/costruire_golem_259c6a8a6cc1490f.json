@@ -13,7 +13,13 @@
         "difficultyCheck": "20",
         "level": "master",
         "staminaIsVar": false,
-        "effect": "Fabbrica un Golem elementale totalmente sottomesso e privo di libero arbitrio che esegue alla lettera gli ordini impartiti."
+        "effect": "Fabbrica un Golem elementale totalmente sottomesso e privo di libero arbitrio che esegue alla lettera gli ordini impartiti.",
+        "targetMode": "manual",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "type": "ritual",
     "img": "modules/witcher-compendium/assets/MAGIA/witcher-rituals/costruire_golem.webp",

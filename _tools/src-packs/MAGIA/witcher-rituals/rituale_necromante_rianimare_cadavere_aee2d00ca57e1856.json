@@ -8,7 +8,13 @@
         "sourcebook": "TC 132",
         "class": "Necromanzia",
         "level": "journeyman",
-        "stamina": 10
+        "stamina": 10,
+        "targetMode": "manual",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "effects": [],
     "flags": {},

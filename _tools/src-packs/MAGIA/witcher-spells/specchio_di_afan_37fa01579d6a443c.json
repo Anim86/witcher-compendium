@@ -15,9 +15,10 @@
         "stamina": 3,
         "staminaIsVar": false,
         "effect": "<p>Creato dal talentuoso mago aedirniano Afan di Guleta, lo Specchio di Afan crea 1d10 copie illusorie dell'incantatore. Queste copie sono immateriali, ma indistinguibili dall'incantatore e controllate mentalmente Alessandro Pacifico 355698</p>",
-        "range": "",
-        "duration": "",
-        "defence": "",
+        "range": "10m",
+        "duration": "Attiva (2 RES)",
+        "defence": "Nessuna",
+        "defenseOptions": [],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -53,7 +54,13 @@
         "spellAttackSkill": "spellcast",
         "causeDamages": true,
         "damage": "1d10",
-        "damageType": "elemental"
+        "damageType": "elemental",
+        "targetMode": "none",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "effects": [],
     "flags": {},

@@ -11,13 +11,16 @@
         "sourcebook": "MB 103",
         "class": "Mage",
         "level": "journeyman",
-        "source": "mixedElements",
+        "source": "mixed",
         "stamina": 1,
         "staminaIsVar": false,
         "effect": "Illusione consente all'incantatore di creare qualsiasi illusione visiva desideri entro 20m. Chiunque fallisca la prova di Resistenza alla Magia e può vedere l'illusione, crede che sia reale. L'illusione non può tutta- via essere toccata, udita o annusata.",
         "range": "20m",
         "duration": "Attiva (4 RES)",
         "defence": "Resistere alla Magia",
+        "defenseOptions": [
+            "magicResist"
+        ],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -50,7 +53,13 @@
         "attackOptions": [
             "spell"
         ],
-        "spellAttackSkill": "spellcast"
+        "spellAttackSkill": "spellcast",
+        "targetMode": "area",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "manual",
+        "areaSize": "20m radius"
     },
     "effects": [],
     "flags": {},

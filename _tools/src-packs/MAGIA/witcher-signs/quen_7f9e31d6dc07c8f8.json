@@ -11,13 +11,14 @@
         "sourcebook": "MB 115",
         "class": "Witcher",
         "level": "basic",
-        "source": "Earth",
+        "source": "earth",
         "stamina": 0,
         "staminaIsVar": true,
         "effect": "Crea uno scudo magico che conferisce 5 Punti Salute per ogni punto RES speso. I danni riducono i PS dello scudo; solo il danno eccedente scalerà i PS dell'incantatore. Non può essere lanciato nuovamente finché lo scudo non si è esaurito. Inefficace contro danni passivi/interni come asfissia, veleni o malattie.",
         "range": "Personale",
         "duration": "10 round o fino a esaurimento",
         "defence": "Nessuna",
+        "defenseOptions": [],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -50,7 +51,13 @@
         "attackOptions": [
             "spell"
         ],
-        "spellAttackSkill": "spellcast"
+        "spellAttackSkill": "spellcast",
+        "targetMode": "self",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "effects": [],
     "flags": {},

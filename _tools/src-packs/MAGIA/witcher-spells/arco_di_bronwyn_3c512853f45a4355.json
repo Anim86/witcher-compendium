@@ -11,13 +11,17 @@
         "sourcebook": "TC 83",
         "class": "Mage",
         "level": "master",
-        "source": "mixedElements",
+        "source": "mixed",
         "stamina": 5,
         "staminaIsVar": false,
         "effect": "sviluppato da Bronwyn Occhiofino per bom- bardare le navi Nilfgaardiane, questo incantesimo evoca una potente corrente dâ€™aria che aumenta la gittata dei proiettili. Mentre lancia lâ€™incantesimo, il mago effettua un attacco con unâ€™Arma da Lancio, un Proiettile per Arma a Distanza (Freccia o Dardo) o una Bomba, usan- do la propria base di Lanciare Incantesimi. Se colpisce, lâ€™attacco causa 4d6 danni.",
         "range": "50m",
         "duration": "Istantanea",
         "defence": "Schivare o Bloccare",
+        "defenseOptions": [
+            "dodge",
+            "block"
+        ],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -53,7 +57,13 @@
         "spellAttackSkill": "spellcast",
         "causeDamages": true,
         "damage": "4d6",
-        "damageType": "elemental"
+        "damageType": "elemental",
+        "targetMode": "direct",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "effects": [],
     "flags": {},

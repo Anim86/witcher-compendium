@@ -11,13 +11,14 @@
         "sourcebook": "TC 83",
         "class": "Mage",
         "level": "master",
-        "source": "mixedElements",
+        "source": "mixed",
         "stamina": 5,
         "staminaIsVar": false,
         "effect": "ideata da Aurora Henson, famosa maga dellâ€™ac- qua, per esplorare le rovine sommerse al largo della costa del Continente, questâ€™astuta manipolazione della magia permette di respirare lâ€™acqua come se fosse semplice aria.",
         "range": "Personale",
         "duration": "30 minuti",
         "defence": "Nessuna",
+        "defenseOptions": [],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -50,7 +51,13 @@
         "attackOptions": [
             "spell"
         ],
-        "spellAttackSkill": "spellcast"
+        "spellAttackSkill": "spellcast",
+        "targetMode": "self",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "effects": [],
     "flags": {},

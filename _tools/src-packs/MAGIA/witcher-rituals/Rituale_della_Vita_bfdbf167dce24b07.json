@@ -13,7 +13,13 @@
         "difficultyCheck": "15",
         "level": "novice",
         "staminaIsVar": false,
-        "effect": "Crea un cerchio in cui le cure sono amplificate. Chi vi entra rigenera 3 PS per turno per un massimo di 10 round"
+        "effect": "Crea un cerchio in cui le cure sono amplificate. Chi vi entra rigenera 3 PS per turno per un massimo di 10 round",
+        "targetMode": "manual",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "type": "ritual",
     "img": "modules/witcher-compendium/assets/MAGIA/witcher-rituals/rituale_della_vita.webp",

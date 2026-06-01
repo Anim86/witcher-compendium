@@ -11,13 +11,17 @@
         "sourcebook": "MB 103",
         "class": "Mage",
         "level": "novice",
-        "source": "Earth",
+        "source": "earth",
         "stamina": 5,
         "staminaIsVar": false,
         "effect": "Spuntone di Terra crea una stalattite acuminata che trafigge il bersaglio. Lo spuntone infligge 5d6 danni e permane finché non è distrutto, dopo aver subito 20 danni.",
         "range": "6m",
         "duration": "Istantanea",
         "defence": "Schivare o Bloccare",
+        "defenseOptions": [
+            "dodge",
+            "block"
+        ],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -53,7 +57,13 @@
         "spellAttackSkill": "spellcast",
         "causeDamages": true,
         "damage": "5d6",
-        "damageType": "elemental"
+        "damageType": "elemental",
+        "targetMode": "direct",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "effects": [],
     "flags": {},

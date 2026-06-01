@@ -13,7 +13,13 @@
         "difficultyCheck": "15",
         "level": "novice",
         "staminaIsVar": false,
-        "effect": "Chiude un vortice magico in un vaso. Quando viene rotto, scatena casualmente un incantesimo ambientale tra: Prigione Talfryn, Zefiro, Tanio Ilchar, Nebbia Dormyn, Tempesta Statica"
+        "effect": "Chiude un vortice magico in un vaso. Quando viene rotto, scatena casualmente un incantesimo ambientale tra: Prigione Talfryn, Zefiro, Tanio Ilchar, Nebbia Dormyn, Tempesta Statica",
+        "targetMode": "manual",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "type": "ritual",
     "img": "modules/witcher-compendium/assets/MAGIA/witcher-rituals/vaso_d_incantesimi.webp",

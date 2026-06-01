@@ -11,13 +11,14 @@
         "sourcebook": "TC 101",
         "class": "Witcher",
         "level": "basic",
-        "source": "",
+        "source": "mixed",
         "stamina": 0,
         "staminaIsVar": true,
         "effect": "Tracciando il Segno su una superficie, il witcher proietta i propri sensi uditivi verso un punto preciso entro la sua gittata. Può ascoltare chiaramente tutto ciò che avviene nei pressi di quel luogo, focalizzandosi su suoni specifici senza prove di Accortezza per origliare. Il collegamento è vincolato al punto: per spostarlo occorre lanciare nuovamente il segno.",
-        "range": "Variabile (2m per ogni punto RES)",
-        "duration": "Istantanea (collegamento fisso al punto)",
+        "range": "Variabile",
+        "duration": "0 minuti",
         "defence": "Nessuna",
+        "defenseOptions": [],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -50,7 +51,13 @@
         "attackOptions": [
             "spell"
         ],
-        "spellAttackSkill": "spellcast"
+        "spellAttackSkill": "spellcast",
+        "targetMode": "none",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "effects": [],
     "flags": {},

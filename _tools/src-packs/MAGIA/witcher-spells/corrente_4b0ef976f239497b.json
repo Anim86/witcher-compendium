@@ -11,13 +11,14 @@
         "sourcebook": "TC 83",
         "class": "Mage",
         "level": "master",
-        "source": "mixedElements",
+        "source": "mixed",
         "stamina": 5,
         "staminaIsVar": false,
         "effect": "questo incantesimo crea una corrente che spinge il mago attraverso lâ€™acqua nella direzione da lui voluta. Mentre nuota sotto lâ€™effetto di questa magia, la sua VEL è 12 e non subisce le normali penalità per essere sottâ€™acqua.",
         "range": "Personale",
         "duration": "10 minuti",
         "defence": "Nessuna",
+        "defenseOptions": [],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -50,7 +51,13 @@
         "attackOptions": [
             "spell"
         ],
-        "spellAttackSkill": "spellcast"
+        "spellAttackSkill": "spellcast",
+        "targetMode": "self",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "effects": [],
     "flags": {},

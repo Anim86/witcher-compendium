@@ -11,13 +11,14 @@
         "sourcebook": "TC 83",
         "class": "Mage",
         "level": "master",
-        "source": "Earth",
+        "source": "earth",
         "stamina": 25,
         "staminaIsVar": false,
         "effect": "Modellare Terra crea una struttura del volume massimo di 20 metri cubi, usando i materiali presenti nellâ€™ambiente, come legno, roccia o terriccio. Ãˆ il mago a decidere forma e funzione della struttura, purché si tratti di qualcosa di semplice, come un muro, una sta- tua o una torre con poche stanze e scarsamente ammo- biliata. La struttura sorge nel giro di 10 minuti e ha un valore di PR scelto dal GM, da PR 5 per un muro di legno a PR 30 per uno di pietra.",
         "range": "6m",
         "duration": "Permanente",
         "defence": "Nessuna",
+        "defenseOptions": [],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -50,7 +51,13 @@
         "attackOptions": [
             "spell"
         ],
-        "spellAttackSkill": "spellcast"
+        "spellAttackSkill": "spellcast",
+        "targetMode": "none",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "manual",
+        "areaSize": "20 metri cubi"
     },
     "effects": [],
     "flags": {},

@@ -6,8 +6,21 @@
         "cost": 0,
         "description": "<p>Descrizione mancante nel Tomo del Caos.</p>",
         "class": "Mage",
+        "source": "water",
         "sourcebook": "TC 84",
-        "level": "master"
+        "level": "master",
+        "defence": "Schivare",
+        "defenseOptions": [
+            "dodge"
+        ],
+        "targetMode": "direct",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": "",
+        "range": "8m",
+        "duration": "Istantanea"
     },
     "type": "spell",
     "img": "modules/witcher-compendium/assets/MAGIA/witcher-spells/getto_d_acqua.webp",

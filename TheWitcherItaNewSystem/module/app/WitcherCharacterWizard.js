@@ -2604,6 +2604,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 general: {
                     age: this.characterData.age || 20,
                     socialStanding: "",
+                    backgroundLocked: true,
                     homeland: {
                         value: this.characterData.homeland || ""
                     },

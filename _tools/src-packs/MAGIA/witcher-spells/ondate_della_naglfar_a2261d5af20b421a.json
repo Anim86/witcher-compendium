@@ -11,13 +11,17 @@
         "sourcebook": "MB 103",
         "class": "Mage",
         "level": "journeyman",
-        "source": "Water",
+        "source": "water",
         "stamina": 10,
         "staminaIsVar": false,
         "effect": "Creato da un mago che asseriva di aver assistito alla cavalcata della Caccia Selvaggia, questo incantesimo crea un'ondata di magia del ghiaccio che si espande per 3m dall'incantatore in ogni direzione. Chiunque si trovi nell'area deve superare una prova di difesa o venire con- gelato e subire 4d6 danni.",
         "range": "Raggio di 3m",
         "duration": "Istantanea",
         "defence": "Schivare o Bloccare",
+        "defenseOptions": [
+            "dodge",
+            "block"
+        ],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -53,7 +57,13 @@
         "spellAttackSkill": "spellcast",
         "causeDamages": true,
         "damage": "4d6",
-        "damageType": "elemental"
+        "damageType": "elemental",
+        "targetMode": "area",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "sphere",
+        "areaSize": "3m radius"
     },
     "effects": [],
     "flags": {},

@@ -11,13 +11,14 @@
         "sourcebook": "TC 83",
         "class": "Mage",
         "level": "master",
-        "source": "Water",
+        "source": "water",
         "stamina": 5,
         "staminaIsVar": false,
         "effect": "nessuno sa chi creò questo incantesimo, ma divenne famigerato per essere stato usato sullâ€™Impera- tore Fergus var Emreis quando fu detronizzato. Morte di Fergus evoca una serie di aghi magici che, seguendo gli ordini del mago, torturano la vittima. Per la durata dellâ€™incantesimo, il mago può condurre interrogatori usando Lanciare Incantesimi invece di Intimidire.",
         "range": "2m",
         "duration": "1 ora",
         "defence": "Nessuna",
+        "defenseOptions": [],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -50,7 +51,13 @@
         "attackOptions": [
             "spell"
         ],
-        "spellAttackSkill": "spellcast"
+        "spellAttackSkill": "spellcast",
+        "targetMode": "direct",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "effects": [],
     "flags": {},

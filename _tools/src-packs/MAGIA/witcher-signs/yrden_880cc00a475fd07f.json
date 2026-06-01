@@ -11,13 +11,14 @@
         "sourcebook": "MB 115",
         "class": "Witcher",
         "level": "basic",
-        "source": "Mixed",
+        "source": "mixed",
         "stamina": 0,
         "staminaIsVar": true,
         "effect": "Genera un cerchio magico al suolo. Ogni nemico che vi entra subisce una penalità a VEL e RIF pari a 1, aumentata di +1 per ogni 2 punti RES spesi oltre il primo (malus massimo -4). Le creature incorporee che sostano nel cerchio assumono forma corporea.",
         "range": "Raggio di 3m",
         "duration": "5 round",
         "defence": "Nessuna",
+        "defenseOptions": [],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -50,7 +51,13 @@
         "attackOptions": [
             "spell"
         ],
-        "spellAttackSkill": "spellcast"
+        "spellAttackSkill": "spellcast",
+        "targetMode": "area",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "circle",
+        "areaSize": "3m radius"
     },
     "effects": [],
     "flags": {},

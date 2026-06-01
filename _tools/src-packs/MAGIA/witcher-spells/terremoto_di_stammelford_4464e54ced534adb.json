@@ -11,13 +11,16 @@
         "sourcebook": "MB 103",
         "class": "Mage",
         "level": "journeyman",
-        "source": "mixedElements",
+        "source": "mixed",
         "stamina": 12,
         "staminaIsVar": false,
         "effect": "Terremoto di Stammelford consente di dissesta- re il suolo in un'area di 10m, creando un terreno frasta- gliato e franoso che impone ad ogni bersaglio nell'area -2 Riflessi e -3 MAN. Piccole costruzioni sul terreno infranto hanno il 10% di probabilit di crollare. Ogni round, ogni bersaglio nell'area deve superare un tiro di Atletica o sprofondare nel terreno instabile, e iniziare a soffocare finché non riesce ad uscire superando un'altra prova di Atletica. Esaurita la durata dell'incantesimo, il terreno cessa di franare, ma resta dissestato.",
         "range": "30m",
         "duration": "1d10 Round",
         "defence": "Schivare",
+        "defenseOptions": [
+            "dodge"
+        ],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -50,7 +53,13 @@
         "attackOptions": [
             "spell"
         ],
-        "spellAttackSkill": "spellcast"
+        "spellAttackSkill": "spellcast",
+        "targetMode": "area",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "circle",
+        "areaSize": "10m radius"
     },
     "effects": [],
     "flags": {},

@@ -15,9 +15,10 @@
         "stamina": 6,
         "staminaIsVar": false,
         "effect": "Gli attacchi in mischia non possono essere parati e fanno danno doppio ad armature/armi. Conferisce immunità a spinta/atterramento.",
-        "range": "N/A",
+        "range": "6m",
         "duration": "10 minuti",
         "defence": "Nessuna",
+        "defenseOptions": [],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -50,7 +51,13 @@
         "attackOptions": [
             "spell"
         ],
-        "spellAttackSkill": "spellcast"
+        "spellAttackSkill": "spellcast",
+        "targetMode": "direct",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "effects": [],
     "flags": {},

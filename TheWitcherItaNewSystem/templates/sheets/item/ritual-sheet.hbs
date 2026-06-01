@@ -78,6 +78,50 @@
             <label>{{localize "WITCHER.Spell.Duration"}}</label>
             <input name="system.duration" type="text" value="{{item.system.duration}}" />
         </div>
+        <div class="property-card">
+            <label>{{localize "WITCHER.Spell.Range"}}</label>
+            <input name="system.range" type="text" value="{{item.system.range}}" />
+        </div>
+        <div class="property-card">
+            <label>{{localize "WITCHER.Spell.Defence"}}</label>
+            <input name="system.defence" type="text" value="{{item.system.defence}}" />
+        </div>
+        <div class="property-card">
+            <label>{{localize "WITCHER.Spell.TargetMode.Label"}}</label>
+            <select name="system.targetMode">
+                {{selectOptions selects.targetMode selected=item.system.targetMode blank="" localize=true}}
+            </select>
+        </div>
+        {{#if (eq item.system.targetMode "targetStat")}}
+        <div class="property-card">
+            <label>{{localize "WITCHER.Spell.TargetStat"}}</label>
+            <select name="system.targetStat">
+                {{selectOptions selects.targetStat selected=item.system.targetStat blank="" localize=true}}
+            </select>
+        </div>
+        <div class="property-card">
+            <label>{{localize "WITCHER.Spell.TargetMultiplier"}}</label>
+            <input name="system.targetMultiplier" type="number" value="{{item.system.targetMultiplier}}" />
+        </div>
+        {{/if}}
+        {{#if (eq item.system.targetMode "fixedDc")}}
+        <div class="property-card">
+            <label>{{localize "WITCHER.Spell.TargetDc"}}</label>
+            <input name="system.targetDc" type="number" value="{{item.system.targetDc}}" />
+        </div>
+        {{/if}}
+        {{#if (or (eq item.system.targetMode "area") item.system.areaShape item.system.areaSize)}}
+        <div class="property-card">
+            <label>{{localize "WITCHER.Spell.AreaShape"}}</label>
+            <select name="system.areaShape">
+                {{selectOptions selects.areaShape selected=item.system.areaShape blank="" localize=true}}
+            </select>
+        </div>
+        <div class="property-card">
+            <label>{{localize "WITCHER.Spell.AreaSize"}}</label>
+            <input name="system.areaSize" type="text" value="{{item.system.areaSize}}" />
+        </div>
+        {{/if}}
     </div>
 
     <div class="item-settings-grid">
@@ -146,4 +190,4 @@
             {{/each}}
         </div>
     </div>
-</section>
+</section>

@@ -11,13 +11,14 @@
         "sourcebook": "TC 83",
         "class": "Mage",
         "level": "master",
-        "source": "Fire",
+        "source": "fire",
         "stamina": 25,
         "staminaIsVar": false,
         "effect": "Fuoco Vivente anima una piccola fiam- ma. Questa non è senziente o potente quanto un Elementale, ma agisce con un proprio Turno alla stessa Iniziativa del mago. Il Fuoco Vivente ha VEL 5, è con- siderato Incorporeo e può lanciare Aenye, Fiammata e Vortice Fiammeggiante con una Base di 16 e RES infinita. Il Fuoco Vivente non può compiere Azioni Aggiuntive e muore se viene estinto.",
         "range": "10m",
         "duration": "10 minuti",
         "defence": "Nessuna",
+        "defenseOptions": [],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -50,7 +51,13 @@
         "attackOptions": [
             "spell"
         ],
-        "spellAttackSkill": "spellcast"
+        "spellAttackSkill": "spellcast",
+        "targetMode": "none",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "effects": [],
     "flags": {},

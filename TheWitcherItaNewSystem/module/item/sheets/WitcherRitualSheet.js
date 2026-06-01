@@ -24,6 +24,36 @@ export default class WitcherRitualSheet extends WitcherItemSheet {
                 journeyman: 'WITCHER.Spell.Journeyman',
                 master: 'WITCHER.Spell.Master'
             },
+            targetMode: {
+                self: 'WITCHER.Spell.TargetMode.self',
+                none: 'WITCHER.Spell.TargetMode.none',
+                direct: 'WITCHER.Spell.TargetMode.direct',
+                area: 'WITCHER.Spell.TargetMode.area',
+                targetStat: 'WITCHER.Spell.TargetMode.targetStat',
+                fixedDc: 'WITCHER.Spell.TargetMode.fixedDc',
+                gmDc: 'WITCHER.Spell.TargetMode.gmDc',
+                manual: 'WITCHER.Spell.TargetMode.manual'
+            },
+            targetStat: {
+                int: 'WITCHER.Actor.Stat.Int',
+                ref: 'WITCHER.Actor.Stat.Ref',
+                dex: 'WITCHER.Actor.Stat.Dex',
+                body: 'WITCHER.Actor.Stat.Body',
+                spd: 'WITCHER.Actor.Stat.Spd',
+                emp: 'WITCHER.Actor.Stat.Emp',
+                cra: 'WITCHER.Actor.Stat.Cra',
+                will: 'WITCHER.Actor.Stat.Will',
+                luck: 'WITCHER.Actor.Stat.Luck'
+            },
+            areaShape: {
+                circle: 'WITCHER.Spell.Circle',
+                cone: 'WITCHER.Spell.Cone',
+                line: 'WITCHER.Spell.Line',
+                ray: 'WITCHER.Spell.Ray',
+                rect: 'WITCHER.Spell.Square',
+                sphere: 'WITCHER.Spell.Sphere',
+                manual: 'WITCHER.Spell.Manual'
+            },
             templateType: {
                 rect: 'WITCHER.Spell.Square',
                 circle: 'WITCHER.Spell.Circle',

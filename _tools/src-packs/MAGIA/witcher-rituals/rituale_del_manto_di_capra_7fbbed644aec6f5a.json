@@ -20,7 +20,13 @@
         "preparationTime": "2 settimane + 30 Round",
         "difficultyCheck": "16",
         "components": "Una capra (benedetta, uccisa e scuoiata); ceneri dei resti bruciati; Pugnale di Diaspro Sanguigno; Erbe da concia (Investimento: 400)",
-        "spellAttackSkill": "ritcraft"
+        "spellAttackSkill": "ritcraft",
+        "targetMode": "manual",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "effects": [],
     "flags": {},

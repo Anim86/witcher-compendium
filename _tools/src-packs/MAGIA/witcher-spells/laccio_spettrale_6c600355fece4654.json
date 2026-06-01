@@ -11,13 +11,16 @@
         "sourcebook": "TC 83",
         "class": "Mage",
         "level": "master",
-        "source": "mixedElements",
+        "source": "mixed",
         "stamina": 8,
         "staminaIsVar": false,
         "effect": "Laccio Spettrale crea un cappio magico attor- no al bersaglio, costringendolo nella sua forma fisica. Mentre è sotto lâ€™effetto di questo incantesimo, la vittima non può diventare incorporea, invisibile, teletrasportar- si in alcun modo o allontanarsi più di 10m dal mago. A ogni suo Turno può usare la propria Azione per ten- tare una nuova difesa, contrapposta a unâ€™altra prova di Lanciare Incantesimi, per porre fine allâ€™effetto.",
         "range": "10m",
         "duration": "Attiva (4 RES)",
         "defence": "Resistere alla Magia",
+        "defenseOptions": [
+            "magicResist"
+        ],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -50,7 +53,13 @@
         "attackOptions": [
             "spell"
         ],
-        "spellAttackSkill": "spellcast"
+        "spellAttackSkill": "spellcast",
+        "targetMode": "direct",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "effects": [],
     "flags": {},

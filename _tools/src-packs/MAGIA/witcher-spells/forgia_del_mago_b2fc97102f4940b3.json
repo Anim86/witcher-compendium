@@ -11,13 +11,14 @@
         "sourcebook": "TC 83",
         "class": "Mage",
         "level": "master",
-        "source": "mixedElements",
+        "source": "mixed",
         "stamina": 12,
         "staminaIsVar": false,
         "effect": "Forgia del mago evoca una fiamma magica con cui purificare il metallo, eliminando tutte le impurità presenti. Ogni lingotto così trattato viene recuperato automaticamente durante la fase di Recupero dellâ€™arti- gianato. Inoltre, la fiamma può essere usata come una Forgia Portatile, ma non per lavorare il Dimeritium.",
         "range": "2m",
         "duration": "1 giorno",
         "defence": "Nessuna",
+        "defenseOptions": [],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -50,7 +51,13 @@
         "attackOptions": [
             "spell"
         ],
-        "spellAttackSkill": "spellcast"
+        "spellAttackSkill": "spellcast",
+        "targetMode": "none",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "effects": [],
     "flags": {},

@@ -8,7 +8,13 @@
         "sourcebook": "TC 135",
         "class": "Necromanzia",
         "level": "master",
-        "stamina": 16
+        "stamina": 16,
+        "targetMode": "manual",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "effects": [],
     "flags": {},

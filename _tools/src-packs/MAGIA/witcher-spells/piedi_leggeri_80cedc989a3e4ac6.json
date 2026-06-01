@@ -11,13 +11,14 @@
         "sourcebook": "TC 83",
         "class": "Mage",
         "level": "master",
-        "source": "mixedElements",
+        "source": "mixed",
         "stamina": 2,
         "staminaIsVar": false,
         "effect": "Piedi Leggeri crea un soffio di vento che sospin- ge il mago. Una volta lanciato lâ€™incantesimo, la VEL del mago aumenta di 5, la sua Corsa di 15 e il Balzo di 3.",
         "range": "Personale",
         "duration": "Attiva (2 RES)",
         "defence": "Nessuna",
+        "defenseOptions": [],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -50,7 +51,13 @@
         "attackOptions": [
             "spell"
         ],
-        "spellAttackSkill": "spellcast"
+        "spellAttackSkill": "spellcast",
+        "targetMode": "self",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "effects": [],
     "flags": {},

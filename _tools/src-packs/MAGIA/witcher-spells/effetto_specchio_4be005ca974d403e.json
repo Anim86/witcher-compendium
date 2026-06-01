@@ -11,13 +11,17 @@
         "sourcebook": "MB 103",
         "class": "Mage",
         "level": "master",
-        "source": "Water",
+        "source": "water",
         "stamina": 25,
         "staminaIsVar": false,
         "effect": "Effetto Specchio crea un raggio di luce acce- cante che infligge 10d6 danni. Questo raggio può essere schivato o bloccato (distruggendo qualsiasi cosa utiliz- zata per bloccare), ma non può essere deviato dal vento e può essere parato solo da una superficie riflettente, che subisce comunque il danno. Il laser riflesso è deviato in una direzione casuale. Questo incantesimo utilizza i rag- gi del sole e non può essere utilizzato in mancanza di luce solare. Con la luce della luna o col cielo coperto da nubi, infligge met dei danni.",
         "range": "20m",
         "duration": "2d6 Round",
         "defence": "Schivare o Bloccare",
+        "defenseOptions": [
+            "dodge",
+            "block"
+        ],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -53,7 +57,13 @@
         "spellAttackSkill": "spellcast",
         "causeDamages": true,
         "damage": "10d6",
-        "damageType": "elemental"
+        "damageType": "elemental",
+        "targetMode": "direct",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "effects": [],
     "flags": {},

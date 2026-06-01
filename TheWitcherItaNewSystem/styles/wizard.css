@@ -3296,32 +3296,112 @@ form.witcher-wizard .wizard-content {
 }
 
 /* Magic Step Styling */
-.witcher-wizard .magic-budget-pill.complete {
-    background: rgba(40, 167, 69, 0.15) !important;
-    border-color: rgba(40, 167, 69, 0.4) !important;
+.witcher-wizard .magic-budget-compact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 20px;
+    padding: 12px 18px;
+    background: #f1eee8;
+    border: 1px solid rgba(102, 85, 68, 0.42);
+    border-radius: 8px;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.75), 0 2px 5px rgba(0, 0, 0, 0.12);
 }
 
-.witcher-wizard .magic-budget-pill.complete span {
-    color: #28a745 !important;
+.witcher-wizard .magic-budget-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 24px;
+    width: 100%;
+}
+
+.witcher-wizard .magic-budget-pill {
+    --magic-pill-color: var(--wizard-accent);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 34px;
+    padding: 4px 10px 4px 12px;
+    background: #fffdf8;
+    border: 1px solid color-mix(in srgb, var(--magic-pill-color) 42%, #6f6256);
+    border-radius: 7px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.14);
+}
+
+.witcher-wizard .magic-budget-pill.spell { --magic-pill-color: #5c2d91; }
+.witcher-wizard .magic-budget-pill.invocation { --magic-pill-color: #9f1f67; }
+.witcher-wizard .magic-budget-pill.ritual { --magic-pill-color: #026aa8; }
+.witcher-wizard .magic-budget-pill.hex { --magic-pill-color: #b51f1f; }
+
+.witcher-wizard .magic-budget-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--magic-pill-color) !important;
+    font-size: 0.78rem;
+    font-weight: 900;
+    letter-spacing: 0.02em;
+    line-height: 1;
+    text-transform: uppercase;
+    text-shadow: none;
+}
+
+.witcher-wizard .magic-budget-count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 48px;
+    min-height: 24px;
+    padding: 2px 9px;
+    color: #ffffff !important;
+    background: var(--magic-pill-color);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: 0.04em;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.35);
+}
+
+.witcher-wizard .magic-budget-pill.complete {
+    background: #ffffff !important;
+    border-color: var(--magic-pill-color) !important;
+}
+
+.witcher-wizard .magic-budget-pill.complete .magic-budget-label {
+    color: var(--magic-pill-color) !important;
 }
 
 .witcher-wizard .magic-card {
+    background: rgba(255, 255, 255, 0.78) !important;
+    border-color: rgba(102, 85, 68, 0.34) !important;
     transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .witcher-wizard .magic-card:hover {
-    background: rgba(255, 255, 255, 0.08) !important;
+    background: #ffffff !important;
     border-color: var(--wizard-accent) !important;
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
 }
 
 .witcher-wizard .magic-card.selected {
-    background: rgba(139, 0, 0, 0.08) !important;
+    background: #fff8df !important;
     border-color: var(--wizard-gold) !important;
-    box-shadow: 0 0 10px rgba(184, 134, 11, 0.3), inset 0 0 5px rgba(184, 134, 11, 0.2) !important;
+    box-shadow: 0 0 0 1px rgba(184, 134, 11, 0.28), 0 4px 10px rgba(0, 0, 0, 0.16) !important;
 }
 
 .witcher-wizard .magic-card.selected span {
-    color: var(--wizard-text-light) !important;
+    color: var(--wizard-text-dark) !important;
+}
+
+.witcher-wizard .magic-card span {
+    color: var(--wizard-text-dark) !important;
+}
+
+.witcher-wizard .magic-card span + span {
+    color: #3f3f3f !important;
+    opacity: 0.86 !important;
 }

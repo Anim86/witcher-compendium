@@ -18,6 +18,9 @@
         "range": "",
         "duration": "Attiva (6 RES)",
         "defence": "Schivare o Scudo Magico",
+        "defenseOptions": [
+            "dodge"
+        ],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -53,7 +56,13 @@
         "spellAttackSkill": "spellcast",
         "causeDamages": true,
         "damage": "8d6",
-        "damageType": "elemental"
+        "damageType": "elemental",
+        "targetMode": "area",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "manual",
+        "areaSize": ""
     },
     "effects": [],
     "flags": {},

@@ -11,13 +11,17 @@
         "sourcebook": "MB 114",
         "class": "Witcher",
         "level": "basic",
-        "source": "Fire",
+        "source": "fire",
         "stamina": 0,
         "staminaIsVar": true,
         "effect": "Scaglia un getto di fuoco e scintille infliggendo 1d6 danni per ogni punto RES speso, con il 50% di probabilità di causare lo status A Fuoco. Il danno è sempre localizzato al Busto, a meno che non sia lanciato a portata vicina.",
         "range": "Cono di 2m",
         "duration": "Istantanea",
         "defence": "Schivare o Bloccare",
+        "defenseOptions": [
+            "dodge",
+            "block"
+        ],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -50,7 +54,13 @@
         "attackOptions": [
             "spell"
         ],
-        "spellAttackSkill": "spellcast"
+        "spellAttackSkill": "spellcast",
+        "targetMode": "area",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "cone",
+        "areaSize": "2m"
     },
     "effects": [],
     "flags": {},

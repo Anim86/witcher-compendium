@@ -11,13 +11,16 @@
         "sourcebook": "MB 115",
         "class": "Witcher",
         "level": "alternate",
-        "source": "Water",
+        "source": "water",
         "stamina": 0,
         "staminaIsVar": true,
         "effect": "Piega la mente del bersaglio rendendolo temporaneamente un alleato dell'incantatore. La vittima può tentare di divincolarsi ogni round con una prova contrapposta di Resistere alla Magia.",
         "range": "8m",
-        "duration": "Finché non viene superato, o 1 round per ogni punto RES speso",
+        "duration": "Finché l'effetto non viene superato o 1 round per punto di RES speso",
         "defence": "Resistere alla Magia",
+        "defenseOptions": [
+            "magicResist"
+        ],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -50,7 +53,13 @@
         "attackOptions": [
             "spell"
         ],
-        "spellAttackSkill": "spellcast"
+        "spellAttackSkill": "spellcast",
+        "targetMode": "direct",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "effects": [],
     "flags": {},

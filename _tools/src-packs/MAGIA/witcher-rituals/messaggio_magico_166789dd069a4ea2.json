@@ -18,6 +18,7 @@
         "range": "N/A",
         "duration": "Permanente",
         "defence": "",
+        "defenseOptions": [],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -53,7 +54,13 @@
         "spellAttackSkill": "ritcraft",
         "difficultyCheck": "12",
         "preparationTime": "",
-        "components": "Vetro o Gemma (x1), Quintessenza (x1), Soluzione di Mercurio (x1)"
+        "components": "Vetro o Gemma (x1), Quintessenza (x1), Soluzione di Mercurio (x1)",
+        "targetMode": "manual",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "effects": [],
     "flags": {},

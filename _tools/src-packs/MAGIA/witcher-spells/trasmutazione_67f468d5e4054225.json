@@ -11,13 +11,14 @@
         "sourcebook": "MB 103",
         "class": "Mage",
         "level": "master",
-        "source": "mixedElements",
+        "source": "mixed",
         "stamina": 25,
         "staminaIsVar": false,
         "effect": "Trasmutazione consente all'incantatore di mo- dificare le propriet di un metallo o di un minerale. Può mutare un'unit di metallo in un qualsiasi altro metallo, o trasformare una gemma imperfetta in una perfetta, utile per la magia. Il dimeritium o altri metalli derivati dal dimeritium, non possono essere creati o modificati con questo incantesimo.",
         "range": "2m",
         "duration": "Permanente",
         "defence": "Nessuna",
+        "defenseOptions": [],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -50,7 +51,13 @@
         "attackOptions": [
             "spell"
         ],
-        "spellAttackSkill": "spellcast"
+        "spellAttackSkill": "spellcast",
+        "targetMode": "none",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "effects": [],
     "flags": {},

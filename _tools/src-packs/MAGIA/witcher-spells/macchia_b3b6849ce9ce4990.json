@@ -11,13 +11,16 @@
         "sourcebook": "TC 83",
         "class": "Mage",
         "level": "master",
-        "source": "mixedElements",
+        "source": "mixed",
         "stamina": 5,
         "staminaIsVar": false,
         "effect": "Macchia crea unâ€™illusione piccola, ma ben visi- bile e assai ripugnante, sul corpo del bersaglio, che non se ne rende conto. La vittima subisce -3 alle prove di Autorità, Carisma e Seduzione. Se si guarda allo spec- chio deve superare una prova di Accortezza CD 16 per notare il difetto, ma se ne accorge subito se qualcun altro glielo indica.",
         "range": "4m",
         "duration": "1d6 ore",
         "defence": "Resistere alla Magia",
+        "defenseOptions": [
+            "magicResist"
+        ],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -50,7 +53,13 @@
         "attackOptions": [
             "spell"
         ],
-        "spellAttackSkill": "spellcast"
+        "spellAttackSkill": "spellcast",
+        "targetMode": "direct",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "effects": [],
     "flags": {},

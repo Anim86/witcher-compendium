@@ -11,13 +11,14 @@
         "sourcebook": "MB 103",
         "class": "Mage",
         "level": "novice",
-        "source": "Water",
+        "source": "water",
         "stamina": 2,
         "staminaIsVar": false,
         "effect": "Acquazzone crea una pioggia torrenzia- le in un'area del raggio di 3m che spegne ogni fuoco. L'incantesimo contrasta gli effetti del fuoco.",
         "range": "8m",
         "duration": "Attiva (2 RES)",
         "defence": "Nessuna",
+        "defenseOptions": [],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -50,7 +51,13 @@
         "attackOptions": [
             "spell"
         ],
-        "spellAttackSkill": "spellcast"
+        "spellAttackSkill": "spellcast",
+        "targetMode": "area",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "circle",
+        "areaSize": "3m radius"
     },
     "effects": [],
     "flags": {},

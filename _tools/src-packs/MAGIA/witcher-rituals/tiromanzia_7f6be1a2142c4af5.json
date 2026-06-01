@@ -13,7 +13,13 @@
         "duration": "Istantanea",
         "preparationTime": "",
         "components": "Formaggio stagionato (x1), Coltello (x1)",
-        "effect": "Permette, esaminando consistenza e odore del formaggio infuso magicamente, di porre semplici domande con risposte affermative o negative."
+        "effect": "Permette, esaminando consistenza e odore del formaggio infuso magicamente, di porre semplici domande con risposte affermative o negative.",
+        "targetMode": "manual",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "type": "ritual",
     "img": "modules/witcher-compendium/assets/MAGIA/witcher-rituals/tiromanzia.webp",

@@ -9,9 +9,9 @@
 
     {{!-- 1. Spells (Incantesimi) --}}
     <section class="tab spell-section {{magicTabs.magic.cssClass}}" data-group="magicTabs" data-tab="magic">
-        {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/spell-type-list.hbs" spells=noviceSpells itemType='spell' spellType="spell" header=(concat (localize "WITCHER.Spell.Novice") " - " (localize "WITCHER.Spell.Spells"))}}
-        {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/spell-type-list.hbs" spells=journeymanSpells itemType='spell' spellType="spell" header=(concat (localize "WITCHER.Spell.Journeyman") " - " (localize "WITCHER.Spell.Spells"))}}
-        {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/spell-type-list.hbs" spells=masterSpells itemType='spell' spellType="spell" header=(concat (localize "WITCHER.Spell.Master") " - " (localize "WITCHER.Spell.Spells"))}}
+        {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/spell-type-list.hbs" spells=noviceSpells itemType='spell' spellType="spell" hasElement=true header=(concat (localize "WITCHER.Spell.Novice") " - " (localize "WITCHER.Spell.Spells"))}}
+        {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/spell-type-list.hbs" spells=journeymanSpells itemType='spell' spellType="spell" hasElement=true header=(concat (localize "WITCHER.Spell.Journeyman") " - " (localize "WITCHER.Spell.Spells"))}}
+        {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/spell-type-list.hbs" spells=masterSpells itemType='spell' spellType="spell" hasElement=true header=(concat (localize "WITCHER.Spell.Master") " - " (localize "WITCHER.Spell.Spells"))}}
     </section>
 
     {{!-- 2. Invocations (Invocazioni) --}}
@@ -23,8 +23,8 @@
 
     {{!-- 3. Witcher Signs (Segni) --}}
     <section class="tab spell-section {{magicTabs.signs.cssClass}}" data-group="magicTabs" data-tab="signs">
-        {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/spell-type-list.hbs" spells=basicSigns itemType='spell' spellType="signBasic" header=(concat (localize "WITCHER.Spell.Basic") " - " (localize "WITCHER.Spell.Signs"))}}
-        {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/spell-type-list.hbs" spells=alternateSigns itemType='spell' spellType="signAlternate" header=(concat (localize "WITCHER.Spell.Alternate") " - " (localize "WITCHER.Spell.Signs"))}}
+        {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/spell-type-list.hbs" spells=basicSigns itemType='spell' spellType="signBasic" hasElement=true header=(concat (localize "WITCHER.Spell.Basic") " - " (localize "WITCHER.Spell.Signs"))}}
+        {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/spell-type-list.hbs" spells=alternateSigns itemType='spell' spellType="signAlternate" hasElement=true header=(concat (localize "WITCHER.Spell.Alternate") " - " (localize "WITCHER.Spell.Signs"))}}
     </section>
 
     {{!-- 4. Rituals (Rituali) --}}

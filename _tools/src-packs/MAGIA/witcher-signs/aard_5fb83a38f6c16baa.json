@@ -11,13 +11,16 @@
         "sourcebook": "MB 114",
         "class": "Witcher",
         "level": "basic",
-        "source": "Air",
+        "source": "air",
         "stamina": 0,
         "staminaIsVar": true,
         "effect": "Scaglia un'ondata di forza telecinetica che rende vacillanti le creature. Ha il 10% di possibilità di far cadere a terra i bersagli; questa percentuale aumenta di un ulteriore +10% per ogni punto RES speso.",
         "range": "Cono di 2m",
         "duration": "Istantanea",
         "defence": "Schivare",
+        "defenseOptions": [
+            "dodge"
+        ],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -50,7 +53,13 @@
         "attackOptions": [
             "spell"
         ],
-        "spellAttackSkill": "spellcast"
+        "spellAttackSkill": "spellcast",
+        "targetMode": "area",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "cone",
+        "areaSize": "2m"
     },
     "effects": [],
     "flags": {},

@@ -11,13 +11,16 @@
         "sourcebook": "MB 103",
         "class": "Mage",
         "level": "journeyman",
-        "source": "Water",
+        "source": "water",
         "stamina": 15,
         "staminaIsVar": false,
         "effect": "Tuono di Alzur consente all'incantatore di sca- gliare contro un bersaglio una potente folgore che in- fligge 8d6 danni e ha il 75% di probabilit d'infliggere l'effetto A Fuoco al bersaglio. Il Tuono di Alzur viaggia in linea retta trapassando i bersagli e, per ogni bersaglio che attraversa, il danno a quello successivo diminuisce di 1d6.",
         "range": "25m",
         "duration": "Istantanea",
         "defence": "Schivare",
+        "defenseOptions": [
+            "dodge"
+        ],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -53,7 +56,13 @@
         "spellAttackSkill": "spellcast",
         "causeDamages": true,
         "damage": "8d6",
-        "damageType": "elemental"
+        "damageType": "elemental",
+        "targetMode": "area",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "line",
+        "areaSize": "25m"
     },
     "effects": [],
     "flags": {},

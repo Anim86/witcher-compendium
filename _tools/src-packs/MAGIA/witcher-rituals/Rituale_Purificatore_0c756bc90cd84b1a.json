@@ -15,9 +15,10 @@
         "stamina": 3,
         "staminaIsVar": false,
         "effect": "Purifica il bersaglio da droghe/alcol (CD 12), veleni/pozioni (CD 15) o malattie gravi (CD 18)",
-        "range": "N/A",
+        "range": "manual",
         "duration": "Istantanea",
         "defence": "",
+        "defenseOptions": [],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -53,7 +54,13 @@
         "spellAttackSkill": "ritcraft",
         "difficultyCheck": "Var.",
         "preparationTime": "",
-        "components": "Gessetto (x2), Alcolico (x1), Vischio (x2), Occhio Corvo (x1), Foglia Balissa (x1)"
+        "components": "Gessetto (x2), Alcolico (x1), Vischio (x2), Occhio Corvo (x1), Foglia Balissa (x1)",
+        "targetMode": "manual",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "effects": [],
     "flags": {},

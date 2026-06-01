@@ -1,12 +1,12 @@
 <details open>
-    <summary class="list-header spell-list-header">
-        {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/inventory/inventory-items-summary.hbs" header=header itemType=itemType spellType=spellType subtype=subtype hasStaCost=true noWeight=true}}
+    <summary class="list-header spell-list-header {{#if hasElement}}has-element{{/if}}">
+        {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/inventory/inventory-items-summary.hbs" header=header itemType=itemType spellType=spellType subtype=subtype hasStaCost=true hasElement=hasElement noWeight=true}}
     </summary>
 
     <ol class="list item-table item-list">
         {{#each spells as |spell id|}}
             <li class="item list-item draggable" data-item-id="{{spell.id}}">
-                <div class="list-details spell-details">
+                <div class="list-details spell-details {{#if ../hasElement}}has-element{{/if}}">
                     <a class="item-display-info display-details">
                         <img class="item-image item-list-image" src="{{spell.img}}">
                         <span class="item-image item-list-image" data-tooltip="{{localize 'WITCHER.Item.openDescription'}}">
@@ -21,6 +21,11 @@
                             </span>
                         {{else}}
                             <span>{{spell.system.stamina}}</span>
+                        {{/if}}
+                        {{#if ../hasElement}}
+                            <span data-tooltip="{{localize 'WITCHER.Spell.Element'}}">
+                                {{spellSourceLabel spell.system.source}}
+                            </span>
                         {{/if}}
                         <span class="list-controls">
                             {{#if (not spell.system.isLearned)}}
@@ -39,7 +44,7 @@
                         {{#if spell.system.source}}
                             <span class="item-tag" data-tooltip="{{localize "WITCHER.Spell.Element"}}">
                                 <i class="fa-solid fa-wand-sparkles"></i>
-                                {{spell.system.source}}
+                                {{spellSourceLabel spell.system.source}}
                             </span>
                         {{/if}}
                         {{#if spell.system.level}}

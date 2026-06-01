@@ -11,13 +11,14 @@
         "sourcebook": "TC 83",
         "class": "Mage",
         "level": "master",
-        "source": "mixedElements",
+        "source": "mixed",
         "stamina": 4,
         "staminaIsVar": false,
         "effect": "Cryfhau aumenta in modo permanente la ro- bustezza di un riparo del volume massimo di 2 metri cubi. Lâ€™effetto aumenta immediatamente di 5 la PR del riparo, anche superando il valore iniziale. Questo incan- tesimo non può essere usato più volte sullo stesso riparo.",
         "range": "2m",
         "duration": "Istantanea",
         "defence": "Nessuna",
+        "defenseOptions": [],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -50,7 +51,13 @@
         "attackOptions": [
             "spell"
         ],
-        "spellAttackSkill": "spellcast"
+        "spellAttackSkill": "spellcast",
+        "targetMode": "none",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "effects": [],
     "flags": {},

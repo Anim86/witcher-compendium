@@ -18,6 +18,7 @@
         "range": "Raggio di 2m",
         "duration": "Istantanea",
         "defence": "Nessuna",
+        "defenseOptions": [],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -53,7 +54,13 @@
         "spellAttackSkill": "spellcast",
         "causeDamages": true,
         "damage": "1d6",
-        "damageType": "elemental"
+        "damageType": "elemental",
+        "targetMode": "area",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "sphere",
+        "areaSize": "2m radius"
     },
     "effects": [],
     "flags": {},

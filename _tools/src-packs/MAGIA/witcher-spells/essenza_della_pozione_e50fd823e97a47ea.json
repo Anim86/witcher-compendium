@@ -11,13 +11,14 @@
         "sourcebook": "TC 83",
         "class": "Mage",
         "level": "master",
-        "source": "mixedElements",
+        "source": "mixed",
         "stamina": 12,
         "staminaIsVar": false,
         "effect": "Essenza della Pozione trasferisce a unâ€™Unità di Essenza Acquatica le proprietà di una singola dose di un Decotto, Pozione o Elisir, che non sia mai stato influen- zato da questo incantesimo. Lâ€™Essenza diventa una copia della sostanza scelta.",
         "range": "2m",
         "duration": "Permanente",
         "defence": "Nessuna",
+        "defenseOptions": [],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -50,7 +51,13 @@
         "attackOptions": [
             "spell"
         ],
-        "spellAttackSkill": "spellcast"
+        "spellAttackSkill": "spellcast",
+        "targetMode": "none",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "effects": [],
     "flags": {},

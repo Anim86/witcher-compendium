@@ -11,13 +11,17 @@
         "sourcebook": "TC 83",
         "class": "Mage",
         "level": "master",
-        "source": "Fire",
+        "source": "fire",
         "stamina": 4,
         "staminaIsVar": false,
         "effect": "imperfetto tentativo del mago Afan di Guleta di replicare il soffio di un vero drago, questo incantesi- mo permette di esalare un getto di fuoco magico contro un bersaglio. Se fallisce nel difendersi, la vittima subisce 3d6 danni e ha una probabilità del 100% di andare A Fuoco.",
         "range": "4m",
         "duration": "Istantanea",
         "defence": "Schivare o Bloccare",
+        "defenseOptions": [
+            "dodge",
+            "block"
+        ],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -53,7 +57,13 @@
         "spellAttackSkill": "spellcast",
         "causeDamages": true,
         "damage": "3d6",
-        "damageType": "elemental"
+        "damageType": "elemental",
+        "targetMode": "direct",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "effects": [],
     "flags": {},

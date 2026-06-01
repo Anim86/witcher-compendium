@@ -7,33 +7,33 @@
     </h2>
 
     <!-- Budget & Limits Card -->
-    <div class="magic-budget-compact" style="display: flex; align-items: center; justify-content: center; background: rgba(0, 0, 0, 0.05); border: 1px solid rgba(102, 85, 68, 0.35); border-radius: 8px; padding: 8px 16px; margin-bottom: 20px; box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);">
-        <div style="display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; width: 100%;">
+    <div class="magic-budget-compact">
+        <div class="magic-budget-list">
             {{#if magic.limits.spells}}
-            <div style="display: flex; align-items: center; gap: 8px; font-size: 0.9rem; background: rgba(255, 255, 255, 0.45); padding: 4px 10px; border-radius: 6px; border: 1px solid rgba(102, 85, 68, 0.2); box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
-                <span class="badge" style="color: #5c2d91; font-weight: bold; display: flex; align-items: center; gap: 5px;"><i class="fa-solid fa-sparkles"></i> Incantesimi</span>
-                <span class="badge" style="background: {{#if (eq magic.counts.spells magic.limits.spells)}}#5c2d91{{else}}rgba(161, 140, 209, 0.15){{/if}}; border: 1px solid #5c2d91; border-radius: 4px; padding: 1px 6px; font-weight: bold; color: {{#if (eq magic.counts.spells magic.limits.spells)}}#ffffff{{else}}#5c2d91{{/if}}; font-size: 0.8rem; min-width: 32px; text-align: center;">{{magic.counts.spells}} / {{magic.limits.spells}}</span>
+            <div class="magic-budget-pill spell {{#if (eq magic.counts.spells magic.limits.spells)}}complete{{/if}}">
+                <span class="magic-budget-label"><i class="fa-solid fa-sparkles"></i> Incantesimi</span>
+                <span class="magic-budget-count">{{magic.counts.spells}} / {{magic.limits.spells}}</span>
             </div>
             {{/if}}
 
             {{#if magic.limits.invocations}}
-            <div style="display: flex; align-items: center; gap: 8px; font-size: 0.9rem; background: rgba(255, 255, 255, 0.45); padding: 4px 10px; border-radius: 6px; border: 1px solid rgba(102, 85, 68, 0.2); box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
-                <span class="badge" style="color: #b82775; font-weight: bold; display: flex; align-items: center; gap: 5px;"><i class="fa-solid fa-pray"></i> Invocazioni</span>
-                <span class="badge" style="background: {{#if (eq magic.counts.invocations magic.limits.invocations)}}#b82775{{else}}rgba(251, 194, 235, 0.15){{/if}}; border: 1px solid #b82775; border-radius: 4px; padding: 1px 6px; font-weight: bold; color: {{#if (eq magic.counts.invocations magic.limits.invocations)}}#ffffff{{else}}#b82775{{/if}}; font-size: 0.8rem; min-width: 32px; text-align: center;">{{magic.counts.invocations}} / {{magic.limits.invocations}}</span>
+            <div class="magic-budget-pill invocation {{#if (eq magic.counts.invocations magic.limits.invocations)}}complete{{/if}}">
+                <span class="magic-budget-label"><i class="fa-solid fa-pray"></i> Invocazioni</span>
+                <span class="magic-budget-count">{{magic.counts.invocations}} / {{magic.limits.invocations}}</span>
             </div>
             {{/if}}
 
             {{#if magic.limits.rituals}}
-            <div style="display: flex; align-items: center; gap: 8px; font-size: 0.9rem; background: rgba(255, 255, 255, 0.45); padding: 4px 10px; border-radius: 6px; border: 1px solid rgba(102, 85, 68, 0.2); box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
-                <span class="badge" style="color: #0277bd; font-weight: bold; display: flex; align-items: center; gap: 5px;"><i class="fa-solid fa-circle-nodes"></i> Rituali</span>
-                <span class="badge" style="background: {{#if (eq magic.counts.rituals magic.limits.rituals)}}#0277bd{{else}}rgba(143, 211, 244, 0.15){{/if}}; border: 1px solid #0277bd; border-radius: 4px; padding: 1px 6px; font-weight: bold; color: {{#if (eq magic.counts.rituals magic.limits.rituals)}}#ffffff{{else}}#0277bd{{/if}}; font-size: 0.8rem; min-width: 32px; text-align: center;">{{magic.counts.rituals}} / {{magic.limits.rituals}}</span>
+            <div class="magic-budget-pill ritual {{#if (eq magic.counts.rituals magic.limits.rituals)}}complete{{/if}}">
+                <span class="magic-budget-label"><i class="fa-solid fa-circle-nodes"></i> Rituali</span>
+                <span class="magic-budget-count">{{magic.counts.rituals}} / {{magic.limits.rituals}}</span>
             </div>
             {{/if}}
 
             {{#if magic.limits.hexes}}
-            <div style="display: flex; align-items: center; gap: 8px; font-size: 0.9rem; background: rgba(255, 255, 255, 0.45); padding: 4px 10px; border-radius: 6px; border: 1px solid rgba(102, 85, 68, 0.2); box-shadow: 0 1px 2px rgba(0,0,0,0.05);">
-                <span class="badge" style="color: #c62828; font-weight: bold; display: flex; align-items: center; gap: 5px;"><i class="fa-solid fa-skull"></i> Fatture</span>
-                <span class="badge" style="background: {{#if (eq magic.counts.hexes magic.limits.hexes)}}#c62828{{else}}rgba(255, 129, 119, 0.15){{/if}}; border: 1px solid #c62828; border-radius: 4px; padding: 1px 6px; font-weight: bold; color: {{#if (eq magic.counts.hexes magic.limits.hexes)}}#ffffff{{else}}#c62828{{/if}}; font-size: 0.8rem; min-width: 32px; text-align: center;">{{magic.counts.hexes}} / {{magic.limits.hexes}}</span>
+            <div class="magic-budget-pill hex {{#if (eq magic.counts.hexes magic.limits.hexes)}}complete{{/if}}">
+                <span class="magic-budget-label"><i class="fa-solid fa-skull"></i> Fatture</span>
+                <span class="magic-budget-count">{{magic.counts.hexes}} / {{magic.limits.hexes}}</span>
             </div>
             {{/if}}
         </div>

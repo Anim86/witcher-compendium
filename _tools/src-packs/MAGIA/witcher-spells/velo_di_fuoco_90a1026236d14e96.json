@@ -11,13 +11,16 @@
         "sourcebook": "TC 83",
         "class": "Mage",
         "level": "master",
-        "source": "Fire",
+        "source": "fire",
         "stamina": 3,
         "staminaIsVar": false,
         "effect": "Velo di Fuoco permea impercettibilmente un oggetto di magia, rendendolo altamente infiammabi- le. Per la durata dellâ€™effetto, lâ€™oggetto divampa appena esposto a una fiamma libera. Se lanciato su una creatura, questa va automaticamente A Fuoco appena possibile.",
         "range": "2m",
         "duration": "1 ora",
         "defence": "Schivare",
+        "defenseOptions": [
+            "dodge"
+        ],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -50,7 +53,13 @@
         "attackOptions": [
             "spell"
         ],
-        "spellAttackSkill": "spellcast"
+        "spellAttackSkill": "spellcast",
+        "targetMode": "direct",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "",
+        "areaSize": ""
     },
     "effects": [],
     "flags": {},

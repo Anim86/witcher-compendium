@@ -15,9 +15,10 @@
         "stamina": 16,
         "staminaIsVar": false,
         "effect": "Pacifica i cuori, rimuove combattenti dall'iniziativa e annulla pregiudizi sociali/razziali.",
-        "range": "Raggio di 50m",
+        "range": "50m di raggio",
         "duration": "1 giorno",
         "defence": "Nessuna",
+        "defenseOptions": [],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -50,7 +51,13 @@
         "attackOptions": [
             "spell"
         ],
-        "spellAttackSkill": "spellcast"
+        "spellAttackSkill": "spellcast",
+        "targetMode": "area",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 0,
+        "areaShape": "sphere",
+        "areaSize": "50m radius"
     },
     "effects": [],
     "flags": {},

@@ -32,6 +32,12 @@ export default class SpellData extends CommonItemData {
             range: new fields.StringField({ initial: '' }),
             duration: new fields.StringField({ initial: '' }),
             defence: new fields.StringField({ initial: '' }),
+            targetMode: new fields.StringField({ initial: '' }),
+            targetStat: new fields.StringField({ initial: '' }),
+            targetMultiplier: new fields.NumberField({ initial: 0 }),
+            targetDc: new fields.NumberField({ initial: 0 }),
+            areaShape: new fields.StringField({ initial: '' }),
+            areaSize: new fields.StringField({ initial: '' }),
 
             createTemplate: new fields.BooleanField({ initial: false }),
             templateSize: new fields.NumberField({ initial: 0 }),

@@ -285,6 +285,12 @@ progress.carry-bar.overweight::-moz-progress-bar {
     grid-template-columns: 36px 1fr auto;
 }
 
+.spell-list-header.has-element .list-label > span:not(.list-controls),
+.spell-details.has-element .list-label > span:not(.list-controls) {
+    flex-basis: 80px;
+    width: 80px;
+}
+
 .weapon-enhancement, .container-stored-item {
     display: flex;
     flex-direction: column;

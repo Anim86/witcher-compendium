@@ -15,9 +15,10 @@
         "stamina": 12,
         "staminaIsVar": false,
         "effect": "Crea un cerchio repulsivo (fino a 10m). I mostri che tentano di passare devono battere il lancio del Rituale in una prova di Resistere alla Magia o subire danni ed essere respinti",
-        "range": "N/A",
-        "duration": "Permanente",
+        "range": "10m (raggio)",
+        "duration": "Finché non viene Dissipato",
         "defence": "",
+        "defenseOptions": [],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -56,7 +57,13 @@
         "damageType": "elemental",
         "difficultyCheck": "18",
         "preparationTime": "",
-        "components": "Quintessenza (x5), Polvere Infusa (x2), Gessetto (x4), Argento o Meteorite (x5)"
+        "components": "Quintessenza (x5), Polvere Infusa (x2), Gessetto (x4), Argento o Meteorite (x5)",
+        "targetMode": "fixedDc",
+        "targetStat": "",
+        "targetMultiplier": 0,
+        "targetDc": 18,
+        "areaShape": "circle",
+        "areaSize": "10m radius"
     },
     "effects": [],
     "flags": {},
