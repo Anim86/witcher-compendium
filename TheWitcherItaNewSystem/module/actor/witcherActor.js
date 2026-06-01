@@ -471,6 +471,11 @@ export default class WitcherActor extends Actor {
     }
 
     calculateShield() {
+        // Se c'è uno scudo magico attivo (es. Quen), non sovrascriverlo con lo scudo fisico
+        if (this.getFlag('TheWitcherItaNewSystem', 'magicShield') && this.system.derivedStats.shield.value > 0) {
+            return;
+        }
+
         // Initialize with default values
         this.system.derivedStats.shield.value = 0;
         this.system.derivedStats.shield.max = 0;

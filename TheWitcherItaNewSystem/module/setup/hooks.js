@@ -152,7 +152,7 @@ function _addWizardButton(html) {
 }
 
 function combatHooks(combat, update, options, userId) {
-    applyGeneralCombatHooks(combat);
+    applyGeneralCombatHooks(combat, update);
     removeExpiredEffects(combat);
     countdownDurationOfRegions(combat, update, options, userId);
 }

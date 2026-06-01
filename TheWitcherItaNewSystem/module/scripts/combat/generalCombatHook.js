@@ -1,11 +1,22 @@
 import { applyDamageFromStatus } from '../combat/applyDamage.js';
 
-export async function applyGeneralCombatHooks(combat) {
+export async function applyGeneralCombatHooks(combat, update) {
     if (!game.user.isGM) return;
+    
+    // Assicuriamoci di applicare gli effetti solo quando cambia effettivamente il turno o il round
+    if (update && update.turn === undefined && update.round === undefined) return;
 
     let actor = combat.combatants.get(combat.current.combatantId).actor;
     applyMonsterRegeneration(actor);
     applyCombatEffects(actor);
+    applyVigorReset(actor);
+}
+
+async function applyVigorReset(actor) {
+    if (!actor || !actor.system.derivedStats?.vigor) return;
+    await actor.update({
+        'system.derivedStats.vigor.value': actor.system.derivedStats.vigor.max
+    });
 }
 
 async function applyMonsterRegeneration(actor) {

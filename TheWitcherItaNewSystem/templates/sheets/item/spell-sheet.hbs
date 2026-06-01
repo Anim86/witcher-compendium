@@ -1,12 +1,5 @@
 <section class="scrollable">
     {{>"systems/TheWitcherItaNewSystem/templates/partials/spell-header.hbs"}}
-    
-    <div class="item-description-container">
-        <div class="section-title">
-            <i class="fas fa-scroll"></i> {{localize "WITCHER.Item.Effect"}}
-        </div>
-        {{editor item.system.effect target="system.effect" button=true owner=owner editable=editable engine="prosemirror"}}
-    </div>
 
     {{#if (eq item.system.class "MagicalGift")}}
     <div class="item-description-container">
@@ -124,6 +117,12 @@
                 <div class="property-row">
                     <label>{{localize "WITCHER.Weapon.Short.Damage"}}</label>
                     <input name="system.damage" type="text" value="{{#unless item.system.damage}}1d6+0{{else}}{{item.system.damage}}{{/unless}}" />
+                </div>
+                <div class="property-row">
+                    <label>{{localize "WITCHER.Dialog.damageType"}}</label>
+                    <select name="system.damageType">
+                        {{selectOptions config.damageTypes selected=item.system.damageType localize=true}}
+                    </select>
                 </div>
                 {{/if}}
                 <label class="checkbox-row">

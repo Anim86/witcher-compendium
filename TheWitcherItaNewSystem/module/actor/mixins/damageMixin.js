@@ -20,7 +20,10 @@ export let damageMixin = {
             ChatMessage.create(messageData);
             return;
         } else {
-            this.update({ 'system.derivedStats.shield.value': 0 });
+            this.update({ 
+                'system.derivedStats.shield.value': 0,
+                'flags.TheWitcherItaNewSystem.magicShield': false
+            });
             totalDamage -= shield;
         }
 

@@ -164,13 +164,8 @@ export let castSpellMixin = {
 
         const currentSta = Number(this.system.derivedStats.sta.value) || 0;
         const newSta = currentSta - staCostTotal;
-        const staminaDeficit = Math.max(Math.abs(Math.min(newSta, 0)), 0);
 
-        await this.update({
-            'system.derivedStats.sta.value': Math.max(newSta, 0)
-        });
-
-        if (staminaDeficit > 0) {
+        if (newSta <= 0) {
             await applyStatusEffectToActor(this.uuid, 'stun');
             await this._createMagicRuleMessage(
                 'WITCHER.Spell.StaminaCollapse',
@@ -181,8 +176,21 @@ export let castSpellMixin = {
             );
         }
 
-        const vigor = Number(this.system.derivedStats.vigor.max) || 0;
-        const overexertion = Math.max(staCostTotal - vigor, 0);
+        const inCombat = game.combat?.combatants.some(c => c.actor.id === this.id) ?? false;
+        let currentVigor = Number(this.system.derivedStats.vigor.value) || 0;
+        
+        // Fuori dal combattimento assumiamo che il Vigore sia sempre al massimo per comodità
+        if (!inCombat) {
+            currentVigor = Number(this.system.derivedStats.vigor.max) || 0;
+        }
+
+        const overexertion = Math.max(staCostTotal - currentVigor, 0);
+        const newVigor = Math.max(currentVigor - staCostTotal, 0);
+
+        await this.update({
+            'system.derivedStats.sta.value': Math.max(newSta, 0),
+            'system.derivedStats.vigor.value': newVigor
+        });
 
         const staCostParts = [`${origStaCost}`];
 
@@ -311,7 +319,7 @@ export let castSpellMixin = {
         await roll.toMessage(messageData);
 
         if (overexertion > 0) {
-            await this._resolveMagicOverexertion(spellItem, overexertion, staCostTotal, vigor);
+            await this._resolveMagicOverexertion(spellItem, overexertion, staCostTotal, currentVigor);
         }
 
         const magicalFumble = roll.options.fumble

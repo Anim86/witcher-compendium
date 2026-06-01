@@ -14,7 +14,7 @@
                 {{/if}}
                 <span class="meta-badge skill-badge">
                     <i class="fas fa-magic"></i>
-                    {{localize "WITCHER.Spell.MagicCost"}}: <strong>{{item.system.stamina}} STA</strong>
+                    {{localize "WITCHER.Spell.MagicCost"}}: <strong>{{#if staminaIsVar}}Var.{{else}}{{item.system.stamina}} STA{{/if}}</strong>
                 </span>
             </div>
         </div>
@@ -65,7 +65,7 @@
             {{#if staminaIsVar}}
             <div class="form-group">
                 <label><i class="fas fa-fire"></i> {{localize "WITCHER.Spell.staminaDialog"}}</label>
-                <input type="number" class="small-input" name="staCost" value="1" min="1">
+                <input type="number" class="small-input" name="staCost" value="1" min="1" max="7">
             </div>
             {{/if}}
 

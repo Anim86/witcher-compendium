@@ -21,48 +21,57 @@
             {{/if}}
         </itemimage>
 
-        <div class="information-grid">
-            <div class="info-item">
-                <label>{{localize "WITCHER.Spell.type"}}</label>
-                <select name="system.class" id="profession-select">
-                    {{selectOptions selects.class selected=item.system.class localize=true}}
-                </select>
-            </div>
-            <div class="info-item">
-                <label>{{localize "WITCHER.Actor.Profession.Level"}}</label>
-                {{#unless (eq item.system.class "MagicalGift")}}
-                    <select name="system.level">
-                        {{selectOptions selects.levelSpell selected=item.system.level localize=true}}
+        <div class="spell-header-content">
+            <div class="information-grid">
+                <div class="info-item">
+                    <label>{{localize "WITCHER.Spell.type"}}</label>
+                    <select name="system.class" id="profession-select">
+                        {{selectOptions selects.class selected=item.system.class localize=true}}
                     </select>
-                {{/unless}}
-                {{#if (eq item.system.class "MagicalGift")}}
-                    <select name="system.level">
-                        {{selectOptions selects.levelMagicalGift selected=item.system.level localize=true}}
+                </div>
+                <div class="info-item">
+                    <label>{{localize "WITCHER.Actor.Profession.Level"}}</label>
+                    {{#unless (eq item.system.class "MagicalGift")}}
+                        <select name="system.level">
+                            {{selectOptions selects.levelSpell selected=item.system.level localize=true}}
+                        </select>
+                    {{/unless}}
+                    {{#if (eq item.system.class "MagicalGift")}}
+                        <select name="system.level">
+                            {{selectOptions selects.levelMagicalGift selected=item.system.level localize=true}}
+                        </select>
+                    {{/if}}
+                </div>
+
+                {{#if (or (eq item.system.class "Spells") (eq item.system.class "Witcher"))}}
+                <div class="info-item">
+                    <label>{{localize "WITCHER.Spell.Element"}}</label>
+                    <select name="system.source">
+                        {{selectOptions selects.sourceElements selected=item.system.source localize=true}}
                     </select>
+                </div>
                 {{/if}}
+                {{#if (eq item.system.class "Invocations")}}
+                <div class="info-item">
+                    <label>{{localize "WITCHER.Spell.Type"}}</label>
+                    <select name="system.source">
+                        {{selectOptions selects.sourceClass selected=item.system.source localize=true}}
+                    </select>
+                </div>
+                {{/if}}
+
+                <div class="info-item">
+                    <label>{{localize "WITCHER.Item.SourceBook"}}</label>
+                    <input type="text" name="system.sourcebook" value="{{item.system.sourcebook}}" />
+                </div>
             </div>
 
-            {{#if (or (eq item.system.class "Spells") (eq item.system.class "Witcher"))}}
-            <div class="info-item">
-                <label>{{localize "WITCHER.Spell.Element"}}</label>
-                <select name="system.source">
-                    {{selectOptions selects.sourceElements selected=item.system.source localize=true}}
-                </select>
-            </div>
-            {{/if}}
-            {{#if (eq item.system.class "Invocations")}}
-            <div class="info-item">
-                <label>{{localize "WITCHER.Spell.Type"}}</label>
-                <select name="system.source">
-                    {{selectOptions selects.sourceClass selected=item.system.source localize=true}}
-                </select>
-            </div>
-            {{/if}}
-
-            <div class="info-item info-full">
-                <label>{{localize "WITCHER.Item.SourceBook"}}</label>
-                <input type="text" name="system.sourcebook" value="{{item.system.sourcebook}}" />
+            <div class="item-description-container spell-effect-summary">
+                <div class="section-title">
+                    <i class="fas fa-scroll"></i> {{localize "WITCHER.Item.Effect"}}
+                </div>
+                {{editor item.system.effect target="system.effect" button=true owner=owner editable=editable engine="prosemirror"}}
             </div>
         </div>
     </general>
-</header>
+</header>

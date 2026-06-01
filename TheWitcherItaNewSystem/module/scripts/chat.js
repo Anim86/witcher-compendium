@@ -21,7 +21,8 @@ async function onShield(event) {
     shield = Number(shield) || 0;
     await actor.update({
         'system.derivedStats.shield.value': shield,
-        'system.derivedStats.shield.max': shield
+        'system.derivedStats.shield.max': shield,
+        'flags.TheWitcherItaNewSystem.magicShield': true
     });
 
     let messageContent = `${actor.name} ${game.i18n.localize('WITCHER.Combat.shieldApplied')} ${shield}`;
