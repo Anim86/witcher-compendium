@@ -43,7 +43,7 @@
                     {{/if}}
                 </div>
 
-                {{#if (or (eq item.system.class "Spells") (eq item.system.class "Witcher"))}}
+                {{#if (or (eq item.system.class "Spells") (or (eq item.system.class "Mage") (eq item.system.class "Witcher")))}}
                 <div class="info-item">
                     <label>{{localize "WITCHER.Spell.Element"}}</label>
                     <select name="system.source">

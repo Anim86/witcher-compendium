@@ -107,11 +107,13 @@ export default class WitcherSpellSheet extends WitcherItemSheet {
     _getMagicClassTitleLabel(magicClass) {
         const labels = {
             Spells: 'WITCHER.Spell.Spell',
+            Mage: 'WITCHER.Spell.Spell',
+            Necromanzia: 'WITCHER.Spell.Necromancy',
             Invocations: 'WITCHER.Spell.Invocation',
             Witcher: 'WITCHER.Spell.WitcherSign',
             MagicalGift: 'WITCHER.Spell.MagicalGift'
         };
 
-        return game.i18n.localize(labels[magicClass] ?? 'WITCHER.Item.Type.spell');
+        return game.i18n.localize(labels[magicClass] ?? 'WITCHER.Spell.Spell');
     }
 }

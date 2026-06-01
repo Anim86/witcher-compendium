@@ -1364,6 +1364,9 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         const saveScroll = () => {
             const c = this.element.querySelector(".wizard-content");
             if (c) this._scrollPos = c.scrollTop;
+            
+            const mc = this.element.querySelector(".magic-selection-container");
+            if (mc) this._magicScrollPos = mc.scrollTop;
         };
 
         html.find("[data-action]").not("select, input").on("click", (event) => {
@@ -1391,12 +1394,18 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
 
         this._applyGearFilters();
 
-        if (this._scrollPos) {
+        if (this._scrollPos !== undefined) {
             const pos = this._scrollPos;
+            const magicPos = this._magicScrollPos;
             requestAnimationFrame(() => {
                 requestAnimationFrame(() => {
                     const c = this.element.querySelector(".wizard-content");
                     if (c) c.scrollTop = pos;
+                    
+                    if (magicPos !== undefined) {
+                        const mc = this.element.querySelector(".magic-selection-container");
+                        if (mc) mc.scrollTop = magicPos;
+                    }
                 });
             });
         }
