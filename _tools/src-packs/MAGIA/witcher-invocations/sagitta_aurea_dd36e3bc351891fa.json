@@ -62,7 +62,10 @@
         "areaSize": "20m",
         "createTemplate": true,
         "templateType": "ray",
-        "templateSize": 20
+        "templateSize": 20,
+        "causeDamages": true,
+        "damage": "7d6",
+        "damageType": "elemental"
     },
     "effects": [],
     "flags": {},

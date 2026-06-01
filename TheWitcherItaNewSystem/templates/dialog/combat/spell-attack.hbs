@@ -1,35 +1,104 @@
-{{#if causeDamage}}
-    <div>
-        <label>{{localize "WITCHER.Dialog.attackLocation"}}:</label>
-
-        <select name="location">
-            <option value="randomHuman"> {{localize "WITCHER.Dialog.attackRandomHuman"}} </option>
-            <option value="randomMonster"> {{localize "WITCHER.Dialog.attackRandomMonster"}} </option>
-            <option value="head"> {{localize "WITCHER.Dialog.attackHead"}} </option>
-            <option value="torso"> {{localize "WITCHER.Dialog.attackTorso"}} </option>
-            <option value="leftArm"> {{localize "WITCHER.Dialog.attackLArm"}} </option>
-            <option value="rightArm"> {{localize "WITCHER.Dialog.attackRArm"}} </option>
-            <option value="leftLeg"> {{localize "WITCHER.Dialog.attackLLeg"}} </option>
-            <option value="rightLeg"> {{localize "WITCHER.Dialog.attackRLeg"}} </option>
-            <option value="tailWing"> {{localize "WITCHER.Dialog.attackTail"}} </option>
-        </select>
+<div class="weapon_roll_sheet">
+    {{!-- Premium Header Banner --}}
+    <div class="item-header-info premium-banner">
+        <div class="banner-border-line-top"></div>
+        <img class="item-img" src="{{item.img}}" title="{{item.name}}" />
+        <div class="item-info-text">
+            <h3 class="item-name">{{item.name}}</h3>
+            <div class="item-meta-badges">
+                {{#if causeDamage}}
+                <span class="meta-badge dmg-badge">
+                    <i class="fas fa-dice-d20"></i>
+                    {{localize "WITCHER.Dialog.attackDamage"}}: <strong>{{item.system.damage}}</strong>
+                </span>
+                {{/if}}
+                <span class="meta-badge skill-badge">
+                    <i class="fas fa-magic"></i>
+                    {{localize "WITCHER.Spell.MagicCost"}}: <strong>{{item.system.stamina}} STA</strong>
+                </span>
+            </div>
+        </div>
+        <div class="banner-border-line-bottom"></div>
     </div>
-{{/if}}
 
-<label>{{ localize 'WITCHER.Dialog.attackExtra' }}: <input type="checkbox" name="isExtraAttack"></label> <br />
-{{#if staminaIsVar}}
-    {{ localize 'WITCHER.Spell.staminaDialog'}}<input class="small" name="staCost" value=1> <br />
-{{/if}}
-{{#if useFocus}}
-    <label>{{ localize 'WITCHER.Spell.ChooseFocus' }}:
-        <select name="focus">{{selectOptions focusOptions }}</select>
-    </label>
-    <br />
-    <label>{{ localize 'WITCHER.Spell.ChooseExpandedFocus' }}:
-        <select name="secondFocus">{{selectOptions focusOptions blank='' }}</select>
-    </label>
-    <br />
-{{/if}}
+    {{!-- Layout --}}
+    <div class="attack-sheet-grid-3col">
+        
+        {{!-- COLUMN 1: Spell Parameters (Action) --}}
+        <section class="config-section action-config">
+            <h4><i class="fas fa-crosshairs"></i> {{localize "WITCHER.Dialog.attackAction"}}</h4>
+            
+            {{#if causeDamage}}
+            <div class="form-group">
+                <label>{{localize "WITCHER.Dialog.attackLocation"}}</label>
+                <div class="select-wrapper">
+                    <select name="location">
+                        <option value="randomHuman"> {{localize "WITCHER.Dialog.attackRandomHuman"}} </option>
+                        <option value="randomMonster"> {{localize "WITCHER.Dialog.attackRandomMonster"}} </option>
+                        <option value="head"> {{localize "WITCHER.Dialog.attackHead"}} </option>
+                        <option value="torso"> {{localize "WITCHER.Dialog.attackTorso"}} </option>
+                        <option value="leftArm"> {{localize "WITCHER.Dialog.attackLArm"}} </option>
+                        <option value="rightArm"> {{localize "WITCHER.Dialog.attackRArm"}} </option>
+                        <option value="leftLeg"> {{localize "WITCHER.Dialog.attackLLeg"}} </option>
+                        <option value="rightLeg"> {{localize "WITCHER.Dialog.attackRLeg"}} </option>
+                        <option value="tailWing"> {{localize "WITCHER.Dialog.attackTail"}} </option>
+                    </select>
+                </div>
+            </div>
+            {{/if}}
+            
+            <div class="form-group toggle-wrapper-row">
+                <label class="toggle-row-label">
+                    <span class="toggle-title">
+                        <i class="fas fa-bolt"></i> {{localize "WITCHER.Dialog.attackExtra"}}
+                    </span>
+                    <input type="checkbox" name="isExtraAttack" class="styled-checkbox">
+                </label>
+            </div>
+            
+        </section>
 
-<label>{{ localize 'WITCHER.Dialog.attackCustom' }}: <input class="small" name="customMod" value=0></label>
-<br /><br />
+        {{!-- COLUMN 2: Spell Mechanics (Focus & Stamina) --}}
+        <section class="config-section condition-config">
+            <h4><i class="fas fa-hat-wizard"></i> {{localize "WITCHER.Item.Type.Spell"}}</h4>
+            
+            {{#if staminaIsVar}}
+            <div class="form-group">
+                <label><i class="fas fa-fire"></i> {{localize "WITCHER.Spell.staminaDialog"}}</label>
+                <input type="number" class="small-input" name="staCost" value="1" min="1">
+            </div>
+            {{/if}}
+
+            {{#if useFocus}}
+            <div class="form-group">
+                <label>{{localize "WITCHER.Spell.ChooseFocus"}}</label>
+                <div class="select-wrapper">
+                    <select name="focus">{{selectOptions focusOptions }}</select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>{{localize "WITCHER.Spell.ChooseExpandedFocus"}}</label>
+                <div class="select-wrapper">
+                    <select name="secondFocus">{{selectOptions focusOptions blank='' }}</select>
+                </div>
+            </div>
+            {{/if}}
+        </section>
+
+        {{!-- COLUMN 3: Modifiers --}}
+        <section class="config-section resources-config">
+            <h4><i class="fas fa-sliders-h"></i> {{localize "WITCHER.Dialog.attackModifiers"}}</h4>
+            
+            <div class="custom-fields-stack">
+                <div class="form-group custom-att-group">
+                    <label>
+                        <i class="fas fa-plus-circle"></i>
+                        {{localize "WITCHER.Dialog.attackCustomMod"}}
+                    </label>
+                    <input type="number" name="customMod" value="0">
+                </div>
+            </div>
+        </section>
+        
+    </div>
+</div>

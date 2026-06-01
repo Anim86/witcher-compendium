@@ -50,10 +50,13 @@ export let castSpellMixin = {
             : `${this.system.stats.will.value}[${game.i18n.localize(CONFIG.WITCHER.statMap.will.label)}]`;
 
         let usedSkill = spellItem.system.getUsedSkill();
+        const usedSkillValue = Number(this.system.skills.will[usedSkill.name].value) || 0;
 
-        rollFormula +=
-            `+${this.system.skills.will[usedSkill.name].value}` +
-            (displayRollDetails ? `[${game.i18n.localize(usedSkill.label)}]` : '');
+        if (usedSkillValue !== 0) {
+            rollFormula +=
+                `+${usedSkillValue}` +
+                (displayRollDetails ? `[${game.i18n.localize(usedSkill.label)}]` : '');
+        }
         rollFormula += this.addAllModifiers(usedSkill.name);
         rollFormula += this.addAttackModifiers();
 
@@ -107,7 +110,8 @@ export let castSpellMixin = {
             causeDamage: spellItem.system.causeDamages,
             staminaIsVar: spellItem.system.staminaIsVar,
             useFocus: useFocus,
-            focusOptions: handlebarFocusOptions
+            focusOptions: handlebarFocusOptions,
+            item: spellItem
         };
 
         const dialogTemplate = await foundry.applications.handlebars.renderTemplate(
@@ -180,16 +184,22 @@ export let castSpellMixin = {
         const vigor = Number(this.system.derivedStats.vigor.max) || 0;
         const overexertion = Math.max(staCostTotal - vigor, 0);
 
-        let staCostDisplay = `${origStaCost}[${game.i18n.localize('WITCHER.Spell.Short.StaCost')}]`;
+        const staCostParts = [`${origStaCost}`];
 
         if (isExtraAttack) {
-            staCostDisplay += ` + 3[${game.i18n.localize('WITCHER.Dialog.attackExtra')}]`;
+            staCostParts.push(`+ 3 ${game.i18n.localize('WITCHER.Dialog.attackExtra')}`);
         }
 
-        staCostDisplay += ` -${focusBonus}[${game.i18n.localize('WITCHER.Actor.DerStat.Focus')}]`;
-        staCostDisplay += ` =  ${staCostTotal}`;
+        if (focusBonus > 0) {
+            staCostParts.push(`- ${focusBonus} ${game.i18n.localize('WITCHER.Actor.DerStat.Focus')}`);
+        }
+
+        let staCostDisplay = staCostParts.join(' ');
+        if (staCostParts.length > 1 || staCostTotal !== origStaCost || useMinimalStaCost) {
+            staCostDisplay += ` = ${staCostTotal}`;
+        }
         if (useMinimalStaCost) {
-            staCostDisplay += `[${game.i18n.localize('WITCHER.MinValue')}]`;
+            staCostDisplay += ` (${game.i18n.localize('WITCHER.MinValue')})`;
         }
         templateInfo.staCostDisplay = staCostDisplay;
 
@@ -239,9 +249,12 @@ export let castSpellMixin = {
 
             damage.formula = dmg;
             let touchedLocation = this.getLocationObject(location);
-            rollFormula += !displayRollDetails
-                ? `${touchedLocation.modifier}`
-                : `${touchedLocation.modifier}[${touchedLocation.alias}]`;
+            const locationModifier = Number(touchedLocation.modifier) || 0;
+            if (locationModifier !== 0) {
+                rollFormula += !displayRollDetails
+                    ? `${locationModifier}`
+                    : `${locationModifier}[${touchedLocation.alias}]`;
+            }
             damage.location = touchedLocation;
             damage.originalLocation = location;
             damage.type = spellItem.system.damageType;
@@ -257,7 +270,7 @@ export let castSpellMixin = {
         if (spellItem.system.doesHeal) {
             damage.heal = spellItem.system.heal || '0';
             if (spellItem.system.staminaIsVar) {
-                damage.heal = this.calcStaminaMulti(origStaCost, heal);
+                damage.heal = this.calcStaminaMulti(origStaCost, damage.heal);
             }
         }
 

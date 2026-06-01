@@ -17,7 +17,7 @@
     </div>
     {{/if}}
 
-    <div class="properties-grid main-stats">
+    <div class="properties-grid main-stats" style="grid-template-columns: none; grid-template-rows: 1fr; grid-auto-flow: column; grid-auto-columns: minmax(92px, 1fr); overflow-x: auto;">
         <div class="property-card">
             <label>{{localize "WITCHER.Spell.Short.Variable"}}</label>
             <input type="checkbox" name="system.staminaIsVar" {{checked item.system.staminaIsVar}} />

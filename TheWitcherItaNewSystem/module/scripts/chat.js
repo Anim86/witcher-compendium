@@ -7,12 +7,22 @@ export function chatMessageListeners(message, html) {
     html.querySelector('button.request-repair')?.addEventListener('click', onRepairRequest);
 }
 
-function onShield(event) {
+async function onShield(event) {
     let shield = event.currentTarget.getAttribute('data-shield');
     let actorUuid = event.currentTarget.getAttribute('data-actor');
 
     let actor = fromUuidSync(actorUuid);
-    actor?.update({ 'system.derivedStats.shield.value': shield });
+    if (!actor) return;
+
+    if (shield?.includes('d')) {
+        shield = (await new Roll(shield).evaluate()).total;
+    }
+
+    shield = Number(shield) || 0;
+    await actor.update({
+        'system.derivedStats.shield.value': shield,
+        'system.derivedStats.shield.max': shield
+    });
 
     let messageContent = `${actor.name} ${game.i18n.localize('WITCHER.Combat.shieldApplied')} ${shield}`;
     let messageData = {
@@ -23,8 +33,8 @@ function onShield(event) {
     ChatMessage.create(messageData);
 }
 
-function onHeal(event) {
-    let heal = parseInt(event.currentTarget.getAttribute('data-heal'));
+async function onHeal(event) {
+    let heal = event.currentTarget.getAttribute('data-heal');
     let actorUuid = event.currentTarget.getAttribute('data-actor');
 
     let actor = fromUuidSync(actorUuid);
@@ -32,6 +42,11 @@ function onHeal(event) {
     let target = game.user.targets.first()?.actor ?? canvas.tokens.controlled[0]?.actor ?? game.user.character;
     if (!target) return;
 
+    if (heal?.includes('d')) {
+        heal = (await new Roll(heal).evaluate()).total;
+    }
+
+    heal = Number(heal) || 0;
     heal =
         target?.system.derivedStats.hp.value + heal > target?.system.derivedStats.hp.max
             ? target?.system.derivedStats.hp.max - target?.system.derivedStats.hp.value

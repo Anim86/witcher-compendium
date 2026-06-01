@@ -114,6 +114,11 @@
             margin: 0 !important;
         }
 
+        select {
+            font-size: 13px;
+            text-overflow: ellipsis;
+        }
+
         input:focus,
         select:focus {
             box-shadow: none !important;

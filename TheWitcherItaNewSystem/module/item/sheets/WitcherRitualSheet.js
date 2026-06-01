@@ -1,6 +1,13 @@
 import WitcherItemSheet from './WitcherItemSheet.js';
 
 export default class WitcherRitualSheet extends WitcherItemSheet {
+    static DEFAULT_OPTIONS = {
+        position: {
+            width: 900,
+            height: 620
+        }
+    };
+
     static PARTS = {
         main: {
             template: `systems/TheWitcherItaNewSystem/templates/sheets/item/ritual-sheet.hbs`,

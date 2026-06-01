@@ -20,7 +20,10 @@
         "areaShape": "",
         "areaSize": "",
         "range": "8m",
-        "duration": "Istantanea"
+        "duration": "Istantanea",
+        "causeDamages": true,
+        "damage": "4d6",
+        "damageType": "elemental"
     },
     "type": "spell",
     "img": "modules/witcher-compendium/assets/MAGIA/witcher-spells/getto_d_acqua.webp",

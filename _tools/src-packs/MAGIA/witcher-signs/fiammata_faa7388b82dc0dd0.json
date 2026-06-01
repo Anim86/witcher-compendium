@@ -55,6 +55,9 @@
             "spell"
         ],
         "spellAttackSkill": "spellcast",
+        "causeDamages": true,
+        "damage": "1d6",
+        "damageType": "elemental",
         "targetMode": "direct",
         "targetStat": "",
         "targetMultiplier": 0,

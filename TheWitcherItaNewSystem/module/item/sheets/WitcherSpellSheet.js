@@ -3,6 +3,13 @@ import WitcherSpellConfigurationSheet from "./configurations/WitcherSpellConfigu
 import WitcherItemSheet from './WitcherItemSheet.js';
 
 export default class WitcherSpellSheet extends WitcherItemSheet {
+    static DEFAULT_OPTIONS = {
+        position: {
+            width: 900,
+            height: 620
+        }
+    };
+
     configuration = new WitcherSpellConfigurationSheet({ document: this.item });
 
     static PARTS = {
@@ -11,6 +18,11 @@ export default class WitcherSpellSheet extends WitcherItemSheet {
             scrollable: ['']
         }
     };
+
+    get title() {
+        const classLabel = this._getMagicClassTitleLabel(this.item.system.class);
+        return `${classLabel}: ${this.item.name}`;
+    }
 
     /** @override */
     async _prepareContext(options) {
@@ -25,7 +37,7 @@ export default class WitcherSpellSheet extends WitcherItemSheet {
             class: {
                 Spells: 'WITCHER.Spell.Spells',
                 Invocations: 'WITCHER.Spell.Invocations',
-                Witcher: 'WITCHER.Spell.Witcher',
+                Witcher: 'WITCHER.Spell.WitcherShort',
                 MagicalGift: 'WITCHER.Spell.MagicalGift'
             },
             levelSpell: {
@@ -90,5 +102,16 @@ export default class WitcherSpellSheet extends WitcherItemSheet {
                 ray: 'WITCHER.Spell.Ray'
             }
         };
+    }
+
+    _getMagicClassTitleLabel(magicClass) {
+        const labels = {
+            Spells: 'WITCHER.Spell.Spell',
+            Invocations: 'WITCHER.Spell.Invocation',
+            Witcher: 'WITCHER.Spell.WitcherSign',
+            MagicalGift: 'WITCHER.Spell.MagicalGift'
+        };
+
+        return game.i18n.localize(labels[magicClass] ?? 'WITCHER.Item.Type.spell');
     }
 }

@@ -63,7 +63,10 @@
         "areaSize": "3m radius",
         "createTemplate": true,
         "templateType": "circle",
-        "templateSize": 3
+        "templateSize": 3,
+        "causeDamages": true,
+        "damage": "3d6",
+        "damageType": "elemental"
     },
     "effects": [],
     "flags": {},
