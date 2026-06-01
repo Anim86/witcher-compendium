@@ -55,10 +55,10 @@
         "causeDamages": true,
         "damage": "1d6",
         "damageType": "elemental",
-        "targetMode": "manual",
+        "targetMode": "none",
         "targetStat": "",
         "targetMultiplier": 0,
-        "targetDc": 0,
+        "targetDc": 20,
         "areaShape": "",
         "areaSize": ""
     },

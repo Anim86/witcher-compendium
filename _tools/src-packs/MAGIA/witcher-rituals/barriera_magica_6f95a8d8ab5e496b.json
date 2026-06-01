@@ -60,7 +60,10 @@
         "targetMultiplier": 0,
         "targetDc": 18,
         "areaShape": "circle",
-        "areaSize": "10m diameter"
+        "areaSize": "10m diameter",
+        "createTemplate": true,
+        "templateType": "circle",
+        "templateSize": 5
     },
     "effects": [],
     "flags": {},

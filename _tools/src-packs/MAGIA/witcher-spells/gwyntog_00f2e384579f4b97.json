@@ -54,12 +54,15 @@
             "spell"
         ],
         "spellAttackSkill": "spellcast",
-        "targetMode": "manual",
+        "targetMode": "area",
         "targetStat": "",
         "targetMultiplier": 0,
-        "targetDc": 0,
-        "areaShape": "",
-        "areaSize": ""
+        "targetDc": 20,
+        "areaShape": "circle",
+        "areaSize": "40m radius",
+        "createTemplate": true,
+        "templateType": "circle",
+        "templateSize": 40
     },
     "effects": [],
     "flags": {},

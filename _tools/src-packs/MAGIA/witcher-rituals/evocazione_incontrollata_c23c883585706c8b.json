@@ -21,12 +21,13 @@
         "difficultyCheck": "10",
         "components": "Gesso per tracciare il circolo (Investimento: 2)",
         "spellAttackSkill": "ritcraft",
-        "targetMode": "manual",
+        "targetMode": "fixedDc",
         "targetStat": "",
         "targetMultiplier": 0,
-        "targetDc": 0,
+        "targetDc": 10,
         "areaShape": "",
-        "areaSize": ""
+        "areaSize": "",
+        "defenseOptions": []
     },
     "effects": [],
     "flags": {},

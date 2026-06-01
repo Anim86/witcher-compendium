@@ -16,7 +16,7 @@
         "staminaIsVar": false,
         "effect": "Scorge nell'acqua un evento avvenuto negli ultimi due giorni o in corso. I maghi osservati possono percepire la divinazione",
         "range": "N/A",
-        "duration": "Attiva (2)",
+        "duration": "Attiva (2 RES)",
         "defence": "",
         "defenseOptions": [],
         "damageProperties": {
@@ -52,13 +52,13 @@
             "spell"
         ],
         "spellAttackSkill": "ritcraft",
-        "difficultyCheck": "15 (18)",
-        "preparationTime": "",
+        "difficultyCheck": "15 (18 per evento corrente)",
+        "preparationTime": "5 Round",
         "components": "Ciotola/Specchio d'acqua, Quintessenza (x2), Petali Mirto (x2), Perla (x2), Frammento Lunare (x1), Berbercane (x1)",
-        "targetMode": "manual",
+        "targetMode": "fixedDc",
         "targetStat": "",
         "targetMultiplier": 0,
-        "targetDc": 0,
+        "targetDc": 15,
         "areaShape": "",
         "areaSize": ""
     },

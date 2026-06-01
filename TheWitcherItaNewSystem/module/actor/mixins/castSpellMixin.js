@@ -208,6 +208,7 @@ export let castSpellMixin = {
         }
 
         templateInfo.spellSource = this._getSpellSourceLabel(spellItem.system.source);
+        templateInfo.magicTarget = this._getMagicTargetInfo(spellItem);
 
         if (spellItem.system.duration) {
             let durationText = spellItem.system.duration;
@@ -288,6 +289,10 @@ export let castSpellMixin = {
         });
 
         let config = new RollConfig({ showResult: false });
+        const magicRollThreshold = this._getMagicRollThreshold(spellItem, templateInfo.magicTarget);
+        if (magicRollThreshold >= 0) {
+            config.threshold = magicRollThreshold;
+        }
 
         let roll = await extendedRoll(rollFormula, messageData, config);
         await roll.toMessage(messageData);
@@ -299,10 +304,11 @@ export let castSpellMixin = {
         const magicalFumble = roll.options.fumble
             ? await this._resolveMagicalFumble(spellItem, roll, { usedFocus })
             : null;
+        const rollMeetsThreshold = roll.options.success !== false;
 
         spellItem.system.createSpellVisuals?.(roll, damage, { stamina: origStaCost });
 
-        if (!roll.options.fumble || magicalFumble?.spellTakesEffect) {
+        if (rollMeetsThreshold && (!roll.options.fumble || magicalFumble?.spellTakesEffect)) {
             spellItem.system.selfEffects?.forEach(effect =>
                 applyStatusEffectToActor(this.uuid, effect.statusEffect, damage.duration)
             );
@@ -482,6 +488,151 @@ export let castSpellMixin = {
             default:
                 return source;
         }
+    },
+
+    _getMagicTargetInfo(spellItem) {
+        const system = spellItem.system ?? {};
+        const mode = system.targetMode;
+        if (!mode) return null;
+
+        const info = {
+            modeLabel: this._getMagicTargetModeLabel(mode),
+            calculatedDc: -1,
+            entries: [],
+            notes: []
+        };
+
+        const fixedDc = Number(system.targetDc) || 0;
+        if (fixedDc > 0 && mode !== 'targetStat') {
+            if (mode === 'fixedDc') {
+                info.calculatedDc = fixedDc;
+            }
+
+            info.entries.push({
+                label: game.i18n.localize('WITCHER.Spell.TargetDc'),
+                value: fixedDc
+            });
+        }
+
+        if (mode === 'targetStat') {
+            this._addTargetStatDifficultyInfo(info, system);
+        }
+
+        if (mode === 'area' || system.areaShape || system.areaSize) {
+            if (system.areaShape) {
+                info.entries.push({
+                    label: game.i18n.localize('WITCHER.Spell.AreaShape'),
+                    value: this._getMagicAreaShapeLabel(system.areaShape)
+                });
+            }
+
+            if (system.areaSize) {
+                info.entries.push({
+                    label: game.i18n.localize('WITCHER.Spell.AreaSize'),
+                    value: system.areaSize
+                });
+            }
+        }
+
+        if (mode === 'gmDc') {
+            info.notes.push(game.i18n.localize('WITCHER.Spell.Target.RequiresGmDc'));
+        }
+
+        if (mode === 'manual') {
+            info.notes.push(game.i18n.localize('WITCHER.Spell.Target.RequiresManualResolution'));
+        }
+
+        if (mode === 'area') {
+            info.notes.push(game.i18n.localize('WITCHER.Spell.Target.AreaDefenseReminder'));
+        }
+
+        return info;
+    },
+
+    _addTargetStatDifficultyInfo(info, system) {
+        const stat = system.targetStat;
+        const multiplier = Number(system.targetMultiplier) || 0;
+        const statLabel = this._getMagicTargetStatLabel(stat);
+        const selectedTarget = this._getSelectedMagicTargetActor();
+
+        info.entries.push({
+            label: game.i18n.localize('WITCHER.Spell.TargetStat'),
+            value: statLabel
+        });
+
+        if (multiplier > 0) {
+            info.entries.push({
+                label: game.i18n.localize('WITCHER.Spell.TargetMultiplier'),
+                value: multiplier
+            });
+        }
+
+        if (!stat || multiplier <= 0) {
+            info.notes.push(game.i18n.localize('WITCHER.Spell.Target.MissingTargetStatData'));
+            return;
+        }
+
+        if (!selectedTarget) {
+            info.notes.push(game.i18n.localize('WITCHER.Spell.Target.SelectTargetForCalculatedDc'));
+            return;
+        }
+
+        const targetStat = selectedTarget.system?.stats?.[stat];
+        const statValue = Number(targetStat?.max ?? targetStat?.value) || 0;
+        if (statValue <= 0) {
+            info.notes.push(game.i18n.format('WITCHER.Spell.Target.TargetStatUnavailable', {
+                target: selectedTarget.name,
+                stat: statLabel
+            }));
+            return;
+        }
+
+        info.entries.push({
+            label: game.i18n.localize('WITCHER.Spell.Target.CalculatedDc'),
+            value: `${statValue * multiplier} (${selectedTarget.name}: ${statValue} x ${multiplier})`
+        });
+        info.calculatedDc = statValue * multiplier;
+    },
+
+    _getMagicRollThreshold(spellItem, magicTarget) {
+        if (!magicTarget || magicTarget.calculatedDc < 0) return -1;
+
+        const targetMode = spellItem.system?.targetMode;
+        if (targetMode === 'targetStat') return magicTarget.calculatedDc;
+        if (spellItem.type === 'ritual' && targetMode === 'fixedDc') return magicTarget.calculatedDc;
+
+        return -1;
+    },
+
+    _getSelectedMagicTargetActor() {
+        const targets = Array.from(game.user?.targets ?? []);
+        if (targets.length !== 1) return null;
+        return targets[0]?.actor ?? null;
+    },
+
+    _getMagicTargetModeLabel(mode) {
+        const labelKey = `WITCHER.Spell.TargetMode.${mode}`;
+        const label = game.i18n.localize(labelKey);
+        return label === labelKey ? mode : label;
+    },
+
+    _getMagicTargetStatLabel(stat) {
+        const labelKey = CONFIG.WITCHER.statMap?.[stat]?.label ?? CONFIG.WITCHER.statMap?.[stat]?.labelShort;
+        return labelKey ? game.i18n.localize(labelKey) : stat;
+    },
+
+    _getMagicAreaShapeLabel(shape) {
+        const shapeLabels = {
+            circle: 'WITCHER.Spell.Circle',
+            cone: 'WITCHER.Spell.Cone',
+            line: 'WITCHER.Spell.Line',
+            ray: 'WITCHER.Spell.Ray',
+            rect: 'WITCHER.Spell.Square',
+            sphere: 'WITCHER.Spell.Sphere',
+            manual: 'WITCHER.Spell.Manual'
+        };
+        const labelKey = shapeLabels[shape];
+        return labelKey ? game.i18n.localize(labelKey) : shape;
     },
 
     calcStaminaMulti(origStaCost, value) {

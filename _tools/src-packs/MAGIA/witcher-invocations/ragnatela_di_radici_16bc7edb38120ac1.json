@@ -16,7 +16,7 @@
         "staminaIsVar": false,
         "effect": "Ordina alle radici di afferrare un bersaglio per Disarmare, Sbilanciare o lottare.",
         "range": "10m",
-        "duration": "Attiva (1)",
+        "duration": "Attiva (1 RES)",
         "defence": "Nessuna",
         "defenseOptions": [],
         "damageProperties": {
@@ -52,7 +52,7 @@
             "spell"
         ],
         "spellAttackSkill": "spellcast",
-        "targetMode": "manual",
+        "targetMode": "direct",
         "targetStat": "",
         "targetMultiplier": 0,
         "targetDc": 0,

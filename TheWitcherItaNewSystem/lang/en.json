@@ -460,6 +460,15 @@
             "Line": "Line",
             "Sphere": "Sphere",
             "Manual": "Manual",
+            "Target": {
+                "CalculatedDc": "Calculated DC",
+                "RequiresGmDc": "Requires a GM-set DC; casting is not blocked.",
+                "RequiresManualResolution": "Requires manual resolution; casting is not blocked.",
+                "AreaDefenseReminder": "Apply the listed defense to every target in the area when relevant.",
+                "MissingTargetStatData": "Target stat data is incomplete: DC cannot be calculated automatically.",
+                "SelectTargetForCalculatedDc": "Select exactly one target to calculate the DC automatically.",
+                "TargetStatUnavailable": "{target} does not have a valid {stat} stat: DC cannot be calculated automatically."
+            },
             "variableEffect": "Variable Stamina Effect",
             "staminaDialog": "How many stamina do you use?",
             "notEnoughSta": "Not enough stamina.",

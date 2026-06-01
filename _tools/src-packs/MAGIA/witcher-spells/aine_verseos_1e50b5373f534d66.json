@@ -57,7 +57,10 @@
         "targetMultiplier": 0,
         "targetDc": 0,
         "areaShape": "sphere",
-        "areaSize": "4m radius"
+        "areaSize": "4m radius",
+        "createTemplate": true,
+        "templateType": "circle",
+        "templateSize": 4
     },
     "effects": [],
     "flags": {},

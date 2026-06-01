@@ -15,8 +15,8 @@
         "stamina": 14,
         "staminaIsVar": false,
         "effect": "Scatena la furia degli elementi in base al terreno (trombe d'aria, radici, fulmini, vortici gelidi).",
-        "range": "Raggio di 60m",
-        "duration": "Attiva (6 RES)",
+        "range": "Personale",
+        "duration": "Attiva",
         "defence": "Variabile",
         "defenseOptions": [],
         "damageProperties": {
@@ -52,12 +52,15 @@
             "spell"
         ],
         "spellAttackSkill": "spellcast",
-        "targetMode": "manual",
+        "targetMode": "area",
         "targetStat": "",
         "targetMultiplier": 0,
         "targetDc": 0,
-        "areaShape": "",
-        "areaSize": ""
+        "areaShape": "circle",
+        "areaSize": "60m radius",
+        "createTemplate": true,
+        "templateType": "circle",
+        "templateSize": 60
     },
     "effects": [],
     "flags": {},

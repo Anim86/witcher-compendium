@@ -17,7 +17,7 @@
         "effect": "Purifica il bersaglio da droghe/alcol (CD 12), veleni/pozioni (CD 15) o malattie gravi (CD 18)",
         "range": "manual",
         "duration": "Istantanea",
-        "defence": "",
+        "defence": "Nessuna",
         "defenseOptions": [],
         "damageProperties": {
             "armorPiercing": false,
@@ -52,10 +52,10 @@
             "spell"
         ],
         "spellAttackSkill": "ritcraft",
-        "difficultyCheck": "Var.",
-        "preparationTime": "",
+        "difficultyCheck": "Variabile (12 alcol/droghe, 15 pozioni/unguenti, 18 malattie gravi)",
+        "preparationTime": "5 Round",
         "components": "Gessetto (x2), Alcolico (x1), Vischio (x2), Occhio Corvo (x1), Foglia Balissa (x1)",
-        "targetMode": "manual",
+        "targetMode": "gmDc",
         "targetStat": "",
         "targetMultiplier": 0,
         "targetDc": 0,

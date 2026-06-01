@@ -16,9 +16,11 @@
         "staminaIsVar": false,
         "effect": "Modella un'illusione su vasta scala in grado di ingannare tutti i sensi fisici (inclusi tatto, odore e gusto) senza infliggere alcun danno reale.",
         "range": "N/A",
-        "duration": "Permanente",
-        "defence": "",
-        "defenseOptions": [],
+        "duration": "Finché non viene Dissipato",
+        "defence": "Resistere alla Magia o Tempra CD 12",
+        "defenseOptions": [
+            "magicResist"
+        ],
         "damageProperties": {
             "armorPiercing": false,
             "improvedArmorPiercing": false,
@@ -53,14 +55,17 @@
         ],
         "spellAttackSkill": "ritcraft",
         "difficultyCheck": "18",
-        "preparationTime": "",
+        "preparationTime": "10 Round",
         "components": "Gessetto (x4), Cristallo (x2), Quintessenza (x4)",
-        "targetMode": "manual",
+        "targetMode": "fixedDc",
         "targetStat": "",
         "targetMultiplier": 0,
-        "targetDc": 0,
-        "areaShape": "",
-        "areaSize": ""
+        "targetDc": 18,
+        "areaShape": "circle",
+        "areaSize": "20m radius",
+        "createTemplate": true,
+        "templateType": "circle",
+        "templateSize": 20
     },
     "effects": [],
     "flags": {},

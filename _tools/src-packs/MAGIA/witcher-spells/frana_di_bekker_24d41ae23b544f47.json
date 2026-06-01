@@ -57,12 +57,15 @@
         "causeDamages": true,
         "damage": "6d6",
         "damageType": "elemental",
-        "targetMode": "manual",
+        "targetMode": "direct",
         "targetStat": "",
         "targetMultiplier": 0,
         "targetDc": 0,
-        "areaShape": "",
-        "areaSize": ""
+        "areaShape": "sphere",
+        "areaSize": "6m radius",
+        "createTemplate": true,
+        "templateType": "circle",
+        "templateSize": 6
     },
     "effects": [],
     "flags": {},

@@ -18,7 +18,7 @@
         "range": "manual",
         "duration": "24 ore",
         "preparationTime": "30 Round",
-        "difficultyCheck": "20 (CD 27 per Demone Maggiore)",
+        "difficultyCheck": "20 (27 per un Demone Maggiore)",
         "components": "Tutti i componenti dell'Evocazione Controllata; Vero Nome scritto col sangue; barriera d'argento; Vero Bastone del Vincolo (Investimento: 1288)",
         "spellAttackSkill": "ritcraft",
         "targetMode": "fixedDc",
@@ -27,7 +27,10 @@
         "targetDc": 20,
         "areaShape": "",
         "areaSize": "",
-        "defenseOptions": []
+        "defenseOptions": [
+            "magicResist"
+        ],
+        "defence": "Resistere alla Magia contrapposta"
     },
     "effects": [],
     "flags": {},

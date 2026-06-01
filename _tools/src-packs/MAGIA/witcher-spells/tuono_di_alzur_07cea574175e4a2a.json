@@ -62,7 +62,10 @@
         "targetMultiplier": 0,
         "targetDc": 0,
         "areaShape": "line",
-        "areaSize": "25m"
+        "areaSize": "25m",
+        "createTemplate": true,
+        "templateType": "ray",
+        "templateSize": 25
     },
     "effects": [],
     "flags": {},

@@ -21,6 +21,15 @@
 {{#if spellItem.system.difficultyCheck}}
     <div><b>{{localize "WITCHER.DC"}}: </b>{{spellItem.system.difficultyCheck}}</div>
 {{/if}}
+{{#if templateInfo.magicTarget}}
+    <div><b>{{localize "WITCHER.Spell.TargetMode.Label"}}: </b>{{templateInfo.magicTarget.modeLabel}}</div>
+    {{#each templateInfo.magicTarget.entries as |entry|}}
+        <div><b>{{entry.label}}: </b>{{entry.value}}</div>
+    {{/each}}
+    {{#each templateInfo.magicTarget.notes as |note|}}
+        <div><em>{{note}}</em></div>
+    {{/each}}
+{{/if}}
 {{#if spellItem.system.ritualComponents}}
     <div>
         <b>{{localize "WITCHER.Spell.Ritual.components"}}: </b><br>

@@ -479,6 +479,15 @@
             "Line": "Linea",
             "Sphere": "Sfera",
             "Manual": "Manuale",
+            "Target": {
+                "CalculatedDc": "CD calcolata",
+                "RequiresGmDc": "Richiede una CD stabilita dal GM; il lancio non viene bloccato.",
+                "RequiresManualResolution": "Richiede gestione manuale; il lancio non viene bloccato.",
+                "AreaDefenseReminder": "Applica la difesa indicata a tutti i bersagli nell'area quando pertinente.",
+                "MissingTargetStatData": "Dati statistica bersaglio incompleti: CD non calcolabile automaticamente.",
+                "SelectTargetForCalculatedDc": "Seleziona esattamente un bersaglio per calcolare automaticamente la CD.",
+                "TargetStatUnavailable": "{target} non ha una statistica valida per {stat}: CD non calcolabile automaticamente."
+            },
             "StaminaCollapse": "Resistenza insufficiente",
             "StaminaCollapseDescription": "Il costo finale ({cost}) supera la RES attuale ({stamina}). L'incantesimo viene lanciato comunque, la RES scende a 0 e l'incantatore è Stordito.",
             "Overexertion": "Sovraffaticamento",

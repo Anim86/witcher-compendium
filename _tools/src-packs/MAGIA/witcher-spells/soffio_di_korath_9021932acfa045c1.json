@@ -63,7 +63,10 @@
         "targetMultiplier": 0,
         "targetDc": 0,
         "areaShape": "cone",
-        "areaSize": "3m"
+        "areaSize": "3m",
+        "createTemplate": true,
+        "templateType": "cone",
+        "templateSize": 3
     },
     "effects": [],
     "flags": {},

@@ -59,7 +59,10 @@
         "targetMultiplier": 0,
         "targetDc": 0,
         "areaShape": "rect",
-        "areaSize": "2m x 2m"
+        "areaSize": "2m x 2m",
+        "createTemplate": true,
+        "templateType": "rect",
+        "templateSize": 2
     },
     "effects": [],
     "flags": {},
