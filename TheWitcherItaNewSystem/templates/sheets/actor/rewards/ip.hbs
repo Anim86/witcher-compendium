@@ -3,7 +3,7 @@
         {{#if isGM}}
         <div class="gm-ip-actions">
             <button class="btn-premium add-ip-reward standard" data-action="giveReward" data-type="standard">
-                <i class="fas fa-graduation-cap"></i> + Exp
+                <i class="fas fa-graduation-cap"></i> + PI
             </button>
             <button class="btn-premium add-ip-reward magic" data-action="giveReward" data-type="magic">
                 <i class="fas fa-sparkles"></i> + Magia
@@ -18,7 +18,7 @@
 
     <div class="current-ip-summary">
         <div class="ip-stat standard">
-            <span class="label">Punti Exp Totali</span>
+            <span class="label">Punti Incremento Totali</span>
             <span class="value">{{system.improvementPoints}}</span>
         </div>
         <div class="ip-stat magic">
@@ -36,11 +36,11 @@
         <div class="log-item">
             <div class="log-info">
                 <span class="reason">{{this.label}}</span>
-                <span class="date">{{#if this.date}}{{date this.date 'DD MMM YYYY'}}{{/if}} {{#if this.isMagic}}<span class="magic-tag">MAGIA</span>{{/if}}</span>
+                <span class="date">{{#if this.date}}{{date this.date 'DD MMM YYYY'}}{{/if}} {{#if this.isMagic}}<span class="magic-tag">MAGIA</span>{{else}}<span class="pi-tag">PI</span>{{/if}}</span>
             </div>
             <div class="log-controls">
                 <div class="log-amount {{#if this.isImprovement}}negative{{else}}positive{{/if}}">
-                    {{#unless this.isImprovement}}+{{/unless}}{{this.ip}} PM
+                    {{#unless this.isImprovement}}+{{/unless}}{{this.ip}} {{#if this.isMagic}}PM{{else}}PI{{/if}}
                 </div>
                 {{#if ../isGM}}
                 <button class="btn-delete-log" data-action="deleteIpLog" data-index="{{@index}}" data-tooltip="{{localize 'WITCHER.Button.Delete'}}">

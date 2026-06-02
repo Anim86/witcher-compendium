@@ -2165,6 +2165,16 @@ button.info-item.background-lock-toggle {
     border: 1px solid rgba(155, 89, 182, 0.3);
 }
 
+.witcher-rewards-window .pi-tag {
+    background: rgba(201, 168, 76, 0.2);
+    color: var(--w-gold);
+    padding: 1px 6px;
+    border-radius: 3px;
+    font-size: 9px;
+    font-weight: bold;
+    border: 1px solid rgba(201, 168, 76, 0.3);
+}
+
 .witcher-rewards-window .log-controls {
     display: flex;
     align-items: center;
@@ -2345,6 +2355,16 @@ button.info-item.background-lock-toggle {
 .magic-tag {
     background: rgba(155, 62, 245, 0.2);
     color: #b388ff;
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-size: 9px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.pi-tag {
+    background: rgba(201, 168, 76, 0.2);
+    color: var(--w-gold);
     padding: 1px 5px;
     border-radius: 3px;
     font-size: 9px;

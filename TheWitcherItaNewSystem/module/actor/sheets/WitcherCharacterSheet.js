@@ -179,7 +179,7 @@ export default class WitcherCharacterSheet extends WitcherActorSheet {
             part.querySelectorAll('input, select, textarea, button').forEach(control => {
                 control.disabled = locked;
             });
-            part.querySelectorAll('.add-item, .item-edit, .item-delete, .spend-ip-profession').forEach(control => {
+            part.querySelectorAll('.add-item, .item-edit, .item-delete').forEach(control => {
                 control.classList.toggle('background-lock-disabled-control', locked);
                 control.setAttribute('aria-disabled', locked ? 'true' : 'false');
             });

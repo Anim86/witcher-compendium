@@ -18,7 +18,9 @@
             {{#if skill.modifiersSum}}
             <div class='tooltip-row'>
                 <span><i class='fa-solid fa-plus-minus'></i> Modificatori</span>
+                {{#unless skill.modifierSources.length}}
                 <span>{{#if (gt skill.modifiersSum 0)}}+{{/if}}{{skill.modifiersSum}}</span>
+                {{/unless}}
             </div>
             {{#if skill.modifierSources.length}}
             <div class='tooltip-modifiers-list'>

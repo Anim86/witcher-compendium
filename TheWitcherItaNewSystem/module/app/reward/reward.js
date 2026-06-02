@@ -14,7 +14,7 @@ export default class Rewards {
 
         const isMagic = type === 'magic';
         const title = isMagic ? 'WITCHER.rewards.dialog.titleMagic' : 'WITCHER.rewards.dialog.titleStandard';
-        const ipLabel = isMagic ? 'Punti Magici (P.M.)' : 'Punti Incremento (P.I.)';
+        const ipLabel = isMagic ? 'Punti Magia (PM)' : 'Punti Incremento (PI)';
         const icon = isMagic ? 'fa-sparkles' : 'fa-graduation-cap';
         const themeClass = isMagic ? 'magic-theme' : 'standard-theme';
 
@@ -105,8 +105,11 @@ export default class Rewards {
                 ip: ip
             }
         );
+        let whisperUsers = game.users.filter(u => u.isGM || choosenActors.some(a => a.testUserPermission(u, "OWNER"))).map(u => u.id);
+
         const chatData = {
             content: content,
+            whisper: whisperUsers,
             ...(typeof CONST.CHAT_MESSAGE_STYLES !== "undefined" ? { style: CONST.CHAT_MESSAGE_STYLES.OTHER } : { type: CONST.CHAT_MESSAGE_TYPES?.OTHER ?? 0 })
         };
 
@@ -141,11 +144,6 @@ export default class Rewards {
             </div>
 
             <div class="reward-details">
-                <div class="form-group-premium">
-                    <label><i class="fas fa-pen-nib"></i> Causale</label>
-                    <input type="text" name="label" placeholder="Es: Bottino, Pagamento Contratto..." />
-                </div>
-                
                 <div class="reward-value-row">
                     <div class="form-group-premium">
                         <label><i class="fas fa-coins"></i> Corone (+/-)</label>
@@ -180,19 +178,35 @@ export default class Rewards {
         const actorUuids = Array.isArray(values.actors) ? values.actors : [values.actors];
         let choosenActors = actorUuids.map(uuid => fromUuidSync(uuid));
         let amount = parseInt(values.amount);
-        let label = values.label || "Aggiornamento Corone";
+        let label = "Assegnazione Corone";
 
         if (amount) {
             for (let actor of choosenActors) {
                 let current = actor.system.currency.crown || 0;
                 let newValue = Math.max(0, current + amount);
                 await actor.update({ "system.currency.crown": newValue });
-                
-                // Track in logs if available
-                if (actor.system.logs?.addCurrencyReward) {
-                    actor.system.logs.addCurrencyReward(label, amount);
-                }
             }
+
+            const content = await foundry.applications.handlebars.renderTemplate(
+                'systems/TheWitcherItaNewSystem/templates/chat/rewards.hbs',
+                {
+                    actors: choosenActors,
+                    label: label,
+                    currency: true,
+                    amount: amount,
+                    type: "crown"
+                }
+            );
+
+            let whisperUsers = game.users.filter(u => u.isGM || choosenActors.some(a => a.testUserPermission(u, "OWNER"))).map(u => u.id);
+
+            const chatData = {
+                content: content,
+                whisper: whisperUsers,
+                ...(typeof CONST.CHAT_MESSAGE_STYLES !== "undefined" ? { style: CONST.CHAT_MESSAGE_STYLES.OTHER } : { type: CONST.CHAT_MESSAGE_TYPES?.OTHER ?? 0 })
+            };
+
+            ChatMessage.create(chatData);
         }
     }
 }

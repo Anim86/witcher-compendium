@@ -47,31 +47,57 @@
         "Progression": {
             "Title": "Miglioramento Personaggio",
             "ConfirmTitle": "Conferma Miglioramento",
-            "ConfirmSpend": "Vuoi spendere {cost} PM per aumentare {label} di 1 punto?",
+            "ConfirmSpend": "Vuoi spendere {cost} PI per aumentare {label} di 1 punto?",
             "CurrentLevel": "Livello Attuale",
             "TargetLevel": "Livello Obiettivo",
             "TotalCost": "Costo Totale",
             "StandardIP": "Punti Esperienza (Standard)",
             "MagicIP": "Punti Esperienza Magici (Tesoretto)",
-            "ExpLabel": "Punti EXP",
-            "ExpLabelShort": "EXP",
+            "ExpLabel": "Punti Incremento",
+            "ExpLabelShort": "PI",
             "MagicLabel": "Punti Magia",
             "MagicLabelShort": "MAG",
-            "AvailableIP": "P.I. Disponibili",
+            "AvailableIP": "PI Disponibili",
             "Confirm": "Conferma Miglioramento",
             "Success": "{label} aumentata con successo!",
-            "NotEnoughIP": "P.I. insufficienti (Richiesti: {cost}, Disponibili: {available})",
+            "NotEnoughIP": "PI insufficienti (Richiesti: {cost}, Disponibili: {available})",
             "StatCapReached": "Il livello massimo per le statistiche è 10.",
             "SkillCapReached": "Il livello massimo per le abilità è 10.",
             "BranchRequirementNotMet": "Devi investire almeno 5 punti nell'abilità precedente.",
-            "SpendIP": "Spendi PM",
+            "SpendIP": "Spendi PI",
             "TrainingDays": "Giorni di Studio",
             "Successes": "Successi Accumulati",
             "Train": "Tira per l'Esercitazione",
-            "PayIP": "Paga P.I. Iniziali",
+            "PayIP": "Paga PI Iniziali",
             "TrainingComplete": "Addestramento completato! {label} appresa.",
             "TrainingFailed": "Esercitazione fallita. Aggiunto 1 giorno di studio.",
-            "TrainingSuccess": "Ottimo progresso! Successo accumulato."
+            "TrainingSuccess": "Ottimo progresso! Successo accumulato.",
+            "DefiningSkillRequirementNotMet": "Devi investire almeno 5 punti nell'Abilità Esclusiva."
+        },
+        "rewards": {
+            "heading": "Premi e Miglioramenti",
+            "currency": "Valuta",
+            "ip": "PI",
+            "addIp": "Aggiungi PI",
+            "addCurrency": "Aggiungi Valuta",
+            "noIpLogs": "Nessun registro di PI trovato",
+            "noCurrencyLogs": "Nessun registro di valuta trovato",
+            "spendIp": "Spendi PI",
+            "spendIpHint": "Per spendere i PI, clicca sulle abilità o sulle statistiche nella scheda principale.",
+            "logTitle": "Registro Miglioramenti",
+            "currencyLogTitle": "Registro Valuta",
+            "dialog": {
+                "title": "Assegna Ricompense",
+                "titleStandard": "Assegna Punti Esperienza",
+                "titleMagic": "Assegna Punti Magia (Tesoretto)",
+                "confirm": "Conferma",
+                "confirmAssignment": "Conferma Assegnazione",
+                "label": "Causale / Evento",
+                "ip": "Punti Incremento (PI)",
+                "magicIp": "Punti Magia (PM)",
+                "amount": "Quantità",
+                "currencyType": "Tipo di Valuta"
+            }
         },
         "Description": "Descrizione",
         "RollInit": "Tira Iniziativa",
@@ -246,7 +272,7 @@
                 "male": "Maschio",
                 "female": "Femmina"
             },
-            "ImprovementPoints": "Punti Miglioramento",
+            "ImprovementPoints": "Punti Incremento",
             "Age": "Età",
             "Perks": "Talenti",
             "Description": "Descrizione",
@@ -355,7 +381,7 @@
             "Profession": {
                 "Level": "Livello"
             },
-            "CurrentIP": "PM Attuali:",
+            "CurrentIP": "PI Attuali:",
             "SkillName": "Nome abilità...",
             "TotalSkill": "Abilità Totali",
             "TotalProfSkill": "Abilità Profess. Totali",
@@ -388,11 +414,11 @@
             "rewards": {
                 "heading": "Premi e Miglioramenti",
                 "currency": "Valuta",
-                "ip": "PM",
-                "addIp": "Aggiungi PM",
-                "noIpLogs": "Nessun registro di PM trovato",
-                "spendIp": "Spendi PM",
-                "spendIpHint": "Per spendere i PM, clicca sulle abilità o sulle statistiche nella scheda principale.",
+                "ip": "PI",
+                "addIp": "Aggiungi PI",
+                "noIpLogs": "Nessun registro di PI trovato",
+                "spendIp": "Spendi PI",
+                "spendIpHint": "Per spendere i PI, clicca sulle abilità o sulle statistiche nella scheda principale.",
                 "logTitle": "Registro Miglioramenti"
             },
             "socialStanding": {
@@ -960,11 +986,11 @@
             "Forage": "CD Foraggiamento"
         },
         "Notifications": {
-            "NotEnoughIP": "Non hai abbastanza PM! (Costo: {cost}, Disponibili: {current})",
-            "SkillIncreased": "Abilità {skill} aumentata al livello {level} (Costo: {cost} PM)"
+            "NotEnoughIP": "Non hai abbastanza PI! (Costo: {cost}, Disponibili: {current})",
+            "SkillIncreased": "Abilità {skill} aumentata al livello {level} (Costo: {cost} PI)"
         },
         "Log": {
-            "SpentIP": "PM Spesi"
+            "SpentIP": "PI Spesi"
         },
         "CritWound": {
             "Header": "Ferite Critiche",
@@ -1985,33 +2011,8 @@
             "cost": "Costo",
             "totalPrice": "Prezzo Totale"
         },
-        "rewards": {
-            "heading": "Premi e Miglioramenti",
-            "currency": "Valuta",
-            "ip": "PM",
-            "addIp": "Aggiungi PM",
-            "addCurrency": "Aggiungi Valuta",
-            "noIpLogs": "Nessun registro di PM trovato",
-            "noCurrencyLogs": "Nessun registro di valuta trovato",
-            "spendIp": "Spendi PM",
-            "spendIpHint": "Per spendere i PM, clicca sulle abilità o sulle statistiche nella scheda principale.",
-            "logTitle": "Registro Miglioramenti",
-            "currencyLogTitle": "Registro Valuta",
-            "dialog": {
-                "title": "Assegna Ricompense",
-                "titleStandard": "Assegna Punti Esperienza",
-                "titleMagic": "Assegna Punti Magia (Tesoretto)",
-                "confirm": "Conferma",
-                "confirmAssignment": "Conferma Assegnazione",
-                "label": "Causale / Evento",
-                "ip": "Punti Miglioramento (PM)",
-                "magicIp": "PM Magici",
-                "amount": "Quantità",
-                "currencyType": "Tipo di Valuta"
-            }
-        },
         "magic": {
-            "magicImprovementPoints": "PM Magici"
+            "magicImprovementPoints": "Punti Magia"
         },
         "Wizard": {
             "Title": "Creazione del Personaggio",
@@ -2113,7 +2114,6 @@
                 "Launch": "Crea Personaggio"
             }
         },
-
         "Rewards": {
             "Title": "Premi e Miglioramenti",
             "LogTitle": "Storico Incrementi",

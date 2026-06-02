@@ -36,7 +36,9 @@
 
         /* ── Defining Skill: full width ── */
         .profession-flex {
-            margin-bottom: 15px;
+            margin-bottom: 0;
+            position: relative;
+            z-index: 2;
 
             .profession-card.defining-skill {
                 max-width: 100%;
@@ -58,12 +60,73 @@
             }
         }
 
-        /* ── Paths: cards allineate con stretch ── */
+        /* ═══════════════════════════════════════
+           SKILL TREE CONNECTOR
+           ═══════════════════════════════════════ */
+        .skill-tree-connector {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            pointer-events: none;
+        }
+
+        .tree-trunk {
+            width: 2px;
+            height: 18px;
+            background: linear-gradient(to bottom, rgba(201, 168, 76, 0.1), rgba(201, 168, 76, 0.8));
+            box-shadow: 0 0 6px rgba(201, 168, 76, 0.4);
+        }
+
+        .tree-drops {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 15px; /* same gap as .profession-path */
+            position: relative;
+        }
+
+        /* Horizontal bridge line */
+        .tree-drops::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: calc((100% - 30px) / 6);
+            right: calc((100% - 30px) / 6);
+            height: 2px;
+            background: linear-gradient(to right, rgba(140, 175, 210, 0.5), rgba(201, 168, 76, 0.8) 50%, rgba(200, 140, 140, 0.5));
+            box-shadow: 0 0 6px rgba(201, 168, 76, 0.3);
+        }
+
+        .drop {
+            width: 2px;
+            height: 20px;
+            justify-self: center;
+            box-shadow: 0 0 5px currentColor;
+        }
+
+        .drop-blue {
+            background: linear-gradient(to bottom, rgba(140, 175, 210, 0.8), rgba(140, 175, 210, 0.2));
+            color: rgba(140, 175, 210, 0.4);
+        }
+        .drop-green {
+            background: linear-gradient(to bottom, rgba(130, 185, 140, 0.8), rgba(130, 185, 140, 0.2));
+            color: rgba(130, 185, 140, 0.4);
+        }
+        .drop-red {
+            background: linear-gradient(to bottom, rgba(200, 140, 140, 0.8), rgba(200, 140, 140, 0.2));
+            color: rgba(200, 140, 140, 0.4);
+        }
+
+        /* ═══════════════════════════════════════
+           PATHS — cards layout
+           ═══════════════════════════════════════ */
         .profession-path {
             display: flex;
             flex-direction: row;
-            gap: 8px;
+            gap: 15px;
             width: 100%;
+            position: relative;
 
             .blue-path,
             .green-path,
@@ -71,18 +134,22 @@
                 width: 100%;
                 display: flex;
                 flex-direction: column;
+                gap: 12px;
+                position: relative;
 
                 h2 {
                     font-size: 20px;
-                    margin-bottom: 4px;
-                    padding-left: 5px;
+                    margin: 0;
+                    padding: 0;
+                    text-align: center;
+                    position: relative;
                 }
             }
 
-            /* Path titles — toni smorzati */
-            .blue-path h2 { color: rgba(140, 175, 210, 0.75); }
-            .green-path h2 { color: rgba(130, 185, 140, 0.75); }
-            .red-path h2 { color: rgba(200, 140, 140, 0.75); }
+            /* Path titles — themed glow */
+            .blue-path h2 { color: rgba(140, 175, 210, 0.9); text-shadow: 0 0 8px rgba(140, 175, 210, 0.4); }
+            .green-path h2 { color: rgba(130, 185, 140, 0.9); text-shadow: 0 0 8px rgba(130, 185, 140, 0.4); }
+            .red-path h2 { color: rgba(200, 140, 140, 0.9); text-shadow: 0 0 8px rgba(200, 140, 140, 0.4); }
 
             .profession-card {
                 max-width: none;
@@ -90,6 +157,33 @@
                 flex: 1;
                 display: flex;
                 flex-direction: column;
+                position: relative;
+
+                /* Vertical line between cards */
+                &:not(:last-child)::after {
+                    content: "";
+                    position: absolute;
+                    bottom: -22px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 2px;
+                    height: 22px;
+                    pointer-events: none;
+                    z-index: 1;
+                }
+
+                /* Diamond node between cards */
+                &:not(:last-child)::before {
+                    content: "";
+                    position: absolute;
+                    bottom: -15px;
+                    left: 50%;
+                    transform: translateX(-50%) rotate(45deg);
+                    width: 7px;
+                    height: 7px;
+                    z-index: 2;
+                    pointer-events: none;
+                }
 
                 input,
                 select,
@@ -127,6 +221,34 @@
                         border-radius: 5px;
                     }
                 }
+            }
+
+            /* Thematic branch lines between cards */
+            .blue-path .profession-card:not(:last-child)::after {
+                background: linear-gradient(to bottom, rgba(140, 175, 210, 0.7), rgba(140, 175, 210, 0.15));
+                box-shadow: 0 0 5px rgba(140, 175, 210, 0.3);
+            }
+            .blue-path .profession-card:not(:last-child)::before {
+                background: radial-gradient(circle, #b8d4ec, #8cafd2);
+                box-shadow: 0 0 6px rgba(140, 175, 210, 0.7);
+            }
+
+            .green-path .profession-card:not(:last-child)::after {
+                background: linear-gradient(to bottom, rgba(130, 185, 140, 0.7), rgba(130, 185, 140, 0.15));
+                box-shadow: 0 0 5px rgba(130, 185, 140, 0.3);
+            }
+            .green-path .profession-card:not(:last-child)::before {
+                background: radial-gradient(circle, #ade0b5, #82b98c);
+                box-shadow: 0 0 6px rgba(130, 185, 140, 0.7);
+            }
+
+            .red-path .profession-card:not(:last-child)::after {
+                background: linear-gradient(to bottom, rgba(200, 140, 140, 0.7), rgba(200, 140, 140, 0.15));
+                box-shadow: 0 0 5px rgba(200, 140, 140, 0.3);
+            }
+            .red-path .profession-card:not(:last-child)::before {
+                background: radial-gradient(circle, #e8b8b8, #c88c8c);
+                box-shadow: 0 0 6px rgba(200, 140, 140, 0.7);
             }
         }
 

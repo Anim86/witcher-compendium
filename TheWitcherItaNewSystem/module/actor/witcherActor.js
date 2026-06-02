@@ -1314,6 +1314,27 @@ export default class WitcherActor extends Actor {
             });
         });
 
+        // 1b. Race Perks Modifiers
+        const raceItem = this.items?.find(i => i.type === 'race');
+        if (raceItem) {
+            for (let i = 1; i <= 4; i++) {
+                const perk = raceItem.system[`perk${i}`];
+                if (perk && Array.isArray(perk.modifiers)) {
+                    perk.modifiers.forEach(mod => {
+                        if (mod.target === stat) {
+                            const val = Number(mod.value);
+                            if (!isNaN(val) && val !== 0) {
+                                breakdown.push({
+                                    name: perk.name || game.i18n.localize('WITCHER.Actor.Perk') + ` ${i}`,
+                                    value: val
+                                });
+                            }
+                        }
+                    });
+                }
+            }
+        }
+
         // 2. Manual/Custom Modifiers
         const statData = this.system.stats[stat];
         if (statData && statData.modifiers) {
@@ -1443,6 +1464,27 @@ export default class WitcherActor extends Actor {
                 }
             });
         });
+
+        // 1b. Race Perks Modifiers
+        const raceItem = this.items?.find(i => i.type === 'race');
+        if (raceItem) {
+            for (let i = 1; i <= 4; i++) {
+                const perk = raceItem.system[`perk${i}`];
+                if (perk && Array.isArray(perk.modifiers)) {
+                    perk.modifiers.forEach(mod => {
+                        if (mod.target === stat) {
+                            const val = Number(mod.value);
+                            if (!isNaN(val) && val !== 0) {
+                                breakdown.push({
+                                    name: perk.name || game.i18n.localize('WITCHER.Actor.Perk') + ` ${i}`,
+                                    value: val
+                                });
+                            }
+                        }
+                    });
+                }
+            }
+        }
 
         // 2. Manual/Custom Modifiers
         const statData = this.system.derivedStats[stat];

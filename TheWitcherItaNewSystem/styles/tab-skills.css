@@ -331,9 +331,9 @@ input[type="checkbox"].skill-checkbox {
 #tooltip .tooltip-modifiers-list {
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 4px;
     padding-left: 20px;
-    margin-bottom: 2px;
+    margin-bottom: 4px;
 }
 
 #tooltip .tooltip-row.mod-source {
@@ -345,6 +345,12 @@ input[type="checkbox"].skill-checkbox {
     font-size: 0.85rem;
     color: rgba(255, 255, 255, 0.8);
     font-family: monospace;
+}
+
+#tooltip .tooltip-math-section {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
 }
 
 #tooltip .tooltip-row {

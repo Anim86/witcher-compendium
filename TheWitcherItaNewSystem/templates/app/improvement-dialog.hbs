@@ -22,7 +22,7 @@
             <i class="fa-solid fa-circle-info"></i>
             <p>
                 <strong>Regola di Incremento:</strong> 
-                Per far salire il livello, devi spendere un numero di P.I. pari al livello corrente {{#if (gt multiplier 1)}}moltiplicato per {{multiplier}}{{/if}}.
+                Per far salire il livello, devi spendere un numero di PI pari al livello corrente {{#if (gt multiplier 1)}}moltiplicato per {{multiplier}}{{/if}}.
                 {{#if isLearned}}
                 <br><span class="learned-warning">Attenzione: essendo un'Abilità Difficile (Costo x2), potrebbe richiedere un maestro o un manuale per l'apprendimento.</span>
                 {{/if}}
@@ -48,8 +48,19 @@
 
                 <div class="training-actions">
                     {{#if (not ipPaid)}}
-                        <button class="standard-button gold pay-ip" data-action="payIp">
-                            <i class="fas fa-coins"></i> {{localize 'WITCHER.Progression.PayIP'}} ({{cost}} P.I.)
+                        <div class="cost-summary" style="margin-bottom: 15px;">
+                            <div class="available-line">
+                                <span>{{localize 'WITCHER.Progression.AvailableIP'}}</span>
+                                <span class="magic-breakdown">
+                                    {{availableIp}} PI 
+                                    <span style="font-size: 0.85em; opacity: 0.8; margin-left: 5px;">
+                                        ({{standardIp}} PI + {{magicIp}} PM <i class="fas fa-sparkles" style="color: #cda8ff;"></i>)
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                        <button class="standard-button gold pay-ip" data-action="payIp" {{#if (gt cost availableIp)}}disabled{{/if}}>
+                            <i class="fas fa-coins"></i> {{localize 'WITCHER.Progression.PayIP'}} ({{cost}} PI)
                         </button>
                     {{else}}
                         <div class="training-info">
@@ -80,11 +91,20 @@
                 <div class="cost-summary">
                     <div class="cost-line">
                         <span>{{localize 'WITCHER.Progression.TotalCost'}}</span>
-                        <span class="cost-value {{#if (gt totalCost availableIp)}}error{{/if}}">{{totalCost}} P.I.</span>
+                        <span class="cost-value {{#if (gt totalCost availableIp)}}error{{/if}}">{{totalCost}} PI</span>
                     </div>
                     <div class="available-line">
                         <span>{{localize 'WITCHER.Progression.AvailableIP'}}</span>
-                        <span>{{availableIp}} P.I.</span>
+                        {{#if isMagicTarget}}
+                        <span class="magic-breakdown">
+                            {{availableIp}} PI 
+                            <span style="font-size: 0.85em; opacity: 0.8; margin-left: 5px;">
+                                ({{standardIp}} PI + {{magicIp}} PM <i class="fas fa-sparkles" style="color: #cda8ff;"></i>)
+                            </span>
+                        </span>
+                        {{else}}
+                        <span>{{availableIp}} PI</span>
+                        {{/if}}
                     </div>
                 </div>
 

@@ -45,6 +45,75 @@ export function registerHooks() {
         }
     });
 
+    Hooks.on('getSceneControlButtons', (controls) => {
+        if (!game.user?.isGM) return;
+
+        const defaultTool = {
+            name: 'witcher-tools-default',
+            title: 'Seleziona Strumento',
+            icon: 'fa-solid fa-arrow-pointer',
+            button: false
+        };
+
+        const rewardIpTool = {
+            name: 'witcher-rewards-ip',
+            title: 'Assegna Punti Incremento (Gruppo)',
+            icon: 'fa-solid fa-graduation-cap',
+            button: true,
+            onClick: () => {
+                if (game.api?.rewards?.ip) game.api.rewards.ip();
+            }
+        };
+
+        const rewardMagicTool = {
+            name: 'witcher-rewards-magic',
+            title: 'Assegna Punti Magia (Gruppo)',
+            icon: 'fa-solid fa-sparkles',
+            button: true,
+            onClick: () => {
+                if (game.api?.rewards?.ip) game.api.rewards.ip(null, 'magic');
+            }
+        };
+
+        const rewardCurrencyTool = {
+            name: 'witcher-rewards-currency',
+            title: 'Assegna Corone (Gruppo)',
+            icon: 'fa-solid fa-coins',
+            button: true,
+            onClick: () => {
+                if (game.api?.rewards?.currency) game.api.rewards.currency();
+            }
+        };
+
+        let witcherTools;
+        if (Array.isArray(controls)) {
+            witcherTools = [defaultTool, rewardIpTool, rewardMagicTool, rewardCurrencyTool];
+        } else {
+            witcherTools = {
+                'witcher-tools-default': defaultTool,
+                'witcher-rewards-ip': rewardIpTool,
+                'witcher-rewards-magic': rewardMagicTool,
+                'witcher-rewards-currency': rewardCurrencyTool
+            };
+        }
+
+        const witcherControls = {
+            name: "witcher-tools",
+            title: "Strumenti del Master",
+            layer: "controls", 
+            icon: "fa-solid fa-book-journal-whills", 
+            visible: true,
+            tools: witcherTools,
+            activeTool: "witcher-tools-default"
+        };
+
+        if (Array.isArray(controls)) {
+            controls.push(witcherControls);
+        } else {
+            controls["witcher-tools"] = witcherControls;
+        }
+    });
+
     // --------------------------------------------------------
     // CONTEXT MENU HOOK (V14 - Application V2)
     // --------------------------------------------------------

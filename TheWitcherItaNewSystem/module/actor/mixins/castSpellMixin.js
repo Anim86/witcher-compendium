@@ -120,7 +120,11 @@ export let castSpellMixin = {
         );
 
         let result = await DialogV2.prompt({
-                window: { title: `${game.i18n.localize('WITCHER.Spell.MagicCost')}` },
+                window: { 
+                    title: `${game.i18n.localize('WITCHER.Spell.MagicCost')}`,
+                    contentClasses: ['scrollable', 'weapon-roll-dialog'] 
+                },
+                position: { width: 900 },
                 content: dialogTemplate,
                 modal: true,
                 ok: {

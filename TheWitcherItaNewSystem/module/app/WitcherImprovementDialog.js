@@ -98,6 +98,9 @@ export default class WitcherImprovementDialog extends HandlebarsApplicationMixin
         const context = {
             type: this.type,
             isMagic: this.type === 'magic',
+            isMagicTarget: isMagicTarget,
+            standardIp: standardIp,
+            magicIp: magicIp,
             label: this._getTargetLabel(),
             img: this._getTargetImg(),
             availableIp: isMagicTarget ? (standardIp + magicIp) : standardIp
@@ -193,7 +196,10 @@ export default class WitcherImprovementDialog extends HandlebarsApplicationMixin
         const index = this.options.index;
         const profession = this.professionItem;
 
-        if (index === 'skill2') {
+        if (index === 'skill1') {
+            const definingSkill = profession.system.definingSkill;
+            if ((definingSkill.level || 0) < 5) return "WITCHER.Progression.DefiningSkillRequirementNotMet";
+        } else if (index === 'skill2') {
             const skill1 = profession.system[path].skill1;
             if ((skill1.level || 0) < 5) return "WITCHER.Progression.BranchRequirementNotMet";
         } else if (index === 'skill3') {

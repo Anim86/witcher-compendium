@@ -30,27 +30,27 @@
             {{#if breakdown.hasModifiers}}
             <div class='tooltip-row'>
                 <span><i class='fa-solid fa-plus-minus'></i> Modificatori</span>
-                <span class='{{#if (gt details.totalModifiers 0)}}bonus-text{{else}}penalty-text{{/if}}'>{{#if (gt details.totalModifiers 0)}}+{{/if}}{{details.totalModifiers}}</span>
             </div>
-            <div class='tooltip-breakdown-list'>
+            <div class='tooltip-modifiers-list'>
                 {{#each breakdown.modifiers}}
-                <div class='breakdown-item'>
-                    <span class='breakdown-source'>{{name}}</span>
-                    <span class='breakdown-val {{#if (gt value 0)}}bonus{{else}}penalty{{/if}}'>{{#if (gt value 0)}}+{{/if}}{{value}}</span>
+                <div class='tooltip-row mod-source'>
+                    <span>- {{name}}</span>
+                    <span>{{#if (gt value 0)}}+{{/if}}{{value}}</span>
                 </div>
                 {{/each}}
                 {{#each breakdown.dividers}}
-                <div class='breakdown-item'>
-                    <span class='breakdown-source'>{{name}} (Divisore)</span>
-                    <span class='breakdown-val penalty'>/ {{value}}</span>
+                <div class='tooltip-row mod-source'>
+                    <span>- {{name}} (Divisore)</span>
+                    <span>/ {{value}}</span>
                 </div>
                 {{/each}}
             </div>
             {{/if}}
             {{/with}}
-            <div class='tooltip-row total-row'>
-                <span>Valore Attuale</span>
-                <span class='total-val'>{{details.value}}</span>
+            <hr>
+            <div class='tooltip-row total'>
+                <span><i class='fa-solid fa-equals'></i> Valore Attuale</span>
+                <span>{{details.value}}</span>
             </div>
         </div>
     </div>
@@ -128,27 +128,27 @@
             {{#if breakdown.hasModifiers}}
             <div class='tooltip-row'>
                 <span><i class='fa-solid fa-plus-minus'></i> Modificatori</span>
-                <span class='{{#if (gt details.totalModifiers 0)}}bonus-text{{else}}penalty-text{{/if}}'>{{#if (gt details.totalModifiers 0)}}+{{/if}}{{details.totalModifiers}}</span>
             </div>
-            <div class='tooltip-breakdown-list'>
+            <div class='tooltip-modifiers-list'>
                 {{#each breakdown.modifiers}}
-                <div class='breakdown-item'>
-                    <span class='breakdown-source'>{{name}}</span>
-                    <span class='breakdown-val {{#if (gt value 0)}}bonus{{else}}penalty{{/if}}'>{{#if (gt value 0)}}+{{/if}}{{value}}</span>
+                <div class='tooltip-row mod-source'>
+                    <span>- {{name}}</span>
+                    <span>{{#if (gt value 0)}}+{{/if}}{{value}}</span>
                 </div>
                 {{/each}}
                 {{#each breakdown.dividers}}
-                <div class='breakdown-item'>
-                    <span class='breakdown-source'>{{name}} (Divisore)</span>
-                    <span class='breakdown-val penalty'>/ {{value}}</span>
+                <div class='tooltip-row mod-source'>
+                    <span>- {{name}} (Divisore)</span>
+                    <span>/ {{value}}</span>
                 </div>
                 {{/each}}
             </div>
             {{/if}}
             {{/with}}
-            <div class='tooltip-row total-row'>
-                <span>Valore Attuale</span>
-                <span class='total-val'>{{details.value}} / {{details.max}}</span>
+            <hr>
+            <div class='tooltip-row total'>
+                <span><i class='fa-solid fa-equals'></i> Valore Attuale</span>
+                <span>{{details.value}} / {{details.max}}</span>
             </div>
         </div>
     </div>

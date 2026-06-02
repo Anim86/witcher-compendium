@@ -3,3 +3,44 @@
 - **NON eseguire gli script di deploy** (`deploy.ps1`, `deploy.bat`, ecc.) in modo autonomo o automatico.
 - Questi script richiedono privilegi di amministratore ed è necessario che vengano eseguiti manualmente dall'utente.
 - Do NOT run the deployment scripts (`deploy.ps1`, `deploy.bat`, etc.) automatically. They require administrator privileges and must be executed manually by the user.
+
+---
+
+## 🏗️ Architettura del Progetto (1:1:1)
+- **Sorgente (`_tools/src-packs/`)**: Contiene i file JSON divisi per categoria. È l'**unica fonte di verità**. Tutte le modifiche ai dati vanno effettuate SOLO qui.
+- **Assets (`witcher-compendium/assets/`)**: Contiene le immagini in formato WebP. La struttura deve rispecchiare quella dei pack.
+- **Packs (`witcher-compendium/packs/`)**: Contiene i database LevelDB compilati. **MAI** modificare questi file direttamente, poiché vengono sovrascritti ad ogni compilazione.
+
+## 📦 Compilazione e Regole per ID/Database Compendio (Foundry VTT v12+)
+- **Nessun ID duplicato**: Ogni entità JSON deve avere un ID radice univoco.
+- **Regole ID Radice**: Tutti i `_id` dei documenti a livello radice (RollTable, Item, Actor, ecc.) devono essere di **esattamente 16 caratteri alfanumerici (`[a-zA-Z0-9]`)**. NON usare spazi, trattini o trattini bassi (`_`). La non conformità corrompe il database e inserisce record "fantasma".
+- **ID per Sotto-Documenti**: Assicurarsi che ogni elemento nell'inventario (`items`) o effetto (`effects`) all'interno di un attore abbia il proprio `_id` definito staticamente nel JSON.
+- **Requisito `_key`**: Foundry CLI richiede un campo `_key` a livello radice (es. `_key: "!actors!{_id}"`). Lo script `compile_packs.mjs` lo genera in runtime tramite la cartella temporanea `__tmp_keyed` per non sporcare Git.
+- **Coerenza del Tipo di Dati**: Campi come `effects` devono sempre essere un array vuoto `[]` e non `0`.
+- **Compatibilità V14**: Ogni JSON deve includere il blocco `_stats` con `systemId: "TheWitcherItaNewSystem"` e `coreVersion: 14` (senza `systemVersion`).
+- **Cache del Mondo**: Per testare in Foundry i database modificati, rimuovere l'entità dalla barra laterale del mondo e re-importarla dal compendio aggiornato.
+
+## 🖼️ Specifiche Asset e Naming
+- **Formato e Risoluzione**: Formato **WebP (Lossy)**, risoluzione **Max 512x512px**, qualità **80-85%**.
+- **Logica di Naming (Slugify)**: Nomi dei file solo in minuscolo, spazi/trattini sostituiti da `_`, rimozione di caratteri speciali, nessun doppio underscore (`__`), nessun suffisso legacy (es. `_wp_`).
+- **Script dedicati**:
+  - `node _tools/scripts/normalize_asset_filenames.mjs` per normalizzare i file su disco.
+  - `node _tools/scripts/utils/smart_asset_guard.mjs --fix` per correggere i path delle immagini nei JSON sorgente.
+
+## 🎨 Sviluppo UI e CSS in Foundry V14 (ApplicationV2)
+- **Selettori CSS Reali**: Foundry V14 concatena e deduplica le classi lungo la catena ereditaria di `ApplicationV2`. **NON fidarsi** di `classes` impostate in JS. Ispezionare sempre il DOM reale per ottenere le classi radice corrette (es. `.application.sheet.witcher.actor.monster-v2`).
+- **Selettori di Componente (Parts)**: Usare l'attributo `[data-application-part]` per selezionare parti stabili.
+- **Layout a Due Colonne**: Non usare CSS Grid directo su `.window-content` (Foundry sovrascrive `display` con `flex`). Ristrutturare il DOM via JS (`_onFirstRender`) inserendo le parti non-sidebar in `.char-main-wrapper` ed usare flex row su `.window-content`.
+- **Isolamento CSS (Grid Pollution)**: Se schede diverse ereditano e condividono la stessa classe (es. `.monster-v2`), azzerare i layout indesiderati ereditati usando CSS Reset mirati sul wrapper principale (es. `grid-column: auto !important`).
+
+## 🖱️ Gestione Menu Contestuali (ApplicationV2)
+- **Hook dei Menu**: Usare `getActorContextOptions` al posto del deprecato `getActorDirectoryEntryContext`.
+- **HTMLElement vs jQuery**: I callback e le condizioni ricevono elementi DOM nativi (`HTMLElement`). Normalizzarli sempre:
+  ```javascript
+  const el = node instanceof HTMLElement ? node : node[0];
+  ```
+- **Estrazione ID**: Usare `.closest('[data-entry-id]')` e `dataset.entryId` per ricavare l'ID del documento.
+
+## 🛠️ Regole Generali di Codifica per l'AI
+- **No Absolute Paths**: Non usare mai percorsi assoluti (es. `C:\Users\...`). Usare sempre costanti di root relative o calcolate dinamicamente.
+- **Modifiche Massive**: Se occorre modificare centinaia di file JSON, scrivere un'utility script in `_tools/scripts/utils/` anziché eseguire modifiche manuali o regex massive nel client.
