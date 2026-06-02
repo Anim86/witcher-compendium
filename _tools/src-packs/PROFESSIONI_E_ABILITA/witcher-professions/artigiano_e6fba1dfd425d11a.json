@@ -6,9 +6,9 @@
         "sourcebook": "MB 41",
         "definingSkill": {
             "skillName": "Riparare",
-            "stat": "int",
+            "stat": "cra",
             "level": 1,
-            "definition": "<p>Un Artigiano sa come riparare un'arma o un'armatura quanto basta perché torni utilizzabile. Con una prova di <strong>Riparare (INT)</strong> contrapposta alla CD di Manifattura -3, può riportare scudi/armature a ½ della PR o armi a ½ della Robustezza (infliggendo metà danno). Gli oggetti possono essere riparati così solo una volta.</p>"
+            "definition": "<p>Un Artigiano sa come riparare un'arma o un'armatura quanto basta perché torni utilizzabile. Con una prova di <strong>Riparare (MAN)</strong> contrapposta alla CD di Manifattura -3, può riportare armi e scudi a metà della loro Affidabilità o armature a metà della loro PR. Gli oggetti possono essere riparati così solo una volta.</p>"
         },
         "skillPath1": {
             "pathName": "Il Mastro di Forgia",

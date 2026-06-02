@@ -58,7 +58,12 @@
         "skills": {
             "int": {},
             "ref": {},
-            "dex": {},
+            "dex": {
+                "athletics": {
+                    "value": 7,
+                    "isVisible": true
+                }
+            },
             "body": {},
             "emp": {},
             "cra": {},

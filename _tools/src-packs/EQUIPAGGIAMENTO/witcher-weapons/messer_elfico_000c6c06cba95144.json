@@ -26,21 +26,14 @@
             "crushingForce": false,
             "isMeteorite": false,
             "isNonLethal": false,
-            "effects": [
-                {
-                    "id": "0003610d0b63e51e",
-                    "name": "sanguinamento",
-                    "statusEffect": null,
-                    "percentage": 25,
-                    "varEffect": false
-                }
-            ]
+            "effects": []
         },
         "enhancementSlots": 2,
         "conceal": "G",
         "category": "sword",
         "range": "",
-        "reliabilityMax": 15
+        "reliabilityMax": 15,
+        "effects": "N/A"
     },
     "effects": [],
     "flags": {},

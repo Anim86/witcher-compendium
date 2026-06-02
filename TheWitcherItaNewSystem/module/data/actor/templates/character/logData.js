@@ -28,7 +28,25 @@ export default class Log extends foundry.abstract.DataModel {
         }
     }
 
-    removeIpLog(index) {
+    addImprovementLog(label, ipCost, isMagic, type, key, levelsRaised, path = '', index = '') {
+        this.ipLog.push({ 
+            label: label, 
+            ip: ipCost, 
+            isMagic: isMagic,
+            isImprovement: true,
+            targetType: type,
+            targetKey: key,
+            levelsRaised: levelsRaised,
+            path: path,
+            index: index
+        });
+        
+        this.parent.parent.update({
+            'system.logs.ipLog': this.ipLog
+        });
+    }
+
+    async removeIpLog(index) {
         const entry = this.ipLog[index];
         if (!entry) return;
         
@@ -43,8 +61,36 @@ export default class Log extends foundry.abstract.DataModel {
         } else {
             updateData['system.improvementPoints'] = Math.max(0, this.parent.improvementPoints - ip);
         }
+
+        if (entry.isImprovement) {
+            if (entry.targetType === 'stat') {
+                const currentVal = this.parent.stats[entry.targetKey].unmodifiedMax || 0;
+                updateData[`system.stats.${entry.targetKey}.unmodifiedMax`] = Math.max(0, currentVal - entry.levelsRaised);
+            } else if (entry.targetType === 'skill') {
+                for (const statGroup in this.parent.skills) {
+                    if (this.parent.skills[statGroup][entry.targetKey]) {
+                        const currentVal = this.parent.skills[statGroup][entry.targetKey].value || 0;
+                        updateData[`system.skills.${statGroup}.${entry.targetKey}.value`] = Math.max(0, currentVal - entry.levelsRaised);
+                        break;
+                    }
+                }
+            } else if (entry.targetType === 'professionSkill') {
+                const profession = this.parent.parent.getList('profession')[0];
+                if (profession) {
+                    const currentVal = entry.path === 'definingSkill' 
+                        ? profession.system.definingSkill.level 
+                        : profession.system[entry.path][entry.index].level;
+                        
+                    const updatePath = entry.path === 'definingSkill'
+                        ? 'system.definingSkill.level'
+                        : `system.${entry.path}.${entry.index}.level`;
+                        
+                    await profession.update({ [updatePath]: Math.max(0, currentVal - entry.levelsRaised) });
+                }
+            }
+        }
         
-        this.parent.parent.update(updateData);
+        await this.parent.parent.update(updateData);
     }
 
     addCurrencyReward(label, amount) {

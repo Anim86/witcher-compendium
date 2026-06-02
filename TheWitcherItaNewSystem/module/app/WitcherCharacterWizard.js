@@ -1186,7 +1186,9 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         const profName = this.characterData.profession?.name?.toLowerCase() || "";
         if (profName.includes("mago")) {
             return { spells: 5, rituals: 1, hexes: 1 };
-        } else if (profName.includes("prete") || profName.includes("druido")) {
+        } else if (profName.includes("prete")) {
+            return { invocations: 2, rituals: 2, hexes: 2 };
+        } else if (profName.includes("druido")) {
             return { invocations: 2, rituals: 2 };
         }
         return {};

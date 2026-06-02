@@ -42,9 +42,19 @@ export default class WitcherCharacterSheet extends WitcherActorSheet {
             addIpReward: this._addIpReward,
             saveIpSpending: this._saveIpSpending,
             adjustCurrency: this.#adjustCurrency,
-            toggleBackgroundLock: this.#toggleBackgroundLock
+            toggleBackgroundLock: this.#toggleBackgroundLock,
+            rollSkill: this.#rollSkill
         }
     });
+
+    static async #rollSkill(event, target) {
+        event.preventDefault();
+        const skillName = target.dataset.skill;
+        if (!skillName) return;
+        const skillMapEntry = CONFIG.WITCHER.skillMap[skillName];
+        if (!skillMapEntry) return;
+        return this.document.rollSkillCheck(skillMapEntry);
+    }
 
     static PARTS = {
         sidebar: {

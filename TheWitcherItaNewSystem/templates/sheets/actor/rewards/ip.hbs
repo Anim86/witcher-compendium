@@ -39,13 +39,19 @@
                 <span class="date">{{#if this.date}}{{date this.date 'DD MMM YYYY'}}{{/if}} {{#if this.isMagic}}<span class="magic-tag">MAGIA</span>{{/if}}</span>
             </div>
             <div class="log-controls">
-                <div class="log-amount positive">
-                    +{{this.ip}} PM
+                <div class="log-amount {{#if this.isImprovement}}negative{{else}}positive{{/if}}">
+                    {{#unless this.isImprovement}}+{{/unless}}{{this.ip}} PM
                 </div>
                 {{#if ../isGM}}
                 <button class="btn-delete-log" data-action="deleteIpLog" data-index="{{@index}}" data-tooltip="{{localize 'WITCHER.Button.Delete'}}">
                     <i class="fas fa-trash"></i>
                 </button>
+                {{else}}
+                    {{#if this.isImprovement}}
+                    <button class="btn-delete-log" data-action="deleteIpLog" data-index="{{@index}}" data-tooltip="Rimborsa spesa">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                    {{/if}}
                 {{/if}}
             </div>
         </div>

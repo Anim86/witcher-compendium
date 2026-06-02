@@ -1,26 +1,34 @@
 {
-  "_id": "a698da87b2e74b64",
-  "name": "Schema: Elmo Nilfgaardiano",
-  "type": "diagrams",
-  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_elmo_nilfgaardiano.webp",
-  "system": {
-    "description": "<p>Uno schema dettagliato che illustra i procedimenti necessari per forgiare o fabbricare: Elmo Nilfgaardiano.</p>",
-    "weight": 0,
-    "cost": 0,
-    "components": [],
-    "difficulty": 24,
-    "time": "6 ore",
-    "sourcebook": "MB 81"
-  },
-  "effects": [],
-  "folder": null,
-  "sort": 0,
-  "ownership": {
-    "default": 0
-  },
-  "flags": {},
-  "_stats": {
-    "systemId": "TheWitcherItaNewSystem",
-    "coreVersion": 14
-  }
+    "_id": "a698da87b2e74b64",
+    "name": "Schema: Elmo Nilfgaardiano",
+    "type": "diagrams",
+    "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_elmo_nilfgaardiano.webp",
+    "system": {
+        "description": "<p>Schema per la fabbricazione di: Elmo Nilfgaardiano. Componenti richiesti: Acciaio Nero (x4), Cuoio Indurito (x1), Lino (x1), Olio Scurente (x2), Olio di Papero (x2), Ceneri (x10), Olio (x1). Difficoltà Manifattura: CD 24. Tempo: 6 ore</p>",
+        "weight": 0,
+        "cost": 537,
+        "components": [
+            "Acciaio Nero (x4)",
+            "Cuoio Indurito (x1)",
+            "Lino (x1)",
+            "Olio Scurente (x2)",
+            "Olio di Papero (x2)",
+            "Ceneri (x10)",
+            "Olio (x1)"
+        ],
+        "difficulty": 24,
+        "time": "6 ore",
+        "sourcebook": "MB 81"
+    },
+    "effects": [],
+    "folder": null,
+    "sort": 0,
+    "ownership": {
+        "default": 0
+    },
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
 }

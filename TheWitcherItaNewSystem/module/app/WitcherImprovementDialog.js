@@ -82,6 +82,7 @@ export default class WitcherImprovementDialog extends HandlebarsApplicationMixin
                 const skill = this.actor.system.skills[statGroup][skillKey];
                 return {
                     ...skill,
+                    stat: statGroup,
                     cost: CONFIG.WITCHER.skillMap[skillKey]?.cost || 1
                 };
             }
@@ -269,6 +270,24 @@ export default class WitcherImprovementDialog extends HandlebarsApplicationMixin
                 await this.actor.update(actorUpdates);
             }
         }
+        
+        // Log the improvement
+        const levelsRaised = this.targetLevel - this.currentLevel;
+        const logLabel = `${this._getTargetLabel()} +${levelsRaised}`;
+        const ipCost = -cost;
+        
+        let logTargetType = this.type;
+        let logPath = '';
+        let logIndex = '';
+        if (this.type === 'skill' && this.options.isProfession) {
+            logTargetType = 'professionSkill';
+            logPath = this.options.path;
+            logIndex = this.options.index;
+        }
+        
+        await this.actor.system.logs.addImprovementLog(
+            logLabel, ipCost, isMagicTarget, logTargetType, this.target, levelsRaised, logPath, logIndex
+        );
         ui.notifications.info(game.i18n.format("WITCHER.Progression.Success", { label: this._getTargetLabel() }));
         this.close();
     }

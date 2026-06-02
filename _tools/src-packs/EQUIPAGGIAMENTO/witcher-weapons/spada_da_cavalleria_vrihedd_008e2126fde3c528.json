@@ -26,12 +26,21 @@
             "crushingForce": false,
             "isMeteorite": false,
             "isNonLethal": false,
-            "effects": []
+            "effects": [
+                {
+                    "id": "0a0bd6e0e8d1a925",
+                    "name": "sanguinamento",
+                    "statusEffect": null,
+                    "percentage": 25,
+                    "varEffect": false
+                }
+            ]
         },
         "conceal": "G",
         "category": "sword",
         "range": "",
-        "reliabilityMax": 15
+        "reliabilityMax": 15,
+        "effects": "Sanguinamento (25%)"
     },
     "effects": [],
     "flags": {},

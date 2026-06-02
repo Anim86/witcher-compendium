@@ -1,0 +1,59 @@
+{
+  "_id": "5b2f8a7d9c1e4603",
+  "name": "Schema: Morso",
+  "type": "diagrams",
+  "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-schematics/schema_munizioni_normali.webp",
+  "system": {
+    "description": "<p>Schema per la fabbricazione di: Morso. Componenti richiesti: Legno (x7), Filo (x5), Ferro (x1), Polvere Zerrikaniana (x1). Difficolta Manifattura: CD 16. Investimento: 96.</p>",
+    "weight": 0,
+    "cost": 96,
+    "components": [
+      "Legno (x7)",
+      "Filo (x5)",
+      "Ferro (x1)",
+      "Polvere Zerrikaniana (x1)"
+    ],
+    "difficulty": 16,
+    "time": "N/A",
+    "sourcebook": "MB 254",
+    "type": "traps",
+    "level": "",
+    "isFormulae": false,
+    "craftingDC": 16,
+    "alchemyDC": 0,
+    "craftingTime": "N/A",
+    "investment": 96,
+    "learned": false,
+    "craftingComponents": [
+      {
+        "name": "Legno",
+        "quantity": 7
+      },
+      {
+        "name": "Filo",
+        "quantity": 5
+      },
+      {
+        "name": "Ferro",
+        "quantity": 1
+      },
+      {
+        "name": "Polvere Zerrikaniana",
+        "quantity": 1
+      }
+    ],
+    "resultQuantity": 1,
+    "associatedItemUuid": ""
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "_id": "7c1e9f2a4b6d8031",
+  "name": "Morso",
+  "type": "weapon",
+  "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
+  "system": {
+    "description": "<p>Trappola sperimentale. Chi entra nel raggio d'azione innesca il Morso: chiunque si trovi entro 4m subisce 7d6 danni in ogni parte del corpo.</p>",
+    "weight": 0,
+    "cost": 144,
+    "quantity": 1,
+    "type": {
+      "text": "Trappola",
+      "slashing": false,
+      "piercing": true,
+      "bludgeoning": false,
+      "elemental": false
+    },
+    "reliability": 0,
+    "reliabilityMax": 0,
+    "damage": "7d6",
+    "range": "4m",
+    "accuracy": 0,
+    "rateOfFire": 1,
+    "hands": "none",
+    "category": "bomb",
+    "effects": "N/A",
+    "sourcebook": "MB 254",
+    "damageProperties": {
+      "ablative": false,
+      "bleedChance": 0,
+      "improvedArmorPiercing": false,
+      "armorPiercing": false,
+      "bypassNaturalArmor": false,
+      "crushingForce": false,
+      "balanced": false,
+      "armorPacing": false,
+      "shieldDamage": false,
+      "meteorite": false,
+      "nonLethal": false,
+      "damageToAllLocations": true,
+      "effects": []
+    }
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "flags": {},
+  "_stats": {
+    "systemId": "TheWitcherItaNewSystem",
+    "coreVersion": 14
+  }
+}

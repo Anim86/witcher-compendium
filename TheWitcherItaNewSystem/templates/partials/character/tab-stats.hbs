@@ -12,27 +12,49 @@
             {{#each system.stats as |details stat|}}
                 {{#unless (eq (localize details.label) (localize 'WITCHER.Actor.Stat.Toxicity'))}}
                     <a class='stat-display char-stat-button stat-roll stat-card-{{stat}} {{#if (lookup @root.penalizedStats stat)}}penalty-active{{/if}}' data-stat='{{stat}}'
-                        data-tooltip="<div class='weight-breakdown'>
-                            <div class='stat-desc' style='font-size: 12px; color: #ccc; margin-bottom: 8px; font-style: italic; line-height: 1.3;'>{{localize (concat 'WITCHER.Actor.Stat.Desc.' stat)}}</div>
-                            {{#with (lookup @root.statBreakdowns stat) as |breakdown|}}
-                                {{#if breakdown.hasModifiers}}
-                                    <hr>
-                                    <div class='breakdown-title'>{{localize 'WITCHER.Resources.modifiers'}}</div>
-                                    {{#each breakdown.modifiers}}
-                                        <div class='breakdown-item'>
-                                            <span>{{name}}:</span>
-                                            <span>{{#if (gt value 0)}}+{{/if}}{{value}}</span>
-                                        </div>
-                                    {{/each}}
-                                    {{#each breakdown.dividers}}
-                                        <div class='breakdown-item ev'>
-                                            <span>{{name}}:</span>
-                                            <span>{{value}}</span>
-                                        </div>
-                                    {{/each}}
-                                {{/if}}
-                            {{/with}}
-                        </div>">
+                        data-tooltip="
+<div class='witcher-skill-tooltip'>
+    <header class='skill-tooltip-header'>
+        <h4>{{localize details.label}}</h4>
+    </header>
+    <div class='skill-tooltip-body'>
+        <div class='tooltip-stat-ref' style='justify-content: center; text-align: center; font-style: italic; font-weight: 400;'>
+            {{localize (concat 'WITCHER.Actor.Stat.Desc.' stat)}}
+        </div>
+        <div class='tooltip-math-section'>
+            <div class='tooltip-row'>
+                <span><i class='fa-solid fa-arrow-up-right-dots'></i> Valore Base</span>
+                <span>{{details.unmodifiedMax}}</span>
+            </div>
+            {{#with (lookup @root.statBreakdowns stat) as |breakdown|}}
+            {{#if breakdown.hasModifiers}}
+            <div class='tooltip-row'>
+                <span><i class='fa-solid fa-plus-minus'></i> Modificatori</span>
+                <span class='{{#if (gt details.totalModifiers 0)}}bonus-text{{else}}penalty-text{{/if}}'>{{#if (gt details.totalModifiers 0)}}+{{/if}}{{details.totalModifiers}}</span>
+            </div>
+            <div class='tooltip-breakdown-list'>
+                {{#each breakdown.modifiers}}
+                <div class='breakdown-item'>
+                    <span class='breakdown-source'>{{name}}</span>
+                    <span class='breakdown-val {{#if (gt value 0)}}bonus{{else}}penalty{{/if}}'>{{#if (gt value 0)}}+{{/if}}{{value}}</span>
+                </div>
+                {{/each}}
+                {{#each breakdown.dividers}}
+                <div class='breakdown-item'>
+                    <span class='breakdown-source'>{{name}} (Divisore)</span>
+                    <span class='breakdown-val penalty'>/ {{value}}</span>
+                </div>
+                {{/each}}
+            </div>
+            {{/if}}
+            {{/with}}
+            <div class='tooltip-row total-row'>
+                <span>Valore Attuale</span>
+                <span class='total-val'>{{details.value}}</span>
+            </div>
+        </div>
+    </div>
+</div>">
                         <div class="stat-icon">
                              {{#if (eq stat 'int')}}<i class="fa-solid fa-brain"></i>{{/if}}
                              {{#if (eq stat 'ref')}}<i class="fa-solid fa-person-running"></i>{{/if}}
@@ -49,9 +71,7 @@
                                 <span class="stat-name">{{localize details.label}}</span>
                                 <span class="current-val">
                                     {{details.value}}
-                                    {{#if (gt @root.system.general.improvementPoints 0)}}
-                                        <a class="spend-ip-stat" data-tooltip="{{localize 'WITCHER.Progression.SpendIP'}}"><i class="fa-solid fa-plus"></i></a>
-                                    {{/if}}
+                                    <span class="spend-ip-stat" data-tooltip="{{localize 'WITCHER.Progression.SpendIP'}}"><i class="fa-solid fa-plus"></i></span>
                                 </span>
                             </div>
                             <div class="stat-sub">
@@ -90,27 +110,49 @@
             {{#each system.derivedStats as |details derStat|}}
                 {{#unless (eq derStat 'liftLimit')}}
                     <div class='stat-display char-derived-button der-card-{{derStat}}' data-type='derStat' data-stat='{{derStat}}'
-                        data-tooltip="<div class='weight-breakdown'>
-                            <div class='stat-desc' style='font-size: 12px; color: #ccc; margin-bottom: 8px; font-style: italic; line-height: 1.3;'>{{#if (localize (concat 'WITCHER.Actor.DerStat.Desc.' derStat))}}{{localize (concat 'WITCHER.Actor.DerStat.Desc.' derStat)}}{{else}}{{localize details.label}}{{/if}}</div>
-                            {{#with (lookup @root.statBreakdowns derStat) as |breakdown|}}
-                                {{#if breakdown.hasModifiers}}
-                                    <hr>
-                                    <div class='breakdown-title'>{{localize 'WITCHER.Resources.modifiers'}}</div>
-                                    {{#each breakdown.modifiers}}
-                                        <div class='breakdown-item'>
-                                            <span>{{name}}:</span>
-                                            <span>{{#if (gt value 0)}}+{{/if}}{{value}}</span>
-                                        </div>
-                                    {{/each}}
-                                    {{#each breakdown.dividers}}
-                                        <div class='breakdown-item ev'>
-                                            <span>{{name}}:</span>
-                                            <span>{{value}}</span>
-                                        </div>
-                                    {{/each}}
-                                {{/if}}
-                            {{/with}}
-                        </div>">
+                        data-tooltip="
+<div class='witcher-skill-tooltip'>
+    <header class='skill-tooltip-header'>
+        <h4>{{localize details.label}}</h4>
+    </header>
+    <div class='skill-tooltip-body'>
+        <div class='tooltip-stat-ref' style='justify-content: center; text-align: center; font-style: italic; font-weight: 400;'>
+            {{#if (localize (concat 'WITCHER.Actor.DerStat.Desc.' derStat))}}{{localize (concat 'WITCHER.Actor.DerStat.Desc.' derStat)}}{{else}}{{localize details.label}}{{/if}}
+        </div>
+        <div class='tooltip-math-section'>
+            <div class='tooltip-row'>
+                <span><i class='fa-solid fa-arrow-up-right-dots'></i> Valore Base</span>
+                <span>{{details.max}}</span>
+            </div>
+            {{#with (lookup @root.statBreakdowns derStat) as |breakdown|}}
+            {{#if breakdown.hasModifiers}}
+            <div class='tooltip-row'>
+                <span><i class='fa-solid fa-plus-minus'></i> Modificatori</span>
+                <span class='{{#if (gt details.totalModifiers 0)}}bonus-text{{else}}penalty-text{{/if}}'>{{#if (gt details.totalModifiers 0)}}+{{/if}}{{details.totalModifiers}}</span>
+            </div>
+            <div class='tooltip-breakdown-list'>
+                {{#each breakdown.modifiers}}
+                <div class='breakdown-item'>
+                    <span class='breakdown-source'>{{name}}</span>
+                    <span class='breakdown-val {{#if (gt value 0)}}bonus{{else}}penalty{{/if}}'>{{#if (gt value 0)}}+{{/if}}{{value}}</span>
+                </div>
+                {{/each}}
+                {{#each breakdown.dividers}}
+                <div class='breakdown-item'>
+                    <span class='breakdown-source'>{{name}} (Divisore)</span>
+                    <span class='breakdown-val penalty'>/ {{value}}</span>
+                </div>
+                {{/each}}
+            </div>
+            {{/if}}
+            {{/with}}
+            <div class='tooltip-row total-row'>
+                <span>Valore Attuale</span>
+                <span class='total-val'>{{details.value}} / {{details.max}}</span>
+            </div>
+        </div>
+    </div>
+</div>">
                         <div class="stat-icon">
                             {{#if (eq derStat 'stun')}}<i class="fa-solid fa-face-dizzy"></i>{{/if}}
                             {{#if (eq derStat 'run')}}<i class="fa-solid fa-wind"></i>{{/if}}

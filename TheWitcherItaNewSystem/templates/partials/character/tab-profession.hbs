@@ -23,9 +23,7 @@
                             </select>
                             <input class="inline-edit profession-level" data-field="system.definingSkill.level"
                                 type="number" value="{{profession.system.definingSkill.level}}" placeholder="" />
-                            {{#if (gt @root.system.general.improvementPoints 0)}}
-                                <a class="spend-ip-profession" data-tooltip="{{localize 'WITCHER.Progression.SpendIP'}}"><i class="fa-solid fa-plus"></i></a>
-                            {{/if}}
+                            <span class="spend-ip-profession" data-tooltip="{{localize 'WITCHER.Progression.SpendIP'}}"><i class="fa-solid fa-plus"></i></span>
                             {{#unless (eq profession.system.definingSkill.stat "none")}}
                                 <a class="profession-roll"><i class="fas fa-dice-d20"></i></a>
                             {{/unless}}
@@ -56,7 +54,7 @@
                                 <input class="inline-edit profession-level" data-field="system.skillPath1.skill1.level"
                                     type="number" value="{{profession.system.skillPath1.skill1.level}}"
                                     placeholder="" />
-                                {{#if (gt @root.system.general.improvementPoints 0)}}
+                                {{#if (gt @root.system.improvementPoints 0)}}
                                     <a class="spend-ip-profession" data-tooltip="{{localize 'WITCHER.Progression.SpendIP'}}"><i class="fa-solid fa-plus"></i></a>
                                 {{/if}}
                                 {{#unless (eq profession.system.skillPath1.skill1.stat "none")}}
@@ -84,8 +82,8 @@
                                 <input class="inline-edit profession-level" data-field="system.skillPath1.skill2.level"
                                     type="number" value="{{profession.system.skillPath1.skill2.level}}"
                                     placeholder="" />
-                                {{#if (gt @root.system.general.improvementPoints 0)}}
-                                    <a class="spend-ip-profession" data-tooltip="{{localize 'WITCHER.Progression.SpendIP'}}"><i class="fa-solid fa-plus"></i></a>
+                                {{#if (gt @root.system.improvementPoints 0)}}
+                                    <span class="spend-ip-profession" data-tooltip="{{localize 'WITCHER.Progression.SpendIP'}}"><i class="fa-solid fa-plus"></i></span>
                                 {{/if}}
                                 {{#unless (eq profession.system.skillPath1.skill2.stat "none")}}
                                     <a class="profession-roll"><i class="fas fa-dice-d20"></i></a>
@@ -112,8 +110,8 @@
                                 <input class="inline-edit profession-level" data-field="system.skillPath1.skill3.level"
                                     type="number" value="{{profession.system.skillPath1.skill3.level}}"
                                     placeholder="" />
-                                {{#if (gt @root.system.general.improvementPoints 0)}}
-                                    <a class="spend-ip-profession" data-tooltip="{{localize 'WITCHER.Progression.SpendIP'}}"><i class="fa-solid fa-plus"></i></a>
+                                {{#if (gt @root.system.improvementPoints 0)}}
+                                    <span class="spend-ip-profession" data-tooltip="{{localize 'WITCHER.Progression.SpendIP'}}"><i class="fa-solid fa-plus"></i></span>
                                 {{/if}}
                                 {{#unless (eq profession.system.skillPath1.skill3.stat "none")}}
                                     <a class="profession-roll"><i class="fas fa-dice-d20"></i></a>
@@ -143,8 +141,8 @@
                                 <input class="inline-edit profession-level" data-field="system.skillPath2.skill1.level"
                                     type="number" value="{{profession.system.skillPath2.skill1.level}}"
                                     placeholder="" />
-                                {{#if (gt @root.system.general.improvementPoints 0)}}
-                                    <a class="spend-ip-profession" data-tooltip="{{localize 'WITCHER.Progression.SpendIP'}}"><i class="fa-solid fa-plus"></i></a>
+                                {{#if (gt @root.system.improvementPoints 0)}}
+                                    <span class="spend-ip-profession" data-tooltip="{{localize 'WITCHER.Progression.SpendIP'}}"><i class="fa-solid fa-plus"></i></span>
                                 {{/if}}
                                 {{#unless (eq profession.system.skillPath2.skill1.stat "none")}}
                                     <a class="profession-roll"><i class="fas fa-dice-d20"></i></a>
@@ -171,8 +169,8 @@
                                 <input class="inline-edit profession-level" data-field="system.skillPath2.skill2.level"
                                     type="number" value="{{profession.system.skillPath2.skill2.level}}"
                                     placeholder="" />
-                                {{#if (gt @root.system.general.improvementPoints 0)}}
-                                    <a class="spend-ip-profession" data-tooltip="{{localize 'WITCHER.Progression.SpendIP'}}"><i class="fa-solid fa-plus"></i></a>
+                                {{#if (gt @root.system.improvementPoints 0)}}
+                                    <span class="spend-ip-profession" data-tooltip="{{localize 'WITCHER.Progression.SpendIP'}}"><i class="fa-solid fa-plus"></i></span>
                                 {{/if}}
                                 {{#unless (eq profession.system.skillPath2.skill2.stat "none")}}
                                     <a class="profession-roll"><i class="fas fa-dice-d20"></i></a>
@@ -199,8 +197,8 @@
                                 <input class="inline-edit profession-level" data-field="system.skillPath2.skill3.level"
                                     type="number" value="{{profession.system.skillPath2.skill3.level}}"
                                     placeholder="" />
-                                {{#if (gt @root.system.general.improvementPoints 0)}}
-                                    <a class="spend-ip-profession" data-tooltip="{{localize 'WITCHER.Progression.SpendIP'}}"><i class="fa-solid fa-plus"></i></a>
+                                {{#if (gt @root.system.improvementPoints 0)}}
+                                    <span class="spend-ip-profession" data-tooltip="{{localize 'WITCHER.Progression.SpendIP'}}"><i class="fa-solid fa-plus"></i></span>
                                 {{/if}}
                                 {{#unless (eq profession.system.skillPath2.skill3.stat "none")}}
                                     <a class="profession-roll"><i class="fas fa-dice-d20"></i></a>
@@ -230,8 +228,8 @@
                                 <input class="inline-edit profession-level" data-field="system.skillPath3.skill1.level"
                                     type="number" value="{{profession.system.skillPath3.skill1.level}}"
                                     placeholder="" />
-                                {{#if (gt @root.system.general.improvementPoints 0)}}
-                                    <a class="spend-ip-profession" data-tooltip="{{localize 'WITCHER.Progression.SpendIP'}}"><i class="fa-solid fa-plus"></i></a>
+                                {{#if (gt @root.system.improvementPoints 0)}}
+                                    <span class="spend-ip-profession" data-tooltip="{{localize 'WITCHER.Progression.SpendIP'}}"><i class="fa-solid fa-plus"></i></span>
                                 {{/if}}
                                 {{#unless (eq profession.system.skillPath3.skill1.stat "none")}}
                                     <a class="profession-roll"><i class="fas fa-dice-d20"></i></a>
@@ -258,8 +256,8 @@
                                 <input class="inline-edit profession-level" data-field="system.skillPath3.skill2.level"
                                     type="number" value="{{profession.system.skillPath3.skill2.level}}"
                                     placeholder="" />
-                                {{#if (gt @root.system.general.improvementPoints 0)}}
-                                    <a class="spend-ip-profession" data-tooltip="{{localize 'WITCHER.Progression.SpendIP'}}"><i class="fa-solid fa-plus"></i></a>
+                                {{#if (gt @root.system.improvementPoints 0)}}
+                                    <span class="spend-ip-profession" data-tooltip="{{localize 'WITCHER.Progression.SpendIP'}}"><i class="fa-solid fa-plus"></i></span>
                                 {{/if}}
                                 {{#unless (eq profession.system.skillPath3.skill2.stat "none")}}
                                     <a class="profession-roll"><i class="fas fa-dice-d20"></i></a>
@@ -286,8 +284,8 @@
                                 <input class="inline-edit profession-level" data-field="system.skillPath3.skill3.level"
                                     type="number" value="{{profession.system.skillPath3.skill3.level}}"
                                     placeholder="" />
-                                {{#if (gt @root.system.general.improvementPoints 0)}}
-                                    <a class="spend-ip-profession" data-tooltip="{{localize 'WITCHER.Progression.SpendIP'}}"><i class="fa-solid fa-plus"></i></a>
+                                {{#if (gt @root.system.improvementPoints 0)}}
+                                    <span class="spend-ip-profession" data-tooltip="{{localize 'WITCHER.Progression.SpendIP'}}"><i class="fa-solid fa-plus"></i></span>
                                 {{/if}}
                                 {{#unless (eq profession.system.skillPath3.skill3.stat "none")}}
                                     <a class="profession-roll"><i class="fas fa-dice-d20"></i></a>
