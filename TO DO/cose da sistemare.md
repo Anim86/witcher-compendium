@@ -10,7 +10,7 @@ bug / correzioni da fare:
 
 Wizard:
 
-* \[ ] aggiungere sezione di scelta incantesimi con i limiti decisi dal regolamento
+* \[X] aggiungere sezione di scelta incantesimi con i limiti decisi dal regolamento
 * \[X] Nella sezione equipaggiamento bisogna mettere un blocco a procedere se si super il budget durante l'acquisto
 * \[X] Nella sezione equipaggiamento bisogna eliminare l'autoselezione degli oggetti a scelta
 * \[X] Bisogna mettere il roll delle corone di partenza
