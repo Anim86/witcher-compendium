@@ -183,6 +183,7 @@
             "Weapons": "Armi",
             "Armors": "Armature",
             "Valuables": "Oggetti di Valore",
+            "Potions": "Pozioni",
             "Diagrams": "Diagrammi",
             "Components": "Componenti",
             "Runes": "Rune",
@@ -333,20 +334,21 @@
                 "Punch": "Pugno",
                 "Kick": "Calcio",
                 "Desc": {
-                    "hp": "Punti Ferita totali del personaggio.",
-                    "sta": "Energia utilizzata per azioni fisiche e magie.",
-                    "stun": "Soglia per non svenire quando si subiscono danni.",
-                    "run": "Velocità di corsa espressa in metri per turno.",
-                    "leap": "Distanza di salto espressa in metri.",
-                    "enc": "Peso massimo che il personaggio può trasportare.",
-                    "rec": "Recupero di Resistenza per ogni azione di recupero.",
+                    "hp": "La salute di un personaggio rappresenta quanti punti di danno può subire prima di cadere a terra Moribondo e iniziare a dissanguarsi.",
+                    "sta": "La Resistenza rappresenta quanta energia il personaggio può consumare prima di essere esausto, sia per lo sforzo fisico che per l’utilizzo della magia, e quanto sia difficile metterlo fuori combattimento.",
+                    "stun": "Questo valore rappresenta quanto è difficile stordire il personaggio. Quando è costretto a effettuare un tiro salvezza, dovrà ottenere un valore inferiore a questo valore.",
+                    "run": "Rappresenta quanto è veloce un personaggio mentre corre. In un turno può muoversi di tanti metri quanto è il suo punteggio di Corsa.",
+                    "leap": "Rappresenta quanti metri il personaggio può saltare con una rincorsa e quanto può muoversi arrampicandosi.",
+                    "enc": "Rappresenta quanto peso riesce a trasportare il personaggio senza esserne rallentato.",
+                    "rec": "Indica quanti Punti Salute riesce a recuperare per ogni giorno di riposo a letto.",
                     "resolve": "Resistenza mentale e forza di volontà.",
                     "focus": "Capacità di concentrazione e precisione magica.",
-                    "vigor": "Capacità di gestire il Caos magico senza subire danni.",
+                    "vigor": "Indica quanti punti di Caos può convogliare contemporaneamente senza danneggiarsi.",
                     "shield": "Capacità di parata dello scudo equipaggiato.",
                     "woundTreshold": "Il valore di salute sotto cui il personaggio subisce ferite gravi e penalità.",
-                    "punch": "Danno base del pugno (Fisico + Bonus).",
-                    "kick": "Danno base del calcio (Fisico + Bonus)."
+                    "punch": "Quanti danni infligge con un pugno. Il danno inflitto è di tipo non-letale.",
+                    "kick": "Quanti danni infligge con un calcio. Il danno inflitto è di tipo non-letale.",
+                    "meleeBonus": "Più un combattente è forte fisicamente, più duro colpisce. Quando un personaggio attacca in mischia o con armi da lancio infligge danni bonus in base al suo Fisico."
                 }
             },
             "St": {
@@ -391,7 +393,9 @@
                 "first": "Primo",
                 "second": "Secondo",
                 "third": "Terzo",
-                "fourth": "Quarto"
+                "fourth": "Quarto",
+                "superior": "Focus Superiore",
+                "superiorShort": "Sup."
             },
             "Lifepath": {
                 "Bonus": "Bonus Percorso Vitale",
@@ -546,7 +550,13 @@
             "notEnoughSta": "Resistenza insufficiente.",
             "MagicCost": "Costi Magici",
             "ChooseFocus": "Usa un focus",
-            "ChooseExpandedFocus": "Usa un focus di Magia Espansa",
+            "ChooseExpandedFocus": "Secondo focus per Magia Ampliata",
+            "SuperiorFocus": "Focus Superiore",
+            "UseExpandedMagic": "Tenta Magia Ampliata (CD 16)",
+            "ExpandedMagic": "Magia Ampliata",
+            "ExpandedMagicCheck": "Magia Ampliata CD 16",
+            "ExpandedMagicSuccess": "Magia Ampliata riuscita: il costo in RES viene ridotto.",
+            "ExpandedMagicFailure": "Magia Ampliata fallita: si applica solo il focus normale.",
             "CreateTemplate": "Crea un template",
             "meters": "m",
             "Size": "Dimensione",
@@ -614,6 +624,8 @@
         "Item": {
             "Equipped": "Equipaggiato",
             "NotEquipped": "Non Equipaggiato",
+            "WornActive": "Indossato / attivo",
+            "NotWornActive": "Non indossato / non attivo",
             "sendToChat": "Invia in Chat",
             "ClickableImage": "Ingrandibile",
             "Short.Availability": "Disp.",
@@ -910,9 +922,8 @@
             "Hands": {
                 "title": "Mani",
                 "none": "Nessuna",
-                "left": "Sinistra",
-                "right": "Destra",
-                "both": "Entrambe"
+                "one": "Una mano",
+                "two": "Due mani"
             },
             "Short.Concealment": "Occult.",
             "Short.Enhancements": "POT",

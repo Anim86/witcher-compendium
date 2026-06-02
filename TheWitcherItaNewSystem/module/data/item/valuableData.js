@@ -14,6 +14,7 @@ export default class ValuableData extends CommonItemData {
             effect: new fields.StringField({ initial: '' }),
             conceal: new fields.StringField({ initial: '' }),
             quality: new fields.StringField({ initial: '' }),
+            equipped: new fields.BooleanField({ initial: false }),
 
             ...consumable()
         };

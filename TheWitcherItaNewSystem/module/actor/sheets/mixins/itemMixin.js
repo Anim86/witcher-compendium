@@ -416,7 +416,12 @@ export let itemMixin = {
             }
         }
 
-        await item.update({ 'system.equipped': !item.system.equipped });
+        const updateData = { 'system.equipped': !item.system.equipped };
+        if (item.type === 'valuable' && updateData['system.equipped']) {
+            updateData['system.isCarried'] = true;
+        }
+
+        await item.update(updateData);
     },
 
     async _onItemCarried(event) {
@@ -424,7 +429,12 @@ export let itemMixin = {
         let itemId = event.currentTarget.closest('.item').dataset.itemId;
         let item = this.actor.items.get(itemId);
 
-        await item.update({ 'system.isCarried': !item.system.isCarried });
+        const updateData = { 'system.isCarried': !item.system.isCarried };
+        if (item.system.isCarried && item.system.equipped) {
+            updateData['system.equipped'] = false;
+        }
+
+        await item.update(updateData);
     },
 
     async _onItemLearned(event) {

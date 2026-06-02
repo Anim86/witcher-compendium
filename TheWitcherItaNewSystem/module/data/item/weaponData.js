@@ -9,6 +9,24 @@ import DefenseProperties from './templates/combat/defensePropertiesData.js';
 
 const fields = foundry.data.fields;
 
+function normalizeWeaponHands(value) {
+    const normalized = String(value ?? 'none').trim().toLowerCase();
+    const hands = {
+        '': 'none',
+        0: 'none',
+        none: 'none',
+        1: 'one',
+        one: 'one',
+        left: 'one',
+        right: 'one',
+        2: 'two',
+        two: 'two',
+        both: 'two'
+    };
+
+    return hands[normalized] ?? value;
+}
+
 export default class WeaponData extends CommonItemData {
     static defineSchema() {
         const commonData = super.defineSchema();
@@ -150,6 +168,8 @@ export default class WeaponData extends CommonItemData {
 
     /** @inheritdoc */
     static migrateData(source) {
+        source.hands = normalizeWeaponHands(source.hands);
+
         if ('enhancementItems' in source) {
             source.enhancementItemIds = source.enhancementItemIds ?? [];
             source.enhancementItems.forEach(enhancement => {

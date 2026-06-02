@@ -40,7 +40,7 @@
     </div>
 
     <!-- Lists of Magic Items -->
-    <div class="magic-selection-container" style="max-height: 430px; overflow-y: auto; padding-right: 5px; scrollbar-width: thin;">
+    <div class="magic-selection-container" style="flex: 1; min-height: 0; overflow-y: auto; padding-right: 5px; scrollbar-width: thin;">
         
         {{#if magic.limits.spells}}
         <div class="magic-category-section" style="margin-bottom: 25px;">
@@ -51,12 +51,16 @@
                 {{#each magic.spells}}
                 <div class="magic-card selector-card {{#if selected}}selected{{/if}}" 
                      data-action="toggleMagicItem" data-item-id="{{id}}" data-item-type="spell"
-                     style="display: flex; align-items: center; gap: 10px; background: rgba(255, 255, 255, 0.03); border: 1px solid var(--wizard-border); border-radius: 6px; padding: 8px; cursor: pointer; position: relative; transition: all 0.2s;"
-                     title="{{system.effect}}">
+                     style="display: flex; align-items: center; gap: 10px; background: rgba(255, 255, 255, 0.03); border: 1px solid var(--wizard-border); border-radius: 6px; padding: 8px; cursor: pointer; position: relative; transition: all 0.2s;">
                     <img src="{{img}}" alt="{{name}}" style="width: 36px; height: 36px; border-radius: 4px; object-fit: cover;">
                     <div style="flex: 1; display: flex; flex-direction: column; overflow: hidden; white-space: nowrap;">
-                        <span style="font-weight: bold; color: var(--wizard-text-light); text-overflow: ellipsis; overflow: hidden;">{{name}}</span>
-                        <span style="font-size: 0.7rem; opacity: 0.6; color: var(--wizard-text-light);">{{system.source}} | STAMINA: {{system.stamina}}</span>
+                        <div style="display: flex; align-items: center; gap: 5px; overflow: hidden;">
+                            <span style="font-weight: bold; color: var(--wizard-text-light); text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">{{name}}</span>
+                            {{#if system.effect}}
+                            <i class="fa-solid fa-circle-info" data-tooltip="{{system.effect}}" style="color: var(--wizard-text-light, #999); font-size: 0.85em; cursor: help; flex-shrink: 0;"></i>
+                            {{/if}}
+                        </div>
+                        <span style="font-size: 0.7rem; opacity: 0.6; color: var(--wizard-text-light);">{{system.source}} | STAMINA: {{#if system.staminaIsVar}}{{localize "WITCHER.Spell.Short.Variable"}}{{else}}{{system.stamina}}{{/if}}</span>
                     </div>
                     {{#if selected}}
                     <div style="color: #a18cd1; font-size: 1.1rem;"><i class="fa-solid fa-circle-check"></i></div>
@@ -76,12 +80,16 @@
                 {{#each magic.invocations}}
                 <div class="magic-card selector-card {{#if selected}}selected{{/if}}" 
                      data-action="toggleMagicItem" data-item-id="{{id}}" data-item-type="invocation"
-                     style="display: flex; align-items: center; gap: 10px; background: rgba(255, 255, 255, 0.03); border: 1px solid var(--wizard-border); border-radius: 6px; padding: 8px; cursor: pointer; position: relative; transition: all 0.2s;"
-                     title="{{system.effect}}">
+                     style="display: flex; align-items: center; gap: 10px; background: rgba(255, 255, 255, 0.03); border: 1px solid var(--wizard-border); border-radius: 6px; padding: 8px; cursor: pointer; position: relative; transition: all 0.2s;">
                     <img src="{{img}}" alt="{{name}}" style="width: 36px; height: 36px; border-radius: 4px; object-fit: cover;">
                     <div style="flex: 1; display: flex; flex-direction: column; overflow: hidden; white-space: nowrap;">
-                        <span style="font-weight: bold; color: var(--wizard-text-light); text-overflow: ellipsis; overflow: hidden;">{{name}}</span>
-                        <span style="font-size: 0.7rem; opacity: 0.6; color: var(--wizard-text-light);">STAMINA: {{system.stamina}}</span>
+                        <div style="display: flex; align-items: center; gap: 5px; overflow: hidden;">
+                            <span style="font-weight: bold; color: var(--wizard-text-light); text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">{{name}}</span>
+                            {{#if system.effect}}
+                            <i class="fa-solid fa-circle-info" data-tooltip="{{system.effect}}" style="color: var(--wizard-text-light, #999); font-size: 0.85em; cursor: help; flex-shrink: 0;"></i>
+                            {{/if}}
+                        </div>
+                        <span style="font-size: 0.7rem; opacity: 0.6; color: var(--wizard-text-light);">STAMINA: {{#if system.staminaIsVar}}{{localize "WITCHER.Spell.Short.Variable"}}{{else}}{{system.stamina}}{{/if}}</span>
                     </div>
                     {{#if selected}}
                     <div style="color: #fbc2eb; font-size: 1.1rem;"><i class="fa-solid fa-circle-check"></i></div>
@@ -101,12 +109,16 @@
                 {{#each magic.rituals}}
                 <div class="magic-card selector-card {{#if selected}}selected{{/if}}" 
                      data-action="toggleMagicItem" data-item-id="{{id}}" data-item-type="ritual"
-                     style="display: flex; align-items: center; gap: 10px; background: rgba(255, 255, 255, 0.03); border: 1px solid var(--wizard-border); border-radius: 6px; padding: 8px; cursor: pointer; position: relative; transition: all 0.2s;"
-                     title="{{system.effect}}">
+                     style="display: flex; align-items: center; gap: 10px; background: rgba(255, 255, 255, 0.03); border: 1px solid var(--wizard-border); border-radius: 6px; padding: 8px; cursor: pointer; position: relative; transition: all 0.2s;">
                     <img src="{{img}}" alt="{{name}}" style="width: 36px; height: 36px; border-radius: 4px; object-fit: cover;">
                     <div style="flex: 1; display: flex; flex-direction: column; overflow: hidden; white-space: nowrap;">
-                        <span style="font-weight: bold; color: var(--wizard-text-light); text-overflow: ellipsis; overflow: hidden;">{{name}}</span>
-                        <span style="font-size: 0.7rem; opacity: 0.6; color: var(--wizard-text-light);">STAMINA: {{system.stamina}} | CD: {{system.difficultyCheck}}</span>
+                        <div style="display: flex; align-items: center; gap: 5px; overflow: hidden;">
+                            <span style="font-weight: bold; color: var(--wizard-text-light); text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">{{name}}</span>
+                            {{#if system.effect}}
+                            <i class="fa-solid fa-circle-info" data-tooltip="{{system.effect}}" style="color: var(--wizard-text-light, #999); font-size: 0.85em; cursor: help; flex-shrink: 0;"></i>
+                            {{/if}}
+                        </div>
+                        <span style="font-size: 0.7rem; opacity: 0.6; color: var(--wizard-text-light);">STAMINA: {{#if system.staminaIsVar}}{{localize "WITCHER.Spell.Short.Variable"}}{{else}}{{system.stamina}}{{/if}} | CD: {{system.difficultyCheck}}</span>
                     </div>
                     {{#if selected}}
                     <div style="color: #8fd3f4; font-size: 1.1rem;"><i class="fa-solid fa-circle-check"></i></div>
@@ -126,12 +138,16 @@
                 {{#each magic.hexes}}
                 <div class="magic-card selector-card {{#if selected}}selected{{/if}}" 
                      data-action="toggleMagicItem" data-item-id="{{id}}" data-item-type="hex"
-                     style="display: flex; align-items: center; gap: 10px; background: rgba(255, 255, 255, 0.03); border: 1px solid var(--wizard-border); border-radius: 6px; padding: 8px; cursor: pointer; position: relative; transition: all 0.2s;"
-                     title="{{system.effect}}">
+                     style="display: flex; align-items: center; gap: 10px; background: rgba(255, 255, 255, 0.03); border: 1px solid var(--wizard-border); border-radius: 6px; padding: 8px; cursor: pointer; position: relative; transition: all 0.2s;">
                     <img src="{{img}}" alt="{{name}}" style="width: 36px; height: 36px; border-radius: 4px; object-fit: cover;">
                     <div style="flex: 1; display: flex; flex-direction: column; overflow: hidden; white-space: nowrap;">
-                        <span style="font-weight: bold; color: var(--wizard-text-light); text-overflow: ellipsis; overflow: hidden;">{{name}}</span>
-                        <span style="font-size: 0.7rem; opacity: 0.6; color: var(--wizard-text-light);">STAMINA: {{system.stamina}}</span>
+                        <div style="display: flex; align-items: center; gap: 5px; overflow: hidden;">
+                            <span style="font-weight: bold; color: var(--wizard-text-light); text-overflow: ellipsis; overflow: hidden; white-space: nowrap;">{{name}}</span>
+                            {{#if system.effect}}
+                            <i class="fa-solid fa-circle-info" data-tooltip="{{system.effect}}" style="color: var(--wizard-text-light, #999); font-size: 0.85em; cursor: help; flex-shrink: 0;"></i>
+                            {{/if}}
+                        </div>
+                        <span style="font-size: 0.7rem; opacity: 0.6; color: var(--wizard-text-light);">STAMINA: {{#if system.staminaIsVar}}{{localize "WITCHER.Spell.Short.Variable"}}{{else}}{{system.stamina}}{{/if}}</span>
                     </div>
                     {{#if selected}}
                     <div style="color: #ff8177; font-size: 1.1rem;"><i class="fa-solid fa-circle-check"></i></div>

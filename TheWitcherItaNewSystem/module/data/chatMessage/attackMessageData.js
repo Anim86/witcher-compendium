@@ -21,11 +21,12 @@ export default class AttackMessageData extends BaseMessageData {
             attacker: new fields.DocumentUUIDField(),
             attack: new fields.SchemaField(attackData()),
             ...defenseOptions(),
+            attackRollBonus: new fields.NumberField({ initial: 0 }),
             damage: new fields.SchemaField(damageData())
         };
     }
 
     get attackRoll() {
-        return this.rollTotal;
+        return this.rollTotal + (Number(this.attackRollBonus) || 0);
     }
 }

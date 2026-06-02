@@ -2,12 +2,17 @@
     "name": "Maledizione Mostruosa",
     "type": "hex",
     "system": {
-        "danger": "Media",
+        "danger": "medium",
         "stamina": 0,
         "liftRequirement": "Sofferenza Tangibile",
         "description": "<p>La Maledizione Mostruosa fa apparire la vittima come un mostro a chi la osserva. Pur restando umanoide, il suo volto prenderà le sembianze di un animale scelto a caso.</p><p>Tirare 1d10 per determinare le sembianze: 1-2 Orso, 3-4 Cinghiale, 5-6 Uccello, 7-8 Serpente, 9-10 Insetto. La posizione sociale della vittima diventa Odiato e Temuto, a prescindere da quella originaria. Non è, però, un vero mostro e non subisce danni dall'argento; appare tale solo agli occhi di chi fallisce una prova d'Istruzione con CD 18.</p>",
         "sourcebook": "MB 230",
-        "class": "Curses"
+        "class": "Curses",
+        "effect": "<p>La Maledizione Mostruosa fa apparire la vittima come un mostro a chi la osserva. Pur restando umanoide, il suo volto prenderà le sembianze di un animale scelto a caso.</p><p>Tirare 1d10 per determinare le sembianze: 1-2 Orso, 3-4 Cinghiale, 5-6 Uccello, 7-8 Serpente, 9-10 Insetto. La posizione sociale della vittima diventa Odiato e Temuto, a prescindere da quella originaria. Non è, però, un vero mostro e non subisce danni dall'argento; appare tale solo agli occhi di chi fallisce una prova d'Istruzione con CD 18.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "defenseOptions": []
     },
     "img": "modules/witcher-compendium/assets/MAGIA/witcher-curses/maledizione_mostruosa.webp",
     "effects": [],

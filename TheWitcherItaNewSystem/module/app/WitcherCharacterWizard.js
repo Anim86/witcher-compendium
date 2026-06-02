@@ -43,13 +43,15 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         this.gearCategoryVisibility = {
             weapons: false,
             armor: false,
-            equipment: false
+            equipment: false,
+            potions: false
         };
 
         this.gearFilterText = {
             weapons: "",
             armor: "",
-            equipment: ""
+            equipment: "",
+            potions: ""
         };
 
         this.startingGoldRolled = false;
@@ -120,7 +122,8 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         rollAllSkills: function(event, target) { this._rollAllSkills(event, target); },
         rollStartingGold: function(event, target) { this._rollStartingGold(event, target); },
         toggleMagicItem: function(event, target) { this._toggleMagicItem(event, target); },
-        rollAllMagic: function(event, target) { this._rollAllMagic(event, target); }
+        rollAllMagic: function(event, target) { this._rollAllMagic(event, target); },
+        viewItemSheet: function(event, target) { this._viewItemSheet(event, target); }
     };
 
     static PARTS = {
@@ -231,6 +234,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 const obj = i.toObject ? i.toObject() : i;
                 obj._id = obj._id || obj.id || i.id;
                 obj.id = obj._id;
+                obj.uuid = i.uuid || obj.uuid;
                 if (obj.system && (obj.system.reliability === null || obj.system.reliability === undefined)) {
                     obj.system.reliability = 0;
                 }
@@ -257,6 +261,8 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 this.gear = gearPack ? await gearPack.getDocuments() : [];
                 const specialPack = game.packs.get("witcher-compendium.witcher-special");
                 this.special = specialPack ? await specialPack.getDocuments() : [];
+                const potionsPack = game.packs.get("witcher-compendium.witcher-potions");
+                this.potions = potionsPack ? await potionsPack.getDocuments() : [];
             }
             
             // 2.1 Profession Gear Logic
@@ -266,11 +272,13 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             let professionGearRemaining = 0;
 
             if (gearConfig) {
-                const searchPacks = [...(this.weapons || []), ...(this.armor || []), ...(this.gear || []), ...(this.special || [])];
+                const searchPacks = [...(this.weapons || []), ...(this.armor || []), ...(this.gear || []), ...(this.special || []), ...(this.potions || [])];
                 
                 // Helper to find item by names (fuzzy or exact)
                 const findItem = (name) => {
                     const cleanName = name.toLowerCase().replace(/[^a-z0-9]/g, '');
+                    const exactMatch = searchPacks.find(i => i.name.toLowerCase().replace(/[^a-z0-9]/g, '') === cleanName);
+                    if (exactMatch) return exactMatch;
                     return searchPacks.find(i => {
                         const iName = i.name.toLowerCase().replace(/[^a-z0-9]/g, '');
                         return iName.includes(cleanName);
@@ -589,9 +597,10 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 bardLanguagesRemaining: bardLanguagesRemaining,
                 isBardo: isBardo || isMercante,
                 allGear: {
-                    weapons: (this.weapons || []).filter(i => (i.system?.cost || 0) > 0).map(sanitizeItem),
-                    armor: (this.armor || []).filter(i => (i.system?.cost || 0) > 0).map(sanitizeItem),
-                    equipment: (this.gear || []).filter(i => (i.system?.cost || 0) > 0).map(sanitizeItem)
+                    weapons: (this.weapons || []).filter(i => (i.system?.cost || 0) > 0).map(sanitizeItem).sort((a, b) => a.name.localeCompare(b.name, "it", { sensitivity: "base" })),
+                    armor: (this.armor || []).filter(i => (i.system?.cost || 0) > 0).map(sanitizeItem).sort((a, b) => a.name.localeCompare(b.name, "it", { sensitivity: "base" })),
+                    equipment: (this.gear || []).filter(i => (i.system?.cost || 0) > 0).map(sanitizeItem).sort((a, b) => a.name.localeCompare(b.name, "it", { sensitivity: "base" })),
+                    potions: (this.potions || []).filter(i => (i.system?.cost || 0) > 0).map(sanitizeItem).sort((a, b) => a.name.localeCompare(b.name, "it", { sensitivity: "base" }))
                 },
                 gearCategoryVisibility: this.gearCategoryVisibility,
                 gearFilterText: this.gearFilterText,
@@ -682,7 +691,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         const profName = this.characterData.profession?.name;
         const gearConfig = this.characterData.profession?.system?.initialGear;
         if (gearConfig) {
-            const searchPacks = [...(this.weapons || []), ...(this.armor || []), ...(this.gear || []), ...(this.special || [])];
+            const searchPacks = [...(this.weapons || []), ...(this.armor || []), ...(this.gear || []), ...(this.special || []), ...(this.potions || [])];
             const findItem = (nameOrId) => searchPacks.find(i => i.id === nameOrId || i.name === nameOrId);
             
             for (const nameObj of (gearConfig.always || [])) {
@@ -1022,7 +1031,8 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
                 cost: cost,
                 isDifficult: cost === 2,
                 isNativeLanguage: info.isNativeLanguage,
-                attributeLabel: info.attributeLabel
+                attributeLabel: info.attributeLabel,
+                description: skill.system?.description || ""
             };
         }).filter(s => s !== null);
 
@@ -1271,6 +1281,38 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             return false;
         }
 
+        // Validate leaving Stats step
+        if (currentType === "stats" && step > this.step) {
+            const statsTotal = Object.values(this.characterData.stats).reduce((a, b) => a + Number(b), 0);
+            const statsRemaining = 60 - statsTotal;
+
+            if (statsRemaining !== 0) {
+                ui.notifications.warn(statsRemaining > 0 
+                    ? `Devi spendere tutti i punti caratteristica (${statsRemaining} rimanenti).` 
+                    : `Hai speso troppi punti caratteristica (${Math.abs(statsRemaining)} in eccesso).`);
+                return false;
+            }
+        }
+
+        // Validate leaving Skills step
+        if (currentType === "skills" && step > this.step) {
+            const profPts = this._calculateSkillPoints("profession");
+            const pickPts = this._calculateSkillPoints("pickup");
+
+            if (profPts !== 0) {
+                ui.notifications.warn(profPts > 0 
+                    ? `Devi spendere tutti i punti abilità di professione (${profPts} rimanenti).` 
+                    : `Hai speso troppi punti abilità di professione (${Math.abs(profPts)} in eccesso).`);
+                return false;
+            }
+            if (pickPts !== 0) {
+                ui.notifications.warn(pickPts > 0 
+                    ? `Devi spendere tutti i punti abilità generiche (${pickPts} rimanenti).` 
+                    : `Hai speso troppi punti abilità generiche (${Math.abs(pickPts)} in eccesso).`);
+                return false;
+            }
+        }
+
         // Validate leaving Magic step
         if (currentType === "magic" && step > this.step) {
             const limits = this._getMagicLimits();
@@ -1299,6 +1341,23 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             }
         }
 
+        // Validate leaving Gear step
+        if (currentType === "gear" && step > this.step) {
+            if (!this.startingGoldRolled && this.characterData.profession) {
+                ui.notifications.warn("Devi prima tirare per le corone iniziali.");
+                return false;
+            }
+
+            const gearConfig = this.characterData.profession?.system?.initialGear;
+            if (gearConfig) {
+                const selectedCount = this.characterData.selectedProfessionGear.length;
+                const requiredCount = gearConfig.choose || 0;
+                if (selectedCount < requiredCount) {
+                    ui.notifications.warn(`Devi selezionare tutti gli oggetti della dotazione di professione (${requiredCount - selectedCount} rimanenti).`);
+                    return false;
+                }
+            }
+        }
         // Validate leaving Gear step or entering Finish step
         if (targetType === "finish" && this._isOverBudget(false)) {
             ui.notifications.warn("Non puoi proseguire: sei fuori budget per l'equipaggiamento!");
@@ -1666,7 +1725,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             return;
         }
 
-        const searchPacks = [...(this.weapons || []), ...(this.armor || []), ...(this.gear || []), ...(this.special || [])];
+        const searchPacks = [...(this.weapons || []), ...(this.armor || []), ...(this.gear || []), ...(this.special || []), ...(this.potions || [])];
         const findItem = (name) => {
             const cleanName = name.toLowerCase().replace(/[^a-z0-9]/g, '');
             return searchPacks.find(i => i.name.toLowerCase().replace(/[^a-z0-9]/g, '').includes(cleanName));
@@ -2410,6 +2469,16 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         }, 100);
     }
 
+    async _viewItemSheet(event, target) {
+        event.stopPropagation();
+        const uuid = target.dataset.uuid;
+        if (!uuid) return;
+        const item = await fromUuid(uuid);
+        if (item) {
+            item.sheet.render(true);
+        }
+    }
+
     _toggleGear(event, target) {
         const id = target.dataset.itemId;
         const type = target.dataset.itemType;
@@ -2417,7 +2486,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         if (idx > -1) {
             this.characterData.gear.splice(idx, 1);
         } else {
-            const src = type === "weapon" ? this.weapons : (type === "armor" ? this.armor : this.gear);
+            const src = type === "weapon" ? this.weapons : (type === "armor" ? this.armor : (type === "potions" ? this.potions : this.gear));
             const item = src.find(i => i.id === id || i._id === id);
             if (item) {
                 const cost = Number(item.system?.cost?.value || item.system?.cost || 0);
@@ -2805,7 +2874,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         const profName = this.characterData.profession?.name;
         const gearConfig = this.characterData.profession?.system?.initialGear;
         if (gearConfig) {
-            const searchPacks = [...(this.weapons || []), ...(this.armor || []), ...(this.gear || []), ...(this.special || [])];
+            const searchPacks = [...(this.weapons || []), ...(this.armor || []), ...(this.gear || []), ...(this.special || []), ...(this.potions || [])];
             const findItem = (nameOrId) => {
                 return searchPacks.find(i => i.id === nameOrId || i.name === nameOrId);
             };

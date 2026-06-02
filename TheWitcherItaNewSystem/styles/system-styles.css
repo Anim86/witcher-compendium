@@ -241,11 +241,19 @@ input.weight-data {
     .focus-item {
         display: flex;
         gap: 5px;
+        align-items: center;
     }
 
     input.focus-value {
         width: 5ch;
         text-align: center;
+    }
+
+    .focus-superior {
+        display: inline-flex;
+        align-items: center;
+        gap: 3px;
+        white-space: nowrap;
     }
 }
 

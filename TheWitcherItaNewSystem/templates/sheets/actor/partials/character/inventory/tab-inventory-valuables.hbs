@@ -29,6 +29,13 @@
                             {{/if}}">
                                 <i class="{{#if valuable.system.isCarried}}fa-solid{{else}}fa-regular{{/if}} fa-hand"></i>
                             </a>
+                            <a class="item-equip {{#if valuable.system.equipped}}equipped{{/if}}" data-tooltip="{{#if valuable.system.equipped}}
+                                {{localize 'WITCHER.Item.WornActive'}}
+                            {{else}}
+                                {{localize 'WITCHER.Item.NotWornActive'}}
+                            {{/if}}">
+                                <i class="{{#if valuable.system.equipped}}fa-solid{{else}}fa-regular{{/if}} fa-gem"></i>
+                            </a>
                         </span>
                     </div>
                 </div>

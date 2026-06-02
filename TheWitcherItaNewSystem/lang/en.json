@@ -149,6 +149,7 @@
             "Weapons": "Weapons",
             "Armors": "Armors",
             "Valuables": "Valuables",
+            "Potions": "Potions",
             "Diagrams": "Diagrams",
             "Components": "Components",
             "Runes": "Runes",
@@ -331,7 +332,9 @@
                 "first": "First Focus",
                 "second": "Second Focus",
                 "third": "Third Focus",
-                "fourth": "Fourth Focus"
+                "fourth": "Fourth Focus",
+                "superior": "Superior Focus",
+                "superiorShort": "Sup."
             },
             "Lifepath": {
                 "Bonus": "Lifepath Bonus",
@@ -480,7 +483,13 @@
             "notEnoughSta": "Not enough stamina.",
             "MagicCost": "Magic Costs",
             "ChooseFocus": "Use a focus",
-            "ChooseExpandedFocus": "Use Expanded Magic focus",
+            "ChooseExpandedFocus": "Second focus for Expanded Magic",
+            "SuperiorFocus": "Superior Focus",
+            "UseExpandedMagic": "Attempt Expanded Magic (DC 16)",
+            "ExpandedMagic": "Expanded Magic",
+            "ExpandedMagicCheck": "Expanded Magic DC 16",
+            "ExpandedMagicSuccess": "Expanded Magic succeeds: the STA cost is reduced.",
+            "ExpandedMagicFailure": "Expanded Magic fails: only the normal focus applies.",
             "CreateTemplate": "Create a Template",
             "meters": "m",
             "Size": "Size",
@@ -549,6 +558,8 @@
         "Item": {
             "Equipped": "Equipped",
             "NotEquipped": "Not Equipped",
+            "WornActive": "Worn / active",
+            "NotWornActive": "Not worn / inactive",
             "sendToChat": "Send to Chat",
             "ClickableImage": "Zoomable",
             "Short.Availability": "Avail.",
@@ -836,9 +847,8 @@
             "Hands": {
                 "title": "Hands",
                 "none": "None",
-                "left": "Left",
-                "right": "Right",
-                "both": "Both"
+                "one": "One hand",
+                "two": "Two hands"
             },
             "Short.Concealment": "Conc.",
             "Short.Enhancements": "EN",

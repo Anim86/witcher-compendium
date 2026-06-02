@@ -73,15 +73,34 @@
             <div class="form-group">
                 <label>{{localize "WITCHER.Spell.ChooseFocus"}}</label>
                 <div class="select-wrapper">
-                    <select name="focus">{{selectOptions focusOptions }}</select>
+                    <select name="focus">
+                        {{#each focusOptions as |focusOption|}}
+                            <option value="{{@key}}" data-value="{{focusOption.value}}" data-superior="{{focusOption.superior}}">{{focusOption.label}}</option>
+                        {{/each}}
+                    </select>
                 </div>
+            </div>
+            {{#if hasExpandedMagicSkill}}
+            <div class="form-group toggle-wrapper-row">
+                <label class="toggle-row-label">
+                    <span class="toggle-title">
+                        <i class="fas fa-hat-wizard"></i> {{localize "WITCHER.Spell.UseExpandedMagic"}}
+                    </span>
+                    <input type="checkbox" name="useExpandedFocus" class="styled-checkbox">
+                </label>
             </div>
             <div class="form-group">
                 <label>{{localize "WITCHER.Spell.ChooseExpandedFocus"}}</label>
                 <div class="select-wrapper">
-                    <select name="secondFocus">{{selectOptions focusOptions blank='' }}</select>
+                    <select name="secondFocus">
+                        <option value="" data-superior="false"></option>
+                        {{#each focusOptions as |focusOption|}}
+                            <option value="{{@key}}" data-value="{{focusOption.value}}" data-superior="{{focusOption.superior}}">{{focusOption.label}}</option>
+                        {{/each}}
+                    </select>
                 </div>
             </div>
+            {{/if}}
             {{/if}}
         </section>
 

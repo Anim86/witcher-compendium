@@ -11,8 +11,8 @@ export default class WitcherItemSheet extends HandlebarsApplicationMixin(ItemShe
             resizable: true
         },
         position: {
-            width: 520,
-            height: 480
+            width: 650,
+            height: 520
         },
         classes: ['witcher', 'sheet', 'item'],
         form: {

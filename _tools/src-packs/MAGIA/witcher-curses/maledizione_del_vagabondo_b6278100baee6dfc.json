@@ -2,12 +2,17 @@
     "name": "Maledizione del Vagabondo",
     "type": "hex",
     "system": {
-        "danger": "Alta",
+        "danger": "high",
         "stamina": 0,
         "liftRequirement": "Sofferenza Estrema",
         "description": "<p>La Maledizione del Vagabondo è una della più crudeli. Pur non causando danni diretti, toglie alla vittima amici, compagni e famigliari.</p><p>Lentamente, le persone attorno alla vittima verranno allontanate da incomprensioni, litigi, eventi naturali, rapimenti o (se resistono oltre un mese) il fato sembrerà cospirare attivamente per ucciderle.</p>",
         "sourcebook": "MB 230",
-        "class": "Curses"
+        "class": "Curses",
+        "effect": "<p>La Maledizione del Vagabondo è una della più crudeli. Pur non causando danni diretti, toglie alla vittima amici, compagni e famigliari.</p><p>Lentamente, le persone attorno alla vittima verranno allontanate da incomprensioni, litigi, eventi naturali, rapimenti o (se resistono oltre un mese) il fato sembrerà cospirare attivamente per ucciderle.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "defenseOptions": []
     },
     "img": "modules/witcher-compendium/assets/MAGIA/witcher-curses/maledizione_del_vagabondo.webp",
     "effects": [],

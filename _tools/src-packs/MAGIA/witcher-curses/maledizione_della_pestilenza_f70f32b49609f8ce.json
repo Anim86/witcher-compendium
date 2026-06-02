@@ -2,12 +2,17 @@
     "name": "Maledizione della Pestilenza",
     "type": "hex",
     "system": {
-        "danger": "Alta",
+        "danger": "high",
         "stamina": 0,
         "liftRequirement": "Sofferenza Estrema",
         "description": "<p>La Maledizione della Pestilenza trasforma la vittima nel portatore sano di una pericolosa malattia. La vittima ne è immune, ma chiunque la tocchi e fallisca una prova di Tempra con CD 18 sarà infettato.</p><p>Se la vittima resta in un edificio per più di tre giorni, tutti gli altri occupanti dovranno effettuare una prova di Tempra con CD 16. Se resta in città per oltre una settimana, tutti i cittadini dovranno superare una prova di Tempra con CD 14.</p>",
         "sourcebook": "MB 230",
-        "class": "Curses"
+        "class": "Curses",
+        "effect": "<p>La Maledizione della Pestilenza trasforma la vittima nel portatore sano di una pericolosa malattia. La vittima ne è immune, ma chiunque la tocchi e fallisca una prova di Tempra con CD 18 sarà infettato.</p><p>Se la vittima resta in un edificio per più di tre giorni, tutti gli altri occupanti dovranno effettuare una prova di Tempra con CD 16. Se resta in città per oltre una settimana, tutti i cittadini dovranno superare una prova di Tempra con CD 14.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "defenseOptions": []
     },
     "img": "modules/witcher-compendium/assets/MAGIA/witcher-curses/maledizione_della_pestilenza.webp",
     "effects": [],

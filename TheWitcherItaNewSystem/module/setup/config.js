@@ -697,9 +697,8 @@ WITCHER.weapon = {
     },
     hands: {
         none: 'WITCHER.Weapon.Hands.none',
-        left: 'WITCHER.Weapon.Hands.left',
-        right: 'WITCHER.Weapon.Hands.right',
-        both: 'WITCHER.Weapon.Hands.both'
+        one: 'WITCHER.Weapon.Hands.one',
+        two: 'WITCHER.Weapon.Hands.two'
     },
     attacks: {
         normal: {

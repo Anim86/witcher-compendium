@@ -14,6 +14,13 @@
         "damage": "5d6",
         "hands": 1,
         "effects": "Trapassare",
+        "type": {
+            "text": "",
+            "slashing": true,
+            "piercing": true,
+            "bludgeoning": false,
+            "elemental": false
+        },
         "category": "sword",
         "range": ""
     },

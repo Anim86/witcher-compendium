@@ -2,12 +2,17 @@
     "name": "Persecuzione",
     "type": "hex",
     "system": {
-        "danger": "Media",
+        "danger": "medium",
         "stamina": 0,
         "liftRequirement": "Sofferenza Tangibile",
         "description": "<p>La Persecuzione viene usata per maledire un'area. Gli spiriti di chi è stato vittima di un torto nella zona vengono evocati come spettri.</p><p>Quando la maledizione viene lanciata, vengono tirati 5d6 per determinare il numero di spettri. Se il luogo è particolarmente spaventoso, appaiono 2d6 aggiuntivi; se invece è molto pacifico, appaiono solo 2d6 spettri in totale. Queste creature restano nella zona finché non vengono uccise, ma risorgono ogni notte e attaccano chiunque entri nell'area.</p>",
         "sourcebook": "MB 230",
-        "class": "Curses"
+        "class": "Curses",
+        "effect": "<p>La Persecuzione viene usata per maledire un'area. Gli spiriti di chi è stato vittima di un torto nella zona vengono evocati come spettri.</p><p>Quando la maledizione viene lanciata, vengono tirati 5d6 per determinare il numero di spettri. Se il luogo è particolarmente spaventoso, appaiono 2d6 aggiuntivi; se invece è molto pacifico, appaiono solo 2d6 spettri in totale. Queste creature restano nella zona finché non vengono uccise, ma risorgono ogni notte e attaccano chiunque entri nell'area.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "defenseOptions": []
     },
     "img": "modules/witcher-compendium/assets/MAGIA/witcher-curses/persecuzione.webp",
     "effects": [],

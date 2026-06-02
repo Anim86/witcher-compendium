@@ -1365,10 +1365,12 @@ form.witcher-wizard .gear-item img {
     height: 64px !important;
     max-width: 64px !important;
     max-height: 64px !important;
-    object-fit: contain !important;
-    background: rgba(0, 0, 0, 0.05);
-    border-radius: 4px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    object-fit: cover !important;
+    background: transparent !important;
+    border-radius: 6px !important;
+    border: none !important;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4) !important;
+    margin-bottom: 5px;
 }
 
 .witcher-wizard .gear-item .name {
@@ -2153,15 +2155,20 @@ form.witcher-wizard .wizard-content {
 }
 
 .witcher-wizard .step-skills .ctrl-btn.delete {
-    background: #fff;
-    border: 1px solid #e63946;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    width: auto;
+    height: auto;
+    padding: 2px 4px;
     color: #e63946 !important;
 }
 
 .witcher-wizard .step-skills .ctrl-btn.delete:hover {
-    background: #e63946;
-    color: white !important;
-    border-color: #e63946;
+    background: transparent;
+    color: #a40000 !important;
+    border-color: transparent;
+    transform: scale(1.1);
 }
 
 .witcher-wizard .step-skills .skill-input {

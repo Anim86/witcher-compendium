@@ -36,6 +36,11 @@
                         <span class="name">{{name}}{{#if (gt quantity 1)}} (x{{quantity}}){{/if}}</span>
                         {{#if always}}<span class="badge-fixed">Fisso</span>{{/if}}
                     </span>
+                    {{#if uuid}}
+                    <button type="button" class="gear-info-btn-mini" data-action="viewItemSheet" data-uuid="{{uuid}}" title="Vedi scheda" style="margin-left:auto; background:none; border:none; color:var(--wizard-text-light, #999); cursor:pointer; padding:5px; font-size:14px; transition: color 0.2s;">
+                        <i class="fa-solid fa-circle-info"></i>
+                    </button>
+                    {{/if}}
                 </div>
                 {{/each}}
             </div>
@@ -86,6 +91,11 @@
                             <img src="{{img}}" alt="{{name}}">
                             <span class="name">{{name}}</span>
                             <span class="cost">{{#if system.cost.value}}{{system.cost.value}}{{else}}{{system.cost}}{{/if}} Corone</span>
+                            {{#if uuid}}
+                            <button type="button" class="gear-info-btn-mini" data-action="viewItemSheet" data-uuid="{{uuid}}" title="Vedi scheda" style="margin-left:auto; background:none; border:none; color:var(--wizard-text-light, #999); cursor:pointer; padding:5px; font-size:16px; transition: color 0.2s;">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </button>
+                            {{/if}}
                         </div>
                         {{/each}}
                     </div>
@@ -110,6 +120,11 @@
                             <img src="{{img}}" alt="{{name}}">
                             <span class="name">{{name}}</span>
                             <span class="cost">{{#if system.cost.value}}{{system.cost.value}}{{else}}{{system.cost}}{{/if}} Corone</span>
+                            {{#if uuid}}
+                            <button type="button" class="gear-info-btn-mini" data-action="viewItemSheet" data-uuid="{{uuid}}" title="Vedi scheda" style="margin-left:auto; background:none; border:none; color:var(--wizard-text-light, #999); cursor:pointer; padding:5px; font-size:16px; transition: color 0.2s;">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </button>
+                            {{/if}}
                         </div>
                         {{/each}}
                     </div>
@@ -134,6 +149,40 @@
                             <img src="{{img}}" alt="{{name}}">
                             <span class="name">{{name}}</span>
                             <span class="cost">{{#if system.cost.value}}{{system.cost.value}}{{else}}{{system.cost}}{{/if}} Corone</span>
+                            {{#if uuid}}
+                            <button type="button" class="gear-info-btn-mini" data-action="viewItemSheet" data-uuid="{{uuid}}" title="Vedi scheda" style="margin-left:auto; background:none; border:none; color:var(--wizard-text-light, #999); cursor:pointer; padding:5px; font-size:16px; transition: color 0.2s;">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </button>
+                            {{/if}}
+                        </div>
+                        {{/each}}
+                    </div>
+                </div>
+            </div>
+
+            <div class="gear-category" data-category="potions">
+                <div class="gear-category-header">
+                    <h3>{{localize "WITCHER.Loot.Potions"}}</h3>
+                    <button type="button" class="ctrl-btn gear-toggle-btn" data-action="toggleGearCategory" data-category="potions" aria-label="Apri chiudi pozioni">
+                        {{#if gearCategoryVisibility.potions}}−{{else}}+{{/if}}
+                    </button>
+                </div>
+                <div class="gear-category-body {{#unless gearCategoryVisibility.potions}}collapsed{{/unless}}">
+                    <div class="gear-filter">
+                        <input type="text" class="gear-list-filter" data-category="potions" placeholder="Filtra pozioni..." value="{{gearFilterText.potions}}">
+                    </div>
+                    <div class="gear-list">
+                        {{#each allGear.potions}}
+                        <div class="gear-item {{#if selected}}selected{{/if}}" 
+                             data-action="toggleGear" data-item-id="{{_id}}" data-item-type="potions">
+                            <img src="{{img}}" alt="{{name}}">
+                            <span class="name">{{name}}</span>
+                            <span class="cost">{{#if system.cost.value}}{{system.cost.value}}{{else}}{{system.cost}}{{/if}} Corone</span>
+                            {{#if uuid}}
+                            <button type="button" class="gear-info-btn-mini" data-action="viewItemSheet" data-uuid="{{uuid}}" title="Vedi scheda" style="margin-left:auto; background:none; border:none; color:var(--wizard-text-light, #999); cursor:pointer; padding:5px; font-size:16px; transition: color 0.2s;">
+                                <i class="fa-solid fa-circle-info"></i>
+                            </button>
+                            {{/if}}
                         </div>
                         {{/each}}
                     </div>

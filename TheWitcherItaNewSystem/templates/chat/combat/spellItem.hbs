@@ -1,5 +1,8 @@
 <h2><img src="{{spellItem.img}}" class="item-img" />{{spellItem.name}}</h2>
 <div><b>{{localize "WITCHER.Spell.StaCost"}}: </b>{{templateInfo.staCostDisplay}}</div>
+{{#if templateInfo.focusSuperiorBonus}}
+    <div><b>{{localize "WITCHER.Spell.SuperiorFocus"}}: </b>+{{templateInfo.focusSuperiorBonus}} {{localize "WITCHER.DC"}}</div>
+{{/if}}
 <div><b>{{localize "WITCHER.Spell.Element"}}: </b>{{localize templateInfo.spellSource }}</div>
 <div><b>{{localize "WITCHER.Spell.Effect"}}: </b>{{spellItem.system.effect}}</div>
 {{#if spellItem.system.range}}

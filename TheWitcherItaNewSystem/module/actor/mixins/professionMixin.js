@@ -260,7 +260,16 @@ export let professionMixin = {
         });
     },
 
-    async doProfessionSkillRoll(skill, { threshold, showResult } = { threshold: 0, showResult: true }) {
+    async doProfessionSkillRoll(
+        skill,
+        {
+            threshold = 0,
+            showResult = true,
+            thresholdDesc = '',
+            messageOnSuccess = '',
+            messageOnFailure = ''
+        } = {}
+    ) {
         let displayRollDetails = game.settings.get('TheWitcherItaNewSystem', 'displayRollsDetails');
         let stat = skill.stat;
         let level = skill.level || 0;
@@ -296,12 +305,15 @@ export let professionMixin = {
                 : `+${customMod}[${game.i18n.localize('WITCHER.Settings.Custom')}]`;
         }
 
-        let messageData = new ChatMessageData(this.actor, `<h2>${skill.skillName}</h2>${definition}`);
+        let messageData = new ChatMessageData(this, `<h2>${skill.skillName}</h2>${definition}`);
 
         let config = new RollConfig();
         config.showCrit = true;
         config.threshold = threshold;
         config.showResult = showResult;
+        config.thresholdDesc = thresholdDesc;
+        config.messageOnSuccess = messageOnSuccess;
+        config.messageOnFailure = messageOnFailure;
         return extendedRoll(rollFormula, messageData, config);
     },
 

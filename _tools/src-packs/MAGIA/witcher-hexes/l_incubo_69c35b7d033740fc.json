@@ -1,17 +1,61 @@
 {
-    "name": "L'Incubo",
     "_id": "69c35b7d033740fc",
-    "system": {
-        "description": "<p></p>",
-        "class": "hex",
-        "removal": "",
-        "danger": "low",
-        "cost": 0,
-        "sourcebook": "MB 123",
-        "stamina": 8
-    },
+    "name": "L'Incubo",
     "type": "hex",
     "img": "modules/witcher-compendium/assets/MAGIA/witcher-hexes/l_incubo.webp",
+    "system": {
+        "description": "<p>L'Incubo costringe la vittima a rivivere lo stesso terribile incubo. Ogni notte la vittima deve superare una prova di Resistere a Coercizioni con CD pari al tiro di Intessere Fatture dell'incantatore. Se ha successo, riesce ad avere una notte di sonno ininterrotto, ma comunque agitato. Se fallisce, non dorme quasi e non recupera RES o PS durante la notte. Se la vittima fallisce per tre notti di fila, dimezza la sua Resistenza e subisce un -2 a tutte le azioni finché non riesce a riposare una notte intera.</p>",
+        "quantity": "1",
+        "weight": 0,
+        "cost": 0,
+        "sourcebook": "MB 123",
+        "class": "hex",
+        "source": "",
+        "stamina": 8,
+        "staminaIsVar": false,
+        "effect": "L'Incubo costringe la vittima a rivivere lo stesso terribile incubo. Ogni notte la vittima deve superare una prova di Resistere a Coercizioni con CD pari al tiro di Intessere Fatture dell'incantatore. Se ha successo, riesce ad avere una notte di sonno ininterrotto, ma comunque agitato. Se fallisce, non dorme quasi e non recupera RES o PS durante la notte. Se la vittima fallisce per tre notti di fila, dimezza la sua Resistenza e subisce un -2 a tutte le azioni finché non riesce a riposare una notte intera.",
+        "liftRequirement": "La vittima deve avere 5 candele, un'unità di ossa di bestia e una di minerale luccicante. Nella notte della cerimonia, deve disporre le candele in circolo attorno a sé, collegate dalle ossa, e porsi il minerale luccicante sotto la testa. Se il soggetto riesce a dormire quella notte, sarà libero dalla fattura.",
+        "range": "N/A",
+        "duration": "N/A",
+        "defence": "",
+        "defenseOptions": [],
+        "damageProperties": {
+            "armorPiercing": false,
+            "improvedArmorPiercing": false,
+            "ablating": false,
+            "crushingForce": false,
+            "damageIsAblation": false,
+            "stun": 0,
+            "damageToAllLocations": false,
+            "bypassesWornArmor": false,
+            "bypassesNaturalArmor": false,
+            "defenseDifferenceMultiplier": false,
+            "defenseMultiplierCap": 5,
+            "variableDamage": false,
+            "effects": [],
+            "oilEffect": "",
+            "silverTrait": false,
+            "silverDamage": "",
+            "isMeteorite": false,
+            "isNonLethal": false
+        },
+        "regionProperties": {
+            "createRegionFromTemplate": false,
+            "behaviours": {
+                "tokenEnter": null,
+                "tokenTurnStart": null,
+                "tokenMoveWithin": null,
+                "tokenExit": null
+            }
+        },
+        "attackOptions": [
+            "spell"
+        ],
+        "spellAttackSkill": "hexweave",
+        "danger": "medium"
+    },
+    "effects": [],
+    "flags": {},
     "_stats": {
         "coreVersion": 14,
         "systemId": "TheWitcherItaNewSystem"

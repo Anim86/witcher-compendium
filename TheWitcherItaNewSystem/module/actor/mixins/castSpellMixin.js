@@ -76,40 +76,87 @@ export let castSpellMixin = {
         }
 
         let useFocus = false;
+        let expandedMagicSkill = this.findSkillWithName?.('Magia Ampliata')?.skill;
         let handlebarFocusOptions = {};
         if (this.system.focus1.value > 0) {
+            const focusSuperior = Boolean(this.system.focus1.superior);
             useFocus = true;
             handlebarFocusOptions.focus1 = {
                 value: this.system.focus1.value,
-                label: this.system.focus1.name + '(' + this.system.focus1.value + ')'
+                superior: focusSuperior,
+                label:
+                    this.system.focus1.name +
+                    '(' +
+                    this.system.focus1.value +
+                    ')' +
+                    (focusSuperior ? ` ${game.i18n.localize('WITCHER.Actor.focus.superiorShort')}` : '')
             };
         }
         if (this.system.focus2.value > 0) {
+            const focusSuperior = Boolean(this.system.focus2.superior);
             useFocus = true;
             handlebarFocusOptions.focus2 = {
                 value: this.system.focus2.value,
-                label: this.system.focus2.name + '(' + this.system.focus2.value + ')'
+                superior: focusSuperior,
+                label:
+                    this.system.focus2.name +
+                    '(' +
+                    this.system.focus2.value +
+                    ')' +
+                    (focusSuperior ? ` ${game.i18n.localize('WITCHER.Actor.focus.superiorShort')}` : '')
             };
         }
         if (this.system.focus3.value > 0) {
+            const focusSuperior = Boolean(this.system.focus3.superior);
             useFocus = true;
             handlebarFocusOptions.focus3 = {
                 value: this.system.focus3.value,
-                label: this.system.focus3.name + '(' + this.system.focus3.value + ')'
+                superior: focusSuperior,
+                label:
+                    this.system.focus3.name +
+                    '(' +
+                    this.system.focus3.value +
+                    ')' +
+                    (focusSuperior ? ` ${game.i18n.localize('WITCHER.Actor.focus.superiorShort')}` : '')
             };
         }
         if (this.system.focus4.value > 0) {
+            const focusSuperior = Boolean(this.system.focus4.superior);
             useFocus = true;
             handlebarFocusOptions.focus4 = {
                 value: this.system.focus4.value,
-                label: this.system.focus4.name + '(' + this.system.focus4.value + ')'
+                superior: focusSuperior,
+                label:
+                    this.system.focus4.name +
+                    '(' +
+                    this.system.focus4.value +
+                    ')' +
+                    (focusSuperior ? ` ${game.i18n.localize('WITCHER.Actor.focus.superiorShort')}` : '')
             };
         }
+
+        this.items?.forEach(item => {
+            const itemFocus = this._getEquippedItemFocusInfo(item);
+            if (!itemFocus) return;
+
+            useFocus = true;
+            handlebarFocusOptions[`item-${item.id}`] = {
+                value: itemFocus.value,
+                superior: itemFocus.superior,
+                label:
+                    item.name +
+                    '(' +
+                    itemFocus.value +
+                    ')' +
+                    (itemFocus.superior ? ` ${game.i18n.localize('WITCHER.Actor.focus.superiorShort')}` : '')
+            };
+        });
 
         let data = {
             causeDamage: spellItem.system.causeDamages,
             staminaIsVar: spellItem.system.staminaIsVar,
             useFocus: useFocus,
+            hasExpandedMagicSkill: Boolean(expandedMagicSkill),
             focusOptions: handlebarFocusOptions,
             item: spellItem
         };
@@ -129,12 +176,20 @@ export let castSpellMixin = {
                 modal: true,
                 ok: {
                     callback: (event, button, dialog) => {
+                        const focusSelect = button.form.elements.focus;
+                        const secondFocusSelect = button.form.elements.secondFocus;
+
                         return {
                             staCostTotal: button.form.elements.staCost?.value ?? spellItem.system.stamina,
                             customModifier: button.form.elements.customMod.value,
                             isExtraAttack: button.form.elements.isExtraAttack.checked,
-                            focusValue: button.form.elements.focus?.value ?? 0,
-                            secondFocusValue: button.form.elements.secondFocus?.value ?? 0,
+                            focusKey: focusSelect?.value ?? '',
+                            focusValue: focusSelect?.selectedOptions?.[0]?.dataset?.value ?? 0,
+                            focusSuperior: focusSelect?.selectedOptions?.[0]?.dataset?.superior === 'true',
+                            secondFocusKey: secondFocusSelect?.value ?? '',
+                            secondFocusValue: secondFocusSelect?.selectedOptions?.[0]?.dataset?.value ?? 0,
+                            secondFocusSuperior: secondFocusSelect?.selectedOptions?.[0]?.dataset?.superior === 'true',
+                            useExpandedFocus: button.form.elements.useExpandedFocus?.checked ?? false,
                             location: button.form.elements.location?.value
                         };
                     }
@@ -143,7 +198,19 @@ export let castSpellMixin = {
             });
 
         if (!result) return;
-        let { staCostTotal, customModifier, isExtraAttack, focusValue, secondFocusValue, location } = result;
+        let {
+            staCostTotal,
+            customModifier,
+            isExtraAttack,
+            focusKey,
+            focusValue,
+            focusSuperior,
+            secondFocusKey,
+            secondFocusValue,
+            secondFocusSuperior,
+            useExpandedFocus,
+            location
+        } = result;
 
         staCostTotal = Number(staCostTotal) || 0;
         customModifier = Number(customModifier) || 0;
@@ -152,10 +219,32 @@ export let castSpellMixin = {
 
         let origStaCost = staCostTotal;
 
-        const focusBonus = focusValue + secondFocusValue;
-        const usedFocus = focusBonus > 0;
+        useExpandedFocus = Boolean(useExpandedFocus) && Boolean(expandedMagicSkill) && focusValue > 0;
+        if (useExpandedFocus) {
+            const expandedMagicRoll = await this._rollExpandedMagicCheck(expandedMagicSkill);
+            if (!expandedMagicRoll) return;
 
-        staCostTotal -= focusBonus;
+            await expandedMagicRoll.toMessage(expandedMagicRoll.messageData);
+            if (!expandedMagicRoll.options.success) {
+                ui.notifications.warn(game.i18n.localize('WITCHER.Spell.ExpandedMagicFailure'));
+                useExpandedFocus = false;
+            }
+        }
+
+        const usedSecondFocus = useExpandedFocus && secondFocusValue > 0 && secondFocusKey !== focusKey;
+        const expandedFocusDivisor = useExpandedFocus ? (usedSecondFocus ? 4 : 2) : 1;
+        const focusBonus = useExpandedFocus ? 0 : focusValue;
+        const usedFocus = useExpandedFocus || focusBonus > 0;
+        const superiorFocusApplies = this._doesSuperiorFocusApply(spellItem);
+        const usedSuperiorFocus =
+            superiorFocusApplies && (Boolean(focusSuperior) || (usedSecondFocus && Boolean(secondFocusSuperior)));
+        const focusSuperiorBonus = usedSuperiorFocus ? 2 : 0;
+
+        if (useExpandedFocus) {
+            staCostTotal = Math.ceil(staCostTotal / expandedFocusDivisor);
+        } else {
+            staCostTotal -= focusBonus;
+        }
         if (isExtraAttack) {
             staCostTotal += 3;
         }
@@ -198,12 +287,14 @@ export let castSpellMixin = {
 
         const staCostParts = [`${origStaCost}`];
 
-        if (isExtraAttack) {
-            staCostParts.push(`+ 3 ${game.i18n.localize('WITCHER.Dialog.attackExtra')}`);
+        if (useExpandedFocus) {
+            staCostParts.push(`/ ${expandedFocusDivisor} ${game.i18n.localize('WITCHER.Spell.ExpandedMagic')}`);
+        } else if (focusBonus > 0) {
+            staCostParts.push(`- ${focusBonus} ${game.i18n.localize('WITCHER.Actor.DerStat.Focus')}`);
         }
 
-        if (focusBonus > 0) {
-            staCostParts.push(`- ${focusBonus} ${game.i18n.localize('WITCHER.Actor.DerStat.Focus')}`);
+        if (isExtraAttack) {
+            staCostParts.push(`+ 3 ${game.i18n.localize('WITCHER.Dialog.attackExtra')}`);
         }
 
         let staCostDisplay = staCostParts.join(' ');
@@ -214,6 +305,7 @@ export let castSpellMixin = {
             staCostDisplay += ` (${game.i18n.localize('WITCHER.MinValue')})`;
         }
         templateInfo.staCostDisplay = staCostDisplay;
+        templateInfo.focusSuperiorBonus = focusSuperiorBonus;
 
         if (customModifier < 0) {
             rollFormula += !displayRollDetails
@@ -310,7 +402,8 @@ export let castSpellMixin = {
             attacker: this.uuid,
             attack: spellItem.getItemAttack(),
             damage: damage,
-            defenseOptions: spellItem.system.defenseOptions
+            defenseOptions: spellItem.system.defenseOptions,
+            attackRollBonus: focusSuperiorBonus
         });
 
         let config = new RollConfig({ showResult: false });
@@ -513,6 +606,65 @@ export let castSpellMixin = {
             default:
                 return source;
         }
+    },
+
+    async _rollExpandedMagicCheck(expandedMagicSkill) {
+        if (!expandedMagicSkill) return null;
+
+        return this.doProfessionSkillRoll(expandedMagicSkill, {
+            threshold: 15,
+            showResult: false,
+            thresholdDesc: 'WITCHER.Spell.ExpandedMagicCheck',
+            messageOnSuccess: game.i18n.localize('WITCHER.Spell.ExpandedMagicSuccess'),
+            messageOnFailure: game.i18n.localize('WITCHER.Spell.ExpandedMagicFailure')
+        });
+    },
+
+    _getEquippedItemFocusInfo(item) {
+        if (!item?.system) return null;
+
+        const isEquippedWeapon = item.type === 'weapon' && item.system.equipped;
+        const isEquippedMagicItem = item.type === 'valuable' && item.system.equipped && !item.system.isStored;
+        if (!isEquippedWeapon && !isEquippedMagicItem) return null;
+
+        return this._parseItemFocusInfo(item);
+    },
+
+    _parseItemFocusInfo(item) {
+        const effectNames = item.system.damageProperties?.effects?.map(effect => effect.name).join(' ') ?? '';
+        const focusText = [
+            item.system.effects,
+            item.system.effect,
+            item.system.description,
+            effectNames
+        ]
+            .filter(Boolean)
+            .join(' ');
+
+        const focusMatch = focusText.match(/\bFocus\s*\((\d+)\)/i);
+        if (!focusMatch) return null;
+
+        return {
+            value: Number(focusMatch[1]) || 0,
+            superior: /\bFocus\s*(Sup\.?|Superiore|Superior)/i.test(focusText)
+        };
+    },
+
+    _doesSuperiorFocusApply(spellItem) {
+        const system = spellItem.system ?? {};
+        if (system.causeDamages || String(system.damage ?? '').trim()) return true;
+
+        const spellText = [
+            spellItem.name,
+            system.class,
+            system.domain,
+            system.effect,
+            system.description
+        ]
+            .filter(Boolean)
+            .join(' ');
+
+        return /\billus/i.test(spellText);
     },
 
     _getMagicTargetInfo(spellItem) {

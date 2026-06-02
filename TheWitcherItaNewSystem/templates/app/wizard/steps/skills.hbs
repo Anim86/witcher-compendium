@@ -78,6 +78,9 @@
                             <div class="skill-main-info">
                                 {{#if isDefining}}<i class="fa-solid fa-star defining-star" title="Abilità Esclusiva"></i>{{/if}}
                                 <span class="skill-name-text">{{name}}</span>
+                                {{#if description}}
+                                <i class="fa-solid fa-circle-info skill-info-icon" data-tooltip="{{description}}" style="color: var(--wizard-text-light, #999); font-size: 0.85em; margin-left: 5px; cursor: help;"></i>
+                                {{/if}}
                                 {{#if isNativeLanguage}}<span class="native-badge"><i class="fa-solid fa-crown"></i> Madrelingua</span>{{/if}}
                             </div>
                             <div class="skill-bottom-row">
@@ -163,6 +166,9 @@
                         <label class="skill-label">
                             <div class="skill-main-info">
                                 <span class="skill-name-text">{{name}}</span>
+                                {{#if description}}
+                                <i class="fa-solid fa-circle-info skill-info-icon" data-tooltip="{{description}}" style="color: var(--wizard-text-light, #999); font-size: 0.85em; margin-left: 5px; cursor: help;"></i>
+                                {{/if}}
                                 {{#if isNativeLanguage}}<span class="native-badge"><i class="fa-solid fa-crown"></i> Madrelingua</span>{{/if}}
                             </div>
                             <div class="skill-bottom-row">

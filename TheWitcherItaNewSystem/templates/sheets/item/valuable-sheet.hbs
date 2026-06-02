@@ -31,6 +31,10 @@
                 {{selectOptions config.Concealment selected=item.system.conceal localize=true}}
             </select>
         </div>
+        <div class="property-card">
+            <label>{{localize "WITCHER.Item.Equipped"}}</label>
+            <input type="checkbox" name="system.equipped" {{checked item.system.equipped}} />
+        </div>
     </div>
 </section>
 

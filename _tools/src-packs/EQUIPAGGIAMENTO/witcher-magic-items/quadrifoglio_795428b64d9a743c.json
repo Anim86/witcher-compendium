@@ -5,6 +5,7 @@
     "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-magic-items/quadrifoglio.webp",
     "system": {
         "description": "<p>Un quadrifoglio conferisce un Punto Fortuna temporaneo, che può essere speso, senza bisogno di un'Azione, per ottenere +1 alla propria prova successiva. Una volta fatto, si disintegra.</p><p><em>Istruzione CD 10</em></p>",
+        "effect": "Conferisce 1 Punto Fortuna temporaneo spendibile senza Azione per ottenere +1 alla prova successiva; poi si disintegra.",
         "sourcebook": "TC 119"
     },
     "_stats": {
