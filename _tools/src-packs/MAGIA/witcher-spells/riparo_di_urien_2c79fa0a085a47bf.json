@@ -4,7 +4,7 @@
     "type": "spell",
     "img": "modules/witcher-compendium/assets/MAGIA/witcher-spells/riparo_di_urien.webp",
     "system": {
-        "description": "<p>Riparo di Urien, creato dal mago dell'aria Urien di Cidaris, permette di annullare gli effetti negativi del tempo atmosferico in un raggio di 8m centrato sull'in- cantatore. Nega il caldo e il freddo estremi, la pioggia e la neve.</p>",
+        "description": "<p>Riparo di Urien, creato dal mago dell'aria Urien di Cidaris, permette di annullare gli effetti negativi del tempo atmosferico in un raggio di 8m centrato sull'incantatore. Nega il caldo e il freddo estremi, la pioggia e la neve.</p>",
         "quantity": "1",
         "weight": 0,
         "cost": 0,
@@ -14,9 +14,9 @@
         "source": "fire",
         "stamina": 3,
         "staminaIsVar": false,
-        "effect": "Riparo di Urien, creato dal mago dell'aria Urien di Cidaris, permette di annullare gli effetti negativi del tempo atmosferico in un raggio di 8m centrato sull'in- cantatore. Nega il caldo e il freddo estremi, la pioggia e la neve.",
+        "effect": "Riparo di Urien, creato dal mago dell'aria Urien di Cidaris, permette di annullare gli effetti negativi del tempo atmosferico in un raggio di 8m centrato sull'incantatore. Nega il caldo e il freddo estremi, la pioggia e la neve.",
         "range": "Raggio di 8m",
-        "duration": "",
+        "duration": "1d6 ore",
         "defence": "Nessuna",
         "defenseOptions": [],
         "damageProperties": {

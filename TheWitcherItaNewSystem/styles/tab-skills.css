@@ -234,3 +234,164 @@ input[type="checkbox"].skill-checkbox {
     text-align: center;
     font-variant-numeric: tabular-nums;
 }
+
+/* ── Tooltip Premium Abilità ── */
+#tooltip .witcher-skill-tooltip {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 8px 4px;
+    font-family: 'Inter', 'Roboto', sans-serif;
+    min-width: 220px;
+}
+
+#tooltip .skill-tooltip-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    padding-bottom: 8px;
+}
+
+#tooltip .skill-tooltip-header h4 {
+    margin: 0;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+    text-align: center;
+}
+
+#tooltip .skill-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+}
+
+#tooltip .skill-type-badge {
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 3px 8px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.1);
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#tooltip .skill-type-badge.profession { 
+    background: rgba(197, 160, 89, 0.25); 
+    color: #e6c888; 
+    border: 1px solid rgba(197, 160, 89, 0.4); 
+}
+#tooltip .skill-type-badge.pickup { 
+    background: rgba(46, 140, 68, 0.25); 
+    color: #8cf2a2; 
+    border: 1px solid rgba(46, 140, 68, 0.4); 
+}
+#tooltip .skill-type-badge.learned { 
+    background: rgba(56, 120, 204, 0.25); 
+    color: #9abdf5; 
+    border: 1px solid rgba(56, 120, 204, 0.4); 
+}
+
+#tooltip .skill-tooltip-body {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+}
+
+#tooltip .tooltip-stat-ref {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 6px 8px;
+    border-radius: 6px;
+    margin-bottom: 4px;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.7);
+    border-left: 3px solid rgba(197, 160, 89, 0.5);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#tooltip .tooltip-stat-ref .stat-value {
+    color: #fff;
+    font-weight: bold;
+    text-align: right;
+}
+
+#tooltip .tooltip-modifiers-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding-left: 20px;
+    margin-bottom: 2px;
+}
+
+#tooltip .tooltip-row.mod-source {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#tooltip .tooltip-row.mod-source span:last-child {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: monospace;
+}
+
+#tooltip .tooltip-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.85);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#tooltip .tooltip-row span:first-child {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#tooltip .tooltip-row span:first-child i {
+    width: 16px;
+    font-size: 0.85rem;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#tooltip .tooltip-row span:last-child {
+    font-weight: 700;
+    font-family: monospace;
+    font-size: 1rem;
+    color: #fff;
+    text-align: right;
+}
+
+#tooltip hr {
+    margin: 4px 0;
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+}
+
+#tooltip .tooltip-row.total {
+    font-size: 1.05rem;
+    color: #c5a059;
+}
+
+#tooltip .tooltip-row.total span:last-child {
+    font-size: 1.25rem;
+    color: #ffd700;
+}

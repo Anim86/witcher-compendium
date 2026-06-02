@@ -1,15 +1,49 @@
 <a class="skill-card {{#if skill.isProfession}}is-profession{{else if skill.isPickup}}is-pickup{{else if skill.isLearned}}is-learned{{/if}}" 
-   data-action="rollSkill" data-skill="{{name}}" data-stat={{stat}} data-tooltip="{{localize skill.label}}">
-    <div class="skill-main">
-        <span class="skill-label">{{localize skill.label}}</span>
-        <div class="skill-status-icons">
-            {{#if skill.isProfession}}<i class="fa-solid fa-briefcase" data-tooltip="{{localize 'WITCHER.skills.profession'}}"></i>{{/if}}
-            {{#if skill.isPickup}}<i class="fa-solid fa-hand-holding-hand" data-tooltip="{{localize 'WITCHER.skills.pickup'}}"></i>{{/if}}
-            {{#if skill.isLearned}}<i class="fa-solid fa-graduation-cap" data-tooltip="{{localize 'WITCHER.skills.learn'}}"></i>{{/if}}
+   data-action="rollSkill" data-skill="{{name}}" data-stat={{stat}} 
+   data-tooltip="
+<div class='witcher-skill-tooltip'>
+    <header class='skill-tooltip-header'>
+        <h4>{{localize skill.label}}</h4>
+    </header>
+    <div class='skill-tooltip-body'>
+        <div class='tooltip-stat-ref'>
+            <span class='stat-label'>Statistica Chiave</span>
+            <span class='stat-value'>{{localize (concat 'WITCHER.St' (capitalize stat))}} [{{lookup (lookup @root.system.stats stat) 'value'}}]</span>
+        </div>
+        <div class='tooltip-math-section'>
+            <div class='tooltip-row'>
+                <span><i class='fa-solid fa-book'></i> Livello Abilità</span>
+                <span>{{skill.value}}</span>
+            </div>
+            {{#if skill.modifiersSum}}
+            <div class='tooltip-row'>
+                <span><i class='fa-solid fa-plus-minus'></i> Modificatori</span>
+                <span>{{#if (gt skill.modifiersSum 0)}}+{{/if}}{{skill.modifiersSum}}</span>
+            </div>
+            {{#if skill.modifierSources.length}}
+            <div class='tooltip-modifiers-list'>
+                {{#each skill.modifierSources}}
+                <div class='tooltip-row mod-source'>
+                    <span>- {{this.source}}</span>
+                    <span>{{#if (gt this.value 0)}}+{{/if}}{{this.value}}</span>
+                </div>
+                {{/each}}
+            </div>
+            {{/if}}
+            {{/if}}
+            <hr>
+            <div class='tooltip-row total'>
+                <span><i class='fa-solid fa-equals'></i> Valore Attuale</span>
+                <span>{{skill.total}}</span>
+            </div>
         </div>
     </div>
-    <div class="skill-value-badge {{#if (gt skill.total skill.value)}}has-bonus{{else if (lt skill.total skill.value)}}has-penalty{{/if}}"
-         {{#if skill.modifiersSum}}data-tooltip="Base: {{skill.value}} | Mod: {{#if (gt skill.modifiersSum 0)}}+{{/if}}{{skill.modifiersSum}}"{{/if}}>
+</div>
+">
+    <div class="skill-main">
+        <span class="skill-label">{{localize skill.label}}</span>
+    </div>
+    <div class="skill-value-badge {{#if (gt skill.total skill.value)}}has-bonus{{else if (lt skill.total skill.value)}}has-penalty{{/if}}">
         {{#if (gte skill.total 0)}}+{{/if}}{{skill.total}}
         {{#if (gt @root.system.general.improvementPoints 0)}}
             <a class="spend-ip-skill" data-tooltip="{{localize 'WITCHER.Progression.SpendIP'}}"><i class="fa-solid fa-plus"></i></a>

@@ -122,6 +122,18 @@ export default class WitcherImprovementDialog extends HandlebarsApplicationMixin
             context.totalCost = this._calculateTotalCost();
             context.typeLabel = this.type === 'stat' ? 'WITCHER.Actor.StatTitle.Attributes' : 'WITCHER.Actor.tabs.skills';
             context.requirementError = this._checkRequirements();
+            
+            if (this.type === 'skill') {
+                context.multiplier = this.multiplier;
+                context.isProfession = this.options.isProfession;
+                if (!this.options.isProfession) {
+                    const skillData = this._getSkillData(this.target);
+                    context.isPickup = skillData.isPickup;
+                    context.isLearned = skillData.isLearned;
+                }
+            } else if (this.type === 'stat') {
+                context.multiplier = 10;
+            }
         }
 
         return context;

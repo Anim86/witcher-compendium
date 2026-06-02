@@ -4,7 +4,7 @@
     "type": "spell",
     "img": "modules/witcher-compendium/assets/MAGIA/witcher-spells/tempesta_di_fulmini.webp",
     "system": {
-        "description": "<p>Questo incantesimo consente all'incantatore di creare una tempesta di fulmini nell'area. Esiste il 35% di probabilit che chiunque si trovi nella zona sia colpito da un fulmine (eccetto l'incantatore). Chi vie- ne colpito deve superare una prova di Eludere o subire 8d6 danni al torso con il 75% di probabilit di subire l'effetto A Fuoco.</p>",
+        "description": "<p>Questo incantesimo consente all'incantatore di creare una tempesta di fulmini nell'area. Esiste il 35% di probabilità che chiunque si trovi nella zona sia colpito da un fulmine (eccetto l'incantatore). Chi viene colpito deve superare una prova di Eludere o subire 8d6 danni al torso con il 75% di probabilità di subire l'effetto A Fuoco.</p>",
         "quantity": "1",
         "weight": 0,
         "cost": 0,
@@ -14,8 +14,8 @@
         "source": "earth",
         "stamina": 25,
         "staminaIsVar": false,
-        "effect": "Questo incantesimo consente all'incantatore di creare una tempesta di fulmini nell'area. Esiste il 35% di probabilit che chiunque si trovi nella zona sia colpito da un fulmine (eccetto l'incantatore). Chi vie- ne colpito deve superare una prova di Eludere o subire 8d6 danni al torso con il 75% di probabilit di subire l'effetto A Fuoco.",
-        "range": "",
+        "effect": "Questo incantesimo consente all'incantatore di creare una tempesta di fulmini nell'area. Esiste il 35% di probabilità che chiunque si trovi nella zona sia colpito da un fulmine (eccetto l'incantatore). Chi viene colpito deve superare una prova di Eludere o subire 8d6 danni al torso con il 75% di probabilità di subire l'effetto A Fuoco.",
+        "range": "50m",
         "duration": "Attiva (6 RES)",
         "defence": "Schivare o Scudo Magico",
         "defenseOptions": [
@@ -62,7 +62,7 @@
         "targetMultiplier": 0,
         "targetDc": 0,
         "areaShape": "manual",
-        "areaSize": ""
+        "areaSize": "50m"
     },
     "effects": [],
     "flags": {},

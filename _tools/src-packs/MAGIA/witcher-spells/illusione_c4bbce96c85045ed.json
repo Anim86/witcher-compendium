@@ -4,7 +4,7 @@
     "type": "spell",
     "img": "modules/witcher-compendium/assets/MAGIA/witcher-spells/illusione.webp",
     "system": {
-        "description": "<p>Illusione consente all'incantatore di creare qualsiasi illusione visiva desideri entro 20m. Chiunque fallisca la prova di Resistenza alla Magia e può vedere l'illusione, crede che sia reale. L'illusione non può tutta- via essere toccata, udita o annusata.</p>",
+        "description": "<p>Illusione consente all'incantatore di creare qualsiasi illusione visiva desideri entro 20m. Chiunque fallisca la prova di Resistenza alla Magia e può vedere l'illusione, crede che sia reale. L'illusione non può tuttavia essere toccata, udita o annusata.</p>",
         "quantity": "1",
         "weight": 0,
         "cost": 0,
@@ -14,7 +14,7 @@
         "source": "mixed",
         "stamina": 1,
         "staminaIsVar": false,
-        "effect": "Illusione consente all'incantatore di creare qualsiasi illusione visiva desideri entro 20m. Chiunque fallisca la prova di Resistenza alla Magia e può vedere l'illusione, crede che sia reale. L'illusione non può tutta- via essere toccata, udita o annusata.",
+        "effect": "Illusione consente all'incantatore di creare qualsiasi illusione visiva desideri entro 20m. Chiunque fallisca la prova di Resistenza alla Magia e può vedere l'illusione, crede che sia reale. L'illusione non può tuttavia essere toccata, udita o annusata.",
         "range": "20m",
         "duration": "Attiva (4 RES)",
         "defence": "Resistere alla Magia",

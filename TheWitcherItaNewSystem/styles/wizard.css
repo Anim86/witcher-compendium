@@ -15,7 +15,7 @@
 .witcher-wizard .wizard-content h3,
 .witcher-wizard .wizard-content h4,
 .witcher-wizard .wizard-content p,
-.witcher-wizard .wizard-content span:not(.badge):not(.tab-title):not(.stat-pill):not(.step-num):not(.step-label):not(.points-value):not(.stat-abbr):not(.stat-value):not(.gear-tag):not(.tooltip-text),
+.witcher-wizard .wizard-content span:not(.badge):not(.tab-title):not(.stat-pill):not(.step-num):not(.step-label):not(.points-value):not(.stat-abbr):not(.stat-value):not(.gear-tag):not(.tooltip-text):not(.magic-budget-label):not(.magic-budget-count),
 .witcher-wizard .wizard-content .form-group label,
 .witcher-wizard .wizard-content .background-section h3,
 .witcher-wizard .wizard-content .background-section label {
@@ -3334,7 +3334,7 @@ form.witcher-wizard .wizard-content {
 .witcher-wizard .magic-budget-pill.ritual { --magic-pill-color: #026aa8; }
 .witcher-wizard .magic-budget-pill.hex { --magic-pill-color: #b51f1f; }
 
-.witcher-wizard .magic-budget-label {
+.witcher-wizard .magic-budget-pill .magic-budget-label {
     display: inline-flex;
     align-items: center;
     gap: 6px;
@@ -3347,7 +3347,7 @@ form.witcher-wizard .wizard-content {
     text-shadow: none;
 }
 
-.witcher-wizard .magic-budget-count {
+.witcher-wizard .magic-budget-pill .magic-budget-count {
     display: inline-flex;
     align-items: center;
     justify-content: center;

@@ -3,11 +3,32 @@
         <img src="{{img}}" alt="{{label}}" class="improvement-icon" />
         <div class="improvement-title">
             <h2>{{label}}</h2>
-            <span class="improvement-type">{{localize typeLabel}}</span>
+            <div class="improvement-subtitle">
+                <span class="improvement-type">{{localize typeLabel}}</span>
+                {{#if isProfession}}
+                <span class="skill-type-badge profession"><i class="fa-solid fa-briefcase"></i> {{localize 'WITCHER.skills.profession'}}</span>
+                {{else if isPickup}}
+                <span class="skill-type-badge pickup"><i class="fa-solid fa-hand-holding-hand"></i> {{localize 'WITCHER.skills.pickup'}}</span>
+                {{else if isLearned}}
+                <span class="skill-type-badge learned"><i class="fa-solid fa-graduation-cap"></i> {{localize 'WITCHER.skills.learn'}}</span>
+                {{/if}}
+            </div>
         </div>
     </header>
 
     <div class="improvement-content">
+        {{#unless isMagic}}
+        <div class="rules-summary-box">
+            <i class="fa-solid fa-circle-info"></i>
+            <p>
+                <strong>Regola di Incremento:</strong> 
+                Per far salire il livello, devi spendere un numero di P.I. pari al livello corrente {{#if (gt multiplier 1)}}moltiplicato per {{multiplier}}{{/if}}.
+                {{#if isLearned}}
+                <br><span class="learned-warning">Attenzione: essendo un'Abilità Difficile (Costo x2), potrebbe richiedere un maestro o un manuale per l'apprendimento.</span>
+                {{/if}}
+            </p>
+        </div>
+        {{/unless}}
         {{#if isMagic}}
             <div class="magic-training-section">
                 <div class="training-stats">

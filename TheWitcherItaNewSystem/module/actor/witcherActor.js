@@ -425,6 +425,7 @@ export default class WitcherActor extends Actor {
                 if (!skill) continue;
 
                 let modifiers = 0;
+                let modifierSources = [];
 
                 // 1. Racial Modifiers
                 if (raceItem) {
@@ -433,7 +434,9 @@ export default class WitcherActor extends Actor {
                         if (perk && Array.isArray(perk.modifiers)) {
                             perk.modifiers.forEach(mod => {
                                 if (mod.target === skillName) {
-                                    modifiers += Number(mod.value) || 0;
+                                    const val = Number(mod.value) || 0;
+                                    modifiers += val;
+                                    modifierSources.push({ source: raceItem.name + (perk.name ? ` (${perk.name})` : ''), value: val });
                                 }
                             });
                         }
@@ -443,13 +446,36 @@ export default class WitcherActor extends Actor {
                 // 2. Specific Skill Modifiers
                 if (Array.isArray(skill.modifiers)) {
                     skill.modifiers.forEach(mod => {
-                        modifiers += Number(mod.value) || 0;
+                        const val = Number(mod.value) || 0;
+                        modifiers += val;
+                        modifierSources.push({ source: mod.name || mod.source || 'Modificatore Manuale', value: val });
                     });
                 }
 
                 // 3. Active Effect Modifiers
                 if (Number(skill.activeEffectModifiers)) {
-                    modifiers += Number(skill.activeEffectModifiers);
+                    let effectValueCaptured = 0;
+                    
+                    // Cerca il nome esatto dell'effetto attivo che modifica questa abilità
+                    for (const effect of this.effects.filter(e => !e.disabled)) {
+                        const change = effect.changes?.find(c => c.key.includes(`${skillName}.activeEffectModifiers`));
+                        if (change) {
+                            const val = Number(change.value) || 0;
+                            modifierSources.push({ source: effect.name, value: val });
+                            effectValueCaptured += val;
+                        }
+                    }
+
+                    // Fallback se ci sono discrepanze o l'effetto usa una sintassi diversa
+                    const totalAE = Number(skill.activeEffectModifiers);
+                    if (effectValueCaptured !== totalAE) {
+                        const remaining = totalAE - effectValueCaptured;
+                        if (remaining !== 0) {
+                            modifierSources.push({ source: 'Effetto Attivo Sconosciuto', value: remaining });
+                        }
+                    }
+                    
+                    modifiers += totalAE;
                 }
 
                 // 4. Skill Group Modifiers
@@ -459,12 +485,23 @@ export default class WitcherActor extends Actor {
                             modifier.group === 'allSkills' ||
                             (CONFIG.WITCHER[modifier.group] && CONFIG.WITCHER[modifier.group].some(groupSkill => groupSkill === skillName))
                         ) {
-                            modifiers += Number(modifier.value) || 0;
+                            const val = Number(modifier.value) || 0;
+                            modifiers += val;
+                            
+                            // Traduci il nome del gruppo per renderlo leggibile se non ha un nome proprio
+                            let groupName = modifier.name || modifier.source;
+                            if (!groupName) {
+                                if (modifier.group === 'allSkills') groupName = 'Tutte le Abilità';
+                                else if (modifier.group === 'weaponCategorySkills') groupName = 'Armi';
+                                else groupName = modifier.group;
+                            }
+                            modifierSources.push({ source: groupName, value: val });
                         }
                     });
                 }
 
                 skill.modifiersSum = modifiers;
+                skill.modifierSources = modifierSources;
                 skill.total = (skill.value || 0) + modifiers;
             }
         }

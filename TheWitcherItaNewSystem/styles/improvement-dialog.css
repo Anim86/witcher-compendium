@@ -56,6 +56,66 @@
     letter-spacing: 1px;
 }
 
+.improvement-subtitle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 4px;
+}
+
+.skill-type-badge {
+    font-size: 0.65rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 2px 6px;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-family: 'Inter', 'Roboto', sans-serif;
+}
+
+.skill-type-badge.profession { background: rgba(197, 160, 89, 0.25); color: #e6c888; border: 1px solid rgba(197, 160, 89, 0.4); }
+.skill-type-badge.pickup { background: rgba(46, 140, 68, 0.25); color: #8cf2a2; border: 1px solid rgba(46, 140, 68, 0.4); }
+.skill-type-badge.learned { background: rgba(56, 120, 204, 0.25); color: #9abdf5; border: 1px solid rgba(56, 120, 204, 0.4); }
+
+.rules-summary-box {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    background: rgba(197, 160, 89, 0.1);
+    border: 1px solid rgba(197, 160, 89, 0.3);
+    border-radius: 6px;
+    padding: 10px 12px;
+    font-family: 'Inter', 'Roboto', sans-serif;
+    font-size: 0.85em;
+    line-height: 1.4;
+    color: #ddd;
+}
+
+.rules-summary-box i {
+    color: var(--gold);
+    font-size: 1.2em;
+    margin-top: 2px;
+}
+
+.rules-summary-box p {
+    margin: 0;
+}
+
+.rules-summary-box strong {
+    color: var(--gold-bright);
+}
+
+.learned-warning {
+    display: block;
+    margin-top: 6px;
+    color: #3498db;
+    font-style: italic;
+}
+
 .improvement-content {
     display: flex;
     flex-direction: column;

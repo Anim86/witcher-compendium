@@ -1,0 +1,5 @@
+# Regole e Preferenze del Progetto / Project Rules
+
+- **NON eseguire gli script di deploy** (`deploy.ps1`, `deploy.bat`, ecc.) in modo autonomo o automatico.
+- Questi script richiedono privilegi di amministratore ed è necessario che vengano eseguiti manualmente dall'utente.
+- Do NOT run the deployment scripts (`deploy.ps1`, `deploy.bat`, etc.) automatically. They require administrator privileges and must be executed manually by the user.
