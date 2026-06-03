@@ -79,62 +79,7 @@ export let castSpellMixin = {
         const canUseMagicalFocus = String(spellItem.system.class ?? '') !== 'MagicalGift';
         let expandedMagicSkill = this._getExpandedMagicSkill();
         let handlebarFocusOptions = {};
-        if (this.system.focus1.value > 0) {
-            const focusSuperior = Boolean(this.system.focus1.superior);
-            useFocus = true;
-            handlebarFocusOptions.focus1 = {
-                value: this.system.focus1.value,
-                superior: focusSuperior,
-                label:
-                    this.system.focus1.name +
-                    '(' +
-                    this.system.focus1.value +
-                    ')' +
-                    (focusSuperior ? ` ${game.i18n.localize('WITCHER.Actor.focus.superiorShort')}` : '')
-            };
-        }
-        if (this.system.focus2.value > 0) {
-            const focusSuperior = Boolean(this.system.focus2.superior);
-            useFocus = true;
-            handlebarFocusOptions.focus2 = {
-                value: this.system.focus2.value,
-                superior: focusSuperior,
-                label:
-                    this.system.focus2.name +
-                    '(' +
-                    this.system.focus2.value +
-                    ')' +
-                    (focusSuperior ? ` ${game.i18n.localize('WITCHER.Actor.focus.superiorShort')}` : '')
-            };
-        }
-        if (this.system.focus3.value > 0) {
-            const focusSuperior = Boolean(this.system.focus3.superior);
-            useFocus = true;
-            handlebarFocusOptions.focus3 = {
-                value: this.system.focus3.value,
-                superior: focusSuperior,
-                label:
-                    this.system.focus3.name +
-                    '(' +
-                    this.system.focus3.value +
-                    ')' +
-                    (focusSuperior ? ` ${game.i18n.localize('WITCHER.Actor.focus.superiorShort')}` : '')
-            };
-        }
-        if (this.system.focus4.value > 0) {
-            const focusSuperior = Boolean(this.system.focus4.superior);
-            useFocus = true;
-            handlebarFocusOptions.focus4 = {
-                value: this.system.focus4.value,
-                superior: focusSuperior,
-                label:
-                    this.system.focus4.name +
-                    '(' +
-                    this.system.focus4.value +
-                    ')' +
-                    (focusSuperior ? ` ${game.i18n.localize('WITCHER.Actor.focus.superiorShort')}` : '')
-            };
-        }
+
 
         this.items?.forEach(item => {
             const itemFocus = this._getEquippedItemFocusInfo(item);

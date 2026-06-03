@@ -133,8 +133,7 @@ export default class WitcherCharacterSheet extends WitcherActorSheet {
                 { id: 'rituals', cssClass: 'rituals', label: 'WITCHER.Spell.Rituals' },
                 { id: 'hexes', cssClass: 'hexes', label: 'WITCHER.Spell.Hexes' },
                 { id: 'magicalGift', cssClass: 'magicalGift', label: 'WITCHER.Spell.MagicalGift' },
-                { id: 'curses', cssClass: 'curses', label: 'WITCHER.Spell.Curses' },
-                { id: 'focus', cssClass: 'focus', label: 'WITCHER.Actor.focus.name' }
+                { id: 'curses', cssClass: 'curses', label: 'WITCHER.Spell.Curses' }
             ],
             initial: 'magic'
         }

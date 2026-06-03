@@ -99,6 +99,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         rollAllBackground: function(event, target) { this._rollAllBackground(event, target); },
         rollBackground: function(event, target) { this._rollBackground(event, target); },
         rollLifeEvents: function(event, target) { this._rollLifeEvents(event, target); },
+        rollAllLifeEvents: function(event, target) { this._rollAllLifeEvents(event, target); },
         rollFamilyFate: function(event, target) { this._rollFamilyFate(event, target); },
         rollParentsFate: function(event, target) { this._rollParentsFate(event, target); },
         updateBackground: function(event, target) { this._updateBackground(event, target); },
@@ -272,17 +273,19 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             let professionGearRemaining = 0;
 
             if (gearConfig) {
-                const searchPacks = [...(this.weapons || []), ...(this.armor || []), ...(this.gear || []), ...(this.special || []), ...(this.potions || [])];
+                const searchPacks = [
+                    ...(this.weapons || []),
+                    ...(this.armor || []),
+                    ...(this.gear || []),
+                    ...(this.special || []),
+                    ...(this.potions || [])
+                ];
                 
-                // Helper to find item by names (fuzzy or exact)
                 const findItem = (name) => {
                     const cleanName = name.toLowerCase().replace(/[^a-z0-9]/g, '');
-                    const exactMatch = searchPacks.find(i => i.name.toLowerCase().replace(/[^a-z0-9]/g, '') === cleanName);
-                    if (exactMatch) return exactMatch;
-                    return searchPacks.find(i => {
-                        const iName = i.name.toLowerCase().replace(/[^a-z0-9]/g, '');
-                        return iName.includes(cleanName);
-                    });
+                    let item = searchPacks.find(i => i.name.toLowerCase().replace(/[^a-z0-9]/g, '') === cleanName);
+                    if (!item) item = searchPacks.find(i => i.name.toLowerCase().replace(/[^a-z0-9]/g, '').includes(cleanName));
+                    return item;
                 };
 
                 // Fixed items (Witcher only for now)
@@ -1583,7 +1586,11 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
 
         const getRandomItems = (arr, count) => {
             if (!arr || !arr.length) return [];
-            const shuffled = [...arr].sort(() => Math.random() - 0.5);
+            const shuffled = [...arr];
+            for (let i = shuffled.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+            }
             return shuffled.slice(0, count).map(sanitizeMagic);
         };
 
@@ -1728,7 +1735,9 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         const searchPacks = [...(this.weapons || []), ...(this.armor || []), ...(this.gear || []), ...(this.special || []), ...(this.potions || [])];
         const findItem = (name) => {
             const cleanName = name.toLowerCase().replace(/[^a-z0-9]/g, '');
-            return searchPacks.find(i => i.name.toLowerCase().replace(/[^a-z0-9]/g, '').includes(cleanName));
+            let item = searchPacks.find(i => i.name.toLowerCase().replace(/[^a-z0-9]/g, '') === cleanName);
+            if (!item) item = searchPacks.find(i => i.name.toLowerCase().replace(/[^a-z0-9]/g, '').includes(cleanName));
+            return item;
         };
 
         const choices = (gearConfig.items || []).map(nameObj => {
@@ -1737,8 +1746,22 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             return { id: item?.id || itemName, name: itemName };
         });
 
-        const shuffled = choices.slice().sort(() => Math.random() - 0.5);
-        const selected = shuffled.slice(0, gearConfig.choose || 0).map(entry => entry.id);
+        const shuffled = [...choices];
+        for (let i = shuffled.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+        }
+        
+        const uniqueIds = [];
+        const seen = new Set();
+        for (const entry of shuffled) {
+            if (!seen.has(entry.id)) {
+                seen.add(entry.id);
+                uniqueIds.push(entry.id);
+            }
+        }
+
+        const selected = uniqueIds.slice(0, gearConfig.choose || 0);
         this.characterData.selectedProfessionGear = selected;
         this.render(true);
     }
@@ -2259,6 +2282,27 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             ui.notifications.warn(`Tabella '${tableName}' non trovata nel mondo o nei compendi.`);
         }
         this.render(true);
+    }
+
+    async _rollAllLifeEvents() {
+        const age = this.characterData.age || 20;
+        const maxEvents = Math.floor((age - 20) / 10) + 1;
+        const existing = this.characterData.background.events;
+
+        if (maxEvents <= 0) {
+            ui.notifications.warn("Il personaggio è troppo giovane per avere eventi della vita (età minima 20 anni).");
+            return;
+        }
+
+        if (existing.length >= maxEvents) {
+            ui.notifications.warn(`Hai già tirato il numero massimo di eventi consentiti per l'età di ${age} anni (${maxEvents} eventi).`);
+            return;
+        }
+
+        const eventsToRoll = maxEvents - existing.length;
+        for (let i = 0; i < eventsToRoll; i++) {
+            await this._rollLifeEvents();
+        }
     }
 
     async _rollLifeEvents() {

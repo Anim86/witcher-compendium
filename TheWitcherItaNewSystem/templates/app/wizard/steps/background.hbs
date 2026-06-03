@@ -164,7 +164,12 @@
 
                 {{!-- Colonna destra: Eventi della Vita --}}
                 <div class="background-section">
-                    <h3>{{localize "WITCHER.Wizard.Background.LifeEvents"}}</h3>
+                    <h3 style="display: flex; justify-content: space-between; align-items: center;">
+                        <span>{{localize "WITCHER.Wizard.Background.LifeEvents"}}</span>
+                        <button type="button" class="btn-roll-inline" data-action="rollAllLifeEvents" title="Genera tutti gli Eventi Salienti in una volta" style="margin: 0; width: 24px; height: 24px; font-size: 13px; display: inline-flex; align-items: center; justify-content: center;">
+                            <i class="fa-solid fa-dice-d20"></i>
+                        </button>
+                    </h3>
                     <div class="events-list scrollable">
                         {{#each character.background.events}}
                         <div class="event-item">
