@@ -18,6 +18,11 @@
                             <span class="stat" title="{{localize 'WITCHER.Weapon.Short.Damage'}}">
                                 <i class="fas fa-tint"></i> {{weapon.system.damage}}
                             </span>
+                            {{#if weapon.system.attackBase}}
+                            <span class="stat" title="{{localize 'WITCHER.Monster.AttackBase'}}">
+                                <i class="fas fa-dice-d20"></i> {{weapon.system.attackBase}}
+                            </span>
+                            {{/if}}
                             <span class="stat" title="{{localize 'WITCHER.Weapon.Short.Reliability'}}">
                                 <i class="fas fa-shield-alt"></i> {{weapon.system.reliable}}
                             </span>

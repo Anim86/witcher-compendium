@@ -195,15 +195,24 @@ export let weaponAttackMixin = {
         for (let i = 0; i < attacknumber; i++) {
             let attFormula = '1d10+';
             let skill = CONFIG.WITCHER.skillMap[attack.skill];
-            if (game.settings.get('TheWitcherItaNewSystem', 'woundsAffectSkillBase')) {
+            const attackBase = Number(weapon.system.attackBase) || 0;
+            const woundsAffectSkillBase = game.settings.get('TheWitcherItaNewSystem', 'woundsAffectSkillBase');
+            if (woundsAffectSkillBase) {
                 attFormula += '(';
             }
-            if (options.skillReplacement) {
+            if (attackBase > 0) {
+                attFormula += !displayRollDetails
+                    ? `${attackBase}`
+                    : `${attackBase}[${game.i18n.localize('WITCHER.Monster.AttackBase')}]`;
+            } else if (options.skillReplacement) {
                 attFormula += !displayRollDetails
                     ? `${this.system.stats[options.skillReplacement.stat].value}+${options.skillReplacement.level ?? 0}`
                     : `${this.system.stats[options.skillReplacement.stat].value}[${game.i18n.localize(CONFIG.WITCHER.statMap[options.skillReplacement.stat].label)}]+${options.skillReplacement.level ?? 0}[${options.skillReplacement.skillName}]`;
             } else {
                 attFormula += this.constructBaseAttackFormula(skill);
+            }
+            if (woundsAffectSkillBase) {
+                attFormula += ')';
             }
 
             if (weapon.system.accuracy < 0) {
@@ -340,7 +349,7 @@ export let weaponAttackMixin = {
                     let reliabilityDamage = 1;
                     if (weapon.type == 'weapon') {
                         let newReliable = Math.max(0, (weapon.system.reliable ?? 0) - reliabilityDamage);
-                        weapon.update({ 'system.reliable': newReliable });
+                        weapon.update({ 'system.reliability': newReliable });
                         if (newReliable <= 0) {
                             ui.notifications.error(`${game.i18n.localize('WITCHER.Weapon.Broken')}: ${weapon.name}`);
                         }

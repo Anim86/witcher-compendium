@@ -61,7 +61,7 @@
                     "value": 9,
                     "isVisible": true
                 },
-                "wildernessSurvival": {
+                "wilderness": {
                     "value": 11,
                     "isVisible": true
                 }
@@ -107,27 +107,11 @@
                     "value": 9,
                     "isVisible": true
                 },
-                "resistMagic": {
+                "resistmagic": {
                     "value": 8,
                     "isVisible": true
                 }
             }
-        },
-        "details": {
-            "biography": "<p>Feroci macchine assassine di madre natura. Enormi e incredibilmente pericolosi, possono spazzare via soldati esperti con poche zampate.</p>",
-            "threat": "Medio",
-            "reward": 450,
-            "monsterType": "Beast",
-            "difficulty": "SEMPLICE",
-            "height": "1,75 m (al garrese)",
-            "weight": "600 Kg",
-            "environment": "Foreste e montagne",
-            "organization": "Solitario o coppia",
-            "vulnerability": "",
-            "intelligence": "Ferale",
-            "bounty": 450,
-            "academicKnowledge": "",
-            "common": ""
         },
         "derivedStats": {
             "vigor": {
@@ -175,18 +159,33 @@
         "sourcebook": "TC 204",
         "monsterType": "Beast",
         "difficulty": "semplice",
+        "complexity": "semplice",
+        "threat": "Medio",
         "bounty": 450,
         "armorHead": 14,
         "armorUpper": 14,
         "armorLower": 14,
+        "regeneration": 0,
+        "dodgeBase": 12,
+        "repositionBase": 10,
+        "blockBase": 15,
         "height": "1,75 m (al garrese)",
         "weight": "600 Kg",
         "environment": "Foreste e montagne",
         "intelligence": "Ferale",
+        "senses": "Vista Notturna, Fiuto",
         "organization": "Solitario o coppia",
-        "common": "",
+        "commonSkillValue": "Istruzione CD 8",
+        "common": "Senti sempre parlare di quei grossi mostri schifosi con alito di fuoco, ipnosi magica, invisibilità e tutta quell’altra roba e finisci per dimenticarti delle fottute macchine assassine di madre natura. Quando un orso si alza in piedi, corri.",
+        "monsterLoreSkillValue": "Bestiario CD 12",
+        "monsterLore": "Ogni anno, gli orsi fanno più vittime dei mostri. È più facile sopravvivere al morso di una viverna che a quello di un orso. Bloccare le zampate di un orso con uno scudo serve solo a una cosa: rompere lo scudo. È meglio mettersi fuori dalla sua portata appena possibile.",
         "academicKnowledge": "",
-        "vulnerability": ""
+        "vulnerability": "Unguento Anti-Bestie",
+        "resistances": "Contundente, Perforante, Tagliente",
+        "immunities": "",
+        "susceptibilities": "",
+        "customStat": true,
+        "dontAddAttr": true
     },
     "items": [
         {
@@ -196,13 +195,29 @@
             "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
             "system": {
                 "description": "Forza Distruttiva, Sanguinamento (75%)",
-                "damage": "4d6+2",
+                "damage": "8d6",
+                "attackBase": 17,
                 "accuracy": 0,
                 "effects": "Forza Distruttiva, Sanguinamento (75%)",
                 "isStored": false,
-                "reliable": 0,
+                "reliability": 15,
+                "reliabilityMax": 15,
                 "rateOfFire": 1,
-                "damageType": "piercing"
+                "category": "brawling",
+                "type": {
+                    "text": "P",
+                    "slashing": false,
+                    "piercing": true,
+                    "bludgeoning": false,
+                    "elemental": false
+                },
+                "meleeAttackSkill": "brawling",
+                "attackOptions": [
+                    "melee"
+                ],
+                "damageProperties": {
+                    "crushingForce": true
+                }
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -216,13 +231,29 @@
             "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
             "system": {
                 "description": "Forza Distruttiva",
-                "damage": "2d6+2",
+                "damage": "4d6+5",
+                "attackBase": 17,
                 "accuracy": 0,
                 "effects": "Forza Distruttiva",
                 "isStored": false,
-                "reliable": 0,
-                "rateOfFire": 1,
-                "damageType": "slashing"
+                "reliability": 15,
+                "reliabilityMax": 15,
+                "rateOfFire": 2,
+                "category": "brawling",
+                "type": {
+                    "text": "T",
+                    "slashing": true,
+                    "piercing": false,
+                    "bludgeoning": false,
+                    "elemental": false
+                },
+                "meleeAttackSkill": "brawling",
+                "attackOptions": [
+                    "melee"
+                ],
+                "damageProperties": {
+                    "crushingForce": true
+                }
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

@@ -59,6 +59,7 @@ export default class WeaponData extends CommonItemData {
             reliabilityMax: new fields.NumberField({ initial: 0 }),
 
             damage: new fields.StringField({ initial: '' }),
+            attackBase: new fields.NumberField({ initial: 0, label: 'WITCHER.Monster.AttackBase' }),
             range: new fields.StringField({ initial: '' }),
             accuracy: new fields.NumberField({ initial: 0 }),
             rateOfFire: new fields.NumberField({ initial: 1 }),

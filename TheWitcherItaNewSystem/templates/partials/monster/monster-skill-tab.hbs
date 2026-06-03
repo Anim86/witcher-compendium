@@ -36,15 +36,15 @@
             <div class="quick-defense-grid">
                 <div class="defense-card">
                     <label>{{localize "WITCHER.Defense.defenseOptions.dodge"}}</label>
-                    <span class="value">{{sum 10 system.stats.dex.value system.skills.dex.dodgeEscape.value}}</span>
+                    <span class="value">{{#if system.dodgeBase}}{{system.dodgeBase}}{{else}}{{sum system.stats.ref.value system.skills.ref.dodge.value}}{{/if}}</span>
                 </div>
                 <div class="defense-card">
                     <label>{{localize "WITCHER.Defense.defenseOptions.reposition"}}</label>
-                    <span class="value">{{sum 10 system.stats.dex.value system.skills.dex.athletics.value}}</span>
+                    <span class="value">{{#if system.repositionBase}}{{system.repositionBase}}{{else}}{{sum system.stats.dex.value system.skills.dex.athletics.value}}{{/if}}</span>
                 </div>
                 <div class="defense-card">
                     <label>{{localize "WITCHER.Defense.defenseOptions.block"}}</label>
-                    <span class="value">{{sum 10 system.stats.ref.value system.skills.ref.brawling.value}}</span>
+                    <span class="value">{{#if system.blockBase}}{{system.blockBase}}{{else}}{{sum system.stats.ref.value system.skills.ref.brawling.value}}{{/if}}</span>
                 </div>
             </div>
             

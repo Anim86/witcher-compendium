@@ -33,6 +33,10 @@ export default class MonsterData extends CommonActorData {
             armorTailWing: new fields.NumberField({ initial: 0 }),
             regeneration: new fields.NumberField({ initial: 0, label: 'WITCHER.Monster.regeneration' }),
 
+            dodgeBase: new fields.NumberField({ initial: 0, label: 'WITCHER.Defense.defenseOptions.dodge' }),
+            repositionBase: new fields.NumberField({ initial: 0, label: 'WITCHER.Defense.defenseOptions.reposition' }),
+            blockBase: new fields.NumberField({ initial: 0, label: 'WITCHER.Defense.defenseOptions.block' }),
+
             resistances: new fields.StringField({ initial: '' }),
             immunities: new fields.StringField({ initial: '' }),
             statusEffectImmunities: new fields.ArrayField(new fields.StringField({ initial: '' })),
@@ -88,33 +92,6 @@ export default class MonsterData extends CommonActorData {
 
     /** @override */
     static migrateData(source) {
-        // Promote detail fields to root system
-        if (source.details) {
-            const d = source.details;
-            const mapping = {
-                monsterType: 'monsterType',
-                threat: 'threat',
-                reward: 'bounty',
-                difficulty: 'difficulty',
-                senses: 'senses',
-                size: 'size',
-                intelligence: 'intelligence',
-                biography: 'biography',
-                vulnerability: 'vulnerability',
-                environment: 'environment',
-                organization: 'organization',
-                monsterLore: 'monsterLore',
-                academicKnowledge: 'academicKnowledge',
-                common: 'common'
-            };
-
-            for (const [oldKey, newKey] of Object.entries(mapping)) {
-                if (d[oldKey] !== undefined && source[newKey] === undefined) {
-                    source[newKey] = d[oldKey];
-                }
-            }
-        }
-
         // Legacy flat Italian skills migration to grouped English schema
         if (source.skills && !source.skills.int && !source.skills.ref) {
             const legacySkills = source.skills;
