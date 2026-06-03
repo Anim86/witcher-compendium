@@ -235,7 +235,7 @@ export let castSpellMixin = {
         const expandedFocusDivisor = useExpandedFocus ? (usedSecondFocus ? 4 : 2) : 1;
         const focusBonus = useExpandedFocus ? 0 : focusValue;
         const usedFocus = useExpandedFocus || focusBonus > 0;
-        const superiorFocusApplies = this._doesSuperiorFocusApply(spellItem);
+        const superiorFocusApplies = usedFocus && this._doesSuperiorFocusApply(spellItem);
         const usedSuperiorFocus =
             superiorFocusApplies && (Boolean(focusSuperior) || (usedSecondFocus && Boolean(secondFocusSuperior)));
         const focusSuperiorBonus = usedSuperiorFocus ? 2 : 0;
@@ -612,7 +612,7 @@ export let castSpellMixin = {
         if (!expandedMagicSkill) return null;
 
         return this.doProfessionSkillRoll(expandedMagicSkill, {
-            threshold: 15,
+            threshold: 16,
             showResult: false,
             thresholdDesc: 'WITCHER.Spell.ExpandedMagicCheck',
             messageOnSuccess: game.i18n.localize('WITCHER.Spell.ExpandedMagicSuccess'),
@@ -653,6 +653,9 @@ export let castSpellMixin = {
     _doesSuperiorFocusApply(spellItem) {
         const system = spellItem.system ?? {};
         if (system.causeDamages || String(system.damage ?? '').trim()) return true;
+        if (Array.isArray(system.defenseOptions) && system.defenseOptions.length > 0) return true;
+        if (Number(system.targetDc) > 0 || Number(system.difficultyCheck) > 0) return true;
+        if (system.targetMode && system.targetMode !== 'none' && system.targetMode !== 'area') return true;
 
         const spellText = [
             spellItem.name,

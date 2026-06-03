@@ -14,7 +14,7 @@
                 {{/if}}
                 <span class="meta-badge skill-badge">
                     <i class="fas fa-magic"></i>
-                    {{localize "WITCHER.Spell.MagicCost"}}: <strong>{{#if staminaIsVar}}Var.{{else}}{{item.system.stamina}} STA{{/if}}</strong>
+                    {{localize "WITCHER.Spell.MagicCost"}}: <strong>{{#if staminaIsVar}}{{localize "WITCHER.Spell.Short.Variable"}}{{else}}{{item.system.stamina}} {{localize "WITCHER.Actor.DerStat.Sta"}}{{/if}}</strong>
                 </span>
             </div>
         </div>
@@ -74,6 +74,7 @@
                 <label>{{localize "WITCHER.Spell.ChooseFocus"}}</label>
                 <div class="select-wrapper">
                     <select name="focus">
+                        <option value="" data-value="0" data-superior="false">{{localize "WITCHER.None"}}</option>
                         {{#each focusOptions as |focusOption|}}
                             <option value="{{@key}}" data-value="{{focusOption.value}}" data-superior="{{focusOption.superior}}">{{focusOption.label}}</option>
                         {{/each}}
@@ -93,7 +94,7 @@
                 <label>{{localize "WITCHER.Spell.ChooseExpandedFocus"}}</label>
                 <div class="select-wrapper">
                     <select name="secondFocus">
-                        <option value="" data-superior="false"></option>
+                        <option value="" data-value="0" data-superior="false">{{localize "WITCHER.None"}}</option>
                         {{#each focusOptions as |focusOption|}}
                             <option value="{{@key}}" data-value="{{focusOption.value}}" data-superior="{{focusOption.superior}}">{{focusOption.label}}</option>
                         {{/each}}
