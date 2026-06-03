@@ -109,22 +109,6 @@
                 }
             }
         },
-        "details": {
-            "biography": "<p>Demoni di furia e potere, guardiani dei regni ultraterreni. Possiedono artigli capaci di trinciare uomini ed equipaggiamenti in un istante, e adorano godere delle possessioni mortali.</p>",
-            "threat": "Difficile",
-            "reward": 1500,
-            "monsterType": "Relict",
-            "difficulty": "COMPLESSO",
-            "height": "Circa 2,5 m",
-            "weight": "136 Kg",
-            "environment": "Ovunque venga evocato",
-            "organization": "Solitario",
-            "vulnerability": "",
-            "intelligence": "Senziente",
-            "bounty": 1500,
-            "academicKnowledge": "",
-            "common": ""
-        },
         "derivedStats": {
             "vigor": {
                 "value": 0,
@@ -182,7 +166,12 @@
         "organization": "Solitario",
         "common": "",
         "academicKnowledge": "",
-        "vulnerability": ""
+        "vulnerability": "",
+        "customStat": true,
+        "dontAddAttr": true,
+        "dodgeBase": 17,
+        "repositionBase": 20,
+        "blockBase": 22
     },
     "items": [
         {
@@ -286,7 +275,8 @@
                 "accuracy": 0,
                 "effects": "Nessuno",
                 "rateOfFire": 2,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackBase": 22
             }
         },
         {

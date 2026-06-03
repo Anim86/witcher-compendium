@@ -112,20 +112,6 @@
                 }
             }
         },
-        "details": {
-            "biography": "<p>Se dovessi mai viaggiare in compagnia per le montagne, resta il più vicino possibile agli altri. Ricorda quel che ti dico, se qualcuno sparisce e poi lo sentite chiamare aiuto, potrebbe essere un barbegazi. Eh, da quel che ho sentito, questi scarafaggi bastardi possono rubarti la voce se ti mordono. Gli piace nascondersi tra le rocce e attirare la gente in un'imboscata. – Rodolf Kazmer</p>",
-            "threat": "Facile Complesso",
-            "reward": 15,
-            "monsterType": "Ogroid",
-            "difficulty": "MEDIUM",
-            "height": "1m",
-            "weight": "25kg",
-            "environment": "Alta montagna",
-            "organization": "Colonie da 4 a 10",
-            "vulnerability": "Unguento Anti-Insettoidi",
-            "intelligence": "Ferale",
-            "bounty": 15
-        },
         "derivedStats": {
             "rec": {
                 "value": 4,
@@ -166,7 +152,12 @@
         "environment": "",
         "organization": "",
         "intelligence": "",
-        "vulnerability": ""
+        "vulnerability": "",
+        "customStat": true,
+        "dontAddAttr": true,
+        "dodgeBase": 10,
+        "repositionBase": 7,
+        "blockBase": 11
     },
     "items": [
         {
@@ -180,7 +171,8 @@
                 "accuracy": 0,
                 "effects": "Nessuno",
                 "rateOfFire": 2,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackBase": 11
             }
         },
         {
@@ -194,7 +186,8 @@
                 "accuracy": 0,
                 "effects": "Sanguinamento (30%)",
                 "rateOfFire": 1,
-                "damageType": "piercing"
+                "damageType": "piercing",
+                "attackBase": 11
             }
         }
     ],

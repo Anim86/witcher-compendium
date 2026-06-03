@@ -117,22 +117,6 @@
                 }
             }
         },
-        "details": {
-            "biography": "<p>Piccole bestiacce scavatrici che attaccano implacabilmente in branco. Più intelligenti di quanto sembrino, sanno elaborare elementari tattiche di agguato.</p>",
-            "threat": "Facile",
-            "reward": 10,
-            "monsterType": "Ogroid",
-            "difficulty": "COMPLESSO",
-            "height": "Circa 1 m",
-            "weight": "Circa 13 Kg",
-            "environment": "Pianure e foreste",
-            "organization": "Bande da 3 a 12",
-            "vulnerability": "",
-            "intelligence": "Quanto un umano stupido",
-            "bounty": 10,
-            "academicKnowledge": "",
-            "common": ""
-        },
         "derivedStats": {
             "vigor": {
                 "value": 0,
@@ -190,7 +174,9 @@
         "organization": "Bande da 3 a 12",
         "common": "",
         "academicKnowledge": "",
-        "vulnerability": ""
+        "vulnerability": "",
+        "customStat": true,
+        "dontAddAttr": true
     },
     "items": [
         {

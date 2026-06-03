@@ -116,20 +116,6 @@
                 }
             }
         },
-        "details": {
-            "biography": "<p>Ho sentito che Eyck di Denesle è stato ucciso da uno di questi mostri. Una manticora è una vera rogna e posso immaginarmi che un cavaliere pomposo come Eyck l'abbia sottovalutata. È una buona cosa che siano quasi estinte. Se incappi in una di 'ste bastarde, dì le tue preghiere. Il veleno di quel pungiglione può ammazzare un uomo in pochi secondi ed è più appiccicoso del catrame. – Rodolf Kazmer</p>",
-            "threat": "Difficile Complesso",
-            "reward": 1600,
-            "monsterType": "Hybrid",
-            "difficulty": "MEDIUM",
-            "height": "",
-            "weight": "",
-            "environment": "",
-            "organization": "",
-            "vulnerability": "",
-            "intelligence": "",
-            "bounty": 1600
-        },
         "derivedStats": {
             "rec": {
                 "value": 0,
@@ -170,7 +156,12 @@
         "environment": "",
         "organization": "",
         "intelligence": "",
-        "vulnerability": ""
+        "vulnerability": "",
+        "customStat": true,
+        "dontAddAttr": true,
+        "dodgeBase": 17,
+        "repositionBase": 18,
+        "blockBase": 20
     },
     "items": [
         {
@@ -184,7 +175,8 @@
                 "accuracy": 0,
                 "effects": "Nessuno",
                 "rateOfFire": 2,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackBase": 20
             }
         },
         {
@@ -198,7 +190,8 @@
                 "accuracy": 0,
                 "effects": "Nessuno",
                 "rateOfFire": 1,
-                "damageType": "piercing"
+                "damageType": "piercing",
+                "attackBase": 20
             }
         },
         {
@@ -212,7 +205,8 @@
                 "accuracy": 0,
                 "effects": "Veleno Bohun Upas (CD 15)",
                 "rateOfFire": 1,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackBase": 20
             }
         },
         {

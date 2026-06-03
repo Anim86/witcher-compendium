@@ -101,19 +101,6 @@
                 }
             }
         },
-        "details": {
-            "biography": "<p>Il cavallo da guerra è addestrato per resistere al caos del campo di battaglia. Più massiccio e coraggioso di un comune cavallo, è una risorsa inestimabile per qualsiasi cavaliere.</p>",
-            "threat": "Media Semplice",
-            "reward": "—",
-            "monsterType": "Beast",
-            "difficulty": "MEDIUM",
-            "height": "",
-            "weight": "",
-            "environment": "",
-            "organization": "",
-            "vulnerability": "",
-            "intelligence": ""
-        },
         "derivedStats": {
             "hp": {
                 "value": 50,
@@ -165,7 +152,9 @@
         "environment": "",
         "organization": "",
         "intelligence": "",
-        "vulnerability": ""
+        "vulnerability": "",
+        "customStat": true,
+        "dontAddAttr": true
     },
     "items": [
         {

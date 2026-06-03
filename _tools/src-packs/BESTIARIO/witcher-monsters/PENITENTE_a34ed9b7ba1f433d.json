@@ -113,22 +113,6 @@
                 }
             }
         },
-        "details": {
-            "biography": "<p>Spettri oscuri che perseguitano chi ha commesso crimini atroci, avvolgendo l'area in una fitta nebbia evocatrice di wraith.</p>",
-            "threat": "Medio",
-            "reward": 800,
-            "monsterType": "Specter",
-            "difficulty": "COMPLESSO",
-            "height": "2,2 m",
-            "weight": "90 Kg",
-            "environment": "Ovunque venga evocato",
-            "organization": "Solitario",
-            "vulnerability": "",
-            "intelligence": "Senziente",
-            "bounty": 800,
-            "academicKnowledge": "",
-            "common": ""
-        },
         "derivedStats": {
             "vigor": {
                 "value": 0,
@@ -186,7 +170,12 @@
         "organization": "Solitario",
         "common": "",
         "academicKnowledge": "",
-        "vulnerability": ""
+        "vulnerability": "",
+        "customStat": true,
+        "dontAddAttr": true,
+        "dodgeBase": 16,
+        "repositionBase": 18,
+        "blockBase": 17
     },
     "items": [
         {
@@ -202,7 +191,8 @@
                 "isStored": false,
                 "reliable": 0,
                 "rateOfFire": 1,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackBase": 17
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -222,7 +212,8 @@
                 "isStored": false,
                 "reliable": 0,
                 "rateOfFire": 1,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackBase": 15
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

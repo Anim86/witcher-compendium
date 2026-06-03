@@ -78,22 +78,6 @@
             "cra": {},
             "will": {}
         },
-        "details": {
-            "biography": "<p>Enormi insettoidi corazzati che si mimetizzano nelle paludi. Sono incredibilmente velenosi e agili, ma dalla vista debole.</p>",
-            "threat": "Difficile",
-            "reward": 1000,
-            "monsterType": "Insectoid",
-            "difficulty": "COMPLESSO",
-            "height": "Circa 3 m",
-            "weight": "Circa 800 Kg",
-            "environment": "Paludi e pianure alluvionali",
-            "organization": "Solitaria",
-            "vulnerability": "",
-            "intelligence": "Circa come un cane",
-            "bounty": 1000,
-            "academicKnowledge": "",
-            "common": ""
-        },
         "derivedStats": {
             "vigor": {
                 "value": 0,
@@ -151,7 +135,9 @@
         "organization": "Solitaria",
         "common": "",
         "academicKnowledge": "",
-        "vulnerability": ""
+        "vulnerability": "",
+        "customStat": true,
+        "dontAddAttr": true
     },
     "items": [
         {

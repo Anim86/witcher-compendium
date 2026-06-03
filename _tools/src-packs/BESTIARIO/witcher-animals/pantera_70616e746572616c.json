@@ -109,19 +109,6 @@
                 }
             }
         },
-        "details": {
-            "biography": "<p>Ah, le pantere, che bestiacce esotiche! Ho sentito che le donne selvagge e le streghe del sud le tengono come famigli. Se vedete una pantera con gli occhi che brillano alla luce della luna, c'è un mago che vi sta spiando! Ne ho viste solo due in vita mia, mentre passavo per Mag Turga per… ehm… affari. Molto impressionanti, dico io, non vorrei diventare la loro vittima! – Rodolf Kazmer</p>",
-            "threat": "Media Semplice",
-            "reward": 20,
-            "monsterType": "Beast",
-            "difficulty": "MEDIUM",
-            "height": "",
-            "weight": "",
-            "environment": "",
-            "organization": "",
-            "vulnerability": "",
-            "intelligence": ""
-        },
         "derivedStats": {
             "hp": {
                 "value": 25,
@@ -173,7 +160,12 @@
         "environment": "",
         "organization": "",
         "intelligence": "",
-        "vulnerability": ""
+        "vulnerability": "",
+        "customStat": true,
+        "dontAddAttr": true,
+        "dodgeBase": 12,
+        "repositionBase": 16,
+        "blockBase": 15
     },
     "items": [
         {
@@ -188,7 +180,8 @@
                 "isStored": false,
                 "reliable": 0,
                 "rateOfFire": 1,
-                "damageType": "piercing"
+                "damageType": "piercing",
+                "attackBase": 15
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -207,7 +200,8 @@
                 "isStored": false,
                 "reliable": 0,
                 "rateOfFire": 1,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackBase": 15
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

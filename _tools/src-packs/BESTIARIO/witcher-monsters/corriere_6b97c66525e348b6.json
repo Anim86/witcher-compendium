@@ -74,22 +74,6 @@
             "cra": {},
             "will": {}
         },
-        "details": {
-            "biography": "<p>Viaggiatori coraggiosi o prezzolati che trasportano messaggi tra città, affrontando selve, mostri e criminali.</p>",
-            "threat": "Facile",
-            "reward": 0,
-            "monsterType": "Humanoid",
-            "difficulty": "SEMPLICE",
-            "height": "Normale umana",
-            "weight": "Normale umano",
-            "environment": "Strade, percorsi isolati",
-            "organization": "Solitario",
-            "vulnerability": "",
-            "intelligence": "Senziente",
-            "bounty": 0,
-            "academicKnowledge": "",
-            "common": ""
-        },
         "derivedStats": {
             "hp": {
                 "value": 25,
@@ -146,7 +130,12 @@
         "description": "<p>Viaggiatori coraggiosi o prezzolati che trasportano messaggi tra città, affrontando selve, mostri e criminali.</p>",
         "vulnerability": "",
         "monsterType": "Humanoid",
-        "difficulty": "semplice"
+        "difficulty": "semplice",
+        "customStat": true,
+        "dontAddAttr": true,
+        "dodgeBase": 12,
+        "repositionBase": 13,
+        "blockBase": 10
     },
     "items": [
         {

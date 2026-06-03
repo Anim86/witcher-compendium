@@ -116,20 +116,6 @@
                 }
             }
         },
-        "details": {
-            "biography": "<p>Se sei mai passato per un campo di battaglia avrai visto 'sti bastardi. Ugh, fanno ribrezzo pure a me. La gente dice che i demoni putrefatti sono cadaveri rianimati con la magia nera. Che se ammazzi abbastanza gente ne avrai uno o due. Eh, nessuno sa perché ritornino in vita, ma c'è chi crede che sia perché erano avidi o depravati quando la loro anima era ancora su questa terra. Eh, comunque, se li hai tra le palle devi colpire alla radice. Trova tutti i cadaveri intorno al villaggio e bruciali. Se non lo fai, altri demoni putrefatti risorgeranno e dovrai occuparti anche di quelli! Quando hai finito con i cadaveri dai la caccia a 'sti abomini. Meglio farlo in gruppo. – Rodolf Kazmer</p>",
-            "threat": "Facile Semplice",
-            "reward": 10,
-            "monsterType": "Necrophage",
-            "difficulty": "MEDIUM",
-            "height": "2m",
-            "weight": "80kg",
-            "environment": "Caverne e Campi di Battaglia",
-            "organization": "Gruppi da 4 a 6",
-            "vulnerability": "Unguento Anti-Necrofagi",
-            "intelligence": "Ferale",
-            "bounty": 10
-        },
         "derivedStats": {
             "rec": {
                 "value": 5,
@@ -173,7 +159,12 @@
         "vulnerability": "",
         "armorHead": 0,
         "armorUpper": 0,
-        "armorLower": 0
+        "armorLower": 0,
+        "customStat": true,
+        "dontAddAttr": true,
+        "dodgeBase": 12,
+        "repositionBase": 12,
+        "blockBase": 12
     },
     "items": [
         {
@@ -187,7 +178,8 @@
                 "accuracy": 0,
                 "effects": "",
                 "rateOfFire": 2,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackBase": 12
             }
         },
         {

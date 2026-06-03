@@ -109,20 +109,6 @@
                 }
             }
         },
-        "details": {
-            "biography": "<p>Onestamente, il tipico popolano non sa granché delle streghe dei sepolcri. Eh, sono come incubi, abbastanza intelligenti da parlare, costruire trappole e adescare i bambini. – Rodolf Kazmer</p><p>Le streghe dei sepolcri sono tra i pochi necrofagi totalmente senzienti. Pur possedendo la magia, non hanno nulla a che fare con i maghi. Vivono nei pressi dei cimiteri e altre fonti di cadaveri.</p>",
-            "threat": "Ardua",
-            "reward": 1500,
-            "monsterType": "Necrophage",
-            "difficulty": "MEDIUM",
-            "height": "",
-            "weight": "",
-            "environment": "",
-            "organization": "",
-            "vulnerability": "",
-            "intelligence": "",
-            "bounty": 1500
-        },
         "derivedStats": {
             "vigor": {
                 "value": 0,
@@ -173,7 +159,9 @@
         "environment": "",
         "organization": "",
         "intelligence": "",
-        "vulnerability": ""
+        "vulnerability": "",
+        "customStat": true,
+        "dontAddAttr": true
     },
     "items": [
         {

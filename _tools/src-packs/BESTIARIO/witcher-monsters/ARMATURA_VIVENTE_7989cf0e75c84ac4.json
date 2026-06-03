@@ -97,22 +97,6 @@
                 }
             }
         },
-        "details": {
-            "biography": "<p>Costrutti magici a forma di pesanti armature complete vuote, animate dai maghi come instancabili guardie e sentinelle.</p>",
-            "threat": "Medio",
-            "reward": 400,
-            "monsterType": "Elementa",
-            "difficulty": "SEMPLICE",
-            "height": "In Base all'Armatura Usata",
-            "weight": "In Base all'Armatura Usata",
-            "environment": "Rovine e torri dei maghi",
-            "organization": "Solitario o coppia",
-            "vulnerability": "",
-            "intelligence": "Incapace di pensiero",
-            "bounty": 400,
-            "academicKnowledge": "",
-            "common": ""
-        },
         "derivedStats": {
             "vigor": {
                 "value": 0,
@@ -170,7 +154,12 @@
         "organization": "Solitario o coppia",
         "common": "",
         "academicKnowledge": "",
-        "vulnerability": ""
+        "vulnerability": "",
+        "customStat": true,
+        "dontAddAttr": true,
+        "dodgeBase": 12,
+        "repositionBase": 10,
+        "blockBase": 16
     },
     "items": [
         {

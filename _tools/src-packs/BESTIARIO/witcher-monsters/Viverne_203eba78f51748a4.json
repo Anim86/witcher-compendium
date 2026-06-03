@@ -117,20 +117,6 @@
                 }
             }
         },
-        "details": {
-            "biography": "<p>Le viverne sono tipo draghi con due zampe, credo. Dicono che una volta uccisi, berne il sangue dia potere sul fuoco. – Rodolf Kazmer</p><p>Le viverne infestano i picchi montani e danno la caccia a chi passa nelle vicinanze. Attaccano piombando dal cielo, tentando di restare in volo il più a lungo possibile. Non possono soffiare fuoco come i draghi, ma sputano veleno acido con grande precisione.</p>",
-            "threat": "Difficile",
-            "reward": 1500,
-            "monsterType": "Draconid",
-            "difficulty": "HARD",
-            "height": "",
-            "weight": "408 kg",
-            "environment": "",
-            "organization": "",
-            "vulnerability": "",
-            "intelligence": "",
-            "bounty": 1500
-        },
         "derivedStats": {
             "vigor": {
                 "value": 0,
@@ -181,7 +167,9 @@
         "environment": "",
         "organization": "",
         "intelligence": "",
-        "vulnerability": ""
+        "vulnerability": "",
+        "customStat": true,
+        "dontAddAttr": true
     },
     "items": [
         {

@@ -122,20 +122,6 @@
                 }
             }
         },
-        "details": {
-            "biography": "<p>Lo ammetto, amo i troll! Molta gente ne ha paura perché sono “mostri”, ma io penso che siano un sacco divertenti. Amano la vodka e non sono troppo svegli, per cui è facile prenderli in giro. Certa gente dice che se finisci per scontrarti con un troll lo devi attirare in acqua: è tanto pesante che non può nuotare e finisce affogato sul fondo. – Rodolf Kazmer</p>",
-            "threat": "Medio Semplice",
-            "reward": 800,
-            "monsterType": "Ogroid",
-            "difficulty": "MEDIUM",
-            "height": "",
-            "weight": "",
-            "environment": "",
-            "organization": "",
-            "vulnerability": "",
-            "intelligence": "",
-            "bounty": 800
-        },
         "derivedStats": {
             "rec": {
                 "value": 0,
@@ -176,7 +162,12 @@
         "environment": "",
         "organization": "",
         "intelligence": "",
-        "vulnerability": ""
+        "vulnerability": "",
+        "customStat": true,
+        "dontAddAttr": true,
+        "dodgeBase": 14,
+        "repositionBase": 10,
+        "blockBase": 15
     },
     "items": [
         {

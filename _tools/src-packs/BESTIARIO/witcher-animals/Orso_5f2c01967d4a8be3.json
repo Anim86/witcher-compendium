@@ -108,20 +108,6 @@
                 }
             }
         },
-        "details": {
-            "biography": "<p>Senti sempre parlare di quei grossi mostri schifosi con alito di fuoco, ipnosi magica, invisibilità e tutta quell'altra roba e finisci per dimenticarti delle fottute macchine assassine di madre natura. Eh, stavo su un carro che venne attaccato da un orso, già, ero lì sul retro a farmi i cavoli miei e all'improvviso tutto balla come se ci avesse colpito un maledetto trabucco! – Rodolf Kazmer</p>",
-            "threat": "Medio Semplice",
-            "reward": 450,
-            "monsterType": "Beast",
-            "difficulty": "MEDIUM",
-            "height": "",
-            "weight": "",
-            "environment": "",
-            "organization": "",
-            "vulnerability": "",
-            "intelligence": "",
-            "bounty": 450
-        },
         "derivedStats": {
             "rec": {
                 "value": 0,
@@ -162,7 +148,12 @@
         "environment": "",
         "organization": "",
         "intelligence": "",
-        "vulnerability": ""
+        "vulnerability": "",
+        "customStat": true,
+        "dontAddAttr": true,
+        "dodgeBase": 13,
+        "repositionBase": 10,
+        "blockBase": 15
     },
     "items": [
         {

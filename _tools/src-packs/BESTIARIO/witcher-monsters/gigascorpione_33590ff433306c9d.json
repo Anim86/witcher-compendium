@@ -113,18 +113,6 @@
                 }
             }
         },
-        "details": {
-            "biography": "<p>Il gigascorpione è una creatura mostruosa che infesta i deserti e le zone aride. Di dimensioni enormi, è protetto da un esoscheletro durissimo e possiede un veleno letale.</p>",
-            "threat": "Medio Complesso",
-            "monsterType": "Insectoid",
-            "difficulty": "MEDIUM",
-            "height": "",
-            "weight": "",
-            "environment": "",
-            "organization": "",
-            "vulnerability": "",
-            "intelligence": ""
-        },
         "derivedStats": {
             "hp": {
                 "value": 60,
@@ -191,7 +179,12 @@
         "intelligence": "",
         "vulnerability": "",
         "monsterType": "Insectoid",
-        "difficulty": "medium"
+        "difficulty": "medium",
+        "customStat": true,
+        "dontAddAttr": true,
+        "dodgeBase": 13,
+        "repositionBase": 10,
+        "blockBase": 15
     },
     "items": [
         {
@@ -205,7 +198,8 @@
                 "accuracy": 0,
                 "effects": "Nessuno",
                 "rateOfFire": 2,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackBase": 17
             }
         },
         {
@@ -219,7 +213,8 @@
                 "accuracy": 0,
                 "effects": "Portata, Sanguinamento (30%), Veleno (100%)",
                 "rateOfFire": 1,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackBase": 17
             }
         }
     ],

@@ -1,4 +1,5 @@
 import { getInteractActor } from '../helper.js';
+import { ApplyNormalDamage, ApplyNonLethalDamage } from './applyDamage.js';
 
 export function addAttackChatListeners(html) {
     // setup chat listener messages for each message as some need the message context instead of chatlog context.
@@ -13,6 +14,15 @@ export function addAttackChatListeners(html) {
 
 export const attackChatMessageListeners = async (message, html) => {
     html.querySelector('button.damage')?.addEventListener('click', _ => onDamage(message));
+    html.querySelector('button.defend')?.addEventListener('click', async _ => {
+        executeDefense(await getInteractActor(), message.id);
+    });
+    html.querySelector('button.apply-damage')?.addEventListener('click', async _ => {
+        ApplyNormalDamage(await getInteractActor(), parseInt(html.querySelector('.dice-total')?.innerText || 0), message.id);
+    });
+    html.querySelector('button.apply-non-lethal-damage')?.addEventListener('click', async _ => {
+        ApplyNonLethalDamage(await getInteractActor(), parseInt(html.querySelector('.dice-total')?.innerText || 0), message.id);
+    });
 };
 
 function onDamage(message) {

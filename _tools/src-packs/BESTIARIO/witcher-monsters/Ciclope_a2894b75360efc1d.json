@@ -112,20 +112,6 @@
                 }
             }
         },
-        "details": {
-            "biography": "<p>Per me i ciclopi sono proprio strani. Sembrano umani, indossano abiti, alcuni portano armi, ma la gente li considera mostri. Eh, penso sia perché urlano e cercano di schiacciare tutti quelli che gli passano accanto. Non sono troppo svegli: se ne stanno soli in un posto e cercano di schiacciare tutto quello che passa di lì. – Rodolf Kazmer</p>",
-            "threat": "Difficile Semplice",
-            "reward": 1200,
-            "monsterType": "Ogroid",
-            "difficulty": "MEDIUM",
-            "height": "6m",
-            "weight": "3000kg",
-            "environment": "Montagne e pianure",
-            "organization": "Solitario o coppia",
-            "vulnerability": "Unguento Anti-Orchi",
-            "intelligence": "Senziente",
-            "bounty": 1200
-        },
         "derivedStats": {
             "rec": {
                 "value": 11,
@@ -166,7 +152,12 @@
         "environment": "",
         "organization": "",
         "intelligence": "",
-        "vulnerability": ""
+        "vulnerability": "",
+        "customStat": true,
+        "dontAddAttr": true,
+        "dodgeBase": 16,
+        "repositionBase": 14,
+        "blockBase": 15
     },
     "items": [
         {

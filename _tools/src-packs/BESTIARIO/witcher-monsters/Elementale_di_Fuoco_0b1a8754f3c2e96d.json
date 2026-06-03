@@ -113,20 +113,6 @@
                 }
             }
         },
-        "details": {
-            "biography": "<p>Ho visto con i miei occhi quella cosa sfondare la testa di un cavallo in corsa con un solo colpo del suo grande pugno con gli spuntoni! Il cadavere della povera bestia fu ridotto in cenere! Ho sentito da qualche parte che gli elementali di fuoco bruciano le anime per ricaricare la propria magia. Ogni persona che uccidono viene intrappolata nel loro torace, come legna in una fornace. – Rodolf Kazmer</p>",
-            "threat": "Difficile Complesso",
-            "reward": 1600,
-            "monsterType": "Elementa",
-            "difficulty": "MEDIUM",
-            "height": "",
-            "weight": "100 Kg",
-            "environment": "",
-            "organization": "",
-            "vulnerability": "",
-            "intelligence": "",
-            "bounty": 1600
-        },
         "derivedStats": {
             "rec": {
                 "value": 10,
@@ -167,7 +153,12 @@
         "environment": "",
         "organization": "",
         "intelligence": "",
-        "vulnerability": ""
+        "vulnerability": "",
+        "customStat": true,
+        "dontAddAttr": true,
+        "dodgeBase": 14,
+        "repositionBase": 10,
+        "blockBase": 16
     },
     "items": [
         {
@@ -181,7 +172,8 @@
                 "accuracy": 0,
                 "effects": "Forza Schiacciante, A Fuoco (50%)",
                 "rateOfFire": 2,
-                "damageType": "bludgeoning"
+                "damageType": "bludgeoning",
+                "attackBase": 16
             }
         },
         {

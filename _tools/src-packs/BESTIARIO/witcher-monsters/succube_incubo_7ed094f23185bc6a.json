@@ -141,20 +141,6 @@
                 }
             }
         },
-        "details": {
-            "biography": "<p>Eh, ho avuto il piacere di incontrare un paio di volte una succube. Mai a letto, ovviamente! Penso che le succubi non siano troppo male. Una volta ci ho avuto una bella conversazione. Onestamente, a volte le preferisco agli umani, eh! La verità è che hanno bisogno di dormire con certa gente e… assorbirne la forza vitale, immagino. Ho sentito che molti di quei ‘fortunati' non vedono il mattino dopo. – Rodolf Kazmer</p>",
-            "threat": "Medio Semplice",
-            "reward": 400,
-            "monsterType": "Relict",
-            "difficulty": "MEDIUM",
-            "height": "",
-            "weight": "",
-            "environment": "",
-            "organization": "",
-            "vulnerability": "",
-            "intelligence": "",
-            "bounty": 400
-        },
         "derivedStats": {
             "rec": {
                 "value": 0,
@@ -198,7 +184,12 @@
         "vulnerability": "",
         "armorHead": 0,
         "armorUpper": 0,
-        "armorLower": 0
+        "armorLower": 0,
+        "customStat": true,
+        "dontAddAttr": true,
+        "dodgeBase": 14,
+        "repositionBase": 15,
+        "blockBase": 16
     },
     "items": [
         {
@@ -212,7 +203,8 @@
                 "accuracy": 0,
                 "effects": "Forza Schiacciante, Stordimento (-2)",
                 "rateOfFire": 1,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackBase": 13
             }
         },
         {
@@ -226,7 +218,8 @@
                 "accuracy": 0,
                 "effects": "Atterramento (50%), Forza Schiacciante",
                 "rateOfFire": 1,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackBase": 16
             }
         },
         {
@@ -240,7 +233,8 @@
                 "accuracy": 0,
                 "effects": "Forza Schiacciante",
                 "rateOfFire": 2,
-                "damageType": "bludgeoning"
+                "damageType": "bludgeoning",
+                "attackBase": 16
             }
         },
         {

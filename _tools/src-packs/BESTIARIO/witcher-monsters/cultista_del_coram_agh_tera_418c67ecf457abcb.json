@@ -108,7 +108,9 @@
             "cra": {},
             "will": {}
         },
-        "monsterType": "Humanoid"
+        "monsterType": "Humanoid",
+        "customStat": true,
+        "dontAddAttr": true
     },
     "effects": [],
     "flags": {},

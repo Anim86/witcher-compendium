@@ -145,20 +145,6 @@
                 }
             }
         },
-        "details": {
-            "biography": "<p>Ho saputo, da fonte attendibile, che la famosa Vergine di Aedirn, Saskia, era un drago! Questi affari possono assumere forma umana, soffiano fuoco tanto caldo da sciogliere la pietra e abbattono le mura dei castelli con gli artigli! Sono certo che i re del Nord terranno i loro preziosi ben nascosti. D'altronde i draghi vivono solo per due cose: ammazzare cavalieri e accumulare bottino. – Rodolf Kazmer</p>",
-            "threat": "Eccezionale Complesso",
-            "reward": 5000,
-            "monsterType": "Draconid",
-            "difficulty": "MEDIUM",
-            "height": "",
-            "weight": "",
-            "environment": "",
-            "organization": "",
-            "vulnerability": "",
-            "intelligence": "",
-            "bounty": 5000
-        },
         "derivedStats": {
             "rec": {
                 "value": 0,
@@ -202,7 +188,12 @@
         "vulnerability": "",
         "armorHead": 25,
         "armorUpper": 25,
-        "armorLower": 25
+        "armorLower": 25,
+        "customStat": true,
+        "dontAddAttr": true,
+        "dodgeBase": 24,
+        "repositionBase": 22,
+        "blockBase": 23
     },
     "items": [
         {
@@ -216,7 +207,8 @@
                 "accuracy": 0,
                 "effects": "",
                 "rateOfFire": 2,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackBase": 23
             }
         },
         {
@@ -230,7 +222,8 @@
                 "accuracy": 0,
                 "effects": "",
                 "rateOfFire": 1,
-                "damageType": "piercing"
+                "damageType": "piercing",
+                "attackBase": 23
             }
         },
         {

@@ -112,20 +112,6 @@
                 }
             }
         },
-        "details": {
-            "biography": "<p>Un elementale di terra è un grumo di magia della terra che indossa pezzi di roccia come armatura. Non sono proprio furbi. Ho sentito che controllano il terreno e possono creare spuntoni di roccia, muri e altre robe simili! Non penso proverei a piantare qualcosa nel corpo di un simile bestione se dovesse capitare! – Rodolf Kazmer</p>",
-            "threat": "Difficile Complesso",
-            "reward": 1500,
-            "monsterType": "Elementa",
-            "difficulty": "MEDIUM",
-            "height": "",
-            "weight": "",
-            "environment": "",
-            "organization": "",
-            "vulnerability": "",
-            "intelligence": "",
-            "bounty": 1500
-        },
         "derivedStats": {
             "rec": {
                 "value": 0,
@@ -169,7 +155,12 @@
         "vulnerability": "",
         "armorHead": 20,
         "armorUpper": 20,
-        "armorLower": 20
+        "armorLower": 20,
+        "customStat": true,
+        "dontAddAttr": true,
+        "dodgeBase": 12,
+        "repositionBase": 9,
+        "blockBase": 14
     },
     "items": [
         {
@@ -183,7 +174,8 @@
                 "accuracy": 0,
                 "effects": "",
                 "rateOfFire": 1,
-                "damageType": "bludgeoning"
+                "damageType": "bludgeoning",
+                "attackBase": 14
             }
         },
         {

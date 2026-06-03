@@ -8,6 +8,13 @@
                 <i class='fa-solid fa-heart' style='color: #2ecc71;'></i>
             {{else if (gte system.derivedStats.hp.value system.derivedStats.woundTreshold.value)}}
                 <i class='fa-solid fa-heart-crack' style='color: #f1c40f;'></i>
+            {{else if (lte system.derivedStats.hp.value 0)}}
+                <i class='fa-solid fa-skull' style='color: #e74c3c;'></i>
+                <div class="death-saves-counter" data-tooltip="Tiri Salvezza Effettuati (Penalità)" style="display: flex; gap: 5px; align-items: center; font-size: 12px; margin-top: 5px; background: rgba(0,0,0,0.5); padding: 2px 5px; border-radius: 4px;">
+                    <a class="death-minus"><i class="fas fa-minus"></i></a>
+                    <span style="font-weight: bold; color: white;">{{system.deathSaves}}</span>
+                    <a class="death-plus"><i class="fas fa-plus"></i></a>
+                </div>
             {{else}}
                 <i class='fa-solid fa-heart-crack' style='color: #e74c3c;'></i>
             {{/if}}
@@ -52,19 +59,7 @@
             </div>
         </div>
 
-        {{#if system.derivedStats.focus.max}}
-        {{!-- Focus --}}
-        <div class='resource-bar-container focus'>
-            <div class="bar-label-row">
-                <span class="bar-label"><i class="fas fa-eye"></i> {{localize 'WITCHER.Actor.DerStat.Focus'}}</span>
-                <span class="bar-value">{{system.derivedStats.focus.value}} <small>/</small> {{system.derivedStats.focus.max}}</span>
-            </div>
-            <div class="bar-wrapper">
-                <div class="bar-fill" style="width: {{pct system.derivedStats.focus.value system.derivedStats.focus.max}}%;"></div>
-                <input class='bar-input' name='system.derivedStats.focus.value' type='number' value='{{system.derivedStats.focus.value}}' data-dtype='Number' />
-            </div>
-        </div>
-        {{/if}}
+
     </div>
 
     <div class='side-stats-grid'>
@@ -130,6 +125,9 @@
             <a class="btn-roll crit-roll" data-action="rollCrit" data-tooltip="{{localize 'WITCHER.Actor.RollCrit'}}"><i class="fas fa-burst"></i></a>
             <a class="btn-roll recover-sta" data-action="recoverSta" data-tooltip="{{localize 'WITCHER.Dialog.staDialog'}}"><i class="fas fa-bed"></i></a>
             <a class="btn-roll heal-button" data-action="heal" data-tooltip="{{localize 'WITCHER.Heal.dialogTitle'}}"><i class="fas fa-heart-pulse"></i></a>
+            {{#if (lte system.derivedStats.hp.value 0)}}
+            <a class="btn-roll save-roll" data-action="rollSave" data-tooltip="{{localize 'WITCHER.DeathSave'}}"><i class="fas fa-skull"></i></a>
+            {{/if}}
         </div>
         <button class="modifiers-btn" data-action="openModifiers" data-type="stats" data-tooltip="{{localize 'WITCHER.Resources.modifiers'}}">
             <i class="fas fa-sliders-h"></i>

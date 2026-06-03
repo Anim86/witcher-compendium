@@ -78,22 +78,6 @@
             "cra": {},
             "will": {}
         },
-        "details": {
-            "biography": "<p>Orchi massicci, grandi costruttori (e bevitori di vodka). Sono creature molto forti, difese da uno spesso strato di roccia.</p>",
-            "threat": "Medio",
-            "reward": 800,
-            "monsterType": "Ogroid",
-            "difficulty": "COMPLESSO",
-            "height": "Circa 2 m",
-            "weight": "Circa 408 Kg",
-            "environment": "Valli e montagne",
-            "organization": "Solitario o coppia",
-            "vulnerability": "",
-            "intelligence": "Senziente (ma tonti)",
-            "bounty": 800,
-            "academicKnowledge": "",
-            "common": ""
-        },
         "derivedStats": {
             "vigor": {
                 "value": 0,
@@ -151,7 +135,9 @@
         "organization": "Solitario o coppia",
         "common": "",
         "academicKnowledge": "",
-        "vulnerability": ""
+        "vulnerability": "",
+        "customStat": true,
+        "dontAddAttr": true
     },
     "items": [
         {

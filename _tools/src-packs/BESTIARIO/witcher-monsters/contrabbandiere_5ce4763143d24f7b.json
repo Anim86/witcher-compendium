@@ -131,22 +131,6 @@
                 }
             }
         },
-        "details": {
-            "biography": "<p>I contrabbandieri trafficano merci illegalmente, spesso per evitare i pedaggi o per rifornire la resistenza oltre le linee nemiche. Sono maestri nell'evitare le pattuglie e nascondere il carico.</p>",
-            "threat": "Facile",
-            "reward": 10,
-            "monsterType": "Humanoid",
-            "difficulty": "SEMPLICE",
-            "height": "Normale umana",
-            "weight": "Normale umano",
-            "environment": "Strade, confini, porti e nascondigli",
-            "organization": "Solitario o in piccoli gruppi (Spesso legati a sindacati o Havekar)",
-            "vulnerability": "",
-            "intelligence": "Umana",
-            "bounty": 10,
-            "academicKnowledge": "I contrabbandieri sono criminali specializzati. Sanno come eludere i controlli ai confini e hanno sempre armi ben nascoste o balestrini compatti per tirarsi fuori dai guai in fretta senza dare nell'occhio.",
-            "common": "Coi ladri è abbastanza facile trattare, e tornano sempre utili. Scassinatori, borsaioli, topi d'appartamento, non ne trovi di migliori quando si tratta di entrare a forza. Ma i capibanda il cui mestiere è dedicarsi al crimine in generale... sono gli unici dai quali bisogna guardarsi, sempre a cercare la situazione migliore per loro."
-        },
         "derivedStats": {
             "hp": {
                 "value": 25,
@@ -203,7 +187,12 @@
         "description": "<p>I contrabbandieri trafficano merci illegalmente, spesso per evitare i pedaggi o per rifornire la resistenza oltre le linee nemiche. Sono maestri nell'evitare le pattuglie e nascondere il carico.</p>",
         "vulnerability": "",
         "monsterType": "Humanoid",
-        "difficulty": "semplice"
+        "difficulty": "semplice",
+        "customStat": true,
+        "dontAddAttr": true,
+        "dodgeBase": 13,
+        "repositionBase": 11,
+        "blockBase": 10
     },
     "items": [
         {
@@ -251,7 +240,8 @@
                 "enhancementSlots": 1,
                 "conceal": "G",
                 "category": "thrown",
-                "reliabilityMax": 5
+                "reliabilityMax": 5,
+                "attackBase": 12
             },
             "effects": [],
             "folder": null,
@@ -310,7 +300,8 @@
                 "conceal": "M",
                 "category": "smallBlade",
                 "range": "N/A",
-                "reliabilityMax": 5
+                "reliabilityMax": 5,
+                "attackBase": 10
             },
             "effects": [],
             "folder": null,

@@ -64,22 +64,6 @@
             "cra": {},
             "will": {}
         },
-        "details": {
-            "biography": "<p>Può vedere invisibilità e magia fino a 18m.</p>",
-            "threat": "",
-            "reward": 0,
-            "monsterType": "Beast",
-            "difficulty": "",
-            "height": "",
-            "weight": "",
-            "environment": "",
-            "organization": "",
-            "vulnerability": "",
-            "intelligence": "",
-            "bounty": 0,
-            "academicKnowledge": "",
-            "common": ""
-        },
         "derivedStats": {
             "hp": {
                 "value": 10,
@@ -137,7 +121,12 @@
         "common": "",
         "academicKnowledge": "",
         "bounty": 0,
-        "vulnerability": ""
+        "vulnerability": "",
+        "customStat": true,
+        "dontAddAttr": true,
+        "dodgeBase": 16,
+        "repositionBase": 18,
+        "blockBase": 17
     },
     "items": [
         {
@@ -153,7 +142,8 @@
                 "isStored": false,
                 "reliable": 0,
                 "rateOfFire": 1,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackBase": 17
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -173,7 +163,8 @@
                 "isStored": false,
                 "reliable": 0,
                 "rateOfFire": 1,
-                "damageType": "piercing"
+                "damageType": "piercing",
+                "attackBase": 17
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

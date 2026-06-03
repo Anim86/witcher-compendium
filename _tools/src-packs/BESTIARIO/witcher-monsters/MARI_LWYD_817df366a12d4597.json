@@ -101,22 +101,6 @@
                 }
             }
         },
-        "details": {
-            "biography": "<p>Tetri demoni scheletrici o bestiali che offrono \"ospitalità\" o perseguitano senza tregua coloro che non li invitano in casa offrendo cibi o doni.</p>",
-            "threat": "Difficile",
-            "reward": 1500,
-            "monsterType": "Relict",
-            "difficulty": "COMPLESSO",
-            "height": "Circa 2,5 m",
-            "weight": "135 Kg",
-            "environment": "Ovunque venga evocato",
-            "organization": "Solitario",
-            "vulnerability": "",
-            "intelligence": "Senziente",
-            "bounty": 1500,
-            "academicKnowledge": "",
-            "common": ""
-        },
         "derivedStats": {
             "vigor": {
                 "value": 0,
@@ -174,7 +158,12 @@
         "organization": "Solitario",
         "common": "",
         "academicKnowledge": "",
-        "vulnerability": ""
+        "vulnerability": "",
+        "customStat": true,
+        "dontAddAttr": true,
+        "dodgeBase": 18,
+        "repositionBase": 18,
+        "blockBase": 18
     },
     "items": [
         {
@@ -233,7 +222,8 @@
                 "accuracy": 0,
                 "effects": "Forza Schiacciante",
                 "rateOfFire": 2,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackBase": 18
             }
         }
     ],

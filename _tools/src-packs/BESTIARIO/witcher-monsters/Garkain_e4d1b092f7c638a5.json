@@ -112,20 +112,6 @@
                 }
             }
         },
-        "details": {
-            "biography": "<p>Dicono che se vedi un garkain è già troppo tardi! Non ho mai avuto questo piacere, ma ho visto alcuni disegni. I garkain si nascondono tra i gargoyle e balzano sui passanti per farli a pezzi con gli artigli. Alcuni sostengono che molti gargoyle della capitale del Nazair erano garkain, eh. – Rodolf Kazmer</p>",
-            "threat": "Medio Complesso",
-            "reward": 700,
-            "monsterType": "Vampire",
-            "difficulty": "MEDIUM",
-            "height": "2,25m",
-            "weight": "136kg",
-            "environment": "Vicino agli insediamenti",
-            "organization": "Solitario o coppia",
-            "vulnerability": "Unguento Anti-Vampiri, Pozione Sangue Nero, Bombe al Dimeritium",
-            "intelligence": "Ferale",
-            "bounty": 700
-        },
         "derivedStats": {
             "rec": {
                 "value": 7,
@@ -166,7 +152,12 @@
         "environment": "",
         "organization": "",
         "intelligence": "",
-        "vulnerability": ""
+        "vulnerability": "",
+        "customStat": true,
+        "dontAddAttr": true,
+        "dodgeBase": 21,
+        "repositionBase": 17,
+        "blockBase": 18
     },
     "items": [
         {
@@ -180,7 +171,8 @@
                 "accuracy": 0,
                 "effects": "Sanguinamento (75%)",
                 "rateOfFire": 1,
-                "damageType": "piercing"
+                "damageType": "piercing",
+                "attackBase": 18
             }
         },
         {
@@ -194,7 +186,8 @@
                 "accuracy": 0,
                 "effects": "Sanguinamento (25%)",
                 "rateOfFire": 2,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackBase": 18
             }
         },
         {

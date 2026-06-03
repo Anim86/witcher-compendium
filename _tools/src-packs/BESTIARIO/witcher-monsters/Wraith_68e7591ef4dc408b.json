@@ -117,22 +117,6 @@
                 }
             }
         },
-        "details": {
-            "biography": "<p>Spiriti di persone morte in circostanze terribili o con questioni in sospeso, consumati dall'odio e pronti ad attaccare i vivi.</p>",
-            "threat": "Facile",
-            "reward": 30,
-            "monsterType": "Specter",
-            "difficulty": "ARDUO",
-            "height": "Normale umana",
-            "weight": "Privo di peso",
-            "environment": "Campi di battaglia e cimiteri",
-            "organization": "Gruppi da 3 a 21",
-            "vulnerability": "",
-            "intelligence": "Consumato dalle emozioni",
-            "bounty": 30,
-            "academicKnowledge": "",
-            "common": "Sono le anime dei morti e dei dannati. Per scacciare un wraith serve un rituale: trovare il cadavere, pugnalarlo con un paletto di pioppo, tagliargli la testa e piazzarla tra le gambe, quindi dare fuoco al tutto."
-        },
         "derivedStats": {
             "vigor": {
                 "value": 0,
@@ -190,7 +174,9 @@
         "organization": "Gruppi da 3 a 21",
         "common": "Sono le anime dei morti e dei dannati. Per scacciare un wraith serve un rituale: trovare il cadavere, pugnalarlo con un paletto di pioppo, tagliargli la testa e piazzarla tra le gambe, quindi dare fuoco al tutto.",
         "academicKnowledge": "",
-        "vulnerability": ""
+        "vulnerability": "",
+        "customStat": true,
+        "dontAddAttr": true
     },
     "items": [
         {

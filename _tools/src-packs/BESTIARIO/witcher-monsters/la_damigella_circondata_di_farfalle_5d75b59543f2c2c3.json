@@ -114,20 +114,6 @@
                 }
             }
         },
-        "details": {
-            "biography": "<p>Questa creatura non è Francine Marchand, ma i suoi stessi capelli, cresciuti sino a proporzioni enormi e maligne a causa di una maledizione. Appare come un enorme ragno peloso composto da otto enormi ciocche sospese al soffitto.</p>",
-            "threat": "Difficile",
-            "reward": 0,
-            "monsterType": "Relict",
-            "difficulty": "HARD",
-            "height": "",
-            "weight": "80 Kg",
-            "environment": "",
-            "organization": "",
-            "vulnerability": "",
-            "intelligence": "",
-            "bounty": 0
-        },
         "derivedStats": {
             "rec": {
                 "value": 9,
@@ -165,7 +151,9 @@
         "environment": "",
         "organization": "",
         "intelligence": "",
-        "vulnerability": ""
+        "vulnerability": "",
+        "customStat": true,
+        "dontAddAttr": true
     },
     "items": [
         {

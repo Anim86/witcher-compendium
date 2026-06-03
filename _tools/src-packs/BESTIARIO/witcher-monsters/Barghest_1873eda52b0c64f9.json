@@ -108,20 +108,6 @@
                 }
             }
         },
-        "details": {
-            "biography": "<p>Alcuni dicono che i barghest sono i segugi della Caccia Selvaggia, cani normali trasformati da una maledizione. I preti ti vorranno far credere che sono un castigo divino, inviato per fare a pezzi i peccatori. Non so quale sia la verità. Eh, tutto quel che so è che girano in branchi e faresti bene ad avere un'armatura robusta, perché se il loro morso non basta a stenderti ti daranno fuoco per bruciarti vivo. – Rodolf Kazmer</p>",
-            "threat": "Facile Complesso",
-            "reward": 30,
-            "monsterType": "Specter",
-            "difficulty": "MEDIUM",
-            "height": "",
-            "weight": "",
-            "environment": "",
-            "organization": "",
-            "vulnerability": "",
-            "intelligence": "",
-            "bounty": 30
-        },
         "derivedStats": {
             "rec": {
                 "value": 0,
@@ -165,7 +151,12 @@
         "vulnerability": "",
         "armorHead": 0,
         "armorUpper": 0,
-        "armorLower": 0
+        "armorLower": 0,
+        "customStat": true,
+        "dontAddAttr": true,
+        "dodgeBase": 11,
+        "repositionBase": 13,
+        "blockBase": 12
     },
     "items": [
         {
@@ -179,7 +170,8 @@
                 "accuracy": 0,
                 "effects": "",
                 "rateOfFire": 1,
-                "damageType": "piercing"
+                "damageType": "piercing",
+                "attackBase": 12
             }
         },
         {

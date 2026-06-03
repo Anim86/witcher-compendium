@@ -109,20 +109,6 @@
                 }
             }
         },
-        "details": {
-            "biography": "<p>Una donna saggia del Mag Turga mi ha detto che si formano dai laghi gelati montani e calano a valle in cerca di luoghi di potere che li rendano più forti. Potresti pensare che basti scioglierli con il fuoco, ma sono parecchio robusti. Possono bucare una lastra d'acciaio con un pugno, evocare schegge di ghiaccio e roba simile. – Rodolf Kazmer</p>",
-            "threat": "Difficile Complesso",
-            "reward": 1600,
-            "monsterType": "Elementa",
-            "difficulty": "MEDIUM",
-            "height": "",
-            "weight": "130 Kg",
-            "environment": "",
-            "organization": "",
-            "vulnerability": "",
-            "intelligence": "",
-            "bounty": 1600
-        },
         "derivedStats": {
             "rec": {
                 "value": 11,
@@ -163,7 +149,12 @@
         "environment": "",
         "organization": "",
         "intelligence": "",
-        "vulnerability": ""
+        "vulnerability": "",
+        "customStat": true,
+        "dontAddAttr": true,
+        "dodgeBase": 14,
+        "repositionBase": 10,
+        "blockBase": 15
     },
     "items": [
         {
@@ -177,7 +168,8 @@
                 "accuracy": 0,
                 "effects": "Forza Schiacciante, Congelamento (50%)",
                 "rateOfFire": 1,
-                "damageType": "bludgeoning"
+                "damageType": "bludgeoning",
+                "attackBase": 15
             }
         },
         {

@@ -97,22 +97,6 @@
                 }
             }
         },
-        "details": {
-            "biography": "<p>Golem di carne formato da cadaveri parzialmente rianimati che conservano barlumi di coscienza, urlante e mortale. Creato da necromanti.</p>",
-            "threat": "Difficile",
-            "reward": 800,
-            "monsterType": "Elementa",
-            "difficulty": "ARDUO",
-            "height": "Varia",
-            "weight": "Circa 680 kg",
-            "environment": "Vicino a cripte e torri dei maghi",
-            "organization": "Solitario",
-            "vulnerability": "",
-            "intelligence": "Ferale (con scatti di lucidità)",
-            "bounty": 800,
-            "academicKnowledge": "",
-            "common": ""
-        },
         "derivedStats": {
             "vigor": {
                 "value": 0,
@@ -170,7 +154,12 @@
         "organization": "Solitario",
         "common": "",
         "academicKnowledge": "",
-        "vulnerability": ""
+        "vulnerability": "",
+        "customStat": true,
+        "dontAddAttr": true,
+        "dodgeBase": 12,
+        "repositionBase": 13,
+        "blockBase": 16
     },
     "items": [
         {

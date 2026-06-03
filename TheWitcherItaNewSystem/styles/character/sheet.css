@@ -956,6 +956,9 @@ a.button-roll:hover {
 .recover-sta    { border-color: rgba(53, 180, 227, 0.3); color: var(--w-teal-light); }
 .recover-sta:hover { background: rgba(53, 180, 227, 0.2); border-color: var(--w-teal-light); color: #fff; box-shadow: 0 0 15px rgba(53, 180, 227, 0.4); }
 
+.save-roll      { border-color: rgba(231, 76, 60, 0.3); color: #e74c3c; }
+.save-roll:hover { background: rgba(231, 76, 60, 0.2); border-color: #e74c3c; color: #fff; box-shadow: 0 0 15px rgba(231, 76, 60, 0.4); }
+
 .verbal-button  { background: linear-gradient(135deg, #7a3a7a, #ae55ae); color: #fff; border: 1px solid rgba(174, 85, 174, 0.3); }
 .verbal-button:hover{ background: linear-gradient(135deg, #a040a0, #c860c0); box-shadow: 0 0 12px rgba(200, 96, 192, 0.4); }
 

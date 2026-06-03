@@ -116,20 +116,6 @@
                 }
             }
         },
-        "details": {
-            "biography": "<p>Sin dalla nascita la cockatrice odia tutto e tutti, così ferocemente da trasformazione in pietra gli animali con uno sguardo! O almeno così dicono le superstizioni. Amano volare e scendere in picchiata con becco e artigli protesi. Quando cerca di trasformarti in pietra devi alzare uno specchio e rispedirle tutto indietro! – Rodolf Kazmer</p>",
-            "threat": "Medio Semplice",
-            "reward": 800,
-            "monsterType": "Draconid",
-            "difficulty": "MEDIUM",
-            "height": "2m",
-            "weight": "800kg",
-            "environment": "Caverne e cantine",
-            "organization": "Solitario o coppia",
-            "vulnerability": "Unguento Anti-Dragonidi",
-            "intelligence": "Ferale",
-            "bounty": 800
-        },
         "derivedStats": {
             "rec": {
                 "value": 8,
@@ -170,7 +156,12 @@
         "environment": "",
         "organization": "",
         "intelligence": "",
-        "vulnerability": ""
+        "vulnerability": "",
+        "customStat": true,
+        "dontAddAttr": true,
+        "dodgeBase": 15,
+        "repositionBase": 16,
+        "blockBase": 17
     },
     "items": [
         {
@@ -184,7 +175,8 @@
                 "accuracy": 0,
                 "effects": "Avvelenato (50%)",
                 "rateOfFire": 1,
-                "damageType": "piercing"
+                "damageType": "piercing",
+                "attackBase": 17
             }
         },
         {
@@ -198,7 +190,8 @@
                 "accuracy": 0,
                 "effects": "Sanguinamento (50%)",
                 "rateOfFire": 2,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackBase": 17
             }
         },
         {

@@ -142,20 +142,6 @@
                 }
             }
         },
-        "details": {
-            "biography": "<p>Coboldi, goblin e simili non sono troppo male, ma i battiroccia o polterduk o comunque si chiamino sono il peggio. Si nascondono nelle miniere e piazzano trappole per i lavoratori. A volte si fanno vedere e pestano quei poveretti, prima di scappare nei tunnel. Ho sentito che alcuni minatori si portano dei pezzi di rame con cui spaventarli. – Rodolf Kazmer</p>",
-            "threat": "Facile Semplice",
-            "reward": 25,
-            "monsterType": "Elementa",
-            "difficulty": "MEDIUM",
-            "height": "",
-            "weight": "",
-            "environment": "",
-            "organization": "",
-            "vulnerability": "",
-            "intelligence": "",
-            "bounty": 25
-        },
         "derivedStats": {
             "rec": {
                 "value": 0,
@@ -199,7 +185,12 @@
         "vulnerability": "",
         "armorHead": 10,
         "armorUpper": 10,
-        "armorLower": 10
+        "armorLower": 10,
+        "customStat": true,
+        "dontAddAttr": true,
+        "dodgeBase": 15,
+        "repositionBase": 14,
+        "blockBase": 13
     },
     "items": [
         {
@@ -213,7 +204,8 @@
                 "accuracy": 0,
                 "effects": "",
                 "rateOfFire": 2,
-                "damageType": "bludgeoning"
+                "damageType": "bludgeoning",
+                "attackBase": 13
             }
         },
         {

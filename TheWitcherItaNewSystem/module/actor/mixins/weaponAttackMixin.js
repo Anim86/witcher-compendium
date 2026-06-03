@@ -330,7 +330,7 @@ export let weaponAttackMixin = {
             messageDataFlavor = `<div class="attack-message"><h1><img src="${weapon.img}" class="item-img" />${game.i18n.localize('WITCHER.Attack.name')}: ${weapon.name}</h1>`;
             messageDataFlavor += `<span>  ${game.i18n.localize('WITCHER.Armor.Location')}: ${damage.location.alias} </span>`;
 
-            messageDataFlavor += `<button class="damage">${game.i18n.localize('WITCHER.table.Damage')}</button></div>`;
+            messageDataFlavor += `<div class="flexrow"><button class="damage">${game.i18n.localize('WITCHER.table.Damage')}</button><button class="defend" title="${game.i18n.localize('WITCHER.Context.Defense')}"><i class="fas fa-shield-alt"></i></button></div></div>`;
 
             if (weapon.system.rollOnlyDmg) {
                 weapon.rollDamage(damage);

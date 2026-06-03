@@ -69,22 +69,6 @@
             "cra": {},
             "will": {}
         },
-        "details": {
-            "biography": "<p>Se si allontana 10m, carica per 8d6 danni scaraventando a 8m.</p>",
-            "threat": "",
-            "reward": 0,
-            "monsterType": "Beast",
-            "difficulty": "",
-            "height": "",
-            "weight": "",
-            "environment": "",
-            "organization": "",
-            "vulnerability": "",
-            "intelligence": "",
-            "bounty": 0,
-            "academicKnowledge": "",
-            "common": ""
-        },
         "derivedStats": {
             "hp": {
                 "value": 50,
@@ -142,7 +126,9 @@
         "common": "",
         "academicKnowledge": "",
         "bounty": 0,
-        "vulnerability": ""
+        "vulnerability": "",
+        "customStat": true,
+        "dontAddAttr": true
     },
     "items": [
         {

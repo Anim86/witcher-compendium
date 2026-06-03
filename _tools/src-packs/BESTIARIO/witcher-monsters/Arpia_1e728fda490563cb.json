@@ -120,20 +120,6 @@
                 }
             }
         },
-        "details": {
-            "biography": "<p>Difficile viaggiare fra le montagne senza incappare nelle arpie. Amano gettarsi tutte insieme in picchiata sulla preda e sbranarla con gli artigli. Assicuratevi di non accamparti vicino ai nidi: conoscono magie oscure con cui possono rubarti i sogni e leggerti la mente mentre dormi. Una volta che ti entrano in testa possono farlo quando vogliono. – Rodolf Kazmer</p>",
-            "threat": "Facile Semplice",
-            "reward": 15,
-            "monsterType": "Hybrid",
-            "difficulty": "MEDIUM",
-            "height": "",
-            "weight": "",
-            "environment": "",
-            "organization": "",
-            "vulnerability": "",
-            "intelligence": "",
-            "bounty": 15
-        },
         "derivedStats": {
             "rec": {
                 "value": 0,
@@ -177,7 +163,12 @@
         "vulnerability": "",
         "armorHead": 0,
         "armorUpper": 0,
-        "armorLower": 0
+        "armorLower": 0,
+        "customStat": true,
+        "dontAddAttr": true,
+        "dodgeBase": 6,
+        "repositionBase": 7,
+        "blockBase": 12
     },
     "items": [
         {
@@ -191,7 +182,8 @@
                 "accuracy": 0,
                 "effects": "",
                 "rateOfFire": 2,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackBase": 12
             }
         },
         {

@@ -12,7 +12,7 @@ export let deathsaveMixin = {
 
     async _addDeathSaves(event) {
         event.preventDefault();
-        this.actor.update({ 'system.deathSaves': this.actor.system.deathSaves + 1 });
+        this.actor.update({ 'system.deathSaves': (this.actor.system.deathSaves || 0) + 1 });
     },
 
     async _onDeathSaveRoll(event) {

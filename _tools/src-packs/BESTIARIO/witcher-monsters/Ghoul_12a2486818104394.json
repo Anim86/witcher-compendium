@@ -74,22 +74,6 @@
             "cra": {},
             "will": {}
         },
-        "details": {
-            "biography": "<p>Luridi demoni necrofagi, che si nutrono dei morti sui campi di battaglia e attaccano chiunque si avvicini.</p>",
-            "threat": "Facile",
-            "reward": 30,
-            "monsterType": "Necrophage",
-            "difficulty": "COMPLESSO",
-            "height": "Circa 1,25 metri alla spalla",
-            "weight": "Circa 86 Kg",
-            "environment": "Campi di battaglia e cimiteri",
-            "organization": "Branchi da 3 a 6",
-            "vulnerability": "",
-            "intelligence": "Circa come un cane",
-            "bounty": 30,
-            "academicKnowledge": "",
-            "common": ""
-        },
         "derivedStats": {
             "vigor": {
                 "value": 0,
@@ -147,7 +131,9 @@
         "organization": "Branchi da 3 a 6",
         "common": "",
         "academicKnowledge": "",
-        "vulnerability": ""
+        "vulnerability": "",
+        "customStat": true,
+        "dontAddAttr": true
     },
     "items": [
         {

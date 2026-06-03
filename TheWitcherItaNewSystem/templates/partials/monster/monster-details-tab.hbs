@@ -52,15 +52,24 @@
             <h3 class="section-header"><i class="fas fa-scroll"></i> {{localize "WITCHER.Monster.Superstition"}}</h3>
             <div class="knowledge-container">
                 <div class="text-block">
-                    <label>{{localize "WITCHER.Monster.CommonerSuperstition"}}</label>
+                    <div class="knowledge-header flexrow">
+                        <label>{{localize "WITCHER.Monster.CommonerSuperstition"}}</label>
+                        <input type="text" name="system.commonSkillValue" value="{{system.commonSkillValue}}" placeholder="Skill / CD" class="skill-value-input"/>
+                    </div>
                     <textarea name="system.common" rows="3">{{system.common}}</textarea>
                 </div>
                 <div class="text-block">
-                    <label>{{localize "WITCHER.Monster.AcademicKnowledge"}}</label>
+                    <div class="knowledge-header flexrow">
+                        <label>{{localize "WITCHER.Monster.AcademicKnowledge"}}</label>
+                        <input type="text" name="system.academicKnowledgeSkillValue" value="{{system.academicKnowledgeSkillValue}}" placeholder="Skill / CD" class="skill-value-input"/>
+                    </div>
                     <textarea name="system.academicKnowledge" rows="3">{{system.academicKnowledge}}</textarea>
                 </div>
                 <div class="text-block">
-                    <label>{{localize "WITCHER.Monster.WitcherKnowledge"}}</label>
+                    <div class="knowledge-header flexrow">
+                        <label>{{localize "WITCHER.Monster.WitcherKnowledge"}}</label>
+                        <input type="text" name="system.monsterLoreSkillValue" value="{{system.monsterLoreSkillValue}}" placeholder="Skill / CD" class="skill-value-input"/>
+                    </div>
                     <textarea name="system.monsterLore" rows="3">{{system.monsterLore}}</textarea>
                 </div>
             </div>

@@ -117,20 +117,6 @@
                 }
             }
         },
-        "details": {
-            "biography": "<p>Dicono che le endriaghe siano come ogni altro insetto, solo un'infestazione di cui bisogna liberarsi. La gente immagina delle soluzioni davvero creative. – Rodolf Kazmer</p><p>Superati tutti i pericoli, si trova la regina e le uova. Chi arriva a questo punto dovrà affrontare ogni endriaga rimasta nell'area, perché la regina le convocherà tutte a difesa. La regina è tecnicamente un insetto, allo stesso modo in cui un leone è un gatto.</p>",
-            "threat": "Ardua",
-            "reward": 1000,
-            "monsterType": "Insectoid",
-            "difficulty": "MEDIUM",
-            "height": "",
-            "weight": "",
-            "environment": "",
-            "organization": "",
-            "vulnerability": "",
-            "intelligence": "",
-            "bounty": 1000
-        },
         "derivedStats": {
             "vigor": {
                 "value": 0,
@@ -181,7 +167,9 @@
         "environment": "",
         "organization": "",
         "intelligence": "",
-        "vulnerability": ""
+        "vulnerability": "",
+        "customStat": true,
+        "dontAddAttr": true
     },
     "items": [
         {

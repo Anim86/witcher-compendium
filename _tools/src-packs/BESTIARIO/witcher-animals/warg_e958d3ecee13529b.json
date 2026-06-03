@@ -113,22 +113,6 @@
                 }
             }
         },
-        "details": {
-            "biography": "<p>I warg sono più grossi dei lupi comuni, hanno la pelliccia marrone-rossiccia e occhi rossi luminescenti. Sono decisamente più intelligenti e guidano i branchi.</p>",
-            "threat": "Media",
-            "reward": 20,
-            "monsterType": "Beast",
-            "difficulty": "SEMPLICE",
-            "height": "Circa 1m al garrese",
-            "weight": "Circa 80 Kg",
-            "environment": "Foreste e pianure",
-            "organization": "Solitario (alla guida di branchi di lupi)",
-            "vulnerability": "",
-            "intelligence": "Superiore a un cane",
-            "bounty": 20,
-            "academicKnowledge": "",
-            "common": "Non c'è molto da dire sui lupi. Eh, sono dei maledetti bastardi che vivono nelle foreste e attaccano i viaggiatori. Di solito agiscono in branchi di 5 o 6 e hanno paura del fuoco. Se dovete combatterli fate in modo che non possano circondarvi, perché vi salteranno addosso da tutte le parti. Non è un bel modo di morire, secondo me. Le cose vanno sempre peggio dall'inizio della guerra, con tutti quei cadaveri in giro i lupi sono sempre più spavaldi. Eh, tanti credono che siano pure un segno di sventura. Non mi ricordo più quante profezie iniziano con un lupo. Seriamente, sono bestiacce maledette."
-        },
         "derivedStats": {
             "vigor": {
                 "value": 0,
@@ -186,7 +170,9 @@
         "organization": "Solitario (alla guida di branchi di lupi)",
         "common": "Non c'è molto da dire sui lupi. Eh, sono dei maledetti bastardi che vivono nelle foreste e attaccano i viaggiatori. Di solito agiscono in branchi di 5 o 6 e hanno paura del fuoco. Se dovete combatterli fate in modo che non possano circondarvi, perché vi salteranno addosso da tutte le parti. Non è un bel modo di morire, secondo me. Le cose vanno sempre peggio dall'inizio della guerra, con tutti quei cadaveri in giro i lupi sono sempre più spavaldi. Eh, tanti credono che siano pure un segno di sventura. Non mi ricordo più quante profezie iniziano con un lupo. Seriamente, sono bestiacce maledette.",
         "academicKnowledge": "",
-        "vulnerability": ""
+        "vulnerability": "",
+        "customStat": true,
+        "dontAddAttr": true
     },
     "items": [
         {

@@ -122,21 +122,6 @@
                 "unmodifiedMax": 0
             }
         },
-        "details": {
-            "biography": "<p>Individui maledetti per crimini atroci, diventano bestie feline agili e letali in preda a una sadica sete di sangue.</p>",
-            "threat": "Medio",
-            "difficulty": "COMPLESSO",
-            "reward": 500,
-            "height": "Circa 2 m",
-            "weight": "100 Kg",
-            "environment": "Foreste o insediamenti umani",
-            "organization": "Solitario",
-            "vulnerability": "",
-            "intelligence": "Umana (Sadica)",
-            "bounty": 500,
-            "academicKnowledge": "",
-            "common": ""
-        },
         "armorHead": 6,
         "armorUpper": 6,
         "armorLower": 6,
@@ -150,7 +135,12 @@
         "bounty": 500,
         "vulnerability": "",
         "difficulty": "complesso",
-        "monsterType": "CursedOne"
+        "monsterType": "CursedOne",
+        "customStat": true,
+        "dontAddAttr": true,
+        "dodgeBase": 16,
+        "repositionBase": 18,
+        "blockBase": 17
     },
     "effects": [],
     "flags": {},
@@ -215,7 +205,8 @@
                 "accuracy": 0,
                 "effects": "Sanguinamento (50%)",
                 "rateOfFire": 1,
-                "damageType": "piercing"
+                "damageType": "piercing",
+                "attackBase": 17
             }
         },
         {
@@ -229,7 +220,8 @@
                 "accuracy": 0,
                 "effects": "Sanguinamento (25%)",
                 "rateOfFire": 2,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackBase": 17
             }
         }
     ]

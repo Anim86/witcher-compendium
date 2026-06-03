@@ -113,18 +113,6 @@
                 }
             }
         },
-        "details": {
-            "biography": "<p>L'oritteropo è una creatura del deserto, simile a un grosso pangolino o a un formichiere corazzato. Sebbene non sia aggressivo per natura, è un combattente tenace se messo all'angolo.</p>",
-            "threat": "Facile Semplice",
-            "monsterType": "Beast",
-            "difficulty": "EASY",
-            "height": "",
-            "weight": "",
-            "environment": "",
-            "organization": "",
-            "vulnerability": "",
-            "intelligence": ""
-        },
         "derivedStats": {
             "hp": {
                 "value": 15,
@@ -191,7 +179,12 @@
         "intelligence": "",
         "vulnerability": "",
         "monsterType": "Beast",
-        "difficulty": "easy"
+        "difficulty": "easy",
+        "customStat": true,
+        "dontAddAttr": true,
+        "dodgeBase": 9,
+        "repositionBase": 8,
+        "blockBase": 8
     },
     "items": [
         {
@@ -205,7 +198,8 @@
                 "accuracy": 0,
                 "effects": "Sanguinamento (100%)",
                 "rateOfFire": 2,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackBase": 10
             }
         },
         {
@@ -219,7 +213,8 @@
                 "accuracy": 0,
                 "effects": "Nessuno",
                 "rateOfFire": 1,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackBase": 10
             }
         }
     ],

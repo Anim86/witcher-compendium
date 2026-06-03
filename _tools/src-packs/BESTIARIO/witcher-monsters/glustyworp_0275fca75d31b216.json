@@ -114,9 +114,11 @@
             "will": {}
         },
         "monsterType": "Relict",
-        "details": {
-            "weight": "100 Kg"
-        }
+        "customStat": true,
+        "dontAddAttr": true,
+        "dodgeBase": 16,
+        "repositionBase": 12,
+        "blockBase": 17
     },
     "effects": [],
     "flags": {},
@@ -136,7 +138,8 @@
                 "accuracy": 0,
                 "effects": "Ablativa, Sanguinamento (75%)",
                 "rateOfFire": 1,
-                "damageType": "piercing"
+                "damageType": "piercing",
+                "attackBase": 17
             }
         },
         {
@@ -150,7 +153,8 @@
                 "accuracy": 0,
                 "effects": "Portata, Presa",
                 "rateOfFire": 2,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackBase": 17
             }
         },
         {
@@ -164,7 +168,8 @@
                 "accuracy": 0,
                 "effects": "Stordimento",
                 "rateOfFire": 1,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackBase": 15
             }
         },
         {

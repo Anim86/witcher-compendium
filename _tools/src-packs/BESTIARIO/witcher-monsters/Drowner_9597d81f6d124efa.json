@@ -78,23 +78,6 @@
             "cra": {},
             "will": {}
         },
-        "details": {
-            "biography": "<p>Bestiacce anfibie prive di intelletto che vivono per affogare le vittime e mangiarsi i cadaveri.</p>",
-            "threat": "Facile",
-            "reward": 10,
-            "monsterType": "Necrophage",
-            "difficulty": "SEMPLICE",
-            "height": "Normale umana",
-            "weight": "Normale umano",
-            "environment": "Vicino a laghi, fiumi e coste",
-            "organization": "Gruppi da 3 a 6",
-            "vulnerability": "Olio per necrofagi, Fuoco",
-            "intelligence": "Circa quanto un pesce",
-            "bounty": 10,
-            "academicKnowledge": "",
-            "common": "Le favole raccontano che quando un bastardo abbastanza cattivo muore nell'acqua risorge come drowner.",
-            "resistances": "Nessuna particolare"
-        },
         "derivedStats": {
             "vigor": {
                 "value": 0,
@@ -154,7 +137,9 @@
         "armorLower": 0,
         "intelligence": "Circa quanto un pesce",
         "common": "Le favole raccontano che quando un bastardo abbastanza cattivo muore nell'acqua risorge come drowner.",
-        "academicKnowledge": ""
+        "academicKnowledge": "",
+        "customStat": true,
+        "dontAddAttr": true
     },
     "items": [
         {

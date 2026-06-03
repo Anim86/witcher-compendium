@@ -129,20 +129,6 @@
                 }
             }
         },
-        "details": {
-            "biography": "<p>Sono spiriti della natura, custodi delle case o roba simile. Il punto è che tendono a restare vicini ai villaggi e si prendono cura della gente. Riparano scarpe, tetti e roba del genere. Però, mi hanno detto, quando si costruiscono vere città, i godling diventano gelosi e si rivoltano. Conducono ratti della peste nei negozi, rovinano le fondamenta e divorano gli animali domestici. – Rodolf Kazmer</p>",
-            "threat": "Facile Semplice",
-            "reward": 20,
-            "monsterType": "Relict",
-            "difficulty": "MEDIUM",
-            "height": "",
-            "weight": "",
-            "environment": "",
-            "organization": "",
-            "vulnerability": "",
-            "intelligence": "",
-            "bounty": 20
-        },
         "derivedStats": {
             "rec": {
                 "value": 0,
@@ -186,7 +172,12 @@
         "vulnerability": "",
         "armorHead": 0,
         "armorUpper": 0,
-        "armorLower": 0
+        "armorLower": 0,
+        "customStat": true,
+        "dontAddAttr": true,
+        "dodgeBase": 13,
+        "repositionBase": 15,
+        "blockBase": 8
     },
     "items": [
         {
@@ -200,7 +191,8 @@
                 "accuracy": 0,
                 "effects": "",
                 "rateOfFire": 1,
-                "damageType": "bludgeoning"
+                "damageType": "bludgeoning",
+                "attackBase": 8
             }
         },
         {

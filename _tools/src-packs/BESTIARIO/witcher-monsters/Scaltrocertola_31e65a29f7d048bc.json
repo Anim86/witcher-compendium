@@ -116,20 +116,6 @@
                 }
             }
         },
-        "details": {
-            "biography": "<p>Le scaltrocertole – o dragolucertole – sono bestie infami. Sono una specie di drago, temibili e dotate di magia. Amano vivere nelle paludi e devi stare attento alle loro code spinate, colpiscono così velocemente che neppure un witcher può pararle! In certi posti dicono che se dai da mangiare a una scaltrocertola un pesce marinato nel miele l'animale si placa, ma è pura fantasia. – Rodolf Kazmer</p>",
-            "threat": "Difficile Complesso",
-            "reward": 1500,
-            "monsterType": "Draconid",
-            "difficulty": "MEDIUM",
-            "height": "3m",
-            "weight": "950kg",
-            "environment": "Montagne e paludi alluvionali",
-            "organization": "Solitario o coppia",
-            "vulnerability": "Unguento Anti-Dragonidi",
-            "intelligence": "Ferale",
-            "bounty": 1500
-        },
         "derivedStats": {
             "rec": {
                 "value": 9,
@@ -170,7 +156,12 @@
         "environment": "",
         "organization": "",
         "intelligence": "",
-        "vulnerability": ""
+        "vulnerability": "",
+        "customStat": true,
+        "dontAddAttr": true,
+        "dodgeBase": 17,
+        "repositionBase": 19,
+        "blockBase": 18
     },
     "items": [
         {
@@ -184,7 +175,8 @@
                 "accuracy": 0,
                 "effects": "Trapassare",
                 "rateOfFire": 1,
-                "damageType": "piercing"
+                "damageType": "piercing",
+                "attackBase": 20
             }
         },
         {
@@ -198,7 +190,8 @@
                 "accuracy": 0,
                 "effects": "Sanguinamento (50%)",
                 "rateOfFire": 2,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackBase": 20
             }
         },
         {

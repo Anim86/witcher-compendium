@@ -69,22 +69,6 @@
             "cra": {},
             "will": {}
         },
-        "details": {
-            "biography": "<p>Majestuosi super-predatori che uniscono l'aspetto e la ferocia di aquile e leoni. Colpiscono con forza devastante dal cielo.</p>",
-            "threat": "Difficile",
-            "reward": 1200,
-            "monsterType": "Hybrid",
-            "difficulty": "COMPLESSO",
-            "height": "Circa 2m al garrese",
-            "weight": "Circa 907 Kg",
-            "environment": "Picchi montani",
-            "organization": "Solitario o coppia",
-            "vulnerability": "",
-            "intelligence": "Circa come un cane",
-            "bounty": 1200,
-            "academicKnowledge": "",
-            "common": ""
-        },
         "derivedStats": {
             "vigor": {
                 "value": 0,
@@ -142,7 +126,9 @@
         "organization": "Solitario o coppia",
         "common": "",
         "academicKnowledge": "",
-        "vulnerability": ""
+        "vulnerability": "",
+        "customStat": true,
+        "dontAddAttr": true
     },
     "items": [
         {

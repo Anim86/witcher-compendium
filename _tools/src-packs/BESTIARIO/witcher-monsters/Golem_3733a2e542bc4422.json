@@ -69,22 +69,6 @@
             "cra": {},
             "will": {}
         },
-        "details": {
-            "biography": "<p>Costrutti di pietra ed argilla creati dai maghi come sentinelle eterne. Seguono instancabilmente i loro ordini ma sono del tutto incapaci di raziocinio indipendente.</p>",
-            "threat": "Difficile",
-            "reward": 1200,
-            "monsterType": "Elementa",
-            "difficulty": "SEMPLICE",
-            "height": "Circa 2,5 m",
-            "weight": "Circa 900 Kg",
-            "environment": "Rovine e torri dei maghi",
-            "organization": "Solitario",
-            "vulnerability": "",
-            "intelligence": "Incapace di pensiero",
-            "bounty": 1200,
-            "academicKnowledge": "",
-            "common": ""
-        },
         "derivedStats": {
             "vigor": {
                 "value": 0,
@@ -142,7 +126,9 @@
         "organization": "Solitario",
         "common": "",
         "academicKnowledge": "",
-        "vulnerability": ""
+        "vulnerability": "",
+        "customStat": true,
+        "dontAddAttr": true
     },
     "items": [
         {

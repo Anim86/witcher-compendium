@@ -148,21 +148,6 @@
                 "unmodifiedMax": 0
             }
         },
-        "details": {
-            "biography": "<p>Un temibile vampiro capace di assumere forme umanoidi o animali. Possiede un'agilità mortale e una saliva soporifera spaventosa.</p>",
-            "threat": "Difficile",
-            "difficulty": "ARDUO",
-            "reward": 2000,
-            "height": "Varia",
-            "weight": "Varia",
-            "environment": "Vicino a rovine, foreste cupe o città",
-            "organization": "Solitario",
-            "vulnerability": "",
-            "intelligence": "Senziente",
-            "bounty": 2000,
-            "academicKnowledge": "",
-            "common": ""
-        },
         "armorHead": 10,
         "armorUpper": 10,
         "armorLower": 10,
@@ -176,7 +161,12 @@
         "bounty": 2000,
         "vulnerability": "",
         "difficulty": "hard",
-        "monsterType": "Vampire"
+        "monsterType": "Vampire",
+        "customStat": true,
+        "dontAddAttr": true,
+        "dodgeBase": 22,
+        "repositionBase": 23,
+        "blockBase": 22
     },
     "effects": [],
     "flags": {},
@@ -256,7 +246,8 @@
                 "accuracy": 0,
                 "effects": "Succhiare Sangue, Trapassare",
                 "rateOfFire": 1,
-                "damageType": "piercing"
+                "damageType": "piercing",
+                "attackBase": 22
             }
         },
         {
@@ -270,7 +261,8 @@
                 "accuracy": 0,
                 "effects": "Sanguinamento (50%)",
                 "rateOfFire": 2,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackBase": 22
             }
         }
     ]

@@ -112,20 +112,6 @@
                 }
             }
         },
-        "details": {
-            "biography": "<p>Foglet? Fogler? Sentite entrambe, credo sia solo dialetto! Eh, comunque non ho mai avuto la fortuna di vederne uno. Dicono che infestino le paludi sulle le rive del Pontar e dello Yaruga, ma se è vero devono essere molto silenziosi. C'è un vecchio racconto popolare che ho sentito a Verden: dicono che i foglet arrivano con la nebbia e si nascondono al suo interno! Se ti capita di veder calare un banco di nebbia di notte, pianta i piedi e stai fermo. I foglet possono farti vedere cose nella nebbia. Se proprio devi continuare a muoverti lavati gli occhi con acqua di palude. – Rodolf Kazmer</p>",
-            "threat": "Medio Arduo",
-            "reward": 800,
-            "monsterType": "Necrophage",
-            "difficulty": "MEDIUM",
-            "height": "2m",
-            "weight": "75kg",
-            "environment": "Caverne e Paludi",
-            "organization": "Solitario",
-            "vulnerability": "Unguento Anti-Necrofagi, Bombe Polvere Lunare, Bombe al Dimeritium, Segno Yrden",
-            "intelligence": "Ferale",
-            "bounty": 800
-        },
         "derivedStats": {
             "rec": {
                 "value": 6,
@@ -166,7 +152,12 @@
         "environment": "",
         "organization": "",
         "intelligence": "",
-        "vulnerability": ""
+        "vulnerability": "",
+        "customStat": true,
+        "dontAddAttr": true,
+        "dodgeBase": 15,
+        "repositionBase": 16,
+        "blockBase": 15
     },
     "items": [
         {
@@ -180,7 +171,8 @@
                 "accuracy": 0,
                 "effects": "Nessuno",
                 "rateOfFire": 2,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackBase": 15
             }
         },
         {

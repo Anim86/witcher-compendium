@@ -116,20 +116,6 @@
                 }
             }
         },
-        "details": {
-            "biography": "<p>Non posso dire di conoscere qualcosa su un qualcosa che si chiama hym. Ho sentito voci su ombre e spettri del senso di colpa o roba simile. Forse intendi questi. Eh, una volta, tra una pinta e l'altra, ho parlato con un razziatore di An Skellig. Il povero bastardo era mezzo matto e chissà perché aveva voglia di dirmi come mai era al porto. Diceva di vedere l'ombra di un suo fratello di scudo con cui aveva navigato. La loro nave era affondata lungo la costa di Nazair e il ragazzo aveva dovuto lasciare annegare l'amico. – Rodolf Kazmer</p>",
-            "threat": "Difficile Arduo",
-            "reward": 1500,
-            "monsterType": "Specter",
-            "difficulty": "MEDIUM",
-            "height": "",
-            "weight": "",
-            "environment": "",
-            "organization": "",
-            "vulnerability": "",
-            "intelligence": "",
-            "bounty": 1500
-        },
         "derivedStats": {
             "rec": {
                 "value": 0,
@@ -173,7 +159,12 @@
         "vulnerability": "",
         "armorHead": 0,
         "armorUpper": 0,
-        "armorLower": 0
+        "armorLower": 0,
+        "customStat": true,
+        "dontAddAttr": true,
+        "dodgeBase": 16,
+        "repositionBase": 17,
+        "blockBase": 16
     },
     "items": [
         {
@@ -187,7 +178,8 @@
                 "accuracy": 0,
                 "effects": "",
                 "rateOfFire": 2,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackBase": 14
             }
         },
         {

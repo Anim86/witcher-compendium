@@ -117,20 +117,6 @@
                 }
             }
         },
-        "details": {
-            "biography": "<p>Ugh, non so se odio di più le endriaghe o le scolopendre giganti. Sono sempre grossi insetti che girano in gruppo e tendono imboscate. Almeno le scolopendre hanno un ventre molle dove piazzare un dardo; ma almeno con le endriaghe, se gli arrivi addosso, non devi preoccuparti che si infilino nel terreno e ti sbuchino alle spalle. – Rodolf Kazmer</p>",
-            "threat": "Facile Complesso",
-            "reward": 20,
-            "monsterType": "Insectoid",
-            "difficulty": "MEDIUM",
-            "height": "",
-            "weight": "50 Kg",
-            "environment": "",
-            "organization": "",
-            "vulnerability": "",
-            "intelligence": "",
-            "bounty": 20
-        },
         "derivedStats": {
             "rec": {
                 "value": 4,
@@ -171,7 +157,12 @@
         "environment": "",
         "organization": "",
         "intelligence": "",
-        "vulnerability": ""
+        "vulnerability": "",
+        "customStat": true,
+        "dontAddAttr": true,
+        "dodgeBase": 10,
+        "repositionBase": 11,
+        "blockBase": 11
     },
     "items": [
         {
@@ -185,7 +176,8 @@
                 "accuracy": 0,
                 "effects": "Veleno (30%)",
                 "rateOfFire": 1,
-                "damageType": "piercing"
+                "damageType": "piercing",
+                "attackBase": 10
             }
         },
         {

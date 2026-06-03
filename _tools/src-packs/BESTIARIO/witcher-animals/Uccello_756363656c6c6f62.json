@@ -64,22 +64,6 @@
             "cra": {},
             "will": {}
         },
-        "details": {
-            "biography": "<p>Può volare come azione. Se colpito cade e subisce danni da caduta.</p>",
-            "threat": "",
-            "reward": 0,
-            "monsterType": "Beast",
-            "difficulty": "",
-            "height": "",
-            "weight": "",
-            "environment": "",
-            "organization": "",
-            "vulnerability": "",
-            "intelligence": "",
-            "bounty": 0,
-            "academicKnowledge": "",
-            "common": ""
-        },
         "derivedStats": {
             "hp": {
                 "value": 10,
@@ -137,7 +121,9 @@
         "common": "",
         "academicKnowledge": "",
         "bounty": 0,
-        "vulnerability": ""
+        "vulnerability": "",
+        "customStat": true,
+        "dontAddAttr": true
     },
     "items": [
         {

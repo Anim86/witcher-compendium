@@ -368,7 +368,8 @@ export async function registerHandelbarHelpers() {
 
     Handlebars.registerHelper("pct", function (value, max) {
         if (!max || parseFloat(max) === 0) return 0;
-        return Math.round((parseFloat(value) / parseFloat(max)) * 100);
+        let pct = Math.round((parseFloat(value) / parseFloat(max)) * 100);
+        return Math.max(0, Math.min(100, pct));
     });
 
     Handlebars.registerHelper('substring', function (str, start, end) {

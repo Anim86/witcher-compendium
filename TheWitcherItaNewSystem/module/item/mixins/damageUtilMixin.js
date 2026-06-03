@@ -25,7 +25,15 @@ export let damageUtilMixin = {
 
     async rollDamage(damage) {
         let messageData = new ChatMessageData(this.parent);
-        messageData.flavor = `<div class="damage-message"><h1><img src="${this.img}" class="item-img" />${game.i18n.localize('WITCHER.table.Damage')}: ${this.name} </h1></div>`;
+        messageData.flavor = `<div class="damage-message">
+            <div class="flexrow" style="align-items: center; margin-bottom: 5px;">
+                <h1 style="border: none; margin: 0;"><img src="${this.img}" class="item-img" />${game.i18n.localize('WITCHER.table.Damage')}: ${this.name}</h1>
+                <div style="flex: 0 0 auto; display: flex; gap: 5px;">
+                    <button class="apply-damage" title="${game.i18n.localize('WITCHER.Context.applyDmg')}"><i class="fas fa-tint"></i></button>
+                    <button class="apply-non-lethal-damage" title="${game.i18n.localize('WITCHER.Context.applyNonLethal')}"><i class="fas fa-user-slash"></i></button>
+                </div>
+            </div>
+        </div>`;
 
         let damageFormula = this.sanitizeDamageFormula(damage.formula);
 
@@ -48,7 +56,6 @@ export let damageUtilMixin = {
         messageData.flavor += `<div><b>${game.i18n.localize('WITCHER.Dialog.attackLocation')}:</b> ${damage.location.alias} = ${damage.location.locationFormula} </div>`;
         let damageTypeloc = damage.type ? 'WITCHER.DamageType.' + damage.type : '';
         messageData.flavor += `<div><b>${game.i18n.localize('WITCHER.Dialog.damageType')}:</b> ${game.i18n.localize(damageTypeloc)} </div>`;
-        messageData.flavor += `<div>${game.i18n.localize('WITCHER.Damage.RemoveSP')}</div>`;
 
         if (damage.properties.effects && damage.properties.effects.length > 0) {
             messageData.flavor += `<b>${game.i18n.localize('WITCHER.Item.Effect')}:</b>`;

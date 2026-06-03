@@ -13,9 +13,7 @@ export default class MonsterData extends CommonActorData {
             threat: new fields.StringField({ initial: '' }),
             difficulty: new fields.StringField({ initial: '' }),
             complexity: new fields.StringField({ initial: '' }),
-            size: new fields.StringField({ initial: '' }),
             bounty: new fields.NumberField({ initial: 0 }),
-            biography: new fields.HTMLField({ initial: '' }),
             description: new fields.HTMLField({ initial: '' }),
             vulnerability: new fields.StringField({ initial: '' }),
             resistantNonSilver: new fields.BooleanField({
@@ -51,19 +49,10 @@ export default class MonsterData extends CommonActorData {
 
             common: new fields.StringField({ initial: '' }),
             commonSkillValue: new fields.StringField({ initial: '' }),
-            showCommonerSuperstition: new fields.BooleanField({
-                initial: true,
-                label: 'WITCHER.Monster.CommonerSuperstition'
-            }),
             academicKnowledge: new fields.StringField({ initial: '' }),
             academicKnowledgeSkillValue: new fields.StringField({ initial: '' }),
-            showAcademicKnowledge: new fields.BooleanField({
-                initial: true,
-                label: 'WITCHER.Monster.AcademicKnowledge'
-            }),
             monsterLore: new fields.StringField({ initial: '' }),
             monsterLoreSkillValue: new fields.StringField({ initial: '' }),
-            showMonsterLore: new fields.BooleanField({ initial: true, label: 'WITCHER.Monster.WitcherKnowledge' }),
 
             customStat: new fields.BooleanField({ initial: false, label: 'WITCHER.Monster.CustomHP/STA' }),
             addMeleeBonus: new fields.BooleanField({ initial: false, label: 'WITCHER.Monster.addMeleeBonus' }),

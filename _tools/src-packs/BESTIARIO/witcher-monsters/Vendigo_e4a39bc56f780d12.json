@@ -120,20 +120,6 @@
                 }
             }
         },
-        "details": {
-            "biography": "<p>Strano… non ho mai sentito di ‘sto vendigo, ma la gente ha ogni genere di superstizioni sui viaggi per i Gheppi, i Monti del Drago e all'improvviso ho sentito storie che ti farebbero venire i brividi alla schiena. Parlavano di una specie di spettro che perseguita i viaggiatori e fa venire loro fame come non l'hanno mai avuta. Alcuni montanari di Caingorn hanno cominciato a portare con sé razioni extra e a indossare ‘ste strambe maschere cerimoniali del lontano Nord. – Rodolf Kazmer</p>",
-            "threat": "Difficile Arduo",
-            "reward": 1500,
-            "monsterType": "Relict",
-            "difficulty": "MEDIUM",
-            "height": "",
-            "weight": "",
-            "environment": "",
-            "organization": "",
-            "vulnerability": "",
-            "intelligence": "",
-            "bounty": 1500
-        },
         "derivedStats": {
             "rec": {
                 "value": 0,
@@ -177,7 +163,12 @@
         "vulnerability": "",
         "armorHead": 0,
         "armorUpper": 0,
-        "armorLower": 0
+        "armorLower": 0,
+        "customStat": true,
+        "dontAddAttr": true,
+        "dodgeBase": 16,
+        "repositionBase": 19,
+        "blockBase": 20
     },
     "items": [
         {

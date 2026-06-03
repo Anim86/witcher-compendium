@@ -101,19 +101,6 @@
                 }
             }
         },
-        "details": {
-            "biography": "<p>I cani sono i compagni fedeli dell'uomo, utilizzati per la caccia, la guardia e la compagnia. In branchi selvaggi possono però rappresentare un serio pericolo.</p>",
-            "threat": "Bassa",
-            "reward": "—",
-            "monsterType": "Beast",
-            "difficulty": "EASY",
-            "height": "",
-            "weight": "",
-            "environment": "",
-            "organization": "",
-            "vulnerability": "",
-            "intelligence": ""
-        },
         "derivedStats": {
             "hp": {
                 "value": 20,
@@ -165,7 +152,9 @@
         "environment": "",
         "organization": "",
         "intelligence": "",
-        "vulnerability": ""
+        "vulnerability": "",
+        "customStat": true,
+        "dontAddAttr": true
     },
     "items": [
         {

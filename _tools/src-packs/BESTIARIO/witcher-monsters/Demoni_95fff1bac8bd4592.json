@@ -113,20 +113,6 @@
                 }
             }
         },
-        "details": {
-            "biography": "<p>E se ne incontri uno, ti farà cadere in trance per nutrirsi dei tuoi segreti più oscuri. Poi, dopo averti svuotato la mente, ti farà a pezzi e divorerà il tuo cadavere. – Rodolf Kazmer</p><p>I demoni sono tra i relitti più pericolosi che si incontrano nel Continente. Sono creature terrificanti simili ad alci, tanto colossali che neppure i membri della Scuola del Grifone riescono a stordirli con il segno Aard. Guariscono quasi istantaneamente e possono ipnotizzare con uno sguardo.</p>",
-            "threat": "Ardua",
-            "reward": 1500,
-            "monsterType": "Relict",
-            "difficulty": "MEDIUM",
-            "height": "",
-            "weight": "",
-            "environment": "",
-            "organization": "",
-            "vulnerability": "",
-            "intelligence": "",
-            "bounty": 1500
-        },
         "derivedStats": {
             "vigor": {
                 "value": 0,
@@ -177,7 +163,9 @@
         "environment": "",
         "organization": "",
         "intelligence": "",
-        "vulnerability": ""
+        "vulnerability": "",
+        "customStat": true,
+        "dontAddAttr": true
     },
     "items": [
         {

@@ -109,20 +109,6 @@
                 }
             }
         },
-        "details": {
-            "biography": "<p>Dicono che i wraith diurni siano le anime di giovani donne uccise poco prima del matrimonio. – Rodolf Kazmer</p><p>A volte le giovani fidanzate che muoiono di morte violenta prima del matrimonio ritornano come wraith diurni, creature potenti e vendicative. Le anime di queste donne sono folli per il dolore e la rabbia che le spinge a infestare i campi vicini alla loro tomba.</p>",
-            "threat": "Media",
-            "reward": 800,
-            "monsterType": "Specter",
-            "difficulty": "MEDIUM",
-            "height": "",
-            "weight": "",
-            "environment": "",
-            "organization": "",
-            "vulnerability": "",
-            "intelligence": "",
-            "bounty": 800
-        },
         "derivedStats": {
             "vigor": {
                 "value": 0,
@@ -173,7 +159,9 @@
         "environment": "",
         "organization": "",
         "intelligence": "",
-        "vulnerability": ""
+        "vulnerability": "",
+        "customStat": true,
+        "dontAddAttr": true
     },
     "items": [
         {

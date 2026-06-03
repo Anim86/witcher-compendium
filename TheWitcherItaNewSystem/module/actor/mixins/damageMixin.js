@@ -177,17 +177,6 @@ export let damageMixin = {
 
         let flatDamageMod = this.getFlatDamageMod(damage);
 
-        totalDamage = Math.max(Math.floor(location.locationFormula * totalDamage), 0);
-        silverDamage = Math.max(Math.floor(location.locationFormula * silverDamage), 0);
-        let infoAfterLocation = totalDamage;
-        if (flatDamageMod) {
-            infoAfterLocation += `+${location.locationFormula * flatDamageMod}[${game.i18n.localize('WITCHER.Damage.activeEffect')}]`;
-        }
-
-        if (silverDamage) {
-            infoAfterLocation += `+${silverDamage}[${game.i18n.localize('WITCHER.Damage.silver')}]`;
-        }
-
         totalDamage = this.calculateArmorResistances(totalDamage, damage, armorSet);
 
         let damageTypeConfig = CONFIG.WITCHER.damageTypes.find(type => type.value === damage.type);
@@ -208,15 +197,26 @@ export let damageMixin = {
             silverDamage = Math.floor(0.5 * silverDamage);
         }
 
-        let infoAfterResistance = totalDamage;
-        if (silverDamage) {
-            totalDamage += silverDamage;
-            infoAfterResistance += `+${silverDamage}[${game.i18n.localize('WITCHER.Damage.silver')}]`;
-        }
-
         if (enemyData?.isVulnerable) {
             totalDamage *= 2;
             silverDamage *= 2;
+        }
+
+        let infoAfterResistance = totalDamage;
+        if (silverDamage) {
+            infoAfterResistance += `+${silverDamage}[${game.i18n.localize('WITCHER.Damage.silver')}]`;
+        }
+
+        totalDamage = Math.max(Math.floor(location.locationFormula * totalDamage), 0);
+        silverDamage = Math.max(Math.floor(location.locationFormula * silverDamage), 0);
+        let infoAfterLocation = totalDamage;
+        if (flatDamageMod) {
+            infoAfterLocation += `+${location.locationFormula * flatDamageMod}[${game.i18n.localize('WITCHER.Damage.activeEffect')}]`;
+        }
+
+        if (silverDamage) {
+            infoAfterLocation += `+${silverDamage}[${game.i18n.localize('WITCHER.Damage.silver')}]`;
+            totalDamage += silverDamage;
         }
 
         spDamage += await this.applySpDamage(location, properties, armorSet);

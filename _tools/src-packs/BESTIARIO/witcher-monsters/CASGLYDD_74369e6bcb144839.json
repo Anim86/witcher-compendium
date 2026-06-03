@@ -92,22 +92,6 @@
                 }
             }
         },
-        "details": {
-            "biography": "<p>Demoni della conoscenza. Si nascondono nell'ombra, raccogliendo informazioni e perseguitando accademici ed evocatori per consumarne l'intelletto.</p>",
-            "threat": "Medio",
-            "reward": 1500,
-            "monsterType": "Relict",
-            "difficulty": "SEMPLICE",
-            "height": "Circa 2,5 m",
-            "weight": "136 kg",
-            "environment": "Ovunque venga evocato (Reami d'ombra)",
-            "organization": "Solitario",
-            "vulnerability": "",
-            "intelligence": "Senziente",
-            "bounty": 1500,
-            "academicKnowledge": "",
-            "common": ""
-        },
         "derivedStats": {
             "vigor": {
                 "value": 0,
@@ -165,7 +149,12 @@
         "organization": "Solitario",
         "common": "",
         "academicKnowledge": "",
-        "vulnerability": ""
+        "vulnerability": "",
+        "customStat": true,
+        "dontAddAttr": true,
+        "dodgeBase": 16,
+        "repositionBase": 12,
+        "blockBase": 19
     },
     "items": [
         {
@@ -224,7 +213,8 @@
                 "accuracy": 0,
                 "effects": "Sanguinamento (25%)",
                 "rateOfFire": 2,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackBase": 19
             }
         }
     ],

@@ -130,19 +130,6 @@
                 }
             }
         },
-        "details": {
-            "biography": "<p>Oberhasil è il leader della troupe di artisti dell'Alderwood. Sebbene appaia come un buffo silvano mangione e bevitore, possiede un'antica saggezza e un profondo legame con la foresta. Ha una particolare predilezione per la vodka di Mahakam.</p>",
-            "threat": "Medio",
-            "reward": 400,
-            "monsterType": "Relict",
-            "difficulty": "MEDIUM",
-            "height": "",
-            "weight": "",
-            "environment": "",
-            "organization": "",
-            "vulnerability": "",
-            "intelligence": ""
-        },
         "derivedStats": {
             "hp": {
                 "value": 50,
@@ -209,7 +196,12 @@
         "intelligence": "",
         "vulnerability": "",
         "monsterType": "Relict",
-        "difficulty": "medium"
+        "difficulty": "medium",
+        "customStat": true,
+        "dontAddAttr": true,
+        "dodgeBase": 13,
+        "repositionBase": 8,
+        "blockBase": 12
     },
     "items": [
         {
@@ -223,7 +215,8 @@
                 "isStored": false,
                 "reliable": 0,
                 "rateOfFire": 1,
-                "damageType": "bludgeoning"
+                "damageType": "bludgeoning",
+                "attackBase": 12
             }
         }
     ],

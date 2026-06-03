@@ -69,22 +69,6 @@
             "cra": {},
             "will": {}
         },
-        "details": {
-            "biography": "<p>Intelligenti e letali vampiri, superiori ai loro cugini bestiali ma non ancora veri nosferatu. Si nascondono nell'invisibilità manipolando le prede telepaticamente.</p>",
-            "threat": "Difficile",
-            "reward": 1500,
-            "monsterType": "Vampire",
-            "difficulty": "COMPLESSO",
-            "height": "Circa 2 m",
-            "weight": "Circa 115 Kg",
-            "environment": "Rovine, caverne e vicino alle città",
-            "organization": "Solitario",
-            "vulnerability": "",
-            "intelligence": "Umana",
-            "bounty": 1500,
-            "academicKnowledge": "",
-            "common": ""
-        },
         "derivedStats": {
             "vigor": {
                 "value": 0,
@@ -142,7 +126,9 @@
         "organization": "Solitario",
         "common": "",
         "academicKnowledge": "",
-        "vulnerability": ""
+        "vulnerability": "",
+        "customStat": true,
+        "dontAddAttr": true
     },
     "items": [
         {

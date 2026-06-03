@@ -125,20 +125,6 @@
                 }
             }
         },
-        "details": {
-            "biography": "<p>L'unica cosa che avevo sentito sulle fenici è che erano uccelli mitologici fatti di fuoco e cenere. Una gran bella vista, specie di notte. Alcuni pensano che siano attirate dai più potenti maghi del fuoco. Ti consiglio di parlarci. Da quel che ho sentito sono abbastanza intelligenti… almeno per un enorme uccello di fuoco. – Rodolf Kazmer</p>",
-            "threat": "Medio Arduo",
-            "reward": 1200,
-            "monsterType": "Hybrid",
-            "difficulty": "MEDIUM",
-            "height": "3m",
-            "weight": "550kg",
-            "environment": "Montagne remote",
-            "organization": "Solitario o coppia",
-            "vulnerability": "Unguento Anti-Dragonidi, Bombe al Dimeritium",
-            "intelligence": "Senziente",
-            "bounty": 1200
-        },
         "derivedStats": {
             "rec": {
                 "value": 9,
@@ -179,7 +165,12 @@
         "environment": "",
         "organization": "",
         "intelligence": "",
-        "vulnerability": ""
+        "vulnerability": "",
+        "customStat": true,
+        "dontAddAttr": true,
+        "dodgeBase": 17,
+        "repositionBase": 16,
+        "blockBase": 16
     },
     "items": [
         {
@@ -193,7 +184,8 @@
                 "accuracy": 0,
                 "effects": "Sanguinamento (50%)",
                 "rateOfFire": 2,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackBase": 16
             }
         },
         {

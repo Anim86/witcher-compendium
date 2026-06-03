@@ -112,20 +112,6 @@
                 }
             }
         },
-        "details": {
-            "biography": "<p>Quella del frightener è una storia di tracotanza arcana. Qualche secolo fa c'era ‘sto mago, Dagobert Sulla, che voleva costruire una specie di macchina da guerra e realizzò il frightener: un insetto cazzo enorme. Secondo la leggenda il mago provò a distruggere ‘sta cosa, ma la bestiaccia fuggì sui monti e si riprodusse. Il guscio li rende quasi invincibili, quindi non provare neppure a dargli fuoco! – Rodolf Kazmer</p>",
-            "threat": "Difficile Arduo",
-            "reward": 2000,
-            "monsterType": "Insectoid",
-            "difficulty": "MEDIUM",
-            "height": "",
-            "weight": "",
-            "environment": "",
-            "organization": "",
-            "vulnerability": "",
-            "intelligence": "",
-            "bounty": 2000
-        },
         "derivedStats": {
             "rec": {
                 "value": 0,
@@ -169,7 +155,12 @@
         "vulnerability": "",
         "armorHead": 30,
         "armorUpper": 30,
-        "armorLower": 30
+        "armorLower": 30,
+        "customStat": true,
+        "dontAddAttr": true,
+        "dodgeBase": 15,
+        "repositionBase": 9,
+        "blockBase": 17
     },
     "items": [
         {
@@ -183,7 +174,8 @@
                 "accuracy": 0,
                 "effects": "",
                 "rateOfFire": 2,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackBase": 17
             }
         },
         {

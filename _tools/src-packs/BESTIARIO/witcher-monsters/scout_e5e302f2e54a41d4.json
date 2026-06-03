@@ -83,22 +83,6 @@
                 }
             }
         },
-        "details": {
-            "biography": "<p>Esploratori abili nel sopravvivere nei boschi. Spesso al servizio di militari, esplorano territori ostili.</p>",
-            "threat": "Facile",
-            "reward": 0,
-            "monsterType": "Humanoid",
-            "difficulty": "SEMPLICE",
-            "height": "Normale umana",
-            "weight": "Normale umano",
-            "environment": "Terre selvagge",
-            "organization": "Solitario",
-            "vulnerability": "",
-            "intelligence": "Senziente",
-            "bounty": 0,
-            "academicKnowledge": "",
-            "common": ""
-        },
         "derivedStats": {
             "hp": {
                 "value": 30,
@@ -155,7 +139,12 @@
         "description": "<p>Esploratori abili nel sopravvivere nei boschi. Spesso al servizio di militari, esplorano territori ostili.</p>",
         "vulnerability": "",
         "monsterType": "Humanoid",
-        "difficulty": "semplice"
+        "difficulty": "semplice",
+        "customStat": true,
+        "dontAddAttr": true,
+        "dodgeBase": 13,
+        "repositionBase": 15,
+        "blockBase": 11
     },
     "items": [
         {
@@ -194,7 +183,8 @@
                 "unmodifiedMax": {},
                 "enhancementSlots": 1,
                 "category": "bow",
-                "reliabilityMax": 10
+                "reliabilityMax": 10,
+                "attackBase": 14
             },
             "effects": [],
             "folder": null,
@@ -244,7 +234,8 @@
                 "conceal": "P",
                 "category": "axe",
                 "range": "N/A",
-                "reliabilityMax": 10
+                "reliabilityMax": 10,
+                "attackBase": 11
             },
             "effects": [],
             "folder": null,

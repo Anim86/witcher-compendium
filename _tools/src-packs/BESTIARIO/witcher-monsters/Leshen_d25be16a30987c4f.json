@@ -125,20 +125,6 @@
                 }
             }
         },
-        "details": {
-            "biography": "<p>Ho visto un leshen solo una volta in vita mia. All'improvviso sento un rumore e proprio lì, appena oltre gli alberi, c'è questa enorme… cosa. La gente dice che i leshen sono le foreste che hanno preso vita. Odiano più di tutto i bracconieri, i taglialegna e i raccoglitori e se entri nel bosco di un leshen finisci impalato su una radice. – Rodolf Kazmer</p>",
-            "threat": "Difficile Arduo",
-            "reward": 1500,
-            "monsterType": "Relict",
-            "difficulty": "MEDIUM",
-            "height": "2,5m",
-            "weight": "136kg",
-            "environment": "Profondo delle foreste",
-            "organization": "Solitario",
-            "vulnerability": "Unguento Anti-Ancestrali, Bombe al Dimeritium, Bombe Polvere Lunare, Fuoco",
-            "intelligence": "Senziente",
-            "bounty": 1500
-        },
         "derivedStats": {
             "rec": {
                 "value": 11,
@@ -179,7 +165,12 @@
         "environment": "",
         "organization": "",
         "intelligence": "",
-        "vulnerability": ""
+        "vulnerability": "",
+        "customStat": true,
+        "dontAddAttr": true,
+        "dodgeBase": 16,
+        "repositionBase": 12,
+        "blockBase": 18
     },
     "items": [
         {
@@ -193,7 +184,8 @@
                 "accuracy": 0,
                 "effects": "Nessuno",
                 "rateOfFire": 2,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackBase": 18
             }
         },
         {

@@ -133,20 +133,6 @@
                 }
             }
         },
-        "details": {
-            "biography": "<p>Una volta questo tipo dal Nazair mi ha detto che le bruxa sono ninfe corrotte da magia oscura e desideri carnali. Escono di notte e fanno sesso con giovanotti attraenti, prima di succhiare loro il sangue. Non è facile ucciderne una perché sono più veloci di qualsiasi umano, hanno artigli come rasoi e voci come arieti d'assedio. – Rodolf Kazmer</p>",
-            "threat": "Difficile Arduo",
-            "reward": 2000,
-            "monsterType": "Vampire",
-            "difficulty": "MEDIUM",
-            "height": "1,75m",
-            "weight": "90kg",
-            "environment": "Vicino agli insediamenti",
-            "organization": "Solitario",
-            "vulnerability": "Unguento Anti-Vampiri, Pozione Sangue Nero, Bombe Polvere Lunare, Fuoco",
-            "intelligence": "Superiore",
-            "bounty": 2000
-        },
         "derivedStats": {
             "rec": {
                 "value": 9,
@@ -187,7 +173,12 @@
         "environment": "",
         "organization": "",
         "intelligence": "",
-        "vulnerability": ""
+        "vulnerability": "",
+        "customStat": true,
+        "dontAddAttr": true,
+        "dodgeBase": 20,
+        "repositionBase": 22,
+        "blockBase": 24
     },
     "items": [
         {
@@ -201,7 +192,8 @@
                 "accuracy": 0,
                 "effects": "Sanguinamento (75%), Succhiare Sangue, Trapassare Migliorato",
                 "rateOfFire": 1,
-                "damageType": "piercing"
+                "damageType": "piercing",
+                "attackBase": 24
             }
         },
         {
@@ -215,7 +207,8 @@
                 "accuracy": 0,
                 "effects": "Sanguinamento (50%), Trapassare",
                 "rateOfFire": 2,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackBase": 24
             }
         },
         {
