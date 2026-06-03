@@ -14,6 +14,7 @@
         "damage": "10d6",
         "damageType": "slashing",
         "reliability": 20,
+        "effects": "Focus Superiore (Aria), Stordimento (2), Trapassare, Meteorite",
         "hands": "2",
         "range": "N/A",
         "enhancementSlots": 3,
@@ -22,7 +23,7 @@
             "effects": [
                 {
                     "id": "003c7f2370724b88",
-                    "name": "Focus Sup. (Aria)",
+                    "name": "Focus Superiore (Aria)",
                     "statusEffect": null,
                     "percentage": 100,
                     "varEffect": false

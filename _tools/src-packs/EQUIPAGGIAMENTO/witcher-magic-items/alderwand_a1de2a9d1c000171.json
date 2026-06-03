@@ -1,0 +1,20 @@
+{
+    "_id": "a1de2a9d1c000171",
+    "name": "Alderwand",
+    "type": "valuable",
+    "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/bastone.webp",
+    "system": {
+        "description": "<p>Bacchetta ricavata dalla radice di un antico leshen. Finche si trova nell'Alderwood, chi la impugna puo vedere e sentire cio che avviene nella foresta e concedere o revocare immunita alla magia dell'Alderwood.</p>",
+        "effect": "Focus (2), Focus Superiore",
+        "weight": 0,
+        "cost": 0,
+        "quantity": 1,
+        "sourcebook": "LR 25"
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
+}

@@ -12,7 +12,15 @@
                             <i class="fa-solid fa-book"></i>
                         </span>
                     </a>
-                    <h3 class="no-margin"><a class="item-roll">{{weapon.name}}</a></h3>
+                    <h3 class="no-margin weapon-name-line">
+                        <a class="item-roll">{{weapon.name}}</a>
+                        {{#if (itemFocusLabel weapon)}}
+                            <span class="item-tag weapon-row-focus" data-tooltip="{{localize "WITCHER.Actor.focus.name"}}">
+                                <i class="fa-solid fa-hat-wizard"></i>
+                                {{itemFocusLabel weapon}}
+                            </span>
+                        {{/if}}
+                    </h3>
                     <div class="list-label">
                         <span>{{weapon.system.damage}}</span>
                         <span class="reliable-details">
@@ -75,6 +83,18 @@
                             <i class="fa-solid fa-weight-hanging"></i>
                             {{weapon.system.weight}}
                         </span>
+                        {{#if (and weapon.system.effects (not (eq weapon.system.effects "N/A")))}}
+                            <span class="item-tag" data-tooltip="{{localize "WITCHER.Item.Effect"}}">
+                                <i class="fas fa-magic"></i>
+                                {{weapon.system.effects}}
+                            </span>
+                        {{/if}}
+                        {{#if (itemFocusLabel weapon)}}
+                            <span class="item-tag" data-tooltip="{{localize "WITCHER.Actor.focus.name"}}">
+                                <i class="fa-solid fa-hat-wizard"></i>
+                                {{itemFocusLabel weapon}}
+                            </span>
+                        {{/if}}
                     </div>
                     {{#if weapon.system.description}}
                         <div class="list-item-description">

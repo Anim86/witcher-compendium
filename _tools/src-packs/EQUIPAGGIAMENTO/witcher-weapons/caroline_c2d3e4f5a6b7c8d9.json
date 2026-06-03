@@ -14,6 +14,7 @@
         "damage": "9d6",
         "damageType": "slashing",
         "reliability": 15,
+        "effects": "Focus Superiore (Acqua), +25 Punti Salute, Bilanciata, Sanguinamento (75%)",
         "hands": "2",
         "range": "N/A",
         "enhancementSlots": 3,
@@ -22,7 +23,7 @@
             "effects": [
                 {
                     "id": "00011500c3ba4611",
-                    "name": "Focus Sup. (Acqua)",
+                    "name": "Focus Superiore (Acqua)",
                     "statusEffect": null,
                     "percentage": 100,
                     "varEffect": false

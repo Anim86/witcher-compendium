@@ -19,7 +19,15 @@
         "bludgeoning": false,
         "slashing": false,
         "piercing": false,
-        "effects": []
+        "effects": [
+            {
+                "id": "00f0c51a2d7b8e6a",
+                "name": "Focus Superiore",
+                "statusEffect": null,
+                "percentage": 100,
+                "varEffect": false
+            }
+        ]
     },
     "effects": [],
     "flags": {},

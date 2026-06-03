@@ -72,7 +72,21 @@
             <label>{{localize "WITCHER.Weapon.Short.Enhancements"}}</label>
             <input type="number" name="system.enhancements" value="{{item.system.enhancements}}" data-dtype="Number" />
         </div>
+        <div class="property-card">
+            <label>{{localize "WITCHER.Item.Equipped"}}</label>
+            <input type="checkbox" name="system.equipped" {{checked item.system.equipped}} />
+        </div>
         {{/unless}}
+        <div class="property-card">
+            <label>{{localize "WITCHER.Item.Effect"}}</label>
+            <input type="text" name="system.effects" value="{{item.system.effects}}" placeholder="N/A" />
+        </div>
+        {{#if (itemFocusLabel item)}}
+            <div class="property-card">
+                <label>{{localize "WITCHER.Actor.focus.name"}}</label>
+                <input type="text" value="{{itemFocusLabel item}}" disabled />
+            </div>
+        {{/if}}
     </div>
 
     <div class="item-settings-grid">

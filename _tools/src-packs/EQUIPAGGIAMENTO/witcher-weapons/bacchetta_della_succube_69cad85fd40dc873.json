@@ -14,6 +14,7 @@
         "damage": "3d6+2",
         "damageType": "bludgeoning",
         "reliability": 5,
+        "effects": "Portata, A Fuoco (25%), +2 Seduzione, Focus Superiore (Fuoco), Focus (5)",
         "hands": "2",
         "range": "Portata",
         "enhancementSlots": 3,
@@ -36,7 +37,7 @@
                 },
                 {
                     "id": "000027e00d554d88",
-                    "name": "Focus Sup. (Fuoco)",
+                    "name": "Focus Superiore (Fuoco)",
                     "statusEffect": null,
                     "percentage": 100,
                     "varEffect": false

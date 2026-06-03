@@ -11,6 +11,7 @@
         "damage": "2d6+2",
         "accuracy": 1,
         "reliability": 10,
+        "effects": "Argento (3d6), Focus (1)",
         "hands": "1",
         "type": {
             "text": "",
@@ -30,6 +31,13 @@
                 {
                     "id": "8002539d6bd0495e",
                     "name": "bilanciata",
+                    "statusEffect": null,
+                    "percentage": 100,
+                    "varEffect": false
+                },
+                {
+                    "id": "00c201b6ddd2aa76",
+                    "name": "Focus (1)",
                     "statusEffect": null,
                     "percentage": 100,
                     "varEffect": false

@@ -2742,8 +2742,8 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         const derived = this._calculateDerivedStats();
         const intVal = Number(this.characterData.stats.int) || 0;
         const willVal = Number(this.characterData.stats.will) || 0;
-        const resolveVal = (willVal + intVal) * 5;
-        const focusVal = (willVal + intVal) * 3;
+        const resolveVal = Math.floor((willVal + intVal) / 2) * 5;
+        const focusVal = Math.floor((willVal + intVal) / 2) * 3;
 
         actorData.system.derivedStats = {
             hp: {

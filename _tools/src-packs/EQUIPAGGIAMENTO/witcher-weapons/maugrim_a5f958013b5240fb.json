@@ -14,6 +14,7 @@
         "damage": "2d6",
         "damageType": "silver",
         "reliability": 10,
+        "effects": "Argento (6d6+4), Focus Superiore (Terra/Acqua), Bilanciata, Congelamento (75%)",
         "hands": "2",
         "range": "N/A",
         "enhancementSlots": 3,
@@ -22,7 +23,7 @@
             "effects": [
                 {
                     "id": "003a2b2a8734cc08",
-                    "name": "Focus Sup. (Terra/Acqua)",
+                    "name": "Focus Superiore (Terra/Acqua)",
                     "statusEffect": null,
                     "percentage": 100,
                     "varEffect": false

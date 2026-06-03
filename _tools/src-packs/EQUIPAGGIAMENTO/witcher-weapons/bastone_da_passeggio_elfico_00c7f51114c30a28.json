@@ -11,6 +11,7 @@
         "damage": "3d6",
         "accuracy": 1,
         "reliability": 10,
+        "effects": "Portata, Focus (3), Focus Superiore",
         "hands": "2",
         "range": "Portata",
         "type": {
@@ -37,7 +38,7 @@
                 },
                 {
                     "id": "0003fcbc120a74de",
-                    "name": "Focus Sup.",
+                    "name": "Focus Superiore",
                     "statusEffect": null,
                     "percentage": 100,
                     "varEffect": false

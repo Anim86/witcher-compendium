@@ -11,6 +11,7 @@
         "damage": "5d6+2",
         "accuracy": 1,
         "reliability": 15,
+        "effects": "Focus (1), Meteorite, Trapassare",
         "hands": "1",
         "type": {
             "text": "",
@@ -30,6 +31,13 @@
                 {
                     "id": "cea67c0e6b514822",
                     "name": "bilanciata",
+                    "statusEffect": null,
+                    "percentage": 100,
+                    "varEffect": false
+                },
+                {
+                    "id": "00e76df8b59bb949",
+                    "name": "Focus (1)",
                     "statusEffect": null,
                     "percentage": 100,
                     "varEffect": false

@@ -131,6 +131,59 @@ export async function registerHandelbarHelpers() {
         return calc;
     });
 
+    Handlebars.registerHelper('itemFocusLabel', function (item) {
+        const focusByName = {
+            'amuleto con gemma': { value: 3, superior: false },
+            'amuleto incantato': { value: 2, superior: false },
+            'amuleto incantato 1 incantesimo': { value: 2, superior: false },
+            'amuleto incantato 2 incantesimi': { value: 2, superior: false },
+            'amuleto incantato 3 incantesimi': { value: 2, superior: false },
+            'amuleto incantato 4 incantesimi': { value: 2, superior: false },
+            'amuleto semplice': { value: 1, superior: false },
+            'bacchetta della succube': { value: 5, superior: true },
+            'bastone': { value: 1, superior: false },
+            'bastone con cristallo': { value: 3, superior: true },
+            'bastone da passeggio elfico': { value: 3, superior: true },
+            'bastone del vincolo': { value: 3, superior: true },
+            'bastone di ferro': { value: 2, superior: false },
+            'bastone gnomesco': { value: 3, superior: false },
+            'bastone uncinato': { value: 1, superior: false }
+        };
+
+        const system = item?.system ?? {};
+        const effectNames = system.damageProperties?.effects?.map(effect => effect.name).join(' ') ?? '';
+        const focusText = [
+            system.effects,
+            system.effect,
+            system.description,
+            effectNames
+        ]
+            .filter(Boolean)
+            .join(' ');
+
+        const focusMatch = focusText.match(/\bFocus\s*\(?\s*(\d+)\s*\)?/i);
+        let focusInfo = focusMatch
+            ? {
+                  value: Number(focusMatch[1]) || 0,
+                  superior: /\bFocus\s*(Sup\.?|Superiore|Superior)/i.test(focusText)
+              }
+            : null;
+
+        if (!focusInfo) {
+            const normalizedName = String(item?.name ?? '')
+                .normalize('NFD')
+                .replace(/[\u0300-\u036f]/g, '')
+                .replace(/[()]/g, ' ')
+                .replace(/\s+/g, ' ')
+                .trim()
+                .toLowerCase();
+            focusInfo = focusByName[normalizedName] ?? null;
+        }
+
+        if (!focusInfo?.value) return '';
+        return `Focus (${focusInfo.value})${focusInfo.superior ? `, ${game.i18n.localize('WITCHER.Actor.focus.superior')}` : ''}`;
+    });
+
     Handlebars.registerHelper({
         eq: (v1, v2) => v1 === v2,
         ne: (v1, v2) => v1 !== v2,
@@ -138,6 +191,7 @@ export async function registerHandelbarHelpers() {
         gt: (v1, v2) => v1 > v2,
         lte: (v1, v2) => v1 <= v2,
         gte: (v1, v2) => v1 >= v2,
+        not: value => !value,
         and() {
             return Array.prototype.every.call(arguments, Boolean);
         },

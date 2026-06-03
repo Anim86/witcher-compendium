@@ -244,12 +244,13 @@ export let itemMixin = {
         // Sort alphabetically
         filteredIndex.sort((a, b) => a.name.localeCompare(b.name));
 
+        const dialogId = foundry.utils.randomID();
         let optionsHtml = filteredIndex.map(i => `
             <option value="${i.uuid}">${i.name}</option>
         `).join('');
 
         const content = `
-            <div class="compendium-select-dialog" style="padding: 10px; display: flex; flex-direction: column; gap: 8px;">
+            <div class="compendium-select-dialog" data-dialog-id="${dialogId}" style="padding: 10px; display: flex; flex-direction: column; gap: 8px;">
                 <p style="margin: 0; font-style: italic; opacity: 0.8;">Seleziona ${typeLabel.toLowerCase()} dal compendio:</p>
                 <input type="text" name="searchFilter" placeholder="${game.i18n.localize('WITCHER.Actor.Button.Search')}..." style="width: 100%; height: 35px; padding: 0 10px; background: rgba(0,0,0,0.3); color: white; border: 1px solid var(--w-gold); font-family: 'Goudy Old Style', serif; font-size: 16px; border-radius: 4px; outline: none; box-sizing: border-box;" autofocus />
                 <select name="itemUuid" style="width: 100%; height: 35px; background: rgba(0,0,0,0.3); color: white; border: 1px solid var(--w-gold); font-family: 'Goudy Old Style', serif; font-size: 16px; border-radius: 4px; outline: none; box-sizing: border-box;">
@@ -257,6 +258,69 @@ export let itemMixin = {
                 </select>
             </div>
         `;
+
+        const normalizeSearch = value => String(value ?? '')
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '')
+            .toLowerCase()
+            .trim();
+
+        const attachSearchFilter = (root = null) => {
+            const container = root?.matches?.(`[data-dialog-id="${dialogId}"]`) ? root
+                : root?.querySelector?.(`[data-dialog-id="${dialogId}"]`)
+                ?? document.querySelector(`[data-dialog-id="${dialogId}"]`);
+            if (!container) return false;
+
+            const searchInput = container.querySelector('[name="searchFilter"]');
+            const selectElement = container.querySelector('[name="itemUuid"]');
+            if (!searchInput || !selectElement) return false;
+            if (searchInput.dataset.filterBound === 'true') return true;
+
+            const originalOptions = Array.from(selectElement.options).map(opt => ({
+                value: opt.value,
+                text: opt.text,
+                searchText: normalizeSearch(opt.text)
+            }));
+
+            const renderOptions = () => {
+                const query = normalizeSearch(searchInput.value);
+                const matchingOptions = originalOptions.filter(opt => opt.searchText.includes(query));
+                selectElement.innerHTML = '';
+
+                if (matchingOptions.length === 0) {
+                    const emptyOption = document.createElement('option');
+                    emptyOption.value = '';
+                    emptyOption.text = game.i18n.localize('WITCHER.None');
+                    emptyOption.disabled = true;
+                    emptyOption.selected = true;
+                    selectElement.appendChild(emptyOption);
+                    return;
+                }
+
+                for (const opt of matchingOptions) {
+                    const newOpt = document.createElement('option');
+                    newOpt.value = opt.value;
+                    newOpt.text = opt.text;
+                    selectElement.appendChild(newOpt);
+                }
+                selectElement.selectedIndex = 0;
+            };
+
+            searchInput.addEventListener('input', renderOptions);
+            searchInput.addEventListener('keydown', (e) => {
+                if (e.key !== 'Enter') return;
+                e.preventDefault();
+                const confirmBtn = container.closest('.window-content')?.parentElement.querySelector('footer.window-footer button[data-button-action="confirm"]')
+                    || container.querySelector('button[data-button-action="confirm"]')
+                    || document.querySelector('footer.window-footer button[data-button-action="confirm"]');
+                if (confirmBtn) confirmBtn.click();
+            });
+
+            searchInput.dataset.filterBound = 'true';
+            setTimeout(() => searchInput.focus(), 50);
+            renderOptions();
+            return true;
+        };
 
         const dialog = new foundry.applications.api.DialogV2({
             window: { 
@@ -271,8 +335,10 @@ export let itemMixin = {
                     class: "standard-button gold",
                     default: true,
                     callback: async (event, button, instance) => {
-                        const element = instance.element || instance || document.querySelector('.compendium-select-dialog');
-                        const itemUuid = element?.querySelector('[name="itemUuid"]')?.value;
+                        const element = instance?.element || document;
+                        const container = element?.querySelector?.(`[data-dialog-id="${dialogId}"]`)
+                            ?? document.querySelector(`[data-dialog-id="${dialogId}"]`);
+                        const itemUuid = container?.querySelector('[name="itemUuid"]')?.value;
                         if (!itemUuid) return;
                         const item = await fromUuid(itemUuid);
                         this._onDropItem(event, item);
@@ -309,59 +375,14 @@ export let itemMixin = {
                     return;
                 }
 
-                const searchInput = rawElement.querySelector('[name="searchFilter"]');
-                const selectElement = rawElement.querySelector('[name="itemUuid"]');
-                if (!searchInput || !selectElement) {
-                    console.error("Witcher TRPG | Elementi di ricerca o select non trovati nel dialogo.", { searchInput, selectElement });
-                    return;
+                if (!attachSearchFilter(rawElement)) {
+                    console.error("Witcher TRPG | Elementi di ricerca o select non trovati nel dialogo.");
                 }
-
-                // Keep a copy of all original options
-                const originalOptions = Array.from(selectElement.options).map(opt => ({
-                    value: opt.value,
-                    text: opt.text
-                }));
-
-                // Focus search input
-                setTimeout(() => {
-                    if (searchInput) searchInput.focus();
-                }, 50);
-
-                searchInput.addEventListener('input', () => {
-                    const query = searchInput.value.toLowerCase().trim();
-                    
-                    // Clear the select
-                    selectElement.innerHTML = '';
-                    
-                    // Filter matching options
-                    const filtered = originalOptions.filter(opt => 
-                        opt.text.toLowerCase().includes(query)
-                    );
-                    
-                    // Populate with filtered options
-                    filtered.forEach(opt => {
-                        const newOpt = document.createElement('option');
-                        newOpt.value = opt.value;
-                        newOpt.text = opt.text;
-                        selectElement.appendChild(newOpt);
-                    });
-                });
-
-                searchInput.addEventListener('keydown', (e) => {
-                    if (e.key === 'Enter') {
-                        e.preventDefault();
-                        // Find the confirm button in the dialog's footer
-                        const confirmBtn = rawElement.closest('.window-content')?.parentElement.querySelector('footer.window-footer button[data-button-action="confirm"]')
-                                     || rawElement.querySelector('button[data-button-action="confirm"]')
-                                     || document.querySelector('footer.window-footer button[data-button-action="confirm"]');
-                        if (confirmBtn) {
-                            confirmBtn.click();
-                        }
-                    }
-                });
             }
         });
         dialog.render(true);
+        setTimeout(() => attachSearchFilter(), 100);
+        setTimeout(() => attachSearchFilter(), 300);
     },
 
     async _onItemEquip(event) {

@@ -76,7 +76,8 @@ export let castSpellMixin = {
         }
 
         let useFocus = false;
-        let expandedMagicSkill = this.findSkillWithName?.('Magia Ampliata')?.skill;
+        const canUseMagicalFocus = String(spellItem.system.class ?? '') !== 'MagicalGift';
+        let expandedMagicSkill = this._getExpandedMagicSkill();
         let handlebarFocusOptions = {};
         if (this.system.focus1.value > 0) {
             const focusSuperior = Boolean(this.system.focus1.superior);
@@ -152,6 +153,12 @@ export let castSpellMixin = {
             };
         });
 
+        if (!canUseMagicalFocus) {
+            useFocus = false;
+            expandedMagicSkill = null;
+            handlebarFocusOptions = {};
+        }
+
         let data = {
             causeDamage: spellItem.system.causeDamages,
             staminaIsVar: spellItem.system.staminaIsVar,
@@ -169,9 +176,9 @@ export let castSpellMixin = {
         let result = await DialogV2.prompt({
                 window: { 
                     title: `${game.i18n.localize('WITCHER.Spell.MagicCost')}`,
-                    contentClasses: ['scrollable', 'weapon-roll-dialog'] 
+                    contentClasses: ['scrollable', 'weapon-roll-dialog', 'compact-dialog'] 
                 },
-                position: { width: 900 },
+                position: { width: 600 },
                 content: dialogTemplate,
                 modal: true,
                 ok: {
@@ -290,7 +297,7 @@ export let castSpellMixin = {
         if (useExpandedFocus) {
             staCostParts.push(`/ ${expandedFocusDivisor} ${game.i18n.localize('WITCHER.Spell.ExpandedMagic')}`);
         } else if (focusBonus > 0) {
-            staCostParts.push(`- ${focusBonus} ${game.i18n.localize('WITCHER.Actor.DerStat.Focus')}`);
+            staCostParts.push(`- ${focusBonus} ${game.i18n.localize('WITCHER.Actor.focus.name')}`);
         }
 
         if (isExtraAttack) {
@@ -409,7 +416,7 @@ export let castSpellMixin = {
         let config = new RollConfig({ showResult: false });
         const magicRollThreshold = this._getMagicRollThreshold(spellItem, templateInfo.magicTarget);
         if (magicRollThreshold >= 0) {
-            config.threshold = magicRollThreshold;
+            config.threshold = magicRollThreshold + focusSuperiorBonus;
         }
 
         let roll = await extendedRoll(rollFormula, messageData, config);
@@ -620,6 +627,24 @@ export let castSpellMixin = {
         });
     },
 
+    _getExpandedMagicSkill() {
+        const profession = this.getList?.('profession')?.[0];
+        const normalizedProfessionName = String(profession?.name ?? '')
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '')
+            .trim()
+            .toLowerCase();
+
+        if (!['mago', 'mage'].includes(normalizedProfessionName)) return null;
+
+        const expandedMagicSkill =
+            this.findSkillWithName?.('Magia Ampliata')?.skill ??
+            this.findSkillWithName?.('Expanded Magic')?.skill ??
+            null;
+
+        return Number(expandedMagicSkill?.level ?? 0) > 0 ? expandedMagicSkill : null;
+    },
+
     _getEquippedItemFocusInfo(item) {
         if (!item?.system) return null;
 
@@ -641,13 +666,43 @@ export let castSpellMixin = {
             .filter(Boolean)
             .join(' ');
 
-        const focusMatch = focusText.match(/\bFocus\s*\((\d+)\)/i);
-        if (!focusMatch) return null;
+        const focusMatch = focusText.match(/\bFocus\s*\(?\s*(\d+)\s*\)?/i);
+        if (!focusMatch) return this._inferKnownItemFocusInfo(item);
 
         return {
             value: Number(focusMatch[1]) || 0,
             superior: /\bFocus\s*(Sup\.?|Superiore|Superior)/i.test(focusText)
         };
+    },
+
+    _inferKnownItemFocusInfo(item) {
+        const focusByName = {
+            'amuleto con gemma': { value: 3, superior: false },
+            'amuleto incantato': { value: 2, superior: false },
+            'amuleto incantato 1 incantesimo': { value: 2, superior: false },
+            'amuleto incantato 2 incantesimi': { value: 2, superior: false },
+            'amuleto incantato 3 incantesimi': { value: 2, superior: false },
+            'amuleto incantato 4 incantesimi': { value: 2, superior: false },
+            'amuleto semplice': { value: 1, superior: false },
+            'bacchetta della succube': { value: 5, superior: true },
+            'bastone': { value: 1, superior: false },
+            'bastone con cristallo': { value: 3, superior: true },
+            'bastone da passeggio elfico': { value: 3, superior: true },
+            'bastone del vincolo': { value: 3, superior: true },
+            'bastone di ferro': { value: 2, superior: false },
+            'bastone gnomesco': { value: 3, superior: false },
+            'bastone uncinato': { value: 1, superior: false }
+        };
+
+        const normalizedName = String(item?.name ?? '')
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '')
+            .replace(/[()]/g, ' ')
+            .replace(/\s+/g, ' ')
+            .trim()
+            .toLowerCase();
+
+        return focusByName[normalizedName] ?? null;
     },
 
     _doesSuperiorFocusApply(spellItem) {

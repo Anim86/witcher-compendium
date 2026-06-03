@@ -1,13 +1,13 @@
 {
-    "_id": "0007e9599cacf4bb",
-    "name": "Bastone del Vincolo",
+    "_id": "a45c87d2e1f9b3c6",
+    "name": "Vero Bastone del Vincolo",
     "type": "weapon",
     "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-weapons/bastone_del_vincolo.webp",
     "system": {
-        "description": "<p>Bastone di nocciolo trattato con vari fluidi animali e un diaspro sanguigno scolpito; un inquietante Focus creato solo per richiamare dal buio demoni e spiriti mortali.</p>",
+        "description": "<p>Versione completa del Bastone del Vincolo, rinforzata con puntali di ottone e meteorite, rune e optima mater. Oltre a essere un potente focus, puo essere usato nel Rituale del Vincolo.</p>",
         "weight": 2,
-        "cost": 0,
-        "sourcebook": "MB",
+        "cost": 2320,
+        "sourcebook": "TC 149",
         "damage": "2d6",
         "accuracy": 0,
         "reliability": 5,
@@ -30,14 +30,14 @@
             "isNonLethal": false,
             "effects": [
                 {
-                    "id": "00c98c02c0e85268",
+                    "id": "00c98c02c0e85269",
                     "name": "Focus (3)",
                     "statusEffect": null,
                     "percentage": 100,
                     "varEffect": false
                 },
                 {
-                    "id": "0023586128834338",
+                    "id": "0023586128834339",
                     "name": "Focus Superiore",
                     "statusEffect": null,
                     "percentage": 100,

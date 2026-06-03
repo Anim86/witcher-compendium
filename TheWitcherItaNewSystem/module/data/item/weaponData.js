@@ -15,12 +15,25 @@ function normalizeWeaponHands(value) {
         '': 'none',
         0: 'none',
         none: 'none',
+        nessuna: 'none',
         1: 'one',
         one: 'one',
+        'one-handed': 'one',
+        'one handed': 'one',
+        onehanded: 'one',
+        '1 hand': 'one',
+        '1 mano': 'one',
+        'una mano': 'one',
         left: 'one',
         right: 'one',
         2: 'two',
         two: 'two',
+        'two-handed': 'two',
+        'two handed': 'two',
+        twohanded: 'two',
+        '2 hands': 'two',
+        '2 mani': 'two',
+        'due mani': 'two',
         both: 'two'
     };
 
@@ -95,6 +108,10 @@ export default class WeaponData extends CommonItemData {
 
     prepareDerivedData() {
         super.prepareDerivedData();
+        this.hands = normalizeWeaponHands(this.hands);
+        if (this.hands === 'none' && this.category === 'staff') {
+            this.hands = 'two';
+        }
 
         let enhancementItemIds = this.enhancementItemIds;
         if (enhancementItemIds?.length > 0) {
@@ -169,6 +186,9 @@ export default class WeaponData extends CommonItemData {
     /** @inheritdoc */
     static migrateData(source) {
         source.hands = normalizeWeaponHands(source.hands);
+        if (source.hands === 'none' && source.category === 'staff') {
+            source.hands = 'two';
+        }
 
         if ('enhancementItems' in source) {
             source.enhancementItemIds = source.enhancementItemIds ?? [];

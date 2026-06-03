@@ -61,6 +61,21 @@ table th {
     font-weight: 600;
 }
 
+.weapon-name-line {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.weapon-row-focus {
+    color: #f1d38a;
+    border-color: rgba(241, 211, 138, 0.35);
+    background: rgba(184, 139, 54, 0.16);
+    font-size: 10px;
+    line-height: 1;
+}
+
 .item-enhancement { height: 30px; width: 30px; }
 .no-margin { margin: 0; }
 
