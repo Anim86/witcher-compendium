@@ -5,7 +5,13 @@
     "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-characters/broderick_il_bisteccone.webp",
     "system": {
         "description": "<p>Fondatore della Scuola della Lumaca. Un gigante goffo ma determinato, sopravvissuto a mutazioni difettose.</p>",
-        "sourcebook": "SL"
+        "sourcebook": "SL",
+        "automatedResistances": [],
+        "automatedVulnerabilities": [],
+        "automatedImmunities": [],
+        "resistances": "",
+        "vulnerability": "",
+        "immunities": ""
     },
     "effects": [],
     "flags": {},

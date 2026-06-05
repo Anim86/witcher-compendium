@@ -1,16 +1,22 @@
 {
-  "_id": "2adc7e29d0253b01",
-  "name": "La Stregonessa (Katakan)",
-  "type": "character",
-  "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-characters/la_stregonessa_katakan.webp",
-  "system": {
-    "description": "<p>Katakan. Vera identità: Erin Oswa Aep Led, cieca, originaria di Kovir. Appassionata collezionista di cimeli dei Witcher. Porta un medaglione della Scuola dell'Orso. Si muove con bastone d'argento con sfera.</p>",
-    "sourcebook": "LR 127"
-  },
-  "effects": [],
-  "flags": {},
-  "_stats": {
-    "systemId": "TheWitcherItaNewSystem",
-    "coreVersion": 14
-  }
+    "_id": "2adc7e29d0253b01",
+    "name": "La Stregonessa (Katakan)",
+    "type": "character",
+    "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-characters/la_stregonessa_katakan.webp",
+    "system": {
+        "description": "<p>Katakan. Vera identità: Erin Oswa Aep Led, cieca, originaria di Kovir. Appassionata collezionista di cimeli dei Witcher. Porta un medaglione della Scuola dell'Orso. Si muove con bastone d'argento con sfera.</p>",
+        "sourcebook": "LR 127",
+        "automatedResistances": [],
+        "automatedVulnerabilities": [],
+        "automatedImmunities": [],
+        "resistances": "",
+        "vulnerability": "",
+        "immunities": ""
+    },
+    "effects": [],
+    "flags": {},
+    "_stats": {
+        "systemId": "TheWitcherItaNewSystem",
+        "coreVersion": 14
+    }
 }

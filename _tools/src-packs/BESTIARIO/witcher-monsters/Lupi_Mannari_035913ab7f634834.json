@@ -161,7 +161,14 @@
         "intelligence": "",
         "vulnerability": "",
         "customStat": true,
-        "dontAddAttr": true
+        "dontAddAttr": true,
+        "automatedResistances": [
+            "bleeding"
+        ],
+        "automatedVulnerabilities": [],
+        "automatedImmunities": [],
+        "resistances": "",
+        "immunities": ""
     },
     "items": [
         {

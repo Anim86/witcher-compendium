@@ -44,6 +44,29 @@
             "ShowCharacterArtwork": "Mostra Immagine ai Giocatori",
             "ShowTokenArtwork": "Mostra Token ai Giocatori"
         },
+        "Stats": {
+            "stats": {
+                "Name": "Statistiche"
+            },
+            "derivedStats": {
+                "Name": "Statistiche Derivate"
+            },
+            "HP": {
+                "Abbr": "PF"
+            },
+            "STA": {
+                "Abbr": "STA"
+            },
+            "Resolve": {
+                "Abbr": "RIS"
+            },
+            "INT": {
+                "Abbr": "INT"
+            },
+            "Armor": {
+                "Abbr": "ARM"
+            }
+        },
         "Progression": {
             "Title": "Miglioramento Personaggio",
             "ConfirmTitle": "Conferma Miglioramento",
@@ -871,7 +894,13 @@
             "elemental": "Elementale (E)",
             "electricity": "Elettricità",
             "fire": "Fuoco",
-            "ice": "Ghiaccio"
+            "ice": "Ghiaccio",
+            "silver": "Argento",
+            "meteorite": "Meteorite",
+            "magic": "Magia",
+            "poison": "Veleno",
+            "bleeding": "Sanguinamento",
+            "stun": "Stordimento"
         },
         "profession": {
             "skillPath": {
@@ -1729,14 +1758,7 @@
                 "rollLabel": "Officiare Rituali"
             }
         },
-        "Stats": {
-            "stats": {
-                "Name": "Stats"
-            },
-            "derivedStats": {
-                "Name": "Derived Stats"
-            }
-        },
+
         "SocialStanding": "Posizione Sociale",
         "Profession": "Professione",
         "Reputation": "Reputazione",

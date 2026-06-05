@@ -143,7 +143,13 @@
         "description": "<p>Essendo un ‘nano lealista' ho qualcosa da dire sugli Scoia'tael. Adesso sono solo dei pazzi vendicativi... Troverete gli ultimi – che sono soprattutto elfi – nei boschi, nascosti nelle caverne e impegnati a tendere imboscate. – Rodolf Kazmer</p><p>Sono guerriglieri addestrati, che si muovono in gruppi detti “commando” e tendono imboscate. Spesso i commando seguono una preda per ore, in attesa di trovare il luogo migliore per l'imboscata. Iniziano l'attacco con raffiche di frecce dagli alberi.</p>",
         "sourcebook": "MB 276",
         "customStat": true,
-        "dontAddAttr": true
+        "dontAddAttr": true,
+        "automatedResistances": [],
+        "automatedVulnerabilities": [],
+        "automatedImmunities": [],
+        "resistances": "",
+        "vulnerability": "",
+        "immunities": ""
     },
     "items": [
         {

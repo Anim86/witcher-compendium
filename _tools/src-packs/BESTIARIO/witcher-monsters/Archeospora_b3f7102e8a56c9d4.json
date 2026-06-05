@@ -156,7 +156,15 @@
         "customStat": true,
         "dontAddAttr": true,
         "dodgeBase": 12,
-        "blockBase": 12
+        "blockBase": 12,
+        "automatedResistances": [],
+        "automatedVulnerabilities": [],
+        "automatedImmunities": [
+            "fire",
+            "poison"
+        ],
+        "resistances": "",
+        "immunities": ""
     },
     "items": [
         {

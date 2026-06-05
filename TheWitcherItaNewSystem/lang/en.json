@@ -43,6 +43,23 @@
             "ShowCharacterArtwork": "Show Character Artwork to Players",
             "ShowTokenArtwork": "Show Token Artwork to Players"
         },
+        "Stats": {
+            "HP": {
+                "Abbr": "HP"
+            },
+            "STA": {
+                "Abbr": "STA"
+            },
+            "Resolve": {
+                "Abbr": "RES"
+            },
+            "INT": {
+                "Abbr": "INT"
+            },
+            "Armor": {
+                "Abbr": "ARM"
+            }
+        },
         "Progression": {
             "Title": "Character Improvement",
             "StandardIP": "Experience Points (Standard)",
@@ -795,7 +812,13 @@
             "elemental": "Elemental (E)",
             "electricity": "Electricity",
             "fire": "Fire",
-            "ice": "Ice"
+            "ice": "Ice",
+            "silver": "Silver",
+            "meteorite": "Meteorite",
+            "magic": "Magic",
+            "poison": "Poison",
+            "bleeding": "Bleeding",
+            "stun": "Stun"
         },
         "profession": {
             "skillPath": {

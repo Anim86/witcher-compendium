@@ -865,6 +865,13 @@
 /* ── MONSTER DETAILS TAB LAYOUT ── */
 .monster-details-layout {
     display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.top-details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
@@ -1258,6 +1265,12 @@
 .abilities-grid {
     display: flex;
     flex-direction: column;
+    gap: 15px;
+}
+
+.abilities-grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 15px;
 }
 

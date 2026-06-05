@@ -128,7 +128,12 @@
         "bounty": 0,
         "vulnerability": "",
         "customStat": true,
-        "dontAddAttr": true
+        "dontAddAttr": true,
+        "automatedResistances": [],
+        "automatedVulnerabilities": [],
+        "automatedImmunities": [],
+        "resistances": "",
+        "immunities": ""
     },
     "items": [
         {

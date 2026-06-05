@@ -137,7 +137,16 @@
         "academicKnowledge": "",
         "vulnerability": "",
         "customStat": true,
-        "dontAddAttr": true
+        "dontAddAttr": true,
+        "automatedResistances": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "automatedVulnerabilities": [],
+        "automatedImmunities": [],
+        "resistances": "",
+        "immunities": ""
     },
     "items": [
         {

@@ -143,7 +143,15 @@
         "description": "<p>Banditi, disertori, rinnegati... Di solito la gente si dà al crimine per fame o paura. Il crimine va alle stelle quando c'è una guerra. – Rodolf Kazmer</p><p>I banditi sono una delle minacce più comuni lungo le strade. La maggioranza è formata da soldati senza un esercito, mercenari senza contratto o disertori. Sono individui semplici: i ranghi frontali caricano spada in pugno e chi non può tira con la balestra.</p>",
         "sourcebook": "MB 271",
         "customStat": true,
-        "dontAddAttr": true
+        "dontAddAttr": true,
+        "automatedResistances": [],
+        "automatedVulnerabilities": [
+            "poison"
+        ],
+        "automatedImmunities": [],
+        "resistances": "",
+        "vulnerability": "",
+        "immunities": ""
     },
     "items": [
         {

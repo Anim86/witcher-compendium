@@ -153,7 +153,14 @@
         "dontAddAttr": true,
         "dodgeBase": 14,
         "repositionBase": 8,
-        "blockBase": 15
+        "blockBase": 15,
+        "automatedResistances": [],
+        "automatedVulnerabilities": [],
+        "automatedImmunities": [
+            "slashing"
+        ],
+        "resistances": "",
+        "immunities": ""
     },
     "items": [
         {

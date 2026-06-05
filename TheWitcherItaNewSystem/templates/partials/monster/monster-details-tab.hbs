@@ -1,113 +1,117 @@
 <div class="monster-tab-content monster-details-layout">
-    {{!-- Left Column: Ecology & Biometrics --}}
-    <div class="details-column">
-        <section class="details-section ecology card">
-            <h3 class="section-header"><i class="fas fa-leaf"></i> {{localize "WITCHER.Monster.Environment"}}</h3>
-            <div class="details-grid">
-                <div class="detail-item">
-                    <label>{{localize "WITCHER.Monster.Environment"}}</label>
-                    <input name="system.environment" type="text" value="{{system.environment}}" />
-                </div>
-                <div class="detail-item">
-                    <label>{{localize "WITCHER.Monster.Organization"}}</label>
-                    <input name="system.organization" type="text" value="{{system.organization}}" />
-                </div>
-                <div class="detail-item">
-                    <label>{{localize "WITCHER.Monster.Height"}}</label>
-                    <input name="system.height" type="text" value="{{system.height}}" />
-                </div>
-                <div class="detail-item">
-                    <label>{{localize "WITCHER.Monster.Weight"}}</label>
-                    <input name="system.weight" type="text" value="{{system.weight}}" />
-                </div>
-            </div>
-        </section>
-
-        <section class="details-section vulnerabilities card">
-            <h3 class="section-header"><i class="fas fa-biohazard"></i> {{localize "WITCHER.Monster.Vulnerabilities"}} &amp; {{localize "WITCHER.Monster.Resistances"}}</h3>
-            <div class="vuln-res-container">
-                <div class="text-block">
-                    <label>{{localize "WITCHER.Monster.Vulnerabilities"}}</label>
-                    <textarea name="system.vulnerability" rows="3">{{system.vulnerability}}</textarea>
-                </div>
-                <div class="text-block">
-                    <label>{{localize "WITCHER.Monster.Resistances"}}</label>
-                    <textarea name="system.resistances" rows="3">{{system.resistances}}</textarea>
-                </div>
-                <div class="text-block">
-                    <label>{{localize "WITCHER.Monster.Immunities"}}</label>
-                    <textarea name="system.immunities" rows="2">{{system.immunities}}</textarea>
-                </div>
-                <div class="text-block">
-                    <label>{{localize "WITCHER.Monster.Susceptibilities"}}</label>
-                    <textarea name="system.susceptibilities" rows="2">{{system.susceptibilities}}</textarea>
-                </div>
-            </div>
-        </section>
-    </div>
-
-    {{!-- Right Column: Knowledge & Description --}}
-    <div class="details-column">
-        <section class="details-section knowledge card">
-            <h3 class="section-header"><i class="fas fa-scroll"></i> {{localize "WITCHER.Monster.Superstition"}}</h3>
-            <div class="knowledge-container">
-                <div class="text-block">
-                    <div class="knowledge-header flexrow">
-                        <label>{{localize "WITCHER.Monster.CommonerSuperstition"}}</label>
-                        <input type="text" name="system.commonSkillValue" value="{{system.commonSkillValue}}" placeholder="Skill / CD" class="skill-value-input"/>
+    {{!-- Top Grid: Ecology & Biometrics vs Abilities --}}
+    <div class="top-details-grid">
+        <div class="details-column left-column">
+            <section class="details-section ecology card">
+                <h3 class="section-header"><i class="fas fa-leaf"></i> {{localize "WITCHER.Monster.Environment"}}</h3>
+                <div class="details-grid">
+                    <div class="detail-item">
+                        <label>{{localize "WITCHER.Monster.Environment"}}</label>
+                        <input name="system.environment" type="text" value="{{system.environment}}" />
                     </div>
-                    <textarea name="system.common" rows="3">{{system.common}}</textarea>
-                </div>
-                <div class="text-block">
-                    <div class="knowledge-header flexrow">
-                        <label>{{localize "WITCHER.Monster.AcademicKnowledge"}}</label>
-                        <input type="text" name="system.academicKnowledgeSkillValue" value="{{system.academicKnowledgeSkillValue}}" placeholder="Skill / CD" class="skill-value-input"/>
+                    <div class="detail-item">
+                        <label>{{localize "WITCHER.Monster.Organization"}}</label>
+                        <input name="system.organization" type="text" value="{{system.organization}}" />
                     </div>
-                    <textarea name="system.academicKnowledge" rows="3">{{system.academicKnowledge}}</textarea>
-                </div>
-                <div class="text-block">
-                    <div class="knowledge-header flexrow">
-                        <label>{{localize "WITCHER.Monster.WitcherKnowledge"}}</label>
-                        <input type="text" name="system.monsterLoreSkillValue" value="{{system.monsterLoreSkillValue}}" placeholder="Skill / CD" class="skill-value-input"/>
+                    <div class="detail-item">
+                        <label>{{localize "WITCHER.Monster.Height"}}</label>
+                        <input name="system.height" type="text" value="{{system.height}}" />
                     </div>
-                    <textarea name="system.monsterLore" rows="3">{{system.monsterLore}}</textarea>
+                    <div class="detail-item">
+                        <label>{{localize "WITCHER.Monster.Weight"}}</label>
+                        <input name="system.weight" type="text" value="{{system.weight}}" />
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <section class="details-section biography card">
-            <h3 class="section-header"><i class="fas fa-book-open"></i> {{localize "WITCHER.Description"}}</h3>
-            <div class="bio-container">
-                {{editor system.description target="system.description" button=true owner=owner editable=editable}}
-            </div>
-        </section>
-    </div>
+            <section class="details-section vulnerabilities card">
+                <h3 class="section-header"><i class="fas fa-biohazard"></i> {{localize "WITCHER.Monster.Vulnerabilities"}} &amp; {{localize "WITCHER.Monster.Resistances"}}</h3>
+                <div class="vuln-res-container">
+                    <div class="text-block">
+                        <label>{{localize "WITCHER.Monster.Vulnerabilities"}}</label>
+                        <multi-select name="system.automatedVulnerabilities" style="margin-bottom: 5px;">
+                            {{selectOptions config.resistanceTypes selected=system.automatedVulnerabilities localize=true}}
+                        </multi-select>
+                        <textarea name="system.vulnerability" rows="3">{{system.vulnerability}}</textarea>
+                    </div>
+                    <div class="text-block">
+                        <label>{{localize "WITCHER.Monster.Resistances"}}</label>
+                        <multi-select name="system.automatedResistances" style="margin-bottom: 5px;">
+                            {{selectOptions config.resistanceTypes selected=system.automatedResistances localize=true}}
+                        </multi-select>
+                        <textarea name="system.resistances" rows="3">{{system.resistances}}</textarea>
+                    </div>
+                    <div class="text-block">
+                        <label>{{localize "WITCHER.Monster.Immunities"}}</label>
+                        <multi-select name="system.automatedImmunities" style="margin-bottom: 5px;">
+                            {{selectOptions config.resistanceTypes selected=system.automatedImmunities localize=true}}
+                        </multi-select>
+                        <textarea name="system.immunities" rows="2">{{system.immunities}}</textarea>
+                    </div>
+                    <div class="text-block">
+                        <label>{{localize "WITCHER.Monster.Susceptibilities"}}</label>
+                        <textarea name="system.susceptibilities" rows="2">{{system.susceptibilities}}</textarea>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-    {{!-- Full Width Bottom Section: Special Abilities --}}
-    <div class="details-footer">
-        <section class="details-section abilities card">
-            <h3 class="section-header"><i class="fas fa-star"></i> {{localize "WITCHER.Monster.SpecialAbilities"}}</h3>
-            <div class="abilities-grid">
-                {{#each abilities as |ability id|}}
-                <div class="ability-item item" data-item-id="{{ability.id}}">
-                    <div class="ability-header">
-                        <img src="{{ability.img}}" class="ability-icon" />
-                        <span class="ability-name">{{ability.name}}</span>
-                        <div class="ability-actions">
-                            <a class="item-action item-edit" title="{{localize 'WITCHER.Button.Edit'}}"><i class="fas fa-edit"></i></a>
-                            <a class="item-action item-delete" title="{{localize 'WITCHER.Button.Delete'}}"><i class="fas fa-trash"></i></a>
+        <div class="details-column right-column">
+            <section class="details-section abilities card" style="height: 100%;">
+                <h3 class="section-header"><i class="fas fa-star"></i> {{localize "WITCHER.Monster.SpecialAbilities"}}</h3>
+                <div class="abilities-grid-layout">
+                    {{#each abilities as |ability id|}}
+                    <div class="ability-item item" data-item-id="{{ability.id}}">
+                        <div class="ability-header">
+                            <img src="{{ability.img}}" class="ability-icon" />
+                            <span class="ability-name">{{ability.name}}</span>
+                            <div class="ability-actions">
+                                <a class="item-action item-edit" title="{{localize 'WITCHER.Button.Edit'}}"><i class="fas fa-edit"></i></a>
+                                <a class="item-action item-delete" title="{{localize 'WITCHER.Button.Delete'}}"><i class="fas fa-trash"></i></a>
+                            </div>
+                        </div>
+                        <div class="ability-description">
+                            {{{ability.system.description}}}
                         </div>
                     </div>
-                    <div class="ability-description">
-                        {{{ability.system.description}}}
-                    </div>
+                    {{/each}}
+                    {{#unless abilities}}
+                    <p class="no-data">{{localize "WITCHER.Monster.NoSpecialAbilities"}}</p>
+                    {{/unless}}
                 </div>
-                {{/each}}
-                {{#unless abilities}}
-                <p class="no-data">{{localize "WITCHER.Monster.NoSpecialAbilities"}}</p>
-                {{/unless}}
+            </section>
+        </div>
+    </div>
+
+    {{!-- Full Width Bottom Section: Description (formerly Superstition & Biography) --}}
+    <div class="full-width-section knowledge card">
+        <h3 class="section-header"><i class="fas fa-book-open"></i> {{localize "WITCHER.Description"}}</h3>
+        <div class="bio-container" style="margin-bottom: 15px;">
+            {{editor system.description target="system.description" button=true owner=owner editable=editable}}
+        </div>
+        <div class="knowledge-container">
+            <div class="text-block">
+                <div class="knowledge-header flexrow">
+                    <label>{{localize "WITCHER.Monster.CommonerSuperstition"}}</label>
+                    <input type="text" name="system.commonSkillValue" value="{{system.commonSkillValue}}" placeholder="Skill / CD" class="skill-value-input"/>
+                </div>
+                <textarea name="system.common" rows="3">{{system.common}}</textarea>
             </div>
-        </section>
+            <div class="text-block">
+                <div class="knowledge-header flexrow">
+                    <label>{{localize "WITCHER.Monster.AcademicKnowledge"}}</label>
+                    <input type="text" name="system.academicKnowledgeSkillValue" value="{{system.academicKnowledgeSkillValue}}" placeholder="Skill / CD" class="skill-value-input"/>
+                </div>
+                <textarea name="system.academicKnowledge" rows="3">{{system.academicKnowledge}}</textarea>
+            </div>
+            <div class="text-block">
+                <div class="knowledge-header flexrow">
+                    <label>{{localize "WITCHER.Monster.WitcherKnowledge"}}</label>
+                    <input type="text" name="system.monsterLoreSkillValue" value="{{system.monsterLoreSkillValue}}" placeholder="Skill / CD" class="skill-value-input"/>
+                </div>
+                <textarea name="system.monsterLore" rows="3">{{system.monsterLore}}</textarea>
+            </div>
+        </div>
     </div>
 </div>
 

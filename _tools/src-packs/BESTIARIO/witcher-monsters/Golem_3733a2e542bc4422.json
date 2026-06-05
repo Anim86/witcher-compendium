@@ -128,7 +128,21 @@
         "academicKnowledge": "",
         "vulnerability": "",
         "customStat": true,
-        "dontAddAttr": true
+        "dontAddAttr": true,
+        "automatedResistances": [
+            "piercing",
+            "slashing"
+        ],
+        "automatedVulnerabilities": [
+            "electricity"
+        ],
+        "automatedImmunities": [
+            "fire",
+            "bleeding",
+            "poison"
+        ],
+        "resistances": "",
+        "immunities": ""
     },
     "items": [
         {

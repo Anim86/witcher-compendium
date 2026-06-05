@@ -60,6 +60,19 @@ async function createApplyDamageDialog(actor, damageObject) {
       <label>${game.i18n.localize('WITCHER.Damage.CurrentLocation')}: <b>${location.alias}</b></label> <br />
       <label>${game.i18n.localize('WITCHER.Damage.ChangeLocation')}: <select name="changeLocation">${locationOptions}</select></label> <br />`;
 
+    let itemSource = damageObject.item?.system?.source;
+    let isImmune = actor.system.automatedImmunities?.includes(damageObject.type) || (itemSource && actor.system.automatedImmunities?.includes(itemSource));
+    let isResistant = actor.system.automatedResistances?.includes(damageObject.type) || (itemSource && actor.system.automatedResistances?.includes(itemSource));
+    let isVulnerableAuto = actor.system.automatedVulnerabilities?.includes(damageObject.type) || (itemSource && actor.system.automatedVulnerabilities?.includes(itemSource));
+
+    if (isImmune) {
+        content += `<div style="color:red; font-weight:bold; margin-top:5px; margin-bottom:5px;">⚠️ BERSAGLIO IMMUNE A QUESTO DANNO! (Danno azzerato automaticamente)</div>`;
+    } else if (isResistant) {
+        content += `<div style="color:orange; font-weight:bold; margin-top:5px; margin-bottom:5px;">⚠️ BERSAGLIO RESISTENTE (Danni dimezzati automaticamente)</div>`;
+    } else if (isVulnerableAuto) {
+        content += `<div style="color:purple; font-weight:bold; margin-top:5px; margin-bottom:5px;">⚠️ BERSAGLIO VULNERABILE (Danni raddoppiati automaticamente)</div>`;
+    }
+
     if (actor.type == 'monster') {
         content += `<label>${game.i18n.localize('WITCHER.Damage.resistNonSilver')}: <input type="checkbox" name="resistNonSilver" ${actor.system.resistantNonSilver ? 'checked' : 'unchecked'}></label><br />
                     <label>${game.i18n.localize('WITCHER.Damage.resistNonMeteorite')}: <input type="checkbox" name="resistNonMeteorite" ${actor.system.resistantNonMeteorite ? 'checked' : 'unchecked'}></label><br />`;

@@ -193,7 +193,20 @@
         "dontAddAttr": true,
         "dodgeBase": 24,
         "repositionBase": 22,
-        "blockBase": 23
+        "blockBase": 23,
+        "automatedResistances": [
+            "bludgeoning",
+            "piercing",
+            "slashing",
+            "stun"
+        ],
+        "automatedVulnerabilities": [],
+        "automatedImmunities": [
+            "fire",
+            "bleeding"
+        ],
+        "resistances": "",
+        "immunities": ""
     },
     "items": [
         {

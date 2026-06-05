@@ -180,26 +180,43 @@ export let damageMixin = {
         totalDamage = this.calculateArmorResistances(totalDamage, damage, armorSet);
 
         let damageTypeConfig = CONFIG.WITCHER.damageTypes.find(type => type.value === damage.type);
-        //Enemy is suspectible to silver
-        if (
-            (enemyData?.resistNonSilver && !properties?.silverDamage && !damageTypeConfig.likeSilver) ||
-            (enemyData?.resistNonMeteorite && !properties?.isMeteorite && !damageTypeConfig.likeMeteorite)
-        ) {
-            totalDamage = Math.floor(0.5 * totalDamage);
-        }
+        
+        let itemSource = damage.item?.system?.source;
+        let isImmune = this.system.automatedImmunities?.includes(damage.type) || (itemSource && this.system.automatedImmunities?.includes(itemSource)) || enemyData?.isImmune;
+        let isResistant = this.system.automatedResistances?.includes(damage.type) || (itemSource && this.system.automatedResistances?.includes(itemSource)) || enemyData?.isResistant;
+        let isVulnerable = this.system.automatedVulnerabilities?.includes(damage.type) || (itemSource && this.system.automatedVulnerabilities?.includes(itemSource)) || enemyData?.isVulnerable;
 
-        //Enemy is not suspectible to silver
-        if (
-            game.settings.get('TheWitcherItaNewSystem', 'silverTrait') &&
-            !enemyData?.resistNonSilver &&
-            properties.silverTrait
-        ) {
-            silverDamage = Math.floor(0.5 * silverDamage);
-        }
+        if (isImmune) {
+            totalDamage = 0;
+            silverDamage = 0;
+        } else {
+            //Enemy is suspectible to silver
+            if (
+                (enemyData?.resistNonSilver && !properties?.silverDamage && !damageTypeConfig?.likeSilver) ||
+                (enemyData?.resistNonMeteorite && !properties?.isMeteorite && !damageTypeConfig?.likeMeteorite)
+            ) {
+                totalDamage = Math.floor(0.5 * totalDamage);
+            }
 
-        if (enemyData?.isVulnerable) {
-            totalDamage *= 2;
-            silverDamage *= 2;
+            // Automated general resistance
+            if (isResistant) {
+                totalDamage = Math.floor(0.5 * totalDamage);
+                silverDamage = Math.floor(0.5 * silverDamage);
+            }
+
+            //Enemy is not suspectible to silver
+            if (
+                game.settings.get('TheWitcherItaNewSystem', 'silverTrait') &&
+                !enemyData?.resistNonSilver &&
+                properties.silverTrait
+            ) {
+                silverDamage = Math.floor(0.5 * silverDamage);
+            }
+
+            if (isVulnerable) {
+                totalDamage *= 2;
+                silverDamage *= 2;
+            }
         }
 
         let infoAfterResistance = totalDamage;

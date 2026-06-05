@@ -181,11 +181,23 @@
         "monsterLore": "Ogni anno, gli orsi fanno più vittime dei mostri. È più facile sopravvivere al morso di una viverna che a quello di un orso. Bloccare le zampate di un orso con uno scudo serve solo a una cosa: rompere lo scudo. È meglio mettersi fuori dalla sua portata appena possibile.",
         "academicKnowledge": "",
         "vulnerability": "Unguento Anti-Bestie",
-        "resistances": "Contundente, Perforante, Tagliente",
+        "resistances": "",
         "immunities": "",
         "susceptibilities": "",
         "customStat": true,
-        "dontAddAttr": true
+        "dontAddAttr": true,
+        "automatedResistances": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "automatedVulnerabilities": [],
+        "automatedImmunities": [
+            "bludgeoning",
+            "piercing",
+            "slashing",
+            "fire"
+        ]
     },
     "items": [
         {

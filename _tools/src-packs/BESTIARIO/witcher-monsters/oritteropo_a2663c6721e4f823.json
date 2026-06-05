@@ -184,7 +184,14 @@
         "dontAddAttr": true,
         "dodgeBase": 9,
         "repositionBase": 8,
-        "blockBase": 8
+        "blockBase": 8,
+        "automatedResistances": [],
+        "automatedVulnerabilities": [],
+        "automatedImmunities": [
+            "bleeding"
+        ],
+        "resistances": "",
+        "immunities": ""
     },
     "items": [
         {

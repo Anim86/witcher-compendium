@@ -144,7 +144,14 @@
         "dontAddAttr": true,
         "dodgeBase": 13,
         "repositionBase": 15,
-        "blockBase": 11
+        "blockBase": 11,
+        "automatedResistances": [],
+        "automatedVulnerabilities": [],
+        "automatedImmunities": [
+            "poison"
+        ],
+        "resistances": "",
+        "immunities": ""
     },
     "items": [
         {

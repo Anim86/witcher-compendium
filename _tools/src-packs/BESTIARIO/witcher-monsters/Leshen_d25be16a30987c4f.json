@@ -170,7 +170,17 @@
         "dontAddAttr": true,
         "dodgeBase": 16,
         "repositionBase": 12,
-        "blockBase": 18
+        "blockBase": 18,
+        "automatedResistances": [],
+        "automatedVulnerabilities": [
+            "fire"
+        ],
+        "automatedImmunities": [
+            "slashing",
+            "fire"
+        ],
+        "resistances": "",
+        "immunities": ""
     },
     "items": [
         {

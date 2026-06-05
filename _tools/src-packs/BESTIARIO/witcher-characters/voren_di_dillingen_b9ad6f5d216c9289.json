@@ -5,7 +5,13 @@
     "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-characters/voren_di_dillingen.webp",
     "system": {
         "description": "<p>Witcher leggendario e pioniere nell'uso di protesi avanzate per continuare a calcare il Sentiero nonostante le mutilazioni.</p>",
-        "sourcebook": "DP"
+        "sourcebook": "DP",
+        "automatedResistances": [],
+        "automatedVulnerabilities": [],
+        "automatedImmunities": [],
+        "resistances": "",
+        "vulnerability": "",
+        "immunities": ""
     },
     "effects": [],
     "flags": {},

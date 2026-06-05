@@ -167,7 +167,21 @@
         "dontAddAttr": true,
         "dodgeBase": 14,
         "repositionBase": 10,
-        "blockBase": 15
+        "blockBase": 15,
+        "automatedResistances": [
+            "bludgeoning",
+            "piercing",
+            "slashing"
+        ],
+        "automatedVulnerabilities": [],
+        "automatedImmunities": [
+            "bludgeoning",
+            "piercing",
+            "poison",
+            "bleeding"
+        ],
+        "resistances": "",
+        "immunities": ""
     },
     "items": [
         {

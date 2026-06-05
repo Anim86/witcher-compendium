@@ -130,8 +130,8 @@
         "height": "Normale umana",
         "weight": "Normale umano",
         "superstition": "I drowner sono persone annegate tornate in vita per vendicarsi. (Falso)",
-        "vulnerability": "Olio per necrofagi, Fuoco",
-        "resistances": "Nessuna particolare",
+        "vulnerability": "Olio per necrofagi",
+        "resistances": "",
         "armorHead": 0,
         "armorUpper": 0,
         "armorLower": 0,
@@ -139,7 +139,15 @@
         "common": "Le favole raccontano che quando un bastardo abbastanza cattivo muore nell'acqua risorge come drowner.",
         "academicKnowledge": "",
         "customStat": true,
-        "dontAddAttr": true
+        "dontAddAttr": true,
+        "automatedResistances": [],
+        "automatedVulnerabilities": [
+            "fire"
+        ],
+        "automatedImmunities": [
+            "poison"
+        ],
+        "immunities": ""
     },
     "items": [
         {
