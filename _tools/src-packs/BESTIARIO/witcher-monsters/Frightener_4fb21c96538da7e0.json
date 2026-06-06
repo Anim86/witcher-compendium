@@ -1,4 +1,5 @@
 {
+    "_id": "4fb21c96538da7e0",
     "name": "Frightener",
     "type": "monster",
     "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/frightener.webp",
@@ -71,17 +72,13 @@
                     "isVisible": true
                 },
                 "brawling": {
-                    "value": 0,
+                    "value": 10,
                     "isVisible": true
                 }
             },
             "dex": {
                 "athletics": {
                     "value": 2,
-                    "isVisible": true
-                },
-                "brawling": {
-                    "value": 10,
                     "isVisible": true
                 },
                 "stealth": {
@@ -160,16 +157,16 @@
         "dontAddAttr": true,
         "dodgeBase": 15,
         "repositionBase": 9,
-        "blockBase": 17,
+        "blockBase": 19,
         "automatedResistances": [],
         "automatedVulnerabilities": [],
         "automatedImmunities": [
-            "bludgeoning",
-            "piercing",
-            "slashing",
-            "fire",
-            "poison",
             "bleeding",
+            "bludgeoning",
+            "fire",
+            "piercing",
+            "poison",
+            "slashing",
             "stun"
         ],
         "resistances": "",
@@ -188,7 +185,14 @@
                 "effects": "",
                 "rateOfFire": 2,
                 "damageType": "slashing",
-                "attackBase": 17
+                "attackBase": 17,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "brawling",
+                "rangedAttackSkill": "",
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         },
         {
@@ -202,7 +206,15 @@
                 "accuracy": 0,
                 "effects": "",
                 "rateOfFire": 1,
-                "damageType": "piercing"
+                "damageType": "piercing",
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "brawling",
+                "rangedAttackSkill": "",
+                "attackBase": 19,
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         },
         {
@@ -249,7 +261,6 @@
             }
         }
     ],
-    "_id": "4fb21c96538da7e0",
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
         "coreVersion": 14

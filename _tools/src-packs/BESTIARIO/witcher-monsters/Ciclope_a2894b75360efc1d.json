@@ -1,4 +1,5 @@
 {
+    "_id": "a2894b75360efc1d",
     "name": "Ciclope",
     "type": "monster",
     "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/ciclope.webp",
@@ -155,9 +156,9 @@
         "vulnerability": "",
         "customStat": true,
         "dontAddAttr": true,
-        "dodgeBase": 16,
-        "repositionBase": 14,
-        "blockBase": 15,
+        "dodgeBase": 7,
+        "repositionBase": 6,
+        "blockBase": 7,
         "automatedResistances": [],
         "automatedVulnerabilities": [],
         "automatedImmunities": [],
@@ -190,7 +191,6 @@
             }
         }
     ],
-    "_id": "a2894b75360efc1d",
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
         "coreVersion": 14

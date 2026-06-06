@@ -170,7 +170,10 @@
         "automatedVulnerabilities": [],
         "automatedImmunities": [],
         "resistances": "",
-        "immunities": ""
+        "immunities": "",
+        "dodgeBase": 16,
+        "repositionBase": 12,
+        "blockBase": 17
     },
     "items": [
         {
@@ -184,9 +187,16 @@
                 "accuracy": 0,
                 "effects": "",
                 "isStored": false,
-                "reliable": 0,
+                "reliability": 0,
                 "rateOfFire": 1,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "melee",
+                "rangedAttackSkill": "",
+                "attackBase": 18,
+                "reliabilityMax": 0
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -204,9 +214,16 @@
                 "accuracy": 0,
                 "effects": "-1 PA",
                 "isStored": false,
-                "reliable": 0,
+                "reliability": 0,
                 "rateOfFire": 1,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "melee",
+                "rangedAttackSkill": "",
+                "attackBase": 18,
+                "reliabilityMax": 0
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -224,9 +241,16 @@
                 "accuracy": 0,
                 "effects": "Sanguinamento (50%)",
                 "isStored": false,
-                "reliable": 0,
+                "reliability": 0,
                 "rateOfFire": 1,
-                "damageType": "piercing"
+                "damageType": "piercing",
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "melee",
+                "rangedAttackSkill": "",
+                "attackBase": 18,
+                "reliabilityMax": 0
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

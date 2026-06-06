@@ -137,12 +137,15 @@
             "electricity"
         ],
         "automatedImmunities": [
-            "fire",
             "bleeding",
+            "fire",
             "poison"
         ],
         "resistances": "",
-        "immunities": ""
+        "immunities": "",
+        "dodgeBase": 10,
+        "repositionBase": 6,
+        "blockBase": 10
     },
     "items": [
         {
@@ -186,7 +189,15 @@
                 "accuracy": 0,
                 "effects": "Forza Schiacciante, Danno Ablativo",
                 "rateOfFire": 1,
-                "damageType": "bludgeoning"
+                "damageType": "bludgeoning",
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "melee",
+                "rangedAttackSkill": "",
+                "attackBase": 14,
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         },
         {

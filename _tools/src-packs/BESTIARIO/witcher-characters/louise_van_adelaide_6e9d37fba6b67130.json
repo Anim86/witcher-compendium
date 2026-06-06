@@ -99,7 +99,14 @@
             },
             "nascondersi": {
                 "value": 5
-            }
+            },
+            "int": {},
+            "ref": {},
+            "dex": {},
+            "body": {},
+            "emp": {},
+            "cra": {},
+            "will": {}
         },
         "details": {
             "biography": "<p>Louise van Adelaide è la volitiva leader della Società delle Maghe dell'Alto Monte. Perfezionista e testarda, ha fondato la Società ad Altaguardia per proteggere gli studiosi di magia e rivivere i giorni dorati di Aretuza. Nonostante il suo carattere difficile, è una maga di eccezionale talento, particolarmente esperta nella diplomazia e nella gestione delle risorse magiche.</p>",
@@ -165,10 +172,14 @@
         "automatedImmunities": [],
         "resistances": "",
         "vulnerability": "",
-        "immunities": ""
+        "immunities": "",
+        "dodgeBase": 6,
+        "repositionBase": 6,
+        "blockBase": 6
     },
     "items": [
         {
+            "_id": "0fea812a8c23f862",
             "name": "Bastone di Louise",
             "type": "weapon",
             "img": "modules/witcher-compendium/assets/SPECIAL/trait_generico.webp",
@@ -176,7 +187,15 @@
                 "damage": "2d6+2",
                 "accuracy": 0,
                 "effects": "Focus (3)",
-                "damageType": "bludgeoning"
+                "damageType": "bludgeoning",
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "melee",
+                "rangedAttackSkill": "",
+                "attackBase": 6,
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         }
     ],

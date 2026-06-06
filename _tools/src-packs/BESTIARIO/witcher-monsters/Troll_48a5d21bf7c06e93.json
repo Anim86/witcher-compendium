@@ -1,4 +1,5 @@
 {
+    "_id": "48a5d21bf7c06e93",
     "name": "Troll",
     "type": "monster",
     "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/troll.webp",
@@ -165,20 +166,18 @@
         "vulnerability": "",
         "customStat": true,
         "dontAddAttr": true,
-        "dodgeBase": 14,
-        "repositionBase": 10,
-        "blockBase": 15,
+        "dodgeBase": 6,
+        "repositionBase": 4,
+        "blockBase": 6,
         "automatedResistances": [
-            "bludgeoning",
-            "piercing",
             "slashing"
         ],
         "automatedVulnerabilities": [],
         "automatedImmunities": [
+            "bleeding",
             "bludgeoning",
             "piercing",
-            "poison",
-            "bleeding"
+            "poison"
         ],
         "resistances": "",
         "immunities": ""
@@ -208,7 +207,6 @@
             }
         }
     ],
-    "_id": "48a5d21bf7c06e93",
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
         "coreVersion": 14

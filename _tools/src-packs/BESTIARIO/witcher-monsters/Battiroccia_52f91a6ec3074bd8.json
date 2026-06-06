@@ -1,4 +1,5 @@
 {
+    "_id": "52f91a6ec3074bd8",
     "name": "Battiroccia",
     "type": "monster",
     "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/battiroccia.webp",
@@ -75,16 +76,12 @@
                     "isVisible": true
                 },
                 "brawling": {
-                    "value": 0,
+                    "value": 8,
                     "isVisible": true
                 }
             },
             "dex": {
                 "athletics": {
-                    "value": 8,
-                    "isVisible": true
-                },
-                "brawling": {
                     "value": 8,
                     "isVisible": true
                 },
@@ -190,7 +187,7 @@
         "dontAddAttr": true,
         "dodgeBase": 15,
         "repositionBase": 14,
-        "blockBase": 13,
+        "blockBase": 14,
         "automatedResistances": [],
         "automatedVulnerabilities": [],
         "automatedImmunities": [],
@@ -210,7 +207,14 @@
                 "effects": "",
                 "rateOfFire": 2,
                 "damageType": "bludgeoning",
-                "attackBase": 13
+                "attackBase": 13,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "melee",
+                "rangedAttackSkill": "",
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         },
         {
@@ -224,7 +228,15 @@
                 "accuracy": 0,
                 "effects": "",
                 "rateOfFire": 1,
-                "damageType": "piercing"
+                "damageType": "piercing",
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "melee",
+                "rangedAttackSkill": "",
+                "attackBase": 14,
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         },
         {
@@ -248,7 +260,6 @@
             }
         }
     ],
-    "_id": "52f91a6ec3074bd8",
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
         "coreVersion": 14

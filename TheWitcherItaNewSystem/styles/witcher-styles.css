@@ -32,12 +32,12 @@
 @import './configurations/modifier-configuration.css';
 
 @font-face {
-    font-family: 'Thewitcher';
+    font-family: 'Outfit', sans-serif;
     src: url('./fonts/thewitcher2.ttf');
 }
 
 .witcher-style {
-    font-family: Thewitcher;
+    font-family: 'Outfit', sans-serif;
 }
 
 .skill-column details summary > * {

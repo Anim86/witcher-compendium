@@ -151,7 +151,10 @@
         "automatedImmunities": [],
         "resistances": "",
         "vulnerability": "",
-        "immunities": ""
+        "immunities": "",
+        "dodgeBase": 9,
+        "repositionBase": 9,
+        "blockBase": 11
     },
     "items": [
         {
@@ -199,7 +202,13 @@
                 "enhancementSlots": 1,
                 "conceal": "G",
                 "category": "thrown",
-                "reliabilityMax": 5
+                "reliabilityMax": 5,
+                "attackOptions": [
+                    "ranged"
+                ],
+                "rangedAttackSkill": "athletics",
+                "meleeAttackSkill": "",
+                "attackBase": 9
             },
             "effects": [],
             "folder": null,
@@ -249,7 +258,13 @@
                 "conceal": "P",
                 "category": "smallBlade",
                 "range": "N/A",
-                "reliabilityMax": 10
+                "reliabilityMax": 10,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "smallblades",
+                "rangedAttackSkill": "",
+                "attackBase": 5
             },
             "effects": [],
             "folder": null,
@@ -299,7 +314,13 @@
                 "conceal": "G",
                 "category": "sword",
                 "range": "N/A",
-                "reliabilityMax": 10
+                "reliabilityMax": 10,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "swordsmanship",
+                "rangedAttackSkill": "",
+                "attackBase": 11
             },
             "effects": [],
             "folder": null,

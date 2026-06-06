@@ -130,7 +130,10 @@
         ],
         "automatedImmunities": [],
         "resistances": "",
-        "immunities": ""
+        "immunities": "",
+        "dodgeBase": 3,
+        "repositionBase": 4,
+        "blockBase": 3
     },
     "items": [
         {
@@ -144,9 +147,16 @@
                 "accuracy": 0,
                 "effects": "N/A",
                 "isStored": false,
-                "reliable": 0,
+                "reliability": 0,
                 "rateOfFire": 1,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "melee",
+                "rangedAttackSkill": "",
+                "attackBase": 3,
+                "reliabilityMax": 0
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

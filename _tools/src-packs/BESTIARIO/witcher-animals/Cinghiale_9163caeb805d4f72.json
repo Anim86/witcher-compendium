@@ -1,48 +1,49 @@
 {
+    "_id": "9163caeb805d4f72",
     "name": "Cinghiale",
     "type": "monster",
     "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-animals/cinghiale.webp",
     "system": {
         "stats": {
             "int": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
             },
             "ref": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
             },
             "dex": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 4,
+                "max": 4,
+                "unmodifiedMax": 4
             },
             "body": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 8,
+                "max": 8,
+                "unmodifiedMax": 8
             },
             "spd": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 5,
+                "max": 5,
+                "unmodifiedMax": 5
             },
             "emp": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
             },
             "cra": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 1,
+                "max": 1,
+                "unmodifiedMax": 1
             },
             "will": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 6,
+                "max": 6,
+                "unmodifiedMax": 6
             },
             "luck": {
                 "value": 0,
@@ -50,44 +51,44 @@
                 "unmodifiedMax": 0
             },
             "armor": {
-                "value": 0,
-                "max": 0
+                "value": 5,
+                "max": 5
             }
         },
         "skills": {
             "int": {
                 "awareness": {
-                    "value": 0,
+                    "value": 7,
                     "isVisible": true
                 },
                 "wilderness": {
-                    "value": 0,
+                    "value": 9,
                     "isVisible": true
                 }
             },
             "ref": {
                 "brawling": {
-                    "value": 0,
+                    "value": 6,
                     "isVisible": true
                 }
             },
             "dex": {
                 "athletics": {
-                    "value": 0,
+                    "value": 8,
                     "isVisible": true
                 },
                 "stealth": {
-                    "value": 0,
+                    "value": 10,
                     "isVisible": true
                 }
             },
             "body": {
                 "physique": {
-                    "value": 0,
+                    "value": 12,
                     "isVisible": true
                 },
                 "endurance": {
-                    "value": 0,
+                    "value": 13,
                     "isVisible": true
                 }
             },
@@ -95,42 +96,54 @@
             "cra": {},
             "will": {
                 "courage": {
-                    "value": 0,
+                    "value": 16,
                     "isVisible": true
                 },
                 "intimidation": {
-                    "value": 0,
+                    "value": 10,
                     "isVisible": true
                 },
                 "resistmagic": {
-                    "value": 0,
+                    "value": 8,
                     "isVisible": true
                 }
             }
         },
         "derivedStats": {
-            "rec": {
+            "vigor": {
                 "value": 0,
                 "max": 0,
                 "unmodifiedMax": 0
+            },
+            "rec": {
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
+            },
+            "resolve": {
+                "value": 15,
+                "max": 15,
+                "unmodifiedMax": 15
             },
             "stun": {
-                "value": 0,
-                "max": 0
+                "value": 3,
+                "max": 3,
+                "unmodifiedMax": 3
             },
             "woundTreshold": {
-                "value": 0,
-                "max": 0
+                "value": 7,
+                "max": 7,
+                "unmodifiedMax": 7
             },
             "hp": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 35,
+                "max": 35,
+                "unmodifiedMax": 35
             },
             "sta": {
-                "value": 0,
-                "max": 0,
-                "unmodifiedMax": 0
+                "value": 35,
+                "max": 35,
+                "unmodifiedMax": 35
             },
             "focus": {
                 "value": 0,
@@ -138,30 +151,126 @@
                 "unmodifiedMax": 0
             }
         },
-        "description": "<p>Ho sempre pensato ai cinghiali selvatici come spiriti affini! Eh sì, robusti, bassi e decisamente intrattabili se si alzano con il piede sbagliato! Ho passato un po' di tempo a cacciarli a Mahakam e posso dirti che con loro non conviene giocare. Se ti caricano la cosa migliore è buttarsi dietro un riparo perché quelle zanne possono sfondare una brigantina se gli dai la possibilità. – Rodolf Kazmer</p>",
+        "description": "<p>Ho sempre pensato ai cinghiali selvatici come spiriti affini! Eh sì, robusti, bassi e decisamente intrattabili se si alzano con il piede sbagliato! Ho passato un po' di tempo a cacciarli a Mahakam e posso dirti che con loro non conviene giocare. Se ti caricano la cosa migliore è buttarsi dietro un riparo perché quelle zanne possono sfondare una brigantina se gli dai la possibilità.</p>",
         "sourcebook": "DW 36",
         "monsterType": "Beast",
         "difficulty": "medium",
+        "complexity": "simple",
+        "threat": "",
         "bounty": 10,
-        "height": "",
-        "weight": "",
-        "environment": "",
-        "organization": "",
-        "intelligence": "",
-        "vulnerability": "",
-        "customStat": true,
-        "dontAddAttr": true,
+        "armorHead": 5,
+        "armorUpper": 5,
+        "armorLower": 5,
+        "regeneration": 0,
         "dodgeBase": 10,
         "repositionBase": 8,
         "blockBase": 11,
+        "height": "1 m al garrese",
+        "weight": "90 kg",
+        "environment": "Foreste e pianure",
+        "intelligence": "Ferale",
+        "senses": "Fiuto",
+        "organization": "Gruppi da 2 a 6",
+        "commonSkillValue": "Istruzione CD 8",
+        "common": "Ho sempre pensato ai cinghiali selvatici come spiriti affini! Eh sì, robusti, bassi e decisamente intrattabili se si alzano con il piede sbagliato! Ho passato un po' di tempo a cacciarli a Mahakam e posso dirti che con loro non conviene giocare. Se ti caricano la cosa migliore è buttarsi dietro un riparo perché quelle zanne possono sfondare una brigantina se gli dai la possibilità. Eh, non prendetemi in parola, ma ho sentito che per certe genti del sud il cinghiale porta fortuna. Credo che a Gemmera dicano che chi riesce a stendere un cinghiale a mani nude e a strofinargli il muso avrà buona sorte e il suo prossimo bambino sarà un maschietto bello, sano e tenace quanto un cinghiale.",
+        "monsterLoreSkillValue": "Bestiario CD 12",
+        "monsterLore": "I cinghiali sono animali testardi. Dare loro la caccia è molto pericoloso, ma remunerativo. Un solo adulto di taglia media può fornire cibo a una famiglia intera per diversi giorni. Durante la caccia bisogna usare una lancia, per restare lontani dal pericolo. L'Unguento Anti-Bestie è d'aiuto per chi agisce da solo, ma non è necessario se si hanno abbastanza amici con sé. Attenzione, un cinghiale è capace di recuperare in fretta da una carica fallita e può subito tentarne un'altra. Bisogna sempre stare all'erta e tenere le distanze. I cinghiali sono creature molto territoriali e, penetrando troppo a fondo nelle selve, ci si può ritrovare ad affrontarne anche cinque o sei. La loro natura aggressiva fa sì che continuino a inseguire gli intrusi ben oltre il proprio territorio e non si arrendano neppure se feriti. Hanno una carne deliziosa e, in cucina, nulla va sprecato.",
+        "academicKnowledge": "",
+        "vulnerability": "Unguento Anti-Bestie",
+        "resistances": "",
+        "immunities": "",
+        "susceptibilities": "",
+        "customStat": true,
+        "dontAddAttr": true,
         "automatedResistances": [],
         "automatedVulnerabilities": [],
-        "automatedImmunities": [],
-        "resistances": "",
-        "immunities": ""
+        "automatedImmunities": []
     },
-    "items": [],
-    "_id": "9163caeb805d4f72",
+    "items": [
+        {
+            "_id": "9163caeb805d0001",
+            "name": "Zanne",
+            "type": "weapon",
+            "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
+            "system": {
+                "description": "Sanguinamento (30%)",
+                "damage": "3d6",
+                "attackBase": 11,
+                "accuracy": 0,
+                "effects": "Sanguinamento (30%)",
+                "isStored": false,
+                "reliability": 15,
+                "reliabilityMax": 15,
+                "rateOfFire": 1,
+                "category": "brawling",
+                "type": {
+                    "text": "P",
+                    "slashing": false,
+                    "piercing": true,
+                    "bludgeoning": false,
+                    "elemental": false
+                },
+                "meleeAttackSkill": "brawling",
+                "attackOptions": [
+                    "melee"
+                ],
+                "damageProperties": {}
+            }
+        },
+        {
+            "_id": "9163caeb805d0002",
+            "name": "[Capacità] Carica",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "<p>Se ha un bersaglio a più di 6 m di distanza, un cinghiale può usare un intero Turno per caricarlo, effettuando un singolo attacco con le Zanne con una base di 9, che infligge 5d6 danni invece che 3d6. Che abbia colpito o mancato, l'animale continua a muoversi fino alla distanza massima di 15 m in qualsiasi direzione, incluso all'indietro, superando il bersaglio. Tuttavia, non può attaccare un altro avversario lungo la traiettoria.</p>",
+                "isStored": false
+            }
+        },
+        {
+            "_id": "9163caeb805d0003",
+            "name": "[Capacità] Forma Alternativa: Cinghiale da Guerra",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "<p>Alcuni gruppi, in particolare gli Skelliger, apprezzano i cinghiali da guerra. Hanno armatura migliorata con Protezione 10. Le loro zanne infliggono 4d6 danni e la carica 5d6. Entrambi gli attacchi hanno una base di 15.</p>",
+                "isStored": false
+            }
+        },
+        {
+            "_id": "9163caeb805d0004",
+            "name": "Carne Cruda (x1d6)",
+            "type": "valuable",
+            "img": "modules/witcher-compendium/assets/EQUIPAGGIAMENTO/witcher-equipment/carne_cruda.webp",
+            "system": {
+                "description": "Quantità: 1d6",
+                "isStored": false,
+                "quantity": "1d6"
+            }
+        },
+        {
+            "_id": "9163caeb805d0005",
+            "name": "Pelle di Cinghiale (x1d6/3)",
+            "type": "component",
+            "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-components/cuoio.webp",
+            "system": {
+                "description": "Quantità: 1d6/3",
+                "isStored": false,
+                "quantity": "1d6/3"
+            }
+        },
+        {
+            "_id": "9163caeb805d0006",
+            "name": "Zanne di Cinghiale (x1d6/3)",
+            "type": "component",
+            "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
+            "system": {
+                "description": "Quantità: 1d6/3",
+                "isStored": false,
+                "quantity": "1d6/3"
+            }
+        }
+    ],
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
         "coreVersion": 14

@@ -66,7 +66,14 @@
             },
             "nascondersi": {
                 "value": 0
-            }
+            },
+            "int": {},
+            "ref": {},
+            "dex": {},
+            "body": {},
+            "emp": {},
+            "cra": {},
+            "will": {}
         },
         "details": {
             "biography": "<p>Francine Marchand è la figlia di un ricco mercante di Tana di Volpe, vittima di una maledizione che fa crescere i suoi capelli a una velocità prodigiosa, intrappolandola in una torre. Sopravvive da due anni in isolamento, mangiando ratti e insetti.</p>",
@@ -132,7 +139,10 @@
         "automatedImmunities": [],
         "resistances": "",
         "vulnerability": "",
-        "immunities": ""
+        "immunities": "",
+        "dodgeBase": 4,
+        "repositionBase": 4,
+        "blockBase": 4
     },
     "items": [],
     "effects": [],

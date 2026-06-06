@@ -78,22 +78,6 @@ export default class WeaponData extends CommonItemData {
         };
     }
 
-    get reliable() {
-        return this.reliability;
-    }
-
-    set reliable(value) {
-        this.reliability = value;
-    }
-
-    get maxReliability() {
-        return this.reliabilityMax;
-    }
-
-    set maxReliability(value) {
-        this.reliabilityMax = value;
-    }
-
     isApplicableDefense(attack) {
         return this.defenseProperties.isApplicableDefense(attack);
     }
@@ -201,15 +185,6 @@ export default class WeaponData extends CommonItemData {
         }
 
         this.effects?.forEach(effect => (effect.percentage = parseInt(effect.percentage)));
-
-        if ('reliable' in source) {
-            source.reliability = source.reliability ?? source.reliable;
-            delete source.reliable;
-        }
-        if ('maxReliability' in source) {
-            source.reliabilityMax = source.reliabilityMax ?? source.maxReliability;
-            delete source.maxReliability;
-        }
 
         // Migration for reach -> range
         if ('reach' in source) {

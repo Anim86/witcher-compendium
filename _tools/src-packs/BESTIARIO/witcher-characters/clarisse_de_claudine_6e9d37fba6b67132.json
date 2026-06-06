@@ -87,7 +87,14 @@
             },
             "nascondersi": {
                 "value": 5
-            }
+            },
+            "int": {},
+            "ref": {},
+            "dex": {},
+            "body": {},
+            "emp": {},
+            "cra": {},
+            "will": {}
         },
         "details": {
             "biography": "<p>Clarisse de Claudine è il terzo membro della Società. Trovata in solitudine sulle montagne, è stata reclutata per la sua vasta conoscenza alchemica. Anche se inizialmente riservata, ha trovato nelle colleghe una vera famiglia. Quando parla di alchimia, la sua timidezza svanisce completamente.</p>",
@@ -153,7 +160,10 @@
         "automatedImmunities": [],
         "resistances": "",
         "vulnerability": "",
-        "immunities": ""
+        "immunities": "",
+        "dodgeBase": 6,
+        "repositionBase": 6,
+        "blockBase": 6
     },
     "items": [],
     "effects": [],

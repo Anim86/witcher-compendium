@@ -96,7 +96,14 @@
             },
             "scherma": {
                 "value": 15
-            }
+            },
+            "int": {},
+            "ref": {},
+            "dex": {},
+            "body": {},
+            "emp": {},
+            "cra": {},
+            "will": {}
         },
         "details": {
             "biography": "<p>Unico figlio di Rafael de Surmann, Camerlengo di Toussaint, Leblanc è un Cavaliere Errante. Guidato da una profezia che parla di una 'damigella circondata di farfalle', viaggia alla ricerca del vero amore, protetto da un'armatura pesante e da un manipolo di tutori.</p>",
@@ -162,7 +169,10 @@
         "automatedImmunities": [],
         "resistances": "",
         "vulnerability": "",
-        "immunities": ""
+        "immunities": "",
+        "dodgeBase": 8,
+        "repositionBase": 7,
+        "blockBase": 8
     },
     "items": [
         {
@@ -182,7 +192,13 @@
                 "hands": 2,
                 "effects": "Portata, Sanguinamento (25%)",
                 "category": "polearm",
-                "range": ""
+                "range": "",
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "staffspear",
+                "rangedAttackSkill": "",
+                "attackBase": 8
             },
             "effects": [],
             "flags": {},

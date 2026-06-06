@@ -61,10 +61,6 @@
                     "value": 4,
                     "isVisible": true
                 },
-                "wildernessSurvival": {
-                    "value": 5,
-                    "isVisible": true
-                },
                 "wilderness": {
                     "value": 6,
                     "isVisible": true
@@ -76,7 +72,7 @@
                     "isVisible": true
                 },
                 "brawling": {
-                    "value": 5,
+                    "value": 8,
                     "isVisible": true
                 },
                 "dodge": {
@@ -91,10 +87,6 @@
                 },
                 "stealth": {
                     "value": 7,
-                    "isVisible": true
-                },
-                "brawling": {
-                    "value": 8,
                     "isVisible": true
                 }
             },
@@ -111,7 +103,7 @@
                     "value": 5,
                     "isVisible": true
                 },
-                "resistMagic": {
+                "resistmagic": {
                     "value": 0,
                     "isVisible": true
                 }
@@ -174,7 +166,10 @@
         "automatedVulnerabilities": [],
         "automatedImmunities": [],
         "resistances": "",
-        "immunities": ""
+        "immunities": "",
+        "dodgeBase": 13,
+        "repositionBase": 10,
+        "blockBase": 15
     },
     "items": [
         {
@@ -233,7 +228,15 @@
                 "accuracy": 0,
                 "effects": "Veleno (50%)",
                 "rateOfFire": 2,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "brawling",
+                "rangedAttackSkill": "",
+                "attackBase": 15,
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         },
         {
@@ -247,7 +250,15 @@
                 "accuracy": 0,
                 "effects": "Nessuno",
                 "rateOfFire": 1,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "brawling",
+                "rangedAttackSkill": "",
+                "attackBase": 15,
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         }
     ],

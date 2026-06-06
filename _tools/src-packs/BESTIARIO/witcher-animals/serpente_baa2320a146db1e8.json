@@ -130,7 +130,10 @@
         ],
         "automatedImmunities": [],
         "resistances": "",
-        "immunities": ""
+        "immunities": "",
+        "dodgeBase": 4,
+        "repositionBase": 3,
+        "blockBase": 4
     },
     "items": [
         {
@@ -144,9 +147,16 @@
                 "accuracy": 0,
                 "effects": "Veleno (75%)",
                 "isStored": false,
-                "reliable": 0,
+                "reliability": 0,
                 "rateOfFire": 1,
-                "damageType": "piercing"
+                "damageType": "piercing",
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "melee",
+                "rangedAttackSkill": "",
+                "attackBase": 4,
+                "reliabilityMax": 0
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

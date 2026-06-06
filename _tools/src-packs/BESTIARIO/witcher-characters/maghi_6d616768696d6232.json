@@ -69,7 +69,14 @@
             },
             "magiaampliata": {
                 "value": 6
-            }
+            },
+            "int": {},
+            "ref": {},
+            "dex": {},
+            "body": {},
+            "emp": {},
+            "cra": {},
+            "will": {}
         },
         "details": {
             "biography": "<p>I maghi sono incantatori esperti che dedicano la propria vita allo studio delle arti arcane. Nonostante le persecuzioni, la loro conoscenza rimane fondamentale per il Continente.</p>",
@@ -121,7 +128,10 @@
         "automatedImmunities": [],
         "resistances": "",
         "vulnerability": "",
-        "immunities": ""
+        "immunities": "",
+        "dodgeBase": 0,
+        "repositionBase": 0,
+        "blockBase": 0
     },
     "items": [],
     "effects": [],

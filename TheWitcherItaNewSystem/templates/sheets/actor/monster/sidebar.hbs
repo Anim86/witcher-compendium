@@ -6,7 +6,7 @@
             <div class="vital-orb hp" data-tooltip="{{localize 'WITCHER.Stats.HP.Abbr'}}">
                 <i class="fas fa-heart"></i>
                 <div class="vital-orb-values" style="display: flex; align-items: baseline; justify-content: center; gap: 2px; width: 100%;">
-                    <input name="system.derivedStats.hp.value" type="text" value="{{system.derivedStats.hp.value}}" style="width: 35px !important; text-align: right !important;" {{#unless isEditable}}readonly{{/unless}} />
+                    <input name="system.derivedStats.hp.value" type="text" data-dtype="Number" value="{{system.derivedStats.hp.value}}" style="width: 35px !important; text-align: right !important;" {{#unless isEditable}}readonly{{/unless}} />
                     <span style="color: rgba(255,255,255,0.6); font-size: 0.9rem; text-shadow: 0 2px 4px rgba(0,0,0,0.8);">/</span>
                     <span style="color: white; font-weight: bold; font-family: 'MasonSans', sans-serif; font-size: 1rem; text-shadow: 0 2px 4px rgba(0,0,0,0.8);">{{system.derivedStats.hp.max}}</span>
                 </div>
@@ -14,7 +14,7 @@
             <div class="vital-orb sta" data-tooltip="{{localize 'WITCHER.Stats.STA.Abbr'}}">
                 <i class="fas fa-bolt"></i>
                 <div class="vital-orb-values" style="display: flex; align-items: baseline; justify-content: center; gap: 2px; width: 100%;">
-                    <input name="system.derivedStats.sta.value" type="text" value="{{system.derivedStats.sta.value}}" style="width: 35px !important; text-align: right !important;" {{#unless isEditable}}readonly{{/unless}} />
+                    <input name="system.derivedStats.sta.value" type="text" data-dtype="Number" value="{{system.derivedStats.sta.value}}" style="width: 35px !important; text-align: right !important;" {{#unless isEditable}}readonly{{/unless}} />
                     <span style="color: rgba(255,255,255,0.6); font-size: 0.9rem; text-shadow: 0 2px 4px rgba(0,0,0,0.8);">/</span>
                     <span style="color: white; font-weight: bold; font-family: 'MasonSans', sans-serif; font-size: 1rem; text-shadow: 0 2px 4px rgba(0,0,0,0.8);">{{system.derivedStats.sta.max}}</span>
                 </div>
@@ -33,7 +33,7 @@
     {{!-- Primary Stats Grid --}}
     <div class="sidebar-stats-grid">
         {{#each system.stats as |stat id|}}
-        {{#unless (eq id "armor")}}
+        {{#unless (or (eq id "armor") (eq id "toxicity"))}}
         <div class="sidebar-stat-box" data-stat="{{id}}">
             <a class="stat-roll-btn" data-action="rollStat" data-stat="{{id}}" title="{{localize 'WITCHER.Button.Roll'}}">
                 <span class="stat-abbr">{{localize (lookup (lookup ../config.statMap id) 'label')}}</span>

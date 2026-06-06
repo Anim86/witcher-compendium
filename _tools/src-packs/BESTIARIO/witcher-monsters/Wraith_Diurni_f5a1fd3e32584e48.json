@@ -81,10 +81,6 @@
                 }
             },
             "dex": {
-                "brawling": {
-                    "value": 5,
-                    "isVisible": true
-                },
                 "athletics": {
                     "value": 4,
                     "isVisible": true
@@ -165,11 +161,14 @@
         "automatedResistances": [],
         "automatedVulnerabilities": [],
         "automatedImmunities": [
-            "poison",
-            "bleeding"
+            "bleeding",
+            "poison"
         ],
         "resistances": "",
-        "immunities": ""
+        "immunities": "",
+        "dodgeBase": 19,
+        "repositionBase": 14,
+        "blockBase": 17
     },
     "items": [
         {
@@ -183,7 +182,15 @@
                 "accuracy": 0,
                 "effects": "Spesso utilizza anche un colpo speciale che prosciuga vitalità",
                 "rateOfFire": 2,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "melee",
+                "rangedAttackSkill": "",
+                "attackBase": 18,
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         },
         {

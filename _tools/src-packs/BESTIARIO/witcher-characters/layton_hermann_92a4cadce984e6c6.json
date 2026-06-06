@@ -99,7 +99,14 @@
             },
             "resistereACoercizione": {
                 "value": 15
-            }
+            },
+            "int": {},
+            "ref": {},
+            "dex": {},
+            "body": {},
+            "emp": {},
+            "cra": {},
+            "will": {}
         },
         "details": {
             "biography": "<p>Layton Hermann è il capo del tempio del Coram Agh Tera a Maribor. Diffonde paura, malattia e morte da oltre dieci anni. Sotto la sua guida il culto ha potenziato le difese e sviluppato abilità magiche sfruttando un Luogo di Potere.</p>",
@@ -165,7 +172,10 @@
         "automatedImmunities": [],
         "resistances": "",
         "vulnerability": "",
-        "immunities": ""
+        "immunities": "",
+        "dodgeBase": 7,
+        "repositionBase": 6,
+        "blockBase": 7
     },
     "items": [
         {
@@ -212,7 +222,13 @@
                 "unmodifiedMax": {},
                 "enhancementSlots": 1,
                 "category": "staff",
-                "reliabilityMax": 10
+                "reliabilityMax": 10,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "melee",
+                "rangedAttackSkill": "",
+                "attackBase": 7
             },
             "effects": [],
             "folder": null,

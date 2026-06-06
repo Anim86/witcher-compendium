@@ -135,7 +135,7 @@
         "dontAddAttr": true,
         "dodgeBase": 12,
         "repositionBase": 13,
-        "blockBase": 10,
+        "blockBase": 7,
         "automatedResistances": [],
         "automatedVulnerabilities": [],
         "automatedImmunities": [
@@ -181,7 +181,13 @@
                 "conceal": "P",
                 "category": "smallBlade",
                 "range": "N/A",
-                "reliabilityMax": 10
+                "reliabilityMax": 10,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "smallblades",
+                "rangedAttackSkill": "",
+                "attackBase": 7
             },
             "effects": [],
             "folder": null,

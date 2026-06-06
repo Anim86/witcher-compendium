@@ -159,10 +159,14 @@
         "automatedVulnerabilities": [],
         "automatedImmunities": [],
         "resistances": "",
-        "immunities": ""
+        "immunities": "",
+        "dodgeBase": 6,
+        "repositionBase": 12,
+        "blockBase": 0
     },
     "items": [
         {
+            "_id": "2421b9e3dc520ef6",
             "name": "Morso",
             "type": "weapon",
             "img": "icons/svg/sword.svg",
@@ -172,9 +176,16 @@
                 "type": "P",
                 "effects": "N/A",
                 "isStored": false,
-                "reliable": 0,
+                "reliability": 0,
                 "rateOfFire": 1,
-                "damageType": "piercing"
+                "damageType": "piercing",
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "melee",
+                "rangedAttackSkill": "",
+                "attackBase": 8,
+                "reliabilityMax": 0
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -182,6 +193,7 @@
             }
         },
         {
+            "_id": "2fd8c429fa8e619d",
             "name": "[Capacità] Ferale",
             "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",

@@ -1,4 +1,5 @@
 {
+    "_id": "b3f7102e8a56c9d4",
     "name": "Archeospora",
     "type": "monster",
     "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/archeospora.webp",
@@ -67,15 +68,11 @@
             },
             "ref": {
                 "brawling": {
-                    "value": 0,
+                    "value": 7,
                     "isVisible": true
                 }
             },
             "dex": {
-                "brawling": {
-                    "value": 7,
-                    "isVisible": true
-                },
                 "athletics": {
                     "value": 0,
                     "isVisible": true
@@ -155,8 +152,8 @@
         "vulnerability": "",
         "customStat": true,
         "dontAddAttr": true,
-        "dodgeBase": 12,
-        "blockBase": 12,
+        "dodgeBase": 6,
+        "blockBase": 13,
         "automatedResistances": [],
         "automatedVulnerabilities": [],
         "automatedImmunities": [
@@ -164,7 +161,8 @@
             "poison"
         ],
         "resistances": "",
-        "immunities": ""
+        "immunities": "",
+        "repositionBase": 5
     },
     "items": [
         {
@@ -179,11 +177,17 @@
                 "effects": "Portata",
                 "rateOfFire": 1,
                 "damageType": "piercing",
-                "attackBase": 12
+                "attackBase": 12,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "brawling",
+                "rangedAttackSkill": "",
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         }
     ],
-    "_id": "b3f7102e8a56c9d4",
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
         "coreVersion": 14

@@ -123,7 +123,7 @@ export let castSpellMixin = {
                     title: `${game.i18n.localize('WITCHER.Spell.MagicCost')}`,
                     contentClasses: ['scrollable', 'weapon-roll-dialog', 'compact-dialog'] 
                 },
-                position: { width: 600 },
+                position: { width: 750 },
                 content: dialogTemplate,
                 modal: true,
                 ok: {

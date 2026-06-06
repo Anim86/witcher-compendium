@@ -56,27 +56,58 @@
             }
         },
         "skills": {
-            "int": {},
-            "ref": {
-                "dodge": {
+            "int": {
+                "awareness": {
                     "value": 6,
+                    "isVisible": true
+                },
+                "wilderness": {
+                    "value": 4,
+                    "isVisible": true
+                }
+            },
+            "ref": {
+                "melee": {
+                    "value": 5,
+                    "isVisible": true
+                },
+                "brawling": {
+                    "value": 5,
+                    "isVisible": true
+                },
+                "dodge": {
+                    "value": 8,
                     "isVisible": true
                 }
             },
             "dex": {
                 "athletics": {
-                    "value": 6,
+                    "value": 5,
                     "isVisible": true
                 },
-                "brawling": {
-                    "value": 9,
+                "stealth": {
+                    "value": 6,
                     "isVisible": true
                 }
             },
-            "body": {},
+            "body": {
+                "physique": {
+                    "value": 5,
+                    "isVisible": true
+                }
+            },
             "emp": {},
             "cra": {},
-            "will": {}
+            "will": {
+                "courage": {
+                    "value": 10,
+                    "isVisible": true
+                },
+                "resistmagic": {
+                    "value": 9,
+                    "isVisible": true
+                }
+            }
         },
         "derivedStats": {
             "vigor": {
@@ -133,16 +164,21 @@
         "environment": "Paludi e pianure alluvionali",
         "intelligence": "Circa come un cane",
         "organization": "Solitaria",
-        "common": "",
+        "commonSkillValue": "Istruzione CD 15",
+        "common": "Se attraversi una palude e senti qualcosa muoversi senza vederlo, resta immobile: secondo la superstizione comune l'arachas vede male e potrebbe ignorare chi non si muove. Le arachas sono spesso confuse con le regine endriaghe, ma sono predatori solitari.",
         "academicKnowledge": "",
-        "vulnerability": "",
+        "monsterLoreSkillValue": "Arte del Witcher CD 10",
+        "monsterLore": "Le arachas sono predatori d'imboscata delle paludi e delle zone alluvionali. Si nascondono in tronchi cavi o rifugi naturali, poi balzano sulla preda; se questa fugge, la immobilizzano con una ragnatela. In mischia colpiscono e parano con le chele. Conviene preparare antitossine, Unguento Anti-insettoidi e cercare il dorso molle.",
+        "vulnerability": "Unguento Anti-insettoidi",
         "customStat": true,
         "dontAddAttr": true,
+        "dodgeBase": 17,
+        "repositionBase": 11,
+        "blockBase": 14,
         "automatedResistances": [
+            "bleeding",
             "piercing",
-            "slashing",
-            "poison",
-            "bleeding"
+            "slashing"
         ],
         "automatedVulnerabilities": [],
         "automatedImmunities": [
@@ -154,13 +190,13 @@
     "items": [
         {
             "_id": "f8b8535575a54278",
-            "name": "Veleno di Arachas (x1)",
+            "name": "Veleno di Arachas (x1d6)",
             "type": "component",
             "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-alchemy/veleno_di_arachas.webp",
             "system": {
-                "description": "Quantità: 1",
+                "description": "Quantità: 1d6",
                 "isStored": false,
-                "quantity": "1"
+                "quantity": "1d6"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -169,13 +205,13 @@
         },
         {
             "_id": "da8d41d101584519",
-            "name": "Occhi di Arachas (x1)",
+            "name": "Occhi di Arachas (x1d6/2)",
             "type": "component",
             "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-alchemy/occhi_di_arachas.webp",
             "system": {
-                "description": "Quantità: 1",
+                "description": "Quantità: 1d6/2",
                 "isStored": false,
-                "quantity": "1"
+                "quantity": "1d6/2"
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -198,6 +234,21 @@
             }
         },
         {
+            "_id": "53f6d1bc9ed07c7",
+            "name": "Estratto di Veleno (x1d6)",
+            "type": "component",
+            "img": "modules/witcher-compendium/assets/ALCHIMIA_E_ARTIGIANATO/witcher-alchemy/estratto_di_veleno.webp",
+            "system": {
+                "description": "Quantità: 1d6",
+                "isStored": false,
+                "quantity": "1d6"
+            },
+            "_stats": {
+                "systemId": "TheWitcherItaNewSystem",
+                "coreVersion": 14
+            }
+        },
+        {
             "_id": "9655a85124a29",
             "name": "Chele",
             "type": "weapon",
@@ -208,7 +259,93 @@
                 "accuracy": 0,
                 "effects": "Veleno (25%)",
                 "rateOfFire": 2,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackBase": 14,
+                "reliability": 15,
+                "reliabilityMax": 15,
+                "category": "melee",
+                "type": {
+                    "text": "T",
+                    "slashing": true,
+                    "piercing": false,
+                    "bludgeoning": false,
+                    "elemental": false
+                },
+                "meleeAttackSkill": "melee",
+                "attackOptions": [
+                    "melee"
+                ],
+                "damageProperties": {
+                    "effects": [
+                        {
+                            "id": "a121e9ba4fc2e001",
+                            "name": "Veleno",
+                            "statusEffect": "poison",
+                            "percentage": 25,
+                            "varEffect": false
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "_id": "a121e9ba4fc20101",
+            "name": "[Capacità] Punto Debole: Dorso Molle",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "Il dorso molle di un'arachas ha solo 10 punti d'armatura e nessuna resistenza al danno.",
+                "isStored": false
+            }
+        },
+        {
+            "_id": "a121e9ba4fc20102",
+            "name": "[Capacità] Avventarsi",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "Un'arachas non ha bisogno di rincorsa per balzare.",
+                "isStored": false
+            }
+        },
+        {
+            "_id": "a121e9ba4fc20103",
+            "name": "[Capacità] Camuffamento",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "Finche resta immobile, un'arachas ha +10 Nascondersi nel suo ambiente naturale.",
+                "isStored": false
+            }
+        },
+        {
+            "_id": "a121e9ba4fc20104",
+            "name": "[Capacità] Ferale",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "Grazie ai suoi istinti, un'arachas possiede INT 6 ai fini delle prove d'Accortezza e Sopravvivenza.",
+                "isStored": false
+            }
+        },
+        {
+            "_id": "a121e9ba4fc20105",
+            "name": "[Capacità] Immunità ai Veleni",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "Un'arachas non subisce danni dall'effetto avvelenato.",
+                "isStored": false
+            }
+        },
+        {
+            "_id": "a121e9ba4fc20106",
+            "name": "[Capacità] Ragnatela",
+            "type": "ability",
+            "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
+            "system": {
+                "description": "Se un nemico si allontana di piu di 8 m, un'arachas lo colpisce con una ragnatela: attacco su Atletica, gittata 10 m. Se colpisce, il bersaglio e considerato in lotta finche non si libera con una prova di Prestanza CD 16 o infligge 10 danni alla ragnatela.",
+                "isStored": false
             }
         },
         {

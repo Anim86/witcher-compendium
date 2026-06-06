@@ -63,15 +63,15 @@
                 "dodge": {
                     "value": 7,
                     "isVisible": true
+                },
+                "brawling": {
+                    "value": 8,
+                    "isVisible": true
                 }
             },
             "dex": {
                 "athletics": {
                     "value": 10,
-                    "isVisible": true
-                },
-                "brawling": {
-                    "value": 8,
                     "isVisible": true
                 }
             },
@@ -213,7 +213,14 @@
                 "effects": "Sanguinamento (50%)",
                 "rateOfFire": 1,
                 "damageType": "piercing",
-                "attackBase": 17
+                "attackBase": 17,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "brawling",
+                "rangedAttackSkill": "",
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         },
         {
@@ -228,7 +235,14 @@
                 "effects": "Sanguinamento (25%)",
                 "rateOfFire": 2,
                 "damageType": "slashing",
-                "attackBase": 17
+                "attackBase": 17,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "brawling",
+                "rangedAttackSkill": "",
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         }
     ]

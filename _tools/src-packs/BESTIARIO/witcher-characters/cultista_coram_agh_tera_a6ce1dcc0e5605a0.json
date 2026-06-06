@@ -87,7 +87,14 @@
             },
             "resistereACoercizione": {
                 "value": 11
-            }
+            },
+            "int": {},
+            "ref": {},
+            "dex": {},
+            "body": {},
+            "emp": {},
+            "cra": {},
+            "will": {}
         },
         "details": {
             "biography": "<p>I cultisti del Coram Agh Tera sono servitori fanatici della morte e della menzogna. Molti di loro posseggono abilità magiche elementari.</p>",
@@ -153,7 +160,10 @@
         "automatedImmunities": [],
         "resistances": "",
         "vulnerability": "",
-        "immunities": ""
+        "immunities": "",
+        "dodgeBase": 5,
+        "repositionBase": 4,
+        "blockBase": 5
     },
     "items": [
         {
@@ -192,7 +202,13 @@
                 "conceal": "P",
                 "category": "smallBlade",
                 "range": "N/A",
-                "reliabilityMax": 10
+                "reliabilityMax": 10,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "smallblades",
+                "rangedAttackSkill": "",
+                "attackBase": 5
             },
             "effects": [],
             "folder": null,

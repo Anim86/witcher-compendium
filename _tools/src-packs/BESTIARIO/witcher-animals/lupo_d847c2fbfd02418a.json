@@ -57,13 +57,13 @@
         },
         "skills": {
             "int": {},
-            "ref": {},
-            "dex": {
+            "ref": {
                 "brawling": {
                     "value": 5,
                     "isVisible": true
                 }
             },
+            "dex": {},
             "body": {},
             "emp": {},
             "cra": {},
@@ -130,19 +130,22 @@
         "customStat": true,
         "dontAddAttr": true,
         "automatedResistances": [
-            "piercing",
-            "slashing",
             "bleeding",
             "bludgeoning",
-            "fire"
+            "fire",
+            "piercing",
+            "slashing"
         ],
         "automatedVulnerabilities": [],
         "automatedImmunities": [
-            "poison",
-            "ice"
+            "ice",
+            "poison"
         ],
         "resistances": "",
-        "immunities": ""
+        "immunities": "",
+        "dodgeBase": 4,
+        "repositionBase": 6,
+        "blockBase": 9
     },
     "items": [
         {
@@ -216,7 +219,15 @@
                 "accuracy": 0,
                 "effects": "Sanguinamento (25%)",
                 "rateOfFire": 1,
-                "damageType": "piercing"
+                "damageType": "piercing",
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "brawling",
+                "rangedAttackSkill": "",
+                "attackBase": 9,
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         },
         {

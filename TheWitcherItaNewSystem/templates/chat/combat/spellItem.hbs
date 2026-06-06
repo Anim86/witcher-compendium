@@ -53,9 +53,9 @@
 {{#if spellItem.system.causeDamages}}
     <div class="flexrow">
         <button class="damage" data-img="{{spellItem.img}}" data-name="{{spellItem.name}}">
-            {{localize "WITCHER.table.Damage"}}</button>
+            <i class="fas fa-tint"></i> {{localize "WITCHER.table.Damage"}}</button>
         <button class="defend" title="{{localize "WITCHER.Context.Defense"}}">
-            <i class="fas fa-shield-alt"></i></button>
+            <i class="fas fa-shield-alt"></i> {{localize "WITCHER.Context.Defense"}}</button>
     </div>
 {{else if spellItem.system.defence}}
     <button class="defend" title="{{localize "WITCHER.Context.Defense"}}">

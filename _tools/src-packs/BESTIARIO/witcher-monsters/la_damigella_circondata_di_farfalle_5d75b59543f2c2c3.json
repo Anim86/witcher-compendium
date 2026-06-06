@@ -73,17 +73,13 @@
                     "isVisible": true
                 },
                 "brawling": {
-                    "value": 0,
+                    "value": 1,
                     "isVisible": true
                 }
             },
             "dex": {
                 "athletics": {
                     "value": 0,
-                    "isVisible": true
-                },
-                "brawling": {
-                    "value": 1,
                     "isVisible": true
                 },
                 "stealth": {
@@ -158,7 +154,10 @@
         "automatedVulnerabilities": [],
         "automatedImmunities": [],
         "resistances": "",
-        "immunities": ""
+        "immunities": "",
+        "dodgeBase": 14,
+        "repositionBase": 12,
+        "blockBase": 15
     },
     "items": [
         {
@@ -172,7 +171,15 @@
                 "accuracy": 0,
                 "effects": "Bilanciata",
                 "rateOfFire": 1,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "melee",
+                "rangedAttackSkill": "",
+                "attackBase": 16,
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         },
         {

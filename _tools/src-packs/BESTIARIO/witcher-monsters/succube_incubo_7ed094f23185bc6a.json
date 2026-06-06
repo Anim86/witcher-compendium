@@ -1,4 +1,5 @@
 {
+    "_id": "7ed094f23185bc6a",
     "name": "Succube & Incubo",
     "type": "monster",
     "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/succube_incubo.webp",
@@ -75,17 +76,13 @@
                     "isVisible": true
                 },
                 "brawling": {
-                    "value": 0,
+                    "value": 9,
                     "isVisible": true
                 }
             },
             "dex": {
                 "athletics": {
                     "value": 7,
-                    "isVisible": true
-                },
-                "brawling": {
-                    "value": 9,
                     "isVisible": true
                 },
                 "stealth": {
@@ -188,8 +185,8 @@
         "customStat": true,
         "dontAddAttr": true,
         "dodgeBase": 14,
-        "repositionBase": 15,
-        "blockBase": 16,
+        "repositionBase": 14,
+        "blockBase": 17,
         "automatedResistances": [],
         "automatedVulnerabilities": [
             "stun"
@@ -213,7 +210,14 @@
                 "effects": "Forza Schiacciante, Stordimento (-2)",
                 "rateOfFire": 1,
                 "damageType": "slashing",
-                "attackBase": 13
+                "attackBase": 13,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "brawling",
+                "rangedAttackSkill": "",
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         },
         {
@@ -228,7 +232,14 @@
                 "effects": "Atterramento (50%), Forza Schiacciante",
                 "rateOfFire": 1,
                 "damageType": "slashing",
-                "attackBase": 16
+                "attackBase": 16,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "brawling",
+                "rangedAttackSkill": "",
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         },
         {
@@ -243,7 +254,14 @@
                 "effects": "Forza Schiacciante",
                 "rateOfFire": 2,
                 "damageType": "bludgeoning",
-                "attackBase": 16
+                "attackBase": 16,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "brawling",
+                "rangedAttackSkill": "",
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         },
         {
@@ -300,7 +318,6 @@
             }
         }
     ],
-    "_id": "7ed094f23185bc6a",
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
         "coreVersion": 14

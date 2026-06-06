@@ -186,9 +186,9 @@
         "difficulty": "hard",
         "customStat": true,
         "dontAddAttr": true,
-        "dodgeBase": 17,
-        "repositionBase": 20,
-        "blockBase": 22,
+        "dodgeBase": 14,
+        "repositionBase": 14,
+        "blockBase": 19,
         "automatedResistances": [],
         "automatedVulnerabilities": [],
         "automatedImmunities": [
@@ -199,6 +199,7 @@
     },
     "items": [
         {
+            "_id": "72a34ba543b914bf",
             "name": "Morso",
             "type": "weapon",
             "img": "modules/witcher-compendium/assets/SPECIAL/trait_zanne.webp",
@@ -207,12 +208,20 @@
                 "accuracy": 0,
                 "effects": "Inghiottire",
                 "isStored": false,
-                "reliable": 0,
+                "reliability": 0,
                 "rateOfFire": 1,
-                "damageType": "piercing"
+                "damageType": "piercing",
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "brawling",
+                "rangedAttackSkill": "",
+                "attackBase": 19,
+                "reliabilityMax": 0
             }
         },
         {
+            "_id": "2b86d5a59df7303b",
             "name": "Artigli",
             "type": "weapon",
             "img": "modules/witcher-compendium/assets/SPECIAL/trait_artigli.webp",
@@ -221,13 +230,20 @@
                 "accuracy": 0,
                 "effects": "Portata 2",
                 "isStored": false,
-                "reliable": 0,
+                "reliability": 0,
                 "rateOfFire": 1,
                 "damageType": "slashing",
-                "attackBase": 22
+                "attackBase": 22,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "brawling",
+                "rangedAttackSkill": "",
+                "reliabilityMax": 0
             }
         },
         {
+            "_id": "ddc5b5915a54ea1a",
             "name": "Capacità: Inghiottire",
             "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
@@ -237,6 +253,7 @@
             }
         },
         {
+            "_id": "7c5265477c5f1843",
             "name": "Capacità: Acido Digestivo",
             "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",

@@ -76,15 +76,11 @@
                     "isVisible": true
                 },
                 "brawling": {
-                    "value": 0,
+                    "value": 5,
                     "isVisible": true
                 }
             },
             "dex": {
-                "brawling": {
-                    "value": 5,
-                    "isVisible": true
-                },
                 "athletics": {
                     "value": 8,
                     "isVisible": true
@@ -182,8 +178,8 @@
         "difficulty": "easy",
         "customStat": true,
         "dontAddAttr": true,
-        "dodgeBase": 9,
-        "repositionBase": 8,
+        "dodgeBase": 12,
+        "repositionBase": 13,
         "blockBase": 8,
         "automatedResistances": [],
         "automatedVulnerabilities": [],
@@ -206,7 +202,14 @@
                 "effects": "Sanguinamento (100%)",
                 "rateOfFire": 2,
                 "damageType": "slashing",
-                "attackBase": 10
+                "attackBase": 10,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "melee",
+                "rangedAttackSkill": "",
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         },
         {
@@ -221,7 +224,14 @@
                 "effects": "Nessuno",
                 "rateOfFire": 1,
                 "damageType": "slashing",
-                "attackBase": 10
+                "attackBase": 10,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "melee",
+                "rangedAttackSkill": "",
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         }
     ],

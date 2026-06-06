@@ -81,10 +81,6 @@
                 }
             },
             "dex": {
-                "brawling": {
-                    "value": 8,
-                    "isVisible": true
-                },
                 "athletics": {
                     "value": 8,
                     "isVisible": true
@@ -168,7 +164,10 @@
         "automatedVulnerabilities": [],
         "automatedImmunities": [],
         "resistances": "",
-        "immunities": ""
+        "immunities": "",
+        "dodgeBase": 16,
+        "repositionBase": 16,
+        "blockBase": 16
     },
     "items": [
         {
@@ -182,7 +181,15 @@
                 "accuracy": 0,
                 "effects": "Sanguinamento (25%)",
                 "rateOfFire": 2,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "melee",
+                "rangedAttackSkill": "",
+                "attackBase": 17,
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         },
         {
@@ -196,7 +203,15 @@
                 "accuracy": 0,
                 "effects": "Sanguinamento (50%)",
                 "rateOfFire": 1,
-                "damageType": "piercing"
+                "damageType": "piercing",
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "melee",
+                "rangedAttackSkill": "",
+                "attackBase": 17,
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         }
     ],

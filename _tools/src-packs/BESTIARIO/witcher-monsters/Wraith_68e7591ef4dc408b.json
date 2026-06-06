@@ -61,14 +61,14 @@
                     "value": 4,
                     "isVisible": true
                 },
-                "wildernessSurvival": {
+                "wilderness": {
                     "value": 2,
                     "isVisible": true
                 }
             },
             "ref": {
                 "brawling": {
-                    "value": 0,
+                    "value": 8,
                     "isVisible": true
                 },
                 "swordsmanship": {
@@ -87,10 +87,6 @@
                 },
                 "stealth": {
                     "value": 4,
-                    "isVisible": true
-                },
-                "brawling": {
-                    "value": 8,
                     "isVisible": true
                 }
             },
@@ -111,7 +107,7 @@
                     "value": 0,
                     "isVisible": true
                 },
-                "resistMagic": {
+                "resistmagic": {
                     "value": 0,
                     "isVisible": true
                 }
@@ -180,11 +176,14 @@
         "automatedResistances": [],
         "automatedVulnerabilities": [],
         "automatedImmunities": [
-            "poison",
-            "bleeding"
+            "bleeding",
+            "poison"
         ],
         "resistances": "",
-        "immunities": ""
+        "immunities": "",
+        "dodgeBase": 6,
+        "repositionBase": 5,
+        "blockBase": 14
     },
     "items": [
         {
@@ -243,7 +242,15 @@
                 "accuracy": 0,
                 "effects": "Nessuno",
                 "rateOfFire": 2,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "brawling",
+                "rangedAttackSkill": "",
+                "attackBase": 14,
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         },
         {

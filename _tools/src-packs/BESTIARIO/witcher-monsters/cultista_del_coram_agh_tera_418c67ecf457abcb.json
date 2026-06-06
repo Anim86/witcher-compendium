@@ -91,15 +91,15 @@
                 "melee": {
                     "value": 6,
                     "isVisible": true
+                },
+                "brawling": {
+                    "value": 7,
+                    "isVisible": true
                 }
             },
             "dex": {
                 "athletics": {
                     "value": 5,
-                    "isVisible": true
-                },
-                "brawling": {
-                    "value": 7,
                     "isVisible": true
                 }
             },
@@ -115,7 +115,10 @@
         "automatedVulnerabilities": [],
         "automatedImmunities": [],
         "resistances": "",
-        "immunities": ""
+        "immunities": "",
+        "dodgeBase": 15,
+        "repositionBase": 11,
+        "blockBase": 14
     },
     "effects": [],
     "flags": {},
@@ -168,7 +171,13 @@
                 "unmodifiedMax": {},
                 "enhancementSlots": 1,
                 "category": "staff",
-                "reliabilityMax": 10
+                "reliabilityMax": 10,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "melee",
+                "rangedAttackSkill": "",
+                "attackBase": 13
             },
             "effects": [],
             "folder": null,

@@ -163,9 +163,9 @@
         "vulnerability": "",
         "customStat": true,
         "dontAddAttr": true,
-        "dodgeBase": 12,
-        "repositionBase": 16,
-        "blockBase": 15,
+        "dodgeBase": 7,
+        "repositionBase": 23,
+        "blockBase": 19,
         "automatedResistances": [],
         "automatedVulnerabilities": [],
         "automatedImmunities": [],
@@ -174,6 +174,7 @@
     },
     "items": [
         {
+            "_id": "3c61f217371aa7e6",
             "name": "Morso",
             "type": "weapon",
             "img": "icons/svg/sword.svg",
@@ -183,10 +184,16 @@
                 "type": "P",
                 "effects": "N/A",
                 "isStored": false,
-                "reliable": 0,
+                "reliability": 0,
                 "rateOfFire": 1,
                 "damageType": "piercing",
-                "attackBase": 15
+                "attackBase": 15,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "brawling",
+                "rangedAttackSkill": "",
+                "reliabilityMax": 0
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -194,6 +201,7 @@
             }
         },
         {
+            "_id": "a59b116030a7193e",
             "name": "Artigli",
             "type": "weapon",
             "img": "icons/svg/sword.svg",
@@ -203,10 +211,16 @@
                 "type": "T",
                 "effects": "Sanguinamento (30%)",
                 "isStored": false,
-                "reliable": 0,
+                "reliability": 0,
                 "rateOfFire": 1,
                 "damageType": "slashing",
-                "attackBase": 15
+                "attackBase": 15,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "brawling",
+                "rangedAttackSkill": "",
+                "reliabilityMax": 0
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -214,6 +228,7 @@
             }
         },
         {
+            "_id": "daf1011587ca1f74",
             "name": "[Capacità] Scatto",
             "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
@@ -227,6 +242,7 @@
             }
         },
         {
+            "_id": "ba9582e80f94dcea",
             "name": "[Capacità] Abile Scalatore",
             "type": "ability",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",

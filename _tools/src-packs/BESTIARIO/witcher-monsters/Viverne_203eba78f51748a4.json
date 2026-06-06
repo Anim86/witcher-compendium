@@ -61,10 +61,6 @@
                     "value": 9,
                     "isVisible": true
                 },
-                "wildernessSurvival": {
-                    "value": 8,
-                    "isVisible": true
-                },
                 "wilderness": {
                     "value": 9,
                     "isVisible": true
@@ -76,7 +72,7 @@
                     "isVisible": true
                 },
                 "brawling": {
-                    "value": 7,
+                    "value": 10,
                     "isVisible": true
                 },
                 "dodge": {
@@ -91,10 +87,6 @@
                 },
                 "stealth": {
                     "value": 6,
-                    "isVisible": true
-                },
-                "brawling": {
-                    "value": 10,
                     "isVisible": true
                 }
             },
@@ -111,7 +103,7 @@
                     "value": 2,
                     "isVisible": true
                 },
-                "resistMagic": {
+                "resistmagic": {
                     "value": 2,
                     "isVisible": true
                 }
@@ -172,13 +164,16 @@
         "dontAddAttr": true,
         "automatedResistances": [
             "piercing",
-            "slashing",
-            "poison"
+            "poison",
+            "slashing"
         ],
         "automatedVulnerabilities": [],
         "automatedImmunities": [],
         "resistances": "",
-        "immunities": ""
+        "immunities": "",
+        "dodgeBase": 14,
+        "repositionBase": 12,
+        "blockBase": 18
     },
     "items": [
         {
@@ -252,7 +247,15 @@
                 "accuracy": 0,
                 "effects": "Veleno (75%)",
                 "rateOfFire": 1,
-                "damageType": "piercing"
+                "damageType": "piercing",
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "brawling",
+                "rangedAttackSkill": "",
+                "attackBase": 18,
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         },
         {
@@ -266,7 +269,15 @@
                 "accuracy": 0,
                 "effects": "Nessuno",
                 "rateOfFire": 2,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "brawling",
+                "rangedAttackSkill": "",
+                "attackBase": 18,
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         },
         {
@@ -280,7 +291,15 @@
                 "accuracy": 0,
                 "effects": "Veleno (25%)",
                 "rateOfFire": 1,
-                "damageType": "piercing"
+                "damageType": "piercing",
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "brawling",
+                "rangedAttackSkill": "",
+                "attackBase": 18,
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         },
         {

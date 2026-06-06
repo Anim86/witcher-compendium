@@ -1,4 +1,5 @@
 {
+    "_id": "e4d1b092f7c638a5",
     "name": "Garkain",
     "type": "monster",
     "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/garkain.webp",
@@ -67,15 +68,11 @@
             },
             "ref": {
                 "brawling": {
-                    "value": 0,
+                    "value": 8,
                     "isVisible": true
                 }
             },
             "dex": {
-                "brawling": {
-                    "value": 8,
-                    "isVisible": true
-                },
                 "athletics": {
                     "value": 0,
                     "isVisible": true
@@ -155,9 +152,9 @@
         "vulnerability": "",
         "customStat": true,
         "dontAddAttr": true,
-        "dodgeBase": 21,
-        "repositionBase": 17,
-        "blockBase": 18,
+        "dodgeBase": 11,
+        "repositionBase": 10,
+        "blockBase": 19,
         "automatedResistances": [],
         "automatedVulnerabilities": [
             "bleeding"
@@ -181,7 +178,14 @@
                 "effects": "Sanguinamento (75%)",
                 "rateOfFire": 1,
                 "damageType": "piercing",
-                "attackBase": 18
+                "attackBase": 18,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "brawling",
+                "rangedAttackSkill": "",
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         },
         {
@@ -196,7 +200,14 @@
                 "effects": "Sanguinamento (25%)",
                 "rateOfFire": 2,
                 "damageType": "slashing",
-                "attackBase": 18
+                "attackBase": 18,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "brawling",
+                "rangedAttackSkill": "",
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         },
         {
@@ -223,7 +234,6 @@
             }
         }
     ],
-    "_id": "e4d1b092f7c638a5",
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
         "coreVersion": 14

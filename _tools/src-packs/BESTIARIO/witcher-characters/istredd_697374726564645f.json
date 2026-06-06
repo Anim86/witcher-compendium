@@ -138,7 +138,14 @@
             },
             "sintonia": {
                 "value": 8
-            }
+            },
+            "int": {},
+            "ref": {},
+            "dex": {},
+            "body": {},
+            "emp": {},
+            "cra": {},
+            "will": {}
         },
         "derivedStats": {
             "vigor": {
@@ -188,7 +195,10 @@
         "automatedImmunities": [],
         "resistances": "",
         "vulnerability": "",
-        "immunities": ""
+        "immunities": "",
+        "dodgeBase": 6,
+        "repositionBase": 7,
+        "blockBase": 6
     },
     "items": [],
     "effects": [],

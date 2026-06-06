@@ -62,9 +62,17 @@
     width: 100%;
 }
 
-.chat-message .flavor-text .attack-message .damage {
-    width: 100%;
-    margin-bottom: 5px;
+.chat-message .flavor-text .attack-message .flexrow,
+.chat-message .flexrow {
+    gap: 5px;
+}
+
+.chat-message .flavor-text .attack-message .damage,
+.chat-message .flavor-text .attack-message .defend,
+.chat-message .flexrow .damage,
+.chat-message .flexrow .defend {
+    flex: 1;
+    margin: 0;
 }
 
 .chat-message .flavor-text .stun,
@@ -78,7 +86,7 @@
 .chat-message h2,
 .chat-message .flavor-text h1,
 .chat-message .flavor-text h2 {
-    font-family: 'Thewitcher', 'Goudy Old Style', serif;
+    font-family: 'Outfit', sans-serif;
     font-size: 1.2rem;
     font-weight: bold;
     color: var(--w-gold, #c5a059);

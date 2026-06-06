@@ -41,7 +41,7 @@
             <div class="vital-item hp" title="{{localize 'WITCHER.Stats.HP.Abbr'}}">
                 <i class="fas fa-heart"></i>
                 <div class="vital-values">
-                    <input name="system.derivedStats.hp.value" type="number" value="{{system.derivedStats.hp.value}}" {{#unless isEditable}}readonly{{/unless}} />
+                    <span class="value">{{system.derivedStats.hp.value}}</span>
                     <span class="sep">/</span>
                     <span class="max">{{system.derivedStats.hp.max}}</span>
                 </div>
@@ -49,14 +49,22 @@
             <div class="vital-item sta" title="{{localize 'WITCHER.Stats.STA.Abbr'}}">
                 <i class="fas fa-bolt"></i>
                 <div class="vital-values">
-                    <input name="system.derivedStats.sta.value" type="number" value="{{system.derivedStats.sta.value}}" {{#unless isEditable}}readonly{{/unless}} />
+                    <span class="value">{{system.derivedStats.sta.value}}</span>
                     <span class="sep">/</span>
                     <span class="max">{{system.derivedStats.sta.max}}</span>
                 </div>
             </div>
             <div class="vital-item armor" title="{{localize 'WITCHER.Stats.Armor.Abbr'}}">
                 <i class="fas fa-shield-alt"></i>
-                <input name="system.stats.armor.value" type="number" value="{{system.stats.armor.value}}" {{#unless isEditable}}readonly{{/unless}} />
+                <span class="value">{{system.stats.armor.value}}</span>
+            </div>
+            <div class="vital-item toxicity" title="{{localize 'WITCHER.Actor.Stat.Toxicity'}}">
+                <i class="fas fa-skull-crossbones"></i>
+                <div class="vital-values">
+                    <input name="system.stats.toxicity.value" type="text" data-dtype="Number" value="{{system.stats.toxicity.value}}" {{#unless isEditable}}readonly{{/unless}} />
+                    <span class="sep">/</span>
+                    <span class="max">{{system.stats.toxicity.max}}</span>
+                </div>
             </div>
         </div>
     </div>

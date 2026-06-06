@@ -1,4 +1,5 @@
 {
+    "_id": "ea4189d5603b2c7f",
     "name": "Scolopendra Gigante",
     "type": "monster",
     "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/scolopendra_gigante.webp",
@@ -72,17 +73,13 @@
                     "isVisible": true
                 },
                 "brawling": {
-                    "value": 0,
+                    "value": 4,
                     "isVisible": true
                 }
             },
             "dex": {
                 "athletics": {
                     "value": 5,
-                    "isVisible": true
-                },
-                "brawling": {
-                    "value": 4,
                     "isVisible": true
                 },
                 "stealth": {
@@ -186,7 +183,14 @@
                 "effects": "Veleno (30%)",
                 "rateOfFire": 1,
                 "damageType": "piercing",
-                "attackBase": 10
+                "attackBase": 10,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "brawling",
+                "rangedAttackSkill": "",
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         },
         {
@@ -230,7 +234,6 @@
             }
         }
     ],
-    "_id": "ea4189d5603b2c7f",
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
         "coreVersion": 14

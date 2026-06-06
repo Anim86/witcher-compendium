@@ -95,7 +95,7 @@
                     "value": 8,
                     "isVisible": true
                 },
-                "resistMagic": {
+                "resistmagic": {
                     "value": 12,
                     "isVisible": true
                 }
@@ -161,14 +161,14 @@
         "vulnerability": "",
         "customStat": true,
         "dontAddAttr": true,
-        "dodgeBase": 18,
+        "dodgeBase": 10,
         "repositionBase": 18,
         "blockBase": 18,
         "automatedResistances": [],
         "automatedVulnerabilities": [],
         "automatedImmunities": [
-            "poison",
-            "bleeding"
+            "bleeding",
+            "poison"
         ],
         "resistances": "",
         "immunities": ""
@@ -231,7 +231,14 @@
                 "effects": "Forza Schiacciante",
                 "rateOfFire": 2,
                 "damageType": "slashing",
-                "attackBase": 18
+                "attackBase": 18,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "brawling",
+                "rangedAttackSkill": "",
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         }
     ],

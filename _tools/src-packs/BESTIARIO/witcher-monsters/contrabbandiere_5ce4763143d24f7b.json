@@ -61,7 +61,7 @@
                     "value": 7,
                     "isVisible": true
                 },
-                "wildernessSurvival": {
+                "wilderness": {
                     "value": 3,
                     "isVisible": true
                 }
@@ -125,7 +125,7 @@
                     "value": 8,
                     "isVisible": true
                 },
-                "resistMagic": {
+                "resistmagic": {
                     "value": 7,
                     "isVisible": true
                 }
@@ -192,7 +192,7 @@
         "dontAddAttr": true,
         "dodgeBase": 13,
         "repositionBase": 11,
-        "blockBase": 10,
+        "blockBase": 11,
         "automatedResistances": [],
         "automatedVulnerabilities": [],
         "automatedImmunities": [
@@ -248,7 +248,12 @@
                 "conceal": "G",
                 "category": "thrown",
                 "reliabilityMax": 5,
-                "attackBase": 12
+                "attackBase": 12,
+                "attackOptions": [
+                    "ranged"
+                ],
+                "rangedAttackSkill": "athletics",
+                "meleeAttackSkill": ""
             },
             "effects": [],
             "folder": null,
@@ -308,7 +313,12 @@
                 "category": "smallBlade",
                 "range": "N/A",
                 "reliabilityMax": 5,
-                "attackBase": 10
+                "attackBase": 10,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "smallblades",
+                "rangedAttackSkill": ""
             },
             "effects": [],
             "folder": null,

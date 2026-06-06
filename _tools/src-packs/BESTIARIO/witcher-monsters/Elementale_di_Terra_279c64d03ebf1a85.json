@@ -1,4 +1,5 @@
 {
+    "_id": "279c64d03ebf1a85",
     "name": "Elementale di Terra",
     "type": "monster",
     "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/elementale_di_terra.webp",
@@ -71,17 +72,13 @@
                     "isVisible": true
                 },
                 "brawling": {
-                    "value": 0,
+                    "value": 10,
                     "isVisible": true
                 }
             },
             "dex": {
                 "athletics": {
                     "value": 4,
-                    "isVisible": true
-                },
-                "brawling": {
-                    "value": 10,
                     "isVisible": true
                 },
                 "stealth": {
@@ -160,14 +157,14 @@
         "dontAddAttr": true,
         "dodgeBase": 12,
         "repositionBase": 9,
-        "blockBase": 14,
+        "blockBase": 16,
         "automatedResistances": [],
         "automatedVulnerabilities": [],
         "automatedImmunities": [
-            "fire",
+            "bleeding",
             "elemental",
-            "poison",
-            "bleeding"
+            "fire",
+            "poison"
         ],
         "resistances": "",
         "immunities": ""
@@ -185,7 +182,14 @@
                 "effects": "",
                 "rateOfFire": 1,
                 "damageType": "bludgeoning",
-                "attackBase": 14
+                "attackBase": 14,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "brawling",
+                "rangedAttackSkill": "",
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         },
         {
@@ -232,7 +236,6 @@
             }
         }
     ],
-    "_id": "279c64d03ebf1a85",
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
         "coreVersion": 14

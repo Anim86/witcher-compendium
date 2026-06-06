@@ -83,7 +83,7 @@ export let weaponAttackMixin = {
                 title: `${game.i18n.localize('WITCHER.Dialog.attackWith')}: ${weapon.name}`,
                 contentClasses: ['scrollable', 'weapon-roll-dialog', 'compact-dialog']
             },
-            position: { width: 600 },
+            position: { width: 750 },
             content: dialogTemplate,
             modal: true,
             ok: {
@@ -330,7 +330,7 @@ export let weaponAttackMixin = {
             messageDataFlavor = `<div class="attack-message"><h1><img src="${weapon.img}" class="item-img" />${game.i18n.localize('WITCHER.Attack.name')}: ${weapon.name}</h1>`;
             messageDataFlavor += `<span>  ${game.i18n.localize('WITCHER.Armor.Location')}: ${damage.location.alias} </span>`;
 
-            messageDataFlavor += `<div class="flexrow"><button class="damage">${game.i18n.localize('WITCHER.table.Damage')}</button><button class="defend" title="${game.i18n.localize('WITCHER.Context.Defense')}"><i class="fas fa-shield-alt"></i></button></div></div>`;
+            messageDataFlavor += `<div class="flexrow"><button class="damage"><i class="fas fa-tint"></i> ${game.i18n.localize('WITCHER.table.Damage')}</button><button class="defend" title="${game.i18n.localize('WITCHER.Context.Defense')}"><i class="fas fa-shield-alt"></i> ${game.i18n.localize('WITCHER.Context.Defense')}</button></div></div>`;
 
             if (weapon.system.rollOnlyDmg) {
                 weapon.rollDamage(damage);
@@ -348,9 +348,9 @@ export let weaponAttackMixin = {
                 if (roll.options.fumble) {
                     let reliabilityDamage = 1;
                     if (weapon.type == 'weapon') {
-                        let newReliable = Math.max(0, (weapon.system.reliable ?? 0) - reliabilityDamage);
-                        weapon.update({ 'system.reliability': newReliable });
-                        if (newReliable <= 0) {
+                        let newReliability = Math.max(0, (weapon.system.reliability ?? 0) - reliabilityDamage);
+                        weapon.update({ 'system.reliability': newReliability });
+                        if (newReliability <= 0) {
                             ui.notifications.error(`${game.i18n.localize('WITCHER.Weapon.Broken')}: ${weapon.name}`);
                         }
                     } else {

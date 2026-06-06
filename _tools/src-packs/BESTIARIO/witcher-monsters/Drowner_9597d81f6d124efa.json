@@ -61,15 +61,15 @@
                 "dodge": {
                     "value": 5,
                     "isVisible": true
+                },
+                "brawling": {
+                    "value": 5,
+                    "isVisible": true
                 }
             },
             "dex": {
                 "athletics": {
                     "value": 3,
-                    "isVisible": true
-                },
-                "brawling": {
-                    "value": 5,
                     "isVisible": true
                 }
             },
@@ -147,7 +147,10 @@
         "automatedImmunities": [
             "poison"
         ],
-        "immunities": ""
+        "immunities": "",
+        "dodgeBase": 12,
+        "repositionBase": 10,
+        "blockBase": 12
     },
     "items": [
         {
@@ -191,7 +194,15 @@
                 "accuracy": 0,
                 "effects": "Nessuno",
                 "rateOfFire": 2,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "brawling",
+                "rangedAttackSkill": "",
+                "attackBase": 12,
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         }
     ],

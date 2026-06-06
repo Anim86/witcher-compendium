@@ -93,7 +93,14 @@
             },
             "sensibilita": {
                 "value": 14
-            }
+            },
+            "int": {},
+            "ref": {},
+            "dex": {},
+            "body": {},
+            "emp": {},
+            "cra": {},
+            "will": {}
         },
         "details": {
             "biography": "<p>Annegina di Maribor è una sacerdotessa di Melitele dall'animo tormentato. Medico eccezionale, nasconde traumi profondi e un'ossessione per il controllo. Sebbene appaia tranquilla, nasconde una ferocia inaspettata se minacciata.</p>",
@@ -159,7 +166,10 @@
         "automatedImmunities": [],
         "resistances": "",
         "vulnerability": "",
-        "immunities": ""
+        "immunities": "",
+        "dodgeBase": 7,
+        "repositionBase": 6,
+        "blockBase": 7
     },
     "items": [
         {
@@ -214,7 +224,13 @@
                 "conceal": "M",
                 "category": "smallBlade",
                 "range": "N/A",
-                "reliabilityMax": 10
+                "reliabilityMax": 10,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "smallblades",
+                "rangedAttackSkill": "",
+                "attackBase": 7
             },
             "effects": [],
             "folder": null,

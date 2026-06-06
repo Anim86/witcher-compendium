@@ -90,7 +90,14 @@
             },
             "tempra": {
                 "value": 14
-            }
+            },
+            "int": {},
+            "ref": {},
+            "dex": {},
+            "body": {},
+            "emp": {},
+            "cra": {},
+            "will": {}
         },
         "details": {
             "biography": "<p>Kowal, soprannominato \"Crogiolo\", è un individuo pericoloso e risoluto incontrato a Maribor. È noto per la sua cocciutaggine e per la sua abilità con le armi da taglio e a distanza.</p>",
@@ -142,7 +149,10 @@
         "automatedImmunities": [],
         "resistances": "",
         "vulnerability": "",
-        "immunities": ""
+        "immunities": "",
+        "dodgeBase": 10,
+        "repositionBase": 9,
+        "blockBase": 10
     },
     "items": [
         {
@@ -190,7 +200,13 @@
                 "enhancementSlots": 1,
                 "conceal": "G",
                 "category": "thrown",
-                "reliabilityMax": 5
+                "reliabilityMax": 5,
+                "attackOptions": [
+                    "ranged"
+                ],
+                "rangedAttackSkill": "athletics",
+                "meleeAttackSkill": "",
+                "attackBase": 9
             },
             "effects": [],
             "folder": null,
@@ -240,7 +256,13 @@
                 "enhancementSlots": 1,
                 "category": "sword",
                 "range": "N/A",
-                "reliabilityMax": 10
+                "reliabilityMax": 10,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "swordsmanship",
+                "rangedAttackSkill": "",
+                "attackBase": 10
             },
             "effects": [],
             "folder": null,
@@ -299,7 +321,13 @@
                 "conceal": "M",
                 "category": "smallBlade",
                 "range": "N/A",
-                "reliabilityMax": 5
+                "reliabilityMax": 5,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "smallblades",
+                "rangedAttackSkill": "",
+                "attackBase": 10
             },
             "effects": [],
             "folder": null,
@@ -314,6 +342,7 @@
             }
         },
         {
+            "_id": "3ea16cac7adf7e76",
             "name": "[Abilità] Affidabile",
             "type": "note",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",
@@ -326,6 +355,7 @@
             }
         },
         {
+            "_id": "91e8e6501a0bfde2",
             "name": "[Abilità] Cocciuto",
             "type": "note",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",

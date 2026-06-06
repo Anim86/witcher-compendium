@@ -61,7 +61,7 @@
                     "value": 9,
                     "isVisible": true
                 },
-                "wildernessSurvival": {
+                "wilderness": {
                     "value": 8,
                     "isVisible": true
                 }
@@ -142,9 +142,9 @@
         "difficulty": "semplice",
         "customStat": true,
         "dontAddAttr": true,
-        "dodgeBase": 13,
+        "dodgeBase": 6,
         "repositionBase": 15,
-        "blockBase": 11,
+        "blockBase": 6,
         "automatedResistances": [],
         "automatedVulnerabilities": [],
         "automatedImmunities": [
@@ -191,7 +191,12 @@
                 "enhancementSlots": 1,
                 "category": "bow",
                 "reliabilityMax": 10,
-                "attackBase": 14
+                "attackBase": 14,
+                "attackOptions": [
+                    "ranged"
+                ],
+                "rangedAttackSkill": "archery",
+                "meleeAttackSkill": ""
             },
             "effects": [],
             "folder": null,
@@ -242,7 +247,12 @@
                 "category": "axe",
                 "range": "N/A",
                 "reliabilityMax": 10,
-                "attackBase": 11
+                "attackBase": 11,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "melee",
+                "rangedAttackSkill": ""
             },
             "effects": [],
             "folder": null,

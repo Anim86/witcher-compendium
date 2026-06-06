@@ -93,7 +93,7 @@ export let professionMixin = {
                 title: `${game.i18n.localize('WITCHER.Dialog.attackWith')}: ${skill.skillName}`,
                 contentClasses: ['scrollable']
             },
-            position: { width: 600 },
+            position: { width: 750 },
             content: dialogTemplate,
             modal: true,
             ok: {
@@ -217,7 +217,7 @@ export let professionMixin = {
         messageDataFlavor = `<div class="attack-message"><h1>${game.i18n.localize('WITCHER.Attack.name')}: ${skill.skillName}</h1>`;
         messageDataFlavor += `<span>  ${game.i18n.localize('WITCHER.Armor.Location')}: ${touchedLocation.alias} </span>`;
 
-        messageDataFlavor += `<div class="flexrow"><button class="damage">${game.i18n.localize('WITCHER.table.Damage')}</button><button class="defend" title="${game.i18n.localize('WITCHER.Context.Defense')}"><i class="fas fa-shield-alt"></i></button></div></div>`;
+        messageDataFlavor += `<div class="flexrow"><button class="damage"><i class="fas fa-tint"></i> ${game.i18n.localize('WITCHER.table.Damage')}</button><button class="defend" title="${game.i18n.localize('WITCHER.Context.Defense')}"><i class="fas fa-shield-alt"></i> ${game.i18n.localize('WITCHER.Context.Defense')}</button></div></div>`;
 
         let messageData = new ChatMessageData(this, messageDataFlavor, 'attack', {
             attacker: this.uuid,

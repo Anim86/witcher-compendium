@@ -7,7 +7,7 @@ const DialogV2 = foundry.applications.api.DialogV2;
 
 const repairableItemTypes = ['weapon', 'armor'];
 const durabilityLocations = [
-    { label: ['WITCHER.Repair.damagedLocations.weapon'], reliability: 'reliable', maxReliability: 'maxReliability' },
+    { label: ['WITCHER.Repair.damagedLocations.weapon'], reliability: 'reliability', maxReliability: 'reliabilityMax' },
     { label: ['WITCHER.Armor.LocationHead'], reliability: 'headStopping', maxReliability: 'headMaxStopping' },
     { label: ['WITCHER.Armor.LocationTorso'], reliability: 'torsoStopping', maxReliability: 'torsoMaxStopping' },
     {

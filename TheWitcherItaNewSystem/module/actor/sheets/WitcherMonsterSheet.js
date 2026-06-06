@@ -34,7 +34,6 @@ export default class WitcherMonsterSheet extends WitcherActorSheet {
     static PARTS = {
         sidebar: { template: 'systems/TheWitcherItaNewSystem/templates/sheets/actor/monster/sidebar.hbs' },
         header:  { template: 'systems/TheWitcherItaNewSystem/templates/sheets/actor/monster/header.hbs' },
-        stats:   { template: 'systems/TheWitcherItaNewSystem/templates/sheets/actor/monster/stats.hbs' },
         tabs:    { template: 'templates/generic/tab-navigation.hbs' },
         skills:  {
             template: 'systems/TheWitcherItaNewSystem/templates/sheets/actor/monster/tabs/tab-skills.hbs',

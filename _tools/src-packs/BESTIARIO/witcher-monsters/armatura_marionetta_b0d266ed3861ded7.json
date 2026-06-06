@@ -71,7 +71,7 @@
                     "isVisible": true
                 },
                 "brawling": {
-                    "value": 0,
+                    "value": 8,
                     "isVisible": true
                 },
                 "swordsmanship": {
@@ -82,10 +82,6 @@
             "dex": {
                 "athletics": {
                     "value": 4,
-                    "isVisible": true
-                },
-                "brawling": {
-                    "value": 8,
                     "isVisible": true
                 }
             },
@@ -153,12 +149,15 @@
         "automatedResistances": [],
         "automatedVulnerabilities": [],
         "automatedImmunities": [
+            "bleeding",
             "fire",
-            "poison",
-            "bleeding"
+            "poison"
         ],
         "resistances": "",
-        "immunities": ""
+        "immunities": "",
+        "dodgeBase": 12,
+        "repositionBase": 10,
+        "blockBase": 16
     },
     "items": [
         {
@@ -172,7 +171,15 @@
                 "accuracy": 0,
                 "effects": "Nessuno",
                 "rateOfFire": 2,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "brawling",
+                "rangedAttackSkill": "",
+                "attackBase": 16,
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         },
         {

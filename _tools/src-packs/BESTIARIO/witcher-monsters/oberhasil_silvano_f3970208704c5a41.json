@@ -199,9 +199,9 @@
         "difficulty": "medium",
         "customStat": true,
         "dontAddAttr": true,
-        "dodgeBase": 13,
-        "repositionBase": 8,
-        "blockBase": 12,
+        "dodgeBase": 23,
+        "repositionBase": 16,
+        "blockBase": 22,
         "automatedResistances": [],
         "automatedVulnerabilities": [],
         "automatedImmunities": [],
@@ -210,6 +210,7 @@
     },
     "items": [
         {
+            "_id": "b56ce81f91082dc8",
             "name": "Pugni",
             "type": "weapon",
             "img": "modules/witcher-compendium/assets/SPECIAL/trait_generico.webp",
@@ -218,10 +219,16 @@
                 "accuracy": 0,
                 "effects": "Atterramento (30%)",
                 "isStored": false,
-                "reliable": 0,
+                "reliability": 0,
                 "rateOfFire": 1,
                 "damageType": "bludgeoning",
-                "attackBase": 12
+                "attackBase": 12,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "brawling",
+                "rangedAttackSkill": "",
+                "reliabilityMax": 0
             }
         }
     ],

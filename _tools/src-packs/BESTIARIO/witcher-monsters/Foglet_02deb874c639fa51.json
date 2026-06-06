@@ -1,4 +1,5 @@
 {
+    "_id": "02deb874c639fa51",
     "name": "Foglet",
     "type": "monster",
     "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/foglet.webp",
@@ -67,15 +68,11 @@
             },
             "ref": {
                 "brawling": {
-                    "value": 0,
+                    "value": 7,
                     "isVisible": true
                 }
             },
             "dex": {
-                "brawling": {
-                    "value": 7,
-                    "isVisible": true
-                },
                 "athletics": {
                     "value": 0,
                     "isVisible": true
@@ -155,8 +152,8 @@
         "vulnerability": "",
         "customStat": true,
         "dontAddAttr": true,
-        "dodgeBase": 15,
-        "repositionBase": 16,
+        "dodgeBase": 8,
+        "repositionBase": 8,
         "blockBase": 15,
         "automatedResistances": [],
         "automatedVulnerabilities": [],
@@ -177,7 +174,14 @@
                 "effects": "Nessuno",
                 "rateOfFire": 2,
                 "damageType": "slashing",
-                "attackBase": 15
+                "attackBase": 15,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "brawling",
+                "rangedAttackSkill": "",
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         },
         {
@@ -204,7 +208,6 @@
             }
         }
     ],
-    "_id": "02deb874c639fa51",
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
         "coreVersion": 14

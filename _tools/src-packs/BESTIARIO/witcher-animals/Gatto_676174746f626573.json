@@ -124,9 +124,9 @@
         "vulnerability": "",
         "customStat": true,
         "dontAddAttr": true,
-        "dodgeBase": 16,
-        "repositionBase": 18,
-        "blockBase": 17,
+        "dodgeBase": 4,
+        "repositionBase": 6,
+        "blockBase": 4,
         "automatedResistances": [],
         "automatedVulnerabilities": [
             "bleeding"
@@ -147,10 +147,16 @@
                 "accuracy": 0,
                 "effects": "N/A",
                 "isStored": false,
-                "reliable": 0,
+                "reliability": 0,
                 "rateOfFire": 1,
                 "damageType": "slashing",
-                "attackBase": 17
+                "attackBase": 17,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "melee",
+                "rangedAttackSkill": "",
+                "reliabilityMax": 0
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -168,10 +174,16 @@
                 "accuracy": 0,
                 "effects": "N/A",
                 "isStored": false,
-                "reliable": 0,
+                "reliability": 0,
                 "rateOfFire": 1,
                 "damageType": "piercing",
-                "attackBase": 17
+                "attackBase": 17,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "melee",
+                "rangedAttackSkill": "",
+                "reliabilityMax": 0
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

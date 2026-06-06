@@ -102,7 +102,14 @@
             },
             "artedelWitcher": {
                 "value": 10
-            }
+            },
+            "int": {},
+            "ref": {},
+            "dex": {},
+            "body": {},
+            "emp": {},
+            "cra": {},
+            "will": {}
         },
         "details": {
             "biography": "<p>Pardus era un bambino venduto alla Carovana Dyn Mawr nel deserto di Korath. Sopravvissuto a fatica alla Prova delle Erbe, è diventato un witcher della Scuola del Gatto specializzato in contratti di omicidio. Un mutageno di Katakan ha alterato il suo corpo, allungandone le braccia e rendendolo un predatore ancora più letale.</p>",
@@ -168,7 +175,10 @@
         "automatedImmunities": [],
         "resistances": "",
         "vulnerability": "",
-        "immunities": ""
+        "immunities": "",
+        "dodgeBase": 10,
+        "repositionBase": 10,
+        "blockBase": 10
     },
     "items": [
         {
@@ -183,7 +193,15 @@
                 "quantity": 1,
                 "toxicity": "0%",
                 "duration": "N/A",
-                "sourcebook": "MB 247"
+                "sourcebook": "MB 247",
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "melee",
+                "rangedAttackSkill": "",
+                "attackBase": 10,
+                "reliability": 0,
+                "reliabilityMax": 0
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -202,7 +220,15 @@
                 "quantity": 1,
                 "toxicity": "0%",
                 "duration": "N/A",
-                "sourcebook": "MB 247"
+                "sourcebook": "MB 247",
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "melee",
+                "rangedAttackSkill": "",
+                "attackBase": 10,
+                "reliability": 0,
+                "reliabilityMax": 0
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

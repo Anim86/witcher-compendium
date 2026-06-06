@@ -1,4 +1,5 @@
 {
+    "_id": "395027d6cbea148f",
     "name": "Fenice",
     "type": "monster",
     "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/fenice.webp",
@@ -71,15 +72,11 @@
                     "isVisible": true
                 },
                 "brawling": {
-                    "value": 0,
+                    "value": 6,
                     "isVisible": true
                 }
             },
             "dex": {
-                "brawling": {
-                    "value": 6,
-                    "isVisible": true
-                },
                 "athletics": {
                     "value": 0,
                     "isVisible": true
@@ -168,9 +165,9 @@
         "vulnerability": "",
         "customStat": true,
         "dontAddAttr": true,
-        "dodgeBase": 17,
-        "repositionBase": 16,
-        "blockBase": 16,
+        "dodgeBase": 9,
+        "repositionBase": 10,
+        "blockBase": 15,
         "automatedResistances": [],
         "automatedVulnerabilities": [],
         "automatedImmunities": [
@@ -192,7 +189,14 @@
                 "effects": "Sanguinamento (50%)",
                 "rateOfFire": 2,
                 "damageType": "slashing",
-                "attackBase": 16
+                "attackBase": 16,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "melee",
+                "rangedAttackSkill": "",
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         },
         {
@@ -206,7 +210,15 @@
                 "accuracy": 0,
                 "effects": "A Fuoco (50%), Vacillante (25%)",
                 "rateOfFire": 1,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "melee",
+                "rangedAttackSkill": "",
+                "attackBase": 16,
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         },
         {
@@ -233,7 +245,6 @@
             }
         }
     ],
-    "_id": "395027d6cbea148f",
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
         "coreVersion": 14

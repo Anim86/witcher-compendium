@@ -251,7 +251,7 @@ export let defenseMixin = {
             : '';
         messageData.append(new ChatMessageData(this, chatMessageCrit, 'defense', { crit: crit }));
 
-        let stun = this.checkForStun(attackDamageObject);
+        let stun = this.checkForStun(attackDamageObject, crit);
         const chatMessageStun = stun
             ? await foundry.applications.handlebars.renderTemplate(
                   'systems/TheWitcherItaNewSystem/templates/chat/combat/defense/defenseStun.hbs',
@@ -322,15 +322,12 @@ export let defenseMixin = {
         return config;
     },
 
-    checkForStun(attackDamageObject) {
-        // Every critical wound forces a Grit (stun) save
-        if (attackDamageObject.crit) {
-            return {
-                modifier: attackDamageObject.properties.stun || 0
-            };
-        }
-        if (attackDamageObject.location.name != 'torso' && attackDamageObject.location.name != 'head') return;
-        if (!attackDamageObject.properties.stun) return;
+    checkForStun(attackDamageObject, isCrit) {
+        // Every critical wound forces a Grit (stun) save, which is already handled by defenseCrit.hbs
+        if (isCrit) return null;
+
+        if (attackDamageObject.location.name != 'torso' && attackDamageObject.location.name != 'head') return null;
+        if (!attackDamageObject.properties.stun) return null;
 
         return {
             modifier: attackDamageObject.properties.stun

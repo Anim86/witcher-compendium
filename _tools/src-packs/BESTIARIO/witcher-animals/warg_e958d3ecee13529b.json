@@ -61,14 +61,14 @@
                     "value": 4,
                     "isVisible": true
                 },
-                "wildernessSurvival": {
+                "wilderness": {
                     "value": 7,
                     "isVisible": true
                 }
             },
             "ref": {
                 "brawling": {
-                    "value": 1,
+                    "value": 6,
                     "isVisible": true
                 },
                 "melee": {
@@ -83,10 +83,6 @@
                 },
                 "stealth": {
                     "value": 0,
-                    "isVisible": true
-                },
-                "brawling": {
-                    "value": 6,
                     "isVisible": true
                 }
             },
@@ -107,7 +103,7 @@
                     "value": 0,
                     "isVisible": true
                 },
-                "resistMagic": {
+                "resistmagic": {
                     "value": 0,
                     "isVisible": true
                 }
@@ -177,7 +173,10 @@
         "automatedVulnerabilities": [],
         "automatedImmunities": [],
         "resistances": "",
-        "immunities": ""
+        "immunities": "",
+        "dodgeBase": 5,
+        "repositionBase": 7,
+        "blockBase": 11
     },
     "items": [
         {
@@ -251,7 +250,15 @@
                 "accuracy": 0,
                 "effects": "Sanguinamento (25%)",
                 "rateOfFire": 1,
-                "damageType": "piercing"
+                "damageType": "piercing",
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "brawling",
+                "rangedAttackSkill": "",
+                "attackBase": 11,
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         }
     ],

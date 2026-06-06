@@ -1,4 +1,5 @@
 {
+    "_id": "a26b1940ed7c3f85",
     "name": "Bullvore",
     "type": "monster",
     "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/bullvore.webp",
@@ -75,17 +76,13 @@
                     "isVisible": true
                 },
                 "brawling": {
-                    "value": 0,
+                    "value": 9,
                     "isVisible": true
                 }
             },
             "dex": {
                 "athletics": {
                     "value": 4,
-                    "isVisible": true
-                },
-                "brawling": {
-                    "value": 9,
                     "isVisible": true
                 },
                 "stealth": {
@@ -170,14 +167,14 @@
         "armorLower": 10,
         "customStat": true,
         "dontAddAttr": true,
-        "dodgeBase": 13,
-        "repositionBase": 10,
-        "blockBase": 14,
+        "dodgeBase": 11,
+        "repositionBase": 9,
+        "blockBase": 16,
         "automatedResistances": [],
         "automatedVulnerabilities": [],
         "automatedImmunities": [
-            "poison",
-            "bleeding"
+            "bleeding",
+            "poison"
         ],
         "resistances": "",
         "immunities": ""
@@ -195,7 +192,14 @@
                 "effects": "",
                 "rateOfFire": 2,
                 "damageType": "slashing",
-                "attackBase": 14
+                "attackBase": 14,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "brawling",
+                "rangedAttackSkill": "",
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         },
         {
@@ -210,7 +214,14 @@
                 "effects": "",
                 "rateOfFire": 1,
                 "damageType": "piercing",
-                "attackBase": 14
+                "attackBase": 14,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "brawling",
+                "rangedAttackSkill": "",
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         },
         {
@@ -268,7 +279,6 @@
             }
         }
     ],
-    "_id": "a26b1940ed7c3f85",
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
         "coreVersion": 14

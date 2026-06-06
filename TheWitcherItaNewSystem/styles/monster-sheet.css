@@ -58,20 +58,14 @@
     grid-row: auto !important;
 }
 
-/* Header: prima riga del wrapper */
-.application.sheet.witcher.actor.monster-v2 [data-application-part="header"] {
-    /* auto in grid — non serve grid-column/row esplicito */
-}
+/* Header: prima riga del wrapper (auto in grid — non serve grid-column/row esplicito) */
 
 /* Stats: nascosto (è nella sidebar) */
 .application.sheet.witcher.actor.monster-v2 [data-application-part="stats"] {
     display: none !important;
 }
 
-/* Tab navigation */
-.application.sheet.witcher.actor.monster-v2 [data-application-part="tabs"] {
-    /* seconda riga del grid nel wrapper */
-}
+/* Tab navigation (seconda riga del grid nel wrapper) */
 
 /* Tab PARTS: terza riga (1fr), nascosti di default */
 .application.sheet.witcher.actor.monster-v2 [data-application-part="skills"],
@@ -492,7 +486,7 @@
 }
 
 .type-name {
-    font-family: 'Thewitcher', serif;
+    font-family: 'Outfit', sans-serif;
     font-size: 14px;
     color: var(--w-gold-light);
     line-height: 1.1;
@@ -506,7 +500,7 @@
 }
 
 .header-name-box h1 input {
-    font-family: 'Thewitcher', serif !important;
+    font-family: 'Outfit', sans-serif !important;
     font-size: 28px !important;
     color: #fff !important;
     background: transparent !important;
@@ -866,46 +860,47 @@
 .monster-details-layout {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 
 .top-details-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 15px;
 }
 
 .details-column {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 
 .details-section.card {
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid var(--p-border);
-    border-radius: 12px;
-    padding: 15px;
+    border-radius: 8px;
+    padding: 8px 10px 10px 10px;
     backdrop-filter: blur(5px);
 }
 
 .section-header {
-    font-family: 'Thewitcher', serif;
-    font-size: 1.2rem;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.1rem;
     color: var(--w-gold-light);
-    border-bottom: 1px solid var(--p-border-bright);
-    margin: 0 0 15px 0;
-    padding-bottom: 8px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
+    background: transparent !important;
+    border-bottom: 1px solid var(--p-border-bright) !important;
+    margin: 0 0 10px 0 !important;
+    padding: 0 0 5px 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
 }
 
 .details-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 15px;
+    gap: 10px;
 }
 
 .detail-item {
@@ -931,16 +926,120 @@
     font-size: 13px !important;
 }
 
-.vuln-res-container, .knowledge-container {
+.knowledge-container {
     display: flex;
     flex-direction: column;
+    gap: 8px;
+}
+
+/* ── VULNERABILITIES PREMIUM TABLE ── */
+.vuln-res-table {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    border: 1px solid var(--p-border);
+    border-radius: 8px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.vuln-res-table .table-header {
+    display: grid;
+    grid-template-columns: 140px 1.5fr 2fr;
     gap: 15px;
+    background: rgba(197, 160, 89, 0.1);
+    border-bottom: 1px solid var(--p-border-bright);
+    padding: 8px 12px;
+}
+
+.vuln-res-table .table-header .table-cell {
+    font-size: 10px;
+    font-weight: 800;
+    color: var(--w-gold-light);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.vuln-res-table .table-row {
+    display: grid;
+    grid-template-columns: 140px 1.5fr 2fr;
+    gap: 15px;
+    padding: 10px 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    align-items: start;
+}
+
+.vuln-res-table .table-row:last-child {
+    border-bottom: none;
+}
+
+.vuln-res-table .table-row:hover {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.vuln-res-table .type-cell {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.vuln-res-table .type-cell label {
+    font-size: 11px;
+    font-weight: 800;
+    color: var(--w-gold);
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.vuln-res-table .res-cell multi-select {
+    width: 100%;
+    margin-bottom: 0;
+    min-height: 44px;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--p-border);
+    border-radius: 6px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 12px;
+    padding: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px;
+}
+
+.vuln-res-table .res-cell multi-select::part(tag) {
+    background: rgba(197, 160, 89, 0.15);
+    border: 1px solid rgba(197, 160, 89, 0.3);
+    color: var(--w-gold-light);
+    border-radius: 4px;
+    padding: 2px 6px;
+}
+
+.vuln-res-table .res-cell multi-select .tag {
+    background: rgba(197, 160, 89, 0.15);
+    border: 1px solid rgba(197, 160, 89, 0.3);
+    color: var(--w-gold-light);
+    border-radius: 4px;
+    padding: 2px 6px;
+}
+
+.vuln-res-table .desc-cell textarea {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3) !important;
+    border: 1px solid var(--p-border) !important;
+    border-radius: 6px !important;
+    color: rgba(255, 255, 255, 0.8) !important;
+    padding: 8px 10px !important;
+    font-size: 12px !important;
+    line-height: 1.4 !important;
+    resize: vertical !important;
+    min-height: 44px;
 }
 
 .text-block {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 4px;
 }
 
 .text-block label {
@@ -955,11 +1054,11 @@
     border: 1px solid var(--p-border) !important;
     border-radius: 6px !important;
     color: rgba(255, 255, 255, 0.8) !important;
-    padding: 10px !important;
-    font-size: 13px !important;
-    line-height: 1.5 !important;
+    padding: 6px !important;
+    font-size: 12px !important;
+    line-height: 1.4 !important;
     resize: vertical !important;
-    min-height: 80px;
+    min-height: 40px;
 }
 
 .bio-container {

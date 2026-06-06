@@ -80,10 +80,6 @@
                 "stealth": {
                     "value": 0,
                     "isVisible": true
-                },
-                "brawling": {
-                    "value": 4,
-                    "isVisible": true
                 }
             },
             "body": {
@@ -103,7 +99,7 @@
                     "value": 8,
                     "isVisible": true
                 },
-                "resistMagic": {
+                "resistmagic": {
                     "value": 10,
                     "isVisible": true
                 }
@@ -169,15 +165,15 @@
         "vulnerability": "",
         "customStat": true,
         "dontAddAttr": true,
-        "dodgeBase": 17,
+        "dodgeBase": 12,
         "repositionBase": 20,
-        "blockBase": 22,
+        "blockBase": 20,
         "automatedResistances": [],
         "automatedVulnerabilities": [],
         "automatedImmunities": [
+            "bleeding",
             "fire",
-            "poison",
-            "bleeding"
+            "poison"
         ],
         "resistances": "",
         "immunities": ""
@@ -285,7 +281,14 @@
                 "effects": "Nessuno",
                 "rateOfFire": 2,
                 "damageType": "slashing",
-                "attackBase": 22
+                "attackBase": 22,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "brawling",
+                "rangedAttackSkill": "",
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         },
         {
@@ -299,7 +302,15 @@
                 "accuracy": 0,
                 "effects": "-1 Danno Armatura (Ablativo)",
                 "rateOfFire": 1,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "brawling",
+                "rangedAttackSkill": "",
+                "attackBase": 20,
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         },
         {
@@ -313,7 +324,15 @@
                 "accuracy": 0,
                 "effects": "Sanguinamento (50%)",
                 "rateOfFire": 1,
-                "damageType": "piercing"
+                "damageType": "piercing",
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "brawling",
+                "rangedAttackSkill": "",
+                "attackBase": 20,
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         }
     ],

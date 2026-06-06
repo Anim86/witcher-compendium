@@ -87,7 +87,14 @@
             },
             "coraggio": {
                 "value": 6
-            }
+            },
+            "int": {},
+            "ref": {},
+            "dex": {},
+            "body": {},
+            "emp": {},
+            "cra": {},
+            "will": {}
         },
         "details": {
             "biography": "<p>Catrin Preece è la spia e l'osservatrice della Società. Silenziosa e sempre allerta, si assicura che Altaguardia rimanga sicura da occhi indiscreti e minacce esterne. La sua abilità nel nascondersi e nel percepire il pericolo la rende una risorsa indispensabile per Louise.</p>",
@@ -153,7 +160,10 @@
         "automatedImmunities": [],
         "resistances": "",
         "vulnerability": "",
-        "immunities": ""
+        "immunities": "",
+        "dodgeBase": 6,
+        "repositionBase": 6,
+        "blockBase": 6
     },
     "items": [],
     "effects": [],

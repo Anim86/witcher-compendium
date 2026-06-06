@@ -84,7 +84,14 @@
             },
             "resistereACoercizione": {
                 "value": 12
-            }
+            },
+            "int": {},
+            "ref": {},
+            "dex": {},
+            "body": {},
+            "emp": {},
+            "cra": {},
+            "will": {}
         },
         "details": {
             "biography": "<p>Cooper Mawik ambisce a diventare membro del Consiglio degli Anziani. È un minatore e un artigiano passabile, che produce armi per l'esportazione. Detesta gli umani ed è orgoglioso di fregarli ogni volta che può.</p>",
@@ -150,7 +157,10 @@
         "automatedImmunities": [],
         "resistances": "",
         "vulnerability": "",
-        "immunities": ""
+        "immunities": "",
+        "dodgeBase": 7,
+        "repositionBase": 6,
+        "blockBase": 7
     },
     "items": [
         {
@@ -189,7 +199,13 @@
                 "conceal": "P",
                 "category": "smallBlade",
                 "range": "N/A",
-                "reliabilityMax": 10
+                "reliabilityMax": 10,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "smallblades",
+                "rangedAttackSkill": "",
+                "attackBase": 7
             },
             "effects": [],
             "folder": null,

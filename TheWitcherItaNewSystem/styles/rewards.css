@@ -14,7 +14,7 @@
 }
 
 .witcher.extended-sheet header h1 {
-    font-family: 'Thewitcher', serif;
+    font-family: 'Outfit', sans-serif;
     color: var(--w-gold);
     text-align: center;
     font-size: 1.8rem;
@@ -40,7 +40,7 @@
 }
 
 .current-ip-display .label { font-size: 10px; text-transform: uppercase; color: var(--w-teal); font-weight: 800; letter-spacing: 1px; }
-.current-ip-display .value { font-size: 28px; font-weight: 900; font-family: 'Thewitcher', serif; color: #fff; line-height: 1; }
+.current-ip-display .value { font-size: 28px; font-weight: 900; font-family: 'Outfit', sans-serif; color: #fff; line-height: 1; }
 
 .currency-totals {
     display: flex;
@@ -53,7 +53,7 @@
 }
 
 .currency-totals .curr-box .curr-label { font-size: 9px; text-transform: uppercase; color: var(--w-gold-dark); font-weight: 800; }
-.currency-totals .curr-box .curr-val { font-size: 20px; font-weight: 900; color: #fff; font-family: 'Thewitcher', serif; }
+.currency-totals .curr-box .curr-val { font-size: 20px; font-weight: 900; color: #fff; font-family: 'Outfit', sans-serif; }
 
 .btn-reward-add {
     background: linear-gradient(135deg, var(--w-gold-dark) 0%, var(--w-gold) 100%) !important;
@@ -114,7 +114,7 @@
 .log-value {
     font-size: 18px;
     font-weight: 900;
-    font-family: 'Thewitcher', serif;
+    font-family: 'Outfit', sans-serif;
 }
 
 .log-value.positive { color: #2ecc71; }

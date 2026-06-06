@@ -1,4 +1,5 @@
 {
+    "_id": "463e78129a5b0dcf",
     "name": "Pesta",
     "type": "monster",
     "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/pesta.webp",
@@ -75,16 +76,12 @@
                     "isVisible": true
                 },
                 "brawling": {
-                    "value": 0,
+                    "value": 7,
                     "isVisible": true
                 }
             },
             "dex": {
                 "athletics": {
-                    "value": 7,
-                    "isVisible": true
-                },
-                "brawling": {
                     "value": 7,
                     "isVisible": true
                 },
@@ -158,14 +155,14 @@
         "armorLower": 0,
         "customStat": true,
         "dontAddAttr": true,
-        "dodgeBase": 18,
-        "repositionBase": 16,
+        "dodgeBase": 15,
+        "repositionBase": 15,
         "blockBase": 16,
         "automatedResistances": [],
         "automatedVulnerabilities": [],
         "automatedImmunities": [
-            "poison",
-            "bleeding"
+            "bleeding",
+            "poison"
         ],
         "resistances": "",
         "immunities": ""
@@ -182,7 +179,15 @@
                 "accuracy": 0,
                 "effects": "",
                 "rateOfFire": 1,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "brawling",
+                "rangedAttackSkill": "",
+                "attackBase": 16,
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         },
         {
@@ -230,7 +235,6 @@
             }
         }
     ],
-    "_id": "463e78129a5b0dcf",
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
         "coreVersion": 14

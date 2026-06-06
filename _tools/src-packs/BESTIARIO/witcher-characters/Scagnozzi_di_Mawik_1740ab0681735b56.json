@@ -81,7 +81,14 @@
             },
             "sensibilita": {
                 "value": 8
-            }
+            },
+            "int": {},
+            "ref": {},
+            "dex": {},
+            "body": {},
+            "emp": {},
+            "cra": {},
+            "will": {}
         },
         "details": {
             "biography": "<p>Gli scagnozzi di Mawik sono un gruppo di giovani nani che si sono bevuti la sua retorica sull'inaffidabilità delle altre specie. Fanno commissioni per lui e gli segnalano coloro che considerano 'sleali'.</p>",
@@ -147,7 +154,10 @@
         "automatedImmunities": [],
         "resistances": "",
         "vulnerability": "",
-        "immunities": ""
+        "immunities": "",
+        "dodgeBase": 7,
+        "repositionBase": 6,
+        "blockBase": 7
     },
     "items": [
         {
@@ -186,7 +196,13 @@
                 "conceal": "P",
                 "category": "smallBlade",
                 "range": "N/A",
-                "reliabilityMax": 10
+                "reliabilityMax": 10,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "smallblades",
+                "rangedAttackSkill": "",
+                "attackBase": 7
             },
             "effects": [],
             "folder": null,

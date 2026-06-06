@@ -81,7 +81,14 @@
             },
             "tempra": {
                 "value": 0
-            }
+            },
+            "int": {},
+            "ref": {},
+            "dex": {},
+            "body": {},
+            "emp": {},
+            "cra": {},
+            "will": {}
         },
         "details": {
             "biography": "<p>Temuta nel Toussaint settentrionale, la Strega di Rupe della Lince è considerata responsabile di molte maledizioni. Vive in isolamento con le sue pantere e maledice chiunque osi insultarla. Nonostante la sua fama sinistra, alcuni disperati cercano il suo aiuto.</p>",
@@ -119,7 +126,10 @@
         "automatedImmunities": [],
         "resistances": "",
         "vulnerability": "",
-        "immunities": ""
+        "immunities": "",
+        "dodgeBase": 0,
+        "repositionBase": 0,
+        "blockBase": 0
     },
     "items": [
         {
@@ -164,7 +174,13 @@
                 "enhancementSlots": 2,
                 "conceal": "G",
                 "category": "staff",
-                "reliabilityMax": 15
+                "reliabilityMax": 15,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "melee",
+                "rangedAttackSkill": "",
+                "attackBase": 0
             },
             "effects": [],
             "flags": {},
@@ -174,6 +190,7 @@
             }
         },
         {
+            "_id": "aaaf3b8ac7c45a7d",
             "name": "[Capacità] Magia della Strega",
             "type": "note",
             "img": "modules/witcher-compendium/assets/BESTIARIO/traits/trait_generico.webp",

@@ -91,7 +91,7 @@
                     "value": 8,
                     "isVisible": true
                 },
-                "resistMagic": {
+                "resistmagic": {
                     "value": 9,
                     "isVisible": true
                 }
@@ -157,16 +157,16 @@
         "vulnerability": "",
         "customStat": true,
         "dontAddAttr": true,
-        "dodgeBase": 12,
-        "repositionBase": 13,
+        "dodgeBase": 8,
+        "repositionBase": 11,
         "blockBase": 16,
         "automatedResistances": [],
         "automatedVulnerabilities": [],
         "automatedImmunities": [
+            "bleeding",
             "bludgeoning",
             "piercing",
             "poison",
-            "bleeding",
             "stun"
         ],
         "resistances": "",
@@ -184,9 +184,16 @@
                 "accuracy": 0,
                 "effects": "N/A",
                 "isStored": false,
-                "reliable": 0,
+                "reliability": 0,
                 "rateOfFire": 1,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "brawling",
+                "rangedAttackSkill": "",
+                "attackBase": 16,
+                "reliabilityMax": 0
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",

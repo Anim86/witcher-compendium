@@ -1,4 +1,5 @@
 {
+    "_id": "c6f108bd53ae4729",
     "name": "Shaelmaar",
     "type": "monster",
     "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/shaelmaar.webp",
@@ -151,9 +152,9 @@
         "vulnerability": "",
         "customStat": true,
         "dontAddAttr": true,
-        "dodgeBase": 14,
-        "repositionBase": 8,
-        "blockBase": 15,
+        "dodgeBase": 6,
+        "repositionBase": 4,
+        "blockBase": 6,
         "automatedResistances": [],
         "automatedVulnerabilities": [],
         "automatedImmunities": [
@@ -188,7 +189,6 @@
             }
         }
     ],
-    "_id": "c6f108bd53ae4729",
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
         "coreVersion": 14

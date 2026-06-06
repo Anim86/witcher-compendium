@@ -149,7 +149,10 @@
         "automatedImmunities": [],
         "resistances": "",
         "vulnerability": "",
-        "immunities": ""
+        "immunities": "",
+        "dodgeBase": 15,
+        "repositionBase": 17,
+        "blockBase": 12
     },
     "items": [
         {
@@ -188,7 +191,13 @@
                 "unmodifiedMax": {},
                 "enhancementSlots": 1,
                 "category": "bow",
-                "reliabilityMax": 10
+                "reliabilityMax": 10,
+                "attackOptions": [
+                    "ranged"
+                ],
+                "rangedAttackSkill": "archery",
+                "meleeAttackSkill": "",
+                "attackBase": 18
             },
             "effects": [],
             "folder": null,
@@ -214,7 +223,15 @@
                 "hands": 1,
                 "range": "20m",
                 "effects": "",
-                "damageType": "piercing"
+                "damageType": "piercing",
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "swordsmanship",
+                "rangedAttackSkill": "",
+                "attackBase": 14,
+                "reliability": 0,
+                "reliabilityMax": 0
             },
             "_stats": {
                 "systemId": "TheWitcherItaNewSystem",
@@ -257,7 +274,13 @@
                 "conceal": "G",
                 "category": "sword",
                 "range": "N/A",
-                "reliabilityMax": 15
+                "reliabilityMax": 15,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "swordsmanship",
+                "rangedAttackSkill": "",
+                "attackBase": 14
             },
             "effects": [],
             "folder": null,
@@ -307,7 +330,13 @@
                 "conceal": "P",
                 "category": "smallBlade",
                 "range": "N/A",
-                "reliabilityMax": 10
+                "reliabilityMax": 10,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "smallblades",
+                "rangedAttackSkill": "",
+                "attackBase": 8
             },
             "effects": [],
             "folder": null,

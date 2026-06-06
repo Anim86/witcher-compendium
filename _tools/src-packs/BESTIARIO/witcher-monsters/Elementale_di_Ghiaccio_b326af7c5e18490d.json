@@ -1,4 +1,5 @@
 {
+    "_id": "b326af7c5e18490d",
     "name": "Elementale di Ghiaccio",
     "type": "monster",
     "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/elementale_di_ghiaccio.webp",
@@ -68,15 +69,11 @@
             },
             "ref": {
                 "brawling": {
-                    "value": 0,
+                    "value": 10,
                     "isVisible": true
                 }
             },
             "dex": {
-                "brawling": {
-                    "value": 10,
-                    "isVisible": true
-                },
                 "athletics": {
                     "value": 0,
                     "isVisible": true
@@ -152,17 +149,17 @@
         "vulnerability": "",
         "customStat": true,
         "dontAddAttr": true,
-        "dodgeBase": 14,
-        "repositionBase": 10,
-        "blockBase": 15,
+        "dodgeBase": 6,
+        "repositionBase": 5,
+        "blockBase": 16,
         "automatedResistances": [],
         "automatedVulnerabilities": [],
         "automatedImmunities": [
+            "bleeding",
+            "elemental",
             "fire",
             "ice",
-            "elemental",
-            "poison",
-            "bleeding"
+            "poison"
         ],
         "resistances": "",
         "immunities": ""
@@ -180,7 +177,14 @@
                 "effects": "Forza Schiacciante, Congelamento (50%)",
                 "rateOfFire": 1,
                 "damageType": "bludgeoning",
-                "attackBase": 15
+                "attackBase": 15,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "brawling",
+                "rangedAttackSkill": "",
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         },
         {
@@ -237,7 +241,6 @@
             }
         }
     ],
-    "_id": "b326af7c5e18490d",
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
         "coreVersion": 14

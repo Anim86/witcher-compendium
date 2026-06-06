@@ -2920,7 +2920,7 @@ form.witcher-wizard .wizard-content {
 }
 
 .witcher-wizard-modal .window-title {
-    font-family: 'Thewitcher', serif !important;
+    font-family: 'Outfit', sans-serif !important;
     color: var(--wizard-gold, #b8860b) !important;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -3030,7 +3030,7 @@ form.witcher-wizard .wizard-content {
     border: 2px solid var(--wizard-gold, #b8860b) !important;
     border-radius: 6px !important;
     padding: 8px 20px !important;
-    font-family: 'Thewitcher', serif !important;
+    font-family: 'Outfit', sans-serif !important;
     font-size: 1rem !important;
     cursor: pointer;
     transition: all 0.3s ease;

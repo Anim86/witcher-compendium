@@ -78,10 +78,6 @@
                 "stealth": {
                     "value": 5,
                     "isVisible": true
-                },
-                "brawling": {
-                    "value": 3,
-                    "isVisible": true
                 }
             },
             "body": {},
@@ -100,7 +96,7 @@
                     "value": 9,
                     "isVisible": true
                 },
-                "resistMagic": {
+                "resistmagic": {
                     "value": 9,
                     "isVisible": true
                 }
@@ -164,14 +160,14 @@
         "monsterType": "Vampire",
         "customStat": true,
         "dontAddAttr": true,
-        "dodgeBase": 22,
-        "repositionBase": 23,
-        "blockBase": 22,
+        "dodgeBase": 13,
+        "repositionBase": 17,
+        "blockBase": 17,
         "automatedResistances": [],
         "automatedVulnerabilities": [],
         "automatedImmunities": [
-            "fire",
             "bleeding",
+            "fire",
             "stun"
         ],
         "resistances": "",
@@ -256,7 +252,14 @@
                 "effects": "Succhiare Sangue, Trapassare",
                 "rateOfFire": 1,
                 "damageType": "piercing",
-                "attackBase": 22
+                "attackBase": 22,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "brawling",
+                "rangedAttackSkill": "",
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         },
         {
@@ -271,7 +274,14 @@
                 "effects": "Sanguinamento (50%)",
                 "rateOfFire": 2,
                 "damageType": "slashing",
-                "attackBase": 22
+                "attackBase": 22,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "brawling",
+                "rangedAttackSkill": "",
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         }
     ]

@@ -1,4 +1,5 @@
 {
+    "_id": "1873eda52b0c64f9",
     "name": "Barghest",
     "type": "monster",
     "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/barghest.webp",
@@ -71,17 +72,13 @@
                     "isVisible": true
                 },
                 "brawling": {
-                    "value": 0,
+                    "value": 6,
                     "isVisible": true
                 }
             },
             "dex": {
                 "athletics": {
                     "value": 5,
-                    "isVisible": true
-                },
-                "brawling": {
-                    "value": 6,
                     "isVisible": true
                 },
                 "stealth": {
@@ -154,9 +151,9 @@
         "armorLower": 0,
         "customStat": true,
         "dontAddAttr": true,
-        "dodgeBase": 11,
-        "repositionBase": 13,
-        "blockBase": 12,
+        "dodgeBase": 13,
+        "repositionBase": 11,
+        "blockBase": 13,
         "automatedResistances": [],
         "automatedVulnerabilities": [],
         "automatedImmunities": [
@@ -179,7 +176,14 @@
                 "effects": "",
                 "rateOfFire": 1,
                 "damageType": "piercing",
-                "attackBase": 12
+                "attackBase": 12,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "brawling",
+                "rangedAttackSkill": "",
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         },
         {
@@ -203,7 +207,6 @@
             }
         }
     ],
-    "_id": "1873eda52b0c64f9",
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
         "coreVersion": 14

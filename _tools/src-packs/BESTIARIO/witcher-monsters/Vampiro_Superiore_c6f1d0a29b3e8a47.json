@@ -1,4 +1,5 @@
 {
+    "_id": "c6f1d0a29b3e8a47",
     "name": "Vampiro Superiore",
     "type": "monster",
     "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/vampiro_superiore.webp",
@@ -71,15 +72,11 @@
             },
             "ref": {
                 "brawling": {
-                    "value": 0,
+                    "value": 8,
                     "isVisible": true
                 }
             },
             "dex": {
-                "brawling": {
-                    "value": 8,
-                    "isVisible": true
-                },
                 "athletics": {
                     "value": 0,
                     "isVisible": true
@@ -180,9 +177,9 @@
         "vulnerability": "",
         "customStat": true,
         "dontAddAttr": true,
-        "dodgeBase": 25,
-        "repositionBase": 26,
-        "blockBase": 24,
+        "dodgeBase": 15,
+        "repositionBase": 16,
+        "blockBase": 23,
         "automatedResistances": [],
         "automatedVulnerabilities": [
             "bleeding",
@@ -208,7 +205,14 @@
                 "effects": "Sanguinamento (100%), Succhiare Sangue, Trapassare Migliorato",
                 "rateOfFire": 1,
                 "damageType": "piercing",
-                "attackBase": 24
+                "attackBase": 24,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "brawling",
+                "rangedAttackSkill": "",
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         },
         {
@@ -223,11 +227,17 @@
                 "effects": "Bilanciato, Sanguinamento (75%)",
                 "rateOfFire": 4,
                 "damageType": "slashing",
-                "attackBase": 24
+                "attackBase": 24,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "brawling",
+                "rangedAttackSkill": "",
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         }
     ],
-    "_id": "c6f1d0a29b3e8a47",
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
         "coreVersion": 14

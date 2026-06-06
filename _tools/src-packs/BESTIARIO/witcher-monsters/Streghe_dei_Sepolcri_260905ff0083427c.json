@@ -76,15 +76,11 @@
                     "isVisible": true
                 },
                 "brawling": {
-                    "value": 6,
+                    "value": 8,
                     "isVisible": true
                 }
             },
             "dex": {
-                "brawling": {
-                    "value": 8,
-                    "isVisible": true
-                },
                 "athletics": {
                     "value": 6,
                     "isVisible": true
@@ -166,7 +162,10 @@
         "automatedVulnerabilities": [],
         "automatedImmunities": [],
         "resistances": "",
-        "immunities": ""
+        "immunities": "",
+        "dodgeBase": 16,
+        "repositionBase": 13,
+        "blockBase": 16
     },
     "items": [
         {
@@ -180,7 +179,15 @@
                 "accuracy": 0,
                 "effects": "Sanguinamento (50%)",
                 "rateOfFire": 2,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "brawling",
+                "rangedAttackSkill": "",
+                "attackBase": 16,
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         },
         {
@@ -194,7 +201,15 @@
                 "accuracy": 0,
                 "effects": "Veleno (75%)",
                 "rateOfFire": 1,
-                "damageType": "piercing"
+                "damageType": "piercing",
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "brawling",
+                "rangedAttackSkill": "",
+                "attackBase": 16,
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         },
         {
@@ -208,7 +223,15 @@
                 "accuracy": 0,
                 "effects": "Veleno (100%), Gittata 4m",
                 "rateOfFire": 1,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "brawling",
+                "rangedAttackSkill": "",
+                "attackBase": 16,
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         },
         {

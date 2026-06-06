@@ -1,65 +1,31 @@
 <div class="monster-tab-content monster-details-layout">
     {{!-- Top Grid: Ecology & Biometrics vs Abilities --}}
     <div class="top-details-grid">
-        <div class="details-column left-column">
-            <section class="details-section ecology card">
-                <h3 class="section-header"><i class="fas fa-leaf"></i> {{localize "WITCHER.Monster.Environment"}}</h3>
-                <div class="details-grid">
-                    <div class="detail-item">
-                        <label>{{localize "WITCHER.Monster.Environment"}}</label>
-                        <input name="system.environment" type="text" value="{{system.environment}}" />
-                    </div>
-                    <div class="detail-item">
-                        <label>{{localize "WITCHER.Monster.Organization"}}</label>
-                        <input name="system.organization" type="text" value="{{system.organization}}" />
-                    </div>
-                    <div class="detail-item">
-                        <label>{{localize "WITCHER.Monster.Height"}}</label>
-                        <input name="system.height" type="text" value="{{system.height}}" />
-                    </div>
-                    <div class="detail-item">
-                        <label>{{localize "WITCHER.Monster.Weight"}}</label>
-                        <input name="system.weight" type="text" value="{{system.weight}}" />
-                    </div>
+        <section class="details-section ecology card" style="display: flex; flex-direction: column;">
+            <h3 class="section-header"><i class="fas fa-leaf"></i> {{localize "WITCHER.Monster.Environment"}}</h3>
+            <div class="details-grid">
+                <div class="detail-item">
+                    <label>{{localize "WITCHER.Monster.Environment"}}</label>
+                    <input name="system.environment" type="text" value="{{system.environment}}" />
                 </div>
-            </section>
-
-            <section class="details-section vulnerabilities card">
-                <h3 class="section-header"><i class="fas fa-biohazard"></i> {{localize "WITCHER.Monster.Vulnerabilities"}} &amp; {{localize "WITCHER.Monster.Resistances"}}</h3>
-                <div class="vuln-res-container">
-                    <div class="text-block">
-                        <label>{{localize "WITCHER.Monster.Vulnerabilities"}}</label>
-                        <multi-select name="system.automatedVulnerabilities" style="margin-bottom: 5px;">
-                            {{selectOptions config.resistanceTypes selected=system.automatedVulnerabilities localize=true}}
-                        </multi-select>
-                        <textarea name="system.vulnerability" rows="3">{{system.vulnerability}}</textarea>
-                    </div>
-                    <div class="text-block">
-                        <label>{{localize "WITCHER.Monster.Resistances"}}</label>
-                        <multi-select name="system.automatedResistances" style="margin-bottom: 5px;">
-                            {{selectOptions config.resistanceTypes selected=system.automatedResistances localize=true}}
-                        </multi-select>
-                        <textarea name="system.resistances" rows="3">{{system.resistances}}</textarea>
-                    </div>
-                    <div class="text-block">
-                        <label>{{localize "WITCHER.Monster.Immunities"}}</label>
-                        <multi-select name="system.automatedImmunities" style="margin-bottom: 5px;">
-                            {{selectOptions config.resistanceTypes selected=system.automatedImmunities localize=true}}
-                        </multi-select>
-                        <textarea name="system.immunities" rows="2">{{system.immunities}}</textarea>
-                    </div>
-                    <div class="text-block">
-                        <label>{{localize "WITCHER.Monster.Susceptibilities"}}</label>
-                        <textarea name="system.susceptibilities" rows="2">{{system.susceptibilities}}</textarea>
-                    </div>
+                <div class="detail-item">
+                    <label>{{localize "WITCHER.Monster.Organization"}}</label>
+                    <input name="system.organization" type="text" value="{{system.organization}}" />
                 </div>
-            </section>
-        </div>
+                <div class="detail-item">
+                    <label>{{localize "WITCHER.Monster.Height"}}</label>
+                    <input name="system.height" type="text" value="{{system.height}}" />
+                </div>
+                <div class="detail-item">
+                    <label>{{localize "WITCHER.Monster.Weight"}}</label>
+                    <input name="system.weight" type="text" value="{{system.weight}}" />
+                </div>
+            </div>
+        </section>
 
-        <div class="details-column right-column">
-            <section class="details-section abilities card" style="height: 100%;">
-                <h3 class="section-header"><i class="fas fa-star"></i> {{localize "WITCHER.Monster.SpecialAbilities"}}</h3>
-                <div class="abilities-grid-layout">
+        <section class="details-section abilities card" style="display: flex; flex-direction: column;">
+            <h3 class="section-header"><i class="fas fa-star"></i> {{localize "WITCHER.Monster.SpecialAbilities"}}</h3>
+            <div class="abilities-grid-layout" style="flex: 1; overflow-y: auto;">
                     {{#each abilities as |ability id|}}
                     <div class="ability-item item" data-item-id="{{ability.id}}">
                         <div class="ability-header">
@@ -78,15 +44,71 @@
                     {{#unless abilities}}
                     <p class="no-data">{{localize "WITCHER.Monster.NoSpecialAbilities"}}</p>
                     {{/unless}}
+            </div>
+        </section>
+    </div>
+
+    <div class="full-width-section" style="margin-top: 20px;">
+        <section class="details-section vulnerabilities card">
+            <h3 class="section-header"><i class="fas fa-biohazard"></i> {{localize "WITCHER.Monster.Vulnerabilities"}} &amp; {{localize "WITCHER.Monster.Resistances"}}</h3>
+            <div class="vuln-res-table">
+                <div class="table-header">
+                    <div class="table-cell type-cell">Tipologia</div>
+                    <div class="table-cell res-cell">Selezioni Rapide</div>
+                    <div class="table-cell desc-cell">Dettagli / Note</div>
                 </div>
-            </section>
-        </div>
+
+                <div class="table-row">
+                    <div class="table-cell type-cell">
+                        <label>{{localize "WITCHER.Monster.Vulnerabilities"}}</label>
+                    </div>
+                    <div class="table-cell res-cell">
+                        <multi-select name="system.automatedVulnerabilities">
+                            {{selectOptions config.resistanceTypes selected=system.automatedVulnerabilities localize=true}}
+                        </multi-select>
+                    </div>
+                    <div class="table-cell desc-cell">
+                        <textarea name="system.vulnerability" rows="2">{{system.vulnerability}}</textarea>
+                    </div>
+                </div>
+
+                <div class="table-row">
+                    <div class="table-cell type-cell">
+                        <label>{{localize "WITCHER.Monster.Resistances"}}</label>
+                    </div>
+                    <div class="table-cell res-cell">
+                        <multi-select name="system.automatedResistances">
+                            {{selectOptions config.resistanceTypes selected=system.automatedResistances localize=true}}
+                        </multi-select>
+                    </div>
+                    <div class="table-cell desc-cell">
+                        <textarea name="system.resistances" rows="2">{{system.resistances}}</textarea>
+                    </div>
+                </div>
+
+                <div class="table-row">
+                    <div class="table-cell type-cell">
+                        <label>{{localize "WITCHER.Monster.Immunities"}}</label>
+                    </div>
+                    <div class="table-cell res-cell">
+                        <multi-select name="system.automatedImmunities">
+                            {{selectOptions config.resistanceTypes selected=system.automatedImmunities localize=true}}
+                        </multi-select>
+                    </div>
+                    <div class="table-cell desc-cell">
+                        <textarea name="system.immunities" rows="2">{{system.immunities}}</textarea>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
     </div>
 
     {{!-- Full Width Bottom Section: Description (formerly Superstition & Biography) --}}
     <div class="full-width-section knowledge card">
         <h3 class="section-header"><i class="fas fa-book-open"></i> {{localize "WITCHER.Description"}}</h3>
-        <div class="bio-container" style="margin-bottom: 15px;">
+        <div class="bio-container" style="margin-bottom: 10px;">
             {{editor system.description target="system.description" button=true owner=owner editable=editable}}
         </div>
         <div class="knowledge-container">

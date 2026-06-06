@@ -64,16 +64,12 @@
             },
             "ref": {
                 "brawling": {
-                    "value": 9,
+                    "value": 10,
                     "isVisible": true
                 }
             },
             "dex": {
                 "stealth": {
-                    "value": 10,
-                    "isVisible": true
-                },
-                "brawling": {
                     "value": 10,
                     "isVisible": true
                 }
@@ -86,7 +82,7 @@
                     "value": 8,
                     "isVisible": true
                 },
-                "resistMagic": {
+                "resistmagic": {
                     "value": 10,
                     "isVisible": true
                 }
@@ -152,8 +148,8 @@
         "vulnerability": "",
         "customStat": true,
         "dontAddAttr": true,
-        "dodgeBase": 16,
-        "repositionBase": 12,
+        "dodgeBase": 9,
+        "repositionBase": 6,
         "blockBase": 19,
         "automatedResistances": [],
         "automatedVulnerabilities": [],
@@ -221,7 +217,14 @@
                 "effects": "Sanguinamento (25%)",
                 "rateOfFire": 2,
                 "damageType": "slashing",
-                "attackBase": 19
+                "attackBase": 19,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "brawling",
+                "rangedAttackSkill": "",
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         }
     ],

@@ -1,4 +1,5 @@
 {
+    "_id": "31e65a29f7d048bc",
     "name": "Scaltrocertola",
     "type": "monster",
     "img": "modules/witcher-compendium/assets/BESTIARIO/witcher-monsters/scaltrocertola.webp",
@@ -71,15 +72,11 @@
                     "isVisible": true
                 },
                 "brawling": {
-                    "value": 0,
+                    "value": 10,
                     "isVisible": true
                 }
             },
             "dex": {
-                "brawling": {
-                    "value": 10,
-                    "isVisible": true
-                },
                 "athletics": {
                     "value": 0,
                     "isVisible": true
@@ -159,16 +156,16 @@
         "vulnerability": "",
         "customStat": true,
         "dontAddAttr": true,
-        "dodgeBase": 17,
-        "repositionBase": 19,
-        "blockBase": 18,
+        "dodgeBase": 12,
+        "repositionBase": 10,
+        "blockBase": 22,
         "automatedResistances": [],
         "automatedVulnerabilities": [],
         "automatedImmunities": [
-            "piercing",
-            "slashing",
             "fire",
-            "poison"
+            "piercing",
+            "poison",
+            "slashing"
         ],
         "resistances": "",
         "immunities": ""
@@ -186,7 +183,14 @@
                 "effects": "Trapassare",
                 "rateOfFire": 1,
                 "damageType": "piercing",
-                "attackBase": 20
+                "attackBase": 20,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "brawling",
+                "rangedAttackSkill": "",
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         },
         {
@@ -201,7 +205,14 @@
                 "effects": "Sanguinamento (50%)",
                 "rateOfFire": 2,
                 "damageType": "slashing",
-                "attackBase": 20
+                "attackBase": 20,
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "brawling",
+                "rangedAttackSkill": "",
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         },
         {
@@ -215,7 +226,15 @@
                 "accuracy": 0,
                 "effects": "Forza Schiacciante, Portata, Sang (50%), Veleno (75%)",
                 "rateOfFire": 1,
-                "damageType": "slashing"
+                "damageType": "slashing",
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "brawling",
+                "rangedAttackSkill": "",
+                "attackBase": 22,
+                "reliability": 0,
+                "reliabilityMax": 0
             }
         },
         {
@@ -243,7 +262,6 @@
             }
         }
     ],
-    "_id": "31e65a29f7d048bc",
     "_stats": {
         "systemId": "TheWitcherItaNewSystem",
         "coreVersion": 14

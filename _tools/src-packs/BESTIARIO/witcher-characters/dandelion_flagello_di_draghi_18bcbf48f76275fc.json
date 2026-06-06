@@ -120,7 +120,14 @@
             },
             "tempra": {
                 "value": 0
-            }
+            },
+            "int": {},
+            "ref": {},
+            "dex": {},
+            "body": {},
+            "emp": {},
+            "cra": {},
+            "will": {}
         },
         "details": {
             "biography": "<p>Questa versione di Dandelion, nota come il “Flagello di Draghi e Donzelle”, è una leggenda vivente. Più che un semplice bardo, è un compagno di avventure capace di cavarsi d'impaccio con l'astuzia, il carisma e una sorprendente abilità nella scherma (quando proprio non può evitarlo).</p>",
@@ -154,7 +161,10 @@
         "automatedImmunities": [],
         "resistances": "",
         "vulnerability": "",
-        "immunities": ""
+        "immunities": "",
+        "dodgeBase": 0,
+        "repositionBase": 0,
+        "blockBase": 0
     },
     "items": [
         {
@@ -174,7 +184,13 @@
                 "hands": 2,
                 "effects": "Ablativa, Portata",
                 "category": "sword",
-                "range": ""
+                "range": "",
+                "attackOptions": [
+                    "melee"
+                ],
+                "meleeAttackSkill": "swordsmanship",
+                "rangedAttackSkill": "",
+                "attackBase": 0
             },
             "effects": [],
             "flags": {},
@@ -184,6 +200,7 @@
             }
         },
         {
+            "_id": "78627f0717d5e373",
             "name": "Liuto",
             "type": "item",
             "img": "modules/witcher-compendium/assets/SPECIAL/item_loot.webp",
