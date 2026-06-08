@@ -21,4 +21,3 @@ Wizard:
 Altre cose:
 
 * \[ ] settare iperlink tra i compendi
-
