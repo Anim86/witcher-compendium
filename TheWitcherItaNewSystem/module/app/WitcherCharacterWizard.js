@@ -773,12 +773,16 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
 
         if (!profile) return "";
 
+        return profile[this._resolveSocialStandingTerritory()] || "";
+    }
+
+    _resolveSocialStandingTerritory() {
         const homeland = (this.characterData.homeland || "").toLowerCase().replace(/\s+/g, "");
-        if (homeland === "skellige") return profile.skellige || "";
-        if (homeland === "mahakam") return profile.mahakam || "";
-        if (homeland === "dolblathanna") return profile.dolBlathanna || "";
-        if (this.characterData.originRegion === "nilfgaard") return profile.nilfgaard || "";
-        return profile.north || "";
+        if (homeland === "skellige") return "skellige";
+        if (homeland === "mahakam") return "mahakam";
+        if (homeland === "dolblathanna") return "dolBlathanna";
+        if (this.characterData.originRegion === "nilfgaard") return "nilfgaard";
+        return "north";
     }
 
     _normalizeSkillKey(keyOrName) {

@@ -287,6 +287,13 @@ export default class WitcherCharacterSheet extends WitcherActorSheet {
         context.race = actor.getList('race')[0];
         context.backgroundHomelandValue = context.system.general.homeland.value || '';
         context.backgroundOriginRegion = context.system.general.originRegion || '';
+        context.socialStandingData = this._prepareSocialStandingData(context);
+        context.socialStandingProfile = context.socialStandingData.profile;
+        context.socialStandingProfileLabel = context.socialStandingData.label;
+        context.socialStandingProfileIsRace = context.socialStandingData.source === 'race';
+        context.socialStandingProfileSourceLabel = game.i18n.localize(
+            context.socialStandingProfileIsRace ? 'WITCHER.Actor.Race' : 'WITCHER.Actor.Prof'
+        );
 
         context.enrichedText = {
             ...context.enrichedText,
@@ -314,6 +321,28 @@ export default class WitcherCharacterSheet extends WitcherActorSheet {
 
         context.statBreakdowns = actor.getStatBreakdowns();
         context.penalizedStats = actor.penalizedStats;
+    }
+
+    _prepareSocialStandingData(context) {
+        return this._getEffectiveSocialStandingProfile(context.actor, context);
+    }
+
+    _getEffectiveSocialStandingProfile(actor, context = null) {
+        const profession = context?.profession || actor.getList('profession')[0];
+        const race = context?.race || actor.getList('race')[0];
+        const professionName = profession?.name?.toLowerCase() || '';
+
+        if (professionName.includes('mago')) {
+            return { profile: CONFIG.WITCHER.socialStandingProfiles?.mage, label: profession?.name || 'Mago', source: 'profession' };
+        }
+        if (professionName.includes('prete')) {
+            return { profile: CONFIG.WITCHER.socialStandingProfiles?.priest, label: profession?.name || 'Prete', source: 'profession' };
+        }
+        if (professionName.includes('druido')) {
+            return { profile: CONFIG.WITCHER.socialStandingProfiles?.druid, label: profession?.name || 'Druido', source: 'profession' };
+        }
+
+        return { profile: race?.system?.socialStanding, label: race?.name || '', source: 'race' };
     }
 
     _prepareDiagramFormulas(context) {

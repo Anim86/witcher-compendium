@@ -1,7 +1,7 @@
 /* ── Compact wizard background row ── */
 .background-profile-panel {
     display: grid;
-    grid-template-columns: minmax(130px, 0.75fr) minmax(180px, 1fr) minmax(210px, 1.2fr) minmax(95px, 0.5fr) minmax(160px, 0.9fr);
+    grid-template-columns: minmax(130px, 0.8fr) minmax(190px, 1.25fr) minmax(230px, 1.45fr) minmax(110px, 0.55fr);
     gap: 10px;
     align-items: stretch;
     width: 100%;
@@ -117,6 +117,39 @@
     border: 1px solid rgba(44, 136, 175, 0.18);
     border-radius: 6px;
     background: rgba(6, 12, 15, 0.48);
+}
+
+.background-standing-title {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+    color: var(--w-teal-light);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 0.8px;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.background-standing-title small {
+    min-width: 0;
+    color: rgba(244, 239, 228, 0.72);
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: none;
+    white-space: nowrap;
+}
+
+.background-standing-panel.effective-profile .background-standing-field select {
+    color: rgba(244, 239, 228, 0.82);
+    border-color: rgba(214, 178, 106, 0.18);
+    cursor: default;
+    opacity: 1;
 }
 
 .background-standing-field label {

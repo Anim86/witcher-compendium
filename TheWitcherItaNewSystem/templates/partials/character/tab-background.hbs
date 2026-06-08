@@ -38,49 +38,50 @@
                     placeholder="0" data-dtype="Number" />
             </div>
 
-            <div class="background-profile-field">
-                <span class="background-profile-icon"><i class="fa-solid fa-scale-balanced"></i></span>
-                <label>{{localize 'WITCHER.Actor.CurrentSocialStanding'}}</label>
-                <select name="system.general.socialStanding">
-                    {{selectOptions config.socialStanding selected=system.general.socialStanding localize=true}}
-                </select>
-            </div>
         </div>
 
-        {{#if race}}
-            <div class="background-standing-panel item" data-item-id="{{race._id}}">
+        {{#if socialStandingProfile}}
+            <div class="background-standing-panel {{#if socialStandingProfileIsRace}}item{{else}}effective-profile{{/if}}"
+                {{#if socialStandingProfileIsRace}}data-item-id="{{race._id}}"{{/if}}>
+                <div class="background-standing-title">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                    <span>{{localize 'WITCHER.Actor.SocialStanding'}}</span>
+                    {{#if socialStandingProfileLabel}}
+                        <small>{{socialStandingProfileSourceLabel}}: {{socialStandingProfileLabel}}</small>
+                    {{/if}}
+                </div>
                 <div class="background-standing-field">
                     <label>Nord</label>
-                    <select class="inline-edit" data-field="system.socialStanding.north">
-                        {{selectOptions config.socialStanding selected=race.system.socialStanding.north localize=true}}
+                    <select {{#if socialStandingProfileIsRace}}class="inline-edit" data-field="system.socialStanding.north"{{else}}disabled{{/if}}>
+                        {{selectOptions config.socialStanding selected=socialStandingProfile.north localize=true}}
                     </select>
                 </div>
 
                 <div class="background-standing-field">
                     <label>Nilfgaard</label>
-                    <select class="inline-edit" data-field="system.socialStanding.nilfgaard">
-                        {{selectOptions config.socialStanding selected=race.system.socialStanding.nilfgaard localize=true}}
+                    <select {{#if socialStandingProfileIsRace}}class="inline-edit" data-field="system.socialStanding.nilfgaard"{{else}}disabled{{/if}}>
+                        {{selectOptions config.socialStanding selected=socialStandingProfile.nilfgaard localize=true}}
                     </select>
                 </div>
 
                 <div class="background-standing-field">
                     <label>Skellige</label>
-                    <select class="inline-edit" data-field="system.socialStanding.skellige">
-                        {{selectOptions config.socialStanding selected=race.system.socialStanding.skellige localize=true}}
+                    <select {{#if socialStandingProfileIsRace}}class="inline-edit" data-field="system.socialStanding.skellige"{{else}}disabled{{/if}}>
+                        {{selectOptions config.socialStanding selected=socialStandingProfile.skellige localize=true}}
                     </select>
                 </div>
 
                 <div class="background-standing-field">
                     <label>Dol Blathanna</label>
-                    <select class="inline-edit" data-field="system.socialStanding.dolBlathanna">
-                        {{selectOptions config.socialStanding selected=race.system.socialStanding.dolBlathanna localize=true}}
+                    <select {{#if socialStandingProfileIsRace}}class="inline-edit" data-field="system.socialStanding.dolBlathanna"{{else}}disabled{{/if}}>
+                        {{selectOptions config.socialStanding selected=socialStandingProfile.dolBlathanna localize=true}}
                     </select>
                 </div>
 
                 <div class="background-standing-field">
                     <label>Mahakam</label>
-                    <select class="inline-edit" data-field="system.socialStanding.mahakam">
-                        {{selectOptions config.socialStanding selected=race.system.socialStanding.mahakam localize=true}}
+                    <select {{#if socialStandingProfileIsRace}}class="inline-edit" data-field="system.socialStanding.mahakam"{{else}}disabled{{/if}}>
+                        {{selectOptions config.socialStanding selected=socialStandingProfile.mahakam localize=true}}
                     </select>
                 </div>
             </div>
