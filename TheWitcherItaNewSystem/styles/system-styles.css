@@ -286,6 +286,21 @@ input.weight-data {
     flex: 1;
 }
 
+.empty-owned-magic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 110px;
+    color: var(--w-text-muted);
+    font-weight: 700;
+    opacity: 0.78;
+}
+
+.empty-owned-magic i {
+    color: var(--w-gold);
+}
+
 .magic-value-display {
     margin-right: 10px;
     margin-left: 20px;

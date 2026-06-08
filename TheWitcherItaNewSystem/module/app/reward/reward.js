@@ -7,6 +7,29 @@ export default class Rewards {
         return game.actors.filter(actor => actor.hasPlayerOwner);
     }
 
+    static resolveRewardActors(actorUuids) {
+        const uuids = Array.isArray(actorUuids) ? actorUuids : [actorUuids];
+        const actors = [];
+        let missingCount = 0;
+
+        for (const uuid of uuids) {
+            let actor = null;
+            try {
+                actor = fromUuidSync(uuid);
+            } catch (error) {
+                console.warn(`TheWitcherItaNewSystem | Cannot resolve reward actor UUID: ${uuid}`, error);
+            }
+
+            if (actor?.documentName === 'Actor' && actor.system) {
+                actors.push(actor);
+            } else {
+                missingCount++;
+            }
+        }
+
+        return { actors, missingCount };
+    }
+
     static async ipRewardDialog(actors, type = 'standard') {
         if (!actors) {
             actors = this.getPlayerActors();
@@ -88,10 +111,19 @@ export default class Rewards {
 
         // Ensure actors is always an array
         const actorUuids = Array.isArray(values.actors) ? values.actors : [values.actors];
-        let choosenActors = actorUuids.map(uuid => fromUuidSync(uuid));
-        let ip = values.ip;
+        const { actors: choosenActors, missingCount } = Rewards.resolveRewardActors(actorUuids);
+        let ip = parseInt(values.ip, 10);
         let label = values.label;
         let isMagic = values.isMagic === 'true' || values.isMagic === true;
+
+        if (missingCount > 0) {
+            ui.notifications.warn(`${missingCount} destinatari non validi sono stati ignorati.`);
+        }
+
+        if (choosenActors.length === 0) {
+            ui.notifications.warn('Nessun destinatario valido selezionato.');
+            return;
+        }
 
         if (ip) {
             choosenActors.forEach(actor => actor.system.logs.addIpReward(label, ip, isMagic));
@@ -176,9 +208,18 @@ export default class Rewards {
         if (!values || !values.actors || (Array.isArray(values.actors) && values.actors.length === 0)) return;
 
         const actorUuids = Array.isArray(values.actors) ? values.actors : [values.actors];
-        let choosenActors = actorUuids.map(uuid => fromUuidSync(uuid));
+        const { actors: choosenActors, missingCount } = Rewards.resolveRewardActors(actorUuids);
         let amount = parseInt(values.amount);
         let label = "Assegnazione Corone";
+
+        if (missingCount > 0) {
+            ui.notifications.warn(`${missingCount} destinatari non validi sono stati ignorati.`);
+        }
+
+        if (choosenActors.length === 0) {
+            ui.notifications.warn('Nessun destinatario valido selezionato.');
+            return;
+        }
 
         if (amount) {
             for (let actor of choosenActors) {

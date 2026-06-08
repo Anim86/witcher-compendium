@@ -1,7 +1,7 @@
 /* ── Compact wizard background row ── */
 .background-profile-panel {
     display: grid;
-    grid-template-columns: minmax(130px, 0.8fr) minmax(190px, 1.25fr) minmax(230px, 1.45fr) minmax(110px, 0.55fr);
+    grid-template-columns: minmax(130px, 0.75fr) minmax(180px, 1fr) minmax(210px, 1.2fr) minmax(95px, 0.5fr) minmax(160px, 0.9fr);
     gap: 10px;
     align-items: stretch;
     width: 100%;

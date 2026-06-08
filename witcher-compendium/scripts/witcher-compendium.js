@@ -127,8 +127,11 @@ function mapSocial(itSocial) {
         "Odiato": "hated",
         "Tollerato": "tolerated",
         "Odiato e Temuto": "hatedFeared",
+        "Odiato/Temuto": "hatedFeared",
         "Tollerato e Temuto": "toleratedFeared",
-        "Temuto": "feared"
+        "Tollerato/Temuto": "toleratedFeared",
+        "Temuto": "feared",
+        "Variabile": "variable"
     };
     return map[itSocial] || "equal";
 }

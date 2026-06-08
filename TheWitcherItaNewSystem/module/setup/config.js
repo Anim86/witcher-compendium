@@ -594,7 +594,32 @@ WITCHER.socialStanding = {
     hated: 'WITCHER.socialStanding.hated',
     feared: 'WITCHER.socialStanding.feared',
     toleratedFeared: 'WITCHER.socialStanding.toleratedFeared',
-    hatedFeared: 'WITCHER.socialStanding.hatedFeared'
+    hatedFeared: 'WITCHER.socialStanding.hatedFeared',
+    variable: 'WITCHER.socialStanding.variable'
+};
+
+WITCHER.socialStandingProfiles = {
+    mage: {
+        north: 'hatedFeared',
+        nilfgaard: 'tolerated',
+        skellige: 'tolerated',
+        dolBlathanna: 'equal',
+        mahakam: 'tolerated'
+    },
+    priest: {
+        north: 'variable',
+        nilfgaard: 'variable',
+        skellige: 'variable',
+        dolBlathanna: 'variable',
+        mahakam: 'variable'
+    },
+    druid: {
+        north: 'tolerated',
+        nilfgaard: 'tolerated',
+        skellige: 'equal',
+        dolBlathanna: 'tolerated',
+        mahakam: 'tolerated'
+    }
 };
 
 WITCHER.genders = {

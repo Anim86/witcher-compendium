@@ -764,6 +764,23 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         return names;
     }
 
+    _resolveSocialStanding() {
+        const professionName = this.characterData.profession?.name?.toLowerCase() || "";
+        let profile = this.characterData.race?.system?.socialStanding;
+        if (professionName.includes("mago")) profile = CONFIG.WITCHER.socialStandingProfiles?.mage;
+        else if (professionName.includes("prete")) profile = CONFIG.WITCHER.socialStandingProfiles?.priest;
+        else if (professionName.includes("druido")) profile = CONFIG.WITCHER.socialStandingProfiles?.druid;
+
+        if (!profile) return "";
+
+        const homeland = (this.characterData.homeland || "").toLowerCase().replace(/\s+/g, "");
+        if (homeland === "skellige") return profile.skellige || "";
+        if (homeland === "mahakam") return profile.mahakam || "";
+        if (homeland === "dolblathanna") return profile.dolBlathanna || "";
+        if (this.characterData.originRegion === "nilfgaard") return profile.nilfgaard || "";
+        return profile.north || "";
+    }
+
     _normalizeSkillKey(keyOrName) {
         if (!keyOrName) return keyOrName;
         const normalized = keyOrName.toString().trim().toLowerCase();
@@ -924,7 +941,9 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             if (skillId === "definingSkill") continue;
 
             const numericValue = Number(value) || 0;
-            if (numericValue <= 0) continue;
+            const isHomelandSkill = this.characterData.homelandBonus && skillId === this.characterData.homelandBonus.id;
+            
+            if (numericValue <= 0 && !isHomelandSkill) continue;
 
             const skillItem = this.allSkills.find(s => s._id === skillId) || this._findSkillByKeyOrName(skillId);
             const actorPath = this._getActorSkillPath(skillItem || skillId);
@@ -939,10 +958,14 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             const isProfession = professionSkillPaths.has(pathKey);
             const multiplier = skillItem ? this._getSkillCost(skillItem) : (Number(actorPath.entry.cost) || 1);
 
+            if (isHomelandSkill) {
+                updates[`${basePath}.modifiers`] = [{ name: 'Bonus Patria', value: this.characterData.homelandBonus.value }];
+            }
+
             updates[`${basePath}.value`] = numericValue;
             updates[`${basePath}.isProfession`] = isProfession;
             updates[`${basePath}.isPickup`] = !isProfession;
-            updates[`${basePath}.isLearned`] = true;
+            updates[`${basePath}.isLearned`] = numericValue > 0 || isHomelandSkill;
             updates[`${basePath}.multiplier`] = multiplier;
             updates[`${basePath}.isCombatSkill`] = Boolean(skillItem?.system?.isCombatSkill);
         }
@@ -2748,15 +2771,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             }
         };
 
-        // Auto-calculate social standing based on race and homeland
-        if (this.characterData.race && this.characterData.race.system && this.characterData.race.system.socialStanding) {
-            const hl = this.characterData.homeland;
-            if (hl === "skellige") actorData.system.general.socialStanding = this.characterData.race.system.socialStanding.skellige || "";
-            else if (hl === "mahakam") actorData.system.general.socialStanding = this.characterData.race.system.socialStanding.mahakam || "";
-            else if (hl === "dolblathanna") actorData.system.general.socialStanding = this.characterData.race.system.socialStanding.dolBlathanna || "";
-            else if (this.characterData.originRegion === "nilfgaard") actorData.system.general.socialStanding = this.characterData.race.system.socialStanding.nilfgaard || "";
-            else actorData.system.general.socialStanding = this.characterData.race.system.socialStanding.north || "";
-        }
+        actorData.system.general.socialStanding = this._resolveSocialStanding();
 
         // Populate lifeEvents in general
         for (const ev of bg.events) {
@@ -2865,7 +2880,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         if (homelandBonusSkillName) {
             const skillItem = this.allSkills.find(s => s.name.toLowerCase() === homelandBonusSkillName.toLowerCase());
             const finalName = skillItem ? skillItem._id : homelandBonusSkillName;
-            this.characterData.skills[finalName] = (this.characterData.skills[finalName] || 0) + homelandBonusValue;
+            this.characterData.homelandBonus = { id: finalName, value: homelandBonusValue }; if (this.characterData.skills[finalName] === undefined) { this.characterData.skills[finalName] = 0; }
         }
 
         const raceItemsToCreate = [];

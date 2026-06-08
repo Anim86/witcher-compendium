@@ -471,6 +471,8 @@
             "Master": "Maestro",
             "Rituals": "Rituali",
             "Hexes": "Fatture",
+            "Owned": "Posseduti",
+            "NoOwned": "Nessuna magia posseduta.",
             "Spells": "Incantesimi",
             "Signs": "Segni",
             "Invocations": "Invocazioni",
@@ -1425,12 +1427,13 @@
             "Other": "Altra Patria"
         },
         "socialStanding": {
-            "equal": "Parità",
+            "equal": "Eguale",
             "tolerated": "Tollerato",
             "hated": "Odiato",
             "feared": "Temuto",
-            "toleratedFeared": "Tollerato/Temuto",
-            "hatedFeared": "Odiato/Temuto"
+            "toleratedFeared": "Tollerato e Temuto",
+            "hatedFeared": "Odiato e Temuto",
+            "variable": "Variabile"
         },
         "MinValue": "Valore Minimo",
         "MaxValue": "Valore Massimo",
@@ -1760,6 +1763,7 @@
         },
 
         "SocialStanding": "Posizione Sociale",
+        "CurrentSocialStanding": "Posizione Sociale Attuale",
         "Profession": "Professione",
         "Reputation": "Reputazione",
         "ReputationShort": "REP",

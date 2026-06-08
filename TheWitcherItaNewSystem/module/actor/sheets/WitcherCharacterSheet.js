@@ -127,6 +127,7 @@ export default class WitcherCharacterSheet extends WitcherActorSheet {
         },
         magicTabs: {
             tabs: [
+                { id: 'owned', cssClass: 'owned', label: 'WITCHER.Spell.Owned' },
                 { id: 'magic', cssClass: 'magic', label: 'WITCHER.Spell.Spells' },
                 { id: 'invocations', cssClass: 'invocations', label: 'WITCHER.Spell.Invocations' },
                 { id: 'signs', cssClass: 'signs', label: 'WITCHER.Spell.Signs' },
@@ -135,7 +136,7 @@ export default class WitcherCharacterSheet extends WitcherActorSheet {
                 { id: 'magicalGift', cssClass: 'magicalGift', label: 'WITCHER.Spell.MagicalGift' },
                 { id: 'curses', cssClass: 'curses', label: 'WITCHER.Spell.Curses' }
             ],
-            initial: 'magic'
+            initial: 'owned'
         }
     };
 
@@ -221,9 +222,61 @@ export default class WitcherCharacterSheet extends WitcherActorSheet {
 
         context.tabs = this._prepareTabs('primary');
         context.skillTabs = this._prepareTabs('skillTabs');
+        this._prepareOwnedMagic(context);
         context.magicTabs = this._prepareTabs('magicTabs');
 
         return context;
+    }
+
+    _prepareOwnedMagic(context) {
+        const groupDefinitions = [
+            {
+                header: game.i18n.localize('WITCHER.Spell.Spells'),
+                spells: [...context.noviceSpells, ...context.journeymanSpells, ...context.masterSpells],
+                itemType: 'spell',
+                spellType: 'spell',
+                hasElement: true
+            },
+            {
+                header: game.i18n.localize('WITCHER.Spell.Invocations'),
+                spells: [...context.noviceInvocations, ...context.journeymanInvocations, ...context.masterInvocations],
+                itemType: 'spell',
+                spellType: 'invocation'
+            },
+            {
+                header: game.i18n.localize('WITCHER.Spell.Signs'),
+                spells: [...context.basicSigns, ...context.alternateSigns],
+                itemType: 'spell',
+                spellType: 'sign',
+                hasElement: true
+            },
+            {
+                header: game.i18n.localize('WITCHER.Spell.Rituals'),
+                spells: context.rituals,
+                itemType: 'ritual',
+                spellType: 'ritual'
+            },
+            {
+                header: game.i18n.localize('WITCHER.Spell.Hexes'),
+                spells: context.hexes,
+                itemType: 'hex',
+                spellType: 'hex'
+            },
+            {
+                header: game.i18n.localize('WITCHER.Spell.MagicalGift'),
+                spells: context.magicalgift,
+                itemType: 'spell',
+                spellType: 'magicalgift'
+            },
+            {
+                header: game.i18n.localize('WITCHER.Spell.Curses'),
+                spells: context.curses,
+                itemType: 'hex',
+                spellType: 'curses'
+            }
+        ];
+
+        context.ownedMagicGroups = groupDefinitions.filter(group => group.spells.length > 0);
     }
 
     async _prepareCharacterData(context) {

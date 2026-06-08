@@ -6,6 +6,19 @@
         {{/each}}
     </nav>
 
+    {{!-- 0. Owned Magic --}}
+    <section class="tab magic-section {{magicTabs.owned.cssClass}}" data-group="magicTabs" data-tab="owned">
+        {{#if ownedMagicGroups.length}}
+            {{#each ownedMagicGroups as |group|}}
+                {{> "systems/TheWitcherItaNewSystem/templates/sheets/actor/partials/character/spell-type-list.hbs" spells=group.spells itemType=group.itemType spellType=group.spellType hasElement=group.hasElement header=group.header}}
+            {{/each}}
+        {{else}}
+            <div class="empty-owned-magic">
+                <i class="fa-solid fa-book"></i>
+                <span>{{localize "WITCHER.Spell.NoOwned"}}</span>
+            </div>
+        {{/if}}
+    </section>
 
     {{!-- 1. Spells (Incantesimi) --}}
     <section class="tab spell-section {{magicTabs.magic.cssClass}}" data-group="magicTabs" data-tab="magic">
