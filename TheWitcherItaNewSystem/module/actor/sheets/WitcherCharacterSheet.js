@@ -35,6 +35,9 @@ export default class WitcherCharacterSheet extends WitcherActorSheet {
             rollStun: function() { return this.actor.rollStun(); },
             rollSave: function() { return this.actor.rollDeathSave(); },
             rest: function() { return this.actor.rest(); },
+            combatRecover: function() { return this.actor.recoverStamina(); },
+            combatAim: function() { return this.actor.aimAction(); },
+            combatDodge: function() { return this.actor.activeDodgeAction(); },
             openRewards: function(event, target) { 
                 const type = target.dataset.type || 'standard';
                 return this._renderRewards(type); 

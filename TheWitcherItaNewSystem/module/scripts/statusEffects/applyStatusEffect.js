@@ -49,7 +49,7 @@ export async function applyStatusEffectToActor(actorUuid, statusEffectId, durati
     }
 
     //only try to apply it when not already present
-    if (!actor.appliedEffects.find(effect => effect.statuses.find(status => status == statusEffectId))) {
+    if (!actor.appliedEffects.find(effect => effect.statuses.has(statusEffectId))) {
         await actor.toggleStatusEffect(statusEffectId);
 
         handleStatusCounterIntegration(actor, statusEffectId, duration);

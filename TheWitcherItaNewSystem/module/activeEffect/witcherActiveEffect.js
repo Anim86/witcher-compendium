@@ -64,7 +64,7 @@ export default class WitcherActiveEffect extends ActiveEffect {
 
         // Set initial duration data for Actor-owned effects
         if (this.parent instanceof Actor || this.system.isTransferred) {
-            const updates = this.constructor.getInitialDuration();
+            const updates = this.constructor.getEffectStart();
             for (const k of Object.keys(updates.duration)) {
                 if (Number.isNumeric(data.duration?.[k])) delete updates.duration[k]; // Prefer user-defined duration data
             }

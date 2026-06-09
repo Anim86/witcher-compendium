@@ -105,6 +105,26 @@ export default class WitcherActor extends Actor {
         }
     }
 
+    /** @override */
+    _onUpdate(changed, options, userId) {
+        super._onUpdate(changed, options, userId);
+
+        // Check if HP was changed
+        if (foundry.utils.hasProperty(changed, 'system.derivedStats.hp.value')) {
+            const currentHp = this.system.derivedStats.hp.value;
+            const isDead = this.statuses.has('dead');
+            
+            // Only apply toggle if the user is the one making the update to avoid loops
+            if (game.user.id === userId) {
+                if (currentHp <= 0 && !isDead) {
+                    this.toggleStatusEffect('dead', { overlay: true, active: true });
+                } else if (currentHp > 0 && isDead) {
+                    this.toggleStatusEffect('dead', { overlay: true, active: false });
+                }
+            }
+        }
+    }
+
     /**
      * Spende Punti Incremento per aumentare un'abilità
      * @param {string} skillPath - Percorso completo dell'abilità (es. 'system.skills.int.awareness')
@@ -271,6 +291,58 @@ export default class WitcherActor extends Actor {
         });
     }
 
+    async recoverStamina() {
+        const rec = this.system.derivedStats.rec.value || 0;
+        const currentSta = this.system.derivedStats.sta.value || 0;
+        const maxSta = this.system.derivedStats.sta.max || 0;
+        const healedSta = Math.min(rec, maxSta - currentSta);
+        
+        await this.update({ "system.derivedStats.sta.value": currentSta + healedSta });
+        
+        let chatContent = `<h3>${game.i18n.localize('WITCHER.Actor.DerStat.Rec')}</h3>`;
+        chatContent += `<p>${game.i18n.localize('WITCHER.Rest.Healed')} STA: <b>${healedSta}</b></p>`;
+        
+        ChatMessage.create({
+            speaker: ChatMessage.getSpeaker({ actor: this }),
+            content: chatContent
+        });
+    }
+
+    async aimAction() {
+        let currentAim = this.getFlag('TheWitcherItaNewSystem', 'aimStacks') || 0;
+        if (currentAim < 3) {
+            currentAim += 1;
+            await this.setFlag('TheWitcherItaNewSystem', 'aimStacks', currentAim);
+            
+            if (!this.statuses.has('aiming')) {
+                await this.toggleStatusEffect('aiming');
+            }
+            
+            let chatContent = `<h3>${game.i18n.localize('WITCHER.statusEffects.aiming')}</h3>`;
+            chatContent += `<p>Mira incrementata a: <b>+${currentAim}</b></p>`;
+            
+            ChatMessage.create({
+                speaker: ChatMessage.getSpeaker({ actor: this }),
+                content: chatContent
+            });
+        } else {
+            ui.notifications.warn("Massimo livello di mira (+3) raggiunto.");
+        }
+    }
+
+    async activeDodgeAction() {
+        await this.toggleStatusEffect('activelyDodging');
+        if (this.statuses.has('activelyDodging')) {
+            let chatContent = `<h3>${game.i18n.localize('WITCHER.statusEffects.activelyDodging')}</h3>`;
+            chatContent += `<p>Schivata Attiva! I nemici subiscono un malus di -2 ai tiri per colpire.</p>`;
+            
+            ChatMessage.create({
+                speaker: ChatMessage.getSpeaker({ actor: this }),
+                content: chatContent
+            });
+        }
+    }
+
     calculateStats() {
         this.calculateStat('int');
         this.calculateStat('body'); // Calculate body first as it affects encumbrance
@@ -311,7 +383,7 @@ export default class WitcherActor extends Actor {
         if (HPvalue <= 0) {
             this.system.deathStateApplied = true;
             divider += 2;
-        } else if (HPvalue < this.system.derivedStats.woundTreshold.value && this.system.derivedStats.woundTreshold.value > 0) {
+        } else if (HPvalue <= this.system.derivedStats.woundTreshold.value && this.system.derivedStats.woundTreshold.value > 0) {
             this.system.woundTresholdApplied = true;
             if (stat === 'ref' || stat === 'dex' || stat === 'int' || stat === 'will') {
                 divider += 1;
@@ -1065,14 +1137,14 @@ export default class WitcherActor extends Actor {
         effects
             ?.filter(effect => !!effect.statusEffect)
             .forEach(effect => {
-                if (!this.statuses.find(status => status == effect.statusEffect)) {
+                if (!this.statuses.has(effect.statusEffect)) {
                     this.toggleStatusEffect(effect.statusEffect);
                 }
 
-                if (this.system.statusEffectImmunities?.find(immunity => immunity == statusEffectId)) {
+                if (this.system.statusEffectImmunities?.find(immunity => immunity == effect.statusEffect)) {
                     //untoggle it so people see it was tried to be applied but failed
                     setTimeout(() => {
-                        this.toggleStatusEffect(statusEffectId);
+                        this.toggleStatusEffect(effect.statusEffect);
                     }, 1000);
                 }
             });
@@ -1082,7 +1154,7 @@ export default class WitcherActor extends Actor {
         effects
             .filter(effect => !!effect.statusEffect)
             .forEach(effect => {
-                if (this.statuses.find(status => status == effect.statusEffect)) {
+                if (this.statuses.has(effect.statusEffect)) {
                     this.toggleStatusEffect(effect.statusEffect);
                 }
             });

@@ -43,6 +43,18 @@
             "ShowCharacterArtwork": "Show Character Artwork to Players",
             "ShowTokenArtwork": "Show Token Artwork to Players"
         },
+        "Context": {
+            "Defense": "Defend",
+            "applyDmg": "Apply Damage",
+            "applyNonLethal": "Apply Non-Lethal Damage",
+            "applyCritDmg": "Apply Critical Damage",
+            "applyBonusCritDmg": "Apply Bonus Critical Damage (Anatomy-less)",
+            "applyCritWound": "Apply Critical Wound Effect",
+            "unavailable": "Unavailable",
+            "fumble": "Fumble",
+            "SelectActor": "Select an Actor first",
+            "Result": "Result"
+        },
         "Stats": {
             "HP": {
                 "Abbr": "HP"
@@ -527,6 +539,21 @@
                 "Heal": "Heal"
             },
             "Alternate": "Alternate"
+        },
+        "CritWound": {
+            "Header": "Critical Wounds",
+            "Add": "Add Critical Wound",
+            "HealingTime": {
+                "Label": "Healing Time"
+            },
+            "Simple": "Simple",
+            "Complex": "Complex",
+            "Difficult": "Difficult",
+            "Deadly": "Deadly",
+            "None": "None",
+            "Stabilized": "Stabilized",
+            "Treated": "Treated",
+            "NotesPlaceholder": "Notes"
         },
         "Notes": "Notes",
         "Alchemy": {

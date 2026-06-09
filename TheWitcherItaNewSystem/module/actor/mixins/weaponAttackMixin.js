@@ -145,6 +145,30 @@ export let weaponAttackMixin = {
             luckToSpend
         } = result;
 
+        // Auto Active Dodge Detection from Target
+        let target = Array.from(game.user.targets)[0];
+        if (target && target.actor?.statuses.has('activelyDodging')) {
+            isActivelyDodging = true;
+        }
+
+        // Auto Aim Stacks Consumption
+        let aimStacks = this.getFlag('TheWitcherItaNewSystem', 'aimStacks') || 0;
+        if (aimStacks > 0 && attack.attackOption === 'ranged') {
+            customAim = Number(customAim) + aimStacks;
+            await this.unsetFlag('TheWitcherItaNewSystem', 'aimStacks');
+            this.removeStatus([{ statusEffect: 'aiming' }]);
+        }
+
+        // Auto Extra Attack Detection via Combat Tracker
+        if (game.combat?.active && game.combat.combatant?.actorId === this.id) {
+            let combatant = game.combat.combatant;
+            let attacksThisRound = combatant.getFlag('TheWitcherItaNewSystem', 'attacksThisRound') || 0;
+            if (attacksThisRound >= 1) {
+                isExtraAttack = true;
+            }
+            await combatant.setFlag('TheWitcherItaNewSystem', 'attacksThisRound', attacksThisRound + 1);
+        }
+
         if (luckToSpend > 0) {
             await this.spendLuck(luckToSpend);
         }

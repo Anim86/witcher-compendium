@@ -44,6 +44,18 @@
             "ShowCharacterArtwork": "Mostra Immagine ai Giocatori",
             "ShowTokenArtwork": "Mostra Token ai Giocatori"
         },
+        "Context": {
+            "Defense": "Difendi",
+            "applyDmg": "Applica Danno",
+            "applyNonLethal": "Applica Danno Non-Letale",
+            "applyCritDmg": "Applica Danno da Critico",
+            "applyBonusCritDmg": "Applica Danno da Critico (Senza Anatomia)",
+            "applyCritWound": "Applica Effetto Ferita Critica",
+            "unavailable": "Non disponibile",
+            "fumble": "Fallimento Critico",
+            "SelectActor": "Seleziona prima un Attore",
+            "Result": "Risultato"
+        },
         "Stats": {
             "stats": {
                 "Name": "Statistiche"
@@ -55,7 +67,7 @@
                 "Abbr": "PF"
             },
             "STA": {
-                "Abbr": "STA"
+                "Abbr": "RES"
             },
             "Resolve": {
                 "Abbr": "RIS"
@@ -600,6 +612,21 @@
                 "Shield": "Scudo",
                 "Heal": "Cura"
             }
+        },
+        "CritWound": {
+            "Header": "Ferite Critiche",
+            "Add": "Aggiungi Ferita Critica",
+            "HealingTime": {
+                "Label": "Tempo di Guarigione"
+            },
+            "Simple": "Semplice",
+            "Complex": "Complessa",
+            "Difficult": "Difficile",
+            "Deadly": "Letale",
+            "None": "Nessuna",
+            "Stabilized": "Stabilizzata",
+            "Treated": "Curata",
+            "NotesPlaceholder": "Note"
         },
         "Notes": "Note",
         "Alchemy": {

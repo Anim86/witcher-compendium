@@ -11,14 +11,23 @@ export let defenseMixin = {
     async prepareAndExecuteDefense(attack, defenseOptions, attackDamageObject, totalAttack, attacker) {
         const totalLuck = (this.system.stats.luck.value || 0) + (this.system.stats.luck.temp || 0);
         const content = `
-        <div class="flex">
-            <label>${game.i18n.localize('WITCHER.Dialog.DefenseExtra')}: <input type="checkbox" name="isExtraDefense"></label> <br />
+        <div class="form-group">
+            <label>${game.i18n.localize('WITCHER.Dialog.DefenseExtra')}</label>
+            <div class="form-fields">
+                <input type="checkbox" name="isExtraDefense">
+            </div>
         </div>
         <div class="form-group">
-            <label>${game.i18n.localize('WITCHER.Dialog.defense.custom')}: <input type="number" class="small" name="customDef" value=0></label>
+            <label>${game.i18n.localize('WITCHER.Dialog.defense.custom')}</label>
+            <div class="form-fields">
+                <input type="number" name="customDef" value="0">
+            </div>
         </div>
         <div class="form-group">
-            <label>${game.i18n.localize('WITCHER.StLuck')} (${totalLuck}): <input type="number" class="small" name="luckToSpend" value=0 min=0 max="${totalLuck}"></label>
+            <label>${game.i18n.localize('WITCHER.StLuck')} (${totalLuck})</label>
+            <div class="form-fields">
+                <input type="number" name="luckToSpend" value="0" min="0" max="${totalLuck}">
+            </div>
         </div>`;
 
         let additionalOptions = this.items
@@ -105,7 +114,13 @@ export let defenseMixin = {
                     (options += `<option value="${option.value}" data-itemId="${option.itemId}"> ${game.i18n.localize(option.label)}</option>`)
             );
 
-            let chooserContent = `<label>${game.i18n.localize('WITCHER.Dialog.DefenseWith')}: </label><select name="choosenDefense">${options}</select><br />`;
+            let chooserContent = `
+            <div class="form-group">
+                <label>${game.i18n.localize('WITCHER.Dialog.DefenseWith')}</label>
+                <div class="form-fields">
+                    <select name="choosenDefense">${options}</select>
+                </div>
+            </div>`;
             let resultPrompt = await DialogV2.prompt({
                 window: { title: `${game.i18n.localize('WITCHER.Dialog.DefenseWith')}` },
                 content: chooserContent,
@@ -211,7 +226,7 @@ export let defenseMixin = {
         rollFormula += this.addAllModifiers(skillName);
         rollFormula += this.addDefenseModifiers();
 
-        if (skillName != 'resistmagic' && this.statuses.find(status => status == 'stun')) {
+        if (skillName != 'resistmagic' && this.statuses.has('stun')) {
             rollFormula = '10[Stun]';
         }
 
@@ -280,6 +295,10 @@ export let defenseMixin = {
 
     handleExtraDefense(extraDefense) {
         if (extraDefense) {
+            if (this.statuses.has('activelyDodging')) {
+                return true;
+            }
+
             let newSta = this.system.derivedStats.sta.value - 1;
             if (newSta < 0) {
                 ui.notifications.error(game.i18n.localize('WITCHER.Spell.notEnoughSta'));

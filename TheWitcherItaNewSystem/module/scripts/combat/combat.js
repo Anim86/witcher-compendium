@@ -44,6 +44,24 @@ export const defenseChatMessageListeners = async (message, html) => {
             (await getInteractActor()).stunSave();
         })
     );
+
+    html.querySelectorAll('button.crit-apply-dmg').forEach(button =>
+        button.addEventListener('click', async _ => {
+            (await getInteractActor()).applyCritDamage(message.system.crit);
+        })
+    );
+
+    html.querySelectorAll('button.crit-apply-wound').forEach(button =>
+        button.addEventListener('click', async _ => {
+            (await getInteractActor()).applyCritWound(message.system.crit);
+        })
+    );
+
+    html.querySelectorAll('a.crit-apply-bonus-dmg').forEach(button =>
+        button.addEventListener('click', async _ => {
+            (await getInteractActor()).applyBonusCritDamage(message.system.crit);
+        })
+    );
 };
 
 export function addDefenseOptionsContextMenu(html, options) {

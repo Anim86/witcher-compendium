@@ -2464,6 +2464,11 @@ WITCHER.statusEffects = [
         img: 'systems/TheWitcherItaNewSystem/assets/images/statusEffects/uncertainty.svg'
     },
     {
+        id: 'activelyDodging',
+        name: 'WITCHER.statusEffects.activelyDodging',
+        img: 'icons/svg/evasion.svg'
+    },
+    {
         id: 'dead',
         name: 'WITCHER.statusEffects.dead',
         img: 'icons/svg/skull.svg'

@@ -2,5 +2,12 @@
     <h3 class='center-important crit-taken'>{{localize 'WITCHER.Defense.Crit'}}:
         {{localize crit.severity}}
     </h3>
-    <button class='crit-stun'>{{localize 'WITCHER.Defense.critStun'}}</button>
+    <div class="flexcol" style="gap: 5px; margin-bottom: 5px;">
+        <button class='crit-apply-dmg'><i class="fas fa-user-minus"></i> {{localize 'WITCHER.Context.applyCritDmg'}}</button>
+        <button class='crit-apply-wound'><i class="fas fa-heart-broken"></i> {{localize 'WITCHER.Context.applyCritWound'}}</button>
+        <button class='crit-stun'><i class="fas fa-dizzy"></i> {{localize 'WITCHER.Defense.critStun'}}</button>
+    </div>
+    <div style="text-align: center; font-size: 0.8em; opacity: 0.7;">
+        <a class='crit-apply-bonus-dmg'>{{localize 'WITCHER.Context.applyBonusCritDmg'}}</a>
+    </div>
 {{/if}}
