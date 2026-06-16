@@ -206,11 +206,11 @@ export let armorMixin = {
     async applySpDamageToItemArmor(armorSet, location, spDamage) {
         for (let armor of armorSet.worn) {
             let currentSP = armor.system[location.name + 'Stopping'] - spDamage;
-            armor.update({ [`system.${location.name}Stopping`]: Math.max(currentSP, 0) });
+            await armor.update({ [`system.${location.name}Stopping`]: Math.max(currentSP, 0) });
         }
         if (armorSet.natural) {
             let currentSP = armorSet.natural.system[location.name + 'Stopping'] - spDamage;
-            armorSet.natural.update({ [`system.${location.name}Stopping`]: Math.max(currentSP, 0) });
+            await armorSet.natural.update({ [`system.${location.name}Stopping`]: Math.max(currentSP, 0) });
         }
     },
 
@@ -220,19 +220,19 @@ export let armorMixin = {
 
         switch (location.name) {
             case 'head':
-                this.update({ [`system.armorHead`]: Math.max(this.system.armorHead - spDamage, 0) });
+                await this.update({ [`system.armorHead`]: Math.max(this.system.armorHead - spDamage, 0) });
                 break;
             case 'torso':
             case 'rightArm':
             case 'leftArm':
-                this.update({ [`system.armorUpper`]: Math.max(this.system.armorUpper - spDamage, 0) });
+                await this.update({ [`system.armorUpper`]: Math.max(this.system.armorUpper - spDamage, 0) });
                 break;
             case 'rightLeg':
             case 'leftLeg':
-                this.update({ [`system.armorLower`]: Math.max(this.system.armorLower - spDamage, 0) });
+                await this.update({ [`system.armorLower`]: Math.max(this.system.armorLower - spDamage, 0) });
                 break;
             case 'tailWing':
-                this.update({ [`system.armorTailWing`]: Math.max(this.system.armorTailWing - spDamage, 0) });
+                await this.update({ [`system.armorTailWing`]: Math.max(this.system.armorTailWing - spDamage, 0) });
                 break;
         }
     },

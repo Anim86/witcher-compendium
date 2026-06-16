@@ -31,17 +31,92 @@ function applyFumble(message) {
     }
 }
 
-function attackFumble(message) {
+/**
+ * Determina la formula di dadi da tirare per i danni all'Affidabilità in base al risultato del Disastro.
+ * Tabella Disastri (The Witcher TRPG Core Rulebook):
+ *   < 6  → Nessun danno all'Affidabilità
+ *   6-7  → Nessun danno all'Affidabilità (solo effetti descrittivi)
+ *   8-9  → 1d6 danni all'Affidabilità
+ *   ≥ 10 → 2d6 danni all'Affidabilità (Danni gravi)
+ *
+ * Per attacchi a distanza e difese non armate non si applica il danno all'oggetto.
+ * @param {number} fumbleAmount
+ * @param {'melee'|'ranged'|'defense'} context
+ * @returns {string|null} formula Roll oppure null se nessun danno
+ */
+function getReliabilityDamageFormula(fumbleAmount, context) {
+    if (fumbleAmount < 8) return null;   // 1-7: nessun danno all'oggetto
+
+    if (context === 'defense') {
+        // Difesa armata
+        if (fumbleAmount < 9) return '1d6';
+        return '2d6';
+    }
+
+    if (context === 'melee') {
+        // Attacco in mischia
+        if (fumbleAmount < 10) return '1d6';
+        return '2d6';
+    }
+
+    return null; // ranged: non si applicano danni all'arma
+}
+
+async function applyReliabilityDamage(actor, item, formula, context) {
+    if (!item || !formula) return;
+
+    const roll = await new Roll(formula).evaluate();
+    const damage = roll.total;
+
+    let fieldKey;
+    let currentValue;
+    let isBroken;
+
+    if (item.type === 'armor') {
+        currentValue = item.system.reliability;
+        fieldKey = 'system.reliability';
+    } else if (item.type === 'weapon') {
+        currentValue = item.system.reliable;
+        fieldKey = 'system.reliable';
+    } else {
+        return;
+    }
+
+    const newValue = Math.max(0, currentValue - damage);
+    isBroken = newValue <= 0;
+    await item.update({ [fieldKey]: newValue });
+
+    // Messaggio in chat visibile a tutti
+    const brokenKey = item.type === 'armor' ? 'WITCHER.Shield.Broken' : 'WITCHER.Weapon.Broken';
+    let content = `💥 <b>${game.i18n.localize('WITCHER.fumble.reliabilityDamage')}</b><br/>`;
+    content += `${game.i18n.localize('WITCHER.Item.ReliabilityLostFumble')}: <b>${item.name}</b> → -${damage} [${formula}]`;
+    if (isBroken) {
+        content += `<br/>⚠️ <b>${game.i18n.localize(brokenKey)}</b>`;
+        ui.notifications.error(`${game.i18n.localize(brokenKey)}: ${item.name}`);
+    }
+
+    // Mostriamo il roll in chat
+    await roll.toMessage({
+        flavor: content,
+        speaker: actor ? ChatMessage.getSpeaker({ actor }) : ChatMessage.getSpeaker()
+    });
+}
+
+async function attackFumble(message) {
     const fumbleAmount = message.rolls[0].options.fumbleAmount;
     const attack = message.system.attack;
-    const actor = message.system.attacker;
+    const actorUuid = message.system.attacker;
+    const actor = actorUuid ? await fromUuid(actorUuid) : null;
 
     let fumbleResult;
+    let context = 'melee';
 
     if (CONFIG.WITCHER.meleeSkills.includes(attack.skill)) {
         if (attack.skill == 'brawling') {
             fumbleResult = unarmedAttackDefense(fumbleAmount);
+            context = 'unarmed';
         } else {
+            context = 'melee';
             if (fumbleAmount < 6) {
                 fumbleResult = 'nothing';
             } else if (fumbleAmount < 10) {
@@ -53,6 +128,7 @@ function attackFumble(message) {
     }
 
     if (CONFIG.WITCHER.rangedSkills.includes(attack.skill)) {
+        context = 'ranged';
         if (fumbleAmount < 6) {
             fumbleResult = 'nothing';
         } else if (fumbleAmount < 7) {
@@ -75,26 +151,56 @@ function attackFumble(message) {
         }
     }
 
-    createResultMessage(actor, fumbleResult);
+    await createResultMessage(actor, fumbleResult);
+
+    // Applica danni all'Affidabilità dell'arma usata per l'attacco
+    if (context === 'melee' && attack.itemUuid) {
+        const item = await fromUuid(attack.itemUuid);
+        const formula = getReliabilityDamageFormula(fumbleAmount, 'melee');
+        if (formula && item) {
+            await applyReliabilityDamage(actor, item, formula, 'melee');
+        }
+    }
 }
 
-function defenseFumble(message) {
+async function defenseFumble(message) {
     const fumbleAmount = message.rolls[0].options.fumbleAmount;
-    const actor = message.system.defender;
+    const actorUuid = message.system.defender;
+    const actor = actorUuid ? await fromUuid(actorUuid) : null;
+
     if (fumbleAmount < 6) {
-        createResultMessage(actor, 'nothing');
+        await createResultMessage(actor, 'nothing');
         return;
     }
 
-    if (CONFIG.WITCHER.meleeSkills.includes(message.system.defense) && message.system.defense != 'brawling') {
-        if (fumbleAmount < 9) {
-            createResultMessage(actor, 'armedDefense.' + fumbleAmount);
-            return;
-        }
+    let fumbleResult;
+    let isArmedDefense = false;
 
-        createResultMessage(actor, 'armedDefense.>9');
+    if (CONFIG.WITCHER.meleeSkills.includes(message.system.defense) && message.system.defense != 'brawling') {
+        isArmedDefense = true;
+        if (fumbleAmount < 9) {
+            fumbleResult = 'armedDefense.' + fumbleAmount;
+        } else {
+            fumbleResult = 'armedDefense.>9';
+        }
     } else {
-        createResultMessage(actor, unarmedAttackDefense(fumbleAmount));
+        fumbleResult = unarmedAttackDefense(fumbleAmount);
+    }
+
+    await createResultMessage(actor, fumbleResult);
+
+    // Applica danni all'Affidabilità dello scudo/arma usata per la difesa, se armata
+    if (isArmedDefense && actor) {
+        // Recuperiamo l'oggetto usato per la difesa cercandolo nell'inventario dell'attore
+        // (lo scudo o l'arma equipaggiata)
+        const defenseItem = actor.items.find(i =>
+            (i.type === 'weapon' || i.type === 'armor') &&
+            (i.system.equipped || i.system.equippedOffHand)
+        );
+        const formula = getReliabilityDamageFormula(fumbleAmount, 'defense');
+        if (formula && defenseItem) {
+            await applyReliabilityDamage(actor, defenseItem, formula, 'defense');
+        }
     }
 }
 
@@ -117,7 +223,7 @@ async function createResultMessage(actor, result) {
     const chatData = {
         user: game.user.id,
         content: content,
-        speaker: ChatMessage.getSpeaker({ actor: actor }),
+        speaker: actor ? ChatMessage.getSpeaker({ actor: actor }) : ChatMessage.getSpeaker(),
         ...(typeof CONST.CHAT_MESSAGE_STYLES !== "undefined" ? { style: CONST.CHAT_MESSAGE_STYLES.OTHER } : { type: CONST.CHAT_MESSAGE_TYPES?.OTHER ?? 0 })
     };
 

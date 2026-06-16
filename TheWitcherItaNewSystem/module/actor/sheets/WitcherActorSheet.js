@@ -336,16 +336,15 @@ export default class WitcherActorSheet extends HandlebarsApplicationMixin(ActorS
 
     activateListeners(html) {
         let jquery = $(html);
-        jquery.find('.life-event-display').on('click', this._onLifeEventDisplay.bind(this));
+        jquery.find('.life-event-display').off('click').on('click', this._onLifeEventDisplay.bind(this));
 
-        jquery.find('.init-roll').on('click', this._onInitRoll.bind(this));
-        jquery.find('.crit-roll').on('click', this._onCritRoll.bind(this));
-        jquery.find('.recover-sta').on('click', this._onRecoverSta.bind(this));
-        jquery.find('.verbal-button').on('click', this._onVerbalCombat.bind(this));
+        jquery.find('.crit-roll').off('click').on('click', this._onCritRoll.bind(this));
+        jquery.find('.recover-sta').off('click').on('click', this._onRecoverSta.bind(this));
+        jquery.find('.verbal-button').off('click').on('click', this._onVerbalCombat.bind(this));
 
-        jquery.find('input').focusin(event => event.currentTarget.select());
+        jquery.find('input').off('focusin').focusin(event => event.currentTarget.select());
 
-        jquery.find('.configure-actor').on('click', this._renderConfigureDialog.bind(this));
+        jquery.find('.configure-actor').off('click').on('click', this._renderConfigureDialog.bind(this));
 
         //mixins
         this.statListener(html);

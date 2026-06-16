@@ -1134,20 +1134,20 @@ export default class WitcherActor extends Actor {
     }
 
     async applyStatus(effects) {
-        effects
-            ?.filter(effect => !!effect.statusEffect)
-            .forEach(effect => {
-                if (!this.statuses.has(effect.statusEffect)) {
-                    this.toggleStatusEffect(effect.statusEffect);
-                }
+        for (const effect of (effects ?? [])) {
+            if (!effect.statusEffect) continue;
 
-                if (this.system.statusEffectImmunities?.find(immunity => immunity == effect.statusEffect)) {
-                    //untoggle it so people see it was tried to be applied but failed
-                    setTimeout(() => {
-                        this.toggleStatusEffect(effect.statusEffect);
-                    }, 1000);
-                }
-            });
+            if (!this.statuses.has(effect.statusEffect)) {
+                await this.toggleStatusEffect(effect.statusEffect);
+            }
+
+            if (this.system.statusEffectImmunities?.find(immunity => immunity == effect.statusEffect)) {
+                //untoggle it so people see it was tried to be applied but failed
+                setTimeout(async () => {
+                    await this.toggleStatusEffect(effect.statusEffect);
+                }, 1000);
+            }
+        }
     }
 
     async removeStatus(effects) {

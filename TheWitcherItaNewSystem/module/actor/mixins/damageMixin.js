@@ -6,7 +6,7 @@ export let damageMixin = {
     async applyDamage(dialogData, totalDamage, damageObject, derivedStat, infoTotalDmg = totalDamage) {
         let shield = this.system.derivedStats.shield.value;
         if (totalDamage < shield) {
-            this.update({ 'system.derivedStats.shield.value': shield - totalDamage });
+            await this.update({ 'system.derivedStats.shield.value': shield - totalDamage });
             let messageContent = `${game.i18n.localize('WITCHER.Damage.initial')}: <span class="error-display">${infoTotalDmg}</span><br />
                                 ${game.i18n.localize('WITCHER.Damage.shield')}: <span class="error-display">${shield}</span><br />
                                 ${game.i18n.localize('WITCHER.Damage.ToMuchShield')}
@@ -20,7 +20,7 @@ export let damageMixin = {
             ChatMessage.create(messageData);
             return;
         } else {
-            this.update({ 
+            await this.update({ 
                 'system.derivedStats.shield.value': 0,
                 'flags.TheWitcherItaNewSystem.magicShield': false
             });

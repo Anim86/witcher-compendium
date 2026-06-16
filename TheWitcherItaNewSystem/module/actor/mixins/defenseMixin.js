@@ -406,23 +406,8 @@ export let defenseMixin = {
         let item = this.items.get(defenseItemId);
         let isFumble = roll.options.fumble;
 
-        // Rule: Disaster (Fumble) reduces reliability by 1
-        if (isFumble && item) {
-            let reliabilityDamage = 1;
-            if (item.type == 'armor') {
-                let newReliability = Math.max(0, item.system.reliability - reliabilityDamage);
-                item.update({ 'system.reliability': newReliability });
-                if (newReliability <= 0) {
-                    ui.notifications.error(`${game.i18n.localize('WITCHER.Shield.Broken')}: ${item.name}`);
-                }
-            } else if (item.type == 'weapon') {
-                let newReliable = Math.max(0, item.system.reliable - reliabilityDamage);
-                item.update({ 'system.reliable': newReliable });
-                if (newReliable <= 0) {
-                    ui.notifications.error(`${game.i18n.localize('WITCHER.Weapon.Broken')}: ${item.name}`);
-                }
-            }
-        }
+        // Fumble: il danno all'Affidabilità viene gestito da fumble.js con i dadi corretti (1d6, 1d10, 2d6)
+        // Non sottraiamo nulla qui per evitare duplicati
 
         if (roll.total < totalAttack) {
             applyActiveEffectToActorViaId(
@@ -443,22 +428,35 @@ export let defenseMixin = {
                 if (attackDamageObject.properties.crushingForce) {
                     reliabilityDamage *= 2;
                 }
-                
+
                 if (item.type == 'armor') {
                     let newReliability = Math.max(0, item.system.reliability - reliabilityDamage);
                     item.update({ 'system.reliability': newReliability });
-                    if (newReliability <= 0) {
-                        ui.notifications.error(`${game.i18n.localize('WITCHER.Shield.Broken')}: ${item.name}`);
-                    }
+                    this._notifyReliabilityLoss(item.name, reliabilityDamage, newReliability <= 0, 'shield');
                 } else if (item.type == 'weapon') {
                     let newReliable = Math.max(0, item.system.reliable - reliabilityDamage);
                     item.update({ 'system.reliable': newReliable });
-                    if (newReliable <= 0) {
-                        ui.notifications.error(`${game.i18n.localize('WITCHER.Weapon.Broken')}: ${item.name}`);
-                    }
+                    this._notifyReliabilityLoss(item.name, reliabilityDamage, newReliable <= 0, 'weapon');
                 }
             }
         }
+    },
+
+    _notifyReliabilityLoss(itemName, amount, isBroken, itemKind) {
+        let msg = `🛡️ <b>${itemName}</b> ${game.i18n.localize('WITCHER.Item.ReliabilityLostBlock')}: -${amount}`;
+        if (isBroken) {
+            const brokenKey = itemKind === 'shield' ? 'WITCHER.Shield.Broken' : 'WITCHER.Weapon.Broken';
+            msg += `<br/>⚠️ <b>${game.i18n.localize(brokenKey)}</b>`;
+            ui.notifications.error(`${game.i18n.localize(brokenKey)}: ${itemName}`);
+        }
+        const chatData = {
+            content: msg,
+            speaker: ChatMessage.getSpeaker({ actor: this }),
+            ...(typeof CONST.CHAT_MESSAGE_STYLES !== 'undefined'
+                ? { style: CONST.CHAT_MESSAGE_STYLES.OTHER }
+                : { type: CONST.CHAT_MESSAGE_TYPES?.OTHER ?? 0 })
+        };
+        ChatMessage.create(chatData);
     },
 
     async stunSave(modifier = 0) {
@@ -482,7 +480,7 @@ export let defenseMixin = {
         let roll = await extendedRoll(`1d10`, messageData, config);
 
         if (!roll.options.success) {
-            this.applyStatus([{ statusEffect: 'stun' }]);
+            await this.applyStatus([{ statusEffect: 'stun' }]);
         }
     }
 };

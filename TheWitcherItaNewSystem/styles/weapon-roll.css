@@ -272,40 +272,37 @@
     100% { opacity: 1; transform: scale(1.1); }
 }
 
-/* Premium Styled Checkbox Toggle Switch look */
+/* Premium Styled Checkbox - consistent with mod-row checkboxes */
 .styled-checkbox {
     appearance: none;
     -webkit-appearance: none;
-    width: 30px;
-    height: 16px;
-    background: #2a2a28;
-    border-radius: 8px;
-    position: relative;
-    outline: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #555;
+    border-radius: 4px;
+    background: #151514;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
-    transition: background 0.3s ease;
-    border: 1px solid #444;
+    position: relative;
+    flex-shrink: 0;
+    transition: all 0.2s ease;
+    margin: 0 !important;
 }
 
 .styled-checkbox:checked {
     background: #b89753;
+    border-color: #b89753;
+    box-shadow: 0 0 8px rgba(184, 151, 83, 0.55);
 }
 
-.styled-checkbox::before {
-    content: "";
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    left: 2px;
-    top: 1px;
-    background: #eaeaea;
-    transition: transform 0.3s ease;
-}
-
-.styled-checkbox:checked::before {
-    transform: translateX(14px);
-    background: #0d0d0c;
+.styled-checkbox:checked::after {
+    content: "✓";
+    color: #0d0d0c;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 1;
 }
 
 /* Range Selector Customization */

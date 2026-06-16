@@ -30,7 +30,7 @@ export default class WitcherCharacterSheet extends WitcherActorSheet {
             openDerivedDialog: this.#openDerivedDialog,
             openModifiers: this.#openModifiers,
             editReputation: this.#editReputation,
-            rollInit: function() { return this.actor.rollInitiative({createCombatants: true}); },
+            rollInit: function(event, target) { return this._onInitRoll(event, target); },
             rollVCInit: function() { return this.actor.rollVerbalInitiative(); },
             rollStun: function() { return this.actor.rollStun(); },
             rollSave: function() { return this.actor.rollDeathSave(); },
