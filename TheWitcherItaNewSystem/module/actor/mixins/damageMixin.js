@@ -5,8 +5,31 @@ import { applyStatusEffectToActor } from '../../scripts/statusEffects/applyStatu
 export let damageMixin = {
     async applyDamage(dialogData, totalDamage, damageObject, derivedStat, infoTotalDmg = totalDamage) {
         let shield = this.system.derivedStats.shield.value;
+        let isMagicShield = this.getFlag('TheWitcherItaNewSystem', 'magicShield');
+
+        let activeShieldItem = null;
+        if (!isMagicShield && shield > 0) {
+            let shields = this.items.filter(i => {
+                if (i.type !== 'armor' || !i.system.equipped) return false;
+                const loc = i.system.location;
+                if (!loc) return false;
+                const locations = Array.isArray(loc) ? loc : [loc];
+                return locations.some(l => l === 'Shield' || l.includes('Shield'));
+            });
+            if (shields.length > 0) {
+                activeShieldItem = shields.reduce((prev, current) => 
+                    ((current.system.reliability || 0) > (prev.system.reliability || 0)) ? current : prev
+                );
+            }
+        }
+
         if (totalDamage < shield) {
-            await this.update({ 'system.derivedStats.shield.value': shield - totalDamage });
+            if (isMagicShield) {
+                await this.update({ 'system.derivedStats.shield.value': shield - totalDamage });
+            } else if (activeShieldItem) {
+                await activeShieldItem.update({ 'system.reliability': shield - totalDamage });
+            }
+
             let messageContent = `${game.i18n.localize('WITCHER.Damage.initial')}: <span class="error-display">${infoTotalDmg}</span><br />
                                 ${game.i18n.localize('WITCHER.Damage.shield')}: <span class="error-display">${shield}</span><br />
                                 ${game.i18n.localize('WITCHER.Damage.ToMuchShield')}
@@ -20,11 +43,20 @@ export let damageMixin = {
             ChatMessage.create(messageData);
             return;
         } else {
-            await this.update({ 
-                'system.derivedStats.shield.value': 0,
-                'flags.TheWitcherItaNewSystem.magicShield': false
-            });
-            totalDamage -= shield;
+            if (isMagicShield) {
+                await this.update({ 
+                    'system.derivedStats.shield.value': 0,
+                    'flags.TheWitcherItaNewSystem.magicShield': false
+                });
+            } else if (activeShieldItem) {
+                await activeShieldItem.update({ 'system.reliability': 0 });
+                ui.notifications.error(`${game.i18n.localize('WITCHER.Shield.Broken')}: ${activeShieldItem.name}`);
+            }
+
+            if (shield > 0) {
+                totalDamage -= shield;
+                infoTotalDmg += ` - ${shield}[${game.i18n.localize('WITCHER.Damage.shield')}]`;
+            }
         }
 
         if (this.system.category && damageObject.properties?.oilEffect === this.system.category) {
