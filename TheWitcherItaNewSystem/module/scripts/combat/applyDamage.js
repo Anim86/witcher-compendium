@@ -78,10 +78,17 @@ async function createApplyDamageDialog(actor, damageObject) {
                     <label>${game.i18n.localize('WITCHER.Damage.resistNonMeteorite')}: <input type="checkbox" name="resistNonMeteorite" ${actor.system.resistantNonMeteorite ? 'checked' : 'unchecked'}></label><br />`;
     }
 
+    let isMagicShield = actor.getFlag('TheWitcherItaNewSystem', 'magicShield');
+    let hasPhysicalShield = !isMagicShield && (actor.system.derivedStats.shield.value > 0);
+
+    if (hasPhysicalShield) {
+        content += `<label>${game.i18n.localize('WITCHER.Damage.useShield') || 'Usa Scudo Fisico Equipaggiato'}: <input type="checkbox" name="useShield" checked></label><br />`;
+    }
+
     content += `<label>${game.i18n.localize('WITCHER.Damage.isVulnerable')}: <input type="checkbox" name="vulnerable"></label><br />
     <label>${game.i18n.localize('WITCHER.Damage.oilDmg')}: <input type="checkbox" name="oilDmg"></label><br />`;
 
-    let { newLocation, resistNonSilver, resistNonMeteorite, isVulnerable, addOilDmg } = await DialogV2.prompt({
+    let { newLocation, resistNonSilver, resistNonMeteorite, isVulnerable, addOilDmg, useShield } = await DialogV2.prompt({
         window: { title: `${game.i18n.localize('WITCHER.Context.applyDmg')}` },
         content: content,
         modal: true,
@@ -92,7 +99,8 @@ async function createApplyDamageDialog(actor, damageObject) {
                     resistNonSilver: button.form.elements.resistNonSilver?.checked,
                     resistNonMeteorite: button.form.elements.resistNonMeteorite?.checked,
                     isVulnerable: button.form.elements.vulnerable?.checked,
-                    addOilDmg: button.form.elements.oilDmg?.checked
+                    addOilDmg: button.form.elements.oilDmg?.checked,
+                    useShield: button.form.elements.useShield ? button.form.elements.useShield.checked : true
                 };
             }
         },
@@ -104,7 +112,8 @@ async function createApplyDamageDialog(actor, damageObject) {
         resistNonMeteorite,
         newLocation,
         isVulnerable,
-        addOilDmg
+        addOilDmg,
+        useShield
     };
 }
 
@@ -123,6 +132,10 @@ async function applyDamageFromMessage(actor, totalDamage, messageId, derivedStat
 
     if (dialogData.addOilDmg) {
         damage.properties.oilEffect = actor.system.category;
+    }
+
+    if (dialogData.useShield === false) {
+        damage.properties.useShield = false;
     }
 
     actor.applyDamage(dialogData, totalDamage, damage, derivedStat);

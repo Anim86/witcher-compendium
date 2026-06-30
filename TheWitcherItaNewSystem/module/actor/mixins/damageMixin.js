@@ -8,6 +8,11 @@ export let damageMixin = {
         let isMagicShield = this.getFlag('TheWitcherItaNewSystem', 'magicShield');
 
         let activeShieldItem = null;
+        // Ignore physical shield if dialog disabled it
+        if (!isMagicShield && damageObject.properties?.useShield === false) {
+            shield = 0;
+        }
+
         if (!isMagicShield && shield > 0) {
             let shields = this.items.filter(i => {
                 if (i.type !== 'armor' || !i.system.equipped) return false;
