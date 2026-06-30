@@ -60,7 +60,7 @@ export function registerHooks() {
             title: 'Assegna Punti Incremento (Gruppo)',
             icon: 'fa-solid fa-graduation-cap',
             button: true,
-            onClick: () => {
+            onChange: () => {
                 if (game.api?.rewards?.ip) game.api.rewards.ip();
             }
         };
@@ -70,7 +70,7 @@ export function registerHooks() {
             title: 'Assegna Punti Magia (Gruppo)',
             icon: 'fa-solid fa-sparkles',
             button: true,
-            onClick: () => {
+            onChange: () => {
                 if (game.api?.rewards?.ip) game.api.rewards.ip(null, 'magic');
             }
         };
@@ -80,7 +80,7 @@ export function registerHooks() {
             title: 'Assegna Corone (Gruppo)',
             icon: 'fa-solid fa-coins',
             button: true,
-            onClick: () => {
+            onChange: () => {
                 if (game.api?.rewards?.currency) game.api.rewards.currency();
             }
         };

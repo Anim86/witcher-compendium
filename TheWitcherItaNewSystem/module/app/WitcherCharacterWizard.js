@@ -1999,7 +1999,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         
         let vigor = 0;
         const profName = this.characterData.profession?.name?.toLowerCase() || "";
-        if (profName.includes('witcher') || profName.includes('prete')) {
+        if (profName.includes('witcher') || profName.includes('prete') || profName.includes('druido')) {
             vigor = 2;
         } else if (profName.includes('mago')) {
             vigor = 5;

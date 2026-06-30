@@ -615,6 +615,41 @@ export default class WitcherActor extends Actor {
 
         this.system.derivedStats[stat].modifiers.forEach(item => (totalModifiers += Number(item.value)));
 
+        if (stat === 'vigor') {
+            const sintoniaSkill = this.findSkillWithName('Sintonia') || this.findSkillWithName('Attunement');
+            if (sintoniaSkill) {
+                const level = Number(sintoniaSkill.skill.level) || 0;
+                totalModifiers += level * 2;
+            }
+
+            const potereDivinoSkill = this.findSkillWithName('Potere Divino') || this.findSkillWithName('Divine Power');
+            if (potereDivinoSkill) {
+                const level = Number(potereDivinoSkill.skill.level) || 0;
+                if (level === 10) {
+                    totalModifiers += 14;
+                } else {
+                    totalModifiers += level;
+                }
+            }
+
+            const sintoniaNaturaSkill = this.findSkillWithName('Sintonia con la Natura') || 
+                                       this.findSkillWithName('Attunement with Nature') || 
+                                       this.findSkillWithName('Nature Attunement');
+            if (sintoniaNaturaSkill) {
+                const level = Number(sintoniaNaturaSkill.skill.level) || 0;
+                if (level === 10) {
+                    const definition = sintoniaNaturaSkill.skill.definition || "";
+                    if (definition.includes("12")) {
+                        totalModifiers += 10;
+                    } else {
+                        totalModifiers += 14;
+                    }
+                } else {
+                    totalModifiers += level;
+                }
+            }
+        }
+
         const bodyVal = this.system.stats.body.value || 0;
         const willVal = this.system.stats.will.value || 0;
         const base = Math.floor((bodyVal + willVal) / 2);
