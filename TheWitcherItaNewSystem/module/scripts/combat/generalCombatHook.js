@@ -68,7 +68,7 @@ async function applyCombatEffect(actor, status) {
         ...(typeof CONST.CHAT_MESSAGE_STYLES !== "undefined" ? { style: CONST.CHAT_MESSAGE_STYLES.OTHER } : { type: CONST.CHAT_MESSAGE_TYPES?.OTHER ?? 0 })
     };
 
-    ChatMessage.applyRollMode(chatData, game.settings.get('core', 'rollMode'));
+    (ChatMessage.applyMode ?? ChatMessage.applyRollMode)(chatData, game.settings.get('core', 'rollMode'));
     ChatMessage.create(chatData);
 
     if (status.damage && status.damage.amount > 0) {

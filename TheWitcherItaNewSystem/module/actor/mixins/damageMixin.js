@@ -44,7 +44,7 @@ export let damageMixin = {
                 speaker: ChatMessage.getSpeaker({ actor: this }),
                 flags: this.getNoDamageFlags()
             };
-            ChatMessage.applyRollMode(messageData, game.settings.get('core', 'rollMode'));
+            (ChatMessage.applyMode ?? ChatMessage.applyRollMode)(messageData, game.settings.get('core', 'rollMode'));
             ChatMessage.create(messageData);
             return;
         } else {
@@ -127,7 +127,7 @@ export let damageMixin = {
             ...(typeof CONST.CHAT_MESSAGE_STYLES !== "undefined" ? { style: CONST.CHAT_MESSAGE_STYLES.OTHER } : { type: CONST.CHAT_MESSAGE_TYPES?.OTHER ?? 0 })
         };
 
-        ChatMessage.applyRollMode(chatData, game.settings.get('core', 'rollMode'));
+        (ChatMessage.applyMode ?? ChatMessage.applyRollMode)(chatData, game.settings.get('core', 'rollMode'));
         let message = await ChatMessage.create(chatData);
 
         await this.updateDerivedStat(totalAppliedDamage, derivedStat);
@@ -303,7 +303,7 @@ export let damageMixin = {
         };
 
         let rollResult = await new Roll('1').evaluate();
-        ChatMessage.applyRollMode(messageData, game.settings.get('core', 'rollMode'));
+        (ChatMessage.applyMode ?? ChatMessage.applyRollMode)(messageData, game.settings.get('core', 'rollMode'));
         rollResult.toMessage(messageData);
     },
 
@@ -318,7 +318,7 @@ export let damageMixin = {
             ...(typeof CONST.CHAT_MESSAGE_STYLES !== "undefined" ? { style: CONST.CHAT_MESSAGE_STYLES.OTHER } : { type: CONST.CHAT_MESSAGE_TYPES?.OTHER ?? 0 })
         };
 
-        ChatMessage.applyRollMode(chatData, game.settings.get('core', 'rollMode'));
+        (ChatMessage.applyMode ?? ChatMessage.applyRollMode)(chatData, game.settings.get('core', 'rollMode'));
         ChatMessage.create(chatData);
     },
 

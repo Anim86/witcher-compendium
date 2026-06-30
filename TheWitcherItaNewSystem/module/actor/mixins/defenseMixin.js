@@ -250,7 +250,7 @@ export let defenseMixin = {
         );
         let crit = this.checkForCrit(roll.total, totalAttack);
         if (crit) {
-            crit.isTargeted = !attackDamageObject.originalLocation.includes('random');
+            crit.isTargeted = !!(attackDamageObject.originalLocation && !attackDamageObject.originalLocation.includes('random'));
             crit.location = await this.handleCritLocation(attackDamageObject);
             attackDamageObject.location = crit.location;
             crit.critEffectModifier = attackDamageObject.crit.critEffectModifier;
@@ -392,7 +392,7 @@ export let defenseMixin = {
     },
 
     async handleCritLocation(attackDamageObject) {
-        if (!attackDamageObject.originalLocation.includes('random')) {
+        if (attackDamageObject.originalLocation && !attackDamageObject.originalLocation.includes('random')) {
             return {
                 name: attackDamageObject.originalLocation
             };

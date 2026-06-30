@@ -2466,7 +2466,7 @@ WITCHER.statusEffects = [
     {
         id: 'activelyDodging',
         name: 'WITCHER.statusEffects.activelyDodging',
-        img: 'icons/svg/evasion.svg'
+        img: 'icons/svg/shield.svg'
     },
     {
         id: 'dead',

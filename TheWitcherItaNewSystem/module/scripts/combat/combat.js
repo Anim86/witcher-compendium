@@ -66,14 +66,20 @@ export const defenseChatMessageListeners = async (message, html) => {
 
 export function addDefenseOptionsContextMenu(html, options) {
     let canDefend = li => Array.from(game.messages.get(li.dataset.messageId)?.system?.defenseOptions ?? []).length > 0;
-    options.push({
+    const entry = {
         label: `${game.i18n.localize('WITCHER.Context.Defense')}`,
         icon: '<i class="fas fa-shield-alt"></i>',
-        visible: canDefend,
-        callback: async li => {
-            executeDefense(await getInteractActor(), li.dataset.messageId);
-        }
-    });
+        visible: canDefend
+    };
+    const callback = async li => {
+        executeDefense(await getInteractActor(), li.dataset.messageId);
+    };
+    if (!game.version || game.version.startsWith("14") || game.version.startsWith("15") || game.version.startsWith("16")) {
+        entry.onClick = callback;
+    } else {
+        entry.callback = callback;
+    }
+    options.push(entry);
     return options;
 }
 
@@ -93,7 +99,7 @@ async function executeDefense(actor, messageId) {
 
 export function addCritMessageContextOptions(html, options) {
     let wasCritted = li => li.querySelector('.crit-taken');
-    options.push(
+    const entries = [
         {
             label: `${game.i18n.localize('WITCHER.Context.applyCritDmg')}`,
             icon: '<i class="fas fa-user-minus"></i>',
@@ -118,6 +124,15 @@ export function addCritMessageContextOptions(html, options) {
                 (await getInteractActor()).applyCritWound(game.messages.get(li.dataset.messageId).system.crit);
             }
         }
-    );
+    ];
+
+    const isV14 = !game.version || game.version.startsWith("14") || game.version.startsWith("15") || game.version.startsWith("16");
+    for (const entry of entries) {
+        if (isV14) {
+            entry.onClick = entry.callback;
+            delete entry.callback;
+        }
+    }
+    options.push(...entries);
     return options;
 }
