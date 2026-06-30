@@ -22,7 +22,17 @@
                             {{/each}}
                         </span>
 
-                        <span>{{#if (eq armor.system.location "Shield")}}{{armor.system.reliability}}{{else}}{{armor.system.torsoStopping}}{{/if}}</span>
+                        <span>
+                            {{#if (eq armor.system.location "Shield")}}
+                                {{armor.system.reliability}}
+                            {{else if (eq armor.system.location "Head")}}
+                                {{armor.system.headStopping}}
+                            {{else if (eq armor.system.location "Leg")}}
+                                {{armor.system.leftLegStopping}}
+                            {{else}}
+                                {{armor.system.torsoStopping}}
+                            {{/if}}
+                        </span>
                         <span>{{armor.system.weight}}</span>
                         <span><input class="inline-edit item-quantity" data-field="system.quantity" type="text"
                                 value="{{armor.system.quantity}}" data-dtype="Number" /></span>
