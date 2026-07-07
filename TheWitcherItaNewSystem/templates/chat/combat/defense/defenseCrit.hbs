@@ -1,7 +1,11 @@
 {{#if crit}}
     <h3 class='center-important crit-taken'>{{localize 'WITCHER.Defense.Crit'}}:
-        {{localize crit.severity}}
+        {{localize crit.severityLabel}}
     </h3>
+    <div style="text-align: center; margin-bottom: 5px;">
+        <div>{{#if crit.isTargeted}}Locazione Critica{{else}}Ferita da tabella{{/if}}: <b>{{crit.locationAlias}}</b></div>
+        <div>Danno bonus: <b>{{crit.critdamage}}</b> (ignora armatura)</div>
+    </div>
     <div class="flexcol" style="gap: 5px; margin-bottom: 5px;">
         <button class='crit-apply-dmg'><i class="fas fa-user-minus"></i> {{localize 'WITCHER.Context.applyCritDmg'}}</button>
         <button class='crit-apply-wound'><i class="fas fa-heart-broken"></i> {{localize 'WITCHER.Context.applyCritWound'}}</button>

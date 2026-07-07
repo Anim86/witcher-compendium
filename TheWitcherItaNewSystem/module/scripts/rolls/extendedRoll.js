@@ -23,12 +23,14 @@ export async function extendedRoll(rollFormula, messageData, config = new RollCo
             : `<div class="${fumbleClass}"><i class="fas fa-dice-d6"></i>${game.i18n.localize('WITCHER.Fumble')}</div>`;
 
         messageData.flavor += `<div>${rollFormula} = <b>${rollTotal}</b></div>`;
+        messageData.flavor += `<div>Dado: <b>${formatDiceResults(roll)}</b></div>`;
 
         //print crit/fumble roll
         let extraRollFormula = `1d10x10[${extraRollDescription}]`;
         let extraRoll = await new Roll(extraRollFormula).evaluate();
         let extraRollTotal = Number(extraRoll.total);
         messageData.flavor += `<div>${extraRollFormula} = <b>${extraRollTotal}</b></div>`;
+        messageData.flavor += `<div>${extraRollDescription}: <b>${formatDiceResults(extraRoll)}</b></div>`;
 
         //add/subtract extra result from the original one
         extraRollFormula = `${rollTotal}[${game.i18n.localize('WITCHER.BeforeCrit')}]`;
@@ -45,11 +47,10 @@ export async function extendedRoll(rollFormula, messageData, config = new RollCo
                 fumbleAmount: extraRollTotal
             };
 
-            if (extraRollTotal >= rollTotal) {
-                extraRollTotal = rollTotal;
-            }
-
             extraRollFormula += `-${extraRollTotal}[${extraRollDescription}]`;
+            if (extraRollTotal > rollTotal) {
+                extraRollFormula += `+${extraRollTotal - rollTotal}[Minimo 0]`;
+            }
             rollTotal -= extraRollTotal;
         }
 
@@ -107,4 +108,13 @@ function isCrit(roll) {
 
 function isFumble(roll) {
     return roll.dice[0]?.results[0].result == 1;
+}
+
+function formatDiceResults(roll) {
+    const results = roll.dice[0]?.results
+        ?.filter(result => result.active !== false)
+        .map(result => result.result);
+
+    if (!results?.length) return roll.total;
+    return results.join(' + ');
 }

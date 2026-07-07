@@ -34,10 +34,8 @@ function applyFumble(message) {
 /**
  * Determina la formula di dadi da tirare per i danni all'Affidabilità in base al risultato del Disastro.
  * Tabella Disastri (The Witcher TRPG Core Rulebook):
- *   < 6  → Nessun danno all'Affidabilità
- *   6-7  → Nessun danno all'Affidabilità (solo effetti descrittivi)
- *   8-9  → 1d6 danni all'Affidabilità
- *   ≥ 10 → 2d6 danni all'Affidabilità (Danni gravi)
+ *   Attacco in mischia: 8 → 1d10 danni all'Affidabilità
+ *   Difesa armata: 6 → 1d6, 9 → 2d6 danni all'Affidabilità
  *
  * Per attacchi a distanza e difese non armate non si applica il danno all'oggetto.
  * @param {number} fumbleAmount
@@ -45,18 +43,15 @@ function applyFumble(message) {
  * @returns {string|null} formula Roll oppure null se nessun danno
  */
 function getReliabilityDamageFormula(fumbleAmount, context) {
-    if (fumbleAmount < 8) return null;   // 1-7: nessun danno all'oggetto
-
     if (context === 'defense') {
-        // Difesa armata
-        if (fumbleAmount < 9) return '1d6';
-        return '2d6';
+        if (fumbleAmount === 6) return '1d6';
+        if (fumbleAmount === 9) return '2d6';
+        return null;
     }
 
     if (context === 'melee') {
-        // Attacco in mischia
-        if (fumbleAmount < 10) return '1d6';
-        return '2d6';
+        if (fumbleAmount === 8) return '1d10';
+        return null;
     }
 
     return null; // ranged: non si applicano danni all'arma
@@ -76,8 +71,8 @@ async function applyReliabilityDamage(actor, item, formula, context) {
         currentValue = item.system.reliability;
         fieldKey = 'system.reliability';
     } else if (item.type === 'weapon') {
-        currentValue = item.system.reliable;
-        fieldKey = 'system.reliable';
+        currentValue = item.system.reliability;
+        fieldKey = 'system.reliability';
     } else {
         return;
     }
@@ -131,9 +126,9 @@ async function attackFumble(message) {
         context = 'ranged';
         if (fumbleAmount < 6) {
             fumbleResult = 'nothing';
-        } else if (fumbleAmount < 7) {
+        } else if (fumbleAmount <= 7) {
             fumbleResult = 'rangedAttack.6-7';
-        } else if (fumbleAmount < 9) {
+        } else if (fumbleAmount <= 9) {
             fumbleResult = 'rangedAttack.8-9';
         } else {
             fumbleResult = 'rangedAttack.>9';
@@ -208,9 +203,9 @@ function unarmedAttackDefense(fumbleAmount) {
     let fumbleResult;
     if (fumbleAmount < 6) {
         fumbleResult = 'nothing';
-    } else if (fumbleAmount >= 6 && fumbleAmount < 9) {
+    } else if (fumbleAmount >= 6 && fumbleAmount <= 9) {
         fumbleResult = 'unarmed.' + fumbleAmount;
-    } else if (fumbleAmount > 9) {
+    } else {
         fumbleResult = 'unarmed.>9';
     }
 

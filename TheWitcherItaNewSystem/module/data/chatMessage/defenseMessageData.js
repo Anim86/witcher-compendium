@@ -22,6 +22,8 @@ export default class DefenseMessageData extends BaseMessageData {
                 severity: new fields.StringField(),
                 critdamage: new fields.NumberField(),
                 bonusdamage: new fields.NumberField(),
+                isTargeted: new fields.BooleanField({ initial: false }),
+                critEffectModifier: new fields.NumberField({ initial: 0 }),
                 location: new fields.SchemaField({
                     name: new fields.StringField(),
                     alias: new fields.StringField(),

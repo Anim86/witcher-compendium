@@ -162,10 +162,16 @@ export let weaponAttackMixin = {
         // Auto Extra Attack Detection via Combat Tracker
         if (game.combat?.active && game.combat.combatant?.actorId === this.id) {
             let combatant = game.combat.combatant;
-            let attacksThisRound = combatant.getFlag('TheWitcherItaNewSystem', 'attacksThisRound') || 0;
+            const currentTurnKey = `${game.combat.round}:${game.combat.turn}`;
+            const attackTurnKey = combatant.getFlag('TheWitcherItaNewSystem', 'attackTurnKey');
+            let attacksThisRound = attackTurnKey === currentTurnKey
+                ? combatant.getFlag('TheWitcherItaNewSystem', 'attacksThisRound') || 0
+                : 0;
+
             if (attacksThisRound >= 1) {
                 isExtraAttack = true;
             }
+            await combatant.setFlag('TheWitcherItaNewSystem', 'attackTurnKey', currentTurnKey);
             await combatant.setFlag('TheWitcherItaNewSystem', 'attacksThisRound', attacksThisRound + 1);
         }
 
@@ -366,26 +372,7 @@ export let weaponAttackMixin = {
                     defenseOptions: weapon.system.defenseOptions
                 });
 
-                let roll = await extendedRoll(attFormula, messageData);
-
-                // Rule: Disaster (Fumble) reduces reliability by 1
-                if (roll.options.fumble) {
-                    let reliabilityDamage = 1;
-                    if (weapon.type == 'weapon') {
-                        let newReliability = Math.max(0, (weapon.system.reliability ?? 0) - reliabilityDamage);
-                        weapon.update({ 'system.reliability': newReliability });
-                        if (newReliability <= 0) {
-                            ui.notifications.error(`${game.i18n.localize('WITCHER.Weapon.Broken')}: ${weapon.name}`);
-                        }
-                    } else {
-                        // Handle shield
-                        let newReliability = Math.max(0, (weapon.system.reliability ?? 0) - reliabilityDamage);
-                        weapon.update({ 'system.reliability': newReliability });
-                        if (newReliability <= 0) {
-                            ui.notifications.error(`${game.i18n.localize('WITCHER.Shield.Broken')}: ${weapon.name}`);
-                        }
-                    }
-                }
+                await extendedRoll(attFormula, messageData);
             }
         }
     },

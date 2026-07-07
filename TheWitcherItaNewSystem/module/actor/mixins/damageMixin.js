@@ -7,33 +7,12 @@ export let damageMixin = {
         let shield = this.system.derivedStats.shield.value;
         let isMagicShield = this.getFlag('TheWitcherItaNewSystem', 'magicShield');
 
-        let activeShieldItem = null;
-        // Ignore physical shield if dialog disabled it
-        if (!isMagicShield && damageObject.properties?.useShield === false) {
+        if (!isMagicShield) {
             shield = 0;
         }
 
-        if (!isMagicShield && shield > 0) {
-            let shields = this.items.filter(i => {
-                if (i.type !== 'armor' || !i.system.equipped) return false;
-                const loc = i.system.location;
-                if (!loc) return false;
-                const locations = Array.isArray(loc) ? loc : [loc];
-                return locations.some(l => l === 'Shield' || l.includes('Shield'));
-            });
-            if (shields.length > 0) {
-                activeShieldItem = shields.reduce((prev, current) => 
-                    ((current.system.reliability || 0) > (prev.system.reliability || 0)) ? current : prev
-                );
-            }
-        }
-
         if (totalDamage < shield) {
-            if (isMagicShield) {
-                await this.update({ 'system.derivedStats.shield.value': shield - totalDamage });
-            } else if (activeShieldItem) {
-                await activeShieldItem.update({ 'system.reliability': shield - totalDamage });
-            }
+            await this.update({ 'system.derivedStats.shield.value': shield - totalDamage });
 
             let messageContent = `${game.i18n.localize('WITCHER.Damage.initial')}: <span class="error-display">${infoTotalDmg}</span><br />
                                 ${game.i18n.localize('WITCHER.Damage.shield')}: <span class="error-display">${shield}</span><br />
@@ -48,14 +27,11 @@ export let damageMixin = {
             ChatMessage.create(messageData);
             return;
         } else {
-            if (isMagicShield) {
+            if (isMagicShield && shield > 0) {
                 await this.update({ 
                     'system.derivedStats.shield.value': 0,
                     'flags.TheWitcherItaNewSystem.magicShield': false
                 });
-            } else if (activeShieldItem) {
-                await activeShieldItem.update({ 'system.reliability': 0 });
-                ui.notifications.error(`${game.i18n.localize('WITCHER.Shield.Broken')}: ${activeShieldItem.name}`);
             }
 
             if (shield > 0) {
@@ -140,8 +116,8 @@ export let damageMixin = {
             let tempHpArray = this.system.combatEffects.temporaryEffects.temporaryHp;
             for (let tempHp of tempHpArray) {
                 if (tempHp.value < damage) {
-                    tempHp.value = 0;
                     damage -= tempHp.value;
+                    tempHp.value = 0;
                 } else {
                     tempHp.value -= damage;
                     damage = 0;
@@ -152,9 +128,19 @@ export let damageMixin = {
             });
         }
 
+        const currentValue = this.system.derivedStats[derivedStat].value;
+        const newValue = currentValue - damage;
         await this.update({
-            [`system.derivedStats.${derivedStat}.value`]: this.system.derivedStats[derivedStat].value - damage
+            [`system.derivedStats.${derivedStat}.value`]: newValue
         });
+
+        if (derivedStat === 'hp') {
+            if (newValue <= 0 && !this.statuses.has('dead')) {
+                await this.toggleStatusEffect('dead', { overlay: true, active: true });
+            } else if (newValue > 0 && this.statuses.has('dead')) {
+                await this.toggleStatusEffect('dead', { overlay: true, active: false });
+            }
+        }
     },
 
     async calculateDamageWithLocation(enemyData, damage, totalDamage, infoTotalDmg) {
@@ -328,7 +314,7 @@ export let damageMixin = {
             crit.critdamage,
             {
                 properties: { bypassesNaturalArmor: true, bypassesWornArmor: true },
-                location: this.getLocationObject('torso')
+                location: this.getCritDamageLocation(crit)
             },
             'hp'
         );
@@ -340,10 +326,24 @@ export let damageMixin = {
             crit.bonusdamage,
             {
                 properties: { bypassesNaturalArmor: true, bypassesWornArmor: true },
-                location: this.getLocationObject('torso')
+                location: this.getCritDamageLocation(crit)
             },
             'hp'
         );
+    },
+
+    getCritDamageLocation(crit) {
+        const locationName = crit?.location?.name;
+        const isKnownLocation = locationName && locationName !== 'random';
+        const baseLocation = isKnownLocation ? this.getLocationObject(locationName) : null;
+        const locationLabel = baseLocation?.alias || game.i18n.localize('WITCHER.Location.Random');
+
+        return {
+            name: 'criticalWound',
+            alias: `${game.i18n.localize('WITCHER.CritWound.Header')}: ${locationLabel}`,
+            locationFormula: 1,
+            modifier: '+0'
+        };
     },
 
     async applyCritWound(crit) {
@@ -478,8 +478,11 @@ export let damageMixin = {
         });
         this.update({ 'system.critWounds': critList });
 
+        const woundLocation = this.getLocationObject(finalLocationName);
         const chatData = {
-            content: `<div>${game.i18n.localize(CONFIG.WITCHER.Crit[wound].label)}</div><div>${game.i18n.localize(CONFIG.WITCHER.Crit[wound].description)}</div>`,
+            content: `<div><b>${game.i18n.localize(CONFIG.WITCHER.Crit[wound].label)}</b></div>
+                <div>${game.i18n.localize('WITCHER.Armor.Location')}: <b>${woundLocation.alias}</b></div>
+                <div>${game.i18n.localize(CONFIG.WITCHER.Crit[wound].description)}</div>`,
             speaker: ChatMessage.getSpeaker({ actor: this }),
             ...(typeof CONST.CHAT_MESSAGE_STYLES !== "undefined" ? { style: CONST.CHAT_MESSAGE_STYLES.OTHER } : { type: CONST.CHAT_MESSAGE_TYPES?.OTHER ?? 0 })
         };

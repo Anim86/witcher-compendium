@@ -6,6 +6,7 @@ import { consumeMixin } from './mixins/consumeMixin.js';
 import { repairMixin } from './mixins/repairMixin.js';
 import { dismantlingMixin } from './mixins/dismantlingMixin.js';
 import { defenseOptionMixin } from './mixins/defenseOptionMixin.js';
+import { applyEffectChange, normalizeEffectChange } from '../activeEffect/effectChangeCompatibility.js';
 
 export default class WitcherItem extends Item {
     /** @inheritdoc */
@@ -436,9 +437,8 @@ export default class WitcherItem extends Item {
             if (!effect.active) continue;
             changes.push(
                 ...effect.changes.map(change => {
-                    const c = foundry.utils.deepClone(change);
+                    const c = normalizeEffectChange(change);
                     c.effect = effect;
-                    c.priority ??= c.mode * 10;
                     return c;
                 })
             );
@@ -448,8 +448,8 @@ export default class WitcherItem extends Item {
         // Apply all changes
         for (const change of changes) {
             if (!change.key) continue;
-            const changes = change.effect.apply(this, change);
-            Object.assign(overrides, changes);
+            const appliedChanges = applyEffectChange(this, change);
+            Object.assign(overrides, appliedChanges);
         }
 
         // Expand the set of final overrides

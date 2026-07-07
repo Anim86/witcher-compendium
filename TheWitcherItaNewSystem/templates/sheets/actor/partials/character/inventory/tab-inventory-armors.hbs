@@ -24,7 +24,12 @@
 
                         <span>
                             {{#if (eq armor.system.location "Shield")}}
-                                {{armor.system.reliability}}
+                                <span class="reliable-details">
+                                    <span class="reliable-input">
+                                        <input class="inline-edit reliable-info" data-field="system.reliability" type="text"
+                                            value="{{armor.system.reliability}}" data-dtype="Number" /> | <span>{{armor.system.reliabilityMax}}</span>
+                                    </span>
+                                </span>
                             {{else if (eq armor.system.location "Head")}}
                                 {{armor.system.headStopping}}
                             {{else if (eq armor.system.location "Leg")}}

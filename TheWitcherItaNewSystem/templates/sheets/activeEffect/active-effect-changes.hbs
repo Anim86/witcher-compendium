@@ -21,14 +21,14 @@
                         {{formInput changeFields.key name=(concat "changes." i ".key") value=change.key}}
                     </div>
                     <div class="mode">
-                        {{formInput changeFields.mode name=(concat "changes." i ".mode") value=change.mode choices=@root.modes}}
+                        {{formInput changeFields.type name=(concat "changes." i ".type") value=change.type choices=@root.changeTypes}}
                     </div>
                     <div class="value">
                         {{formInput changeFields.value name=(concat "changes." i ".value") value=change.value}}
                     </div>
                     <div class="priority">
                         {{formInput changeFields.priority name=(concat "changes." i ".priority") value=change.priority
-                    placeholder=(lookup ../../priorities change.mode)}}
+                    placeholder=(lookup ../../priorities change.type)}}
                     </div>
                     <div class="controls"><a data-action="deleteChange"><i class="fa-solid fa-trash"></i></a></div>
                 </li>

@@ -32,15 +32,18 @@ export let defenseMixin = {
 
         let additionalOptions = this.items
             .filter(item => item.system.isApplicableDefense?.(attack.attackOption))
+            .filter(item => this.canProvideDefenseOption(item))
             .map(item => item.createDefenseOption(attack));
 
         let defenseOptionsData = [
             ...defenseOptions.map(option => CONFIG.WITCHER.defenseOptions.find(defense => defense.value === option)),
             ...additionalOptions
         ];
+        defenseOptionsData = this.getUsableDefenseOptions(defenseOptionsData, attack, attackDamageObject);
 
-        if (attackDamageObject.properties.crushingForce) {
-            defenseOptionsData = defenseOptionsData.filter(option => option.value != 'parry');
+        if (!defenseOptionsData.length) {
+            ui.notifications.warn('Nessuna opzione difensiva disponibile per questo attacco.');
+            return;
         }
 
         let buttons = Array.from(
@@ -74,31 +77,11 @@ export let defenseMixin = {
             await this.spendLuck(luckToSpend);
         }
 
-        let chooser = [];
-        if (defenseAction.skills) {
-            defenseAction.skills.forEach(skill =>
-                chooser.push({ value: skill, label: CONFIG.WITCHER.skillMap[skill].label })
-            );
-        }
+        let chooser = this.getDefenseChoices(defenseAction, attack);
 
-        if (defenseAction.itemTypes) {
-            defenseAction.itemTypes.forEach(itemType =>
-                this.getList(itemType)
-                    .filter(item => !item.system.isAmmo)
-                    .filter(item => {
-                        // Filter out broken items
-                        if (item.type === 'armor') return (item.system.reliability ?? 1) > 0;
-                        if (item.type === 'weapon') return (item.system.reliable ?? 1) > 0;
-                        return true;
-                    })
-                    .forEach(item =>
-                        chooser.push({
-                            value: item.system.meleeAttackSkill ?? 'melee',
-                            label: item.name,
-                            itemId: item.id
-                        })
-                    )
-            );
+        if (!chooser.length) {
+            ui.notifications.warn('Non hai una skill o un oggetto utilizzabile per questa difesa.');
+            return;
         }
 
         let skillName;
@@ -155,6 +138,105 @@ export let defenseMixin = {
             itemId,
             defenseAction.skillOverride
         );
+    },
+
+    getUsableDefenseOptions(defenseOptionsData, attack, attackDamageObject) {
+        const seenOptions = new Set();
+        return defenseOptionsData
+            .filter(Boolean)
+            .filter(option => this.isDefenseOptionUsable(option, attack, attackDamageObject))
+            .filter(option => {
+                const key = option.value ?? option.label;
+                if (!key) return true;
+                if (seenOptions.has(key)) return false;
+                seenOptions.add(key);
+                return true;
+            });
+    },
+
+    isDefenseOptionUsable(option, attack, attackDamageObject) {
+        const isRanged = attack.attackOption === 'ranged';
+        const isMelee = attack.attackOption === 'melee';
+        const isSpell = attack.attackOption === 'spell';
+        const isThrownWeaponAttack = isRanged && attack.skill === 'athletics';
+
+        if (attackDamageObject.properties?.crushingForce && (option.value === 'parry' || option.value === 'parryThrown')) {
+            return false;
+        }
+
+        switch (option.value) {
+            case 'dodge':
+            case 'reposition':
+                return this.getDefenseChoices(option, attack).length > 0;
+            case 'magicResist':
+                return isSpell && this.getDefenseChoices(option, attack).length > 0;
+            case 'block':
+                if (isRanged) return this.getUsableDefenseItems('shield').length > 0;
+                return this.getDefenseChoices(option, attack).length > 0;
+            case 'parry':
+                return isMelee && this.getDefenseChoices(option, attack).length > 0;
+            case 'parryThrown':
+                return isThrownWeaponAttack && this.getUsableDefenseItems('shield').length > 0;
+            default:
+                return this.getDefenseChoices(option, attack).length > 0;
+        }
+    },
+
+    getDefenseChoices(defenseAction, attack) {
+        let skills = defenseAction.skills ?? [];
+        let itemTypes = defenseAction.itemTypes ?? [];
+
+        if (attack.attackOption === 'ranged' && defenseAction.value === 'block') {
+            skills = [];
+            itemTypes = ['shield'];
+        }
+
+        if (defenseAction.value === 'parryThrown') {
+            skills = [];
+            itemTypes = ['shield'];
+        }
+
+        const chooser = [];
+        skills
+            .filter(skill => CONFIG.WITCHER.skillMap[skill])
+            .forEach(skill => chooser.push({ value: skill, label: CONFIG.WITCHER.skillMap[skill].label }));
+
+        itemTypes.forEach(itemType =>
+            this.getUsableDefenseItems(itemType).forEach(item =>
+                chooser.push({
+                    value: item.system.meleeAttackSkill ?? 'melee',
+                    label: item.name,
+                    itemId: item.id
+                })
+            )
+        );
+
+        return chooser;
+    },
+
+    getUsableDefenseItems(itemType) {
+        return this.getList(itemType)
+            .filter(item => !item.system.isAmmo)
+            .filter(item => this.isDefenseItemEquipped(item, itemType))
+            .filter(item => this.hasDefenseItemReliability(item));
+    },
+
+    isDefenseItemEquipped(item, itemType) {
+        if (itemType === 'shield') return item.system.equipped;
+        if (item.type === 'weapon' || item.type === 'armor') return item.system.equipped;
+        return true;
+    },
+
+    hasDefenseItemReliability(item) {
+        if (item.type === 'armor' || item.type === 'weapon') return (item.system.reliability ?? 1) > 0;
+        return true;
+    },
+
+    canProvideDefenseOption(item) {
+        if (item.type === 'armor' || item.type === 'weapon') {
+            return this.isDefenseItemEquipped(item, item.type) && this.hasDefenseItemReliability(item);
+        }
+        return true;
     },
 
     async skillDefense(
@@ -253,14 +335,18 @@ export let defenseMixin = {
             crit.isTargeted = !!(attackDamageObject.originalLocation && !attackDamageObject.originalLocation.includes('random'));
             crit.location = await this.handleCritLocation(attackDamageObject);
             attackDamageObject.location = crit.location;
-            crit.critEffectModifier = attackDamageObject.crit.critEffectModifier;
+            crit.critEffectModifier = attackDamageObject.crit?.critEffectModifier ?? 0;
         }
 
         const chatMessageCrit = crit
             ? await foundry.applications.handlebars.renderTemplate(
                   'systems/TheWitcherItaNewSystem/templates/chat/combat/defense/defenseCrit.hbs',
                   {
-                      crit: { severity: CONFIG.WITCHER.CritGravity[crit.severity] }
+                      crit: {
+                          ...crit,
+                          severityLabel: CONFIG.WITCHER.CritGravity[crit.severity],
+                          locationAlias: crit.location?.alias || game.i18n.localize('WITCHER.Location.Random')
+                      }
                   }
               )
             : '';
@@ -393,12 +479,13 @@ export let defenseMixin = {
 
     async handleCritLocation(attackDamageObject) {
         if (attackDamageObject.originalLocation && !attackDamageObject.originalLocation.includes('random')) {
-            return {
-                name: attackDamageObject.originalLocation
-            };
+            return this.getLocationObject(attackDamageObject.originalLocation);
         }
         return {
-            name: 'random'
+            name: 'random',
+            alias: game.i18n.localize('WITCHER.Location.Random'),
+            locationFormula: 1,
+            modifier: '+0'
         };
     },
 
@@ -434,8 +521,8 @@ export let defenseMixin = {
                     item.update({ 'system.reliability': newReliability });
                     this._notifyReliabilityLoss(item.name, reliabilityDamage, newReliability <= 0, 'shield');
                 } else if (item.type == 'weapon') {
-                    let newReliable = Math.max(0, item.system.reliable - reliabilityDamage);
-                    item.update({ 'system.reliable': newReliable });
+                    let newReliable = Math.max(0, item.system.reliability - reliabilityDamage);
+                    item.update({ 'system.reliability': newReliable });
                     this._notifyReliabilityLoss(item.name, reliabilityDamage, newReliable <= 0, 'weapon');
                 }
             }

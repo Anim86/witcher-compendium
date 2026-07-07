@@ -939,6 +939,7 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
         if (!actor) return;
 
         const updates = {};
+        const effectsToCreate = [];
         const professionSkillPaths = this._getWizardProfessionSkillPaths();
 
         for (const [skillId, value] of Object.entries(this.characterData.skills)) {
@@ -962,20 +963,35 @@ export default class WitcherCharacterWizard extends HandlebarsApplicationMixin(A
             const isProfession = professionSkillPaths.has(pathKey);
             const multiplier = skillItem ? this._getSkillCost(skillItem) : (Number(actorPath.entry.cost) || 1);
 
-            if (isHomelandSkill) {
-                updates[`${basePath}.modifiers`] = [{ name: 'Bonus Patria', value: this.characterData.homelandBonus.value }];
-            }
-
             updates[`${basePath}.value`] = numericValue;
             updates[`${basePath}.isProfession`] = isProfession;
             updates[`${basePath}.isPickup`] = !isProfession;
             updates[`${basePath}.isLearned`] = numericValue > 0 || isHomelandSkill;
             updates[`${basePath}.multiplier`] = multiplier;
             updates[`${basePath}.isCombatSkill`] = Boolean(skillItem?.system?.isCombatSkill);
+
+            if (isHomelandSkill) {
+                effectsToCreate.push({
+                    name: 'Bonus Patria',
+                    icon: 'icons/svg/aura.svg',
+                    origin: actor.uuid,
+                    changes: [
+                        {
+                            key: `${basePath}.activeEffectModifiers`,
+                            value: Number(this.characterData.homelandBonus.value) || 0,
+                            type: 'add'
+                        }
+                    ]
+                });
+            }
         }
 
         if (Object.keys(updates).length > 0) {
             await actor.update(updates);
+        }
+
+        if (effectsToCreate.length > 0) {
+            await actor.createEmbeddedDocuments('ActiveEffect', effectsToCreate);
         }
     }
 

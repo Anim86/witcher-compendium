@@ -1,5 +1,6 @@
 import { baseMixin } from './mixins/baseMixin.js';
 import { temporaryItemImprovementMixin } from './mixins/temporaryItemImprovementMixin.js';
+import { getEffectChangePriority, normalizeEffectChange } from './effectChangeCompatibility.js';
 
 const DialogV2 = foundry.applications.api.DialogV2;
 
@@ -30,6 +31,16 @@ export class WitcherActiveEffectConfig extends foundry.applications.sheets.Activ
     async _prepareContext(options) {
         const context = await super._prepareContext(options);
         context.systemFields = this.document.system.schema.fields;
+        context.changeTypes = Object.fromEntries(
+            Object.entries(ActiveEffect.CHANGE_TYPES ?? {}).map(([type, config]) => [
+                type,
+                game.i18n.localize(config.label ?? type)
+            ])
+        );
+        context.priorities = Object.fromEntries(
+            Object.keys(context.changeTypes).map(type => [type, getEffectChangePriority({ type })])
+        );
+        context.source.changes = (context.source.changes ?? []).map(change => normalizeEffectChange(change));
         return context;
     }
 

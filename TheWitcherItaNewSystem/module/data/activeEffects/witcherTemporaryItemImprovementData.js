@@ -19,9 +19,8 @@ export default class WitcherTemporaryItemImprovementData extends foundry.abstrac
             changes: new fields.ArrayField(new fields.SchemaField({
                 key: new fields.StringField({ required: true }),
                 value: new fields.StringField({ required: true }),
-                mode: new fields.NumberField({ integer: true, initial: 2 }),
+                type: new fields.StringField({ initial: 'add' }),
                 priority: new fields.NumberField(),
-                type: new fields.StringField(),
                 phase: new fields.StringField()
             }))
         };

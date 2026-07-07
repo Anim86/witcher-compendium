@@ -1,4 +1,11 @@
+import { migrateEffectChangesSource } from './effectChangeCompatibility.js';
+
 export default class WitcherActiveEffect extends ActiveEffect {
+    static migrateData(source) {
+        migrateEffectChangesSource(source);
+        return super.migrateData(source);
+    }
+
     get isSuppressed() {
         if (
             this.parent.system.isActive === false ||

@@ -17,6 +17,7 @@ import { armorMixin } from './mixins/armorMixin.js';
 import { healMixin } from './mixins/healMixin.js';
 import { rewardsMixin } from './mixins/rewardsMixin.js';
 import { craftingMixin } from './mixins/craftingMixin.js';
+import { applyEffectChange, normalizeEffectChange } from '../activeEffect/effectChangeCompatibility.js';
 
 const DialogV2 = foundry.applications.api.DialogV2;
 
@@ -855,9 +856,8 @@ export default class WitcherActor extends Actor {
                         ...effect.changes
                             .filter(change => derivedPaths.some(path => change.key.includes(path)))
                             .map(change => {
-                                const c = foundry.utils.deepClone(change);
+                                const c = normalizeEffectChange(change);
                                 c.effect = effect;
-                                c.priority = c.priority ?? c.mode * 10;
                                 return c;
                             })
                     );
@@ -875,9 +875,8 @@ export default class WitcherActor extends Actor {
 
                     changes.push(
                         ...effect.changes.map(change => {
-                            const c = foundry.utils.deepClone(change);
+                            const c = normalizeEffectChange(change);
                             c.effect = effect;
-                            c.priority = c.priority ?? c.mode * 10;
                             return c;
                         })
                     );
@@ -890,8 +889,8 @@ export default class WitcherActor extends Actor {
         // Apply all changes
         for (const change of changes) {
             if (!change.key) continue;
-            const changes = change.effect.apply(this, change);
-            Object.assign(overrides, changes);
+            const appliedChanges = applyEffectChange(this, change);
+            Object.assign(overrides, appliedChanges);
         }
 
         // Expand the set of final overrides
